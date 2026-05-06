@@ -1,4 +1,5 @@
 import '../../core/enums/app_language.dart';
+import 'package:avro_phonetic_textfield/avro_phonetic_textfield.dart' as avro;
 
 class AyahModel {
   const AyahModel({
@@ -30,10 +31,45 @@ class AyahModel {
   final String audioUrl;
 
   String transliterationFor(AppLanguage language) {
-    if (language == AppLanguage.bangla && transliterationBn.isNotEmpty) {
-      return transliterationBn;
+    return language == AppLanguage.bangla
+        ? transliterationBn
+        : transliterationEn;
+  }
+
+  static String normalizeBanglaPronunciation({
+    required String transliterationEn,
+    required String transliterationBn,
+  }) {
+    final bn = transliterationBn.trim();
+    if (bn.isNotEmpty && _isBanglaScript(bn)) {
+      return bn;
     }
-    return transliterationEn;
+
+    final en = transliterationEn.trim();
+    if (en.isEmpty) {
+      return '';
+    }
+
+    return avro.parse(_sanitizeForAvro(en));
+  }
+
+  static String _sanitizeForAvro(String input) {
+    return input
+        .toLowerCase()
+        // API occasionally uses "lyya" where "iyya" is intended.
+        .replaceAll(RegExp(r'\blyy'), 'iyy')
+        // Apostrophes for ayin/hamza break Avro parsing and render literally.
+        .replaceAll(RegExp(r"[`'’]"), '')
+        // Avro tends to over-elongate when fed repeated "a" in this dataset.
+        .replaceAll(RegExp(r'a{2,}'), 'a')
+        .replaceAll(RegExp(r'[^a-z\s-]'), ' ')
+        .replaceAll('-', ' ')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
+  }
+
+  static bool _isBanglaScript(String text) {
+    return RegExp(r'[\u0980-\u09FF]').hasMatch(text);
   }
 
   factory AyahModel.fromMergedApi({
@@ -56,7 +92,10 @@ class AyahModel {
       pageNumber: _toInt(arabicAyah['page']),
       arabicText: (arabicAyah['text'] as String?) ?? '',
       transliterationEn: (transliterationEnAyah?['text'] as String?) ?? '',
-      transliterationBn: (transliterationBnAyah?['text'] as String?) ?? '',
+      transliterationBn: normalizeBanglaPronunciation(
+        transliterationEn: (transliterationEnAyah?['text'] as String?) ?? '',
+        transliterationBn: (transliterationBnAyah?['text'] as String?) ?? '',
+      ),
       translationEn: (englishTranslationAyah?['text'] as String?) ?? '',
       translationBn: (banglaTranslationAyah?['text'] as String?) ?? '',
       audioUrl: '$audioBaseUrl/$globalNumber.mp3',
@@ -64,6 +103,9 @@ class AyahModel {
   }
 
   factory AyahModel.fromMap(Map<String, Object?> map) {
+    final transliterationEn = (map['transliteration_en'] as String?) ?? '';
+    final transliterationBn = (map['transliteration_bn'] as String?) ?? '';
+
     return AyahModel(
       id: _toInt(map['id']),
       surahId: _toInt(map['surah_id']),
@@ -72,8 +114,11 @@ class AyahModel {
       hizbQuarter: _toInt(map['hizb_quarter']),
       pageNumber: _toInt(map['page_number']),
       arabicText: (map['arabic_text'] as String?) ?? '',
-      transliterationEn: (map['transliteration_en'] as String?) ?? '',
-      transliterationBn: (map['transliteration_bn'] as String?) ?? '',
+      transliterationEn: transliterationEn,
+      transliterationBn: normalizeBanglaPronunciation(
+        transliterationEn: transliterationEn,
+        transliterationBn: transliterationBn,
+      ),
       translationEn: (map['translation_en'] as String?) ?? '',
       translationBn: (map['translation_bn'] as String?) ?? '',
       audioUrl: (map['audio_url'] as String?) ?? '',

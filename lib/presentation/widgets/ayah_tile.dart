@@ -25,6 +25,11 @@ class AyahTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final transliteration = ayah.transliterationFor(language);
+    final translation = language == AppLanguage.bangla
+      ? ayah.translationBn
+      : ayah.translationEn;
+    final translationLabel =
+      language == AppLanguage.bangla ? 'BN' : 'EN';
     final colorScheme = Theme.of(context).colorScheme;
 
     return Card(
@@ -99,11 +104,9 @@ class AyahTile extends StatelessWidget {
                 ),
               ),
             ],
-            if (showTranslation) ...[
+            if (showTranslation && translation.isNotEmpty) ...[
               const SizedBox(height: 12),
-              _TranslationLine(label: 'EN', text: ayah.translationEn),
-              const SizedBox(height: 8),
-              _TranslationLine(label: 'BN', text: ayah.translationBn),
+              _TranslationLine(label: translationLabel, text: translation),
             ],
           ],
         ),

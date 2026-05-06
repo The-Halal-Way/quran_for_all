@@ -41,7 +41,7 @@ class SettingsPreferencesCard extends StatelessWidget {
             value: showTranslation,
             onChanged: onShowTranslationChanged,
             title: const Text('Show translations'),
-            subtitle: const Text('Display Bangla and English meanings.'),
+            subtitle: const Text('Display meaning in your selected language.'),
           ),
           const Divider(height: 1),
           Padding(
