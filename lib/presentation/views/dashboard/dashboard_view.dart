@@ -30,13 +30,12 @@ class DashboardView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Quran For All',
-              style: textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w700),
+              'Read Quran',
+              style: textTheme.titleLarge?.copyWith(
+                fontWeight: FontWeight.w700,
+              ),
             ),
-            Text(
-              'Assalamu alaikum',
-              style: textTheme.bodySmall,
-            ),
+            Text('Quran For All', style: textTheme.bodySmall),
           ],
         ),
         actions: [
@@ -98,9 +97,8 @@ class DashboardView extends StatelessWidget {
                       Expanded(
                         child: Text(
                           'All Surahs',
-                          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.w700,
-                          ),
+                          style: Theme.of(context).textTheme.titleLarge
+                              ?.copyWith(fontWeight: FontWeight.w700),
                         ),
                       ),
                       Chip(

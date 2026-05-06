@@ -7,9 +7,11 @@ import 'core/theme/app_theme.dart';
 import 'data/datasources/local/app_database.dart';
 import 'data/datasources/remote/quran_api_service.dart';
 import 'data/repositories/audio_repository_impl.dart';
+import 'data/repositories/learning_progress_repository_impl.dart';
 import 'data/repositories/quran_repository_impl.dart';
 import 'data/repositories/settings_repository_impl.dart';
 import 'domain/repositories/audio_repository.dart';
+import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
 import 'presentation/viewmodels/settings_viewmodel.dart';
@@ -44,6 +46,9 @@ class QuranForAllApp extends StatelessWidget {
           ),
         ),
         Provider<SettingsRepository>(create: (_) => SettingsRepositoryImpl()),
+        Provider<LearningProgressRepository>(
+          create: (_) => LearningProgressRepositoryImpl(),
+        ),
         Provider<AudioRepository>(
           create: (context) =>
               AudioRepositoryImpl(context.read<AudioService>()),
