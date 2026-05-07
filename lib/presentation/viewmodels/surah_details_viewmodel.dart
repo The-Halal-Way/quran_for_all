@@ -7,13 +7,12 @@ import '../../domain/repositories/quran_repository.dart';
 
 class SurahDetailsViewModel extends ChangeNotifier {
   SurahDetailsViewModel({
-    required this.surah,
     required QuranRepository quranRepository,
     required AudioRepository audioRepository,
   }) : _quranRepository = quranRepository,
        _audioRepository = audioRepository;
 
-  final SurahModel surah;
+  SurahModel? _surah;
   final QuranRepository _quranRepository;
   final AudioRepository _audioRepository;
 
@@ -21,21 +20,51 @@ class SurahDetailsViewModel extends ChangeNotifier {
   bool _isPlayingFullSurah = false;
   String? _errorMessage;
   List<AyahModel> _ayahs = const [];
+  int _loadRequestId = 0;
 
+  SurahModel? get surah => _surah;
   bool get isLoading => _isLoading;
   bool get isPlayingFullSurah => _isPlayingFullSurah;
   String? get errorMessage => _errorMessage;
   List<AyahModel> get ayahs => _ayahs;
 
+  Future<void> openSurah(SurahModel surah) async {
+    _surah = surah;
+    await load();
+  }
+
   Future<void> load() async {
+    final selectedSurah = _surah;
+    if (selectedSurah == null) {
+      _errorMessage = 'No surah selected.';
+      _ayahs = const [];
+      _isLoading = false;
+      notifyListeners();
+      return;
+    }
+
+    final requestId = ++_loadRequestId;
     _isLoading = true;
     _errorMessage = null;
     notifyListeners();
 
     try {
-      _ayahs = await _quranRepository.getAyahsBySurah(surah.id);
+      final ayahs = await _quranRepository.getAyahsBySurah(selectedSurah.id);
+      if (requestId != _loadRequestId) {
+        return;
+      }
+
+      _ayahs = ayahs;
     } catch (_) {
+      if (requestId != _loadRequestId) {
+        return;
+      }
+
       _errorMessage = 'Unable to load ayahs for this surah.';
+    }
+
+    if (requestId != _loadRequestId) {
+      return;
     }
 
     _isLoading = false;

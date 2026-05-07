@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 
 import '../../data/models/learn_quran_content.dart';
@@ -13,15 +15,36 @@ class LearnQuranViewModel extends ChangeNotifier {
     required AudioRepository audioRepository,
   }) : _progressRepository = progressRepository,
        _quranRepository = quranRepository,
-       _audioRepository = audioRepository;
+       _audioRepository = audioRepository {
+    _audioPlaybackSubscription = _audioRepository.isPlayingStream.listen((
+      isPlaying,
+    ) {
+      if (_playingLessonId == null) {
+        return;
+      }
+
+      if (_isLessonAudioPlaying == isPlaying) {
+        return;
+      }
+
+      _isLessonAudioPlaying = isPlaying;
+      if (!isPlaying) {
+        _playingLessonId = null;
+      }
+      notifyListeners();
+    });
+  }
 
   final LearningProgressRepository _progressRepository;
   final QuranRepository _quranRepository;
   final AudioRepository _audioRepository;
+  late final StreamSubscription<bool> _audioPlaybackSubscription;
 
   bool _isLoading = true;
   String? _errorMessage;
   LearningProgress _progress = LearningProgress.initial();
+  bool _isLessonAudioPlaying = false;
+  String? _playingLessonId;
 
   bool get isLoading => _isLoading;
   String? get errorMessage => _errorMessage;
@@ -71,6 +94,15 @@ class LearnQuranViewModel extends ChangeNotifier {
 
   bool isLessonCompleted(String lessonId) {
     return _progress.completedLessonIds.contains(lessonId);
+  }
+
+  bool isAudioRunningForLesson(String lessonId) {
+    final trackedState = _isLessonAudioPlaying && _playingLessonId == lessonId;
+    final repositoryState =
+        _audioRepository.isPlaying && _playingLessonId == lessonId;
+
+    // Double-check playback state with both local and repository signals.
+    return trackedState || repositoryState;
   }
 
   bool isModuleComplete(LearnQuranModule module) {
@@ -156,6 +188,14 @@ class LearnQuranViewModel extends ChangeNotifier {
       return 'No audio sample is attached to this lesson yet.';
     }
 
+    if (isAudioRunningForLesson(lesson.id)) {
+      await _audioRepository.stop();
+      _isLessonAudioPlaying = false;
+      _playingLessonId = null;
+      notifyListeners();
+      return null;
+    }
+
     final surahId = lesson.sampleSurahId!;
     final ayahNumber = lesson.sampleAyahNumber!;
 
@@ -165,9 +205,20 @@ class LearnQuranViewModel extends ChangeNotifier {
         return 'Could not find the sample ayah audio for this lesson.';
       }
 
+      if (_audioRepository.isPlaying) {
+        await _audioRepository.stop();
+      }
+
+      _playingLessonId = lesson.id;
+      _isLessonAudioPlaying = true;
+      notifyListeners();
+
       await _audioRepository.playAyah(ayah);
       return null;
     } catch (_) {
+      _isLessonAudioPlaying = false;
+      _playingLessonId = null;
+      notifyListeners();
       return 'Unable to play lesson audio right now.';
     }
   }
@@ -199,5 +250,11 @@ class LearnQuranViewModel extends ChangeNotifier {
     }
 
     return 1;
+  }
+
+  @override
+  void dispose() {
+    _audioPlaybackSubscription.cancel();
+    super.dispose();
   }
 }

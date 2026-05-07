@@ -4,7 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../data/models/learn_quran_content.dart';
+import '../../widgets/learn_quran/audio_assisted/audio_assisted_learning_unit.dart';
 import '../../viewmodels/learn_quran_viewmodel.dart';
+import '../../widgets/learn_quran/arabic_letters/arabic_letters_learning_unit.dart';
+import '../../widgets/learn_quran/makharij/makharij_learning_unit.dart';
+import '../../widgets/learn_quran/pronunciation_basics/pronunciation_basics_learning_unit.dart';
+import '../../widgets/learn_quran/short_surah_practice/short_surah_practice_learning_unit.dart';
+import '../../widgets/learn_quran/tajweed_rules/tajweed_rules_learning_unit.dart';
+import '../../widgets/learn_quran/word_by_word/word_by_word_learning_unit.dart';
 import '../../widgets/learn_quran/learn_lesson_tile.dart';
 import '../../widgets/learn_quran/learn_module_visuals.dart';
 
@@ -112,6 +119,28 @@ class LearningModuleDetailView extends StatelessWidget {
                   ],
                 ),
               ),
+              if (module.id == 'arabic_letters') ...[
+                const SizedBox(height: 14),
+                const ArabicLettersLearningUnit(),
+              ] else if (module.id == 'pronunciation_basics') ...[
+                const SizedBox(height: 14),
+                const PronunciationBasicsLearningUnit(),
+              ] else if (module.id == 'makharij') ...[
+                const SizedBox(height: 14),
+                const MakharijLearningUnit(),
+              ] else if (module.id == 'tajweed_rules') ...[
+                const SizedBox(height: 14),
+                const TajweedRulesLearningUnit(),
+              ] else if (module.id == 'word_by_word') ...[
+                const SizedBox(height: 14),
+                const WordByWordLearningUnit(),
+              ] else if (module.id == 'short_surah_practice') ...[
+                const SizedBox(height: 14),
+                const ShortSurahPracticeLearningUnit(),
+              ] else if (module.id == 'audio_assisted') ...[
+                const SizedBox(height: 14),
+                const AudioAssistedLearningUnit(),
+              ],
               const SizedBox(height: 14),
               for (final lesson in module.lessons)
                 Padding(
@@ -119,6 +148,9 @@ class LearningModuleDetailView extends StatelessWidget {
                   child: LearnLessonTile(
                     lesson: lesson,
                     isCompleted: viewModel.isLessonCompleted(lesson.id),
+                    isAudioPlaying: viewModel.isAudioRunningForLesson(
+                      lesson.id,
+                    ),
                     onCompletionChanged: (isCompleted) {
                       unawaited(
                         viewModel.setLessonCompletion(

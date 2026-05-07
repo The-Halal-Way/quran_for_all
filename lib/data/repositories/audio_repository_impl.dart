@@ -11,6 +11,9 @@ class AudioRepositoryImpl implements AudioRepository {
   bool get isPlaying => _audioService.isPlaying;
 
   @override
+  Stream<bool> get isPlayingStream => _audioService.isPlayingStream;
+
+  @override
   Future<void> playAyah(AyahModel ayah) {
     return _audioService.playAyah(ayah);
   }

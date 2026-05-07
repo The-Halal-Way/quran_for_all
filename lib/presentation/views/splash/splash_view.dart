@@ -3,11 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../domain/repositories/audio_repository.dart';
-import '../../../domain/repositories/learning_progress_repository.dart';
-import '../../../domain/repositories/quran_repository.dart';
 import '../../viewmodels/dashboard_viewmodel.dart';
-import '../../viewmodels/learn_quran_viewmodel.dart';
 import '../../viewmodels/splash_viewmodel.dart';
 import '../../widgets/splash/splash_branding.dart';
 import '../../widgets/splash/splash_status_panel.dart';
@@ -39,29 +35,11 @@ class _SplashViewState extends State<SplashView> {
       return;
     }
 
+    unawaited(context.read<DashboardViewModel>().load());
+
     await Navigator.of(context).pushReplacement(
       MaterialPageRoute<void>(
-        builder: (_) => MultiProvider(
-          providers: [
-            ChangeNotifierProvider(
-              create: (context) {
-                final dashboardViewModel = DashboardViewModel(
-                  context.read<QuranRepository>(),
-                );
-                unawaited(Future<void>.microtask(dashboardViewModel.load));
-                return dashboardViewModel;
-              },
-            ),
-            ChangeNotifierProvider(
-              create: (context) => LearnQuranViewModel(
-                progressRepository: context.read<LearningProgressRepository>(),
-                quranRepository: context.read<QuranRepository>(),
-                audioRepository: context.read<AudioRepository>(),
-              ),
-            ),
-          ],
-          child: const HomeView(),
-        ),
+        builder: (_) => const HomeView(),
       ),
     );
   }

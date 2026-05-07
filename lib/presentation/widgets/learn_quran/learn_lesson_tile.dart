@@ -7,12 +7,14 @@ class LearnLessonTile extends StatelessWidget {
     super.key,
     required this.lesson,
     required this.isCompleted,
+    required this.isAudioPlaying,
     required this.onCompletionChanged,
     required this.onAudioTap,
   });
 
   final LearnQuranLesson lesson;
   final bool isCompleted;
+  final bool isAudioPlaying;
   final ValueChanged<bool> onCompletionChanged;
   final VoidCallback? onAudioTap;
 
@@ -56,8 +58,14 @@ class LearnLessonTile extends StatelessWidget {
                 if (lesson.hasAudioSample)
                   IconButton.filledTonal(
                     onPressed: onAudioTap,
-                    icon: const Icon(Icons.play_arrow_rounded),
-                    tooltip: 'Play lesson sample audio',
+                    icon: Icon(
+                      isAudioPlaying
+                          ? Icons.pause_rounded
+                          : Icons.play_arrow_rounded,
+                    ),
+                    tooltip: isAudioPlaying
+                        ? 'Pause lesson sample audio'
+                        : 'Play lesson sample audio',
                   ),
               ],
             ),

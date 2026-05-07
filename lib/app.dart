@@ -14,8 +14,12 @@ import 'domain/repositories/audio_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
+import 'presentation/viewmodels/dashboard_viewmodel.dart';
+import 'presentation/viewmodels/learn_quran_viewmodel.dart';
+import 'presentation/viewmodels/search_viewmodel.dart';
 import 'presentation/viewmodels/settings_viewmodel.dart';
 import 'presentation/viewmodels/splash_viewmodel.dart';
+import 'presentation/viewmodels/surah_details_viewmodel.dart';
 import 'presentation/views/splash/splash_view.dart';
 import 'services/audio_service.dart';
 
@@ -57,16 +61,36 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               SettingsViewModel(context.read<SettingsRepository>()),
         ),
+        ChangeNotifierProvider<SplashViewModel>(
+          create: (context) =>
+              SplashViewModel(quranRepository: context.read<QuranRepository>()),
+        ),
+        ChangeNotifierProvider<DashboardViewModel>(
+          create: (context) =>
+              DashboardViewModel(context.read<QuranRepository>()),
+        ),
+        ChangeNotifierProvider<LearnQuranViewModel>(
+          create: (context) => LearnQuranViewModel(
+            progressRepository: context.read<LearningProgressRepository>(),
+            quranRepository: context.read<QuranRepository>(),
+            audioRepository: context.read<AudioRepository>(),
+          ),
+        ),
+        ChangeNotifierProvider<SearchViewModel>(
+          create: (context) => SearchViewModel(context.read<QuranRepository>()),
+        ),
+        ChangeNotifierProvider<SurahDetailsViewModel>(
+          create: (context) => SurahDetailsViewModel(
+            quranRepository: context.read<QuranRepository>(),
+            audioRepository: context.read<AudioRepository>(),
+          ),
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: AppConstants.appName,
         theme: AppTheme.lightTheme,
-        home: ChangeNotifierProvider(
-          create: (context) =>
-              SplashViewModel(quranRepository: context.read<QuranRepository>()),
-          child: const SplashView(),
-        ),
+        home: const SplashView(),
       ),
     );
   }

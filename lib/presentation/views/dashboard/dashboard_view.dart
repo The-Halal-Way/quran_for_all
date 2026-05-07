@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../data/models/surah_model.dart';
-import '../../../domain/repositories/audio_repository.dart';
-import '../../../domain/repositories/quran_repository.dart';
 import '../../viewmodels/dashboard_viewmodel.dart';
 import '../../viewmodels/search_viewmodel.dart';
 import '../../viewmodels/surah_details_viewmodel.dart';
@@ -125,37 +123,21 @@ class DashboardView extends StatelessWidget {
   }
 
   void _openSearch(BuildContext context) {
+    unawaited(context.read<SearchViewModel>().initialize());
+
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (_) => ChangeNotifierProvider(
-          create: (context) {
-            final searchViewModel = SearchViewModel(
-              context.read<QuranRepository>(),
-            );
-            unawaited(searchViewModel.initialize());
-            return searchViewModel;
-          },
-          child: const SearchView(),
-        ),
+        builder: (_) => const SearchView(),
       ),
     );
   }
 
   void _openSurah(BuildContext context, SurahModel surah) {
+    unawaited(context.read<SurahDetailsViewModel>().openSurah(surah));
+
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (_) => ChangeNotifierProvider(
-          create: (context) {
-            final surahDetailsViewModel = SurahDetailsViewModel(
-              surah: surah,
-              quranRepository: context.read<QuranRepository>(),
-              audioRepository: context.read<AudioRepository>(),
-            );
-            unawaited(Future<void>.microtask(surahDetailsViewModel.load));
-            return surahDetailsViewModel;
-          },
-          child: SurahDetailsView(surah: surah),
-        ),
+        builder: (_) => SurahDetailsView(surah: surah),
       ),
     );
   }

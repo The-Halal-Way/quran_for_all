@@ -1,0 +1,117 @@
+import 'package:flutter/material.dart';
+
+import 'arabic_letters_learning_data.dart';
+import 'arabic_letters_section_card.dart';
+
+// Section 5: Articulation zone practice.
+class ArabicLettersArticulationSection extends StatelessWidget {
+  const ArabicLettersArticulationSection({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ArabicLettersSectionCard(
+      title: '4) Beginner Pronunciation and Articulation Hints',
+      subtitle:
+          'These cues guide where each sound is produced. Keep tone natural and avoid over-force.',
+      child: Column(
+        children: [
+          for (
+            var i = 0;
+            i < ArabicLettersLearningData.articulationZones.length;
+            i++
+          )
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: _ArticulationZoneCard(
+                guide: ArabicLettersLearningData.articulationZones[i],
+                icon: _zoneIcon(i),
+                color: _zoneColor(i),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  IconData _zoneIcon(int index) {
+    const icons = [
+      Icons.record_voice_over_rounded,
+      Icons.spatial_audio,
+      Icons.hearing_rounded,
+      Icons.graphic_eq_rounded,
+    ];
+    return icons[index % icons.length];
+  }
+
+  Color _zoneColor(int index) {
+    const colors = [
+      Color(0xFF7D3A23),
+      Color(0xFF2E648A),
+      Color(0xFF2D7C53),
+      Color(0xFF8A5A1D),
+    ];
+    return colors[index % colors.length];
+  }
+}
+
+class _ArticulationZoneCard extends StatelessWidget {
+  const _ArticulationZoneCard({
+    required this.guide,
+    required this.icon,
+    required this.color,
+  });
+
+  final ArticulationZoneGuide guide;
+  final IconData icon;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(11, 10, 11, 10),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(14),
+        color: color.withValues(alpha: 0.1),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(icon, color: color, size: 18),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  guide.zone,
+                  style: textTheme.titleSmall?.copyWith(
+                    color: color,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 7),
+          Text(
+            guide.letters,
+            style: textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
+          ),
+          const SizedBox(height: 5),
+          Text(guide.hint, style: textTheme.bodySmall),
+          const SizedBox(height: 3),
+          Text(
+            'Avoid: ${guide.watchFor}',
+            style: textTheme.labelMedium?.copyWith(
+              color: Theme.of(
+                context,
+              ).colorScheme.onSurface.withValues(alpha: 0.78),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

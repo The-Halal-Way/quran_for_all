@@ -5,8 +5,6 @@ import 'package:provider/provider.dart';
 
 import '../../../data/models/search_result_model.dart';
 import '../../../data/models/surah_model.dart';
-import '../../../domain/repositories/audio_repository.dart';
-import '../../../domain/repositories/quran_repository.dart';
 import '../../viewmodels/search_viewmodel.dart';
 import '../../viewmodels/settings_viewmodel.dart';
 import '../../viewmodels/surah_details_viewmodel.dart';
@@ -153,21 +151,11 @@ class _SearchViewState extends State<SearchView> {
     }
 
     final selectedSurah = surah;
+    unawaited(context.read<SurahDetailsViewModel>().openSurah(selectedSurah));
 
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (_) => ChangeNotifierProvider(
-          create: (context) {
-            final surahDetailsViewModel = SurahDetailsViewModel(
-              surah: selectedSurah,
-              quranRepository: context.read<QuranRepository>(),
-              audioRepository: context.read<AudioRepository>(),
-            );
-            unawaited(Future<void>.microtask(surahDetailsViewModel.load));
-            return surahDetailsViewModel;
-          },
-          child: SurahDetailsView(surah: selectedSurah),
-        ),
+        builder: (_) => SurahDetailsView(surah: selectedSurah),
       ),
     );
   }

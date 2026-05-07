@@ -9,21 +9,29 @@ import 'package:path_provider/path_provider.dart';
 import '../data/models/ayah_model.dart';
 
 class AudioService {
-  AudioService({required http.Client httpClient}) : _httpClient = httpClient;
+  AudioService({required http.Client httpClient}) : _httpClient = httpClient {
+    _playerStateSubscription = _player.onPlayerStateChanged.listen(
+      _onPlayerStateChanged,
+    );
+  }
 
   final http.Client _httpClient;
   final AudioPlayer _player = AudioPlayer();
+  final StreamController<bool> _isPlayingController =
+      StreamController<bool>.broadcast();
+  StreamSubscription<PlayerState>? _playerStateSubscription;
 
   bool _isPlaying = false;
   bool _stopRequested = false;
 
   bool get isPlaying => _isPlaying;
+  Stream<bool> get isPlayingStream => _isPlayingController.stream;
 
   Future<void> playAyah(AyahModel ayah) async {
     _stopRequested = false;
 
     final localPath = await _getOrDownloadAyahAudio(ayah);
-    _isPlaying = true;
+    _setIsPlaying(true);
 
     await _player.play(DeviceFileSource(localPath));
   }
@@ -40,13 +48,13 @@ class AudioService {
       await _waitForCompleteOrStop();
     }
 
-    _isPlaying = false;
+    _setIsPlaying(false);
   }
 
   Future<void> stop() async {
     _stopRequested = true;
-    _isPlaying = false;
     await _player.stop();
+    _setIsPlaying(false);
   }
 
   Future<String> _getOrDownloadAyahAudio(AyahModel ayah) async {
@@ -103,7 +111,29 @@ class AudioService {
     await stateSubscription.cancel();
   }
 
+  void _onPlayerStateChanged(PlayerState state) {
+    if (state == PlayerState.playing) {
+      _setIsPlaying(true);
+      return;
+    }
+
+    _setIsPlaying(false);
+  }
+
+  void _setIsPlaying(bool value) {
+    if (_isPlaying == value) {
+      return;
+    }
+
+    _isPlaying = value;
+    if (!_isPlayingController.isClosed) {
+      _isPlayingController.add(value);
+    }
+  }
+
   Future<void> dispose() async {
+    await _playerStateSubscription?.cancel();
     await _player.dispose();
+    await _isPlayingController.close();
   }
 }
