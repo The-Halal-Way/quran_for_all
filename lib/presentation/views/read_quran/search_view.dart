@@ -5,13 +5,14 @@ import 'package:provider/provider.dart';
 
 import '../../../data/models/search_result_model.dart';
 import '../../../data/models/surah_model.dart';
-import '../../viewmodels/search_viewmodel.dart';
+import '../../viewmodels/read_quran/search_viewmodel.dart';
+import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../viewmodels/settings_viewmodel.dart';
-import '../../viewmodels/surah_details_viewmodel.dart';
+import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/empty_state.dart';
-import '../../widgets/search/search_query_panel.dart';
-import '../../widgets/search/search_result_tile.dart';
-import '../surah_details/surah_details_view.dart';
+import '../../widgets/read_quran/search/search_query_panel.dart';
+import '../../widgets/read_quran/search/search_result_tile.dart';
+import 'surah_details_view.dart';
 
 class SearchView extends StatefulWidget {
   const SearchView({super.key});
@@ -103,18 +104,22 @@ class _SearchViewState extends State<SearchView> {
                       );
                     }
 
-                    return ListView.separated(
-                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                      itemCount: viewModel.results.length,
-                      separatorBuilder: (_, _) => const SizedBox(height: 8),
-                      itemBuilder: (context, index) {
-                        final result = viewModel.results[index];
-                        return SearchResultTile(
-                          result: result,
-                          translationLanguage: settings.language,
-                          onTap: () => _openResult(context, result, viewModel),
-                        );
-                      },
+                    return AppPageScrollbar(
+                      builder: (context, controller) => ListView.separated(
+                        controller: controller,
+                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                        itemCount: viewModel.results.length,
+                        separatorBuilder: (_, _) => const SizedBox(height: 8),
+                        itemBuilder: (context, index) {
+                          final result = viewModel.results[index];
+                          return SearchResultTile(
+                            result: result,
+                            translationLanguage: settings.language,
+                            onTap: () =>
+                                _openResult(context, result, viewModel),
+                          );
+                        },
+                      ),
                     );
                   },
                 ),

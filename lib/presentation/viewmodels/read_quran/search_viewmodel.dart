@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 
-import '../../data/models/search_result_model.dart';
-import '../../data/models/surah_model.dart';
-import '../../domain/repositories/quran_repository.dart';
+import '../../../data/models/search_result_model.dart';
+import '../../../data/models/surah_model.dart';
+import '../../../domain/repositories/quran_repository.dart';
 
 class SearchViewModel extends ChangeNotifier {
   SearchViewModel(this._quranRepository);

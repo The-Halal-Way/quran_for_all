@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'tajweed_learning_data.dart';
 import 'tajweed_section_card.dart';
 
@@ -61,11 +62,11 @@ class _WaqfCard extends StatelessWidget {
             ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Pause', value: item.pauseAction),
+          _Line(label: context.learnText('Pause'), value: item.pauseAction),
           const SizedBox(height: 4),
-          _Line(label: 'Restart', value: item.restartAction),
+          _Line(label: context.learnText('Restart'), value: item.restartAction),
           const SizedBox(height: 4),
-          _Line(label: 'Example', value: item.example),
+          _Line(label: context.learnText('Example'), value: item.example),
         ],
       ),
     );

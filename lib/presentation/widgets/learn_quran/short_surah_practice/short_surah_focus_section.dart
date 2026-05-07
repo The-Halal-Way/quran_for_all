@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'short_surah_learning_data.dart';
 import 'short_surah_section_card.dart';
 
@@ -62,13 +63,19 @@ class _SurahFocusCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Objective', value: item.objective),
+          _Line(label: context.learnText('Objective'), value: item.objective),
           const SizedBox(height: 4),
-          _Line(label: 'Key theme', value: item.keyTheme),
+          _Line(label: context.learnText('Key theme'), value: item.keyTheme),
           const SizedBox(height: 4),
-          _Line(label: 'Recitation target', value: item.recitationTarget),
+          _Line(
+            label: context.learnText('Recitation target'),
+            value: item.recitationTarget,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Practice prompt', value: item.practicePrompt),
+          _Line(
+            label: context.learnText('Practice prompt'),
+            value: item.practicePrompt,
+          ),
         ],
       ),
     );

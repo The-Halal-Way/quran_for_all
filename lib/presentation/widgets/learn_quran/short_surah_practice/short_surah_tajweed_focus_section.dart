@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'short_surah_learning_data.dart';
 import 'short_surah_section_card.dart';
 
@@ -62,13 +63,16 @@ class _TajweedCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Rule', value: item.rule),
+          _Line(label: context.learnText('Rule'), value: item.rule),
           const SizedBox(height: 4),
-          _Line(label: 'Drill', value: item.drill),
+          _Line(label: context.learnText('Drill'), value: item.drill),
           const SizedBox(height: 4),
-          _Line(label: 'Common mistake', value: item.commonMistake),
+          _Line(
+            label: context.learnText('Common mistake'),
+            value: item.commonMistake,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Correction', value: item.correction),
+          _Line(label: context.learnText('Correction'), value: item.correction),
         ],
       ),
     );

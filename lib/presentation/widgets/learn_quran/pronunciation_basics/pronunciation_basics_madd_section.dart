@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -65,14 +66,14 @@ class _MaddCard extends StatelessWidget {
             spacing: 7,
             runSpacing: 7,
             children: [
-              _Badge(label: 'Sound', value: pattern.sound),
-              _Badge(label: 'Count', value: pattern.count),
+              _Badge(label: context.learnText('Sound'), value: pattern.sound),
+              _Badge(label: context.learnText('Count'), value: pattern.count),
             ],
           ),
           const SizedBox(height: 7),
-          _Line(label: 'Example', value: pattern.example),
+          _Line(label: context.learnText('Example'), value: pattern.example),
           const SizedBox(height: 4),
-          _Line(label: 'Note', value: pattern.note),
+          _Line(label: context.learnText('Note'), value: pattern.note),
         ],
       ),
     );

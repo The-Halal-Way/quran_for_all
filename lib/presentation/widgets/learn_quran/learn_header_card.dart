@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/localization/l10n_extensions.dart';
+
 class LearnHeaderCard extends StatelessWidget {
   const LearnHeaderCard({
     super.key,
@@ -21,6 +23,7 @@ class LearnHeaderCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
+    final l10n = context.l10n;
 
     return Container(
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
@@ -43,7 +46,7 @@ class LearnHeaderCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Learn Quran',
+            l10n.learnHeaderTitle,
             style: textTheme.headlineMedium?.copyWith(
               color: Colors.white,
               fontSize: 30,
@@ -52,7 +55,7 @@ class LearnHeaderCard extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Structured lessons for letters, tajweed, and recitation confidence.',
+            l10n.learnHeaderSubtitle,
             style: textTheme.bodyMedium?.copyWith(
               color: Colors.white.withValues(alpha: 0.9),
             ),
@@ -69,7 +72,7 @@ class LearnHeaderCard extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            '$completedLessons of $totalLessons lessons completed',
+            l10n.learnHeaderLessonProgress(completedLessons, totalLessons),
             style: textTheme.labelLarge?.copyWith(
               color: Colors.white,
               fontWeight: FontWeight.w700,
@@ -81,7 +84,7 @@ class LearnHeaderCard extends StatelessWidget {
               Expanded(
                 child: _MetricPill(
                   icon: Icons.workspace_premium_rounded,
-                  label: 'Modules',
+                  label: l10n.learnHeaderModulesLabel,
                   value: '$completedModules/$totalModules',
                 ),
               ),
@@ -89,8 +92,8 @@ class LearnHeaderCard extends StatelessWidget {
               Expanded(
                 child: _MetricPill(
                   icon: Icons.local_fire_department_rounded,
-                  label: 'Streak',
-                  value: '$streakDays days',
+                  label: l10n.learnHeaderStreakLabel,
+                  value: l10n.learnHeaderStreakDays(streakDays),
                 ),
               ),
             ],

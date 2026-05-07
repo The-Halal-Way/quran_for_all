@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -62,13 +63,22 @@ class _ContrastCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Light sample', value: item.lightExample),
+          _Line(
+            label: context.learnText('Light sample'),
+            value: item.lightExample,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Heavy sample', value: item.heavyExample),
+          _Line(
+            label: context.learnText('Heavy sample'),
+            value: item.heavyExample,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Difference', value: item.keyDifference),
+          _Line(
+            label: context.learnText('Difference'),
+            value: item.keyDifference,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Coach tip', value: item.coachTip),
+          _Line(label: context.learnText('Coach tip'), value: item.coachTip),
         ],
       ),
     );

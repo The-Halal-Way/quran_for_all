@@ -1,82 +1,139 @@
+import '../../../../core/localization/l10n_extensions.dart';
+
 class ShortSurahFocusGuide {
   const ShortSurahFocusGuide({
-    required this.surah,
-    required this.objective,
-    required this.keyTheme,
-    required this.recitationTarget,
-    required this.practicePrompt,
-  });
+    required String surah,
+    required String objective,
+    required String keyTheme,
+    required String recitationTarget,
+    required String practicePrompt,
+  }) : _surah = surah,
+       _objective = objective,
+       _keyTheme = keyTheme,
+       _recitationTarget = recitationTarget,
+       _practicePrompt = practicePrompt;
 
-  final String surah;
-  final String objective;
-  final String keyTheme;
-  final String recitationTarget;
-  final String practicePrompt;
+  final String _surah;
+  final String _objective;
+  final String _keyTheme;
+  final String _recitationTarget;
+  final String _practicePrompt;
+
+  String get surah => LearnQuranTextLocalizer.translateRaw(_surah);
+  String get objective => LearnQuranTextLocalizer.translateRaw(_objective);
+  String get keyTheme => LearnQuranTextLocalizer.translateRaw(_keyTheme);
+  String get recitationTarget =>
+      LearnQuranTextLocalizer.translateRaw(_recitationTarget);
+  String get practicePrompt =>
+      LearnQuranTextLocalizer.translateRaw(_practicePrompt);
 }
 
 class ShortSurahTajweedFocusGuide {
   const ShortSurahTajweedFocusGuide({
-    required this.focus,
-    required this.rule,
-    required this.drill,
-    required this.commonMistake,
-    required this.correction,
-  });
+    required String focus,
+    required String rule,
+    required String drill,
+    required String commonMistake,
+    required String correction,
+  }) : _focus = focus,
+       _rule = rule,
+       _drill = drill,
+       _commonMistake = commonMistake,
+       _correction = correction;
 
-  final String focus;
-  final String rule;
-  final String drill;
-  final String commonMistake;
-  final String correction;
+  final String _focus;
+  final String _rule;
+  final String _drill;
+  final String _commonMistake;
+  final String _correction;
+
+  String get focus => LearnQuranTextLocalizer.translateRaw(_focus);
+  String get rule => LearnQuranTextLocalizer.translateRaw(_rule);
+  String get drill => LearnQuranTextLocalizer.translateRaw(_drill);
+  String get commonMistake =>
+      LearnQuranTextLocalizer.translateRaw(_commonMistake);
+  String get correction => LearnQuranTextLocalizer.translateRaw(_correction);
 }
 
 class ShortSurahMemorizationCycleGuide {
   const ShortSurahMemorizationCycleGuide({
-    required this.phase,
-    required this.action,
-    required this.duration,
-    required this.goal,
-  });
+    required String phase,
+    required String action,
+    required String duration,
+    required String goal,
+  }) : _phase = phase,
+       _action = action,
+       _duration = duration,
+       _goal = goal;
 
-  final String phase;
-  final String action;
-  final String duration;
-  final String goal;
+  final String _phase;
+  final String _action;
+  final String _duration;
+  final String _goal;
+
+  String get phase => LearnQuranTextLocalizer.translateRaw(_phase);
+  String get action => LearnQuranTextLocalizer.translateRaw(_action);
+  String get duration => LearnQuranTextLocalizer.translateRaw(_duration);
+  String get goal => LearnQuranTextLocalizer.translateRaw(_goal);
 }
 
 class ShortSurahSalahReadinessGuide {
   const ShortSurahSalahReadinessGuide({
-    required this.checkpoint,
-    required this.whatToDo,
-    required this.successMarker,
-  });
+    required String checkpoint,
+    required String whatToDo,
+    required String successMarker,
+  }) : _checkpoint = checkpoint,
+       _whatToDo = whatToDo,
+       _successMarker = successMarker;
 
-  final String checkpoint;
-  final String whatToDo;
-  final String successMarker;
+  final String _checkpoint;
+  final String _whatToDo;
+  final String _successMarker;
+
+  String get checkpoint => LearnQuranTextLocalizer.translateRaw(_checkpoint);
+  String get whatToDo => LearnQuranTextLocalizer.translateRaw(_whatToDo);
+  String get successMarker =>
+      LearnQuranTextLocalizer.translateRaw(_successMarker);
 }
 
 class ShortSurahMeaningLinkGuide {
   const ShortSurahMeaningLinkGuide({
-    required this.reference,
-    required this.arabic,
-    required this.transliteration,
-    required this.message,
-    required this.recitationCue,
-  });
+    required String reference,
+    required String arabic,
+    required String transliteration,
+    required String message,
+    required String recitationCue,
+  }) : _reference = reference,
+       _arabic = arabic,
+       _transliteration = transliteration,
+       _message = message,
+       _recitationCue = recitationCue;
 
-  final String reference;
-  final String arabic;
-  final String transliteration;
-  final String message;
-  final String recitationCue;
+  final String _reference;
+  final String _arabic;
+  final String _transliteration;
+  final String _message;
+  final String _recitationCue;
+
+  String get reference => LearnQuranTextLocalizer.translateRaw(_reference);
+  String get arabic => LearnQuranTextLocalizer.translateRaw(_arabic);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get message => LearnQuranTextLocalizer.translateRaw(_message);
+  String get recitationCue =>
+      LearnQuranTextLocalizer.translateRaw(_recitationCue);
 }
 
 class ShortSurahRevisionGuide {
-  const ShortSurahRevisionGuide({required this.title, required this.action});
+  const ShortSurahRevisionGuide({required String title, required String action})
+    : _title = title,
+      _action = action;
 
-  final String title;
-  final String action;
+  final String _title;
+  final String _action;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get action => LearnQuranTextLocalizer.translateRaw(_action);
 }
 
 class ShortSurahLearningData {

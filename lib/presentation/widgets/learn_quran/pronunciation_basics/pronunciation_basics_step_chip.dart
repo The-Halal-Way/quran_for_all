@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
+
 class PronunciationBasicsStepChip extends StatelessWidget {
   const PronunciationBasicsStepChip({
     super.key,
@@ -36,7 +38,7 @@ class PronunciationBasicsStepChip extends StatelessWidget {
           ),
           const SizedBox(width: 6),
           Text(
-            label,
+            context.learnText(label),
             style: Theme.of(context).textTheme.labelMedium?.copyWith(
               color: colorScheme.primary,
               fontWeight: FontWeight.w700,

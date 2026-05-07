@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 
-import '../../data/models/ayah_model.dart';
-import '../../data/models/last_read_model.dart';
-import '../../data/models/surah_model.dart';
-import '../../domain/repositories/quran_repository.dart';
+import '../../../data/models/ayah_model.dart';
+import '../../../data/models/last_read_model.dart';
+import '../../../data/models/surah_model.dart';
+import '../../../domain/repositories/quran_repository.dart';
 
-class DashboardViewModel extends ChangeNotifier {
-  DashboardViewModel(this._quranRepository);
+class ReadQuranViewModel extends ChangeNotifier {
+  ReadQuranViewModel(this._quranRepository);
 
   final QuranRepository _quranRepository;
 

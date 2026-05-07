@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../data/models/surah_model.dart';
+import '../../../../data/models/surah_model.dart';
 
 class SurahMetaCard extends StatelessWidget {
   const SurahMetaCard({

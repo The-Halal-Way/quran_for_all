@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
+
 class ShortSurahStepChip extends StatelessWidget {
   const ShortSurahStepChip({
     super.key,
@@ -36,7 +38,7 @@ class ShortSurahStepChip extends StatelessWidget {
           ),
           const SizedBox(width: 6),
           Text(
-            label,
+            context.learnText(label),
             style: Theme.of(context).textTheme.labelMedium?.copyWith(
               color: colorScheme.primary,
               fontWeight: FontWeight.w700,

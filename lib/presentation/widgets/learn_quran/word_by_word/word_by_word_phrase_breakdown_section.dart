@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
 
@@ -69,9 +70,9 @@ class _PhraseCard extends StatelessWidget {
             ).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Word map', value: item.breakdown),
+          _Line(label: context.learnText('Word map'), value: item.breakdown),
           const SizedBox(height: 4),
-          _Line(label: 'Meaning', value: item.meaning),
+          _Line(label: context.learnText('Meaning'), value: item.meaning),
         ],
       ),
     );

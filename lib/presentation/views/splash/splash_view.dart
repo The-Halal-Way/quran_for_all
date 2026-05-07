@@ -3,8 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../viewmodels/dashboard_viewmodel.dart';
+import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../viewmodels/splash_viewmodel.dart';
+import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/splash/splash_branding.dart';
 import '../../widgets/splash/splash_status_panel.dart';
 import '../home/home_view.dart';
@@ -35,12 +36,10 @@ class _SplashViewState extends State<SplashView> {
       return;
     }
 
-    unawaited(context.read<DashboardViewModel>().load());
+    unawaited(context.read<ReadQuranViewModel>().load());
 
     await Navigator.of(context).pushReplacement(
-      MaterialPageRoute<void>(
-        builder: (_) => const HomeView(),
-      ),
+      MaterialPageRoute<void>(builder: (_) => const HomeView()),
     );
   }
 
@@ -88,22 +87,25 @@ class _SplashViewState extends State<SplashView> {
           ),
           SafeArea(
             child: Center(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.all(24),
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 520),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const SplashBranding(),
-                      const SizedBox(height: 26),
-                      SplashStatusPanel(
-                        isLoading: viewModel.isLoading,
-                        status: viewModel.status,
-                        errorMessage: viewModel.errorMessage,
-                        onRetry: _initialize,
-                      ),
-                    ],
+              child: AppPageScrollbar(
+                builder: (context, controller) => SingleChildScrollView(
+                  controller: controller,
+                  padding: const EdgeInsets.all(24),
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 520),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const SplashBranding(),
+                        const SizedBox(height: 26),
+                        SplashStatusPanel(
+                          isLoading: viewModel.isLoading,
+                          status: viewModel.status,
+                          errorMessage: viewModel.errorMessage,
+                          onRetry: _initialize,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

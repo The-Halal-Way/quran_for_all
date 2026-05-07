@@ -5,11 +5,12 @@ import 'package:provider/provider.dart';
 
 import '../../../data/models/ayah_model.dart';
 import '../../../data/models/surah_model.dart';
+import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../viewmodels/settings_viewmodel.dart';
-import '../../viewmodels/surah_details_viewmodel.dart';
+import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/ayah_tile.dart';
 import '../../widgets/empty_state.dart';
-import '../../widgets/surah_details/surah_meta_card.dart';
+import '../../widgets/read_quran/surah_details/surah_meta_card.dart';
 
 class SurahDetailsView extends StatelessWidget {
   const SurahDetailsView({super.key, required this.surah});
@@ -58,26 +59,29 @@ class SurahDetailsView extends StatelessWidget {
                   ),
                 ),
                 Expanded(
-                  child: ListView.builder(
-                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                    itemCount: viewModel.ayahs.length,
-                    itemBuilder: (context, index) {
-                      final ayah = viewModel.ayahs[index];
-                      return Padding(
-                        padding: const EdgeInsets.only(bottom: 10),
-                        child: AyahTile(
-                          ayah: ayah,
-                          showPronunciation: settings.showPronunciation,
-                          showTranslation: settings.showTranslation,
-                          language: settings.language,
-                          onPlay: () => unawaited(
-                            _playAyahWithFeedback(context, viewModel, ayah),
+                  child: AppPageScrollbar(
+                    builder: (context, controller) => ListView.builder(
+                      controller: controller,
+                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                      itemCount: viewModel.ayahs.length,
+                      itemBuilder: (context, index) {
+                        final ayah = viewModel.ayahs[index];
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: AyahTile(
+                            ayah: ayah,
+                            showPronunciation: settings.showPronunciation,
+                            showTranslation: settings.showTranslation,
+                            language: settings.language,
+                            onPlay: () => unawaited(
+                              _playAyahWithFeedback(context, viewModel, ayah),
+                            ),
+                            onMarkAsLastRead: () =>
+                                viewModel.markAsLastRead(ayah),
                           ),
-                          onMarkAsLastRead: () =>
-                              viewModel.markAsLastRead(ayah),
-                        ),
-                      );
-                    },
+                        );
+                      },
+                    ),
                   ),
                 ),
               ],

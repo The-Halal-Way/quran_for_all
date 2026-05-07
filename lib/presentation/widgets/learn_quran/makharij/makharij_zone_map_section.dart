@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'makharij_learning_data.dart';
 import 'makharij_section_card.dart';
 
@@ -68,13 +69,16 @@ class _ZoneCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Location', value: zone.locationCue),
+          _Line(label: context.learnText('Location'), value: zone.locationCue),
           const SizedBox(height: 4),
-          _Line(label: 'Sound cue', value: zone.soundCue),
+          _Line(label: context.learnText('Sound cue'), value: zone.soundCue),
           const SizedBox(height: 4),
-          _Line(label: 'Common mistake', value: zone.commonMistake),
+          _Line(
+            label: context.learnText('Common mistake'),
+            value: zone.commonMistake,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Drill', value: zone.drill),
+          _Line(label: context.learnText('Drill'), value: zone.drill),
         ],
       ),
     );

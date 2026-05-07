@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'short_surah_learning_data.dart';
 import 'short_surah_section_card.dart';
 
@@ -62,9 +63,12 @@ class _ReadinessCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5),
-          _Line(label: 'Do this', value: item.whatToDo),
+          _Line(label: context.learnText('Do this'), value: item.whatToDo),
           const SizedBox(height: 4),
-          _Line(label: 'Success marker', value: item.successMarker),
+          _Line(
+            label: context.learnText('Success marker'),
+            value: item.successMarker,
+          ),
         ],
       ),
     );

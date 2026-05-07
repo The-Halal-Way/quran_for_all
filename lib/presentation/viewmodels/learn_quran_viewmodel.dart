@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 
+import '../../core/localization/learn_quran_message_localizer.dart';
 import '../../data/models/learn_quran_content.dart';
 import '../../data/models/learning_progress.dart';
 import '../../domain/repositories/audio_repository.dart';
@@ -41,13 +42,13 @@ class LearnQuranViewModel extends ChangeNotifier {
   late final StreamSubscription<bool> _audioPlaybackSubscription;
 
   bool _isLoading = true;
-  String? _errorMessage;
+  String? _errorMessageKey;
   LearningProgress _progress = LearningProgress.initial();
   bool _isLessonAudioPlaying = false;
   String? _playingLessonId;
 
   bool get isLoading => _isLoading;
-  String? get errorMessage => _errorMessage;
+  String? get errorMessageKey => _errorMessageKey;
   List<LearnQuranModule> get modules => LearnQuranContent.modules;
 
   int get totalLessonCount => LearnQuranContent.totalLessonCount;
@@ -121,7 +122,7 @@ class LearnQuranViewModel extends ChangeNotifier {
 
   Future<void> initialize() async {
     _isLoading = true;
-    _errorMessage = null;
+    _errorMessageKey = null;
     notifyListeners();
 
     try {
@@ -139,7 +140,7 @@ class LearnQuranViewModel extends ChangeNotifier {
         await _progressRepository.saveProgress(_progress);
       }
     } catch (_) {
-      _errorMessage = 'Unable to load learning progress right now.';
+      _errorMessageKey = LearnQuranMessageKeys.errorLoadProgress;
     }
 
     _isLoading = false;
@@ -172,20 +173,20 @@ class LearnQuranViewModel extends ChangeNotifier {
     );
 
     _progress = updatedProgress;
-    _errorMessage = null;
+    _errorMessageKey = null;
     notifyListeners();
 
     try {
       await _progressRepository.saveProgress(updatedProgress);
     } catch (_) {
-      _errorMessage = 'Unable to save progress. Please try again.';
+      _errorMessageKey = LearnQuranMessageKeys.errorSaveProgress;
       notifyListeners();
     }
   }
 
   Future<String?> playLessonAudio(LearnQuranLesson lesson) async {
     if (!lesson.hasAudioSample) {
-      return 'No audio sample is attached to this lesson yet.';
+      return LearnQuranMessageKeys.audioMissingSample;
     }
 
     if (isAudioRunningForLesson(lesson.id)) {
@@ -202,7 +203,7 @@ class LearnQuranViewModel extends ChangeNotifier {
     try {
       final ayah = await _quranRepository.getAyah(surahId, ayahNumber);
       if (ayah == null) {
-        return 'Could not find the sample ayah audio for this lesson.';
+        return LearnQuranMessageKeys.audioSampleNotFound;
       }
 
       if (_audioRepository.isPlaying) {
@@ -219,7 +220,7 @@ class LearnQuranViewModel extends ChangeNotifier {
       _isLessonAudioPlaying = false;
       _playingLessonId = null;
       notifyListeners();
-      return 'Unable to play lesson audio right now.';
+      return LearnQuranMessageKeys.audioPlayFailed;
     }
   }
 

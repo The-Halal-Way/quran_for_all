@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -62,11 +63,17 @@ class _ComparisonCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Difference', value: guide.differenceRule),
+          _Line(
+            label: context.learnText('Difference'),
+            value: guide.differenceRule,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Practice', value: guide.practice),
+          _Line(label: context.learnText('Practice'), value: guide.practice),
           const SizedBox(height: 4),
-          _Line(label: 'Watch for', value: guide.commonMistake),
+          _Line(
+            label: context.learnText('Watch for'),
+            value: guide.commonMistake,
+          ),
         ],
       ),
     );

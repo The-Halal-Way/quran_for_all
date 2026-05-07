@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
+import 'package:quran_for_all/l10n/app_localizations.dart';
 
 import 'core/constants/app_constants.dart';
+import 'core/enums/app_language.dart';
+import 'core/localization/l10n_extensions.dart';
 import 'core/theme/app_theme.dart';
 import 'data/datasources/local/app_database.dart';
 import 'data/datasources/remote/quran_api_service.dart';
@@ -14,12 +17,12 @@ import 'domain/repositories/audio_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
-import 'presentation/viewmodels/dashboard_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
-import 'presentation/viewmodels/search_viewmodel.dart';
+import 'presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
+import 'presentation/viewmodels/read_quran/search_viewmodel.dart';
+import 'presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'presentation/viewmodels/settings_viewmodel.dart';
 import 'presentation/viewmodels/splash_viewmodel.dart';
-import 'presentation/viewmodels/surah_details_viewmodel.dart';
 import 'presentation/views/splash/splash_view.dart';
 import 'services/audio_service.dart';
 
@@ -65,9 +68,9 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               SplashViewModel(quranRepository: context.read<QuranRepository>()),
         ),
-        ChangeNotifierProvider<DashboardViewModel>(
+        ChangeNotifierProvider<ReadQuranViewModel>(
           create: (context) =>
-              DashboardViewModel(context.read<QuranRepository>()),
+              ReadQuranViewModel(context.read<QuranRepository>()),
         ),
         ChangeNotifierProvider<LearnQuranViewModel>(
           create: (context) => LearnQuranViewModel(
@@ -86,11 +89,29 @@ class QuranForAllApp extends StatelessWidget {
           ),
         ),
       ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: AppConstants.appName,
-        theme: AppTheme.lightTheme,
-        home: const SplashView(),
+      child: Consumer<SettingsViewModel>(
+        builder: (context, settingsViewModel, _) {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: AppConstants.appName,
+            theme: AppTheme.lightTheme,
+            locale: Locale(settingsViewModel.settings.language.code),
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+            builder: (context, child) {
+              final l10n = AppLocalizations.of(context);
+              if (l10n != null) {
+                LearnQuranTextLocalizer.seedFromLocalizations(
+                  l10n,
+                  Localizations.localeOf(context),
+                );
+              }
+
+              return child ?? const SizedBox.shrink();
+            },
+            home: const SplashView(),
+          );
+        },
       ),
     );
   }

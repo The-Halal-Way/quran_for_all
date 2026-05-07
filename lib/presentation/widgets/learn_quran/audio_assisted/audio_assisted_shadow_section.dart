@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'audio_assisted_learning_data.dart';
 import 'audio_assisted_section_card.dart';
 
@@ -62,11 +63,11 @@ class _ShadowCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5),
-          _Line(label: 'Pacing', value: item.pacing),
+          _Line(label: context.learnText('Pacing'), value: item.pacing),
           const SizedBox(height: 4),
-          _Line(label: 'Action', value: item.action),
+          _Line(label: context.learnText('Action'), value: item.action),
           const SizedBox(height: 4),
-          _Line(label: 'Watch for', value: item.watchFor),
+          _Line(label: context.learnText('Watch for'), value: item.watchFor),
         ],
       ),
     );

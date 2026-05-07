@@ -1,0 +1,90 @@
+{
+  "@@locale": "en",
+  "appName": "Quran For All",
+  "homeReadQuranTab": "Read Quran",
+  "homeLearnQuranTab": "Learn Quran",
+  "languageEnglish": "English",
+  "languageBangla": "Bangla",
+  "learnQuranPageTitle": "Learn Quran",
+  "learnQuranTracksTitle": "Learning Tracks",
+  "learnQuranTracksSubtitle": "Follow these sections in order or focus on the area you want to improve today.",
+  "learnHeaderTitle": "Learn Quran",
+  "learnHeaderSubtitle": "Structured lessons for letters, tajweed, and recitation confidence.",
+  "learnHeaderLessonProgress": "{completed} of {total} lessons completed",
+  "@learnHeaderLessonProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnHeaderModulesLabel": "Modules",
+  "learnHeaderStreakLabel": "Streak",
+  "learnHeaderStreakDays": "{days} days",
+  "@learnHeaderStreakDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "learnModuleStatusCompleted": "Completed",
+  "learnModuleStatusNotStarted": "Not started",
+  "learnModuleStatusInProgress": "In progress",
+  "learnMinutesShort": "{minutes} min",
+  "@learnMinutesShort": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "learnCompletedFraction": "{completed}/{total}",
+  "@learnCompletedFraction": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnNextContinuePathTitle": "Continue your path",
+  "learnNextAllLessonsCompletedTitle": "All lessons completed",
+  "learnNextAllLessonsCompletedBody": "Excellent work. Revisit any module to reinforce your learning.",
+  "learnNextStartLessonButton": "Start Next Lesson",
+  "learnNextReviewModulesButton": "Review Modules",
+  "learnLessonTooltipPauseAudio": "Pause lesson sample audio",
+  "learnLessonTooltipPlayAudio": "Play lesson sample audio",
+  "learnLessonAudioGuided": "Audio guided",
+  "learnLessonDone": "Done",
+  "learnLessonDurationMinutes": "{minutes} min",
+  "@learnLessonDurationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "learnModuleLessonsCompleted": "{completed} of {total} lessons completed",
+  "@learnModuleLessonsCompleted": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnVmErrorLoadProgress": "Unable to load learning progress right now.",
+  "learnVmErrorSaveProgress": "Unable to save progress. Please try again.",
+  "learnVmAudioMissingSample": "No audio sample is attached to this lesson yet.",
+  "learnVmAudioSampleNotFound": "Could not find the sample ayah audio for this lesson.",
+  "learnVmAudioPlayFailed": "Unable to play lesson audio right now.",
+  "learnQuranTextMapRaw": ""
+}

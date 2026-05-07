@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
 
@@ -76,7 +77,7 @@ class _AyahPracticeCard extends StatelessWidget {
             ).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Focus', value: item.focus),
+          _Line(label: context.learnText('Focus'), value: item.focus),
         ],
       ),
     );

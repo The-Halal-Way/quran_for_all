@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../dashboard/dashboard_view.dart';
+import '../../../core/localization/l10n_extensions.dart';
 import '../learn_quran/learn_quran_view.dart';
+import '../read_quran/read_quran_view.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -13,10 +14,12 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   int _selectedIndex = 0;
 
-  final List<Widget> _sections = const [DashboardView(), LearnQuranView()];
+  final List<Widget> _sections = const [ReadQuranView(), LearnQuranView()];
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
+
     return Scaffold(
       body: IndexedStack(index: _selectedIndex, children: _sections),
       bottomNavigationBar: NavigationBar(
@@ -26,16 +29,16 @@ class _HomeViewState extends State<HomeView> {
             _selectedIndex = index;
           });
         },
-        destinations: const [
+        destinations: [
           NavigationDestination(
-            icon: Icon(Icons.menu_book_rounded),
-            selectedIcon: Icon(Icons.menu_book),
-            label: 'Read Quran',
+            icon: const Icon(Icons.menu_book_rounded),
+            selectedIcon: const Icon(Icons.menu_book),
+            label: l10n.homeReadQuranTab,
           ),
           NavigationDestination(
-            icon: Icon(Icons.school_outlined),
-            selectedIcon: Icon(Icons.school_rounded),
-            label: 'Learn Quran',
+            icon: const Icon(Icons.school_outlined),
+            selectedIcon: const Icon(Icons.school_rounded),
+            label: l10n.homeLearnQuranTab,
           ),
         ],
       ),

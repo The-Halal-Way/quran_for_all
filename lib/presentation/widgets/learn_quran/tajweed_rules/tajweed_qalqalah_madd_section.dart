@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'tajweed_learning_data.dart';
 import 'tajweed_section_card.dart';
 
@@ -39,7 +40,7 @@ class _QalqalahList extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Qalqalah Focus',
+          context.learnText('Qalqalah Focus'),
           style: Theme.of(
             context,
           ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
@@ -82,11 +83,11 @@ class _QalqalahCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 4),
-          _Line(label: 'Sample', value: item.sample),
+          _Line(label: context.learnText('Sample'), value: item.sample),
           const SizedBox(height: 3),
-          _Line(label: 'When', value: item.when),
+          _Line(label: context.learnText('When'), value: item.when),
           const SizedBox(height: 3),
-          _Line(label: 'Note', value: item.note),
+          _Line(label: context.learnText('Note'), value: item.note),
         ],
       ),
     );
@@ -102,7 +103,7 @@ class _MaddList extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Madd Focus',
+          context.learnText('Madd Focus'),
           style: Theme.of(
             context,
           ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
@@ -144,11 +145,11 @@ class _MaddCard extends StatelessWidget {
             ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 4),
-          _Line(label: 'Count', value: item.count),
+          _Line(label: context.learnText('Count'), value: item.count),
           const SizedBox(height: 3),
-          _Line(label: 'Example', value: item.example),
+          _Line(label: context.learnText('Example'), value: item.example),
           const SizedBox(height: 3),
-          _Line(label: 'Tip', value: item.tip),
+          _Line(label: context.learnText('Tip'), value: item.tip),
         ],
       ),
     );

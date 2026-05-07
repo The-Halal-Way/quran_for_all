@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'short_surah_learning_data.dart';
 import 'short_surah_section_card.dart';
 
@@ -76,9 +77,12 @@ class _MeaningCard extends StatelessWidget {
             ).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Message', value: item.message),
+          _Line(label: context.learnText('Message'), value: item.message),
           const SizedBox(height: 4),
-          _Line(label: 'Recitation cue', value: item.recitationCue),
+          _Line(
+            label: context.learnText('Recitation cue'),
+            value: item.recitationCue,
+          ),
         ],
       ),
     );

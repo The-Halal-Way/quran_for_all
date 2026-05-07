@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'audio_assisted_learning_data.dart';
 import 'audio_assisted_section_card.dart';
 
@@ -62,7 +63,7 @@ class _ListeningCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5),
-          _Line(label: 'Goal', value: item.goal),
+          _Line(label: context.learnText('Goal'), value: item.goal),
           const SizedBox(height: 4),
           for (var i = 0; i < item.steps.length; i++)
             Padding(
@@ -85,7 +86,10 @@ class _ListeningCard extends StatelessWidget {
               ),
             ),
           const SizedBox(height: 3),
-          _Line(label: 'Success marker', value: item.successMarker),
+          _Line(
+            label: context.learnText('Success marker'),
+            value: item.successMarker,
+          ),
         ],
       ),
     );

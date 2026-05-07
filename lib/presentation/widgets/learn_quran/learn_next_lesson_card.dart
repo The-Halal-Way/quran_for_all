@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/localization/l10n_extensions.dart';
 import '../../../data/models/learn_quran_content.dart';
 
 class LearnNextLessonCard extends StatelessWidget {
@@ -16,6 +17,7 @@ class LearnNextLessonCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final lesson = nextLesson;
     final hasLesson = lesson != null;
+    final l10n = context.l10n;
 
     return Card(
       child: Padding(
@@ -44,7 +46,9 @@ class LearnNextLessonCard extends StatelessWidget {
                 const SizedBox(width: 10),
                 Expanded(
                   child: Text(
-                    hasLesson ? 'Continue your path' : 'All lessons completed',
+                    hasLesson
+                        ? l10n.learnNextContinuePathTitle
+                        : l10n.learnNextAllLessonsCompletedTitle,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.w700,
                     ),
@@ -55,14 +59,14 @@ class LearnNextLessonCard extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               hasLesson
-                  ? lesson.title
-                  : 'Excellent work. Revisit any module to reinforce your learning.',
+                  ? context.learnText(lesson.title)
+                  : l10n.learnNextAllLessonsCompletedBody,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             if (hasLesson) ...[
               const SizedBox(height: 6),
               Text(
-                lesson.objective,
+                context.learnText(lesson.objective),
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: Theme.of(
                     context,
@@ -78,7 +82,11 @@ class LearnNextLessonCard extends StatelessWidget {
                     ? Icons.play_circle_fill_rounded
                     : Icons.refresh_rounded,
               ),
-              label: Text(hasLesson ? 'Start Next Lesson' : 'Review Modules'),
+              label: Text(
+                hasLesson
+                    ? l10n.learnNextStartLessonButton
+                    : l10n.learnNextReviewModulesButton,
+              ),
             ),
           ],
         ),

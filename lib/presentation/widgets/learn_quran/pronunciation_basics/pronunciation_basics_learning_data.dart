@@ -1,92 +1,151 @@
+import '../../../../core/localization/l10n_extensions.dart';
+
 class PronunciationContrastGuide {
   const PronunciationContrastGuide({
-    required this.pair,
-    required this.lightExample,
-    required this.heavyExample,
-    required this.keyDifference,
-    required this.coachTip,
-  });
+    required String pair,
+    required String lightExample,
+    required String heavyExample,
+    required String keyDifference,
+    required String coachTip,
+  }) : _pair = pair,
+       _lightExample = lightExample,
+       _heavyExample = heavyExample,
+       _keyDifference = keyDifference,
+       _coachTip = coachTip;
 
-  final String pair;
-  final String lightExample;
-  final String heavyExample;
-  final String keyDifference;
-  final String coachTip;
+  final String _pair;
+  final String _lightExample;
+  final String _heavyExample;
+  final String _keyDifference;
+  final String _coachTip;
+
+  String get pair => LearnQuranTextLocalizer.translateRaw(_pair);
+  String get lightExample => LearnQuranTextLocalizer.translateRaw(_lightExample);
+  String get heavyExample => LearnQuranTextLocalizer.translateRaw(_heavyExample);
+  String get keyDifference =>
+      LearnQuranTextLocalizer.translateRaw(_keyDifference);
+  String get coachTip => LearnQuranTextLocalizer.translateRaw(_coachTip);
 }
 
 class PronunciationPostureGuide {
   const PronunciationPostureGuide({
-    required this.focus,
-    required this.indicator,
-    required this.doThis,
-    required this.avoidThis,
-  });
+    required String focus,
+    required String indicator,
+    required String doThis,
+    required String avoidThis,
+  }) : _focus = focus,
+       _indicator = indicator,
+       _doThis = doThis,
+       _avoidThis = avoidThis;
 
-  final String focus;
-  final String indicator;
-  final String doThis;
-  final String avoidThis;
+  final String _focus;
+  final String _indicator;
+  final String _doThis;
+  final String _avoidThis;
+
+  String get focus => LearnQuranTextLocalizer.translateRaw(_focus);
+  String get indicator => LearnQuranTextLocalizer.translateRaw(_indicator);
+  String get doThis => LearnQuranTextLocalizer.translateRaw(_doThis);
+  String get avoidThis => LearnQuranTextLocalizer.translateRaw(_avoidThis);
 }
 
 class MaddPatternGuide {
   const MaddPatternGuide({
-    required this.label,
-    required this.sound,
-    required this.count,
-    required this.example,
-    required this.note,
-  });
+    required String label,
+    required String sound,
+    required String count,
+    required String example,
+    required String note,
+  }) : _label = label,
+       _sound = sound,
+       _count = count,
+       _example = example,
+       _note = note;
 
-  final String label;
-  final String sound;
-  final String count;
-  final String example;
-  final String note;
+  final String _label;
+  final String _sound;
+  final String _count;
+  final String _example;
+  final String _note;
+
+  String get label => LearnQuranTextLocalizer.translateRaw(_label);
+  String get sound => LearnQuranTextLocalizer.translateRaw(_sound);
+  String get count => LearnQuranTextLocalizer.translateRaw(_count);
+  String get example => LearnQuranTextLocalizer.translateRaw(_example);
+  String get note => LearnQuranTextLocalizer.translateRaw(_note);
 }
 
 class StopRestartGuide {
   const StopRestartGuide({
-    required this.rule,
-    required this.pauseAction,
-    required this.restartAction,
-    required this.example,
-  });
+    required String rule,
+    required String pauseAction,
+    required String restartAction,
+    required String example,
+  }) : _rule = rule,
+       _pauseAction = pauseAction,
+       _restartAction = restartAction,
+       _example = example;
 
-  final String rule;
-  final String pauseAction;
-  final String restartAction;
-  final String example;
+  final String _rule;
+  final String _pauseAction;
+  final String _restartAction;
+  final String _example;
+
+  String get rule => LearnQuranTextLocalizer.translateRaw(_rule);
+  String get pauseAction => LearnQuranTextLocalizer.translateRaw(_pauseAction);
+  String get restartAction =>
+      LearnQuranTextLocalizer.translateRaw(_restartAction);
+  String get example => LearnQuranTextLocalizer.translateRaw(_example);
 }
 
 class FlowDrillGuide {
   const FlowDrillGuide({
-    required this.title,
-    required this.steps,
-    required this.goal,
-  });
+    required String title,
+    required List<String> steps,
+    required String goal,
+  }) : _title = title,
+       _steps = steps,
+       _goal = goal;
 
-  final String title;
-  final List<String> steps;
-  final String goal;
+  final String _title;
+  final List<String> _steps;
+  final String _goal;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  List<String> get steps =>
+      _steps.map(LearnQuranTextLocalizer.translateRaw).toList();
+  String get goal => LearnQuranTextLocalizer.translateRaw(_goal);
 }
 
 class AppliedPhraseGuide {
   const AppliedPhraseGuide({
-    required this.arabic,
-    required this.transliteration,
-    required this.focus,
-  });
+    required String arabic,
+    required String transliteration,
+    required String focus,
+  }) : _arabic = arabic,
+       _transliteration = transliteration,
+       _focus = focus;
 
-  final String arabic;
-  final String transliteration;
-  final String focus;
+  final String _arabic;
+  final String _transliteration;
+  final String _focus;
+
+  String get arabic => LearnQuranTextLocalizer.translateRaw(_arabic);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get focus => LearnQuranTextLocalizer.translateRaw(_focus);
 }
 
 class RevisionChecklistGuide {
-  const RevisionChecklistGuide({required this.title, required this.action});
+  const RevisionChecklistGuide({required String title, required String action})
+    : _title = title,
+      _action = action;
 
-  final String title;
-  final String action;
+  final String _title;
+  final String _action;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get action => LearnQuranTextLocalizer.translateRaw(_action);
 }
 
 class PronunciationBasicsLearningData {

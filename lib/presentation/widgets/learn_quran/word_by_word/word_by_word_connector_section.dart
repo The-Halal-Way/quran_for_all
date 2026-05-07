@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
 
@@ -62,11 +63,14 @@ class _ConnectorCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5),
-          _Line(label: 'Function', value: item.function),
+          _Line(label: context.learnText('Function'), value: item.function),
           const SizedBox(height: 4),
-          _Line(label: 'Sample', value: item.sample),
+          _Line(label: context.learnText('Sample'), value: item.sample),
           const SizedBox(height: 4),
-          _Line(label: 'Reading cue', value: item.readingCue),
+          _Line(
+            label: context.learnText('Reading cue'),
+            value: item.readingCue,
+          ),
         ],
       ),
     );

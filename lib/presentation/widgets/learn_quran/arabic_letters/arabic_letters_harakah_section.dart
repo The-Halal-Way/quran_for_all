@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -54,7 +55,7 @@ class _HintPill extends StatelessWidget {
         color: colorScheme.primary.withValues(alpha: 0.1),
       ),
       child: Text(
-        label,
+        context.learnText(label),
         style: Theme.of(context).textTheme.labelMedium?.copyWith(
           color: colorScheme.primary,
           fontWeight: FontWeight.w700,
@@ -84,7 +85,7 @@ class _HarakahPatternCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Base letter: ${pattern.baseLetter}',
+            '${context.learnText('Base letter')}: ${pattern.baseLetter}',
             style: Theme.of(
               context,
             ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
@@ -127,7 +128,7 @@ class _HarakahValueChip extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            title,
+            context.learnText(title),
             style: Theme.of(context).textTheme.labelSmall?.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.75),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'tajweed_learning_data.dart';
 import 'tajweed_section_card.dart';
 
@@ -62,13 +63,13 @@ class _RuleCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Trigger', value: item.trigger),
+          _Line(label: context.learnText('Trigger'), value: item.trigger),
           const SizedBox(height: 4),
-          _Line(label: 'How to read', value: item.howToRead),
+          _Line(label: context.learnText('How to read'), value: item.howToRead),
           const SizedBox(height: 4),
-          _Line(label: 'Example', value: item.example),
+          _Line(label: context.learnText('Example'), value: item.example),
           const SizedBox(height: 4),
-          _Line(label: 'Coach note', value: item.coachNote),
+          _Line(label: context.learnText('Coach note'), value: item.coachNote),
         ],
       ),
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/enums/app_language.dart';
+import '../../../core/localization/l10n_extensions.dart';
 
 class SettingsPreferencesCard extends StatelessWidget {
   const SettingsPreferencesCard({
@@ -53,7 +54,7 @@ class SettingsPreferencesCard extends StatelessWidget {
                   .map(
                     (appLanguage) => DropdownMenuItem<AppLanguage>(
                       value: appLanguage,
-                      child: Text(appLanguage.label),
+                      child: Text(context.appLanguageLabel(appLanguage)),
                     ),
                   )
                   .toList(),

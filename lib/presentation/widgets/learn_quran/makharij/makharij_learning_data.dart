@@ -1,64 +1,106 @@
+import '../../../../core/localization/l10n_extensions.dart';
+
 class MakharijZoneGuide {
   const MakharijZoneGuide({
-    required this.zone,
-    required this.letters,
-    required this.locationCue,
-    required this.soundCue,
-    required this.commonMistake,
-    required this.drill,
-  });
+    required String zone,
+    required String letters,
+    required String locationCue,
+    required String soundCue,
+    required String commonMistake,
+    required String drill,
+  }) : _zone = zone,
+       _letters = letters,
+       _locationCue = locationCue,
+       _soundCue = soundCue,
+       _commonMistake = commonMistake,
+       _drill = drill;
 
-  final String zone;
-  final String letters;
-  final String locationCue;
-  final String soundCue;
-  final String commonMistake;
-  final String drill;
+  final String _zone;
+  final String _letters;
+  final String _locationCue;
+  final String _soundCue;
+  final String _commonMistake;
+  final String _drill;
+
+  String get zone => LearnQuranTextLocalizer.translateRaw(_zone);
+  String get letters => LearnQuranTextLocalizer.translateRaw(_letters);
+  String get locationCue => LearnQuranTextLocalizer.translateRaw(_locationCue);
+  String get soundCue => LearnQuranTextLocalizer.translateRaw(_soundCue);
+  String get commonMistake =>
+      LearnQuranTextLocalizer.translateRaw(_commonMistake);
+  String get drill => LearnQuranTextLocalizer.translateRaw(_drill);
 }
 
 class MakharijComparisonGuide {
   const MakharijComparisonGuide({
-    required this.pair,
-    required this.distinction,
-    required this.practice,
-    required this.watchFor,
-  });
+    required String pair,
+    required String distinction,
+    required String practice,
+    required String watchFor,
+  }) : _pair = pair,
+       _distinction = distinction,
+       _practice = practice,
+       _watchFor = watchFor;
 
-  final String pair;
-  final String distinction;
-  final String practice;
-  final String watchFor;
+  final String _pair;
+  final String _distinction;
+  final String _practice;
+  final String _watchFor;
+
+  String get pair => LearnQuranTextLocalizer.translateRaw(_pair);
+  String get distinction => LearnQuranTextLocalizer.translateRaw(_distinction);
+  String get practice => LearnQuranTextLocalizer.translateRaw(_practice);
+  String get watchFor => LearnQuranTextLocalizer.translateRaw(_watchFor);
 }
 
 class MakharijDrillGuide {
   const MakharijDrillGuide({
-    required this.title,
-    required this.steps,
-    required this.target,
-  });
+    required String title,
+    required List<String> steps,
+    required String target,
+  }) : _title = title,
+       _steps = steps,
+       _target = target;
 
-  final String title;
-  final List<String> steps;
-  final String target;
+  final String _title;
+  final List<String> _steps;
+  final String _target;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  List<String> get steps =>
+      _steps.map(LearnQuranTextLocalizer.translateRaw).toList();
+  String get target => LearnQuranTextLocalizer.translateRaw(_target);
 }
 
 class MakharijPhraseGuide {
   const MakharijPhraseGuide({
-    required this.arabic,
-    required this.transliteration,
-    required this.focus,
-  });
+    required String arabic,
+    required String transliteration,
+    required String focus,
+  }) : _arabic = arabic,
+       _transliteration = transliteration,
+       _focus = focus;
 
-  final String arabic;
-  final String transliteration;
-  final String focus;
+  final String _arabic;
+  final String _transliteration;
+  final String _focus;
+
+  String get arabic => LearnQuranTextLocalizer.translateRaw(_arabic);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get focus => LearnQuranTextLocalizer.translateRaw(_focus);
 }
 
 class MakharijRevisionGuide {
-  const MakharijRevisionGuide({required this.title, required this.action});
+  const MakharijRevisionGuide({required String title, required String action})
+    : _title = title,
+      _action = action;
 
-  final String title;
-  final String action;
+  final String _title;
+  final String _action;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get action => LearnQuranTextLocalizer.translateRaw(_action);
 }
 
 class MakharijLearningData {

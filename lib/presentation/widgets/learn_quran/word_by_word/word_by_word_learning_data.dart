@@ -1,80 +1,132 @@
+import '../../../../core/localization/l10n_extensions.dart';
+
 class WordByWordVocabGuide {
   const WordByWordVocabGuide({
-    required this.arabic,
-    required this.transliteration,
-    required this.meaning,
-    required this.usage,
-  });
+    required String arabic,
+    required String transliteration,
+    required String meaning,
+    required String usage,
+  }) : _arabic = arabic,
+       _transliteration = transliteration,
+       _meaning = meaning,
+       _usage = usage;
 
-  final String arabic;
-  final String transliteration;
-  final String meaning;
-  final String usage;
+  final String _arabic;
+  final String _transliteration;
+  final String _meaning;
+  final String _usage;
+
+  String get arabic => LearnQuranTextLocalizer.translateRaw(_arabic);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get meaning => LearnQuranTextLocalizer.translateRaw(_meaning);
+  String get usage => LearnQuranTextLocalizer.translateRaw(_usage);
 }
 
 class WordByWordRootGuide {
   const WordByWordRootGuide({
-    required this.root,
-    required this.family,
-    required this.coreMeaning,
-    required this.examples,
-    required this.tip,
-  });
+    required String root,
+    required String family,
+    required String coreMeaning,
+    required String examples,
+    required String tip,
+  }) : _root = root,
+       _family = family,
+       _coreMeaning = coreMeaning,
+       _examples = examples,
+       _tip = tip;
 
-  final String root;
-  final String family;
-  final String coreMeaning;
-  final String examples;
-  final String tip;
+  final String _root;
+  final String _family;
+  final String _coreMeaning;
+  final String _examples;
+  final String _tip;
+
+  String get root => LearnQuranTextLocalizer.translateRaw(_root);
+  String get family => LearnQuranTextLocalizer.translateRaw(_family);
+  String get coreMeaning => LearnQuranTextLocalizer.translateRaw(_coreMeaning);
+  String get examples => LearnQuranTextLocalizer.translateRaw(_examples);
+  String get tip => LearnQuranTextLocalizer.translateRaw(_tip);
 }
 
 class WordByWordConnectorGuide {
   const WordByWordConnectorGuide({
-    required this.word,
-    required this.function,
-    required this.sample,
-    required this.readingCue,
-  });
+    required String word,
+    required String function,
+    required String sample,
+    required String readingCue,
+  }) : _word = word,
+       _function = function,
+       _sample = sample,
+       _readingCue = readingCue;
 
-  final String word;
-  final String function;
-  final String sample;
-  final String readingCue;
+  final String _word;
+  final String _function;
+  final String _sample;
+  final String _readingCue;
+
+  String get word => LearnQuranTextLocalizer.translateRaw(_word);
+  String get function => LearnQuranTextLocalizer.translateRaw(_function);
+  String get sample => LearnQuranTextLocalizer.translateRaw(_sample);
+  String get readingCue => LearnQuranTextLocalizer.translateRaw(_readingCue);
 }
 
 class WordByWordPhraseGuide {
   const WordByWordPhraseGuide({
-    required this.arabic,
-    required this.transliteration,
-    required this.breakdown,
-    required this.meaning,
-  });
+    required String arabic,
+    required String transliteration,
+    required String breakdown,
+    required String meaning,
+  }) : _arabic = arabic,
+       _transliteration = transliteration,
+       _breakdown = breakdown,
+       _meaning = meaning;
 
-  final String arabic;
-  final String transliteration;
-  final String breakdown;
-  final String meaning;
+  final String _arabic;
+  final String _transliteration;
+  final String _breakdown;
+  final String _meaning;
+
+  String get arabic => LearnQuranTextLocalizer.translateRaw(_arabic);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get breakdown => LearnQuranTextLocalizer.translateRaw(_breakdown);
+  String get meaning => LearnQuranTextLocalizer.translateRaw(_meaning);
 }
 
 class WordByWordAyahPracticeGuide {
   const WordByWordAyahPracticeGuide({
-    required this.reference,
-    required this.arabic,
-    required this.transliteration,
-    required this.focus,
-  });
+    required String reference,
+    required String arabic,
+    required String transliteration,
+    required String focus,
+  }) : _reference = reference,
+       _arabic = arabic,
+       _transliteration = transliteration,
+       _focus = focus;
 
-  final String reference;
-  final String arabic;
-  final String transliteration;
-  final String focus;
+  final String _reference;
+  final String _arabic;
+  final String _transliteration;
+  final String _focus;
+
+  String get reference => LearnQuranTextLocalizer.translateRaw(_reference);
+  String get arabic => LearnQuranTextLocalizer.translateRaw(_arabic);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get focus => LearnQuranTextLocalizer.translateRaw(_focus);
 }
 
 class WordByWordRevisionGuide {
-  const WordByWordRevisionGuide({required this.title, required this.action});
+  const WordByWordRevisionGuide({required String title, required String action})
+    : _title = title,
+      _action = action;
 
-  final String title;
-  final String action;
+  final String _title;
+  final String _action;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get action => LearnQuranTextLocalizer.translateRaw(_action);
 }
 
 class WordByWordLearningData {

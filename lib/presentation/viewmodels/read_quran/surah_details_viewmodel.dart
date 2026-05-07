@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 
-import '../../data/models/ayah_model.dart';
-import '../../data/models/surah_model.dart';
-import '../../domain/repositories/audio_repository.dart';
-import '../../domain/repositories/quran_repository.dart';
+import '../../../data/models/ayah_model.dart';
+import '../../../data/models/surah_model.dart';
+import '../../../domain/repositories/audio_repository.dart';
+import '../../../domain/repositories/quran_repository.dart';
 
 class SurahDetailsViewModel extends ChangeNotifier {
   SurahDetailsViewModel({

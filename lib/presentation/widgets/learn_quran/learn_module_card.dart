@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/localization/l10n_extensions.dart';
 import '../../../data/models/learn_quran_content.dart';
 import 'learn_module_visuals.dart';
 
@@ -18,15 +19,16 @@ class LearnModuleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final visuals = LearnModuleVisuals.forModule(module.id);
+    final l10n = context.l10n;
     final progress = module.lessons.isEmpty
         ? 0.0
         : completedLessons / module.lessons.length;
 
     final statusText = completedLessons == module.lessons.length
-        ? 'Completed'
+      ? l10n.learnModuleStatusCompleted
         : completedLessons == 0
-        ? 'Not started'
-        : 'In progress';
+      ? l10n.learnModuleStatusNotStarted
+      : l10n.learnModuleStatusInProgress;
 
     return Card(
       clipBehavior: Clip.antiAlias,
@@ -63,13 +65,13 @@ class LearnModuleCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          module.title,
+                          context.learnText(module.title),
                           style: Theme.of(context).textTheme.titleMedium
                               ?.copyWith(fontWeight: FontWeight.w700),
                         ),
                         const SizedBox(height: 3),
                         Text(
-                          module.subtitle,
+                          context.learnText(module.subtitle),
                           style: Theme.of(context).textTheme.bodySmall
                               ?.copyWith(
                                 color: Theme.of(
@@ -89,7 +91,7 @@ class LearnModuleCard extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               Text(
-                module.description,
+                context.learnText(module.description),
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: 12),
@@ -97,17 +99,20 @@ class LearnModuleCard extends StatelessWidget {
                 children: [
                   _DataBadge(
                     icon: Icons.schedule_rounded,
-                    label: '${module.estimatedMinutes} min',
+                    label: l10n.learnMinutesShort(module.estimatedMinutes),
                   ),
                   const SizedBox(width: 8),
                   _DataBadge(
                     icon: Icons.signal_cellular_alt_rounded,
-                    label: module.level,
+                    label: context.learnText(module.level),
                   ),
                   const SizedBox(width: 8),
                   _DataBadge(
                     icon: Icons.task_alt_rounded,
-                    label: '$completedLessons/${module.lessons.length}',
+                    label: l10n.learnCompletedFraction(
+                      completedLessons,
+                      module.lessons.length,
+                    ),
                   ),
                 ],
               ),

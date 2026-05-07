@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../data/models/surah_model.dart';
+import '../../../data/models/surah_model.dart';
 
 class SurahCard extends StatelessWidget {
   const SurahCard({super.key, required this.surah, required this.onTap});

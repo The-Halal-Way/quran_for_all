@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'makharij_learning_data.dart';
 import 'makharij_section_card.dart';
 
@@ -61,11 +62,14 @@ class _ComparisonCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Distinction', value: item.distinction),
+          _Line(
+            label: context.learnText('Distinction'),
+            value: item.distinction,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Practice', value: item.practice),
+          _Line(label: context.learnText('Practice'), value: item.practice),
           const SizedBox(height: 4),
-          _Line(label: 'Watch for', value: item.watchFor),
+          _Line(label: context.learnText('Watch for'), value: item.watchFor),
         ],
       ),
     );

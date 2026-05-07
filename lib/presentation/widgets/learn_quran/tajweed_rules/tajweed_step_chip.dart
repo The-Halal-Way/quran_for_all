@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
+
 class TajweedStepChip extends StatelessWidget {
   const TajweedStepChip({super.key, required this.step, required this.label});
 
@@ -32,7 +34,7 @@ class TajweedStepChip extends StatelessWidget {
           ),
           const SizedBox(width: 6),
           Text(
-            label,
+            context.learnText(label),
             style: Theme.of(context).textTheme.labelMedium?.copyWith(
               color: colorScheme.primary,
               fontWeight: FontWeight.w700,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'tajweed_learning_data.dart';
 import 'tajweed_section_card.dart';
 
@@ -62,13 +63,16 @@ class _MeemRuleCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Trigger', value: item.trigger),
+          _Line(label: context.learnText('Trigger'), value: item.trigger),
           const SizedBox(height: 4),
-          _Line(label: 'Delivery', value: item.delivery),
+          _Line(label: context.learnText('Delivery'), value: item.delivery),
           const SizedBox(height: 4),
-          _Line(label: 'Example', value: item.example),
+          _Line(label: context.learnText('Example'), value: item.example),
           const SizedBox(height: 4),
-          _Line(label: 'Common mistake', value: item.mistake),
+          _Line(
+            label: context.learnText('Common mistake'),
+            value: item.mistake,
+          ),
         ],
       ),
     );

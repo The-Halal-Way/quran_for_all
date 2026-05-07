@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
 
@@ -62,13 +63,16 @@ class _RootCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5),
-          _Line(label: 'Family', value: item.family),
+          _Line(label: context.learnText('Family'), value: item.family),
           const SizedBox(height: 4),
-          _Line(label: 'Core meaning', value: item.coreMeaning),
+          _Line(
+            label: context.learnText('Core meaning'),
+            value: item.coreMeaning,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Examples', value: item.examples),
+          _Line(label: context.learnText('Examples'), value: item.examples),
           const SizedBox(height: 4),
-          _Line(label: 'Tip', value: item.tip),
+          _Line(label: context.learnText('Tip'), value: item.tip),
         ],
       ),
     );

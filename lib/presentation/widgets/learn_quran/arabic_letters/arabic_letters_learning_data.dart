@@ -1,92 +1,150 @@
+import '../../../../core/localization/l10n_extensions.dart';
+
 class ArabicLetterGuide {
   const ArabicLetterGuide({
     required this.symbol,
-    required this.name,
-    required this.transliteration,
-    required this.visualCue,
-  });
+    required String name,
+    required String transliteration,
+    required String visualCue,
+  }) : _name = name,
+       _transliteration = transliteration,
+       _visualCue = visualCue;
 
   final String symbol;
-  final String name;
-  final String transliteration;
-  final String visualCue;
+  final String _name;
+  final String _transliteration;
+  final String _visualCue;
+
+  String get name => LearnQuranTextLocalizer.translateRaw(_name);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get visualCue => LearnQuranTextLocalizer.translateRaw(_visualCue);
 }
 
 class LetterFamilyGuide {
   const LetterFamilyGuide({
-    required this.title,
-    required this.goal,
-    required this.letters,
-    required this.tip,
-  });
+    required String title,
+    required String goal,
+    required List<String> letters,
+    required String tip,
+  }) : _title = title,
+       _goal = goal,
+       _letters = letters,
+       _tip = tip;
 
-  final String title;
-  final String goal;
-  final List<String> letters;
-  final String tip;
+  final String _title;
+  final String _goal;
+  final List<String> _letters;
+  final String _tip;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get goal => LearnQuranTextLocalizer.translateRaw(_goal);
+  List<String> get letters =>
+      _letters.map(LearnQuranTextLocalizer.translateRaw).toList();
+  String get tip => LearnQuranTextLocalizer.translateRaw(_tip);
 }
 
 class SimilarLetterGuide {
   const SimilarLetterGuide({
-    required this.letters,
-    required this.differenceRule,
-    required this.practice,
-    required this.commonMistake,
-  });
+    required String letters,
+    required String differenceRule,
+    required String practice,
+    required String commonMistake,
+  }) : _letters = letters,
+       _differenceRule = differenceRule,
+       _practice = practice,
+       _commonMistake = commonMistake;
 
-  final String letters;
-  final String differenceRule;
-  final String practice;
-  final String commonMistake;
+  final String _letters;
+  final String _differenceRule;
+  final String _practice;
+  final String _commonMistake;
+
+  String get letters => LearnQuranTextLocalizer.translateRaw(_letters);
+  String get differenceRule =>
+      LearnQuranTextLocalizer.translateRaw(_differenceRule);
+  String get practice => LearnQuranTextLocalizer.translateRaw(_practice);
+  String get commonMistake =>
+      LearnQuranTextLocalizer.translateRaw(_commonMistake);
 }
 
 class ArticulationZoneGuide {
   const ArticulationZoneGuide({
-    required this.zone,
-    required this.letters,
-    required this.hint,
-    required this.watchFor,
-  });
+    required String zone,
+    required String letters,
+    required String hint,
+    required String watchFor,
+  }) : _zone = zone,
+       _letters = letters,
+       _hint = hint,
+       _watchFor = watchFor;
 
-  final String zone;
-  final String letters;
-  final String hint;
-  final String watchFor;
+  final String _zone;
+  final String _letters;
+  final String _hint;
+  final String _watchFor;
+
+  String get zone => LearnQuranTextLocalizer.translateRaw(_zone);
+  String get letters => LearnQuranTextLocalizer.translateRaw(_letters);
+  String get hint => LearnQuranTextLocalizer.translateRaw(_hint);
+  String get watchFor => LearnQuranTextLocalizer.translateRaw(_watchFor);
 }
 
 class HarakahPatternGuide {
   const HarakahPatternGuide({
-    required this.baseLetter,
-    required this.fatha,
-    required this.kasra,
-    required this.damma,
-    required this.sukoon,
-  });
+    required String baseLetter,
+    required String fatha,
+    required String kasra,
+    required String damma,
+    required String sukoon,
+  }) : _baseLetter = baseLetter,
+       _fatha = fatha,
+       _kasra = kasra,
+       _damma = damma,
+       _sukoon = sukoon;
 
-  final String baseLetter;
-  final String fatha;
-  final String kasra;
-  final String damma;
-  final String sukoon;
+  final String _baseLetter;
+  final String _fatha;
+  final String _kasra;
+  final String _damma;
+  final String _sukoon;
+
+  String get baseLetter => LearnQuranTextLocalizer.translateRaw(_baseLetter);
+  String get fatha => LearnQuranTextLocalizer.translateRaw(_fatha);
+  String get kasra => LearnQuranTextLocalizer.translateRaw(_kasra);
+  String get damma => LearnQuranTextLocalizer.translateRaw(_damma);
+  String get sukoon => LearnQuranTextLocalizer.translateRaw(_sukoon);
 }
 
 class ReadingExampleGuide {
   const ReadingExampleGuide({
-    required this.arabic,
-    required this.transliteration,
-    required this.focus,
-  });
+    required String arabic,
+    required String transliteration,
+    required String focus,
+  }) : _arabic = arabic,
+       _transliteration = transliteration,
+       _focus = focus;
 
-  final String arabic;
-  final String transliteration;
-  final String focus;
+  final String _arabic;
+  final String _transliteration;
+  final String _focus;
+
+  String get arabic => LearnQuranTextLocalizer.translateRaw(_arabic);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get focus => LearnQuranTextLocalizer.translateRaw(_focus);
 }
 
 class RevisionBlockGuide {
-  const RevisionBlockGuide({required this.title, required this.drill});
+  const RevisionBlockGuide({required String title, required String drill})
+    : _title = title,
+      _drill = drill;
 
-  final String title;
-  final String drill;
+  final String _title;
+  final String _drill;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get drill => LearnQuranTextLocalizer.translateRaw(_drill);
 }
 
 class ArabicLettersLearningData {

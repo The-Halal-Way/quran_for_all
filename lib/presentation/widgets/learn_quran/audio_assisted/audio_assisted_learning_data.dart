@@ -1,78 +1,128 @@
+import '../../../../core/localization/l10n_extensions.dart';
+
 class AudioListeningDrillGuide {
   const AudioListeningDrillGuide({
-    required this.title,
-    required this.goal,
-    required this.steps,
-    required this.successMarker,
-  });
+    required String title,
+    required String goal,
+    required List<String> steps,
+    required String successMarker,
+  }) : _title = title,
+       _goal = goal,
+       _steps = steps,
+       _successMarker = successMarker;
 
-  final String title;
-  final String goal;
-  final List<String> steps;
-  final String successMarker;
+  final String _title;
+  final String _goal;
+  final List<String> _steps;
+  final String _successMarker;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get goal => LearnQuranTextLocalizer.translateRaw(_goal);
+  List<String> get steps =>
+      _steps.map(LearnQuranTextLocalizer.translateRaw).toList();
+  String get successMarker =>
+      LearnQuranTextLocalizer.translateRaw(_successMarker);
 }
 
 class AudioShadowDrillGuide {
   const AudioShadowDrillGuide({
-    required this.level,
-    required this.pacing,
-    required this.action,
-    required this.watchFor,
-  });
+    required String level,
+    required String pacing,
+    required String action,
+    required String watchFor,
+  }) : _level = level,
+       _pacing = pacing,
+       _action = action,
+       _watchFor = watchFor;
 
-  final String level;
-  final String pacing;
-  final String action;
-  final String watchFor;
+  final String _level;
+  final String _pacing;
+  final String _action;
+  final String _watchFor;
+
+  String get level => LearnQuranTextLocalizer.translateRaw(_level);
+  String get pacing => LearnQuranTextLocalizer.translateRaw(_pacing);
+  String get action => LearnQuranTextLocalizer.translateRaw(_action);
+  String get watchFor => LearnQuranTextLocalizer.translateRaw(_watchFor);
 }
 
 class AudioErrorSpotGuide {
   const AudioErrorSpotGuide({
-    required this.category,
-    required this.checkPrompt,
-    required this.commonSigns,
-    required this.fix,
-  });
+    required String category,
+    required String checkPrompt,
+    required String commonSigns,
+    required String fix,
+  }) : _category = category,
+       _checkPrompt = checkPrompt,
+       _commonSigns = commonSigns,
+       _fix = fix;
 
-  final String category;
-  final String checkPrompt;
-  final String commonSigns;
-  final String fix;
+  final String _category;
+  final String _checkPrompt;
+  final String _commonSigns;
+  final String _fix;
+
+  String get category => LearnQuranTextLocalizer.translateRaw(_category);
+  String get checkPrompt => LearnQuranTextLocalizer.translateRaw(_checkPrompt);
+  String get commonSigns => LearnQuranTextLocalizer.translateRaw(_commonSigns);
+  String get fix => LearnQuranTextLocalizer.translateRaw(_fix);
 }
 
 class AudioSessionPlanGuide {
   const AudioSessionPlanGuide({
-    required this.phase,
-    required this.duration,
-    required this.task,
-    required this.output,
-  });
+    required String phase,
+    required String duration,
+    required String task,
+    required String output,
+  }) : _phase = phase,
+       _duration = duration,
+       _task = task,
+       _output = output;
 
-  final String phase;
-  final String duration;
-  final String task;
-  final String output;
+  final String _phase;
+  final String _duration;
+  final String _task;
+  final String _output;
+
+  String get phase => LearnQuranTextLocalizer.translateRaw(_phase);
+  String get duration => LearnQuranTextLocalizer.translateRaw(_duration);
+  String get task => LearnQuranTextLocalizer.translateRaw(_task);
+  String get output => LearnQuranTextLocalizer.translateRaw(_output);
 }
 
 class AudioRecitationSampleGuide {
   const AudioRecitationSampleGuide({
-    required this.reference,
-    required this.focus,
-    required this.listenFor,
-    required this.repeatTarget,
-  });
+    required String reference,
+    required String focus,
+    required String listenFor,
+    required String repeatTarget,
+  }) : _reference = reference,
+       _focus = focus,
+       _listenFor = listenFor,
+       _repeatTarget = repeatTarget;
 
-  final String reference;
-  final String focus;
-  final String listenFor;
-  final String repeatTarget;
+  final String _reference;
+  final String _focus;
+  final String _listenFor;
+  final String _repeatTarget;
+
+  String get reference => LearnQuranTextLocalizer.translateRaw(_reference);
+  String get focus => LearnQuranTextLocalizer.translateRaw(_focus);
+  String get listenFor => LearnQuranTextLocalizer.translateRaw(_listenFor);
+  String get repeatTarget =>
+      LearnQuranTextLocalizer.translateRaw(_repeatTarget);
 }
 
 class AudioRevisionGuide {
-  const AudioRevisionGuide({required this.title, required this.action});
+  const AudioRevisionGuide({required String title, required String action})
+    : _title = title,
+      _action = action;
 
-  final String title;
-  final String action;
+  final String _title;
+  final String _action;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get action => LearnQuranTextLocalizer.translateRaw(_action);
 }
 
 class AudioAssistedLearningData {

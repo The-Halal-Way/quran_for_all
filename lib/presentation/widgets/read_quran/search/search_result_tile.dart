@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/enums/app_language.dart';
-import '../../../data/models/search_result_model.dart';
+import '../../../../core/enums/app_language.dart';
+import '../../../../data/models/search_result_model.dart';
 
 class SearchResultTile extends StatelessWidget {
   const SearchResultTile({

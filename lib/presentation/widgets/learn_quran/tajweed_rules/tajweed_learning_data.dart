@@ -1,94 +1,153 @@
+import '../../../../core/localization/l10n_extensions.dart';
+
 class TajweedRuleFamilyGuide {
   const TajweedRuleFamilyGuide({
-    required this.rule,
-    required this.trigger,
-    required this.howToRead,
-    required this.example,
-    required this.coachNote,
-  });
+    required String rule,
+    required String trigger,
+    required String howToRead,
+    required String example,
+    required String coachNote,
+  }) : _rule = rule,
+       _trigger = trigger,
+       _howToRead = howToRead,
+       _example = example,
+       _coachNote = coachNote;
 
-  final String rule;
-  final String trigger;
-  final String howToRead;
-  final String example;
-  final String coachNote;
+  final String _rule;
+  final String _trigger;
+  final String _howToRead;
+  final String _example;
+  final String _coachNote;
+
+  String get rule => LearnQuranTextLocalizer.translateRaw(_rule);
+  String get trigger => LearnQuranTextLocalizer.translateRaw(_trigger);
+  String get howToRead => LearnQuranTextLocalizer.translateRaw(_howToRead);
+  String get example => LearnQuranTextLocalizer.translateRaw(_example);
+  String get coachNote => LearnQuranTextLocalizer.translateRaw(_coachNote);
 }
 
 class TajweedMeemRuleGuide {
   const TajweedMeemRuleGuide({
-    required this.rule,
-    required this.trigger,
-    required this.delivery,
-    required this.example,
-    required this.mistake,
-  });
+    required String rule,
+    required String trigger,
+    required String delivery,
+    required String example,
+    required String mistake,
+  }) : _rule = rule,
+       _trigger = trigger,
+       _delivery = delivery,
+       _example = example,
+       _mistake = mistake;
 
-  final String rule;
-  final String trigger;
-  final String delivery;
-  final String example;
-  final String mistake;
+  final String _rule;
+  final String _trigger;
+  final String _delivery;
+  final String _example;
+  final String _mistake;
+
+  String get rule => LearnQuranTextLocalizer.translateRaw(_rule);
+  String get trigger => LearnQuranTextLocalizer.translateRaw(_trigger);
+  String get delivery => LearnQuranTextLocalizer.translateRaw(_delivery);
+  String get example => LearnQuranTextLocalizer.translateRaw(_example);
+  String get mistake => LearnQuranTextLocalizer.translateRaw(_mistake);
 }
 
 class TajweedQalqalahGuide {
   const TajweedQalqalahGuide({
-    required this.letter,
-    required this.sample,
-    required this.when,
-    required this.note,
-  });
+    required String letter,
+    required String sample,
+    required String when,
+    required String note,
+  }) : _letter = letter,
+       _sample = sample,
+       _when = when,
+       _note = note;
 
-  final String letter;
-  final String sample;
-  final String when;
-  final String note;
+  final String _letter;
+  final String _sample;
+  final String _when;
+  final String _note;
+
+  String get letter => LearnQuranTextLocalizer.translateRaw(_letter);
+  String get sample => LearnQuranTextLocalizer.translateRaw(_sample);
+  String get when => LearnQuranTextLocalizer.translateRaw(_when);
+  String get note => LearnQuranTextLocalizer.translateRaw(_note);
 }
 
 class TajweedMaddGuide {
   const TajweedMaddGuide({
-    required this.type,
-    required this.count,
-    required this.example,
-    required this.tip,
-  });
+    required String type,
+    required String count,
+    required String example,
+    required String tip,
+  }) : _type = type,
+       _count = count,
+       _example = example,
+       _tip = tip;
 
-  final String type;
-  final String count;
-  final String example;
-  final String tip;
+  final String _type;
+  final String _count;
+  final String _example;
+  final String _tip;
+
+  String get type => LearnQuranTextLocalizer.translateRaw(_type);
+  String get count => LearnQuranTextLocalizer.translateRaw(_count);
+  String get example => LearnQuranTextLocalizer.translateRaw(_example);
+  String get tip => LearnQuranTextLocalizer.translateRaw(_tip);
 }
 
 class TajweedWaqfGuide {
   const TajweedWaqfGuide({
-    required this.rule,
-    required this.pauseAction,
-    required this.restartAction,
-    required this.example,
-  });
+    required String rule,
+    required String pauseAction,
+    required String restartAction,
+    required String example,
+  }) : _rule = rule,
+       _pauseAction = pauseAction,
+       _restartAction = restartAction,
+       _example = example;
 
-  final String rule;
-  final String pauseAction;
-  final String restartAction;
-  final String example;
+  final String _rule;
+  final String _pauseAction;
+  final String _restartAction;
+  final String _example;
+
+  String get rule => LearnQuranTextLocalizer.translateRaw(_rule);
+  String get pauseAction => LearnQuranTextLocalizer.translateRaw(_pauseAction);
+  String get restartAction =>
+      LearnQuranTextLocalizer.translateRaw(_restartAction);
+  String get example => LearnQuranTextLocalizer.translateRaw(_example);
 }
 
 class TajweedPhraseGuide {
   const TajweedPhraseGuide({
-    required this.arabic,
-    required this.transliteration,
-    required this.focus,
-  });
+    required String arabic,
+    required String transliteration,
+    required String focus,
+  }) : _arabic = arabic,
+       _transliteration = transliteration,
+       _focus = focus;
 
-  final String arabic;
-  final String transliteration;
-  final String focus;
+  final String _arabic;
+  final String _transliteration;
+  final String _focus;
+
+  String get arabic => LearnQuranTextLocalizer.translateRaw(_arabic);
+  String get transliteration =>
+      LearnQuranTextLocalizer.translateRaw(_transliteration);
+  String get focus => LearnQuranTextLocalizer.translateRaw(_focus);
 }
 
 class TajweedRevisionGuide {
-  const TajweedRevisionGuide({required this.title, required this.action});
+  const TajweedRevisionGuide({required String title, required String action})
+    : _title = title,
+      _action = action;
 
-  final String title;
-  final String action;
+  final String _title;
+  final String _action;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get action => LearnQuranTextLocalizer.translateRaw(_action);
 }
 
 class TajweedLearningData {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/localization/l10n_extensions.dart';
 import '../../../data/models/learn_quran_content.dart';
 
 class LearnLessonTile extends StatelessWidget {
@@ -21,6 +22,7 @@ class LearnLessonTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final l10n = context.l10n;
 
     return Card(
       child: Padding(
@@ -42,13 +44,13 @@ class LearnLessonTile extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          lesson.title,
+                          context.learnText(lesson.title),
                           style: Theme.of(context).textTheme.titleMedium
                               ?.copyWith(fontWeight: FontWeight.w700),
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          lesson.objective,
+                          context.learnText(lesson.objective),
                           style: Theme.of(context).textTheme.bodyMedium,
                         ),
                       ],
@@ -64,8 +66,8 @@ class LearnLessonTile extends StatelessWidget {
                           : Icons.play_arrow_rounded,
                     ),
                     tooltip: isAudioPlaying
-                        ? 'Pause lesson sample audio'
-                        : 'Play lesson sample audio',
+                        ? l10n.learnLessonTooltipPauseAudio
+                        : l10n.learnLessonTooltipPlayAudio,
                   ),
               ],
             ),
@@ -78,7 +80,7 @@ class LearnLessonTile extends StatelessWidget {
                 color: colorScheme.secondary.withValues(alpha: 0.11),
               ),
               child: Text(
-                lesson.practicePrompt,
+                context.learnText(lesson.practicePrompt),
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: colorScheme.onSurface.withValues(alpha: 0.8),
                 ),
@@ -87,18 +89,21 @@ class LearnLessonTile extends StatelessWidget {
             const SizedBox(height: 8),
             Row(
               children: [
-                _Tag(label: '${lesson.durationMinutes} min', icon: Icons.timer),
+                _Tag(
+                  label: l10n.learnLessonDurationMinutes(lesson.durationMinutes),
+                  icon: Icons.timer,
+                ),
                 if (lesson.hasAudioSample) ...[
                   const SizedBox(width: 8),
-                  const _Tag(
-                    label: 'Audio guided',
+                  _Tag(
+                    label: l10n.learnLessonAudioGuided,
                     icon: Icons.graphic_eq_rounded,
                   ),
                 ],
                 if (isCompleted) ...[
                   const SizedBox(width: 8),
-                  const _Tag(
-                    label: 'Done',
+                  _Tag(
+                    label: l10n.learnLessonDone,
                     icon: Icons.check_circle_rounded,
                     color: Color(0xFF1F8B4C),
                   ),

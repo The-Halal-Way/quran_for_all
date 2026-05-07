@@ -1,21 +1,30 @@
+import '../../core/localization/l10n_extensions.dart';
+
 class LearnQuranLesson {
   const LearnQuranLesson({
     required this.id,
-    required this.title,
-    required this.objective,
-    required this.practicePrompt,
+    required String title,
+    required String objective,
+    required String practicePrompt,
     required this.durationMinutes,
     this.sampleSurahId,
     this.sampleAyahNumber,
-  });
+  }) : _title = title,
+       _objective = objective,
+       _practicePrompt = practicePrompt;
 
   final String id;
-  final String title;
-  final String objective;
-  final String practicePrompt;
+  final String _title;
+  final String _objective;
+  final String _practicePrompt;
   final int durationMinutes;
   final int? sampleSurahId;
   final int? sampleAyahNumber;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get objective => LearnQuranTextLocalizer.translateRaw(_objective);
+  String get practicePrompt =>
+      LearnQuranTextLocalizer.translateRaw(_practicePrompt);
 
   bool get hasAudioSample => sampleSurahId != null && sampleAyahNumber != null;
 }
@@ -23,21 +32,29 @@ class LearnQuranLesson {
 class LearnQuranModule {
   const LearnQuranModule({
     required this.id,
-    required this.title,
-    required this.subtitle,
-    required this.description,
-    required this.level,
+    required String title,
+    required String subtitle,
+    required String description,
+    required String level,
     required this.estimatedMinutes,
     required this.lessons,
-  });
+  }) : _title = title,
+       _subtitle = subtitle,
+       _description = description,
+       _level = level;
 
   final String id;
-  final String title;
-  final String subtitle;
-  final String description;
-  final String level;
+  final String _title;
+  final String _subtitle;
+  final String _description;
+  final String _level;
   final int estimatedMinutes;
   final List<LearnQuranLesson> lessons;
+
+  String get title => LearnQuranTextLocalizer.translateRaw(_title);
+  String get subtitle => LearnQuranTextLocalizer.translateRaw(_subtitle);
+  String get description => LearnQuranTextLocalizer.translateRaw(_description);
+  String get level => LearnQuranTextLocalizer.translateRaw(_level);
 }
 
 class LearnQuranContent {

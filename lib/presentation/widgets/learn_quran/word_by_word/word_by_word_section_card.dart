@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
+
 class WordByWordSectionCard extends StatelessWidget {
   const WordByWordSectionCard({
     super.key,
@@ -21,13 +23,16 @@ class WordByWordSectionCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              title,
+              context.learnText(title),
               style: Theme.of(
                 context,
               ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: 5),
-            Text(subtitle, style: Theme.of(context).textTheme.bodySmall),
+            Text(
+              context.learnText(subtitle),
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
             const SizedBox(height: 10),
             child,
           ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'audio_assisted_learning_data.dart';
 import 'audio_assisted_section_card.dart';
 
@@ -62,11 +63,14 @@ class _SampleCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5),
-          _Line(label: 'Focus', value: item.focus),
+          _Line(label: context.learnText('Focus'), value: item.focus),
           const SizedBox(height: 4),
-          _Line(label: 'Listen for', value: item.listenFor),
+          _Line(label: context.learnText('Listen for'), value: item.listenFor),
           const SizedBox(height: 4),
-          _Line(label: 'Repeat target', value: item.repeatTarget),
+          _Line(
+            label: context.learnText('Repeat target'),
+            value: item.repeatTarget,
+          ),
         ],
       ),
     );

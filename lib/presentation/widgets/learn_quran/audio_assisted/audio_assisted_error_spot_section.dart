@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'audio_assisted_learning_data.dart';
 import 'audio_assisted_section_card.dart';
 
@@ -62,11 +63,17 @@ class _ErrorSpotCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5),
-          _Line(label: 'Check prompt', value: item.checkPrompt),
+          _Line(
+            label: context.learnText('Check prompt'),
+            value: item.checkPrompt,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Common signs', value: item.commonSigns),
+          _Line(
+            label: context.learnText('Common signs'),
+            value: item.commonSigns,
+          ),
           const SizedBox(height: 4),
-          _Line(label: 'Fix', value: item.fix),
+          _Line(label: context.learnText('Fix'), value: item.fix),
         ],
       ),
     );

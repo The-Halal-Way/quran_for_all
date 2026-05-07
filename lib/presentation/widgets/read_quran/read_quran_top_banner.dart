@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DashboardTopBanner extends StatelessWidget {
-  const DashboardTopBanner({
+class ReadQuranTopBanner extends StatelessWidget {
+  const ReadQuranTopBanner({
     super.key,
     required this.onSearchTap,
     required this.surahCount,

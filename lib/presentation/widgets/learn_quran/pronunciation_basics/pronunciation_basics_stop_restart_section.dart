@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -61,11 +62,11 @@ class _StopRestartCard extends StatelessWidget {
             ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 6),
-          _Line(label: 'Pause', value: rule.pauseAction),
+          _Line(label: context.learnText('Pause'), value: rule.pauseAction),
           const SizedBox(height: 4),
-          _Line(label: 'Restart', value: rule.restartAction),
+          _Line(label: context.learnText('Restart'), value: rule.restartAction),
           const SizedBox(height: 4),
-          _Line(label: 'Example', value: rule.example),
+          _Line(label: context.learnText('Example'), value: rule.example),
         ],
       ),
     );
