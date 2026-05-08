@@ -3,10 +3,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/enums/playback_source.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../data/models/ayah_model.dart';
 import '../../../data/models/surah_model.dart';
+import '../../viewmodels/audio_control_viewmodel.dart';
 import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../viewmodels/settings_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
@@ -14,10 +16,37 @@ import '../../widgets/ayah_tile.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/read_quran/surah_details/surah_meta_card.dart';
 
-class SurahDetailsView extends StatelessWidget {
+class SurahDetailsView extends StatefulWidget {
   const SurahDetailsView({super.key, required this.surah});
 
   final SurahModel surah;
+
+  @override
+  State<SurahDetailsView> createState() => _SurahDetailsViewState();
+}
+
+class _SurahDetailsViewState extends State<SurahDetailsView> {
+  @override
+  void initState() {
+    super.initState();
+    // Tell the mini-player that this page is now active so it hides itself
+    // while the user is on the source page.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        context.read<AudioControlViewModel>().setActivePage(
+          PlaybackSource.surahDetails,
+        );
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    context.read<AudioControlViewModel>().clearActivePage(
+      PlaybackSource.surahDetails,
+    );
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +54,7 @@ class SurahDetailsView extends StatelessWidget {
     final settings = context.watch<SettingsViewModel>().settings;
 
     return Scaffold(
-      appBar: AppBar(title: Text('${surah.id}. ${surah.nameEnglish}')),
+      appBar: AppBar(title: Text('${widget.surah.id}. ${widget.surah.nameEnglish}')),
       body: Stack(
         children: [
           const Positioned.fill(
@@ -53,7 +82,7 @@ class SurahDetailsView extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
                   child: SurahMetaCard(
-                    surah: surah,
+                    surah: widget.surah,
                     isPlayingFullSurah: viewModel.isPlayingFullSurah,
                     onTogglePlayback: viewModel.isPlayingFullSurah
                         ? viewModel.stopPlayback

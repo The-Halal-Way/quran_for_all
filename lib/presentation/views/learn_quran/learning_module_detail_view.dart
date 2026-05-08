@@ -3,9 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/enums/playback_source.dart';
 import '../../../core/localization/learn_quran_message_localizer.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../data/models/learn_quran_content.dart';
+import '../../viewmodels/audio_control_viewmodel.dart';
 import '../../viewmodels/learn_quran_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/learn_quran/audio_assisted/audio_assisted_learning_unit.dart';
@@ -18,19 +20,46 @@ import '../../widgets/learn_quran/word_by_word/word_by_word_learning_unit.dart';
 import '../../widgets/learn_quran/learn_lesson_tile.dart';
 import '../../widgets/learn_quran/learn_module_visuals.dart';
 
-class LearningModuleDetailView extends StatelessWidget {
+class LearningModuleDetailView extends StatefulWidget {
   const LearningModuleDetailView({super.key, required this.module});
 
   final LearnQuranModule module;
 
   @override
+  State<LearningModuleDetailView> createState() =>
+      _LearningModuleDetailViewState();
+}
+
+class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
+  @override
+  void initState() {
+    super.initState();
+    // Register as active so the mini-player hides while user is on this page.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        context.read<AudioControlViewModel>().setActivePage(
+          PlaybackSource.lessonDetail,
+        );
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    context.read<AudioControlViewModel>().clearActivePage(
+      PlaybackSource.lessonDetail,
+    );
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<LearnQuranViewModel>();
-    final completedCount = viewModel.completedLessonCountFor(module);
-    final progress = module.lessons.isEmpty
+    final completedCount = viewModel.completedLessonCountFor(widget.module);
+    final progress = widget.module.lessons.isEmpty
         ? 0.0
-        : completedCount / module.lessons.length;
-    final visuals = LearnModuleVisuals.forModule(module.id);
+        : completedCount / widget.module.lessons.length;
+    final visuals = LearnModuleVisuals.forModule(widget.module.id);
     final l10n = context.l10n;
 
     // Seed the Learn Quran text map for the active locale before reading model getters.
@@ -39,9 +68,9 @@ class LearningModuleDetailView extends StatelessWidget {
       Localizations.localeOf(context),
     );
 
-    final moduleTitle = module.title;
-    final moduleSubtitle = module.subtitle;
-    final moduleDescription = module.description;
+    final moduleTitle = widget.module.title;
+    final moduleSubtitle = widget.module.subtitle;
+    final moduleDescription = widget.module.description;
 
     return Scaffold(
       appBar: AppBar(title: Text(moduleTitle)),
@@ -128,7 +157,7 @@ class LearningModuleDetailView extends StatelessWidget {
                       Text(
                         l10n.learnModuleLessonsCompleted(
                           completedCount,
-                          module.lessons.length,
+                          widget.module.lessons.length,
                         ),
                         style: Theme.of(context).textTheme.labelLarge?.copyWith(
                           color: Colors.white,
@@ -139,30 +168,30 @@ class LearningModuleDetailView extends StatelessWidget {
                   ),
                 ),
                 // Render module-specific learning blocks above the lesson list.
-                if (module.id == 'arabic_letters') ...[
+                if (widget.module.id == 'arabic_letters') ...[
                   const SizedBox(height: 14),
                   const ArabicLettersLearningUnit(),
-                ] else if (module.id == 'pronunciation_basics') ...[
+                ] else if (widget.module.id == 'pronunciation_basics') ...[
                   const SizedBox(height: 14),
                   const PronunciationBasicsLearningUnit(),
-                ] else if (module.id == 'makharij') ...[
+                ] else if (widget.module.id == 'makharij') ...[
                   const SizedBox(height: 14),
                   const MakharijLearningUnit(),
-                ] else if (module.id == 'tajweed_rules') ...[
+                ] else if (widget.module.id == 'tajweed_rules') ...[
                   const SizedBox(height: 14),
                   const TajweedRulesLearningUnit(),
-                ] else if (module.id == 'word_by_word') ...[
+                ] else if (widget.module.id == 'word_by_word') ...[
                   const SizedBox(height: 14),
                   const WordByWordLearningUnit(),
-                ] else if (module.id == 'short_surah_practice') ...[
+                ] else if (widget.module.id == 'short_surah_practice') ...[
                   const SizedBox(height: 14),
                   const ShortSurahPracticeLearningUnit(),
-                ] else if (module.id == 'audio_assisted') ...[
+                ] else if (widget.module.id == 'audio_assisted') ...[
                   const SizedBox(height: 14),
                   const AudioAssistedLearningUnit(),
                 ],
                 const SizedBox(height: 14),
-                for (final lesson in module.lessons)
+                for (final lesson in widget.module.lessons)
                   Padding(
                     padding: const EdgeInsets.only(bottom: 10),
                     child: LearnLessonTile(

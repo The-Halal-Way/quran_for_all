@@ -2,21 +2,25 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 
+import '../../core/enums/playback_source.dart';
 import '../../core/localization/learn_quran_message_localizer.dart';
 import '../../data/models/learn_quran_content.dart';
 import '../../data/models/learning_progress.dart';
 import '../../domain/repositories/audio_repository.dart';
 import '../../domain/repositories/learning_progress_repository.dart';
 import '../../domain/repositories/quran_repository.dart';
+import 'audio_control_viewmodel.dart';
 
 class LearnQuranViewModel extends ChangeNotifier {
   LearnQuranViewModel({
     required LearningProgressRepository progressRepository,
     required QuranRepository quranRepository,
     required AudioRepository audioRepository,
+    required AudioControlViewModel audioControlViewModel,
   }) : _progressRepository = progressRepository,
        _quranRepository = quranRepository,
-       _audioRepository = audioRepository {
+       _audioRepository = audioRepository,
+       _audioControl = audioControlViewModel {
     _audioPlaybackSubscription = _audioRepository.isPlayingStream.listen((
       isPlaying,
     ) {
@@ -39,6 +43,7 @@ class LearnQuranViewModel extends ChangeNotifier {
   final LearningProgressRepository _progressRepository;
   final QuranRepository _quranRepository;
   final AudioRepository _audioRepository;
+  final AudioControlViewModel _audioControl;
   late final StreamSubscription<bool> _audioPlaybackSubscription;
 
   bool _isLoading = true;
@@ -213,6 +218,12 @@ class LearnQuranViewModel extends ChangeNotifier {
       _playingLessonId = lesson.id;
       _isLessonAudioPlaying = true;
       notifyListeners();
+
+      _audioControl.setPlaybackContext(
+        source: PlaybackSource.lessonDetail,
+        title: lesson.title,
+        subtitle: 'Audio sample',
+      );
 
       await _audioRepository.playAyah(ayah);
       return null;

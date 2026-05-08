@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:audio_session/audio_session.dart' as audio_session;
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
@@ -13,6 +15,40 @@ class AudioService {
     _playerStateSubscription = _player.onPlayerStateChanged.listen(
       _onPlayerStateChanged,
     );
+    unawaited(_configureAudioSession());
+  }
+
+  /// Configures the platform audio session so that:
+  ///   - iOS: uses the `playback` category (allows background audio).
+  ///   - Android: requests media audio focus for music playback.
+  Future<void> _configureAudioSession() async {
+    try {
+      final session = await audio_session.AudioSession.instance;
+      await session.configure(
+        const audio_session.AudioSessionConfiguration(
+          avAudioSessionCategory:
+              audio_session.AVAudioSessionCategory.playback,
+          avAudioSessionCategoryOptions:
+              audio_session.AVAudioSessionCategoryOptions.allowBluetooth,
+          avAudioSessionMode: audio_session.AVAudioSessionMode.defaultMode,
+          avAudioSessionRouteSharingPolicy:
+              audio_session.AVAudioSessionRouteSharingPolicy.defaultPolicy,
+          avAudioSessionSetActiveOptions:
+              audio_session.AVAudioSessionSetActiveOptions.none,
+          androidAudioAttributes: audio_session.AndroidAudioAttributes(
+            contentType: audio_session.AndroidAudioContentType.music,
+            flags: audio_session.AndroidAudioFlags.none,
+            usage: audio_session.AndroidAudioUsage.media,
+          ),
+          androidAudioFocusGainType:
+              audio_session.AndroidAudioFocusGainType.gain,
+          androidWillPauseWhenDucked: true,
+        ),
+      );
+    } catch (e) {
+      // Non-fatal: log and continue; playback still works without session config.
+      debugPrint('AudioService: failed to configure audio session – $e');
+    }
   }
 
   final http.Client _httpClient;

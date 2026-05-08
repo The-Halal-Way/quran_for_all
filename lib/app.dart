@@ -17,6 +17,7 @@ import 'domain/repositories/audio_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
+import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/search_viewmodel.dart';
@@ -24,6 +25,7 @@ import 'presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'presentation/viewmodels/settings_viewmodel.dart';
 import 'presentation/viewmodels/splash_viewmodel.dart';
 import 'presentation/views/splash/splash_view.dart';
+import 'presentation/widgets/common/global_audio_control_bar.dart';
 import 'services/audio_service.dart';
 import 'services/permission_helper.dart';
 
@@ -62,6 +64,11 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               AudioRepositoryImpl(context.read<AudioService>()),
         ),
+        ChangeNotifierProvider<AudioControlViewModel>(
+          create: (context) => AudioControlViewModel(
+            audioRepository: context.read<AudioRepository>(),
+          ),
+        ),
         ChangeNotifierProvider<SettingsViewModel>(
           create: (context) =>
               SettingsViewModel(context.read<SettingsRepository>()),
@@ -79,6 +86,7 @@ class QuranForAllApp extends StatelessWidget {
             progressRepository: context.read<LearningProgressRepository>(),
             quranRepository: context.read<QuranRepository>(),
             audioRepository: context.read<AudioRepository>(),
+            audioControlViewModel: context.read<AudioControlViewModel>(),
           ),
         ),
         ChangeNotifierProvider<SearchViewModel>(
@@ -88,6 +96,7 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) => SurahDetailsViewModel(
             quranRepository: context.read<QuranRepository>(),
             audioRepository: context.read<AudioRepository>(),
+            audioControlViewModel: context.read<AudioControlViewModel>(),
           ),
         ),
       ],
@@ -109,7 +118,37 @@ class QuranForAllApp extends StatelessWidget {
                 );
               }
 
-              return child ?? const SizedBox.shrink();
+              // Wrap the entire navigator stack with the global audio control
+              // bar. The bar sits above the content area and is only visible
+              // when audio is playing and the user has navigated away from the
+              // source page. When shown, the top MediaQuery padding is removed
+              // from the child so Scaffold doesn't double-count the status bar.
+              return Consumer<AudioControlViewModel>(
+                builder: (context, audioControlVm, _) {
+                  final showBar = audioControlVm.showMiniPlayer;
+
+                  if (!showBar) {
+                    return child ?? const SizedBox.shrink();
+                  }
+
+                  return Column(
+                    children: [
+                      SafeArea(
+                        bottom: false,
+                        child: const GlobalAudioControlBar(),
+                      ),
+                      Expanded(
+                        child: MediaQuery(
+                          data: MediaQuery.of(
+                            context,
+                          ).removePadding(removeTop: true),
+                          child: child ?? const SizedBox.shrink(),
+                        ),
+                      ),
+                    ],
+                  );
+                },
+              );
             },
             home: const SplashView(),
           );
