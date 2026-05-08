@@ -12,6 +12,7 @@ class MakharijLearningUnit extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Section cards and data models localize visible copy through context.learnText.
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -70,7 +71,7 @@ class _PostureCard extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           Text(
-            'Indicator: ${cue.indicator}',
+            '${context.learnText('Indicator')}: ${cue.indicator}',
             style: Theme.of(context).textTheme.labelMedium?.copyWith(
               color: colorScheme.primary,
               fontWeight: FontWeight.w700,
@@ -78,12 +79,12 @@ class _PostureCard extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Do: ${cue.doThis}',
+            '${context.learnText('Do')}: ${cue.doThis}',
             style: Theme.of(context).textTheme.bodySmall,
           ),
           const SizedBox(height: 3),
           Text(
-            'Avoid: ${cue.avoidThis}',
+            '${context.learnText('Avoid')}: ${cue.avoidThis}',
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.75),
             ),

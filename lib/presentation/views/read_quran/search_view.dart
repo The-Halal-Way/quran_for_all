@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../data/models/search_result_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/read_quran/search_viewmodel.dart';
@@ -45,7 +47,7 @@ class _SearchViewState extends State<SearchView> {
     final settings = context.watch<SettingsViewModel>().settings;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Search Quran')),
+      appBar: AppBar(title: Text(context.readQuranText('Search Quran'))),
       body: Stack(
         children: [
           const Positioned.fill(
@@ -79,28 +81,35 @@ class _SearchViewState extends State<SearchView> {
                     }
 
                     if (viewModel.query.isEmpty) {
-                      return const EmptyState(
+                      return EmptyState(
                         icon: Icons.manage_search_rounded,
-                        title: 'Search Surah, Ayah, or Juz',
-                        message:
-                            'Use query formats like 1:1, para 2, or any Bangla/English keyword.',
+                        title: context.readQuranText(
+                          'Search Surah, Ayah, or Juz',
+                        ),
+                        message: context.readQuranText(
+                          'Use query formats like 1:1, para 2, or any Bangla/English keyword.',
+                        ),
                       );
                     }
 
                     if (viewModel.errorMessage != null) {
                       return EmptyState(
                         icon: Icons.error_outline,
-                        title: 'Search failed',
-                        message: viewModel.errorMessage!,
+                        title: context.readQuranText('Search failed'),
+                        message: localizeReadQuranMessage(
+                          context,
+                          viewModel.errorMessage!,
+                        ),
                       );
                     }
 
                     if (viewModel.results.isEmpty) {
-                      return const EmptyState(
+                      return EmptyState(
                         icon: Icons.search_off,
-                        title: 'No results',
-                        message:
-                            'Try a shorter keyword or a direct ayah reference.',
+                        title: context.readQuranText('No results'),
+                        message: context.readQuranText(
+                          'Try a shorter keyword or a direct ayah reference.',
+                        ),
                       );
                     }
 
@@ -150,7 +159,9 @@ class _SearchViewState extends State<SearchView> {
 
     if (surah == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Could not open this result.')),
+        SnackBar(
+          content: Text(context.readQuranText('Could not open this result.')),
+        ),
       );
       return;
     }

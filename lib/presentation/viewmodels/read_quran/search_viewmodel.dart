@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 
+import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../data/models/search_result_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../../domain/repositories/quran_repository.dart';
@@ -43,7 +44,7 @@ class SearchViewModel extends ChangeNotifier {
     try {
       _results = await _quranRepository.search(_query);
     } catch (_) {
-      _errorMessage = 'Search failed. Please try again.';
+      _errorMessage = ReadQuranMessageKeys.searchFailedTryAgain;
       _results = const [];
     }
 

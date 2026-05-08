@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
+
 class SearchQueryPanel extends StatelessWidget {
   const SearchQueryPanel({
     super.key,
@@ -39,9 +41,11 @@ class SearchQueryPanel extends StatelessWidget {
           TextField(
             controller: controller,
             onChanged: onChanged,
-            decoration: const InputDecoration(
-              hintText: 'Try: Al-Baqarah, 2:255, para 1, mercy',
-              prefixIcon: Icon(Icons.search_rounded),
+            decoration: InputDecoration(
+              hintText: context.readQuranText(
+                'Try: Al-Baqarah, 2:255, para 1, mercy',
+              ),
+              prefixIcon: const Icon(Icons.search_rounded),
             ),
           ),
           if (query.isNotEmpty) ...[
@@ -59,8 +63,8 @@ class SearchQueryPanel extends StatelessWidget {
                 Expanded(
                   child: Text(
                     isLoading
-                        ? 'Searching...'
-                        : '$resultCount ${resultCount == 1 ? 'result' : 'results'} for "$query"',
+                        ? context.readQuranText('Searching...')
+                        : '${context.readQuranText('Results')}: $resultCount · "$query"',
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
                       color: colorScheme.onSurface.withValues(alpha: 0.75),
                     ),

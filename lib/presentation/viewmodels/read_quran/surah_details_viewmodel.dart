@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 
+import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../data/models/ayah_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../../domain/repositories/audio_repository.dart';
@@ -36,7 +37,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
   Future<void> load() async {
     final selectedSurah = _surah;
     if (selectedSurah == null) {
-      _errorMessage = 'No surah selected.';
+      _errorMessage = ReadQuranMessageKeys.noSurahSelected;
       _ayahs = const [];
       _isLoading = false;
       notifyListeners();
@@ -60,7 +61,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
         return;
       }
 
-      _errorMessage = 'Unable to load ayahs for this surah.';
+      _errorMessage = ReadQuranMessageKeys.unableLoadAyahs;
     }
 
     if (requestId != _loadRequestId) {

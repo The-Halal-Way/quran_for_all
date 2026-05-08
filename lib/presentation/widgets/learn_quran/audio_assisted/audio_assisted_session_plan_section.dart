@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'audio_assisted_learning_data.dart';
 import 'audio_assisted_section_card.dart';
 
@@ -82,7 +83,7 @@ class _SessionPlanCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 3),
                 Text(
-                  'Duration: ${item.duration}',
+                  '${context.learnText('Duration')}: ${item.duration}',
                   style: Theme.of(context).textTheme.labelMedium?.copyWith(
                     color: colorScheme.primary,
                     fontWeight: FontWeight.w700,
@@ -92,7 +93,7 @@ class _SessionPlanCard extends StatelessWidget {
                 Text(item.task, style: Theme.of(context).textTheme.bodySmall),
                 const SizedBox(height: 3),
                 Text(
-                  'Output: ${item.output}',
+                  '${context.learnText('Output')}: ${item.output}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -83,7 +84,7 @@ class _FlowDrillCard extends StatelessWidget {
             ),
           const SizedBox(height: 3),
           Text(
-            'Goal: ${drill.goal}',
+            '${context.learnText('Goal')}: ${drill.goal}',
             style: Theme.of(context).textTheme.labelMedium?.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.78),
             ),

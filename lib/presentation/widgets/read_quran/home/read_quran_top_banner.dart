@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
+
 class ReadQuranTopBanner extends StatelessWidget {
   const ReadQuranTopBanner({
     super.key,
@@ -42,7 +44,7 @@ class ReadQuranTopBanner extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Read. Reflect. Remember.',
+              context.readQuranText('Read. Reflect. Remember.'),
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
                 color: Colors.white,
                 fontWeight: FontWeight.w700,
@@ -50,7 +52,9 @@ class ReadQuranTopBanner extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Offline Quran with Bangla and English support.',
+              context.readQuranText(
+                'Offline Quran with Bangla and English support.',
+              ),
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: Colors.white.withValues(alpha: 0.9),
               ),
@@ -62,11 +66,11 @@ class ReadQuranTopBanner extends StatelessWidget {
               children: [
                 _InfoChip(
                   icon: Icons.menu_book_rounded,
-                  label: '$surahCount Surahs',
+                  label: '$surahCount ${context.readQuranText('Surahs')}',
                 ),
-                const _InfoChip(
+                _InfoChip(
                   icon: Icons.download_done_rounded,
-                  label: 'Offline Ready',
+                  label: context.readQuranText('Offline Ready'),
                 ),
               ],
             ),
@@ -78,7 +82,7 @@ class ReadQuranTopBanner extends StatelessWidget {
                 side: BorderSide(color: Colors.white.withValues(alpha: 0.45)),
               ),
               icon: const Icon(Icons.search_rounded),
-              label: const Text('Search Surah, Ayah, Juz'),
+              label: Text(context.readQuranText('Search Surah, Ayah, Juz')),
             ),
           ],
         ),

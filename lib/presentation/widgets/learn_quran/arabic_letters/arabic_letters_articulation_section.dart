@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -103,7 +104,7 @@ class _ArticulationZoneCard extends StatelessWidget {
           Text(guide.hint, style: textTheme.bodySmall),
           const SizedBox(height: 3),
           Text(
-            'Avoid: ${guide.watchFor}',
+            '${context.learnText('Avoid')}: ${guide.watchFor}',
             style: textTheme.labelMedium?.copyWith(
               color: Theme.of(
                 context,

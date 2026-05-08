@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../data/models/surah_model.dart';
+import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../data/models/surah_model.dart';
 
 class ContinueReadingCard extends StatelessWidget {
   const ContinueReadingCard({
@@ -48,7 +49,7 @@ class ContinueReadingCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Continue Reading',
+                      context.readQuranText('Continue Reading'),
                       style: Theme.of(context).textTheme.labelLarge?.copyWith(
                         color: colorScheme.primary,
                       ),
@@ -62,7 +63,7 @@ class ContinueReadingCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      '${surah.nameArabic} · Ayah $ayahNumber',
+                      '${surah.nameArabic} · ${context.readQuranText('Ayah')} $ayahNumber',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: colorScheme.onSurface.withValues(alpha: 0.72),
                       ),

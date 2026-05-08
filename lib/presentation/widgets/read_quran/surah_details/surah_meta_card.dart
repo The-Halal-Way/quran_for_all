@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../data/models/surah_model.dart';
 
 class SurahMetaCard extends StatelessWidget {
@@ -64,11 +65,11 @@ class SurahMetaCard extends StatelessWidget {
             children: [
               _MetaChip(
                 icon: Icons.layers_outlined,
-                label: '${surah.totalAyahs} ayahs',
+                label: '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
               ),
               _MetaChip(
                 icon: Icons.public_rounded,
-                label: surah.revelationType,
+                label: context.readQuranText(surah.revelationType),
               ),
             ],
           ),
@@ -85,7 +86,9 @@ class SurahMetaCard extends StatelessWidget {
                   : Icons.play_circle_fill_rounded,
             ),
             label: Text(
-              isPlayingFullSurah ? 'Stop Surah Audio' : 'Play Full Surah',
+              context.readQuranText(
+                isPlayingFullSurah ? 'Stop Surah Audio' : 'Play Full Surah',
+              ),
             ),
           ),
         ],

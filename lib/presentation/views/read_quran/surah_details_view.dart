@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../data/models/ayah_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
@@ -42,8 +44,8 @@ class SurahDetailsView extends StatelessWidget {
           else if (viewModel.errorMessage != null)
             EmptyState(
               icon: Icons.error_outline,
-              title: 'Could not load surah',
-              message: viewModel.errorMessage!,
+              title: context.readQuranText('Could not load surah'),
+              message: localizeReadQuranMessage(context, viewModel.errorMessage!),
             )
           else
             Column(
@@ -104,8 +106,10 @@ class SurahDetailsView extends StatelessWidget {
       }
 
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Unable to play this ayah audio right now.'),
+        SnackBar(
+          content: Text(
+            context.readQuranText('Unable to play this ayah audio right now.'),
+          ),
         ),
       );
     }

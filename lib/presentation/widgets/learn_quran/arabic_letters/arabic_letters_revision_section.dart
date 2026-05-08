@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -54,7 +55,7 @@ class ArabicLettersRevisionSection extends StatelessWidget {
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
-                      checkpoint,
+                      context.learnText(checkpoint),
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),

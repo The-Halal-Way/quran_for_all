@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -91,7 +92,7 @@ class _FamilyCard extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Tip: ${family.tip}',
+            '${context.learnText('Tip')}: ${family.tip}',
             style: Theme.of(context).textTheme.labelMedium?.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.78),
             ),

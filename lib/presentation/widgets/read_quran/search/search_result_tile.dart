@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/enums/app_language.dart';
 import '../../../../data/models/search_result_model.dart';
 
@@ -80,7 +81,7 @@ class SearchResultTile extends StatelessWidget {
                       Chip(
                         avatar: const Icon(Icons.place_outlined, size: 16),
                         label: Text(
-                          'Ayah ${result.ayah!.surahId}:${result.ayah!.ayahNumber}',
+                          '${context.readQuranText('Ayah')} ${result.ayah!.surahId}:${result.ayah!.ayahNumber}',
                         ),
                         visualDensity: VisualDensity.compact,
                       ),

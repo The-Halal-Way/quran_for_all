@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'short_surah_learning_data.dart';
 import 'short_surah_section_card.dart';
 
@@ -50,7 +51,7 @@ class ShortSurahRevisionSection extends StatelessWidget {
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
-                      item,
+                      context.learnText(item),
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),

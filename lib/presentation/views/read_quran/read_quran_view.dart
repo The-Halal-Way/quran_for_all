@@ -3,14 +3,17 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/enums/app_language.dart';
+import '../../../core/localization/l10n_extensions.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../viewmodels/read_quran/search_viewmodel.dart';
 import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
+import '../../viewmodels/settings_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
-import '../../widgets/read_quran/continue_reading_card.dart';
-import '../../widgets/read_quran/read_quran_top_banner.dart';
-import '../../widgets/read_quran/surah_card.dart';
+import '../../widgets/read_quran/home/continue_reading_card.dart';
+import '../../widgets/read_quran/home/read_quran_top_banner.dart';
+import '../../widgets/read_quran/home/surah_card.dart';
 import '../settings/settings_view.dart';
 import 'search_view.dart';
 import 'surah_details_view.dart';
@@ -21,7 +24,15 @@ class ReadQuranView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<ReadQuranViewModel>();
+    final settings = context.watch<SettingsViewModel>().settings;
     final textTheme = Theme.of(context).textTheme;
+    final isBangla = settings.language == AppLanguage.bangla;
+    final banglaPreview = viewModel.lastReadAyah?.translationBn;
+    final ayahPreview = isBangla &&
+            banglaPreview != null &&
+            banglaPreview.trim().isNotEmpty
+        ? banglaPreview
+        : viewModel.lastReadAyah?.translationEn;
 
     return Scaffold(
       appBar: AppBar(
@@ -29,19 +40,22 @@ class ReadQuranView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Read Quran',
+              context.readQuranText('Read Quran'),
               style: textTheme.titleLarge?.copyWith(
                 fontWeight: FontWeight.w700,
               ),
             ),
-            Text('Quran For All', style: textTheme.bodySmall),
+            Text(
+              context.readQuranText('Quran For All'),
+              style: textTheme.bodySmall,
+            ),
           ],
         ),
         actions: [
           IconButton.filledTonal(
             onPressed: () => _openSearch(context),
             icon: const Icon(Icons.search_rounded),
-            tooltip: 'Search',
+            tooltip: context.readQuranText('Search'),
           ),
           const SizedBox(width: 8),
           IconButton(
@@ -49,7 +63,7 @@ class ReadQuranView extends StatelessWidget {
               MaterialPageRoute<void>(builder: (_) => const SettingsView()),
             ),
             icon: const Icon(Icons.settings_outlined),
-            tooltip: 'Settings',
+            tooltip: context.readQuranText('Settings'),
           ),
         ],
       ),
@@ -77,6 +91,7 @@ class ReadQuranView extends StatelessWidget {
                   physics: const AlwaysScrollableScrollPhysics(),
                   padding: const EdgeInsets.fromLTRB(16, 10, 16, 16),
                   children: [
+                    // Read Quran UI copy uses map-based localization for BN locale.
                     ReadQuranTopBanner(
                       onSearchTap: () => _openSearch(context),
                       surahCount: viewModel.surahs.length,
@@ -87,7 +102,7 @@ class ReadQuranView extends StatelessWidget {
                       ContinueReadingCard(
                         surah: viewModel.lastReadSurah!,
                         ayahNumber: viewModel.lastRead!.ayahNumber,
-                        ayahPreview: viewModel.lastReadAyah?.translationEn,
+                        ayahPreview: ayahPreview,
                         onTap: () =>
                             _openSurah(context, viewModel.lastReadSurah!),
                       ),
@@ -97,13 +112,15 @@ class ReadQuranView extends StatelessWidget {
                       children: [
                         Expanded(
                           child: Text(
-                            'All Surahs',
+                            context.readQuranText('All Surahs'),
                             style: Theme.of(context).textTheme.titleLarge
                                 ?.copyWith(fontWeight: FontWeight.w700),
                           ),
                         ),
                         Chip(
-                          label: Text('${viewModel.surahs.length} total'),
+                          label: Text(
+                            '${viewModel.surahs.length} ${context.readQuranText('total')}',
+                          ),
                           visualDensity: VisualDensity.compact,
                         ),
                       ],

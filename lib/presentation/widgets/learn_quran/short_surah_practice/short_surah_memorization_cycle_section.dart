@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'short_surah_learning_data.dart';
 import 'short_surah_section_card.dart';
 
@@ -88,7 +89,7 @@ class _CycleCard extends StatelessWidget {
                 Text(item.action, style: Theme.of(context).textTheme.bodySmall),
                 const SizedBox(height: 4),
                 Text(
-                  'Duration: ${item.duration}',
+                  '${context.learnText('Duration')}: ${item.duration}',
                   style: Theme.of(context).textTheme.labelMedium?.copyWith(
                     color: colorScheme.primary,
                     fontWeight: FontWeight.w700,
@@ -96,7 +97,7 @@ class _CycleCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 3),
                 Text(
-                  'Goal: ${item.goal}',
+                  '${context.learnText('Goal')}: ${item.goal}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],

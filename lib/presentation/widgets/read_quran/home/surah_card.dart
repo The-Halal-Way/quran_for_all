@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../data/models/surah_model.dart';
+import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../data/models/surah_model.dart';
 
 class SurahCard extends StatelessWidget {
   const SurahCard({super.key, required this.surah, required this.onTap});
@@ -68,7 +69,8 @@ class SurahCard extends StatelessWidget {
                         const SizedBox(width: 8),
                         _InfoPill(
                           icon: Icons.layers_rounded,
-                          label: '${surah.totalAyahs} ayahs',
+                          label:
+                              '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
                         ),
                       ],
                     ),
@@ -87,7 +89,7 @@ class SurahCard extends StatelessWidget {
                       runSpacing: 6,
                       children: [
                         _TagPill(
-                          label: surah.revelationType,
+                          label: context.readQuranText(surah.revelationType),
                           icon: Icons.public_rounded,
                         ),
                         _TagPill(label: surah.nameArabic),

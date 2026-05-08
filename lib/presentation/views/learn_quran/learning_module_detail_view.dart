@@ -33,8 +33,18 @@ class LearningModuleDetailView extends StatelessWidget {
     final visuals = LearnModuleVisuals.forModule(module.id);
     final l10n = context.l10n;
 
+    // Seed the Learn Quran text map for the active locale before reading model getters.
+    LearnQuranTextLocalizer.seedFromLocalizations(
+      l10n,
+      Localizations.localeOf(context),
+    );
+
+    final moduleTitle = module.title;
+    final moduleSubtitle = module.subtitle;
+    final moduleDescription = module.description;
+
     return Scaffold(
-      appBar: AppBar(title: Text(context.learnText(module.title))),
+      appBar: AppBar(title: Text(moduleTitle)),
       body: Stack(
         children: [
           const Positioned.fill(
@@ -87,7 +97,7 @@ class LearningModuleDetailView extends StatelessWidget {
                           const SizedBox(width: 10),
                           Expanded(
                             child: Text(
-                              context.learnText(module.subtitle),
+                              moduleSubtitle,
                               style: Theme.of(context).textTheme.titleMedium
                                   ?.copyWith(
                                     color: Colors.white,
@@ -99,7 +109,7 @@ class LearningModuleDetailView extends StatelessWidget {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        context.learnText(module.description),
+                        moduleDescription,
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: Colors.white.withValues(alpha: 0.92),
                         ),
@@ -128,6 +138,7 @@ class LearningModuleDetailView extends StatelessWidget {
                     ],
                   ),
                 ),
+                // Render module-specific learning blocks above the lesson list.
                 if (module.id == 'arabic_letters') ...[
                   const SizedBox(height: 14),
                   const ArabicLettersLearningUnit(),

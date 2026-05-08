@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'makharij_learning_data.dart';
 import 'makharij_section_card.dart';
 
@@ -82,7 +83,7 @@ class _DrillCard extends StatelessWidget {
             ),
           const SizedBox(height: 3),
           Text(
-            'Target: ${drill.target}',
+            '${context.learnText('Target')}: ${drill.target}',
             style: Theme.of(context).textTheme.labelMedium?.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.78),
             ),

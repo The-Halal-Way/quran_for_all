@@ -25,6 +25,7 @@ import 'presentation/viewmodels/settings_viewmodel.dart';
 import 'presentation/viewmodels/splash_viewmodel.dart';
 import 'presentation/views/splash/splash_view.dart';
 import 'services/audio_service.dart';
+import 'services/permission_helper.dart';
 
 class QuranForAllApp extends StatelessWidget {
   const QuranForAllApp({super.key});
@@ -41,6 +42,7 @@ class QuranForAllApp extends StatelessWidget {
         Provider<QuranApiService>(
           create: (context) => QuranApiService(context.read<http.Client>()),
         ),
+        Provider<PermissionHelper>(create: (_) => const PermissionHelper()),
         Provider<AudioService>(
           create: (context) =>
               AudioService(httpClient: context.read<http.Client>()),

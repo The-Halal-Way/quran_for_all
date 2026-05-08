@@ -2,11 +2,14 @@ import 'package:flutter/widgets.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 
 import '../enums/app_language.dart';
+import 'learn_quran_bn_content_map.dart';
+import 'read_quran_bn_content_map.dart';
 
 class LearnQuranTextLocalizer {
   const LearnQuranTextLocalizer._();
 
   static String _cachedLocale = '';
+  static String _cachedMapRaw = '';
   static Map<String, String> _cachedMap = const <String, String>{};
 
   static String translate(BuildContext context, String text) {
@@ -30,15 +33,26 @@ class LearnQuranTextLocalizer {
       return text;
     }
 
-    return _cachedMap[text] ?? text;
+    final translated = _cachedMap[text];
+    if (translated != null) {
+      return translated;
+    }
+
+    if (_cachedLocale.startsWith('bn')) {
+      return learnQuranBnContentMap[text] ?? text;
+    }
+
+    return text;
   }
 
   static void _seed({required String localeTag, required String mapRaw}) {
-    if (_cachedLocale == localeTag) {
+    // Re-seed when locale OR localized raw-map content changes (hot reload-safe).
+    if (_cachedLocale == localeTag && _cachedMapRaw == mapRaw) {
       return;
     }
 
     _cachedLocale = localeTag;
+    _cachedMapRaw = mapRaw;
     _cachedMap = _parseMap(mapRaw);
   }
 
@@ -66,6 +80,23 @@ class LearnQuranTextLocalizer {
   }
 }
 
+class ReadQuranTextLocalizer {
+  const ReadQuranTextLocalizer._();
+
+  static String translate(BuildContext context, String text) {
+    if (text.isEmpty) {
+      return text;
+    }
+
+    final locale = Localizations.localeOf(context).toLanguageTag();
+    if (!locale.startsWith('bn')) {
+      return text;
+    }
+
+    return readQuranBnContentMap[text] ?? text;
+  }
+}
+
 extension L10nBuildContextX on BuildContext {
   AppLocalizations get l10n => AppLocalizations.of(this)!;
 
@@ -80,4 +111,7 @@ extension L10nBuildContextX on BuildContext {
 
   String learnText(String text) =>
       LearnQuranTextLocalizer.translate(this, text);
+
+  String readQuranText(String text) =>
+      ReadQuranTextLocalizer.translate(this, text);
 }

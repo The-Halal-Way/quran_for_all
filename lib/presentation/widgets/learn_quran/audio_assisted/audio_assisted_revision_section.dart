@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import 'audio_assisted_learning_data.dart';
 import 'audio_assisted_section_card.dart';
 
@@ -50,7 +51,7 @@ class AudioAssistedRevisionSection extends StatelessWidget {
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
-                      item,
+                      context.learnText(item),
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),
