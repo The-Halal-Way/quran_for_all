@@ -31,24 +31,28 @@ class LearningModuleDetailView extends StatefulWidget {
 }
 
 class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
+  late AudioControlViewModel _audioControlVm;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _audioControlVm = context.read<AudioControlViewModel>();
+  }
+
   @override
   void initState() {
     super.initState();
     // Register as active so the mini-player hides while user is on this page.
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
-        context.read<AudioControlViewModel>().setActivePage(
-          PlaybackSource.lessonDetail,
-        );
+        _audioControlVm.setActivePage(PlaybackSource.lessonDetail);
       }
     });
   }
 
   @override
   void dispose() {
-    context.read<AudioControlViewModel>().clearActivePage(
-      PlaybackSource.lessonDetail,
-    );
+    _audioControlVm.clearActivePage(PlaybackSource.lessonDetail);
     super.dispose();
   }
 

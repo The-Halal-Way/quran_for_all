@@ -11,20 +11,33 @@ class AudioRepositoryImpl implements AudioRepository {
   bool get isPlaying => _audioService.isPlaying;
 
   @override
+  bool get isPaused => _audioService.isPaused;
+
+  @override
   Stream<bool> get isPlayingStream => _audioService.isPlayingStream;
 
   @override
-  Future<void> playAyah(AyahModel ayah) {
-    return _audioService.playAyah(ayah);
-  }
+  Stream<bool> get isPausedStream => _audioService.isPausedStream;
 
   @override
-  Future<void> playSurah(List<AyahModel> ayahs, {int startIndex = 0}) {
-    return _audioService.playSurah(ayahs, startIndex: startIndex);
-  }
+  Stream<Duration> get positionStream => _audioService.positionStream;
 
   @override
-  Future<void> stop() {
-    return _audioService.stop();
-  }
+  Stream<Duration> get durationStream => _audioService.durationStream;
+
+  @override
+  Future<void> playAyah(AyahModel ayah) => _audioService.playAyah(ayah);
+
+  @override
+  Future<void> playSurah(List<AyahModel> ayahs, {int startIndex = 0}) =>
+      _audioService.playSurah(ayahs, startIndex: startIndex);
+
+  @override
+  Future<void> pause() => _audioService.pause();
+
+  @override
+  Future<void> resume() => _audioService.resume();
+
+  @override
+  Future<void> stop() => _audioService.stop();
 }

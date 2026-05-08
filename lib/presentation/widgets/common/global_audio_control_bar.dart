@@ -3,11 +3,12 @@ import 'package:provider/provider.dart';
 
 import '../../viewmodels/audio_control_viewmodel.dart';
 
-/// Compact global audio mini-player shown at the top of the app whenever
-/// audio is playing and the user is not on the source page.
+/// Global audio mini-player that overlays the bottom of the app whenever
+/// audio is active (playing or paused) and the user is not on the source page.
 ///
-/// Layout (inside SafeArea):
-///   [music icon]  [title / subtitle]  [stop button]
+/// Layout:
+///   [thin progress bar]
+///   [music icon]  [title / subtitle]  [play/pause]  [stop]
 class GlobalAudioControlBar extends StatelessWidget {
   const GlobalAudioControlBar({super.key});
 
@@ -19,66 +20,97 @@ class GlobalAudioControlBar extends StatelessWidget {
     final nowPlaying = vm.nowPlaying!;
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
+    final onPrimary = colorScheme.onPrimary;
 
     return Material(
       color: colorScheme.primary,
-      elevation: 4,
-      child: SafeArea(
-        bottom: false,
-        child: SizedBox(
-          height: 52,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Row(
-              children: [
-                // ── Pulsing music icon ───────────────────────────────────
-                _PulsingIcon(color: colorScheme.onPrimary),
-                const SizedBox(width: 10),
+      elevation: 12,
+      shadowColor: Colors.black45,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // ── Playback progress bar ────────────────────────────────────
+          LinearProgressIndicator(
+            value: vm.progress,
+            minHeight: 3,
+            backgroundColor: onPrimary.withValues(alpha: 0.25),
+            valueColor: AlwaysStoppedAnimation<Color>(onPrimary),
+          ),
 
-                // ── Title + subtitle ─────────────────────────────────────
-                Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        nowPlaying.title,
-                        style: textTheme.bodyMedium?.copyWith(
-                          color: colorScheme.onPrimary,
-                          fontWeight: FontWeight.w600,
-                        ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      if (nowPlaying.subtitle != null) ...[
-                        const SizedBox(height: 1),
-                        Text(
-                          nowPlaying.subtitle!,
-                          style: textTheme.labelSmall?.copyWith(
-                            color: colorScheme.onPrimary.withValues(alpha: 0.75),
+          // ── Content row ──────────────────────────────────────────────
+          SafeArea(
+            top: false,
+            child: SizedBox(
+              height: 60,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Row(
+                  children: [
+                    // ── Pulsing / paused icon ──────────────────────────
+                    vm.isPaused
+                        ? Icon(Icons.music_note_rounded, color: onPrimary, size: 22)
+                        : _PulsingIcon(color: onPrimary),
+                    const SizedBox(width: 10),
+
+                    // ── Title + subtitle ───────────────────────────────
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            nowPlaying.title,
+                            style: textTheme.bodyMedium?.copyWith(
+                              color: onPrimary,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                           ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ],
-                    ],
-                  ),
-                ),
+                          if (nowPlaying.subtitle != null) ...[
+                            const SizedBox(height: 1),
+                            Text(
+                              nowPlaying.subtitle!,
+                              style: textTheme.labelSmall?.copyWith(
+                                color: onPrimary.withValues(alpha: 0.75),
+                              ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
 
-                // ── Stop button ──────────────────────────────────────────
-                IconButton(
-                  icon: Icon(
-                    Icons.stop_circle_rounded,
-                    color: colorScheme.onPrimary,
-                    size: 28,
-                  ),
-                  tooltip: 'Stop playback',
-                  onPressed: () => context.read<AudioControlViewModel>().stop(),
+                    // ── Play / Pause button ────────────────────────────
+                    IconButton(
+                      icon: Icon(
+                        vm.isPaused
+                            ? Icons.play_circle_rounded
+                            : Icons.pause_circle_rounded,
+                        color: onPrimary,
+                        size: 28,
+                      ),
+                      onPressed: () =>
+                          context.read<AudioControlViewModel>().togglePlayPause(),
+                    ),
+
+                    // ── Stop button ────────────────────────────────────
+                    IconButton(
+                      icon: Icon(
+                        Icons.stop_circle_rounded,
+                        color: onPrimary,
+                        size: 28,
+                      ),
+                      onPressed: () =>
+                          context.read<AudioControlViewModel>().stop(),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }

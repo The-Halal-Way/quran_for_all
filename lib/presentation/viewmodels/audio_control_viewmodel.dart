@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/scheduler.dart';
 
 import '../../core/enums/playback_source.dart';
 import '../../domain/repositories/audio_repository.dart';
@@ -30,26 +31,55 @@ class AudioControlViewModel extends ChangeNotifier {
   AudioControlViewModel({required AudioRepository audioRepository})
     : _audioRepository = audioRepository {
     _subscription = _audioRepository.isPlayingStream.listen(_onPlayingChanged);
+    _pausedSubscription = _audioRepository.isPausedStream.listen((paused) {
+      _isPaused = paused;
+      notifyListeners();
+    });
+    _positionSubscription = _audioRepository.positionStream.listen((pos) {
+      _position = pos;
+      notifyListeners();
+    });
+    _durationSubscription = _audioRepository.durationStream.listen((dur) {
+      _duration = dur;
+      notifyListeners();
+    });
   }
 
   final AudioRepository _audioRepository;
   late final StreamSubscription<bool> _subscription;
+  late final StreamSubscription<bool> _pausedSubscription;
+  late final StreamSubscription<Duration> _positionSubscription;
+  late final StreamSubscription<Duration> _durationSubscription;
 
   NowPlayingInfo? _nowPlaying;
   PlaybackSource _activePage = PlaybackSource.none;
   bool _isPlaying = false;
+  bool _isPaused = false;
+  Duration _position = Duration.zero;
+  Duration _duration = Duration.zero;
 
   // ── Public state ──────────────────────────────────────────────────────────
 
   bool get isPlaying => _isPlaying;
+  bool get isPaused => _isPaused;
 
   NowPlayingInfo? get nowPlaying => _nowPlaying;
 
-  /// True when a mini-player should be shown at the top of the app.
+  Duration get position => _position;
+  Duration get duration => _duration;
+
+  /// Progress value from 0.0 to 1.0 for the playback progress indicator.
+  double get progress =>
+      _duration.inMilliseconds > 0
+          ? (_position.inMilliseconds / _duration.inMilliseconds).clamp(0.0, 1.0)
+          : 0.0;
+
+  /// True when a mini-player should be shown at the bottom of the app.
   ///
-  /// Condition: audio is playing AND the user is NOT on the page that started it.
+  /// Condition: audio is active (playing OR paused) AND the user is NOT on the
+  /// page that started it.
   bool get showMiniPlayer =>
-      _isPlaying &&
+      (_isPlaying || _isPaused) &&
       _nowPlaying != null &&
       _activePage != _nowPlaying!.source;
 
@@ -74,13 +104,20 @@ class AudioControlViewModel extends ChangeNotifier {
   }
 
   /// Called from a page's [dispose] to clear its active registration.
+  /// Notification is deferred to the next frame so it is safe to call during
+  /// widget disposal (avoids "setState called when tree was locked").
   void clearActivePage(PlaybackSource page) {
     if (_activePage != page) return;
     _activePage = PlaybackSource.none;
-    notifyListeners();
+    SchedulerBinding.instance.addPostFrameCallback((_) => notifyListeners());
   }
 
   // ── Audio control ─────────────────────────────────────────────────────────
+
+  Future<void> togglePlayPause() {
+    if (_isPaused) return _audioRepository.resume();
+    return _audioRepository.pause();
+  }
 
   Future<void> stop() => _audioRepository.stop();
 
@@ -92,6 +129,9 @@ class AudioControlViewModel extends ChangeNotifier {
     if (!isPlaying) {
       // Clear context so mini-player disappears when playback ends naturally.
       _nowPlaying = null;
+      _isPaused = false;
+      _position = Duration.zero;
+      _duration = Duration.zero;
     }
     notifyListeners();
   }
@@ -99,6 +139,9 @@ class AudioControlViewModel extends ChangeNotifier {
   @override
   void dispose() {
     _subscription.cancel();
+    _pausedSubscription.cancel();
+    _positionSubscription.cancel();
+    _durationSubscription.cancel();
     super.dispose();
   }
 }

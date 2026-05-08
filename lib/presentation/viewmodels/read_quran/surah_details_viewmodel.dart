@@ -78,6 +78,15 @@ class SurahDetailsViewModel extends ChangeNotifier {
   }
 
   Future<void> playAyah(AyahModel ayah) async {
+    // If full-surah playback is in progress, abort it before starting a
+    // single-ayah play; otherwise the surah loop would keep running in the
+    // background after the individual ayah finishes.
+    if (_isPlayingFullSurah) {
+      await _audioRepository.stop();
+      _isPlayingFullSurah = false;
+      notifyListeners();
+    }
+
     _audioControl.setPlaybackContext(
       source: PlaybackSource.surahDetails,
       title: _surah?.nameEnglish ?? 'Surah',

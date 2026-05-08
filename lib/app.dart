@@ -118,33 +118,24 @@ class QuranForAllApp extends StatelessWidget {
                 );
               }
 
-              // Wrap the entire navigator stack with the global audio control
-              // bar. The bar sits above the content area and is only visible
-              // when audio is playing and the user has navigated away from the
-              // source page. When shown, the top MediaQuery padding is removed
-              // from the child so Scaffold doesn't double-count the status bar.
+              // Overlay the global audio mini-player at the bottom of the
+              // navigator stack. The bar floats above all content and is
+              // only visible when audio is playing and the user has
+              // navigated away from the source page.
               return Consumer<AudioControlViewModel>(
                 builder: (context, audioControlVm, _) {
                   final showBar = audioControlVm.showMiniPlayer;
 
-                  if (!showBar) {
-                    return child ?? const SizedBox.shrink();
-                  }
-
-                  return Column(
+                  return Stack(
                     children: [
-                      SafeArea(
-                        bottom: false,
-                        child: const GlobalAudioControlBar(),
-                      ),
-                      Expanded(
-                        child: MediaQuery(
-                          data: MediaQuery.of(
-                            context,
-                          ).removePadding(removeTop: true),
-                          child: child ?? const SizedBox.shrink(),
+                      child ?? const SizedBox.shrink(),
+                      if (showBar)
+                        const Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          child: GlobalAudioControlBar(),
                         ),
-                      ),
                     ],
                   );
                 },

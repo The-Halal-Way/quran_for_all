@@ -26,6 +26,14 @@ class SurahDetailsView extends StatefulWidget {
 }
 
 class _SurahDetailsViewState extends State<SurahDetailsView> {
+  late AudioControlViewModel _audioControlVm;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _audioControlVm = context.read<AudioControlViewModel>();
+  }
+
   @override
   void initState() {
     super.initState();
@@ -33,18 +41,14 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
     // while the user is on the source page.
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
-        context.read<AudioControlViewModel>().setActivePage(
-          PlaybackSource.surahDetails,
-        );
+        _audioControlVm.setActivePage(PlaybackSource.surahDetails);
       }
     });
   }
 
   @override
   void dispose() {
-    context.read<AudioControlViewModel>().clearActivePage(
-      PlaybackSource.surahDetails,
-    );
+    _audioControlVm.clearActivePage(PlaybackSource.surahDetails);
     super.dispose();
   }
 

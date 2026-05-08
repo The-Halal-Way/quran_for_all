@@ -47,7 +47,7 @@ class AudioService {
       );
     } catch (e) {
       // Non-fatal: log and continue; playback still works without session config.
-      debugPrint('AudioService: failed to configure audio session – $e');
+      debugPrint('AudioService: failed to configure audio session - $e');
     }
   }
 
@@ -55,18 +55,35 @@ class AudioService {
   final AudioPlayer _player = AudioPlayer();
   final StreamController<bool> _isPlayingController =
       StreamController<bool>.broadcast();
+  final StreamController<bool> _isPausedController =
+      StreamController<bool>.broadcast();
   StreamSubscription<PlayerState>? _playerStateSubscription;
 
   bool _isPlaying = false;
+  bool _isPaused = false;
   bool _stopRequested = false;
 
+  /// True while [playSurah] is actively iterating through ayahs.
+  /// Suppresses intermediate [_setIsPlaying(false)] calls that fire between
+  /// ayahs (when PlayerState transitions to completed), which would otherwise
+  /// cause the mini-player to flicker off and on during full-surah playback.
+  bool _surahPlaybackActive = false;
+
   bool get isPlaying => _isPlaying;
+  bool get isPaused => _isPaused;
   Stream<bool> get isPlayingStream => _isPlayingController.stream;
+  Stream<bool> get isPausedStream => _isPausedController.stream;
+  Stream<Duration> get positionStream => _player.onPositionChanged;
+  Stream<Duration> get durationStream => _player.onDurationChanged;
 
   Future<void> playAyah(AyahModel ayah) async {
     _stopRequested = false;
 
     final localPath = await _getOrDownloadAyahAudio(ayah);
+
+    // Guard: stop() may have been called while the download was in flight.
+    if (_stopRequested) return;
+
     _setIsPlaying(true);
 
     await _player.play(DeviceFileSource(localPath));
@@ -74,23 +91,37 @@ class AudioService {
 
   Future<void> playSurah(List<AyahModel> ayahs, {int startIndex = 0}) async {
     _stopRequested = false;
+    _surahPlaybackActive = true;
 
-    for (var i = startIndex; i < ayahs.length; i++) {
-      if (_stopRequested) {
-        break;
+    try {
+      for (var i = startIndex; i < ayahs.length; i++) {
+        if (_stopRequested) {
+          break;
+        }
+
+        await playAyah(ayahs[i]);
+        await _waitForCompleteOrStop();
       }
-
-      await playAyah(ayahs[i]);
-      await _waitForCompleteOrStop();
+    } finally {
+      _surahPlaybackActive = false;
+      _setIsPlaying(false);
     }
-
-    _setIsPlaying(false);
   }
 
   Future<void> stop() async {
     _stopRequested = true;
     await _player.stop();
     _setIsPlaying(false);
+  }
+
+  Future<void> pause() async {
+    if (!_isPlaying) return;
+    await _player.pause();
+  }
+
+  Future<void> resume() async {
+    if (!_isPaused) return;
+    await _player.resume();
   }
 
   Future<String> _getOrDownloadAyahAudio(AyahModel ayah) async {
@@ -101,7 +132,17 @@ class AudioService {
       return audioFile.path;
     }
 
-    final response = await _httpClient.get(Uri.parse(ayah.audioUrl));
+    // Validate URL scheme before making a network request (OWASP A10 – SSRF).
+    final uri = Uri.tryParse(ayah.audioUrl);
+    if (uri == null ||
+        !uri.hasScheme ||
+        !{'http', 'https'}.contains(uri.scheme)) {
+      throw Exception('Invalid audio URL for ayah ${ayah.id}');
+    }
+
+    final response = await _httpClient
+        .get(uri)
+        .timeout(const Duration(seconds: 30));
     if (response.statusCode != 200) {
       throw Exception('Failed to load ayah audio (${ayah.id})');
     }
@@ -150,20 +191,38 @@ class AudioService {
   void _onPlayerStateChanged(PlayerState state) {
     if (state == PlayerState.playing) {
       _setIsPlaying(true);
+      _setIsPaused(false);
       return;
     }
 
+    if (state == PlayerState.paused) {
+      _setIsPaused(true);
+      return;
+    }
+
+    // During full-surah playback the player briefly transitions to
+    // PlayerState.completed between ayahs. Suppress the false emission so the
+    // mini-player doesn't flicker off and on between ayahs. playSurah's
+    // finally block is responsible for emitting false when the loop ends.
+    if (_surahPlaybackActive) return;
+
+    _setIsPaused(false);
     _setIsPlaying(false);
   }
 
   void _setIsPlaying(bool value) {
-    if (_isPlaying == value) {
-      return;
-    }
-
+    if (_isPlaying == value) return;
     _isPlaying = value;
     if (!_isPlayingController.isClosed) {
       _isPlayingController.add(value);
+    }
+  }
+
+  void _setIsPaused(bool value) {
+    if (_isPaused == value) return;
+    _isPaused = value;
+    if (!_isPausedController.isClosed) {
+      _isPausedController.add(value);
     }
   }
 
@@ -171,5 +230,6 @@ class AudioService {
     await _playerStateSubscription?.cancel();
     await _player.dispose();
     await _isPlayingController.close();
+    await _isPausedController.close();
   }
 }
