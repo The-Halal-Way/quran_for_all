@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_spacing.dart';
 import '../../../data/models/learn_quran_content.dart';
 
 class LearnNextLessonCard extends StatelessWidget {
@@ -21,7 +22,7 @@ class LearnNextLessonCard extends StatelessWidget {
 
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -34,7 +35,7 @@ class LearnNextLessonCard extends StatelessWidget {
                     color: Theme.of(
                       context,
                     ).colorScheme.primary.withValues(alpha: 0.12),
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
                   ),
                   child: Icon(
                     hasLesson
@@ -43,7 +44,7 @@ class LearnNextLessonCard extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primary,
                   ),
                 ),
-                const SizedBox(width: 10),
+                const SizedBox(width: AppSpacing.sm + 2),
                 Expanded(
                   child: Text(
                     hasLesson
@@ -56,7 +57,7 @@ class LearnNextLessonCard extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpacing.sm),
             Text(
               hasLesson
                   ? context.learnText(lesson.title)
@@ -64,7 +65,7 @@ class LearnNextLessonCard extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             if (hasLesson) ...[
-              const SizedBox(height: 6),
+              const SizedBox(height: AppSpacing.sm - 2),
               Text(
                 context.learnText(lesson.objective),
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
@@ -74,7 +75,7 @@ class LearnNextLessonCard extends StatelessWidget {
                 ),
               ),
             ],
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.md),
             FilledButton.icon(
               onPressed: onStart,
               icon: Icon(

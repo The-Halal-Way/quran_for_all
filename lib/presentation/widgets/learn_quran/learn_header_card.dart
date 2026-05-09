@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/app_spacing.dart';
 
 class LearnHeaderCard extends StatelessWidget {
   const LearnHeaderCard({
@@ -26,19 +28,15 @@ class LearnHeaderCard extends StatelessWidget {
     final l10n = context.l10n;
 
     return Container(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
+      padding: const EdgeInsets.all(AppSpacing.xl - 2),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color(0xFF0B6B5A), Color(0xFFBC5B40)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(26),
-        boxShadow: const [
+        gradient: AppColors.heroBanner,
+        borderRadius: BorderRadius.circular(AppRadius.xxl - 2),
+        boxShadow: [
           BoxShadow(
-            color: Color(0x2E0B6B5A),
+            color: AppColors.primary.withValues(alpha: 0.18),
             blurRadius: 22,
-            offset: Offset(0, 14),
+            offset: const Offset(0, 14),
           ),
         ],
       ),
@@ -53,24 +51,24 @@ class LearnHeaderCard extends StatelessWidget {
               height: 1.12,
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpacing.sm),
           Text(
             l10n.learnHeaderSubtitle,
             style: textTheme.bodyMedium?.copyWith(
               color: Colors.white.withValues(alpha: 0.9),
             ),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: AppSpacing.xl - 2),
           ClipRRect(
-            borderRadius: BorderRadius.circular(999),
+            borderRadius: BorderRadius.circular(AppRadius.full),
             child: LinearProgressIndicator(
               minHeight: 10,
               value: overallProgress,
               backgroundColor: Colors.white.withValues(alpha: 0.25),
-              color: const Color(0xFFFFD48A),
+              color: AppColors.secondaryLight,
             ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: AppSpacing.sm + 2),
           Text(
             l10n.learnHeaderLessonProgress(completedLessons, totalLessons),
             style: textTheme.labelLarge?.copyWith(
@@ -78,7 +76,7 @@ class LearnHeaderCard extends StatelessWidget {
               fontWeight: FontWeight.w700,
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpacing.lg - 2),
           Row(
             children: [
               Expanded(
@@ -88,7 +86,7 @@ class LearnHeaderCard extends StatelessWidget {
                   value: '$completedModules/$totalModules',
                 ),
               ),
-              const SizedBox(width: 8),
+              const SizedBox(width: AppSpacing.sm),
               Expanded(
                 child: _MetricPill(
                   icon: Icons.local_fire_department_rounded,
@@ -118,16 +116,16 @@ class _MetricPill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: AppSpacing.sm + 2, vertical: AppSpacing.sm + 2),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.18),
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppRadius.md),
         border: Border.all(color: Colors.white.withValues(alpha: 0.32)),
       ),
       child: Row(
         children: [
           Icon(icon, color: Colors.white, size: 18),
-          const SizedBox(width: 8),
+          const SizedBox(width: AppSpacing.sm),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/surah_model.dart';
 
 class ContinueReadingCard extends StatelessWidget {
@@ -22,12 +24,12 @@ class ContinueReadingCard extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Card(
-      color: const Color(0xFFFFF6E2),
+      color: AppColors.secondaryLight.withValues(alpha: 0.2),
       child: InkWell(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         onTap: onTap,
         child: Padding(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(AppSpacing.lg),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -43,7 +45,7 @@ class ContinueReadingCard extends StatelessWidget {
                   color: colorScheme.primary,
                 ),
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: AppSpacing.md),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -54,14 +56,14 @@ class ContinueReadingCard extends StatelessWidget {
                         color: colorScheme.primary,
                       ),
                     ),
-                    const SizedBox(height: 3),
+                    const SizedBox(height: AppSpacing.xs - 1),
                     Text(
                       surah.nameEnglish,
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    const SizedBox(height: 6),
+                    const SizedBox(height: AppSpacing.sm - 2),
                     Text(
                       '${surah.nameArabic} · ${context.readQuranText('Ayah')} $ayahNumber',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -69,7 +71,7 @@ class ContinueReadingCard extends StatelessWidget {
                       ),
                     ),
                     if (ayahPreview != null && ayahPreview!.trim().isNotEmpty) ...[
-                      const SizedBox(height: 8),
+                      const SizedBox(height: AppSpacing.sm),
                       Text(
                         ayahPreview!,
                         maxLines: 2,
@@ -82,7 +84,7 @@ class ContinueReadingCard extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: 8),
+              const SizedBox(width: AppSpacing.sm),
               Icon(
                 Icons.arrow_forward_ios_rounded,
                 size: 16,

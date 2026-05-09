@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/theme/app_colors.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../viewmodels/splash_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
@@ -52,13 +53,7 @@ class _SplashViewState extends State<SplashView> {
         children: [
           const Positioned.fill(
             child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Color(0xFF0B6B5A), Color(0xFFBC5B40)],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-              ),
+              decoration: BoxDecoration(gradient: AppColors.splashBg),
             ),
           ),
           Positioned(
@@ -69,7 +64,7 @@ class _SplashViewState extends State<SplashView> {
               height: 220,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.white.withValues(alpha: 0.12),
+                color: Colors.white.withValues(alpha: 0.10),
               ),
             ),
           ),
@@ -81,7 +76,7 @@ class _SplashViewState extends State<SplashView> {
               height: 190,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.white.withValues(alpha: 0.1),
+                color: Colors.white.withValues(alpha: 0.08),
               ),
             ),
           ),

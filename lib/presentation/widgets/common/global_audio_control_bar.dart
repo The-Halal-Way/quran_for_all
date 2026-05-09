@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/theme/app_spacing.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
 
 /// Global audio mini-player that overlays the bottom of the app whenever
@@ -43,14 +44,14 @@ class GlobalAudioControlBar extends StatelessWidget {
             child: SizedBox(
               height: 60,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
                 child: Row(
                   children: [
                     // ── Pulsing / paused icon ──────────────────────────
                     vm.isPaused
                         ? Icon(Icons.music_note_rounded, color: onPrimary, size: 22)
                         : _PulsingIcon(color: onPrimary),
-                    const SizedBox(width: 10),
+                    const SizedBox(width: AppSpacing.sm + 2),
 
                     // ── Title + subtitle ───────────────────────────────
                     Expanded(

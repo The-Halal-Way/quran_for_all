@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/theme/app_text_styles.dart';
 import '../../../../data/models/surah_model.dart';
+import '../../common/app_pill.dart';
 
 class SurahMetaCard extends StatelessWidget {
   const SurahMetaCard({
@@ -22,9 +24,9 @@ class SurahMetaCard extends StatelessWidget {
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(18),
+      padding: const EdgeInsets.all(AppSpacing.xl - 2),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(AppRadius.xl),
         gradient: LinearGradient(
           colors: [colorScheme.primary, colorScheme.tertiary],
           begin: Alignment.topLeft,
@@ -36,20 +38,16 @@ class SurahMetaCard extends StatelessWidget {
           Text(
             surah.nameArabic,
             textAlign: TextAlign.center,
-            style: GoogleFonts.amiri(
-              fontSize: 34,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-            ),
+            style: AppTextStyles.surahArabicName(context),
           ),
-          const SizedBox(height: 5),
+          const SizedBox(height: AppSpacing.xs + 1),
           Text(
             surah.nameEnglish,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
               color: Colors.white,
             ),
           ),
-          const SizedBox(height: 5),
+          const SizedBox(height: AppSpacing.xs + 1),
           Text(
             surah.nameTranslated,
             textAlign: TextAlign.center,
@@ -57,23 +55,23 @@ class SurahMetaCard extends StatelessWidget {
               color: Colors.white.withValues(alpha: 0.9),
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpacing.lg - 2),
           Wrap(
-            spacing: 8,
-            runSpacing: 8,
+            spacing: AppSpacing.sm,
+            runSpacing: AppSpacing.sm,
             alignment: WrapAlignment.center,
             children: [
-              _MetaChip(
+              AppPill.overlay(
                 icon: Icons.layers_outlined,
                 label: '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
               ),
-              _MetaChip(
+              AppPill.overlay(
                 icon: Icons.public_rounded,
                 label: context.readQuranText(surah.revelationType),
               ),
             ],
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpacing.lg - 2),
           FilledButton.tonalIcon(
             onPressed: onTogglePlayback,
             style: FilledButton.styleFrom(
@@ -97,34 +95,4 @@ class SurahMetaCard extends StatelessWidget {
   }
 }
 
-class _MetaChip extends StatelessWidget {
-  const _MetaChip({required this.icon, required this.label});
 
-  final IconData icon;
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.18),
-        borderRadius: BorderRadius.circular(99),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.24)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, size: 15, color: Colors.white),
-          const SizedBox(width: 6),
-          Text(
-            label,
-            style: Theme.of(
-              context,
-            ).textTheme.labelMedium?.copyWith(color: Colors.white),
-          ),
-        ],
-      ),
-    );
-  }
-}

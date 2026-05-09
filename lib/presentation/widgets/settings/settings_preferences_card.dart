@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/enums/app_language.dart';
 import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_spacing.dart';
 
 class SettingsPreferencesCard extends StatelessWidget {
   const SettingsPreferencesCard({
@@ -26,30 +27,30 @@ class SettingsPreferencesCard extends StatelessWidget {
     return Card(
       child: Column(
         children: [
-          const _SectionTitle(
+          _SectionTitle(
             icon: Icons.tune_rounded,
-            title: 'Reading Preferences',
+            title: context.readQuranText('Reading Preferences'),
           ),
           const Divider(height: 1),
           SwitchListTile(
             value: showPronunciation,
             onChanged: onShowPronunciationChanged,
-            title: const Text('Show pronunciation'),
-            subtitle: const Text('Display transliteration under Arabic ayah.'),
+            title: Text(context.readQuranText('Show pronunciation')),
+            subtitle: Text(context.readQuranText('Display transliteration under Arabic ayah.')),
           ),
           const Divider(height: 1),
           SwitchListTile(
             value: showTranslation,
             onChanged: onShowTranslationChanged,
-            title: const Text('Show translations'),
-            subtitle: const Text('Display meaning in your selected language.'),
+            title: Text(context.readQuranText('Show translations')),
+            subtitle: Text(context.readQuranText('Display meaning in your selected language.')),
           ),
           const Divider(height: 1),
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+            padding: const EdgeInsets.fromLTRB(AppSpacing.lg, AppSpacing.md, AppSpacing.lg, AppSpacing.lg),
             child: DropdownButtonFormField<AppLanguage>(
               initialValue: language,
-              decoration: const InputDecoration(labelText: 'Language preference'),
+              decoration: InputDecoration(labelText: context.readQuranText('Language preference')),
               items: AppLanguage.values
                   .map(
                     (appLanguage) => DropdownMenuItem<AppLanguage>(
@@ -82,7 +83,7 @@ class _SectionTitle extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 12),
+      padding: const EdgeInsets.fromLTRB(AppSpacing.lg, AppSpacing.lg - 2, AppSpacing.lg, AppSpacing.md),
       child: Row(
         children: [
           Container(
@@ -90,11 +91,11 @@ class _SectionTitle extends StatelessWidget {
             height: 34,
             decoration: BoxDecoration(
               color: colorScheme.primary.withValues(alpha: 0.12),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(AppSpacing.sm + 2),
             ),
             child: Icon(icon, color: colorScheme.primary, size: 18),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: AppSpacing.sm + 2),
           Text(
             title,
             style: Theme.of(context).textTheme.titleMedium?.copyWith(

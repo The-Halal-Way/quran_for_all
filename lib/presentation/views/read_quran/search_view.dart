@@ -5,15 +5,18 @@ import 'package:provider/provider.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
+import '../../../core/theme/app_spacing.dart';
 import '../../../data/models/search_result_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/read_quran/search_viewmodel.dart';
 import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../viewmodels/settings_viewmodel.dart';
+import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/read_quran/search/search_query_panel.dart';
 import '../../widgets/read_quran/search/search_result_tile.dart';
+import '../../../core/utils/app_page_route.dart';
 import 'surah_details_view.dart';
 
 class SearchView extends StatefulWidget {
@@ -48,94 +51,83 @@ class _SearchViewState extends State<SearchView> {
 
     return Scaffold(
       appBar: AppBar(title: Text(context.readQuranText('Search Quran'))),
-      body: Stack(
-        children: [
-          const Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Color(0xFFFFFBEF), Color(0xFFF2E9D8)],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
+      body: AppGradientBackground(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppSpacing.lg, AppSpacing.sm + 2, AppSpacing.lg, AppSpacing.md,
+              ),
+              child: SearchQueryPanel(
+                controller: _controller,
+                onChanged: _onQueryChanged,
+                query: viewModel.query,
+                resultCount: viewModel.results.length,
+                isLoading: viewModel.isLoading,
               ),
             ),
-          ),
-          Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 10, 16, 12),
-                child: SearchQueryPanel(
-                  controller: _controller,
-                  onChanged: _onQueryChanged,
-                  query: viewModel.query,
-                  resultCount: viewModel.results.length,
-                  isLoading: viewModel.isLoading,
-                ),
-              ),
-              Expanded(
-                child: Builder(
-                  builder: (context) {
-                    if (viewModel.isLoading && viewModel.query.isEmpty) {
-                      return const Center(child: CircularProgressIndicator());
-                    }
+            Expanded(
+              child: Builder(
+                builder: (context) {
+                  if (viewModel.isLoading && viewModel.query.isEmpty) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
 
-                    if (viewModel.query.isEmpty) {
-                      return EmptyState(
-                        icon: Icons.manage_search_rounded,
-                        title: context.readQuranText(
-                          'Search Surah, Ayah, or Juz',
-                        ),
-                        message: context.readQuranText(
-                          'Use query formats like 1:1, para 2, or any Bangla/English keyword.',
-                        ),
-                      );
-                    }
-
-                    if (viewModel.errorMessage != null) {
-                      return EmptyState(
-                        icon: Icons.error_outline,
-                        title: context.readQuranText('Search failed'),
-                        message: localizeReadQuranMessage(
-                          context,
-                          viewModel.errorMessage!,
-                        ),
-                      );
-                    }
-
-                    if (viewModel.results.isEmpty) {
-                      return EmptyState(
-                        icon: Icons.search_off,
-                        title: context.readQuranText('No results'),
-                        message: context.readQuranText(
-                          'Try a shorter keyword or a direct ayah reference.',
-                        ),
-                      );
-                    }
-
-                    return AppPageScrollbar(
-                      builder: (context, controller) => ListView.separated(
-                        controller: controller,
-                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                        itemCount: viewModel.results.length,
-                        separatorBuilder: (_, _) => const SizedBox(height: 8),
-                        itemBuilder: (context, index) {
-                          final result = viewModel.results[index];
-                          return SearchResultTile(
-                            result: result,
-                            translationLanguage: settings.language,
-                            onTap: () =>
-                                _openResult(context, result, viewModel),
-                          );
-                        },
+                  if (viewModel.query.isEmpty) {
+                    return EmptyState(
+                      icon: Icons.manage_search_rounded,
+                      title: context.readQuranText(
+                        'Search Surah, Ayah, or Juz',
+                      ),
+                      message: context.readQuranText(
+                        'Use query formats like 1:1, para 2, or any Bangla/English keyword.',
                       ),
                     );
-                  },
-                ),
+                  }
+
+                  if (viewModel.errorMessage != null) {
+                    return EmptyState(
+                      icon: Icons.error_outline,
+                      title: context.readQuranText('Search failed'),
+                      message: localizeReadQuranMessage(
+                        context,
+                        viewModel.errorMessage!,
+                      ),
+                    );
+                  }
+
+                  if (viewModel.results.isEmpty) {
+                    return EmptyState(
+                      icon: Icons.search_off,
+                      title: context.readQuranText('No results'),
+                      message: context.readQuranText(
+                        'Try a shorter keyword or a direct ayah reference.',
+                      ),
+                    );
+                  }
+
+                  return AppPageScrollbar(
+                    builder: (context, controller) => ListView.separated(
+                      controller: controller,
+                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                      itemCount: viewModel.results.length,
+                      separatorBuilder: (_, _) => const SizedBox(height: 8),
+                      itemBuilder: (context, index) {
+                        final result = viewModel.results[index];
+                        return SearchResultTile(
+                          result: result,
+                          translationLanguage: settings.language,
+                          onTap: () =>
+                              _openResult(context, result, viewModel),
+                        );
+                      },
+                    ),
+                  );
+                },
               ),
-            ],
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -170,7 +162,7 @@ class _SearchViewState extends State<SearchView> {
     unawaited(context.read<SurahDetailsViewModel>().openSurah(selectedSurah));
 
     Navigator.of(context).push(
-      MaterialPageRoute<void>(
+      AppPageRoute<void>(
         builder: (_) => SurahDetailsView(surah: selectedSurah),
       ),
     );

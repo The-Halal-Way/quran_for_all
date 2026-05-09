@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/app_spacing.dart';
 
 class SearchQueryPanel extends StatelessWidget {
   const SearchQueryPanel({
@@ -23,10 +25,10 @@ class SearchQueryPanel extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Container(
-      padding: const EdgeInsets.all(14),
+      padding: const EdgeInsets.all(AppSpacing.lg - 2),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.86),
-        borderRadius: BorderRadius.circular(20),
+        color: AppColors.surface.withValues(alpha: 0.86),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         border: Border.all(color: colorScheme.outline.withValues(alpha: 0.35)),
         boxShadow: [
           BoxShadow(
@@ -49,7 +51,7 @@ class SearchQueryPanel extends StatelessWidget {
             ),
           ),
           if (query.isNotEmpty) ...[
-            const SizedBox(height: 10),
+            const SizedBox(height: AppSpacing.sm + 2),
             Row(
               children: [
                 Icon(
@@ -59,7 +61,7 @@ class SearchQueryPanel extends StatelessWidget {
                   size: 18,
                   color: colorScheme.primary,
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: AppSpacing.sm),
                 Expanded(
                   child: Text(
                     isLoading

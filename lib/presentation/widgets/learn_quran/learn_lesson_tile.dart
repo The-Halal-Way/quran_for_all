@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/app_spacing.dart';
 import '../../../data/models/learn_quran_content.dart';
+import '../common/app_pill.dart';
 
 class LearnLessonTile extends StatelessWidget {
   const LearnLessonTile({
@@ -26,7 +29,7 @@ class LearnLessonTile extends StatelessWidget {
 
     return Card(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+        padding: const EdgeInsets.fromLTRB(AppSpacing.lg - 2, AppSpacing.md, AppSpacing.lg - 2, AppSpacing.md),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -48,7 +51,7 @@ class LearnLessonTile extends StatelessWidget {
                           style: Theme.of(context).textTheme.titleMedium
                               ?.copyWith(fontWeight: FontWeight.w700),
                         ),
-                        const SizedBox(height: 4),
+                        const SizedBox(height: AppSpacing.xs),
                         Text(
                           context.learnText(lesson.objective),
                           style: Theme.of(context).textTheme.bodyMedium,
@@ -71,12 +74,12 @@ class LearnLessonTile extends StatelessWidget {
                   ),
               ],
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpacing.sm),
             Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(AppSpacing.sm + 2),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(AppRadius.sm),
                 color: colorScheme.secondary.withValues(alpha: 0.11),
               ),
               child: Text(
@@ -86,67 +89,32 @@ class LearnLessonTile extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpacing.sm),
             Row(
               children: [
-                _Tag(
+                AppPill.surface(
                   label: l10n.learnLessonDurationMinutes(lesson.durationMinutes),
                   icon: Icons.timer,
                 ),
                 if (lesson.hasAudioSample) ...[
-                  const SizedBox(width: 8),
-                  _Tag(
+                  const SizedBox(width: AppSpacing.sm),
+                  AppPill.surface(
                     label: l10n.learnLessonAudioGuided,
                     icon: Icons.graphic_eq_rounded,
                   ),
                 ],
                 if (isCompleted) ...[
-                  const SizedBox(width: 8),
-                  _Tag(
+                  const SizedBox(width: AppSpacing.sm),
+                  AppPill.surface(
                     label: l10n.learnLessonDone,
                     icon: Icons.check_circle_rounded,
-                    color: Color(0xFF1F8B4C),
+                    color: AppColors.success,
                   ),
                 ],
               ],
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _Tag extends StatelessWidget {
-  const _Tag({required this.label, required this.icon, this.color});
-
-  final String label;
-  final IconData icon;
-  final Color? color;
-
-  @override
-  Widget build(BuildContext context) {
-    final baseColor = color ?? Theme.of(context).colorScheme.primary;
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(99),
-        color: baseColor.withValues(alpha: 0.1),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, size: 14, color: baseColor),
-          const SizedBox(width: 5),
-          Text(
-            label,
-            style: Theme.of(context).textTheme.labelSmall?.copyWith(
-              color: baseColor,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        ],
       ),
     );
   }

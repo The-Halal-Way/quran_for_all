@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../data/models/app_settings.dart';
@@ -8,6 +9,7 @@ class SettingsRepositoryImpl implements SettingsRepository {
   static const _keyShowPronunciation = 'show_pronunciation';
   static const _keyShowTranslation = 'show_translation';
   static const _keyLanguage = 'app_language';
+  static const _keyThemeMode = 'theme_mode';
 
   @override
   Future<AppSettings> getSettings() async {
@@ -17,6 +19,7 @@ class SettingsRepositoryImpl implements SettingsRepository {
       showPronunciation: prefs.getBool(_keyShowPronunciation) ?? true,
       showTranslation: prefs.getBool(_keyShowTranslation) ?? true,
       language: AppLanguageX.fromCode(prefs.getString(_keyLanguage)),
+      themeMode: _themeModeFromString(prefs.getString(_keyThemeMode)),
     );
   }
 
@@ -27,5 +30,17 @@ class SettingsRepositoryImpl implements SettingsRepository {
     await prefs.setBool(_keyShowPronunciation, settings.showPronunciation);
     await prefs.setBool(_keyShowTranslation, settings.showTranslation);
     await prefs.setString(_keyLanguage, settings.language.code);
+    await prefs.setString(_keyThemeMode, settings.themeMode.name);
+  }
+
+  static ThemeMode _themeModeFromString(String? value) {
+    switch (value) {
+      case 'light':
+        return ThemeMode.light;
+      case 'dark':
+        return ThemeMode.dark;
+      default:
+        return ThemeMode.system;
+    }
   }
 }

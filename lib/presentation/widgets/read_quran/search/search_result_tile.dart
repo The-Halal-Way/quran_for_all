@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/enums/app_language.dart';
+import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/search_result_model.dart';
 
 class SearchResultTile extends StatelessWidget {
@@ -36,9 +37,9 @@ class SearchResultTile extends StatelessWidget {
     return Card(
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+          padding: const EdgeInsets.fromLTRB(AppSpacing.lg - 2, AppSpacing.md, AppSpacing.lg - 2, AppSpacing.md),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -46,7 +47,7 @@ class SearchResultTile extends StatelessWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(AppRadius.sm),
                   color: colorScheme.primary.withValues(alpha: 0.12),
                 ),
                 child: Icon(
@@ -56,7 +57,7 @@ class SearchResultTile extends StatelessWidget {
                   color: colorScheme.primary,
                 ),
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: AppSpacing.md),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,7 +68,7 @@ class SearchResultTile extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    const SizedBox(height: 5),
+                    const SizedBox(height: AppSpacing.xs + 1),
                     Text(
                       _subtitleText(),
                       maxLines: 2,
@@ -77,7 +78,7 @@ class SearchResultTile extends StatelessWidget {
                       ),
                     ),
                     if (result.ayah != null) ...[
-                      const SizedBox(height: 8),
+                      const SizedBox(height: AppSpacing.sm),
                       Chip(
                         avatar: const Icon(Icons.place_outlined, size: 16),
                         label: Text(
@@ -89,7 +90,7 @@ class SearchResultTile extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: 6),
+              const SizedBox(width: AppSpacing.sm - 2),
               Icon(
                 Icons.north_east_rounded,
                 color: colorScheme.primary,

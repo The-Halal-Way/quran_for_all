@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/app_spacing.dart';
+import '../../common/app_gradient_banner.dart';
+import '../../common/app_pill.dart';
 
 class ReadQuranTopBanner extends StatelessWidget {
   const ReadQuranTopBanner({
@@ -14,8 +18,6 @@ class ReadQuranTopBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
     return TweenAnimationBuilder<double>(
       duration: const Duration(milliseconds: 650),
       curve: Curves.easeOutCubic,
@@ -23,23 +25,8 @@ class ReadQuranTopBanner extends StatelessWidget {
       builder: (context, offset, child) {
         return Transform.translate(offset: Offset(0, offset), child: child);
       },
-      child: Container(
-        padding: const EdgeInsets.all(18),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [colorScheme.primary, colorScheme.tertiary],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(24),
-          boxShadow: [
-            BoxShadow(
-              color: colorScheme.primary.withValues(alpha: 0.22),
-              blurRadius: 20,
-              offset: const Offset(0, 14),
-            ),
-          ],
-        ),
+      child: AppGradientBanner(
+        gradient: AppColors.heroBanner,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -50,74 +37,42 @@ class ReadQuranTopBanner extends StatelessWidget {
                 fontWeight: FontWeight.w700,
               ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpacing.sm),
             Text(
               context.readQuranText(
                 'Offline Quran with Bangla and English support.',
               ),
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.white.withValues(alpha: 0.9),
+                color: Colors.white.withValues(alpha: 0.88),
               ),
             ),
-            const SizedBox(height: 14),
+            const SizedBox(height: AppSpacing.lg),
             Wrap(
-              spacing: 8,
-              runSpacing: 8,
+              spacing: AppSpacing.sm,
+              runSpacing: AppSpacing.sm,
               children: [
-                _InfoChip(
+                AppPill.overlay(
                   icon: Icons.menu_book_rounded,
                   label: '$surahCount ${context.readQuranText('Surahs')}',
                 ),
-                _InfoChip(
+                AppPill.overlay(
                   icon: Icons.download_done_rounded,
                   label: context.readQuranText('Offline Ready'),
                 ),
               ],
             ),
-            const SizedBox(height: 14),
+            const SizedBox(height: AppSpacing.lg),
             OutlinedButton.icon(
               onPressed: onSearchTap,
               style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.white,
-                side: BorderSide(color: Colors.white.withValues(alpha: 0.45)),
+                side: BorderSide(color: Colors.white.withValues(alpha: 0.40)),
               ),
               icon: const Icon(Icons.search_rounded),
               label: Text(context.readQuranText('Search Surah, Ayah, Juz')),
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _InfoChip extends StatelessWidget {
-  const _InfoChip({required this.icon, required this.label});
-
-  final IconData icon;
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.16),
-        borderRadius: BorderRadius.circular(99),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.24)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, size: 15, color: Colors.white),
-          const SizedBox(width: 6),
-          Text(
-            label,
-            style: Theme.of(
-              context,
-            ).textTheme.labelMedium?.copyWith(color: Colors.white),
-          ),
-        ],
       ),
     );
   }

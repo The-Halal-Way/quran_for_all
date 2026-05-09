@@ -5,12 +5,17 @@ import 'package:provider/provider.dart';
 
 import '../../../core/localization/learn_quran_message_localizer.dart';
 import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/app_spacing.dart';
 import '../../../data/models/learn_quran_content.dart';
 import '../../viewmodels/learn_quran_viewmodel.dart';
+import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
+import '../../widgets/common/section_header.dart';
 import '../../widgets/learn_quran/learn_header_card.dart';
 import '../../widgets/learn_quran/learn_module_card.dart';
 import '../../widgets/learn_quran/learn_next_lesson_card.dart';
+import '../../../core/utils/app_page_route.dart';
 import 'learning_module_detail_view.dart';
 
 class LearnQuranView extends StatefulWidget {
@@ -40,99 +45,76 @@ class _LearnQuranViewState extends State<LearnQuranView> {
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.learnQuranPageTitle)),
-      body: Stack(
-        children: [
-          const Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Color(0xFFFFFCF4), Color(0xFFF2E8D3)],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
-              ),
-            ),
-          ),
-          if (viewModel.isLoading)
-            const Center(child: CircularProgressIndicator())
-          else
-            RefreshIndicator(
-              onRefresh: viewModel.initialize,
-              child: AppPageScrollbar(
-                builder: (context, controller) => ListView(
-                  controller: controller,
-                  physics: const AlwaysScrollableScrollPhysics(),
-                  padding: const EdgeInsets.fromLTRB(16, 10, 16, 16),
-                  children: [
-                    LearnHeaderCard(
-                      overallProgress: viewModel.overallProgress,
-                      completedLessons: viewModel.completedLessonCount,
-                      totalLessons: viewModel.totalLessonCount,
-                      completedModules: viewModel.completedModuleCount,
-                      totalModules: viewModel.modules.length,
-                      streakDays: viewModel.streakDays,
+      body: AppGradientBackground(
+        child: viewModel.isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : RefreshIndicator(
+                onRefresh: viewModel.initialize,
+                child: AppPageScrollbar(
+                  builder: (context, controller) => ListView(
+                    controller: controller,
+                    physics: const AlwaysScrollableScrollPhysics(),
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpacing.lg, AppSpacing.sm + 2, AppSpacing.lg, AppSpacing.lg,
                     ),
-                    const SizedBox(height: 12),
-                    LearnNextLessonCard(
-                      nextLesson: viewModel.nextLesson,
-                      onStart: () => _openNextLesson(context, viewModel),
-                    ),
-                    if (viewModel.errorMessageKey != null) ...[
-                      const SizedBox(height: 10),
-                      Card(
-                        color: const Color(0xFFFFEFEA),
-                        child: Padding(
-                          padding: const EdgeInsets.all(12),
-                          child: Row(
-                            children: [
-                              const Icon(Icons.info_outline),
-                              const SizedBox(width: 8),
-                              Expanded(
-                                child: Text(
-                                  localizeLearnQuranMessage(
-                                    context,
-                                    viewModel.errorMessageKey!,
+                    children: [
+                      LearnHeaderCard(
+                        overallProgress: viewModel.overallProgress,
+                        completedLessons: viewModel.completedLessonCount,
+                        totalLessons: viewModel.totalLessonCount,
+                        completedModules: viewModel.completedModuleCount,
+                        totalModules: viewModel.modules.length,
+                        streakDays: viewModel.streakDays,
+                      ),
+                      const SizedBox(height: AppSpacing.md),
+                      LearnNextLessonCard(
+                        nextLesson: viewModel.nextLesson,
+                        onStart: () => _openNextLesson(context, viewModel),
+                      ),
+                      if (viewModel.errorMessageKey != null) ...[
+                        const SizedBox(height: AppSpacing.sm + 2),
+                        Card(
+                          color: AppColors.error.withValues(alpha: 0.08),
+                          child: Padding(
+                            padding: const EdgeInsets.all(AppSpacing.md),
+                            child: Row(
+                              children: [
+                                const Icon(Icons.info_outline),
+                                const SizedBox(width: AppSpacing.sm),
+                                Expanded(
+                                  child: Text(
+                                    localizeLearnQuranMessage(
+                                      context,
+                                      viewModel.errorMessageKey!,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
+                      ],
+                      const SizedBox(height: AppSpacing.lg - 2),
+                      SectionHeader(
+                        title: l10n.learnQuranTracksTitle,
+                        subtitle: l10n.learnQuranTracksSubtitle,
                       ),
+                      const SizedBox(height: AppSpacing.sm + 2),
+                      for (final module in viewModel.modules)
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
+                          child: LearnModuleCard(
+                            module: module,
+                            completedLessons: viewModel.completedLessonCountFor(
+                              module,
+                            ),
+                            onTap: () => _openModule(context, module),
+                          ),
+                        ),
                     ],
-                    const SizedBox(height: 14),
-                    Text(
-                      l10n.learnQuranTracksTitle,
-                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    const SizedBox(height: 6),
-                    Text(
-                      l10n.learnQuranTracksSubtitle,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(
-                          context,
-                        ).colorScheme.onSurface.withValues(alpha: 0.72),
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    for (final module in viewModel.modules)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10),
-                        child: LearnModuleCard(
-                          module: module,
-                          completedLessons: viewModel.completedLessonCountFor(
-                            module,
-                          ),
-                          onTap: () => _openModule(context, module),
-                        ),
-                      ),
-                  ],
+                  ),
                 ),
               ),
-            ),
-        ],
       ),
     );
   }
@@ -156,7 +138,7 @@ class _LearnQuranViewState extends State<LearnQuranView> {
 
   void _openModule(BuildContext context, LearnQuranModule module) {
     Navigator.of(context).push(
-      MaterialPageRoute<void>(
+      AppPageRoute<void>(
         builder: (_) => LearningModuleDetailView(module: module),
       ),
     );

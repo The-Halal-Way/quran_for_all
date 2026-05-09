@@ -36,8 +36,13 @@ const Map<String, String> readQuranBnContentMap = <String, String>{
   'Could not load surah': 'সূরা লোড করা যায়নি',
   'Unable to play this ayah audio right now.':
       'এই মুহূর্তে এই আয়াতের অডিও চালানো যাচ্ছে না।',
+  'Unable to play full surah audio right now.':
+      'এই মুহূর্তে পূর্ণ সূরার অডিও চালানো যাচ্ছে না।',
   'Play Full Surah': 'পূর্ণ সূরা চালান',
   'Stop Surah Audio': 'সূরার অডিও বন্ধ করুন',
+  'Notification permission is required for audio controls.':
+      'অডিও কন্ট্রোলের জন্য নোটিফিকেশন অনুমতি প্রয়োজন।',
+  'Go to settings': 'সেটিংসে যান',
   'ayahs': 'আয়াত',
   'Meccan': 'মক্কী',
   'Medinan': 'মাদানী',
@@ -48,4 +53,24 @@ const Map<String, String> readQuranBnContentMap = <String, String>{
   'No surah selected.': 'কোনো সূরা নির্বাচন করা হয়নি।',
   'Unable to load ayahs for this surah.':
       'এই সূরার আয়াতগুলো লোড করা যায়নি।',
+
+  // Settings
+  'Personalize your recitation and reading experience.':
+      'আপনার তিলাওয়াত ও পাঠ অভিজ্ঞতা ব্যক্তিগতকৃত করুন।',
+  'Reading Preferences': 'পাঠ পছন্দসমূহ',
+  'Show pronunciation': 'উচ্চারণ দেখান',
+  'Display transliteration under Arabic ayah.':
+      'আরবি আয়াতের নিচে প্রতিলিপি প্রদর্শন করুন।',
+  'Show translations': 'অনুবাদ দেখান',
+  'Display meaning in your selected language.':
+      'নির্বাচিত ভাষায় অর্থ প্রদর্শন করুন।',
+  'Language preference': 'ভাষা পছন্দ',
+  'Appearance': 'অ্যাপিয়ারেন্স',
+  'Theme': 'থিম',
+  'System': 'সিস্টেম',
+  'Light': 'লাইট',
+  'Dark': 'ডার্ক',
+  'Offline mode is enabled': 'অফলাইন মোড চালু আছে',
+  'Quran text and translations are stored locally after setup. Audio is cached after first play.':
+      'সেটআপের পরে কুরআনের লেখা ও অনুবাদ স্থানীয়ভাবে সংরক্ষিত। অডিও প্রথমবার চালানোর পরে ক্যাশ হয়।',
 };

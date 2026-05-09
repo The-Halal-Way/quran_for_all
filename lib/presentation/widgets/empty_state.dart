@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../core/theme/app_colors.dart';
+import '../../core/theme/app_spacing.dart';
+
 class EmptyState extends StatelessWidget {
   const EmptyState({
     super.key,
@@ -18,13 +21,13 @@ class EmptyState extends StatelessWidget {
 
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(AppSpacing.xxl),
         child: Container(
           constraints: const BoxConstraints(maxWidth: 420),
-          padding: const EdgeInsets.all(22),
+          padding: const EdgeInsets.all(AppSpacing.xl + 2),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(22),
-            color: Colors.white.withValues(alpha: 0.92),
+            borderRadius: BorderRadius.circular(AppRadius.xl + 2),
+            color: AppColors.surface.withValues(alpha: 0.92),
             border: Border.all(color: colorScheme.outline.withValues(alpha: 0.36)),
           ),
           child: Column(
@@ -39,7 +42,7 @@ class EmptyState extends StatelessWidget {
                 ),
                 child: Icon(icon, size: 28, color: colorScheme.primary),
               ),
-              const SizedBox(height: 14),
+              const SizedBox(height: AppSpacing.lg - 2),
               Text(
                 title,
                 textAlign: TextAlign.center,
@@ -47,7 +50,7 @@ class EmptyState extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: AppSpacing.sm),
               Text(
                 message,
                 textAlign: TextAlign.center,

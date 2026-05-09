@@ -6,15 +6,18 @@ import 'package:provider/provider.dart';
 import '../../../core/enums/playback_source.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
+import '../../../core/theme/app_spacing.dart';
 import '../../../data/models/ayah_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
 import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../viewmodels/settings_viewmodel.dart';
+import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/ayah_tile.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/read_quran/surah_details/surah_meta_card.dart';
+import '../../../services/permission_helper.dart';
 
 class SurahDetailsView extends StatefulWidget {
   const SurahDetailsView({super.key, required this.surah});
@@ -59,69 +62,61 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
 
     return Scaffold(
       appBar: AppBar(title: Text('${widget.surah.id}. ${widget.surah.nameEnglish}')),
-      body: Stack(
-        children: [
-          const Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Color(0xFFFFFCF4), Color(0xFFF2E9D8)],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
-              ),
-            ),
-          ),
-          if (viewModel.isLoading)
-            const Center(child: CircularProgressIndicator())
-          else if (viewModel.errorMessage != null)
-            EmptyState(
-              icon: Icons.error_outline,
-              title: context.readQuranText('Could not load surah'),
-              message: localizeReadQuranMessage(context, viewModel.errorMessage!),
-            )
-          else
-            Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-                  child: SurahMetaCard(
-                    surah: widget.surah,
-                    isPlayingFullSurah: viewModel.isPlayingFullSurah,
-                    onTogglePlayback: viewModel.isPlayingFullSurah
-                        ? viewModel.stopPlayback
-                        : viewModel.playFullSurah,
-                  ),
-                ),
-                Expanded(
-                  child: AppPageScrollbar(
-                    builder: (context, controller) => ListView.builder(
-                      controller: controller,
-                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                      itemCount: viewModel.ayahs.length,
-                      itemBuilder: (context, index) {
-                        final ayah = viewModel.ayahs[index];
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 10),
-                          child: AyahTile(
-                            ayah: ayah,
-                            showPronunciation: settings.showPronunciation,
-                            showTranslation: settings.showTranslation,
-                            language: settings.language,
-                            onPlay: () => unawaited(
-                              _playAyahWithFeedback(context, viewModel, ayah),
+      body: AppGradientBackground(
+        child: viewModel.isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : viewModel.errorMessage != null
+                ? EmptyState(
+                    icon: Icons.error_outline,
+                    title: context.readQuranText('Could not load surah'),
+                    message: localizeReadQuranMessage(context, viewModel.errorMessage!),
+                  )
+                : Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(
+                          AppSpacing.lg, AppSpacing.sm, AppSpacing.lg, AppSpacing.md,
+                        ),
+                        child: SurahMetaCard(
+                          surah: widget.surah,
+                          isPlayingFullSurah: viewModel.isPlayingFullSurah,
+                          onTogglePlayback: viewModel.isPlayingFullSurah
+                              ? () => unawaited(viewModel.stopPlayback())
+                              : () => unawaited(
+                                  _playFullSurahWithFeedback(context, viewModel),
+                                ),
+                        ),
+                      ),
+                      Expanded(
+                        child: AppPageScrollbar(
+                          builder: (context, controller) => ListView.builder(
+                            controller: controller,
+                            padding: const EdgeInsets.fromLTRB(
+                              AppSpacing.lg, 0, AppSpacing.lg, AppSpacing.lg,
                             ),
-                            onMarkAsLastRead: () =>
-                                viewModel.markAsLastRead(ayah),
+                            itemCount: viewModel.ayahs.length,
+                            itemBuilder: (context, index) {
+                              final ayah = viewModel.ayahs[index];
+                              return Padding(
+                                padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
+                                child: AyahTile(
+                                  ayah: ayah,
+                                  showPronunciation: settings.showPronunciation,
+                                  showTranslation: settings.showTranslation,
+                                  language: settings.language,
+                                  onPlay: () => unawaited(
+                                    _playAyahWithFeedback(context, viewModel, ayah),
+                                  ),
+                                  onMarkAsLastRead: () =>
+                                      viewModel.markAsLastRead(ayah),
+                                ),
+                              );
+                            },
                           ),
-                        );
-                      },
-                    ),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-              ],
-            ),
-        ],
       ),
     );
   }
@@ -131,6 +126,10 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
     SurahDetailsViewModel viewModel,
     AyahModel ayah,
   ) async {
+    if (!await _ensureAudioPermissionWithFeedback(context)) {
+      return;
+    }
+
     try {
       await viewModel.playAyah(ayah);
     } catch (_) {
@@ -146,5 +145,64 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
         ),
       );
     }
+  }
+
+  Future<void> _playFullSurahWithFeedback(
+    BuildContext context,
+    SurahDetailsViewModel viewModel,
+  ) async {
+    if (!await _ensureAudioPermissionWithFeedback(context)) {
+      return;
+    }
+
+    try {
+      await viewModel.playFullSurah();
+    } catch (_) {
+      if (!context.mounted) {
+        return;
+      }
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            context.readQuranText('Unable to play full surah audio right now.'),
+          ),
+        ),
+      );
+    }
+  }
+
+  Future<bool> _ensureAudioPermissionWithFeedback(BuildContext context) async {
+    final permissionHelper = context.read<PermissionHelper>();
+    final permissionResult =
+        await permissionHelper.ensureAudioControlPermissions();
+
+    if (permissionResult.allGranted) {
+      return true;
+    }
+
+    if (!context.mounted) {
+      return false;
+    }
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          context.readQuranText(
+            'Notification permission is required for audio controls.',
+          ),
+        ),
+        action: permissionResult.shouldPromptToOpenSettings
+            ? SnackBarAction(
+                label: context.readQuranText('Go to settings'),
+                onPressed: () {
+                  unawaited(permissionHelper.openSettings());
+                },
+              )
+            : null,
+      ),
+    );
+
+    return false;
   }
 }

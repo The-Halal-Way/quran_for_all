@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 
 import '../../core/enums/app_language.dart';
 import '../../data/models/app_settings.dart';
@@ -41,6 +41,12 @@ class SettingsViewModel extends ChangeNotifier {
 
   Future<void> setLanguage(AppLanguage language) async {
     _settings = _settings.copyWith(language: language);
+    notifyListeners();
+    await _settingsRepository.saveSettings(_settings);
+  }
+
+  Future<void> setThemeMode(ThemeMode mode) async {
+    _settings = _settings.copyWith(themeMode: mode);
     notifyListeners();
     await _settingsRepository.saveSettings(_settings);
   }

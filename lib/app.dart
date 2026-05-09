@@ -106,6 +106,8 @@ class QuranForAllApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: AppConstants.appName,
             theme: AppTheme.lightTheme,
+            darkTheme: AppTheme.darkTheme,
+            themeMode: settingsViewModel.settings.themeMode,
             locale: Locale(settingsViewModel.settings.language.code),
             localizationsDelegates: AppLocalizations.localizationsDelegates,
             supportedLocales: AppLocalizations.supportedLocales,

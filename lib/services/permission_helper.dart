@@ -3,12 +3,21 @@ import 'dart:io';
 import 'package:permission_handler/permission_handler.dart';
 
 class PermissionRequestResult {
-  const PermissionRequestResult(this.statuses);
+  const PermissionRequestResult(
+    this.statuses, {
+    this.previouslyRejected = const <Permission>{},
+  });
 
   final Map<Permission, PermissionStatus> statuses;
+  final Set<Permission> previouslyRejected;
 
   bool get allGranted =>
       denied.isEmpty && permanentlyDenied.isEmpty && restricted.isEmpty;
+
+  bool get shouldPromptToOpenSettings =>
+      permanentlyDenied.isNotEmpty ||
+      restricted.isNotEmpty ||
+      previouslyRejected.isNotEmpty;
 
   List<Permission> get granted => statuses.entries
       .where((entry) => _isEffectivelyGranted(entry.value))
@@ -52,6 +61,8 @@ class PermissionRequestResult {
 class PermissionHelper {
   const PermissionHelper();
 
+  static final Set<Permission> _rejectedPermissions = <Permission>{};
+
   Future<PermissionStatus> getStatus(Permission permission) {
     return permission.status;
   }
@@ -64,10 +75,25 @@ class PermissionHelper {
   Future<PermissionStatus> requestPermission(Permission permission) async {
     final currentStatus = await permission.status;
     if (_isEffectivelyGranted(currentStatus)) {
+      _updateRejectionHistoryFor(permission, currentStatus);
       return currentStatus;
     }
 
-    return permission.request();
+    if (currentStatus.isPermanentlyDenied || currentStatus.isRestricted) {
+      _updateRejectionHistoryFor(permission, currentStatus);
+      return currentStatus;
+    }
+
+    // If this permission was already rejected before, skip another OS prompt
+    // and let the caller surface a settings action immediately.
+    if (await _isPreviouslyRejected(permission, currentStatus)) {
+      _updateRejectionHistoryFor(permission, currentStatus);
+      return currentStatus;
+    }
+
+    final requestedStatus = await permission.request();
+    _updateRejectionHistoryFor(permission, requestedStatus);
+    return requestedStatus;
   }
 
   Future<Map<Permission, PermissionStatus>> requestPermissions(
@@ -84,6 +110,12 @@ class PermissionHelper {
       final currentStatus = await permission.status;
       if (_isEffectivelyGranted(currentStatus)) {
         statuses[permission] = currentStatus;
+      } else if (currentStatus.isPermanentlyDenied ||
+          currentStatus.isRestricted) {
+        statuses[permission] = currentStatus;
+      } else if (await _isPreviouslyRejected(permission, currentStatus)) {
+        // Respect previously rejected permissions and avoid re-prompting.
+        statuses[permission] = currentStatus;
       } else {
         toRequest.add(permission);
       }
@@ -93,14 +125,28 @@ class PermissionHelper {
       statuses.addAll(await toRequest.request());
     }
 
+    _updateRejectionHistory(statuses);
+
     return statuses;
   }
 
   Future<PermissionRequestResult> requestWithSummary(
     List<Permission> permissions,
   ) async {
-    final statuses = await requestPermissions(permissions);
-    return PermissionRequestResult(statuses);
+    final uniquePermissions = permissions.toSet().toList(growable: false);
+    final previouslyRejected = <Permission>{};
+    for (final permission in uniquePermissions) {
+      final currentStatus = await permission.status;
+      if (await _isPreviouslyRejected(permission, currentStatus)) {
+        previouslyRejected.add(permission);
+      }
+    }
+    final statuses = await requestPermissions(uniquePermissions);
+
+    return PermissionRequestResult(
+      statuses,
+      previouslyRejected: Set.unmodifiable(previouslyRejected),
+    );
   }
 
   Future<PermissionRequestResult> ensureAudioControlPermissions() {
@@ -116,6 +162,50 @@ class PermissionHelper {
 
   Future<bool> openSettings() {
     return openAppSettings();
+  }
+
+  void _updateRejectionHistory(Map<Permission, PermissionStatus> statuses) {
+    for (final entry in statuses.entries) {
+      _updateRejectionHistoryFor(entry.key, entry.value);
+    }
+  }
+
+  void _updateRejectionHistoryFor(
+    Permission permission,
+    PermissionStatus status,
+  ) {
+    if (_isEffectivelyGranted(status)) {
+      _rejectedPermissions.remove(permission);
+      return;
+    }
+
+    if (status.isDenied || status.isPermanentlyDenied || status.isRestricted) {
+      _rejectedPermissions.add(permission);
+    }
+  }
+
+  Future<bool> _isPreviouslyRejected(
+    Permission permission,
+    PermissionStatus status,
+  ) async {
+    if (_rejectedPermissions.contains(permission)) {
+      return true;
+    }
+
+    // Android can tell if user denied this permission before, even after
+    // process restarts. Use this to keep "next attempt -> settings" behavior
+    // consistent on Android 13+ devices.
+    if (!Platform.isAndroid || !status.isDenied) {
+      return false;
+    }
+
+    final shouldShowRationale =
+        await permission.shouldShowRequestRationale;
+    if (shouldShowRationale) {
+      _rejectedPermissions.add(permission);
+    }
+
+    return shouldShowRationale;
   }
 
   bool _isEffectivelyGranted(PermissionStatus status) {

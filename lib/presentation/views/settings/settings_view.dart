@@ -1,80 +1,81 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_spacing.dart';
 import '../../viewmodels/settings_viewmodel.dart';
+import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/settings/settings_offline_card.dart';
 import '../../widgets/settings/settings_preferences_card.dart';
+import '../../widgets/settings/settings_theme_card.dart';
 
 class SettingsView extends StatelessWidget {
-  const SettingsView({super.key});
+  const SettingsView({super.key, this.embedded = false});
+
+  /// When true, shown inside bottom nav – no AppBar.
+  final bool embedded;
 
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<SettingsViewModel>();
+    final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Settings')),
-      body: Stack(
-        children: [
-          const Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Color(0xFFFFFCF4), Color(0xFFF1E8D6)],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
+      appBar: embedded
+          ? AppBar(title: Text(context.readQuranText('Settings')))
+          : AppBar(title: Text(context.readQuranText('Settings'))),
+      body: AppGradientBackground(
+        child: viewModel.isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : AppPageScrollbar(
+                builder: (context, controller) => ListView(
+                  controller: controller,
+                  padding: const EdgeInsets.all(AppSpacing.lg),
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(AppSpacing.lg),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(AppRadius.lg),
+                        color: colorScheme.primary.withValues(alpha: 0.08),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.auto_awesome_rounded,
+                            color: colorScheme.primary,
+                          ),
+                          const SizedBox(width: AppSpacing.sm + 2),
+                          Expanded(
+                            child: Text(
+                              context.readQuranText(
+                                'Personalize your recitation and reading experience.',
+                              ),
+                              style: Theme.of(context).textTheme.bodyMedium,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: AppSpacing.md),
+                    SettingsPreferencesCard(
+                      showPronunciation: viewModel.settings.showPronunciation,
+                      showTranslation: viewModel.settings.showTranslation,
+                      language: viewModel.settings.language,
+                      onShowPronunciationChanged: viewModel.setShowPronunciation,
+                      onShowTranslationChanged: viewModel.setShowTranslation,
+                      onLanguageChanged: viewModel.setLanguage,
+                    ),
+                    const SizedBox(height: AppSpacing.md),
+                    SettingsThemeCard(
+                      themeMode: viewModel.settings.themeMode,
+                      onThemeModeChanged: viewModel.setThemeMode,
+                    ),
+                    const SizedBox(height: AppSpacing.md),
+                    const SettingsOfflineCard(),
+                  ],
                 ),
               ),
-            ),
-          ),
-          if (viewModel.isLoading)
-            const Center(child: CircularProgressIndicator())
-          else
-            AppPageScrollbar(
-              builder: (context, controller) => ListView(
-                controller: controller,
-                padding: const EdgeInsets.all(16),
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Theme.of(
-                        context,
-                      ).colorScheme.primary.withValues(alpha: 0.1),
-                    ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.auto_awesome_rounded,
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Text(
-                            'Personalize your recitation and reading experience.',
-                            style: Theme.of(context).textTheme.bodyMedium,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  SettingsPreferencesCard(
-                    showPronunciation: viewModel.settings.showPronunciation,
-                    showTranslation: viewModel.settings.showTranslation,
-                    language: viewModel.settings.language,
-                    onShowPronunciationChanged: viewModel.setShowPronunciation,
-                    onShowTranslationChanged: viewModel.setShowTranslation,
-                    onLanguageChanged: viewModel.setLanguage,
-                  ),
-                  const SizedBox(height: 12),
-                  const SettingsOfflineCard(),
-                ],
-              ),
-            ),
-        ],
       ),
     );
   }

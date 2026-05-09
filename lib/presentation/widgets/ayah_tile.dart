@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/enums/app_language.dart';
+import '../../core/theme/app_spacing.dart';
+import '../../core/theme/app_text_styles.dart';
 import '../../data/models/ayah_model.dart';
 
 class AyahTile extends StatelessWidget {
@@ -33,19 +34,18 @@ class AyahTile extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Card(
-      color: Colors.white.withValues(alpha: 0.95),
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  padding: const EdgeInsets.symmetric(horizontal: AppSpacing.sm + 2, vertical: AppSpacing.sm - 2),
                   decoration: BoxDecoration(
                     color: colorScheme.secondary.withValues(alpha: 0.16),
-                    borderRadius: BorderRadius.circular(99),
+                    borderRadius: BorderRadius.circular(AppRadius.full),
                   ),
                   child: Text(
                     '${ayah.surahId}:${ayah.ayahNumber}',
@@ -55,12 +55,12 @@ class AyahTile extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: AppSpacing.sm),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+                  padding: const EdgeInsets.symmetric(horizontal: AppSpacing.sm, vertical: AppSpacing.xs + 1),
                   decoration: BoxDecoration(
                     color: colorScheme.primary.withValues(alpha: 0.1),
-                    borderRadius: BorderRadius.circular(99),
+                    borderRadius: BorderRadius.circular(AppRadius.full),
                   ),
                   child: Text(
                     'Juz ${ayah.juzNumber}',
@@ -83,19 +83,15 @@ class AyahTile extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: AppSpacing.sm + 2),
             Text(
               ayah.arabicText,
               textAlign: TextAlign.right,
               textDirection: TextDirection.rtl,
-              style: GoogleFonts.amiri(
-                fontSize: 32,
-                height: 1.8,
-                color: const Color(0xFF112A23),
-              ),
+              style: AppTextStyles.quranArabic(context),
             ),
             if (showPronunciation && transliteration.isNotEmpty) ...[
-              const SizedBox(height: 8),
+              const SizedBox(height: AppSpacing.sm),
               Text(
                 transliteration,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -105,7 +101,7 @@ class AyahTile extends StatelessWidget {
               ),
             ],
             if (showTranslation && translation.isNotEmpty) ...[
-              const SizedBox(height: 12),
+              const SizedBox(height: AppSpacing.md),
               _TranslationLine(label: translationLabel, text: translation),
             ],
           ],
@@ -129,11 +125,11 @@ class _TranslationLine extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          margin: const EdgeInsets.only(top: 4),
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+          margin: const EdgeInsets.only(top: AppSpacing.xs),
+          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.sm, vertical: AppSpacing.xs - 1),
           decoration: BoxDecoration(
             color: colorScheme.primary.withValues(alpha: 0.12),
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(AppRadius.xs),
           ),
           child: Text(
             label,
@@ -144,7 +140,7 @@ class _TranslationLine extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(width: AppSpacing.sm + 2),
         Expanded(
           child: Text(
             text,

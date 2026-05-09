@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/theme/app_colors.dart';
+
 class SplashBranding extends StatelessWidget {
   const SplashBranding({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-
     return TweenAnimationBuilder<double>(
       duration: const Duration(milliseconds: 850),
       curve: Curves.easeOutCubic,
@@ -20,19 +20,19 @@ class SplashBranding extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            width: 116,
-            height: 116,
+            width: 120,
+            height: 120,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              gradient: LinearGradient(
-                colors: [colorScheme.secondary, colorScheme.primary],
+              gradient: const LinearGradient(
+                colors: [AppColors.secondaryLight, AppColors.primaryLight],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
               boxShadow: [
                 BoxShadow(
-                  color: colorScheme.primary.withValues(alpha: 0.38),
-                  blurRadius: 26,
+                  color: AppColors.primary.withValues(alpha: 0.35),
+                  blurRadius: 30,
                   offset: const Offset(0, 14),
                 ),
               ],
@@ -43,12 +43,13 @@ class SplashBranding extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 20),
           Text(
             'Quran For All',
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.white,
               fontWeight: FontWeight.w700,
+              letterSpacing: -0.3,
             ),
           ),
           const SizedBox(height: 10),
@@ -56,7 +57,7 @@ class SplashBranding extends StatelessWidget {
             'Read with calm focus, search in seconds, and continue where you paused.',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: Colors.white.withValues(alpha: 0.9),
+              color: Colors.white.withValues(alpha: 0.88),
             ),
           ),
         ],
