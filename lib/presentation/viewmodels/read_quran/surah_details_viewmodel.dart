@@ -26,6 +26,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
   bool _isPlayingFullSurah = false;
   String? _errorMessage;
   List<AyahModel> _ayahs = const [];
+  Set<int> _bookmarkedAyahNumbers = const <int>{};
   int _loadRequestId = 0;
 
   SurahModel? get surah => _surah;
@@ -33,6 +34,11 @@ class SurahDetailsViewModel extends ChangeNotifier {
   bool get isPlayingFullSurah => _isPlayingFullSurah;
   String? get errorMessage => _errorMessage;
   List<AyahModel> get ayahs => _ayahs;
+  Set<int> get bookmarkedAyahNumbers => _bookmarkedAyahNumbers;
+
+  bool isAyahBookmarked(int ayahNumber) {
+    return _bookmarkedAyahNumbers.contains(ayahNumber);
+  }
 
   Future<void> openSurah(SurahModel surah) async {
     _surah = surah;
@@ -56,17 +62,22 @@ class SurahDetailsViewModel extends ChangeNotifier {
 
     try {
       final ayahs = await _quranRepository.getAyahsBySurah(selectedSurah.id);
+      final bookmarkedAyahs = await _quranRepository.getBookmarkedAyahNumbers(
+        selectedSurah.id,
+      );
       if (requestId != _loadRequestId) {
         return;
       }
 
       _ayahs = ayahs;
+      _bookmarkedAyahNumbers = bookmarkedAyahs;
     } catch (_) {
       if (requestId != _loadRequestId) {
         return;
       }
 
       _errorMessage = ReadQuranMessageKeys.unableLoadAyahs;
+      _bookmarkedAyahNumbers = const <int>{};
     }
 
     if (requestId != _loadRequestId) {
@@ -126,5 +137,21 @@ class SurahDetailsViewModel extends ChangeNotifier {
 
   Future<void> markAsLastRead(AyahModel ayah) {
     return _quranRepository.saveLastRead(ayah.surahId, ayah.ayahNumber);
+  }
+
+  Future<void> toggleAyahBookmark(AyahModel ayah) async {
+    final isBookmarked = _bookmarkedAyahNumbers.contains(ayah.ayahNumber);
+
+    if (isBookmarked) {
+      await _quranRepository.removeAyahBookmark(ayah.surahId, ayah.ayahNumber);
+      _bookmarkedAyahNumbers = Set<int>.from(_bookmarkedAyahNumbers)
+        ..remove(ayah.ayahNumber);
+    } else {
+      await _quranRepository.addAyahBookmark(ayah.surahId, ayah.ayahNumber);
+      _bookmarkedAyahNumbers = Set<int>.from(_bookmarkedAyahNumbers)
+        ..add(ayah.ayahNumber);
+    }
+
+    notifyListeners();
   }
 }

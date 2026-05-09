@@ -20,9 +20,14 @@ import '../../widgets/read_quran/surah_details/surah_meta_card.dart';
 import '../../../services/permission_helper.dart';
 
 class SurahDetailsView extends StatefulWidget {
-  const SurahDetailsView({super.key, required this.surah});
+  const SurahDetailsView({
+    super.key,
+    required this.surah,
+    this.initialAyahNumber,
+  });
 
   final SurahModel surah;
+  final int? initialAyahNumber;
 
   @override
   State<SurahDetailsView> createState() => _SurahDetailsViewState();
@@ -30,6 +35,9 @@ class SurahDetailsView extends StatefulWidget {
 
 class _SurahDetailsViewState extends State<SurahDetailsView> {
   late AudioControlViewModel _audioControlVm;
+  late int? _pendingAyahNumber;
+  int? _highlightedAyahNumber;
+  final Map<int, GlobalKey> _ayahKeys = <int, GlobalKey>{};
 
   @override
   void didChangeDependencies() {
@@ -40,6 +48,8 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
   @override
   void initState() {
     super.initState();
+    _pendingAyahNumber = widget.initialAyahNumber;
+
     // Tell the mini-player that this page is now active so it hides itself
     // while the user is on the source page.
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -60,63 +70,114 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
     final viewModel = context.watch<SurahDetailsViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
 
+    if (!viewModel.isLoading) {
+      _maybeRevealAyah(viewModel);
+    }
+
     return Scaffold(
-      appBar: AppBar(title: Text('${widget.surah.id}. ${widget.surah.nameEnglish}')),
+      appBar: AppBar(
+        title: Text('${widget.surah.id}. ${widget.surah.nameEnglish}'),
+      ),
       body: AppGradientBackground(
         child: viewModel.isLoading
             ? const Center(child: CircularProgressIndicator())
             : viewModel.errorMessage != null
-                ? EmptyState(
-                    icon: Icons.error_outline,
-                    title: context.readQuranText('Could not load surah'),
-                    message: localizeReadQuranMessage(context, viewModel.errorMessage!),
-                  )
-                : Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(
-                          AppSpacing.lg, AppSpacing.sm, AppSpacing.lg, AppSpacing.md,
-                        ),
-                        child: SurahMetaCard(
-                          surah: widget.surah,
-                          isPlayingFullSurah: viewModel.isPlayingFullSurah,
-                          onTogglePlayback: viewModel.isPlayingFullSurah
-                              ? () => unawaited(viewModel.stopPlayback())
-                              : () => unawaited(
-                                  _playFullSurahWithFeedback(context, viewModel),
-                                ),
-                        ),
-                      ),
-                      Expanded(
-                        child: AppPageScrollbar(
-                          builder: (context, controller) => ListView.builder(
-                            controller: controller,
-                            padding: const EdgeInsets.fromLTRB(
-                              AppSpacing.lg, 0, AppSpacing.lg, AppSpacing.lg,
+            ? EmptyState(
+                icon: Icons.error_outline,
+                title: context.readQuranText('Could not load surah'),
+                message: localizeReadQuranMessage(
+                  context,
+                  viewModel.errorMessage!,
+                ),
+              )
+            : Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpacing.lg,
+                      AppSpacing.sm,
+                      AppSpacing.lg,
+                      AppSpacing.md,
+                    ),
+                    child: SurahMetaCard(
+                      surah: widget.surah,
+                      isPlayingFullSurah: viewModel.isPlayingFullSurah,
+                      onTogglePlayback: viewModel.isPlayingFullSurah
+                          ? () => unawaited(viewModel.stopPlayback())
+                          : () => unawaited(
+                              _playFullSurahWithFeedback(context, viewModel),
                             ),
-                            itemCount: viewModel.ayahs.length,
-                            itemBuilder: (context, index) {
-                              final ayah = viewModel.ayahs[index];
-                              return Padding(
-                                padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
+                    ),
+                  ),
+                  Expanded(
+                    child: AppPageScrollbar(
+                      builder: (context, controller) => ListView(
+                        controller: controller,
+                        padding: const EdgeInsets.fromLTRB(
+                          AppSpacing.lg,
+                          0,
+                          AppSpacing.lg,
+                          AppSpacing.lg,
+                        ),
+                        children: [
+                          for (final ayah in viewModel.ayahs)
+                            Padding(
+                              key: _ayahKeyFor(ayah.ayahNumber),
+                              padding: const EdgeInsets.only(
+                                bottom: AppSpacing.sm + 2,
+                              ),
+                              child: AnimatedContainer(
+                                duration: const Duration(milliseconds: 250),
+                                curve: Curves.easeOut,
+                                decoration: BoxDecoration(
+                                  color:
+                                      ayah.ayahNumber == _highlightedAyahNumber
+                                      ? Theme.of(context).colorScheme.primary
+                                            .withValues(alpha: 0.08)
+                                      : null,
+                                  borderRadius: BorderRadius.circular(
+                                    AppRadius.lg,
+                                  ),
+                                  border:
+                                      ayah.ayahNumber == _highlightedAyahNumber
+                                      ? Border.all(
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .primary
+                                              .withValues(alpha: 0.42),
+                                          width: 1.2,
+                                        )
+                                      : null,
+                                ),
                                 child: AyahTile(
                                   ayah: ayah,
                                   showPronunciation: settings.showPronunciation,
                                   showTranslation: settings.showTranslation,
                                   language: settings.language,
+                                  isBookmarked: viewModel.isAyahBookmarked(
+                                    ayah.ayahNumber,
+                                  ),
                                   onPlay: () => unawaited(
-                                    _playAyahWithFeedback(context, viewModel, ayah),
+                                    _playAyahWithFeedback(
+                                      context,
+                                      viewModel,
+                                      ayah,
+                                    ),
+                                  ),
+                                  onToggleBookmark: () => unawaited(
+                                    viewModel.toggleAyahBookmark(ayah),
                                   ),
                                   onMarkAsLastRead: () =>
-                                      viewModel.markAsLastRead(ayah),
+                                      unawaited(viewModel.markAsLastRead(ayah)),
                                 ),
-                              );
-                            },
-                          ),
-                        ),
+                              ),
+                            ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
+                ],
+              ),
       ),
     );
   }
@@ -174,8 +235,8 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
 
   Future<bool> _ensureAudioPermissionWithFeedback(BuildContext context) async {
     final permissionHelper = context.read<PermissionHelper>();
-    final permissionResult =
-        await permissionHelper.ensureAudioControlPermissions();
+    final permissionResult = await permissionHelper
+        .ensureAudioControlPermissions();
 
     if (permissionResult.allGranted) {
       return true;
@@ -204,5 +265,57 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
     );
 
     return false;
+  }
+
+  GlobalKey _ayahKeyFor(int ayahNumber) {
+    return _ayahKeys.putIfAbsent(ayahNumber, GlobalKey.new);
+  }
+
+  void _maybeRevealAyah(SurahDetailsViewModel viewModel) {
+    final targetAyahNumber = _pendingAyahNumber;
+    if (targetAyahNumber == null) {
+      return;
+    }
+
+    final hasTargetAyah = viewModel.ayahs.any(
+      (ayah) => ayah.ayahNumber == targetAyahNumber,
+    );
+    if (!hasTargetAyah) {
+      _pendingAyahNumber = null;
+      return;
+    }
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || _pendingAyahNumber != targetAyahNumber) {
+        return;
+      }
+
+      final targetContext = _ayahKeys[targetAyahNumber]?.currentContext;
+      if (targetContext == null) {
+        return;
+      }
+
+      Scrollable.ensureVisible(
+        targetContext,
+        duration: const Duration(milliseconds: 360),
+        curve: Curves.easeOutCubic,
+        alignment: 0.15,
+      );
+
+      setState(() {
+        _highlightedAyahNumber = targetAyahNumber;
+        _pendingAyahNumber = null;
+      });
+
+      Future<void>.delayed(const Duration(seconds: 2), () {
+        if (!mounted || _highlightedAyahNumber != targetAyahNumber) {
+          return;
+        }
+
+        setState(() {
+          _highlightedAyahNumber = null;
+        });
+      });
+    });
   }
 }

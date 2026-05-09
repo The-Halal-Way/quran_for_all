@@ -7,6 +7,7 @@ import '../../../core/enums/app_language.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../data/models/surah_model.dart';
+import '../../viewmodels/read_quran/bookmarks_viewmodel.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../viewmodels/read_quran/search_viewmodel.dart';
 import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
@@ -18,6 +19,7 @@ import '../../widgets/read_quran/home/continue_reading_card.dart';
 import '../../widgets/read_quran/home/read_quran_top_banner.dart';
 import '../../widgets/read_quran/home/surah_card.dart';
 import '../../../core/utils/app_page_route.dart';
+import 'bookmarks_view.dart';
 import 'search_view.dart';
 import 'surah_details_view.dart';
 
@@ -31,9 +33,8 @@ class ReadQuranView extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     final isBangla = settings.language == AppLanguage.bangla;
     final banglaPreview = viewModel.lastReadAyah?.translationBn;
-    final ayahPreview = isBangla &&
-            banglaPreview != null &&
-            banglaPreview.trim().isNotEmpty
+    final ayahPreview =
+        isBangla && banglaPreview != null && banglaPreview.trim().isNotEmpty
         ? banglaPreview
         : viewModel.lastReadAyah?.translationEn;
 
@@ -55,6 +56,11 @@ class ReadQuranView extends StatelessWidget {
           ],
         ),
         actions: [
+          IconButton(
+            onPressed: () => _openBookmarks(context),
+            icon: const Icon(Icons.bookmarks_rounded),
+            tooltip: context.readQuranText('Bookmarks'),
+          ),
           IconButton.filledTonal(
             onPressed: () => _openSearch(context),
             icon: const Icon(Icons.search_rounded),
@@ -72,7 +78,10 @@ class ReadQuranView extends StatelessWidget {
                     controller: controller,
                     physics: const AlwaysScrollableScrollPhysics(),
                     padding: const EdgeInsets.fromLTRB(
-                      AppSpacing.lg, AppSpacing.sm + 2, AppSpacing.lg, AppSpacing.lg,
+                      AppSpacing.lg,
+                      AppSpacing.sm + 2,
+                      AppSpacing.lg,
+                      AppSpacing.lg,
                     ),
                     children: [
                       ReadQuranTopBanner(
@@ -103,10 +112,15 @@ class ReadQuranView extends StatelessWidget {
                       const SizedBox(height: AppSpacing.sm + 2),
                       for (final surah in viewModel.surahs)
                         Padding(
-                          padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
+                          padding: const EdgeInsets.only(
+                            bottom: AppSpacing.sm + 2,
+                          ),
                           child: SurahCard(
                             surah: surah,
                             onTap: () => _openSurah(context, surah),
+                            isBookmarked: viewModel.isSurahBookmarked(surah.id),
+                            onToggleBookmark: () =>
+                                unawaited(viewModel.toggleSurahBookmark(surah)),
                           ),
                         ),
                     ],
@@ -125,11 +139,19 @@ class ReadQuranView extends StatelessWidget {
     ).push(AppPageRoute<void>(builder: (_) => const SearchView()));
   }
 
+  void _openBookmarks(BuildContext context) {
+    unawaited(context.read<BookmarksViewModel>().load());
+
+    Navigator.of(
+      context,
+    ).push(AppPageRoute<void>(builder: (_) => const BookmarksView()));
+  }
+
   void _openSurah(BuildContext context, SurahModel surah) {
     unawaited(context.read<SurahDetailsViewModel>().openSurah(surah));
 
-    Navigator.of(context).push(
-      AppPageRoute<void>(builder: (_) => SurahDetailsView(surah: surah)),
-    );
+    Navigator.of(
+      context,
+    ).push(AppPageRoute<void>(builder: (_) => SurahDetailsView(surah: surah)));
   }
 }

@@ -56,7 +56,10 @@ class _SearchViewState extends State<SearchView> {
           children: [
             Padding(
               padding: const EdgeInsets.fromLTRB(
-                AppSpacing.lg, AppSpacing.sm + 2, AppSpacing.lg, AppSpacing.md,
+                AppSpacing.lg,
+                AppSpacing.sm + 2,
+                AppSpacing.lg,
+                AppSpacing.md,
               ),
               child: SearchQueryPanel(
                 controller: _controller,
@@ -117,8 +120,7 @@ class _SearchViewState extends State<SearchView> {
                         return SearchResultTile(
                           result: result,
                           translationLanguage: settings.language,
-                          onTap: () =>
-                              _openResult(context, result, viewModel),
+                          onTap: () => _openResult(context, result, viewModel),
                         );
                       },
                     ),
@@ -138,6 +140,7 @@ class _SearchViewState extends State<SearchView> {
     SearchViewModel searchViewModel,
   ) {
     final SurahModel? surah;
+    int? initialAyahNumber;
 
     if (result.type == SearchResultType.surah) {
       surah = result.surah;
@@ -147,6 +150,7 @@ class _SearchViewState extends State<SearchView> {
         return;
       }
       surah = searchViewModel.surahById(ayah.surahId);
+      initialAyahNumber = ayah.ayahNumber;
     }
 
     if (surah == null) {
@@ -163,7 +167,10 @@ class _SearchViewState extends State<SearchView> {
 
     Navigator.of(context).push(
       AppPageRoute<void>(
-        builder: (_) => SurahDetailsView(surah: selectedSurah),
+        builder: (_) => SurahDetailsView(
+          surah: selectedSurah,
+          initialAyahNumber: initialAyahNumber,
+        ),
       ),
     );
   }

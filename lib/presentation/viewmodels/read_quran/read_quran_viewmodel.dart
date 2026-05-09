@@ -14,11 +14,15 @@ class ReadQuranViewModel extends ChangeNotifier {
   List<SurahModel> _surahs = const [];
   LastReadModel? _lastRead;
   AyahModel? _lastReadAyah;
+  Set<int> _bookmarkedSurahIds = const <int>{};
 
   bool get isLoading => _isLoading;
   List<SurahModel> get surahs => _surahs;
   LastReadModel? get lastRead => _lastRead;
   AyahModel? get lastReadAyah => _lastReadAyah;
+  Set<int> get bookmarkedSurahIds => _bookmarkedSurahIds;
+
+  bool isSurahBookmarked(int surahId) => _bookmarkedSurahIds.contains(surahId);
 
   SurahModel? get lastReadSurah {
     final read = _lastRead;
@@ -41,6 +45,7 @@ class ReadQuranViewModel extends ChangeNotifier {
 
     _surahs = await _quranRepository.getAllSurahs();
     _lastRead = await _quranRepository.getLastRead();
+    _bookmarkedSurahIds = await _quranRepository.getBookmarkedSurahIds();
 
     final read = _lastRead;
     if (read != null) {
@@ -48,9 +53,26 @@ class ReadQuranViewModel extends ChangeNotifier {
         read.surahId,
         read.ayahNumber,
       );
+    } else {
+      _lastReadAyah = null;
     }
 
     _isLoading = false;
+    notifyListeners();
+  }
+
+  Future<void> toggleSurahBookmark(SurahModel surah) async {
+    final isBookmarked = _bookmarkedSurahIds.contains(surah.id);
+
+    if (isBookmarked) {
+      await _quranRepository.removeSurahBookmark(surah.id);
+      _bookmarkedSurahIds = Set<int>.from(_bookmarkedSurahIds)
+        ..remove(surah.id);
+    } else {
+      await _quranRepository.addSurahBookmark(surah.id);
+      _bookmarkedSurahIds = Set<int>.from(_bookmarkedSurahIds)..add(surah.id);
+    }
+
     notifyListeners();
   }
 }

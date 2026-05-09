@@ -2,6 +2,7 @@ import '../../core/constants/app_constants.dart';
 import '../../data/datasources/local/app_database.dart';
 import '../../data/datasources/remote/quran_api_service.dart';
 import '../../data/models/ayah_model.dart';
+import '../../data/models/bookmark_model.dart';
 import '../../data/models/last_read_model.dart';
 import '../../data/models/search_result_model.dart';
 import '../../data/models/surah_model.dart';
@@ -118,6 +119,61 @@ class QuranRepositoryImpl implements QuranRepository {
   @override
   Future<LastReadModel?> getLastRead() {
     return _database.getLastRead();
+  }
+
+  @override
+  Future<void> addSurahBookmark(int surahId) {
+    return _database.addBookmark(BookmarkModel.surah(surahId: surahId));
+  }
+
+  @override
+  Future<void> removeSurahBookmark(int surahId) {
+    return _database.removeBookmark(BookmarkType.surah, surahId: surahId);
+  }
+
+  @override
+  Future<bool> isSurahBookmarked(int surahId) {
+    return _database.isBookmarked(BookmarkType.surah, surahId: surahId);
+  }
+
+  @override
+  Future<Set<int>> getBookmarkedSurahIds() {
+    return _database.getBookmarkedSurahIds();
+  }
+
+  @override
+  Future<void> addAyahBookmark(int surahId, int ayahNumber) {
+    return _database.addBookmark(
+      BookmarkModel.ayah(surahId: surahId, ayahNumber: ayahNumber),
+    );
+  }
+
+  @override
+  Future<void> removeAyahBookmark(int surahId, int ayahNumber) {
+    return _database.removeBookmark(
+      BookmarkType.ayah,
+      surahId: surahId,
+      ayahNumber: ayahNumber,
+    );
+  }
+
+  @override
+  Future<bool> isAyahBookmarked(int surahId, int ayahNumber) {
+    return _database.isBookmarked(
+      BookmarkType.ayah,
+      surahId: surahId,
+      ayahNumber: ayahNumber,
+    );
+  }
+
+  @override
+  Future<Set<int>> getBookmarkedAyahNumbers(int surahId) {
+    return _database.getBookmarkedAyahNumbers(surahId);
+  }
+
+  @override
+  Future<List<BookmarkModel>> getBookmarks() {
+    return _database.getBookmarks();
   }
 
   @override

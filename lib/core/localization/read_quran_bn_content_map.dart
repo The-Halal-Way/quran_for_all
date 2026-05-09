@@ -5,9 +5,16 @@ const Map<String, String> readQuranBnContentMap = <String, String>{
   'Search': 'খুঁজুন',
   'Settings': 'সেটিংস',
   'All Surahs': 'সব সূরা',
+  'Surah': 'সূরা',
   'total': 'মোট',
   'Continue Reading': 'পড়া চালিয়ে যান',
   'Ayah': 'আয়াত',
+  'Bookmarks': 'বুকমার্কসমূহ',
+  'Save ayah bookmark': 'আয়াত বুকমার্ক করুন',
+  'Remove ayah bookmark': 'আয়াত বুকমার্ক সরান',
+  'Mark ayah as last read': 'শেষ পড়া হিসেবে আয়াত চিহ্নিত করুন',
+  'Save surah bookmark': 'সূরা বুকমার্ক করুন',
+  'Remove surah bookmark': 'সূরা বুকমার্ক সরান',
 
   // Banner and summary
   'Read. Reflect. Remember.': 'পড়ুন। ভাবুন। মনে রাখুন।',
@@ -27,10 +34,16 @@ const Map<String, String> readQuranBnContentMap = <String, String>{
   'Try a shorter keyword or a direct ayah reference.':
       'ছোট কীওয়ার্ড বা সরাসরি আয়াত রেফারেন্স ব্যবহার করুন।',
   'Could not open this result.': 'এই ফলাফল খোলা যায়নি।',
+  'Could not open this bookmark.': 'এই বুকমার্ক খোলা যায়নি।',
   'Try: Al-Baqarah, 2:255, para 1, mercy':
       'চেষ্টা করুন: Al-Baqarah, 2:255, para 1, mercy',
   'Searching...': 'অনুসন্ধান চলছে...',
   'Results': 'ফলাফল',
+  'Could not load bookmarks': 'বুকমার্ক লোড করা যায়নি',
+  'No bookmarks yet': 'এখনও কোনো বুকমার্ক নেই',
+  'Save ayah or surah bookmarks to find them quickly later.':
+      'পরে দ্রুত খুঁজে পেতে আয়াত বা সূরা বুকমার্ক করে রাখুন।',
+  'Saved bookmark': 'সংরক্ষিত বুকমার্ক',
 
   // Surah details
   'Could not load surah': 'সূরা লোড করা যায়নি',
@@ -51,8 +64,9 @@ const Map<String, String> readQuranBnContentMap = <String, String>{
   'Search failed. Please try again.':
       'অনুসন্ধান ব্যর্থ হয়েছে। আবার চেষ্টা করুন।',
   'No surah selected.': 'কোনো সূরা নির্বাচন করা হয়নি।',
-  'Unable to load ayahs for this surah.':
-      'এই সূরার আয়াতগুলো লোড করা যায়নি।',
+  'Unable to load ayahs for this surah.': 'এই সূরার আয়াতগুলো লোড করা যায়নি।',
+  'Unable to load bookmarks right now.':
+      'এই মুহূর্তে বুকমার্ক লোড করা যাচ্ছে না।',
 
   // Settings
   'Personalize your recitation and reading experience.':

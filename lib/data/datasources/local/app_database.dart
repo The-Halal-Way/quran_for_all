@@ -4,6 +4,7 @@ import 'package:sqflite/sqflite.dart';
 import '../../../core/constants/db_constants.dart';
 import '../../../core/utils/string_utils.dart';
 import '../../models/ayah_model.dart';
+import '../../models/bookmark_model.dart';
 import '../../models/last_read_model.dart';
 import '../../models/surah_model.dart';
 
@@ -22,6 +23,7 @@ class AppDatabase {
       fullPath,
       version: DbConstants.databaseVersion,
       onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
     );
   }
 
@@ -64,6 +66,8 @@ class AppDatabase {
       )
     ''');
 
+    await _createBookmarksTable(db);
+
     await db.execute('''
       CREATE VIRTUAL TABLE ${DbConstants.tableAyahFts}
       USING fts4(ayah_id, content)
@@ -74,6 +78,37 @@ class AppDatabase {
     );
     await db.execute(
       'CREATE INDEX idx_ayah_juz ON ${DbConstants.tableAyahs}(juz_number)',
+    );
+  }
+
+  Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 2) {
+      await _createBookmarksTable(db);
+    }
+  }
+
+  Future<void> _createBookmarksTable(Database db) async {
+    await db.execute('''
+      CREATE TABLE IF NOT EXISTS ${DbConstants.tableBookmarks} (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        type TEXT NOT NULL,
+        surah_id INTEGER NOT NULL,
+        ayah_number INTEGER NOT NULL DEFAULT 0,
+        created_at INTEGER NOT NULL,
+        CHECK (type IN ('surah', 'ayah')),
+        CHECK (
+          (type = 'surah' AND ayah_number = 0) OR
+          (type = 'ayah' AND ayah_number > 0)
+        ),
+        UNIQUE(type, surah_id, ayah_number)
+      )
+    ''');
+
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_bookmarks_type_time ON ${DbConstants.tableBookmarks}(type, created_at DESC)',
+    );
+    await db.execute(
+      'CREATE INDEX IF NOT EXISTS idx_bookmarks_surah_ayah ON ${DbConstants.tableBookmarks}(surah_id, ayah_number)',
     );
   }
 
@@ -279,6 +314,89 @@ class AppDatabase {
     }
 
     return LastReadModel.fromMap(rows.first);
+  }
+
+  Future<void> addBookmark(BookmarkModel bookmark) async {
+    final db = await database;
+    await db.insert(
+      DbConstants.tableBookmarks,
+      bookmark.toMap(),
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  Future<void> removeBookmark(
+    BookmarkType type, {
+    required int surahId,
+    int? ayahNumber,
+  }) async {
+    final db = await database;
+    await db.delete(
+      DbConstants.tableBookmarks,
+      where: 'type = ? AND surah_id = ? AND ayah_number = ?',
+      whereArgs: [
+        type.dbValue,
+        surahId,
+        type == BookmarkType.surah ? 0 : (ayahNumber ?? 0),
+      ],
+    );
+  }
+
+  Future<bool> isBookmarked(
+    BookmarkType type, {
+    required int surahId,
+    int? ayahNumber,
+  }) async {
+    final db = await database;
+    final rows = await db.query(
+      DbConstants.tableBookmarks,
+      columns: const ['id'],
+      where: 'type = ? AND surah_id = ? AND ayah_number = ?',
+      whereArgs: [
+        type.dbValue,
+        surahId,
+        type == BookmarkType.surah ? 0 : (ayahNumber ?? 0),
+      ],
+      limit: 1,
+    );
+
+    return rows.isNotEmpty;
+  }
+
+  Future<List<BookmarkModel>> getBookmarks({BookmarkType? type}) async {
+    final db = await database;
+    final rows = await db.query(
+      DbConstants.tableBookmarks,
+      where: type == null ? null : 'type = ?',
+      whereArgs: type == null ? null : [type.dbValue],
+      orderBy: 'created_at DESC',
+    );
+
+    return rows.map(BookmarkModel.fromMap).toList();
+  }
+
+  Future<Set<int>> getBookmarkedSurahIds() async {
+    final db = await database;
+    final rows = await db.query(
+      DbConstants.tableBookmarks,
+      columns: const ['surah_id'],
+      where: 'type = ?',
+      whereArgs: [BookmarkType.surah.dbValue],
+    );
+
+    return rows.map((row) => row['surah_id']).whereType<int>().toSet();
+  }
+
+  Future<Set<int>> getBookmarkedAyahNumbers(int surahId) async {
+    final db = await database;
+    final rows = await db.query(
+      DbConstants.tableBookmarks,
+      columns: const ['ayah_number'],
+      where: 'type = ? AND surah_id = ?',
+      whereArgs: [BookmarkType.ayah.dbValue, surahId],
+    );
+
+    return rows.map((row) => row['ayah_number']).whereType<int>().toSet();
   }
 
   Future<void> close() async {

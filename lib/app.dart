@@ -19,6 +19,7 @@ import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
+import 'presentation/viewmodels/read_quran/bookmarks_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/search_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
@@ -91,6 +92,10 @@ class QuranForAllApp extends StatelessWidget {
         ),
         ChangeNotifierProvider<SearchViewModel>(
           create: (context) => SearchViewModel(context.read<QuranRepository>()),
+        ),
+        ChangeNotifierProvider<BookmarksViewModel>(
+          create: (context) =>
+              BookmarksViewModel(context.read<QuranRepository>()),
         ),
         ChangeNotifierProvider<SurahDetailsViewModel>(
           create: (context) => SurahDetailsViewModel(

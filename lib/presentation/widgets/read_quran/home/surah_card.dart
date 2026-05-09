@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/constants/my_icons.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_colors.dart';
@@ -7,10 +8,18 @@ import '../../../../data/models/surah_model.dart';
 import '../../common/app_pill.dart';
 
 class SurahCard extends StatelessWidget {
-  const SurahCard({super.key, required this.surah, required this.onTap});
+  const SurahCard({
+    super.key,
+    required this.surah,
+    required this.onTap,
+    required this.isBookmarked,
+    required this.onToggleBookmark,
+  });
 
   final SurahModel surah;
   final VoidCallback onTap;
+  final bool isBookmarked;
+  final VoidCallback onToggleBookmark;
 
   @override
   Widget build(BuildContext context) {
@@ -93,14 +102,24 @@ class SurahCard extends StatelessWidget {
                       children: [
                         AppPill.surface(
                           label: context.readQuranText(surah.revelationType),
-                          icon: Icons.public_rounded,
-                          backgroundColor: colorScheme.surface.withValues(alpha: 0.9),
-                          borderColor: colorScheme.outline.withValues(alpha: 0.35),
+                          imgIcon: surah.revelationType == 'Meccan'
+                              ? MyIcons.meccaIcon
+                              : MyIcons.medinaIcon,
+                          backgroundColor: colorScheme.surface.withValues(
+                            alpha: 0.9,
+                          ),
+                          borderColor: colorScheme.outline.withValues(
+                            alpha: 0.35,
+                          ),
                         ),
                         AppPill.surface(
-                          label: surah.nameArabic,
-                          backgroundColor: colorScheme.surface.withValues(alpha: 0.9),
-                          borderColor: colorScheme.outline.withValues(alpha: 0.35),
+                          label: surah.nameArabic, 
+                          backgroundColor: colorScheme.surface.withValues(
+                            alpha: 0.9,
+                          ),
+                          borderColor: colorScheme.outline.withValues(
+                            alpha: 0.35,
+                          ),
                           color: colorScheme.onSurface.withValues(alpha: 0.6),
                         ),
                       ],
@@ -108,11 +127,30 @@ class SurahCard extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: 6),
-              Icon(
-                Icons.arrow_forward_ios_rounded,
-                size: 16,
-                color: AppColors.primary,
+              const SizedBox(width: AppSpacing.xs),
+              Column(
+                children: [
+                  IconButton(
+                    onPressed: onToggleBookmark,
+                    visualDensity: VisualDensity.compact,
+                    icon: Icon(
+                      isBookmarked
+                          ? Icons.bookmark_rounded
+                          : Icons.bookmark_add_outlined,
+                      color: isBookmarked
+                          ? colorScheme.primary
+                          : colorScheme.onSurface.withValues(alpha: 0.6),
+                    ),
+                    tooltip: isBookmarked
+                        ? context.readQuranText('Remove surah bookmark')
+                        : context.readQuranText('Save surah bookmark'),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 16,
+                    color: AppColors.primary,
+                  ),
+                ],
               ),
             ],
           ),

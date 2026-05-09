@@ -16,6 +16,7 @@ class AppPill extends StatelessWidget {
     this.backgroundColor,
     this.borderColor,
     this.onLight = true,
+    this.imgIcon,
   });
 
   /// Pill on a light surface (default). Text/icon inherit [color] or primary.
@@ -26,6 +27,7 @@ class AppPill extends StatelessWidget {
     this.color,
     this.backgroundColor,
     this.borderColor,
+    this.imgIcon,
   }) : onLight = true;
 
   /// Pill on a dark/gradient surface. Text/icon are white.
@@ -36,6 +38,7 @@ class AppPill extends StatelessWidget {
     this.color,
     this.backgroundColor,
     this.borderColor,
+    this.imgIcon,
   }) : onLight = false;
 
   final String label;
@@ -44,6 +47,7 @@ class AppPill extends StatelessWidget {
   final Color? backgroundColor;
   final Color? borderColor;
   final bool onLight;
+  final String? imgIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -76,6 +80,10 @@ class AppPill extends StatelessWidget {
         children: [
           if (icon != null) ...[
             Icon(icon, size: 14, color: fg),
+            const SizedBox(width: 5),
+          ],
+          if (imgIcon != null) ...[
+            Image.asset(imgIcon!, width: 18, height: 16),
             const SizedBox(width: 5),
           ],
           Text(
