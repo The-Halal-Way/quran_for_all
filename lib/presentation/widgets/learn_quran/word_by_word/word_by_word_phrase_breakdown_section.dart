@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_text_styles.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
 
@@ -57,10 +58,10 @@ class _PhraseCard extends StatelessWidget {
         children: [
           Text(
             item.arabic,
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(
-              color: colorScheme.primary,
-              fontWeight: FontWeight.w700,
-            ),
+            style: AppTextStyles.learnArabicWord(
+              context,
+              fontSize: 31,
+            ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 3),
           Text(

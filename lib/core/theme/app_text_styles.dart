@@ -17,7 +17,10 @@ class AppTextStyles {
   }
 
   /// Surah name in Arabic (banner / card headers).
-  static TextStyle surahArabicName(BuildContext context, {double fontSize = 34}) {
+  static TextStyle surahArabicName(
+    BuildContext context, {
+    double fontSize = 34,
+  }) {
     return GoogleFonts.amiri(
       fontSize: fontSize,
       fontWeight: FontWeight.w700,
@@ -30,6 +33,32 @@ class AppTextStyles {
     return GoogleFonts.amiri(
       fontSize: fontSize,
       color: Theme.of(context).colorScheme.onSurface,
+    );
+  }
+
+  /// Learn Quran: single-letter glyphs (alphabet tiles, chip letters).
+  static TextStyle learnArabicLetter(
+    BuildContext context, {
+    double fontSize = 35,
+  }) {
+    return GoogleFonts.amiri(
+      fontSize: fontSize,
+      height: 1.2,
+      color: Theme.of(context).colorScheme.onSurface,
+      fontWeight: FontWeight.w700,
+    );
+  }
+
+  /// Learn Quran: words/short phrases shown in practice cards.
+  static TextStyle learnArabicWord(
+    BuildContext context, {
+    double fontSize = 31,
+  }) {
+    return GoogleFonts.amiri(
+      fontSize: fontSize,
+      height: 1.35,
+      color: Theme.of(context).colorScheme.onSurface,
+      fontWeight: FontWeight.w700,
     );
   }
 }

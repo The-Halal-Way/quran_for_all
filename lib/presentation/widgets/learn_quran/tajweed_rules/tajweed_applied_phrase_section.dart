@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/theme/app_text_styles.dart';
 import 'tajweed_learning_data.dart';
 import 'tajweed_section_card.dart';
 
@@ -60,10 +61,11 @@ class _PhraseCard extends StatelessWidget {
               children: [
                 Text(
                   phrase.arabic,
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.w700,
-                    color: colorScheme.primary,
-                  ),
+                  style: AppTextStyles.learnArabicWord(context, fontSize: 32)
+                      .copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: colorScheme.primary,
+                      ),
                 ),
                 const SizedBox(height: 3),
                 Text(

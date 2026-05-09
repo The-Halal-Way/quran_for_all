@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_text_styles.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -85,10 +86,17 @@ class _HarakahPatternCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '${context.learnText('Base letter')}: ${pattern.baseLetter}',
+            context.learnText('Base letter'),
             style: Theme.of(
               context,
             ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+          ),
+          Text(
+            pattern.baseLetter,
+            style: AppTextStyles.learnArabicLetter(
+              context,
+              fontSize: 30,
+            ).copyWith(color: colorScheme.primary),
           ),
           const SizedBox(height: 8),
           Wrap(
@@ -136,10 +144,10 @@ class _HarakahValueChip extends StatelessWidget {
           const SizedBox(height: 2),
           Text(
             value,
-            style: Theme.of(context).textTheme.titleSmall?.copyWith(
-              color: colorScheme.primary,
-              fontWeight: FontWeight.w800,
-            ),
+            style: AppTextStyles.learnArabicWord(
+              context,
+              fontSize: 26,
+            ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w800),
           ),
         ],
       ),

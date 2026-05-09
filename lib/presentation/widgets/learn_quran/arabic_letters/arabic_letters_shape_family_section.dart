@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_text_styles.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -83,9 +84,10 @@ class _FamilyCard extends StatelessWidget {
                   ),
                   child: Text(
                     letter,
-                    style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                      fontWeight: FontWeight.w700,
-                    ),
+                    style: AppTextStyles.learnArabicLetter(
+                      context,
+                      fontSize: 29,
+                    ).copyWith(fontWeight: FontWeight.w700),
                   ),
                 ),
             ],

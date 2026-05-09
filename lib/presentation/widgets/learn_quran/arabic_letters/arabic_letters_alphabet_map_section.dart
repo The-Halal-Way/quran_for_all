@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/theme/app_text_styles.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -63,10 +64,9 @@ class _AlphabetTile extends StatelessWidget {
         children: [
           Text(
             letter.symbol,
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.w700,
-              color: colorScheme.primary,
-            ),
+            style: AppTextStyles.learnArabicLetter(
+              context,
+            ).copyWith(fontWeight: FontWeight.w700, color: colorScheme.primary),
           ),
           const SizedBox(height: 2),
           Text(
