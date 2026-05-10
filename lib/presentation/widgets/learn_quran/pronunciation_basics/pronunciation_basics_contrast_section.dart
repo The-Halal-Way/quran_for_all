@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../pronunciation_button.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -55,12 +56,23 @@ class _ContrastCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            item.pair,
-            style: Theme.of(context).textTheme.titleSmall?.copyWith(
-              color: colorScheme.primary,
-              fontWeight: FontWeight.w800,
-            ),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  item.pair,
+                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                    color: colorScheme.primary,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+              PronunciationButton(
+                arabicText: item.pair.replaceAll(' / ', ' '),
+                size: 20,
+                color: colorScheme.primary,
+              ),
+            ],
           ),
           const SizedBox(height: 6),
           _Line(

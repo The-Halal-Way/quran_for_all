@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../pronunciation_button.dart';
 import 'tajweed_learning_data.dart';
 import 'tajweed_section_card.dart';
 
@@ -67,7 +68,21 @@ class _MeemRuleCard extends StatelessWidget {
           const SizedBox(height: 4),
           _Line(label: context.learnText('Delivery'), value: item.delivery),
           const SizedBox(height: 4),
-          _Line(label: context.learnText('Example'), value: item.example),
+          Row(
+            children: [
+              Expanded(
+                child: _Line(
+                  label: context.learnText('Example'),
+                  value: item.example,
+                ),
+              ),
+              PronunciationButton(
+                arabicText: extractArabic(item.example),
+                size: 18,
+                color: colorScheme.primary,
+              ),
+            ],
+          ),
           const SizedBox(height: 4),
           _Line(
             label: context.learnText('Common mistake'),

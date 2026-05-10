@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_text_styles.dart';
+import '../pronunciation_button.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
 
@@ -68,12 +69,23 @@ class _VocabCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            item.arabic,
-            style: AppTextStyles.learnArabicWord(
-              context,
-              fontSize: 31,
-            ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w800),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  item.arabic,
+                  style: AppTextStyles.learnArabicWord(
+                    context,
+                    fontSize: 31,
+                  ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w800),
+                ),
+              ),
+              PronunciationButton(
+                arabicText: item.arabic,
+                size: 20,
+                color: colorScheme.primary,
+              ),
+            ],
           ),
           const SizedBox(height: 3),
           Text(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../pronunciation_button.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -66,7 +67,22 @@ class _StopRestartCard extends StatelessWidget {
           const SizedBox(height: 4),
           _Line(label: context.learnText('Restart'), value: rule.restartAction),
           const SizedBox(height: 4),
-          _Line(label: context.learnText('Example'), value: rule.example),
+          Row(
+            children: [
+              Expanded(
+                child: _Line(
+                  label: context.learnText('Example'),
+                  value: rule.example,
+                ),
+              ),
+              if (extractArabic(rule.example).isNotEmpty)
+                PronunciationButton(
+                  arabicText: extractArabic(rule.example),
+                  size: 18,
+                  color: colorScheme.primary,
+                ),
+            ],
+          ),
         ],
       ),
     );

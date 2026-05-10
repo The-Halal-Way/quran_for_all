@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_text_styles.dart';
+import '../pronunciation_button.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -97,12 +98,23 @@ class _ArticulationZoneCard extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 7),
-          Text(
-            guide.letters,
-            style: AppTextStyles.learnArabicWord(
-              context,
-              fontSize: 27,
-            ).copyWith(fontWeight: FontWeight.w700),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  guide.letters,
+                  style: AppTextStyles.learnArabicWord(
+                    context,
+                    fontSize: 27,
+                  ).copyWith(fontWeight: FontWeight.w700),
+                ),
+              ),
+              PronunciationButton(
+                arabicText: guide.letters,
+                size: 20,
+                color: color,
+              ),
+            ],
           ),
           const SizedBox(height: 5),
           Text(guide.hint, style: textTheme.bodySmall),

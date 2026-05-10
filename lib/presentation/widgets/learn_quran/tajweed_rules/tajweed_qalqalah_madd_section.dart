@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../pronunciation_button.dart';
 import 'tajweed_learning_data.dart';
 import 'tajweed_section_card.dart';
 
@@ -75,12 +76,23 @@ class _QalqalahCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            item.letter,
-            style: Theme.of(context).textTheme.titleSmall?.copyWith(
-              color: colorScheme.primary,
-              fontWeight: FontWeight.w800,
-            ),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  item.letter,
+                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                    color: colorScheme.primary,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+              PronunciationButton(
+                arabicText: extractArabic(item.sample),
+                size: 18,
+                color: colorScheme.primary,
+              ),
+            ],
           ),
           const SizedBox(height: 4),
           _Line(label: context.learnText('Sample'), value: item.sample),

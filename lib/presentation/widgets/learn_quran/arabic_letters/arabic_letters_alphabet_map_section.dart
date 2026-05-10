@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_text_styles.dart';
+import '../pronunciation_button.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -62,6 +63,16 @@ class _AlphabetTile extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              PronunciationButton(
+                arabicText: letter.symbol,
+                size: 18,
+                color: colorScheme.primary,
+              ),
+            ],
+          ),
           Text(
             letter.symbol,
             style: AppTextStyles.learnArabicLetter(

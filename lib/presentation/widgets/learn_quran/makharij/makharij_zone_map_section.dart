@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../pronunciation_button.dart';
 import 'makharij_learning_data.dart';
 import 'makharij_section_card.dart';
 
@@ -61,12 +62,23 @@ class _ZoneCard extends StatelessWidget {
             ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
           ),
           const SizedBox(height: 5),
-          Text(
-            zone.letters,
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              color: colorScheme.primary,
-              fontWeight: FontWeight.w700,
-            ),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  zone.letters,
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    color: colorScheme.primary,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+              PronunciationButton(
+                arabicText: extractArabic(zone.letters),
+                size: 20,
+                color: colorScheme.primary,
+              ),
+            ],
           ),
           const SizedBox(height: 6),
           _Line(label: context.learnText('Location'), value: zone.locationCue),
@@ -78,7 +90,21 @@ class _ZoneCard extends StatelessWidget {
             value: zone.commonMistake,
           ),
           const SizedBox(height: 4),
-          _Line(label: context.learnText('Drill'), value: zone.drill),
+          Row(
+            children: [
+              Expanded(
+                child: _Line(
+                  label: context.learnText('Drill'),
+                  value: zone.drill,
+                ),
+              ),
+              PronunciationButton(
+                arabicText: extractArabic(zone.drill),
+                size: 18,
+                color: colorScheme.primary,
+              ),
+            ],
+          ),
         ],
       ),
     );

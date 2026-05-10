@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../pronunciation_button.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -71,7 +72,21 @@ class _MaddCard extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 7),
-          _Line(label: context.learnText('Example'), value: pattern.example),
+          Row(
+            children: [
+              Expanded(
+                child: _Line(
+                  label: context.learnText('Example'),
+                  value: pattern.example,
+                ),
+              ),
+              PronunciationButton(
+                arabicText: extractArabic(pattern.example),
+                size: 20,
+                color: colorScheme.primary,
+              ),
+            ],
+          ),
           const SizedBox(height: 4),
           _Line(label: context.learnText('Note'), value: pattern.note),
         ],

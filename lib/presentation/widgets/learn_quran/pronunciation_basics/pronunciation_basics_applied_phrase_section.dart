@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_text_styles.dart';
+import '../pronunciation_button.dart';
 import 'pronunciation_basics_learning_data.dart';
 import 'pronunciation_basics_section_card.dart';
 
@@ -83,7 +84,11 @@ class _PhraseCard extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          Icon(Icons.multitrack_audio_rounded, color: colorScheme.primary),
+          PronunciationButton(
+            arabicText: phrase.arabic,
+            size: 22,
+            color: colorScheme.primary,
+          ),
         ],
       ),
     );

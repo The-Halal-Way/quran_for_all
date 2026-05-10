@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_text_styles.dart';
+import '../pronunciation_button.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
 
@@ -56,12 +57,24 @@ class _PhraseCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            item.arabic,
-            style: AppTextStyles.learnArabicWord(
-              context,
-              fontSize: 31,
-            ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w700),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(
+                  item.arabic,
+                  style: AppTextStyles.learnArabicWord(
+                    context,
+                    fontSize: 31,
+                  ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w700),
+                ),
+              ),
+              PronunciationButton(
+                arabicText: item.arabic,
+                size: 22,
+                color: colorScheme.primary,
+              ),
+            ],
           ),
           const SizedBox(height: 3),
           Text(

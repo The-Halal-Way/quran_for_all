@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_text_styles.dart';
+import '../pronunciation_button.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -56,12 +57,23 @@ class _ComparisonCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            guide.letters,
-            style: AppTextStyles.learnArabicWord(
-              context,
-              fontSize: 28,
-            ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w800),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  guide.letters,
+                  style: AppTextStyles.learnArabicWord(
+                    context,
+                    fontSize: 28,
+                  ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w800),
+                ),
+              ),
+              PronunciationButton(
+                arabicText: guide.practice,
+                size: 20,
+                color: colorScheme.primary,
+              ),
+            ],
           ),
           const SizedBox(height: 6),
           _Line(
