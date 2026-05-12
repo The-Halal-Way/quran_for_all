@@ -38,7 +38,7 @@ class SurahAyahList extends StatelessWidget {
     final viewModel = context.watch<SurahDetailsViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
     final responsive = AppResponsive.of(context);
-
+    // regular view
     if (settings.readingViewMode == ReadingViewMode.regularView) {
       return ListView(
         controller: controller,
@@ -129,7 +129,7 @@ class SurahAyahList extends StatelessWidget {
         ],
       );
     }
-
+    // details view
     return ListView(
       controller: controller,
       padding: EdgeInsets.fromLTRB(
