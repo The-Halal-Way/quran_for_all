@@ -15,6 +15,7 @@ class AyahTile extends StatelessWidget {
     required this.showTranslation,
     required this.language,
     required this.isBookmarked,
+    required this.isPlaying,
     required this.onPlay,
     required this.onToggleBookmark,
     this.onMarkAsLastRead,
@@ -25,6 +26,7 @@ class AyahTile extends StatelessWidget {
   final bool showTranslation;
   final AppLanguage language;
   final bool isBookmarked;
+  final bool isPlaying;
   final VoidCallback onPlay;
   final VoidCallback onToggleBookmark;
   final VoidCallback? onMarkAsLastRead;
@@ -125,8 +127,14 @@ class AyahTile extends StatelessWidget {
                           ),
                           IconButton.filledTonal(
                             onPressed: onPlay,
-                            icon: const Icon(Icons.play_circle_fill_rounded),
-                            tooltip: 'Play ayah audio',
+                            icon: Icon(
+                              isPlaying
+                                  ? Icons.stop_circle_rounded
+                                  : Icons.play_circle_fill_rounded,
+                            ),
+                            tooltip: context.readQuranText(
+                              isPlaying ? 'Stop ayah audio' : 'Play ayah audio',
+                            ),
                           ),
                         ],
                       ),
@@ -189,8 +197,14 @@ class AyahTile extends StatelessWidget {
                       ),
                       IconButton.filledTonal(
                         onPressed: onPlay,
-                        icon: const Icon(Icons.play_circle_fill_rounded),
-                        tooltip: 'Play ayah audio',
+                        icon: Icon(
+                          isPlaying
+                              ? Icons.stop_circle_rounded
+                              : Icons.play_circle_fill_rounded,
+                        ),
+                        tooltip: context.readQuranText(
+                          isPlaying ? 'Stop ayah audio' : 'Play ayah audio',
+                        ),
                       ),
                     ],
                   ),

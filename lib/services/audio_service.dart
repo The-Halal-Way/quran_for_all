@@ -87,6 +87,7 @@ class AudioService {
     _setIsPlaying(true);
 
     await _player.play(DeviceFileSource(localPath));
+    await _waitForCompleteOrStop();
   }
 
   Future<void> playSurah(List<AyahModel> ayahs, {int startIndex = 0}) async {
@@ -100,7 +101,6 @@ class AudioService {
         }
 
         await playAyah(ayahs[i]);
-        await _waitForCompleteOrStop();
       }
     } finally {
       _surahPlaybackActive = false;

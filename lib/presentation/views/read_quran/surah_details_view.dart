@@ -168,12 +168,17 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                                       isBookmarked: viewModel.isAyahBookmarked(
                                         ayah.ayahNumber,
                                       ),
+                                      isPlaying: viewModel.isAyahPlaying(
+                                        ayah.ayahNumber,
+                                      ),
                                       onPlay: () => unawaited(
-                                        _playAyahWithFeedback(
-                                          context,
-                                          viewModel,
-                                          ayah,
-                                        ),
+                                        viewModel.isAyahPlaying(ayah.ayahNumber)
+                                            ? viewModel.stopPlayback()
+                                            : _playAyahWithFeedback(
+                                                context,
+                                                viewModel,
+                                                ayah,
+                                              ),
                                       ),
                                       onToggleBookmark: () => unawaited(
                                         viewModel.toggleAyahBookmark(ayah),

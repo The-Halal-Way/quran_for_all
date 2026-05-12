@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 
 import '../../../core/enums/playback_source.dart';
@@ -15,15 +17,24 @@ class SurahDetailsViewModel extends ChangeNotifier {
     required AudioControlViewModel audioControlViewModel,
   }) : _quranRepository = quranRepository,
        _audioRepository = audioRepository,
-       _audioControl = audioControlViewModel;
+       _audioControl = audioControlViewModel {
+    _isPlayingSubscription = _audioRepository.isPlayingStream.listen((isPlaying) {
+      if (!isPlaying && _playingAyahNumber != null) {
+        _playingAyahNumber = null;
+        notifyListeners();
+      }
+    });
+  }
 
   SurahModel? _surah;
   final QuranRepository _quranRepository;
   final AudioRepository _audioRepository;
   final AudioControlViewModel _audioControl;
+  late final StreamSubscription<bool> _isPlayingSubscription;
 
   bool _isLoading = false;
   bool _isPlayingFullSurah = false;
+  int? _playingAyahNumber;
   String? _errorMessage;
   List<AyahModel> _ayahs = const [];
   Set<int> _bookmarkedAyahNumbers = const <int>{};
@@ -32,9 +43,12 @@ class SurahDetailsViewModel extends ChangeNotifier {
   SurahModel? get surah => _surah;
   bool get isLoading => _isLoading;
   bool get isPlayingFullSurah => _isPlayingFullSurah;
+  int? get playingAyahNumber => _playingAyahNumber;
   String? get errorMessage => _errorMessage;
   List<AyahModel> get ayahs => _ayahs;
   Set<int> get bookmarkedAyahNumbers => _bookmarkedAyahNumbers;
+
+  bool isAyahPlaying(int ayahNumber) => _playingAyahNumber == ayahNumber;
 
   bool isAyahBookmarked(int ayahNumber) {
     return _bookmarkedAyahNumbers.contains(ayahNumber);
@@ -95,16 +109,33 @@ class SurahDetailsViewModel extends ChangeNotifier {
     if (_isPlayingFullSurah) {
       await _audioRepository.stop();
       _isPlayingFullSurah = false;
+      _playingAyahNumber = null;
       notifyListeners();
     }
+
+    _playingAyahNumber = ayah.ayahNumber;
+    notifyListeners();
 
     _audioControl.setPlaybackContext(
       source: PlaybackSource.surahDetails,
       title: _surah?.nameEnglish ?? 'Surah',
       subtitle: 'Ayah ${ayah.ayahNumber}',
     );
-    await _audioRepository.playAyah(ayah);
-    await _quranRepository.saveLastRead(ayah.surahId, ayah.ayahNumber);
+    try {
+      await _audioRepository.playAyah(ayah);
+      await _quranRepository.saveLastRead(ayah.surahId, ayah.ayahNumber);
+    } catch (_) {
+      if (_playingAyahNumber == ayah.ayahNumber) {
+        _playingAyahNumber = null;
+        notifyListeners();
+      }
+      rethrow;
+    } finally {
+      if (_playingAyahNumber == ayah.ayahNumber) {
+        _playingAyahNumber = null;
+        notifyListeners();
+      }
+    }
   }
 
   Future<void> playFullSurah() async {
@@ -112,6 +143,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
       return;
     }
 
+  _playingAyahNumber = null;
     _isPlayingFullSurah = true;
     notifyListeners();
 
@@ -132,7 +164,14 @@ class SurahDetailsViewModel extends ChangeNotifier {
   Future<void> stopPlayback() async {
     await _audioRepository.stop();
     _isPlayingFullSurah = false;
+    _playingAyahNumber = null;
     notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    _isPlayingSubscription.cancel();
+    super.dispose();
   }
 
   Future<void> markAsLastRead(AyahModel ayah) {
