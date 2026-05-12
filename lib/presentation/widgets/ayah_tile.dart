@@ -60,8 +60,8 @@ class AyahTile extends StatelessWidget {
                         children: [
                           Container(
                             padding: const EdgeInsets.symmetric(
-                              horizontal: AppSpacing.sm + 2,
-                              vertical: AppSpacing.sm - 2,
+                              horizontal: AppSpacing.sm,
+                              vertical: AppSpacing.xs + 1,
                             ),
                             decoration: BoxDecoration(
                               color: colorScheme.secondary.withValues(
@@ -73,10 +73,11 @@ class AyahTile extends StatelessWidget {
                             ),
                             child: Text(
                               '${ayah.surahId}:${ayah.ayahNumber}',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w700,
-                                color: colorScheme.onSecondary,
-                              ),
+                              style: Theme.of(context).textTheme.labelSmall
+                                  ?.copyWith(
+                                    color: colorScheme.primary,
+                                    fontWeight: FontWeight.w900,
+                                  ),
                             ),
                           ),
                           Container(
@@ -113,9 +114,7 @@ class AyahTile extends StatelessWidget {
                                   : Icons.bookmark_add_outlined,
                             ),
                             tooltip: isBookmarked
-                                ? context.readQuranText(
-                                    'Remove ayah bookmark',
-                                  )
+                                ? context.readQuranText('Remove ayah bookmark')
                                 : context.readQuranText('Save ayah bookmark'),
                           ),
                           IconButton(
@@ -172,10 +171,11 @@ class AyahTile extends StatelessWidget {
                         ),
                         child: Text(
                           'Juz ${ayah.juzNumber}',
-                          style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                            color: colorScheme.primary,
-                            fontWeight: FontWeight.w700,
-                          ),
+                          style: Theme.of(context).textTheme.labelSmall
+                              ?.copyWith(
+                                color: colorScheme.primary,
+                                fontWeight: FontWeight.w700,
+                              ),
                         ),
                       ),
                       const Spacer(),
@@ -193,7 +193,9 @@ class AyahTile extends StatelessWidget {
                       IconButton(
                         onPressed: onMarkAsLastRead,
                         icon: const Icon(Icons.history_edu_rounded),
-                        tooltip: context.readQuranText('Mark ayah as last read'),
+                        tooltip: context.readQuranText(
+                          'Mark ayah as last read',
+                        ),
                       ),
                       IconButton.filledTonal(
                         onPressed: onPlay,
@@ -208,27 +210,27 @@ class AyahTile extends StatelessWidget {
                       ),
                     ],
                   ),
-            const SizedBox(height: AppSpacing.sm + 2),
-            Text(
-              ayah.arabicText,
-              textAlign: TextAlign.right,
-              textDirection: TextDirection.rtl,
-              style: AppTextStyles.quranArabic(context),
-            ),
-            if (showPronunciation && transliteration.isNotEmpty) ...[
-              const SizedBox(height: AppSpacing.sm),
-              Text(
-                transliteration,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  fontStyle: FontStyle.italic,
-                  color: colorScheme.onSurface.withValues(alpha: 0.72),
+                const SizedBox(height: AppSpacing.sm + 2),
+                Text(
+                  ayah.arabicText,
+                  textAlign: TextAlign.right,
+                  textDirection: TextDirection.rtl,
+                  style: AppTextStyles.quranArabic(context),
                 ),
-              ),
-            ],
-            if (showTranslation && translation.isNotEmpty) ...[
-              const SizedBox(height: AppSpacing.md),
-              _TranslationLine(label: translationLabel, text: translation),
-            ],
+                if (showPronunciation && transliteration.isNotEmpty) ...[
+                  const SizedBox(height: AppSpacing.sm),
+                  Text(
+                    transliteration,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      fontStyle: FontStyle.italic,
+                      color: colorScheme.onSurface.withValues(alpha: 0.72),
+                    ),
+                  ),
+                ],
+                if (showTranslation && translation.isNotEmpty) ...[
+                  const SizedBox(height: AppSpacing.md),
+                  _TranslationLine(label: translationLabel, text: translation),
+                ],
               ],
             ),
           );

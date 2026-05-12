@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/enums/app_language.dart';
+import '../../core/enums/reading_view_mode.dart';
 import '../../data/models/app_settings.dart';
 import '../../domain/repositories/settings_repository.dart';
 
@@ -41,6 +42,12 @@ class SettingsViewModel extends ChangeNotifier {
 
   Future<void> setLanguage(AppLanguage language) async {
     _settings = _settings.copyWith(language: language);
+    notifyListeners();
+    await _settingsRepository.saveSettings(_settings);
+  }
+
+  Future<void> setReadingViewMode(ReadingViewMode mode) async {
+    _settings = _settings.copyWith(readingViewMode: mode);
     notifyListeners();
     await _settingsRepository.saveSettings(_settings);
   }

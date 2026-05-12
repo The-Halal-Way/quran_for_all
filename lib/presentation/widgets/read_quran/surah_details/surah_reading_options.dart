@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
+import 'package:quran_for_all/core/enums/reading_view_mode.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 
 class SurahReadingOptions extends StatelessWidget {
@@ -36,6 +37,47 @@ class SurahReadingOptions extends StatelessWidget {
             context.readQuranText('Pronunciation and translation visibility'),
           ),
           children: [
+            const Divider(height: 1),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppSpacing.lg,
+                AppSpacing.md,
+                AppSpacing.lg,
+                AppSpacing.sm,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    context.readQuranText('Reading mode'),
+                    style: Theme.of(context).textTheme.labelLarge,
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  SegmentedButton<ReadingViewMode>(
+                    showSelectedIcon: false,
+                    segments: <ButtonSegment<ReadingViewMode>>[
+                      ButtonSegment<ReadingViewMode>(
+                        value: ReadingViewMode.detailsView,
+                        icon: const Icon(Icons.view_agenda_rounded),
+                        label: Text(context.readQuranText('Details')),
+                      ),
+                      ButtonSegment<ReadingViewMode>(
+                        value: ReadingViewMode.regularView,
+                        icon: const Icon(Icons.wrap_text_rounded),
+                        label: Text(context.readQuranText('Regular')),
+                      ),
+                    ],
+                    selected: <ReadingViewMode>{settings.readingViewMode},
+                    onSelectionChanged: (selection) {
+                      final selectedMode = selection.first;
+                      unawaited(
+                        settingsViewModel.setReadingViewMode(selectedMode),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
             const Divider(height: 1),
             SwitchListTile(
               dense: true,
