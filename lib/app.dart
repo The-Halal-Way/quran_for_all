@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'core/constants/app_constants.dart';
 import 'core/enums/app_language.dart';
 import 'core/localization/l10n_extensions.dart';
@@ -112,48 +112,53 @@ class QuranForAllApp extends StatelessWidget {
       ],
       child: Consumer<SettingsViewModel>(
         builder: (context, settingsViewModel, _) {
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            title: AppConstants.appName,
-            theme: AppTheme.lightTheme,
-            darkTheme: AppTheme.darkTheme,
-            themeMode: settingsViewModel.settings.themeMode,
-            locale: Locale(settingsViewModel.settings.language.code),
-            localizationsDelegates: AppLocalizations.localizationsDelegates,
-            supportedLocales: AppLocalizations.supportedLocales,
-            builder: (context, child) {
-              final l10n = AppLocalizations.of(context);
-              if (l10n != null) {
-                LearnQuranTextLocalizer.seedFromLocalizations(
-                  l10n,
-                  Localizations.localeOf(context),
-                );
-              }
-
-              // Overlay the global audio mini-player at the bottom of the
-              // navigator stack. The bar floats above all content and is
-              // only visible when audio is playing and the user has
-              // navigated away from the source page.
-              return Consumer<AudioControlViewModel>(
-                builder: (context, audioControlVm, _) {
-                  final showBar = audioControlVm.showMiniPlayer;
-
-                  return Stack(
-                    children: [
-                      child ?? const SizedBox.shrink(),
-                      if (showBar)
-                        const Positioned(
-                          left: 0,
-                          right: 0,
-                          bottom: 0,
-                          child: GlobalAudioControlBar(),
-                        ),
-                    ],
+          return ScreenUtilInit(
+            designSize: const Size(375, 812),
+            minTextAdapt: true,
+            splitScreenMode: true,
+            builder: (context, child) => MaterialApp(
+              debugShowCheckedModeBanner: false,
+              title: AppConstants.appName,
+              theme: AppTheme.lightTheme,
+              darkTheme: AppTheme.darkTheme,
+              themeMode: settingsViewModel.settings.themeMode,
+              locale: Locale(settingsViewModel.settings.language.code),
+              localizationsDelegates: AppLocalizations.localizationsDelegates,
+              supportedLocales: AppLocalizations.supportedLocales,
+              builder: (context, child) {
+                final l10n = AppLocalizations.of(context);
+                if (l10n != null) {
+                  LearnQuranTextLocalizer.seedFromLocalizations(
+                    l10n,
+                    Localizations.localeOf(context),
                   );
-                },
-              );
-            },
-            home: const SplashView(),
+                }
+
+                // Overlay the global audio mini-player at the bottom of the
+                // navigator stack. The bar floats above all content and is
+                // only visible when audio is playing and the user has
+                // navigated away from the source page.
+                return Consumer<AudioControlViewModel>(
+                  builder: (context, audioControlVm, _) {
+                    final showBar = audioControlVm.showMiniPlayer;
+
+                    return Stack(
+                      children: [
+                        child ?? const SizedBox.shrink(),
+                        if (showBar)
+                          const Positioned(
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            child: GlobalAudioControlBar(),
+                          ),
+                      ],
+                    );
+                  },
+                );
+              },
+              home: const SplashView(),
+            ),
           );
         },
       ),

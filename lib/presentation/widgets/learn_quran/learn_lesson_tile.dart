@@ -90,27 +90,25 @@ class LearnLessonTile extends StatelessWidget {
               ),
             ),
             const SizedBox(height: AppSpacing.sm),
-            Row(
+            Wrap(
+              spacing: AppSpacing.sm,
+              runSpacing: AppSpacing.xs,
               children: [
                 AppPill.surface(
                   label: l10n.learnLessonDurationMinutes(lesson.durationMinutes),
                   icon: Icons.timer,
                 ),
-                if (lesson.hasAudioSample) ...[
-                  const SizedBox(width: AppSpacing.sm),
+                if (lesson.hasAudioSample)
                   AppPill.surface(
                     label: l10n.learnLessonAudioGuided,
                     icon: Icons.graphic_eq_rounded,
                   ),
-                ],
-                if (isCompleted) ...[
-                  const SizedBox(width: AppSpacing.sm),
+                if (isCompleted)
                   AppPill.surface(
                     label: l10n.learnLessonDone,
                     icon: Icons.check_circle_rounded,
                     color: AppColors.success,
                   ),
-                ],
               ],
             ),
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -46,8 +47,8 @@ class LearnModuleCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    width: 44,
-                    height: 44,
+                    width: 44.w.clamp(40.0, 48.0),
+                    height: 44.w.clamp(40.0, 48.0),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
@@ -97,18 +98,18 @@ class LearnModuleCard extends StatelessWidget {
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: AppSpacing.md),
-              Row(
+              Wrap(
+                spacing: AppSpacing.sm,
+                runSpacing: AppSpacing.xs,
                 children: [
                   AppPill.surface(
                     icon: Icons.schedule_rounded,
                     label: l10n.learnMinutesShort(module.estimatedMinutes),
                   ),
-                  const SizedBox(width: AppSpacing.sm),
                   AppPill.surface(
                     icon: Icons.signal_cellular_alt_rounded,
                     label: context.learnText(module.level),
                   ),
-                  const SizedBox(width: AppSpacing.sm),
                   AppPill.surface(
                     icon: Icons.task_alt_rounded,
                     label: l10n.learnCompletedFraction(
@@ -122,7 +123,7 @@ class LearnModuleCard extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(AppRadius.full),
                 child: LinearProgressIndicator(
-                  minHeight: 8,
+                  minHeight: 8.h.clamp(7.0, 8.0),
                   value: progress,
                   backgroundColor: visuals.startColor.withValues(alpha: 0.15),
                   color: visuals.endColor,

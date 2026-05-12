@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theme/app_spacing.dart';
 
@@ -24,17 +25,31 @@ class AppGradientBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final resolvedPadding = EdgeInsets.fromLTRB(
+      padding.left.w.clamp(14.0, 24.0),
+      padding.top.h.clamp(14.0, 24.0),
+      padding.right.w.clamp(14.0, 24.0),
+      padding.bottom.h.clamp(14.0, 24.0),
+    );
+
     return Container(
       width: double.infinity,
-      padding: padding,
+      padding: resolvedPadding,
       decoration: BoxDecoration(
         gradient: gradient,
-        borderRadius: BorderRadius.circular(borderRadius),
+        borderRadius: BorderRadius.circular(
+          borderRadius.r.clamp(16.0, 30.0),
+        ),
         boxShadow: [
           BoxShadow(
-            color: shadowColor ?? gradient.colors.first.withValues(alpha: 0.22),
-            blurRadius: 22,
-            offset: const Offset(0, 12),
+            color: shadowColor ?? gradient.colors.first.withValues(alpha: 0.20),
+            blurRadius: 24.r.clamp(18.0, 26.0),
+            offset: const Offset(0, 10),
+          ),
+          BoxShadow(
+            color: (shadowColor ?? gradient.colors.first).withValues(alpha: 0.07),
+            blurRadius: 56.r.clamp(34.0, 58.0),
+            offset: const Offset(0, 28),
           ),
         ],
       ),

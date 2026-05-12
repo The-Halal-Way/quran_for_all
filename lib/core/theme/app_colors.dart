@@ -1,75 +1,53 @@
+// AppColors.dart
 import 'package:flutter/material.dart';
 
-/// Centralized color palette for the app.
-///
-/// Use these tokens instead of inline hex values so that every screen
-/// shares a single source of truth for colour.
 class AppColors {
   const AppColors._();
 
   // ── Brand ────────────────────────────────────────────────────────────────
-  static const Color primary = Color(0xFF0D7A67);
-  static const Color primaryLight = Color(0xFF1A9E86);
-  static const Color primaryDark = Color(0xFF065647);
+  // Primary: deep regal indigo
+  static const Color primary      = Color(0xFF1E0A3C); // midnight purple‑blue
+  static const Color primaryLight = Color(0xFF4B30A1); // electric indigo
+  static const Color primaryDark  = Color(0xFF0D0320); // almost black violet
 
-  static const Color secondary = Color(0xFFC8922A);
-  static const Color secondaryLight = Color(0xFFE8B34D);
+  // Secondary: shocking fuchsia (replaces gold as the royal accent)
+  static const Color secondary      = Color(0xFFD50057); // vivid fuchsia
+  static const Color secondaryLight = Color(0xFFFF4081); // neon pink‑rose
+  static const Color secondaryDark  = Color(0xFF8E0033); // deep berry
 
-  static const Color tertiary = Color(0xFFA7523D);
-  static const Color tertiaryLight = Color(0xFFCB7A66);
+  // Tertiary: icy teal (exotic cold metal, never warm)
+  static const Color tertiary      = Color(0xFF00BFA5); // teal accent
+  static const Color tertiaryLight = Color(0xFF64FFDA); // mint flash
+  static const Color tertiaryDark  = Color(0xFF00897B); // deep emerald teal
 
   // ── Light Surfaces ───────────────────────────────────────────────────────
-  static const Color scaffold = Color(0xFFF5EDD8);
-  static const Color surface = Color(0xFFFFFDF7);
-  static const Color cardFill = Color(0xFFFFFEFC);
-  static const Color divider = Color(0xFFD6DCCF);
+  static const Color scaffold        = Color(0xFFF5F2FF); // ice‑blue lavender
+  static const Color surface         = Color(0xFFFFFFFF); // pure white
+  static const Color surfaceContainer = Color(0xFFEEE8FA); // pale violet pearl
+  static const Color cardFill        = Color(0xFFFFFFFF); // clean cards
+  static const Color divider         = Color(0xFFD9D1E8); // soft violet‑grey
 
   // ── Light Text ───────────────────────────────────────────────────────────
-  static const Color textPrimary = Color(0xFF1A2420);
-  static const Color textSecondary = Color(0xFF4A5650);
-  static const Color textTertiary = Color(0xFF7E8B84);
+  static const Color textPrimary   = Color(0xFF120B24); // deep navy‑ink
+  static const Color textSecondary = Color(0xFF4C425C); // muted plum
+  static const Color textTertiary  = Color(0xFF7A7288); // lavender grey
   static const Color textOnPrimary = Colors.white;
 
   // ── Dark Surfaces ────────────────────────────────────────────────────────
-  static const Color darkScaffold = Color(0xFF111916);
-  static const Color darkSurface = Color(0xFF1A2420);
-  static const Color darkCardFill = Color(0xFF1F2D28);
-  static const Color darkDivider = Color(0xFF2E3D36);
+  static const Color darkScaffold        = Color(0xFF060118); // abyss indigo
+  static const Color darkSurface         = Color(0xFF120A2B);
+  static const Color darkSurfaceContainer = Color(0xFF1D1238);
+  static const Color darkCardFill        = Color(0xFF261A45); // deep velvet
+  static const Color darkDivider         = Color(0xFF382E54);
 
   // ── Dark Text ────────────────────────────────────────────────────────────
-  static const Color darkTextPrimary = Color(0xFFE8ECE9);
-  static const Color darkTextSecondary = Color(0xFFAAB4AE);
-  static const Color darkTextTertiary = Color(0xFF6E7D76);
+  static const Color darkTextPrimary   = Color(0xFFEDE7F6); // softest lavender
+  static const Color darkTextSecondary = Color(0xFFB39DDB); // lilac grey
+  static const Color darkTextTertiary  = Color(0xFF7E57C2); // muted purple
 
-  // ── Semantic ─────────────────────────────────────────────────────────────
-  static const Color success = Color(0xFF1B8A4A);
-  static const Color error = Color(0xFFBF3B30);
-  static const Color errorSurface = Color(0xFFFFF0EB);
-  static const Color info = Color(0xFF3478A5);
-
-  // ── Light Gradients ──────────────────────────────────────────────────────
-  static const LinearGradient pageBg = LinearGradient(
-    colors: [Color(0xFFFFFDF5), Color(0xFFF2E6CF)],
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-  );
-
-  static const LinearGradient splashBg = LinearGradient(
-    colors: [Color(0xFF0D7A67), Color(0xFFA7523D)],
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-  );
-
-  static const LinearGradient heroBanner = LinearGradient(
-    colors: [Color(0xFF0D7A67), Color(0xFFA7523D)],
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-  );
-
-  // ── Dark Gradients ───────────────────────────────────────────────────────
-  static const LinearGradient darkPageBg = LinearGradient(
-    colors: [Color(0xFF111916), Color(0xFF1A2420)],
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-  );
+  // ── Semantic (tuned to the palette) ──────────────────────────────────────
+  static const Color success     = Color(0xFF00E676); // neon emerald
+  static const Color error       = Color(0xFFFF1744); // electric red
+  static const Color errorSurface = Color(0xFFFFF0F5); // pink‑tinted bg
+  static const Color info        = Color(0xFF448AFF); // bright blue
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/enums/app_language.dart';
 import '../../core/localization/l10n_extensions.dart';
@@ -38,72 +39,161 @@ class AyahTile extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(AppSpacing.lg),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Row(
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final isCompact = constraints.maxWidth < 420;
+
+          return Padding(
+            padding: const EdgeInsets.all(AppSpacing.lg),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpacing.sm + 2,
-                    vertical: AppSpacing.sm - 2,
+                if (isCompact)
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Wrap(
+                        spacing: AppSpacing.sm,
+                        runSpacing: AppSpacing.xs,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: AppSpacing.sm + 2,
+                              vertical: AppSpacing.sm - 2,
+                            ),
+                            decoration: BoxDecoration(
+                              color: colorScheme.secondary.withValues(
+                                alpha: 0.16,
+                              ),
+                              borderRadius: BorderRadius.circular(
+                                AppRadius.full,
+                              ),
+                            ),
+                            child: Text(
+                              '${ayah.surahId}:${ayah.ayahNumber}',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: colorScheme.onSecondary,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: AppSpacing.sm,
+                              vertical: AppSpacing.xs + 1,
+                            ),
+                            decoration: BoxDecoration(
+                              color: colorScheme.primary.withValues(alpha: 0.1),
+                              borderRadius: BorderRadius.circular(
+                                AppRadius.full,
+                              ),
+                            ),
+                            child: Text(
+                              'Juz ${ayah.juzNumber}',
+                              style: Theme.of(context).textTheme.labelSmall
+                                  ?.copyWith(
+                                    color: colorScheme.primary,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: AppSpacing.xs),
+                      Wrap(
+                        spacing: AppSpacing.xs,
+                        children: [
+                          IconButton(
+                            onPressed: onToggleBookmark,
+                            icon: Icon(
+                              isBookmarked
+                                  ? Icons.bookmark_rounded
+                                  : Icons.bookmark_add_outlined,
+                            ),
+                            tooltip: isBookmarked
+                                ? context.readQuranText(
+                                    'Remove ayah bookmark',
+                                  )
+                                : context.readQuranText('Save ayah bookmark'),
+                          ),
+                          IconButton(
+                            onPressed: onMarkAsLastRead,
+                            icon: const Icon(Icons.history_edu_rounded),
+                            tooltip: context.readQuranText(
+                              'Mark ayah as last read',
+                            ),
+                          ),
+                          IconButton.filledTonal(
+                            onPressed: onPlay,
+                            icon: const Icon(Icons.play_circle_fill_rounded),
+                            tooltip: 'Play ayah audio',
+                          ),
+                        ],
+                      ),
+                    ],
+                  )
+                else
+                  Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: AppSpacing.sm + 2,
+                          vertical: AppSpacing.sm - 2,
+                        ),
+                        decoration: BoxDecoration(
+                          color: colorScheme.secondary.withValues(alpha: 0.16),
+                          borderRadius: BorderRadius.circular(AppRadius.full),
+                        ),
+                        child: Text(
+                          '${ayah.surahId}:${ayah.ayahNumber}',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w700,
+                            color: colorScheme.onSecondary,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: AppSpacing.sm),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: AppSpacing.sm,
+                          vertical: AppSpacing.xs + 1,
+                        ),
+                        decoration: BoxDecoration(
+                          color: colorScheme.primary.withValues(alpha: 0.1),
+                          borderRadius: BorderRadius.circular(AppRadius.full),
+                        ),
+                        child: Text(
+                          'Juz ${ayah.juzNumber}',
+                          style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                            color: colorScheme.primary,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
+                      const Spacer(),
+                      IconButton(
+                        onPressed: onToggleBookmark,
+                        icon: Icon(
+                          isBookmarked
+                              ? Icons.bookmark_rounded
+                              : Icons.bookmark_add_outlined,
+                        ),
+                        tooltip: isBookmarked
+                            ? context.readQuranText('Remove ayah bookmark')
+                            : context.readQuranText('Save ayah bookmark'),
+                      ),
+                      IconButton(
+                        onPressed: onMarkAsLastRead,
+                        icon: const Icon(Icons.history_edu_rounded),
+                        tooltip: context.readQuranText('Mark ayah as last read'),
+                      ),
+                      IconButton.filledTonal(
+                        onPressed: onPlay,
+                        icon: const Icon(Icons.play_circle_fill_rounded),
+                        tooltip: 'Play ayah audio',
+                      ),
+                    ],
                   ),
-                  decoration: BoxDecoration(
-                    color: colorScheme.secondary.withValues(alpha: 0.16),
-                    borderRadius: BorderRadius.circular(AppRadius.full),
-                  ),
-                  child: Text(
-                    '${ayah.surahId}:${ayah.ayahNumber}',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      color: colorScheme.onSecondary,
-                    ),
-                  ),
-                ),
-                const SizedBox(width: AppSpacing.sm),
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpacing.sm,
-                    vertical: AppSpacing.xs + 1,
-                  ),
-                  decoration: BoxDecoration(
-                    color: colorScheme.primary.withValues(alpha: 0.1),
-                    borderRadius: BorderRadius.circular(AppRadius.full),
-                  ),
-                  child: Text(
-                    'Juz ${ayah.juzNumber}',
-                    style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                      color: colorScheme.primary,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
-                const Spacer(),
-                IconButton(
-                  onPressed: onToggleBookmark,
-                  icon: Icon(
-                    isBookmarked
-                        ? Icons.bookmark_rounded
-                        : Icons.bookmark_add_outlined,
-                  ),
-                  tooltip: isBookmarked
-                      ? context.readQuranText('Remove ayah bookmark')
-                      : context.readQuranText('Save ayah bookmark'),
-                ),
-                IconButton(
-                  onPressed: onMarkAsLastRead,
-                  icon: const Icon(Icons.history_edu_rounded),
-                  tooltip: context.readQuranText('Mark ayah as last read'),
-                ),
-                IconButton.filledTonal(
-                  onPressed: onPlay,
-                  icon: const Icon(Icons.play_circle_fill_rounded),
-                  tooltip: 'Play ayah audio',
-                ),
-              ],
-            ),
             const SizedBox(height: AppSpacing.sm + 2),
             Text(
               ayah.arabicText,
@@ -125,8 +215,10 @@ class AyahTile extends StatelessWidget {
               const SizedBox(height: AppSpacing.md),
               _TranslationLine(label: translationLabel, text: translation),
             ],
-          ],
-        ),
+              ],
+            ),
+          );
+        },
       ),
     );
   }
@@ -160,7 +252,7 @@ class _TranslationLine extends StatelessWidget {
             style: TextStyle(
               color: colorScheme.primary,
               fontWeight: FontWeight.w700,
-              fontSize: 11,
+              fontSize: 11.sp.clamp(10.5, 12.0),
             ),
           ),
         ),

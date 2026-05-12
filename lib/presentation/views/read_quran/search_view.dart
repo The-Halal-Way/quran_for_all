@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/search_result_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/read_quran/search_viewmodel.dart';
@@ -48,6 +49,7 @@ class _SearchViewState extends State<SearchView> {
   Widget build(BuildContext context) {
     final viewModel = context.watch<SearchViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
+    final responsive = AppResponsive.of(context);
 
     return Scaffold(
       appBar: AppBar(title: Text(context.readQuranText('Search Quran'))),
@@ -55,10 +57,10 @@ class _SearchViewState extends State<SearchView> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppSpacing.lg,
+              padding: EdgeInsets.fromLTRB(
+                responsive.padding,
                 AppSpacing.sm + 2,
-                AppSpacing.lg,
+                responsive.padding,
                 AppSpacing.md,
               ),
               child: SearchQueryPanel(
@@ -110,19 +112,33 @@ class _SearchViewState extends State<SearchView> {
                   }
 
                   return AppPageScrollbar(
-                    builder: (context, controller) => ListView.separated(
-                      controller: controller,
-                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                      itemCount: viewModel.results.length,
-                      separatorBuilder: (_, _) => const SizedBox(height: 8),
-                      itemBuilder: (context, index) {
-                        final result = viewModel.results[index];
-                        return SearchResultTile(
-                          result: result,
-                          translationLanguage: settings.language,
-                          onTap: () => _openResult(context, result, viewModel),
-                        );
-                      },
+                    builder: (context, controller) => Center(
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxWidth: responsive.maxReadingContentWidth,
+                        ),
+                        child: ListView.separated(
+                          controller: controller,
+                          padding: EdgeInsets.fromLTRB(
+                            responsive.padding,
+                            0,
+                            responsive.padding,
+                            AppSpacing.lg,
+                          ),
+                          itemCount: viewModel.results.length,
+                          separatorBuilder: (_, _) =>
+                              const SizedBox(height: AppSpacing.sm),
+                          itemBuilder: (context, index) {
+                            final result = viewModel.results[index];
+                            return SearchResultTile(
+                              result: result,
+                              translationLanguage: settings.language,
+                              onTap: () =>
+                                  _openResult(context, result, viewModel),
+                            );
+                          },
+                        ),
+                      ),
                     ),
                   );
                 },

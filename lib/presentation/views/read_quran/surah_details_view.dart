@@ -7,6 +7,7 @@ import '../../../core/enums/playback_source.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/ayah_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
@@ -69,6 +70,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
   Widget build(BuildContext context) {
     final viewModel = context.watch<SurahDetailsViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
+    final responsive = AppResponsive.of(context);
 
     if (!viewModel.isLoading) {
       _maybeRevealAyah(viewModel);
@@ -93,10 +95,10 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
             : Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(
-                      AppSpacing.lg,
+                    padding: EdgeInsets.fromLTRB(
+                      responsive.padding,
                       AppSpacing.sm,
-                      AppSpacing.lg,
+                      responsive.padding,
                       AppSpacing.md,
                     ),
                     child: SurahMetaCard(
@@ -111,68 +113,80 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                   ),
                   Expanded(
                     child: AppPageScrollbar(
-                      builder: (context, controller) => ListView(
-                        controller: controller,
-                        padding: const EdgeInsets.fromLTRB(
-                          AppSpacing.lg,
-                          0,
-                          AppSpacing.lg,
-                          AppSpacing.lg,
-                        ),
-                        children: [
-                          for (final ayah in viewModel.ayahs)
-                            Padding(
-                              key: _ayahKeyFor(ayah.ayahNumber),
-                              padding: const EdgeInsets.only(
-                                bottom: AppSpacing.sm + 2,
-                              ),
-                              child: AnimatedContainer(
-                                duration: const Duration(milliseconds: 250),
-                                curve: Curves.easeOut,
-                                decoration: BoxDecoration(
-                                  color:
-                                      ayah.ayahNumber == _highlightedAyahNumber
-                                      ? Theme.of(context).colorScheme.primary
-                                            .withValues(alpha: 0.08)
-                                      : null,
-                                  borderRadius: BorderRadius.circular(
-                                    AppRadius.lg,
+                      builder: (context, controller) => Center(
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxWidth: responsive.maxReadingContentWidth,
+                          ),
+                          child: ListView(
+                            controller: controller,
+                            padding: EdgeInsets.fromLTRB(
+                              responsive.padding,
+                              0,
+                              responsive.padding,
+                              AppSpacing.lg,
+                            ),
+                            children: [
+                              for (final ayah in viewModel.ayahs)
+                                Padding(
+                                  key: _ayahKeyFor(ayah.ayahNumber),
+                                  padding: const EdgeInsets.only(
+                                    bottom: AppSpacing.sm + 2,
                                   ),
-                                  border:
-                                      ayah.ayahNumber == _highlightedAyahNumber
-                                      ? Border.all(
-                                          color: Theme.of(context)
-                                              .colorScheme
-                                              .primary
-                                              .withValues(alpha: 0.42),
-                                          width: 1.2,
-                                        )
-                                      : null,
-                                ),
-                                child: AyahTile(
-                                  ayah: ayah,
-                                  showPronunciation: settings.showPronunciation,
-                                  showTranslation: settings.showTranslation,
-                                  language: settings.language,
-                                  isBookmarked: viewModel.isAyahBookmarked(
-                                    ayah.ayahNumber,
-                                  ),
-                                  onPlay: () => unawaited(
-                                    _playAyahWithFeedback(
-                                      context,
-                                      viewModel,
-                                      ayah,
+                                  child: AnimatedContainer(
+                                    duration: const Duration(milliseconds: 250),
+                                    curve: Curves.easeOut,
+                                    decoration: BoxDecoration(
+                                      color: ayah.ayahNumber ==
+                                              _highlightedAyahNumber
+                                          ? Theme.of(context)
+                                                .colorScheme
+                                                .primary
+                                                .withValues(alpha: 0.08)
+                                          : null,
+                                      borderRadius: BorderRadius.circular(
+                                        AppRadius.lg,
+                                      ),
+                                      border: ayah.ayahNumber ==
+                                              _highlightedAyahNumber
+                                          ? Border.all(
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .primary
+                                                  .withValues(alpha: 0.42),
+                                              width: 1.2,
+                                            )
+                                          : null,
+                                    ),
+                                    child: AyahTile(
+                                      ayah: ayah,
+                                      showPronunciation:
+                                          settings.showPronunciation,
+                                      showTranslation:
+                                          settings.showTranslation,
+                                      language: settings.language,
+                                      isBookmarked: viewModel.isAyahBookmarked(
+                                        ayah.ayahNumber,
+                                      ),
+                                      onPlay: () => unawaited(
+                                        _playAyahWithFeedback(
+                                          context,
+                                          viewModel,
+                                          ayah,
+                                        ),
+                                      ),
+                                      onToggleBookmark: () => unawaited(
+                                        viewModel.toggleAyahBookmark(ayah),
+                                      ),
+                                      onMarkAsLastRead: () => unawaited(
+                                        viewModel.markAsLastRead(ayah),
+                                      ),
                                     ),
                                   ),
-                                  onToggleBookmark: () => unawaited(
-                                    viewModel.toggleAyahBookmark(ayah),
-                                  ),
-                                  onMarkAsLastRead: () =>
-                                      unawaited(viewModel.markAsLastRead(ayah)),
                                 ),
-                              ),
-                            ),
-                        ],
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ),

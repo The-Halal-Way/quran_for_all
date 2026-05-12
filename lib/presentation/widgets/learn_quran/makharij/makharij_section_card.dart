@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_spacing.dart';
 
 class MakharijSectionCard extends StatelessWidget {
   const MakharijSectionCard({
@@ -18,7 +19,7 @@ class MakharijSectionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
+        padding: const EdgeInsets.all(AppSpacing.lg - 2),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -28,12 +29,12 @@ class MakharijSectionCard extends StatelessWidget {
                 context,
               ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
             ),
-            const SizedBox(height: 5),
+            const SizedBox(height: AppSpacing.xs + 1),
             Text(
               context.learnText(subtitle),
               style: Theme.of(context).textTheme.bodySmall,
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: AppSpacing.sm + 2),
             child,
           ],
         ),

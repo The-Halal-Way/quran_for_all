@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_colors.dart';
@@ -53,12 +54,13 @@ class SearchQueryPanel extends StatelessWidget {
           if (query.isNotEmpty) ...[
             const SizedBox(height: AppSpacing.sm + 2),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
                   isLoading
                       ? Icons.hourglass_bottom_rounded
                       : Icons.tune_rounded,
-                  size: 18,
+                  size: 18.sp.clamp(16.0, 19.0),
                   color: colorScheme.primary,
                 ),
                 const SizedBox(width: AppSpacing.sm),

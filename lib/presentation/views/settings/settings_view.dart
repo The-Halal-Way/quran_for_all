@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 import '../../viewmodels/settings_viewmodel.dart';
 import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
@@ -20,6 +21,7 @@ class SettingsView extends StatelessWidget {
   Widget build(BuildContext context) {
     final viewModel = context.watch<SettingsViewModel>();
     final colorScheme = Theme.of(context).colorScheme;
+    final responsive = AppResponsive.of(context);
 
     return Scaffold(
       appBar: embedded
@@ -29,10 +31,15 @@ class SettingsView extends StatelessWidget {
         child: viewModel.isLoading
             ? const Center(child: CircularProgressIndicator())
             : AppPageScrollbar(
-                builder: (context, controller) => ListView(
-                  controller: controller,
-                  padding: const EdgeInsets.all(AppSpacing.lg),
-                  children: [
+                builder: (context, controller) => Center(
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxWidth: responsive.maxContentWidth,
+                    ),
+                    child: ListView(
+                      controller: controller,
+                      padding: EdgeInsets.all(responsive.padding),
+                      children: [
                     Container(
                       padding: const EdgeInsets.all(AppSpacing.lg),
                       decoration: BoxDecoration(
@@ -73,7 +80,9 @@ class SettingsView extends StatelessWidget {
                     ),
                     const SizedBox(height: AppSpacing.md),
                     const SettingsOfflineCard(),
-                  ],
+                      ],
+                    ),
+                  ),
                 ),
               ),
       ),

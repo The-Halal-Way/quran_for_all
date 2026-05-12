@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -79,18 +80,25 @@ class AppPill extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           if (icon != null) ...[
-            Icon(icon, size: 14, color: fg),
+            Icon(icon, size: 14.sp.clamp(13.0, 15.5), color: fg),
             const SizedBox(width: 5),
           ],
           if (imgIcon != null) ...[
-            Image.asset(imgIcon!, width: 18, height: 16),
+            Image.asset(
+              imgIcon!,
+              width: 18.w.clamp(16.0, 20.0),
+              height: 16.h.clamp(14.0, 18.0),
+            ),
             const SizedBox(width: 5),
           ],
-          Text(
-            label,
-            style: Theme.of(context).textTheme.labelSmall?.copyWith(
-              color: fg,
-              fontWeight: FontWeight.w700,
+          Flexible(
+            child: Text(
+              label,
+              overflow: TextOverflow.ellipsis,
+              style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                    color: fg,
+                    fontWeight: FontWeight.w700,
+                  ),
             ),
           ),
         ],

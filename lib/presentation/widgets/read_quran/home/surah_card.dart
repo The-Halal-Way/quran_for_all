@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_for_all/core/constants/my_icons.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
@@ -31,14 +32,18 @@ class SurahCard extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadius.lg),
-        child: Padding(
-          padding: const EdgeInsets.all(14),
-          child: Row(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final compact = constraints.maxWidth < 390;
+
+            return Padding(
+              padding: const EdgeInsets.all(14),
+              child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                width: 48,
-                height: 48,
+                width: 48.w.clamp(42.0, 52.0),
+                height: 48.w.clamp(42.0, 52.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadius.md),
                   gradient: LinearGradient(
@@ -71,7 +76,7 @@ class SurahCard extends StatelessWidget {
                         Expanded(
                           child: Text(
                             surah.nameEnglish,
-                            maxLines: 1,
+                            maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             style: textTheme.titleMedium?.copyWith(
                               fontWeight: FontWeight.w700,
@@ -79,10 +84,12 @@ class SurahCard extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: AppSpacing.sm),
-                        AppPill.surface(
-                          icon: Icons.layers_rounded,
-                          label:
-                              '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
+                        Flexible(
+                          child: AppPill.surface(
+                            icon: Icons.layers_rounded,
+                            label:
+                                '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
+                          ),
                         ),
                       ],
                     ),
@@ -98,7 +105,7 @@ class SurahCard extends StatelessWidget {
                     const SizedBox(height: AppSpacing.sm + 2),
                     Wrap(
                       spacing: AppSpacing.sm,
-                      runSpacing: 6,
+                      runSpacing: compact ? AppSpacing.xs : 6,
                       children: [
                         AppPill.surface(
                           label: context.readQuranText(surah.revelationType),
@@ -147,13 +154,15 @@ class SurahCard extends StatelessWidget {
                   ),
                   Icon(
                     Icons.arrow_forward_ios_rounded,
-                    size: 16,
+                    size: 16.sp.clamp(14.0, 17.0),
                     color: AppColors.primary,
                   ),
                 ],
               ),
             ],
-          ),
+              ),
+            );
+          },
         ),
       ),
     );

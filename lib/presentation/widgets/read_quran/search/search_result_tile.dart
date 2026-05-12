@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/enums/app_language.dart';
@@ -44,8 +45,8 @@ class SearchResultTile extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                width: 40,
-                height: 40,
+                width: 40.w.clamp(36.0, 44.0),
+                height: 40.w.clamp(36.0, 44.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadius.sm),
                   color: colorScheme.primary.withValues(alpha: 0.12),
@@ -94,7 +95,7 @@ class SearchResultTile extends StatelessWidget {
               Icon(
                 Icons.north_east_rounded,
                 color: colorScheme.primary,
-                size: 19,
+                size: 19.sp.clamp(17.0, 20.0),
               ),
             ],
           ),

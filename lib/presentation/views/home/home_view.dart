@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/utils/app_responsive.dart';
 import '../learn_quran/learn_quran_view.dart';
 import '../read_quran/read_quran_view.dart';
 import '../settings/settings_view.dart';
@@ -24,6 +25,17 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
+    final responsive = AppResponsive.of(context);
+    final navIconSize = responsive.isDesktop
+        ? 22.0
+        : responsive.isTablet
+        ? 21.0
+        : 24.0;
+    final navHeight = responsive.isDesktop
+        ? 68.0
+        : responsive.isTablet
+        ? 70.0
+        : 72.0;
 
     return Scaffold(
       body: IndexedStack(index: _selectedIndex, children: _sections),
@@ -36,6 +48,7 @@ class _HomeViewState extends State<HomeView> {
           ),
         ),
         child: NavigationBar(
+          height: navHeight,
           selectedIndex: _selectedIndex,
           onDestinationSelected: (index) {
             setState(() {
@@ -44,18 +57,18 @@ class _HomeViewState extends State<HomeView> {
           },
           destinations: [
             NavigationDestination(
-              icon: const Icon(Icons.menu_book_rounded),
-              selectedIcon: const Icon(Icons.menu_book),
+              icon: Icon(Icons.menu_book_rounded, size: navIconSize),
+              selectedIcon: Icon(Icons.menu_book, size: navIconSize),
               label: l10n.homeReadQuranTab,
             ),
             NavigationDestination(
-              icon: const Icon(Icons.school_outlined),
-              selectedIcon: const Icon(Icons.school_rounded),
+              icon: Icon(Icons.school_outlined, size: navIconSize),
+              selectedIcon: Icon(Icons.school_rounded, size: navIconSize),
               label: l10n.homeLearnQuranTab,
             ),
             NavigationDestination(
-              icon: const Icon(Icons.settings_outlined),
-              selectedIcon: const Icon(Icons.settings_rounded),
+              icon: Icon(Icons.settings_outlined, size: navIconSize),
+              selectedIcon: Icon(Icons.settings_rounded, size: navIconSize),
               label: context.readQuranText('Settings'),
             ),
           ],

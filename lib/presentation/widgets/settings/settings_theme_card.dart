@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -38,32 +39,38 @@ class SettingsThemeCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: AppSpacing.md),
-                SegmentedButton<ThemeMode>(
-                  segments: [
-                    ButtonSegment<ThemeMode>(
-                      value: ThemeMode.system,
-                      icon: const Icon(Icons.brightness_auto_rounded, size: 18),
-                      label: Text(context.readQuranText('System')),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: SegmentedButton<ThemeMode>(
+                    segments: [
+                      ButtonSegment<ThemeMode>(
+                        value: ThemeMode.system,
+                        icon: const Icon(
+                          Icons.brightness_auto_rounded,
+                          size: 18,
+                        ),
+                        label: Text(context.readQuranText('System')),
+                      ),
+                      ButtonSegment<ThemeMode>(
+                        value: ThemeMode.light,
+                        icon: const Icon(Icons.light_mode_rounded, size: 18),
+                        label: Text(context.readQuranText('Light')),
+                      ),
+                      ButtonSegment<ThemeMode>(
+                        value: ThemeMode.dark,
+                        icon: const Icon(Icons.dark_mode_rounded, size: 18),
+                        label: Text(context.readQuranText('Dark')),
+                      ),
+                    ],
+                    selected: {themeMode},
+                    onSelectionChanged: (selected) {
+                      onThemeModeChanged(selected.first);
+                    },
+                    style: SegmentedButton.styleFrom(
+                      selectedForegroundColor: colorScheme.onPrimary,
+                      selectedBackgroundColor: colorScheme.primary,
+                      foregroundColor: colorScheme.onSurface,
                     ),
-                    ButtonSegment<ThemeMode>(
-                      value: ThemeMode.light,
-                      icon: const Icon(Icons.light_mode_rounded, size: 18),
-                      label: Text(context.readQuranText('Light')),
-                    ),
-                    ButtonSegment<ThemeMode>(
-                      value: ThemeMode.dark,
-                      icon: const Icon(Icons.dark_mode_rounded, size: 18),
-                      label: Text(context.readQuranText('Dark')),
-                    ),
-                  ],
-                  selected: {themeMode},
-                  onSelectionChanged: (selected) {
-                    onThemeModeChanged(selected.first);
-                  },
-                  style: SegmentedButton.styleFrom(
-                    selectedForegroundColor: colorScheme.onPrimary,
-                    selectedBackgroundColor: colorScheme.primary,
-                    foregroundColor: colorScheme.onSurface,
                   ),
                 ),
               ],
@@ -92,13 +99,17 @@ class _SectionTitle extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            width: 34,
-            height: 34,
+            width: 34.w.clamp(30.0, 38.0),
+            height: 34.w.clamp(30.0, 38.0),
             decoration: BoxDecoration(
               color: colorScheme.primary.withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(AppSpacing.sm + 2),
             ),
-            child: Icon(icon, color: colorScheme.primary, size: 18),
+            child: Icon(
+              icon,
+              color: colorScheme.primary,
+              size: 18.sp.clamp(16.0, 19.0),
+            ),
           ),
           const SizedBox(width: AppSpacing.sm + 2),
           Text(

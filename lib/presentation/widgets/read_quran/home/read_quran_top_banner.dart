@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/app_gradients.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../common/app_gradient_banner.dart';
 import '../../common/app_pill.dart';
+import '../../common/common_painters.dart';
 
 class ReadQuranTopBanner extends StatelessWidget {
   const ReadQuranTopBanner({
@@ -18,6 +20,7 @@ class ReadQuranTopBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return TweenAnimationBuilder<double>(
       duration: const Duration(milliseconds: 650),
       curve: Curves.easeOutCubic,
@@ -26,50 +29,127 @@ class ReadQuranTopBanner extends StatelessWidget {
         return Transform.translate(offset: Offset(0, offset), child: child);
       },
       child: AppGradientBanner(
-        gradient: AppColors.heroBanner,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        gradient: AppGradients.heroBanner,
+        child: Stack(
+          clipBehavior: Clip.none,
           children: [
-            Text(
-              context.readQuranText('Read. Reflect. Remember.'),
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                color: Colors.white,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            const SizedBox(height: AppSpacing.sm),
-            Text(
-              context.readQuranText(
-                'Offline Quran with Bangla and English support.',
-              ),
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.white.withValues(alpha: 0.88),
-              ),
-            ),
-            const SizedBox(height: AppSpacing.lg),
-            Wrap(
-              spacing: AppSpacing.sm,
-              runSpacing: AppSpacing.sm,
-              children: [
-                AppPill.overlay(
-                  icon: Icons.menu_book_rounded,
-                  label: '$surahCount ${context.readQuranText('Surahs')}',
+            Positioned(
+              top: -18,
+              right: -12,
+              child: SizedBox(
+                width: size.width * .2.w, //.clamp(110.0, 136.0),
+                height: 52.h.clamp(46.0, 58.0),
+                child: CustomPaint(
+                  painter: UShapePainter(
+                    backgroundColor: Colors.white.withValues(alpha: 0.16),
+                    shadowColor: Colors.black.withValues(alpha: 0.12),
+                    bumpWidth: 48,
+                    bumpHeight: 14,
+                    shadowBlurRadius: 5,
+                    shadowOffset: const Offset(0, 2),
+                  ),
                 ),
-                AppPill.overlay(
-                  icon: Icons.download_done_rounded,
-                  label: context.readQuranText('Offline Ready'),
+              ),
+            ),
+            Positioned(
+              left: -25,
+              bottom: -30,
+              child: Container(
+                width: 56.w.clamp(48.0, 64.0),
+                height: 56.w.clamp(48.0, 64.0),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.white.withValues(alpha: 0.14),
+                ),
+              ),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 62.w.clamp(56.0, 70.0),
+                      height: 56.h.clamp(50.0, 62.0),
+                      child: CustomPaint(
+                        painter: YShapePainter(
+                          backgroundColor: Colors.white.withValues(alpha: 0.18),
+                          shadowColor: Colors.black.withValues(alpha: 0.12),
+                          bumpWidth: 26,
+                          bumpHeight: 9,
+                          shadowBlurRadius: 5,
+                        ),
+                        child: Center(
+                          child: Icon(
+                            Icons.menu_book_rounded,
+                            color: Colors.white,
+                            size: 24.sp.clamp(21.0, 26.0),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: AppSpacing.md),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            context.readQuranText('Read. Reflect. Remember.'),
+                            style: Theme.of(context).textTheme.titleLarge
+                                ?.copyWith(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                          ),
+                          const SizedBox(height: AppSpacing.xs),
+                          Text(
+                            context.readQuranText(
+                              'Offline Quran with Bangla and English support.',
+                            ),
+                            style: Theme.of(context).textTheme.bodyMedium
+                                ?.copyWith(
+                                  color: Colors.white.withValues(alpha: 0.90),
+                                ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: AppSpacing.lg),
+                Wrap(
+                  spacing: AppSpacing.sm,
+                  runSpacing: AppSpacing.sm,
+                  children: [
+                    AppPill.overlay(
+                      icon: Icons.menu_book_rounded,
+                      label: '$surahCount ${context.readQuranText('Surahs')}',
+                    ),
+                    AppPill.overlay(
+                      icon: Icons.download_done_rounded,
+                      label: context.readQuranText('Offline Ready'),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: AppSpacing.lg),
+                FilledButton.icon(
+                  onPressed: onSearchTap,
+                  style: FilledButton.styleFrom(
+                    alignment: Alignment.centerLeft,
+                    backgroundColor: Colors.white.withValues(alpha: 0.18),
+                    foregroundColor: Colors.white,
+                    side: BorderSide(
+                      color: Colors.white.withValues(alpha: 0.34),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(AppRadius.md),
+                    ),
+                  ),
+                  icon: const Icon(Icons.search_rounded),
+                  label: Text(context.readQuranText('Search Surah, Ayah, Juz')),
                 ),
               ],
-            ),
-            const SizedBox(height: AppSpacing.lg),
-            OutlinedButton.icon(
-              onPressed: onSearchTap,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                side: BorderSide(color: Colors.white.withValues(alpha: 0.40)),
-              ),
-              icon: const Icon(Icons.search_rounded),
-              label: Text(context.readQuranText('Search Surah, Ayah, Juz')),
             ),
           ],
         ),

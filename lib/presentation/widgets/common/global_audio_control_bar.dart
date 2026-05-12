@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theme/app_spacing.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
@@ -22,6 +23,9 @@ class GlobalAudioControlBar extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
     final onPrimary = colorScheme.onPrimary;
+    final width = MediaQuery.sizeOf(context).width;
+    final barHeight = width >= 600 ? 56.0 : 60.0;
+    final actionIconSize = width >= 600 ? 26.0 : 28.0;
 
     return Material(
       color: colorScheme.primary,
@@ -42,14 +46,18 @@ class GlobalAudioControlBar extends StatelessWidget {
           SafeArea(
             top: false,
             child: SizedBox(
-              height: 60,
+              height: barHeight,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
                 child: Row(
                   children: [
                     // ── Pulsing / paused icon ──────────────────────────
                     vm.isPaused
-                        ? Icon(Icons.music_note_rounded, color: onPrimary, size: 22)
+                        ? Icon(
+                            Icons.music_note_rounded,
+                            color: onPrimary,
+                            size: 22.sp.clamp(20.0, 23.0),
+                          )
                         : _PulsingIcon(color: onPrimary),
                     const SizedBox(width: AppSpacing.sm + 2),
 
@@ -90,7 +98,7 @@ class GlobalAudioControlBar extends StatelessWidget {
                             ? Icons.play_circle_rounded
                             : Icons.pause_circle_rounded,
                         color: onPrimary,
-                        size: 28,
+                        size: actionIconSize,
                       ),
                       onPressed: () =>
                           context.read<AudioControlViewModel>().togglePlayPause(),
@@ -101,7 +109,7 @@ class GlobalAudioControlBar extends StatelessWidget {
                       icon: Icon(
                         Icons.stop_circle_rounded,
                         color: onPrimary,
-                        size: 28,
+                        size: actionIconSize,
                       ),
                       onPressed: () =>
                           context.read<AudioControlViewModel>().stop(),

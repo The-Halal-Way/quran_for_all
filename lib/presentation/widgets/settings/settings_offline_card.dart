@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -11,6 +12,7 @@ class SettingsOfflineCard extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Container(
+      padding: EdgeInsets.symmetric( vertical: 16.h),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppRadius.lg),
         gradient: LinearGradient(
@@ -22,15 +24,12 @@ class SettingsOfflineCard extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: Card(
-        color: Colors.transparent,
-        child: ListTile(
-          leading: const Icon(Icons.offline_bolt_rounded),
-          title: Text(context.readQuranText('Offline mode is enabled')),
-          subtitle: Text(
-            context.readQuranText(
-              'Quran text and translations are stored locally after setup. Audio is cached after first play.',
-            ),
+      child: ListTile(
+        leading: const Icon(Icons.offline_bolt_rounded),
+        title: Text(context.readQuranText('Offline mode is enabled')),
+        subtitle: Text(
+          context.readQuranText(
+            'Quran text and translations are stored locally after setup. Audio is cached after first play.',
           ),
         ),
       ),

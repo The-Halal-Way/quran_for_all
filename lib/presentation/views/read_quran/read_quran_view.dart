@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../core/enums/app_language.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/read_quran/bookmarks_viewmodel.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
@@ -31,6 +32,7 @@ class ReadQuranView extends StatelessWidget {
     final viewModel = context.watch<ReadQuranViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
     final textTheme = Theme.of(context).textTheme;
+    final responsive = AppResponsive.of(context);
     final isBangla = settings.language == AppLanguage.bangla;
     final banglaPreview = viewModel.lastReadAyah?.translationBn;
     final ayahPreview =
@@ -74,56 +76,66 @@ class ReadQuranView extends StatelessWidget {
             : RefreshIndicator(
                 onRefresh: viewModel.load,
                 child: AppPageScrollbar(
-                  builder: (context, controller) => ListView(
-                    controller: controller,
-                    physics: const AlwaysScrollableScrollPhysics(),
-                    padding: const EdgeInsets.fromLTRB(
-                      AppSpacing.lg,
-                      AppSpacing.sm + 2,
-                      AppSpacing.lg,
-                      AppSpacing.lg,
+                  builder: (context, controller) => Center(
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxWidth: responsive.maxReadingContentWidth,
+                      ),
+                      child: ListView(
+                        controller: controller,
+                        physics: const AlwaysScrollableScrollPhysics(),
+                        padding: EdgeInsets.fromLTRB(
+                          responsive.padding,
+                          AppSpacing.sm + 2,
+                          responsive.padding,
+                          AppSpacing.lg,
+                        ),
+                        children: [
+                          ReadQuranTopBanner(
+                            onSearchTap: () => _openSearch(context),
+                            surahCount: viewModel.surahs.length,
+                          ),
+                          const SizedBox(height: AppSpacing.lg),
+                          if (viewModel.lastRead != null &&
+                              viewModel.lastReadSurah != null) ...[
+                            ContinueReadingCard(
+                              surah: viewModel.lastReadSurah!,
+                              ayahNumber: viewModel.lastRead!.ayahNumber,
+                              ayahPreview: ayahPreview,
+                              onTap: () =>
+                                  _openSurah(context, viewModel.lastReadSurah!),
+                            ),
+                            const SizedBox(height: AppSpacing.lg),
+                          ],
+                          SectionHeader(
+                            title: context.readQuranText('All Surahs'),
+                            trailing: Chip(
+                              label: Text(
+                                '${viewModel.surahs.length} ${context.readQuranText('total')}',
+                              ),
+                              visualDensity: VisualDensity.compact,
+                            ),
+                          ),
+                          const SizedBox(height: AppSpacing.sm + 2),
+                          for (final surah in viewModel.surahs)
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                bottom: AppSpacing.sm + 2,
+                              ),
+                              child: SurahCard(
+                                surah: surah,
+                                onTap: () => _openSurah(context, surah),
+                                isBookmarked: viewModel.isSurahBookmarked(
+                                  surah.id,
+                                ),
+                                onToggleBookmark: () => unawaited(
+                                  viewModel.toggleSurahBookmark(surah),
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
                     ),
-                    children: [
-                      ReadQuranTopBanner(
-                        onSearchTap: () => _openSearch(context),
-                        surahCount: viewModel.surahs.length,
-                      ),
-                      const SizedBox(height: AppSpacing.lg),
-                      if (viewModel.lastRead != null &&
-                          viewModel.lastReadSurah != null) ...[
-                        ContinueReadingCard(
-                          surah: viewModel.lastReadSurah!,
-                          ayahNumber: viewModel.lastRead!.ayahNumber,
-                          ayahPreview: ayahPreview,
-                          onTap: () =>
-                              _openSurah(context, viewModel.lastReadSurah!),
-                        ),
-                        const SizedBox(height: AppSpacing.lg),
-                      ],
-                      SectionHeader(
-                        title: context.readQuranText('All Surahs'),
-                        trailing: Chip(
-                          label: Text(
-                            '${viewModel.surahs.length} ${context.readQuranText('total')}',
-                          ),
-                          visualDensity: VisualDensity.compact,
-                        ),
-                      ),
-                      const SizedBox(height: AppSpacing.sm + 2),
-                      for (final surah in viewModel.surahs)
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            bottom: AppSpacing.sm + 2,
-                          ),
-                          child: SurahCard(
-                            surah: surah,
-                            onTap: () => _openSurah(context, surah),
-                            isBookmarked: viewModel.isSurahBookmarked(surah.id),
-                            onToggleBookmark: () =>
-                                unawaited(viewModel.toggleSurahBookmark(surah)),
-                          ),
-                        ),
-                    ],
                   ),
                 ),
               ),

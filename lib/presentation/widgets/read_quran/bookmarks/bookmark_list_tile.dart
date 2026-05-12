@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/enums/app_language.dart';
 import '../../../../core/localization/l10n_extensions.dart';
@@ -96,19 +97,23 @@ class BookmarkListTile extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadius.lg),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpacing.lg,
-            AppSpacing.md,
-            AppSpacing.lg,
-            AppSpacing.md,
-          ),
-          child: Row(
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final compact = constraints.maxWidth < 420;
+
+            return Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppSpacing.lg,
+                AppSpacing.md,
+                AppSpacing.lg,
+                AppSpacing.md,
+              ),
+              child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                width: 40,
-                height: 40,
+                width: 40.w.clamp(36.0, 44.0),
+                height: 40.w.clamp(36.0, 44.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadius.sm),
                   color: colorScheme.primary.withValues(alpha: 0.12),
@@ -120,25 +125,46 @@ class BookmarkListTile extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Text(
+                    if (compact)
+                      Wrap(
+                        spacing: AppSpacing.sm,
+                        runSpacing: AppSpacing.xs,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [
+                          Text(
                             _title(context),
-                            maxLines: 1,
+                            maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             style: Theme.of(context).textTheme.titleMedium
                                 ?.copyWith(fontWeight: FontWeight.w700),
                           ),
-                        ),
-                        const SizedBox(width: AppSpacing.sm),
-                        Chip(
-                          visualDensity: VisualDensity.compact,
-                          avatar: Icon(_typeIcon(), size: 14),
-                          label: Text(_typeLabel(context)),
-                        ),
-                      ],
-                    ),
+                          Chip(
+                            visualDensity: VisualDensity.compact,
+                            avatar: Icon(_typeIcon(), size: 14),
+                            label: Text(_typeLabel(context)),
+                          ),
+                        ],
+                      )
+                    else
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              _title(context),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: Theme.of(context).textTheme.titleMedium
+                                  ?.copyWith(fontWeight: FontWeight.w700),
+                            ),
+                          ),
+                          const SizedBox(width: AppSpacing.sm),
+                          Chip(
+                            visualDensity: VisualDensity.compact,
+                            avatar: Icon(_typeIcon(), size: 14),
+                            label: Text(_typeLabel(context)),
+                          ),
+                        ],
+                      ),
                     const SizedBox(height: AppSpacing.xs + 1),
                     Text(
                       _subtitle(context),
@@ -155,10 +181,12 @@ class BookmarkListTile extends StatelessWidget {
               Icon(
                 Icons.north_east_rounded,
                 color: colorScheme.primary,
-                size: 19,
+                size: 19.sp.clamp(17.0, 20.0),
               ),
             ],
-          ),
+              ),
+            );
+          },
         ),
       ),
     );

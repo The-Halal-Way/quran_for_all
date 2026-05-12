@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/enums/app_language.dart';
 import '../../../core/localization/l10n_extensions.dart';
@@ -87,13 +88,17 @@ class _SectionTitle extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            width: 34,
-            height: 34,
+            width: 34.w.clamp(30.0, 38.0),
+            height: 34.w.clamp(30.0, 38.0),
             decoration: BoxDecoration(
               color: colorScheme.primary.withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(AppSpacing.sm + 2),
             ),
-            child: Icon(icon, color: colorScheme.primary, size: 18),
+            child: Icon(
+              icon,
+              color: colorScheme.primary,
+              size: 18.sp.clamp(16.0, 19.0),
+            ),
           ),
           const SizedBox(width: AppSpacing.sm + 2),
           Text(

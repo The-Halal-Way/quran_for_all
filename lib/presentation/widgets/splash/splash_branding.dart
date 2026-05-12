@@ -31,9 +31,14 @@ class SplashBranding extends StatelessWidget {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.primary.withValues(alpha: 0.35),
-                  blurRadius: 30,
-                  offset: const Offset(0, 14),
+                  color: AppColors.primary.withValues(alpha: 0.30),
+                  blurRadius: 28,
+                  offset: const Offset(0, 12),
+                ),
+                BoxShadow(
+                  color: AppColors.primary.withValues(alpha: 0.10),
+                  blurRadius: 56,
+                  offset: const Offset(0, 28),
                 ),
               ],
             ),

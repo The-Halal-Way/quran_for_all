@@ -3,7 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/app_gradients.dart';
+import '../../../core/utils/app_responsive.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../viewmodels/splash_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
@@ -47,21 +48,24 @@ class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<SplashViewModel>();
+    final responsive = AppResponsive.of(context);
+    final decorCircleLarge = responsive.moderate(220, tabletFactor: 1.05, desktopFactor: 1.1);
+    final decorCircleSmall = responsive.moderate(190, tabletFactor: 1.04, desktopFactor: 1.08);
 
     return Scaffold(
       body: Stack(
         children: [
           const Positioned.fill(
             child: DecoratedBox(
-              decoration: BoxDecoration(gradient: AppColors.splashBg),
+              decoration: BoxDecoration(gradient: AppGradients.splash),
             ),
           ),
           Positioned(
             top: -80,
             left: -70,
             child: Container(
-              width: 220,
-              height: 220,
+              width: decorCircleLarge,
+              height: decorCircleLarge,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.white.withValues(alpha: 0.10),
@@ -72,8 +76,8 @@ class _SplashViewState extends State<SplashView> {
             right: -60,
             bottom: 30,
             child: Container(
-              width: 190,
-              height: 190,
+              width: decorCircleSmall,
+              height: decorCircleSmall,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.white.withValues(alpha: 0.08),
@@ -85,9 +89,11 @@ class _SplashViewState extends State<SplashView> {
               child: AppPageScrollbar(
                 builder: (context, controller) => SingleChildScrollView(
                   controller: controller,
-                  padding: const EdgeInsets.all(24),
+                  padding: EdgeInsets.all(responsive.padding + 4),
                   child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 520),
+                    constraints: BoxConstraints(
+                      maxWidth: responsive.maxContentWidth,
+                    ),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [

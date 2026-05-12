@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/app_gradients.dart';
 import '../../../core/theme/app_spacing.dart';
 
 class LearnHeaderCard extends StatelessWidget {
@@ -30,13 +32,18 @@ class LearnHeaderCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(AppSpacing.xl - 2),
       decoration: BoxDecoration(
-        gradient: AppColors.heroBanner,
+        gradient: AppGradients.heroBanner,
         borderRadius: BorderRadius.circular(AppRadius.xxl - 2),
         boxShadow: [
           BoxShadow(
-            color: AppColors.primary.withValues(alpha: 0.18),
-            blurRadius: 22,
-            offset: const Offset(0, 14),
+            color: AppColors.primary.withValues(alpha: 0.16),
+            blurRadius: 24,
+            offset: const Offset(0, 10),
+          ),
+          BoxShadow(
+            color: AppColors.primary.withValues(alpha: 0.06),
+            blurRadius: 56,
+            offset: const Offset(0, 28),
           ),
         ],
       ),
@@ -47,7 +54,7 @@ class LearnHeaderCard extends StatelessWidget {
             l10n.learnHeaderTitle,
             style: textTheme.headlineMedium?.copyWith(
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 30.sp.clamp(24.0, 31.0),
               height: 1.12,
             ),
           ),
@@ -62,7 +69,7 @@ class LearnHeaderCard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(AppRadius.full),
             child: LinearProgressIndicator(
-              minHeight: 10,
+              minHeight: 10.h.clamp(8.0, 10.0),
               value: overallProgress,
               backgroundColor: Colors.white.withValues(alpha: 0.25),
               color: AppColors.secondaryLight,
@@ -77,17 +84,20 @@ class LearnHeaderCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSpacing.lg - 2),
-          Row(
+          Wrap(
+            spacing: AppSpacing.sm,
+            runSpacing: AppSpacing.sm,
             children: [
-              Expanded(
+              SizedBox(
+                width: 240,
                 child: _MetricPill(
                   icon: Icons.workspace_premium_rounded,
                   label: l10n.learnHeaderModulesLabel,
                   value: '$completedModules/$totalModules',
                 ),
               ),
-              const SizedBox(width: AppSpacing.sm),
-              Expanded(
+              SizedBox(
+                width: 240,
                 child: _MetricPill(
                   icon: Icons.local_fire_department_rounded,
                   label: l10n.learnHeaderStreakLabel,

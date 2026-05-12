@@ -8,6 +8,7 @@ import '../../../core/localization/learn_quran_message_localizer.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/learn_quran_content.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
 import '../../viewmodels/learn_quran_viewmodel.dart';
@@ -79,17 +80,26 @@ class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
     final moduleTitle = widget.module.title;
     final moduleSubtitle = widget.module.subtitle;
     final moduleDescription = widget.module.description;
+    final responsive = AppResponsive.of(context);
 
     return Scaffold(
       appBar: AppBar(title: Text(moduleTitle)),
       body: AppGradientBackground(
         child: AppPageScrollbar(
-            builder: (context, controller) => ListView(
-              controller: controller,
-              padding: const EdgeInsets.fromLTRB(
-                AppSpacing.lg, AppSpacing.sm + 2, AppSpacing.lg, AppSpacing.lg,
-              ),
-              children: [
+            builder: (context, controller) => Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: responsive.maxReadingContentWidth,
+                ),
+                child: ListView(
+                  controller: controller,
+                  padding: EdgeInsets.fromLTRB(
+                    responsive.padding,
+                    AppSpacing.sm + 2,
+                    responsive.padding,
+                    AppSpacing.lg,
+                  ),
+                  children: [
                 Container(
                   padding: const EdgeInsets.all(AppSpacing.lg),
                   decoration: BoxDecoration(
@@ -213,7 +223,9 @@ class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
                           : null,
                     ),
                   ),
-              ],
+                  ],
+                ),
+              ),
             ),
           ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -29,8 +30,8 @@ class LearnNextLessonCard extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  width: 40,
-                  height: 40,
+                  width: 40.w.clamp(36.0, 44.0),
+                  height: 40.w.clamp(36.0, 44.0),
                   decoration: BoxDecoration(
                     color: Theme.of(
                       context,
