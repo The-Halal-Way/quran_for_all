@@ -54,6 +54,7 @@ class AyahTile extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      // Ayah number and Juz info
                       Wrap(
                         spacing: AppSpacing.sm,
                         runSpacing: AppSpacing.xs,
@@ -103,6 +104,7 @@ class AyahTile extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: AppSpacing.xs),
+                      // bookmark, play, and last read buttons
                       Wrap(
                         spacing: AppSpacing.xs,
                         children: [
@@ -142,6 +144,7 @@ class AyahTile extends StatelessWidget {
                 else
                   Row(
                     children: [
+                      // Ayah number and Juz info
                       Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: AppSpacing.sm + 2,

@@ -31,7 +31,7 @@ class SurahAyahList extends StatelessWidget {
   final Map<int, GlobalKey> _ayahKeys;
   final int? _highlightedAyahNumber;
   final Future<void> Function(BuildContext, SurahDetailsViewModel, AyahModel)
-      _playAyahWithFeedback;
+  _playAyahWithFeedback;
 
   @override
   Widget build(BuildContext context) {
@@ -55,74 +55,79 @@ class SurahAyahList extends StatelessWidget {
               child: Wrap(
                 spacing: AppSpacing.sm,
                 runSpacing: AppSpacing.sm,
-                children: [
-                  for (final ayah in viewModel.ayahs)
-                    KeyedSubtree(
-                      key: _ayahKeyFor(ayah.ayahNumber),
-                      child: InkWell(
-                        borderRadius: BorderRadius.circular(AppRadius.sm),
-                        onTap: () => _showAyahDetailsSheet(
-                          context,
-                          ayah,
-                          viewModel,
-                          settings,
+                children: List.generate(viewModel.ayahs.length, (index) {
+                  final ayah = viewModel.ayahs[index];
+                  return KeyedSubtree(
+                    key: _ayahKeyFor(ayah.ayahNumber),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(AppRadius.sm),
+                      onTap: () => _showAyahDetailsSheet(
+                        context,
+                        ayah,
+                        viewModel,
+                        settings,
+                      ),
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: AppSpacing.sm,
+                          vertical: AppSpacing.xs,
                         ),
-                        child: AnimatedContainer(
-                          duration: const Duration(milliseconds: 200),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: AppSpacing.sm,
-                            vertical: AppSpacing.xs,
-                          ),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(AppRadius.sm),
-                            color: ayah.ayahNumber == _highlightedAyahNumber
-                                ? Theme.of(
-                                    context,
-                                  ).colorScheme.primary.withValues(alpha: 0.12)
-                                : null,
-                          ),
-                          child: Text.rich(
-                            TextSpan(
-                              text: '${ayah.arabicText} ',
-                              children: [
-                                WidgetSpan(
-                                  alignment: PlaceholderAlignment.middle,
-                                  child: Container(
-                                    width: 24,
-                                    height: 24,
-                                    alignment: Alignment.center,
-                                    margin: const EdgeInsetsDirectional.only(
-                                      start: AppSpacing.xs,
-                                    ),
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      color: Theme.of(
-                                        context,
-                                      ).colorScheme.primary.withValues(alpha: 0.14),
-                                      border: Border.all(
-                                        color: Theme.of(
-                                          context,
-                                        ).colorScheme.primary.withValues(alpha: 0.45),
-                                      ),
-                                    ),
-                                    child: Text(
-                                      '${ayah.ayahNumber}',
-                                      style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                                        fontWeight: FontWeight.w700,
-                                        color: Theme.of(context).colorScheme.primary,
-                                      ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(AppRadius.sm),
+                          color: ayah.ayahNumber == _highlightedAyahNumber
+                              ? Theme.of(
+                                  context,
+                                ).colorScheme.primary.withValues(alpha: 0.12)
+                              : null,
+                        ),
+                        child: Text.rich(
+                          TextSpan(
+                            text: '${ayah.arabicText} ',
+                            children: [
+                              WidgetSpan(
+                                alignment: PlaceholderAlignment.middle,
+                                child: Container(
+                                  width: 24,
+                                  height: 24,
+                                  alignment: Alignment.center,
+                                  margin: const EdgeInsetsDirectional.only(
+                                    start: AppSpacing.xs,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Theme.of(context).colorScheme.primary
+                                        .withValues(alpha: 0.14),
+                                    border: Border.all(
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .primary
+                                          .withValues(alpha: 0.45),
                                     ),
                                   ),
+                                  child: Text(
+                                    '${ayah.ayahNumber}',
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .labelSmall
+                                        ?.copyWith(
+                                          fontWeight: FontWeight.w700,
+                                          color: Theme.of(
+                                            context,
+                                          ).colorScheme.primary,
+                                        ),
+                                  ),
                                 ),
-                              ],
-                            ),
-                            textDirection: TextDirection.rtl,
-                            style: AppTextStyles.quranArabic(context),
+                              ),
+                            ],
                           ),
+                          textDirection: TextDirection.rtl,
+                          style: AppTextStyles.quranArabic(context),
                         ),
                       ),
                     ),
-                ],
+                  );
+                }),
               ),
             ),
           ),
@@ -148,12 +153,16 @@ class SurahAyahList extends StatelessWidget {
               curve: Curves.easeOut,
               decoration: BoxDecoration(
                 color: ayah.ayahNumber == _highlightedAyahNumber
-                    ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.08)
+                    ? Theme.of(
+                        context,
+                      ).colorScheme.primary.withValues(alpha: 0.08)
                     : null,
                 borderRadius: BorderRadius.circular(AppRadius.lg),
                 border: ayah.ayahNumber == _highlightedAyahNumber
                     ? Border.all(
-                        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.42),
+                        color: Theme.of(
+                          context,
+                        ).colorScheme.primary.withValues(alpha: 0.42),
                         width: 1.2,
                       )
                     : null,
