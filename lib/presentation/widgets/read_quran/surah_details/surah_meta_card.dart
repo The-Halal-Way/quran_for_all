@@ -6,7 +6,7 @@ import '../../../../core/theme/app_text_styles.dart';
 import '../../../../data/models/surah_model.dart';
 import '../../common/app_pill.dart';
 
-class SurahMetaCard extends StatelessWidget {
+class SurahMetaCard extends StatefulWidget {
   const SurahMetaCard({
     super.key,
     required this.surah,
@@ -19,12 +19,24 @@ class SurahMetaCard extends StatelessWidget {
   final VoidCallback onTogglePlayback;
 
   @override
+  State<SurahMetaCard> createState() => _SurahMetaCardState();
+}
+
+class _SurahMetaCardState extends State<SurahMetaCard> {
+  bool _isExpanded = true;
+
+  @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(AppSpacing.xl - 2),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.xl - 2,
+        AppSpacing.sm * 2.5,
+        AppSpacing.xl - 2,
+        AppSpacing.xl - 2,
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppRadius.xl),
         gradient: LinearGradient(
@@ -35,64 +47,127 @@ class SurahMetaCard extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Text(
-            surah.nameArabic,
-            textAlign: TextAlign.center,
-            style: AppTextStyles.surahArabicName(context),
-          ),
-          const SizedBox(height: AppSpacing.xs + 1),
-          Text(
-            surah.nameEnglish,
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(
-              color: Colors.white,
-            ),
-          ),
-          const SizedBox(height: AppSpacing.xs + 1),
-          Text(
-            surah.nameTranslated,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: Colors.white.withValues(alpha: 0.9),
-            ),
-          ),
-          const SizedBox(height: AppSpacing.lg - 2),
-          Wrap(
-            spacing: AppSpacing.sm,
-            runSpacing: AppSpacing.sm,
-            alignment: WrapAlignment.center,
+          Row(
             children: [
-              AppPill.overlay(
-                icon: Icons.layers_outlined,
-                label: '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
+              const SizedBox(width: 32),
+              Expanded(
+                child: Text(
+                  widget.surah.nameArabic,
+                  textAlign: TextAlign.center,
+                  style: AppTextStyles.surahArabicName(context),
+                ),
               ),
-              AppPill.overlay(
-                icon: Icons.public_rounded,
-                label: context.readQuranText(surah.revelationType),
+              IconButton.filledTonal(
+                onPressed: () {
+                  setState(() {
+                    _isExpanded = !_isExpanded;
+                  });
+                },
+                padding: EdgeInsets.zero,
+                visualDensity: VisualDensity.compact,
+                constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                style: IconButton.styleFrom(
+                  backgroundColor: Colors.white.withValues(alpha: 0.2),
+                  foregroundColor: Colors.white,
+                ),
+                tooltip: context.readQuranText(
+                  _isExpanded ? 'Shrink card' : 'Expand card',
+                ),
+                icon: Icon(
+                  _isExpanded
+                      ? Icons.keyboard_arrow_up_rounded
+                      : Icons.keyboard_arrow_down_rounded,
+                ),
               ),
             ],
           ),
-          const SizedBox(height: AppSpacing.lg - 2),
-          FilledButton.tonalIcon(
-            onPressed: onTogglePlayback,
-            style: FilledButton.styleFrom(
-              backgroundColor: Colors.white,
-              foregroundColor: colorScheme.primary,
-            ),
-            icon: Icon(
-              isPlayingFullSurah
-                  ? Icons.stop_circle_outlined
-                  : Icons.play_circle_fill_rounded,
-            ),
-            label: Text(
-              context.readQuranText(
-                isPlayingFullSurah ? 'Stop Surah Audio' : 'Play Full Surah',
-              ),
+          AnimatedCrossFade(
+            duration: const Duration(milliseconds: 220),
+            crossFadeState: _isExpanded
+                ? CrossFadeState.showSecond
+                : CrossFadeState.showFirst,
+            firstChild: const SizedBox.shrink(),
+            secondChild: Column(
+              children: [
+                const SizedBox(height: AppSpacing.xs + 1),
+                Text(
+                  widget.surah.nameEnglish,
+                  style: Theme.of(
+                    context,
+                  ).textTheme.titleLarge?.copyWith(color: Colors.white),
+                ),
+                const SizedBox(height: AppSpacing.xs + 1),
+                Text(
+                  widget.surah.nameTranslated,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: Colors.white.withValues(alpha: 0.9),
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.lg - 2),
+                Wrap(
+                  spacing: AppSpacing.sm,
+                  runSpacing: AppSpacing.sm,
+                  alignment: WrapAlignment.center,
+                  children: [
+                    AppPill.overlay(
+                      icon: Icons.layers_outlined,
+                      label:
+                          '${widget.surah.totalAyahs} ${context.readQuranText('ayahs')}',
+                    ),
+                    AppPill.overlay(
+                      icon: Icons.public_rounded,
+                      label: context.readQuranText(widget.surah.revelationType),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: AppSpacing.lg - 2),
+                FilledButton.tonalIcon(
+                  onPressed: widget.onTogglePlayback,
+                  style: FilledButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    foregroundColor: colorScheme.primary,
+                  ),
+                  icon: Icon(
+                    widget.isPlayingFullSurah
+                        ? Icons.stop_circle_outlined
+                        : Icons.play_circle_fill_rounded,
+                  ),
+                  label: Text(
+                    context.readQuranText(
+                      widget.isPlayingFullSurah
+                          ? 'Stop Surah Audio'
+                          : 'Play Full Surah',
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
+          if (!_isExpanded) ...[
+            const SizedBox(height: AppSpacing.sm),
+            FilledButton.tonalIcon(
+              onPressed: widget.onTogglePlayback,
+              style: FilledButton.styleFrom(
+                backgroundColor: Colors.white,
+                foregroundColor: colorScheme.primary,
+              ),
+              icon: Icon(
+                widget.isPlayingFullSurah
+                    ? Icons.stop_circle_outlined
+                    : Icons.play_circle_fill_rounded,
+              ),
+              label: Text(
+                context.readQuranText(
+                  widget.isPlayingFullSurah
+                      ? 'Stop Surah Audio'
+                      : 'Play Full Surah',
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );
   }
 }
-
-
