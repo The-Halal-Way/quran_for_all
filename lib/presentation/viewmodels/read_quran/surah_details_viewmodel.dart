@@ -39,6 +39,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
   List<AyahModel> _ayahs = const [];
   Set<int> _bookmarkedAyahNumbers = const <int>{};
   int _loadRequestId = 0;
+  bool _didEnsureTafsir = false;
 
   SurahModel? get surah => _surah;
   bool get isLoading => _isLoading;
@@ -75,6 +76,16 @@ class SurahDetailsViewModel extends ChangeNotifier {
     notifyListeners();
 
     try {
+      if (!_didEnsureTafsir) {
+        _didEnsureTafsir = true;
+        // Best-effort tafsir backfill for users who already had Quran data.
+        try {
+          await _quranRepository.importDataIfNeeded();
+        } catch (_) {
+          // Ignore backfill failure and continue loading ayahs.
+        }
+      }
+
       final ayahs = await _quranRepository.getAyahsBySurah(selectedSurah.id);
       final bookmarkedAyahs = await _quranRepository.getBookmarkedAyahNumbers(
         selectedSurah.id,

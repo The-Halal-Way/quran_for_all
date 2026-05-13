@@ -31,6 +31,41 @@ class AyahTile extends StatelessWidget {
   final VoidCallback onToggleBookmark;
   final VoidCallback? onMarkAsLastRead;
 
+  void _showTafsirSheet(BuildContext context) {
+    showModalBottomSheet<void>(
+      context: context,
+      useRootNavigator: true,
+      isScrollControlled: true,
+      enableDrag: true,
+      showDragHandle: true,
+      useSafeArea: true,
+      builder: (sheetContext) {
+        return _TafsirBottomSheet(
+          ayah: ayah,
+          tafsir: ayah.tafsirFor(language),
+        );
+      },
+    );
+  }
+
+  Widget _buildTafsirButton(BuildContext context) {
+    return FilledButton.tonalIcon(
+      onPressed: () => _showTafsirSheet(context),
+      icon: const Icon(Icons.auto_stories_rounded, size: 18),
+      label: Text(context.readQuranText('Tafsir')),
+      style: FilledButton.styleFrom(
+        visualDensity: VisualDensity.compact,
+        padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.sm + 2,
+          vertical: AppSpacing.xs + 1,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppRadius.full),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final transliteration = ayah.transliterationFor(language);
@@ -108,6 +143,7 @@ class AyahTile extends StatelessWidget {
                       Wrap(
                         spacing: AppSpacing.xs,
                         children: [
+                          _buildTafsirButton(context),
                           IconButton(
                             onPressed: onToggleBookmark,
                             icon: Icon(
@@ -182,6 +218,7 @@ class AyahTile extends StatelessWidget {
                         ),
                       ),
                       const Spacer(),
+                      _buildTafsirButton(context),
                       IconButton(
                         onPressed: onToggleBookmark,
                         icon: Icon(
@@ -285,6 +322,79 @@ class _TranslationLine extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _TafsirBottomSheet extends StatelessWidget {
+  const _TafsirBottomSheet({required this.ayah, required this.tafsir});
+
+  final AyahModel ayah;
+  final String tafsir;
+
+  @override
+  Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+    final media = MediaQuery.of(context);
+
+    return DraggableScrollableSheet(
+      expand: false,
+      initialChildSize: .4,
+      minChildSize: 0.3,
+      maxChildSize: 0.94,
+      builder: (context, scrollController) {
+        return Padding(
+          padding: EdgeInsets.fromLTRB(
+            AppSpacing.lg,
+            0,
+            AppSpacing.lg,
+            media.viewInsets.bottom + AppSpacing.lg,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                context.readQuranText('Tafsir'),
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              const SizedBox(height: AppSpacing.xs),
+              Text(
+                '${context.readQuranText('Surah')} ${ayah.surahId}:${ayah.ayahNumber}',
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                  color: colorScheme.primary,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              const SizedBox(height: AppSpacing.md),
+              Expanded(
+                child: tafsir.trim().isEmpty
+                    ? Center(
+                        child: Text(
+                          context.readQuranText(
+                            'No tafsir available for this ayah yet.',
+                          ),
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.bodyMedium,
+                        ),
+                      )
+                    : ListView(
+                        controller: scrollController,
+                        children: [
+                          SelectableText(
+                            tafsir,
+                            style: Theme.of(
+                              context,
+                            ).textTheme.bodyMedium?.copyWith(height: 1.5),
+                          ),
+                        ],
+                      ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

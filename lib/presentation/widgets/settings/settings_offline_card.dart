@@ -29,7 +29,7 @@ class SettingsOfflineCard extends StatelessWidget {
         title: Text(context.readQuranText('Offline mode is enabled')),
         subtitle: Text(
           context.readQuranText(
-            'Quran text and translations are stored locally after setup. Audio is cached after first play.',
+            'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.',
           ),
         ),
       ),

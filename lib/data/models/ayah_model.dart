@@ -14,6 +14,8 @@ class AyahModel {
     required this.transliterationBn,
     required this.translationEn,
     required this.translationBn,
+    required this.tafsirEn,
+    required this.tafsirBn,
     required this.audioUrl,
   });
 
@@ -28,12 +30,57 @@ class AyahModel {
   final String transliterationBn;
   final String translationEn;
   final String translationBn;
+  final String tafsirEn;
+  final String tafsirBn;
   final String audioUrl;
 
   String transliterationFor(AppLanguage language) {
     return language == AppLanguage.bangla
         ? transliterationBn
         : transliterationEn;
+  }
+
+  String tafsirFor(AppLanguage language) {
+    final cleanTafsirEn = tafsirEn.trim();
+    final cleanTafsirBn = tafsirBn.trim();
+
+    if (language == AppLanguage.bangla) {
+      if (cleanTafsirBn.isNotEmpty && _isBanglaScript(cleanTafsirBn)) {
+        return cleanTafsirBn;
+      }
+
+      if (translationBn.trim().isNotEmpty) {
+        return translationBn;
+      }
+
+      if (cleanTafsirEn.isNotEmpty && _isLatinScript(cleanTafsirEn)) {
+        return cleanTafsirEn;
+      }
+
+      return translationEn;
+    }
+
+    if (cleanTafsirEn.isNotEmpty && _isLatinScript(cleanTafsirEn)) {
+      return cleanTafsirEn;
+    }
+
+    if (translationEn.trim().isNotEmpty) {
+      return translationEn;
+    }
+
+    if (cleanTafsirBn.isNotEmpty && _isBanglaScript(cleanTafsirBn)) {
+      return cleanTafsirBn;
+    }
+
+    return '';
+  }
+
+  static String normalizeTafsir(String text) {
+    return text
+        .replaceAll(RegExp(r'<[^>]*>'), ' ')
+        .replaceAll(RegExp(r'\[[^\]]*\]'), ' ')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
   }
 
   static String normalizeBanglaPronunciation({
@@ -72,6 +119,10 @@ class AyahModel {
     return RegExp(r'[\u0980-\u09FF]').hasMatch(text);
   }
 
+  static bool _isLatinScript(String text) {
+    return RegExp(r'[A-Za-z]').hasMatch(text);
+  }
+
   factory AyahModel.fromMergedApi({
     required int surahId,
     required Map<String, dynamic> arabicAyah,
@@ -79,6 +130,8 @@ class AyahModel {
     Map<String, dynamic>? transliterationBnAyah,
     Map<String, dynamic>? englishTranslationAyah,
     Map<String, dynamic>? banglaTranslationAyah,
+    Map<String, dynamic>? tafsirEnAyah,
+    Map<String, dynamic>? tafsirBnAyah,
     required String audioBaseUrl,
   }) {
     final globalNumber = _toInt(arabicAyah['number']);
@@ -98,6 +151,8 @@ class AyahModel {
       ),
       translationEn: (englishTranslationAyah?['text'] as String?) ?? '',
       translationBn: (banglaTranslationAyah?['text'] as String?) ?? '',
+      tafsirEn: normalizeTafsir((tafsirEnAyah?['text'] as String?) ?? ''),
+      tafsirBn: normalizeTafsir((tafsirBnAyah?['text'] as String?) ?? ''),
       audioUrl: '$audioBaseUrl/$globalNumber.mp3',
     );
   }
@@ -121,6 +176,8 @@ class AyahModel {
       ),
       translationEn: (map['translation_en'] as String?) ?? '',
       translationBn: (map['translation_bn'] as String?) ?? '',
+      tafsirEn: (map['tafsir_en'] as String?) ?? '',
+      tafsirBn: (map['tafsir_bn'] as String?) ?? '',
       audioUrl: (map['audio_url'] as String?) ?? '',
     );
   }
@@ -138,6 +195,8 @@ class AyahModel {
       'transliteration_bn': transliterationBn,
       'translation_en': translationEn,
       'translation_bn': translationBn,
+      'tafsir_en': tafsirEn,
+      'tafsir_bn': tafsirBn,
       'audio_url': audioUrl,
     };
   }

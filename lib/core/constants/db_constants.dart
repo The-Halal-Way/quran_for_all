@@ -2,7 +2,7 @@ class DbConstants {
   const DbConstants._();
 
   static const String databaseName = 'quran_for_all.db';
-  static const int databaseVersion = 2;
+  static const int databaseVersion = 4;
 
   static const String tableSurahs = 'surahs';
   static const String tableAyahs = 'ayahs';

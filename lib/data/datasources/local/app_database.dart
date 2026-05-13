@@ -52,6 +52,8 @@ class AppDatabase {
         transliteration_bn TEXT NOT NULL,
         translation_en TEXT NOT NULL,
         translation_bn TEXT NOT NULL,
+        tafsir_en TEXT NOT NULL DEFAULT '',
+        tafsir_bn TEXT NOT NULL DEFAULT '',
         audio_url TEXT NOT NULL,
         FOREIGN KEY (surah_id) REFERENCES ${DbConstants.tableSurahs}(id)
       )
@@ -85,6 +87,15 @@ class AppDatabase {
     if (oldVersion < 2) {
       await _createBookmarksTable(db);
     }
+
+    if (oldVersion < 3) {
+      await _addTafsirColumns(db);
+    }
+
+    if (oldVersion < 4) {
+      await _addTafsirColumns(db);
+      await _resetTafsirColumns(db);
+    }
   }
 
   Future<void> _createBookmarksTable(Database db) async {
@@ -112,6 +123,26 @@ class AppDatabase {
     );
   }
 
+  Future<void> _addTafsirColumns(Database db) async {
+    if (!await _hasColumn(db, DbConstants.tableAyahs, 'tafsir_en')) {
+      await db.execute(
+        "ALTER TABLE ${DbConstants.tableAyahs} ADD COLUMN tafsir_en TEXT NOT NULL DEFAULT ''",
+      );
+    }
+
+    if (!await _hasColumn(db, DbConstants.tableAyahs, 'tafsir_bn')) {
+      await db.execute(
+        "ALTER TABLE ${DbConstants.tableAyahs} ADD COLUMN tafsir_bn TEXT NOT NULL DEFAULT ''",
+      );
+    }
+  }
+
+  Future<void> _resetTafsirColumns(Database db) async {
+    await db.execute(
+      "UPDATE ${DbConstants.tableAyahs} SET tafsir_en = '', tafsir_bn = ''",
+    );
+  }
+
   Future<bool> hasQuranData() async {
     final db = await database;
     final result = await db.rawQuery(
@@ -119,6 +150,90 @@ class AppDatabase {
     );
     final count = result.first['count'] as int? ?? 0;
     return count > 0;
+  }
+
+  Future<bool> hasTafsirData() async {
+    final db = await database;
+
+    if (!await _hasColumn(db, DbConstants.tableAyahs, 'tafsir_en')) {
+      return false;
+    }
+
+    final result = await db.rawQuery(
+      '''
+      SELECT COUNT(*) as count
+      FROM ${DbConstants.tableAyahs}
+      WHERE TRIM(tafsir_en) <> '' OR TRIM(tafsir_bn) <> ''
+      ''',
+    );
+    final count = result.first['count'] as int? ?? 0;
+    return count > 0;
+  }
+
+  Future<bool> hasLocalizedTafsirData() async {
+    final db = await database;
+
+    if (!await _hasColumn(db, DbConstants.tableAyahs, 'tafsir_en')) {
+      return false;
+    }
+
+    final rows = await db.query(
+      DbConstants.tableAyahs,
+      columns: const ['tafsir_en', 'tafsir_bn'],
+      where: "TRIM(tafsir_en) <> '' OR TRIM(tafsir_bn) <> ''",
+      limit: 500,
+    );
+
+    for (final row in rows) {
+      final tafsirEn = (row['tafsir_en'] as String? ?? '').trim();
+      final tafsirBn = (row['tafsir_bn'] as String? ?? '').trim();
+
+      if (_containsLatinScript(tafsirEn) || _containsBanglaScript(tafsirBn)) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  Future<void> saveTafsirData({
+    required Map<int, String> tafsirEnByAyahId,
+    required Map<int, String> tafsirBnByAyahId,
+  }) async {
+    if (tafsirEnByAyahId.isEmpty && tafsirBnByAyahId.isEmpty) {
+      return;
+    }
+
+    final db = await database;
+    await db.transaction((txn) async {
+      final batch = txn.batch();
+      final ayahIds = <int>{
+        ...tafsirEnByAyahId.keys,
+        ...tafsirBnByAyahId.keys,
+      };
+
+      for (final ayahId in ayahIds) {
+        final updateMap = <String, Object?>{};
+        if (tafsirEnByAyahId.containsKey(ayahId)) {
+          updateMap['tafsir_en'] = tafsirEnByAyahId[ayahId];
+        }
+        if (tafsirBnByAyahId.containsKey(ayahId)) {
+          updateMap['tafsir_bn'] = tafsirBnByAyahId[ayahId];
+        }
+        if (updateMap.isEmpty) {
+          continue;
+        }
+
+        batch.update(
+          DbConstants.tableAyahs,
+          updateMap,
+          where: 'id = ?',
+          whereArgs: [ayahId],
+        );
+      }
+
+      await batch.commit(noResult: true);
+    });
   }
 
   Future<void> insertQuranData({
@@ -405,6 +520,28 @@ class AppDatabase {
       await db.close();
       _database = null;
     }
+  }
+
+  Future<bool> _hasColumn(
+    DatabaseExecutor db,
+    String table,
+    String column,
+  ) async {
+    final tableInfo = await db.rawQuery('PRAGMA table_info($table)');
+    for (final row in tableInfo) {
+      if ((row['name'] as String?) == column) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  bool _containsLatinScript(String text) {
+    return RegExp(r'[A-Za-z]').hasMatch(text);
+  }
+
+  bool _containsBanglaScript(String text) {
+    return RegExp(r'[\u0980-\u09FF]').hasMatch(text);
   }
 
   String _buildSearchContent(AyahModel ayah) {

@@ -13,6 +13,10 @@ const Map<String, String> readQuranBnContentMap = <String, String>{
   'Save ayah bookmark': 'আয়াত বুকমার্ক করুন',
   'Remove ayah bookmark': 'আয়াত বুকমার্ক সরান',
   'Mark ayah as last read': 'শেষ পড়া হিসেবে আয়াত চিহ্নিত করুন',
+  'Read tafsir': 'তাফসির পড়ুন',
+  'Tafsir': 'তাফসির',
+  'No tafsir available for this ayah yet.':
+      'এই আয়াতের তাফসির এখনও পাওয়া যায়নি।',
   'Save surah bookmark': 'সূরা বুকমার্ক করুন',
   'Remove surah bookmark': 'সূরা বুকমার্ক সরান',
 
@@ -87,4 +91,6 @@ const Map<String, String> readQuranBnContentMap = <String, String>{
   'Offline mode is enabled': 'অফলাইন মোড চালু আছে',
   'Quran text and translations are stored locally after setup. Audio is cached after first play.':
       'সেটআপের পরে কুরআনের লেখা ও অনুবাদ স্থানীয়ভাবে সংরক্ষিত। অডিও প্রথমবার চালানোর পরে ক্যাশ হয়।',
+  'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.':
+      'সেটআপের পরে কুরআনের লেখা, অনুবাদ ও তাফসির স্থানীয়ভাবে সংরক্ষিত। অডিও প্রথমবার চালানোর পরে ক্যাশ হয়।',
 };

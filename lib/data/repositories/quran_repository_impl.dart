@@ -22,7 +22,20 @@ class QuranRepositoryImpl implements QuranRepository {
   Future<void> importDataIfNeeded({
     void Function(String status)? onProgress,
   }) async {
-    if (await _database.hasQuranData()) {
+    final hasQuranData = await _database.hasQuranData();
+    if (hasQuranData) {
+      if (await _database.hasLocalizedTafsirData()) {
+        return;
+      }
+
+      onProgress?.call('Downloading tafsir...');
+      final tafsirSurahs = await _downloadTafsirSurahs();
+
+      onProgress?.call('Saving tafsir in local storage...');
+      await _database.saveTafsirData(
+        tafsirEnByAyahId: _buildTafsirByAyahId(tafsirSurahs.tafsirEnSurahs),
+        tafsirBnByAyahId: _buildTafsirByAyahId(tafsirSurahs.tafsirBnSurahs),
+      );
       return;
     }
 
@@ -42,6 +55,8 @@ class QuranRepositoryImpl implements QuranRepository {
     final transliterationBn = await _apiService.tryFetchEdition(
       AppConstants.transliterationBnEdition,
     );
+    onProgress?.call('Downloading tafsir...');
+    final tafsirSurahs = await _downloadTafsirSurahs();
 
     final arabicSurahs = _readSurahs(arabic);
     final englishSurahs = _readSurahs(english);
@@ -64,6 +79,8 @@ class QuranRepositoryImpl implements QuranRepository {
       final banglaAyahs = _readAyahsAt(banglaSurahs, s);
       final transliterationEnAyahs = _readAyahsAt(transliterationEnSurahs, s);
       final transliterationBnAyahs = _readAyahsAt(transliterationBnSurahs, s);
+      final tafsirEnAyahs = _readAyahsAt(tafsirSurahs.tafsirEnSurahs, s);
+      final tafsirBnAyahs = _readAyahsAt(tafsirSurahs.tafsirBnSurahs, s);
 
       for (var a = 0; a < arabicAyahs.length; a++) {
         ayahs.add(
@@ -76,6 +93,8 @@ class QuranRepositoryImpl implements QuranRepository {
             transliterationBnAyah:
                 _safeAt(transliterationBnAyahs, a) ??
                 _safeAt(transliterationEnAyahs, a),
+            tafsirEnAyah: _safeAt(tafsirEnAyahs, a),
+            tafsirBnAyah: _safeAt(tafsirBnAyahs, a),
             audioBaseUrl: AppConstants.audioBaseUrl,
           ),
         );
@@ -274,10 +293,79 @@ class QuranRepositoryImpl implements QuranRepository {
         .toList();
   }
 
+  Future<_TafsirSurahs> _downloadTafsirSurahs() async {
+    final tafsirEn = await _apiService.tryFetchEdition(
+      AppConstants.tafsirEnEdition,
+    );
+    Map<String, dynamic>? tafsirBn;
+
+    final tafsirBnEdition = AppConstants.tafsirBnEdition.trim();
+    if (tafsirBnEdition.isNotEmpty) {
+      if (tafsirBnEdition == AppConstants.tafsirEnEdition) {
+        tafsirBn = tafsirEn;
+      } else {
+        tafsirBn = await _apiService.tryFetchEdition(tafsirBnEdition);
+      }
+    }
+
+    return _TafsirSurahs(
+      tafsirEnSurahs: tafsirEn == null
+          ? const <Map<String, dynamic>>[]
+          : _readSurahs(tafsirEn),
+      tafsirBnSurahs: tafsirBn == null
+          ? const <Map<String, dynamic>>[]
+          : _readSurahs(tafsirBn),
+    );
+  }
+
+  Map<int, String> _buildTafsirByAyahId(List<Map<String, dynamic>> surahs) {
+    if (surahs.isEmpty) {
+      return const <int, String>{};
+    }
+
+    final tafsirByAyahId = <int, String>{};
+    for (final surah in surahs) {
+      final ayahs = _readAyahs(surah);
+      for (final ayah in ayahs) {
+        final ayahId = _toInt(ayah['number']);
+        if (ayahId <= 0) {
+          continue;
+        }
+
+        final tafsir = AyahModel.normalizeTafsir((ayah['text'] as String?) ?? '');
+        if (tafsir.isNotEmpty) {
+          tafsirByAyahId[ayahId] = tafsir;
+        }
+      }
+    }
+
+    return tafsirByAyahId;
+  }
+
   Map<String, dynamic>? _safeAt(List<Map<String, dynamic>> list, int index) {
     if (index < 0 || index >= list.length) {
       return null;
     }
     return list[index];
   }
+
+  int _toInt(Object? value) {
+    if (value is int) {
+      return value;
+    }
+    if (value is String) {
+      return int.tryParse(value) ?? 0;
+    }
+    return 0;
+  }
+}
+
+class _TafsirSurahs {
+  const _TafsirSurahs({
+    required this.tafsirEnSurahs,
+    required this.tafsirBnSurahs,
+  });
+
+  final List<Map<String, dynamic>> tafsirEnSurahs;
+  final List<Map<String, dynamic>> tafsirBnSurahs;
 }
