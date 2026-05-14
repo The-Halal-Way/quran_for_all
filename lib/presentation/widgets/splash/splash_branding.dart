@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/my_colors.dart';
 
 class SplashBranding extends StatelessWidget {
   const SplashBranding({super.key});
@@ -25,18 +25,18 @@ class SplashBranding extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               gradient: const LinearGradient(
-                colors: [AppColors.secondaryLight, AppColors.primaryLight],
+                colors: [MyColors.secondaryLight, MyColors.primaryLight],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.primary.withValues(alpha: 0.30),
+                  color: MyColors.primary.withValues(alpha: 0.30),
                   blurRadius: 28,
                   offset: const Offset(0, 12),
                 ),
                 BoxShadow(
-                  color: AppColors.primary.withValues(alpha: 0.10),
+                  color: MyColors.primary.withValues(alpha: 0.10),
                   blurRadius: 56,
                   offset: const Offset(0, 28),
                 ),

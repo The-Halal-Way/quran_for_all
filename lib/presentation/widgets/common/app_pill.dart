@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_spacing.dart';
 
 /// A small pill/tag used for metadata display throughout the app.
@@ -57,7 +57,7 @@ class AppPill extends StatelessWidget {
     final Color? border;
 
     if (onLight) {
-      fg = color ?? AppColors.primary;
+      fg = color ?? MyColors.primary;
       bg = backgroundColor ?? fg.withValues(alpha: 0.10);
       border = borderColor;
     } else {

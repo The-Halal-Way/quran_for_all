@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
-import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../data/models/learn_quran_content.dart';
 import '../common/app_pill.dart';
@@ -107,7 +107,7 @@ class LearnLessonTile extends StatelessWidget {
                   AppPill.surface(
                     label: l10n.learnLessonDone,
                     icon: Icons.check_circle_rounded,
-                    color: AppColors.success,
+                    color: MyColors.success,
                   ),
               ],
             ),

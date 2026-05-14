@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:quran_for_all/core/theme/my_icons.dart';
 
 import '../../../core/enums/app_language.dart';
 import '../../../core/localization/l10n_extensions.dart';
@@ -65,7 +66,12 @@ class ReadQuranView extends StatelessWidget {
           ),
           IconButton.filledTonal(
             onPressed: () => _openSearch(context),
-            icon: const Icon(Icons.search_rounded),
+            icon: Image.asset(
+              MyIcons.searchIcon,
+              width: 20,
+              height: 20,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
             tooltip: context.readQuranText('Search'),
           ),
         ],
@@ -91,11 +97,13 @@ class ReadQuranView extends StatelessWidget {
                           AppSpacing.lg,
                         ),
                         children: [
+                          // Banner
                           ReadQuranTopBanner(
                             onSearchTap: () => _openSearch(context),
                             surahCount: viewModel.surahs.length,
                           ),
                           const SizedBox(height: AppSpacing.lg),
+                          // Continue reading + all surahs
                           if (viewModel.lastRead != null &&
                               viewModel.lastReadSurah != null) ...[
                             ContinueReadingCard(
@@ -107,6 +115,7 @@ class ReadQuranView extends StatelessWidget {
                             ),
                             const SizedBox(height: AppSpacing.lg),
                           ],
+                          // All surahs titles
                           SectionHeader(
                             title: context.readQuranText('All Surahs'),
                             trailing: Chip(
@@ -117,6 +126,7 @@ class ReadQuranView extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: AppSpacing.sm + 2),
+                          // surah list
                           for (final surah in viewModel.surahs)
                             Padding(
                               padding: const EdgeInsets.only(

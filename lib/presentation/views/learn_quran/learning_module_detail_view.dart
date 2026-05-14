@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../core/enums/playback_source.dart';
 import '../../../core/localization/learn_quran_message_localizer.dart';
 import '../../../core/localization/l10n_extensions.dart';
-import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/learn_quran_content.dart';
@@ -83,151 +83,163 @@ class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
     final responsive = AppResponsive.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text(moduleTitle)),
+      appBar: AppBar(
+        title: Text(moduleTitle),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
       body: AppGradientBackground(
         child: AppPageScrollbar(
-            builder: (context, controller) => Center(
-              child: ConstrainedBox(
-                constraints: BoxConstraints(
-                  maxWidth: responsive.maxReadingContentWidth,
+          builder: (context, controller) => Center(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: responsive.maxReadingContentWidth,
+              ),
+              child: ListView(
+                controller: controller,
+                padding: EdgeInsets.fromLTRB(
+                  responsive.padding,
+                  AppSpacing.sm + 2,
+                  responsive.padding,
+                  AppSpacing.lg,
                 ),
-                child: ListView(
-                  controller: controller,
-                  padding: EdgeInsets.fromLTRB(
-                    responsive.padding,
-                    AppSpacing.sm + 2,
-                    responsive.padding,
-                    AppSpacing.lg,
-                  ),
-                  children: [
-                Container(
-                  padding: const EdgeInsets.all(AppSpacing.lg),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(AppRadius.xl + 2),
-                    gradient: LinearGradient(
-                      colors: [visuals.startColor, visuals.endColor],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(AppSpacing.lg),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadius.xl + 2),
+                      gradient: LinearGradient(
+                        colors: [visuals.startColor, visuals.endColor],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: visuals.startColor.withValues(alpha: 0.27),
+                          blurRadius: 20,
+                          offset: const Offset(0, 12),
+                        ),
+                      ],
                     ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: visuals.startColor.withValues(alpha: 0.27),
-                        blurRadius: 20,
-                        offset: const Offset(0, 12),
-                      ),
-                    ],
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            width: 40,
-                            height: 40,
-                            decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.2),
-                              borderRadius: BorderRadius.circular(AppRadius.sm),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 40,
+                              height: 40,
+                              decoration: BoxDecoration(
+                                color: Colors.white.withValues(alpha: 0.2),
+                                borderRadius: BorderRadius.circular(
+                                  AppRadius.sm,
+                                ),
+                              ),
+                              child: Icon(visuals.icon, color: Colors.white),
                             ),
-                            child: Icon(visuals.icon, color: Colors.white),
-                          ),
-                          const SizedBox(width: AppSpacing.sm + 2),
-                          Expanded(
-                            child: Text(
-                              moduleSubtitle,
-                              style: Theme.of(context).textTheme.titleMedium
-                                  ?.copyWith(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w700,
-                                  ),
+                            const SizedBox(width: AppSpacing.sm + 2),
+                            Expanded(
+                              child: Text(
+                                moduleSubtitle,
+                                style: Theme.of(context).textTheme.titleMedium
+                                    ?.copyWith(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                              ),
                             ),
+                          ],
+                        ),
+                        const SizedBox(height: AppSpacing.sm),
+                        Text(
+                          moduleDescription,
+                          style: Theme.of(context).textTheme.bodyMedium
+                              ?.copyWith(
+                                color: Colors.white.withValues(alpha: 0.92),
+                              ),
+                        ),
+                        const SizedBox(height: AppSpacing.lg - 2),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(AppRadius.full),
+                          child: LinearProgressIndicator(
+                            value: progress,
+                            minHeight: 9,
+                            backgroundColor: Colors.white.withValues(
+                              alpha: 0.25,
+                            ),
+                            color: MyColors.secondaryLight,
                           ),
-                        ],
-                      ),
-                      const SizedBox(height: AppSpacing.sm),
-                      Text(
-                        moduleDescription,
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: Colors.white.withValues(alpha: 0.92),
                         ),
-                      ),
-                      const SizedBox(height: AppSpacing.lg - 2),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(AppRadius.full),
-                        child: LinearProgressIndicator(
-                          value: progress,
-                          minHeight: 9,
-                          backgroundColor: Colors.white.withValues(alpha: 0.25),
-                          color: AppColors.secondaryLight,
-                        ),
-                      ),
-                      const SizedBox(height: AppSpacing.sm),
-                      Text(
-                        l10n.learnModuleLessonsCompleted(
-                          completedCount,
-                          widget.module.lessons.length,
-                        ),
-                        style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                // Render module-specific learning blocks above the lesson list.
-                if (widget.module.id == 'arabic_letters') ...[
-                  const SizedBox(height: AppSpacing.lg - 2),
-                  const ArabicLettersLearningUnit(),
-                ] else if (widget.module.id == 'pronunciation_basics') ...[
-                  const SizedBox(height: AppSpacing.lg - 2),
-                  const PronunciationBasicsLearningUnit(),
-                ] else if (widget.module.id == 'makharij') ...[
-                  const SizedBox(height: AppSpacing.lg - 2),
-                  const MakharijLearningUnit(),
-                ] else if (widget.module.id == 'tajweed_rules') ...[
-                  const SizedBox(height: AppSpacing.lg - 2),
-                  const TajweedRulesLearningUnit(),
-                ] else if (widget.module.id == 'word_by_word') ...[
-                  const SizedBox(height: AppSpacing.lg - 2),
-                  const WordByWordLearningUnit(),
-                ] else if (widget.module.id == 'short_surah_practice') ...[
-                  const SizedBox(height: AppSpacing.lg - 2),
-                  const ShortSurahPracticeLearningUnit(),
-                ] else if (widget.module.id == 'audio_assisted') ...[
-                  const SizedBox(height: AppSpacing.lg - 2),
-                  const AudioAssistedLearningUnit(),
-                ],
-                const SizedBox(height: AppSpacing.lg - 2),
-                for (final lesson in widget.module.lessons)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
-                    child: LearnLessonTile(
-                      lesson: lesson,
-                      isCompleted: viewModel.isLessonCompleted(lesson.id),
-                      isAudioPlaying: viewModel.isAudioRunningForLesson(
-                        lesson.id,
-                      ),
-                      onCompletionChanged: (isCompleted) {
-                        unawaited(
-                          viewModel.setLessonCompletion(
-                            lesson: lesson,
-                            isCompleted: isCompleted,
+                        const SizedBox(height: AppSpacing.sm),
+                        Text(
+                          l10n.learnModuleLessonsCompleted(
+                            completedCount,
+                            widget.module.lessons.length,
                           ),
-                        );
-                      },
-                      onAudioTap: lesson.hasAudioSample
-                          ? () => unawaited(
-                              _playAudio(context, viewModel, lesson),
-                            )
-                          : null,
+                          style: Theme.of(context).textTheme.labelLarge
+                              ?.copyWith(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w700,
+                              ),
+                        ),
+                      ],
                     ),
                   ),
+                  // Render module-specific learning blocks above the lesson list.
+                  if (widget.module.id == 'arabic_letters') ...[
+                    const SizedBox(height: AppSpacing.lg - 2),
+                    const ArabicLettersLearningUnit(),
+                  ] else if (widget.module.id == 'pronunciation_basics') ...[
+                    const SizedBox(height: AppSpacing.lg - 2),
+                    const PronunciationBasicsLearningUnit(),
+                  ] else if (widget.module.id == 'makharij') ...[
+                    const SizedBox(height: AppSpacing.lg - 2),
+                    const MakharijLearningUnit(),
+                  ] else if (widget.module.id == 'tajweed_rules') ...[
+                    const SizedBox(height: AppSpacing.lg - 2),
+                    const TajweedRulesLearningUnit(),
+                  ] else if (widget.module.id == 'word_by_word') ...[
+                    const SizedBox(height: AppSpacing.lg - 2),
+                    const WordByWordLearningUnit(),
+                  ] else if (widget.module.id == 'short_surah_practice') ...[
+                    const SizedBox(height: AppSpacing.lg - 2),
+                    const ShortSurahPracticeLearningUnit(),
+                  ] else if (widget.module.id == 'audio_assisted') ...[
+                    const SizedBox(height: AppSpacing.lg - 2),
+                    const AudioAssistedLearningUnit(),
                   ],
-                ),
+                  const SizedBox(height: AppSpacing.lg - 2),
+                  for (final lesson in widget.module.lessons)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
+                      child: LearnLessonTile(
+                        lesson: lesson,
+                        isCompleted: viewModel.isLessonCompleted(lesson.id),
+                        isAudioPlaying: viewModel.isAudioRunningForLesson(
+                          lesson.id,
+                        ),
+                        onCompletionChanged: (isCompleted) {
+                          unawaited(
+                            viewModel.setLessonCompletion(
+                              lesson: lesson,
+                              isCompleted: isCompleted,
+                            ),
+                          );
+                        },
+                        onAudioTap: lesson.hasAudioSample
+                            ? () => unawaited(
+                                _playAudio(context, viewModel, lesson),
+                              )
+                            : null,
+                      ),
+                    ),
+                ],
               ),
             ),
           ),
+        ),
       ),
     );
   }
@@ -246,17 +258,15 @@ class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
       return;
     }
 
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(localizeLearnQuranMessage(context, message))),
     );
   }
 
   Future<bool> _ensureAudioPermissionWithFeedback(BuildContext context) async {
     final permissionHelper = context.read<PermissionHelper>();
-    final permissionResult =
-        await permissionHelper.ensureAudioControlPermissions();
+    final permissionResult = await permissionHelper
+        .ensureAudioControlPermissions();
 
     if (permissionResult.allGranted) {
       return true;

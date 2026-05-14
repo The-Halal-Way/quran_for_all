@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:quran_for_all/presentation/widgets/read_quran/surah_details/surah_ayah_list.dart';
 import 'package:quran_for_all/presentation/widgets/read_quran/surah_details/surah_reading_options.dart';
 
-import '../../../core/enums/reading_view_mode.dart';
 import '../../../core/enums/playback_source.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
@@ -15,8 +14,6 @@ import '../../../data/models/ayah_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
 import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
-import '../../viewmodels/settings_viewmodel.dart';
-import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/read_quran/surah_details/surah_meta_card.dart';
@@ -71,51 +68,10 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<SurahDetailsViewModel>();
-    final settingsViewModel = context.watch<SettingsViewModel>();
-    final settings = settingsViewModel.settings;
     final responsive = AppResponsive.of(context);
     if (!viewModel.isLoading) _maybeRevealAyah(viewModel);
     return Scaffold(
-      appBar: AppBar(
-        title: Text('${widget.surah.id}. ${widget.surah.nameEnglish}'),
-        actions: [
-          PopupMenuButton<ReadingViewMode>(
-            tooltip: context.readQuranText('Reading mode'),
-            initialValue: settings.readingViewMode,
-            icon: Icon(
-              settings.readingViewMode == ReadingViewMode.detailsView
-                  ? Icons.view_agenda_rounded
-                  : Icons.wrap_text_rounded,
-            ),
-            onSelected: (mode) {
-              unawaited(settingsViewModel.setReadingViewMode(mode));
-            },
-            itemBuilder: (_) => [
-              PopupMenuItem(
-                value: ReadingViewMode.detailsView,
-                child: Row(
-                  children: [
-                    const Icon(Icons.view_agenda_rounded),
-                    const SizedBox(width: AppSpacing.sm),
-                    Text(context.readQuranText('Details view')),
-                  ],
-                ),
-              ),
-              PopupMenuItem(
-                value: ReadingViewMode.regularView,
-                child: Row(
-                  children: [
-                    const Icon(Icons.wrap_text_rounded),
-                    const SizedBox(width: AppSpacing.sm),
-                    Text(context.readQuranText('Regular view')),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-      body: AppGradientBackground(
+      body: SafeArea(
         child: viewModel.isLoading
             ? const Center(child: CircularProgressIndicator())
             : viewModel.errorMessage != null

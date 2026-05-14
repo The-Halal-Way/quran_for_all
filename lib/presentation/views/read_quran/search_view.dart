@@ -52,7 +52,13 @@ class _SearchViewState extends State<SearchView> {
     final responsive = AppResponsive.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text(context.readQuranText('Search Quran'))),
+      appBar: AppBar(
+        title: Text(context.readQuranText('Search Quran')),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
       body: AppGradientBackground(
         child: Column(
           children: [

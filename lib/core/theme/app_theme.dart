@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'app_colors.dart';
+import 'my_colors.dart';
 import 'app_spacing.dart';
 
 class AppTheme {
@@ -9,19 +9,19 @@ class AppTheme {
 
   static ThemeData get lightTheme {
     final colorScheme = ColorScheme.fromSeed(
-      seedColor: AppColors.primary,
+      seedColor: MyColors.primary,
       brightness: Brightness.light,
-      primary: AppColors.primary,
-      secondary: AppColors.secondary,
-      surface: AppColors.surface,
+      primary: MyColors.primary,
+      secondary: MyColors.secondary,
+      surface: MyColors.surface,
     ).copyWith(
-      tertiary: AppColors.tertiary,
-      onPrimary: AppColors.textOnPrimary,
+      tertiary: MyColors.tertiary,
+      onPrimary: MyColors.textOnPrimary,
       onSecondary: const Color(0xFF342500),
-      onTertiary: AppColors.textOnPrimary,
-      onSurface: AppColors.textPrimary,
-      outline: AppColors.divider,
-      surfaceContainerHighest: AppColors.surfaceContainer,
+      onTertiary: MyColors.textOnPrimary,
+      onSurface: MyColors.textPrimary,
+      outline: MyColors.divider,
+      surfaceContainerHighest: MyColors.surfaceContainer,
     );
 
     return _buildTheme(colorScheme, Brightness.light);
@@ -29,19 +29,19 @@ class AppTheme {
 
   static ThemeData get darkTheme {
     final colorScheme = ColorScheme.fromSeed(
-      seedColor: AppColors.primary,
+      seedColor: MyColors.primary,
       brightness: Brightness.dark,
-      primary: AppColors.primaryLight,
-      secondary: AppColors.secondaryLight,
-      surface: AppColors.darkSurface,
+      primary: MyColors.primaryLight,
+      secondary: MyColors.secondaryLight,
+      surface: MyColors.darkSurface,
     ).copyWith(
-      tertiary: AppColors.tertiaryLight,
-      onPrimary: AppColors.darkTextPrimary,
-      onSecondary: AppColors.darkTextPrimary,
-      onTertiary: AppColors.darkTextPrimary,
-      onSurface: AppColors.darkTextPrimary,
-      outline: AppColors.darkDivider,
-      surfaceContainerHighest: AppColors.darkSurfaceContainer,
+      tertiary: MyColors.tertiaryLight,
+      onPrimary: MyColors.darkTextPrimary,
+      onSecondary: MyColors.darkTextPrimary,
+      onTertiary: MyColors.darkTextPrimary,
+      onSurface: MyColors.darkTextPrimary,
+      outline: MyColors.darkDivider,
+      surfaceContainerHighest: MyColors.darkSurfaceContainer,
     );
 
     return _buildTheme(colorScheme, Brightness.dark);
@@ -49,10 +49,10 @@ class AppTheme {
 
   static ThemeData _buildTheme(ColorScheme colorScheme, Brightness brightness) {
     final isDark = brightness == Brightness.dark;
-    final scaffoldBg = isDark ? AppColors.darkScaffold : AppColors.scaffold;
-    final cardColor = isDark ? AppColors.darkCardFill : AppColors.cardFill;
-    final textSecondary = isDark ? AppColors.darkTextSecondary : AppColors.textSecondary;
-    final textTertiary = isDark ? AppColors.darkTextTertiary : AppColors.textTertiary;
+    final scaffoldBg = isDark ? MyColors.darkScaffold : MyColors.scaffold;
+    final cardColor = isDark ? MyColors.darkCardFill : MyColors.cardFill;
+    final textSecondary = isDark ? MyColors.darkTextSecondary : MyColors.textSecondary;
+    final textTertiary = isDark ? MyColors.darkTextTertiary : MyColors.textTertiary;
 
     final base = ThemeData(
       useMaterial3: true,
@@ -181,12 +181,12 @@ class AppTheme {
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadius.md),
           borderSide: BorderSide(
-            color: AppColors.error.withValues(alpha: 0.6),
+            color: MyColors.error.withValues(alpha: 0.6),
           ),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadius.md),
-          borderSide: const BorderSide(color: AppColors.error, width: 1.5),
+          borderSide: const BorderSide(color: MyColors.error, width: 1.5),
         ),
         prefixIconColor: colorScheme.primary,
       ),
@@ -319,7 +319,7 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadius.sm),
         ),
-        backgroundColor: isDark ? AppColors.darkCardFill : AppColors.textPrimary,
+        backgroundColor: isDark ? MyColors.darkCardFill : MyColors.textPrimary,
       ),
 
       // ── Dialog ──────────────────────────────────────────────────────────
@@ -351,11 +351,11 @@ class AppTheme {
       // ── Tooltip ─────────────────────────────────────────────────────────
       tooltipTheme: TooltipThemeData(
         decoration: BoxDecoration(
-          color: isDark ? AppColors.darkSurfaceContainer : AppColors.textPrimary,
+          color: isDark ? MyColors.darkSurfaceContainer : MyColors.textPrimary,
           borderRadius: BorderRadius.circular(AppRadius.xs),
         ),
         textStyle: textTheme.bodySmall?.copyWith(
-          color: isDark ? AppColors.darkTextPrimary : Colors.white,
+          color: isDark ? MyColors.darkTextPrimary : Colors.white,
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/my_icons.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/utils/app_responsive.dart';
@@ -43,7 +44,9 @@ class _HomeViewState extends State<HomeView> {
         decoration: BoxDecoration(
           border: Border(
             top: BorderSide(
-              color: Theme.of(context).colorScheme.outline.withValues(alpha: 0.3),
+              color: Theme.of(
+                context,
+              ).colorScheme.outline.withValues(alpha: 0.3),
             ),
           ),
         ),
@@ -57,18 +60,38 @@ class _HomeViewState extends State<HomeView> {
           },
           destinations: [
             NavigationDestination(
-              icon: Icon(Icons.menu_book_rounded, size: navIconSize),
-              selectedIcon: Icon(Icons.menu_book, size: navIconSize),
+              icon: Image.asset(
+                MyIcons.quranViewIcon,
+                width: navIconSize,
+                height: navIconSize,
+              ),
+              selectedIcon: Image.asset(
+                MyIcons.quranViewIconFill,
+                width: navIconSize,
+                height: navIconSize,
+              ),
               label: l10n.homeReadQuranTab,
             ),
             NavigationDestination(
-              icon: Icon(Icons.school_outlined, size: navIconSize),
-              selectedIcon: Icon(Icons.school_rounded, size: navIconSize),
+              icon: Image.asset(
+                MyIcons.learnIconUnselected,
+                width: navIconSize,
+                height: navIconSize,
+              ),
+              selectedIcon: Image.asset(
+                MyIcons.learnIcon,
+                width: navIconSize,
+                height: navIconSize,
+              ),
               label: l10n.homeLearnQuranTab,
             ),
             NavigationDestination(
               icon: Icon(Icons.settings_outlined, size: navIconSize),
-              selectedIcon: Icon(Icons.settings_rounded, size: navIconSize),
+              selectedIcon: Image.asset(
+                MyIcons.settingsIcon,
+                width: navIconSize,
+                height: navIconSize,
+              ),
               label: context.readQuranText('Settings'),
             ),
           ],

@@ -57,7 +57,9 @@ class BookmarkListTile extends StatelessWidget {
       return '${context.readQuranText('Surah')} ${bookmark.surahId}';
     }
 
-    final translated = surah?.nameTranslated.trim() ?? '';
+    final translated = context.readQuranText(
+      surah?.nameTranslated.trim() ?? '',
+    );
     final arabic = surah?.nameArabic.trim() ?? '';
 
     if (translated.isNotEmpty && arabic.isNotEmpty) {
@@ -109,81 +111,84 @@ class BookmarkListTile extends StatelessWidget {
                 AppSpacing.md,
               ),
               child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                width: 40.w.clamp(36.0, 44.0),
-                height: 40.w.clamp(36.0, 44.0),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadius.sm),
-                  color: colorScheme.primary.withValues(alpha: 0.12),
-                ),
-                child: Icon(_typeIcon(), color: colorScheme.primary),
-              ),
-              const SizedBox(width: AppSpacing.md),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    if (compact)
-                      Wrap(
-                        spacing: AppSpacing.sm,
-                        runSpacing: AppSpacing.xs,
-                        crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
-                          Text(
-                            _title(context),
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: Theme.of(context).textTheme.titleMedium
-                                ?.copyWith(fontWeight: FontWeight.w700),
-                          ),
-                          Chip(
-                            visualDensity: VisualDensity.compact,
-                            avatar: Icon(_typeIcon(), size: 14),
-                            label: Text(_typeLabel(context)),
-                          ),
-                        ],
-                      )
-                    else
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              _title(context),
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: Theme.of(context).textTheme.titleMedium
-                                  ?.copyWith(fontWeight: FontWeight.w700),
-                            ),
-                          ),
-                          const SizedBox(width: AppSpacing.sm),
-                          Chip(
-                            visualDensity: VisualDensity.compact,
-                            avatar: Icon(_typeIcon(), size: 14),
-                            label: Text(_typeLabel(context)),
-                          ),
-                        ],
-                      ),
-                    const SizedBox(height: AppSpacing.xs + 1),
-                    Text(
-                      _subtitle(context),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: colorScheme.onSurface.withValues(alpha: 0.76),
-                      ),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 40.w.clamp(36.0, 44.0),
+                    height: 40.w.clamp(36.0, 44.0),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadius.sm),
+                      color: colorScheme.primary.withValues(alpha: 0.12),
                     ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: AppSpacing.xs),
-              Icon(
-                Icons.north_east_rounded,
-                color: colorScheme.primary,
-                size: 19.sp.clamp(17.0, 20.0),
-              ),
-            ],
+                    child: Icon(_typeIcon(), color: colorScheme.primary),
+                  ),
+                  const SizedBox(width: AppSpacing.md),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (compact)
+                          Wrap(
+                            spacing: AppSpacing.sm,
+                            runSpacing: AppSpacing.xs,
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              Text(
+                                _title(context),
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: Theme.of(context).textTheme.titleMedium
+                                    ?.copyWith(fontWeight: FontWeight.w700),
+                              ),
+                              Chip(
+                                visualDensity: VisualDensity.compact,
+                                avatar: Icon(_typeIcon(), size: 14),
+                                label: Text(_typeLabel(context)),
+                              ),
+                            ],
+                          )
+                        else
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  _title(context),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: Theme.of(context).textTheme.titleMedium
+                                      ?.copyWith(fontWeight: FontWeight.w700),
+                                ),
+                              ),
+                              const SizedBox(width: AppSpacing.sm),
+                              Chip(
+                                visualDensity: VisualDensity.compact,
+                                avatar: Icon(_typeIcon(), size: 14),
+                                label: Text(_typeLabel(context)),
+                              ),
+                            ],
+                          ),
+                        const SizedBox(height: AppSpacing.xs + 1),
+                        Text(
+                          _subtitle(context),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: Theme.of(context).textTheme.bodyMedium
+                              ?.copyWith(
+                                color: colorScheme.onSurface.withValues(
+                                  alpha: 0.76,
+                                ),
+                              ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: AppSpacing.xs),
+                  Icon(
+                    Icons.north_east_rounded,
+                    color: colorScheme.primary,
+                    size: 19.sp.clamp(17.0, 20.0),
+                  ),
+                ],
               ),
             );
           },

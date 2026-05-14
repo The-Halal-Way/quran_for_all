@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/my_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
 
 class SearchQueryPanel extends StatelessWidget {
@@ -28,7 +28,7 @@ class SearchQueryPanel extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(AppSpacing.lg - 2),
       decoration: BoxDecoration(
-        color: AppColors.surface.withValues(alpha: 0.86),
+        color: MyColors.surface.withValues(alpha: 0.86),
         borderRadius: BorderRadius.circular(AppRadius.lg),
         border: Border.all(color: colorScheme.outline.withValues(alpha: 0.35)),
         boxShadow: [

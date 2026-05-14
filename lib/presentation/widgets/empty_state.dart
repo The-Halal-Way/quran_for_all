@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../core/theme/app_colors.dart';
+import '../../core/theme/my_colors.dart';
 import '../../core/theme/app_spacing.dart';
 
 class EmptyState extends StatelessWidget {
@@ -30,7 +30,7 @@ class EmptyState extends StatelessWidget {
           padding: EdgeInsets.all((AppSpacing.xl + 2).w.clamp(20.0, 30.0)),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadius.xl + 2),
-            color: AppColors.surface.withValues(alpha: 0.92),
+            color: MyColors.surface.withValues(alpha: 0.92),
             border: Border.all(color: colorScheme.outline.withValues(alpha: 0.36)),
           ),
           child: Column(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/my_icons.dart';
+import 'package:quran_for_all/core/theme/my_colors.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
@@ -49,7 +51,13 @@ class _SurahMetaCardState extends State<SurahMetaCard> {
         children: [
           Row(
             children: [
-              const SizedBox(width: 32),
+              IconButton(
+                icon: const Icon(
+                  Icons.arrow_back_ios_new,
+                  color: MyColors.textOnPrimary,
+                ),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
               Expanded(
                 child: Text(
                   widget.surah.nameArabic,
@@ -98,7 +106,7 @@ class _SurahMetaCardState extends State<SurahMetaCard> {
                 ),
                 const SizedBox(height: AppSpacing.xs + 1),
                 Text(
-                  widget.surah.nameTranslated,
+                  context.readQuranText(widget.surah.nameTranslated),
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Colors.white.withValues(alpha: 0.9),
@@ -116,7 +124,9 @@ class _SurahMetaCardState extends State<SurahMetaCard> {
                           '${widget.surah.totalAyahs} ${context.readQuranText('ayahs')}',
                     ),
                     AppPill.overlay(
-                      icon: Icons.public_rounded,
+                      imgIcon: widget.surah.revelationType == 'Meccan'
+                          ? MyIcons.meccaIcon
+                          : MyIcons.medinaIcon,
                       label: context.readQuranText(widget.surah.revelationType),
                     ),
                   ],

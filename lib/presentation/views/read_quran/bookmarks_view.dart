@@ -49,7 +49,13 @@ class _BookmarksViewState extends State<BookmarksView> {
     final responsive = AppResponsive.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text(context.readQuranText('Bookmarks'))),
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        title: Text(context.readQuranText('Bookmarks')),
+      ),
       body: AppGradientBackground(
         child: RefreshIndicator(
           onRefresh: viewModel.load,

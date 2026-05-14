@@ -1,8 +1,8 @@
-// AppColors.dart
+// MyColors.dart
 import 'package:flutter/material.dart';
 
-class AppColors {
-  const AppColors._();
+class MyColors {
+  const MyColors._();
 
   // ── Brand ────────────────────────────────────────────────────────────────
   // Primary: deep regal indigo

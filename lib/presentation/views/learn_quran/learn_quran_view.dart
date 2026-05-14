@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 
 import '../../../core/localization/learn_quran_message_localizer.dart';
 import '../../../core/localization/l10n_extensions.dart';
-import '../../../core/theme/app_colors.dart';
+import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/learn_quran_content.dart';
@@ -68,6 +68,7 @@ class _LearnQuranViewState extends State<LearnQuranView> {
                           AppSpacing.lg,
                         ),
                         children: [
+                          // banner
                           LearnHeaderCard(
                             overallProgress: viewModel.overallProgress,
                             completedLessons: viewModel.completedLessonCount,
@@ -77,6 +78,7 @@ class _LearnQuranViewState extends State<LearnQuranView> {
                             streakDays: viewModel.streakDays,
                           ),
                           const SizedBox(height: AppSpacing.md),
+                          // next lesson card
                           LearnNextLessonCard(
                             nextLesson: viewModel.nextLesson,
                             onStart: () => _openNextLesson(context, viewModel),
@@ -84,7 +86,7 @@ class _LearnQuranViewState extends State<LearnQuranView> {
                           if (viewModel.errorMessageKey != null) ...[
                             const SizedBox(height: AppSpacing.sm + 2),
                             Card(
-                              color: AppColors.error.withValues(alpha: 0.08),
+                              color: MyColors.error.withValues(alpha: 0.08),
                               child: Padding(
                                 padding: const EdgeInsets.all(AppSpacing.md),
                                 child: Row(
@@ -105,11 +107,13 @@ class _LearnQuranViewState extends State<LearnQuranView> {
                             ),
                           ],
                           const SizedBox(height: AppSpacing.lg - 2),
+                          // titles for tacks
                           SectionHeader(
                             title: l10n.learnQuranTracksTitle,
                             subtitle: l10n.learnQuranTracksSubtitle,
                           ),
                           const SizedBox(height: AppSpacing.sm + 2),
+                          // list of modules
                           for (final module in viewModel.modules)
                             Padding(
                               padding: const EdgeInsets.only(

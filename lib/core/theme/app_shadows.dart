@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app_colors.dart';
+import 'my_colors.dart';
 
 /// Layered shadow presets for premium depth.
 ///
@@ -13,12 +13,12 @@ class AppShadows {
   /// Subtle resting shadow for cards and list items.
   static List<BoxShadow> card({Color? tint}) => [
         BoxShadow(
-          color: (tint ?? AppColors.primary).withValues(alpha: 0.06),
+          color: (tint ?? MyColors.primary).withValues(alpha: 0.06),
           blurRadius: 12,
           offset: const Offset(0, 4),
         ),
         BoxShadow(
-          color: (tint ?? AppColors.primary).withValues(alpha: 0.03),
+          color: (tint ?? MyColors.primary).withValues(alpha: 0.03),
           blurRadius: 32,
           offset: const Offset(0, 12),
         ),
@@ -27,12 +27,12 @@ class AppShadows {
   /// Medium elevation for floating panels and dialogs.
   static List<BoxShadow> elevated({Color? tint}) => [
         BoxShadow(
-          color: (tint ?? AppColors.primary).withValues(alpha: 0.08),
+          color: (tint ?? MyColors.primary).withValues(alpha: 0.08),
           blurRadius: 16,
           offset: const Offset(0, 6),
         ),
         BoxShadow(
-          color: (tint ?? AppColors.primary).withValues(alpha: 0.04),
+          color: (tint ?? MyColors.primary).withValues(alpha: 0.04),
           blurRadius: 48,
           offset: const Offset(0, 20),
         ),
@@ -41,12 +41,12 @@ class AppShadows {
   /// Deep shadow for hero banners and prominent cards.
   static List<BoxShadow> hero({Color? tint}) => [
         BoxShadow(
-          color: (tint ?? AppColors.primary).withValues(alpha: 0.16),
+          color: (tint ?? MyColors.primary).withValues(alpha: 0.16),
           blurRadius: 24,
           offset: const Offset(0, 10),
         ),
         BoxShadow(
-          color: (tint ?? AppColors.primary).withValues(alpha: 0.06),
+          color: (tint ?? MyColors.primary).withValues(alpha: 0.06),
           blurRadius: 56,
           offset: const Offset(0, 28),
         ),
@@ -69,7 +69,7 @@ class AppShadows {
   /// Upward shadow for bottom navigation bars.
   static List<BoxShadow> get navigation => [
         BoxShadow(
-          color: AppColors.primary.withValues(alpha: 0.05),
+          color: MyColors.primary.withValues(alpha: 0.05),
           blurRadius: 20,
           offset: const Offset(0, -6),
         ),

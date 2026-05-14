@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_colors.dart';
+import '../../../../core/theme/my_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/surah_model.dart';
 import '../../common/common_painters.dart';
@@ -38,7 +38,7 @@ class ContinueReadingCard extends StatelessWidget {
             gradient: LinearGradient(
               colors: [
                 colorScheme.primary.withValues(alpha: 0.14),
-                AppColors.secondaryLight.withValues(alpha: 0.22),
+                MyColors.secondaryLight.withValues(alpha: 0.22),
                 colorScheme.tertiary.withValues(alpha: 0.13),
               ],
               begin: Alignment.topLeft,

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lottie/lottie.dart';
+import 'package:quran_for_all/core/theme/my_icons.dart';
+import 'package:quran_for_all/core/theme/my_images.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_gradients.dart';
@@ -66,6 +69,7 @@ class ReadQuranTopBanner extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                // top row with icon and title
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -81,15 +85,14 @@ class ReadQuranTopBanner extends StatelessWidget {
                           shadowBlurRadius: 5,
                         ),
                         child: Center(
-                          child: Icon(
-                            Icons.menu_book_rounded,
-                            color: Colors.white,
-                            size: 24.sp.clamp(21.0, 26.0),
+                          child: Lottie.asset(
+                            MyImages.quranAnimated,
                           ),
                         ),
                       ),
                     ),
                     const SizedBox(width: AppSpacing.md),
+
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -118,12 +121,13 @@ class ReadQuranTopBanner extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: AppSpacing.lg),
+                // surah count and offline status
                 Wrap(
                   spacing: AppSpacing.sm,
                   runSpacing: AppSpacing.sm,
                   children: [
                     AppPill.overlay(
-                      icon: Icons.menu_book_rounded,
+                      imgIcon: MyIcons.readIcon,
                       label: '$surahCount ${context.readQuranText('Surahs')}',
                     ),
                     AppPill.overlay(
@@ -133,6 +137,7 @@ class ReadQuranTopBanner extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: AppSpacing.lg),
+                // search button
                 FilledButton.icon(
                   onPressed: onSearchTap,
                   style: FilledButton.styleFrom(
@@ -146,7 +151,12 @@ class ReadQuranTopBanner extends StatelessWidget {
                       borderRadius: BorderRadius.circular(AppRadius.md),
                     ),
                   ),
-                  icon: const Icon(Icons.search_rounded),
+                  icon: Image.asset(
+                    MyIcons.searchIcon,
+                    width: 20,
+                    height: 20,
+                    color: Colors.white,
+                  ),
                   label: Text(context.readQuranText('Search Surah, Ayah, Juz')),
                 ),
               ],
