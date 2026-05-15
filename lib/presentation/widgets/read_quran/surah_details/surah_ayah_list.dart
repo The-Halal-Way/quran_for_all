@@ -20,6 +20,7 @@ class SurahAyahList extends StatelessWidget {
     required this.controller,
     required Map<int, GlobalKey> ayahKeys,
     required int? highlightedAyahNumber,
+    required ValueChanged<int> onLastReadMarked,
     required Future<void> Function(
       BuildContext,
       SurahDetailsViewModel,
@@ -28,10 +29,12 @@ class SurahAyahList extends StatelessWidget {
     playAyahWithFeedback,
   }) : _ayahKeys = ayahKeys,
        _highlightedAyahNumber = highlightedAyahNumber,
+       _onLastReadMarked = onLastReadMarked,
        _playAyahWithFeedback = playAyahWithFeedback;
   final ScrollController controller;
   final Map<int, GlobalKey> _ayahKeys;
   final int? _highlightedAyahNumber;
+  final ValueChanged<int> _onLastReadMarked;
   final Future<void> Function(BuildContext, SurahDetailsViewModel, AyahModel)
   _playAyahWithFeedback;
 
@@ -188,6 +191,7 @@ class SurahAyahList extends StatelessWidget {
       showTranslation: settings.showTranslation,
       language: settings.language,
       isBookmarked: viewModel.isAyahBookmarked(ayah.ayahNumber),
+      isLastReadAyah: viewModel.isLastReadAyah(ayah.ayahNumber),
       isPlaying: viewModel.isAyahPlaying(ayah.ayahNumber),
       onPlay: () => unawaited(
         viewModel.isAyahPlaying(ayah.ayahNumber)
@@ -241,6 +245,7 @@ class SurahAyahList extends StatelessWidget {
   ) async {
     try {
       await viewModel.markAsLastRead(ayah);
+      _onLastReadMarked(ayah.ayahNumber);
       if (!context.mounted) {
         return;
       }

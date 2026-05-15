@@ -18,7 +18,9 @@ class SurahDetailsViewModel extends ChangeNotifier {
   }) : _quranRepository = quranRepository,
        _audioRepository = audioRepository,
        _audioControl = audioControlViewModel {
-    _isPlayingSubscription = _audioRepository.isPlayingStream.listen((isPlaying) {
+    _isPlayingSubscription = _audioRepository.isPlayingStream.listen((
+      isPlaying,
+    ) {
       if (!isPlaying && _playingAyahNumber != null) {
         _playingAyahNumber = null;
         notifyListeners();
@@ -35,6 +37,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
   bool _isLoading = false;
   bool _isPlayingFullSurah = false;
   int? _playingAyahNumber;
+  int? _lastReadAyahNumber;
   String? _errorMessage;
   List<AyahModel> _ayahs = const [];
   Set<int> _bookmarkedAyahNumbers = const <int>{};
@@ -45,6 +48,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
   bool get isLoading => _isLoading;
   bool get isPlayingFullSurah => _isPlayingFullSurah;
   int? get playingAyahNumber => _playingAyahNumber;
+  int? get lastReadAyahNumber => _lastReadAyahNumber;
   String? get errorMessage => _errorMessage;
   List<AyahModel> get ayahs => _ayahs;
   Set<int> get bookmarkedAyahNumbers => _bookmarkedAyahNumbers;
@@ -54,6 +58,8 @@ class SurahDetailsViewModel extends ChangeNotifier {
   bool isAyahBookmarked(int ayahNumber) {
     return _bookmarkedAyahNumbers.contains(ayahNumber);
   }
+
+  bool isLastReadAyah(int ayahNumber) => _lastReadAyahNumber == ayahNumber;
 
   Future<void> openSurah(SurahModel surah) async {
     _surah = surah;
@@ -90,12 +96,17 @@ class SurahDetailsViewModel extends ChangeNotifier {
       final bookmarkedAyahs = await _quranRepository.getBookmarkedAyahNumbers(
         selectedSurah.id,
       );
+      final lastRead = await _quranRepository.getLastRead();
       if (requestId != _loadRequestId) {
         return;
       }
 
       _ayahs = ayahs;
       _bookmarkedAyahNumbers = bookmarkedAyahs;
+      _lastReadAyahNumber =
+          lastRead != null && lastRead.surahId == selectedSurah.id
+          ? lastRead.ayahNumber
+          : null;
     } catch (_) {
       if (requestId != _loadRequestId) {
         return;
@@ -103,6 +114,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
 
       _errorMessage = ReadQuranMessageKeys.unableLoadAyahs;
       _bookmarkedAyahNumbers = const <int>{};
+      _lastReadAyahNumber = null;
     }
 
     if (requestId != _loadRequestId) {
@@ -135,6 +147,10 @@ class SurahDetailsViewModel extends ChangeNotifier {
     try {
       await _audioRepository.playAyah(ayah);
       await _quranRepository.saveLastRead(ayah.surahId, ayah.ayahNumber);
+      if (_lastReadAyahNumber != ayah.ayahNumber) {
+        _lastReadAyahNumber = ayah.ayahNumber;
+        notifyListeners();
+      }
     } catch (_) {
       if (_playingAyahNumber == ayah.ayahNumber) {
         _playingAyahNumber = null;
@@ -154,7 +170,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
       return;
     }
 
-  _playingAyahNumber = null;
+    _playingAyahNumber = null;
     _isPlayingFullSurah = true;
     notifyListeners();
 
@@ -185,8 +201,12 @@ class SurahDetailsViewModel extends ChangeNotifier {
     super.dispose();
   }
 
-  Future<void> markAsLastRead(AyahModel ayah) {
-    return _quranRepository.saveLastRead(ayah.surahId, ayah.ayahNumber);
+  Future<void> markAsLastRead(AyahModel ayah) async {
+    await _quranRepository.saveLastRead(ayah.surahId, ayah.ayahNumber);
+    if (_lastReadAyahNumber != ayah.ayahNumber) {
+      _lastReadAyahNumber = ayah.ayahNumber;
+      notifyListeners();
+    }
   }
 
   Future<void> toggleAyahBookmark(AyahModel ayah) async {

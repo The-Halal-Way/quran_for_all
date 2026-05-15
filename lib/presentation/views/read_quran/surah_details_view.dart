@@ -124,6 +124,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                               controller: controller,
                               ayahKeys: _ayahKeys,
                               highlightedAyahNumber: _highlightedAyahNumber,
+                              onLastReadMarked: _onLastReadMarked,
                               playAyahWithFeedback: _playAyahWithFeedback,
                             ),
                           ),
@@ -253,20 +254,35 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       );
 
       setState(() {
-        _highlightedAyahNumber = targetAyahNumber;
         _pendingAyahNumber = null;
         _revealingAyahNumber = null;
         _revealAttempts = 0;
       });
 
-      Future<void>.delayed(const Duration(seconds: 2), () {
-        if (!mounted || _highlightedAyahNumber != targetAyahNumber) {
-          return;
-        }
+      _highlightAyahTemporarily(targetAyahNumber);
+    });
+  }
 
-        setState(() {
-          _highlightedAyahNumber = null;
-        });
+  void _onLastReadMarked(int ayahNumber) {
+    _highlightAyahTemporarily(ayahNumber);
+  }
+
+  void _highlightAyahTemporarily(int ayahNumber) {
+    if (!mounted) {
+      return;
+    }
+
+    setState(() {
+      _highlightedAyahNumber = ayahNumber;
+    });
+
+    Future<void>.delayed(const Duration(seconds: 2), () {
+      if (!mounted || _highlightedAyahNumber != ayahNumber) {
+        return;
+      }
+
+      setState(() {
+        _highlightedAyahNumber = null;
       });
     });
   }

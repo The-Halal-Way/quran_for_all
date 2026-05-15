@@ -110,11 +110,13 @@ class ReadQuranView extends StatelessWidget {
                               surah: viewModel.lastReadSurah!,
                               ayahNumber: viewModel.lastRead!.ayahNumber,
                               ayahPreview: ayahPreview,
-                              onTap: () => _openSurah(
-                                context,
-                                viewModel.lastReadSurah!,
-                                initialAyahNumber:
-                                    viewModel.lastRead!.ayahNumber,
+                              onTap: () => unawaited(
+                                _openSurah(
+                                  context,
+                                  viewModel.lastReadSurah!,
+                                  initialAyahNumber:
+                                      viewModel.lastRead!.ayahNumber,
+                                ),
                               ),
                             ),
                             const SizedBox(height: AppSpacing.lg),
@@ -138,7 +140,8 @@ class ReadQuranView extends StatelessWidget {
                               ),
                               child: SurahCard(
                                 surah: surah,
-                                onTap: () => _openSurah(context, surah),
+                                onTap: () =>
+                                    unawaited(_openSurah(context, surah)),
                                 isBookmarked: viewModel.isSurahBookmarked(
                                   surah.id,
                                 ),
@@ -173,14 +176,14 @@ class ReadQuranView extends StatelessWidget {
     ).push(AppPageRoute<void>(builder: (_) => const BookmarksView()));
   }
 
-  void _openSurah(
+  Future<void> _openSurah(
     BuildContext context,
     SurahModel surah, {
     int? initialAyahNumber,
-  }) {
+  }) async {
     unawaited(context.read<SurahDetailsViewModel>().openSurah(surah));
 
-    Navigator.of(context).push(
+    await Navigator.of(context).push(
       AppPageRoute<void>(
         builder: (_) => SurahDetailsView(
           surah: surah,
@@ -188,5 +191,11 @@ class ReadQuranView extends StatelessWidget {
         ),
       ),
     );
+
+    if (!context.mounted) {
+      return;
+    }
+
+    await context.read<ReadQuranViewModel>().load();
   }
 }

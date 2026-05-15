@@ -15,6 +15,7 @@ class AyahTile extends StatelessWidget {
     required this.showTranslation,
     required this.language,
     required this.isBookmarked,
+    required this.isLastReadAyah,
     required this.isPlaying,
     required this.onPlay,
     required this.onToggleBookmark,
@@ -26,6 +27,7 @@ class AyahTile extends StatelessWidget {
   final bool showTranslation;
   final AppLanguage language;
   final bool isBookmarked;
+  final bool isLastReadAyah;
   final bool isPlaying;
   final VoidCallback onPlay;
   final VoidCallback onToggleBookmark;
@@ -40,10 +42,7 @@ class AyahTile extends StatelessWidget {
       showDragHandle: true,
       useSafeArea: true,
       builder: (sheetContext) {
-        return _TafsirBottomSheet(
-          ayah: ayah,
-          tafsir: ayah.tafsirFor(language),
-        );
+        return _TafsirBottomSheet(ayah: ayah, tafsir: ayah.tafsirFor(language));
       },
     );
   }
@@ -157,9 +156,22 @@ class AyahTile extends StatelessWidget {
                           ),
                           IconButton(
                             onPressed: onMarkAsLastRead,
-                            icon: const Icon(Icons.history_edu_rounded),
+                            icon: Icon(
+                              isLastReadAyah
+                                  ? Icons.history_toggle_off_rounded
+                                  : Icons.history_edu_rounded,
+                            ),
+                            style: isLastReadAyah
+                                ? IconButton.styleFrom(
+                                    backgroundColor: colorScheme.primary
+                                        .withValues(alpha: 0.16),
+                                    foregroundColor: colorScheme.primary,
+                                  )
+                                : null,
                             tooltip: context.readQuranText(
-                              'Mark ayah as last read',
+                              isLastReadAyah
+                                  ? 'Current last read ayah'
+                                  : 'Mark ayah as last read',
                             ),
                           ),
                           IconButton.filledTonal(
@@ -232,9 +244,23 @@ class AyahTile extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: onMarkAsLastRead,
-                        icon: const Icon(Icons.history_edu_rounded),
+                        icon: Icon(
+                          isLastReadAyah
+                              ? Icons.history_toggle_off_rounded
+                              : Icons.history_edu_rounded,
+                        ),
+                        style: isLastReadAyah
+                            ? IconButton.styleFrom(
+                                backgroundColor: colorScheme.primary.withValues(
+                                  alpha: 0.16,
+                                ),
+                                foregroundColor: colorScheme.primary,
+                              )
+                            : null,
                         tooltip: context.readQuranText(
-                          'Mark ayah as last read',
+                          isLastReadAyah
+                              ? 'Current last read ayah'
+                              : 'Mark ayah as last read',
                         ),
                       ),
                       IconButton.filledTonal(
@@ -355,9 +381,9 @@ class _TafsirBottomSheet extends StatelessWidget {
             children: [
               Text(
                 context.readQuranText('Tafsir'),
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.w800,
-                ),
+                style: Theme.of(
+                  context,
+                ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
