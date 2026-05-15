@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:quran_for_all/presentation/widgets/read_quran/surah_details/surah_bottom_controls.dart';
 import 'package:quran_for_all/presentation/widgets/read_quran/surah_details/surah_ayah_list.dart';
 
 import '../../../core/enums/playback_source.dart';
@@ -20,7 +21,6 @@ import '../../viewmodels/settings_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/common/app_snackbar.dart';
 import '../../widgets/empty_state.dart';
-import '../../widgets/read_quran/surah_details/surah_bottom_controls.dart';
 import '../../widgets/read_quran/surah_details/surah_meta_card.dart';
 import '../../../services/permission_helper.dart';
 
