@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/localization/surah_name_localizer.dart';
 import '../../../../core/enums/app_language.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/utils/app_responsive.dart';
 import '../../../../data/models/search_result_model.dart';
 
 class SearchResultTile extends StatelessWidget {
@@ -43,6 +43,13 @@ class SearchResultTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final responsive = AppResponsive.of(context);
+    final leadingSize = responsive.pick(mobile: 40, tablet: 36, desktop: 42);
+    final trailingIconSize = responsive.pick(
+      mobile: 19,
+      tablet: 17.5,
+      desktop: 19.5,
+    );
 
     return Card(
       child: InkWell(
@@ -59,8 +66,8 @@ class SearchResultTile extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                width: 40.w.clamp(36.0, 44.0),
-                height: 40.w.clamp(36.0, 44.0),
+                width: leadingSize,
+                height: leadingSize,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadius.sm),
                   color: colorScheme.primary.withValues(alpha: 0.12),
@@ -112,7 +119,7 @@ class SearchResultTile extends StatelessWidget {
               Icon(
                 Icons.north_east_rounded,
                 color: colorScheme.primary,
-                size: 19.sp.clamp(17.0, 20.0),
+                size: trailingIconSize,
               ),
             ],
           ),

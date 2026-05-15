@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 
 class SettingsOfflineCard extends StatelessWidget {
   const SettingsOfflineCard({super.key});
@@ -10,9 +10,15 @@ class SettingsOfflineCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final responsive = AppResponsive.of(context);
+    final verticalPadding = responsive.pick(
+      mobile: 16,
+      tablet: 14,
+      desktop: 16,
+    );
 
     return Container(
-      padding: EdgeInsets.symmetric( vertical: 16.h),
+      padding: EdgeInsets.symmetric(vertical: verticalPadding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppRadius.lg),
         gradient: LinearGradient(

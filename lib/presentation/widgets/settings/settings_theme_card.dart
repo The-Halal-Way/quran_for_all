@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 
 /// Card with a segmented theme mode selector (System / Light / Dark).
 class SettingsThemeCard extends StatelessWidget {
@@ -91,32 +91,34 @@ class _SectionTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final responsive = AppResponsive.of(context);
+    final boxSize = responsive.pick(mobile: 34, tablet: 30, desktop: 34);
+    final iconSize = responsive.pick(mobile: 18, tablet: 16.5, desktop: 18.5);
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(
-        AppSpacing.lg, AppSpacing.lg - 2, AppSpacing.lg, AppSpacing.md,
+        AppSpacing.lg,
+        AppSpacing.lg - 2,
+        AppSpacing.lg,
+        AppSpacing.md,
       ),
       child: Row(
         children: [
           Container(
-            width: 34.w.clamp(30.0, 38.0),
-            height: 34.w.clamp(30.0, 38.0),
+            width: boxSize,
+            height: boxSize,
             decoration: BoxDecoration(
               color: colorScheme.primary.withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(AppSpacing.sm + 2),
             ),
-            child: Icon(
-              icon,
-              color: colorScheme.primary,
-              size: 18.sp.clamp(16.0, 19.0),
-            ),
+            child: Icon(icon, color: colorScheme.primary, size: iconSize),
           ),
           const SizedBox(width: AppSpacing.sm + 2),
           Text(
             title,
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.w700,
-            ),
+            style: Theme.of(
+              context,
+            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
           ),
         ],
       ),

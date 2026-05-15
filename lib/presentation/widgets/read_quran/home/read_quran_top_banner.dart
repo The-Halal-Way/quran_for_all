@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_images.dart';
@@ -7,6 +6,7 @@ import 'package:quran_for_all/core/theme/my_images.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_gradients.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/utils/app_responsive.dart';
 import '../../common/app_gradient_banner.dart';
 import '../../common/app_pill.dart';
 import '../../common/common_painters.dart';
@@ -24,6 +24,28 @@ class ReadQuranTopBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+    final responsive = AppResponsive.of(context);
+    final topShapeWidth = responsive.pick(
+      mobile: 128,
+      tablet: 112,
+      desktop: 136,
+    );
+    final topShapeHeight = responsive.pick(mobile: 52, tablet: 48, desktop: 54);
+    final decorCircleSize = responsive.pick(
+      mobile: 56,
+      tablet: 50,
+      desktop: 58,
+    );
+    final leadingShapeWidth = responsive.pick(
+      mobile: 62,
+      tablet: 56,
+      desktop: 64,
+    );
+    final leadingShapeHeight = responsive.pick(
+      mobile: 56,
+      tablet: 52,
+      desktop: 58,
+    );
     return TweenAnimationBuilder<double>(
       duration: const Duration(milliseconds: 650),
       curve: Curves.easeOutCubic,
@@ -40,8 +62,11 @@ class ReadQuranTopBanner extends StatelessWidget {
               top: -18,
               right: -12,
               child: SizedBox(
-                width: size.width * .2.w, //.clamp(110.0, 136.0),
-                height: 52.h.clamp(46.0, 58.0),
+                width: (size.width * 0.2).clamp(
+                  topShapeWidth - 20,
+                  topShapeWidth + 20,
+                ),
+                height: topShapeHeight,
                 child: CustomPaint(
                   painter: UShapePainter(
                     backgroundColor: Colors.white.withValues(alpha: 0.16),
@@ -58,8 +83,8 @@ class ReadQuranTopBanner extends StatelessWidget {
               left: -25,
               bottom: -30,
               child: Container(
-                width: 56.w.clamp(48.0, 64.0),
-                height: 56.w.clamp(48.0, 64.0),
+                width: decorCircleSize,
+                height: decorCircleSize,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.white.withValues(alpha: 0.14),
@@ -74,8 +99,8 @@ class ReadQuranTopBanner extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      width: 62.w.clamp(56.0, 70.0),
-                      height: 56.h.clamp(50.0, 62.0),
+                      width: leadingShapeWidth,
+                      height: leadingShapeHeight,
                       child: CustomPaint(
                         painter: YShapePainter(
                           backgroundColor: Colors.white.withValues(alpha: 0.18),
@@ -85,9 +110,7 @@ class ReadQuranTopBanner extends StatelessWidget {
                           shadowBlurRadius: 5,
                         ),
                         child: Center(
-                          child: Lottie.asset(
-                            MyImages.quranAnimated,
-                          ),
+                          child: Lottie.asset(MyImages.quranAnimated),
                         ),
                       ),
                     ),

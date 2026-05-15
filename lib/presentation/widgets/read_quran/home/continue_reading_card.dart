@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/localization/surah_name_localizer.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/utils/app_responsive.dart';
 import '../../../../data/models/surah_model.dart';
 import '../../../viewmodels/settings_viewmodel.dart';
 import '../../common/app_continue_box.dart';
@@ -29,12 +29,26 @@ class ContinueReadingCard extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final language = context.watch<SettingsViewModel>().settings.language;
     final localizedTitle = surah.localizedTitle(context, language);
+    final responsive = AppResponsive.of(context);
+    final leadingWidth = responsive.pick(mobile: 62, tablet: 56, desktop: 64);
+    final leadingHeight = responsive.pick(mobile: 58, tablet: 52, desktop: 60);
+    final leadingIconSize = responsive.pick(
+      mobile: 25,
+      tablet: 22,
+      desktop: 26,
+    );
+    final trailingSize = responsive.pick(mobile: 32, tablet: 30, desktop: 34);
+    final trailingIconSize = responsive.pick(
+      mobile: 16,
+      tablet: 14.5,
+      desktop: 16.5,
+    );
 
     return AppContinueBox(
       onTap: onTap,
       leading: SizedBox(
-        width: 62.w.clamp(56.0, 68.0),
-        height: 58.h.clamp(50.0, 64.0),
+        width: leadingWidth,
+        height: leadingHeight,
         child: CustomPaint(
           painter: YShapePainter(
             backgroundColor: colorScheme.primary.withValues(alpha: 0.16),
@@ -47,7 +61,7 @@ class ContinueReadingCard extends StatelessWidget {
             child: Icon(
               Icons.bookmark_added_rounded,
               color: colorScheme.primary,
-              size: 25.sp.clamp(22.0, 27.0),
+              size: leadingIconSize,
             ),
           ),
         ),
@@ -95,15 +109,15 @@ class ContinueReadingCard extends StatelessWidget {
         ],
       ),
       trailing: Container(
-        width: 32.w.clamp(30.0, 36.0),
-        height: 32.w.clamp(30.0, 36.0),
+        width: trailingSize,
+        height: trailingSize,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: colorScheme.primary.withValues(alpha: 0.12),
         ),
         child: Icon(
           Icons.arrow_forward_ios_rounded,
-          size: 16.sp.clamp(14.0, 17.0),
+          size: trailingIconSize,
           color: colorScheme.primary,
         ),
       ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/my_colors.dart';
+import '../../../core/utils/app_responsive.dart';
 
 class AppContinueBox extends StatelessWidget {
   const AppContinueBox({
@@ -23,6 +23,7 @@ class AppContinueBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final responsive = AppResponsive.of(context);
 
     return Card(
       color: Colors.transparent,
@@ -60,7 +61,7 @@ class AppContinueBox extends StatelessWidget {
                 top: -24,
                 right: -18,
                 child: _DecorOrb(
-                  size: 72.w.clamp(64.0, 82.0),
+                  size: responsive.pick(mobile: 72, tablet: 66, desktop: 74),
                   color: colorScheme.primary.withValues(alpha: 0.10),
                 ),
               ),
@@ -68,7 +69,7 @@ class AppContinueBox extends StatelessWidget {
                 bottom: -20,
                 left: -12,
                 child: _DecorOrb(
-                  size: 52.w.clamp(46.0, 60.0),
+                  size: responsive.pick(mobile: 52, tablet: 48, desktop: 54),
                   color: colorScheme.secondary.withValues(alpha: 0.16),
                 ),
               ),

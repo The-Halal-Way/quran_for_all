@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 
@@ -7,6 +6,7 @@ import '../../../../core/localization/surah_name_localizer.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/utils/app_responsive.dart';
 import '../../../../data/models/surah_model.dart';
 import '../../../viewmodels/settings_viewmodel.dart';
 import '../../common/app_pill.dart';
@@ -31,6 +31,13 @@ class SurahCard extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     final language = context.watch<SettingsViewModel>().settings.language;
     final localizedTitle = surah.localizedTitle(context, language);
+    final responsive = AppResponsive.of(context);
+    final leadingSize = responsive.pick(mobile: 48, tablet: 42, desktop: 50);
+    final trailingArrowSize = responsive.pick(
+      mobile: 16,
+      tablet: 14.5,
+      desktop: 16.5,
+    );
 
     return Card(
       clipBehavior: Clip.antiAlias,
@@ -47,8 +54,8 @@ class SurahCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    width: 48.w.clamp(42.0, 52.0),
-                    height: 48.w.clamp(42.0, 52.0),
+                    width: leadingSize,
+                    height: leadingSize,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(AppRadius.md),
                       gradient: LinearGradient(
@@ -164,7 +171,7 @@ class SurahCard extends StatelessWidget {
                       const SizedBox(height: AppSpacing.xs),
                       Icon(
                         Icons.arrow_forward_ios_rounded,
-                        size: 16.sp.clamp(14.0, 17.0),
+                        size: trailingArrowSize,
                         color: MyColors.primary,
                       ),
                     ],

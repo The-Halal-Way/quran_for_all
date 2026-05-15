@@ -1,7 +1,6 @@
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class YShapePainter extends CustomPainter {
   final Color backgroundColor;
@@ -31,10 +30,10 @@ class YShapePainter extends CustomPainter {
       ..style = PaintingStyle.fill
       ..maskFilter = MaskFilter.blur(BlurStyle.normal, shadowBlurRadius);
 
-    final double r = 20.0.r;
+    final double r = 20.0;
     final double bw = bumpWidth;
     final double bh = bumpHeight;
-    final double br = 14.0.r; // bump corner radius
+    final double br = 14.0; // bump corner radius
     final double cx = size.width / 2;
 
     final path = Path();
@@ -149,10 +148,10 @@ class UShapePainter extends CustomPainter {
       ..style = PaintingStyle.fill
       ..maskFilter = MaskFilter.blur(BlurStyle.normal, shadowBlurRadius);
 
-    final double r = 20.0.r; // outer corner radius
+    final double r = 20.0; // outer corner radius
     final double nw = bumpWidth; // notch width
     final double nh = bumpHeight; // notch depth (goes downward into card)
-    final double nr = 14.0.r; // notch corner radius
+    final double nr = 14.0; // notch corner radius
     final double cx = size.width / 2;
 
     final path = Path();
@@ -244,8 +243,6 @@ class UShapePainter extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
-
-
 class LShapePainter extends CustomPainter {
   final Color backgroundColor;
   final Color shadowColor;
@@ -270,11 +267,10 @@ class LShapePainter extends CustomPainter {
       ..style = PaintingStyle.fill
       ..maskFilter = MaskFilter.blur(BlurStyle.normal, shadowBlurRadius);
 
-    final double radius = 20.0.r; // Adjust the corner radius as needed
+    final double radius = 20.0; // Adjust the corner radius as needed
     final double innerHeight =
-        size.height * 0.35.h; // Adjust the inner step height
-    final double innerWidth =
-        size.width * 0.35.h; // Adjust the inner step width
+        size.height * 0.35; // Adjust the inner step height
+    final double innerWidth = size.width * 0.35; // Adjust the inner step width
 
     final path = Path()
       ..moveTo(radius, 0)
@@ -374,12 +370,12 @@ class LShapePainterFlip extends CustomPainter {
       ..style = PaintingStyle.fill
       ..maskFilter = MaskFilter.blur(BlurStyle.normal, shadowBlurRadius);
 
-    final double rTL = topLeftRadius.r;
-    final double rTR = topRightRadius.r;
-    final double rSO = stepOuterRadius.r;
-    final double rSI = stepInnerRadius.r;
-    final double rSB = stepBottomRadius.r;
-    final double rBL = bottomLeftRadius.r;
+    final double rTL = topLeftRadius;
+    final double rTR = topRightRadius;
+    final double rSO = stepOuterRadius;
+    final double rSI = stepInnerRadius;
+    final double rSB = stepBottomRadius;
+    final double rBL = bottomLeftRadius;
     final double innerHeight = size.height * innerHeightFraction;
     final double innerWidth = size.width * innerWidthFraction;
 

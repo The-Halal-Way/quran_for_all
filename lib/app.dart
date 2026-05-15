@@ -7,6 +7,7 @@ import 'core/constants/app_constants.dart';
 import 'core/enums/app_language.dart';
 import 'core/localization/l10n_extensions.dart';
 import 'core/theme/app_theme.dart';
+import 'core/utils/app_responsive.dart';
 import 'data/datasources/local/app_database.dart';
 import 'data/datasources/remote/quran_api_service.dart';
 import 'data/repositories/audio_repository_impl.dart';
@@ -126,6 +127,19 @@ class QuranForAllApp extends StatelessWidget {
               localizationsDelegates: AppLocalizations.localizationsDelegates,
               supportedLocales: AppLocalizations.supportedLocales,
               builder: (context, child) {
+                final responsive = AppResponsive.of(context);
+                final mediaQuery = MediaQuery.of(context);
+                final maxTextScale = responsive.pick(
+                  mobile: responsive.isCompactPhone ? 1.02 : 1.08,
+                  tablet: 1.06,
+                  desktop: 1.08,
+                );
+                final clampedMediaQuery = mediaQuery.copyWith(
+                  textScaler: mediaQuery.textScaler.clamp(
+                    maxScaleFactor: maxTextScale,
+                  ),
+                );
+
                 final l10n = AppLocalizations.of(context);
                 if (l10n != null) {
                   LearnQuranTextLocalizer.seedFromLocalizations(
@@ -142,17 +156,20 @@ class QuranForAllApp extends StatelessWidget {
                   builder: (context, audioControlVm, _) {
                     final showBar = audioControlVm.showMiniPlayer;
 
-                    return Stack(
-                      children: [
-                        child ?? const SizedBox.shrink(),
-                        if (showBar)
-                          const Positioned(
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            child: GlobalAudioControlBar(),
-                          ),
-                      ],
+                    return MediaQuery(
+                      data: clampedMediaQuery,
+                      child: Stack(
+                        children: [
+                          child ?? const SizedBox.shrink(),
+                          if (showBar)
+                            const Positioned(
+                              left: 0,
+                              right: 0,
+                              bottom: 0,
+                              child: GlobalAudioControlBar(),
+                            ),
+                        ],
+                      ),
                     );
                   },
                 );

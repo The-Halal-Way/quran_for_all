@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theme/app_spacing.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
@@ -26,6 +25,7 @@ class GlobalAudioControlBar extends StatelessWidget {
     final width = MediaQuery.sizeOf(context).width;
     final barHeight = width >= 600 ? 56.0 : 60.0;
     final actionIconSize = width >= 600 ? 26.0 : 28.0;
+    final leadingIconSize = width >= 600 ? 21.0 : 22.0;
 
     return Material(
       color: colorScheme.primary,
@@ -56,7 +56,7 @@ class GlobalAudioControlBar extends StatelessWidget {
                         ? Icon(
                             Icons.music_note_rounded,
                             color: onPrimary,
-                            size: 22.sp.clamp(20.0, 23.0),
+                            size: leadingIconSize,
                           )
                         : _PulsingIcon(color: onPrimary),
                     const SizedBox(width: AppSpacing.sm + 2),
@@ -100,8 +100,9 @@ class GlobalAudioControlBar extends StatelessWidget {
                         color: onPrimary,
                         size: actionIconSize,
                       ),
-                      onPressed: () =>
-                          context.read<AudioControlViewModel>().togglePlayPause(),
+                      onPressed: () => context
+                          .read<AudioControlViewModel>()
+                          .togglePlayPause(),
                     ),
 
                     // ── Stop button ────────────────────────────────────
@@ -147,9 +148,10 @@ class _PulsingIconState extends State<_PulsingIcon>
       vsync: this,
       duration: const Duration(milliseconds: 900),
     )..repeat(reverse: true);
-    _opacity = Tween<double>(begin: 0.5, end: 1.0).animate(
-      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
-    );
+    _opacity = Tween<double>(
+      begin: 0.5,
+      end: 1.0,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
   }
 
   @override

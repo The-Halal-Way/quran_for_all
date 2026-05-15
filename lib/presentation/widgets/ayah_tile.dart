@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/enums/app_language.dart';
 import '../../core/localization/l10n_extensions.dart';
 import '../../core/theme/app_spacing.dart';
 import '../../core/theme/app_text_styles.dart';
+import '../../core/utils/app_responsive.dart';
 import '../../data/models/ayah_model.dart';
 
 class AyahTile extends StatelessWidget {
@@ -315,6 +315,12 @@ class _TranslationLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final responsive = AppResponsive.of(context);
+    final labelFontSize = responsive.pick(
+      mobile: 11,
+      tablet: 10.5,
+      desktop: 11.2,
+    );
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -334,7 +340,7 @@ class _TranslationLine extends StatelessWidget {
             style: TextStyle(
               color: colorScheme.primary,
               fontWeight: FontWeight.w700,
-              fontSize: 11.sp.clamp(10.5, 12.0),
+              fontSize: labelFontSize,
             ),
           ),
         ),

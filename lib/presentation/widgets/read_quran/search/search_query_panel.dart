@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/utils/app_responsive.dart';
 
 class SearchQueryPanel extends StatelessWidget {
   const SearchQueryPanel({
@@ -24,6 +24,12 @@ class SearchQueryPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final responsive = AppResponsive.of(context);
+    final statusIconSize = responsive.pick(
+      mobile: 18,
+      tablet: 16.5,
+      desktop: 18.5,
+    );
 
     return Container(
       padding: const EdgeInsets.all(AppSpacing.lg - 2),
@@ -60,7 +66,7 @@ class SearchQueryPanel extends StatelessWidget {
                   isLoading
                       ? Icons.hourglass_bottom_rounded
                       : Icons.tune_rounded,
-                  size: 18.sp.clamp(16.0, 19.0),
+                  size: statusIconSize,
                   color: colorScheme.primary,
                 ),
                 const SizedBox(width: AppSpacing.sm),

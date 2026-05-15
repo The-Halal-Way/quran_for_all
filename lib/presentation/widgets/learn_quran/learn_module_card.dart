@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/learn_quran_content.dart';
 import '../common/app_pill.dart';
 import 'learn_module_visuals.dart';
@@ -23,15 +23,22 @@ class LearnModuleCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final visuals = LearnModuleVisuals.forModule(module.id);
     final l10n = context.l10n;
+    final responsive = AppResponsive.of(context);
+    final leadingSize = responsive.pick(mobile: 44, tablet: 40, desktop: 46);
+    final progressHeight = responsive.pick(
+      mobile: 8,
+      tablet: 7.4,
+      desktop: 8.2,
+    );
     final progress = module.lessons.isEmpty
         ? 0.0
         : completedLessons / module.lessons.length;
 
     final statusText = completedLessons == module.lessons.length
-      ? l10n.learnModuleStatusCompleted
+        ? l10n.learnModuleStatusCompleted
         : completedLessons == 0
-      ? l10n.learnModuleStatusNotStarted
-      : l10n.learnModuleStatusInProgress;
+        ? l10n.learnModuleStatusNotStarted
+        : l10n.learnModuleStatusInProgress;
 
     return Card(
       clipBehavior: Clip.antiAlias,
@@ -47,8 +54,8 @@ class LearnModuleCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    width: 44.w.clamp(40.0, 48.0),
-                    height: 44.w.clamp(40.0, 48.0),
+                    width: leadingSize,
+                    height: leadingSize,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
@@ -123,7 +130,7 @@ class LearnModuleCard extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(AppRadius.full),
                 child: LinearProgressIndicator(
-                  minHeight: 8.h.clamp(7.0, 8.0),
+                  minHeight: progressHeight,
                   value: progress,
                   backgroundColor: visuals.startColor.withValues(alpha: 0.15),
                   color: visuals.endColor,
@@ -144,5 +151,3 @@ class LearnModuleCard extends StatelessWidget {
     );
   }
 }
-
-

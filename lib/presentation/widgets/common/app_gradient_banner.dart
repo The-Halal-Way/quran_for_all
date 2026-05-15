@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 
 /// A gradient-filled banner / hero card used at the top of list pages.
 ///
@@ -25,30 +25,55 @@ class AppGradientBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final responsive = AppResponsive.of(context);
     final resolvedPadding = EdgeInsets.fromLTRB(
-      padding.left.w.clamp(14.0, 24.0),
-      padding.top.h.clamp(14.0, 24.0),
-      padding.right.w.clamp(14.0, 24.0),
-      padding.bottom.h.clamp(14.0, 24.0),
+      responsive.pick(
+        mobile: padding.left,
+        tablet: padding.left * 0.95,
+        desktop: padding.left,
+      ),
+      responsive.pick(
+        mobile: padding.top,
+        tablet: padding.top * 0.95,
+        desktop: padding.top,
+      ),
+      responsive.pick(
+        mobile: padding.right,
+        tablet: padding.right * 0.95,
+        desktop: padding.right,
+      ),
+      responsive.pick(
+        mobile: padding.bottom,
+        tablet: padding.bottom * 0.95,
+        desktop: padding.bottom,
+      ),
     );
+
+    final resolvedBorderRadius = responsive
+        .pick(
+          mobile: borderRadius,
+          tablet: borderRadius * 0.96,
+          desktop: borderRadius,
+        )
+        .clamp(16.0, 30.0);
 
     return Container(
       width: double.infinity,
       padding: resolvedPadding,
       decoration: BoxDecoration(
         gradient: gradient,
-        borderRadius: BorderRadius.circular(
-          borderRadius.r.clamp(16.0, 30.0),
-        ),
+        borderRadius: BorderRadius.circular(resolvedBorderRadius),
         boxShadow: [
           BoxShadow(
             color: shadowColor ?? gradient.colors.first.withValues(alpha: 0.20),
-            blurRadius: 24.r.clamp(18.0, 26.0),
+            blurRadius: responsive.pick(mobile: 24, tablet: 22, desktop: 24),
             offset: const Offset(0, 10),
           ),
           BoxShadow(
-            color: (shadowColor ?? gradient.colors.first).withValues(alpha: 0.07),
-            blurRadius: 56.r.clamp(34.0, 58.0),
+            color: (shadowColor ?? gradient.colors.first).withValues(
+              alpha: 0.07,
+            ),
+            blurRadius: responsive.pick(mobile: 56, tablet: 48, desktop: 56),
             offset: const Offset(0, 28),
           ),
         ],

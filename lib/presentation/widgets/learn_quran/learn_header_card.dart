@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
 import 'package:quran_for_all/core/theme/my_images.dart';
 
@@ -7,6 +6,7 @@ import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_gradients.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 
 class LearnHeaderCard extends StatelessWidget {
   const LearnHeaderCard({
@@ -30,6 +30,14 @@ class LearnHeaderCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
     final l10n = context.l10n;
+    final responsive = AppResponsive.of(context);
+    final headingSize = responsive.pick(mobile: 30, tablet: 26, desktop: 31);
+    final metricGap = responsive.pick(mobile: 10, tablet: 8, desktop: 10);
+    final progressHeight = responsive.pick(
+      mobile: 10,
+      tablet: 8.5,
+      desktop: 10,
+    );
     const padding = EdgeInsets.all(AppSpacing.xl - 2);
     return Container(
       padding: padding,
@@ -70,7 +78,7 @@ class LearnHeaderCard extends StatelessWidget {
                 l10n.learnHeaderTitle,
                 style: textTheme.headlineMedium?.copyWith(
                   color: Colors.white,
-                  fontSize: 30.sp.clamp(24.0, 31.0),
+                  fontSize: headingSize,
                   height: 1.12,
                 ),
               ),
@@ -85,7 +93,7 @@ class LearnHeaderCard extends StatelessWidget {
               const SizedBox(height: AppSpacing.xl - 2),
               // modules and streak box
               Row(
-                spacing: 10.h,
+                spacing: metricGap,
                 children: [
                   // modules progress
                   Expanded(
@@ -110,7 +118,7 @@ class LearnHeaderCard extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(AppRadius.full),
                 child: LinearProgressIndicator(
-                  minHeight: 10.h.clamp(8.0, 10.0),
+                  minHeight: progressHeight,
                   value: overallProgress,
                   backgroundColor: Colors.white.withValues(alpha: 0.25),
                   color: MyColors.secondaryLight,

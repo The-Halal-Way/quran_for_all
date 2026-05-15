@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_responsive.dart';
 
 /// A small pill/tag used for metadata display throughout the app.
 ///
@@ -52,6 +52,7 @@ class AppPill extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final responsive = AppResponsive.of(context);
     final Color fg;
     final Color bg;
     final Color? border;
@@ -80,14 +81,18 @@ class AppPill extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           if (icon != null) ...[
-            Icon(icon, size: 14.sp.clamp(13.0, 15.5), color: fg),
+            Icon(
+              icon,
+              size: responsive.pick(mobile: 14, tablet: 13.5, desktop: 14.5),
+              color: fg,
+            ),
             const SizedBox(width: 5),
           ],
           if (imgIcon != null) ...[
             Image.asset(
               imgIcon!,
-              width: 18.w.clamp(16.0, 20.0),
-              height: 16.h.clamp(14.0, 18.0),
+              width: responsive.pick(mobile: 18, tablet: 17, desktop: 19),
+              height: responsive.pick(mobile: 16, tablet: 15, desktop: 17),
             ),
             const SizedBox(width: 5),
           ],
@@ -96,9 +101,9 @@ class AppPill extends StatelessWidget {
               label,
               overflow: TextOverflow.ellipsis,
               style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                    color: fg,
-                    fontWeight: FontWeight.w700,
-                  ),
+                color: fg,
+                fontWeight: FontWeight.w700,
+              ),
             ),
           ),
         ],
