@@ -30,9 +30,9 @@ class LearnHeaderCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
     final l10n = context.l10n;
-
+    const padding = EdgeInsets.all(AppSpacing.xl - 2);
     return Container(
-      padding: const EdgeInsets.all(AppSpacing.xl - 2),
+      padding: padding,
       decoration: BoxDecoration(
         gradient: AppGradients.heroBanner,
         borderRadius: BorderRadius.circular(AppRadius.xxl - 2),
@@ -57,7 +57,7 @@ class LearnHeaderCard extends StatelessWidget {
                 opacity: 0.4,
                 child: Lottie.asset(
                   MyImages.readingQuranAnimated,
-                  fit: BoxFit.contain,
+                  fit: BoxFit.fitHeight,
                 ),
               ),
             ),
@@ -65,6 +65,7 @@ class LearnHeaderCard extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // title
               Text(
                 l10n.learnHeaderTitle,
                 style: textTheme.headlineMedium?.copyWith(
@@ -74,6 +75,7 @@ class LearnHeaderCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: AppSpacing.sm),
+              // subtitle
               Text(
                 l10n.learnHeaderSubtitle,
                 style: textTheme.bodyMedium?.copyWith(
@@ -81,6 +83,30 @@ class LearnHeaderCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: AppSpacing.xl - 2),
+              // modules and streak box
+              Row(
+                spacing: 10.h,
+                children: [
+                  // modules progress
+                  Expanded(
+                    child: _MetricPill(
+                      icon: Icons.workspace_premium_rounded,
+                      label: l10n.learnHeaderModulesLabel,
+                      value: '$completedModules/$totalModules',
+                    ),
+                  ),
+                  // streak progress
+                  Expanded(
+                    child: _MetricPill(
+                      icon: Icons.local_fire_department_rounded,
+                      label: l10n.learnHeaderStreakLabel,
+                      value: l10n.learnHeaderStreakDays(streakDays),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: AppSpacing.lg - 2),
+              // progress bar
               ClipRRect(
                 borderRadius: BorderRadius.circular(AppRadius.full),
                 child: LinearProgressIndicator(
@@ -91,35 +117,13 @@ class LearnHeaderCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: AppSpacing.sm + 2),
+              // progress text title
               Text(
                 l10n.learnHeaderLessonProgress(completedLessons, totalLessons),
                 style: textTheme.labelLarge?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.w700,
                 ),
-              ),
-              const SizedBox(height: AppSpacing.lg - 2),
-              Wrap(
-                spacing: AppSpacing.sm,
-                runSpacing: AppSpacing.sm,
-                children: [
-                  SizedBox(
-                    width: 240,
-                    child: _MetricPill(
-                      icon: Icons.workspace_premium_rounded,
-                      label: l10n.learnHeaderModulesLabel,
-                      value: '$completedModules/$totalModules',
-                    ),
-                  ),
-                  SizedBox(
-                    width: 240,
-                    child: _MetricPill(
-                      icon: Icons.local_fire_department_rounded,
-                      label: l10n.learnHeaderStreakLabel,
-                      value: l10n.learnHeaderStreakDays(streakDays),
-                    ),
-                  ),
-                ],
               ),
             ],
           ),

@@ -46,92 +46,93 @@ class _LearnQuranViewState extends State<LearnQuranView> {
     final responsive = AppResponsive.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.learnQuranPageTitle)),
-      body: AppGradientBackground(
-        child: viewModel.isLoading
-            ? const Center(child: CircularProgressIndicator())
-            : RefreshIndicator(
-                onRefresh: viewModel.initialize,
-                child: AppPageScrollbar(
-                  builder: (context, controller) => Center(
-                    child: ConstrainedBox(
-                      constraints: BoxConstraints(
-                        maxWidth: responsive.maxReadingContentWidth,
-                      ),
-                      child: ListView(
-                        controller: controller,
-                        physics: const AlwaysScrollableScrollPhysics(),
-                        padding: EdgeInsets.fromLTRB(
-                          responsive.padding,
-                          AppSpacing.sm + 2,
-                          responsive.padding,
-                          AppSpacing.lg,
+      body: SafeArea(
+        child: AppGradientBackground(
+          child: viewModel.isLoading
+              ? const Center(child: CircularProgressIndicator())
+              : RefreshIndicator(
+                  onRefresh: viewModel.initialize,
+                  child: AppPageScrollbar(
+                    builder: (context, controller) => Center(
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxWidth: responsive.maxReadingContentWidth,
                         ),
-                        children: [
-                          // banner
-                          LearnHeaderCard(
-                            overallProgress: viewModel.overallProgress,
-                            completedLessons: viewModel.completedLessonCount,
-                            totalLessons: viewModel.totalLessonCount,
-                            completedModules: viewModel.completedModuleCount,
-                            totalModules: viewModel.modules.length,
-                            streakDays: viewModel.streakDays,
+                        child: ListView(
+                          controller: controller,
+                          physics: const AlwaysScrollableScrollPhysics(),
+                          padding: EdgeInsets.fromLTRB(
+                            responsive.padding,
+                            AppSpacing.sm + 2,
+                            responsive.padding,
+                            AppSpacing.lg,
                           ),
-                          const SizedBox(height: AppSpacing.md),
-                          // next lesson card
-                          LearnNextLessonCard(
-                            nextLesson: viewModel.nextLesson,
-                            onStart: () => _openNextLesson(context, viewModel),
-                          ),
-                          if (viewModel.errorMessageKey != null) ...[
-                            const SizedBox(height: AppSpacing.sm + 2),
-                            Card(
-                              color: MyColors.error.withValues(alpha: 0.08),
-                              child: Padding(
-                                padding: const EdgeInsets.all(AppSpacing.md),
-                                child: Row(
-                                  children: [
-                                    const Icon(Icons.info_outline),
-                                    const SizedBox(width: AppSpacing.sm),
-                                    Expanded(
-                                      child: Text(
-                                        localizeLearnQuranMessage(
-                                          context,
-                                          viewModel.errorMessageKey!,
+                          children: [
+                            // banner
+                            LearnHeaderCard(
+                              overallProgress: viewModel.overallProgress,
+                              completedLessons: viewModel.completedLessonCount,
+                              totalLessons: viewModel.totalLessonCount,
+                              completedModules: viewModel.completedModuleCount,
+                              totalModules: viewModel.modules.length,
+                              streakDays: viewModel.streakDays,
+                            ),
+                            const SizedBox(height: AppSpacing.md),
+                            // next lesson card
+                            LearnNextLessonCard(
+                              nextLesson: viewModel.nextLesson,
+                              onStart: () => _openNextLesson(context, viewModel),
+                            ),
+                            if (viewModel.errorMessageKey != null) ...[
+                              const SizedBox(height: AppSpacing.sm + 2),
+                              Card(
+                                color: MyColors.error.withValues(alpha: 0.08),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(AppSpacing.md),
+                                  child: Row(
+                                    children: [
+                                      const Icon(Icons.info_outline),
+                                      const SizedBox(width: AppSpacing.sm),
+                                      Expanded(
+                                        child: Text(
+                                          localizeLearnQuranMessage(
+                                            context,
+                                            viewModel.errorMessageKey!,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ),
+                            ],
+                            const SizedBox(height: AppSpacing.lg - 2),
+                            // titles for tacks
+                            SectionHeader(
+                              title: l10n.learnQuranTracksTitle,
+                              subtitle: l10n.learnQuranTracksSubtitle,
                             ),
+                            const SizedBox(height: AppSpacing.sm + 2),
+                            // list of modules
+                            for (final module in viewModel.modules)
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  bottom: AppSpacing.sm + 2,
+                                ),
+                                child: LearnModuleCard(
+                                  module: module,
+                                  completedLessons: viewModel
+                                      .completedLessonCountFor(module),
+                                  onTap: () => _openModule(context, module),
+                                ),
+                              ),
                           ],
-                          const SizedBox(height: AppSpacing.lg - 2),
-                          // titles for tacks
-                          SectionHeader(
-                            title: l10n.learnQuranTracksTitle,
-                            subtitle: l10n.learnQuranTracksSubtitle,
-                          ),
-                          const SizedBox(height: AppSpacing.sm + 2),
-                          // list of modules
-                          for (final module in viewModel.modules)
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                bottom: AppSpacing.sm + 2,
-                              ),
-                              child: LearnModuleCard(
-                                module: module,
-                                completedLessons:
-                                    viewModel.completedLessonCountFor(module),
-                                onTap: () => _openModule(context, module),
-                              ),
-                            ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
+        ),
       ),
     );
   }
