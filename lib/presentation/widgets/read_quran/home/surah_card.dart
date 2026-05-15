@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 
+import '../../../../core/localization/surah_name_localizer.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/surah_model.dart';
+import '../../../viewmodels/settings_viewmodel.dart';
 import '../../common/app_pill.dart';
 
 class SurahCard extends StatelessWidget {
@@ -26,6 +29,8 @@ class SurahCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
+    final language = context.watch<SettingsViewModel>().settings.language;
+    final localizedTitle = surah.localizedTitle(context, language);
 
     return Card(
       clipBehavior: Clip.antiAlias,
@@ -75,7 +80,7 @@ class SurahCard extends StatelessWidget {
                           children: [
                             Expanded(
                               child: Text(
-                                surah.nameEnglish,
+                                localizedTitle,
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                                 style: textTheme.titleMedium?.copyWith(

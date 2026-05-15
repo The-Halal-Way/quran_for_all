@@ -12,12 +12,16 @@ class SurahMetaCard extends StatefulWidget {
   const SurahMetaCard({
     super.key,
     required this.surah,
+    required this.titleText,
     required this.isPlayingFullSurah,
+    required this.onSearchTap,
     required this.onTogglePlayback,
   });
 
   final SurahModel surah;
+  final String titleText;
   final bool isPlayingFullSurah;
+  final VoidCallback onSearchTap;
   final VoidCallback onTogglePlayback;
 
   @override
@@ -65,27 +69,51 @@ class _SurahMetaCardState extends State<SurahMetaCard> {
                   style: AppTextStyles.surahArabicName(context),
                 ),
               ),
-              IconButton.filledTonal(
-                onPressed: () {
-                  setState(() {
-                    _isExpanded = !_isExpanded;
-                  });
-                },
-                padding: EdgeInsets.zero,
-                visualDensity: VisualDensity.compact,
-                constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
-                style: IconButton.styleFrom(
-                  backgroundColor: Colors.white.withValues(alpha: 0.2),
-                  foregroundColor: Colors.white,
-                ),
-                tooltip: context.readQuranText(
-                  _isExpanded ? 'Shrink card' : 'Expand card',
-                ),
-                icon: Icon(
-                  _isExpanded
-                      ? Icons.keyboard_arrow_up_rounded
-                      : Icons.keyboard_arrow_down_rounded,
-                ),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton.filledTonal(
+                    onPressed: widget.onSearchTap,
+                    padding: EdgeInsets.zero,
+                    visualDensity: VisualDensity.compact,
+                    constraints: const BoxConstraints(
+                      minWidth: 32,
+                      minHeight: 32,
+                    ),
+                    style: IconButton.styleFrom(
+                      backgroundColor: Colors.white.withValues(alpha: 0.2),
+                      foregroundColor: Colors.white,
+                    ),
+                    tooltip: context.readQuranText('Search inside this surah'),
+                    icon: const Icon(Icons.search_rounded),
+                  ),
+                  const SizedBox(width: AppSpacing.xs),
+                  IconButton.filledTonal(
+                    onPressed: () {
+                      setState(() {
+                        _isExpanded = !_isExpanded;
+                      });
+                    },
+                    padding: EdgeInsets.zero,
+                    visualDensity: VisualDensity.compact,
+                    constraints: const BoxConstraints(
+                      minWidth: 32,
+                      minHeight: 32,
+                    ),
+                    style: IconButton.styleFrom(
+                      backgroundColor: Colors.white.withValues(alpha: 0.2),
+                      foregroundColor: Colors.white,
+                    ),
+                    tooltip: context.readQuranText(
+                      _isExpanded ? 'Shrink card' : 'Expand card',
+                    ),
+                    icon: Icon(
+                      _isExpanded
+                          ? Icons.keyboard_arrow_up_rounded
+                          : Icons.keyboard_arrow_down_rounded,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
@@ -99,19 +127,23 @@ class _SurahMetaCardState extends State<SurahMetaCard> {
               children: [
                 const SizedBox(height: AppSpacing.xs + 1),
                 Text(
-                  widget.surah.nameEnglish,
+                  widget.titleText,
                   style: Theme.of(
                     context,
                   ).textTheme.titleLarge?.copyWith(color: Colors.white),
                 ),
-                const SizedBox(height: AppSpacing.xs + 1),
-                Text(
-                  context.readQuranText(widget.surah.nameTranslated),
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Colors.white.withValues(alpha: 0.9),
+                if (widget.surah.nameEnglish.trim().isNotEmpty &&
+                    widget.titleText.trim().toLowerCase() !=
+                        widget.surah.nameEnglish.trim().toLowerCase()) ...[
+                  const SizedBox(height: AppSpacing.xs + 1),
+                  Text(
+                    widget.surah.nameEnglish,
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: Colors.white.withValues(alpha: 0.9),
+                    ),
                   ),
-                ),
+                ],
                 const SizedBox(height: AppSpacing.lg - 2),
                 Wrap(
                   spacing: AppSpacing.sm,

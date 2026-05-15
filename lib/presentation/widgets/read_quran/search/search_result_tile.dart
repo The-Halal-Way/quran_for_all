@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/localization/surah_name_localizer.dart';
 import '../../../../core/enums/app_language.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/search_result_model.dart';
@@ -31,6 +32,14 @@ class SearchResultTile extends StatelessWidget {
     return subtitle;
   }
 
+  String _titleText() {
+    if (result.type == SearchResultType.surah && result.surah != null) {
+      return result.title;
+    }
+
+    return result.title;
+  }
+
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
@@ -40,7 +49,12 @@ class SearchResultTile extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadius.lg),
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(AppSpacing.lg - 2, AppSpacing.md, AppSpacing.lg - 2, AppSpacing.md),
+          padding: const EdgeInsets.fromLTRB(
+            AppSpacing.lg - 2,
+            AppSpacing.md,
+            AppSpacing.lg - 2,
+            AppSpacing.md,
+          ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -64,7 +78,10 @@ class SearchResultTile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      result.title,
+                      result.type == SearchResultType.surah &&
+                              result.surah != null
+                          ? '${result.surah!.id}. ${result.surah!.localizedTitle(context, translationLanguage)}'
+                          : _titleText(),
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w700,
                       ),

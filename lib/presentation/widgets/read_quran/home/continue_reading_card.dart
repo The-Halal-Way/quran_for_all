@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/localization/surah_name_localizer.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/surah_model.dart';
+import '../../../viewmodels/settings_viewmodel.dart';
 import '../../common/common_painters.dart';
 
 class ContinueReadingCard extends StatelessWidget {
@@ -24,6 +27,8 @@ class ContinueReadingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final language = context.watch<SettingsViewModel>().settings.language;
+    final localizedTitle = surah.localizedTitle(context, language);
 
     return Card(
       color: Colors.transparent,
@@ -118,14 +123,11 @@ class ContinueReadingCard extends StatelessWidget {
                           ),
                           const SizedBox(height: AppSpacing.xs - 1),
                           Text(
-                            surah.nameEnglish,
+                            localizedTitle,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: Theme.of(
-                              context,
-                            ).textTheme.titleMedium?.copyWith(
-                              fontWeight: FontWeight.w700,
-                            ),
+                            style: Theme.of(context).textTheme.titleMedium
+                                ?.copyWith(fontWeight: FontWeight.w700),
                           ),
                           const SizedBox(height: AppSpacing.sm - 2),
                           Text(
@@ -193,10 +195,7 @@ class _DecorOrb extends StatelessWidget {
     return Container(
       width: size,
       height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: color,
-      ),
+      decoration: BoxDecoration(shape: BoxShape.circle, color: color),
     );
   }
 }

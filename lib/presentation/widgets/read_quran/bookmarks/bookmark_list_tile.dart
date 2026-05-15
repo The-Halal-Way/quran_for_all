@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/enums/app_language.dart';
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/localization/surah_name_localizer.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/ayah_model.dart';
 import '../../../../data/models/bookmark_model.dart';
@@ -31,9 +32,9 @@ class BookmarkListTile extends StatelessWidget {
       return '${context.readQuranText('Ayah')} ${bookmark.surahId}:${bookmark.ayahNumber ?? ''}';
     }
 
-    final englishName = surah?.nameEnglish.trim() ?? '';
-    if (englishName.isNotEmpty) {
-      return '${bookmark.surahId}. $englishName';
+    final localizedName = surah?.localizedTitle(context, language).trim() ?? '';
+    if (localizedName.isNotEmpty) {
+      return '${bookmark.surahId}. $localizedName';
     }
 
     return '${context.readQuranText('Surah')} ${bookmark.surahId}';
@@ -49,7 +50,7 @@ class BookmarkListTile extends StatelessWidget {
         return compact;
       }
 
-      final surahName = surah?.nameEnglish.trim() ?? '';
+      final surahName = surah?.localizedTitle(context, language).trim() ?? '';
       if (surahName.isNotEmpty) {
         return '${context.readQuranText('Surah')}: $surahName';
       }
