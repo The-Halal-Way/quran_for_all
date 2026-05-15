@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'package:quran_for_all/core/theme/my_icons.dart';
+import 'package:quran_for_all/core/theme/my_images.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
@@ -8,206 +9,156 @@ import '../../../../core/theme/app_text_styles.dart';
 import '../../../../data/models/surah_model.dart';
 import '../../common/app_pill.dart';
 
-class SurahMetaCard extends StatefulWidget {
+class SurahMetaCard extends StatelessWidget {
   const SurahMetaCard({
     super.key,
     required this.surah,
     required this.titleText,
-    required this.isPlayingFullSurah,
     required this.onSearchTap,
-    required this.onTogglePlayback,
   });
 
   final SurahModel surah;
   final String titleText;
-  final bool isPlayingFullSurah;
   final VoidCallback onSearchTap;
-  final VoidCallback onTogglePlayback;
 
-  @override
-  State<SurahMetaCard> createState() => _SurahMetaCardState();
-}
-
-class _SurahMetaCardState extends State<SurahMetaCard> {
-  bool _isExpanded = true;
+  static const List<String> _backgroundImages = <String>[
+    MyImages.background1,
+    MyImages.background2,
+    MyImages.background3,
+    MyImages.background4,
+    MyImages.background5,
+    MyImages.background6,
+    MyImages.background7,
+    MyImages.background8,
+  ];
 
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final bgImage =
+        _backgroundImages[(surah.id - 1) % _backgroundImages.length];
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(
-        AppSpacing.xl - 2,
-        AppSpacing.sm * 2.5,
-        AppSpacing.xl - 2,
-        AppSpacing.xl - 2,
-      ),
+      clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadius.xl),
-        gradient: LinearGradient(
-          colors: [colorScheme.primary, colorScheme.tertiary],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+        image: DecorationImage(
+          image: AssetImage(bgImage),
+          fit: BoxFit.cover,
+          colorFilter: ColorFilter.mode(
+            Colors.black.withValues(alpha: 0.34),
+            BlendMode.darken,
+          ),
         ),
       ),
-      child: Column(
+      child: Stack(
         children: [
-          Row(
-            children: [
-              IconButton(
-                icon: const Icon(
-                  Icons.arrow_back_ios_new,
-                  color: MyColors.textOnPrimary,
-                ),
-                onPressed: () => Navigator.of(context).pop(),
-              ),
-              Expanded(
-                child: Text(
-                  widget.surah.nameArabic,
-                  textAlign: TextAlign.center,
-                  style: AppTextStyles.surahArabicName(context),
+          Positioned.fill(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    colorScheme.primary.withValues(alpha: 0.72),
+                    colorScheme.tertiary.withValues(alpha: 0.68),
+                    Colors.black.withValues(alpha: 0.42),
+                  ],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  stops: const [0.0, 0.52, 1.0],
                 ),
               ),
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  IconButton.filledTonal(
-                    onPressed: widget.onSearchTap,
-                    padding: EdgeInsets.zero,
-                    visualDensity: VisualDensity.compact,
-                    constraints: const BoxConstraints(
-                      minWidth: 32,
-                      minHeight: 32,
-                    ),
-                    style: IconButton.styleFrom(
-                      backgroundColor: Colors.white.withValues(alpha: 0.2),
-                      foregroundColor: Colors.white,
-                    ),
-                    tooltip: context.readQuranText('Search inside this surah'),
-                    icon: const Icon(Icons.search_rounded),
-                  ),
-                  const SizedBox(width: AppSpacing.xs),
-                  IconButton.filledTonal(
-                    onPressed: () {
-                      setState(() {
-                        _isExpanded = !_isExpanded;
-                      });
-                    },
-                    padding: EdgeInsets.zero,
-                    visualDensity: VisualDensity.compact,
-                    constraints: const BoxConstraints(
-                      minWidth: 32,
-                      minHeight: 32,
-                    ),
-                    style: IconButton.styleFrom(
-                      backgroundColor: Colors.white.withValues(alpha: 0.2),
-                      foregroundColor: Colors.white,
-                    ),
-                    tooltip: context.readQuranText(
-                      _isExpanded ? 'Shrink card' : 'Expand card',
-                    ),
-                    icon: Icon(
-                      _isExpanded
-                          ? Icons.keyboard_arrow_up_rounded
-                          : Icons.keyboard_arrow_down_rounded,
-                    ),
-                  ),
-                ],
-              ),
-            ],
+            ),
           ),
-          AnimatedCrossFade(
-            duration: const Duration(milliseconds: 220),
-            crossFadeState: _isExpanded
-                ? CrossFadeState.showSecond
-                : CrossFadeState.showFirst,
-            firstChild: const SizedBox.shrink(),
-            secondChild: Column(
-              children: [
-                const SizedBox(height: AppSpacing.xs + 1),
-                Text(
-                  widget.titleText,
-                  style: Theme.of(
-                    context,
-                  ).textTheme.titleLarge?.copyWith(color: Colors.white),
-                ),
-                if (widget.surah.nameEnglish.trim().isNotEmpty &&
-                    widget.titleText.trim().toLowerCase() !=
-                        widget.surah.nameEnglish.trim().toLowerCase()) ...[
+          SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppSpacing.xl - 2,
+                AppSpacing.sm * 2.5,
+                AppSpacing.xl - 2,
+                AppSpacing.xl - 2,
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      IconButton(
+                        icon: const Icon(
+                          Icons.arrow_back_ios_new,
+                          color: MyColors.textOnPrimary,
+                        ),
+                        onPressed: () => Navigator.of(context).pop(),
+                      ),
+                      Expanded(
+                        child: Text(
+                          surah.nameArabic,
+                          textAlign: TextAlign.center,
+                          style: AppTextStyles.surahArabicName(
+                            context,
+                          ).copyWith(color: Colors.white),
+                        ),
+                      ),
+                      SizedBox(width: 40),
+                      // IconButton.filledTonal(
+                      //   onPressed: onSearchTap,
+                      //   padding: EdgeInsets.zero,
+                      //   visualDensity: VisualDensity.compact,
+                      //   constraints: const BoxConstraints(
+                      //     minWidth: 32,
+                      //     minHeight: 32,
+                      //   ),
+                      //   style: IconButton.styleFrom(
+                      //     backgroundColor: Colors.white.withValues(alpha: 0.2),
+                      //     foregroundColor: Colors.white,
+                      //   ),
+                      //   tooltip: context.readQuranText(
+                      //     'Search inside this surah',
+                      //   ),
+                      //   icon: const Icon(Icons.search_rounded),
+                      // ),
+                    ],
+                  ),
                   const SizedBox(height: AppSpacing.xs + 1),
                   Text(
-                    widget.surah.nameEnglish,
-                    textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Colors.white.withValues(alpha: 0.9),
-                    ),
+                    titleText,
+                    style: Theme.of(
+                      context,
+                    ).textTheme.titleLarge?.copyWith(color: Colors.white),
                   ),
-                ],
-                const SizedBox(height: AppSpacing.lg - 2),
-                Wrap(
-                  spacing: AppSpacing.sm,
-                  runSpacing: AppSpacing.sm,
-                  alignment: WrapAlignment.center,
-                  children: [
-                    AppPill.overlay(
-                      icon: Icons.layers_outlined,
-                      label:
-                          '${widget.surah.totalAyahs} ${context.readQuranText('ayahs')}',
-                    ),
-                    AppPill.overlay(
-                      imgIcon: widget.surah.revelationType == 'Meccan'
-                          ? MyIcons.meccaIcon
-                          : MyIcons.medinaIcon,
-                      label: context.readQuranText(widget.surah.revelationType),
+                  if (surah.nameEnglish.trim().isNotEmpty &&
+                      titleText.trim().toLowerCase() !=
+                          surah.nameEnglish.trim().toLowerCase()) ...[
+                    const SizedBox(height: AppSpacing.xs + 1),
+                    Text(
+                      surah.nameEnglish,
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: Colors.white.withValues(alpha: 0.9),
+                      ),
                     ),
                   ],
-                ),
-                const SizedBox(height: AppSpacing.lg - 2),
-                FilledButton.tonalIcon(
-                  onPressed: widget.onTogglePlayback,
-                  style: FilledButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: colorScheme.primary,
+                  const SizedBox(height: AppSpacing.lg - 2),
+                  Wrap(
+                    spacing: AppSpacing.sm,
+                    runSpacing: AppSpacing.sm,
+                    alignment: WrapAlignment.center,
+                    children: [
+                      AppPill.overlay(
+                        icon: Icons.layers_outlined,
+                        label:
+                            '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
+                      ),
+                      AppPill.overlay(
+                        imgIcon: surah.revelationType == 'Meccan'
+                            ? MyIcons.meccaIcon
+                            : MyIcons.medinaIcon,
+                        label: context.readQuranText(surah.revelationType),
+                      ),
+                    ],
                   ),
-                  icon: Icon(
-                    widget.isPlayingFullSurah
-                        ? Icons.stop_circle_outlined
-                        : Icons.play_circle_fill_rounded,
-                  ),
-                  label: Text(
-                    context.readQuranText(
-                      widget.isPlayingFullSurah
-                          ? 'Stop Surah Audio'
-                          : 'Play Full Surah',
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
-          if (!_isExpanded) ...[
-            const SizedBox(height: AppSpacing.sm),
-            FilledButton.tonalIcon(
-              onPressed: widget.onTogglePlayback,
-              style: FilledButton.styleFrom(
-                backgroundColor: Colors.white,
-                foregroundColor: colorScheme.primary,
-              ),
-              icon: Icon(
-                widget.isPlayingFullSurah
-                    ? Icons.stop_circle_outlined
-                    : Icons.play_circle_fill_rounded,
-              ),
-              label: Text(
-                context.readQuranText(
-                  widget.isPlayingFullSurah
-                      ? 'Stop Surah Audio'
-                      : 'Play Full Surah',
-                ),
-              ),
-            ),
-          ],
         ],
       ),
     );

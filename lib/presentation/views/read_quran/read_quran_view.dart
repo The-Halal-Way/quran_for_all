@@ -135,6 +135,7 @@ class ReadQuranView extends StatelessWidget {
                           // surah list
                           for (final surah in viewModel.surahs)
                             Padding(
+                              key: ValueKey<int>(surah.id),
                               padding: const EdgeInsets.only(
                                 bottom: AppSpacing.sm + 2,
                               ),
@@ -196,6 +197,6 @@ class ReadQuranView extends StatelessWidget {
       return;
     }
 
-    await context.read<ReadQuranViewModel>().load();
+    await context.read<ReadQuranViewModel>().load(showLoading: false);
   }
 }

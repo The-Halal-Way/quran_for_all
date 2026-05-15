@@ -39,9 +39,11 @@ class ReadQuranViewModel extends ChangeNotifier {
     return null;
   }
 
-  Future<void> load() async {
-    _isLoading = true;
-    notifyListeners();
+  Future<void> load({bool showLoading = true}) async {
+    if (showLoading) {
+      _isLoading = true;
+      notifyListeners();
+    }
 
     _surahs = await _quranRepository.getAllSurahs();
     _lastRead = await _quranRepository.getLastRead();
@@ -57,7 +59,9 @@ class ReadQuranViewModel extends ChangeNotifier {
       _lastReadAyah = null;
     }
 
-    _isLoading = false;
+    if (showLoading) {
+      _isLoading = false;
+    }
     notifyListeners();
   }
 

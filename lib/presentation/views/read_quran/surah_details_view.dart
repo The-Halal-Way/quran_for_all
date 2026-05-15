@@ -3,13 +3,13 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/presentation/widgets/read_quran/surah_details/surah_ayah_list.dart';
-import 'package:quran_for_all/presentation/widgets/read_quran/surah_details/surah_reading_options.dart';
 
 import '../../../core/enums/playback_source.dart';
 import '../../../core/enums/app_language.dart';
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../core/localization/surah_name_localizer.dart';
+import '../../../core/enums/reading_view_mode.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/ayah_model.dart';
@@ -20,6 +20,7 @@ import '../../viewmodels/settings_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/common/app_snackbar.dart';
 import '../../widgets/empty_state.dart';
+import '../../widgets/read_quran/surah_details/surah_bottom_controls.dart';
 import '../../widgets/read_quran/surah_details/surah_meta_card.dart';
 import '../../../services/permission_helper.dart';
 
@@ -76,78 +77,95 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<SurahDetailsViewModel>();
+    final settingsViewModel = context.read<SettingsViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
     final responsive = AppResponsive.of(context);
     if (!viewModel.isLoading) _maybeRevealAyah(viewModel);
+
+    final onTogglePlayback = viewModel.isPlayingFullSurah
+        ? () => unawaited(viewModel.stopPlayback())
+        : () => unawaited(_playFullSurahWithFeedback(context, viewModel));
+
     return Scaffold(
-      body: SafeArea(
-        child: viewModel.isLoading
-            ? const Center(child: CircularProgressIndicator())
-            : viewModel.errorMessage != null
-            ? EmptyState(
-                icon: Icons.error_outline,
-                title: context.readQuranText('Could not load surah'),
-                message: localizeReadQuranMessage(
-                  context,
-                  viewModel.errorMessage!,
+      bottomNavigationBar: viewModel.isLoading || viewModel.errorMessage != null
+          ? null
+          : SurahBottomControls(
+              readingViewMode: settings.readingViewMode,
+              showPronunciation: settings.showPronunciation,
+              showTranslation: settings.showTranslation,
+              isPlayingFullSurah: viewModel.isPlayingFullSurah,
+              onToggleReadingMode: () {
+                final nextMode =
+                    settings.readingViewMode == ReadingViewMode.detailsView
+                    ? ReadingViewMode.regularView
+                    : ReadingViewMode.detailsView;
+                unawaited(settingsViewModel.setReadingViewMode(nextMode));
+              },
+              onTogglePronunciation: () => unawaited(
+                settingsViewModel.setShowPronunciation(
+                  !settings.showPronunciation,
                 ),
-              )
-            : Column(
-                children: [
-                  // surah info and play full surah button
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(
-                      responsive.padding,
-                      AppSpacing.sm,
-                      responsive.padding,
-                      AppSpacing.md,
-                    ),
-                    child: SurahMetaCard(
-                      surah: widget.surah,
-                      titleText: widget.surah.localizedTitle(
-                        context,
-                        settings.language,
-                      ),
-                      isPlayingFullSurah: viewModel.isPlayingFullSurah,
-                      onSearchTap: () => _openSurahSearchSheet(
-                        context,
-                        viewModel,
-                        settings.language,
-                      ),
-                      onTogglePlayback: viewModel.isPlayingFullSurah
-                          ? () => unawaited(viewModel.stopPlayback())
-                          : () => unawaited(
-                              _playFullSurahWithFeedback(context, viewModel),
-                            ),
-                    ),
-                  ),
-                  // Reading options: mode selector + pronunciation/translation.
-                  const SurahReadingOptions(),
-                  // ayah list
-                  Expanded(
-                    child: AppPageScrollbar(
-                      builder: (context, controller) {
-                        _scrollController = controller;
-                        return Center(
-                          child: ConstrainedBox(
-                            constraints: BoxConstraints(
-                              maxWidth: responsive.maxReadingContentWidth,
-                            ),
-                            child: SurahAyahList(
-                              controller: controller,
-                              ayahKeys: _ayahKeys,
-                              highlightedAyahNumber: _highlightedAyahNumber,
-                              onLastReadMarked: _onLastReadMarked,
-                              playAyahWithFeedback: _playAyahWithFeedback,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ],
               ),
-      ),
+              onToggleTranslation: () => unawaited(
+                settingsViewModel.setShowTranslation(!settings.showTranslation),
+              ),
+              onSearch: () =>
+                  _openSurahSearchSheet(context, viewModel, settings.language),
+              onTogglePlayback: onTogglePlayback,
+            ),
+      body: viewModel.isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : viewModel.errorMessage != null
+          ? EmptyState(
+              icon: Icons.error_outline,
+              title: context.readQuranText('Could not load surah'),
+              message: localizeReadQuranMessage(
+                context,
+                viewModel.errorMessage!,
+              ),
+            )
+          : Column(
+              children: [
+                // surah info and play full surah button
+                SurahMetaCard(
+                  surah: widget.surah,
+                  titleText: widget.surah.localizedTitle(
+                    context,
+                    settings.language,
+                  ),
+                  onSearchTap: () => _openSurahSearchSheet(
+                    context,
+                    viewModel,
+                    settings.language,
+                  ),
+                ),
+                SizedBox(height: AppSpacing.md),
+                // // Reading options: mode selector + pronunciation/translation.
+                // const SurahReadingOptions(),
+                // ayah list
+                Expanded(
+                  child: AppPageScrollbar(
+                    builder: (context, controller) {
+                      _scrollController = controller;
+                      return Center(
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxWidth: responsive.maxReadingContentWidth,
+                          ),
+                          child: SurahAyahList(
+                            controller: controller,
+                            ayahKeys: _ayahKeys,
+                            highlightedAyahNumber: _highlightedAyahNumber,
+                            onLastReadMarked: _onLastReadMarked,
+                            playAyahWithFeedback: _playAyahWithFeedback,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
     );
   }
 

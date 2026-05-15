@@ -16,6 +16,9 @@ class SurahReadingOptions extends StatelessWidget {
     final responsive = AppResponsive.of(context);
     final settingsViewModel = context.read<SettingsViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
+    final colorScheme = Theme.of(context).colorScheme;
+    final selectedBg = colorScheme.primary.withValues(alpha: 0.14);
+    final unselectedBg = colorScheme.surface.withValues(alpha: 0.8);
 
     return Padding(
       padding: EdgeInsets.fromLTRB(
@@ -53,27 +56,39 @@ class SurahReadingOptions extends StatelessWidget {
                     style: Theme.of(context).textTheme.labelLarge,
                   ),
                   const SizedBox(height: AppSpacing.sm),
-                  SegmentedButton<ReadingViewMode>(
-                    showSelectedIcon: false,
-                    segments: <ButtonSegment<ReadingViewMode>>[
-                      ButtonSegment<ReadingViewMode>(
-                        value: ReadingViewMode.detailsView,
-                        icon: const Icon(Icons.view_agenda_rounded),
-                        label: Text(context.readQuranText('Details')),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: SegmentedButton<ReadingViewMode>(
+                      showSelectedIcon: false,
+                      style: SegmentedButton.styleFrom(
+                        backgroundColor: unselectedBg,
+                        foregroundColor: colorScheme.onSurface,
+                        selectedBackgroundColor: selectedBg,
+                        selectedForegroundColor: colorScheme.primary,
+                        side: BorderSide(
+                          color: colorScheme.outline.withValues(alpha: 0.22),
+                        ),
                       ),
-                      ButtonSegment<ReadingViewMode>(
-                        value: ReadingViewMode.regularView,
-                        icon: const Icon(Icons.wrap_text_rounded),
-                        label: Text(context.readQuranText('Regular')),
-                      ),
-                    ],
-                    selected: <ReadingViewMode>{settings.readingViewMode},
-                    onSelectionChanged: (selection) {
-                      final selectedMode = selection.first;
-                      unawaited(
-                        settingsViewModel.setReadingViewMode(selectedMode),
-                      );
-                    },
+                      segments: <ButtonSegment<ReadingViewMode>>[
+                        ButtonSegment<ReadingViewMode>(
+                          value: ReadingViewMode.detailsView,
+                          icon: const Icon(Icons.view_agenda_rounded),
+                          label: Text(context.readQuranText('Details')),
+                        ),
+                        ButtonSegment<ReadingViewMode>(
+                          value: ReadingViewMode.regularView,
+                          icon: const Icon(Icons.wrap_text_rounded),
+                          label: Text(context.readQuranText('Regular')),
+                        ),
+                      ],
+                      selected: <ReadingViewMode>{settings.readingViewMode},
+                      onSelectionChanged: (selection) {
+                        final selectedMode = selection.first;
+                        unawaited(
+                          settingsViewModel.setReadingViewMode(selectedMode),
+                        );
+                      },
+                    ),
                   ),
                 ],
               ),
@@ -81,6 +96,8 @@ class SurahReadingOptions extends StatelessWidget {
             const Divider(height: 1),
             SwitchListTile(
               dense: true,
+              activeThumbColor: colorScheme.primary,
+              activeTrackColor: colorScheme.primary.withValues(alpha: 0.35),
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: AppSpacing.lg,
               ),
@@ -94,6 +111,8 @@ class SurahReadingOptions extends StatelessWidget {
             const Divider(height: 1),
             SwitchListTile(
               dense: true,
+              activeThumbColor: colorScheme.primary,
+              activeTrackColor: colorScheme.primary.withValues(alpha: 0.35),
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: AppSpacing.lg,
               ),
