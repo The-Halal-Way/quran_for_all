@@ -57,7 +57,7 @@ class LearnHeaderCard extends StatelessWidget {
                 opacity: 0.4,
                 child: Lottie.asset(
                   MyImages.readingQuranAnimated,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                 ),
               ),
             ),

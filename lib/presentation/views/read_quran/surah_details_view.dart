@@ -15,6 +15,7 @@ import '../../../data/models/surah_model.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
 import '../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
+import '../../widgets/common/app_snackbar.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/read_quran/surah_details/surah_meta_card.dart';
 import '../../../services/permission_helper.dart';
@@ -37,7 +38,11 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
   late AudioControlViewModel _audioControlVm;
   late int? _pendingAyahNumber;
   int? _highlightedAyahNumber;
+  ScrollController? _scrollController;
+  int? _revealingAyahNumber;
+  int _revealAttempts = 0;
   final Map<int, GlobalKey> _ayahKeys = <int, GlobalKey>{};
+  static const int _maxRevealAttempts = 6;
 
   @override
   void didChangeDependencies() {
@@ -108,19 +113,22 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                   // ayah list
                   Expanded(
                     child: AppPageScrollbar(
-                      builder: (context, controller) => Center(
-                        child: ConstrainedBox(
-                          constraints: BoxConstraints(
-                            maxWidth: responsive.maxReadingContentWidth,
+                      builder: (context, controller) {
+                        _scrollController = controller;
+                        return Center(
+                          child: ConstrainedBox(
+                            constraints: BoxConstraints(
+                              maxWidth: responsive.maxReadingContentWidth,
+                            ),
+                            child: SurahAyahList(
+                              controller: controller,
+                              ayahKeys: _ayahKeys,
+                              highlightedAyahNumber: _highlightedAyahNumber,
+                              playAyahWithFeedback: _playAyahWithFeedback,
+                            ),
                           ),
-                          child: SurahAyahList(
-                            controller: controller,
-                            ayahKeys: _ayahKeys,
-                            highlightedAyahNumber: _highlightedAyahNumber,
-                            playAyahWithFeedback: _playAyahWithFeedback,
-                          ),
-                        ),
-                      ),
+                        );
+                      },
                     ),
                   ),
                 ],
@@ -145,12 +153,9 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
         return;
       }
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            context.readQuranText('Unable to play this ayah audio right now.'),
-          ),
-        ),
+      AppSnackbar.showError(
+        context,
+        context.readQuranText('Unable to play this ayah audio right now.'),
       );
     }
   }
@@ -170,12 +175,9 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
         return;
       }
 
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            context.readQuranText('Unable to play full surah audio right now.'),
-          ),
-        ),
+      AppSnackbar.showError(
+        context,
+        context.readQuranText('Unable to play full surah audio right now.'),
       );
     }
   }
@@ -193,22 +195,19 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       return false;
     }
 
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          context.readQuranText(
-            'Notification permission is required for audio controls.',
-          ),
-        ),
-        action: permissionResult.shouldPromptToOpenSettings
-            ? SnackBarAction(
-                label: context.readQuranText('Go to settings'),
-                onPressed: () {
-                  unawaited(permissionHelper.openSettings());
-                },
-              )
-            : null,
+    AppSnackbar.showError(
+      context,
+      context.readQuranText(
+        'Notification permission is required for audio controls.',
       ),
+      action: permissionResult.shouldPromptToOpenSettings
+          ? SnackBarAction(
+              label: context.readQuranText('Go to settings'),
+              onPressed: () {
+                unawaited(permissionHelper.openSettings());
+              },
+            )
+          : null,
     );
 
     return false;
@@ -220,11 +219,18 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       return;
     }
 
+    if (_revealingAyahNumber != targetAyahNumber) {
+      _revealingAyahNumber = targetAyahNumber;
+      _revealAttempts = 0;
+    }
+
     final hasTargetAyah = viewModel.ayahs.any(
       (ayah) => ayah.ayahNumber == targetAyahNumber,
     );
     if (!hasTargetAyah) {
       _pendingAyahNumber = null;
+      _revealingAyahNumber = null;
+      _revealAttempts = 0;
       return;
     }
 
@@ -235,6 +241,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
 
       final targetContext = _ayahKeys[targetAyahNumber]?.currentContext;
       if (targetContext == null) {
+        _scrollNearTargetAyah(viewModel, targetAyahNumber);
         return;
       }
 
@@ -248,6 +255,8 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       setState(() {
         _highlightedAyahNumber = targetAyahNumber;
         _pendingAyahNumber = null;
+        _revealingAyahNumber = null;
+        _revealAttempts = 0;
       });
 
       Future<void>.delayed(const Duration(seconds: 2), () {
@@ -259,6 +268,56 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
           _highlightedAyahNumber = null;
         });
       });
+    });
+  }
+
+  void _scrollNearTargetAyah(
+    SurahDetailsViewModel viewModel,
+    int targetAyahNumber,
+  ) {
+    final controller = _scrollController;
+    if (controller == null || !controller.hasClients) {
+      return;
+    }
+
+    final targetIndex = viewModel.ayahs.indexWhere(
+      (ayah) => ayah.ayahNumber == targetAyahNumber,
+    );
+    if (targetIndex < 0) {
+      _pendingAyahNumber = null;
+      _revealingAyahNumber = null;
+      _revealAttempts = 0;
+      return;
+    }
+
+    final totalAyahs = viewModel.ayahs.length;
+    final targetFraction = totalAyahs <= 1
+        ? 0.0
+        : targetIndex / (totalAyahs - 1);
+    final maxExtent = controller.position.maxScrollExtent;
+    final targetOffset = (maxExtent * targetFraction).clamp(0.0, maxExtent);
+
+    unawaited(
+      controller.animateTo(
+        targetOffset,
+        duration: const Duration(milliseconds: 240),
+        curve: Curves.easeOut,
+      ),
+    );
+
+    _revealAttempts += 1;
+    if (_revealAttempts >= _maxRevealAttempts) {
+      _pendingAyahNumber = null;
+      _revealingAyahNumber = null;
+      return;
+    }
+
+    Future<void>.delayed(const Duration(milliseconds: 280), () {
+      if (!mounted || _pendingAyahNumber != targetAyahNumber) {
+        return;
+      }
+
+      _maybeRevealAyah(context.read<SurahDetailsViewModel>());
     });
   }
 }

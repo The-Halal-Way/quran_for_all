@@ -110,8 +110,12 @@ class ReadQuranView extends StatelessWidget {
                               surah: viewModel.lastReadSurah!,
                               ayahNumber: viewModel.lastRead!.ayahNumber,
                               ayahPreview: ayahPreview,
-                              onTap: () =>
-                                  _openSurah(context, viewModel.lastReadSurah!),
+                              onTap: () => _openSurah(
+                                context,
+                                viewModel.lastReadSurah!,
+                                initialAyahNumber:
+                                    viewModel.lastRead!.ayahNumber,
+                              ),
                             ),
                             const SizedBox(height: AppSpacing.lg),
                           ],
@@ -169,11 +173,20 @@ class ReadQuranView extends StatelessWidget {
     ).push(AppPageRoute<void>(builder: (_) => const BookmarksView()));
   }
 
-  void _openSurah(BuildContext context, SurahModel surah) {
+  void _openSurah(
+    BuildContext context,
+    SurahModel surah, {
+    int? initialAyahNumber,
+  }) {
     unawaited(context.read<SurahDetailsViewModel>().openSurah(surah));
 
-    Navigator.of(
-      context,
-    ).push(AppPageRoute<void>(builder: (_) => SurahDetailsView(surah: surah)));
+    Navigator.of(context).push(
+      AppPageRoute<void>(
+        builder: (_) => SurahDetailsView(
+          surah: surah,
+          initialAyahNumber: initialAyahNumber,
+        ),
+      ),
+    );
   }
 }

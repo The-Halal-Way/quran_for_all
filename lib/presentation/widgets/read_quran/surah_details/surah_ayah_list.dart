@@ -3,11 +3,13 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/reading_view_mode.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_text_styles.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
 import 'package:quran_for_all/data/models/ayah_model.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_snackbar.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 import 'package:quran_for_all/presentation/widgets/ayah_tile.dart';
@@ -192,9 +194,71 @@ class SurahAyahList extends StatelessWidget {
             ? viewModel.stopPlayback()
             : _playAyahWithFeedback(context, viewModel, ayah),
       ),
-      onToggleBookmark: () => unawaited(viewModel.toggleAyahBookmark(ayah)),
-      onMarkAsLastRead: () => unawaited(viewModel.markAsLastRead(ayah)),
+      onToggleBookmark: () =>
+          unawaited(_toggleAyahBookmarkWithFeedback(context, viewModel, ayah)),
+      onMarkAsLastRead: () =>
+          unawaited(_markAsLastReadWithFeedback(context, viewModel, ayah)),
     );
+  }
+
+  Future<void> _toggleAyahBookmarkWithFeedback(
+    BuildContext context,
+    SurahDetailsViewModel viewModel,
+    AyahModel ayah,
+  ) async {
+    final wasBookmarked = viewModel.isAyahBookmarked(ayah.ayahNumber);
+
+    try {
+      await viewModel.toggleAyahBookmark(ayah);
+      if (!context.mounted) {
+        return;
+      }
+
+      AppSnackbar.showInfo(
+        context,
+        context.readQuranText(
+          wasBookmarked
+              ? 'Ayah bookmark removed.'
+              : 'Ayah bookmarked successfully.',
+        ),
+      );
+    } catch (_) {
+      if (!context.mounted) {
+        return;
+      }
+
+      AppSnackbar.showError(
+        context,
+        context.readQuranText('Could not update ayah bookmark right now.'),
+      );
+    }
+  }
+
+  Future<void> _markAsLastReadWithFeedback(
+    BuildContext context,
+    SurahDetailsViewModel viewModel,
+    AyahModel ayah,
+  ) async {
+    try {
+      await viewModel.markAsLastRead(ayah);
+      if (!context.mounted) {
+        return;
+      }
+
+      AppSnackbar.showInfo(
+        context,
+        context.readQuranText('Marked as last read.'),
+      );
+    } catch (_) {
+      if (!context.mounted) {
+        return;
+      }
+
+      AppSnackbar.showError(
+        context,
+        context.readQuranText('Could not mark this ayah as last read.'),
+      );
+    }
   }
 
   void _showAyahDetailsSheet(
