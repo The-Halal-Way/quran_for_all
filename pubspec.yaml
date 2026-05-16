@@ -27,6 +27,7 @@ dependencies:
   flutter_tts: ^4.2.5
   flutter_screenutil: ^5.9.3
   lottie: ^3.3.3
+  flutter_compass: ^0.8.1
 
 dev_dependencies:
   flutter_test:

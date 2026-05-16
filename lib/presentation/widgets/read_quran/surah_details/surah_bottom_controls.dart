@@ -1,10 +1,15 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/enums/reading_view_mode.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'package:quran_for_all/data/models/ayah_model.dart';
 
 import '../../../../../core/localization/l10n_extensions.dart';
 import '../../../../../core/theme/app_spacing.dart';
+import '../../empty_state.dart';
 
 class SurahBottomControls extends StatelessWidget {
   const SurahBottomControls({
@@ -13,10 +18,12 @@ class SurahBottomControls extends StatelessWidget {
     required this.showPronunciation,
     required this.showTranslation,
     required this.isPlayingFullSurah,
+    required this.ayahs,
+    required this.language,
+    required this.onJumpToAyah,
     required this.onToggleReadingMode,
     required this.onTogglePronunciation,
     required this.onToggleTranslation,
-    required this.onSearch,
     required this.onTogglePlayback,
   });
 
@@ -24,10 +31,12 @@ class SurahBottomControls extends StatelessWidget {
   final bool showPronunciation;
   final bool showTranslation;
   final bool isPlayingFullSurah;
+  final List<AyahModel> ayahs;
+  final AppLanguage language;
+  final ValueChanged<int> onJumpToAyah;
   final VoidCallback onToggleReadingMode;
   final VoidCallback onTogglePronunciation;
   final VoidCallback onToggleTranslation;
-  final VoidCallback onSearch;
   final VoidCallback onTogglePlayback;
 
   @override
@@ -92,14 +101,13 @@ class SurahBottomControls extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: _BottomNavAction(
-                icon: Icons.search_rounded,
-                selected: false,
-                tooltip: context.readQuranText('Search inside this surah'),
+              child: _SurahSearchAction(
+                ayahs: ayahs,
+                language: language,
+                onJumpToAyah: onJumpToAyah,
                 selectedBg: selectedBg,
                 unselectedBg: unselectedBg,
                 stroke: stroke,
-                onTap: onSearch,
               ),
             ),
             Expanded(
@@ -169,5 +177,217 @@ class _BottomNavAction extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class _SurahSearchAction extends StatelessWidget {
+  const _SurahSearchAction({
+    required this.ayahs,
+    required this.language,
+    required this.onJumpToAyah,
+    required this.selectedBg,
+    required this.unselectedBg,
+    required this.stroke,
+  });
+
+  final List<AyahModel> ayahs;
+  final AppLanguage language;
+  final ValueChanged<int> onJumpToAyah;
+  final Color selectedBg;
+  final Color unselectedBg;
+  final Color stroke;
+
+  @override
+  Widget build(BuildContext context) {
+    return _BottomNavAction(
+      icon: Icons.search_rounded,
+      selected: false,
+      tooltip: context.readQuranText('Search inside this surah'),
+      selectedBg: selectedBg,
+      unselectedBg: unselectedBg,
+      stroke: stroke,
+      onTap: () => _openSurahSearchSheet(context),
+    );
+  }
+
+  void _openSurahSearchSheet(BuildContext context) {
+    var query = '';
+    var results = const <AyahModel>[];
+
+    unawaited(
+      showModalBottomSheet<void>(
+        context: context,
+        isScrollControlled: true,
+        showDragHandle: true,
+        builder: (sheetContext) {
+          final colorScheme = Theme.of(sheetContext).colorScheme;
+
+          return StatefulBuilder(
+            builder: (sheetContext, setSheetState) {
+              final bottomInset = MediaQuery.of(sheetContext).viewInsets.bottom;
+
+              return SafeArea(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(
+                    AppSpacing.md,
+                    AppSpacing.xs,
+                    AppSpacing.md,
+                    bottomInset + AppSpacing.md,
+                  ),
+                  child: SizedBox(
+                    height: MediaQuery.of(sheetContext).size.height * 0.72,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          context.readQuranText('Search inside this surah'),
+                          style: Theme.of(sheetContext).textTheme.titleMedium
+                              ?.copyWith(fontWeight: FontWeight.w700),
+                        ),
+                        const SizedBox(height: AppSpacing.sm),
+                        TextField(
+                          autofocus: true,
+                          textInputAction: TextInputAction.search,
+                          decoration: InputDecoration(
+                            hintText: context.readQuranText(
+                              'Try ayah number, Arabic text, or translation keyword',
+                            ),
+                            prefixIcon: const Icon(Icons.search_rounded),
+                          ),
+                          onChanged: (value) {
+                            setSheetState(() {
+                              query = value.trim();
+                              results = _searchSurahAyahs(
+                                ayahs: ayahs,
+                                query: query,
+                                language: language,
+                              );
+                            });
+                          },
+                        ),
+                        const SizedBox(height: AppSpacing.sm),
+                        Text(
+                          query.isEmpty
+                              ? context.readQuranText(
+                                  'Start typing to search in this surah.',
+                                )
+                              : '${context.readQuranText('Results')}: ${results.length}',
+                          style: Theme.of(sheetContext).textTheme.bodySmall
+                              ?.copyWith(
+                                color: colorScheme.onSurface.withValues(
+                                  alpha: 0.72,
+                                ),
+                              ),
+                        ),
+                        const SizedBox(height: AppSpacing.sm),
+                        Expanded(
+                          child: query.isEmpty
+                              ? EmptyState(
+                                  icon: Icons.manage_search_rounded,
+                                  title: context.readQuranText('Search Ayahs'),
+                                  message: context.readQuranText(
+                                    'Type text or ayah number to jump quickly.',
+                                  ),
+                                )
+                              : results.isEmpty
+                              ? EmptyState(
+                                  icon: Icons.search_off,
+                                  title: context.readQuranText('No results'),
+                                  message: context.readQuranText(
+                                    'Try a different keyword or ayah number.',
+                                  ),
+                                )
+                              : ListView.separated(
+                                  itemCount: results.length,
+                                  separatorBuilder: (_, _) =>
+                                      const SizedBox(height: AppSpacing.sm),
+                                  itemBuilder: (itemContext, index) {
+                                    final ayah = results[index];
+                                    final preview =
+                                        language == AppLanguage.bangla
+                                        ? ayah.translationBn
+                                        : ayah.translationEn;
+
+                                    return Card(
+                                      child: ListTile(
+                                        contentPadding:
+                                            const EdgeInsets.symmetric(
+                                              horizontal: AppSpacing.md,
+                                              vertical: AppSpacing.xs,
+                                            ),
+                                        title: Text(
+                                          '${context.readQuranText('Ayah')} ${ayah.ayahNumber}',
+                                          style: Theme.of(itemContext)
+                                              .textTheme
+                                              .titleSmall
+                                              ?.copyWith(
+                                                fontWeight: FontWeight.w700,
+                                              ),
+                                        ),
+                                        subtitle: Text(
+                                          preview.replaceAll(
+                                            RegExp(r'\s+'),
+                                            ' ',
+                                          ),
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                        ),
+                                        trailing: Icon(
+                                          Icons.arrow_downward_rounded,
+                                          color: colorScheme.primary,
+                                        ),
+                                        onTap: () {
+                                          Navigator.of(sheetContext).pop();
+                                          onJumpToAyah(ayah.ayahNumber);
+                                        },
+                                      ),
+                                    );
+                                  },
+                                ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+
+  List<AyahModel> _searchSurahAyahs({
+    required List<AyahModel> ayahs,
+    required String query,
+    required AppLanguage language,
+  }) {
+    final normalizedQuery = _normalizeSearchText(query);
+    if (normalizedQuery.isEmpty) {
+      return const <AyahModel>[];
+    }
+
+    return ayahs
+        .where((ayah) {
+          final translation = language == AppLanguage.bangla
+              ? ayah.translationBn
+              : ayah.translationEn;
+          final candidates = <String>[
+            ayah.ayahNumber.toString(),
+            ayah.arabicText,
+            translation,
+            ayah.transliterationFor(language),
+          ];
+
+          return candidates.any((value) {
+            return _normalizeSearchText(value).contains(normalizedQuery);
+          });
+        })
+        .take(80)
+        .toList(growable: false);
+  }
+
+  String _normalizeSearchText(String text) {
+    return text.toLowerCase().replaceAll(RegExp(r'\s+'), ' ').trim();
   }
 }

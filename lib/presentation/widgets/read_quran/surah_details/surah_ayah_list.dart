@@ -1,6 +1,8 @@
 import 'dart:async';
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/reading_view_mode.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
@@ -43,6 +45,13 @@ class SurahAyahList extends StatelessWidget {
     final viewModel = context.watch<SurahDetailsViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
     final responsive = AppResponsive.of(context);
+    final List<BoxShadow> cardShadow = [
+      BoxShadow(
+        color: const Color(0xFFA2A2A2).withOpacity(.25),
+        blurRadius: 3,
+        offset: const Offset(0, 1),
+      ),
+    ];
     // regular view
     if (settings.readingViewMode == ReadingViewMode.regularView) {
       return ListView(
@@ -57,82 +66,75 @@ class SurahAyahList extends StatelessWidget {
           Card(
             child: Padding(
               padding: const EdgeInsets.all(AppSpacing.lg),
-              child: Wrap(
-                spacing: AppSpacing.sm,
-                runSpacing: AppSpacing.sm,
-                children: List.generate(viewModel.ayahs.length, (index) {
-                  final ayah = viewModel.ayahs[index];
-                  return KeyedSubtree(
-                    key: _ayahKeyFor(ayah.ayahNumber),
-                    child: InkWell(
-                      borderRadius: BorderRadius.circular(AppRadius.sm),
-                      onTap: () => _showAyahDetailsSheet(
-                        context,
-                        ayah,
-                        viewModel,
-                        settings,
-                      ),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: AppSpacing.sm,
-                          vertical: AppSpacing.xs,
+              child: Text.rich(
+                TextSpan(
+                  children: List.generate(viewModel.ayahs.length, (index) {
+                    final ayah = viewModel.ayahs[index];
+
+                    // 1) The ayah text (tappable)
+                    final textSpan = TextSpan(
+                      text: '${ayah.arabicText} ',
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => _showAyahDetailsSheet(
+                          context,
+                          ayah,
+                          viewModel,
+                          settings,
+                        ),
+                    );
+
+                    // 2) The circled number
+                    final numberSpan = WidgetSpan(
+                      alignment: PlaceholderAlignment.middle,
+                      child: Container(
+                        width: 24,
+                        height: 24,
+                        alignment: Alignment.center,
+                        margin: const EdgeInsetsDirectional.only(
+                          start: AppSpacing.xs,
                         ),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(AppRadius.sm),
-                          color: ayah.ayahNumber == _highlightedAyahNumber
-                              ? Theme.of(
-                                  context,
-                                ).colorScheme.primary.withValues(alpha: 0.12)
-                              : null,
-                        ),
-                        child: Text.rich(
-                          TextSpan(
-                            text: '${ayah.arabicText} ',
-                            children: [
-                              WidgetSpan(
-                                alignment: PlaceholderAlignment.middle,
-                                child: Container(
-                                  width: 24,
-                                  height: 24,
-                                  alignment: Alignment.center,
-                                  margin: const EdgeInsetsDirectional.only(
-                                    start: AppSpacing.xs,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    color: Theme.of(context).colorScheme.primary
-                                        .withValues(alpha: 0.14),
-                                    border: Border.all(
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .primary
-                                          .withValues(alpha: 0.45),
-                                    ),
-                                  ),
-                                  child: Text(
-                                    '${ayah.ayahNumber}',
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .labelSmall
-                                        ?.copyWith(
-                                          fontWeight: FontWeight.w700,
-                                          color: Theme.of(
-                                            context,
-                                          ).colorScheme.primary,
-                                        ),
-                                  ),
-                                ),
-                              ),
-                            ],
+                          shape: BoxShape.circle,
+                          color: Theme.of(
+                            context,
+                          ).colorScheme.primary.withValues(alpha: 0.14),
+                          border: Border.all(
+                            color: Theme.of(
+                              context,
+                            ).colorScheme.primary.withValues(alpha: 0.45),
                           ),
-                          textDirection: TextDirection.rtl,
-                          style: AppTextStyles.quranArabic(context),
+                        ),
+                        child: Text(
+                          '${ayah.ayahNumber}',
+                          style: Theme.of(context).textTheme.labelSmall
+                              ?.copyWith(
+                                fontWeight: FontWeight.w700,
+                                color: Theme.of(context).colorScheme.primary,
+                              ),
                         ),
                       ),
-                    ),
-                  );
-                }),
+                    );
+
+                    // 3) Invisible anchor widget for scrolling  ← NEW
+                    final anchorSpan = WidgetSpan(
+                      alignment: PlaceholderAlignment.middle,
+                      child: SizedBox(
+                        key: _ayahKeyFor(
+                          ayah.ayahNumber,
+                        ), // same key used before
+                        width: 0,
+                        height: 0,
+                      ),
+                    );
+
+                    return [textSpan, numberSpan, anchorSpan];
+                  }).expand((spans) => spans).toList(),
+                ),
+                textDirection: TextDirection.rtl,
+                // 🔽 This adds the line spacing
+                style: AppTextStyles.quranArabic(
+                  context,
+                ).copyWith(height: 2.5.h),
               ),
             ),
           ),

@@ -14,12 +14,10 @@ class SurahMetaCard extends StatelessWidget {
     super.key,
     required this.surah,
     required this.titleText,
-    required this.onSearchTap,
   });
 
   final SurahModel surah;
   final String titleText;
-  final VoidCallback onSearchTap;
 
   static const List<String> _backgroundImages = <String>[
     MyImages.background1,
@@ -98,23 +96,6 @@ class SurahMetaCard extends StatelessWidget {
                         ),
                       ),
                       SizedBox(width: 40),
-                      // IconButton.filledTonal(
-                      //   onPressed: onSearchTap,
-                      //   padding: EdgeInsets.zero,
-                      //   visualDensity: VisualDensity.compact,
-                      //   constraints: const BoxConstraints(
-                      //     minWidth: 32,
-                      //     minHeight: 32,
-                      //   ),
-                      //   style: IconButton.styleFrom(
-                      //     backgroundColor: Colors.white.withValues(alpha: 0.2),
-                      //     foregroundColor: Colors.white,
-                      //   ),
-                      //   tooltip: context.readQuranText(
-                      //     'Search inside this surah',
-                      //   ),
-                      //   icon: const Icon(Icons.search_rounded),
-                      // ),
                     ],
                   ),
                   const SizedBox(height: AppSpacing.xs + 1),

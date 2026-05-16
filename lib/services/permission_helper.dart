@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter_compass/flutter_compass.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class PermissionRequestResult {
@@ -199,8 +200,7 @@ class PermissionHelper {
       return false;
     }
 
-    final shouldShowRationale =
-        await permission.shouldShowRequestRationale;
+    final shouldShowRationale = await permission.shouldShowRequestRationale;
     if (shouldShowRationale) {
       _rejectedPermissions.add(permission);
     }
@@ -210,5 +210,39 @@ class PermissionHelper {
 
   bool _isEffectivelyGranted(PermissionStatus status) {
     return status.isGranted || status.isLimited || status.isProvisional;
+  }
+
+  Future<void> startCompassWithPermission({
+    required Function(double heading) onHeadingChanged,
+    required Function(String direction)
+    onDirectionChanged, // e.g., 'East', 'West'
+  }) async {
+    final helper = const PermissionHelper();
+    final result = await helper.requestWithSummary([Permission.sensors]);
+
+    if (!result.isGranted(Permission.sensors)) {
+      if (result.shouldPromptToOpenSettings) {
+        await helper.openSettings();
+      } else {
+        print('Motion sensors permission denied');
+      }
+      return;
+    }
+
+    // flutter_compass returns a stream of CompassEvent or double
+    FlutterCompass.events?.listen((CompassEvent event) {
+      final heading = event.heading; // degrees 0-360
+      onHeadingChanged(heading ?? 0.0);
+      onDirectionChanged(_getCardinalDirection(heading ?? 0.0));
+    });
+  }
+
+  // Helper for cardinal direction (East/West emphasis)
+  String _getCardinalDirection(double heading) {
+    if (heading >= 315 || heading < 45) return 'North';
+    if (heading >= 45 && heading < 135) return 'East';
+    if (heading >= 135 && heading < 225) return 'South';
+    if (heading >= 225 && heading < 315) return 'West';
+    return 'Unknown';
   }
 }

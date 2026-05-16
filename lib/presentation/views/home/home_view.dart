@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
+import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/utils/app_responsive.dart';
@@ -18,6 +19,7 @@ class _HomeViewState extends State<HomeView> {
   int _selectedIndex = 0;
 
   final List<Widget> _sections = const [
+    DashboardView(),
     ReadQuranView(),
     LearnQuranView(),
     SettingsView(embedded: true),
@@ -59,6 +61,19 @@ class _HomeViewState extends State<HomeView> {
             });
           },
           destinations: [
+            NavigationDestination(
+              icon: Image.asset(
+                MyIcons.quranViewIcon,
+                width: navIconSize,
+                height: navIconSize,
+              ),
+              selectedIcon: Image.asset(
+                MyIcons.quranViewIconFill,
+                width: navIconSize,
+                height: navIconSize,
+              ),
+              label: "Dashboard",
+            ),
             NavigationDestination(
               icon: Image.asset(
                 MyIcons.quranViewIcon,
