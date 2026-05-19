@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/presentation/views/compass/compass_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/daily_duah_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/powerful_duah_view.dart';
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
@@ -28,6 +30,26 @@ class DashboardView extends StatelessWidget {
                 );
               },
               child: Text('Go to Compass'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to DailyDuahView
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DailyDuahView()),
+                );
+              },
+              child: Text('Go to Daily Du\'ā\''),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to PowerfulDuahView
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PowerfulDuahView()),
+                );
+              },
+              child: Text('Go to Powerful Du\'ā\''),
             ),
           ],
         ),
