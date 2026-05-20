@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
 import 'package:quran_for_all/presentation/views/compass/compass_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/daily_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/powerful_duah_view.dart';
@@ -50,6 +51,15 @@ class DashboardView extends StatelessWidget {
                 );
               },
               child: Text('Go to Powerful Du\'ā\''),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PrayerView()),
+                );
+              },
+              child: Text('Go to Prayer Times'),
             ),
           ],
         ),

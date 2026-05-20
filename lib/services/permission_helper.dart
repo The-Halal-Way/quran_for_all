@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter_compass/flutter_compass.dart';
@@ -212,29 +213,91 @@ class PermissionHelper {
     return status.isGranted || status.isLimited || status.isProvisional;
   }
 
-  Future<void> startCompassWithPermission({
+  Future<bool> hasNativeCompassFeature() async {
+    return FlutterCompass.events != null;
+  }
+
+  Future<bool> startCompassWithPermission({
     required Function(double heading) onHeadingChanged,
     required Function(String direction)
     onDirectionChanged, // e.g., 'East', 'West'
+    double headingCorrectionDegrees = 0,
   }) async {
     final helper = const PermissionHelper();
-    final result = await helper.requestWithSummary([Permission.sensors]);
+    final requiredPermissions = <Permission>[];
+    if (Platform.isAndroid || Platform.isIOS) {
+      requiredPermissions.add(Permission.locationWhenInUse);
+    }
 
-    if (!result.isGranted(Permission.sensors)) {
+    final result = await helper.requestWithSummary(requiredPermissions);
+
+    if (requiredPermissions.any((permission) => !result.isGranted(permission))) {
       if (result.shouldPromptToOpenSettings) {
         await helper.openSettings();
       } else {
-        print('Motion sensors permission denied');
+        print('Compass permissions denied');
       }
-      return;
+      return false;
     }
 
-    // flutter_compass returns a stream of CompassEvent or double
-    FlutterCompass.events?.listen((CompassEvent event) {
-      final heading = event.heading; // degrees 0-360
-      onHeadingChanged(heading ?? 0.0);
-      onDirectionChanged(_getCardinalDirection(heading ?? 0.0));
+    final events = FlutterCompass.events;
+    if (events == null) {
+      print('Compass sensor is not available on this device');
+      return false;
+    }
+
+    final ready = Completer<bool>();
+    late final StreamSubscription<CompassEvent> subscription;
+
+    // flutter_compass returns a stream of CompassEvent
+    subscription = events.listen((CompassEvent event) {
+      final heading = _extractHeading(event);
+      if (heading == null) {
+        return;
+      }
+
+      final correctedHeading =
+          (heading + headingCorrectionDegrees + 360) % 360;
+
+      onHeadingChanged(correctedHeading);
+      onDirectionChanged(_getCardinalDirection(correctedHeading));
+
+      if (!ready.isCompleted) {
+        ready.complete(true);
+      }
+    }, onError: (_) {
+      if (!ready.isCompleted) {
+        ready.complete(false);
+      }
     });
+
+    final started = await ready.future.timeout(
+      const Duration(seconds: 5),
+      onTimeout: () => false,
+    );
+
+    if (!started) {
+      await subscription.cancel();
+      print('Compass data unavailable on this device');
+      return false;
+    }
+
+    return true;
+  }
+
+  double? _extractHeading(CompassEvent event) {
+    final heading = event.heading;
+    if (heading != null) {
+      return heading;
+    }
+
+    final dynamic dynamicEvent = event;
+    final dynamic cameraHeading = dynamicEvent.headingForCameraMode;
+    if (cameraHeading is num) {
+      return cameraHeading.toDouble();
+    }
+
+    return null;
   }
 
   // Helper for cardinal direction (East/West emphasis)

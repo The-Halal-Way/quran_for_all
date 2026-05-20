@@ -1,14 +1,12 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:quran_for_all/services/permission_helper.dart';
+import 'package:quran_for_all/services/qibla_api_service.dart';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Replace with real Qibla calculation using user's lat/lng.
-// Packages: `adhan`, `flutter_qibla`, or compute manually.
-// 293° is a placeholder for Dhaka → Mecca.
-// ─────────────────────────────────────────────────────────────────────────────
-const double _kQiblaDegrees = 293.0;
+const double _kFallbackQiblaDegrees = 293.0;
+const double _kHeadingCorrectionDegrees = 270.0;
 
 // How close to Qibla (in degrees) to show the "on target" state
 const double _kQiblaSnapZone = 5.0;
@@ -27,6 +25,10 @@ class _CompassViewState extends State<CompassView>
   double _smoothHeading = 0.0;  // animated display value
   String _directionLabel = 'North';
   bool _isListening = false;
+  bool _isApiFallback = false;
+  bool _isInitializing = true;
+  double _qiblaDegrees = _kFallbackQiblaDegrees;
+  String _initError = '';
 
   // ── Animation ──────────────────────────────────────────────────────────────
   late final AnimationController _ticker;
@@ -58,15 +60,72 @@ class _CompassViewState extends State<CompassView>
   }
 
   Future<void> _initCompass() async {
-    await PermissionHelper().startCompassWithPermission(
-      onHeadingChanged: (heading) {
-        _rawHeading = (heading + 360) % 360;
-      },
-      onDirectionChanged: (direction) {
-        if (mounted) setState(() => _directionLabel = direction);
-      },
+    try {
+      final position = await _getCurrentPosition();
+      final qiblaDirection = await const QiblaApiService().fetchQiblaDirection(
+        latitude: position.latitude,
+        longitude: position.longitude,
+      );
+
+      final helper = const PermissionHelper();
+      final hasNativeCompass = await helper.hasNativeCompassFeature();
+      bool started = false;
+
+      if (hasNativeCompass) {
+        started = await helper.startCompassWithPermission(
+          onHeadingChanged: (heading) {
+            _rawHeading = (heading + 360) % 360;
+          },
+          onDirectionChanged: (direction) {
+            if (mounted) setState(() => _directionLabel = direction);
+          },
+          headingCorrectionDegrees: _kHeadingCorrectionDegrees,
+        );
+      }
+
+      if (!mounted) return;
+      setState(() {
+        _qiblaDegrees = qiblaDirection ?? _kFallbackQiblaDegrees;
+        _isListening = started;
+        _isApiFallback = !started;
+        _isInitializing = false;
+        _directionLabel = started ? _directionLabel : 'No compass sensor';
+        _rawHeading = started ? _rawHeading : 0;
+        _smoothHeading = started ? _smoothHeading : 0;
+        _initError = '';
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _isListening = false;
+        _isApiFallback = false;
+        _isInitializing = false;
+        _initError = 'Failed to initialize compass/Qibla: $e';
+      });
+    }
+  }
+
+  Future<Position> _getCurrentPosition() async {
+    LocationPermission permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        throw Exception('Location permission denied');
+      }
+    }
+
+    if (permission == LocationPermission.deniedForever) {
+      throw Exception('Location permission permanently denied');
+    }
+
+    final serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      throw Exception('Location services are disabled');
+    }
+
+    return Geolocator.getCurrentPosition(
+      desiredAccuracy: LocationAccuracy.high,
     );
-    if (mounted) setState(() => _isListening = true);
   }
 
   @override
@@ -77,16 +136,17 @@ class _CompassViewState extends State<CompassView>
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   double get _qiblaOffset =>
-      (_kQiblaDegrees - _smoothHeading + 360) % 360;
+      (_qiblaDegrees - _smoothHeading + 360) % 360;
 
-  bool get _facingMecca => _qiblaOffset < _kQiblaSnapZone ||
-      _qiblaOffset > 360 - _kQiblaSnapZone;
+    bool get _facingMecca =>
+      _isListening &&
+      (_qiblaOffset < _kQiblaSnapZone || _qiblaOffset > 360 - _kQiblaSnapZone);
 
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    if (!_isListening) {
+    if (_isInitializing || (!_isListening && !_isApiFallback)) {
       return Scaffold(
         backgroundColor:
             isDark ? const Color(0xFF060118) : const Color(0xFFF5F2FF),
@@ -94,14 +154,23 @@ class _CompassViewState extends State<CompassView>
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              CircularProgressIndicator(
-                color: isDark
-                    ? const Color(0xFF4B30A1)
-                    : const Color(0xFF1E0A3C),
-              ),
+              if (_initError.isEmpty)
+                CircularProgressIndicator(
+                  color: isDark
+                      ? const Color(0xFF4B30A1)
+                      : const Color(0xFF1E0A3C),
+                )
+              else
+                Icon(
+                  Icons.explore_off_rounded,
+                  size: 36,
+                  color: isDark
+                      ? const Color(0xFFB39DDB)
+                      : const Color(0xFF4C425C),
+                ),
               const SizedBox(height: 16),
               Text(
-                'Initializing compass…',
+                _initError.isEmpty ? 'Initializing compass…' : _initError,
                 style: TextStyle(
                   fontFamily: 'Manrope',
                   color: isDark
@@ -109,7 +178,21 @@ class _CompassViewState extends State<CompassView>
                       : const Color(0xFF4C425C),
                   fontSize: 14,
                 ),
+                textAlign: TextAlign.center,
               ),
+              if (_initError.isNotEmpty) ...[
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _isInitializing = true;
+                      _initError = '';
+                    });
+                    _initCompass();
+                  },
+                  child: const Text('Retry'),
+                ),
+              ],
             ],
           ),
         ),
@@ -122,7 +205,12 @@ class _CompassViewState extends State<CompassView>
       body: SafeArea(
         child: Column(
           children: [
-            _TopBar(isDark: isDark, directionLabel: _directionLabel),
+            _TopBar(
+              isDark: isDark,
+              directionLabel: _isApiFallback
+                  ? 'API Qibla mode (no native compass)'
+                  : 'Native compass active',
+            ),
             const SizedBox(height: 8),
             _HeadingDisplay(
               heading: _smoothHeading,
@@ -136,7 +224,7 @@ class _CompassViewState extends State<CompassView>
               child: Center(
                 child: _CompassDial(
                   heading: _smoothHeading,
-                  qiblaDegrees: _kQiblaDegrees,
+                  qiblaDegrees: _qiblaDegrees,
                   facingMecca: _facingMecca,
                   isDark: isDark,
                 ),
@@ -148,6 +236,7 @@ class _CompassViewState extends State<CompassView>
               qiblaOffset: _qiblaOffset,
               facingMecca: _facingMecca,
               isDark: isDark,
+              isApiFallback: _isApiFallback,
             ),
             const SizedBox(height: 16),
           ],
@@ -205,7 +294,7 @@ class _TopBar extends StatelessWidget {
                   ),
                   const SizedBox(width: 5),
                   Text(
-                    'Qibla direction active',
+                    directionLabel,
                     style: TextStyle(
                       fontFamily: 'Manrope',
                       fontSize: 12,
@@ -379,8 +468,6 @@ class _CompassPainter extends CustomPainter {
   final bool isDark;
 
   // ── Palette ────────────────────────────────────────────────────────────────
-  Color get _bg =>
-      isDark ? const Color(0xFF0D0320) : const Color(0xFFFFFFFF);
   Color get _ringBg =>
       isDark ? const Color(0xFF1D1238) : const Color(0xFFEEE8FA);
   Color get _innerBg =>
@@ -833,11 +920,13 @@ class _InfoRow extends StatelessWidget {
     required this.qiblaOffset,
     required this.facingMecca,
     required this.isDark,
+    required this.isApiFallback,
   });
   final double heading;
   final double qiblaOffset;
   final bool facingMecca;
   final bool isDark;
+  final bool isApiFallback;
 
   @override
   Widget build(BuildContext context) {
@@ -848,7 +937,7 @@ class _InfoRow extends StatelessWidget {
           Expanded(
             child: _InfoCard(
               label: 'Heading',
-              value: '${heading.toStringAsFixed(0)}°',
+              value: isApiFallback ? 'N/A' : '${heading.toStringAsFixed(0)}°',
               icon: Icons.explore_rounded,
               isDark: isDark,
             ),
@@ -860,15 +949,15 @@ class _InfoRow extends StatelessWidget {
               value: '${qiblaOffset.toStringAsFixed(0)}°',
               icon: Icons.mosque_rounded,
               isDark: isDark,
-              accent: true,
-              isOnTarget: facingMecca,
+              accent: !isApiFallback,
+              isOnTarget: !isApiFallback && facingMecca,
             ),
           ),
           const SizedBox(width: 10),
           Expanded(
             child: _InfoCard(
               label: 'Accuracy',
-              value: '±2°',
+              value: isApiFallback ? 'API' : '±2°',
               icon: Icons.my_location_rounded,
               isDark: isDark,
             ),
@@ -925,6 +1014,7 @@ class _InfoCard extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             value,
+                  overflow: TextOverflow.ellipsis,
             style: TextStyle(
               fontFamily: 'Sora',
               fontSize: 17,
@@ -936,6 +1026,7 @@ class _InfoCard extends StatelessWidget {
           const SizedBox(height: 2),
           Text(
             label,
+                  overflow: TextOverflow.ellipsis,
             style: TextStyle(
               fontFamily: 'Manrope',
               fontSize: 10,
@@ -960,6 +1051,7 @@ class _InfoCard extends StatelessWidget {
                 const SizedBox(width: 4),
                 Text(
                   isOnTarget ? 'Facing Mecca!' : 'Rotate to align',
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     fontFamily: 'Manrope',
                     fontSize: 9,

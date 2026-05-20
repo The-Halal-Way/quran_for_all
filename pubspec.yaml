@@ -27,7 +27,16 @@ dependencies:
   flutter_tts: ^4.2.5
   flutter_screenutil: ^5.9.3
   lottie: ^3.3.3
+
+  # compass
   flutter_compass: ^0.8.1
+  
+  # prayer_time
+  geolocator: ^14.0.2
+  adhan: ^2.0.0+1
+  timezone: ^0.11.0
+  flutter_timezone: ^4.1.1
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
