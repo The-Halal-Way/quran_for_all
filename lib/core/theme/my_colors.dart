@@ -39,6 +39,7 @@ class MyColors {
   static const Color darkSurfaceContainer = Color(0xFF1D1238);
   static const Color darkCardFill        = Color(0xFF261A45); // deep velvet
   static const Color darkDivider         = Color(0xFF382E54);
+  static const darkCard       = Color(0xFF261A45);
 
   // ── Dark Text ────────────────────────────────────────────────────────────
   static const Color darkTextPrimary   = Color(0xFFEDE7F6); // softest lavender

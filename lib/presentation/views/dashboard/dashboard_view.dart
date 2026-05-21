@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
 import 'package:quran_for_all/presentation/views/compass/compass_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/daily_duah_view.dart';
@@ -60,6 +62,24 @@ class DashboardView extends StatelessWidget {
                 );
               },
               child: Text('Go to Prayer Times'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HadithAnNawawiView()),
+                );
+              },
+              child: Text('Go to Hadith An-Nawawi'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HadithFortyShortView()),
+                );
+              },
+              child: Text('Go to Hadith Forty Short'),
             ),
           ],
         ),
