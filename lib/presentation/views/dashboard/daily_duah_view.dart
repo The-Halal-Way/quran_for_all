@@ -1,3 +1,5 @@
+import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -1198,7 +1200,7 @@ class _DuahCardState extends State<_DuahCard> {
                   child: Text(
                     item.arabic,
                     textAlign: TextAlign.right,
-                    textDirection: TextDirection.rtl,
+                    textDirection: ui.TextDirection.rtl,
                     style: theme.textTheme.headlineMedium?.copyWith(
                       fontFamily: 'Scheherazade New', // Arabic font
                       fontSize: 24,
@@ -1404,7 +1406,7 @@ class _SubItemTile extends StatelessWidget {
           Text(
             item.arabic,
             textAlign: TextAlign.right,
-            textDirection: TextDirection.rtl,
+            textDirection: ui.TextDirection.rtl,
             style: theme.textTheme.bodyLarge?.copyWith(
               fontFamily: 'Scheherazade New',
               fontSize: 20,

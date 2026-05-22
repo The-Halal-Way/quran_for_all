@@ -5,6 +5,7 @@
 
 import 'dart:convert';
 import 'dart:math' as math;
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -961,7 +962,7 @@ class _ArabicCard extends StatelessWidget {
                 Text(
                   arabic,
                   textAlign: TextAlign.right,
-                  textDirection: TextDirection.rtl,
+                  textDirection: ui.TextDirection.rtl,
                   style: GoogleFonts.amiri(
                     fontSize: 22,
                     height: 1.9,
@@ -1289,7 +1290,7 @@ class _JumpListTile extends StatelessWidget {
                 children: [
                   Text(
                     item.arabic,
-                    textDirection: TextDirection.rtl,
+                    textDirection: ui.TextDirection.rtl,
                     style: GoogleFonts.amiri(
                       fontSize: 15,
                       color: textMain,

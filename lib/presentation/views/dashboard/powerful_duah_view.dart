@@ -1,3 +1,5 @@
+import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -475,7 +477,7 @@ class _PowerfulAppBar extends StatelessWidget {
               // Decorative Arabic header
               Text(
                 'أَدْعِيَة قُرْآنِيَّة وَنَبَوِيَّة',
-                textDirection: TextDirection.rtl,
+                textDirection: ui.TextDirection.rtl,
                 style: theme.textTheme.headlineMedium?.copyWith(
                   fontFamily: 'Scheherazade New',
                   fontSize: 22,
@@ -1006,7 +1008,7 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                   child: Text(
                     duah.arabic,
                     textAlign: TextAlign.center,
-                    textDirection: TextDirection.rtl,
+                    textDirection: ui.TextDirection.rtl,
                     style: theme.textTheme.headlineMedium?.copyWith(
                       fontFamily: 'Scheherazade New',
                       fontSize: 22,
