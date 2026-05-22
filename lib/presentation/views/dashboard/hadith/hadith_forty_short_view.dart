@@ -8,6 +8,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -97,7 +98,6 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
   ShortHadithBook? _book;
   bool _loading = true;
 
-  bool _isDark = false;
   bool _isBangla = false;
   int _currentIndex = 0; // 0-based index into hadiths list
 
@@ -142,12 +142,15 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
 
   // ── Helpers ────────────────────────────────────────────────────────────────
 
-  Color get _scaffoldBg => _isDark ? MyColors.darkScaffold : MyColors.scaffold;
-  Color get _cardBg     => _isDark ? MyColors.darkCard     : MyColors.cardFill;
-  Color get _textMain   => _isDark ? MyColors.darkTextPrimary   : MyColors.textPrimary;
-  Color get _textSub    => _isDark ? MyColors.darkTextSecondary : MyColors.textSecondary;
-  Color get _textHint   => _isDark ? MyColors.darkTextTertiary  : MyColors.textTertiary;
-  Color get _dividerClr => _isDark ? MyColors.darkDivider       : MyColors.divider;
+  bool get _isDark => Theme.of(context).brightness == Brightness.dark;
+  ColorScheme get _scheme => Theme.of(context).colorScheme;
+
+  Color get _scaffoldBg => _scheme.surface;
+  Color get _cardBg => _scheme.surfaceContainer;
+  Color get _textMain => _scheme.onSurface;
+  Color get _textSub => _scheme.onSurfaceVariant;
+  Color get _textHint => _scheme.onSurfaceVariant.withValues(alpha: 0.78);
+  Color get _dividerClr => _scheme.outlineVariant;
 
   void _goTo(int index) {
     setState(() => _currentIndex = index);
@@ -251,20 +254,15 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
             right: 16,
             child: _buildControls(),
           ),
-
-          // Jump FAB
           Positioned(
-            bottom: _bottomBarHeight(context) + 12,
-            right: 16,
-            child: _JumpFAB(isDark: _isDark, onTap: _showJumpSheet),
+            top: MediaQuery.of(context).padding.top + 10,
+            left: 16,
+            child: _buildBackButton(),
           ),
+
         ],
       ),
     );
-  }
-
-  double _bottomBarHeight(BuildContext context) {
-    return 68 + MediaQuery.of(context).padding.bottom;
   }
 
   // ── Header ─────────────────────────────────────────────────────────────────
@@ -277,7 +275,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
       padding: EdgeInsets.only(
         top: topPad + 14,
         bottom: 14,
-        left: 20,
+        left: 68, // leave space for back button
         right: 88,
       ),
       decoration: BoxDecoration(
@@ -390,13 +388,69 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
             onChanged: (v) => setState(() => _isBangla = v),
           ),
           const SizedBox(width: 8),
-          _IconBtn(
-            icon: _isDark ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
-            isDark: _isDark,
-            onTap: () => setState(() => _isDark = !_isDark),
+          GestureDetector(
+            onTap: _showJumpSheet,
+            child: Container(
+              width: 36,
+              height: 36,
+              decoration: BoxDecoration(
+                color: _isDark ? MyColors.darkCard : MyColors.cardFill,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(
+                  color: _isDark
+                      ? Colors.white.withOpacity(0.1)
+                      : MyColors.divider,
+                  width: 0.8,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: MyColors.primary.withOpacity(0.08),
+                    blurRadius: 8,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              padding: const EdgeInsets.all(8),
+              child: Image.asset(
+                MyIcons.searchIcon,
+                color: _textMain,
+              ),
+            ),
           ),
         ],
       );
+
+  Widget _buildBackButton() {
+    return GestureDetector(
+      onTap: () => Navigator.of(context).maybePop(),
+      child: Container(
+        width: 36,
+        height: 36,
+        decoration: BoxDecoration(
+          color: _isDark ? MyColors.darkCard : MyColors.cardFill,
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(
+            color: _isDark
+                ? Colors.white.withOpacity(0.1)
+                : MyColors.divider,
+            width: 0.8,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: MyColors.primary.withOpacity(0.08),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
+          ],
+        ),
+        child: Icon(
+          Icons.arrow_back_ios_new,
+          size: 17,
+          color: _textMain,
+        ),
+      ),
+    );
+  }
 
   // ── Bottom bar ─────────────────────────────────────────────────────────────
 
@@ -1213,43 +1267,6 @@ class _DotRow extends StatelessWidget {
 // REUSABLE SMALL COMPONENTS
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _JumpFAB extends StatelessWidget {
-  final bool isDark;
-  final VoidCallback onTap;
-  const _JumpFAB({required this.isDark, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: 50,
-        height: 50,
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: [MyColors.tertiary, Color(0xFF00897B)],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(14),
-          boxShadow: [
-            BoxShadow(
-              color: MyColors.tertiary.withOpacity(0.4),
-              blurRadius: 16,
-              offset: const Offset(0, 4),
-            ),
-          ],
-        ),
-        child: const Icon(
-          Icons.format_list_numbered_rounded,
-          color: Colors.white,
-          size: 21,
-        ),
-      ),
-    );
-  }
-}
-
 class _LangToggle extends StatelessWidget {
   final bool isBangla, isDark;
   final ValueChanged<bool> onChanged;
@@ -1323,42 +1340,6 @@ class _LangOption extends StatelessWidget {
               ? Colors.white
               : (isDark ? MyColors.darkTextTertiary : MyColors.textTertiary),
         ),
-      ),
-    );
-  }
-}
-
-class _IconBtn extends StatelessWidget {
-  final IconData icon;
-  final bool isDark;
-  final VoidCallback onTap;
-  const _IconBtn({required this.icon, required this.isDark, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: 36,
-        height: 36,
-        decoration: BoxDecoration(
-          color: isDark ? MyColors.darkCard : MyColors.cardFill,
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(
-            color: isDark
-                ? Colors.white.withOpacity(0.1)
-                : MyColors.divider,
-            width: 0.8,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: MyColors.primary.withOpacity(0.08),
-              blurRadius: 8,
-              offset: const Offset(0, 2),
-            ),
-          ],
-        ),
-        child: Icon(icon, size: 17, color: isDark ? MyColors.darkTextPrimary : MyColors.textPrimary),
       ),
     );
   }
