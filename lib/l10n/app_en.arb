@@ -86,5 +86,50 @@
   "learnVmAudioMissingSample": "No audio sample is attached to this lesson yet.",
   "learnVmAudioSampleNotFound": "Could not find the sample ayah audio for this lesson.",
   "learnVmAudioPlayFailed": "Unable to play lesson audio right now.",
+  "duahDailyTitle": "Daily Du'a",
+  "duahDailySubtitle": "Supplications for every moment",
+  "duahPowerfulTitle": "Powerful Du'as",
+  "duahLanguageToggleTooltip": "Change language",
+  "duahLevelBeginner": "Beginner",
+  "duahLevelIntermediate": "Intermediate",
+  "duahLevelAdvanced": "Advanced",
+  "duahLevelBeginnerDesc": "Short, easy-to-memorize du'as for everyday moments. Perfect to start your journey.",
+  "duahLevelIntermediateDesc": "Fuller wordings with richer meaning. Ideal once the basics feel natural.",
+  "duahLevelAdvancedDesc": "Complete authentic du'as including optional additions and all daily situations.",
+  "duahCountLabel": "{count} du'as",
+  "@duahCountLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "duahShowVariants": "Show variants",
+  "duahHideVariants": "Hide variants",
+  "duahCopied": "Copied",
+  "duahCopy": "Copy",
+  "duahPowerfulImportantNoteTitle": "Important note",
+  "duahPowerfulImportantNoteBody": "Du'a is answered in the way Allah wills, at the time He wills, and in the form He wills. These are authentic and deeply beloved supplications from Qur'anic and Prophetic sources.",
+  "duahPowerfulBestFive": "Best 5 to memorize first",
+  "duahSituationAll": "All",
+  "duahSituationDistress": "Distress",
+  "duahSituationForgiveness": "Forgiveness",
+  "duahSituationGuidance": "Guidance",
+  "duahSituationProvision": "Provision",
+  "duahSituationProtection": "Protection",
+  "duahSituationFamily": "Family",
+  "duahSituationKnowledge": "Knowledge",
+  "duahCountOfTotal": "{count} du'as of {total}",
+  "@duahCountOfTotal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "duahTapToShowPronunciation": "Tap to show pronunciation",
   "learnQuranTextMapRaw": ""
 }

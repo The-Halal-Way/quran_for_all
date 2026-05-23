@@ -1,12 +1,8 @@
-import 'dart:ui' as ui;
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
-
-part '../../../widgets/dashobard/duah/daily_duah/daily_duah_data.dart';
-part '../../../widgets/dashobard/duah/daily_duah/daily_duah_widgets.dart';
+import 'package:quran_for_all/presentation/widgets/dashobard/duah/daily_duah/daily_duah_data.dart';
+import 'package:quran_for_all/presentation/widgets/dashobard/duah/daily_duah/daily_duah_widgets.dart';
 
 class DailyDuahView extends StatefulWidget {
   const DailyDuahView({super.key});
@@ -64,7 +60,7 @@ class _DailyDuahViewState extends State<DailyDuahView>
           return CustomScrollView(
             physics: const BouncingScrollPhysics(),
             slivers: [
-              _DuahAppBar(
+              DuahAppBar(
                 isDark: isDark,
                 selectedLevel: _selectedLevel,
                 onLevelChanged: _switchLevel,
@@ -76,13 +72,13 @@ class _DailyDuahViewState extends State<DailyDuahView>
                   sliver: SliverList(
                     delegate: SliverChildBuilderDelegate((context, index) {
                       if (index == 0) {
-                        return _LevelBanner(
+                        return LevelBanner(
                           level: _selectedLevel,
                           isDark: isDark,
                         );
                       }
                       final cat = categories[index - 1];
-                      return _CategorySection(
+                      return CategorySection(
                         category: cat,
                         isDark: isDark,
                         isLast: index == categories.length,

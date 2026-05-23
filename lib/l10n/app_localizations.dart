@@ -305,6 +305,174 @@ abstract class AppLocalizations {
   /// **'Unable to play lesson audio right now.'**
   String get learnVmAudioPlayFailed;
 
+  /// No description provided for @duahDailyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Du\'a'**
+  String get duahDailyTitle;
+
+  /// No description provided for @duahDailySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Supplications for every moment'**
+  String get duahDailySubtitle;
+
+  /// No description provided for @duahPowerfulTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Powerful Du\'as'**
+  String get duahPowerfulTitle;
+
+  /// No description provided for @duahLanguageToggleTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Change language'**
+  String get duahLanguageToggleTooltip;
+
+  /// No description provided for @duahLevelBeginner.
+  ///
+  /// In en, this message translates to:
+  /// **'Beginner'**
+  String get duahLevelBeginner;
+
+  /// No description provided for @duahLevelIntermediate.
+  ///
+  /// In en, this message translates to:
+  /// **'Intermediate'**
+  String get duahLevelIntermediate;
+
+  /// No description provided for @duahLevelAdvanced.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get duahLevelAdvanced;
+
+  /// No description provided for @duahLevelBeginnerDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Short, easy-to-memorize du\'as for everyday moments. Perfect to start your journey.'**
+  String get duahLevelBeginnerDesc;
+
+  /// No description provided for @duahLevelIntermediateDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Fuller wordings with richer meaning. Ideal once the basics feel natural.'**
+  String get duahLevelIntermediateDesc;
+
+  /// No description provided for @duahLevelAdvancedDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete authentic du\'as including optional additions and all daily situations.'**
+  String get duahLevelAdvancedDesc;
+
+  /// No description provided for @duahCountLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} du\'as'**
+  String duahCountLabel(int count);
+
+  /// No description provided for @duahShowVariants.
+  ///
+  /// In en, this message translates to:
+  /// **'Show variants'**
+  String get duahShowVariants;
+
+  /// No description provided for @duahHideVariants.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide variants'**
+  String get duahHideVariants;
+
+  /// No description provided for @duahCopied.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied'**
+  String get duahCopied;
+
+  /// No description provided for @duahCopy.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get duahCopy;
+
+  /// No description provided for @duahPowerfulImportantNoteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Important note'**
+  String get duahPowerfulImportantNoteTitle;
+
+  /// No description provided for @duahPowerfulImportantNoteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Du\'a is answered in the way Allah wills, at the time He wills, and in the form He wills. These are authentic and deeply beloved supplications from Qur\'anic and Prophetic sources.'**
+  String get duahPowerfulImportantNoteBody;
+
+  /// No description provided for @duahPowerfulBestFive.
+  ///
+  /// In en, this message translates to:
+  /// **'Best 5 to memorize first'**
+  String get duahPowerfulBestFive;
+
+  /// No description provided for @duahSituationAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get duahSituationAll;
+
+  /// No description provided for @duahSituationDistress.
+  ///
+  /// In en, this message translates to:
+  /// **'Distress'**
+  String get duahSituationDistress;
+
+  /// No description provided for @duahSituationForgiveness.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgiveness'**
+  String get duahSituationForgiveness;
+
+  /// No description provided for @duahSituationGuidance.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidance'**
+  String get duahSituationGuidance;
+
+  /// No description provided for @duahSituationProvision.
+  ///
+  /// In en, this message translates to:
+  /// **'Provision'**
+  String get duahSituationProvision;
+
+  /// No description provided for @duahSituationProtection.
+  ///
+  /// In en, this message translates to:
+  /// **'Protection'**
+  String get duahSituationProtection;
+
+  /// No description provided for @duahSituationFamily.
+  ///
+  /// In en, this message translates to:
+  /// **'Family'**
+  String get duahSituationFamily;
+
+  /// No description provided for @duahSituationKnowledge.
+  ///
+  /// In en, this message translates to:
+  /// **'Knowledge'**
+  String get duahSituationKnowledge;
+
+  /// No description provided for @duahCountOfTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} du\'as of {total}'**
+  String duahCountOfTotal(int count, int total);
+
+  /// No description provided for @duahTapToShowPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to show pronunciation'**
+  String get duahTapToShowPronunciation;
+
   /// No description provided for @learnQuranTextMapRaw.
   ///
   /// In en, this message translates to:

@@ -1,6 +1,16 @@
-part of '../../../../views/dashboard/duah/powerful_duah_view.dart';
-class _PowerfulAppBar extends StatelessWidget {
-  const _PowerfulAppBar({required this.isDark});
+import 'dart:ui' as ui;
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+import 'package:quran_for_all/core/enums/app_language.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
+
+import 'powerful_duah_data.dart';
+
+class PowerfulAppBar extends StatelessWidget {
+  const PowerfulAppBar({super.key, required this.isDark});
   final bool isDark;
 
   @override
@@ -29,31 +39,6 @@ class _PowerfulAppBar extends StatelessWidget {
             ),
           ],
         ),
-        child: Align(
-          alignment: Alignment.topCenter,
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 760),
-            child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: 12),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(18),
-                gradient: LinearGradient(
-                  colors: [
-                    Colors.white.withValues(alpha: 0.24),
-                    Colors.white.withValues(alpha: 0.06),
-                    Colors.white.withValues(alpha: 0.16),
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
-                border: Border.all(
-                  color: Colors.white.withValues(alpha: 0.18),
-                  width: 0.8,
-                ),
-              ),
-            ),
-          ),
-        ),
       ),
       leading: IconButton(
         icon: Icon(
@@ -64,12 +49,13 @@ class _PowerfulAppBar extends StatelessWidget {
         onPressed: () => Navigator.maybePop(context),
       ),
       title: Text(
-        'Powerful Du\'ās',
+        context.l10n.duahPowerfulTitle,
         style: theme.textTheme.titleLarge?.copyWith(
           color: Colors.white,
           fontWeight: FontWeight.w700,
         ),
       ),
+      actions: const [_LanguageToggleAction()],
     );
   }
 }
@@ -78,15 +64,15 @@ class _PowerfulAppBar extends StatelessWidget {
 // IMPORTANT NOTE BANNER
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _NoteBanner extends StatefulWidget {
-  const _NoteBanner({required this.isDark});
+class NoteBanner extends StatefulWidget {
+  const NoteBanner({super.key, required this.isDark});
   final bool isDark;
 
   @override
-  State<_NoteBanner> createState() => _NoteBannerState();
+  State<NoteBanner> createState() => NoteBannerState();
 }
 
-class _NoteBannerState extends State<_NoteBanner> {
+class NoteBannerState extends State<NoteBanner> {
   bool _dismissed = false;
 
   @override
@@ -100,7 +86,7 @@ class _NoteBannerState extends State<_NoteBanner> {
       child: _dismissed
           ? const SizedBox.shrink()
           : Container(
-              margin: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+              margin: const EdgeInsets.fromLTRB(0, 8, 0, 4),
               padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -141,7 +127,7 @@ class _NoteBannerState extends State<_NoteBanner> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Important note',
+                          context.l10n.duahPowerfulImportantNoteTitle,
                           style: theme.textTheme.labelMedium?.copyWith(
                             color: const Color(0xFF4B30A1),
                             fontWeight: FontWeight.w700,
@@ -149,7 +135,7 @@ class _NoteBannerState extends State<_NoteBanner> {
                         ),
                         const SizedBox(height: 3),
                         Text(
-                          'Du\'ā is answered in the way Allah wills, at the time He wills, and in the form He wills. These are authentic and deeply beloved supplications from Qur\'ānic and Prophetic sources.',
+                          context.l10n.duahPowerfulImportantNoteBody,
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: widget.isDark
                                 ? const Color(0xFFB39DDB)
@@ -181,8 +167,8 @@ class _NoteBannerState extends State<_NoteBanner> {
 // FILTER ROW
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _FilterRow extends StatelessWidget {
-  const _FilterRow({
+class FilterRow extends StatelessWidget {
+  const FilterRow({super.key, 
     required this.selected,
     required this.featuredOnly,
     required this.isDark,
@@ -206,7 +192,7 @@ class _FilterRow extends StatelessWidget {
       children: [
         // "Best 5" toggle
         Padding(
-          padding: const EdgeInsets.fromLTRB(16, 10, 16, 6),
+          padding: const EdgeInsets.fromLTRB(0, 10, 0, 6),
           child: GestureDetector(
             onTap: onFeaturedToggled,
             child: AnimatedContainer(
@@ -237,7 +223,7 @@ class _FilterRow extends StatelessWidget {
                   ),
                   const SizedBox(width: 6),
                   Text(
-                    'Best 5 to memorize first',
+                    context.l10n.duahPowerfulBestFive,
                     style: theme.textTheme.labelMedium?.copyWith(
                       fontSize: 12,
                       color: featuredOnly
@@ -259,7 +245,6 @@ class _FilterRow extends StatelessWidget {
           height: 40,
           child: ListView(
             scrollDirection: Axis.horizontal,
-            padding: const EdgeInsets.symmetric(horizontal: 16),
             children: DuahSituation.values.map((s) {
               final isActive = selected == s;
               return Padding(
@@ -297,7 +282,7 @@ class _FilterRow extends StatelessWidget {
                         ),
                         const SizedBox(width: 5),
                         Text(
-                          s.label,
+                          s.label(context),
                           style: theme.textTheme.labelMedium?.copyWith(
                             fontSize: 12,
                             color: isActive
@@ -328,8 +313,8 @@ class _FilterRow extends StatelessWidget {
 // COUNT BAR
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _CountBar extends StatelessWidget {
-  const _CountBar({
+class CountBar extends StatelessWidget {
+  const CountBar({super.key, 
     required this.count,
     required this.total,
     required this.situation,
@@ -346,7 +331,7 @@ class _CountBar extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+      padding: const EdgeInsets.fromLTRB(0, 0, 0, 8),
       child: Row(
         children: [
           Container(
@@ -359,29 +344,23 @@ class _CountBar extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           Text(
-            '$count',
-            style: theme.textTheme.titleMedium?.copyWith(
-              fontFamily: 'Sora',
-              color: situation.color,
-              fontSize: 15,
-            ),
-          ),
-          Text(
-            ' du\'ās',
+            context.l10n.duahCountLabel(count),
             style: theme.textTheme.bodyMedium?.copyWith(
               color: isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288),
             ),
           ),
-          if (count < total) ...[
-            Text(
-              ' of $total',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: isDark
-                    ? const Color(0xFF382E54)
-                    : const Color(0xFFD9D1E8),
+          if (count < total)
+            Expanded(
+              child: Text(
+                context.l10n.duahCountOfTotal(count, total),
+                textAlign: TextAlign.end,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: isDark
+                      ? const Color(0xFF382E54)
+                      : const Color(0xFFD9D1E8),
+                ),
               ),
             ),
-          ],
         ],
       ),
     );
@@ -392,8 +371,8 @@ class _CountBar extends StatelessWidget {
 // POWERFUL DUAH CARD
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _PowerfulDuahCard extends StatefulWidget {
-  const _PowerfulDuahCard({
+class PowerfulDuahCard extends StatefulWidget {
+  const PowerfulDuahCard({super.key, 
     required this.duah,
     required this.isDark,
     required this.situationColor,
@@ -404,10 +383,10 @@ class _PowerfulDuahCard extends StatefulWidget {
   final Color situationColor;
 
   @override
-  State<_PowerfulDuahCard> createState() => _PowerfulDuahCardState();
+  State<PowerfulDuahCard> createState() => PowerfulDuahCardState();
 }
 
-class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
+class PowerfulDuahCardState extends State<PowerfulDuahCard> {
   bool _copied = false;
   bool _showPronunciation = true;
 
@@ -415,7 +394,7 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
     Clipboard.setData(
       ClipboardData(
         text:
-            '${widget.duah.arabic}\n\n${widget.duah.pronunciation}\n\n${widget.duah.translation}',
+            '${widget.duah.arabic}\n\n${widget.duah.localizedPronunciation(context)}\n\n${widget.duah.localizedTranslation(context)}',
       ),
     );
     setState(() => _copied = true);
@@ -504,7 +483,7 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        duah.title,
+                        duah.localizedTitle(context),
                         style: theme.textTheme.titleMedium?.copyWith(
                           fontFamily: 'Sora',
                           fontSize: 14,
@@ -624,7 +603,7 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                               ? CrossFadeState.showFirst
                               : CrossFadeState.showSecond,
                           firstChild: Text(
-                            duah.pronunciation,
+                            duah.localizedPronunciation(context),
                             style: theme.textTheme.bodyMedium?.copyWith(
                               fontStyle: FontStyle.italic,
                               color: isDark
@@ -634,7 +613,7 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                             ),
                           ),
                           secondChild: Text(
-                            'Tap to show pronunciation',
+                            context.l10n.duahTapToShowPronunciation,
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: isDark
                                   ? const Color(0xFF382E54)
@@ -664,7 +643,7 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                     ),
                     Expanded(
                       child: Text(
-                        duah.translation,
+                        duah.localizedTranslation(context),
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: isDark
                               ? const Color(0xFFEDE7F6)
@@ -702,7 +681,7 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                                   ),
                                 ),
                                 child: Text(
-                                  s.label,
+                                  s.label(context),
                                   style: theme.textTheme.labelSmall?.copyWith(
                                     color: s.color,
                                     fontWeight: FontWeight.w700,
@@ -752,7 +731,9 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                             ),
                             const SizedBox(width: 5),
                             Text(
-                              _copied ? 'Copied' : 'Copy',
+                              _copied
+                                  ? context.l10n.duahCopied
+                                  : context.l10n.duahCopy,
                               style: theme.textTheme.labelSmall?.copyWith(
                                 color: _copied
                                     ? const Color(0xFF00BFA5)
@@ -773,6 +754,46 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
           ),
         ],
       ),
+    );
+  }
+}
+
+class _LanguageToggleAction extends StatelessWidget {
+  const _LanguageToggleAction();
+
+  @override
+  Widget build(BuildContext context) {
+    final settingsVm = context.watch<SettingsViewModel>();
+    final current = settingsVm.settings.language;
+
+    return PopupMenuButton<AppLanguage>(
+      tooltip: context.l10n.duahLanguageToggleTooltip,
+      icon: const Icon(Icons.language_rounded, color: Colors.white),
+      onSelected: (language) => settingsVm.setLanguage(language),
+      itemBuilder: (context) => [
+        PopupMenuItem<AppLanguage>(
+          value: AppLanguage.english,
+          child: Text(
+            context.appLanguageLabel(AppLanguage.english),
+            style: TextStyle(
+              fontWeight: current == AppLanguage.english
+                  ? FontWeight.w700
+                  : FontWeight.w500,
+            ),
+          ),
+        ),
+        PopupMenuItem<AppLanguage>(
+          value: AppLanguage.bangla,
+          child: Text(
+            context.appLanguageLabel(AppLanguage.bangla),
+            style: TextStyle(
+              fontWeight: current == AppLanguage.bangla
+                  ? FontWeight.w700
+                  : FontWeight.w500,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

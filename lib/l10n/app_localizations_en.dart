@@ -126,5 +126,93 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learnVmAudioPlayFailed => 'Unable to play lesson audio right now.';
 
   @override
+  String get duahDailyTitle => 'Daily Du\'a';
+
+  @override
+  String get duahDailySubtitle => 'Supplications for every moment';
+
+  @override
+  String get duahPowerfulTitle => 'Powerful Du\'as';
+
+  @override
+  String get duahLanguageToggleTooltip => 'Change language';
+
+  @override
+  String get duahLevelBeginner => 'Beginner';
+
+  @override
+  String get duahLevelIntermediate => 'Intermediate';
+
+  @override
+  String get duahLevelAdvanced => 'Advanced';
+
+  @override
+  String get duahLevelBeginnerDesc => 'Short, easy-to-memorize du\'as for everyday moments. Perfect to start your journey.';
+
+  @override
+  String get duahLevelIntermediateDesc => 'Fuller wordings with richer meaning. Ideal once the basics feel natural.';
+
+  @override
+  String get duahLevelAdvancedDesc => 'Complete authentic du\'as including optional additions and all daily situations.';
+
+  @override
+  String duahCountLabel(int count) {
+    return '$count du\'as';
+  }
+
+  @override
+  String get duahShowVariants => 'Show variants';
+
+  @override
+  String get duahHideVariants => 'Hide variants';
+
+  @override
+  String get duahCopied => 'Copied';
+
+  @override
+  String get duahCopy => 'Copy';
+
+  @override
+  String get duahPowerfulImportantNoteTitle => 'Important note';
+
+  @override
+  String get duahPowerfulImportantNoteBody => 'Du\'a is answered in the way Allah wills, at the time He wills, and in the form He wills. These are authentic and deeply beloved supplications from Qur\'anic and Prophetic sources.';
+
+  @override
+  String get duahPowerfulBestFive => 'Best 5 to memorize first';
+
+  @override
+  String get duahSituationAll => 'All';
+
+  @override
+  String get duahSituationDistress => 'Distress';
+
+  @override
+  String get duahSituationForgiveness => 'Forgiveness';
+
+  @override
+  String get duahSituationGuidance => 'Guidance';
+
+  @override
+  String get duahSituationProvision => 'Provision';
+
+  @override
+  String get duahSituationProtection => 'Protection';
+
+  @override
+  String get duahSituationFamily => 'Family';
+
+  @override
+  String get duahSituationKnowledge => 'Knowledge';
+
+  @override
+  String duahCountOfTotal(int count, int total) {
+    return '$count du\'as of $total';
+  }
+
+  @override
+  String get duahTapToShowPronunciation => 'Tap to show pronunciation';
+
+  @override
   String get learnQuranTextMapRaw => '';
 }
