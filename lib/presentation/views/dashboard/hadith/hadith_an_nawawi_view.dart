@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 
@@ -153,6 +154,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
 
   Widget _buildMain() {
     final book = _book!;
+    final responsive = AppResponsive.of(context);
     return Stack(
       children: [
         // Background decorative mesh
@@ -170,28 +172,42 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                 itemCount: book.hadiths.length + 1, // +1 for intro
                 itemBuilder: (ctx, page) {
                   if (page == 0) {
-                    return _IntroPage(
-                      book: book,
-                      isBangla: _isBangla,
-                      isDark: _scheme.brightness == Brightness.dark,
-                      cardBg: _cardBg,
-                      textMain: _textMain,
-                      textSub: _textSub,
-                      textHint: _textHint,
-                      divider: _divider,
+                    return Center(
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxWidth: responsive.maxReadingContentWidth,
+                        ),
+                        child: _IntroPage(
+                          book: book,
+                          isBangla: _isBangla,
+                          isDark: _scheme.brightness == Brightness.dark,
+                          cardBg: _cardBg,
+                          textMain: _textMain,
+                          textSub: _textSub,
+                          textHint: _textHint,
+                          divider: _divider,
+                        ),
+                      ),
                     );
                   }
                   final hadith = book.hadiths[page - 1];
-                  return _HadithPage(
-                    hadith: hadith,
-                    isBangla: _isBangla,
-                    isDark: _scheme.brightness == Brightness.dark,
-                    cardBg: _cardBg,
-                    textMain: _textMain,
-                    textSub: _textSub,
-                    textHint: _textHint,
-                    divider: _divider,
-                    totalCount: book.hadiths.length,
+                  return Center(
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxWidth: responsive.maxReadingContentWidth,
+                      ),
+                      child: _HadithPage(
+                        hadith: hadith,
+                        isBangla: _isBangla,
+                        isDark: _scheme.brightness == Brightness.dark,
+                        cardBg: _cardBg,
+                        textMain: _textMain,
+                        textSub: _textSub,
+                        textHint: _textHint,
+                        divider: _divider,
+                        totalCount: book.hadiths.length,
+                      ),
+                    ),
                   );
                 },
               ),

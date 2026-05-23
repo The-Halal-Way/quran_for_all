@@ -2,6 +2,7 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:quran_for_all/core/utils/app_responsive.dart';
 
 part '../../../widgets/dashobard/duah/powerful_duah/powerful_duah_data.dart';
 part '../../../widgets/dashobard/duah/powerful_duah/powerful_duah_widgets.dart';
@@ -54,58 +55,68 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     final isDark = colorScheme.brightness == Brightness.dark;
+    final responsive = AppResponsive.of(context);
 
     return Scaffold(
       backgroundColor: colorScheme.surface,
-      body: CustomScrollView(
-        physics: const BouncingScrollPhysics(),
-        slivers: [
-          // ── App Bar ──────────────────────────────────────────────────────
-          _PowerfulAppBar(isDark: isDark),
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          final maxWidth = responsive.maxReadingContentWidth;
+          final horizontal = constraints.maxWidth > maxWidth
+              ? (constraints.maxWidth - maxWidth) / 2
+              : responsive.padding;
 
-          // ── Important note banner ────────────────────────────────────────
-          SliverToBoxAdapter(child: _NoteBanner(isDark: isDark)),
-
-          // ── Filter chips ─────────────────────────────────────────────────
-          SliverToBoxAdapter(
-            child: _FilterRow(
-              selected: _selected,
-              featuredOnly: _featuredOnly,
-              isDark: isDark,
-              onSituationChanged: _switch,
-              onFeaturedToggled: () =>
-                  setState(() => _featuredOnly = !_featuredOnly),
-            ),
-          ),
-
-          // ── Count bar ───────────────────────────────────────────────────
-          SliverToBoxAdapter(
-            child: _CountBar(
-              count: _filtered.length,
-              total: PowerfulDuahData.all.length,
-              situation: _selected,
-              isDark: isDark,
-            ),
-          ),
-
-          // ── Duah list ────────────────────────────────────────────────────
-          SliverFadeTransition(
-            opacity: _fadeAnim,
-            sliver: SliverPadding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 40),
-              sliver: SliverList(
-                delegate: SliverChildBuilderDelegate(
-                  (ctx, i) => _PowerfulDuahCard(
-                    duah: _filtered[i],
+          return CustomScrollView(
+            physics: const BouncingScrollPhysics(),
+            slivers: [
+              _PowerfulAppBar(isDark: isDark),
+              SliverPadding(
+                padding: EdgeInsets.symmetric(horizontal: horizontal),
+                sliver: SliverToBoxAdapter(child: _NoteBanner(isDark: isDark)),
+              ),
+              SliverPadding(
+                padding: EdgeInsets.symmetric(horizontal: horizontal),
+                sliver: SliverToBoxAdapter(
+                  child: _FilterRow(
+                    selected: _selected,
+                    featuredOnly: _featuredOnly,
                     isDark: isDark,
-                    situationColor: _selected.color,
+                    onSituationChanged: _switch,
+                    onFeaturedToggled: () =>
+                        setState(() => _featuredOnly = !_featuredOnly),
                   ),
-                  childCount: _filtered.length,
                 ),
               ),
-            ),
-          ),
-        ],
+              SliverPadding(
+                padding: EdgeInsets.symmetric(horizontal: horizontal),
+                sliver: SliverToBoxAdapter(
+                  child: _CountBar(
+                    count: _filtered.length,
+                    total: PowerfulDuahData.all.length,
+                    situation: _selected,
+                    isDark: isDark,
+                  ),
+                ),
+              ),
+              SliverFadeTransition(
+                opacity: _fadeAnim,
+                sliver: SliverPadding(
+                  padding: EdgeInsets.fromLTRB(horizontal, 0, horizontal, 40),
+                  sliver: SliverList(
+                    delegate: SliverChildBuilderDelegate(
+                      (ctx, i) => _PowerfulDuahCard(
+                        duah: _filtered[i],
+                        isDark: isDark,
+                        situationColor: _selected.color,
+                      ),
+                      childCount: _filtered.length,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          );
+        },
       ),
     );
   }

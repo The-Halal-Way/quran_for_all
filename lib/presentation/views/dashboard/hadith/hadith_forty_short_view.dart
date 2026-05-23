@@ -4,6 +4,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 
@@ -140,6 +141,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
 
   Widget _buildBody() {
     final book = _book!;
+    final responsive = AppResponsive.of(context);
 
     return FadeTransition(
       opacity: _fadeIn,
@@ -155,16 +157,23 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
                   controller: _pageController,
                   onPageChanged: (i) => setState(() => _currentIndex = i),
                   itemCount: book.hadiths.length,
-                  itemBuilder: (_, i) => _ShortHadithPage(
-                    hadith: book.hadiths[i],
-                    isBangla: _isBangla,
-                    isDark: _scheme.brightness == Brightness.dark,
-                    cardBg: _cardBg,
-                    textMain: _textMain,
-                    textSub: _textSub,
-                    textHint: _textHint,
-                    divider: _dividerClr,
-                    totalCount: book.hadiths.length,
+                  itemBuilder: (_, i) => Center(
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxWidth: responsive.maxReadingContentWidth,
+                      ),
+                      child: _ShortHadithPage(
+                        hadith: book.hadiths[i],
+                        isBangla: _isBangla,
+                        isDark: _scheme.brightness == Brightness.dark,
+                        cardBg: _cardBg,
+                        textMain: _textMain,
+                        textSub: _textSub,
+                        textHint: _textHint,
+                        divider: _dividerClr,
+                        totalCount: book.hadiths.length,
+                      ),
+                    ),
                   ),
                 ),
               ),

@@ -1,7 +1,6 @@
 part of '../../../views/dashboard/dashboard_view.dart';
 
 extension _DashboardViewStateSections on _DashboardViewState {
-
   // ── Greeting header ─────────────────────────────────────────────────────────
 
   Widget _buildGreetingHeader() {
@@ -23,24 +22,20 @@ extension _DashboardViewStateSections on _DashboardViewState {
         // Arabic bismillah strip
         Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 560),
+            constraints: const BoxConstraints(maxWidth: 640),
             child: Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    MyColors.primary.withOpacity(0.08),
-                    MyColors.primaryLight.withOpacity(0.04),
+                    MyColors.primary.withOpacity(0.2),
+                    MyColors.primaryLight.withOpacity(0.12),
                   ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
                 ),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(
-                  color: MyColors.primaryLight.withOpacity(
-                    _isDark ? 0.12 : 0.1,
-                  ),
-                  width: 0.8,
-                ),
+                borderRadius: BorderRadius.circular(18),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -50,19 +45,44 @@ extension _DashboardViewStateSections on _DashboardViewState {
                     height: 6,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: MyColors.secondary.withOpacity(0.7),
+                      color: MyColors.secondary.withOpacity(0.95),
+                      boxShadow: [
+                        BoxShadow(
+                          color: MyColors.secondary.withOpacity(0.45),
+                          blurRadius: 10,
+                          offset: const Offset(0, 1),
+                        ),
+                      ],
                     ),
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(width: 12),
                   Flexible(
                     child: Text(
                       'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.amiri(
-                        fontSize: 15,
+                        fontSize: 21,
+                        fontWeight: FontWeight.w700,
                         color: _textMain,
-                        height: 1.4,
+                        letterSpacing: 0.2,
+                        height: 1.25,
                       ),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Container(
+                    width: 6,
+                    height: 6,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: MyColors.secondary.withOpacity(0.95),
+                      boxShadow: [
+                        BoxShadow(
+                          color: MyColors.secondary.withOpacity(0.45),
+                          blurRadius: 10,
+                          offset: const Offset(0, 1),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -448,4 +468,5 @@ extension _DashboardViewStateSections on _DashboardViewState {
         ),
       ],
     );
-  }}
+  }
+}

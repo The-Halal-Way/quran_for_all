@@ -6,6 +6,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/views/compass/compass_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
@@ -131,8 +132,7 @@ class _DashboardViewState extends State<DashboardView> {
     }
   }
 
-  bool get _isDark =>
-      MediaQuery.of(context).platformBrightness == Brightness.dark;
+  bool get _isDark => Theme.of(context).brightness == Brightness.dark;
 
   Color get _scaffoldBg => _isDark ? MyColors.darkScaffold : MyColors.scaffold;
   Color get _cardBg => _isDark ? MyColors.darkCard : MyColors.cardFill;
@@ -149,6 +149,7 @@ class _DashboardViewState extends State<DashboardView> {
 
   @override
   Widget build(BuildContext context) {
+    final responsive = AppResponsive.of(context);
     return Scaffold(
       backgroundColor: _scaffoldBg,
       body: Stack(
@@ -162,72 +163,84 @@ class _DashboardViewState extends State<DashboardView> {
 
           SafeArea(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.fromLTRB(16, 20, 16, 32),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _buildGreetingHeader(),
-                  const SizedBox(height: 20),
-                  _buildContinueCards(),
-                  const SizedBox(height: 24),
-                  _buildSectionLabel(
-                    'Prayer Times',
-                    Icons.access_time_rounded,
-                    MyColors.secondary,
+              padding: EdgeInsets.fromLTRB(
+                responsive.padding,
+                20,
+                responsive.padding,
+                32,
+              ),
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    maxWidth: responsive.maxReadingContentWidth,
                   ),
-                  const SizedBox(height: 10),
-                  _buildPrayerCard(),
-                  const SizedBox(height: 10),
-                  _buildSmallActionRow(
-                    items: [
-                      _ActionItem(
-                        icon: Icons.access_time_filled_rounded,
-                        label: 'Full Prayer View',
-                        color: MyColors.secondary,
-                        onTap: () => _push(const PrayerView()),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildGreetingHeader(),
+                      const SizedBox(height: 20),
+                      _buildContinueCards(),
+                      const SizedBox(height: 24),
+                      _buildSectionLabel(
+                        'Prayer Times',
+                        Icons.access_time_rounded,
+                        MyColors.secondary,
                       ),
-                      _ActionItem(
-                        icon: Icons.explore_rounded,
-                        label: 'Qibla Compass',
-                        color: MyColors.primaryLight,
-                        onTap: () => _push(const CompassView()),
+                      const SizedBox(height: 10),
+                      _buildPrayerCard(),
+                      const SizedBox(height: 10),
+                      _buildSmallActionRow(
+                        items: [
+                          _ActionItem(
+                            icon: Icons.access_time_filled_rounded,
+                            label: 'Full Prayer View',
+                            color: MyColors.secondary,
+                            onTap: () => _push(const PrayerView()),
+                          ),
+                          _ActionItem(
+                            icon: Icons.explore_rounded,
+                            label: 'Qibla Compass',
+                            color: MyColors.primaryLight,
+                            onTap: () => _push(const CompassView()),
+                          ),
+                        ],
                       ),
+                      const SizedBox(height: 24),
+                      _buildSectionLabel(
+                        "Du'ā'",
+                        Icons.auto_awesome_rounded,
+                        MyColors.tertiary,
+                      ),
+                      const SizedBox(height: 10),
+                      _buildSmallActionRow(
+                        items: [
+                          _ActionItem(
+                            icon: Icons.wb_twilight_rounded,
+                            label: 'Daily Du\'ā\'',
+                            sublabel: 'Morning & evening',
+                            color: MyColors.tertiary,
+                            onTap: () => _push(const DailyDuahView()),
+                          ),
+                          _ActionItem(
+                            icon: Icons.bolt_rounded,
+                            label: 'Powerful Du\'ā\'',
+                            sublabel: 'Curated supplications',
+                            color: MyColors.secondary,
+                            onTap: () => _push(const PowerfulDuahView()),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 24),
+                      _buildSectionLabel(
+                        'Hadith',
+                        Icons.menu_book_rounded,
+                        MyColors.primaryLight,
+                      ),
+                      const SizedBox(height: 10),
+                      _buildHadithCards(),
                     ],
                   ),
-                  const SizedBox(height: 24),
-                  _buildSectionLabel(
-                    "Du'ā'",
-                    Icons.auto_awesome_rounded,
-                    MyColors.tertiary,
-                  ),
-                  const SizedBox(height: 10),
-                  _buildSmallActionRow(
-                    items: [
-                      _ActionItem(
-                        icon: Icons.wb_twilight_rounded,
-                        label: 'Daily Du\'ā\'',
-                        sublabel: 'Morning & evening',
-                        color: MyColors.tertiary,
-                        onTap: () => _push(const DailyDuahView()),
-                      ),
-                      _ActionItem(
-                        icon: Icons.bolt_rounded,
-                        label: 'Powerful Du\'ā\'',
-                        sublabel: 'Curated supplications',
-                        color: MyColors.secondary,
-                        onTap: () => _push(const PowerfulDuahView()),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 24),
-                  _buildSectionLabel(
-                    'Hadith',
-                    Icons.menu_book_rounded,
-                    MyColors.primaryLight,
-                  ),
-                  const SizedBox(height: 10),
-                  _buildHadithCards(),
-                ],
+                ),
               ),
             ),
           ),

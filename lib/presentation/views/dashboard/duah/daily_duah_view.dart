@@ -3,6 +3,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:quran_for_all/core/utils/app_responsive.dart';
 
 part '../../../widgets/dashobard/duah/daily_duah/daily_duah_data.dart';
 part '../../../widgets/dashobard/duah/daily_duah/daily_duah_widgets.dart';
@@ -49,37 +50,50 @@ class _DailyDuahViewState extends State<DailyDuahView>
     final colorScheme = Theme.of(context).colorScheme;
     final isDark = colorScheme.brightness == Brightness.dark;
     final categories = DuahData.forLevel(_selectedLevel);
+    final responsive = AppResponsive.of(context);
 
     return Scaffold(
       backgroundColor: colorScheme.surface,
-      body: CustomScrollView(
-        physics: const BouncingScrollPhysics(),
-        slivers: [
-          _DuahAppBar(
-            isDark: isDark,
-            selectedLevel: _selectedLevel,
-            onLevelChanged: _switchLevel,
-          ),
-          SliverPadding(
-            padding: EdgeInsets.symmetric(vertical: 12.h),
-            sliver: SliverFadeTransition(
-              opacity: _fadeAnim,
-              sliver: SliverList(
-                delegate: SliverChildBuilderDelegate((context, index) {
-                  if (index == 0) {
-                    return _LevelBanner(level: _selectedLevel, isDark: isDark);
-                  }
-                  final cat = categories[index - 1];
-                  return _CategorySection(
-                    category: cat,
-                    isDark: isDark,
-                    isLast: index == categories.length,
-                  );
-                }, childCount: categories.length + 1),
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          final maxWidth = responsive.maxReadingContentWidth;
+          final horizontal = constraints.maxWidth > maxWidth
+              ? (constraints.maxWidth - maxWidth) / 2
+              : responsive.padding;
+
+          return CustomScrollView(
+            physics: const BouncingScrollPhysics(),
+            slivers: [
+              _DuahAppBar(
+                isDark: isDark,
+                selectedLevel: _selectedLevel,
+                onLevelChanged: _switchLevel,
               ),
-            ),
-          ),
-        ],
+              SliverPadding(
+                padding: EdgeInsets.fromLTRB(horizontal, 12.h, horizontal, 0),
+                sliver: SliverFadeTransition(
+                  opacity: _fadeAnim,
+                  sliver: SliverList(
+                    delegate: SliverChildBuilderDelegate((context, index) {
+                      if (index == 0) {
+                        return _LevelBanner(
+                          level: _selectedLevel,
+                          isDark: isDark,
+                        );
+                      }
+                      final cat = categories[index - 1];
+                      return _CategorySection(
+                        category: cat,
+                        isDark: isDark,
+                        isLast: index == categories.length,
+                      );
+                    }, childCount: categories.length + 1),
+                  ),
+                ),
+              ),
+            ],
+          );
+        },
       ),
     );
   }
