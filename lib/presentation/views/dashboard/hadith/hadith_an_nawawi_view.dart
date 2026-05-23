@@ -8,6 +8,7 @@ import 'dart:math' as math;
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
@@ -24,14 +25,14 @@ class HadithBook {
   });
 
   factory HadithBook.fromJson(Map<String, dynamic> json) => HadithBook(
-        title: json['title'] as String,
-        introduction: HadithIntro.fromJson(
-          json['introduction'] as Map<String, dynamic>,
-        ),
-        hadiths: (json['hadiths'] as List)
-            .map((e) => Hadith.fromJson(e as Map<String, dynamic>))
-            .toList(),
-      );
+    title: json['title'] as String,
+    introduction: HadithIntro.fromJson(
+      json['introduction'] as Map<String, dynamic>,
+    ),
+    hadiths: (json['hadiths'] as List)
+        .map((e) => Hadith.fromJson(e as Map<String, dynamic>))
+        .toList(),
+  );
 }
 
 class HadithIntro {
@@ -39,9 +40,9 @@ class HadithIntro {
   final String bangla;
   const HadithIntro({required this.english, required this.bangla});
   factory HadithIntro.fromJson(Map<String, dynamic> json) => HadithIntro(
-        english: json['english'] as String,
-        bangla: json['bangla'] as String,
-      );
+    english: json['english'] as String,
+    bangla: json['bangla'] as String,
+  );
 }
 
 class Hadith {
@@ -56,16 +57,15 @@ class Hadith {
     required this.english,
   });
   factory Hadith.fromJson(Map<String, dynamic> json) => Hadith(
-        id: json['id'] as int,
-        arabic: json['arabic'] as String,
-        bangla: json['bangla'] as String,
-        english: json['english'] as String,
-      );
+    id: json['id'] as int,
+    arabic: json['arabic'] as String,
+    bangla: json['bangla'] as String,
+    english: json['english'] as String,
+  );
 }
 
 class HadithAnNawawiView extends StatefulWidget {
   const HadithAnNawawiView({super.key});
-
   @override
   State<HadithAnNawawiView> createState() => _HadithScreenState();
 }
@@ -74,9 +74,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
     with TickerProviderStateMixin {
   HadithBook? _book;
   bool _loading = true;
-
-  // UI state
-  bool _isBangla = false; // false = English
+  bool _isBangla = false;
   int _currentIndex = -1; // -1 = intro page
 
   late final PageController _pageController;
@@ -99,8 +97,9 @@ class _HadithScreenState extends State<HadithAnNawawiView>
   }
 
   Future<void> _loadData() async {
-    final raw = await rootBundle
-        .loadString('assets/json/forty_hadith_of_an_nawawi.json');
+    final raw = await rootBundle.loadString(
+      'assets/json/forty_hadith_of_an_nawawi.json',
+    );
     final book = HadithBook.fromJson(json.decode(raw) as Map<String, dynamic>);
     if (mounted) {
       setState(() {
@@ -119,8 +118,6 @@ class _HadithScreenState extends State<HadithAnNawawiView>
     _jumpController.dispose();
     super.dispose();
   }
-
-  // ── Theming helpers ────────────────────────────────────────────────────────
 
   bool get _isDark => Theme.of(context).brightness == Brightness.dark;
   ColorScheme get _scheme => Theme.of(context).colorScheme;
@@ -200,10 +197,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
             ),
           ),
           const SizedBox(height: 16),
-          CircularProgressIndicator(
-            color: MyColors.secondary,
-            strokeWidth: 2,
-          ),
+          CircularProgressIndicator(color: MyColors.secondary, strokeWidth: 2),
         ],
       ),
     );
@@ -211,12 +205,10 @@ class _HadithScreenState extends State<HadithAnNawawiView>
 
   Widget _buildMain() {
     final book = _book!;
-
     return Stack(
       children: [
         // Background decorative mesh
         _BackgroundMesh(isDark: _isDark),
-
         // Main paged content
         Column(
           children: [
@@ -259,19 +251,6 @@ class _HadithScreenState extends State<HadithAnNawawiView>
             _buildBottomNav(book),
           ],
         ),
-
-        // Top-right controls
-        Positioned(
-          top: MediaQuery.of(context).padding.top + 8,
-          right: 16,
-          child: _buildControls(),
-        ),
-        Positioned(
-          top: MediaQuery.of(context).padding.top + 8,
-          left: 16,
-          child: _buildBackButton(),
-        ),
-
       ],
     );
   }
@@ -286,21 +265,16 @@ class _HadithScreenState extends State<HadithAnNawawiView>
 
     return AnimatedBuilder(
       animation: _headerAnim,
-      builder: (_, child) => Opacity(
-        opacity: _headerAnim.value,
-        child: child,
-      ),
+      builder: (_, child) => Opacity(opacity: _headerAnim.value, child: child),
       child: Container(
-        padding: EdgeInsets.only(
-          top: topPad + 12,
-          bottom: 14,
-          left: 72, // leave space for back button
-          right: 72, // leave space for controls
-        ),
+        padding: EdgeInsets.only(top: topPad, bottom: 5, right: 5),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: _isDark
-                ? [MyColors.darkScaffold, MyColors.darkSurface.withOpacity(0.95)]
+                ? [
+                    MyColors.darkScaffold,
+                    MyColors.darkSurface.withOpacity(0.95),
+                  ]
                 : [MyColors.primary, MyColors.primaryLight],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
@@ -313,52 +287,64 @@ class _HadithScreenState extends State<HadithAnNawawiView>
             ),
           ],
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Row(
           children: [
-            Text(
-              'الأربعون النووية',
-              style: GoogleFonts.amiri(
-                fontSize: 22,
-                color: Colors.white.withOpacity(0.9),
-                fontWeight: FontWeight.bold,
-                letterSpacing: 0.5,
-              ),
-            ),
-            const SizedBox(height: 2),
-            Row(
-              children: [
-                Container(
-                  width: 3,
-                  height: 16,
-                  decoration: BoxDecoration(
-                    color: MyColors.secondaryLight,
-                    borderRadius: BorderRadius.circular(2),
-                  ),
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  label,
-                  style: GoogleFonts.manrope(
-                    fontSize: 13,
-                    color: Colors.white.withOpacity(0.75),
-                    fontWeight: FontWeight.w600,
-                    letterSpacing: 0.3,
-                  ),
-                ),
-                const Spacer(),
-                if (_currentIndex >= 0) ...[
+            // backbutton
+            _buildBackButton(),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                   Text(
-                    '${_currentIndex + 1} / ${book.hadiths.length}',
-                    style: GoogleFonts.manrope(
-                      fontSize: 11,
-                      color: Colors.white.withOpacity(0.55),
-                      fontWeight: FontWeight.w500,
+                    '40 Hadith of An-Nawawi',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: GoogleFonts.amiri(
+                      fontSize: 22,
+                      color: Colors.white.withOpacity(0.9),
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 0.5,
                     ),
                   ),
+                  Row(
+                    children: [
+                      Container(
+                        width: 3,
+                        height: 16,
+                        decoration: BoxDecoration(
+                          color: MyColors.secondaryLight,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Text(
+                        label,
+                        style: GoogleFonts.manrope(
+                          fontSize: 13,
+                          color: Colors.white.withOpacity(0.75),
+                          fontWeight: FontWeight.w600,
+                          letterSpacing: 0.3,
+                        ),
+                      ),
+                      const Spacer(),
+                      if (_currentIndex >= 0) ...[
+                        Text(
+                          '${_currentIndex + 1} / ${book.hadiths.length}',
+                          style: GoogleFonts.manrope(
+                            fontSize: 11,
+                            color: Colors.white.withOpacity(0.55),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(width: 12.h),
+                      ],
+                    ],
+                  ),
                 ],
-              ],
+              ),
             ),
+            // Top-right controls
+            _buildControls(),
           ],
         ),
       ),
@@ -394,10 +380,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
               ),
             ),
             padding: const EdgeInsets.all(9),
-            child: Image.asset(
-              MyIcons.searchIcon,
-              color: Colors.white,
-            ),
+            child: Image.asset(MyIcons.searchIcon, color: Colors.white),
           ),
         ),
       ],
@@ -405,25 +388,9 @@ class _HadithScreenState extends State<HadithAnNawawiView>
   }
 
   Widget _buildBackButton() {
-    return GestureDetector(
-      onTap: () => Navigator.of(context).maybePop(),
-      child: Container(
-        width: 38,
-        height: 38,
-        decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.15),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: Colors.white.withOpacity(0.2),
-            width: 1,
-          ),
-        ),
-        child: const Icon(
-          Icons.arrow_back_ios_new,
-          color: Colors.white,
-          size: 18,
-        ),
-      ),
+    return IconButton(
+      onPressed: () => Navigator.of(context).maybePop(),
+      icon: const Icon(Icons.arrow_back_ios_new, color: Colors.white),
     );
   }
 
@@ -439,18 +406,13 @@ class _HadithScreenState extends State<HadithAnNawawiView>
         left: 20,
         right: 20,
         top: 12,
-        bottom: MediaQuery.of(context).padding.bottom + 12,
+        bottom: MediaQuery.of(context).padding.bottom,
       ),
       decoration: BoxDecoration(
         color: _isDark
             ? MyColors.darkCard.withOpacity(0.95)
             : MyColors.cardFill.withOpacity(0.97),
-        border: Border(
-          top: BorderSide(
-            color: _divider,
-            width: 0.8,
-          ),
-        ),
+        border: Border(top: BorderSide(color: _divider, width: 0.8)),
         boxShadow: [
           BoxShadow(
             color: MyColors.primary.withOpacity(_isDark ? 0.30 : 0.08),
@@ -485,21 +447,22 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                       shape: BoxShape.circle,
                       gradient: _currentIndex == -1
                           ? const LinearGradient(
-                              colors: [MyColors.secondary, MyColors.primaryLight],
+                              colors: [
+                                MyColors.secondary,
+                                MyColors.primaryLight,
+                              ],
                             )
                           : null,
                       color: _currentIndex == -1
                           ? null
                           : (_isDark
-                              ? MyColors.darkSurface
-                              : MyColors.divider.withOpacity(0.5)),
+                                ? MyColors.darkSurface
+                                : MyColors.divider.withOpacity(0.5)),
                     ),
                     child: Icon(
                       Icons.menu_book_rounded,
                       size: 18,
-                      color: _currentIndex == -1
-                          ? Colors.white
-                          : _textHint,
+                      color: _currentIndex == -1 ? Colors.white : _textHint,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -507,7 +470,9 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                     _isBangla ? 'ভূমিকা' : 'Intro',
                     style: GoogleFonts.manrope(
                       fontSize: 10,
-                      color: _currentIndex == -1 ? MyColors.secondary : _textHint,
+                      color: _currentIndex == -1
+                          ? MyColors.secondary
+                          : _textHint,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -554,8 +519,9 @@ class _IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final text =
-        isBangla ? book.introduction.bangla : book.introduction.english;
+    final text = isBangla
+        ? book.introduction.bangla
+        : book.introduction.english;
 
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
@@ -567,7 +533,11 @@ class _IntroPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [MyColors.primary, MyColors.primaryLight, MyColors.secondary],
+                colors: [
+                  MyColors.primary,
+                  MyColors.primaryLight,
+                  MyColors.secondary,
+                ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -749,48 +719,6 @@ class _HadithPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Number badge
-          Row(
-            children: [
-              _HadithNumberBadge(number: hadith.id, isDark: isDark),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      isBangla ? 'হাদিস নং' : 'Hadith No.',
-                      style: GoogleFonts.manrope(
-                        fontSize: 11,
-                        color: MyColors.secondary,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: 1.0,
-                      ),
-                    ),
-                    LinearProgressIndicator(
-                      value: hadith.id / totalCount,
-                      backgroundColor: divider,
-                      color: MyColors.secondary,
-                      minHeight: 3,
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      '${hadith.id} of $totalCount',
-                      style: GoogleFonts.manrope(
-                        fontSize: 10,
-                        color: textHint,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-
-          const SizedBox(height: 20),
-
           // Arabic text card — the star of the show
           _ArabicCard(arabic: hadith.arabic, isDark: isDark, cardBg: cardBg),
 
@@ -863,18 +791,12 @@ class _ArabicCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         gradient: isDark
             ? LinearGradient(
-                colors: [
-                  const Color(0xFF1D1238),
-                  const Color(0xFF261A45),
-                ],
+                colors: [const Color(0xFF1D1238), const Color(0xFF261A45)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               )
             : LinearGradient(
-                colors: [
-                  MyColors.primary,
-                  const Color(0xFF2D1568),
-                ],
+                colors: [MyColors.primary, const Color(0xFF2D1568)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -1040,7 +962,9 @@ class _JumpSheetState extends State<_JumpSheet> {
         index: e.key,
         arabic: h.arabic.split('\n').first,
         label: '${widget.isBangla ? 'হাদিস' : 'Hadith'} ${h.id}',
-        sub: widget.isBangla ? h.bangla.split('\n').first : h.english.split('\n').first,
+        sub: widget.isBangla
+            ? h.bangla.split('\n').first
+            : h.english.split('\n').first,
       );
     }).toList();
     return [intro, ...hadiths];
@@ -1060,7 +984,8 @@ class _JumpSheetState extends State<_JumpSheet> {
 
   @override
   Widget build(BuildContext context) {
-    final bottomPad = MediaQuery.of(context).viewInsets.bottom +
+    final bottomPad =
+        MediaQuery.of(context).viewInsets.bottom +
         MediaQuery.of(context).padding.bottom;
 
     return Container(
@@ -1069,10 +994,7 @@ class _JumpSheetState extends State<_JumpSheet> {
         color: widget.cardBg,
         borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
         border: Border(
-          top: BorderSide(
-            color: MyColors.secondary.withOpacity(0.2),
-            width: 1,
-          ),
+          top: BorderSide(color: MyColors.secondary.withOpacity(0.2), width: 1),
         ),
         boxShadow: [
           BoxShadow(
@@ -1145,10 +1067,7 @@ class _JumpSheetState extends State<_JumpSheet> {
               controller: widget.controller,
               autofocus: true,
               onChanged: (v) => setState(() => _query = v),
-              style: GoogleFonts.manrope(
-                fontSize: 14,
-                color: widget.textMain,
-              ),
+              style: GoogleFonts.manrope(fontSize: 14, color: widget.textMain),
               decoration: InputDecoration(
                 hintText: widget.isBangla
                     ? 'নম্বর বা কীওয়ার্ড দিয়ে খুঁজুন...'
@@ -1272,8 +1191,11 @@ class _JumpListTile extends StatelessWidget {
               ),
               alignment: Alignment.center,
               child: isIntro
-                  ? Icon(Icons.menu_book_rounded,
-                      size: 16, color: MyColors.secondary)
+                  ? Icon(
+                      Icons.menu_book_rounded,
+                      size: 16,
+                      color: MyColors.secondary,
+                    )
                   : Text(
                       '${item.index + 1}',
                       style: GoogleFonts.sora(
@@ -1346,16 +1268,13 @@ class _PillToggle extends StatelessWidget {
     return GestureDetector(
       onTap: () => onChanged(!isRight),
       child: Container(
-        height: 38,
+        height: 30.h,
         decoration: BoxDecoration(
           color: isDark
               ? MyColors.darkCard.withOpacity(0.9)
               : Colors.white.withOpacity(0.15),
           borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: Colors.white.withOpacity(0.2),
-            width: 1,
-          ),
+          border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
         ),
         child: Padding(
           padding: const EdgeInsets.all(3),
@@ -1393,59 +1312,6 @@ class _PillOption extends StatelessWidget {
           fontWeight: FontWeight.w700,
           color: active ? MyColors.primary : Colors.white.withOpacity(0.7),
         ),
-      ),
-    );
-  }
-}
-
-/// Hadith number badge
-class _HadithNumberBadge extends StatelessWidget {
-  final int number;
-  final bool isDark;
-  const _HadithNumberBadge({required this.number, required this.isDark});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 60,
-      height: 60,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        gradient: const LinearGradient(
-          colors: [MyColors.secondary, MyColors.primaryLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: MyColors.secondary.withOpacity(0.3),
-            blurRadius: 14,
-            offset: const Offset(0, 4),
-          ),
-        ],
-      ),
-      alignment: Alignment.center,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            '$number',
-            style: GoogleFonts.sora(
-              fontSize: 20,
-              fontWeight: FontWeight.w800,
-              color: Colors.white,
-              height: 1.1,
-            ),
-          ),
-          Text(
-            '#',
-            style: GoogleFonts.manrope(
-              fontSize: 9,
-              fontWeight: FontWeight.w500,
-              color: Colors.white.withOpacity(0.6),
-            ),
-          ),
-        ],
       ),
     );
   }
@@ -1576,7 +1442,9 @@ class _NavButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = enabled ? MyColors.secondary : (isDark ? MyColors.darkTextTertiary : MyColors.textTertiary);
+    final color = enabled
+        ? MyColors.secondary
+        : (isDark ? MyColors.darkTextTertiary : MyColors.textTertiary);
 
     return GestureDetector(
       onTap: onTap,
@@ -1671,8 +1539,10 @@ class _OrnamentPainter extends CustomPainter {
         center.dx + math.cos(angle) * radius,
         center.dy + math.sin(angle) * radius,
       );
-      if (i == 0) path.moveTo(point.dx, point.dy);
-      else path.lineTo(point.dx, point.dy);
+      if (i == 0)
+        path.moveTo(point.dx, point.dy);
+      else
+        path.lineTo(point.dx, point.dy);
     }
     path.close();
     canvas.drawPath(path, paint);
@@ -1691,9 +1561,7 @@ class _BackgroundMesh extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned.fill(
       child: IgnorePointer(
-        child: CustomPaint(
-          painter: _MeshPainter(isDark: isDark),
-        ),
+        child: CustomPaint(painter: _MeshPainter(isDark: isDark)),
       ),
     );
   }
@@ -1705,11 +1573,12 @@ class _MeshPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = (isDark ? MyColors.primaryLight : MyColors.primary)
-          .withOpacity(isDark ? 0.04 : 0.03)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 0.5;
+    // final paint = Paint()
+    //   ..color = (isDark ? MyColors.primaryLight : MyColors.primary).withOpacity(
+    //     isDark ? 0.04 : 0.03,
+    //   )
+    //   ..style = PaintingStyle.stroke
+    //   ..strokeWidth = 0.5;
 
     const step = 48.0;
     for (double x = 0; x < size.width; x += step) {
@@ -1733,8 +1602,10 @@ class _MeshPainter extends CustomPainter {
         center.dx + math.cos(angle) * r,
         center.dy + math.sin(angle) * r,
       );
-      if (i == 0) path.moveTo(point.dx, point.dy);
-      else path.lineTo(point.dx, point.dy);
+      if (i == 0)
+        path.moveTo(point.dx, point.dy);
+      else
+        path.lineTo(point.dx, point.dy);
     }
     path.close();
     canvas.drawPath(path, paint);

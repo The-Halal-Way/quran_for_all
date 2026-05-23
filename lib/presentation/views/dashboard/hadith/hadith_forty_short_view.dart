@@ -59,12 +59,12 @@ class ShortHadith {
   });
 
   factory ShortHadith.fromJson(Map<String, dynamic> json) => ShortHadith(
-        id: json['id'] as int,
-        title: json['title'] as String,
-        arabic: json['arabic'] as String,
-        english: json['english'] as String,
-        bangla: json['bangla'] as String,
-      );
+    id: json['id'] as int,
+    title: json['title'] as String,
+    arabic: json['arabic'] as String,
+    english: json['english'] as String,
+    bangla: json['bangla'] as String,
+  );
 
   /// First line is the headline; rest are bullet points
   String headlineOf(bool isBangla) {
@@ -120,7 +120,9 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
   }
 
   Future<void> _loadData() async {
-    final raw = await rootBundle.loadString('assets/json/forty_short_hadith.json');
+    final raw = await rootBundle.loadString(
+      'assets/json/forty_short_hadith.json',
+    );
     final book = ShortHadithBook.fromJson(
       json.decode(raw) as Map<String, dynamic>,
     );
@@ -198,21 +200,21 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
   }
 
   Widget _buildSplash() => Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            _GeomStar(color: MyColors.tertiary, size: 56),
-            const SizedBox(height: 20),
-            Text(
-              'Loading...',
-              style: GoogleFonts.manrope(
-                fontSize: 14,
-                color: MyColors.darkTextSecondary,
-              ),
-            ),
-          ],
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        _GeomStar(color: MyColors.tertiary, size: 56),
+        const SizedBox(height: 20),
+        Text(
+          'Loading...',
+          style: GoogleFonts.manrope(
+            fontSize: 14,
+            color: MyColors.darkTextSecondary,
+          ),
         ),
-      );
+      ],
+    ),
+  );
 
   Widget _buildBody() {
     final book = _book!;
@@ -222,7 +224,6 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
       child: Stack(
         children: [
           _TileBackground(isDark: _isDark),
-
           Column(
             children: [
               _buildHeader(book),
@@ -248,19 +249,6 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
               _buildBottomBar(book),
             ],
           ),
-
-          // Controls overlay
-          Positioned(
-            top: MediaQuery.of(context).padding.top + 10,
-            right: 16,
-            child: _buildControls(),
-          ),
-          Positioned(
-            top: MediaQuery.of(context).padding.top + 10,
-            left: 16,
-            child: _buildBackButton(),
-          ),
-
         ],
       ),
     );
@@ -270,86 +258,68 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
 
   Widget _buildHeader(ShortHadithBook book) {
     final topPad = MediaQuery.of(context).padding.top;
-    final hadith = book.hadiths[_currentIndex];
-
     return Container(
-      padding: EdgeInsets.only(
-        top: topPad + 14,
-        bottom: 14,
-        left: 68, // leave space for back button
-        right: 88,
-      ),
+      padding: EdgeInsets.only(top: topPad, bottom: 5, right: 5),
       decoration: BoxDecoration(
-        color: _isDark ? MyColors.darkCard.withOpacity(0.98) : MyColors.cardFill,
-        border: Border(
-          bottom: BorderSide(color: _dividerClr, width: 0.8),
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: MyColors.primary.withOpacity(_isDark ? 0.3 : 0.07),
-            blurRadius: 12,
-            offset: const Offset(0, 3),
-          ),
-        ],
-      ),
-      child: Row(
-        children: [
-          // Teal accent blob
-          Container(
-            width: 42,
-            height: 42,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              gradient: const LinearGradient(
-                colors: [MyColors.tertiary, MyColors.tertiaryLight],
+        gradient: _isDark
+            ? const LinearGradient(
+                colors: [Color(0xFF251B52), Color(0xFF0A5C54)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              )
+            : const LinearGradient(
+                colors: [Color(0xFF05645B), Color(0xFF8A2B67)],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
-              boxShadow: [
-                BoxShadow(
-                  color: MyColors.tertiary.withOpacity(0.35),
-                  blurRadius: 10,
-                  offset: const Offset(0, 3),
-                ),
-              ],
-            ),
-            alignment: Alignment.center,
-            child: Text(
-              '${hadith.id}',
-              style: GoogleFonts.sora(
-                fontSize: 16,
-                fontWeight: FontWeight.w800,
-                color: Colors.white,
-              ),
-            ),
+        boxShadow: [
+          BoxShadow(
+            color: MyColors.primary.withOpacity(_isDark ? 0.38 : 0.16),
+            blurRadius: 18,
+            offset: const Offset(0, 5),
           ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  _isBangla ? book.titleBangla : book.titleEnglish,
-                  style: GoogleFonts.sora(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
-                    color: _textMain,
-                    letterSpacing: -0.1,
-                  ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
+        ],
+      ),
+      child: Column(
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              _buildBackButton(),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      _isBangla ? book.titleBangla : book.titleEnglish,
+                      style: GoogleFonts.sora(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                        letterSpacing: -0.1,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      _isBangla
+                          ? book.compiledByBangla
+                          : book.compiledByEnglish,
+                      style: GoogleFonts.manrope(
+                        fontSize: 10,
+                        color: Colors.white.withOpacity(0.76),
+                        fontWeight: FontWeight.w500,
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 2),
-                Text(
-                  _isBangla ? book.compiledByBangla : book.compiledByEnglish,
-                  style: GoogleFonts.manrope(
-                    fontSize: 10,
-                    color: _textHint,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
-            ),
+              ),
+              const SizedBox(width: 8),
+              _buildControls(),
+            ],
           ),
         ],
       ),
@@ -362,18 +332,42 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
     final progress = (_currentIndex + 1) / book.hadiths.length;
     return AnimatedContainer(
       duration: const Duration(milliseconds: 250),
-      height: 3,
-      color: _isDark ? MyColors.darkSurface : MyColors.divider.withOpacity(0.5),
-      child: FractionallySizedBox(
-        alignment: Alignment.centerLeft,
-        widthFactor: progress,
-        child: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [MyColors.tertiary, MyColors.secondaryLight],
+      padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
+      color: _isDark ? MyColors.darkSurface : MyColors.cardFill,
+      child: Row(
+        children: [
+          Expanded(
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(999),
+              child: Container(
+                height: 4,
+                color: _isDark
+                    ? Colors.white.withOpacity(0.1)
+                    : MyColors.divider.withOpacity(0.55),
+                child: FractionallySizedBox(
+                  alignment: Alignment.centerLeft,
+                  widthFactor: progress,
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [MyColors.tertiary, MyColors.secondaryLight],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ),
           ),
-        ),
+          const SizedBox(width: 10),
+          Text(
+            '${_currentIndex + 1}/${book.hadiths.length}',
+            style: GoogleFonts.manrope(
+              fontSize: 11,
+              fontWeight: FontWeight.w700,
+              color: _textHint,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -381,75 +375,39 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
   // ── Controls ───────────────────────────────────────────────────────────────
 
   Widget _buildControls() => Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          _LangToggle(
-            isBangla: _isBangla,
-            isDark: _isDark,
-            onChanged: (v) => setState(() => _isBangla = v),
-          ),
-          const SizedBox(width: 8),
-          GestureDetector(
-            onTap: _showJumpSheet,
-            child: Container(
-              width: 36,
-              height: 36,
-              decoration: BoxDecoration(
-                color: _isDark ? MyColors.darkCard : MyColors.cardFill,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                  color: _isDark
-                      ? Colors.white.withOpacity(0.1)
-                      : MyColors.divider,
-                  width: 0.8,
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: MyColors.primary.withOpacity(0.08),
-                    blurRadius: 8,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-              ),
-              padding: const EdgeInsets.all(8),
-              child: Image.asset(
-                MyIcons.searchIcon,
-                color: _textMain,
-              ),
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      _LangToggle(
+        isBangla: _isBangla,
+        isDark: _isDark,
+        onChanged: (v) => setState(() => _isBangla = v),
+      ),
+      const SizedBox(width: 8),
+      GestureDetector(
+        onTap: _showJumpSheet,
+        child: Container(
+          width: 36,
+          height: 36,
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.16),
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(
+              color: Colors.white.withOpacity(0.2),
+              width: 0.8,
             ),
           ),
-        ],
-      );
-
-  Widget _buildBackButton() {
-    return GestureDetector(
-      onTap: () => Navigator.of(context).maybePop(),
-      child: Container(
-        width: 36,
-        height: 36,
-        decoration: BoxDecoration(
-          color: _isDark ? MyColors.darkCard : MyColors.cardFill,
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(
-            color: _isDark
-                ? Colors.white.withOpacity(0.1)
-                : MyColors.divider,
-            width: 0.8,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: MyColors.primary.withOpacity(0.08),
-              blurRadius: 8,
-              offset: const Offset(0, 2),
-            ),
-          ],
-        ),
-        child: Icon(
-          Icons.arrow_back_ios_new,
-          size: 17,
-          color: _textMain,
+          padding: const EdgeInsets.all(8),
+          child: Image.asset(MyIcons.searchIcon, color: Colors.white),
         ),
       ),
+    ],
+  );
+
+  Widget _buildBackButton() {
+    return IconButton(
+      onPressed: () => Navigator.of(context).maybePop(),
+      icon: const Icon(Icons.arrow_back_ios_new, size: 18, color: Colors.white),
+      tooltip: 'Back',
     );
   }
 
@@ -468,10 +426,10 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
         bottom: MediaQuery.of(context).padding.bottom + 10,
       ),
       decoration: BoxDecoration(
-        color: _isDark ? MyColors.darkCard.withOpacity(0.97) : MyColors.cardFill,
-        border: Border(
-          top: BorderSide(color: _dividerClr, width: 0.8),
-        ),
+        color: _isDark
+            ? MyColors.darkCard.withOpacity(0.97)
+            : MyColors.cardFill,
+        border: Border(top: BorderSide(color: _dividerClr, width: 0.8)),
       ),
       child: Row(
         children: [
@@ -486,11 +444,13 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
           ),
 
           // Dot indicators (max 10 visible, scrolling window)
-          Expanded(child: _DotRow(
-            total: book.hadiths.length,
-            current: _currentIndex,
-            isDark: _isDark,
-          )),
+          Expanded(
+            child: _DotRow(
+              total: book.hadiths.length,
+              current: _currentIndex,
+              isDark: _isDark,
+            ),
+          ),
 
           _BarNavBtn(
             icon: Icons.arrow_forward_ios_rounded,
@@ -533,14 +493,13 @@ class _ShortHadithPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final headline = hadith.headlineOf(isBangla);
-    final bullets  = hadith.bulletsOf(isBangla);
+    final bullets = hadith.bulletsOf(isBangla);
 
     return SingleChildScrollView(
       padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-
           // ── Arabic memorization card ───────────────────────────────────
           _MemorizationCard(arabic: hadith.arabic, isDark: isDark),
 
@@ -614,19 +573,13 @@ class _MemorizationCard extends StatelessWidget {
           Positioned(
             right: 12,
             top: 12,
-            child: _GeomStar(
-              color: Colors.white.withOpacity(0.05),
-              size: 80,
-            ),
+            child: _GeomStar(color: Colors.white.withOpacity(0.05), size: 80),
           ),
           // Decorative star bottom-left
           Positioned(
             left: -8,
             bottom: -8,
-            child: _GeomStar(
-              color: Colors.white.withOpacity(0.03),
-              size: 50,
-            ),
+            child: _GeomStar(color: Colors.white.withOpacity(0.03), size: 50),
           ),
 
           Padding(
@@ -748,7 +701,7 @@ class _HeadlineCard extends StatelessWidget {
         ],
       ),
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           // Left fuchsia bar
           Container(
@@ -830,10 +783,7 @@ class _LessonsCard extends StatelessWidget {
           Row(
             children: [
               Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 8,
-                  vertical: 3,
-                ),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
                   color: MyColors.tertiary.withOpacity(0.12),
                   borderRadius: BorderRadius.circular(6),
@@ -967,7 +917,8 @@ class _JumpSheetState extends State<_JumpSheet> {
 
   @override
   Widget build(BuildContext context) {
-    final bottomPad = MediaQuery.of(context).viewInsets.bottom +
+    final bottomPad =
+        MediaQuery.of(context).viewInsets.bottom +
         MediaQuery.of(context).padding.bottom;
 
     return Container(
@@ -976,10 +927,7 @@ class _JumpSheetState extends State<_JumpSheet> {
         color: widget.cardBg,
         borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
         border: Border(
-          top: BorderSide(
-            color: MyColors.tertiary.withOpacity(0.2),
-            width: 1,
-          ),
+          top: BorderSide(color: MyColors.tertiary.withOpacity(0.2), width: 1),
         ),
         boxShadow: [
           BoxShadow(
@@ -1052,10 +1000,7 @@ class _JumpSheetState extends State<_JumpSheet> {
               controller: widget.controller,
               autofocus: true,
               onChanged: (v) => setState(() => _query = v),
-              style: GoogleFonts.manrope(
-                fontSize: 14,
-                color: widget.textMain,
-              ),
+              style: GoogleFonts.manrope(fontSize: 14, color: widget.textMain),
               decoration: InputDecoration(
                 hintText: widget.isBangla
                     ? 'নম্বর বা কীওয়ার্ড দিয়ে খুঁজুন...'
@@ -1097,10 +1042,7 @@ class _JumpSheetState extends State<_JumpSheet> {
           // List
           Expanded(
             child: ListView.builder(
-              padding: EdgeInsets.only(
-                top: 8,
-                bottom: bottomPad + 16,
-              ),
+              padding: EdgeInsets.only(top: 8, bottom: bottomPad + 16),
               itemCount: _filtered.length,
               itemBuilder: (_, i) {
                 final h = _filtered[i];
@@ -1205,11 +1147,7 @@ class _JumpListTile extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 8),
-            Icon(
-              Icons.arrow_forward_ios_rounded,
-              size: 12,
-              color: textHint,
-            ),
+            Icon(Icons.arrow_forward_ios_rounded, size: 12, color: textHint),
           ],
         ),
       ),
@@ -1254,9 +1192,7 @@ class _DotRow extends StatelessWidget {
             borderRadius: BorderRadius.circular(3),
             color: isActive
                 ? MyColors.tertiary
-                : (isDark
-                    ? Colors.white.withOpacity(0.15)
-                    : MyColors.divider),
+                : (isDark ? Colors.white.withOpacity(0.15) : MyColors.divider),
           ),
         );
       }),
@@ -1285,21 +1221,9 @@ class _LangToggle extends StatelessWidget {
       child: Container(
         height: 36,
         decoration: BoxDecoration(
-          color: isDark ? MyColors.darkCard : MyColors.cardFill,
+          color: Colors.white.withOpacity(0.16),
           borderRadius: BorderRadius.circular(10),
-          border: Border.all(
-            color: isDark
-                ? Colors.white.withOpacity(0.1)
-                : MyColors.divider,
-            width: 0.8,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: MyColors.primary.withOpacity(0.08),
-              blurRadius: 8,
-              offset: const Offset(0, 2),
-            ),
-          ],
+          border: Border.all(color: Colors.white.withOpacity(0.2), width: 0.8),
         ),
         padding: const EdgeInsets.all(3),
         child: Row(
@@ -1337,9 +1261,7 @@ class _LangOption extends StatelessWidget {
         style: GoogleFonts.manrope(
           fontSize: 11,
           fontWeight: FontWeight.w700,
-          color: active
-              ? Colors.white
-              : (isDark ? MyColors.darkTextTertiary : MyColors.textTertiary),
+          color: active ? Colors.white : Colors.white.withOpacity(0.82),
         ),
       ),
     );
@@ -1402,9 +1324,9 @@ class _GeomStar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => CustomPaint(
-        size: Size(size, size),
-        painter: _StarPainter(color: color),
-      );
+    size: Size(size, size),
+    painter: _StarPainter(color: color),
+  );
 }
 
 class _StarPainter extends CustomPainter {
@@ -1421,7 +1343,7 @@ class _StarPainter extends CustomPainter {
 
     final cx = size.width / 2;
     final cy = size.height / 2;
-    final r  = size.width / 2;
+    final r = size.width / 2;
 
     // Outer hexagon
     _polygon(canvas, paint, cx, cy, r * 0.92, 6, -math.pi / 2);
@@ -1440,7 +1362,15 @@ class _StarPainter extends CustomPainter {
     canvas.drawCircle(Offset(cx, cy), r * 0.12, paint);
   }
 
-  void _polygon(Canvas c, Paint p, double cx, double cy, double r, int n, double start) {
+  void _polygon(
+    Canvas c,
+    Paint p,
+    double cx,
+    double cy,
+    double r,
+    int n,
+    double start,
+  ) {
     final path = Path();
     for (int i = 0; i <= n; i++) {
       final a = start + i * math.pi * 2 / n;
@@ -1462,10 +1392,10 @@ class _TileBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Positioned.fill(
-        child: IgnorePointer(
-          child: CustomPaint(painter: _TilePainter(isDark: isDark)),
-        ),
-      );
+    child: IgnorePointer(
+      child: CustomPaint(painter: _TilePainter(isDark: isDark)),
+    ),
+  );
 }
 
 class _TilePainter extends CustomPainter {
@@ -1492,7 +1422,10 @@ class _TilePainter extends CustomPainter {
     final path = Path();
     for (int i = 0; i <= 6; i++) {
       final a = -math.pi / 2 + i * math.pi / 3;
-      final pt = Offset(center.dx + math.cos(a) * r, center.dy + math.sin(a) * r);
+      final pt = Offset(
+        center.dx + math.cos(a) * r,
+        center.dy + math.sin(a) * r,
+      );
       i == 0 ? path.moveTo(pt.dx, pt.dy) : path.lineTo(pt.dx, pt.dy);
     }
     path.close();

@@ -9,48 +9,15 @@ import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
+import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/presentation/views/compass/compass_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/daily_duah_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/powerful_duah_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
 import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
-
-// ─────────────────────────────────────────────────────────────────────────────
-// COLOR CONSTANTS  (mirrors MyColors.dart)
-// ─────────────────────────────────────────────────────────────────────────────
-
-class _C {
-  static const primary      = Color(0xFF1E0A3C);
-  static const primaryLight = Color(0xFF4B30A1);
-  static const secondary    = Color(0xFFD50057);
-  static const secondaryLight = Color(0xFFFF4081);
-  static const tertiary     = Color(0xFF00BFA5);
-  static const tertiaryLight = Color(0xFF64FFDA);
-
-  static const scaffold     = Color(0xFFF5F2FF);
-  static const cardFill     = Color(0xFFFFFFFF);
-  static const divider      = Color(0xFFD9D1E8);
-
-  static const textPrimary   = Color(0xFF120B24);
-  static const textSecondary = Color(0xFF4C425C);
-  static const textTertiary  = Color(0xFF7A7288);
-
-  static const darkScaffold  = Color(0xFF060118);
-  static const darkSurface   = Color(0xFF120A2B);
-  static const darkCard      = Color(0xFF261A45);
-  static const darkDivider   = Color(0xFF382E54);
-
-  static const darkTextPrimary   = Color(0xFFEDE7F6);
-  static const darkTextSecondary = Color(0xFFB39DDB);
-  static const darkTextTertiary  = Color(0xFF7E57C2);
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-// ENTRY
-// ─────────────────────────────────────────────────────────────────────────────
 
 class DashboardView extends StatefulWidget {
   const DashboardView({super.key});
@@ -168,17 +135,18 @@ class _DashboardViewState extends State<DashboardView> {
   bool get _isDark =>
       MediaQuery.of(context).platformBrightness == Brightness.dark;
 
-  Color get _scaffoldBg => _isDark ? _C.darkScaffold : _C.scaffold;
-  Color get _cardBg     => _isDark ? _C.darkCard     : _C.cardFill;
-  Color get _textMain   => _isDark ? _C.darkTextPrimary   : _C.textPrimary;
-  Color get _textSub    => _isDark ? _C.darkTextSecondary : _C.textSecondary;
-  Color get _textHint   => _isDark ? _C.darkTextTertiary  : _C.textTertiary;
-  Color get _divider    => _isDark ? _C.darkDivider       : _C.divider;
+  Color get _scaffoldBg => _isDark ? MyColors.darkScaffold : MyColors.scaffold;
+  Color get _cardBg => _isDark ? MyColors.darkCard : MyColors.cardFill;
+  Color get _textMain =>
+      _isDark ? MyColors.darkTextPrimary : MyColors.textPrimary;
+  Color get _textSub =>
+      _isDark ? MyColors.darkTextSecondary : MyColors.textSecondary;
+  Color get _textHint =>
+      _isDark ? MyColors.darkTextTertiary : MyColors.textTertiary;
+  Color get _divider => _isDark ? MyColors.darkDivider : MyColors.divider;
 
-  void _push(Widget page) => Navigator.push(
-        context,
-        MaterialPageRoute(builder: (_) => page),
-      );
+  void _push(Widget page) =>
+      Navigator.push(context, MaterialPageRoute(builder: (_) => page));
 
   @override
   Widget build(BuildContext context) {
@@ -189,9 +157,7 @@ class _DashboardViewState extends State<DashboardView> {
           // Subtle background tiling
           Positioned.fill(
             child: IgnorePointer(
-              child: CustomPaint(
-                painter: _BgPainter(isDark: _isDark),
-              ),
+              child: CustomPaint(painter: _BgPainter(isDark: _isDark)),
             ),
           ),
 
@@ -205,7 +171,11 @@ class _DashboardViewState extends State<DashboardView> {
                   const SizedBox(height: 20),
                   _buildContinueCards(),
                   const SizedBox(height: 24),
-                  _buildSectionLabel('Prayer Times', Icons.access_time_rounded, _C.secondary),
+                  _buildSectionLabel(
+                    'Prayer Times',
+                    Icons.access_time_rounded,
+                    MyColors.secondary,
+                  ),
                   const SizedBox(height: 10),
                   _buildPrayerCard(),
                   const SizedBox(height: 10),
@@ -214,19 +184,23 @@ class _DashboardViewState extends State<DashboardView> {
                       _ActionItem(
                         icon: Icons.access_time_filled_rounded,
                         label: 'Full Prayer View',
-                        color: _C.secondary,
+                        color: MyColors.secondary,
                         onTap: () => _push(const PrayerView()),
                       ),
                       _ActionItem(
                         icon: Icons.explore_rounded,
                         label: 'Qibla Compass',
-                        color: _C.primaryLight,
+                        color: MyColors.primaryLight,
                         onTap: () => _push(const CompassView()),
                       ),
                     ],
                   ),
                   const SizedBox(height: 24),
-                  _buildSectionLabel("Du'ā'", Icons.auto_awesome_rounded, _C.tertiary),
+                  _buildSectionLabel(
+                    "Du'ā'",
+                    Icons.auto_awesome_rounded,
+                    MyColors.tertiary,
+                  ),
                   const SizedBox(height: 10),
                   _buildSmallActionRow(
                     items: [
@@ -234,20 +208,24 @@ class _DashboardViewState extends State<DashboardView> {
                         icon: Icons.wb_twilight_rounded,
                         label: 'Daily Du\'ā\'',
                         sublabel: 'Morning & evening',
-                        color: _C.tertiary,
+                        color: MyColors.tertiary,
                         onTap: () => _push(const DailyDuahView()),
                       ),
                       _ActionItem(
                         icon: Icons.bolt_rounded,
                         label: 'Powerful Du\'ā\'',
                         sublabel: 'Curated supplications',
-                        color: _C.secondary,
+                        color: MyColors.secondary,
                         onTap: () => _push(const PowerfulDuahView()),
                       ),
                     ],
                   ),
                   const SizedBox(height: 24),
-                  _buildSectionLabel('Hadith', Icons.menu_book_rounded, _C.primaryLight),
+                  _buildSectionLabel(
+                    'Hadith',
+                    Icons.menu_book_rounded,
+                    MyColors.primaryLight,
+                  ),
                   const SizedBox(height: 10),
                   _buildHadithCards(),
                 ],
@@ -283,13 +261,13 @@ class _DashboardViewState extends State<DashboardView> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                _C.primary.withOpacity(0.08),
-                _C.primaryLight.withOpacity(0.04),
+                MyColors.primary.withOpacity(0.08),
+                MyColors.primaryLight.withOpacity(0.04),
               ],
             ),
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: _C.primaryLight.withOpacity(_isDark ? 0.12 : 0.1),
+              color: MyColors.primaryLight.withOpacity(_isDark ? 0.12 : 0.1),
               width: 0.8,
             ),
           ),
@@ -301,7 +279,7 @@ class _DashboardViewState extends State<DashboardView> {
                 height: 6,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: _C.secondary.withOpacity(0.7),
+                  color: MyColors.secondary.withOpacity(0.7),
                 ),
               ),
               const SizedBox(width: 10),
@@ -367,11 +345,13 @@ class _DashboardViewState extends State<DashboardView> {
             subtitle: 'Surah Al-Baqarah',
             detail: 'Ayah 255 · Āyat al-Kursī',
             arabicSnippet: 'ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ',
-            gradientColors: [_C.primary, _C.primaryLight],
-            glowColor: _C.primaryLight,
+            gradientColors: [MyColors.primary, MyColors.primaryLight],
+            glowColor: MyColors.primaryLight,
             icon: Icons.auto_stories_rounded,
             isDark: _isDark,
-            onTap: () {/* TODO */},
+            onTap: () {
+              /* TODO */
+            },
           ),
         ),
         const SizedBox(width: 10),
@@ -381,11 +361,13 @@ class _DashboardViewState extends State<DashboardView> {
             subtitle: 'Tajweed Basics',
             detail: 'Lesson 4 · Ghunnah',
             arabicSnippet: 'ن  ◌ّ  م',
-            gradientColors: [Color(0xFF005C4B), _C.tertiary],
-            glowColor: _C.tertiary,
+            gradientColors: [Color(0xFF005C4B), MyColors.tertiary],
+            glowColor: MyColors.tertiary,
             icon: Icons.school_rounded,
             isDark: _isDark,
-            onTap: () {/* TODO */},
+            onTap: () {
+              /* TODO */
+            },
           ),
         ),
       ],
@@ -422,10 +404,7 @@ class _DashboardViewState extends State<DashboardView> {
             height: 1,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [
-                  color.withOpacity(0.25),
-                  Colors.transparent,
-                ],
+                colors: [color.withOpacity(0.25), Colors.transparent],
               ),
             ),
           ),
@@ -442,12 +421,14 @@ class _DashboardViewState extends State<DashboardView> {
         color: _cardBg,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: _isDark ? Colors.white.withOpacity(0.06) : _divider.withOpacity(0.8),
+          color: _isDark
+              ? Colors.white.withOpacity(0.06)
+              : _divider.withOpacity(0.8),
           width: 0.8,
         ),
         boxShadow: [
           BoxShadow(
-            color: _C.primary.withOpacity(_isDark ? 0.12 : 0.05),
+            color: MyColors.primary.withOpacity(_isDark ? 0.12 : 0.05),
             blurRadius: 16,
             offset: const Offset(0, 4),
           ),
@@ -458,7 +439,7 @@ class _DashboardViewState extends State<DashboardView> {
               padding: EdgeInsets.all(32),
               child: Center(
                 child: CircularProgressIndicator(
-                  color: _C.secondary,
+                  color: MyColors.secondary,
                   strokeWidth: 2,
                 ),
               ),
@@ -471,8 +452,11 @@ class _DashboardViewState extends State<DashboardView> {
                 children: [
                   Row(
                     children: [
-                      Icon(Icons.error_outline_rounded,
-                          color: _C.secondary, size: 18),
+                      Icon(
+                        Icons.error_outline_rounded,
+                        color: MyColors.secondary,
+                        size: 18,
+                      ),
                       const SizedBox(width: 8),
                       Expanded(
                         child: Text(
@@ -490,12 +474,14 @@ class _DashboardViewState extends State<DashboardView> {
                     onTap: _loadPrayerTimes,
                     child: Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 8),
+                        horizontal: 16,
+                        vertical: 8,
+                      ),
                       decoration: BoxDecoration(
-                        color: _C.secondary.withOpacity(0.1),
+                        color: MyColors.secondary.withOpacity(0.1),
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(
-                          color: _C.secondary.withOpacity(0.25),
+                          color: MyColors.secondary.withOpacity(0.25),
                         ),
                       ),
                       child: Text(
@@ -503,7 +489,7 @@ class _DashboardViewState extends State<DashboardView> {
                         style: GoogleFonts.manrope(
                           fontSize: 13,
                           fontWeight: FontWeight.w700,
-                          color: _C.secondary,
+                          color: MyColors.secondary,
                         ),
                       ),
                     ),
@@ -519,7 +505,7 @@ class _DashboardViewState extends State<DashboardView> {
                     padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
-                        colors: [_C.secondary, _C.primaryLight],
+                        colors: [MyColors.secondary, MyColors.primaryLight],
                         begin: Alignment.centerLeft,
                         end: Alignment.centerRight,
                       ),
@@ -581,7 +567,9 @@ class _DashboardViewState extends State<DashboardView> {
                 // Prayer rows
                 Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 16, vertical: 10),
+                    horizontal: 16,
+                    vertical: 10,
+                  ),
                   child: Column(
                     children: (_prayerTimes ?? {}).entries.map((entry) {
                       final isNext = entry.key == _nextPrayer;
@@ -605,13 +593,20 @@ class _DashboardViewState extends State<DashboardView> {
 
   IconData _getPrayerIcon(String prayer) {
     switch (prayer) {
-      case 'Fajr':    return Icons.wb_twilight_rounded;
-      case 'Sunrise': return Icons.wb_sunny_rounded;
-      case 'Dhuhr':   return Icons.light_mode_rounded;
-      case 'Asr':     return Icons.cloud_rounded;
-      case 'Maghrib': return Icons.nights_stay_rounded;
-      case 'Isha':    return Icons.bedtime_rounded;
-      default:        return Icons.access_time_rounded;
+      case 'Fajr':
+        return Icons.wb_twilight_rounded;
+      case 'Sunrise':
+        return Icons.wb_sunny_rounded;
+      case 'Dhuhr':
+        return Icons.light_mode_rounded;
+      case 'Asr':
+        return Icons.cloud_rounded;
+      case 'Maghrib':
+        return Icons.nights_stay_rounded;
+      case 'Isha':
+        return Icons.bedtime_rounded;
+      default:
+        return Icons.access_time_rounded;
     }
   }
 
@@ -620,21 +615,21 @@ class _DashboardViewState extends State<DashboardView> {
   Widget _buildSmallActionRow({required List<_ActionItem> items}) {
     return Row(
       children: items
-          .map((item) => Expanded(
-                child: Padding(
-                  padding: EdgeInsets.only(
-                    right: item == items.last ? 0 : 8,
-                  ),
-                  child: _ActionTile(
-                    item: item,
-                    isDark: _isDark,
-                    cardBg: _cardBg,
-                    textMain: _textMain,
-                    textHint: _textHint,
-                    divider: _divider,
-                  ),
+          .map(
+            (item) => Expanded(
+              child: Padding(
+                padding: EdgeInsets.only(right: item == items.last ? 0 : 8),
+                child: _ActionTile(
+                  item: item,
+                  isDark: _isDark,
+                  cardBg: _cardBg,
+                  textMain: _textMain,
+                  textHint: _textHint,
+                  divider: _divider,
                 ),
-              ))
+              ),
+            ),
+          )
           .toList(),
     );
   }
@@ -649,8 +644,8 @@ class _DashboardViewState extends State<DashboardView> {
           arabicTitle: 'الأربعون النووية',
           englishTitle: 'Forty Hadith An-Nawawi',
           description: 'The classical collection by Imam An-Nawawi',
-          accentColors: [_C.primary, _C.primaryLight],
-          glowColor: _C.primaryLight,
+          accentColors: [MyColors.primary, MyColors.primaryLight],
+          glowColor: MyColors.primaryLight,
           isDark: _isDark,
           cardBg: _cardBg,
           textMain: _textMain,
@@ -665,8 +660,8 @@ class _DashboardViewState extends State<DashboardView> {
           arabicTitle: 'الأحاديث القصيرة',
           englishTitle: 'Forty Short Hadith',
           description: 'Short hadith for easy memorization & practice',
-          accentColors: [Color(0xFF005C4B), _C.tertiary],
-          glowColor: _C.tertiary,
+          accentColors: [Color(0xFF005C4B), MyColors.tertiary],
+          glowColor: MyColors.tertiary,
           isDark: _isDark,
           cardBg: _cardBg,
           textMain: _textMain,
@@ -851,14 +846,16 @@ class _PrayerRow extends StatelessWidget {
             height: 34,
             decoration: BoxDecoration(
               color: isNext
-                  ? _C.secondary.withOpacity(0.12)
-                  : (isDark ? Colors.white.withOpacity(0.05) : _C.divider.withOpacity(0.4)),
+                  ? MyColors.secondary.withOpacity(0.12)
+                  : (isDark
+                        ? Colors.white.withOpacity(0.05)
+                        : MyColors.divider.withOpacity(0.4)),
               borderRadius: BorderRadius.circular(9),
             ),
             child: Icon(
               icon,
               size: 17,
-              color: isNext ? _C.secondary : textHint,
+              color: isNext ? MyColors.secondary : textHint,
             ),
           ),
           const SizedBox(width: 12),
@@ -875,10 +872,10 @@ class _PrayerRow extends StatelessWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
               decoration: BoxDecoration(
-                color: _C.secondary.withOpacity(0.1),
+                color: MyColors.secondary.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
-                  color: _C.secondary.withOpacity(0.25),
+                  color: MyColors.secondary.withOpacity(0.25),
                   width: 0.7,
                 ),
               ),
@@ -887,7 +884,7 @@ class _PrayerRow extends StatelessWidget {
                 style: GoogleFonts.manrope(
                   fontSize: 9,
                   fontWeight: FontWeight.w700,
-                  color: _C.secondary,
+                  color: MyColors.secondary,
                   letterSpacing: 0.4,
                 ),
               ),
@@ -899,7 +896,7 @@ class _PrayerRow extends StatelessWidget {
             style: GoogleFonts.sora(
               fontSize: 14,
               fontWeight: isNext ? FontWeight.w800 : FontWeight.w500,
-              color: isNext ? _C.secondary : textHint,
+              color: isNext ? MyColors.secondary : textHint,
             ),
           ),
         ],
@@ -959,7 +956,7 @@ class _ActionTile extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-              color: _C.primary.withOpacity(isDark ? 0.1 : 0.04),
+              color: MyColors.primary.withOpacity(isDark ? 0.1 : 0.04),
               blurRadius: 10,
               offset: const Offset(0, 3),
             ),
@@ -1049,7 +1046,7 @@ class _HadithNavCard extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-              color: _C.primary.withOpacity(isDark ? 0.12 : 0.05),
+              color: MyColors.primary.withOpacity(isDark ? 0.12 : 0.05),
               blurRadius: 14,
               offset: const Offset(0, 4),
             ),
@@ -1183,8 +1180,9 @@ class _BgPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = (isDark ? _C.primaryLight : _C.primary)
-          .withOpacity(isDark ? 0.03 : 0.025)
+      ..color = (isDark ? MyColors.primaryLight : MyColors.primary).withOpacity(
+        isDark ? 0.03 : 0.025,
+      )
       ..style = PaintingStyle.stroke
       ..strokeWidth = 0.4;
 

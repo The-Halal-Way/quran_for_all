@@ -3,10 +3,6 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// MODELS
-// ─────────────────────────────────────────────────────────────────────────────
-
 enum DuahLevel { beginner, intermediate, advanced }
 
 class DuahItem {
@@ -38,10 +34,6 @@ class DuahCategory {
   final String label;
   final List<DuahItem> items;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// DATA
-// ─────────────────────────────────────────────────────────────────────────────
 
 class DuahData {
   // ── BEGINNER ────────────────────────────────────────────────────────────────
@@ -607,10 +599,6 @@ class DuahData {
   }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// PAGE
-// ─────────────────────────────────────────────────────────────────────────────
-
 class DailyDuahView extends StatefulWidget {
   const DailyDuahView({super.key});
 
@@ -709,8 +697,6 @@ class _DuahAppBar extends StatelessWidget {
 
     return SliverAppBar(
       pinned: true,
-      expandedHeight: 148,
-      collapsedHeight: 64,
       backgroundColor: isDark
           ? const Color(0xFF060118)
           : const Color(0xFFF5F2FF),
@@ -723,32 +709,51 @@ class _DuahAppBar extends StatelessWidget {
         ),
         onPressed: () => Navigator.maybePop(context),
       ),
-      flexibleSpace: FlexibleSpaceBar(
-        collapseMode: CollapseMode.pin,
-        titlePadding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
-        title: Text(
-          'Daily Du\'ā\'',
-          style: theme.textTheme.titleLarge?.copyWith(
-            color: isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24),
+      title: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Daily Du\'ā\'',
+            style: theme.textTheme.titleMedium?.copyWith(
+              color: isDark ? const Color(0xFFEDE7F6) :  Colors.black,
+            ),
           ),
-        ),
-        background: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 80, 20, 12),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Supplications for every moment',
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: isDark
-                      ? const Color(0xFF7E57C2)
-                      : const Color(0xFF7A7288),
-                ),
-              ),
-            ],
+          Text(
+            'Supplications for every moment',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: isDark
+                  ? const Color(0xFF7E57C2)
+                  : const Color(0xFF7A7288),
+            ),
           ),
-        ),
+        ],
       ),
+      // flexibleSpace: FlexibleSpaceBar(
+      //   collapseMode: CollapseMode.pin,
+      //   titlePadding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
+      //   title: Text(
+      //     'Daily Du\'ā\'',
+      //     style: theme.textTheme.titleLarge?.copyWith(
+      //       color: isDark ? const Color(0xFFEDE7F6) :  Colors.black,
+      //     ),
+      //   ),
+      //   background: Padding(
+      //     padding: const EdgeInsets.fromLTRB(20, 80, 20, 12),
+      //     child: Column(
+      //       crossAxisAlignment: CrossAxisAlignment.start,
+      //       children: [
+      //         Text(
+      //           'Supplications for every moment',
+      //           style: theme.textTheme.bodySmall?.copyWith(
+      //             color: isDark
+      //                 ? const Color(0xFF7E57C2)
+      //                 : const Color(0xFF7A7288),
+      //           ),
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
       bottom: PreferredSize(
         preferredSize: const Size.fromHeight(52),
         child: Container(
@@ -1379,8 +1384,6 @@ class _SubItemTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
-
     return Container(
       margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
       padding: const EdgeInsets.all(14),

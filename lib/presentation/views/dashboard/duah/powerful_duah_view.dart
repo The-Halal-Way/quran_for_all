@@ -137,7 +137,7 @@ class PowerfulDuahData {
       situations: [
         DuahSituation.all,
         DuahSituation.distress,
-        DuahSituation.protection
+        DuahSituation.protection,
       ],
       source: 'Hadith — Bukhari',
       isFeatured: true,
@@ -145,10 +145,8 @@ class PowerfulDuahData {
     PowerfulDuah(
       number: 9,
       title: 'Acceptance of good deeds',
-      arabic:
-          'رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنْتَ السَّمِيعُ العَلِيمُ',
-      pronunciation:
-          'Rabbanā taqabbal minnā innaka Antas-Samīʿul-ʿAlīm',
+      arabic: 'رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنْتَ السَّمِيعُ العَلِيمُ',
+      pronunciation: 'Rabbanā taqabbal minnā innaka Antas-Samīʿul-ʿAlīm',
       translation:
           'Our Lord, accept from us. Indeed, You are the All-Hearing, the All-Knowing.',
       situations: [DuahSituation.all],
@@ -169,12 +167,9 @@ class PowerfulDuahData {
     PowerfulDuah(
       number: 11,
       title: 'Patience and a good ending',
-      arabic:
-          'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَتَوَفَّنَا مُسْلِمِينَ',
-      pronunciation:
-          'Rabbanā afrigh ʿalaynā ṣabran wa tawaffanā muslimīn',
-      translation:
-          'Our Lord, pour upon us patience and let us die as Muslims.',
+      arabic: 'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَتَوَفَّنَا مُسْلِمِينَ',
+      pronunciation: 'Rabbanā afrigh ʿalaynā ṣabran wa tawaffanā muslimīn',
+      translation: 'Our Lord, pour upon us patience and let us die as Muslims.',
       situations: [DuahSituation.all, DuahSituation.distress],
       source: 'Qur\'an 7:126',
     ),
@@ -217,14 +212,13 @@ class PowerfulDuahData {
       title: 'Du\'ā of Yunus ﷺ',
       arabic:
           'لَا إِلٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',
-      pronunciation:
-          'Lā ilāha illā anta subḥānaka innī kuntu minaẓ-ẓālimīn',
+      pronunciation: 'Lā ilāha illā anta subḥānaka innī kuntu minaẓ-ẓālimīn',
       translation:
           'There is no god except You. Glory be to You. Indeed, I was among the wrongdoers.',
       situations: [
         DuahSituation.all,
         DuahSituation.distress,
-        DuahSituation.forgiveness
+        DuahSituation.forgiveness,
       ],
       source: 'Qur\'an 21:87',
       isFeatured: true,
@@ -340,7 +334,9 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
   void initState() {
     super.initState();
     _fadeCtrl = AnimationController(
-        vsync: this, duration: const Duration(milliseconds: 240));
+      vsync: this,
+      duration: const Duration(milliseconds: 240),
+    );
     _fadeAnim = CurvedAnimation(parent: _fadeCtrl, curve: Curves.easeOut);
     _fadeCtrl.forward();
   }
@@ -370,8 +366,9 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
-      backgroundColor:
-          isDark ? const Color(0xFF060118) : const Color(0xFFF5F2FF),
+      backgroundColor: isDark
+          ? const Color(0xFF060118)
+          : const Color(0xFFF5F2FF),
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
@@ -379,9 +376,7 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
           _PowerfulAppBar(isDark: isDark),
 
           // ── Important note banner ────────────────────────────────────────
-          SliverToBoxAdapter(
-            child: _NoteBanner(isDark: isDark),
-          ),
+          SliverToBoxAdapter(child: _NoteBanner(isDark: isDark)),
 
           // ── Filter chips ─────────────────────────────────────────────────
           SliverToBoxAdapter(
@@ -439,63 +434,26 @@ class _PowerfulAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final textPrimary =
-        isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24);
-    final textSecondary =
-        isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288);
-
+    final textPrimary = isDark
+        ? const Color(0xFFEDE7F6)
+        : const Color(0xFF120B24);
     return SliverAppBar(
-      pinned: true,
-      expandedHeight: 160,
-      collapsedHeight: 64,
-      backgroundColor:
-          isDark ? const Color(0xFF060118) : const Color(0xFFF5F2FF),
+      floating: true,
+      backgroundColor: isDark
+          ? const Color(0xFF060118)
+          : const Color(0xFFF5F2FF),
       surfaceTintColor: Colors.transparent,
       leading: IconButton(
-        icon: Icon(Icons.arrow_back_ios_new_rounded,
-            color: textPrimary, size: 20),
+        icon: Icon(
+          Icons.arrow_back_ios_new_rounded,
+          color: textPrimary,
+          size: 20,
+        ),
         onPressed: () => Navigator.maybePop(context),
       ),
-      flexibleSpace: FlexibleSpaceBar(
-        collapseMode: CollapseMode.pin,
-        titlePadding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
-        title: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const SizedBox(width: 36), // account for leading
-            Text(
-              'Powerful Du\'ās',
-              style: theme.textTheme.titleLarge?.copyWith(color: textPrimary),
-            ),
-          ],
-        ),
-        background: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 72, 20, 0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Decorative Arabic header
-              Text(
-                'أَدْعِيَة قُرْآنِيَّة وَنَبَوِيَّة',
-                textDirection: ui.TextDirection.rtl,
-                style: theme.textTheme.headlineMedium?.copyWith(
-                  fontFamily: 'Scheherazade New',
-                  fontSize: 22,
-                  color: const Color(0xFF4B30A1).withValues(alpha: 0.6),
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                'Qur\'ānic & Prophetic supplications',
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: textSecondary,
-                  letterSpacing: 0.3,
-                ),
-              ),
-            ],
-          ),
-        ),
+      title: Text(
+        'Powerful Du\'ās',
+        style: theme.textTheme.titleLarge?.copyWith(color: textPrimary),
       ),
     );
   }
@@ -532,10 +490,12 @@ class _NoteBannerState extends State<_NoteBanner> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    const Color(0xFF4B30A1).withValues(
-                        alpha: widget.isDark ? 0.18 : 0.08),
-                    const Color(0xFF00BFA5).withValues(
-                        alpha: widget.isDark ? 0.10 : 0.04),
+                    const Color(
+                      0xFF4B30A1,
+                    ).withValues(alpha: widget.isDark ? 0.18 : 0.08),
+                    const Color(
+                      0xFF00BFA5,
+                    ).withValues(alpha: widget.isDark ? 0.10 : 0.04),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
@@ -624,8 +584,7 @@ class _FilterRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final borderC =
-        isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
+    final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -637,14 +596,11 @@ class _FilterRow extends StatelessWidget {
             onTap: onFeaturedToggled,
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 200),
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
               decoration: BoxDecoration(
                 color: featuredOnly
                     ? const Color(0xFFD50057).withValues(alpha: 0.14)
-                    : (isDark
-                        ? const Color(0xFF1D1238)
-                        : Colors.white),
+                    : (isDark ? const Color(0xFF1D1238) : Colors.white),
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: featuredOnly
@@ -661,8 +617,8 @@ class _FilterRow extends StatelessWidget {
                     color: featuredOnly
                         ? const Color(0xFFD50057)
                         : (isDark
-                            ? const Color(0xFF7E57C2)
-                            : const Color(0xFF7A7288)),
+                              ? const Color(0xFF7E57C2)
+                              : const Color(0xFF7A7288)),
                   ),
                   const SizedBox(width: 6),
                   Text(
@@ -672,8 +628,8 @@ class _FilterRow extends StatelessWidget {
                       color: featuredOnly
                           ? const Color(0xFFD50057)
                           : (isDark
-                              ? const Color(0xFFB39DDB)
-                              : const Color(0xFF4C425C)),
+                                ? const Color(0xFFB39DDB)
+                                : const Color(0xFF4C425C)),
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -698,13 +654,13 @@ class _FilterRow extends StatelessWidget {
                   child: AnimatedContainer(
                     duration: const Duration(milliseconds: 200),
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 12, vertical: 6),
+                      horizontal: 12,
+                      vertical: 6,
+                    ),
                     decoration: BoxDecoration(
                       color: isActive
                           ? s.color.withValues(alpha: isDark ? 0.20 : 0.12)
-                          : (isDark
-                              ? const Color(0xFF1D1238)
-                              : Colors.white),
+                          : (isDark ? const Color(0xFF1D1238) : Colors.white),
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(
                         color: isActive
@@ -721,8 +677,8 @@ class _FilterRow extends StatelessWidget {
                           color: isActive
                               ? s.color
                               : (isDark
-                                  ? const Color(0xFF7E57C2)
-                                  : const Color(0xFF7A7288)),
+                                    ? const Color(0xFF7E57C2)
+                                    : const Color(0xFF7A7288)),
                         ),
                         const SizedBox(width: 5),
                         Text(
@@ -732,8 +688,8 @@ class _FilterRow extends StatelessWidget {
                             color: isActive
                                 ? s.color
                                 : (isDark
-                                    ? const Color(0xFFB39DDB)
-                                    : const Color(0xFF4C425C)),
+                                      ? const Color(0xFFB39DDB)
+                                      : const Color(0xFF4C425C)),
                             fontWeight: isActive
                                 ? FontWeight.w700
                                 : FontWeight.w500,
@@ -798,9 +754,7 @@ class _CountBar extends StatelessWidget {
           Text(
             ' du\'ās',
             style: theme.textTheme.bodyMedium?.copyWith(
-              color: isDark
-                  ? const Color(0xFF7E57C2)
-                  : const Color(0xFF7A7288),
+              color: isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288),
             ),
           ),
           if (count < total) ...[
@@ -843,13 +797,17 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
   bool _showPronunciation = true;
 
   void _copy() {
-    Clipboard.setData(ClipboardData(
-      text:
-          '${widget.duah.arabic}\n\n${widget.duah.pronunciation}\n\n${widget.duah.translation}',
-    ));
+    Clipboard.setData(
+      ClipboardData(
+        text:
+            '${widget.duah.arabic}\n\n${widget.duah.pronunciation}\n\n${widget.duah.translation}',
+      ),
+    );
     setState(() => _copied = true);
-    Future.delayed(const Duration(seconds: 2),
-        () => mounted ? setState(() => _copied = false) : null);
+    Future.delayed(
+      const Duration(seconds: 2),
+      () => mounted ? setState(() => _copied = false) : null,
+    );
   }
 
   @override
@@ -859,14 +817,11 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
     final isDark = widget.isDark;
 
     final cardBg = isDark ? const Color(0xFF120A2B) : Colors.white;
-    final borderC =
-        isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
+    final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
 
     // Featured cards get a faint fuchsia top-border glow
     final featuredBorder = duah.isFeatured
-        ? Border.all(
-            color: const Color(0xFFD50057).withValues(alpha: 0.35),
-          )
+        ? Border.all(color: const Color(0xFFD50057).withValues(alpha: 0.35))
         : Border.all(color: borderC);
 
     return Container(
@@ -892,12 +847,14 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
           Container(
             padding: const EdgeInsets.fromLTRB(14, 12, 12, 10),
             decoration: BoxDecoration(
-              color: (duah.isFeatured
-                      ? const Color(0xFFD50057)
-                      : const Color(0xFF4B30A1))
-                  .withValues(alpha: isDark ? 0.10 : 0.05),
-              borderRadius:
-                  const BorderRadius.vertical(top: Radius.circular(18)),
+              color:
+                  (duah.isFeatured
+                          ? const Color(0xFFD50057)
+                          : const Color(0xFF4B30A1))
+                      .withValues(alpha: isDark ? 0.10 : 0.05),
+              borderRadius: const BorderRadius.vertical(
+                top: Radius.circular(18),
+              ),
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -907,10 +864,11 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                   width: 28,
                   height: 28,
                   decoration: BoxDecoration(
-                    color: (duah.isFeatured
-                            ? const Color(0xFFD50057)
-                            : const Color(0xFF4B30A1))
-                        .withValues(alpha: 0.15),
+                    color:
+                        (duah.isFeatured
+                                ? const Color(0xFFD50057)
+                                : const Color(0xFF4B30A1))
+                            .withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   alignment: Alignment.center,
@@ -973,7 +931,9 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                       (s) => Container(
                         margin: const EdgeInsets.only(left: 4),
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 7, vertical: 3),
+                          horizontal: 7,
+                          vertical: 3,
+                        ),
                         decoration: BoxDecoration(
                           color: s.color.withValues(alpha: 0.12),
                           borderRadius: BorderRadius.circular(6),
@@ -995,14 +955,18 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.symmetric(
-                      vertical: 16, horizontal: 16),
+                    vertical: 16,
+                    horizontal: 16,
+                  ),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF1E0A3C).withValues(
-                        alpha: isDark ? 0.45 : 0.04),
+                    color: const Color(
+                      0xFF1E0A3C,
+                    ).withValues(alpha: isDark ? 0.45 : 0.04),
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: const Color(0xFF4B30A1).withValues(
-                          alpha: isDark ? 0.18 : 0.08),
+                      color: const Color(
+                        0xFF4B30A1,
+                      ).withValues(alpha: isDark ? 0.18 : 0.08),
                     ),
                   ),
                   child: Text(
@@ -1112,7 +1076,9 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                             .map(
                               (s) => Container(
                                 padding: const EdgeInsets.symmetric(
-                                    horizontal: 8, vertical: 3),
+                                  horizontal: 8,
+                                  vertical: 3,
+                                ),
                                 decoration: BoxDecoration(
                                   color: s.color.withValues(alpha: 0.10),
                                   borderRadius: BorderRadius.circular(6),
@@ -1139,13 +1105,15 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                       child: AnimatedContainer(
                         duration: const Duration(milliseconds: 200),
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 12, vertical: 7),
+                          horizontal: 12,
+                          vertical: 7,
+                        ),
                         decoration: BoxDecoration(
                           color: _copied
                               ? const Color(0xFF00BFA5).withValues(alpha: 0.12)
                               : (isDark
-                                  ? const Color(0xFF1D1238)
-                                  : const Color(0xFFF5F2FF)),
+                                    ? const Color(0xFF1D1238)
+                                    : const Color(0xFFF5F2FF)),
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(
                             color: _copied
@@ -1164,8 +1132,8 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                               color: _copied
                                   ? const Color(0xFF00BFA5)
                                   : (isDark
-                                      ? const Color(0xFF7E57C2)
-                                      : const Color(0xFF7A7288)),
+                                        ? const Color(0xFF7E57C2)
+                                        : const Color(0xFF7A7288)),
                             ),
                             const SizedBox(width: 5),
                             Text(
@@ -1174,8 +1142,8 @@ class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
                                 color: _copied
                                     ? const Color(0xFF00BFA5)
                                     : (isDark
-                                        ? const Color(0xFF7E57C2)
-                                        : const Color(0xFF7A7288)),
+                                          ? const Color(0xFF7E57C2)
+                                          : const Color(0xFF7A7288)),
                                 fontWeight: FontWeight.w700,
                               ),
                             ),
