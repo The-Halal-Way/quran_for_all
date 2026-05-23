@@ -133,37 +133,66 @@ extension _DashboardViewStateSections on _DashboardViewState {
   // ── Continue reading / learning cards ───────────────────────────────────────
 
   Widget _buildContinueCards() {
+    final readViewModel = context.watch<ReadQuranViewModel>();
+    final learnViewModel = context.watch<LearnQuranViewModel>();
+
+    final hasLastRead =
+        readViewModel.lastRead != null && readViewModel.lastReadSurah != null;
+    final lastRead = readViewModel.lastRead;
+    final lastReadSurah = readViewModel.lastReadSurah;
+    final continueReadingSubtitle = hasLastRead
+        ? '${lastReadSurah!.nameEnglish} (${lastReadSurah.nameArabic})'
+        : 'Start where you left off';
+    final continueReadingDetail = hasLastRead
+        ? 'Ayah ${lastRead!.ayahNumber} · ${lastReadSurah?.nameTranslated ?? 'Quran'}'
+        : 'Open your recent surah and continue';
+
+    final nextLesson = learnViewModel.nextLesson;
+    final nextModule = nextLesson != null
+        ? learnViewModel.moduleForLesson(nextLesson.id)
+        : (learnViewModel.modules.isNotEmpty
+              ? learnViewModel.modules.first
+              : null);
+    final continueLearningSubtitle = nextLesson?.title ?? 'Start Learning';
+    final continueLearningDetail = nextModule != null
+        ? '${nextModule.title} · ${nextModule.lessons.length} lessons'
+        : 'Open learning tracks';
+
     return Row(
       children: [
         Expanded(
           child: _ContinueCard(
             title: 'Continue Reading',
-            subtitle: 'Surah Al-Baqarah',
-            detail: 'Ayah 255 · Āyat al-Kursī',
+            subtitle: continueReadingSubtitle,
+            detail: continueReadingDetail,
             arabicSnippet: 'ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ',
             gradientColors: [MyColors.primary, MyColors.primaryLight],
             glowColor: MyColors.primaryLight,
             icon: Icons.auto_stories_rounded,
             isDark: _isDark,
-            onTap: () {
-              /* TODO */
-            },
+            onTap: hasLastRead
+                ? () => unawaited(
+                    _openSurah(
+                      context,
+                      lastReadSurah!,
+                      initialAyahNumber: lastRead!.ayahNumber,
+                    ),
+                  )
+                : () => _push(const ReadQuranView()),
           ),
         ),
         const SizedBox(width: 10),
         Expanded(
           child: _ContinueCard(
             title: 'Continue Learning',
-            subtitle: 'Tajweed Basics',
-            detail: 'Lesson 4 · Ghunnah',
+            subtitle: continueLearningSubtitle,
+            detail: continueLearningDetail,
             arabicSnippet: 'ن  ◌ّ  م',
-            gradientColors: [Color(0xFF005C4B), MyColors.tertiary],
+            gradientColors: const [Color(0xFF005C4B), MyColors.tertiary],
             glowColor: MyColors.tertiary,
             icon: Icons.school_rounded,
             isDark: _isDark,
-            onTap: () {
-              /* TODO */
-            },
+            onTap: () => _openNextLesson(context, learnViewModel),
           ),
         ),
       ],

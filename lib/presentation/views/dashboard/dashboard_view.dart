@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui' as ui;
 import 'package:adhan/adhan.dart';
 import 'package:flutter/material.dart';
@@ -5,14 +6,24 @@ import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
+import 'package:quran_for_all/core/utils/app_page_route.dart';
+import 'package:quran_for_all/data/models/learn_quran_content.dart';
+import 'package:quran_for_all/data/models/surah_model.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
+import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
+import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
+import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'package:quran_for_all/presentation/views/compass/compass_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
+import 'package:quran_for_all/presentation/views/learn_quran/learning_module_detail_view.dart';
+import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart';
+import 'package:quran_for_all/presentation/views/read_quran/surah_details_view.dart';
 import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
@@ -146,6 +157,54 @@ class _DashboardViewState extends State<DashboardView> {
 
   void _push(Widget page) =>
       Navigator.push(context, MaterialPageRoute(builder: (_) => page));
+
+  Future<void> _openSurah(
+    BuildContext context,
+    SurahModel surah, {
+    int? initialAyahNumber,
+  }) async {
+    unawaited(context.read<SurahDetailsViewModel>().openSurah(surah));
+
+    await Navigator.of(context).push(
+      AppPageRoute<void>(
+        builder: (_) => SurahDetailsView(
+          surah: surah,
+          initialAyahNumber: initialAyahNumber,
+        ),
+      ),
+    );
+
+    if (!context.mounted) {
+      return;
+    }
+
+    await context.read<ReadQuranViewModel>().load(showLoading: false);
+  }
+
+  void _openNextLesson(BuildContext context, LearnQuranViewModel viewModel) {
+    final lesson = viewModel.nextLesson;
+    if (lesson == null) {
+      if (viewModel.modules.isNotEmpty) {
+        _openModule(context, viewModel.modules.first);
+      }
+      return;
+    }
+
+    final module = viewModel.moduleForLesson(lesson.id);
+    if (module == null) {
+      return;
+    }
+
+    _openModule(context, module);
+  }
+
+  void _openModule(BuildContext context, LearnQuranModule module) {
+    Navigator.of(context).push(
+      AppPageRoute<void>(
+        builder: (_) => LearningModuleDetailView(module: module),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
