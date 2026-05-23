@@ -1,0 +1,778 @@
+part of '../../../../views/dashboard/duah/powerful_duah_view.dart';
+class _PowerfulAppBar extends StatelessWidget {
+  const _PowerfulAppBar({required this.isDark});
+  final bool isDark;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    return SliverAppBar(
+      floating: true,
+      pinned: true,
+      backgroundColor: Colors.transparent,
+      surfaceTintColor: Colors.transparent,
+      elevation: 0,
+      shadowColor: Colors.transparent,
+      flexibleSpace: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [colorScheme.primary, colorScheme.tertiary],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: colorScheme.primary.withValues(alpha: 0.24),
+              blurRadius: 18,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Align(
+          alignment: Alignment.topCenter,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 760),
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 12),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(18),
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.white.withValues(alpha: 0.24),
+                    Colors.white.withValues(alpha: 0.06),
+                    Colors.white.withValues(alpha: 0.16),
+                  ],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                ),
+                border: Border.all(
+                  color: Colors.white.withValues(alpha: 0.18),
+                  width: 0.8,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+      leading: IconButton(
+        icon: Icon(
+          Icons.arrow_back_ios_new_rounded,
+          color: Colors.white,
+          size: 20,
+        ),
+        onPressed: () => Navigator.maybePop(context),
+      ),
+      title: Text(
+        'Powerful Du\'ās',
+        style: theme.textTheme.titleLarge?.copyWith(
+          color: Colors.white,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// IMPORTANT NOTE BANNER
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _NoteBanner extends StatefulWidget {
+  const _NoteBanner({required this.isDark});
+  final bool isDark;
+
+  @override
+  State<_NoteBanner> createState() => _NoteBannerState();
+}
+
+class _NoteBannerState extends State<_NoteBanner> {
+  bool _dismissed = false;
+
+  @override
+  Widget build(BuildContext context) {
+    if (_dismissed) return const SizedBox.shrink();
+    final theme = Theme.of(context);
+
+    return AnimatedSize(
+      duration: const Duration(milliseconds: 280),
+      curve: Curves.easeOut,
+      child: _dismissed
+          ? const SizedBox.shrink()
+          : Container(
+              margin: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+              padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    const Color(
+                      0xFF4B30A1,
+                    ).withValues(alpha: widget.isDark ? 0.18 : 0.08),
+                    const Color(
+                      0xFF00BFA5,
+                    ).withValues(alpha: widget.isDark ? 0.10 : 0.04),
+                  ],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(
+                  color: const Color(0xFF4B30A1).withValues(alpha: 0.25),
+                ),
+              ),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(7),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF4B30A1).withValues(alpha: 0.15),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: const Icon(
+                      Icons.auto_awesome_rounded,
+                      color: Color(0xFF4B30A1),
+                      size: 16,
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Important note',
+                          style: theme.textTheme.labelMedium?.copyWith(
+                            color: const Color(0xFF4B30A1),
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        const SizedBox(height: 3),
+                        Text(
+                          'Du\'ā is answered in the way Allah wills, at the time He wills, and in the form He wills. These are authentic and deeply beloved supplications from Qur\'ānic and Prophetic sources.',
+                          style: theme.textTheme.bodySmall?.copyWith(
+                            color: widget.isDark
+                                ? const Color(0xFFB39DDB)
+                                : const Color(0xFF4C425C),
+                            height: 1.5,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => setState(() => _dismissed = true),
+                    child: Icon(
+                      Icons.close_rounded,
+                      size: 16,
+                      color: widget.isDark
+                          ? const Color(0xFF7E57C2)
+                          : const Color(0xFF7A7288),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// FILTER ROW
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _FilterRow extends StatelessWidget {
+  const _FilterRow({
+    required this.selected,
+    required this.featuredOnly,
+    required this.isDark,
+    required this.onSituationChanged,
+    required this.onFeaturedToggled,
+  });
+
+  final DuahSituation selected;
+  final bool featuredOnly;
+  final bool isDark;
+  final ValueChanged<DuahSituation> onSituationChanged;
+  final VoidCallback onFeaturedToggled;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // "Best 5" toggle
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 10, 16, 6),
+          child: GestureDetector(
+            onTap: onFeaturedToggled,
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+              decoration: BoxDecoration(
+                color: featuredOnly
+                    ? const Color(0xFFD50057).withValues(alpha: 0.14)
+                    : (isDark ? const Color(0xFF1D1238) : Colors.white),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: featuredOnly
+                      ? const Color(0xFFD50057).withValues(alpha: 0.45)
+                      : borderC,
+                ),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(
+                    Icons.star_rounded,
+                    size: 15,
+                    color: featuredOnly
+                        ? const Color(0xFFD50057)
+                        : (isDark
+                              ? const Color(0xFF7E57C2)
+                              : const Color(0xFF7A7288)),
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Best 5 to memorize first',
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      fontSize: 12,
+                      color: featuredOnly
+                          ? const Color(0xFFD50057)
+                          : (isDark
+                                ? const Color(0xFFB39DDB)
+                                : const Color(0xFF4C425C)),
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+
+        // Situation chips (horizontal scroll)
+        SizedBox(
+          height: 40,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            children: DuahSituation.values.map((s) {
+              final isActive = selected == s;
+              return Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: GestureDetector(
+                  onTap: () => onSituationChanged(s),
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 6,
+                    ),
+                    decoration: BoxDecoration(
+                      color: isActive
+                          ? s.color.withValues(alpha: isDark ? 0.20 : 0.12)
+                          : (isDark ? const Color(0xFF1D1238) : Colors.white),
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(
+                        color: isActive
+                            ? s.color.withValues(alpha: 0.50)
+                            : borderC,
+                      ),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(
+                          s.icon,
+                          size: 13,
+                          color: isActive
+                              ? s.color
+                              : (isDark
+                                    ? const Color(0xFF7E57C2)
+                                    : const Color(0xFF7A7288)),
+                        ),
+                        const SizedBox(width: 5),
+                        Text(
+                          s.label,
+                          style: theme.textTheme.labelMedium?.copyWith(
+                            fontSize: 12,
+                            color: isActive
+                                ? s.color
+                                : (isDark
+                                      ? const Color(0xFFB39DDB)
+                                      : const Color(0xFF4C425C)),
+                            fontWeight: isActive
+                                ? FontWeight.w700
+                                : FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            }).toList(),
+          ),
+        ),
+        const SizedBox(height: 8),
+      ],
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// COUNT BAR
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _CountBar extends StatelessWidget {
+  const _CountBar({
+    required this.count,
+    required this.total,
+    required this.situation,
+    required this.isDark,
+  });
+
+  final int count;
+  final int total;
+  final DuahSituation situation;
+  final bool isDark;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+      child: Row(
+        children: [
+          Container(
+            width: 4,
+            height: 14,
+            decoration: BoxDecoration(
+              color: situation.color,
+              borderRadius: BorderRadius.circular(2),
+            ),
+          ),
+          const SizedBox(width: 8),
+          Text(
+            '$count',
+            style: theme.textTheme.titleMedium?.copyWith(
+              fontFamily: 'Sora',
+              color: situation.color,
+              fontSize: 15,
+            ),
+          ),
+          Text(
+            ' du\'ās',
+            style: theme.textTheme.bodyMedium?.copyWith(
+              color: isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288),
+            ),
+          ),
+          if (count < total) ...[
+            Text(
+              ' of $total',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: isDark
+                    ? const Color(0xFF382E54)
+                    : const Color(0xFFD9D1E8),
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// POWERFUL DUAH CARD
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _PowerfulDuahCard extends StatefulWidget {
+  const _PowerfulDuahCard({
+    required this.duah,
+    required this.isDark,
+    required this.situationColor,
+  });
+
+  final PowerfulDuah duah;
+  final bool isDark;
+  final Color situationColor;
+
+  @override
+  State<_PowerfulDuahCard> createState() => _PowerfulDuahCardState();
+}
+
+class _PowerfulDuahCardState extends State<_PowerfulDuahCard> {
+  bool _copied = false;
+  bool _showPronunciation = true;
+
+  void _copy() {
+    Clipboard.setData(
+      ClipboardData(
+        text:
+            '${widget.duah.arabic}\n\n${widget.duah.pronunciation}\n\n${widget.duah.translation}',
+      ),
+    );
+    setState(() => _copied = true);
+    Future.delayed(
+      const Duration(seconds: 2),
+      () => mounted ? setState(() => _copied = false) : null,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final duah = widget.duah;
+    final isDark = widget.isDark;
+
+    final cardBg = isDark ? const Color(0xFF120A2B) : Colors.white;
+    final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
+
+    // Featured cards get a faint fuchsia top-border glow
+    final featuredBorder = duah.isFeatured
+        ? Border.all(color: const Color(0xFFD50057).withValues(alpha: 0.35))
+        : Border.all(color: borderC);
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: cardBg,
+        borderRadius: BorderRadius.circular(18),
+        border: featuredBorder,
+        boxShadow: duah.isFeatured
+            ? [
+                BoxShadow(
+                  color: const Color(0xFFD50057).withValues(alpha: 0.08),
+                  blurRadius: 16,
+                  offset: const Offset(0, 4),
+                ),
+              ]
+            : null,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          // ── Header strip ─────────────────────────────────────────────────
+          Container(
+            padding: const EdgeInsets.fromLTRB(14, 12, 12, 10),
+            decoration: BoxDecoration(
+              color:
+                  (duah.isFeatured
+                          ? const Color(0xFFD50057)
+                          : const Color(0xFF4B30A1))
+                      .withValues(alpha: isDark ? 0.10 : 0.05),
+              borderRadius: const BorderRadius.vertical(
+                top: Radius.circular(18),
+              ),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Number badge
+                Container(
+                  width: 28,
+                  height: 28,
+                  decoration: BoxDecoration(
+                    color:
+                        (duah.isFeatured
+                                ? const Color(0xFFD50057)
+                                : const Color(0xFF4B30A1))
+                            .withValues(alpha: 0.15),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  alignment: Alignment.center,
+                  child: Text(
+                    '${duah.number}',
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      color: duah.isFeatured
+                          ? const Color(0xFFD50057)
+                          : const Color(0xFF4B30A1),
+                      fontWeight: FontWeight.w800,
+                      fontSize: 12,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        duah.title,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          fontFamily: 'Sora',
+                          fontSize: 14,
+                          color: isDark
+                              ? const Color(0xFFEDE7F6)
+                              : const Color(0xFF120B24),
+                        ),
+                      ),
+                      if (duah.source != null) ...[
+                        const SizedBox(height: 2),
+                        Text(
+                          duah.source!,
+                          style: theme.textTheme.labelSmall?.copyWith(
+                            color: isDark
+                                ? const Color(0xFF7E57C2)
+                                : const Color(0xFF7A7288),
+                            letterSpacing: 0.2,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+                // Featured star
+                if (duah.isFeatured)
+                  const Padding(
+                    padding: EdgeInsets.only(right: 4),
+                    child: Icon(
+                      Icons.star_rounded,
+                      color: Color(0xFFD50057),
+                      size: 16,
+                    ),
+                  ),
+                // Situation tags
+                ...duah.situations
+                    .where((s) => s != DuahSituation.all)
+                    .take(2)
+                    .map(
+                      (s) => Container(
+                        margin: const EdgeInsets.only(left: 4),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 7,
+                          vertical: 3,
+                        ),
+                        decoration: BoxDecoration(
+                          color: s.color.withValues(alpha: 0.12),
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Icon(s.icon, size: 11, color: s.color),
+                      ),
+                    ),
+              ],
+            ),
+          ),
+
+          // ── Body ──────────────────────────────────────────────────────────
+          Padding(
+            padding: const EdgeInsets.fromLTRB(14, 12, 14, 14),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                // Arabic
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 16,
+                    horizontal: 16,
+                  ),
+                  decoration: BoxDecoration(
+                    color: const Color(
+                      0xFF1E0A3C,
+                    ).withValues(alpha: isDark ? 0.45 : 0.04),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: const Color(
+                        0xFF4B30A1,
+                      ).withValues(alpha: isDark ? 0.18 : 0.08),
+                    ),
+                  ),
+                  child: Text(
+                    duah.arabic,
+                    textAlign: TextAlign.center,
+                    textDirection: ui.TextDirection.rtl,
+                    style: theme.textTheme.headlineMedium?.copyWith(
+                      fontFamily: 'Scheherazade New',
+                      fontSize: 22,
+                      height: 2.0,
+                      color: isDark
+                          ? const Color(0xFFEDE7F6)
+                          : const Color(0xFF120B24),
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 12),
+
+                // Pronunciation toggle
+                GestureDetector(
+                  onTap: () =>
+                      setState(() => _showPronunciation = !_showPronunciation),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 3,
+                        height: 13,
+                        margin: const EdgeInsets.only(right: 8),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF4B30A1),
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      ),
+                      Expanded(
+                        child: AnimatedCrossFade(
+                          duration: const Duration(milliseconds: 200),
+                          crossFadeState: _showPronunciation
+                              ? CrossFadeState.showFirst
+                              : CrossFadeState.showSecond,
+                          firstChild: Text(
+                            duah.pronunciation,
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              fontStyle: FontStyle.italic,
+                              color: isDark
+                                  ? const Color(0xFFB39DDB)
+                                  : const Color(0xFF4C425C),
+                              height: 1.5,
+                            ),
+                          ),
+                          secondChild: Text(
+                            'Tap to show pronunciation',
+                            style: theme.textTheme.bodySmall?.copyWith(
+                              color: isDark
+                                  ? const Color(0xFF382E54)
+                                  : const Color(0xFFD9D1E8),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(height: 8),
+
+                // Translation
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 3,
+                      height: 13,
+                      margin: const EdgeInsets.only(right: 8, top: 3),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF00BFA5),
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                    Expanded(
+                      child: Text(
+                        duah.translation,
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: isDark
+                              ? const Color(0xFFEDE7F6)
+                              : const Color(0xFF120B24),
+                          height: 1.55,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+
+                const SizedBox(height: 12),
+
+                // Bottom action row
+                Row(
+                  children: [
+                    // Situation tag pills
+                    Expanded(
+                      child: Wrap(
+                        spacing: 6,
+                        runSpacing: 4,
+                        children: duah.situations
+                            .where((s) => s != DuahSituation.all)
+                            .map(
+                              (s) => Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 3,
+                                ),
+                                decoration: BoxDecoration(
+                                  color: s.color.withValues(alpha: 0.10),
+                                  borderRadius: BorderRadius.circular(6),
+                                  border: Border.all(
+                                    color: s.color.withValues(alpha: 0.22),
+                                  ),
+                                ),
+                                child: Text(
+                                  s.label,
+                                  style: theme.textTheme.labelSmall?.copyWith(
+                                    color: s.color,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ),
+                            )
+                            .toList(),
+                      ),
+                    ),
+                    // Copy button
+                    GestureDetector(
+                      onTap: _copy,
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 7,
+                        ),
+                        decoration: BoxDecoration(
+                          color: _copied
+                              ? const Color(0xFF00BFA5).withValues(alpha: 0.12)
+                              : (isDark
+                                    ? const Color(0xFF1D1238)
+                                    : const Color(0xFFF5F2FF)),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: _copied
+                                ? const Color(0xFF00BFA5).withValues(alpha: 0.4)
+                                : borderC,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              _copied
+                                  ? Icons.check_rounded
+                                  : Icons.copy_rounded,
+                              size: 14,
+                              color: _copied
+                                  ? const Color(0xFF00BFA5)
+                                  : (isDark
+                                        ? const Color(0xFF7E57C2)
+                                        : const Color(0xFF7A7288)),
+                            ),
+                            const SizedBox(width: 5),
+                            Text(
+                              _copied ? 'Copied' : 'Copy',
+                              style: theme.textTheme.labelSmall?.copyWith(
+                                color: _copied
+                                    ? const Color(0xFF00BFA5)
+                                    : (isDark
+                                          ? const Color(0xFF7E57C2)
+                                          : const Color(0xFF7A7288)),
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
