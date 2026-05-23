@@ -21,8 +21,8 @@ class CompassView extends StatefulWidget {
 class _CompassViewState extends State<CompassView>
     with SingleTickerProviderStateMixin {
   // ── State ──────────────────────────────────────────────────────────────────
-  double _rawHeading = 0.0;     // latest value from sensor
-  double _smoothHeading = 0.0;  // animated display value
+  double _rawHeading = 0.0; // latest value from sensor
+  double _smoothHeading = 0.0; // animated display value
   String _directionLabel = 'North';
   bool _isListening = false;
   bool _isApiFallback = false;
@@ -38,10 +38,13 @@ class _CompassViewState extends State<CompassView>
     super.initState();
 
     // Drives the smooth-heading interpolation each frame
-    _ticker = AnimationController(
-      vsync: this,
-      duration: const Duration(days: 999), // runs indefinitely
-    )..addListener(_onTick)..forward();
+    _ticker =
+        AnimationController(
+            vsync: this,
+            duration: const Duration(days: 999), // runs indefinitely
+          )
+          ..addListener(_onTick)
+          ..forward();
 
     _initCompass();
   }
@@ -135,10 +138,9 @@ class _CompassViewState extends State<CompassView>
   }
 
   // ── Helpers ────────────────────────────────────────────────────────────────
-  double get _qiblaOffset =>
-      (_qiblaDegrees - _smoothHeading + 360) % 360;
+  double get _qiblaOffset => (_qiblaDegrees - _smoothHeading + 360) % 360;
 
-    bool get _facingMecca =>
+  bool get _facingMecca =>
       _isListening &&
       (_qiblaOffset < _kQiblaSnapZone || _qiblaOffset > 360 - _kQiblaSnapZone);
 
@@ -148,8 +150,9 @@ class _CompassViewState extends State<CompassView>
 
     if (_isInitializing || (!_isListening && !_isApiFallback)) {
       return Scaffold(
-        backgroundColor:
-            isDark ? const Color(0xFF060118) : const Color(0xFFF5F2FF),
+        backgroundColor: isDark
+            ? const Color(0xFF060118)
+            : const Color(0xFFF5F2FF),
         body: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -200,8 +203,9 @@ class _CompassViewState extends State<CompassView>
     }
 
     return Scaffold(
-      backgroundColor:
-          isDark ? const Color(0xFF060118) : const Color(0xFFF5F2FF),
+      backgroundColor: isDark
+          ? const Color(0xFF060118)
+          : const Color(0xFFF5F2FF),
       body: SafeArea(
         child: Column(
           children: [
@@ -256,19 +260,21 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cardBg =
-        isDark ? const Color(0xFF1D1238) : const Color(0xFFFFFFFF);
-    final borderC =
-        isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
-    final textPrimary =
-        isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24);
-    final textSecondary =
-        isDark ? const Color(0xFF7E57C2) : const Color(0xFF4C425C);
+    final textPrimary = isDark
+        ? const Color(0xFFEDE7F6)
+        : const Color(0xFF120B24);
+    final textSecondary = isDark
+        ? const Color(0xFF7E57C2)
+        : const Color(0xFF4C425C);
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 0),
       child: Row(
         children: [
+          IconButton(
+            onPressed: () => Navigator.of(context).maybePop(),
+            icon: const Icon(Icons.arrow_back_ios_new, color: Colors.white),
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -286,7 +292,8 @@ class _TopBar extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    width: 6, height: 6,
+                    width: 6,
+                    height: 6,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Color(0xFF00BFA5),
@@ -306,23 +313,6 @@ class _TopBar extends StatelessWidget {
                 ],
               ),
             ],
-          ),
-          const Spacer(),
-          Container(
-            width: 42,
-            height: 42,
-            decoration: BoxDecoration(
-              color: cardBg,
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: borderC),
-            ),
-            child: Icon(
-              Icons.tune_rounded,
-              color: isDark
-                  ? const Color(0xFFB39DDB)
-                  : const Color(0xFF4C425C),
-              size: 20,
-            ),
           ),
         ],
       ),
@@ -402,9 +392,7 @@ class _DirectionPill extends StatelessWidget {
         color: isDark ? const Color(0xFF1D1238) : const Color(0xFFEEE8FA),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: isDark
-              ? const Color(0xFF382E54)
-              : const Color(0xFFD9D1E8),
+          color: isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8),
         ),
       ),
       child: Text(
@@ -515,7 +503,13 @@ class _CompassPainter extends CustomPainter {
   }
 
   // ── Outer rings ─────────────────────────────────────────────────────────────
-  void _drawOuterRings(Canvas c, double cx, double cy, double outerR, double dialR) {
+  void _drawOuterRings(
+    Canvas c,
+    double cx,
+    double cy,
+    double outerR,
+    double dialR,
+  ) {
     // Shadow ring
     c.drawCircle(
       Offset(cx, cy),
@@ -523,11 +517,7 @@ class _CompassPainter extends CustomPainter {
       Paint()..color = _primaryColor.withValues(alpha: isDark ? 0.6 : 0.08),
     );
     // Dial face
-    c.drawCircle(
-      Offset(cx, cy),
-      dialR,
-      Paint()..color = _ringBg,
-    );
+    c.drawCircle(Offset(cx, cy), dialR, Paint()..color = _ringBg);
     // Outer border
     c.drawCircle(
       Offset(cx, cy),
@@ -554,24 +544,30 @@ class _CompassPainter extends CustomPainter {
       final angleDeg = i * 5.0;
       final angleRad = (angleDeg - 90) * math.pi / 180;
       final isCardinal = angleDeg % 90 == 0;
-      final isOrdinal  = angleDeg % 45 == 0 && !isCardinal;
-      final isMid      = angleDeg % 15 == 0 && !isCardinal && !isOrdinal;
+      final isOrdinal = angleDeg % 45 == 0 && !isCardinal;
+      final isMid = angleDeg % 15 == 0 && !isCardinal && !isOrdinal;
 
       final tickOuter = dialR - 2;
       final tickInner = isCardinal
           ? dialR - 20
           : isOrdinal
-              ? dialR - 15
-              : isMid
-                  ? dialR - 11
-                  : dialR - 7;
+          ? dialR - 15
+          : isMid
+          ? dialR - 11
+          : dialR - 7;
 
-      final strokeW = isCardinal ? 2.5 : isOrdinal ? 1.8 : isMid ? 1.2 : 0.7;
-      final color   = isCardinal
+      final strokeW = isCardinal
+          ? 2.5
+          : isOrdinal
+          ? 1.8
+          : isMid
+          ? 1.2
+          : 0.7;
+      final color = isCardinal
           ? _fuchsia
           : isOrdinal
-              ? _primaryLight
-              : _borderLight;
+          ? _primaryLight
+          : _borderLight;
 
       final x1 = cx + tickOuter * math.cos(angleRad);
       final y1 = cy + tickOuter * math.sin(angleRad);
@@ -593,7 +589,7 @@ class _CompassPainter extends CustomPainter {
   void _drawCardinalLabels(Canvas c, double cx, double cy, double dialR) {
     final labelR = dialR - 34;
     const cardinals = ['N', 'E', 'S', 'W'];
-    const ordinals   = ['NE', 'SE', 'SW', 'NW'];
+    const ordinals = ['NE', 'SE', 'SW', 'NW'];
 
     for (int i = 0; i < 4; i++) {
       final angleDeg = i * 90.0 - 90;
@@ -638,7 +634,13 @@ class _CompassPainter extends CustomPainter {
   }
 
   // ── Qibla / Mecca Marker ─────────────────────────────────────────────────
-  void _drawQiblaMarker(Canvas c, double cx, double cy, double dialR, double innerR) {
+  void _drawQiblaMarker(
+    Canvas c,
+    double cx,
+    double cy,
+    double dialR,
+    double innerR,
+  ) {
     final angleRad = (qiblaDegrees - 90) * math.pi / 180;
 
     // Pulsing glow arc around the marker position
@@ -658,8 +660,8 @@ class _CompassPainter extends CustomPainter {
     // Dashed teal line from inner ring to marker
     final lineStartX = cx + innerR * math.cos(angleRad);
     final lineStartY = cy + innerR * math.sin(angleRad);
-    final lineEndX   = cx + (dialR - 46) * math.cos(angleRad);
-    final lineEndY   = cy + (dialR - 46) * math.sin(angleRad);
+    final lineEndX = cx + (dialR - 46) * math.cos(angleRad);
+    final lineEndY = cy + (dialR - 46) * math.sin(angleRad);
 
     _drawDashedLine(
       c,
@@ -739,19 +741,21 @@ class _CompassPainter extends CustomPainter {
   // ── Inner Face ─────────────────────────────────────────────────────────────
   void _drawInnerFace(Canvas c, double cx, double cy, double innerR) {
     // Inner fill
-    c.drawCircle(
-      Offset(cx, cy),
-      innerR,
-      Paint()..color = _innerBg,
-    );
+    c.drawCircle(Offset(cx, cy), innerR, Paint()..color = _innerBg);
     // Inner border (teal dashed)
     final dashPaint = Paint()
       ..color = _teal.withValues(alpha: 0.25)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.0;
 
-    _drawDashedCircle(c, Offset(cx, cy), innerR, dashPaint,
-        dashLength: 6, gapLength: 8);
+    _drawDashedCircle(
+      c,
+      Offset(cx, cy),
+      innerR,
+      dashPaint,
+      dashLength: 6,
+      gapLength: 8,
+    );
 
     // Solid inner border
     c.drawCircle(
@@ -798,9 +802,7 @@ class _CompassPainter extends CustomPainter {
     c.drawPath(
       southPath,
       Paint()
-        ..color = isDark
-            ? const Color(0xFF261A45)
-            : const Color(0xFFD9D1E8),
+        ..color = isDark ? const Color(0xFF261A45) : const Color(0xFFD9D1E8),
     );
     c.drawPath(
       southPath,
@@ -818,9 +820,7 @@ class _CompassPainter extends CustomPainter {
       Offset(cx, cy),
       13,
       Paint()
-        ..color = isDark
-            ? const Color(0xFF261A45)
-            : const Color(0xFFEEE8FA),
+        ..color = isDark ? const Color(0xFF261A45) : const Color(0xFFEEE8FA),
     );
     c.drawCircle(
       Offset(cx, cy),
@@ -890,7 +890,7 @@ class _CompassPainter extends CustomPainter {
     final total = dashLength + gapLength;
     final count = (circumference / total).floor();
     final actualDash = (dashLength / total) * (2 * math.pi / count);
-    final actualGap  = (2 * math.pi / count) - actualDash;
+    final actualGap = (2 * math.pi / count) - actualDash;
 
     for (int i = 0; i < count; i++) {
       final startAngle = i * (actualDash + actualGap) - math.pi / 2;
@@ -986,13 +986,13 @@ class _InfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cardBg   = isDark ? const Color(0xFF120A2B) : const Color(0xFFFFFFFF);
-    final borderC  = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
-    final labelC   = isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288);
-    final valueC   = accent && isOnTarget
+    final cardBg = isDark ? const Color(0xFF120A2B) : const Color(0xFFFFFFFF);
+    final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
+    final labelC = isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288);
+    final valueC = accent && isOnTarget
         ? const Color(0xFF00BFA5)
         : (isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24));
-    final iconC    = accent
+    final iconC = accent
         ? (isOnTarget ? const Color(0xFF00BFA5) : const Color(0xFF4B30A1))
         : const Color(0xFF4B30A1);
 
@@ -1014,7 +1014,7 @@ class _InfoCard extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             value,
-                  overflow: TextOverflow.ellipsis,
+            overflow: TextOverflow.ellipsis,
             style: TextStyle(
               fontFamily: 'Sora',
               fontSize: 17,
@@ -1026,7 +1026,7 @@ class _InfoCard extends StatelessWidget {
           const SizedBox(height: 2),
           Text(
             label,
-                  overflow: TextOverflow.ellipsis,
+            overflow: TextOverflow.ellipsis,
             style: TextStyle(
               fontFamily: 'Manrope',
               fontSize: 10,
@@ -1040,7 +1040,8 @@ class _InfoCard extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  width: 5, height: 5,
+                  width: 5,
+                  height: 5,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: isOnTarget

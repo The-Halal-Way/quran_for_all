@@ -21,7 +21,6 @@ import 'learning_module_detail_view.dart';
 
 class LearnQuranView extends StatefulWidget {
   const LearnQuranView({super.key});
-
   @override
   State<LearnQuranView> createState() => _LearnQuranViewState();
 }
@@ -31,10 +30,7 @@ class _LearnQuranViewState extends State<LearnQuranView> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!mounted) {
-        return;
-      }
-
+      if (!mounted) return;
       unawaited(context.read<LearnQuranViewModel>().initialize());
     });
   }
