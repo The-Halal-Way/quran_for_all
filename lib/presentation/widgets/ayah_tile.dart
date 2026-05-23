@@ -17,6 +17,7 @@ class AyahTile extends StatelessWidget {
     required this.isBookmarked,
     required this.isLastReadAyah,
     required this.isPlaying,
+    required this.playbackProgress,
     required this.onPlay,
     required this.onToggleBookmark,
     this.onMarkAsLastRead,
@@ -29,6 +30,7 @@ class AyahTile extends StatelessWidget {
   final bool isBookmarked;
   final bool isLastReadAyah;
   final bool isPlaying;
+  final double playbackProgress;
   final VoidCallback onPlay;
   final VoidCallback onToggleBookmark;
   final VoidCallback? onMarkAsLastRead;
@@ -277,12 +279,7 @@ class AyahTile extends StatelessWidget {
                     ],
                   ),
                 const SizedBox(height: AppSpacing.sm + 2),
-                Text(
-                  ayah.arabicText,
-                  textAlign: TextAlign.right,
-                  textDirection: TextDirection.rtl,
-                  style: AppTextStyles.quranArabic(context),
-                ),
+                _buildArabicText(context),
                 if (showPronunciation && transliteration.isNotEmpty) ...[
                   const SizedBox(height: AppSpacing.sm),
                   Text(
@@ -301,6 +298,54 @@ class AyahTile extends StatelessWidget {
             ),
           );
         },
+      ),
+    );
+  }
+
+  Widget _buildArabicText(BuildContext context) {
+    final baseStyle = AppTextStyles.quranArabic(context);
+
+    if (!isPlaying || playbackProgress <= 0) {
+      return Text(
+        ayah.arabicText,
+        textAlign: TextAlign.right,
+        textDirection: TextDirection.rtl,
+        style: baseStyle,
+      );
+    }
+
+    final graphemes = ayah.arabicText.characters.toList();
+    if (graphemes.isEmpty) {
+      return Text(
+        ayah.arabicText,
+        textAlign: TextAlign.right,
+        textDirection: TextDirection.rtl,
+        style: baseStyle,
+      );
+    }
+
+    final total = graphemes.length;
+    final clamped = playbackProgress.clamp(0.0, 1.0);
+    final highlightCount = (total * clamped).ceil().clamp(0, total);
+
+    final highlighted = graphemes.take(highlightCount).join();
+    final remaining = graphemes.skip(highlightCount).join();
+    final colorScheme = Theme.of(context).colorScheme;
+
+    return RichText(
+      textAlign: TextAlign.right,
+      textDirection: TextDirection.rtl,
+      text: TextSpan(
+        style: baseStyle,
+        children: [
+          TextSpan(
+            text: highlighted,
+            style: baseStyle.copyWith(
+              backgroundColor: colorScheme.secondary.withValues(alpha: 0.28),
+            ),
+          ),
+          TextSpan(text: remaining, style: baseStyle),
+        ],
       ),
     );
   }

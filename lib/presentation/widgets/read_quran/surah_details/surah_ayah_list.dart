@@ -12,6 +12,7 @@ import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
 import 'package:quran_for_all/data/models/ayah_model.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_snackbar.dart';
+import 'package:quran_for_all/presentation/viewmodels/audio_control_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 import 'package:quran_for_all/presentation/widgets/ayah_tile.dart';
@@ -43,15 +44,9 @@ class SurahAyahList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<SurahDetailsViewModel>();
+    final audioControl = context.watch<AudioControlViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
     final responsive = AppResponsive.of(context);
-    final List<BoxShadow> cardShadow = [
-      BoxShadow(
-        color: const Color(0xFFA2A2A2).withOpacity(.25),
-        blurRadius: 3,
-        offset: const Offset(0, 1),
-      ),
-    ];
     // regular view
     if (settings.readingViewMode == ReadingViewMode.regularView) {
       return ListView(
@@ -155,26 +150,41 @@ class SurahAyahList extends StatelessWidget {
           Padding(
             key: _ayahKeyFor(ayah.ayahNumber),
             padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
-            child: AnimatedContainer(
-              duration: const Duration(milliseconds: 250),
-              curve: Curves.easeOut,
-              decoration: BoxDecoration(
-                color: ayah.ayahNumber == _highlightedAyahNumber
-                    ? Theme.of(
-                        context,
-                      ).colorScheme.primary.withValues(alpha: 0.08)
-                    : null,
-                borderRadius: BorderRadius.circular(AppRadius.lg),
-                border: ayah.ayahNumber == _highlightedAyahNumber
-                    ? Border.all(
-                        color: Theme.of(
-                          context,
-                        ).colorScheme.primary.withValues(alpha: 0.42),
-                        width: 1.2,
-                      )
-                    : null,
-              ),
-              child: _buildDetailsAyahTile(context, ayah, viewModel, settings),
+            child: Builder(
+              builder: (context) {
+                final colorScheme = Theme.of(context).colorScheme;
+                final isPlaying = viewModel.isAyahPlaying(ayah.ayahNumber);
+                final isHighlighted = ayah.ayahNumber == _highlightedAyahNumber;
+                final showHighlight = isPlaying || isHighlighted;
+
+                return AnimatedContainer(
+                  duration: const Duration(milliseconds: 250),
+                  curve: Curves.easeOut,
+                  decoration: BoxDecoration(
+                    color: isPlaying
+                        ? colorScheme.secondary.withValues(alpha: 0.12)
+                        : (isHighlighted
+                              ? colorScheme.primary.withValues(alpha: 0.08)
+                              : null),
+                    borderRadius: BorderRadius.circular(AppRadius.lg),
+                    border: showHighlight
+                        ? Border.all(
+                            color: isPlaying
+                                ? colorScheme.secondary.withValues(alpha: 0.58)
+                                : colorScheme.primary.withValues(alpha: 0.42),
+                            width: isPlaying ? 1.4 : 1.2,
+                          )
+                        : null,
+                  ),
+                  child: _buildDetailsAyahTile(
+                    context,
+                    ayah,
+                    viewModel,
+                    settings,
+                    audioControl.progress,
+                  ),
+                );
+              },
             ),
           ),
       ],
@@ -186,6 +196,7 @@ class SurahAyahList extends StatelessWidget {
     AyahModel ayah,
     SurahDetailsViewModel viewModel,
     AppSettings settings,
+    double playbackProgress,
   ) {
     return AyahTile(
       ayah: ayah,
@@ -195,6 +206,9 @@ class SurahAyahList extends StatelessWidget {
       isBookmarked: viewModel.isAyahBookmarked(ayah.ayahNumber),
       isLastReadAyah: viewModel.isLastReadAyah(ayah.ayahNumber),
       isPlaying: viewModel.isAyahPlaying(ayah.ayahNumber),
+      playbackProgress: viewModel.isAyahPlaying(ayah.ayahNumber)
+          ? playbackProgress
+          : 0,
       onPlay: () => unawaited(
         viewModel.isAyahPlaying(ayah.ayahNumber)
             ? viewModel.stopPlayback()
@@ -295,6 +309,7 @@ class SurahAyahList extends StatelessWidget {
                   ayah,
                   liveViewModel,
                   settingsVm.settings,
+                  context.watch<AudioControlViewModel>().progress,
                 ),
               ),
             );
