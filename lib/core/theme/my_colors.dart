@@ -23,7 +23,7 @@ class MyColors {
   // ── Light Surfaces ───────────────────────────────────────────────────────
   static const Color scaffold        = Color(0xFFF5F2FF); // ice‑blue lavender
   static const Color surface         = Color(0xFFFFFFFF); // pure white
-  static const Color surfaceContainer = Color(0xFFEEE8FA); // pale violet pearl
+  static const Color surfaceContainer = Colors.white; // pale violet pearl
   static const Color cardFill        = Color(0xFFFFFFFF); // clean cards
   static const Color divider         = Color(0xFFD9D1E8); // soft violet‑grey
 

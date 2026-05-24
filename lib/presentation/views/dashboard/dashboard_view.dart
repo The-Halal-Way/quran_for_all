@@ -145,7 +145,6 @@ class _DashboardViewState extends State<DashboardView> {
 
   bool get _isDark => Theme.of(context).brightness == Brightness.dark;
 
-  Color get _scaffoldBg => _isDark ? MyColors.darkScaffold : MyColors.scaffold;
   Color get _cardBg => _isDark ? MyColors.darkCard : MyColors.cardFill;
   Color get _textMain =>
       _isDark ? MyColors.darkTextPrimary : MyColors.textPrimary;
@@ -210,7 +209,6 @@ class _DashboardViewState extends State<DashboardView> {
   Widget build(BuildContext context) {
     final responsive = AppResponsive.of(context);
     return Scaffold(
-      backgroundColor: _scaffoldBg,
       body: Stack(
         children: [
           // Subtle background tiling

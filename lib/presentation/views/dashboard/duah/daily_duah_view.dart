@@ -49,7 +49,6 @@ class _DailyDuahViewState extends State<DailyDuahView>
     final responsive = AppResponsive.of(context);
 
     return Scaffold(
-      backgroundColor: colorScheme.surface,
       body: LayoutBuilder(
         builder: (context, constraints) {
           final maxWidth = responsive.maxReadingContentWidth;

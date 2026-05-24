@@ -53,7 +53,6 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
     final colorScheme = Theme.of(context).colorScheme;
     final isDark = colorScheme.brightness == Brightness.dark;
     return Scaffold(
-      backgroundColor: colorScheme.surface,
       body: LayoutBuilder(
         builder: (context, constraints) {
           final horizontal = 12.h;

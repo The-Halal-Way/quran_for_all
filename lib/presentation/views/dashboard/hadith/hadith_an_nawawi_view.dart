@@ -71,7 +71,6 @@ class _HadithScreenState extends State<HadithAnNawawiView>
 
   ColorScheme get _scheme => Theme.of(context).colorScheme;
 
-  Color get _scaffoldBg => _scheme.surface;
   Color get _cardBg => _scheme.surfaceContainer;
   Color get _textMain => _scheme.onSurface;
   Color get _textSub => _scheme.onSurfaceVariant;
@@ -120,14 +119,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 350),
-      color: _scaffoldBg,
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        body: _loading ? _buildSplash() : _buildMain(),
-      ),
-    );
+    return Scaffold(body: _loading ? _buildSplash() : _buildMain());
   }
 
   Widget _buildSplash() {
@@ -155,10 +147,11 @@ class _HadithScreenState extends State<HadithAnNawawiView>
   Widget _buildMain() {
     final book = _book!;
     final responsive = AppResponsive.of(context);
+    final isDark = _scheme.brightness == Brightness.dark;
     return Stack(
       children: [
         // Background decorative mesh
-        _BackgroundMesh(isDark: _scheme.brightness == Brightness.dark),
+        _BackgroundMesh(isDark: isDark),
         // Main paged content
         Column(
           children: [
@@ -180,8 +173,8 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                         child: _IntroPage(
                           book: book,
                           isBangla: _isBangla,
-                          isDark: _scheme.brightness == Brightness.dark,
-                          cardBg: _cardBg,
+                          isDark: isDark,
+                          cardBg: isDark ? _cardBg : Colors.white,
                           textMain: _textMain,
                           textSub: _textSub,
                           textHint: _textHint,
@@ -199,8 +192,8 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                       child: _HadithPage(
                         hadith: hadith,
                         isBangla: _isBangla,
-                        isDark: _scheme.brightness == Brightness.dark,
-                        cardBg: _cardBg,
+                        isDark: isDark,
+                        cardBg: isDark ? _cardBg : Colors.white,
                         textMain: _textMain,
                         textSub: _textSub,
                         textHint: _textHint,
@@ -212,7 +205,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                 },
               ),
             ),
-            _buildBottomNav(book),
+            _buildBottomNav(book, isDark),
           ],
         ),
       ],
@@ -355,7 +348,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
 
   // ── Bottom navigation ──────────────────────────────────────────────────────
 
-  Widget _buildBottomNav(HadithBook book) {
+  Widget _buildBottomNav(HadithBook book, bool isDark) {
     final canPrev = _currentIndex > -1;
     final canNext = _currentIndex < book.hadiths.length - 1;
 
@@ -368,7 +361,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
         bottom: MediaQuery.of(context).padding.bottom,
       ),
       decoration: BoxDecoration(
-        color: _scheme.surfaceContainerHigh.withValues(alpha: 0.95),
+        color: isDark ? _cardBg : Colors.white,
         border: Border(top: BorderSide(color: _divider, width: 0.8)),
         boxShadow: [
           BoxShadow(

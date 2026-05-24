@@ -150,9 +150,6 @@ class _CompassViewState extends State<CompassView>
 
     if (_isInitializing || (!_isListening && !_isApiFallback)) {
       return Scaffold(
-        backgroundColor: isDark
-            ? const Color(0xFF060118)
-            : const Color(0xFFF5F2FF),
         body: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -203,9 +200,6 @@ class _CompassViewState extends State<CompassView>
     }
 
     return Scaffold(
-      backgroundColor: isDark
-          ? const Color(0xFF060118)
-          : const Color(0xFFF5F2FF),
       body: SafeArea(
         child: Column(
           children: [

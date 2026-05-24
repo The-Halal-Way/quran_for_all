@@ -71,7 +71,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
 
   ColorScheme get _scheme => Theme.of(context).colorScheme;
 
-  Color get _scaffoldBg => _scheme.surface;
+  Color get _scaffoldBg => Theme.of(context).scaffoldBackgroundColor;
   Color get _cardBg => _scheme.surfaceContainer;
   Color get _textMain => _scheme.onSurface;
   Color get _textSub => _scheme.onSurfaceVariant;
@@ -130,10 +130,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
         const SizedBox(height: 20),
         Text(
           'Loading...',
-          style: GoogleFonts.manrope(
-            fontSize: 14,
-            color: _textHint,
-          ),
+          style: GoogleFonts.manrope(fontSize: 14, color: _textHint),
         ),
       ],
     ),
@@ -142,42 +139,42 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
   Widget _buildBody() {
     final book = _book!;
     final responsive = AppResponsive.of(context);
+    final isDark = _scheme.brightness == Brightness.dark;
 
     return FadeTransition(
       opacity: _fadeIn,
       child: Stack(
         children: [
-          _TileBackground(isDark: _scheme.brightness == Brightness.dark),
+          _TileBackground(isDark: isDark),
           Column(
             children: [
               _buildHeader(book),
-              _buildProgressBar(book),
+              _buildProgressBar(book, isDark),
               Expanded(
                 child: PageView.builder(
                   controller: _pageController,
                   onPageChanged: (i) => setState(() => _currentIndex = i),
                   itemCount: book.hadiths.length,
-                  itemBuilder: (_, i) => Center(
-                    child: ConstrainedBox(
-                      constraints: BoxConstraints(
-                        maxWidth: responsive.maxReadingContentWidth,
-                      ),
-                      child: _ShortHadithPage(
-                        hadith: book.hadiths[i],
-                        isBangla: _isBangla,
-                        isDark: _scheme.brightness == Brightness.dark,
-                        cardBg: _cardBg,
-                        textMain: _textMain,
-                        textSub: _textSub,
-                        textHint: _textHint,
-                        divider: _dividerClr,
-                        totalCount: book.hadiths.length,
-                      ),
+                  itemBuilder: (_, i) => ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxWidth: responsive.maxReadingContentWidth,
+                    ),
+                    child: _ShortHadithPage(
+                      hadith: book.hadiths[i],
+                      isBangla: _isBangla,
+                      isDark: isDark,
+                      cardBg: isDark ? _cardBg : Colors.white,
+                      textMain: _textMain,
+                      textSub: _textSub,
+                      textHint: _textHint,
+                      divider: _dividerClr,
+                      totalCount: book.hadiths.length,
                     ),
                   ),
                 ),
               ),
-              _buildBottomBar(book),
+              // navbar
+              _buildBottomBar(book, _scheme.brightness == Brightness.dark),
             ],
           ),
         ],
@@ -253,12 +250,12 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
 
   // ── Progress bar ───────────────────────────────────────────────────────────
 
-  Widget _buildProgressBar(ShortHadithBook book) {
+  Widget _buildProgressBar(ShortHadithBook book, bool isDark) {
     final progress = (_currentIndex + 1) / book.hadiths.length;
     return AnimatedContainer(
       duration: const Duration(milliseconds: 250),
       padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
-      color: _scheme.surfaceContainer,
+      color: isDark ? _cardBg : Colors.white,
       child: Row(
         children: [
           Expanded(
@@ -336,7 +333,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
 
   // ── Bottom bar ─────────────────────────────────────────────────────────────
 
-  Widget _buildBottomBar(ShortHadithBook book) {
+  Widget _buildBottomBar(ShortHadithBook book, bool isDark) {
     final canPrev = _currentIndex > 0;
     final canNext = _currentIndex < book.hadiths.length - 1;
 
@@ -349,7 +346,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
         bottom: MediaQuery.of(context).padding.bottom + 10,
       ),
       decoration: BoxDecoration(
-        color: _scheme.surfaceContainerHigh,
+        color: isDark ? _cardBg : Colors.white,
         border: Border(top: BorderSide(color: _dividerClr, width: 0.8)),
       ),
       child: Row(

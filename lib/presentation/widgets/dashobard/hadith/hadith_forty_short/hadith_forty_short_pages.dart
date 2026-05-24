@@ -23,7 +23,7 @@ class _ShortHadithPage extends StatelessWidget {
     final bullets = hadith.bulletsOf(isBangla);
 
     return SingleChildScrollView(
-      padding: const EdgeInsets.fromLTRB(16, 20, 16, 24),
+      padding: const EdgeInsets.fromLTRB(12, 20, 12, 24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -214,18 +214,7 @@ class _HeadlineCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
       decoration: BoxDecoration(
         color: cardBg,
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(
-          color: MyColors.secondary.withOpacity(isDark ? 0.18 : 0.12),
-          width: 0.8,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: MyColors.secondary.withOpacity(isDark ? 0.08 : 0.05),
-            blurRadius: 14,
-            offset: const Offset(0, 3),
-          ),
-        ],
+        borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -289,19 +278,7 @@ class _LessonsCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: cardBg,
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(
-          color: isDark
-              ? Colors.white.withOpacity(0.06)
-              : divider.withOpacity(0.8),
-          width: 0.8,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: MyColors.primary.withOpacity(isDark ? 0.12 : 0.04),
-            blurRadius: 12,
-            offset: const Offset(0, 3),
-          ),
-        ],
+       
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
