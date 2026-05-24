@@ -25,8 +25,7 @@ class NowPlayingInfo {
 /// - Reflects whether audio is currently playing (driven by [AudioRepository]).
 /// - Knows which page *started* the audio ([PlaybackSource] source).
 /// - Knows which page is currently *active / visible* in the navigator.
-/// - Computes [showMiniPlayer]: show the bar only when playing and the user
-///   has navigated away from the source page.
+/// - Computes [showMiniPlayer]: show the bar whenever audio is active.
 class AudioControlViewModel extends ChangeNotifier {
   AudioControlViewModel({required AudioRepository audioRepository})
     : _audioRepository = audioRepository {
@@ -76,12 +75,10 @@ class AudioControlViewModel extends ChangeNotifier {
 
   /// True when a mini-player should be shown at the bottom of the app.
   ///
-  /// Condition: audio is active (playing OR paused) AND the user is NOT on the
-  /// page that started it.
+  /// Condition: audio is active (playing OR paused) and there is now-playing
+  /// context.
   bool get showMiniPlayer =>
-      (_isPlaying || _isPaused) &&
-      _nowPlaying != null &&
-      _activePage != _nowPlaying!.source;
+      (_isPlaying || _isPaused) && _nowPlaying != null;
 
   // ── Called by viewmodels when they initiate playback ─────────────────────
 

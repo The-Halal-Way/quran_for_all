@@ -303,9 +303,18 @@ class SurahAyahList extends StatelessWidget {
       isScrollControlled: true,
       showDragHandle: true,
       builder: (sheetContext) {
-        return Consumer2<SurahDetailsViewModel, SettingsViewModel>(
-          builder: (sheetContext, liveViewModel, settingsVm, _) {
-            final liveAudioControl = context.watch<AudioControlViewModel>();
+        return Consumer3<
+          SurahDetailsViewModel,
+          SettingsViewModel,
+          AudioControlViewModel
+        >(
+          builder: (
+            sheetContext,
+            liveViewModel,
+            settingsVm,
+            liveAudioControl,
+            _,
+          ) {
             return SafeArea(
               child: SingleChildScrollView(
                 padding: EdgeInsets.only(

@@ -5,7 +5,7 @@ import '../../../core/theme/app_spacing.dart';
 import '../../viewmodels/audio_control_viewmodel.dart';
 
 /// Global audio mini-player that overlays the bottom of the app whenever
-/// audio is active (playing or paused) and the user is not on the source page.
+/// audio is active (playing or paused).
 ///
 /// Layout:
 ///   [thin progress bar]
