@@ -214,5 +214,111 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duahTapToShowPronunciation => 'Tap to show pronunciation';
 
   @override
+  String get dashboardGreetingMorning => 'Good morning';
+
+  @override
+  String get dashboardGreetingAfternoon => 'Good afternoon';
+
+  @override
+  String get dashboardGreetingEvening => 'Good evening';
+
+  @override
+  String get dashboardSectionPrayerTimes => 'Prayer Times';
+
+  @override
+  String get dashboardActionFullPrayerView => 'Full Prayer View';
+
+  @override
+  String get dashboardActionQiblaCompass => 'Qibla Compass';
+
+  @override
+  String get dashboardSectionDua => 'Du\'a';
+
+  @override
+  String get dashboardActionDailyDua => 'Daily Du\'a';
+
+  @override
+  String get dashboardActionDailyDuaSub => 'Morning & evening';
+
+  @override
+  String get dashboardActionPowerfulDua => 'Powerful Du\'a';
+
+  @override
+  String get dashboardActionPowerfulDuaSub => 'Curated supplications';
+
+  @override
+  String get dashboardSectionHadith => 'Hadith';
+
+  @override
+  String get dashboardContinueReadingTitle => 'Continue Reading';
+
+  @override
+  String get dashboardContinueReadingStartSubtitle => 'Start where you left off';
+
+  @override
+  String get dashboardContinueReadingStartDetail => 'Open your recent surah and continue';
+
+  @override
+  String dashboardContinueReadingAyahDetail(int ayahNumber, String surahName) {
+    return 'Ayah $ayahNumber · $surahName';
+  }
+
+  @override
+  String get dashboardQuranLabel => 'Quran';
+
+  @override
+  String get dashboardContinueLearningTitle => 'Continue Learning';
+
+  @override
+  String get dashboardContinueLearningStartSubtitle => 'Start Learning';
+
+  @override
+  String get dashboardContinueLearningStartDetail => 'Open learning tracks';
+
+  @override
+  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount) {
+    return '$moduleTitle · $lessonCount lessons';
+  }
+
+  @override
+  String get dashboardRetry => 'Retry';
+
+  @override
+  String get dashboardNextPrayer => 'Next Prayer';
+
+  @override
+  String get dashboardNextShortLabel => 'Next';
+
+  @override
+  String get dashboardPrayerFajr => 'Fajr';
+
+  @override
+  String get dashboardPrayerSunrise => 'Sunrise';
+
+  @override
+  String get dashboardPrayerDhuhr => 'Dhuhr';
+
+  @override
+  String get dashboardPrayerAsr => 'Asr';
+
+  @override
+  String get dashboardPrayerMaghrib => 'Maghrib';
+
+  @override
+  String get dashboardPrayerIsha => 'Isha';
+
+  @override
+  String get dashboardHadithAnNawawiTitle => 'Forty Hadith An-Nawawi';
+
+  @override
+  String get dashboardHadithAnNawawiDescription => 'The classical collection by Imam An-Nawawi';
+
+  @override
+  String get dashboardHadithShortTitle => 'Forty Short Hadith';
+
+  @override
+  String get dashboardHadithShortDescription => 'Short hadith for easy memorization & practice';
+
+  @override
   String get learnQuranTextMapRaw => '';
 }

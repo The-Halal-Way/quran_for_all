@@ -9,11 +9,11 @@ extension _DashboardViewStateSections on _DashboardViewState {
     final hour = now.hour;
     String greeting;
     if (hour < 12) {
-      greeting = 'Good morning';
+      greeting = context.l10n.dashboardGreetingMorning;
     } else if (hour < 17) {
-      greeting = 'Good afternoon';
+      greeting = context.l10n.dashboardGreetingAfternoon;
     } else {
-      greeting = 'Good evening';
+      greeting = context.l10n.dashboardGreetingEvening;
     }
     final dateStr = DateFormat('EEEE, d MMMM').format(now);
 
@@ -103,7 +103,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
         ),
         const SizedBox(height: 2),
         Text(
-          'Quran for All',
+          context.l10n.appName,
           style: GoogleFonts.sora(
             fontSize: 28,
             fontWeight: FontWeight.w800,
@@ -143,10 +143,13 @@ extension _DashboardViewStateSections on _DashboardViewState {
     final lastReadSurah = readViewModel.lastReadSurah;
     final continueReadingSubtitle = hasLastRead
         ? '${lastReadSurah!.nameEnglish} (${lastReadSurah.nameArabic})'
-        : 'Start where you left off';
+        : context.l10n.dashboardContinueReadingStartSubtitle;
     final continueReadingDetail = hasLastRead
-        ? 'Ayah ${lastRead!.ayahNumber} · ${lastReadSurah?.nameTranslated ?? 'Quran'}'
-        : 'Open your recent surah and continue';
+        ? context.l10n.dashboardContinueReadingAyahDetail(
+            lastRead!.ayahNumber,
+            lastReadSurah?.nameTranslated ?? context.l10n.dashboardQuranLabel,
+          )
+        : context.l10n.dashboardContinueReadingStartDetail;
 
     final nextLesson = learnViewModel.nextLesson;
     final nextModule = nextLesson != null
@@ -154,16 +157,20 @@ extension _DashboardViewStateSections on _DashboardViewState {
         : (learnViewModel.modules.isNotEmpty
               ? learnViewModel.modules.first
               : null);
-    final continueLearningSubtitle = nextLesson?.title ?? 'Start Learning';
+    final continueLearningSubtitle =
+        nextLesson?.title ?? context.l10n.dashboardContinueLearningStartSubtitle;
     final continueLearningDetail = nextModule != null
-        ? '${nextModule.title} · ${nextModule.lessons.length} lessons'
-        : 'Open learning tracks';
+        ? context.l10n.dashboardContinueLearningModuleDetail(
+            nextModule.title,
+            nextModule.lessons.length,
+          )
+        : context.l10n.dashboardContinueLearningStartDetail;
 
     return Row(
       children: [
         Expanded(
           child: _ContinueCard(
-            title: 'Continue Reading',
+            title: context.l10n.dashboardContinueReadingTitle,
             subtitle: continueReadingSubtitle,
             detail: continueReadingDetail,
             arabicSnippet: 'ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ',
@@ -185,7 +192,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
         const SizedBox(width: 10),
         Expanded(
           child: _ContinueCard(
-            title: 'Continue Learning',
+            title: context.l10n.dashboardContinueLearningTitle,
             subtitle: continueLearningSubtitle,
             detail: continueLearningDetail,
             arabicSnippet: 'ن  ◌ّ  م',
@@ -311,7 +318,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                         ),
                       ),
                       child: Text(
-                        'Retry',
+                        context.l10n.dashboardRetry,
                         style: GoogleFonts.manrope(
                           fontSize: 13,
                           fontWeight: FontWeight.w700,
@@ -359,7 +366,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Next Prayer',
+                              context.l10n.dashboardNextPrayer,
                               style: GoogleFonts.manrope(
                                 fontSize: 10,
                                 color: Colors.white.withOpacity(0.7),
@@ -368,7 +375,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                               ),
                             ),
                             Text(
-                              _nextPrayer!,
+                              _localizePrayerName(_nextPrayer!),
                               style: GoogleFonts.sora(
                                 fontSize: 17,
                                 fontWeight: FontWeight.w800,
@@ -400,7 +407,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                     children: (_prayerTimes ?? {}).entries.map((entry) {
                       final isNext = entry.key == _nextPrayer;
                       return _PrayerRow(
-                        name: entry.key,
+                        name: _localizePrayerName(entry.key),
                         time: entry.value,
                         icon: _getPrayerIcon(entry.key),
                         isNext: isNext,
@@ -468,8 +475,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
         _HadithNavCard(
           number: '40',
           arabicTitle: 'الأربعون النووية',
-          englishTitle: 'Forty Hadith An-Nawawi',
-          description: 'The classical collection by Imam An-Nawawi',
+          englishTitle: context.l10n.dashboardHadithAnNawawiTitle,
+          description: context.l10n.dashboardHadithAnNawawiDescription,
           accentColors: [MyColors.primary, MyColors.primaryLight],
           glowColor: MyColors.primaryLight,
           isDark: _isDark,
@@ -484,8 +491,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
         _HadithNavCard(
           number: '40',
           arabicTitle: 'الأحاديث القصيرة',
-          englishTitle: 'Forty Short Hadith',
-          description: 'Short hadith for easy memorization & practice',
+          englishTitle: context.l10n.dashboardHadithShortTitle,
+          description: context.l10n.dashboardHadithShortDescription,
           accentColors: [Color(0xFF005C4B), MyColors.tertiary],
           glowColor: MyColors.tertiary,
           isDark: _isDark,
@@ -498,5 +505,24 @@ extension _DashboardViewStateSections on _DashboardViewState {
         ),
       ],
     );
+  }
+
+  String _localizePrayerName(String prayer) {
+    switch (prayer) {
+      case 'Fajr':
+        return context.l10n.dashboardPrayerFajr;
+      case 'Sunrise':
+        return context.l10n.dashboardPrayerSunrise;
+      case 'Dhuhr':
+        return context.l10n.dashboardPrayerDhuhr;
+      case 'Asr':
+        return context.l10n.dashboardPrayerAsr;
+      case 'Maghrib':
+        return context.l10n.dashboardPrayerMaghrib;
+      case 'Isha':
+        return context.l10n.dashboardPrayerIsha;
+      default:
+        return prayer;
+    }
   }
 }

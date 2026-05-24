@@ -473,6 +473,210 @@ abstract class AppLocalizations {
   /// **'Tap to show pronunciation'**
   String get duahTapToShowPronunciation;
 
+  /// No description provided for @dashboardGreetingMorning.
+  ///
+  /// In en, this message translates to:
+  /// **'Good morning'**
+  String get dashboardGreetingMorning;
+
+  /// No description provided for @dashboardGreetingAfternoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Good afternoon'**
+  String get dashboardGreetingAfternoon;
+
+  /// No description provided for @dashboardGreetingEvening.
+  ///
+  /// In en, this message translates to:
+  /// **'Good evening'**
+  String get dashboardGreetingEvening;
+
+  /// No description provided for @dashboardSectionPrayerTimes.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer Times'**
+  String get dashboardSectionPrayerTimes;
+
+  /// No description provided for @dashboardActionFullPrayerView.
+  ///
+  /// In en, this message translates to:
+  /// **'Full Prayer View'**
+  String get dashboardActionFullPrayerView;
+
+  /// No description provided for @dashboardActionQiblaCompass.
+  ///
+  /// In en, this message translates to:
+  /// **'Qibla Compass'**
+  String get dashboardActionQiblaCompass;
+
+  /// No description provided for @dashboardSectionDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Du\'a'**
+  String get dashboardSectionDua;
+
+  /// No description provided for @dashboardActionDailyDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Du\'a'**
+  String get dashboardActionDailyDua;
+
+  /// No description provided for @dashboardActionDailyDuaSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Morning & evening'**
+  String get dashboardActionDailyDuaSub;
+
+  /// No description provided for @dashboardActionPowerfulDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Powerful Du\'a'**
+  String get dashboardActionPowerfulDua;
+
+  /// No description provided for @dashboardActionPowerfulDuaSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Curated supplications'**
+  String get dashboardActionPowerfulDuaSub;
+
+  /// No description provided for @dashboardSectionHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith'**
+  String get dashboardSectionHadith;
+
+  /// No description provided for @dashboardContinueReadingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue Reading'**
+  String get dashboardContinueReadingTitle;
+
+  /// No description provided for @dashboardContinueReadingStartSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Start where you left off'**
+  String get dashboardContinueReadingStartSubtitle;
+
+  /// No description provided for @dashboardContinueReadingStartDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Open your recent surah and continue'**
+  String get dashboardContinueReadingStartDetail;
+
+  /// No description provided for @dashboardContinueReadingAyahDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Ayah {ayahNumber} · {surahName}'**
+  String dashboardContinueReadingAyahDetail(int ayahNumber, String surahName);
+
+  /// No description provided for @dashboardQuranLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran'**
+  String get dashboardQuranLabel;
+
+  /// No description provided for @dashboardContinueLearningTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue Learning'**
+  String get dashboardContinueLearningTitle;
+
+  /// No description provided for @dashboardContinueLearningStartSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Learning'**
+  String get dashboardContinueLearningStartSubtitle;
+
+  /// No description provided for @dashboardContinueLearningStartDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Open learning tracks'**
+  String get dashboardContinueLearningStartDetail;
+
+  /// No description provided for @dashboardContinueLearningModuleDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'{moduleTitle} · {lessonCount} lessons'**
+  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount);
+
+  /// No description provided for @dashboardRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get dashboardRetry;
+
+  /// No description provided for @dashboardNextPrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'Next Prayer'**
+  String get dashboardNextPrayer;
+
+  /// No description provided for @dashboardNextShortLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get dashboardNextShortLabel;
+
+  /// No description provided for @dashboardPrayerFajr.
+  ///
+  /// In en, this message translates to:
+  /// **'Fajr'**
+  String get dashboardPrayerFajr;
+
+  /// No description provided for @dashboardPrayerSunrise.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunrise'**
+  String get dashboardPrayerSunrise;
+
+  /// No description provided for @dashboardPrayerDhuhr.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhuhr'**
+  String get dashboardPrayerDhuhr;
+
+  /// No description provided for @dashboardPrayerAsr.
+  ///
+  /// In en, this message translates to:
+  /// **'Asr'**
+  String get dashboardPrayerAsr;
+
+  /// No description provided for @dashboardPrayerMaghrib.
+  ///
+  /// In en, this message translates to:
+  /// **'Maghrib'**
+  String get dashboardPrayerMaghrib;
+
+  /// No description provided for @dashboardPrayerIsha.
+  ///
+  /// In en, this message translates to:
+  /// **'Isha'**
+  String get dashboardPrayerIsha;
+
+  /// No description provided for @dashboardHadithAnNawawiTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Forty Hadith An-Nawawi'**
+  String get dashboardHadithAnNawawiTitle;
+
+  /// No description provided for @dashboardHadithAnNawawiDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'The classical collection by Imam An-Nawawi'**
+  String get dashboardHadithAnNawawiDescription;
+
+  /// No description provided for @dashboardHadithShortTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Forty Short Hadith'**
+  String get dashboardHadithShortTitle;
+
+  /// No description provided for @dashboardHadithShortDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Short hadith for easy memorization & practice'**
+  String get dashboardHadithShortDescription;
+
   /// No description provided for @learnQuranTextMapRaw.
   ///
   /// In en, this message translates to:

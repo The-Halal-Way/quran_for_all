@@ -131,5 +131,59 @@
     }
   },
   "duahTapToShowPronunciation": "Tap to show pronunciation",
+  "dashboardGreetingMorning": "Good morning",
+  "dashboardGreetingAfternoon": "Good afternoon",
+  "dashboardGreetingEvening": "Good evening",
+  "dashboardSectionPrayerTimes": "Prayer Times",
+  "dashboardActionFullPrayerView": "Full Prayer View",
+  "dashboardActionQiblaCompass": "Qibla Compass",
+  "dashboardSectionDua": "Du'a",
+  "dashboardActionDailyDua": "Daily Du'a",
+  "dashboardActionDailyDuaSub": "Morning & evening",
+  "dashboardActionPowerfulDua": "Powerful Du'a",
+  "dashboardActionPowerfulDuaSub": "Curated supplications",
+  "dashboardSectionHadith": "Hadith",
+  "dashboardContinueReadingTitle": "Continue Reading",
+  "dashboardContinueReadingStartSubtitle": "Start where you left off",
+  "dashboardContinueReadingStartDetail": "Open your recent surah and continue",
+  "dashboardContinueReadingAyahDetail": "Ayah {ayahNumber} · {surahName}",
+  "@dashboardContinueReadingAyahDetail": {
+    "placeholders": {
+      "ayahNumber": {
+        "type": "int"
+      },
+      "surahName": {
+        "type": "String"
+      }
+    }
+  },
+  "dashboardQuranLabel": "Quran",
+  "dashboardContinueLearningTitle": "Continue Learning",
+  "dashboardContinueLearningStartSubtitle": "Start Learning",
+  "dashboardContinueLearningStartDetail": "Open learning tracks",
+  "dashboardContinueLearningModuleDetail": "{moduleTitle} · {lessonCount} lessons",
+  "@dashboardContinueLearningModuleDetail": {
+    "placeholders": {
+      "moduleTitle": {
+        "type": "String"
+      },
+      "lessonCount": {
+        "type": "int"
+      }
+    }
+  },
+  "dashboardRetry": "Retry",
+  "dashboardNextPrayer": "Next Prayer",
+  "dashboardNextShortLabel": "Next",
+  "dashboardPrayerFajr": "Fajr",
+  "dashboardPrayerSunrise": "Sunrise",
+  "dashboardPrayerDhuhr": "Dhuhr",
+  "dashboardPrayerAsr": "Asr",
+  "dashboardPrayerMaghrib": "Maghrib",
+  "dashboardPrayerIsha": "Isha",
+  "dashboardHadithAnNawawiTitle": "Forty Hadith An-Nawawi",
+  "dashboardHadithAnNawawiDescription": "The classical collection by Imam An-Nawawi",
+  "dashboardHadithShortTitle": "Forty Short Hadith",
+  "dashboardHadithShortDescription": "Short hadith for easy memorization & practice",
   "learnQuranTextMapRaw": ""
 }

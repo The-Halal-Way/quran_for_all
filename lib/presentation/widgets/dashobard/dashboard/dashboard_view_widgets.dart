@@ -200,7 +200,7 @@ class _PrayerRow extends StatelessWidget {
                 ),
               ),
               child: Text(
-                'Next',
+                context.l10n.dashboardNextShortLabel,
                 style: GoogleFonts.manrope(
                   fontSize: 9,
                   fontWeight: FontWeight.w700,

@@ -7,6 +7,7 @@ import 'package:quran_for_all/core/utils/app_page_route.dart';
 import 'package:quran_for_all/data/models/learn_quran_content.dart';
 import 'package:quran_for_all/data/models/surah_model.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
@@ -155,7 +156,7 @@ class _DashboardViewState extends State<DashboardView> {
                       _buildContinueCards(),
                       const SizedBox(height: 24),
                       _buildSectionLabel(
-                        'Prayer Times',
+                        context.l10n.dashboardSectionPrayerTimes,
                         Icons.access_time_rounded,
                         MyColors.secondary,
                       ),
@@ -166,13 +167,13 @@ class _DashboardViewState extends State<DashboardView> {
                         items: [
                           _ActionItem(
                             icon: Icons.access_time_filled_rounded,
-                            label: 'Full Prayer View',
+                            label: context.l10n.dashboardActionFullPrayerView,
                             color: MyColors.secondary,
                             onTap: () => _push(const PrayerView()),
                           ),
                           _ActionItem(
                             icon: Icons.explore_rounded,
-                            label: 'Qibla Compass',
+                            label: context.l10n.dashboardActionQiblaCompass,
                             color: MyColors.primaryLight,
                             onTap: () => _push(const CompassView()),
                           ),
@@ -180,7 +181,7 @@ class _DashboardViewState extends State<DashboardView> {
                       ),
                       const SizedBox(height: 24),
                       _buildSectionLabel(
-                        "Du'ā'",
+                        context.l10n.dashboardSectionDua,
                         Icons.auto_awesome_rounded,
                         MyColors.tertiary,
                       ),
@@ -189,15 +190,16 @@ class _DashboardViewState extends State<DashboardView> {
                         items: [
                           _ActionItem(
                             icon: Icons.wb_twilight_rounded,
-                            label: 'Daily Du\'ā\'',
-                            sublabel: 'Morning & evening',
+                            label: context.l10n.dashboardActionDailyDua,
+                            sublabel: context.l10n.dashboardActionDailyDuaSub,
                             color: MyColors.tertiary,
                             onTap: () => _push(const DailyDuahView()),
                           ),
                           _ActionItem(
                             icon: Icons.bolt_rounded,
-                            label: 'Powerful Du\'ā\'',
-                            sublabel: 'Curated supplications',
+                            label: context.l10n.dashboardActionPowerfulDua,
+                            sublabel:
+                                context.l10n.dashboardActionPowerfulDuaSub,
                             color: MyColors.secondary,
                             onTap: () => _push(const PowerfulDuahView()),
                           ),
@@ -205,7 +207,7 @@ class _DashboardViewState extends State<DashboardView> {
                       ),
                       const SizedBox(height: 24),
                       _buildSectionLabel(
-                        'Hadith',
+                        context.l10n.dashboardSectionHadith,
                         Icons.menu_book_rounded,
                         MyColors.primaryLight,
                       ),
