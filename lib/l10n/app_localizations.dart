@@ -677,6 +677,456 @@ abstract class AppLocalizations {
   /// **'Short hadith for easy memorization & practice'**
   String get dashboardHadithShortDescription;
 
+  /// No description provided for @prayerViewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer Details'**
+  String get prayerViewTitle;
+
+  /// No description provided for @prayerViewAppBarSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidance for this salah window'**
+  String get prayerViewAppBarSubtitle;
+
+  /// No description provided for @prayerViewRefreshTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh prayer times'**
+  String get prayerViewRefreshTooltip;
+
+  /// No description provided for @prayerViewLanguageTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Change language'**
+  String get prayerViewLanguageTooltip;
+
+  /// No description provided for @prayerViewCurrentFocus.
+  ///
+  /// In en, this message translates to:
+  /// **'Current focus'**
+  String get prayerViewCurrentFocus;
+
+  /// No description provided for @prayerViewLoadedFromLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Location time'**
+  String get prayerViewLoadedFromLocation;
+
+  /// No description provided for @prayerViewTimeFallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Guide mode'**
+  String get prayerViewTimeFallback;
+
+  /// No description provided for @prayerViewHeroNextLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Time to prepare'**
+  String get prayerViewHeroNextLabel;
+
+  /// No description provided for @prayerViewNoTime.
+  ///
+  /// In en, this message translates to:
+  /// **'--'**
+  String get prayerViewNoTime;
+
+  /// No description provided for @prayerViewPermissionHelpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer times need location'**
+  String get prayerViewPermissionHelpTitle;
+
+  /// No description provided for @prayerViewPermissionHelpBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable location permission to calculate local prayer times. The guidance below still stays available.'**
+  String get prayerViewPermissionHelpBody;
+
+  /// No description provided for @prayerViewTimelineTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s Prayer Rhythm'**
+  String get prayerViewTimelineTitle;
+
+  /// No description provided for @prayerViewTimelineSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan the full day, spot the next prayer, and keep the current focus visible.'**
+  String get prayerViewTimelineSubtitle;
+
+  /// No description provided for @prayerViewNowTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What to follow now'**
+  String get prayerViewNowTitle;
+
+  /// No description provided for @prayerViewNowSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A practical next move for the current prayer window.'**
+  String get prayerViewNowSubtitle;
+
+  /// No description provided for @prayerViewSuggestionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer suggestions'**
+  String get prayerViewSuggestionsTitle;
+
+  /// No description provided for @prayerViewSuggestionsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Small actions that make this salah feel calmer and more intentional.'**
+  String get prayerViewSuggestionsSubtitle;
+
+  /// No description provided for @prayerViewHowTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How to pray'**
+  String get prayerViewHowTitle;
+
+  /// No description provided for @prayerViewHowSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A simple flow for the core movements and presence of salah.'**
+  String get prayerViewHowSubtitle;
+
+  /// No description provided for @prayerViewBestPracticesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Best practices'**
+  String get prayerViewBestPracticesTitle;
+
+  /// No description provided for @prayerViewBestPracticesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Focused habits tailored to the prayer currently in view.'**
+  String get prayerViewBestPracticesSubtitle;
+
+  /// No description provided for @prayerViewFiqhNoteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice note'**
+  String get prayerViewFiqhNoteTitle;
+
+  /// No description provided for @prayerViewFiqhNoteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Details can vary by madhhab and local teaching. Use this as friendly guidance and follow a trusted scholar or imam for fiqh-specific rulings.'**
+  String get prayerViewFiqhNoteBody;
+
+  /// No description provided for @prayerViewFocus.
+  ///
+  /// In en, this message translates to:
+  /// **'Focus'**
+  String get prayerViewFocus;
+
+  /// No description provided for @prayerViewNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get prayerViewNext;
+
+  /// No description provided for @prayerViewPassed.
+  ///
+  /// In en, this message translates to:
+  /// **'Passed'**
+  String get prayerViewPassed;
+
+  /// No description provided for @prayerViewSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Soon'**
+  String get prayerViewSoon;
+
+  /// No description provided for @prayerHowIntentionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Intention & readiness'**
+  String get prayerHowIntentionTitle;
+
+  /// No description provided for @prayerHowIntentionBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Make wudu, face the qibla, and settle your intention in the heart before you begin.'**
+  String get prayerHowIntentionBody;
+
+  /// No description provided for @prayerHowQiyamTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Qiyam'**
+  String get prayerHowQiyamTitle;
+
+  /// No description provided for @prayerHowQiyamBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Stand calmly, say the opening takbir, recite Al-Fatihah, then recite what is easy from the Quran.'**
+  String get prayerHowQiyamBody;
+
+  /// No description provided for @prayerHowRukuTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ruku'**
+  String get prayerHowRukuTitle;
+
+  /// No description provided for @prayerHowRukuBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Bow with the back settled, glorify Allah, then rise with calm before going down.'**
+  String get prayerHowRukuBody;
+
+  /// No description provided for @prayerHowSujoodTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sujood'**
+  String get prayerHowSujoodTitle;
+
+  /// No description provided for @prayerHowSujoodBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Prostrate with humility, pause without rushing, then sit briefly and complete the second prostration.'**
+  String get prayerHowSujoodBody;
+
+  /// No description provided for @prayerHowTashahhudTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tashahhud'**
+  String get prayerHowTashahhudTitle;
+
+  /// No description provided for @prayerHowTashahhudBody.
+  ///
+  /// In en, this message translates to:
+  /// **'In the final sitting, recite tashahhud and send salawat upon the Prophet, peace be upon him.'**
+  String get prayerHowTashahhudBody;
+
+  /// No description provided for @prayerHowSalamTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Salam'**
+  String get prayerHowSalamTitle;
+
+  /// No description provided for @prayerHowSalamBody.
+  ///
+  /// In en, this message translates to:
+  /// **'End the prayer with salam, then remain present for short dhikr and du\'a.'**
+  String get prayerHowSalamBody;
+
+  /// No description provided for @prayerFocusFajrTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Fajr Window'**
+  String get prayerFocusFajrTitle;
+
+  /// No description provided for @prayerFocusFajrSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin the day before the world gets loud.'**
+  String get prayerFocusFajrSubtitle;
+
+  /// No description provided for @prayerFocusSunriseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunrise Pause'**
+  String get prayerFocusSunriseTitle;
+
+  /// No description provided for @prayerFocusSunriseSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A quiet transition after Fajr; wait before optional Duha.'**
+  String get prayerFocusSunriseSubtitle;
+
+  /// No description provided for @prayerFocusDhuhrTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhuhr Reset'**
+  String get prayerFocusDhuhrTitle;
+
+  /// No description provided for @prayerFocusDhuhrSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Let the middle of the day become a clean spiritual reset.'**
+  String get prayerFocusDhuhrSubtitle;
+
+  /// No description provided for @prayerFocusAsrTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Asr Guard'**
+  String get prayerFocusAsrTitle;
+
+  /// No description provided for @prayerFocusAsrSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Protect the late afternoon before tasks scatter your attention.'**
+  String get prayerFocusAsrSubtitle;
+
+  /// No description provided for @prayerFocusMaghribTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Maghrib Return'**
+  String get prayerFocusMaghribTitle;
+
+  /// No description provided for @prayerFocusMaghribSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Move quickly from sunset into remembrance and gratitude.'**
+  String get prayerFocusMaghribSubtitle;
+
+  /// No description provided for @prayerFocusIshaTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Isha Closure'**
+  String get prayerFocusIshaTitle;
+
+  /// No description provided for @prayerFocusIshaSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Close the day with calm, repentance, and preparation for Fajr.'**
+  String get prayerFocusIshaSubtitle;
+
+  /// No description provided for @prayerNowFajrTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Protect the dawn'**
+  String get prayerNowFajrTitle;
+
+  /// No description provided for @prayerNowFajrBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Before sunrise, protect the Fajr window. If you have not prayed, make wudu and pray now; if you have, stay with morning adhkar or Quran.'**
+  String get prayerNowFajrBody;
+
+  /// No description provided for @prayerNowSunriseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause and remember'**
+  String get prayerNowSunriseTitle;
+
+  /// No description provided for @prayerNowSunriseBody.
+  ///
+  /// In en, this message translates to:
+  /// **'At exact sunrise avoid starting voluntary prayer; keep morning dhikr and wait until the sun has risen before Duha.'**
+  String get prayerNowSunriseBody;
+
+  /// No description provided for @prayerNowDhuhrTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset the middle of the day'**
+  String get prayerNowDhuhrTitle;
+
+  /// No description provided for @prayerNowDhuhrBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Step away from work, renew wudu, and give the fard prayer an unhurried pocket of attention.'**
+  String get prayerNowDhuhrBody;
+
+  /// No description provided for @prayerNowAsrTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Guard the late afternoon'**
+  String get prayerNowAsrTitle;
+
+  /// No description provided for @prayerNowAsrBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Make Asr visible before the day becomes crowded. Pray with steady pace and leave a short moment for dhikr afterward.'**
+  String get prayerNowAsrBody;
+
+  /// No description provided for @prayerNowMaghribTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Move promptly'**
+  String get prayerNowMaghribTitle;
+
+  /// No description provided for @prayerNowMaghribBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When Maghrib enters, shift quickly from sunset routines into salah, then return to family, food, or travel with a lighter heart.'**
+  String get prayerNowMaghribBody;
+
+  /// No description provided for @prayerNowIshaTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Close the day cleanly'**
+  String get prayerNowIshaTitle;
+
+  /// No description provided for @prayerNowIshaBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray Isha before sleepiness takes over. Pair it with repentance, gratitude, and a simple plan for waking for Fajr.'**
+  String get prayerNowIshaBody;
+
+  /// No description provided for @prayerSuggestionsFajrRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray the two raka\'at Sunnah before the fard when you are able.||Keep the recitation calm and bright, even if it is short.||After salah, spend a few minutes with morning adhkar or a small Quran portion.'**
+  String get prayerSuggestionsFajrRaw;
+
+  /// No description provided for @prayerSuggestionsSunriseRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue morning adhkar while the sun rises.||Wait until the disliked sunrise moment passes before optional Duha.||Use the quiet transition to plan the next prayer instead of drifting.'**
+  String get prayerSuggestionsSunriseRaw;
+
+  /// No description provided for @prayerSuggestionsDhuhrRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the adhan as a hard pause from work or study.||Choose a quiet place before the day becomes crowded again.||Pair the prayer with a small gratitude check before returning to tasks.'**
+  String get prayerSuggestionsDhuhrRaw;
+
+  /// No description provided for @prayerSuggestionsAsrRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan Asr before the late-afternoon rush begins.||Keep the pace steady rather than compressed.||Use one minute after salam to ask Allah for protection and consistency.'**
+  String get prayerSuggestionsAsrRaw;
+
+  /// No description provided for @prayerSuggestionsMaghribRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray soon after adhan because the window feels short in daily life.||Keep food, family, and commute transitions from swallowing the prayer.||Follow with evening adhkar when your routine allows.'**
+  String get prayerSuggestionsMaghribRaw;
+
+  /// No description provided for @prayerSuggestionsIshaRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray before sleepiness makes focus heavy.||Prepare for Witr according to your practice after Isha.||Set up tomorrow\'s Fajr before bed: alarm, wudu plan, and sleep intention.'**
+  String get prayerSuggestionsIshaRaw;
+
+  /// No description provided for @prayerBestPracticesFajrRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Sleep with Fajr in mind, not as an afterthought.||Avoid rushing the first prayer of the day; let it set the tone.||Use the stillness after Fajr for Quran, adhkar, or one sincere du\'a.'**
+  String get prayerBestPracticesFajrRaw;
+
+  /// No description provided for @prayerBestPracticesSunriseRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not treat sunrise as an obligatory prayer; it is a transition marker.||Stay away from voluntary prayer at the exact sunrise moment.||Return to optional worship after the sun has risen and the time is clear.'**
+  String get prayerBestPracticesSunriseRaw;
+
+  /// No description provided for @prayerBestPracticesDhuhrRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Put Dhuhr on the calendar before the workday takes over.||Stand without carrying the whole task list into salah.||If you pray Sunnah prayers, place them around the fard according to your learned practice.'**
+  String get prayerBestPracticesDhuhrRaw;
+
+  /// No description provided for @prayerBestPracticesAsrRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Guard Asr from being pushed to the edge of the time.||Lower the pace before takbir so the prayer does not feel like a race.||Use Asr as an accountability checkpoint for the rest of the day.'**
+  String get prayerBestPracticesAsrRaw;
+
+  /// No description provided for @prayerBestPracticesMaghribRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Respond quickly when Maghrib enters.||Keep sunset meals and gatherings from delaying the prayer.||Let Maghrib open your evening adhkar and family calm.'**
+  String get prayerBestPracticesMaghribRaw;
+
+  /// No description provided for @prayerBestPracticesIshaRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray before exhaustion dulls attention.||Keep Witr visible in the night routine according to your practice.||Prepare the body and room for Fajr before sleeping.'**
+  String get prayerBestPracticesIshaRaw;
+
   /// No description provided for @learnQuranTextMapRaw.
   ///
   /// In en, this message translates to:
