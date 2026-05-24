@@ -1,5 +1,6 @@
 part of '../../../views/dashboard/dashboard_view.dart';
 
+
 extension _DashboardViewStateSections on _DashboardViewState {
   // ── Greeting header ─────────────────────────────────────────────────────────
 

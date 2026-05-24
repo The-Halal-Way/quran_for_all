@@ -1,11 +1,7 @@
 import 'dart:async';
 import 'dart:ui' as ui;
-import 'package:adhan/adhan.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_timezone/flutter_timezone.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/utils/app_page_route.dart';
 import 'package:quran_for_all/data/models/learn_quran_content.dart';
@@ -13,6 +9,7 @@ import 'package:quran_for_all/data/models/surah_model.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
+import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'package:quran_for_all/presentation/views/compass/compass_view.dart';
@@ -24,8 +21,7 @@ import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
 import 'package:quran_for_all/presentation/views/learn_quran/learning_module_detail_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/surah_details_view.dart';
-import 'package:timezone/data/latest.dart' as tz_data;
-import 'package:timezone/timezone.dart' as tz;
+import 'package:intl/intl.dart';
 
 part '../../widgets/dashobard/dashboard/dashboard_view_models.dart';
 part '../../widgets/dashobard/dashboard/dashboard_view_sections.dart';
@@ -38,110 +34,30 @@ class DashboardView extends StatefulWidget {
 }
 
 class _DashboardViewState extends State<DashboardView> {
-  Map<String, String>? _prayerTimes;
-  String _prayerError = '';
-  bool _loadingPrayerTimes = true;
-  static bool _timeZonesInitialized = false;
-
-  // Which prayer row is next/active (highlight)
-  String? _nextPrayer;
-
   @override
   void initState() {
     super.initState();
-    _loadPrayerTimes();
-  }
-
-  Future<void> _loadPrayerTimes() async {
-    setState(() {
-      _loadingPrayerTimes = true;
-      _prayerError = '';
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final prayerVm = context.read<DashboardPrayerTimesViewModel>();
+      if (!prayerVm.hasData && !prayerVm.isLoading) {
+        unawaited(prayerVm.loadPrayerTimes());
+      }
     });
-
-    try {
-      LocationPermission permission = await Geolocator.checkPermission();
-      if (permission == LocationPermission.denied) {
-        permission = await Geolocator.requestPermission();
-        if (permission == LocationPermission.denied) {
-          setState(() {
-            _prayerError = 'Location permission denied';
-            _loadingPrayerTimes = false;
-          });
-          return;
-        }
-      }
-
-      if (permission == LocationPermission.deniedForever) {
-        setState(() {
-          _prayerError = 'Location permission permanently denied';
-          _loadingPrayerTimes = false;
-        });
-        return;
-      }
-
-      final position = await Geolocator.getCurrentPosition(
-        locationSettings: const LocationSettings(
-          accuracy: LocationAccuracy.high,
-        ),
-      );
-      final coordinates = Coordinates(position.latitude, position.longitude);
-
-      if (!_timeZonesInitialized) {
-        tz_data.initializeTimeZones();
-        _timeZonesInitialized = true;
-      }
-
-      final timeZoneName = await FlutterTimezone.getLocalTimezone();
-      final locationTimeZone = tz.getLocation(timeZoneName);
-      final nowInLocation = tz.TZDateTime.now(locationTimeZone);
-      final dateComponents = DateComponents(
-        nowInLocation.year,
-        nowInLocation.month,
-        nowInLocation.day,
-      );
-
-      final params = CalculationMethod.muslim_world_league.getParameters();
-      params.madhab = Madhab.shafi;
-      final prayerTimes = PrayerTimes(coordinates, dateComponents, params);
-      final format = DateFormat('hh:mm a');
-
-      // Determine next prayer
-      final now = nowInLocation;
-      String? next;
-      final schedule = {
-        'Fajr': tz.TZDateTime.from(prayerTimes.fajr, locationTimeZone),
-        'Sunrise': tz.TZDateTime.from(prayerTimes.sunrise, locationTimeZone),
-        'Dhuhr': tz.TZDateTime.from(prayerTimes.dhuhr, locationTimeZone),
-        'Asr': tz.TZDateTime.from(prayerTimes.asr, locationTimeZone),
-        'Maghrib': tz.TZDateTime.from(prayerTimes.maghrib, locationTimeZone),
-        'Isha': tz.TZDateTime.from(prayerTimes.isha, locationTimeZone),
-      };
-      for (final entry in schedule.entries) {
-        if (entry.value.isAfter(now)) {
-          next = entry.key;
-          break;
-        }
-      }
-
-      setState(() {
-        _prayerTimes = {
-          'Fajr': format.format(schedule['Fajr']!),
-          'Sunrise': format.format(schedule['Sunrise']!),
-          'Dhuhr': format.format(schedule['Dhuhr']!),
-          'Asr': format.format(schedule['Asr']!),
-          'Maghrib': format.format(schedule['Maghrib']!),
-          'Isha': format.format(schedule['Isha']!),
-        };
-        _nextPrayer = next;
-        _loadingPrayerTimes = false;
-      });
-    } catch (e) {
-      setState(() {
-        _prayerError = 'Failed to load prayer times: $e';
-        _loadingPrayerTimes = false;
-      });
-    }
   }
+
+  Map<String, String>? get _prayerTimes =>
+      context.watch<DashboardPrayerTimesViewModel>().prayerTimes;
+  String get _prayerError =>
+      context.watch<DashboardPrayerTimesViewModel>().error;
+  bool get _loadingPrayerTimes =>
+      context.watch<DashboardPrayerTimesViewModel>().isLoading;
+  String? get _nextPrayer =>
+      context.watch<DashboardPrayerTimesViewModel>().nextPrayer;
+
+  Future<void> _loadPrayerTimes() =>
+      context.read<DashboardPrayerTimesViewModel>().loadPrayerTimes(
+        forceRefresh: true,
+      );
 
   bool get _isDark => Theme.of(context).brightness == Brightness.dark;
 
