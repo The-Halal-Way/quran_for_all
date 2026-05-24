@@ -101,6 +101,12 @@ abstract class AppLocalizations {
   /// **'Quran For All'**
   String get appName;
 
+  /// No description provided for @homeDashboardTab.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get homeDashboardTab;
+
   /// No description provided for @homeReadQuranTab.
   ///
   /// In en, this message translates to:

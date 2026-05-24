@@ -12,6 +12,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appName => 'Quran For All';
 
   @override
+  String get homeDashboardTab => 'Today';
+
+  @override
   String get homeReadQuranTab => 'Read Quran';
 
   @override

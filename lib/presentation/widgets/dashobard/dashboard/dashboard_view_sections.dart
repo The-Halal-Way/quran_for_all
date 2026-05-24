@@ -1,6 +1,5 @@
 part of '../../../views/dashboard/dashboard_view.dart';
 
-
 extension _DashboardViewStateSections on _DashboardViewState {
   // ── Greeting header ─────────────────────────────────────────────────────────
 
@@ -92,41 +91,74 @@ extension _DashboardViewStateSections on _DashboardViewState {
           ),
         ),
         const SizedBox(height: 16),
-        Text(
-          greeting,
-          style: GoogleFonts.manrope(
-            fontSize: 13,
-            fontWeight: FontWeight.w600,
-            color: _textHint,
-            letterSpacing: 0.3,
-          ),
-        ),
-        const SizedBox(height: 2),
-        Text(
-          context.l10n.appName,
-          style: GoogleFonts.sora(
-            fontSize: 28,
-            fontWeight: FontWeight.w800,
-            color: _textMain,
-            height: 1.1,
-            letterSpacing: -0.5,
-          ),
-        ),
-        const SizedBox(height: 4),
         Row(
           children: [
-            Icon(Icons.calendar_today_rounded, size: 12, color: _textHint),
-            const SizedBox(width: 5),
-            Text(
-              dateStr,
-              style: GoogleFonts.manrope(
-                fontSize: 12,
-                color: _textHint,
-                fontWeight: FontWeight.w500,
+            Container(
+              width: 4,
+              height: 20,
+              decoration: BoxDecoration(
+                color: MyColors.secondary,
+                borderRadius: BorderRadius.circular(2),
               ),
+            ),
+            const SizedBox(width: 12),
+            Text(
+              greeting,
+              style: GoogleFonts.manrope(
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+                color: _textHint,
+                letterSpacing: 0.3,
+              ),
+            ),
+            Spacer(),
+            Row(
+              children: [
+                Container(
+                  width: 4,
+                  height: 20,
+                  decoration: BoxDecoration(
+                    color: MyColors.secondary,
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Icon(Icons.calendar_today_rounded, size: 12, color: _textHint),
+                const SizedBox(width: 5),
+                Text(
+                  dateStr,
+                  style: GoogleFonts.manrope(
+                    fontSize: 12,
+                    color: _textHint,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
+        // Text(
+        //   greeting,
+        //   style: GoogleFonts.manrope(
+        //     fontSize: 13,
+        //     fontWeight: FontWeight.w600,
+        //     color: _textHint,
+        //     letterSpacing: 0.3,
+        //   ),
+        // ),
+        // const SizedBox(height: 2),
+
+        // Text(
+        //   context.l10n.appName,
+        //   style: GoogleFonts.sora(
+        //     fontSize: 28,
+        //     fontWeight: FontWeight.w800,
+        //     color: _textMain,
+        //     height: 1.1,
+        //     letterSpacing: -0.5,
+        //   ),
+        // ),
+        // const SizedBox(height: 4),
       ],
     );
   }
@@ -158,7 +190,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
               ? learnViewModel.modules.first
               : null);
     final continueLearningSubtitle =
-        nextLesson?.title ?? context.l10n.dashboardContinueLearningStartSubtitle;
+        nextLesson?.title ??
+        context.l10n.dashboardContinueLearningStartSubtitle;
     final continueLearningDetail = nextModule != null
         ? context.l10n.dashboardContinueLearningModuleDetail(
             nextModule.title,
@@ -470,40 +503,61 @@ extension _DashboardViewStateSections on _DashboardViewState {
   // ── Hadith cards ────────────────────────────────────────────────────────────
 
   Widget _buildHadithCards() {
-    return Column(
-      children: [
-        _HadithNavCard(
-          number: '40',
-          arabicTitle: 'الأربعون النووية',
-          englishTitle: context.l10n.dashboardHadithAnNawawiTitle,
-          description: context.l10n.dashboardHadithAnNawawiDescription,
-          accentColors: [MyColors.primary, MyColors.primaryLight],
-          glowColor: MyColors.primaryLight,
-          isDark: _isDark,
-          cardBg: _cardBg,
-          textMain: _textMain,
-          textSub: _textSub,
-          textHint: _textHint,
-          divider: _divider,
-          onTap: () => _push(const HadithAnNawawiView()),
-        ),
-        const SizedBox(height: 10),
-        _HadithNavCard(
-          number: '40',
-          arabicTitle: 'الأحاديث القصيرة',
-          englishTitle: context.l10n.dashboardHadithShortTitle,
-          description: context.l10n.dashboardHadithShortDescription,
-          accentColors: [Color(0xFF005C4B), MyColors.tertiary],
-          glowColor: MyColors.tertiary,
-          isDark: _isDark,
-          cardBg: _cardBg,
-          textMain: _textMain,
-          textSub: _textSub,
-          textHint: _textHint,
-          divider: _divider,
-          onTap: () => _push(const HadithFortyShortView()),
-        ),
-      ],
+    final responsive = AppResponsive.of(context);
+    final cards = <Widget>[
+      _HadithNavCard(
+        number: '40',
+        arabicTitle: 'الأربعون النووية',
+        englishTitle: context.l10n.dashboardHadithAnNawawiTitle,
+        description: context.l10n.dashboardHadithAnNawawiDescription,
+        accentColors: [MyColors.primary, MyColors.primaryLight],
+        glowColor: MyColors.primaryLight,
+        isDark: _isDark,
+        cardBg: _cardBg,
+        textMain: _textMain,
+        textSub: _textSub,
+        textHint: _textHint,
+        divider: _divider,
+        onTap: () => _push(const HadithAnNawawiView()),
+      ),
+      _HadithNavCard(
+        number: '40',
+        arabicTitle: 'الأحاديث القصيرة',
+        englishTitle: context.l10n.dashboardHadithShortTitle,
+        description: context.l10n.dashboardHadithShortDescription,
+        accentColors: [Color(0xFF005C4B), MyColors.tertiary],
+        glowColor: MyColors.tertiary,
+        isDark: _isDark,
+        cardBg: _cardBg,
+        textMain: _textMain,
+        textSub: _textSub,
+        textHint: _textHint,
+        divider: _divider,
+        onTap: () => _push(const HadithFortyShortView()),
+      ),
+    ];
+
+    if (responsive.isMobile) {
+      return Column(
+        children: [
+          cards.first,
+          SizedBox(height: 10.h),
+          cards.last,
+        ],
+      );
+    }
+
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      itemCount: cards.length,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 12.w,
+        mainAxisSpacing: 12.h,
+        childAspectRatio: responsive.isDesktop ? 2.35 : 2.1,
+      ),
+      itemBuilder: (context, index) => cards[index],
     );
   }
 

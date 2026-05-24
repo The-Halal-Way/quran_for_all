@@ -63,16 +63,16 @@ class _HomeViewState extends State<HomeView> {
           destinations: [
             NavigationDestination(
               icon: Image.asset(
-                MyIcons.quranViewIcon,
+                MyIcons.homeIcon,
                 width: navIconSize,
                 height: navIconSize,
               ),
               selectedIcon: Image.asset(
-                MyIcons.quranViewIconFill,
+                MyIcons.homeIconFill,
                 width: navIconSize,
                 height: navIconSize,
               ),
-              label: "Dashboard",
+              label: l10n.homeDashboardTab,
             ),
             NavigationDestination(
               icon: Image.asset(

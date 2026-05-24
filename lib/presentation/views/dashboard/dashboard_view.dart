@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/utils/app_page_route.dart';
@@ -35,6 +36,9 @@ class DashboardView extends StatefulWidget {
 }
 
 class _DashboardViewState extends State<DashboardView> {
+  static const double _dashboardTabletMaxWidth = 880;
+  static const double _dashboardDesktopMaxWidth = 940;
+
   @override
   void initState() {
     super.initState();
@@ -55,10 +59,13 @@ class _DashboardViewState extends State<DashboardView> {
   String? get _nextPrayer =>
       context.watch<DashboardPrayerTimesViewModel>().nextPrayer;
 
-  Future<void> _loadPrayerTimes() =>
-      context.read<DashboardPrayerTimesViewModel>().loadPrayerTimes(
-        forceRefresh: true,
-      );
+  Future<void> _loadPrayerTimes() => context
+      .read<DashboardPrayerTimesViewModel>()
+      .loadPrayerTimes(forceRefresh: true);
+
+  Future<void> _refreshDashboard() async {
+    await _loadPrayerTimes();
+  }
 
   bool get _isDark => Theme.of(context).brightness == Brightness.dark;
 
@@ -136,84 +143,95 @@ class _DashboardViewState extends State<DashboardView> {
           ),
 
           SafeArea(
-            child: SingleChildScrollView(
-              padding: EdgeInsets.fromLTRB(
-                responsive.padding,
-                20,
-                responsive.padding,
-                32,
-              ),
-              child: Center(
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(
-                    maxWidth: responsive.maxReadingContentWidth,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      _buildGreetingHeader(),
-                      const SizedBox(height: 20),
-                      _buildContinueCards(),
-                      const SizedBox(height: 24),
-                      _buildSectionLabel(
-                        context.l10n.dashboardSectionPrayerTimes,
-                        Icons.access_time_rounded,
-                        MyColors.secondary,
-                      ),
-                      const SizedBox(height: 10),
-                      _buildPrayerCard(),
-                      const SizedBox(height: 10),
-                      _buildSmallActionRow(
-                        items: [
-                          _ActionItem(
-                            icon: Icons.access_time_filled_rounded,
-                            label: context.l10n.dashboardActionFullPrayerView,
-                            color: MyColors.secondary,
-                            onTap: () => _push(const PrayerView()),
-                          ),
-                          _ActionItem(
-                            icon: Icons.explore_rounded,
-                            label: context.l10n.dashboardActionQiblaCompass,
-                            color: MyColors.primaryLight,
-                            onTap: () => _push(const CompassView()),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 24),
-                      _buildSectionLabel(
-                        context.l10n.dashboardSectionDua,
-                        Icons.auto_awesome_rounded,
-                        MyColors.tertiary,
-                      ),
-                      const SizedBox(height: 10),
-                      _buildSmallActionRow(
-                        items: [
-                          _ActionItem(
-                            icon: Icons.wb_twilight_rounded,
-                            label: context.l10n.dashboardActionDailyDua,
-                            sublabel: context.l10n.dashboardActionDailyDuaSub,
-                            color: MyColors.tertiary,
-                            onTap: () => _push(const DailyDuahView()),
-                          ),
-                          _ActionItem(
-                            icon: Icons.bolt_rounded,
-                            label: context.l10n.dashboardActionPowerfulDua,
-                            sublabel:
-                                context.l10n.dashboardActionPowerfulDuaSub,
-                            color: MyColors.secondary,
-                            onTap: () => _push(const PowerfulDuahView()),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 24),
-                      _buildSectionLabel(
-                        context.l10n.dashboardSectionHadith,
-                        Icons.menu_book_rounded,
-                        MyColors.primaryLight,
-                      ),
-                      const SizedBox(height: 10),
-                      _buildHadithCards(),
-                    ],
+            child: RefreshIndicator(
+              color: MyColors.secondary,
+              onRefresh: _refreshDashboard,
+              child: SingleChildScrollView(
+                physics: const AlwaysScrollableScrollPhysics(
+                  parent: BouncingScrollPhysics(),
+                ),
+                padding: EdgeInsets.fromLTRB(
+                  responsive.padding,
+                  20,
+                  responsive.padding,
+                  32,
+                ),
+                child: Center(
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxWidth: responsive.isDesktop
+                          ? _dashboardDesktopMaxWidth
+                          : responsive.isTablet
+                          ? _dashboardTabletMaxWidth
+                          : responsive.maxReadingContentWidth,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _buildGreetingHeader(),
+                        const SizedBox(height: 20),
+                        _buildContinueCards(),
+                        const SizedBox(height: 24),
+                        _buildSectionLabel(
+                          context.l10n.dashboardSectionPrayerTimes,
+                          Icons.access_time_rounded,
+                          MyColors.secondary,
+                        ),
+                        const SizedBox(height: 10),
+                        _buildPrayerCard(),
+                        const SizedBox(height: 10),
+                        _buildSmallActionRow(
+                          items: [
+                            _ActionItem(
+                              icon: Icons.access_time_filled_rounded,
+                              label: context.l10n.dashboardActionFullPrayerView,
+                              color: MyColors.secondary,
+                              onTap: () => _push(const PrayerView()),
+                            ),
+                            _ActionItem(
+                              icon: Icons.explore_rounded,
+                              label: context.l10n.dashboardActionQiblaCompass,
+                              color: MyColors.primaryLight,
+                              onTap: () => _push(const CompassView()),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 24),
+                        _buildSectionLabel(
+                          context.l10n.dashboardSectionDua,
+                          Icons.auto_awesome_rounded,
+                          MyColors.tertiary,
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSmallActionRow(
+                          items: [
+                            _ActionItem(
+                              icon: Icons.wb_twilight_rounded,
+                              label: context.l10n.dashboardActionDailyDua,
+                              sublabel: context.l10n.dashboardActionDailyDuaSub,
+                              color: MyColors.tertiary,
+                              onTap: () => _push(const DailyDuahView()),
+                            ),
+                            _ActionItem(
+                              icon: Icons.bolt_rounded,
+                              label: context.l10n.dashboardActionPowerfulDua,
+                              sublabel:
+                                  context.l10n.dashboardActionPowerfulDuaSub,
+                              color: MyColors.secondary,
+                              onTap: () => _push(const PowerfulDuahView()),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 24),
+                        _buildSectionLabel(
+                          context.l10n.dashboardSectionHadith,
+                          Icons.menu_book_rounded,
+                          MyColors.primaryLight,
+                        ),
+                        const SizedBox(height: 10),
+                        _buildHadithCards(),
+                      ],
+                    ),
                   ),
                 ),
               ),

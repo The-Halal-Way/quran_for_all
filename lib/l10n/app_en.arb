@@ -1,6 +1,7 @@
 {
   "@@locale": "en",
   "appName": "Quran For All",
+  "homeDashboardTab": "Today",
   "homeReadQuranTab": "Read Quran",
   "homeLearnQuranTab": "Learn Quran",
   "languageEnglish": "English",

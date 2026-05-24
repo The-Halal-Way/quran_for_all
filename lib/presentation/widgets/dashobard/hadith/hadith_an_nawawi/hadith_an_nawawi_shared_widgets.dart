@@ -17,7 +17,6 @@ class _PillToggle extends StatelessWidget {
     return GestureDetector(
       onTap: () => onChanged(!isRight),
       child: Container(
-        height: 30.h,
         decoration: BoxDecoration(
           color: isDark
               ? MyColors.darkCard.withOpacity(0.9)
