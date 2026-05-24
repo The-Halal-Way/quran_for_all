@@ -8,6 +8,10 @@ import '../../core/utils/app_responsive.dart';
 import '../../data/models/ayah_model.dart';
 
 class AyahTile extends StatelessWidget {
+  static const double _earlyHighlightPercent = 0.14;
+  static const double _minEarlySeconds = 1.0;
+  static const double _maxEarlySeconds = 6.0;
+
   const AyahTile({
     super.key,
     required this.ayah,
@@ -18,6 +22,8 @@ class AyahTile extends StatelessWidget {
     required this.isLastReadAyah,
     required this.isPlaying,
     required this.playbackProgress,
+    required this.playbackPosition,
+    required this.playbackDuration,
     required this.onPlay,
     required this.onToggleBookmark,
     this.onMarkAsLastRead,
@@ -31,6 +37,8 @@ class AyahTile extends StatelessWidget {
   final bool isLastReadAyah;
   final bool isPlaying;
   final double playbackProgress;
+  final Duration playbackPosition;
+  final Duration playbackDuration;
   final VoidCallback onPlay;
   final VoidCallback onToggleBookmark;
   final VoidCallback? onMarkAsLastRead;
@@ -326,27 +334,57 @@ class AyahTile extends StatelessWidget {
 
     final total = graphemes.length;
     final clamped = playbackProgress.clamp(0.0, 1.0);
-    final highlightCount = (total * clamped).ceil().clamp(0, total);
+    final durationMs = playbackDuration.inMilliseconds;
+    final positionMs = playbackPosition.inMilliseconds;
 
-    final highlighted = graphemes.take(highlightCount).join();
-    final remaining = graphemes.skip(highlightCount).join();
+    final acceleratedProgress = durationMs > 0
+        ? () {
+            final durationSeconds = durationMs / 1000.0;
+            final earlySeconds = (durationSeconds * _earlyHighlightPercent)
+                .clamp(_minEarlySeconds, _maxEarlySeconds);
+            final effectiveDurationMs =
+                ((durationSeconds - earlySeconds).clamp(
+                      0.25,
+                      durationSeconds,
+                    ) *
+                    1000)
+                    .toDouble();
+            final clampedPosition = positionMs.clamp(0, durationMs);
+            return (clampedPosition / effectiveDurationMs).clamp(0.0, 1.0);
+          }()
+        : (clamped * 1.35).clamp(0.0, 1.0);
+
+    // Highlight completes 1-2 seconds early, but remains visible until
+    // playback ends because this widget paints highlight only while isPlaying.
     final colorScheme = Theme.of(context).colorScheme;
 
-    return RichText(
-      textAlign: TextAlign.right,
-      textDirection: TextDirection.rtl,
-      text: TextSpan(
-        style: baseStyle,
-        children: [
-          TextSpan(
-            text: highlighted,
-            style: baseStyle.copyWith(
-              backgroundColor: colorScheme.secondary.withValues(alpha: 0.28),
-            ),
+    return TweenAnimationBuilder<double>(
+      duration: const Duration(milliseconds: 160),
+      curve: Curves.easeOutCubic,
+      tween: Tween<double>(begin: 0, end: acceleratedProgress),
+      builder: (context, animatedProgress, _) {
+        final highlightCount =
+            (total * animatedProgress).ceil().clamp(0, total);
+        final highlighted = graphemes.take(highlightCount).join();
+        final remaining = graphemes.skip(highlightCount).join();
+
+        return RichText(
+          textAlign: TextAlign.right,
+          textDirection: TextDirection.rtl,
+          text: TextSpan(
+            style: baseStyle,
+            children: [
+              TextSpan(
+                text: highlighted,
+                style: baseStyle.copyWith(
+                  backgroundColor: colorScheme.secondary.withValues(alpha: 0.28),
+                ),
+              ),
+              TextSpan(text: remaining, style: baseStyle),
+            ],
           ),
-          TextSpan(text: remaining, style: baseStyle),
-        ],
-      ),
+        );
+      },
     );
   }
 }

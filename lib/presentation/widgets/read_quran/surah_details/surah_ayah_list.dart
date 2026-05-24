@@ -182,6 +182,8 @@ class SurahAyahList extends StatelessWidget {
                     viewModel,
                     settings,
                     audioControl.progress,
+                    audioControl.position,
+                    audioControl.duration,
                   ),
                 );
               },
@@ -197,6 +199,8 @@ class SurahAyahList extends StatelessWidget {
     SurahDetailsViewModel viewModel,
     AppSettings settings,
     double playbackProgress,
+    Duration playbackPosition,
+    Duration playbackDuration,
   ) {
     return AyahTile(
       ayah: ayah,
@@ -209,6 +213,12 @@ class SurahAyahList extends StatelessWidget {
       playbackProgress: viewModel.isAyahPlaying(ayah.ayahNumber)
           ? playbackProgress
           : 0,
+      playbackPosition: viewModel.isAyahPlaying(ayah.ayahNumber)
+          ? playbackPosition
+          : Duration.zero,
+      playbackDuration: viewModel.isAyahPlaying(ayah.ayahNumber)
+          ? playbackDuration
+          : Duration.zero,
       onPlay: () => unawaited(
         viewModel.isAyahPlaying(ayah.ayahNumber)
             ? viewModel.stopPlayback()
@@ -295,6 +305,7 @@ class SurahAyahList extends StatelessWidget {
       builder: (sheetContext) {
         return Consumer2<SurahDetailsViewModel, SettingsViewModel>(
           builder: (sheetContext, liveViewModel, settingsVm, _) {
+            final liveAudioControl = context.watch<AudioControlViewModel>();
             return SafeArea(
               child: SingleChildScrollView(
                 padding: EdgeInsets.only(
@@ -309,7 +320,9 @@ class SurahAyahList extends StatelessWidget {
                   ayah,
                   liveViewModel,
                   settingsVm.settings,
-                  context.watch<AudioControlViewModel>().progress,
+                  liveAudioControl.progress,
+                  liveAudioControl.position,
+                  liveAudioControl.duration,
                 ),
               ),
             );
