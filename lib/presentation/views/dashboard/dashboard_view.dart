@@ -10,6 +10,7 @@ import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
+import 'package:quran_for_all/presentation/viewmodels/dashboard/dashboard_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
@@ -21,14 +22,18 @@ import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawa
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/tasbeeh_view.dart';
 import 'package:quran_for_all/presentation/views/learn_quran/learning_module_detail_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/surah_details_view.dart';
-import 'package:intl/intl.dart';
 
-part '../../widgets/dashboard/dashboard/dashboard_view_models.dart';
+part '../../../data/models/dashboard/dashboard_action_item.dart';
 part '../../widgets/dashboard/dashboard/dashboard_view_sections.dart';
-part '../../widgets/dashboard/dashboard/dashboard_view_widgets.dart';
+part '../../widgets/dashboard/dashboard/action_tile.dart';
+part '../../widgets/dashboard/dashboard/bg_painter.dart';
+part '../../widgets/dashboard/dashboard/continue_card.dart';
+part '../../widgets/dashboard/dashboard/hadith_nav_card.dart';
+part '../../widgets/dashboard/dashboard/prayer_row.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({super.key});
@@ -39,6 +44,7 @@ class DashboardView extends StatefulWidget {
 class _DashboardViewState extends State<DashboardView> {
   static const double _dashboardTabletMaxWidth = 880;
   static const double _dashboardDesktopMaxWidth = 940;
+  final DashboardViewModel _dashboardViewModel = DashboardViewModel();
 
   @override
   void initState() {
@@ -71,15 +77,13 @@ class _DashboardViewState extends State<DashboardView> {
   }
 
   bool get _isDark => Theme.of(context).brightness == Brightness.dark;
+  DashboardPalette get _palette => _dashboardViewModel.palette(isDark: _isDark);
 
-  Color get _cardBg => _isDark ? MyColors.darkCard : MyColors.cardFill;
-  Color get _textMain =>
-      _isDark ? MyColors.darkTextPrimary : MyColors.textPrimary;
-  Color get _textSub =>
-      _isDark ? MyColors.darkTextSecondary : MyColors.textSecondary;
-  Color get _textHint =>
-      _isDark ? MyColors.darkTextTertiary : MyColors.textTertiary;
-  Color get _divider => _isDark ? MyColors.darkDivider : MyColors.divider;
+  Color get _cardBg => _palette.cardBg;
+  Color get _textMain => _palette.textMain;
+  Color get _textSub => _palette.textSub;
+  Color get _textHint => _palette.textHint;
+  Color get _divider => _palette.divider;
 
   void _push(Widget page) =>
       Navigator.push(context, MaterialPageRoute(builder: (_) => page));
@@ -182,23 +186,6 @@ class _DashboardViewState extends State<DashboardView> {
                         ),
                         const SizedBox(height: 10),
                         _buildPrayerCard(),
-                        const SizedBox(height: 10),
-                        _buildSmallActionRow(
-                          items: [
-                            ActionItem(
-                              icon: Icons.access_time_filled_rounded,
-                              label: context.l10n.dashboardActionFullPrayerView,
-                              color: MyColors.secondary,
-                              onTap: () => _push(const PrayerView()),
-                            ),
-                            ActionItem(
-                              icon: Icons.explore_rounded,
-                              label: context.l10n.dashboardActionQiblaCompass,
-                              color: MyColors.primaryLight,
-                              onTap: () => _push(const CompassView()),
-                            ),
-                          ],
-                        ),
                         const SizedBox(height: 24),
                         _buildSectionLabel(
                           context.l10n.dashboardSectionDua,
@@ -208,14 +195,14 @@ class _DashboardViewState extends State<DashboardView> {
                         const SizedBox(height: 10),
                         _buildSmallActionRow(
                           items: [
-                            ActionItem(
+                            DashboardActionItem(
                               icon: Icons.wb_twilight_rounded,
                               label: context.l10n.dashboardActionDailyDua,
                               sublabel: context.l10n.dashboardActionDailyDuaSub,
                               color: MyColors.tertiary,
                               onTap: () => _push(const DailyDuahView()),
                             ),
-                            ActionItem(
+                            DashboardActionItem(
                               icon: Icons.bolt_rounded,
                               label: context.l10n.dashboardActionPowerfulDua,
                               sublabel:
@@ -223,13 +210,39 @@ class _DashboardViewState extends State<DashboardView> {
                               color: MyColors.secondary,
                               onTap: () => _push(const PowerfulDuahView()),
                             ),
-                            ActionItem(
+                            DashboardActionItem(
                               icon: Icons.diamond_rounded,
                               label: context.l10n.dashboardActionNintyNineNames,
                               sublabel:
                                   context.l10n.dashboardActionNintyNineNamesSub,
                               color: MyColors.primaryLight,
                               onTap: () => _push(const DuahNintyNineView()),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 24),
+                        _buildSectionLabel(
+                          context.l10n.dashboardSectionOthers,
+                          Icons.widgets_rounded,
+                          MyColors.secondary,
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSmallActionRow(
+                          items: [
+                            DashboardActionItem(
+                              icon: Icons.explore_rounded,
+                              label: context.l10n.dashboardActionQiblaCompass,
+                              sublabel:
+                                  context.l10n.dashboardActionQiblaCompassSub,
+                              color: MyColors.primaryLight,
+                              onTap: () => _push(const CompassView()),
+                            ),
+                            DashboardActionItem(
+                              icon: Icons.touch_app_rounded,
+                              label: context.l10n.dashboardActionTasbeeh,
+                              sublabel: context.l10n.dashboardActionTasbeehSub,
+                              color: MyColors.tertiary,
+                              onTap: () => _push(const TasbeehView()),
                             ),
                           ],
                         ),

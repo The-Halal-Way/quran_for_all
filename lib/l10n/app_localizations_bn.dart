@@ -287,6 +287,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardActionQiblaCompass => 'কিবলা কম্পাস';
 
   @override
+  String get dashboardActionQiblaCompassSub => 'কিবলার দিক দেখুন';
+
+  @override
   String get dashboardSectionDua => 'দু\'আ';
 
   @override
@@ -308,7 +311,61 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardActionNintyNineNamesSub => 'আসমা উল হুসনা';
 
   @override
+  String get dashboardSectionOthers => 'অন্যান্য';
+
+  @override
+  String get dashboardActionTasbeeh => 'তাসবিহ';
+
+  @override
+  String get dashboardActionTasbeehSub => 'গণনা ও জিকির';
+
+  @override
   String get dashboardSectionHadith => 'হাদিস';
+
+  @override
+  String get tasbeehTitle => 'তাসবিহ কাউন্টার';
+
+  @override
+  String get tasbeehSubtitle => 'মনোযোগ দিয়ে জিকির গুনুন';
+
+  @override
+  String get tasbeehPhraseTitle => 'জিকির';
+
+  @override
+  String get tasbeehPhraseSubhanAllah => 'সুবহানাল্লাহ';
+
+  @override
+  String get tasbeehPhraseAlhamdulillah => 'আলহামদুলিল্লাহ';
+
+  @override
+  String get tasbeehPhraseAllahuAkbar => 'আল্লাহু আকবার';
+
+  @override
+  String get tasbeehPhraseLaIlahaIllallah => 'লা ইলাহা ইল্লাল্লাহ';
+
+  @override
+  String get tasbeehTarget => 'লক্ষ্য';
+
+  @override
+  String get tasbeehTargetReached => 'লক্ষ্য পূর্ণ';
+
+  @override
+  String get tasbeehCurrent => 'বর্তমান';
+
+  @override
+  String get tasbeehTotal => 'মোট';
+
+  @override
+  String get tasbeehRounds => 'রাউন্ড';
+
+  @override
+  String get tasbeehUndo => 'পিছিয়ে দিন';
+
+  @override
+  String get tasbeehReset => 'রিসেট';
+
+  @override
+  String get tasbeehResetAll => 'সব রিসেট';
 
   @override
   String get dashboardContinueReadingTitle => 'পড়া চালিয়ে যান';

@@ -1,13 +1,13 @@
-part of '../../../views/dashboard/dashboard_view.dart';
+part of '../../../presentation/views/dashboard/dashboard_view.dart';
 
-class ActionItem {
+class DashboardActionItem {
   final IconData icon;
   final String label;
   final String? sublabel;
   final Color color;
   final VoidCallback onTap;
 
-  const ActionItem({
+  const DashboardActionItem({
     required this.icon,
     required this.label,
     this.sublabel,

@@ -590,6 +590,12 @@ abstract class AppLocalizations {
   /// **'Qibla Compass'**
   String get dashboardActionQiblaCompass;
 
+  /// No description provided for @dashboardActionQiblaCompassSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Find qibla direction'**
+  String get dashboardActionQiblaCompassSub;
+
   /// No description provided for @dashboardSectionDua.
   ///
   /// In en, this message translates to:
@@ -632,11 +638,119 @@ abstract class AppLocalizations {
   /// **'Asma ul Husna'**
   String get dashboardActionNintyNineNamesSub;
 
+  /// No description provided for @dashboardSectionOthers.
+  ///
+  /// In en, this message translates to:
+  /// **'Others'**
+  String get dashboardSectionOthers;
+
+  /// No description provided for @dashboardActionTasbeeh.
+  ///
+  /// In en, this message translates to:
+  /// **'Tasbeeh'**
+  String get dashboardActionTasbeeh;
+
+  /// No description provided for @dashboardActionTasbeehSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Counter & dhikr'**
+  String get dashboardActionTasbeehSub;
+
   /// No description provided for @dashboardSectionHadith.
   ///
   /// In en, this message translates to:
   /// **'Hadith'**
   String get dashboardSectionHadith;
+
+  /// No description provided for @tasbeehTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tasbeeh Counter'**
+  String get tasbeehTitle;
+
+  /// No description provided for @tasbeehSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Count dhikr with focus'**
+  String get tasbeehSubtitle;
+
+  /// No description provided for @tasbeehPhraseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr'**
+  String get tasbeehPhraseTitle;
+
+  /// No description provided for @tasbeehPhraseSubhanAllah.
+  ///
+  /// In en, this message translates to:
+  /// **'SubhanAllah'**
+  String get tasbeehPhraseSubhanAllah;
+
+  /// No description provided for @tasbeehPhraseAlhamdulillah.
+  ///
+  /// In en, this message translates to:
+  /// **'Alhamdulillah'**
+  String get tasbeehPhraseAlhamdulillah;
+
+  /// No description provided for @tasbeehPhraseAllahuAkbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Allahu Akbar'**
+  String get tasbeehPhraseAllahuAkbar;
+
+  /// No description provided for @tasbeehPhraseLaIlahaIllallah.
+  ///
+  /// In en, this message translates to:
+  /// **'La ilaha illallah'**
+  String get tasbeehPhraseLaIlahaIllallah;
+
+  /// No description provided for @tasbeehTarget.
+  ///
+  /// In en, this message translates to:
+  /// **'Target'**
+  String get tasbeehTarget;
+
+  /// No description provided for @tasbeehTargetReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Target reached'**
+  String get tasbeehTargetReached;
+
+  /// No description provided for @tasbeehCurrent.
+  ///
+  /// In en, this message translates to:
+  /// **'Current'**
+  String get tasbeehCurrent;
+
+  /// No description provided for @tasbeehTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Total'**
+  String get tasbeehTotal;
+
+  /// No description provided for @tasbeehRounds.
+  ///
+  /// In en, this message translates to:
+  /// **'Rounds'**
+  String get tasbeehRounds;
+
+  /// No description provided for @tasbeehUndo.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo'**
+  String get tasbeehUndo;
+
+  /// No description provided for @tasbeehReset.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset'**
+  String get tasbeehReset;
+
+  /// No description provided for @tasbeehResetAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset all'**
+  String get tasbeehResetAll;
 
   /// No description provided for @dashboardContinueReadingTitle.
   ///
