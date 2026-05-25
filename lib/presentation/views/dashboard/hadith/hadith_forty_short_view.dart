@@ -8,10 +8,10 @@ import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 
-part '../../../widgets/dashobard/hadith/hadith_forty_short/hadith_forty_short_models.dart';
-part '../../../widgets/dashobard/hadith/hadith_forty_short/hadith_forty_short_pages.dart';
-part '../../../widgets/dashobard/hadith/hadith_forty_short/hadith_forty_short_jump_sheet.dart';
-part '../../../widgets/dashobard/hadith/hadith_forty_short/hadith_forty_short_shared_widgets.dart';
+part '../../../widgets/dashboard/hadith/hadith_forty_short/hadith_forty_short_models.dart';
+part '../../../widgets/dashboard/hadith/hadith_forty_short/hadith_forty_short_pages.dart';
+part '../../../widgets/dashboard/hadith/hadith_forty_short/hadith_forty_short_jump_sheet.dart';
+part '../../../widgets/dashboard/hadith/hadith_forty_short/hadith_forty_short_shared_widgets.dart';
 
 class HadithFortyShortView extends StatefulWidget {
   const HadithFortyShortView({super.key});

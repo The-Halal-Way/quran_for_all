@@ -14,7 +14,7 @@ import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
-import 'package:quran_for_all/presentation/views/compass/compass_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/compass/compass_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
@@ -25,9 +25,9 @@ import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart
 import 'package:quran_for_all/presentation/views/read_quran/surah_details_view.dart';
 import 'package:intl/intl.dart';
 
-part '../../widgets/dashobard/dashboard/dashboard_view_models.dart';
-part '../../widgets/dashobard/dashboard/dashboard_view_sections.dart';
-part '../../widgets/dashobard/dashboard/dashboard_view_widgets.dart';
+part '../../widgets/dashboard/dashboard/dashboard_view_models.dart';
+part '../../widgets/dashboard/dashboard/dashboard_view_sections.dart';
+part '../../widgets/dashboard/dashboard/dashboard_view_widgets.dart';
 
 class DashboardView extends StatefulWidget {
   const DashboardView({super.key});

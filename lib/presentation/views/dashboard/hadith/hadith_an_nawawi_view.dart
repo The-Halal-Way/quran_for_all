@@ -9,10 +9,10 @@ import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 
-part '../../../widgets/dashobard/hadith/hadith_an_nawawi/hadith_an_nawawi_models.dart';
-part '../../../widgets/dashobard/hadith/hadith_an_nawawi/hadith_an_nawawi_pages.dart';
-part '../../../widgets/dashobard/hadith/hadith_an_nawawi/hadith_an_nawawi_jump_sheet.dart';
-part '../../../widgets/dashobard/hadith/hadith_an_nawawi/hadith_an_nawawi_shared_widgets.dart';
+part '../../../widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_models.dart';
+part '../../../widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_pages.dart';
+part '../../../widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_jump_sheet.dart';
+part '../../../widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_shared_widgets.dart';
 
 class HadithAnNawawiView extends StatefulWidget {
   const HadithAnNawawiView({super.key});

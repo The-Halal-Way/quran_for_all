@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
-import 'package:quran_for_all/presentation/widgets/dashobard/duah/daily_duah/daily_duah_data.dart';
-import 'package:quran_for_all/presentation/widgets/dashobard/duah/daily_duah/daily_duah_widgets.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/duah/daily_duah/daily_duah_data.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/duah/daily_duah/daily_duah_widgets.dart';
 
 class DailyDuahView extends StatefulWidget {
   const DailyDuahView({super.key});

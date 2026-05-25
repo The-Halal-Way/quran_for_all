@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:quran_for_all/presentation/widgets/dashobard/duah/powerful_duah/powerful_duah_data.dart';
-import 'package:quran_for_all/presentation/widgets/dashobard/duah/powerful_duah/powerful_duah_widgets.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/duah/powerful_duah/powerful_duah_data.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/duah/powerful_duah/powerful_duah_widgets.dart';
 
 class PowerfulDuahView extends StatefulWidget {
   const PowerfulDuahView({super.key});

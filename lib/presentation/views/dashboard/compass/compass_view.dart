@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/presentation/viewmodels/compass/compass_viewmodel.dart';
-import 'package:quran_for_all/presentation/widgets/compass/compass_dial.dart';
-import 'package:quran_for_all/presentation/widgets/compass/compass_heading.dart';
-import 'package:quran_for_all/presentation/widgets/compass/compass_info_row.dart';
-import 'package:quran_for_all/presentation/widgets/compass/compass_loading_state.dart';
-import 'package:quran_for_all/presentation/widgets/compass/compass_top_bar.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/compass/compass_dial.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/compass/compass_heading.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/compass/compass_info_row.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/compass/compass_loading_state.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/compass/compass_top_bar.dart';
 
 class CompassView extends StatefulWidget {
   const CompassView({super.key});
