@@ -94,6 +94,13 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
         'Maghrib': tz.TZDateTime.from(prayerTimes.maghrib, locationTimeZone),
         'Isha': tz.TZDateTime.from(prayerTimes.isha, locationTimeZone),
       };
+      final imsakTime = schedule['Fajr']!.subtract(const Duration(minutes: 10));
+      final sehriStart = tz.TZDateTime(
+        locationTimeZone,
+        nowInLocation.year,
+        nowInLocation.month,
+        nowInLocation.day,
+      );
       final tomorrowFajr = tz.TZDateTime.from(
         tomorrowPrayerTimes.fajr,
         locationTimeZone,
@@ -107,6 +114,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
       }
 
       _prayerTimes = {
+        'Sehri': format.format(imsakTime),
         'Fajr': format.format(schedule['Fajr']!),
         'Sunrise': format.format(schedule['Sunrise']!),
         'Dhuhr': format.format(schedule['Dhuhr']!),
@@ -115,6 +123,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
         'Isha': format.format(schedule['Isha']!),
       };
       _prayerTimeRanges = {
+        'Sehri': '${format.format(sehriStart)} - ${format.format(imsakTime)}',
         'Fajr':
             '${format.format(schedule['Fajr']!)} - ${format.format(schedule['Sunrise']!)}',
         'Dhuhr':

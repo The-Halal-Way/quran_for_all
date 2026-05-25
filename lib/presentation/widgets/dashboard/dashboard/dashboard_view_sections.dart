@@ -166,7 +166,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
     return Row(
       children: [
         Expanded(
-          child: _ContinueCard(
+          child: ContinueCard(
             title: context.l10n.dashboardContinueReadingTitle,
             subtitle: continueReadingSubtitle,
             detail: continueReadingDetail,
@@ -188,7 +188,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
         ),
         const SizedBox(width: 10),
         Expanded(
-          child: _ContinueCard(
+          child: ContinueCard(
             title: context.l10n.dashboardContinueLearningTitle,
             subtitle: continueLearningSubtitle,
             detail: continueLearningDetail,
@@ -390,7 +390,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                   child: Column(
                     children: (_prayerTimes ?? {}).entries.map((entry) {
                       final isNext = entry.key == _nextPrayer;
-                      return _PrayerRow(
+                      return PrayerRow(
                         name: _localizePrayerName(entry.key),
                         time: _prayerTimeRanges?[entry.key] ?? entry.value,
                         icon: _getPrayerIcon(entry.key),
@@ -410,6 +410,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
 
   IconData _getPrayerIcon(String prayer) {
     switch (prayer) {
+      case 'Sehri':
+        return Icons.nightlight_round;
       case 'Fajr':
         return Icons.wb_twilight_rounded;
       case 'Sunrise':
@@ -429,15 +431,21 @@ extension _DashboardViewStateSections on _DashboardViewState {
 
   // ── Small 2-col action row ──────────────────────────────────────────────────
 
-  Widget _buildSmallActionRow({required List<_ActionItem> items}) {
-    return Row(
-      children: items
-          .map(
-            (item) => Expanded(
+  Widget _buildSmallActionRow({required List<ActionItem> items}) {
+    final rows = <Widget>[];
+
+    for (var start = 0; start < items.length; start += 2) {
+      final rowItems = items.skip(start).take(2).toList();
+      rows.add(
+        Row(
+          children: List.generate(rowItems.length, (index) {
+            return Expanded(
               child: Padding(
-                padding: EdgeInsets.only(right: item == items.last ? 0 : 8),
-                child: _ActionTile(
-                  item: item,
+                padding: EdgeInsets.only(
+                  right: index == rowItems.length - 1 ? 0 : 8,
+                ),
+                child: ActionTile(
+                  item: rowItems[index],
                   isDark: _isDark,
                   cardBg: _cardBg,
                   textMain: _textMain,
@@ -445,10 +453,17 @@ extension _DashboardViewStateSections on _DashboardViewState {
                   divider: _divider,
                 ),
               ),
-            ),
-          )
-          .toList(),
-    );
+            );
+          }),
+        ),
+      );
+
+      if (start + 2 < items.length) {
+        rows.add(const SizedBox(height: 8));
+      }
+    }
+
+    return Column(children: rows);
   }
 
   // ── Hadith cards ────────────────────────────────────────────────────────────
@@ -456,7 +471,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
   Widget _buildHadithCards() {
     final responsive = AppResponsive.of(context);
     final cards = <Widget>[
-      _HadithNavCard(
+      HadithNavCard(
         number: '40',
         arabicTitle: 'الأربعون النووية',
         englishTitle: context.l10n.dashboardHadithAnNawawiTitle,
@@ -471,7 +486,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
         divider: _divider,
         onTap: () => _push(const HadithAnNawawiView()),
       ),
-      _HadithNavCard(
+      HadithNavCard(
         number: '40',
         arabicTitle: 'الأحاديث القصيرة',
         englishTitle: context.l10n.dashboardHadithShortTitle,
@@ -514,6 +529,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
 
   String _localizePrayerName(String prayer) {
     switch (prayer) {
+      case 'Sehri':
+        return context.l10n.dashboardPrayerSehri;
       case 'Fajr':
         return context.l10n.dashboardPrayerFajr;
       case 'Sunrise':

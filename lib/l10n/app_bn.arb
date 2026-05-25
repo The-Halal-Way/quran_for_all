@@ -132,6 +132,32 @@
     }
   },
   "duahTapToShowPronunciation": "উচ্চারণ দেখতে ট্যাপ করুন",
+  "duahNintyNineTitle": "৯৯টি নাম",
+  "duahNintyNineSubtitle": "আসমা উল হুসনা",
+  "duahNintyNineNamesCount": "{count}টি নাম",
+  "@duahNintyNineNamesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "duahNintyNineCategoryCount": "{count}টি থিম",
+  "@duahNintyNineCategoryCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "duahNintyNineVerseLabel": "কুরআনের স্মরণ",
+  "duahNintyNineBenefitTitle": "উপকারিতা",
+  "duahNintyNineConclusionTitle": "উপসংহার",
+  "duahNintyNineNamesGridTitle": "সুন্দর নামসমূহ",
+  "duahNintyNineLoading": "সুন্দর নামসমূহ লোড হচ্ছে...",
+  "duahNintyNineLoadError": "এই মুহূর্তে নামসমূহ লোড করা যাচ্ছে না।",
+  "duahNintyNineLoadErrorBody": "একটু পর আবার চেষ্টা করুন।",
+  "duahNintyNineRetry": "আবার চেষ্টা করুন",
   "dashboardGreetingMorning": "সুপ্রভাত",
   "dashboardGreetingAfternoon": "শুভ অপরাহ্ন",
   "dashboardGreetingEvening": "শুভ সন্ধ্যা",
@@ -143,6 +169,8 @@
   "dashboardActionDailyDuaSub": "সকাল ও সন্ধ্যা",
   "dashboardActionPowerfulDua": "শক্তিশালী দু'আ",
   "dashboardActionPowerfulDuaSub": "নির্বাচিত প্রার্থনাসমূহ",
+  "dashboardActionNintyNineNames": "৯৯টি নাম",
+  "dashboardActionNintyNineNamesSub": "আসমা উল হুসনা",
   "dashboardSectionHadith": "হাদিস",
   "dashboardContinueReadingTitle": "পড়া চালিয়ে যান",
   "dashboardContinueReadingStartSubtitle": "যেখান থেকে থেমেছেন সেখান থেকেই শুরু করুন",
@@ -177,6 +205,7 @@
   "dashboardNextPrayer": "পরবর্তী নামাজ",
   "dashboardNextShortLabel": "পরবর্তী",
   "dashboardPrayerFajr": "ফজর",
+  "dashboardPrayerSehri": "সেহরি",
   "dashboardPrayerSunrise": "সূর্যোদয়",
   "dashboardPrayerDhuhr": "যোহর",
   "dashboardPrayerAsr": "আসর",
@@ -195,6 +224,7 @@
   "prayerViewTimeFallback": "গাইড মোড",
   "prayerViewHeroNextLabel": "প্রস্তুতির সময়",
   "prayerViewNoTime": "--",
+  "prayerViewSehriLast": "সর্বশেষ",
   "prayerViewPermissionHelpTitle": "নামাজের সময়ের জন্য লোকেশন দরকার",
   "prayerViewPermissionHelpBody": "স্থানীয় নামাজের সময় হিসাব করতে লোকেশন অনুমতি দিন। নিচের নির্দেশনাগুলো তবুও পাওয়া যাবে।",
   "prayerViewTimelineTitle": "আজকের নামাজের ছন্দ",

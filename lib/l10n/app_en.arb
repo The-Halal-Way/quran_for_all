@@ -132,6 +132,32 @@
     }
   },
   "duahTapToShowPronunciation": "Tap to show pronunciation",
+  "duahNintyNineTitle": "99 Names",
+  "duahNintyNineSubtitle": "Asma ul Husna",
+  "duahNintyNineNamesCount": "{count} names",
+  "@duahNintyNineNamesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "duahNintyNineCategoryCount": "{count} themes",
+  "@duahNintyNineCategoryCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "duahNintyNineVerseLabel": "Quran reminder",
+  "duahNintyNineBenefitTitle": "Benefit",
+  "duahNintyNineConclusionTitle": "Conclusion",
+  "duahNintyNineNamesGridTitle": "Beautiful Names",
+  "duahNintyNineLoading": "Loading the beautiful names...",
+  "duahNintyNineLoadError": "Unable to load the names right now.",
+  "duahNintyNineLoadErrorBody": "Please try again in a moment.",
+  "duahNintyNineRetry": "Retry",
   "dashboardGreetingMorning": "Good morning",
   "dashboardGreetingAfternoon": "Good afternoon",
   "dashboardGreetingEvening": "Good evening",
@@ -143,6 +169,8 @@
   "dashboardActionDailyDuaSub": "Morning & evening",
   "dashboardActionPowerfulDua": "Powerful Du'a",
   "dashboardActionPowerfulDuaSub": "Curated supplications",
+  "dashboardActionNintyNineNames": "99 Names",
+  "dashboardActionNintyNineNamesSub": "Asma ul Husna",
   "dashboardSectionHadith": "Hadith",
   "dashboardContinueReadingTitle": "Continue Reading",
   "dashboardContinueReadingStartSubtitle": "Start where you left off",
@@ -177,6 +205,7 @@
   "dashboardNextPrayer": "Next Prayer",
   "dashboardNextShortLabel": "Next",
   "dashboardPrayerFajr": "Fajr",
+  "dashboardPrayerSehri": "Sehri",
   "dashboardPrayerSunrise": "Sunrise",
   "dashboardPrayerDhuhr": "Dhuhr",
   "dashboardPrayerAsr": "Asr",
@@ -195,6 +224,7 @@
   "prayerViewTimeFallback": "Guide mode",
   "prayerViewHeroNextLabel": "Time to prepare",
   "prayerViewNoTime": "--",
+  "prayerViewSehriLast": "Last",
   "prayerViewPermissionHelpTitle": "Prayer times need location",
   "prayerViewPermissionHelpBody": "Enable location permission to calculate local prayer times. The guidance below still stays available.",
   "prayerViewTimelineTitle": "Today's Prayer Rhythm",

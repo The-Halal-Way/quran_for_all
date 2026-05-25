@@ -7,6 +7,83 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
 import 'prayer_visuals.dart';
 
+class PrayerSehriWindowCard extends StatelessWidget {
+  const PrayerSehriWindowCard({
+    super.key,
+    required this.timeRange,
+    required this.lastTime,
+  });
+
+  final String timeRange;
+  final String lastTime;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+    final text = AppTheme.text(context);
+    final titleColor = isDark ? MyColors.darkTextPrimary : MyColors.textPrimary;
+    final hintColor = isDark
+        ? MyColors.darkTextSecondary
+        : MyColors.textSecondary;
+
+    return PrayerCardShell(
+      margin: const EdgeInsets.only(bottom: AppSpacing.md),
+      gradient: LinearGradient(
+        colors: [
+          MyColors.secondary.withValues(alpha: isDark ? 0.13 : 0.07),
+          MyColors.primaryLight.withValues(alpha: isDark ? 0.1 : 0.05),
+        ],
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+      ),
+      borderColor: MyColors.secondary.withValues(alpha: 0.22),
+      shadowColor: MyColors.secondary,
+      child: Row(
+        children: [
+          Container(
+            width: 42,
+            height: 42,
+            decoration: BoxDecoration(
+              color: MyColors.secondary.withValues(alpha: isDark ? 0.2 : 0.14),
+              borderRadius: BorderRadius.circular(AppRadius.md),
+            ),
+            child: const Icon(
+              Icons.nightlight_round,
+              color: MyColors.secondary,
+              size: 21,
+            ),
+          ),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  context.l10n.dashboardPrayerSehri,
+                  style: text.prayerTimelineNameActive.copyWith(
+                    color: titleColor,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  timeRange,
+                  style: text.prayerTimelineTime.copyWith(color: hintColor),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: AppSpacing.sm),
+          Text(
+            '${context.l10n.prayerViewSehriLast}: $lastTime',
+            style: text.prayerStatusChip.copyWith(color: MyColors.secondary),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class PrayerTimelineCard extends StatelessWidget {
   const PrayerTimelineCard({super.key, required this.items});
 

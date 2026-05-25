@@ -16,6 +16,7 @@ import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_view
 import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'package:quran_for_all/presentation/views/dashboard/compass/compass_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/duah/duah_ninty_nine_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
@@ -140,7 +141,7 @@ class _DashboardViewState extends State<DashboardView> {
           // Subtle background tiling
           Positioned.fill(
             child: IgnorePointer(
-              child: CustomPaint(painter: _BgPainter(isDark: _isDark)),
+              child: CustomPaint(painter: BgPainter(isDark: _isDark)),
             ),
           ),
 
@@ -184,13 +185,13 @@ class _DashboardViewState extends State<DashboardView> {
                         const SizedBox(height: 10),
                         _buildSmallActionRow(
                           items: [
-                            _ActionItem(
+                            ActionItem(
                               icon: Icons.access_time_filled_rounded,
                               label: context.l10n.dashboardActionFullPrayerView,
                               color: MyColors.secondary,
                               onTap: () => _push(const PrayerView()),
                             ),
-                            _ActionItem(
+                            ActionItem(
                               icon: Icons.explore_rounded,
                               label: context.l10n.dashboardActionQiblaCompass,
                               color: MyColors.primaryLight,
@@ -207,20 +208,28 @@ class _DashboardViewState extends State<DashboardView> {
                         const SizedBox(height: 10),
                         _buildSmallActionRow(
                           items: [
-                            _ActionItem(
+                            ActionItem(
                               icon: Icons.wb_twilight_rounded,
                               label: context.l10n.dashboardActionDailyDua,
                               sublabel: context.l10n.dashboardActionDailyDuaSub,
                               color: MyColors.tertiary,
                               onTap: () => _push(const DailyDuahView()),
                             ),
-                            _ActionItem(
+                            ActionItem(
                               icon: Icons.bolt_rounded,
                               label: context.l10n.dashboardActionPowerfulDua,
                               sublabel:
                                   context.l10n.dashboardActionPowerfulDuaSub,
                               color: MyColors.secondary,
                               onTap: () => _push(const PowerfulDuahView()),
+                            ),
+                            ActionItem(
+                              icon: Icons.diamond_rounded,
+                              label: context.l10n.dashboardActionNintyNineNames,
+                              sublabel:
+                                  context.l10n.dashboardActionNintyNineNamesSub,
+                              color: MyColors.primaryLight,
+                              onTap: () => _push(const DuahNintyNineView()),
                             ),
                           ],
                         ),

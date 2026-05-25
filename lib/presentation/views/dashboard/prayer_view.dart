@@ -135,6 +135,12 @@ class _PrayerViewBody extends StatelessWidget {
                               icon: Icons.view_timeline_rounded,
                               accent: accent,
                             ),
+                            if (viewModel.prayerTimeRanges['Sehri'] != null &&
+                                viewModel.prayerTimes['Sehri'] != null)
+                              PrayerSehriWindowCard(
+                                timeRange: viewModel.prayerTimeRanges['Sehri']!,
+                                lastTime: viewModel.prayerTimes['Sehri']!,
+                              ),
                             PrayerTimelineCard(items: timeline),
                             PrayerSectionHeader(
                               title: l10n.prayerViewNowTitle,

@@ -482,6 +482,78 @@ abstract class AppLocalizations {
   /// **'Tap to show pronunciation'**
   String get duahTapToShowPronunciation;
 
+  /// No description provided for @duahNintyNineTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'99 Names'**
+  String get duahNintyNineTitle;
+
+  /// No description provided for @duahNintyNineSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Asma ul Husna'**
+  String get duahNintyNineSubtitle;
+
+  /// No description provided for @duahNintyNineNamesCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} names'**
+  String duahNintyNineNamesCount(int count);
+
+  /// No description provided for @duahNintyNineCategoryCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} themes'**
+  String duahNintyNineCategoryCount(int count);
+
+  /// No description provided for @duahNintyNineVerseLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran reminder'**
+  String get duahNintyNineVerseLabel;
+
+  /// No description provided for @duahNintyNineBenefitTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Benefit'**
+  String get duahNintyNineBenefitTitle;
+
+  /// No description provided for @duahNintyNineConclusionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Conclusion'**
+  String get duahNintyNineConclusionTitle;
+
+  /// No description provided for @duahNintyNineNamesGridTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Beautiful Names'**
+  String get duahNintyNineNamesGridTitle;
+
+  /// No description provided for @duahNintyNineLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading the beautiful names...'**
+  String get duahNintyNineLoading;
+
+  /// No description provided for @duahNintyNineLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to load the names right now.'**
+  String get duahNintyNineLoadError;
+
+  /// No description provided for @duahNintyNineLoadErrorBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Please try again in a moment.'**
+  String get duahNintyNineLoadErrorBody;
+
+  /// No description provided for @duahNintyNineRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get duahNintyNineRetry;
+
   /// No description provided for @dashboardGreetingMorning.
   ///
   /// In en, this message translates to:
@@ -547,6 +619,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Curated supplications'**
   String get dashboardActionPowerfulDuaSub;
+
+  /// No description provided for @dashboardActionNintyNineNames.
+  ///
+  /// In en, this message translates to:
+  /// **'99 Names'**
+  String get dashboardActionNintyNineNames;
+
+  /// No description provided for @dashboardActionNintyNineNamesSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Asma ul Husna'**
+  String get dashboardActionNintyNineNamesSub;
 
   /// No description provided for @dashboardSectionHadith.
   ///
@@ -634,6 +718,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Fajr'**
   String get dashboardPrayerFajr;
+
+  /// No description provided for @dashboardPrayerSehri.
+  ///
+  /// In en, this message translates to:
+  /// **'Sehri'**
+  String get dashboardPrayerSehri;
 
   /// No description provided for @dashboardPrayerSunrise.
   ///
@@ -742,6 +832,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'--'**
   String get prayerViewNoTime;
+
+  /// No description provided for @prayerViewSehriLast.
+  ///
+  /// In en, this message translates to:
+  /// **'Last'**
+  String get prayerViewSehriLast;
 
   /// No description provided for @prayerViewPermissionHelpTitle.
   ///

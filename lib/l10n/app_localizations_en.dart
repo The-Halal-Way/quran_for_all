@@ -228,6 +228,46 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duahTapToShowPronunciation => 'Tap to show pronunciation';
 
   @override
+  String get duahNintyNineTitle => '99 Names';
+
+  @override
+  String get duahNintyNineSubtitle => 'Asma ul Husna';
+
+  @override
+  String duahNintyNineNamesCount(int count) {
+    return '$count names';
+  }
+
+  @override
+  String duahNintyNineCategoryCount(int count) {
+    return '$count themes';
+  }
+
+  @override
+  String get duahNintyNineVerseLabel => 'Quran reminder';
+
+  @override
+  String get duahNintyNineBenefitTitle => 'Benefit';
+
+  @override
+  String get duahNintyNineConclusionTitle => 'Conclusion';
+
+  @override
+  String get duahNintyNineNamesGridTitle => 'Beautiful Names';
+
+  @override
+  String get duahNintyNineLoading => 'Loading the beautiful names...';
+
+  @override
+  String get duahNintyNineLoadError => 'Unable to load the names right now.';
+
+  @override
+  String get duahNintyNineLoadErrorBody => 'Please try again in a moment.';
+
+  @override
+  String get duahNintyNineRetry => 'Retry';
+
+  @override
   String get dashboardGreetingMorning => 'Good morning';
 
   @override
@@ -259,6 +299,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dashboardActionPowerfulDuaSub => 'Curated supplications';
+
+  @override
+  String get dashboardActionNintyNineNames => '99 Names';
+
+  @override
+  String get dashboardActionNintyNineNamesSub => 'Asma ul Husna';
 
   @override
   String get dashboardSectionHadith => 'Hadith';
@@ -310,6 +356,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dashboardPrayerFajr => 'Fajr';
+
+  @override
+  String get dashboardPrayerSehri => 'Sehri';
 
   @override
   String get dashboardPrayerSunrise => 'Sunrise';
@@ -366,6 +415,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get prayerViewNoTime => '--';
+
+  @override
+  String get prayerViewSehriLast => 'Last';
 
   @override
   String get prayerViewPermissionHelpTitle => 'Prayer times need location';

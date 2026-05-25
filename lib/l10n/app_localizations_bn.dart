@@ -229,6 +229,46 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahTapToShowPronunciation => 'উচ্চারণ দেখতে ট্যাপ করুন';
 
   @override
+  String get duahNintyNineTitle => '৯৯টি নাম';
+
+  @override
+  String get duahNintyNineSubtitle => 'আসমা উল হুসনা';
+
+  @override
+  String duahNintyNineNamesCount(int count) {
+    return '$countটি নাম';
+  }
+
+  @override
+  String duahNintyNineCategoryCount(int count) {
+    return '$countটি থিম';
+  }
+
+  @override
+  String get duahNintyNineVerseLabel => 'কুরআনের স্মরণ';
+
+  @override
+  String get duahNintyNineBenefitTitle => 'উপকারিতা';
+
+  @override
+  String get duahNintyNineConclusionTitle => 'উপসংহার';
+
+  @override
+  String get duahNintyNineNamesGridTitle => 'সুন্দর নামসমূহ';
+
+  @override
+  String get duahNintyNineLoading => 'সুন্দর নামসমূহ লোড হচ্ছে...';
+
+  @override
+  String get duahNintyNineLoadError => 'এই মুহূর্তে নামসমূহ লোড করা যাচ্ছে না।';
+
+  @override
+  String get duahNintyNineLoadErrorBody => 'একটু পর আবার চেষ্টা করুন।';
+
+  @override
+  String get duahNintyNineRetry => 'আবার চেষ্টা করুন';
+
+  @override
   String get dashboardGreetingMorning => 'সুপ্রভাত';
 
   @override
@@ -260,6 +300,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dashboardActionPowerfulDuaSub => 'নির্বাচিত প্রার্থনাসমূহ';
+
+  @override
+  String get dashboardActionNintyNineNames => '৯৯টি নাম';
+
+  @override
+  String get dashboardActionNintyNineNamesSub => 'আসমা উল হুসনা';
 
   @override
   String get dashboardSectionHadith => 'হাদিস';
@@ -311,6 +357,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dashboardPrayerFajr => 'ফজর';
+
+  @override
+  String get dashboardPrayerSehri => 'সেহরি';
 
   @override
   String get dashboardPrayerSunrise => 'সূর্যোদয়';
@@ -367,6 +416,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get prayerViewNoTime => '--';
+
+  @override
+  String get prayerViewSehriLast => 'সর্বশেষ';
 
   @override
   String get prayerViewPermissionHelpTitle => 'নামাজের সময়ের জন্য লোকেশন দরকার';

@@ -1,6 +1,6 @@
 part of '../../../views/dashboard/dashboard_view.dart';
 
-class _ContinueCard extends StatelessWidget {
+class ContinueCard extends StatelessWidget {
   final String title, subtitle, detail, arabicSnippet;
   final List<Color> gradientColors;
   final Color glowColor;
@@ -8,7 +8,7 @@ class _ContinueCard extends StatelessWidget {
   final bool isDark;
   final VoidCallback onTap;
 
-  const _ContinueCard({
+  const ContinueCard({super.key, 
     required this.title,
     required this.subtitle,
     required this.detail,
@@ -132,13 +132,13 @@ class _ContinueCard extends StatelessWidget {
 // PRAYER ROW
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _PrayerRow extends StatelessWidget {
+class PrayerRow extends StatelessWidget {
   final String name, time;
   final IconData icon;
   final bool isNext, isDark;
   final Color textMain, textHint, divider;
 
-  const _PrayerRow({
+  const PrayerRow({super.key, 
     required this.name,
     required this.time,
     required this.icon,
@@ -222,12 +222,12 @@ class _PrayerRow extends StatelessWidget {
 // ACTION TILE  (2-col quick actions)
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _ActionTile extends StatelessWidget {
-  final _ActionItem item;
+class ActionTile extends StatelessWidget {
+  final ActionItem item;
   final bool isDark;
   final Color cardBg, textMain, textHint, divider;
 
-  const _ActionTile({
+  const ActionTile({super.key, 
     required this.item,
     required this.isDark,
     required this.cardBg,
@@ -296,7 +296,7 @@ class _ActionTile extends StatelessWidget {
 // HADITH NAV CARD  (large, with Arabic title)
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _HadithNavCard extends StatelessWidget {
+class HadithNavCard extends StatelessWidget {
   final String number, arabicTitle, englishTitle, description;
   final List<Color> accentColors;
   final Color glowColor;
@@ -304,7 +304,7 @@ class _HadithNavCard extends StatelessWidget {
   final Color cardBg, textMain, textSub, textHint, divider;
   final VoidCallback onTap;
 
-  const _HadithNavCard({
+  const HadithNavCard({super.key, 
     required this.number,
     required this.arabicTitle,
     required this.englishTitle,
@@ -452,9 +452,9 @@ class _HadithNavCard extends StatelessWidget {
 // BACKGROUND PAINTER  (faint geometric tile)
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _BgPainter extends CustomPainter {
+class BgPainter extends CustomPainter {
   final bool isDark;
-  const _BgPainter({required this.isDark});
+  const BgPainter({required this.isDark});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -484,5 +484,5 @@ class _BgPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(_BgPainter old) => old.isDark != isDark;
+  bool shouldRepaint(BgPainter old) => old.isDark != isDark;
 }
