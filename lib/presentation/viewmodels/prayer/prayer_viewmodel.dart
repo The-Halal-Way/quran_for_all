@@ -13,9 +13,11 @@ class PrayerViewModel extends ChangeNotifier {
   ];
 
   Map<String, String> _prayerTimes = const <String, String>{};
+  Map<String, String> _prayerTimeRanges = const <String, String>{};
   String? _nextPrayerKey;
 
   Map<String, String> get prayerTimes => _prayerTimes;
+  Map<String, String> get prayerTimeRanges => _prayerTimeRanges;
   String? get nextPrayerKey => _nextPrayerKey;
   bool get hasTimes => _prayerTimes.isNotEmpty;
 
@@ -38,19 +40,25 @@ class PrayerViewModel extends ChangeNotifier {
 
   void sync({
     required Map<String, String>? prayerTimes,
+    required Map<String, String>? prayerTimeRanges,
     required String? nextPrayerKey,
     bool notify = true,
   }) {
     final nextTimes = Map<String, String>.unmodifiable(
       prayerTimes ?? const <String, String>{},
     );
+    final nextTimeRanges = Map<String, String>.unmodifiable(
+      prayerTimeRanges ?? const <String, String>{},
+    );
 
     if (mapEquals(_prayerTimes, nextTimes) &&
+        mapEquals(_prayerTimeRanges, nextTimeRanges) &&
         _nextPrayerKey == nextPrayerKey) {
       return;
     }
 
     _prayerTimes = nextTimes;
+    _prayerTimeRanges = nextTimeRanges;
     _nextPrayerKey = nextPrayerKey;
 
     if (notify) {
@@ -59,7 +67,9 @@ class PrayerViewModel extends ChangeNotifier {
   }
 
   String focusTime(AppLocalizations l10n) {
-    return _prayerTimes[focusPrayer.scheduleKey] ?? l10n.prayerViewNoTime;
+    return _prayerTimeRanges[focusPrayer.scheduleKey] ??
+        _prayerTimes[focusPrayer.scheduleKey] ??
+        l10n.prayerViewNoTime;
   }
 
   List<PrayerTimelineItem> timeline(AppLocalizations l10n) {
@@ -76,7 +86,10 @@ class PrayerViewModel extends ChangeNotifier {
       return PrayerTimelineItem(
         prayer: prayer,
         name: localizedPrayerName(l10n, prayer),
-        time: _prayerTimes[prayer.scheduleKey] ?? l10n.prayerViewNoTime,
+        time:
+            _prayerTimeRanges[prayer.scheduleKey] ??
+            _prayerTimes[prayer.scheduleKey] ??
+            l10n.prayerViewNoTime,
         isNext: isNext,
         isFocus: isFocus,
         isPassed: isPassed && !isFocus,

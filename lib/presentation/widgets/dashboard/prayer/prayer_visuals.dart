@@ -1,5 +1,3 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quran_for_all/core/theme/app_shadows.dart';
@@ -160,61 +158,5 @@ class PrayerSectionHeader extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class PrayerPatternPainter extends CustomPainter {
-  const PrayerPatternPainter({required this.isDark, this.accent});
-
-  final bool isDark;
-  final Color? accent;
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final base = accent ?? MyColors.tertiary;
-    final paint = Paint()
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1
-      ..color = base.withValues(alpha: isDark ? 0.08 : 0.10);
-
-    const step = 42.0;
-    for (var x = -size.height; x < size.width; x += step) {
-      canvas.drawLine(Offset(x, 0), Offset(x + size.height, size.height), paint);
-    }
-
-    final starPaint = Paint()
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.1
-      ..color = MyColors.secondary.withValues(alpha: isDark ? 0.10 : 0.08);
-
-    for (var y = 86.0; y < size.height; y += 180) {
-      for (var x = 34.0; x < size.width; x += 138) {
-        _drawEightPoint(canvas, Offset(x, y), 13, starPaint);
-      }
-    }
-  }
-
-  void _drawEightPoint(Canvas canvas, Offset center, double radius, Paint paint) {
-    final path = Path();
-    for (var i = 0; i < 16; i++) {
-      final angle = -math.pi / 2 + i * math.pi / 8;
-      final pointRadius = i.isEven ? radius : radius * 0.46;
-      final point = Offset(
-        center.dx + math.cos(angle) * pointRadius,
-        center.dy + math.sin(angle) * pointRadius,
-      );
-      if (i == 0) {
-        path.moveTo(point.dx, point.dy);
-      } else {
-        path.lineTo(point.dx, point.dy);
-      }
-    }
-    path.close();
-    canvas.drawPath(path, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant PrayerPatternPainter oldDelegate) {
-    return oldDelegate.isDark != isDark || oldDelegate.accent != accent;
   }
 }

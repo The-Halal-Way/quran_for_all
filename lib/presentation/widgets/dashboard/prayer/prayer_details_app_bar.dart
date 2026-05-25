@@ -6,8 +6,6 @@ import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 
-import 'prayer_visuals.dart';
-
 class PrayerDetailsAppBar extends StatelessWidget {
   const PrayerDetailsAppBar({
     super.key,
@@ -43,33 +41,33 @@ class PrayerDetailsAppBar extends StatelessWidget {
         const _LanguageToggleAction(),
       ],
       title: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              context.l10n.prayerViewTitle,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: GoogleFonts.sora(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.w800,
-                height: 1.2,
-              ),
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            context.l10n.prayerViewTitle,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: GoogleFonts.sora(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.w800,
+              height: 1.2,
             ),
-            Text(
-              context.l10n.prayerViewAppBarSubtitle,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: GoogleFonts.manrope(
-                color: Colors.white.withValues(alpha: 0.76),
-                fontSize: 10.5,
-                fontWeight: FontWeight.w600,
-                height: 1.2,
-              ),
+          ),
+          Text(
+            context.l10n.prayerViewAppBarSubtitle,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: GoogleFonts.manrope(
+              color: Colors.white.withValues(alpha: 0.76),
+              fontSize: 10.5,
+              fontWeight: FontWeight.w600,
+              height: 1.2,
             ),
-          ],
-        ),
+          ),
+        ],
+      ),
       flexibleSpace: FlexibleSpaceBar(
         titlePadding: const EdgeInsetsDirectional.fromSTEB(56, 0, 112, 14),
         background: DecoratedBox(
@@ -85,17 +83,11 @@ class PrayerDetailsAppBar extends StatelessWidget {
             ),
             boxShadow: [
               BoxShadow(
-                color: MyColors.primary.withValues(
-                  alpha: isDark ? 0.34 : 0.22,
-                ),
+                color: MyColors.primary.withValues(alpha: isDark ? 0.34 : 0.22),
                 blurRadius: 18,
                 offset: const Offset(0, 5),
               ),
             ],
-          ),
-          child: CustomPaint(
-            painter: const PrayerPatternPainter(isDark: true),
-            child: const SizedBox.expand(),
           ),
         ),
       ),

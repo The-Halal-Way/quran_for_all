@@ -46,11 +46,6 @@ class PrayerFocusHero extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          Positioned.fill(
-            child: CustomPaint(
-              painter: PrayerPatternPainter(isDark: true, accent: accent),
-            ),
-          ),
           Positioned(
             right: -18,
             bottom: -22,

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter_compass/flutter_compass.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -58,6 +59,14 @@ class PermissionRequestResult {
   static bool _isEffectivelyGranted(PermissionStatus status) {
     return status.isGranted || status.isLimited || status.isProvisional;
   }
+}
+
+class CompassListeningSession {
+  const CompassListeningSession._(this._subscription);
+
+  final StreamSubscription<CompassEvent> _subscription;
+
+  Future<void> cancel() => _subscription.cancel();
 }
 
 class PermissionHelper {
@@ -217,59 +226,63 @@ class PermissionHelper {
     return FlutterCompass.events != null;
   }
 
-  Future<bool> startCompassWithPermission({
+  Future<CompassListeningSession?> startCompassWithPermission({
     required Function(double heading) onHeadingChanged,
     required Function(String direction)
     onDirectionChanged, // e.g., 'East', 'West'
     double headingCorrectionDegrees = 0,
   }) async {
-    final helper = const PermissionHelper();
     final requiredPermissions = <Permission>[];
     if (Platform.isAndroid || Platform.isIOS) {
       requiredPermissions.add(Permission.locationWhenInUse);
     }
 
-    final result = await helper.requestWithSummary(requiredPermissions);
+    final result = await requestWithSummary(requiredPermissions);
 
-    if (requiredPermissions.any((permission) => !result.isGranted(permission))) {
+    if (requiredPermissions.any(
+      (permission) => !result.isGranted(permission),
+    )) {
       if (result.shouldPromptToOpenSettings) {
-        await helper.openSettings();
+        await openSettings();
       } else {
-        print('Compass permissions denied');
+        debugPrint('Compass permissions denied');
       }
-      return false;
+      return null;
     }
 
     final events = FlutterCompass.events;
     if (events == null) {
-      print('Compass sensor is not available on this device');
-      return false;
+      debugPrint('Compass sensor is not available on this device');
+      return null;
     }
 
     final ready = Completer<bool>();
     late final StreamSubscription<CompassEvent> subscription;
 
     // flutter_compass returns a stream of CompassEvent
-    subscription = events.listen((CompassEvent event) {
-      final heading = _extractHeading(event);
-      if (heading == null) {
-        return;
-      }
+    subscription = events.listen(
+      (CompassEvent event) {
+        final heading = _extractHeading(event);
+        if (heading == null) {
+          return;
+        }
 
-      final correctedHeading =
-          (heading + headingCorrectionDegrees + 360) % 360;
+        final correctedHeading =
+            (heading + headingCorrectionDegrees + 360) % 360;
 
-      onHeadingChanged(correctedHeading);
-      onDirectionChanged(_getCardinalDirection(correctedHeading));
+        onHeadingChanged(correctedHeading);
+        onDirectionChanged(_getCardinalDirection(correctedHeading));
 
-      if (!ready.isCompleted) {
-        ready.complete(true);
-      }
-    }, onError: (_) {
-      if (!ready.isCompleted) {
-        ready.complete(false);
-      }
-    });
+        if (!ready.isCompleted) {
+          ready.complete(true);
+        }
+      },
+      onError: (_) {
+        if (!ready.isCompleted) {
+          ready.complete(false);
+        }
+      },
+    );
 
     final started = await ready.future.timeout(
       const Duration(seconds: 5),
@@ -278,11 +291,11 @@ class PermissionHelper {
 
     if (!started) {
       await subscription.cancel();
-      print('Compass data unavailable on this device');
-      return false;
+      debugPrint('Compass data unavailable on this device');
+      return null;
     }
 
-    return true;
+    return CompassListeningSession._(subscription);
   }
 
   double? _extractHeading(CompassEvent event) {

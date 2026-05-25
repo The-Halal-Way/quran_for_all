@@ -52,6 +52,8 @@ class _DashboardViewState extends State<DashboardView> {
 
   Map<String, String>? get _prayerTimes =>
       context.watch<DashboardPrayerTimesViewModel>().prayerTimes;
+  Map<String, String>? get _prayerTimeRanges =>
+      context.watch<DashboardPrayerTimesViewModel>().prayerTimeRanges;
   String get _prayerError =>
       context.watch<DashboardPrayerTimesViewModel>().error;
   bool get _loadingPrayerTimes =>

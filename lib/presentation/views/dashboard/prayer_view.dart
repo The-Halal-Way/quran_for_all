@@ -46,9 +46,9 @@ class _PrayerViewBody extends StatelessWidget {
   const _PrayerViewBody();
 
   Future<void> _refresh(BuildContext context) {
-    return context
-        .read<DashboardPrayerTimesViewModel>()
-        .loadPrayerTimes(forceRefresh: true);
+    return context.read<DashboardPrayerTimesViewModel>().loadPrayerTimes(
+      forceRefresh: true,
+    );
   }
 
   @override
@@ -57,6 +57,7 @@ class _PrayerViewBody extends StatelessWidget {
     final viewModel = context.read<PrayerViewModel>();
     viewModel.sync(
       prayerTimes: prayerTimesVm.prayerTimes,
+      prayerTimeRanges: prayerTimesVm.prayerTimeRanges,
       nextPrayerKey: prayerTimesVm.nextPrayer,
       notify: false,
     );
@@ -78,13 +79,6 @@ class _PrayerViewBody extends StatelessWidget {
                 gradient: isDark
                     ? AppGradients.darkPageBg
                     : AppGradients.pageBg,
-              ),
-            ),
-          ),
-          Positioned.fill(
-            child: IgnorePointer(
-              child: CustomPaint(
-                painter: PrayerPatternPainter(isDark: isDark, accent: accent),
               ),
             ),
           ),

@@ -441,7 +441,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                       final isNext = entry.key == _nextPrayer;
                       return _PrayerRow(
                         name: _localizePrayerName(entry.key),
-                        time: entry.value,
+                        time: _prayerTimeRanges?[entry.key] ?? entry.value,
                         icon: _getPrayerIcon(entry.key),
                         isNext: isNext,
                         isDark: _isDark,

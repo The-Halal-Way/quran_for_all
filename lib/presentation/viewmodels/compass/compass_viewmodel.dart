@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:quran_for_all/services/permission_helper.dart';
@@ -25,6 +27,8 @@ class CompassViewModel extends ChangeNotifier {
   bool _isInitializing = true;
   double _qiblaDegrees = kFallbackQiblaDegrees;
   String _initError = '';
+  CompassListeningSession? _compassSession;
+  bool _isDisposed = false;
 
   double get rawHeading => _rawHeading;
   double get smoothHeading => _smoothHeading;
@@ -45,33 +49,65 @@ class CompassViewModel extends ChangeNotifier {
       _isInitializing || (!_isListening && !_isApiFallback);
 
   Future<void> initialize() async {
+    await _stopCompass();
+    if (_isDisposed) {
+      return;
+    }
+
     _isInitializing = true;
     _initError = '';
-    notifyListeners();
+    _notifyListenersIfActive();
 
     try {
       final position = await _getCurrentPosition();
+      if (_isDisposed) {
+        return;
+      }
+
       final qiblaDirection = await _qiblaApiService.fetchQiblaDirection(
         latitude: position.latitude,
         longitude: position.longitude,
       );
+      if (_isDisposed) {
+        return;
+      }
 
       final hasNativeCompass = await _permissionHelper
           .hasNativeCompassFeature();
-      var started = false;
+      if (_isDisposed) {
+        return;
+      }
+
+      CompassListeningSession? session;
 
       if (hasNativeCompass) {
-        started = await _permissionHelper.startCompassWithPermission(
+        session = await _permissionHelper.startCompassWithPermission(
           onHeadingChanged: (heading) {
+            if (_isDisposed) {
+              return;
+            }
+
             _rawHeading = (heading + 360) % 360;
           },
           onDirectionChanged: (direction) {
+            if (_isDisposed) {
+              return;
+            }
+
             _directionLabel = direction;
-            notifyListeners();
+            _notifyListenersIfActive();
           },
           headingCorrectionDegrees: kHeadingCorrectionDegrees,
         );
       }
+
+      if (_isDisposed) {
+        unawaited(session?.cancel());
+        return;
+      }
+
+      _compassSession = session;
+      final started = session != null;
 
       _qiblaDegrees = qiblaDirection ?? kFallbackQiblaDegrees;
       _isListening = started;
@@ -81,17 +117,25 @@ class CompassViewModel extends ChangeNotifier {
       _rawHeading = started ? _rawHeading : 0;
       _smoothHeading = started ? _smoothHeading : 0;
       _initError = '';
-      notifyListeners();
+      _notifyListenersIfActive();
     } catch (e) {
+      if (_isDisposed) {
+        return;
+      }
+
       _isListening = false;
       _isApiFallback = false;
       _isInitializing = false;
       _initError = 'Failed to initialize compass/Qibla: $e';
-      notifyListeners();
+      _notifyListenersIfActive();
     }
   }
 
   void updateSmoothHeading() {
+    if (_isDisposed) {
+      return;
+    }
+
     final previous = _smoothHeading;
     var diff = _rawHeading - _smoothHeading;
     if (diff > 180) diff -= 360;
@@ -100,12 +144,33 @@ class CompassViewModel extends ChangeNotifier {
     _smoothHeading = (next + 360) % 360;
 
     if ((previous - _smoothHeading).abs() >= 0.05) {
-      notifyListeners();
+      _notifyListenersIfActive();
     }
   }
 
   Future<void> retry() async {
     await initialize();
+  }
+
+  @override
+  void dispose() {
+    _isDisposed = true;
+    unawaited(_stopCompass());
+    super.dispose();
+  }
+
+  Future<void> _stopCompass() {
+    final session = _compassSession;
+    _compassSession = null;
+    return session?.cancel() ?? Future<void>.value();
+  }
+
+  void _notifyListenersIfActive() {
+    if (_isDisposed) {
+      return;
+    }
+
+    notifyListeners();
   }
 
   Future<Position> _getCurrentPosition() async {
@@ -127,9 +192,7 @@ class CompassViewModel extends ChangeNotifier {
     }
 
     return Geolocator.getCurrentPosition(
-      locationSettings: const LocationSettings(
-        accuracy: LocationAccuracy.high,
-      ),
+      locationSettings: const LocationSettings(accuracy: LocationAccuracy.high),
     );
   }
 }

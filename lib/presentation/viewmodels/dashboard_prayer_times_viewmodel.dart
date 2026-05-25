@@ -8,12 +8,14 @@ import 'package:timezone/timezone.dart' as tz;
 
 class DashboardPrayerTimesViewModel extends ChangeNotifier {
   Map<String, String>? _prayerTimes;
+  Map<String, String>? _prayerTimeRanges;
   String _error = '';
   bool _loading = false;
   String? _nextPrayer;
   static bool _timeZonesInitialized = false;
 
   Map<String, String>? get prayerTimes => _prayerTimes;
+  Map<String, String>? get prayerTimeRanges => _prayerTimeRanges;
   String get error => _error;
   bool get isLoading => _loading;
   String? get nextPrayer => _nextPrayer;
@@ -70,6 +72,17 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
       final params = CalculationMethod.muslim_world_league.getParameters();
       params.madhab = Madhab.shafi;
       final prayerTimes = PrayerTimes(coordinates, dateComponents, params);
+      final tomorrowInLocation = nowInLocation.add(const Duration(days: 1));
+      final nextDateComponents = DateComponents(
+        tomorrowInLocation.year,
+        tomorrowInLocation.month,
+        tomorrowInLocation.day,
+      );
+      final tomorrowPrayerTimes = PrayerTimes(
+        coordinates,
+        nextDateComponents,
+        params,
+      );
       final format = DateFormat('hh:mm a');
 
       String? next;
@@ -81,6 +94,11 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
         'Maghrib': tz.TZDateTime.from(prayerTimes.maghrib, locationTimeZone),
         'Isha': tz.TZDateTime.from(prayerTimes.isha, locationTimeZone),
       };
+      final tomorrowFajr = tz.TZDateTime.from(
+        tomorrowPrayerTimes.fajr,
+        locationTimeZone,
+      );
+
       for (final entry in schedule.entries) {
         if (entry.value.isAfter(nowInLocation)) {
           next = entry.key;
@@ -95,6 +113,18 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
         'Asr': format.format(schedule['Asr']!),
         'Maghrib': format.format(schedule['Maghrib']!),
         'Isha': format.format(schedule['Isha']!),
+      };
+      _prayerTimeRanges = {
+        'Fajr':
+            '${format.format(schedule['Fajr']!)} - ${format.format(schedule['Sunrise']!)}',
+        'Dhuhr':
+            '${format.format(schedule['Dhuhr']!)} - ${format.format(schedule['Asr']!)}',
+        'Asr':
+            '${format.format(schedule['Asr']!)} - ${format.format(schedule['Maghrib']!)}',
+        'Maghrib':
+            '${format.format(schedule['Maghrib']!)} - ${format.format(schedule['Isha']!)}',
+        'Isha':
+            '${format.format(schedule['Isha']!)} - ${format.format(tomorrowFajr)}',
       };
       _nextPrayer = next;
       _loading = false;

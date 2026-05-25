@@ -45,11 +45,16 @@ class _CompassTickerHostState extends State<_CompassTickerHost>
   }
 
   void _onTick() {
+    if (!mounted) {
+      return;
+    }
+
     context.read<CompassViewModel>().updateSmoothHeading();
   }
 
   @override
   void dispose() {
+    _ticker.removeListener(_onTick);
     _ticker.dispose();
     super.dispose();
   }
