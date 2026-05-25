@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../core/theme/my_colors.dart';
 
@@ -51,9 +52,9 @@ class SplashBranding extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             'Quran For All',
-            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+            style: AppTheme.text(context).headlineMedium.copyWith(
               color: Colors.white,
-              fontWeight: FontWeight.w700,
+              fontWeight: AppTheme.weightBold,
               letterSpacing: -0.3,
             ),
           ),
@@ -61,9 +62,9 @@ class SplashBranding extends StatelessWidget {
           Text(
             'Read with calm focus, search in seconds, and continue where you paused.',
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: Colors.white.withValues(alpha: 0.88),
-            ),
+            style: AppTheme.text(
+              context,
+            ).bodyLarge.copyWith(color: Colors.white.withValues(alpha: 0.88)),
           ),
         ],
       ),

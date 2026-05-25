@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../pronunciation_button.dart';
@@ -58,9 +59,9 @@ class _WaqfCard extends StatelessWidget {
         children: [
           Text(
             item.rule,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+            ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 6),
           _Line(label: context.learnText('Pause'), value: item.pauseAction),
@@ -99,13 +100,13 @@ class _Line extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: Theme.of(context).textTheme.bodySmall,
+        style: AppTheme.text(context).bodySmall,
         children: [
           TextSpan(
             text: '$label: ',
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).labelMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           TextSpan(text: value),
         ],

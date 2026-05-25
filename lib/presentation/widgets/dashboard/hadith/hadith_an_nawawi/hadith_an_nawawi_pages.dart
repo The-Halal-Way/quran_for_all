@@ -1,4 +1,5 @@
 part of '../../../../views/dashboard/hadith/hadith_an_nawawi_view.dart';
+
 class _IntroPage extends StatelessWidget {
   final HadithBook book;
   final bool isBangla;
@@ -18,7 +19,8 @@ class _IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final text = isBangla
+    final appText = AppTheme.text(context);
+    final introductionText = isBangla
         ? book.introduction.bangla
         : book.introduction.english;
 
@@ -55,21 +57,16 @@ class _IntroPage extends StatelessWidget {
                 const SizedBox(height: 16),
                 Text(
                   'الأربعون النووية',
-                  style: GoogleFonts.amiri(
-                    fontSize: 30,
+                  style: appText.hadithIntroArabicTitle.copyWith(
                     color: Colors.white,
-                    fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 6),
                 Text(
                   book.title,
-                  style: GoogleFonts.manrope(
-                    fontSize: 13,
+                  style: appText.hadithIntroBookTitle.copyWith(
                     color: Colors.white.withOpacity(0.7),
-                    fontWeight: FontWeight.w500,
-                    letterSpacing: 0.5,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -91,10 +88,8 @@ class _IntroPage extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   isBangla ? 'ইমাম আন-নওয়াওয়ী (রহ.)' : 'Imam An-Nawawi (RA)',
-                  style: GoogleFonts.manrope(
-                    fontSize: 12,
+                  style: appText.hadithIntroAuthor.copyWith(
                     color: Colors.white.withOpacity(0.65),
-                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ],
@@ -160,9 +155,7 @@ class _IntroPage extends StatelessWidget {
                     const SizedBox(width: 10),
                     Text(
                       isBangla ? 'ভূমিকা' : 'Introduction',
-                      style: GoogleFonts.sora(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
+                      style: appText.hadithSectionTitle.copyWith(
                         color: textMain,
                       ),
                     ),
@@ -170,12 +163,10 @@ class _IntroPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  text,
-                  style: GoogleFonts.manrope(
-                    fontSize: isBangla ? 15 : 14,
-                    height: isBangla ? 1.9 : 1.7,
-                    color: textSub,
-                  ),
+                  introductionText,
+                  style: appText
+                      .hadithParagraph(isBangla: isBangla)
+                      .copyWith(color: textSub),
                 ),
               ],
             ),
@@ -211,6 +202,7 @@ class _HadithPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final appText = AppTheme.text(context);
     final translationText = isBangla ? hadith.bangla : hadith.english;
 
     return SingleChildScrollView(
@@ -241,11 +233,8 @@ class _HadithPage extends StatelessWidget {
                     const SizedBox(width: 6),
                     Text(
                       isBangla ? 'অনুবাদ' : 'Translation',
-                      style: GoogleFonts.manrope(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w700,
+                      style: appText.hadithTranslationLabel.copyWith(
                         color: MyColors.tertiary,
-                        letterSpacing: 0.8,
                       ),
                     ),
                   ],
@@ -253,11 +242,9 @@ class _HadithPage extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   translationText,
-                  style: GoogleFonts.manrope(
-                    fontSize: isBangla ? 15 : 14,
-                    height: isBangla ? 1.9 : 1.7,
-                    color: textSub,
-                  ),
+                  style: appText
+                      .hadithParagraph(isBangla: isBangla)
+                      .copyWith(color: textSub),
                 ),
               ],
             ),
@@ -285,6 +272,8 @@ class _ArabicCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -351,8 +340,7 @@ class _ArabicCard extends StatelessWidget {
                       ),
                       child: Text(
                         'النص العربي',
-                        style: GoogleFonts.amiri(
-                          fontSize: 12,
+                        style: text.hadithArabicBadge.copyWith(
                           color: Colors.white.withOpacity(0.7),
                         ),
                       ),
@@ -384,11 +372,8 @@ class _ArabicCard extends StatelessWidget {
                   arabic,
                   textAlign: TextAlign.right,
                   textDirection: ui.TextDirection.rtl,
-                  style: GoogleFonts.amiri(
-                    fontSize: 22,
-                    height: 1.9,
+                  style: text.hadithArabicCardBody.copyWith(
                     color: Colors.white.withOpacity(0.95),
-                    fontWeight: FontWeight.normal,
                   ),
                 ),
 
@@ -419,4 +404,3 @@ class _ArabicCard extends StatelessWidget {
 // ─────────────────────────────────────────────────────────────────────────────
 // JUMP BOTTOM SHEET
 // ─────────────────────────────────────────────────────────────────────────────
-

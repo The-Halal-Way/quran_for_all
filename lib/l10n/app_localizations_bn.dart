@@ -33,13 +33,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get learnQuranTracksTitle => 'লার্নিং ট্র্যাকস';
 
   @override
-  String get learnQuranTracksSubtitle => 'ধাপে ধাপে এই সেকশনগুলো অনুসরণ করুন, অথবা আজ যেটি উন্নত করতে চান সেটি বেছে নিন।';
+  String get learnQuranTracksSubtitle =>
+      'ধাপে ধাপে এই সেকশনগুলো অনুসরণ করুন, অথবা আজ যেটি উন্নত করতে চান সেটি বেছে নিন।';
 
   @override
   String get learnHeaderTitle => 'কুরআন শিখুন';
 
   @override
-  String get learnHeaderSubtitle => 'হরফ, তাজবিদ ও সাবলীল তিলাওয়াতের জন্য কাঠামোবদ্ধ পাঠ।';
+  String get learnHeaderSubtitle =>
+      'হরফ, তাজবিদ ও সাবলীল তিলাওয়াতের জন্য কাঠামোবদ্ধ পাঠ।';
 
   @override
   String learnHeaderLessonProgress(int completed, int total) {
@@ -83,7 +85,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get learnNextAllLessonsCompletedTitle => 'সব লেসন সম্পন্ন';
 
   @override
-  String get learnNextAllLessonsCompletedBody => 'দারুণ কাজ। শেখা মজবুত করতে যেকোনো মডিউল আবার দেখুন।';
+  String get learnNextAllLessonsCompletedBody =>
+      'দারুণ কাজ। শেখা মজবুত করতে যেকোনো মডিউল আবার দেখুন।';
 
   @override
   String get learnNextStartLessonButton => 'পরের লেসন শুরু করুন';
@@ -114,19 +117,24 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get learnVmErrorLoadProgress => 'এই মুহূর্তে শেখার অগ্রগতি লোড করা যাচ্ছে না।';
+  String get learnVmErrorLoadProgress =>
+      'এই মুহূর্তে শেখার অগ্রগতি লোড করা যাচ্ছে না।';
 
   @override
-  String get learnVmErrorSaveProgress => 'অগ্রগতি সংরক্ষণ করা যাচ্ছে না। আবার চেষ্টা করুন।';
+  String get learnVmErrorSaveProgress =>
+      'অগ্রগতি সংরক্ষণ করা যাচ্ছে না। আবার চেষ্টা করুন।';
 
   @override
-  String get learnVmAudioMissingSample => 'এই লেসনের জন্য এখনো কোনো অডিও স্যাম্পল যুক্ত নেই।';
+  String get learnVmAudioMissingSample =>
+      'এই লেসনের জন্য এখনো কোনো অডিও স্যাম্পল যুক্ত নেই।';
 
   @override
-  String get learnVmAudioSampleNotFound => 'এই লেসনের অডিও স্যাম্পল আয়াত খুঁজে পাওয়া যায়নি।';
+  String get learnVmAudioSampleNotFound =>
+      'এই লেসনের অডিও স্যাম্পল আয়াত খুঁজে পাওয়া যায়নি।';
 
   @override
-  String get learnVmAudioPlayFailed => 'এই মুহূর্তে লেসনের অডিও চালানো যাচ্ছে না।';
+  String get learnVmAudioPlayFailed =>
+      'এই মুহূর্তে লেসনের অডিও চালানো যাচ্ছে না।';
 
   @override
   String get duahDailyTitle => 'দৈনন্দিন দু\'আ';
@@ -150,13 +158,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahLevelAdvanced => 'উন্নত স্তর';
 
   @override
-  String get duahLevelBeginnerDesc => 'প্রতিদিনের জন্য ছোট ও সহজে মুখস্থযোগ্য দু\'আ। যাত্রা শুরু করার জন্য উপযুক্ত।';
+  String get duahLevelBeginnerDesc =>
+      'প্রতিদিনের জন্য ছোট ও সহজে মুখস্থযোগ্য দু\'আ। যাত্রা শুরু করার জন্য উপযুক্ত।';
 
   @override
-  String get duahLevelIntermediateDesc => 'আরও পূর্ণ বাক্য ও গভীর অর্থসহ দু\'আ। বেসিক স্বাভাবিক হলে এটি আদর্শ।';
+  String get duahLevelIntermediateDesc =>
+      'আরও পূর্ণ বাক্য ও গভীর অর্থসহ দু\'আ। বেসিক স্বাভাবিক হলে এটি আদর্শ।';
 
   @override
-  String get duahLevelAdvancedDesc => 'ঐচ্ছিক অংশসহ পূর্ণ প্রামাণ্য দু\'আ এবং দৈনন্দিন সব পরিস্থিতি।';
+  String get duahLevelAdvancedDesc =>
+      'ঐচ্ছিক অংশসহ পূর্ণ প্রামাণ্য দু\'আ এবং দৈনন্দিন সব পরিস্থিতি।';
 
   @override
   String duahCountLabel(int count) {
@@ -179,7 +190,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahPowerfulImportantNoteTitle => 'গুরুত্বপূর্ণ নোট';
 
   @override
-  String get duahPowerfulImportantNoteBody => 'দু\'আ কবুল হয় আল্লাহ যেমন চান, যখন চান, এবং যে রূপে চান। এগুলো কুরআন ও হাদিসভিত্তিক প্রামাণ্য ও অত্যন্ত প্রিয় দু\'আ।';
+  String get duahPowerfulImportantNoteBody =>
+      'দু\'আ কবুল হয় আল্লাহ যেমন চান, যখন চান, এবং যে রূপে চান। এগুলো কুরআন ও হাদিসভিত্তিক প্রামাণ্য ও অত্যন্ত প্রিয় দু\'আ।';
 
   @override
   String get duahPowerfulBestFive => 'প্রথমে মুখস্থের জন্য সেরা ৫টি';
@@ -256,10 +268,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardContinueReadingTitle => 'পড়া চালিয়ে যান';
 
   @override
-  String get dashboardContinueReadingStartSubtitle => 'যেখান থেকে থেমেছেন সেখান থেকেই শুরু করুন';
+  String get dashboardContinueReadingStartSubtitle =>
+      'যেখান থেকে থেমেছেন সেখান থেকেই শুরু করুন';
 
   @override
-  String get dashboardContinueReadingStartDetail => 'সাম্প্রতিক সূরা খুলে পড়া চালিয়ে যান';
+  String get dashboardContinueReadingStartDetail =>
+      'সাম্প্রতিক সূরা খুলে পড়া চালিয়ে যান';
 
   @override
   String dashboardContinueReadingAyahDetail(int ayahNumber, String surahName) {
@@ -279,7 +293,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardContinueLearningStartDetail => 'লার্নিং ট্র্যাক খুলুন';
 
   @override
-  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount) {
+  String dashboardContinueLearningModuleDetail(
+    String moduleTitle,
+    int lessonCount,
+  ) {
     return '$moduleTitle · $lessonCountটি লেসন';
   }
 
@@ -314,13 +331,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardHadithAnNawawiTitle => 'ইমাম নববীর ৪০ হাদিস';
 
   @override
-  String get dashboardHadithAnNawawiDescription => 'ইমাম আন-নববীর ক্লাসিক হাদিস সংকলন';
+  String get dashboardHadithAnNawawiDescription =>
+      'ইমাম আন-নববীর ক্লাসিক হাদিস সংকলন';
 
   @override
   String get dashboardHadithShortTitle => '৪০টি ছোট হাদিস';
 
   @override
-  String get dashboardHadithShortDescription => 'সহজে মুখস্থ ও অনুশীলনের জন্য ছোট হাদিস';
+  String get dashboardHadithShortDescription =>
+      'সহজে মুখস্থ ও অনুশীলনের জন্য ছোট হাদিস';
 
   @override
   String get prayerViewTitle => 'নামাজের বিস্তারিত';
@@ -353,43 +372,50 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerViewPermissionHelpTitle => 'নামাজের সময়ের জন্য লোকেশন দরকার';
 
   @override
-  String get prayerViewPermissionHelpBody => 'স্থানীয় নামাজের সময় হিসাব করতে লোকেশন অনুমতি দিন। নিচের নির্দেশনাগুলো তবুও পাওয়া যাবে।';
+  String get prayerViewPermissionHelpBody =>
+      'স্থানীয় নামাজের সময় হিসাব করতে লোকেশন অনুমতি দিন। নিচের নির্দেশনাগুলো তবুও পাওয়া যাবে।';
 
   @override
   String get prayerViewTimelineTitle => 'আজকের নামাজের ছন্দ';
 
   @override
-  String get prayerViewTimelineSubtitle => 'পুরো দিনের সময় দেখুন, পরবর্তী নামাজ চিনে নিন, আর বর্তমান ফোকাস সামনে রাখুন।';
+  String get prayerViewTimelineSubtitle =>
+      'পুরো দিনের সময় দেখুন, পরবর্তী নামাজ চিনে নিন, আর বর্তমান ফোকাস সামনে রাখুন।';
 
   @override
   String get prayerViewNowTitle => 'এখন কী অনুসরণ করবেন';
 
   @override
-  String get prayerViewNowSubtitle => 'বর্তমান নামাজের সময়ের জন্য ব্যবহারিক পরবর্তী পদক্ষেপ।';
+  String get prayerViewNowSubtitle =>
+      'বর্তমান নামাজের সময়ের জন্য ব্যবহারিক পরবর্তী পদক্ষেপ।';
 
   @override
   String get prayerViewSuggestionsTitle => 'নামাজের পরামর্শ';
 
   @override
-  String get prayerViewSuggestionsSubtitle => 'ছোট ছোট কাজ, যা এই নামাজকে আরও শান্ত ও নিয়তপূর্ণ করে।';
+  String get prayerViewSuggestionsSubtitle =>
+      'ছোট ছোট কাজ, যা এই নামাজকে আরও শান্ত ও নিয়তপূর্ণ করে।';
 
   @override
   String get prayerViewHowTitle => 'কীভাবে নামাজ পড়বেন';
 
   @override
-  String get prayerViewHowSubtitle => 'নামাজের মূল অঙ্গভঙ্গি ও মনোযোগের সহজ ধারা।';
+  String get prayerViewHowSubtitle =>
+      'নামাজের মূল অঙ্গভঙ্গি ও মনোযোগের সহজ ধারা।';
 
   @override
   String get prayerViewBestPracticesTitle => 'সেরা অনুশীলন';
 
   @override
-  String get prayerViewBestPracticesSubtitle => 'বর্তমানে সামনে থাকা নামাজ অনুযায়ী ফোকাসড অভ্যাস।';
+  String get prayerViewBestPracticesSubtitle =>
+      'বর্তমানে সামনে থাকা নামাজ অনুযায়ী ফোকাসড অভ্যাস।';
 
   @override
   String get prayerViewFiqhNoteTitle => 'অনুশীলন নোট';
 
   @override
-  String get prayerViewFiqhNoteBody => 'মাযহাব ও স্থানীয় শিক্ষার ভিত্তিতে কিছু বিস্তারিত বিষয়ে পার্থক্য থাকতে পারে। এটিকে বন্ধুসুলভ নির্দেশনা হিসেবে নিন এবং ফিকহ-নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেম বা ইমামের অনুসরণ করুন।';
+  String get prayerViewFiqhNoteBody =>
+      'মাযহাব ও স্থানীয় শিক্ষার ভিত্তিতে কিছু বিস্তারিত বিষয়ে পার্থক্য থাকতে পারে। এটিকে বন্ধুসুলভ নির্দেশনা হিসেবে নিন এবং ফিকহ-নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেম বা ইমামের অনুসরণ করুন।';
 
   @override
   String get prayerViewFocus => 'ফোকাস';
@@ -407,146 +433,177 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerHowIntentionTitle => 'নিয়ত ও প্রস্তুতি';
 
   @override
-  String get prayerHowIntentionBody => 'ওজু করুন, কিবলামুখী হন, এবং শুরু করার আগে অন্তরে নিয়ত স্থির করুন।';
+  String get prayerHowIntentionBody =>
+      'ওজু করুন, কিবলামুখী হন, এবং শুরু করার আগে অন্তরে নিয়ত স্থির করুন।';
 
   @override
   String get prayerHowQiyamTitle => 'কিয়াম';
 
   @override
-  String get prayerHowQiyamBody => 'শান্তভাবে দাঁড়ান, তাকবিরে তাহরিমা বলুন, সূরা ফাতিহা পড়ুন, তারপর কুরআন থেকে যা সহজ হয় পড়ুন।';
+  String get prayerHowQiyamBody =>
+      'শান্তভাবে দাঁড়ান, তাকবিরে তাহরিমা বলুন, সূরা ফাতিহা পড়ুন, তারপর কুরআন থেকে যা সহজ হয় পড়ুন।';
 
   @override
   String get prayerHowRukuTitle => 'রুকু';
 
   @override
-  String get prayerHowRukuBody => 'পিঠ স্থির রেখে রুকু করুন, আল্লাহর পবিত্রতা ঘোষণা করুন, তারপর শান্তভাবে উঠে দাঁড়ান।';
+  String get prayerHowRukuBody =>
+      'পিঠ স্থির রেখে রুকু করুন, আল্লাহর পবিত্রতা ঘোষণা করুন, তারপর শান্তভাবে উঠে দাঁড়ান।';
 
   @override
   String get prayerHowSujoodTitle => 'সিজদা';
 
   @override
-  String get prayerHowSujoodBody => 'বিনয়ের সঙ্গে সিজদা করুন, তাড়াহুড়া না করে থামুন, তারপর সংক্ষিপ্ত বসে দ্বিতীয় সিজদা সম্পন্ন করুন।';
+  String get prayerHowSujoodBody =>
+      'বিনয়ের সঙ্গে সিজদা করুন, তাড়াহুড়া না করে থামুন, তারপর সংক্ষিপ্ত বসে দ্বিতীয় সিজদা সম্পন্ন করুন।';
 
   @override
   String get prayerHowTashahhudTitle => 'তাশাহহুদ';
 
   @override
-  String get prayerHowTashahhudBody => 'শেষ বৈঠকে তাশাহহুদ পড়ুন এবং নবীজির ওপর দরুদ পাঠ করুন।';
+  String get prayerHowTashahhudBody =>
+      'শেষ বৈঠকে তাশাহহুদ পড়ুন এবং নবীজির ওপর দরুদ পাঠ করুন।';
 
   @override
   String get prayerHowSalamTitle => 'সালাম';
 
   @override
-  String get prayerHowSalamBody => 'সালামের মাধ্যমে নামাজ শেষ করুন, তারপর সংক্ষিপ্ত জিকির ও দু\'আর জন্য মনোযোগ ধরে রাখুন।';
+  String get prayerHowSalamBody =>
+      'সালামের মাধ্যমে নামাজ শেষ করুন, তারপর সংক্ষিপ্ত জিকির ও দু\'আর জন্য মনোযোগ ধরে রাখুন।';
 
   @override
   String get prayerFocusFajrTitle => 'ফজরের সময়';
 
   @override
-  String get prayerFocusFajrSubtitle => 'পৃথিবী ব্যস্ত হওয়ার আগেই দিন শুরু করুন।';
+  String get prayerFocusFajrSubtitle =>
+      'পৃথিবী ব্যস্ত হওয়ার আগেই দিন শুরু করুন।';
 
   @override
   String get prayerFocusSunriseTitle => 'সূর্যোদয়ের বিরতি';
 
   @override
-  String get prayerFocusSunriseSubtitle => 'ফজরের পর শান্ত একটি রূপান্তর; ঐচ্ছিক দুহা শুরু করার আগে অপেক্ষা করুন।';
+  String get prayerFocusSunriseSubtitle =>
+      'ফজরের পর শান্ত একটি রূপান্তর; ঐচ্ছিক দুহা শুরু করার আগে অপেক্ষা করুন।';
 
   @override
   String get prayerFocusDhuhrTitle => 'যোহরের নবায়ন';
 
   @override
-  String get prayerFocusDhuhrSubtitle => 'দিনের মাঝামাঝি সময়কে পরিচ্ছন্ন আধ্যাত্মিক রিসেটে বদলে দিন।';
+  String get prayerFocusDhuhrSubtitle =>
+      'দিনের মাঝামাঝি সময়কে পরিচ্ছন্ন আধ্যাত্মিক রিসেটে বদলে দিন।';
 
   @override
   String get prayerFocusAsrTitle => 'আসরের পাহারা';
 
   @override
-  String get prayerFocusAsrSubtitle => 'কাজকর্ম মনোযোগ ছড়িয়ে দেওয়ার আগে বিকেলকে রক্ষা করুন।';
+  String get prayerFocusAsrSubtitle =>
+      'কাজকর্ম মনোযোগ ছড়িয়ে দেওয়ার আগে বিকেলকে রক্ষা করুন।';
 
   @override
   String get prayerFocusMaghribTitle => 'মাগরিবে ফিরে আসা';
 
   @override
-  String get prayerFocusMaghribSubtitle => 'সূর্যাস্ত থেকে দ্রুত স্মরণ ও কৃতজ্ঞতায় ফিরে আসুন।';
+  String get prayerFocusMaghribSubtitle =>
+      'সূর্যাস্ত থেকে দ্রুত স্মরণ ও কৃতজ্ঞতায় ফিরে আসুন।';
 
   @override
   String get prayerFocusIshaTitle => 'ইশার সমাপ্তি';
 
   @override
-  String get prayerFocusIshaSubtitle => 'শান্তি, তাওবা এবং ফজরের প্রস্তুতি দিয়ে দিন শেষ করুন।';
+  String get prayerFocusIshaSubtitle =>
+      'শান্তি, তাওবা এবং ফজরের প্রস্তুতি দিয়ে দিন শেষ করুন।';
 
   @override
   String get prayerNowFajrTitle => 'ভোরকে রক্ষা করুন';
 
   @override
-  String get prayerNowFajrBody => 'সূর্যোদয়ের আগে ফজরের সময়কে রক্ষা করুন। এখনও না পড়ে থাকলে ওজু করে এখনই পড়ুন; পড়ে থাকলে সকালের জিকির বা কুরআনের সঙ্গে থাকুন।';
+  String get prayerNowFajrBody =>
+      'সূর্যোদয়ের আগে ফজরের সময়কে রক্ষা করুন। এখনও না পড়ে থাকলে ওজু করে এখনই পড়ুন; পড়ে থাকলে সকালের জিকির বা কুরআনের সঙ্গে থাকুন।';
 
   @override
   String get prayerNowSunriseTitle => 'বিরতি নিন ও স্মরণ করুন';
 
   @override
-  String get prayerNowSunriseBody => 'ঠিক সূর্যোদয়ের সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; সকালের জিকির চালিয়ে যান এবং সূর্য ওঠার পর দুহার জন্য অপেক্ষা করুন।';
+  String get prayerNowSunriseBody =>
+      'ঠিক সূর্যোদয়ের সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; সকালের জিকির চালিয়ে যান এবং সূর্য ওঠার পর দুহার জন্য অপেক্ষা করুন।';
 
   @override
   String get prayerNowDhuhrTitle => 'দিনের মাঝখানে রিসেট করুন';
 
   @override
-  String get prayerNowDhuhrBody => 'কাজ থেকে একটু সরে আসুন, ওজু নবায়ন করুন, এবং ফরজ নামাজকে তাড়াহুড়াহীন মনোযোগ দিন।';
+  String get prayerNowDhuhrBody =>
+      'কাজ থেকে একটু সরে আসুন, ওজু নবায়ন করুন, এবং ফরজ নামাজকে তাড়াহুড়াহীন মনোযোগ দিন।';
 
   @override
   String get prayerNowAsrTitle => 'বিকেলকে রক্ষা করুন';
 
   @override
-  String get prayerNowAsrBody => 'দিন ভিড়ভাট্টা হওয়ার আগে আসরকে সামনে আনুন। স্থির গতিতে নামাজ পড়ুন এবং শেষে সংক্ষিপ্ত জিকিরের সময় রাখুন।';
+  String get prayerNowAsrBody =>
+      'দিন ভিড়ভাট্টা হওয়ার আগে আসরকে সামনে আনুন। স্থির গতিতে নামাজ পড়ুন এবং শেষে সংক্ষিপ্ত জিকিরের সময় রাখুন।';
 
   @override
   String get prayerNowMaghribTitle => 'দ্রুত এগিয়ে যান';
 
   @override
-  String get prayerNowMaghribBody => 'মাগরিবের সময় হলে সূর্যাস্তের কাজ থেকে দ্রুত নামাজে যান, তারপর হালকা হৃদয়ে পরিবার, খাবার বা যাত্রায় ফিরুন।';
+  String get prayerNowMaghribBody =>
+      'মাগরিবের সময় হলে সূর্যাস্তের কাজ থেকে দ্রুত নামাজে যান, তারপর হালকা হৃদয়ে পরিবার, খাবার বা যাত্রায় ফিরুন।';
 
   @override
   String get prayerNowIshaTitle => 'দিনটি সুন্দরভাবে শেষ করুন';
 
   @override
-  String get prayerNowIshaBody => 'ঘুম ঘিরে ধরার আগেই ইশা পড়ুন। তাওবা, কৃতজ্ঞতা এবং ফজরের জন্য সহজ পরিকল্পনার সঙ্গে এটি জুড়ে দিন।';
+  String get prayerNowIshaBody =>
+      'ঘুম ঘিরে ধরার আগেই ইশা পড়ুন। তাওবা, কৃতজ্ঞতা এবং ফজরের জন্য সহজ পরিকল্পনার সঙ্গে এটি জুড়ে দিন।';
 
   @override
-  String get prayerSuggestionsFajrRaw => 'সামর্থ্য হলে ফরজের আগে দুই রাকাআত সুন্নাহ পড়ুন।||তিলাওয়াত ছোট হলেও শান্ত ও উজ্জ্বল রাখুন।||নামাজের পর কয়েক মিনিট সকালের জিকির বা অল্প কুরআন পাঠে দিন।';
+  String get prayerSuggestionsFajrRaw =>
+      'সামর্থ্য হলে ফরজের আগে দুই রাকাআত সুন্নাহ পড়ুন।||তিলাওয়াত ছোট হলেও শান্ত ও উজ্জ্বল রাখুন।||নামাজের পর কয়েক মিনিট সকালের জিকির বা অল্প কুরআন পাঠে দিন।';
 
   @override
-  String get prayerSuggestionsSunriseRaw => 'সূর্য ওঠার সময় সকালের জিকির চালিয়ে যান।||সূর্যোদয়ের অপছন্দনীয় মুহূর্ত পার হওয়া পর্যন্ত ঐচ্ছিক দুহার জন্য অপেক্ষা করুন।||এ শান্ত সময়টিকে ভেসে না দিয়ে পরবর্তী নামাজের পরিকল্পনায় ব্যবহার করুন।';
+  String get prayerSuggestionsSunriseRaw =>
+      'সূর্য ওঠার সময় সকালের জিকির চালিয়ে যান।||সূর্যোদয়ের অপছন্দনীয় মুহূর্ত পার হওয়া পর্যন্ত ঐচ্ছিক দুহার জন্য অপেক্ষা করুন।||এ শান্ত সময়টিকে ভেসে না দিয়ে পরবর্তী নামাজের পরিকল্পনায় ব্যবহার করুন।';
 
   @override
-  String get prayerSuggestionsDhuhrRaw => 'আজানকে কাজ বা পড়াশোনা থেকে দৃঢ় বিরতি হিসেবে নিন।||দিন আবার ব্যস্ত হওয়ার আগে শান্ত জায়গা বেছে নিন।||কাজে ফেরার আগে ছোট্ট কৃতজ্ঞতার যাচাইয়ের সঙ্গে নামাজটি জুড়ে দিন।';
+  String get prayerSuggestionsDhuhrRaw =>
+      'আজানকে কাজ বা পড়াশোনা থেকে দৃঢ় বিরতি হিসেবে নিন।||দিন আবার ব্যস্ত হওয়ার আগে শান্ত জায়গা বেছে নিন।||কাজে ফেরার আগে ছোট্ট কৃতজ্ঞতার যাচাইয়ের সঙ্গে নামাজটি জুড়ে দিন।';
 
   @override
-  String get prayerSuggestionsAsrRaw => 'বিকেলের ব্যস্ততা শুরু হওয়ার আগেই আসরের পরিকল্পনা করুন।||চাপা তাড়াহুড়ার বদলে গতি স্থির রাখুন।||সালামের পর এক মিনিট আল্লাহর কাছে হিফাজত ও ধারাবাহিকতা চান।';
+  String get prayerSuggestionsAsrRaw =>
+      'বিকেলের ব্যস্ততা শুরু হওয়ার আগেই আসরের পরিকল্পনা করুন।||চাপা তাড়াহুড়ার বদলে গতি স্থির রাখুন।||সালামের পর এক মিনিট আল্লাহর কাছে হিফাজত ও ধারাবাহিকতা চান।';
 
   @override
-  String get prayerSuggestionsMaghribRaw => 'দৈনন্দিন জীবনে সময়টি ছোট মনে হয়, তাই আজানের পর দ্রুত নামাজ পড়ুন।||খাবার, পরিবার বা যাত্রাপথ যেন নামাজকে ঢেকে না ফেলে।||রুটিনে সম্ভব হলে সন্ধ্যার জিকির দিয়ে অনুসরণ করুন।';
+  String get prayerSuggestionsMaghribRaw =>
+      'দৈনন্দিন জীবনে সময়টি ছোট মনে হয়, তাই আজানের পর দ্রুত নামাজ পড়ুন।||খাবার, পরিবার বা যাত্রাপথ যেন নামাজকে ঢেকে না ফেলে।||রুটিনে সম্ভব হলে সন্ধ্যার জিকির দিয়ে অনুসরণ করুন।';
 
   @override
-  String get prayerSuggestionsIshaRaw => 'ঘুম মনোযোগ ভারী করার আগেই নামাজ পড়ুন।||নিজের অনুশীলন অনুযায়ী ইশার পর বিতরের প্রস্তুতি রাখুন।||ঘুমের আগে আগামী ফজরের ব্যবস্থা করুন: অ্যালার্ম, ওজুর পরিকল্পনা, এবং ঘুমের নিয়ত।';
+  String get prayerSuggestionsIshaRaw =>
+      'ঘুম মনোযোগ ভারী করার আগেই নামাজ পড়ুন।||নিজের অনুশীলন অনুযায়ী ইশার পর বিতরের প্রস্তুতি রাখুন।||ঘুমের আগে আগামী ফজরের ব্যবস্থা করুন: অ্যালার্ম, ওজুর পরিকল্পনা, এবং ঘুমের নিয়ত।';
 
   @override
-  String get prayerBestPracticesFajrRaw => 'ফজরকে মাথায় রেখে ঘুমান, পরে দেখা যাবে এমন ভাবনায় নয়।||দিনের প্রথম নামাজ তাড়াহুড়া করে নয়; এটিকে দিনের সুর বানাতে দিন।||ফজরের পরের নীরবতা কুরআন, জিকির বা এক আন্তরিক দু\'আর জন্য ব্যবহার করুন।';
+  String get prayerBestPracticesFajrRaw =>
+      'ফজরকে মাথায় রেখে ঘুমান, পরে দেখা যাবে এমন ভাবনায় নয়।||দিনের প্রথম নামাজ তাড়াহুড়া করে নয়; এটিকে দিনের সুর বানাতে দিন।||ফজরের পরের নীরবতা কুরআন, জিকির বা এক আন্তরিক দু\'আর জন্য ব্যবহার করুন।';
 
   @override
-  String get prayerBestPracticesSunriseRaw => 'সূর্যোদয়কে ফরজ নামাজ ভাববেন না; এটি একটি সময়-পরিবর্তনের চিহ্ন।||ঠিক সূর্যোদয়ের মুহূর্তে নফল নামাজ থেকে বিরত থাকুন।||সূর্য উঠে সময় পরিষ্কার হলে ঐচ্ছিক ইবাদতে ফিরুন।';
+  String get prayerBestPracticesSunriseRaw =>
+      'সূর্যোদয়কে ফরজ নামাজ ভাববেন না; এটি একটি সময়-পরিবর্তনের চিহ্ন।||ঠিক সূর্যোদয়ের মুহূর্তে নফল নামাজ থেকে বিরত থাকুন।||সূর্য উঠে সময় পরিষ্কার হলে ঐচ্ছিক ইবাদতে ফিরুন।';
 
   @override
-  String get prayerBestPracticesDhuhrRaw => 'কর্মদিবস পুরোটা দখল করার আগেই যোহরকে ক্যালেন্ডারে রাখুন।||পুরো কাজের তালিকা নামাজে নিয়ে না দাঁড়ানোর চেষ্টা করুন।||সুন্নাহ নামাজ পড়লে শেখা অনুশীলন অনুযায়ী ফরজের আগে-পরে সাজান।';
+  String get prayerBestPracticesDhuhrRaw =>
+      'কর্মদিবস পুরোটা দখল করার আগেই যোহরকে ক্যালেন্ডারে রাখুন।||পুরো কাজের তালিকা নামাজে নিয়ে না দাঁড়ানোর চেষ্টা করুন।||সুন্নাহ নামাজ পড়লে শেখা অনুশীলন অনুযায়ী ফরজের আগে-পরে সাজান।';
 
   @override
-  String get prayerBestPracticesAsrRaw => 'আসরের সময় একেবারে শেষ প্রান্তে ঠেলে দেওয়া থেকে রক্ষা করুন।||তাকবিরের আগে গতি কমান, যাতে নামাজ দৌড়ের মতো না লাগে।||বাকি দিনের জন্য আসরকে আত্মপর্যালোচনার চেকপয়েন্ট বানান।';
+  String get prayerBestPracticesAsrRaw =>
+      'আসরের সময় একেবারে শেষ প্রান্তে ঠেলে দেওয়া থেকে রক্ষা করুন।||তাকবিরের আগে গতি কমান, যাতে নামাজ দৌড়ের মতো না লাগে।||বাকি দিনের জন্য আসরকে আত্মপর্যালোচনার চেকপয়েন্ট বানান।';
 
   @override
-  String get prayerBestPracticesMaghribRaw => 'মাগরিবের সময় হলে দ্রুত সাড়া দিন।||সূর্যাস্তের খাবার বা জমায়েত যেন নামাজ বিলম্বিত না করে।||মাগরিব দিয়ে সন্ধ্যার জিকির ও পারিবারিক শান্তির দরজা খুলুন।';
+  String get prayerBestPracticesMaghribRaw =>
+      'মাগরিবের সময় হলে দ্রুত সাড়া দিন।||সূর্যাস্তের খাবার বা জমায়েত যেন নামাজ বিলম্বিত না করে।||মাগরিব দিয়ে সন্ধ্যার জিকির ও পারিবারিক শান্তির দরজা খুলুন।';
 
   @override
-  String get prayerBestPracticesIshaRaw => 'ক্লান্তি মনোযোগ ম্লান করার আগে নামাজ পড়ুন।||নিজের অনুশীলন অনুযায়ী রাতের রুটিনে বিতরকে দৃশ্যমান রাখুন।||ঘুমানোর আগে শরীর ও ঘরকে ফজরের জন্য প্রস্তুত করুন।';
+  String get prayerBestPracticesIshaRaw =>
+      'ক্লান্তি মনোযোগ ম্লান করার আগে নামাজ পড়ুন।||নিজের অনুশীলন অনুযায়ী রাতের রুটিনে বিতরকে দৃশ্যমান রাখুন।||ঘুমানোর আগে শরীর ও ঘরকে ফজরের জন্য প্রস্তুত করুন।';
 
   @override
-  String get learnQuranTextMapRaw => 'Arabic Letters=আরবি বর্ণমালা||Pronunciation Basics=উচ্চারণের ভিত্তি||Makharij=মাখারিজ||Tajweed Rules=তাজবিদের নিয়ম||Word-by-Word Understanding=শব্দে-শব্দে বুঝে পড়া||Short Surah Practice=ছোট সূরা অনুশীলন||Audio Assisted Practice=অডিও সহায়তায় অনুশীলন||Beginner=শুরুর স্তর||Beginner to Intermediate=শুরুর স্তর থেকে মধ্যম||Intermediate=মধ্যম||Track Flow=শেখার ধারা||Word map=শব্দ মানচিত্র||Meaning=অর্থ||Family=পরিবার||Core meaning=মূল অর্থ||Examples=উদাহরণ||Tip=টিপস||Focus=ফোকাস||Function=কার্য||Sample=নমুনা||Reading cue=পাঠ নির্দেশনা||Distinction=পার্থক্য||Practice=অনুশীলন||Watch for=খেয়াল রাখুন||Location=অবস্থান||Sound cue=ধ্বনি নির্দেশনা||Common mistake=সাধারণ ভুল||Drill=ড্রিল||Goal=লক্ষ্য||Success marker=সফলতার সূচক||Listen for=শুনে ধরুন||Repeat target=পুনরাবৃত্তির লক্ষ্য||Pacing=গতি||Action=করণীয়||Check prompt=পরীক্ষা নির্দেশনা||Common signs=সাধারণ লক্ষণ||Fix=সংশোধন||Pause=বিরতি||Restart=পুনরারম্ভ||Example=উদাহরণ||Base letter=মূল বর্ণ||Fatha=ফাতহা||Kasra=কাসরা||Damma=দাম্মা||Sukoon=সুকুন||Sound=ধ্বনি||Count=গণনা||Note=নোট||Qalqalah Focus=কালকালাহ ফোকাস||Madd Focus=মাদ্দ ফোকাস||Trigger=ট্রিগার||Delivery=প্রয়োগ পদ্ধতি||How to read=কীভাবে পড়বেন||Coach note=শিক্ষকের নোট||Objective=উদ্দেশ্য||Key theme=মূল বিষয়||Recitation target=তিলাওয়াতের লক্ষ্য||Practice prompt=অনুশীলনের নির্দেশনা||Light sample=হালকা নমুনা||Heavy sample=ভারী নমুনা||Coach tip=শিক্ষকের টিপস||Do this=এভাবে করুন||Message=বার্তা||Recitation cue=তিলাওয়াত নির্দেশনা||Rule=নিয়ম||Correction=সংশোধন||When=কখন||I can recognize at least 20 high-frequency Quran words quickly.=আমি দ্রুত কমপক্ষে ২০টি বহুল ব্যবহৃত কুরআনের শব্দ চিনতে পারি।||I can infer general meaning from common root families.=আমি প্রচলিত মূল-পরিবার থেকে সাধারণ অর্থ অনুমান করতে পারি।||I can identify connector particles and their phrase role.=আমি সংযোজক কণাগুলো এবং বাক্যে তাদের ভূমিকা শনাক্ত করতে পারি।||I can break a short ayah into word groups with translation awareness.=আমি অনুবাদ-বোঝাপড়াসহ একটি ছোট আয়াতকে শব্দগুচ্ছে ভাগ করতে পারি।||I can summarize one short surah in simple meaning-based notes.=আমি সহজ অর্থভিত্তিক নোটে একটি ছোট সূরার সারসংক্ষেপ দিতে পারি।||Word-by-Word Learning=শব্দে-শব্দে শেখা||Audio-Assisted Lessons=অডিও-সহায়তায় পাঠ||All levels=সব স্তর||Difference=পার্থক্য||Indicator=ইঙ্গিত||Do=করুন||Avoid=এড়িয়ে চলুন||Duration=সময়কাল||Output=ফলাফল||Target=লক্ষ্য||From alphabet recognition to first reading drills=বর্ণমালা চেনা থেকে প্রথম পাঠ-ড্রিল পর্যন্ত||Master the full Arabic letter foundation used in Quran reading: isolated forms, similar-letter distinction, beginner pronunciation, and practical review drills.=কুরআন পাঠে ব্যবহৃত পূর্ণ আরবি বর্ণভিত্তি আয়ত্ত করুন: পৃথক রূপ, মিলযুক্ত বর্ণের পার্থক্য, প্রাথমিক উচ্চারণ এবং ব্যবহারিক রিভিউ ড্রিল।||Heavy-light clarity, madd, and recitation flow=ভারী-হালকা ধ্বনির স্বচ্ছতা, মাদ্দ ও তিলাওয়াতের প্রবাহ||Build clear Quran pronunciation through contrast training, articulation cues, controlled lengthening, and guided pause-restart drills.=কনট্রাস্ট অনুশীলন, উচ্চারণ নির্দেশনা, নিয়ন্ত্রিত টান এবং বিরতি-শুরু ড্রিলের মাধ্যমে পরিষ্কার কুরআনিক উচ্চারণ গড়ে তুলুন।||Mapped articulation zones and precision drills=উচ্চারণস্থান মানচিত্র ও নিখুঁত ড্রিল||Learn the exact articulation origins of Quran letters through zone mapping, contrast practice, and guided phrase drills.=জোন ম্যাপিং, কনট্রাস্ট অনুশীলন এবং নির্দেশিত ফ্রেজ ড্রিলের মাধ্যমে কুরআনের বর্ণের সুনির্দিষ্ট উচ্চারণস্থান শিখুন।||Rule-by-rule application with guided drills=ধাপে ধাপে নিয়ম প্রয়োগের গাইডেড ড্রিল||Learn and apply core tajweed rules step by step with focused examples, correction drills, and integrated recitation practice.=নির্বাচিত উদাহরণ, সংশোধনী ড্রিল এবং সমন্বিত তিলাওয়াত অনুশীলনের মাধ্যমে মূল তাজবিদ নিয়ম ধাপে ধাপে শিখুন ও প্রয়োগ করুন।||Vocabulary, roots, and ayah meaning mapping=শব্দভান্ডার, মূলধাতু ও আয়াতের অর্থ মানচিত্র||Build practical Quran understanding through high-frequency vocabulary, root-pattern recognition, connector awareness, and phrase-by-phrase meaning drills.=বহুল ব্যবহৃত শব্দভান্ডার, ধাতু-প্যাটার্ন চেনা, সংযোজক বোঝাপড়া এবং ফ্রেজভিত্তিক অর্থ অনুশীলনের মাধ্যমে ব্যবহারিক কুরআন বোঝাপড়া তৈরি করুন।||Salah-ready recitation with memorization flow=সালাত-প্রস্তুত তিলাওয়াত ও মুখস্থের ধারা||Practice essential short surahs through memorization cycles, tajweed targets, meaning-linked recitation, and prayer-ready fluency checks.=মুখস্থ চক্র, তাজবিদ লক্ষ্য, অর্থসংযুক্ত তিলাওয়াত এবং সালাত-প্রস্তুত সাবলীলতার মূল্যায়নের মাধ্যমে প্রয়োজনীয় ছোট সূরা অনুশীলন করুন।||Focused listening, shadowing, and correction loops=মনোযোগী শোনা, শ্যাডো অনুশীলন ও সংশোধন চক্র||Build strong recitation quality through audio-first drills, imitation practice, structured error detection, and confidence-focused feedback cycles.=অডিও-প্রথম ড্রিল, অনুকরণ অনুশীলন, কাঠামোবদ্ধ ভুল শনাক্তকরণ এবং আত্মবিশ্বাসভিত্তিক ফিডব্যাক চক্রের মাধ্যমে তিলাওয়াতের মান শক্তিশালী করুন।||1) High-Frequency Vocabulary Bank=১) বহুল ব্যবহৃত শব্দভান্ডার ব্যাংক||Memorize recurring Quran words so ayah meaning becomes easier to follow in real time.=পুনরাবৃত্ত কুরআনিক শব্দ মুখস্থ করুন, যাতে বাস্তবে আয়াতের অর্থ অনুসরণ করা সহজ হয়।||2) Root Family Mapping=২) মূলধাতু পরিবার মানচিত্র||Recognize core roots so unfamiliar words still reveal approximate meaning.=মূল ধাতু চিনে নিন, যাতে অচেনা শব্দ থেকেও আনুমানিক অর্থ বোঝা যায়।||3) Connector Words and Particle Cues=৩) সংযোজক শব্দ ও পার্টিকল নির্দেশনা||Spot linking words that shape sentence meaning, sequence, emphasis, and direction.=বাক্যের অর্থ, ক্রম, জোর ও দিক নির্ধারণকারী সংযোজক শব্দগুলো শনাক্ত করুন।||4) Phrase Breakdown Lab=৪) ফ্রেজ বিশ্লেষণ ল্যাব||Break phrases into word units, then reconnect them into complete meaning.=ফ্রেজকে শব্দ এককে ভেঙে নিন, তারপর পূর্ণ অর্থে আবার যুক্ত করুন।||5) Ayah Word Map Practice=৫) আয়াত শব্দ-মানচিত্র অনুশীলন||Apply vocabulary and connector awareness to complete ayah passages.=শব্দভান্ডার ও সংযোজক বোঝাপড়া ব্যবহার করে পূর্ণ আয়াতাংশ অনুধাবন করুন।||Follow this flow to move from vocabulary recognition to ayah-level understanding.=এই ধারা অনুসরণ করে শব্দ চিনে নেওয়া থেকে আয়াত-স্তরের বোঝাপড়ায় যান।||6) Revision and Mastery Checklist=৬) রিভিউ ও দক্ষতা চেকলিস্ট||Use this cycle to shift from memorizing isolated words to understanding recitation meaning.=এই চক্র ব্যবহার করে বিচ্ছিন্ন শব্দ মুখস্থ করা থেকে তিলাওয়াতের অর্থ বোঝায় অগ্রসর হোন।||1) Full Alphabet Map (Isolated Forms)=১) পূর্ণ বর্ণমালা মানচিত্র (পৃথক রূপ)||Start by mastering isolated letters. Read each symbol, then say its name and sound value.=পৃথক বর্ণরূপ দিয়ে শুরু করুন। প্রতিটি চিহ্ন পড়ুন, তারপর তার নাম ও ধ্বনি বলুন।||2) Grouped Shape Learning=২) গুচ্ছভিত্তিক আকৃতি শেখা||Learn high-retention groups so you can decode letters quickly during reading.=উচ্চ-ধারণক্ষমতার বর্ণগুচ্ছ শিখুন, যাতে পড়ার সময় দ্রুত বর্ণ চেনা যায়।||3) Similar Letter Comparison Grid=৩) সাদৃশ্যপূর্ণ বর্ণ তুলনা গ্রিড||Use this as your anti-confusion reference. Compare shape and sound before speed.=এটিকে বিভ্রান্তি-রোধী রেফারেন্স হিসেবে ব্যবহার করুন। গতি বাড়ানোর আগে আকৃতি ও ধ্বনি তুলনা করুন।||4) Beginner Pronunciation and Articulation Hints=৪) প্রাথমিক উচ্চারণ ও উচ্চারণস্থানের নির্দেশনা||These cues guide where each sound is produced. Keep tone natural and avoid over-force.=প্রতিটি ধ্বনি কোথা থেকে উচ্চারিত হয় তা বুঝতে এই নির্দেশনা অনুসরণ করুন। স্বর স্বাভাবিক রাখুন এবং অতিরিক্ত চাপ এড়িয়ে চলুন।||5) Harakat and Sukoon Pattern Practice=৫) হারাকাত ও সুকুন ধরণ অনুশীলন||Read each row slowly. Keep vowel quality stable: fatha (a), kasra (i), damma (u), sukoon (no vowel).=প্রতিটি সারি ধীরে পড়ুন। স্বরধ্বনির মান স্থির রাখুন: ফাতহা (a), কাসরা (i), দাম্মা (u), সুকুন (স্বরহীন)।||6) Example-Based Beginner Reading Cards=৬) উদাহরণভিত্তিক প্রাথমিক পাঠ কার্ড||These words reinforce letters, vowels, and stops used in early Quran recitation.=এই শব্দগুলো প্রাথমিক কুরআন তিলাওয়াতে ব্যবহৃত বর্ণ, স্বরচিহ্ন ও থামার নিয়মকে দৃঢ় করে।||7) Guided Review and Mastery Check=৭) নির্দেশিত রিভিউ ও দক্ষতা যাচাই||Use this block as your daily 12-minute revision loop until recognition and pronunciation feel natural.=চেনা ও উচ্চারণ স্বাভাবিক না হওয়া পর্যন্ত প্রতিদিন ১২ মিনিটের এই রিভিউ ব্লকটি অনুশীলন করুন।||Fatha = short a=ফাতহা = ছোট a||Kasra = short i=কাসরা = ছোট i||Damma = short u=দাম্মা = ছোট u||Sukoon = stop/closed=সুকুন = থামা/বন্ধ||I can name and identify all 29 letters in isolated form.=আমি পৃথক রূপে ২৯টি বর্ণের নাম বলতে ও শনাক্ত করতে পারি।||I can separate look-alike letters by dot count and position.=আমি দেখতে একইরকম বর্ণগুলোকে বিন্দুর সংখ্যা ও অবস্থান দিয়ে আলাদা করতে পারি।||I can produce basic throat, tongue, and lip letters with control.=আমি গলা, জিহ্বা ও ঠোঁটের প্রাথমিক বর্ণগুলো নিয়ন্ত্রিতভাবে উচ্চারণ করতে পারি।||I can read fatha, kasra, damma, and sukoon patterns aloud.=আমি ফাতহা, কাসরা, দাম্মা ও সুকুনের ধরণ জোরে পড়তে পারি।||I can read beginner examples without adding extra vowels.=আমি অতিরিক্ত স্বর না যোগ করে প্রাথমিক উদাহরণগুলো পড়তে পারি।||1) Focused Listening Drills=১) মনোযোগী শোনার ড্রিল||Train your ear before speaking so imitation and correction become easier.=কথা বলার আগে কানকে প্রশিক্ষণ দিন, যাতে অনুকরণ ও সংশোধন সহজ হয়।||2) Shadow Recitation Rounds=২) শ্যাডো তিলাওয়াত রাউন্ড||Imitate audio in staged levels so your articulation and timing transfer into solo recitation.=ধাপে ধাপে অডিও অনুকরণ করুন, যাতে উচ্চারণ ও সময়নিয়ন্ত্রণ একক তিলাওয়াতে চলে আসে।||3) Error Spot and Fix Map=৩) ভুল শনাক্তকরণ ও সংশোধন মানচিত্র||Use structured checks to detect recurring mistakes and apply targeted corrections.=পুনরাবৃত্ত ভুল শনাক্ত করে লক্ষ্যভিত্তিক সংশোধন করতে কাঠামোবদ্ধ যাচাই ব্যবহার করুন।||4) Guided Audio Session Plan=৪) নির্দেশিত অডিও সেশন পরিকল্পনা||Use a fixed routine to structure listening, imitation, correction, and final confidence recitation.=শোনা, অনুকরণ, সংশোধন এবং আত্মবিশ্বাসী চূড়ান্ত তিলাওয়াতের জন্য নির্দিষ্ট রুটিন অনুসরণ করুন।||5) Targeted Audio Sample Practice=৫) লক্ষ্যভিত্তিক অডিও স্যাম্পল অনুশীলন||Practice selected ayah sets with clear listening goals and repeat targets.=পরিষ্কার শোনার লক্ষ্য ও পুনরাবৃত্তি টার্গেট রেখে নির্দিষ্ট আয়াত-সেট অনুশীলন করুন।||Follow this sequence to improve listening accuracy, imitation quality, and self-correction.=শোনার নির্ভুলতা, অনুকরণের মান এবং স্ব-সংশোধন উন্নত করতে এই ক্রম অনুসরণ করুন।||Repeat this block to transform assisted listening into independent recitation quality.=সহায়ক শোনা থেকে স্বতন্ত্র তিলাওয়াতের মানে যেতে এই ব্লকটি পুনরাবৃত্তি করুন।||I can complete focused listening before imitation.=আমি অনুকরণ শুরুর আগে মনোযোগী শোনা সম্পন্ন করতে পারি।||I can shadow recite while maintaining phrase timing.=আমি ফ্রেজের সময়মাত্রা ঠিক রেখে শ্যাডো তিলাওয়াত করতে পারি।||I can detect and correct at least two repeating mistakes.=আমি অন্তত দুটি পুনরাবৃত্ত ভুল শনাক্ত করে সংশোধন করতে পারি।||I can recite solo with stable rhythm after audio guidance.=অডিও নির্দেশনার পরে আমি স্থির ছন্দে একক তিলাওয়াত করতে পারি।||I can compare my recording and explain one improvement point.=আমি নিজের রেকর্ডিং তুলনা করে অন্তত একটি উন্নয়নের দিক ব্যাখ্যা করতে পারি।||7) Revision Block and Mastery Checklist=৭) রিভিউ ব্লক ও দক্ষতা চেকলিস্ট||Run this block daily for one week to stabilize your Pronunciation Basics track.=প্রোনানসিয়েশন বেসিকস ট্র্যাক স্থিতিশীল করতে এক সপ্তাহ প্রতিদিন এই ব্লকটি করুন।||I can distinguish heavy and light pairs without hesitation.=আমি দ্বিধা ছাড়াই ভারী ও হালকা জোড়াগুলো আলাদা করতে পারি।||I can keep natural madd at a consistent 2-beat timing.=আমি স্বাভাবিক মাদ্দ ধারাবাহিক ২-বিট সময়মাত্রায় রাখতে পারি।||I can stop without adding an extra vowel sound.=আমি অতিরিক্ত স্বরধ্বনি যোগ না করে থামতে পারি।||I can restart phrases with stable tone and rhythm.=আমি স্থির স্বর ও ছন্দে ফ্রেজ পুনরারম্ভ করতে পারি।||I can complete one short recitation with clear pronunciation.=আমি স্পষ্ট উচ্চারণে একটি ছোট তিলাওয়াত সম্পন্ন করতে পারি।||Use this review block daily to lock articulation precision into regular recitation.=উচ্চারণের নিখুঁততা নিয়মিত তিলাওয়াতে স্থির করতে প্রতিদিন এই রিভিউ ব্লকটি ব্যবহার করুন।||I can identify each major makhraj zone and its core letters.=আমি প্রতিটি প্রধান মাখরাজ জোন ও তার মূল বর্ণগুলো শনাক্ত করতে পারি।||I can recite throat letters with distinct sound depth.=আমি গলার বর্ণগুলো স্বতন্ত্র ধ্বনির গভীরতাসহ তিলাওয়াত করতে পারি।||I can maintain separation in key confusion pairs.=আমি গুরুত্বপূর্ণ বিভ্রান্তিকর জোড়াগুলোতে স্পষ্ট পার্থক্য বজায় রাখতে পারি।||I can keep lip letters and ghunnah controlled in flow.=আমি তিলাওয়াতের প্রবাহে ঠোঁটের বর্ণ ও গুন্নাহ নিয়ন্ত্রিত রাখতে পারি।||I can apply makharij cues in at least one short surah recitation.=আমি অন্তত একটি ছোট সূরার তিলাওয়াতে মাখারিজ নির্দেশনা প্রয়োগ করতে পারি।||Use this routine repeatedly until rule application becomes consistent in live recitation.=সরাসরি তিলাওয়াতে নিয়ম প্রয়োগ ধারাবাহিক না হওয়া পর্যন্ত এই রুটিন বারবার অনুশীলন করুন।||I can identify the four noon/tanween rules from examples.=আমি উদাহরণ থেকে নূন/তানউইনের চারটি নিয়ম শনাক্ত করতে পারি।||I can apply meem saakin rules with correct lip and ghunnah control.=আমি সঠিক ঠোঁট ও গুন্নাহ নিয়ন্ত্রণসহ মীম সাকিনের নিয়ম প্রয়োগ করতে পারি।||I can produce qalqalah bounce without adding extra vowels.=আমি অতিরিক্ত স্বর যোগ না করে সঠিক কালকালাহ কম্পন দিতে পারি।||I can maintain madd counts and planned waqf points.=আমি মাদ্দের গণনা ও পরিকল্পিত ওয়াক্‌ফ পয়েন্ট বজায় রাখতে পারি।||I can recite a short surah with visible tajweed awareness.=আমি দৃশ্যমান তাজবিদ সচেতনতা নিয়ে একটি ছোট সূরা তিলাওয়াত করতে পারি।||Use this revision loop to turn short surah memorization into long-term confidence.=এই রিভিশন লুপ ব্যবহার করে ছোট সূরা মুখস্থকে দীর্ঘমেয়াদি আত্মবিশ্বাসে রূপ দিন।||I can recite at least 4 short surahs without looking at the text.=আমি লেখা না দেখে অন্তত ৪টি ছোট সূরা তিলাওয়াত করতে পারি।||I can maintain steady pace suitable for salah recitation.=আমি সালাতের উপযোগী স্থির গতি বজায় রাখতে পারি।||I can apply key tajweed targets inside each short surah.=আমি প্রতিটি ছোট সূরায় গুরুত্বপূর্ণ তাজবিদ লক্ষ্য প্রয়োগ করতে পারি।||I can stop and restart at meaningful phrase boundaries.=আমি অর্থবহ ফ্রেজ সীমায় থামতে ও পুনরারম্ভ করতে পারি।||I can summarize the core message of each practiced surah.=আমি অনুশীলিত প্রতিটি সূরার মূল বার্তা সংক্ষেপে বলতে পারি।';
+  String get learnQuranTextMapRaw =>
+      'Arabic Letters=আরবি বর্ণমালা||Pronunciation Basics=উচ্চারণের ভিত্তি||Makharij=মাখারিজ||Tajweed Rules=তাজবিদের নিয়ম||Word-by-Word Understanding=শব্দে-শব্দে বুঝে পড়া||Short Surah Practice=ছোট সূরা অনুশীলন||Audio Assisted Practice=অডিও সহায়তায় অনুশীলন||Beginner=শুরুর স্তর||Beginner to Intermediate=শুরুর স্তর থেকে মধ্যম||Intermediate=মধ্যম||Track Flow=শেখার ধারা||Word map=শব্দ মানচিত্র||Meaning=অর্থ||Family=পরিবার||Core meaning=মূল অর্থ||Examples=উদাহরণ||Tip=টিপস||Focus=ফোকাস||Function=কার্য||Sample=নমুনা||Reading cue=পাঠ নির্দেশনা||Distinction=পার্থক্য||Practice=অনুশীলন||Watch for=খেয়াল রাখুন||Location=অবস্থান||Sound cue=ধ্বনি নির্দেশনা||Common mistake=সাধারণ ভুল||Drill=ড্রিল||Goal=লক্ষ্য||Success marker=সফলতার সূচক||Listen for=শুনে ধরুন||Repeat target=পুনরাবৃত্তির লক্ষ্য||Pacing=গতি||Action=করণীয়||Check prompt=পরীক্ষা নির্দেশনা||Common signs=সাধারণ লক্ষণ||Fix=সংশোধন||Pause=বিরতি||Restart=পুনরারম্ভ||Example=উদাহরণ||Base letter=মূল বর্ণ||Fatha=ফাতহা||Kasra=কাসরা||Damma=দাম্মা||Sukoon=সুকুন||Sound=ধ্বনি||Count=গণনা||Note=নোট||Qalqalah Focus=কালকালাহ ফোকাস||Madd Focus=মাদ্দ ফোকাস||Trigger=ট্রিগার||Delivery=প্রয়োগ পদ্ধতি||How to read=কীভাবে পড়বেন||Coach note=শিক্ষকের নোট||Objective=উদ্দেশ্য||Key theme=মূল বিষয়||Recitation target=তিলাওয়াতের লক্ষ্য||Practice prompt=অনুশীলনের নির্দেশনা||Light sample=হালকা নমুনা||Heavy sample=ভারী নমুনা||Coach tip=শিক্ষকের টিপস||Do this=এভাবে করুন||Message=বার্তা||Recitation cue=তিলাওয়াত নির্দেশনা||Rule=নিয়ম||Correction=সংশোধন||When=কখন||I can recognize at least 20 high-frequency Quran words quickly.=আমি দ্রুত কমপক্ষে ২০টি বহুল ব্যবহৃত কুরআনের শব্দ চিনতে পারি।||I can infer general meaning from common root families.=আমি প্রচলিত মূল-পরিবার থেকে সাধারণ অর্থ অনুমান করতে পারি।||I can identify connector particles and their phrase role.=আমি সংযোজক কণাগুলো এবং বাক্যে তাদের ভূমিকা শনাক্ত করতে পারি।||I can break a short ayah into word groups with translation awareness.=আমি অনুবাদ-বোঝাপড়াসহ একটি ছোট আয়াতকে শব্দগুচ্ছে ভাগ করতে পারি।||I can summarize one short surah in simple meaning-based notes.=আমি সহজ অর্থভিত্তিক নোটে একটি ছোট সূরার সারসংক্ষেপ দিতে পারি।||Word-by-Word Learning=শব্দে-শব্দে শেখা||Audio-Assisted Lessons=অডিও-সহায়তায় পাঠ||All levels=সব স্তর||Difference=পার্থক্য||Indicator=ইঙ্গিত||Do=করুন||Avoid=এড়িয়ে চলুন||Duration=সময়কাল||Output=ফলাফল||Target=লক্ষ্য||From alphabet recognition to first reading drills=বর্ণমালা চেনা থেকে প্রথম পাঠ-ড্রিল পর্যন্ত||Master the full Arabic letter foundation used in Quran reading: isolated forms, similar-letter distinction, beginner pronunciation, and practical review drills.=কুরআন পাঠে ব্যবহৃত পূর্ণ আরবি বর্ণভিত্তি আয়ত্ত করুন: পৃথক রূপ, মিলযুক্ত বর্ণের পার্থক্য, প্রাথমিক উচ্চারণ এবং ব্যবহারিক রিভিউ ড্রিল।||Heavy-light clarity, madd, and recitation flow=ভারী-হালকা ধ্বনির স্বচ্ছতা, মাদ্দ ও তিলাওয়াতের প্রবাহ||Build clear Quran pronunciation through contrast training, articulation cues, controlled lengthening, and guided pause-restart drills.=কনট্রাস্ট অনুশীলন, উচ্চারণ নির্দেশনা, নিয়ন্ত্রিত টান এবং বিরতি-শুরু ড্রিলের মাধ্যমে পরিষ্কার কুরআনিক উচ্চারণ গড়ে তুলুন।||Mapped articulation zones and precision drills=উচ্চারণস্থান মানচিত্র ও নিখুঁত ড্রিল||Learn the exact articulation origins of Quran letters through zone mapping, contrast practice, and guided phrase drills.=জোন ম্যাপিং, কনট্রাস্ট অনুশীলন এবং নির্দেশিত ফ্রেজ ড্রিলের মাধ্যমে কুরআনের বর্ণের সুনির্দিষ্ট উচ্চারণস্থান শিখুন।||Rule-by-rule application with guided drills=ধাপে ধাপে নিয়ম প্রয়োগের গাইডেড ড্রিল||Learn and apply core tajweed rules step by step with focused examples, correction drills, and integrated recitation practice.=নির্বাচিত উদাহরণ, সংশোধনী ড্রিল এবং সমন্বিত তিলাওয়াত অনুশীলনের মাধ্যমে মূল তাজবিদ নিয়ম ধাপে ধাপে শিখুন ও প্রয়োগ করুন।||Vocabulary, roots, and ayah meaning mapping=শব্দভান্ডার, মূলধাতু ও আয়াতের অর্থ মানচিত্র||Build practical Quran understanding through high-frequency vocabulary, root-pattern recognition, connector awareness, and phrase-by-phrase meaning drills.=বহুল ব্যবহৃত শব্দভান্ডার, ধাতু-প্যাটার্ন চেনা, সংযোজক বোঝাপড়া এবং ফ্রেজভিত্তিক অর্থ অনুশীলনের মাধ্যমে ব্যবহারিক কুরআন বোঝাপড়া তৈরি করুন।||Salah-ready recitation with memorization flow=সালাত-প্রস্তুত তিলাওয়াত ও মুখস্থের ধারা||Practice essential short surahs through memorization cycles, tajweed targets, meaning-linked recitation, and prayer-ready fluency checks.=মুখস্থ চক্র, তাজবিদ লক্ষ্য, অর্থসংযুক্ত তিলাওয়াত এবং সালাত-প্রস্তুত সাবলীলতার মূল্যায়নের মাধ্যমে প্রয়োজনীয় ছোট সূরা অনুশীলন করুন।||Focused listening, shadowing, and correction loops=মনোযোগী শোনা, শ্যাডো অনুশীলন ও সংশোধন চক্র||Build strong recitation quality through audio-first drills, imitation practice, structured error detection, and confidence-focused feedback cycles.=অডিও-প্রথম ড্রিল, অনুকরণ অনুশীলন, কাঠামোবদ্ধ ভুল শনাক্তকরণ এবং আত্মবিশ্বাসভিত্তিক ফিডব্যাক চক্রের মাধ্যমে তিলাওয়াতের মান শক্তিশালী করুন।||1) High-Frequency Vocabulary Bank=১) বহুল ব্যবহৃত শব্দভান্ডার ব্যাংক||Memorize recurring Quran words so ayah meaning becomes easier to follow in real time.=পুনরাবৃত্ত কুরআনিক শব্দ মুখস্থ করুন, যাতে বাস্তবে আয়াতের অর্থ অনুসরণ করা সহজ হয়।||2) Root Family Mapping=২) মূলধাতু পরিবার মানচিত্র||Recognize core roots so unfamiliar words still reveal approximate meaning.=মূল ধাতু চিনে নিন, যাতে অচেনা শব্দ থেকেও আনুমানিক অর্থ বোঝা যায়।||3) Connector Words and Particle Cues=৩) সংযোজক শব্দ ও পার্টিকল নির্দেশনা||Spot linking words that shape sentence meaning, sequence, emphasis, and direction.=বাক্যের অর্থ, ক্রম, জোর ও দিক নির্ধারণকারী সংযোজক শব্দগুলো শনাক্ত করুন।||4) Phrase Breakdown Lab=৪) ফ্রেজ বিশ্লেষণ ল্যাব||Break phrases into word units, then reconnect them into complete meaning.=ফ্রেজকে শব্দ এককে ভেঙে নিন, তারপর পূর্ণ অর্থে আবার যুক্ত করুন।||5) Ayah Word Map Practice=৫) আয়াত শব্দ-মানচিত্র অনুশীলন||Apply vocabulary and connector awareness to complete ayah passages.=শব্দভান্ডার ও সংযোজক বোঝাপড়া ব্যবহার করে পূর্ণ আয়াতাংশ অনুধাবন করুন।||Follow this flow to move from vocabulary recognition to ayah-level understanding.=এই ধারা অনুসরণ করে শব্দ চিনে নেওয়া থেকে আয়াত-স্তরের বোঝাপড়ায় যান।||6) Revision and Mastery Checklist=৬) রিভিউ ও দক্ষতা চেকলিস্ট||Use this cycle to shift from memorizing isolated words to understanding recitation meaning.=এই চক্র ব্যবহার করে বিচ্ছিন্ন শব্দ মুখস্থ করা থেকে তিলাওয়াতের অর্থ বোঝায় অগ্রসর হোন।||1) Full Alphabet Map (Isolated Forms)=১) পূর্ণ বর্ণমালা মানচিত্র (পৃথক রূপ)||Start by mastering isolated letters. Read each symbol, then say its name and sound value.=পৃথক বর্ণরূপ দিয়ে শুরু করুন। প্রতিটি চিহ্ন পড়ুন, তারপর তার নাম ও ধ্বনি বলুন।||2) Grouped Shape Learning=২) গুচ্ছভিত্তিক আকৃতি শেখা||Learn high-retention groups so you can decode letters quickly during reading.=উচ্চ-ধারণক্ষমতার বর্ণগুচ্ছ শিখুন, যাতে পড়ার সময় দ্রুত বর্ণ চেনা যায়।||3) Similar Letter Comparison Grid=৩) সাদৃশ্যপূর্ণ বর্ণ তুলনা গ্রিড||Use this as your anti-confusion reference. Compare shape and sound before speed.=এটিকে বিভ্রান্তি-রোধী রেফারেন্স হিসেবে ব্যবহার করুন। গতি বাড়ানোর আগে আকৃতি ও ধ্বনি তুলনা করুন।||4) Beginner Pronunciation and Articulation Hints=৪) প্রাথমিক উচ্চারণ ও উচ্চারণস্থানের নির্দেশনা||These cues guide where each sound is produced. Keep tone natural and avoid over-force.=প্রতিটি ধ্বনি কোথা থেকে উচ্চারিত হয় তা বুঝতে এই নির্দেশনা অনুসরণ করুন। স্বর স্বাভাবিক রাখুন এবং অতিরিক্ত চাপ এড়িয়ে চলুন।||5) Harakat and Sukoon Pattern Practice=৫) হারাকাত ও সুকুন ধরণ অনুশীলন||Read each row slowly. Keep vowel quality stable: fatha (a), kasra (i), damma (u), sukoon (no vowel).=প্রতিটি সারি ধীরে পড়ুন। স্বরধ্বনির মান স্থির রাখুন: ফাতহা (a), কাসরা (i), দাম্মা (u), সুকুন (স্বরহীন)।||6) Example-Based Beginner Reading Cards=৬) উদাহরণভিত্তিক প্রাথমিক পাঠ কার্ড||These words reinforce letters, vowels, and stops used in early Quran recitation.=এই শব্দগুলো প্রাথমিক কুরআন তিলাওয়াতে ব্যবহৃত বর্ণ, স্বরচিহ্ন ও থামার নিয়মকে দৃঢ় করে।||7) Guided Review and Mastery Check=৭) নির্দেশিত রিভিউ ও দক্ষতা যাচাই||Use this block as your daily 12-minute revision loop until recognition and pronunciation feel natural.=চেনা ও উচ্চারণ স্বাভাবিক না হওয়া পর্যন্ত প্রতিদিন ১২ মিনিটের এই রিভিউ ব্লকটি অনুশীলন করুন।||Fatha = short a=ফাতহা = ছোট a||Kasra = short i=কাসরা = ছোট i||Damma = short u=দাম্মা = ছোট u||Sukoon = stop/closed=সুকুন = থামা/বন্ধ||I can name and identify all 29 letters in isolated form.=আমি পৃথক রূপে ২৯টি বর্ণের নাম বলতে ও শনাক্ত করতে পারি।||I can separate look-alike letters by dot count and position.=আমি দেখতে একইরকম বর্ণগুলোকে বিন্দুর সংখ্যা ও অবস্থান দিয়ে আলাদা করতে পারি।||I can produce basic throat, tongue, and lip letters with control.=আমি গলা, জিহ্বা ও ঠোঁটের প্রাথমিক বর্ণগুলো নিয়ন্ত্রিতভাবে উচ্চারণ করতে পারি।||I can read fatha, kasra, damma, and sukoon patterns aloud.=আমি ফাতহা, কাসরা, দাম্মা ও সুকুনের ধরণ জোরে পড়তে পারি।||I can read beginner examples without adding extra vowels.=আমি অতিরিক্ত স্বর না যোগ করে প্রাথমিক উদাহরণগুলো পড়তে পারি।||1) Focused Listening Drills=১) মনোযোগী শোনার ড্রিল||Train your ear before speaking so imitation and correction become easier.=কথা বলার আগে কানকে প্রশিক্ষণ দিন, যাতে অনুকরণ ও সংশোধন সহজ হয়।||2) Shadow Recitation Rounds=২) শ্যাডো তিলাওয়াত রাউন্ড||Imitate audio in staged levels so your articulation and timing transfer into solo recitation.=ধাপে ধাপে অডিও অনুকরণ করুন, যাতে উচ্চারণ ও সময়নিয়ন্ত্রণ একক তিলাওয়াতে চলে আসে।||3) Error Spot and Fix Map=৩) ভুল শনাক্তকরণ ও সংশোধন মানচিত্র||Use structured checks to detect recurring mistakes and apply targeted corrections.=পুনরাবৃত্ত ভুল শনাক্ত করে লক্ষ্যভিত্তিক সংশোধন করতে কাঠামোবদ্ধ যাচাই ব্যবহার করুন।||4) Guided Audio Session Plan=৪) নির্দেশিত অডিও সেশন পরিকল্পনা||Use a fixed routine to structure listening, imitation, correction, and final confidence recitation.=শোনা, অনুকরণ, সংশোধন এবং আত্মবিশ্বাসী চূড়ান্ত তিলাওয়াতের জন্য নির্দিষ্ট রুটিন অনুসরণ করুন।||5) Targeted Audio Sample Practice=৫) লক্ষ্যভিত্তিক অডিও স্যাম্পল অনুশীলন||Practice selected ayah sets with clear listening goals and repeat targets.=পরিষ্কার শোনার লক্ষ্য ও পুনরাবৃত্তি টার্গেট রেখে নির্দিষ্ট আয়াত-সেট অনুশীলন করুন।||Follow this sequence to improve listening accuracy, imitation quality, and self-correction.=শোনার নির্ভুলতা, অনুকরণের মান এবং স্ব-সংশোধন উন্নত করতে এই ক্রম অনুসরণ করুন।||Repeat this block to transform assisted listening into independent recitation quality.=সহায়ক শোনা থেকে স্বতন্ত্র তিলাওয়াতের মানে যেতে এই ব্লকটি পুনরাবৃত্তি করুন।||I can complete focused listening before imitation.=আমি অনুকরণ শুরুর আগে মনোযোগী শোনা সম্পন্ন করতে পারি।||I can shadow recite while maintaining phrase timing.=আমি ফ্রেজের সময়মাত্রা ঠিক রেখে শ্যাডো তিলাওয়াত করতে পারি।||I can detect and correct at least two repeating mistakes.=আমি অন্তত দুটি পুনরাবৃত্ত ভুল শনাক্ত করে সংশোধন করতে পারি।||I can recite solo with stable rhythm after audio guidance.=অডিও নির্দেশনার পরে আমি স্থির ছন্দে একক তিলাওয়াত করতে পারি।||I can compare my recording and explain one improvement point.=আমি নিজের রেকর্ডিং তুলনা করে অন্তত একটি উন্নয়নের দিক ব্যাখ্যা করতে পারি।||7) Revision Block and Mastery Checklist=৭) রিভিউ ব্লক ও দক্ষতা চেকলিস্ট||Run this block daily for one week to stabilize your Pronunciation Basics track.=প্রোনানসিয়েশন বেসিকস ট্র্যাক স্থিতিশীল করতে এক সপ্তাহ প্রতিদিন এই ব্লকটি করুন।||I can distinguish heavy and light pairs without hesitation.=আমি দ্বিধা ছাড়াই ভারী ও হালকা জোড়াগুলো আলাদা করতে পারি।||I can keep natural madd at a consistent 2-beat timing.=আমি স্বাভাবিক মাদ্দ ধারাবাহিক ২-বিট সময়মাত্রায় রাখতে পারি।||I can stop without adding an extra vowel sound.=আমি অতিরিক্ত স্বরধ্বনি যোগ না করে থামতে পারি।||I can restart phrases with stable tone and rhythm.=আমি স্থির স্বর ও ছন্দে ফ্রেজ পুনরারম্ভ করতে পারি।||I can complete one short recitation with clear pronunciation.=আমি স্পষ্ট উচ্চারণে একটি ছোট তিলাওয়াত সম্পন্ন করতে পারি।||Use this review block daily to lock articulation precision into regular recitation.=উচ্চারণের নিখুঁততা নিয়মিত তিলাওয়াতে স্থির করতে প্রতিদিন এই রিভিউ ব্লকটি ব্যবহার করুন।||I can identify each major makhraj zone and its core letters.=আমি প্রতিটি প্রধান মাখরাজ জোন ও তার মূল বর্ণগুলো শনাক্ত করতে পারি।||I can recite throat letters with distinct sound depth.=আমি গলার বর্ণগুলো স্বতন্ত্র ধ্বনির গভীরতাসহ তিলাওয়াত করতে পারি।||I can maintain separation in key confusion pairs.=আমি গুরুত্বপূর্ণ বিভ্রান্তিকর জোড়াগুলোতে স্পষ্ট পার্থক্য বজায় রাখতে পারি।||I can keep lip letters and ghunnah controlled in flow.=আমি তিলাওয়াতের প্রবাহে ঠোঁটের বর্ণ ও গুন্নাহ নিয়ন্ত্রিত রাখতে পারি।||I can apply makharij cues in at least one short surah recitation.=আমি অন্তত একটি ছোট সূরার তিলাওয়াতে মাখারিজ নির্দেশনা প্রয়োগ করতে পারি।||Use this routine repeatedly until rule application becomes consistent in live recitation.=সরাসরি তিলাওয়াতে নিয়ম প্রয়োগ ধারাবাহিক না হওয়া পর্যন্ত এই রুটিন বারবার অনুশীলন করুন।||I can identify the four noon/tanween rules from examples.=আমি উদাহরণ থেকে নূন/তানউইনের চারটি নিয়ম শনাক্ত করতে পারি।||I can apply meem saakin rules with correct lip and ghunnah control.=আমি সঠিক ঠোঁট ও গুন্নাহ নিয়ন্ত্রণসহ মীম সাকিনের নিয়ম প্রয়োগ করতে পারি।||I can produce qalqalah bounce without adding extra vowels.=আমি অতিরিক্ত স্বর যোগ না করে সঠিক কালকালাহ কম্পন দিতে পারি।||I can maintain madd counts and planned waqf points.=আমি মাদ্দের গণনা ও পরিকল্পিত ওয়াক্‌ফ পয়েন্ট বজায় রাখতে পারি।||I can recite a short surah with visible tajweed awareness.=আমি দৃশ্যমান তাজবিদ সচেতনতা নিয়ে একটি ছোট সূরা তিলাওয়াত করতে পারি।||Use this revision loop to turn short surah memorization into long-term confidence.=এই রিভিশন লুপ ব্যবহার করে ছোট সূরা মুখস্থকে দীর্ঘমেয়াদি আত্মবিশ্বাসে রূপ দিন।||I can recite at least 4 short surahs without looking at the text.=আমি লেখা না দেখে অন্তত ৪টি ছোট সূরা তিলাওয়াত করতে পারি।||I can maintain steady pace suitable for salah recitation.=আমি সালাতের উপযোগী স্থির গতি বজায় রাখতে পারি।||I can apply key tajweed targets inside each short surah.=আমি প্রতিটি ছোট সূরায় গুরুত্বপূর্ণ তাজবিদ লক্ষ্য প্রয়োগ করতে পারি।||I can stop and restart at meaningful phrase boundaries.=আমি অর্থবহ ফ্রেজ সীমায় থামতে ও পুনরারম্ভ করতে পারি।||I can summarize the core message of each practiced surah.=আমি অনুশীলিত প্রতিটি সূরার মূল বার্তা সংক্ষেপে বলতে পারি।';
 }

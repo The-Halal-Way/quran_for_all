@@ -5,7 +5,7 @@ import 'package:quran_for_all/core/theme/my_images.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/surah_model.dart';
 import '../../common/app_pill.dart';
 
@@ -90,7 +90,7 @@ class SurahMetaCard extends StatelessWidget {
                         child: Text(
                           surah.nameArabic,
                           textAlign: TextAlign.center,
-                          style: AppTextStyles.surahArabicName(
+                          style: AppTheme.surahArabicName(
                             context,
                           ).copyWith(color: Colors.white),
                         ),
@@ -101,9 +101,9 @@ class SurahMetaCard extends StatelessWidget {
                   const SizedBox(height: AppSpacing.xs + 1),
                   Text(
                     titleText,
-                    style: Theme.of(
+                    style: AppTheme.text(
                       context,
-                    ).textTheme.titleLarge?.copyWith(color: Colors.white),
+                    ).titleLarge.copyWith(color: Colors.white),
                   ),
                   if (surah.nameEnglish.trim().isNotEmpty &&
                       titleText.trim().toLowerCase() !=
@@ -112,7 +112,7 @@ class SurahMetaCard extends StatelessWidget {
                     Text(
                       surah.nameEnglish,
                       textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      style: AppTheme.text(context).bodyMedium.copyWith(
                         color: Colors.white.withValues(alpha: 0.9),
                       ),
                     ),

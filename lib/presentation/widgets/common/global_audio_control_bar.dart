@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 import '../../../core/theme/app_spacing.dart';
@@ -20,7 +21,7 @@ class GlobalAudioControlBar extends StatelessWidget {
 
     final nowPlaying = vm.nowPlaying!;
     final colorScheme = Theme.of(context).colorScheme;
-    final textTheme = Theme.of(context).textTheme;
+    final textTheme = AppTheme.text(context);
     final onPrimary = colorScheme.onPrimary;
     final width = MediaQuery.sizeOf(context).width;
     final barHeight = width >= 600 ? 56.0 : 60.0;
@@ -69,9 +70,9 @@ class GlobalAudioControlBar extends StatelessWidget {
                         children: [
                           Text(
                             nowPlaying.title,
-                            style: textTheme.bodyMedium?.copyWith(
+                            style: textTheme.bodyMedium.copyWith(
                               color: onPrimary,
-                              fontWeight: FontWeight.w600,
+                              fontWeight: AppTheme.weightSemiBold,
                             ),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
@@ -80,7 +81,7 @@ class GlobalAudioControlBar extends StatelessWidget {
                             const SizedBox(height: 1),
                             Text(
                               nowPlaying.subtitle!,
-                              style: textTheme.labelSmall?.copyWith(
+                              style: textTheme.labelSmall.copyWith(
                                 color: onPrimary.withValues(alpha: 0.75),
                               ),
                               maxLines: 1,

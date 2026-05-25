@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 import '../../../core/enums/playback_source.dart';
@@ -143,10 +144,10 @@ class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
                             Expanded(
                               child: Text(
                                 moduleSubtitle,
-                                style: Theme.of(context).textTheme.titleMedium
-                                    ?.copyWith(
+                                style: AppTheme.text(context).titleMedium
+                                    .copyWith(
                                       color: Colors.white,
-                                      fontWeight: FontWeight.w700,
+                                      fontWeight: AppTheme.weightBold,
                                     ),
                               ),
                             ),
@@ -155,10 +156,9 @@ class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
                         const SizedBox(height: AppSpacing.sm),
                         Text(
                           moduleDescription,
-                          style: Theme.of(context).textTheme.bodyMedium
-                              ?.copyWith(
-                                color: Colors.white.withValues(alpha: 0.92),
-                              ),
+                          style: AppTheme.text(context).bodyMedium.copyWith(
+                            color: Colors.white.withValues(alpha: 0.92),
+                          ),
                         ),
                         const SizedBox(height: AppSpacing.lg - 2),
                         ClipRRect(
@@ -178,11 +178,10 @@ class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
                             completedCount,
                             widget.module.lessons.length,
                           ),
-                          style: Theme.of(context).textTheme.labelLarge
-                              ?.copyWith(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w700,
-                              ),
+                          style: AppTheme.text(context).labelLarge.copyWith(
+                            color: Colors.white,
+                            fontWeight: AppTheme.weightBold,
+                          ),
                         ),
                       ],
                     ),

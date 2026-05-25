@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -67,9 +68,9 @@ class LearnNextLessonCard extends StatelessWidget {
             hasLesson
                 ? l10n.learnNextContinuePathTitle
                 : l10n.learnNextAllLessonsCompletedTitle,
-            style: Theme.of(context).textTheme.labelLarge?.copyWith(
+            style: AppTheme.text(context).labelLarge.copyWith(
               color: colorScheme.primary,
-              fontWeight: FontWeight.w800,
+              fontWeight: AppTheme.weightExtraBold,
               letterSpacing: 0.1,
             ),
           ),
@@ -78,15 +79,15 @@ class LearnNextLessonCard extends StatelessWidget {
             hasLesson
                 ? context.learnText(lesson.title)
                 : l10n.learnNextAllLessonsCompletedBody,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).titleMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           if (hasLesson) ...[
             const SizedBox(height: AppSpacing.sm - 2),
             Text(
               context.learnText(lesson.objective),
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+              style: AppTheme.text(context).bodySmall.copyWith(
                 color: colorScheme.onSurface.withValues(alpha: 0.74),
               ),
             ),

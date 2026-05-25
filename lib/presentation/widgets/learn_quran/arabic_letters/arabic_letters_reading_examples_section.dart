@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
@@ -62,24 +62,24 @@ class _ReadingExampleCard extends StatelessWidget {
               children: [
                 Text(
                   example.arabic,
-                  style: AppTextStyles.learnArabicWord(context, fontSize: 32)
-                      .copyWith(
+                  style:
+                      AppTheme.learnArabicWord(
+                        context,
+                        fontSize: AppTheme.scaledFontSize(context, 32),
+                      ).copyWith(
                         color: colorScheme.primary,
-                        fontWeight: FontWeight.w800,
+                        fontWeight: AppTheme.weightExtraBold,
                       ),
                 ),
                 const SizedBox(height: 3),
                 Text(
                   example.transliteration,
-                  style: Theme.of(
+                  style: AppTheme.text(
                     context,
-                  ).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
+                  ).labelLarge.copyWith(fontWeight: AppTheme.weightBold),
                 ),
                 const SizedBox(height: 4),
-                Text(
-                  example.focus,
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
+                Text(example.focus, style: AppTheme.text(context).bodySmall),
               ],
             ),
           ),

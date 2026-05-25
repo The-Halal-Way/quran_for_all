@@ -49,8 +49,16 @@ class _SplashViewState extends State<SplashView> {
   Widget build(BuildContext context) {
     final viewModel = context.watch<SplashViewModel>();
     final responsive = AppResponsive.of(context);
-    final decorCircleLarge = responsive.moderate(220, tabletFactor: 1.05, desktopFactor: 1.1);
-    final decorCircleSmall = responsive.moderate(190, tabletFactor: 1.04, desktopFactor: 1.08);
+    final decorCircleLarge = responsive.moderate(
+      220,
+      tabletFactor: 1.05,
+      desktopFactor: 1.1,
+    );
+    final decorCircleSmall = responsive.moderate(
+      190,
+      tabletFactor: 1.04,
+      desktopFactor: 1.08,
+    );
 
     return Scaffold(
       body: Stack(

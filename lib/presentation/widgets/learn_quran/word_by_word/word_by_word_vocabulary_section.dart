@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
@@ -74,10 +74,14 @@ class _VocabCard extends StatelessWidget {
               Expanded(
                 child: Text(
                   item.arabic,
-                  style: AppTextStyles.learnArabicWord(
-                    context,
-                    fontSize: 31,
-                  ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w800),
+                  style:
+                      AppTheme.learnArabicWord(
+                        context,
+                        fontSize: AppTheme.scaledFontSize(context, 31),
+                      ).copyWith(
+                        color: colorScheme.primary,
+                        fontWeight: AppTheme.weightExtraBold,
+                      ),
                 ),
               ),
               PronunciationButton(
@@ -90,19 +94,19 @@ class _VocabCard extends StatelessWidget {
           const SizedBox(height: 3),
           Text(
             item.transliteration,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
+            ).labelLarge.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 4),
           Text(
             item.meaning,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).bodyMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 4),
-          Text(item.usage, style: Theme.of(context).textTheme.bodySmall),
+          Text(item.usage, style: AppTheme.text(context).bodySmall),
         ],
       ),
     );

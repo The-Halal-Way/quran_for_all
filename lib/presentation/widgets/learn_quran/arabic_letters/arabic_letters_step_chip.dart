@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 
@@ -30,18 +31,18 @@ class ArabicLettersStepChip extends StatelessWidget {
             backgroundColor: colorScheme.primary,
             child: Text(
               '$step',
-              style: Theme.of(context).textTheme.labelSmall?.copyWith(
+              style: AppTheme.text(context).labelSmall.copyWith(
                 color: colorScheme.onPrimary,
-                fontWeight: FontWeight.w700,
+                fontWeight: AppTheme.weightBold,
               ),
             ),
           ),
           const SizedBox(width: 6),
           Text(
             context.learnText(label),
-            style: Theme.of(context).textTheme.labelMedium?.copyWith(
+            style: AppTheme.text(context).labelMedium.copyWith(
               color: colorScheme.primary,
-              fontWeight: FontWeight.w700,
+              fontWeight: AppTheme.weightBold,
             ),
           ),
         ],

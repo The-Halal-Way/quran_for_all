@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import 'pronunciation_basics_learning_data.dart';
@@ -57,9 +58,9 @@ class _FlowDrillCard extends StatelessWidget {
         children: [
           Text(
             drill.title,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+            ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 6),
           for (var index = 0; index < drill.steps.length; index++)
@@ -70,13 +71,13 @@ class _FlowDrillCard extends StatelessWidget {
                 children: [
                   Text(
                     '${index + 1}.',
-                    style: Theme.of(context).textTheme.labelMedium,
+                    style: AppTheme.text(context).labelMedium,
                   ),
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
                       drill.steps[index],
-                      style: Theme.of(context).textTheme.bodySmall,
+                      style: AppTheme.text(context).bodySmall,
                     ),
                   ),
                 ],
@@ -85,7 +86,7 @@ class _FlowDrillCard extends StatelessWidget {
           const SizedBox(height: 3),
           Text(
             '${context.learnText('Goal')}: ${drill.goal}',
-            style: Theme.of(context).textTheme.labelMedium?.copyWith(
+            style: AppTheme.text(context).labelMedium.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.78),
             ),
           ),

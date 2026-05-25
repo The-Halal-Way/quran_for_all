@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassDial extends StatelessWidget {
   const CompassDial({
@@ -19,6 +20,8 @@ class CompassDial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const size = 290.0;
+    final text = AppTheme.text(context);
+
     return SizedBox(
       width: size,
       height: size,
@@ -28,6 +31,10 @@ class CompassDial extends StatelessWidget {
           qiblaDegrees: qiblaDegrees,
           facingMecca: facingMecca,
           isDark: isDark,
+          cardinalStyle: text.compassDialCardinal,
+          northStyle: text.compassDialNorth,
+          ordinalStyle: text.compassDialOrdinal,
+          meccaStyle: text.compassMeccaLabel,
         ),
       ),
     );
@@ -40,12 +47,20 @@ class CompassPainter extends CustomPainter {
     required this.qiblaDegrees,
     required this.facingMecca,
     required this.isDark,
+    required this.cardinalStyle,
+    required this.northStyle,
+    required this.ordinalStyle,
+    required this.meccaStyle,
   });
 
   final double heading;
   final double qiblaDegrees;
   final bool facingMecca;
   final bool isDark;
+  final TextStyle cardinalStyle;
+  final TextStyle northStyle;
+  final TextStyle ordinalStyle;
+  final TextStyle meccaStyle;
 
   Color get _ringBg =>
       isDark ? const Color(0xFF1D1238) : const Color(0xFFEEE8FA);
@@ -182,10 +197,7 @@ class CompassPainter extends CustomPainter {
       final tp = TextPainter(
         text: TextSpan(
           text: cardinals[i],
-          style: TextStyle(
-            fontFamily: 'Sora',
-            fontSize: isNorth ? 17 : 14,
-            fontWeight: FontWeight.w700,
+          style: (isNorth ? northStyle : cardinalStyle).copyWith(
             color: isNorth ? _fuchsia : _cardinalText,
           ),
         ),
@@ -200,12 +212,7 @@ class CompassPainter extends CustomPainter {
       final oTp = TextPainter(
         text: TextSpan(
           text: ordinals[i],
-          style: TextStyle(
-            fontFamily: 'Manrope',
-            fontSize: 9,
-            fontWeight: FontWeight.w600,
-            color: _mutedText,
-          ),
+          style: ordinalStyle.copyWith(color: _mutedText),
         ),
         textDirection: TextDirection.ltr,
       )..layout();
@@ -290,13 +297,7 @@ class CompassPainter extends CustomPainter {
     final meccaTp = TextPainter(
       text: TextSpan(
         text: 'Mecca',
-        style: TextStyle(
-          fontFamily: 'Sora',
-          fontSize: 8,
-          fontWeight: FontWeight.w700,
-          color: _teal,
-          letterSpacing: 0.4,
-        ),
+        style: meccaStyle.copyWith(color: _teal),
       ),
       textDirection: TextDirection.ltr,
     )..layout();
@@ -463,6 +464,10 @@ class CompassPainter extends CustomPainter {
     return oldDelegate.heading != heading ||
         oldDelegate.facingMecca != facingMecca ||
         oldDelegate.isDark != isDark ||
-        oldDelegate.qiblaDegrees != qiblaDegrees;
+        oldDelegate.qiblaDegrees != qiblaDegrees ||
+        oldDelegate.cardinalStyle != cardinalStyle ||
+        oldDelegate.northStyle != northStyle ||
+        oldDelegate.ordinalStyle != ordinalStyle ||
+        oldDelegate.meccaStyle != meccaStyle;
   }
 }

@@ -6,11 +6,7 @@ import '../../../core/theme/app_gradients.dart';
 ///
 /// Automatically adapts to light/dark theme.
 class AppGradientBackground extends StatelessWidget {
-  const AppGradientBackground({
-    super.key,
-    required this.child,
-    this.gradient,
-  });
+  const AppGradientBackground({super.key, required this.child, this.gradient});
 
   final Widget child;
 

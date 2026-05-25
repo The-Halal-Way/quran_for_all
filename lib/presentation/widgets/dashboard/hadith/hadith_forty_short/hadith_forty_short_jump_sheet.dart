@@ -1,4 +1,5 @@
 part of '../../../../views/dashboard/hadith/hadith_forty_short_view.dart';
+
 class _JumpSheet extends StatefulWidget {
   final ShortHadithBook book;
   final bool isDark, isBangla;
@@ -38,6 +39,7 @@ class _JumpSheetState extends State<_JumpSheet> {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
     final bottomPad =
         MediaQuery.of(context).viewInsets.bottom +
         MediaQuery.of(context).padding.bottom;
@@ -96,19 +98,12 @@ class _JumpSheetState extends State<_JumpSheet> {
                 const SizedBox(width: 10),
                 Text(
                   widget.isBangla ? 'হাদিসে যান' : 'Jump to Hadith',
-                  style: GoogleFonts.sora(
-                    fontSize: 17,
-                    fontWeight: FontWeight.w700,
-                    color: widget.textMain,
-                  ),
+                  style: text.hadithJumpTitle.copyWith(color: widget.textMain),
                 ),
                 const Spacer(),
                 Text(
                   '${widget.book.hadiths.length} hadiths',
-                  style: GoogleFonts.manrope(
-                    fontSize: 11,
-                    color: widget.textHint,
-                  ),
+                  style: text.hadithJumpCount.copyWith(color: widget.textHint),
                 ),
               ],
             ),
@@ -121,13 +116,12 @@ class _JumpSheetState extends State<_JumpSheet> {
               controller: widget.controller,
               autofocus: true,
               onChanged: (v) => setState(() => _query = v),
-              style: GoogleFonts.manrope(fontSize: 14, color: widget.textMain),
+              style: text.hadithJumpSearch.copyWith(color: widget.textMain),
               decoration: InputDecoration(
                 hintText: widget.isBangla
                     ? 'নম্বর বা কীওয়ার্ড দিয়ে খুঁজুন...'
                     : 'Search by number or keyword...',
-                hintStyle: GoogleFonts.manrope(
-                  fontSize: 13,
+                hintStyle: text.hadithJumpSearchHint.copyWith(
                   color: widget.textHint,
                 ),
                 prefixIcon: Icon(
@@ -207,6 +201,7 @@ class _JumpListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
     final headline = hadith.headlineOf(isBangla);
     return InkWell(
       onTap: onTap,
@@ -229,11 +224,7 @@ class _JumpListTile extends StatelessWidget {
               alignment: Alignment.center,
               child: Text(
                 '${hadith.id}',
-                style: GoogleFonts.sora(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w800,
-                  color: MyColors.tertiary,
-                ),
+                style: text.hadithJumpNumber.copyWith(color: MyColors.tertiary),
               ),
             ),
             const SizedBox(width: 12),
@@ -244,11 +235,7 @@ class _JumpListTile extends StatelessWidget {
                   Text(
                     hadith.arabic,
                     textDirection: ui.TextDirection.rtl,
-                    style: GoogleFonts.amiri(
-                      fontSize: 15,
-                      color: textMain,
-                      height: 1.4,
-                    ),
+                    style: text.hadithJumpArabic.copyWith(color: textMain),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     textAlign: TextAlign.right,
@@ -256,11 +243,7 @@ class _JumpListTile extends StatelessWidget {
                   const SizedBox(height: 2),
                   Text(
                     headline,
-                    style: GoogleFonts.manrope(
-                      fontSize: 11,
-                      color: textHint,
-                      fontWeight: FontWeight.w500,
-                    ),
+                    style: text.hadithJumpSubtitle.copyWith(color: textHint),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -279,4 +262,3 @@ class _JumpListTile extends StatelessWidget {
 // ─────────────────────────────────────────────────────────────────────────────
 // DOT ROW INDICATOR
 // ─────────────────────────────────────────────────────────────────────────────
-

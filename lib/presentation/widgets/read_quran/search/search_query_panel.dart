@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/my_colors.dart';
@@ -75,7 +76,7 @@ class SearchQueryPanel extends StatelessWidget {
                     isLoading
                         ? context.readQuranText('Searching...')
                         : '${context.readQuranText('Results')}: $resultCount · "$query"',
-                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    style: AppTheme.text(context).bodySmall.copyWith(
                       color: colorScheme.onSurface.withValues(alpha: 0.75),
                     ),
                   ),

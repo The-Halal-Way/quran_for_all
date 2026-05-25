@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/enums/reading_view_mode.dart';
@@ -241,8 +242,8 @@ class _SurahSearchAction extends StatelessWidget {
                       children: [
                         Text(
                           context.readQuranText('Search inside this surah'),
-                          style: Theme.of(sheetContext).textTheme.titleMedium
-                              ?.copyWith(fontWeight: FontWeight.w700),
+                          style: AppTheme.text(sheetContext).titleMedium
+                              .copyWith(fontWeight: AppTheme.weightBold),
                         ),
                         const SizedBox(height: AppSpacing.sm),
                         TextField(
@@ -272,12 +273,11 @@ class _SurahSearchAction extends StatelessWidget {
                                   'Start typing to search in this surah.',
                                 )
                               : '${context.readQuranText('Results')}: ${results.length}',
-                          style: Theme.of(sheetContext).textTheme.bodySmall
-                              ?.copyWith(
-                                color: colorScheme.onSurface.withValues(
-                                  alpha: 0.72,
-                                ),
-                              ),
+                          style: AppTheme.text(sheetContext).bodySmall.copyWith(
+                            color: colorScheme.onSurface.withValues(
+                              alpha: 0.72,
+                            ),
+                          ),
                         ),
                         const SizedBox(height: AppSpacing.sm),
                         Expanded(
@@ -317,11 +317,10 @@ class _SurahSearchAction extends StatelessWidget {
                                             ),
                                         title: Text(
                                           '${context.readQuranText('Ayah')} ${ayah.ayahNumber}',
-                                          style: Theme.of(itemContext)
-                                              .textTheme
+                                          style: AppTheme.text(itemContext)
                                               .titleSmall
-                                              ?.copyWith(
-                                                fontWeight: FontWeight.w700,
+                                              .copyWith(
+                                                fontWeight: AppTheme.weightBold,
                                               ),
                                         ),
                                         subtitle: Text(

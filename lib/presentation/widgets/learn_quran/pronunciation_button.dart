@@ -76,8 +76,8 @@ class _PronunciationButtonState extends State<PronunciationButton> {
   void didUpdateWidget(covariant PronunciationButton oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.arabicText != widget.arabicText) {
-      _isActive = _service.isSpeaking &&
-          _service.currentText == widget.arabicText;
+      _isActive =
+          _service.isSpeaking && _service.currentText == widget.arabicText;
     }
   }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/localization/surah_name_localizer.dart';
@@ -89,16 +90,16 @@ class SearchResultTile extends StatelessWidget {
                               result.surah != null
                           ? '${result.surah!.id}. ${result.surah!.localizedTitle(context, translationLanguage)}'
                           : _titleText(),
-                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.w700,
-                      ),
+                      style: AppTheme.text(
+                        context,
+                      ).titleMedium.copyWith(fontWeight: AppTheme.weightBold),
                     ),
                     const SizedBox(height: AppSpacing.xs + 1),
                     Text(
                       _subtitleText(),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      style: AppTheme.text(context).bodyMedium.copyWith(
                         color: colorScheme.onSurface.withValues(alpha: 0.76),
                       ),
                     ),

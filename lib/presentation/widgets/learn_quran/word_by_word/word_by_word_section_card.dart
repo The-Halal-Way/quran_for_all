@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
@@ -25,14 +26,14 @@ class WordByWordSectionCard extends StatelessWidget {
           children: [
             Text(
               context.learnText(title),
-              style: Theme.of(
+              style: AppTheme.text(
                 context,
-              ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
+              ).titleMedium.copyWith(fontWeight: AppTheme.weightBold),
             ),
             const SizedBox(height: AppSpacing.xs + 1),
             Text(
               context.learnText(subtitle),
-              style: Theme.of(context).textTheme.bodySmall,
+              style: AppTheme.text(context).bodySmall,
             ),
             const SizedBox(height: AppSpacing.sm + 2),
             child,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+
 enum DuahSituation {
   all,
   distress,
@@ -148,7 +149,8 @@ class PowerfulDuahData {
       pronunciationBn: 'ইয়া মুকাল্লিবাল-কুলুব, সাব্বিত কালবি আলা দিনিক',
       translation:
           'O Turner of the hearts, keep my heart firm upon Your religion.',
-      translationBn: 'হে হৃদয়সমূহের পরিবর্তনকারী, আমার হৃদয়কে আপনার দ্বীনের ওপর স্থির রাখুন।',
+      translationBn:
+          'হে হৃদয়সমূহের পরিবর্তনকারী, আমার হৃদয়কে আপনার দ্বীনের ওপর স্থির রাখুন।',
       situations: [DuahSituation.all, DuahSituation.guidance],
       source: 'Hadith — Tirmidhi',
       isFeatured: true,
@@ -196,7 +198,8 @@ class PowerfulDuahData {
       pronunciationBn: 'রব্বানা তাকাব্বাল মিননা ইন্নাকা আনতাস সামিউল আলিম',
       translation:
           'Our Lord, accept from us. Indeed, You are the All-Hearing, the All-Knowing.',
-      translationBn: 'হে আমাদের রব, আমাদের থেকে কবুল করুন। নিশ্চয়ই আপনি সর্বশ্রোতা, সর্বজ্ঞ।',
+      translationBn:
+          'হে আমাদের রব, আমাদের থেকে কবুল করুন। নিশ্চয়ই আপনি সর্বশ্রোতা, সর্বজ্ঞ।',
       situations: [DuahSituation.all],
       source: 'Qur\'an 2:127',
     ),
@@ -225,7 +228,8 @@ class PowerfulDuahData {
       pronunciation: 'Rabbanā afrigh ʿalaynā ṣabran wa tawaffanā muslimīn',
       pronunciationBn: 'রব্বানা আফরিগ আলাইনা সাবরান ওয়া তাওয়াফফানা মুসলিমিন',
       translation: 'Our Lord, pour upon us patience and let us die as Muslims.',
-      translationBn: 'হে আমাদের রব, আমাদের উপর ধৈর্য বর্ষণ করুন এবং মুসলিম অবস্থায় আমাদের মৃত্যু দিন।',
+      translationBn:
+          'হে আমাদের রব, আমাদের উপর ধৈর্য বর্ষণ করুন এবং মুসলিম অবস্থায় আমাদের মৃত্যু দিন।',
       situations: [DuahSituation.all, DuahSituation.distress],
       source: 'Qur\'an 7:126',
     ),
@@ -272,7 +276,8 @@ class PowerfulDuahData {
       pronunciationBn: 'হাসবুনাল্লাহু ওয়া নিইমাল ওয়াকিল',
       translation:
           'Allah is sufficient for us, and He is the best disposer of affairs.',
-      translationBn: 'আল্লাহই আমাদের জন্য যথেষ্ট, আর তিনিই সর্বোত্তম কর্মবিধায়ক।',
+      translationBn:
+          'আল্লাহই আমাদের জন্য যথেষ্ট, আর তিনিই সর্বোত্তম কর্মবিধায়ক।',
       situations: [DuahSituation.all, DuahSituation.protection],
       source: 'Qur\'an 3:173',
     ),
@@ -283,7 +288,8 @@ class PowerfulDuahData {
       arabic:
           'لَا إِلٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',
       pronunciation: 'Lā ilāha illā anta subḥānaka innī kuntu minaẓ-ẓālimīn',
-      pronunciationBn: 'লা ইলাহা ইল্লা আনতা সুবহানাকা ইন্নি কুনতু মিনায-যালিমিন',
+      pronunciationBn:
+          'লা ইলাহা ইল্লা আনতা সুবহানাকা ইন্নি কুনতু মিনায-যালিমিন',
       translation:
           'There is no god except You. Glory be to You. Indeed, I was among the wrongdoers.',
       translationBn:

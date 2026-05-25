@@ -13,7 +13,10 @@ class AppPageRoute<T> extends MaterialPageRoute<T> {
     Animation<double> secondaryAnimation,
     Widget child,
   ) {
-    final curve = CurvedAnimation(parent: animation, curve: Curves.easeOutCubic);
+    final curve = CurvedAnimation(
+      parent: animation,
+      curve: Curves.easeOutCubic,
+    );
 
     return SlideTransition(
       position: Tween<Offset>(

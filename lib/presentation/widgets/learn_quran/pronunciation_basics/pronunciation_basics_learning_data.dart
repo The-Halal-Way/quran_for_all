@@ -20,8 +20,10 @@ class PronunciationContrastGuide {
   final String _coachTip;
 
   String get pair => LearnQuranTextLocalizer.translateRaw(_pair);
-  String get lightExample => LearnQuranTextLocalizer.translateRaw(_lightExample);
-  String get heavyExample => LearnQuranTextLocalizer.translateRaw(_heavyExample);
+  String get lightExample =>
+      LearnQuranTextLocalizer.translateRaw(_lightExample);
+  String get heavyExample =>
+      LearnQuranTextLocalizer.translateRaw(_heavyExample);
   String get keyDifference =>
       LearnQuranTextLocalizer.translateRaw(_keyDifference);
   String get coachTip => LearnQuranTextLocalizer.translateRaw(_coachTip);

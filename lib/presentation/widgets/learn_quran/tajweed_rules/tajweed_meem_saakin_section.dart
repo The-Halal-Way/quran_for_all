@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../pronunciation_button.dart';
@@ -58,9 +59,9 @@ class _MeemRuleCard extends StatelessWidget {
         children: [
           Text(
             item.rule,
-            style: Theme.of(context).textTheme.titleSmall?.copyWith(
+            style: AppTheme.text(context).titleSmall.copyWith(
               color: colorScheme.primary,
-              fontWeight: FontWeight.w800,
+              fontWeight: AppTheme.weightExtraBold,
             ),
           ),
           const SizedBox(height: 6),
@@ -104,13 +105,13 @@ class _Line extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: Theme.of(context).textTheme.bodySmall,
+        style: AppTheme.text(context).bodySmall,
         children: [
           TextSpan(
             text: '$label: ',
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).labelMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           TextSpan(text: value),
         ],

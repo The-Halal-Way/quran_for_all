@@ -1,4 +1,5 @@
 part of '../../../../views/dashboard/hadith/hadith_forty_short_view.dart';
+
 class _ShortHadithPage extends StatelessWidget {
   final ShortHadith hadith;
   final bool isBangla, isDark;
@@ -72,6 +73,8 @@ class _MemorizationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
@@ -141,11 +144,8 @@ class _MemorizationCard extends StatelessWidget {
                         const SizedBox(width: 4),
                         Text(
                           'MEMORIZE',
-                          style: GoogleFonts.manrope(
-                            fontSize: 10,
-                            fontWeight: FontWeight.w700,
+                          style: text.hadithShortMemorizeBadge.copyWith(
                             color: MyColors.tertiaryLight,
-                            letterSpacing: 1.2,
                           ),
                         ),
                       ],
@@ -160,11 +160,8 @@ class _MemorizationCard extends StatelessWidget {
                   arabic,
                   textAlign: TextAlign.center,
                   textDirection: ui.TextDirection.rtl,
-                  style: GoogleFonts.amiri(
-                    fontSize: 30,
-                    height: 1.8,
+                  style: text.hadithShortArabicShowcase.copyWith(
                     color: Colors.white.withOpacity(0.97),
-                    fontWeight: FontWeight.bold,
                   ),
                 ),
 
@@ -210,6 +207,8 @@ class _HeadlineCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
       decoration: BoxDecoration(
@@ -236,13 +235,7 @@ class _HeadlineCard extends StatelessWidget {
           Expanded(
             child: Text(
               headline,
-              style: GoogleFonts.sora(
-                fontSize: 16,
-                fontWeight: FontWeight.w700,
-                color: textMain,
-                height: 1.4,
-                letterSpacing: -0.2,
-              ),
+              style: text.hadithShortHeadline.copyWith(color: textMain),
             ),
           ),
         ],
@@ -273,12 +266,13 @@ class _LessonsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final appText = AppTheme.text(context);
+
     return Container(
       padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
       decoration: BoxDecoration(
         color: cardBg,
         borderRadius: BorderRadius.circular(18),
-       
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -303,11 +297,8 @@ class _LessonsCard extends StatelessWidget {
                     const SizedBox(width: 4),
                     Text(
                       isBangla ? 'শিক্ষা' : 'LESSONS',
-                      style: GoogleFonts.manrope(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w700,
+                      style: appText.hadithShortLessonLabel.copyWith(
                         color: MyColors.tertiary,
-                        letterSpacing: 0.8,
                       ),
                     ),
                   ],
@@ -339,9 +330,7 @@ class _LessonsCard extends StatelessWidget {
                     alignment: Alignment.center,
                     child: Text(
                       '${idx + 1}',
-                      style: GoogleFonts.manrope(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w800,
+                      style: appText.hadithShortLessonIndex.copyWith(
                         color: _bulletColor(idx),
                       ),
                     ),
@@ -350,11 +339,9 @@ class _LessonsCard extends StatelessWidget {
                   Expanded(
                     child: Text(
                       text,
-                      style: GoogleFonts.manrope(
-                        fontSize: isBangla ? 14.5 : 13.5,
-                        height: isBangla ? 1.75 : 1.6,
-                        color: textSub,
-                      ),
+                      style: appText
+                          .hadithShortLessonBody(isBangla: isBangla)
+                          .copyWith(color: textSub),
                     ),
                   ),
                 ],
@@ -381,4 +368,3 @@ class _LessonsCard extends StatelessWidget {
 // ─────────────────────────────────────────────────────────────────────────────
 // JUMP BOTTOM SHEET
 // ─────────────────────────────────────────────────────────────────────────────
-

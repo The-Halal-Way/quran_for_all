@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 
 import 'daily_duah_data.dart';
@@ -21,6 +22,7 @@ class DuahAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final text = AppTheme.text(context);
     final colorScheme = theme.colorScheme;
     final cardBg = colorScheme.surface.withValues(alpha: 0.9);
     final borderC = colorScheme.outline.withValues(alpha: 0.28);
@@ -60,14 +62,11 @@ class DuahAppBar extends StatelessWidget {
         children: [
           Text(
             context.l10n.duahDailyTitle,
-            style: theme.textTheme.titleMedium?.copyWith(
-              color: Colors.white,
-              fontWeight: FontWeight.w700,
-            ),
+            style: text.duahAppBarTitle.copyWith(color: Colors.white),
           ),
           Text(
             context.l10n.duahDailySubtitle,
-            style: theme.textTheme.bodySmall?.copyWith(
+            style: text.duahAppBarSubtitle.copyWith(
               color: Colors.white.withValues(alpha: 0.78),
             ),
           ),
@@ -140,7 +139,7 @@ class LevelTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    final text = AppTheme.text(context);
 
     return GestureDetector(
       onTap: onTap,
@@ -160,13 +159,15 @@ class LevelTab extends StatelessWidget {
         child: Text(
           _label(context),
           textAlign: TextAlign.center,
-          style: theme.textTheme.labelMedium?.copyWith(
-            color: isSelected
-                ? _activeColor
-                : (isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288)),
-            fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
-            fontSize: 11.5,
-          ),
+          style: text
+              .duahLevelTab(isSelected: isSelected)
+              .copyWith(
+                color: isSelected
+                    ? _activeColor
+                    : (isDark
+                          ? const Color(0xFF7E57C2)
+                          : const Color(0xFF7A7288)),
+              ),
         ),
       ),
     );
@@ -180,6 +181,7 @@ class _LanguageToggleAction extends StatelessWidget {
   Widget build(BuildContext context) {
     final settingsVm = context.watch<SettingsViewModel>();
     final current = settingsVm.settings.language;
+    final text = AppTheme.text(context);
 
     return PopupMenuButton<AppLanguage>(
       tooltip: context.l10n.duahLanguageToggleTooltip,
@@ -190,22 +192,18 @@ class _LanguageToggleAction extends StatelessWidget {
           value: AppLanguage.english,
           child: Text(
             context.appLanguageLabel(AppLanguage.english),
-            style: TextStyle(
-              fontWeight: current == AppLanguage.english
-                  ? FontWeight.w700
-                  : FontWeight.w500,
-            ),
+            style: current == AppLanguage.english
+                ? text.labelMedium
+                : text.bodyMedium,
           ),
         ),
         PopupMenuItem<AppLanguage>(
           value: AppLanguage.bangla,
           child: Text(
             context.appLanguageLabel(AppLanguage.bangla),
-            style: TextStyle(
-              fontWeight: current == AppLanguage.bangla
-                  ? FontWeight.w700
-                  : FontWeight.w500,
-            ),
+            style: current == AppLanguage.bangla
+                ? text.labelMedium
+                : text.bodyMedium,
           ),
         ),
       ],

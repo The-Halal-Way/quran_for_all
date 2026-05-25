@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
@@ -21,6 +21,7 @@ class PrayerNowCard extends StatelessWidget {
     final subColor = isDark
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
+    final text = AppTheme.text(context);
 
     return PrayerCardShell(
       gradient: LinearGradient(
@@ -53,20 +54,16 @@ class PrayerNowCard extends StatelessWidget {
               children: [
                 Text(
                   content.now.title,
-                  style: GoogleFonts.sora(
+                  style: text.prayerCardTitle.copyWith(
                     color: textColor,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w800,
                     height: 1.25,
                   ),
                 ),
                 const SizedBox(height: AppSpacing.xs),
                 Text(
                   content.now.body,
-                  style: GoogleFonts.manrope(
+                  style: text.prayerCardBody.copyWith(
                     color: subColor,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w500,
                     height: 1.5,
                   ),
                 ),
@@ -171,6 +168,7 @@ class PrayerFiqhNote extends StatelessWidget {
     final subColor = isDark
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
+    final text = AppTheme.text(context);
 
     return PrayerCardShell(
       margin: const EdgeInsets.only(top: AppSpacing.xl),
@@ -195,22 +193,15 @@ class PrayerFiqhNote extends StatelessWidget {
               children: [
                 Text(
                   context.l10n.prayerViewFiqhNoteTitle,
-                  style: GoogleFonts.sora(
+                  style: text.prayerStepIndex.copyWith(
                     color: textColor,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w800,
                     height: 1.25,
                   ),
                 ),
                 const SizedBox(height: AppSpacing.xs),
                 Text(
                   context.l10n.prayerViewFiqhNoteBody,
-                  style: GoogleFonts.manrope(
-                    color: subColor,
-                    fontSize: 12.5,
-                    fontWeight: FontWeight.w500,
-                    height: 1.45,
-                  ),
+                  style: text.bodySmall.copyWith(color: subColor, height: 1.45),
                 ),
               ],
             ),
@@ -250,6 +241,7 @@ class PrayerStateCard extends StatelessWidget {
     final subColor = isDark
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
+    final text = AppTheme.text(context);
 
     return PrayerCardShell(
       child: isLoading
@@ -276,20 +268,16 @@ class PrayerStateCard extends StatelessWidget {
                         children: [
                           Text(
                             title,
-                            style: GoogleFonts.sora(
+                            style: text.prayerCardTitle.copyWith(
                               color: textColor,
-                              fontSize: 15,
-                              fontWeight: FontWeight.w800,
                             ),
                           ),
                           const SizedBox(height: AppSpacing.xs),
                           Text(
                             body,
-                            style: GoogleFonts.manrope(
+                            style: text.bodySmall.copyWith(
                               color: subColor,
-                              fontSize: 12.5,
                               height: 1.45,
-                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ],
@@ -331,6 +319,7 @@ class _GuidanceLine extends StatelessWidget {
     final textColor = isDark
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
+    final text = AppTheme.text(context);
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -347,11 +336,7 @@ class _GuidanceLine extends StatelessWidget {
               : Center(
                   child: Text(
                     marker!,
-                    style: GoogleFonts.sora(
-                      color: accent,
-                      fontSize: 12,
-                      fontWeight: FontWeight.w900,
-                    ),
+                    style: text.prayerStepIndex.copyWith(color: accent),
                   ),
                 ),
         ),
@@ -359,12 +344,7 @@ class _GuidanceLine extends StatelessWidget {
         Expanded(
           child: Text(
             body,
-            style: GoogleFonts.manrope(
-              color: textColor,
-              fontSize: 13,
-              fontWeight: FontWeight.w600,
-              height: 1.5,
-            ),
+            style: text.prayerCardBodyEmphasis.copyWith(color: textColor),
           ),
         ),
       ],
@@ -386,6 +366,7 @@ class _PrayerStepLine extends StatelessWidget {
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
     final accent = index.isEven ? MyColors.secondary : MyColors.tertiary;
+    final text = AppTheme.text(context);
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -401,11 +382,7 @@ class _PrayerStepLine extends StatelessWidget {
           child: Center(
             child: Text(
               '${index + 1}',
-              style: GoogleFonts.sora(
-                color: accent,
-                fontSize: 13,
-                fontWeight: FontWeight.w900,
-              ),
+              style: text.prayerStepIndex.copyWith(color: accent),
             ),
           ),
         ),
@@ -416,22 +393,15 @@ class _PrayerStepLine extends StatelessWidget {
             children: [
               Text(
                 step.title,
-                style: GoogleFonts.sora(
+                style: text.prayerTimelineNameActive.copyWith(
                   color: textColor,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w800,
                   height: 1.25,
                 ),
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
                 step.body,
-                style: GoogleFonts.manrope(
-                  color: subColor,
-                  fontSize: 12.5,
-                  fontWeight: FontWeight.w500,
-                  height: 1.5,
-                ),
+                style: text.bodySmall.copyWith(color: subColor, height: 1.5),
               ),
             ],
           ),

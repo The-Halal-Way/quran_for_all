@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassLoadingState extends StatelessWidget {
   const CompassLoadingState({
@@ -14,6 +15,8 @@ class CompassLoadingState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -33,12 +36,10 @@ class CompassLoadingState extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text(
               error.isEmpty ? 'Initializing compass…' : error,
-              style: TextStyle(
-                fontFamily: 'Manrope',
+              style: text.bodyMedium.copyWith(
                 color: isDark
                     ? const Color(0xFFB39DDB)
                     : const Color(0xFF4C425C),
-                fontSize: 14,
               ),
               textAlign: TextAlign.center,
             ),

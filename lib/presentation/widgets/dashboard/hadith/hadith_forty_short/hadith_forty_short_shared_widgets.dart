@@ -1,4 +1,5 @@
 part of '../../../../views/dashboard/hadith/hadith_forty_short_view.dart';
+
 class _DotRow extends StatelessWidget {
   final int total, current;
   final bool isDark;
@@ -89,6 +90,8 @@ class _LangOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
@@ -98,9 +101,7 @@ class _LangOption extends StatelessWidget {
       ),
       child: Text(
         label,
-        style: GoogleFonts.manrope(
-          fontSize: 11,
-          fontWeight: FontWeight.w700,
+        style: text.hadithPillOption.copyWith(
           color: active ? Colors.white : Colors.white.withOpacity(0.82),
         ),
       ),
@@ -128,6 +129,7 @@ class _BarNavBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
     final color = enabled ? MyColors.tertiary : textHint;
     return GestureDetector(
       onTap: onTap,
@@ -136,14 +138,7 @@ class _BarNavBtn extends StatelessWidget {
         children: [
           if (!isRight) Icon(icon, size: 15, color: color),
           if (!isRight) const SizedBox(width: 5),
-          Text(
-            label,
-            style: GoogleFonts.manrope(
-              fontSize: 12,
-              fontWeight: FontWeight.w700,
-              color: color,
-            ),
-          ),
+          Text(label, style: text.hadithBottomNavLabel.copyWith(color: color)),
           if (isRight) const SizedBox(width: 5),
           if (isRight) Icon(icon, size: 15, color: color),
         ],

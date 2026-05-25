@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassTopBar extends StatelessWidget {
   const CompassTopBar({
@@ -12,6 +13,7 @@ class CompassTopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
     final textPrimary = isDark
         ? const Color(0xFFEDE7F6)
         : const Color(0xFF120B24);
@@ -33,13 +35,7 @@ class CompassTopBar extends StatelessWidget {
               children: [
                 Text(
                   'Compass',
-                  style: TextStyle(
-                    fontFamily: 'Sora',
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    color: textPrimary,
-                    letterSpacing: -0.4,
-                  ),
+                  style: text.compassTitle.copyWith(color: textPrimary),
                 ),
                 const SizedBox(height: 2),
                 Row(
@@ -58,12 +54,8 @@ class CompassTopBar extends StatelessWidget {
                         directionLabel,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontFamily: 'Manrope',
-                          fontSize: 12,
-                          fontWeight: FontWeight.w600,
+                        style: text.compassSubtitle.copyWith(
                           color: textSecondary,
-                          letterSpacing: 0.2,
                         ),
                       ),
                     ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/enums/app_language.dart';
 import '../../../../core/localization/l10n_extensions.dart';
@@ -145,8 +146,8 @@ class BookmarkListTile extends StatelessWidget {
                                 _title(context),
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
-                                style: Theme.of(context).textTheme.titleMedium
-                                    ?.copyWith(fontWeight: FontWeight.w700),
+                                style: AppTheme.text(context).titleMedium
+                                    .copyWith(fontWeight: AppTheme.weightBold),
                               ),
                               Chip(
                                 visualDensity: VisualDensity.compact,
@@ -163,8 +164,10 @@ class BookmarkListTile extends StatelessWidget {
                                   _title(context),
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
-                                  style: Theme.of(context).textTheme.titleMedium
-                                      ?.copyWith(fontWeight: FontWeight.w700),
+                                  style: AppTheme.text(context).titleMedium
+                                      .copyWith(
+                                        fontWeight: AppTheme.weightBold,
+                                      ),
                                 ),
                               ),
                               const SizedBox(width: AppSpacing.sm),
@@ -180,12 +183,11 @@ class BookmarkListTile extends StatelessWidget {
                           _subtitle(context),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.bodyMedium
-                              ?.copyWith(
-                                color: colorScheme.onSurface.withValues(
-                                  alpha: 0.76,
-                                ),
-                              ),
+                          style: AppTheme.text(context).bodyMedium.copyWith(
+                            color: colorScheme.onSurface.withValues(
+                              alpha: 0.76,
+                            ),
+                          ),
                         ),
                       ],
                     ),

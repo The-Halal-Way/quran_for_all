@@ -77,7 +77,8 @@ class _LearnQuranViewState extends State<LearnQuranView> {
                             // next lesson card
                             LearnNextLessonCard(
                               nextLesson: viewModel.nextLesson,
-                              onStart: () => _openNextLesson(context, viewModel),
+                              onStart: () =>
+                                  _openNextLesson(context, viewModel),
                             ),
                             if (viewModel.errorMessageKey != null) ...[
                               const SizedBox(height: AppSpacing.sm + 2),

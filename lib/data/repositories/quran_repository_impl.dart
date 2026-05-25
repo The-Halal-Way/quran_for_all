@@ -332,7 +332,9 @@ class QuranRepositoryImpl implements QuranRepository {
           continue;
         }
 
-        final tafsir = AyahModel.normalizeTafsir((ayah['text'] as String?) ?? '');
+        final tafsir = AyahModel.normalizeTafsir(
+          (ayah['text'] as String?) ?? '',
+        );
         if (tafsir.isNotEmpty) {
           tafsirByAyahId[ayahId] = tafsir;
         }

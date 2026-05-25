@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import 'makharij_learning_data.dart';
@@ -56,9 +57,9 @@ class _DrillCard extends StatelessWidget {
         children: [
           Text(
             drill.title,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+            ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 6),
           for (var i = 0; i < drill.steps.length; i++)
@@ -67,15 +68,12 @@ class _DrillCard extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    '${i + 1}.',
-                    style: Theme.of(context).textTheme.labelMedium,
-                  ),
+                  Text('${i + 1}.', style: AppTheme.text(context).labelMedium),
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
                       drill.steps[i],
-                      style: Theme.of(context).textTheme.bodySmall,
+                      style: AppTheme.text(context).bodySmall,
                     ),
                   ),
                 ],
@@ -84,7 +82,7 @@ class _DrillCard extends StatelessWidget {
           const SizedBox(height: 3),
           Text(
             '${context.learnText('Target')}: ${drill.target}',
-            style: Theme.of(context).textTheme.labelMedium?.copyWith(
+            style: AppTheme.text(context).labelMedium.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.78),
             ),
           ),

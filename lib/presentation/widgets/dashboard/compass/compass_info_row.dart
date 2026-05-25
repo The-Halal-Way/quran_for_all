@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassInfoRow extends StatelessWidget {
   const CompassInfoRow({
@@ -120,6 +121,7 @@ class _CompassInfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
     final cardBg = isDark ? const Color(0xFF120A2B) : const Color(0xFFFFFFFF);
     final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
     final labelC = isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288);
@@ -153,10 +155,7 @@ class _CompassInfoCard extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 value,
-                style: TextStyle(
-                  fontFamily: 'Sora',
-                  fontSize: 17,
-                  fontWeight: FontWeight.w700,
+                style: text.compassInfoValue.copyWith(
                   color: valueC,
                   letterSpacing: -0.3,
                 ),
@@ -168,10 +167,7 @@ class _CompassInfoCard extends StatelessWidget {
             label,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontFamily: 'Manrope',
-              fontSize: 10,
-              fontWeight: FontWeight.w600,
+            style: text.compassInfoLabel.copyWith(
               color: labelC,
               letterSpacing: 0.3,
             ),
@@ -196,10 +192,7 @@ class _CompassInfoCard extends StatelessWidget {
                     isOnTarget ? 'Facing Mecca!' : 'Rotate to align',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 9,
-                      fontWeight: FontWeight.w700,
+                    style: text.compassInfoAction.copyWith(
                       color: isOnTarget
                           ? const Color(0xFF00BFA5)
                           : const Color(0xFF7E57C2),

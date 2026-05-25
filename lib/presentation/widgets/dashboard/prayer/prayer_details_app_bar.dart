@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 
@@ -18,6 +18,8 @@ class PrayerDetailsAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return SliverAppBar(
       pinned: true,
       backgroundColor: Colors.transparent,
@@ -48,10 +50,8 @@ class PrayerDetailsAppBar extends StatelessWidget {
             context.l10n.prayerViewTitle,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.sora(
+            style: text.prayerAppBarTitle.copyWith(
               color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.w800,
               height: 1.2,
             ),
           ),
@@ -59,10 +59,8 @@ class PrayerDetailsAppBar extends StatelessWidget {
             context.l10n.prayerViewAppBarSubtitle,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.manrope(
+            style: text.prayerAppBarSubtitle.copyWith(
               color: Colors.white.withValues(alpha: 0.76),
-              fontSize: 10.5,
-              fontWeight: FontWeight.w600,
               height: 1.2,
             ),
           ),
@@ -102,6 +100,7 @@ class _LanguageToggleAction extends StatelessWidget {
   Widget build(BuildContext context) {
     final settingsVm = context.watch<SettingsViewModel>();
     final current = settingsVm.settings.language;
+    final text = AppTheme.text(context);
 
     return PopupMenuButton<AppLanguage>(
       tooltip: context.l10n.prayerViewLanguageTooltip,
@@ -112,22 +111,18 @@ class _LanguageToggleAction extends StatelessWidget {
           value: AppLanguage.english,
           child: Text(
             context.appLanguageLabel(AppLanguage.english),
-            style: TextStyle(
-              fontWeight: current == AppLanguage.english
-                  ? FontWeight.w700
-                  : FontWeight.w500,
-            ),
+            style: current == AppLanguage.english
+                ? text.labelMedium
+                : text.bodyMedium,
           ),
         ),
         PopupMenuItem<AppLanguage>(
           value: AppLanguage.bangla,
           child: Text(
             context.appLanguageLabel(AppLanguage.bangla),
-            style: TextStyle(
-              fontWeight: current == AppLanguage.bangla
-                  ? FontWeight.w700
-                  : FontWeight.w500,
-            ),
+            style: current == AppLanguage.bangla
+                ? text.labelMedium
+                : text.bodyMedium,
           ),
         ),
       ],

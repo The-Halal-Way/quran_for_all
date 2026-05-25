@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 
@@ -32,7 +33,7 @@ class ReadQuranView extends StatelessWidget {
   Widget build(BuildContext context) {
     final viewModel = context.watch<ReadQuranViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
-    final textTheme = Theme.of(context).textTheme;
+    final textTheme = AppTheme.text(context);
     final responsive = AppResponsive.of(context);
     final isBangla = settings.language == AppLanguage.bangla;
     final banglaPreview = viewModel.lastReadAyah?.translationBn;
@@ -48,8 +49,8 @@ class ReadQuranView extends StatelessWidget {
           children: [
             Text(
               context.readQuranText('Read Quran'),
-              style: textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.w700,
+              style: textTheme.titleLarge.copyWith(
+                fontWeight: AppTheme.weightBold,
               ),
             ),
             Text(

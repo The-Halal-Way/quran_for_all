@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import 'short_surah_learning_data.dart';
@@ -68,9 +69,9 @@ class _CycleCard extends StatelessWidget {
             backgroundColor: colorScheme.primary.withValues(alpha: 0.2),
             child: Text(
               '$index',
-              style: Theme.of(context).textTheme.labelMedium?.copyWith(
+              style: AppTheme.text(context).labelMedium.copyWith(
                 color: colorScheme.primary,
-                fontWeight: FontWeight.w800,
+                fontWeight: AppTheme.weightExtraBold,
               ),
             ),
           ),
@@ -81,24 +82,24 @@ class _CycleCard extends StatelessWidget {
               children: [
                 Text(
                   item.phase,
-                  style: Theme.of(
+                  style: AppTheme.text(
                     context,
-                  ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+                  ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
                 ),
                 const SizedBox(height: 4),
-                Text(item.action, style: Theme.of(context).textTheme.bodySmall),
+                Text(item.action, style: AppTheme.text(context).bodySmall),
                 const SizedBox(height: 4),
                 Text(
                   '${context.learnText('Duration')}: ${item.duration}',
-                  style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                  style: AppTheme.text(context).labelMedium.copyWith(
                     color: colorScheme.primary,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: AppTheme.weightBold,
                   ),
                 ),
                 const SizedBox(height: 3),
                 Text(
                   '${context.learnText('Goal')}: ${item.goal}',
-                  style: Theme.of(context).textTheme.bodySmall,
+                  style: AppTheme.text(context).bodySmall,
                 ),
               ],
             ),

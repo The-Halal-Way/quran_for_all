@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import 'pronunciation_basics_learning_data.dart';
@@ -62,9 +63,9 @@ class _PostureCard extends StatelessWidget {
               Expanded(
                 child: Text(
                   cue.focus,
-                  style: Theme.of(
+                  style: AppTheme.text(
                     context,
-                  ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+                  ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
                 ),
               ),
             ],
@@ -72,20 +73,20 @@ class _PostureCard extends StatelessWidget {
           const SizedBox(height: 5),
           Text(
             '${context.learnText('Indicator')}: ${cue.indicator}',
-            style: Theme.of(context).textTheme.labelMedium?.copyWith(
+            style: AppTheme.text(context).labelMedium.copyWith(
               color: colorScheme.primary,
-              fontWeight: FontWeight.w700,
+              fontWeight: AppTheme.weightBold,
             ),
           ),
           const SizedBox(height: 4),
           Text(
             '${context.learnText('Do')}: ${cue.doThis}',
-            style: Theme.of(context).textTheme.bodySmall,
+            style: AppTheme.text(context).bodySmall,
           ),
           const SizedBox(height: 3),
           Text(
             '${context.learnText('Avoid')}: ${cue.avoidThis}',
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+            style: AppTheme.text(context).bodySmall.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.75),
             ),
           ),

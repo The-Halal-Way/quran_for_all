@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:lottie/lottie.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_images.dart';
@@ -122,21 +123,19 @@ class ReadQuranTopBanner extends StatelessWidget {
                         children: [
                           Text(
                             context.readQuranText('Read. Reflect. Remember.'),
-                            style: Theme.of(context).textTheme.titleLarge
-                                ?.copyWith(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w800,
-                                ),
+                            style: AppTheme.text(context).titleLarge.copyWith(
+                              color: Colors.white,
+                              fontWeight: AppTheme.weightExtraBold,
+                            ),
                           ),
                           const SizedBox(height: AppSpacing.xs),
                           Text(
                             context.readQuranText(
                               'Offline Quran with Bangla and English support.',
                             ),
-                            style: Theme.of(context).textTheme.bodyMedium
-                                ?.copyWith(
-                                  color: Colors.white.withValues(alpha: 0.90),
-                                ),
+                            style: AppTheme.text(context).bodyMedium.copyWith(
+                              color: Colors.white.withValues(alpha: 0.90),
+                            ),
                           ),
                         ],
                       ),

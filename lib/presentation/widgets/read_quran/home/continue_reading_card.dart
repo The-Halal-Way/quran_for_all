@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
@@ -71,9 +72,9 @@ class ContinueReadingCard extends StatelessWidget {
         children: [
           Text(
             context.readQuranText('Continue Reading'),
-            style: Theme.of(context).textTheme.labelLarge?.copyWith(
+            style: AppTheme.text(context).labelLarge.copyWith(
               color: colorScheme.primary,
-              fontWeight: FontWeight.w800,
+              fontWeight: AppTheme.weightExtraBold,
               letterSpacing: 0.1,
             ),
           ),
@@ -82,16 +83,16 @@ class ContinueReadingCard extends StatelessWidget {
             localizedTitle,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).titleMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: AppSpacing.sm - 2),
           Text(
             '${surah.nameArabic} · ${context.readQuranText('Ayah')} $ayahNumber',
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+            style: AppTheme.text(context).bodyMedium.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.72),
             ),
           ),
@@ -101,7 +102,7 @@ class ContinueReadingCard extends StatelessWidget {
           //     ayahPreview!,
           //     maxLines: 2,
           //     overflow: TextOverflow.ellipsis,
-          //     style: Theme.of(context).textTheme.bodySmall?.copyWith(
+          //     style: AppTheme.text(context).bodySmall.copyWith(
           //       color: colorScheme.onSurface.withValues(alpha: 0.72),
           //     ),
           //   ),

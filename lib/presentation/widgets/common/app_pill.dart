@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -100,10 +101,9 @@ class AppPill extends StatelessWidget {
             child: Text(
               label,
               overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                color: fg,
-                fontWeight: FontWeight.w700,
-              ),
+              style: AppTheme.text(
+                context,
+              ).labelSmall.copyWith(color: fg, fontWeight: AppTheme.weightBold),
             ),
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -34,9 +35,9 @@ class SettingsThemeCard extends StatelessWidget {
               children: [
                 Text(
                   context.readQuranText('Theme'),
-                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w700,
-                  ),
+                  style: AppTheme.text(
+                    context,
+                  ).titleMedium.copyWith(fontWeight: AppTheme.weightBold),
                 ),
                 const SizedBox(height: AppSpacing.md),
                 SingleChildScrollView(
@@ -116,9 +117,9 @@ class _SectionTitle extends StatelessWidget {
           const SizedBox(width: AppSpacing.sm + 2),
           Text(
             title,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).titleMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
         ],
       ),

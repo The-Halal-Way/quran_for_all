@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/my_colors.dart';
@@ -29,7 +30,12 @@ class LearnLessonTile extends StatelessWidget {
 
     return Card(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(AppSpacing.lg - 2, AppSpacing.md, AppSpacing.lg - 2, AppSpacing.md),
+        padding: const EdgeInsets.fromLTRB(
+          AppSpacing.lg - 2,
+          AppSpacing.md,
+          AppSpacing.lg - 2,
+          AppSpacing.md,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -48,13 +54,14 @@ class LearnLessonTile extends StatelessWidget {
                       children: [
                         Text(
                           context.learnText(lesson.title),
-                          style: Theme.of(context).textTheme.titleMedium
-                              ?.copyWith(fontWeight: FontWeight.w700),
+                          style: AppTheme.text(context).titleMedium.copyWith(
+                            fontWeight: AppTheme.weightBold,
+                          ),
                         ),
                         const SizedBox(height: AppSpacing.xs),
                         Text(
                           context.learnText(lesson.objective),
-                          style: Theme.of(context).textTheme.bodyMedium,
+                          style: AppTheme.text(context).bodyMedium,
                         ),
                       ],
                     ),
@@ -84,7 +91,7 @@ class LearnLessonTile extends StatelessWidget {
               ),
               child: Text(
                 context.learnText(lesson.practicePrompt),
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                style: AppTheme.text(context).bodySmall.copyWith(
                   color: colorScheme.onSurface.withValues(alpha: 0.8),
                 ),
               ),
@@ -95,7 +102,9 @@ class LearnLessonTile extends StatelessWidget {
               runSpacing: AppSpacing.xs,
               children: [
                 AppPill.surface(
-                  label: l10n.learnLessonDurationMinutes(lesson.durationMinutes),
+                  label: l10n.learnLessonDurationMinutes(
+                    lesson.durationMinutes,
+                  ),
                   icon: Icons.timer,
                 ),
                 if (lesson.hasAudioSample)

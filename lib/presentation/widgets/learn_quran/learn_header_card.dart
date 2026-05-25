@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:lottie/lottie.dart';
 import 'package:quran_for_all/core/theme/my_images.dart';
 
@@ -28,7 +29,7 @@ class LearnHeaderCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
+    final textTheme = AppTheme.text(context);
     final l10n = context.l10n;
     final responsive = AppResponsive.of(context);
     final headingSize = responsive.pick(mobile: 30, tablet: 26, desktop: 31);
@@ -76,9 +77,9 @@ class LearnHeaderCard extends StatelessWidget {
               // title
               Text(
                 l10n.learnHeaderTitle,
-                style: textTheme.headlineMedium?.copyWith(
+                style: textTheme.headlineMedium.copyWith(
                   color: Colors.white,
-                  fontSize: headingSize,
+                  fontSize: AppTheme.scaledFontSize(context, headingSize),
                   height: 1.12,
                 ),
               ),
@@ -86,7 +87,7 @@ class LearnHeaderCard extends StatelessWidget {
               // subtitle
               Text(
                 l10n.learnHeaderSubtitle,
-                style: textTheme.bodyMedium?.copyWith(
+                style: textTheme.bodyMedium.copyWith(
                   color: Colors.white.withValues(alpha: 0.9),
                 ),
               ),
@@ -128,9 +129,9 @@ class LearnHeaderCard extends StatelessWidget {
               // progress text title
               Text(
                 l10n.learnHeaderLessonProgress(completedLessons, totalLessons),
-                style: textTheme.labelLarge?.copyWith(
+                style: textTheme.labelLarge.copyWith(
                   color: Colors.white,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: AppTheme.weightBold,
                 ),
               ),
             ],
@@ -174,16 +175,16 @@ class _MetricPill extends StatelessWidget {
               children: [
                 Text(
                   label,
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  style: AppTheme.text(context).bodySmall.copyWith(
                     color: Colors.white.withValues(alpha: 0.85),
                   ),
                 ),
                 Text(
                   value,
                   overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                  style: AppTheme.text(context).labelLarge.copyWith(
                     color: Colors.white,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: AppTheme.weightBold,
                   ),
                 ),
               ],

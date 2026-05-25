@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
@@ -26,9 +26,9 @@ class PrayerTimelineCard extends StatelessWidget {
             if (index != items.length - 1)
               Divider(
                 height: AppSpacing.lg,
-                color: Theme.of(context).colorScheme.outline.withValues(
-                  alpha: 0.18,
-                ),
+                color: Theme.of(
+                  context,
+                ).colorScheme.outline.withValues(alpha: 0.18),
               ),
           ],
         ],
@@ -52,6 +52,7 @@ class _PrayerTimelineRow extends StatelessWidget {
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
     final active = item.isFocus || item.isNext;
+    final text = AppTheme.text(context);
 
     return Row(
       children: [
@@ -84,12 +85,11 @@ class _PrayerTimelineRow extends StatelessWidget {
                 item.name,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: GoogleFonts.sora(
-                  color: active ? textColor : hintColor,
-                  fontSize: 14,
-                  fontWeight: active ? FontWeight.w800 : FontWeight.w600,
-                  height: 1.2,
-                ),
+                style:
+                    (active
+                            ? text.prayerTimelineNameActive
+                            : text.prayerTimelineName)
+                        .copyWith(color: active ? textColor : hintColor),
               ),
               const SizedBox(height: 4),
               _StatusChip(item: item, accent: accent),
@@ -103,11 +103,11 @@ class _PrayerTimelineRow extends StatelessWidget {
             alignment: Alignment.centerRight,
             child: Text(
               item.time,
-              style: GoogleFonts.sora(
-                color: active ? accent : hintColor,
-                fontSize: 15,
-                fontWeight: active ? FontWeight.w800 : FontWeight.w600,
-              ),
+              style:
+                  (active
+                          ? text.prayerTimelineTimeActive
+                          : text.prayerTimelineTime)
+                      .copyWith(color: active ? accent : hintColor),
             ),
           ),
         ),
@@ -125,6 +125,7 @@ class _StatusChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final text = AppTheme.text(context);
     final label = item.isFocus
         ? context.l10n.prayerViewFocus
         : item.isNext
@@ -139,17 +140,14 @@ class _StatusChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2.5),
       decoration: BoxDecoration(
-        color: chipColor.withValues(alpha: item.isFocus || item.isNext ? 0.13 : 0.08),
+        color: chipColor.withValues(
+          alpha: item.isFocus || item.isNext ? 0.13 : 0.08,
+        ),
         borderRadius: BorderRadius.circular(AppRadius.full),
       ),
       child: Text(
         label,
-        style: GoogleFonts.manrope(
-          color: chipColor,
-          fontSize: 10.5,
-          fontWeight: FontWeight.w800,
-          height: 1.1,
-        ),
+        style: text.prayerStatusChip.copyWith(color: chipColor),
       ),
     );
   }

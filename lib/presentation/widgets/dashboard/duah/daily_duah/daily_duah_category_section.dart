@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import 'daily_duah_card.dart';
 import 'daily_duah_data.dart';
@@ -17,7 +18,7 @@ class CategorySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    final text = AppTheme.text(context);
 
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 4, 0, isLast ? 32 : 4),
@@ -31,36 +32,46 @@ class CategorySection extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(6),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF1E0A3C).withValues(alpha: isDark ? 0.6 : 0.08),
+                    color: const Color(
+                      0xFF1E0A3C,
+                    ).withValues(alpha: isDark ? 0.6 : 0.08),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Icon(
                     category.icon,
                     size: 16,
-                    color: isDark ? const Color(0xFFB39DDB) : const Color(0xFF1E0A3C),
+                    color: isDark
+                        ? const Color(0xFFB39DDB)
+                        : const Color(0xFF1E0A3C),
                   ),
                 ),
                 const SizedBox(width: 8),
                 Text(
                   category.label,
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    fontFamily: 'Sora',
-                    fontSize: 15,
-                    color: isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24),
+                  style: text.titleMedium.copyWith(
+                    color: isDark
+                        ? const Color(0xFFEDE7F6)
+                        : const Color(0xFF120B24),
                   ),
                 ),
                 const SizedBox(width: 8),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 7,
+                    vertical: 2,
+                  ),
                   decoration: BoxDecoration(
-                    color: isDark ? const Color(0xFF382E54) : const Color(0xFFEEE8FA),
+                    color: isDark
+                        ? const Color(0xFF382E54)
+                        : const Color(0xFFEEE8FA),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(
                     '${category.items.length}',
-                    style: theme.textTheme.labelSmall?.copyWith(
-                      color: isDark ? const Color(0xFFB39DDB) : const Color(0xFF4C425C),
-                      fontWeight: FontWeight.w700,
+                    style: text.duahSectionCount.copyWith(
+                      color: isDark
+                          ? const Color(0xFFB39DDB)
+                          : const Color(0xFF4C425C),
                     ),
                   ),
                 ),

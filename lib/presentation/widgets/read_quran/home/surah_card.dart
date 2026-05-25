@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 
@@ -28,7 +29,7 @@ class SurahCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final textTheme = Theme.of(context).textTheme;
+    final textTheme = AppTheme.text(context);
     final language = context.watch<SettingsViewModel>().settings.language;
     final localizedTitle = surah.localizedTitle(context, language);
     final responsive = AppResponsive.of(context);
@@ -70,9 +71,9 @@ class SurahCard extends StatelessWidget {
                     child: Center(
                       child: Text(
                         surah.id.toString(),
-                        style: textTheme.titleMedium?.copyWith(
+                        style: textTheme.titleMedium.copyWith(
                           color: MyColors.primary,
-                          fontWeight: FontWeight.w800,
+                          fontWeight: AppTheme.weightExtraBold,
                         ),
                       ),
                     ),
@@ -90,8 +91,8 @@ class SurahCard extends StatelessWidget {
                                 localizedTitle,
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
-                                style: textTheme.titleMedium?.copyWith(
-                                  fontWeight: FontWeight.w700,
+                                style: textTheme.titleMedium.copyWith(
+                                  fontWeight: AppTheme.weightBold,
                                 ),
                               ),
                             ),
@@ -110,7 +111,7 @@ class SurahCard extends StatelessWidget {
                           context.readQuranText(surah.nameTranslated),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: textTheme.bodySmall?.copyWith(
+                          style: textTheme.bodySmall.copyWith(
                             color: MyColors.textSecondary,
                           ),
                         ),

@@ -1,4 +1,5 @@
 part of '../../../views/dashboard/dashboard_view.dart';
+
 class _ContinueCard extends StatelessWidget {
   final String title, subtitle, detail, arabicSnippet;
   final List<Color> gradientColors;
@@ -21,6 +22,8 @@ class _ContinueCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -49,10 +52,8 @@ class _ContinueCard extends StatelessWidget {
               bottom: -8,
               child: Text(
                 arabicSnippet,
-                style: GoogleFonts.amiri(
-                  fontSize: 36,
+                style: text.dashboardWatermarkArabic.copyWith(
                   color: Colors.white.withOpacity(0.06),
-                  fontWeight: FontWeight.bold,
                 ),
                 textDirection: ui.TextDirection.rtl,
               ),
@@ -76,19 +77,14 @@ class _ContinueCard extends StatelessWidget {
                   const Spacer(),
                   Text(
                     title,
-                    style: GoogleFonts.manrope(
-                      fontSize: 10,
-                      fontWeight: FontWeight.w600,
+                    style: text.dashboardCardEyebrow.copyWith(
                       color: Colors.white.withOpacity(0.65),
-                      letterSpacing: 0.5,
                     ),
                   ),
                   const SizedBox(height: 2),
                   Text(
                     subtitle,
-                    style: GoogleFonts.sora(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w700,
+                    style: text.dashboardCardTitle.copyWith(
                       color: Colors.white,
                     ),
                     maxLines: 1,
@@ -97,10 +93,8 @@ class _ContinueCard extends StatelessWidget {
                   const SizedBox(height: 2),
                   Text(
                     detail,
-                    style: GoogleFonts.manrope(
-                      fontSize: 10,
+                    style: text.dashboardCardMeta.copyWith(
                       color: Colors.white.withOpacity(0.6),
-                      fontWeight: FontWeight.w500,
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -157,6 +151,8 @@ class _PrayerRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5),
       child: Row(
@@ -181,11 +177,11 @@ class _PrayerRow extends StatelessWidget {
           const SizedBox(width: 12),
           Text(
             name,
-            style: GoogleFonts.manrope(
-              fontSize: 14,
-              fontWeight: isNext ? FontWeight.w700 : FontWeight.w500,
-              color: isNext ? textMain : textHint,
-            ),
+            style:
+                (isNext
+                        ? text.dashboardPrayerNameActive
+                        : text.dashboardPrayerName)
+                    .copyWith(color: isNext ? textMain : textHint),
           ),
           if (isNext) ...[
             const SizedBox(width: 8),
@@ -201,11 +197,8 @@ class _PrayerRow extends StatelessWidget {
               ),
               child: Text(
                 context.l10n.dashboardNextShortLabel,
-                style: GoogleFonts.manrope(
-                  fontSize: 9,
-                  fontWeight: FontWeight.w700,
+                style: text.dashboardTinyBadge.copyWith(
                   color: MyColors.secondary,
-                  letterSpacing: 0.4,
                 ),
               ),
             ),
@@ -213,11 +206,11 @@ class _PrayerRow extends StatelessWidget {
           const Spacer(),
           Text(
             time,
-            style: GoogleFonts.sora(
-              fontSize: 14,
-              fontWeight: isNext ? FontWeight.w800 : FontWeight.w500,
-              color: isNext ? MyColors.secondary : textHint,
-            ),
+            style:
+                (isNext
+                        ? text.dashboardPrayerTimeActive
+                        : text.dashboardPrayerTime)
+                    .copyWith(color: isNext ? MyColors.secondary : textHint),
           ),
         ],
       ),
@@ -245,6 +238,8 @@ class _ActionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return GestureDetector(
       onTap: item.onTap,
       child: Container(
@@ -281,22 +276,13 @@ class _ActionTile extends StatelessWidget {
             const SizedBox(height: 12),
             Text(
               item.label,
-              style: GoogleFonts.sora(
-                fontSize: 12,
-                fontWeight: FontWeight.w700,
-                color: textMain,
-                letterSpacing: -0.1,
-              ),
+              style: text.dashboardActionTitle.copyWith(color: textMain),
             ),
             if (item.sublabel != null) ...[
               const SizedBox(height: 2),
               Text(
                 item.sublabel!,
-                style: GoogleFonts.manrope(
-                  fontSize: 10,
-                  color: textHint,
-                  fontWeight: FontWeight.w500,
-                ),
+                style: text.dashboardActionSubtitle.copyWith(color: textHint),
               ),
             ],
           ],
@@ -336,6 +322,8 @@ class _HadithNavCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -385,20 +373,14 @@ class _HadithNavCard extends StatelessWidget {
                 children: [
                   Text(
                     number,
-                    style: GoogleFonts.sora(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w800,
+                    style: text.dashboardHadithNumber.copyWith(
                       color: Colors.white,
-                      height: 1,
                     ),
                   ),
                   Text(
                     'hadith',
-                    style: GoogleFonts.manrope(
-                      fontSize: 9,
+                    style: text.dashboardHadithLabel.copyWith(
                       color: Colors.white.withOpacity(0.65),
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: 0.3,
                     ),
                   ),
                 ],
@@ -414,30 +396,23 @@ class _HadithNavCard extends StatelessWidget {
                   children: [
                     Text(
                       arabicTitle,
-                      style: GoogleFonts.amiri(
-                        fontSize: 17,
+                      style: text.dashboardHadithArabicTitle.copyWith(
                         color: textMain,
-                        height: 1.3,
                       ),
                       textDirection: ui.TextDirection.rtl,
                     ),
                     const SizedBox(height: 4),
                     Text(
                       englishTitle,
-                      style: GoogleFonts.sora(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w700,
+                      style: text.dashboardHadithTitle.copyWith(
                         color: textMain,
-                        letterSpacing: -0.1,
                       ),
                     ),
                     const SizedBox(height: 3),
                     Text(
                       description,
-                      style: GoogleFonts.manrope(
-                        fontSize: 11,
+                      style: text.dashboardHadithDescription.copyWith(
                         color: textHint,
-                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ],

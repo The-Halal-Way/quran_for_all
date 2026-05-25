@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
@@ -53,7 +54,7 @@ class SurahReadingOptions extends StatelessWidget {
                 children: [
                   Text(
                     context.readQuranText('Reading mode'),
-                    style: Theme.of(context).textTheme.labelLarge,
+                    style: AppTheme.text(context).labelLarge,
                   ),
                   const SizedBox(height: AppSpacing.sm),
                   SingleChildScrollView(

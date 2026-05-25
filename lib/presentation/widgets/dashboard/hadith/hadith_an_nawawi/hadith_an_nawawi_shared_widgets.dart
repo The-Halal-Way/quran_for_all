@@ -1,4 +1,5 @@
 part of '../../../../views/dashboard/hadith/hadith_an_nawawi_view.dart';
+
 class _PillToggle extends StatelessWidget {
   final String leftLabel, rightLabel;
   final bool isRight, isDark;
@@ -46,6 +47,8 @@ class _PillOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
@@ -55,9 +58,7 @@ class _PillOption extends StatelessWidget {
       ),
       child: Text(
         label,
-        style: GoogleFonts.manrope(
-          fontSize: 11,
-          fontWeight: FontWeight.w700,
+        style: text.hadithPillOption.copyWith(
           color: active ? MyColors.primary : Colors.white.withOpacity(0.7),
         ),
       ),
@@ -124,6 +125,8 @@ class _StatChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return Expanded(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
@@ -148,22 +151,8 @@ class _StatChip extends StatelessWidget {
           children: [
             Icon(icon, size: 18, color: MyColors.secondary),
             const SizedBox(height: 6),
-            Text(
-              value,
-              style: GoogleFonts.sora(
-                fontSize: 16,
-                fontWeight: FontWeight.w800,
-                color: textMain,
-              ),
-            ),
-            Text(
-              label,
-              style: GoogleFonts.manrope(
-                fontSize: 10,
-                fontWeight: FontWeight.w500,
-                color: textHint,
-              ),
-            ),
+            Text(value, style: text.hadithStatValue.copyWith(color: textMain)),
+            Text(label, style: text.hadithStatLabel.copyWith(color: textHint)),
           ],
         ),
       ),
@@ -190,6 +179,7 @@ class _NavButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
     final color = enabled
         ? MyColors.secondary
         : (isDark ? MyColors.darkTextTertiary : MyColors.textTertiary);
@@ -201,14 +191,7 @@ class _NavButton extends StatelessWidget {
         children: [
           if (!isRight) Icon(icon, color: color, size: 16),
           if (!isRight) const SizedBox(width: 6),
-          Text(
-            label,
-            style: GoogleFonts.manrope(
-              fontSize: 12,
-              fontWeight: FontWeight.w700,
-              color: color,
-            ),
-          ),
+          Text(label, style: text.hadithBottomNavLabel.copyWith(color: color)),
           if (isRight) const SizedBox(width: 6),
           if (isRight) Icon(icon, color: color, size: 16),
         ],

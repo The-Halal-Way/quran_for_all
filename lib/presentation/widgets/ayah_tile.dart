@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/enums/app_language.dart';
 import '../../core/localization/l10n_extensions.dart';
 import '../../core/theme/app_spacing.dart';
-import '../../core/theme/app_text_styles.dart';
+import '../../core/theme/app_theme.dart';
 import '../../core/utils/app_responsive.dart';
 import '../../data/models/ayah_model.dart';
 
@@ -83,6 +83,7 @@ class AyahTile extends StatelessWidget {
         : ayah.translationEn;
     final translationLabel = language == AppLanguage.bangla ? 'BN' : 'EN';
     final colorScheme = Theme.of(context).colorScheme;
+    final text = AppTheme.text(context);
 
     return Card(
       child: LayoutBuilder(
@@ -118,11 +119,10 @@ class AyahTile extends StatelessWidget {
                             ),
                             child: Text(
                               '${ayah.surahId}:${ayah.ayahNumber}',
-                              style: Theme.of(context).textTheme.labelSmall
-                                  ?.copyWith(
-                                    color: colorScheme.primary,
-                                    fontWeight: FontWeight.w900,
-                                  ),
+                              style: AppTheme.text(context).labelSmall.copyWith(
+                                color: colorScheme.primary,
+                                fontWeight: AppTheme.weightBlack,
+                              ),
                             ),
                           ),
                           Container(
@@ -138,11 +138,10 @@ class AyahTile extends StatelessWidget {
                             ),
                             child: Text(
                               'Juz ${ayah.juzNumber}',
-                              style: Theme.of(context).textTheme.labelSmall
-                                  ?.copyWith(
-                                    color: colorScheme.primary,
-                                    fontWeight: FontWeight.w700,
-                                  ),
+                              style: AppTheme.text(context).labelSmall.copyWith(
+                                color: colorScheme.primary,
+                                fontWeight: AppTheme.weightBold,
+                              ),
                             ),
                           ),
                         ],
@@ -214,8 +213,7 @@ class AyahTile extends StatelessWidget {
                         ),
                         child: Text(
                           '${ayah.surahId}:${ayah.ayahNumber}',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w700,
+                          style: text.labelMedium.copyWith(
                             color: colorScheme.onSecondary,
                           ),
                         ),
@@ -232,11 +230,10 @@ class AyahTile extends StatelessWidget {
                         ),
                         child: Text(
                           'Juz ${ayah.juzNumber}',
-                          style: Theme.of(context).textTheme.labelSmall
-                              ?.copyWith(
-                                color: colorScheme.primary,
-                                fontWeight: FontWeight.w700,
-                              ),
+                          style: AppTheme.text(context).labelSmall.copyWith(
+                            color: colorScheme.primary,
+                            fontWeight: AppTheme.weightBold,
+                          ),
                         ),
                       ),
                       const Spacer(),
@@ -292,7 +289,7 @@ class AyahTile extends StatelessWidget {
                   const SizedBox(height: AppSpacing.sm),
                   Text(
                     transliteration,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    style: AppTheme.text(context).bodyMedium.copyWith(
                       fontStyle: FontStyle.italic,
                       color: colorScheme.onSurface.withValues(alpha: 0.72),
                     ),
@@ -311,7 +308,7 @@ class AyahTile extends StatelessWidget {
   }
 
   Widget _buildArabicText(BuildContext context) {
-    final baseStyle = AppTextStyles.quranArabic(context);
+    final baseStyle = AppTheme.quranArabic(context);
 
     if (!isPlaying || playbackProgress <= 0) {
       return Text(
@@ -343,11 +340,8 @@ class AyahTile extends StatelessWidget {
             final earlySeconds = (durationSeconds * _earlyHighlightPercent)
                 .clamp(_minEarlySeconds, _maxEarlySeconds);
             final effectiveDurationMs =
-                ((durationSeconds - earlySeconds).clamp(
-                      0.25,
-                      durationSeconds,
-                    ) *
-                    1000)
+                ((durationSeconds - earlySeconds).clamp(0.25, durationSeconds) *
+                        1000)
                     .toDouble();
             final clampedPosition = positionMs.clamp(0, durationMs);
             return (clampedPosition / effectiveDurationMs).clamp(0.0, 1.0);
@@ -363,8 +357,10 @@ class AyahTile extends StatelessWidget {
       curve: Curves.easeOutCubic,
       tween: Tween<double>(begin: 0, end: acceleratedProgress),
       builder: (context, animatedProgress, _) {
-        final highlightCount =
-            (total * animatedProgress).ceil().clamp(0, total);
+        final highlightCount = (total * animatedProgress).ceil().clamp(
+          0,
+          total,
+        );
         final highlighted = graphemes.take(highlightCount).join();
         final remaining = graphemes.skip(highlightCount).join();
 
@@ -377,7 +373,9 @@ class AyahTile extends StatelessWidget {
               TextSpan(
                 text: highlighted,
                 style: baseStyle.copyWith(
-                  backgroundColor: colorScheme.secondary.withValues(alpha: 0.28),
+                  backgroundColor: colorScheme.secondary.withValues(
+                    alpha: 0.28,
+                  ),
                 ),
               ),
               TextSpan(text: remaining, style: baseStyle),
@@ -399,6 +397,7 @@ class _TranslationLine extends StatelessWidget {
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     final responsive = AppResponsive.of(context);
+    final appText = AppTheme.text(context);
     final labelFontSize = responsive.pick(
       mobile: 11,
       tablet: 10.5,
@@ -420,21 +419,15 @@ class _TranslationLine extends StatelessWidget {
           ),
           child: Text(
             label,
-            style: TextStyle(
+            style: appText.labelMedium.copyWith(
               color: colorScheme.primary,
-              fontWeight: FontWeight.w700,
-              fontSize: labelFontSize,
+              fontSize: AppTheme.scaledFontSize(context, labelFontSize),
             ),
           ),
         ),
         const SizedBox(width: AppSpacing.sm + 2),
         Expanded(
-          child: Text(
-            text,
-            style: Theme.of(
-              context,
-            ).textTheme.bodyMedium?.copyWith(height: 1.45),
-          ),
+          child: Text(text, style: appText.bodyMedium.copyWith(height: 1.45)),
         ),
       ],
     );
@@ -470,16 +463,16 @@ class _TafsirBottomSheet extends StatelessWidget {
             children: [
               Text(
                 context.readQuranText('Tafsir'),
-                style: Theme.of(
+                style: AppTheme.text(
                   context,
-                ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
+                ).titleLarge.copyWith(fontWeight: AppTheme.weightExtraBold),
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
                 '${context.readQuranText('Surah')} ${ayah.surahId}:${ayah.ayahNumber}',
-                style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                style: AppTheme.text(context).labelLarge.copyWith(
                   color: colorScheme.primary,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: AppTheme.weightBold,
                 ),
               ),
               const SizedBox(height: AppSpacing.md),
@@ -491,7 +484,7 @@ class _TafsirBottomSheet extends StatelessWidget {
                             'No tafsir available for this ayah yet.',
                           ),
                           textAlign: TextAlign.center,
-                          style: Theme.of(context).textTheme.bodyMedium,
+                          style: AppTheme.text(context).bodyMedium,
                         ),
                       )
                     : ListView(
@@ -499,9 +492,9 @@ class _TafsirBottomSheet extends StatelessWidget {
                         children: [
                           SelectableText(
                             tafsir,
-                            style: Theme.of(
+                            style: AppTheme.text(
                               context,
-                            ).textTheme.bodyMedium?.copyWith(height: 1.5),
+                            ).bodyMedium.copyWith(height: 1.5),
                           ),
                         ],
                       ),

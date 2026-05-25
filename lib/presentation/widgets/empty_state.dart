@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../core/theme/my_colors.dart';
 import '../../core/theme/app_spacing.dart';
@@ -59,15 +60,15 @@ class EmptyState extends StatelessWidget {
               Text(
                 title,
                 textAlign: TextAlign.center,
-                style: Theme.of(
+                style: AppTheme.text(
                   context,
-                ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w700),
+                ).titleLarge.copyWith(fontWeight: AppTheme.weightBold),
               ),
               const SizedBox(height: AppSpacing.sm),
               Text(
                 message,
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                style: AppTheme.text(context).bodyMedium.copyWith(
                   color: colorScheme.onSurface.withValues(alpha: 0.72),
                 ),
               ),

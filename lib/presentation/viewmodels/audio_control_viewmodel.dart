@@ -68,17 +68,15 @@ class AudioControlViewModel extends ChangeNotifier {
   Duration get duration => _duration;
 
   /// Progress value from 0.0 to 1.0 for the playback progress indicator.
-  double get progress =>
-      _duration.inMilliseconds > 0
-          ? (_position.inMilliseconds / _duration.inMilliseconds).clamp(0.0, 1.0)
-          : 0.0;
+  double get progress => _duration.inMilliseconds > 0
+      ? (_position.inMilliseconds / _duration.inMilliseconds).clamp(0.0, 1.0)
+      : 0.0;
 
   /// True when a mini-player should be shown at the bottom of the app.
   ///
   /// Condition: audio is active (playing OR paused) and there is now-playing
   /// context.
-  bool get showMiniPlayer =>
-      (_isPlaying || _isPaused) && _nowPlaying != null;
+  bool get showMiniPlayer => (_isPlaying || _isPaused) && _nowPlaying != null;
 
   // ── Called by viewmodels when they initiate playback ─────────────────────
 
@@ -87,7 +85,11 @@ class AudioControlViewModel extends ChangeNotifier {
     required String title,
     String? subtitle,
   }) {
-    _nowPlaying = NowPlayingInfo(title: title, subtitle: subtitle, source: source);
+    _nowPlaying = NowPlayingInfo(
+      title: title,
+      subtitle: subtitle,
+      source: source,
+    );
     notifyListeners();
   }
 

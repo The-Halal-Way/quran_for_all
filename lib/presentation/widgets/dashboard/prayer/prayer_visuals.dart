@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:quran_for_all/core/theme/app_shadows.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
@@ -110,6 +110,7 @@ class PrayerSectionHeader extends StatelessWidget {
     final subColor = isDark
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
+    final text = AppTheme.text(context);
 
     return Padding(
       padding: const EdgeInsets.only(top: AppSpacing.xl, bottom: AppSpacing.sm),
@@ -133,10 +134,8 @@ class PrayerSectionHeader extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: GoogleFonts.sora(
+                  style: text.hadithTitle.copyWith(
                     color: textColor,
-                    fontSize: 17,
-                    fontWeight: FontWeight.w800,
                     height: 1.2,
                   ),
                 ),
@@ -144,10 +143,8 @@ class PrayerSectionHeader extends StatelessWidget {
                   const SizedBox(height: AppSpacing.xs),
                   Text(
                     subtitle!,
-                    style: GoogleFonts.manrope(
+                    style: text.bodySmall.copyWith(
                       color: subColor,
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.w500,
                       height: 1.45,
                     ),
                   ),

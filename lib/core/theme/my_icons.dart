@@ -11,9 +11,7 @@ class MyIcons {
   static const String readIcon = 'assets/icons/read.png';
   static const String searchIcon = 'assets/icons/search.png';
   static const String settingsIcon = 'assets/icons/settings.png';
-  
+
   static const String homeIcon = 'assets/icons/home.png';
   static const String homeIconFill = 'assets/icons/home_fill.png';
-
-
 }

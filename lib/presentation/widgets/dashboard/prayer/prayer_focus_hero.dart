@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
@@ -22,6 +22,7 @@ class PrayerFocusHero extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final accent = PrayerVisuals.accentFor(content.prayer);
+    final text = AppTheme.text(context);
 
     return Container(
       clipBehavior: Clip.antiAlias,
@@ -106,21 +107,13 @@ class PrayerFocusHero extends StatelessWidget {
                 const SizedBox(height: AppSpacing.xl),
                 Text(
                   content.title,
-                  style: GoogleFonts.sora(
-                    color: Colors.white,
-                    fontSize: 27,
-                    fontWeight: FontWeight.w800,
-                    height: 1.12,
-                  ),
+                  style: text.prayerHeroTitle.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: AppSpacing.sm),
                 Text(
                   content.subtitle,
-                  style: GoogleFonts.manrope(
+                  style: text.prayerHeroSubtitle.copyWith(
                     color: Colors.white.withValues(alpha: 0.78),
-                    fontSize: 13.5,
-                    fontWeight: FontWeight.w600,
-                    height: 1.48,
                   ),
                 ),
                 const SizedBox(height: AppSpacing.xl),
@@ -130,11 +123,8 @@ class PrayerFocusHero extends StatelessWidget {
                     Expanded(
                       child: Text(
                         context.l10n.prayerViewHeroNextLabel,
-                        style: GoogleFonts.manrope(
+                        style: text.prayerHeroLabel.copyWith(
                           color: Colors.white.withValues(alpha: 0.68),
-                          fontSize: 11.5,
-                          fontWeight: FontWeight.w700,
-                          height: 1.2,
                         ),
                       ),
                     ),
@@ -144,11 +134,8 @@ class PrayerFocusHero extends StatelessWidget {
                         alignment: Alignment.centerRight,
                         child: Text(
                           time,
-                          style: GoogleFonts.sora(
+                          style: text.prayerHeroTime.copyWith(
                             color: Colors.white,
-                            fontSize: 31,
-                            fontWeight: FontWeight.w900,
-                            height: 1,
                           ),
                         ),
                       ),
@@ -177,6 +164,8 @@ class _HeroChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return Container(
       padding: const EdgeInsets.symmetric(
         horizontal: AppSpacing.md,
@@ -194,11 +183,8 @@ class _HeroChip extends StatelessWidget {
           const SizedBox(width: AppSpacing.xs),
           Text(
             label,
-            style: GoogleFonts.manrope(
+            style: text.prayerHeroChip.copyWith(
               color: Colors.white.withValues(alpha: 0.86),
-              fontSize: 10.5,
-              fontWeight: FontWeight.w800,
-              height: 1.2,
             ),
           ),
         ],

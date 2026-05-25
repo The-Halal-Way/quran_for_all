@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class SplashStatusPanel extends StatelessWidget {
   const SplashStatusPanel({
@@ -43,7 +44,7 @@ class SplashStatusPanel extends StatelessWidget {
               Expanded(
                 child: Text(
                   message,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  style: AppTheme.text(context).bodyMedium.copyWith(
                     color: Colors.white.withValues(alpha: 0.96),
                   ),
                 ),
@@ -74,9 +75,9 @@ class SplashStatusPanel extends StatelessWidget {
                 const SizedBox(width: 8),
                 Text(
                   'Ready',
-                  style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: Colors.white,
-                  ),
+                  style: AppTheme.text(
+                    context,
+                  ).labelLarge.copyWith(color: Colors.white),
                 ),
               ],
             ),

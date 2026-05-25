@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 enum DuahLevel { beginner, intermediate, advanced }
 
 class DuahItem {
@@ -92,12 +93,15 @@ extension DuahItemLocalization on DuahItem {
         'আলহামদু লিল্লাহিল্লাযি আহইয়ানা বাদা মা আমাতানা ওয়া ইলাইহিন নুশুর',
     'Ashhadu an lā ilāha illallāhu waḥdahu lā sharīka lah, wa ashhadu anna Muḥammadan ʿabduhu wa rasūluh':
         'আশহাদু আল্লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহ, ওয়া আশহাদু আন্না মুহাম্মাদান আবদুহু ওয়া রাসুলুহ',
-    'Allāhumma iftaḥ lī abwāba raḥmatik': 'আল্লাহুম্মা ইফতাহ লি আবওয়াবা রাহমাতিক',
-    'Allāhumma innī as\'aluka min faḍlik': 'আল্লাহুম্মা ইন্নি আসআলুকা মিন ফাদলিক',
+    'Allāhumma iftaḥ lī abwāba raḥmatik':
+        'আল্লাহুম্মা ইফতাহ লি আবওয়াবা রাহমাতিক',
+    'Allāhumma innī as\'aluka min faḍlik':
+        'আল্লাহুম্মা ইন্নি আসআলুকা মিন ফাদলিক',
     'Allāhummajʿalnī minat-tawwābīn wajʿalnī minal-mutaṭahhirīn':
         'আল্লাহুম্মাজআলনি মিনাত তাওয়াবিন ওয়াজআলনি মিনাল মুতাতাহহিরিন',
     'Yarḥamukallāh': 'ইয়ারহামুকাল্লাহ',
-    'YahdīkumulLāhu wa yuṣliḥu bālakum': 'ইয়াহদিকুমুল্লাহু ওয়া ইউসলিহু বালাকুম',
+    'YahdīkumulLāhu wa yuṣliḥu bālakum':
+        'ইয়াহদিকুমুল্লাহু ওয়া ইউসলিহু বালাকুম',
     'Ḥasbiyallāhu lā ilāha illā huwa, ʿalayhi tawakkaltu, wa huwa rabbul-ʿarshil-ʿaẓīm':
         'হাসবিয়াল্লাহু লা ইলাহা ইল্লা হুয়া, আলাইহি তাওয়াক্কালতু, ওয়া হুয়া রব্বুল আরশিল আযিম',
   };

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import 'daily_duah_data.dart';
 
@@ -47,7 +48,7 @@ class LevelBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    final text = AppTheme.text(context);
     final cardBg = isDark ? const Color(0xFF1D1238) : Colors.white;
     final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
 
@@ -75,7 +76,11 @@ class LevelBanner extends StatelessWidget {
               color: _accentColor.withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Icon(Icons.auto_awesome_rounded, color: _accentColor, size: 22),
+            child: Icon(
+              Icons.auto_awesome_rounded,
+              color: _accentColor,
+              size: 22,
+            ),
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -86,24 +91,22 @@ class LevelBanner extends StatelessWidget {
                   children: [
                     Text(
                       _levelLabel(context),
-                      style: theme.textTheme.titleMedium?.copyWith(
-                        color: _accentColor,
-                        fontFamily: 'Sora',
-                        fontSize: 14,
-                      ),
+                      style: text.titleMedium.copyWith(color: _accentColor),
                     ),
                     const SizedBox(width: 8),
                     Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 8,
+                        vertical: 2,
+                      ),
                       decoration: BoxDecoration(
                         color: _accentColor.withValues(alpha: 0.15),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
                         context.l10n.duahCountLabel(_duahCount),
-                        style: theme.textTheme.labelSmall?.copyWith(
+                        style: text.duahLevelCount.copyWith(
                           color: _accentColor,
-                          fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),
@@ -112,9 +115,10 @@ class LevelBanner extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   _description(context),
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: isDark ? const Color(0xFFB39DDB) : const Color(0xFF4C425C),
-                    height: 1.4,
+                  style: text.duahLevelDescription.copyWith(
+                    color: isDark
+                        ? const Color(0xFFB39DDB)
+                        : const Color(0xFF4C425C),
                   ),
                 ),
               ],

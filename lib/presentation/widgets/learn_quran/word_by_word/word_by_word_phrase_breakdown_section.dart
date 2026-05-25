@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
 import 'word_by_word_learning_data.dart';
 import 'word_by_word_section_card.dart';
@@ -63,10 +63,14 @@ class _PhraseCard extends StatelessWidget {
               Expanded(
                 child: Text(
                   item.arabic,
-                  style: AppTextStyles.learnArabicWord(
-                    context,
-                    fontSize: 31,
-                  ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w700),
+                  style:
+                      AppTheme.learnArabicWord(
+                        context,
+                        fontSize: AppTheme.scaledFontSize(context, 31),
+                      ).copyWith(
+                        color: colorScheme.primary,
+                        fontWeight: AppTheme.weightBold,
+                      ),
                 ),
               ),
               PronunciationButton(
@@ -79,9 +83,9 @@ class _PhraseCard extends StatelessWidget {
           const SizedBox(height: 3),
           Text(
             item.transliteration,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
+            ).labelLarge.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 6),
           _Line(label: context.learnText('Word map'), value: item.breakdown),
@@ -103,13 +107,13 @@ class _Line extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: Theme.of(context).textTheme.bodySmall,
+        style: AppTheme.text(context).bodySmall,
         children: [
           TextSpan(
             text: '$label: ',
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).labelMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           TextSpan(text: value),
         ],

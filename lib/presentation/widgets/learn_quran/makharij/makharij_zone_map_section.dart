@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../pronunciation_button.dart';
@@ -57,9 +58,9 @@ class _ZoneCard extends StatelessWidget {
         children: [
           Text(
             zone.zone,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+            ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 5),
           Row(
@@ -67,9 +68,9 @@ class _ZoneCard extends StatelessWidget {
               Expanded(
                 child: Text(
                   zone.letters,
-                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  style: AppTheme.text(context).titleMedium.copyWith(
                     color: colorScheme.primary,
-                    fontWeight: FontWeight.w700,
+                    fontWeight: AppTheme.weightBold,
                   ),
                 ),
               ),
@@ -121,13 +122,13 @@ class _Line extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: Theme.of(context).textTheme.bodySmall,
+        style: AppTheme.text(context).bodySmall,
         children: [
           TextSpan(
             text: '$label: ',
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).labelMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           TextSpan(text: value),
         ],

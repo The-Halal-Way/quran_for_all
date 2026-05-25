@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../pronunciation_button.dart';
@@ -42,9 +43,9 @@ class _QalqalahList extends StatelessWidget {
       children: [
         Text(
           context.learnText('Qalqalah Focus'),
-          style: Theme.of(
+          style: AppTheme.text(
             context,
-          ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+          ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
         ),
         const SizedBox(height: 6),
         for (final item in TajweedLearningData.qalqalah)
@@ -81,9 +82,9 @@ class _QalqalahCard extends StatelessWidget {
               Expanded(
                 child: Text(
                   item.letter,
-                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                  style: AppTheme.text(context).titleSmall.copyWith(
                     color: colorScheme.primary,
-                    fontWeight: FontWeight.w800,
+                    fontWeight: AppTheme.weightExtraBold,
                   ),
                 ),
               ),
@@ -116,9 +117,9 @@ class _MaddList extends StatelessWidget {
       children: [
         Text(
           context.learnText('Madd Focus'),
-          style: Theme.of(
+          style: AppTheme.text(
             context,
-          ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+          ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
         ),
         const SizedBox(height: 6),
         for (final item in TajweedLearningData.madd)
@@ -152,9 +153,9 @@ class _MaddCard extends StatelessWidget {
         children: [
           Text(
             item.type,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+            ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 4),
           _Line(label: context.learnText('Count'), value: item.count),
@@ -178,13 +179,13 @@ class _Line extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: Theme.of(context).textTheme.bodySmall,
+        style: AppTheme.text(context).bodySmall,
         children: [
           TextSpan(
             text: '$label: ',
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).labelMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           TextSpan(text: value),
         ],

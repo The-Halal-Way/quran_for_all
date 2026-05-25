@@ -3,7 +3,7 @@ import 'dart:math' as math;
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
@@ -130,7 +130,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
         const SizedBox(height: 20),
         Text(
           'Loading...',
-          style: GoogleFonts.manrope(fontSize: 14, color: _textHint),
+          style: AppTheme.text(context).hadithBody.copyWith(color: _textHint),
         ),
       ],
     ),
@@ -185,6 +185,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
   // ── Header ─────────────────────────────────────────────────────────────────
 
   Widget _buildHeader(ShortHadithBook book) {
+    final text = AppTheme.text(context);
     final topPad = MediaQuery.of(context).padding.top;
     return Container(
       padding: EdgeInsets.only(top: topPad, bottom: 5, right: 5),
@@ -214,11 +215,8 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
                   children: [
                     Text(
                       _isBangla ? book.titleBangla : book.titleEnglish,
-                      style: GoogleFonts.sora(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
+                      style: text.hadithHeaderTitle.copyWith(
                         color: Colors.white,
-                        letterSpacing: -0.1,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
@@ -228,10 +226,8 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
                       _isBangla
                           ? book.compiledByBangla
                           : book.compiledByEnglish,
-                      style: GoogleFonts.manrope(
-                        fontSize: 10,
+                      style: text.hadithHeaderSubtitle.copyWith(
                         color: Colors.white.withOpacity(0.76),
-                        fontWeight: FontWeight.w500,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
@@ -251,6 +247,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
   // ── Progress bar ───────────────────────────────────────────────────────────
 
   Widget _buildProgressBar(ShortHadithBook book, bool isDark) {
+    final text = AppTheme.text(context);
     final progress = (_currentIndex + 1) / book.hadiths.length;
     return AnimatedContainer(
       duration: const Duration(milliseconds: 250),
@@ -281,11 +278,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
           const SizedBox(width: 10),
           Text(
             '${_currentIndex + 1}/${book.hadiths.length}',
-            style: GoogleFonts.manrope(
-              fontSize: 11,
-              fontWeight: FontWeight.w700,
-              color: _textHint,
-            ),
+            style: text.hadithProgressCount.copyWith(color: _textHint),
           ),
         ],
       ),

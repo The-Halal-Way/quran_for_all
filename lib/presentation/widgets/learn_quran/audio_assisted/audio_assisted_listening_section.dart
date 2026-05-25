@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import 'audio_assisted_learning_data.dart';
@@ -57,9 +58,9 @@ class _ListeningCard extends StatelessWidget {
         children: [
           Text(
             item.title,
-            style: Theme.of(context).textTheme.titleSmall?.copyWith(
+            style: AppTheme.text(context).titleSmall.copyWith(
               color: colorScheme.primary,
-              fontWeight: FontWeight.w800,
+              fontWeight: AppTheme.weightExtraBold,
             ),
           ),
           const SizedBox(height: 5),
@@ -71,15 +72,12 @@ class _ListeningCard extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    '${i + 1}.',
-                    style: Theme.of(context).textTheme.labelMedium,
-                  ),
+                  Text('${i + 1}.', style: AppTheme.text(context).labelMedium),
                   const SizedBox(width: 6),
                   Expanded(
                     child: Text(
                       item.steps[i],
-                      style: Theme.of(context).textTheme.bodySmall,
+                      style: AppTheme.text(context).bodySmall,
                     ),
                   ),
                 ],
@@ -106,13 +104,13 @@ class _Line extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        style: Theme.of(context).textTheme.bodySmall,
+        style: AppTheme.text(context).bodySmall,
         children: [
           TextSpan(
             text: '$label: ',
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).labelMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           TextSpan(text: value),
         ],

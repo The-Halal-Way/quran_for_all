@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassHeadingDisplay extends StatelessWidget {
   const CompassHeadingDisplay({
@@ -14,6 +15,7 @@ class CompassHeadingDisplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
     final numColor = facingMecca
         ? const Color(0xFF00BFA5)
         : (isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24));
@@ -26,23 +28,13 @@ class CompassHeadingDisplay extends StatelessWidget {
         children: [
           Text(
             heading.toStringAsFixed(0),
-            style: TextStyle(
-              fontFamily: 'Sora',
-              fontSize: 64,
-              fontWeight: FontWeight.w700,
-              color: numColor,
-              letterSpacing: -3,
-              height: 1,
-            ),
+            style: text.compassHeading.copyWith(color: numColor),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 10),
             child: Text(
               '°',
-              style: TextStyle(
-                fontFamily: 'Sora',
-                fontSize: 30,
-                fontWeight: FontWeight.w400,
+              style: text.compassDegreeSymbol.copyWith(
                 color: isDark
                     ? const Color(0xFF7E57C2)
                     : const Color(0xFF7A7288),
@@ -67,6 +59,8 @@ class CompassDirectionPill extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 6),
       decoration: BoxDecoration(
@@ -80,10 +74,7 @@ class CompassDirectionPill extends StatelessWidget {
         label,
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
-        style: TextStyle(
-          fontFamily: 'Sora',
-          fontSize: 13,
-          fontWeight: FontWeight.w600,
+        style: text.compassHeadingSmall.copyWith(
           letterSpacing: 0.5,
           color: isDark ? const Color(0xFFB39DDB) : const Color(0xFF4C425C),
         ),

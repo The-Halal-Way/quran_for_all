@@ -159,13 +159,11 @@ class AppDatabase {
       return false;
     }
 
-    final result = await db.rawQuery(
-      '''
+    final result = await db.rawQuery('''
       SELECT COUNT(*) as count
       FROM ${DbConstants.tableAyahs}
       WHERE TRIM(tafsir_en) <> '' OR TRIM(tafsir_bn) <> ''
-      ''',
-    );
+      ''');
     final count = result.first['count'] as int? ?? 0;
     return count > 0;
   }
@@ -207,10 +205,7 @@ class AppDatabase {
     final db = await database;
     await db.transaction((txn) async {
       final batch = txn.batch();
-      final ayahIds = <int>{
-        ...tafsirEnByAyahId.keys,
-        ...tafsirBnByAyahId.keys,
-      };
+      final ayahIds = <int>{...tafsirEnByAyahId.keys, ...tafsirBnByAyahId.keys};
 
       for (final ayahId in ayahIds) {
         final updateMap = <String, Object?>{};

@@ -3,6 +3,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import 'daily_duah_data.dart';
 
@@ -35,7 +36,7 @@ class DuahCardState extends State<DuahCard> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    final text = AppTheme.text(context);
     final isDark = widget.isDark;
     final item = widget.item;
 
@@ -64,10 +65,10 @@ class DuahCardState extends State<DuahCard> {
                     Expanded(
                       child: Text(
                         item.localizedTitle(context),
-                        style: theme.textTheme.labelMedium?.copyWith(
-                          color: isDark ? const Color(0xFF7E57C2) : const Color(0xFF4C425C),
-                          fontWeight: FontWeight.w700,
-                          letterSpacing: 0.2,
+                        style: text.duahCardLabel.copyWith(
+                          color: isDark
+                              ? const Color(0xFF7E57C2)
+                              : const Color(0xFF4C425C),
                         ),
                       ),
                     ),
@@ -87,7 +88,9 @@ class DuahCardState extends State<DuahCard> {
                           size: 16,
                           color: _copied
                               ? const Color(0xFF00BFA5)
-                              : (isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288)),
+                              : (isDark
+                                    ? const Color(0xFF7E57C2)
+                                    : const Color(0xFF7A7288)),
                         ),
                       ),
                     ),
@@ -96,24 +99,29 @@ class DuahCardState extends State<DuahCard> {
                 const SizedBox(height: 12),
                 Container(
                   width: double.infinity,
-                  padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 14,
+                    horizontal: 16,
+                  ),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF1E0A3C).withValues(alpha: isDark ? 0.40 : 0.04),
+                    color: const Color(
+                      0xFF1E0A3C,
+                    ).withValues(alpha: isDark ? 0.40 : 0.04),
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: const Color(0xFF4B30A1).withValues(alpha: isDark ? 0.20 : 0.10),
+                      color: const Color(
+                        0xFF4B30A1,
+                      ).withValues(alpha: isDark ? 0.20 : 0.10),
                     ),
                   ),
                   child: Text(
                     item.arabic,
                     textAlign: TextAlign.right,
                     textDirection: ui.TextDirection.rtl,
-                    style: theme.textTheme.headlineMedium?.copyWith(
-                      fontFamily: 'Scheherazade New',
-                      fontSize: 24,
-                      height: 1.8,
-                      color: isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24),
-                      fontWeight: FontWeight.w400,
+                    style: text.duahCardArabic.copyWith(
+                      color: isDark
+                          ? const Color(0xFFEDE7F6)
+                          : const Color(0xFF120B24),
                     ),
                   ),
                 ),
@@ -133,10 +141,10 @@ class DuahCardState extends State<DuahCard> {
                     Expanded(
                       child: Text(
                         item.localizedPronunciation(context),
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          fontStyle: FontStyle.italic,
-                          color: isDark ? const Color(0xFFB39DDB) : const Color(0xFF4C425C),
-                          height: 1.4,
+                        style: text.duahCardBodyItalic.copyWith(
+                          color: isDark
+                              ? const Color(0xFFB39DDB)
+                              : const Color(0xFF4C425C),
                         ),
                       ),
                     ),
@@ -158,9 +166,10 @@ class DuahCardState extends State<DuahCard> {
                     Expanded(
                       child: Text(
                         item.localizedTranslation(context),
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          color: isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24),
-                          height: 1.4,
+                        style: text.duahCardBody.copyWith(
+                          color: isDark
+                              ? const Color(0xFFEDE7F6)
+                              : const Color(0xFF120B24),
                         ),
                       ),
                     ),
@@ -169,7 +178,10 @@ class DuahCardState extends State<DuahCard> {
                 if (item.note != null) ...[
                   const SizedBox(height: 10),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 8,
+                    ),
                     decoration: BoxDecoration(
                       color: const Color(0xFF00BFA5).withValues(alpha: 0.08),
                       borderRadius: BorderRadius.circular(8),
@@ -180,13 +192,19 @@ class DuahCardState extends State<DuahCard> {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Icon(Icons.info_outline_rounded, size: 14, color: Color(0xFF00BFA5)),
+                        const Icon(
+                          Icons.info_outline_rounded,
+                          size: 14,
+                          color: Color(0xFF00BFA5),
+                        ),
                         const SizedBox(width: 6),
                         Expanded(
                           child: Text(
                             item.note!,
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: isDark ? const Color(0xFF64FFDA) : const Color(0xFF00897B),
+                            style: text.bodySmall.copyWith(
+                              color: isDark
+                                  ? const Color(0xFF64FFDA)
+                                  : const Color(0xFF00897B),
                               height: 1.4,
                             ),
                           ),
@@ -201,10 +219,15 @@ class DuahCardState extends State<DuahCard> {
           if (hasExtra) ...[
             Divider(height: 1, color: borderC),
             InkWell(
-              borderRadius: const BorderRadius.vertical(bottom: Radius.circular(16)),
+              borderRadius: const BorderRadius.vertical(
+                bottom: Radius.circular(16),
+              ),
               onTap: () => setState(() => _expanded = !_expanded),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 10,
+                ),
                 child: Row(
                   children: [
                     Icon(
@@ -212,14 +235,19 @@ class DuahCardState extends State<DuahCard> {
                           ? Icons.keyboard_arrow_up_rounded
                           : Icons.keyboard_arrow_down_rounded,
                       size: 18,
-                      color: isDark ? const Color(0xFF7E57C2) : const Color(0xFF4C425C),
+                      color: isDark
+                          ? const Color(0xFF7E57C2)
+                          : const Color(0xFF4C425C),
                     ),
                     const SizedBox(width: 6),
                     Text(
-                      _expanded ? context.l10n.duahHideVariants : context.l10n.duahShowVariants,
-                      style: theme.textTheme.labelMedium?.copyWith(
-                        color: isDark ? const Color(0xFF7E57C2) : const Color(0xFF4C425C),
-                        fontSize: 12,
+                      _expanded
+                          ? context.l10n.duahHideVariants
+                          : context.l10n.duahShowVariants,
+                      style: text.duahVariantToggle.copyWith(
+                        color: isDark
+                            ? const Color(0xFF7E57C2)
+                            : const Color(0xFF4C425C),
                       ),
                     ),
                   ],
@@ -227,7 +255,9 @@ class DuahCardState extends State<DuahCard> {
               ),
             ),
             if (_expanded)
-              ...item.subItems.map((sub) => SubItemTile(item: sub, isDark: isDark)),
+              ...item.subItems.map(
+                (sub) => SubItemTile(item: sub, isDark: isDark),
+              ),
           ],
         ],
       ),
@@ -243,24 +273,24 @@ class SubItemTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    final text = AppTheme.text(context);
     return Container(
       margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: const Color(0xFFD50057).withValues(alpha: isDark ? 0.07 : 0.04),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFFD50057).withValues(alpha: 0.18)),
+        border: Border.all(
+          color: const Color(0xFFD50057).withValues(alpha: 0.18),
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
             item.localizedTitle(context),
-            style: theme.textTheme.labelSmall?.copyWith(
+            style: text.duahSubItemTitle.copyWith(
               color: const Color(0xFFD50057),
-              fontWeight: FontWeight.w700,
-              letterSpacing: 0.3,
             ),
           ),
           const SizedBox(height: 8),
@@ -268,17 +298,14 @@ class SubItemTile extends StatelessWidget {
             item.arabic,
             textAlign: TextAlign.right,
             textDirection: ui.TextDirection.rtl,
-            style: theme.textTheme.bodyLarge?.copyWith(
-              fontFamily: 'Scheherazade New',
-              fontSize: 20,
-              height: 1.8,
+            style: text.duahSubItemArabic.copyWith(
               color: isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24),
             ),
           ),
           const SizedBox(height: 6),
           Text(
             item.localizedPronunciation(context),
-            style: theme.textTheme.bodySmall?.copyWith(
+            style: text.bodySmall.copyWith(
               fontStyle: FontStyle.italic,
               color: isDark ? const Color(0xFFB39DDB) : const Color(0xFF4C425C),
             ),
@@ -286,7 +313,7 @@ class SubItemTile extends StatelessWidget {
           const SizedBox(height: 4),
           Text(
             item.localizedTranslation(context),
-            style: theme.textTheme.bodySmall?.copyWith(
+            style: text.bodySmall.copyWith(
               color: isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24),
             ),
           ),

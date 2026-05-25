@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
@@ -75,23 +75,24 @@ class _AlphabetTile extends StatelessWidget {
           ),
           Text(
             letter.symbol,
-            style: AppTextStyles.learnArabicLetter(
-              context,
-            ).copyWith(fontWeight: FontWeight.w700, color: colorScheme.primary),
+            style: AppTheme.learnArabicLetter(context).copyWith(
+              fontWeight: AppTheme.weightBold,
+              color: colorScheme.primary,
+            ),
           ),
           const SizedBox(height: 2),
           Text(
             letter.name,
             textAlign: TextAlign.center,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.labelMedium?.copyWith(fontWeight: FontWeight.w700),
+            ).labelMedium.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 2),
           Text(
             letter.transliteration,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.labelSmall?.copyWith(
+            style: AppTheme.text(context).labelSmall.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.7),
             ),
           ),
@@ -99,7 +100,7 @@ class _AlphabetTile extends StatelessWidget {
           Text(
             letter.visualCue,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+            style: AppTheme.text(context).bodySmall.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.74),
               height: 1.2,
             ),

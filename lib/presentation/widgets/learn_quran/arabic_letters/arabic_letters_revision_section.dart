@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import 'arabic_letters_learning_data.dart';
@@ -56,7 +57,7 @@ class ArabicLettersRevisionSection extends StatelessWidget {
                   Expanded(
                     child: Text(
                       context.learnText(checkpoint),
-                      style: Theme.of(context).textTheme.bodySmall,
+                      style: AppTheme.text(context).bodySmall,
                     ),
                   ),
                 ],
@@ -93,9 +94,9 @@ class _RevisionCard extends StatelessWidget {
             backgroundColor: colorScheme.primary.withValues(alpha: 0.14),
             child: Text(
               '$index',
-              style: Theme.of(context).textTheme.labelMedium?.copyWith(
+              style: AppTheme.text(context).labelMedium.copyWith(
                 color: colorScheme.primary,
-                fontWeight: FontWeight.w800,
+                fontWeight: AppTheme.weightExtraBold,
               ),
             ),
           ),
@@ -106,12 +107,12 @@ class _RevisionCard extends StatelessWidget {
               children: [
                 Text(
                   block.title,
-                  style: Theme.of(
+                  style: AppTheme.text(
                     context,
-                  ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+                  ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
                 ),
                 const SizedBox(height: 3),
-                Text(block.drill, style: Theme.of(context).textTheme.bodySmall),
+                Text(block.drill, style: AppTheme.text(context).bodySmall),
               ],
             ),
           ),

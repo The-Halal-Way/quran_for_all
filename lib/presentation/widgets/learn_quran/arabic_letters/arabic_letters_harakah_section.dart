@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
@@ -58,9 +58,9 @@ class _HintPill extends StatelessWidget {
       ),
       child: Text(
         context.learnText(label),
-        style: Theme.of(context).textTheme.labelMedium?.copyWith(
+        style: AppTheme.text(context).labelMedium.copyWith(
           color: colorScheme.primary,
-          fontWeight: FontWeight.w700,
+          fontWeight: AppTheme.weightBold,
         ),
       ),
     );
@@ -88,15 +88,15 @@ class _HarakahPatternCard extends StatelessWidget {
         children: [
           Text(
             context.learnText('Base letter'),
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+            ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
           ),
           Text(
             pattern.baseLetter,
-            style: AppTextStyles.learnArabicLetter(
+            style: AppTheme.learnArabicLetter(
               context,
-              fontSize: 30,
+              fontSize: AppTheme.scaledFontSize(context, 30),
             ).copyWith(color: colorScheme.primary),
           ),
           const SizedBox(height: 8),
@@ -138,17 +138,21 @@ class _HarakahValueChip extends StatelessWidget {
         children: [
           Text(
             context.learnText(title),
-            style: Theme.of(context).textTheme.labelSmall?.copyWith(
+            style: AppTheme.text(context).labelSmall.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.75),
             ),
           ),
           const SizedBox(height: 2),
           Text(
             value,
-            style: AppTextStyles.learnArabicWord(
-              context,
-              fontSize: 26,
-            ).copyWith(color: colorScheme.primary, fontWeight: FontWeight.w800),
+            style:
+                AppTheme.learnArabicWord(
+                  context,
+                  fontSize: AppTheme.scaledFontSize(context, 26),
+                ).copyWith(
+                  color: colorScheme.primary,
+                  fontWeight: AppTheme.weightExtraBold,
+                ),
           ),
           PronunciationButton(
             arabicText: value,

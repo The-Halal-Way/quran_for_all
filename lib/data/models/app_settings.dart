@@ -48,7 +48,9 @@ class AppSettings {
     return AppSettings(
       showPronunciation: (map['show_pronunciation'] as bool?) ?? true,
       showTranslation: (map['show_translation'] as bool?) ?? true,
-      readingViewMode: ReadingViewModeX.fromCode(map['reading_view_mode'] as String?),
+      readingViewMode: ReadingViewModeX.fromCode(
+        map['reading_view_mode'] as String?,
+      ),
       language: AppLanguageX.fromCode(map['language'] as String?),
       themeMode: _themeModeFromString(map['theme_mode'] as String?),
     );

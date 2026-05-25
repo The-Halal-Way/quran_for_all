@@ -26,8 +26,7 @@ class AudioService {
       final session = await audio_session.AudioSession.instance;
       await session.configure(
         const audio_session.AudioSessionConfiguration(
-          avAudioSessionCategory:
-              audio_session.AVAudioSessionCategory.playback,
+          avAudioSessionCategory: audio_session.AVAudioSessionCategory.playback,
           avAudioSessionCategoryOptions:
               audio_session.AVAudioSessionCategoryOptions.allowBluetooth,
           avAudioSessionMode: audio_session.AVAudioSessionMode.defaultMode,

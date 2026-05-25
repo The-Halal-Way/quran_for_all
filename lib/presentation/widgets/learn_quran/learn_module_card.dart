@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
@@ -76,18 +77,18 @@ class LearnModuleCard extends StatelessWidget {
                       children: [
                         Text(
                           context.learnText(module.title),
-                          style: Theme.of(context).textTheme.titleMedium
-                              ?.copyWith(fontWeight: FontWeight.w700),
+                          style: AppTheme.text(context).titleMedium.copyWith(
+                            fontWeight: AppTheme.weightBold,
+                          ),
                         ),
                         const SizedBox(height: AppSpacing.xs - 1),
                         Text(
                           context.learnText(module.subtitle),
-                          style: Theme.of(context).textTheme.bodySmall
-                              ?.copyWith(
-                                color: Theme.of(
-                                  context,
-                                ).colorScheme.onSurface.withValues(alpha: 0.74),
-                              ),
+                          style: AppTheme.text(context).bodySmall.copyWith(
+                            color: Theme.of(
+                              context,
+                            ).colorScheme.onSurface.withValues(alpha: 0.74),
+                          ),
                         ),
                       ],
                     ),
@@ -102,7 +103,7 @@ class LearnModuleCard extends StatelessWidget {
               const SizedBox(height: AppSpacing.md),
               Text(
                 context.learnText(module.description),
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: AppTheme.text(context).bodyMedium,
               ),
               const SizedBox(height: AppSpacing.md),
               Wrap(
@@ -139,9 +140,9 @@ class LearnModuleCard extends StatelessWidget {
               const SizedBox(height: AppSpacing.sm - 1),
               Text(
                 statusText,
-                style: Theme.of(context).textTheme.labelMedium?.copyWith(
+                style: AppTheme.text(context).labelMedium.copyWith(
                   color: visuals.startColor,
-                  fontWeight: FontWeight.w700,
+                  fontWeight: AppTheme.weightBold,
                 ),
               ),
             ],

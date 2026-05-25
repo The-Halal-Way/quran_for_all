@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class AppSnackbar {
   const AppSnackbar._();
@@ -51,7 +52,9 @@ class AppSnackbar {
           backgroundColor: backgroundColor,
           content: Text(
             message,
-            style: textColor == null ? null : TextStyle(color: textColor),
+            style: textColor == null
+                ? null
+                : AppTheme.text(context).bodyMedium.copyWith(color: textColor),
           ),
         ),
       );

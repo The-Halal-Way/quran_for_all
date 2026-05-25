@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../core/theme/app_spacing.dart';
 
@@ -19,7 +20,7 @@ class SectionHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
+    final textTheme = AppTheme.text(context);
     final colorScheme = Theme.of(context).colorScheme;
 
     return Column(
@@ -30,8 +31,8 @@ class SectionHeader extends StatelessWidget {
             Expanded(
               child: Text(
                 title,
-                style: textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.w700,
+                style: textTheme.titleLarge.copyWith(
+                  fontWeight: AppTheme.weightBold,
                 ),
               ),
             ),
@@ -42,7 +43,7 @@ class SectionHeader extends StatelessWidget {
           const SizedBox(height: AppSpacing.xs),
           Text(
             subtitle!,
-            style: textTheme.bodyMedium?.copyWith(
+            style: textTheme.bodyMedium.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.68),
             ),
           ),

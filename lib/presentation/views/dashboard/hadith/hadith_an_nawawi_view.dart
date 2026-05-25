@@ -4,7 +4,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
@@ -123,6 +123,8 @@ class _HadithScreenState extends State<HadithAnNawawiView>
   }
 
   Widget _buildSplash() {
+    final text = AppTheme.text(context);
+
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -131,10 +133,8 @@ class _HadithScreenState extends State<HadithAnNawawiView>
           const SizedBox(height: 24),
           Text(
             'الأربعون النووية',
-            style: GoogleFonts.amiri(
-              fontSize: 28,
+            style: text.hadithLoadingArabicTitle.copyWith(
               color: MyColors.primaryLight,
-              fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 16),
@@ -215,6 +215,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
   // ── Header ─────────────────────────────────────────────────────────────────
 
   Widget _buildHeader(HadithBook book) {
+    final text = AppTheme.text(context);
     final topPad = MediaQuery.of(context).padding.top;
     final label = _currentIndex == -1
         ? (_isBangla ? 'ভূমিকা' : 'Introduction')
@@ -251,11 +252,8 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                     '40 Hadith of An-Nawawi',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: GoogleFonts.amiri(
-                      fontSize: 22,
+                    style: text.hadithHeaderArabicTitle.copyWith(
                       color: Colors.white.withOpacity(0.9),
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 0.5,
                     ),
                   ),
                   Row(
@@ -271,21 +269,16 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                       const SizedBox(width: 8),
                       Text(
                         label,
-                        style: GoogleFonts.manrope(
-                          fontSize: 13,
+                        style: text.hadithHeaderLabel.copyWith(
                           color: Colors.white.withOpacity(0.75),
-                          fontWeight: FontWeight.w600,
-                          letterSpacing: 0.3,
                         ),
                       ),
                       const Spacer(),
                       if (_currentIndex >= 0) ...[
                         Text(
                           '${_currentIndex + 1} / ${book.hadiths.length}',
-                          style: GoogleFonts.manrope(
-                            fontSize: 11,
+                          style: text.hadithHeaderProgress.copyWith(
                             color: Colors.white.withOpacity(0.55),
-                            fontWeight: FontWeight.w500,
                           ),
                         ),
                         SizedBox(width: 12.h),
@@ -349,6 +342,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
   // ── Bottom navigation ──────────────────────────────────────────────────────
 
   Widget _buildBottomNav(HadithBook book, bool isDark) {
+    final text = AppTheme.text(context);
     final canPrev = _currentIndex > -1;
     final canNext = _currentIndex < book.hadiths.length - 1;
 
@@ -416,12 +410,10 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                   const SizedBox(height: 4),
                   Text(
                     _isBangla ? 'ভূমিকা' : 'Intro',
-                    style: GoogleFonts.manrope(
-                      fontSize: 10,
+                    style: text.hadithBottomIntro.copyWith(
                       color: _currentIndex == -1
                           ? MyColors.secondary
                           : _textHint,
-                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ],

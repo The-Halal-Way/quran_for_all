@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
@@ -40,46 +41,49 @@ class SettingsView extends StatelessWidget {
                       controller: controller,
                       padding: EdgeInsets.all(responsive.padding),
                       children: [
-                    Container(
-                      padding: const EdgeInsets.all(AppSpacing.lg),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(AppRadius.lg),
-                        color: colorScheme.primary.withValues(alpha: 0.08),
-                      ),
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.auto_awesome_rounded,
-                            color: colorScheme.primary,
+                        Container(
+                          padding: const EdgeInsets.all(AppSpacing.lg),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(AppRadius.lg),
+                            color: colorScheme.primary.withValues(alpha: 0.08),
                           ),
-                          const SizedBox(width: AppSpacing.sm + 2),
-                          Expanded(
-                            child: Text(
-                              context.readQuranText(
-                                'Personalize your recitation and reading experience.',
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.auto_awesome_rounded,
+                                color: colorScheme.primary,
                               ),
-                              style: Theme.of(context).textTheme.bodyMedium,
-                            ),
+                              const SizedBox(width: AppSpacing.sm + 2),
+                              Expanded(
+                                child: Text(
+                                  context.readQuranText(
+                                    'Personalize your recitation and reading experience.',
+                                  ),
+                                  style: AppTheme.text(context).bodyMedium,
+                                ),
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
-                    ),
-                    const SizedBox(height: AppSpacing.md),
-                    SettingsPreferencesCard(
-                      showPronunciation: viewModel.settings.showPronunciation,
-                      showTranslation: viewModel.settings.showTranslation,
-                      language: viewModel.settings.language,
-                      onShowPronunciationChanged: viewModel.setShowPronunciation,
-                      onShowTranslationChanged: viewModel.setShowTranslation,
-                      onLanguageChanged: viewModel.setLanguage,
-                    ),
-                    const SizedBox(height: AppSpacing.md),
-                    SettingsThemeCard(
-                      themeMode: viewModel.settings.themeMode,
-                      onThemeModeChanged: viewModel.setThemeMode,
-                    ),
-                    const SizedBox(height: AppSpacing.md),
-                    const SettingsOfflineCard(),
+                        ),
+                        const SizedBox(height: AppSpacing.md),
+                        SettingsPreferencesCard(
+                          showPronunciation:
+                              viewModel.settings.showPronunciation,
+                          showTranslation: viewModel.settings.showTranslation,
+                          language: viewModel.settings.language,
+                          onShowPronunciationChanged:
+                              viewModel.setShowPronunciation,
+                          onShowTranslationChanged:
+                              viewModel.setShowTranslation,
+                          onLanguageChanged: viewModel.setLanguage,
+                        ),
+                        const SizedBox(height: AppSpacing.md),
+                        SettingsThemeCard(
+                          themeMode: viewModel.settings.themeMode,
+                          onThemeModeChanged: viewModel.setThemeMode,
+                        ),
+                        const SizedBox(height: AppSpacing.md),
+                        const SettingsOfflineCard(),
                       ],
                     ),
                   ),

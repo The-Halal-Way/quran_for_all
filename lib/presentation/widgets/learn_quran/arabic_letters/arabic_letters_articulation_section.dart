@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
@@ -70,7 +70,7 @@ class _ArticulationZoneCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
+    final textTheme = AppTheme.text(context);
 
     return Container(
       width: double.infinity,
@@ -89,9 +89,9 @@ class _ArticulationZoneCard extends StatelessWidget {
               Expanded(
                 child: Text(
                   guide.zone,
-                  style: textTheme.titleSmall?.copyWith(
+                  style: textTheme.titleSmall.copyWith(
                     color: color,
-                    fontWeight: FontWeight.w800,
+                    fontWeight: AppTheme.weightExtraBold,
                   ),
                 ),
               ),
@@ -103,10 +103,10 @@ class _ArticulationZoneCard extends StatelessWidget {
               Expanded(
                 child: Text(
                   guide.letters,
-                  style: AppTextStyles.learnArabicWord(
+                  style: AppTheme.learnArabicWord(
                     context,
-                    fontSize: 27,
-                  ).copyWith(fontWeight: FontWeight.w700),
+                    fontSize: AppTheme.scaledFontSize(context, 27),
+                  ).copyWith(fontWeight: AppTheme.weightBold),
                 ),
               ),
               PronunciationButton(
@@ -121,7 +121,7 @@ class _ArticulationZoneCard extends StatelessWidget {
           const SizedBox(height: 3),
           Text(
             '${context.learnText('Avoid')}: ${guide.watchFor}',
-            style: textTheme.labelMedium?.copyWith(
+            style: textTheme.labelMedium.copyWith(
               color: Theme.of(
                 context,
               ).colorScheme.onSurface.withValues(alpha: 0.78),

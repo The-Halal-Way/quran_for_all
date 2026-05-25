@@ -7,7 +7,7 @@ import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/reading_view_mode.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
-import 'package:quran_for_all/core/theme/app_text_styles.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
 import 'package:quran_for_all/data/models/ayah_model.dart';
@@ -101,11 +101,10 @@ class SurahAyahList extends StatelessWidget {
                         ),
                         child: Text(
                           '${ayah.ayahNumber}',
-                          style: Theme.of(context).textTheme.labelSmall
-                              ?.copyWith(
-                                fontWeight: FontWeight.w700,
-                                color: Theme.of(context).colorScheme.primary,
-                              ),
+                          style: AppTheme.text(context).labelSmall.copyWith(
+                            fontWeight: AppTheme.weightBold,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                         ),
                       ),
                     );
@@ -127,9 +126,7 @@ class SurahAyahList extends StatelessWidget {
                 ),
                 textDirection: TextDirection.rtl,
                 // 🔽 This adds the line spacing
-                style: AppTextStyles.quranArabic(
-                  context,
-                ).copyWith(height: 2.5.h),
+                style: AppTheme.quranArabic(context).copyWith(height: 2.5.h),
               ),
             ),
           ),
@@ -308,34 +305,29 @@ class SurahAyahList extends StatelessWidget {
           SettingsViewModel,
           AudioControlViewModel
         >(
-          builder: (
-            sheetContext,
-            liveViewModel,
-            settingsVm,
-            liveAudioControl,
-            _,
-          ) {
-            return SafeArea(
-              child: SingleChildScrollView(
-                padding: EdgeInsets.only(
-                  left: AppSpacing.md,
-                  right: AppSpacing.md,
-                  bottom:
-                      MediaQuery.of(sheetContext).viewInsets.bottom +
-                      AppSpacing.md,
-                ),
-                child: _buildDetailsAyahTile(
-                  sheetContext,
-                  ayah,
-                  liveViewModel,
-                  settingsVm.settings,
-                  liveAudioControl.progress,
-                  liveAudioControl.position,
-                  liveAudioControl.duration,
-                ),
-              ),
-            );
-          },
+          builder:
+              (sheetContext, liveViewModel, settingsVm, liveAudioControl, _) {
+                return SafeArea(
+                  child: SingleChildScrollView(
+                    padding: EdgeInsets.only(
+                      left: AppSpacing.md,
+                      right: AppSpacing.md,
+                      bottom:
+                          MediaQuery.of(sheetContext).viewInsets.bottom +
+                          AppSpacing.md,
+                    ),
+                    child: _buildDetailsAyahTile(
+                      sheetContext,
+                      ayah,
+                      liveViewModel,
+                      settingsVm.settings,
+                      liveAudioControl.progress,
+                      liveAudioControl.position,
+                      liveAudioControl.duration,
+                    ),
+                  ),
+                );
+              },
         );
       },
     );

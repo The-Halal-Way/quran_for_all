@@ -4,6 +4,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
   // ── Greeting header ─────────────────────────────────────────────────────────
 
   Widget _buildGreetingHeader() {
+    final text = AppTheme.text(context);
     final now = DateTime.now();
     final hour = now.hour;
     String greeting;
@@ -60,13 +61,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                     child: Text(
                       'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.amiri(
-                        fontSize: 21,
-                        fontWeight: FontWeight.w700,
-                        color: _textMain,
-                        letterSpacing: 0.2,
-                        height: 1.25,
-                      ),
+                      style: text.dashboardBismillah.copyWith(color: _textMain),
                     ),
                   ),
                   const SizedBox(width: 12),
@@ -104,12 +99,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
             const SizedBox(width: 12),
             Text(
               greeting,
-              style: GoogleFonts.manrope(
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
-                color: _textHint,
-                letterSpacing: 0.3,
-              ),
+              style: text.dashboardEyebrow.copyWith(color: _textHint),
             ),
             Spacer(),
             Row(
@@ -127,38 +117,12 @@ extension _DashboardViewStateSections on _DashboardViewState {
                 const SizedBox(width: 5),
                 Text(
                   dateStr,
-                  style: GoogleFonts.manrope(
-                    fontSize: 12,
-                    color: _textHint,
-                    fontWeight: FontWeight.w500,
-                  ),
+                  style: text.dashboardDate.copyWith(color: _textHint),
                 ),
               ],
             ),
           ],
         ),
-        // Text(
-        //   greeting,
-        //   style: GoogleFonts.manrope(
-        //     fontSize: 13,
-        //     fontWeight: FontWeight.w600,
-        //     color: _textHint,
-        //     letterSpacing: 0.3,
-        //   ),
-        // ),
-        // const SizedBox(height: 2),
-
-        // Text(
-        //   context.l10n.appName,
-        //   style: GoogleFonts.sora(
-        //     fontSize: 28,
-        //     fontWeight: FontWeight.w800,
-        //     color: _textMain,
-        //     height: 1.1,
-        //     letterSpacing: -0.5,
-        //   ),
-        // ),
-        // const SizedBox(height: 4),
       ],
     );
   }
@@ -243,6 +207,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
   // ── Section label ───────────────────────────────────────────────────────────
 
   Widget _buildSectionLabel(String title, IconData icon, Color color) {
+    final text = AppTheme.text(context);
+
     return Row(
       children: [
         Container(
@@ -257,12 +223,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
         const SizedBox(width: 10),
         Text(
           title,
-          style: GoogleFonts.sora(
-            fontSize: 16,
-            fontWeight: FontWeight.w700,
-            color: _textMain,
-            letterSpacing: -0.2,
-          ),
+          style: text.dashboardSectionTitle.copyWith(color: _textMain),
         ),
         const SizedBox(width: 8),
         Expanded(
@@ -282,6 +243,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
   // ── Prayer card ─────────────────────────────────────────────────────────────
 
   Widget _buildPrayerCard() {
+    final text = AppTheme.text(context);
+
     return Container(
       decoration: BoxDecoration(
         color: _cardBg,
@@ -327,10 +290,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                       Expanded(
                         child: Text(
                           _prayerError,
-                          style: GoogleFonts.manrope(
-                            fontSize: 13,
-                            color: _textSub,
-                          ),
+                          style: text.bodySmall.copyWith(color: _textSub),
                         ),
                       ),
                     ],
@@ -352,9 +312,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                       ),
                       child: Text(
                         context.l10n.dashboardRetry,
-                        style: GoogleFonts.manrope(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w700,
+                        style: text.labelMedium.copyWith(
                           color: MyColors.secondary,
                         ),
                       ),
@@ -400,18 +358,13 @@ extension _DashboardViewStateSections on _DashboardViewState {
                           children: [
                             Text(
                               context.l10n.dashboardNextPrayer,
-                              style: GoogleFonts.manrope(
-                                fontSize: 10,
+                              style: text.dashboardCardEyebrow.copyWith(
                                 color: Colors.white.withOpacity(0.7),
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: 0.5,
                               ),
                             ),
                             Text(
                               _localizePrayerName(_nextPrayer!),
-                              style: GoogleFonts.sora(
-                                fontSize: 17,
-                                fontWeight: FontWeight.w800,
+                              style: text.dashboardNextPrayerName.copyWith(
                                 color: Colors.white,
                               ),
                             ),
@@ -420,9 +373,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                         const Spacer(),
                         Text(
                           _prayerTimes?[_nextPrayer!] ?? '',
-                          style: GoogleFonts.sora(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w800,
+                          style: text.dashboardNextPrayerTime.copyWith(
                             color: Colors.white,
                           ),
                         ),

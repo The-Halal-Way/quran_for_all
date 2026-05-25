@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
 import 'makharij_learning_data.dart';
 import 'makharij_section_card.dart';
@@ -61,24 +61,24 @@ class _PhraseCard extends StatelessWidget {
               children: [
                 Text(
                   phrase.arabic,
-                  style: AppTextStyles.learnArabicWord(context, fontSize: 32)
-                      .copyWith(
-                        fontWeight: FontWeight.w700,
+                  style:
+                      AppTheme.learnArabicWord(
+                        context,
+                        fontSize: AppTheme.scaledFontSize(context, 32),
+                      ).copyWith(
+                        fontWeight: AppTheme.weightBold,
                         color: colorScheme.primary,
                       ),
                 ),
                 const SizedBox(height: 3),
                 Text(
                   phrase.transliteration,
-                  style: Theme.of(
+                  style: AppTheme.text(
                     context,
-                  ).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
+                  ).labelLarge.copyWith(fontWeight: AppTheme.weightBold),
                 ),
                 const SizedBox(height: 4),
-                Text(
-                  phrase.focus,
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
+                Text(phrase.focus, style: AppTheme.text(context).bodySmall),
               ],
             ),
           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_text_styles.dart';
+import '../../../../core/theme/app_theme.dart';
 import 'arabic_letters_learning_data.dart';
 import 'arabic_letters_section_card.dart';
 
@@ -58,12 +58,12 @@ class _FamilyCard extends StatelessWidget {
         children: [
           Text(
             family.title,
-            style: Theme.of(
+            style: AppTheme.text(
               context,
-            ).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700),
+            ).titleSmall.copyWith(fontWeight: AppTheme.weightBold),
           ),
           const SizedBox(height: 4),
-          Text(family.goal, style: Theme.of(context).textTheme.bodySmall),
+          Text(family.goal, style: AppTheme.text(context).bodySmall),
           const SizedBox(height: 8),
           Wrap(
             spacing: 6,
@@ -84,10 +84,10 @@ class _FamilyCard extends StatelessWidget {
                   ),
                   child: Text(
                     letter,
-                    style: AppTextStyles.learnArabicLetter(
+                    style: AppTheme.learnArabicLetter(
                       context,
-                      fontSize: 29,
-                    ).copyWith(fontWeight: FontWeight.w700),
+                      fontSize: AppTheme.scaledFontSize(context, 29),
+                    ).copyWith(fontWeight: AppTheme.weightBold),
                   ),
                 ),
             ],
@@ -95,7 +95,7 @@ class _FamilyCard extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             '${context.learnText('Tip')}: ${family.tip}',
-            style: Theme.of(context).textTheme.labelMedium?.copyWith(
+            style: AppTheme.text(context).labelMedium.copyWith(
               color: colorScheme.onSurface.withValues(alpha: 0.78),
             ),
           ),
