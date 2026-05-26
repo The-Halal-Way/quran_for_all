@@ -262,6 +262,34 @@
   "prayerViewNext": "Next",
   "prayerViewPassed": "Passed",
   "prayerViewSoon": "Soon",
+  "prayerForbiddenTimesTitle": "Forbidden Times",
+  "prayerForbiddenTimesSubtitle": "Short windows where starting voluntary salah should be avoided.",
+  "prayerForbiddenAlertTitle": "Pause voluntary prayer here",
+  "prayerForbiddenAlertBody": "Keep dhikr, Quran listening, or quiet reflection, then pray again once the window clears. Fiqh details can vary, so follow a trusted scholar for specific rulings.",
+  "prayerForbiddenPauseLabel": "PAUSE",
+  "prayerForbiddenSunriseTitle": "At sunrise",
+  "prayerForbiddenSunriseBody": "Avoid beginning voluntary prayer while the sun is rising; wait until it has clearly risen.",
+  "prayerForbiddenZenithTitle": "At zenith",
+  "prayerForbiddenZenithBody": "Pause optional salah when the sun is at its highest point, just before Dhuhr enters.",
+  "prayerForbiddenSunsetTitle": "At sunset",
+  "prayerForbiddenSunsetBody": "Avoid starting voluntary prayer as the sun is setting; pray Maghrib when its time begins.",
+  "prayerForbiddenTimeFallback": "Time unavailable",
+  "prayerForbiddenAroundTime": "Around {time}",
+  "@prayerForbiddenAroundTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerForbiddenBeforeTime": "Before {time}",
+  "@prayerForbiddenBeforeTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
   "prayerHowIntentionTitle": "Intention & readiness",
   "prayerHowIntentionBody": "Make wudu, face the qibla, and settle your intention in the heart before you begin.",
   "prayerHowQiyamTitle": "Qiyam",

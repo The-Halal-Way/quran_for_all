@@ -5,6 +5,7 @@ import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard/tasbeeh_viewmodel.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/tasbeeh/tasbeeh_widgets.dart';
 
 class TasbeehView extends StatelessWidget {
@@ -45,58 +46,61 @@ class _TasbeehBody extends StatelessWidget {
                     ? (constraints.maxWidth - _maxContentWidth) / 2
                     : responsive.padding;
 
-                return SingleChildScrollView(
-                  physics: const BouncingScrollPhysics(),
-                  padding: EdgeInsets.fromLTRB(horizontal, 16, horizontal, 96),
-                  child: Column(
-                    children: [
-                      TasbeehAppBar(isDark: isDark),
-                      SizedBox(height: responsive.sectionGap + 6),
-                      TasbeehCounterDisplay(
-                        count: vm.count,
-                        target: vm.target,
-                        progress: vm.progress,
-                        phraseArabic: selectedPhrase.arabic,
-                        phraseLabel: phraseLabel,
-                        isTargetReached: vm.isTargetReached,
-                        isDark: isDark,
-                        onTap: () {
-                          HapticFeedback.selectionClick();
-                          vm.increment();
-                        },
-                      ),
-                      SizedBox(height: responsive.sectionGap + 4),
-                      TasbeehPhraseSelector(
-                        phrases: TasbeehViewModel.phrases,
-                        selectedKey: vm.selectedPhraseKey,
-                        isDark: isDark,
-                        onSelected: vm.selectPhrase,
-                      ),
-                      SizedBox(height: responsive.sectionGap),
-                      _TasbeehInfoGrid(
-                        isWide: constraints.maxWidth >= 700,
-                        targetSelector: TasbeehTargetSelector(
-                          targets: TasbeehViewModel.targets,
-                          selectedTarget: vm.target,
+                return AppPageScrollbar(
+                  builder: (context, controller) => SingleChildScrollView(
+                    controller: controller,
+                    physics: const BouncingScrollPhysics(),
+                    padding: EdgeInsets.fromLTRB(horizontal, 16, horizontal, 96),
+                    child: Column(
+                      children: [
+                        TasbeehAppBar(isDark: isDark),
+                        SizedBox(height: responsive.sectionGap + 6),
+                        TasbeehCounterDisplay(
+                          count: vm.count,
+                          target: vm.target,
+                          progress: vm.progress,
+                          phraseArabic: selectedPhrase.arabic,
+                          phraseLabel: phraseLabel,
+                          isTargetReached: vm.isTargetReached,
                           isDark: isDark,
-                          onSelected: vm.selectTarget,
+                          onTap: () {
+                            HapticFeedback.selectionClick();
+                            vm.increment();
+                          },
                         ),
-                        statsPanel: TasbeehStatsPanel(
-                          totalCount: vm.totalCount,
-                          completedRounds: vm.completedRounds,
-                          currentCount: vm.count,
+                        SizedBox(height: responsive.sectionGap + 4),
+                        TasbeehPhraseSelector(
+                          phrases: TasbeehViewModel.phrases,
+                          selectedKey: vm.selectedPhraseKey,
                           isDark: isDark,
+                          onSelected: vm.selectPhrase,
                         ),
-                      ),
-                      SizedBox(height: responsive.sectionGap),
-                      TasbeehControls(
-                        isDark: isDark,
-                        canUndo: vm.count > 0 || vm.totalCount > 0,
-                        onUndo: vm.decrement,
-                        onResetCount: vm.resetCount,
-                        onResetAll: vm.resetAll,
-                      ),
-                    ],
+                        SizedBox(height: responsive.sectionGap),
+                        _TasbeehInfoGrid(
+                          isWide: constraints.maxWidth >= 700,
+                          targetSelector: TasbeehTargetSelector(
+                            targets: TasbeehViewModel.targets,
+                            selectedTarget: vm.target,
+                            isDark: isDark,
+                            onSelected: vm.selectTarget,
+                          ),
+                          statsPanel: TasbeehStatsPanel(
+                            totalCount: vm.totalCount,
+                            completedRounds: vm.completedRounds,
+                            currentCount: vm.count,
+                            isDark: isDark,
+                          ),
+                        ),
+                        SizedBox(height: responsive.sectionGap),
+                        TasbeehControls(
+                          isDark: isDark,
+                          canUndo: vm.count > 0 || vm.totalCount > 0,
+                          onUndo: vm.decrement,
+                          onResetCount: vm.resetCount,
+                          onResetAll: vm.resetAll,
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },

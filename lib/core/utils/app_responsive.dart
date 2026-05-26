@@ -41,9 +41,9 @@ class AppResponsive {
 
   /// Adaptive horizontal padding: tighter on mobile, wider on larger screens.
   double get padding {
-    if (isSmallPhone) return 14;
-    if (isCompactPhone) return 15;
-    if (isMobile) return 16;
+    if (isSmallPhone) return 10;
+    if (isCompactPhone) return 13;
+    if (isMobile) return 12;
     if (isLargeTablet) return 26;
     if (isTablet) return 22;
     return 30;

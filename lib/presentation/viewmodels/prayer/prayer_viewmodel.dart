@@ -142,6 +142,32 @@ class PrayerViewModel extends ChangeNotifier {
     ];
   }
 
+  List<PrayerForbiddenTimeItem> forbiddenTimes(AppLocalizations l10n) {
+    return [
+      PrayerForbiddenTimeItem(
+        title: l10n.prayerForbiddenSunriseTitle,
+        timeLabel: _aroundTime(
+          l10n,
+          _prayerTimes[PrayerKey.sunrise.scheduleKey],
+        ),
+        body: l10n.prayerForbiddenSunriseBody,
+      ),
+      PrayerForbiddenTimeItem(
+        title: l10n.prayerForbiddenZenithTitle,
+        timeLabel: _beforeTime(l10n, _prayerTimes[PrayerKey.dhuhr.scheduleKey]),
+        body: l10n.prayerForbiddenZenithBody,
+      ),
+      PrayerForbiddenTimeItem(
+        title: l10n.prayerForbiddenSunsetTitle,
+        timeLabel: _beforeTime(
+          l10n,
+          _prayerTimes[PrayerKey.maghrib.scheduleKey],
+        ),
+        body: l10n.prayerForbiddenSunsetBody,
+      ),
+    ];
+  }
+
   String localizedPrayerName(AppLocalizations l10n, PrayerKey prayer) {
     switch (prayer) {
       case PrayerKey.fajr:
@@ -171,6 +197,20 @@ class PrayerViewModel extends ChangeNotifier {
     }
 
     return null;
+  }
+
+  String _aroundTime(AppLocalizations l10n, String? time) {
+    if (time == null || time.isEmpty) {
+      return l10n.prayerForbiddenTimeFallback;
+    }
+    return l10n.prayerForbiddenAroundTime(time);
+  }
+
+  String _beforeTime(AppLocalizations l10n, String? time) {
+    if (time == null || time.isEmpty) {
+      return l10n.prayerForbiddenTimeFallback;
+    }
+    return l10n.prayerForbiddenBeforeTime(time);
   }
 
   PrayerKey _fallbackPrayerForNow() {

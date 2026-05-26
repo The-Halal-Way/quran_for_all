@@ -6,6 +6,7 @@ import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/duah/ninty_nine_names_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/duah/ninty_nine_names/ninty_nine_names_widgets.dart';
 
 class DuahNintyNineView extends StatelessWidget {
@@ -45,32 +46,35 @@ class _DuahNintyNineBody extends StatelessWidget {
                   ? (constraints.maxWidth - maxWidth) / 2
                   : responsive.padding;
 
-              return CustomScrollView(
-                physics: const BouncingScrollPhysics(),
-                slivers: [
-                  const NintyNineNamesAppBar(),
-                  if (vm.isLoading && !vm.hasData)
-                    const SliverFillRemaining(
-                      hasScrollBody: false,
-                      child: NintyNineNamesLoadingState(),
-                    )
-                  else if (!vm.hasData)
-                    SliverFillRemaining(
-                      hasScrollBody: false,
-                      child: NintyNineNamesErrorState(
+              return AppPageScrollbar(
+                builder: (context, controller) => CustomScrollView(
+                  controller: controller,
+                  physics: const BouncingScrollPhysics(),
+                  slivers: [
+                    const NintyNineNamesAppBar(),
+                    if (vm.isLoading && !vm.hasData)
+                      const SliverFillRemaining(
+                        hasScrollBody: false,
+                        child: NintyNineNamesLoadingState(),
+                      )
+                    else if (!vm.hasData)
+                      SliverFillRemaining(
+                        hasScrollBody: false,
+                        child: NintyNineNamesErrorState(
+                          isDark: isDark,
+                          onRetry: vm.reload,
+                        ),
+                      )
+                    else
+                      ..._contentSlivers(
+                        context: context,
+                        vm: vm,
+                        language: language,
                         isDark: isDark,
-                        onRetry: vm.reload,
+                        horizontal: horizontal,
                       ),
-                    )
-                  else
-                    ..._contentSlivers(
-                      context: context,
-                      vm: vm,
-                      language: language,
-                      isDark: isDark,
-                      horizontal: horizontal,
-                    ),
-                ],
+                  ],
+                ),
               );
             },
           ),

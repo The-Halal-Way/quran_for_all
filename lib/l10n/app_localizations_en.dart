@@ -538,6 +538,57 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerViewSoon => 'Soon';
 
   @override
+  String get prayerForbiddenTimesTitle => 'Forbidden Times';
+
+  @override
+  String get prayerForbiddenTimesSubtitle =>
+      'Short windows where starting voluntary salah should be avoided.';
+
+  @override
+  String get prayerForbiddenAlertTitle => 'Pause voluntary prayer here';
+
+  @override
+  String get prayerForbiddenAlertBody =>
+      'Keep dhikr, Quran listening, or quiet reflection, then pray again once the window clears. Fiqh details can vary, so follow a trusted scholar for specific rulings.';
+
+  @override
+  String get prayerForbiddenPauseLabel => 'PAUSE';
+
+  @override
+  String get prayerForbiddenSunriseTitle => 'At sunrise';
+
+  @override
+  String get prayerForbiddenSunriseBody =>
+      'Avoid beginning voluntary prayer while the sun is rising; wait until it has clearly risen.';
+
+  @override
+  String get prayerForbiddenZenithTitle => 'At zenith';
+
+  @override
+  String get prayerForbiddenZenithBody =>
+      'Pause optional salah when the sun is at its highest point, just before Dhuhr enters.';
+
+  @override
+  String get prayerForbiddenSunsetTitle => 'At sunset';
+
+  @override
+  String get prayerForbiddenSunsetBody =>
+      'Avoid starting voluntary prayer as the sun is setting; pray Maghrib when its time begins.';
+
+  @override
+  String get prayerForbiddenTimeFallback => 'Time unavailable';
+
+  @override
+  String prayerForbiddenAroundTime(String time) {
+    return 'Around $time';
+  }
+
+  @override
+  String prayerForbiddenBeforeTime(String time) {
+    return 'Before $time';
+  }
+
+  @override
   String get prayerHowIntentionTitle => 'Intention & readiness';
 
   @override

@@ -46,6 +46,18 @@ class PrayerGuidanceItem {
   final String body;
 }
 
+class PrayerForbiddenTimeItem {
+  const PrayerForbiddenTimeItem({
+    required this.title,
+    required this.timeLabel,
+    required this.body,
+  });
+
+  final String title;
+  final String timeLabel;
+  final String body;
+}
+
 class PrayerFocusContent {
   const PrayerFocusContent({
     required this.prayer,

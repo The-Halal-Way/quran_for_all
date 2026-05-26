@@ -262,6 +262,34 @@
   "prayerViewNext": "পরবর্তী",
   "prayerViewPassed": "অতিবাহিত",
   "prayerViewSoon": "শিগগির",
+  "prayerForbiddenTimesTitle": "নিষিদ্ধ সময়",
+  "prayerForbiddenTimesSubtitle": "ছোট কিছু সময়, যখন নফল নামাজ শুরু করা এড়িয়ে চলা উচিত।",
+  "prayerForbiddenAlertTitle": "এখানে নফল নামাজে বিরতি দিন",
+  "prayerForbiddenAlertBody": "জিকির, কুরআন শ্রবণ বা নীরব চিন্তায় থাকুন, তারপর সময় পরিষ্কার হলে আবার নামাজ পড়ুন। ফিকহি বিস্তারিত ভিন্ন হতে পারে, তাই নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেমের অনুসরণ করুন।",
+  "prayerForbiddenPauseLabel": "বিরতি",
+  "prayerForbiddenSunriseTitle": "সূর্যোদয়ের সময়",
+  "prayerForbiddenSunriseBody": "সূর্য ওঠার সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; সূর্য স্পষ্টভাবে উঠে গেলে অপেক্ষা শেষ করুন।",
+  "prayerForbiddenZenithTitle": "সূর্য মধ্যাকাশে",
+  "prayerForbiddenZenithBody": "যোহর শুরুর ঠিক আগে সূর্য যখন সর্বোচ্চ অবস্থানে থাকে, তখন ঐচ্ছিক নামাজে বিরতি দিন।",
+  "prayerForbiddenSunsetTitle": "সূর্যাস্তের সময়",
+  "prayerForbiddenSunsetBody": "সূর্য ডোবার সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; মাগরিবের সময় শুরু হলে মাগরিব পড়ুন।",
+  "prayerForbiddenTimeFallback": "সময় পাওয়া যায়নি",
+  "prayerForbiddenAroundTime": "প্রায় {time}",
+  "@prayerForbiddenAroundTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerForbiddenBeforeTime": "{time}-এর আগে",
+  "@prayerForbiddenBeforeTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
   "prayerHowIntentionTitle": "নিয়ত ও প্রস্তুতি",
   "prayerHowIntentionBody": "ওজু করুন, কিবলামুখী হন, এবং শুরু করার আগে অন্তরে নিয়ত স্থির করুন।",
   "prayerHowQiyamTitle": "কিয়াম",

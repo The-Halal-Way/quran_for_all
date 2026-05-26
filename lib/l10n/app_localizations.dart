@@ -1061,6 +1061,90 @@ abstract class AppLocalizations {
   /// **'Soon'**
   String get prayerViewSoon;
 
+  /// No description provided for @prayerForbiddenTimesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Forbidden Times'**
+  String get prayerForbiddenTimesTitle;
+
+  /// No description provided for @prayerForbiddenTimesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Short windows where starting voluntary salah should be avoided.'**
+  String get prayerForbiddenTimesSubtitle;
+
+  /// No description provided for @prayerForbiddenAlertTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause voluntary prayer here'**
+  String get prayerForbiddenAlertTitle;
+
+  /// No description provided for @prayerForbiddenAlertBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep dhikr, Quran listening, or quiet reflection, then pray again once the window clears. Fiqh details can vary, so follow a trusted scholar for specific rulings.'**
+  String get prayerForbiddenAlertBody;
+
+  /// No description provided for @prayerForbiddenPauseLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'PAUSE'**
+  String get prayerForbiddenPauseLabel;
+
+  /// No description provided for @prayerForbiddenSunriseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'At sunrise'**
+  String get prayerForbiddenSunriseTitle;
+
+  /// No description provided for @prayerForbiddenSunriseBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoid beginning voluntary prayer while the sun is rising; wait until it has clearly risen.'**
+  String get prayerForbiddenSunriseBody;
+
+  /// No description provided for @prayerForbiddenZenithTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'At zenith'**
+  String get prayerForbiddenZenithTitle;
+
+  /// No description provided for @prayerForbiddenZenithBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause optional salah when the sun is at its highest point, just before Dhuhr enters.'**
+  String get prayerForbiddenZenithBody;
+
+  /// No description provided for @prayerForbiddenSunsetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'At sunset'**
+  String get prayerForbiddenSunsetTitle;
+
+  /// No description provided for @prayerForbiddenSunsetBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Avoid starting voluntary prayer as the sun is setting; pray Maghrib when its time begins.'**
+  String get prayerForbiddenSunsetBody;
+
+  /// No description provided for @prayerForbiddenTimeFallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Time unavailable'**
+  String get prayerForbiddenTimeFallback;
+
+  /// No description provided for @prayerForbiddenAroundTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Around {time}'**
+  String prayerForbiddenAroundTime(String time);
+
+  /// No description provided for @prayerForbiddenBeforeTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Before {time}'**
+  String prayerForbiddenBeforeTime(String time);
+
   /// No description provided for @prayerHowIntentionTitle.
   ///
   /// In en, this message translates to:

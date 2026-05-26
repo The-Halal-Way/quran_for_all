@@ -539,6 +539,57 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerViewSoon => 'শিগগির';
 
   @override
+  String get prayerForbiddenTimesTitle => 'নিষিদ্ধ সময়';
+
+  @override
+  String get prayerForbiddenTimesSubtitle =>
+      'ছোট কিছু সময়, যখন নফল নামাজ শুরু করা এড়িয়ে চলা উচিত।';
+
+  @override
+  String get prayerForbiddenAlertTitle => 'এখানে নফল নামাজে বিরতি দিন';
+
+  @override
+  String get prayerForbiddenAlertBody =>
+      'জিকির, কুরআন শ্রবণ বা নীরব চিন্তায় থাকুন, তারপর সময় পরিষ্কার হলে আবার নামাজ পড়ুন। ফিকহি বিস্তারিত ভিন্ন হতে পারে, তাই নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেমের অনুসরণ করুন।';
+
+  @override
+  String get prayerForbiddenPauseLabel => 'বিরতি';
+
+  @override
+  String get prayerForbiddenSunriseTitle => 'সূর্যোদয়ের সময়';
+
+  @override
+  String get prayerForbiddenSunriseBody =>
+      'সূর্য ওঠার সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; সূর্য স্পষ্টভাবে উঠে গেলে অপেক্ষা শেষ করুন।';
+
+  @override
+  String get prayerForbiddenZenithTitle => 'সূর্য মধ্যাকাশে';
+
+  @override
+  String get prayerForbiddenZenithBody =>
+      'যোহর শুরুর ঠিক আগে সূর্য যখন সর্বোচ্চ অবস্থানে থাকে, তখন ঐচ্ছিক নামাজে বিরতি দিন।';
+
+  @override
+  String get prayerForbiddenSunsetTitle => 'সূর্যাস্তের সময়';
+
+  @override
+  String get prayerForbiddenSunsetBody =>
+      'সূর্য ডোবার সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; মাগরিবের সময় শুরু হলে মাগরিব পড়ুন।';
+
+  @override
+  String get prayerForbiddenTimeFallback => 'সময় পাওয়া যায়নি';
+
+  @override
+  String prayerForbiddenAroundTime(String time) {
+    return 'প্রায় $time';
+  }
+
+  @override
+  String prayerForbiddenBeforeTime(String time) {
+    return '$time-এর আগে';
+  }
+
+  @override
   String get prayerHowIntentionTitle => 'নিয়ত ও প্রস্তুতি';
 
   @override

@@ -26,6 +26,7 @@ import 'package:quran_for_all/presentation/views/dashboard/tasbeeh_view.dart';
 import 'package:quran_for_all/presentation/views/learn_quran/learning_module_detail_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/surah_details_view.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 
 part '../../../data/models/dashboard/dashboard_action_item.dart';
 part '../../widgets/dashboard/dashboard/dashboard_view_sections.dart';
@@ -153,108 +154,115 @@ class _DashboardViewState extends State<DashboardView> {
             child: RefreshIndicator(
               color: MyColors.secondary,
               onRefresh: _refreshDashboard,
-              child: SingleChildScrollView(
-                physics: const AlwaysScrollableScrollPhysics(
-                  parent: BouncingScrollPhysics(),
-                ),
-                padding: EdgeInsets.fromLTRB(
-                  responsive.padding,
-                  20,
-                  responsive.padding,
-                  32,
-                ),
-                child: Center(
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(
-                      maxWidth: responsive.isDesktop
-                          ? _dashboardDesktopMaxWidth
-                          : responsive.isTablet
-                          ? _dashboardTabletMaxWidth
-                          : responsive.maxReadingContentWidth,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        _buildGreetingHeader(),
-                        const SizedBox(height: 20),
-                        _buildContinueCards(),
-                        const SizedBox(height: 24),
-                        _buildSectionLabel(
-                          context.l10n.dashboardSectionPrayerTimes,
-                          Icons.access_time_rounded,
-                          MyColors.secondary,
-                        ),
-                        const SizedBox(height: 10),
-                        _buildPrayerCard(),
-                        const SizedBox(height: 24),
-                        _buildSectionLabel(
-                          context.l10n.dashboardSectionDua,
-                          Icons.auto_awesome_rounded,
-                          MyColors.tertiary,
-                        ),
-                        const SizedBox(height: 10),
-                        _buildSmallActionRow(
-                          items: [
-                            DashboardActionItem(
-                              icon: Icons.wb_twilight_rounded,
-                              label: context.l10n.dashboardActionDailyDua,
-                              sublabel: context.l10n.dashboardActionDailyDuaSub,
-                              color: MyColors.tertiary,
-                              onTap: () => _push(const DailyDuahView()),
-                            ),
-                            DashboardActionItem(
-                              icon: Icons.bolt_rounded,
-                              label: context.l10n.dashboardActionPowerfulDua,
-                              sublabel:
-                                  context.l10n.dashboardActionPowerfulDuaSub,
-                              color: MyColors.secondary,
-                              onTap: () => _push(const PowerfulDuahView()),
-                            ),
-                            DashboardActionItem(
-                              icon: Icons.diamond_rounded,
-                              label: context.l10n.dashboardActionNintyNineNames,
-                              sublabel:
-                                  context.l10n.dashboardActionNintyNineNamesSub,
-                              color: MyColors.primaryLight,
-                              onTap: () => _push(const DuahNintyNineView()),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 24),
-                        _buildSectionLabel(
-                          context.l10n.dashboardSectionOthers,
-                          Icons.widgets_rounded,
-                          MyColors.secondary,
-                        ),
-                        const SizedBox(height: 10),
-                        _buildSmallActionRow(
-                          items: [
-                            DashboardActionItem(
-                              icon: Icons.explore_rounded,
-                              label: context.l10n.dashboardActionQiblaCompass,
-                              sublabel:
-                                  context.l10n.dashboardActionQiblaCompassSub,
-                              color: MyColors.primaryLight,
-                              onTap: () => _push(const CompassView()),
-                            ),
-                            DashboardActionItem(
-                              icon: Icons.touch_app_rounded,
-                              label: context.l10n.dashboardActionTasbeeh,
-                              sublabel: context.l10n.dashboardActionTasbeehSub,
-                              color: MyColors.tertiary,
-                              onTap: () => _push(const TasbeehView()),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 24),
-                        _buildSectionLabel(
-                          context.l10n.dashboardSectionHadith,
-                          Icons.menu_book_rounded,
-                          MyColors.primaryLight,
-                        ),
-                        const SizedBox(height: 10),
-                        _buildHadithCards(),
-                      ],
+              child: AppPageScrollbar(
+                builder: (context, controller) => SingleChildScrollView(
+                  controller: controller,
+                  physics: const AlwaysScrollableScrollPhysics(
+                    parent: BouncingScrollPhysics(),
+                  ),
+                  padding: EdgeInsets.fromLTRB(
+                    responsive.padding,
+                    20,
+                    responsive.padding,
+                    32,
+                  ),
+                  child: Center(
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxWidth: responsive.isDesktop
+                            ? _dashboardDesktopMaxWidth
+                            : responsive.isTablet
+                            ? _dashboardTabletMaxWidth
+                            : responsive.maxReadingContentWidth,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          _buildGreetingHeader(),
+                          const SizedBox(height: 20),
+                          _buildContinueCards(),
+                          const SizedBox(height: 24),
+                          _buildSectionLabel(
+                            context.l10n.dashboardSectionPrayerTimes,
+                            Icons.access_time_rounded,
+                            MyColors.secondary,
+                          ),
+                          const SizedBox(height: 10),
+                          _buildPrayerCard(),
+                          const SizedBox(height: 24),
+                          _buildSectionLabel(
+                            context.l10n.dashboardSectionDua,
+                            Icons.auto_awesome_rounded,
+                            MyColors.tertiary,
+                          ),
+                          const SizedBox(height: 10),
+                          _buildSmallActionRow(
+                            items: [
+                              DashboardActionItem(
+                                icon: Icons.wb_twilight_rounded,
+                                label: context.l10n.dashboardActionDailyDua,
+                                sublabel:
+                                    context.l10n.dashboardActionDailyDuaSub,
+                                color: MyColors.tertiary,
+                                onTap: () => _push(const DailyDuahView()),
+                              ),
+                              DashboardActionItem(
+                                icon: Icons.bolt_rounded,
+                                label: context.l10n.dashboardActionPowerfulDua,
+                                sublabel:
+                                    context.l10n.dashboardActionPowerfulDuaSub,
+                                color: MyColors.secondary,
+                                onTap: () => _push(const PowerfulDuahView()),
+                              ),
+                              DashboardActionItem(
+                                icon: Icons.diamond_rounded,
+                                label:
+                                    context.l10n.dashboardActionNintyNineNames,
+                                sublabel: context
+                                    .l10n
+                                    .dashboardActionNintyNineNamesSub,
+                                color: MyColors.primaryLight,
+                                onTap: () => _push(const DuahNintyNineView()),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 24),
+                          _buildSectionLabel(
+                            context.l10n.dashboardSectionOthers,
+                            Icons.widgets_rounded,
+                            MyColors.secondary,
+                          ),
+                          const SizedBox(height: 10),
+                          _buildSmallActionRow(
+                            items: [
+                              DashboardActionItem(
+                                icon: Icons.explore_rounded,
+                                label: context.l10n.dashboardActionQiblaCompass,
+                                sublabel:
+                                    context.l10n.dashboardActionQiblaCompassSub,
+                                color: MyColors.primaryLight,
+                                onTap: () => _push(const CompassView()),
+                              ),
+                              DashboardActionItem(
+                                icon: Icons.touch_app_rounded,
+                                label: context.l10n.dashboardActionTasbeeh,
+                                sublabel:
+                                    context.l10n.dashboardActionTasbeehSub,
+                                color: MyColors.tertiary,
+                                onTap: () => _push(const TasbeehView()),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 24),
+                          _buildSectionLabel(
+                            context.l10n.dashboardSectionHadith,
+                            Icons.menu_book_rounded,
+                            MyColors.primaryLight,
+                          ),
+                          const SizedBox(height: 10),
+                          _buildHadithCards(),
+                        ],
+                      ),
                     ),
                   ),
                 ),
