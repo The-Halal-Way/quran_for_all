@@ -6,16 +6,19 @@ import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_gradients.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'package:quran_for_all/core/utils/app_page_route.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/prayer/prayer_viewmodel.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_details_app_bar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_focus_hero.dart';
-import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_forbidden_times_card.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_guidance_sections.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_reference_actions.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_timeline_card.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
+import 'package:quran_for_all/presentation/views/dashboard/prayer/forbidden_times_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/prayer/nafal_prayers_view.dart';
 
 class PrayerView extends StatefulWidget {
   const PrayerView({super.key});
@@ -69,6 +72,7 @@ class _PrayerViewBody extends StatelessWidget {
     final timeline = viewModel.timeline(l10n);
     final howToPray = viewModel.howToPraySteps(l10n);
     final forbiddenTimes = viewModel.forbiddenTimes(l10n);
+    final nafalPrayers = viewModel.nafalPrayers(l10n);
     final accent = PrayerVisuals.accentFor(content.prayer);
     final responsive = AppResponsive.of(context);
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -134,15 +138,30 @@ class _PrayerViewBody extends StatelessWidget {
                                 time: viewModel.focusTime(l10n),
                                 hasTimes: prayerTimesVm.hasData,
                               ),
-                              // forbidden times section
                               PrayerSectionHeader(
-                                title: l10n.prayerForbiddenTimesTitle,
-                                subtitle: l10n.prayerForbiddenTimesSubtitle,
-                                icon: Icons.block_rounded,
-                                accent: MyColors.secondary,
+                                title: l10n.prayerReferenceTitle,
+                                subtitle: l10n.prayerReferenceSubtitle,
+                                icon: Icons.library_books_rounded,
+                                accent: MyColors.tertiary,
                               ),
-                              // forbidden times cards
-                              PrayerForbiddenTimesCard(items: forbiddenTimes),
+                              PrayerReferenceActions(
+                                onForbiddenTimesTap: () =>
+                                    Navigator.of(context).push(
+                                      AppPageRoute<void>(
+                                        builder: (_) => ForbiddenTimesView(
+                                          items: forbiddenTimes,
+                                        ),
+                                      ),
+                                    ),
+                                onNafalPrayersTap: () =>
+                                    Navigator.of(context).push(
+                                      AppPageRoute<void>(
+                                        builder: (_) => NafalPrayersView(
+                                          items: nafalPrayers,
+                                        ),
+                                      ),
+                                    ),
+                              ),
                               PrayerSectionHeader(
                                 title: l10n.prayerViewTimelineTitle,
                                 subtitle: l10n.prayerViewTimelineSubtitle,
@@ -152,8 +171,8 @@ class _PrayerViewBody extends StatelessWidget {
                               if (viewModel.prayerTimeRanges['Sehri'] != null &&
                                   viewModel.prayerTimes['Sehri'] != null)
                                 PrayerSehriWindowCard(
-                                  timeRange: viewModel
-                                      .prayerTimeRanges['Sehri']!,
+                                  timeRange:
+                                      viewModel.prayerTimeRanges['Sehri']!,
                                   lastTime: viewModel.prayerTimes['Sehri']!,
                                 ),
                               PrayerTimelineCard(items: timeline),

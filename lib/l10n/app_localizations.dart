@@ -1145,6 +1145,330 @@ abstract class AppLocalizations {
   /// **'Before {time}'**
   String prayerForbiddenBeforeTime(String time);
 
+  /// No description provided for @prayerReferenceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidance Library'**
+  String get prayerReferenceTitle;
+
+  /// No description provided for @prayerReferenceSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the details only when you need them, so the main prayer view stays calm.'**
+  String get prayerReferenceSubtitle;
+
+  /// No description provided for @prayerReferenceForbiddenActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Forbidden Times'**
+  String get prayerReferenceForbiddenActionTitle;
+
+  /// No description provided for @prayerReferenceForbiddenActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Know when to pause voluntary salah.'**
+  String get prayerReferenceForbiddenActionSubtitle;
+
+  /// No description provided for @prayerReferenceNafalActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Nafal Prayers'**
+  String get prayerReferenceNafalActionTitle;
+
+  /// No description provided for @prayerReferenceNafalActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tahajjud, Ishraq, Duha, and Awwabin in one daily flow.'**
+  String get prayerReferenceNafalActionSubtitle;
+
+  /// No description provided for @prayerReferenceOpenLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'View'**
+  String get prayerReferenceOpenLabel;
+
+  /// No description provided for @prayerNafalTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Nafal Prayers'**
+  String get prayerNafalTitle;
+
+  /// No description provided for @prayerNafalSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A graceful optional-prayer rhythm for morning, daylight, evening, and night.'**
+  String get prayerNafalSubtitle;
+
+  /// No description provided for @prayerNafalArabicLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'نفل'**
+  String get prayerNafalArabicLabel;
+
+  /// No description provided for @prayerNafalDailyFlowLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily flow'**
+  String get prayerNafalDailyFlowLabel;
+
+  /// No description provided for @prayerNafalFlexibleLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Flexible raka\'ahs'**
+  String get prayerNafalFlexibleLabel;
+
+  /// No description provided for @prayerNafalTimeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Time'**
+  String get prayerNafalTimeLabel;
+
+  /// No description provided for @prayerNafalRakahLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Raka\'ahs'**
+  String get prayerNafalRakahLabel;
+
+  /// No description provided for @prayerNafalBenefitLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Benefit'**
+  String get prayerNafalBenefitLabel;
+
+  /// No description provided for @prayerNafalHadithReferencesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith references'**
+  String get prayerNafalHadithReferencesLabel;
+
+  /// No description provided for @prayerNafalNoteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Gentle fiqh note'**
+  String get prayerNafalNoteTitle;
+
+  /// No description provided for @prayerNafalNoteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'These are friendly reminders for common nafal windows. Details and rakah counts may vary by madhhab and teacher, so follow trusted local guidance for rulings.'**
+  String get prayerNafalNoteBody;
+
+  /// No description provided for @prayerNafalTahajjudTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tahajjud'**
+  String get prayerNafalTahajjudTitle;
+
+  /// No description provided for @prayerNafalTahajjudBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Deep night'**
+  String get prayerNafalTahajjudBadge;
+
+  /// No description provided for @prayerNafalTahajjudTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Last third of the night before Fajr'**
+  String get prayerNafalTahajjudTime;
+
+  /// No description provided for @prayerNafalTahajjudRakah.
+  ///
+  /// In en, this message translates to:
+  /// **'2+'**
+  String get prayerNafalTahajjudRakah;
+
+  /// No description provided for @prayerNafalTahajjudBenefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Turns the quiet night into du\'a, repentance, and deeper focus.'**
+  String get prayerNafalTahajjudBenefit;
+
+  /// No description provided for @prayerNafalTahajjudBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Wake gently, pray in pairs, and keep the recitation calm. Even two focused raka\'ahs can become the quietest anchor of the day.'**
+  String get prayerNafalTahajjudBody;
+
+  /// No description provided for @prayerNafalTahajjudHadith1Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 1163a'**
+  String get prayerNafalTahajjudHadith1Source;
+
+  /// No description provided for @prayerNafalTahajjudHadith1Body.
+  ///
+  /// In en, this message translates to:
+  /// **'The best prayer after the obligatory prayer is night prayer.'**
+  String get prayerNafalTahajjudHadith1Body;
+
+  /// No description provided for @prayerNafalIshraqTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ishraq'**
+  String get prayerNafalIshraqTitle;
+
+  /// No description provided for @prayerNafalIshraqBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'After sunrise'**
+  String get prayerNafalIshraqBadge;
+
+  /// No description provided for @prayerNafalIshraqTime.
+  ///
+  /// In en, this message translates to:
+  /// **'After sunrise has clearly passed'**
+  String get prayerNafalIshraqTime;
+
+  /// No description provided for @prayerNafalIshraqRakah.
+  ///
+  /// In en, this message translates to:
+  /// **'2'**
+  String get prayerNafalIshraqRakah;
+
+  /// No description provided for @prayerNafalIshraqBenefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Connects Fajr, dhikr, and a hopeful start to the morning.'**
+  String get prayerNafalIshraqBenefit;
+
+  /// No description provided for @prayerNafalIshraqBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait until the forbidden sunrise window clears, then begin with a light heart and a short, sincere prayer.'**
+  String get prayerNafalIshraqBody;
+
+  /// No description provided for @prayerNafalIshraqHadith1Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Jami\' at-Tirmidhi 586'**
+  String get prayerNafalIshraqHadith1Source;
+
+  /// No description provided for @prayerNafalIshraqHadith1Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Fajr in congregation, dhikr until sunrise, then two raka\'ahs is reported with Hajj and Umrah reward.'**
+  String get prayerNafalIshraqHadith1Body;
+
+  /// No description provided for @prayerNafalDuhaTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Duha / Chasht'**
+  String get prayerNafalDuhaTitle;
+
+  /// No description provided for @prayerNafalDuhaBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Bright morning'**
+  String get prayerNafalDuhaBadge;
+
+  /// No description provided for @prayerNafalDuhaTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Mid-morning until before Dhuhr'**
+  String get prayerNafalDuhaTime;
+
+  /// No description provided for @prayerNafalDuhaRakah.
+  ///
+  /// In en, this message translates to:
+  /// **'2-8'**
+  String get prayerNafalDuhaRakah;
+
+  /// No description provided for @prayerNafalDuhaBenefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Refreshes gratitude and covers the morning charity due from the body.'**
+  String get prayerNafalDuhaBenefit;
+
+  /// No description provided for @prayerNafalDuhaBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the morning stretch for gratitude, provision, and renewed energy before the day gets heavy.'**
+  String get prayerNafalDuhaBody;
+
+  /// No description provided for @prayerNafalDuhaHadith1Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 720'**
+  String get prayerNafalDuhaHadith1Source;
+
+  /// No description provided for @prayerNafalDuhaHadith1Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Two raka\'ahs of Duha suffice for the morning charity due from every joint.'**
+  String get prayerNafalDuhaHadith1Body;
+
+  /// No description provided for @prayerNafalDuhaHadith2Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 1178; Sahih Muslim 721a'**
+  String get prayerNafalDuhaHadith2Source;
+
+  /// No description provided for @prayerNafalDuhaHadith2Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Abu Hurayrah was advised to keep Duha among regular acts.'**
+  String get prayerNafalDuhaHadith2Body;
+
+  /// No description provided for @prayerNafalAwwabinTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Awwabin'**
+  String get prayerNafalAwwabinTitle;
+
+  /// No description provided for @prayerNafalAwwabinBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Evening return'**
+  String get prayerNafalAwwabinBadge;
+
+  /// No description provided for @prayerNafalAwwabinTime.
+  ///
+  /// In en, this message translates to:
+  /// **'After Maghrib sunnah, before Isha'**
+  String get prayerNafalAwwabinTime;
+
+  /// No description provided for @prayerNafalAwwabinRakah.
+  ///
+  /// In en, this message translates to:
+  /// **'2-6'**
+  String get prayerNafalAwwabinRakah;
+
+  /// No description provided for @prayerNafalAwwabinBenefit.
+  ///
+  /// In en, this message translates to:
+  /// **'Keeps the Maghrib-Isha window alive with short extra raka\'ahs and dhikr.'**
+  String get prayerNafalAwwabinBenefit;
+
+  /// No description provided for @prayerNafalAwwabinBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Let the evening soften: return to Allah with short raka\'ahs, dhikr, and a quieter transition toward Isha.'**
+  String get prayerNafalAwwabinBody;
+
+  /// No description provided for @prayerNafalAwwabinHadith1Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Jami\' at-Tirmidhi 435; Sunan Ibn Majah 1167'**
+  String get prayerNafalAwwabinHadith1Source;
+
+  /// No description provided for @prayerNafalAwwabinHadith1Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Six raka\'ahs after Maghrib are reported; scholars discuss the report\'s strength.'**
+  String get prayerNafalAwwabinHadith1Body;
+
+  /// No description provided for @prayerNafalAwwabinHadith2Source.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 748b'**
+  String get prayerNafalAwwabinHadith2Source;
+
+  /// No description provided for @prayerNafalAwwabinHadith2Body.
+  ///
+  /// In en, this message translates to:
+  /// **'The name Salat al-Awwabin is also authentically used for the Duha-time prayer.'**
+  String get prayerNafalAwwabinHadith2Body;
+
   /// No description provided for @prayerHowIntentionTitle.
   ///
   /// In en, this message translates to:

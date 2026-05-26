@@ -590,6 +590,189 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get prayerReferenceTitle => 'নির্দেশনা লাইব্রেরি';
+
+  @override
+  String get prayerReferenceSubtitle =>
+      'প্রয়োজন হলে বিস্তারিত খুলুন, যাতে মূল নামাজ ভিউ শান্ত ও হালকা থাকে।';
+
+  @override
+  String get prayerReferenceForbiddenActionTitle => 'নিষিদ্ধ সময়';
+
+  @override
+  String get prayerReferenceForbiddenActionSubtitle =>
+      'কখন নফল নামাজে বিরতি দিতে হবে জেনে নিন।';
+
+  @override
+  String get prayerReferenceNafalActionTitle => 'দৈনিক নফল নামাজ';
+
+  @override
+  String get prayerReferenceNafalActionSubtitle =>
+      'তাহাজ্জুদ, ইশরাক, দুহা ও আউয়াবিন এক ধারায় দেখুন।';
+
+  @override
+  String get prayerReferenceOpenLabel => 'দেখুন';
+
+  @override
+  String get prayerNafalTitle => 'দৈনিক নফল নামাজ';
+
+  @override
+  String get prayerNafalSubtitle =>
+      'সকাল, দিন, সন্ধ্যা ও রাতের জন্য শান্ত ঐচ্ছিক নামাজের ধারা।';
+
+  @override
+  String get prayerNafalArabicLabel => 'نفل';
+
+  @override
+  String get prayerNafalDailyFlowLabel => 'দৈনিক ধারা';
+
+  @override
+  String get prayerNafalFlexibleLabel => 'রাকাত নমনীয়';
+
+  @override
+  String get prayerNafalTimeLabel => 'সময়';
+
+  @override
+  String get prayerNafalRakahLabel => 'রাকাত';
+
+  @override
+  String get prayerNafalBenefitLabel => 'ফজিলত';
+
+  @override
+  String get prayerNafalHadithReferencesLabel => 'হাদিসের রেফারেন্স';
+
+  @override
+  String get prayerNafalNoteTitle => 'ফিকহি কোমল নোট';
+
+  @override
+  String get prayerNafalNoteBody =>
+      'এগুলো প্রচলিত নফল সময়ের বন্ধুসুলভ স্মরণিকা। মাযহাব ও শিক্ষকের ভিত্তিতে বিস্তারিত ও রাকাত সংখ্যা ভিন্ন হতে পারে, তাই নির্দিষ্ট বিষয়ে বিশ্বস্ত স্থানীয় নির্দেশনা অনুসরণ করুন।';
+
+  @override
+  String get prayerNafalTahajjudTitle => 'তাহাজ্জুদ';
+
+  @override
+  String get prayerNafalTahajjudBadge => 'গভীর রাত';
+
+  @override
+  String get prayerNafalTahajjudTime => 'ফজরের আগে রাতের শেষ তৃতীয়াংশ';
+
+  @override
+  String get prayerNafalTahajjudRakah => '২+';
+
+  @override
+  String get prayerNafalTahajjudBenefit =>
+      'নীরব রাতকে দু\'আ, তওবা ও গভীর মনোযোগের সময়ে বদলে দেয়।';
+
+  @override
+  String get prayerNafalTahajjudBody =>
+      'ধীরে জেগে উঠুন, দুই রাকাত করে পড়ুন, আর তিলাওয়াত শান্ত রাখুন। মনোযোগী দুই রাকাতও দিনের সবচেয়ে নীরব ভরসা হতে পারে।';
+
+  @override
+  String get prayerNafalTahajjudHadith1Source => 'সহিহ মুসলিম ১১৬৩a';
+
+  @override
+  String get prayerNafalTahajjudHadith1Body =>
+      'ফরজ নামাজের পর সবচেয়ে উত্তম নামাজ হলো রাতের নামাজ।';
+
+  @override
+  String get prayerNafalIshraqTitle => 'ইশরাক';
+
+  @override
+  String get prayerNafalIshraqBadge => 'সূর্যোদয়ের পর';
+
+  @override
+  String get prayerNafalIshraqTime => 'সূর্য স্পষ্টভাবে উঠে যাওয়ার পর';
+
+  @override
+  String get prayerNafalIshraqRakah => '২';
+
+  @override
+  String get prayerNafalIshraqBenefit =>
+      'ফজর, জিকির ও আশাময় সকালের শুরু একসঙ্গে যুক্ত করে।';
+
+  @override
+  String get prayerNafalIshraqBody =>
+      'সূর্যোদয়ের নিষিদ্ধ সময় শেষ হওয়া পর্যন্ত অপেক্ষা করুন, তারপর হালকা মন ও আন্তরিক নিয়তে শুরু করুন।';
+
+  @override
+  String get prayerNafalIshraqHadith1Source => 'জামে আত-তিরমিজি ৫৮৬';
+
+  @override
+  String get prayerNafalIshraqHadith1Body =>
+      'জামাতে ফজর, সূর্য ওঠা পর্যন্ত জিকির, তারপর দুই রাকাতের জন্য হজ ও উমরার সওয়াবের বর্ণনা এসেছে।';
+
+  @override
+  String get prayerNafalDuhaTitle => 'দুহা / চাশত';
+
+  @override
+  String get prayerNafalDuhaBadge => 'উজ্জ্বল সকাল';
+
+  @override
+  String get prayerNafalDuhaTime => 'সকাল গড়িয়ে যোহরের আগে পর্যন্ত';
+
+  @override
+  String get prayerNafalDuhaRakah => '২-৮';
+
+  @override
+  String get prayerNafalDuhaBenefit =>
+      'কৃতজ্ঞতা সতেজ করে এবং শরীরের প্রতিটি জোড়ার সদকার দায়িত্ব পূরণে সাহায্য করে।';
+
+  @override
+  String get prayerNafalDuhaBody =>
+      'সকালের সময়টুকু কৃতজ্ঞতা, রিজিক ও নতুন শক্তির জন্য ব্যবহার করুন, দিন ভারী হওয়ার আগেই।';
+
+  @override
+  String get prayerNafalDuhaHadith1Source => 'সহিহ মুসলিম ৭২০';
+
+  @override
+  String get prayerNafalDuhaHadith1Body =>
+      'দুহার দুই রাকাত শরীরের প্রতিটি জোড়ার সকালের সদকার জন্য যথেষ্ট হয়।';
+
+  @override
+  String get prayerNafalDuhaHadith2Source =>
+      'সহিহ বুখারি ১১৭৮; সহিহ মুসলিম ৭২১a';
+
+  @override
+  String get prayerNafalDuhaHadith2Body =>
+      'আবু হুরাইরা (রা.)-কে নিয়মিত আমলের মধ্যে দুহা ধরে রাখতে উপদেশ দেওয়া হয়েছিল।';
+
+  @override
+  String get prayerNafalAwwabinTitle => 'আউয়াবিন';
+
+  @override
+  String get prayerNafalAwwabinBadge => 'সন্ধ্যার প্রত্যাবর্তন';
+
+  @override
+  String get prayerNafalAwwabinTime => 'মাগরিবের সুন্নতের পর, ইশার আগে';
+
+  @override
+  String get prayerNafalAwwabinRakah => '২-৬';
+
+  @override
+  String get prayerNafalAwwabinBenefit =>
+      'মাগরিব-ইশার মাঝের সময়কে ছোট নফল রাকাত ও জিকিরে জীবন্ত রাখে।';
+
+  @override
+  String get prayerNafalAwwabinBody =>
+      'সন্ধ্যাকে কোমল করুন: ছোট রাকাত, জিকির ও শান্ত মনোযোগে আল্লাহর দিকে ফিরে আসুন।';
+
+  @override
+  String get prayerNafalAwwabinHadith1Source =>
+      'জামে আত-তিরমিজি ৪৩৫; সুনান ইবন মাজাহ ১১৬৭';
+
+  @override
+  String get prayerNafalAwwabinHadith1Body =>
+      'মাগরিবের পর ছয় রাকাতের বর্ণনা এসেছে; এই বর্ণনার শক্তি নিয়ে আলেমদের আলোচনা আছে।';
+
+  @override
+  String get prayerNafalAwwabinHadith2Source => 'সহিহ মুসলিম ৭৪৮b';
+
+  @override
+  String get prayerNafalAwwabinHadith2Body =>
+      'সালাতুল আউয়াবিন নামটি সহিহভাবে দুহার সময়ের নামাজের জন্যও এসেছে।';
+
+  @override
   String get prayerHowIntentionTitle => 'নিয়ত ও প্রস্তুতি';
 
   @override

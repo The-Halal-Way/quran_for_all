@@ -589,6 +589,189 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get prayerReferenceTitle => 'Guidance Library';
+
+  @override
+  String get prayerReferenceSubtitle =>
+      'Open the details only when you need them, so the main prayer view stays calm.';
+
+  @override
+  String get prayerReferenceForbiddenActionTitle => 'Forbidden Times';
+
+  @override
+  String get prayerReferenceForbiddenActionSubtitle =>
+      'Know when to pause voluntary salah.';
+
+  @override
+  String get prayerReferenceNafalActionTitle => 'Daily Nafal Prayers';
+
+  @override
+  String get prayerReferenceNafalActionSubtitle =>
+      'Tahajjud, Ishraq, Duha, and Awwabin in one daily flow.';
+
+  @override
+  String get prayerReferenceOpenLabel => 'View';
+
+  @override
+  String get prayerNafalTitle => 'Daily Nafal Prayers';
+
+  @override
+  String get prayerNafalSubtitle =>
+      'A graceful optional-prayer rhythm for morning, daylight, evening, and night.';
+
+  @override
+  String get prayerNafalArabicLabel => 'نفل';
+
+  @override
+  String get prayerNafalDailyFlowLabel => 'Daily flow';
+
+  @override
+  String get prayerNafalFlexibleLabel => 'Flexible raka\'ahs';
+
+  @override
+  String get prayerNafalTimeLabel => 'Time';
+
+  @override
+  String get prayerNafalRakahLabel => 'Raka\'ahs';
+
+  @override
+  String get prayerNafalBenefitLabel => 'Benefit';
+
+  @override
+  String get prayerNafalHadithReferencesLabel => 'Hadith references';
+
+  @override
+  String get prayerNafalNoteTitle => 'Gentle fiqh note';
+
+  @override
+  String get prayerNafalNoteBody =>
+      'These are friendly reminders for common nafal windows. Details and rakah counts may vary by madhhab and teacher, so follow trusted local guidance for rulings.';
+
+  @override
+  String get prayerNafalTahajjudTitle => 'Tahajjud';
+
+  @override
+  String get prayerNafalTahajjudBadge => 'Deep night';
+
+  @override
+  String get prayerNafalTahajjudTime => 'Last third of the night before Fajr';
+
+  @override
+  String get prayerNafalTahajjudRakah => '2+';
+
+  @override
+  String get prayerNafalTahajjudBenefit =>
+      'Turns the quiet night into du\'a, repentance, and deeper focus.';
+
+  @override
+  String get prayerNafalTahajjudBody =>
+      'Wake gently, pray in pairs, and keep the recitation calm. Even two focused raka\'ahs can become the quietest anchor of the day.';
+
+  @override
+  String get prayerNafalTahajjudHadith1Source => 'Sahih Muslim 1163a';
+
+  @override
+  String get prayerNafalTahajjudHadith1Body =>
+      'The best prayer after the obligatory prayer is night prayer.';
+
+  @override
+  String get prayerNafalIshraqTitle => 'Ishraq';
+
+  @override
+  String get prayerNafalIshraqBadge => 'After sunrise';
+
+  @override
+  String get prayerNafalIshraqTime => 'After sunrise has clearly passed';
+
+  @override
+  String get prayerNafalIshraqRakah => '2';
+
+  @override
+  String get prayerNafalIshraqBenefit =>
+      'Connects Fajr, dhikr, and a hopeful start to the morning.';
+
+  @override
+  String get prayerNafalIshraqBody =>
+      'Wait until the forbidden sunrise window clears, then begin with a light heart and a short, sincere prayer.';
+
+  @override
+  String get prayerNafalIshraqHadith1Source => 'Jami\' at-Tirmidhi 586';
+
+  @override
+  String get prayerNafalIshraqHadith1Body =>
+      'Fajr in congregation, dhikr until sunrise, then two raka\'ahs is reported with Hajj and Umrah reward.';
+
+  @override
+  String get prayerNafalDuhaTitle => 'Duha / Chasht';
+
+  @override
+  String get prayerNafalDuhaBadge => 'Bright morning';
+
+  @override
+  String get prayerNafalDuhaTime => 'Mid-morning until before Dhuhr';
+
+  @override
+  String get prayerNafalDuhaRakah => '2-8';
+
+  @override
+  String get prayerNafalDuhaBenefit =>
+      'Refreshes gratitude and covers the morning charity due from the body.';
+
+  @override
+  String get prayerNafalDuhaBody =>
+      'Use the morning stretch for gratitude, provision, and renewed energy before the day gets heavy.';
+
+  @override
+  String get prayerNafalDuhaHadith1Source => 'Sahih Muslim 720';
+
+  @override
+  String get prayerNafalDuhaHadith1Body =>
+      'Two raka\'ahs of Duha suffice for the morning charity due from every joint.';
+
+  @override
+  String get prayerNafalDuhaHadith2Source =>
+      'Sahih al-Bukhari 1178; Sahih Muslim 721a';
+
+  @override
+  String get prayerNafalDuhaHadith2Body =>
+      'Abu Hurayrah was advised to keep Duha among regular acts.';
+
+  @override
+  String get prayerNafalAwwabinTitle => 'Awwabin';
+
+  @override
+  String get prayerNafalAwwabinBadge => 'Evening return';
+
+  @override
+  String get prayerNafalAwwabinTime => 'After Maghrib sunnah, before Isha';
+
+  @override
+  String get prayerNafalAwwabinRakah => '2-6';
+
+  @override
+  String get prayerNafalAwwabinBenefit =>
+      'Keeps the Maghrib-Isha window alive with short extra raka\'ahs and dhikr.';
+
+  @override
+  String get prayerNafalAwwabinBody =>
+      'Let the evening soften: return to Allah with short raka\'ahs, dhikr, and a quieter transition toward Isha.';
+
+  @override
+  String get prayerNafalAwwabinHadith1Source =>
+      'Jami\' at-Tirmidhi 435; Sunan Ibn Majah 1167';
+
+  @override
+  String get prayerNafalAwwabinHadith1Body =>
+      'Six raka\'ahs after Maghrib are reported; scholars discuss the report\'s strength.';
+
+  @override
+  String get prayerNafalAwwabinHadith2Source => 'Sahih Muslim 748b';
+
+  @override
+  String get prayerNafalAwwabinHadith2Body =>
+      'The name Salat al-Awwabin is also authentically used for the Duha-time prayer.';
+
+  @override
   String get prayerHowIntentionTitle => 'Intention & readiness';
 
   @override

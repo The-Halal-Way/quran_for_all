@@ -168,6 +168,75 @@ class PrayerViewModel extends ChangeNotifier {
     ];
   }
 
+  List<PrayerNafalPrayerItem> nafalPrayers(AppLocalizations l10n) {
+    return [
+      PrayerNafalPrayerItem(
+        title: l10n.prayerNafalTahajjudTitle,
+        badge: l10n.prayerNafalTahajjudBadge,
+        timeLabel: l10n.prayerNafalTahajjudTime,
+        rakahLabel: l10n.prayerNafalTahajjudRakah,
+        benefit: l10n.prayerNafalTahajjudBenefit,
+        body: l10n.prayerNafalTahajjudBody,
+        hadithReferences: [
+          PrayerHadithReference(
+            source: l10n.prayerNafalTahajjudHadith1Source,
+            body: l10n.prayerNafalTahajjudHadith1Body,
+          ),
+        ],
+      ),
+      PrayerNafalPrayerItem(
+        title: l10n.prayerNafalIshraqTitle,
+        badge: l10n.prayerNafalIshraqBadge,
+        timeLabel: l10n.prayerNafalIshraqTime,
+        rakahLabel: l10n.prayerNafalIshraqRakah,
+        benefit: l10n.prayerNafalIshraqBenefit,
+        body: l10n.prayerNafalIshraqBody,
+        hadithReferences: [
+          PrayerHadithReference(
+            source: l10n.prayerNafalIshraqHadith1Source,
+            body: l10n.prayerNafalIshraqHadith1Body,
+          ),
+        ],
+      ),
+      PrayerNafalPrayerItem(
+        title: l10n.prayerNafalDuhaTitle,
+        badge: l10n.prayerNafalDuhaBadge,
+        timeLabel: l10n.prayerNafalDuhaTime,
+        rakahLabel: l10n.prayerNafalDuhaRakah,
+        benefit: l10n.prayerNafalDuhaBenefit,
+        body: l10n.prayerNafalDuhaBody,
+        hadithReferences: [
+          PrayerHadithReference(
+            source: l10n.prayerNafalDuhaHadith1Source,
+            body: l10n.prayerNafalDuhaHadith1Body,
+          ),
+          PrayerHadithReference(
+            source: l10n.prayerNafalDuhaHadith2Source,
+            body: l10n.prayerNafalDuhaHadith2Body,
+          ),
+        ],
+      ),
+      PrayerNafalPrayerItem(
+        title: l10n.prayerNafalAwwabinTitle,
+        badge: l10n.prayerNafalAwwabinBadge,
+        timeLabel: l10n.prayerNafalAwwabinTime,
+        rakahLabel: l10n.prayerNafalAwwabinRakah,
+        benefit: l10n.prayerNafalAwwabinBenefit,
+        body: l10n.prayerNafalAwwabinBody,
+        hadithReferences: [
+          PrayerHadithReference(
+            source: l10n.prayerNafalAwwabinHadith1Source,
+            body: l10n.prayerNafalAwwabinHadith1Body,
+          ),
+          PrayerHadithReference(
+            source: l10n.prayerNafalAwwabinHadith2Source,
+            body: l10n.prayerNafalAwwabinHadith2Body,
+          ),
+        ],
+      ),
+    ];
+  }
+
   String localizedPrayerName(AppLocalizations l10n, PrayerKey prayer) {
     switch (prayer) {
       case PrayerKey.fajr:

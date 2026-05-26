@@ -58,6 +58,33 @@ class PrayerForbiddenTimeItem {
   final String body;
 }
 
+class PrayerNafalPrayerItem {
+  const PrayerNafalPrayerItem({
+    required this.title,
+    required this.badge,
+    required this.timeLabel,
+    required this.rakahLabel,
+    required this.benefit,
+    required this.body,
+    required this.hadithReferences,
+  });
+
+  final String title;
+  final String badge;
+  final String timeLabel;
+  final String rakahLabel;
+  final String benefit;
+  final String body;
+  final List<PrayerHadithReference> hadithReferences;
+}
+
+class PrayerHadithReference {
+  const PrayerHadithReference({required this.source, required this.body});
+
+  final String source;
+  final String body;
+}
+
 class PrayerFocusContent {
   const PrayerFocusContent({
     required this.prayer,
