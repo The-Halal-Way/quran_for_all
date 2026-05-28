@@ -1,5 +1,3 @@
-part of '../../../../views/dashboard/hadith/hadith_an_nawawi_view.dart';
-
 class HadithBook {
   final String title;
   final HadithIntro introduction;

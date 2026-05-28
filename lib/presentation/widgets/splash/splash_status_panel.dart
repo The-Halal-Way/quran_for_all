@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
+import 'package:quran_for_all/presentation/viewmodels/splash_viewmodel.dart';
 
 class SplashStatusPanel extends StatelessWidget {
   const SplashStatusPanel({
@@ -7,18 +9,23 @@ class SplashStatusPanel extends StatelessWidget {
     required this.isLoading,
     required this.status,
     required this.errorMessage,
+    required this.failureReason,
     required this.onRetry,
   });
 
   final bool isLoading;
   final String status;
   final String? errorMessage;
+  final SplashFailureReason failureReason;
   final VoidCallback onRetry;
 
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final message = errorMessage ?? status;
+    final hasError = errorMessage != null;
+    final message = hasError
+        ? _errorBody(context)
+        : _localizedStatus(context, status);
 
     return AnimatedContainer(
       duration: const Duration(milliseconds: 260),
@@ -35,22 +42,41 @@ class SplashStatusPanel extends StatelessWidget {
           Row(
             children: [
               Icon(
-                errorMessage == null
+                hasError
+                    ? Icons.error_outline_rounded
+                    : isLoading
                     ? Icons.hourglass_bottom_rounded
-                    : Icons.error_outline_rounded,
+                    : Icons.check_circle_rounded,
                 color: Colors.white,
               ),
               const SizedBox(width: 10),
               Expanded(
                 child: Text(
-                  message,
-                  style: AppTheme.text(context).bodyMedium.copyWith(
-                    color: Colors.white.withValues(alpha: 0.96),
+                  hasError ? _errorTitle(context) : message,
+                  style: AppTheme.text(context).titleSmall.copyWith(
+                    color: Colors.white,
+                    fontWeight: AppTheme.weightBold,
                   ),
                 ),
               ),
             ],
           ),
+          if (hasError) ...[
+            const SizedBox(height: 8),
+            Text(
+              message,
+              style: AppTheme.text(context).bodyMedium.copyWith(
+                color: Colors.white.withValues(alpha: 0.94),
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              context.l10n.splashSetupFailedTip,
+              style: AppTheme.text(
+                context,
+              ).bodySmall.copyWith(color: Colors.white.withValues(alpha: 0.82)),
+            ),
+          ],
           const SizedBox(height: 14),
           if (isLoading)
             ClipRRect(
@@ -65,24 +91,36 @@ class SplashStatusPanel extends StatelessWidget {
                 foregroundColor: colorScheme.primary,
               ),
               icon: const Icon(Icons.refresh_rounded),
-              label: const Text('Retry setup'),
-            )
-          else
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(Icons.check_circle_rounded, color: colorScheme.secondary),
-                const SizedBox(width: 8),
-                Text(
-                  'Ready',
-                  style: AppTheme.text(
-                    context,
-                  ).labelLarge.copyWith(color: Colors.white),
-                ),
-              ],
+              label: Text(context.l10n.splashRetrySetup),
             ),
         ],
       ),
     );
+  }
+
+  String _localizedStatus(BuildContext context, String rawStatus) {
+    return switch (rawStatus) {
+      'Preparing local Quran database...' => context.l10n.splashStatusPreparing,
+      'Ready' => context.l10n.splashStatusReady,
+      'Ready with saved Quran data. Some newer content may sync later.' =>
+        context.l10n.splashStatusOfflineFallback,
+      _ => rawStatus,
+    };
+  }
+
+  String _errorTitle(BuildContext context) {
+    return switch (failureReason) {
+      SplashFailureReason.firstSetupNeedsNetwork =>
+        context.l10n.splashSetupFailedTitle,
+      SplashFailureReason.none => context.l10n.splashSetupFailedTitle,
+    };
+  }
+
+  String _errorBody(BuildContext context) {
+    return switch (failureReason) {
+      SplashFailureReason.firstSetupNeedsNetwork =>
+        context.l10n.splashSetupFailedBody,
+      SplashFailureReason.none => context.l10n.splashSetupFailedBody,
+    };
   }
 }

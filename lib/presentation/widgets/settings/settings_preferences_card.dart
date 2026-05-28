@@ -31,29 +31,21 @@ class SettingsPreferencesCard extends StatelessWidget {
         children: [
           _SectionTitle(
             icon: Icons.tune_rounded,
-            title: context.readQuranText('Reading Preferences'),
+            title: context.l10n.settingsReadingPreferencesTitle,
           ),
           const Divider(height: 1),
           SwitchListTile(
             value: showPronunciation,
             onChanged: onShowPronunciationChanged,
-            title: Text(context.readQuranText('Show pronunciation')),
-            subtitle: Text(
-              context.readQuranText(
-                'Display transliteration under Arabic ayah.',
-              ),
-            ),
+            title: Text(context.l10n.settingsShowPronunciationTitle),
+            subtitle: Text(context.l10n.settingsShowPronunciationSubtitle),
           ),
           const Divider(height: 1),
           SwitchListTile(
             value: showTranslation,
             onChanged: onShowTranslationChanged,
-            title: Text(context.readQuranText('Show translations')),
-            subtitle: Text(
-              context.readQuranText(
-                'Display meaning in your selected language.',
-              ),
-            ),
+            title: Text(context.l10n.settingsShowTranslationsTitle),
+            subtitle: Text(context.l10n.settingsShowTranslationsSubtitle),
           ),
           const Divider(height: 1),
           Padding(
@@ -66,7 +58,7 @@ class SettingsPreferencesCard extends StatelessWidget {
             child: DropdownButtonFormField<AppLanguage>(
               initialValue: language,
               decoration: InputDecoration(
-                labelText: context.readQuranText('Language preference'),
+                labelText: context.l10n.settingsLanguagePreferenceLabel,
               ),
               items: AppLanguage.values
                   .map(

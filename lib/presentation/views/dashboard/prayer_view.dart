@@ -18,6 +18,7 @@ import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_refer
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_timeline_card.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer/forbidden_times_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/prayer/how_to_pray_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer/nafal_prayers_view.dart';
 
 class PrayerView extends StatefulWidget {
@@ -127,8 +128,14 @@ class _PrayerViewBody extends StatelessWidget {
                               if (prayerTimesVm.error.isNotEmpty &&
                                   !prayerTimesVm.isLoading) ...[
                                 PrayerStateCard.error(
-                                  title: l10n.prayerViewPermissionHelpTitle,
-                                  body: l10n.prayerViewPermissionHelpBody,
+                                  title: _errorTitle(
+                                    context,
+                                    prayerTimesVm.errorType,
+                                  ),
+                                  body: _errorBody(
+                                    context,
+                                    prayerTimesVm.errorType,
+                                  ),
                                   onRetry: () => unawaited(_refresh(context)),
                                 ),
                                 const SizedBox(height: AppSpacing.lg),
@@ -145,6 +152,12 @@ class _PrayerViewBody extends StatelessWidget {
                                 accent: MyColors.tertiary,
                               ),
                               PrayerReferenceActions(
+                                onMovementGuideTap: () =>
+                                    Navigator.of(context).push(
+                                      AppPageRoute<void>(
+                                        builder: (_) => const HowToPrayView(),
+                                      ),
+                                    ),
                                 onForbiddenTimesTap: () =>
                                     Navigator.of(context).push(
                                       AppPageRoute<void>(
@@ -224,5 +237,33 @@ class _PrayerViewBody extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  String _errorTitle(BuildContext context, PrayerTimesErrorType type) {
+    final l10n = context.l10n;
+    return switch (type) {
+      PrayerTimesErrorType.permissionDenied =>
+        l10n.prayerTimesPermissionDeniedTitle,
+      PrayerTimesErrorType.permissionDeniedForever =>
+        l10n.prayerTimesPermissionDeniedForeverTitle,
+      PrayerTimesErrorType.locationDisabled =>
+        l10n.prayerTimesLocationDisabledTitle,
+      PrayerTimesErrorType.unavailable => l10n.prayerTimesNetworkErrorTitle,
+      PrayerTimesErrorType.none => l10n.prayerTimesNetworkErrorTitle,
+    };
+  }
+
+  String _errorBody(BuildContext context, PrayerTimesErrorType type) {
+    final l10n = context.l10n;
+    return switch (type) {
+      PrayerTimesErrorType.permissionDenied =>
+        l10n.prayerTimesPermissionDeniedBody,
+      PrayerTimesErrorType.permissionDeniedForever =>
+        l10n.prayerTimesPermissionDeniedForeverBody,
+      PrayerTimesErrorType.locationDisabled =>
+        l10n.prayerTimesLocationDisabledBody,
+      PrayerTimesErrorType.unavailable => l10n.prayerTimesNetworkErrorBody,
+      PrayerTimesErrorType.none => l10n.prayerTimesNetworkErrorBody,
+    };
   }
 }

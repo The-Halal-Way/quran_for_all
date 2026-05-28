@@ -9,6 +9,24 @@ const double kFallbackQiblaDegrees = 293.0;
 const double kHeadingCorrectionDegrees = 270.0;
 const double kQiblaSnapZone = 5.0;
 
+enum CompassInitErrorType {
+  none,
+  locationDenied,
+  locationBlocked,
+  locationDisabled,
+  generic,
+}
+
+class CompassInitializationException implements Exception {
+  const CompassInitializationException(this.type, this.message);
+
+  final CompassInitErrorType type;
+  final String message;
+
+  @override
+  String toString() => message;
+}
+
 class CompassViewModel extends ChangeNotifier {
   CompassViewModel({
     PermissionHelper? permissionHelper,
@@ -27,6 +45,7 @@ class CompassViewModel extends ChangeNotifier {
   bool _isInitializing = true;
   double _qiblaDegrees = kFallbackQiblaDegrees;
   String _initError = '';
+  CompassInitErrorType _initErrorType = CompassInitErrorType.none;
   CompassListeningSession? _compassSession;
   bool _isDisposed = false;
 
@@ -38,6 +57,7 @@ class CompassViewModel extends ChangeNotifier {
   bool get isInitializing => _isInitializing;
   double get qiblaDegrees => _qiblaDegrees;
   String get initError => _initError;
+  CompassInitErrorType get initErrorType => _initErrorType;
 
   double get qiblaOffset => (_qiblaDegrees - _smoothHeading + 360) % 360;
 
@@ -56,6 +76,7 @@ class CompassViewModel extends ChangeNotifier {
 
     _isInitializing = true;
     _initError = '';
+    _initErrorType = CompassInitErrorType.none;
     _notifyListenersIfActive();
 
     try {
@@ -117,6 +138,7 @@ class CompassViewModel extends ChangeNotifier {
       _rawHeading = started ? _rawHeading : 0;
       _smoothHeading = started ? _smoothHeading : 0;
       _initError = '';
+      _initErrorType = CompassInitErrorType.none;
       _notifyListenersIfActive();
     } catch (e) {
       if (_isDisposed) {
@@ -126,7 +148,13 @@ class CompassViewModel extends ChangeNotifier {
       _isListening = false;
       _isApiFallback = false;
       _isInitializing = false;
-      _initError = 'Failed to initialize compass/Qibla: $e';
+      if (e is CompassInitializationException) {
+        _initError = e.message;
+        _initErrorType = e.type;
+      } else {
+        _initError = 'Failed to initialize compass/Qibla: $e';
+        _initErrorType = CompassInitErrorType.generic;
+      }
       _notifyListenersIfActive();
     }
   }
@@ -174,21 +202,30 @@ class CompassViewModel extends ChangeNotifier {
   }
 
   Future<Position> _getCurrentPosition() async {
+    final serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      throw const CompassInitializationException(
+        CompassInitErrorType.locationDisabled,
+        'Location services are disabled',
+      );
+    }
+
     var permission = await Geolocator.checkPermission();
     if (permission == LocationPermission.denied) {
       permission = await Geolocator.requestPermission();
       if (permission == LocationPermission.denied) {
-        throw Exception('Location permission denied');
+        throw const CompassInitializationException(
+          CompassInitErrorType.locationDenied,
+          'Location permission denied',
+        );
       }
     }
 
     if (permission == LocationPermission.deniedForever) {
-      throw Exception('Location permission permanently denied');
-    }
-
-    final serviceEnabled = await Geolocator.isLocationServiceEnabled();
-    if (!serviceEnabled) {
-      throw Exception('Location services are disabled');
+      throw const CompassInitializationException(
+        CompassInitErrorType.locationBlocked,
+        'Location permission permanently denied',
+      );
     }
 
     return Geolocator.getCurrentPosition(

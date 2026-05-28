@@ -26,8 +26,8 @@ class SettingsView extends StatelessWidget {
 
     return Scaffold(
       appBar: embedded
-          ? AppBar(title: Text(context.readQuranText('Settings')))
-          : AppBar(title: Text(context.readQuranText('Settings'))),
+          ? AppBar(title: Text(context.l10n.settingsTitle))
+          : AppBar(title: Text(context.l10n.settingsTitle)),
       body: AppGradientBackground(
         child: viewModel.isLoading
             ? const Center(child: CircularProgressIndicator())
@@ -56,9 +56,7 @@ class SettingsView extends StatelessWidget {
                               const SizedBox(width: AppSpacing.sm + 2),
                               Expanded(
                                 child: Text(
-                                  context.readQuranText(
-                                    'Personalize your recitation and reading experience.',
-                                  ),
+                                  context.l10n.settingsIntro,
                                   style: AppTheme.text(context).bodyMedium,
                                 ),
                               ),

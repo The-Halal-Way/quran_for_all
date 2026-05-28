@@ -72,7 +72,7 @@ class SurahBottomControls extends StatelessWidget {
                     ? Icons.view_agenda_rounded
                     : Icons.wrap_text_rounded,
                 selected: true,
-                tooltip: context.readQuranText('Reading mode'),
+                tooltip: context.l10n.readQuranReadingModeLabel,
                 selectedBg: selectedBg,
                 unselectedBg: unselectedBg,
                 stroke: stroke,
@@ -83,7 +83,7 @@ class SurahBottomControls extends StatelessWidget {
               child: _BottomNavAction(
                 icon: Icons.record_voice_over_rounded,
                 selected: showPronunciation,
-                tooltip: context.readQuranText('Show pronunciation'),
+                tooltip: context.l10n.settingsShowPronunciationTitle,
                 selectedBg: selectedBg,
                 unselectedBg: unselectedBg,
                 stroke: stroke,
@@ -94,7 +94,7 @@ class SurahBottomControls extends StatelessWidget {
               child: _BottomNavAction(
                 icon: Icons.translate_rounded,
                 selected: showTranslation,
-                tooltip: context.readQuranText('Show translations'),
+                tooltip: context.l10n.settingsShowTranslationsTitle,
                 selectedBg: selectedBg,
                 unselectedBg: unselectedBg,
                 stroke: stroke,
@@ -117,9 +117,9 @@ class SurahBottomControls extends StatelessWidget {
                     ? Icons.stop_circle_outlined
                     : Icons.play_circle_fill_rounded,
                 selected: isPlayingFullSurah,
-                tooltip: context.readQuranText(
-                  isPlayingFullSurah ? 'Stop Surah Audio' : 'Play Full Surah',
-                ),
+                tooltip: isPlayingFullSurah
+                    ? context.l10n.readQuranStopSurahAudio
+                    : context.l10n.readQuranPlayFullSurah,
                 selectedBg: selectedBg,
                 unselectedBg: unselectedBg,
                 stroke: stroke,
@@ -203,7 +203,7 @@ class _SurahSearchAction extends StatelessWidget {
     return _BottomNavAction(
       icon: Icons.search_rounded,
       selected: false,
-      tooltip: context.readQuranText('Search inside this surah'),
+      tooltip: context.l10n.readQuranSearchInsideSurahTitle,
       selectedBg: selectedBg,
       unselectedBg: unselectedBg,
       stroke: stroke,
@@ -241,7 +241,7 @@ class _SurahSearchAction extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          context.readQuranText('Search inside this surah'),
+                          context.l10n.readQuranSearchInsideSurahTitle,
                           style: AppTheme.text(sheetContext).titleMedium
                               .copyWith(fontWeight: AppTheme.weightBold),
                         ),
@@ -250,9 +250,8 @@ class _SurahSearchAction extends StatelessWidget {
                           autofocus: true,
                           textInputAction: TextInputAction.search,
                           decoration: InputDecoration(
-                            hintText: context.readQuranText(
-                              'Try ayah number, Arabic text, or translation keyword',
-                            ),
+                            hintText:
+                                context.l10n.readQuranSearchInsideSurahHint,
                             prefixIcon: const Icon(Icons.search_rounded),
                           ),
                           onChanged: (value) {
@@ -269,10 +268,10 @@ class _SurahSearchAction extends StatelessWidget {
                         const SizedBox(height: AppSpacing.sm),
                         Text(
                           query.isEmpty
-                              ? context.readQuranText(
-                                  'Start typing to search in this surah.',
-                                )
-                              : '${context.readQuranText('Results')}: ${results.length}',
+                              ? context.l10n.readQuranStartTypingSurahSearch
+                              : context.l10n.readQuranResultsCount(
+                                  results.length,
+                                ),
                           style: AppTheme.text(sheetContext).bodySmall.copyWith(
                             color: colorScheme.onSurface.withValues(
                               alpha: 0.72,
@@ -284,18 +283,15 @@ class _SurahSearchAction extends StatelessWidget {
                           child: query.isEmpty
                               ? EmptyState(
                                   icon: Icons.manage_search_rounded,
-                                  title: context.readQuranText('Search Ayahs'),
-                                  message: context.readQuranText(
-                                    'Type text or ayah number to jump quickly.',
-                                  ),
+                                  title: context.l10n.readQuranSearchAyahsTitle,
+                                  message:
+                                      context.l10n.readQuranSearchAyahsBody,
                                 )
                               : results.isEmpty
                               ? EmptyState(
                                   icon: Icons.search_off,
-                                  title: context.readQuranText('No results'),
-                                  message: context.readQuranText(
-                                    'Try a different keyword or ayah number.',
-                                  ),
+                                  title: context.l10n.readQuranNoResultsTitle,
+                                  message: context.l10n.readQuranNoResultsBody,
                                 )
                               : ListView.separated(
                                   itemCount: results.length,
@@ -316,7 +312,7 @@ class _SurahSearchAction extends StatelessWidget {
                                               vertical: AppSpacing.xs,
                                             ),
                                         title: Text(
-                                          '${context.readQuranText('Ayah')} ${ayah.ayahNumber}',
+                                          '${context.l10n.readQuranAyahLabel} ${ayah.ayahNumber}',
                                           style: AppTheme.text(itemContext)
                                               .titleSmall
                                               .copyWith(

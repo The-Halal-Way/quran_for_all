@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassTopBar extends StatelessWidget {
@@ -34,7 +35,7 @@ class CompassTopBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Compass',
+                  context.l10n.compassTitle,
                   style: text.compassTitle.copyWith(color: textPrimary),
                 ),
                 const SizedBox(height: 2),

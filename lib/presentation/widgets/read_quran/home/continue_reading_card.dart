@@ -71,7 +71,7 @@ class ContinueReadingCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            context.readQuranText('Continue Reading'),
+            context.l10n.readQuranContinueReadingTitle,
             style: AppTheme.text(context).labelLarge.copyWith(
               color: colorScheme.primary,
               fontWeight: AppTheme.weightExtraBold,
@@ -89,7 +89,7 @@ class ContinueReadingCard extends StatelessWidget {
           ),
           const SizedBox(height: AppSpacing.sm - 2),
           Text(
-            '${surah.nameArabic} · ${context.readQuranText('Ayah')} $ayahNumber',
+            '${surah.nameArabic} · ${context.l10n.readQuranAyahLabel} $ayahNumber',
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: AppTheme.text(context).bodyMedium.copyWith(

@@ -8,8 +8,8 @@ import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_models.dart';
 
-part '../../../widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_models.dart';
 part '../../../widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_pages.dart';
 part '../../../widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_jump_sheet.dart';
 part '../../../widgets/dashboard/hadith/hadith_an_nawawi/hadith_an_nawawi_shared_widgets.dart';

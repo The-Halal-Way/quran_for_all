@@ -107,7 +107,7 @@ class _HomeViewState extends State<HomeView> {
                 width: navIconSize,
                 height: navIconSize,
               ),
-              label: context.readQuranText('Settings'),
+              label: l10n.settingsTitle,
             ),
           ],
         ),

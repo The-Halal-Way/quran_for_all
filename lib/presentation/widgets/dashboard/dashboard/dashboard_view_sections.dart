@@ -265,11 +265,19 @@ extension _DashboardViewStateSections on _DashboardViewState {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            _prayerError,
-                            style: text.bodySmall.copyWith(color: _textSub),
+                            _prayerErrorTitle(_prayerErrorType),
+                            style: text.titleSmall.copyWith(
+                              color: _textMain,
+                              fontWeight: AppTheme.weightBold,
+                            ),
                           ),
                         ),
                       ],
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      _prayerErrorBody(_prayerErrorType),
+                      style: text.bodySmall.copyWith(color: _textSub),
                     ),
                     const SizedBox(height: 12),
                     GestureDetector(

@@ -14,13 +14,13 @@ class ReadQuranMessageKeys {
 String localizeReadQuranMessage(BuildContext context, String key) {
   switch (key) {
     case ReadQuranMessageKeys.searchFailedTryAgain:
-      return context.readQuranText('Search failed. Please try again.');
+      return context.l10n.readQuranVmSearchFailed;
     case ReadQuranMessageKeys.noSurahSelected:
-      return context.readQuranText('No surah selected.');
+      return context.l10n.readQuranVmNoSurahSelected;
     case ReadQuranMessageKeys.unableLoadAyahs:
-      return context.readQuranText('Unable to load ayahs for this surah.');
+      return context.l10n.readQuranVmUnableLoadAyahs;
     case ReadQuranMessageKeys.unableLoadBookmarks:
-      return context.readQuranText('Unable to load bookmarks right now.');
+      return context.l10n.readQuranVmUnableLoadBookmarks;
     default:
       return context.readQuranText(key);
   }

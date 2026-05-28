@@ -36,10 +36,8 @@ class SurahReadingOptions extends StatelessWidget {
           ),
           childrenPadding: EdgeInsets.zero,
           leading: const Icon(Icons.tune_rounded),
-          title: Text(context.readQuranText('Reading options')),
-          subtitle: Text(
-            context.readQuranText('Pronunciation and translation visibility'),
-          ),
+          title: Text(context.l10n.readQuranReadingOptionsTitle),
+          subtitle: Text(context.l10n.readQuranReadingOptionsSubtitle),
           children: [
             const Divider(height: 1),
             Padding(
@@ -53,7 +51,7 @@ class SurahReadingOptions extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    context.readQuranText('Reading mode'),
+                    context.l10n.readQuranReadingModeLabel,
                     style: AppTheme.text(context).labelLarge,
                   ),
                   const SizedBox(height: AppSpacing.sm),
@@ -74,12 +72,12 @@ class SurahReadingOptions extends StatelessWidget {
                         ButtonSegment<ReadingViewMode>(
                           value: ReadingViewMode.detailsView,
                           icon: const Icon(Icons.view_agenda_rounded),
-                          label: Text(context.readQuranText('Details')),
+                          label: Text(context.l10n.readQuranDetailsMode),
                         ),
                         ButtonSegment<ReadingViewMode>(
                           value: ReadingViewMode.regularView,
                           icon: const Icon(Icons.wrap_text_rounded),
-                          label: Text(context.readQuranText('Regular')),
+                          label: Text(context.l10n.readQuranRegularMode),
                         ),
                       ],
                       selected: <ReadingViewMode>{settings.readingViewMode},
@@ -107,7 +105,7 @@ class SurahReadingOptions extends StatelessWidget {
               onChanged: (value) {
                 unawaited(settingsViewModel.setShowPronunciation(value));
               },
-              title: Text(context.readQuranText('Show pronunciation')),
+              title: Text(context.l10n.settingsShowPronunciationTitle),
             ),
             const Divider(height: 1),
             SwitchListTile(
@@ -122,7 +120,7 @@ class SurahReadingOptions extends StatelessWidget {
               onChanged: (value) {
                 unawaited(settingsViewModel.setShowTranslation(value));
               },
-              title: Text(context.readQuranText('Show translations')),
+              title: Text(context.l10n.settingsShowTranslationsTitle),
             ),
           ],
         ),

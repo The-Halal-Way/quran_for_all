@@ -1,5 +1,3 @@
-part of '../../../../views/dashboard/hadith/hadith_forty_short_view.dart';
-
 class ShortHadithBook {
   final String titleEnglish;
   final String titleBangla;

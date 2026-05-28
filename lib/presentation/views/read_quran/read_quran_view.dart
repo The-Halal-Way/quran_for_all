@@ -48,22 +48,19 @@ class ReadQuranView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              context.readQuranText('Read Quran'),
+              context.l10n.readQuranTitle,
               style: textTheme.titleLarge.copyWith(
                 fontWeight: AppTheme.weightBold,
               ),
             ),
-            Text(
-              context.readQuranText('Quran For All'),
-              style: textTheme.bodySmall,
-            ),
+            Text(context.l10n.readQuranSubtitle, style: textTheme.bodySmall),
           ],
         ),
         actions: [
           IconButton(
             onPressed: () => _openBookmarks(context),
             icon: const Icon(Icons.bookmarks_rounded),
-            tooltip: context.readQuranText('Bookmarks'),
+            tooltip: context.l10n.readQuranBookmarksTooltip,
           ),
           IconButton.filledTonal(
             onPressed: () => _openSearch(context),
@@ -73,7 +70,7 @@ class ReadQuranView extends StatelessWidget {
               height: 20,
               color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
-            tooltip: context.readQuranText('Search'),
+            tooltip: context.l10n.readQuranSearchTooltip,
           ),
         ],
       ),
@@ -124,10 +121,10 @@ class ReadQuranView extends StatelessWidget {
                           ],
                           // All surahs titles
                           SectionHeader(
-                            title: context.readQuranText('All Surahs'),
+                            title: context.l10n.readQuranAllSurahsTitle,
                             trailing: Chip(
                               label: Text(
-                                '${viewModel.surahs.length} ${context.readQuranText('total')}',
+                                '${viewModel.surahs.length} ${context.l10n.readQuranTotalLabel}',
                               ),
                               visualDensity: VisualDensity.compact,
                             ),

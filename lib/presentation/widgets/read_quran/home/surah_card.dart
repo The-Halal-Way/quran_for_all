@@ -101,7 +101,7 @@ class SurahCard extends StatelessWidget {
                               child: AppPill.surface(
                                 icon: Icons.layers_rounded,
                                 label:
-                                    '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
+                                    '${surah.totalAyahs} ${context.l10n.readQuranAyahsLabel}',
                               ),
                             ),
                           ],
@@ -121,9 +121,7 @@ class SurahCard extends StatelessWidget {
                           runSpacing: compact ? AppSpacing.xs : 6,
                           children: [
                             AppPill.surface(
-                              label: context.readQuranText(
-                                surah.revelationType,
-                              ),
+                              label: _localizedRevelationType(context),
                               imgIcon: surah.revelationType == 'Meccan'
                                   ? MyIcons.meccaIcon
                                   : MyIcons.medinaIcon,
@@ -166,8 +164,8 @@ class SurahCard extends StatelessWidget {
                               : colorScheme.onSurface.withValues(alpha: 0.6),
                         ),
                         tooltip: isBookmarked
-                            ? context.readQuranText('Remove surah bookmark')
-                            : context.readQuranText('Save surah bookmark'),
+                            ? context.l10n.readQuranRemoveSurahBookmarkTooltip
+                            : context.l10n.readQuranSaveSurahBookmarkTooltip,
                       ),
                       const SizedBox(height: AppSpacing.xs),
                       Icon(
@@ -184,5 +182,13 @@ class SurahCard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  String _localizedRevelationType(BuildContext context) {
+    return switch (surah.revelationType) {
+      'Meccan' => context.l10n.readQuranMeccan,
+      'Medinan' => context.l10n.readQuranMedinan,
+      _ => context.readQuranText(surah.revelationType),
+    };
   }
 }

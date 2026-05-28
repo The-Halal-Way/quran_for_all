@@ -243,11 +243,9 @@ class SurahAyahList extends StatelessWidget {
 
       AppSnackbar.showInfo(
         context,
-        context.readQuranText(
-          wasBookmarked
-              ? 'Ayah bookmark removed.'
-              : 'Ayah bookmarked successfully.',
-        ),
+        wasBookmarked
+            ? context.l10n.readQuranAyahBookmarkRemoved
+            : context.l10n.readQuranAyahBookmarkAdded,
       );
     } catch (_) {
       if (!context.mounted) {
@@ -256,7 +254,7 @@ class SurahAyahList extends StatelessWidget {
 
       AppSnackbar.showError(
         context,
-        context.readQuranText('Could not update ayah bookmark right now.'),
+        context.l10n.readQuranCouldNotUpdateAyahBookmark,
       );
     }
   }
@@ -273,10 +271,7 @@ class SurahAyahList extends StatelessWidget {
         return;
       }
 
-      AppSnackbar.showInfo(
-        context,
-        context.readQuranText('Marked as last read.'),
-      );
+      AppSnackbar.showInfo(context, context.l10n.readQuranMarkedLastRead);
     } catch (_) {
       if (!context.mounted) {
         return;
@@ -284,7 +279,7 @@ class SurahAyahList extends StatelessWidget {
 
       AppSnackbar.showError(
         context,
-        context.readQuranText('Could not mark this ayah as last read.'),
+        context.l10n.readQuranCouldNotMarkLastRead,
       );
     }
   }

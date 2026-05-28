@@ -126,13 +126,13 @@ class SurahMetaCard extends StatelessWidget {
                       AppPill.overlay(
                         icon: Icons.layers_outlined,
                         label:
-                            '${surah.totalAyahs} ${context.readQuranText('ayahs')}',
+                            '${surah.totalAyahs} ${context.l10n.readQuranAyahsLabel}',
                       ),
                       AppPill.overlay(
                         imgIcon: surah.revelationType == 'Meccan'
                             ? MyIcons.meccaIcon
                             : MyIcons.medinaIcon,
-                        label: context.readQuranText(surah.revelationType),
+                        label: _localizedRevelationType(context),
                       ),
                     ],
                   ),
@@ -143,5 +143,13 @@ class SurahMetaCard extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  String _localizedRevelationType(BuildContext context) {
+    return switch (surah.revelationType) {
+      'Meccan' => context.l10n.readQuranMeccan,
+      'Medinan' => context.l10n.readQuranMedinan,
+      _ => context.readQuranText(surah.revelationType),
+    };
   }
 }

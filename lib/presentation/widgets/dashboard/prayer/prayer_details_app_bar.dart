@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
-import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
+
+import 'prayer_language_menu_action.dart';
 
 class PrayerDetailsAppBar extends StatelessWidget {
   const PrayerDetailsAppBar({
@@ -40,7 +39,7 @@ class PrayerDetailsAppBar extends StatelessWidget {
           icon: const Icon(Icons.refresh_rounded, color: Colors.white),
           onPressed: onRefresh,
         ),
-        const _LanguageToggleAction(),
+        const PrayerLanguageMenuAction(iconColor: Colors.white),
       ],
       title: Column(
         mainAxisSize: MainAxisSize.min,
@@ -89,43 +88,6 @@ class PrayerDetailsAppBar extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class _LanguageToggleAction extends StatelessWidget {
-  const _LanguageToggleAction();
-
-  @override
-  Widget build(BuildContext context) {
-    final settingsVm = context.watch<SettingsViewModel>();
-    final current = settingsVm.settings.language;
-    final text = AppTheme.text(context);
-
-    return PopupMenuButton<AppLanguage>(
-      tooltip: context.l10n.prayerViewLanguageTooltip,
-      icon: const Icon(Icons.language_rounded, color: Colors.white),
-      onSelected: settingsVm.setLanguage,
-      itemBuilder: (context) => [
-        PopupMenuItem<AppLanguage>(
-          value: AppLanguage.english,
-          child: Text(
-            context.appLanguageLabel(AppLanguage.english),
-            style: current == AppLanguage.english
-                ? text.labelMedium
-                : text.bodyMedium,
-          ),
-        ),
-        PopupMenuItem<AppLanguage>(
-          value: AppLanguage.bangla,
-          child: Text(
-            context.appLanguageLabel(AppLanguage.bangla),
-            style: current == AppLanguage.bangla
-                ? text.labelMedium
-                : text.bodyMedium,
-          ),
-        ),
-      ],
     );
   }
 }

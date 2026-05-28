@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassInfoRow extends StatelessWidget {
@@ -23,6 +24,7 @@ class CompassInfoRow extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: LayoutBuilder(
         builder: (context, constraints) {
+          final l10n = context.l10n;
           if (constraints.maxWidth < 360) {
             return Column(
               children: [
@@ -30,9 +32,9 @@ class CompassInfoRow extends StatelessWidget {
                   children: [
                     Expanded(
                       child: _CompassInfoCard(
-                        label: 'Heading',
+                        label: l10n.compassHeadingLabel,
                         value: isApiFallback
-                            ? 'N/A'
+                            ? l10n.compassNotAvailableShort
                             : '${heading.toStringAsFixed(0)}°',
                         icon: Icons.explore_rounded,
                         isDark: isDark,
@@ -41,7 +43,7 @@ class CompassInfoRow extends StatelessWidget {
                     const SizedBox(width: 10),
                     Expanded(
                       child: _CompassInfoCard(
-                        label: 'Qibla offset',
+                        label: l10n.compassQiblaOffsetLabel,
                         value: '${qiblaOffset.toStringAsFixed(0)}°',
                         icon: Icons.mosque_rounded,
                         isDark: isDark,
@@ -53,8 +55,10 @@ class CompassInfoRow extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 _CompassInfoCard(
-                  label: 'Accuracy',
-                  value: isApiFallback ? 'API' : '±2°',
+                  label: l10n.compassAccuracyLabel,
+                  value: isApiFallback
+                      ? l10n.compassApiAccuracyLabel
+                      : l10n.compassNativeAccuracyLabel,
                   icon: Icons.my_location_rounded,
                   isDark: isDark,
                 ),
@@ -66,9 +70,9 @@ class CompassInfoRow extends StatelessWidget {
             children: [
               Expanded(
                 child: _CompassInfoCard(
-                  label: 'Heading',
+                  label: l10n.compassHeadingLabel,
                   value: isApiFallback
-                      ? 'N/A'
+                      ? l10n.compassNotAvailableShort
                       : '${heading.toStringAsFixed(0)}°',
                   icon: Icons.explore_rounded,
                   isDark: isDark,
@@ -77,7 +81,7 @@ class CompassInfoRow extends StatelessWidget {
               const SizedBox(width: 10),
               Expanded(
                 child: _CompassInfoCard(
-                  label: 'Qibla offset',
+                  label: l10n.compassQiblaOffsetLabel,
                   value: '${qiblaOffset.toStringAsFixed(0)}°',
                   icon: Icons.mosque_rounded,
                   isDark: isDark,
@@ -88,8 +92,10 @@ class CompassInfoRow extends StatelessWidget {
               const SizedBox(width: 10),
               Expanded(
                 child: _CompassInfoCard(
-                  label: 'Accuracy',
-                  value: isApiFallback ? 'API' : '±2°',
+                  label: l10n.compassAccuracyLabel,
+                  value: isApiFallback
+                      ? l10n.compassApiAccuracyLabel
+                      : l10n.compassNativeAccuracyLabel,
                   icon: Icons.my_location_rounded,
                   isDark: isDark,
                 ),
@@ -122,6 +128,7 @@ class _CompassInfoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
+    final l10n = context.l10n;
     final cardBg = isDark ? const Color(0xFF120A2B) : const Color(0xFFFFFFFF);
     final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
     final labelC = isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288);
@@ -189,7 +196,9 @@ class _CompassInfoCard extends StatelessWidget {
                 const SizedBox(width: 4),
                 Expanded(
                   child: Text(
-                    isOnTarget ? 'Facing Mecca!' : 'Rotate to align',
+                    isOnTarget
+                        ? l10n.compassFacingMeccaLabel
+                        : l10n.compassRotateToAlignLabel,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: text.compassInfoAction.copyWith(

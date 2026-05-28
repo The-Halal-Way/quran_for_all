@@ -13,4 +13,17 @@ class MyImages {
   static const String background6 = 'assets/images/background_06.png';
   static const String background7 = 'assets/images/background_n_01.png';
   static const String background8 = 'assets/images/background_n_02.png';
+
+  /// Prayer images
+  static const String afterPrayer = 'assets/images/prayer/after_pray.png';
+  static const String alQiyam = 'assets/images/prayer/al_qiyam.png';
+  static const String qiyam = 'assets/images/prayer/qiyam.png';
+  static const String ruku = 'assets/images/prayer/ruku.png';
+  static const String sajjadah = 'assets/images/prayer/sajjadah.png';
+  static const String salamRight = 'assets/images/prayer/salam_right.png';
+  static const String salamLeft = 'assets/images/prayer/salam_left.png';
+  static const String takbeerh = 'assets/images/prayer/takbeerh.png';
+  static const String tashahhudFingerLift =
+      'assets/images/prayer/tashahhud_finger_lift.png';
+  static const String tashahhud = 'assets/images/prayer/tashahhud.png';
 }

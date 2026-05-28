@@ -111,6 +111,7 @@ class _SplashViewState extends State<SplashView> {
                           isLoading: viewModel.isLoading,
                           status: viewModel.status,
                           errorMessage: viewModel.errorMessage,
+                          failureReason: viewModel.failureReason,
                           onRetry: _initialize,
                         ),
                       ],

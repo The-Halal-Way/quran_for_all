@@ -122,7 +122,7 @@ class ReadQuranTopBanner extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            context.readQuranText('Read. Reflect. Remember.'),
+                            context.l10n.readQuranBannerTitle,
                             style: AppTheme.text(context).titleLarge.copyWith(
                               color: Colors.white,
                               fontWeight: AppTheme.weightExtraBold,
@@ -130,9 +130,7 @@ class ReadQuranTopBanner extends StatelessWidget {
                           ),
                           const SizedBox(height: AppSpacing.xs),
                           Text(
-                            context.readQuranText(
-                              'Offline Quran with Bangla and English support.',
-                            ),
+                            context.l10n.readQuranBannerSubtitle,
                             style: AppTheme.text(context).bodyMedium.copyWith(
                               color: Colors.white.withValues(alpha: 0.90),
                             ),
@@ -150,11 +148,11 @@ class ReadQuranTopBanner extends StatelessWidget {
                   children: [
                     AppPill.overlay(
                       imgIcon: MyIcons.readIcon,
-                      label: '$surahCount ${context.readQuranText('Surahs')}',
+                      label: '$surahCount ${context.l10n.readQuranSurahsLabel}',
                     ),
                     AppPill.overlay(
                       icon: Icons.download_done_rounded,
-                      label: context.readQuranText('Offline Ready'),
+                      label: context.l10n.readQuranOfflineReadyLabel,
                     ),
                   ],
                 ),
@@ -179,7 +177,7 @@ class ReadQuranTopBanner extends StatelessWidget {
                     height: 20,
                     color: Colors.white,
                   ),
-                  label: Text(context.readQuranText('Search Surah, Ayah, Juz')),
+                  label: Text(context.l10n.readQuranBannerSearchButton),
                 ),
               ],
             ),

@@ -30,7 +30,7 @@ class BookmarkListTile extends StatelessWidget {
 
   String _title(BuildContext context) {
     if (_isAyahBookmark) {
-      return '${context.readQuranText('Ayah')} ${bookmark.surahId}:${bookmark.ayahNumber ?? ''}';
+      return '${context.l10n.readQuranAyahLabel} ${bookmark.surahId}:${bookmark.ayahNumber ?? ''}';
     }
 
     final localizedName = surah?.localizedTitle(context, language).trim() ?? '';
@@ -38,7 +38,7 @@ class BookmarkListTile extends StatelessWidget {
       return '${bookmark.surahId}. $localizedName';
     }
 
-    return '${context.readQuranText('Surah')} ${bookmark.surahId}';
+    return '${context.l10n.readQuranSurahLabel} ${bookmark.surahId}';
   }
 
   String _subtitle(BuildContext context) {
@@ -53,10 +53,10 @@ class BookmarkListTile extends StatelessWidget {
 
       final surahName = surah?.localizedTitle(context, language).trim() ?? '';
       if (surahName.isNotEmpty) {
-        return '${context.readQuranText('Surah')}: $surahName';
+        return '${context.l10n.readQuranSurahLabel}: $surahName';
       }
 
-      return '${context.readQuranText('Surah')} ${bookmark.surahId}';
+      return '${context.l10n.readQuranSurahLabel} ${bookmark.surahId}';
     }
 
     final translated = context.readQuranText(
@@ -74,15 +74,15 @@ class BookmarkListTile extends StatelessWidget {
       return arabic;
     }
 
-    return context.readQuranText('Saved bookmark');
+    return context.l10n.readQuranSavedBookmarkLabel;
   }
 
   String _typeLabel(BuildContext context) {
     if (_isAyahBookmark) {
-      return context.readQuranText('Ayah');
+      return context.l10n.readQuranAyahLabel;
     }
 
-    return context.readQuranText('Surah');
+    return context.l10n.readQuranSurahLabel;
   }
 
   IconData _typeIcon() {

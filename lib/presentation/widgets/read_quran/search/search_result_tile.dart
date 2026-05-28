@@ -108,7 +108,7 @@ class SearchResultTile extends StatelessWidget {
                       Chip(
                         avatar: const Icon(Icons.place_outlined, size: 16),
                         label: Text(
-                          '${context.readQuranText('Ayah')} ${result.ayah!.surahId}:${result.ayah!.ayahNumber}',
+                          '${context.l10n.readQuranAyahLabel} ${result.ayah!.surahId}:${result.ayah!.ayahNumber}',
                         ),
                         visualDensity: VisualDensity.compact,
                       ),

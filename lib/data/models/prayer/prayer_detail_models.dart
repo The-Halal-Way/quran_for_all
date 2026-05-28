@@ -85,6 +85,30 @@ class PrayerHadithReference {
   final String body;
 }
 
+class PrayerMovementStep {
+  const PrayerMovementStep({
+    required this.number,
+    required this.title,
+    required this.badge,
+    required this.body,
+    required this.imageAsset,
+    required this.arabic,
+    required this.pronunciation,
+    required this.translation,
+    required this.note,
+  });
+
+  final int number;
+  final String title;
+  final String badge;
+  final String body;
+  final String imageAsset;
+  final String arabic;
+  final String pronunciation;
+  final String translation;
+  final String note;
+}
+
 class PrayerFocusContent {
   const PrayerFocusContent({
     required this.prayer,

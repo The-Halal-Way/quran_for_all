@@ -61,7 +61,7 @@ class AyahTile extends StatelessWidget {
     return FilledButton.tonalIcon(
       onPressed: () => _showTafsirSheet(context),
       icon: const Icon(Icons.auto_stories_rounded, size: 18),
-      label: Text(context.readQuranText('Tafsir')),
+      label: Text(context.l10n.readQuranTafsirTitle),
       style: FilledButton.styleFrom(
         visualDensity: VisualDensity.compact,
         padding: const EdgeInsets.symmetric(
@@ -137,7 +137,7 @@ class AyahTile extends StatelessWidget {
                               ),
                             ),
                             child: Text(
-                              'Juz ${ayah.juzNumber}',
+                              '${context.l10n.readQuranJuzLabel} ${ayah.juzNumber}',
                               style: AppTheme.text(context).labelSmall.copyWith(
                                 color: colorScheme.primary,
                                 fontWeight: AppTheme.weightBold,
@@ -160,8 +160,10 @@ class AyahTile extends StatelessWidget {
                                   : Icons.bookmark_add_outlined,
                             ),
                             tooltip: isBookmarked
-                                ? context.readQuranText('Remove ayah bookmark')
-                                : context.readQuranText('Save ayah bookmark'),
+                                ? context
+                                      .l10n
+                                      .readQuranRemoveAyahBookmarkTooltip
+                                : context.l10n.readQuranSaveAyahBookmarkTooltip,
                           ),
                           IconButton(
                             onPressed: onMarkAsLastRead,
@@ -177,11 +179,9 @@ class AyahTile extends StatelessWidget {
                                     foregroundColor: colorScheme.primary,
                                   )
                                 : null,
-                            tooltip: context.readQuranText(
-                              isLastReadAyah
-                                  ? 'Current last read ayah'
-                                  : 'Mark ayah as last read',
-                            ),
+                            tooltip: isLastReadAyah
+                                ? context.l10n.readQuranCurrentLastReadTooltip
+                                : context.l10n.readQuranMarkAyahLastReadTooltip,
                           ),
                           IconButton.filledTonal(
                             onPressed: onPlay,
@@ -190,9 +190,9 @@ class AyahTile extends StatelessWidget {
                                   ? Icons.stop_circle_rounded
                                   : Icons.play_circle_fill_rounded,
                             ),
-                            tooltip: context.readQuranText(
-                              isPlaying ? 'Stop ayah audio' : 'Play ayah audio',
-                            ),
+                            tooltip: isPlaying
+                                ? context.l10n.readQuranStopAyahAudioTooltip
+                                : context.l10n.readQuranPlayAyahAudioTooltip,
                           ),
                         ],
                       ),
@@ -229,7 +229,7 @@ class AyahTile extends StatelessWidget {
                           borderRadius: BorderRadius.circular(AppRadius.full),
                         ),
                         child: Text(
-                          'Juz ${ayah.juzNumber}',
+                          '${context.l10n.readQuranJuzLabel} ${ayah.juzNumber}',
                           style: AppTheme.text(context).labelSmall.copyWith(
                             color: colorScheme.primary,
                             fontWeight: AppTheme.weightBold,
@@ -246,8 +246,8 @@ class AyahTile extends StatelessWidget {
                               : Icons.bookmark_add_outlined,
                         ),
                         tooltip: isBookmarked
-                            ? context.readQuranText('Remove ayah bookmark')
-                            : context.readQuranText('Save ayah bookmark'),
+                            ? context.l10n.readQuranRemoveAyahBookmarkTooltip
+                            : context.l10n.readQuranSaveAyahBookmarkTooltip,
                       ),
                       IconButton(
                         onPressed: onMarkAsLastRead,
@@ -264,11 +264,9 @@ class AyahTile extends StatelessWidget {
                                 foregroundColor: colorScheme.primary,
                               )
                             : null,
-                        tooltip: context.readQuranText(
-                          isLastReadAyah
-                              ? 'Current last read ayah'
-                              : 'Mark ayah as last read',
-                        ),
+                        tooltip: isLastReadAyah
+                            ? context.l10n.readQuranCurrentLastReadTooltip
+                            : context.l10n.readQuranMarkAyahLastReadTooltip,
                       ),
                       IconButton.filledTonal(
                         onPressed: onPlay,
@@ -277,9 +275,9 @@ class AyahTile extends StatelessWidget {
                               ? Icons.stop_circle_rounded
                               : Icons.play_circle_fill_rounded,
                         ),
-                        tooltip: context.readQuranText(
-                          isPlaying ? 'Stop ayah audio' : 'Play ayah audio',
-                        ),
+                        tooltip: isPlaying
+                            ? context.l10n.readQuranStopAyahAudioTooltip
+                            : context.l10n.readQuranPlayAyahAudioTooltip,
                       ),
                     ],
                   ),
@@ -462,14 +460,14 @@ class _TafsirBottomSheet extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                context.readQuranText('Tafsir'),
+                context.l10n.readQuranTafsirTitle,
                 style: AppTheme.text(
                   context,
                 ).titleLarge.copyWith(fontWeight: AppTheme.weightExtraBold),
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
-                '${context.readQuranText('Surah')} ${ayah.surahId}:${ayah.ayahNumber}',
+                '${context.l10n.readQuranSurahLabel} ${ayah.surahId}:${ayah.ayahNumber}',
                 style: AppTheme.text(context).labelLarge.copyWith(
                   color: colorScheme.primary,
                   fontWeight: AppTheme.weightBold,
@@ -480,9 +478,7 @@ class _TafsirBottomSheet extends StatelessWidget {
                 child: tafsir.trim().isEmpty
                     ? Center(
                         child: Text(
-                          context.readQuranText(
-                            'No tafsir available for this ayah yet.',
-                          ),
+                          context.l10n.readQuranNoTafsirBody,
                           textAlign: TextAlign.center,
                           style: AppTheme.text(context).bodyMedium,
                         ),

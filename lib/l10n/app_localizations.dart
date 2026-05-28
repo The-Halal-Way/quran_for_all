@@ -62,8 +62,7 @@ import 'app_localizations_en.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -71,8 +70,7 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
-      _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -84,18 +82,17 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('bn'),
-    Locale('en'),
+    Locale('en')
   ];
 
   /// No description provided for @appName.
@@ -133,6 +130,600 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Bangla'**
   String get languageBangla;
+
+  /// No description provided for @settingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settingsTitle;
+
+  /// No description provided for @settingsIntro.
+  ///
+  /// In en, this message translates to:
+  /// **'Personalize your recitation and reading experience.'**
+  String get settingsIntro;
+
+  /// No description provided for @settingsReadingPreferencesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading Preferences'**
+  String get settingsReadingPreferencesTitle;
+
+  /// No description provided for @settingsShowPronunciationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Show pronunciation'**
+  String get settingsShowPronunciationTitle;
+
+  /// No description provided for @settingsShowPronunciationSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Display transliteration under Arabic ayah.'**
+  String get settingsShowPronunciationSubtitle;
+
+  /// No description provided for @settingsShowTranslationsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Show translations'**
+  String get settingsShowTranslationsTitle;
+
+  /// No description provided for @settingsShowTranslationsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Display meaning in your selected language.'**
+  String get settingsShowTranslationsSubtitle;
+
+  /// No description provided for @settingsLanguagePreferenceLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Language preference'**
+  String get settingsLanguagePreferenceLabel;
+
+  /// No description provided for @settingsAppearanceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance'**
+  String get settingsAppearanceTitle;
+
+  /// No description provided for @settingsThemeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get settingsThemeTitle;
+
+  /// No description provided for @settingsThemeSystem.
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get settingsThemeSystem;
+
+  /// No description provided for @settingsThemeLight.
+  ///
+  /// In en, this message translates to:
+  /// **'Light'**
+  String get settingsThemeLight;
+
+  /// No description provided for @settingsThemeDark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get settingsThemeDark;
+
+  /// No description provided for @settingsOfflineTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline mode is enabled'**
+  String get settingsOfflineTitle;
+
+  /// No description provided for @settingsOfflineBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.'**
+  String get settingsOfflineBody;
+
+  /// No description provided for @splashStatusPreparing.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing local Quran database...'**
+  String get splashStatusPreparing;
+
+  /// No description provided for @splashStatusReady.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready'**
+  String get splashStatusReady;
+
+  /// No description provided for @splashStatusOfflineFallback.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready with saved Quran data. Some newer content may sync later.'**
+  String get splashStatusOfflineFallback;
+
+  /// No description provided for @splashRetrySetup.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry setup'**
+  String get splashRetrySetup;
+
+  /// No description provided for @splashSetupFailedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Setup needs internet'**
+  String get splashSetupFailedTitle;
+
+  /// No description provided for @splashSetupFailedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran For All needs a network connection the first time it prepares the local Quran database. Check your internet connection and try again.'**
+  String get splashSetupFailedBody;
+
+  /// No description provided for @splashSetupFailedTip.
+  ///
+  /// In en, this message translates to:
+  /// **'After setup, Quran text, translations, tafsir, bookmarks, and reading progress work from local storage.'**
+  String get splashSetupFailedTip;
+
+  /// No description provided for @readQuranTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Quran'**
+  String get readQuranTitle;
+
+  /// No description provided for @readQuranSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran For All'**
+  String get readQuranSubtitle;
+
+  /// No description provided for @readQuranSearchTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get readQuranSearchTooltip;
+
+  /// No description provided for @readQuranBookmarksTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmarks'**
+  String get readQuranBookmarksTooltip;
+
+  /// No description provided for @readQuranAllSurahsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'All Surahs'**
+  String get readQuranAllSurahsTitle;
+
+  /// No description provided for @readQuranTotalLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'total'**
+  String get readQuranTotalLabel;
+
+  /// No description provided for @readQuranAyahLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Ayah'**
+  String get readQuranAyahLabel;
+
+  /// No description provided for @readQuranSurahLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Surah'**
+  String get readQuranSurahLabel;
+
+  /// No description provided for @readQuranJuzLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Juz'**
+  String get readQuranJuzLabel;
+
+  /// No description provided for @readQuranAyahsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'ayahs'**
+  String get readQuranAyahsLabel;
+
+  /// No description provided for @readQuranSurahsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Surahs'**
+  String get readQuranSurahsLabel;
+
+  /// No description provided for @readQuranContinueReadingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue Reading'**
+  String get readQuranContinueReadingTitle;
+
+  /// No description provided for @readQuranBannerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Read. Reflect. Remember.'**
+  String get readQuranBannerTitle;
+
+  /// No description provided for @readQuranBannerSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline Quran with Bangla and English support.'**
+  String get readQuranBannerSubtitle;
+
+  /// No description provided for @readQuranOfflineReadyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline Ready'**
+  String get readQuranOfflineReadyLabel;
+
+  /// No description provided for @readQuranBannerSearchButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Surah, Ayah, Juz'**
+  String get readQuranBannerSearchButton;
+
+  /// No description provided for @readQuranSaveAyahBookmarkTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Save ayah bookmark'**
+  String get readQuranSaveAyahBookmarkTooltip;
+
+  /// No description provided for @readQuranRemoveAyahBookmarkTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove ayah bookmark'**
+  String get readQuranRemoveAyahBookmarkTooltip;
+
+  /// No description provided for @readQuranSaveSurahBookmarkTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Save surah bookmark'**
+  String get readQuranSaveSurahBookmarkTooltip;
+
+  /// No description provided for @readQuranRemoveSurahBookmarkTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove surah bookmark'**
+  String get readQuranRemoveSurahBookmarkTooltip;
+
+  /// No description provided for @readQuranMarkAyahLastReadTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark ayah as last read'**
+  String get readQuranMarkAyahLastReadTooltip;
+
+  /// No description provided for @readQuranCurrentLastReadTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Current last read ayah'**
+  String get readQuranCurrentLastReadTooltip;
+
+  /// No description provided for @readQuranPlayAyahAudioTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Play ayah audio'**
+  String get readQuranPlayAyahAudioTooltip;
+
+  /// No description provided for @readQuranStopAyahAudioTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop ayah audio'**
+  String get readQuranStopAyahAudioTooltip;
+
+  /// No description provided for @readQuranReadTafsirTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Read tafsir'**
+  String get readQuranReadTafsirTooltip;
+
+  /// No description provided for @readQuranTafsirTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tafsir'**
+  String get readQuranTafsirTitle;
+
+  /// No description provided for @readQuranNoTafsirBody.
+  ///
+  /// In en, this message translates to:
+  /// **'No tafsir available for this ayah yet.'**
+  String get readQuranNoTafsirBody;
+
+  /// No description provided for @readQuranMeccan.
+  ///
+  /// In en, this message translates to:
+  /// **'Meccan'**
+  String get readQuranMeccan;
+
+  /// No description provided for @readQuranMedinan.
+  ///
+  /// In en, this message translates to:
+  /// **'Medinan'**
+  String get readQuranMedinan;
+
+  /// No description provided for @readQuranCouldNotLoadSurahTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load surah'**
+  String get readQuranCouldNotLoadSurahTitle;
+
+  /// No description provided for @readQuranUnablePlayAyahAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to play this ayah audio right now.'**
+  String get readQuranUnablePlayAyahAudio;
+
+  /// No description provided for @readQuranUnablePlayFullSurahAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to play full surah audio right now.'**
+  String get readQuranUnablePlayFullSurahAudio;
+
+  /// No description provided for @readQuranAudioPermissionRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification permission is required for audio controls.'**
+  String get readQuranAudioPermissionRequired;
+
+  /// No description provided for @readQuranGoToSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to settings'**
+  String get readQuranGoToSettings;
+
+  /// No description provided for @readQuranExpandCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Expand card'**
+  String get readQuranExpandCard;
+
+  /// No description provided for @readQuranShrinkCard.
+  ///
+  /// In en, this message translates to:
+  /// **'Shrink card'**
+  String get readQuranShrinkCard;
+
+  /// No description provided for @readQuranReadingOptionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading options'**
+  String get readQuranReadingOptionsTitle;
+
+  /// No description provided for @readQuranReadingOptionsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation and translation visibility'**
+  String get readQuranReadingOptionsSubtitle;
+
+  /// No description provided for @readQuranReadingModeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading mode'**
+  String get readQuranReadingModeLabel;
+
+  /// No description provided for @readQuranDetailsMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get readQuranDetailsMode;
+
+  /// No description provided for @readQuranRegularMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Regular'**
+  String get readQuranRegularMode;
+
+  /// No description provided for @readQuranDetailsView.
+  ///
+  /// In en, this message translates to:
+  /// **'Details view'**
+  String get readQuranDetailsView;
+
+  /// No description provided for @readQuranRegularView.
+  ///
+  /// In en, this message translates to:
+  /// **'Regular view'**
+  String get readQuranRegularView;
+
+  /// No description provided for @readQuranPlayFullSurah.
+  ///
+  /// In en, this message translates to:
+  /// **'Play Full Surah'**
+  String get readQuranPlayFullSurah;
+
+  /// No description provided for @readQuranStopSurahAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop Surah Audio'**
+  String get readQuranStopSurahAudio;
+
+  /// No description provided for @readQuranSearchInsideSurahTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search inside this surah'**
+  String get readQuranSearchInsideSurahTitle;
+
+  /// No description provided for @readQuranSearchInsideSurahHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Try ayah number, Arabic text, or translation keyword'**
+  String get readQuranSearchInsideSurahHint;
+
+  /// No description provided for @readQuranStartTypingSurahSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Start typing to search in this surah.'**
+  String get readQuranStartTypingSurahSearch;
+
+  /// No description provided for @readQuranSearchAyahsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Ayahs'**
+  String get readQuranSearchAyahsTitle;
+
+  /// No description provided for @readQuranSearchAyahsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Type text or ayah number to jump quickly.'**
+  String get readQuranSearchAyahsBody;
+
+  /// No description provided for @readQuranNoResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No results'**
+  String get readQuranNoResultsTitle;
+
+  /// No description provided for @readQuranNoResultsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Try a different keyword or ayah number.'**
+  String get readQuranNoResultsBody;
+
+  /// No description provided for @readQuranResultsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Results: {count}'**
+  String readQuranResultsCount(int count);
+
+  /// No description provided for @readQuranSearchTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Quran'**
+  String get readQuranSearchTitle;
+
+  /// No description provided for @readQuranSearchEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Surah, Ayah, or Juz'**
+  String get readQuranSearchEmptyTitle;
+
+  /// No description provided for @readQuranSearchEmptyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Use query formats like 1:1, para 2, or any Bangla/English keyword.'**
+  String get readQuranSearchEmptyBody;
+
+  /// No description provided for @readQuranSearchFailedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Search failed'**
+  String get readQuranSearchFailedTitle;
+
+  /// No description provided for @readQuranSearchNoResultsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Try a shorter keyword or a direct ayah reference.'**
+  String get readQuranSearchNoResultsBody;
+
+  /// No description provided for @readQuranSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Try: Al-Baqarah, 2:255, para 1, mercy'**
+  String get readQuranSearchHint;
+
+  /// No description provided for @readQuranSearchingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Searching...'**
+  String get readQuranSearchingLabel;
+
+  /// No description provided for @readQuranSearchResultsSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Results: {count} · \"{query}\"'**
+  String readQuranSearchResultsSummary(int count, String query);
+
+  /// No description provided for @readQuranCouldNotOpenSearchResult.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open this result.'**
+  String get readQuranCouldNotOpenSearchResult;
+
+  /// No description provided for @readQuranBookmarksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmarks'**
+  String get readQuranBookmarksTitle;
+
+  /// No description provided for @readQuranCouldNotLoadBookmarksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load bookmarks'**
+  String get readQuranCouldNotLoadBookmarksTitle;
+
+  /// No description provided for @readQuranNoBookmarksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No bookmarks yet'**
+  String get readQuranNoBookmarksTitle;
+
+  /// No description provided for @readQuranNoBookmarksBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Save ayah or surah bookmarks to find them quickly later.'**
+  String get readQuranNoBookmarksBody;
+
+  /// No description provided for @readQuranCouldNotOpenBookmark.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open this bookmark.'**
+  String get readQuranCouldNotOpenBookmark;
+
+  /// No description provided for @readQuranSavedBookmarkLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved bookmark'**
+  String get readQuranSavedBookmarkLabel;
+
+  /// No description provided for @readQuranAyahBookmarkAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Ayah bookmarked successfully.'**
+  String get readQuranAyahBookmarkAdded;
+
+  /// No description provided for @readQuranAyahBookmarkRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'Ayah bookmark removed.'**
+  String get readQuranAyahBookmarkRemoved;
+
+  /// No description provided for @readQuranCouldNotUpdateAyahBookmark.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not update ayah bookmark right now.'**
+  String get readQuranCouldNotUpdateAyahBookmark;
+
+  /// No description provided for @readQuranMarkedLastRead.
+  ///
+  /// In en, this message translates to:
+  /// **'Marked as last read.'**
+  String get readQuranMarkedLastRead;
+
+  /// No description provided for @readQuranCouldNotMarkLastRead.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not mark this ayah as last read.'**
+  String get readQuranCouldNotMarkLastRead;
+
+  /// No description provided for @readQuranVmSearchFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Search failed. Please try again.'**
+  String get readQuranVmSearchFailed;
+
+  /// No description provided for @readQuranVmNoSurahSelected.
+  ///
+  /// In en, this message translates to:
+  /// **'No surah selected.'**
+  String get readQuranVmNoSurahSelected;
+
+  /// No description provided for @readQuranVmUnableLoadAyahs.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to load ayahs for this surah.'**
+  String get readQuranVmUnableLoadAyahs;
+
+  /// No description provided for @readQuranVmUnableLoadBookmarks.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to load bookmarks right now.'**
+  String get readQuranVmUnableLoadBookmarks;
 
   /// No description provided for @learnQuranPageTitle.
   ///
@@ -804,10 +1395,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'{moduleTitle} · {lessonCount} lessons'**
-  String dashboardContinueLearningModuleDetail(
-    String moduleTitle,
-    int lessonCount,
-  );
+  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount);
 
   /// No description provided for @dashboardRetry.
   ///
@@ -964,6 +1552,192 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enable location permission to calculate local prayer times. The guidance below still stays available.'**
   String get prayerViewPermissionHelpBody;
+
+  /// No description provided for @prayerTimesPermissionDeniedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission needed'**
+  String get prayerTimesPermissionDeniedTitle;
+
+  /// No description provided for @prayerTimesPermissionDeniedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow location access to calculate prayer times for your area. You can still use the guidance sections without live times.'**
+  String get prayerTimesPermissionDeniedBody;
+
+  /// No description provided for @prayerTimesPermissionDeniedForeverTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission is blocked'**
+  String get prayerTimesPermissionDeniedForeverTitle;
+
+  /// No description provided for @prayerTimesPermissionDeniedForeverBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Open app settings and allow location access, then refresh prayer times.'**
+  String get prayerTimesPermissionDeniedForeverBody;
+
+  /// No description provided for @prayerTimesLocationDisabledTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Location services are off'**
+  String get prayerTimesLocationDisabledTitle;
+
+  /// No description provided for @prayerTimesLocationDisabledBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on device location services, then refresh to calculate local prayer times.'**
+  String get prayerTimesLocationDisabledBody;
+
+  /// No description provided for @prayerTimesNetworkErrorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not prepare prayer times'**
+  String get prayerTimesNetworkErrorTitle;
+
+  /// No description provided for @prayerTimesNetworkErrorBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your connection and device location settings, then try again.'**
+  String get prayerTimesNetworkErrorBody;
+
+  /// No description provided for @compassTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Compass'**
+  String get compassTitle;
+
+  /// No description provided for @compassInitializing.
+  ///
+  /// In en, this message translates to:
+  /// **'Initializing compass...'**
+  String get compassInitializing;
+
+  /// No description provided for @compassRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get compassRetry;
+
+  /// No description provided for @compassNativeActive.
+  ///
+  /// In en, this message translates to:
+  /// **'Native compass active'**
+  String get compassNativeActive;
+
+  /// No description provided for @compassHeadingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Heading'**
+  String get compassHeadingLabel;
+
+  /// No description provided for @compassQiblaOffsetLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Qibla offset'**
+  String get compassQiblaOffsetLabel;
+
+  /// No description provided for @compassAccuracyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Accuracy'**
+  String get compassAccuracyLabel;
+
+  /// No description provided for @compassNotAvailableShort.
+  ///
+  /// In en, this message translates to:
+  /// **'N/A'**
+  String get compassNotAvailableShort;
+
+  /// No description provided for @compassApiAccuracyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'API'**
+  String get compassApiAccuracyLabel;
+
+  /// No description provided for @compassNativeAccuracyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'±2°'**
+  String get compassNativeAccuracyLabel;
+
+  /// No description provided for @compassFacingMeccaLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Facing Mecca!'**
+  String get compassFacingMeccaLabel;
+
+  /// No description provided for @compassRotateToAlignLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Rotate to align'**
+  String get compassRotateToAlignLabel;
+
+  /// No description provided for @compassApiFallbackTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Compass sensor unavailable'**
+  String get compassApiFallbackTitle;
+
+  /// No description provided for @compassApiFallbackBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your device does not expose a native compass sensor. We can calculate the Qibla angle from your location, but live rotation needs a compass-capable device.'**
+  String get compassApiFallbackBody;
+
+  /// No description provided for @compassApiFallbackQibla.
+  ///
+  /// In en, this message translates to:
+  /// **'Qibla angle: {degrees}°'**
+  String compassApiFallbackQibla(String degrees);
+
+  /// No description provided for @compassLocationDeniedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission needed'**
+  String get compassLocationDeniedTitle;
+
+  /// No description provided for @compassLocationDeniedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow location access so Qibla can be calculated from your current position.'**
+  String get compassLocationDeniedBody;
+
+  /// No description provided for @compassLocationBlockedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission is blocked'**
+  String get compassLocationBlockedTitle;
+
+  /// No description provided for @compassLocationBlockedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Open app settings and allow location access, then retry the Qibla compass.'**
+  String get compassLocationBlockedBody;
+
+  /// No description provided for @compassLocationDisabledTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Location services are off'**
+  String get compassLocationDisabledTitle;
+
+  /// No description provided for @compassLocationDisabledBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on device location services, then retry the Qibla compass.'**
+  String get compassLocationDisabledBody;
+
+  /// No description provided for @compassGenericErrorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Compass could not start'**
+  String get compassGenericErrorTitle;
+
+  /// No description provided for @compassGenericErrorBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Check location permission, sensor availability, and your connection, then try again.'**
+  String get compassGenericErrorBody;
 
   /// No description provided for @prayerViewTimelineTitle.
   ///
@@ -1157,6 +1931,18 @@ abstract class AppLocalizations {
   /// **'Open the details only when you need them, so the main prayer view stays calm.'**
   String get prayerReferenceSubtitle;
 
+  /// No description provided for @prayerReferenceMovementsActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Salah Movement Guide'**
+  String get prayerReferenceMovementsActionTitle;
+
+  /// No description provided for @prayerReferenceMovementsActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See every position with Arabic recitation, pronunciation, and meaning.'**
+  String get prayerReferenceMovementsActionSubtitle;
+
   /// No description provided for @prayerReferenceForbiddenActionTitle.
   ///
   /// In en, this message translates to:
@@ -1186,6 +1972,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'View'**
   String get prayerReferenceOpenLabel;
+
+  /// No description provided for @prayerMovementsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Salah Movement Guide'**
+  String get prayerMovementsTitle;
+
+  /// No description provided for @prayerMovementsHeroEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer in motion'**
+  String get prayerMovementsHeroEyebrow;
+
+  /// No description provided for @prayerMovementsHeroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray with clarity, calm, and meaning'**
+  String get prayerMovementsHeroTitle;
+
+  /// No description provided for @prayerMovementsHeroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'A visual walkthrough from takbir to dhikr, pairing each posture with the Arabic words, pronunciation, and translation.'**
+  String get prayerMovementsHeroBody;
+
+  /// No description provided for @prayerMovementsHeroStepsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} positions'**
+  String prayerMovementsHeroStepsCount(int count);
+
+  /// No description provided for @prayerMovementsHeroArabicLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Arabic + meaning'**
+  String get prayerMovementsHeroArabicLabel;
+
+  /// No description provided for @prayerMovementsHeroHadithLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith notes'**
+  String get prayerMovementsHeroHadithLabel;
+
+  /// No description provided for @prayerMovementsSequenceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Movement sequence'**
+  String get prayerMovementsSequenceTitle;
+
+  /// No description provided for @prayerMovementsSequenceSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow the flow from opening takbir to post-prayer dhikr, one settled posture at a time.'**
+  String get prayerMovementsSequenceSubtitle;
+
+  /// No description provided for @prayerMovementsArabicLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Arabic to recite'**
+  String get prayerMovementsArabicLabel;
+
+  /// No description provided for @prayerMovementsPronunciationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation'**
+  String get prayerMovementsPronunciationLabel;
+
+  /// No description provided for @prayerMovementsTranslationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Translation'**
+  String get prayerMovementsTranslationLabel;
+
+  /// No description provided for @prayerMovementsNoteLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice note'**
+  String get prayerMovementsNoteLabel;
+
+  /// No description provided for @prayerMovementsHadithTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith anchors'**
+  String get prayerMovementsHadithTitle;
+
+  /// No description provided for @prayerMovementsHadithSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Short reminders that keep the demonstration rooted in sunnah, calmness, and presence.'**
+  String get prayerMovementsHadithSubtitle;
+
+  /// No description provided for @prayerMovementsHadithSourceLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get prayerMovementsHadithSourceLabel;
+
+  /// No description provided for @prayerMovementsFiqhNoteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Respectful variation note'**
+  String get prayerMovementsFiqhNoteTitle;
+
+  /// No description provided for @prayerMovementsFiqhNoteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Hand placement, finger movement, and some wordings can vary by madhhab and teacher. Use this as a friendly demonstration and follow trusted local guidance for rulings.'**
+  String get prayerMovementsFiqhNoteBody;
 
   /// No description provided for @prayerNafalTitle.
   ///
@@ -1764,8 +2658,7 @@ abstract class AppLocalizations {
   String get learnQuranTextMapRaw;
 }
 
-class _AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -1774,26 +2667,25 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['bn', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['bn', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'bn':
-      return AppLocalizationsBn();
-    case 'en':
-      return AppLocalizationsEn();
+    case 'bn': return AppLocalizationsBn();
+    case 'en': return AppLocalizationsEn();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
+    'that was used.'
   );
 }

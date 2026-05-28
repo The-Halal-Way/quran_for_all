@@ -25,7 +25,7 @@ class SettingsThemeCard extends StatelessWidget {
         children: [
           _SectionTitle(
             icon: Icons.palette_outlined,
-            title: context.readQuranText('Appearance'),
+            title: context.l10n.settingsAppearanceTitle,
           ),
           const Divider(height: 1),
           Padding(
@@ -34,7 +34,7 @@ class SettingsThemeCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  context.readQuranText('Theme'),
+                  context.l10n.settingsThemeTitle,
                   style: AppTheme.text(
                     context,
                   ).titleMedium.copyWith(fontWeight: AppTheme.weightBold),
@@ -50,17 +50,17 @@ class SettingsThemeCard extends StatelessWidget {
                           Icons.brightness_auto_rounded,
                           size: 18,
                         ),
-                        label: Text(context.readQuranText('System')),
+                        label: Text(context.l10n.settingsThemeSystem),
                       ),
                       ButtonSegment<ThemeMode>(
                         value: ThemeMode.light,
                         icon: const Icon(Icons.light_mode_rounded, size: 18),
-                        label: Text(context.readQuranText('Light')),
+                        label: Text(context.l10n.settingsThemeLight),
                       ),
                       ButtonSegment<ThemeMode>(
                         value: ThemeMode.dark,
                         icon: const Icon(Icons.dark_mode_rounded, size: 18),
-                        label: Text(context.readQuranText('Dark')),
+                        label: Text(context.l10n.settingsThemeDark),
                       ),
                     ],
                     selected: {themeMode},

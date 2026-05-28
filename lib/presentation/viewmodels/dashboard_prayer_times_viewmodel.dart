@@ -6,10 +6,19 @@ import 'package:intl/intl.dart';
 import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
+enum PrayerTimesErrorType {
+  none,
+  permissionDenied,
+  permissionDeniedForever,
+  locationDisabled,
+  unavailable,
+}
+
 class DashboardPrayerTimesViewModel extends ChangeNotifier {
   Map<String, String>? _prayerTimes;
   Map<String, String>? _prayerTimeRanges;
   String _error = '';
+  PrayerTimesErrorType _errorType = PrayerTimesErrorType.none;
   bool _loading = false;
   String? _nextPrayer;
   static bool _timeZonesInitialized = false;
@@ -17,6 +26,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
   Map<String, String>? get prayerTimes => _prayerTimes;
   Map<String, String>? get prayerTimeRanges => _prayerTimeRanges;
   String get error => _error;
+  PrayerTimesErrorType get errorType => _errorType;
   bool get isLoading => _loading;
   String? get nextPrayer => _nextPrayer;
   bool get hasData => _prayerTimes != null && _prayerTimes!.isNotEmpty;
@@ -27,24 +37,36 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
 
     _loading = true;
     _error = '';
+    _errorType = PrayerTimesErrorType.none;
     notifyListeners();
 
     try {
+      final serviceEnabled = await Geolocator.isLocationServiceEnabled();
+      if (!serviceEnabled) {
+        _setError(
+          'Location services are disabled',
+          PrayerTimesErrorType.locationDisabled,
+        );
+        return;
+      }
+
       LocationPermission permission = await Geolocator.checkPermission();
       if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
-          _error = 'Location permission denied';
-          _loading = false;
-          notifyListeners();
+          _setError(
+            'Location permission denied',
+            PrayerTimesErrorType.permissionDenied,
+          );
           return;
         }
       }
 
       if (permission == LocationPermission.deniedForever) {
-        _error = 'Location permission permanently denied';
-        _loading = false;
-        notifyListeners();
+        _setError(
+          'Location permission permanently denied',
+          PrayerTimesErrorType.permissionDeniedForever,
+        );
         return;
       }
 
@@ -136,12 +158,21 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
             '${format.format(schedule['Isha']!)} - ${format.format(tomorrowFajr)}',
       };
       _nextPrayer = next;
+      _errorType = PrayerTimesErrorType.none;
       _loading = false;
       notifyListeners();
     } catch (e) {
-      _error = 'Failed to load prayer times: $e';
-      _loading = false;
-      notifyListeners();
+      _setError(
+        'Failed to load prayer times: $e',
+        PrayerTimesErrorType.unavailable,
+      );
     }
+  }
+
+  void _setError(String message, PrayerTimesErrorType type) {
+    _error = message;
+    _errorType = type;
+    _loading = false;
+    notifyListeners();
   }
 }

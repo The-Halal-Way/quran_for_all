@@ -54,7 +54,7 @@ class _BookmarksViewState extends State<BookmarksView> {
           icon: const Icon(Icons.arrow_back_ios_new),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: Text(context.readQuranText('Bookmarks')),
+        title: Text(context.l10n.readQuranBookmarksTitle),
       ),
       body: AppGradientBackground(
         child: RefreshIndicator(
@@ -69,7 +69,7 @@ class _BookmarksViewState extends State<BookmarksView> {
                   viewModel.bookmarks.isEmpty) {
                 return EmptyState(
                   icon: Icons.error_outline,
-                  title: context.readQuranText('Could not load bookmarks'),
+                  title: context.l10n.readQuranCouldNotLoadBookmarksTitle,
                   message: localizeReadQuranMessage(
                     context,
                     viewModel.errorMessage!,
@@ -80,10 +80,8 @@ class _BookmarksViewState extends State<BookmarksView> {
               if (viewModel.bookmarks.isEmpty) {
                 return EmptyState(
                   icon: Icons.bookmarks_outlined,
-                  title: context.readQuranText('No bookmarks yet'),
-                  message: context.readQuranText(
-                    'Save ayah or surah bookmarks to find them quickly later.',
-                  ),
+                  title: context.l10n.readQuranNoBookmarksTitle,
+                  message: context.l10n.readQuranNoBookmarksBody,
                 );
               }
 
@@ -136,9 +134,7 @@ class _BookmarksViewState extends State<BookmarksView> {
 
     if (surah == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(context.readQuranText('Could not open this bookmark.')),
-        ),
+        SnackBar(content: Text(context.l10n.readQuranCouldNotOpenBookmark)),
       );
       return;
     }

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/utils/app_page_route.dart';
+import 'package:quran_for_all/data/models/dashboard/dashboard_action_item.dart';
 import 'package:quran_for_all/data/models/learn_quran_content.dart';
 import 'package:quran_for_all/data/models/surah_model.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
@@ -28,7 +29,6 @@ import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart
 import 'package:quran_for_all/presentation/views/read_quran/surah_details_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 
-part '../../../data/models/dashboard/dashboard_action_item.dart';
 part '../../widgets/dashboard/dashboard/dashboard_view_sections.dart';
 part '../../widgets/dashboard/dashboard/action_tile.dart';
 part '../../widgets/dashboard/dashboard/bg_painter.dart';
@@ -64,6 +64,8 @@ class _DashboardViewState extends State<DashboardView> {
       context.watch<DashboardPrayerTimesViewModel>().prayerTimeRanges;
   String get _prayerError =>
       context.watch<DashboardPrayerTimesViewModel>().error;
+  PrayerTimesErrorType get _prayerErrorType =>
+      context.watch<DashboardPrayerTimesViewModel>().errorType;
   bool get _loadingPrayerTimes =>
       context.watch<DashboardPrayerTimesViewModel>().isLoading;
   String? get _nextPrayer =>
@@ -75,6 +77,34 @@ class _DashboardViewState extends State<DashboardView> {
 
   Future<void> _refreshDashboard() async {
     await _loadPrayerTimes();
+  }
+
+  String _prayerErrorTitle(PrayerTimesErrorType type) {
+    final l10n = context.l10n;
+    return switch (type) {
+      PrayerTimesErrorType.permissionDenied =>
+        l10n.prayerTimesPermissionDeniedTitle,
+      PrayerTimesErrorType.permissionDeniedForever =>
+        l10n.prayerTimesPermissionDeniedForeverTitle,
+      PrayerTimesErrorType.locationDisabled =>
+        l10n.prayerTimesLocationDisabledTitle,
+      PrayerTimesErrorType.unavailable => l10n.prayerTimesNetworkErrorTitle,
+      PrayerTimesErrorType.none => l10n.prayerTimesNetworkErrorTitle,
+    };
+  }
+
+  String _prayerErrorBody(PrayerTimesErrorType type) {
+    final l10n = context.l10n;
+    return switch (type) {
+      PrayerTimesErrorType.permissionDenied =>
+        l10n.prayerTimesPermissionDeniedBody,
+      PrayerTimesErrorType.permissionDeniedForever =>
+        l10n.prayerTimesPermissionDeniedForeverBody,
+      PrayerTimesErrorType.locationDisabled =>
+        l10n.prayerTimesLocationDisabledBody,
+      PrayerTimesErrorType.unavailable => l10n.prayerTimesNetworkErrorBody,
+      PrayerTimesErrorType.none => l10n.prayerTimesNetworkErrorBody,
+    };
   }
 
   bool get _isDark => Theme.of(context).brightness == Brightness.dark;

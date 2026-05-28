@@ -53,7 +53,7 @@ class _SearchViewState extends State<SearchView> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(context.readQuranText('Search Quran')),
+        title: Text(context.l10n.readQuranSearchTitle),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios_new),
           onPressed: () => Navigator.of(context).pop(),
@@ -87,19 +87,15 @@ class _SearchViewState extends State<SearchView> {
                   if (viewModel.query.isEmpty) {
                     return EmptyState(
                       icon: Icons.manage_search_rounded,
-                      title: context.readQuranText(
-                        'Search Surah, Ayah, or Juz',
-                      ),
-                      message: context.readQuranText(
-                        'Use query formats like 1:1, para 2, or any Bangla/English keyword.',
-                      ),
+                      title: context.l10n.readQuranSearchEmptyTitle,
+                      message: context.l10n.readQuranSearchEmptyBody,
                     );
                   }
 
                   if (viewModel.errorMessage != null) {
                     return EmptyState(
                       icon: Icons.error_outline,
-                      title: context.readQuranText('Search failed'),
+                      title: context.l10n.readQuranSearchFailedTitle,
                       message: localizeReadQuranMessage(
                         context,
                         viewModel.errorMessage!,
@@ -110,10 +106,8 @@ class _SearchViewState extends State<SearchView> {
                   if (viewModel.results.isEmpty) {
                     return EmptyState(
                       icon: Icons.search_off,
-                      title: context.readQuranText('No results'),
-                      message: context.readQuranText(
-                        'Try a shorter keyword or a direct ayah reference.',
-                      ),
+                      title: context.l10n.readQuranNoResultsTitle,
+                      message: context.l10n.readQuranSearchNoResultsBody,
                     );
                   }
 
@@ -177,9 +171,7 @@ class _SearchViewState extends State<SearchView> {
 
     if (surah == null) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(context.readQuranText('Could not open this result.')),
-        ),
+        SnackBar(content: Text(context.l10n.readQuranCouldNotOpenSearchResult)),
       );
       return;
     }

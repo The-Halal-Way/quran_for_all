@@ -7,16 +7,26 @@ import 'package:quran_for_all/core/theme/my_colors.dart';
 class PrayerReferenceActions extends StatelessWidget {
   const PrayerReferenceActions({
     super.key,
+    required this.onMovementGuideTap,
     required this.onForbiddenTimesTap,
     required this.onNafalPrayersTap,
   });
 
+  final VoidCallback onMovementGuideTap;
   final VoidCallback onForbiddenTimesTap;
   final VoidCallback onNafalPrayersTap;
 
   @override
   Widget build(BuildContext context) {
     final actions = [
+      _PrayerReferenceAction(
+        title: context.l10n.prayerReferenceMovementsActionTitle,
+        subtitle: context.l10n.prayerReferenceMovementsActionSubtitle,
+        icon: Icons.self_improvement_rounded,
+        startColor: MyColors.primaryLight,
+        endColor: MyColors.secondary,
+        onTap: onMovementGuideTap,
+      ),
       _PrayerReferenceAction(
         title: context.l10n.prayerReferenceForbiddenActionTitle,
         subtitle: context.l10n.prayerReferenceForbiddenActionSubtitle,
@@ -37,22 +47,23 @@ class PrayerReferenceActions extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth >= 680) {
-          return Row(
-            children: [
-              Expanded(child: _PrayerReferenceActionButton(action: actions[0])),
-              const SizedBox(width: AppSpacing.md),
-              Expanded(child: _PrayerReferenceActionButton(action: actions[1])),
-            ],
-          );
-        }
+        final columns = constraints.maxWidth >= 720 ? 3 : 2;
+        final itemHeight = columns == 2 ? 162.0 : 168.0;
 
-        return Column(
-          children: [
-            _PrayerReferenceActionButton(action: actions[0]),
-            const SizedBox(height: AppSpacing.md),
-            _PrayerReferenceActionButton(action: actions[1]),
-          ],
+        return GridView.builder(
+          itemCount: actions.length,
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          padding: EdgeInsets.zero,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: columns,
+            crossAxisSpacing: AppSpacing.md,
+            mainAxisSpacing: AppSpacing.md,
+            mainAxisExtent: itemHeight,
+          ),
+          itemBuilder: (context, index) {
+            return _PrayerReferenceActionButton(action: actions[index]);
+          },
         );
       },
     );
@@ -96,7 +107,7 @@ class _PrayerReferenceActionButton extends StatelessWidget {
           onTap: action.onTap,
           borderRadius: BorderRadius.circular(AppRadius.lg),
           child: Ink(
-            padding: const EdgeInsets.all(AppSpacing.md),
+            padding: const EdgeInsets.all(AppSpacing.sm + 2),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadius.lg),
               gradient: LinearGradient(
@@ -120,7 +131,7 @@ class _PrayerReferenceActionButton extends StatelessWidget {
                   children: [
                     Container(
                       width: 38,
-                      height: 38,
+                      height: 34,
                       decoration: BoxDecoration(
                         color: Colors.white.withValues(alpha: 0.17),
                         borderRadius: BorderRadius.circular(AppRadius.sm),
@@ -128,13 +139,13 @@ class _PrayerReferenceActionButton extends StatelessWidget {
                           color: Colors.white.withValues(alpha: 0.22),
                         ),
                       ),
-                      child: Icon(action.icon, color: Colors.white, size: 20),
+                      child: Icon(action.icon, color: Colors.white, size: 18),
                     ),
                     const Spacer(),
                     Container(
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 9,
-                        vertical: 5,
+                        horizontal: 8,
+                        vertical: 4,
                       ),
                       decoration: BoxDecoration(
                         color: Colors.white.withValues(alpha: 0.16),
@@ -156,16 +167,18 @@ class _PrayerReferenceActionButton extends StatelessWidget {
                           const Icon(
                             Icons.arrow_forward_rounded,
                             color: Colors.white,
-                            size: 15,
+                            size: 14,
                           ),
                         ],
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: AppSpacing.md),
+                const SizedBox(height: AppSpacing.sm + 2),
                 Text(
                   action.title,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                   style: text.prayerTimelineNameActive.copyWith(
                     color: Colors.white,
                     height: 1.15,
@@ -174,6 +187,8 @@ class _PrayerReferenceActionButton extends StatelessWidget {
                 const SizedBox(height: AppSpacing.xs),
                 Text(
                   action.subtitle,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                   style: text.bodySmall.copyWith(
                     color: Colors.white.withValues(alpha: 0.86),
                     height: 1.45,

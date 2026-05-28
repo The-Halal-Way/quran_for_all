@@ -118,7 +118,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
           : viewModel.errorMessage != null
           ? EmptyState(
               icon: Icons.error_outline,
-              title: context.readQuranText('Could not load surah'),
+              title: context.l10n.readQuranCouldNotLoadSurahTitle,
               message: localizeReadQuranMessage(
                 context,
                 viewModel.errorMessage!,
@@ -200,10 +200,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
         return;
       }
 
-      AppSnackbar.showError(
-        context,
-        context.readQuranText('Unable to play this ayah audio right now.'),
-      );
+      AppSnackbar.showError(context, context.l10n.readQuranUnablePlayAyahAudio);
     }
   }
 
@@ -224,7 +221,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
 
       AppSnackbar.showError(
         context,
-        context.readQuranText('Unable to play full surah audio right now.'),
+        context.l10n.readQuranUnablePlayFullSurahAudio,
       );
     }
   }
@@ -244,12 +241,10 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
 
     AppSnackbar.showError(
       context,
-      context.readQuranText(
-        'Notification permission is required for audio controls.',
-      ),
+      context.l10n.readQuranAudioPermissionRequired,
       action: permissionResult.shouldPromptToOpenSettings
           ? SnackBarAction(
-              label: context.readQuranText('Go to settings'),
+              label: context.l10n.readQuranGoToSettings,
               onPressed: () {
                 unawaited(permissionHelper.openSettings());
               },

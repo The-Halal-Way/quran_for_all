@@ -52,9 +52,7 @@ class SearchQueryPanel extends StatelessWidget {
             controller: controller,
             onChanged: onChanged,
             decoration: InputDecoration(
-              hintText: context.readQuranText(
-                'Try: Al-Baqarah, 2:255, para 1, mercy',
-              ),
+              hintText: context.l10n.readQuranSearchHint,
               prefixIcon: const Icon(Icons.search_rounded),
             ),
           ),
@@ -74,8 +72,11 @@ class SearchQueryPanel extends StatelessWidget {
                 Expanded(
                   child: Text(
                     isLoading
-                        ? context.readQuranText('Searching...')
-                        : '${context.readQuranText('Results')}: $resultCount · "$query"',
+                        ? context.l10n.readQuranSearchingLabel
+                        : context.l10n.readQuranSearchResultsSummary(
+                            resultCount,
+                            query,
+                          ),
                     style: AppTheme.text(context).bodySmall.copyWith(
                       color: colorScheme.onSurface.withValues(alpha: 0.75),
                     ),
