@@ -14,4 +14,6 @@ class MyIcons {
 
   static const String homeIcon = 'assets/icons/home.png';
   static const String homeIconFill = 'assets/icons/home_fill.png';
+  static const String prayerIcon = 'assets/icons/prayer.png';
+  static const String prayerIconFill = 'assets/icons/prayer_fill.png';
 }

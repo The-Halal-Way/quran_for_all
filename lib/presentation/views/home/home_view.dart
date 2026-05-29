@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/utils/app_responsive.dart';
@@ -20,6 +21,7 @@ class _HomeViewState extends State<HomeView> {
 
   final List<Widget> _sections = const [
     DashboardView(),
+    PrayerView(),
     ReadQuranView(),
     LearnQuranView(),
     SettingsView(embedded: true),
@@ -73,6 +75,19 @@ class _HomeViewState extends State<HomeView> {
                 height: navIconSize,
               ),
               label: l10n.homeDashboardTab,
+            ),
+            NavigationDestination(
+              icon: Image.asset(
+                MyIcons.prayerIcon,
+                width: navIconSize,
+                height: navIconSize,
+              ),
+              selectedIcon: Image.asset(
+                MyIcons.prayerIconFill,
+                width: navIconSize,
+                height: navIconSize,
+              ),
+              label: l10n.homePrayerTab,
             ),
             NavigationDestination(
               icon: Image.asset(

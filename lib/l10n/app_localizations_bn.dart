@@ -15,6 +15,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get homeDashboardTab => 'আজ';
 
   @override
+  String get homePrayerTab => 'নামাজ';
+
+  @override
   String get homeReadQuranTab => 'কুরআন পড়ুন';
 
   @override

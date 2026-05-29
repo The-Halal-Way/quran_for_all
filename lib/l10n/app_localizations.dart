@@ -107,6 +107,12 @@ abstract class AppLocalizations {
   /// **'Today'**
   String get homeDashboardTab;
 
+  /// No description provided for @homePrayerTab.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer'**
+  String get homePrayerTab;
+
   /// No description provided for @homeReadQuranTab.
   ///
   /// In en, this message translates to:
