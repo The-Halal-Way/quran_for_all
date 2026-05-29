@@ -22,7 +22,8 @@ import 'package:quran_for_all/presentation/views/dashboard/prayer/how_to_pray_vi
 import 'package:quran_for_all/presentation/views/dashboard/prayer/nafal_prayers_view.dart';
 
 class PrayerView extends StatefulWidget {
-  const PrayerView({super.key});
+  const PrayerView({super.key, this.isAppbardNeeded = true});
+  final bool isAppbardNeeded;
   @override
   State<PrayerView> createState() => _PrayerViewState();
 }
@@ -43,13 +44,14 @@ class _PrayerViewState extends State<PrayerView> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => PrayerViewModel(),
-      child: const _PrayerViewBody(),
+      child: _PrayerViewBody(isAppbardNeeded: widget.isAppbardNeeded),
     );
   }
 }
 
 class _PrayerViewBody extends StatelessWidget {
-  const _PrayerViewBody();
+  final bool isAppbardNeeded;
+  const _PrayerViewBody({required this.isAppbardNeeded});
 
   Future<void> _refresh(BuildContext context) {
     return context.read<DashboardPrayerTimesViewModel>().loadPrayerTimes(
@@ -77,164 +79,166 @@ class _PrayerViewBody extends StatelessWidget {
     final accent = PrayerVisuals.accentFor(content.prayer);
     final responsive = AppResponsive.of(context);
     final isDark = Theme.of(context).brightness == Brightness.dark;
-
     return Scaffold(
-      body: Stack(
-        children: [
-          Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: isDark
-                    ? AppGradients.darkPageBg
-                    : AppGradients.pageBg,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: isDark
+                      ? AppGradients.darkPageBg
+                      : AppGradients.pageBg,
+                ),
               ),
             ),
-          ),
-          RefreshIndicator(
-            color: MyColors.secondary,
-            onRefresh: () => _refresh(context),
-            child: AppPageScrollbar(
-              builder: (context, controller) => CustomScrollView(
-                controller: controller,
-                physics: const AlwaysScrollableScrollPhysics(
-                  parent: BouncingScrollPhysics(),
-                ),
-                slivers: [
-                  PrayerDetailsAppBar(
-                    isDark: isDark,
-                    onRefresh: () => unawaited(_refresh(context)),
+            RefreshIndicator(
+              color: MyColors.secondary,
+              onRefresh: () => _refresh(context),
+              child: AppPageScrollbar(
+                builder: (context, controller) => CustomScrollView(
+                  controller: controller,
+                  physics: const AlwaysScrollableScrollPhysics(
+                    parent: BouncingScrollPhysics(),
                   ),
-                  SliverToBoxAdapter(
-                    child: Center(
-                      child: ConstrainedBox(
-                        constraints: BoxConstraints(
-                          maxWidth: responsive.maxReadingContentWidth,
-                        ),
-                        child: Padding(
-                          padding: EdgeInsets.fromLTRB(
-                            responsive.padding,
-                            AppSpacing.lg,
-                            responsive.padding,
-                            AppSpacing.huge,
+                  slivers: [
+                    if (isAppbardNeeded)
+                      PrayerDetailsAppBar(
+                        isDark: isDark,
+                        onRefresh: () => unawaited(_refresh(context)),
+                      ),
+                    SliverToBoxAdapter(
+                      child: Center(
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            maxWidth: responsive.maxReadingContentWidth,
                           ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              if (prayerTimesVm.isLoading &&
-                                  !prayerTimesVm.hasData) ...[
-                                const PrayerStateCard.loading(),
-                                const SizedBox(height: AppSpacing.lg),
-                              ],
-                              if (prayerTimesVm.error.isNotEmpty &&
-                                  !prayerTimesVm.isLoading) ...[
-                                PrayerStateCard.error(
-                                  title: _errorTitle(
-                                    context,
-                                    prayerTimesVm.errorType,
-                                  ),
-                                  body: _errorBody(
-                                    context,
-                                    prayerTimesVm.errorType,
-                                  ),
-                                  onRetry: () => unawaited(_refresh(context)),
-                                ),
-                                const SizedBox(height: AppSpacing.lg),
-                              ],
-                              PrayerFocusHero(
-                                content: content,
-                                time: viewModel.focusTime(l10n),
-                                hasTimes: prayerTimesVm.hasData,
-                              ),
-                              PrayerSectionHeader(
-                                title: l10n.prayerReferenceTitle,
-                                subtitle: l10n.prayerReferenceSubtitle,
-                                icon: Icons.library_books_rounded,
-                                accent: MyColors.tertiary,
-                              ),
-                              PrayerReferenceActions(
-                                onMovementGuideTap: () =>
-                                    Navigator.of(context).push(
-                                      AppPageRoute<void>(
-                                        builder: (_) => const HowToPrayView(),
-                                      ),
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(
+                              responsive.padding,
+                              AppSpacing.lg,
+                              responsive.padding,
+                              AppSpacing.huge,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (prayerTimesVm.isLoading &&
+                                    !prayerTimesVm.hasData) ...[
+                                  const PrayerStateCard.loading(),
+                                  const SizedBox(height: AppSpacing.lg),
+                                ],
+                                if (prayerTimesVm.error.isNotEmpty &&
+                                    !prayerTimesVm.isLoading) ...[
+                                  PrayerStateCard.error(
+                                    title: _errorTitle(
+                                      context,
+                                      prayerTimesVm.errorType,
                                     ),
-                                onForbiddenTimesTap: () =>
-                                    Navigator.of(context).push(
-                                      AppPageRoute<void>(
-                                        builder: (_) => ForbiddenTimesView(
-                                          items: forbiddenTimes,
+                                    body: _errorBody(
+                                      context,
+                                      prayerTimesVm.errorType,
+                                    ),
+                                    onRetry: () => unawaited(_refresh(context)),
+                                  ),
+                                  const SizedBox(height: AppSpacing.lg),
+                                ],
+                                PrayerFocusHero(
+                                  content: content,
+                                  time: viewModel.focusTime(l10n),
+                                  hasTimes: prayerTimesVm.hasData,
+                                ),
+                                PrayerSectionHeader(
+                                  title: l10n.prayerReferenceTitle,
+                                  subtitle: l10n.prayerReferenceSubtitle,
+                                  icon: Icons.library_books_rounded,
+                                  accent: MyColors.tertiary,
+                                ),
+                                PrayerReferenceActions(
+                                  onMovementGuideTap: () =>
+                                      Navigator.of(context).push(
+                                        AppPageRoute<void>(
+                                          builder: (_) => const HowToPrayView(),
                                         ),
                                       ),
-                                    ),
-                                onNafalPrayersTap: () =>
-                                    Navigator.of(context).push(
-                                      AppPageRoute<void>(
-                                        builder: (_) => NafalPrayersView(
-                                          items: nafalPrayers,
+                                  onForbiddenTimesTap: () =>
+                                      Navigator.of(context).push(
+                                        AppPageRoute<void>(
+                                          builder: (_) => ForbiddenTimesView(
+                                            items: forbiddenTimes,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                              ),
-                              PrayerSectionHeader(
-                                title: l10n.prayerViewTimelineTitle,
-                                subtitle: l10n.prayerViewTimelineSubtitle,
-                                icon: Icons.view_timeline_rounded,
-                                accent: accent,
-                              ),
-                              if (viewModel.prayerTimeRanges['Sehri'] != null &&
-                                  viewModel.prayerTimes['Sehri'] != null)
-                                PrayerSehriWindowCard(
-                                  timeRange:
-                                      viewModel.prayerTimeRanges['Sehri']!,
-                                  lastTime: viewModel.prayerTimes['Sehri']!,
+                                  onNafalPrayersTap: () =>
+                                      Navigator.of(context).push(
+                                        AppPageRoute<void>(
+                                          builder: (_) => NafalPrayersView(
+                                            items: nafalPrayers,
+                                          ),
+                                        ),
+                                      ),
                                 ),
-                              PrayerTimelineCard(items: timeline),
-                              PrayerSectionHeader(
-                                title: l10n.prayerViewNowTitle,
-                                subtitle: l10n.prayerViewNowSubtitle,
-                                icon: Icons.route_rounded,
-                                accent: MyColors.tertiary,
-                              ),
-                              PrayerNowCard(content: content),
-                              PrayerSectionHeader(
-                                title: l10n.prayerViewSuggestionsTitle,
-                                subtitle: l10n.prayerViewSuggestionsSubtitle,
-                                icon: Icons.auto_awesome_rounded,
-                                accent: MyColors.secondary,
-                              ),
-                              PrayerSuggestionsSection(
-                                items: content.suggestions,
-                                accent: MyColors.secondary,
-                              ),
-                              PrayerSectionHeader(
-                                title: l10n.prayerViewHowTitle,
-                                subtitle: l10n.prayerViewHowSubtitle,
-                                icon: Icons.self_improvement_rounded,
-                                accent: MyColors.primaryLight,
-                              ),
-                              HowToPraySection(steps: howToPray),
-                              PrayerSectionHeader(
-                                title: l10n.prayerViewBestPracticesTitle,
-                                subtitle: l10n.prayerViewBestPracticesSubtitle,
-                                icon: Icons.verified_rounded,
-                                accent: accent,
-                              ),
-                              BestPracticesSection(
-                                items: content.bestPractices,
-                                accent: accent,
-                              ),
-                              const PrayerFiqhNote(),
-                            ],
+                                PrayerSectionHeader(
+                                  title: l10n.prayerViewTimelineTitle,
+                                  subtitle: l10n.prayerViewTimelineSubtitle,
+                                  icon: Icons.view_timeline_rounded,
+                                  accent: accent,
+                                ),
+                                if (viewModel.prayerTimeRanges['Sehri'] != null &&
+                                    viewModel.prayerTimes['Sehri'] != null)
+                                  PrayerSehriWindowCard(
+                                    timeRange:
+                                        viewModel.prayerTimeRanges['Sehri']!,
+                                    lastTime: viewModel.prayerTimes['Sehri']!,
+                                  ),
+                                PrayerTimelineCard(items: timeline),
+                                PrayerSectionHeader(
+                                  title: l10n.prayerViewNowTitle,
+                                  subtitle: l10n.prayerViewNowSubtitle,
+                                  icon: Icons.route_rounded,
+                                  accent: MyColors.tertiary,
+                                ),
+                                PrayerNowCard(content: content),
+                                PrayerSectionHeader(
+                                  title: l10n.prayerViewSuggestionsTitle,
+                                  subtitle: l10n.prayerViewSuggestionsSubtitle,
+                                  icon: Icons.auto_awesome_rounded,
+                                  accent: MyColors.secondary,
+                                ),
+                                PrayerSuggestionsSection(
+                                  items: content.suggestions,
+                                  accent: MyColors.secondary,
+                                ),
+                                PrayerSectionHeader(
+                                  title: l10n.prayerViewHowTitle,
+                                  subtitle: l10n.prayerViewHowSubtitle,
+                                  icon: Icons.self_improvement_rounded,
+                                  accent: MyColors.primaryLight,
+                                ),
+                                HowToPraySection(steps: howToPray),
+                                PrayerSectionHeader(
+                                  title: l10n.prayerViewBestPracticesTitle,
+                                  subtitle: l10n.prayerViewBestPracticesSubtitle,
+                                  icon: Icons.verified_rounded,
+                                  accent: accent,
+                                ),
+                                BestPracticesSection(
+                                  items: content.bestPractices,
+                                  accent: accent,
+                                ),
+                                const PrayerFiqhNote(),
+                              ],
+                            ),
                           ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -213,189 +213,240 @@ extension _DashboardViewStateSections on _DashboardViewState {
   Widget _buildPrayerCard() {
     final text = AppTheme.text(context);
 
-    return InkWell(
-      onTap: () {
-        //if (_loadingPrayerTimes || _prayerError.isNotEmpty) return;
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (_) => const PrayerView()),
-        );
-      },
-      child: Container(
-        decoration: BoxDecoration(
-          color: _cardBg,
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: _isDark
-                ? Colors.white.withOpacity(0.06)
-                : _divider.withOpacity(0.8),
-            width: 0.8,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: MyColors.primary.withOpacity(_isDark ? 0.12 : 0.05),
-              blurRadius: 16,
-              offset: const Offset(0, 4),
-            ),
-          ],
+    return Container(
+      decoration: BoxDecoration(
+        color: _cardBg,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: _isDark
+              ? Colors.white.withOpacity(0.06)
+              : _divider.withOpacity(0.8),
+          width: 0.8,
         ),
-        child: _loadingPrayerTimes
-            ? const Padding(
-                padding: EdgeInsets.all(32),
-                child: Center(
-                  child: CircularProgressIndicator(
-                    color: MyColors.secondary,
-                    strokeWidth: 2,
-                  ),
+        boxShadow: [
+          BoxShadow(
+            color: MyColors.primary.withOpacity(_isDark ? 0.12 : 0.05),
+            blurRadius: 16,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: _loadingPrayerTimes
+          ? const Padding(
+              padding: EdgeInsets.all(32),
+              child: Center(
+                child: CircularProgressIndicator(
+                  color: MyColors.secondary,
+                  strokeWidth: 2,
                 ),
-              )
-            : _prayerError.isNotEmpty
-            ? Padding(
-                padding: const EdgeInsets.all(20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.error_outline_rounded,
-                          color: MyColors.secondary,
-                          size: 18,
-                        ),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          child: Text(
-                            _prayerErrorTitle(_prayerErrorType),
-                            style: text.titleSmall.copyWith(
-                              color: _textMain,
-                              fontWeight: AppTheme.weightBold,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 6),
-                    Text(
-                      _prayerErrorBody(_prayerErrorType),
-                      style: text.bodySmall.copyWith(color: _textSub),
-                    ),
-                    const SizedBox(height: 12),
-                    GestureDetector(
-                      onTap: _loadPrayerTimes,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 16,
-                          vertical: 8,
-                        ),
-                        decoration: BoxDecoration(
-                          color: MyColors.secondary.withOpacity(0.1),
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: MyColors.secondary.withOpacity(0.25),
-                          ),
-                        ),
-                        child: Text(
-                          context.l10n.dashboardRetry,
-                          style: text.labelMedium.copyWith(
-                            color: MyColors.secondary,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              )
-            : Column(
+              ),
+            )
+          : _prayerError.isNotEmpty
+          ? Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Next prayer highlight banner
-                  if (_nextPrayer != null)
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [MyColors.secondary, MyColors.primaryLight],
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
-                        ),
-                        borderRadius: const BorderRadius.vertical(
-                          top: Radius.circular(20),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.error_outline_rounded,
+                        color: MyColors.secondary,
+                        size: 18,
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          _prayerErrorTitle(_prayerErrorType),
+                          style: text.titleSmall.copyWith(
+                            color: _textMain,
+                            fontWeight: AppTheme.weightBold,
+                          ),
                         ),
                       ),
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 36,
-                            height: 36,
-                            decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.15),
-                              shape: BoxShape.circle,
-                            ),
-                            child: Icon(
-                              _dashboardViewModel.prayerIcon(_nextPrayer!),
-                              color: Colors.white,
-                              size: 18,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                context.l10n.dashboardNextPrayer,
-                                style: text.dashboardCardEyebrow.copyWith(
-                                  color: Colors.white.withOpacity(0.7),
-                                ),
-                              ),
-                              Text(
-                                _dashboardViewModel.localizedPrayerName(
-                                  context.l10n,
-                                  _nextPrayer!,
-                                ),
-                                style: text.dashboardNextPrayerName.copyWith(
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const Spacer(),
-                          Text(
-                            _prayerTimes?[_nextPrayer!] ?? '',
-                            style: text.dashboardNextPrayerTime.copyWith(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                  // Prayer rows
-                  Padding(
+                    ],
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    _prayerErrorBody(_prayerErrorType),
+                    style: text.bodySmall.copyWith(color: _textSub),
+                  ),
+                  const SizedBox(height: 12),
+                  Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 16,
-                      vertical: 10,
+                      vertical: 8,
                     ),
-                    child: Column(
-                      children: (_prayerTimes ?? {}).entries.map((entry) {
-                        final isNext = entry.key == _nextPrayer;
-                        return PrayerRow(
-                          name: _dashboardViewModel.localizedPrayerName(
-                            context.l10n,
-                            entry.key,
-                          ),
-                          time: _prayerTimeRanges?[entry.key] ?? entry.value,
-                          icon: _dashboardViewModel.prayerIcon(entry.key),
-                          isNext: isNext,
-                          isDark: _isDark,
-                          textMain: _textMain,
-                          textHint: _textHint,
-                          divider: _divider,
-                        );
-                      }).toList(),
+                    decoration: BoxDecoration(
+                      color: MyColors.secondary.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(
+                        color: MyColors.secondary.withOpacity(0.25),
+                      ),
+                    ),
+                    child: Text(
+                      context.l10n.dashboardRetry,
+                      style: text.labelMedium.copyWith(
+                        color: MyColors.secondary,
+                      ),
                     ),
                   ),
                 ],
               ),
+            )
+          : GestureDetector(
+            onTap: _togglePrayerCardExpanded,
+            child: Column(
+                children: [
+                  _buildPrayerSummaryHeader(text),
+                  AnimatedCrossFade(
+                    firstChild: const SizedBox(width: double.infinity),
+                    secondChild: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 10,
+                      ),
+                      child: Column(
+                        children: (_prayerTimes ?? {}).entries.map((entry) {
+                          final isNext = entry.key == _nextPrayer;
+                          return PrayerRow(
+                            name: _dashboardViewModel.localizedPrayerName(
+                              context.l10n,
+                              entry.key,
+                            ),
+                            time: _prayerTimeRanges?[entry.key] ?? entry.value,
+                            icon: _dashboardViewModel.prayerIcon(entry.key),
+                            isNext: isNext,
+                            isDark: _isDark,
+                            textMain: _textMain,
+                            textHint: _textHint,
+                            divider: _divider,
+                          );
+                        }).toList(),
+                      ),
+                    ),
+                    crossFadeState: _isPrayerCardExpanded
+                        ? CrossFadeState.showSecond
+                        : CrossFadeState.showFirst,
+                    duration: const Duration(milliseconds: 220),
+                    firstCurve: Curves.easeOutCubic,
+                    secondCurve: Curves.easeOutCubic,
+                    sizeCurve: Curves.easeOutCubic,
+                  ),
+                ],
+              ),
+          ),
+    );
+  }
+
+  Widget _buildPrayerSummaryHeader(AppTypography text) {
+    final nextPrayer = _nextPrayer;
+    final icon = nextPrayer == null
+        ? Icons.access_time_rounded
+        : _dashboardViewModel.prayerIcon(nextPrayer);
+    final title = nextPrayer == null
+        ? context.l10n.dashboardSectionPrayerTimes
+        : _dashboardViewModel.localizedPrayerName(context.l10n, nextPrayer);
+    final subtitle = nextPrayer == null
+        ? context.l10n.dashboardActionFullPrayerView
+        : context.l10n.dashboardNextPrayer;
+    final time = nextPrayer == null ? '--' : _prayerTimes?[nextPrayer] ?? '';
+    final borderRadius = _isPrayerCardExpanded
+        ? const BorderRadius.vertical(top: Radius.circular(20))
+        : BorderRadius.circular(20);
+
+    return Container(
+      padding: const EdgeInsets.fromLTRB(16, 12, 10, 12),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [MyColors.secondary, MyColors.primaryLight],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        borderRadius: borderRadius,
       ),
+      child: Row(
+        children: [
+          Container(
+            width: 36,
+            height: 36,
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: 0.15),
+              shape: BoxShape.circle,
+            ),
+            child: Icon(icon, color: Colors.white, size: 18),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  subtitle,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: text.dashboardCardEyebrow.copyWith(
+                    color: Colors.white.withValues(alpha: 0.7),
+                  ),
+                ),
+                Text(
+                  title,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: text.dashboardNextPrayerName.copyWith(
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: 8),
+          Text(
+            time,
+            style: text.dashboardNextPrayerTime.copyWith(color: Colors.white),
+          ),
+          const SizedBox(width: 4),
+          _buildPrayerHeaderButton(
+            icon: _isPrayerCardExpanded
+                ? Icons.keyboard_arrow_up_rounded
+                : Icons.keyboard_arrow_down_rounded,
+            tooltip: _isPrayerCardExpanded
+                ? MaterialLocalizations.of(context).expandedIconTapHint
+                : MaterialLocalizations.of(context).collapsedIconTapHint,
+            onPressed: _togglePrayerCardExpanded,
+          ),
+          // _buildPrayerHeaderButton(
+          //   icon: Icons.arrow_forward_rounded,
+          //   tooltip: context.l10n.dashboardActionFullPrayerView,
+          //   onPressed: () {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(builder: (_) => const PrayerView()),
+          //     );
+          //   },
+          // ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPrayerHeaderButton({
+    required IconData icon,
+    required String tooltip,
+    required VoidCallback onPressed,
+  }) {
+    return IconButton(
+      onPressed: onPressed,
+      tooltip: tooltip,
+      visualDensity: VisualDensity.compact,
+      style: IconButton.styleFrom(
+        backgroundColor: Colors.white.withValues(alpha: 0.14),
+        foregroundColor: Colors.white,
+        minimumSize: const Size(34, 34),
+        fixedSize: const Size(34, 34),
+        padding: EdgeInsets.zero,
+      ),
+      icon: Icon(icon, size: 19),
     );
   }
 

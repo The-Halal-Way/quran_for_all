@@ -21,7 +21,7 @@ class _HomeViewState extends State<HomeView> {
 
   final List<Widget> _sections = const [
     DashboardView(),
-    PrayerView(),
+    PrayerView(isAppbardNeeded: false),
     ReadQuranView(),
     LearnQuranView(),
     SettingsView(embedded: true),

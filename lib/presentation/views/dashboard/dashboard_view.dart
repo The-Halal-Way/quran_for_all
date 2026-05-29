@@ -22,7 +22,6 @@ import 'package:quran_for_all/presentation/views/dashboard/duah/duah_ninty_nine_
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/tasbeeh_view.dart';
 import 'package:quran_for_all/presentation/views/learn_quran/learning_module_detail_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart';
@@ -46,6 +45,7 @@ class _DashboardViewState extends State<DashboardView> {
   static const double _dashboardTabletMaxWidth = 880;
   static const double _dashboardDesktopMaxWidth = 940;
   final DashboardViewModel _dashboardViewModel = DashboardViewModel();
+  bool _isPrayerCardExpanded = false;
 
   @override
   void initState() {
@@ -77,6 +77,12 @@ class _DashboardViewState extends State<DashboardView> {
 
   Future<void> _refreshDashboard() async {
     await _loadPrayerTimes();
+  }
+
+  void _togglePrayerCardExpanded() {
+    setState(() {
+      _isPrayerCardExpanded = !_isPrayerCardExpanded;
+    });
   }
 
   String _prayerErrorTitle(PrayerTimesErrorType type) {
@@ -125,7 +131,6 @@ class _DashboardViewState extends State<DashboardView> {
     int? initialAyahNumber,
   }) async {
     unawaited(context.read<SurahDetailsViewModel>().openSurah(surah));
-
     await Navigator.of(context).push(
       AppPageRoute<void>(
         builder: (_) => SurahDetailsView(
@@ -134,11 +139,9 @@ class _DashboardViewState extends State<DashboardView> {
         ),
       ),
     );
-
     if (!context.mounted) {
       return;
     }
-
     await context.read<ReadQuranViewModel>().load(showLoading: false);
   }
 
@@ -150,12 +153,10 @@ class _DashboardViewState extends State<DashboardView> {
       }
       return;
     }
-
     final module = viewModel.moduleForLesson(lesson.id);
     if (module == null) {
       return;
     }
-
     _openModule(context, module);
   }
 
@@ -179,7 +180,6 @@ class _DashboardViewState extends State<DashboardView> {
               child: CustomPaint(painter: BgPainter(isDark: _isDark)),
             ),
           ),
-
           SafeArea(
             child: RefreshIndicator(
               color: MyColors.secondary,
@@ -208,26 +208,33 @@ class _DashboardViewState extends State<DashboardView> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          // Greeting & profile
                           _buildGreetingHeader(),
                           const SizedBox(height: 20),
+                          // quran reading & learning continue cards
                           _buildContinueCards(),
                           const SizedBox(height: 24),
+                          // title for prayer times section
                           _buildSectionLabel(
                             context.l10n.dashboardSectionPrayerTimes,
                             Icons.access_time_rounded,
                             MyColors.secondary,
                           ),
                           const SizedBox(height: 10),
+                          // prayer times card
                           _buildPrayerCard(),
                           const SizedBox(height: 24),
+                          // title for duah section
                           _buildSectionLabel(
                             context.l10n.dashboardSectionDua,
                             Icons.auto_awesome_rounded,
                             MyColors.tertiary,
                           ),
                           const SizedBox(height: 10),
+                          // action row for duah section
                           _buildSmallActionRow(
                             items: [
+                              // daily duah
                               DashboardActionItem(
                                 icon: Icons.wb_twilight_rounded,
                                 label: context.l10n.dashboardActionDailyDua,
@@ -236,6 +243,7 @@ class _DashboardViewState extends State<DashboardView> {
                                 color: MyColors.tertiary,
                                 onTap: () => _push(const DailyDuahView()),
                               ),
+                              // powerful duah
                               DashboardActionItem(
                                 icon: Icons.bolt_rounded,
                                 label: context.l10n.dashboardActionPowerfulDua,
@@ -244,6 +252,7 @@ class _DashboardViewState extends State<DashboardView> {
                                 color: MyColors.secondary,
                                 onTap: () => _push(const PowerfulDuahView()),
                               ),
+                              // 99 names
                               DashboardActionItem(
                                 icon: Icons.diamond_rounded,
                                 label:
@@ -257,14 +266,17 @@ class _DashboardViewState extends State<DashboardView> {
                             ],
                           ),
                           const SizedBox(height: 24),
+                          // title for other tools section
                           _buildSectionLabel(
                             context.l10n.dashboardSectionOthers,
                             Icons.widgets_rounded,
                             MyColors.secondary,
                           ),
                           const SizedBox(height: 10),
+                          // action row for other tools section
                           _buildSmallActionRow(
                             items: [
+                              // qibla compass
                               DashboardActionItem(
                                 icon: Icons.explore_rounded,
                                 label: context.l10n.dashboardActionQiblaCompass,
@@ -273,6 +285,7 @@ class _DashboardViewState extends State<DashboardView> {
                                 color: MyColors.primaryLight,
                                 onTap: () => _push(const CompassView()),
                               ),
+                              // tasbeeh counter
                               DashboardActionItem(
                                 icon: Icons.touch_app_rounded,
                                 label: context.l10n.dashboardActionTasbeeh,
@@ -284,12 +297,14 @@ class _DashboardViewState extends State<DashboardView> {
                             ],
                           ),
                           const SizedBox(height: 24),
+                          // title for hadith section
                           _buildSectionLabel(
                             context.l10n.dashboardSectionHadith,
                             Icons.menu_book_rounded,
                             MyColors.primaryLight,
                           ),
                           const SizedBox(height: 10),
+                          // hadith cards
                           _buildHadithCards(),
                         ],
                       ),
