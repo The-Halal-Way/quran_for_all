@@ -113,6 +113,12 @@ abstract class AppLocalizations {
   /// **'Prayer'**
   String get homePrayerTab;
 
+  /// No description provided for @homeQuranTab.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran'**
+  String get homeQuranTab;
+
   /// No description provided for @homeReadQuranTab.
   ///
   /// In en, this message translates to:
@@ -731,6 +737,186 @@ abstract class AppLocalizations {
   /// **'Unable to load bookmarks right now.'**
   String get readQuranVmUnableLoadBookmarks;
 
+  /// No description provided for @quranHubTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran'**
+  String get quranHubTitle;
+
+  /// No description provided for @quranHubHeroEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'The Book that guides'**
+  String get quranHubHeroEyebrow;
+
+  /// No description provided for @quranHubHeroArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'الْقُرْآن'**
+  String get quranHubHeroArabic;
+
+  /// No description provided for @quranHubHeroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'A single home for reading, learning, reflecting, and returning to Allah\'s words with a calmer heart.'**
+  String get quranHubHeroBody;
+
+  /// No description provided for @quranHubStatOfflineValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline'**
+  String get quranHubStatOfflineValue;
+
+  /// No description provided for @quranHubStatOfflineLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Text ready'**
+  String get quranHubStatOfflineLabel;
+
+  /// No description provided for @quranHubStatLanguagesValue.
+  ///
+  /// In en, this message translates to:
+  /// **'2'**
+  String get quranHubStatLanguagesValue;
+
+  /// No description provided for @quranHubStatLanguagesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Languages'**
+  String get quranHubStatLanguagesLabel;
+
+  /// No description provided for @quranHubSectionChooseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your Quran path'**
+  String get quranHubSectionChooseTitle;
+
+  /// No description provided for @quranHubSectionChooseSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Move straight into recitation, or slow down and build stronger Quran skills.'**
+  String get quranHubSectionChooseSubtitle;
+
+  /// No description provided for @quranHubReadTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Quran'**
+  String get quranHubReadTitle;
+
+  /// No description provided for @quranHubReadSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the mushaf, search ayahs, save bookmarks, and continue from your last read.'**
+  String get quranHubReadSubtitle;
+
+  /// No description provided for @quranHubReadAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Start reading'**
+  String get quranHubReadAction;
+
+  /// No description provided for @quranHubReadFreshStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin from any surah'**
+  String get quranHubReadFreshStart;
+
+  /// No description provided for @quranHubReadContinueDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Last read: {surahName}, Ayah {ayahNumber}'**
+  String quranHubReadContinueDetail(String surahName, int ayahNumber);
+
+  /// No description provided for @quranHubLearnTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn Quran'**
+  String get quranHubLearnTitle;
+
+  /// No description provided for @quranHubLearnSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Build pronunciation, tajweed, word meaning, and salah-ready recitation step by step.'**
+  String get quranHubLearnSubtitle;
+
+  /// No description provided for @quranHubLearnAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Start learning'**
+  String get quranHubLearnAction;
+
+  /// No description provided for @quranHubLearningFreshStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin with the first guided lesson'**
+  String get quranHubLearningFreshStart;
+
+  /// No description provided for @quranHubHadithTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith about the Quran'**
+  String get quranHubHadithTitle;
+
+  /// No description provided for @quranHubHadithSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Short reminders that keep reading and learning connected to reward, mercy, and practice.'**
+  String get quranHubHadithSubtitle;
+
+  /// No description provided for @quranHubHadithBestTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn and teach'**
+  String get quranHubHadithBestTitle;
+
+  /// No description provided for @quranHubHadithBestBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The Prophet ﷺ taught that the best people are those who learn the Quran and teach it.'**
+  String get quranHubHadithBestBody;
+
+  /// No description provided for @quranHubHadithBestSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 5027'**
+  String get quranHubHadithBestSource;
+
+  /// No description provided for @quranHubHadithIntercessorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A companion on that Day'**
+  String get quranHubHadithIntercessorTitle;
+
+  /// No description provided for @quranHubHadithIntercessorBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The Quran will come on the Day of Resurrection as an intercessor for its companions.'**
+  String get quranHubHadithIntercessorBody;
+
+  /// No description provided for @quranHubHadithIntercessorSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 804'**
+  String get quranHubHadithIntercessorSource;
+
+  /// No description provided for @quranHubHadithEffortTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Effort is honored'**
+  String get quranHubHadithEffortTitle;
+
+  /// No description provided for @quranHubHadithEffortBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The skilled reciter is with noble angels, and the one who recites with difficulty receives two rewards.'**
+  String get quranHubHadithEffortBody;
+
+  /// No description provided for @quranHubHadithEffortSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 4937; Sahih Muslim 798'**
+  String get quranHubHadithEffortSource;
+
   /// No description provided for @learnQuranPageTitle.
   ///
   /// In en, this message translates to:
@@ -970,6 +1156,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Complete authentic du\'as including optional additions and all daily situations.'**
   String get duahLevelAdvancedDesc;
+
+  /// No description provided for @duahCategoryEatingDrinking.
+  ///
+  /// In en, this message translates to:
+  /// **'Eating & Drinking'**
+  String get duahCategoryEatingDrinking;
+
+  /// No description provided for @duahCategoryHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get duahCategoryHome;
+
+  /// No description provided for @duahCategoryWashroom.
+  ///
+  /// In en, this message translates to:
+  /// **'Washroom'**
+  String get duahCategoryWashroom;
+
+  /// No description provided for @duahCategorySleep.
+  ///
+  /// In en, this message translates to:
+  /// **'Sleep'**
+  String get duahCategorySleep;
+
+  /// No description provided for @duahCategoryDailyDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Dhikr'**
+  String get duahCategoryDailyDhikr;
+
+  /// No description provided for @duahCategoryWudu.
+  ///
+  /// In en, this message translates to:
+  /// **'Wudū\''**
+  String get duahCategoryWudu;
+
+  /// No description provided for @duahCategoryMasjid.
+  ///
+  /// In en, this message translates to:
+  /// **'Masjid'**
+  String get duahCategoryMasjid;
+
+  /// No description provided for @duahCategorySneezing.
+  ///
+  /// In en, this message translates to:
+  /// **'Sneezing'**
+  String get duahCategorySneezing;
+
+  /// No description provided for @duahCategoryDifficulty.
+  ///
+  /// In en, this message translates to:
+  /// **'Difficulty'**
+  String get duahCategoryDifficulty;
 
   /// No description provided for @duahCountLabel.
   ///

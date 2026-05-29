@@ -21,6 +21,7 @@ import 'domain/repositories/settings_repository.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
+import 'presentation/viewmodels/quran/quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/bookmarks_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/search_viewmodel.dart';
@@ -97,6 +98,7 @@ class QuranForAllApp extends StatelessWidget {
             audioControlViewModel: context.read<AudioControlViewModel>(),
           ),
         ),
+        Provider<QuranViewModel>(create: (_) => QuranViewModel()),
         ChangeNotifierProvider<SearchViewModel>(
           create: (context) => SearchViewModel(context.read<QuranRepository>()),
         ),

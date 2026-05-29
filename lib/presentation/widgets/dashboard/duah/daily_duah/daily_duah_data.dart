@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 
 enum DuahLevel { beginner, intermediate, advanced }
 
@@ -158,6 +159,25 @@ class DuahCategory {
   final IconData icon;
   final String label;
   final List<DuahItem> items;
+}
+
+extension DuahCategoryLocalization on DuahCategory {
+  String localizedLabel(BuildContext context) {
+    final l10n = context.l10n;
+
+    return switch (label) {
+      'Eating & Drinking' => l10n.duahCategoryEatingDrinking,
+      'Home' => l10n.duahCategoryHome,
+      'Washroom' => l10n.duahCategoryWashroom,
+      'Sleep' => l10n.duahCategorySleep,
+      'Daily Dhikr' => l10n.duahCategoryDailyDhikr,
+      'Wudū\'' => l10n.duahCategoryWudu,
+      'Masjid' => l10n.duahCategoryMasjid,
+      'Sneezing' => l10n.duahCategorySneezing,
+      'Difficulty' => l10n.duahCategoryDifficulty,
+      _ => label,
+    };
+  }
 }
 
 class DuahData {

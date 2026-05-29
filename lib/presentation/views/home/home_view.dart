@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
+import 'package:quran_for_all/presentation/views/quran/quran_view.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/utils/app_responsive.dart';
-import '../learn_quran/learn_quran_view.dart';
-import '../read_quran/read_quran_view.dart';
 import '../settings/settings_view.dart';
 
 class HomeView extends StatefulWidget {
@@ -22,8 +21,7 @@ class _HomeViewState extends State<HomeView> {
   final List<Widget> _sections = const [
     DashboardView(),
     PrayerView(isAppbardNeeded: false),
-    ReadQuranView(),
-    LearnQuranView(),
+    QuranView(),
     SettingsView(embedded: true),
   ];
 
@@ -100,20 +98,7 @@ class _HomeViewState extends State<HomeView> {
                 width: navIconSize,
                 height: navIconSize,
               ),
-              label: l10n.homeReadQuranTab,
-            ),
-            NavigationDestination(
-              icon: Image.asset(
-                MyIcons.learnIconUnselected,
-                width: navIconSize,
-                height: navIconSize,
-              ),
-              selectedIcon: Image.asset(
-                MyIcons.learnIcon,
-                width: navIconSize,
-                height: navIconSize,
-              ),
-              label: l10n.homeLearnQuranTab,
+              label: l10n.homeQuranTab,
             ),
             NavigationDestination(
               icon: Icon(Icons.settings_outlined, size: navIconSize),

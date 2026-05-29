@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import '../../../core/localization/learn_quran_message_localizer.dart';
 import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/utils/app_responsive.dart';
@@ -20,7 +21,10 @@ import '../../../core/utils/app_page_route.dart';
 import 'learning_module_detail_view.dart';
 
 class LearnQuranView extends StatefulWidget {
-  const LearnQuranView({super.key});
+  const LearnQuranView({super.key, this.embedded = false});
+
+  final bool embedded;
+
   @override
   State<LearnQuranView> createState() => _LearnQuranViewState();
 }
@@ -31,7 +35,10 @@ class _LearnQuranViewState extends State<LearnQuranView> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
-      unawaited(context.read<LearnQuranViewModel>().initialize());
+      final viewModel = context.read<LearnQuranViewModel>();
+      if (viewModel.isLoading) {
+        unawaited(viewModel.initialize());
+      }
     });
   }
 
@@ -40,9 +47,27 @@ class _LearnQuranViewState extends State<LearnQuranView> {
     final viewModel = context.watch<LearnQuranViewModel>();
     final l10n = context.l10n;
     final responsive = AppResponsive.of(context);
+    final text = AppTheme.text(context);
 
     return Scaffold(
+      appBar: widget.embedded
+          ? null
+          : AppBar(
+              title: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.learnQuranPageTitle,
+                    style: text.titleLarge.copyWith(
+                      fontWeight: AppTheme.weightBold,
+                    ),
+                  ),
+                  Text(l10n.learnHeaderSubtitle, style: text.bodySmall),
+                ],
+              ),
+            ),
       body: SafeArea(
+        top: widget.embedded,
         child: AppGradientBackground(
           child: viewModel.isLoading
               ? const Center(child: CircularProgressIndicator())

@@ -47,7 +47,7 @@ class CategorySection extends StatelessWidget {
                 ),
                 const SizedBox(width: 8),
                 Text(
-                  category.label,
+                  category.localizedLabel(context),
                   style: text.titleMedium.copyWith(
                     color: isDark
                         ? const Color(0xFFEDE7F6)

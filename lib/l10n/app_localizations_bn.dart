@@ -18,6 +18,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get homePrayerTab => 'নামাজ';
 
   @override
+  String get homeQuranTab => 'কুরআন';
+
+  @override
   String get homeReadQuranTab => 'কুরআন পড়ুন';
 
   @override
@@ -331,6 +334,98 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranVmUnableLoadBookmarks => 'এই মুহূর্তে বুকমার্ক লোড করা যাচ্ছে না।';
 
   @override
+  String get quranHubTitle => 'কুরআন';
+
+  @override
+  String get quranHubHeroEyebrow => 'যে কিতাব পথ দেখায়';
+
+  @override
+  String get quranHubHeroArabic => 'الْقُرْآن';
+
+  @override
+  String get quranHubHeroBody => 'পড়া, শেখা, ভাবনা এবং আল্লাহর কালামের দিকে শান্ত হৃদয়ে ফিরে আসার এক জায়গা।';
+
+  @override
+  String get quranHubStatOfflineValue => 'অফলাইন';
+
+  @override
+  String get quranHubStatOfflineLabel => 'টেক্সট প্রস্তুত';
+
+  @override
+  String get quranHubStatLanguagesValue => '২';
+
+  @override
+  String get quranHubStatLanguagesLabel => 'ভাষা';
+
+  @override
+  String get quranHubSectionChooseTitle => 'আপনার কুরআন পথ বেছে নিন';
+
+  @override
+  String get quranHubSectionChooseSubtitle => 'সরাসরি তিলাওয়াতে যান, অথবা ধীরে ধীরে কুরআনের দক্ষতা গড়ে তুলুন।';
+
+  @override
+  String get quranHubReadTitle => 'কুরআন পড়ুন';
+
+  @override
+  String get quranHubReadSubtitle => 'মুসহাফ খুলুন, আয়াত খুঁজুন, বুকমার্ক রাখুন এবং শেষ পড়া থেকে চালিয়ে যান।';
+
+  @override
+  String get quranHubReadAction => 'পড়া শুরু করুন';
+
+  @override
+  String get quranHubReadFreshStart => 'যেকোনো সূরা থেকে শুরু করুন';
+
+  @override
+  String quranHubReadContinueDetail(String surahName, int ayahNumber) {
+    return 'শেষ পড়া: $surahName, আয়াত $ayahNumber';
+  }
+
+  @override
+  String get quranHubLearnTitle => 'কুরআন শিখুন';
+
+  @override
+  String get quranHubLearnSubtitle => 'উচ্চারণ, তাজবিদ, শব্দের অর্থ এবং নামাজের উপযোগী তিলাওয়াত ধাপে ধাপে গড়ে তুলুন।';
+
+  @override
+  String get quranHubLearnAction => 'শেখা শুরু করুন';
+
+  @override
+  String get quranHubLearningFreshStart => 'প্রথম গাইডেড লেসন দিয়ে শুরু করুন';
+
+  @override
+  String get quranHubHadithTitle => 'কুরআন সম্পর্কে হাদিস';
+
+  @override
+  String get quranHubHadithSubtitle => 'পড়া ও শেখাকে সওয়াব, রহমত এবং আমলের সঙ্গে যুক্ত রাখার সংক্ষিপ্ত স্মরণ।';
+
+  @override
+  String get quranHubHadithBestTitle => 'শেখা ও শেখানো';
+
+  @override
+  String get quranHubHadithBestBody => 'নবী ﷺ শিখিয়েছেন, তোমাদের মধ্যে উত্তম সে, যে কুরআন শেখে এবং শেখায়।';
+
+  @override
+  String get quranHubHadithBestSource => 'সহীহ বুখারী ৫০২৭';
+
+  @override
+  String get quranHubHadithIntercessorTitle => 'সেদিনের সঙ্গী';
+
+  @override
+  String get quranHubHadithIntercessorBody => 'কিয়ামতের দিন কুরআন তার সঙ্গীদের জন্য সুপারিশকারী হয়ে আসবে।';
+
+  @override
+  String get quranHubHadithIntercessorSource => 'সহীহ মুসলিম ৮০৪';
+
+  @override
+  String get quranHubHadithEffortTitle => 'চেষ্টারও মর্যাদা আছে';
+
+  @override
+  String get quranHubHadithEffortBody => 'দক্ষ তিলাওয়াতকারী সম্মানিত ফেরেশতাদের সঙ্গী; আর কষ্ট করে পড়লে দ্বিগুণ সওয়াব।';
+
+  @override
+  String get quranHubHadithEffortSource => 'সহীহ বুখারী ৪৯৩৭; সহীহ মুসলিম ৭৯৮';
+
+  @override
   String get learnQuranPageTitle => 'কুরআন শিখুন';
 
   @override
@@ -461,6 +556,33 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get duahLevelAdvancedDesc => 'ঐচ্ছিক অংশসহ পূর্ণ প্রামাণ্য দু\'আ এবং দৈনন্দিন সব পরিস্থিতি।';
+
+  @override
+  String get duahCategoryEatingDrinking => 'খাওয়া ও পানীয়';
+
+  @override
+  String get duahCategoryHome => 'বাড়ি';
+
+  @override
+  String get duahCategoryWashroom => 'ওয়াশরুম';
+
+  @override
+  String get duahCategorySleep => 'ঘুম';
+
+  @override
+  String get duahCategoryDailyDhikr => 'দৈনিক যিকির';
+
+  @override
+  String get duahCategoryWudu => 'ওজু';
+
+  @override
+  String get duahCategoryMasjid => 'মসজিদ';
+
+  @override
+  String get duahCategorySneezing => 'হাঁচি';
+
+  @override
+  String get duahCategoryDifficulty => 'কঠিন সময়';
 
   @override
   String duahCountLabel(int count) {

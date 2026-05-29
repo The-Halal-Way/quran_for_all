@@ -18,6 +18,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homePrayerTab => 'Prayer';
 
   @override
+  String get homeQuranTab => 'Quran';
+
+  @override
   String get homeReadQuranTab => 'Read Quran';
 
   @override
@@ -331,6 +334,98 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranVmUnableLoadBookmarks => 'Unable to load bookmarks right now.';
 
   @override
+  String get quranHubTitle => 'Quran';
+
+  @override
+  String get quranHubHeroEyebrow => 'The Book that guides';
+
+  @override
+  String get quranHubHeroArabic => 'الْقُرْآن';
+
+  @override
+  String get quranHubHeroBody => 'A single home for reading, learning, reflecting, and returning to Allah\'s words with a calmer heart.';
+
+  @override
+  String get quranHubStatOfflineValue => 'Offline';
+
+  @override
+  String get quranHubStatOfflineLabel => 'Text ready';
+
+  @override
+  String get quranHubStatLanguagesValue => '2';
+
+  @override
+  String get quranHubStatLanguagesLabel => 'Languages';
+
+  @override
+  String get quranHubSectionChooseTitle => 'Choose your Quran path';
+
+  @override
+  String get quranHubSectionChooseSubtitle => 'Move straight into recitation, or slow down and build stronger Quran skills.';
+
+  @override
+  String get quranHubReadTitle => 'Read Quran';
+
+  @override
+  String get quranHubReadSubtitle => 'Open the mushaf, search ayahs, save bookmarks, and continue from your last read.';
+
+  @override
+  String get quranHubReadAction => 'Start reading';
+
+  @override
+  String get quranHubReadFreshStart => 'Begin from any surah';
+
+  @override
+  String quranHubReadContinueDetail(String surahName, int ayahNumber) {
+    return 'Last read: $surahName, Ayah $ayahNumber';
+  }
+
+  @override
+  String get quranHubLearnTitle => 'Learn Quran';
+
+  @override
+  String get quranHubLearnSubtitle => 'Build pronunciation, tajweed, word meaning, and salah-ready recitation step by step.';
+
+  @override
+  String get quranHubLearnAction => 'Start learning';
+
+  @override
+  String get quranHubLearningFreshStart => 'Begin with the first guided lesson';
+
+  @override
+  String get quranHubHadithTitle => 'Hadith about the Quran';
+
+  @override
+  String get quranHubHadithSubtitle => 'Short reminders that keep reading and learning connected to reward, mercy, and practice.';
+
+  @override
+  String get quranHubHadithBestTitle => 'Learn and teach';
+
+  @override
+  String get quranHubHadithBestBody => 'The Prophet ﷺ taught that the best people are those who learn the Quran and teach it.';
+
+  @override
+  String get quranHubHadithBestSource => 'Sahih al-Bukhari 5027';
+
+  @override
+  String get quranHubHadithIntercessorTitle => 'A companion on that Day';
+
+  @override
+  String get quranHubHadithIntercessorBody => 'The Quran will come on the Day of Resurrection as an intercessor for its companions.';
+
+  @override
+  String get quranHubHadithIntercessorSource => 'Sahih Muslim 804';
+
+  @override
+  String get quranHubHadithEffortTitle => 'Effort is honored';
+
+  @override
+  String get quranHubHadithEffortBody => 'The skilled reciter is with noble angels, and the one who recites with difficulty receives two rewards.';
+
+  @override
+  String get quranHubHadithEffortSource => 'Sahih al-Bukhari 4937; Sahih Muslim 798';
+
+  @override
   String get learnQuranPageTitle => 'Learn Quran';
 
   @override
@@ -461,6 +556,33 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get duahLevelAdvancedDesc => 'Complete authentic du\'as including optional additions and all daily situations.';
+
+  @override
+  String get duahCategoryEatingDrinking => 'Eating & Drinking';
+
+  @override
+  String get duahCategoryHome => 'Home';
+
+  @override
+  String get duahCategoryWashroom => 'Washroom';
+
+  @override
+  String get duahCategorySleep => 'Sleep';
+
+  @override
+  String get duahCategoryDailyDhikr => 'Daily Dhikr';
+
+  @override
+  String get duahCategoryWudu => 'Wudū\'';
+
+  @override
+  String get duahCategoryMasjid => 'Masjid';
+
+  @override
+  String get duahCategorySneezing => 'Sneezing';
+
+  @override
+  String get duahCategoryDifficulty => 'Difficulty';
 
   @override
   String duahCountLabel(int count) {
