@@ -1104,6 +1104,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerReferenceNafalActionSubtitle => 'Tahajjud, Ishraq, Duha, and Awwabin in one daily flow.';
 
   @override
+  String get prayerReferenceJanazaActionTitle => 'Janaja Prayer';
+
+  @override
+  String get prayerReferenceJanazaActionSubtitle => 'A standing mercy prayer with four takbirs and sincere du\'a.';
+
+  @override
+  String get prayerReferenceTasbeehActionTitle => 'Salatul Tasbeeh';
+
+  @override
+  String get prayerReferenceTasbeehActionSubtitle => 'Follow the 300-tasbih rhythm across four rak\'ahs.';
+
+  @override
   String get prayerReferenceOpenLabel => 'View';
 
   @override

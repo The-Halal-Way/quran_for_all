@@ -2213,6 +2213,30 @@ abstract class AppLocalizations {
   /// **'Tahajjud, Ishraq, Duha, and Awwabin in one daily flow.'**
   String get prayerReferenceNafalActionSubtitle;
 
+  /// No description provided for @prayerReferenceJanazaActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Janaja Prayer'**
+  String get prayerReferenceJanazaActionTitle;
+
+  /// No description provided for @prayerReferenceJanazaActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A standing mercy prayer with four takbirs and sincere du\'a.'**
+  String get prayerReferenceJanazaActionSubtitle;
+
+  /// No description provided for @prayerReferenceTasbeehActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Salatul Tasbeeh'**
+  String get prayerReferenceTasbeehActionTitle;
+
+  /// No description provided for @prayerReferenceTasbeehActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow the 300-tasbih rhythm across four rak\'ahs.'**
+  String get prayerReferenceTasbeehActionSubtitle;
+
   /// No description provided for @prayerReferenceOpenLabel.
   ///
   /// In en, this message translates to:

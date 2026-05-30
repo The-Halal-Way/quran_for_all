@@ -10,6 +10,8 @@ import 'package:quran_for_all/core/utils/app_page_route.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/prayer/prayer_viewmodel.dart';
+import 'package:quran_for_all/presentation/views/dashboard/prayer/janaza_prayer_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/prayer/salatul_tasbeeh_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_details_app_bar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_focus_hero.dart';
@@ -154,6 +156,7 @@ class _PrayerViewBody extends StatelessWidget {
                                   icon: Icons.library_books_rounded,
                                   accent: MyColors.tertiary,
                                 ),
+                                // how to pray
                                 PrayerReferenceActions(
                                   onMovementGuideTap: () =>
                                       Navigator.of(context).push(
@@ -177,6 +180,18 @@ class _PrayerViewBody extends StatelessWidget {
                                           ),
                                         ),
                                       ),
+                                  onJanazaPrayerTap: () =>
+                                      Navigator.of(context).push(
+                                        AppPageRoute<void>(
+                                          builder: (_) => JanazaPrayerView(),
+                                        ),
+                                      ),
+                                  onSalatulTasbeehTap: () =>
+                                      Navigator.of(context).push(
+                                        AppPageRoute<void>(
+                                          builder: (_) => SalatulTasbeehView(),
+                                        ),
+                                      ),
                                 ),
                                 PrayerSectionHeader(
                                   title: l10n.prayerViewTimelineTitle,
@@ -184,7 +199,8 @@ class _PrayerViewBody extends StatelessWidget {
                                   icon: Icons.view_timeline_rounded,
                                   accent: accent,
                                 ),
-                                if (viewModel.prayerTimeRanges['Sehri'] != null &&
+                                if (viewModel.prayerTimeRanges['Sehri'] !=
+                                        null &&
                                     viewModel.prayerTimes['Sehri'] != null)
                                   PrayerSehriWindowCard(
                                     timeRange:
@@ -218,7 +234,8 @@ class _PrayerViewBody extends StatelessWidget {
                                 HowToPraySection(steps: howToPray),
                                 PrayerSectionHeader(
                                   title: l10n.prayerViewBestPracticesTitle,
-                                  subtitle: l10n.prayerViewBestPracticesSubtitle,
+                                  subtitle:
+                                      l10n.prayerViewBestPracticesSubtitle,
                                   icon: Icons.verified_rounded,
                                   accent: accent,
                                 ),

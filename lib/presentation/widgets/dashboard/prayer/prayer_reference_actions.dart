@@ -10,11 +10,15 @@ class PrayerReferenceActions extends StatelessWidget {
     required this.onMovementGuideTap,
     required this.onForbiddenTimesTap,
     required this.onNafalPrayersTap,
+    required this.onJanazaPrayerTap,
+    required this.onSalatulTasbeehTap,
   });
 
   final VoidCallback onMovementGuideTap;
   final VoidCallback onForbiddenTimesTap;
   final VoidCallback onNafalPrayersTap;
+  final VoidCallback onJanazaPrayerTap;
+  final VoidCallback onSalatulTasbeehTap;
 
   @override
   Widget build(BuildContext context) {
@@ -43,12 +47,32 @@ class PrayerReferenceActions extends StatelessWidget {
         endColor: MyColors.secondaryLight,
         onTap: onNafalPrayersTap,
       ),
+      _PrayerReferenceAction(
+        title: context.l10n.prayerReferenceJanazaActionTitle,
+        subtitle: context.l10n.prayerReferenceJanazaActionSubtitle,
+        icon: Icons.volunteer_activism_rounded,
+        startColor: MyColors.info,
+        endColor: MyColors.tertiary,
+        onTap: onJanazaPrayerTap,
+      ),
+      _PrayerReferenceAction(
+        title: context.l10n.prayerReferenceTasbeehActionTitle,
+        subtitle: context.l10n.prayerReferenceTasbeehActionSubtitle,
+        icon: Icons.brightness_5_rounded,
+        startColor: MyColors.secondaryLight,
+        endColor: MyColors.primaryLight,
+        onTap: onSalatulTasbeehTap,
+      ),
     ];
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        final columns = constraints.maxWidth >= 720 ? 3 : 2;
-        final itemHeight = columns == 2 ? 162.0 : 168.0;
+        final columns = constraints.maxWidth >= 820
+            ? 3
+            : constraints.maxWidth >= 520
+            ? 2
+            : 1;
+        final itemHeight = columns == 1 ? 150.0 : 170.0;
 
         return GridView.builder(
           itemCount: actions.length,

@@ -1,5 +1,7 @@
 enum PrayerKey { fajr, sunrise, dhuhr, asr, maghrib, isha }
 
+enum SpecialPrayerType { janaza, salatulTasbeeh }
+
 extension PrayerKeyX on PrayerKey {
   String get scheduleKey {
     switch (this) {
@@ -83,6 +85,90 @@ class PrayerHadithReference {
 
   final String source;
   final String body;
+}
+
+class SpecialPrayerContent {
+  const SpecialPrayerContent({
+    required this.type,
+    required this.title,
+    required this.heroEyebrow,
+    required this.heroArabic,
+    required this.heroBody,
+    required this.heroBadge,
+    required this.quickFactsTitle,
+    required this.quickFactsSubtitle,
+    required this.guideTitle,
+    required this.guideSubtitle,
+    required this.sectionCommentLabel,
+    required this.hadithTitle,
+    required this.hadithSubtitle,
+    required this.note,
+    required this.facts,
+    required this.sections,
+    required this.hadithReferences,
+  });
+
+  final SpecialPrayerType type;
+  final String title;
+  final String heroEyebrow;
+  final String heroArabic;
+  final String heroBody;
+  final String heroBadge;
+  final String quickFactsTitle;
+  final String quickFactsSubtitle;
+  final String guideTitle;
+  final String guideSubtitle;
+  final String sectionCommentLabel;
+  final String hadithTitle;
+  final String hadithSubtitle;
+  final PrayerGuidanceItem note;
+  final List<SpecialPrayerFact> facts;
+  final List<SpecialPrayerSection> sections;
+  final List<PrayerHadithReference> hadithReferences;
+}
+
+class SpecialPrayerFact {
+  const SpecialPrayerFact({
+    required this.label,
+    required this.value,
+    required this.detail,
+  });
+
+  final String label;
+  final String value;
+  final String detail;
+}
+
+class SpecialPrayerSection {
+  const SpecialPrayerSection({
+    required this.title,
+    required this.body,
+    required this.comment,
+    required this.points,
+  });
+
+  final String title;
+  final String body;
+  final String comment;
+  final List<SpecialPrayerPoint> points;
+}
+
+class SpecialPrayerPoint {
+  const SpecialPrayerPoint({
+    required this.title,
+    required this.body,
+    this.badge,
+    this.arabic,
+    this.pronunciation,
+    this.translation,
+  });
+
+  final String title;
+  final String body;
+  final String? badge;
+  final String? arabic;
+  final String? pronunciation;
+  final String? translation;
 }
 
 class PrayerMovementStep {

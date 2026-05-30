@@ -1104,6 +1104,18 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerReferenceNafalActionSubtitle => 'তাহাজ্জুদ, ইশরাক, দুহা ও আউয়াবিন এক ধারায় দেখুন।';
 
   @override
+  String get prayerReferenceJanazaActionTitle => 'জানাজা নামাজ';
+
+  @override
+  String get prayerReferenceJanazaActionSubtitle => 'চার তাকবির ও আন্তরিক দু\'আসহ দাঁড়িয়ে পড়া রহমতের নামাজ।';
+
+  @override
+  String get prayerReferenceTasbeehActionTitle => 'সালাতুত তাসবিহ';
+
+  @override
+  String get prayerReferenceTasbeehActionSubtitle => 'চার রাকাতে ৩০০ তাসবিহের ধারা অনুসরণ করুন।';
+
+  @override
   String get prayerReferenceOpenLabel => 'দেখুন';
 
   @override
