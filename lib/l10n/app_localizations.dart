@@ -134,6 +134,12 @@ abstract class AppLocalizations {
   /// **'Learn Quran'**
   String get homeLearnQuranTab;
 
+  /// No description provided for @homeSunnahDuaTab.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah/Du\'a'**
+  String get homeSunnahDuaTab;
+
   /// No description provided for @languageEnglish.
   ///
   /// In en, this message translates to:
@@ -1394,6 +1400,366 @@ abstract class AppLocalizations {
   /// **'Retry'**
   String get duahNintyNineRetry;
 
+  /// No description provided for @sunnahDuaTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah & Du\'a'**
+  String get sunnahDuaTitle;
+
+  /// No description provided for @sunnahDuaHeroEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily practice'**
+  String get sunnahDuaHeroEyebrow;
+
+  /// No description provided for @sunnahDuaHeroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Whole Sunnah practices with related du\'as placed inside them, plus standalone du\'as and dhikr.'**
+  String get sunnahDuaHeroBody;
+
+  /// No description provided for @sunnahDuaHeroArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'سُنَّة وَدُعَاء'**
+  String get sunnahDuaHeroArabic;
+
+  /// No description provided for @sunnahDuaHeroStatGrid.
+  ///
+  /// In en, this message translates to:
+  /// **'Grid'**
+  String get sunnahDuaHeroStatGrid;
+
+  /// No description provided for @sunnahDuaFilterAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get sunnahDuaFilterAll;
+
+  /// No description provided for @sunnahDuaFilterSunnah.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah'**
+  String get sunnahDuaFilterSunnah;
+
+  /// No description provided for @sunnahDuaFilterDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Du\'a'**
+  String get sunnahDuaFilterDua;
+
+  /// No description provided for @sunnahDuaFilterDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr'**
+  String get sunnahDuaFilterDhikr;
+
+  /// No description provided for @sunnahDuaKindSunnah.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah'**
+  String get sunnahDuaKindSunnah;
+
+  /// No description provided for @sunnahDuaKindDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Du\'a'**
+  String get sunnahDuaKindDua;
+
+  /// No description provided for @sunnahDuaKindDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr'**
+  String get sunnahDuaKindDhikr;
+
+  /// No description provided for @sunnahDuaGridTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah Amal'**
+  String get sunnahDuaGridTitle;
+
+  /// No description provided for @sunnahDuaItemsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} items'**
+  String sunnahDuaItemsCount(int count);
+
+  /// No description provided for @sunnahDuaSourceLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get sunnahDuaSourceLabel;
+
+  /// No description provided for @sunnahDuaArabicLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Arabic'**
+  String get sunnahDuaArabicLabel;
+
+  /// No description provided for @sunnahDuaPronunciationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation'**
+  String get sunnahDuaPronunciationLabel;
+
+  /// No description provided for @sunnahDuaTranslationLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Meaning'**
+  String get sunnahDuaTranslationLabel;
+
+  /// No description provided for @sunnahDuaPracticeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice note'**
+  String get sunnahDuaPracticeLabel;
+
+  /// No description provided for @sunnahDuaSunnahPointsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah practice'**
+  String get sunnahDuaSunnahPointsLabel;
+
+  /// No description provided for @sunnahDuaRelatedDuaLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Related du\'a'**
+  String get sunnahDuaRelatedDuaLabel;
+
+  /// No description provided for @sunnahDuaDuaIncludedLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Du\'a included'**
+  String get sunnahDuaDuaIncludedLabel;
+
+  /// No description provided for @sunnahDuaSourceDailySunnah.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Sunnah practice'**
+  String get sunnahDuaSourceDailySunnah;
+
+  /// No description provided for @sunnahDuaSourceDailyDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily du\'a collection'**
+  String get sunnahDuaSourceDailyDua;
+
+  /// No description provided for @sunnahDuaEatingSunnahsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Eating Sunnahs'**
+  String get sunnahDuaEatingSunnahsTitle;
+
+  /// No description provided for @sunnahDuaEatingSunnahsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'The du\'a is one part of the whole eating adab'**
+  String get sunnahDuaEatingSunnahsSubtitle;
+
+  /// No description provided for @sunnahDuaEatingSunnahsPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin with Allah\'s name before eating.||Eat with the right hand.||Eat from the food nearest to you.||Avoid criticizing food and stop before overfilling yourself.'**
+  String get sunnahDuaEatingSunnahsPointsRaw;
+
+  /// No description provided for @sunnahDuaEatingSunnahsPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the card as a small checklist at meals. Say the du\'a, then keep the manners through the whole meal.'**
+  String get sunnahDuaEatingSunnahsPractice;
+
+  /// No description provided for @sunnahDuaMiswakTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Miswakh'**
+  String get sunnahDuaMiswakTitle;
+
+  /// No description provided for @sunnahDuaMiswakSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Freshen the mouth before worship'**
+  String get sunnahDuaMiswakSubtitle;
+
+  /// No description provided for @sunnahDuaMiswakPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Use it before wudu or prayer when easy.||Keep the mouth clean before Quran recitation.||Refresh the mouth after waking or before sleep.||Keep the miswakh clean and replace it when worn.'**
+  String get sunnahDuaMiswakPointsRaw;
+
+  /// No description provided for @sunnahDuaMiswakArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'السِّوَاك'**
+  String get sunnahDuaMiswakArabic;
+
+  /// No description provided for @sunnahDuaMiswakPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'As-siwak'**
+  String get sunnahDuaMiswakPronunciation;
+
+  /// No description provided for @sunnahDuaMiswakTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Using miswak, or cleaning the teeth when miswak is unavailable, keeps the mouth ready for prayer, wudu, and recitation.'**
+  String get sunnahDuaMiswakTranslation;
+
+  /// No description provided for @sunnahDuaMiswakPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep a miswak near your wudu space or prayer mat so this sunnah becomes an easy daily habit.'**
+  String get sunnahDuaMiswakPractice;
+
+  /// No description provided for @sunnahDuaMiswakSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah of purification'**
+  String get sunnahDuaMiswakSource;
+
+  /// No description provided for @sunnahDuaSleepingSunnahsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sleeping Sunnahs'**
+  String get sunnahDuaSleepingSunnahsTitle;
+
+  /// No description provided for @sunnahDuaSleepingSunnahsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'End the day with remembrance and calm'**
+  String get sunnahDuaSleepingSunnahsSubtitle;
+
+  /// No description provided for @sunnahDuaSleepingSunnahsPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Make wudu before sleep when you are able.||Dust or check the bed before lying down.||Sleep on the right side.||Close the day with the sleeping du\'a and remembrance.'**
+  String get sunnahDuaSleepingSunnahsPointsRaw;
+
+  /// No description provided for @sunnahDuaSleepingSunnahsPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep the sleep routine short and repeatable so it survives tired nights too.'**
+  String get sunnahDuaSleepingSunnahsPractice;
+
+  /// No description provided for @sunnahDuaHomeSunnahsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Home Sunnahs'**
+  String get sunnahDuaHomeSunnahsTitle;
+
+  /// No description provided for @sunnahDuaHomeSunnahsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter and leave with salam, remembrance, and trust'**
+  String get sunnahDuaHomeSunnahsSubtitle;
+
+  /// No description provided for @sunnahDuaHomeSunnahsPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Say bismillah when entering.||Give salam to the people at home.||Leave home with trust in Allah.||Make the first and last moments at home peaceful.'**
+  String get sunnahDuaHomeSunnahsPointsRaw;
+
+  /// No description provided for @sunnahDuaHomeSunnahsPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Attach this routine to the doorway so the habit triggers naturally.'**
+  String get sunnahDuaHomeSunnahsPractice;
+
+  /// No description provided for @sunnahDuaWuduSunnahsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Wudu Sunnahs'**
+  String get sunnahDuaWuduSunnahsTitle;
+
+  /// No description provided for @sunnahDuaWuduSunnahsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Purification with mindful details'**
+  String get sunnahDuaWuduSunnahsSubtitle;
+
+  /// No description provided for @sunnahDuaWuduSunnahsPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin with Allah\'s name.||Wash carefully without wasting water.||Give each limb its due attention.||Finish with the testimony after wudu.'**
+  String get sunnahDuaWuduSunnahsPointsRaw;
+
+  /// No description provided for @sunnahDuaWuduSunnahsPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Slow down enough that wudu feels like preparation for salah, not just a task.'**
+  String get sunnahDuaWuduSunnahsPractice;
+
+  /// No description provided for @sunnahDuaMasjidSunnahsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Masjid Sunnahs'**
+  String get sunnahDuaMasjidSunnahsTitle;
+
+  /// No description provided for @sunnahDuaMasjidSunnahsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the masjid with mercy and composure'**
+  String get sunnahDuaMasjidSunnahsSubtitle;
+
+  /// No description provided for @sunnahDuaMasjidSunnahsPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter calmly and avoid rushing.||Ask Allah to open the doors of mercy.||Keep the phone and talk quiet.||Leave with gratitude and ask Allah from His bounty.'**
+  String get sunnahDuaMasjidSunnahsPointsRaw;
+
+  /// No description provided for @sunnahDuaMasjidSunnahsPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Let the masjid doorway become a reminder to lower noise, hurry, and distraction.'**
+  String get sunnahDuaMasjidSunnahsPractice;
+
+  /// No description provided for @sunnahDuaSneezingSunnahTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sneezing Sunnah'**
+  String get sunnahDuaSneezingSunnahTitle;
+
+  /// No description provided for @sunnahDuaSneezingSunnahSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A tiny moment of gratitude and mercy'**
+  String get sunnahDuaSneezingSunnahSubtitle;
+
+  /// No description provided for @sunnahDuaSneezingSunnahPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Say alhamdulillah after sneezing.||A listener responds with mercy.||The sneezer replies with guidance and goodness.||Keep the exchange gentle and brief.'**
+  String get sunnahDuaSneezingSunnahPointsRaw;
+
+  /// No description provided for @sunnahDuaSneezingSunnahPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'This is small, but it turns an ordinary moment into gratitude and care.'**
+  String get sunnahDuaSneezingSunnahPractice;
+
+  /// No description provided for @sunnahDuaSeekingForgivenessSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep istighfar close'**
+  String get sunnahDuaSeekingForgivenessSubtitle;
+
+  /// No description provided for @sunnahDuaSeekingForgivenessPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat it between tasks, after salah, or whenever the heart feels heavy.'**
+  String get sunnahDuaSeekingForgivenessPractice;
+
+  /// No description provided for @sunnahDuaDifficultySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'When the heart feels crowded'**
+  String get sunnahDuaDifficultySubtitle;
+
+  /// No description provided for @sunnahDuaDifficultyPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Read it slowly, then choose the next right action with trust in Allah.'**
+  String get sunnahDuaDifficultyPractice;
+
   /// No description provided for @dashboardGreetingMorning.
   ///
   /// In en, this message translates to:
@@ -1477,6 +1843,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Asma ul Husna'**
   String get dashboardActionNintyNineNamesSub;
+
+  /// No description provided for @dashboardActionSunnahDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah & Du\'a'**
+  String get dashboardActionSunnahDua;
+
+  /// No description provided for @dashboardActionSunnahDuaSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Habits & daily duas'**
+  String get dashboardActionSunnahDuaSub;
 
   /// No description provided for @dashboardSectionOthers.
   ///

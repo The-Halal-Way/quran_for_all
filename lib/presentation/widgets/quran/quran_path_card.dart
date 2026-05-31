@@ -22,14 +22,14 @@ class QuranPathCard extends StatelessWidget {
 
     return Material(
       color: Colors.transparent,
-      borderRadius: BorderRadius.circular(AppRadius.xl),
+      borderRadius: BorderRadius.circular(AppRadius.lg),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadius.xl),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         child: Ink(
           decoration: BoxDecoration(
             color: surface,
-            borderRadius: BorderRadius.circular(AppRadius.xl),
+            borderRadius: BorderRadius.circular(AppRadius.lg),
             border: Border.all(color: borderColor),
             boxShadow: [
               BoxShadow(
@@ -44,7 +44,7 @@ class QuranPathCard extends StatelessWidget {
               Positioned.fill(
                 child: DecoratedBox(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(AppRadius.xl),
+                    borderRadius: BorderRadius.circular(AppRadius.lg),
                     gradient: LinearGradient(
                       colors: [
                         action.accent.withValues(alpha: isDark ? 0.18 : 0.10),
@@ -60,7 +60,7 @@ class QuranPathCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(18),
+                padding: const EdgeInsets.all(14),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -71,22 +71,22 @@ class QuranPathCard extends StatelessWidget {
                         _MetricPill(action: action),
                       ],
                     ),
-                    const SizedBox(height: 18),
+                    const SizedBox(height: 12),
                     Text(
                       action.title,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: text.titleLarge.copyWith(
+                      style: text.titleMedium.copyWith(
                         color: isDark
                             ? MyColors.darkTextPrimary
                             : MyColors.textPrimary,
                         fontWeight: AppTheme.weightExtraBold,
                       ),
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 5),
                     Text(
                       action.subtitle,
-                      maxLines: 3,
+                      maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: text.bodyMedium.copyWith(
                         color: isDark
@@ -95,10 +95,10 @@ class QuranPathCard extends StatelessWidget {
                         height: 1.42,
                       ),
                     ),
-                    const SizedBox(height: 14),
+                    const SizedBox(height: 10),
                     _DetailRow(action: action),
                     if (action.progress != null) ...[
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 8),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(AppRadius.full),
                         child: LinearProgressIndicator(
@@ -111,7 +111,7 @@ class QuranPathCard extends StatelessWidget {
                         ),
                       ),
                     ],
-                    const SizedBox(height: 18),
+                    const SizedBox(height: 12),
                     _ActionFooter(action: action),
                   ],
                 ),
@@ -132,8 +132,8 @@ class _IconBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 54,
-      height: 54,
+      width: 44,
+      height: 44,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [action.accent, action.secondaryAccent],
@@ -145,10 +145,10 @@ class _IconBadge extends StatelessWidget {
       child: Center(
         child: Image.asset(
           action.iconAsset,
-          width: 30,
-          height: 30,
+          width: 25,
+          height: 25,
           errorBuilder: (context, error, stackTrace) =>
-              Icon(action.icon, color: Colors.white, size: 28),
+              Icon(action.icon, color: Colors.white, size: 24),
         ),
       ),
     );
@@ -165,7 +165,7 @@ class _MetricPill extends StatelessWidget {
     final text = AppTheme.text(context);
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 6),
       decoration: BoxDecoration(
         color: action.accent.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(AppRadius.full),
@@ -244,8 +244,8 @@ class _ActionFooter extends StatelessWidget {
           ),
         ),
         Container(
-          width: 38,
-          height: 38,
+          width: 34,
+          height: 34,
           decoration: BoxDecoration(
             color: action.accent,
             borderRadius: BorderRadius.circular(AppRadius.base),
@@ -253,7 +253,7 @@ class _ActionFooter extends StatelessWidget {
           child: const Icon(
             Icons.arrow_forward_rounded,
             color: Colors.white,
-            size: 20,
+            size: 19,
           ),
         ),
       ],

@@ -14,7 +14,7 @@ class QuranHubStatChip extends StatelessWidget {
     final text = AppTheme.text(context);
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 6),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(AppRadius.sm),
@@ -23,8 +23,8 @@ class QuranHubStatChip extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(stat.icon, size: 16, color: stat.color),
-          const SizedBox(width: 7),
+          Icon(stat.icon, size: 15, color: stat.color),
+          const SizedBox(width: 6),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,

@@ -27,6 +27,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeLearnQuranTab => 'Learn Quran';
 
   @override
+  String get homeSunnahDuaTab => 'Sunnah/Du\'a';
+
+  @override
   String get languageEnglish => 'English';
 
   @override
@@ -726,6 +729,212 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duahNintyNineRetry => 'Retry';
 
   @override
+  String get sunnahDuaTitle => 'Sunnah & Du\'a';
+
+  @override
+  String get sunnahDuaHeroEyebrow => 'Daily practice';
+
+  @override
+  String get sunnahDuaHeroBody =>
+      'Whole Sunnah practices with related du\'as placed inside them, plus standalone du\'as and dhikr.';
+
+  @override
+  String get sunnahDuaHeroArabic => 'سُنَّة وَدُعَاء';
+
+  @override
+  String get sunnahDuaHeroStatGrid => 'Grid';
+
+  @override
+  String get sunnahDuaFilterAll => 'All';
+
+  @override
+  String get sunnahDuaFilterSunnah => 'Sunnah';
+
+  @override
+  String get sunnahDuaFilterDua => 'Du\'a';
+
+  @override
+  String get sunnahDuaFilterDhikr => 'Dhikr';
+
+  @override
+  String get sunnahDuaKindSunnah => 'Sunnah';
+
+  @override
+  String get sunnahDuaKindDua => 'Du\'a';
+
+  @override
+  String get sunnahDuaKindDhikr => 'Dhikr';
+
+  @override
+  String get sunnahDuaGridTitle => 'Sunnah Amal';
+
+  @override
+  String sunnahDuaItemsCount(int count) {
+    return '$count items';
+  }
+
+  @override
+  String get sunnahDuaSourceLabel => 'Source';
+
+  @override
+  String get sunnahDuaArabicLabel => 'Arabic';
+
+  @override
+  String get sunnahDuaPronunciationLabel => 'Pronunciation';
+
+  @override
+  String get sunnahDuaTranslationLabel => 'Meaning';
+
+  @override
+  String get sunnahDuaPracticeLabel => 'Practice note';
+
+  @override
+  String get sunnahDuaSunnahPointsLabel => 'Sunnah practice';
+
+  @override
+  String get sunnahDuaRelatedDuaLabel => 'Related du\'a';
+
+  @override
+  String get sunnahDuaDuaIncludedLabel => 'Du\'a included';
+
+  @override
+  String get sunnahDuaSourceDailySunnah => 'Daily Sunnah practice';
+
+  @override
+  String get sunnahDuaSourceDailyDua => 'Daily du\'a collection';
+
+  @override
+  String get sunnahDuaEatingSunnahsTitle => 'Eating Sunnahs';
+
+  @override
+  String get sunnahDuaEatingSunnahsSubtitle =>
+      'The du\'a is one part of the whole eating adab';
+
+  @override
+  String get sunnahDuaEatingSunnahsPointsRaw =>
+      'Begin with Allah\'s name before eating.||Eat with the right hand.||Eat from the food nearest to you.||Avoid criticizing food and stop before overfilling yourself.';
+
+  @override
+  String get sunnahDuaEatingSunnahsPractice =>
+      'Use the card as a small checklist at meals. Say the du\'a, then keep the manners through the whole meal.';
+
+  @override
+  String get sunnahDuaMiswakTitle => 'Miswakh';
+
+  @override
+  String get sunnahDuaMiswakSubtitle => 'Freshen the mouth before worship';
+
+  @override
+  String get sunnahDuaMiswakPointsRaw =>
+      'Use it before wudu or prayer when easy.||Keep the mouth clean before Quran recitation.||Refresh the mouth after waking or before sleep.||Keep the miswakh clean and replace it when worn.';
+
+  @override
+  String get sunnahDuaMiswakArabic => 'السِّوَاك';
+
+  @override
+  String get sunnahDuaMiswakPronunciation => 'As-siwak';
+
+  @override
+  String get sunnahDuaMiswakTranslation =>
+      'Using miswak, or cleaning the teeth when miswak is unavailable, keeps the mouth ready for prayer, wudu, and recitation.';
+
+  @override
+  String get sunnahDuaMiswakPractice =>
+      'Keep a miswak near your wudu space or prayer mat so this sunnah becomes an easy daily habit.';
+
+  @override
+  String get sunnahDuaMiswakSource => 'Sunnah of purification';
+
+  @override
+  String get sunnahDuaSleepingSunnahsTitle => 'Sleeping Sunnahs';
+
+  @override
+  String get sunnahDuaSleepingSunnahsSubtitle =>
+      'End the day with remembrance and calm';
+
+  @override
+  String get sunnahDuaSleepingSunnahsPointsRaw =>
+      'Make wudu before sleep when you are able.||Dust or check the bed before lying down.||Sleep on the right side.||Close the day with the sleeping du\'a and remembrance.';
+
+  @override
+  String get sunnahDuaSleepingSunnahsPractice =>
+      'Keep the sleep routine short and repeatable so it survives tired nights too.';
+
+  @override
+  String get sunnahDuaHomeSunnahsTitle => 'Home Sunnahs';
+
+  @override
+  String get sunnahDuaHomeSunnahsSubtitle =>
+      'Enter and leave with salam, remembrance, and trust';
+
+  @override
+  String get sunnahDuaHomeSunnahsPointsRaw =>
+      'Say bismillah when entering.||Give salam to the people at home.||Leave home with trust in Allah.||Make the first and last moments at home peaceful.';
+
+  @override
+  String get sunnahDuaHomeSunnahsPractice =>
+      'Attach this routine to the doorway so the habit triggers naturally.';
+
+  @override
+  String get sunnahDuaWuduSunnahsTitle => 'Wudu Sunnahs';
+
+  @override
+  String get sunnahDuaWuduSunnahsSubtitle =>
+      'Purification with mindful details';
+
+  @override
+  String get sunnahDuaWuduSunnahsPointsRaw =>
+      'Begin with Allah\'s name.||Wash carefully without wasting water.||Give each limb its due attention.||Finish with the testimony after wudu.';
+
+  @override
+  String get sunnahDuaWuduSunnahsPractice =>
+      'Slow down enough that wudu feels like preparation for salah, not just a task.';
+
+  @override
+  String get sunnahDuaMasjidSunnahsTitle => 'Masjid Sunnahs';
+
+  @override
+  String get sunnahDuaMasjidSunnahsSubtitle =>
+      'Enter the masjid with mercy and composure';
+
+  @override
+  String get sunnahDuaMasjidSunnahsPointsRaw =>
+      'Enter calmly and avoid rushing.||Ask Allah to open the doors of mercy.||Keep the phone and talk quiet.||Leave with gratitude and ask Allah from His bounty.';
+
+  @override
+  String get sunnahDuaMasjidSunnahsPractice =>
+      'Let the masjid doorway become a reminder to lower noise, hurry, and distraction.';
+
+  @override
+  String get sunnahDuaSneezingSunnahTitle => 'Sneezing Sunnah';
+
+  @override
+  String get sunnahDuaSneezingSunnahSubtitle =>
+      'A tiny moment of gratitude and mercy';
+
+  @override
+  String get sunnahDuaSneezingSunnahPointsRaw =>
+      'Say alhamdulillah after sneezing.||A listener responds with mercy.||The sneezer replies with guidance and goodness.||Keep the exchange gentle and brief.';
+
+  @override
+  String get sunnahDuaSneezingSunnahPractice =>
+      'This is small, but it turns an ordinary moment into gratitude and care.';
+
+  @override
+  String get sunnahDuaSeekingForgivenessSubtitle => 'Keep istighfar close';
+
+  @override
+  String get sunnahDuaSeekingForgivenessPractice =>
+      'Repeat it between tasks, after salah, or whenever the heart feels heavy.';
+
+  @override
+  String get sunnahDuaDifficultySubtitle => 'When the heart feels crowded';
+
+  @override
+  String get sunnahDuaDifficultyPractice =>
+      'Read it slowly, then choose the next right action with trust in Allah.';
+
+  @override
   String get dashboardGreetingMorning => 'Good morning';
 
   @override
@@ -747,7 +956,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardActionQiblaCompassSub => 'Find qibla direction';
 
   @override
-  String get dashboardSectionDua => 'Du\'a';
+  String get dashboardSectionDua => 'Duah';
 
   @override
   String get dashboardActionDailyDua => 'Daily Du\'a';
@@ -766,6 +975,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dashboardActionNintyNineNamesSub => 'Asma ul Husna';
+
+  @override
+  String get dashboardActionSunnahDua => 'Sunnah & Du\'a';
+
+  @override
+  String get dashboardActionSunnahDuaSub => 'Habits & daily duas';
 
   @override
   String get dashboardSectionOthers => 'Others';

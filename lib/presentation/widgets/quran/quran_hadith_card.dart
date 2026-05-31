@@ -32,8 +32,8 @@ class QuranHadithCard extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: hadith.accent.withValues(alpha: isDark ? 0.14 : 0.08),
-            blurRadius: 18,
-            offset: const Offset(0, 8),
+            blurRadius: 14,
+            offset: const Offset(0, 6),
           ),
         ],
       ),
@@ -52,7 +52,7 @@ class QuranHadithCard extends StatelessWidget {
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(14),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -60,8 +60,8 @@ class QuranHadithCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 36,
-                          height: 36,
+                          width: 34,
+                          height: 34,
                           decoration: BoxDecoration(
                             color: hadith.accent.withValues(alpha: 0.12),
                             borderRadius: BorderRadius.circular(AppRadius.sm),
@@ -86,7 +86,7 @@ class QuranHadithCard extends StatelessWidget {
                                   fontWeight: AppTheme.weightExtraBold,
                                 ),
                               ),
-                              const SizedBox(height: 3),
+                              const SizedBox(height: 2),
                               Text(
                                 hadith.source,
                                 maxLines: 1,
@@ -101,9 +101,11 @@ class QuranHadithCard extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 14),
+                    const SizedBox(height: 10),
                     Text(
                       hadith.body,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
                       style: text.bodyMedium.copyWith(
                         color: bodyColor,
                         height: 1.48,

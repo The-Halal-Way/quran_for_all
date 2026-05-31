@@ -74,9 +74,9 @@ class _QuranViewState extends State<QuranView> {
                 ),
                 padding: EdgeInsets.fromLTRB(
                   responsive.padding,
-                  AppSpacing.lg,
+                  AppSpacing.sm + 2,
                   responsive.padding,
-                  AppSpacing.xxl,
+                  AppSpacing.lg,
                 ),
                 child: Center(
                   child: ConstrainedBox(
@@ -93,7 +93,7 @@ class _QuranViewState extends State<QuranView> {
                           body: l10n.quranHubHeroBody,
                           stats: content.stats,
                         ),
-                        const SizedBox(height: AppSpacing.xxl),
+                        const SizedBox(height: AppSpacing.lg),
                         SectionHeader(
                           title: l10n.quranHubSectionChooseTitle,
                           subtitle: l10n.quranHubSectionChooseSubtitle,
@@ -103,7 +103,7 @@ class _QuranViewState extends State<QuranView> {
                           actions: content.actions,
                           onSelected: _openDestination,
                         ),
-                        const SizedBox(height: AppSpacing.xxl),
+                        const SizedBox(height: AppSpacing.lg),
                         SectionHeader(
                           title: l10n.quranHubHadithTitle,
                           subtitle: l10n.quranHubHadithSubtitle,

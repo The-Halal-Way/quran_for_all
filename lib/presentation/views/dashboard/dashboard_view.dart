@@ -20,13 +20,14 @@ import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_v
 import 'package:quran_for_all/presentation/views/dashboard/compass/compass_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/duah_ninty_nine_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/tasbeeh_view.dart';
 import 'package:quran_for_all/presentation/views/learn_quran/learning_module_detail_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/surah_details_view.dart';
+import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 
 part '../../widgets/dashboard/dashboard/dashboard_view_sections.dart';
@@ -263,6 +264,17 @@ class _DashboardViewState extends State<DashboardView> {
                                     .dashboardActionNintyNineNamesSub,
                                 color: MyColors.primaryLight,
                                 onTap: () => _push(const DuahNintyNineView()),
+                              ),
+                              // sunnah and duah grid
+                              DashboardActionItem(
+                                icon: Icons.auto_awesome_rounded,
+                                label: context.l10n.dashboardActionSunnahDua,
+                                sublabel:
+                                    context.l10n.dashboardActionSunnahDuaSub,
+                                color: MyColors.tertiaryDark,
+                                onTap: () => _push(
+                                  const SunnahDuaView(showBackButton: true),
+                                ),
                               ),
                             ],
                           ),

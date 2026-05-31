@@ -51,26 +51,34 @@ class QuranHubHero extends StatelessWidget {
                 const Positioned.fill(child: CustomPaint(painter: _Pattern())),
                 Padding(
                   padding: EdgeInsets.fromLTRB(
-                    isCompact ? 18 : 24,
-                    isCompact ? 20 : 26,
-                    isCompact ? 18 : 24,
-                    isCompact ? 18 : 24,
+                    isCompact ? 14 : 18,
+                    isCompact ? 14 : 18,
+                    isCompact ? 14 : 18,
+                    isCompact ? 14 : 18,
                   ),
                   child: isCompact
                       ? Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            _HeroCopy(
-                              title: title,
-                              eyebrow: eyebrow,
-                              body: body,
-                              text: text,
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: _HeroCopy(
+                                    title: title,
+                                    eyebrow: eyebrow,
+                                    body: body,
+                                    text: text,
+                                  ),
+                                ),
+                                const SizedBox(width: 12),
+                                _ArabicMedallion(
+                                  arabicTitle: arabicTitle,
+                                  compact: true,
+                                ),
+                              ],
                             ),
-                            const SizedBox(height: 18),
-                            Center(
-                              child: _ArabicMedallion(arabicTitle: arabicTitle),
-                            ),
-                            const SizedBox(height: 18),
+                            const SizedBox(height: 12),
                             _StatsWrap(stats: stats),
                           ],
                         )
@@ -86,12 +94,12 @@ class QuranHubHero extends StatelessWidget {
                                     body: body,
                                     text: text,
                                   ),
-                                  const SizedBox(height: 22),
+                                  const SizedBox(height: 14),
                                   _StatsWrap(stats: stats),
                                 ],
                               ),
                             ),
-                            const SizedBox(width: 28),
+                            const SizedBox(width: 22),
                             _ArabicMedallion(arabicTitle: arabicTitle),
                           ],
                         ),
@@ -124,7 +132,7 @@ class _HeroCopy extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
           decoration: BoxDecoration(
             color: MyColors.tertiary.withValues(alpha: 0.16),
             borderRadius: BorderRadius.circular(AppRadius.full),
@@ -142,23 +150,27 @@ class _HeroCopy extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 10),
         Text(
           title,
-          maxLines: 2,
+          maxLines: 1,
           overflow: TextOverflow.ellipsis,
-          style: text.displaySmall.copyWith(
+          style: text.headlineMedium.copyWith(
             color: Colors.white,
             fontWeight: AppTheme.weightBlack,
-            height: 0.95,
+            height: 1.02,
+            letterSpacing: 0,
           ),
         ),
-        const SizedBox(height: 12),
+        const SizedBox(height: 6),
         Text(
           body,
-          style: text.bodyLarge.copyWith(
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: text.bodyMedium.copyWith(
             color: Colors.white.withValues(alpha: 0.78),
-            height: 1.45,
+            height: 1.35,
+            letterSpacing: 0,
           ),
         ),
       ],
@@ -167,25 +179,30 @@ class _HeroCopy extends StatelessWidget {
 }
 
 class _ArabicMedallion extends StatelessWidget {
-  const _ArabicMedallion({required this.arabicTitle});
+  const _ArabicMedallion({required this.arabicTitle, this.compact = false});
 
   final String arabicTitle;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
+    final outerSize = compact ? 82.0 : 118.0;
+    final diamondSize = compact ? 58.0 : 84.0;
+    final circleSize = compact ? 64.0 : 94.0;
+    final fontSize = compact ? 22.0 : 30.0;
 
     return SizedBox(
-      width: 158,
-      height: 158,
+      width: outerSize,
+      height: outerSize,
       child: Stack(
         alignment: Alignment.center,
         children: [
           Transform.rotate(
             angle: math.pi / 4,
             child: Container(
-              width: 112,
-              height: 112,
+              width: diamondSize,
+              height: diamondSize,
               decoration: BoxDecoration(
                 color: Colors.white.withValues(alpha: 0.08),
                 borderRadius: BorderRadius.circular(AppRadius.xl),
@@ -197,8 +214,8 @@ class _ArabicMedallion extends StatelessWidget {
             ),
           ),
           Container(
-            width: 124,
-            height: 124,
+            width: circleSize,
+            height: circleSize,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: MyColors.primaryDark.withValues(alpha: 0.34),
@@ -213,7 +230,7 @@ class _ArabicMedallion extends StatelessWidget {
             textDirection: TextDirection.rtl,
             style: text.dashboardWatermarkArabic.copyWith(
               color: Colors.white,
-              fontSize: AppTheme.scaledFontSize(context, 38),
+              fontSize: AppTheme.scaledFontSize(context, fontSize),
               height: 1.2,
             ),
           ),
