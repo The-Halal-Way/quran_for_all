@@ -93,29 +93,41 @@ class PrayerTimelineCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return PrayerCardShell(
       padding: const EdgeInsets.symmetric(
-        horizontal: AppSpacing.lg,
+        horizontal: AppSpacing.md,
         vertical: AppSpacing.md,
       ),
-      child: Column(
-        children: [
-          for (var index = 0; index < items.length; index++) ...[
-            _PrayerTimelineRow(item: items[index]),
-            if (index != items.length - 1)
-              Divider(
-                height: AppSpacing.lg,
-                color: Theme.of(
-                  context,
-                ).colorScheme.outline.withValues(alpha: 0.18),
-              ),
-          ],
-        ],
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final columns = constraints.maxWidth >= 900
+              ? 6
+              : constraints.maxWidth >= 620
+              ? 3
+              : 2;
+          const gap = AppSpacing.sm;
+          final itemWidth =
+              (constraints.maxWidth - (columns - 1) * gap) / columns;
+          final itemHeight = columns == 6 ? 82.0 : 88.0;
+
+          return Wrap(
+            spacing: gap,
+            runSpacing: gap,
+            children: [
+              for (final item in items)
+                SizedBox(
+                  width: itemWidth,
+                  height: itemHeight,
+                  child: _PrayerTimelineTile(item: item),
+                ),
+            ],
+          );
+        },
       ),
     );
   }
 }
 
-class _PrayerTimelineRow extends StatelessWidget {
-  const _PrayerTimelineRow({required this.item});
+class _PrayerTimelineTile extends StatelessWidget {
+  const _PrayerTimelineTile({required this.item});
 
   final PrayerTimelineItem item;
 
@@ -131,64 +143,86 @@ class _PrayerTimelineRow extends StatelessWidget {
     final active = item.isFocus || item.isNext;
     final text = AppTheme.text(context);
 
-    return Row(
-      children: [
-        Container(
-          width: 42,
-          height: 42,
-          decoration: BoxDecoration(
-            color: active
-                ? accent.withValues(alpha: isDark ? 0.20 : 0.13)
-                : hintColor.withValues(alpha: isDark ? 0.10 : 0.08),
-            borderRadius: BorderRadius.circular(AppRadius.md),
-            border: Border.all(
-              color: active
-                  ? accent.withValues(alpha: 0.42)
-                  : hintColor.withValues(alpha: 0.12),
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: active
+            ? accent.withValues(alpha: isDark ? 0.16 : 0.09)
+            : hintColor.withValues(alpha: isDark ? 0.08 : 0.045),
+        borderRadius: BorderRadius.circular(AppRadius.sm),
+        border: Border.all(
+          color: active
+              ? accent.withValues(alpha: 0.38)
+              : hintColor.withValues(alpha: isDark ? 0.14 : 0.1),
+          width: 0.8,
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(AppSpacing.sm),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  width: 28,
+                  height: 28,
+                  decoration: BoxDecoration(
+                    color: active
+                        ? accent.withValues(alpha: isDark ? 0.2 : 0.13)
+                        : hintColor.withValues(alpha: isDark ? 0.11 : 0.07),
+                    borderRadius: BorderRadius.circular(AppRadius.xs),
+                  ),
+                  child: Icon(
+                    PrayerVisuals.iconFor(item.prayer),
+                    color: active ? accent : hintColor,
+                    size: 16,
+                  ),
+                ),
+                const SizedBox(width: AppSpacing.sm),
+                Expanded(
+                  child: Text(
+                    item.name,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style:
+                        (active
+                                ? text.prayerTimelineNameActive
+                                : text.prayerTimelineName)
+                            .copyWith(color: active ? textColor : hintColor),
+                  ),
+                ),
+              ],
             ),
-          ),
-          child: Icon(
-            PrayerVisuals.iconFor(item.prayer),
-            color: active ? accent : hintColor,
-            size: 21,
-          ),
-        ),
-        const SizedBox(width: AppSpacing.md),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                item.name,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style:
-                    (active
-                            ? text.prayerTimelineNameActive
-                            : text.prayerTimelineName)
-                        .copyWith(color: active ? textColor : hintColor),
-              ),
-              const SizedBox(height: 4),
-              _StatusChip(item: item, accent: accent),
-            ],
-          ),
-        ),
-        const SizedBox(width: AppSpacing.md),
-        Flexible(
-          child: FittedBox(
-            fit: BoxFit.scaleDown,
-            alignment: Alignment.centerRight,
-            child: Text(
-              item.time,
-              style:
-                  (active
-                          ? text.prayerTimelineTimeActive
-                          : text.prayerTimelineTime)
-                      .copyWith(color: active ? accent : hintColor),
+            const Spacer(),
+            Row(
+              children: [
+                Flexible(
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerLeft,
+                    child: _StatusChip(item: item, accent: accent),
+                  ),
+                ),
+                const SizedBox(width: AppSpacing.xs),
+                Flexible(
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      item.time,
+                      style:
+                          (active
+                                  ? text.prayerTimelineTimeActive
+                                  : text.prayerTimelineTime)
+                              .copyWith(color: active ? accent : hintColor),
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }

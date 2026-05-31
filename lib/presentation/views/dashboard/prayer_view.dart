@@ -75,7 +75,6 @@ class _PrayerViewBody extends StatelessWidget {
     final l10n = context.l10n;
     final content = viewModel.focusContent(l10n);
     final timeline = viewModel.timeline(l10n);
-    final howToPray = viewModel.howToPraySteps(l10n);
     final forbiddenTimes = viewModel.forbiddenTimes(l10n);
     final nafalPrayers = viewModel.nafalPrayers(l10n);
     final accent = PrayerVisuals.accentFor(content.prayer);
@@ -118,7 +117,7 @@ class _PrayerViewBody extends StatelessWidget {
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(
                               responsive.padding,
-                              AppSpacing.lg,
+                              isAppbardNeeded ? AppSpacing.lg : AppSpacing.md,
                               responsive.padding,
                               AppSpacing.huge,
                             ),
@@ -150,13 +149,22 @@ class _PrayerViewBody extends StatelessWidget {
                                   time: viewModel.focusTime(l10n),
                                   hasTimes: prayerTimesVm.hasData,
                                 ),
+                                const SizedBox(height: AppSpacing.md),
+                                if (viewModel.prayerTimeRanges['Sehri'] !=
+                                        null &&
+                                    viewModel.prayerTimes['Sehri'] != null)
+                                  PrayerSehriWindowCard(
+                                    timeRange:
+                                        viewModel.prayerTimeRanges['Sehri']!,
+                                    lastTime: viewModel.prayerTimes['Sehri']!,
+                                  ),
+                                PrayerTimelineCard(items: timeline),
                                 PrayerSectionHeader(
                                   title: l10n.prayerReferenceTitle,
                                   subtitle: l10n.prayerReferenceSubtitle,
                                   icon: Icons.library_books_rounded,
                                   accent: MyColors.tertiary,
                                 ),
-                                // how to pray
                                 PrayerReferenceActions(
                                   onMovementGuideTap: () =>
                                       Navigator.of(context).push(
@@ -183,31 +191,18 @@ class _PrayerViewBody extends StatelessWidget {
                                   onJanazaPrayerTap: () =>
                                       Navigator.of(context).push(
                                         AppPageRoute<void>(
-                                          builder: (_) => JanazaPrayerView(),
+                                          builder: (_) =>
+                                              const JanazaPrayerView(),
                                         ),
                                       ),
                                   onSalatulTasbeehTap: () =>
                                       Navigator.of(context).push(
                                         AppPageRoute<void>(
-                                          builder: (_) => SalatulTasbeehView(),
+                                          builder: (_) =>
+                                              const SalatulTasbeehView(),
                                         ),
                                       ),
                                 ),
-                                PrayerSectionHeader(
-                                  title: l10n.prayerViewTimelineTitle,
-                                  subtitle: l10n.prayerViewTimelineSubtitle,
-                                  icon: Icons.view_timeline_rounded,
-                                  accent: accent,
-                                ),
-                                if (viewModel.prayerTimeRanges['Sehri'] !=
-                                        null &&
-                                    viewModel.prayerTimes['Sehri'] != null)
-                                  PrayerSehriWindowCard(
-                                    timeRange:
-                                        viewModel.prayerTimeRanges['Sehri']!,
-                                    lastTime: viewModel.prayerTimes['Sehri']!,
-                                  ),
-                                PrayerTimelineCard(items: timeline),
                                 PrayerSectionHeader(
                                   title: l10n.prayerViewNowTitle,
                                   subtitle: l10n.prayerViewNowSubtitle,
@@ -225,13 +220,6 @@ class _PrayerViewBody extends StatelessWidget {
                                   items: content.suggestions,
                                   accent: MyColors.secondary,
                                 ),
-                                PrayerSectionHeader(
-                                  title: l10n.prayerViewHowTitle,
-                                  subtitle: l10n.prayerViewHowSubtitle,
-                                  icon: Icons.self_improvement_rounded,
-                                  accent: MyColors.primaryLight,
-                                ),
-                                HowToPraySection(steps: howToPray),
                                 PrayerSectionHeader(
                                   title: l10n.prayerViewBestPracticesTitle,
                                   subtitle:

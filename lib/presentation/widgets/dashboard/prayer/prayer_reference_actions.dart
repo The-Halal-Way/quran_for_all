@@ -67,27 +67,34 @@ class PrayerReferenceActions extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        final columns = constraints.maxWidth >= 820
+        final columns = constraints.maxWidth >= 940
+            ? 5
+            : constraints.maxWidth >= 620
             ? 3
-            : constraints.maxWidth >= 520
-            ? 2
-            : 1;
-        final itemHeight = columns == 1 ? 150.0 : 170.0;
+            : 2;
+        const gap = AppSpacing.sm;
+        final itemWidth =
+            (constraints.maxWidth - (columns - 1) * gap) / columns;
+        final itemHeight = columns == 2
+            ? 108.0
+            : columns == 3
+            ? 118.0
+            : 112.0;
 
-        return GridView.builder(
-          itemCount: actions.length,
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          padding: EdgeInsets.zero,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: columns,
-            crossAxisSpacing: AppSpacing.md,
-            mainAxisSpacing: AppSpacing.md,
-            mainAxisExtent: itemHeight,
-          ),
-          itemBuilder: (context, index) {
-            return _PrayerReferenceActionButton(action: actions[index]);
-          },
+        return Wrap(
+          spacing: gap,
+          runSpacing: gap,
+          children: [
+            for (final action in actions)
+              SizedBox(
+                width: itemWidth,
+                height: itemHeight,
+                child: _PrayerReferenceActionButton(
+                  action: action,
+                  showSubtitle: columns > 2,
+                ),
+              ),
+          ],
         );
       },
     );
@@ -113,37 +120,52 @@ class _PrayerReferenceAction {
 }
 
 class _PrayerReferenceActionButton extends StatelessWidget {
-  const _PrayerReferenceActionButton({required this.action});
+  const _PrayerReferenceActionButton({
+    required this.action,
+    required this.showSubtitle,
+  });
 
   final _PrayerReferenceAction action;
+  final bool showSubtitle;
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
     final text = AppTheme.text(context);
+    final titleColor = isDark ? MyColors.darkTextPrimary : MyColors.textPrimary;
+    final hintColor = isDark
+        ? MyColors.darkTextSecondary
+        : MyColors.textSecondary;
+    final fill = isDark ? MyColors.darkCardFill : Colors.white;
 
     return Semantics(
       button: true,
       label: action.title,
       child: Material(
         color: Colors.transparent,
-        borderRadius: BorderRadius.circular(AppRadius.lg),
+        borderRadius: BorderRadius.circular(AppRadius.md),
         child: InkWell(
           onTap: action.onTap,
-          borderRadius: BorderRadius.circular(AppRadius.lg),
+          borderRadius: BorderRadius.circular(AppRadius.md),
           child: Ink(
-            padding: const EdgeInsets.all(AppSpacing.sm + 2),
+            padding: const EdgeInsets.all(AppSpacing.md),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadius.lg),
-              gradient: LinearGradient(
-                colors: [action.startColor, action.endColor],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+              color: fill,
+              borderRadius: BorderRadius.circular(AppRadius.md),
+              border: Border.all(
+                color: action.startColor.withValues(
+                  alpha: isDark ? 0.28 : 0.16,
+                ),
+                width: 0.8,
               ),
               boxShadow: [
                 BoxShadow(
-                  color: action.startColor.withValues(alpha: 0.24),
-                  blurRadius: 22,
-                  offset: const Offset(0, 12),
+                  color: action.startColor.withValues(
+                    alpha: isDark ? 0.14 : 0.08,
+                  ),
+                  blurRadius: 14,
+                  offset: const Offset(0, 6),
                 ),
               ],
             ),
@@ -154,70 +176,59 @@ class _PrayerReferenceActionButton extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      width: 38,
+                      width: 34,
                       height: 34,
                       decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.17),
-                        borderRadius: BorderRadius.circular(AppRadius.sm),
-                        border: Border.all(
-                          color: Colors.white.withValues(alpha: 0.22),
+                        gradient: LinearGradient(
+                          colors: [
+                            action.startColor.withValues(
+                              alpha: isDark ? 0.28 : 0.16,
+                            ),
+                            action.endColor.withValues(
+                              alpha: isDark ? 0.22 : 0.11,
+                            ),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
                         ),
+                        borderRadius: BorderRadius.circular(AppRadius.sm),
                       ),
-                      child: Icon(action.icon, color: Colors.white, size: 18),
+                      child: Icon(
+                        action.icon,
+                        color: action.startColor,
+                        size: 18,
+                      ),
                     ),
                     const Spacer(),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 8,
-                        vertical: 4,
-                      ),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.16),
-                        borderRadius: BorderRadius.circular(AppRadius.full),
-                        border: Border.all(
-                          color: Colors.white.withValues(alpha: 0.18),
-                        ),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            context.l10n.prayerReferenceOpenLabel,
-                            style: text.prayerStatusChip.copyWith(
-                              color: Colors.white,
-                            ),
-                          ),
-                          const SizedBox(width: 4),
-                          const Icon(
-                            Icons.arrow_forward_rounded,
-                            color: Colors.white,
-                            size: 14,
-                          ),
-                        ],
-                      ),
+                    Icon(
+                      Icons.arrow_forward_rounded,
+                      color: hintColor.withValues(alpha: 0.78),
+                      size: 18,
                     ),
                   ],
                 ),
-                const SizedBox(height: AppSpacing.sm + 2),
+                const Spacer(),
                 Text(
                   action.title,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: text.prayerTimelineNameActive.copyWith(
-                    color: Colors.white,
-                    height: 1.15,
+                    color: titleColor,
+                    height: 1.16,
                   ),
                 ),
-                const SizedBox(height: AppSpacing.xs),
-                Text(
-                  action.subtitle,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: text.bodySmall.copyWith(
-                    color: Colors.white.withValues(alpha: 0.86),
-                    height: 1.45,
+                if (showSubtitle) ...[
+                  const SizedBox(height: AppSpacing.xs),
+                  Text(
+                    action.subtitle,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: text.bodySmall.copyWith(
+                      color: hintColor,
+                      height: 1.35,
+                    ),
                   ),
-                ),
+                ],
               ],
             ),
           ),
