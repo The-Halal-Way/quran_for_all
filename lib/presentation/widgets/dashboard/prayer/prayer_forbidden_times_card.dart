@@ -7,6 +7,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
 import 'prayer_visuals.dart';
 
+// MARK: Prayer - Forbidden Times Card
 class PrayerForbiddenTimesCard extends StatelessWidget {
   const PrayerForbiddenTimesCard({super.key, required this.items});
 
@@ -81,6 +82,7 @@ class PrayerForbiddenTimesCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Forbidden Times Header
 class _ForbiddenHeader extends StatelessWidget {
   const _ForbiddenHeader({required this.isDark, required this.text});
 
@@ -155,6 +157,7 @@ class _ForbiddenHeader extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Forbidden Pause Chip
 class _PauseChip extends StatelessWidget {
   const _PauseChip({required this.isDark});
 
@@ -190,6 +193,7 @@ class _PauseChip extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Forbidden Time Tile
 class _ForbiddenTimeTile extends StatelessWidget {
   const _ForbiddenTimeTile({
     required this.item,
@@ -265,6 +269,7 @@ class _ForbiddenTimeTile extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Forbidden Time Accent
   Color _accentFor(int index) {
     switch (index) {
       case 0:
@@ -276,6 +281,7 @@ class _ForbiddenTimeTile extends StatelessWidget {
     }
   }
 
+  // MARK: Prayer - Forbidden Time Icon
   IconData _iconFor(int index) {
     switch (index) {
       case 0:

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -53,7 +54,7 @@ class _HintPill extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(99),
+        borderRadius: BorderRadius.circular(AppRadius.full),
         color: colorScheme.primary.withValues(alpha: 0.1),
       ),
       child: Text(
@@ -80,7 +81,7 @@ class _HarakahPatternCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(11, 10, 11, 10),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(AppRadius.base),
         border: Border.all(color: colorScheme.outline.withValues(alpha: 0.2)),
       ),
       child: Column(
@@ -130,7 +131,7 @@ class _HarakahValueChip extends StatelessWidget {
       constraints: const BoxConstraints(minWidth: 68),
       padding: const EdgeInsets.fromLTRB(10, 8, 10, 8),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(AppRadius.compact),
         color: colorScheme.secondary.withValues(alpha: 0.09),
       ),
       child: Column(

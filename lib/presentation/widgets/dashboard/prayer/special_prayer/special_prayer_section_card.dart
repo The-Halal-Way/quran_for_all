@@ -5,6 +5,7 @@ import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
 
+// MARK: Prayer - Special Prayer Section Card
 class SpecialPrayerSectionCard extends StatelessWidget {
   const SpecialPrayerSectionCard({
     super.key,
@@ -64,6 +65,7 @@ class SpecialPrayerSectionCard extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Special Prayer Section Accent
   Color _accentFor(SpecialPrayerType type, int index) {
     final colors = type == SpecialPrayerType.janaza
         ? const [
@@ -82,6 +84,7 @@ class SpecialPrayerSectionCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Section Intro
 class _SectionIntro extends StatelessWidget {
   const _SectionIntro({
     required this.section,
@@ -153,6 +156,7 @@ class _SectionIntro extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Point Tile
 class _SpecialPrayerPointTile extends StatelessWidget {
   const _SpecialPrayerPointTile({
     required this.point,
@@ -231,6 +235,7 @@ class _SpecialPrayerPointTile extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Point Marker
 class _PointMarker extends StatelessWidget {
   const _PointMarker({required this.label, required this.accent});
 
@@ -266,6 +271,7 @@ class _PointMarker extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Phrase Panel
 class _PrayerPhrasePanel extends StatelessWidget {
   const _PrayerPhrasePanel({required this.point, required this.accent});
 
@@ -332,6 +338,7 @@ class _PrayerPhrasePanel extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Comment Box
 class _SectionCommentBox extends StatelessWidget {
   const _SectionCommentBox({
     required this.label,

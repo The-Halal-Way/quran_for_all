@@ -13,23 +13,24 @@ import 'package:quran_for_all/presentation/viewmodels/prayer/prayer_viewmodel.da
 import 'package:quran_for_all/presentation/views/dashboard/prayer/janaza_prayer_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer/salatul_tasbeeh_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
-import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_details_app_bar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_focus_hero.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_guidance_sections.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_reference_actions.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_rakat_guide_card.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_timeline_card.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer/forbidden_times_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer/how_to_pray_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer/nafal_prayers_view.dart';
 
+// MARK: Prayer - Root View
 class PrayerView extends StatefulWidget {
-  const PrayerView({super.key, this.isAppbardNeeded = true});
-  final bool isAppbardNeeded;
+  const PrayerView({super.key});
   @override
   State<PrayerView> createState() => _PrayerViewState();
 }
 
+// MARK: Prayer - Initial Prayer Times Load
 class _PrayerViewState extends State<PrayerView> {
   @override
   void initState() {
@@ -46,15 +47,14 @@ class _PrayerViewState extends State<PrayerView> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => PrayerViewModel(),
-      child: _PrayerViewBody(isAppbardNeeded: widget.isAppbardNeeded),
+      child: _PrayerViewBody(),
     );
   }
 }
 
+// MARK: Prayer - Main Scroll Body
 class _PrayerViewBody extends StatelessWidget {
-  final bool isAppbardNeeded;
-  const _PrayerViewBody({required this.isAppbardNeeded});
-
+  const _PrayerViewBody();
   Future<void> _refresh(BuildContext context) {
     return context.read<DashboardPrayerTimesViewModel>().loadPrayerTimes(
       forceRefresh: true,
@@ -75,6 +75,7 @@ class _PrayerViewBody extends StatelessWidget {
     final l10n = context.l10n;
     final content = viewModel.focusContent(l10n);
     final timeline = viewModel.timeline(l10n);
+    final rakatPlans = viewModel.rakatPlans(l10n);
     final forbiddenTimes = viewModel.forbiddenTimes(l10n);
     final nafalPrayers = viewModel.nafalPrayers(l10n);
     final accent = PrayerVisuals.accentFor(content.prayer);
@@ -84,6 +85,7 @@ class _PrayerViewBody extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
+            // MARK: Prayer - Page Background
             Positioned.fill(
               child: DecoratedBox(
                 decoration: BoxDecoration(
@@ -103,11 +105,6 @@ class _PrayerViewBody extends StatelessWidget {
                     parent: BouncingScrollPhysics(),
                   ),
                   slivers: [
-                    if (isAppbardNeeded)
-                      PrayerDetailsAppBar(
-                        isDark: isDark,
-                        onRefresh: () => unawaited(_refresh(context)),
-                      ),
                     SliverToBoxAdapter(
                       child: Center(
                         child: ConstrainedBox(
@@ -117,18 +114,20 @@ class _PrayerViewBody extends StatelessWidget {
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(
                               responsive.padding,
-                              isAppbardNeeded ? AppSpacing.lg : AppSpacing.md,
+                              AppSpacing.md,
                               responsive.padding,
                               AppSpacing.huge,
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
+                                // MARK: Prayer - Loading State
                                 if (prayerTimesVm.isLoading &&
                                     !prayerTimesVm.hasData) ...[
                                   const PrayerStateCard.loading(),
                                   const SizedBox(height: AppSpacing.lg),
                                 ],
+                                // MARK: Prayer - Error State
                                 if (prayerTimesVm.error.isNotEmpty &&
                                     !prayerTimesVm.isLoading) ...[
                                   PrayerStateCard.error(
@@ -144,12 +143,14 @@ class _PrayerViewBody extends StatelessWidget {
                                   ),
                                   const SizedBox(height: AppSpacing.lg),
                                 ],
+                                // MARK: Prayer - Focus Hero
                                 PrayerFocusHero(
                                   content: content,
                                   time: viewModel.focusTime(l10n),
                                   hasTimes: prayerTimesVm.hasData,
                                 ),
                                 const SizedBox(height: AppSpacing.md),
+                                // MARK: Prayer - Sehri Window
                                 if (viewModel.prayerTimeRanges['Sehri'] !=
                                         null &&
                                     viewModel.prayerTimes['Sehri'] != null)
@@ -158,13 +159,23 @@ class _PrayerViewBody extends StatelessWidget {
                                         viewModel.prayerTimeRanges['Sehri']!,
                                     lastTime: viewModel.prayerTimes['Sehri']!,
                                   ),
+                                // MARK: Prayer - Daily Timeline
                                 PrayerTimelineCard(items: timeline),
+                                const SizedBox(height: AppSpacing.md),
+                                // MARK: Prayer - Rakat Guide
+                                PrayerRakatGuideCard(
+                                  items: rakatPlans,
+                                  focusPrayer: viewModel.focusPrayer,
+                                ),
+                                // MARK: Prayer - Reference Navigation
                                 PrayerSectionHeader(
                                   title: l10n.prayerReferenceTitle,
                                   subtitle: l10n.prayerReferenceSubtitle,
                                   icon: Icons.library_books_rounded,
                                   accent: MyColors.tertiary,
                                 ),
+                                // Keep deeper explanations as navigation tiles
+                                // so the Prayer tab remains scan-first.
                                 PrayerReferenceActions(
                                   onMovementGuideTap: () =>
                                       Navigator.of(context).push(
@@ -203,6 +214,7 @@ class _PrayerViewBody extends StatelessWidget {
                                         ),
                                       ),
                                 ),
+                                // MARK: Prayer - Current Guidance
                                 PrayerSectionHeader(
                                   title: l10n.prayerViewNowTitle,
                                   subtitle: l10n.prayerViewNowSubtitle,
@@ -210,6 +222,7 @@ class _PrayerViewBody extends StatelessWidget {
                                   accent: MyColors.tertiary,
                                 ),
                                 PrayerNowCard(content: content),
+                                // MARK: Prayer - Suggestions
                                 PrayerSectionHeader(
                                   title: l10n.prayerViewSuggestionsTitle,
                                   subtitle: l10n.prayerViewSuggestionsSubtitle,
@@ -220,6 +233,7 @@ class _PrayerViewBody extends StatelessWidget {
                                   items: content.suggestions,
                                   accent: MyColors.secondary,
                                 ),
+                                // MARK: Prayer - Best Practices
                                 PrayerSectionHeader(
                                   title: l10n.prayerViewBestPracticesTitle,
                                   subtitle:
@@ -231,6 +245,7 @@ class _PrayerViewBody extends StatelessWidget {
                                   items: content.bestPractices,
                                   accent: accent,
                                 ),
+                                // MARK: Prayer - Fiqh Note
                                 const PrayerFiqhNote(),
                               ],
                             ),
@@ -248,6 +263,7 @@ class _PrayerViewBody extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Error Copy
   String _errorTitle(BuildContext context, PrayerTimesErrorType type) {
     final l10n = context.l10n;
     return switch (type) {
@@ -262,6 +278,7 @@ class _PrayerViewBody extends StatelessWidget {
     };
   }
 
+  // MARK: Prayer - Error Body Copy
   String _errorBody(BuildContext context, PrayerTimesErrorType type) {
     final l10n = context.l10n;
     return switch (type) {

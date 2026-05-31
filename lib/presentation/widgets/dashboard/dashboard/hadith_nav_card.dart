@@ -34,7 +34,7 @@ class HadithNavCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: cardBg,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(AppRadius.lg),
           border: Border.all(
             color: isDark
                 ? Colors.white.withOpacity(0.06)
@@ -60,8 +60,8 @@ class HadithNavCard extends StatelessWidget {
                   end: Alignment.bottomRight,
                 ),
                 borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(20),
-                  bottomLeft: Radius.circular(20),
+                  topLeft: Radius.circular(AppRadius.lg),
+                  bottomLeft: Radius.circular(AppRadius.lg),
                 ),
                 boxShadow: [
                   BoxShadow(
@@ -128,7 +128,7 @@ class HadithNavCard extends StatelessWidget {
                 height: 30,
                 decoration: BoxDecoration(
                   color: glowColor.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(AppRadius.xs),
                   border: Border.all(
                     color: glowColor.withOpacity(0.2),
                     width: 0.8,

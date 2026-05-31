@@ -453,6 +453,33 @@
   "compassGenericErrorBody": "Check location permission, sensor availability, and your connection, then try again.",
   "prayerViewTimelineTitle": "Today's Prayer Rhythm",
   "prayerViewTimelineSubtitle": "Scan the full day, spot the next prayer, and keep the current focus visible.",
+  "prayerRakatGuideTitle": "Rakat Guide",
+  "prayerRakatGuideSubtitle": "See the common daily prayer count and how each salah is divided.",
+  "prayerRakatViewDetails": "View details",
+  "prayerRakatTotalLabel": "{count} rak'ahs",
+  "@prayerRakatTotalLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prayerRakatUnitLabel": "rak'ahs",
+  "prayerRakatTypeFard": "Fard",
+  "prayerRakatTypeSunnahMuakkadah": "Sunnah Mu'akkadah",
+  "prayerRakatTypeSunnahGhairMuakkadah": "Sunnah Ghair Mu'akkadah",
+  "prayerRakatTypeNafl": "Nafl",
+  "prayerRakatTypeWitr": "Witr",
+  "prayerRakatBeforeFardLabel": "Before fard",
+  "prayerRakatFardLabel": "Obligatory",
+  "prayerRakatAfterFardLabel": "After fard",
+  "prayerRakatOptionalLabel": "Optional",
+  "prayerRakatWitrLabel": "After Isha",
+  "prayerRakatFajrNote": "The 2 sunnah before Fajr are strongly emphasized.",
+  "prayerRakatDhuhrNote": "A common flow is 4 sunnah, 4 fard, 2 sunnah, then optional nafl.",
+  "prayerRakatAsrNote": "The 4 sunnah before Asr are generally treated as non-emphasized.",
+  "prayerRakatMaghribNote": "Pray the 3 fard first, then the emphasized sunnah and optional nafl.",
+  "prayerRakatIshaNote": "Witr details vary by school; many communities pray 3 after Isha.",
   "prayerViewNowTitle": "What to follow now",
   "prayerViewNowSubtitle": "A practical next move for the current prayer window.",
   "prayerViewSuggestionsTitle": "Prayer suggestions",

@@ -110,7 +110,7 @@ class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
                   Container(
                     padding: const EdgeInsets.all(AppSpacing.lg),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(AppRadius.xl + 2),
+                      borderRadius: BorderRadius.circular(AppRadius.xlCompact),
                       gradient: LinearGradient(
                         colors: [visuals.startColor, visuals.endColor],
                         begin: Alignment.topLeft,

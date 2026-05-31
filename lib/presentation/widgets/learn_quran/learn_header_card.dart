@@ -44,7 +44,7 @@ class LearnHeaderCard extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         gradient: AppGradients.heroBanner,
-        borderRadius: BorderRadius.circular(AppRadius.xxl - 2),
+        borderRadius: BorderRadius.circular(AppRadius.xl),
         boxShadow: [
           BoxShadow(
             color: MyColors.primary.withValues(alpha: 0.16),

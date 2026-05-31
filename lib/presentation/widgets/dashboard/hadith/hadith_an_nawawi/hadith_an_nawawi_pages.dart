@@ -42,7 +42,7 @@ class _IntroPage extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
-              borderRadius: BorderRadius.circular(24),
+              borderRadius: BorderRadius.circular(AppRadius.xl),
               boxShadow: [
                 BoxShadow(
                   color: MyColors.secondary.withOpacity(0.25),
@@ -82,7 +82,7 @@ class _IntroPage extends StatelessWidget {
                         Colors.transparent,
                       ],
                     ),
-                    borderRadius: BorderRadius.circular(1),
+                    borderRadius: BorderRadius.circular(AppRadius.hairline),
                   ),
                 ),
                 const SizedBox(height: 12),
@@ -149,7 +149,7 @@ class _IntroPage extends StatelessWidget {
                       height: 20,
                       decoration: BoxDecoration(
                         color: MyColors.tertiary,
-                        borderRadius: BorderRadius.circular(2),
+                        borderRadius: BorderRadius.circular(AppRadius.xxs),
                       ),
                     ),
                     const SizedBox(width: 10),
@@ -276,7 +276,7 @@ class _ArabicCard extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         gradient: isDark
             ? LinearGradient(
                 colors: [const Color(0xFF1D1238), const Color(0xFF261A45)],
@@ -332,7 +332,7 @@ class _ArabicCard extends StatelessWidget {
                       ),
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(AppRadius.lg),
                         border: Border.all(
                           color: Colors.white.withOpacity(0.15),
                           width: 0.5,

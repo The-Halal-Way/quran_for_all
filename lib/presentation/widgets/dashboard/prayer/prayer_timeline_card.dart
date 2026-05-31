@@ -7,6 +7,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
 import 'prayer_visuals.dart';
 
+// MARK: Prayer - Sehri Window Card
 class PrayerSehriWindowCard extends StatelessWidget {
   const PrayerSehriWindowCard({
     super.key,
@@ -84,6 +85,7 @@ class PrayerSehriWindowCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Daily Timeline Card
 class PrayerTimelineCard extends StatelessWidget {
   const PrayerTimelineCard({super.key, required this.items});
 
@@ -126,6 +128,7 @@ class PrayerTimelineCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Timeline Tile
 class _PrayerTimelineTile extends StatelessWidget {
   const _PrayerTimelineTile({required this.item});
 
@@ -227,6 +230,7 @@ class _PrayerTimelineTile extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Timeline Status Chip
 class _StatusChip extends StatelessWidget {
   const _StatusChip({required this.item, required this.accent});
 

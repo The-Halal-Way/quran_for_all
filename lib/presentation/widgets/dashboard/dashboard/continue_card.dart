@@ -35,7 +35,7 @@ class ContinueCard extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(AppRadius.lg),
           boxShadow: [
             BoxShadow(
               color: glowColor.withOpacity(0.3),
@@ -68,7 +68,7 @@ class ContinueCard extends StatelessWidget {
                     height: 32,
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.15),
-                      borderRadius: BorderRadius.circular(9),
+                      borderRadius: BorderRadius.circular(AppRadius.xsPlus),
                     ),
                     child: Icon(icon, size: 17, color: Colors.white),
                   ),

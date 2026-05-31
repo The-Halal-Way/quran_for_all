@@ -77,7 +77,7 @@ class _MemorizationCard extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(AppRadius.xl),
         gradient: isDark
             ? const LinearGradient(
                 colors: [Color(0xFF0E0826), Color(0xFF1D1147)],
@@ -127,7 +127,7 @@ class _MemorizationCard extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                       color: MyColors.tertiary.withOpacity(0.18),
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(AppRadius.lg),
                       border: Border.all(
                         color: MyColors.tertiary.withOpacity(0.35),
                         width: 0.8,
@@ -213,7 +213,7 @@ class _HeadlineCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
       decoration: BoxDecoration(
         color: cardBg,
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(AppRadius.xs),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -228,7 +228,7 @@ class _HeadlineCard extends StatelessWidget {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),
-              borderRadius: BorderRadius.circular(2),
+              borderRadius: BorderRadius.circular(AppRadius.xxs),
             ),
           ),
           const SizedBox(width: 14),
@@ -272,7 +272,7 @@ class _LessonsCard extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
       decoration: BoxDecoration(
         color: cardBg,
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(AppRadius.relaxed),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -284,7 +284,7 @@ class _LessonsCard extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
                   color: MyColors.tertiary.withOpacity(0.12),
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(AppRadius.tiny),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,

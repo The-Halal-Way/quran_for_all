@@ -66,7 +66,7 @@ class LearnModuleCard extends StatelessWidget {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
-                      borderRadius: BorderRadius.circular(AppRadius.lg - 6),
+                      borderRadius: BorderRadius.circular(AppRadius.base),
                     ),
                     child: Icon(visuals.icon, color: visuals.startColor),
                   ),

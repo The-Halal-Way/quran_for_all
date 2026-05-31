@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/my_colors.dart';
@@ -32,7 +33,7 @@ class QuranHubHero extends StatelessWidget {
         final isCompact = constraints.maxWidth < 680;
 
         return ClipRRect(
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(AppRadius.xxl),
           child: DecoratedBox(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -126,7 +127,7 @@ class _HeroCopy extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
           decoration: BoxDecoration(
             color: MyColors.tertiary.withValues(alpha: 0.16),
-            borderRadius: BorderRadius.circular(999),
+            borderRadius: BorderRadius.circular(AppRadius.full),
             border: Border.all(
               color: MyColors.tertiaryLight.withValues(alpha: 0.36),
             ),
@@ -187,7 +188,7 @@ class _ArabicMedallion extends StatelessWidget {
               height: 112,
               decoration: BoxDecoration(
                 color: Colors.white.withValues(alpha: 0.08),
-                borderRadius: BorderRadius.circular(24),
+                borderRadius: BorderRadius.circular(AppRadius.xl),
                 border: Border.all(
                   color: Colors.white.withValues(alpha: 0.24),
                   width: 1.2,

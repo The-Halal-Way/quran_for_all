@@ -7,6 +7,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
 import 'prayer_visuals.dart';
 
+// MARK: Prayer - Current Guidance Card
 class PrayerNowCard extends StatelessWidget {
   const PrayerNowCard({super.key, required this.content});
 
@@ -76,6 +77,7 @@ class PrayerNowCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Suggestions Section
 class PrayerSuggestionsSection extends StatelessWidget {
   const PrayerSuggestionsSection({
     super.key,
@@ -107,6 +109,7 @@ class PrayerSuggestionsSection extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - How To Pray Section
 class HowToPraySection extends StatelessWidget {
   const HowToPraySection({super.key, required this.steps});
 
@@ -128,6 +131,7 @@ class HowToPraySection extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Best Practices Section
 class BestPracticesSection extends StatelessWidget {
   const BestPracticesSection({
     super.key,
@@ -158,6 +162,7 @@ class BestPracticesSection extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Fiqh Note
 class PrayerFiqhNote extends StatelessWidget {
   const PrayerFiqhNote({super.key});
 
@@ -212,6 +217,7 @@ class PrayerFiqhNote extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Loading And Error State Card
 class PrayerStateCard extends StatelessWidget {
   const PrayerStateCard.loading({super.key})
     : title = '',
@@ -300,6 +306,7 @@ class PrayerStateCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Guidance List Row
 class _GuidanceLine extends StatelessWidget {
   const _GuidanceLine({
     required this.icon,
@@ -352,6 +359,7 @@ class _GuidanceLine extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Step Detail Row
 class _PrayerStepLine extends StatelessWidget {
   const _PrayerStepLine({required this.index, required this.step});
 

@@ -113,6 +113,98 @@ class PrayerViewModel extends ChangeNotifier {
     );
   }
 
+  List<PrayerRakatPlan> rakatPlans(AppLocalizations l10n) {
+    // Keep the top-level Prayer tab practical: show the common daily rakat
+    // structure while the fiqh note handles madhhab/local teaching differences.
+    return [
+      PrayerRakatPlan(
+        prayer: PrayerKey.fajr,
+        name: localizedPrayerName(l10n, PrayerKey.fajr),
+        totalRakats: 4,
+        note: l10n.prayerRakatFajrNote,
+        segments: [
+          _segment(
+            2,
+            l10n.prayerRakatTypeSunnahMuakkadah,
+            l10n.prayerRakatBeforeFardLabel,
+          ),
+          _segment(2, l10n.prayerRakatTypeFard, l10n.prayerRakatFardLabel),
+        ],
+      ),
+      PrayerRakatPlan(
+        prayer: PrayerKey.dhuhr,
+        name: localizedPrayerName(l10n, PrayerKey.dhuhr),
+        totalRakats: 12,
+        note: l10n.prayerRakatDhuhrNote,
+        segments: [
+          _segment(
+            4,
+            l10n.prayerRakatTypeSunnahMuakkadah,
+            l10n.prayerRakatBeforeFardLabel,
+          ),
+          _segment(4, l10n.prayerRakatTypeFard, l10n.prayerRakatFardLabel),
+          _segment(
+            2,
+            l10n.prayerRakatTypeSunnahMuakkadah,
+            l10n.prayerRakatAfterFardLabel,
+          ),
+          _segment(2, l10n.prayerRakatTypeNafl, l10n.prayerRakatOptionalLabel),
+        ],
+      ),
+      PrayerRakatPlan(
+        prayer: PrayerKey.asr,
+        name: localizedPrayerName(l10n, PrayerKey.asr),
+        totalRakats: 8,
+        note: l10n.prayerRakatAsrNote,
+        segments: [
+          _segment(
+            4,
+            l10n.prayerRakatTypeSunnahGhairMuakkadah,
+            l10n.prayerRakatBeforeFardLabel,
+          ),
+          _segment(4, l10n.prayerRakatTypeFard, l10n.prayerRakatFardLabel),
+        ],
+      ),
+      PrayerRakatPlan(
+        prayer: PrayerKey.maghrib,
+        name: localizedPrayerName(l10n, PrayerKey.maghrib),
+        totalRakats: 7,
+        note: l10n.prayerRakatMaghribNote,
+        segments: [
+          _segment(3, l10n.prayerRakatTypeFard, l10n.prayerRakatFardLabel),
+          _segment(
+            2,
+            l10n.prayerRakatTypeSunnahMuakkadah,
+            l10n.prayerRakatAfterFardLabel,
+          ),
+          _segment(2, l10n.prayerRakatTypeNafl, l10n.prayerRakatOptionalLabel),
+        ],
+      ),
+      PrayerRakatPlan(
+        prayer: PrayerKey.isha,
+        name: localizedPrayerName(l10n, PrayerKey.isha),
+        totalRakats: 17,
+        note: l10n.prayerRakatIshaNote,
+        segments: [
+          _segment(
+            4,
+            l10n.prayerRakatTypeSunnahGhairMuakkadah,
+            l10n.prayerRakatBeforeFardLabel,
+          ),
+          _segment(4, l10n.prayerRakatTypeFard, l10n.prayerRakatFardLabel),
+          _segment(
+            2,
+            l10n.prayerRakatTypeSunnahMuakkadah,
+            l10n.prayerRakatAfterFardLabel,
+          ),
+          _segment(2, l10n.prayerRakatTypeNafl, l10n.prayerRakatOptionalLabel),
+          _segment(3, l10n.prayerRakatTypeWitr, l10n.prayerRakatWitrLabel),
+          _segment(2, l10n.prayerRakatTypeNafl, l10n.prayerRakatOptionalLabel),
+        ],
+      ),
+    ];
+  }
+
   List<PrayerGuidanceItem> howToPraySteps(AppLocalizations l10n) {
     return [
       PrayerGuidanceItem(
@@ -252,6 +344,10 @@ class PrayerViewModel extends ChangeNotifier {
       case PrayerKey.isha:
         return l10n.dashboardPrayerIsha;
     }
+  }
+
+  PrayerRakatSegment _segment(int count, String type, String label) {
+    return PrayerRakatSegment(count: count, type: type, label: label);
   }
 
   PrayerKey? _fromScheduleKey(String? key) {

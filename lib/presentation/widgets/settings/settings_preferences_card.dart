@@ -108,7 +108,7 @@ class _SectionTitle extends StatelessWidget {
             height: boxSize,
             decoration: BoxDecoration(
               color: colorScheme.primary.withValues(alpha: 0.12),
-              borderRadius: BorderRadius.circular(AppSpacing.sm + 2),
+              borderRadius: BorderRadius.circular(AppRadius.compact),
             ),
             child: Icon(icon, color: colorScheme.primary, size: iconSize),
           ),

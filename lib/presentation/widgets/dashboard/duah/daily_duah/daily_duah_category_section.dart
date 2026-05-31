@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import 'daily_duah_card.dart';
@@ -35,7 +36,7 @@ class CategorySection extends StatelessWidget {
                     color: const Color(
                       0xFF1E0A3C,
                     ).withValues(alpha: isDark ? 0.6 : 0.08),
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.circular(AppRadius.xs),
                   ),
                   child: Icon(
                     category.icon,
@@ -64,7 +65,7 @@ class CategorySection extends StatelessWidget {
                     color: isDark
                         ? const Color(0xFF382E54)
                         : const Color(0xFFEEE8FA),
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(AppRadius.lg),
                   ),
                   child: Text(
                     '${category.items.length}',

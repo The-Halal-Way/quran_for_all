@@ -453,6 +453,33 @@
   "compassGenericErrorBody": "লোকেশন অনুমতি, সেন্সর এবং সংযোগ দেখে আবার চেষ্টা করুন।",
   "prayerViewTimelineTitle": "আজকের নামাজের ছন্দ",
   "prayerViewTimelineSubtitle": "পুরো দিনের সময় দেখুন, পরবর্তী নামাজ চিনে নিন, আর বর্তমান ফোকাস সামনে রাখুন।",
+  "prayerRakatGuideTitle": "রাকাত গাইড",
+  "prayerRakatGuideSubtitle": "প্রতিদিনের নামাজের সাধারণ রাকাত সংখ্যা ও ভাগগুলো এক নজরে দেখুন।",
+  "prayerRakatViewDetails": "বিস্তারিত দেখুন",
+  "prayerRakatTotalLabel": "{count} রাকাত",
+  "@prayerRakatTotalLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prayerRakatUnitLabel": "রাকাত",
+  "prayerRakatTypeFard": "ফরজ",
+  "prayerRakatTypeSunnahMuakkadah": "সুন্নাতে মুয়াক্কাদা",
+  "prayerRakatTypeSunnahGhairMuakkadah": "সুন্নাতে গায়রে মুয়াক্কাদা",
+  "prayerRakatTypeNafl": "নফল",
+  "prayerRakatTypeWitr": "বিতর",
+  "prayerRakatBeforeFardLabel": "ফরজের আগে",
+  "prayerRakatFardLabel": "আবশ্যক",
+  "prayerRakatAfterFardLabel": "ফরজের পরে",
+  "prayerRakatOptionalLabel": "ঐচ্ছিক",
+  "prayerRakatWitrLabel": "ইশার পরে",
+  "prayerRakatFajrNote": "ফজরের আগে ২ রাকাত সুন্নত অত্যন্ত গুরুত্বপূর্ণ।",
+  "prayerRakatDhuhrNote": "সাধারণ ধারা: ৪ সুন্নত, ৪ ফরজ, ২ সুন্নত, তারপর ঐচ্ছিক নফল।",
+  "prayerRakatAsrNote": "আসরের আগে ৪ রাকাত সুন্নত সাধারণত গায়রে মুয়াক্কাদা হিসেবে ধরা হয়।",
+  "prayerRakatMaghribNote": "আগে ৩ রাকাত ফরজ, তারপর সুন্নতে মুয়াক্কাদা ও ঐচ্ছিক নফল।",
+  "prayerRakatIshaNote": "বিতরের বিস্তারিত মাযহাবভেদে ভিন্ন হতে পারে; অনেক সমাজে ইশার পরে ৩ রাকাত পড়া হয়।",
   "prayerViewNowTitle": "এখন কী অনুসরণ করবেন",
   "prayerViewNowSubtitle": "বর্তমান নামাজের সময়ের জন্য ব্যবহারিক পরবর্তী পদক্ষেপ।",
   "prayerViewSuggestionsTitle": "নামাজের পরামর্শ",

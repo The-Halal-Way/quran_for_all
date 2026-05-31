@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/presentation/viewmodels/splash_viewmodel.dart';
@@ -34,7 +35,7 @@ class SplashStatusPanel extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 14),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.16),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         border: Border.all(color: Colors.white.withValues(alpha: 0.3)),
       ),
       child: Column(
@@ -80,7 +81,7 @@ class SplashStatusPanel extends StatelessWidget {
           const SizedBox(height: 14),
           if (isLoading)
             ClipRRect(
-              borderRadius: BorderRadius.circular(99),
+              borderRadius: BorderRadius.circular(AppRadius.full),
               child: const LinearProgressIndicator(minHeight: 7),
             )
           else if (errorMessage != null)

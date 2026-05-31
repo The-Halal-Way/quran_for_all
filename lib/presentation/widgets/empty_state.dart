@@ -38,7 +38,7 @@ class EmptyState extends StatelessWidget {
           constraints: BoxConstraints(maxWidth: maxCardWidth),
           padding: EdgeInsets.all(innerPadding),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadius.xl + 2),
+            borderRadius: BorderRadius.circular(AppRadius.xlCompact),
             color: MyColors.surface.withValues(alpha: 0.92),
             border: Border.all(
               color: colorScheme.outline.withValues(alpha: 0.36),

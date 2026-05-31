@@ -62,7 +62,8 @@ import 'app_localizations_en.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -70,7 +71,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -82,17 +84,18 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('bn'),
-    Locale('en')
+    Locale('en'),
   ];
 
   /// No description provided for @appName.
@@ -1641,7 +1644,10 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'{moduleTitle} · {lessonCount} lessons'**
-  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount);
+  String dashboardContinueLearningModuleDetail(
+    String moduleTitle,
+    int lessonCount,
+  );
 
   /// No description provided for @dashboardRetry.
   ///
@@ -1996,6 +2002,126 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Scan the full day, spot the next prayer, and keep the current focus visible.'**
   String get prayerViewTimelineSubtitle;
+
+  /// No description provided for @prayerRakatGuideTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rakat Guide'**
+  String get prayerRakatGuideTitle;
+
+  /// No description provided for @prayerRakatGuideSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'See the common daily prayer count and how each salah is divided.'**
+  String get prayerRakatGuideSubtitle;
+
+  /// No description provided for @prayerRakatViewDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'View details'**
+  String get prayerRakatViewDetails;
+
+  /// No description provided for @prayerRakatTotalLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} rak\'ahs'**
+  String prayerRakatTotalLabel(int count);
+
+  /// No description provided for @prayerRakatUnitLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'rak\'ahs'**
+  String get prayerRakatUnitLabel;
+
+  /// No description provided for @prayerRakatTypeFard.
+  ///
+  /// In en, this message translates to:
+  /// **'Fard'**
+  String get prayerRakatTypeFard;
+
+  /// No description provided for @prayerRakatTypeSunnahMuakkadah.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah Mu\'akkadah'**
+  String get prayerRakatTypeSunnahMuakkadah;
+
+  /// No description provided for @prayerRakatTypeSunnahGhairMuakkadah.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah Ghair Mu\'akkadah'**
+  String get prayerRakatTypeSunnahGhairMuakkadah;
+
+  /// No description provided for @prayerRakatTypeNafl.
+  ///
+  /// In en, this message translates to:
+  /// **'Nafl'**
+  String get prayerRakatTypeNafl;
+
+  /// No description provided for @prayerRakatTypeWitr.
+  ///
+  /// In en, this message translates to:
+  /// **'Witr'**
+  String get prayerRakatTypeWitr;
+
+  /// No description provided for @prayerRakatBeforeFardLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Before fard'**
+  String get prayerRakatBeforeFardLabel;
+
+  /// No description provided for @prayerRakatFardLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Obligatory'**
+  String get prayerRakatFardLabel;
+
+  /// No description provided for @prayerRakatAfterFardLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'After fard'**
+  String get prayerRakatAfterFardLabel;
+
+  /// No description provided for @prayerRakatOptionalLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional'**
+  String get prayerRakatOptionalLabel;
+
+  /// No description provided for @prayerRakatWitrLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'After Isha'**
+  String get prayerRakatWitrLabel;
+
+  /// No description provided for @prayerRakatFajrNote.
+  ///
+  /// In en, this message translates to:
+  /// **'The 2 sunnah before Fajr are strongly emphasized.'**
+  String get prayerRakatFajrNote;
+
+  /// No description provided for @prayerRakatDhuhrNote.
+  ///
+  /// In en, this message translates to:
+  /// **'A common flow is 4 sunnah, 4 fard, 2 sunnah, then optional nafl.'**
+  String get prayerRakatDhuhrNote;
+
+  /// No description provided for @prayerRakatAsrNote.
+  ///
+  /// In en, this message translates to:
+  /// **'The 4 sunnah before Asr are generally treated as non-emphasized.'**
+  String get prayerRakatAsrNote;
+
+  /// No description provided for @prayerRakatMaghribNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray the 3 fard first, then the emphasized sunnah and optional nafl.'**
+  String get prayerRakatMaghribNote;
+
+  /// No description provided for @prayerRakatIshaNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Witr details vary by school; many communities pray 3 after Isha.'**
+  String get prayerRakatIshaNote;
 
   /// No description provided for @prayerViewNowTitle.
   ///
@@ -2928,7 +3054,8 @@ abstract class AppLocalizations {
   String get learnQuranTextMapRaw;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -2937,25 +3064,26 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['bn', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['bn', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'bn': return AppLocalizationsBn();
-    case 'en': return AppLocalizationsEn();
+    case 'bn':
+      return AppLocalizationsBn();
+    case 'en':
+      return AppLocalizationsEn();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
+    'that was used.',
   );
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
@@ -81,7 +82,7 @@ class _SectionTitle extends StatelessWidget {
           height: 30,
           decoration: BoxDecoration(
             color: color.withValues(alpha: 0.12),
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(AppRadius.xs),
           ),
           child: Icon(icon, size: 16, color: color),
         ),
@@ -121,7 +122,7 @@ class _PhraseOptionCard extends StatelessWidget {
 
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(18),
+      borderRadius: BorderRadius.circular(AppRadius.relaxed),
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 180),
         width: 172,
@@ -132,7 +133,7 @@ class _PhraseOptionCard extends StatelessWidget {
               : (isDark ? MyColors.darkCardFill : Colors.white).withValues(
                   alpha: isDark ? 0.86 : 0.92,
                 ),
-          borderRadius: BorderRadius.circular(18),
+          borderRadius: BorderRadius.circular(AppRadius.relaxed),
           border: Border.all(color: borderColor, width: isSelected ? 1.2 : 0.8),
           boxShadow: [
             BoxShadow(

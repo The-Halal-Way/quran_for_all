@@ -41,6 +41,34 @@ class PrayerTimelineItem {
   final bool isPassed;
 }
 
+class PrayerRakatSegment {
+  const PrayerRakatSegment({
+    required this.count,
+    required this.type,
+    required this.label,
+  });
+
+  final int count;
+  final String type;
+  final String label;
+}
+
+class PrayerRakatPlan {
+  const PrayerRakatPlan({
+    required this.prayer,
+    required this.name,
+    required this.totalRakats,
+    required this.note,
+    required this.segments,
+  });
+
+  final PrayerKey prayer;
+  final String name;
+  final int totalRakats;
+  final String note;
+  final List<PrayerRakatSegment> segments;
+}
+
 class PrayerGuidanceItem {
   const PrayerGuidanceItem({required this.title, required this.body});
 

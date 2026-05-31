@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
@@ -28,7 +29,7 @@ class TasbeehStatsPanel extends StatelessWidget {
         color: (isDark ? MyColors.darkCardFill : Colors.white).withValues(
           alpha: isDark ? 0.86 : 0.92,
         ),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         border: Border.all(
           color: (isDark ? Colors.white : MyColors.divider).withValues(
             alpha: isDark ? 0.07 : 0.82,

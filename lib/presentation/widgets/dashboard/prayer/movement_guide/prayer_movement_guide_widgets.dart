@@ -8,6 +8,7 @@ import 'package:quran_for_all/core/theme/my_images.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
 
+// MARK: Prayer - Movement Guide Hero
 class PrayerMovementGuideHero extends StatelessWidget {
   const PrayerMovementGuideHero({super.key, required this.stepCount});
 
@@ -109,6 +110,7 @@ class PrayerMovementGuideHero extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Flow Chips
 class PrayerMovementFlowChips extends StatelessWidget {
   const PrayerMovementFlowChips({super.key, required this.steps});
 
@@ -131,6 +133,7 @@ class PrayerMovementFlowChips extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Step Card
 class PrayerMovementStepCard extends StatelessWidget {
   const PrayerMovementStepCard({
     super.key,
@@ -188,6 +191,7 @@ class PrayerMovementStepCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Hadith Panel
 class PrayerMovementHadithPanel extends StatelessWidget {
   const PrayerMovementHadithPanel({super.key, required this.hadiths});
 
@@ -275,6 +279,7 @@ class PrayerMovementHadithPanel extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Fiqh Note
 class PrayerMovementFiqhNote extends StatelessWidget {
   const PrayerMovementFiqhNote({super.key});
 
@@ -325,6 +330,7 @@ class PrayerMovementFiqhNote extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Step Details
 class _MovementStepDetails extends StatelessWidget {
   const _MovementStepDetails({required this.step, required this.accent});
 
@@ -392,6 +398,7 @@ class _MovementStepDetails extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Arabic Recitation Block
 class _ArabicRecitationBlock extends StatelessWidget {
   const _ArabicRecitationBlock({required this.arabic, required this.accent});
 
@@ -440,6 +447,7 @@ class _ArabicRecitationBlock extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Labeled Text Block
 class _LabeledTextBlock extends StatelessWidget {
   const _LabeledTextBlock({
     required this.icon,
@@ -476,6 +484,7 @@ class _LabeledTextBlock extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Note
 class _MovementNote extends StatelessWidget {
   const _MovementNote({required this.note, required this.accent});
 
@@ -527,6 +536,7 @@ class _MovementNote extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Image Frame
 class _MovementImageFrame extends StatelessWidget {
   const _MovementImageFrame({required this.step, required this.accent});
 
@@ -602,6 +612,7 @@ class _MovementImageFrame extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Hero Image Stage
 class _HeroImageStage extends StatelessWidget {
   const _HeroImageStage();
 
@@ -641,6 +652,7 @@ class _HeroImageStage extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Hero Eyebrow
 class _HeroEyebrow extends StatelessWidget {
   const _HeroEyebrow({required this.label});
 
@@ -668,6 +680,7 @@ class _HeroEyebrow extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Hero Stat Chip
 class _HeroStatChip extends StatelessWidget {
   const _HeroStatChip({required this.icon, required this.label});
 
@@ -700,6 +713,7 @@ class _HeroStatChip extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Flow Chip
 class _FlowChip extends StatelessWidget {
   const _FlowChip({
     required this.number,
@@ -746,6 +760,7 @@ class _FlowChip extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Step Number Badge
 class _StepNumberBadge extends StatelessWidget {
   const _StepNumberBadge({required this.number, required this.accent});
 
@@ -775,6 +790,7 @@ class _StepNumberBadge extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Step Badge
 class _StepBadge extends StatelessWidget {
   const _StepBadge({required this.label, required this.accent});
 
@@ -803,6 +819,7 @@ class _StepBadge extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Tiny Number
 class _TinyNumber extends StatelessWidget {
   const _TinyNumber({required this.number, required this.accent});
 
@@ -830,6 +847,7 @@ class _TinyNumber extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Block Label
 class _BlockLabel extends StatelessWidget {
   const _BlockLabel({
     required this.icon,
@@ -863,6 +881,7 @@ class _BlockLabel extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Hadith Row
 class _HadithLine extends StatelessWidget {
   const _HadithLine({required this.reference});
 
@@ -917,6 +936,7 @@ class _HadithLine extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Movement Decorative Frame Painter
 class _MovementFramePainter extends CustomPainter {
   const _MovementFramePainter({required this.accent});
 
@@ -962,6 +982,7 @@ class _MovementFramePainter extends CustomPainter {
   }
 }
 
+// MARK: Prayer - Movement Accent
 Color _accentFor(int number) {
   switch (number % 4) {
     case 0:

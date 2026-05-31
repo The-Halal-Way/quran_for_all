@@ -4,6 +4,7 @@ import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
+// MARK: Prayer - Special Prayer Quick Facts
 class SpecialPrayerQuickFacts extends StatelessWidget {
   const SpecialPrayerQuickFacts({
     super.key,
@@ -43,6 +44,7 @@ class SpecialPrayerQuickFacts extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Special Prayer Quick Fact Icon
   IconData _iconFor(SpecialPrayerType type, int index) {
     if (type == SpecialPrayerType.janaza) {
       return switch (index) {
@@ -59,6 +61,7 @@ class SpecialPrayerQuickFacts extends StatelessWidget {
     };
   }
 
+  // MARK: Prayer - Special Prayer Quick Fact Accent
   Color _accentFor(SpecialPrayerType type, int index) {
     final colors = type == SpecialPrayerType.janaza
         ? const [MyColors.tertiary, MyColors.info, MyColors.primaryLight]
@@ -67,6 +70,7 @@ class SpecialPrayerQuickFacts extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Fact Card
 class _SpecialPrayerFactCard extends StatelessWidget {
   const _SpecialPrayerFactCard({
     required this.fact,

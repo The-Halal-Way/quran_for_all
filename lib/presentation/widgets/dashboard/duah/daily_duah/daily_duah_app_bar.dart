@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
@@ -80,7 +81,7 @@ class DuahAppBar extends StatelessWidget {
           padding: const EdgeInsets.all(3),
           decoration: BoxDecoration(
             color: cardBg,
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(AppRadius.base),
             border: Border.all(color: borderC),
           ),
           child: Row(
@@ -151,7 +152,7 @@ class LevelTab extends StatelessWidget {
           color: isSelected
               ? _activeColor.withValues(alpha: isDark ? 0.22 : 0.12)
               : Colors.transparent,
-          borderRadius: BorderRadius.circular(11),
+          borderRadius: BorderRadius.circular(AppRadius.small),
           border: isSelected
               ? Border.all(color: _activeColor.withValues(alpha: 0.5), width: 1)
               : null,

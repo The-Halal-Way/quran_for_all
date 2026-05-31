@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/my_colors.dart';
@@ -22,7 +23,7 @@ class QuranHadithCard extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: surface,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         border: Border.all(
           color: isDark
               ? Colors.white.withValues(alpha: 0.08)
@@ -45,7 +46,7 @@ class QuranHadithCard extends StatelessWidget {
               decoration: BoxDecoration(
                 color: hadith.accent,
                 borderRadius: const BorderRadius.horizontal(
-                  left: Radius.circular(20),
+                  left: Radius.circular(AppRadius.lg),
                 ),
               ),
             ),
@@ -63,7 +64,7 @@ class QuranHadithCard extends StatelessWidget {
                           height: 36,
                           decoration: BoxDecoration(
                             color: hadith.accent.withValues(alpha: 0.12),
-                            borderRadius: BorderRadius.circular(12),
+                            borderRadius: BorderRadius.circular(AppRadius.sm),
                           ),
                           child: Icon(
                             hadith.icon,

@@ -30,7 +30,7 @@ class _DotRow extends StatelessWidget {
           width: isActive ? 18 : 6,
           height: 6,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(3),
+            borderRadius: BorderRadius.circular(AppRadius.micro),
             color: isActive
                 ? MyColors.tertiary
                 : (isDark ? Colors.white.withOpacity(0.15) : MyColors.divider),
@@ -63,7 +63,7 @@ class _LangToggle extends StatelessWidget {
         height: 36,
         decoration: BoxDecoration(
           color: Colors.white.withOpacity(0.16),
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(AppRadius.compact),
           border: Border.all(color: Colors.white.withOpacity(0.2), width: 0.8),
         ),
         padding: const EdgeInsets.all(3),
@@ -97,7 +97,7 @@ class _LangOption extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
         color: active ? MyColors.tertiary : Colors.transparent,
-        borderRadius: BorderRadius.circular(7),
+        borderRadius: BorderRadius.circular(AppRadius.tinyPlus),
       ),
       child: Text(
         label,

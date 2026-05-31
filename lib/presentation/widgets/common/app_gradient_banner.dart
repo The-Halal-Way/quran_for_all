@@ -12,7 +12,7 @@ class AppGradientBanner extends StatelessWidget {
     super.key,
     required this.gradient,
     required this.child,
-    this.borderRadius = AppSpacing.xxl,
+    this.borderRadius = AppRadius.xxl,
     this.padding = const EdgeInsets.all(18),
     this.shadowColor,
   });

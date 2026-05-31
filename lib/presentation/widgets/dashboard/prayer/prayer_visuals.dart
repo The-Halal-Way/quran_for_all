@@ -5,6 +5,7 @@ import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
+// MARK: Prayer - Shared Icon And Accent Helpers
 class PrayerVisuals {
   const PrayerVisuals._();
 
@@ -43,6 +44,7 @@ class PrayerVisuals {
   }
 }
 
+// MARK: Prayer - Shared Card Shell
 class PrayerCardShell extends StatelessWidget {
   const PrayerCardShell({
     super.key,
@@ -88,6 +90,7 @@ class PrayerCardShell extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Shared Section Header
 class PrayerSectionHeader extends StatelessWidget {
   const PrayerSectionHeader({
     super.key,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/my_colors.dart';
@@ -21,14 +22,14 @@ class QuranPathCard extends StatelessWidget {
 
     return Material(
       color: Colors.transparent,
-      borderRadius: BorderRadius.circular(24),
+      borderRadius: BorderRadius.circular(AppRadius.xl),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(AppRadius.xl),
         child: Ink(
           decoration: BoxDecoration(
             color: surface,
-            borderRadius: BorderRadius.circular(24),
+            borderRadius: BorderRadius.circular(AppRadius.xl),
             border: Border.all(color: borderColor),
             boxShadow: [
               BoxShadow(
@@ -43,7 +44,7 @@ class QuranPathCard extends StatelessWidget {
               Positioned.fill(
                 child: DecoratedBox(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(24),
+                    borderRadius: BorderRadius.circular(AppRadius.xl),
                     gradient: LinearGradient(
                       colors: [
                         action.accent.withValues(alpha: isDark ? 0.18 : 0.10),
@@ -99,7 +100,7 @@ class QuranPathCard extends StatelessWidget {
                     if (action.progress != null) ...[
                       const SizedBox(height: 12),
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(999),
+                        borderRadius: BorderRadius.circular(AppRadius.full),
                         child: LinearProgressIndicator(
                           value: action.progress!.clamp(0, 1),
                           minHeight: 6,
@@ -139,7 +140,7 @@ class _IconBadge extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(AppRadius.relaxed),
       ),
       child: Center(
         child: Image.asset(
@@ -167,7 +168,7 @@ class _MetricPill extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
       decoration: BoxDecoration(
         color: action.accent.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(999),
+        borderRadius: BorderRadius.circular(AppRadius.full),
         border: Border.all(color: action.accent.withValues(alpha: 0.24)),
       ),
       child: Row(
@@ -247,7 +248,7 @@ class _ActionFooter extends StatelessWidget {
           height: 38,
           decoration: BoxDecoration(
             color: action.accent,
-            borderRadius: BorderRadius.circular(14),
+            borderRadius: BorderRadius.circular(AppRadius.base),
           ),
           child: const Icon(
             Icons.arrow_forward_rounded,

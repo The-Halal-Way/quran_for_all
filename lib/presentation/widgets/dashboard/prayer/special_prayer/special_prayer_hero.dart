@@ -5,6 +5,7 @@ import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
 
+// MARK: Prayer - Special Prayer Hero
 class SpecialPrayerHero extends StatelessWidget {
   const SpecialPrayerHero({super.key, required this.content});
 
@@ -88,6 +89,7 @@ class SpecialPrayerHero extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Special Prayer Hero Accent
   Color _accentFor(SpecialPrayerType type) {
     return switch (type) {
       SpecialPrayerType.janaza => MyColors.tertiaryLight,
@@ -95,6 +97,7 @@ class SpecialPrayerHero extends StatelessWidget {
     };
   }
 
+  // MARK: Prayer - Special Prayer Hero Companion Color
   Color _companionFor(SpecialPrayerType type) {
     return switch (type) {
       SpecialPrayerType.janaza => MyColors.info,
@@ -103,6 +106,7 @@ class SpecialPrayerHero extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Hero Text Panel
 class _HeroTextPanel extends StatelessWidget {
   const _HeroTextPanel({required this.content, required this.accent});
 
@@ -154,6 +158,7 @@ class _HeroTextPanel extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Special Prayer Hero Icon
   IconData _iconFor(SpecialPrayerType type) {
     return switch (type) {
       SpecialPrayerType.janaza => Icons.volunteer_activism_rounded,
@@ -162,6 +167,7 @@ class _HeroTextPanel extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Hero Chip
 class _HeroChip extends StatelessWidget {
   const _HeroChip({
     required this.label,
@@ -207,6 +213,7 @@ class _HeroChip extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Arabic Panel
 class _HeroArabicPanel extends StatelessWidget {
   const _HeroArabicPanel({required this.content, required this.accent});
 
@@ -267,6 +274,7 @@ class _HeroArabicPanel extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Special Prayer Arabic Panel Icon
   IconData _iconFor(SpecialPrayerType type) {
     return switch (type) {
       SpecialPrayerType.janaza => Icons.local_florist_rounded,
@@ -275,6 +283,7 @@ class _HeroArabicPanel extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Pattern Painter
 class _SpecialPrayerPatternPainter extends CustomPainter {
   const _SpecialPrayerPatternPainter({required this.color});
 

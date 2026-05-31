@@ -16,6 +16,7 @@ import 'package:quran_for_all/presentation/widgets/dashboard/prayer/special_pray
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/special_prayer/special_prayer_quick_facts.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/special_prayer/special_prayer_section_card.dart';
 
+// MARK: Prayer - Special Prayer Screen
 class SpecialPrayerView extends StatelessWidget {
   const SpecialPrayerView({super.key, required this.type});
 
@@ -30,6 +31,7 @@ class SpecialPrayerView extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Body
 class _SpecialPrayerBody extends StatelessWidget {
   const _SpecialPrayerBody();
 
@@ -52,6 +54,7 @@ class _SpecialPrayerBody extends StatelessWidget {
       ),
       body: Stack(
         children: [
+          // MARK: Prayer - Special Prayer Background
           Positioned.fill(
             child: DecoratedBox(
               decoration: BoxDecoration(
@@ -79,10 +82,10 @@ class _SpecialPrayerBody extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Hero section.
+                      // MARK: Prayer - Special Prayer Hero
                       SpecialPrayerHero(content: content),
 
-                      // Quick fact section.
+                      // MARK: Prayer - Special Prayer Quick Facts
                       PrayerSectionHeader(
                         title: content.quickFactsTitle,
                         subtitle: content.quickFactsSubtitle,
@@ -94,7 +97,7 @@ class _SpecialPrayerBody extends StatelessWidget {
                         facts: content.facts,
                       ),
 
-                      // Instruction sections, each with its own comment.
+                      // MARK: Prayer - Special Prayer Guide Sections
                       PrayerSectionHeader(
                         title: content.guideTitle,
                         subtitle: content.guideSubtitle,
@@ -116,7 +119,7 @@ class _SpecialPrayerBody extends StatelessWidget {
                           const SizedBox(height: AppSpacing.lg),
                       ],
 
-                      // Hadith section.
+                      // MARK: Prayer - Special Prayer Hadith
                       PrayerSectionHeader(
                         title: content.hadithTitle,
                         subtitle: content.hadithSubtitle,
@@ -127,6 +130,7 @@ class _SpecialPrayerBody extends StatelessWidget {
                         references: content.hadithReferences,
                         type: content.type,
                       ),
+                      // MARK: Prayer - Special Prayer Note
                       SpecialPrayerNoteCard(
                         note: content.note,
                         type: content.type,
@@ -142,6 +146,7 @@ class _SpecialPrayerBody extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Special Prayer Primary Accent
   Color _primaryAccentFor(SpecialPrayerType type) {
     return switch (type) {
       SpecialPrayerType.janaza => MyColors.tertiary,

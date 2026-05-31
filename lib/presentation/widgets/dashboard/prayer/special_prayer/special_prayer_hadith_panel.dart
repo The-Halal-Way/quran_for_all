@@ -5,6 +5,7 @@ import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
 
+// MARK: Prayer - Special Prayer Hadith Panel
 class SpecialPrayerHadithPanel extends StatelessWidget {
   const SpecialPrayerHadithPanel({
     super.key,
@@ -41,6 +42,7 @@ class SpecialPrayerHadithPanel extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Special Prayer Hadith Reference Tile
 class _HadithReferenceTile extends StatelessWidget {
   const _HadithReferenceTile({
     required this.reference,

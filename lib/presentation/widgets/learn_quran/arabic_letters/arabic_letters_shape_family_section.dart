@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -50,7 +51,7 @@ class _FamilyCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(11, 10, 11, 10),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(AppRadius.base),
         color: colorScheme.secondary.withValues(alpha: 0.09),
       ),
       child: Column(
@@ -76,7 +77,7 @@ class _FamilyCard extends StatelessWidget {
                     vertical: 6,
                   ),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(AppRadius.compact),
                     color: Colors.white,
                     border: Border.all(
                       color: colorScheme.outline.withValues(alpha: 0.2),

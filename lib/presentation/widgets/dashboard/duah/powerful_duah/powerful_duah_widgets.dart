@@ -1,6 +1,7 @@
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
@@ -100,7 +101,7 @@ class NoteBannerState extends State<NoteBanner> {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadius.md),
                 border: Border.all(
                   color: const Color(0xFF4B30A1).withValues(alpha: 0.25),
                 ),
@@ -112,7 +113,7 @@ class NoteBannerState extends State<NoteBanner> {
                     padding: const EdgeInsets.all(7),
                     decoration: BoxDecoration(
                       color: const Color(0xFF4B30A1).withValues(alpha: 0.15),
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(AppRadius.compact),
                     ),
                     child: const Icon(
                       Icons.auto_awesome_rounded,
@@ -200,7 +201,7 @@ class FilterRow extends StatelessWidget {
                 color: featuredOnly
                     ? const Color(0xFFD50057).withValues(alpha: 0.14)
                     : (isDark ? const Color(0xFF1D1238) : Colors.white),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(AppRadius.sm),
                 border: Border.all(
                   color: featuredOnly
                       ? const Color(0xFFD50057).withValues(alpha: 0.45)
@@ -257,7 +258,7 @@ class FilterRow extends StatelessWidget {
                       color: isActive
                           ? s.color.withValues(alpha: isDark ? 0.20 : 0.12)
                           : (isDark ? const Color(0xFF1D1238) : Colors.white),
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(AppRadius.compact),
                       border: Border.all(
                         color: isActive
                             ? s.color.withValues(alpha: 0.50)
@@ -334,7 +335,7 @@ class CountBar extends StatelessWidget {
             height: 14,
             decoration: BoxDecoration(
               color: situation.color,
-              borderRadius: BorderRadius.circular(2),
+              borderRadius: BorderRadius.circular(AppRadius.xxs),
             ),
           ),
           const SizedBox(width: 8),
@@ -418,7 +419,7 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
       margin: const EdgeInsets.only(bottom: 12),
       decoration: BoxDecoration(
         color: cardBg,
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(AppRadius.relaxed),
         border: featuredBorder,
         boxShadow: duah.isFeatured
             ? [
@@ -443,7 +444,7 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
                           : const Color(0xFF4B30A1))
                       .withValues(alpha: isDark ? 0.10 : 0.05),
               borderRadius: const BorderRadius.vertical(
-                top: Radius.circular(18),
+                top: Radius.circular(AppRadius.relaxed),
               ),
             ),
             child: Row(
@@ -459,7 +460,7 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
                                 ? const Color(0xFFD50057)
                                 : const Color(0xFF4B30A1))
                             .withValues(alpha: 0.15),
-                    borderRadius: BorderRadius.circular(8),
+                    borderRadius: BorderRadius.circular(AppRadius.xs),
                   ),
                   alignment: Alignment.center,
                   child: Text(
@@ -521,7 +522,7 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
                         ),
                         decoration: BoxDecoration(
                           color: s.color.withValues(alpha: 0.12),
-                          borderRadius: BorderRadius.circular(6),
+                          borderRadius: BorderRadius.circular(AppRadius.tiny),
                         ),
                         child: Icon(s.icon, size: 11, color: s.color),
                       ),
@@ -547,7 +548,7 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
                     color: const Color(
                       0xFF1E0A3C,
                     ).withValues(alpha: isDark ? 0.45 : 0.04),
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
                     border: Border.all(
                       color: const Color(
                         0xFF4B30A1,
@@ -580,7 +581,7 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
                         margin: const EdgeInsets.only(right: 8),
                         decoration: BoxDecoration(
                           color: const Color(0xFF4B30A1),
-                          borderRadius: BorderRadius.circular(2),
+                          borderRadius: BorderRadius.circular(AppRadius.xxs),
                         ),
                       ),
                       Expanded(
@@ -624,7 +625,7 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
                       margin: const EdgeInsets.only(right: 8, top: 3),
                       decoration: BoxDecoration(
                         color: const Color(0xFF00BFA5),
-                        borderRadius: BorderRadius.circular(2),
+                        borderRadius: BorderRadius.circular(AppRadius.xxs),
                       ),
                     ),
                     Expanded(
@@ -660,7 +661,9 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
                                 ),
                                 decoration: BoxDecoration(
                                   color: s.color.withValues(alpha: 0.10),
-                                  borderRadius: BorderRadius.circular(6),
+                                  borderRadius: BorderRadius.circular(
+                                    AppRadius.tiny,
+                                  ),
                                   border: Border.all(
                                     color: s.color.withValues(alpha: 0.22),
                                   ),
@@ -691,7 +694,9 @@ class PowerfulDuahCardState extends State<PowerfulDuahCard> {
                               : (isDark
                                     ? const Color(0xFF1D1238)
                                     : const Color(0xFFF5F2FF)),
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(
+                            AppRadius.compact,
+                          ),
                           border: Border.all(
                             color: _copied
                                 ? const Color(0xFF00BFA5).withValues(alpha: 0.4)

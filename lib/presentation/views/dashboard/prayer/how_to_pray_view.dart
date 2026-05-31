@@ -11,6 +11,7 @@ import 'package:quran_for_all/presentation/widgets/dashboard/prayer/movement_gui
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_language_menu_action.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
 
+// MARK: Prayer - How To Pray Screen
 class HowToPrayView extends StatelessWidget {
   const HowToPrayView({super.key});
 
@@ -23,6 +24,7 @@ class HowToPrayView extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - How To Pray Body
 class _HowToPrayBody extends StatelessWidget {
   const _HowToPrayBody();
 
@@ -45,6 +47,7 @@ class _HowToPrayBody extends StatelessWidget {
       ),
       body: Stack(
         children: [
+          // MARK: Prayer - How To Pray Background
           Positioned.fill(
             child: DecoratedBox(
               decoration: BoxDecoration(
@@ -72,7 +75,9 @@ class _HowToPrayBody extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      // MARK: Prayer - Movement Hero
                       PrayerMovementGuideHero(stepCount: steps.length),
+                      // MARK: Prayer - Movement Sequence
                       PrayerSectionHeader(
                         title: context.l10n.prayerMovementsSequenceTitle,
                         subtitle: context.l10n.prayerMovementsSequenceSubtitle,
@@ -81,6 +86,7 @@ class _HowToPrayBody extends StatelessWidget {
                       ),
                       PrayerMovementFlowChips(steps: steps),
                       const SizedBox(height: AppSpacing.lg),
+                      // MARK: Prayer - Movement Steps
                       for (var index = 0; index < steps.length; index++) ...[
                         PrayerMovementStepCard(
                           step: steps[index],
@@ -89,6 +95,7 @@ class _HowToPrayBody extends StatelessWidget {
                         if (index != steps.length - 1)
                           const SizedBox(height: AppSpacing.lg),
                       ],
+                      // MARK: Prayer - Movement Hadith
                       PrayerSectionHeader(
                         title: context.l10n.prayerMovementsHadithTitle,
                         subtitle: context.l10n.prayerMovementsHadithSubtitle,
@@ -96,6 +103,7 @@ class _HowToPrayBody extends StatelessWidget {
                         accent: MyColors.tertiary,
                       ),
                       PrayerMovementHadithPanel(hadiths: hadiths),
+                      // MARK: Prayer - Movement Fiqh Note
                       const PrayerMovementFiqhNote(),
                     ],
                   ),

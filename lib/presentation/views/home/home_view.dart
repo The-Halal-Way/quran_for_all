@@ -3,6 +3,7 @@ import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
 import 'package:quran_for_all/presentation/views/quran/quran_view.dart';
+import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/utils/app_responsive.dart';
@@ -20,8 +21,9 @@ class _HomeViewState extends State<HomeView> {
 
   final List<Widget> _sections = const [
     DashboardView(),
-    PrayerView(isAppbardNeeded: false),
+    PrayerView(),
     QuranView(),
+    SunnahDuaView(),
     SettingsView(embedded: true),
   ];
 
@@ -99,6 +101,19 @@ class _HomeViewState extends State<HomeView> {
                 height: navIconSize,
               ),
               label: l10n.homeQuranTab,
+            ),
+            NavigationDestination(
+              icon: Image.asset(
+                MyIcons.duaIcon,
+                width: navIconSize,
+                height: navIconSize,
+              ),
+              selectedIcon: Image.asset(
+                MyIcons.duaIconFill,
+                width: navIconSize,
+                height: navIconSize,
+              ),
+              label: "Sunnah/Dua",
             ),
             NavigationDestination(
               icon: Icon(Icons.settings_outlined, size: navIconSize),

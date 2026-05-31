@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassHeadingDisplay extends StatelessWidget {
@@ -65,7 +66,7 @@ class CompassDirectionPill extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 6),
       decoration: BoxDecoration(
         color: isDark ? const Color(0xFF1D1238) : const Color(0xFFEEE8FA),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         border: Border.all(
           color: isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8),
         ),

@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 
 class CompassDial extends StatelessWidget {
@@ -278,7 +279,7 @@ class CompassPainter extends CustomPainter {
       height: 12,
     );
     c.drawRRect(
-      RRect.fromRectAndRadius(kaabaRect, const Radius.circular(2)),
+      RRect.fromRectAndRadius(kaabaRect, const Radius.circular(AppRadius.xxs)),
       Paint()..color = facingMecca ? _tealLight : _teal,
     );
     c.drawLine(

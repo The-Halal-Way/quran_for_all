@@ -1,6 +1,7 @@
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:flutter/services.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
@@ -48,7 +49,7 @@ class DuahCardState extends State<DuahCard> {
       margin: const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
         color: cardBg,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppRadius.md),
         border: Border.all(color: borderC),
       ),
       child: Column(
@@ -81,7 +82,7 @@ class DuahCardState extends State<DuahCard> {
                           color: _copied
                               ? const Color(0xFF00BFA5).withValues(alpha: 0.15)
                               : Colors.transparent,
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(AppRadius.xs),
                         ),
                         child: Icon(
                           _copied ? Icons.check_rounded : Icons.copy_rounded,
@@ -107,7 +108,7 @@ class DuahCardState extends State<DuahCard> {
                     color: const Color(
                       0xFF1E0A3C,
                     ).withValues(alpha: isDark ? 0.40 : 0.04),
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(AppRadius.sm),
                     border: Border.all(
                       color: const Color(
                         0xFF4B30A1,
@@ -135,7 +136,7 @@ class DuahCardState extends State<DuahCard> {
                       margin: const EdgeInsets.only(top: 2, right: 8),
                       decoration: BoxDecoration(
                         color: const Color(0xFF4B30A1),
-                        borderRadius: BorderRadius.circular(2),
+                        borderRadius: BorderRadius.circular(AppRadius.xxs),
                       ),
                     ),
                     Expanded(
@@ -160,7 +161,7 @@ class DuahCardState extends State<DuahCard> {
                       margin: const EdgeInsets.only(top: 2, right: 8),
                       decoration: BoxDecoration(
                         color: const Color(0xFF00BFA5),
-                        borderRadius: BorderRadius.circular(2),
+                        borderRadius: BorderRadius.circular(AppRadius.xxs),
                       ),
                     ),
                     Expanded(
@@ -184,7 +185,7 @@ class DuahCardState extends State<DuahCard> {
                     ),
                     decoration: BoxDecoration(
                       color: const Color(0xFF00BFA5).withValues(alpha: 0.08),
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(AppRadius.xs),
                       border: Border.all(
                         color: const Color(0xFF00BFA5).withValues(alpha: 0.25),
                       ),
@@ -220,7 +221,7 @@ class DuahCardState extends State<DuahCard> {
             Divider(height: 1, color: borderC),
             InkWell(
               borderRadius: const BorderRadius.vertical(
-                bottom: Radius.circular(16),
+                bottom: Radius.circular(AppRadius.md),
               ),
               onTap: () => setState(() => _expanded = !_expanded),
               child: Padding(
@@ -279,7 +280,7 @@ class SubItemTile extends StatelessWidget {
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: const Color(0xFFD50057).withValues(alpha: isDark ? 0.07 : 0.04),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(AppRadius.sm),
         border: Border.all(
           color: const Color(0xFFD50057).withValues(alpha: 0.18),
         ),

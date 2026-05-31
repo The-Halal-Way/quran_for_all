@@ -29,7 +29,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                 ),
-                borderRadius: BorderRadius.circular(18),
+                borderRadius: BorderRadius.circular(AppRadius.relaxed),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -86,7 +86,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
               height: 20,
               decoration: BoxDecoration(
                 color: MyColors.secondary,
-                borderRadius: BorderRadius.circular(2),
+                borderRadius: BorderRadius.circular(AppRadius.xxs),
               ),
             ),
             const SizedBox(width: 12),
@@ -102,7 +102,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                   height: 20,
                   decoration: BoxDecoration(
                     color: MyColors.secondary,
-                    borderRadius: BorderRadius.circular(2),
+                    borderRadius: BorderRadius.circular(AppRadius.xxs),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -184,7 +184,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
           height: 30,
           decoration: BoxDecoration(
             color: color.withOpacity(0.12),
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(AppRadius.xs),
           ),
           child: Icon(icon, size: 16, color: color),
         ),
@@ -216,7 +216,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
     return Container(
       decoration: BoxDecoration(
         color: _cardBg,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         border: Border.all(
           color: _isDark
               ? Colors.white.withOpacity(0.06)
@@ -279,7 +279,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                     ),
                     decoration: BoxDecoration(
                       color: MyColors.secondary.withOpacity(0.1),
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(AppRadius.compact),
                       border: Border.all(
                         color: MyColors.secondary.withOpacity(0.25),
                       ),
@@ -295,8 +295,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
               ),
             )
           : GestureDetector(
-            onTap: _togglePrayerCardExpanded,
-            child: Column(
+              onTap: _togglePrayerCardExpanded,
+              child: Column(
                 children: [
                   _buildPrayerSummaryHeader(text),
                   AnimatedCrossFade(
@@ -335,7 +335,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                   ),
                 ],
               ),
-          ),
+            ),
     );
   }
 
@@ -352,8 +352,8 @@ extension _DashboardViewStateSections on _DashboardViewState {
         : context.l10n.dashboardNextPrayer;
     final time = nextPrayer == null ? '--' : _prayerTimes?[nextPrayer] ?? '';
     final borderRadius = _isPrayerCardExpanded
-        ? const BorderRadius.vertical(top: Radius.circular(20))
-        : BorderRadius.circular(20);
+        ? const BorderRadius.vertical(top: Radius.circular(AppRadius.lg))
+        : BorderRadius.circular(AppRadius.lg);
 
     return Container(
       padding: const EdgeInsets.fromLTRB(16, 12, 10, 12),

@@ -7,6 +7,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
 import 'prayer_visuals.dart';
 
+// MARK: Prayer - Focus Hero
 class PrayerFocusHero extends StatelessWidget {
   const PrayerFocusHero({
     super.key,
@@ -47,6 +48,7 @@ class PrayerFocusHero extends StatelessWidget {
       ),
       child: Stack(
         children: [
+          // MARK: Prayer - Hero Watermark
           Positioned(
             right: -14,
             bottom: -18,
@@ -61,6 +63,7 @@ class PrayerFocusHero extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // MARK: Prayer - Hero Title Block
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -108,6 +111,7 @@ class PrayerFocusHero extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: AppSpacing.md),
+                // MARK: Prayer - Hero Time Block
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [

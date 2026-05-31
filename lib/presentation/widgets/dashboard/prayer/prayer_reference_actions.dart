@@ -4,6 +4,7 @@ import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 
+// MARK: Prayer - Reference Navigation Grid
 class PrayerReferenceActions extends StatelessWidget {
   const PrayerReferenceActions({
     super.key,
@@ -101,6 +102,7 @@ class PrayerReferenceActions extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Reference Action Data
 class _PrayerReferenceAction {
   const _PrayerReferenceAction({
     required this.title,
@@ -119,6 +121,7 @@ class _PrayerReferenceAction {
   final VoidCallback onTap;
 }
 
+// MARK: Prayer - Reference Action Button
 class _PrayerReferenceActionButton extends StatelessWidget {
   const _PrayerReferenceActionButton({
     required this.action,

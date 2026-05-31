@@ -35,7 +35,7 @@ class PrayerRow extends StatelessWidget {
                   : (isDark
                         ? Colors.white.withOpacity(0.05)
                         : MyColors.divider.withOpacity(0.4)),
-              borderRadius: BorderRadius.circular(9),
+              borderRadius: BorderRadius.circular(AppRadius.xsPlus),
             ),
             child: Icon(
               icon,
@@ -58,7 +58,7 @@ class PrayerRow extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
               decoration: BoxDecoration(
                 color: MyColors.secondary.withOpacity(0.1),
-                borderRadius: BorderRadius.circular(6),
+                borderRadius: BorderRadius.circular(AppRadius.tiny),
                 border: Border.all(
                   color: MyColors.secondary.withOpacity(0.25),
                   width: 0.7,

@@ -25,7 +25,7 @@ class ActionTile extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
         decoration: BoxDecoration(
           color: cardBg,
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(AppRadius.md),
           border: Border.all(
             color: isDark
                 ? Colors.white.withOpacity(0.06)
@@ -48,7 +48,7 @@ class ActionTile extends StatelessWidget {
               height: 36,
               decoration: BoxDecoration(
                 color: item.color.withOpacity(0.12),
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(AppRadius.compact),
               ),
               child: Icon(item.icon, size: 18, color: item.color),
             ),

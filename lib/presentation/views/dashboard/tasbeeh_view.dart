@@ -50,7 +50,12 @@ class _TasbeehBody extends StatelessWidget {
                   builder: (context, controller) => SingleChildScrollView(
                     controller: controller,
                     physics: const BouncingScrollPhysics(),
-                    padding: EdgeInsets.fromLTRB(horizontal, 16, horizontal, 96),
+                    padding: EdgeInsets.fromLTRB(
+                      horizontal,
+                      16,
+                      horizontal,
+                      96,
+                    ),
                     child: Column(
                       children: [
                         TasbeehAppBar(isDark: isDark),

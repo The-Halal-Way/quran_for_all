@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
@@ -56,7 +57,7 @@ class _AlphabetTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(8, 8, 8, 9),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(AppRadius.base),
         color: colorScheme.surface,
         border: Border.all(color: colorScheme.outline.withValues(alpha: 0.18)),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/quran/quran_hub_models.dart';
@@ -16,7 +17,7 @@ class QuranHubStatChip extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(AppRadius.sm),
         border: Border.all(color: Colors.white.withValues(alpha: 0.16)),
       ),
       child: Row(

@@ -48,7 +48,9 @@ class _JumpSheetState extends State<_JumpSheet> {
       height: MediaQuery.of(context).size.height * 0.78,
       decoration: BoxDecoration(
         color: widget.cardBg,
-        borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+        borderRadius: const BorderRadius.vertical(
+          top: Radius.circular(AppRadius.xxl),
+        ),
         border: Border(
           top: BorderSide(color: MyColors.tertiary.withOpacity(0.2), width: 1),
         ),
@@ -70,7 +72,7 @@ class _JumpSheetState extends State<_JumpSheet> {
               height: 4,
               decoration: BoxDecoration(
                 color: widget.divider,
-                borderRadius: BorderRadius.circular(2),
+                borderRadius: BorderRadius.circular(AppRadius.xxs),
               ),
             ),
           ),
@@ -84,7 +86,7 @@ class _JumpSheetState extends State<_JumpSheet> {
                   width: 34,
                   height: 34,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(AppRadius.compact),
                     gradient: const LinearGradient(
                       colors: [MyColors.tertiary, MyColors.tertiaryLight],
                     ),
@@ -134,11 +136,11 @@ class _JumpSheetState extends State<_JumpSheet> {
                     ? MyColors.darkSurface.withOpacity(0.6)
                     : MyColors.divider.withOpacity(0.25),
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(AppRadius.base),
                   borderSide: BorderSide.none,
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(AppRadius.base),
                   borderSide: const BorderSide(
                     color: MyColors.tertiary,
                     width: 1.5,
@@ -214,7 +216,7 @@ class _JumpListTile extends StatelessWidget {
               width: 36,
               height: 36,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(AppRadius.compact),
                 color: MyColors.tertiary.withOpacity(0.1),
                 border: Border.all(
                   color: MyColors.tertiary.withOpacity(0.25),

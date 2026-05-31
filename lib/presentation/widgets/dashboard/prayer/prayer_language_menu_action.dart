@@ -5,6 +5,7 @@ import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 
+// MARK: Prayer - Language Menu Action
 class PrayerLanguageMenuAction extends StatelessWidget {
   const PrayerLanguageMenuAction({super.key, this.iconColor});
 

@@ -7,6 +7,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
 import 'prayer_visuals.dart';
 
+// MARK: Prayer - Nafal Prayers Card
 class PrayerNafalPrayersCard extends StatelessWidget {
   const PrayerNafalPrayersCard({super.key, required this.items});
 
@@ -70,6 +71,7 @@ class PrayerNafalPrayersCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Nafal Header
 class _NafalHeader extends StatelessWidget {
   const _NafalHeader({required this.isDark});
 
@@ -164,6 +166,7 @@ class _NafalHeader extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Nafal Stat Chip
 class _NafalStatChip extends StatelessWidget {
   const _NafalStatChip({
     required this.icon,
@@ -200,6 +203,7 @@ class _NafalStatChip extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Nafal Prayer Tile
 class _NafalPrayerTile extends StatelessWidget {
   const _NafalPrayerTile({
     required this.item,
@@ -318,6 +322,7 @@ class _NafalPrayerTile extends StatelessWidget {
     );
   }
 
+  // MARK: Prayer - Nafal Prayer Accent
   Color _accentFor(int index) {
     switch (index) {
       case 0:
@@ -331,6 +336,7 @@ class _NafalPrayerTile extends StatelessWidget {
     }
   }
 
+  // MARK: Prayer - Nafal Prayer Icon
   IconData _iconFor(int index) {
     switch (index) {
       case 0:
@@ -345,6 +351,7 @@ class _NafalPrayerTile extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Nafal Benefit Box
 class _NafalBenefitBox extends StatelessWidget {
   const _NafalBenefitBox({
     required this.body,
@@ -397,6 +404,7 @@ class _NafalBenefitBox extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Nafal Hadith Reference Card
 class _NafalHadithReferenceCard extends StatelessWidget {
   const _NafalHadithReferenceCard({
     required this.reference,
@@ -457,6 +465,7 @@ class _NafalHadithReferenceCard extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Nafal Info Pill
 class _NafalInfoPill extends StatelessWidget {
   const _NafalInfoPill({
     required this.label,
@@ -508,6 +517,7 @@ class _NafalInfoPill extends StatelessWidget {
   }
 }
 
+// MARK: Prayer - Nafal Note
 class _NafalNote extends StatelessWidget {
   const _NafalNote({required this.isDark});
 

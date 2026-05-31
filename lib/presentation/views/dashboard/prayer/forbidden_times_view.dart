@@ -7,6 +7,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_forbidden_times_card.dart';
 
+// MARK: Prayer - Forbidden Times Screen
 class ForbiddenTimesView extends StatelessWidget {
   const ForbiddenTimesView({super.key, required this.items});
 
@@ -27,6 +28,7 @@ class ForbiddenTimesView extends StatelessWidget {
       ),
       body: Stack(
         children: [
+          // MARK: Prayer - Forbidden Times Background
           Positioned.fill(
             child: DecoratedBox(
               decoration: BoxDecoration(
@@ -50,6 +52,7 @@ class ForbiddenTimesView extends StatelessWidget {
                   constraints: BoxConstraints(
                     maxWidth: responsive.maxReadingContentWidth,
                   ),
+                  // MARK: Prayer - Forbidden Times Content
                   child: PrayerForbiddenTimesCard(items: items),
                 ),
               ),

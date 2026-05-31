@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
@@ -263,7 +264,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
                         height: 16,
                         decoration: BoxDecoration(
                           color: MyColors.secondaryLight,
-                          borderRadius: BorderRadius.circular(2),
+                          borderRadius: BorderRadius.circular(AppRadius.xxs),
                         ),
                       ),
                       const SizedBox(width: 8),
@@ -318,7 +319,7 @@ class _HadithScreenState extends State<HadithAnNawawiView>
             height: 38,
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.15),
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(AppRadius.sm),
               border: Border.all(
                 color: Colors.white.withOpacity(0.2),
                 width: 1,

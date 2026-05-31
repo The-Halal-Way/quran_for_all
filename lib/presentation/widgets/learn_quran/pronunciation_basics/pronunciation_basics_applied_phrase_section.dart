@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../pronunciation_button.dart';
@@ -50,7 +51,7 @@ class _PhraseCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(11, 10, 11, 10),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(AppRadius.base),
         color: colorScheme.secondary.withValues(alpha: 0.08),
       ),
       child: Row(

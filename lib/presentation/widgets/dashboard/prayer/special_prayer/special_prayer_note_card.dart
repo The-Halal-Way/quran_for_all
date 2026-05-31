@@ -5,6 +5,7 @@ import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_visuals.dart';
 
+// MARK: Prayer - Special Prayer Note Card
 class SpecialPrayerNoteCard extends StatelessWidget {
   const SpecialPrayerNoteCard({
     super.key,

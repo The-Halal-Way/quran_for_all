@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
@@ -35,7 +36,7 @@ class NintyNineNamesGridHeader extends StatelessWidget {
             height: 32,
             decoration: BoxDecoration(
               color: MyColors.secondary.withValues(alpha: isDark ? 0.18 : 0.10),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(AppRadius.compact),
             ),
             child: const Icon(
               Icons.grid_view_rounded,

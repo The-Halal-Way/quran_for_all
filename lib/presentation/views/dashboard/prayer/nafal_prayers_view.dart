@@ -7,6 +7,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/prayer/prayer_nafal_prayers_card.dart';
 
+// MARK: Prayer - Nafal Prayers Screen
 class NafalPrayersView extends StatelessWidget {
   const NafalPrayersView({super.key, required this.items});
 
@@ -27,6 +28,7 @@ class NafalPrayersView extends StatelessWidget {
       ),
       body: Stack(
         children: [
+          // MARK: Prayer - Nafal Prayers Background
           Positioned.fill(
             child: DecoratedBox(
               decoration: BoxDecoration(
@@ -50,6 +52,7 @@ class NafalPrayersView extends StatelessWidget {
                   constraints: BoxConstraints(
                     maxWidth: responsive.maxReadingContentWidth,
                   ),
+                  // MARK: Prayer - Nafal Prayers Content
                   child: PrayerNafalPrayersCard(items: items),
                 ),
               ),

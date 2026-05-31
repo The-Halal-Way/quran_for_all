@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:flutter/services.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
@@ -257,7 +258,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
         children: [
           Expanded(
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(999),
+              borderRadius: BorderRadius.circular(AppRadius.full),
               child: Container(
                 height: 4,
                 color: _scheme.outlineVariant.withValues(alpha: 0.55),
@@ -303,7 +304,7 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
           height: 36,
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.16),
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(AppRadius.compact),
             border: Border.all(
               color: Colors.white.withOpacity(0.2),
               width: 0.8,

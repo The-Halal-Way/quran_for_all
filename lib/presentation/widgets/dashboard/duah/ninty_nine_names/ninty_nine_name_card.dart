@@ -292,7 +292,7 @@ class _IndexDiamond extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(7),
+          borderRadius: BorderRadius.circular(AppRadius.tinyPlus),
           boxShadow: AppShadows.glow(accent, intensity: 0.16),
         ),
         child: Center(
