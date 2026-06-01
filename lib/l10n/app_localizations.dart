@@ -1934,6 +1934,54 @@ abstract class AppLocalizations {
   /// **'Slow down enough that wudu feels like preparation for salah, not just a task.'**
   String get sunnahDuaWuduSunnahsPractice;
 
+  /// No description provided for @sunnahDuaSiyamSunnahsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Siyam'**
+  String get sunnahDuaSiyamSunnahsTitle;
+
+  /// No description provided for @sunnahDuaSiyamSunnahsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah fasting beyond Ramadan'**
+  String get sunnahDuaSiyamSunnahsSubtitle;
+
+  /// No description provided for @sunnahDuaSiyamSunnahsPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep the intention sincere and clear before the fast.||Guard the fast beyond food and drink: protect speech, anger, eyes, and actions.||Fast Mondays and Thursdays when you are able.||Keep three days each lunar month, especially Ayyam al-Bid: the 13th, 14th, and 15th.||Remember special sunnah fasts: six days of Shawwal, Ashura, and the day of Arafah for those not at Hajj.||Take suhur close to Fajr and hasten iftar after sunset.||Break the fast with dates or water and make du\'a at iftar.||Do not harm yourself; leave voluntary fasts when sick, travelling, or when duties would be neglected.'**
+  String get sunnahDuaSiyamSunnahsPointsRaw;
+
+  /// No description provided for @sunnahDuaSiyamArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'الصِّيَامُ جُنَّةٌ'**
+  String get sunnahDuaSiyamArabic;
+
+  /// No description provided for @sunnahDuaSiyamPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'As-siyamu junnah'**
+  String get sunnahDuaSiyamPronunciation;
+
+  /// No description provided for @sunnahDuaSiyamTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Fasting is a shield.'**
+  String get sunnahDuaSiyamTranslation;
+
+  /// No description provided for @sunnahDuaSiyamSunnahsPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Start with one sustainable sunnah fast, then build slowly. The goal is not just hunger; it is taqwa, restraint, gratitude, and a cleaner heart before Allah.'**
+  String get sunnahDuaSiyamSunnahsPractice;
+
+  /// No description provided for @sunnahDuaSiyamSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 1894; Sahih Muslim 1151, 1162, 1164; Jami\' at-Tirmidhi 761'**
+  String get sunnahDuaSiyamSource;
+
   /// No description provided for @sunnahDuaMasjidSunnahsTitle.
   ///
   /// In en, this message translates to:

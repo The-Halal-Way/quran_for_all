@@ -1018,6 +1018,33 @@ class AppLocalizationsEn extends AppLocalizations {
       'Slow down enough that wudu feels like preparation for salah, not just a task.';
 
   @override
+  String get sunnahDuaSiyamSunnahsTitle => 'Siyam';
+
+  @override
+  String get sunnahDuaSiyamSunnahsSubtitle => 'Sunnah fasting beyond Ramadan';
+
+  @override
+  String get sunnahDuaSiyamSunnahsPointsRaw =>
+      'Keep the intention sincere and clear before the fast.||Guard the fast beyond food and drink: protect speech, anger, eyes, and actions.||Fast Mondays and Thursdays when you are able.||Keep three days each lunar month, especially Ayyam al-Bid: the 13th, 14th, and 15th.||Remember special sunnah fasts: six days of Shawwal, Ashura, and the day of Arafah for those not at Hajj.||Take suhur close to Fajr and hasten iftar after sunset.||Break the fast with dates or water and make du\'a at iftar.||Do not harm yourself; leave voluntary fasts when sick, travelling, or when duties would be neglected.';
+
+  @override
+  String get sunnahDuaSiyamArabic => 'الصِّيَامُ جُنَّةٌ';
+
+  @override
+  String get sunnahDuaSiyamPronunciation => 'As-siyamu junnah';
+
+  @override
+  String get sunnahDuaSiyamTranslation => 'Fasting is a shield.';
+
+  @override
+  String get sunnahDuaSiyamSunnahsPractice =>
+      'Start with one sustainable sunnah fast, then build slowly. The goal is not just hunger; it is taqwa, restraint, gratitude, and a cleaner heart before Allah.';
+
+  @override
+  String get sunnahDuaSiyamSource =>
+      'Sahih al-Bukhari 1894; Sahih Muslim 1151, 1162, 1164; Jami\' at-Tirmidhi 761';
+
+  @override
   String get sunnahDuaMasjidSunnahsTitle => 'Masjid Sunnahs';
 
   @override

@@ -1019,6 +1019,33 @@ class AppLocalizationsBn extends AppLocalizations {
       'ওজুকে শুধু কাজ না বানিয়ে নামাজের প্রস্তুতি হিসেবে অনুভব করার মতো ধীরে করুন।';
 
   @override
+  String get sunnahDuaSiyamSunnahsTitle => 'সিয়াম';
+
+  @override
+  String get sunnahDuaSiyamSunnahsSubtitle => 'রমজানের বাইরে সুন্নাহ রোজা';
+
+  @override
+  String get sunnahDuaSiyamSunnahsPointsRaw =>
+      'রোজার আগে নিয়তকে আন্তরিক ও স্পষ্ট রাখুন।||রোজাকে শুধু পানাহার থেকে বিরত থাকা বানাবেন না; কথা, রাগ, দৃষ্টি ও কাজকেও সংযত রাখুন।||সামর্থ্য থাকলে সোমবার ও বৃহস্পতিবার রোজা রাখুন।||প্রতি চন্দ্র মাসে তিন দিন রাখুন, বিশেষ করে আইয়ামে বীদ: ১৩, ১৪ ও ১৫ তারিখ।||বিশেষ সুন্নাহ রোজা মনে রাখুন: শাওয়ালের ছয় রোজা, আশুরা, এবং হাজ্জে না থাকা ব্যক্তির জন্য আরাফার দিন।||সেহরি ফজরের কাছাকাছি করুন এবং সূর্যাস্তের পর ইফতার দ্রুত করুন।||খেজুর বা পানি দিয়ে ইফতার করুন এবং ইফতারের সময় দু\'আ করুন।||নিজেকে কষ্ট দেবেন না; অসুস্থতা, সফর বা দায়িত্ব নষ্ট হওয়ার আশঙ্কা থাকলে নফল রোজা ছেড়ে দিন।';
+
+  @override
+  String get sunnahDuaSiyamArabic => 'الصِّيَامُ جُنَّةٌ';
+
+  @override
+  String get sunnahDuaSiyamPronunciation => 'আস-সিয়ামু জুন্নাহ';
+
+  @override
+  String get sunnahDuaSiyamTranslation => 'রোজা ঢালস্বরূপ।';
+
+  @override
+  String get sunnahDuaSiyamSunnahsPractice =>
+      'একটি সহজ ও ধারাবাহিক সুন্নাহ রোজা দিয়ে শুরু করুন, তারপর ধীরে ধীরে বাড়ান। লক্ষ্য শুধু ক্ষুধা নয়; লক্ষ্য তাকওয়া, সংযম, কৃতজ্ঞতা ও আল্লাহর সামনে পরিষ্কার অন্তর।';
+
+  @override
+  String get sunnahDuaSiyamSource =>
+      'সহিহ বুখারি ১৮৯৪; সহিহ মুসলিম ১১৫১, ১১৬২, ১১৬৪; জামে তিরমিজি ৭৬১';
+
+  @override
   String get sunnahDuaMasjidSunnahsTitle => 'মসজিদের সুন্নাহসমূহ';
 
   @override
