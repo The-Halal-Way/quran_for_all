@@ -12,6 +12,7 @@ class SettingsRepositoryImpl implements SettingsRepository {
   static const _keyReadingViewMode = 'reading_view_mode';
   static const _keyLanguage = 'app_language';
   static const _keyThemeMode = 'theme_mode';
+  static const _keyHijriDateAdjustment = 'hijri_date_adjustment';
 
   @override
   Future<AppSettings> getSettings() async {
@@ -25,6 +26,9 @@ class SettingsRepositoryImpl implements SettingsRepository {
       ),
       language: AppLanguageX.fromCode(prefs.getString(_keyLanguage)),
       themeMode: _themeModeFromString(prefs.getString(_keyThemeMode)),
+      hijriDateAdjustment: _normalizedHijriAdjustment(
+        prefs.getInt(_keyHijriDateAdjustment),
+      ),
     );
   }
 
@@ -37,6 +41,7 @@ class SettingsRepositoryImpl implements SettingsRepository {
     await prefs.setString(_keyReadingViewMode, settings.readingViewMode.code);
     await prefs.setString(_keyLanguage, settings.language.code);
     await prefs.setString(_keyThemeMode, settings.themeMode.name);
+    await prefs.setInt(_keyHijriDateAdjustment, settings.hijriDateAdjustment);
   }
 
   static ThemeMode _themeModeFromString(String? value) {
@@ -48,5 +53,9 @@ class SettingsRepositoryImpl implements SettingsRepository {
       default:
         return ThemeMode.system;
     }
+  }
+
+  static int _normalizedHijriAdjustment(int? value) {
+    return (value ?? 0).clamp(-1, 1).toInt();
   }
 }

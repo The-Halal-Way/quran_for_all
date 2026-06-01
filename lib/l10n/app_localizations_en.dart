@@ -85,6 +85,133 @@ class AppLocalizationsEn extends AppLocalizations {
       'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.';
 
   @override
+  String get settingsHijriCalendarTitle => 'Hijri Calendar';
+
+  @override
+  String get settingsHijriAdjustmentTitle => 'Local date adjustment';
+
+  @override
+  String get settingsHijriAdjustmentSubtitle =>
+      'Use this if your local moon-sighting date is one day different from the calculated date.';
+
+  @override
+  String get hijriAdjustmentTitle => 'Moon-sighting adjustment';
+
+  @override
+  String get hijriAdjustmentMinusLabel => '-1 day';
+
+  @override
+  String get hijriAdjustmentCalculatedLabel => 'Calculated';
+
+  @override
+  String get hijriAdjustmentPlusLabel => '+1 day';
+
+  @override
+  String get hijriCalendarTitle => 'Hijri Calendar';
+
+  @override
+  String get hijriCalendarSubtitle => 'Browse Islamic dates and find any day';
+
+  @override
+  String get hijriCalendarTodayAction => 'Today';
+
+  @override
+  String get hijriFinderTitle => 'Find a date';
+
+  @override
+  String get hijriFinderSubtitle =>
+      'Jump by Gregorian date or enter a Hijri date directly.';
+
+  @override
+  String get hijriFindGregorianAction => 'Pick Gregorian';
+
+  @override
+  String get hijriFindHijriAction => 'Enter Hijri';
+
+  @override
+  String get hijriDatePickerTitle => 'Find Hijri Date';
+
+  @override
+  String get hijriDatePickerYearLabel => 'Year';
+
+  @override
+  String get hijriDatePickerMonthLabel => 'Month';
+
+  @override
+  String get hijriDatePickerDayLabel => 'Day';
+
+  @override
+  String get hijriDatePickerOpenAction => 'Open date';
+
+  @override
+  String get hijriInvalidDateMessage => 'That Hijri date is not available.';
+
+  @override
+  String get hijriSelectedDateTitle => 'Selected date';
+
+  @override
+  String hijriDateFull(String day, String month, String year) {
+    return '$day $month $year AH';
+  }
+
+  @override
+  String get hijriWeekdaySun => 'Sun';
+
+  @override
+  String get hijriWeekdayMon => 'Mon';
+
+  @override
+  String get hijriWeekdayTue => 'Tue';
+
+  @override
+  String get hijriWeekdayWed => 'Wed';
+
+  @override
+  String get hijriWeekdayThu => 'Thu';
+
+  @override
+  String get hijriWeekdayFri => 'Fri';
+
+  @override
+  String get hijriWeekdaySat => 'Sat';
+
+  @override
+  String get hijriMonthMuharram => 'Muharram';
+
+  @override
+  String get hijriMonthSafar => 'Safar';
+
+  @override
+  String get hijriMonthRabiAlAwwal => 'Rabi\' al-Awwal';
+
+  @override
+  String get hijriMonthRabiAlThani => 'Rabi\' al-Thani';
+
+  @override
+  String get hijriMonthJumadaAlAwwal => 'Jumada al-Awwal';
+
+  @override
+  String get hijriMonthJumadaAlThani => 'Jumada al-Thani';
+
+  @override
+  String get hijriMonthRajab => 'Rajab';
+
+  @override
+  String get hijriMonthShaban => 'Sha\'ban';
+
+  @override
+  String get hijriMonthRamadan => 'Ramadan';
+
+  @override
+  String get hijriMonthShawwal => 'Shawwal';
+
+  @override
+  String get hijriMonthDhulQadah => 'Dhul Qadah';
+
+  @override
+  String get hijriMonthDhulHijjah => 'Dhul Hijjah';
+
+  @override
   String get splashStatusPreparing => 'Preparing local Quran database...';
 
   @override
@@ -935,15 +1062,6 @@ class AppLocalizationsEn extends AppLocalizations {
       'Read it slowly, then choose the next right action with trust in Allah.';
 
   @override
-  String get dashboardGreetingMorning => 'Good morning';
-
-  @override
-  String get dashboardGreetingAfternoon => 'Good afternoon';
-
-  @override
-  String get dashboardGreetingEvening => 'Good evening';
-
-  @override
   String get dashboardSectionPrayerTimes => 'Prayer Times';
 
   @override
@@ -954,6 +1072,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dashboardActionQiblaCompassSub => 'Find qibla direction';
+
+  @override
+  String get dashboardActionHijriCalendar => 'Hijri Calendar';
+
+  @override
+  String get dashboardActionHijriCalendarSub => 'Islamic date finder';
 
   @override
   String get dashboardSectionDua => 'Duah';

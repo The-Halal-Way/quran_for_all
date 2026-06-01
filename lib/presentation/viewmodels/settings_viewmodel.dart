@@ -57,4 +57,12 @@ class SettingsViewModel extends ChangeNotifier {
     notifyListeners();
     await _settingsRepository.saveSettings(_settings);
   }
+
+  Future<void> setHijriDateAdjustment(int adjustment) async {
+    _settings = _settings.copyWith(
+      hijriDateAdjustment: adjustment.clamp(-1, 1).toInt(),
+    );
+    notifyListeners();
+    await _settingsRepository.saveSettings(_settings);
+  }
 }

@@ -17,12 +17,14 @@ import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
+import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 import 'package:quran_for_all/presentation/views/dashboard/compass/compass_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/duah_ninty_nine_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/hijri_calendar/hijri_calendar_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/tasbeeh_view.dart';
 import 'package:quran_for_all/presentation/views/learn_quran/learning_module_detail_view.dart';
 import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart';
@@ -289,6 +291,16 @@ class _DashboardViewState extends State<DashboardView> {
                           // action row for other tools section
                           _buildSmallActionRow(
                             items: [
+                              DashboardActionItem(
+                                icon: Icons.calendar_month_rounded,
+                                label:
+                                    context.l10n.dashboardActionHijriCalendar,
+                                sublabel: context
+                                    .l10n
+                                    .dashboardActionHijriCalendarSub,
+                                color: MyColors.secondary,
+                                onTap: () => _push(const HijriCalendarView()),
+                              ),
                               // qibla compass
                               DashboardActionItem(
                                 icon: Icons.explore_rounded,

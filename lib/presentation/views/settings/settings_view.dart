@@ -9,6 +9,7 @@ import '../../viewmodels/settings_viewmodel.dart';
 import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/settings/settings_offline_card.dart';
+import '../../widgets/settings/settings_hijri_calendar_card.dart';
 import '../../widgets/settings/settings_preferences_card.dart';
 import '../../widgets/settings/settings_theme_card.dart';
 
@@ -74,6 +75,11 @@ class SettingsView extends StatelessWidget {
                           onShowTranslationChanged:
                               viewModel.setShowTranslation,
                           onLanguageChanged: viewModel.setLanguage,
+                        ),
+                        const SizedBox(height: AppSpacing.md),
+                        SettingsHijriCalendarCard(
+                          adjustment: viewModel.settings.hijriDateAdjustment,
+                          onAdjustmentChanged: viewModel.setHijriDateAdjustment,
                         ),
                         const SizedBox(height: AppSpacing.md),
                         SettingsThemeCard(

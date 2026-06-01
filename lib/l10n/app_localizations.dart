@@ -242,6 +242,252 @@ abstract class AppLocalizations {
   /// **'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.'**
   String get settingsOfflineBody;
 
+  /// No description provided for @settingsHijriCalendarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hijri Calendar'**
+  String get settingsHijriCalendarTitle;
+
+  /// No description provided for @settingsHijriAdjustmentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Local date adjustment'**
+  String get settingsHijriAdjustmentTitle;
+
+  /// No description provided for @settingsHijriAdjustmentSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this if your local moon-sighting date is one day different from the calculated date.'**
+  String get settingsHijriAdjustmentSubtitle;
+
+  /// No description provided for @hijriAdjustmentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Moon-sighting adjustment'**
+  String get hijriAdjustmentTitle;
+
+  /// No description provided for @hijriAdjustmentMinusLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'-1 day'**
+  String get hijriAdjustmentMinusLabel;
+
+  /// No description provided for @hijriAdjustmentCalculatedLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculated'**
+  String get hijriAdjustmentCalculatedLabel;
+
+  /// No description provided for @hijriAdjustmentPlusLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'+1 day'**
+  String get hijriAdjustmentPlusLabel;
+
+  /// No description provided for @hijriCalendarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hijri Calendar'**
+  String get hijriCalendarTitle;
+
+  /// No description provided for @hijriCalendarSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse Islamic dates and find any day'**
+  String get hijriCalendarSubtitle;
+
+  /// No description provided for @hijriCalendarTodayAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get hijriCalendarTodayAction;
+
+  /// No description provided for @hijriFinderTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find a date'**
+  String get hijriFinderTitle;
+
+  /// No description provided for @hijriFinderSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Jump by Gregorian date or enter a Hijri date directly.'**
+  String get hijriFinderSubtitle;
+
+  /// No description provided for @hijriFindGregorianAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick Gregorian'**
+  String get hijriFindGregorianAction;
+
+  /// No description provided for @hijriFindHijriAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Hijri'**
+  String get hijriFindHijriAction;
+
+  /// No description provided for @hijriDatePickerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find Hijri Date'**
+  String get hijriDatePickerTitle;
+
+  /// No description provided for @hijriDatePickerYearLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Year'**
+  String get hijriDatePickerYearLabel;
+
+  /// No description provided for @hijriDatePickerMonthLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Month'**
+  String get hijriDatePickerMonthLabel;
+
+  /// No description provided for @hijriDatePickerDayLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Day'**
+  String get hijriDatePickerDayLabel;
+
+  /// No description provided for @hijriDatePickerOpenAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Open date'**
+  String get hijriDatePickerOpenAction;
+
+  /// No description provided for @hijriInvalidDateMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'That Hijri date is not available.'**
+  String get hijriInvalidDateMessage;
+
+  /// No description provided for @hijriSelectedDateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected date'**
+  String get hijriSelectedDateTitle;
+
+  /// No description provided for @hijriDateFull.
+  ///
+  /// In en, this message translates to:
+  /// **'{day} {month} {year} AH'**
+  String hijriDateFull(String day, String month, String year);
+
+  /// No description provided for @hijriWeekdaySun.
+  ///
+  /// In en, this message translates to:
+  /// **'Sun'**
+  String get hijriWeekdaySun;
+
+  /// No description provided for @hijriWeekdayMon.
+  ///
+  /// In en, this message translates to:
+  /// **'Mon'**
+  String get hijriWeekdayMon;
+
+  /// No description provided for @hijriWeekdayTue.
+  ///
+  /// In en, this message translates to:
+  /// **'Tue'**
+  String get hijriWeekdayTue;
+
+  /// No description provided for @hijriWeekdayWed.
+  ///
+  /// In en, this message translates to:
+  /// **'Wed'**
+  String get hijriWeekdayWed;
+
+  /// No description provided for @hijriWeekdayThu.
+  ///
+  /// In en, this message translates to:
+  /// **'Thu'**
+  String get hijriWeekdayThu;
+
+  /// No description provided for @hijriWeekdayFri.
+  ///
+  /// In en, this message translates to:
+  /// **'Fri'**
+  String get hijriWeekdayFri;
+
+  /// No description provided for @hijriWeekdaySat.
+  ///
+  /// In en, this message translates to:
+  /// **'Sat'**
+  String get hijriWeekdaySat;
+
+  /// No description provided for @hijriMonthMuharram.
+  ///
+  /// In en, this message translates to:
+  /// **'Muharram'**
+  String get hijriMonthMuharram;
+
+  /// No description provided for @hijriMonthSafar.
+  ///
+  /// In en, this message translates to:
+  /// **'Safar'**
+  String get hijriMonthSafar;
+
+  /// No description provided for @hijriMonthRabiAlAwwal.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabi\' al-Awwal'**
+  String get hijriMonthRabiAlAwwal;
+
+  /// No description provided for @hijriMonthRabiAlThani.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabi\' al-Thani'**
+  String get hijriMonthRabiAlThani;
+
+  /// No description provided for @hijriMonthJumadaAlAwwal.
+  ///
+  /// In en, this message translates to:
+  /// **'Jumada al-Awwal'**
+  String get hijriMonthJumadaAlAwwal;
+
+  /// No description provided for @hijriMonthJumadaAlThani.
+  ///
+  /// In en, this message translates to:
+  /// **'Jumada al-Thani'**
+  String get hijriMonthJumadaAlThani;
+
+  /// No description provided for @hijriMonthRajab.
+  ///
+  /// In en, this message translates to:
+  /// **'Rajab'**
+  String get hijriMonthRajab;
+
+  /// No description provided for @hijriMonthShaban.
+  ///
+  /// In en, this message translates to:
+  /// **'Sha\'ban'**
+  String get hijriMonthShaban;
+
+  /// No description provided for @hijriMonthRamadan.
+  ///
+  /// In en, this message translates to:
+  /// **'Ramadan'**
+  String get hijriMonthRamadan;
+
+  /// No description provided for @hijriMonthShawwal.
+  ///
+  /// In en, this message translates to:
+  /// **'Shawwal'**
+  String get hijriMonthShawwal;
+
+  /// No description provided for @hijriMonthDhulQadah.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhul Qadah'**
+  String get hijriMonthDhulQadah;
+
+  /// No description provided for @hijriMonthDhulHijjah.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhul Hijjah'**
+  String get hijriMonthDhulHijjah;
+
   /// No description provided for @splashStatusPreparing.
   ///
   /// In en, this message translates to:
@@ -1760,24 +2006,6 @@ abstract class AppLocalizations {
   /// **'Read it slowly, then choose the next right action with trust in Allah.'**
   String get sunnahDuaDifficultyPractice;
 
-  /// No description provided for @dashboardGreetingMorning.
-  ///
-  /// In en, this message translates to:
-  /// **'Good morning'**
-  String get dashboardGreetingMorning;
-
-  /// No description provided for @dashboardGreetingAfternoon.
-  ///
-  /// In en, this message translates to:
-  /// **'Good afternoon'**
-  String get dashboardGreetingAfternoon;
-
-  /// No description provided for @dashboardGreetingEvening.
-  ///
-  /// In en, this message translates to:
-  /// **'Good evening'**
-  String get dashboardGreetingEvening;
-
   /// No description provided for @dashboardSectionPrayerTimes.
   ///
   /// In en, this message translates to:
@@ -1802,10 +2030,22 @@ abstract class AppLocalizations {
   /// **'Find qibla direction'**
   String get dashboardActionQiblaCompassSub;
 
+  /// No description provided for @dashboardActionHijriCalendar.
+  ///
+  /// In en, this message translates to:
+  /// **'Hijri Calendar'**
+  String get dashboardActionHijriCalendar;
+
+  /// No description provided for @dashboardActionHijriCalendarSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Islamic date finder'**
+  String get dashboardActionHijriCalendarSub;
+
   /// No description provided for @dashboardSectionDua.
   ///
   /// In en, this message translates to:
-  /// **'Du\'a'**
+  /// **'Duah'**
   String get dashboardSectionDua;
 
   /// No description provided for @dashboardActionDailyDua.

@@ -5,19 +5,32 @@ import 'package:quran_for_all/data/models/surah_model.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
+import 'package:quran_for_all/services/hijri_calendar_service.dart';
 
 class DashboardViewModel {
-  DashboardHeaderInfo headerInfo(AppLocalizations l10n, DateTime now) {
-    final hour = now.hour;
-    final greeting = hour < 12
-        ? l10n.dashboardGreetingMorning
-        : hour < 17
-        ? l10n.dashboardGreetingAfternoon
-        : l10n.dashboardGreetingEvening;
+  DashboardViewModel({
+    HijriCalendarService hijriCalendarService = const HijriCalendarService(),
+  }) : _hijriCalendarService = hijriCalendarService;
+
+  final HijriCalendarService _hijriCalendarService;
+
+  DashboardHeaderInfo headerInfo(
+    AppLocalizations l10n,
+    DateTime now, {
+    int hijriDateAdjustment = 0,
+  }) {
+    final hijriDate = _hijriCalendarService.fromGregorian(
+      now,
+      adjustmentDays: hijriDateAdjustment,
+    );
 
     return DashboardHeaderInfo(
-      greeting: greeting,
       dateLabel: DateFormat('EEEE, d MMMM').format(now),
+      hijriDateLabel: l10n.hijriDateFull(
+        _formatNumber(l10n, hijriDate.day),
+        _monthName(l10n, hijriDate.month),
+        _formatNumber(l10n, hijriDate.year),
+      ),
     );
   }
 
@@ -120,13 +133,47 @@ class DashboardViewModel {
       divider: isDark ? MyColors.darkDivider : MyColors.divider,
     );
   }
+
+  String _monthName(AppLocalizations l10n, int month) {
+    return switch (month) {
+      1 => l10n.hijriMonthMuharram,
+      2 => l10n.hijriMonthSafar,
+      3 => l10n.hijriMonthRabiAlAwwal,
+      4 => l10n.hijriMonthRabiAlThani,
+      5 => l10n.hijriMonthJumadaAlAwwal,
+      6 => l10n.hijriMonthJumadaAlThani,
+      7 => l10n.hijriMonthRajab,
+      8 => l10n.hijriMonthShaban,
+      9 => l10n.hijriMonthRamadan,
+      10 => l10n.hijriMonthShawwal,
+      11 => l10n.hijriMonthDhulQadah,
+      12 => l10n.hijriMonthDhulHijjah,
+      _ => '',
+    };
+  }
+
+  String _formatNumber(AppLocalizations l10n, int value) {
+    final raw = value.toString();
+    if (!l10n.localeName.startsWith('bn')) {
+      return raw;
+    }
+
+    const digits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+    return raw.split('').map((char) {
+      final digit = int.tryParse(char);
+      return digit == null ? char : digits[digit];
+    }).join();
+  }
 }
 
 class DashboardHeaderInfo {
-  const DashboardHeaderInfo({required this.greeting, required this.dateLabel});
+  const DashboardHeaderInfo({
+    required this.dateLabel,
+    required this.hijriDateLabel,
+  });
 
-  final String greeting;
   final String dateLabel;
+  final String hijriDateLabel;
 }
 
 class DashboardContinueCardsInfo {

@@ -10,6 +10,7 @@ class AppSettings {
     required this.readingViewMode,
     required this.language,
     required this.themeMode,
+    required this.hijriDateAdjustment,
   });
 
   final bool showPronunciation;
@@ -17,6 +18,7 @@ class AppSettings {
   final ReadingViewMode readingViewMode;
   final AppLanguage language;
   final ThemeMode themeMode;
+  final int hijriDateAdjustment;
 
   factory AppSettings.defaults() {
     return const AppSettings(
@@ -25,6 +27,7 @@ class AppSettings {
       readingViewMode: ReadingViewMode.detailsView,
       language: AppLanguage.english,
       themeMode: ThemeMode.system,
+      hijriDateAdjustment: 0,
     );
   }
 
@@ -34,6 +37,7 @@ class AppSettings {
     ReadingViewMode? readingViewMode,
     AppLanguage? language,
     ThemeMode? themeMode,
+    int? hijriDateAdjustment,
   }) {
     return AppSettings(
       showPronunciation: showPronunciation ?? this.showPronunciation,
@@ -41,6 +45,7 @@ class AppSettings {
       readingViewMode: readingViewMode ?? this.readingViewMode,
       language: language ?? this.language,
       themeMode: themeMode ?? this.themeMode,
+      hijriDateAdjustment: hijriDateAdjustment ?? this.hijriDateAdjustment,
     );
   }
 
@@ -53,6 +58,9 @@ class AppSettings {
       ),
       language: AppLanguageX.fromCode(map['language'] as String?),
       themeMode: _themeModeFromString(map['theme_mode'] as String?),
+      hijriDateAdjustment: _normalizedHijriAdjustment(
+        map['hijri_date_adjustment'] as int?,
+      ),
     );
   }
 
@@ -63,7 +71,12 @@ class AppSettings {
       'reading_view_mode': readingViewMode.code,
       'language': language.code,
       'theme_mode': themeMode.name,
+      'hijri_date_adjustment': hijriDateAdjustment,
     };
+  }
+
+  static int _normalizedHijriAdjustment(int? value) {
+    return (value ?? 0).clamp(-1, 1).toInt();
   }
 
   static ThemeMode _themeModeFromString(String? value) {

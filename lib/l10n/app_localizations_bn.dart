@@ -85,6 +85,133 @@ class AppLocalizationsBn extends AppLocalizations {
       'সেটআপের পরে কুরআনের লেখা, অনুবাদ ও তাফসির স্থানীয়ভাবে সংরক্ষিত। অডিও প্রথমবার চালানোর পরে ক্যাশ হয়।';
 
   @override
+  String get settingsHijriCalendarTitle => 'হিজরি ক্যালেন্ডার';
+
+  @override
+  String get settingsHijriAdjustmentTitle => 'স্থানীয় তারিখ সমন্বয়';
+
+  @override
+  String get settingsHijriAdjustmentSubtitle =>
+      'স্থানীয় চাঁদ দেখার তারিখ গণনাকৃত তারিখের চেয়ে এক দিন ভিন্ন হলে এটি ব্যবহার করুন।';
+
+  @override
+  String get hijriAdjustmentTitle => 'চাঁদ দেখা অনুযায়ী সমন্বয়';
+
+  @override
+  String get hijriAdjustmentMinusLabel => '-১ দিন';
+
+  @override
+  String get hijriAdjustmentCalculatedLabel => 'গণনাকৃত';
+
+  @override
+  String get hijriAdjustmentPlusLabel => '+১ দিন';
+
+  @override
+  String get hijriCalendarTitle => 'হিজরি ক্যালেন্ডার';
+
+  @override
+  String get hijriCalendarSubtitle => 'ইসলামি তারিখ দেখুন ও যেকোনো দিন খুঁজুন';
+
+  @override
+  String get hijriCalendarTodayAction => 'আজ';
+
+  @override
+  String get hijriFinderTitle => 'তারিখ খুঁজুন';
+
+  @override
+  String get hijriFinderSubtitle =>
+      'গ্রেগরিয়ান তারিখ বেছে নিন অথবা সরাসরি হিজরি তারিখ দিন।';
+
+  @override
+  String get hijriFindGregorianAction => 'গ্রেগরিয়ান বেছে নিন';
+
+  @override
+  String get hijriFindHijriAction => 'হিজরি লিখুন';
+
+  @override
+  String get hijriDatePickerTitle => 'হিজরি তারিখ খুঁজুন';
+
+  @override
+  String get hijriDatePickerYearLabel => 'বছর';
+
+  @override
+  String get hijriDatePickerMonthLabel => 'মাস';
+
+  @override
+  String get hijriDatePickerDayLabel => 'দিন';
+
+  @override
+  String get hijriDatePickerOpenAction => 'তারিখ খুলুন';
+
+  @override
+  String get hijriInvalidDateMessage => 'এই হিজরি তারিখটি পাওয়া যাচ্ছে না।';
+
+  @override
+  String get hijriSelectedDateTitle => 'নির্বাচিত তারিখ';
+
+  @override
+  String hijriDateFull(String day, String month, String year) {
+    return '$day $month $year হিজরি';
+  }
+
+  @override
+  String get hijriWeekdaySun => 'রবি';
+
+  @override
+  String get hijriWeekdayMon => 'সোম';
+
+  @override
+  String get hijriWeekdayTue => 'মঙ্গল';
+
+  @override
+  String get hijriWeekdayWed => 'বুধ';
+
+  @override
+  String get hijriWeekdayThu => 'বৃহস্পতি';
+
+  @override
+  String get hijriWeekdayFri => 'শুক্র';
+
+  @override
+  String get hijriWeekdaySat => 'শনি';
+
+  @override
+  String get hijriMonthMuharram => 'মুহাররম';
+
+  @override
+  String get hijriMonthSafar => 'সফর';
+
+  @override
+  String get hijriMonthRabiAlAwwal => 'রবিউল আউয়াল';
+
+  @override
+  String get hijriMonthRabiAlThani => 'রবিউস সানি';
+
+  @override
+  String get hijriMonthJumadaAlAwwal => 'জমাদিউল আউয়াল';
+
+  @override
+  String get hijriMonthJumadaAlThani => 'জমাদিউস সানি';
+
+  @override
+  String get hijriMonthRajab => 'রজব';
+
+  @override
+  String get hijriMonthShaban => 'শাবান';
+
+  @override
+  String get hijriMonthRamadan => 'রমজান';
+
+  @override
+  String get hijriMonthShawwal => 'শাওয়াল';
+
+  @override
+  String get hijriMonthDhulQadah => 'জিলকদ';
+
+  @override
+  String get hijriMonthDhulHijjah => 'জিলহজ';
+
+  @override
   String get splashStatusPreparing =>
       'স্থানীয় কুরআন ডাটাবেস প্রস্তুত হচ্ছে...';
 
@@ -935,15 +1062,6 @@ class AppLocalizationsBn extends AppLocalizations {
       'ধীরে ধীরে পড়ুন, তারপর আল্লাহর ওপর ভরসা রেখে সঠিক পরের কাজটি বেছে নিন।';
 
   @override
-  String get dashboardGreetingMorning => 'সুপ্রভাত';
-
-  @override
-  String get dashboardGreetingAfternoon => 'শুভ অপরাহ্ন';
-
-  @override
-  String get dashboardGreetingEvening => 'শুভ সন্ধ্যা';
-
-  @override
   String get dashboardSectionPrayerTimes => 'নামাজের সময়সূচি';
 
   @override
@@ -954,6 +1072,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dashboardActionQiblaCompassSub => 'কিবলার দিক দেখুন';
+
+  @override
+  String get dashboardActionHijriCalendar => 'হিজরি ক্যালেন্ডার';
+
+  @override
+  String get dashboardActionHijriCalendarSub => 'ইসলামি তারিখ খুঁজুন';
 
   @override
   String get dashboardSectionDua => 'দু\'আ';

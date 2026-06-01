@@ -5,9 +5,11 @@ extension _DashboardViewStateSections on _DashboardViewState {
 
   Widget _buildGreetingHeader() {
     final text = AppTheme.text(context);
+    final settings = context.watch<SettingsViewModel>().settings;
     final headerInfo = _dashboardViewModel.headerInfo(
       context.l10n,
       DateTime.now(),
+      hijriDateAdjustment: settings.hijriDateAdjustment,
     );
 
     return Column(
@@ -81,38 +83,72 @@ extension _DashboardViewStateSections on _DashboardViewState {
         const SizedBox(height: 16),
         Row(
           children: [
-            Container(
-              width: 4,
-              height: 20,
-              decoration: BoxDecoration(
-                color: MyColors.secondary,
-                borderRadius: BorderRadius.circular(AppRadius.xxs),
+            Expanded(
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 4,
+                    height: 20,
+                    decoration: BoxDecoration(
+                      color: MyColors.secondary,
+                      borderRadius: BorderRadius.circular(AppRadius.xxs),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Icon(
+                    Icons.calendar_month_rounded,
+                    size: 12,
+                    color: MyColors.tertiary,
+                  ),
+                  const SizedBox(width: 5),
+                  Flexible(
+                    child: Text(
+                      headerInfo.hijriDateLabel,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: text.dashboardDate.copyWith(
+                        color: MyColors.tertiary,
+                        fontWeight: AppTheme.weightBold,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-            const SizedBox(width: 12),
-            Text(
-              headerInfo.greeting,
-              style: text.dashboardEyebrow.copyWith(color: _textHint),
-            ),
-            Spacer(),
-            Row(
-              children: [
-                Container(
-                  width: 4,
-                  height: 20,
-                  decoration: BoxDecoration(
-                    color: MyColors.secondary,
-                    borderRadius: BorderRadius.circular(AppRadius.xxs),
+            Expanded(
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    width: 4,
+                    height: 20,
+                    decoration: BoxDecoration(
+                      color: MyColors.secondary,
+                      borderRadius: BorderRadius.circular(AppRadius.xxs),
+                    ),
                   ),
-                ),
-                const SizedBox(width: 12),
-                Icon(Icons.calendar_today_rounded, size: 12, color: _textHint),
-                const SizedBox(width: 5),
-                Text(
-                  headerInfo.dateLabel,
-                  style: text.dashboardDate.copyWith(color: _textHint),
-                ),
-              ],
+                  const SizedBox(width: 12),
+                  Icon(
+                    Icons.calendar_today_rounded,
+                    size: 12,
+                    color: _textHint,
+                  ),
+                  const SizedBox(width: 5),
+                  Flexible(
+                    child: Text(
+                      headerInfo.dateLabel,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: text.dashboardDate.copyWith(
+                        color: _textHint,
+                        fontWeight: AppTheme.weightBold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
