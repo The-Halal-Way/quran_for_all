@@ -3,7 +3,7 @@ import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/sunnah_dua/sunnah_dua_models.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
-import 'package:quran_for_all/presentation/widgets/dashboard/duah/daily_duah/daily_duah_data.dart';
+import 'package:quran_for_all/presentation/widgets/sunnah_dua/duah/daily_duah/daily_duah_data.dart';
 
 class SunnahDuaViewModel extends ChangeNotifier {
   SunnahDuaFilter _selectedFilter = SunnahDuaFilter.all;

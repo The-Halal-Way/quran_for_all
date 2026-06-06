@@ -15,11 +15,11 @@ import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/common/section_header.dart';
-import '../../widgets/quran/quran_hadith_card.dart';
-import '../../widgets/quran/quran_hub_hero.dart';
-import '../../widgets/quran/quran_path_card.dart';
-import '../learn_quran/learn_quran_view.dart';
-import '../read_quran/read_quran_view.dart';
+import '../../widgets/quran/quran_widgets/quran_hadith_card.dart';
+import '../../widgets/quran/quran_widgets/quran_hub_hero.dart';
+import '../../widgets/quran/quran_widgets/quran_path_card.dart';
+import 'learn_quran/learn_quran_view.dart';
+import 'read_quran/read_quran_view.dart';
 
 class QuranView extends StatefulWidget {
   const QuranView({super.key});

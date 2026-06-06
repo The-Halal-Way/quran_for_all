@@ -3,7 +3,7 @@ import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/theme/my_images.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/prayer_view.dart';
+import 'package:quran_for_all/presentation/views/prayer/prayer_view.dart';
 import 'package:quran_for_all/presentation/views/quran/quran_view.dart';
 import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart';
 import 'package:lottie/lottie.dart';

@@ -8,9 +8,9 @@ import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/data/models/dashboard/dashboard_action_item.dart';
 import 'package:quran_for_all/data/models/sunnah_dua/sunnah_dua_models.dart';
 import 'package:quran_for_all/presentation/viewmodels/sunnah_dua_viewmodel.dart';
-import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/duah/duah_ninty_nine_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
+import 'package:quran_for_all/presentation/views/sunnah_dua/duah/daily_duah_view.dart';
+import 'package:quran_for_all/presentation/views/sunnah_dua/duah/duah_ninty_nine_view.dart';
+import 'package:quran_for_all/presentation/views/sunnah_dua/duah/powerful_duah_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_widgets.dart';
 

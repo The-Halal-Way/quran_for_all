@@ -19,16 +19,16 @@ import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_view
 import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 import 'package:quran_for_all/presentation/views/dashboard/compass/compass_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/duah/daily_duah_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/duah/duah_ninty_nine_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/duah/powerful_duah_view.dart';
+import 'package:quran_for_all/presentation/views/sunnah_dua/duah/daily_duah_view.dart';
+import 'package:quran_for_all/presentation/views/sunnah_dua/duah/duah_ninty_nine_view.dart';
+import 'package:quran_for_all/presentation/views/sunnah_dua/duah/powerful_duah_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hijri_calendar/hijri_calendar_view.dart';
-import 'package:quran_for_all/presentation/views/dashboard/tasbeeh_view.dart';
-import 'package:quran_for_all/presentation/views/learn_quran/learning_module_detail_view.dart';
-import 'package:quran_for_all/presentation/views/read_quran/read_quran_view.dart';
-import 'package:quran_for_all/presentation/views/read_quran/surah_details_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/tasbeeh/tasbeeh_view.dart';
+import 'package:quran_for_all/presentation/views/quran/learn_quran/learning_module_detail_view.dart';
+import 'package:quran_for_all/presentation/views/quran/read_quran/read_quran_view.dart';
+import 'package:quran_for_all/presentation/views/quran/read_quran/surah_details_view.dart';
 import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 
