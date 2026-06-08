@@ -9,15 +9,21 @@ import 'core/localization/l10n_extensions.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/app_responsive.dart';
 import 'data/datasources/local/app_database.dart';
+import 'data/datasources/local/prayer_times_local_data_source.dart';
+import 'data/datasources/local/prayer_times_preferences_store.dart';
 import 'data/datasources/remote/quran_api_service.dart';
+import 'data/datasources/remote/prayer_times_api_service.dart';
 import 'data/repositories/audio_repository_impl.dart';
 import 'data/repositories/learning_progress_repository_impl.dart';
+import 'data/repositories/prayer_times_repository_impl.dart';
 import 'data/repositories/quran_repository_impl.dart';
 import 'data/repositories/settings_repository_impl.dart';
 import 'domain/repositories/audio_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
+import 'domain/repositories/prayer_times_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
+import 'domain/usecases/prayer_times/load_prayer_times_usecase.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
@@ -46,8 +52,18 @@ class QuranForAllApp extends StatelessWidget {
           dispose: (_, client) => client.close(),
         ),
         Provider<AppDatabase>(create: (_) => AppDatabase()),
+        Provider<PrayerTimesLocalDataSource>(
+          create: (_) => PrayerTimesLocalDataSource(),
+        ),
+        Provider<PrayerTimesPreferencesStore>(
+          create: (_) => PrayerTimesPreferencesStore(),
+        ),
         Provider<QuranApiService>(
           create: (context) => QuranApiService(context.read<http.Client>()),
+        ),
+        Provider<PrayerTimesApiService>(
+          create: (context) =>
+              PrayerTimesApiService(context.read<http.Client>()),
         ),
         Provider<PermissionHelper>(create: (_) => const PermissionHelper()),
         Provider<PronunciationService>(
@@ -66,6 +82,17 @@ class QuranForAllApp extends StatelessWidget {
           ),
         ),
         Provider<SettingsRepository>(create: (_) => SettingsRepositoryImpl()),
+        Provider<PrayerTimesRepository>(
+          create: (context) => PrayerTimesRepositoryImpl(
+            localDataSource: context.read<PrayerTimesLocalDataSource>(),
+            preferencesStore: context.read<PrayerTimesPreferencesStore>(),
+            apiService: context.read<PrayerTimesApiService>(),
+          ),
+        ),
+        Provider<LoadPrayerTimesUseCase>(
+          create: (context) =>
+              LoadPrayerTimesUseCase(context.read<PrayerTimesRepository>()),
+        ),
         Provider<LearningProgressRepository>(
           create: (_) => LearningProgressRepositoryImpl(),
         ),
@@ -114,7 +141,9 @@ class QuranForAllApp extends StatelessWidget {
           ),
         ),
         ChangeNotifierProvider<DashboardPrayerTimesViewModel>(
-          create: (_) => DashboardPrayerTimesViewModel(),
+          create: (context) => DashboardPrayerTimesViewModel(
+            loadPrayerTimesUseCase: context.read<LoadPrayerTimesUseCase>(),
+          ),
         ),
       ],
       child: Consumer<SettingsViewModel>(

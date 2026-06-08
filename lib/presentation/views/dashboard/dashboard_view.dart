@@ -51,17 +51,6 @@ class _DashboardViewState extends State<DashboardView> {
   final DashboardViewModel _dashboardViewModel = DashboardViewModel();
   bool _isPrayerCardExpanded = false;
 
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      final prayerVm = context.read<DashboardPrayerTimesViewModel>();
-      if (!prayerVm.hasData && !prayerVm.isLoading) {
-        unawaited(prayerVm.loadPrayerTimes());
-      }
-    });
-  }
-
   Map<String, String>? get _prayerTimes =>
       context.watch<DashboardPrayerTimesViewModel>().prayerTimes;
   Map<String, String>? get _prayerTimeRanges =>

@@ -1,10 +1,12 @@
-import 'package:adhan/adhan.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter_timezone/flutter_timezone.dart';
-import 'package:geolocator/geolocator.dart';
+import 'dart:async';
+
+import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
-import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
+
+import '../../core/prayer_times/prayer_time_zone_helper.dart';
+import '../../domain/entities/prayer_times/prayer_times_models.dart';
+import '../../domain/usecases/prayer_times/load_prayer_times_usecase.dart';
 
 enum PrayerTimesErrorType {
   none,
@@ -14,14 +16,26 @@ enum PrayerTimesErrorType {
   unavailable,
 }
 
-class DashboardPrayerTimesViewModel extends ChangeNotifier {
+class DashboardPrayerTimesViewModel extends ChangeNotifier
+    with WidgetsBindingObserver {
+  DashboardPrayerTimesViewModel({
+    required LoadPrayerTimesUseCase loadPrayerTimesUseCase,
+  }) : _loadPrayerTimesUseCase = loadPrayerTimesUseCase {
+    WidgetsBinding.instance.addObserver(this);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      unawaited(loadPrayerTimes());
+    });
+  }
+
+  final LoadPrayerTimesUseCase _loadPrayerTimesUseCase;
+
   Map<String, String>? _prayerTimes;
   Map<String, String>? _prayerTimeRanges;
   String _error = '';
   PrayerTimesErrorType _errorType = PrayerTimesErrorType.none;
   bool _loading = false;
   String? _nextPrayer;
-  static bool _timeZonesInitialized = false;
+  bool _warmingUpcomingDays = false;
 
   Map<String, String>? get prayerTimes => _prayerTimes;
   Map<String, String>? get prayerTimeRanges => _prayerTimeRanges;
@@ -32,141 +46,183 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier {
   bool get hasData => _prayerTimes != null && _prayerTimes!.isNotEmpty;
 
   Future<void> loadPrayerTimes({bool forceRefresh = false}) async {
-    if (_loading) return;
-    if (!forceRefresh && hasData) return;
+    if (_loading) {
+      return;
+    }
 
-    _loading = true;
-    _error = '';
-    _errorType = PrayerTimesErrorType.none;
-    notifyListeners();
+    if (!forceRefresh) {
+      final cached = await _loadPrayerTimesUseCase.loadCached();
+      if (cached != null) {
+        _applyDashboardData(cached);
+        _error = '';
+        _errorType = PrayerTimesErrorType.none;
+        notifyListeners();
+      }
+    }
+
+    _loading = !hasData;
+    if (_loading) {
+      _error = '';
+      _errorType = PrayerTimesErrorType.none;
+      notifyListeners();
+    }
 
     try {
-      final serviceEnabled = await Geolocator.isLocationServiceEnabled();
-      if (!serviceEnabled) {
-        _setError(
-          'Location services are disabled',
-          PrayerTimesErrorType.locationDisabled,
-        );
-        return;
-      }
-
-      LocationPermission permission = await Geolocator.checkPermission();
-      if (permission == LocationPermission.denied) {
-        permission = await Geolocator.requestPermission();
-        if (permission == LocationPermission.denied) {
-          _setError(
-            'Location permission denied',
-            PrayerTimesErrorType.permissionDenied,
-          );
-          return;
-        }
-      }
-
-      if (permission == LocationPermission.deniedForever) {
-        _setError(
-          'Location permission permanently denied',
-          PrayerTimesErrorType.permissionDeniedForever,
-        );
-        return;
-      }
-
-      final position = await Geolocator.getCurrentPosition(
-        locationSettings: const LocationSettings(
-          accuracy: LocationAccuracy.high,
-        ),
+      final dashboardData = await _loadPrayerTimesUseCase.syncToday(
+        forceRefresh: forceRefresh,
       );
-      final coordinates = Coordinates(position.latitude, position.longitude);
-
-      if (!_timeZonesInitialized) {
-        tz_data.initializeTimeZones();
-        _timeZonesInitialized = true;
-      }
-
-      final timeZoneName = await FlutterTimezone.getLocalTimezone();
-      final locationTimeZone = tz.getLocation(timeZoneName);
-      final nowInLocation = tz.TZDateTime.now(locationTimeZone);
-      final dateComponents = DateComponents(
-        nowInLocation.year,
-        nowInLocation.month,
-        nowInLocation.day,
-      );
-
-      final params = CalculationMethod.muslim_world_league.getParameters();
-      params.madhab = Madhab.shafi;
-      final prayerTimes = PrayerTimes(coordinates, dateComponents, params);
-      final tomorrowInLocation = nowInLocation.add(const Duration(days: 1));
-      final nextDateComponents = DateComponents(
-        tomorrowInLocation.year,
-        tomorrowInLocation.month,
-        tomorrowInLocation.day,
-      );
-      final tomorrowPrayerTimes = PrayerTimes(
-        coordinates,
-        nextDateComponents,
-        params,
-      );
-      final format = DateFormat('hh:mm a');
-
-      String? next;
-      final schedule = {
-        'Fajr': tz.TZDateTime.from(prayerTimes.fajr, locationTimeZone),
-        'Sunrise': tz.TZDateTime.from(prayerTimes.sunrise, locationTimeZone),
-        'Dhuhr': tz.TZDateTime.from(prayerTimes.dhuhr, locationTimeZone),
-        'Asr': tz.TZDateTime.from(prayerTimes.asr, locationTimeZone),
-        'Maghrib': tz.TZDateTime.from(prayerTimes.maghrib, locationTimeZone),
-        'Isha': tz.TZDateTime.from(prayerTimes.isha, locationTimeZone),
-      };
-      final imsakTime = schedule['Fajr']!.subtract(const Duration(minutes: 10));
-      final sehriStart = tz.TZDateTime(
-        locationTimeZone,
-        nowInLocation.year,
-        nowInLocation.month,
-        nowInLocation.day,
-      );
-      final tomorrowFajr = tz.TZDateTime.from(
-        tomorrowPrayerTimes.fajr,
-        locationTimeZone,
-      );
-
-      for (final entry in schedule.entries) {
-        if (entry.value.isAfter(nowInLocation)) {
-          next = entry.key;
-          break;
-        }
-      }
-
-      _prayerTimes = {
-        'Sehri': format.format(imsakTime),
-        'Fajr': format.format(schedule['Fajr']!),
-        'Sunrise': format.format(schedule['Sunrise']!),
-        'Dhuhr': format.format(schedule['Dhuhr']!),
-        'Asr': format.format(schedule['Asr']!),
-        'Maghrib': format.format(schedule['Maghrib']!),
-        'Isha': format.format(schedule['Isha']!),
-      };
-      _prayerTimeRanges = {
-        'Sehri': '${format.format(sehriStart)} - ${format.format(imsakTime)}',
-        'Fajr':
-            '${format.format(schedule['Fajr']!)} - ${format.format(schedule['Sunrise']!)}',
-        'Dhuhr':
-            '${format.format(schedule['Dhuhr']!)} - ${format.format(schedule['Asr']!)}',
-        'Asr':
-            '${format.format(schedule['Asr']!)} - ${format.format(schedule['Maghrib']!)}',
-        'Maghrib':
-            '${format.format(schedule['Maghrib']!)} - ${format.format(schedule['Isha']!)}',
-        'Isha':
-            '${format.format(schedule['Isha']!)} - ${format.format(tomorrowFajr)}',
-      };
-      _nextPrayer = next;
+      _applyDashboardData(dashboardData);
+      _scheduleWarmUpcoming(forceRefresh: forceRefresh);
+      _error = '';
       _errorType = PrayerTimesErrorType.none;
       _loading = false;
       notifyListeners();
-    } catch (e) {
+    } on PrayerTimesException catch (error) {
+      if (hasData) {
+        _loading = false;
+        notifyListeners();
+        return;
+      }
+
+      _setError(error.message, _mapErrorType(error.type));
+    } catch (error) {
       _setError(
-        'Failed to load prayer times: $e',
+        'Failed to load prayer times: $error',
         PrayerTimesErrorType.unavailable,
       );
     }
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      unawaited(_refreshOnResume());
+    }
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  Future<void> _refreshOnResume() async {
+    try {
+      final refreshed = await _loadPrayerTimesUseCase.refreshAfterResume();
+      if (refreshed == null) {
+        return;
+      }
+
+      _applyDashboardData(refreshed);
+      _error = '';
+      _errorType = PrayerTimesErrorType.none;
+      notifyListeners();
+    } catch (_) {
+      // Keep the current local state if the resume sync cannot improve it.
+    }
+  }
+
+  void _scheduleWarmUpcoming({required bool forceRefresh}) {
+    if (_warmingUpcomingDays) {
+      return;
+    }
+
+    _warmingUpcomingDays = true;
+    unawaited(
+      _loadPrayerTimesUseCase
+          .warmUpcoming(forceRefresh: forceRefresh)
+          .then((dashboardData) {
+            if (dashboardData == null) {
+              return;
+            }
+
+            _applyDashboardData(dashboardData);
+            notifyListeners();
+          })
+          .catchError((_) {
+            // Background completion failure should not displace current data.
+          })
+          .whenComplete(() {
+            _warmingUpcomingDays = false;
+          }),
+    );
+  }
+
+  void _applyDashboardData(PrayerDashboardData dashboardData) {
+    PrayerTimeZoneHelper.ensureInitialized();
+    final location = PrayerTimeZoneHelper.locationFor(
+      dashboardData.profile.timeZoneId,
+    );
+    final format = DateFormat('hh:mm a');
+    final fajr = tz.TZDateTime.from(dashboardData.today.fajrUtc, location);
+    final sunrise = tz.TZDateTime.from(
+      dashboardData.today.sunriseUtc,
+      location,
+    );
+    final dhuhr = tz.TZDateTime.from(dashboardData.today.dhuhrUtc, location);
+    final asr = tz.TZDateTime.from(dashboardData.today.asrUtc, location);
+    final maghrib = tz.TZDateTime.from(
+      dashboardData.today.maghribUtc,
+      location,
+    );
+    final isha = tz.TZDateTime.from(dashboardData.today.ishaUtc, location);
+    final imsak = fajr.subtract(
+      Duration(minutes: dashboardData.profile.calculation.sehriOffsetMinutes),
+    );
+    final sehriStart = tz.TZDateTime(location, fajr.year, fajr.month, fajr.day);
+    final tomorrowFajr = dashboardData.tomorrow == null
+        ? null
+        : tz.TZDateTime.from(dashboardData.tomorrow!.fajrUtc, location);
+    final nowInLocation = tz.TZDateTime.now(location);
+    final todaySchedule = <String, tz.TZDateTime>{
+      'Fajr': fajr,
+      'Sunrise': sunrise,
+      'Dhuhr': dhuhr,
+      'Asr': asr,
+      'Maghrib': maghrib,
+      'Isha': isha,
+    };
+
+    String? nextPrayerKey;
+    for (final entry in todaySchedule.entries) {
+      if (entry.value.isAfter(nowInLocation)) {
+        nextPrayerKey = entry.key;
+        break;
+      }
+    }
+
+    _prayerTimes = {
+      'Sehri': format.format(imsak),
+      'Fajr': format.format(fajr),
+      'Sunrise': format.format(sunrise),
+      'Dhuhr': format.format(dhuhr),
+      'Asr': format.format(asr),
+      'Maghrib': format.format(maghrib),
+      'Isha': format.format(isha),
+    };
+    _prayerTimeRanges = {
+      'Sehri': '${format.format(sehriStart)} - ${format.format(imsak)}',
+      'Fajr': '${format.format(fajr)} - ${format.format(sunrise)}',
+      'Dhuhr': '${format.format(dhuhr)} - ${format.format(asr)}',
+      'Asr': '${format.format(asr)} - ${format.format(maghrib)}',
+      'Maghrib': '${format.format(maghrib)} - ${format.format(isha)}',
+      if (tomorrowFajr != null)
+        'Isha': '${format.format(isha)} - ${format.format(tomorrowFajr)}',
+    };
+    _nextPrayer = nextPrayerKey;
+  }
+
+  PrayerTimesErrorType _mapErrorType(PrayerRepositoryErrorType type) {
+    return switch (type) {
+      PrayerRepositoryErrorType.permissionDenied =>
+        PrayerTimesErrorType.permissionDenied,
+      PrayerRepositoryErrorType.permissionDeniedForever =>
+        PrayerTimesErrorType.permissionDeniedForever,
+      PrayerRepositoryErrorType.locationDisabled =>
+        PrayerTimesErrorType.locationDisabled,
+      PrayerRepositoryErrorType.network => PrayerTimesErrorType.unavailable,
+      PrayerRepositoryErrorType.unavailable => PrayerTimesErrorType.unavailable,
+    };
   }
 
   void _setError(String message, PrayerTimesErrorType type) {

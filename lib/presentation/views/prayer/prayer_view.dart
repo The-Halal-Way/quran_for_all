@@ -33,17 +33,6 @@ class PrayerView extends StatefulWidget {
 // MARK: Prayer - Initial Prayer Times Load
 class _PrayerViewState extends State<PrayerView> {
   @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      final vm = context.read<DashboardPrayerTimesViewModel>();
-      if (!vm.hasData && !vm.isLoading) {
-        unawaited(vm.loadPrayerTimes());
-      }
-    });
-  }
-
-  @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => PrayerViewModel(),
