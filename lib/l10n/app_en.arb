@@ -786,5 +786,32 @@
   "prayerBestPracticesAsrRaw": "Guard Asr from being pushed to the edge of the time.||Lower the pace before takbir so the prayer does not feel like a race.||Use Asr as an accountability checkpoint for the rest of the day.",
   "prayerBestPracticesMaghribRaw": "Respond quickly when Maghrib enters.||Keep sunset meals and gatherings from delaying the prayer.||Let Maghrib open your evening adhkar and family calm.",
   "prayerBestPracticesIshaRaw": "Pray before exhaustion dulls attention.||Keep Witr visible in the night routine according to your practice.||Prepare the body and room for Fajr before sleeping.",
-  "learnQuranTextMapRaw": ""
+  "learnQuranTextMapRaw": "",
+  "dailyTrackerSectionTitle": "Daily Tracker",
+  "dailyTrackerSectionSubtitle": "Tap to view your full checklist",
+  "dailyTrackerProgressLabel": "{completed}/{total} completed",
+  "@dailyTrackerProgressLabel": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "dailyTrackerFullViewTitle": "Daily Tracker",
+  "dailyTrackerOptionalBadge": "Optional",
+  "dailyTrackerFridayBadge": "Friday",
+  "dailyTrackerFridayBannerTitle": "Jumu'ah Mubarak!",
+  "dailyTrackerFridayBannerSubtitle": "Special Friday tasks have been added to today's routine",
+  "dailyTrackerCategoryPrayer": "Prayers",
+  "dailyTrackerCategoryNafl": "Nafl Prayers",
+  "dailyTrackerCategoryDua": "Daily Duas",
+  "dailyTrackerCategorySunnah": "Sunnahs",
+  "dailyTrackerCategoryQuran": "Quran",
+  "dailyTrackerCategoryTasbeeh": "Tasbeeh",
+  "dailyTrackerCategoryHadith": "Hadith",
+  "dailyTrackerCelebrationTitle": "MashaAllah! You completed today's routine!",
+  "dailyTrackerCelebrationButton": "Alhamdulillah"
 }

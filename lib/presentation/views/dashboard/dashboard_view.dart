@@ -31,6 +31,7 @@ import 'package:quran_for_all/presentation/views/quran/read_quran/read_quran_vie
 import 'package:quran_for_all/presentation/views/quran/read_quran/surah_details_view.dart';
 import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/daily_tracker/daily_tracker_section.dart';
 
 part '../../widgets/dashboard/dashboard/dashboard_view_sections.dart';
 part '../../widgets/dashboard/dashboard/action_tile.dart';
@@ -206,6 +207,9 @@ class _DashboardViewState extends State<DashboardView> {
                           const SizedBox(height: 20),
                           // quran reading & learning continue cards
                           _buildContinueCards(),
+                          const SizedBox(height: 24),
+                          // daily tracker checklist card
+                          const DailyTrackerSection(),
                           const SizedBox(height: 24),
                           // title for prayer times section
                           _buildSectionLabel(

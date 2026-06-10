@@ -62,8 +62,7 @@ import 'app_localizations_en.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -71,8 +70,7 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
-      _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -84,18 +82,17 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('bn'),
-    Locale('en'),
+    Locale('en')
   ];
 
   /// No description provided for @appName.
@@ -2310,10 +2307,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'{moduleTitle} · {lessonCount} lessons'**
-  String dashboardContinueLearningModuleDetail(
-    String moduleTitle,
-    int lessonCount,
-  );
+  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount);
 
   /// No description provided for @dashboardRetry.
   ///
@@ -3718,10 +3712,111 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **''**
   String get learnQuranTextMapRaw;
+
+  /// No description provided for @dailyTrackerSectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Tracker'**
+  String get dailyTrackerSectionTitle;
+
+  /// No description provided for @dailyTrackerSectionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to view your full checklist'**
+  String get dailyTrackerSectionSubtitle;
+
+  /// No description provided for @dailyTrackerProgressLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{completed}/{total} completed'**
+  String dailyTrackerProgressLabel(int completed, int total);
+
+  /// No description provided for @dailyTrackerFullViewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Tracker'**
+  String get dailyTrackerFullViewTitle;
+
+  /// No description provided for @dailyTrackerOptionalBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional'**
+  String get dailyTrackerOptionalBadge;
+
+  /// No description provided for @dailyTrackerFridayBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'Friday'**
+  String get dailyTrackerFridayBadge;
+
+  /// No description provided for @dailyTrackerFridayBannerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Jumu\'ah Mubarak!'**
+  String get dailyTrackerFridayBannerTitle;
+
+  /// No description provided for @dailyTrackerFridayBannerSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Special Friday tasks have been added to today\'s routine'**
+  String get dailyTrackerFridayBannerSubtitle;
+
+  /// No description provided for @dailyTrackerCategoryPrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayers'**
+  String get dailyTrackerCategoryPrayer;
+
+  /// No description provided for @dailyTrackerCategoryNafl.
+  ///
+  /// In en, this message translates to:
+  /// **'Nafl Prayers'**
+  String get dailyTrackerCategoryNafl;
+
+  /// No description provided for @dailyTrackerCategoryDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Duas'**
+  String get dailyTrackerCategoryDua;
+
+  /// No description provided for @dailyTrackerCategorySunnah.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnahs'**
+  String get dailyTrackerCategorySunnah;
+
+  /// No description provided for @dailyTrackerCategoryQuran.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran'**
+  String get dailyTrackerCategoryQuran;
+
+  /// No description provided for @dailyTrackerCategoryTasbeeh.
+  ///
+  /// In en, this message translates to:
+  /// **'Tasbeeh'**
+  String get dailyTrackerCategoryTasbeeh;
+
+  /// No description provided for @dailyTrackerCategoryHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith'**
+  String get dailyTrackerCategoryHadith;
+
+  /// No description provided for @dailyTrackerCelebrationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'MashaAllah! You completed today\'s routine!'**
+  String get dailyTrackerCelebrationTitle;
+
+  /// No description provided for @dailyTrackerCelebrationButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Alhamdulillah'**
+  String get dailyTrackerCelebrationButton;
 }
 
-class _AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -3730,26 +3825,25 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['bn', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['bn', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'bn':
-      return AppLocalizationsBn();
-    case 'en':
-      return AppLocalizationsEn();
+    case 'bn': return AppLocalizationsBn();
+    case 'en': return AppLocalizationsEn();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
+    'that was used.'
   );
 }

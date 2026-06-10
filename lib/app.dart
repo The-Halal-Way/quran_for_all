@@ -14,17 +14,22 @@ import 'data/datasources/local/prayer_times_preferences_store.dart';
 import 'data/datasources/remote/quran_api_service.dart';
 import 'data/datasources/remote/prayer_times_api_service.dart';
 import 'data/repositories/audio_repository_impl.dart';
+import 'data/repositories/daily_tracker_repository_impl.dart';
 import 'data/repositories/learning_progress_repository_impl.dart';
 import 'data/repositories/prayer_times_repository_impl.dart';
 import 'data/repositories/quran_repository_impl.dart';
 import 'data/repositories/settings_repository_impl.dart';
 import 'domain/repositories/audio_repository.dart';
+import 'domain/repositories/daily_tracker_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/prayer_times_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
+import 'domain/usecases/get_daily_tasks_usecase.dart';
 import 'domain/usecases/prayer_times/load_prayer_times_usecase.dart';
+import 'domain/usecases/toggle_task_usecase.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
+import 'presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import 'presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'presentation/viewmodels/quran/quran_viewmodel.dart';
@@ -100,6 +105,17 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               AudioRepositoryImpl(context.read<AudioService>()),
         ),
+        Provider<DailyTrackerRepository>(
+          create: (_) => DailyTrackerRepositoryImpl(),
+        ),
+        Provider<GetDailyTasksUseCase>(
+          create: (context) =>
+              GetDailyTasksUseCase(context.read<DailyTrackerRepository>()),
+        ),
+        Provider<ToggleTaskUseCase>(
+          create: (context) =>
+              ToggleTaskUseCase(context.read<DailyTrackerRepository>()),
+        ),
         ChangeNotifierProvider<AudioControlViewModel>(
           create: (context) => AudioControlViewModel(
             audioRepository: context.read<AudioRepository>(),
@@ -143,6 +159,12 @@ class QuranForAllApp extends StatelessWidget {
         ChangeNotifierProvider<DashboardPrayerTimesViewModel>(
           create: (context) => DashboardPrayerTimesViewModel(
             loadPrayerTimesUseCase: context.read<LoadPrayerTimesUseCase>(),
+          ),
+        ),
+        ChangeNotifierProvider<DailyTrackerViewModel>(
+          create: (context) => DailyTrackerViewModel(
+            getDailyTasksUseCase: context.read<GetDailyTasksUseCase>(),
+            toggleTaskUseCase: context.read<ToggleTaskUseCase>(),
           ),
         ),
       ],

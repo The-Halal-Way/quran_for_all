@@ -39,8 +39,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsTitle => 'Settings';
 
   @override
-  String get settingsIntro =>
-      'Personalize your recitation and reading experience.';
+  String get settingsIntro => 'Personalize your recitation and reading experience.';
 
   @override
   String get settingsReadingPreferencesTitle => 'Reading Preferences';
@@ -49,15 +48,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsShowPronunciationTitle => 'Show pronunciation';
 
   @override
-  String get settingsShowPronunciationSubtitle =>
-      'Display transliteration under Arabic ayah.';
+  String get settingsShowPronunciationSubtitle => 'Display transliteration under Arabic ayah.';
 
   @override
   String get settingsShowTranslationsTitle => 'Show translations';
 
   @override
-  String get settingsShowTranslationsSubtitle =>
-      'Display meaning in your selected language.';
+  String get settingsShowTranslationsSubtitle => 'Display meaning in your selected language.';
 
   @override
   String get settingsLanguagePreferenceLabel => 'Language preference';
@@ -81,8 +78,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsOfflineTitle => 'Offline mode is enabled';
 
   @override
-  String get settingsOfflineBody =>
-      'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.';
+  String get settingsOfflineBody => 'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.';
 
   @override
   String get settingsHijriCalendarTitle => 'Hijri Calendar';
@@ -91,8 +87,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsHijriAdjustmentTitle => 'Local date adjustment';
 
   @override
-  String get settingsHijriAdjustmentSubtitle =>
-      'Use this if your local moon-sighting date is one day different from the calculated date.';
+  String get settingsHijriAdjustmentSubtitle => 'Use this if your local moon-sighting date is one day different from the calculated date.';
 
   @override
   String get hijriAdjustmentTitle => 'Moon-sighting adjustment';
@@ -119,8 +114,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hijriFinderTitle => 'Find a date';
 
   @override
-  String get hijriFinderSubtitle =>
-      'Jump by Gregorian date or enter a Hijri date directly.';
+  String get hijriFinderSubtitle => 'Jump by Gregorian date or enter a Hijri date directly.';
 
   @override
   String get hijriFindGregorianAction => 'Pick Gregorian';
@@ -218,8 +212,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get splashStatusReady => 'Ready';
 
   @override
-  String get splashStatusOfflineFallback =>
-      'Ready with saved Quran data. Some newer content may sync later.';
+  String get splashStatusOfflineFallback => 'Ready with saved Quran data. Some newer content may sync later.';
 
   @override
   String get splashRetrySetup => 'Retry setup';
@@ -228,12 +221,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get splashSetupFailedTitle => 'Setup needs internet';
 
   @override
-  String get splashSetupFailedBody =>
-      'Quran For All needs a network connection the first time it prepares the local Quran database. Check your internet connection and try again.';
+  String get splashSetupFailedBody => 'Quran For All needs a network connection the first time it prepares the local Quran database. Check your internet connection and try again.';
 
   @override
-  String get splashSetupFailedTip =>
-      'After setup, Quran text, translations, tafsir, bookmarks, and reading progress work from local storage.';
+  String get splashSetupFailedTip => 'After setup, Quran text, translations, tafsir, bookmarks, and reading progress work from local storage.';
 
   @override
   String get readQuranTitle => 'Read Quran';
@@ -275,8 +266,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranBannerTitle => 'Read. Reflect. Remember.';
 
   @override
-  String get readQuranBannerSubtitle =>
-      'Offline Quran with Bangla and English support.';
+  String get readQuranBannerSubtitle => 'Offline Quran with Bangla and English support.';
 
   @override
   String get readQuranOfflineReadyLabel => 'Offline Ready';
@@ -327,16 +317,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranCouldNotLoadSurahTitle => 'Could not load surah';
 
   @override
-  String get readQuranUnablePlayAyahAudio =>
-      'Unable to play this ayah audio right now.';
+  String get readQuranUnablePlayAyahAudio => 'Unable to play this ayah audio right now.';
 
   @override
-  String get readQuranUnablePlayFullSurahAudio =>
-      'Unable to play full surah audio right now.';
+  String get readQuranUnablePlayFullSurahAudio => 'Unable to play full surah audio right now.';
 
   @override
-  String get readQuranAudioPermissionRequired =>
-      'Notification permission is required for audio controls.';
+  String get readQuranAudioPermissionRequired => 'Notification permission is required for audio controls.';
 
   @override
   String get readQuranGoToSettings => 'Go to settings';
@@ -351,8 +338,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranReadingOptionsTitle => 'Reading options';
 
   @override
-  String get readQuranReadingOptionsSubtitle =>
-      'Pronunciation and translation visibility';
+  String get readQuranReadingOptionsSubtitle => 'Pronunciation and translation visibility';
 
   @override
   String get readQuranReadingModeLabel => 'Reading mode';
@@ -379,26 +365,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranSearchInsideSurahTitle => 'Search inside this surah';
 
   @override
-  String get readQuranSearchInsideSurahHint =>
-      'Try ayah number, Arabic text, or translation keyword';
+  String get readQuranSearchInsideSurahHint => 'Try ayah number, Arabic text, or translation keyword';
 
   @override
-  String get readQuranStartTypingSurahSearch =>
-      'Start typing to search in this surah.';
+  String get readQuranStartTypingSurahSearch => 'Start typing to search in this surah.';
 
   @override
   String get readQuranSearchAyahsTitle => 'Search Ayahs';
 
   @override
-  String get readQuranSearchAyahsBody =>
-      'Type text or ayah number to jump quickly.';
+  String get readQuranSearchAyahsBody => 'Type text or ayah number to jump quickly.';
 
   @override
   String get readQuranNoResultsTitle => 'No results';
 
   @override
-  String get readQuranNoResultsBody =>
-      'Try a different keyword or ayah number.';
+  String get readQuranNoResultsBody => 'Try a different keyword or ayah number.';
 
   @override
   String readQuranResultsCount(int count) {
@@ -412,15 +394,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranSearchEmptyTitle => 'Search Surah, Ayah, or Juz';
 
   @override
-  String get readQuranSearchEmptyBody =>
-      'Use query formats like 1:1, para 2, or any Bangla/English keyword.';
+  String get readQuranSearchEmptyBody => 'Use query formats like 1:1, para 2, or any Bangla/English keyword.';
 
   @override
   String get readQuranSearchFailedTitle => 'Search failed';
 
   @override
-  String get readQuranSearchNoResultsBody =>
-      'Try a shorter keyword or a direct ayah reference.';
+  String get readQuranSearchNoResultsBody => 'Try a shorter keyword or a direct ayah reference.';
 
   @override
   String get readQuranSearchHint => 'Try: Al-Baqarah, 2:255, para 1, mercy';
@@ -446,8 +426,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranNoBookmarksTitle => 'No bookmarks yet';
 
   @override
-  String get readQuranNoBookmarksBody =>
-      'Save ayah or surah bookmarks to find them quickly later.';
+  String get readQuranNoBookmarksBody => 'Save ayah or surah bookmarks to find them quickly later.';
 
   @override
   String get readQuranCouldNotOpenBookmark => 'Could not open this bookmark.';
@@ -462,15 +441,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranAyahBookmarkRemoved => 'Ayah bookmark removed.';
 
   @override
-  String get readQuranCouldNotUpdateAyahBookmark =>
-      'Could not update ayah bookmark right now.';
+  String get readQuranCouldNotUpdateAyahBookmark => 'Could not update ayah bookmark right now.';
 
   @override
   String get readQuranMarkedLastRead => 'Marked as last read.';
 
   @override
-  String get readQuranCouldNotMarkLastRead =>
-      'Could not mark this ayah as last read.';
+  String get readQuranCouldNotMarkLastRead => 'Could not mark this ayah as last read.';
 
   @override
   String get readQuranVmSearchFailed => 'Search failed. Please try again.';
@@ -479,12 +456,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranVmNoSurahSelected => 'No surah selected.';
 
   @override
-  String get readQuranVmUnableLoadAyahs =>
-      'Unable to load ayahs for this surah.';
+  String get readQuranVmUnableLoadAyahs => 'Unable to load ayahs for this surah.';
 
   @override
-  String get readQuranVmUnableLoadBookmarks =>
-      'Unable to load bookmarks right now.';
+  String get readQuranVmUnableLoadBookmarks => 'Unable to load bookmarks right now.';
 
   @override
   String get quranHubTitle => 'Quran';
@@ -496,8 +471,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubHeroArabic => 'الْقُرْآن';
 
   @override
-  String get quranHubHeroBody =>
-      'A single home for reading, learning, reflecting, and returning to Allah\'s words with a calmer heart.';
+  String get quranHubHeroBody => 'A single home for reading, learning, reflecting, and returning to Allah\'s words with a calmer heart.';
 
   @override
   String get quranHubStatOfflineValue => 'Offline';
@@ -515,15 +489,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubSectionChooseTitle => 'Choose your Quran path';
 
   @override
-  String get quranHubSectionChooseSubtitle =>
-      'Move straight into recitation, or slow down and build stronger Quran skills.';
+  String get quranHubSectionChooseSubtitle => 'Move straight into recitation, or slow down and build stronger Quran skills.';
 
   @override
   String get quranHubReadTitle => 'Read Quran';
 
   @override
-  String get quranHubReadSubtitle =>
-      'Open the mushaf, search ayahs, save bookmarks, and continue from your last read.';
+  String get quranHubReadSubtitle => 'Open the mushaf, search ayahs, save bookmarks, and continue from your last read.';
 
   @override
   String get quranHubReadAction => 'Start reading';
@@ -540,8 +512,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubLearnTitle => 'Learn Quran';
 
   @override
-  String get quranHubLearnSubtitle =>
-      'Build pronunciation, tajweed, word meaning, and salah-ready recitation step by step.';
+  String get quranHubLearnSubtitle => 'Build pronunciation, tajweed, word meaning, and salah-ready recitation step by step.';
 
   @override
   String get quranHubLearnAction => 'Start learning';
@@ -553,15 +524,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubHadithTitle => 'Hadith about the Quran';
 
   @override
-  String get quranHubHadithSubtitle =>
-      'Short reminders that keep reading and learning connected to reward, mercy, and practice.';
+  String get quranHubHadithSubtitle => 'Short reminders that keep reading and learning connected to reward, mercy, and practice.';
 
   @override
   String get quranHubHadithBestTitle => 'Learn and teach';
 
   @override
-  String get quranHubHadithBestBody =>
-      'The Prophet ﷺ taught that the best people are those who learn the Quran and teach it.';
+  String get quranHubHadithBestBody => 'The Prophet ﷺ taught that the best people are those who learn the Quran and teach it.';
 
   @override
   String get quranHubHadithBestSource => 'Sahih al-Bukhari 5027';
@@ -570,8 +539,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubHadithIntercessorTitle => 'A companion on that Day';
 
   @override
-  String get quranHubHadithIntercessorBody =>
-      'The Quran will come on the Day of Resurrection as an intercessor for its companions.';
+  String get quranHubHadithIntercessorBody => 'The Quran will come on the Day of Resurrection as an intercessor for its companions.';
 
   @override
   String get quranHubHadithIntercessorSource => 'Sahih Muslim 804';
@@ -580,12 +548,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubHadithEffortTitle => 'Effort is honored';
 
   @override
-  String get quranHubHadithEffortBody =>
-      'The skilled reciter is with noble angels, and the one who recites with difficulty receives two rewards.';
+  String get quranHubHadithEffortBody => 'The skilled reciter is with noble angels, and the one who recites with difficulty receives two rewards.';
 
   @override
-  String get quranHubHadithEffortSource =>
-      'Sahih al-Bukhari 4937; Sahih Muslim 798';
+  String get quranHubHadithEffortSource => 'Sahih al-Bukhari 4937; Sahih Muslim 798';
 
   @override
   String get learnQuranPageTitle => 'Learn Quran';
@@ -594,15 +560,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learnQuranTracksTitle => 'Learning Tracks';
 
   @override
-  String get learnQuranTracksSubtitle =>
-      'Follow these sections in order or focus on the area you want to improve today.';
+  String get learnQuranTracksSubtitle => 'Follow these sections in order or focus on the area you want to improve today.';
 
   @override
   String get learnHeaderTitle => 'Learn Quran';
 
   @override
-  String get learnHeaderSubtitle =>
-      'Structured lessons for letters, tajweed, and recitation confidence.';
+  String get learnHeaderSubtitle => 'Structured lessons for letters, tajweed, and recitation confidence.';
 
   @override
   String learnHeaderLessonProgress(int completed, int total) {
@@ -646,8 +610,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learnNextAllLessonsCompletedTitle => 'All lessons completed';
 
   @override
-  String get learnNextAllLessonsCompletedBody =>
-      'Excellent work. Revisit any module to reinforce your learning.';
+  String get learnNextAllLessonsCompletedBody => 'Excellent work. Revisit any module to reinforce your learning.';
 
   @override
   String get learnNextStartLessonButton => 'Start Next Lesson';
@@ -678,20 +641,16 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get learnVmErrorLoadProgress =>
-      'Unable to load learning progress right now.';
+  String get learnVmErrorLoadProgress => 'Unable to load learning progress right now.';
 
   @override
-  String get learnVmErrorSaveProgress =>
-      'Unable to save progress. Please try again.';
+  String get learnVmErrorSaveProgress => 'Unable to save progress. Please try again.';
 
   @override
-  String get learnVmAudioMissingSample =>
-      'No audio sample is attached to this lesson yet.';
+  String get learnVmAudioMissingSample => 'No audio sample is attached to this lesson yet.';
 
   @override
-  String get learnVmAudioSampleNotFound =>
-      'Could not find the sample ayah audio for this lesson.';
+  String get learnVmAudioSampleNotFound => 'Could not find the sample ayah audio for this lesson.';
 
   @override
   String get learnVmAudioPlayFailed => 'Unable to play lesson audio right now.';
@@ -718,16 +677,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duahLevelAdvanced => 'Advanced';
 
   @override
-  String get duahLevelBeginnerDesc =>
-      'Short, easy-to-memorize du\'as for everyday moments. Perfect to start your journey.';
+  String get duahLevelBeginnerDesc => 'Short, easy-to-memorize du\'as for everyday moments. Perfect to start your journey.';
 
   @override
-  String get duahLevelIntermediateDesc =>
-      'Fuller wordings with richer meaning. Ideal once the basics feel natural.';
+  String get duahLevelIntermediateDesc => 'Fuller wordings with richer meaning. Ideal once the basics feel natural.';
 
   @override
-  String get duahLevelAdvancedDesc =>
-      'Complete authentic du\'as including optional additions and all daily situations.';
+  String get duahLevelAdvancedDesc => 'Complete authentic du\'as including optional additions and all daily situations.';
 
   @override
   String get duahCategoryEatingDrinking => 'Eating & Drinking';
@@ -777,8 +733,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duahPowerfulImportantNoteTitle => 'Important note';
 
   @override
-  String get duahPowerfulImportantNoteBody =>
-      'Du\'a is answered in the way Allah wills, at the time He wills, and in the form He wills. These are authentic and deeply beloved supplications from Qur\'anic and Prophetic sources.';
+  String get duahPowerfulImportantNoteBody => 'Du\'a is answered in the way Allah wills, at the time He wills, and in the form He wills. These are authentic and deeply beloved supplications from Qur\'anic and Prophetic sources.';
 
   @override
   String get duahPowerfulBestFive => 'Best 5 to memorize first';
@@ -862,8 +817,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaHeroEyebrow => 'Daily practice';
 
   @override
-  String get sunnahDuaHeroBody =>
-      'Whole Sunnah practices with related du\'as placed inside them, plus standalone du\'as and dhikr.';
+  String get sunnahDuaHeroBody => 'Whole Sunnah practices with related du\'as placed inside them, plus standalone du\'as and dhikr.';
 
   @override
   String get sunnahDuaHeroArabic => 'سُنَّة وَدُعَاء';
@@ -934,16 +888,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaEatingSunnahsTitle => 'Eating Sunnahs';
 
   @override
-  String get sunnahDuaEatingSunnahsSubtitle =>
-      'The du\'a is one part of the whole eating adab';
+  String get sunnahDuaEatingSunnahsSubtitle => 'The du\'a is one part of the whole eating adab';
 
   @override
-  String get sunnahDuaEatingSunnahsPointsRaw =>
-      'Begin with Allah\'s name before eating.||Eat with the right hand.||Eat from the food nearest to you.||Avoid criticizing food and stop before overfilling yourself.';
+  String get sunnahDuaEatingSunnahsPointsRaw => 'Begin with Allah\'s name before eating.||Eat with the right hand.||Eat from the food nearest to you.||Avoid criticizing food and stop before overfilling yourself.';
 
   @override
-  String get sunnahDuaEatingSunnahsPractice =>
-      'Use the card as a small checklist at meals. Say the du\'a, then keep the manners through the whole meal.';
+  String get sunnahDuaEatingSunnahsPractice => 'Use the card as a small checklist at meals. Say the du\'a, then keep the manners through the whole meal.';
 
   @override
   String get sunnahDuaMiswakTitle => 'Miswakh';
@@ -952,8 +903,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaMiswakSubtitle => 'Freshen the mouth before worship';
 
   @override
-  String get sunnahDuaMiswakPointsRaw =>
-      'Use it before wudu or prayer when easy.||Keep the mouth clean before Quran recitation.||Refresh the mouth after waking or before sleep.||Keep the miswakh clean and replace it when worn.';
+  String get sunnahDuaMiswakPointsRaw => 'Use it before wudu or prayer when easy.||Keep the mouth clean before Quran recitation.||Refresh the mouth after waking or before sleep.||Keep the miswakh clean and replace it when worn.';
 
   @override
   String get sunnahDuaMiswakArabic => 'السِّوَاك';
@@ -962,12 +912,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaMiswakPronunciation => 'As-siwak';
 
   @override
-  String get sunnahDuaMiswakTranslation =>
-      'Using miswak, or cleaning the teeth when miswak is unavailable, keeps the mouth ready for prayer, wudu, and recitation.';
+  String get sunnahDuaMiswakTranslation => 'Using miswak, or cleaning the teeth when miswak is unavailable, keeps the mouth ready for prayer, wudu, and recitation.';
 
   @override
-  String get sunnahDuaMiswakPractice =>
-      'Keep a miswak near your wudu space or prayer mat so this sunnah becomes an easy daily habit.';
+  String get sunnahDuaMiswakPractice => 'Keep a miswak near your wudu space or prayer mat so this sunnah becomes an easy daily habit.';
 
   @override
   String get sunnahDuaMiswakSource => 'Sunnah of purification';
@@ -976,46 +924,37 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaSleepingSunnahsTitle => 'Sleeping Sunnahs';
 
   @override
-  String get sunnahDuaSleepingSunnahsSubtitle =>
-      'End the day with remembrance and calm';
+  String get sunnahDuaSleepingSunnahsSubtitle => 'End the day with remembrance and calm';
 
   @override
-  String get sunnahDuaSleepingSunnahsPointsRaw =>
-      'Make wudu before sleep when you are able.||Dust or check the bed before lying down.||Sleep on the right side.||Close the day with the sleeping du\'a and remembrance.';
+  String get sunnahDuaSleepingSunnahsPointsRaw => 'Make wudu before sleep when you are able.||Dust or check the bed before lying down.||Sleep on the right side.||Close the day with the sleeping du\'a and remembrance.';
 
   @override
-  String get sunnahDuaSleepingSunnahsPractice =>
-      'Keep the sleep routine short and repeatable so it survives tired nights too.';
+  String get sunnahDuaSleepingSunnahsPractice => 'Keep the sleep routine short and repeatable so it survives tired nights too.';
 
   @override
   String get sunnahDuaHomeSunnahsTitle => 'Home Sunnahs';
 
   @override
-  String get sunnahDuaHomeSunnahsSubtitle =>
-      'Enter and leave with salam, remembrance, and trust';
+  String get sunnahDuaHomeSunnahsSubtitle => 'Enter and leave with salam, remembrance, and trust';
 
   @override
-  String get sunnahDuaHomeSunnahsPointsRaw =>
-      'Say bismillah when entering.||Give salam to the people at home.||Leave home with trust in Allah.||Make the first and last moments at home peaceful.';
+  String get sunnahDuaHomeSunnahsPointsRaw => 'Say bismillah when entering.||Give salam to the people at home.||Leave home with trust in Allah.||Make the first and last moments at home peaceful.';
 
   @override
-  String get sunnahDuaHomeSunnahsPractice =>
-      'Attach this routine to the doorway so the habit triggers naturally.';
+  String get sunnahDuaHomeSunnahsPractice => 'Attach this routine to the doorway so the habit triggers naturally.';
 
   @override
   String get sunnahDuaWuduSunnahsTitle => 'Wudu Sunnahs';
 
   @override
-  String get sunnahDuaWuduSunnahsSubtitle =>
-      'Purification with mindful details';
+  String get sunnahDuaWuduSunnahsSubtitle => 'Purification with mindful details';
 
   @override
-  String get sunnahDuaWuduSunnahsPointsRaw =>
-      'Begin with Allah\'s name.||Wash carefully without wasting water.||Give each limb its due attention.||Finish with the testimony after wudu.';
+  String get sunnahDuaWuduSunnahsPointsRaw => 'Begin with Allah\'s name.||Wash carefully without wasting water.||Give each limb its due attention.||Finish with the testimony after wudu.';
 
   @override
-  String get sunnahDuaWuduSunnahsPractice =>
-      'Slow down enough that wudu feels like preparation for salah, not just a task.';
+  String get sunnahDuaWuduSunnahsPractice => 'Slow down enough that wudu feels like preparation for salah, not just a task.';
 
   @override
   String get sunnahDuaSiyamSunnahsTitle => 'Siyam';
@@ -1024,8 +963,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaSiyamSunnahsSubtitle => 'Sunnah fasting beyond Ramadan';
 
   @override
-  String get sunnahDuaSiyamSunnahsPointsRaw =>
-      'Keep the intention sincere and clear before the fast.||Guard the fast beyond food and drink: protect speech, anger, eyes, and actions.||Fast Mondays and Thursdays when you are able.||Keep three days each lunar month, especially Ayyam al-Bid: the 13th, 14th, and 15th.||Remember special sunnah fasts: six days of Shawwal, Ashura, and the day of Arafah for those not at Hajj.||Take suhur close to Fajr and hasten iftar after sunset.||Break the fast with dates or water and make du\'a at iftar.||Do not harm yourself; leave voluntary fasts when sick, travelling, or when duties would be neglected.';
+  String get sunnahDuaSiyamSunnahsPointsRaw => 'Keep the intention sincere and clear before the fast.||Guard the fast beyond food and drink: protect speech, anger, eyes, and actions.||Fast Mondays and Thursdays when you are able.||Keep three days each lunar month, especially Ayyam al-Bid: the 13th, 14th, and 15th.||Remember special sunnah fasts: six days of Shawwal, Ashura, and the day of Arafah for those not at Hajj.||Take suhur close to Fajr and hasten iftar after sunset.||Break the fast with dates or water and make du\'a at iftar.||Do not harm yourself; leave voluntary fasts when sick, travelling, or when duties would be neglected.';
 
   @override
   String get sunnahDuaSiyamArabic => 'الصِّيَامُ جُنَّةٌ';
@@ -1037,56 +975,46 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaSiyamTranslation => 'Fasting is a shield.';
 
   @override
-  String get sunnahDuaSiyamSunnahsPractice =>
-      'Start with one sustainable sunnah fast, then build slowly. The goal is not just hunger; it is taqwa, restraint, gratitude, and a cleaner heart before Allah.';
+  String get sunnahDuaSiyamSunnahsPractice => 'Start with one sustainable sunnah fast, then build slowly. The goal is not just hunger; it is taqwa, restraint, gratitude, and a cleaner heart before Allah.';
 
   @override
-  String get sunnahDuaSiyamSource =>
-      'Sahih al-Bukhari 1894; Sahih Muslim 1151, 1162, 1164; Jami\' at-Tirmidhi 761';
+  String get sunnahDuaSiyamSource => 'Sahih al-Bukhari 1894; Sahih Muslim 1151, 1162, 1164; Jami\' at-Tirmidhi 761';
 
   @override
   String get sunnahDuaMasjidSunnahsTitle => 'Masjid Sunnahs';
 
   @override
-  String get sunnahDuaMasjidSunnahsSubtitle =>
-      'Enter the masjid with mercy and composure';
+  String get sunnahDuaMasjidSunnahsSubtitle => 'Enter the masjid with mercy and composure';
 
   @override
-  String get sunnahDuaMasjidSunnahsPointsRaw =>
-      'Enter calmly and avoid rushing.||Ask Allah to open the doors of mercy.||Keep the phone and talk quiet.||Leave with gratitude and ask Allah from His bounty.';
+  String get sunnahDuaMasjidSunnahsPointsRaw => 'Enter calmly and avoid rushing.||Ask Allah to open the doors of mercy.||Keep the phone and talk quiet.||Leave with gratitude and ask Allah from His bounty.';
 
   @override
-  String get sunnahDuaMasjidSunnahsPractice =>
-      'Let the masjid doorway become a reminder to lower noise, hurry, and distraction.';
+  String get sunnahDuaMasjidSunnahsPractice => 'Let the masjid doorway become a reminder to lower noise, hurry, and distraction.';
 
   @override
   String get sunnahDuaSneezingSunnahTitle => 'Sneezing Sunnah';
 
   @override
-  String get sunnahDuaSneezingSunnahSubtitle =>
-      'A tiny moment of gratitude and mercy';
+  String get sunnahDuaSneezingSunnahSubtitle => 'A tiny moment of gratitude and mercy';
 
   @override
-  String get sunnahDuaSneezingSunnahPointsRaw =>
-      'Say alhamdulillah after sneezing.||A listener responds with mercy.||The sneezer replies with guidance and goodness.||Keep the exchange gentle and brief.';
+  String get sunnahDuaSneezingSunnahPointsRaw => 'Say alhamdulillah after sneezing.||A listener responds with mercy.||The sneezer replies with guidance and goodness.||Keep the exchange gentle and brief.';
 
   @override
-  String get sunnahDuaSneezingSunnahPractice =>
-      'This is small, but it turns an ordinary moment into gratitude and care.';
+  String get sunnahDuaSneezingSunnahPractice => 'This is small, but it turns an ordinary moment into gratitude and care.';
 
   @override
   String get sunnahDuaSeekingForgivenessSubtitle => 'Keep istighfar close';
 
   @override
-  String get sunnahDuaSeekingForgivenessPractice =>
-      'Repeat it between tasks, after salah, or whenever the heart feels heavy.';
+  String get sunnahDuaSeekingForgivenessPractice => 'Repeat it between tasks, after salah, or whenever the heart feels heavy.';
 
   @override
   String get sunnahDuaDifficultySubtitle => 'When the heart feels crowded';
 
   @override
-  String get sunnahDuaDifficultyPractice =>
-      'Read it slowly, then choose the next right action with trust in Allah.';
+  String get sunnahDuaDifficultyPractice => 'Read it slowly, then choose the next right action with trust in Allah.';
 
   @override
   String get dashboardSectionPrayerTimes => 'Prayer Times';
@@ -1194,12 +1122,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardContinueReadingTitle => 'Continue Reading';
 
   @override
-  String get dashboardContinueReadingStartSubtitle =>
-      'Start where you left off';
+  String get dashboardContinueReadingStartSubtitle => 'Start where you left off';
 
   @override
-  String get dashboardContinueReadingStartDetail =>
-      'Open your recent surah and continue';
+  String get dashboardContinueReadingStartDetail => 'Open your recent surah and continue';
 
   @override
   String dashboardContinueReadingAyahDetail(int ayahNumber, String surahName) {
@@ -1219,10 +1145,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardContinueLearningStartDetail => 'Open learning tracks';
 
   @override
-  String dashboardContinueLearningModuleDetail(
-    String moduleTitle,
-    int lessonCount,
-  ) {
+  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount) {
     return '$moduleTitle · $lessonCount lessons';
   }
 
@@ -1260,15 +1183,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardHadithAnNawawiTitle => 'Forty Hadith An-Nawawi';
 
   @override
-  String get dashboardHadithAnNawawiDescription =>
-      'The classical collection by Imam An-Nawawi';
+  String get dashboardHadithAnNawawiDescription => 'The classical collection by Imam An-Nawawi';
 
   @override
   String get dashboardHadithShortTitle => 'Forty Short Hadith';
 
   @override
-  String get dashboardHadithShortDescription =>
-      'Short hadith for easy memorization & practice';
+  String get dashboardHadithShortDescription => 'Short hadith for easy memorization & practice';
 
   @override
   String get prayerViewTitle => 'Prayer Details';
@@ -1304,37 +1225,31 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerViewPermissionHelpTitle => 'Prayer times need location';
 
   @override
-  String get prayerViewPermissionHelpBody =>
-      'Enable location permission to calculate local prayer times. The guidance below still stays available.';
+  String get prayerViewPermissionHelpBody => 'Enable location permission to calculate local prayer times. The guidance below still stays available.';
 
   @override
   String get prayerTimesPermissionDeniedTitle => 'Location permission needed';
 
   @override
-  String get prayerTimesPermissionDeniedBody =>
-      'Allow location access to calculate prayer times for your area. You can still use the guidance sections without live times.';
+  String get prayerTimesPermissionDeniedBody => 'Allow location access to calculate prayer times for your area. You can still use the guidance sections without live times.';
 
   @override
-  String get prayerTimesPermissionDeniedForeverTitle =>
-      'Location permission is blocked';
+  String get prayerTimesPermissionDeniedForeverTitle => 'Location permission is blocked';
 
   @override
-  String get prayerTimesPermissionDeniedForeverBody =>
-      'Open app settings and allow location access, then refresh prayer times.';
+  String get prayerTimesPermissionDeniedForeverBody => 'Open app settings and allow location access, then refresh prayer times.';
 
   @override
   String get prayerTimesLocationDisabledTitle => 'Location services are off';
 
   @override
-  String get prayerTimesLocationDisabledBody =>
-      'Turn on device location services, then refresh to calculate local prayer times.';
+  String get prayerTimesLocationDisabledBody => 'Turn on device location services, then refresh to calculate local prayer times.';
 
   @override
   String get prayerTimesNetworkErrorTitle => 'Could not prepare prayer times';
 
   @override
-  String get prayerTimesNetworkErrorBody =>
-      'Check your connection and device location settings, then try again.';
+  String get prayerTimesNetworkErrorBody => 'Check your connection and device location settings, then try again.';
 
   @override
   String get compassTitle => 'Compass';
@@ -1376,8 +1291,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get compassApiFallbackTitle => 'Compass sensor unavailable';
 
   @override
-  String get compassApiFallbackBody =>
-      'Your device does not expose a native compass sensor. We can calculate the Qibla angle from your location, but live rotation needs a compass-capable device.';
+  String get compassApiFallbackBody => 'Your device does not expose a native compass sensor. We can calculate the Qibla angle from your location, but live rotation needs a compass-capable device.';
 
   @override
   String compassApiFallbackQibla(String degrees) {
@@ -1388,43 +1302,37 @@ class AppLocalizationsEn extends AppLocalizations {
   String get compassLocationDeniedTitle => 'Location permission needed';
 
   @override
-  String get compassLocationDeniedBody =>
-      'Allow location access so Qibla can be calculated from your current position.';
+  String get compassLocationDeniedBody => 'Allow location access so Qibla can be calculated from your current position.';
 
   @override
   String get compassLocationBlockedTitle => 'Location permission is blocked';
 
   @override
-  String get compassLocationBlockedBody =>
-      'Open app settings and allow location access, then retry the Qibla compass.';
+  String get compassLocationBlockedBody => 'Open app settings and allow location access, then retry the Qibla compass.';
 
   @override
   String get compassLocationDisabledTitle => 'Location services are off';
 
   @override
-  String get compassLocationDisabledBody =>
-      'Turn on device location services, then retry the Qibla compass.';
+  String get compassLocationDisabledBody => 'Turn on device location services, then retry the Qibla compass.';
 
   @override
   String get compassGenericErrorTitle => 'Compass could not start';
 
   @override
-  String get compassGenericErrorBody =>
-      'Check location permission, sensor availability, and your connection, then try again.';
+  String get compassGenericErrorBody => 'Check location permission, sensor availability, and your connection, then try again.';
 
   @override
   String get prayerViewTimelineTitle => 'Today\'s Prayer Rhythm';
 
   @override
-  String get prayerViewTimelineSubtitle =>
-      'Scan the full day, spot the next prayer, and keep the current focus visible.';
+  String get prayerViewTimelineSubtitle => 'Scan the full day, spot the next prayer, and keep the current focus visible.';
 
   @override
   String get prayerRakatGuideTitle => 'Rakat Guide';
 
   @override
-  String get prayerRakatGuideSubtitle =>
-      'See the common daily prayer count and how each salah is divided.';
+  String get prayerRakatGuideSubtitle => 'See the common daily prayer count and how each salah is divided.';
 
   @override
   String get prayerRakatViewDetails => 'View details';
@@ -1468,59 +1376,49 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerRakatWitrLabel => 'After Isha';
 
   @override
-  String get prayerRakatFajrNote =>
-      'The 2 sunnah before Fajr are strongly emphasized.';
+  String get prayerRakatFajrNote => 'The 2 sunnah before Fajr are strongly emphasized.';
 
   @override
-  String get prayerRakatDhuhrNote =>
-      'A common flow is 4 sunnah, 4 fard, 2 sunnah, then optional nafl.';
+  String get prayerRakatDhuhrNote => 'A common flow is 4 sunnah, 4 fard, 2 sunnah, then optional nafl.';
 
   @override
-  String get prayerRakatAsrNote =>
-      'The 4 sunnah before Asr are generally treated as non-emphasized.';
+  String get prayerRakatAsrNote => 'The 4 sunnah before Asr are generally treated as non-emphasized.';
 
   @override
-  String get prayerRakatMaghribNote =>
-      'Pray the 3 fard first, then the emphasized sunnah and optional nafl.';
+  String get prayerRakatMaghribNote => 'Pray the 3 fard first, then the emphasized sunnah and optional nafl.';
 
   @override
-  String get prayerRakatIshaNote =>
-      'Witr details vary by school; many communities pray 3 after Isha.';
+  String get prayerRakatIshaNote => 'Witr details vary by school; many communities pray 3 after Isha.';
 
   @override
   String get prayerViewNowTitle => 'What to follow now';
 
   @override
-  String get prayerViewNowSubtitle =>
-      'A practical next move for the current prayer window.';
+  String get prayerViewNowSubtitle => 'A practical next move for the current prayer window.';
 
   @override
   String get prayerViewSuggestionsTitle => 'Prayer suggestions';
 
   @override
-  String get prayerViewSuggestionsSubtitle =>
-      'Small actions that make this salah feel calmer and more intentional.';
+  String get prayerViewSuggestionsSubtitle => 'Small actions that make this salah feel calmer and more intentional.';
 
   @override
   String get prayerViewHowTitle => 'How to pray';
 
   @override
-  String get prayerViewHowSubtitle =>
-      'A simple flow for the core movements and presence of salah.';
+  String get prayerViewHowSubtitle => 'A simple flow for the core movements and presence of salah.';
 
   @override
   String get prayerViewBestPracticesTitle => 'Best practices';
 
   @override
-  String get prayerViewBestPracticesSubtitle =>
-      'Focused habits tailored to the prayer currently in view.';
+  String get prayerViewBestPracticesSubtitle => 'Focused habits tailored to the prayer currently in view.';
 
   @override
   String get prayerViewFiqhNoteTitle => 'Practice note';
 
   @override
-  String get prayerViewFiqhNoteBody =>
-      'Details can vary by madhhab and local teaching. Use this as friendly guidance and follow a trusted scholar or imam for fiqh-specific rulings.';
+  String get prayerViewFiqhNoteBody => 'Details can vary by madhhab and local teaching. Use this as friendly guidance and follow a trusted scholar or imam for fiqh-specific rulings.';
 
   @override
   String get prayerViewFocus => 'Focus';
@@ -1538,15 +1436,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerForbiddenTimesTitle => 'Forbidden Times';
 
   @override
-  String get prayerForbiddenTimesSubtitle =>
-      'Short windows where starting voluntary salah should be avoided.';
+  String get prayerForbiddenTimesSubtitle => 'Short windows where starting voluntary salah should be avoided.';
 
   @override
   String get prayerForbiddenAlertTitle => 'Pause voluntary prayer here';
 
   @override
-  String get prayerForbiddenAlertBody =>
-      'Keep dhikr, Quran listening, or quiet reflection, then pray again once the window clears. Fiqh details can vary, so follow a trusted scholar for specific rulings.';
+  String get prayerForbiddenAlertBody => 'Keep dhikr, Quran listening, or quiet reflection, then pray again once the window clears. Fiqh details can vary, so follow a trusted scholar for specific rulings.';
 
   @override
   String get prayerForbiddenPauseLabel => 'PAUSE';
@@ -1555,22 +1451,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerForbiddenSunriseTitle => 'At sunrise';
 
   @override
-  String get prayerForbiddenSunriseBody =>
-      'Avoid beginning voluntary prayer while the sun is rising; wait until it has clearly risen.';
+  String get prayerForbiddenSunriseBody => 'Avoid beginning voluntary prayer while the sun is rising; wait until it has clearly risen.';
 
   @override
   String get prayerForbiddenZenithTitle => 'At zenith';
 
   @override
-  String get prayerForbiddenZenithBody =>
-      'Pause optional salah when the sun is at its highest point, just before Dhuhr enters.';
+  String get prayerForbiddenZenithBody => 'Pause optional salah when the sun is at its highest point, just before Dhuhr enters.';
 
   @override
   String get prayerForbiddenSunsetTitle => 'At sunset';
 
   @override
-  String get prayerForbiddenSunsetBody =>
-      'Avoid starting voluntary prayer as the sun is setting; pray Maghrib when its time begins.';
+  String get prayerForbiddenSunsetBody => 'Avoid starting voluntary prayer as the sun is setting; pray Maghrib when its time begins.';
 
   @override
   String get prayerForbiddenTimeFallback => 'Time unavailable';
@@ -1589,43 +1482,37 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerReferenceTitle => 'Guidance Library';
 
   @override
-  String get prayerReferenceSubtitle =>
-      'Open the details only when you need them, so the main prayer view stays calm.';
+  String get prayerReferenceSubtitle => 'Open the details only when you need them, so the main prayer view stays calm.';
 
   @override
   String get prayerReferenceMovementsActionTitle => 'Salah Movement Guide';
 
   @override
-  String get prayerReferenceMovementsActionSubtitle =>
-      'See every position with Arabic recitation, pronunciation, and meaning.';
+  String get prayerReferenceMovementsActionSubtitle => 'See every position with Arabic recitation, pronunciation, and meaning.';
 
   @override
   String get prayerReferenceForbiddenActionTitle => 'Forbidden Times';
 
   @override
-  String get prayerReferenceForbiddenActionSubtitle =>
-      'Know when to pause voluntary salah.';
+  String get prayerReferenceForbiddenActionSubtitle => 'Know when to pause voluntary salah.';
 
   @override
   String get prayerReferenceNafalActionTitle => 'Daily Nafal Prayers';
 
   @override
-  String get prayerReferenceNafalActionSubtitle =>
-      'Tahajjud, Ishraq, Duha, and Awwabin in one daily flow.';
+  String get prayerReferenceNafalActionSubtitle => 'Tahajjud, Ishraq, Duha, and Awwabin in one daily flow.';
 
   @override
   String get prayerReferenceJanazaActionTitle => 'Janaja Prayer';
 
   @override
-  String get prayerReferenceJanazaActionSubtitle =>
-      'A standing mercy prayer with four takbirs and sincere du\'a.';
+  String get prayerReferenceJanazaActionSubtitle => 'A standing mercy prayer with four takbirs and sincere du\'a.';
 
   @override
   String get prayerReferenceTasbeehActionTitle => 'Salatul Tasbeeh';
 
   @override
-  String get prayerReferenceTasbeehActionSubtitle =>
-      'Follow the 300-tasbih rhythm across four rak\'ahs.';
+  String get prayerReferenceTasbeehActionSubtitle => 'Follow the 300-tasbih rhythm across four rak\'ahs.';
 
   @override
   String get prayerReferenceOpenLabel => 'View';
@@ -1640,8 +1527,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerMovementsHeroTitle => 'Pray with clarity, calm, and meaning';
 
   @override
-  String get prayerMovementsHeroBody =>
-      'A visual walkthrough from takbir to dhikr, pairing each posture with the Arabic words, pronunciation, and translation.';
+  String get prayerMovementsHeroBody => 'A visual walkthrough from takbir to dhikr, pairing each posture with the Arabic words, pronunciation, and translation.';
 
   @override
   String prayerMovementsHeroStepsCount(int count) {
@@ -1658,8 +1544,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerMovementsSequenceTitle => 'Movement sequence';
 
   @override
-  String get prayerMovementsSequenceSubtitle =>
-      'Follow the flow from opening takbir to post-prayer dhikr, one settled posture at a time.';
+  String get prayerMovementsSequenceSubtitle => 'Follow the flow from opening takbir to post-prayer dhikr, one settled posture at a time.';
 
   @override
   String get prayerMovementsArabicLabel => 'Arabic to recite';
@@ -1677,8 +1562,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerMovementsHadithTitle => 'Hadith anchors';
 
   @override
-  String get prayerMovementsHadithSubtitle =>
-      'Short reminders that keep the demonstration rooted in sunnah, calmness, and presence.';
+  String get prayerMovementsHadithSubtitle => 'Short reminders that keep the demonstration rooted in sunnah, calmness, and presence.';
 
   @override
   String get prayerMovementsHadithSourceLabel => 'Source';
@@ -1687,15 +1571,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerMovementsFiqhNoteTitle => 'Respectful variation note';
 
   @override
-  String get prayerMovementsFiqhNoteBody =>
-      'Hand placement, finger movement, and some wordings can vary by madhhab and teacher. Use this as a friendly demonstration and follow trusted local guidance for rulings.';
+  String get prayerMovementsFiqhNoteBody => 'Hand placement, finger movement, and some wordings can vary by madhhab and teacher. Use this as a friendly demonstration and follow trusted local guidance for rulings.';
 
   @override
   String get prayerNafalTitle => 'Daily Nafal Prayers';
 
   @override
-  String get prayerNafalSubtitle =>
-      'A graceful optional-prayer rhythm for morning, daylight, evening, and night.';
+  String get prayerNafalSubtitle => 'A graceful optional-prayer rhythm for morning, daylight, evening, and night.';
 
   @override
   String get prayerNafalArabicLabel => 'نفل';
@@ -1722,8 +1604,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerNafalNoteTitle => 'Gentle fiqh note';
 
   @override
-  String get prayerNafalNoteBody =>
-      'These are friendly reminders for common nafal windows. Details and rakah counts may vary by madhhab and teacher, so follow trusted local guidance for rulings.';
+  String get prayerNafalNoteBody => 'These are friendly reminders for common nafal windows. Details and rakah counts may vary by madhhab and teacher, so follow trusted local guidance for rulings.';
 
   @override
   String get prayerNafalTahajjudTitle => 'Tahajjud';
@@ -1738,19 +1619,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerNafalTahajjudRakah => '2+';
 
   @override
-  String get prayerNafalTahajjudBenefit =>
-      'Turns the quiet night into du\'a, repentance, and deeper focus.';
+  String get prayerNafalTahajjudBenefit => 'Turns the quiet night into du\'a, repentance, and deeper focus.';
 
   @override
-  String get prayerNafalTahajjudBody =>
-      'Wake gently, pray in pairs, and keep the recitation calm. Even two focused raka\'ahs can become the quietest anchor of the day.';
+  String get prayerNafalTahajjudBody => 'Wake gently, pray in pairs, and keep the recitation calm. Even two focused raka\'ahs can become the quietest anchor of the day.';
 
   @override
   String get prayerNafalTahajjudHadith1Source => 'Sahih Muslim 1163a';
 
   @override
-  String get prayerNafalTahajjudHadith1Body =>
-      'The best prayer after the obligatory prayer is night prayer.';
+  String get prayerNafalTahajjudHadith1Body => 'The best prayer after the obligatory prayer is night prayer.';
 
   @override
   String get prayerNafalIshraqTitle => 'Ishraq';
@@ -1765,19 +1643,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerNafalIshraqRakah => '2';
 
   @override
-  String get prayerNafalIshraqBenefit =>
-      'Connects Fajr, dhikr, and a hopeful start to the morning.';
+  String get prayerNafalIshraqBenefit => 'Connects Fajr, dhikr, and a hopeful start to the morning.';
 
   @override
-  String get prayerNafalIshraqBody =>
-      'Wait until the forbidden sunrise window clears, then begin with a light heart and a short, sincere prayer.';
+  String get prayerNafalIshraqBody => 'Wait until the forbidden sunrise window clears, then begin with a light heart and a short, sincere prayer.';
 
   @override
   String get prayerNafalIshraqHadith1Source => 'Jami\' at-Tirmidhi 586';
 
   @override
-  String get prayerNafalIshraqHadith1Body =>
-      'Fajr in congregation, dhikr until sunrise, then two raka\'ahs is reported with Hajj and Umrah reward.';
+  String get prayerNafalIshraqHadith1Body => 'Fajr in congregation, dhikr until sunrise, then two raka\'ahs is reported with Hajj and Umrah reward.';
 
   @override
   String get prayerNafalDuhaTitle => 'Duha / Chasht';
@@ -1792,27 +1667,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerNafalDuhaRakah => '2-8';
 
   @override
-  String get prayerNafalDuhaBenefit =>
-      'Refreshes gratitude and covers the morning charity due from the body.';
+  String get prayerNafalDuhaBenefit => 'Refreshes gratitude and covers the morning charity due from the body.';
 
   @override
-  String get prayerNafalDuhaBody =>
-      'Use the morning stretch for gratitude, provision, and renewed energy before the day gets heavy.';
+  String get prayerNafalDuhaBody => 'Use the morning stretch for gratitude, provision, and renewed energy before the day gets heavy.';
 
   @override
   String get prayerNafalDuhaHadith1Source => 'Sahih Muslim 720';
 
   @override
-  String get prayerNafalDuhaHadith1Body =>
-      'Two raka\'ahs of Duha suffice for the morning charity due from every joint.';
+  String get prayerNafalDuhaHadith1Body => 'Two raka\'ahs of Duha suffice for the morning charity due from every joint.';
 
   @override
-  String get prayerNafalDuhaHadith2Source =>
-      'Sahih al-Bukhari 1178; Sahih Muslim 721a';
+  String get prayerNafalDuhaHadith2Source => 'Sahih al-Bukhari 1178; Sahih Muslim 721a';
 
   @override
-  String get prayerNafalDuhaHadith2Body =>
-      'Abu Hurayrah was advised to keep Duha among regular acts.';
+  String get prayerNafalDuhaHadith2Body => 'Abu Hurayrah was advised to keep Duha among regular acts.';
 
   @override
   String get prayerNafalAwwabinTitle => 'Awwabin';
@@ -1827,202 +1697,220 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerNafalAwwabinRakah => '2-6';
 
   @override
-  String get prayerNafalAwwabinBenefit =>
-      'Keeps the Maghrib-Isha window alive with short extra raka\'ahs and dhikr.';
+  String get prayerNafalAwwabinBenefit => 'Keeps the Maghrib-Isha window alive with short extra raka\'ahs and dhikr.';
 
   @override
-  String get prayerNafalAwwabinBody =>
-      'Let the evening soften: return to Allah with short raka\'ahs, dhikr, and a quieter transition toward Isha.';
+  String get prayerNafalAwwabinBody => 'Let the evening soften: return to Allah with short raka\'ahs, dhikr, and a quieter transition toward Isha.';
 
   @override
-  String get prayerNafalAwwabinHadith1Source =>
-      'Jami\' at-Tirmidhi 435; Sunan Ibn Majah 1167';
+  String get prayerNafalAwwabinHadith1Source => 'Jami\' at-Tirmidhi 435; Sunan Ibn Majah 1167';
 
   @override
-  String get prayerNafalAwwabinHadith1Body =>
-      'Six raka\'ahs after Maghrib are reported; scholars discuss the report\'s strength.';
+  String get prayerNafalAwwabinHadith1Body => 'Six raka\'ahs after Maghrib are reported; scholars discuss the report\'s strength.';
 
   @override
   String get prayerNafalAwwabinHadith2Source => 'Sahih Muslim 748b';
 
   @override
-  String get prayerNafalAwwabinHadith2Body =>
-      'The name Salat al-Awwabin is also authentically used for the Duha-time prayer.';
+  String get prayerNafalAwwabinHadith2Body => 'The name Salat al-Awwabin is also authentically used for the Duha-time prayer.';
 
   @override
   String get prayerHowIntentionTitle => 'Intention & readiness';
 
   @override
-  String get prayerHowIntentionBody =>
-      'Make wudu, face the qibla, and settle your intention in the heart before you begin.';
+  String get prayerHowIntentionBody => 'Make wudu, face the qibla, and settle your intention in the heart before you begin.';
 
   @override
   String get prayerHowQiyamTitle => 'Qiyam';
 
   @override
-  String get prayerHowQiyamBody =>
-      'Stand calmly, say the opening takbir, recite Al-Fatihah, then recite what is easy from the Quran.';
+  String get prayerHowQiyamBody => 'Stand calmly, say the opening takbir, recite Al-Fatihah, then recite what is easy from the Quran.';
 
   @override
   String get prayerHowRukuTitle => 'Ruku';
 
   @override
-  String get prayerHowRukuBody =>
-      'Bow with the back settled, glorify Allah, then rise with calm before going down.';
+  String get prayerHowRukuBody => 'Bow with the back settled, glorify Allah, then rise with calm before going down.';
 
   @override
   String get prayerHowSujoodTitle => 'Sujood';
 
   @override
-  String get prayerHowSujoodBody =>
-      'Prostrate with humility, pause without rushing, then sit briefly and complete the second prostration.';
+  String get prayerHowSujoodBody => 'Prostrate with humility, pause without rushing, then sit briefly and complete the second prostration.';
 
   @override
   String get prayerHowTashahhudTitle => 'Tashahhud';
 
   @override
-  String get prayerHowTashahhudBody =>
-      'In the final sitting, recite tashahhud and send salawat upon the Prophet, peace be upon him.';
+  String get prayerHowTashahhudBody => 'In the final sitting, recite tashahhud and send salawat upon the Prophet, peace be upon him.';
 
   @override
   String get prayerHowSalamTitle => 'Salam';
 
   @override
-  String get prayerHowSalamBody =>
-      'End the prayer with salam, then remain present for short dhikr and du\'a.';
+  String get prayerHowSalamBody => 'End the prayer with salam, then remain present for short dhikr and du\'a.';
 
   @override
   String get prayerFocusFajrTitle => 'Fajr Window';
 
   @override
-  String get prayerFocusFajrSubtitle =>
-      'Begin the day before the world gets loud.';
+  String get prayerFocusFajrSubtitle => 'Begin the day before the world gets loud.';
 
   @override
   String get prayerFocusSunriseTitle => 'Sunrise Pause';
 
   @override
-  String get prayerFocusSunriseSubtitle =>
-      'A quiet transition after Fajr; wait before optional Duha.';
+  String get prayerFocusSunriseSubtitle => 'A quiet transition after Fajr; wait before optional Duha.';
 
   @override
   String get prayerFocusDhuhrTitle => 'Dhuhr Reset';
 
   @override
-  String get prayerFocusDhuhrSubtitle =>
-      'Let the middle of the day become a clean spiritual reset.';
+  String get prayerFocusDhuhrSubtitle => 'Let the middle of the day become a clean spiritual reset.';
 
   @override
   String get prayerFocusAsrTitle => 'Asr Guard';
 
   @override
-  String get prayerFocusAsrSubtitle =>
-      'Protect the late afternoon before tasks scatter your attention.';
+  String get prayerFocusAsrSubtitle => 'Protect the late afternoon before tasks scatter your attention.';
 
   @override
   String get prayerFocusMaghribTitle => 'Maghrib Return';
 
   @override
-  String get prayerFocusMaghribSubtitle =>
-      'Move quickly from sunset into remembrance and gratitude.';
+  String get prayerFocusMaghribSubtitle => 'Move quickly from sunset into remembrance and gratitude.';
 
   @override
   String get prayerFocusIshaTitle => 'Isha Closure';
 
   @override
-  String get prayerFocusIshaSubtitle =>
-      'Close the day with calm, repentance, and preparation for Fajr.';
+  String get prayerFocusIshaSubtitle => 'Close the day with calm, repentance, and preparation for Fajr.';
 
   @override
   String get prayerNowFajrTitle => 'Protect the dawn';
 
   @override
-  String get prayerNowFajrBody =>
-      'Before sunrise, protect the Fajr window. If you have not prayed, make wudu and pray now; if you have, stay with morning adhkar or Quran.';
+  String get prayerNowFajrBody => 'Before sunrise, protect the Fajr window. If you have not prayed, make wudu and pray now; if you have, stay with morning adhkar or Quran.';
 
   @override
   String get prayerNowSunriseTitle => 'Pause and remember';
 
   @override
-  String get prayerNowSunriseBody =>
-      'At exact sunrise avoid starting voluntary prayer; keep morning dhikr and wait until the sun has risen before Duha.';
+  String get prayerNowSunriseBody => 'At exact sunrise avoid starting voluntary prayer; keep morning dhikr and wait until the sun has risen before Duha.';
 
   @override
   String get prayerNowDhuhrTitle => 'Reset the middle of the day';
 
   @override
-  String get prayerNowDhuhrBody =>
-      'Step away from work, renew wudu, and give the fard prayer an unhurried pocket of attention.';
+  String get prayerNowDhuhrBody => 'Step away from work, renew wudu, and give the fard prayer an unhurried pocket of attention.';
 
   @override
   String get prayerNowAsrTitle => 'Guard the late afternoon';
 
   @override
-  String get prayerNowAsrBody =>
-      'Make Asr visible before the day becomes crowded. Pray with steady pace and leave a short moment for dhikr afterward.';
+  String get prayerNowAsrBody => 'Make Asr visible before the day becomes crowded. Pray with steady pace and leave a short moment for dhikr afterward.';
 
   @override
   String get prayerNowMaghribTitle => 'Move promptly';
 
   @override
-  String get prayerNowMaghribBody =>
-      'When Maghrib enters, shift quickly from sunset routines into salah, then return to family, food, or travel with a lighter heart.';
+  String get prayerNowMaghribBody => 'When Maghrib enters, shift quickly from sunset routines into salah, then return to family, food, or travel with a lighter heart.';
 
   @override
   String get prayerNowIshaTitle => 'Close the day cleanly';
 
   @override
-  String get prayerNowIshaBody =>
-      'Pray Isha before sleepiness takes over. Pair it with repentance, gratitude, and a simple plan for waking for Fajr.';
+  String get prayerNowIshaBody => 'Pray Isha before sleepiness takes over. Pair it with repentance, gratitude, and a simple plan for waking for Fajr.';
 
   @override
-  String get prayerSuggestionsFajrRaw =>
-      'Pray the two raka\'at Sunnah before the fard when you are able.||Keep the recitation calm and bright, even if it is short.||After salah, spend a few minutes with morning adhkar or a small Quran portion.';
+  String get prayerSuggestionsFajrRaw => 'Pray the two raka\'at Sunnah before the fard when you are able.||Keep the recitation calm and bright, even if it is short.||After salah, spend a few minutes with morning adhkar or a small Quran portion.';
 
   @override
-  String get prayerSuggestionsSunriseRaw =>
-      'Continue morning adhkar while the sun rises.||Wait until the disliked sunrise moment passes before optional Duha.||Use the quiet transition to plan the next prayer instead of drifting.';
+  String get prayerSuggestionsSunriseRaw => 'Continue morning adhkar while the sun rises.||Wait until the disliked sunrise moment passes before optional Duha.||Use the quiet transition to plan the next prayer instead of drifting.';
 
   @override
-  String get prayerSuggestionsDhuhrRaw =>
-      'Use the adhan as a hard pause from work or study.||Choose a quiet place before the day becomes crowded again.||Pair the prayer with a small gratitude check before returning to tasks.';
+  String get prayerSuggestionsDhuhrRaw => 'Use the adhan as a hard pause from work or study.||Choose a quiet place before the day becomes crowded again.||Pair the prayer with a small gratitude check before returning to tasks.';
 
   @override
-  String get prayerSuggestionsAsrRaw =>
-      'Plan Asr before the late-afternoon rush begins.||Keep the pace steady rather than compressed.||Use one minute after salam to ask Allah for protection and consistency.';
+  String get prayerSuggestionsAsrRaw => 'Plan Asr before the late-afternoon rush begins.||Keep the pace steady rather than compressed.||Use one minute after salam to ask Allah for protection and consistency.';
 
   @override
-  String get prayerSuggestionsMaghribRaw =>
-      'Pray soon after adhan because the window feels short in daily life.||Keep food, family, and commute transitions from swallowing the prayer.||Follow with evening adhkar when your routine allows.';
+  String get prayerSuggestionsMaghribRaw => 'Pray soon after adhan because the window feels short in daily life.||Keep food, family, and commute transitions from swallowing the prayer.||Follow with evening adhkar when your routine allows.';
 
   @override
-  String get prayerSuggestionsIshaRaw =>
-      'Pray before sleepiness makes focus heavy.||Prepare for Witr according to your practice after Isha.||Set up tomorrow\'s Fajr before bed: alarm, wudu plan, and sleep intention.';
+  String get prayerSuggestionsIshaRaw => 'Pray before sleepiness makes focus heavy.||Prepare for Witr according to your practice after Isha.||Set up tomorrow\'s Fajr before bed: alarm, wudu plan, and sleep intention.';
 
   @override
-  String get prayerBestPracticesFajrRaw =>
-      'Sleep with Fajr in mind, not as an afterthought.||Avoid rushing the first prayer of the day; let it set the tone.||Use the stillness after Fajr for Quran, adhkar, or one sincere du\'a.';
+  String get prayerBestPracticesFajrRaw => 'Sleep with Fajr in mind, not as an afterthought.||Avoid rushing the first prayer of the day; let it set the tone.||Use the stillness after Fajr for Quran, adhkar, or one sincere du\'a.';
 
   @override
-  String get prayerBestPracticesSunriseRaw =>
-      'Do not treat sunrise as an obligatory prayer; it is a transition marker.||Stay away from voluntary prayer at the exact sunrise moment.||Return to optional worship after the sun has risen and the time is clear.';
+  String get prayerBestPracticesSunriseRaw => 'Do not treat sunrise as an obligatory prayer; it is a transition marker.||Stay away from voluntary prayer at the exact sunrise moment.||Return to optional worship after the sun has risen and the time is clear.';
 
   @override
-  String get prayerBestPracticesDhuhrRaw =>
-      'Put Dhuhr on the calendar before the workday takes over.||Stand without carrying the whole task list into salah.||If you pray Sunnah prayers, place them around the fard according to your learned practice.';
+  String get prayerBestPracticesDhuhrRaw => 'Put Dhuhr on the calendar before the workday takes over.||Stand without carrying the whole task list into salah.||If you pray Sunnah prayers, place them around the fard according to your learned practice.';
 
   @override
-  String get prayerBestPracticesAsrRaw =>
-      'Guard Asr from being pushed to the edge of the time.||Lower the pace before takbir so the prayer does not feel like a race.||Use Asr as an accountability checkpoint for the rest of the day.';
+  String get prayerBestPracticesAsrRaw => 'Guard Asr from being pushed to the edge of the time.||Lower the pace before takbir so the prayer does not feel like a race.||Use Asr as an accountability checkpoint for the rest of the day.';
 
   @override
-  String get prayerBestPracticesMaghribRaw =>
-      'Respond quickly when Maghrib enters.||Keep sunset meals and gatherings from delaying the prayer.||Let Maghrib open your evening adhkar and family calm.';
+  String get prayerBestPracticesMaghribRaw => 'Respond quickly when Maghrib enters.||Keep sunset meals and gatherings from delaying the prayer.||Let Maghrib open your evening adhkar and family calm.';
 
   @override
-  String get prayerBestPracticesIshaRaw =>
-      'Pray before exhaustion dulls attention.||Keep Witr visible in the night routine according to your practice.||Prepare the body and room for Fajr before sleeping.';
+  String get prayerBestPracticesIshaRaw => 'Pray before exhaustion dulls attention.||Keep Witr visible in the night routine according to your practice.||Prepare the body and room for Fajr before sleeping.';
 
   @override
   String get learnQuranTextMapRaw => '';
+
+  @override
+  String get dailyTrackerSectionTitle => 'Daily Tracker';
+
+  @override
+  String get dailyTrackerSectionSubtitle => 'Tap to view your full checklist';
+
+  @override
+  String dailyTrackerProgressLabel(int completed, int total) {
+    return '$completed/$total completed';
+  }
+
+  @override
+  String get dailyTrackerFullViewTitle => 'Daily Tracker';
+
+  @override
+  String get dailyTrackerOptionalBadge => 'Optional';
+
+  @override
+  String get dailyTrackerFridayBadge => 'Friday';
+
+  @override
+  String get dailyTrackerFridayBannerTitle => 'Jumu\'ah Mubarak!';
+
+  @override
+  String get dailyTrackerFridayBannerSubtitle => 'Special Friday tasks have been added to today\'s routine';
+
+  @override
+  String get dailyTrackerCategoryPrayer => 'Prayers';
+
+  @override
+  String get dailyTrackerCategoryNafl => 'Nafl Prayers';
+
+  @override
+  String get dailyTrackerCategoryDua => 'Daily Duas';
+
+  @override
+  String get dailyTrackerCategorySunnah => 'Sunnahs';
+
+  @override
+  String get dailyTrackerCategoryQuran => 'Quran';
+
+  @override
+  String get dailyTrackerCategoryTasbeeh => 'Tasbeeh';
+
+  @override
+  String get dailyTrackerCategoryHadith => 'Hadith';
+
+  @override
+  String get dailyTrackerCelebrationTitle => 'MashaAllah! You completed today\'s routine!';
+
+  @override
+  String get dailyTrackerCelebrationButton => 'Alhamdulillah';
 }
