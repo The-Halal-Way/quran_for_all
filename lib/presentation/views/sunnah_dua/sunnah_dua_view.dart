@@ -68,6 +68,7 @@ class _SunnahDuaViewState extends State<SunnahDuaView> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          // banner
                           SunnahDuaHero(
                             totalCount: _viewModel.countFor(
                               context,
@@ -86,6 +87,7 @@ class _SunnahDuaViewState extends State<SunnahDuaView> {
                                 : null,
                           ),
                           const SizedBox(height: AppSpacing.lg),
+                          // daily dua, powerful dua, ninety nine names shortcuts
                           _DuahShortcutSection(
                             items: _buildDuahShortcutItems(context),
                           ),
