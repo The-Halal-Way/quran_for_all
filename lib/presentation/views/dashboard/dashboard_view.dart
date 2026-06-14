@@ -62,8 +62,10 @@ class _DashboardViewState extends State<DashboardView> {
       context.watch<DashboardPrayerTimesViewModel>().errorType;
   bool get _loadingPrayerTimes =>
       context.watch<DashboardPrayerTimesViewModel>().isLoading;
-  String? get _nextPrayer =>
-      context.watch<DashboardPrayerTimesViewModel>().nextPrayer;
+  String? get _currentPrayer =>
+      context.watch<DashboardPrayerTimesViewModel>().currentPrayer;
+  bool get _hasPrayerData =>
+      context.watch<DashboardPrayerTimesViewModel>().hasData;
 
   Future<void> _loadPrayerTimes() => context
       .read<DashboardPrayerTimesViewModel>()

@@ -519,8 +519,10 @@
     }
   },
   "dashboardRetry": "আবার চেষ্টা করুন",
+  "dashboardCurrentPrayer": "চলমান নামাজ",
   "dashboardNextPrayer": "পরবর্তী নামাজ",
   "dashboardNextShortLabel": "পরবর্তী",
+  "dashboardNowShortLabel": "এখন",
   "dashboardPrayerFajr": "ফজর",
   "dashboardPrayerSehri": "সেহরি",
   "dashboardPrayerSunrise": "সূর্যোদয়",
@@ -622,6 +624,7 @@
   "prayerViewFiqhNoteTitle": "অনুশীলন নোট",
   "prayerViewFiqhNoteBody": "মাযহাব ও স্থানীয় শিক্ষার ভিত্তিতে কিছু বিস্তারিত বিষয়ে পার্থক্য থাকতে পারে। এটিকে বন্ধুসুলভ নির্দেশনা হিসেবে নিন এবং ফিকহ-নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেম বা ইমামের অনুসরণ করুন।",
   "prayerViewFocus": "ফোকাস",
+  "prayerViewNow": "এখন",
   "prayerViewNext": "পরবর্তী",
   "prayerViewPassed": "অতিবাহিত",
   "prayerViewSoon": "শিগগির",

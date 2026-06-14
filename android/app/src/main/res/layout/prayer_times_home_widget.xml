@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Next prayer"
+        android:text="Current prayer"
         android:textColor="#AFA594"
         android:textSize="11sp"
         android:textStyle="bold" />

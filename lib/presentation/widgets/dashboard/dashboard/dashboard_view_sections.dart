@@ -277,7 +277,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                 ),
               ),
             )
-          : _prayerError.isNotEmpty
+          : _prayerError.isNotEmpty && !_hasPrayerData
           ? Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
@@ -344,7 +344,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                       ),
                       child: Column(
                         children: (_prayerTimes ?? {}).entries.map((entry) {
-                          final isNext = entry.key == _nextPrayer;
+                          final isCurrent = entry.key == _currentPrayer;
                           return PrayerRow(
                             name: _dashboardViewModel.localizedPrayerName(
                               context.l10n,
@@ -352,7 +352,7 @@ extension _DashboardViewStateSections on _DashboardViewState {
                             ),
                             time: _prayerTimeRanges?[entry.key] ?? entry.value,
                             icon: _dashboardViewModel.prayerIcon(entry.key),
-                            isNext: isNext,
+                            isCurrent: isCurrent,
                             isDark: _isDark,
                             textMain: _textMain,
                             textHint: _textHint,
@@ -376,17 +376,21 @@ extension _DashboardViewStateSections on _DashboardViewState {
   }
 
   Widget _buildPrayerSummaryHeader(AppTypography text) {
-    final nextPrayer = _nextPrayer;
-    final icon = nextPrayer == null
+    final currentPrayer = _currentPrayer;
+    final icon = currentPrayer == null
         ? Icons.access_time_rounded
-        : _dashboardViewModel.prayerIcon(nextPrayer);
-    final title = nextPrayer == null
+        : _dashboardViewModel.prayerIcon(currentPrayer);
+    final title = currentPrayer == null
         ? context.l10n.dashboardSectionPrayerTimes
-        : _dashboardViewModel.localizedPrayerName(context.l10n, nextPrayer);
-    final subtitle = nextPrayer == null
+        : _dashboardViewModel.localizedPrayerName(context.l10n, currentPrayer);
+    final subtitle = currentPrayer == null
         ? context.l10n.dashboardActionFullPrayerView
-        : context.l10n.dashboardNextPrayer;
-    final time = nextPrayer == null ? '--' : _prayerTimes?[nextPrayer] ?? '';
+        : context.l10n.dashboardCurrentPrayer;
+    final time = currentPrayer == null
+        ? '--'
+        : _prayerTimeRanges?[currentPrayer] ??
+              _prayerTimes?[currentPrayer] ??
+              '';
     final borderRadius = _isPrayerCardExpanded
         ? const BorderRadius.vertical(top: Radius.circular(AppRadius.lg))
         : BorderRadius.circular(AppRadius.lg);

@@ -3,7 +3,7 @@ part of '../../../views/dashboard/dashboard_view.dart';
 class PrayerRow extends StatelessWidget {
   final String name, time;
   final IconData icon;
-  final bool isNext, isDark;
+  final bool isCurrent, isDark;
   final Color textMain, textHint, divider;
 
   const PrayerRow({
@@ -11,7 +11,7 @@ class PrayerRow extends StatelessWidget {
     required this.name,
     required this.time,
     required this.icon,
-    required this.isNext,
+    required this.isCurrent,
     required this.isDark,
     required this.textMain,
     required this.textHint,
@@ -30,7 +30,7 @@ class PrayerRow extends StatelessWidget {
             width: 34,
             height: 34,
             decoration: BoxDecoration(
-              color: isNext
+              color: isCurrent
                   ? MyColors.secondary.withOpacity(0.12)
                   : (isDark
                         ? Colors.white.withOpacity(0.05)
@@ -40,19 +40,19 @@ class PrayerRow extends StatelessWidget {
             child: Icon(
               icon,
               size: 17,
-              color: isNext ? MyColors.secondary : textHint,
+              color: isCurrent ? MyColors.secondary : textHint,
             ),
           ),
           const SizedBox(width: 12),
           Text(
             name,
             style:
-                (isNext
+                (isCurrent
                         ? text.dashboardPrayerNameActive
                         : text.dashboardPrayerName)
-                    .copyWith(color: isNext ? textMain : textHint),
+                    .copyWith(color: isCurrent ? textMain : textHint),
           ),
-          if (isNext) ...[
+          if (isCurrent) ...[
             const SizedBox(width: 8),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
@@ -65,7 +65,7 @@ class PrayerRow extends StatelessWidget {
                 ),
               ),
               child: Text(
-                context.l10n.dashboardNextShortLabel,
+                context.l10n.dashboardNowShortLabel,
                 style: text.dashboardTinyBadge.copyWith(
                   color: MyColors.secondary,
                 ),
@@ -76,10 +76,12 @@ class PrayerRow extends StatelessWidget {
           Text(
             time,
             style:
-                (isNext
+                (isCurrent
                         ? text.dashboardPrayerTimeActive
                         : text.dashboardPrayerTime)
-                    .copyWith(color: isNext ? MyColors.secondary : textHint),
+                    .copyWith(
+                      color: isCurrent ? MyColors.secondary : textHint,
+                    ),
           ),
         ],
       ),

@@ -1153,10 +1153,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardRetry => 'Retry';
 
   @override
+  String get dashboardCurrentPrayer => 'Current Prayer';
+
+  @override
   String get dashboardNextPrayer => 'Next Prayer';
 
   @override
   String get dashboardNextShortLabel => 'Next';
+
+  @override
+  String get dashboardNowShortLabel => 'Now';
 
   @override
   String get dashboardPrayerFajr => 'Fajr';
@@ -1422,6 +1428,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get prayerViewFocus => 'Focus';
+
+  @override
+  String get prayerViewNow => 'Now';
 
   @override
   String get prayerViewNext => 'Next';

@@ -28,7 +28,7 @@ class PrayerTimelineItem {
     required this.prayer,
     required this.name,
     required this.time,
-    required this.isNext,
+    required this.isCurrent,
     required this.isFocus,
     required this.isPassed,
   });
@@ -36,7 +36,7 @@ class PrayerTimelineItem {
   final PrayerKey prayer;
   final String name;
   final String time;
-  final bool isNext;
+  final bool isCurrent;
   final bool isFocus;
   final bool isPassed;
 }

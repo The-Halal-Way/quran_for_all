@@ -35,6 +35,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   PrayerTimesErrorType _errorType = PrayerTimesErrorType.none;
   bool _loading = false;
   String? _nextPrayer;
+  String? _currentPrayer;
   bool _warmingUpcomingDays = false;
 
   Map<String, String>? get prayerTimes => _prayerTimes;
@@ -43,6 +44,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   PrayerTimesErrorType get errorType => _errorType;
   bool get isLoading => _loading;
   String? get nextPrayer => _nextPrayer;
+  String? get currentPrayer => _currentPrayer;
   bool get hasData => _prayerTimes != null && _prayerTimes!.isNotEmpty;
 
   Future<void> loadPrayerTimes({bool forceRefresh = false}) async {
@@ -191,6 +193,17 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
       }
     }
 
+    // The running prayer is the last one whose window has started today.
+    // Before Fajr, last night's Isha window is still in effect.
+    String? currentPrayerKey;
+    for (final entry in todaySchedule.entries) {
+      if (entry.value.isAfter(nowInLocation)) {
+        break;
+      }
+      currentPrayerKey = entry.key;
+    }
+    currentPrayerKey ??= 'Isha';
+
     _prayerTimes = {
       'Sehri': format.format(imsak),
       'Fajr': format.format(fajr),
@@ -210,6 +223,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
         'Isha': '${format.format(isha)} - ${format.format(tomorrowFajr)}',
     };
     _nextPrayer = nextPrayerKey;
+    _currentPrayer = currentPrayerKey;
   }
 
   PrayerTimesErrorType _mapErrorType(PrayerRepositoryErrorType type) {

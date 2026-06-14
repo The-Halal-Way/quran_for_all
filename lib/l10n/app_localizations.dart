@@ -2315,6 +2315,12 @@ abstract class AppLocalizations {
   /// **'Retry'**
   String get dashboardRetry;
 
+  /// No description provided for @dashboardCurrentPrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'Current Prayer'**
+  String get dashboardCurrentPrayer;
+
   /// No description provided for @dashboardNextPrayer.
   ///
   /// In en, this message translates to:
@@ -2326,6 +2332,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Next'**
   String get dashboardNextShortLabel;
+
+  /// No description provided for @dashboardNowShortLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Now'**
+  String get dashboardNowShortLabel;
 
   /// No description provided for @dashboardPrayerFajr.
   ///
@@ -2848,6 +2860,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Focus'**
   String get prayerViewFocus;
+
+  /// No description provided for @prayerViewNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Now'**
+  String get prayerViewNow;
 
   /// No description provided for @prayerViewNext.
   ///

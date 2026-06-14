@@ -1153,10 +1153,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardRetry => 'আবার চেষ্টা করুন';
 
   @override
+  String get dashboardCurrentPrayer => 'চলমান নামাজ';
+
+  @override
   String get dashboardNextPrayer => 'পরবর্তী নামাজ';
 
   @override
   String get dashboardNextShortLabel => 'পরবর্তী';
+
+  @override
+  String get dashboardNowShortLabel => 'এখন';
 
   @override
   String get dashboardPrayerFajr => 'ফজর';
@@ -1422,6 +1428,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get prayerViewFocus => 'ফোকাস';
+
+  @override
+  String get prayerViewNow => 'এখন';
 
   @override
   String get prayerViewNext => 'পরবর্তী';

@@ -14,34 +14,27 @@ class PrayerViewModel extends ChangeNotifier {
 
   Map<String, String> _prayerTimes = const <String, String>{};
   Map<String, String> _prayerTimeRanges = const <String, String>{};
-  String? _nextPrayerKey;
+  String? _currentPrayerKey;
 
   Map<String, String> get prayerTimes => _prayerTimes;
   Map<String, String> get prayerTimeRanges => _prayerTimeRanges;
-  String? get nextPrayerKey => _nextPrayerKey;
+  String? get currentPrayerKey => _currentPrayerKey;
   bool get hasTimes => _prayerTimes.isNotEmpty;
 
-  PrayerKey? get nextPrayer => _fromScheduleKey(_nextPrayerKey);
+  PrayerKey? get currentPrayer => _fromScheduleKey(_currentPrayerKey);
 
   PrayerKey get focusPrayer {
     if (!hasTimes) {
       return _fallbackPrayerForNow();
     }
 
-    final next = nextPrayer;
-    if (next == null) {
-      return PrayerKey.isha;
-    }
-    if (next == PrayerKey.sunrise) {
-      return PrayerKey.fajr;
-    }
-    return next;
+    return currentPrayer ?? _fallbackPrayerForNow();
   }
 
   void sync({
     required Map<String, String>? prayerTimes,
     required Map<String, String>? prayerTimeRanges,
-    required String? nextPrayerKey,
+    required String? currentPrayerKey,
     bool notify = true,
   }) {
     final nextTimes = Map<String, String>.unmodifiable(
@@ -53,13 +46,13 @@ class PrayerViewModel extends ChangeNotifier {
 
     if (mapEquals(_prayerTimes, nextTimes) &&
         mapEquals(_prayerTimeRanges, nextTimeRanges) &&
-        _nextPrayerKey == nextPrayerKey) {
+        _currentPrayerKey == currentPrayerKey) {
       return;
     }
 
     _prayerTimes = nextTimes;
     _prayerTimeRanges = nextTimeRanges;
-    _nextPrayerKey = nextPrayerKey;
+    _currentPrayerKey = currentPrayerKey;
 
     if (notify) {
       notifyListeners();
@@ -73,15 +66,15 @@ class PrayerViewModel extends ChangeNotifier {
   }
 
   List<PrayerTimelineItem> timeline(AppLocalizations l10n) {
-    final next = nextPrayer;
+    final current = currentPrayer;
     final focus = focusPrayer;
-    final nextIndex = next == null ? -1 : _order.indexOf(next);
+    final currentIndex = current == null ? -1 : _order.indexOf(current);
 
     return _order.map((prayer) {
       final index = _order.indexOf(prayer);
-      final isNext = prayer == next;
+      final isCurrent = prayer == current;
       final isFocus = prayer == focus;
-      final isPassed = nextIndex == -1 ? hasTimes : index < nextIndex;
+      final isPassed = currentIndex == -1 ? hasTimes : index < currentIndex;
 
       return PrayerTimelineItem(
         prayer: prayer,
@@ -90,7 +83,7 @@ class PrayerViewModel extends ChangeNotifier {
             _prayerTimeRanges[prayer.scheduleKey] ??
             _prayerTimes[prayer.scheduleKey] ??
             l10n.prayerViewNoTime,
-        isNext: isNext,
+        isCurrent: isCurrent,
         isFocus: isFocus,
         isPassed: isPassed && !isFocus,
       );

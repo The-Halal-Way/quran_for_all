@@ -57,7 +57,7 @@ class _PrayerViewBody extends StatelessWidget {
     viewModel.sync(
       prayerTimes: prayerTimesVm.prayerTimes,
       prayerTimeRanges: prayerTimesVm.prayerTimeRanges,
-      nextPrayerKey: prayerTimesVm.nextPrayer,
+      currentPrayerKey: prayerTimesVm.currentPrayer,
       notify: false,
     );
 

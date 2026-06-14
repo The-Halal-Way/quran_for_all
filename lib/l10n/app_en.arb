@@ -519,8 +519,10 @@
     }
   },
   "dashboardRetry": "Retry",
+  "dashboardCurrentPrayer": "Current Prayer",
   "dashboardNextPrayer": "Next Prayer",
   "dashboardNextShortLabel": "Next",
+  "dashboardNowShortLabel": "Now",
   "dashboardPrayerFajr": "Fajr",
   "dashboardPrayerSehri": "Sehri",
   "dashboardPrayerSunrise": "Sunrise",
@@ -622,6 +624,7 @@
   "prayerViewFiqhNoteTitle": "Practice note",
   "prayerViewFiqhNoteBody": "Details can vary by madhhab and local teaching. Use this as friendly guidance and follow a trusted scholar or imam for fiqh-specific rulings.",
   "prayerViewFocus": "Focus",
+  "prayerViewNow": "Now",
   "prayerViewNext": "Next",
   "prayerViewPassed": "Passed",
   "prayerViewSoon": "Soon",

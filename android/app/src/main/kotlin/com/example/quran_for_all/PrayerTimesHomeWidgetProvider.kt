@@ -64,12 +64,12 @@ class PrayerTimesHomeWidgetProvider : HomeWidgetProvider() {
             return
         }
 
-        val nextPrayer = findNextPrayer(snapshot.days, nowUtcMillis)
+        val currentPrayer = findCurrentPrayer(snapshot.days, nowUtcMillis)
         views.setTextViewText(R.id.widget_location, snapshot.locationLabel.ifBlank { "Prayer Times" })
         views.setTextViewText(R.id.widget_date, formatDate(today.localDateKey, timeZone))
         views.setTextViewText(
             R.id.widget_next_value,
-            nextPrayer?.let { "${it.label} ${formatTime(it.utcMillis, timeZone)}" } ?: "All prayers completed",
+            currentPrayer?.let { "${it.label} ${formatTime(it.utcMillis, timeZone)}" } ?: "Awaiting sync",
         )
         views.setTextViewText(
             R.id.widget_sync,
@@ -99,7 +99,12 @@ class PrayerTimesHomeWidgetProvider : HomeWidgetProvider() {
         views.setTextViewText(R.id.prayer_isha_value, "--")
     }
 
-    private fun findNextPrayer(days: List<PrayerDaySnapshot>, nowUtcMillis: Long): PrayerMoment? {
+    /**
+     * The prayer whose window is currently active: the last prayer that has
+     * started but the next one hasn't yet. Before today's Fajr, last night's
+     * Isha window is still in effect, so it falls back to today's Isha.
+     */
+    private fun findCurrentPrayer(days: List<PrayerDaySnapshot>, nowUtcMillis: Long): PrayerMoment? {
         val orderedLabels = listOf(
             "Fajr" to PrayerDaySnapshot::fajrUtcMillis,
             "Dhuhr" to PrayerDaySnapshot::dhuhrUtcMillis,
@@ -108,16 +113,24 @@ class PrayerTimesHomeWidgetProvider : HomeWidgetProvider() {
             "Isha" to PrayerDaySnapshot::ishaUtcMillis,
         )
 
+        var current: PrayerMoment? = null
         days.sortedBy { it.localDateKey }.forEach { day ->
             orderedLabels.forEach { (label, millisProvider) ->
                 val prayerTimeUtcMillis = millisProvider(day)
-                if (prayerTimeUtcMillis > nowUtcMillis) {
-                    return PrayerMoment(label, prayerTimeUtcMillis)
+                if (prayerTimeUtcMillis <= nowUtcMillis) {
+                    current = PrayerMoment(label, prayerTimeUtcMillis)
+                } else {
+                    return current ?: fallbackIsha(days)
                 }
             }
         }
 
-        return null
+        return current ?: fallbackIsha(days)
+    }
+
+    private fun fallbackIsha(days: List<PrayerDaySnapshot>): PrayerMoment? {
+        val today = days.firstOrNull() ?: return null
+        return PrayerMoment("Isha", today.ishaUtcMillis)
     }
 
     private fun formatTime(utcMillis: Long, timeZone: TimeZone): String {

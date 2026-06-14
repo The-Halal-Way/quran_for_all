@@ -25,13 +25,14 @@ struct PrayerTimesWidgetProvider: TimelineProvider {
     let timeZone = snapshot?.resolvedTimeZone ?? .current
     let todayKey = localDateKey(for: referenceDate, timeZone: timeZone)
     let displayDay = snapshot?.days.first(where: { $0.localDateKey == todayKey }) ?? snapshot?.days.first
+    let currentPrayer = snapshot?.currentPrayer(at: referenceDate)
     let nextPrayer = snapshot?.nextPrayer(after: referenceDate)
 
     return PrayerTimesWidgetEntry(
       date: referenceDate,
       snapshot: snapshot,
       displayDay: displayDay,
-      nextPrayer: nextPrayer,
+      currentPrayer: currentPrayer,
       timeZone: timeZone,
       nextRefreshDate: nextPrayer?.date.addingTimeInterval(60) ?? nextBoundary(after: referenceDate, timeZone: timeZone)
     )
@@ -61,7 +62,7 @@ struct PrayerTimesWidgetEntry: TimelineEntry {
   let date: Date
   let snapshot: PrayerWidgetSnapshot?
   let displayDay: PrayerWidgetDaySnapshot?
-  let nextPrayer: PrayerMoment?
+  let currentPrayer: PrayerMoment?
   let timeZone: TimeZone
   let nextRefreshDate: Date?
 
@@ -69,7 +70,7 @@ struct PrayerTimesWidgetEntry: TimelineEntry {
     date: Date(),
     snapshot: PrayerWidgetSnapshot.placeholder,
     displayDay: PrayerWidgetSnapshot.placeholder.days.first,
-    nextPrayer: PrayerMoment(label: "Maghrib", date: Date().addingTimeInterval(2 * 60 * 60)),
+    currentPrayer: PrayerMoment(label: "Asr", date: Date().addingTimeInterval(-30 * 60)),
     timeZone: .current,
     nextRefreshDate: Date().addingTimeInterval(30 * 60)
   )
@@ -99,16 +100,16 @@ struct PrayerTimesHomeWidgetView: View {
         }
 
         VStack(alignment: .leading, spacing: 4) {
-          Text("Next prayer")
+          Text("Current prayer")
             .font(.system(size: 11, weight: .bold))
             .foregroundColor(Color.white.opacity(0.7))
           HStack(alignment: .firstTextBaseline) {
-            Text(entry.nextPrayer?.label ?? "Offline")
+            Text(entry.currentPrayer?.label ?? "Offline")
               .font(.system(size: 20, weight: .bold, design: .rounded))
               .foregroundColor(.white)
             Spacer(minLength: 8)
             Text(
-              entry.nextPrayer.map { formattedTime($0.date, timeZone: entry.timeZone) }
+              entry.currentPrayer.map { formattedTime($0.date, timeZone: entry.timeZone) }
                 ?? "Open app"
             )
             .font(.system(size: 16, weight: .semibold, design: .rounded))
@@ -292,6 +293,41 @@ struct PrayerWidgetSnapshot: Decodable {
     }
 
     return nil
+  }
+
+  /// The prayer whose window is currently active: the last prayer that has
+  /// started but the next one hasn't yet. Before today's Fajr, last night's
+  /// Isha window is still in effect, so it falls back to today's Isha.
+  func currentPrayer(at date: Date) -> PrayerMoment? {
+    let labels: [(String, (PrayerWidgetDaySnapshot) -> Date)] = [
+      ("Fajr", { $0.fajrDate }),
+      ("Dhuhr", { $0.dhuhrDate }),
+      ("Asr", { $0.asrDate }),
+      ("Maghrib", { $0.maghribDate }),
+      ("Isha", { $0.ishaDate }),
+    ]
+
+    var current: PrayerMoment?
+    for day in days.sorted(by: { $0.localDateKey < $1.localDateKey }) {
+      for (label, value) in labels {
+        let prayerDate = value(day)
+        if prayerDate <= date {
+          current = PrayerMoment(label: label, date: prayerDate)
+        } else {
+          return current ?? fallbackIsha
+        }
+      }
+    }
+
+    return current ?? fallbackIsha
+  }
+
+  private var fallbackIsha: PrayerMoment? {
+    guard let today = days.first else {
+      return nil
+    }
+
+    return PrayerMoment(label: "Isha", date: today.ishaDate)
   }
 
   static func load() -> PrayerWidgetSnapshot? {

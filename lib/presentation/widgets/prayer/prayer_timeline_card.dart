@@ -143,7 +143,7 @@ class _PrayerTimelineTile extends StatelessWidget {
     final hintColor = isDark
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
-    final active = item.isFocus || item.isNext;
+    final active = item.isFocus || item.isCurrent;
     final text = AppTheme.text(context);
 
     return DecoratedBox(
@@ -243,12 +243,12 @@ class _StatusChip extends StatelessWidget {
     final text = AppTheme.text(context);
     final label = item.isFocus
         ? context.l10n.prayerViewFocus
-        : item.isNext
-        ? context.l10n.prayerViewNext
+        : item.isCurrent
+        ? context.l10n.prayerViewNow
         : item.isPassed
         ? context.l10n.prayerViewPassed
         : context.l10n.prayerViewSoon;
-    final chipColor = item.isFocus || item.isNext
+    final chipColor = item.isFocus || item.isCurrent
         ? accent
         : (isDark ? MyColors.darkTextTertiary : MyColors.textTertiary);
 
@@ -256,7 +256,7 @@ class _StatusChip extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2.5),
       decoration: BoxDecoration(
         color: chipColor.withValues(
-          alpha: item.isFocus || item.isNext ? 0.13 : 0.08,
+          alpha: item.isFocus || item.isCurrent ? 0.13 : 0.08,
         ),
         borderRadius: BorderRadius.circular(AppRadius.full),
       ),
