@@ -26,17 +26,17 @@ import '../../../widgets/quran/learn_quran/learn_lesson_tile.dart';
 import '../../../widgets/quran/learn_quran/learn_module_visuals.dart';
 import '../../../../services/permission_helper.dart';
 
-class LearningModuleDetailView extends StatefulWidget {
-  const LearningModuleDetailView({super.key, required this.module});
+class LearningQuranDetailView extends StatefulWidget {
+  const LearningQuranDetailView({super.key, required this.module});
 
   final LearnQuranModule module;
 
   @override
-  State<LearningModuleDetailView> createState() =>
-      _LearningModuleDetailViewState();
+  State<LearningQuranDetailView> createState() =>
+      _LearningQuranDetailViewState();
 }
 
-class _LearningModuleDetailViewState extends State<LearningModuleDetailView> {
+class _LearningQuranDetailViewState extends State<LearningQuranDetailView> {
   late AudioControlViewModel _audioControlVm;
 
   @override

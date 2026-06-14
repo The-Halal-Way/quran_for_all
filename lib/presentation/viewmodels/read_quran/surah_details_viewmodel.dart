@@ -26,6 +26,17 @@ class SurahDetailsViewModel extends ChangeNotifier {
         notifyListeners();
       }
     });
+
+    // During full-surah playback, the audio service announces the ayah
+    // about to play so its Arabic text can be highlighted, mirroring the
+    // single-ayah highlight behavior.
+    _currentAyahNumberSubscription = _audioRepository.currentAyahNumberStream
+        .listen((ayahNumber) {
+          if (_isPlayingFullSurah) {
+            _playingAyahNumber = ayahNumber;
+            notifyListeners();
+          }
+        });
   }
 
   SurahModel? _surah;
@@ -33,6 +44,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
   final AudioRepository _audioRepository;
   final AudioControlViewModel _audioControl;
   late final StreamSubscription<bool> _isPlayingSubscription;
+  late final StreamSubscription<int> _currentAyahNumberSubscription;
 
   bool _isLoading = false;
   bool _isPlayingFullSurah = false;
@@ -198,6 +210,7 @@ class SurahDetailsViewModel extends ChangeNotifier {
   @override
   void dispose() {
     _isPlayingSubscription.cancel();
+    _currentAyahNumberSubscription.cancel();
     super.dispose();
   }
 

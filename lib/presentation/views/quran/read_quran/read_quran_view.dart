@@ -44,6 +44,10 @@ class ReadQuranView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () => Navigator.of(context).maybePop(),
+          icon: const Icon(Icons.arrow_back_ios_new_rounded),
+        ),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

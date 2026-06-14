@@ -7,6 +7,7 @@ abstract class AudioRepository {
   Stream<bool> get isPausedStream;
   Stream<Duration> get positionStream;
   Stream<Duration> get durationStream;
+  Stream<int> get currentAyahNumberStream;
 
   Future<void> playAyah(AyahModel ayah);
   Future<void> playSurah(List<AyahModel> ayahs, {int startIndex = 0});

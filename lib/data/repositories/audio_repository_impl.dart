@@ -26,6 +26,10 @@ class AudioRepositoryImpl implements AudioRepository {
   Stream<Duration> get durationStream => _audioService.durationStream;
 
   @override
+  Stream<int> get currentAyahNumberStream =>
+      _audioService.currentAyahNumberStream;
+
+  @override
   Future<void> playAyah(AyahModel ayah) => _audioService.playAyah(ayah);
 
   @override

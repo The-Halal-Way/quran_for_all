@@ -1,23 +1,50 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/core/enums/app_language.dart';
+import 'package:quran_for_all/core/enums/reading_view_mode.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_images.dart';
+import 'package:quran_for_all/data/models/ayah_model.dart';
+import 'package:quran_for_all/presentation/widgets/quran/read_quran/surah_details/surah_details_search_button.dart';
 
 import '../../../../../core/localization/l10n_extensions.dart';
 import '../../../../../core/theme/app_spacing.dart';
 import '../../../../../core/theme/app_theme.dart';
 import '../../../../../data/models/surah_model.dart';
 import '../../../common/app_pill.dart';
+import 'surah_bottom_controls.dart';
 
 class SurahMetaCard extends StatelessWidget {
   const SurahMetaCard({
     super.key,
     required this.surah,
     required this.titleText,
+    required this.readingViewMode,
+    required this.showPronunciation,
+    required this.showTranslation,
+    required this.isPlayingFullSurah,
+    required this.ayahs,
+    required this.language,
+    required this.onJumpToAyah,
+    required this.onToggleReadingMode,
+    required this.onTogglePronunciation,
+    required this.onToggleTranslation,
+    required this.onTogglePlayback,
   });
 
   final SurahModel surah;
   final String titleText;
+  final ReadingViewMode readingViewMode;
+  final bool showPronunciation;
+  final bool showTranslation;
+  final bool isPlayingFullSurah;
+  final List<AyahModel> ayahs;
+  final AppLanguage language;
+  final ValueChanged<int> onJumpToAyah;
+  final VoidCallback onToggleReadingMode;
+  final VoidCallback onTogglePronunciation;
+  final VoidCallback onToggleTranslation;
+  final VoidCallback onTogglePlayback;
 
   static const List<String> _backgroundImages = <String>[
     MyImages.background1,
@@ -40,6 +67,10 @@ class SurahMetaCard extends StatelessWidget {
       width: double.infinity,
       clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(
+        borderRadius: const BorderRadius.only(
+          bottomLeft: Radius.circular(AppRadius.xl),
+          bottomRight: Radius.circular(AppRadius.xl),
+        ),
         image: DecorationImage(
           image: AssetImage(bgImage),
           fit: BoxFit.cover,
@@ -48,6 +79,13 @@ class SurahMetaCard extends StatelessWidget {
             BlendMode.darken,
           ),
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.18),
+            blurRadius: 16,
+            offset: const Offset(0, 6),
+          ),
+        ],
       ),
       child: Stack(
         children: [
@@ -70,10 +108,10 @@ class SurahMetaCard extends StatelessWidget {
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(
-                AppSpacing.xl - 2,
-                AppSpacing.sm * 2.5,
-                AppSpacing.xl - 2,
-                AppSpacing.xl - 2,
+                AppSpacing.lg,
+                AppSpacing.xs,
+                AppSpacing.lg,
+                AppSpacing.sm,
               ),
               child: Column(
                 children: [
@@ -88,36 +126,34 @@ class SurahMetaCard extends StatelessWidget {
                       ),
                       Expanded(
                         child: Text(
-                          surah.nameArabic,
+                          titleText,
                           textAlign: TextAlign.center,
                           style: AppTheme.surahArabicName(
                             context,
                           ).copyWith(color: Colors.white),
                         ),
                       ),
-                      SizedBox(width: 40),
+                      SurahDetailsSearchButton(
+                        ayahs: ayahs,
+                        language: language,
+                        onJumpToAyah: onJumpToAyah,
+                      ),
                     ],
-                  ),
-                  const SizedBox(height: AppSpacing.xs + 1),
-                  Text(
-                    titleText,
-                    style: AppTheme.text(
-                      context,
-                    ).titleLarge.copyWith(color: Colors.white),
                   ),
                   if (surah.nameEnglish.trim().isNotEmpty &&
                       titleText.trim().toLowerCase() !=
-                          surah.nameEnglish.trim().toLowerCase()) ...[
-                    const SizedBox(height: AppSpacing.xs + 1),
-                    Text(
-                      surah.nameEnglish,
-                      textAlign: TextAlign.center,
-                      style: AppTheme.text(context).bodyMedium.copyWith(
-                        color: Colors.white.withValues(alpha: 0.9),
+                          surah.nameEnglish.trim().toLowerCase())
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Text(
+                        surah.nameEnglish,
+                        textAlign: TextAlign.center,
+                        style: AppTheme.text(context).bodySmall.copyWith(
+                          color: Colors.white.withValues(alpha: 0.85),
+                        ),
                       ),
                     ),
-                  ],
-                  const SizedBox(height: AppSpacing.lg - 2),
+                  const SizedBox(height: AppSpacing.sm),
                   Wrap(
                     spacing: AppSpacing.sm,
                     runSpacing: AppSpacing.sm,
@@ -135,6 +171,32 @@ class SurahMetaCard extends StatelessWidget {
                         label: _localizedRevelationType(context),
                       ),
                     ],
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  Center(
+                    child: Container(
+                      width: 56,
+                      height: 3,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.22),
+                        borderRadius: BorderRadius.circular(AppRadius.tiny),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: AppSpacing.sm),
+                  SurahBottomControls(
+                    embedded: true,
+                    readingViewMode: readingViewMode,
+                    showPronunciation: showPronunciation,
+                    showTranslation: showTranslation,
+                    isPlayingFullSurah: isPlayingFullSurah,
+                    ayahs: ayahs,
+                    language: language,
+                    onJumpToAyah: onJumpToAyah,
+                    onToggleReadingMode: onToggleReadingMode,
+                    onTogglePronunciation: onTogglePronunciation,
+                    onToggleTranslation: onToggleTranslation,
+                    onTogglePlayback: onTogglePlayback,
                   ),
                 ],
               ),

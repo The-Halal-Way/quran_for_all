@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quran_for_all/presentation/widgets/quran/read_quran/surah_details/surah_bottom_controls.dart';
 import 'package:quran_for_all/presentation/widgets/quran/read_quran/surah_details/surah_ayah_list.dart';
 
 import '../../../../core/enums/playback_source.dart';
@@ -86,33 +85,6 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
         : () => unawaited(_playFullSurahWithFeedback(context, viewModel));
 
     return Scaffold(
-      bottomNavigationBar: viewModel.isLoading || viewModel.errorMessage != null
-          ? null
-          : SurahBottomControls(
-              readingViewMode: settings.readingViewMode,
-              showPronunciation: settings.showPronunciation,
-              showTranslation: settings.showTranslation,
-              isPlayingFullSurah: viewModel.isPlayingFullSurah,
-              ayahs: viewModel.ayahs,
-              language: settings.language,
-              onJumpToAyah: _jumpToAyahFromSearch,
-              onToggleReadingMode: () {
-                final nextMode =
-                    settings.readingViewMode == ReadingViewMode.detailsView
-                    ? ReadingViewMode.regularView
-                    : ReadingViewMode.detailsView;
-                unawaited(settingsViewModel.setReadingViewMode(nextMode));
-              },
-              onTogglePronunciation: () => unawaited(
-                settingsViewModel.setShowPronunciation(
-                  !settings.showPronunciation,
-                ),
-              ),
-              onToggleTranslation: () => unawaited(
-                settingsViewModel.setShowTranslation(!settings.showTranslation),
-              ),
-              onTogglePlayback: onTogglePlayback,
-            ),
       body: viewModel.isLoading
           ? const Center(child: CircularProgressIndicator())
           : viewModel.errorMessage != null
@@ -126,13 +98,39 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
             )
           : Column(
               children: [
-                // surah info and play full surah button
+                // surah info, reading options & playback controls
                 SurahMetaCard(
                   surah: widget.surah,
                   titleText: widget.surah.localizedTitle(
                     context,
                     settings.language,
                   ),
+                  readingViewMode: settings.readingViewMode,
+                  showPronunciation: settings.showPronunciation,
+                  showTranslation: settings.showTranslation,
+                  isPlayingFullSurah: viewModel.isPlayingFullSurah,
+                  ayahs: viewModel.ayahs,
+                  language: settings.language,
+                  onJumpToAyah: _jumpToAyahFromSearch,
+                  onToggleReadingMode: () {
+                    final nextMode =
+                        settings.readingViewMode ==
+                            ReadingViewMode.detailsView
+                        ? ReadingViewMode.regularView
+                        : ReadingViewMode.detailsView;
+                    unawaited(settingsViewModel.setReadingViewMode(nextMode));
+                  },
+                  onTogglePronunciation: () => unawaited(
+                    settingsViewModel.setShowPronunciation(
+                      !settings.showPronunciation,
+                    ),
+                  ),
+                  onToggleTranslation: () => unawaited(
+                    settingsViewModel.setShowTranslation(
+                      !settings.showTranslation,
+                    ),
+                  ),
+                  onTogglePlayback: onTogglePlayback,
                 ),
                 SizedBox(height: AppSpacing.md),
                 // // Reading options: mode selector + pronunciation/translation.

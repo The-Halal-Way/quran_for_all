@@ -26,7 +26,7 @@ import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_an_nawa
 import 'package:quran_for_all/presentation/views/dashboard/hadith/hadith_forty_short_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/hijri_calendar/hijri_calendar_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/tasbeeh/tasbeeh_view.dart';
-import 'package:quran_for_all/presentation/views/quran/learn_quran/learning_module_detail_view.dart';
+import 'package:quran_for_all/presentation/views/quran/learn_quran/learning_quran_detail_view.dart';
 import 'package:quran_for_all/presentation/views/quran/read_quran/read_quran_view.dart';
 import 'package:quran_for_all/presentation/views/quran/read_quran/surah_details_view.dart';
 import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart';
@@ -159,7 +159,7 @@ class _DashboardViewState extends State<DashboardView> {
   void _openModule(BuildContext context, LearnQuranModule module) {
     Navigator.of(context).push(
       AppPageRoute<void>(
-        builder: (_) => LearningModuleDetailView(module: module),
+        builder: (_) => LearningQuranDetailView(module: module),
       ),
     );
   }

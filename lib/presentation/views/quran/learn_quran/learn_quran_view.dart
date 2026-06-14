@@ -18,7 +18,7 @@ import '../../../widgets/quran/learn_quran/learn_header_card.dart';
 import '../../../widgets/quran/learn_quran/learn_module_card.dart';
 import '../../../widgets/quran/learn_quran/learn_next_lesson_card.dart';
 import '../../../../core/utils/app_page_route.dart';
-import 'learning_module_detail_view.dart';
+import 'learning_quran_detail_view.dart';
 
 class LearnQuranView extends StatefulWidget {
   const LearnQuranView({super.key, this.embedded = false});
@@ -53,6 +53,10 @@ class _LearnQuranViewState extends State<LearnQuranView> {
       appBar: widget.embedded
           ? null
           : AppBar(
+              leading: IconButton(
+                onPressed: () => Navigator.of(context).maybePop(),
+                icon: const Icon(Icons.arrow_back_ios_new_rounded),
+              ),
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -179,7 +183,7 @@ class _LearnQuranViewState extends State<LearnQuranView> {
   void _openModule(BuildContext context, LearnQuranModule module) {
     Navigator.of(context).push(
       AppPageRoute<void>(
-        builder: (_) => LearningModuleDetailView(module: module),
+        builder: (_) => LearningQuranDetailView(module: module),
       ),
     );
   }

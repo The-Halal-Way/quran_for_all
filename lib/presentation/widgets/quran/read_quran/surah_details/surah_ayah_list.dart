@@ -65,10 +65,25 @@ class SurahAyahList extends StatelessWidget {
                 TextSpan(
                   children: List.generate(viewModel.ayahs.length, (index) {
                     final ayah = viewModel.ayahs[index];
+                    final colorScheme = Theme.of(context).colorScheme;
+                    final isPlaying = viewModel.isAyahPlaying(
+                      ayah.ayahNumber,
+                    );
+                    final isHighlighted =
+                        ayah.ayahNumber == _highlightedAyahNumber;
 
-                    // 1) The ayah text (tappable)
-                    final textSpan = TextSpan(
-                      text: '${ayah.arabicText} ',
+                    // 1) The ayah text (tappable). While playing, only the
+                    // portion of the ayah already recited is highlighted
+                    // (progressing left-to-right through the text), mirroring
+                    // the details-view word-by-word highlight behavior.
+                    // While temporarily marked (e.g. last read), the whole
+                    // ayah gets a flat highlight instead.
+                    final ayahTextSpans = _buildAyahTextSpans(
+                      ayah: ayah,
+                      isPlaying: isPlaying,
+                      isHighlighted: isHighlighted,
+                      colorScheme: colorScheme,
+                      audioControl: audioControl,
                       recognizer: TapGestureRecognizer()
                         ..onTap = () => _showAyahDetailsSheet(
                           context,
@@ -121,7 +136,7 @@ class SurahAyahList extends StatelessWidget {
                       ),
                     );
 
-                    return [textSpan, numberSpan, anchorSpan];
+                    return [...ayahTextSpans, numberSpan, anchorSpan];
                   }).expand((spans) => spans).toList(),
                 ),
                 textDirection: TextDirection.rtl,
@@ -330,5 +345,83 @@ class SurahAyahList extends StatelessWidget {
 
   GlobalKey _ayahKeyFor(int ayahNumber) {
     return _ayahKeys.putIfAbsent(ayahNumber, GlobalKey.new);
+  }
+
+  // Mirrors AyahTile's early-completion easing so the regular-view highlight
+  // finishes a moment before the audio actually ends.
+  static const double _earlyHighlightPercent = 0.14;
+  static const double _minEarlySeconds = 1.0;
+  static const double _maxEarlySeconds = 6.0;
+
+  double _acceleratedProgress(AudioControlViewModel audioControl) {
+    final durationMs = audioControl.duration.inMilliseconds;
+    final positionMs = audioControl.position.inMilliseconds;
+
+    if (durationMs <= 0) {
+      return (audioControl.progress.clamp(0.0, 1.0) * 1.35).clamp(0.0, 1.0);
+    }
+
+    final durationSeconds = durationMs / 1000.0;
+    final earlySeconds = (durationSeconds * _earlyHighlightPercent).clamp(
+      _minEarlySeconds,
+      _maxEarlySeconds,
+    );
+    final effectiveDurationMs =
+        ((durationSeconds - earlySeconds).clamp(0.25, durationSeconds) * 1000)
+            .toDouble();
+    final clampedPosition = positionMs.clamp(0, durationMs);
+    return (clampedPosition / effectiveDurationMs).clamp(0.0, 1.0);
+  }
+
+  /// Builds the Arabic text spans for a single ayah in regular view.
+  ///
+  /// While the ayah is playing, only the portion already recited (from the
+  /// start of the ayah up to the current playback position) is highlighted,
+  /// so the user can visually track where the audio currently is. While
+  /// temporarily marked (e.g. last read/jumped-to), the whole ayah gets a
+  /// flat highlight instead.
+  List<InlineSpan> _buildAyahTextSpans({
+    required AyahModel ayah,
+    required bool isPlaying,
+    required bool isHighlighted,
+    required ColorScheme colorScheme,
+    required AudioControlViewModel audioControl,
+    required TapGestureRecognizer recognizer,
+  }) {
+    if (isPlaying && audioControl.progress > 0) {
+      final graphemes = ayah.arabicText.characters.toList();
+      final total = graphemes.length;
+      if (total == 0) {
+        return [TextSpan(text: '${ayah.arabicText} ', recognizer: recognizer)];
+      }
+
+      final progress = _acceleratedProgress(audioControl);
+      final highlightCount = (total * progress).ceil().clamp(0, total);
+      final highlighted = graphemes.take(highlightCount).join();
+      final remaining = graphemes.skip(highlightCount).join();
+
+      return [
+        TextSpan(
+          text: highlighted,
+          style: TextStyle(
+            backgroundColor: colorScheme.secondary.withValues(alpha: 0.28),
+          ),
+          recognizer: recognizer,
+        ),
+        TextSpan(text: '$remaining ', recognizer: recognizer),
+      ];
+    }
+
+    return [
+      TextSpan(
+        text: '${ayah.arabicText} ',
+        style: isHighlighted
+            ? TextStyle(
+                backgroundColor: colorScheme.primary.withValues(alpha: 0.14),
+              )
+            : null,
+        recognizer: recognizer,
+      ),
+    ];
   }
 }

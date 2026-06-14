@@ -56,6 +56,8 @@ class AudioService {
       StreamController<bool>.broadcast();
   final StreamController<bool> _isPausedController =
       StreamController<bool>.broadcast();
+  final StreamController<int> _currentAyahNumberController =
+      StreamController<int>.broadcast();
   StreamSubscription<PlayerState>? _playerStateSubscription;
 
   bool _isPlaying = false;
@@ -74,6 +76,8 @@ class AudioService {
   Stream<bool> get isPausedStream => _isPausedController.stream;
   Stream<Duration> get positionStream => _player.onPositionChanged;
   Stream<Duration> get durationStream => _player.onDurationChanged;
+  Stream<int> get currentAyahNumberStream =>
+      _currentAyahNumberController.stream;
 
   Future<void> playAyah(AyahModel ayah) async {
     _stopRequested = false;
@@ -99,6 +103,9 @@ class AudioService {
           break;
         }
 
+        if (!_currentAyahNumberController.isClosed) {
+          _currentAyahNumberController.add(ayahs[i].ayahNumber);
+        }
         await playAyah(ayahs[i]);
       }
     } finally {
@@ -230,5 +237,6 @@ class AudioService {
     await _player.dispose();
     await _isPlayingController.close();
     await _isPausedController.close();
+    await _currentAyahNumberController.close();
   }
 }
