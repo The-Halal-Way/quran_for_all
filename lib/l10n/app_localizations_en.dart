@@ -388,6 +388,17 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String readQuranSurahOfTotal(int current, int total) {
+    return 'Surah $current of $total';
+  }
+
+  @override
+  String get readQuranPreviousSurahTooltip => 'Previous surah';
+
+  @override
+  String get readQuranNextSurahTooltip => 'Next surah';
+
+  @override
   String get readQuranSearchTitle => 'Search Quran';
 
   @override

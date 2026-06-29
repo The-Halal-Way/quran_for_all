@@ -145,6 +145,19 @@
       }
     }
   },
+  "readQuranSurahOfTotal": "Surah {current} of {total}",
+  "@readQuranSurahOfTotal": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "readQuranPreviousSurahTooltip": "Previous surah",
+  "readQuranNextSurahTooltip": "Next surah",
   "readQuranSearchTitle": "Search Quran",
   "readQuranSearchEmptyTitle": "Search Surah, Ayah, or Juz",
   "readQuranSearchEmptyBody": "Use query formats like 1:1, para 2, or any Bangla/English keyword.",

@@ -845,6 +845,24 @@ abstract class AppLocalizations {
   /// **'Results: {count}'**
   String readQuranResultsCount(int count);
 
+  /// No description provided for @readQuranSurahOfTotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Surah {current} of {total}'**
+  String readQuranSurahOfTotal(int current, int total);
+
+  /// No description provided for @readQuranPreviousSurahTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous surah'**
+  String get readQuranPreviousSurahTooltip;
+
+  /// No description provided for @readQuranNextSurahTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Next surah'**
+  String get readQuranNextSurahTooltip;
+
   /// No description provided for @readQuranSearchTitle.
   ///
   /// In en, this message translates to:

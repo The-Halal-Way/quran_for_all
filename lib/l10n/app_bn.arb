@@ -145,6 +145,19 @@
       }
     }
   },
+  "readQuranSurahOfTotal": "সূরা {current} / {total}",
+  "@readQuranSurahOfTotal": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "readQuranPreviousSurahTooltip": "পূর্ববর্তী সূরা",
+  "readQuranNextSurahTooltip": "পরবর্তী সূরা",
   "readQuranSearchTitle": "কুরআন অনুসন্ধান",
   "readQuranSearchEmptyTitle": "সূরা, আয়াত বা পারা খুঁজুন",
   "readQuranSearchEmptyBody": "1:1, para 2 বা বাংলা/ইংরেজি কীওয়ার্ড ব্যবহার করুন।",

@@ -30,6 +30,9 @@ class SurahMetaCard extends StatelessWidget {
     required this.onTogglePronunciation,
     required this.onToggleTranslation,
     required this.onTogglePlayback,
+    this.totalSurahCount = 114,
+    this.onPreviousSurah,
+    this.onNextSurah,
   });
 
   final SurahModel surah;
@@ -45,6 +48,14 @@ class SurahMetaCard extends StatelessWidget {
   final VoidCallback onTogglePronunciation;
   final VoidCallback onToggleTranslation;
   final VoidCallback onTogglePlayback;
+
+  /// Total number of surahs in the Quran, shown as "Surah X of 114".
+  final int totalSurahCount;
+
+  /// Null when [surah] is the first/last surah, which disables the
+  /// respective navigation arrow.
+  final VoidCallback? onPreviousSurah;
+  final VoidCallback? onNextSurah;
 
   static const List<String> _backgroundImages = <String>[
     MyImages.background1,
@@ -120,7 +131,14 @@ class SurahMetaCard extends StatelessWidget {
                       IconButton(
                         icon: const Icon(
                           Icons.arrow_back_ios_new,
+                          size: 18,
                           color: MyColors.textOnPrimary,
+                        ),
+                        visualDensity: VisualDensity.compact,
+                        padding: const EdgeInsets.all(6),
+                        constraints: const BoxConstraints(
+                          minWidth: 32,
+                          minHeight: 32,
                         ),
                         onPressed: () => Navigator.of(context).pop(),
                       ),
@@ -143,20 +161,17 @@ class SurahMetaCard extends StatelessWidget {
                   if (surah.nameEnglish.trim().isNotEmpty &&
                       titleText.trim().toLowerCase() !=
                           surah.nameEnglish.trim().toLowerCase())
-                    Padding(
-                      padding: const EdgeInsets.only(top: 2),
-                      child: Text(
-                        surah.nameEnglish,
-                        textAlign: TextAlign.center,
-                        style: AppTheme.text(context).bodySmall.copyWith(
-                          color: Colors.white.withValues(alpha: 0.85),
-                        ),
+                    Text(
+                      surah.nameEnglish,
+                      textAlign: TextAlign.center,
+                      style: AppTheme.text(context).bodySmall.copyWith(
+                        color: Colors.white.withValues(alpha: 0.85),
                       ),
                     ),
-                  const SizedBox(height: AppSpacing.sm),
+                  const SizedBox(height: AppSpacing.xs),
                   Wrap(
                     spacing: AppSpacing.sm,
-                    runSpacing: AppSpacing.sm,
+                    runSpacing: AppSpacing.xs,
                     alignment: WrapAlignment.center,
                     children: [
                       AppPill.overlay(
@@ -173,15 +188,34 @@ class SurahMetaCard extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: AppSpacing.sm),
-                  Center(
-                    child: Container(
-                      width: 56,
-                      height: 3,
-                      decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.22),
-                        borderRadius: BorderRadius.circular(AppRadius.tiny),
+                  Row(
+                    children: [
+                      _SurahNavArrow(
+                        icon: Icons.chevron_left_rounded,
+                        tooltip: context.l10n.readQuranPreviousSurahTooltip,
+                        onTap: onPreviousSurah,
                       ),
-                    ),
+                      Expanded(
+                        child: Center(
+                          child: Text(
+                            context.l10n.readQuranSurahOfTotal(
+                              surah.id,
+                              totalSurahCount,
+                            ),
+                            style: AppTheme.text(context).labelMedium
+                                .copyWith(
+                                  color: Colors.white.withValues(alpha: 0.92),
+                                  fontWeight: AppTheme.weightBold,
+                                ),
+                          ),
+                        ),
+                      ),
+                      _SurahNavArrow(
+                        icon: Icons.chevron_right_rounded,
+                        tooltip: context.l10n.readQuranNextSurahTooltip,
+                        onTap: onNextSurah,
+                      ),
+                    ],
                   ),
                   const SizedBox(height: AppSpacing.sm),
                   SurahBottomControls(
@@ -213,5 +247,46 @@ class SurahMetaCard extends StatelessWidget {
       'Medinan' => context.l10n.readQuranMedinan,
       _ => context.readQuranText(surah.revelationType),
     };
+  }
+}
+
+/// Compact circular previous/next arrow used by the surah navigator strip.
+/// Dims and disables itself when [onTap] is null (e.g. at surah 1 or 114).
+class _SurahNavArrow extends StatelessWidget {
+  const _SurahNavArrow({
+    required this.icon,
+    required this.tooltip,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String tooltip;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final enabled = onTap != null;
+
+    return Tooltip(
+      message: tooltip,
+      child: InkWell(
+        onTap: onTap,
+        customBorder: const CircleBorder(),
+        child: Container(
+          width: 30,
+          height: 30,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.white.withValues(alpha: enabled ? 0.16 : 0.06),
+          ),
+          child: Icon(
+            icon,
+            size: 20,
+            color: Colors.white.withValues(alpha: enabled ? 0.95 : 0.32),
+          ),
+        ),
+      ),
+    );
   }
 }

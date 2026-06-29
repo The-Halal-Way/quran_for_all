@@ -10,10 +10,12 @@ import '../../../../core/localization/read_quran_message_localizer.dart';
 import '../../../../core/localization/surah_name_localizer.dart';
 import '../../../../core/enums/reading_view_mode.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/utils/app_page_route.dart';
 import '../../../../core/utils/app_responsive.dart';
 import '../../../../data/models/ayah_model.dart';
 import '../../../../data/models/surah_model.dart';
 import '../../../viewmodels/audio_control_viewmodel.dart';
+import '../../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../../viewmodels/settings_viewmodel.dart';
 import '../../../widgets/common/app_page_scrollbar.dart';
@@ -84,6 +86,10 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
         ? () => unawaited(viewModel.stopPlayback())
         : () => unawaited(_playFullSurahWithFeedback(context, viewModel));
 
+    final allSurahs = context.watch<ReadQuranViewModel>().surahs;
+    final previousSurah = _findSurah(allSurahs, widget.surah.id - 1);
+    final nextSurah = _findSurah(allSurahs, widget.surah.id + 1);
+
     return Scaffold(
       body: viewModel.isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -131,6 +137,15 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                     ),
                   ),
                   onTogglePlayback: onTogglePlayback,
+                  totalSurahCount: allSurahs.isNotEmpty
+                      ? allSurahs.length
+                      : 114,
+                  onPreviousSurah: previousSurah == null
+                      ? null
+                      : () => unawaited(_goToSurah(previousSurah)),
+                  onNextSurah: nextSurah == null
+                      ? null
+                      : () => unawaited(_goToSurah(nextSurah)),
                 ),
                 SizedBox(height: AppSpacing.md),
                 // // Reading options: mode selector + pronunciation/translation.
@@ -159,6 +174,30 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                 ),
               ],
             ),
+    );
+  }
+
+  SurahModel? _findSurah(List<SurahModel> surahs, int id) {
+    for (final candidate in surahs) {
+      if (candidate.id == id) {
+        return candidate;
+      }
+    }
+    return null;
+  }
+
+  Future<void> _goToSurah(SurahModel target) async {
+    final viewModel = context.read<SurahDetailsViewModel>();
+    if (viewModel.isPlayingFullSurah || viewModel.playingAyahNumber != null) {
+      await viewModel.stopPlayback();
+    }
+    if (!mounted) {
+      return;
+    }
+
+    unawaited(viewModel.openSurah(target));
+    await Navigator.of(context).pushReplacement(
+      AppPageRoute<void>(builder: (_) => SurahDetailsView(surah: target)),
     );
   }
 
