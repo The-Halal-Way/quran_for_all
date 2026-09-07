@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// Categories used to group items inside the Daily Tracker checklist.
-enum TaskCategory { prayer, nafl, dua, sunnah, quran, tasbeeh, hadith }
+enum TaskCategory { prayer, nafl, dua, sunnah, quran, tasbeeh, hadith, custom }
 
 extension TaskCategoryX on TaskCategory {
   String get code => switch (this) {
@@ -12,6 +12,7 @@ extension TaskCategoryX on TaskCategory {
     TaskCategory.quran => 'quran',
     TaskCategory.tasbeeh => 'tasbeeh',
     TaskCategory.hadith => 'hadith',
+    TaskCategory.custom => 'custom',
   };
 
   /// Icon representing the category in the daily tracker UI.
@@ -23,6 +24,7 @@ extension TaskCategoryX on TaskCategory {
     TaskCategory.quran => Icons.auto_stories_rounded,
     TaskCategory.tasbeeh => Icons.touch_app_rounded,
     TaskCategory.hadith => Icons.menu_book_rounded,
+    TaskCategory.custom => Icons.add_task_rounded,
   };
 
   static TaskCategory fromCode(String? code) {
@@ -39,6 +41,8 @@ extension TaskCategoryX on TaskCategory {
         return TaskCategory.tasbeeh;
       case 'hadith':
         return TaskCategory.hadith;
+      case 'custom':
+        return TaskCategory.custom;
       case 'prayer':
       default:
         return TaskCategory.prayer;

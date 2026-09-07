@@ -20,7 +20,6 @@ class QuranViewModel {
         learnViewModel: learnViewModel,
       ),
       hadiths: _hadiths(l10n),
-      stats: _stats(l10n, readViewModel),
     );
   }
 
@@ -47,11 +46,7 @@ class QuranViewModel {
       QuranHubAction(
         destination: QuranHubDestination.read,
         title: l10n.quranHubReadTitle,
-        subtitle: l10n.quranHubReadSubtitle,
         detail: readDetail,
-        actionLabel: l10n.quranHubReadAction,
-        metricValue: _surahCount(readViewModel).toString(),
-        metricLabel: l10n.readQuranSurahsLabel,
         iconAsset: MyIcons.quranViewIcon,
         icon: Icons.auto_stories_rounded,
         accent: MyColors.secondary,
@@ -60,11 +55,7 @@ class QuranViewModel {
       QuranHubAction(
         destination: QuranHubDestination.learn,
         title: l10n.quranHubLearnTitle,
-        subtitle: l10n.quranHubLearnSubtitle,
         detail: learnDetail,
-        actionLabel: l10n.quranHubLearnAction,
-        metricValue: learnViewModel.modules.length.toString(),
-        metricLabel: l10n.learnHeaderModulesLabel,
         iconAsset: MyIcons.learnIcon,
         icon: Icons.school_rounded,
         accent: MyColors.tertiary,
@@ -98,35 +89,5 @@ class QuranViewModel {
         accent: MyColors.tertiary,
       ),
     ];
-  }
-
-  List<QuranHubStat> _stats(
-    AppLocalizations l10n,
-    ReadQuranViewModel readViewModel,
-  ) {
-    return [
-      QuranHubStat(
-        value: _surahCount(readViewModel).toString(),
-        label: l10n.readQuranSurahsLabel,
-        icon: Icons.menu_book_rounded,
-        color: MyColors.secondary,
-      ),
-      QuranHubStat(
-        value: l10n.quranHubStatOfflineValue,
-        label: l10n.quranHubStatOfflineLabel,
-        icon: Icons.offline_bolt_rounded,
-        color: MyColors.tertiary,
-      ),
-      QuranHubStat(
-        value: l10n.quranHubStatLanguagesValue,
-        label: l10n.quranHubStatLanguagesLabel,
-        icon: Icons.translate_rounded,
-        color: MyColors.primaryLight,
-      ),
-    ];
-  }
-
-  int _surahCount(ReadQuranViewModel viewModel) {
-    return viewModel.surahs.isEmpty ? 114 : viewModel.surahs.length;
   }
 }

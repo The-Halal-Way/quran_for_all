@@ -52,11 +52,14 @@ class _JumpSheetState extends State<_JumpSheet> {
           top: Radius.circular(AppRadius.xxl),
         ),
         border: Border(
-          top: BorderSide(color: MyColors.tertiary.withOpacity(0.2), width: 1),
+          top: BorderSide(
+            color: MyColors.tertiary.withValues(alpha: 0.2),
+            width: 1,
+          ),
         ),
         boxShadow: [
           BoxShadow(
-            color: MyColors.primary.withOpacity(0.25),
+            color: MyColors.primary.withValues(alpha: 0.25),
             blurRadius: 32,
             offset: const Offset(0, -4),
           ),
@@ -133,8 +136,8 @@ class _JumpSheetState extends State<_JumpSheet> {
                 ),
                 filled: true,
                 fillColor: widget.isDark
-                    ? MyColors.darkSurface.withOpacity(0.6)
-                    : MyColors.divider.withOpacity(0.25),
+                    ? MyColors.darkSurface.withValues(alpha: 0.6)
+                    : MyColors.divider.withValues(alpha: 0.25),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadius.base),
                   borderSide: BorderSide.none,
@@ -217,9 +220,9 @@ class _JumpListTile extends StatelessWidget {
               height: 36,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(AppRadius.compact),
-                color: MyColors.tertiary.withOpacity(0.1),
+                color: MyColors.tertiary.withValues(alpha: 0.1),
                 border: Border.all(
-                  color: MyColors.tertiary.withOpacity(0.25),
+                  color: MyColors.tertiary.withValues(alpha: 0.25),
                   width: 0.8,
                 ),
               ),

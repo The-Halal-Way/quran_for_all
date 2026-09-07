@@ -17,6 +17,7 @@ String categoryLabel(BuildContext context, TaskCategory category) {
     TaskCategory.quran => l10n.dailyTrackerCategoryQuran,
     TaskCategory.tasbeeh => l10n.dailyTrackerCategoryTasbeeh,
     TaskCategory.hadith => l10n.dailyTrackerCategoryHadith,
+    TaskCategory.custom => l10n.dailyTrackerCategoryCustom,
   };
 }
 
@@ -30,6 +31,7 @@ Color categoryColor(TaskCategory category) {
     TaskCategory.quran => MyColors.primary,
     TaskCategory.tasbeeh => MyColors.secondaryLight,
     TaskCategory.hadith => MyColors.primaryLight,
+    TaskCategory.custom => MyColors.info,
   };
 }
 

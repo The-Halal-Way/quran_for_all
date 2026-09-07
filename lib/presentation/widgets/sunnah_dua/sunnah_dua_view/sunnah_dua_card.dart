@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
-import '../../../../data/models/sunnah_dua/sunnah_dua_models.dart';
+import '../../../models/sunnah_dua_item.dart';
 
 class SunnahDuaCard extends StatelessWidget {
   const SunnahDuaCard({
@@ -20,75 +20,135 @@ class SunnahDuaCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final surface = isDark ? MyColors.darkCardFill : Colors.white;
-
+    final colors = Theme.of(context).colorScheme;
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    final featured = item.isFeatured;
+    final accent = dark
+        ? Color.lerp(item.accent, Colors.white, 0.45)!
+        : item.accent;
+    final foreground = featured ? Colors.white : colors.onSurface;
     return Semantics(
       button: true,
       excludeSemantics: true,
+      onTap: onTap,
       label: '$kindLabel. ${item.title}. ${item.subtitle}',
       child: Material(
         color: Colors.transparent,
-        borderRadius: BorderRadius.circular(AppRadius.lg),
+        borderRadius: BorderRadius.circular(AppRadius.xl),
         clipBehavior: Clip.antiAlias,
         child: InkWell(
           onTap: onTap,
           child: Ink(
-            padding: const EdgeInsets.all(AppSpacing.md),
             decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadius.xl),
               gradient: LinearGradient(
-                colors: [surface, Color.lerp(surface, item.accent, 0.08)!],
-                begin: Alignment.bottomLeft,
-                end: Alignment.topRight,
+                colors: featured
+                    ? [
+                        MyColors.primary,
+                        Color.lerp(MyColors.primary, item.accent, 0.5)!,
+                      ]
+                    : [
+                        colors.surface,
+                        Color.lerp(
+                          colors.surface,
+                          item.accent,
+                          dark ? 0.15 : 0.06,
+                        )!,
+                      ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               ),
               border: Border.all(
-                color: item.accent.withValues(
-                  alpha: item.isFeatured ? 0.38 : 0.18,
-                ),
+                color: item.accent.withValues(alpha: featured ? 0.6 : 0.22),
               ),
-              borderRadius: BorderRadius.circular(AppRadius.lg),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Stack(
               children: [
-                Row(
-                  children: [
-                    Container(
-                      width: 36,
-                      height: 36,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: item.gradientColors),
-                        borderRadius: BorderRadius.circular(AppRadius.sm),
+                PositionedDirectional(
+                  top: -12,
+                  end: -18,
+                  child: ExcludeSemantics(
+                    child: Icon(
+                      item.icon,
+                      size: 108,
+                      color: (featured ? Colors.white : item.accent).withValues(
+                        alpha: 0.055,
                       ),
-                      child: Icon(item.icon, color: Colors.white, size: 18),
                     ),
-                    const Spacer(),
-                    Icon(
-                      Icons.north_east_rounded,
-                      color: item.accent,
-                      size: 17,
-                    ),
-                  ],
-                ),
-                const Spacer(),
-                Text(
-                  kindLabel.toUpperCase(),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: text.labelSmall.copyWith(
-                    color: item.accent,
-                    fontWeight: AppTheme.weightBold,
-                    letterSpacing: 0.7,
                   ),
                 ),
-                const SizedBox(height: AppSpacing.xs),
-                Text(
-                  item.title,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: text.titleSmall.copyWith(
-                    fontWeight: AppTheme.weightExtraBold,
-                    height: 1.15,
+                Padding(
+                  padding: const EdgeInsets.all(AppSpacing.md),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: 40,
+                        height: 44,
+                        decoration: BoxDecoration(
+                          color: (featured ? Colors.white : item.accent)
+                              .withValues(alpha: 0.12),
+                          borderRadius: const BorderRadius.vertical(
+                            top: Radius.circular(24),
+                            bottom: Radius.circular(12),
+                          ),
+                          border: Border.all(
+                            color: (featured ? Colors.white : item.accent)
+                                .withValues(alpha: 0.2),
+                          ),
+                        ),
+                        child: Icon(
+                          item.icon,
+                          color: featured ? MyColors.tertiaryLight : accent,
+                          size: 22,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.md),
+                      Text(
+                        item.title,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: text.titleSmall.copyWith(
+                          color: foreground,
+                          fontWeight: AppTheme.weightExtraBold,
+                          height: 1.25,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.xs),
+                      Text(
+                        item.subtitle,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: text.bodySmall.copyWith(
+                          color: foreground.withValues(alpha: 0.72),
+                          height: 1.35,
+                        ),
+                      ),
+                      const Spacer(),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              kindLabel,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: text.labelSmall.copyWith(
+                                color: featured
+                                    ? MyColors.tertiaryLight
+                                    : accent,
+                                fontWeight: AppTheme.weightBold,
+                              ),
+                            ),
+                          ),
+                          Icon(
+                            Icons.arrow_forward_rounded,
+                            size: 16,
+                            textDirection: Directionality.of(context),
+                            color: featured ? Colors.white : accent,
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ],

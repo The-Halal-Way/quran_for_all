@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../core/enums/task_category.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/utils/app_responsive.dart';
+import '../../../../data/models/daily_task_model.dart';
 import '../../../viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import '../../../widgets/common/app_page_scrollbar.dart';
+import '../../../widgets/dashboard/daily_tracker/add_custom_task_sheet.dart';
 import '../../../widgets/dashboard/daily_tracker/category_header_widget.dart';
 import '../../../widgets/dashboard/daily_tracker/completion_celebration_widget.dart';
 import '../../../widgets/dashboard/daily_tracker/friday_banner_widget.dart';
@@ -69,6 +73,9 @@ class DailyTrackerFullView extends StatelessWidget {
                           textMain: textMain,
                           textHint: textHint,
                           divider: divider,
+                          onDelete: task.category == TaskCategory.custom
+                              ? () => _confirmDeleteTask(context, vm, task)
+                              : null,
                         ),
                       const SizedBox(height: AppSpacing.md),
                     ],
@@ -80,6 +87,62 @@ class DailyTrackerFullView extends StatelessWidget {
             CompletionCelebrationWidget(onDismiss: vm.dismissCelebration),
         ],
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: MyColors.secondary,
+        foregroundColor: Colors.white,
+        onPressed: () => _addCustomTask(context, vm),
+        icon: const Icon(Icons.add_rounded),
+        label: Text(context.l10n.dailyTrackerAddTaskTooltip),
+      ),
     );
+  }
+
+  Future<void> _addCustomTask(
+    BuildContext context,
+    DailyTrackerViewModel vm,
+  ) async {
+    final result = await showAddCustomTaskSheet(context);
+    if (result == null) {
+      return;
+    }
+    await vm.addCustomTask(
+      title: result.title,
+      subtitle: result.subtitle,
+      isOptional: result.isOptional,
+    );
+  }
+
+  Future<void> _confirmDeleteTask(
+    BuildContext context,
+    DailyTrackerViewModel vm,
+    DailyTask task,
+  ) async {
+    final text = AppTheme.text(context);
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: Text(context.l10n.dailyTrackerDeleteTaskConfirmTitle),
+        content: Text(
+          context.l10n.dailyTrackerDeleteTaskConfirmMessage(task.titleEn),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: Text(MaterialLocalizations.of(dialogContext).cancelButtonLabel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: Text(
+              context.l10n.dailyTrackerDeleteAction,
+              style: text.bodyMedium.copyWith(color: MyColors.error),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed ?? false) {
+      await vm.deleteCustomTask(task.id);
+    }
   }
 }

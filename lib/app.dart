@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'core/constants/app_constants.dart';
-import 'core/enums/app_language.dart';
 import 'core/localization/l10n_extensions.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/app_responsive.dart';
@@ -25,6 +24,8 @@ import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/prayer_times_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
+import 'domain/usecases/add_custom_task_usecase.dart';
+import 'domain/usecases/delete_custom_task_usecase.dart';
 import 'domain/usecases/get_daily_tasks_usecase.dart';
 import 'domain/usecases/prayer_times/load_prayer_times_usecase.dart';
 import 'domain/usecases/toggle_task_usecase.dart';
@@ -116,6 +117,14 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               ToggleTaskUseCase(context.read<DailyTrackerRepository>()),
         ),
+        Provider<AddCustomTaskUseCase>(
+          create: (context) =>
+              AddCustomTaskUseCase(context.read<DailyTrackerRepository>()),
+        ),
+        Provider<DeleteCustomTaskUseCase>(
+          create: (context) =>
+              DeleteCustomTaskUseCase(context.read<DailyTrackerRepository>()),
+        ),
         ChangeNotifierProvider<AudioControlViewModel>(
           create: (context) => AudioControlViewModel(
             audioRepository: context.read<AudioRepository>(),
@@ -165,6 +174,8 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) => DailyTrackerViewModel(
             getDailyTasksUseCase: context.read<GetDailyTasksUseCase>(),
             toggleTaskUseCase: context.read<ToggleTaskUseCase>(),
+            addCustomTaskUseCase: context.read<AddCustomTaskUseCase>(),
+            deleteCustomTaskUseCase: context.read<DeleteCustomTaskUseCase>(),
           ),
         ),
       ],
@@ -180,7 +191,7 @@ class QuranForAllApp extends StatelessWidget {
               theme: AppTheme.lightTheme,
               darkTheme: AppTheme.darkTheme,
               themeMode: settingsViewModel.settings.themeMode,
-              locale: Locale(settingsViewModel.settings.language.code),
+              locale: settingsViewModel.settings.language.locale,
               localizationsDelegates: AppLocalizations.localizationsDelegates,
               supportedLocales: AppLocalizations.supportedLocales,
               builder: (context, child) {

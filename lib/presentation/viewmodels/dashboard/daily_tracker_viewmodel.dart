@@ -4,6 +4,8 @@ import 'package:flutter/foundation.dart';
 
 import '../../../core/enums/task_category.dart';
 import '../../../data/models/daily_task_model.dart';
+import '../../../domain/usecases/add_custom_task_usecase.dart';
+import '../../../domain/usecases/delete_custom_task_usecase.dart';
 import '../../../domain/usecases/get_daily_tasks_usecase.dart';
 import '../../../domain/usecases/toggle_task_usecase.dart';
 
@@ -13,13 +15,19 @@ class DailyTrackerViewModel extends ChangeNotifier {
   DailyTrackerViewModel({
     required GetDailyTasksUseCase getDailyTasksUseCase,
     required ToggleTaskUseCase toggleTaskUseCase,
+    required AddCustomTaskUseCase addCustomTaskUseCase,
+    required DeleteCustomTaskUseCase deleteCustomTaskUseCase,
   }) : _getDailyTasksUseCase = getDailyTasksUseCase,
-       _toggleTaskUseCase = toggleTaskUseCase {
+       _toggleTaskUseCase = toggleTaskUseCase,
+       _addCustomTaskUseCase = addCustomTaskUseCase,
+       _deleteCustomTaskUseCase = deleteCustomTaskUseCase {
     unawaited(loadTasks());
   }
 
   final GetDailyTasksUseCase _getDailyTasksUseCase;
   final ToggleTaskUseCase _toggleTaskUseCase;
+  final AddCustomTaskUseCase _addCustomTaskUseCase;
+  final DeleteCustomTaskUseCase _deleteCustomTaskUseCase;
 
   List<DailyTask> _tasks = [];
   bool _isLoading = false;
@@ -89,6 +97,27 @@ class DailyTrackerViewModel extends ChangeNotifier {
       _showCelebration = true;
       notifyListeners();
     }
+  }
+
+  /// Creates a new custom task and reloads the checklist.
+  Future<void> addCustomTask({
+    required String title,
+    String subtitle = '',
+    bool isOptional = false,
+  }) async {
+    await _addCustomTaskUseCase(
+      title: title,
+      subtitle: subtitle,
+      isOptional: isOptional,
+    );
+    await loadTasks();
+  }
+
+  /// Deletes a custom task (and its saved progress) and reloads the
+  /// checklist.
+  Future<void> deleteCustomTask(String taskId) async {
+    await _deleteCustomTaskUseCase(taskId: taskId);
+    await loadTasks();
   }
 
   /// Hides the completion celebration overlay.

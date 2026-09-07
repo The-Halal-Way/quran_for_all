@@ -29,113 +29,52 @@ class _IntroPage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // Hero banner
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+            padding: const EdgeInsets.all(AppSpacing.lg),
             decoration: BoxDecoration(
-              gradient: const LinearGradient(
+              gradient: LinearGradient(
                 colors: [
-                  MyColors.primary,
-                  MyColors.primaryLight,
-                  MyColors.secondary,
+                  MyColors.primaryLight.withValues(alpha: isDark ? 0.24 : 0.10),
+                  MyColors.primary.withValues(alpha: isDark ? 0.22 : 0.055),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
-              borderRadius: BorderRadius.circular(AppRadius.xl),
-              boxShadow: [
-                BoxShadow(
-                  color: MyColors.secondary.withOpacity(0.25),
-                  blurRadius: 24,
-                  offset: const Offset(0, 8),
-                ),
-              ],
+              borderRadius: BorderRadius.circular(AppRadius.lg),
+              border: Border.all(
+                color: MyColors.primaryLight.withValues(alpha: 0.20),
+              ),
             ),
-            child: Column(
+            child: Row(
               children: [
-                _ArabicOrnament(color: Colors.white.withOpacity(0.9), size: 48),
-                const SizedBox(height: 16),
-                Text(
-                  'الأربعون النووية',
-                  style: appText.hadithIntroArabicTitle.copyWith(
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  book.title,
-                  style: appText.hadithIntroBookTitle.copyWith(
-                    color: Colors.white.withOpacity(0.7),
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 16),
-                Container(
-                  width: 60,
-                  height: 1.5,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        Colors.transparent,
-                        Colors.white.withOpacity(0.6),
-                        Colors.transparent,
-                      ],
-                    ),
-                    borderRadius: BorderRadius.circular(AppRadius.hairline),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  isBangla ? 'ইমাম আন-নওয়াওয়ী (রহ.)' : 'Imam An-Nawawi (RA)',
-                  style: appText.hadithIntroAuthor.copyWith(
-                    color: Colors.white.withOpacity(0.65),
+                _ArabicOrnament(color: MyColors.primaryLight, size: 52),
+                const SizedBox(width: AppSpacing.lg),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'الأربعون النووية',
+                        style: appText.hadithArabicHeader.copyWith(
+                          color: MyColors.primaryLight,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        isBangla
+                            ? 'ইমাম আন-নওয়াওয়ী (রহ.) • ${book.hadiths.length} হাদিস'
+                            : 'Imam An-Nawawi (RA) • ${book.hadiths.length} hadiths',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: appText.bodySmall.copyWith(color: textSub),
+                      ),
+                    ],
                   ),
                 ),
               ],
             ),
           ),
-
           const SizedBox(height: 20),
-
-          // Stats row
-          Row(
-            children: [
-              _StatChip(
-                icon: Icons.format_list_numbered_rounded,
-                value: '42',
-                label: isBangla ? 'হাদিস' : 'Hadiths',
-                isDark: isDark,
-                cardBg: cardBg,
-                textMain: textMain,
-                textHint: textHint,
-              ),
-              const SizedBox(width: 12),
-              _StatChip(
-                icon: Icons.translate_rounded,
-                value: isBangla ? '২' : '2',
-                label: isBangla ? 'ভাষা' : 'Languages',
-                isDark: isDark,
-                cardBg: cardBg,
-                textMain: textMain,
-                textHint: textHint,
-              ),
-              const SizedBox(width: 12),
-              _StatChip(
-                icon: Icons.auto_stories_rounded,
-                value: '٦٣١',
-                label: isBangla ? 'হিজরি' : 'Hijri',
-                isDark: isDark,
-                cardBg: cardBg,
-                textMain: textMain,
-                textHint: textHint,
-              ),
-            ],
-          ),
-
-          const SizedBox(height: 20),
-
-          // Introduction text card
           _GlassCard(
             isDark: isDark,
             cardBg: cardBg,
@@ -290,7 +229,9 @@ class _ArabicCard extends StatelessWidget {
               ),
         boxShadow: [
           BoxShadow(
-            color: MyColors.primaryLight.withOpacity(isDark ? 0.25 : 0.35),
+            color: MyColors.primaryLight.withValues(
+              alpha: isDark ? 0.25 : 0.35,
+            ),
             blurRadius: 20,
             offset: const Offset(0, 6),
           ),
@@ -303,7 +244,7 @@ class _ArabicCard extends StatelessWidget {
             right: -10,
             top: -10,
             child: _ArabicOrnament(
-              color: Colors.white.withOpacity(0.04),
+              color: Colors.white.withValues(alpha: 0.04),
               size: 120,
             ),
           ),
@@ -311,7 +252,7 @@ class _ArabicCard extends StatelessWidget {
             left: -10,
             bottom: -10,
             child: _ArabicOrnament(
-              color: Colors.white.withOpacity(0.03),
+              color: Colors.white.withValues(alpha: 0.03),
               size: 80,
             ),
           ),
@@ -331,17 +272,17 @@ class _ArabicCard extends StatelessWidget {
                         vertical: 4,
                       ),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.1),
+                        color: Colors.white.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(AppRadius.lg),
                         border: Border.all(
-                          color: Colors.white.withOpacity(0.15),
+                          color: Colors.white.withValues(alpha: 0.15),
                           width: 0.5,
                         ),
                       ),
                       child: Text(
                         'النص العربي',
                         style: text.hadithArabicBadge.copyWith(
-                          color: Colors.white.withOpacity(0.7),
+                          color: Colors.white.withValues(alpha: 0.7),
                         ),
                       ),
                     ),
@@ -350,16 +291,16 @@ class _ArabicCard extends StatelessWidget {
                       height: 24,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: MyColors.secondary.withOpacity(0.2),
+                        color: MyColors.primaryLight.withValues(alpha: 0.2),
                         border: Border.all(
-                          color: MyColors.secondary.withOpacity(0.4),
+                          color: MyColors.primaryLight.withValues(alpha: 0.4),
                           width: 0.8,
                         ),
                       ),
                       child: const Icon(
                         Icons.format_quote_rounded,
                         size: 14,
-                        color: MyColors.secondaryLight,
+                        color: MyColors.primaryLight,
                       ),
                     ),
                   ],
@@ -373,7 +314,7 @@ class _ArabicCard extends StatelessWidget {
                   textAlign: TextAlign.right,
                   textDirection: ui.TextDirection.rtl,
                   style: text.hadithArabicCardBody.copyWith(
-                    color: Colors.white.withOpacity(0.95),
+                    color: Colors.white.withValues(alpha: 0.95),
                   ),
                 ),
 
@@ -386,7 +327,7 @@ class _ArabicCard extends StatelessWidget {
                     gradient: LinearGradient(
                       colors: [
                         Colors.transparent,
-                        MyColors.secondary.withOpacity(0.6),
+                        MyColors.primaryLight.withValues(alpha: 0.6),
                         Colors.transparent,
                       ],
                     ),

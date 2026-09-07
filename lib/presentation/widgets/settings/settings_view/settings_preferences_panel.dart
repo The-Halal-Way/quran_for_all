@@ -61,27 +61,25 @@ class SettingsPreferencesPanel extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSpacing.sm),
-          Row(
-            children: [
-              for (
-                var index = 0;
-                index < AppLanguage.values.length;
-                index++
-              ) ...[
-                Expanded(
-                  child: SettingsChoiceSegment<AppLanguage>(
-                    value: AppLanguage.values[index],
-                    selectedValue: language,
-                    label: context.appLanguageLabel(AppLanguage.values[index]),
-                    icon: Icons.language_rounded,
-                    accent: MyColors.tertiary,
-                    onSelected: onLanguageChanged,
+          LayoutBuilder(
+            builder: (context, constraints) => Wrap(
+              spacing: AppSpacing.sm,
+              runSpacing: AppSpacing.sm,
+              children: [
+                for (final option in AppLanguage.values)
+                  SizedBox(
+                    width: (constraints.maxWidth - AppSpacing.sm) / 2,
+                    child: SettingsChoiceSegment<AppLanguage>(
+                      value: option,
+                      selectedValue: language,
+                      label: context.appLanguageLabel(option),
+                      icon: Icons.language_rounded,
+                      accent: MyColors.tertiary,
+                      onSelected: onLanguageChanged,
+                    ),
                   ),
-                ),
-                if (index < AppLanguage.values.length - 1)
-                  const SizedBox(width: AppSpacing.sm),
               ],
-            ],
+            ),
           ),
         ],
       ),

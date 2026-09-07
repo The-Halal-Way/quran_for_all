@@ -76,11 +76,14 @@ class _JumpSheetState extends State<_JumpSheet> {
           top: Radius.circular(AppRadius.xxl),
         ),
         border: Border(
-          top: BorderSide(color: MyColors.secondary.withOpacity(0.2), width: 1),
+          top: BorderSide(
+            color: MyColors.primaryLight.withValues(alpha: 0.2),
+            width: 1,
+          ),
         ),
         boxShadow: [
           BoxShadow(
-            color: MyColors.primary.withOpacity(0.3),
+            color: MyColors.primary.withValues(alpha: 0.3),
             blurRadius: 32,
             offset: const Offset(0, -4),
           ),
@@ -112,7 +115,7 @@ class _JumpSheetState extends State<_JumpSheet> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(AppRadius.compact),
                     gradient: const LinearGradient(
-                      colors: [MyColors.secondary, MyColors.primaryLight],
+                      colors: [MyColors.primary, MyColors.primaryLight],
                     ),
                   ),
                   child: const Icon(
@@ -152,13 +155,13 @@ class _JumpSheetState extends State<_JumpSheet> {
                 ),
                 prefixIcon: Icon(
                   Icons.search_rounded,
-                  color: MyColors.secondary,
+                  color: MyColors.primaryLight,
                   size: 20,
                 ),
                 filled: true,
                 fillColor: widget.isDark
-                    ? MyColors.darkSurface.withOpacity(0.6)
-                    : MyColors.divider.withOpacity(0.25),
+                    ? MyColors.darkSurface.withValues(alpha: 0.6)
+                    : MyColors.divider.withValues(alpha: 0.25),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadius.base),
                   borderSide: BorderSide.none,
@@ -166,7 +169,7 @@ class _JumpSheetState extends State<_JumpSheet> {
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadius.base),
                   borderSide: const BorderSide(
-                    color: MyColors.secondary,
+                    color: MyColors.primaryLight,
                     width: 1.5,
                   ),
                 ),
@@ -254,13 +257,11 @@ class _JumpListTile extends StatelessWidget {
               height: 38,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(AppRadius.small),
-                color: isIntro
-                    ? MyColors.secondary.withOpacity(0.1)
-                    : MyColors.primaryLight.withOpacity(0.1),
+                color: MyColors.primaryLight.withValues(alpha: 0.1),
                 border: Border.all(
                   color: isIntro
-                      ? MyColors.secondary.withOpacity(0.25)
-                      : MyColors.primaryLight.withOpacity(0.2),
+                      ? MyColors.primaryLight.withValues(alpha: 0.25)
+                      : MyColors.primaryLight.withValues(alpha: 0.2),
                   width: 0.8,
                 ),
               ),
@@ -269,7 +270,7 @@ class _JumpListTile extends StatelessWidget {
                   ? Icon(
                       Icons.menu_book_rounded,
                       size: 16,
-                      color: MyColors.secondary,
+                      color: MyColors.primaryLight,
                     )
                   : Text(
                       '${item.index + 1}',

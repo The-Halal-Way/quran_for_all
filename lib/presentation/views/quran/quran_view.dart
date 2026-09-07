@@ -12,12 +12,12 @@ import '../../../data/models/quran/quran_hub_models.dart';
 import '../../viewmodels/learn_quran_viewmodel.dart';
 import '../../viewmodels/quran/quran_viewmodel.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
-import '../../widgets/common/app_gradient_background.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
-import '../../widgets/common/section_header.dart';
-import '../../widgets/quran/quran_widgets/quran_hadith_card.dart';
-import '../../widgets/quran/quran_widgets/quran_hub_hero.dart';
-import '../../widgets/quran/quran_widgets/quran_path_card.dart';
+import '../../widgets/common/app_premium_page_background.dart';
+import '../../widgets/common/app_premium_section_title.dart';
+import '../../widgets/quran/quran_view/quran_hub_hero.dart';
+import '../../widgets/quran/quran_view/quran_path_grid.dart';
+import '../../widgets/quran/quran_view/quran_reflection_carousel.dart';
 import 'learn_quran/learn_quran_view.dart';
 import 'read_quran/read_quran_view.dart';
 
@@ -62,7 +62,7 @@ class _QuranViewState extends State<QuranView> {
 
     return Scaffold(
       body: SafeArea(
-        child: AppGradientBackground(
+        child: AppPremiumPageBackground(
           child: RefreshIndicator(
             color: MyColors.secondary,
             onRefresh: _refresh,
@@ -90,32 +90,20 @@ class _QuranViewState extends State<QuranView> {
                           title: l10n.quranHubTitle,
                           eyebrow: l10n.quranHubHeroEyebrow,
                           arabicTitle: l10n.quranHubHeroArabic,
-                          body: l10n.quranHubHeroBody,
-                          stats: content.stats,
                         ),
-                        const SizedBox(height: AppSpacing.lg),
-                        SectionHeader(
+                        const SizedBox(height: AppSpacing.xxl),
+                        AppPremiumSectionTitle(
                           title: l10n.quranHubSectionChooseTitle,
-                          subtitle: l10n.quranHubSectionChooseSubtitle,
                         ),
                         const SizedBox(height: AppSpacing.md),
-                        _PathCards(
+                        QuranPathGrid(
                           actions: content.actions,
                           onSelected: _openDestination,
                         ),
-                        const SizedBox(height: AppSpacing.lg),
-                        SectionHeader(
-                          title: l10n.quranHubHadithTitle,
-                          subtitle: l10n.quranHubHadithSubtitle,
-                        ),
+                        const SizedBox(height: AppSpacing.xxl),
+                        AppPremiumSectionTitle(title: l10n.quranHubHadithTitle),
                         const SizedBox(height: AppSpacing.md),
-                        for (final hadith in content.hadiths)
-                          Padding(
-                            padding: const EdgeInsets.only(
-                              bottom: AppSpacing.md,
-                            ),
-                            child: QuranHadithCard(hadith: hadith),
-                          ),
+                        QuranReflectionCarousel(hadiths: content.hadiths),
                       ],
                     ),
                   ),
@@ -142,50 +130,5 @@ class _QuranViewState extends State<QuranView> {
     };
 
     Navigator.of(context).push(AppPageRoute<void>(builder: (_) => page));
-  }
-}
-
-class _PathCards extends StatelessWidget {
-  const _PathCards({required this.actions, required this.onSelected});
-
-  final List<QuranHubAction> actions;
-  final ValueChanged<QuranHubDestination> onSelected;
-
-  @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth < 760) {
-          return Column(
-            children: [
-              for (var index = 0; index < actions.length; index++) ...[
-                QuranPathCard(
-                  action: actions[index],
-                  onTap: () => onSelected(actions[index].destination),
-                ),
-                if (index < actions.length - 1)
-                  const SizedBox(height: AppSpacing.md),
-              ],
-            ],
-          );
-        }
-
-        return Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            for (var index = 0; index < actions.length; index++) ...[
-              Expanded(
-                child: QuranPathCard(
-                  action: actions[index],
-                  onTap: () => onSelected(actions[index].destination),
-                ),
-              ),
-              if (index < actions.length - 1)
-                const SizedBox(width: AppSpacing.md),
-            ],
-          ],
-        );
-      },
-    );
   }
 }

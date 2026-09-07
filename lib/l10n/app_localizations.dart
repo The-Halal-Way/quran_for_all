@@ -1661,6 +1661,1176 @@ abstract class AppLocalizations {
   /// **'Retry'**
   String get duahNintyNineRetry;
 
+  /// No description provided for @languageNativeName.
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get languageNativeName;
+
+  /// No description provided for @sunnahDuaCollectionsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'For every moment'**
+  String get sunnahDuaCollectionsTitle;
+
+  /// No description provided for @sunnahDuaCollectionsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Du\'a, remembrance & a little inspiration'**
+  String get sunnahDuaCollectionsSubtitle;
+
+  /// No description provided for @sunnahDuaRoutineTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A day with the Sunnah'**
+  String get sunnahDuaRoutineTitle;
+
+  /// No description provided for @sunnahDuaRoutineSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Small practices, from waking to restful sleep.'**
+  String get sunnahDuaRoutineSubtitle;
+
+  /// No description provided for @sunnahDuaSearchCollections.
+  ///
+  /// In en, this message translates to:
+  /// **'Search collections'**
+  String get sunnahDuaSearchCollections;
+
+  /// No description provided for @sunnahDuaSearchRoutine.
+  ///
+  /// In en, this message translates to:
+  /// **'Search your daily Sunnah'**
+  String get sunnahDuaSearchRoutine;
+
+  /// No description provided for @sunnahDuaClearSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear search'**
+  String get sunnahDuaClearSearch;
+
+  /// No description provided for @sunnahDuaNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No matches found'**
+  String get sunnahDuaNoResults;
+
+  /// No description provided for @sunnahDuaNoResultsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Try another word or clear your search.'**
+  String get sunnahDuaNoResultsBody;
+
+  /// No description provided for @sunnahDuaMorningLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin your morning'**
+  String get sunnahDuaMorningLabel;
+
+  /// No description provided for @sunnahDuaDaytimeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Through the day'**
+  String get sunnahDuaDaytimeLabel;
+
+  /// No description provided for @sunnahDuaEveningLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Ease into the night'**
+  String get sunnahDuaEveningLabel;
+
+  /// No description provided for @sunnahDuaWakeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Wake'**
+  String get sunnahDuaWakeLabel;
+
+  /// No description provided for @sunnahDuaDayLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Live'**
+  String get sunnahDuaDayLabel;
+
+  /// No description provided for @sunnahDuaRestLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Rest'**
+  String get sunnahDuaRestLabel;
+
+  /// No description provided for @sunnahDuaHeroDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Let everyday moments bring you closer to Allah.'**
+  String get sunnahDuaHeroDescription;
+
+  /// No description provided for @sunnahDuaOpenPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Read practice'**
+  String get sunnahDuaOpenPractice;
+
+  /// No description provided for @sunnahRoutineWakeUpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Wake up'**
+  String get sunnahRoutineWakeUpTitle;
+
+  /// No description provided for @sunnahRoutineWakeUpSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin again with gratitude'**
+  String get sunnahRoutineWakeUpSubtitle;
+
+  /// No description provided for @sunnahRoutineWakeUpPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Praise Allah as you wake.||Clean your mouth with miswak before prayer.'**
+  String get sunnahRoutineWakeUpPointsRaw;
+
+  /// No description provided for @sunnahRoutineWakeUpPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Make the waking du\'a your first words of the day.'**
+  String get sunnahRoutineWakeUpPractice;
+
+  /// No description provided for @sunnahRoutineWashroomTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Washroom'**
+  String get sunnahRoutineWashroomTitle;
+
+  /// No description provided for @sunnahRoutineWashroomSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Care for cleanliness and privacy'**
+  String get sunnahRoutineWashroomSubtitle;
+
+  /// No description provided for @sunnahRoutineWashroomPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the du\'a before entering the washroom.||Use the left hand for cleaning after relieving yourself.||After leaving, ask Allah for forgiveness.'**
+  String get sunnahRoutineWashroomPointsRaw;
+
+  /// No description provided for @sunnahRoutineWashroomPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn the short duas for entering and leaving.'**
+  String get sunnahRoutineWashroomPractice;
+
+  /// No description provided for @sunnahRoutineMiswakTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Miswak'**
+  String get sunnahRoutineMiswakTitle;
+
+  /// No description provided for @sunnahRoutineMiswakSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A fresh start before worship'**
+  String get sunnahRoutineMiswakSubtitle;
+
+  /// No description provided for @sunnahRoutineMiswakPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Use miswak after waking.||Clean your mouth with miswak before prayer.'**
+  String get sunnahRoutineMiswakPointsRaw;
+
+  /// No description provided for @sunnahRoutineMiswakPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep your miswak clean and within reach.'**
+  String get sunnahRoutineMiswakPractice;
+
+  /// No description provided for @sunnahRoutineWuduTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Wudu'**
+  String get sunnahRoutineWuduTitle;
+
+  /// No description provided for @sunnahRoutineWuduSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prepare for prayer with care'**
+  String get sunnahRoutineWuduSubtitle;
+
+  /// No description provided for @sunnahRoutineWuduPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash the hands, rinse the mouth and nose, then wash the face and arms.||Wipe the head and wash the feet as taught in wudu.||Complete wudu carefully, then recite the testimony of faith.'**
+  String get sunnahRoutineWuduPointsRaw;
+
+  /// No description provided for @sunnahRoutineWuduPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn the complete method of wudu; these reminders include both essential acts and Sunnah details.'**
+  String get sunnahRoutineWuduPractice;
+
+  /// No description provided for @sunnahRoutineDressingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Getting dressed'**
+  String get sunnahRoutineDressingTitle;
+
+  /// No description provided for @sunnahRoutineDressingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin with the right side'**
+  String get sunnahRoutineDressingSubtitle;
+
+  /// No description provided for @sunnahRoutineDressingPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Start with the right side when putting on shoes and tending to your appearance.||Put on the right shoe first and remove the left shoe first.'**
+  String get sunnahRoutineDressingPointsRaw;
+
+  /// No description provided for @sunnahRoutineDressingPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Let getting ready become a small, consistent Sunnah habit.'**
+  String get sunnahRoutineDressingPractice;
+
+  /// No description provided for @sunnahRoutineAdhanTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hearing the adhan'**
+  String get sunnahRoutineAdhanTitle;
+
+  /// No description provided for @sunnahRoutineAdhanSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause and answer the call'**
+  String get sunnahRoutineAdhanSubtitle;
+
+  /// No description provided for @sunnahRoutineAdhanPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat the caller\'s words.||At the calls to prayer and success, say la hawla wa la quwwata illa billah.||After the adhan, send blessings upon the Prophet ﷺ and ask Allah to grant him al-Wasilah.'**
+  String get sunnahRoutineAdhanPointsRaw;
+
+  /// No description provided for @sunnahRoutineAdhanPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause other conversation long enough to listen and respond.'**
+  String get sunnahRoutineAdhanPractice;
+
+  /// No description provided for @sunnahRoutineMasjidTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'At the masjid'**
+  String get sunnahRoutineMasjidTitle;
+
+  /// No description provided for @sunnahRoutineMasjidSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Arrive with calm and reverence'**
+  String get sunnahRoutineMasjidSubtitle;
+
+  /// No description provided for @sunnahRoutineMasjidPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Walk to prayer calmly, even if the prayer has begun.||Ask Allah to open the doors of His mercy when entering.||Pray two rak\'ahs before sitting when appropriate.||When leaving, ask Allah for His bounty.'**
+  String get sunnahRoutineMasjidPointsRaw;
+
+  /// No description provided for @sunnahRoutineMasjidPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep the space peaceful for other worshippers.'**
+  String get sunnahRoutineMasjidPractice;
+
+  /// No description provided for @sunnahRoutineAfterPrayerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'After salah'**
+  String get sunnahRoutineAfterPrayerTitle;
+
+  /// No description provided for @sunnahRoutineAfterPrayerSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stay a little longer in remembrance'**
+  String get sunnahRoutineAfterPrayerSubtitle;
+
+  /// No description provided for @sunnahRoutineAfterPrayerPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Allah for forgiveness three times after the prayer.||Recite Allahumma antas-salam wa minkas-salam.||Say Subhanallah, Alhamdulillah and Allahu akbar 33 times each, completing a hundred with the reported declaration of Allah\'s oneness.'**
+  String get sunnahRoutineAfterPrayerPointsRaw;
+
+  /// No description provided for @sunnahRoutineAfterPrayerPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn one complete, authentic form of the post-prayer adhkar.'**
+  String get sunnahRoutineAfterPrayerPractice;
+
+  /// No description provided for @sunnahRoutineMorningTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Morning dhikr'**
+  String get sunnahRoutineMorningTitle;
+
+  /// No description provided for @sunnahRoutineMorningSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Carry remembrance into your day'**
+  String get sunnahRoutineMorningSubtitle;
+
+  /// No description provided for @sunnahRoutineMorningPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Say Subhanallahi wa bihamdihi one hundred times in the morning.'**
+  String get sunnahRoutineMorningPointsRaw;
+
+  /// No description provided for @sunnahRoutineMorningPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the Morning & evening collection for the Arabic and meaning.'**
+  String get sunnahRoutineMorningPractice;
+
+  /// No description provided for @sunnahRoutineDuhaTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Duha prayer'**
+  String get sunnahRoutineDuhaTitle;
+
+  /// No description provided for @sunnahRoutineDuhaSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A quiet pause in the forenoon'**
+  String get sunnahRoutineDuhaSubtitle;
+
+  /// No description provided for @sunnahRoutineDuhaPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Pray two rak\'ahs of Duha during the forenoon, after the sun has risen sufficiently and before the sun reaches its zenith.'**
+  String get sunnahRoutineDuhaPointsRaw;
+
+  /// No description provided for @sunnahRoutineDuhaPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a regular time within the Duha window that fits your day.'**
+  String get sunnahRoutineDuhaPractice;
+
+  /// No description provided for @sunnahRoutineLeavingHomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Leaving home'**
+  String get sunnahRoutineLeavingHomeTitle;
+
+  /// No description provided for @sunnahRoutineLeavingHomeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Step outside with trust'**
+  String get sunnahRoutineLeavingHomeSubtitle;
+
+  /// No description provided for @sunnahRoutineLeavingHomePointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Say the du\'a for leaving home.||Remember that strength and ability come from Allah.'**
+  String get sunnahRoutineLeavingHomePointsRaw;
+
+  /// No description provided for @sunnahRoutineLeavingHomePractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Make the doorway a reminder to place your trust in Allah.'**
+  String get sunnahRoutineLeavingHomePractice;
+
+  /// No description provided for @sunnahRoutineEatingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Eating'**
+  String get sunnahRoutineEatingTitle;
+
+  /// No description provided for @sunnahRoutineEatingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Bring Sunnah to the table'**
+  String get sunnahRoutineEatingSubtitle;
+
+  /// No description provided for @sunnahRoutineEatingPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Mention Allah\'s name before eating.||Eat with your right hand and from the food nearest to you.||Do not criticize food.||Eat moderately.'**
+  String get sunnahRoutineEatingPointsRaw;
+
+  /// No description provided for @sunnahRoutineEatingPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Use each meal as a reminder to practise these manners.'**
+  String get sunnahRoutineEatingPractice;
+
+  /// No description provided for @sunnahRoutineDrinkingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Drinking water'**
+  String get sunnahRoutineDrinkingTitle;
+
+  /// No description provided for @sunnahRoutineDrinkingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Small sips, sincere gratitude'**
+  String get sunnahRoutineDrinkingSubtitle;
+
+  /// No description provided for @sunnahRoutineDrinkingPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Drink with the right hand.||Pause between sips to breathe away from the vessel.||Praise Allah after drinking.'**
+  String get sunnahRoutineDrinkingPointsRaw;
+
+  /// No description provided for @sunnahRoutineDrinkingPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Take your time and keep your breath out of the cup.'**
+  String get sunnahRoutineDrinkingPractice;
+
+  /// No description provided for @sunnahRoutineGreetingsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Salam & a smile'**
+  String get sunnahRoutineGreetingsTitle;
+
+  /// No description provided for @sunnahRoutineGreetingsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Make kindness your greeting'**
+  String get sunnahRoutineGreetingsSubtitle;
+
+  /// No description provided for @sunnahRoutineGreetingsPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Spread salam among people.||Meet others with a warm smile.'**
+  String get sunnahRoutineGreetingsPointsRaw;
+
+  /// No description provided for @sunnahRoutineGreetingsPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin ordinary encounters with care and respect.'**
+  String get sunnahRoutineGreetingsPractice;
+
+  /// No description provided for @sunnahRoutineSpeechTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Mindful speech'**
+  String get sunnahRoutineSpeechTitle;
+
+  /// No description provided for @sunnahRoutineSpeechSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Speak well and with gentleness'**
+  String get sunnahRoutineSpeechSubtitle;
+
+  /// No description provided for @sunnahRoutineSpeechPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Say what is good or remain silent.||Be gentle in your words and dealings.'**
+  String get sunnahRoutineSpeechPointsRaw;
+
+  /// No description provided for @sunnahRoutineSpeechPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause before speaking when you feel upset.'**
+  String get sunnahRoutineSpeechPractice;
+
+  /// No description provided for @sunnahRoutineSneezingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sneezing & yawning'**
+  String get sunnahRoutineSneezingTitle;
+
+  /// No description provided for @sunnahRoutineSneezingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Gratitude in a small moment'**
+  String get sunnahRoutineSneezingSubtitle;
+
+  /// No description provided for @sunnahRoutineSneezingPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'After sneezing, say Alhamdulillah.||A Muslim who hears it responds Yarhamukallah; the sneezer replies Yahdikumullahu wa yuslihu balakum.||Cover your mouth when yawning.'**
+  String get sunnahRoutineSneezingPointsRaw;
+
+  /// No description provided for @sunnahRoutineSneezingPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn both parts of the exchange so you can respond with care.'**
+  String get sunnahRoutineSneezingPractice;
+
+  /// No description provided for @sunnahRoutineReturningHomeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Returning home'**
+  String get sunnahRoutineReturningHomeTitle;
+
+  /// No description provided for @sunnahRoutineReturningHomeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter with remembrance and salam'**
+  String get sunnahRoutineReturningHomeSubtitle;
+
+  /// No description provided for @sunnahRoutineReturningHomePointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Mention Allah when entering your home.||Greet the people at home with salam.'**
+  String get sunnahRoutineReturningHomePointsRaw;
+
+  /// No description provided for @sunnahRoutineReturningHomePractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin your return with a peaceful greeting.'**
+  String get sunnahRoutineReturningHomePractice;
+
+  /// No description provided for @sunnahRoutineFamilyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Time with family'**
+  String get sunnahRoutineFamilyTitle;
+
+  /// No description provided for @sunnahRoutineFamilySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Kindness begins at home'**
+  String get sunnahRoutineFamilySubtitle;
+
+  /// No description provided for @sunnahRoutineFamilyPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Help with the work of your household.||Treat your family with kindness.'**
+  String get sunnahRoutineFamilyPointsRaw;
+
+  /// No description provided for @sunnahRoutineFamilyPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose one useful household task and do it with care.'**
+  String get sunnahRoutineFamilyPractice;
+
+  /// No description provided for @sunnahRoutineEveningTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Evening dhikr'**
+  String get sunnahRoutineEveningTitle;
+
+  /// No description provided for @sunnahRoutineEveningSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome the evening with remembrance'**
+  String get sunnahRoutineEveningSubtitle;
+
+  /// No description provided for @sunnahRoutineEveningPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Say Subhanallahi wa bihamdihi one hundred times in the evening.'**
+  String get sunnahRoutineEveningPointsRaw;
+
+  /// No description provided for @sunnahRoutineEveningPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Return to the Morning & evening collection as the day draws to a close.'**
+  String get sunnahRoutineEveningPractice;
+
+  /// No description provided for @sunnahRoutineNightSafetyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Settle the home'**
+  String get sunnahRoutineNightSafetyTitle;
+
+  /// No description provided for @sunnahRoutineNightSafetySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A little care before bedtime'**
+  String get sunnahRoutineNightSafetySubtitle;
+
+  /// No description provided for @sunnahRoutineNightSafetyPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Cover food and drink vessels.||Close the doors before sleeping.||Extinguish lamps with flames and other open fires safely.'**
+  String get sunnahRoutineNightSafetyPointsRaw;
+
+  /// No description provided for @sunnahRoutineNightSafetyPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Include these steps in your nightly household routine.'**
+  String get sunnahRoutineNightSafetyPractice;
+
+  /// No description provided for @sunnahRoutineBedtimeRecitationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Bedtime recitation'**
+  String get sunnahRoutineBedtimeRecitationTitle;
+
+  /// No description provided for @sunnahRoutineBedtimeRecitationSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Close the day with Quran'**
+  String get sunnahRoutineBedtimeRecitationSubtitle;
+
+  /// No description provided for @sunnahRoutineBedtimeRecitationPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Recite Al-Ikhlas, Al-Falaq and An-Nas into cupped hands, blow lightly and wipe over the body; repeat three times.||Recite Ayat al-Kursi before sleeping.||Recite the final two verses of Al-Baqarah at night.'**
+  String get sunnahRoutineBedtimeRecitationPointsRaw;
+
+  /// No description provided for @sunnahRoutineBedtimeRecitationPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn these passages gradually and keep the routine steady.'**
+  String get sunnahRoutineBedtimeRecitationPractice;
+
+  /// No description provided for @sunnahRoutineSleepTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to sleep'**
+  String get sunnahRoutineSleepTitle;
+
+  /// No description provided for @sunnahRoutineSleepSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rest with trust in Allah'**
+  String get sunnahRoutineSleepSubtitle;
+
+  /// No description provided for @sunnahRoutineSleepPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Perform wudu before going to bed.||Dust the bed before lying down.||Lie on your right side and recite the sleeping du\'a.'**
+  String get sunnahRoutineSleepPointsRaw;
+
+  /// No description provided for @sunnahRoutineSleepPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep the routine simple enough to follow on tired nights.'**
+  String get sunnahRoutineSleepPractice;
+
+  /// No description provided for @sunnahRoutineForgivenessTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Seeking forgiveness'**
+  String get sunnahRoutineForgivenessTitle;
+
+  /// No description provided for @sunnahRoutineForgivenessSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Return to Allah, again and again'**
+  String get sunnahRoutineForgivenessSubtitle;
+
+  /// No description provided for @sunnahRoutineForgivenessPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Make seeking forgiveness a regular part of your day.||Turn back sincerely and try to leave the wrong behind.'**
+  String get sunnahRoutineForgivenessPointsRaw;
+
+  /// No description provided for @sunnahRoutineForgivenessPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'The Prophet ﷺ sought forgiveness and repented to Allah a hundred times a day.'**
+  String get sunnahRoutineForgivenessPractice;
+
+  /// No description provided for @sunnahRoutineDifficultyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'In difficulty'**
+  String get sunnahRoutineDifficultyTitle;
+
+  /// No description provided for @sunnahRoutineDifficultySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Words of trust when life feels heavy'**
+  String get sunnahRoutineDifficultySubtitle;
+
+  /// No description provided for @sunnahRoutineDifficultyPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Recite this du\'a in distress.||Reflect on Allah\'s greatness and forbearance.'**
+  String get sunnahRoutineDifficultyPointsRaw;
+
+  /// No description provided for @sunnahRoutineDifficultyPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Read slowly and attentively when facing hardship.'**
+  String get sunnahRoutineDifficultyPractice;
+
+  /// No description provided for @sunnahRoutineMorningEveningTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Morning & evening'**
+  String get sunnahRoutineMorningEveningTitle;
+
+  /// No description provided for @sunnahRoutineMorningEveningSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A daily rhythm of remembrance'**
+  String get sunnahRoutineMorningEveningSubtitle;
+
+  /// No description provided for @sunnahRoutineMorningEveningPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Say Subhanallahi wa bihamdihi one hundred times in the morning and one hundred times in the evening.'**
+  String get sunnahRoutineMorningEveningPointsRaw;
+
+  /// No description provided for @sunnahRoutineMorningEveningPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep a quiet moment for remembrance at both ends of your day.'**
+  String get sunnahRoutineMorningEveningPractice;
+
+  /// No description provided for @sunnahRoutineGratitudeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Gratitude'**
+  String get sunnahRoutineGratitudeTitle;
+
+  /// No description provided for @sunnahRoutineGratitudeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Notice the blessings around you'**
+  String get sunnahRoutineGratitudeSubtitle;
+
+  /// No description provided for @sunnahRoutineGratitudePointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Allah to help you be thankful.||Ask for the ability to do good deeds that please Him.'**
+  String get sunnahRoutineGratitudePointsRaw;
+
+  /// No description provided for @sunnahRoutineGratitudePractice.
+  ///
+  /// In en, this message translates to:
+  /// **'This Quranic supplication is from the prayer of Sulayman عليه السلام.'**
+  String get sunnahRoutineGratitudePractice;
+
+  /// No description provided for @sunnahRoutineFastingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah fasting'**
+  String get sunnahRoutineFastingTitle;
+
+  /// No description provided for @sunnahRoutineFastingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Make room for voluntary worship'**
+  String get sunnahRoutineFastingSubtitle;
+
+  /// No description provided for @sunnahRoutineFastingPointsRaw.
+  ///
+  /// In en, this message translates to:
+  /// **'Take suhur and break your fast promptly once the sun has set.||Consider fasting on Mondays when able.||Learn about the six fasts of Shawwal.'**
+  String get sunnahRoutineFastingPointsRaw;
+
+  /// No description provided for @sunnahRoutineFastingPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Build a sustainable voluntary practice alongside your obligations.'**
+  String get sunnahRoutineFastingPractice;
+
+  /// No description provided for @sunnahRoutineWakeUpSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 6312, 245'**
+  String get sunnahRoutineWakeUpSource;
+
+  /// No description provided for @sunnahRoutineWashroomSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 142, 154; Jami’ at-Tirmidhi 7'**
+  String get sunnahRoutineWashroomSource;
+
+  /// No description provided for @sunnahRoutineMiswakSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 245, 887'**
+  String get sunnahRoutineMiswakSource;
+
+  /// No description provided for @sunnahRoutineWuduSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 159; Sahih Muslim 234a'**
+  String get sunnahRoutineWuduSource;
+
+  /// No description provided for @sunnahRoutineDressingSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 168, 5856'**
+  String get sunnahRoutineDressingSource;
+
+  /// No description provided for @sunnahRoutineAdhanSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 384, 385'**
+  String get sunnahRoutineAdhanSource;
+
+  /// No description provided for @sunnahRoutineMasjidSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 636, 444; Sahih Muslim 713a'**
+  String get sunnahRoutineMasjidSource;
+
+  /// No description provided for @sunnahRoutineAfterPrayerSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 591, 597a'**
+  String get sunnahRoutineAfterPrayerSource;
+
+  /// No description provided for @sunnahRoutineMorningSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 2692'**
+  String get sunnahRoutineMorningSource;
+
+  /// No description provided for @sunnahRoutineDuhaSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 720'**
+  String get sunnahRoutineDuhaSource;
+
+  /// No description provided for @sunnahRoutineLeavingHomeSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunan Abi Dawud 5095'**
+  String get sunnahRoutineLeavingHomeSource;
+
+  /// No description provided for @sunnahRoutineEatingSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 5376, 5409; Jami’ at-Tirmidhi 2380'**
+  String get sunnahRoutineEatingSource;
+
+  /// No description provided for @sunnahRoutineDrinkingSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 5630, 5631; Sahih Muslim 2020, 2734a'**
+  String get sunnahRoutineDrinkingSource;
+
+  /// No description provided for @sunnahRoutineGreetingsSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 54a; Jami’ at-Tirmidhi 1956'**
+  String get sunnahRoutineGreetingsSource;
+
+  /// No description provided for @sunnahRoutineSpeechSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 6018; Sahih Muslim 2594a'**
+  String get sunnahRoutineSpeechSource;
+
+  /// No description provided for @sunnahRoutineSneezingSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 6224; Sahih Muslim 2995a'**
+  String get sunnahRoutineSneezingSource;
+
+  /// No description provided for @sunnahRoutineReturningHomeSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 2018a; Quran 24:61'**
+  String get sunnahRoutineReturningHomeSource;
+
+  /// No description provided for @sunnahRoutineFamilySource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 676; Jami’ at-Tirmidhi 3895'**
+  String get sunnahRoutineFamilySource;
+
+  /// No description provided for @sunnahRoutineEveningSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 2692'**
+  String get sunnahRoutineEveningSource;
+
+  /// No description provided for @sunnahRoutineNightSafetySource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 6295'**
+  String get sunnahRoutineNightSafetySource;
+
+  /// No description provided for @sunnahRoutineBedtimeRecitationSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 5017, 2311, 5009'**
+  String get sunnahRoutineBedtimeRecitationSource;
+
+  /// No description provided for @sunnahRoutineSleepSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 247, 6320, 6312'**
+  String get sunnahRoutineSleepSource;
+
+  /// No description provided for @sunnahRoutineForgivenessSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 2702a'**
+  String get sunnahRoutineForgivenessSource;
+
+  /// No description provided for @sunnahRoutineDifficultySource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 6346'**
+  String get sunnahRoutineDifficultySource;
+
+  /// No description provided for @sunnahRoutineMorningEveningSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 2692'**
+  String get sunnahRoutineMorningEveningSource;
+
+  /// No description provided for @sunnahRoutineGratitudeSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran 27:19'**
+  String get sunnahRoutineGratitudeSource;
+
+  /// No description provided for @sunnahRoutineFastingSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 1923, 1957; Sahih Muslim 1162, 1164; Sahih al-Bukhari 1894'**
+  String get sunnahRoutineFastingSource;
+
+  /// No description provided for @sunnahRecitationWakeArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ'**
+  String get sunnahRecitationWakeArabic;
+
+  /// No description provided for @sunnahRecitationWakePronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Alhamdu lillahil-ladhi ahyana ba\'da ma amatana wa ilayhin-nushur.'**
+  String get sunnahRecitationWakePronunciation;
+
+  /// No description provided for @sunnahRecitationWakeTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Praise belongs to Allah, who gave us life after causing us to die; to Him is the resurrection.'**
+  String get sunnahRecitationWakeTranslation;
+
+  /// No description provided for @sunnahRecitationWashroomArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ\n\nغُفْرَانَكَ'**
+  String get sunnahRecitationWashroomArabic;
+
+  /// No description provided for @sunnahRecitationWashroomPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Before entering: Allahumma inni a\'udhu bika minal-khubuthi wal-khaba\'ith.\nAfter leaving: Ghufranak.'**
+  String get sunnahRecitationWashroomPronunciation;
+
+  /// No description provided for @sunnahRecitationWashroomTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Before entering: O Allah, I seek Your protection from male and female devils.\nAfter leaving: I ask Your forgiveness.'**
+  String get sunnahRecitationWashroomTranslation;
+
+  /// No description provided for @sunnahRecitationWuduArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ'**
+  String get sunnahRecitationWuduArabic;
+
+  /// No description provided for @sunnahRecitationWuduPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Ashhadu an la ilaha illallahu wahdahu la sharika lahu, wa ashhadu anna Muhammadan \'abduhu wa rasuluh.'**
+  String get sunnahRecitationWuduPronunciation;
+
+  /// No description provided for @sunnahRecitationWuduTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'I testify that none is worthy of worship but Allah alone, without partner, and that Muhammad is His servant and messenger.'**
+  String get sunnahRecitationWuduTranslation;
+
+  /// No description provided for @sunnahRecitationMasjidArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ\n\nاللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ'**
+  String get sunnahRecitationMasjidArabic;
+
+  /// No description provided for @sunnahRecitationMasjidPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Entering: Allahummaftah li abwaba rahmatik.\nLeaving: Allahumma inni as\'aluka min fadlik.'**
+  String get sunnahRecitationMasjidPronunciation;
+
+  /// No description provided for @sunnahRecitationMasjidTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Entering: O Allah, open the doors of Your mercy for me.\nLeaving: O Allah, I ask You for Your bounty.'**
+  String get sunnahRecitationMasjidTranslation;
+
+  /// No description provided for @sunnahRecitationAfterPrayerArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'أَسْتَغْفِرُ اللَّهَ\nاللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ ذَا الْجَلَالِ وَالْإِكْرَامِ'**
+  String get sunnahRecitationAfterPrayerArabic;
+
+  /// No description provided for @sunnahRecitationAfterPrayerPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Astaghfirullah (three times).\nAllahumma antas-salamu wa minkas-salam, tabarakta dhal-jalali wal-ikram.'**
+  String get sunnahRecitationAfterPrayerPronunciation;
+
+  /// No description provided for @sunnahRecitationAfterPrayerTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'I ask Allah\'s forgiveness.\nO Allah, You are Peace and from You comes peace. Blessed are You, Possessor of majesty and honour.'**
+  String get sunnahRecitationAfterPrayerTranslation;
+
+  /// No description provided for @sunnahRecitationLeavingHomeArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ'**
+  String get sunnahRecitationLeavingHomeArabic;
+
+  /// No description provided for @sunnahRecitationLeavingHomePronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Bismillahi tawakkaltu \'alallah, wa la hawla wa la quwwata illa billah.'**
+  String get sunnahRecitationLeavingHomePronunciation;
+
+  /// No description provided for @sunnahRecitationLeavingHomeTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'In Allah\'s name, I put my trust in Allah. There is no might or power except through Allah.'**
+  String get sunnahRecitationLeavingHomeTranslation;
+
+  /// No description provided for @sunnahRecitationEatingArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'بِسْمِ اللَّهِ'**
+  String get sunnahRecitationEatingArabic;
+
+  /// No description provided for @sunnahRecitationEatingPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Bismillah.'**
+  String get sunnahRecitationEatingPronunciation;
+
+  /// No description provided for @sunnahRecitationEatingTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'In the name of Allah.'**
+  String get sunnahRecitationEatingTranslation;
+
+  /// No description provided for @sunnahRecitationSneezingArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'الْحَمْدُ لِلَّهِ\nيَرْحَمُكَ اللَّهُ\nيَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ'**
+  String get sunnahRecitationSneezingArabic;
+
+  /// No description provided for @sunnahRecitationSneezingPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Alhamdulillah.\nYarhamukallah.\nYahdikumullahu wa yuslihu balakum.'**
+  String get sunnahRecitationSneezingPronunciation;
+
+  /// No description provided for @sunnahRecitationSneezingTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Praise belongs to Allah.\nMay Allah have mercy on you.\nMay Allah guide you and set your affairs right.'**
+  String get sunnahRecitationSneezingTranslation;
+
+  /// No description provided for @sunnahRecitationSleepArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'بِاسْمِكَ أَمُوتُ وَأَحْيَا'**
+  String get sunnahRecitationSleepArabic;
+
+  /// No description provided for @sunnahRecitationSleepPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Bismika amutu wa ahya.'**
+  String get sunnahRecitationSleepPronunciation;
+
+  /// No description provided for @sunnahRecitationSleepTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'In Your name I die and I live.'**
+  String get sunnahRecitationSleepTranslation;
+
+  /// No description provided for @sunnahRecitationForgivenessArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'أَسْتَغْفِرُ اللَّهَ'**
+  String get sunnahRecitationForgivenessArabic;
+
+  /// No description provided for @sunnahRecitationForgivenessPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Astaghfirullah.'**
+  String get sunnahRecitationForgivenessPronunciation;
+
+  /// No description provided for @sunnahRecitationForgivenessTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'I ask Allah for forgiveness.'**
+  String get sunnahRecitationForgivenessTranslation;
+
+  /// No description provided for @sunnahRecitationDifficultyArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ'**
+  String get sunnahRecitationDifficultyArabic;
+
+  /// No description provided for @sunnahRecitationDifficultyPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'La ilaha illallahul-\'azimul-halim. La ilaha illallahu rabbul-\'arshil-\'azim. La ilaha illallahu rabbus-samawati wa rabbul-ardi wa rabbul-\'arshil-karim.'**
+  String get sunnahRecitationDifficultyPronunciation;
+
+  /// No description provided for @sunnahRecitationDifficultyTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'None is worthy of worship but Allah, the Magnificent, the Forbearing. None is worthy of worship but Allah, Lord of the mighty Throne. None is worthy of worship but Allah, Lord of the heavens, the earth and the noble Throne.'**
+  String get sunnahRecitationDifficultyTranslation;
+
+  /// No description provided for @sunnahRecitationRemembranceArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ'**
+  String get sunnahRecitationRemembranceArabic;
+
+  /// No description provided for @sunnahRecitationRemembrancePronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Subhanallahi wa bihamdihi.'**
+  String get sunnahRecitationRemembrancePronunciation;
+
+  /// No description provided for @sunnahRecitationRemembranceTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Glory and praise belong to Allah.'**
+  String get sunnahRecitationRemembranceTranslation;
+
+  /// No description provided for @sunnahRecitationGratitudeArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ'**
+  String get sunnahRecitationGratitudeArabic;
+
+  /// No description provided for @sunnahRecitationGratitudePronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabbi awzi\'ni an ashkura ni\'matakal-lati an\'amta \'alayya wa \'ala walidayya wa an a\'mala salihan tardahu wa adkhilni birahmatika fi \'ibadikas-salihin.'**
+  String get sunnahRecitationGratitudePronunciation;
+
+  /// No description provided for @sunnahRecitationGratitudeTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'My Lord, enable me to thank You for the blessings You have given me and my parents, to do good that pleases You, and admit me by Your mercy among Your righteous servants.'**
+  String get sunnahRecitationGratitudeTranslation;
+
+  /// No description provided for @sunnahRecitationFastingArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'الصِّيَامُ جُنَّةٌ'**
+  String get sunnahRecitationFastingArabic;
+
+  /// No description provided for @sunnahRecitationFastingPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'As-siyamu junnah.'**
+  String get sunnahRecitationFastingPronunciation;
+
+  /// No description provided for @sunnahRecitationFastingTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'Fasting is a shield.'**
+  String get sunnahRecitationFastingTranslation;
+
   /// No description provided for @sunnahDuaTitle.
   ///
   /// In en, this message translates to:
@@ -3839,6 +5009,12 @@ abstract class AppLocalizations {
   /// **'Hadith'**
   String get dailyTrackerCategoryHadith;
 
+  /// No description provided for @dailyTrackerCategoryCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'My Tasks'**
+  String get dailyTrackerCategoryCustom;
+
   /// No description provided for @dailyTrackerCelebrationTitle.
   ///
   /// In en, this message translates to:
@@ -3850,6 +5026,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Alhamdulillah'**
   String get dailyTrackerCelebrationButton;
+
+  /// No description provided for @dailyTrackerAddTaskTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Add task'**
+  String get dailyTrackerAddTaskTooltip;
+
+  /// No description provided for @dailyTrackerAddTaskSheetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'New Task'**
+  String get dailyTrackerAddTaskSheetTitle;
+
+  /// No description provided for @dailyTrackerAddTaskNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Task name'**
+  String get dailyTrackerAddTaskNameLabel;
+
+  /// No description provided for @dailyTrackerAddTaskNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Read 10 pages of tafsir'**
+  String get dailyTrackerAddTaskNameHint;
+
+  /// No description provided for @dailyTrackerAddTaskNameEmptyError.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a task name'**
+  String get dailyTrackerAddTaskNameEmptyError;
+
+  /// No description provided for @dailyTrackerAddTaskSubtitleLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Subtitle (optional)'**
+  String get dailyTrackerAddTaskSubtitleLabel;
+
+  /// No description provided for @dailyTrackerAddTaskSubtitleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Extra detail or reminder'**
+  String get dailyTrackerAddTaskSubtitleHint;
+
+  /// No description provided for @dailyTrackerAddTaskOptionalLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as optional'**
+  String get dailyTrackerAddTaskOptionalLabel;
+
+  /// No description provided for @dailyTrackerAddTaskSaveAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Task'**
+  String get dailyTrackerAddTaskSaveAction;
+
+  /// No description provided for @dailyTrackerDeleteTaskTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete task'**
+  String get dailyTrackerDeleteTaskTooltip;
+
+  /// No description provided for @dailyTrackerDeleteTaskConfirmTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete task?'**
+  String get dailyTrackerDeleteTaskConfirmTitle;
+
+  /// No description provided for @dailyTrackerDeleteTaskConfirmMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'\"{title}\" will be removed permanently.'**
+  String dailyTrackerDeleteTaskConfirmMessage(String title);
+
+  /// No description provided for @dailyTrackerDeleteAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get dailyTrackerDeleteAction;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

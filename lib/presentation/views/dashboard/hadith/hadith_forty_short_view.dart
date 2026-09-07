@@ -1,13 +1,21 @@
 import 'dart:convert';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
+
 import 'package:flutter/material.dart';
-import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:flutter/services.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
-import 'package:quran_for_all/core/utils/app_responsive.dart';
-import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'package:quran_for_all/core/utils/app_responsive.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_premium_page_background.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/hadith/common/hadith_collection_palette.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/hadith/common/hadith_reader_bottom_bar.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/hadith/common/hadith_reader_header.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/hadith/common/hadith_reader_language_builder.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/hadith/common/hadith_reader_loading.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/hadith/common/hadith_reader_progress.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/hadith/hadith_forty_short/hadith_forty_short_models.dart';
 
 part '../../../widgets/dashboard/hadith/hadith_forty_short/hadith_forty_short_pages.dart';
@@ -16,31 +24,23 @@ part '../../../widgets/dashboard/hadith/hadith_forty_short/hadith_forty_short_sh
 
 class HadithFortyShortView extends StatefulWidget {
   const HadithFortyShortView({super.key});
+
   @override
   State<HadithFortyShortView> createState() => _HadithFortyShortViewState();
 }
 
-class _HadithFortyShortViewState extends State<HadithFortyShortView>
-    with TickerProviderStateMixin {
+class _HadithFortyShortViewState extends State<HadithFortyShortView> {
   ShortHadithBook? _book;
   bool _loading = true;
-  bool _isBangla = false;
-  int _currentIndex = 0; // 0-based index into hadiths list
+  int _currentIndex = 0;
 
   late final PageController _pageController;
-  late final AnimationController _fadeIn;
-
-  // For the jump sheet
   final _jumpController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     _pageController = PageController();
-    _fadeIn = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 500),
-    );
     _loadData();
   }
 
@@ -51,33 +51,26 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
     final book = ShortHadithBook.fromJson(
       json.decode(raw) as Map<String, dynamic>,
     );
-    if (mounted) {
-      setState(() {
-        _book = book;
-        _loading = false;
-      });
-      _fadeIn.forward();
-    }
+    if (!mounted) return;
+    setState(() {
+      _book = book;
+      _loading = false;
+    });
   }
 
   @override
   void dispose() {
     _pageController.dispose();
-    _fadeIn.dispose();
     _jumpController.dispose();
     super.dispose();
   }
 
-  // ── Helpers ────────────────────────────────────────────────────────────────
-
   ColorScheme get _scheme => Theme.of(context).colorScheme;
-
-  Color get _scaffoldBg => Theme.of(context).scaffoldBackgroundColor;
-  Color get _cardBg => _scheme.surfaceContainer;
+  Color get _cardBackground => _scheme.surfaceContainer;
   Color get _textMain => _scheme.onSurface;
   Color get _textSub => _scheme.onSurfaceVariant;
   Color get _textHint => _scheme.onSurfaceVariant.withValues(alpha: 0.78);
-  Color get _dividerClr => _scheme.outlineVariant;
+  Color get _divider => _scheme.outlineVariant;
 
   void _goTo(int index) {
     setState(() => _currentIndex = index);
@@ -89,293 +82,110 @@ class _HadithFortyShortViewState extends State<HadithFortyShortView>
   }
 
   void _showJumpSheet() {
-    if (_book == null) return;
+    final book = _book;
+    if (book == null) return;
+    final isBangla = HadithReaderLanguageBuilder.isBanglaOf(context);
     _jumpController.clear();
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
+      useSafeArea: true,
       backgroundColor: Colors.transparent,
       builder: (_) => _JumpSheet(
-        book: _book!,
+        book: book,
         isDark: _scheme.brightness == Brightness.dark,
-        isBangla: _isBangla,
-        cardBg: _cardBg,
+        isBangla: isBangla,
+        cardBg: _cardBackground,
         textMain: _textMain,
         textHint: _textHint,
-        divider: _dividerClr,
+        divider: _divider,
         controller: _jumpController,
-        onJump: (idx) => _goTo(idx),
+        onJump: _goTo,
       ),
     );
   }
-
-  // ── Build ──────────────────────────────────────────────────────────────────
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 300),
-      color: _scaffoldBg,
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        body: _loading ? _buildSplash() : _buildBody(),
+    return HadithReaderLanguageBuilder(
+      builder: (context, isBangla, onLanguageChanged) => Scaffold(
+        body: AppPremiumPageBackground(
+          child: _loading
+              ? const HadithReaderLoading(
+                  label: 'الأحاديث القصيرة',
+                  accent: HadithCollectionPalette.fortyShortAccent,
+                )
+              : _buildReader(_book!, isBangla, onLanguageChanged),
+        ),
       ),
     );
   }
 
-  Widget _buildSplash() => Center(
-    child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        _GeomStar(color: MyColors.tertiary, size: 56),
-        const SizedBox(height: 20),
-        Text(
-          'Loading...',
-          style: AppTheme.text(context).hadithBody.copyWith(color: _textHint),
-        ),
-      ],
-    ),
-  );
-
-  Widget _buildBody() {
-    final book = _book!;
+  Widget _buildReader(
+    ShortHadithBook book,
+    bool isBangla,
+    ValueChanged<bool> onLanguageChanged,
+  ) {
     final responsive = AppResponsive.of(context);
     final isDark = _scheme.brightness == Brightness.dark;
+    final subtitle = isBangla ? book.compiledByBangla : book.compiledByEnglish;
 
-    return FadeTransition(
-      opacity: _fadeIn,
-      child: Stack(
-        children: [
-          _TileBackground(isDark: isDark),
-          Column(
-            children: [
-              _buildHeader(book),
-              _buildProgressBar(book, isDark),
-              Expanded(
-                child: PageView.builder(
-                  controller: _pageController,
-                  onPageChanged: (i) => setState(() => _currentIndex = i),
-                  itemCount: book.hadiths.length,
-                  itemBuilder: (_, i) => ConstrainedBox(
-                    constraints: BoxConstraints(
-                      maxWidth: responsive.maxReadingContentWidth,
-                    ),
-                    child: _ShortHadithPage(
-                      hadith: book.hadiths[i],
-                      isBangla: _isBangla,
-                      isDark: isDark,
-                      cardBg: isDark ? _cardBg : Colors.white,
-                      textMain: _textMain,
-                      textSub: _textSub,
-                      textHint: _textHint,
-                      divider: _dividerClr,
-                      totalCount: book.hadiths.length,
-                    ),
-                  ),
-                ),
-              ),
-              // navbar
-              _buildBottomBar(book, _scheme.brightness == Brightness.dark),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  // ── Header ─────────────────────────────────────────────────────────────────
-
-  Widget _buildHeader(ShortHadithBook book) {
-    final text = AppTheme.text(context);
-    final topPad = MediaQuery.of(context).padding.top;
-    return Container(
-      padding: EdgeInsets.only(top: topPad, bottom: 5, right: 5),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [_scheme.primary, _scheme.tertiary],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+    return Column(
+      children: [
+        HadithReaderHeader(
+          title: context.l10n.dashboardHadithShortTitle,
+          subtitle: subtitle,
+          progressLabel:
+              '${isBangla ? 'হাদিস' : 'Hadith'} ${_currentIndex + 1}  •  ${_currentIndex + 1}/${book.hadiths.length}',
+          accent: HadithCollectionPalette.fortyShortAccent,
+          isBangla: isBangla,
+          onBack: () => Navigator.maybePop(context),
+          onLanguageChanged: onLanguageChanged,
+          onSearch: _showJumpSheet,
         ),
-        boxShadow: [
-          BoxShadow(
-            color: _scheme.primary.withValues(alpha: 0.2),
-            blurRadius: 18,
-            offset: const Offset(0, 5),
-          ),
-        ],
-      ),
-      child: Column(
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              _buildBackButton(),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      _isBangla ? book.titleBangla : book.titleEnglish,
-                      style: text.hadithHeaderTitle.copyWith(
-                        color: Colors.white,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      _isBangla
-                          ? book.compiledByBangla
-                          : book.compiledByEnglish,
-                      style: text.hadithHeaderSubtitle.copyWith(
-                        color: Colors.white.withOpacity(0.76),
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 8),
-              _buildControls(),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  // ── Progress bar ───────────────────────────────────────────────────────────
-
-  Widget _buildProgressBar(ShortHadithBook book, bool isDark) {
-    final text = AppTheme.text(context);
-    final progress = (_currentIndex + 1) / book.hadiths.length;
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 250),
-      padding: const EdgeInsets.fromLTRB(16, 10, 16, 10),
-      color: isDark ? _cardBg : Colors.white,
-      child: Row(
-        children: [
-          Expanded(
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(AppRadius.full),
-              child: Container(
-                height: 4,
-                color: _scheme.outlineVariant.withValues(alpha: 0.55),
-                child: FractionallySizedBox(
-                  alignment: Alignment.centerLeft,
-                  widthFactor: progress,
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [MyColors.tertiary, MyColors.secondaryLight],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(width: 10),
-          Text(
-            '${_currentIndex + 1}/${book.hadiths.length}',
-            style: text.hadithProgressCount.copyWith(color: _textHint),
-          ),
-        ],
-      ),
-    );
-  }
-
-  // ── Controls ───────────────────────────────────────────────────────────────
-
-  Widget _buildControls() => Row(
-    mainAxisSize: MainAxisSize.min,
-    children: [
-      _LangToggle(
-        isBangla: _isBangla,
-        isDark: _scheme.brightness == Brightness.dark,
-        onChanged: (v) => setState(() => _isBangla = v),
-      ),
-      const SizedBox(width: 8),
-      GestureDetector(
-        onTap: _showJumpSheet,
-        child: Container(
-          width: 36,
-          height: 36,
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.16),
-            borderRadius: BorderRadius.circular(AppRadius.compact),
-            border: Border.all(
-              color: Colors.white.withOpacity(0.2),
-              width: 0.8,
-            ),
-          ),
-          padding: const EdgeInsets.all(8),
-          child: Image.asset(MyIcons.searchIcon, color: Colors.white),
+        HadithReaderProgress(
+          current: _currentIndex + 1,
+          total: book.hadiths.length,
+          accent: HadithCollectionPalette.fortyShortAccent,
         ),
-      ),
-    ],
-  );
-
-  Widget _buildBackButton() {
-    return IconButton(
-      onPressed: () => Navigator.of(context).maybePop(),
-      icon: const Icon(Icons.arrow_back_ios_new, size: 18, color: Colors.white),
-      tooltip: 'Back',
-    );
-  }
-
-  // ── Bottom bar ─────────────────────────────────────────────────────────────
-
-  Widget _buildBottomBar(ShortHadithBook book, bool isDark) {
-    final canPrev = _currentIndex > 0;
-    final canNext = _currentIndex < book.hadiths.length - 1;
-
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 250),
-      padding: EdgeInsets.only(
-        left: 16,
-        right: 16,
-        top: 10,
-        bottom: MediaQuery.of(context).padding.bottom + 10,
-      ),
-      decoration: BoxDecoration(
-        color: isDark ? _cardBg : Colors.white,
-        border: Border(top: BorderSide(color: _dividerClr, width: 0.8)),
-      ),
-      child: Row(
-        children: [
-          _BarNavBtn(
-            icon: Icons.arrow_back_ios_new_rounded,
-            label: _isBangla ? 'পূর্ববর্তী' : 'Prev',
-            enabled: canPrev,
-            isDark: _scheme.brightness == Brightness.dark,
-            textMain: _textMain,
-            textHint: _textHint,
-            onTap: canPrev ? () => _goTo(_currentIndex - 1) : null,
-          ),
-
-          // Dot indicators (max 10 visible, scrolling window)
-          Expanded(
-            child: _DotRow(
-              total: book.hadiths.length,
-              current: _currentIndex,
-              isDark: _scheme.brightness == Brightness.dark,
+        Expanded(
+          child: PageView.builder(
+            controller: _pageController,
+            onPageChanged: (index) => setState(() => _currentIndex = index),
+            itemCount: book.hadiths.length,
+            itemBuilder: (context, index) => Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: responsive.maxReadingContentWidth,
+                ),
+                child: _ShortHadithPage(
+                  hadith: book.hadiths[index],
+                  isBangla: isBangla,
+                  isDark: isDark,
+                  cardBg: isDark ? _cardBackground : Colors.white,
+                  textMain: _textMain,
+                  textSub: _textSub,
+                  textHint: _textHint,
+                  divider: _divider,
+                  totalCount: book.hadiths.length,
+                ),
+              ),
             ),
           ),
-
-          _BarNavBtn(
-            icon: Icons.arrow_forward_ios_rounded,
-            label: _isBangla ? 'পরবর্তী' : 'Next',
-            enabled: canNext,
-            isDark: _scheme.brightness == Brightness.dark,
-            textMain: _textMain,
-            textHint: _textHint,
-            isRight: true,
-            onTap: canNext ? () => _goTo(_currentIndex + 1) : null,
-          ),
-        ],
-      ),
+        ),
+        HadithReaderBottomBar(
+          previousLabel: isBangla ? 'পূর্ববর্তী' : 'Prev',
+          nextLabel: isBangla ? 'পরবর্তী' : 'Next',
+          centerLabel: '${_currentIndex + 1}/${book.hadiths.length}',
+          centerIcon: Icons.auto_stories_rounded,
+          accent: HadithCollectionPalette.fortyShortAccent,
+          canPrevious: _currentIndex > 0,
+          canNext: _currentIndex < book.hadiths.length - 1,
+          onPrevious: () => _goTo(_currentIndex - 1),
+          onNext: () => _goTo(_currentIndex + 1),
+          onCenter: _showJumpSheet,
+        ),
+      ],
     );
   }
 }

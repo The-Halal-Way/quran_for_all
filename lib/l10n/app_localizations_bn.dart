@@ -822,6 +822,591 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahNintyNineRetry => 'আবার চেষ্টা করুন';
 
   @override
+  String get languageNativeName => 'বাংলা';
+
+  @override
+  String get sunnahDuaCollectionsTitle => 'প্রতিটি মুহূর্তের জন্য';
+
+  @override
+  String get sunnahDuaCollectionsSubtitle => 'দু\'আ, যিকির ও অনুপ্রেরণা';
+
+  @override
+  String get sunnahDuaRoutineTitle => 'সুন্নাহর সঙ্গে একটি দিন';
+
+  @override
+  String get sunnahDuaRoutineSubtitle => 'ঘুম থেকে ওঠা থেকে ঘুমানো পর্যন্ত ছোট ছোট আমল।';
+
+  @override
+  String get sunnahDuaSearchCollections => 'সংগ্রহ খুঁজুন';
+
+  @override
+  String get sunnahDuaSearchRoutine => 'দৈনন্দিন সুন্নাহ খুঁজুন';
+
+  @override
+  String get sunnahDuaClearSearch => 'অনুসন্ধান মুছুন';
+
+  @override
+  String get sunnahDuaNoResults => 'কোনো ফল পাওয়া যায়নি';
+
+  @override
+  String get sunnahDuaNoResultsBody => 'অন্য শব্দ লিখুন বা অনুসন্ধান মুছুন।';
+
+  @override
+  String get sunnahDuaMorningLabel => 'সকালের শুরু';
+
+  @override
+  String get sunnahDuaDaytimeLabel => 'দিনের চলার পথে';
+
+  @override
+  String get sunnahDuaEveningLabel => 'রাতের প্রশান্তিতে';
+
+  @override
+  String get sunnahDuaWakeLabel => 'জাগরণ';
+
+  @override
+  String get sunnahDuaDayLabel => 'দিনযাপন';
+
+  @override
+  String get sunnahDuaRestLabel => 'বিশ্রাম';
+
+  @override
+  String get sunnahDuaHeroDescription => 'প্রতিদিনের ছোট ছোট মুহূর্তে আল্লাহর আরও কাছে।';
+
+  @override
+  String get sunnahDuaOpenPractice => 'আমল পড়ুন';
+
+  @override
+  String get sunnahRoutineWakeUpTitle => 'ঘুম থেকে ওঠা';
+
+  @override
+  String get sunnahRoutineWakeUpSubtitle => 'কৃতজ্ঞতায় নতুন দিনের শুরু';
+
+  @override
+  String get sunnahRoutineWakeUpPointsRaw => 'ঘুম থেকে উঠে আল্লাহর প্রশংসা করুন।||নামাজের আগে মিসওয়াক দিয়ে মুখ পরিষ্কার করুন।';
+
+  @override
+  String get sunnahRoutineWakeUpPractice => 'ঘুম থেকে ওঠার দু\'আ দিয়ে দিন শুরু করুন।';
+
+  @override
+  String get sunnahRoutineWashroomTitle => 'শৌচাগারের আদব';
+
+  @override
+  String get sunnahRoutineWashroomSubtitle => 'পরিচ্ছন্নতা ও গোপনীয়তার যত্ন';
+
+  @override
+  String get sunnahRoutineWashroomPointsRaw => 'শৌচাগারে প্রবেশের আগে দু\'আ পড়ুন।||শৌচকাজের পর পরিষ্কারের জন্য বাম হাত ব্যবহার করুন।||বের হয়ে আল্লাহর কাছে ক্ষমা চান।';
+
+  @override
+  String get sunnahRoutineWashroomPractice => 'প্রবেশ ও বের হওয়ার ছোট দু\'আগুলো শিখুন।';
+
+  @override
+  String get sunnahRoutineMiswakTitle => 'মিসওয়াক';
+
+  @override
+  String get sunnahRoutineMiswakSubtitle => 'ইবাদতের আগে মুখের পরিচ্ছন্নতা';
+
+  @override
+  String get sunnahRoutineMiswakPointsRaw => 'ঘুম থেকে উঠে মিসওয়াক করুন।||নামাজের আগে মিসওয়াক দিয়ে মুখ পরিষ্কার করুন।';
+
+  @override
+  String get sunnahRoutineMiswakPractice => 'মিসওয়াক পরিষ্কার ও হাতের কাছে রাখুন।';
+
+  @override
+  String get sunnahRoutineWuduTitle => 'ওজু';
+
+  @override
+  String get sunnahRoutineWuduSubtitle => 'যত্ন নিয়ে নামাজের প্রস্তুতি';
+
+  @override
+  String get sunnahRoutineWuduPointsRaw => 'হাত ধুয়ে মুখ ও নাক পরিষ্কার করুন, এরপর মুখমণ্ডল ও হাত ধুয়ে নিন।||ওজুর নিয়ম অনুযায়ী মাথা মাসেহ করুন ও পা ধুয়ে নিন।||যত্নের সঙ্গে ওজু শেষ করে শাহাদাত পাঠ করুন।';
+
+  @override
+  String get sunnahRoutineWuduPractice => 'ওজুর পূর্ণ নিয়ম শিখুন; এখানে ফরজ কাজ ও সুন্নাহ আদব উভয়ের স্মরণ রয়েছে।';
+
+  @override
+  String get sunnahRoutineDressingTitle => 'পোশাক ও জুতা';
+
+  @override
+  String get sunnahRoutineDressingSubtitle => 'ডান দিক দিয়ে শুরু করুন';
+
+  @override
+  String get sunnahRoutineDressingPointsRaw => 'জুতা পরা ও সাজসজ্জায় ডান দিককে অগ্রাধিকার দিন।||আগে ডান পায়ের জুতা পরুন এবং খোলার সময় বাম পা দিয়ে শুরু করুন।';
+
+  @override
+  String get sunnahRoutineDressingPractice => 'প্রস্তুত হওয়ার সময় ছোট এই সুন্নাহটি নিয়মিত পালন করুন।';
+
+  @override
+  String get sunnahRoutineAdhanTitle => 'আজান শোনা';
+
+  @override
+  String get sunnahRoutineAdhanSubtitle => 'থামুন ও আহ্বানে সাড়া দিন';
+
+  @override
+  String get sunnahRoutineAdhanPointsRaw => 'মুয়াজ্জিনের কথার জবাব দিন।||নামাজ ও সাফল্যের আহ্বানে লা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ বলুন।||আজানের পর নবী ﷺ-এর ওপর দরুদ পড়ুন এবং তাঁর জন্য ওসিলা প্রার্থনা করুন।';
+
+  @override
+  String get sunnahRoutineAdhanPractice => 'কথাবার্তা থামিয়ে মনোযোগ দিয়ে আজান শুনুন ও জবাব দিন।';
+
+  @override
+  String get sunnahRoutineMasjidTitle => 'মসজিদের আদব';
+
+  @override
+  String get sunnahRoutineMasjidSubtitle => 'শান্তি ও শ্রদ্ধার সঙ্গে প্রবেশ';
+
+  @override
+  String get sunnahRoutineMasjidPointsRaw => 'নামাজ শুরু হলেও শান্তভাবে হেঁটে যান।||প্রবেশের সময় আল্লাহর রহমতের দরজা খুলে দেওয়ার দু\'আ করুন।||উপযুক্ত অবস্থায় বসার আগে দুই রাকাত নামাজ পড়ুন।||বের হওয়ার সময় আল্লাহর অনুগ্রহ প্রার্থনা করুন।';
+
+  @override
+  String get sunnahRoutineMasjidPractice => 'অন্য মুসল্লিদের ইবাদতের পরিবেশ শান্ত রাখুন।';
+
+  @override
+  String get sunnahRoutineAfterPrayerTitle => 'নামাজের পরে';
+
+  @override
+  String get sunnahRoutineAfterPrayerSubtitle => 'আরও কিছুক্ষণ আল্লাহর স্মরণে';
+
+  @override
+  String get sunnahRoutineAfterPrayerPointsRaw => 'নামাজ শেষে তিনবার আল্লাহর কাছে ক্ষমা চান।||আল্লাহুম্মা আনতাস সালাম ওয়া মিনকাস সালাম পড়ুন।||সুবহানাল্লাহ, আলহামদুলিল্লাহ ও আল্লাহু আকবার প্রতিটি ৩৩ বার বলুন এবং বর্ণিত তাওহিদের বাক্য দিয়ে একশ পূর্ণ করুন।';
+
+  @override
+  String get sunnahRoutineAfterPrayerPractice => 'নামাজের পরের যিকিরের একটি পূর্ণ ও সহিহ পদ্ধতি শিখুন।';
+
+  @override
+  String get sunnahRoutineMorningTitle => 'সকালের যিকির';
+
+  @override
+  String get sunnahRoutineMorningSubtitle => 'আল্লাহর স্মরণে দিন শুরু';
+
+  @override
+  String get sunnahRoutineMorningPointsRaw => 'সকালে সুবহানাল্লাহি ওয়া বিহামদিহি একশ বার পড়ুন।';
+
+  @override
+  String get sunnahRoutineMorningPractice => 'আরবি ও অর্থের জন্য সকাল ও সন্ধ্যার সংগ্রহটি খুলুন।';
+
+  @override
+  String get sunnahRoutineDuhaTitle => 'দুহার নামাজ';
+
+  @override
+  String get sunnahRoutineDuhaSubtitle => 'সকালের অবসরে ইবাদত';
+
+  @override
+  String get sunnahRoutineDuhaPointsRaw => 'সূর্য ভালোভাবে ওঠার পর থেকে মধ্যাকাশে পৌঁছানোর আগ পর্যন্ত দুহা নামাজের সময়ে দুই রাকাত পড়ুন।';
+
+  @override
+  String get sunnahRoutineDuhaPractice => 'দুহার সময়সীমার মধ্যে সুবিধাজনক একটি নিয়মিত সময় বেছে নিন।';
+
+  @override
+  String get sunnahRoutineLeavingHomeTitle => 'ঘর থেকে বের হওয়া';
+
+  @override
+  String get sunnahRoutineLeavingHomeSubtitle => 'আল্লাহর ভরসায় বাইরে যান';
+
+  @override
+  String get sunnahRoutineLeavingHomePointsRaw => 'ঘর থেকে বের হওয়ার দু\'আ পড়ুন।||মনে রাখুন, শক্তি ও সামর্থ্য আল্লাহর পক্ষ থেকে আসে।';
+
+  @override
+  String get sunnahRoutineLeavingHomePractice => 'দরজায় পৌঁছে আল্লাহর ওপর ভরসার কথা স্মরণ করুন।';
+
+  @override
+  String get sunnahRoutineEatingTitle => 'খাওয়ার সুন্নাহ';
+
+  @override
+  String get sunnahRoutineEatingSubtitle => 'খাবারের টেবিলেও সুন্নাহ';
+
+  @override
+  String get sunnahRoutineEatingPointsRaw => 'খাওয়ার আগে আল্লাহর নাম নিন।||ডান হাতে এবং নিজের কাছের দিক থেকে খান।||খাবারের দোষ বলবেন না।||পরিমিত খাবার খান।';
+
+  @override
+  String get sunnahRoutineEatingPractice => 'প্রতিটি খাবারের সময় এই আদবগুলো স্মরণ করুন।';
+
+  @override
+  String get sunnahRoutineDrinkingTitle => 'পানি পান';
+
+  @override
+  String get sunnahRoutineDrinkingSubtitle => 'ধীরে পান, আন্তরিক কৃতজ্ঞতা';
+
+  @override
+  String get sunnahRoutineDrinkingPointsRaw => 'ডান হাতে পান করুন।||পানের মাঝে পাত্র থেকে মুখ সরিয়ে শ্বাস নিন।||পান শেষে আল্লাহর প্রশংসা করুন।';
+
+  @override
+  String get sunnahRoutineDrinkingPractice => 'ধীরে পান করুন এবং পাত্রে শ্বাস ফেলবেন না।';
+
+  @override
+  String get sunnahRoutineGreetingsTitle => 'সালাম ও হাসি';
+
+  @override
+  String get sunnahRoutineGreetingsSubtitle => 'সম্ভাষণে আন্তরিকতা';
+
+  @override
+  String get sunnahRoutineGreetingsPointsRaw => 'মানুষের মধ্যে সালামের প্রচলন করুন।||হাসিমুখে অন্যের সঙ্গে দেখা করুন।';
+
+  @override
+  String get sunnahRoutineGreetingsPractice => 'সাধারণ সাক্ষাৎও যত্ন ও শ্রদ্ধা দিয়ে শুরু করুন।';
+
+  @override
+  String get sunnahRoutineSpeechTitle => 'কথার আদব';
+
+  @override
+  String get sunnahRoutineSpeechSubtitle => 'ভালো ও কোমল কথা';
+
+  @override
+  String get sunnahRoutineSpeechPointsRaw => 'ভালো কথা বলুন, নয়তো নীরব থাকুন।||কথা ও আচরণে কোমল হোন।';
+
+  @override
+  String get sunnahRoutineSpeechPractice => 'মন খারাপ বা রাগের সময় কথা বলার আগে একটু থামুন।';
+
+  @override
+  String get sunnahRoutineSneezingTitle => 'হাঁচি ও হাই';
+
+  @override
+  String get sunnahRoutineSneezingSubtitle => 'ছোট মুহূর্তে কৃতজ্ঞতা';
+
+  @override
+  String get sunnahRoutineSneezingPointsRaw => 'হাঁচির পরে আলহামদুলিল্লাহ বলুন।||শ্রবণকারী মুসলিম ইয়ারহামুকাল্লাহ বলবেন; হাঁচিদাতা ইয়াহদিকুমুল্লাহু ওয়া ইউসলিহু বালাকুম বলবেন।||হাই তোলার সময় মুখ ঢেকে রাখুন।';
+
+  @override
+  String get sunnahRoutineSneezingPractice => 'যত্নের সঙ্গে জবাব দিতে কথোপকথনের দুই অংশই শিখুন।';
+
+  @override
+  String get sunnahRoutineReturningHomeTitle => 'ঘরে ফেরা';
+
+  @override
+  String get sunnahRoutineReturningHomeSubtitle => 'স্মরণ ও সালামে ঘরে ফিরুন';
+
+  @override
+  String get sunnahRoutineReturningHomePointsRaw => 'ঘরে প্রবেশের সময় আল্লাহর নাম নিন।||ঘরের মানুষকে সালাম দিন।';
+
+  @override
+  String get sunnahRoutineReturningHomePractice => 'শান্তিপূর্ণ সম্ভাষণে ঘরে ফেরা শুরু করুন।';
+
+  @override
+  String get sunnahRoutineFamilyTitle => 'পরিবারের সঙ্গে';
+
+  @override
+  String get sunnahRoutineFamilySubtitle => 'ঘর থেকেই সদাচরণ';
+
+  @override
+  String get sunnahRoutineFamilyPointsRaw => 'ঘরের কাজে সাহায্য করুন।||পরিবারের সঙ্গে সদয় আচরণ করুন।';
+
+  @override
+  String get sunnahRoutineFamilyPractice => 'পরিবারের উপকারে আসে এমন একটি কাজ যত্ন নিয়ে করুন।';
+
+  @override
+  String get sunnahRoutineEveningTitle => 'সন্ধ্যার যিকির';
+
+  @override
+  String get sunnahRoutineEveningSubtitle => 'সন্ধ্যায় আল্লাহর স্মরণ';
+
+  @override
+  String get sunnahRoutineEveningPointsRaw => 'সন্ধ্যায় সুবহানাল্লাহি ওয়া বিহামদিহি একশ বার পড়ুন।';
+
+  @override
+  String get sunnahRoutineEveningPractice => 'দিন শেষে সকাল ও সন্ধ্যার সংগ্রহে ফিরে আসুন।';
+
+  @override
+  String get sunnahRoutineNightSafetyTitle => 'রাতের প্রস্তুতি';
+
+  @override
+  String get sunnahRoutineNightSafetySubtitle => 'ঘুমের আগে ঘরের যত্ন';
+
+  @override
+  String get sunnahRoutineNightSafetyPointsRaw => 'খাবার ও পানীয়ের পাত্র ঢেকে রাখুন।||ঘুমের আগে দরজা বন্ধ করুন।||আগুনের বাতি ও খোলা আগুন নিরাপদে নিভিয়ে দিন।';
+
+  @override
+  String get sunnahRoutineNightSafetyPractice => 'রাতে ঘরের প্রস্তুতিতে এই কাজগুলো রাখুন।';
+
+  @override
+  String get sunnahRoutineBedtimeRecitationTitle => 'ঘুমের আগে তিলাওয়াত';
+
+  @override
+  String get sunnahRoutineBedtimeRecitationSubtitle => 'কুরআনে দিন শেষ';
+
+  @override
+  String get sunnahRoutineBedtimeRecitationPointsRaw => 'দুই হাত একত্রে সূরা ইখলাস, ফালাক ও নাস পড়ে হালকা ফুঁ দিয়ে শরীরে বুলিয়ে নিন; তিনবার করুন।||ঘুমের আগে আয়াতুল কুরসি পড়ুন।||রাতে সূরা বাকারার শেষ দুই আয়াত পড়ুন।';
+
+  @override
+  String get sunnahRoutineBedtimeRecitationPractice => 'ধীরে ধীরে আয়াতগুলো শিখুন এবং নিয়মিত পড়ুন।';
+
+  @override
+  String get sunnahRoutineSleepTitle => 'ঘুমাতে যাওয়া';
+
+  @override
+  String get sunnahRoutineSleepSubtitle => 'আল্লাহর ভরসায় বিশ্রাম';
+
+  @override
+  String get sunnahRoutineSleepPointsRaw => 'ঘুমাতে যাওয়ার আগে ওজু করুন।||শোয়ার আগে বিছানা ঝেড়ে নিন।||ডান কাতে শুয়ে ঘুমের দু\'আ পড়ুন।';
+
+  @override
+  String get sunnahRoutineSleepPractice => 'ক্লান্ত রাতেও পালন করা যায় এমন সহজ রুটিন রাখুন।';
+
+  @override
+  String get sunnahRoutineForgivenessTitle => 'ক্ষমা প্রার্থনা';
+
+  @override
+  String get sunnahRoutineForgivenessSubtitle => 'বারবার আল্লাহর দিকে ফিরুন';
+
+  @override
+  String get sunnahRoutineForgivenessPointsRaw => 'দিনজুড়ে নিয়মিত আল্লাহর কাছে ক্ষমা চান।||আন্তরিকভাবে ফিরে আসুন এবং অন্যায় ছাড়ার চেষ্টা করুন।';
+
+  @override
+  String get sunnahRoutineForgivenessPractice => 'নবী ﷺ দিনে একশ বার আল্লাহর কাছে ক্ষমা চাইতেন ও তাওবা করতেন।';
+
+  @override
+  String get sunnahRoutineDifficultyTitle => 'কষ্টের সময়';
+
+  @override
+  String get sunnahRoutineDifficultySubtitle => 'ভারাক্রান্ত মনে ভরসার দু\'আ';
+
+  @override
+  String get sunnahRoutineDifficultyPointsRaw => 'দুশ্চিন্তা ও বিপদে এই দু\'আ পড়ুন।||আল্লাহর মহত্ত্ব ও সহনশীলতা স্মরণ করুন।';
+
+  @override
+  String get sunnahRoutineDifficultyPractice => 'কষ্টের সময় ধীরে ও মনোযোগ দিয়ে পড়ুন।';
+
+  @override
+  String get sunnahRoutineMorningEveningTitle => 'সকাল ও সন্ধ্যা';
+
+  @override
+  String get sunnahRoutineMorningEveningSubtitle => 'প্রতিদিনের যিকির';
+
+  @override
+  String get sunnahRoutineMorningEveningPointsRaw => 'সকালে একশ বার এবং সন্ধ্যায় একশ বার সুবহানাল্লাহি ওয়া বিহামদিহি পড়ুন।';
+
+  @override
+  String get sunnahRoutineMorningEveningPractice => 'সকাল ও সন্ধ্যায় যিকিরের জন্য কিছু শান্ত সময় রাখুন।';
+
+  @override
+  String get sunnahRoutineGratitudeTitle => 'কৃতজ্ঞতা';
+
+  @override
+  String get sunnahRoutineGratitudeSubtitle => 'চারপাশের নিয়ামত স্মরণ';
+
+  @override
+  String get sunnahRoutineGratitudePointsRaw => 'কৃতজ্ঞ হতে আল্লাহর সাহায্য চান।||তাঁর পছন্দের নেক কাজ করার তাওফিক চান।';
+
+  @override
+  String get sunnahRoutineGratitudePractice => 'এই কুরআনিক দু\'আ সুলাইমান আলাইহিস সালামের প্রার্থনার অংশ।';
+
+  @override
+  String get sunnahRoutineFastingTitle => 'সুন্নাহ রোজা';
+
+  @override
+  String get sunnahRoutineFastingSubtitle => 'নফল ইবাদতের সময়';
+
+  @override
+  String get sunnahRoutineFastingPointsRaw => 'সেহরি খান এবং সূর্যাস্তের পর দ্রুত ইফতার করুন।||সামর্থ্য থাকলে সোমবার রোজা রাখুন।||শাওয়ালের ছয় রোজা সম্পর্কে জানুন।';
+
+  @override
+  String get sunnahRoutineFastingPractice => 'ফরজ দায়িত্বের পাশাপাশি নিয়মিত নফল আমল গড়ে তুলুন।';
+
+  @override
+  String get sunnahRoutineWakeUpSource => 'সহিহ বুখারি ৬৩১২, ২৪৫';
+
+  @override
+  String get sunnahRoutineWashroomSource => 'সহিহ বুখারি ১৪২, ১৫৪; জামে তিরমিজি ৭';
+
+  @override
+  String get sunnahRoutineMiswakSource => 'সহিহ বুখারি ২৪৫, ৮৮৭';
+
+  @override
+  String get sunnahRoutineWuduSource => 'সহিহ বুখারি ১৫৯; সহিহ মুসলিম ২৩৪a';
+
+  @override
+  String get sunnahRoutineDressingSource => 'সহিহ বুখারি ১৬৮, ৫৮৫৬';
+
+  @override
+  String get sunnahRoutineAdhanSource => 'সহিহ মুসলিম ৩৮৪, ৩৮৫';
+
+  @override
+  String get sunnahRoutineMasjidSource => 'সহিহ বুখারি ৬৩৬, ৪৪৪; সহিহ মুসলিম ৭১৩a';
+
+  @override
+  String get sunnahRoutineAfterPrayerSource => 'সহিহ মুসলিম ৫৯১, ৫৯৭a';
+
+  @override
+  String get sunnahRoutineMorningSource => 'সহিহ মুসলিম ২৬৯২';
+
+  @override
+  String get sunnahRoutineDuhaSource => 'সহিহ মুসলিম ৭২০';
+
+  @override
+  String get sunnahRoutineLeavingHomeSource => 'সুনান আবু দাউদ ৫০৯৫';
+
+  @override
+  String get sunnahRoutineEatingSource => 'সহিহ বুখারি ৫৩৭৬, ৫৪০৯; জামে তিরমিজি ২৩৮০';
+
+  @override
+  String get sunnahRoutineDrinkingSource => 'সহিহ বুখারি ৫৬৩০, ৫৬৩১; সহিহ মুসলিম ২০২০, ২৭৩৪a';
+
+  @override
+  String get sunnahRoutineGreetingsSource => 'সহিহ মুসলিম ৫৪a; জামে তিরমিজি ১৯৫৬';
+
+  @override
+  String get sunnahRoutineSpeechSource => 'সহিহ বুখারি ৬০১৮; সহিহ মুসলিম ২৫৯৪a';
+
+  @override
+  String get sunnahRoutineSneezingSource => 'সহিহ বুখারি ৬২২৪; সহিহ মুসলিম ২৯৯৫a';
+
+  @override
+  String get sunnahRoutineReturningHomeSource => 'সহিহ মুসলিম ২০১৮a; কুরআন ২৪:৬১';
+
+  @override
+  String get sunnahRoutineFamilySource => 'সহিহ বুখারি ৬৭৬; জামে তিরমিজি ৩৮৯৫';
+
+  @override
+  String get sunnahRoutineEveningSource => 'সহিহ মুসলিম ২৬৯২';
+
+  @override
+  String get sunnahRoutineNightSafetySource => 'সহিহ বুখারি ৬২৯৫';
+
+  @override
+  String get sunnahRoutineBedtimeRecitationSource => 'সহিহ বুখারি ৫০১৭, ২৩১১, ৫০০৯';
+
+  @override
+  String get sunnahRoutineSleepSource => 'সহিহ বুখারি ২৪৭, ৬৩২০, ৬৩১২';
+
+  @override
+  String get sunnahRoutineForgivenessSource => 'সহিহ মুসলিম ২৭০২a';
+
+  @override
+  String get sunnahRoutineDifficultySource => 'সহিহ বুখারি ৬৩৪৬';
+
+  @override
+  String get sunnahRoutineMorningEveningSource => 'সহিহ মুসলিম ২৬৯২';
+
+  @override
+  String get sunnahRoutineGratitudeSource => 'কুরআন ২৭:১৯';
+
+  @override
+  String get sunnahRoutineFastingSource => 'সহিহ বুখারি ১৯২৩, ১৯৫৭; সহিহ মুসলিম ১১৬২, ১১৬৪; সহিহ বুখারি ১৮৯৪';
+
+  @override
+  String get sunnahRecitationWakeArabic => 'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ';
+
+  @override
+  String get sunnahRecitationWakePronunciation => 'আলহামদু লিল্লাহিল্লাজি আহইয়ানা বা\'দা মা আমাতানা ওয়া ইলাইহিন নুশুর।';
+
+  @override
+  String get sunnahRecitationWakeTranslation => 'সমস্ত প্রশংসা আল্লাহর, যিনি আমাদের মৃত্যুর পর জীবন দিয়েছেন; তাঁর কাছেই পুনরুত্থান।';
+
+  @override
+  String get sunnahRecitationWashroomArabic => 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ\n\nغُفْرَانَكَ';
+
+  @override
+  String get sunnahRecitationWashroomPronunciation => 'প্রবেশের আগে: আল্লাহুম্মা ইন্নি আউজু বিকা মিনাল খুবুছি ওয়াল খাবাইছ।\nবের হয়ে: গুফরানাক।';
+
+  @override
+  String get sunnahRecitationWashroomTranslation => 'প্রবেশের আগে: হে আল্লাহ, আমি আপনার কাছে পুরুষ ও নারী শয়তান থেকে আশ্রয় চাই।\nবের হয়ে: আমি আপনার ক্ষমা চাই।';
+
+  @override
+  String get sunnahRecitationWuduArabic => 'أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ';
+
+  @override
+  String get sunnahRecitationWuduPronunciation => 'আশহাদু আল্লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু, ওয়া আশহাদু আন্না মুহাম্মাদান আবদুহু ওয়া রাসুলুহু।';
+
+  @override
+  String get sunnahRecitationWuduTranslation => 'আমি সাক্ষ্য দিচ্ছি, এক আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই, তাঁর শরিক নেই; মুহাম্মাদ তাঁর বান্দা ও রাসুল।';
+
+  @override
+  String get sunnahRecitationMasjidArabic => 'اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ\n\nاللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ';
+
+  @override
+  String get sunnahRecitationMasjidPronunciation => 'প্রবেশে: আল্লাহুম্মাফতাহ লি আবওয়াবা রহমাতিক।\nবের হতে: আল্লাহুম্মা ইন্নি আসআলুকা মিন ফাদলিক।';
+
+  @override
+  String get sunnahRecitationMasjidTranslation => 'প্রবেশে: হে আল্লাহ, আমার জন্য আপনার রহমতের দরজা খুলে দিন।\nবের হতে: হে আল্লাহ, আমি আপনার অনুগ্রহ চাই।';
+
+  @override
+  String get sunnahRecitationAfterPrayerArabic => 'أَسْتَغْفِرُ اللَّهَ\nاللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ ذَا الْجَلَالِ وَالْإِكْرَامِ';
+
+  @override
+  String get sunnahRecitationAfterPrayerPronunciation => 'আস্তাগফিরুল্লাহ (তিনবার)।\nআল্লাহুম্মা আনতাস সালামু ওয়া মিনকাস সালাম, তাবারাকতা জাল জালালি ওয়াল ইকরাম।';
+
+  @override
+  String get sunnahRecitationAfterPrayerTranslation => 'আমি আল্লাহর ক্ষমা চাই।\nহে আল্লাহ, আপনি শান্তি, আপনার কাছ থেকেই শান্তি আসে। আপনি বরকতময়, মহিমা ও সম্মানের অধিকারী।';
+
+  @override
+  String get sunnahRecitationLeavingHomeArabic => 'بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ';
+
+  @override
+  String get sunnahRecitationLeavingHomePronunciation => 'বিসমিল্লাহি তাওয়াক্কালতু আলাল্লাহ, ওয়ালা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ।';
+
+  @override
+  String get sunnahRecitationLeavingHomeTranslation => 'আল্লাহর নামে, আমি আল্লাহর ওপর ভরসা করলাম। আল্লাহর সাহায্য ছাড়া কোনো শক্তি বা সামর্থ্য নেই।';
+
+  @override
+  String get sunnahRecitationEatingArabic => 'بِسْمِ اللَّهِ';
+
+  @override
+  String get sunnahRecitationEatingPronunciation => 'বিসমিল্লাহ।';
+
+  @override
+  String get sunnahRecitationEatingTranslation => 'আল্লাহর নামে।';
+
+  @override
+  String get sunnahRecitationSneezingArabic => 'الْحَمْدُ لِلَّهِ\nيَرْحَمُكَ اللَّهُ\nيَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ';
+
+  @override
+  String get sunnahRecitationSneezingPronunciation => 'আলহামদুলিল্লাহ।\nইয়ারহামুকাল্লাহ।\nইয়াহদিকুমুল্লাহু ওয়া ইউসলিহু বালাকুম।';
+
+  @override
+  String get sunnahRecitationSneezingTranslation => 'সমস্ত প্রশংসা আল্লাহর।\nআল্লাহ আপনার প্রতি দয়া করুন।\nআল্লাহ আপনাদের হিদায়াত দিন ও অবস্থা সংশোধন করুন।';
+
+  @override
+  String get sunnahRecitationSleepArabic => 'بِاسْمِكَ أَمُوتُ وَأَحْيَا';
+
+  @override
+  String get sunnahRecitationSleepPronunciation => 'বিসমিকা আমুতু ওয়া আহইয়া।';
+
+  @override
+  String get sunnahRecitationSleepTranslation => 'আপনার নামেই আমি মরি ও বাঁচি।';
+
+  @override
+  String get sunnahRecitationForgivenessArabic => 'أَسْتَغْفِرُ اللَّهَ';
+
+  @override
+  String get sunnahRecitationForgivenessPronunciation => 'আস্তাগফিরুল্লাহ।';
+
+  @override
+  String get sunnahRecitationForgivenessTranslation => 'আমি আল্লাহর কাছে ক্ষমা চাই।';
+
+  @override
+  String get sunnahRecitationDifficultyArabic => 'لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ';
+
+  @override
+  String get sunnahRecitationDifficultyPronunciation => 'লা ইলাহা ইল্লাল্লাহুল আযিমুল হালিম। লা ইলাহা ইল্লাল্লাহু রব্বুল আরশিল আযিম। লা ইলাহা ইল্লাল্লাহু রব্বুস সামাওয়াতি ওয়া রব্বুল আরদি ওয়া রব্বুল আরশিল কারিম।';
+
+  @override
+  String get sunnahRecitationDifficultyTranslation => 'মহান ও সহনশীল আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই। মহান আরশের রব আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই। আসমানসমূহ, পৃথিবী ও সম্মানিত আরশের রব আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই।';
+
+  @override
+  String get sunnahRecitationRemembranceArabic => 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ';
+
+  @override
+  String get sunnahRecitationRemembrancePronunciation => 'সুবহানাল্লাহি ওয়া বিহামদিহি।';
+
+  @override
+  String get sunnahRecitationRemembranceTranslation => 'আল্লাহ পবিত্র; সমস্ত প্রশংসা তাঁর।';
+
+  @override
+  String get sunnahRecitationGratitudeArabic => 'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ';
+
+  @override
+  String get sunnahRecitationGratitudePronunciation => 'রব্বি আওযি\'নি আন আশকুরা নি\'মাতাকাল্লাতি আন\'আমতা আলাইয়্যা ওয়া আলা ওয়ালিদাইয়্যা ওয়া আন আ\'মালা সালিহান তারদাহু ওয়া আদখিলনি বিরহমাতিকা ফি ইবাদিকাস সালিহিন।';
+
+  @override
+  String get sunnahRecitationGratitudeTranslation => 'হে আমার রব, আমাকে ও আমার মা-বাবাকে দেওয়া আপনার নিয়ামতের কৃতজ্ঞতা এবং আপনার পছন্দের নেক কাজের তাওফিক দিন। আপনার রহমতে আমাকে সৎ বান্দাদের অন্তর্ভুক্ত করুন।';
+
+  @override
+  String get sunnahRecitationFastingArabic => 'الصِّيَامُ جُنَّةٌ';
+
+  @override
+  String get sunnahRecitationFastingPronunciation => 'আস-সিয়ামু জুন্নাহ।';
+
+  @override
+  String get sunnahRecitationFastingTranslation => 'রোজা ঢালস্বরূপ।';
+
+  @override
   String get sunnahDuaTitle => 'সুন্নাহ ও দু\'আ';
 
   @override
@@ -1929,8 +2514,52 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerCategoryHadith => 'হাদিস';
 
   @override
+  String get dailyTrackerCategoryCustom => 'আমার টাস্ক';
+
+  @override
   String get dailyTrackerCelebrationTitle => 'মাশাআল্লাহ! আজকের সমস্ত আমল সম্পন্ন হয়েছে!';
 
   @override
   String get dailyTrackerCelebrationButton => 'আলহামদুলিল্লাহ';
+
+  @override
+  String get dailyTrackerAddTaskTooltip => 'টাস্ক যুক্ত করুন';
+
+  @override
+  String get dailyTrackerAddTaskSheetTitle => 'নতুন টাস্ক';
+
+  @override
+  String get dailyTrackerAddTaskNameLabel => 'টাস্কের নাম';
+
+  @override
+  String get dailyTrackerAddTaskNameHint => 'যেমন: ১০ পাতা তাফসীর পড়া';
+
+  @override
+  String get dailyTrackerAddTaskNameEmptyError => 'টাস্কের নাম লিখুন';
+
+  @override
+  String get dailyTrackerAddTaskSubtitleLabel => 'সাবটাইটেল (ঐচ্ছিক)';
+
+  @override
+  String get dailyTrackerAddTaskSubtitleHint => 'যেমন: অতিরিক্ত বিবরণ বা রিমাইন্ডার';
+
+  @override
+  String get dailyTrackerAddTaskOptionalLabel => 'ঐচ্ছিক হিসেবে চিহ্নিত করুন';
+
+  @override
+  String get dailyTrackerAddTaskSaveAction => 'টাস্ক যুক্ত করুন';
+
+  @override
+  String get dailyTrackerDeleteTaskTooltip => 'টাস্ক মুছুন';
+
+  @override
+  String get dailyTrackerDeleteTaskConfirmTitle => 'টাস্ক মুছবেন?';
+
+  @override
+  String dailyTrackerDeleteTaskConfirmMessage(String title) {
+    return '\"$title\" স্থায়ীভাবে মুছে ফেলা হবে।';
+  }
+
+  @override
+  String get dailyTrackerDeleteAction => 'মুছুন';
 }

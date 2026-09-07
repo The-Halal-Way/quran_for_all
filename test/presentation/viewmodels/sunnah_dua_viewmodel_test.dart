@@ -1,0 +1,104 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:quran_for_all/core/enums/app_language.dart';
+import 'package:quran_for_all/data/repositories/sunnah_dua_repository_impl.dart';
+import 'package:quran_for_all/domain/entities/sunnah_dua/sunnah_dua_content.dart';
+import 'package:quran_for_all/l10n/app_localizations.dart';
+import 'package:quran_for_all/l10n/app_localizations_bn.dart';
+import 'package:quran_for_all/l10n/app_localizations_en.dart';
+import 'package:quran_for_all/presentation/models/sunnah_dua_shortcuts_presenter.dart';
+import 'package:quran_for_all/presentation/viewmodels/sunnah_dua_viewmodel.dart';
+
+void main() {
+  test(
+    'daily catalog covers the day and keeps situational content in shortcuts',
+    () {
+      final catalog = SunnahDuaRepositoryImpl(AppLocalizationsEn());
+      final daily = catalog.dailyPractices;
+      expect(daily.first.id, 'waking_up');
+      expect(daily.last.id, 'sleeping_sunnahs');
+      expect(daily.map((item) => item.id).toSet().length, daily.length);
+      expect(daily.every((item) => item.kind == SunnahDuaKind.sunnah), isTrue);
+      expect(
+        daily.map((item) => item.phase).toSet(),
+        SunnahDayPhase.values.toSet(),
+      );
+      expect(
+        daily.map((item) => item.id),
+        isNot(contains('seeking_forgiveness')),
+      );
+      expect(daily.map((item) => item.id), isNot(contains('difficulty')));
+      expect(
+        catalog.collections.map((item) => item.id),
+        containsAll([
+          'seeking_forgiveness',
+          'difficulty',
+          'morning_evening',
+          'gratitude',
+          'siyam_sunnahs',
+        ]),
+      );
+      for (final item in [...daily, ...catalog.collections]) {
+        expect(item.points, isNotEmpty, reason: item.id);
+        expect(item.source, isNotEmpty, reason: item.id);
+      }
+    },
+  );
+
+  test(
+    'section queries are independent, and reset restores the whole routine',
+    () {
+      final strings = AppLocalizationsEn();
+      final model = SunnahDuaViewModel(SunnahDuaRepositoryImpl(strings));
+      addTearDown(model.dispose);
+      final total = model.totalPractices;
+      model.searchRoutine('  DRINKING   WATER ');
+      expect(model.practices.map((item) => item.id), ['drinking']);
+      model.searchCollections('forgiveness');
+      expect(
+        presentSunnahShortcuts(
+          strings,
+          model.collections,
+          model.collectionQuery,
+        ).map((item) => item.id),
+        ['seeking_forgiveness'],
+      );
+      expect(model.practices.map((item) => item.id), ['drinking']);
+      model.searchRoutine('does-not-exist');
+      expect(model.practices, isEmpty);
+      model.searchRoutine('');
+      expect(model.practices.length, total);
+      expect(model.collectionQuery, 'forgiveness');
+    },
+  );
+
+  test('Bengali, Arabic without marks, and locale refresh work', () {
+    final model = SunnahDuaViewModel(
+      SunnahDuaRepositoryImpl(AppLocalizationsEn()),
+    );
+    addTearDown(model.dispose);
+    model.searchRoutine('باسمك أموت');
+    expect(model.practices.map((item) => item.id), ['sleeping_sunnahs']);
+    model.updateRepository(SunnahDuaRepositoryImpl(AppLocalizationsBn()));
+    model.searchRoutine('পানি পান');
+    expect(model.practices.map((item) => item.id), ['drinking']);
+    expect(model.practices.single.title, 'পানি পান');
+    expect(model.practices.single.practice, contains('ধীরে'));
+    expect(model.practices.single.source, contains('সহিহ'));
+  });
+
+  test('every generated locale is selectable and survives persisted codes', () {
+    expect(
+      AppLanguage.values.map((language) => language.locale).toSet(),
+      AppLocalizations.supportedLocales.toSet(),
+    );
+    for (final language in AppLanguage.values) {
+      expect(AppLanguageX.fromCode(language.code), language);
+      expect(language.label, isNotEmpty);
+      final catalog = SunnahDuaRepositoryImpl(
+        lookupAppLocalizations(language.locale),
+      );
+      expect(catalog.dailyPractices.length, 22);
+    }
+    expect(AppLanguageX.fromCode('unknown'), AppLanguage.english);
+  });
+}

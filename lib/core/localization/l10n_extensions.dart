@@ -106,6 +106,8 @@ extension L10nBuildContextX on BuildContext {
         return l10n.languageEnglish;
       case AppLanguage.bangla:
         return l10n.languageBangla;
+      default:
+        return language.label;
     }
   }
 

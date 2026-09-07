@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
-import 'package:quran_for_all/data/models/sunnah_dua/sunnah_dua_models.dart';
+import 'package:quran_for_all/presentation/models/sunnah_dua_item.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_timeline_carousel.dart';
 import 'package:quran_for_all/presentation/widgets/settings/settings_view/settings_choice_segment.dart';

@@ -28,6 +28,7 @@ class PrayerRakatGuideCard extends StatelessWidget {
     final hintColor = isDark
         ? MyColors.darkTextSecondary
         : MyColors.textSecondary;
+    final focusItem = _focusItem();
 
     return Material(
       color: Colors.transparent,
@@ -35,95 +36,70 @@ class PrayerRakatGuideCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppRadius.lg),
         onTap: () => _showRakatGuideSheet(context),
         child: PrayerCardShell(
-          padding: const EdgeInsets.all(AppSpacing.md),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          padding: const EdgeInsets.all(AppSpacing.lg),
+          child: Row(
             children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    width: 38,
-                    height: 38,
-                    decoration: BoxDecoration(
-                      color: MyColors.secondary.withValues(
-                        alpha: isDark ? 0.2 : 0.12,
+              Container(
+                width: 42,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: MyColors.secondary.withValues(
+                    alpha: isDark ? 0.2 : 0.12,
+                  ),
+                  borderRadius: BorderRadius.circular(AppRadius.md),
+                ),
+                child: const Icon(
+                  Icons.format_list_numbered_rounded,
+                  color: MyColors.secondary,
+                  size: 21,
+                ),
+              ),
+              const SizedBox(width: AppSpacing.md),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      l10n.prayerRakatGuideTitle,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: text.titleMedium.copyWith(
+                        color: textColor,
+                        fontWeight: AppTheme.weightExtraBold,
                       ),
-                      borderRadius: BorderRadius.circular(AppRadius.sm),
                     ),
-                    child: const Icon(
-                      Icons.format_list_numbered_rounded,
-                      color: MyColors.secondary,
-                      size: 20,
+                    const SizedBox(height: 2),
+                    Text(
+                      focusItem == null
+                          ? l10n.prayerRakatGuideSubtitle
+                          : '${focusItem.name} • ${l10n.prayerRakatTotalLabel(focusItem.totalRakats)}',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: text.bodySmall.copyWith(color: hintColor),
                     ),
-                  ),
-                  const SizedBox(width: AppSpacing.md),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          l10n.prayerRakatGuideTitle,
-                          style: text.hadithTitle.copyWith(
-                            color: textColor,
-                            height: 1.15,
-                          ),
-                        ),
-                        const SizedBox(height: AppSpacing.xs),
-                        Text(
-                          l10n.prayerRakatGuideSubtitle,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: text.bodySmall.copyWith(
-                            color: hintColor,
-                            height: 1.35,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(width: AppSpacing.sm),
-                  Icon(
-                    Icons.keyboard_arrow_up_rounded,
-                    color: hintColor,
-                    size: 22,
-                  ),
-                ],
+                  ],
+                ),
               ),
-              const SizedBox(height: AppSpacing.md),
-              // Keep the home tab light: counts stay visible at first glance,
-              // while partition details move into the on-demand bottom sheet.
-              Wrap(
-                spacing: AppSpacing.xs,
-                runSpacing: AppSpacing.xs,
-                children: [
-                  for (final item in items)
-                    _RakatCountChip(
-                      item: item,
-                      isFocus: item.prayer == focusPrayer,
-                    ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Icon(
-                    Icons.open_in_full_rounded,
-                    size: 16,
-                    color: MyColors.secondary,
-                  ),
-                  const SizedBox(width: AppSpacing.xs),
-                  Text(
-                    l10n.prayerRakatViewDetails,
-                    style: TextStyle(color: MyColors.secondary, height: 1.2),
-                  ),
-                ],
+              const SizedBox(width: AppSpacing.sm),
+              const Icon(
+                Icons.arrow_forward_rounded,
+                color: MyColors.secondary,
+                size: 20,
               ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  PrayerRakatPlan? _focusItem() {
+    for (final item in items) {
+      if (item.prayer == focusPrayer) {
+        return item;
+      }
+    }
+    return items.isEmpty ? null : items.first;
   }
 
   // MARK: Prayer - Rakat Guide Bottom Sheet Launcher
@@ -249,62 +225,6 @@ class _PrayerRakatGuideSheet extends StatelessWidget {
           ),
         );
       },
-    );
-  }
-}
-
-// MARK: Prayer - Compact Rakat Count Chip
-class _RakatCountChip extends StatelessWidget {
-  const _RakatCountChip({required this.item, required this.isFocus});
-
-  final PrayerRakatPlan item;
-  final bool isFocus;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-    final accent = PrayerVisuals.accentFor(item.prayer);
-    final text = AppTheme.text(context);
-    final textColor = isDark ? MyColors.darkTextPrimary : MyColors.textPrimary;
-    final hintColor = isDark
-        ? MyColors.darkTextSecondary
-        : MyColors.textSecondary;
-
-    return Container(
-      constraints: const BoxConstraints(minWidth: 88, minHeight: 52),
-      padding: const EdgeInsets.symmetric(
-        horizontal: AppSpacing.sm,
-        vertical: AppSpacing.xs,
-      ),
-      decoration: BoxDecoration(
-        color: isFocus
-            ? accent.withValues(alpha: isDark ? 0.2 : 0.12)
-            : hintColor.withValues(alpha: isDark ? 0.08 : 0.05),
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        border: Border.all(
-          color: isFocus
-              ? accent.withValues(alpha: 0.42)
-              : hintColor.withValues(alpha: isDark ? 0.14 : 0.1),
-          width: 0.8,
-        ),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(PrayerVisuals.iconFor(item.prayer), color: accent, size: 17),
-          const SizedBox(width: AppSpacing.xs),
-          Text(
-            '${item.totalRakats}',
-            style: text.prayerStepIndex.copyWith(color: accent, height: 1),
-          ),
-          const SizedBox(width: AppSpacing.xs),
-          Text(
-            item.name,
-            style: text.prayerStatusChip.copyWith(color: textColor),
-          ),
-        ],
-      ),
     );
   }
 }

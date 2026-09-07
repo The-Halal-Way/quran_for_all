@@ -91,7 +91,7 @@ class _MemorizationCard extends StatelessWidget {
               ),
         boxShadow: [
           BoxShadow(
-            color: MyColors.tertiary.withOpacity(0.28),
+            color: MyColors.tertiary.withValues(alpha: 0.28),
             blurRadius: 24,
             offset: const Offset(0, 8),
           ),
@@ -103,13 +103,19 @@ class _MemorizationCard extends StatelessWidget {
           Positioned(
             right: 12,
             top: 12,
-            child: _GeomStar(color: Colors.white.withOpacity(0.05), size: 80),
+            child: _GeomStar(
+              color: Colors.white.withValues(alpha: 0.05),
+              size: 80,
+            ),
           ),
           // Decorative star bottom-left
           Positioned(
             left: -8,
             bottom: -8,
-            child: _GeomStar(color: Colors.white.withOpacity(0.03), size: 50),
+            child: _GeomStar(
+              color: Colors.white.withValues(alpha: 0.03),
+              size: 50,
+            ),
           ),
 
           Padding(
@@ -126,10 +132,10 @@ class _MemorizationCard extends StatelessWidget {
                       vertical: 4,
                     ),
                     decoration: BoxDecoration(
-                      color: MyColors.tertiary.withOpacity(0.18),
+                      color: MyColors.tertiary.withValues(alpha: 0.18),
                       borderRadius: BorderRadius.circular(AppRadius.lg),
                       border: Border.all(
-                        color: MyColors.tertiary.withOpacity(0.35),
+                        color: MyColors.tertiary.withValues(alpha: 0.35),
                         width: 0.8,
                       ),
                     ),
@@ -161,7 +167,7 @@ class _MemorizationCard extends StatelessWidget {
                   textAlign: TextAlign.center,
                   textDirection: ui.TextDirection.rtl,
                   style: text.hadithShortArabicShowcase.copyWith(
-                    color: Colors.white.withOpacity(0.97),
+                    color: Colors.white.withValues(alpha: 0.97),
                   ),
                 ),
 
@@ -174,7 +180,7 @@ class _MemorizationCard extends StatelessWidget {
                     gradient: LinearGradient(
                       colors: [
                         Colors.transparent,
-                        MyColors.tertiaryLight.withOpacity(0.5),
+                        MyColors.tertiaryLight.withValues(alpha: 0.5),
                         Colors.transparent,
                       ],
                     ),
@@ -283,7 +289,7 @@ class _LessonsCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
-                  color: MyColors.tertiary.withOpacity(0.12),
+                  color: MyColors.tertiary.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(AppRadius.tiny),
                 ),
                 child: Row(
@@ -325,7 +331,7 @@ class _LessonsCard extends StatelessWidget {
                     margin: const EdgeInsets.only(top: 1),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: _bulletColor(idx).withOpacity(0.12),
+                      color: _bulletColor(idx).withValues(alpha: 0.12),
                     ),
                     alignment: Alignment.center,
                     child: Text(

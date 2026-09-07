@@ -50,20 +50,18 @@ class LevelBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
-    final cardBg = isDark ? const Color(0xFF1D1238) : Colors.white;
-    final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
+    final cardBg = isDark ? const Color(0xFF171126) : Colors.white;
 
     return Container(
-      margin: const EdgeInsets.fromLTRB(0, 4, 0, 8),
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(AppSpacing.md),
       decoration: BoxDecoration(
         color: cardBg,
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        border: Border.all(color: borderC),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: _accentColor.withValues(alpha: 0.20)),
         gradient: LinearGradient(
           colors: [
-            _accentColor.withValues(alpha: isDark ? 0.10 : 0.05),
-            Colors.transparent,
+            _accentColor.withValues(alpha: isDark ? 0.14 : 0.07),
+            cardBg,
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -83,39 +81,25 @@ class LevelBanner extends StatelessWidget {
               size: 22,
             ),
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: AppSpacing.md),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Text(
-                      _levelLabel(context),
-                      style: text.titleMedium.copyWith(color: _accentColor),
-                    ),
-                    const SizedBox(width: 8),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 8,
-                        vertical: 2,
-                      ),
-                      decoration: BoxDecoration(
-                        color: _accentColor.withValues(alpha: 0.15),
-                        borderRadius: BorderRadius.circular(AppRadius.lg),
-                      ),
-                      child: Text(
-                        context.l10n.duahCountLabel(_duahCount),
-                        style: text.duahLevelCount.copyWith(
-                          color: _accentColor,
-                        ),
-                      ),
-                    ),
-                  ],
+                Text(
+                  '${_levelLabel(context)} • ${context.l10n.duahCountLabel(_duahCount)}',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: text.titleSmall.copyWith(
+                    color: _accentColor,
+                    fontWeight: AppTheme.weightExtraBold,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   _description(context),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                   style: text.duahLevelDescription.copyWith(
                     color: isDark
                         ? const Color(0xFFB39DDB)

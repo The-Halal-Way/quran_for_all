@@ -12,7 +12,8 @@ class GetDailyTasksUseCase {
 
   Future<List<DailyTask>> call({DateTime? now}) async {
     final today = now ?? DateTime.now();
-    final tasks = DailyTasksData.tasksForDate(today);
+    final customTasks = await _repository.loadCustomTasks();
+    final tasks = [...DailyTasksData.tasksForDate(today), ...customTasks];
     final progress = await _repository.loadProgress();
 
     return tasks.map((task) {

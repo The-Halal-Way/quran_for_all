@@ -46,6 +46,30 @@ class DailyTask {
       lastCompletedDate: lastCompletedDate ?? this.lastCompletedDate,
     );
   }
+
+  /// Serializes this task's definition (not its completion state) for
+  /// persisting user-created custom tasks.
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'titleEn': titleEn,
+      'titleBn': titleBn,
+      'category': category.code,
+      'isOptional': isOptional,
+      'isFridayOnly': isFridayOnly,
+    };
+  }
+
+  factory DailyTask.fromMap(Map<String, dynamic> map) {
+    return DailyTask(
+      id: map['id'] as String,
+      titleEn: map['titleEn'] as String,
+      titleBn: map['titleBn'] as String? ?? '',
+      category: TaskCategoryX.fromCode(map['category'] as String?),
+      isOptional: map['isOptional'] as bool? ?? false,
+      isFridayOnly: map['isFridayOnly'] as bool? ?? false,
+    );
+  }
 }
 
 /// Persisted completion state for a single [DailyTask].

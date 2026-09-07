@@ -18,6 +18,7 @@ class TaskTileWidget extends StatelessWidget {
     required this.textMain,
     required this.textHint,
     required this.divider,
+    this.onDelete,
   });
 
   final DailyTask task;
@@ -26,6 +27,9 @@ class TaskTileWidget extends StatelessWidget {
   final Color textMain;
   final Color textHint;
   final Color divider;
+
+  /// Shown as a trailing delete action when non-null (custom tasks only).
+  final VoidCallback? onDelete;
 
   @override
   Widget build(BuildContext context) {
@@ -87,17 +91,19 @@ class TaskTileWidget extends StatelessWidget {
                       ),
                       child: Text(task.titleEn),
                     ),
-                    const SizedBox(height: 2),
-                    AnimatedDefaultTextStyle(
-                      duration: const Duration(milliseconds: 200),
-                      style: text.bodySmall.copyWith(
-                        color: textHint,
-                        decoration: isDone
-                            ? TextDecoration.lineThrough
-                            : TextDecoration.none,
+                    if (task.titleBn.isNotEmpty) ...[
+                      const SizedBox(height: 2),
+                      AnimatedDefaultTextStyle(
+                        duration: const Duration(milliseconds: 200),
+                        style: text.bodySmall.copyWith(
+                          color: textHint,
+                          decoration: isDone
+                              ? TextDecoration.lineThrough
+                              : TextDecoration.none,
+                        ),
+                        child: Text(task.titleBn),
                       ),
-                      child: Text(task.titleBn),
-                    ),
+                    ],
                   ],
                 ),
               ),
@@ -110,6 +116,16 @@ class TaskTileWidget extends StatelessWidget {
                   color: MyColors.secondary,
                 ),
               ],
+              if (onDelete != null)
+                IconButton(
+                  onPressed: onDelete,
+                  icon: const Icon(Icons.delete_outline_rounded, size: 20),
+                  color: textHint,
+                  tooltip: context.l10n.dailyTrackerDeleteTaskTooltip,
+                  constraints: const BoxConstraints(),
+                  padding: const EdgeInsets.only(left: AppSpacing.xs),
+                  visualDensity: VisualDensity.compact,
+                ),
             ],
           ),
         ),

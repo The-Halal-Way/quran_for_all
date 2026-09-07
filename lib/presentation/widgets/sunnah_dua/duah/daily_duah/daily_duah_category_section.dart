@@ -11,11 +11,13 @@ class CategorySection extends StatelessWidget {
     required this.category,
     required this.isDark,
     required this.isLast,
+    required this.onItemTap,
   });
 
   final DuahCategory category;
   final bool isDark;
   final bool isLast;
+  final ValueChanged<DuahItem> onItemTap;
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +81,14 @@ class CategorySection extends StatelessWidget {
               ],
             ),
           ),
-          ...category.items.map((item) => DuahCard(item: item, isDark: isDark)),
+          for (var index = 0; index < category.items.length; index++) ...[
+            DailyDuahCard(
+              item: category.items[index],
+              onTap: () => onItemTap(category.items[index]),
+            ),
+            if (index < category.items.length - 1)
+              const SizedBox(height: AppSpacing.sm),
+          ],
         ],
       ),
     );

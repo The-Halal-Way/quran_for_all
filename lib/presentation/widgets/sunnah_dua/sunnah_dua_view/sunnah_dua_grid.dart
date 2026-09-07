@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
-import '../../../../data/models/sunnah_dua/sunnah_dua_models.dart';
+import '../../../models/sunnah_dua_item.dart';
 import 'sunnah_dua_card.dart';
 
 class SunnahDuaGrid extends StatelessWidget {
@@ -20,7 +20,10 @@ class SunnahDuaGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        final columns = constraints.maxWidth >= 940
+        final scale = MediaQuery.textScalerOf(context).scale(14) / 14;
+        final columns = constraints.maxWidth < 270 || scale > 1.6
+            ? 1
+            : constraints.maxWidth >= 940
             ? 4
             : constraints.maxWidth >= 680
             ? 3
@@ -34,11 +37,12 @@ class SunnahDuaGrid extends StatelessWidget {
             crossAxisCount: columns,
             crossAxisSpacing: AppSpacing.md,
             mainAxisSpacing: AppSpacing.md,
-            mainAxisExtent: 148,
+            mainAxisExtent: 216 + (scale - 1).clamp(0, 3) * 130,
           ),
           itemBuilder: (context, index) {
             final item = items[index];
             return SunnahDuaCard(
+              key: ValueKey(item.id),
               item: item,
               kindLabel: kindLabelBuilder(item.kind),
               onTap: () => onItemTap(item),
