@@ -825,6 +825,27 @@ class AppLocalizationsBn extends AppLocalizations {
   String get languageNativeName => 'বাংলা';
 
   @override
+  String get dailyTrackerHeroTitle => 'প্রতিদিন, একটু একটু করে।';
+
+  @override
+  String get dailyTrackerHeroSubtitle => 'প্রিয় আমলগুলোকে দিনযাপনের অংশ করুন।';
+
+  @override
+  String get dailyTrackerDoneLabel => 'সম্পন্ন';
+
+  @override
+  String get dailyTrackerRemainingLabel => 'বাকি';
+
+  @override
+  String get dailyTrackerEmptyMessage => 'আপনার তালিকা খালি। শুরু করতে একটি কাজ যোগ করুন।';
+
+  @override
+  String get dashboardTrackerPrompt => 'প্রতিদিনের আমল';
+
+  @override
+  String get dashboardTrackerOpen => 'তালিকা খুলুন';
+
+  @override
   String get sunnahDuaCollectionsTitle => 'প্রতিটি মুহূর্তের জন্য';
 
   @override
@@ -2474,7 +2495,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String dailyTrackerProgressLabel(int completed, int total) {
-    return '$completed/$total সম্পন্ন';
+    final intl.NumberFormat completedNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String completedString = completedNumberFormat.format(completed);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return '$completedString/$totalString সম্পন্ন';
   }
 
   @override

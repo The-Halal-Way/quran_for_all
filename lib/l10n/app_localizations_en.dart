@@ -825,6 +825,27 @@ class AppLocalizationsEn extends AppLocalizations {
   String get languageNativeName => 'English';
 
   @override
+  String get dailyTrackerHeroTitle => 'A little, every day.';
+
+  @override
+  String get dailyTrackerHeroSubtitle => 'Make space for the habits that matter.';
+
+  @override
+  String get dailyTrackerDoneLabel => 'done';
+
+  @override
+  String get dailyTrackerRemainingLabel => 'to go';
+
+  @override
+  String get dailyTrackerEmptyMessage => 'Your checklist is empty. Add a task to begin.';
+
+  @override
+  String get dashboardTrackerPrompt => 'Your daily rhythm';
+
+  @override
+  String get dashboardTrackerOpen => 'Open checklist';
+
+  @override
   String get sunnahDuaCollectionsTitle => 'For every moment';
 
   @override
@@ -2474,7 +2495,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String dailyTrackerProgressLabel(int completed, int total) {
-    return '$completed/$total completed';
+    final intl.NumberFormat completedNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String completedString = completedNumberFormat.format(completed);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return '$completedString/$totalString completed';
   }
 
   @override

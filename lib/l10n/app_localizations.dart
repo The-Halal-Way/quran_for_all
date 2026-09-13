@@ -1667,6 +1667,48 @@ abstract class AppLocalizations {
   /// **'English'**
   String get languageNativeName;
 
+  /// No description provided for @dailyTrackerHeroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A little, every day.'**
+  String get dailyTrackerHeroTitle;
+
+  /// No description provided for @dailyTrackerHeroSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Make space for the habits that matter.'**
+  String get dailyTrackerHeroSubtitle;
+
+  /// No description provided for @dailyTrackerDoneLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'done'**
+  String get dailyTrackerDoneLabel;
+
+  /// No description provided for @dailyTrackerRemainingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'to go'**
+  String get dailyTrackerRemainingLabel;
+
+  /// No description provided for @dailyTrackerEmptyMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your checklist is empty. Add a task to begin.'**
+  String get dailyTrackerEmptyMessage;
+
+  /// No description provided for @dashboardTrackerPrompt.
+  ///
+  /// In en, this message translates to:
+  /// **'Your daily rhythm'**
+  String get dashboardTrackerPrompt;
+
+  /// No description provided for @dashboardTrackerOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open checklist'**
+  String get dashboardTrackerOpen;
+
   /// No description provided for @sunnahDuaCollectionsTitle.
   ///
   /// In en, this message translates to:

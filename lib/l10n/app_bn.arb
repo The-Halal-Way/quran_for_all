@@ -394,6 +394,13 @@
   "duahNintyNineLoadErrorBody": "একটু পর আবার চেষ্টা করুন।",
   "duahNintyNineRetry": "আবার চেষ্টা করুন",
   "languageNativeName": "বাংলা",
+  "dailyTrackerHeroTitle": "প্রতিদিন, একটু একটু করে।",
+  "dailyTrackerHeroSubtitle": "প্রিয় আমলগুলোকে দিনযাপনের অংশ করুন।",
+  "dailyTrackerDoneLabel": "সম্পন্ন",
+  "dailyTrackerRemainingLabel": "বাকি",
+  "dailyTrackerEmptyMessage": "আপনার তালিকা খালি। শুরু করতে একটি কাজ যোগ করুন।",
+  "dashboardTrackerPrompt": "প্রতিদিনের আমল",
+  "dashboardTrackerOpen": "তালিকা খুলুন",
   "sunnahDuaCollectionsTitle": "প্রতিটি মুহূর্তের জন্য",
   "sunnahDuaCollectionsSubtitle": "দু'আ, যিকির ও অনুপ্রেরণা",
   "sunnahDuaRoutineTitle": "সুন্নাহর সঙ্গে একটি দিন",
@@ -1004,10 +1011,12 @@
   "@dailyTrackerProgressLabel": {
     "placeholders": {
       "completed": {
-        "type": "int"
+        "type": "int",
+        "format": "decimalPattern"
       },
       "total": {
-        "type": "int"
+        "type": "int",
+        "format": "decimalPattern"
       }
     }
   },

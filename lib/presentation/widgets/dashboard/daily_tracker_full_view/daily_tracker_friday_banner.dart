@@ -5,30 +5,23 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
 
-/// Golden banner shown at the top of the Daily Tracker on Fridays,
-/// highlighting the special Jumu'ah tasks added to the routine.
-class FridayBannerWidget extends StatelessWidget {
-  const FridayBannerWidget({super.key});
+class DailyTrackerFridayBanner extends StatelessWidget {
+  const DailyTrackerFridayBanner({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final text = AppTheme.text(context);
-
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    final accent = dark ? MyColors.tertiaryLight : MyColors.tertiaryDark;
     return Container(
-      width: double.infinity,
-      margin: const EdgeInsets.only(bottom: AppSpacing.lg),
       padding: const EdgeInsets.all(AppSpacing.lg),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color(0xFFC9A227), Color(0xFFE9D27C)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
+        color: accent.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(AppRadius.lg),
+        border: Border.all(color: accent.withValues(alpha: 0.2)),
       ),
       child: Row(
         children: [
-          const Icon(Icons.mosque_rounded, color: MyColors.primary, size: 28),
+          Icon(Icons.mosque_rounded, color: accent, size: 26),
           const SizedBox(width: AppSpacing.md),
           Expanded(
             child: Column(
@@ -36,16 +29,15 @@ class FridayBannerWidget extends StatelessWidget {
               children: [
                 Text(
                   context.l10n.dailyTrackerFridayBannerTitle,
-                  style: text.dashboardCardTitle.copyWith(
-                    color: MyColors.primary,
+                  style: AppTheme.text(context).titleSmall.copyWith(
+                    color: accent,
+                    fontWeight: AppTheme.weightBold,
                   ),
                 ),
-                const SizedBox(height: 2),
+                const SizedBox(height: AppSpacing.xs),
                 Text(
                   context.l10n.dailyTrackerFridayBannerSubtitle,
-                  style: text.bodySmall.copyWith(
-                    color: MyColors.primary.withValues(alpha: 0.85),
-                  ),
+                  style: AppTheme.text(context).bodySmall,
                 ),
               ],
             ),

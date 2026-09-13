@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:quran_for_all/core/theme/my_colors.dart';
-import 'package:quran_for_all/data/models/surah_model.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'package:quran_for_all/services/hijri_calendar_service.dart';
+
+import 'models/dashboard_view_data.dart';
 
 class DashboardViewModel {
   DashboardViewModel({
@@ -25,7 +25,7 @@ class DashboardViewModel {
     );
 
     return DashboardHeaderInfo(
-      dateLabel: DateFormat('EEEE, d MMMM').format(now),
+      dateLabel: DateFormat('EEE, d MMM', l10n.localeName).format(now),
       hijriDateLabel: l10n.hijriDateFull(
         _formatNumber(l10n, hijriDate.day),
         _monthName(l10n, hijriDate.month),
@@ -124,16 +124,6 @@ class DashboardViewModel {
     }
   }
 
-  DashboardPalette palette({required bool isDark}) {
-    return DashboardPalette(
-      cardBg: isDark ? MyColors.darkCard : MyColors.cardFill,
-      textMain: isDark ? MyColors.darkTextPrimary : MyColors.textPrimary,
-      textSub: isDark ? MyColors.darkTextSecondary : MyColors.textSecondary,
-      textHint: isDark ? MyColors.darkTextTertiary : MyColors.textTertiary,
-      divider: isDark ? MyColors.darkDivider : MyColors.divider,
-    );
-  }
-
   String _monthName(AppLocalizations l10n, int month) {
     return switch (month) {
       1 => l10n.hijriMonthMuharram,
@@ -164,66 +154,4 @@ class DashboardViewModel {
       return digit == null ? char : digits[digit];
     }).join();
   }
-}
-
-class DashboardHeaderInfo {
-  const DashboardHeaderInfo({
-    required this.dateLabel,
-    required this.hijriDateLabel,
-  });
-
-  final String dateLabel;
-  final String hijriDateLabel;
-}
-
-class DashboardContinueCardsInfo {
-  const DashboardContinueCardsInfo({
-    required this.reading,
-    required this.learning,
-  });
-
-  final DashboardContinueCardInfo reading;
-  final DashboardContinueLearningInfo learning;
-}
-
-class DashboardContinueCardInfo {
-  const DashboardContinueCardInfo({
-    required this.subtitle,
-    required this.detail,
-    required this.hasExistingProgress,
-    this.surah,
-    this.ayahNumber,
-  });
-
-  final String subtitle;
-  final String detail;
-  final bool hasExistingProgress;
-  final SurahModel? surah;
-  final int? ayahNumber;
-}
-
-class DashboardContinueLearningInfo {
-  const DashboardContinueLearningInfo({
-    required this.subtitle,
-    required this.detail,
-  });
-
-  final String subtitle;
-  final String detail;
-}
-
-class DashboardPalette {
-  const DashboardPalette({
-    required this.cardBg,
-    required this.textMain,
-    required this.textSub,
-    required this.textHint,
-    required this.divider,
-  });
-
-  final Color cardBg;
-  final Color textMain;
-  final Color textSub;
-  final Color textHint;
-  final Color divider;
 }

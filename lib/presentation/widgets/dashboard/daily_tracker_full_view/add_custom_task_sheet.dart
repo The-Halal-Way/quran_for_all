@@ -51,7 +51,9 @@ class _AddCustomTaskSheetState extends State<_AddCustomTaskSheet> {
   void _submit() {
     final title = _titleController.text.trim();
     if (title.isEmpty) {
-      setState(() => _errorText = context.l10n.dailyTrackerAddTaskNameEmptyError);
+      setState(
+        () => _errorText = context.l10n.dailyTrackerAddTaskNameEmptyError,
+      );
       return;
     }
 
@@ -70,7 +72,7 @@ class _AddCustomTaskSheetState extends State<_AddCustomTaskSheet> {
     final text = AppTheme.text(context);
 
     return SafeArea(
-      child: Padding(
+      child: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(
           AppSpacing.lg,
           AppSpacing.sm,

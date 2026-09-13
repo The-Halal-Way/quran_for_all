@@ -394,6 +394,13 @@
   "duahNintyNineLoadErrorBody": "Please try again in a moment.",
   "duahNintyNineRetry": "Retry",
   "languageNativeName": "English",
+  "dailyTrackerHeroTitle": "A little, every day.",
+  "dailyTrackerHeroSubtitle": "Make space for the habits that matter.",
+  "dailyTrackerDoneLabel": "done",
+  "dailyTrackerRemainingLabel": "to go",
+  "dailyTrackerEmptyMessage": "Your checklist is empty. Add a task to begin.",
+  "dashboardTrackerPrompt": "Your daily rhythm",
+  "dashboardTrackerOpen": "Open checklist",
   "sunnahDuaCollectionsTitle": "For every moment",
   "sunnahDuaCollectionsSubtitle": "Du'a, remembrance & a little inspiration",
   "sunnahDuaRoutineTitle": "A day with the Sunnah",
@@ -1004,10 +1011,12 @@
   "@dailyTrackerProgressLabel": {
     "placeholders": {
       "completed": {
-        "type": "int"
+        "type": "int",
+        "format": "decimalPattern"
       },
       "total": {
-        "type": "int"
+        "type": "int",
+        "format": "decimalPattern"
       }
     }
   },
