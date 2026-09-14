@@ -9,7 +9,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/viewmodels/prayer/special_prayer_viewmodel.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_language_menu_action.dart';
-import 'package:quran_for_all/presentation/widgets/prayer/prayer_visuals.dart';
+import 'package:quran_for_all/presentation/widgets/prayer/shared/prayer_section_header.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/special_prayer/special_prayer_hadith_panel.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/special_prayer/special_prayer_hero.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/special_prayer/special_prayer_note_card.dart';

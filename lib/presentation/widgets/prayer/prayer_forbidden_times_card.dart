@@ -5,7 +5,7 @@ import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 
-import 'prayer_visuals.dart';
+import 'shared/prayer_card_shell.dart';
 
 // MARK: Prayer - Forbidden Times Card
 class PrayerForbiddenTimesCard extends StatelessWidget {

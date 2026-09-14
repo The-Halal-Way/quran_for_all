@@ -14,12 +14,14 @@ import 'data/datasources/remote/quran_api_service.dart';
 import 'data/datasources/remote/prayer_times_api_service.dart';
 import 'data/repositories/audio_repository_impl.dart';
 import 'data/repositories/daily_tracker_repository_impl.dart';
+import 'data/repositories/daily_reminder_repository_impl.dart';
 import 'data/repositories/learning_progress_repository_impl.dart';
 import 'data/repositories/prayer_times_repository_impl.dart';
 import 'data/repositories/quran_repository_impl.dart';
 import 'data/repositories/settings_repository_impl.dart';
 import 'domain/repositories/audio_repository.dart';
 import 'domain/repositories/daily_tracker_repository.dart';
+import 'domain/repositories/daily_reminder_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/prayer_times_repository.dart';
 import 'domain/repositories/quran_repository.dart';
@@ -31,6 +33,7 @@ import 'domain/usecases/prayer_times/load_prayer_times_usecase.dart';
 import 'domain/usecases/toggle_task_usecase.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
+import 'presentation/viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
 import 'presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'presentation/viewmodels/quran/quran_viewmodel.dart';
@@ -42,9 +45,13 @@ import 'presentation/viewmodels/settings_viewmodel.dart';
 import 'presentation/viewmodels/splash_viewmodel.dart';
 import 'presentation/views/splash/splash_view.dart';
 import 'presentation/widgets/common/global_audio_control_bar.dart';
+import 'presentation/widgets/daily_reminders/shared/daily_reminder_notification_router.dart';
 import 'services/audio_service.dart';
+import 'services/daily_reminder_notification_service.dart';
 import 'services/permission_helper.dart';
 import 'services/pronunciation_service.dart';
+
+final appNavigatorKey = GlobalKey<NavigatorState>();
 
 class QuranForAllApp extends StatelessWidget {
   const QuranForAllApp({super.key});
@@ -108,6 +115,12 @@ class QuranForAllApp extends StatelessWidget {
         ),
         Provider<DailyTrackerRepository>(
           create: (_) => DailyTrackerRepositoryImpl(),
+        ),
+        Provider<DailyReminderRepository>(
+          create: (_) => DailyReminderRepositoryImpl(),
+        ),
+        Provider<DailyReminderNotificationGateway>(
+          create: (_) => DailyReminderNotificationService(),
         ),
         Provider<GetDailyTasksUseCase>(
           create: (context) =>
@@ -178,6 +191,21 @@ class QuranForAllApp extends StatelessWidget {
             deleteCustomTaskUseCase: context.read<DeleteCustomTaskUseCase>(),
           ),
         ),
+        ChangeNotifierProvider<DailyRemindersViewModel>(
+          create: (context) =>
+              DailyRemindersViewModel(
+                repository: context.read<DailyReminderRepository>(),
+                notificationGateway: context
+                    .read<DailyReminderNotificationGateway>(),
+              )..initialize(
+                context
+                    .read<SettingsViewModel>()
+                    .settings
+                    .language
+                    .locale
+                    .toLanguageTag(),
+              ),
+        ),
       ],
       child: Consumer<SettingsViewModel>(
         builder: (context, settingsViewModel, _) {
@@ -186,6 +214,7 @@ class QuranForAllApp extends StatelessWidget {
             minTextAdapt: true,
             splitScreenMode: true,
             builder: (context, child) => MaterialApp(
+              navigatorKey: appNavigatorKey,
               debugShowCheckedModeBanner: false,
               title: AppConstants.appName,
               theme: AppTheme.lightTheme,
@@ -224,19 +253,24 @@ class QuranForAllApp extends StatelessWidget {
                   builder: (context, audioControlVm, _) {
                     final showBar = audioControlVm.showMiniPlayer;
 
-                    return MediaQuery(
-                      data: clampedMediaQuery,
-                      child: Stack(
-                        children: [
-                          child ?? const SizedBox.shrink(),
-                          if (showBar)
-                            const Positioned(
-                              left: 0,
-                              right: 0,
-                              bottom: 0,
-                              child: GlobalAudioControlBar(),
-                            ),
-                        ],
+                    return DailyReminderNotificationRouter(
+                      navigatorKey: appNavigatorKey,
+                      locale: settingsViewModel.settings.language.locale
+                          .toLanguageTag(),
+                      child: MediaQuery(
+                        data: clampedMediaQuery,
+                        child: Stack(
+                          children: [
+                            child ?? const SizedBox.shrink(),
+                            if (showBar)
+                              const Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                child: GlobalAudioControlBar(),
+                              ),
+                          ],
+                        ),
                       ),
                     );
                   },

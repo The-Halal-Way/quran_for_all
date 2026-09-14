@@ -3,6 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/views/dashboard/daily_tracker/daily_tracker_full_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
+import 'package:quran_for_all/presentation/views/daily_reminders/daily_reminders_view.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_daily_reminder_button.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_hadith_section.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_prayer_card.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_prayer_row.dart';
@@ -14,6 +16,23 @@ void main() {
   late DashboardTestState state;
   setUp(() => state = DashboardTestState());
   tearDown(() => state.dispose());
+
+  testWidgets('daily reminders open from the dashboard header', (tester) async {
+    await tester.pumpWidget(
+      DashboardTestApp(state: state, home: const DashboardView()),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.byType(DashboardDailyReminderButton), findsOneWidget);
+    await tester.tap(find.byType(DashboardDailyReminderButton));
+    await tester.pumpAndSettle();
+
+    expect(find.byType(DailyRemindersView), findsOneWidget);
+    expect(tester.takeException(), isNull);
+
+    await tester.pumpWidget(const SizedBox.shrink());
+    state.dispose();
+  });
 
   testWidgets('tracker preview opens the full checklist and retains progress', (
     tester,

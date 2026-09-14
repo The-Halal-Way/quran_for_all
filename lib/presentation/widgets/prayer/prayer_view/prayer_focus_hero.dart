@@ -7,6 +7,7 @@ import '../../../../core/theme/my_colors.dart';
 import '../../../../data/models/prayer/prayer_detail_models.dart';
 import '../prayer_visuals.dart';
 import 'prayer_hero_artwork.dart';
+import 'prayer_time_source_badge.dart';
 
 class PrayerFocusHero extends StatelessWidget {
   const PrayerFocusHero({
@@ -23,119 +24,127 @@ class PrayerFocusHero extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
-    final icon = PrayerVisuals.iconFor(content.prayer);
-
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final compact = constraints.maxWidth < 680;
-
-        return ClipRRect(
-          borderRadius: BorderRadius.circular(AppRadius.xxl),
-          child: DecoratedBox(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  MyColors.primaryDark,
-                  MyColors.primary,
-                  Color(0xFF164E59),
-                ],
-                stops: [0, 0.62, 1],
-                begin: Alignment.bottomLeft,
-                end: Alignment.topRight,
-              ),
-            ),
-            child: Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: compact ? AppSpacing.lg : AppSpacing.xxxl,
-                vertical: compact ? AppSpacing.lg : AppSpacing.xxl,
-              ),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+    return Container(
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadius.xxl),
+        gradient: const LinearGradient(
+          colors: [
+            MyColors.primaryDark,
+            MyColors.primary,
+            MyColors.primaryLight,
+          ],
+          stops: [0, 0.55, 1],
+          begin: Alignment.bottomLeft,
+          end: Alignment.topRight,
+        ),
+        border: Border.all(
+          color: MyColors.primaryLight.withValues(alpha: 0.45),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: MyColors.primary.withValues(alpha: 0.2),
+            blurRadius: 28,
+            offset: const Offset(0, 12),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(AppSpacing.xl),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                PrayerTimeSourceBadge(hasTimes: hasTimes),
+                const SizedBox(height: AppSpacing.xl),
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    final showArtwork =
+                        constraints.maxWidth >= 280 &&
+                        MediaQuery.textScalerOf(context).scale(16) < 24;
+                    return Row(
                       children: [
-                        Text(
-                          context.l10n.prayerViewCurrentFocus.toUpperCase(),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: text.labelSmall.copyWith(
-                            color: MyColors.tertiaryLight,
-                            fontWeight: AppTheme.weightBold,
-                            letterSpacing: 1.05,
-                          ),
-                        ),
-                        const SizedBox(height: AppSpacing.sm),
-                        Text(
-                          content.title,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: text.headlineMedium.copyWith(
-                            color: Colors.white,
-                            fontWeight: AppTheme.weightBlack,
-                            height: 1,
-                          ),
-                        ),
-                        const SizedBox(height: AppSpacing.md),
-                        Row(
-                          children: [
-                            Flexible(
-                              child: Text(
-                                time,
-                                maxLines: 1,
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                context.l10n.prayerViewCurrentFocus,
+                                style: text.labelMedium.copyWith(
+                                  color: MyColors.tertiaryLight,
+                                  fontWeight: AppTheme.weightBold,
+                                ),
+                              ),
+                              const SizedBox(height: AppSpacing.sm),
+                              Text(
+                                content.title,
                                 style: text.displaySmall.copyWith(
                                   color: Colors.white,
                                   fontWeight: AppTheme.weightExtraBold,
-                                  height: 1,
                                 ),
                               ),
-                            ),
-                            const SizedBox(width: AppSpacing.sm),
-                            _TimeSourceBadge(hasTimes: hasTimes),
-                          ],
+                            ],
+                          ),
                         ),
+                        if (showArtwork) ...[
+                          const SizedBox(width: AppSpacing.md),
+                          ExcludeSemantics(
+                            child: PrayerHeroArtwork(
+                              icon: PrayerVisuals.iconFor(content.prayer),
+                              size: constraints.maxWidth > 500 ? 128 : 96,
+                            ),
+                          ),
+                        ],
                       ],
-                    ),
+                    );
+                  },
+                ),
+                const SizedBox(height: AppSpacing.lg),
+                Text(
+                  content.subtitle,
+                  style: text.bodyMedium.copyWith(
+                    color: Colors.white.withValues(alpha: 0.76),
+                    height: 1.5,
                   ),
-                  SizedBox(width: compact ? AppSpacing.sm : AppSpacing.xl),
-                  PrayerHeroArtwork(icon: icon, size: compact ? 112 : 148),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
-        );
-      },
-    );
-  }
-}
-
-class _TimeSourceBadge extends StatelessWidget {
-  const _TimeSourceBadge({required this.hasTimes});
-
-  final bool hasTimes;
-
-  @override
-  Widget build(BuildContext context) {
-    return Flexible(
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-        decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.11),
-          borderRadius: BorderRadius.circular(AppRadius.full),
-          border: Border.all(color: Colors.white.withValues(alpha: 0.16)),
-        ),
-        child: Text(
-          hasTimes
-              ? context.l10n.prayerViewLoadedFromLocation
-              : context.l10n.prayerViewTimeFallback,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: AppTheme.text(context).labelSmall.copyWith(
-            color: Colors.white.withValues(alpha: 0.76),
-            fontWeight: AppTheme.weightBold,
+          Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.xl,
+              vertical: AppSpacing.lg,
+            ),
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: 0.06),
+              border: Border(
+                top: BorderSide(color: Colors.white.withValues(alpha: 0.12)),
+              ),
+            ),
+            child: Row(
+              children: [
+                const Icon(
+                  Icons.access_time_rounded,
+                  color: MyColors.tertiaryLight,
+                  size: 22,
+                ),
+                const SizedBox(width: AppSpacing.md),
+                Expanded(
+                  child: Text(
+                    time,
+                    style: text.titleLarge.copyWith(
+                      color: Colors.white,
+                      fontWeight: AppTheme.weightBold,
+                      height: 1.4,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

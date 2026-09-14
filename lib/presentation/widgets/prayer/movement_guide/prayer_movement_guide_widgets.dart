@@ -6,7 +6,7 @@ import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/theme/my_images.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
-import 'package:quran_for_all/presentation/widgets/prayer/prayer_visuals.dart';
+import 'package:quran_for_all/presentation/widgets/prayer/shared/prayer_card_shell.dart';
 
 // MARK: Prayer - Movement Guide Hero
 class PrayerMovementGuideHero extends StatelessWidget {

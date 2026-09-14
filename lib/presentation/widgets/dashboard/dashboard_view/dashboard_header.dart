@@ -6,8 +6,12 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../viewmodels/dashboard/dashboard_viewmodel.dart';
+import '../../../viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
 import '../../../viewmodels/settings_viewmodel.dart';
+import '../../../views/daily_reminders/daily_reminders_view.dart';
+import 'dashboard_daily_reminder_button.dart';
 import 'dashboard_date_label.dart';
+import 'dashboard_navigation.dart';
 
 class DashboardHeader extends StatelessWidget {
   const DashboardHeader({super.key});
@@ -23,6 +27,9 @@ class DashboardHeader extends StatelessWidget {
       hijriDateAdjustment: adjustment,
     );
     final colors = Theme.of(context).colorScheme;
+    final unreadReminders = context.select(
+      (DailyRemindersViewModel vm) => vm.unreadCount,
+    );
     return Column(
       children: [
         Container(
@@ -40,15 +47,28 @@ class DashboardHeader extends StatelessWidget {
               color: MyColors.primaryLight.withValues(alpha: 0.18),
             ),
           ),
-          child: Text(
-            'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',
-            textDirection: TextDirection.rtl,
-            textAlign: TextAlign.center,
-            style: AppTheme.text(
-              context,
-            ).dashboardBismillah.copyWith(color: colors.onSurface),
+          child:
+          Stack(
+            alignment: AlignmentDirectional.center,
+            children: [
+              Text(
+                'بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ',
+                textDirection: TextDirection.rtl,
+                textAlign: TextAlign.center,
+                style: AppTheme.text(
+                  context,
+                ).dashboardBismillah.copyWith(color: colors.onSurface),
+              ),
+               Align(
+          alignment: AlignmentDirectional.centerEnd,
+          child: DashboardDailyReminderButton(
+            label: context.l10n.dailyRemindersTitle,
+            unreadCount: unreadReminders,
+            onTap: () => pushDashboardPage(context, const DailyRemindersView()),
           ),
         ),
+            ],
+        ),),
         const SizedBox(height: AppSpacing.md),
         LayoutBuilder(
           builder: (context, constraints) {

@@ -15,85 +15,78 @@ class PrayerTimelineTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final accent = PrayerVisuals.accentFor(item.prayer);
+    final colors = Theme.of(context).colorScheme;
     final active = item.isFocus || item.isCurrent;
-    final surface = isDark ? MyColors.darkCardFill : Colors.white;
-
-    return Container(
-      padding: const EdgeInsets.all(AppSpacing.md),
-      decoration: BoxDecoration(
-        gradient: active
-            ? LinearGradient(
-                colors: [surface, Color.lerp(surface, accent, 0.14)!],
-                begin: Alignment.bottomLeft,
-                end: Alignment.topRight,
-              )
-            : null,
-        color: active ? null : surface,
-        borderRadius: BorderRadius.circular(AppRadius.lg),
-        border: Border.all(
-          color: active
-              ? accent.withValues(alpha: 0.42)
-              : Theme.of(context).colorScheme.outline.withValues(alpha: 0.16),
+    final foreground = active ? Colors.white : colors.onSurface;
+    final accent = active ? MyColors.tertiaryLight : colors.secondary;
+    return Semantics(
+      container: true,
+      child: Container(
+        padding: const EdgeInsets.all(AppSpacing.lg),
+        decoration: BoxDecoration(
+          gradient: active
+              ? const LinearGradient(
+                  colors: [MyColors.primary, MyColors.primaryLight],
+                  begin: Alignment.bottomLeft,
+                  end: Alignment.topRight,
+                )
+              : null,
+          color: active ? null : colors.surface,
+          borderRadius: BorderRadius.circular(AppRadius.lg),
+          border: Border.all(
+            color: active
+                ? MyColors.primaryLight
+                : colors.outline.withValues(alpha: 0.55),
+          ),
         ),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Icon(PrayerVisuals.iconFor(item.prayer), color: accent, size: 19),
-              const Spacer(),
-              if (active)
-                Container(
-                  width: 6,
-                  height: 6,
-                  decoration: BoxDecoration(
-                    color: accent,
-                    shape: BoxShape.circle,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(
+                  PrayerVisuals.iconFor(item.prayer),
+                  color: accent,
+                  size: 21,
+                ),
+                const SizedBox(width: AppSpacing.sm),
+                Expanded(
+                  child: Text(
+                    _status(context),
+                    textAlign: TextAlign.end,
+                    style: text.labelSmall.copyWith(
+                      color: active
+                          ? accent
+                          : foreground.withValues(alpha: 0.6),
+                      fontWeight: AppTheme.weightBold,
+                    ),
                   ),
                 ),
-            ],
-          ),
-          const Spacer(),
-          Text(
-            item.name,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: text.labelMedium.copyWith(
-              fontWeight: AppTheme.weightExtraBold,
+              ],
             ),
-          ),
-          const SizedBox(height: 2),
-          Text(
-            item.time,
-            maxLines: 1,
-            style: text.titleMedium.copyWith(
-              color: active ? accent : Theme.of(context).colorScheme.onSurface,
-              fontWeight: AppTheme.weightBold,
+            const SizedBox(height: AppSpacing.lg),
+            Text(
+              item.name,
+              style: text.titleMedium.copyWith(color: foreground),
             ),
-          ),
-          const SizedBox(height: AppSpacing.xs),
-          Text(
-            _status(context),
-            style: text.labelSmall.copyWith(
-              color: active
-                  ? accent
-                  : Theme.of(
-                      context,
-                    ).colorScheme.onSurface.withValues(alpha: 0.5),
-              fontWeight: AppTheme.weightBold,
+            const SizedBox(height: AppSpacing.xs),
+            Text(
+              item.time,
+              style: text.bodySmall.copyWith(
+                color: foreground.withValues(alpha: active ? 0.86 : 0.72),
+                fontWeight: AppTheme.weightSemiBold,
+                height: 1.5,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
 
   String _status(BuildContext context) {
-    if (item.isFocus) return context.l10n.prayerViewFocus;
     if (item.isCurrent) return context.l10n.prayerViewNow;
+    if (item.isFocus) return context.l10n.prayerViewFocus;
     if (item.isPassed) return context.l10n.prayerViewPassed;
     return context.l10n.prayerViewSoon;
   }

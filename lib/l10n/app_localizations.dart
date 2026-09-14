@@ -5146,6 +5146,306 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Delete'**
   String get dailyTrackerDeleteAction;
+
+  /// No description provided for @dailyRemindersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Reminders'**
+  String get dailyRemindersTitle;
+
+  /// No description provided for @dailyRemindersSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Small pauses. Lasting light.'**
+  String get dailyRemindersSubtitle;
+
+  /// No description provided for @dailyRemindersToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s reminder'**
+  String get dailyRemindersToday;
+
+  /// No description provided for @dailyRemindersHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'History'**
+  String get dailyRemindersHistory;
+
+  /// No description provided for @dailyRemindersSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search reflections, actions or sources'**
+  String get dailyRemindersSearchHint;
+
+  /// No description provided for @dailyRemindersAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get dailyRemindersAll;
+
+  /// No description provided for @dailyRemindersUnread.
+  ///
+  /// In en, this message translates to:
+  /// **'Unread'**
+  String get dailyRemindersUnread;
+
+  /// No description provided for @dailyRemindersSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get dailyRemindersSaved;
+
+  /// No description provided for @dailyRemindersSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder preferences'**
+  String get dailyRemindersSettings;
+
+  /// No description provided for @dailyRemindersRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get dailyRemindersRetry;
+
+  /// No description provided for @dailyRemindersLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'The reminder pack could not be opened.'**
+  String get dailyRemindersLoadError;
+
+  /// No description provided for @dailyRemindersEmptyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No released reminders yet'**
+  String get dailyRemindersEmptyTitle;
+
+  /// No description provided for @dailyRemindersEmptyMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Published reminders will appear here on their release dates and stay in History.'**
+  String get dailyRemindersEmptyMessage;
+
+  /// No description provided for @dailyRemindersNoNewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'No new reminder today'**
+  String get dailyRemindersNoNewTitle;
+
+  /// No description provided for @dailyRemindersNoNewMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your released reminders remain safely available in History.'**
+  String get dailyRemindersNoNewMessage;
+
+  /// No description provided for @dailyRemindersRead.
+  ///
+  /// In en, this message translates to:
+  /// **'Read'**
+  String get dailyRemindersRead;
+
+  /// No description provided for @dailyRemindersUnreadBadge.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get dailyRemindersUnreadBadge;
+
+  /// No description provided for @dailyRemindersOriginalArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'Original Arabic'**
+  String get dailyRemindersOriginalArabic;
+
+  /// No description provided for @dailyRemindersExcerpt.
+  ///
+  /// In en, this message translates to:
+  /// **'Excerpt'**
+  String get dailyRemindersExcerpt;
+
+  /// No description provided for @dailyRemindersOriginalReflection.
+  ///
+  /// In en, this message translates to:
+  /// **'Original reflection'**
+  String get dailyRemindersOriginalReflection;
+
+  /// No description provided for @dailyRemindersSuggestedAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggested action'**
+  String get dailyRemindersSuggestedAction;
+
+  /// No description provided for @dailyRemindersSources.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get dailyRemindersSources;
+
+  /// No description provided for @dailyRemindersOpenSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Open source'**
+  String get dailyRemindersOpenSource;
+
+  /// No description provided for @dailyRemindersFallbackLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Showing {language} content'**
+  String dailyRemindersFallbackLanguage(String language);
+
+  /// No description provided for @dailyRemindersSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get dailyRemindersSave;
+
+  /// No description provided for @dailyRemindersUnsave.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove saved'**
+  String get dailyRemindersUnsave;
+
+  /// No description provided for @dailyRemindersShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get dailyRemindersShare;
+
+  /// No description provided for @dailyRemindersAddChecklist.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to checklist'**
+  String get dailyRemindersAddChecklist;
+
+  /// No description provided for @dailyRemindersChecklistAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Added to your checklist'**
+  String get dailyRemindersChecklistAdded;
+
+  /// No description provided for @dailyRemindersSourceError.
+  ///
+  /// In en, this message translates to:
+  /// **'This source could not be opened offline or online.'**
+  String get dailyRemindersSourceError;
+
+  /// No description provided for @dailyRemindersCategoryAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All themes'**
+  String get dailyRemindersCategoryAll;
+
+  /// No description provided for @dailyRemindersCategoryQuran.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran reflection'**
+  String get dailyRemindersCategoryQuran;
+
+  /// No description provided for @dailyRemindersCategoryHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith reflection'**
+  String get dailyRemindersCategoryHadith;
+
+  /// No description provided for @dailyRemindersCategorySunnah.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah'**
+  String get dailyRemindersCategorySunnah;
+
+  /// No description provided for @dailyRemindersCategoryAkhirah.
+  ///
+  /// In en, this message translates to:
+  /// **'Hereafter'**
+  String get dailyRemindersCategoryAkhirah;
+
+  /// No description provided for @dailyRemindersPreferencesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder preferences'**
+  String get dailyRemindersPreferencesTitle;
+
+  /// No description provided for @dailyRemindersInAppDeliveryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily reminders are always available'**
+  String get dailyRemindersInAppDeliveryTitle;
+
+  /// No description provided for @dailyRemindersInAppDeliveryMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone receives the daily reminder inside the app. Turn on Send notification only if you also want an alert on this device.'**
+  String get dailyRemindersInAppDeliveryMessage;
+
+  /// No description provided for @dailyRemindersNotifyToggle.
+  ///
+  /// In en, this message translates to:
+  /// **'Send notification'**
+  String get dailyRemindersNotifyToggle;
+
+  /// No description provided for @dailyRemindersNotifySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Alert me when today\'s reminder is ready'**
+  String get dailyRemindersNotifySubtitle;
+
+  /// No description provided for @dailyRemindersPreferredTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Preferred time'**
+  String get dailyRemindersPreferredTime;
+
+  /// No description provided for @dailyRemindersCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification themes'**
+  String get dailyRemindersCategories;
+
+  /// No description provided for @dailyRemindersPermission.
+  ///
+  /// In en, this message translates to:
+  /// **'Permission status'**
+  String get dailyRemindersPermission;
+
+  /// No description provided for @dailyRemindersPermissionGranted.
+  ///
+  /// In en, this message translates to:
+  /// **'Allowed'**
+  String get dailyRemindersPermissionGranted;
+
+  /// No description provided for @dailyRemindersPermissionDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Not allowed'**
+  String get dailyRemindersPermissionDenied;
+
+  /// No description provided for @dailyRemindersPermissionUnknown.
+  ///
+  /// In en, this message translates to:
+  /// **'Not checked'**
+  String get dailyRemindersPermissionUnknown;
+
+  /// No description provided for @dailyRemindersPermissionUnsupported.
+  ///
+  /// In en, this message translates to:
+  /// **'Unavailable on this platform'**
+  String get dailyRemindersPermissionUnsupported;
+
+  /// No description provided for @dailyRemindersNotificationPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications are optional and are sent only when Send notification and device permission are both enabled. Missed alerts are not sent later.'**
+  String get dailyRemindersNotificationPolicy;
+
+  /// No description provided for @dailyRemindersReviewNote.
+  ///
+  /// In en, this message translates to:
+  /// **'These are authored reflections and suggested actions—not direct Quran translations or hadith quotations.'**
+  String get dailyRemindersReviewNote;
+
+  /// No description provided for @dailyRemindersNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No reminders match these filters.'**
+  String get dailyRemindersNoResults;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

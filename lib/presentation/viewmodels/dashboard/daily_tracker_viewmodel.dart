@@ -42,11 +42,9 @@ class DailyTrackerViewModel extends ChangeNotifier {
   int get completedTasks =>
       _tasks.where((task) => task.isCompletedToday).length;
 
-  int get totalRequiredTasks =>
-      _tasks.where((task) => !task.isOptional).length;
-  int get completedRequiredTasks => _tasks
-      .where((task) => !task.isOptional && task.isCompletedToday)
-      .length;
+  int get totalRequiredTasks => _tasks.where((task) => !task.isOptional).length;
+  int get completedRequiredTasks =>
+      _tasks.where((task) => !task.isOptional && task.isCompletedToday).length;
 
   double get progress => totalTasks == 0 ? 0 : completedTasks / totalTasks;
 
@@ -89,7 +87,11 @@ class DailyTrackerViewModel extends ChangeNotifier {
     );
     notifyListeners();
 
-    await _toggleTaskUseCase(taskId: taskId, isCompleted: isCompleted, now: now);
+    await _toggleTaskUseCase(
+      taskId: taskId,
+      isCompleted: isCompleted,
+      now: now,
+    );
 
     if (isCompleted &&
         totalRequiredTasks > 0 &&
@@ -109,6 +111,21 @@ class DailyTrackerViewModel extends ChangeNotifier {
       title: title,
       subtitle: subtitle,
       isOptional: isOptional,
+    );
+    await loadTasks();
+  }
+
+  /// Adds a reminder action once, keyed by its stable content ID.
+  Future<void> addReminderTask({
+    required String contentId,
+    required String title,
+    String alternateLocaleTitle = '',
+  }) async {
+    await _addCustomTaskUseCase(
+      title: title,
+      subtitle: alternateLocaleTitle,
+      isOptional: true,
+      stableId: contentId,
     );
     await loadTasks();
   }

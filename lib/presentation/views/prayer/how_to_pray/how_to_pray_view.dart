@@ -9,7 +9,7 @@ import 'package:quran_for_all/presentation/viewmodels/prayer/prayer_movement_gui
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/movement_guide/prayer_movement_guide_widgets.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_language_menu_action.dart';
-import 'package:quran_for_all/presentation/widgets/prayer/prayer_visuals.dart';
+import 'package:quran_for_all/presentation/widgets/prayer/shared/prayer_section_header.dart';
 
 // MARK: Prayer - How To Pray Screen
 class HowToPrayView extends StatelessWidget {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
+import 'package:quran_for_all/data/models/daily_reminders/daily_reminder_pack.dart';
 import 'package:quran_for_all/data/models/daily_task_model.dart';
 import 'package:quran_for_all/data/models/learn_quran_content.dart';
 import 'package:quran_for_all/domain/repositories/daily_tracker_repository.dart';
@@ -11,9 +12,12 @@ import 'package:quran_for_all/domain/usecases/toggle_task_usecase.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
+import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
+
+import 'daily_reminder_test_support.dart';
 
 /// Uses the real tracker use cases with isolated, in-memory persistence.
 class DashboardTestState {
@@ -24,17 +28,26 @@ class DashboardTestState {
       addCustomTaskUseCase: AddCustomTaskUseCase(repository),
       deleteCustomTaskUseCase: DeleteCustomTaskUseCase(repository),
     );
+    reminders = DailyRemindersViewModel(
+      repository: MemoryDailyReminderRepository(_emptyReminderPack),
+      notificationGateway: FakeDailyReminderNotificationGateway(),
+    );
   }
 
   final repository = MemoryTrackerRepository();
   late final DailyTrackerViewModel tracker;
+  late final DailyRemindersViewModel reminders;
   final prayer = TestPrayerViewModel();
   final read = _TestReadViewModel();
   final learn = _TestLearnViewModel();
   final settings = _TestSettingsViewModel();
+  bool _disposed = false;
 
   void dispose() {
+    if (_disposed) return;
+    _disposed = true;
     tracker.dispose();
+    reminders.dispose();
     prayer.dispose();
     read.dispose();
     learn.dispose();
@@ -70,6 +83,9 @@ class DashboardTestApp extends StatelessWidget {
       ChangeNotifierProvider<ReadQuranViewModel>.value(value: state.read),
       ChangeNotifierProvider<LearnQuranViewModel>.value(value: state.learn),
       ChangeNotifierProvider<SettingsViewModel>.value(value: state.settings),
+      ChangeNotifierProvider<DailyRemindersViewModel>.value(
+        value: state.reminders,
+      ),
     ],
     child: MaterialApp(
       locale: Locale(locale),
@@ -86,6 +102,26 @@ class DashboardTestApp extends StatelessWidget {
     ),
   );
 }
+
+const _emptyReminderPack = DailyReminderPack(
+  packId: 'dashboard-test',
+  revision: 1,
+  defaultLocale: 'en',
+  supportedLocales: ['en'],
+  reviewStatus: 'approved',
+  sources: {},
+  passages: {},
+  assets: {},
+  items: [],
+  schedule: [],
+  retentionPolicy: DailyReminderRetentionPolicy(
+    keepReleasedContent: true,
+    keepReadContent: true,
+    keepUnreadContent: true,
+    hideFutureContent: true,
+    autoDelete: false,
+  ),
+);
 
 class MemoryTrackerRepository implements DailyTrackerRepository {
   Map<String, DailyTaskProgress> progress = {};

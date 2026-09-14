@@ -12,10 +12,15 @@ class AddCustomTaskUseCase {
     required String title,
     String subtitle = '',
     bool isOptional = false,
+    String? stableId,
   }) async {
     final tasks = await _repository.loadCustomTasks();
+    final id = stableId == null ? null : 'reminder_$stableId';
+    if (id != null && tasks.any((task) => task.id == id)) {
+      return;
+    }
     final task = DailyTask(
-      id: 'custom_${DateTime.now().microsecondsSinceEpoch}',
+      id: id ?? 'custom_${DateTime.now().microsecondsSinceEpoch}',
       titleEn: title,
       titleBn: subtitle,
       category: TaskCategory.custom,

@@ -2588,4 +2588,156 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dailyTrackerDeleteAction => 'Delete';
+
+  @override
+  String get dailyRemindersTitle => 'Daily Reminders';
+
+  @override
+  String get dailyRemindersSubtitle => 'Small pauses. Lasting light.';
+
+  @override
+  String get dailyRemindersToday => 'Today\'s reminder';
+
+  @override
+  String get dailyRemindersHistory => 'History';
+
+  @override
+  String get dailyRemindersSearchHint => 'Search reflections, actions or sources';
+
+  @override
+  String get dailyRemindersAll => 'All';
+
+  @override
+  String get dailyRemindersUnread => 'Unread';
+
+  @override
+  String get dailyRemindersSaved => 'Saved';
+
+  @override
+  String get dailyRemindersSettings => 'Reminder preferences';
+
+  @override
+  String get dailyRemindersRetry => 'Try again';
+
+  @override
+  String get dailyRemindersLoadError => 'The reminder pack could not be opened.';
+
+  @override
+  String get dailyRemindersEmptyTitle => 'No released reminders yet';
+
+  @override
+  String get dailyRemindersEmptyMessage => 'Published reminders will appear here on their release dates and stay in History.';
+
+  @override
+  String get dailyRemindersNoNewTitle => 'No new reminder today';
+
+  @override
+  String get dailyRemindersNoNewMessage => 'Your released reminders remain safely available in History.';
+
+  @override
+  String get dailyRemindersRead => 'Read';
+
+  @override
+  String get dailyRemindersUnreadBadge => 'New';
+
+  @override
+  String get dailyRemindersOriginalArabic => 'Original Arabic';
+
+  @override
+  String get dailyRemindersExcerpt => 'Excerpt';
+
+  @override
+  String get dailyRemindersOriginalReflection => 'Original reflection';
+
+  @override
+  String get dailyRemindersSuggestedAction => 'Suggested action';
+
+  @override
+  String get dailyRemindersSources => 'Sources';
+
+  @override
+  String get dailyRemindersOpenSource => 'Open source';
+
+  @override
+  String dailyRemindersFallbackLanguage(String language) {
+    return 'Showing $language content';
+  }
+
+  @override
+  String get dailyRemindersSave => 'Save';
+
+  @override
+  String get dailyRemindersUnsave => 'Remove saved';
+
+  @override
+  String get dailyRemindersShare => 'Share';
+
+  @override
+  String get dailyRemindersAddChecklist => 'Add to checklist';
+
+  @override
+  String get dailyRemindersChecklistAdded => 'Added to your checklist';
+
+  @override
+  String get dailyRemindersSourceError => 'This source could not be opened offline or online.';
+
+  @override
+  String get dailyRemindersCategoryAll => 'All themes';
+
+  @override
+  String get dailyRemindersCategoryQuran => 'Quran reflection';
+
+  @override
+  String get dailyRemindersCategoryHadith => 'Hadith reflection';
+
+  @override
+  String get dailyRemindersCategorySunnah => 'Sunnah';
+
+  @override
+  String get dailyRemindersCategoryAkhirah => 'Hereafter';
+
+  @override
+  String get dailyRemindersPreferencesTitle => 'Reminder preferences';
+
+  @override
+  String get dailyRemindersInAppDeliveryTitle => 'Daily reminders are always available';
+
+  @override
+  String get dailyRemindersInAppDeliveryMessage => 'Everyone receives the daily reminder inside the app. Turn on Send notification only if you also want an alert on this device.';
+
+  @override
+  String get dailyRemindersNotifyToggle => 'Send notification';
+
+  @override
+  String get dailyRemindersNotifySubtitle => 'Alert me when today\'s reminder is ready';
+
+  @override
+  String get dailyRemindersPreferredTime => 'Preferred time';
+
+  @override
+  String get dailyRemindersCategories => 'Notification themes';
+
+  @override
+  String get dailyRemindersPermission => 'Permission status';
+
+  @override
+  String get dailyRemindersPermissionGranted => 'Allowed';
+
+  @override
+  String get dailyRemindersPermissionDenied => 'Not allowed';
+
+  @override
+  String get dailyRemindersPermissionUnknown => 'Not checked';
+
+  @override
+  String get dailyRemindersPermissionUnsupported => 'Unavailable on this platform';
+
+  @override
+  String get dailyRemindersNotificationPolicy => 'Notifications are optional and are sent only when Send notification and device permission are both enabled. Missed alerts are not sent later.';
+
+  @override
+  String get dailyRemindersReviewNote => 'These are authored reflections and suggested actions—not direct Quran translations or hadith quotations.';
+
+  @override
+  String get dailyRemindersNoResults => 'No reminders match these filters.';
 }

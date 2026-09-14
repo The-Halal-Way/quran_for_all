@@ -5,7 +5,10 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../data/models/prayer/prayer_detail_models.dart';
 import '../../common/app_premium_section_title.dart';
-import '../prayer_guidance_sections.dart';
+import 'prayer_now_card.dart';
+import 'prayer_suggestions_section.dart';
+import 'prayer_best_practices_section.dart';
+import 'prayer_fiqh_note.dart';
 
 class PrayerGuidanceSheet extends StatelessWidget {
   const PrayerGuidanceSheet({

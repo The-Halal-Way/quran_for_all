@@ -2588,4 +2588,156 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dailyTrackerDeleteAction => 'মুছুন';
+
+  @override
+  String get dailyRemindersTitle => 'দৈনিক স্মরণিকা';
+
+  @override
+  String get dailyRemindersSubtitle => 'ছোট বিরতি। স্থায়ী আলো।';
+
+  @override
+  String get dailyRemindersToday => 'আজকের স্মরণিকা';
+
+  @override
+  String get dailyRemindersHistory => 'ইতিহাস';
+
+  @override
+  String get dailyRemindersSearchHint => 'ভাবনা, করণীয় বা সূত্র খুঁজুন';
+
+  @override
+  String get dailyRemindersAll => 'সব';
+
+  @override
+  String get dailyRemindersUnread => 'অপঠিত';
+
+  @override
+  String get dailyRemindersSaved => 'সংরক্ষিত';
+
+  @override
+  String get dailyRemindersSettings => 'স্মরণিকার পছন্দ';
+
+  @override
+  String get dailyRemindersRetry => 'আবার চেষ্টা করুন';
+
+  @override
+  String get dailyRemindersLoadError => 'স্মরণিকার সংগ্রহ খোলা যায়নি।';
+
+  @override
+  String get dailyRemindersEmptyTitle => 'এখনও কোনো প্রকাশিত স্মরণিকা নেই';
+
+  @override
+  String get dailyRemindersEmptyMessage => 'প্রকাশিত স্মরণিকা নির্ধারিত দিনে এখানে আসবে এবং ইতিহাসে থাকবে।';
+
+  @override
+  String get dailyRemindersNoNewTitle => 'আজ নতুন কোনো স্মরণিকা নেই';
+
+  @override
+  String get dailyRemindersNoNewMessage => 'প্রকাশিত সব স্মরণিকা ইতিহাসে নিরাপদে আছে।';
+
+  @override
+  String get dailyRemindersRead => 'পঠিত';
+
+  @override
+  String get dailyRemindersUnreadBadge => 'নতুন';
+
+  @override
+  String get dailyRemindersOriginalArabic => 'মূল আরবি';
+
+  @override
+  String get dailyRemindersExcerpt => 'উদ্ধৃত অংশ';
+
+  @override
+  String get dailyRemindersOriginalReflection => 'মৌলিক ভাবনা';
+
+  @override
+  String get dailyRemindersSuggestedAction => 'প্রস্তাবিত করণীয়';
+
+  @override
+  String get dailyRemindersSources => 'সূত্র';
+
+  @override
+  String get dailyRemindersOpenSource => 'সূত্র খুলুন';
+
+  @override
+  String dailyRemindersFallbackLanguage(String language) {
+    return '$language ভাষার কনটেন্ট দেখানো হচ্ছে';
+  }
+
+  @override
+  String get dailyRemindersSave => 'সংরক্ষণ';
+
+  @override
+  String get dailyRemindersUnsave => 'সংরক্ষণ সরান';
+
+  @override
+  String get dailyRemindersShare => 'শেয়ার';
+
+  @override
+  String get dailyRemindersAddChecklist => 'চেকলিস্টে যোগ করুন';
+
+  @override
+  String get dailyRemindersChecklistAdded => 'আপনার চেকলিস্টে যোগ হয়েছে';
+
+  @override
+  String get dailyRemindersSourceError => 'সূত্রটি অফলাইন বা অনলাইনে খোলা যায়নি।';
+
+  @override
+  String get dailyRemindersCategoryAll => 'সব বিষয়';
+
+  @override
+  String get dailyRemindersCategoryQuran => 'কুরআনের ভাবনা';
+
+  @override
+  String get dailyRemindersCategoryHadith => 'হাদিসের ভাবনা';
+
+  @override
+  String get dailyRemindersCategorySunnah => 'সুন্নাহ';
+
+  @override
+  String get dailyRemindersCategoryAkhirah => 'আখিরাত';
+
+  @override
+  String get dailyRemindersPreferencesTitle => 'স্মরণিকার পছন্দ';
+
+  @override
+  String get dailyRemindersInAppDeliveryTitle => 'দৈনিক স্মরণিকা সবসময় পাওয়া যাবে';
+
+  @override
+  String get dailyRemindersInAppDeliveryMessage => 'সবাই অ্যাপের ভেতরে দৈনিক স্মরণিকা পাবেন। এই ডিভাইসে সতর্কবার্তাও চাইলে শুধু ‘নোটিফিকেশন পাঠান’ চালু করুন।';
+
+  @override
+  String get dailyRemindersNotifyToggle => 'নোটিফিকেশন পাঠান';
+
+  @override
+  String get dailyRemindersNotifySubtitle => 'আজকের স্মরণিকা প্রস্তুত হলে আমাকে জানান';
+
+  @override
+  String get dailyRemindersPreferredTime => 'পছন্দের সময়';
+
+  @override
+  String get dailyRemindersCategories => 'নোটিফিকেশনের বিষয়';
+
+  @override
+  String get dailyRemindersPermission => 'অনুমতির অবস্থা';
+
+  @override
+  String get dailyRemindersPermissionGranted => 'অনুমোদিত';
+
+  @override
+  String get dailyRemindersPermissionDenied => 'অনুমোদিত নয়';
+
+  @override
+  String get dailyRemindersPermissionUnknown => 'যাচাই করা হয়নি';
+
+  @override
+  String get dailyRemindersPermissionUnsupported => 'এই প্ল্যাটফর্মে অনুপলব্ধ';
+
+  @override
+  String get dailyRemindersNotificationPolicy => '‘নোটিফিকেশন পাঠান’ ও ডিভাইসের অনুমতি—দুটিই চালু থাকলেই নোটিফিকেশন আসবে। বাদ পড়া সতর্কবার্তা পরে পাঠানো হবে না।';
+
+  @override
+  String get dailyRemindersReviewNote => 'এগুলো মৌলিক ভাবনা ও প্রস্তাবিত করণীয়—সরাসরি কুরআনের অনুবাদ বা হাদিসের উদ্ধৃতি নয়।';
+
+  @override
+  String get dailyRemindersNoResults => 'এই ফিল্টারে কোনো স্মরণিকা পাওয়া যায়নি।';
 }
