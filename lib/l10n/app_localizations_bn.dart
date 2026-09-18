@@ -206,6 +206,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get hijriMonthDhulHijjah => 'জিলহজ';
 
   @override
+  String get splashBrandEyebrow => 'প্রতিটি আয়াতের সঙ্গী';
+
+  @override
+  String get splashBrandTagline => 'স্বচ্ছতায় পড়ুন। প্রশান্তিতে ভাবুন। সহজে ফিরে আসুন।';
+
+  @override
   String get splashStatusPreparing => 'স্থানীয় কুরআন ডাটাবেস প্রস্তুত হচ্ছে...';
 
   @override
@@ -213,6 +219,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get splashStatusOfflineFallback => 'সংরক্ষিত কুরআন ডেটা দিয়ে প্রস্তুত। নতুন কিছু কনটেন্ট পরে সিঙ্ক হতে পারে।';
+
+  @override
+  String get splashOfflineReady => 'আপনার কুরআন লাইব্রেরি অফলাইনেও প্রস্তুত থাকবে।';
 
   @override
   String get splashRetrySetup => 'সেটআপ আবার চেষ্টা করুন';

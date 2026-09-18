@@ -206,6 +206,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hijriMonthDhulHijjah => 'Dhul Hijjah';
 
   @override
+  String get splashBrandEyebrow => 'A companion for every ayah';
+
+  @override
+  String get splashBrandTagline => 'Read with clarity. Reflect with calm. Return with ease.';
+
+  @override
   String get splashStatusPreparing => 'Preparing local Quran database...';
 
   @override
@@ -213,6 +219,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get splashStatusOfflineFallback => 'Ready with saved Quran data. Some newer content may sync later.';
+
+  @override
+  String get splashOfflineReady => 'Your Quran library stays available offline.';
 
   @override
   String get splashRetrySetup => 'Retry setup';

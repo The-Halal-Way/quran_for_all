@@ -485,6 +485,18 @@ abstract class AppLocalizations {
   /// **'Dhul Hijjah'**
   String get hijriMonthDhulHijjah;
 
+  /// No description provided for @splashBrandEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'A companion for every ayah'**
+  String get splashBrandEyebrow;
+
+  /// No description provided for @splashBrandTagline.
+  ///
+  /// In en, this message translates to:
+  /// **'Read with clarity. Reflect with calm. Return with ease.'**
+  String get splashBrandTagline;
+
   /// No description provided for @splashStatusPreparing.
   ///
   /// In en, this message translates to:
@@ -502,6 +514,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ready with saved Quran data. Some newer content may sync later.'**
   String get splashStatusOfflineFallback;
+
+  /// No description provided for @splashOfflineReady.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Quran library stays available offline.'**
+  String get splashOfflineReady;
 
   /// No description provided for @splashRetrySetup.
   ///
