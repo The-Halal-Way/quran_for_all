@@ -35,13 +35,6 @@ class TasbeehStatsPanel extends StatelessWidget {
             alpha: isDark ? 0.07 : 0.82,
           ),
         ),
-        boxShadow: [
-          BoxShadow(
-            color: MyColors.primary.withValues(alpha: isDark ? 0.14 : 0.06),
-            blurRadius: 18,
-            offset: const Offset(0, 7),
-          ),
-        ],
       ),
       child: Row(
         children: [

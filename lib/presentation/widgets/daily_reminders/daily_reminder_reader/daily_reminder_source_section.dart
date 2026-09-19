@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
@@ -37,7 +38,7 @@ class DailyReminderSourceSection extends StatelessWidget {
             ),
             title: Text(source.displayName),
             subtitle: source.grading == null ? null : Text(source.grading!),
-            trailing: const Icon(Icons.open_in_new_rounded, size: 19),
+            trailing: const Icon(CupertinoIcons.arrow_up_right, size: 19),
             onTap: () => onOpen(source),
           ),
         ),

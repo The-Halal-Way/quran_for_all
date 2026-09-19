@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/utils/app_page_route.dart';
 import '../../../core/utils/app_responsive.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../viewmodels/splash_viewmodel.dart';
@@ -41,9 +42,9 @@ class _SplashViewState extends State<SplashView> {
 
     unawaited(context.read<ReadQuranViewModel>().load());
 
-    await Navigator.of(context).pushReplacement(
-      MaterialPageRoute<void>(builder: (_) => const HomeView()),
-    );
+    await Navigator.of(
+      context,
+    ).pushReplacement(AppPageRoute<void>(builder: (_) => const HomeView()));
   }
 
   @override

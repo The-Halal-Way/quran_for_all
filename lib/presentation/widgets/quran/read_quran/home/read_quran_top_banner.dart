@@ -1,7 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:lottie/lottie.dart';
-import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/core/theme/my_images.dart';
 
 import '../../../../../core/localization/l10n_extensions.dart';
@@ -147,7 +147,7 @@ class ReadQuranTopBanner extends StatelessWidget {
                   runSpacing: AppSpacing.sm,
                   children: [
                     AppPill.overlay(
-                      imgIcon: MyIcons.readIcon,
+                      icon: CupertinoIcons.book,
                       label: '$surahCount ${context.l10n.readQuranSurahsLabel}',
                     ),
                     AppPill.overlay(
@@ -171,12 +171,7 @@ class ReadQuranTopBanner extends StatelessWidget {
                       borderRadius: BorderRadius.circular(AppRadius.md),
                     ),
                   ),
-                  icon: Image.asset(
-                    MyIcons.searchIcon,
-                    width: 20,
-                    height: 20,
-                    color: Colors.white,
-                  ),
+                  icon: const Icon(CupertinoIcons.search, size: 20),
                   label: Text(context.l10n.readQuranBannerSearchButton),
                 ),
               ],

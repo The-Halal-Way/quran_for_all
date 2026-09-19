@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/theme/app_spacing.dart';
@@ -63,7 +64,7 @@ class HadithReaderHeader extends StatelessWidget {
             IconButton(
               tooltip: MaterialLocalizations.of(context).backButtonTooltip,
               onPressed: onBack,
-              icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 18),
+              icon: const Icon(CupertinoIcons.chevron_back, size: 19),
               color: accent,
             ),
             const SizedBox(width: AppSpacing.xs),
@@ -103,7 +104,7 @@ class HadithReaderHeader extends StatelessWidget {
             IconButton(
               tooltip: MaterialLocalizations.of(context).searchFieldLabel,
               onPressed: onSearch,
-              icon: const Icon(Icons.manage_search_rounded, size: 20),
+              icon: const Icon(CupertinoIcons.search, size: 20),
               color: accent,
             ),
           ],

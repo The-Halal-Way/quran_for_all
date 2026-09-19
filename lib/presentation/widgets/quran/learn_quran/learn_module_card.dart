@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 
@@ -95,7 +96,7 @@ class LearnModuleCard extends StatelessWidget {
                   ),
                   const SizedBox(width: AppSpacing.sm),
                   Icon(
-                    Icons.chevron_right_rounded,
+                    CupertinoIcons.chevron_forward,
                     color: Theme.of(context).colorScheme.primary,
                   ),
                 ],

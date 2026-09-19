@@ -1,4 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
+
+import '../../../data/models/tasbeeh_state.dart';
+import '../../../domain/repositories/tasbeeh_repository.dart';
 
 enum TasbeehPhraseKey {
   subhanAllah,
@@ -15,6 +20,9 @@ class TasbeehPhrase {
 }
 
 class TasbeehViewModel extends ChangeNotifier {
+  TasbeehViewModel({required TasbeehRepository repository})
+    : _repository = repository;
+
   static const List<TasbeehPhrase> phrases = [
     TasbeehPhrase(key: TasbeehPhraseKey.subhanAllah, arabic: 'سُبْحَانَ الله'),
     TasbeehPhrase(
@@ -30,94 +38,122 @@ class TasbeehViewModel extends ChangeNotifier {
 
   static const List<int> targets = [33, 99, 100, 500];
 
-  int _count = 0;
-  int _totalCount = 0;
-  int _completedRounds = 0;
-  int _target = 33;
-  TasbeehPhraseKey _selectedPhraseKey = TasbeehPhraseKey.subhanAllah;
+  final TasbeehRepository _repository;
+  final Map<TasbeehPhraseKey, int> _counts = {
+    for (final key in TasbeehPhraseKey.values) key: 0,
+  };
+  final Map<TasbeehPhraseKey, int> _targets = {
+    for (final key in TasbeehPhraseKey.values) key: 33,
+  };
 
-  int get count => _count;
-  int get totalCount => _totalCount;
-  int get completedRounds => _completedRounds;
-  int get target => _target;
+  TasbeehPhraseKey _selectedPhraseKey = TasbeehPhraseKey.subhanAllah;
+  bool _isLoaded = false;
+  Future<void> _saveQueue = Future<void>.value();
+
+  bool get isLoaded => _isLoaded;
+  int get count => countFor(_selectedPhraseKey);
+  int get target => targetFor(_selectedPhraseKey);
+  int get totalCount => _counts.values.fold(0, (total, value) => total + value);
+  int get completedRounds => TasbeehPhraseKey.values.fold(
+    0,
+    (total, key) => total + countFor(key) ~/ targetFor(key),
+  );
+  int get currentCompletedRounds => count ~/ target;
   TasbeehPhraseKey get selectedPhraseKey => _selectedPhraseKey;
 
   TasbeehPhrase get selectedPhrase =>
       phrases.firstWhere((phrase) => phrase.key == _selectedPhraseKey);
 
-  double get progress =>
-      _target == 0 ? 0.0 : (_count / _target).clamp(0.0, 1.0).toDouble();
-  bool get isTargetReached => _count == _target;
+  Map<TasbeehPhraseKey, int> get counts => Map.unmodifiable(_counts);
+  Map<TasbeehPhraseKey, int> get selectedTargets => Map.unmodifiable(_targets);
+
+  double get progress {
+    if (count == 0) return 0;
+    final remainder = count % target;
+    return remainder == 0 ? 1 : remainder / target;
+  }
+
+  bool get isTargetReached => count > 0 && count % target == 0;
+
+  int countFor(TasbeehPhraseKey key) => _counts[key] ?? 0;
+
+  int targetFor(TasbeehPhraseKey key) => _targets[key] ?? targets.first;
+
+  Future<void> load() async {
+    try {
+      final state = await _repository.loadState();
+      if (state != null) {
+        for (final key in TasbeehPhraseKey.values) {
+          final savedCount = state.counts[key.name];
+          final savedTarget = state.targets[key.name];
+          if (savedCount != null && savedCount >= 0) _counts[key] = savedCount;
+          if (savedTarget != null && targets.contains(savedTarget)) {
+            _targets[key] = savedTarget;
+          }
+        }
+
+        _selectedPhraseKey = TasbeehPhraseKey.values.firstWhere(
+          (key) => key.name == state.selectedPhrase,
+          orElse: () => TasbeehPhraseKey.subhanAllah,
+        );
+      }
+    } catch (_) {
+      // Keep the in-memory defaults when persisted state cannot be read.
+    } finally {
+      _isLoaded = true;
+      notifyListeners();
+    }
+  }
 
   void increment() {
-    if (_count >= _target) {
-      _count = 1;
-    } else {
-      _count += 1;
-    }
-
-    _totalCount += 1;
-    if (_count == _target) {
-      _completedRounds += 1;
-    }
-
-    notifyListeners();
+    _counts[_selectedPhraseKey] = count + 1;
+    _commit();
   }
 
   void decrement() {
-    if (_count == 0 && _totalCount == 0) {
-      return;
-    }
-
-    if (_count == _target && _completedRounds > 0) {
-      _completedRounds -= 1;
-    }
-
-    if (_count > 0) {
-      _count -= 1;
-    }
-    if (_totalCount > 0) {
-      _totalCount -= 1;
-    }
-
-    notifyListeners();
+    if (count == 0) return;
+    _counts[_selectedPhraseKey] = count - 1;
+    _commit();
   }
 
   void resetCount() {
-    if (_count == 0) {
-      return;
-    }
-    _count = 0;
-    notifyListeners();
+    if (count == 0) return;
+    _counts[_selectedPhraseKey] = 0;
+    _commit();
   }
 
   void resetAll() {
-    if (_count == 0 && _totalCount == 0 && _completedRounds == 0) {
-      return;
+    if (totalCount == 0) return;
+    for (final key in TasbeehPhraseKey.values) {
+      _counts[key] = 0;
     }
-
-    _count = 0;
-    _totalCount = 0;
-    _completedRounds = 0;
-    notifyListeners();
+    _commit();
   }
 
   void selectTarget(int target) {
-    if (_target == target || !targets.contains(target)) {
-      return;
-    }
-
-    _target = target;
-    _count = _count.clamp(0, _target).toInt();
-    notifyListeners();
+    if (this.target == target || !targets.contains(target)) return;
+    _targets[_selectedPhraseKey] = target;
+    _commit();
   }
 
   void selectPhrase(TasbeehPhraseKey key) {
-    if (_selectedPhraseKey == key) {
-      return;
-    }
-
+    if (_selectedPhraseKey == key) return;
     _selectedPhraseKey = key;
-    notifyListeners();
+    _commit();
   }
+
+  void _commit() {
+    notifyListeners();
+    final state = _savedState;
+    _saveQueue = _saveQueue
+        .then((_) => _repository.saveState(state))
+        .catchError((Object _) {});
+    unawaited(_saveQueue);
+  }
+
+  TasbeehSavedState get _savedState => TasbeehSavedState(
+    counts: _counts.map((key, value) => MapEntry(key.name, value)),
+    targets: _targets.map((key, value) => MapEntry(key.name, value)),
+    selectedPhrase: _selectedPhraseKey.name,
+  );
 }

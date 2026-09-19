@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
@@ -26,7 +27,7 @@ class DashboardPrayerErrorCard extends StatelessWidget {
         const SizedBox(height: AppSpacing.sm),
         TextButton.icon(
           onPressed: onRetry,
-          icon: const Icon(Icons.refresh_rounded),
+          icon: const Icon(CupertinoIcons.refresh),
           label: Text(context.l10n.dashboardRetry),
         ),
       ],

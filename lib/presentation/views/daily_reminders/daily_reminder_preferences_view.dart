@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -6,6 +7,7 @@ import '../../../core/theme/app_spacing.dart';
 import '../../../core/utils/app_responsive.dart';
 import '../../models/daily_reminder_presenter.dart';
 import '../../viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
+import '../../widgets/common/app_ios_picker.dart';
 import '../../widgets/common/app_premium_page_background.dart';
 import '../../widgets/daily_reminders/daily_reminder_preferences/daily_reminder_delivery_note.dart';
 import '../../widgets/daily_reminders/daily_reminder_preferences/daily_reminder_permission_badge.dart';
@@ -40,7 +42,7 @@ class DailyReminderPreferencesView extends StatelessWidget {
                       children: [
                         IconButton.filledTonal(
                           onPressed: () => Navigator.of(context).maybePop(),
-                          icon: const Icon(Icons.arrow_back_rounded),
+                          icon: const Icon(CupertinoIcons.chevron_back),
                         ),
                         const SizedBox(width: AppSpacing.md),
                         Expanded(
@@ -59,7 +61,7 @@ class DailyReminderPreferencesView extends StatelessWidget {
                     ),
                     const SizedBox(height: AppSpacing.md),
                     DailyReminderPreferencePanel(
-                      icon: Icons.notifications_active_outlined,
+                      icon: CupertinoIcons.bell,
                       title: l10n.dailyRemindersNotifyToggle,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,7 +93,7 @@ class DailyReminderPreferencesView extends StatelessWidget {
                               children: [
                                 const SizedBox(height: AppSpacing.md),
                                 DailyReminderPreferencePanel(
-                                  icon: Icons.schedule_rounded,
+                                  icon: CupertinoIcons.clock,
                                   title: l10n.dailyRemindersPreferredTime,
                                   child: ListTile(
                                     contentPadding: EdgeInsets.zero,
@@ -108,14 +110,14 @@ class DailyReminderPreferencesView extends StatelessWidget {
                                           ),
                                     ),
                                     trailing: const Icon(
-                                      Icons.edit_calendar_rounded,
+                                      CupertinoIcons.clock_fill,
                                     ),
                                     onTap: () => _pickTime(context, vm),
                                   ),
                                 ),
                                 const SizedBox(height: AppSpacing.md),
                                 DailyReminderPreferencePanel(
-                                  icon: Icons.category_outlined,
+                                  icon: CupertinoIcons.square_grid_2x2,
                                   title: l10n.dailyRemindersCategories,
                                   child: Column(
                                     children: vm.availableKinds.map((kind) {
@@ -168,7 +170,7 @@ class DailyReminderPreferencesView extends StatelessWidget {
     BuildContext context,
     DailyRemindersViewModel vm,
   ) async {
-    final selected = await showTimePicker(
+    final selected = await showAppTimePicker(
       context: context,
       initialTime: TimeOfDay(
         hour: vm.preferences.hour,

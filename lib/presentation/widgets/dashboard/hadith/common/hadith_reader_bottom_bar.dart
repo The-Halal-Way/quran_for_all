@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/theme/app_spacing.dart';
@@ -68,7 +69,7 @@ class HadithReaderBottomBar extends StatelessWidget {
           children: [
             HadithReaderNavigationButton(
               label: previousLabel,
-              icon: Icons.arrow_back_ios_new_rounded,
+              icon: CupertinoIcons.chevron_back,
               enabled: canPrevious,
               accent: accent,
               onTap: onPrevious,
@@ -112,7 +113,7 @@ class HadithReaderBottomBar extends StatelessWidget {
             ),
             HadithReaderNavigationButton(
               label: nextLabel,
-              icon: Icons.arrow_forward_ios_rounded,
+              icon: CupertinoIcons.chevron_forward,
               enabled: canNext,
               accent: accent,
               iconAfter: true,

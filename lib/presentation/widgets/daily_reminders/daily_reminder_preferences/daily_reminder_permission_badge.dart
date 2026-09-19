@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
@@ -43,7 +44,9 @@ class DailyReminderPermissionBadge extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
-            granted ? Icons.check_circle_rounded : Icons.info_outline_rounded,
+            granted
+                ? CupertinoIcons.checkmark_circle_fill
+                : CupertinoIcons.info_circle,
             size: 17,
             color: color,
           ),

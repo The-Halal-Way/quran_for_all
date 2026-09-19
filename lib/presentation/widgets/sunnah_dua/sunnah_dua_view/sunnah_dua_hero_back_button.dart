@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SunnahDuaHeroBackButton extends StatelessWidget {
@@ -12,6 +13,6 @@ class SunnahDuaHeroBackButton extends StatelessWidget {
       backgroundColor: Colors.white.withValues(alpha: 0.12),
       foregroundColor: Colors.white,
     ),
-    icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 18),
+    icon: const Icon(CupertinoIcons.chevron_back, size: 19),
   );
 }

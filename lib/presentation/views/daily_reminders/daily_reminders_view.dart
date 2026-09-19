@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -93,7 +94,7 @@ class _DailyRemindersViewState extends State<DailyRemindersView> {
                       child: DailyRemindersEmptyState(
                         title: context.l10n.dailyRemindersNoResults,
                         message: context.l10n.dailyRemindersNoNewMessage,
-                        icon: Icons.filter_alt_off_rounded,
+                        icon: CupertinoIcons.line_horizontal_3_decrease_circle,
                       ),
                     ),
                   )
@@ -147,12 +148,12 @@ class _DailyRemindersViewState extends State<DailyRemindersView> {
           DailyRemindersEmptyState(
             title: l10n.dailyRemindersLoadError,
             message: vm.error.toString(),
-            icon: Icons.error_outline_rounded,
+            icon: CupertinoIcons.exclamationmark_circle,
           ),
           Center(
             child: FilledButton.icon(
               onPressed: () => vm.initialize(locale, forceRefresh: true),
-              icon: const Icon(Icons.refresh_rounded),
+              icon: const Icon(CupertinoIcons.refresh),
               label: Text(l10n.dailyRemindersRetry),
             ),
           ),

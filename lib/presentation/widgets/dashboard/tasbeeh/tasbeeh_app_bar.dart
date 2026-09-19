@@ -1,11 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:provider/provider.dart';
-import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
-import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_language_action_button.dart';
 
 class TasbeehAppBar extends StatelessWidget {
   const TasbeehAppBar({super.key, required this.isDark});
@@ -15,43 +14,25 @@ class TasbeehAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
-    final foreground = isDark ? Colors.white : MyColors.textPrimary;
+    final colors = Theme.of(context).colorScheme;
+    final foreground = colors.onSurface;
 
-    return Container(
-      padding: const EdgeInsets.fromLTRB(8, 8, 10, 8),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: isDark
-              ? const [
-                  MyColors.primaryDark,
-                  MyColors.primary,
-                  MyColors.secondaryDark,
-                ]
-              : const [Color(0xFFE8DDFF), Color(0xFFFFD1E1), Color(0xFFD8FFF7)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(AppRadius.xlCompact),
-        border: Border.all(
-          color: (isDark ? Colors.white : MyColors.primary).withValues(
-            alpha: isDark ? 0.08 : 0.08,
-          ),
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: MyColors.primary.withValues(alpha: isDark ? 0.26 : 0.12),
-            blurRadius: 24,
-            offset: const Offset(0, 8),
-          ),
-        ],
-      ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         children: [
           IconButton(
             tooltip: MaterialLocalizations.of(context).backButtonTooltip,
-            icon: Icon(Icons.arrow_back_ios_new_rounded, color: foreground),
+            icon: const Icon(CupertinoIcons.chevron_back, size: 21),
+            color: foreground,
+            style: IconButton.styleFrom(
+              backgroundColor: colors.surfaceContainerHighest.withValues(
+                alpha: isDark ? 0.7 : 0.8,
+              ),
+            ),
             onPressed: () => Navigator.maybePop(context),
           ),
+          const SizedBox(width: 6),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -92,33 +73,11 @@ class _LanguageToggleAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final settingsVm = context.watch<SettingsViewModel>();
-    final current = settingsVm.settings.language;
-    final text = AppTheme.text(context);
-
-    return PopupMenuButton<AppLanguage>(
+    return AppLanguageActionButton(
       tooltip: context.l10n.duahLanguageToggleTooltip,
-      icon: Icon(Icons.language_rounded, color: iconColor),
+      current: settingsVm.settings.language,
+      iconColor: iconColor,
       onSelected: settingsVm.setLanguage,
-      itemBuilder: (context) => [
-        PopupMenuItem<AppLanguage>(
-          value: AppLanguage.english,
-          child: Text(
-            context.appLanguageLabel(AppLanguage.english),
-            style: current == AppLanguage.english
-                ? text.labelMedium
-                : text.bodyMedium,
-          ),
-        ),
-        PopupMenuItem<AppLanguage>(
-          value: AppLanguage.bangla,
-          child: Text(
-            context.appLanguageLabel(AppLanguage.bangla),
-            style: current == AppLanguage.bangla
-                ? text.labelMedium
-                : text.bodyMedium,
-          ),
-        ),
-      ],
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
@@ -52,7 +53,7 @@ class HijriCalendarAppBar extends StatelessWidget {
         children: [
           IconButton(
             tooltip: MaterialLocalizations.of(context).backButtonTooltip,
-            icon: Icon(Icons.arrow_back_ios_new_rounded, color: foreground),
+            icon: Icon(CupertinoIcons.chevron_back, color: foreground),
             onPressed: () => Navigator.maybePop(context),
           ),
           Expanded(

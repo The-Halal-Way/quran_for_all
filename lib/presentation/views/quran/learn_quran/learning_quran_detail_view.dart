@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
@@ -87,7 +88,7 @@ class _LearningQuranDetailViewState extends State<LearningQuranDetailView> {
       appBar: AppBar(
         title: Text(moduleTitle),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new),
+          icon: const Icon(CupertinoIcons.chevron_back),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),

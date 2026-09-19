@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
@@ -51,7 +52,7 @@ class DailyRemindersHero extends StatelessWidget {
                       tooltip: MaterialLocalizations.of(
                         context,
                       ).backButtonTooltip,
-                      icon: const Icon(Icons.arrow_back_rounded),
+                      icon: const Icon(CupertinoIcons.chevron_back, size: 21),
                       style: IconButton.styleFrom(
                         foregroundColor: Colors.white,
                         backgroundColor: Colors.white.withValues(alpha: 0.12),
@@ -61,7 +62,10 @@ class DailyRemindersHero extends StatelessWidget {
                     IconButton.filledTonal(
                       onPressed: onSettings,
                       tooltip: l10n.dailyRemindersSettings,
-                      icon: const Icon(Icons.tune_rounded),
+                      icon: const Icon(
+                        CupertinoIcons.slider_horizontal_3,
+                        size: 21,
+                      ),
                       style: IconButton.styleFrom(
                         foregroundColor: Colors.white,
                         backgroundColor: Colors.white.withValues(alpha: 0.12),
@@ -83,7 +87,7 @@ class DailyRemindersHero extends StatelessWidget {
                     ),
                   ),
                   child: const Icon(
-                    Icons.brightness_7_rounded,
+                    CupertinoIcons.sun_max_fill,
                     color: MyColors.tertiaryLight,
                     size: 20,
                   ),

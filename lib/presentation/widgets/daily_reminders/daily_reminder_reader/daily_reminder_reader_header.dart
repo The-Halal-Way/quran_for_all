@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
@@ -115,7 +116,7 @@ class DailyReminderReaderHeader extends StatelessWidget {
                 Row(
                   children: [
                     Icon(
-                      Icons.calendar_today_rounded,
+                      CupertinoIcons.calendar,
                       size: 15,
                       color: colors.onSurfaceVariant,
                     ),

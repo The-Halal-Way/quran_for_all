@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
@@ -124,7 +125,7 @@ class SplashStatusPanel extends StatelessWidget {
                   foregroundColor: const Color(0xFF251054),
                   padding: const EdgeInsets.symmetric(vertical: 13),
                 ),
-                icon: const Icon(Icons.refresh_rounded),
+                icon: const Icon(CupertinoIcons.refresh),
                 label: Text(context.l10n.splashRetrySetup),
               ),
             )

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
@@ -60,7 +61,7 @@ class _SunnahDuaSectionSearchState extends State<SunnahDuaSectionSearch> {
                   _controller.clear();
                   widget.onChanged('');
                 },
-                icon: const Icon(Icons.close_rounded, size: 18),
+                icon: const Icon(CupertinoIcons.clear, size: 18),
               ),
         filled: true,
         fillColor: colors.surface,

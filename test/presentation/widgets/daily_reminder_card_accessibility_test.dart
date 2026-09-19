@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -73,6 +74,6 @@ void main() {
     await tester.pump();
     expect(tester.takeException(), isNull);
     expect(find.text('Renew your intention'), findsOneWidget);
-    expect(find.byIcon(Icons.bookmark_border_rounded), findsOneWidget);
+    expect(find.byIcon(CupertinoIcons.bookmark), findsOneWidget);
   });
 }

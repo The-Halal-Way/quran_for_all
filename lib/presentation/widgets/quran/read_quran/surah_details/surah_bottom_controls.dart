@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
@@ -65,8 +66,8 @@ class SurahBottomControls extends StatelessWidget {
         Expanded(
           child: _BottomNavAction(
             icon: readingViewMode == ReadingViewMode.detailsView
-                ? Icons.view_agenda_rounded
-                : Icons.wrap_text_rounded,
+                ? CupertinoIcons.list_bullet
+                : CupertinoIcons.textformat,
             selected: true,
             tooltip: context.l10n.readQuranReadingModeLabel,
             selectedBg: selectedBg,
@@ -79,7 +80,7 @@ class SurahBottomControls extends StatelessWidget {
         ),
         Expanded(
           child: _BottomNavAction(
-            icon: Icons.record_voice_over_rounded,
+            icon: CupertinoIcons.waveform,
             selected: showPronunciation,
             tooltip: context.l10n.settingsShowPronunciationTitle,
             selectedBg: selectedBg,
@@ -92,7 +93,7 @@ class SurahBottomControls extends StatelessWidget {
         ),
         Expanded(
           child: _BottomNavAction(
-            icon: Icons.translate_rounded,
+            icon: CupertinoIcons.globe,
             selected: showTranslation,
             tooltip: context.l10n.settingsShowTranslationsTitle,
             selectedBg: selectedBg,
@@ -106,8 +107,8 @@ class SurahBottomControls extends StatelessWidget {
         Expanded(
           child: _BottomNavAction(
             icon: isPlayingFullSurah
-                ? Icons.stop_circle_outlined
-                : Icons.play_circle_fill_rounded,
+                ? CupertinoIcons.stop_fill
+                : CupertinoIcons.play_fill,
             selected: isPlayingFullSurah,
             tooltip: isPlayingFullSurah
                 ? context.l10n.readQuranStopSurahAudio
@@ -179,11 +180,12 @@ class _BottomNavAction extends StatelessWidget {
     return Tooltip(
       message: tooltip,
       child: SizedBox(
-        child: IconButton.filledTonal(
+        child: IconButton(
           onPressed: onTap,
           icon: Icon(icon),
           style: IconButton.styleFrom(
             iconSize: 18,
+            minimumSize: const Size(42, 42),
             backgroundColor: selected ? selectedBg : unselectedBg,
             foregroundColor: foregroundColor,
             shape: RoundedRectangleBorder(
@@ -197,4 +199,3 @@ class _BottomNavAction extends StatelessWidget {
     );
   }
 }
-

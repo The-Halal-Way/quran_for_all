@@ -7,6 +7,7 @@ import 'core/constants/app_constants.dart';
 import 'core/localization/l10n_extensions.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/app_responsive.dart';
+import 'core/utils/app_ios_scroll_behavior.dart';
 import 'data/datasources/local/app_database.dart';
 import 'data/datasources/local/prayer_times_local_data_source.dart';
 import 'data/datasources/local/prayer_times_preferences_store.dart';
@@ -19,6 +20,7 @@ import 'data/repositories/learning_progress_repository_impl.dart';
 import 'data/repositories/prayer_times_repository_impl.dart';
 import 'data/repositories/quran_repository_impl.dart';
 import 'data/repositories/settings_repository_impl.dart';
+import 'data/repositories/tasbeeh_repository_impl.dart';
 import 'domain/repositories/audio_repository.dart';
 import 'domain/repositories/daily_tracker_repository.dart';
 import 'domain/repositories/daily_reminder_repository.dart';
@@ -26,6 +28,7 @@ import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/prayer_times_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
+import 'domain/repositories/tasbeeh_repository.dart';
 import 'domain/usecases/add_custom_task_usecase.dart';
 import 'domain/usecases/delete_custom_task_usecase.dart';
 import 'domain/usecases/get_daily_tasks_usecase.dart';
@@ -33,6 +36,7 @@ import 'domain/usecases/prayer_times/load_prayer_times_usecase.dart';
 import 'domain/usecases/toggle_task_usecase.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
+import 'presentation/viewmodels/dashboard/tasbeeh_viewmodel.dart';
 import 'presentation/viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
 import 'presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
@@ -119,6 +123,7 @@ class QuranForAllApp extends StatelessWidget {
         Provider<DailyReminderRepository>(
           create: (_) => DailyReminderRepositoryImpl(),
         ),
+        Provider<TasbeehRepository>(create: (_) => TasbeehRepositoryImpl()),
         Provider<DailyReminderNotificationGateway>(
           create: (_) => DailyReminderNotificationService(),
         ),
@@ -206,6 +211,11 @@ class QuranForAllApp extends StatelessWidget {
                     .toLanguageTag(),
               ),
         ),
+        ChangeNotifierProvider<TasbeehViewModel>(
+          create: (context) =>
+              TasbeehViewModel(repository: context.read<TasbeehRepository>())
+                ..load(),
+        ),
       ],
       child: Consumer<SettingsViewModel>(
         builder: (context, settingsViewModel, _) {
@@ -223,6 +233,7 @@ class QuranForAllApp extends StatelessWidget {
               locale: settingsViewModel.settings.language.locale,
               localizationsDelegates: AppLocalizations.localizationsDelegates,
               supportedLocales: AppLocalizations.supportedLocales,
+              scrollBehavior: const AppIosScrollBehavior(),
               builder: (context, child) {
                 final responsive = AppResponsive.of(context);
                 final mediaQuery = MediaQuery.of(context);

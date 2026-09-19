@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/enums/task_category.dart';
@@ -123,7 +124,7 @@ class DailyTrackerTaskTile extends StatelessWidget {
             IconButton(
               onPressed: onDelete,
               tooltip: context.l10n.dailyTrackerDeleteTaskTooltip,
-              icon: const Icon(Icons.delete_outline_rounded, size: 20),
+              icon: const Icon(CupertinoIcons.trash, size: 20),
               color: colors.onSurfaceVariant,
             ),
         ],

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
@@ -35,7 +36,7 @@ class SurahReadingOptions extends StatelessWidget {
             vertical: 0,
           ),
           childrenPadding: EdgeInsets.zero,
-          leading: const Icon(Icons.tune_rounded),
+          leading: const Icon(CupertinoIcons.slider_horizontal_3),
           title: Text(context.l10n.readQuranReadingOptionsTitle),
           subtitle: Text(context.l10n.readQuranReadingOptionsSubtitle),
           children: [
@@ -57,35 +58,46 @@ class SurahReadingOptions extends StatelessWidget {
                   const SizedBox(height: AppSpacing.sm),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
-                    child: SegmentedButton<ReadingViewMode>(
-                      showSelectedIcon: false,
-                      style: SegmentedButton.styleFrom(
-                        backgroundColor: unselectedBg,
-                        foregroundColor: colorScheme.onSurface,
-                        selectedBackgroundColor: selectedBg,
-                        selectedForegroundColor: colorScheme.primary,
-                        side: BorderSide(
-                          color: colorScheme.outline.withValues(alpha: 0.22),
+                    child: CupertinoSlidingSegmentedControl<ReadingViewMode>(
+                      groupValue: settings.readingViewMode,
+                      backgroundColor: unselectedBg,
+                      thumbColor: selectedBg,
+                      children: {
+                        ReadingViewMode.detailsView: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpacing.md,
+                            vertical: AppSpacing.sm,
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              const Icon(CupertinoIcons.list_bullet, size: 17),
+                              const SizedBox(width: AppSpacing.sm),
+                              Text(context.l10n.readQuranDetailsMode),
+                            ],
+                          ),
                         ),
-                      ),
-                      segments: <ButtonSegment<ReadingViewMode>>[
-                        ButtonSegment<ReadingViewMode>(
-                          value: ReadingViewMode.detailsView,
-                          icon: const Icon(Icons.view_agenda_rounded),
-                          label: Text(context.l10n.readQuranDetailsMode),
+                        ReadingViewMode.regularView: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpacing.md,
+                            vertical: AppSpacing.sm,
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              const Icon(CupertinoIcons.textformat, size: 17),
+                              const SizedBox(width: AppSpacing.sm),
+                              Text(context.l10n.readQuranRegularMode),
+                            ],
+                          ),
                         ),
-                        ButtonSegment<ReadingViewMode>(
-                          value: ReadingViewMode.regularView,
-                          icon: const Icon(Icons.wrap_text_rounded),
-                          label: Text(context.l10n.readQuranRegularMode),
-                        ),
-                      ],
-                      selected: <ReadingViewMode>{settings.readingViewMode},
-                      onSelectionChanged: (selection) {
-                        final selectedMode = selection.first;
-                        unawaited(
-                          settingsViewModel.setReadingViewMode(selectedMode),
-                        );
+                      },
+                      onValueChanged: (selectedMode) {
+                        if (selectedMode != null) {
+                          unawaited(
+                            settingsViewModel.setReadingViewMode(selectedMode),
+                          );
+                        }
                       },
                     ),
                   ),
@@ -93,14 +105,14 @@ class SurahReadingOptions extends StatelessWidget {
               ),
             ),
             const Divider(height: 1),
-            SwitchListTile(
+            SwitchListTile.adaptive(
               dense: true,
               activeThumbColor: colorScheme.primary,
               activeTrackColor: colorScheme.primary.withValues(alpha: 0.35),
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: AppSpacing.lg,
               ),
-              secondary: const Icon(Icons.record_voice_over_rounded),
+              secondary: const Icon(CupertinoIcons.waveform),
               value: settings.showPronunciation,
               onChanged: (value) {
                 unawaited(settingsViewModel.setShowPronunciation(value));
@@ -108,14 +120,14 @@ class SurahReadingOptions extends StatelessWidget {
               title: Text(context.l10n.settingsShowPronunciationTitle),
             ),
             const Divider(height: 1),
-            SwitchListTile(
+            SwitchListTile.adaptive(
               dense: true,
               activeThumbColor: colorScheme.primary,
               activeTrackColor: colorScheme.primary.withValues(alpha: 0.35),
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: AppSpacing.lg,
               ),
-              secondary: const Icon(Icons.translate_rounded),
+              secondary: const Icon(CupertinoIcons.globe),
               value: settings.showTranslation,
               onChanged: (value) {
                 unawaited(settingsViewModel.setShowTranslation(value));

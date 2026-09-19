@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -55,7 +56,7 @@ class _LearnQuranViewState extends State<LearnQuranView> {
           : AppBar(
               leading: IconButton(
                 onPressed: () => Navigator.of(context).maybePop(),
-                icon: const Icon(Icons.arrow_back_ios_new_rounded),
+                icon: const Icon(CupertinoIcons.chevron_back),
               ),
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

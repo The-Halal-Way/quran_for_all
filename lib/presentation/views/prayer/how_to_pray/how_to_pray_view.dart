@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
@@ -40,7 +41,7 @@ class _HowToPrayBody extends StatelessWidget {
       appBar: AppBar(
         title: Text(context.l10n.prayerMovementsTitle),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded),
+          icon: const Icon(CupertinoIcons.chevron_back),
           onPressed: () => Navigator.of(context).maybePop(),
         ),
         actions: const [PrayerLanguageMenuAction()],

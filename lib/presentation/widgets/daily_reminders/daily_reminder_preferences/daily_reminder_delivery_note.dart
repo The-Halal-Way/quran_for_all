@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
@@ -36,7 +37,7 @@ class DailyReminderDeliveryNote extends StatelessWidget {
               color: accent.withValues(alpha: 0.13),
               shape: BoxShape.circle,
             ),
-            child: Icon(Icons.today_rounded, color: accent, size: 20),
+            child: Icon(CupertinoIcons.today, color: accent, size: 20),
           ),
           const SizedBox(width: AppSpacing.md),
           Expanded(

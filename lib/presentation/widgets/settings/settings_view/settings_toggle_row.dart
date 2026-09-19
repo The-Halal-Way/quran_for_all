@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
@@ -46,7 +47,7 @@ class SettingsToggleRow extends StatelessWidget {
             ),
           ),
           const SizedBox(width: AppSpacing.sm),
-          Switch(value: value, onChanged: onChanged),
+          CupertinoSwitch(value: value, onChanged: onChanged),
         ],
       ),
     );

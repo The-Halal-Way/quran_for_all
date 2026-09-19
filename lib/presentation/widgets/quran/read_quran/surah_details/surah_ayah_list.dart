@@ -66,9 +66,7 @@ class SurahAyahList extends StatelessWidget {
                   children: List.generate(viewModel.ayahs.length, (index) {
                     final ayah = viewModel.ayahs[index];
                     final colorScheme = Theme.of(context).colorScheme;
-                    final isPlaying = viewModel.isAyahPlaying(
-                      ayah.ayahNumber,
-                    );
+                    final isPlaying = viewModel.isAyahPlaying(ayah.ayahNumber);
                     final isHighlighted =
                         ayah.ayahNumber == _highlightedAyahNumber;
 

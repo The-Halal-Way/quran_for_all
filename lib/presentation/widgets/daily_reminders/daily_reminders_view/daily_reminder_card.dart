@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
@@ -93,7 +94,7 @@ class DailyReminderCard extends StatelessWidget {
                         ),
                         if (!isRead)
                           _MetaPill(
-                            icon: Icons.fiber_manual_record_rounded,
+                            icon: CupertinoIcons.circle_fill,
                             text: l10n.dailyRemindersUnreadBadge,
                             color: scheme.secondary,
                           ),
@@ -127,8 +128,8 @@ class DailyReminderCard extends StatelessWidget {
                       children: [
                         Icon(
                           isRead
-                              ? Icons.check_circle_rounded
-                              : Icons.circle_outlined,
+                              ? CupertinoIcons.checkmark_circle_fill
+                              : CupertinoIcons.circle,
                           size: 18,
                           color: isRead ? scheme.tertiary : scheme.outline,
                         ),
@@ -147,14 +148,14 @@ class DailyReminderCard extends StatelessWidget {
                               : l10n.dailyRemindersSave,
                           icon: Icon(
                             isSaved
-                                ? Icons.bookmark_rounded
-                                : Icons.bookmark_border_rounded,
+                                ? CupertinoIcons.bookmark_fill
+                                : CupertinoIcons.bookmark,
                             color: isSaved
                                 ? scheme.secondary
                                 : scheme.onSurfaceVariant,
                           ),
                         ),
-                        const Icon(Icons.arrow_forward_rounded, size: 20),
+                        const Icon(CupertinoIcons.chevron_forward, size: 18),
                       ],
                     ),
                   ],

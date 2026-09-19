@@ -1,9 +1,9 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
-import 'package:quran_for_all/core/theme/my_icons.dart';
 
 import '../../../../core/enums/app_language.dart';
 import '../../../../core/localization/l10n_extensions.dart';
@@ -46,7 +46,7 @@ class ReadQuranView extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
-          icon: const Icon(Icons.arrow_back_ios_new_rounded),
+          icon: const Icon(CupertinoIcons.chevron_back),
         ),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,18 +63,18 @@ class ReadQuranView extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () => _openBookmarks(context),
-            icon: const Icon(Icons.bookmarks_rounded),
+            icon: const Icon(CupertinoIcons.bookmark_fill),
             tooltip: context.l10n.readQuranBookmarksTooltip,
           ),
-          IconButton.filledTonal(
+          IconButton(
             onPressed: () => _openSearch(context),
-            icon: Image.asset(
-              MyIcons.searchIcon,
-              width: 20,
-              height: 20,
-              color: Theme.of(context).colorScheme.onSurfaceVariant,
-            ),
+            icon: const Icon(CupertinoIcons.search),
             tooltip: context.l10n.readQuranSearchTooltip,
+            style: IconButton.styleFrom(
+              backgroundColor: Theme.of(
+                context,
+              ).colorScheme.surfaceContainerHighest,
+            ),
           ),
         ],
       ),

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
@@ -21,7 +22,7 @@ class DailyTrackerAddTaskBar extends StatelessWidget {
           width: double.infinity,
           child: FilledButton.icon(
             onPressed: () => addTrackerTask(context),
-            icon: const Icon(Icons.add_rounded),
+            icon: const Icon(CupertinoIcons.add),
             label: Text(context.l10n.dailyTrackerAddTaskTooltip),
             style: FilledButton.styleFrom(
               backgroundColor: MyColors.secondary,

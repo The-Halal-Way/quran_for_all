@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' show NumberFormat;
 
@@ -98,7 +99,7 @@ class DashboardHadithCard extends StatelessWidget {
                 ),
                 const SizedBox(width: AppSpacing.xs),
                 Icon(
-                  Icons.chevron_right_rounded,
+                  CupertinoIcons.chevron_forward,
                   color: colors.onSurfaceVariant,
                   size: 20,
                 ),

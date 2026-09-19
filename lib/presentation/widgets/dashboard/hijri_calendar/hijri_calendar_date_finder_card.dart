@@ -1,9 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/data/models/hijri/hijri_calendar_models.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_ios_picker.dart';
 
 typedef HijriDateSelected = bool Function(int year, int month, int day);
 
@@ -139,27 +141,24 @@ class HijriCalendarDateFinderCard extends StatelessWidget {
           const SizedBox(height: AppSpacing.sm),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: SegmentedButton<int>(
-              segments: [
-                ButtonSegment<int>(
-                  value: -1,
-                  icon: const Icon(Icons.remove_rounded, size: 17),
-                  label: Text(context.l10n.hijriAdjustmentMinusLabel),
+            child: CupertinoSlidingSegmentedControl<int>(
+              groupValue: dateAdjustment,
+              onValueChanged: (selected) {
+                if (selected != null) onAdjustmentChanged(selected);
+              },
+              children: {
+                -1: _AdjustmentSegment(
+                  icon: CupertinoIcons.minus,
+                  label: context.l10n.hijriAdjustmentMinusLabel,
                 ),
-                ButtonSegment<int>(
-                  value: 0,
-                  icon: const Icon(Icons.check_rounded, size: 17),
-                  label: Text(context.l10n.hijriAdjustmentCalculatedLabel),
+                0: _AdjustmentSegment(
+                  icon: CupertinoIcons.check_mark,
+                  label: context.l10n.hijriAdjustmentCalculatedLabel,
                 ),
-                ButtonSegment<int>(
-                  value: 1,
-                  icon: const Icon(Icons.add_rounded, size: 17),
-                  label: Text(context.l10n.hijriAdjustmentPlusLabel),
+                1: _AdjustmentSegment(
+                  icon: CupertinoIcons.add,
+                  label: context.l10n.hijriAdjustmentPlusLabel,
                 ),
-              ],
-              selected: {dateAdjustment},
-              onSelectionChanged: (selected) {
-                onAdjustmentChanged(selected.first);
               },
             ),
           ),
@@ -169,7 +168,7 @@ class HijriCalendarDateFinderCard extends StatelessWidget {
   }
 
   Future<void> _pickGregorianDate(BuildContext context) async {
-    final picked = await showDatePicker(
+    final picked = await showAppDatePicker(
       context: context,
       initialDate: _clampedInitialGregorianDate(),
       firstDate: firstGregorianDate,
@@ -220,6 +219,22 @@ class HijriCalendarDateFinderCard extends StatelessWidget {
     }
     return selected;
   }
+}
+
+class _AdjustmentSegment extends StatelessWidget {
+  const _AdjustmentSegment({required this.icon, required this.label});
+
+  final IconData icon;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 7),
+    child: Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [Icon(icon, size: 15), const SizedBox(width: 6), Text(label)],
+    ),
+  );
 }
 
 class _HijriDatePickerSheet extends StatefulWidget {

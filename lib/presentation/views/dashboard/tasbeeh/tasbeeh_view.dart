@@ -1,8 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
-import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard/tasbeeh_viewmodel.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
@@ -12,12 +12,7 @@ class TasbeehView extends StatelessWidget {
   const TasbeehView({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return ChangeNotifierProvider<TasbeehViewModel>(
-      create: (_) => TasbeehViewModel(),
-      child: const _TasbeehBody(),
-    );
-  }
+  Widget build(BuildContext context) => const _TasbeehBody();
 }
 
 class _TasbeehBody extends StatelessWidget {
@@ -32,6 +27,10 @@ class _TasbeehBody extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final selectedPhrase = vm.selectedPhrase;
     final phraseLabel = selectedPhrase.key.label(context.l10n);
+
+    if (!vm.isLoaded) {
+      return const Scaffold(body: Center(child: CupertinoActivityIndicator()));
+    }
 
     return Scaffold(
       body: Stack(
@@ -50,12 +49,7 @@ class _TasbeehBody extends StatelessWidget {
                   builder: (context, controller) => SingleChildScrollView(
                     controller: controller,
                     physics: const BouncingScrollPhysics(),
-                    padding: EdgeInsets.fromLTRB(
-                      horizontal,
-                      16,
-                      horizontal,
-                      96,
-                    ),
+                    padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 48),
                     child: Column(
                       children: [
                         TasbeehAppBar(isDark: isDark),
@@ -77,6 +71,8 @@ class _TasbeehBody extends StatelessWidget {
                         TasbeehPhraseSelector(
                           phrases: TasbeehViewModel.phrases,
                           selectedKey: vm.selectedPhraseKey,
+                          counts: vm.counts,
+                          targets: vm.selectedTargets,
                           isDark: isDark,
                           onSelected: vm.selectPhrase,
                         ),
@@ -99,7 +95,8 @@ class _TasbeehBody extends StatelessWidget {
                         SizedBox(height: responsive.sectionGap),
                         TasbeehControls(
                           isDark: isDark,
-                          canUndo: vm.count > 0 || vm.totalCount > 0,
+                          canUndo: vm.count > 0,
+                          canResetAll: vm.totalCount > 0,
                           onUndo: vm.decrement,
                           onResetCount: vm.resetCount,
                           onResetAll: vm.resetAll,
@@ -112,15 +109,6 @@ class _TasbeehBody extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton.large(
-        backgroundColor: MyColors.secondary,
-        foregroundColor: Colors.white,
-        onPressed: () {
-          HapticFeedback.lightImpact();
-          vm.increment();
-        },
-        child: const Icon(Icons.touch_app_rounded),
       ),
     );
   }

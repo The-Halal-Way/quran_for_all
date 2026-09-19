@@ -1,11 +1,10 @@
 import 'dart:async';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
-import 'package:quran_for_all/core/theme/my_icons.dart';
 import 'package:quran_for_all/data/models/ayah_model.dart';
 import 'package:quran_for_all/presentation/widgets/empty_state.dart';
 
@@ -23,13 +22,12 @@ class SurahDetailsSearchButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () => _openSurahSearchSheet(context),
-      child: Image.asset(
-        MyIcons.searchIcon,
-        color: Colors.white,
-        width: 20.h,
-        height: 20.h,
+    return IconButton(
+      onPressed: () => _openSurahSearchSheet(context),
+      icon: const Icon(CupertinoIcons.search, size: 21),
+      color: Colors.white,
+      style: IconButton.styleFrom(
+        backgroundColor: Colors.white.withValues(alpha: 0.13),
       ),
     );
   }
@@ -75,7 +73,7 @@ class SurahDetailsSearchButton extends StatelessWidget {
                           decoration: InputDecoration(
                             hintText:
                                 context.l10n.readQuranSearchInsideSurahHint,
-                            prefixIcon: const Icon(Icons.search_rounded),
+                            prefixIcon: const Icon(CupertinoIcons.search),
                           ),
                           onChanged: (value) {
                             setSheetState(() {
@@ -105,14 +103,14 @@ class SurahDetailsSearchButton extends StatelessWidget {
                         Expanded(
                           child: query.isEmpty
                               ? EmptyState(
-                                  icon: Icons.manage_search_rounded,
+                                  icon: CupertinoIcons.doc_text_search,
                                   title: context.l10n.readQuranSearchAyahsTitle,
                                   message:
                                       context.l10n.readQuranSearchAyahsBody,
                                 )
                               : results.isEmpty
                               ? EmptyState(
-                                  icon: Icons.search_off,
+                                  icon: CupertinoIcons.search_circle,
                                   title: context.l10n.readQuranNoResultsTitle,
                                   message: context.l10n.readQuranNoResultsBody,
                                 )
@@ -151,7 +149,7 @@ class SurahDetailsSearchButton extends StatelessWidget {
                                           overflow: TextOverflow.ellipsis,
                                         ),
                                         trailing: Icon(
-                                          Icons.arrow_downward_rounded,
+                                          CupertinoIcons.arrow_down_circle,
                                           color: colorScheme.primary,
                                         ),
                                         onTap: () {

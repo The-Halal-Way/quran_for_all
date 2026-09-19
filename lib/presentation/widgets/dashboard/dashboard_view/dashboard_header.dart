@@ -47,8 +47,7 @@ class DashboardHeader extends StatelessWidget {
               color: MyColors.primaryLight.withValues(alpha: 0.18),
             ),
           ),
-          child:
-          Stack(
+          child: Stack(
             alignment: AlignmentDirectional.center,
             children: [
               Text(
@@ -59,16 +58,18 @@ class DashboardHeader extends StatelessWidget {
                   context,
                 ).dashboardBismillah.copyWith(color: colors.onSurface),
               ),
-               Align(
-          alignment: AlignmentDirectional.centerEnd,
-          child: DashboardDailyReminderButton(
-            label: context.l10n.dailyRemindersTitle,
-            unreadCount: unreadReminders,
-            onTap: () => pushDashboardPage(context, const DailyRemindersView()),
+              Align(
+                alignment: AlignmentDirectional.centerEnd,
+                child: DashboardDailyReminderButton(
+                  label: context.l10n.dailyRemindersTitle,
+                  unreadCount: unreadReminders,
+                  onTap: () =>
+                      pushDashboardPage(context, const DailyRemindersView()),
+                ),
+              ),
+            ],
           ),
         ),
-            ],
-        ),),
         const SizedBox(height: AppSpacing.md),
         LayoutBuilder(
           builder: (context, constraints) {

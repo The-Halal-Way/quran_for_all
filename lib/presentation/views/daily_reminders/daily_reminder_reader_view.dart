@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -92,9 +93,25 @@ class _DailyReminderReaderViewState extends State<DailyReminderReaderView> {
                   children: [
                     Row(
                       children: [
-                        IconButton.filledTonal(
+                        IconButton(
                           onPressed: () => Navigator.of(context).maybePop(),
-                          icon: const Icon(Icons.arrow_back_rounded),
+                          icon: const Icon(
+                            CupertinoIcons.chevron_back,
+                            size: 21,
+                          ),
+                          style: IconButton.styleFrom(
+                            backgroundColor: Theme.of(context)
+                                .colorScheme
+                                .surfaceContainerHighest
+                                .withValues(alpha: 0.76),
+                            side: BorderSide(
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .outlineVariant
+                                  .withValues(alpha: 0.58),
+                              width: 0.7,
+                            ),
+                          ),
                         ),
                         const Spacer(),
                         DailyReminderReaderActions(
@@ -120,7 +137,7 @@ class _DailyReminderReaderViewState extends State<DailyReminderReaderView> {
                     if (resolved.isFallback) ...[
                       const SizedBox(height: AppSpacing.md),
                       Chip(
-                        avatar: const Icon(Icons.translate_rounded, size: 16),
+                        avatar: const Icon(CupertinoIcons.globe, size: 16),
                         label: Text(
                           l10n.dailyRemindersFallbackLanguage(edition.locale),
                         ),

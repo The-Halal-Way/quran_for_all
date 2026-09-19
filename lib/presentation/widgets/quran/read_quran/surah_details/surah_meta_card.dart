@@ -1,9 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/enums/reading_view_mode.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
-import 'package:quran_for_all/core/theme/my_icons.dart';
-import 'package:quran_for_all/core/theme/my_images.dart';
 import 'package:quran_for_all/data/models/ayah_model.dart';
 import 'package:quran_for_all/presentation/widgets/quran/read_quran/surah_details/surah_details_search_button.dart';
 
@@ -57,22 +56,9 @@ class SurahMetaCard extends StatelessWidget {
   final VoidCallback? onPreviousSurah;
   final VoidCallback? onNextSurah;
 
-  static const List<String> _backgroundImages = <String>[
-    MyImages.background1,
-    MyImages.background2,
-    MyImages.background3,
-    MyImages.background4,
-    MyImages.background5,
-    MyImages.background6,
-    MyImages.background7,
-    MyImages.background8,
-  ];
-
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    final bgImage =
-        _backgroundImages[(surah.id - 1) % _backgroundImages.length];
 
     return Container(
       width: double.infinity,
@@ -82,36 +68,38 @@ class SurahMetaCard extends StatelessWidget {
           bottomLeft: Radius.circular(AppRadius.xl),
           bottomRight: Radius.circular(AppRadius.xl),
         ),
-        image: DecorationImage(
-          image: AssetImage(bgImage),
-          fit: BoxFit.cover,
-          colorFilter: ColorFilter.mode(
-            Colors.black.withValues(alpha: 0.34),
-            BlendMode.darken,
-          ),
+        gradient: LinearGradient(
+          colors: [
+            colorScheme.primary,
+            Color.lerp(colorScheme.primary, colorScheme.tertiary, 0.48)!,
+            colorScheme.tertiary,
+          ],
+          begin: AlignmentDirectional.topStart,
+          end: AlignmentDirectional.bottomEnd,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.18),
-            blurRadius: 16,
-            offset: const Offset(0, 6),
+            color: colorScheme.primary.withValues(alpha: 0.18),
+            blurRadius: 20,
+            offset: const Offset(0, 8),
           ),
         ],
       ),
       child: Stack(
         children: [
-          Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    colorScheme.primary.withValues(alpha: 0.72),
-                    colorScheme.tertiary.withValues(alpha: 0.68),
-                    Colors.black.withValues(alpha: 0.42),
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  stops: const [0.0, 0.52, 1.0],
+          PositionedDirectional(
+            end: -64,
+            top: -76,
+            child: IgnorePointer(
+              child: Container(
+                width: 210,
+                height: 210,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Colors.white.withValues(alpha: 0.08),
+                    width: 34,
+                  ),
                 ),
               ),
             ),
@@ -130,15 +118,17 @@ class SurahMetaCard extends StatelessWidget {
                     children: [
                       IconButton(
                         icon: const Icon(
-                          Icons.arrow_back_ios_new,
-                          size: 18,
+                          CupertinoIcons.chevron_back,
+                          size: 20,
                           color: MyColors.textOnPrimary,
                         ),
-                        visualDensity: VisualDensity.compact,
-                        padding: const EdgeInsets.all(6),
+                        padding: const EdgeInsets.all(10),
                         constraints: const BoxConstraints(
-                          minWidth: 32,
-                          minHeight: 32,
+                          minWidth: 44,
+                          minHeight: 44,
+                        ),
+                        style: IconButton.styleFrom(
+                          backgroundColor: Colors.white.withValues(alpha: 0.13),
                         ),
                         onPressed: () => Navigator.of(context).pop(),
                       ),
@@ -175,14 +165,14 @@ class SurahMetaCard extends StatelessWidget {
                     alignment: WrapAlignment.center,
                     children: [
                       AppPill.overlay(
-                        icon: Icons.layers_outlined,
+                        icon: CupertinoIcons.square_stack_3d_up,
                         label:
                             '${surah.totalAyahs} ${context.l10n.readQuranAyahsLabel}',
                       ),
                       AppPill.overlay(
-                        imgIcon: surah.revelationType == 'Meccan'
-                            ? MyIcons.meccaIcon
-                            : MyIcons.medinaIcon,
+                        icon: surah.revelationType == 'Meccan'
+                            ? CupertinoIcons.moon_stars
+                            : CupertinoIcons.building_2_fill,
                         label: _localizedRevelationType(context),
                       ),
                     ],
@@ -191,7 +181,7 @@ class SurahMetaCard extends StatelessWidget {
                   Row(
                     children: [
                       _SurahNavArrow(
-                        icon: Icons.chevron_left_rounded,
+                        icon: CupertinoIcons.chevron_left,
                         tooltip: context.l10n.readQuranPreviousSurahTooltip,
                         onTap: onPreviousSurah,
                       ),
@@ -202,16 +192,15 @@ class SurahMetaCard extends StatelessWidget {
                               surah.id,
                               totalSurahCount,
                             ),
-                            style: AppTheme.text(context).labelMedium
-                                .copyWith(
-                                  color: Colors.white.withValues(alpha: 0.92),
-                                  fontWeight: AppTheme.weightBold,
-                                ),
+                            style: AppTheme.text(context).labelMedium.copyWith(
+                              color: Colors.white.withValues(alpha: 0.92),
+                              fontWeight: AppTheme.weightBold,
+                            ),
                           ),
                         ),
                       ),
                       _SurahNavArrow(
-                        icon: Icons.chevron_right_rounded,
+                        icon: CupertinoIcons.chevron_right,
                         tooltip: context.l10n.readQuranNextSurahTooltip,
                         onTap: onNextSurah,
                       ),
@@ -272,18 +261,23 @@ class _SurahNavArrow extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         customBorder: const CircleBorder(),
-        child: Container(
-          width: 30,
-          height: 30,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.white.withValues(alpha: enabled ? 0.16 : 0.06),
-          ),
-          child: Icon(
-            icon,
-            size: 20,
-            color: Colors.white.withValues(alpha: enabled ? 0.95 : 0.32),
+        child: SizedBox.square(
+          dimension: 44,
+          child: Center(
+            child: Container(
+              width: 32,
+              height: 32,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.white.withValues(alpha: enabled ? 0.16 : 0.06),
+              ),
+              child: Icon(
+                icon,
+                size: 19,
+                color: Colors.white.withValues(alpha: enabled ? 0.95 : 0.32),
+              ),
+            ),
           ),
         ),
       ),

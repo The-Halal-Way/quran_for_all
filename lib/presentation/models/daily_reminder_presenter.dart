@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../data/models/daily_reminders/daily_reminder_pack.dart';
@@ -14,11 +15,11 @@ String dailyReminderKindLabel(AppLocalizations l10n, String? kind) =>
     };
 
 IconData dailyReminderKindIcon(String kind) => switch (kind) {
-  'quranReflection' => Icons.menu_book_rounded,
-  'hadithReflection' => Icons.format_quote_rounded,
-  'sunnah' => Icons.nights_stay_rounded,
-  'akhirahReflection' => Icons.auto_awesome_rounded,
-  _ => Icons.lightbulb_rounded,
+  'quranReflection' => CupertinoIcons.book,
+  'hadithReflection' => CupertinoIcons.quote_bubble,
+  'sunnah' => CupertinoIcons.moon_stars,
+  'akhirahReflection' => CupertinoIcons.sparkles,
+  _ => CupertinoIcons.lightbulb,
 };
 
 Color dailyReminderKindColor(BuildContext context, String kind) {

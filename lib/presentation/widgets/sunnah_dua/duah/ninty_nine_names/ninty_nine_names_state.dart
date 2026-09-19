@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
@@ -92,7 +93,7 @@ class NintyNineNamesErrorState extends StatelessWidget {
             const SizedBox(height: 14),
             FilledButton.icon(
               onPressed: onRetry,
-              icon: const Icon(Icons.refresh_rounded, size: 17),
+              icon: const Icon(CupertinoIcons.refresh, size: 17),
               label: Text(context.l10n.duahNintyNineRetry),
             ),
           ],

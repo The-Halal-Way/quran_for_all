@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_spacing.dart';
@@ -61,7 +62,7 @@ class AppDestinationHeader extends StatelessWidget {
               IconButton.filledTonal(
                 tooltip: MaterialLocalizations.of(context).backButtonTooltip,
                 onPressed: onBack,
-                icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 18),
+                icon: const Icon(CupertinoIcons.chevron_back, size: 19),
                 style: IconButton.styleFrom(
                   foregroundColor: accent,
                   backgroundColor: accent.withValues(alpha: 0.11),

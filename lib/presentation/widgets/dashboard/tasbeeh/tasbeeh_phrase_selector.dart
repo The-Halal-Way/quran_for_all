@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
@@ -11,12 +12,16 @@ class TasbeehPhraseSelector extends StatelessWidget {
     super.key,
     required this.phrases,
     required this.selectedKey,
+    required this.counts,
+    required this.targets,
     required this.isDark,
     required this.onSelected,
   });
 
   final List<TasbeehPhrase> phrases;
   final TasbeehPhraseKey selectedKey;
+  final Map<TasbeehPhraseKey, int> counts;
+  final Map<TasbeehPhraseKey, int> targets;
   final bool isDark;
   final ValueChanged<TasbeehPhraseKey> onSelected;
 
@@ -29,7 +34,7 @@ class TasbeehPhraseSelector extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _SectionTitle(
-          icon: Icons.auto_awesome_rounded,
+          icon: CupertinoIcons.sparkles,
           title: context.l10n.tasbeehPhraseTitle,
           color: MyColors.secondary,
           foreground: foreground,
@@ -44,6 +49,8 @@ class TasbeehPhraseSelector extends StatelessWidget {
                 _PhraseOptionCard(
                   phrase: phrase,
                   isSelected: selectedKey == phrase.key,
+                  count: counts[phrase.key] ?? 0,
+                  target: targets[phrase.key] ?? 33,
                   isDark: isDark,
                   text: text,
                   onTap: () => onSelected(phrase.key),
@@ -100,6 +107,8 @@ class _PhraseOptionCard extends StatelessWidget {
   const _PhraseOptionCard({
     required this.phrase,
     required this.isSelected,
+    required this.count,
+    required this.target,
     required this.isDark,
     required this.text,
     required this.onTap,
@@ -107,6 +116,8 @@ class _PhraseOptionCard extends StatelessWidget {
 
   final TasbeehPhrase phrase;
   final bool isSelected;
+  final int count;
+  final int target;
   final bool isDark;
   final AppTypography text;
   final VoidCallback onTap;
@@ -125,7 +136,7 @@ class _PhraseOptionCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(AppRadius.relaxed),
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 180),
-        width: 172,
+        width: 184,
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
           color: isSelected
@@ -135,14 +146,6 @@ class _PhraseOptionCard extends StatelessWidget {
                 ),
           borderRadius: BorderRadius.circular(AppRadius.relaxed),
           border: Border.all(color: borderColor, width: isSelected ? 1.2 : 0.8),
-          boxShadow: [
-            BoxShadow(
-              color: (isSelected ? MyColors.secondary : MyColors.primary)
-                  .withValues(alpha: isDark ? 0.16 : 0.07),
-              blurRadius: isSelected ? 18 : 10,
-              offset: const Offset(0, 6),
-            ),
-          ],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -165,8 +168,8 @@ class _PhraseOptionCard extends StatelessWidget {
                 ),
                 Icon(
                   isSelected
-                      ? Icons.check_circle_rounded
-                      : Icons.circle_outlined,
+                      ? CupertinoIcons.checkmark_circle_fill
+                      : CupertinoIcons.circle,
                   color: isSelected
                       ? MyColors.secondary
                       : foreground.withValues(alpha: 0.35),
@@ -183,6 +186,30 @@ class _PhraseOptionCard extends StatelessWidget {
                 color: foreground.withValues(alpha: 0.72),
                 fontWeight: FontWeight.w700,
               ),
+            ),
+            const SizedBox(height: 10),
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 9,
+                    vertical: 4,
+                  ),
+                  decoration: BoxDecoration(
+                    color: foreground.withValues(alpha: 0.06),
+                    borderRadius: BorderRadius.circular(AppRadius.full),
+                  ),
+                  child: Text(
+                    '$count / $target',
+                    style: text.labelSmall.copyWith(
+                      color: isSelected
+                          ? MyColors.secondary
+                          : foreground.withValues(alpha: 0.68),
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

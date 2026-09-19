@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -51,7 +52,7 @@ class _BookmarksViewState extends State<BookmarksView> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new),
+          icon: const Icon(CupertinoIcons.chevron_back),
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(context.l10n.readQuranBookmarksTitle),
@@ -68,7 +69,7 @@ class _BookmarksViewState extends State<BookmarksView> {
               if (viewModel.errorMessage != null &&
                   viewModel.bookmarks.isEmpty) {
                 return EmptyState(
-                  icon: Icons.error_outline,
+                  icon: CupertinoIcons.exclamationmark_circle,
                   title: context.l10n.readQuranCouldNotLoadBookmarksTitle,
                   message: localizeReadQuranMessage(
                     context,
@@ -79,7 +80,7 @@ class _BookmarksViewState extends State<BookmarksView> {
 
               if (viewModel.bookmarks.isEmpty) {
                 return EmptyState(
-                  icon: Icons.bookmarks_outlined,
+                  icon: CupertinoIcons.bookmark,
                   title: context.l10n.readQuranNoBookmarksTitle,
                   message: context.l10n.readQuranNoBookmarksBody,
                 );

@@ -19,14 +19,7 @@ class QuranPathIcon extends StatelessWidget {
         border: Border.all(color: Colors.white.withValues(alpha: 0.16)),
       ),
       alignment: Alignment.center,
-      child: Image.asset(
-        action.iconAsset,
-        width: 25,
-        height: 25,
-        color: Colors.white,
-        errorBuilder: (_, _, _) =>
-            Icon(action.icon, color: Colors.white, size: 24),
-      ),
+      child: Icon(action.icon, color: Colors.white, size: 24),
     );
   }
 }

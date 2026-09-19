@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_gradients.dart';
@@ -22,7 +23,7 @@ class ForbiddenTimesView extends StatelessWidget {
       appBar: AppBar(
         title: Text(context.l10n.prayerForbiddenTimesTitle),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new),
+          icon: const Icon(CupertinoIcons.chevron_back),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
@@ -25,28 +26,66 @@ class DailyReminderReaderActions extends StatelessWidget {
   Widget build(BuildContext context) => Row(
     mainAxisSize: MainAxisSize.min,
     children: [
-      IconButton.filledTonal(
+      _ReaderActionButton(
         onPressed: onToggleSaved,
-        icon: Icon(
-          isSaved ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
-        ),
+        icon: isSaved ? CupertinoIcons.bookmark_fill : CupertinoIcons.bookmark,
+        selected: isSaved,
         tooltip: isSaved ? l10n.dailyRemindersUnsave : l10n.dailyRemindersSave,
       ),
       const SizedBox(width: AppSpacing.sm),
-      IconButton.filledTonal(
+      _ReaderActionButton(
         onPressed: onShare,
-        icon: const Icon(Icons.share_rounded),
+        icon: CupertinoIcons.share,
         tooltip: l10n.dailyRemindersShare,
       ),
       if (canAddChecklist)
         Padding(
           padding: const EdgeInsetsDirectional.only(start: AppSpacing.sm),
-          child: IconButton.filled(
+          child: _ReaderActionButton(
             onPressed: onAddChecklist,
-            icon: const Icon(Icons.playlist_add_check_circle_rounded),
+            icon: CupertinoIcons.checkmark_rectangle,
+            selected: true,
             tooltip: l10n.dailyRemindersAddChecklist,
           ),
         ),
     ],
   );
+}
+
+class _ReaderActionButton extends StatelessWidget {
+  const _ReaderActionButton({
+    required this.onPressed,
+    required this.icon,
+    required this.tooltip,
+    this.selected = false,
+  });
+
+  final VoidCallback onPressed;
+  final IconData icon;
+  final String tooltip;
+  final bool selected;
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    return IconButton(
+      onPressed: onPressed,
+      tooltip: tooltip,
+      icon: Icon(icon, size: 20),
+      color: selected ? colors.primary : colors.onSurface,
+      style: IconButton.styleFrom(
+        minimumSize: const Size.square(44),
+        fixedSize: const Size.square(44),
+        backgroundColor: selected
+            ? colors.primary.withValues(alpha: 0.13)
+            : colors.surfaceContainerHighest.withValues(alpha: 0.76),
+        side: BorderSide(
+          color: selected
+              ? colors.primary.withValues(alpha: 0.26)
+              : colors.outlineVariant.withValues(alpha: 0.58),
+          width: 0.7,
+        ),
+      ),
+    );
+  }
 }

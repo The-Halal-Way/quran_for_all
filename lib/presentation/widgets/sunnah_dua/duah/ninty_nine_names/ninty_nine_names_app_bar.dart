@@ -1,9 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_language_action_button.dart';
 
 class NintyNineNamesAppBar extends StatelessWidget {
   const NintyNineNamesAppBar({super.key});
@@ -51,7 +52,7 @@ class NintyNineNamesAppBar extends StatelessWidget {
         child: CustomPaint(painter: _AppBarTilePainter()),
       ),
       leading: IconButton(
-        icon: Icon(Icons.arrow_back_ios_new_rounded, color: fg, size: 20),
+        icon: Icon(CupertinoIcons.chevron_back, color: fg, size: 20),
         onPressed: () => Navigator.maybePop(context),
       ),
       title: Column(
@@ -82,33 +83,11 @@ class _LanguageToggleAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final settingsVm = context.watch<SettingsViewModel>();
-    final current = settingsVm.settings.language;
-    final text = AppTheme.text(context);
-
-    return PopupMenuButton<AppLanguage>(
+    return AppLanguageActionButton(
       tooltip: context.l10n.duahLanguageToggleTooltip,
-      icon: Icon(Icons.language_rounded, color: iconColor),
-      onSelected: (language) => settingsVm.setLanguage(language),
-      itemBuilder: (context) => [
-        PopupMenuItem<AppLanguage>(
-          value: AppLanguage.english,
-          child: Text(
-            context.appLanguageLabel(AppLanguage.english),
-            style: current == AppLanguage.english
-                ? text.labelMedium
-                : text.bodyMedium,
-          ),
-        ),
-        PopupMenuItem<AppLanguage>(
-          value: AppLanguage.bangla,
-          child: Text(
-            context.appLanguageLabel(AppLanguage.bangla),
-            style: current == AppLanguage.bangla
-                ? text.labelMedium
-                : text.bodyMedium,
-          ),
-        ),
-      ],
+      current: settingsVm.settings.language,
+      iconColor: iconColor,
+      onSelected: settingsVm.setLanguage,
     );
   }
 }

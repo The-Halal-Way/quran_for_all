@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
@@ -8,6 +9,7 @@ class TasbeehControls extends StatelessWidget {
     super.key,
     required this.isDark,
     required this.canUndo,
+    required this.canResetAll,
     required this.onUndo,
     required this.onResetCount,
     required this.onResetAll,
@@ -15,6 +17,7 @@ class TasbeehControls extends StatelessWidget {
 
   final bool isDark;
   final bool canUndo;
+  final bool canResetAll;
   final VoidCallback onUndo;
   final VoidCallback onResetCount;
   final VoidCallback onResetAll;
@@ -29,10 +32,20 @@ class TasbeehControls extends StatelessWidget {
       spacing: 10,
       runSpacing: 10,
       children: [
-        OutlinedButton.icon(
+        FilledButton.tonalIcon(
           onPressed: canUndo ? onUndo : null,
-          icon: const Icon(Icons.remove_circle_outline_rounded, size: 18),
+          icon: const Icon(CupertinoIcons.minus_circle, size: 18),
           label: Text(context.l10n.tasbeehUndo),
+          style: FilledButton.styleFrom(
+            foregroundColor: foreground.withValues(alpha: 0.82),
+            textStyle: text.labelMedium.copyWith(fontWeight: FontWeight.w800),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          ),
+        ),
+        OutlinedButton.icon(
+          onPressed: canUndo ? onResetCount : null,
+          icon: const Icon(CupertinoIcons.arrow_counterclockwise, size: 18),
+          label: Text(context.l10n.tasbeehReset),
           style: OutlinedButton.styleFrom(
             foregroundColor: foreground.withValues(alpha: 0.82),
             side: BorderSide(color: foreground.withValues(alpha: 0.14)),
@@ -40,20 +53,9 @@ class TasbeehControls extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           ),
         ),
-        FilledButton.icon(
-          onPressed: onResetCount,
-          icon: const Icon(Icons.refresh_rounded, size: 18),
-          label: Text(context.l10n.tasbeehReset),
-          style: FilledButton.styleFrom(
-            backgroundColor: MyColors.primaryLight,
-            foregroundColor: Colors.white,
-            textStyle: text.labelMedium.copyWith(fontWeight: FontWeight.w800),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-          ),
-        ),
         TextButton.icon(
-          onPressed: onResetAll,
-          icon: const Icon(Icons.restart_alt_rounded, size: 18),
+          onPressed: canResetAll ? onResetAll : null,
+          icon: const Icon(CupertinoIcons.trash, size: 18),
           label: Text(context.l10n.tasbeehResetAll),
           style: TextButton.styleFrom(
             foregroundColor: MyColors.secondary,

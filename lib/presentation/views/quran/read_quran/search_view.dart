@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -55,7 +56,7 @@ class _SearchViewState extends State<SearchView> {
       appBar: AppBar(
         title: Text(context.l10n.readQuranSearchTitle),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new),
+          icon: const Icon(CupertinoIcons.chevron_back),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
@@ -86,7 +87,7 @@ class _SearchViewState extends State<SearchView> {
 
                   if (viewModel.query.isEmpty) {
                     return EmptyState(
-                      icon: Icons.manage_search_rounded,
+                      icon: CupertinoIcons.doc_text_search,
                       title: context.l10n.readQuranSearchEmptyTitle,
                       message: context.l10n.readQuranSearchEmptyBody,
                     );
@@ -94,7 +95,7 @@ class _SearchViewState extends State<SearchView> {
 
                   if (viewModel.errorMessage != null) {
                     return EmptyState(
-                      icon: Icons.error_outline,
+                      icon: CupertinoIcons.exclamationmark_circle,
                       title: context.l10n.readQuranSearchFailedTitle,
                       message: localizeReadQuranMessage(
                         context,
@@ -105,7 +106,7 @@ class _SearchViewState extends State<SearchView> {
 
                   if (viewModel.results.isEmpty) {
                     return EmptyState(
-                      icon: Icons.search_off,
+                      icon: CupertinoIcons.search_circle,
                       title: context.l10n.readQuranNoResultsTitle,
                       message: context.l10n.readQuranSearchNoResultsBody,
                     );

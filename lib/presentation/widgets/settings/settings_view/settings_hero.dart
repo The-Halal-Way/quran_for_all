@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
@@ -101,7 +102,7 @@ class _BackButton extends StatelessWidget {
         minimumSize: const Size(34, 34),
         padding: EdgeInsets.zero,
       ),
-      icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 17),
+      icon: const Icon(CupertinoIcons.chevron_back, size: 19),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/enums/app_language.dart';
@@ -60,7 +61,7 @@ class AyahTile extends StatelessWidget {
   Widget _buildTafsirButton(BuildContext context) {
     return FilledButton.tonalIcon(
       onPressed: () => _showTafsirSheet(context),
-      icon: const Icon(Icons.auto_stories_rounded, size: 18),
+      icon: const Icon(CupertinoIcons.book, size: 18),
       label: Text(context.l10n.readQuranTafsirTitle),
       style: FilledButton.styleFrom(
         visualDensity: VisualDensity.compact,
@@ -156,8 +157,8 @@ class AyahTile extends StatelessWidget {
                             onPressed: onToggleBookmark,
                             icon: Icon(
                               isBookmarked
-                                  ? Icons.bookmark_rounded
-                                  : Icons.bookmark_add_outlined,
+                                  ? CupertinoIcons.bookmark_fill
+                                  : CupertinoIcons.bookmark,
                             ),
                             tooltip: isBookmarked
                                 ? context
@@ -169,8 +170,8 @@ class AyahTile extends StatelessWidget {
                             onPressed: onMarkAsLastRead,
                             icon: Icon(
                               isLastReadAyah
-                                  ? Icons.history_toggle_off_rounded
-                                  : Icons.history_edu_rounded,
+                                  ? CupertinoIcons.flag_fill
+                                  : CupertinoIcons.flag,
                             ),
                             style: isLastReadAyah
                                 ? IconButton.styleFrom(
@@ -183,12 +184,18 @@ class AyahTile extends StatelessWidget {
                                 ? context.l10n.readQuranCurrentLastReadTooltip
                                 : context.l10n.readQuranMarkAyahLastReadTooltip,
                           ),
-                          IconButton.filledTonal(
+                          IconButton(
                             onPressed: onPlay,
                             icon: Icon(
                               isPlaying
-                                  ? Icons.stop_circle_rounded
-                                  : Icons.play_circle_fill_rounded,
+                                  ? CupertinoIcons.stop_fill
+                                  : CupertinoIcons.play_fill,
+                            ),
+                            style: IconButton.styleFrom(
+                              backgroundColor: colorScheme.primary.withValues(
+                                alpha: 0.13,
+                              ),
+                              foregroundColor: colorScheme.primary,
                             ),
                             tooltip: isPlaying
                                 ? context.l10n.readQuranStopAyahAudioTooltip
@@ -242,8 +249,8 @@ class AyahTile extends StatelessWidget {
                         onPressed: onToggleBookmark,
                         icon: Icon(
                           isBookmarked
-                              ? Icons.bookmark_rounded
-                              : Icons.bookmark_add_outlined,
+                              ? CupertinoIcons.bookmark_fill
+                              : CupertinoIcons.bookmark,
                         ),
                         tooltip: isBookmarked
                             ? context.l10n.readQuranRemoveAyahBookmarkTooltip
@@ -253,8 +260,8 @@ class AyahTile extends StatelessWidget {
                         onPressed: onMarkAsLastRead,
                         icon: Icon(
                           isLastReadAyah
-                              ? Icons.history_toggle_off_rounded
-                              : Icons.history_edu_rounded,
+                              ? CupertinoIcons.flag_fill
+                              : CupertinoIcons.flag,
                         ),
                         style: isLastReadAyah
                             ? IconButton.styleFrom(
@@ -268,12 +275,18 @@ class AyahTile extends StatelessWidget {
                             ? context.l10n.readQuranCurrentLastReadTooltip
                             : context.l10n.readQuranMarkAyahLastReadTooltip,
                       ),
-                      IconButton.filledTonal(
+                      IconButton(
                         onPressed: onPlay,
                         icon: Icon(
                           isPlaying
-                              ? Icons.stop_circle_rounded
-                              : Icons.play_circle_fill_rounded,
+                              ? CupertinoIcons.stop_fill
+                              : CupertinoIcons.play_fill,
+                        ),
+                        style: IconButton.styleFrom(
+                          backgroundColor: colorScheme.primary.withValues(
+                            alpha: 0.13,
+                          ),
+                          foregroundColor: colorScheme.primary,
                         ),
                         tooltip: isPlaying
                             ? context.l10n.readQuranStopAyahAudioTooltip

@@ -1,7 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
-import 'package:quran_for_all/core/theme/my_icons.dart';
 
 import '../../../../../core/localization/surah_name_localizer.dart';
 import '../../../../../core/localization/l10n_extensions.dart';
@@ -122,9 +122,9 @@ class SurahCard extends StatelessWidget {
                           children: [
                             AppPill.surface(
                               label: _localizedRevelationType(context),
-                              imgIcon: surah.revelationType == 'Meccan'
-                                  ? MyIcons.meccaIcon
-                                  : MyIcons.medinaIcon,
+                              icon: surah.revelationType == 'Meccan'
+                                  ? CupertinoIcons.moon_stars
+                                  : CupertinoIcons.building_2_fill,
                               backgroundColor: colorScheme.surface.withValues(
                                 alpha: 0.9,
                               ),

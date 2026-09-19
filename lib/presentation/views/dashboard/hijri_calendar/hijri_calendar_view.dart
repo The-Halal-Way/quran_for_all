@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_gradients.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
-import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard/hijri_calendar_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
@@ -178,13 +177,6 @@ class _HijriCalendarBody extends StatelessWidget {
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: MyColors.secondary,
-        foregroundColor: Colors.white,
-        onPressed: vm.goToToday,
-        tooltip: l10n.hijriCalendarTodayAction,
-        child: const Icon(Icons.today_rounded),
       ),
     );
   }

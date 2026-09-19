@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
@@ -117,7 +118,7 @@ class ContinueReadingCard extends StatelessWidget {
           color: colorScheme.primary.withValues(alpha: 0.12),
         ),
         child: Icon(
-          Icons.arrow_forward_ios_rounded,
+          CupertinoIcons.chevron_forward,
           size: trailingIconSize,
           color: colorScheme.primary,
         ),

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
@@ -37,7 +38,7 @@ class HijriCalendarMonthHeader extends StatelessWidget {
     return Row(
       children: [
         _RoundIconButton(
-          icon: Icons.chevron_left_rounded,
+          icon: CupertinoIcons.chevron_left,
           tooltip: MaterialLocalizations.of(context).previousMonthTooltip,
           onPressed: canGoPrevious ? onPrevious : null,
           isDark: isDark,
@@ -70,14 +71,14 @@ class HijriCalendarMonthHeader extends StatelessWidget {
         ),
         const SizedBox(width: AppSpacing.sm),
         _RoundIconButton(
-          icon: Icons.today_rounded,
+          icon: CupertinoIcons.today,
           tooltip: context.l10n.hijriCalendarTodayAction,
           onPressed: onToday,
           isDark: isDark,
         ),
         const SizedBox(width: AppSpacing.sm),
         _RoundIconButton(
-          icon: Icons.chevron_right_rounded,
+          icon: CupertinoIcons.chevron_right,
           tooltip: MaterialLocalizations.of(context).nextMonthTooltip,
           onPressed: canGoNext ? onNext : null,
           isDark: isDark,

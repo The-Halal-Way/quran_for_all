@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/presentation/widgets/quran/read_quran/surah_details/surah_ayah_list.dart';
@@ -95,7 +96,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
           ? const Center(child: CircularProgressIndicator())
           : viewModel.errorMessage != null
           ? EmptyState(
-              icon: Icons.error_outline,
+              icon: CupertinoIcons.exclamationmark_circle,
               title: context.l10n.readQuranCouldNotLoadSurahTitle,
               message: localizeReadQuranMessage(
                 context,
@@ -120,8 +121,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                   onJumpToAyah: _jumpToAyahFromSearch,
                   onToggleReadingMode: () {
                     final nextMode =
-                        settings.readingViewMode ==
-                            ReadingViewMode.detailsView
+                        settings.readingViewMode == ReadingViewMode.detailsView
                         ? ReadingViewMode.regularView
                         : ReadingViewMode.detailsView;
                     unawaited(settingsViewModel.setReadingViewMode(nextMode));
