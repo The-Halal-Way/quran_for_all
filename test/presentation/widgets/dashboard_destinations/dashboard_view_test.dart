@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
+import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/views/dashboard/daily_tracker/daily_tracker_full_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
 import 'package:quran_for_all/presentation/views/daily_reminders/daily_reminders_view.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_icon_grid_section.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_daily_reminder_button.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_forbidden_time_row.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_hadith_section.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_prayer_card.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_prayer_row.dart';
@@ -74,6 +77,21 @@ void main() {
     expect(state.prayer.refreshes, 1);
   });
 
+  testWidgets('duas and tools share one Explore grid', (tester) async {
+    await tester.pumpWidget(
+      DashboardTestApp(state: state, home: const DashboardView()),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.byType(AppIconGridSection), findsOneWidget);
+    final section = tester.widget<AppIconGridSection>(
+      find.byType(AppIconGridSection),
+    );
+    expect(section.items, hasLength(7));
+    expect(section.title, 'Explore');
+    expect(tester.takeException(), isNull);
+  });
+
   testWidgets('prayer details expand and collapse; retry is actionable', (
     tester,
   ) async {
@@ -107,6 +125,89 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byWidgetPredicate((widget) => widget is TextButton));
     expect(retries, 1);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('forbidden windows follow the daily prayer sequence', (
+    tester,
+  ) async {
+    var openedForbiddenTimes = false;
+    const forbiddenTimes = [
+      PrayerForbiddenTimeItem(
+        title: 'Sunrise pause',
+        timeLabel: 'Around 6:00 AM',
+        body: 'Wait until sunrise clears.',
+      ),
+      PrayerForbiddenTimeItem(
+        title: 'Zenith pause',
+        timeLabel: 'Before 12:05 PM',
+        body: 'Wait until Dhuhr begins.',
+      ),
+      PrayerForbiddenTimeItem(
+        title: 'Sunset pause',
+        timeLabel: 'Before 6:15 PM',
+        body: 'Wait until Maghrib begins.',
+      ),
+    ];
+
+    await tester.pumpWidget(
+      DashboardTestApp(
+        state: state,
+        home: Scaffold(
+          body: SingleChildScrollView(
+            child: DashboardPrayerCard(
+              times: const {
+                'Maghrib': '6:15 PM',
+                'Fajr': '4:30 AM',
+                'Isha': '7:30 PM',
+                'Sunrise': '6:00 AM',
+                'Asr': '4:25 PM',
+                'Dhuhr': '12:05 PM',
+              },
+              ranges: const {},
+              current: 'Asr',
+              loading: false,
+              forbiddenTimes: forbiddenTimes,
+              onRetry: () {},
+              onForbiddenTimesTap: () => openedForbiddenTimes = true,
+            ),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.byIcon(Icons.expand_more_rounded));
+    await tester.pumpAndSettle();
+
+    Finder prayerLabel(String label) => find.descendant(
+      of: find.byType(DashboardPrayerRow),
+      matching: find.text(label),
+    );
+    Finder forbiddenLabel(String label) => find.descendant(
+      of: find.byType(DashboardForbiddenTimeRow),
+      matching: find.text(label),
+    );
+    final labels = [
+      prayerLabel('Fajr'),
+      prayerLabel('Sunrise'),
+      forbiddenLabel('Sunrise pause'),
+      forbiddenLabel('Zenith pause'),
+      prayerLabel('Dhuhr'),
+      prayerLabel('Asr'),
+      forbiddenLabel('Sunset pause'),
+      prayerLabel('Maghrib'),
+      prayerLabel('Isha'),
+    ];
+    final positions = labels
+        .map((label) => tester.getTopLeft(label).dy)
+        .toList();
+    for (var index = 1; index < positions.length; index++) {
+      expect(positions[index], greaterThan(positions[index - 1]));
+    }
+
+    expect(find.byType(DashboardForbiddenTimeRow), findsNWidgets(3));
+    await tester.tap(find.byType(DashboardForbiddenTimeRow).first);
+    expect(openedForbiddenTimes, isTrue);
     expect(tester.takeException(), isNull);
   });
 

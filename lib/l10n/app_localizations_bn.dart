@@ -1646,6 +1646,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardSectionPrayerTimes => 'নামাজের সময়সূচি';
 
   @override
+  String get dashboardSectionExplore => 'এক্সপ্লোর করুন';
+
+  @override
   String get dashboardActionFullPrayerView => 'পূর্ণ নামাজ ভিউ';
 
   @override
@@ -2586,6 +2589,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dailyTrackerDeleteTaskTooltip => 'টাস্ক মুছুন';
+
+  @override
+  String get dailyTrackerReorderTaskTooltip => 'টাস্কের ক্রম বদলাতে টেনে নিন';
 
   @override
   String get dailyTrackerDeleteTaskConfirmTitle => 'টাস্ক মুছবেন?';

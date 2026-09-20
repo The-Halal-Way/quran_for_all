@@ -228,25 +228,32 @@ class PrayerViewModel extends ChangeNotifier {
   }
 
   List<PrayerForbiddenTimeItem> forbiddenTimes(AppLocalizations l10n) {
+    return forbiddenTimesFor(l10n, _prayerTimes);
+  }
+
+  static List<PrayerForbiddenTimeItem> forbiddenTimesFor(
+    AppLocalizations l10n,
+    Map<String, String> prayerTimes,
+  ) {
     return [
       PrayerForbiddenTimeItem(
         title: l10n.prayerForbiddenSunriseTitle,
         timeLabel: _aroundTime(
           l10n,
-          _prayerTimes[PrayerKey.sunrise.scheduleKey],
+          prayerTimes[PrayerKey.sunrise.scheduleKey],
         ),
         body: l10n.prayerForbiddenSunriseBody,
       ),
       PrayerForbiddenTimeItem(
         title: l10n.prayerForbiddenZenithTitle,
-        timeLabel: _beforeTime(l10n, _prayerTimes[PrayerKey.dhuhr.scheduleKey]),
+        timeLabel: _beforeTime(l10n, prayerTimes[PrayerKey.dhuhr.scheduleKey]),
         body: l10n.prayerForbiddenZenithBody,
       ),
       PrayerForbiddenTimeItem(
         title: l10n.prayerForbiddenSunsetTitle,
         timeLabel: _beforeTime(
           l10n,
-          _prayerTimes[PrayerKey.maghrib.scheduleKey],
+          prayerTimes[PrayerKey.maghrib.scheduleKey],
         ),
         body: l10n.prayerForbiddenSunsetBody,
       ),
@@ -357,14 +364,14 @@ class PrayerViewModel extends ChangeNotifier {
     return null;
   }
 
-  String _aroundTime(AppLocalizations l10n, String? time) {
+  static String _aroundTime(AppLocalizations l10n, String? time) {
     if (time == null || time.isEmpty) {
       return l10n.prayerForbiddenTimeFallback;
     }
     return l10n.prayerForbiddenAroundTime(time);
   }
 
-  String _beforeTime(AppLocalizations l10n, String? time) {
+  static String _beforeTime(AppLocalizations l10n, String? time) {
     if (time == null || time.isEmpty) {
       return l10n.prayerForbiddenTimeFallback;
     }

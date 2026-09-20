@@ -1,12 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/utils/app_responsive.dart';
 import '../../../../data/models/learn_quran_content.dart';
-import '../../common/app_pill.dart';
 import 'learn_module_visuals.dart';
 
 class LearnModuleCard extends StatelessWidget {
@@ -25,13 +22,11 @@ class LearnModuleCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final visuals = LearnModuleVisuals.forModule(module.id);
     final l10n = context.l10n;
-    final responsive = AppResponsive.of(context);
-    final leadingSize = responsive.pick(mobile: 44, tablet: 40, desktop: 46);
-    final progressHeight = responsive.pick(
-      mobile: 8,
-      tablet: 7.4,
-      desktop: 8.2,
-    );
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final accent = isDark
+        ? Color.lerp(visuals.startColor, Colors.white, 0.38)!
+        : visuals.startColor;
+    final scale = MediaQuery.textScalerOf(context).scale(14) / 14;
     final progress = module.lessons.isEmpty
         ? 0.0
         : completedLessons / module.lessons.length;
@@ -42,111 +37,91 @@ class LearnModuleCard extends StatelessWidget {
         ? l10n.learnModuleStatusNotStarted
         : l10n.learnModuleStatusInProgress;
 
-    return Card(
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadius.lg),
-        child: Padding(
-          padding: const EdgeInsets.all(AppSpacing.lg - 2),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+    return Semantics(
+      button: true,
+      onTap: onTap,
+      excludeSemantics: true,
+      label:
+          '${context.learnText(module.title)}. '
+          '${context.learnText(module.subtitle)}. $statusText. '
+          '${l10n.learnCompletedFraction(completedLessons, module.lessons.length)}',
+      child: Tooltip(
+        message: context.learnText(module.title),
+        child: Material(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(AppRadius.md),
+          child: InkWell(
+            onTap: onTap,
+            borderRadius: BorderRadius.circular(AppRadius.md),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppSpacing.sm,
+                vertical: AppSpacing.md,
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  Container(
-                    width: leadingSize,
-                    height: leadingSize,
+                  Ink(
+                    width: 58,
+                    height: 58,
                     decoration: BoxDecoration(
+                      shape: BoxShape.circle,
                       gradient: LinearGradient(
                         colors: [
-                          visuals.startColor.withValues(alpha: 0.23),
-                          visuals.endColor.withValues(alpha: 0.2),
+                          visuals.startColor.withValues(
+                            alpha: isDark ? 0.28 : 0.18,
+                          ),
+                          visuals.endColor.withValues(
+                            alpha: isDark ? 0.16 : 0.10,
+                          ),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
-                      borderRadius: BorderRadius.circular(AppRadius.base),
+                      border: Border.all(
+                        color: accent.withValues(alpha: isDark ? 0.38 : 0.22),
+                      ),
                     ),
-                    child: Icon(visuals.icon, color: visuals.startColor),
+                    child: Icon(visuals.icon, color: accent, size: 26),
                   ),
-                  const SizedBox(width: AppSpacing.sm + 2),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          context.learnText(module.title),
-                          style: AppTheme.text(context).titleMedium.copyWith(
-                            fontWeight: AppTheme.weightBold,
-                          ),
-                        ),
-                        const SizedBox(height: AppSpacing.xs - 1),
-                        Text(
-                          context.learnText(module.subtitle),
-                          style: AppTheme.text(context).bodySmall.copyWith(
-                            color: Theme.of(
-                              context,
-                            ).colorScheme.onSurface.withValues(alpha: 0.74),
-                          ),
-                        ),
-                      ],
+                  const SizedBox(height: AppSpacing.sm),
+                  Text(
+                    context.learnText(module.title),
+                    maxLines: scale > 1.4 ? 3 : 2,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.center,
+                    style: AppTheme.text(context).titleSmall.copyWith(
+                      fontWeight: AppTheme.weightBold,
+                      height: 1.25,
                     ),
                   ),
-                  const SizedBox(width: AppSpacing.sm),
-                  Icon(
-                    CupertinoIcons.chevron_forward,
-                    color: Theme.of(context).colorScheme.primary,
+                  const SizedBox(height: AppSpacing.sm),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(AppRadius.full),
+                    child: LinearProgressIndicator(
+                      minHeight: 4,
+                      value: progress,
+                      backgroundColor: accent.withValues(alpha: 0.12),
+                      color: accent,
+                    ),
                   ),
-                ],
-              ),
-              const SizedBox(height: AppSpacing.md),
-              Text(
-                context.learnText(module.description),
-                style: AppTheme.text(context).bodyMedium,
-              ),
-              const SizedBox(height: AppSpacing.md),
-              Wrap(
-                spacing: AppSpacing.sm,
-                runSpacing: AppSpacing.xs,
-                children: [
-                  AppPill.surface(
-                    icon: Icons.schedule_rounded,
-                    label: l10n.learnMinutesShort(module.estimatedMinutes),
-                  ),
-                  AppPill.surface(
-                    icon: Icons.signal_cellular_alt_rounded,
-                    label: context.learnText(module.level),
-                  ),
-                  AppPill.surface(
-                    icon: Icons.task_alt_rounded,
-                    label: l10n.learnCompletedFraction(
+                  const SizedBox(height: AppSpacing.xs),
+                  Text(
+                    l10n.learnCompletedFraction(
                       completedLessons,
                       module.lessons.length,
                     ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.center,
+                    style: AppTheme.text(context).labelSmall.copyWith(
+                      color: accent,
+                      fontWeight: AppTheme.weightBold,
+                    ),
                   ),
                 ],
               ),
-              const SizedBox(height: AppSpacing.md),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(AppRadius.full),
-                child: LinearProgressIndicator(
-                  minHeight: progressHeight,
-                  value: progress,
-                  backgroundColor: visuals.startColor.withValues(alpha: 0.15),
-                  color: visuals.endColor,
-                ),
-              ),
-              const SizedBox(height: AppSpacing.sm - 1),
-              Text(
-                statusText,
-                style: AppTheme.text(context).labelMedium.copyWith(
-                  color: visuals.startColor,
-                  fontWeight: AppTheme.weightBold,
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),

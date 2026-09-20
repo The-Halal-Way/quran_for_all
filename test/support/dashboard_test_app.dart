@@ -8,6 +8,7 @@ import 'package:quran_for_all/domain/repositories/daily_tracker_repository.dart'
 import 'package:quran_for_all/domain/usecases/add_custom_task_usecase.dart';
 import 'package:quran_for_all/domain/usecases/delete_custom_task_usecase.dart';
 import 'package:quran_for_all/domain/usecases/get_daily_tasks_usecase.dart';
+import 'package:quran_for_all/domain/usecases/reorder_custom_tasks_usecase.dart';
 import 'package:quran_for_all/domain/usecases/toggle_task_usecase.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
@@ -27,6 +28,7 @@ class DashboardTestState {
       toggleTaskUseCase: ToggleTaskUseCase(repository),
       addCustomTaskUseCase: AddCustomTaskUseCase(repository),
       deleteCustomTaskUseCase: DeleteCustomTaskUseCase(repository),
+      reorderCustomTasksUseCase: ReorderCustomTasksUseCase(repository),
     );
     reminders = DailyRemindersViewModel(
       repository: MemoryDailyReminderRepository(_emptyReminderPack),

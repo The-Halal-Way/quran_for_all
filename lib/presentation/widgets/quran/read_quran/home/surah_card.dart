@@ -1,16 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../../core/localization/surah_name_localizer.dart';
 import '../../../../../core/localization/l10n_extensions.dart';
-import '../../../../../core/theme/my_colors.dart';
 import '../../../../../core/theme/app_spacing.dart';
-import '../../../../../core/utils/app_responsive.dart';
 import '../../../../../data/models/surah_model.dart';
 import '../../../../viewmodels/settings_viewmodel.dart';
-import '../../../common/app_pill.dart';
 
 class SurahCard extends StatelessWidget {
   const SurahCard({
@@ -32,153 +28,113 @@ class SurahCard extends StatelessWidget {
     final textTheme = AppTheme.text(context);
     final language = context.watch<SettingsViewModel>().settings.language;
     final localizedTitle = surah.localizedTitle(context, language);
-    final responsive = AppResponsive.of(context);
-    final leadingSize = responsive.pick(mobile: 48, tablet: 42, desktop: 50);
-    final trailingArrowSize = responsive.pick(
-      mobile: 16,
-      tablet: 14.5,
-      desktop: 16.5,
-    );
 
-    return Card(
-      clipBehavior: Clip.antiAlias,
+    return Material(
+      color: Colors.transparent,
+      borderRadius: BorderRadius.circular(AppRadius.md),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadius.lg),
-        child: LayoutBuilder(
-          builder: (context, constraints) {
-            final compact = constraints.maxWidth < 390;
-
-            return Padding(
-              padding: const EdgeInsets.all(14),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    width: leadingSize,
-                    height: leadingSize,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(AppRadius.md),
-                      gradient: LinearGradient(
-                        colors: [
-                          MyColors.primary.withValues(alpha: 0.22),
-                          MyColors.tertiary.withValues(alpha: 0.16),
-                        ],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(
-                        surah.id.toString(),
-                        style: textTheme.titleMedium.copyWith(
-                          color: MyColors.primary,
-                          fontWeight: AppTheme.weightExtraBold,
-                        ),
-                      ),
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.sm,
+            vertical: AppSpacing.sm + 2,
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 44,
+                height: 44,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: LinearGradient(
+                    colors: [
+                      colorScheme.primary.withValues(alpha: 0.18),
+                      colorScheme.tertiary.withValues(alpha: 0.12),
+                    ],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  border: Border.all(
+                    color: colorScheme.primary.withValues(alpha: 0.18),
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    surah.id.toString(),
+                    style: textTheme.labelLarge.copyWith(
+                      color: colorScheme.primary,
+                      fontWeight: AppTheme.weightExtraBold,
                     ),
                   ),
-                  const SizedBox(width: AppSpacing.md),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                ),
+              ),
+              const SizedBox(width: AppSpacing.md),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
                       children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              child: Text(
-                                localizedTitle,
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: textTheme.titleMedium.copyWith(
-                                  fontWeight: AppTheme.weightBold,
-                                ),
-                              ),
+                        Expanded(
+                          flex: 3,
+                          child: Text(
+                            localizedTitle,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: textTheme.titleMedium.copyWith(
+                              fontWeight: AppTheme.weightBold,
                             ),
-                            const SizedBox(width: AppSpacing.sm),
-                            Flexible(
-                              child: AppPill.surface(
-                                icon: Icons.layers_rounded,
-                                label:
-                                    '${surah.totalAyahs} ${context.l10n.readQuranAyahsLabel}',
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: AppSpacing.xs),
-                        Text(
-                          context.readQuranText(surah.nameTranslated),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: textTheme.bodySmall.copyWith(
-                            color: MyColors.textSecondary,
                           ),
                         ),
-                        const SizedBox(height: AppSpacing.sm + 2),
-                        Wrap(
-                          spacing: AppSpacing.sm,
-                          runSpacing: compact ? AppSpacing.xs : 6,
-                          children: [
-                            AppPill.surface(
-                              label: _localizedRevelationType(context),
-                              icon: surah.revelationType == 'Meccan'
-                                  ? CupertinoIcons.moon_stars
-                                  : CupertinoIcons.building_2_fill,
-                              backgroundColor: colorScheme.surface.withValues(
-                                alpha: 0.9,
-                              ),
-                              borderColor: colorScheme.outline.withValues(
-                                alpha: 0.35,
-                              ),
+                        const SizedBox(width: AppSpacing.sm),
+                        Flexible(
+                          flex: 2,
+                          child: Text(
+                            surah.nameArabic,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            textAlign: TextAlign.end,
+                            style: textTheme.titleMedium.copyWith(
+                              color: colorScheme.primary,
+                              fontWeight: AppTheme.weightBold,
                             ),
-                            AppPill.surface(
-                              label: surah.nameArabic,
-                              backgroundColor: colorScheme.surface.withValues(
-                                alpha: 0.9,
-                              ),
-                              borderColor: colorScheme.outline.withValues(
-                                alpha: 0.35,
-                              ),
-                              color: colorScheme.onSurface.withValues(
-                                alpha: 0.6,
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
                       ],
                     ),
-                  ),
-                  const SizedBox(width: AppSpacing.xs),
-                  Column(
-                    children: [
-                      IconButton(
-                        onPressed: onToggleBookmark,
-                        visualDensity: VisualDensity.compact,
-                        icon: Icon(
-                          isBookmarked
-                              ? Icons.bookmark_rounded
-                              : Icons.bookmark_add_outlined,
-                          color: isBookmarked
-                              ? colorScheme.primary
-                              : colorScheme.onSurface.withValues(alpha: 0.6),
-                        ),
-                        tooltip: isBookmarked
-                            ? context.l10n.readQuranRemoveSurahBookmarkTooltip
-                            : context.l10n.readQuranSaveSurahBookmarkTooltip,
+                    const SizedBox(height: AppSpacing.xs),
+                    Text(
+                      '${context.readQuranText(surah.nameTranslated)} · '
+                      '${_localizedRevelationType(context)} · '
+                      '${surah.totalAyahs} ${context.l10n.readQuranAyahsLabel}',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: textTheme.bodySmall.copyWith(
+                        color: colorScheme.onSurfaceVariant,
                       ),
-                      const SizedBox(height: AppSpacing.xs),
-                      Icon(
-                        Icons.arrow_forward_ios_rounded,
-                        size: trailingArrowSize,
-                        color: MyColors.primary,
-                      ),
-                    ],
-                  ),
-                ],
+                    ),
+                  ],
+                ),
               ),
-            );
-          },
+              const SizedBox(width: AppSpacing.xs),
+              IconButton(
+                onPressed: onToggleBookmark,
+                visualDensity: VisualDensity.compact,
+                icon: Icon(
+                  isBookmarked
+                      ? Icons.bookmark_rounded
+                      : Icons.bookmark_add_outlined,
+                  color: isBookmarked
+                      ? colorScheme.primary
+                      : colorScheme.onSurfaceVariant,
+                ),
+                tooltip: isBookmarked
+                    ? context.l10n.readQuranRemoveSurahBookmarkTooltip
+                    : context.l10n.readQuranSaveSurahBookmarkTooltip,
+              ),
+            ],
+          ),
         ),
       ),
     );

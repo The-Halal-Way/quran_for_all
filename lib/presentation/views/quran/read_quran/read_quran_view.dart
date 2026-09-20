@@ -48,12 +48,13 @@ class ReadQuranView extends StatelessWidget {
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(CupertinoIcons.chevron_back),
         ),
+        centerTitle: false,
         title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              context.l10n.readQuranTitle,
-              style: textTheme.titleLarge.copyWith(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                context.l10n.readQuranTitle,
+                style: textTheme.titleLarge.copyWith(
                 fontWeight: AppTheme.weightBold,
               ),
             ),
@@ -134,25 +135,37 @@ class ReadQuranView extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: AppSpacing.sm + 2),
-                          // surah list
-                          for (final surah in viewModel.surahs)
-                            Padding(
-                              key: ValueKey<int>(surah.id),
-                              padding: const EdgeInsets.only(
-                                bottom: AppSpacing.sm + 2,
+                          // Compact rows keep all 114 surahs easy to scan.
+                          for (
+                            var index = 0;
+                            index < viewModel.surahs.length;
+                            index++
+                          ) ...[
+                            SurahCard(
+                              key: ValueKey<int>(viewModel.surahs[index].id),
+                              surah: viewModel.surahs[index],
+                              onTap: () => unawaited(
+                                _openSurah(context, viewModel.surahs[index]),
                               ),
-                              child: SurahCard(
-                                surah: surah,
-                                onTap: () =>
-                                    unawaited(_openSurah(context, surah)),
-                                isBookmarked: viewModel.isSurahBookmarked(
-                                  surah.id,
-                                ),
-                                onToggleBookmark: () => unawaited(
-                                  viewModel.toggleSurahBookmark(surah),
+                              isBookmarked: viewModel.isSurahBookmarked(
+                                viewModel.surahs[index].id,
+                              ),
+                              onToggleBookmark: () => unawaited(
+                                viewModel.toggleSurahBookmark(
+                                  viewModel.surahs[index],
                                 ),
                               ),
                             ),
+                            if (index < viewModel.surahs.length - 1)
+                              Divider(
+                                height: 1,
+                                indent: 64,
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .outlineVariant
+                                    .withValues(alpha: 0.55),
+                              ),
+                          ],
                         ],
                       ),
                     ),

@@ -96,6 +96,7 @@ void main() {
       expect(taskBottom, lessThanOrEqualTo(footerTop));
       await tester.tap(find.byTooltip('Delete task'));
       await tester.pumpAndSettle();
+      expect(find.byType(AlertDialog), findsOneWidget);
       expect(state.tracker.completedTasks, 0);
       await tester.tap(find.text('Cancel'));
       await tester.pumpAndSettle();
@@ -109,6 +110,42 @@ void main() {
       expect(tester.takeException(), isNull);
     },
   );
+
+  testWidgets('custom tasks expose reordering and persist the new order', (
+    tester,
+  ) async {
+    state.repository.customTasks = List.generate(
+      3,
+      (index) => DailyTask(
+        id: 'custom_$index',
+        titleEn: 'Habit $index',
+        titleBn: '',
+        category: TaskCategory.custom,
+      ),
+    );
+    await state.tracker.loadTasks();
+    await pumpTracker(tester);
+    await scrollToTask(tester, 'custom_2');
+
+    expect(find.byTooltip('Drag to reorder task'), findsNWidgets(3));
+    final reorderableList = tester.widget<SliverReorderableList>(
+      find.byType(SliverReorderableList),
+    );
+    reorderableList.onReorder(0, 3);
+    await tester.pumpAndSettle();
+
+    expect(state.repository.customTasks.map((task) => task.id), [
+      'custom_1',
+      'custom_2',
+      'custom_0',
+    ]);
+    await state.tracker.loadTasks();
+    expect(
+      state.tracker.groupedTasks[TaskCategory.custom]!.map((task) => task.id),
+      ['custom_1', 'custom_2', 'custom_0'],
+    );
+    expect(tester.takeException(), isNull);
+  });
 
   testWidgets('add task sheet scrolls above a keyboard on compact large text', (
     tester,

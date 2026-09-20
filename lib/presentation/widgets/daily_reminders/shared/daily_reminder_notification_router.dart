@@ -29,13 +29,29 @@ class _DailyReminderNotificationRouterState
   String? _handling;
 
   @override
+  void initState() {
+    super.initState();
+    _syncLocale(initializeIfNeeded: true);
+  }
+
+  @override
   void didUpdateWidget(covariant DailyReminderNotificationRouter oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.locale != widget.locale) {
-      unawaited(
-        context.read<DailyRemindersViewModel>().localeChanged(widget.locale),
-      );
+      _syncLocale();
     }
+  }
+
+  void _syncLocale({bool initializeIfNeeded = false}) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final vm = context.read<DailyRemindersViewModel>();
+      if (initializeIfNeeded && vm.pack == null && !vm.isLoading) {
+        unawaited(vm.initialize(widget.locale));
+      } else {
+        unawaited(vm.localeChanged(widget.locale));
+      }
+    });
   }
 
   @override

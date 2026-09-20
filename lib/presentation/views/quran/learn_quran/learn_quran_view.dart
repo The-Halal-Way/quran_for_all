@@ -140,19 +140,13 @@ class _LearnQuranViewState extends State<LearnQuranView> {
                               subtitle: l10n.learnQuranTracksSubtitle,
                             ),
                             const SizedBox(height: AppSpacing.sm + 2),
-                            // list of modules
-                            for (final module in viewModel.modules)
-                              Padding(
-                                padding: const EdgeInsets.only(
-                                  bottom: AppSpacing.sm + 2,
-                                ),
-                                child: LearnModuleCard(
-                                  module: module,
-                                  completedLessons: viewModel
-                                      .completedLessonCountFor(module),
-                                  onTap: () => _openModule(context, module),
-                                ),
-                              ),
+                            _LearnModuleGrid(
+                              modules: viewModel.modules,
+                              completedLessonsFor:
+                                  viewModel.completedLessonCountFor,
+                              onSelected: (module) =>
+                                  _openModule(context, module),
+                            ),
                           ],
                         ),
                       ),
@@ -186,6 +180,56 @@ class _LearnQuranViewState extends State<LearnQuranView> {
       AppPageRoute<void>(
         builder: (_) => LearningQuranDetailView(module: module),
       ),
+    );
+  }
+}
+
+class _LearnModuleGrid extends StatelessWidget {
+  const _LearnModuleGrid({
+    required this.modules,
+    required this.completedLessonsFor,
+    required this.onSelected,
+  });
+
+  final List<LearnQuranModule> modules;
+  final int Function(LearnQuranModule module) completedLessonsFor;
+  final ValueChanged<LearnQuranModule> onSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final scale = MediaQuery.textScalerOf(context).scale(14) / 14;
+        final columns = scale > 1.5 || constraints.maxWidth < 300
+            ? 2
+            : constraints.maxWidth >= 840
+            ? 4
+            : constraints.maxWidth >= 600
+            ? 3
+            : 2;
+        final spacing = constraints.maxWidth < 360
+            ? AppSpacing.sm
+            : AppSpacing.md;
+        final itemWidth =
+            (constraints.maxWidth - spacing * (columns - 1)) / columns;
+
+        return Wrap(
+          alignment: WrapAlignment.center,
+          spacing: spacing,
+          runSpacing: AppSpacing.md,
+          children: [
+            for (final module in modules)
+              SizedBox(
+                width: itemWidth,
+                child: LearnModuleCard(
+                  module: module,
+                  completedLessons: completedLessonsFor(module),
+                  onTap: () => onSelected(module),
+                ),
+              ),
+          ],
+        );
+      },
     );
   }
 }

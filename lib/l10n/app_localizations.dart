@@ -3305,6 +3305,12 @@ abstract class AppLocalizations {
   /// **'Prayer Times'**
   String get dashboardSectionPrayerTimes;
 
+  /// No description provided for @dashboardSectionExplore.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore'**
+  String get dashboardSectionExplore;
+
   /// No description provided for @dashboardActionFullPrayerView.
   ///
   /// In en, this message translates to:
@@ -5146,6 +5152,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Delete task'**
   String get dailyTrackerDeleteTaskTooltip;
+
+  /// No description provided for @dailyTrackerReorderTaskTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag to reorder task'**
+  String get dailyTrackerReorderTaskTooltip;
 
   /// No description provided for @dailyTrackerDeleteTaskConfirmTitle.
   ///

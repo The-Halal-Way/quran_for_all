@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -23,7 +22,7 @@ Future<void> deleteTrackerTask(BuildContext context, DailyTask task) async {
   final vm = context.read<DailyTrackerViewModel>();
   final confirmed = await showDialog<bool>(
     context: context,
-    builder: (dialogContext) => CupertinoAlertDialog(
+    builder: (dialogContext) => AlertDialog(
       title: Text(context.l10n.dailyTrackerDeleteTaskConfirmTitle),
       content: Text(
         context.l10n.dailyTrackerDeleteTaskConfirmMessage(
@@ -31,15 +30,17 @@ Future<void> deleteTrackerTask(BuildContext context, DailyTask task) async {
         ),
       ),
       actions: [
-        CupertinoDialogAction(
+        TextButton(
           onPressed: () => Navigator.pop(dialogContext, false),
           child: Text(
             MaterialLocalizations.of(dialogContext).cancelButtonLabel,
           ),
         ),
-        CupertinoDialogAction(
+        TextButton(
           onPressed: () => Navigator.pop(dialogContext, true),
-          isDestructiveAction: true,
+          style: TextButton.styleFrom(
+            foregroundColor: Theme.of(dialogContext).colorScheme.error,
+          ),
           child: Text(context.l10n.dailyTrackerDeleteAction),
         ),
       ],

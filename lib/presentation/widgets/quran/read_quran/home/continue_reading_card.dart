@@ -6,11 +6,9 @@ import 'package:provider/provider.dart';
 import '../../../../../core/localization/l10n_extensions.dart';
 import '../../../../../core/localization/surah_name_localizer.dart';
 import '../../../../../core/theme/app_spacing.dart';
-import '../../../../../core/utils/app_responsive.dart';
 import '../../../../../data/models/surah_model.dart';
 import '../../../../viewmodels/settings_viewmodel.dart';
 import '../../../common/app_continue_box.dart';
-import '../../../common/common_painters.dart';
 
 class ContinueReadingCard extends StatelessWidget {
   const ContinueReadingCard({
@@ -31,41 +29,24 @@ class ContinueReadingCard extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     final language = context.watch<SettingsViewModel>().settings.language;
     final localizedTitle = surah.localizedTitle(context, language);
-    final responsive = AppResponsive.of(context);
-    final leadingWidth = responsive.pick(mobile: 62, tablet: 56, desktop: 64);
-    final leadingHeight = responsive.pick(mobile: 58, tablet: 52, desktop: 60);
-    final leadingIconSize = responsive.pick(
-      mobile: 25,
-      tablet: 22,
-      desktop: 26,
-    );
-    final trailingSize = responsive.pick(mobile: 32, tablet: 30, desktop: 34);
-    final trailingIconSize = responsive.pick(
-      mobile: 16,
-      tablet: 14.5,
-      desktop: 16.5,
-    );
 
     return AppContinueBox(
       onTap: onTap,
-      leading: SizedBox(
-        width: leadingWidth,
-        height: leadingHeight,
-        child: CustomPaint(
-          painter: YShapePainter(
-            backgroundColor: colorScheme.primary.withValues(alpha: 0.16),
-            shadowColor: colorScheme.primary.withValues(alpha: 0.12),
-            bumpWidth: 30,
-            bumpHeight: 9,
-            shadowBlurRadius: 5,
+      padding: const EdgeInsets.all(AppSpacing.md),
+      leading: Container(
+        width: 48,
+        height: 48,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: colorScheme.primary.withValues(alpha: 0.12),
+          border: Border.all(
+            color: colorScheme.primary.withValues(alpha: 0.18),
           ),
-          child: Center(
-            child: Icon(
-              Icons.bookmark_added_rounded,
-              color: colorScheme.primary,
-              size: leadingIconSize,
-            ),
-          ),
+        ),
+        child: Icon(
+          Icons.bookmark_added_rounded,
+          color: colorScheme.primary,
+          size: 23,
         ),
       ),
       content: Column(
@@ -111,15 +92,15 @@ class ContinueReadingCard extends StatelessWidget {
         ],
       ),
       trailing: Container(
-        width: trailingSize,
-        height: trailingSize,
+        width: 30,
+        height: 30,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: colorScheme.primary.withValues(alpha: 0.12),
         ),
         child: Icon(
           CupertinoIcons.chevron_forward,
-          size: trailingIconSize,
+          size: 15,
           color: colorScheme.primary,
         ),
       ),

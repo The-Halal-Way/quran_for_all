@@ -16,10 +16,12 @@ class DailyTrackerTaskTile extends StatelessWidget {
     required this.task,
     required this.onToggle,
     this.onDelete,
+    this.reorderIndex,
   });
   final DailyTask task;
   final VoidCallback onToggle;
   final VoidCallback? onDelete;
+  final int? reorderIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -120,6 +122,25 @@ class DailyTrackerTaskTile extends StatelessWidget {
               ),
             ),
           ),
+          if (reorderIndex case final index?)
+            Tooltip(
+              message: context.l10n.dailyTrackerReorderTaskTooltip,
+              child: Semantics(
+                button: true,
+                label: context.l10n.dailyTrackerReorderTaskTooltip,
+                child: ReorderableDragStartListener(
+                  index: index,
+                  child: Padding(
+                    padding: const EdgeInsets.all(AppSpacing.md),
+                    child: Icon(
+                      CupertinoIcons.line_horizontal_3,
+                      size: 21,
+                      color: colors.onSurfaceVariant,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           if (onDelete != null)
             IconButton(
               onPressed: onDelete,

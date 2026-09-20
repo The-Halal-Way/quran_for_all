@@ -1,6 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:provider/provider.dart';
 import 'package:quran_for_all/data/models/daily_reminders/daily_reminder_pack.dart';
 import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
+import 'package:quran_for_all/presentation/widgets/daily_reminders/shared/daily_reminder_notification_router.dart';
 import 'package:quran_for_all/services/daily_reminder_schedule_planner.dart';
 
 import '../../support/daily_reminder_test_support.dart';
@@ -91,6 +94,48 @@ void main() {
       vm.dispose();
     },
   );
+
+  testWidgets('router initializes and changes locale outside the build phase', (
+    tester,
+  ) async {
+    final repository = MemoryDailyReminderRepository(publishedPack);
+    final navigatorKey = GlobalKey<NavigatorState>();
+    late DailyRemindersViewModel vm;
+    late StateSetter updateHarness;
+    var locale = 'en';
+
+    await tester.pumpWidget(
+      ChangeNotifierProvider<DailyRemindersViewModel>(
+        create: (_) => vm = DailyRemindersViewModel(
+          repository: repository,
+          notificationGateway: FakeDailyReminderNotificationGateway(),
+          clock: () => DateTime(2026, 9, 15, 12),
+        ),
+        child: MaterialApp(
+          navigatorKey: navigatorKey,
+          home: StatefulBuilder(
+            builder: (context, setState) {
+              updateHarness = setState;
+              return DailyReminderNotificationRouter(
+                navigatorKey: navigatorKey,
+                locale: locale,
+                child: const Scaffold(body: Text('Dashboard')),
+              );
+            },
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(repository.packLoads, 1);
+    expect(vm.pack, same(publishedPack));
+    expect(tester.takeException(), isNull);
+
+    updateHarness(() => locale = 'bn');
+    await tester.pumpAndSettle();
+    expect(tester.takeException(), isNull);
+  });
 
   test('notification policy suppresses drafts, opt-out and passed times', () {
     const enabled = DailyReminderPreferences(notificationsEnabled: true);

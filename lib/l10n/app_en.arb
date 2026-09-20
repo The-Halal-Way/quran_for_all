@@ -674,6 +674,7 @@
   "sunnahDuaDifficultySubtitle": "When the heart feels crowded",
   "sunnahDuaDifficultyPractice": "Read it slowly, then choose the next right action with trust in Allah.",
   "dashboardSectionPrayerTimes": "Prayer Times",
+  "dashboardSectionExplore": "Explore",
   "dashboardActionFullPrayerView": "Full Prayer View",
   "dashboardActionQiblaCompass": "Qibla Compass",
   "dashboardActionQiblaCompassSub": "Find qibla direction",
@@ -1048,6 +1049,7 @@
   "dailyTrackerAddTaskOptionalLabel": "Mark as optional",
   "dailyTrackerAddTaskSaveAction": "Add Task",
   "dailyTrackerDeleteTaskTooltip": "Delete task",
+  "dailyTrackerReorderTaskTooltip": "Drag to reorder task",
   "dailyTrackerDeleteTaskConfirmTitle": "Delete task?",
   "dailyTrackerDeleteTaskConfirmMessage": "\"{title}\" will be removed permanently.",
   "@dailyTrackerDeleteTaskConfirmMessage": {

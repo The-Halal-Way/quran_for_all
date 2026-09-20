@@ -674,6 +674,7 @@
   "sunnahDuaDifficultySubtitle": "যখন মন ভারী হয়ে যায়",
   "sunnahDuaDifficultyPractice": "ধীরে ধীরে পড়ুন, তারপর আল্লাহর ওপর ভরসা রেখে সঠিক পরের কাজটি বেছে নিন।",
   "dashboardSectionPrayerTimes": "নামাজের সময়সূচি",
+  "dashboardSectionExplore": "এক্সপ্লোর করুন",
   "dashboardActionFullPrayerView": "পূর্ণ নামাজ ভিউ",
   "dashboardActionQiblaCompass": "কিবলা কম্পাস",
   "dashboardActionQiblaCompassSub": "কিবলার দিক দেখুন",
@@ -1048,6 +1049,7 @@
   "dailyTrackerAddTaskOptionalLabel": "ঐচ্ছিক হিসেবে চিহ্নিত করুন",
   "dailyTrackerAddTaskSaveAction": "টাস্ক যুক্ত করুন",
   "dailyTrackerDeleteTaskTooltip": "টাস্ক মুছুন",
+  "dailyTrackerReorderTaskTooltip": "টাস্কের ক্রম বদলাতে টেনে নিন",
   "dailyTrackerDeleteTaskConfirmTitle": "টাস্ক মুছবেন?",
   "dailyTrackerDeleteTaskConfirmMessage": "\"{title}\" স্থায়ীভাবে মুছে ফেলা হবে।",
   "@dailyTrackerDeleteTaskConfirmMessage": {

@@ -6,6 +6,7 @@ import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/my_colors.dart';
 import '../../../core/utils/app_responsive.dart';
 import '../../viewmodels/dashboard_prayer_times_viewmodel.dart';
+import '../../widgets/common/app_icon_grid_section.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/common/app_premium_page_background.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_continue_section.dart';
@@ -13,7 +14,6 @@ import '../../widgets/dashboard/dashboard_view/dashboard_hadith_section.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_header.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_prayer_section.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_shortcut_catalog.dart';
-import '../../widgets/dashboard/dashboard_view/dashboard_shortcuts_section.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_tracker_preview.dart';
 
 class DashboardView extends StatelessWidget {
@@ -56,18 +56,9 @@ class DashboardView extends StatelessWidget {
                         const SizedBox(height: AppSpacing.xxl),
                         const DashboardPrayerSection(),
                         const SizedBox(height: AppSpacing.xxl),
-                        DashboardShortcutsSection(
-                          title: context.l10n.dashboardSectionDua,
-                          icon: Icons.auto_awesome_rounded,
-                          accent: MyColors.tertiaryDark,
-                          items: dashboardDuaActions(context),
-                        ),
-                        const SizedBox(height: AppSpacing.xxl),
-                        DashboardShortcutsSection(
-                          title: context.l10n.dashboardSectionOthers,
-                          icon: Icons.widgets_rounded,
-                          accent: MyColors.secondary,
-                          items: dashboardToolActions(context),
+                        AppIconGridSection(
+                          title: context.l10n.dashboardSectionExplore,
+                          items: dashboardActions(context),
                         ),
                         const SizedBox(height: AppSpacing.xxl),
                         const DashboardHadithSection(),

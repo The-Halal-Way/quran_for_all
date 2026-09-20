@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../core/enums/task_category.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/utils/app_responsive.dart';
@@ -81,6 +82,9 @@ class DailyTrackerChecklist extends StatelessWidget {
                           tasks: entry.value,
                           onToggle: (task) => vm.toggleTask(task.id),
                           onDelete: (task) => deleteTrackerTask(context, task),
+                          onReorder: entry.key == TaskCategory.custom
+                              ? vm.reorderCustomTask
+                              : null,
                         ),
                     ],
                   ),

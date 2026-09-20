@@ -1646,6 +1646,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardSectionPrayerTimes => 'Prayer Times';
 
   @override
+  String get dashboardSectionExplore => 'Explore';
+
+  @override
   String get dashboardActionFullPrayerView => 'Full Prayer View';
 
   @override
@@ -2586,6 +2589,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dailyTrackerDeleteTaskTooltip => 'Delete task';
+
+  @override
+  String get dailyTrackerReorderTaskTooltip => 'Drag to reorder task';
 
   @override
   String get dailyTrackerDeleteTaskConfirmTitle => 'Delete task?';

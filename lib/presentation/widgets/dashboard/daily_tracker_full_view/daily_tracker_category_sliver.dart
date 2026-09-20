@@ -13,11 +13,13 @@ class DailyTrackerCategorySliver extends StatelessWidget {
     required this.tasks,
     required this.onToggle,
     required this.onDelete,
+    this.onReorder,
   });
   final TaskCategory category;
   final List<DailyTask> tasks;
   final ValueChanged<DailyTask> onToggle;
   final ValueChanged<DailyTask> onDelete;
+  final ReorderCallback? onReorder;
 
   @override
   Widget build(BuildContext context) => SliverMainAxisGroup(
@@ -29,21 +31,37 @@ class DailyTrackerCategorySliver extends StatelessWidget {
           total: tasks.length,
         ),
       ),
-      SliverList.separated(
-        itemCount: tasks.length,
-        separatorBuilder: (_, _) => const SizedBox(height: AppSpacing.sm),
-        itemBuilder: (context, index) {
-          final task = tasks[index];
-          return DailyTrackerTaskTile(
-            key: ValueKey(task.id),
-            task: task,
-            onToggle: () => onToggle(task),
-            onDelete: category == TaskCategory.custom
-                ? () => onDelete(task)
-                : null,
-          );
-        },
-      ),
+      if (onReorder case final reorder?)
+        SliverReorderableList(
+          itemCount: tasks.length,
+          onReorder: reorder,
+          itemBuilder: (context, index) {
+            final task = tasks[index];
+            return Padding(
+              key: ValueKey(task.id),
+              padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+              child: DailyTrackerTaskTile(
+                task: task,
+                onToggle: () => onToggle(task),
+                onDelete: () => onDelete(task),
+                reorderIndex: index,
+              ),
+            );
+          },
+        )
+      else
+        SliverList.separated(
+          itemCount: tasks.length,
+          separatorBuilder: (_, _) => const SizedBox(height: AppSpacing.sm),
+          itemBuilder: (context, index) {
+            final task = tasks[index];
+            return DailyTrackerTaskTile(
+              key: ValueKey(task.id),
+              task: task,
+              onToggle: () => onToggle(task),
+            );
+          },
+        ),
     ],
   );
 }

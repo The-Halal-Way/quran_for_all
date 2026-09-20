@@ -33,6 +33,7 @@ import 'domain/usecases/add_custom_task_usecase.dart';
 import 'domain/usecases/delete_custom_task_usecase.dart';
 import 'domain/usecases/get_daily_tasks_usecase.dart';
 import 'domain/usecases/prayer_times/load_prayer_times_usecase.dart';
+import 'domain/usecases/reorder_custom_tasks_usecase.dart';
 import 'domain/usecases/toggle_task_usecase.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
@@ -143,6 +144,10 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               DeleteCustomTaskUseCase(context.read<DailyTrackerRepository>()),
         ),
+        Provider<ReorderCustomTasksUseCase>(
+          create: (context) =>
+              ReorderCustomTasksUseCase(context.read<DailyTrackerRepository>()),
+        ),
         ChangeNotifierProvider<AudioControlViewModel>(
           create: (context) => AudioControlViewModel(
             audioRepository: context.read<AudioRepository>(),
@@ -194,22 +199,16 @@ class QuranForAllApp extends StatelessWidget {
             toggleTaskUseCase: context.read<ToggleTaskUseCase>(),
             addCustomTaskUseCase: context.read<AddCustomTaskUseCase>(),
             deleteCustomTaskUseCase: context.read<DeleteCustomTaskUseCase>(),
+            reorderCustomTasksUseCase: context
+                .read<ReorderCustomTasksUseCase>(),
           ),
         ),
         ChangeNotifierProvider<DailyRemindersViewModel>(
-          create: (context) =>
-              DailyRemindersViewModel(
-                repository: context.read<DailyReminderRepository>(),
-                notificationGateway: context
-                    .read<DailyReminderNotificationGateway>(),
-              )..initialize(
-                context
-                    .read<SettingsViewModel>()
-                    .settings
-                    .language
-                    .locale
-                    .toLanguageTag(),
-              ),
+          create: (context) => DailyRemindersViewModel(
+            repository: context.read<DailyReminderRepository>(),
+            notificationGateway: context
+                .read<DailyReminderNotificationGateway>(),
+          ),
         ),
         ChangeNotifierProvider<TasbeehViewModel>(
           create: (context) =>
