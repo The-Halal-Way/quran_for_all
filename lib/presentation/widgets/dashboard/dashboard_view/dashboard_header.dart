@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -78,12 +79,12 @@ class DashboardHeader extends StatelessWidget {
                 MediaQuery.textScalerOf(context).scale(14) > 19;
             final hijri = DashboardDateLabel(
               label: info.hijriDateLabel,
-              icon: Icons.nightlight_round,
+              icon: CupertinoIcons.moon_stars_fill,
               highlighted: true,
             );
             final date = DashboardDateLabel(
               label: info.dateLabel,
-              icon: Icons.calendar_today_rounded,
+              icon: CupertinoIcons.calendar_today,
             );
             return stacked
                 ? Column(

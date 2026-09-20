@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/my_colors.dart';
@@ -14,28 +14,28 @@ import 'dashboard_navigation.dart';
 
 List<AppIconGridItem> dashboardActions(BuildContext context) => [
   AppIconGridItem(
-    icon: Icons.wb_twilight_rounded,
+    icon: CupertinoIcons.sun_haze_fill,
     label: context.l10n.dashboardActionDailyDua,
     description: context.l10n.dashboardActionDailyDuaSub,
     accent: MyColors.tertiaryDark,
     onTap: () => pushDashboardPage(context, const DailyDuahView()),
   ),
   AppIconGridItem(
-    icon: Icons.bolt_rounded,
+    icon: CupertinoIcons.bolt_fill,
     label: context.l10n.dashboardActionPowerfulDua,
     description: context.l10n.dashboardActionPowerfulDuaSub,
     accent: MyColors.secondary,
     onTap: () => pushDashboardPage(context, const PowerfulDuahView()),
   ),
   AppIconGridItem(
-    icon: Icons.diamond_rounded,
+    icon: CupertinoIcons.circle_grid_hex_fill,
     label: context.l10n.dashboardActionNintyNineNames,
     description: context.l10n.dashboardActionNintyNineNamesSub,
     accent: MyColors.primaryLight,
     onTap: () => pushDashboardPage(context, const DuahNintyNineView()),
   ),
   AppIconGridItem(
-    icon: Icons.auto_awesome_rounded,
+    icon: CupertinoIcons.sparkles,
     label: context.l10n.dashboardActionSunnahDua,
     description: context.l10n.dashboardActionSunnahDuaSub,
     accent: MyColors.tertiaryDark,
@@ -43,21 +43,21 @@ List<AppIconGridItem> dashboardActions(BuildContext context) => [
         pushDashboardPage(context, const SunnahDuaView(showBackButton: true)),
   ),
   AppIconGridItem(
-    icon: Icons.calendar_month_rounded,
+    icon: CupertinoIcons.calendar,
     label: context.l10n.dashboardActionHijriCalendar,
     description: context.l10n.dashboardActionHijriCalendarSub,
     accent: MyColors.secondary,
     onTap: () => pushDashboardPage(context, const HijriCalendarView()),
   ),
   AppIconGridItem(
-    icon: Icons.explore_rounded,
+    icon: CupertinoIcons.compass_fill,
     label: context.l10n.dashboardActionQiblaCompass,
     description: context.l10n.dashboardActionQiblaCompassSub,
     accent: MyColors.primaryLight,
     onTap: () => pushDashboardPage(context, const CompassView()),
   ),
   AppIconGridItem(
-    icon: Icons.touch_app_rounded,
+    icon: CupertinoIcons.hand_draw_fill,
     label: context.l10n.dashboardActionTasbeeh,
     description: context.l10n.dashboardActionTasbeehSub,
     accent: MyColors.tertiaryDark,

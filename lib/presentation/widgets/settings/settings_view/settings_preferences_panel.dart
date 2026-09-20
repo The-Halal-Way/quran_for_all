@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 import '../../../../core/enums/app_language.dart';
 import '../../../../core/localization/l10n_extensions.dart';
@@ -31,14 +31,14 @@ class SettingsPreferencesPanel extends StatelessWidget {
   Widget build(BuildContext context) {
     return SettingsPanel(
       title: context.l10n.settingsReadingPreferencesTitle,
-      icon: Icons.tune_rounded,
+      icon: CupertinoIcons.slider_horizontal_3,
       accent: MyColors.tertiary,
       child: Column(
         children: [
           SettingsToggleRow(
             title: context.l10n.settingsShowPronunciationTitle,
             semanticDescription: context.l10n.settingsShowPronunciationSubtitle,
-            icon: Icons.record_voice_over_rounded,
+            icon: CupertinoIcons.speaker_2_fill,
             value: showPronunciation,
             onChanged: onShowPronunciationChanged,
           ),
@@ -46,7 +46,7 @@ class SettingsPreferencesPanel extends StatelessWidget {
           SettingsToggleRow(
             title: context.l10n.settingsShowTranslationsTitle,
             semanticDescription: context.l10n.settingsShowTranslationsSubtitle,
-            icon: Icons.translate_rounded,
+            icon: CupertinoIcons.textformat,
             value: showTranslation,
             onChanged: onShowTranslationChanged,
           ),
@@ -73,7 +73,7 @@ class SettingsPreferencesPanel extends StatelessWidget {
                       value: option,
                       selectedValue: language,
                       label: context.appLanguageLabel(option),
-                      icon: Icons.language_rounded,
+                      icon: CupertinoIcons.globe,
                       accent: MyColors.tertiary,
                       onSelected: onLanguageChanged,
                     ),

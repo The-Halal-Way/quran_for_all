@@ -2,7 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
-import '../../../core/theme/my_icons.dart';
+import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/my_colors.dart';
 import '../../../core/utils/app_responsive.dart';
 import '../dashboard/dashboard_view.dart';
 import '../prayer/prayer_view.dart';
@@ -40,104 +41,150 @@ class _HomeViewState extends State<HomeView> {
 
     return Scaffold(
       body: IndexedStack(index: _selectedIndex, children: _sections),
-      bottomNavigationBar: CupertinoTabBar(
-        currentIndex: _selectedIndex,
-        onTap: (index) => setState(() => _selectedIndex = index),
-        height: responsive.isTablet ? 56 : 52,
-        iconSize: iconSize,
-        activeColor: active,
-        inactiveColor: inactive,
-        backgroundColor: (isDark ? colors.surface : Colors.white).withValues(
-          alpha: 0.9,
+      bottomNavigationBar: SafeArea(
+        top: false,
+        minimum: EdgeInsets.fromLTRB(
+          responsive.isTablet ? AppSpacing.xxl : AppSpacing.md,
+          AppSpacing.xs,
+          responsive.isTablet ? AppSpacing.xxl : AppSpacing.md,
+          AppSpacing.sm,
         ),
-        border: Border(
-          top: BorderSide(
-            color: colors.outline.withValues(alpha: isDark ? 0.3 : 0.2),
-            width: 0.5,
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppRadius.xl),
+            border: Border.all(
+              color: colors.outline.withValues(alpha: isDark ? 0.42 : 0.3),
+              width: 0.7,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: colors.shadow.withValues(alpha: isDark ? 0.28 : 0.13),
+                blurRadius: 28,
+                offset: const Offset(0, 10),
+              ),
+            ],
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(AppRadius.xl),
+            child: CupertinoTabBar(
+              currentIndex: _selectedIndex,
+              onTap: (index) => setState(() => _selectedIndex = index),
+              height: responsive.isTablet ? 60 : 58,
+              iconSize: iconSize,
+              activeColor: active,
+              inactiveColor: inactive,
+              backgroundColor: (isDark ? colors.surfaceContainer : Colors.white)
+                  .withValues(alpha: 0.96),
+              border: const Border(),
+              items: [
+                BottomNavigationBarItem(
+                  icon: _PremiumTabIcon(
+                    icon: CupertinoIcons.house,
+                    color: inactive,
+                  ),
+                  activeIcon: const _PremiumTabIcon(
+                    icon: CupertinoIcons.house_fill,
+                    selected: true,
+                  ),
+                  label: l10n.homeDashboardTab,
+                ),
+                BottomNavigationBarItem(
+                  icon: _PremiumTabIcon(
+                    icon: Icons.mosque_outlined,
+                    color: inactive,
+                  ),
+                  activeIcon: const _PremiumTabIcon(
+                    icon: Icons.mosque_rounded,
+                    selected: true,
+                  ),
+                  label: l10n.homePrayerTab,
+                ),
+                BottomNavigationBarItem(
+                  icon: _PremiumTabIcon(
+                    icon: CupertinoIcons.book,
+                    color: inactive,
+                  ),
+                  activeIcon: const _PremiumTabIcon(
+                    icon: CupertinoIcons.book_fill,
+                    selected: true,
+                  ),
+                  label: l10n.homeQuranTab,
+                ),
+                BottomNavigationBarItem(
+                  icon: _PremiumTabIcon(
+                    icon: CupertinoIcons.sparkles,
+                    color: inactive,
+                  ),
+                  activeIcon: const _PremiumTabIcon(
+                    icon: CupertinoIcons.sparkles,
+                    selected: true,
+                  ),
+                  label: l10n.homeSunnahDuaTab,
+                ),
+                BottomNavigationBarItem(
+                  icon: _PremiumTabIcon(
+                    icon: CupertinoIcons.gear,
+                    color: inactive,
+                  ),
+                  activeIcon: const _PremiumTabIcon(
+                    icon: CupertinoIcons.gear_solid,
+                    selected: true,
+                  ),
+                  label: l10n.settingsTitle,
+                ),
+              ],
+            ),
           ),
         ),
-        items: [
-          BottomNavigationBarItem(
-            icon: _AssetTabIcon(
-              asset: MyIcons.homeIcon,
-              color: inactive,
-              size: iconSize,
-            ),
-            activeIcon: _AssetTabIcon(
-              asset: MyIcons.homeIconFill,
-              color: active,
-              size: iconSize,
-            ),
-            label: l10n.homeDashboardTab,
-          ),
-          BottomNavigationBarItem(
-            icon: _AssetTabIcon(
-              asset: MyIcons.prayerIcon,
-              color: inactive,
-              size: iconSize,
-            ),
-            activeIcon: _AssetTabIcon(
-              asset: MyIcons.prayerIconFill,
-              color: active,
-              size: iconSize,
-            ),
-            label: l10n.homePrayerTab,
-          ),
-          BottomNavigationBarItem(
-            icon: _AssetTabIcon(
-              asset: MyIcons.quranViewIcon,
-              color: inactive,
-              size: iconSize,
-            ),
-            activeIcon: _AssetTabIcon(
-              asset: MyIcons.quranViewIconFill,
-              color: active,
-              size: iconSize,
-            ),
-            label: l10n.homeQuranTab,
-          ),
-          BottomNavigationBarItem(
-            icon: _AssetTabIcon(
-              asset: MyIcons.duaIcon,
-              color: inactive,
-              size: iconSize,
-            ),
-            activeIcon: _AssetTabIcon(
-              asset: MyIcons.duaIconFill,
-              color: active,
-              size: iconSize,
-            ),
-            label: l10n.homeSunnahDuaTab,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.gear_alt, color: inactive),
-            activeIcon: Icon(CupertinoIcons.gear_solid, color: active),
-            label: l10n.settingsTitle,
-          ),
-        ],
       ),
     );
   }
 }
 
-class _AssetTabIcon extends StatelessWidget {
-  const _AssetTabIcon({
-    required this.asset,
-    required this.color,
-    required this.size,
+class _PremiumTabIcon extends StatelessWidget {
+  const _PremiumTabIcon({
+    required this.icon,
+    this.color,
+    this.selected = false,
   });
 
-  final String asset;
-  final Color color;
-  final double size;
+  final IconData icon;
+  final Color? color;
+  final bool selected;
 
   @override
-  Widget build(BuildContext context) => Image.asset(
-    asset,
-    width: size,
-    height: size,
-    color: color,
-    colorBlendMode: BlendMode.srcIn,
-    filterQuality: FilterQuality.high,
+  Widget build(BuildContext context) => AnimatedContainer(
+    duration: const Duration(milliseconds: 220),
+    curve: Curves.easeOutCubic,
+    width: selected ? 39 : 32,
+    height: 28,
+    decoration: BoxDecoration(
+      gradient: selected
+          ? LinearGradient(
+              colors: [
+                Theme.of(context).colorScheme.primary,
+                MyColors.primaryLight,
+              ],
+            )
+          : null,
+      borderRadius: BorderRadius.circular(AppRadius.full),
+      boxShadow: selected
+          ? [
+              BoxShadow(
+                color: Theme.of(
+                  context,
+                ).colorScheme.primary.withValues(alpha: 0.22),
+                blurRadius: 10,
+                offset: const Offset(0, 4),
+              ),
+            ]
+          : null,
+    ),
+    alignment: Alignment.center,
+    child: Icon(
+      icon,
+      size: selected ? 18 : 21,
+      color: selected ? Colors.white : color,
+    ),
   );
 }

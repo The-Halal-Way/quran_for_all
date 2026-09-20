@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart' show AppRadius;
@@ -50,7 +51,7 @@ class DashboardDailyReminderButton extends StatelessWidget {
                     child: const SizedBox.square(
                       dimension: 38,
                       child: Icon(
-                        Icons.notifications_none_rounded,
+                        CupertinoIcons.bell,
                         size: 23,
                         color: MyColors.secondary,
                       ),

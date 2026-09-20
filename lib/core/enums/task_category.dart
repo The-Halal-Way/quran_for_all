@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 /// Categories used to group items inside the Daily Tracker checklist.
@@ -18,13 +19,13 @@ extension TaskCategoryX on TaskCategory {
   /// Icon representing the category in the daily tracker UI.
   IconData get icon => switch (this) {
     TaskCategory.prayer => Icons.mosque_rounded,
-    TaskCategory.nafl => Icons.nights_stay_rounded,
-    TaskCategory.dua => Icons.auto_awesome_rounded,
-    TaskCategory.sunnah => Icons.star_rounded,
-    TaskCategory.quran => Icons.auto_stories_rounded,
-    TaskCategory.tasbeeh => Icons.touch_app_rounded,
-    TaskCategory.hadith => Icons.menu_book_rounded,
-    TaskCategory.custom => Icons.add_task_rounded,
+    TaskCategory.nafl => CupertinoIcons.moon_stars_fill,
+    TaskCategory.dua => CupertinoIcons.sparkles,
+    TaskCategory.sunnah => CupertinoIcons.heart_fill,
+    TaskCategory.quran => CupertinoIcons.book_fill,
+    TaskCategory.tasbeeh => CupertinoIcons.hand_draw_fill,
+    TaskCategory.hadith => CupertinoIcons.doc_text_fill,
+    TaskCategory.custom => CupertinoIcons.checkmark_alt_circle_fill,
   };
 
   static TaskCategory fromCode(String? code) {

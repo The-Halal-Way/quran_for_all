@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
@@ -50,7 +51,7 @@ class SplashBranding extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     const Icon(
-                      Icons.auto_awesome_rounded,
+                      CupertinoIcons.sparkles,
                       color: MyColors.tertiaryLight,
                       size: 15,
                     ),
@@ -128,7 +129,7 @@ class _SplashGatewayMark extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 7),
                   child: Icon(
-                    Icons.brightness_2_rounded,
+                    CupertinoIcons.moon_stars_fill,
                     size: 17,
                     color: MyColors.tertiaryLight,
                   ),
@@ -182,7 +183,7 @@ class _SplashGatewayMark extends StatelessWidget {
                     ],
                   ),
                   child: const Icon(
-                    Icons.auto_stories_rounded,
+                    CupertinoIcons.book_fill,
                     size: 40,
                     color: Colors.white,
                   ),

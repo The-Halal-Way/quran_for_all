@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
@@ -19,16 +19,20 @@ class SettingsHijriPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final choices = [
-      (-1, context.l10n.hijriAdjustmentMinusLabel, Icons.remove_rounded),
-      (0, context.l10n.hijriAdjustmentCalculatedLabel, Icons.check_rounded),
-      (1, context.l10n.hijriAdjustmentPlusLabel, Icons.add_rounded),
+      (-1, context.l10n.hijriAdjustmentMinusLabel, CupertinoIcons.minus),
+      (
+        0,
+        context.l10n.hijriAdjustmentCalculatedLabel,
+        CupertinoIcons.check_mark,
+      ),
+      (1, context.l10n.hijriAdjustmentPlusLabel, CupertinoIcons.add),
     ];
 
     return Semantics(
       label: context.l10n.settingsHijriAdjustmentSubtitle,
       child: SettingsPanel(
         title: context.l10n.settingsHijriCalendarTitle,
-        icon: Icons.calendar_month_rounded,
+        icon: CupertinoIcons.calendar,
         accent: MyColors.secondary,
         child: Row(
           children: [

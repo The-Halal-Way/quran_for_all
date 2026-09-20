@@ -23,6 +23,23 @@ class AppPremiumPageBackground extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
+          Positioned(
+            top: -210,
+            right: -170,
+            child: _AmbientGlow(
+              size: 430,
+              color: (isDark ? MyColors.primaryLight : MyColors.secondary)
+                  .withValues(alpha: isDark ? 0.11 : 0.075),
+            ),
+          ),
+          Positioned(
+            left: -180,
+            bottom: -230,
+            child: _AmbientGlow(
+              size: 460,
+              color: MyColors.tertiary.withValues(alpha: isDark ? 0.09 : 0.055),
+            ),
+          ),
           Positioned.fill(
             child: IgnorePointer(
               child: CustomPaint(painter: _PagePattern(isDark: isDark)),
@@ -35,6 +52,25 @@ class AppPremiumPageBackground extends StatelessWidget {
   }
 }
 
+class _AmbientGlow extends StatelessWidget {
+  const _AmbientGlow({required this.size, required this.color});
+
+  final double size;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) => IgnorePointer(
+    child: Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: RadialGradient(colors: [color, color.withValues(alpha: 0)]),
+      ),
+    ),
+  );
+}
+
 class _PagePattern extends CustomPainter {
   const _PagePattern({required this.isDark});
 
@@ -43,8 +79,8 @@ class _PagePattern extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = (isDark ? MyColors.tertiaryLight : MyColors.primaryLight)
-          .withValues(alpha: isDark ? 0.075 : 0.055)
+      ..color = (isDark ? MyColors.secondaryLight : MyColors.primaryLight)
+          .withValues(alpha: isDark ? 0.065 : 0.05)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1;
 

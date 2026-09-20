@@ -110,7 +110,11 @@ class AppTheme {
           onSecondary: const Color(0xFF342500),
           onTertiary: MyColors.textOnPrimary,
           onSurface: MyColors.textPrimary,
+          onSurfaceVariant: MyColors.textSecondary,
           outline: MyColors.divider,
+          outlineVariant: const Color(0xFFE8E1D5),
+          surfaceContainerLow: const Color(0xFFFAF7F0),
+          surfaceContainer: MyColors.surfaceContainer,
           surfaceContainerHighest: MyColors.surfaceContainer,
         );
 
@@ -128,10 +132,14 @@ class AppTheme {
         ).copyWith(
           tertiary: MyColors.tertiaryLight,
           onPrimary: MyColors.darkTextPrimary,
-          onSecondary: MyColors.darkTextPrimary,
-          onTertiary: MyColors.darkTextPrimary,
+          onSecondary: MyColors.primaryDark,
+          onTertiary: MyColors.primaryDark,
           onSurface: MyColors.darkTextPrimary,
+          onSurfaceVariant: MyColors.darkTextSecondary,
           outline: MyColors.darkDivider,
+          outlineVariant: const Color(0xFF29364D),
+          surfaceContainerLow: const Color(0xFF131D31),
+          surfaceContainer: MyColors.darkSurfaceContainer,
           surfaceContainerHighest: MyColors.darkSurfaceContainer,
         );
 
@@ -161,6 +169,7 @@ class AppTheme {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       hoverColor: colorScheme.primary.withValues(alpha: 0.04),
+      focusColor: colorScheme.secondary.withValues(alpha: 0.12),
     );
 
     final textTheme = _buildTextTheme(
@@ -206,8 +215,8 @@ class AppTheme {
         foregroundColor: colorScheme.onSurface,
         titleTextStyle: textTheme.titleMedium?.copyWith(
           color: colorScheme.onSurface,
-          fontWeight: FontWeight.w600,
-          letterSpacing: -0.2,
+          fontWeight: FontWeight.w700,
+          letterSpacing: -0.3,
         ),
         elevation: 0,
         scrolledUnderElevation: 0,
@@ -218,20 +227,20 @@ class AppTheme {
 
       // ── Cards ───────────────────────────────────────────────────────────
       cardTheme: CardThemeData(
-        elevation: 0,
+        elevation: isDark ? 0 : 1.2,
         margin: EdgeInsets.zero,
         color: cardColor,
         shadowColor: colorScheme.primary.withValues(
-          alpha: isDark ? 0.12 : 0.06,
+          alpha: isDark ? 0.18 : 0.14,
         ),
         surfaceTintColor: Colors.transparent,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
-            Radius.circular(metrics.radius(AppRadius.md)),
+            Radius.circular(metrics.radius(AppRadius.lg)),
           ),
           side: BorderSide(
-            color: colorScheme.outline.withValues(alpha: isDark ? 0.22 : 0.16),
-            width: metrics.stroke(0.7),
+            color: colorScheme.outline.withValues(alpha: isDark ? 0.34 : 0.3),
+            width: metrics.stroke(0.65),
           ),
         ),
       ),
@@ -275,12 +284,16 @@ class AppTheme {
 
       // ── Icons ───────────────────────────────────────────────────────────
       iconTheme: IconThemeData(
-        color: colorScheme.primary,
+        color: colorScheme.onSurfaceVariant,
         size: metrics.icon(21),
       ),
 
       iconButtonTheme: IconButtonThemeData(
         style: IconButton.styleFrom(
+          foregroundColor: colorScheme.onSurfaceVariant,
+          backgroundColor: colorScheme.primary.withValues(
+            alpha: isDark ? 0.16 : 0.055,
+          ),
           minimumSize: Size.square(metrics.size(44)),
           tapTargetSize: MaterialTapTargetSize.padded,
           shape: const CircleBorder(),
@@ -378,7 +391,8 @@ class AppTheme {
         style: ElevatedButton.styleFrom(
           backgroundColor: cardColor,
           foregroundColor: colorScheme.primary,
-          elevation: 0,
+          elevation: isDark ? 0 : 1,
+          shadowColor: colorScheme.primary.withValues(alpha: 0.16),
           textStyle: textTheme.labelLarge?.copyWith(
             fontWeight: FontWeight.w700,
           ),
@@ -478,9 +492,10 @@ class AppTheme {
       // ── SnackBar ────────────────────────────────────────────────────────
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
-        elevation: 0,
+        elevation: 10,
+        insetPadding: EdgeInsets.all(metrics.space(AppSpacing.lg)),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(metrics.radius(AppRadius.base)),
+          borderRadius: BorderRadius.circular(metrics.radius(AppRadius.lg)),
         ),
         backgroundColor: isDark ? MyColors.darkCardFill : MyColors.textPrimary,
       ),
@@ -489,10 +504,11 @@ class AppTheme {
       dialogTheme: DialogThemeData(
         backgroundColor: cardColor,
         surfaceTintColor: Colors.transparent,
-        elevation: 0,
-        shadowColor: colorScheme.primary.withValues(alpha: 0.12),
+        elevation: 18,
+        shadowColor: colorScheme.primary.withValues(alpha: 0.2),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(metrics.radius(AppRadius.base)),
+          borderRadius: BorderRadius.circular(metrics.radius(AppRadius.xl)),
+          side: BorderSide(color: colorScheme.outline.withValues(alpha: 0.28)),
         ),
       ),
 
@@ -500,8 +516,8 @@ class AppTheme {
       bottomSheetTheme: BottomSheetThemeData(
         backgroundColor: cardColor,
         surfaceTintColor: Colors.transparent,
-        elevation: 0,
-        shadowColor: colorScheme.primary.withValues(alpha: 0.12),
+        elevation: 18,
+        shadowColor: colorScheme.primary.withValues(alpha: 0.22),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
             top: Radius.circular(metrics.radius(AppRadius.xl)),

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/my_colors.dart';
@@ -48,7 +49,7 @@ class QuranViewModel {
         title: l10n.quranHubReadTitle,
         detail: readDetail,
         iconAsset: MyIcons.quranViewIcon,
-        icon: Icons.auto_stories_rounded,
+        icon: CupertinoIcons.book_fill,
         accent: MyColors.secondary,
         secondaryAccent: MyColors.primaryLight,
       ),
@@ -71,21 +72,21 @@ class QuranViewModel {
         title: l10n.quranHubHadithBestTitle,
         body: l10n.quranHubHadithBestBody,
         source: l10n.quranHubHadithBestSource,
-        icon: Icons.workspace_premium_rounded,
+        icon: CupertinoIcons.rosette,
         accent: MyColors.secondary,
       ),
       QuranHubHadith(
         title: l10n.quranHubHadithIntercessorTitle,
         body: l10n.quranHubHadithIntercessorBody,
         source: l10n.quranHubHadithIntercessorSource,
-        icon: Icons.brightness_7_rounded,
+        icon: CupertinoIcons.sun_max_fill,
         accent: MyColors.primaryLight,
       ),
       QuranHubHadith(
         title: l10n.quranHubHadithEffortTitle,
         body: l10n.quranHubHadithEffortBody,
         source: l10n.quranHubHadithEffortSource,
-        icon: Icons.diamond_rounded,
+        icon: CupertinoIcons.circle_grid_hex_fill,
         accent: MyColors.tertiary,
       ),
     ];

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:provider/provider.dart';
@@ -40,7 +41,7 @@ class GlobalAudioControlBar extends StatelessWidget {
             value: vm.progress,
             minHeight: 3,
             backgroundColor: onPrimary.withValues(alpha: 0.25),
-            valueColor: AlwaysStoppedAnimation<Color>(onPrimary),
+            valueColor: AlwaysStoppedAnimation<Color>(colorScheme.secondary),
           ),
 
           // ── Content row ──────────────────────────────────────────────
@@ -55,7 +56,7 @@ class GlobalAudioControlBar extends StatelessWidget {
                     // ── Pulsing / paused icon ──────────────────────────
                     vm.isPaused
                         ? Icon(
-                            Icons.music_note_rounded,
+                            CupertinoIcons.music_note_2,
                             color: onPrimary,
                             size: leadingIconSize,
                           )
@@ -96,8 +97,8 @@ class GlobalAudioControlBar extends StatelessWidget {
                     IconButton(
                       icon: Icon(
                         vm.isPaused
-                            ? Icons.play_circle_rounded
-                            : Icons.pause_circle_rounded,
+                            ? CupertinoIcons.play_circle_fill
+                            : CupertinoIcons.pause_circle_fill,
                         color: onPrimary,
                         size: actionIconSize,
                       ),
@@ -109,7 +110,7 @@ class GlobalAudioControlBar extends StatelessWidget {
                     // ── Stop button ────────────────────────────────────
                     IconButton(
                       icon: Icon(
-                        Icons.stop_circle_rounded,
+                        CupertinoIcons.stop_circle_fill,
                         color: onPrimary,
                         size: actionIconSize,
                       ),
@@ -165,7 +166,7 @@ class _PulsingIconState extends State<_PulsingIcon>
   Widget build(BuildContext context) {
     return FadeTransition(
       opacity: _opacity,
-      child: Icon(Icons.music_note_rounded, color: widget.color, size: 22),
+      child: Icon(CupertinoIcons.music_note_2, color: widget.color, size: 22),
     );
   }
 }

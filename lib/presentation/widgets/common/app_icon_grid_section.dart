@@ -146,29 +146,71 @@ class _AppIconGridTile extends StatelessWidget {
                     width: surfaceSize,
                     height: surfaceSize,
                     decoration: BoxDecoration(
-                      color: isDark
-                          ? colors.surfaceContainerHighest
-                          : colors.surface,
+                      gradient: LinearGradient(
+                        colors: [
+                          Color.lerp(
+                            isDark
+                                ? colors.surfaceContainerHighest
+                                : colors.surface,
+                            accent,
+                            isDark ? 0.16 : 0.09,
+                          )!,
+                          isDark ? colors.surfaceContainerLow : colors.surface,
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
                       borderRadius: BorderRadius.circular(AppRadius.lg),
                       border: Border.all(
-                        color: colors.outlineVariant.withValues(
-                          alpha: isDark ? 0.34 : 0.28,
-                        ),
+                        color: Color.lerp(
+                          colors.outlineVariant,
+                          accent,
+                          isDark ? 0.34 : 0.24,
+                        )!,
+                        width: 0.8,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: colors.shadow.withValues(
-                            alpha: isDark ? 0.20 : 0.08,
-                          ),
-                          blurRadius: 18,
-                          offset: const Offset(0, 7),
+                          color: accent.withValues(alpha: isDark ? 0.18 : 0.12),
+                          blurRadius: 22,
+                          offset: const Offset(0, 9),
                         ),
                       ],
                     ),
-                    child: Icon(
-                      item.icon,
-                      color: accent,
-                      size: surfaceSize * 0.43,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Container(
+                          width: surfaceSize * 0.68,
+                          height: surfaceSize * 0.68,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: accent.withValues(
+                              alpha: isDark ? 0.13 : 0.075,
+                            ),
+                            border: Border.all(
+                              color: accent.withValues(alpha: 0.14),
+                            ),
+                          ),
+                        ),
+                        Icon(
+                          item.icon,
+                          color: accent,
+                          size: surfaceSize * 0.39,
+                        ),
+                        PositionedDirectional(
+                          top: 9,
+                          end: 10,
+                          child: Container(
+                            width: 5,
+                            height: 5,
+                            decoration: BoxDecoration(
+                              color: accent.withValues(alpha: 0.72),
+                              shape: BoxShape.circle,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: AppSpacing.sm),

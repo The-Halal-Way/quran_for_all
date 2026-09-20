@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
@@ -22,19 +23,23 @@ class SettingsThemePanel extends StatelessWidget {
       (
         ThemeMode.system,
         context.l10n.settingsThemeSystem,
-        Icons.brightness_auto_rounded,
+        CupertinoIcons.circle_lefthalf_fill,
       ),
       (
         ThemeMode.light,
         context.l10n.settingsThemeLight,
-        Icons.light_mode_rounded,
+        CupertinoIcons.sun_max_fill,
       ),
-      (ThemeMode.dark, context.l10n.settingsThemeDark, Icons.dark_mode_rounded),
+      (
+        ThemeMode.dark,
+        context.l10n.settingsThemeDark,
+        CupertinoIcons.moon_stars_fill,
+      ),
     ];
 
     return SettingsPanel(
       title: context.l10n.settingsAppearanceTitle,
-      icon: Icons.palette_outlined,
+      icon: CupertinoIcons.paintbrush_fill,
       accent: MyColors.primaryLight,
       child: Row(
         children: [

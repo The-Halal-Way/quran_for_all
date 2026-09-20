@@ -33,6 +33,13 @@ class SettingsPanel extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(AppRadius.xl),
         border: Border.all(color: accent.withValues(alpha: 0.18)),
+        boxShadow: [
+          BoxShadow(
+            color: accent.withValues(alpha: isDark ? 0.08 : 0.07),
+            blurRadius: 24,
+            offset: const Offset(0, 10),
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,13 +47,21 @@ class SettingsPanel extends StatelessWidget {
           Row(
             children: [
               Container(
-                width: 36,
-                height: 36,
+                width: 40,
+                height: 40,
                 decoration: BoxDecoration(
-                  color: accent.withValues(alpha: 0.13),
-                  borderRadius: BorderRadius.circular(AppRadius.sm),
+                  gradient: LinearGradient(
+                    colors: [
+                      accent.withValues(alpha: 0.2),
+                      accent.withValues(alpha: 0.07),
+                    ],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.circular(AppRadius.base),
+                  border: Border.all(color: accent.withValues(alpha: 0.18)),
                 ),
-                child: Icon(icon, color: accent, size: 19),
+                child: Icon(icon, color: accent, size: 20),
               ),
               const SizedBox(width: AppSpacing.md),
               Expanded(
