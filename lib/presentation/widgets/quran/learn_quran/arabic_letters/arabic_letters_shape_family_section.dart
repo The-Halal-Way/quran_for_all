@@ -46,6 +46,7 @@ class _FamilyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final displayColor = arabicLettersDisplayColor(context);
 
     return Container(
       width: double.infinity,
@@ -78,17 +79,21 @@ class _FamilyCard extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(AppRadius.compact),
-                    color: Colors.white,
+                    color: colorScheme.surface,
                     border: Border.all(
                       color: colorScheme.outline.withValues(alpha: 0.2),
                     ),
                   ),
                   child: Text(
                     letter,
-                    style: AppTheme.learnArabicLetter(
-                      context,
-                      fontSize: AppTheme.scaledFontSize(context, 29),
-                    ).copyWith(fontWeight: AppTheme.weightBold),
+                    style:
+                        AppTheme.learnArabicLetter(
+                          context,
+                          fontSize: AppTheme.scaledFontSize(context, 29),
+                        ).copyWith(
+                          color: displayColor,
+                          fontWeight: AppTheme.weightBold,
+                        ),
                   ),
                 ),
             ],

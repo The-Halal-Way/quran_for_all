@@ -72,6 +72,7 @@ class _ArticulationZoneCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = AppTheme.text(context);
+    final displayColor = arabicLettersDisplayColor(context);
 
     return Container(
       width: double.infinity,
@@ -104,16 +105,20 @@ class _ArticulationZoneCard extends StatelessWidget {
               Expanded(
                 child: Text(
                   guide.letters,
-                  style: AppTheme.learnArabicWord(
-                    context,
-                    fontSize: AppTheme.scaledFontSize(context, 27),
-                  ).copyWith(fontWeight: AppTheme.weightBold),
+                  style:
+                      AppTheme.learnArabicWord(
+                        context,
+                        fontSize: AppTheme.scaledFontSize(context, 27),
+                      ).copyWith(
+                        color: displayColor,
+                        fontWeight: AppTheme.weightBold,
+                      ),
                 ),
               ),
               PronunciationButton(
                 arabicText: guide.letters,
                 size: 20,
-                color: color,
+                color: displayColor,
               ),
             ],
           ),

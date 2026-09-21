@@ -76,6 +76,7 @@ class _HarakahPatternCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final displayColor = arabicLettersDisplayColor(context);
 
     return Container(
       width: double.infinity,
@@ -98,7 +99,7 @@ class _HarakahPatternCard extends StatelessWidget {
             style: AppTheme.learnArabicLetter(
               context,
               fontSize: AppTheme.scaledFontSize(context, 30),
-            ).copyWith(color: colorScheme.primary),
+            ).copyWith(color: displayColor),
           ),
           const SizedBox(height: 8),
           Wrap(
@@ -126,6 +127,7 @@ class _HarakahValueChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final displayColor = arabicLettersDisplayColor(context);
 
     return Container(
       constraints: const BoxConstraints(minWidth: 68),
@@ -151,15 +153,11 @@ class _HarakahValueChip extends StatelessWidget {
                   context,
                   fontSize: AppTheme.scaledFontSize(context, 26),
                 ).copyWith(
-                  color: colorScheme.primary,
+                  color: displayColor,
                   fontWeight: AppTheme.weightExtraBold,
                 ),
           ),
-          PronunciationButton(
-            arabicText: value,
-            size: 16,
-            color: colorScheme.primary,
-          ),
+          PronunciationButton(arabicText: value, size: 16, color: displayColor),
         ],
       ),
     );

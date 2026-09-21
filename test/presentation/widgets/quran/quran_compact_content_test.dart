@@ -9,7 +9,9 @@ import 'package:quran_for_all/data/models/surah_model.dart';
 import 'package:quran_for_all/domain/repositories/settings_repository.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
+import 'package:quran_for_all/presentation/widgets/quran/learn_quran/arabic_letters/arabic_letters_shape_family_section.dart';
 import 'package:quran_for_all/presentation/widgets/quran/learn_quran/learn_header_card.dart';
+import 'package:quran_for_all/presentation/widgets/quran/learn_quran/learn_lesson_tile.dart';
 import 'package:quran_for_all/presentation/widgets/quran/learn_quran/learn_module_card.dart';
 import 'package:quran_for_all/presentation/widgets/quran/learn_quran/learn_next_lesson_card.dart';
 import 'package:quran_for_all/presentation/widgets/quran/read_quran/home/continue_reading_card.dart';
@@ -104,6 +106,77 @@ void main() {
       findsNothing,
     );
     expect(find.byType(LinearProgressIndicator), findsNWidgets(2));
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('Arabic letter samples retain contrast in dark mode', (
+    tester,
+  ) async {
+    await _setCompactSurface(tester);
+    final settings = await _settingsViewModel(AppLanguage.english);
+    addTearDown(settings.dispose);
+
+    await tester.pumpWidget(
+      _TestApp(
+        settings: settings,
+        locale: const Locale('en'),
+        brightness: Brightness.dark,
+        child: const ArabicLettersShapeFamilySection(),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    final letterFinder = find.text('ب').first;
+    final letter = tester.widget<Text>(letterFinder);
+    final darkScheme = AppTheme.darkTheme.colorScheme;
+
+    expect(letter.style?.color, darkScheme.onSurface);
+
+    final letterContainers = tester.widgetList<Container>(
+      find.ancestor(of: letterFinder, matching: find.byType(Container)),
+    );
+    expect(
+      letterContainers.any(
+        (container) =>
+            container.decoration is BoxDecoration &&
+            (container.decoration! as BoxDecoration).color ==
+                darkScheme.surface,
+      ),
+      isTrue,
+    );
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('lesson metadata remains readable in dark mode', (tester) async {
+    await _setCompactSurface(tester);
+    final settings = await _settingsViewModel(AppLanguage.english);
+    addTearDown(settings.dispose);
+    final lesson = LearnQuranContent.modules.first.lessons[4];
+
+    await tester.pumpWidget(
+      _TestApp(
+        settings: settings,
+        locale: const Locale('en'),
+        brightness: Brightness.dark,
+        child: LearnLessonTile(
+          lesson: lesson,
+          isCompleted: false,
+          isAudioPlaying: false,
+          onCompletionChanged: (_) {},
+          onAudioTap: () {},
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    final duration = tester.widget<Text>(
+      find.text('${lesson.durationMinutes} min'),
+    );
+    final audioGuided = tester.widget<Text>(find.text('Audio guided'));
+    final expectedColor = AppTheme.darkTheme.colorScheme.onSurfaceVariant;
+
+    expect(duration.style?.color, expectedColor);
+    expect(audioGuided.style?.color, expectedColor);
     expect(tester.takeException(), isNull);
   });
 }

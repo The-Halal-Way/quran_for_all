@@ -47,6 +47,7 @@ class _SunnahDuaSectionSearchState extends State<SunnahDuaSectionSearch> {
       textInputAction: TextInputAction.search,
       onSubmitted: (_) => FocusScope.of(context).unfocus(),
       style: AppTheme.text(context).bodyMedium,
+      onTapUpOutside: (event) => FocusScope.of(context).unfocus(),
       decoration: InputDecoration(
         hintText: widget.hint,
         hintStyle: AppTheme.text(

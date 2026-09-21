@@ -4,6 +4,13 @@ import 'package:quran_for_all/core/theme/app_theme.dart';
 import '../../../../../core/localization/l10n_extensions.dart';
 import '../../../../../core/theme/app_spacing.dart';
 
+Color arabicLettersDisplayColor(BuildContext context) {
+  final theme = Theme.of(context);
+  return theme.brightness == Brightness.dark
+      ? theme.colorScheme.onSurface
+      : theme.colorScheme.primary;
+}
+
 class ArabicLettersSectionCard extends StatelessWidget {
   const ArabicLettersSectionCard({
     super.key,

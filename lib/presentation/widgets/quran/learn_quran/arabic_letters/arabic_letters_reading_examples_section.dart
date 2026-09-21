@@ -46,6 +46,7 @@ class _ReadingExampleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final displayColor = arabicLettersDisplayColor(context);
 
     return Container(
       width: double.infinity,
@@ -68,7 +69,7 @@ class _ReadingExampleCard extends StatelessWidget {
                         context,
                         fontSize: AppTheme.scaledFontSize(context, 32),
                       ).copyWith(
-                        color: colorScheme.primary,
+                        color: displayColor,
                         fontWeight: AppTheme.weightExtraBold,
                       ),
                 ),
@@ -88,7 +89,7 @@ class _ReadingExampleCard extends StatelessWidget {
           PronunciationButton(
             arabicText: example.arabic,
             size: 22,
-            color: colorScheme.primary,
+            color: displayColor,
           ),
         ],
       ),

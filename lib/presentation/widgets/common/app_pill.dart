@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 
-import '../../../core/theme/my_colors.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/utils/app_responsive.dart';
 
@@ -20,7 +19,9 @@ class AppPill extends StatelessWidget {
     this.onLight = true,
   });
 
-  /// Pill on a light surface (default). Text/icon inherit [color] or primary.
+  /// Pill on a standard themed surface.
+  ///
+  /// Text, icons, and accents adapt to the active light or dark theme.
   const AppPill.surface({
     super.key,
     required this.label,
@@ -50,14 +51,22 @@ class AppPill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final responsive = AppResponsive.of(context);
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+    final isDark = theme.brightness == Brightness.dark;
     final Color fg;
     final Color bg;
     final Color? border;
 
     if (onLight) {
-      fg = color ?? MyColors.primary;
-      bg = backgroundColor ?? fg.withValues(alpha: 0.10);
-      border = borderColor;
+      final requestedColor = color;
+      fg = requestedColor == null
+          ? (isDark ? colorScheme.onSurfaceVariant : colorScheme.primary)
+          : isDark
+          ? Color.lerp(requestedColor, colorScheme.onSurface, 0.32)!
+          : requestedColor;
+      bg = backgroundColor ?? fg.withValues(alpha: isDark ? 0.14 : 0.10);
+      border = borderColor ?? (isDark ? fg.withValues(alpha: 0.18) : null);
     } else {
       fg = color ?? Colors.white;
       bg = backgroundColor ?? Colors.white.withValues(alpha: 0.16);

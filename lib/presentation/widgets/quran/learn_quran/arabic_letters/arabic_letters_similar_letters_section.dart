@@ -47,6 +47,7 @@ class _ComparisonCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final displayColor = arabicLettersDisplayColor(context);
 
     return Container(
       width: double.infinity,
@@ -68,7 +69,7 @@ class _ComparisonCard extends StatelessWidget {
                         context,
                         fontSize: AppTheme.scaledFontSize(context, 28),
                       ).copyWith(
-                        color: colorScheme.primary,
+                        color: displayColor,
                         fontWeight: AppTheme.weightExtraBold,
                       ),
                 ),
@@ -76,7 +77,7 @@ class _ComparisonCard extends StatelessWidget {
               PronunciationButton(
                 arabicText: guide.practice,
                 size: 20,
-                color: colorScheme.primary,
+                color: displayColor,
               ),
             ],
           ),

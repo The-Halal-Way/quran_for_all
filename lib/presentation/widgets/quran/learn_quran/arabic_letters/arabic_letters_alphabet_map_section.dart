@@ -53,6 +53,7 @@ class _AlphabetTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final displayColor = arabicLettersDisplayColor(context);
 
     return Container(
       padding: const EdgeInsets.fromLTRB(8, 8, 8, 9),
@@ -70,16 +71,15 @@ class _AlphabetTile extends StatelessWidget {
               PronunciationButton(
                 arabicText: letter.symbol,
                 size: 18,
-                color: colorScheme.primary,
+                color: displayColor,
               ),
             ],
           ),
           Text(
             letter.symbol,
-            style: AppTheme.learnArabicLetter(context).copyWith(
-              fontWeight: AppTheme.weightBold,
-              color: colorScheme.primary,
-            ),
+            style: AppTheme.learnArabicLetter(
+              context,
+            ).copyWith(fontWeight: AppTheme.weightBold, color: displayColor),
           ),
           const SizedBox(height: 2),
           Text(
