@@ -26,28 +26,17 @@ class _JumpSheet extends StatefulWidget {
 class _JumpSheetState extends State<_JumpSheet> {
   String _query = '';
 
-  // Intro is index -1; hadiths are 0-based indices
-  // We show intro as the first item, then all hadiths
-  List<_JumpItem> get _allItems {
-    final intro = _JumpItem(
-      index: -1,
-      arabic: 'مقدمة',
-      label: widget.isBangla ? 'ভূমিকা' : 'Introduction',
-      sub: widget.isBangla ? 'গ্রন্থের ভূমিকা' : 'Preface of the book',
+  List<_JumpItem> get _allItems => widget.book.hadiths.asMap().entries.map((e) {
+    final h = e.value;
+    return _JumpItem(
+      index: e.key,
+      arabic: h.arabic.split('\n').first,
+      label: '${widget.isBangla ? 'হাদিস' : 'Hadith'} ${h.id}',
+      sub: widget.isBangla
+          ? h.bangla.split('\n').first
+          : h.english.split('\n').first,
     );
-    final hadiths = widget.book.hadiths.asMap().entries.map((e) {
-      final h = e.value;
-      return _JumpItem(
-        index: e.key,
-        arabic: h.arabic.split('\n').first,
-        label: '${widget.isBangla ? 'হাদিস' : 'Hadith'} ${h.id}',
-        sub: widget.isBangla
-            ? h.bangla.split('\n').first
-            : h.english.split('\n').first,
-      );
-    }).toList();
-    return [intro, ...hadiths];
-  }
+  }).toList();
 
   List<_JumpItem> get _filtered {
     if (_query.isEmpty) return _allItems;
@@ -56,8 +45,7 @@ class _JumpSheetState extends State<_JumpSheet> {
       return item.label.toLowerCase().contains(q) ||
           item.sub.toLowerCase().contains(q) ||
           item.arabic.contains(q) ||
-          (item.index >= 0 &&
-              '${widget.book.hadiths[item.index].id}'.contains(q));
+          '${widget.book.hadiths[item.index].id}'.contains(q);
     }).toList();
   }
 
@@ -212,7 +200,7 @@ class _JumpSheetState extends State<_JumpSheet> {
 }
 
 class _JumpItem {
-  final int index; // -1 = intro
+  final int index;
   final String arabic;
   final String label;
   final String sub;
@@ -243,7 +231,6 @@ class _JumpListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
-    final isIntro = item.index == -1;
 
     return InkWell(
       onTap: onTap,
@@ -259,25 +246,17 @@ class _JumpListTile extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppRadius.small),
                 color: MyColors.primaryLight.withValues(alpha: 0.1),
                 border: Border.all(
-                  color: isIntro
-                      ? MyColors.primaryLight.withValues(alpha: 0.25)
-                      : MyColors.primaryLight.withValues(alpha: 0.2),
+                  color: MyColors.primaryLight.withValues(alpha: 0.2),
                   width: 0.8,
                 ),
               ),
               alignment: Alignment.center,
-              child: isIntro
-                  ? Icon(
-                      Icons.menu_book_rounded,
-                      size: 16,
-                      color: MyColors.primaryLight,
-                    )
-                  : Text(
-                      '${item.index + 1}',
-                      style: text.hadithJumpNumber.copyWith(
-                        color: MyColors.primaryLight,
-                      ),
-                    ),
+              child: Text(
+                '${item.index + 1}',
+                style: text.hadithJumpNumber.copyWith(
+                  color: MyColors.primaryLight,
+                ),
+              ),
             ),
             const SizedBox(width: 12),
             Expanded(

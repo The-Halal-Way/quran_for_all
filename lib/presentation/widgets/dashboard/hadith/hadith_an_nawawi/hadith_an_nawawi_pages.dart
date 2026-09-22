@@ -1,121 +1,5 @@
 part of '../../../../views/dashboard/hadith/hadith_an_nawawi_view.dart';
 
-class _IntroPage extends StatelessWidget {
-  final HadithBook book;
-  final bool isBangla;
-  final bool isDark;
-  final Color cardBg, textMain, textSub, textHint, divider;
-
-  const _IntroPage({
-    required this.book,
-    required this.isBangla,
-    required this.isDark,
-    required this.cardBg,
-    required this.textMain,
-    required this.textSub,
-    required this.textHint,
-    required this.divider,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final appText = AppTheme.text(context);
-    final introductionText = isBangla
-        ? book.introduction.bangla
-        : book.introduction.english;
-
-    return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-            padding: const EdgeInsets.all(AppSpacing.lg),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  MyColors.primaryLight.withValues(alpha: isDark ? 0.24 : 0.10),
-                  MyColors.primary.withValues(alpha: isDark ? 0.22 : 0.055),
-                ],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
-              borderRadius: BorderRadius.circular(AppRadius.lg),
-              border: Border.all(
-                color: MyColors.primaryLight.withValues(alpha: 0.20),
-              ),
-            ),
-            child: Row(
-              children: [
-                _ArabicOrnament(color: MyColors.primaryLight, size: 52),
-                const SizedBox(width: AppSpacing.lg),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'الأربعون النووية',
-                        style: appText.hadithArabicHeader.copyWith(
-                          color: MyColors.primaryLight,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        isBangla
-                            ? 'ইমাম আন-নওয়াওয়ী (রহ.) • ${book.hadiths.length} হাদিস'
-                            : 'Imam An-Nawawi (RA) • ${book.hadiths.length} hadiths',
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: appText.bodySmall.copyWith(color: textSub),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 20),
-          _GlassCard(
-            isDark: isDark,
-            cardBg: cardBg,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Container(
-                      width: 4,
-                      height: 20,
-                      decoration: BoxDecoration(
-                        color: MyColors.tertiary,
-                        borderRadius: BorderRadius.circular(AppRadius.xxs),
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    Text(
-                      isBangla ? 'ভূমিকা' : 'Introduction',
-                      style: appText.hadithSectionTitle.copyWith(
-                        color: textMain,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  introductionText,
-                  style: appText
-                      .hadithParagraph(isBangla: isBangla)
-                      .copyWith(color: textSub),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 // ─────────────────────────────────────────────────────────────────────────────
 // HADITH PAGE
 // ─────────────────────────────────────────────────────────────────────────────
@@ -144,51 +28,55 @@ class _HadithPage extends StatelessWidget {
     final appText = AppTheme.text(context);
     final translationText = isBangla ? hadith.bangla : hadith.english;
 
-    return SingleChildScrollView(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          // Arabic text card — the star of the show
-          _ArabicCard(arabic: hadith.arabic, isDark: isDark, cardBg: cardBg),
+    return AppPageScrollbar(
+      thumbVisibility: true,
+      builder: (context, controller) => SingleChildScrollView(
+        controller: controller,
+        padding: const EdgeInsets.fromLTRB(16, 20, 24, 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // Arabic text card — the star of the show
+            _ArabicCard(arabic: hadith.arabic, isDark: isDark, cardBg: cardBg),
 
-          const SizedBox(height: 16),
+            const SizedBox(height: 16),
 
-          // Translation card
-          _GlassCard(
-            isDark: isDark,
-            cardBg: cardBg,
-            accentColor: MyColors.tertiary,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Icon(
-                      Icons.translate_rounded,
-                      size: 14,
-                      color: MyColors.tertiary,
-                    ),
-                    const SizedBox(width: 6),
-                    Text(
-                      isBangla ? 'অনুবাদ' : 'Translation',
-                      style: appText.hadithTranslationLabel.copyWith(
+            // Translation card
+            _GlassCard(
+              isDark: isDark,
+              cardBg: cardBg,
+              accentColor: MyColors.tertiary,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.translate_rounded,
+                        size: 14,
                         color: MyColors.tertiary,
                       ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  translationText,
-                  style: appText
-                      .hadithParagraph(isBangla: isBangla)
-                      .copyWith(color: textSub),
-                ),
-              ],
+                      const SizedBox(width: 6),
+                      Text(
+                        isBangla ? 'অনুবাদ' : 'Translation',
+                        style: appText.hadithTranslationLabel.copyWith(
+                          color: MyColors.tertiary,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    translationText,
+                    style: appText
+                        .hadithParagraph(isBangla: isBangla)
+                        .copyWith(color: textSub),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

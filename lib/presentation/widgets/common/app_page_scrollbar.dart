@@ -5,11 +5,15 @@ class AppPageScrollbar extends StatefulWidget {
     super.key,
     required this.builder,
     this.interactive = true,
+    this.thumbVisibility,
+    this.trackVisibility,
   });
 
   final Widget Function(BuildContext context, ScrollController controller)
   builder;
   final bool interactive;
+  final bool? thumbVisibility;
+  final bool? trackVisibility;
 
   @override
   State<AppPageScrollbar> createState() => _AppPageScrollbarState();
@@ -37,8 +41,8 @@ class _AppPageScrollbarState extends State<AppPageScrollbar> {
     return Scrollbar(
       controller: _controller,
       interactive: widget.interactive,
-      thumbVisibility: desktop,
-      trackVisibility: desktop,
+      thumbVisibility: widget.thumbVisibility ?? desktop,
+      trackVisibility: widget.trackVisibility ?? desktop,
       child: widget.builder(context, _controller),
     );
   }

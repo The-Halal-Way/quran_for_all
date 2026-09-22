@@ -9,6 +9,7 @@ import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_page_scrollbar.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_premium_page_background.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/hadith/common/hadith_collection_palette.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/hadith/common/hadith_reader_bottom_bar.dart';
@@ -32,7 +33,7 @@ class HadithAnNawawiView extends StatefulWidget {
 class _HadithAnNawawiViewState extends State<HadithAnNawawiView> {
   HadithBook? _book;
   bool _loading = true;
-  int _currentIndex = -1;
+  int _currentIndex = 0;
 
   late final PageController _pageController;
   final _jumpController = TextEditingController();
@@ -73,7 +74,7 @@ class _HadithAnNawawiViewState extends State<HadithAnNawawiView> {
   void _goToIndex(int index) {
     setState(() => _currentIndex = index);
     _pageController.animateToPage(
-      index + 1,
+      index,
       duration: const Duration(milliseconds: 420),
       curve: Curves.easeInOutCubic,
     );
@@ -126,9 +127,8 @@ class _HadithAnNawawiViewState extends State<HadithAnNawawiView> {
   ) {
     final responsive = AppResponsive.of(context);
     final isDark = _scheme.brightness == Brightness.dark;
-    final progressLabel = _currentIndex < 0
-        ? (isBangla ? 'ভূমিকা' : 'Introduction')
-        : '${isBangla ? 'হাদিস' : 'Hadith'} ${book.hadiths[_currentIndex].id}  •  ${_currentIndex + 1}/${book.hadiths.length}';
+    final progressLabel =
+        '${isBangla ? 'হাদিস' : 'Hadith'} ${book.hadiths[_currentIndex].id}  •  ${_currentIndex + 1}/${book.hadiths.length}';
 
     return Column(
       children: [
@@ -150,31 +150,20 @@ class _HadithAnNawawiViewState extends State<HadithAnNawawiView> {
         Expanded(
           child: PageView.builder(
             controller: _pageController,
-            onPageChanged: (page) => setState(() => _currentIndex = page - 1),
-            itemCount: book.hadiths.length + 1,
+            onPageChanged: (page) => setState(() => _currentIndex = page),
+            itemCount: book.hadiths.length,
             itemBuilder: (context, page) {
-              final child = page == 0
-                  ? _IntroPage(
-                      book: book,
-                      isBangla: isBangla,
-                      isDark: isDark,
-                      cardBg: isDark ? _cardBackground : Colors.white,
-                      textMain: _textMain,
-                      textSub: _textSub,
-                      textHint: _textHint,
-                      divider: _divider,
-                    )
-                  : _HadithPage(
-                      hadith: book.hadiths[page - 1],
-                      isBangla: isBangla,
-                      isDark: isDark,
-                      cardBg: isDark ? _cardBackground : Colors.white,
-                      textMain: _textMain,
-                      textSub: _textSub,
-                      textHint: _textHint,
-                      divider: _divider,
-                      totalCount: book.hadiths.length,
-                    );
+              final child = _HadithPage(
+                hadith: book.hadiths[page],
+                isBangla: isBangla,
+                isDark: isDark,
+                cardBg: isDark ? _cardBackground : Colors.white,
+                textMain: _textMain,
+                textSub: _textSub,
+                textHint: _textHint,
+                divider: _divider,
+                totalCount: book.hadiths.length,
+              );
               return Center(
                 child: ConstrainedBox(
                   constraints: BoxConstraints(
@@ -189,15 +178,14 @@ class _HadithAnNawawiViewState extends State<HadithAnNawawiView> {
         HadithReaderBottomBar(
           previousLabel: isBangla ? 'পূর্ববর্তী' : 'Prev',
           nextLabel: isBangla ? 'পরবর্তী' : 'Next',
-          centerLabel: isBangla ? 'ভূমিকা' : 'Intro',
-          centerIcon: Icons.menu_book_rounded,
+          centerLabel: '${_currentIndex + 1}/${book.hadiths.length}',
+          centerIcon: Icons.auto_stories_rounded,
           accent: HadithCollectionPalette.anNawawiAccent,
-          canPrevious: _currentIndex > -1,
+          canPrevious: _currentIndex > 0,
           canNext: _currentIndex < book.hadiths.length - 1,
-          centerSelected: _currentIndex == -1,
           onPrevious: () => _goToIndex(_currentIndex - 1),
           onNext: () => _goToIndex(_currentIndex + 1),
-          onCenter: () => _goToIndex(-1),
+          onCenter: _openJumpSheet,
         ),
       ],
     );
