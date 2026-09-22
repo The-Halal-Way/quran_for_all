@@ -60,5 +60,12 @@ IconData _iconFor(String id) => switch (id) {
   'morning_evening' => Icons.flare_rounded,
   'gratitude' => Icons.volunteer_activism_rounded,
   'siyam_sunnahs' => Icons.no_meals_rounded,
+  'after_salah' => Icons.auto_awesome_rounded,
+  'salawat' => Icons.favorite_rounded,
+  'when_angry' => Icons.self_improvement_rounded,
+  'during_loss' => Icons.healing_rounded,
+  'after_fajr' => Icons.wb_sunny_rounded,
+  'ending_gathering' => Icons.groups_rounded,
+  'bedtime_dhikr' => Icons.bedtime_rounded,
   _ => Icons.auto_awesome_rounded,
 };

@@ -685,6 +685,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duahPowerfulTitle => 'Powerful Du\'as';
 
   @override
+  String get duahPowerfulSearchHint => 'Search by title, meaning, Arabic or source';
+
+  @override
   String get duahLanguageToggleTooltip => 'Change language';
 
   @override
@@ -731,6 +734,45 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get duahCategoryDifficulty => 'Difficulty';
+
+  @override
+  String get duahCategoryLearningUnderstanding => 'Learning & Understanding';
+
+  @override
+  String get duahCategoryParentsFamily => 'Parents & Family';
+
+  @override
+  String get duahCategoryRepentanceMercy => 'Repentance & Mercy';
+
+  @override
+  String get duahCategoryGuidanceFaith => 'Guidance & Faith';
+
+  @override
+  String get duahCategoryProvisionGoodness => 'Provision & Goodness';
+
+  @override
+  String get duahCategoryWorshipAcceptance => 'Worship & Acceptance';
+
+  @override
+  String get duahCategoryPatienceSteadfastness => 'Patience & Steadfastness';
+
+  @override
+  String get duahCategoryProtectionSafety => 'Protection & Safety';
+
+  @override
+  String get duahCategoryHereafter => 'The Hereafter';
+
+  @override
+  String get duahCategoryIllnessVisiting => 'Illness & Visiting';
+
+  @override
+  String get duahCategoryCommunityKindness => 'Community & Kindness';
+
+  @override
+  String get duahCategoryRainWeather => 'Rain & Weather';
+
+  @override
+  String get duahCategoryLaylatAlQadr => 'Laylat al-Qadr';
 
   @override
   String duahCountLabel(int count) {

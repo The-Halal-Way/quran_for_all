@@ -1403,6 +1403,12 @@ abstract class AppLocalizations {
   /// **'Powerful Du\'as'**
   String get duahPowerfulTitle;
 
+  /// No description provided for @duahPowerfulSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by title, meaning, Arabic or source'**
+  String get duahPowerfulSearchHint;
+
   /// No description provided for @duahLanguageToggleTooltip.
   ///
   /// In en, this message translates to:
@@ -1498,6 +1504,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Difficulty'**
   String get duahCategoryDifficulty;
+
+  /// No description provided for @duahCategoryLearningUnderstanding.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning & Understanding'**
+  String get duahCategoryLearningUnderstanding;
+
+  /// No description provided for @duahCategoryParentsFamily.
+  ///
+  /// In en, this message translates to:
+  /// **'Parents & Family'**
+  String get duahCategoryParentsFamily;
+
+  /// No description provided for @duahCategoryRepentanceMercy.
+  ///
+  /// In en, this message translates to:
+  /// **'Repentance & Mercy'**
+  String get duahCategoryRepentanceMercy;
+
+  /// No description provided for @duahCategoryGuidanceFaith.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidance & Faith'**
+  String get duahCategoryGuidanceFaith;
+
+  /// No description provided for @duahCategoryProvisionGoodness.
+  ///
+  /// In en, this message translates to:
+  /// **'Provision & Goodness'**
+  String get duahCategoryProvisionGoodness;
+
+  /// No description provided for @duahCategoryWorshipAcceptance.
+  ///
+  /// In en, this message translates to:
+  /// **'Worship & Acceptance'**
+  String get duahCategoryWorshipAcceptance;
+
+  /// No description provided for @duahCategoryPatienceSteadfastness.
+  ///
+  /// In en, this message translates to:
+  /// **'Patience & Steadfastness'**
+  String get duahCategoryPatienceSteadfastness;
+
+  /// No description provided for @duahCategoryProtectionSafety.
+  ///
+  /// In en, this message translates to:
+  /// **'Protection & Safety'**
+  String get duahCategoryProtectionSafety;
+
+  /// No description provided for @duahCategoryHereafter.
+  ///
+  /// In en, this message translates to:
+  /// **'The Hereafter'**
+  String get duahCategoryHereafter;
+
+  /// No description provided for @duahCategoryIllnessVisiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Illness & Visiting'**
+  String get duahCategoryIllnessVisiting;
+
+  /// No description provided for @duahCategoryCommunityKindness.
+  ///
+  /// In en, this message translates to:
+  /// **'Community & Kindness'**
+  String get duahCategoryCommunityKindness;
+
+  /// No description provided for @duahCategoryRainWeather.
+  ///
+  /// In en, this message translates to:
+  /// **'Rain & Weather'**
+  String get duahCategoryRainWeather;
+
+  /// No description provided for @duahCategoryLaylatAlQadr.
+  ///
+  /// In en, this message translates to:
+  /// **'Laylat al-Qadr'**
+  String get duahCategoryLaylatAlQadr;
 
   /// No description provided for @duahCountLabel.
   ///

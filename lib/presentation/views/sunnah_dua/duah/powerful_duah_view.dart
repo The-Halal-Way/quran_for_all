@@ -4,6 +4,7 @@ import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/utils/app_responsive.dart';
+import '../../../../domain/usecases/sunnah_dua/search_sunnah_content.dart';
 import '../../../widgets/common/app_destination_header.dart';
 import '../../../widgets/common/app_page_scrollbar.dart';
 import '../../../widgets/common/app_premium_page_background.dart';
@@ -15,6 +16,8 @@ import '../../../widgets/sunnah_dua/duah/powerful_duah/powerful_duah_detail_shee
 import '../../../widgets/sunnah_dua/duah/powerful_duah/powerful_duah_filter_bar.dart';
 import '../../../widgets/sunnah_dua/duah/powerful_duah/powerful_duah_grid.dart';
 import '../../../widgets/sunnah_dua/duah/powerful_duah/powerful_duah_note.dart';
+import '../../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_empty_state.dart';
+import '../../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_section_search.dart';
 
 class PowerfulDuahView extends StatefulWidget {
   const PowerfulDuahView({super.key});
@@ -27,6 +30,7 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
     with SingleTickerProviderStateMixin {
   DuahSituation _selected = DuahSituation.all;
   bool _featuredOnly = false;
+  String _query = '';
   late final AnimationController _fadeController;
   late final Animation<double> _fadeAnimation;
 
@@ -51,11 +55,28 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
   }
 
   List<PowerfulDuah> get _filtered {
-    final filtered = PowerfulDuahData.filtered(_selected);
-    return _featuredOnly
-        ? filtered.where((item) => item.isFeatured).toList()
-        : filtered;
+    Iterable<PowerfulDuah> filtered = PowerfulDuahData.filtered(_selected);
+    if (_featuredOnly) {
+      filtered = filtered.where((item) => item.isFeatured);
+    }
+    if (_query.trim().isNotEmpty) {
+      filtered = filtered.where(
+        (item) => SearchSunnahContent.matches(_searchableText(item), _query),
+      );
+    }
+    return filtered.toList(growable: false);
   }
+
+  String _searchableText(PowerfulDuah item) => [
+    item.title,
+    item.titleBn,
+    item.arabic,
+    item.pronunciation,
+    item.pronunciationBn,
+    item.translation,
+    item.translationBn,
+    item.source,
+  ].whereType<String>().join(' ');
 
   Future<void> _switchSituation(DuahSituation situation) async {
     if (_selected == situation) return;
@@ -67,6 +88,11 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
 
   void _toggleFeatured() {
     setState(() => _featuredOnly = !_featuredOnly);
+  }
+
+  void _search(String query) {
+    if (_query == query) return;
+    setState(() => _query = query);
   }
 
   void _showDuah(PowerfulDuah duah) {
@@ -91,6 +117,7 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
           child: AppPageScrollbar(
             builder: (context, controller) => SingleChildScrollView(
               controller: controller,
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               physics: const BouncingScrollPhysics(),
               padding: EdgeInsets.fromLTRB(
                 responsive.padding,
@@ -120,6 +147,13 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
                       const SizedBox(height: AppSpacing.xxl),
                       const PowerfulDuahNote(),
                       const SizedBox(height: AppSpacing.lg),
+                      SunnahDuaSectionSearch(
+                        key: const ValueKey('powerful-duah-search'),
+                        hint: context.l10n.duahPowerfulSearchHint,
+                        query: _query,
+                        onChanged: _search,
+                      ),
+                      const SizedBox(height: AppSpacing.lg),
                       PowerfulDuahFilterBar(
                         selected: _selected,
                         featuredOnly: _featuredOnly,
@@ -132,13 +166,16 @@ class _PowerfulDuahViewState extends State<PowerfulDuahView>
                         trailing: PowerfulDuahCountBadge(count: items.length),
                       ),
                       const SizedBox(height: AppSpacing.md),
-                      FadeTransition(
-                        opacity: _fadeAnimation,
-                        child: PowerfulDuahGrid(
-                          items: items,
-                          onItemTap: _showDuah,
+                      if (items.isEmpty)
+                        SunnahDuaEmptyState(onClear: () => _search(''))
+                      else
+                        FadeTransition(
+                          opacity: _fadeAnimation,
+                          child: PowerfulDuahGrid(
+                            items: items,
+                            onItemTap: _showDuah,
+                          ),
                         ),
-                      ),
                     ],
                   ),
                 ),

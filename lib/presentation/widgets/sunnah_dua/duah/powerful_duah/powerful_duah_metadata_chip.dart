@@ -30,6 +30,7 @@ class PowerfulDuahMetadataChip extends StatelessWidget {
           const SizedBox(width: 5),
           Text(
             label,
+            overflow: TextOverflow.ellipsis,
             style: AppTheme.text(context).labelSmall.copyWith(
               color: color,
               fontWeight: AppTheme.weightBold,

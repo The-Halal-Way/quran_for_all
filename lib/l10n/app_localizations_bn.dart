@@ -685,6 +685,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahPowerfulTitle => 'শক্তিশালী দু\'আসমূহ';
 
   @override
+  String get duahPowerfulSearchHint => 'শিরোনাম, অর্থ, আরবি বা সূত্র দিয়ে খুঁজুন';
+
+  @override
   String get duahLanguageToggleTooltip => 'ভাষা পরিবর্তন করুন';
 
   @override
@@ -731,6 +734,45 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get duahCategoryDifficulty => 'কঠিন সময়';
+
+  @override
+  String get duahCategoryLearningUnderstanding => 'জ্ঞান ও বোঝাপড়া';
+
+  @override
+  String get duahCategoryParentsFamily => 'মা-বাবা ও পরিবার';
+
+  @override
+  String get duahCategoryRepentanceMercy => 'তাওবা ও রহমত';
+
+  @override
+  String get duahCategoryGuidanceFaith => 'হিদায়াত ও ঈমান';
+
+  @override
+  String get duahCategoryProvisionGoodness => 'রিযিক ও কল্যাণ';
+
+  @override
+  String get duahCategoryWorshipAcceptance => 'ইবাদত ও কবুলিয়ত';
+
+  @override
+  String get duahCategoryPatienceSteadfastness => 'ধৈর্য ও অবিচলতা';
+
+  @override
+  String get duahCategoryProtectionSafety => 'আশ্রয় ও নিরাপত্তা';
+
+  @override
+  String get duahCategoryHereafter => 'আখিরাত';
+
+  @override
+  String get duahCategoryIllnessVisiting => 'অসুস্থতা ও রোগী দেখতে যাওয়া';
+
+  @override
+  String get duahCategoryCommunityKindness => 'সমাজ ও সদাচরণ';
+
+  @override
+  String get duahCategoryRainWeather => 'বৃষ্টি ও আবহাওয়া';
+
+  @override
+  String get duahCategoryLaylatAlQadr => 'লাইলাতুল কদর';
 
   @override
   String duahCountLabel(int count) {

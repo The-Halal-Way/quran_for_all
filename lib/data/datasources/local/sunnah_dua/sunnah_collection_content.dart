@@ -1,66 +1,11 @@
 import '../../../../domain/entities/sunnah_dua/sunnah_dua_content.dart';
 import '../../../../l10n/app_localizations.dart';
-import 'sunnah_content_builder.dart';
+import 'sunnah_collection_content_bn.dart';
+import 'sunnah_collection_content_en.dart';
 
-List<SunnahDuaContent> sunnahCollectionContent(AppLocalizations l10n) => [
-  sunnahContent(
-    id: 'seeking_forgiveness',
-    kind: SunnahDuaKind.dhikr,
-    title: l10n.sunnahRoutineForgivenessTitle,
-    subtitle: l10n.sunnahRoutineForgivenessSubtitle,
-    points: l10n.sunnahRoutineForgivenessPointsRaw,
-    practice: l10n.sunnahRoutineForgivenessPractice,
-    source: l10n.sunnahRoutineForgivenessSource,
-    arabic: l10n.sunnahRecitationForgivenessArabic,
-    pronunciation: l10n.sunnahRecitationForgivenessPronunciation,
-    translation: l10n.sunnahRecitationForgivenessTranslation,
-  ),
-  sunnahContent(
-    id: 'difficulty',
-    kind: SunnahDuaKind.dua,
-    title: l10n.sunnahRoutineDifficultyTitle,
-    subtitle: l10n.sunnahRoutineDifficultySubtitle,
-    points: l10n.sunnahRoutineDifficultyPointsRaw,
-    practice: l10n.sunnahRoutineDifficultyPractice,
-    source: l10n.sunnahRoutineDifficultySource,
-    arabic: l10n.sunnahRecitationDifficultyArabic,
-    pronunciation: l10n.sunnahRecitationDifficultyPronunciation,
-    translation: l10n.sunnahRecitationDifficultyTranslation,
-  ),
-  sunnahContent(
-    id: 'morning_evening',
-    kind: SunnahDuaKind.dhikr,
-    title: l10n.sunnahRoutineMorningEveningTitle,
-    subtitle: l10n.sunnahRoutineMorningEveningSubtitle,
-    points: l10n.sunnahRoutineMorningEveningPointsRaw,
-    practice: l10n.sunnahRoutineMorningEveningPractice,
-    source: l10n.sunnahRoutineMorningEveningSource,
-    arabic: l10n.sunnahRecitationRemembranceArabic,
-    pronunciation: l10n.sunnahRecitationRemembrancePronunciation,
-    translation: l10n.sunnahRecitationRemembranceTranslation,
-  ),
-  sunnahContent(
-    id: 'gratitude',
-    kind: SunnahDuaKind.dua,
-    title: l10n.sunnahRoutineGratitudeTitle,
-    subtitle: l10n.sunnahRoutineGratitudeSubtitle,
-    points: l10n.sunnahRoutineGratitudePointsRaw,
-    practice: l10n.sunnahRoutineGratitudePractice,
-    source: l10n.sunnahRoutineGratitudeSource,
-    arabic: l10n.sunnahRecitationGratitudeArabic,
-    pronunciation: l10n.sunnahRecitationGratitudePronunciation,
-    translation: l10n.sunnahRecitationGratitudeTranslation,
-  ),
-  sunnahContent(
-    id: 'siyam_sunnahs',
-    kind: SunnahDuaKind.sunnah,
-    title: l10n.sunnahRoutineFastingTitle,
-    subtitle: l10n.sunnahRoutineFastingSubtitle,
-    points: l10n.sunnahRoutineFastingPointsRaw,
-    practice: l10n.sunnahRoutineFastingPractice,
-    source: l10n.sunnahRoutineFastingSource,
-    arabic: l10n.sunnahRecitationFastingArabic,
-    pronunciation: l10n.sunnahRecitationFastingPronunciation,
-    translation: l10n.sunnahRecitationFastingTranslation,
-  ),
-];
+List<SunnahDuaContent> sunnahCollectionContent(AppLocalizations l10n) {
+  final language = l10n.localeName.toLowerCase().split(RegExp(r'[-_]')).first;
+  return language == 'bn'
+      ? sunnahCollectionContentBn
+      : sunnahCollectionContentEn;
+}

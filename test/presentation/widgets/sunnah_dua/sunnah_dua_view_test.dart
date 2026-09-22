@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart';
+import 'package:quran_for_all/presentation/widgets/sunnah_dua/duah/daily_duah/daily_duah_data.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_detail/sunnah_dua_detail_sheet.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_grid.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_shortcut_carousel.dart';
@@ -63,11 +64,61 @@ void main() {
           )
           .items
           .length,
-      8,
+      15,
     );
     await tester.tap(find.byTooltip('Clear search'));
     await tester.pumpAndSettle();
     expect(find.byType(SunnahDuaGrid), findsNWidgets(3));
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('new Duah categories use Bengali localized labels', (
+    tester,
+  ) async {
+    const labels = <(String, String)>[
+      ('Learning & Understanding', 'জ্ঞান ও বোঝাপড়া'),
+      ('Parents & Family', 'মা-বাবা ও পরিবার'),
+      ('Repentance & Mercy', 'তাওবা ও রহমত'),
+      ('Guidance & Faith', 'হিদায়াত ও ঈমান'),
+      ('Provision & Goodness', 'রিযিক ও কল্যাণ'),
+      ('Worship & Acceptance', 'ইবাদত ও কবুলিয়ত'),
+      ('Patience & Steadfastness', 'ধৈর্য ও অবিচলতা'),
+      ('Protection & Safety', 'আশ্রয় ও নিরাপত্তা'),
+      ('The Hereafter', 'আখিরাত'),
+      ('Illness & Visiting', 'অসুস্থতা ও রোগী দেখতে যাওয়া'),
+      ('Community & Kindness', 'সমাজ ও সদাচরণ'),
+      ('Rain & Weather', 'বৃষ্টি ও আবহাওয়া'),
+      ('Laylat al-Qadr', 'লাইলাতুল কদর'),
+    ];
+
+    await tester.pumpWidget(
+      MaterialApp(
+        locale: const Locale('bn'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: Builder(
+          builder: (context) => SingleChildScrollView(
+            child: Column(
+              children: [
+                for (final (label, _) in labels)
+                  Text(
+                    DuahCategory(
+                      icon: Icons.auto_awesome_rounded,
+                      label: label,
+                      items: const [],
+                    ).localizedLabel(context),
+                  ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    for (final (_, translation) in labels) {
+      expect(find.text(translation), findsOneWidget);
+    }
     expect(tester.takeException(), isNull);
   });
 

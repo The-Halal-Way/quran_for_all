@@ -27,14 +27,24 @@ void main() {
         isNot(contains('seeking_forgiveness')),
       );
       expect(daily.map((item) => item.id), isNot(contains('difficulty')));
+      final collectionIds = catalog.collections.map((item) => item.id);
+      expect(catalog.collections, hasLength(12));
+      expect(collectionIds.toSet(), hasLength(12));
       expect(
-        catalog.collections.map((item) => item.id),
+        collectionIds,
         containsAll([
           'seeking_forgiveness',
           'difficulty',
           'morning_evening',
           'gratitude',
           'siyam_sunnahs',
+          'after_salah',
+          'salawat',
+          'when_angry',
+          'during_loss',
+          'after_fajr',
+          'ending_gathering',
+          'bedtime_dhikr',
         ]),
       );
       for (final item in [...daily, ...catalog.collections]) {
@@ -84,6 +94,24 @@ void main() {
     expect(model.practices.single.title, 'পানি পান');
     expect(model.practices.single.practice, contains('ধীরে'));
     expect(model.practices.single.source, contains('সহিহ'));
+  });
+
+  test('collection content has matching localized English and Bengali IDs', () {
+    final english = SunnahDuaRepositoryImpl(AppLocalizationsEn()).collections;
+    final bangla = SunnahDuaRepositoryImpl(AppLocalizationsBn()).collections;
+
+    expect(
+      bangla.map((item) => item.id).toList(),
+      english.map((item) => item.id).toList(),
+    );
+    expect(
+      bangla.singleWhere((item) => item.id == 'after_salah').title,
+      'সালাতের পর যিকর',
+    );
+    expect(
+      english.singleWhere((item) => item.id == 'difficulty').source,
+      'Sahih al-Bukhari 6346',
+    );
   });
 
   test('every generated locale is selectable and survives persisted codes', () {
