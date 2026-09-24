@@ -28,8 +28,8 @@ void main() {
       );
       expect(daily.map((item) => item.id), isNot(contains('difficulty')));
       final collectionIds = catalog.collections.map((item) => item.id);
-      expect(catalog.collections, hasLength(12));
-      expect(collectionIds.toSet(), hasLength(12));
+      expect(catalog.collections, hasLength(18));
+      expect(collectionIds.toSet(), hasLength(18));
       expect(
         collectionIds,
         containsAll([
@@ -45,17 +45,27 @@ void main() {
           'after_fajr',
           'ending_gathering',
           'bedtime_dhikr',
+          'ayatul_kursi',
+          'last_two_ayah_al_baqarah',
+          'last_three_ayah_al_hashr',
+          'surah_talaq_ayah_2_3',
+          'aal_imran_ayah_26_27',
+          'surah_al_kahf_first_10_ayah',
         ]),
       );
       for (final item in [...daily, ...catalog.collections]) {
-        expect(item.points, isNotEmpty, reason: item.id);
+        expect(
+          item.points.isNotEmpty || item.benefits.isNotEmpty,
+          isTrue,
+          reason: item.id,
+        );
         expect(item.source, isNotEmpty, reason: item.id);
       }
     },
   );
 
   test(
-    'section queries are independent, and reset restores the whole routine',
+    'Quran recitations are separate while routine search stays independent',
     () {
       final strings = AppLocalizationsEn();
       final model = SunnahDuaViewModel(SunnahDuaRepositoryImpl(strings));
@@ -63,21 +73,22 @@ void main() {
       final total = model.totalPractices;
       model.searchRoutine('  DRINKING   WATER ');
       expect(model.practices.map((item) => item.id), ['drinking']);
-      model.searchCollections('forgiveness');
+      expect(model.collections, hasLength(12));
+      expect(model.quranRecitations, hasLength(6));
       expect(
-        presentSunnahShortcuts(
-          strings,
-          model.collections,
-          model.collectionQuery,
-        ).map((item) => item.id),
-        ['seeking_forgiveness'],
+        model.quranRecitations.every((item) => item.pronunciation.isNotEmpty),
+        isTrue,
+      );
+      expect(
+        presentSunnahCollectionShortcuts(model.collections),
+        hasLength(12),
       );
       expect(model.practices.map((item) => item.id), ['drinking']);
       model.searchRoutine('does-not-exist');
       expect(model.practices, isEmpty);
       model.searchRoutine('');
       expect(model.practices.length, total);
-      expect(model.collectionQuery, 'forgiveness');
+      expect(model.quranRecitations, hasLength(6));
     },
   );
 
@@ -112,6 +123,46 @@ void main() {
       english.singleWhere((item) => item.id == 'difficulty').source,
       'Sahih al-Bukhari 6346',
     );
+    final ayatulKursi = english.singleWhere(
+      (item) => item.id == 'ayatul_kursi',
+    );
+    expect(ayatulKursi.kind, SunnahDuaKind.quranAyah);
+    expect(ayatulKursi.benefits, isNotEmpty);
+    expect(ayatulKursi.hadithReferences, hasLength(3));
+    expect(ayatulKursi.hadithReferences[1].reference, '810');
+    expect(ayatulKursi.authenticityNotes, isNotEmpty);
+    final alHashr = english.singleWhere(
+      (item) => item.id == 'last_three_ayah_al_hashr',
+    );
+    expect(alHashr.hadithReferences.single.grade, 'Weak (Da’if)');
+    final alKahf = english.singleWhere(
+      (item) => item.id == 'surah_al_kahf_first_10_ayah',
+    );
+    expect(alKahf.arabic.split('\n\n'), hasLength(10));
+    expect(alKahf.pronunciation, contains('10. Idh awal-fityatu'));
+    expect(alKahf.translation, contains('10. When the young men'));
+    expect(alKahf.hadithReferences.single.reference, '809a');
+    expect(alKahf.practice, contains('full surah'));
+    expect(
+      bangla.singleWhere((item) => item.id == 'ayatul_kursi').title,
+      'আয়াতুল কুরসি',
+    );
+    for (final catalog in [english, bangla]) {
+      final recitations = catalog.where(
+        (item) => item.kind == SunnahDuaKind.quranAyah,
+      );
+      expect(recitations, hasLength(6));
+      for (final item in recitations) {
+        expect(item.pronunciation, isNotEmpty, reason: item.id);
+        expect(item.benefits, isNotEmpty, reason: item.id);
+      }
+    }
+    final alKahfBn = bangla.singleWhere(
+      (item) => item.id == 'surah_al_kahf_first_10_ayah',
+    );
+    expect(alKahfBn.arabic, alKahf.arabic);
+    expect(alKahfBn.pronunciation, contains('১০. ইয আওয়াল'));
+    expect(alKahfBn.translation, contains('১০. যখন যুবকরা'));
   });
 
   test('every generated locale is selectable and survives persisted codes', () {

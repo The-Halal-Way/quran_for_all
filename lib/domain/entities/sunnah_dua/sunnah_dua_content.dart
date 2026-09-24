@@ -1,6 +1,20 @@
 enum SunnahDayPhase { morning, daytime, evening }
 
-enum SunnahDuaKind { sunnah, dua, dhikr }
+enum SunnahDuaKind { sunnah, dua, dhikr, quranAyah }
+
+class SunnahHadithReference {
+  const SunnahHadithReference({
+    required this.collection,
+    required this.reference,
+    required this.text,
+    this.grade,
+  });
+
+  final String collection;
+  final String reference;
+  final String text;
+  final String? grade;
+}
 
 /// Localized reading content. No Flutter, navigation, or visual dependencies.
 class SunnahDuaContent {
@@ -16,6 +30,10 @@ class SunnahDuaContent {
     this.arabic = '',
     this.pronunciation = '',
     this.translation = '',
+    this.benefits = const [],
+    this.hadithReferences = const [],
+    this.authenticityNotes = '',
+    this.tags = const [],
   });
 
   final String id;
@@ -29,7 +47,14 @@ class SunnahDuaContent {
   final String arabic;
   final String pronunciation;
   final String translation;
+  final List<String> benefits;
+  final List<SunnahHadithReference> hadithReferences;
+  final String authenticityNotes;
+  final List<String> tags;
 
   String get searchableText =>
-      '$title $subtitle ${points.join(' ')} $practice $arabic $pronunciation $translation';
+      '$title $subtitle ${points.join(' ')} $practice $source $arabic '
+      '$pronunciation $translation ${benefits.join(' ')} '
+      '${hadithReferences.map((item) => '${item.collection} ${item.reference} ${item.text} ${item.grade ?? ''}').join(' ')} '
+      '$authenticityNotes ${tags.join(' ')}';
 }

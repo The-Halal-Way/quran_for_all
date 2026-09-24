@@ -10,14 +10,17 @@ class SunnahDuaViewModel extends ChangeNotifier {
   SunnahDuaRepository _repository;
   final _search = const SearchSunnahContent();
   String _routineQuery = '';
-  String _collectionQuery = '';
 
   String get routineQuery => _routineQuery;
-  String get collectionQuery => _collectionQuery;
   int get totalPractices => _repository.dailyPractices.length;
   List<SunnahDuaContent> get practices =>
       _search(_repository.dailyPractices, _routineQuery);
-  List<SunnahDuaContent> get collections => _repository.collections;
+  List<SunnahDuaContent> get collections => _repository.collections
+      .where((item) => item.kind != SunnahDuaKind.quranAyah)
+      .toList(growable: false);
+  List<SunnahDuaContent> get quranRecitations => _repository.collections
+      .where((item) => item.kind == SunnahDuaKind.quranAyah)
+      .toList(growable: false);
 
   void updateRepository(SunnahDuaRepository repository) {
     _repository = repository;
@@ -27,12 +30,6 @@ class SunnahDuaViewModel extends ChangeNotifier {
   void searchRoutine(String query) {
     if (_routineQuery == query) return;
     _routineQuery = query;
-    notifyListeners();
-  }
-
-  void searchCollections(String query) {
-    if (_collectionQuery == query) return;
-    _collectionQuery = query;
     notifyListeners();
   }
 }

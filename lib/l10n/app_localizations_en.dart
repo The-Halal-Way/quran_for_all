@@ -903,13 +903,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaCollectionsSubtitle => 'Du\'a, remembrance & a little inspiration';
 
   @override
+  String get sunnahDuaMoreTitle => 'Explore more';
+
+  @override
+  String get sunnahDuaMoreSubtitle => 'Du\'a, dhikr and practices for the moments that matter.';
+
+  @override
+  String get sunnahDuaQuranTitle => 'Quranic recitations';
+
+  @override
+  String get sunnahDuaQuranSubtitle => 'Read the verses, their meaning and the guidance they offer.';
+
+  @override
   String get sunnahDuaRoutineTitle => 'A day with the Sunnah';
 
   @override
   String get sunnahDuaRoutineSubtitle => 'Small practices, from waking to restful sleep.';
-
-  @override
-  String get sunnahDuaSearchCollections => 'Search collections';
 
   @override
   String get sunnahDuaSearchRoutine => 'Search your daily Sunnah';
@@ -1515,6 +1524,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaKindDhikr => 'Dhikr';
 
   @override
+  String get sunnahDuaKindQuranAyah => 'Quran verse';
+
+  @override
   String get sunnahDuaGridTitle => 'Sunnah Amal';
 
   @override
@@ -1539,6 +1551,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sunnahDuaSunnahPointsLabel => 'Sunnah practice';
+
+  @override
+  String get sunnahDuaBenefitsLabel => 'Benefits & reflection';
+
+  @override
+  String get sunnahDuaEvidenceLabel => 'Evidence';
+
+  @override
+  String get sunnahDuaAuthenticityLabel => 'Authenticity note';
 
   @override
   String get sunnahDuaRelatedDuaLabel => 'Related du\'a';

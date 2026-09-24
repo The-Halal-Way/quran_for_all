@@ -4,7 +4,6 @@ import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
-import 'sunnah_dua_day_ribbon.dart';
 import 'sunnah_dua_hero_artwork.dart';
 import 'sunnah_dua_hero_back_button.dart';
 
@@ -93,8 +92,8 @@ class SunnahDuaHero extends StatelessWidget {
                   height: 1.5,
                 ),
               ),
-              const SizedBox(height: AppSpacing.lg),
-              const SunnahDuaDayRibbon(),
+              /*const SizedBox(height: AppSpacing.lg),
+              const SunnahDuaDayRibbon(),*/
             ],
           ),
         );

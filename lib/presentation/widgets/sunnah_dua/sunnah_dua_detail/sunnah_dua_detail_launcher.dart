@@ -29,6 +29,7 @@ Future<void> showSunnahDuaDetails(BuildContext context, SunnahDuaItem item) {
           SunnahDuaKind.sunnah => context.l10n.sunnahDuaKindSunnah,
           SunnahDuaKind.dua => context.l10n.sunnahDuaKindDua,
           SunnahDuaKind.dhikr => context.l10n.sunnahDuaKindDhikr,
+          SunnahDuaKind.quranAyah => context.l10n.sunnahDuaKindQuranAyah,
         },
       ),
     ),

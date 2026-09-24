@@ -14,6 +14,8 @@ import '../../widgets/common/app_premium_page_background.dart';
 import '../../widgets/sunnah_dua/sunnah_dua_detail/sunnah_dua_detail_launcher.dart';
 import '../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_collections_section.dart';
 import '../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_hero.dart';
+import '../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_more_section.dart';
+import '../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_quran_section.dart';
 import '../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_routine_section.dart';
 import 'duah/daily_duah_view.dart';
 import 'duah/duah_ninty_nine_view.dart';
@@ -84,18 +86,24 @@ class _SunnahDuaViewState extends State<SunnahDuaView> {
                             : null,
                       ),
                       const SizedBox(height: AppSpacing.xxl),
-                      ListenableBuilder(
-                        listenable: model,
-                        builder: (context, _) => SunnahDuaCollectionsSection(
-                          items: presentSunnahShortcuts(
-                            context.l10n,
-                            model.collections,
-                            model.collectionQuery,
-                          ),
-                          query: model.collectionQuery,
-                          onSearch: model.searchCollections,
-                          onSelected: _openShortcut,
+                      SunnahDuaCollectionsSection(
+                        items: presentSunnahPrimaryShortcuts(context.l10n),
+                        onSelected: _openShortcut,
+                      ),
+                      const SizedBox(height: AppSpacing.xxl),
+                      SunnahDuaQuranSection(
+                        items: model.quranRecitations
+                            .map(presentSunnahContent)
+                            .toList(growable: false),
+                        onItemTap: (item) =>
+                            showSunnahDuaDetails(context, item),
+                      ),
+                      const SizedBox(height: AppSpacing.xxl),
+                      SunnahDuaMoreSection(
+                        items: presentSunnahCollectionShortcuts(
+                          model.collections,
                         ),
+                        onSelected: _openShortcut,
                       ),
                       const SizedBox(height: AppSpacing.xxl),
                       ListenableBuilder(

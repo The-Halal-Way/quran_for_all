@@ -1823,6 +1823,30 @@ abstract class AppLocalizations {
   /// **'Du\'a, remembrance & a little inspiration'**
   String get sunnahDuaCollectionsSubtitle;
 
+  /// No description provided for @sunnahDuaMoreTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore more'**
+  String get sunnahDuaMoreTitle;
+
+  /// No description provided for @sunnahDuaMoreSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Du\'a, dhikr and practices for the moments that matter.'**
+  String get sunnahDuaMoreSubtitle;
+
+  /// No description provided for @sunnahDuaQuranTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quranic recitations'**
+  String get sunnahDuaQuranTitle;
+
+  /// No description provided for @sunnahDuaQuranSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the verses, their meaning and the guidance they offer.'**
+  String get sunnahDuaQuranSubtitle;
+
   /// No description provided for @sunnahDuaRoutineTitle.
   ///
   /// In en, this message translates to:
@@ -1834,12 +1858,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Small practices, from waking to restful sleep.'**
   String get sunnahDuaRoutineSubtitle;
-
-  /// No description provided for @sunnahDuaSearchCollections.
-  ///
-  /// In en, this message translates to:
-  /// **'Search collections'**
-  String get sunnahDuaSearchCollections;
 
   /// No description provided for @sunnahDuaSearchRoutine.
   ///
@@ -3047,6 +3065,12 @@ abstract class AppLocalizations {
   /// **'Dhikr'**
   String get sunnahDuaKindDhikr;
 
+  /// No description provided for @sunnahDuaKindQuranAyah.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran verse'**
+  String get sunnahDuaKindQuranAyah;
+
   /// No description provided for @sunnahDuaGridTitle.
   ///
   /// In en, this message translates to:
@@ -3094,6 +3118,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sunnah practice'**
   String get sunnahDuaSunnahPointsLabel;
+
+  /// No description provided for @sunnahDuaBenefitsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Benefits & reflection'**
+  String get sunnahDuaBenefitsLabel;
+
+  /// No description provided for @sunnahDuaEvidenceLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence'**
+  String get sunnahDuaEvidenceLabel;
+
+  /// No description provided for @sunnahDuaAuthenticityLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Authenticity note'**
+  String get sunnahDuaAuthenticityLabel;
 
   /// No description provided for @sunnahDuaRelatedDuaLabel.
   ///

@@ -21,6 +21,9 @@ class SunnahDuaItem {
     this.relatedDuaTitle = '',
     this.isFeatured = false,
     this.phase,
+    this.benefits = const [],
+    this.hadithReferences = const [],
+    this.authenticityNotes = '',
   });
 
   final String id;
@@ -39,6 +42,9 @@ class SunnahDuaItem {
   final String relatedDuaTitle;
   final bool isFeatured;
   final SunnahDayPhase? phase;
+  final List<String> benefits;
+  final List<SunnahHadithReference> hadithReferences;
+  final String authenticityNotes;
 
   bool get hasRelatedDua => relatedDuaTitle.isNotEmpty && arabic.isNotEmpty;
   bool get isSunnahPractice => kind == SunnahDuaKind.sunnah;

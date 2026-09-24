@@ -903,13 +903,22 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaCollectionsSubtitle => 'দু\'আ, যিকির ও অনুপ্রেরণা';
 
   @override
+  String get sunnahDuaMoreTitle => 'আরও অন্বেষণ করুন';
+
+  @override
+  String get sunnahDuaMoreSubtitle => 'প্রয়োজনের মুহূর্তে দু\'আ, যিকির ও আমল।';
+
+  @override
+  String get sunnahDuaQuranTitle => 'কুরআনের বিশেষ আয়াত';
+
+  @override
+  String get sunnahDuaQuranSubtitle => 'আয়াত, অর্থ ও সেগুলোর পথনির্দেশ পড়ুন।';
+
+  @override
   String get sunnahDuaRoutineTitle => 'সুন্নাহর সঙ্গে একটি দিন';
 
   @override
   String get sunnahDuaRoutineSubtitle => 'ঘুম থেকে ওঠা থেকে ঘুমানো পর্যন্ত ছোট ছোট আমল।';
-
-  @override
-  String get sunnahDuaSearchCollections => 'সংগ্রহ খুঁজুন';
 
   @override
   String get sunnahDuaSearchRoutine => 'দৈনন্দিন সুন্নাহ খুঁজুন';
@@ -1515,6 +1524,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaKindDhikr => 'যিকির';
 
   @override
+  String get sunnahDuaKindQuranAyah => 'কুরআনের আয়াত';
+
+  @override
   String get sunnahDuaGridTitle => 'সুন্নাহ আমল';
 
   @override
@@ -1539,6 +1551,15 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get sunnahDuaSunnahPointsLabel => 'সুন্নাহ আমল';
+
+  @override
+  String get sunnahDuaBenefitsLabel => 'উপকারিতা ও ভাবনা';
+
+  @override
+  String get sunnahDuaEvidenceLabel => 'দলিল';
+
+  @override
+  String get sunnahDuaAuthenticityLabel => 'বিশুদ্ধতা সম্পর্কিত নোট';
 
   @override
   String get sunnahDuaRelatedDuaLabel => 'সংশ্লিষ্ট দু\'আ';

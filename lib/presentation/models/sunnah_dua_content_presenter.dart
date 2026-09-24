@@ -8,10 +8,11 @@ SunnahDuaItem presentSunnahContent(SunnahDuaContent content) {
     SunnahDayPhase.morning => MyColors.tertiaryDark,
     SunnahDayPhase.daytime => MyColors.secondary,
     SunnahDayPhase.evening => MyColors.primaryLight,
-    null =>
-      content.kind == SunnahDuaKind.dua
-          ? MyColors.secondary
-          : MyColors.tertiaryDark,
+    null => switch (content.kind) {
+      SunnahDuaKind.dua => MyColors.secondary,
+      SunnahDuaKind.quranAyah => MyColors.primaryLight,
+      SunnahDuaKind.sunnah || SunnahDuaKind.dhikr => MyColors.tertiaryDark,
+    },
   };
   return SunnahDuaItem(
     id: content.id,
@@ -28,6 +29,9 @@ SunnahDuaItem presentSunnahContent(SunnahDuaContent content) {
     practice: content.practice,
     source: content.source,
     sunnahPoints: content.points,
+    benefits: content.benefits,
+    hadithReferences: content.hadithReferences,
+    authenticityNotes: content.authenticityNotes,
     isFeatured: content.id == 'waking_up' || content.id == 'sleeping_sunnahs',
   );
 }
@@ -67,5 +71,11 @@ IconData _iconFor(String id) => switch (id) {
   'after_fajr' => Icons.wb_sunny_rounded,
   'ending_gathering' => Icons.groups_rounded,
   'bedtime_dhikr' => Icons.bedtime_rounded,
+  'ayatul_kursi' => Icons.shield_moon_rounded,
+  'last_two_ayah_al_baqarah' => Icons.auto_stories_rounded,
+  'last_three_ayah_al_hashr' => Icons.stars_rounded,
+  'surah_talaq_ayah_2_3' => Icons.route_rounded,
+  'aal_imran_ayah_26_27' => Icons.account_balance_rounded,
+  'surah_al_kahf_first_10_ayah' => Icons.shield_rounded,
   _ => Icons.auto_awesome_rounded,
 };

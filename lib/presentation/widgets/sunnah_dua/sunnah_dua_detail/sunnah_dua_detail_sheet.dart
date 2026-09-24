@@ -5,6 +5,7 @@ import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/presentation/models/sunnah_dua_item.dart';
 
 import 'sunnah_dua_point_list.dart';
+import 'sunnah_dua_benefits_panel.dart';
 import 'sunnah_dua_related_content.dart';
 import 'sunnah_dua_detail_header.dart';
 import 'sunnah_dua_detail_block.dart';
@@ -93,6 +94,8 @@ class SunnahDuaDetailSheet extends StatelessWidget {
                   ),
                 ),
               ),
+            if (item.benefits.isNotEmpty)
+              SunnahDuaBenefitsPanel(benefits: item.benefits),
             SunnahDuaDetailBlock(
               label: context.l10n.sunnahDuaPracticeLabel,
               child: Text(
@@ -104,6 +107,51 @@ class SunnahDuaDetailSheet extends StatelessWidget {
                 ),
               ),
             ),
+            if (item.hadithReferences.isNotEmpty)
+              SunnahDuaDetailBlock(
+                label: context.l10n.sunnahDuaEvidenceLabel,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    for (final reference in item.hadithReferences)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: AppSpacing.md),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '${reference.collection} ${reference.reference}'
+                              '${reference.grade == null ? '' : ' • ${reference.grade}'}',
+                              style: text.labelMedium.copyWith(
+                                color: colorScheme.primary,
+                                fontWeight: AppTheme.weightBold,
+                              ),
+                            ),
+                            const SizedBox(height: AppSpacing.xs),
+                            Text(
+                              reference.text,
+                              style: text.bodySmall.copyWith(
+                                color: colorScheme.onSurfaceVariant,
+                                height: 1.45,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            if (item.authenticityNotes.isNotEmpty)
+              SunnahDuaDetailBlock(
+                label: context.l10n.sunnahDuaAuthenticityLabel,
+                child: Text(
+                  item.authenticityNotes,
+                  style: text.bodySmall.copyWith(
+                    color: colorScheme.onSurfaceVariant,
+                    height: 1.45,
+                  ),
+                ),
+              ),
           ],
         ),
       ),

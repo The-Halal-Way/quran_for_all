@@ -25,14 +25,20 @@ class AppIconGridSection extends StatelessWidget {
     super.key,
     required this.title,
     required this.items,
+    this.subtitle,
     this.actionLabel,
     this.onActionTap,
+    this.phoneColumns = 4,
+    this.labelMaxLines = 2,
   });
 
   final String title;
   final List<AppIconGridItem> items;
+  final String? subtitle;
   final String? actionLabel;
   final VoidCallback? onActionTap;
+  final int phoneColumns;
+  final int labelMaxLines;
 
   @override
   Widget build(BuildContext context) {
@@ -71,6 +77,10 @@ class AppIconGridSection extends StatelessWidget {
               ),
           ],
         ),
+        if (subtitle != null) ...[
+          const SizedBox(height: AppSpacing.xs),
+          Text(subtitle!, style: AppTheme.text(context).bodySmall),
+        ],
         const SizedBox(height: AppSpacing.md),
         LayoutBuilder(
           builder: (context, constraints) {
@@ -81,7 +91,7 @@ class AppIconGridSection extends StatelessWidget {
                 ? 8
                 : constraints.maxWidth >= 600
                 ? 6
-                : 4;
+                : phoneColumns;
             final columns = items.length < maxColumns
                 ? items.length
                 : maxColumns;
@@ -97,7 +107,10 @@ class AppIconGridSection extends StatelessWidget {
                 for (final item in items)
                   SizedBox(
                     width: itemWidth,
-                    child: _AppIconGridTile(item: item),
+                    child: _AppIconGridTile(
+                      item: item,
+                      labelMaxLines: labelMaxLines,
+                    ),
                   ),
               ],
             );
@@ -109,9 +122,10 @@ class AppIconGridSection extends StatelessWidget {
 }
 
 class _AppIconGridTile extends StatelessWidget {
-  const _AppIconGridTile({required this.item});
+  const _AppIconGridTile({required this.item, required this.labelMaxLines});
 
   final AppIconGridItem item;
+  final int labelMaxLines;
 
   @override
   Widget build(BuildContext context) {
@@ -216,7 +230,7 @@ class _AppIconGridTile extends StatelessWidget {
                   const SizedBox(height: AppSpacing.sm),
                   Text(
                     item.label,
-                    maxLines: scale > 1.4 ? 3 : 2,
+                    maxLines: scale > 1.4 ? labelMaxLines + 1 : labelMaxLines,
                     overflow: TextOverflow.ellipsis,
                     textAlign: TextAlign.center,
                     style: AppTheme.text(context).bodySmall.copyWith(
