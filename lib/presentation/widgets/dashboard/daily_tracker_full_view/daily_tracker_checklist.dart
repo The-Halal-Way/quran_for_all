@@ -3,7 +3,6 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../core/enums/task_category.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/utils/app_responsive.dart';
@@ -23,6 +22,9 @@ class DailyTrackerChecklist extends StatelessWidget {
       (DailyTrackerViewModel vm) => vm.groupedTasks,
     );
     final loading = context.select((DailyTrackerViewModel vm) => vm.isLoading);
+    final sectionOrder = context.select(
+      (DailyTrackerViewModel vm) => vm.sectionOrder,
+    );
     final vm = context.read<DailyTrackerViewModel>();
     if (loading && grouped.isEmpty) {
       return const Center(child: CircularProgressIndicator());
@@ -35,6 +37,9 @@ class DailyTrackerChecklist extends StatelessWidget {
           (constraints.maxWidth - 800) / 2,
         );
         return AppPageScrollbar(
+          key: ValueKey(
+            sectionOrder.map((category) => category.name).join(','),
+          ),
           builder: (context, controller) => RefreshIndicator(
             onRefresh: vm.loadTasks,
             child: CustomScrollView(
@@ -82,9 +87,14 @@ class DailyTrackerChecklist extends StatelessWidget {
                           tasks: entry.value,
                           onToggle: (task) => vm.toggleTask(task.id),
                           onDelete: (task) => deleteTrackerTask(context, task),
-                          onReorder: entry.key == TaskCategory.custom
-                              ? vm.reorderCustomTask
-                              : null,
+                          onMove: (task) => moveTrackerTask(context, task),
+                          onReorder: (oldIndex, newIndex) =>
+                              reorderTrackerTasks(
+                                context,
+                                oldIndex,
+                                newIndex,
+                                entry.key,
+                              ),
                         ),
                     ],
                   ),

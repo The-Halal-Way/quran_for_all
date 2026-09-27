@@ -5,6 +5,7 @@ import '../../core/enums/reading_view_mode.dart';
 import '../../data/models/app_settings.dart';
 import '../../domain/repositories/settings_repository.dart';
 import '../../core/enums/app_language.dart';
+import '../datasources/local/prayer_times_preferences_store.dart';
 
 class SettingsRepositoryImpl implements SettingsRepository {
   static const _keyShowPronunciation = 'show_pronunciation';
@@ -35,6 +36,7 @@ class SettingsRepositoryImpl implements SettingsRepository {
   @override
   Future<void> saveSettings(AppSettings settings) async {
     final prefs = await SharedPreferences.getInstance();
+    final previousHijriAdjustment = prefs.getInt(_keyHijriDateAdjustment) ?? 0;
 
     await prefs.setBool(_keyShowPronunciation, settings.showPronunciation);
     await prefs.setBool(_keyShowTranslation, settings.showTranslation);
@@ -42,6 +44,9 @@ class SettingsRepositoryImpl implements SettingsRepository {
     await prefs.setString(_keyLanguage, settings.language.code);
     await prefs.setString(_keyThemeMode, settings.themeMode.name);
     await prefs.setInt(_keyHijriDateAdjustment, settings.hijriDateAdjustment);
+    if (previousHijriAdjustment != settings.hijriDateAdjustment) {
+      await PrayerTimesPreferencesStore().refreshWidgetCalendar();
+    }
   }
 
   static ThemeMode _themeModeFromString(String? value) {

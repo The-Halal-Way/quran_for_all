@@ -5,6 +5,7 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/daily_task_model.dart';
 import 'daily_tracker_category_header.dart';
 import 'daily_tracker_task_tile.dart';
+import 'daily_tracker_user_task_sliver.dart';
 
 class DailyTrackerCategorySliver extends StatelessWidget {
   const DailyTrackerCategorySliver({
@@ -13,55 +14,53 @@ class DailyTrackerCategorySliver extends StatelessWidget {
     required this.tasks,
     required this.onToggle,
     required this.onDelete,
-    this.onReorder,
+    required this.onMove,
+    required this.onReorder,
   });
   final TaskCategory category;
   final List<DailyTask> tasks;
   final ValueChanged<DailyTask> onToggle;
   final ValueChanged<DailyTask> onDelete;
-  final ReorderCallback? onReorder;
+  final ValueChanged<DailyTask> onMove;
+  final ReorderCallback onReorder;
 
   @override
-  Widget build(BuildContext context) => SliverMainAxisGroup(
-    slivers: [
-      SliverToBoxAdapter(
-        child: DailyTrackerCategoryHeader(
-          category: category,
-          completed: tasks.where((task) => task.isCompletedToday).length,
-          total: tasks.length,
+  Widget build(BuildContext context) {
+    final builtInTasks = tasks.where((task) => !task.isUserCreated).toList();
+    final userTasks = tasks.where((task) => task.isUserCreated).toList();
+    return SliverMainAxisGroup(
+      slivers: [
+        SliverToBoxAdapter(
+          child: DailyTrackerCategoryHeader(
+            category: category,
+            completed: tasks.where((task) => task.isCompletedToday).length,
+            total: tasks.length,
+          ),
         ),
-      ),
-      if (onReorder case final reorder?)
-        SliverReorderableList(
-          itemCount: tasks.length,
-          onReorder: reorder,
-          itemBuilder: (context, index) {
-            final task = tasks[index];
-            return Padding(
-              key: ValueKey(task.id),
-              padding: const EdgeInsets.only(bottom: AppSpacing.sm),
-              child: DailyTrackerTaskTile(
+        if (builtInTasks.isNotEmpty)
+          SliverList.separated(
+            itemCount: builtInTasks.length,
+            separatorBuilder: (_, _) => const SizedBox(height: AppSpacing.sm),
+            itemBuilder: (context, index) {
+              final task = builtInTasks[index];
+              return DailyTrackerTaskTile(
+                key: ValueKey(task.id),
                 task: task,
                 onToggle: () => onToggle(task),
-                onDelete: () => onDelete(task),
-                reorderIndex: index,
-              ),
-            );
-          },
-        )
-      else
-        SliverList.separated(
-          itemCount: tasks.length,
-          separatorBuilder: (_, _) => const SizedBox(height: AppSpacing.sm),
-          itemBuilder: (context, index) {
-            final task = tasks[index];
-            return DailyTrackerTaskTile(
-              key: ValueKey(task.id),
-              task: task,
-              onToggle: () => onToggle(task),
-            );
-          },
-        ),
-    ],
-  );
+              );
+            },
+          ),
+        if (builtInTasks.isNotEmpty && userTasks.isNotEmpty)
+          const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.sm)),
+        if (userTasks.isNotEmpty)
+          DailyTrackerUserTaskSliver(
+            tasks: userTasks,
+            onToggle: onToggle,
+            onDelete: onDelete,
+            onMove: onMove,
+            onReorder: onReorder,
+          ),
+      ],
+    );
+  }
 }

@@ -2692,6 +2692,59 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerDeleteAction => 'মুছুন';
 
   @override
+  String get dailyTrackerTaskSectionLabel => 'বিভাগ';
+
+  @override
+  String get dailyTrackerOrganizeSectionsAction => 'বিভাগ সাজান';
+
+  @override
+  String get dailyTrackerOrganizeSectionsSubtitle => 'বিভাগগুলো টেনে সাজান, অথবা দ্রুত সরাতে পাশের মেনু ব্যবহার করুন।';
+
+  @override
+  String get dailyTrackerEmptySectionsHint => 'কাজ যুক্ত করলে খালি বিভাগগুলো আপনার তালিকায় দেখা যাবে।';
+
+  @override
+  String get dailyTrackerSaveSectionOrderAction => 'ক্রম সংরক্ষণ করুন';
+
+  @override
+  String get dailyTrackerResetSectionOrderAction => 'আগের ক্রম ফিরিয়ে আনুন';
+
+  @override
+  String get dailyTrackerReorderSectionTooltip => 'বিভাগ সাজাতে টানুন';
+
+  @override
+  String get dailyTrackerSectionOptionsTooltip => 'বিভাগের অপশন';
+
+  @override
+  String get dailyTrackerMoveSectionTopAction => 'সবার উপরে রাখুন';
+
+  @override
+  String get dailyTrackerMoveSectionUpAction => 'উপরে সরান';
+
+  @override
+  String get dailyTrackerMoveSectionDownAction => 'নিচে সরান';
+
+  @override
+  String dailyTrackerSectionTaskCount(int count) {
+    return '$countটি কাজ';
+  }
+
+  @override
+  String get dailyTrackerTaskOptionsTooltip => 'কাজের অপশন';
+
+  @override
+  String get dailyTrackerMoveTaskAction => 'অন্য বিভাগে সরান';
+
+  @override
+  String get dailyTrackerMoveTaskTitle => 'কাজ সরান';
+
+  @override
+  String get dailyTrackerMoveTaskConfirmAction => 'সরান';
+
+  @override
+  String get dailyTrackerSaveChangesError => 'পরিবর্তন সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
   String get dailyRemindersTitle => 'দৈনিক স্মরণিকা';
 
   @override

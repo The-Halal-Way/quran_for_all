@@ -12,6 +12,7 @@ class AddCustomTaskUseCase {
     required String title,
     String subtitle = '',
     bool isOptional = false,
+    TaskCategory category = TaskCategory.custom,
     String? stableId,
   }) async {
     final tasks = await _repository.loadCustomTasks();
@@ -23,7 +24,8 @@ class AddCustomTaskUseCase {
       id: id ?? 'custom_${DateTime.now().microsecondsSinceEpoch}',
       titleEn: title,
       titleBn: subtitle,
-      category: TaskCategory.custom,
+      category: category,
+      isUserCreated: true,
       isOptional: isOptional,
     );
 

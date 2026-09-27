@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:gravity="center_horizontal" android:orientation="vertical">
+    <TextView android:id="@+id/widget_title" style="@style/PrayerWidget.Title"
+        android:text="@string/prayer_widget_title" />
+    <TextView android:id="@+id/widget_hijri_date" style="@style/PrayerWidget.Hijri"
+        android:layout_marginTop="6dp" android:background="@drawable/prayer_widget_highlight"
+        android:text="@string/prayer_widget_hijri_placeholder" />
+    <TextView android:id="@+id/widget_date" style="@style/PrayerWidget.Text"
+        android:layout_marginTop="4dp" android:gravity="center"
+        android:layout_width="match_parent" android:text="Sunday, September 27, 2026" />
+</LinearLayout>
+

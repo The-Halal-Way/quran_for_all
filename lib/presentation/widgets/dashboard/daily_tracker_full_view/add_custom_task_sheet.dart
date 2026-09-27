@@ -1,21 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/enums/task_category.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../models/add_custom_task_result.dart';
+import 'daily_tracker_section_picker.dart';
 
-/// The result of confirming the "add custom task" bottom sheet.
-class AddCustomTaskResult {
-  const AddCustomTaskResult({
-    required this.title,
-    required this.subtitle,
-    required this.isOptional,
-  });
-
-  final String title;
-  final String subtitle;
-  final bool isOptional;
-}
+export '../../../models/add_custom_task_result.dart';
 
 /// Opens the bottom sheet used to create a custom Daily Tracker task.
 /// Returns `null` if the user cancels.
@@ -39,6 +31,7 @@ class _AddCustomTaskSheetState extends State<_AddCustomTaskSheet> {
   final _titleController = TextEditingController();
   final _subtitleController = TextEditingController();
   bool _isOptional = false;
+  TaskCategory _category = TaskCategory.custom;
   String? _errorText;
 
   @override
@@ -63,6 +56,7 @@ class _AddCustomTaskSheetState extends State<_AddCustomTaskSheet> {
         title: title,
         subtitle: _subtitleController.text.trim(),
         isOptional: _isOptional,
+        category: _category,
       ),
     );
   }
@@ -113,7 +107,12 @@ class _AddCustomTaskSheetState extends State<_AddCustomTaskSheet> {
                 labelText: context.l10n.dailyTrackerAddTaskSubtitleLabel,
                 hintText: context.l10n.dailyTrackerAddTaskSubtitleHint,
               ),
-              onSubmitted: (_) => _submit(),
+              onSubmitted: (_) => FocusManager.instance.primaryFocus?.unfocus(),
+            ),
+            const SizedBox(height: AppSpacing.md),
+            DailyTrackerSectionPicker(
+              selected: _category,
+              onSelected: (category) => setState(() => _category = category),
             ),
             const SizedBox(height: AppSpacing.xs),
             SwitchListTile.adaptive(

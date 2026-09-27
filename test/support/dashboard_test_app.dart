@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
+import 'package:quran_for_all/core/enums/task_category.dart';
 import 'package:quran_for_all/data/models/daily_reminders/daily_reminder_pack.dart';
 import 'package:quran_for_all/data/models/daily_task_model.dart';
 import 'package:quran_for_all/data/models/learn_quran_content.dart';
@@ -8,7 +9,10 @@ import 'package:quran_for_all/domain/repositories/daily_tracker_repository.dart'
 import 'package:quran_for_all/domain/usecases/add_custom_task_usecase.dart';
 import 'package:quran_for_all/domain/usecases/delete_custom_task_usecase.dart';
 import 'package:quran_for_all/domain/usecases/get_daily_tasks_usecase.dart';
+import 'package:quran_for_all/domain/usecases/get_tracker_section_order_usecase.dart';
+import 'package:quran_for_all/domain/usecases/move_custom_task_usecase.dart';
 import 'package:quran_for_all/domain/usecases/reorder_custom_tasks_usecase.dart';
+import 'package:quran_for_all/domain/usecases/save_tracker_section_order_usecase.dart';
 import 'package:quran_for_all/domain/usecases/toggle_task_usecase.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
@@ -29,6 +33,9 @@ class DashboardTestState {
       addCustomTaskUseCase: AddCustomTaskUseCase(repository),
       deleteCustomTaskUseCase: DeleteCustomTaskUseCase(repository),
       reorderCustomTasksUseCase: ReorderCustomTasksUseCase(repository),
+      getSectionOrderUseCase: GetTrackerSectionOrderUseCase(repository),
+      saveSectionOrderUseCase: SaveTrackerSectionOrderUseCase(repository),
+      moveCustomTaskUseCase: MoveCustomTaskUseCase(repository),
     );
     reminders = DailyRemindersViewModel(
       repository: MemoryDailyReminderRepository(_emptyReminderPack),
@@ -128,6 +135,15 @@ const _emptyReminderPack = DailyReminderPack(
 class MemoryTrackerRepository implements DailyTrackerRepository {
   Map<String, DailyTaskProgress> progress = {};
   List<DailyTask> customTasks = [];
+  List<TaskCategory> sectionOrder = List.of(TaskCategory.values);
+
+  @override
+  Future<List<TaskCategory>> loadSectionOrder() async => List.of(sectionOrder);
+
+  @override
+  Future<void> saveSectionOrder(List<TaskCategory> order) async {
+    sectionOrder = List.of(order);
+  }
 
   @override
   Future<List<DailyTask>> loadCustomTasks() async => List.of(customTasks);

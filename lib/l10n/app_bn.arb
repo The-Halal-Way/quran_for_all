@@ -1089,6 +1089,28 @@
     }
   },
   "dailyTrackerDeleteAction": "মুছুন",
+  "dailyTrackerTaskSectionLabel": "বিভাগ",
+  "dailyTrackerOrganizeSectionsAction": "বিভাগ সাজান",
+  "dailyTrackerOrganizeSectionsSubtitle": "বিভাগগুলো টেনে সাজান, অথবা দ্রুত সরাতে পাশের মেনু ব্যবহার করুন।",
+  "dailyTrackerEmptySectionsHint": "কাজ যুক্ত করলে খালি বিভাগগুলো আপনার তালিকায় দেখা যাবে।",
+  "dailyTrackerSaveSectionOrderAction": "ক্রম সংরক্ষণ করুন",
+  "dailyTrackerResetSectionOrderAction": "আগের ক্রম ফিরিয়ে আনুন",
+  "dailyTrackerReorderSectionTooltip": "বিভাগ সাজাতে টানুন",
+  "dailyTrackerSectionOptionsTooltip": "বিভাগের অপশন",
+  "dailyTrackerMoveSectionTopAction": "সবার উপরে রাখুন",
+  "dailyTrackerMoveSectionUpAction": "উপরে সরান",
+  "dailyTrackerMoveSectionDownAction": "নিচে সরান",
+  "dailyTrackerSectionTaskCount": "{count}টি কাজ",
+  "dailyTrackerTaskOptionsTooltip": "কাজের অপশন",
+  "dailyTrackerMoveTaskAction": "অন্য বিভাগে সরান",
+  "dailyTrackerMoveTaskTitle": "কাজ সরান",
+  "dailyTrackerMoveTaskConfirmAction": "সরান",
+  "dailyTrackerSaveChangesError": "পরিবর্তন সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।",
+  "@dailyTrackerSectionTaskCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
   "dailyRemindersTitle": "দৈনিক স্মরণিকা",
   "dailyRemindersSubtitle": "ছোট বিরতি। স্থায়ী আলো।",
   "dailyRemindersToday": "আজকের স্মরণিকা",

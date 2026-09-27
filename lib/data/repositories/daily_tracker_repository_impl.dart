@@ -2,12 +2,15 @@ import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/enums/task_category.dart';
+import '../../core/utils/task_category_order.dart';
 import '../../domain/repositories/daily_tracker_repository.dart';
 import '../models/daily_task_model.dart';
 
 class DailyTrackerRepositoryImpl implements DailyTrackerRepository {
   static const _keyProgress = 'daily_tracker_progress';
   static const _keyCustomTasks = 'daily_tracker_custom_tasks';
+  static const _keySectionOrder = 'daily_tracker_section_order';
 
   @override
   Future<Map<String, DailyTaskProgress>> loadProgress() async {
@@ -19,8 +22,10 @@ class DailyTrackerRepositoryImpl implements DailyTrackerRepository {
 
     final decoded = jsonDecode(raw) as Map<String, dynamic>;
     return decoded.map(
-      (id, value) =>
-          MapEntry(id, DailyTaskProgress.fromMap(value as Map<String, dynamic>)),
+      (id, value) => MapEntry(
+        id,
+        DailyTaskProgress.fromMap(value as Map<String, dynamic>),
+      ),
     );
   }
 
@@ -51,6 +56,29 @@ class DailyTrackerRepositoryImpl implements DailyTrackerRepository {
   Future<void> saveCustomTasks(List<DailyTask> tasks) async {
     final prefs = await SharedPreferences.getInstance();
     final encoded = jsonEncode(tasks.map((task) => task.toMap()).toList());
-    await prefs.setString(_keyCustomTasks, encoded);
+    if (!await prefs.setString(_keyCustomTasks, encoded)) {
+      throw StateError('Could not save tracker tasks');
+    }
+  }
+
+  @override
+  Future<List<TaskCategory>> loadSectionOrder() async {
+    final prefs = await SharedPreferences.getInstance();
+    final codes = prefs.getStringList(_keySectionOrder) ?? [];
+    final byCode = {
+      for (final category in TaskCategory.values) category.code: category,
+    };
+    return completeTaskCategoryOrder([for (final code in codes) ?byCode[code]]);
+  }
+
+  @override
+  Future<void> saveSectionOrder(List<TaskCategory> order) async {
+    final prefs = await SharedPreferences.getInstance();
+    final codes = completeTaskCategoryOrder(
+      order,
+    ).map((category) => category.code).toList();
+    if (!await prefs.setStringList(_keySectionOrder, codes)) {
+      throw StateError('Could not save tracker section order');
+    }
   }
 }

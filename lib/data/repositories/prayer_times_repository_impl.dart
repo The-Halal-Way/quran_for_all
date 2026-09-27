@@ -490,6 +490,11 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
               asrUtcMillis: day.asrUtc.millisecondsSinceEpoch,
               maghribUtcMillis: day.maghribUtc.millisecondsSinceEpoch,
               ishaUtcMillis: day.ishaUtc.millisecondsSinceEpoch,
+              sehriEndUtcMillis: day.fajrUtc
+                  .subtract(
+                    Duration(minutes: profile.calculation.sehriOffsetMinutes),
+                  )
+                  .millisecondsSinceEpoch,
             ),
           )
           .toList(),

@@ -2692,6 +2692,66 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dailyTrackerDeleteAction => 'Delete';
 
   @override
+  String get dailyTrackerTaskSectionLabel => 'Section';
+
+  @override
+  String get dailyTrackerOrganizeSectionsAction => 'Organize sections';
+
+  @override
+  String get dailyTrackerOrganizeSectionsSubtitle => 'Drag sections into place, or use each menu for a quick move.';
+
+  @override
+  String get dailyTrackerEmptySectionsHint => 'Empty sections appear in your checklist when you add a task.';
+
+  @override
+  String get dailyTrackerSaveSectionOrderAction => 'Save order';
+
+  @override
+  String get dailyTrackerResetSectionOrderAction => 'Restore default order';
+
+  @override
+  String get dailyTrackerReorderSectionTooltip => 'Drag to reorder section';
+
+  @override
+  String get dailyTrackerSectionOptionsTooltip => 'Section options';
+
+  @override
+  String get dailyTrackerMoveSectionTopAction => 'Move to top';
+
+  @override
+  String get dailyTrackerMoveSectionUpAction => 'Move up';
+
+  @override
+  String get dailyTrackerMoveSectionDownAction => 'Move down';
+
+  @override
+  String dailyTrackerSectionTaskCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tasks',
+      one: '1 task',
+      zero: 'No tasks',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get dailyTrackerTaskOptionsTooltip => 'Task options';
+
+  @override
+  String get dailyTrackerMoveTaskAction => 'Move to section';
+
+  @override
+  String get dailyTrackerMoveTaskTitle => 'Move task';
+
+  @override
+  String get dailyTrackerMoveTaskConfirmAction => 'Move';
+
+  @override
+  String get dailyTrackerSaveChangesError => 'Couldn’t save your changes. Please try again.';
+
+  @override
   String get dailyRemindersTitle => 'Daily Reminders';
 
   @override

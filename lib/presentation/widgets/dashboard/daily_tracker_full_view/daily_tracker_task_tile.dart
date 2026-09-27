@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/enums/task_category.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -9,6 +8,7 @@ import '../../../../data/models/daily_task_model.dart';
 import 'daily_tracker_category_style.dart';
 import 'daily_tracker_checkmark.dart';
 import 'daily_tracker_task_badge.dart';
+import 'daily_tracker_task_menu.dart';
 
 class DailyTrackerTaskTile extends StatelessWidget {
   const DailyTrackerTaskTile({
@@ -16,11 +16,13 @@ class DailyTrackerTaskTile extends StatelessWidget {
     required this.task,
     required this.onToggle,
     this.onDelete,
+    this.onMove,
     this.reorderIndex,
   });
   final DailyTask task;
   final VoidCallback onToggle;
   final VoidCallback? onDelete;
+  final VoidCallback? onMove;
   final int? reorderIndex;
 
   @override
@@ -29,7 +31,7 @@ class DailyTrackerTaskTile extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
     final accent = trackerCategoryColor(context, task.category);
     final title = trackerTaskTitle(context, task);
-    final subtitle = task.category == TaskCategory.custom ? task.titleBn : '';
+    final subtitle = task.isUserCreated ? task.titleBn : '';
     final semanticLabel = [
       title,
       if (subtitle.isNotEmpty) subtitle,
@@ -141,7 +143,9 @@ class DailyTrackerTaskTile extends StatelessWidget {
                 ),
               ),
             ),
-          if (onDelete != null)
+          if (onDelete != null && onMove != null)
+            DailyTrackerTaskMenu(onMove: onMove!, onDelete: onDelete!)
+          else if (onDelete != null)
             IconButton(
               onPressed: onDelete,
               tooltip: context.l10n.dailyTrackerDeleteTaskTooltip,

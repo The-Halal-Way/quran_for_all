@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_fasting" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginTop="8dp"
+    android:background="@drawable/prayer_widget_highlight"
+    android:orientation="horizontal" android:gravity="center_vertical" android:padding="8dp">
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+        <TextView android:id="@+id/widget_sehri_label" style="@style/PrayerWidget.Section"
+            android:text="@string/prayer_widget_sehri_end" android:letterSpacing="0.02" />
+        <TextView android:id="@+id/widget_sehri_value" style="@style/PrayerWidget.Value"
+            android:layout_marginTop="3dp" android:text="—" />
+    </LinearLayout>
+    <TextView android:layout_width="1dp" android:layout_height="28dp"
+        android:background="@color/prayer_widget_divider" android:importantForAccessibility="no" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+        <TextView android:id="@+id/widget_iftar_label" style="@style/PrayerWidget.Section"
+            android:text="@string/prayer_widget_iftar" android:letterSpacing="0.02" />
+        <TextView android:id="@+id/widget_iftar_value" style="@style/PrayerWidget.Value"
+            android:layout_marginTop="3dp" android:text="—" />
+    </LinearLayout>
+</LinearLayout>
+

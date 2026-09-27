@@ -8,6 +8,7 @@ class DeleteCustomTaskUseCase {
 
   Future<void> call({required String taskId}) async {
     final tasks = await _repository.loadCustomTasks();
+    if (!tasks.any((task) => task.id == taskId)) return;
     tasks.removeWhere((task) => task.id == taskId);
     await _repository.saveCustomTasks(tasks);
 

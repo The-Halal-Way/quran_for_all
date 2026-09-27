@@ -1,3 +1,4 @@
+import '../../core/enums/task_category.dart';
 import '../../data/models/daily_task_model.dart';
 
 /// Persists Daily Tracker completion state across app sessions.
@@ -13,4 +14,10 @@ abstract class DailyTrackerRepository {
 
   /// Persists the full list of user-created custom tasks.
   Future<void> saveCustomTasks(List<DailyTask> tasks);
+
+  /// Loads the preferred section order, including currently empty sections.
+  Future<List<TaskCategory>> loadSectionOrder();
+
+  /// Persists the section order independently of daily completion progress.
+  Future<void> saveSectionOrder(List<TaskCategory> order);
 }

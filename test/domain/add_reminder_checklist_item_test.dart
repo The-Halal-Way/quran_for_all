@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:quran_for_all/core/enums/task_category.dart';
 import 'package:quran_for_all/data/models/daily_task_model.dart';
 import 'package:quran_for_all/domain/repositories/daily_tracker_repository.dart';
 import 'package:quran_for_all/domain/usecases/add_custom_task_usecase.dart';
@@ -16,6 +17,12 @@ void main() {
 
 class _MemoryTrackerRepository implements DailyTrackerRepository {
   List<DailyTask> tasks = [];
+
+  @override
+  Future<List<TaskCategory>> loadSectionOrder() async => TaskCategory.values;
+
+  @override
+  Future<void> saveSectionOrder(List<TaskCategory> order) async {}
 
   @override
   Future<List<DailyTask>> loadCustomTasks() async => [...tasks];

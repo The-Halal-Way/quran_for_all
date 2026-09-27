@@ -35,7 +35,7 @@ Color trackerCategoryColor(BuildContext context, TaskCategory category) {
 
 String trackerTaskTitle(BuildContext context, DailyTask task) {
   // Custom tasks store user-entered supporting text in titleBn, not a translation.
-  if (task.category == TaskCategory.custom) return task.titleEn;
+  if (task.isUserCreated) return task.titleEn;
   final localized = task.localizedTitle(context.l10n.localeName);
   return localized.isEmpty ? task.titleEn : localized;
 }

@@ -3,11 +3,15 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 
 import '../../../core/enums/task_category.dart';
+import '../../../core/utils/task_category_order.dart';
 import '../../../data/models/daily_task_model.dart';
 import '../../../domain/usecases/add_custom_task_usecase.dart';
 import '../../../domain/usecases/delete_custom_task_usecase.dart';
 import '../../../domain/usecases/get_daily_tasks_usecase.dart';
+import '../../../domain/usecases/get_tracker_section_order_usecase.dart';
+import '../../../domain/usecases/move_custom_task_usecase.dart';
 import '../../../domain/usecases/reorder_custom_tasks_usecase.dart';
+import '../../../domain/usecases/save_tracker_section_order_usecase.dart';
 import '../../../domain/usecases/toggle_task_usecase.dart';
 
 /// Holds the state of today's Daily Tracker checklist: the task list,
@@ -19,11 +23,17 @@ class DailyTrackerViewModel extends ChangeNotifier {
     required AddCustomTaskUseCase addCustomTaskUseCase,
     required DeleteCustomTaskUseCase deleteCustomTaskUseCase,
     required ReorderCustomTasksUseCase reorderCustomTasksUseCase,
+    required GetTrackerSectionOrderUseCase getSectionOrderUseCase,
+    required SaveTrackerSectionOrderUseCase saveSectionOrderUseCase,
+    required MoveCustomTaskUseCase moveCustomTaskUseCase,
   }) : _getDailyTasksUseCase = getDailyTasksUseCase,
        _toggleTaskUseCase = toggleTaskUseCase,
        _addCustomTaskUseCase = addCustomTaskUseCase,
        _deleteCustomTaskUseCase = deleteCustomTaskUseCase,
-       _reorderCustomTasksUseCase = reorderCustomTasksUseCase {
+       _reorderCustomTasksUseCase = reorderCustomTasksUseCase,
+       _getSectionOrderUseCase = getSectionOrderUseCase,
+       _saveSectionOrderUseCase = saveSectionOrderUseCase,
+       _moveCustomTaskUseCase = moveCustomTaskUseCase {
     unawaited(loadTasks());
   }
 
@@ -32,12 +42,17 @@ class DailyTrackerViewModel extends ChangeNotifier {
   final AddCustomTaskUseCase _addCustomTaskUseCase;
   final DeleteCustomTaskUseCase _deleteCustomTaskUseCase;
   final ReorderCustomTasksUseCase _reorderCustomTasksUseCase;
+  final GetTrackerSectionOrderUseCase _getSectionOrderUseCase;
+  final SaveTrackerSectionOrderUseCase _saveSectionOrderUseCase;
+  final MoveCustomTaskUseCase _moveCustomTaskUseCase;
 
   List<DailyTask> _tasks = [];
+  List<TaskCategory> _sectionOrder = completeTaskCategoryOrder([]);
   bool _isLoading = false;
   bool _showCelebration = false;
 
   List<DailyTask> get tasks => List.unmodifiable(_tasks);
+  List<TaskCategory> get sectionOrder => List.unmodifiable(_sectionOrder);
   bool get isLoading => _isLoading;
   bool get showCelebration => _showCelebration;
   bool get isFriday => DateTime.now().weekday == DateTime.friday;
@@ -52,13 +67,13 @@ class DailyTrackerViewModel extends ChangeNotifier {
 
   double get progress => totalTasks == 0 ? 0 : completedTasks / totalTasks;
 
-  /// Tasks grouped by category, preserving the checklist order.
+  /// Nonempty sections in the user's order; task order is kept within sections.
   Map<TaskCategory, List<DailyTask>> get groupedTasks {
     final grouped = <TaskCategory, List<DailyTask>>{};
     for (final task in _tasks) {
       grouped.putIfAbsent(task.category, () => []).add(task);
     }
-    return grouped;
+    return {for (final category in _sectionOrder) category: ?grouped[category]};
   }
 
   /// Loads (or reloads) today's checklist, applying the daily reset rule.
@@ -67,6 +82,7 @@ class DailyTrackerViewModel extends ChangeNotifier {
     notifyListeners();
 
     _tasks = await _getDailyTasksUseCase();
+    _sectionOrder = await _getSectionOrderUseCase();
 
     _isLoading = false;
     notifyListeners();
@@ -110,11 +126,13 @@ class DailyTrackerViewModel extends ChangeNotifier {
     required String title,
     String subtitle = '',
     bool isOptional = false,
+    TaskCategory category = TaskCategory.custom,
   }) async {
     await _addCustomTaskUseCase(
       title: title,
       subtitle: subtitle,
       isOptional: isOptional,
+      category: category,
     );
     await loadTasks();
   }
@@ -141,10 +159,30 @@ class DailyTrackerViewModel extends ChangeNotifier {
     await loadTasks();
   }
 
-  /// Reorders user-created tasks and persists the resulting order.
-  Future<void> reorderCustomTask(int oldIndex, int newIndex) async {
+  /// Moves an existing user task without changing its completion history.
+  Future<void> moveCustomTask(String taskId, TaskCategory category) async {
+    if (!_tasks.any((task) => task.id == taskId && task.isUserCreated)) return;
+    await _moveCustomTaskUseCase(taskId: taskId, category: category);
+    await loadTasks();
+  }
+
+  /// Saves one batch of section changes after the organizer is confirmed.
+  Future<void> setSectionOrder(List<TaskCategory> order) async {
+    final completedOrder = completeTaskCategoryOrder(order);
+    if (listEquals(completedOrder, _sectionOrder)) return;
+    await _saveSectionOrderUseCase(completedOrder);
+    _sectionOrder = completedOrder;
+    notifyListeners();
+  }
+
+  /// Reorders user tasks within one section and preserves other sections.
+  Future<void> reorderCustomTask(
+    int oldIndex,
+    int newIndex, {
+    TaskCategory category = TaskCategory.custom,
+  }) async {
     final customTasks = _tasks
-        .where((task) => task.category == TaskCategory.custom)
+        .where((task) => task.isUserCreated && task.category == category)
         .toList();
     if (oldIndex < 0 || oldIndex >= customTasks.length) {
       return;
@@ -166,7 +204,7 @@ class DailyTrackerViewModel extends ChangeNotifier {
     var customIndex = 0;
     _tasks = [
       for (final task in _tasks)
-        if (task.category == TaskCategory.custom)
+        if (task.isUserCreated && task.category == category)
           customTasks[customIndex++]
         else
           task,
@@ -175,7 +213,10 @@ class DailyTrackerViewModel extends ChangeNotifier {
 
     try {
       await _reorderCustomTasksUseCase(
-        orderedTaskIds: customTasks.map((task) => task.id).toList(),
+        orderedTaskIds: _tasks
+            .where((task) => task.isUserCreated)
+            .map((task) => task.id)
+            .toList(),
       );
     } catch (_) {
       _tasks = previousTasks;

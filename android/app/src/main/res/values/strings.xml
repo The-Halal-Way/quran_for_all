@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="prayer_times_home_widget_description">Daily prayer times from the cached 30-day snapshot</string>
+    <string name="prayer_times_home_widget_description">Prayer times, Hijri date, Sehri and Iftar at a glance</string>
+    <string name="prayer_widget_title">Muslim &amp; Quran Pro</string>
+    <string name="prayer_widget_hijri_placeholder">Hijri date</string>
+    <string name="prayer_widget_schedule">PRAYER TIMES</string>
+    <string name="prayer_widget_sehri_end">SEHRI END</string>
+    <string name="prayer_widget_iftar">IFTAR</string>
+    <string name="prayer_widget_open_to_sync">Open the app to update today’s times</string>
+    <string name="prayer_widget_tap_to_update">Tap to update</string>
+    <string name="prayer_widget_fajr">Fajr</string>
+    <string name="prayer_widget_sunrise">Sunrise</string>
+    <string name="prayer_widget_dhuhr">Dhuhr</string>
+    <string name="prayer_widget_asr">Asr</string>
+    <string name="prayer_widget_maghrib">Maghrib</string>
+    <string name="prayer_widget_isha">Isha</string>
 </resources>

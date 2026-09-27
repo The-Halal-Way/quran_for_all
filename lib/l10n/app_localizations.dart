@@ -5351,6 +5351,108 @@ abstract class AppLocalizations {
   /// **'Delete'**
   String get dailyTrackerDeleteAction;
 
+  /// No description provided for @dailyTrackerTaskSectionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Section'**
+  String get dailyTrackerTaskSectionLabel;
+
+  /// No description provided for @dailyTrackerOrganizeSectionsAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Organize sections'**
+  String get dailyTrackerOrganizeSectionsAction;
+
+  /// No description provided for @dailyTrackerOrganizeSectionsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag sections into place, or use each menu for a quick move.'**
+  String get dailyTrackerOrganizeSectionsSubtitle;
+
+  /// No description provided for @dailyTrackerEmptySectionsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Empty sections appear in your checklist when you add a task.'**
+  String get dailyTrackerEmptySectionsHint;
+
+  /// No description provided for @dailyTrackerSaveSectionOrderAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Save order'**
+  String get dailyTrackerSaveSectionOrderAction;
+
+  /// No description provided for @dailyTrackerResetSectionOrderAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore default order'**
+  String get dailyTrackerResetSectionOrderAction;
+
+  /// No description provided for @dailyTrackerReorderSectionTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag to reorder section'**
+  String get dailyTrackerReorderSectionTooltip;
+
+  /// No description provided for @dailyTrackerSectionOptionsTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Section options'**
+  String get dailyTrackerSectionOptionsTooltip;
+
+  /// No description provided for @dailyTrackerMoveSectionTopAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Move to top'**
+  String get dailyTrackerMoveSectionTopAction;
+
+  /// No description provided for @dailyTrackerMoveSectionUpAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Move up'**
+  String get dailyTrackerMoveSectionUpAction;
+
+  /// No description provided for @dailyTrackerMoveSectionDownAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Move down'**
+  String get dailyTrackerMoveSectionDownAction;
+
+  /// No description provided for @dailyTrackerSectionTaskCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No tasks} =1{1 task} other{{count} tasks}}'**
+  String dailyTrackerSectionTaskCount(int count);
+
+  /// No description provided for @dailyTrackerTaskOptionsTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Task options'**
+  String get dailyTrackerTaskOptionsTooltip;
+
+  /// No description provided for @dailyTrackerMoveTaskAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Move to section'**
+  String get dailyTrackerMoveTaskAction;
+
+  /// No description provided for @dailyTrackerMoveTaskTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Move task'**
+  String get dailyTrackerMoveTaskTitle;
+
+  /// No description provided for @dailyTrackerMoveTaskConfirmAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Move'**
+  String get dailyTrackerMoveTaskConfirmAction;
+
+  /// No description provided for @dailyTrackerSaveChangesError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn’t save your changes. Please try again.'**
+  String get dailyTrackerSaveChangesError;
+
   /// No description provided for @dailyRemindersTitle.
   ///
   /// In en, this message translates to:

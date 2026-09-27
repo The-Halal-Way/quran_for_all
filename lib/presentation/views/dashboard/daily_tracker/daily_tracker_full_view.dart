@@ -7,6 +7,7 @@ import '../../../widgets/common/app_premium_page_background.dart';
 import '../../../widgets/dashboard/daily_tracker_full_view/daily_tracker_add_task_bar.dart';
 import '../../../widgets/dashboard/daily_tracker_full_view/daily_tracker_celebration.dart';
 import '../../../widgets/dashboard/daily_tracker_full_view/daily_tracker_checklist.dart';
+import '../../../widgets/dashboard/daily_tracker_full_view/daily_tracker_section_actions.dart';
 
 class DailyTrackerFullView extends StatelessWidget {
   const DailyTrackerFullView({super.key});
@@ -19,7 +20,16 @@ class DailyTrackerFullView extends StatelessWidget {
     return Stack(
       children: [
         Scaffold(
-          appBar: AppBar(title: Text(context.l10n.dailyTrackerFullViewTitle)),
+          appBar: AppBar(
+            title: Text(context.l10n.dailyTrackerFullViewTitle),
+            actions: [
+              IconButton(
+                tooltip: context.l10n.dailyTrackerOrganizeSectionsAction,
+                icon: const Icon(Icons.tune_rounded),
+                onPressed: () => organizeTrackerSections(context),
+              ),
+            ],
+          ),
           body: const AppPremiumPageBackground(child: DailyTrackerChecklist()),
           bottomNavigationBar: const DailyTrackerAddTaskBar(),
         ),

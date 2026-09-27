@@ -7,16 +7,20 @@ class DailyTask {
     required this.titleEn,
     required this.titleBn,
     required this.category,
+    bool? isUserCreated,
     this.isOptional = false,
     this.isFridayOnly = false,
     this.isCompletedToday = false,
     this.lastCompletedDate,
-  });
+  }) : isUserCreated = isUserCreated ?? category == TaskCategory.custom;
 
   final String id;
   final String titleEn;
   final String titleBn;
   final TaskCategory category;
+
+  /// Ownership is independent of the section where the task is displayed.
+  final bool isUserCreated;
 
   /// True for nafl prayers and other non-mandatory acts.
   final bool isOptional;
@@ -34,12 +38,18 @@ class DailyTask {
   String localizedTitle(String localeCode) =>
       localeCode.startsWith('bn') ? titleBn : titleEn;
 
-  DailyTask copyWith({bool? isCompletedToday, DateTime? lastCompletedDate}) {
+  DailyTask copyWith({
+    TaskCategory? category,
+    bool? isUserCreated,
+    bool? isCompletedToday,
+    DateTime? lastCompletedDate,
+  }) {
     return DailyTask(
       id: id,
       titleEn: titleEn,
       titleBn: titleBn,
-      category: category,
+      category: category ?? this.category,
+      isUserCreated: isUserCreated ?? this.isUserCreated,
       isOptional: isOptional,
       isFridayOnly: isFridayOnly,
       isCompletedToday: isCompletedToday ?? this.isCompletedToday,
@@ -55,6 +65,7 @@ class DailyTask {
       'titleEn': titleEn,
       'titleBn': titleBn,
       'category': category.code,
+      'isUserCreated': isUserCreated,
       'isOptional': isOptional,
       'isFridayOnly': isFridayOnly,
     };
@@ -66,6 +77,7 @@ class DailyTask {
       titleEn: map['titleEn'] as String,
       titleBn: map['titleBn'] as String? ?? '',
       category: TaskCategoryX.fromCode(map['category'] as String?),
+      isUserCreated: map['isUserCreated'] as bool?,
       isOptional: map['isOptional'] as bool? ?? false,
       isFridayOnly: map['isFridayOnly'] as bool? ?? false,
     );

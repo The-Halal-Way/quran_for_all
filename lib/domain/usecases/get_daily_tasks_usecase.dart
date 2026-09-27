@@ -13,7 +13,11 @@ class GetDailyTasksUseCase {
   Future<List<DailyTask>> call({DateTime? now}) async {
     final today = now ?? DateTime.now();
     final customTasks = await _repository.loadCustomTasks();
-    final tasks = [...DailyTasksData.tasksForDate(today), ...customTasks];
+    final tasks = [
+      ...DailyTasksData.tasksForDate(today),
+      // Old saved tasks did not carry an ownership flag.
+      ...customTasks.map((task) => task.copyWith(isUserCreated: true)),
+    ];
     final progress = await _repository.loadProgress();
 
     return tasks.map((task) {

@@ -1,6 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/prayer_times/prayer_home_widget_bridge.dart';
+import '../../../core/prayer_times/prayer_widget_calendar.dart';
 import '../../../domain/entities/prayer_times/prayer_times_models.dart';
 
 class PrayerTimesPreferencesStore {
@@ -43,7 +44,19 @@ class PrayerTimesPreferencesStore {
   }
 
   Future<void> writeWidgetSnapshot(PrayerWidgetSnapshot snapshot) async {
-    await PrayerHomeWidgetBridge.saveSnapshot(snapshot.toJsonString());
+    final prefs = await SharedPreferences.getInstance();
+    final decorated = PrayerWidgetCalendar.decorate(
+      snapshot,
+      adjustmentDays: prefs.getInt('hijri_date_adjustment') ?? 0,
+    );
+    await PrayerHomeWidgetBridge.saveSnapshot(decorated.toJsonString());
+  }
+
+  Future<void> refreshWidgetCalendar() async {
+    final snapshot = await readWidgetSnapshot();
+    if (snapshot != null) {
+      await writeWidgetSnapshot(snapshot);
+    }
   }
 
   Future<PrayerWidgetSnapshot?> readWidgetSnapshot() async {
@@ -52,6 +65,12 @@ class PrayerTimesPreferencesStore {
       return null;
     }
 
-    return PrayerWidgetSnapshot.fromJsonString(raw);
+    try {
+      return PrayerWidgetSnapshot.fromJsonString(raw);
+    } on FormatException {
+      return null;
+    } on TypeError {
+      return null;
+    }
   }
 }

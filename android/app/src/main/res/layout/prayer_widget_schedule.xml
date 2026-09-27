@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="0dp"
+    android:layout_weight="1" android:layout_marginTop="4dp" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:minHeight="24dp" android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView style="@style/PrayerWidget.RowLabel" android:text="@string/prayer_widget_fajr" />
+        <TextView android:id="@+id/prayer_fajr_value" style="@style/PrayerWidget.Value" android:text="—" />
+    </LinearLayout>
+    <TextView style="@style/PrayerWidget.Divider" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:minHeight="24dp" android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView style="@style/PrayerWidget.RowLabel" android:text="@string/prayer_widget_sunrise" />
+        <TextView android:id="@+id/prayer_sunrise_value" style="@style/PrayerWidget.Value" android:text="—" />
+    </LinearLayout>
+    <TextView style="@style/PrayerWidget.Divider" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:minHeight="24dp" android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView style="@style/PrayerWidget.RowLabel" android:text="@string/prayer_widget_dhuhr" />
+        <TextView android:id="@+id/prayer_dhuhr_value" style="@style/PrayerWidget.Value" android:text="—" />
+    </LinearLayout>
+    <TextView style="@style/PrayerWidget.Divider" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:minHeight="24dp" android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView style="@style/PrayerWidget.RowLabel" android:text="@string/prayer_widget_asr" />
+        <TextView android:id="@+id/prayer_asr_value" style="@style/PrayerWidget.Value" android:text="—" />
+    </LinearLayout>
+    <TextView style="@style/PrayerWidget.Divider" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:minHeight="24dp" android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView style="@style/PrayerWidget.RowLabel" android:text="@string/prayer_widget_maghrib" />
+        <TextView android:id="@+id/prayer_maghrib_value" style="@style/PrayerWidget.Value" android:text="—" />
+    </LinearLayout>
+    <TextView style="@style/PrayerWidget.Divider" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:minHeight="24dp" android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView style="@style/PrayerWidget.RowLabel" android:text="@string/prayer_widget_isha" />
+        <TextView android:id="@+id/prayer_isha_value" style="@style/PrayerWidget.Value" android:text="—" />
+    </LinearLayout>
+</LinearLayout>
+

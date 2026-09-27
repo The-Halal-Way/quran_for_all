@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA11B0000000000000000001 /* PrayerWidgetConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000001 /* PrayerWidgetConstants.swift */; };
+		EA11B0000000000000000002 /* PrayerWidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000002 /* PrayerWidgetSnapshot.swift */; };
+		EA11B0000000000000000003 /* PrayerWidgetDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000003 /* PrayerWidgetDateFormatter.swift */; };
+		EA11B0000000000000000004 /* PrayerTimesWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000004 /* PrayerTimesWidgetProvider.swift */; };
+		EA11B0000000000000000005 /* PrayerTimesHomeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000005 /* PrayerTimesHomeWidgetView.swift */; };
+		EA11B0000000000000000006 /* PrayerWidgetBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000006 /* PrayerWidgetBackground.swift */; };
+		EA11B0000000000000000007 /* PrayerWidgetHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000007 /* PrayerWidgetHeaderView.swift */; };
+		EA11B0000000000000000008 /* PrayerWidgetScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000008 /* PrayerWidgetScheduleView.swift */; };
+		EA11B0000000000000000009 /* PrayerWidgetTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000009 /* PrayerWidgetTimeRow.swift */; };
+		EA11B000000000000000000A /* PrayerWidgetFastingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D000000000000000000A /* PrayerWidgetFastingView.swift */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		2D82088531D61ABA77B58C14 /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1FDA305696B45B5E0D43F9 /* Pods_RunnerTests.framework */; };
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
@@ -65,6 +75,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA11D0000000000000000001 /* PrayerWidgetConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetConstants.swift; sourceTree = "<group>"; };
+		EA11D0000000000000000002 /* PrayerWidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetSnapshot.swift; sourceTree = "<group>"; };
+		EA11D0000000000000000003 /* PrayerWidgetDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetDateFormatter.swift; sourceTree = "<group>"; };
+		EA11D0000000000000000004 /* PrayerTimesWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesWidgetProvider.swift; sourceTree = "<group>"; };
+		EA11D0000000000000000005 /* PrayerTimesHomeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesHomeWidgetView.swift; sourceTree = "<group>"; };
+		EA11D0000000000000000006 /* PrayerWidgetBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetBackground.swift; sourceTree = "<group>"; };
+		EA11D0000000000000000007 /* PrayerWidgetHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetHeaderView.swift; sourceTree = "<group>"; };
+		EA11D0000000000000000008 /* PrayerWidgetScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetScheduleView.swift; sourceTree = "<group>"; };
+		EA11D0000000000000000009 /* PrayerWidgetTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetTimeRow.swift; sourceTree = "<group>"; };
+		EA11D000000000000000000A /* PrayerWidgetFastingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetFastingView.swift; sourceTree = "<group>"; };
 		0B01ABD78F0488153E6E5B96 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
@@ -202,6 +222,16 @@
 			isa = PBXGroup;
 			children = (
 				307D5EC9656B5C7C1FD413D8 /* PrayerTimesHomeWidget.swift */,
+				EA11D0000000000000000001 /* PrayerWidgetConstants.swift */,
+				EA11D0000000000000000002 /* PrayerWidgetSnapshot.swift */,
+				EA11D0000000000000000003 /* PrayerWidgetDateFormatter.swift */,
+				EA11D0000000000000000004 /* PrayerTimesWidgetProvider.swift */,
+				EA11D0000000000000000005 /* PrayerTimesHomeWidgetView.swift */,
+				EA11D0000000000000000006 /* PrayerWidgetBackground.swift */,
+				EA11D0000000000000000007 /* PrayerWidgetHeaderView.swift */,
+				EA11D0000000000000000008 /* PrayerWidgetScheduleView.swift */,
+				EA11D0000000000000000009 /* PrayerWidgetTimeRow.swift */,
+				EA11D000000000000000000A /* PrayerWidgetFastingView.swift */,
 				2A0EBF95C690279EF2BD7FA0 /* Info.plist */,
 				6DFE853B0EAE9DA4C2F3BDAC /* PrayerTimesHomeWidget.entitlements */,
 			);
@@ -498,6 +528,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D458FA97199648A6630D20B4 /* PrayerTimesHomeWidget.swift in Sources */,
+				EA11B0000000000000000001 /* PrayerWidgetConstants.swift in Sources */,
+				EA11B0000000000000000002 /* PrayerWidgetSnapshot.swift in Sources */,
+				EA11B0000000000000000003 /* PrayerWidgetDateFormatter.swift in Sources */,
+				EA11B0000000000000000004 /* PrayerTimesWidgetProvider.swift in Sources */,
+				EA11B0000000000000000005 /* PrayerTimesHomeWidgetView.swift in Sources */,
+				EA11B0000000000000000006 /* PrayerWidgetBackground.swift in Sources */,
+				EA11B0000000000000000007 /* PrayerWidgetHeaderView.swift in Sources */,
+				EA11B0000000000000000008 /* PrayerWidgetScheduleView.swift in Sources */,
+				EA11B0000000000000000009 /* PrayerWidgetTimeRow.swift in Sources */,
+				EA11B000000000000000000A /* PrayerWidgetFastingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

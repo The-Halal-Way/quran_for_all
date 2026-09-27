@@ -32,8 +32,11 @@ import 'domain/repositories/tasbeeh_repository.dart';
 import 'domain/usecases/add_custom_task_usecase.dart';
 import 'domain/usecases/delete_custom_task_usecase.dart';
 import 'domain/usecases/get_daily_tasks_usecase.dart';
+import 'domain/usecases/get_tracker_section_order_usecase.dart';
+import 'domain/usecases/move_custom_task_usecase.dart';
 import 'domain/usecases/prayer_times/load_prayer_times_usecase.dart';
 import 'domain/usecases/reorder_custom_tasks_usecase.dart';
+import 'domain/usecases/save_tracker_section_order_usecase.dart';
 import 'domain/usecases/toggle_task_usecase.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
@@ -148,6 +151,20 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               ReorderCustomTasksUseCase(context.read<DailyTrackerRepository>()),
         ),
+        Provider<GetTrackerSectionOrderUseCase>(
+          create: (context) => GetTrackerSectionOrderUseCase(
+            context.read<DailyTrackerRepository>(),
+          ),
+        ),
+        Provider<SaveTrackerSectionOrderUseCase>(
+          create: (context) => SaveTrackerSectionOrderUseCase(
+            context.read<DailyTrackerRepository>(),
+          ),
+        ),
+        Provider<MoveCustomTaskUseCase>(
+          create: (context) =>
+              MoveCustomTaskUseCase(context.read<DailyTrackerRepository>()),
+        ),
         ChangeNotifierProvider<AudioControlViewModel>(
           create: (context) => AudioControlViewModel(
             audioRepository: context.read<AudioRepository>(),
@@ -201,6 +218,11 @@ class QuranForAllApp extends StatelessWidget {
             deleteCustomTaskUseCase: context.read<DeleteCustomTaskUseCase>(),
             reorderCustomTasksUseCase: context
                 .read<ReorderCustomTasksUseCase>(),
+            getSectionOrderUseCase: context
+                .read<GetTrackerSectionOrderUseCase>(),
+            saveSectionOrderUseCase: context
+                .read<SaveTrackerSectionOrderUseCase>(),
+            moveCustomTaskUseCase: context.read<MoveCustomTaskUseCase>(),
           ),
         ),
         ChangeNotifierProvider<DailyRemindersViewModel>(

@@ -483,6 +483,8 @@ class PrayerWidgetDaySnapshot {
     required this.asrUtcMillis,
     required this.maghribUtcMillis,
     required this.ishaUtcMillis,
+    this.hijriDateLabel,
+    this.sehriEndUtcMillis,
   });
 
   final String localDateKey;
@@ -492,6 +494,22 @@ class PrayerWidgetDaySnapshot {
   final int asrUtcMillis;
   final int maghribUtcMillis;
   final int ishaUtcMillis;
+  final String? hijriDateLabel;
+  final int? sehriEndUtcMillis;
+
+  PrayerWidgetDaySnapshot withHijriDateLabel(String label) {
+    return PrayerWidgetDaySnapshot(
+      localDateKey: localDateKey,
+      fajrUtcMillis: fajrUtcMillis,
+      sunriseUtcMillis: sunriseUtcMillis,
+      dhuhrUtcMillis: dhuhrUtcMillis,
+      asrUtcMillis: asrUtcMillis,
+      maghribUtcMillis: maghribUtcMillis,
+      ishaUtcMillis: ishaUtcMillis,
+      hijriDateLabel: label,
+      sehriEndUtcMillis: sehriEndUtcMillis,
+    );
+  }
 
   Map<String, Object?> toJson() {
     return {
@@ -502,6 +520,8 @@ class PrayerWidgetDaySnapshot {
       'asrUtcMillis': asrUtcMillis,
       'maghribUtcMillis': maghribUtcMillis,
       'ishaUtcMillis': ishaUtcMillis,
+      'hijriDateLabel': hijriDateLabel,
+      'sehriEndUtcMillis': sehriEndUtcMillis,
     };
   }
 
@@ -514,6 +534,8 @@ class PrayerWidgetDaySnapshot {
       asrUtcMillis: (json['asrUtcMillis'] as num).toInt(),
       maghribUtcMillis: (json['maghribUtcMillis'] as num).toInt(),
       ishaUtcMillis: (json['ishaUtcMillis'] as num).toInt(),
+      hijriDateLabel: json['hijriDateLabel'] as String?,
+      sehriEndUtcMillis: (json['sehriEndUtcMillis'] as num?)?.toInt(),
     );
   }
 }

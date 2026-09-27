@@ -1089,6 +1089,28 @@
     }
   },
   "dailyTrackerDeleteAction": "Delete",
+  "dailyTrackerTaskSectionLabel": "Section",
+  "dailyTrackerOrganizeSectionsAction": "Organize sections",
+  "dailyTrackerOrganizeSectionsSubtitle": "Drag sections into place, or use each menu for a quick move.",
+  "dailyTrackerEmptySectionsHint": "Empty sections appear in your checklist when you add a task.",
+  "dailyTrackerSaveSectionOrderAction": "Save order",
+  "dailyTrackerResetSectionOrderAction": "Restore default order",
+  "dailyTrackerReorderSectionTooltip": "Drag to reorder section",
+  "dailyTrackerSectionOptionsTooltip": "Section options",
+  "dailyTrackerMoveSectionTopAction": "Move to top",
+  "dailyTrackerMoveSectionUpAction": "Move up",
+  "dailyTrackerMoveSectionDownAction": "Move down",
+  "dailyTrackerSectionTaskCount": "{count, plural, =0{No tasks} =1{1 task} other{{count} tasks}}",
+  "dailyTrackerTaskOptionsTooltip": "Task options",
+  "dailyTrackerMoveTaskAction": "Move to section",
+  "dailyTrackerMoveTaskTitle": "Move task",
+  "dailyTrackerMoveTaskConfirmAction": "Move",
+  "dailyTrackerSaveChangesError": "Couldn’t save your changes. Please try again.",
+  "@dailyTrackerSectionTaskCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
   "dailyRemindersTitle": "Daily Reminders",
   "dailyRemindersSubtitle": "Small pauses. Lasting light.",
   "dailyRemindersToday": "Today's reminder",

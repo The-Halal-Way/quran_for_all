@@ -87,6 +87,7 @@ void main() {
       expect(task.titleEn, 'Read tafsir');
       expect(task.titleBn, 'Ten pages');
       expect(task.isOptional, isTrue);
+      expect(task.category, TaskCategory.custom);
       await scrollToTask(tester, task.id);
       expect(find.text('Ten pages'), findsOneWidget);
       final taskBottom = tester.getBottomLeft(find.byKey(ValueKey(task.id))).dy;
@@ -94,14 +95,18 @@ void main() {
           .getTopLeft(find.byType(DailyTrackerAddTaskBar))
           .dy;
       expect(taskBottom, lessThanOrEqualTo(footerTop));
-      await tester.tap(find.byTooltip('Delete task'));
+      await tester.tap(find.byTooltip('Task options'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Delete'));
       await tester.pumpAndSettle();
       expect(find.byType(AlertDialog), findsOneWidget);
       expect(state.tracker.completedTasks, 0);
       await tester.tap(find.text('Cancel'));
       await tester.pumpAndSettle();
       expect(state.repository.customTasks, hasLength(1));
-      await tester.tap(find.byTooltip('Delete task'));
+      await tester.tap(find.byTooltip('Task options'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Delete'));
       await tester.pumpAndSettle();
       await tester.tap(find.text('Delete'));
       await tester.pumpAndSettle();
