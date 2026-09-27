@@ -2228,6 +2228,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerMovementsTitle => 'Salah Movement Guide';
 
   @override
+  String get prayerMovementsVariantTitle => 'Choose your guide';
+
+  @override
+  String get prayerMovementsVariantSubtitle => 'Follow each posture with the illustrations that suit you.';
+
+  @override
+  String get prayerMovementsMaleLabel => 'Male';
+
+  @override
+  String get prayerMovementsFemaleLabel => 'Female';
+
+  @override
+  String get prayerMovementsMaleGuideLabel => 'Male prayer guide';
+
+  @override
+  String get prayerMovementsFemaleGuideLabel => 'Female prayer guide';
+
+  @override
   String get prayerMovementsHeroEyebrow => 'Prayer in motion';
 
   @override

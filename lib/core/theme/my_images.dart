@@ -28,21 +28,31 @@ class MyImages {
   static const String tashahhud = 'assets/images/prayer/tashahhud.png';
 
   static const String femaleAfterPrayer =
-      'assets/images/prayer/female_after_pray.png';
+      'assets/images/prayer/female/female_after_pray.png';
   static const String femaleAlQiyam =
-      'assets/images/prayer/female_al_qiyam.png';
-  static const String femaleQiyam = 'assets/images/prayer/female_qiyam.png';
-  static const String femaleRuku = 'assets/images/prayer/female_ruku.png';
+      'assets/images/prayer/female/female_al_qiyam.png';
+  static const String femaleQiyam =
+      'assets/images/prayer/female/female_qiyam.png';
+  static const String femaleRuku =
+      'assets/images/prayer/female/female_ruku.png';
   static const String femaleSajjadah =
-      'assets/images/prayer/female_sajjadah.png';
+      'assets/images/prayer/female/female_sajjadah.png';
   static const String femaleSalamRight =
-      'assets/images/prayer/female_salam_right.png';
+      'assets/images/prayer/female/female_salam_right.png';
   static const String femaleSalamLeft =
-      'assets/images/prayer/female_salam_left.png';
+      'assets/images/prayer/female/female_salam_left.png';
   static const String femaleTakbeerh =
-      'assets/images/prayer/female_takbeerh.png';
+      'assets/images/prayer/female/female_takbeerh.png';
   static const String femaleTashahhudFingerLift =
-      'assets/images/prayer/female_tashahhud_finger_lift.png';
+      'assets/images/prayer/female/female_tashahhud_finger_lift.png';
   static const String femaleTashahhud =
-      'assets/images/prayer/female_tashahhud.png';
+      'assets/images/prayer/female/female_tashahhud.png';
+
+  /// Corrected illustrations; the supplied originals remain available above.
+  static const String femaleRukuCorrected =
+      'assets/images/prayer/female/female_ruku_corrected.png';
+  static const String femaleSajjadahCorrected =
+      'assets/images/prayer/female/female_sajjadah_corrected.png';
+  static const String femaleTashahhudFingerLiftCorrected =
+      'assets/images/prayer/female/female_tashahhud_finger_lift_corrected.png';
 }

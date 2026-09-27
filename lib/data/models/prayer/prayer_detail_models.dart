@@ -210,6 +210,7 @@ class PrayerMovementStep {
     required this.pronunciation,
     required this.translation,
     required this.note,
+    this.mirrorImage = false,
   });
 
   final int number;
@@ -221,6 +222,7 @@ class PrayerMovementStep {
   final String pronunciation;
   final String translation;
   final String note;
+  final bool mirrorImage;
 }
 
 class PrayerFocusContent {

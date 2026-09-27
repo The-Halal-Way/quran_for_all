@@ -4445,6 +4445,42 @@ abstract class AppLocalizations {
   /// **'Salah Movement Guide'**
   String get prayerMovementsTitle;
 
+  /// No description provided for @prayerMovementsVariantTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your guide'**
+  String get prayerMovementsVariantTitle;
+
+  /// No description provided for @prayerMovementsVariantSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow each posture with the illustrations that suit you.'**
+  String get prayerMovementsVariantSubtitle;
+
+  /// No description provided for @prayerMovementsMaleLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Male'**
+  String get prayerMovementsMaleLabel;
+
+  /// No description provided for @prayerMovementsFemaleLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Female'**
+  String get prayerMovementsFemaleLabel;
+
+  /// No description provided for @prayerMovementsMaleGuideLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Male prayer guide'**
+  String get prayerMovementsMaleGuideLabel;
+
+  /// No description provided for @prayerMovementsFemaleGuideLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Female prayer guide'**
+  String get prayerMovementsFemaleGuideLabel;
+
   /// No description provided for @prayerMovementsHeroEyebrow.
   ///
   /// In en, this message translates to:

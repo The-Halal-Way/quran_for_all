@@ -57,6 +57,7 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/images/prayer/
+    - assets/images/prayer/female/
     - assets/json/
 
   # An image asset can refer to one or more resolution-specific "variants", see

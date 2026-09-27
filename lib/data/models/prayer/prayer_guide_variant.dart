@@ -1,0 +1,1 @@
+enum PrayerGuideVariant { male, female }

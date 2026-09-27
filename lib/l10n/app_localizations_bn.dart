@@ -2228,6 +2228,24 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerMovementsTitle => 'নামাজের অঙ্গভঙ্গি গাইড';
 
   @override
+  String get prayerMovementsVariantTitle => 'আপনার গাইড বেছে নিন';
+
+  @override
+  String get prayerMovementsVariantSubtitle => 'আপনার উপযোগী ছবির সঙ্গে প্রতিটি অঙ্গভঙ্গি অনুসরণ করুন।';
+
+  @override
+  String get prayerMovementsMaleLabel => 'পুরুষ';
+
+  @override
+  String get prayerMovementsFemaleLabel => 'নারী';
+
+  @override
+  String get prayerMovementsMaleGuideLabel => 'পুরুষের নামাজের গাইড';
+
+  @override
+  String get prayerMovementsFemaleGuideLabel => 'নারীর নামাজের গাইড';
+
+  @override
   String get prayerMovementsHeroEyebrow => 'চলনে নামাজ';
 
   @override
