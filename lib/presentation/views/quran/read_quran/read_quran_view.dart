@@ -7,7 +7,6 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/enums/app_language.dart';
 import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/utils/app_responsive.dart';
 import '../../../../data/models/surah_model.dart';
 import '../../../viewmodels/read_quran/bookmarks_viewmodel.dart';
@@ -17,10 +16,7 @@ import '../../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../../viewmodels/settings_viewmodel.dart';
 import '../../../widgets/common/app_gradient_background.dart';
 import '../../../widgets/common/app_page_scrollbar.dart';
-import '../../../widgets/common/section_header.dart';
-import '../../../widgets/quran/read_quran/home/continue_reading_card.dart';
-import '../../../widgets/quran/read_quran/home/read_quran_top_banner.dart';
-import '../../../widgets/quran/read_quran/home/surah_card.dart';
+import '../../../widgets/quran/read_quran/home/read_quran_content_list.dart';
 import '../../../../core/utils/app_page_route.dart';
 import 'bookmarks_view.dart';
 import 'search_view.dart';
@@ -50,11 +46,11 @@ class ReadQuranView extends StatelessWidget {
         ),
         centerTitle: false,
         title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                context.l10n.readQuranTitle,
-                style: textTheme.titleLarge.copyWith(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              context.l10n.readQuranTitle,
+              style: textTheme.titleLarge.copyWith(
                 fontWeight: AppTheme.weightBold,
               ),
             ),
@@ -90,83 +86,25 @@ class ReadQuranView extends StatelessWidget {
                       constraints: BoxConstraints(
                         maxWidth: responsive.maxReadingContentWidth,
                       ),
-                      child: ListView(
+                      child: ReadQuranContentList(
                         controller: controller,
-                        physics: const AlwaysScrollableScrollPhysics(),
-                        padding: EdgeInsets.fromLTRB(
-                          responsive.padding,
-                          AppSpacing.sm + 2,
-                          responsive.padding,
-                          AppSpacing.lg,
+                        surahs: viewModel.surahs,
+                        bookmarkedSurahIds: viewModel.bookmarkedSurahIds,
+                        lastReadSurah: viewModel.lastReadSurah,
+                        lastReadAyahNumber: viewModel.lastRead?.ayahNumber,
+                        lastReadPreview: ayahPreview,
+                        onSearchTap: () => _openSearch(context),
+                        onContinueTap: () => unawaited(
+                          _openSurah(
+                            context,
+                            viewModel.lastReadSurah!,
+                            initialAyahNumber: viewModel.lastRead!.ayahNumber,
+                          ),
                         ),
-                        children: [
-                          // Banner
-                          ReadQuranTopBanner(
-                            onSearchTap: () => _openSearch(context),
-                            surahCount: viewModel.surahs.length,
-                          ),
-                          const SizedBox(height: AppSpacing.lg),
-                          // Continue reading + all surahs
-                          if (viewModel.lastRead != null &&
-                              viewModel.lastReadSurah != null) ...[
-                            ContinueReadingCard(
-                              surah: viewModel.lastReadSurah!,
-                              ayahNumber: viewModel.lastRead!.ayahNumber,
-                              ayahPreview: ayahPreview,
-                              onTap: () => unawaited(
-                                _openSurah(
-                                  context,
-                                  viewModel.lastReadSurah!,
-                                  initialAyahNumber:
-                                      viewModel.lastRead!.ayahNumber,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: AppSpacing.lg),
-                          ],
-                          // All surahs titles
-                          SectionHeader(
-                            title: context.l10n.readQuranAllSurahsTitle,
-                            trailing: Chip(
-                              label: Text(
-                                '${viewModel.surahs.length} ${context.l10n.readQuranTotalLabel}',
-                              ),
-                              visualDensity: VisualDensity.compact,
-                            ),
-                          ),
-                          const SizedBox(height: AppSpacing.sm + 2),
-                          // Compact rows keep all 114 surahs easy to scan.
-                          for (
-                            var index = 0;
-                            index < viewModel.surahs.length;
-                            index++
-                          ) ...[
-                            SurahCard(
-                              key: ValueKey<int>(viewModel.surahs[index].id),
-                              surah: viewModel.surahs[index],
-                              onTap: () => unawaited(
-                                _openSurah(context, viewModel.surahs[index]),
-                              ),
-                              isBookmarked: viewModel.isSurahBookmarked(
-                                viewModel.surahs[index].id,
-                              ),
-                              onToggleBookmark: () => unawaited(
-                                viewModel.toggleSurahBookmark(
-                                  viewModel.surahs[index],
-                                ),
-                              ),
-                            ),
-                            if (index < viewModel.surahs.length - 1)
-                              Divider(
-                                height: 1,
-                                indent: 64,
-                                color: Theme.of(context)
-                                    .colorScheme
-                                    .outlineVariant
-                                    .withValues(alpha: 0.55),
-                              ),
-                          ],
-                        ],
+                        onSurahTap: (surah) =>
+                            unawaited(_openSurah(context, surah)),
+                        onToggleBookmark: (surah) =>
+                            unawaited(viewModel.toggleSurahBookmark(surah)),
                       ),
                     ),
                   ),

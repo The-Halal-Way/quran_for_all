@@ -94,6 +94,8 @@ class ReaderQuranRepository implements QuranRepository {
 class ReaderAudioRepository implements AudioRepository {
   final playing = StreamController<bool>.broadcast(sync: true);
   final currentAyah = StreamController<int>.broadcast(sync: true);
+  final positions = StreamController<Duration>.broadcast(sync: true);
+  final durations = StreamController<Duration>.broadcast(sync: true);
   final tracks = <AyahModel>[];
   List<AyahModel> queue = [];
   Completer<void>? completion;
@@ -111,9 +113,9 @@ class ReaderAudioRepository implements AudioRepository {
   @override
   Stream<bool> get isPausedStream => const Stream.empty();
   @override
-  Stream<Duration> get positionStream => const Stream.empty();
+  Stream<Duration> get positionStream => positions.stream;
   @override
-  Stream<Duration> get durationStream => const Stream.empty();
+  Stream<Duration> get durationStream => durations.stream;
   @override
   Stream<int> get currentAyahNumberStream => currentAyah.stream;
 
@@ -161,5 +163,7 @@ class ReaderAudioRepository implements AudioRepository {
     finish();
     await playing.close();
     await currentAyah.close();
+    await positions.close();
+    await durations.close();
   }
 }

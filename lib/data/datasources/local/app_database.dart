@@ -301,6 +301,20 @@ class AppDatabase {
     final db = await database;
     final rows = await db.query(
       DbConstants.tableAyahs,
+      columns: const [
+        'id',
+        'surah_id',
+        'ayah_number',
+        'juz_number',
+        'hizb_quarter',
+        'page_number',
+        'arabic_text',
+        'transliteration_en',
+        'transliteration_bn',
+        'translation_en',
+        'translation_bn',
+        'audio_url',
+      ],
       where: 'surah_id = ?',
       whereArgs: [surahId],
       orderBy: 'ayah_number ASC',

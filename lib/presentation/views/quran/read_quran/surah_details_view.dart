@@ -23,6 +23,7 @@ import '../../../widgets/common/app_page_scrollbar.dart';
 import '../../../widgets/common/app_snackbar.dart';
 import '../../../widgets/empty_state.dart';
 import '../../../widgets/quran/read_quran/surah_details/surah_meta_card.dart';
+import '../../../widgets/quran/read_quran/surah_details/surah_details_loading.dart';
 import '../../../../services/permission_helper.dart';
 
 class SurahDetailsView extends StatefulWidget {
@@ -46,8 +47,10 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
   ScrollController? _scrollController;
   int? _revealingAyahNumber;
   int _revealAttempts = 0;
+  Timer? _revealTimer;
+  Timer? _highlightTimer;
   final Map<int, GlobalKey> _ayahKeys = <int, GlobalKey>{};
-  static const int _maxRevealAttempts = 6;
+  static const int _maxRevealAttempts = 12;
 
   @override
   void didChangeDependencies() {
@@ -71,6 +74,8 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
 
   @override
   void dispose() {
+    _revealTimer?.cancel();
+    _highlightTimer?.cancel();
     _audioControlVm.clearActivePage(PlaybackSource.surahDetails);
     super.dispose();
   }
@@ -93,7 +98,10 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
 
     return Scaffold(
       body: viewModel.isLoading
-          ? const Center(child: CircularProgressIndicator())
+          ? SurahDetailsLoading(
+              surah: widget.surah,
+              language: settings.language,
+            )
           : viewModel.errorMessage != null
           ? EmptyState(
               icon: CupertinoIcons.exclamationmark_circle,
@@ -215,6 +223,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       _revealingAyahNumber = null;
       _revealAttempts = 0;
     });
+    _revealTimer?.cancel();
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) {
@@ -356,6 +365,7 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
         _revealingAyahNumber = null;
         _revealAttempts = 0;
       });
+      _revealTimer?.cancel();
 
       _highlightAyahTemporarily(targetAyahNumber);
     });
@@ -374,7 +384,8 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       _highlightedAyahNumber = ayahNumber;
     });
 
-    Future<void>.delayed(const Duration(seconds: 2), () {
+    _highlightTimer?.cancel();
+    _highlightTimer = Timer(const Duration(seconds: 2), () {
       if (!mounted || _highlightedAyahNumber != ayahNumber) {
         return;
       }
@@ -404,20 +415,45 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       return;
     }
 
-    final totalAyahs = viewModel.ayahs.length;
-    final targetFraction = totalAyahs <= 1
-        ? 0.0
-        : targetIndex / (totalAyahs - 1);
-    final maxExtent = controller.position.maxScrollExtent;
-    final targetOffset = (maxExtent * targetFraction).clamp(0.0, maxExtent);
+    // A lazy list has no render object for distant ayahs. Use the positions
+    // and heights of its mounted cards to estimate the target, then correct
+    // after the next layout. This also works when translations change height.
+    final viewport = controller.position.context.storageContext
+        .findRenderObject();
+    final viewportTop = viewport is RenderBox
+        ? viewport.localToGlobal(Offset.zero).dy
+        : 0.0;
+    final mountedAyahs = <(int, double, double)>[];
+    for (var index = 0; index < viewModel.ayahs.length; index++) {
+      final ayahNumber = viewModel.ayahs[index].ayahNumber;
+      final renderObject = _ayahKeys[ayahNumber]?.currentContext
+          ?.findRenderObject();
+      if (renderObject is RenderBox && renderObject.hasSize) {
+        mountedAyahs.add((
+          index,
+          renderObject.localToGlobal(Offset.zero).dy - viewportTop,
+          renderObject.size.height,
+        ));
+      }
+    }
 
-    unawaited(
-      controller.animateTo(
-        targetOffset,
-        duration: const Duration(milliseconds: 240),
-        curve: Curves.easeOut,
-      ),
+    if (mountedAyahs.isEmpty) {
+      return;
+    }
+
+    final averageHeight =
+        mountedAyahs.fold<double>(0, (sum, item) => sum + item.$3) /
+        mountedAyahs.length;
+    final anchor = mountedAyahs.reduce(
+      (closest, item) => item.$2.abs() < closest.$2.abs() ? item : closest,
     );
+    final maxExtent = controller.position.maxScrollExtent;
+    final targetOffset =
+        (controller.offset +
+                anchor.$2 +
+                (targetIndex - anchor.$1) * averageHeight)
+            .clamp(0.0, maxExtent);
+    controller.jumpTo(targetOffset);
 
     _revealAttempts += 1;
     if (_revealAttempts >= _maxRevealAttempts) {
@@ -426,7 +462,8 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       return;
     }
 
-    Future<void>.delayed(const Duration(milliseconds: 280), () {
+    _revealTimer?.cancel();
+    _revealTimer = Timer(const Duration(milliseconds: 32), () {
       if (!mounted || _pendingAyahNumber != targetAyahNumber) {
         return;
       }

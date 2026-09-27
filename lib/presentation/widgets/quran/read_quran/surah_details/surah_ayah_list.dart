@@ -1,13 +1,10 @@
 import 'dart:async';
 
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/reading_view_mode.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
-import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
 import 'package:quran_for_all/data/models/ayah_model.dart';
@@ -18,6 +15,8 @@ import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 import 'package:quran_for_all/presentation/widgets/ayah_tile.dart';
 
 import 'surah_bismillah_card.dart';
+import 'surah_details_ayah_item.dart';
+import 'surah_regular_ayah_text.dart';
 
 class SurahAyahList extends StatelessWidget {
   const SurahAyahList({
@@ -49,7 +48,6 @@ class SurahAyahList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<SurahDetailsViewModel>();
-    final audioControl = context.watch<AudioControlViewModel>();
     final settings = context.watch<SettingsViewModel>().settings;
     final responsive = AppResponsive.of(context);
     // regular view
@@ -64,89 +62,16 @@ class SurahAyahList extends StatelessWidget {
         ),
         children: [
           if (viewModel.openingBismillah != null)
-            _buildBismillahCard(context, viewModel, settings, audioControl),
+            _buildBismillahCard(context, viewModel, settings),
           Card(
             child: Padding(
               padding: const EdgeInsets.all(AppSpacing.lg),
-              child: Text.rich(
-                TextSpan(
-                  children: List.generate(viewModel.ayahs.length, (index) {
-                    final ayah = viewModel.ayahs[index];
-                    final colorScheme = Theme.of(context).colorScheme;
-                    final isPlaying = viewModel.isAyahPlaying(ayah.ayahNumber);
-                    final isHighlighted =
-                        ayah.ayahNumber == _highlightedAyahNumber;
-
-                    // 1) The ayah text (tappable). While playing, only the
-                    // portion of the ayah already recited is highlighted
-                    // (progressing left-to-right through the text), mirroring
-                    // the details-view word-by-word highlight behavior.
-                    // While temporarily marked (e.g. last read), the whole
-                    // ayah gets a flat highlight instead.
-                    final ayahTextSpans = _buildAyahTextSpans(
-                      ayah: ayah,
-                      isPlaying: isPlaying,
-                      isHighlighted: isHighlighted,
-                      colorScheme: colorScheme,
-                      audioControl: audioControl,
-                      recognizer: TapGestureRecognizer()
-                        ..onTap = () => _showAyahDetailsSheet(
-                          context,
-                          ayah,
-                          viewModel,
-                          settings,
-                        ),
-                    );
-
-                    // 2) The circled number
-                    final numberSpan = WidgetSpan(
-                      alignment: PlaceholderAlignment.middle,
-                      child: Container(
-                        width: 24,
-                        height: 24,
-                        alignment: Alignment.center,
-                        margin: const EdgeInsetsDirectional.only(
-                          start: AppSpacing.xs,
-                        ),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Theme.of(
-                            context,
-                          ).colorScheme.primary.withValues(alpha: 0.14),
-                          border: Border.all(
-                            color: Theme.of(
-                              context,
-                            ).colorScheme.primary.withValues(alpha: 0.45),
-                          ),
-                        ),
-                        child: Text(
-                          '${ayah.ayahNumber}',
-                          style: AppTheme.text(context).labelSmall.copyWith(
-                            fontWeight: AppTheme.weightBold,
-                            color: Theme.of(context).colorScheme.primary,
-                          ),
-                        ),
-                      ),
-                    );
-
-                    // 3) Invisible anchor widget for scrolling  ← NEW
-                    final anchorSpan = WidgetSpan(
-                      alignment: PlaceholderAlignment.middle,
-                      child: SizedBox(
-                        key: _ayahKeyFor(
-                          ayah.ayahNumber,
-                        ), // same key used before
-                        width: 0,
-                        height: 0,
-                      ),
-                    );
-
-                    return [...ayahTextSpans, numberSpan, anchorSpan];
-                  }).expand((spans) => spans).toList(),
-                ),
-                textDirection: TextDirection.rtl,
-                // 🔽 This adds the line spacing
-                style: AppTheme.quranArabic(context).copyWith(height: 2.5.h),
+              child: SurahRegularAyahText(
+                ayahs: viewModel.ayahs,
+                ayahKeys: _ayahKeys,
+                playingAyahNumber: viewModel.playingAyahNumber,
+                highlightedAyahNumber: _highlightedAyahNumber,
+                onAyahTap: (ayah) => _showAyahDetailsSheet(context, ayah),
               ),
             ),
           ),
@@ -154,61 +79,46 @@ class SurahAyahList extends StatelessWidget {
       );
     }
     // details view
-    return ListView(
+    final openingCount = viewModel.openingBismillah == null ? 0 : 1;
+    return ListView.builder(
       controller: controller,
+      cacheExtent: 200,
+      addAutomaticKeepAlives: false,
       padding: EdgeInsets.fromLTRB(
         responsive.padding,
         0,
         responsive.padding,
         AppSpacing.lg,
       ),
-      children: [
-        if (viewModel.openingBismillah != null)
-          _buildBismillahCard(context, viewModel, settings, audioControl),
-        for (final ayah in viewModel.ayahs)
-          Padding(
-            key: _ayahKeyFor(ayah.ayahNumber),
-            padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
-            child: Builder(
-              builder: (context) {
-                final colorScheme = Theme.of(context).colorScheme;
-                final isPlaying = viewModel.isAyahPlaying(ayah.ayahNumber);
-                final isHighlighted = ayah.ayahNumber == _highlightedAyahNumber;
-                final showHighlight = isPlaying || isHighlighted;
-
-                return AnimatedContainer(
-                  duration: const Duration(milliseconds: 250),
-                  curve: Curves.easeOut,
-                  decoration: BoxDecoration(
-                    color: isPlaying
-                        ? colorScheme.secondary.withValues(alpha: 0.12)
-                        : (isHighlighted
-                              ? colorScheme.primary.withValues(alpha: 0.08)
-                              : null),
-                    borderRadius: BorderRadius.circular(AppRadius.lg),
-                    border: showHighlight
-                        ? Border.all(
-                            color: isPlaying
-                                ? colorScheme.secondary.withValues(alpha: 0.58)
-                                : colorScheme.primary.withValues(alpha: 0.42),
-                            width: isPlaying ? 1.4 : 1.2,
-                          )
-                        : null,
-                  ),
-                  child: _buildDetailsAyahTile(
-                    context,
-                    ayah,
-                    viewModel,
-                    settings,
-                    audioControl.progress,
-                    audioControl.position,
-                    audioControl.duration,
-                  ),
-                );
-              },
-            ),
+      itemCount: viewModel.ayahs.length + openingCount,
+      itemBuilder: (context, index) {
+        if (index < openingCount) {
+          return _buildBismillahCard(context, viewModel, settings);
+        }
+        final ayah = viewModel.ayahs[index - openingCount];
+        return SurahDetailsAyahItem(
+          key: _ayahKeyFor(ayah.ayahNumber),
+          ayah: ayah,
+          language: settings.language,
+          showPronunciation: settings.showPronunciation,
+          showTranslation: settings.showTranslation,
+          isBookmarked: viewModel.isAyahBookmarked(ayah.ayahNumber),
+          isLastReadAyah: viewModel.isLastReadAyah(ayah.ayahNumber),
+          isPlaying: viewModel.isAyahPlaying(ayah.ayahNumber),
+          isHighlighted: ayah.ayahNumber == _highlightedAyahNumber,
+          onPlay: () => unawaited(
+            viewModel.isAyahPlaying(ayah.ayahNumber)
+                ? viewModel.stopPlayback()
+                : _playAyahWithFeedback(context, viewModel, ayah),
           ),
-      ],
+          onToggleBookmark: () => unawaited(
+            _toggleAyahBookmarkWithFeedback(context, viewModel, ayah),
+          ),
+          onMarkAsLastRead: () =>
+              unawaited(_markAsLastReadWithFeedback(context, viewModel, ayah)),
+          loadTafsir: () => viewModel.loadTafsir(ayah, settings.language),
+        );
+      },
     );
   }
 
@@ -216,25 +126,31 @@ class SurahAyahList extends StatelessWidget {
     BuildContext context,
     SurahDetailsViewModel viewModel,
     AppSettings settings,
-    AudioControlViewModel audioControl,
-  ) => Padding(
-    padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
-    child: SurahBismillahCard(
+  ) {
+    Widget card(double progress) => SurahBismillahCard(
       opening: viewModel.openingBismillah!,
       language: settings.language,
       showPronunciation: settings.showPronunciation,
       showTranslation: settings.showTranslation,
       isPlaying: viewModel.isPlayingBismillah,
-      playbackProgress: viewModel.isPlayingBismillah
-          ? audioControl.progress
-          : 0,
+      playbackProgress: progress,
       onPlay: () => unawaited(
         viewModel.isPlayingBismillah
             ? viewModel.stopPlayback()
             : playBismillahWithFeedback(context, viewModel),
       ),
-    ),
-  );
+    );
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
+      child: viewModel.isPlayingBismillah
+          ? Consumer<AudioControlViewModel>(
+              builder: (context, audioControl, _) =>
+                  card(audioControl.progress),
+            )
+          : card(0),
+    );
+  }
 
   Widget _buildDetailsAyahTile(
     BuildContext context,
@@ -271,6 +187,7 @@ class SurahAyahList extends StatelessWidget {
           unawaited(_toggleAyahBookmarkWithFeedback(context, viewModel, ayah)),
       onMarkAsLastRead: () =>
           unawaited(_markAsLastReadWithFeedback(context, viewModel, ayah)),
+      loadTafsir: () => viewModel.loadTafsir(ayah, settings.language),
     );
   }
 
@@ -330,12 +247,7 @@ class SurahAyahList extends StatelessWidget {
     }
   }
 
-  void _showAyahDetailsSheet(
-    BuildContext context,
-    AyahModel ayah,
-    SurahDetailsViewModel viewModel,
-    AppSettings settings,
-  ) {
+  void _showAyahDetailsSheet(BuildContext context, AyahModel ayah) {
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
@@ -376,83 +288,5 @@ class SurahAyahList extends StatelessWidget {
 
   GlobalKey _ayahKeyFor(int ayahNumber) {
     return _ayahKeys.putIfAbsent(ayahNumber, GlobalKey.new);
-  }
-
-  // Mirrors AyahTile's early-completion easing so the regular-view highlight
-  // finishes a moment before the audio actually ends.
-  static const double _earlyHighlightPercent = 0.14;
-  static const double _minEarlySeconds = 1.0;
-  static const double _maxEarlySeconds = 6.0;
-
-  double _acceleratedProgress(AudioControlViewModel audioControl) {
-    final durationMs = audioControl.duration.inMilliseconds;
-    final positionMs = audioControl.position.inMilliseconds;
-
-    if (durationMs <= 0) {
-      return (audioControl.progress.clamp(0.0, 1.0) * 1.35).clamp(0.0, 1.0);
-    }
-
-    final durationSeconds = durationMs / 1000.0;
-    final earlySeconds = (durationSeconds * _earlyHighlightPercent).clamp(
-      _minEarlySeconds,
-      _maxEarlySeconds,
-    );
-    final effectiveDurationMs =
-        ((durationSeconds - earlySeconds).clamp(0.25, durationSeconds) * 1000)
-            .toDouble();
-    final clampedPosition = positionMs.clamp(0, durationMs);
-    return (clampedPosition / effectiveDurationMs).clamp(0.0, 1.0);
-  }
-
-  /// Builds the Arabic text spans for a single ayah in regular view.
-  ///
-  /// While the ayah is playing, only the portion already recited (from the
-  /// start of the ayah up to the current playback position) is highlighted,
-  /// so the user can visually track where the audio currently is. While
-  /// temporarily marked (e.g. last read/jumped-to), the whole ayah gets a
-  /// flat highlight instead.
-  List<InlineSpan> _buildAyahTextSpans({
-    required AyahModel ayah,
-    required bool isPlaying,
-    required bool isHighlighted,
-    required ColorScheme colorScheme,
-    required AudioControlViewModel audioControl,
-    required TapGestureRecognizer recognizer,
-  }) {
-    if (isPlaying && audioControl.progress > 0) {
-      final graphemes = ayah.arabicText.characters.toList();
-      final total = graphemes.length;
-      if (total == 0) {
-        return [TextSpan(text: '${ayah.arabicText} ', recognizer: recognizer)];
-      }
-
-      final progress = _acceleratedProgress(audioControl);
-      final highlightCount = (total * progress).ceil().clamp(0, total);
-      final highlighted = graphemes.take(highlightCount).join();
-      final remaining = graphemes.skip(highlightCount).join();
-
-      return [
-        TextSpan(
-          text: highlighted,
-          style: TextStyle(
-            backgroundColor: colorScheme.secondary.withValues(alpha: 0.28),
-          ),
-          recognizer: recognizer,
-        ),
-        TextSpan(text: '$remaining ', recognizer: recognizer),
-      ];
-    }
-
-    return [
-      TextSpan(
-        text: '${ayah.arabicText} ',
-        style: isHighlighted
-            ? TextStyle(
-                backgroundColor: colorScheme.primary.withValues(alpha: 0.14),
-              )
-            : null,
-        recognizer: recognizer,
-      ),
-    ];
   }
 }

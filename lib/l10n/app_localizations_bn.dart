@@ -338,6 +338,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranCouldNotLoadSurahTitle => 'সূরা লোড করা যায়নি';
 
   @override
+  String get readQuranOpeningSurahTitle => 'সূরা খোলা হচ্ছে';
+
+  @override
+  String get readQuranOpeningSurahBody => 'অফলাইন সংরক্ষণ থেকে আয়াত লোড হচ্ছে...';
+
+  @override
   String get readQuranUnablePlayAyahAudio => 'এই মুহূর্তে এই আয়াতের অডিও চালানো যাচ্ছে না।';
 
   @override

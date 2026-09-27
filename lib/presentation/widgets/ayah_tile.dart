@@ -28,6 +28,7 @@ class AyahTile extends StatelessWidget {
     required this.onPlay,
     required this.onToggleBookmark,
     this.onMarkAsLastRead,
+    this.loadTafsir,
   });
 
   final AyahModel ayah;
@@ -43,8 +44,14 @@ class AyahTile extends StatelessWidget {
   final VoidCallback onPlay;
   final VoidCallback onToggleBookmark;
   final VoidCallback? onMarkAsLastRead;
+  final Future<String> Function()? loadTafsir;
 
   void _showTafsirSheet(BuildContext context) {
+    final tafsirFuture = loadTafsir == null
+        ? null
+        : Future<String>.sync(
+            loadTafsir!,
+          ).catchError((_) => ayah.tafsirFor(language));
     showModalBottomSheet<void>(
       context: context,
       useRootNavigator: true,
@@ -53,7 +60,27 @@ class AyahTile extends StatelessWidget {
       showDragHandle: true,
       useSafeArea: true,
       builder: (sheetContext) {
-        return _TafsirBottomSheet(ayah: ayah, tafsir: ayah.tafsirFor(language));
+        if (tafsirFuture == null) {
+          return _TafsirBottomSheet(
+            ayah: ayah,
+            tafsir: ayah.tafsirFor(language),
+          );
+        }
+        return FutureBuilder<String>(
+          future: tafsirFuture,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState != ConnectionState.done) {
+              return const SizedBox(
+                height: 240,
+                child: Center(child: CircularProgressIndicator()),
+              );
+            }
+            return _TafsirBottomSheet(
+              ayah: ayah,
+              tafsir: snapshot.data ?? ayah.tafsirFor(language),
+            );
+          },
+        );
       },
     );
   }

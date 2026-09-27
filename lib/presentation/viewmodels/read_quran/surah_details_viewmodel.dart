@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 
 import '../../../core/enums/playback_source.dart';
+import '../../../core/enums/app_language.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
 import '../../../core/quran/quran_bismillah.dart';
 import '../../../data/models/ayah_model.dart';
@@ -61,7 +62,6 @@ class SurahDetailsViewModel extends ChangeNotifier {
   Set<int> _bookmarkedAyahNumbers = const <int>{};
   int _loadRequestId = 0;
   int _playbackRequestId = 0;
-  bool _didEnsureTafsir = false;
 
   SurahModel? get surah => _surah;
   bool get isLoading => _isLoading;
@@ -82,17 +82,29 @@ class SurahDetailsViewModel extends ChangeNotifier {
 
   bool isLastReadAyah(int ayahNumber) => _lastReadAyahNumber == ayahNumber;
 
+  Future<String> loadTafsir(AyahModel ayah, AppLanguage language) async {
+    final fullAyah = await _quranRepository.getAyah(
+      ayah.surahId,
+      ayah.ayahNumber,
+    );
+    return (fullAyah ?? ayah).tafsirFor(language);
+  }
+
   Future<void> openSurah(SurahModel surah) async {
     final requestId = ++_loadRequestId;
+    _surah = surah;
+    _ayahs = const [];
+    _openingBismillah = null;
+    _isLoading = true;
+    _errorMessage = null;
+    notifyListeners();
+
     if (_isPlayingFullSurah ||
         _isPlayingBismillah ||
         _playingAyahNumber != null) {
       await stopPlayback();
     }
     if (requestId != _loadRequestId) return;
-    _surah = surah;
-    _ayahs = const [];
-    _openingBismillah = null;
     await load();
   }
 
@@ -107,21 +119,12 @@ class SurahDetailsViewModel extends ChangeNotifier {
     }
 
     final requestId = ++_loadRequestId;
+    final shouldNotifyLoading = !_isLoading || _errorMessage != null;
     _isLoading = true;
     _errorMessage = null;
-    notifyListeners();
+    if (shouldNotifyLoading) notifyListeners();
 
     try {
-      if (!_didEnsureTafsir) {
-        _didEnsureTafsir = true;
-        // Best-effort tafsir backfill for users who already had Quran data.
-        try {
-          await _quranRepository.importDataIfNeeded();
-        } catch (_) {
-          // Ignore backfill failure and continue loading ayahs.
-        }
-      }
-
       final ayahs = await _quranRepository.getAyahsBySurah(selectedSurah.id);
       final openingAyah = QuranBismillah.hasSeparateOpening(selectedSurah.id)
           ? await _quranRepository.getAyah(1, 1)

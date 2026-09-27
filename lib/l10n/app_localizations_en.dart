@@ -338,6 +338,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranCouldNotLoadSurahTitle => 'Could not load surah';
 
   @override
+  String get readQuranOpeningSurahTitle => 'Opening surah';
+
+  @override
+  String get readQuranOpeningSurahBody => 'Loading ayahs from offline storage...';
+
+  @override
   String get readQuranUnablePlayAyahAudio => 'Unable to play this ayah audio right now.';
 
   @override

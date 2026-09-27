@@ -122,6 +122,8 @@
   "readQuranMeccan": "Meccan",
   "readQuranMedinan": "Medinan",
   "readQuranCouldNotLoadSurahTitle": "Could not load surah",
+  "readQuranOpeningSurahTitle": "Opening surah",
+  "readQuranOpeningSurahBody": "Loading ayahs from offline storage...",
   "readQuranUnablePlayAyahAudio": "Unable to play this ayah audio right now.",
   "readQuranUnablePlayFullSurahAudio": "Unable to play full surah audio right now.",
   "readQuranAudioPermissionRequired": "Notification permission is required for audio controls.",

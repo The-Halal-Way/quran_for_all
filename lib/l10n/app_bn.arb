@@ -122,6 +122,8 @@
   "readQuranMeccan": "মক্কী",
   "readQuranMedinan": "মাদানী",
   "readQuranCouldNotLoadSurahTitle": "সূরা লোড করা যায়নি",
+  "readQuranOpeningSurahTitle": "সূরা খোলা হচ্ছে",
+  "readQuranOpeningSurahBody": "অফলাইন সংরক্ষণ থেকে আয়াত লোড হচ্ছে...",
   "readQuranUnablePlayAyahAudio": "এই মুহূর্তে এই আয়াতের অডিও চালানো যাচ্ছে না।",
   "readQuranUnablePlayFullSurahAudio": "এই মুহূর্তে পূর্ণ সূরার অডিও চালানো যাচ্ছে না।",
   "readQuranAudioPermissionRequired": "অডিও কন্ট্রোলের জন্য নোটিফিকেশন অনুমতি প্রয়োজন।",

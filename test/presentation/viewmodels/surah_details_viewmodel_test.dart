@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:quran_for_all/data/models/ayah_model.dart';
 import 'package:quran_for_all/presentation/viewmodels/audio_control_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 
@@ -164,4 +165,41 @@ void main() {
     expect(model.ayahs.single.surahId, 114);
     expect(model.openingBismillah!.surahId, 114);
   });
+
+  test('opening shows loading immediately and skips the import path', () async {
+    model.dispose();
+    final gatedQuran = _GatedQuranRepository();
+    model = SurahDetailsViewModel(
+      quranRepository: gatedQuran,
+      audioRepository: audio,
+      audioControlViewModel: controls,
+    );
+
+    final opening = model.openSurah(readerSurah(2));
+    expect(model.isLoading, isTrue);
+    expect(model.surah?.id, 2);
+    expect(gatedQuran.importCalls, 0);
+
+    gatedQuran.release.complete();
+    await opening;
+    expect(model.isLoading, isFalse);
+    expect(model.ayahs, hasLength(1));
+    expect(gatedQuran.importCalls, 0);
+  });
+}
+
+class _GatedQuranRepository extends ReaderQuranRepository {
+  final release = Completer<void>();
+  int importCalls = 0;
+
+  @override
+  Future<void> importDataIfNeeded({void Function(String)? onProgress}) async {
+    importCalls++;
+  }
+
+  @override
+  Future<List<AyahModel>> getAyahsBySurah(int surahId) async {
+    await release.future;
+    return super.getAyahsBySurah(surahId);
+  }
 }

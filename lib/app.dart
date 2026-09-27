@@ -281,10 +281,10 @@ class QuranForAllApp extends StatelessWidget {
                 // navigator stack. The bar floats above all content and is
                 // only visible when audio is playing and the user has
                 // navigated away from the source page.
-                return Consumer<AudioControlViewModel>(
-                  builder: (context, audioControlVm, _) {
-                    final showBar = audioControlVm.showMiniPlayer;
-
+                return Selector<AudioControlViewModel, bool>(
+                  selector: (_, audioControlVm) =>
+                      audioControlVm.showMiniPlayer,
+                  builder: (context, showBar, _) {
                     return DailyReminderNotificationRouter(
                       navigatorKey: appNavigatorKey,
                       locale: settingsViewModel.settings.language.locale

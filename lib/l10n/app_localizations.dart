@@ -749,6 +749,18 @@ abstract class AppLocalizations {
   /// **'Could not load surah'**
   String get readQuranCouldNotLoadSurahTitle;
 
+  /// No description provided for @readQuranOpeningSurahTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Opening surah'**
+  String get readQuranOpeningSurahTitle;
+
+  /// No description provided for @readQuranOpeningSurahBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading ayahs from offline storage...'**
+  String get readQuranOpeningSurahBody;
+
   /// No description provided for @readQuranUnablePlayAyahAudio.
   ///
   /// In en, this message translates to:
