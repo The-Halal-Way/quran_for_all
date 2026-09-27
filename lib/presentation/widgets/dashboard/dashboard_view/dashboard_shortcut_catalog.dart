@@ -5,10 +5,10 @@ import '../../../../core/theme/my_colors.dart';
 import '../../../views/dashboard/compass/compass_view.dart';
 import '../../../views/dashboard/hijri_calendar/hijri_calendar_view.dart';
 import '../../../views/dashboard/tasbeeh/tasbeeh_view.dart';
+import '../../../views/prayer/eid_prayer/eid_prayer_view.dart';
 import '../../../views/sunnah_dua/duah/daily_duah_view.dart';
 import '../../../views/sunnah_dua/duah/duah_ninty_nine_view.dart';
 import '../../../views/sunnah_dua/duah/powerful_duah_view.dart';
-import '../../../views/sunnah_dua/sunnah_dua_view.dart';
 import '../../common/app_icon_grid_section.dart';
 import 'dashboard_navigation.dart';
 
@@ -35,12 +35,11 @@ List<AppIconGridItem> dashboardActions(BuildContext context) => [
     onTap: () => pushDashboardPage(context, const DuahNintyNineView()),
   ),
   AppIconGridItem(
-    icon: CupertinoIcons.sparkles,
-    label: context.l10n.dashboardActionSunnahDua,
-    description: context.l10n.dashboardActionSunnahDuaSub,
+    icon: CupertinoIcons.moon_stars,
+    label: context.l10n.prayerReferenceEidActionTitle,
+    description: context.l10n.prayerReferenceEidActionSubtitle,
     accent: MyColors.tertiaryDark,
-    onTap: () =>
-        pushDashboardPage(context, const SunnahDuaView(showBackButton: true)),
+    onTap: () => pushDashboardPage(context, const EidPrayerView()),
   ),
   AppIconGridItem(
     icon: CupertinoIcons.calendar,

@@ -5,6 +5,7 @@ import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/views/dashboard/daily_tracker/daily_tracker_full_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
 import 'package:quran_for_all/presentation/views/daily_reminders/daily_reminders_view.dart';
+import 'package:quran_for_all/presentation/views/prayer/eid_prayer/eid_prayer_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_icon_grid_section.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_daily_reminder_button.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_forbidden_time_row.dart';
@@ -89,6 +90,19 @@ void main() {
     );
     expect(section.items, hasLength(7));
     expect(section.title, 'Explore');
+    expect(
+      section.items.map((item) => item.label),
+      contains('Eid Prayer Guide'),
+    );
+    expect(
+      section.items.map((item) => item.label),
+      isNot(contains('Sunnah & Du\'a')),
+    );
+    section.items
+        .firstWhere((item) => item.label == 'Eid Prayer Guide')
+        .onTap();
+    await tester.pumpAndSettle();
+    expect(find.byType(EidPrayerView), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 

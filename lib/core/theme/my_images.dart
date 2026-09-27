@@ -26,4 +26,23 @@ class MyImages {
   static const String tashahhudFingerLift =
       'assets/images/prayer/tashahhud_finger_lift.png';
   static const String tashahhud = 'assets/images/prayer/tashahhud.png';
+
+  static const String femaleAfterPrayer =
+      'assets/images/prayer/female_after_pray.png';
+  static const String femaleAlQiyam =
+      'assets/images/prayer/female_al_qiyam.png';
+  static const String femaleQiyam = 'assets/images/prayer/female_qiyam.png';
+  static const String femaleRuku = 'assets/images/prayer/female_ruku.png';
+  static const String femaleSajjadah =
+      'assets/images/prayer/female_sajjadah.png';
+  static const String femaleSalamRight =
+      'assets/images/prayer/female_salam_right.png';
+  static const String femaleSalamLeft =
+      'assets/images/prayer/female_salam_left.png';
+  static const String femaleTakbeerh =
+      'assets/images/prayer/female_takbeerh.png';
+  static const String femaleTashahhudFingerLift =
+      'assets/images/prayer/female_tashahhud_finger_lift.png';
+  static const String femaleTashahhud =
+      'assets/images/prayer/female_tashahhud.png';
 }

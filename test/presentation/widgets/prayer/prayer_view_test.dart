@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
+import 'package:quran_for_all/presentation/widgets/common/app_icon_grid_section.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'package:quran_for_all/presentation/views/prayer/forbidden_times/forbidden_times_view.dart';
+import 'package:quran_for_all/presentation/views/prayer/eid_prayer/eid_prayer_view.dart';
 import 'package:quran_for_all/presentation/views/prayer/prayer_view.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_guidance/prayer_guidance_sheet.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_rakat_guide/prayer_rakat_guide_sheet.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_focus_hero.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_guidance_launcher.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_rakat_guide_card.dart';
-import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_reference_card.dart';
+import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_reference_section.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_state_card.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_timeline_tile.dart';
 
@@ -26,7 +28,16 @@ void main() {
       await tester.pumpWidget(PrayerTestApp(model: model));
       await tester.pumpAndSettle();
       expect(find.byType(PrayerTimelineTile), findsNWidgets(6));
-      expect(find.byType(PrayerReferenceCard), findsNWidgets(5));
+      final references = tester.widget<AppIconGridSection>(
+        find.descendant(
+          of: find.byType(PrayerReferenceSection),
+          matching: find.byType(AppIconGridSection),
+        ),
+      );
+      expect(references.items, hasLength(6));
+      expect(references.phoneColumns, 3);
+      expect(references.items.first.label, 'Salah Movement Guide');
+      expect(references.items[1].label, 'Forbidden Times');
       expect(
         tester.widget<PrayerFocusHero>(find.byType(PrayerFocusHero)).time,
         '4:25 PM - 6:15 PM',
@@ -48,6 +59,21 @@ void main() {
       expect(tester.takeException(), isNull);
     },
   );
+
+  testWidgets('focus hero remains compact without hiding prayer details', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(390, 844));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(PrayerTestApp(model: model));
+    await tester.pumpAndSettle();
+
+    final hero = find.byType(PrayerFocusHero);
+    expect(tester.getSize(hero).height, lessThan(250));
+    expect(find.text('Asr Guard'), findsOneWidget);
+    expect(find.text('4:25 PM - 6:15 PM'), findsWidgets);
+    expect(tester.takeException(), isNull);
+  });
 
   testWidgets(
     'loading, guide mode, permission error and retry stay available',
@@ -105,6 +131,17 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byType(ForbiddenTimesView), findsOneWidget);
     Navigator.of(tester.element(find.byType(ForbiddenTimesView))).pop();
+    await tester.pumpAndSettle();
+
+    await tester.ensureVisible(find.text('Eid Prayer Guide'));
+    await tester.tap(find.text('Eid Prayer Guide'));
+    await tester.pumpAndSettle();
+    expect(find.byType(EidPrayerView), findsOneWidget);
+    expect(find.text('Eid al-Fitr'), findsWidgets);
+    await tester.tap(find.text('Prayer steps'));
+    await tester.pumpAndSettle();
+    expect(find.text('First rak\'ah'), findsOneWidget);
+    Navigator.of(tester.element(find.byType(EidPrayerView))).pop();
     await tester.pumpAndSettle();
 
     await tester.ensureVisible(find.byType(PrayerGuidanceLauncher));

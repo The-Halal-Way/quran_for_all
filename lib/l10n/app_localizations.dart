@@ -4421,6 +4421,18 @@ abstract class AppLocalizations {
   /// **'Follow the 300-tasbih rhythm across four rak\'ahs.'**
   String get prayerReferenceTasbeehActionSubtitle;
 
+  /// No description provided for @prayerReferenceEidActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Eid Prayer Guide'**
+  String get prayerReferenceEidActionTitle;
+
+  /// No description provided for @prayerReferenceEidActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Both Eids, the two-rak\'ah prayer, Sunnah practices, takbeer and duas.'**
+  String get prayerReferenceEidActionSubtitle;
+
   /// No description provided for @prayerReferenceOpenLabel.
   ///
   /// In en, this message translates to:

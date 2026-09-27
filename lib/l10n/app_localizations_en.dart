@@ -2216,6 +2216,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerReferenceTasbeehActionSubtitle => 'Follow the 300-tasbih rhythm across four rak\'ahs.';
 
   @override
+  String get prayerReferenceEidActionTitle => 'Eid Prayer Guide';
+
+  @override
+  String get prayerReferenceEidActionSubtitle => 'Both Eids, the two-rak\'ah prayer, Sunnah practices, takbeer and duas.';
+
+  @override
   String get prayerReferenceOpenLabel => 'View';
 
   @override

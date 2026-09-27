@@ -2216,6 +2216,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerReferenceTasbeehActionSubtitle => 'চার রাকাতে ৩০০ তাসবিহের ধারা অনুসরণ করুন।';
 
   @override
+  String get prayerReferenceEidActionTitle => 'ঈদের নামাজের গাইড';
+
+  @override
+  String get prayerReferenceEidActionSubtitle => 'দুই ঈদ, নামাজের নিয়ম, সুন্নাহ আমল, তাকবীর ও দোয়া।';
+
+  @override
   String get prayerReferenceOpenLabel => 'দেখুন';
 
   @override
