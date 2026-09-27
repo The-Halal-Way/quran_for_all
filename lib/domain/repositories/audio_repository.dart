@@ -7,6 +7,8 @@ abstract class AudioRepository {
   Stream<bool> get isPausedStream;
   Stream<Duration> get positionStream;
   Stream<Duration> get durationStream;
+
+  /// Verse number within the current surah; zero denotes its unnumbered opening.
   Stream<int> get currentAyahNumberStream;
 
   Future<void> playAyah(AyahModel ayah);

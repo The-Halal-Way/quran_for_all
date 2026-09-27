@@ -166,6 +166,8 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                             highlightedAyahNumber: _highlightedAyahNumber,
                             onLastReadMarked: _onLastReadMarked,
                             playAyahWithFeedback: _playAyahWithFeedback,
+                            playBismillahWithFeedback:
+                                _playBismillahWithFeedback,
                           ),
                         ),
                       );
@@ -188,7 +190,9 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
 
   Future<void> _goToSurah(SurahModel target) async {
     final viewModel = context.read<SurahDetailsViewModel>();
-    if (viewModel.isPlayingFullSurah || viewModel.playingAyahNumber != null) {
+    if (viewModel.isPlayingFullSurah ||
+        viewModel.isPlayingBismillah ||
+        viewModel.playingAyahNumber != null) {
       await viewModel.stopPlayback();
     }
     if (!mounted) {
@@ -259,6 +263,22 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
       AppSnackbar.showError(
         context,
         context.l10n.readQuranUnablePlayFullSurahAudio,
+      );
+    }
+  }
+
+  Future<void> _playBismillahWithFeedback(
+    BuildContext context,
+    SurahDetailsViewModel viewModel,
+  ) async {
+    if (!await _ensureAudioPermissionWithFeedback(context)) return;
+    try {
+      await viewModel.playBismillah();
+    } catch (_) {
+      if (!context.mounted) return;
+      AppSnackbar.showError(
+        context,
+        context.l10n.readQuranUnablePlayBismillahAudio,
       );
     }
   }

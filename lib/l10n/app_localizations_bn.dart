@@ -308,6 +308,18 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranStopAyahAudioTooltip => 'আয়াতের অডিও বন্ধ করুন';
 
   @override
+  String get readQuranBismillahTitle => 'বিসমিল্লাহ';
+
+  @override
+  String get readQuranPlayBismillahAudio => 'বিসমিল্লাহ শুনুন';
+
+  @override
+  String get readQuranStopBismillahAudio => 'বিসমিল্লাহ বন্ধ করুন';
+
+  @override
+  String get readQuranUnablePlayBismillahAudio => 'এই মুহূর্তে বিসমিল্লাহর অডিও চালানো যাচ্ছে না। আবার চেষ্টা করুন।';
+
+  @override
   String get readQuranReadTafsirTooltip => 'তাফসির পড়ুন';
 
   @override
@@ -1809,6 +1821,77 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tasbeehResetAll => 'সব রিসেট';
+
+  @override
+  String get tasbeehAddDhikr => 'জিকির যোগ করুন';
+
+  @override
+  String get tasbeehEditDhikr => 'জিকির সম্পাদনা';
+
+  @override
+  String get tasbeehDeleteDhikr => 'জিকির মুছুন';
+
+  @override
+  String get tasbeehPhraseOptions => 'জিকিরের অপশন';
+
+  @override
+  String get tasbeehBuiltIn => 'অ্যাপের জিকির';
+
+  @override
+  String get tasbeehMyDhikr => 'আমার জিকির';
+
+  @override
+  String get tasbeehNameLabel => 'নাম বা উচ্চারণ';
+
+  @override
+  String get tasbeehNameHint => 'যেমন: আস্তাগফিরুল্লাহ';
+
+  @override
+  String get tasbeehArabicLabel => 'আরবি লেখা (ঐচ্ছিক)';
+
+  @override
+  String get tasbeehNameRequired => 'জিকিরের একটি নাম লিখুন';
+
+  @override
+  String get tasbeehSaveDhikr => 'জিকির সংরক্ষণ';
+
+  @override
+  String tasbeehDeleteConfirm(String name) {
+    return '“$name” ও এর গণনা মুছে যাবে।';
+  }
+
+  @override
+  String get tasbeehEditPreservesCount => 'সম্পাদনা করলেও আপনার গণনা অক্ষুণ্ণ থাকবে।';
+
+  @override
+  String get tasbeehFocusMode => 'মনোযোগ মোড';
+
+  @override
+  String get tasbeehFocusSubtitle => 'মনোযোগ দিয়ে জিকিরের জন্য';
+
+  @override
+  String get tasbeehEnterFocus => 'মনোযোগ মোড চালু করুন';
+
+  @override
+  String get tasbeehExitFocus => 'মনোযোগ মোড বন্ধ করুন';
+
+  @override
+  String get tasbeehTapAnywhere => 'গুনতে যেকোনো জায়গায় স্পর্শ করুন';
+
+  @override
+  String get tasbeehTapToCount => 'গুনতে স্পর্শ করুন';
+
+  @override
+  String get tasbeehCountAction => 'গণনা এক বাড়ান';
+
+  @override
+  String get tasbeehCustomTarget => 'নিজের লক্ষ্য';
+
+  @override
+  String get tasbeehTargetRange => '১ থেকে ৯৯৯৯৯৯-এর মধ্যে লক্ষ্য লিখুন';
+
+  @override
+  String get tasbeehApplyTarget => 'লক্ষ্য নির্ধারণ';
 
   @override
   String get dashboardContinueReadingTitle => 'পড়া চালিয়ে যান';

@@ -1,5 +1,9 @@
 import 'package:quran_for_all/l10n/app_localizations.dart';
-import 'package:quran_for_all/presentation/viewmodels/dashboard/tasbeeh_viewmodel.dart';
+import 'package:quran_for_all/domain/entities/tasbeeh/tasbeeh_phrase.dart';
+
+extension TasbeehPhraseLabel on TasbeehPhrase {
+  String label(AppLocalizations l10n) => builtInKey?.label(l10n) ?? name;
+}
 
 extension TasbeehPhraseLocalizer on TasbeehPhraseKey {
   String label(AppLocalizations l10n) {

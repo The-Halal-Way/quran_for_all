@@ -308,6 +308,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranStopAyahAudioTooltip => 'Stop ayah audio';
 
   @override
+  String get readQuranBismillahTitle => 'Bismillah';
+
+  @override
+  String get readQuranPlayBismillahAudio => 'Play Bismillah';
+
+  @override
+  String get readQuranStopBismillahAudio => 'Stop Bismillah';
+
+  @override
+  String get readQuranUnablePlayBismillahAudio => 'Unable to play Bismillah right now. Please try again.';
+
+  @override
   String get readQuranReadTafsirTooltip => 'Read tafsir';
 
   @override
@@ -1809,6 +1821,77 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tasbeehResetAll => 'Reset all';
+
+  @override
+  String get tasbeehAddDhikr => 'Add dhikr';
+
+  @override
+  String get tasbeehEditDhikr => 'Edit dhikr';
+
+  @override
+  String get tasbeehDeleteDhikr => 'Delete dhikr';
+
+  @override
+  String get tasbeehPhraseOptions => 'Dhikr options';
+
+  @override
+  String get tasbeehBuiltIn => 'Built-in dhikr';
+
+  @override
+  String get tasbeehMyDhikr => 'My dhikr';
+
+  @override
+  String get tasbeehNameLabel => 'Name or pronunciation';
+
+  @override
+  String get tasbeehNameHint => 'e.g. Astaghfirullah';
+
+  @override
+  String get tasbeehArabicLabel => 'Arabic text (optional)';
+
+  @override
+  String get tasbeehNameRequired => 'Enter a name for your dhikr';
+
+  @override
+  String get tasbeehSaveDhikr => 'Save dhikr';
+
+  @override
+  String tasbeehDeleteConfirm(String name) {
+    return '“$name” and its count will be removed.';
+  }
+
+  @override
+  String get tasbeehEditPreservesCount => 'Your count is kept when you edit.';
+
+  @override
+  String get tasbeehFocusMode => 'Focus mode';
+
+  @override
+  String get tasbeehFocusSubtitle => 'A quiet space for your dhikr';
+
+  @override
+  String get tasbeehEnterFocus => 'Enter focus mode';
+
+  @override
+  String get tasbeehExitFocus => 'Exit focus mode';
+
+  @override
+  String get tasbeehTapAnywhere => 'Tap anywhere to count';
+
+  @override
+  String get tasbeehTapToCount => 'Tap to count';
+
+  @override
+  String get tasbeehCountAction => 'Add one count';
+
+  @override
+  String get tasbeehCustomTarget => 'Custom target';
+
+  @override
+  String get tasbeehTargetRange => 'Enter a target from 1 to 999999';
+
+  @override
+  String get tasbeehApplyTarget => 'Set target';
 
   @override
   String get dashboardContinueReadingTitle => 'Continue Reading';

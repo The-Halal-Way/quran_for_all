@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import 'tasbeeh_counter_ring.dart';
 
 class TasbeehCounterDisplay extends StatelessWidget {
   const TasbeehCounterDisplay({
@@ -17,7 +18,6 @@ class TasbeehCounterDisplay extends StatelessWidget {
     required this.isDark,
     required this.onTap,
   });
-
   final int count;
   final int target;
   final double progress;
@@ -31,21 +31,16 @@ class TasbeehCounterDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
     final text = AppTheme.text(context);
-
     return Semantics(
       button: true,
       label: '$phraseLabel, $count, ${context.l10n.tasbeehTarget} $target',
       child: GestureDetector(
+        key: const ValueKey('tasbeeh_count_area'),
         onTap: onTap,
         behavior: HitTestBehavior.opaque,
         child: Container(
           width: double.infinity,
-          padding: const EdgeInsets.fromLTRB(
-            AppSpacing.lg,
-            AppSpacing.xl,
-            AppSpacing.lg,
-            AppSpacing.lg,
-          ),
+          padding: const EdgeInsets.fromLTRB(24, 28, 24, 20),
           decoration: BoxDecoration(
             color: colors.surfaceContainerLow.withValues(
               alpha: isDark ? 0.9 : 0.96,
@@ -58,104 +53,64 @@ class TasbeehCounterDisplay extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Text(
-                phraseArabic,
-                textAlign: TextAlign.center,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: AppTheme.amiri(
-                  context,
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                  color: colors.onSurface,
-                  height: 1.25,
+              if (phraseArabic.isNotEmpty) ...[
+                Text(
+                  phraseArabic,
+                  textAlign: TextAlign.center,
+                  textDirection: TextDirection.rtl,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTheme.amiri(
+                    context,
+                    fontSize: 30,
+                    fontWeight: FontWeight.w700,
+                    color: colors.onSurface,
+                    height: 1.25,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 4),
+                const SizedBox(height: 4),
+              ],
               Text(
                 phraseLabel,
-                style: text.labelLarge.copyWith(
-                  color: colors.onSurfaceVariant,
-                  fontWeight: FontWeight.w700,
-                ),
+                textAlign: TextAlign.center,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style:
+                    (phraseArabic.isEmpty ? text.titleLarge : text.labelLarge)
+                        .copyWith(
+                          color: phraseArabic.isEmpty
+                              ? colors.onSurface
+                              : colors.onSurfaceVariant,
+                          fontWeight: FontWeight.w700,
+                        ),
               ),
               const SizedBox(height: AppSpacing.lg),
-              SizedBox.square(
-                dimension: 210,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    SizedBox.expand(
-                      child: CircularProgressIndicator(
-                        value: progress,
-                        strokeWidth: 10,
-                        strokeCap: StrokeCap.round,
-                        backgroundColor: colors.primary.withValues(alpha: 0.1),
-                        color: colors.primary,
-                      ),
-                    ),
-                    Container(
-                      width: 174,
-                      height: 174,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: colors.surface,
-                        border: Border.all(
-                          color: colors.outlineVariant.withValues(alpha: 0.4),
-                          width: 0.5,
-                        ),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(
-                              '$count',
-                              style: AppTheme.sora(
-                                context,
-                                fontSize: 64,
-                                fontWeight: FontWeight.w800,
-                                color: colors.onSurface,
-                                height: 0.95,
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 10),
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(
-                                isTargetReached
-                                    ? CupertinoIcons.checkmark_circle_fill
-                                    : CupertinoIcons.scope,
-                                size: 15,
-                                color: colors.primary,
-                              ),
-                              const SizedBox(width: 5),
-                              Text(
-                                isTargetReached
-                                    ? context.l10n.tasbeehTargetReached
-                                    : '${context.l10n.tasbeehTarget} $target',
-                                style: text.labelSmall.copyWith(
-                                  color: colors.primary,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+              TasbeehCounterRing(
+                count: count,
+                target: target,
+                progress: progress,
+                isTargetReached: isTargetReached,
               ),
               const SizedBox(height: AppSpacing.md),
-              Icon(
-                CupertinoIcons.add_circled_solid,
-                size: 19,
-                color: colors.onSurfaceVariant.withValues(alpha: 0.62),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    CupertinoIcons.add_circled_solid,
+                    size: 17,
+                    color: colors.onSurfaceVariant,
+                  ),
+                  const SizedBox(width: 6),
+                  Flexible(
+                    child: Text(
+                      context.l10n.tasbeehTapToCount,
+                      textAlign: TextAlign.center,
+                      style: text.labelSmall.copyWith(
+                        color: colors.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

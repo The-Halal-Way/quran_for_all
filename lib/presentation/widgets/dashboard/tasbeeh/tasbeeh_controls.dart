@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'tasbeeh_undo_button.dart';
 
 class TasbeehControls extends StatelessWidget {
   const TasbeehControls({
@@ -32,16 +33,7 @@ class TasbeehControls extends StatelessWidget {
       spacing: 10,
       runSpacing: 10,
       children: [
-        FilledButton.tonalIcon(
-          onPressed: canUndo ? onUndo : null,
-          icon: const Icon(CupertinoIcons.minus_circle, size: 18),
-          label: Text(context.l10n.tasbeehUndo),
-          style: FilledButton.styleFrom(
-            foregroundColor: foreground.withValues(alpha: 0.82),
-            textStyle: text.labelMedium.copyWith(fontWeight: FontWeight.w800),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-          ),
-        ),
+        TasbeehUndoButton(enabled: canUndo, onPressed: onUndo),
         OutlinedButton.icon(
           onPressed: canUndo ? onResetCount : null,
           icon: const Icon(CupertinoIcons.arrow_counterclockwise, size: 18),

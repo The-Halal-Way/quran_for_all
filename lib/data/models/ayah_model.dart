@@ -1,5 +1,7 @@
-import '../../core/enums/app_language.dart';
 import 'package:avro_phonetic_textfield/avro_phonetic_textfield.dart' as avro;
+
+import '../../core/enums/app_language.dart';
+import '../../core/quran/quran_bismillah.dart';
 
 class AyahModel {
   const AyahModel({
@@ -9,7 +11,7 @@ class AyahModel {
     required this.juzNumber,
     required this.hizbQuarter,
     required this.pageNumber,
-    required this.arabicText,
+    required String arabicText,
     required this.transliterationEn,
     required this.transliterationBn,
     required this.translationEn,
@@ -17,7 +19,7 @@ class AyahModel {
     required this.tafsirEn,
     required this.tafsirBn,
     required this.audioUrl,
-  });
+  }) : _arabicText = arabicText;
 
   final int id;
   final int surahId;
@@ -25,7 +27,14 @@ class AyahModel {
   final int juzNumber;
   final int hizbQuarter;
   final int pageNumber;
-  final String arabicText;
+  final String _arabicText;
+  // Normalize on read so previously downloaded data is corrected offline,
+  // without changing verse IDs, bookmarks or requiring a database migration.
+  String get arabicText => QuranBismillah.verseText(
+    surahId: surahId,
+    ayahNumber: ayahNumber,
+    text: _arabicText,
+  );
   final String transliterationEn;
   final String transliterationBn;
   final String translationEn;

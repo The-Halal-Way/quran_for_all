@@ -11,7 +11,13 @@ import 'package:path_provider/path_provider.dart';
 import '../data/models/ayah_model.dart';
 
 class AudioService {
-  AudioService({required http.Client httpClient}) : _httpClient = httpClient {
+  AudioService({
+    required http.Client httpClient,
+    AudioPlayer? audioPlayer,
+    Future<Directory> Function()? audioCacheDirectory,
+  }) : _httpClient = httpClient,
+       _player = audioPlayer ?? AudioPlayer(),
+       _cacheDirectoryProvider = audioCacheDirectory {
     _playerStateSubscription = _player.onPlayerStateChanged.listen(
       _onPlayerStateChanged,
     );
@@ -51,7 +57,8 @@ class AudioService {
   }
 
   final http.Client _httpClient;
-  final AudioPlayer _player = AudioPlayer();
+  final AudioPlayer _player;
+  final Future<Directory> Function()? _cacheDirectoryProvider;
   final StreamController<bool> _isPlayingController =
       StreamController<bool>.broadcast();
   final StreamController<bool> _isPausedController =
@@ -63,6 +70,7 @@ class AudioService {
   bool _isPlaying = false;
   bool _isPaused = false;
   bool _stopRequested = false;
+  int _playbackRequestId = 0;
 
   /// True while [playSurah] is actively iterating through ayahs.
   /// Suppresses intermediate [_setIsPlaying(false)] calls that fire between
@@ -81,16 +89,23 @@ class AudioService {
 
   Future<void> playAyah(AyahModel ayah) async {
     _stopRequested = false;
+    final requestId = ++_playbackRequestId;
 
     final localPath = await _getOrDownloadAyahAudio(ayah);
 
     // Guard: stop() may have been called while the download was in flight.
-    if (_stopRequested) return;
+    if (_stopRequested || requestId != _playbackRequestId) return;
 
     _setIsPlaying(true);
 
-    await _player.play(DeviceFileSource(localPath));
-    await _waitForCompleteOrStop();
+    try {
+      await _playAndWait(localPath, requestId);
+    } finally {
+      if (requestId == _playbackRequestId && !_surahPlaybackActive) {
+        _setIsPaused(false);
+        _setIsPlaying(false);
+      }
+    }
   }
 
   Future<void> playSurah(List<AyahModel> ayahs, {int startIndex = 0}) async {
@@ -116,7 +131,9 @@ class AudioService {
 
   Future<void> stop() async {
     _stopRequested = true;
+    ++_playbackRequestId;
     await _player.stop();
+    _setIsPaused(false);
     _setIsPlaying(false);
   }
 
@@ -158,6 +175,7 @@ class AudioService {
   }
 
   Future<Directory> _audioCacheDirectory() async {
+    if (_cacheDirectoryProvider case final provider?) return provider();
     final supportDirectory = await getApplicationSupportDirectory();
     final directory = Directory(join(supportDirectory.path, 'quran_audio'));
 
@@ -168,7 +186,7 @@ class AudioService {
     return directory;
   }
 
-  Future<void> _waitForCompleteOrStop() async {
+  Future<void> _playAndWait(String localPath, int requestId) async {
     final completer = Completer<void>();
 
     late StreamSubscription<void> completeSubscription;
@@ -181,17 +199,21 @@ class AudioService {
     });
 
     stateSubscription = _player.onPlayerStateChanged.listen((state) {
-      if (_stopRequested &&
+      if ((_stopRequested || requestId != _playbackRequestId) &&
           state != PlayerState.playing &&
           !completer.isCompleted) {
         completer.complete();
       }
     });
 
-    await completer.future;
-
-    await completeSubscription.cancel();
-    await stateSubscription.cancel();
+    try {
+      await _player.play(DeviceFileSource(localPath));
+      if (_stopRequested || requestId != _playbackRequestId) return;
+      await completer.future;
+    } finally {
+      await completeSubscription.cancel();
+      await stateSubscription.cancel();
+    }
   }
 
   void _onPlayerStateChanged(PlayerState state) {

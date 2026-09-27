@@ -17,6 +17,8 @@ import 'package:quran_for_all/presentation/viewmodels/read_quran/surah_details_v
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 import 'package:quran_for_all/presentation/widgets/ayah_tile.dart';
 
+import 'surah_bismillah_card.dart';
+
 class SurahAyahList extends StatelessWidget {
   const SurahAyahList({
     super.key,
@@ -30,11 +32,14 @@ class SurahAyahList extends StatelessWidget {
       AyahModel,
     )
     playAyahWithFeedback,
+    required this.playBismillahWithFeedback,
   }) : _ayahKeys = ayahKeys,
        _highlightedAyahNumber = highlightedAyahNumber,
        _onLastReadMarked = onLastReadMarked,
        _playAyahWithFeedback = playAyahWithFeedback;
   final ScrollController controller;
+  final Future<void> Function(BuildContext, SurahDetailsViewModel)
+  playBismillahWithFeedback;
   final Map<int, GlobalKey> _ayahKeys;
   final int? _highlightedAyahNumber;
   final ValueChanged<int> _onLastReadMarked;
@@ -58,6 +63,8 @@ class SurahAyahList extends StatelessWidget {
           AppSpacing.lg,
         ),
         children: [
+          if (viewModel.openingBismillah != null)
+            _buildBismillahCard(context, viewModel, settings, audioControl),
           Card(
             child: Padding(
               padding: const EdgeInsets.all(AppSpacing.lg),
@@ -156,6 +163,8 @@ class SurahAyahList extends StatelessWidget {
         AppSpacing.lg,
       ),
       children: [
+        if (viewModel.openingBismillah != null)
+          _buildBismillahCard(context, viewModel, settings, audioControl),
         for (final ayah in viewModel.ayahs)
           Padding(
             key: _ayahKeyFor(ayah.ayahNumber),
@@ -202,6 +211,30 @@ class SurahAyahList extends StatelessWidget {
       ],
     );
   }
+
+  Widget _buildBismillahCard(
+    BuildContext context,
+    SurahDetailsViewModel viewModel,
+    AppSettings settings,
+    AudioControlViewModel audioControl,
+  ) => Padding(
+    padding: const EdgeInsets.only(bottom: AppSpacing.sm + 2),
+    child: SurahBismillahCard(
+      opening: viewModel.openingBismillah!,
+      language: settings.language,
+      showPronunciation: settings.showPronunciation,
+      showTranslation: settings.showTranslation,
+      isPlaying: viewModel.isPlayingBismillah,
+      playbackProgress: viewModel.isPlayingBismillah
+          ? audioControl.progress
+          : 0,
+      onPlay: () => unawaited(
+        viewModel.isPlayingBismillah
+            ? viewModel.stopPlayback()
+            : playBismillahWithFeedback(context, viewModel),
+      ),
+    ),
+  );
 
   Widget _buildDetailsAyahTile(
     BuildContext context,

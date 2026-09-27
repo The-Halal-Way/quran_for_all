@@ -116,18 +116,7 @@ class _DuahNintyNineBody extends StatelessWidget {
           ),
         ),
       ),
-      SliverPadding(
-        padding: EdgeInsets.symmetric(horizontal: horizontal),
-        sliver: SliverToBoxAdapter(
-          child: NintyNineNamesInsightCard(
-            icon: Icons.verified_rounded,
-            title: context.l10n.duahNintyNineConclusionTitle,
-            body: data.metadata.conclusionFor(language),
-            accent: MyColors.tertiary,
-            isDark: isDark,
-          ),
-        ),
-      ),
+
       SliverPadding(
         padding: EdgeInsets.symmetric(horizontal: horizontal),
         sliver: SliverToBoxAdapter(
@@ -143,6 +132,18 @@ class _DuahNintyNineBody extends StatelessWidget {
           names: data.names,
           language: language,
           isDark: isDark,
+        ),
+      ),
+      SliverPadding(
+        padding: EdgeInsets.symmetric(horizontal: horizontal),
+        sliver: SliverToBoxAdapter(
+          child: NintyNineNamesInsightCard(
+            icon: Icons.verified_rounded,
+            title: context.l10n.duahNintyNineConclusionTitle,
+            body: data.metadata.conclusionFor(language),
+            accent: MyColors.tertiary,
+            isDark: isDark,
+          ),
         ),
       ),
     ];

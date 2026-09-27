@@ -11,19 +11,19 @@ void main() {
 
     viewModel.increment();
     viewModel.increment();
-    viewModel.selectPhrase(TasbeehPhraseKey.alhamdulillah);
+    viewModel.selectPhrase(TasbeehPhraseKey.alhamdulillah.name);
 
     expect(viewModel.count, 0);
     expect(viewModel.target, 33);
 
     viewModel.selectTarget(99);
     viewModel.increment();
-    viewModel.selectPhrase(TasbeehPhraseKey.subhanAllah);
+    viewModel.selectPhrase(TasbeehPhraseKey.subhanAllah.name);
 
     expect(viewModel.count, 2);
     expect(viewModel.target, 33);
-    expect(viewModel.countFor(TasbeehPhraseKey.alhamdulillah), 1);
-    expect(viewModel.targetFor(TasbeehPhraseKey.alhamdulillah), 99);
+    expect(viewModel.countFor(TasbeehPhraseKey.alhamdulillah.name), 1);
+    expect(viewModel.targetFor(TasbeehPhraseKey.alhamdulillah.name), 99);
     expect(viewModel.totalCount, 3);
   });
 
@@ -46,12 +46,12 @@ void main() {
       expect(viewModel.count, 34);
       expect(viewModel.isTargetReached, isFalse);
 
-      viewModel.selectPhrase(TasbeehPhraseKey.allahuAkbar);
+      viewModel.selectPhrase(TasbeehPhraseKey.allahuAkbar.name);
       viewModel.increment();
       viewModel.resetCount();
       expect(viewModel.count, 0);
 
-      viewModel.selectPhrase(TasbeehPhraseKey.subhanAllah);
+      viewModel.selectPhrase(TasbeehPhraseKey.subhanAllah.name);
       expect(viewModel.count, 34);
 
       viewModel.resetAll();
@@ -64,19 +64,89 @@ void main() {
     final original = TasbeehViewModel(repository: repository);
     await original.load();
 
-    original.selectPhrase(TasbeehPhraseKey.laIlahaIllallah);
+    original.selectPhrase(TasbeehPhraseKey.laIlahaIllallah.name);
     original.selectTarget(100);
     original.increment();
     original.increment();
-    await Future<void>.delayed(Duration.zero);
+    await original.pendingSave;
 
     final restored = TasbeehViewModel(repository: repository);
     await restored.load();
 
-    expect(restored.selectedPhraseKey, TasbeehPhraseKey.laIlahaIllallah);
+    expect(restored.selectedPhraseId, TasbeehPhraseKey.laIlahaIllallah.name);
     expect(restored.count, 2);
     expect(restored.target, 100);
   });
+
+  test(
+    'built-in phrases cannot be edited or deleted through the model',
+    () async {
+      final model = TasbeehViewModel(repository: _MemoryTasbeehRepository());
+      await model.load();
+      final originals = List.of(model.phrases);
+      for (final phrase in originals) {
+        expect(
+          model.editPhrase(
+            id: phrase.id,
+            name: 'Changed',
+            arabic: '',
+            target: 10,
+          ),
+          isFalse,
+        );
+        expect(model.deletePhrase(phrase.id), isFalse);
+      }
+      expect(model.phrases, originals);
+    },
+  );
+
+  test(
+    'custom edits retain progress and deletion falls back without resetting a built-in',
+    () async {
+      final model = TasbeehViewModel(repository: _MemoryTasbeehRepository());
+      await model.load();
+      model.increment();
+      final id = model.addPhrase(name: 'Astaghfirullah', target: 2)!;
+      model.increment();
+      model.increment();
+      expect(model.currentCompletedRounds, 1);
+      expect(model.completedRounds, 1);
+      expect(
+        model.editPhrase(
+          id: id,
+          name: 'Istighfar',
+          arabic: 'أَسْتَغْفِرُ الله',
+          target: 7,
+        ),
+        isTrue,
+      );
+      expect(model.count, 2);
+      expect(model.target, 7);
+      expect(model.selectedPhrase.name, 'Istighfar');
+      expect(model.deletePhrase(id), isTrue);
+      expect(model.selectedPhraseId, 'subhanAllah');
+      expect(model.count, 1);
+      expect(model.counts.containsKey(id), isFalse);
+      expect(model.selectedTargets.containsKey(id), isFalse);
+    },
+  );
+
+  test(
+    'invalid targets and unknown selections do not corrupt the session',
+    () async {
+      final model = TasbeehViewModel(repository: _MemoryTasbeehRepository());
+      await model.load();
+      model.selectTarget(0);
+      model.selectTarget(-1);
+      model.selectTarget(1000000);
+      model.selectPhrase('missing');
+      expect(model.target, 33);
+      expect(model.selectedPhraseId, 'subhanAllah');
+      expect(model.addPhrase(name: '   '), isNull);
+      expect(model.addPhrase(name: 'Invalid target', target: 0), isNull);
+      expect(model.phrases, hasLength(4));
+    },
+  );
 }
 
 class _MemoryTasbeehRepository implements TasbeehRepository {

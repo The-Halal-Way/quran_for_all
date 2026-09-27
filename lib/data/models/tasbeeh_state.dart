@@ -1,18 +1,23 @@
+import '../../domain/entities/tasbeeh/tasbeeh_phrase.dart';
+
 class TasbeehSavedState {
   const TasbeehSavedState({
     required this.counts,
     required this.targets,
     this.selectedPhrase,
+    this.customPhrases = const [],
   });
 
   final Map<String, int> counts;
   final Map<String, int> targets;
   final String? selectedPhrase;
+  final List<TasbeehPhrase> customPhrases;
 
   Map<String, dynamic> toMap() => {
     'counts': counts,
     'targets': targets,
     'selectedPhrase': selectedPhrase,
+    'customPhrases': customPhrases.map((phrase) => phrase.toMap()).toList(),
   };
 
   factory TasbeehSavedState.fromMap(Map<String, dynamic> map) {
@@ -20,6 +25,7 @@ class TasbeehSavedState {
       counts: _readIntMap(map['counts']),
       targets: _readIntMap(map['targets']),
       selectedPhrase: map['selectedPhrase'] as String?,
+      customPhrases: _readCustomPhrases(map['customPhrases']),
     );
   }
 
@@ -29,5 +35,13 @@ class TasbeehSavedState {
       final parsed = count is num ? count.toInt() : int.tryParse('$count') ?? 0;
       return MapEntry(key, parsed);
     });
+  }
+
+  static List<TasbeehPhrase> _readCustomPhrases(Object? value) {
+    if (value is! List) return const [];
+    return [
+      for (final entry in value)
+        if (entry is Map<String, dynamic>) ?TasbeehPhrase.customFromMap(entry),
+    ];
   }
 }

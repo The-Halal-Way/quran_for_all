@@ -4,7 +4,9 @@ import 'package:flutter/foundation.dart';
 
 import '../../../core/enums/playback_source.dart';
 import '../../../core/localization/read_quran_message_localizer.dart';
+import '../../../core/quran/quran_bismillah.dart';
 import '../../../data/models/ayah_model.dart';
+import '../../../data/models/surah_opening_model.dart';
 import '../../../data/models/surah_model.dart';
 import '../../../domain/repositories/audio_repository.dart';
 import '../../../domain/repositories/quran_repository.dart';
@@ -21,8 +23,9 @@ class SurahDetailsViewModel extends ChangeNotifier {
     _isPlayingSubscription = _audioRepository.isPlayingStream.listen((
       isPlaying,
     ) {
-      if (!isPlaying && _playingAyahNumber != null) {
+      if (!isPlaying && (_playingAyahNumber != null || _isPlayingBismillah)) {
         _playingAyahNumber = null;
+        _isPlayingBismillah = false;
         notifyListeners();
       }
     });
@@ -33,7 +36,8 @@ class SurahDetailsViewModel extends ChangeNotifier {
     _currentAyahNumberSubscription = _audioRepository.currentAyahNumberStream
         .listen((ayahNumber) {
           if (_isPlayingFullSurah) {
-            _playingAyahNumber = ayahNumber;
+            _isPlayingBismillah = ayahNumber == 0;
+            _playingAyahNumber = ayahNumber == 0 ? null : ayahNumber;
             notifyListeners();
           }
         });
@@ -48,17 +52,22 @@ class SurahDetailsViewModel extends ChangeNotifier {
 
   bool _isLoading = false;
   bool _isPlayingFullSurah = false;
+  bool _isPlayingBismillah = false;
+  SurahOpeningModel? _openingBismillah;
   int? _playingAyahNumber;
   int? _lastReadAyahNumber;
   String? _errorMessage;
   List<AyahModel> _ayahs = const [];
   Set<int> _bookmarkedAyahNumbers = const <int>{};
   int _loadRequestId = 0;
+  int _playbackRequestId = 0;
   bool _didEnsureTafsir = false;
 
   SurahModel? get surah => _surah;
   bool get isLoading => _isLoading;
   bool get isPlayingFullSurah => _isPlayingFullSurah;
+  bool get isPlayingBismillah => _isPlayingBismillah;
+  SurahOpeningModel? get openingBismillah => _openingBismillah;
   int? get playingAyahNumber => _playingAyahNumber;
   int? get lastReadAyahNumber => _lastReadAyahNumber;
   String? get errorMessage => _errorMessage;
@@ -74,7 +83,16 @@ class SurahDetailsViewModel extends ChangeNotifier {
   bool isLastReadAyah(int ayahNumber) => _lastReadAyahNumber == ayahNumber;
 
   Future<void> openSurah(SurahModel surah) async {
+    final requestId = ++_loadRequestId;
+    if (_isPlayingFullSurah ||
+        _isPlayingBismillah ||
+        _playingAyahNumber != null) {
+      await stopPlayback();
+    }
+    if (requestId != _loadRequestId) return;
     _surah = surah;
+    _ayahs = const [];
+    _openingBismillah = null;
     await load();
   }
 
@@ -105,6 +123,9 @@ class SurahDetailsViewModel extends ChangeNotifier {
       }
 
       final ayahs = await _quranRepository.getAyahsBySurah(selectedSurah.id);
+      final openingAyah = QuranBismillah.hasSeparateOpening(selectedSurah.id)
+          ? await _quranRepository.getAyah(1, 1)
+          : null;
       final bookmarkedAyahs = await _quranRepository.getBookmarkedAyahNumbers(
         selectedSurah.id,
       );
@@ -114,6 +135,9 @@ class SurahDetailsViewModel extends ChangeNotifier {
       }
 
       _ayahs = ayahs;
+      _openingBismillah = openingAyah == null
+          ? null
+          : SurahOpeningModel(source: openingAyah, surahId: selectedSurah.id);
       _bookmarkedAyahNumbers = bookmarkedAyahs;
       _lastReadAyahNumber =
           lastRead != null && lastRead.surahId == selectedSurah.id
@@ -138,40 +162,50 @@ class SurahDetailsViewModel extends ChangeNotifier {
   }
 
   Future<void> playAyah(AyahModel ayah) async {
-    // If full-surah playback is in progress, abort it before starting a
-    // single-ayah play; otherwise the surah loop would keep running in the
-    // background after the individual ayah finishes.
-    if (_isPlayingFullSurah) {
+    await _playSingle(ayah);
+  }
+
+  Future<void> playBismillah() async {
+    final opening = _openingBismillah;
+    if (opening == null) return;
+    await _playSingle(opening.playbackEntry, isBismillah: true);
+  }
+
+  Future<void> _playSingle(AyahModel ayah, {bool isBismillah = false}) async {
+    final requestId = ++_playbackRequestId;
+    if (_isPlayingFullSurah ||
+        _isPlayingBismillah ||
+        _playingAyahNumber != null ||
+        _audioRepository.isPlaying ||
+        _audioRepository.isPaused) {
       await _audioRepository.stop();
-      _isPlayingFullSurah = false;
-      _playingAyahNumber = null;
-      notifyListeners();
+      if (requestId != _playbackRequestId) return;
     }
 
-    _playingAyahNumber = ayah.ayahNumber;
+    _isPlayingFullSurah = false;
+    _isPlayingBismillah = isBismillah;
+    _playingAyahNumber = isBismillah ? null : ayah.ayahNumber;
     notifyListeners();
 
     _audioControl.setPlaybackContext(
       source: PlaybackSource.surahDetails,
       title: _surah?.nameEnglish ?? 'Surah',
-      subtitle: 'Ayah ${ayah.ayahNumber}',
+      subtitle: isBismillah ? 'Bismillah' : 'Ayah ${ayah.ayahNumber}',
     );
     try {
       await _audioRepository.playAyah(ayah);
-      await _quranRepository.saveLastRead(ayah.surahId, ayah.ayahNumber);
-      if (_lastReadAyahNumber != ayah.ayahNumber) {
-        _lastReadAyahNumber = ayah.ayahNumber;
-        notifyListeners();
+      if (!isBismillah && requestId == _playbackRequestId) {
+        await _quranRepository.saveLastRead(ayah.surahId, ayah.ayahNumber);
+        if (requestId == _playbackRequestId &&
+            _lastReadAyahNumber != ayah.ayahNumber) {
+          _lastReadAyahNumber = ayah.ayahNumber;
+          notifyListeners();
+        }
       }
-    } catch (_) {
-      if (_playingAyahNumber == ayah.ayahNumber) {
-        _playingAyahNumber = null;
-        notifyListeners();
-      }
-      rethrow;
     } finally {
-      if (_playingAyahNumber == ayah.ayahNumber) {
+      if (requestId == _playbackRequestId) {
         _playingAyahNumber = null;
+        _isPlayingBismillah = false;
         notifyListeners();
       }
     }
@@ -182,7 +216,17 @@ class SurahDetailsViewModel extends ChangeNotifier {
       return;
     }
 
+    final requestId = ++_playbackRequestId;
+    if (_isPlayingBismillah ||
+        _playingAyahNumber != null ||
+        _audioRepository.isPlaying ||
+        _audioRepository.isPaused) {
+      await _audioRepository.stop();
+      if (requestId != _playbackRequestId) return;
+    }
+
     _playingAyahNumber = null;
+    _isPlayingBismillah = false;
     _isPlayingFullSurah = true;
     notifyListeners();
 
@@ -193,22 +237,33 @@ class SurahDetailsViewModel extends ChangeNotifier {
     );
 
     try {
-      await _audioRepository.playSurah(_ayahs);
+      await _audioRepository.playSurah([
+        if (_openingBismillah case final opening?) opening.playbackEntry,
+        ..._ayahs,
+      ]);
     } finally {
-      _isPlayingFullSurah = false;
-      notifyListeners();
+      if (requestId == _playbackRequestId) {
+        _isPlayingFullSurah = false;
+        _isPlayingBismillah = false;
+        _playingAyahNumber = null;
+        notifyListeners();
+      }
     }
   }
 
   Future<void> stopPlayback() async {
-    await _audioRepository.stop();
+    ++_playbackRequestId;
     _isPlayingFullSurah = false;
+    _isPlayingBismillah = false;
     _playingAyahNumber = null;
     notifyListeners();
+    await _audioRepository.stop();
   }
 
   @override
   void dispose() {
+    ++_loadRequestId;
+    ++_playbackRequestId;
     _isPlayingSubscription.cancel();
     _currentAyahNumberSubscription.cancel();
     super.dispose();

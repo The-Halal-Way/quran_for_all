@@ -689,6 +689,30 @@ abstract class AppLocalizations {
   /// **'Stop ayah audio'**
   String get readQuranStopAyahAudioTooltip;
 
+  /// No description provided for @readQuranBismillahTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Bismillah'**
+  String get readQuranBismillahTitle;
+
+  /// No description provided for @readQuranPlayBismillahAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Play Bismillah'**
+  String get readQuranPlayBismillahAudio;
+
+  /// No description provided for @readQuranStopBismillahAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop Bismillah'**
+  String get readQuranStopBismillahAudio;
+
+  /// No description provided for @readQuranUnablePlayBismillahAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to play Bismillah right now. Please try again.'**
+  String get readQuranUnablePlayBismillahAudio;
+
   /// No description provided for @readQuranReadTafsirTooltip.
   ///
   /// In en, this message translates to:
@@ -3634,6 +3658,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reset all'**
   String get tasbeehResetAll;
+
+  /// No description provided for @tasbeehAddDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Add dhikr'**
+  String get tasbeehAddDhikr;
+
+  /// No description provided for @tasbeehEditDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit dhikr'**
+  String get tasbeehEditDhikr;
+
+  /// No description provided for @tasbeehDeleteDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete dhikr'**
+  String get tasbeehDeleteDhikr;
+
+  /// No description provided for @tasbeehPhraseOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr options'**
+  String get tasbeehPhraseOptions;
+
+  /// No description provided for @tasbeehBuiltIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Built-in dhikr'**
+  String get tasbeehBuiltIn;
+
+  /// No description provided for @tasbeehMyDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'My dhikr'**
+  String get tasbeehMyDhikr;
+
+  /// No description provided for @tasbeehNameLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Name or pronunciation'**
+  String get tasbeehNameLabel;
+
+  /// No description provided for @tasbeehNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Astaghfirullah'**
+  String get tasbeehNameHint;
+
+  /// No description provided for @tasbeehArabicLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Arabic text (optional)'**
+  String get tasbeehArabicLabel;
+
+  /// No description provided for @tasbeehNameRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a name for your dhikr'**
+  String get tasbeehNameRequired;
+
+  /// No description provided for @tasbeehSaveDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Save dhikr'**
+  String get tasbeehSaveDhikr;
+
+  /// No description provided for @tasbeehDeleteConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'“{name}” and its count will be removed.'**
+  String tasbeehDeleteConfirm(String name);
+
+  /// No description provided for @tasbeehEditPreservesCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Your count is kept when you edit.'**
+  String get tasbeehEditPreservesCount;
+
+  /// No description provided for @tasbeehFocusMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Focus mode'**
+  String get tasbeehFocusMode;
+
+  /// No description provided for @tasbeehFocusSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A quiet space for your dhikr'**
+  String get tasbeehFocusSubtitle;
+
+  /// No description provided for @tasbeehEnterFocus.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter focus mode'**
+  String get tasbeehEnterFocus;
+
+  /// No description provided for @tasbeehExitFocus.
+  ///
+  /// In en, this message translates to:
+  /// **'Exit focus mode'**
+  String get tasbeehExitFocus;
+
+  /// No description provided for @tasbeehTapAnywhere.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap anywhere to count'**
+  String get tasbeehTapAnywhere;
+
+  /// No description provided for @tasbeehTapToCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to count'**
+  String get tasbeehTapToCount;
+
+  /// No description provided for @tasbeehCountAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Add one count'**
+  String get tasbeehCountAction;
+
+  /// No description provided for @tasbeehCustomTarget.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom target'**
+  String get tasbeehCustomTarget;
+
+  /// No description provided for @tasbeehTargetRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a target from 1 to 999999'**
+  String get tasbeehTargetRange;
+
+  /// No description provided for @tasbeehApplyTarget.
+  ///
+  /// In en, this message translates to:
+  /// **'Set target'**
+  String get tasbeehApplyTarget;
 
   /// No description provided for @dashboardContinueReadingTitle.
   ///
