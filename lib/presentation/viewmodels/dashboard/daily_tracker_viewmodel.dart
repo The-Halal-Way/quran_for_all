@@ -50,6 +50,7 @@ class DailyTrackerViewModel extends ChangeNotifier {
   List<TaskCategory> _sectionOrder = completeTaskCategoryOrder([]);
   bool _isLoading = false;
   bool _showCelebration = false;
+  bool _disposed = false;
 
   List<DailyTask> get tasks => List.unmodifiable(_tasks);
   List<TaskCategory> get sectionOrder => List.unmodifiable(_sectionOrder);
@@ -83,9 +84,14 @@ class DailyTrackerViewModel extends ChangeNotifier {
 
     _tasks = await _getDailyTasksUseCase();
     _sectionOrder = await _getSectionOrderUseCase();
-
     _isLoading = false;
-    notifyListeners();
+    if (!_disposed) notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    _disposed = true;
+    super.dispose();
   }
 
   /// Flips the completion state of [taskId] and persists the change. If

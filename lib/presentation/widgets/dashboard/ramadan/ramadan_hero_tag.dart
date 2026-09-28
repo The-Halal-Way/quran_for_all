@@ -4,7 +4,7 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 
 class RamadanHeroTag extends StatelessWidget {
-  const RamadanHeroTag({required this.label});
+  const RamadanHeroTag({super.key, required this.label});
 
   final String label;
 

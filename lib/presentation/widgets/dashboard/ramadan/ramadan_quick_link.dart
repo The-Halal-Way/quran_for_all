@@ -5,6 +5,7 @@ import '../../../../core/theme/app_theme.dart';
 
 class RamadanQuickLink extends StatelessWidget {
   const RamadanQuickLink({
+    super.key,
     required this.width,
     required this.icon,
     required this.label,

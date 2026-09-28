@@ -5,7 +5,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../views/dashboard/ramadan/ramadan_models.dart';
 
 class RamadanSourceNote extends StatelessWidget {
-  const RamadanSourceNote({required this.isBangla});
+  const RamadanSourceNote({super.key, required this.isBangla});
 
   final bool isBangla;
 

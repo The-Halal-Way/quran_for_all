@@ -1730,6 +1730,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardSectionExplore => 'Explore';
 
   @override
+  String get dashboardNeedTitle => 'When You Have a Need';
+
+  @override
+  String get dashboardNeedSubtitle => 'Quran and Sunnah practices for times of need';
+
+  @override
+  String get dashboardNeedOpen => 'View all';
+
+  @override
   String get dashboardActionFullPrayerView => 'Full Prayer View';
 
   @override

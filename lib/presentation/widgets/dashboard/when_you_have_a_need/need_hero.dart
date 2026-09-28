@@ -4,12 +4,10 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
-import '../../../views/dashboard/ramadan/ramadan_models.dart';
-import 'ramadan_hero_tag.dart';
-import 'ramadan_sky_painter.dart';
+import 'need_hero_art.dart';
 
-class RamadanHero extends StatelessWidget {
-  const RamadanHero({super.key, required this.isBangla});
+class NeedHero extends StatelessWidget {
+  const NeedHero({super.key, required this.isBangla});
 
   final bool isBangla;
 
@@ -19,9 +17,9 @@ class RamadanHero extends StatelessWidget {
       borderRadius: BorderRadius.circular(AppRadius.xl),
       boxShadow: [
         BoxShadow(
-          color: MyColors.primaryDark.withValues(alpha: 0.26),
-          blurRadius: 32,
-          offset: const Offset(0, 16),
+          color: MyColors.primaryDark.withValues(alpha: 0.24),
+          blurRadius: 28,
+          offset: const Offset(0, 13),
         ),
       ],
     ),
@@ -35,7 +33,6 @@ class RamadanHero extends StatelessWidget {
               MyColors.primary,
               MyColors.tertiaryDark,
             ],
-            stops: [0, 0.55, 1],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -43,9 +40,7 @@ class RamadanHero extends StatelessWidget {
         child: Stack(
           children: [
             const Positioned.fill(
-              child: IgnorePointer(
-                child: CustomPaint(painter: RamadanSkyPainter()),
-              ),
+              child: IgnorePointer(child: CustomPaint(painter: NeedHeroArt())),
             ),
             Padding(
               padding: const EdgeInsets.all(AppSpacing.xxl),
@@ -56,103 +51,84 @@ class RamadanHero extends StatelessWidget {
                     children: [
                       IconButton(
                         onPressed: () => Navigator.of(context).maybePop(),
+                        icon: const Icon(CupertinoIcons.chevron_back),
                         tooltip: MaterialLocalizations.of(
                           context,
                         ).backButtonTooltip,
                         style: IconButton.styleFrom(
                           foregroundColor: Colors.white,
-                          backgroundColor: Colors.white.withValues(alpha: 0.13),
-                          side: BorderSide(
-                            color: Colors.white.withValues(alpha: 0.18),
-                          ),
+                          backgroundColor: Colors.white.withValues(alpha: 0.14),
                         ),
-                        icon: const Icon(CupertinoIcons.chevron_back),
                       ),
                       const Spacer(),
                       Icon(
-                        CupertinoIcons.moon_stars_fill,
-                        color: MyColors.secondaryLight.withValues(alpha: 0.78),
+                        CupertinoIcons.hand_raised_fill,
+                        color: MyColors.secondaryLight.withValues(alpha: 0.9),
                       ),
                     ],
                   ),
                   const SizedBox(height: AppSpacing.xxl),
                   Text(
-                    ramadanLabel(
-                      isBangla,
-                      'YOUR RAMADAN COMPANION',
-                      'আপনার রমজান সহায়িকা',
-                    ),
+                    isBangla ? 'দোয়ার পথে' : 'A QUIET PATH TO DUA',
                     style: AppTheme.text(context).labelSmall.copyWith(
                       color: MyColors.secondaryLight,
                       fontWeight: AppTheme.weightExtraBold,
-                      letterSpacing: isBangla ? 0 : 0.9,
+                      letterSpacing: isBangla ? 0 : 1.4,
                     ),
                   ),
-                  const SizedBox(height: AppSpacing.sm),
+                  const SizedBox(height: AppSpacing.md),
                   Text(
-                    'رَمَضَان',
+                    'يَا رَبّ',
                     textDirection: TextDirection.rtl,
                     style: AppTheme.amiri(
                       context,
-                      fontSize: 42,
-                      fontWeight: AppTheme.weightBold,
+                      fontSize: 35,
                       color: MyColors.secondaryLight,
-                      height: 1.1,
                     ),
                   ),
                   const SizedBox(height: AppSpacing.xs),
                   Text(
-                    ramadanLabel(
-                      isBangla,
-                      'A month to return',
-                      'ফিরে আসার মাস',
-                    ),
+                    isBangla
+                        ? 'প্রয়োজন ও দোয়া কবুলের আমল'
+                        : 'When You Have a Need',
                     style: AppTheme.text(context).headlineMedium.copyWith(
                       color: Colors.white,
                       fontWeight: AppTheme.weightBlack,
-                      height: 1.13,
-                    ),
-                  ),
-                  const SizedBox(height: AppSpacing.md),
-                  Container(
-                    width: 48,
-                    height: 2,
-                    decoration: BoxDecoration(
-                      color: MyColors.secondaryLight,
-                      borderRadius: BorderRadius.circular(AppRadius.full),
+                      height: 1.12,
                     ),
                   ),
                   const SizedBox(height: AppSpacing.md),
                   Text(
-                    ramadanLabel(
-                      isBangla,
-                      'From the first suhur to Eid: fasting, worship, wellbeing and guidance for every stage.',
-                      'প্রথম সেহরি থেকে ঈদ পর্যন্ত: রোজা, ইবাদত, সুস্থতা ও প্রতিটি পর্যায়ের নির্দেশনা।',
-                    ),
+                    isBangla
+                        ? 'আল্লাহর কাছে সাহায্য, ক্ষমা ও কল্যাণ চাওয়ার কুরআন-সুন্নাহভিত্তিক পথ।'
+                        : 'Quranic and Sunnah based ways to seek Allah’s help, forgiveness, and what is good.',
                     style: AppTheme.text(context).bodyMedium.copyWith(
                       color: Colors.white.withValues(alpha: 0.84),
                       height: 1.5,
                     ),
                   ),
                   const SizedBox(height: AppSpacing.xl),
-                  Wrap(
-                    spacing: AppSpacing.sm,
-                    runSpacing: AppSpacing.sm,
-                    children: [
-                      RamadanHeroTag(
-                        label: ramadanLabel(isBangla, 'FAST', 'রোজা'),
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpacing.md,
+                      vertical: AppSpacing.sm,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withValues(alpha: 0.11),
+                      borderRadius: BorderRadius.circular(AppRadius.full),
+                      border: Border.all(
+                        color: MyColors.secondaryLight.withValues(alpha: 0.28),
                       ),
-                      RamadanHeroTag(
-                        label: ramadanLabel(
-                          isBangla,
-                          'REFLECT',
-                          'আত্মসমালোচনা',
-                        ),
+                    ),
+                    child: Text(
+                      isBangla
+                          ? 'ফল আল্লাহর হাতে · কোনো নিশ্চয়তার প্রতিশ্রুতি নয়'
+                          : 'A means of seeking acceptance · outcomes belong to Allah',
+                      style: AppTheme.text(context).labelSmall.copyWith(
+                        color: Colors.white,
+                        fontWeight: AppTheme.weightBold,
                       ),
-                      RamadanHeroTag(
-                        label: ramadanLabel(isBangla, 'GIVE', 'দান'),
-                      ),
-                    ],
+                    ),
                   ),
                 ],
               ),

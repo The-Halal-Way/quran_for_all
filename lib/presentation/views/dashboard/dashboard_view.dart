@@ -15,6 +15,7 @@ import '../../widgets/dashboard/dashboard_view/dashboard_header.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_prayer_section.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_shortcut_catalog.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_tracker_preview.dart';
+import '../../widgets/dashboard/when_you_have_a_need/dashboard_need_section.dart';
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
@@ -60,6 +61,8 @@ class DashboardView extends StatelessWidget {
                           title: context.l10n.dashboardSectionExplore,
                           items: dashboardActions(context),
                         ),
+                        const SizedBox(height: AppSpacing.xxl),
+                        const DashboardNeedSection(),
                         const SizedBox(height: AppSpacing.xxl),
                         const DashboardHadithSection(),
                       ],

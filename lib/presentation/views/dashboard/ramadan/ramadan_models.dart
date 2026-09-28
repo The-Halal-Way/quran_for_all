@@ -64,5 +64,4 @@ class RamadanTopic {
   final RamadanReference? reference;
 }
 
-
 String ramadanLabel(bool bn, String en, String bangla) => bn ? bangla : en;

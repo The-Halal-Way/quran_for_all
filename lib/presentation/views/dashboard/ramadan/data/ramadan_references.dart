@@ -80,4 +80,3 @@ const ramadanWomenQuran = RamadanReference(
   'Egypt Dar al-Ifta · Qur’an during menstruation',
   'https://dar-alifta.org/en/fatwa/details/7815/is-it-permissible-for-a-menstruating-woman-to-recite-the-quran-from-the-computer',
 );
-

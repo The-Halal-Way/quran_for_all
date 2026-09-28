@@ -3473,6 +3473,24 @@ abstract class AppLocalizations {
   /// **'Explore'**
   String get dashboardSectionExplore;
 
+  /// No description provided for @dashboardNeedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'When You Have a Need'**
+  String get dashboardNeedTitle;
+
+  /// No description provided for @dashboardNeedSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran and Sunnah practices for times of need'**
+  String get dashboardNeedSubtitle;
+
+  /// No description provided for @dashboardNeedOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'View all'**
+  String get dashboardNeedOpen;
+
   /// No description provided for @dashboardActionFullPrayerView.
   ///
   /// In en, this message translates to:

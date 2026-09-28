@@ -7,6 +7,7 @@ import '../../../views/dashboard/ramadan/ramadan_models.dart';
 
 class RamadanOverviewSectionTile extends StatelessWidget {
   const RamadanOverviewSectionTile({
+    super.key,
     required this.section,
     required this.isBangla,
     required this.count,

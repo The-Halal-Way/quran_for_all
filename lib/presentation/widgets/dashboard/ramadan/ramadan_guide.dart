@@ -62,9 +62,11 @@ class _RamadanGuideState extends State<RamadanGuide> {
     final entries = ramadanTopics
         .asMap()
         .entries
-        .where((entry) => query.isNotEmpty
-            ? _matches(entry.value, query)
-            : entry.value.section == _selectedSection)
+        .where(
+          (entry) => query.isNotEmpty
+              ? _matches(entry.value, query)
+              : entry.value.section == _selectedSection,
+        )
         .toList(growable: false);
     final bn = widget.isBangla;
 

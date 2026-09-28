@@ -5,6 +5,7 @@ import '../../../../core/theme/app_theme.dart';
 
 class RamadanTimePoint extends StatelessWidget {
   const RamadanTimePoint({
+    super.key,
     required this.icon,
     required this.label,
     required this.time,

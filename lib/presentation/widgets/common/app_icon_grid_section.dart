@@ -62,17 +62,26 @@ class AppIconGridSection extends StatelessWidget {
             ),
             if (actionLabel != null && onActionTap != null)
               CupertinoButton(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: AppSpacing.sm,
-                  vertical: AppSpacing.xs,
-                ),
+                minimumSize: Size.zero,
+                padding: const EdgeInsetsDirectional.only(start: AppSpacing.sm),
                 onPressed: onActionTap,
-                child: Text(
-                  actionLabel!,
-                  style: AppTheme.text(context).labelMedium.copyWith(
-                    color: Theme.of(context).colorScheme.primary,
-                    fontWeight: AppTheme.weightSemiBold,
-                  ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      actionLabel!,
+                      style: AppTheme.text(context).labelMedium.copyWith(
+                        color: Theme.of(context).colorScheme.primary,
+                        fontWeight: AppTheme.weightSemiBold,
+                      ),
+                    ),
+                    const SizedBox(width: AppSpacing.xs),
+                    Icon(
+                      CupertinoIcons.chevron_right,
+                      size: 13,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ],
                 ),
               ),
           ],

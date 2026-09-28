@@ -84,11 +84,13 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    expect(find.byType(AppIconGridSection), findsOneWidget);
+    expect(find.byType(AppIconGridSection), findsNWidgets(2));
     final section = tester.widget<AppIconGridSection>(
-      find.byType(AppIconGridSection),
+      find.byWidgetPredicate(
+        (widget) => widget is AppIconGridSection && widget.title == 'Explore',
+      ),
     );
-    expect(section.items, hasLength(7));
+    expect(section.items, hasLength(8));
     expect(section.title, 'Explore');
     expect(
       section.items.map((item) => item.label),

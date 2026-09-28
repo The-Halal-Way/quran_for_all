@@ -1730,6 +1730,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardSectionExplore => 'এক্সপ্লোর করুন';
 
   @override
+  String get dashboardNeedTitle => 'প্রয়োজন ও দোয়া কবুলের আমল';
+
+  @override
+  String get dashboardNeedSubtitle => 'প্রয়োজনে কুরআন ও সুন্নাহভিত্তিক আমল';
+
+  @override
+  String get dashboardNeedOpen => 'সব দেখুন';
+
+  @override
   String get dashboardActionFullPrayerView => 'পূর্ণ নামাজ ভিউ';
 
   @override

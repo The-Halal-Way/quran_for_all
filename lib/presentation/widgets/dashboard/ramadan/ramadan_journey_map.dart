@@ -5,7 +5,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../views/dashboard/ramadan/ramadan_models.dart';
 
 class RamadanJourneyMap extends StatelessWidget {
-  const RamadanJourneyMap({required this.isBangla});
+  const RamadanJourneyMap({super.key, required this.isBangla});
 
   final bool isBangla;
 
