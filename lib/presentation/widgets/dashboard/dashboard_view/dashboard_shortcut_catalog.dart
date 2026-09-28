@@ -5,10 +5,11 @@ import '../../../../core/theme/my_colors.dart';
 import '../../../views/dashboard/compass/compass_view.dart';
 import '../../../views/dashboard/hijri_calendar/hijri_calendar_view.dart';
 import '../../../views/dashboard/tasbeeh/tasbeeh_view.dart';
+import '../../../views/dashboard/zakat_calculator/zakat_calculator_view.dart';
+import '../../../views/dashboard/ramadan/ramadan_view.dart';
 import '../../../views/prayer/eid_prayer/eid_prayer_view.dart';
 import '../../../views/sunnah_dua/duah/daily_duah_view.dart';
 import '../../../views/sunnah_dua/duah/duah_ninty_nine_view.dart';
-import '../../../views/sunnah_dua/duah/powerful_duah_view.dart';
 import '../../common/app_icon_grid_section.dart';
 import 'dashboard_navigation.dart';
 
@@ -21,11 +22,11 @@ List<AppIconGridItem> dashboardActions(BuildContext context) => [
     onTap: () => pushDashboardPage(context, const DailyDuahView()),
   ),
   AppIconGridItem(
-    icon: CupertinoIcons.bolt_fill,
-    label: context.l10n.dashboardActionPowerfulDua,
-    description: context.l10n.dashboardActionPowerfulDuaSub,
+    icon: CupertinoIcons.moon_stars_fill,
+    label: context.l10n.dashboardActionRamadan,
+    description: context.l10n.dashboardActionRamadanSub,
     accent: MyColors.secondary,
-    onTap: () => pushDashboardPage(context, const PowerfulDuahView()),
+    onTap: () => pushDashboardPage(context, const RamadanView()),
   ),
   AppIconGridItem(
     icon: CupertinoIcons.circle_grid_hex_fill,
@@ -61,5 +62,12 @@ List<AppIconGridItem> dashboardActions(BuildContext context) => [
     description: context.l10n.dashboardActionTasbeehSub,
     accent: MyColors.tertiaryDark,
     onTap: () => pushDashboardPage(context, const TasbeehView()),
+  ),
+  AppIconGridItem(
+    icon: CupertinoIcons.gift_fill,
+    label: context.l10n.dashboardActionZakatCalculator,
+    description: context.l10n.dashboardActionZakatCalculatorSub,
+    accent: MyColors.secondary,
+    onTap: () => pushDashboardPage(context, const ZakatCalculatorView()),
   ),
 ];

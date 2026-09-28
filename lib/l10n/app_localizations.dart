@@ -3533,6 +3533,18 @@ abstract class AppLocalizations {
   /// **'Curated supplications'**
   String get dashboardActionPowerfulDuaSub;
 
+  /// No description provided for @dashboardActionRamadan.
+  ///
+  /// In en, this message translates to:
+  /// **'Ramadan'**
+  String get dashboardActionRamadan;
+
+  /// No description provided for @dashboardActionRamadanSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Your complete companion'**
+  String get dashboardActionRamadanSub;
+
   /// No description provided for @dashboardActionNintyNineNames.
   ///
   /// In en, this message translates to:
@@ -3574,6 +3586,312 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Counter & dhikr'**
   String get dashboardActionTasbeehSub;
+
+  /// No description provided for @dashboardActionZakatCalculator.
+  ///
+  /// In en, this message translates to:
+  /// **'Zakat Calculator'**
+  String get dashboardActionZakatCalculator;
+
+  /// No description provided for @dashboardActionZakatCalculatorSub.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimate zakat on wealth'**
+  String get dashboardActionZakatCalculatorSub;
+
+  /// No description provided for @zakatSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A clear estimate for your annual giving'**
+  String get zakatSubtitle;
+
+  /// No description provided for @zakatHeroEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'ZAKAT AL-MAL · 2.5%'**
+  String get zakatHeroEyebrow;
+
+  /// No description provided for @zakatHeroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Give with clarity'**
+  String get zakatHeroTitle;
+
+  /// No description provided for @zakatHeroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Add your zakatable wealth, choose a nisab standard, and see your estimate instantly.'**
+  String get zakatHeroBody;
+
+  /// No description provided for @zakatCurrency.
+  ///
+  /// In en, this message translates to:
+  /// **'Currency'**
+  String get zakatCurrency;
+
+  /// No description provided for @zakatCurrencyChangeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch currency?'**
+  String get zakatCurrencyChangeTitle;
+
+  /// No description provided for @zakatCurrencyChangeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Amounts cannot be converted automatically. Switching currency will clear all entered values.'**
+  String get zakatCurrencyChangeBody;
+
+  /// No description provided for @zakatCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get zakatCancel;
+
+  /// No description provided for @zakatSwitchCurrency.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch & clear'**
+  String get zakatSwitchCurrency;
+
+  /// No description provided for @zakatNisabTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Set your nisab'**
+  String get zakatNisabTitle;
+
+  /// No description provided for @zakatNisabHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter today\'s price per gram in the selected currency. Prices are not updated automatically.'**
+  String get zakatNisabHint;
+
+  /// No description provided for @zakatSilver.
+  ///
+  /// In en, this message translates to:
+  /// **'Silver · 612.36 g'**
+  String get zakatSilver;
+
+  /// No description provided for @zakatGold.
+  ///
+  /// In en, this message translates to:
+  /// **'Gold · 87.48 g'**
+  String get zakatGold;
+
+  /// No description provided for @zakatSilverPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Pure silver price per gram'**
+  String get zakatSilverPrice;
+
+  /// No description provided for @zakatGoldPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'24K gold price per gram'**
+  String get zakatGoldPrice;
+
+  /// No description provided for @zakatPriceHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. 150.00'**
+  String get zakatPriceHint;
+
+  /// No description provided for @zakatNisabValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Nisab threshold'**
+  String get zakatNisabValue;
+
+  /// No description provided for @zakatAssetsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your zakatable assets'**
+  String get zakatAssetsTitle;
+
+  /// No description provided for @zakatAssetsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Use their current value in the same currency.'**
+  String get zakatAssetsHint;
+
+  /// No description provided for @zakatCash.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash & bank balances'**
+  String get zakatCash;
+
+  /// No description provided for @zakatSavings.
+  ///
+  /// In en, this message translates to:
+  /// **'Savings'**
+  String get zakatSavings;
+
+  /// No description provided for @zakatGoldValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Gold value'**
+  String get zakatGoldValue;
+
+  /// No description provided for @zakatSilverValue.
+  ///
+  /// In en, this message translates to:
+  /// **'Silver value'**
+  String get zakatSilverValue;
+
+  /// No description provided for @zakatInvestments.
+  ///
+  /// In en, this message translates to:
+  /// **'Zakatable investments'**
+  String get zakatInvestments;
+
+  /// No description provided for @zakatBusiness.
+  ///
+  /// In en, this message translates to:
+  /// **'Business stock for sale'**
+  String get zakatBusiness;
+
+  /// No description provided for @zakatReceivables.
+  ///
+  /// In en, this message translates to:
+  /// **'Money likely to be repaid'**
+  String get zakatReceivables;
+
+  /// No description provided for @zakatOtherAssets.
+  ///
+  /// In en, this message translates to:
+  /// **'Other zakatable assets'**
+  String get zakatOtherAssets;
+
+  /// No description provided for @zakatLiabilitiesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Amounts due'**
+  String get zakatLiabilitiesTitle;
+
+  /// No description provided for @zakatLiabilitiesHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter debts and bills payable now or within the next 12 months, according to your guidance.'**
+  String get zakatLiabilitiesHint;
+
+  /// No description provided for @zakatDebts.
+  ///
+  /// In en, this message translates to:
+  /// **'Debt payments due'**
+  String get zakatDebts;
+
+  /// No description provided for @zakatBills.
+  ///
+  /// In en, this message translates to:
+  /// **'Bills & wages due'**
+  String get zakatBills;
+
+  /// No description provided for @zakatAmountHint.
+  ///
+  /// In en, this message translates to:
+  /// **'0.00'**
+  String get zakatAmountHint;
+
+  /// No description provided for @zakatInvalidAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Use a number with up to 2 decimal places'**
+  String get zakatInvalidAmount;
+
+  /// No description provided for @zakatLunarYearTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'One lunar year has passed'**
+  String get zakatLunarYearTitle;
+
+  /// No description provided for @zakatLunarYearBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm that your wealth has reached nisab for your zakat year.'**
+  String get zakatLunarYearBody;
+
+  /// No description provided for @zakatResultTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your estimate'**
+  String get zakatResultTitle;
+
+  /// No description provided for @zakatDue.
+  ///
+  /// In en, this message translates to:
+  /// **'Zakat due'**
+  String get zakatDue;
+
+  /// No description provided for @zakatNetAssets.
+  ///
+  /// In en, this message translates to:
+  /// **'Net zakatable wealth'**
+  String get zakatNetAssets;
+
+  /// No description provided for @zakatTotalAssets.
+  ///
+  /// In en, this message translates to:
+  /// **'Total assets'**
+  String get zakatTotalAssets;
+
+  /// No description provided for @zakatTotalLiabilities.
+  ///
+  /// In en, this message translates to:
+  /// **'Less amounts due'**
+  String get zakatTotalLiabilities;
+
+  /// No description provided for @zakatStatusSetPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a metal price to check nisab'**
+  String get zakatStatusSetPrice;
+
+  /// No description provided for @zakatStatusInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the highlighted amounts'**
+  String get zakatStatusInvalid;
+
+  /// No description provided for @zakatStatusBelow.
+  ///
+  /// In en, this message translates to:
+  /// **'Below your chosen nisab'**
+  String get zakatStatusBelow;
+
+  /// No description provided for @zakatStatusAwaiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm the lunar year to assess zakat'**
+  String get zakatStatusAwaiting;
+
+  /// No description provided for @zakatStatusDue.
+  ///
+  /// In en, this message translates to:
+  /// **'Nisab reached · zakat is due'**
+  String get zakatStatusDue;
+
+  /// No description provided for @zakatGuideTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How this estimate works'**
+  String get zakatGuideTitle;
+
+  /// No description provided for @zakatGuideBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Net wealth = zakatable assets minus eligible amounts due. Once it reaches your chosen nisab and a lunar year has passed, zakat is 2.5% of the full net amount. Personal jewellery, retirement funds and debts may need individual guidance.'**
+  String get zakatGuideBody;
+
+  /// No description provided for @zakatGuideSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculation guidance: Islamic Relief'**
+  String get zakatGuideSource;
+
+  /// No description provided for @zakatReset.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear all'**
+  String get zakatReset;
 
   /// No description provided for @dashboardSectionHadith.
   ///
@@ -3676,6 +3994,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add dhikr'**
   String get tasbeehAddDhikr;
+
+  /// No description provided for @tasbeehSuggestedDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Common dhikr'**
+  String get tasbeehSuggestedDhikr;
+
+  /// No description provided for @tasbeehSuggestionHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap one to fill the fields'**
+  String get tasbeehSuggestionHint;
+
+  /// No description provided for @tasbeehSuggestionAstaghfirullah.
+  ///
+  /// In en, this message translates to:
+  /// **'Astaghfirullah'**
+  String get tasbeehSuggestionAstaghfirullah;
+
+  /// No description provided for @tasbeehSuggestionSubhanAllahiWaBihamdihi.
+  ///
+  /// In en, this message translates to:
+  /// **'SubhanAllahi wa bihamdihi'**
+  String get tasbeehSuggestionSubhanAllahiWaBihamdihi;
+
+  /// No description provided for @tasbeehSuggestionLaHawla.
+  ///
+  /// In en, this message translates to:
+  /// **'La hawla wa la quwwata illa billah'**
+  String get tasbeehSuggestionLaHawla;
+
+  /// No description provided for @tasbeehSuggestionSalawat.
+  ///
+  /// In en, this message translates to:
+  /// **'Allahumma salli ala Muhammad'**
+  String get tasbeehSuggestionSalawat;
+
+  /// No description provided for @tasbeehSuggestionHasbunallah.
+  ///
+  /// In en, this message translates to:
+  /// **'Hasbunallahu wa ni\'mal wakeel'**
+  String get tasbeehSuggestionHasbunallah;
+
+  /// No description provided for @tasbeehSuggestionSubhanAllahilAzim.
+  ///
+  /// In en, this message translates to:
+  /// **'SubhanAllahil Azim'**
+  String get tasbeehSuggestionSubhanAllahilAzim;
+
+  /// No description provided for @tasbeehSuggestionRabbiZidniIlma.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabbi zidni ilma'**
+  String get tasbeehSuggestionRabbiZidniIlma;
+
+  /// No description provided for @tasbeehSuggestionLaIlahaIllaAnta.
+  ///
+  /// In en, this message translates to:
+  /// **'La ilaha illa anta subhanaka'**
+  String get tasbeehSuggestionLaIlahaIllaAnta;
+
+  /// No description provided for @tasbeehSuggestionYaHayyuYaQayyum.
+  ///
+  /// In en, this message translates to:
+  /// **'Ya Hayyu Ya Qayyum'**
+  String get tasbeehSuggestionYaHayyuYaQayyum;
 
   /// No description provided for @tasbeehEditDhikr.
   ///

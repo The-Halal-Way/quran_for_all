@@ -119,6 +119,89 @@ void main() {
     },
   );
 
+  for (final locale in ['en', 'bn']) {
+    testWidgets('a $locale suggestion fills the new dhikr editor', (
+      tester,
+    ) async {
+      await pump(tester, locale: locale);
+      await tapVisible(tester, find.byKey(const ValueKey('tasbeeh_add')));
+      expect(
+        find.text(locale == 'en' ? 'Common dhikr' : 'প্রচলিত জিকির'),
+        findsOneWidget,
+      );
+      await tapVisible(
+        tester,
+        find.byKey(const ValueKey('tasbeeh_suggestion_0')),
+      );
+      expect(
+        tester
+            .widget<TextFormField>(
+              find.byKey(const ValueKey('tasbeeh_name_field')),
+            )
+            .controller!
+            .text,
+        locale == 'en' ? 'Astaghfirullah' : 'আস্তাগফিরুল্লাহ',
+      );
+      expect(
+        tester
+            .widget<TextFormField>(
+              find.byKey(const ValueKey('tasbeeh_arabic_field')),
+            )
+            .controller!
+            .text,
+        'أستغفر الله',
+      );
+      expect(
+        tester
+            .widget<TextFormField>(
+              find.byKey(const ValueKey('tasbeeh_target_field')),
+            )
+            .controller!
+            .text,
+        '33',
+      );
+      await tapVisible(
+        tester,
+        find.text(locale == 'en' ? 'Save dhikr' : 'জিকির সংরক্ষণ'),
+      );
+      expect(model.selectedPhrase.arabic, 'أستغفر الله');
+      expect(model.target, 33);
+      expect(tester.takeException(), isNull);
+    });
+  }
+
+  testWidgets('later dhikr suggestions remain selectable by scrolling', (
+    tester,
+  ) async {
+    await pump(tester);
+    await tapVisible(tester, find.byKey(const ValueKey('tasbeeh_add')));
+    await tester.drag(find.byType(ListView), const Offset(-1400, 0));
+    await tester.pumpAndSettle();
+    await tapVisible(
+      tester,
+      find.byKey(const ValueKey('tasbeeh_suggestion_8')),
+    );
+    expect(
+      tester
+          .widget<TextFormField>(
+            find.byKey(const ValueKey('tasbeeh_name_field')),
+          )
+          .controller!
+          .text,
+      'Ya Hayyu Ya Qayyum',
+    );
+    expect(
+      tester
+          .widget<TextFormField>(
+            find.byKey(const ValueKey('tasbeeh_arabic_field')),
+          )
+          .controller!
+          .text,
+      'يا حي يا قيوم',
+    );
+    expect(tester.takeException(), isNull);
+  });
+
   testWidgets(
     'focus counts background and content taps once; Undo and Exit do not count',
     (tester) async {

@@ -1760,6 +1760,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardActionPowerfulDuaSub => 'নির্বাচিত প্রার্থনাসমূহ';
 
   @override
+  String get dashboardActionRamadan => 'রমজান';
+
+  @override
+  String get dashboardActionRamadanSub => 'সম্পূর্ণ রমজান সহায়িকা';
+
+  @override
   String get dashboardActionNintyNineNames => '৯৯টি নাম';
 
   @override
@@ -1779,6 +1785,159 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dashboardActionTasbeehSub => 'গণনা ও জিকির';
+
+  @override
+  String get dashboardActionZakatCalculator => 'যাকাত ক্যালকুলেটর';
+
+  @override
+  String get dashboardActionZakatCalculatorSub => 'সম্পদের যাকাত হিসাব করুন';
+
+  @override
+  String get zakatSubtitle => 'বার্ষিক যাকাতের একটি সহজ হিসাব';
+
+  @override
+  String get zakatHeroEyebrow => 'যাকাতুল মাল · ২.৫%';
+
+  @override
+  String get zakatHeroTitle => 'নিশ্চিন্তে হিসাব করুন';
+
+  @override
+  String get zakatHeroBody => 'যাকাতযোগ্য সম্পদ যোগ করুন, নিসাবের ভিত্তি বেছে নিন এবং সঙ্গে সঙ্গে হিসাব দেখুন।';
+
+  @override
+  String get zakatCurrency => 'মুদ্রা';
+
+  @override
+  String get zakatCurrencyChangeTitle => 'মুদ্রা পরিবর্তন করবেন?';
+
+  @override
+  String get zakatCurrencyChangeBody => 'টাকার অঙ্ক স্বয়ংক্রিয়ভাবে রূপান্তর হয় না। মুদ্রা পরিবর্তন করলে লেখা সব অঙ্ক মুছে যাবে।';
+
+  @override
+  String get zakatCancel => 'বাতিল';
+
+  @override
+  String get zakatSwitchCurrency => 'পরিবর্তন ও মুছুন';
+
+  @override
+  String get zakatNisabTitle => 'নিসাব নির্ধারণ করুন';
+
+  @override
+  String get zakatNisabHint => 'নির্বাচিত মুদ্রায় আজকের প্রতি গ্রামের দাম লিখুন। দাম স্বয়ংক্রিয়ভাবে হালনাগাদ হয় না।';
+
+  @override
+  String get zakatSilver => 'রূপা · ৬১২.৩৬ গ্রাম';
+
+  @override
+  String get zakatGold => 'সোনা · ৮৭.৪৮ গ্রাম';
+
+  @override
+  String get zakatSilverPrice => 'খাঁটি রূপার প্রতি গ্রামের দাম';
+
+  @override
+  String get zakatGoldPrice => '২৪ ক্যারেট সোনার প্রতি গ্রামের দাম';
+
+  @override
+  String get zakatPriceHint => 'যেমন ১৫০.০০';
+
+  @override
+  String get zakatNisabValue => 'নিসাবের সীমা';
+
+  @override
+  String get zakatAssetsTitle => 'আপনার যাকাতযোগ্য সম্পদ';
+
+  @override
+  String get zakatAssetsHint => 'একই মুদ্রায় বর্তমান মূল্য লিখুন।';
+
+  @override
+  String get zakatCash => 'নগদ ও ব্যাংকের টাকা';
+
+  @override
+  String get zakatSavings => 'সঞ্চয়';
+
+  @override
+  String get zakatGoldValue => 'সোনার মূল্য';
+
+  @override
+  String get zakatSilverValue => 'রূপার মূল্য';
+
+  @override
+  String get zakatInvestments => 'যাকাতযোগ্য বিনিয়োগ';
+
+  @override
+  String get zakatBusiness => 'বিক্রির জন্য ব্যবসার পণ্য';
+
+  @override
+  String get zakatReceivables => 'ফেরত পাওয়ার সম্ভাবনাযুক্ত টাকা';
+
+  @override
+  String get zakatOtherAssets => 'অন্যান্য যাকাতযোগ্য সম্পদ';
+
+  @override
+  String get zakatLiabilitiesTitle => 'পরিশোধযোগ্য অর্থ';
+
+  @override
+  String get zakatLiabilitiesHint => 'আপনার অনুসৃত নির্দেশনা অনুযায়ী এখন বা আগামী ১২ মাসে পরিশোধযোগ্য ঋণ ও বিল লিখুন।';
+
+  @override
+  String get zakatDebts => 'পরিশোধযোগ্য ঋণ';
+
+  @override
+  String get zakatBills => 'পরিশোধযোগ্য বিল ও বেতন';
+
+  @override
+  String get zakatAmountHint => '০.০০';
+
+  @override
+  String get zakatInvalidAmount => 'সর্বোচ্চ ২ ঘর দশমিকসহ সংখ্যা লিখুন';
+
+  @override
+  String get zakatLunarYearTitle => 'এক চান্দ্র বছর পূর্ণ হয়েছে';
+
+  @override
+  String get zakatLunarYearBody => 'আপনার যাকাতের বছরে সম্পদ নিসাবে পৌঁছেছে কি না নিশ্চিত করুন।';
+
+  @override
+  String get zakatResultTitle => 'আপনার হিসাব';
+
+  @override
+  String get zakatDue => 'প্রদেয় যাকাত';
+
+  @override
+  String get zakatNetAssets => 'নিট যাকাতযোগ্য সম্পদ';
+
+  @override
+  String get zakatTotalAssets => 'মোট সম্পদ';
+
+  @override
+  String get zakatTotalLiabilities => 'বাদ: পরিশোধযোগ্য অর্থ';
+
+  @override
+  String get zakatStatusSetPrice => 'নিসাব দেখতে ধাতুর দাম লিখুন';
+
+  @override
+  String get zakatStatusInvalid => 'চিহ্নিত টাকার অঙ্কগুলো ঠিক করুন';
+
+  @override
+  String get zakatStatusBelow => 'নির্বাচিত নিসাবের নিচে';
+
+  @override
+  String get zakatStatusAwaiting => 'যাকাতের জন্য চান্দ্র বছর নিশ্চিত করুন';
+
+  @override
+  String get zakatStatusDue => 'নিসাব পূর্ণ · যাকাত প্রযোজ্য';
+
+  @override
+  String get zakatGuideTitle => 'হিসাবের নিয়ম';
+
+  @override
+  String get zakatGuideBody => 'নিট সম্পদ = যাকাতযোগ্য সম্পদ থেকে পরিশোধযোগ্য অর্থ বাদ। নির্বাচিত নিসাবে পৌঁছে এক চান্দ্র বছর পূর্ণ হলে পুরো নিট সম্পদের ২.৫% যাকাত। ব্যক্তিগত গয়না, অবসরকালীন তহবিল ও ঋণের ক্ষেত্রে আলাদা পরামর্শ প্রয়োজন হতে পারে।';
+
+  @override
+  String get zakatGuideSource => 'হিসাবের নির্দেশনা: ইসলামিক রিলিফ';
+
+  @override
+  String get zakatReset => 'সব মুছুন';
 
   @override
   String get dashboardSectionHadith => 'হাদিস';
@@ -1830,6 +1989,39 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tasbeehAddDhikr => 'জিকির যোগ করুন';
+
+  @override
+  String get tasbeehSuggestedDhikr => 'প্রচলিত জিকির';
+
+  @override
+  String get tasbeehSuggestionHint => 'লেখা পূরণ করতে একটি বেছে নিন';
+
+  @override
+  String get tasbeehSuggestionAstaghfirullah => 'আস্তাগফিরুল্লাহ';
+
+  @override
+  String get tasbeehSuggestionSubhanAllahiWaBihamdihi => 'সুবহানাল্লাহি ওয়া বিহামদিহি';
+
+  @override
+  String get tasbeehSuggestionLaHawla => 'লা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ';
+
+  @override
+  String get tasbeehSuggestionSalawat => 'আল্লাহুম্মা সাল্লি আলা মুহাম্মাদ';
+
+  @override
+  String get tasbeehSuggestionHasbunallah => 'হাসবুনাল্লাহু ওয়া নি\'মাল ওয়াকিল';
+
+  @override
+  String get tasbeehSuggestionSubhanAllahilAzim => 'সুবহানাল্লাহিল আজিম';
+
+  @override
+  String get tasbeehSuggestionRabbiZidniIlma => 'রব্বি জিদনি ইলমা';
+
+  @override
+  String get tasbeehSuggestionLaIlahaIllaAnta => 'লা ইলাহা ইল্লা আনতা সুবহানাকা';
+
+  @override
+  String get tasbeehSuggestionYaHayyuYaQayyum => 'ইয়া হাইয়্যু ইয়া কাইয়্যুম';
 
   @override
   String get tasbeehEditDhikr => 'জিকির সম্পাদনা';

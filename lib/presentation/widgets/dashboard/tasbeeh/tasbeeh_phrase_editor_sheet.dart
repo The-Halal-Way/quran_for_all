@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../domain/entities/tasbeeh/tasbeeh_phrase.dart';
 import '../../../models/tasbeeh_phrase_draft.dart';
@@ -56,9 +57,39 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
     );
   }
 
+  void _useSuggestion(String name, String arabic) {
+    _name.text = name;
+    _arabic.text = arabic;
+    FocusScope.of(context).unfocus();
+  }
+
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
+    final l10n = context.l10n;
+    final suggestions = [
+      (name: l10n.tasbeehSuggestionAstaghfirullah, arabic: 'أستغفر الله'),
+      (
+        name: l10n.tasbeehSuggestionSubhanAllahiWaBihamdihi,
+        arabic: 'سبحان الله وبحمده',
+      ),
+      (name: l10n.tasbeehSuggestionLaHawla, arabic: 'لا حول ولا قوة إلا بالله'),
+      (name: l10n.tasbeehSuggestionSalawat, arabic: 'اللهم صل على محمد'),
+      (
+        name: l10n.tasbeehSuggestionHasbunallah,
+        arabic: 'حسبنا الله ونعم الوكيل',
+      ),
+      (
+        name: l10n.tasbeehSuggestionSubhanAllahilAzim,
+        arabic: 'سبحان الله العظيم',
+      ),
+      (name: l10n.tasbeehSuggestionRabbiZidniIlma, arabic: 'رب زدني علما'),
+      (
+        name: l10n.tasbeehSuggestionLaIlahaIllaAnta,
+        arabic: 'لا إله إلا أنت سبحانك إني كنت من الظالمين',
+      ),
+      (name: l10n.tasbeehSuggestionYaHayyuYaQayyum, arabic: 'يا حي يا قيوم'),
+    ];
     return SafeArea(
       child: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(
@@ -75,31 +106,64 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
             children: [
               Text(
                 widget.phrase == null
-                    ? context.l10n.tasbeehAddDhikr
-                    : context.l10n.tasbeehEditDhikr,
+                    ? l10n.tasbeehAddDhikr
+                    : l10n.tasbeehEditDhikr,
                 style: text.titleLarge.copyWith(fontWeight: FontWeight.w800),
               ),
               if (widget.phrase != null) ...[
                 const SizedBox(height: 6),
+                Text(l10n.tasbeehEditPreservesCount, style: text.bodySmall),
+              ],
+              if (widget.phrase == null) ...[
+                const SizedBox(height: AppSpacing.xl),
                 Text(
-                  context.l10n.tasbeehEditPreservesCount,
-                  style: text.bodySmall,
+                  l10n.tasbeehSuggestedDhikr,
+                  style: text.titleSmall.copyWith(
+                    fontWeight: AppTheme.weightBold,
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.xs),
+                Text(
+                  l10n.tasbeehSuggestionHint,
+                  style: text.bodySmall.copyWith(
+                    color: Theme.of(context).colorScheme.onSurfaceVariant,
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.md),
+                SizedBox(
+                  height: MediaQuery.textScalerOf(context).scale(88),
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: suggestions.length,
+                    separatorBuilder: (_, _) =>
+                        const SizedBox(width: AppSpacing.sm),
+                    itemBuilder: (context, index) {
+                      final suggestion = suggestions[index];
+                      return _SuggestionCard(
+                        key: ValueKey('tasbeeh_suggestion_$index'),
+                        name: suggestion.name,
+                        arabic: suggestion.arabic,
+                        onTap: () =>
+                            _useSuggestion(suggestion.name, suggestion.arabic),
+                      );
+                    },
+                  ),
                 ),
               ],
               const SizedBox(height: 20),
               TextFormField(
                 key: const ValueKey('tasbeeh_name_field'),
                 controller: _name,
-                autofocus: true,
+                autofocus: widget.phrase != null,
                 textCapitalization: TextCapitalization.sentences,
                 textInputAction: TextInputAction.next,
                 maxLength: TasbeehPhrase.maxNameLength,
                 decoration: InputDecoration(
-                  labelText: context.l10n.tasbeehNameLabel,
-                  hintText: context.l10n.tasbeehNameHint,
+                  labelText: l10n.tasbeehNameLabel,
+                  hintText: l10n.tasbeehNameHint,
                 ),
                 validator: (value) => value == null || value.trim().isEmpty
-                    ? context.l10n.tasbeehNameRequired
+                    ? l10n.tasbeehNameRequired
                     : null,
               ),
               const SizedBox(height: 12),
@@ -111,9 +175,7 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 maxLines: 3,
                 maxLength: TasbeehPhrase.maxArabicLength,
                 style: AppTheme.amiri(context, fontSize: 23),
-                decoration: InputDecoration(
-                  labelText: context.l10n.tasbeehArabicLabel,
-                ),
+                decoration: InputDecoration(labelText: l10n.tasbeehArabicLabel),
               ),
               const SizedBox(height: 12),
               TasbeehTargetField(controller: _target),
@@ -123,10 +185,75 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 child: FilledButton.icon(
                   onPressed: _submit,
                   icon: const Icon(Icons.check_rounded),
-                  label: Text(context.l10n.tasbeehSaveDhikr),
+                  label: Text(l10n.tasbeehSaveDhikr),
                 ),
               ),
             ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _SuggestionCard extends StatelessWidget {
+  const _SuggestionCard({
+    super.key,
+    required this.name,
+    required this.arabic,
+    required this.onTap,
+  });
+
+  final String name;
+  final String arabic;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    return Material(
+      color: colors.secondary.withValues(alpha: 0.09),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        side: BorderSide(color: colors.secondary.withValues(alpha: 0.26)),
+      ),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadius.md),
+        child: SizedBox(
+          width: 176,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.md,
+              vertical: AppSpacing.sm,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  arabic,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  textDirection: TextDirection.rtl,
+                  style: AppTheme.amiri(
+                    context,
+                    fontSize: 21,
+                    color: colors.onSurface,
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.xs),
+                Text(
+                  name,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTheme.text(context).labelMedium.copyWith(
+                    color: colors.onSurfaceVariant,
+                    fontWeight: AppTheme.weightSemiBold,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

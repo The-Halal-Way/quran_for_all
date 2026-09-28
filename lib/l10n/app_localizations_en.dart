@@ -1760,6 +1760,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardActionPowerfulDuaSub => 'Curated supplications';
 
   @override
+  String get dashboardActionRamadan => 'Ramadan';
+
+  @override
+  String get dashboardActionRamadanSub => 'Your complete companion';
+
+  @override
   String get dashboardActionNintyNineNames => '99 Names';
 
   @override
@@ -1779,6 +1785,159 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dashboardActionTasbeehSub => 'Counter & dhikr';
+
+  @override
+  String get dashboardActionZakatCalculator => 'Zakat Calculator';
+
+  @override
+  String get dashboardActionZakatCalculatorSub => 'Estimate zakat on wealth';
+
+  @override
+  String get zakatSubtitle => 'A clear estimate for your annual giving';
+
+  @override
+  String get zakatHeroEyebrow => 'ZAKAT AL-MAL · 2.5%';
+
+  @override
+  String get zakatHeroTitle => 'Give with clarity';
+
+  @override
+  String get zakatHeroBody => 'Add your zakatable wealth, choose a nisab standard, and see your estimate instantly.';
+
+  @override
+  String get zakatCurrency => 'Currency';
+
+  @override
+  String get zakatCurrencyChangeTitle => 'Switch currency?';
+
+  @override
+  String get zakatCurrencyChangeBody => 'Amounts cannot be converted automatically. Switching currency will clear all entered values.';
+
+  @override
+  String get zakatCancel => 'Cancel';
+
+  @override
+  String get zakatSwitchCurrency => 'Switch & clear';
+
+  @override
+  String get zakatNisabTitle => 'Set your nisab';
+
+  @override
+  String get zakatNisabHint => 'Enter today\'s price per gram in the selected currency. Prices are not updated automatically.';
+
+  @override
+  String get zakatSilver => 'Silver · 612.36 g';
+
+  @override
+  String get zakatGold => 'Gold · 87.48 g';
+
+  @override
+  String get zakatSilverPrice => 'Pure silver price per gram';
+
+  @override
+  String get zakatGoldPrice => '24K gold price per gram';
+
+  @override
+  String get zakatPriceHint => 'e.g. 150.00';
+
+  @override
+  String get zakatNisabValue => 'Nisab threshold';
+
+  @override
+  String get zakatAssetsTitle => 'Your zakatable assets';
+
+  @override
+  String get zakatAssetsHint => 'Use their current value in the same currency.';
+
+  @override
+  String get zakatCash => 'Cash & bank balances';
+
+  @override
+  String get zakatSavings => 'Savings';
+
+  @override
+  String get zakatGoldValue => 'Gold value';
+
+  @override
+  String get zakatSilverValue => 'Silver value';
+
+  @override
+  String get zakatInvestments => 'Zakatable investments';
+
+  @override
+  String get zakatBusiness => 'Business stock for sale';
+
+  @override
+  String get zakatReceivables => 'Money likely to be repaid';
+
+  @override
+  String get zakatOtherAssets => 'Other zakatable assets';
+
+  @override
+  String get zakatLiabilitiesTitle => 'Amounts due';
+
+  @override
+  String get zakatLiabilitiesHint => 'Enter debts and bills payable now or within the next 12 months, according to your guidance.';
+
+  @override
+  String get zakatDebts => 'Debt payments due';
+
+  @override
+  String get zakatBills => 'Bills & wages due';
+
+  @override
+  String get zakatAmountHint => '0.00';
+
+  @override
+  String get zakatInvalidAmount => 'Use a number with up to 2 decimal places';
+
+  @override
+  String get zakatLunarYearTitle => 'One lunar year has passed';
+
+  @override
+  String get zakatLunarYearBody => 'Confirm that your wealth has reached nisab for your zakat year.';
+
+  @override
+  String get zakatResultTitle => 'Your estimate';
+
+  @override
+  String get zakatDue => 'Zakat due';
+
+  @override
+  String get zakatNetAssets => 'Net zakatable wealth';
+
+  @override
+  String get zakatTotalAssets => 'Total assets';
+
+  @override
+  String get zakatTotalLiabilities => 'Less amounts due';
+
+  @override
+  String get zakatStatusSetPrice => 'Add a metal price to check nisab';
+
+  @override
+  String get zakatStatusInvalid => 'Check the highlighted amounts';
+
+  @override
+  String get zakatStatusBelow => 'Below your chosen nisab';
+
+  @override
+  String get zakatStatusAwaiting => 'Confirm the lunar year to assess zakat';
+
+  @override
+  String get zakatStatusDue => 'Nisab reached · zakat is due';
+
+  @override
+  String get zakatGuideTitle => 'How this estimate works';
+
+  @override
+  String get zakatGuideBody => 'Net wealth = zakatable assets minus eligible amounts due. Once it reaches your chosen nisab and a lunar year has passed, zakat is 2.5% of the full net amount. Personal jewellery, retirement funds and debts may need individual guidance.';
+
+  @override
+  String get zakatGuideSource => 'Calculation guidance: Islamic Relief';
+
+  @override
+  String get zakatReset => 'Clear all';
 
   @override
   String get dashboardSectionHadith => 'Hadith';
@@ -1830,6 +1989,39 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tasbeehAddDhikr => 'Add dhikr';
+
+  @override
+  String get tasbeehSuggestedDhikr => 'Common dhikr';
+
+  @override
+  String get tasbeehSuggestionHint => 'Tap one to fill the fields';
+
+  @override
+  String get tasbeehSuggestionAstaghfirullah => 'Astaghfirullah';
+
+  @override
+  String get tasbeehSuggestionSubhanAllahiWaBihamdihi => 'SubhanAllahi wa bihamdihi';
+
+  @override
+  String get tasbeehSuggestionLaHawla => 'La hawla wa la quwwata illa billah';
+
+  @override
+  String get tasbeehSuggestionSalawat => 'Allahumma salli ala Muhammad';
+
+  @override
+  String get tasbeehSuggestionHasbunallah => 'Hasbunallahu wa ni\'mal wakeel';
+
+  @override
+  String get tasbeehSuggestionSubhanAllahilAzim => 'SubhanAllahil Azim';
+
+  @override
+  String get tasbeehSuggestionRabbiZidniIlma => 'Rabbi zidni ilma';
+
+  @override
+  String get tasbeehSuggestionLaIlahaIllaAnta => 'La ilaha illa anta subhanaka';
+
+  @override
+  String get tasbeehSuggestionYaHayyuYaQayyum => 'Ya Hayyu Ya Qayyum';
 
   @override
   String get tasbeehEditDhikr => 'Edit dhikr';
