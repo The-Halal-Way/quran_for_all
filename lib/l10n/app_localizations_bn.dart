@@ -2033,6 +2033,75 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tasbeehSuggestionYaHayyuYaQayyum => 'ইয়া হাইয়্যু ইয়া কাইয়্যুম';
 
   @override
+  String get tasbeehSuggestionTwoWords => 'সুবহানাল্লাহি ওয়া বিহামদিহি, সুবহানাল্লাহিল আজিম';
+
+  @override
+  String get tasbeehSuggestionTahlil => 'লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু';
+
+  @override
+  String get tasbeehSuggestionRabbanaAtina => 'রব্বানা আতিনা ফিদ্দুনিয়া হাসানাহ';
+
+  @override
+  String get tasbeehSuggestionRabbiInni => 'রব্বি ইন্নি লিমা আনযালতা ইলাইয়া মিন খাইরিন ফাকির';
+
+  @override
+  String get tasbeehSuggestionRabbanaLaTuzigh => 'রব্বানা লা তুযিগ কুলুবানা';
+
+  @override
+  String get tasbeehMeaningSubhanAllah => 'আল্লাহ পবিত্র।';
+
+  @override
+  String get tasbeehMeaningAlhamdulillah => 'সব প্রশংসা আল্লাহর।';
+
+  @override
+  String get tasbeehMeaningAllahuAkbar => 'আল্লাহ সর্বশ্রেষ্ঠ।';
+
+  @override
+  String get tasbeehMeaningLaIlahaIllallah => 'আল্লাহ ছাড়া ইবাদতের যোগ্য কোনো উপাস্য নেই।';
+
+  @override
+  String get tasbeehMeaningAstaghfirullah => 'আমি আল্লাহর কাছে ক্ষমা চাই।';
+
+  @override
+  String get tasbeehMeaningSubhanAllahiWaBihamdihi => 'আল্লাহ পবিত্র; তাঁরই প্রশংসা।';
+
+  @override
+  String get tasbeehMeaningLaHawla => 'আল্লাহ ছাড়া কোনো শক্তি বা সামর্থ্য নেই।';
+
+  @override
+  String get tasbeehMeaningSalawat => 'হে আল্লাহ, মুহাম্মাদের ওপর রহমত বর্ষণ করুন।';
+
+  @override
+  String get tasbeehMeaningHasbunallah => 'আল্লাহই আমাদের জন্য যথেষ্ট; তিনি উত্তম কর্মবিধায়ক।';
+
+  @override
+  String get tasbeehMeaningSubhanAllahilAzim => 'মহান আল্লাহ পবিত্র।';
+
+  @override
+  String get tasbeehMeaningRabbiZidniIlma => 'হে আমার রব, আমার জ্ঞান বাড়িয়ে দিন।';
+
+  @override
+  String get tasbeehMeaningLaIlahaIllaAnta => 'আপনি ছাড়া কোনো উপাস্য নেই; আপনি পবিত্র। আমি অন্যায়কারীদের একজন ছিলাম।';
+
+  @override
+  String get tasbeehMeaningYaHayyuYaQayyum => 'হে চিরঞ্জীব, হে সবকিছুর ধারক।';
+
+  @override
+  String get tasbeehMeaningTwoWords => 'আল্লাহ পবিত্র ও প্রশংসিত; মহান আল্লাহ পবিত্র।';
+
+  @override
+  String get tasbeehMeaningTahlil => 'আল্লাহ ছাড়া কোনো উপাস্য নেই; তিনি একক, তাঁর কোনো শরিক নেই। রাজত্ব ও প্রশংসা তাঁরই, তিনি সবকিছুর ওপর ক্ষমতাবান।';
+
+  @override
+  String get tasbeehMeaningRabbanaAtina => 'হে আমাদের রব, দুনিয়া ও আখিরাতে কল্যাণ দিন এবং আগুনের শাস্তি থেকে রক্ষা করুন।';
+
+  @override
+  String get tasbeehMeaningRabbiInni => 'হে আমার রব, আপনি যে কল্যাণই পাঠান, আমি তার মুখাপেক্ষী।';
+
+  @override
+  String get tasbeehMeaningRabbanaLaTuzigh => 'হে আমাদের রব, পথ দেখানোর পর আমাদের অন্তর বিচ্যুত করবেন না। আপনার পক্ষ থেকে রহমত দিন; আপনিই মহাদাতা।';
+
+  @override
   String get tasbeehEditDhikr => 'জিকির সম্পাদনা';
 
   @override
@@ -2055,6 +2124,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tasbeehArabicLabel => 'আরবি লেখা (ঐচ্ছিক)';
+
+  @override
+  String get tasbeehMeaningLabel => 'অর্থ (ঐচ্ছিক)';
+
+  @override
+  String get tasbeehMeaningHint => 'আপনার ভাষায় এর অর্থ লিখুন';
 
   @override
   String get tasbeehNameRequired => 'জিকিরের একটি নাম লিখুন';

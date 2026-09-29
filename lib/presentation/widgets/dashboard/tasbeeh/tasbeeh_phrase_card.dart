@@ -32,6 +32,7 @@ class TasbeehPhraseCard extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
     final text = AppTheme.text(context);
     final label = phrase.label(context.l10n);
+    final meaning = phrase.localizedMeaning(context.l10n);
     return Semantics(
       selected: isSelected,
       child: InkWell(
@@ -59,7 +60,7 @@ class TasbeehPhraseCard extends StatelessWidget {
                   Expanded(
                     child: Text(
                       phrase.arabic.isEmpty ? label : phrase.arabic,
-                      maxLines: 1,
+                      maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       textDirection: phrase.arabic.isEmpty
                           ? null
@@ -101,6 +102,17 @@ class TasbeehPhraseCard extends StatelessWidget {
                   color: colors.onSurfaceVariant,
                 ),
               ),
+              if (meaning.isNotEmpty) ...[
+                const SizedBox(height: AppSpacing.xs),
+                Text(
+                  meaning,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: text.labelSmall.copyWith(
+                    color: colors.onSurfaceVariant,
+                  ),
+                ),
+              ],
               const SizedBox(height: 12),
               Row(
                 children: [

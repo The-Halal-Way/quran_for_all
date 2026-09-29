@@ -61,6 +61,9 @@ class TasbeehBody extends StatelessWidget {
                           progress: vm.progress,
                           phraseArabic: vm.selectedPhrase.arabic,
                           phraseLabel: vm.selectedPhrase.label(context.l10n),
+                          phraseMeaning: vm.selectedPhrase.localizedMeaning(
+                            context.l10n,
+                          ),
                           isTargetReached: vm.isTargetReached,
                           isDark: isDark,
                           onTap: () {

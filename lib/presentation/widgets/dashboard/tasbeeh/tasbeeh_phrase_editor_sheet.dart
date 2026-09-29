@@ -5,6 +5,8 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../domain/entities/tasbeeh/tasbeeh_phrase.dart';
 import '../../../models/tasbeeh_phrase_draft.dart';
+import 'tasbeeh_suggestion_card.dart';
+import 'tasbeeh_suggestions.dart';
 import 'tasbeeh_target_field.dart';
 
 Future<TasbeehPhraseDraft?> showTasbeehPhraseEditor(
@@ -35,12 +37,16 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
   final _formKey = GlobalKey<FormState>();
   late final _name = TextEditingController(text: widget.phrase?.name ?? '');
   late final _arabic = TextEditingController(text: widget.phrase?.arabic ?? '');
+  late final _meaning = TextEditingController(
+    text: widget.phrase?.meaning ?? '',
+  );
   late final _target = TextEditingController(text: '${widget.target}');
 
   @override
   void dispose() {
     _name.dispose();
     _arabic.dispose();
+    _meaning.dispose();
     _target.dispose();
     super.dispose();
   }
@@ -52,14 +58,16 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
       TasbeehPhraseDraft(
         name: _name.text.trim(),
         arabic: _arabic.text.trim(),
+        meaning: _meaning.text.trim(),
         target: int.parse(_target.text.trim()),
       ),
     );
   }
 
-  void _useSuggestion(String name, String arabic) {
-    _name.text = name;
-    _arabic.text = arabic;
+  void _useSuggestion(TasbeehSuggestion suggestion) {
+    _name.text = suggestion.name;
+    _arabic.text = suggestion.arabic;
+    _meaning.text = suggestion.meaning;
     FocusScope.of(context).unfocus();
   }
 
@@ -67,29 +75,7 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
     final l10n = context.l10n;
-    final suggestions = [
-      (name: l10n.tasbeehSuggestionAstaghfirullah, arabic: 'أستغفر الله'),
-      (
-        name: l10n.tasbeehSuggestionSubhanAllahiWaBihamdihi,
-        arabic: 'سبحان الله وبحمده',
-      ),
-      (name: l10n.tasbeehSuggestionLaHawla, arabic: 'لا حول ولا قوة إلا بالله'),
-      (name: l10n.tasbeehSuggestionSalawat, arabic: 'اللهم صل على محمد'),
-      (
-        name: l10n.tasbeehSuggestionHasbunallah,
-        arabic: 'حسبنا الله ونعم الوكيل',
-      ),
-      (
-        name: l10n.tasbeehSuggestionSubhanAllahilAzim,
-        arabic: 'سبحان الله العظيم',
-      ),
-      (name: l10n.tasbeehSuggestionRabbiZidniIlma, arabic: 'رب زدني علما'),
-      (
-        name: l10n.tasbeehSuggestionLaIlahaIllaAnta,
-        arabic: 'لا إله إلا أنت سبحانك إني كنت من الظالمين',
-      ),
-      (name: l10n.tasbeehSuggestionYaHayyuYaQayyum, arabic: 'يا حي يا قيوم'),
-    ];
+    final suggestions = tasbeehSuggestions(l10n);
     return SafeArea(
       child: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(
@@ -131,7 +117,7 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 ),
                 const SizedBox(height: AppSpacing.md),
                 SizedBox(
-                  height: MediaQuery.textScalerOf(context).scale(88),
+                  height: MediaQuery.textScalerOf(context).scale(132),
                   child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     itemCount: suggestions.length,
@@ -139,12 +125,10 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                         const SizedBox(width: AppSpacing.sm),
                     itemBuilder: (context, index) {
                       final suggestion = suggestions[index];
-                      return _SuggestionCard(
+                      return TasbeehSuggestionCard(
                         key: ValueKey('tasbeeh_suggestion_$index'),
-                        name: suggestion.name,
-                        arabic: suggestion.arabic,
-                        onTap: () =>
-                            _useSuggestion(suggestion.name, suggestion.arabic),
+                        suggestion: suggestion,
+                        onTap: () => _useSuggestion(suggestion),
                       );
                     },
                   ),
@@ -172,10 +156,21 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 controller: _arabic,
                 textDirection: TextDirection.rtl,
                 minLines: 1,
-                maxLines: 3,
-                maxLength: TasbeehPhrase.maxArabicLength,
+                maxLines: null,
                 style: AppTheme.amiri(context, fontSize: 23),
                 decoration: InputDecoration(labelText: l10n.tasbeehArabicLabel),
+              ),
+              const SizedBox(height: 12),
+              TextFormField(
+                key: const ValueKey('tasbeeh_meaning_field'),
+                controller: _meaning,
+                minLines: 1,
+                maxLines: null,
+                textCapitalization: TextCapitalization.sentences,
+                decoration: InputDecoration(
+                  labelText: l10n.tasbeehMeaningLabel,
+                  hintText: l10n.tasbeehMeaningHint,
+                ),
               ),
               const SizedBox(height: 12),
               TasbeehTargetField(controller: _target),
@@ -189,71 +184,6 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 ),
               ),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _SuggestionCard extends StatelessWidget {
-  const _SuggestionCard({
-    super.key,
-    required this.name,
-    required this.arabic,
-    required this.onTap,
-  });
-
-  final String name;
-  final String arabic;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
-    return Material(
-      color: colors.secondary.withValues(alpha: 0.09),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        side: BorderSide(color: colors.secondary.withValues(alpha: 0.26)),
-      ),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        child: SizedBox(
-          width: 176,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppSpacing.md,
-              vertical: AppSpacing.sm,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  arabic,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  textDirection: TextDirection.rtl,
-                  style: AppTheme.amiri(
-                    context,
-                    fontSize: 21,
-                    color: colors.onSurface,
-                  ),
-                ),
-                const SizedBox(height: AppSpacing.xs),
-                Text(
-                  name,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTheme.text(context).labelMedium.copyWith(
-                    color: colors.onSurfaceVariant,
-                    fontWeight: AppTheme.weightSemiBold,
-                  ),
-                ),
-              ],
-            ),
           ),
         ),
       ),

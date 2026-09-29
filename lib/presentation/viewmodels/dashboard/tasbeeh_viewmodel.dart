@@ -134,6 +134,7 @@ class TasbeehViewModel extends ChangeNotifier {
   String? addPhrase({
     required String name,
     String arabic = '',
+    String meaning = '',
     int target = 33,
   }) {
     if (!TasbeehPhrase.validContent(name, arabic) ||
@@ -147,7 +148,12 @@ class TasbeehViewModel extends ChangeNotifier {
       id = '${baseId}_${++suffix}';
     }
     _customPhrases.add(
-      TasbeehPhrase(id: id, name: name.trim(), arabic: arabic.trim()),
+      TasbeehPhrase(
+        id: id,
+        name: name.trim(),
+        arabic: arabic.trim(),
+        meaning: meaning.trim(),
+      ),
     );
     _counts[id] = 0;
     _targets[id] = target;
@@ -160,6 +166,7 @@ class TasbeehViewModel extends ChangeNotifier {
     required String id,
     required String name,
     required String arabic,
+    String meaning = '',
     required int target,
   }) {
     final index = _customPhrases.indexWhere((phrase) => phrase.id == id);
@@ -172,6 +179,7 @@ class TasbeehViewModel extends ChangeNotifier {
       id: id,
       name: name.trim(),
       arabic: arabic.trim(),
+      meaning: meaning.trim(),
     );
     _targets[id] = target;
     _commit();

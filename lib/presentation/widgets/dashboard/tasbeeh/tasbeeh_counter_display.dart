@@ -14,6 +14,7 @@ class TasbeehCounterDisplay extends StatelessWidget {
     required this.progress,
     required this.phraseArabic,
     required this.phraseLabel,
+    required this.phraseMeaning,
     required this.isTargetReached,
     required this.isDark,
     required this.onTap,
@@ -23,6 +24,7 @@ class TasbeehCounterDisplay extends StatelessWidget {
   final double progress;
   final String phraseArabic;
   final String phraseLabel;
+  final String phraseMeaning;
   final bool isTargetReached;
   final bool isDark;
   final VoidCallback onTap;
@@ -58,8 +60,6 @@ class TasbeehCounterDisplay extends StatelessWidget {
                   phraseArabic,
                   textAlign: TextAlign.center,
                   textDirection: TextDirection.rtl,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
                   style: AppTheme.amiri(
                     context,
                     fontSize: 30,
@@ -84,6 +84,16 @@ class TasbeehCounterDisplay extends StatelessWidget {
                           fontWeight: FontWeight.w700,
                         ),
               ),
+              if (phraseMeaning.isNotEmpty) ...[
+                const SizedBox(height: AppSpacing.xs),
+                Text(
+                  phraseMeaning,
+                  textAlign: TextAlign.center,
+                  style: text.bodySmall.copyWith(
+                    color: colors.onSurfaceVariant,
+                  ),
+                ),
+              ],
               const SizedBox(height: AppSpacing.lg),
               TasbeehCounterRing(
                 count: count,

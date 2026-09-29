@@ -4079,6 +4079,144 @@ abstract class AppLocalizations {
   /// **'Ya Hayyu Ya Qayyum'**
   String get tasbeehSuggestionYaHayyuYaQayyum;
 
+  /// No description provided for @tasbeehSuggestionTwoWords.
+  ///
+  /// In en, this message translates to:
+  /// **'SubhanAllahi wa bihamdihi, SubhanAllahil Azim'**
+  String get tasbeehSuggestionTwoWords;
+
+  /// No description provided for @tasbeehSuggestionTahlil.
+  ///
+  /// In en, this message translates to:
+  /// **'La ilaha illallahu wahdahu la sharika lah'**
+  String get tasbeehSuggestionTahlil;
+
+  /// No description provided for @tasbeehSuggestionRabbanaAtina.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabbana atina fid-dunya hasanah'**
+  String get tasbeehSuggestionRabbanaAtina;
+
+  /// No description provided for @tasbeehSuggestionRabbiInni.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabbi inni lima anzalta ilayya min khayrin faqir'**
+  String get tasbeehSuggestionRabbiInni;
+
+  /// No description provided for @tasbeehSuggestionRabbanaLaTuzigh.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabbana la tuzigh qulubana'**
+  String get tasbeehSuggestionRabbanaLaTuzigh;
+
+  /// No description provided for @tasbeehMeaningSubhanAllah.
+  ///
+  /// In en, this message translates to:
+  /// **'Glory be to Allah.'**
+  String get tasbeehMeaningSubhanAllah;
+
+  /// No description provided for @tasbeehMeaningAlhamdulillah.
+  ///
+  /// In en, this message translates to:
+  /// **'All praise is for Allah.'**
+  String get tasbeehMeaningAlhamdulillah;
+
+  /// No description provided for @tasbeehMeaningAllahuAkbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Allah is the Greatest.'**
+  String get tasbeehMeaningAllahuAkbar;
+
+  /// No description provided for @tasbeehMeaningLaIlahaIllallah.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no god worthy of worship except Allah.'**
+  String get tasbeehMeaningLaIlahaIllallah;
+
+  /// No description provided for @tasbeehMeaningAstaghfirullah.
+  ///
+  /// In en, this message translates to:
+  /// **'I seek Allah\'s forgiveness.'**
+  String get tasbeehMeaningAstaghfirullah;
+
+  /// No description provided for @tasbeehMeaningSubhanAllahiWaBihamdihi.
+  ///
+  /// In en, this message translates to:
+  /// **'Glory and praise be to Allah.'**
+  String get tasbeehMeaningSubhanAllahiWaBihamdihi;
+
+  /// No description provided for @tasbeehMeaningLaHawla.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no power or strength except through Allah.'**
+  String get tasbeehMeaningLaHawla;
+
+  /// No description provided for @tasbeehMeaningSalawat.
+  ///
+  /// In en, this message translates to:
+  /// **'O Allah, send blessings upon Muhammad.'**
+  String get tasbeehMeaningSalawat;
+
+  /// No description provided for @tasbeehMeaningHasbunallah.
+  ///
+  /// In en, this message translates to:
+  /// **'Allah is sufficient for us, and He is the best Disposer of affairs.'**
+  String get tasbeehMeaningHasbunallah;
+
+  /// No description provided for @tasbeehMeaningSubhanAllahilAzim.
+  ///
+  /// In en, this message translates to:
+  /// **'Glory be to Allah, the Magnificent.'**
+  String get tasbeehMeaningSubhanAllahilAzim;
+
+  /// No description provided for @tasbeehMeaningRabbiZidniIlma.
+  ///
+  /// In en, this message translates to:
+  /// **'My Lord, increase me in knowledge.'**
+  String get tasbeehMeaningRabbiZidniIlma;
+
+  /// No description provided for @tasbeehMeaningLaIlahaIllaAnta.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no god but You. Glory be to You. I was among the wrongdoers.'**
+  String get tasbeehMeaningLaIlahaIllaAnta;
+
+  /// No description provided for @tasbeehMeaningYaHayyuYaQayyum.
+  ///
+  /// In en, this message translates to:
+  /// **'O Ever-Living, O Sustainer.'**
+  String get tasbeehMeaningYaHayyuYaQayyum;
+
+  /// No description provided for @tasbeehMeaningTwoWords.
+  ///
+  /// In en, this message translates to:
+  /// **'Glory and praise be to Allah; glory be to Allah, the Magnificent.'**
+  String get tasbeehMeaningTwoWords;
+
+  /// No description provided for @tasbeehMeaningTahlil.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no god but Allah alone, without partner. His is the kingdom and praise, and He has power over all things.'**
+  String get tasbeehMeaningTahlil;
+
+  /// No description provided for @tasbeehMeaningRabbanaAtina.
+  ///
+  /// In en, this message translates to:
+  /// **'Our Lord, grant us good in this world and good in the Hereafter, and protect us from the Fire.'**
+  String get tasbeehMeaningRabbanaAtina;
+
+  /// No description provided for @tasbeehMeaningRabbiInni.
+  ///
+  /// In en, this message translates to:
+  /// **'My Lord, I am in need of whatever good You send down to me.'**
+  String get tasbeehMeaningRabbiInni;
+
+  /// No description provided for @tasbeehMeaningRabbanaLaTuzigh.
+  ///
+  /// In en, this message translates to:
+  /// **'Our Lord, do not let our hearts stray after You have guided us. Grant us mercy from Yourself; You are the Bestower.'**
+  String get tasbeehMeaningRabbanaLaTuzigh;
+
   /// No description provided for @tasbeehEditDhikr.
   ///
   /// In en, this message translates to:
@@ -4126,6 +4264,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Arabic text (optional)'**
   String get tasbeehArabicLabel;
+
+  /// No description provided for @tasbeehMeaningLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Meaning (optional)'**
+  String get tasbeehMeaningLabel;
+
+  /// No description provided for @tasbeehMeaningHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What it means in your language'**
+  String get tasbeehMeaningHint;
 
   /// No description provided for @tasbeehNameRequired.
   ///

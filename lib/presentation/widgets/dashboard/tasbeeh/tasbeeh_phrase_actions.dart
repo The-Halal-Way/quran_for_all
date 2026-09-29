@@ -16,6 +16,7 @@ class TasbeehPhraseActions {
       model.addPhrase(
         name: draft.name,
         arabic: draft.arabic,
+        meaning: draft.meaning,
         target: draft.target,
       );
     }
@@ -39,6 +40,7 @@ class TasbeehPhraseActions {
           id: phrase.id,
           name: draft.name,
           arabic: draft.arabic,
+          meaning: draft.meaning,
           target: draft.target,
         );
       }

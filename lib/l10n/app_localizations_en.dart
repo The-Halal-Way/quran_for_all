@@ -2033,6 +2033,75 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tasbeehSuggestionYaHayyuYaQayyum => 'Ya Hayyu Ya Qayyum';
 
   @override
+  String get tasbeehSuggestionTwoWords => 'SubhanAllahi wa bihamdihi, SubhanAllahil Azim';
+
+  @override
+  String get tasbeehSuggestionTahlil => 'La ilaha illallahu wahdahu la sharika lah';
+
+  @override
+  String get tasbeehSuggestionRabbanaAtina => 'Rabbana atina fid-dunya hasanah';
+
+  @override
+  String get tasbeehSuggestionRabbiInni => 'Rabbi inni lima anzalta ilayya min khayrin faqir';
+
+  @override
+  String get tasbeehSuggestionRabbanaLaTuzigh => 'Rabbana la tuzigh qulubana';
+
+  @override
+  String get tasbeehMeaningSubhanAllah => 'Glory be to Allah.';
+
+  @override
+  String get tasbeehMeaningAlhamdulillah => 'All praise is for Allah.';
+
+  @override
+  String get tasbeehMeaningAllahuAkbar => 'Allah is the Greatest.';
+
+  @override
+  String get tasbeehMeaningLaIlahaIllallah => 'There is no god worthy of worship except Allah.';
+
+  @override
+  String get tasbeehMeaningAstaghfirullah => 'I seek Allah\'s forgiveness.';
+
+  @override
+  String get tasbeehMeaningSubhanAllahiWaBihamdihi => 'Glory and praise be to Allah.';
+
+  @override
+  String get tasbeehMeaningLaHawla => 'There is no power or strength except through Allah.';
+
+  @override
+  String get tasbeehMeaningSalawat => 'O Allah, send blessings upon Muhammad.';
+
+  @override
+  String get tasbeehMeaningHasbunallah => 'Allah is sufficient for us, and He is the best Disposer of affairs.';
+
+  @override
+  String get tasbeehMeaningSubhanAllahilAzim => 'Glory be to Allah, the Magnificent.';
+
+  @override
+  String get tasbeehMeaningRabbiZidniIlma => 'My Lord, increase me in knowledge.';
+
+  @override
+  String get tasbeehMeaningLaIlahaIllaAnta => 'There is no god but You. Glory be to You. I was among the wrongdoers.';
+
+  @override
+  String get tasbeehMeaningYaHayyuYaQayyum => 'O Ever-Living, O Sustainer.';
+
+  @override
+  String get tasbeehMeaningTwoWords => 'Glory and praise be to Allah; glory be to Allah, the Magnificent.';
+
+  @override
+  String get tasbeehMeaningTahlil => 'There is no god but Allah alone, without partner. His is the kingdom and praise, and He has power over all things.';
+
+  @override
+  String get tasbeehMeaningRabbanaAtina => 'Our Lord, grant us good in this world and good in the Hereafter, and protect us from the Fire.';
+
+  @override
+  String get tasbeehMeaningRabbiInni => 'My Lord, I am in need of whatever good You send down to me.';
+
+  @override
+  String get tasbeehMeaningRabbanaLaTuzigh => 'Our Lord, do not let our hearts stray after You have guided us. Grant us mercy from Yourself; You are the Bestower.';
+
+  @override
   String get tasbeehEditDhikr => 'Edit dhikr';
 
   @override
@@ -2055,6 +2124,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tasbeehArabicLabel => 'Arabic text (optional)';
+
+  @override
+  String get tasbeehMeaningLabel => 'Meaning (optional)';
+
+  @override
+  String get tasbeehMeaningHint => 'What it means in your language';
 
   @override
   String get tasbeehNameRequired => 'Enter a name for your dhikr';

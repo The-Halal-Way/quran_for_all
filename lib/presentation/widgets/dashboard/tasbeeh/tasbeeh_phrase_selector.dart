@@ -80,6 +80,7 @@ class _TasbeehPhraseSelectorState extends State<TasbeehPhraseSelector> {
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             for (final phrase in widget.phrases) ...[
               TasbeehPhraseCard(

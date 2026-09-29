@@ -69,6 +69,10 @@ void main() {
         'أَسْتَغْفِرُ الله',
       );
       await tester.enterText(
+        find.byKey(const ValueKey('tasbeeh_meaning_field')),
+        'I seek Allah’s forgiveness.',
+      );
+      await tester.enterText(
         find.byKey(const ValueKey('tasbeeh_target_field')),
         '70',
       );
@@ -76,6 +80,8 @@ void main() {
       final id = model.selectedPhraseId;
       expect(model.phrases, hasLength(5));
       expect(model.target, 70);
+      expect(model.selectedPhrase.meaning, 'I seek Allah’s forgiveness.');
+      expect(find.text('I seek Allah’s forgiveness.'), findsWidgets);
       model.increment();
       model.increment();
       await tester.pumpAndSettle();
@@ -92,6 +98,7 @@ void main() {
       );
       await tapVisible(tester, find.text('Save dhikr'));
       expect(model.selectedPhrase.name, 'Daily istighfar');
+      expect(model.selectedPhrase.meaning, 'I seek Allah’s forgiveness.');
       expect(model.count, 2);
       await tapVisible(tester, menu);
       await tester.tap(find.text('Delete dhikr'));
@@ -149,7 +156,18 @@ void main() {
             )
             .controller!
             .text,
-        'أستغفر الله',
+        'أَسْتَغْفِرُ اللَّهَ',
+      );
+      expect(
+        tester
+            .widget<TextFormField>(
+              find.byKey(const ValueKey('tasbeeh_meaning_field')),
+            )
+            .controller!
+            .text,
+        locale == 'en'
+            ? "I seek Allah's forgiveness."
+            : 'আমি আল্লাহর কাছে ক্ষমা চাই।',
       );
       expect(
         tester
@@ -164,7 +182,8 @@ void main() {
         tester,
         find.text(locale == 'en' ? 'Save dhikr' : 'জিকির সংরক্ষণ'),
       );
-      expect(model.selectedPhrase.arabic, 'أستغفر الله');
+      expect(model.selectedPhrase.arabic, 'أَسْتَغْفِرُ اللَّهَ');
+      expect(model.selectedPhrase.meaning, isNotEmpty);
       expect(model.target, 33);
       expect(tester.takeException(), isNull);
     });
@@ -197,9 +216,66 @@ void main() {
           )
           .controller!
           .text,
-      'يا حي يا قيوم',
+      'يَا حَيُّ يَا قَيُّومُ',
     );
     expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('long vocalized Arabic and meaning save without truncation', (
+    tester,
+  ) async {
+    await pump(tester);
+    await tapVisible(tester, find.byKey(const ValueKey('tasbeeh_add')));
+    final longArabic = List.filled(
+      18,
+      'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',
+    ).join(' ');
+    expect(longArabic.length, greaterThan(240));
+    final arabicField = find.byKey(const ValueKey('tasbeeh_arabic_field'));
+    await tester.enterText(
+      find.byKey(const ValueKey('tasbeeh_name_field')),
+      'Long dhikr',
+    );
+    await tester.enterText(arabicField, longArabic);
+    await tester.enterText(
+      find.byKey(const ValueKey('tasbeeh_meaning_field')),
+      'Glory and praise be to Allah.',
+    );
+    await tapVisible(tester, find.text('Save dhikr'));
+    expect(model.selectedPhrase.arabic, longArabic);
+    expect(model.selectedPhrase.meaning, 'Glory and praise be to Allah.');
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('new Quranic suggestion fills Arabic and meaning', (
+    tester,
+  ) async {
+    await pump(tester);
+    await tapVisible(tester, find.byKey(const ValueKey('tasbeeh_add')));
+    await tester.drag(find.byType(ListView), const Offset(-4000, 0));
+    await tester.pumpAndSettle();
+    await tapVisible(
+      tester,
+      find.byKey(const ValueKey('tasbeeh_suggestion_13')),
+    );
+    expect(
+      tester
+          .widget<TextFormField>(
+            find.byKey(const ValueKey('tasbeeh_arabic_field')),
+          )
+          .controller!
+          .text,
+      startsWith('رَبَّنَا لَا تُزِغْ قُلُوبَنَا'),
+    );
+    expect(
+      tester
+          .widget<TextFormField>(
+            find.byKey(const ValueKey('tasbeeh_meaning_field')),
+          )
+          .controller!
+          .text,
+      contains('hearts stray'),
+    );
   });
 
   testWidgets(

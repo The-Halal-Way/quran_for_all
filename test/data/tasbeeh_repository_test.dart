@@ -33,9 +33,14 @@ void main() {
     () async {
       final original = TasbeehViewModel(repository: TasbeehRepositoryImpl());
       await original.load();
+      final longArabic = List.filled(
+        18,
+        'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',
+      ).join(' ');
       final id = original.addPhrase(
         name: 'Istighfar',
-        arabic: 'أَسْتَغْفِرُ الله',
+        arabic: longArabic,
+        meaning: 'I seek forgiveness.',
         target: 7,
       )!;
       for (var index = 0; index < 80; index++) {
@@ -45,7 +50,8 @@ void main() {
       original.editPhrase(
         id: id,
         name: 'Daily istighfar',
-        arabic: 'أَسْتَغْفِرُ الله',
+        arabic: longArabic,
+        meaning: 'I seek Allah’s forgiveness.',
         target: 70,
       );
       await original.pendingSave;
@@ -53,6 +59,8 @@ void main() {
       await restored.load();
       expect(restored.selectedPhraseId, id);
       expect(restored.selectedPhrase.name, 'Daily istighfar');
+      expect(restored.selectedPhrase.arabic, longArabic);
+      expect(restored.selectedPhrase.meaning, 'I seek Allah’s forgiveness.');
       expect(restored.count, 79);
       expect(restored.target, 70);
       expect(restored.phrases, hasLength(5));
@@ -87,9 +95,10 @@ void main() {
       final model = TasbeehViewModel(repository: TasbeehRepositoryImpl());
       await model.load();
       expect(model.phrases, hasLength(5));
-      expect(model.phrases.first.arabic, 'سُبْحَانَ الله');
+      expect(model.phrases.first.arabic, 'سُبْحَانَ اللَّهِ');
       expect(model.totalCount, 12);
       expect(model.countFor('custom_valid'), 0);
+      expect(model.phrases.last.meaning, isEmpty);
       expect(model.targetFor('custom_valid'), 33);
       expect(model.selectedPhraseId, 'subhanAllah');
     },
