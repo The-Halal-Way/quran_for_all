@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../views/dashboard/hadith/hadith_an_nawawi_view.dart';
 import '../../../views/dashboard/hadith/hadith_forty_short_view.dart';
@@ -36,7 +37,9 @@ class DashboardHadithSection extends StatelessWidget {
         DashboardSectionTitle(
           title: context.l10n.dashboardSectionHadith,
           icon: Icons.menu_book_rounded,
-          accent: MyColors.primaryLight,
+          accent: Theme.of(context).brightness == Brightness.dark
+              ? MyColors.primaryLight
+              : AppThemeColors.light.brand,
         ),
         const SizedBox(height: AppSpacing.md),
         LayoutBuilder(

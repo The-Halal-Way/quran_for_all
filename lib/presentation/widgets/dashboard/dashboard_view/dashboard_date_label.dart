@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 
 class DashboardDateLabel extends StatelessWidget {
@@ -19,7 +20,7 @@ class DashboardDateLabel extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
     final color = highlighted
-        ? (dark ? MyColors.tertiaryLight : MyColors.tertiaryDark)
+        ? (dark ? MyColors.tertiaryLight : AppThemeColors.light.cyan)
         : Theme.of(context).colorScheme.onSurfaceVariant;
     return Row(
       children: [

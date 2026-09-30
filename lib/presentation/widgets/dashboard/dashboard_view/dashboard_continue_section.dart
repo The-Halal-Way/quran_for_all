@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../viewmodels/dashboard/dashboard_viewmodel.dart';
 import '../../../viewmodels/learn_quran_viewmodel.dart';
@@ -18,6 +19,7 @@ class DashboardContinueSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final read = context.watch<ReadQuranViewModel>();
     final learn = context.watch<LearnQuranViewModel>();
+    final dark = Theme.of(context).brightness == Brightness.dark;
     final info = DashboardViewModel().continueCardsInfo(
       l10n: context.l10n,
       readViewModel: read,
@@ -33,7 +35,7 @@ class DashboardContinueSection extends StatelessWidget {
             subtitle: info.reading.subtitle,
             detail: info.reading.detail,
             icon: Icons.auto_stories_rounded,
-            accent: MyColors.primaryLight,
+            accent: dark ? MyColors.primaryLight : AppThemeColors.light.heroEnd,
             onTap: info.reading.hasExistingProgress
                 ? () => openDashboardSurah(
                     context,
@@ -47,7 +49,7 @@ class DashboardContinueSection extends StatelessWidget {
             subtitle: info.learning.subtitle,
             detail: info.learning.detail,
             icon: Icons.school_rounded,
-            accent: MyColors.tertiaryDark,
+            accent: dark ? MyColors.tertiaryDark : AppThemeColors.light.cyan,
             onTap: () => openDashboardLesson(context, learn),
           ),
         ];

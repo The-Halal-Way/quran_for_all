@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/app_theme_colors.dart';
 import '../../../core/theme/my_colors.dart';
 
 class AppPremiumSectionTitle extends StatelessWidget {
@@ -20,8 +21,10 @@ class AppPremiumSectionTitle extends StatelessWidget {
           width: 4,
           height: 22,
           decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              colors: [MyColors.secondary, MyColors.tertiary],
+            gradient: LinearGradient(
+              colors: Theme.of(context).brightness == Brightness.dark
+                  ? [MyColors.secondary, MyColors.tertiary]
+                  : [AppThemeColors.light.violet, AppThemeColors.light.cyan],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
             ),

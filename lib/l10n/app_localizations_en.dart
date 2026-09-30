@@ -2315,51 +2315,73 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerTimesNetworkErrorBody => 'Check your connection and device location settings, then try again.';
 
   @override
-  String get compassTitle => 'Compass';
+  String get compassTitle => 'Qibla Compass';
 
   @override
-  String get compassInitializing => 'Initializing compass...';
+  String get compassInitializing => 'Finding your Qibla direction...';
 
   @override
   String get compassRetry => 'Retry';
 
   @override
-  String get compassNativeActive => 'Native compass active';
+  String get compassNativeActive => 'Live compass guidance';
+
+  @override
+  String get compassHeroEyebrow => 'THE SACRED DIRECTION';
+
+  @override
+  String get compassHeroTitle => 'Find your way to the Kaaba';
+
+  @override
+  String get compassHeroSubtitle => 'A quiet guide wherever you pray';
+
+  @override
+  String get compassBearingFromNorth => 'clockwise from geographic north';
+
+  @override
+  String get compassLiveMode => 'Live';
+
+  @override
+  String get compassNorthUpMode => 'North-up guide';
+
+  @override
+  String get compassQiblaBearingLabel => 'Qibla bearing';
+
+  @override
+  String get compassApiBearingSource => 'Online bearing';
+
+  @override
+  String get compassCalculatedBearingSource => 'Calculated from location';
+
+  @override
+  String compassTurnRight(String degrees) {
+    return 'Turn right $degrees°';
+  }
+
+  @override
+  String compassTurnLeft(String degrees) {
+    return 'Turn left $degrees°';
+  }
+
+  @override
+  String get compassLiveInstruction => 'Hold your phone level. Follow the turquoise pointer until it meets the rose marker at the top.';
+
+  @override
+  String compassFallbackInstruction(String degrees) {
+    return 'Use a map or a known north direction, then face $degrees° clockwise from north. This dial does not rotate with your phone.';
+  }
 
   @override
   String get compassHeadingLabel => 'Heading';
 
   @override
-  String get compassQiblaOffsetLabel => 'Qibla offset';
-
-  @override
-  String get compassAccuracyLabel => 'Accuracy';
-
-  @override
   String get compassNotAvailableShort => 'N/A';
-
-  @override
-  String get compassApiAccuracyLabel => 'API';
-
-  @override
-  String get compassNativeAccuracyLabel => '±2°';
 
   @override
   String get compassFacingMeccaLabel => 'Facing Mecca!';
 
   @override
-  String get compassRotateToAlignLabel => 'Rotate to align';
-
-  @override
-  String get compassApiFallbackTitle => 'Compass sensor unavailable';
-
-  @override
-  String get compassApiFallbackBody => 'Your device does not expose a native compass sensor. We can calculate the Qibla angle from your location, but live rotation needs a compass-capable device.';
-
-  @override
-  String compassApiFallbackQibla(String degrees) {
-    return 'Qibla angle: $degrees°';
-  }
+  String get compassNorthUpGuidanceTitle => 'Use the north-up guide';
 
   @override
   String get compassLocationDeniedTitle => 'Location permission needed';
@@ -2383,7 +2405,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get compassGenericErrorTitle => 'Compass could not start';
 
   @override
-  String get compassGenericErrorBody => 'Check location permission, sensor availability, and your connection, then try again.';
+  String get compassGenericErrorBody => 'Check device location services and permission, then try again. An internet connection is not required for the bearing.';
 
   @override
   String get prayerViewTimelineTitle => 'Today\'s Prayer Rhythm';

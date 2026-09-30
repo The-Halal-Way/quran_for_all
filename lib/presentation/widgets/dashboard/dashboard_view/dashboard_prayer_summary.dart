@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 
 class DashboardPrayerSummary extends StatelessWidget {
@@ -21,9 +22,11 @@ class DashboardPrayerSummary extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Ink(
-    decoration: const BoxDecoration(
+    decoration: BoxDecoration(
       gradient: LinearGradient(
-        colors: [MyColors.secondaryDark, MyColors.primaryLight],
+        colors: Theme.of(context).brightness == Brightness.dark
+            ? [MyColors.secondaryDark, MyColors.primaryLight]
+            : [AppThemeColors.light.heroStart, AppThemeColors.light.heroEnd],
       ),
     ),
     child: InkWell(

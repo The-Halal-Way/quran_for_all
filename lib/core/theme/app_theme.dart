@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'my_colors.dart';
 import 'app_spacing.dart';
+import 'app_theme_colors.dart';
 
 class AppTheme {
   const AppTheme._();
@@ -97,25 +98,55 @@ class AppTheme {
   }
 
   static ThemeData get lightTheme {
+    const colors = AppThemeColors.light;
     final colorScheme =
         ColorScheme.fromSeed(
-          seedColor: MyColors.primary,
+          seedColor: colors.brand,
           brightness: Brightness.light,
-          primary: MyColors.primary,
-          secondary: MyColors.secondary,
-          surface: MyColors.surface,
+          dynamicSchemeVariant: DynamicSchemeVariant.fidelity,
         ).copyWith(
-          tertiary: MyColors.tertiary,
-          onPrimary: MyColors.textOnPrimary,
-          onSecondary: const Color(0xFF342500),
-          onTertiary: MyColors.textOnPrimary,
-          onSurface: MyColors.textPrimary,
-          onSurfaceVariant: MyColors.textSecondary,
-          outline: MyColors.divider,
-          outlineVariant: const Color(0xFFE8E1D5),
-          surfaceContainerLow: const Color(0xFFFAF7F0),
-          surfaceContainer: MyColors.surfaceContainer,
-          surfaceContainerHighest: MyColors.surfaceContainer,
+          primary: colors.brand,
+          onPrimary: colors.heroForeground,
+          primaryContainer: Color.alphaBlend(
+            colors.brand.withValues(alpha: 0.12),
+            colors.surface,
+          ),
+          onPrimaryContainer: const Color(0xFF28227A),
+          secondary: colors.violet,
+          onSecondary: colors.heroForeground,
+          secondaryContainer: Color.alphaBlend(
+            colors.violet.withValues(alpha: 0.12),
+            colors.surface,
+          ),
+          onSecondaryContainer: const Color(0xFF3E216C),
+          tertiary: colors.cyan,
+          onTertiary: const Color(0xFF001F25),
+          tertiaryContainer: Color.alphaBlend(
+            colors.cyan.withValues(alpha: 0.12),
+            colors.surface,
+          ),
+          onTertiaryContainer: const Color(0xFF075465),
+          error: colors.danger,
+          onError: colors.heroForeground,
+          errorContainer: Color.alphaBlend(
+            colors.danger.withValues(alpha: 0.1),
+            colors.surface,
+          ),
+          onErrorContainer: colors.danger,
+          surface: colors.surface,
+          onSurface: colors.textPrimary,
+          onSurfaceVariant: colors.textSecondary,
+          surfaceContainerLowest: colors.canvas,
+          surfaceContainerLow: colors.surface,
+          surfaceContainer: colors.surfaceElevated,
+          surfaceContainerHigh: colors.surfaceMuted,
+          surfaceContainerHighest: colors.surfaceMuted,
+          outline: colors.strokeStrong,
+          outlineVariant: colors.stroke,
+          shadow: colors.shadow,
+          inverseSurface: colors.textPrimary,
+          onInverseSurface: colors.surface,
+          surfaceTint: Colors.transparent,
         );
 
     return _buildTheme(colorScheme, Brightness.light);
@@ -149,20 +180,28 @@ class AppTheme {
   static ThemeData _buildTheme(ColorScheme colorScheme, Brightness brightness) {
     final metrics = _themeMetrics;
     final isDark = brightness == Brightness.dark;
-    final scaffoldBg = isDark ? MyColors.darkScaffold : MyColors.scaffold;
-    final cardColor = isDark ? MyColors.darkCardFill : MyColors.cardFill;
+    final scaffoldBg = isDark
+        ? MyColors.darkScaffold
+        : AppThemeColors.light.canvas;
+    final cardColor = isDark
+        ? MyColors.darkCardFill
+        : AppThemeColors.light.surfaceElevated;
     final textSecondary = isDark
         ? MyColors.darkTextSecondary
-        : MyColors.textSecondary;
+        : AppThemeColors.light.textSecondary;
     final textTertiary = isDark
         ? MyColors.darkTextTertiary
-        : MyColors.textTertiary;
+        : AppThemeColors.light.textMuted;
 
     final base = ThemeData(
       useMaterial3: true,
       platform: TargetPlatform.iOS,
       colorScheme: colorScheme,
       scaffoldBackgroundColor: scaffoldBg,
+      canvasColor: isDark ? null : scaffoldBg,
+      cardColor: isDark ? null : cardColor,
+      dividerColor: isDark ? null : colorScheme.outlineVariant,
+      shadowColor: isDark ? null : AppThemeColors.light.shadow,
       brightness: brightness,
       visualDensity: VisualDensity.standard,
       splashFactory: NoSplash.splashFactory,
@@ -324,7 +363,7 @@ class AppTheme {
         filled: true,
         fillColor: isDark
             ? colorScheme.surface.withValues(alpha: 0.6)
-            : Colors.white.withValues(alpha: 0.92),
+            : AppThemeColors.light.surface,
         hintStyle: textTheme.bodyMedium?.copyWith(color: textTertiary),
         contentPadding: EdgeInsets.symmetric(
           horizontal: metrics.space(AppSpacing.lg),
@@ -351,14 +390,16 @@ class AppTheme {
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(metrics.radius(AppRadius.md)),
           borderSide: BorderSide(
-            color: MyColors.error.withValues(alpha: 0.6),
+            color: (isDark ? MyColors.error : colorScheme.error).withValues(
+              alpha: 0.6,
+            ),
             width: metrics.stroke(1),
           ),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(metrics.radius(AppRadius.md)),
           borderSide: BorderSide(
-            color: MyColors.error,
+            color: isDark ? MyColors.error : colorScheme.error,
             width: metrics.stroke(1.5),
           ),
         ),
@@ -497,7 +538,9 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(metrics.radius(AppRadius.lg)),
         ),
-        backgroundColor: isDark ? MyColors.darkCardFill : MyColors.textPrimary,
+        backgroundColor: isDark
+            ? MyColors.darkCardFill
+            : AppThemeColors.light.textPrimary,
       ),
 
       // ── Dialog ──────────────────────────────────────────────────────────
@@ -566,7 +609,9 @@ class AppTheme {
       // ── Tooltip ─────────────────────────────────────────────────────────
       tooltipTheme: TooltipThemeData(
         decoration: BoxDecoration(
-          color: isDark ? MyColors.darkSurfaceContainer : MyColors.textPrimary,
+          color: isDark
+              ? MyColors.darkSurfaceContainer
+              : AppThemeColors.light.textPrimary,
           borderRadius: BorderRadius.circular(metrics.radius(AppRadius.xs)),
         ),
         textStyle: textTheme.bodySmall?.copyWith(

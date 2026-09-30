@@ -28,7 +28,9 @@ class ReadQuranTopBanner extends StatelessWidget {
         return Transform.translate(offset: Offset(0, offset), child: child);
       },
       child: AppGradientBanner(
-        gradient: AppGradients.heroBanner,
+        gradient: Theme.of(context).brightness == Brightness.dark
+            ? AppGradients.heroBanner
+            : AppGradients.lightHeroBanner,
         borderRadius: AppRadius.xl,
         padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(

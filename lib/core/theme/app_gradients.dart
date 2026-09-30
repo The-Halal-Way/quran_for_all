@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_theme_colors.dart';
+
 /// Premium multi-stop gradient presets.
 ///
 /// Three-stop gradients with bridging mid-tones create smoother,
@@ -9,9 +11,13 @@ class AppGradients {
 
   // ── Page Backgrounds ─────────────────────────────────────────────────────
 
-  /// Warm pearl page background – light mode.
-  static const LinearGradient pageBg = LinearGradient(
-    colors: [Color(0xFFFFFEFA), Color(0xFFF7F3EA), Color(0xFFEDE8DD)],
+  /// Cool pearl page background – light mode.
+  static final LinearGradient pageBg = LinearGradient(
+    colors: [
+      AppThemeColors.light.surfaceElevated,
+      AppThemeColors.light.canvas,
+      AppThemeColors.light.surfaceMuted,
+    ],
     stops: [0.0, 0.5, 1.0],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
@@ -39,6 +45,17 @@ class AppGradients {
   static const LinearGradient heroBanner = LinearGradient(
     colors: [Color(0xFF18223D), Color(0xFF5263A7), Color(0xFF177A6B)],
     stops: [0.0, 0.6, 1.0],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
+  static final LinearGradient lightHeroBanner = LinearGradient(
+    colors: [
+      AppThemeColors.light.heroStart,
+      AppThemeColors.light.heroMiddle,
+      AppThemeColors.light.heroEnd,
+    ],
+    stops: [0.0, 0.5, 1.0],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );

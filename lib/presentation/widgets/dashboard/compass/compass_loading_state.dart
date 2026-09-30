@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 
 class CompassLoadingState extends StatelessWidget {
   const CompassLoadingState({
     super.key,
-    required this.isDark,
     required this.title,
     this.message,
     this.isLoading = false,
@@ -13,7 +13,6 @@ class CompassLoadingState extends StatelessWidget {
     this.onRetry,
   });
 
-  final bool isDark;
   final String title;
   final String? message;
   final bool isLoading;
@@ -25,54 +24,54 @@ class CompassLoadingState extends StatelessWidget {
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
 
+    final scheme = Theme.of(context).colorScheme;
     return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          if (isLoading)
-            CircularProgressIndicator(
-              color: isDark ? const Color(0xFF4B30A1) : const Color(0xFF1E0A3C),
-            )
-          else
-            Icon(
-              icon,
-              size: 36,
-              color: isDark ? const Color(0xFFB39DDB) : const Color(0xFF4C425C),
-            ),
-          const SizedBox(height: 16),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Text(
-              title,
-              style: text.titleSmall.copyWith(
-                color: isDark
-                    ? const Color(0xFFB39DDB)
-                    : const Color(0xFF4C425C),
-                fontWeight: AppTheme.weightBold,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ),
-          if (message != null && message!.isNotEmpty) ...[
-            const SizedBox(height: 8),
+      child: Container(
+        margin: const EdgeInsets.all(AppSpacing.xl),
+        padding: const EdgeInsets.all(AppSpacing.xxl),
+        decoration: BoxDecoration(
+          color: scheme.surface,
+          borderRadius: BorderRadius.circular(AppRadius.xxl),
+          border: Border.all(color: scheme.outlineVariant),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (isLoading)
+              CircularProgressIndicator(color: scheme.primary)
+            else
+              Icon(icon, size: 36, color: scheme.primary),
+            const SizedBox(height: 16),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 28),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
-                message!,
-                style: text.bodyMedium.copyWith(
-                  color: isDark
-                      ? const Color(0xFFB39DDB).withValues(alpha: 0.86)
-                      : const Color(0xFF4C425C).withValues(alpha: 0.86),
+                title,
+                style: text.titleSmall.copyWith(
+                  color: scheme.onSurface,
+                  fontWeight: AppTheme.weightBold,
                 ),
                 textAlign: TextAlign.center,
               ),
             ),
+            if (message != null && message!.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 28),
+                child: Text(
+                  message!,
+                  style: text.bodyMedium.copyWith(
+                    color: scheme.onSurfaceVariant,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ],
+            if (onRetry != null && actionLabel != null) ...[
+              const SizedBox(height: 16),
+              ElevatedButton(onPressed: onRetry, child: Text(actionLabel!)),
+            ],
           ],
-          if (onRetry != null && actionLabel != null) ...[
-            const SizedBox(height: 16),
-            ElevatedButton(onPressed: onRetry, child: Text(actionLabel!)),
-          ],
-        ],
+        ),
       ),
     );
   }

@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_compass/flutter_compass.dart';
+import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class PermissionRequestResult {
@@ -62,11 +63,9 @@ class PermissionRequestResult {
 }
 
 class CompassListeningSession {
-  const CompassListeningSession._(this._subscription);
+  const CompassListeningSession(this.cancel);
 
-  final StreamSubscription<CompassEvent> _subscription;
-
-  Future<void> cancel() => _subscription.cancel();
+  final Future<void> Function() cancel;
 }
 
 class PermissionHelper {
@@ -222,15 +221,9 @@ class PermissionHelper {
     return status.isGranted || status.isLimited || status.isProvisional;
   }
 
-  Future<bool> hasNativeCompassFeature() async {
-    return FlutterCompass.events != null;
-  }
-
   Future<CompassListeningSession?> startCompassWithPermission({
     required Function(double heading) onHeadingChanged,
-    required Function(String direction)
-    onDirectionChanged, // e.g., 'East', 'West'
-    double headingCorrectionDegrees = 0,
+    VoidCallback? onUnavailable,
   }) async {
     final requiredPermissions = <Permission>[];
     if (Platform.isAndroid || Platform.isIOS) {
@@ -242,36 +235,36 @@ class PermissionHelper {
     if (requiredPermissions.any(
       (permission) => !result.isGranted(permission),
     )) {
-      if (result.shouldPromptToOpenSettings) {
-        await openSettings();
-      } else {
-        debugPrint('Compass permissions denied');
-      }
+      debugPrint('Compass permissions denied');
       return null;
     }
 
-    final events = FlutterCompass.events;
-    if (events == null) {
-      debugPrint('Compass sensor is not available on this device');
-      return null;
+    final Stream<double?> events;
+    if (Platform.isIOS) {
+      events = const EventChannel(
+        'quran_for_all/heading',
+      ).receiveBroadcastStream().map((event) => (event as num?)?.toDouble());
+    } else {
+      final compassEvents = FlutterCompass.events;
+      if (compassEvents == null) return null;
+      events = compassEvents.map(_extractHeading);
     }
 
     final ready = Completer<bool>();
-    late final StreamSubscription<CompassEvent> subscription;
+    late final StreamSubscription<double?> subscription;
 
-    // flutter_compass returns a stream of CompassEvent
+    // A valid first reading confirms that heading hardware is usable.
     subscription = events.listen(
-      (CompassEvent event) {
-        final heading = _extractHeading(event);
-        if (heading == null) {
+      (double? heading) {
+        if (heading == null ||
+            !heading.isFinite ||
+            heading < -180 ||
+            heading > 360) {
           return;
         }
 
-        final correctedHeading =
-            (heading + headingCorrectionDegrees + 360) % 360;
-
-        onHeadingChanged(correctedHeading);
-        onDirectionChanged(_getCardinalDirection(correctedHeading));
+        final normalizedHeading = (heading + 360) % 360;
+        onHeadingChanged(normalizedHeading);
 
         if (!ready.isCompleted) {
           ready.complete(true);
@@ -280,6 +273,15 @@ class PermissionHelper {
       onError: (_) {
         if (!ready.isCompleted) {
           ready.complete(false);
+        } else {
+          onUnavailable?.call();
+        }
+      },
+      onDone: () {
+        if (!ready.isCompleted) {
+          ready.complete(false);
+        } else {
+          onUnavailable?.call();
         }
       },
     );
@@ -295,30 +297,15 @@ class PermissionHelper {
       return null;
     }
 
-    return CompassListeningSession._(subscription);
+    return CompassListeningSession(subscription.cancel);
   }
 
   double? _extractHeading(CompassEvent event) {
     final heading = event.heading;
-    if (heading != null) {
+    if (heading != null && heading.isFinite) {
       return heading;
     }
 
-    final dynamic dynamicEvent = event;
-    final dynamic cameraHeading = dynamicEvent.headingForCameraMode;
-    if (cameraHeading is num) {
-      return cameraHeading.toDouble();
-    }
-
     return null;
-  }
-
-  // Helper for cardinal direction (East/West emphasis)
-  String _getCardinalDirection(double heading) {
-    if (heading >= 315 || heading < 45) return 'North';
-    if (heading >= 45 && heading < 135) return 'East';
-    if (heading >= 135 && heading < 225) return 'South';
-    if (heading >= 225 && heading < 315) return 'West';
-    return 'Unknown';
   }
 }

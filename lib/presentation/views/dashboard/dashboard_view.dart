@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_theme_colors.dart';
 import '../../../core/theme/my_colors.dart';
 import '../../../core/utils/app_responsive.dart';
 import '../../viewmodels/dashboard_prayer_times_viewmodel.dart';
@@ -27,7 +28,9 @@ class DashboardView extends StatelessWidget {
       body: AppPremiumPageBackground(
         child: SafeArea(
           child: RefreshIndicator(
-            color: MyColors.secondary,
+            color: Theme.of(context).brightness == Brightness.dark
+                ? MyColors.secondary
+                : AppThemeColors.light.brand,
             onRefresh: () => context
                 .read<DashboardPrayerTimesViewModel>()
                 .loadPrayerTimes(forceRefresh: true),

@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
+import 'package:quran_for_all/core/theme/app_theme_colors.dart';
+import 'package:quran_for_all/core/theme/my_colors.dart';
 
 class CompassTopBar extends StatelessWidget {
   const CompassTopBar({
@@ -16,21 +18,18 @@ class CompassTopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
-    final textPrimary = isDark
-        ? const Color(0xFFEDE7F6)
-        : const Color(0xFF120B24);
-    final textSecondary = isDark
-        ? const Color(0xFF7E57C2)
-        : const Color(0xFF4C425C);
+    final textPrimary = Theme.of(context).colorScheme.onSurface;
+    final textSecondary = Theme.of(context).colorScheme.onSurfaceVariant;
 
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 16, 20, 0),
+      padding: const EdgeInsets.fromLTRB(12, 12, 20, 0),
       child: Row(
         children: [
-          IconButton(
+          IconButton.filledTonal(
             onPressed: () => Navigator.of(context).maybePop(),
             icon: Icon(CupertinoIcons.chevron_back, color: textPrimary),
           ),
+          const SizedBox(width: 12),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,11 +42,13 @@ class CompassTopBar extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      width: 6,
-                      height: 6,
-                      decoration: const BoxDecoration(
+                      width: 7,
+                      height: 7,
+                      decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: Color(0xFF00BFA5),
+                        color: isDark
+                            ? MyColors.tertiaryLight
+                            : AppThemeColors.light.cyan,
                       ),
                     ),
                     const SizedBox(width: 5),

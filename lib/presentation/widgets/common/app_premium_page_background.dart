@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_gradients.dart';
+import '../../../core/theme/app_theme_colors.dart';
 import '../../../core/theme/my_colors.dart';
 
 /// Lightweight, code-drawn background shared by the primary navigation tabs.
@@ -15,6 +16,7 @@ class AppPremiumPageBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    const light = AppThemeColors.light;
 
     return DecoratedBox(
       decoration: BoxDecoration(
@@ -28,8 +30,9 @@ class AppPremiumPageBackground extends StatelessWidget {
             right: -170,
             child: _AmbientGlow(
               size: 430,
-              color: (isDark ? MyColors.primaryLight : MyColors.secondary)
-                  .withValues(alpha: isDark ? 0.11 : 0.075),
+              color: (isDark ? MyColors.primaryLight : light.violet).withValues(
+                alpha: isDark ? 0.11 : 0.075,
+              ),
             ),
           ),
           Positioned(
@@ -37,12 +40,19 @@ class AppPremiumPageBackground extends StatelessWidget {
             bottom: -230,
             child: _AmbientGlow(
               size: 460,
-              color: MyColors.tertiary.withValues(alpha: isDark ? 0.09 : 0.055),
+              color: (isDark ? MyColors.tertiary : light.cyan).withValues(
+                alpha: isDark ? 0.09 : 0.055,
+              ),
             ),
           ),
           Positioned.fill(
             child: IgnorePointer(
-              child: CustomPaint(painter: _PagePattern(isDark: isDark)),
+              child: CustomPaint(
+                painter: _PagePattern(
+                  isDark: isDark,
+                  stroke: isDark ? MyColors.secondaryLight : light.brand,
+                ),
+              ),
             ),
           ),
           child,
@@ -72,15 +82,15 @@ class _AmbientGlow extends StatelessWidget {
 }
 
 class _PagePattern extends CustomPainter {
-  const _PagePattern({required this.isDark});
+  const _PagePattern({required this.isDark, required this.stroke});
 
   final bool isDark;
+  final Color stroke;
 
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = (isDark ? MyColors.secondaryLight : MyColors.primaryLight)
-          .withValues(alpha: isDark ? 0.065 : 0.05)
+      ..color = stroke.withValues(alpha: isDark ? 0.065 : 0.05)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1;
 
@@ -101,6 +111,6 @@ class _PagePattern extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _PagePattern oldDelegate) {
-    return oldDelegate.isDark != isDark;
+    return oldDelegate.isDark != isDark || oldDelegate.stroke != stroke;
   }
 }

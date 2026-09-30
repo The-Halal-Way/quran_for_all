@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../data/models/prayer/prayer_detail_models.dart';
 
@@ -21,7 +22,9 @@ class DashboardForbiddenTimeRow extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final accent = isDark ? MyColors.secondaryLight : MyColors.secondary;
+    final accent = isDark
+        ? MyColors.secondaryLight
+        : AppThemeColors.light.warning;
 
     return Semantics(
       button: true,

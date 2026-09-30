@@ -4634,13 +4634,13 @@ abstract class AppLocalizations {
   /// No description provided for @compassTitle.
   ///
   /// In en, this message translates to:
-  /// **'Compass'**
+  /// **'Qibla Compass'**
   String get compassTitle;
 
   /// No description provided for @compassInitializing.
   ///
   /// In en, this message translates to:
-  /// **'Initializing compass...'**
+  /// **'Finding your Qibla direction...'**
   String get compassInitializing;
 
   /// No description provided for @compassRetry.
@@ -4652,8 +4652,86 @@ abstract class AppLocalizations {
   /// No description provided for @compassNativeActive.
   ///
   /// In en, this message translates to:
-  /// **'Native compass active'**
+  /// **'Live compass guidance'**
   String get compassNativeActive;
+
+  /// No description provided for @compassHeroEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'THE SACRED DIRECTION'**
+  String get compassHeroEyebrow;
+
+  /// No description provided for @compassHeroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find your way to the Kaaba'**
+  String get compassHeroTitle;
+
+  /// No description provided for @compassHeroSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A quiet guide wherever you pray'**
+  String get compassHeroSubtitle;
+
+  /// No description provided for @compassBearingFromNorth.
+  ///
+  /// In en, this message translates to:
+  /// **'clockwise from geographic north'**
+  String get compassBearingFromNorth;
+
+  /// No description provided for @compassLiveMode.
+  ///
+  /// In en, this message translates to:
+  /// **'Live'**
+  String get compassLiveMode;
+
+  /// No description provided for @compassNorthUpMode.
+  ///
+  /// In en, this message translates to:
+  /// **'North-up guide'**
+  String get compassNorthUpMode;
+
+  /// No description provided for @compassQiblaBearingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Qibla bearing'**
+  String get compassQiblaBearingLabel;
+
+  /// No description provided for @compassApiBearingSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Online bearing'**
+  String get compassApiBearingSource;
+
+  /// No description provided for @compassCalculatedBearingSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculated from location'**
+  String get compassCalculatedBearingSource;
+
+  /// No description provided for @compassTurnRight.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn right {degrees}°'**
+  String compassTurnRight(String degrees);
+
+  /// No description provided for @compassTurnLeft.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn left {degrees}°'**
+  String compassTurnLeft(String degrees);
+
+  /// No description provided for @compassLiveInstruction.
+  ///
+  /// In en, this message translates to:
+  /// **'Hold your phone level. Follow the turquoise pointer until it meets the rose marker at the top.'**
+  String get compassLiveInstruction;
+
+  /// No description provided for @compassFallbackInstruction.
+  ///
+  /// In en, this message translates to:
+  /// **'Use a map or a known north direction, then face {degrees}° clockwise from north. This dial does not rotate with your phone.'**
+  String compassFallbackInstruction(String degrees);
 
   /// No description provided for @compassHeadingLabel.
   ///
@@ -4661,35 +4739,11 @@ abstract class AppLocalizations {
   /// **'Heading'**
   String get compassHeadingLabel;
 
-  /// No description provided for @compassQiblaOffsetLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Qibla offset'**
-  String get compassQiblaOffsetLabel;
-
-  /// No description provided for @compassAccuracyLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Accuracy'**
-  String get compassAccuracyLabel;
-
   /// No description provided for @compassNotAvailableShort.
   ///
   /// In en, this message translates to:
   /// **'N/A'**
   String get compassNotAvailableShort;
-
-  /// No description provided for @compassApiAccuracyLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'API'**
-  String get compassApiAccuracyLabel;
-
-  /// No description provided for @compassNativeAccuracyLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'±2°'**
-  String get compassNativeAccuracyLabel;
 
   /// No description provided for @compassFacingMeccaLabel.
   ///
@@ -4697,29 +4751,11 @@ abstract class AppLocalizations {
   /// **'Facing Mecca!'**
   String get compassFacingMeccaLabel;
 
-  /// No description provided for @compassRotateToAlignLabel.
+  /// No description provided for @compassNorthUpGuidanceTitle.
   ///
   /// In en, this message translates to:
-  /// **'Rotate to align'**
-  String get compassRotateToAlignLabel;
-
-  /// No description provided for @compassApiFallbackTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Compass sensor unavailable'**
-  String get compassApiFallbackTitle;
-
-  /// No description provided for @compassApiFallbackBody.
-  ///
-  /// In en, this message translates to:
-  /// **'Your device does not expose a native compass sensor. We can calculate the Qibla angle from your location, but live rotation needs a compass-capable device.'**
-  String get compassApiFallbackBody;
-
-  /// No description provided for @compassApiFallbackQibla.
-  ///
-  /// In en, this message translates to:
-  /// **'Qibla angle: {degrees}°'**
-  String compassApiFallbackQibla(String degrees);
+  /// **'Use the north-up guide'**
+  String get compassNorthUpGuidanceTitle;
 
   /// No description provided for @compassLocationDeniedTitle.
   ///
@@ -4766,7 +4802,7 @@ abstract class AppLocalizations {
   /// No description provided for @compassGenericErrorBody.
   ///
   /// In en, this message translates to:
-  /// **'Check location permission, sensor availability, and your connection, then try again.'**
+  /// **'Check device location services and permission, then try again. An internet connection is not required for the bearing.'**
   String get compassGenericErrorBody;
 
   /// No description provided for @prayerViewTimelineTitle.

@@ -136,6 +136,16 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
               ],
               const SizedBox(height: 20),
               TextFormField(
+                key: const ValueKey('tasbeeh_arabic_field'),
+                controller: _arabic,
+                textDirection: TextDirection.rtl,
+                minLines: 1,
+                maxLines: null,
+                style: AppTheme.amiri(context, fontSize: 23),
+                decoration: InputDecoration(labelText: l10n.tasbeehArabicLabel),
+              ),
+              const SizedBox(height: 12),
+              TextFormField(
                 key: const ValueKey('tasbeeh_name_field'),
                 controller: _name,
                 autofocus: widget.phrase != null,
@@ -152,16 +162,6 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
               ),
               const SizedBox(height: 12),
               TextFormField(
-                key: const ValueKey('tasbeeh_arabic_field'),
-                controller: _arabic,
-                textDirection: TextDirection.rtl,
-                minLines: 1,
-                maxLines: null,
-                style: AppTheme.amiri(context, fontSize: 23),
-                decoration: InputDecoration(labelText: l10n.tasbeehArabicLabel),
-              ),
-              const SizedBox(height: 12),
-              TextFormField(
                 key: const ValueKey('tasbeeh_meaning_field'),
                 controller: _meaning,
                 minLines: 1,
@@ -174,7 +174,7 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
               ),
               const SizedBox(height: 12),
               TasbeehTargetField(controller: _target),
-              const SizedBox(height: 20),
+              const SizedBox(height: 30),
               SizedBox(
                 width: double.infinity,
                 child: FilledButton.icon(

@@ -30,7 +30,9 @@ class LearnHeaderCard extends StatelessWidget {
     final textTheme = AppTheme.text(context);
     final l10n = context.l10n;
     return AppGradientBanner(
-      gradient: AppGradients.heroBanner,
+      gradient: Theme.of(context).brightness == Brightness.dark
+          ? AppGradients.heroBanner
+          : AppGradients.lightHeroBanner,
       borderRadius: AppRadius.xl,
       padding: const EdgeInsets.all(AppSpacing.lg),
       child: Column(

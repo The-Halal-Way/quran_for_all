@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 
 class DashboardContinueCard extends StatelessWidget {
@@ -38,7 +39,12 @@ class DashboardContinueCard extends StatelessWidget {
             height: 166 + (scale - 1).clamp(0, 3) * 110,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [MyColors.primary, accent],
+                colors: [
+                  Theme.of(context).brightness == Brightness.dark
+                      ? MyColors.primary
+                      : AppThemeColors.light.heroStart,
+                  accent,
+                ],
                 begin: Alignment.bottomLeft,
                 end: Alignment.topRight,
               ),

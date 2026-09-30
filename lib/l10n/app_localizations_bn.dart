@@ -2315,51 +2315,73 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerTimesNetworkErrorBody => 'ইন্টারনেট সংযোগ ও ডিভাইস লোকেশন সেটিংস দেখে আবার চেষ্টা করুন।';
 
   @override
-  String get compassTitle => 'কম্পাস';
+  String get compassTitle => 'কিবলা কম্পাস';
 
   @override
-  String get compassInitializing => 'কম্পাস চালু হচ্ছে...';
+  String get compassInitializing => 'কিবলার দিক খোঁজা হচ্ছে...';
 
   @override
   String get compassRetry => 'আবার চেষ্টা করুন';
 
   @override
-  String get compassNativeActive => 'নেটিভ কম্পাস চালু আছে';
+  String get compassNativeActive => 'লাইভ কম্পাস নির্দেশনা';
+
+  @override
+  String get compassHeroEyebrow => 'পবিত্র দিকনির্দেশনা';
+
+  @override
+  String get compassHeroTitle => 'কাবার দিক খুঁজে নিন';
+
+  @override
+  String get compassHeroSubtitle => 'যেখানেই নামাজ পড়ুন, সহজ দিকনির্দেশনা';
+
+  @override
+  String get compassBearingFromNorth => 'ভৌগোলিক উত্তর থেকে ঘড়ির কাঁটার দিকে';
+
+  @override
+  String get compassLiveMode => 'লাইভ';
+
+  @override
+  String get compassNorthUpMode => 'উত্তরমুখী নির্দেশিকা';
+
+  @override
+  String get compassQiblaBearingLabel => 'কিবলার কোণ';
+
+  @override
+  String get compassApiBearingSource => 'অনলাইন কোণ';
+
+  @override
+  String get compassCalculatedBearingSource => 'লোকেশন থেকে হিসাব';
+
+  @override
+  String compassTurnRight(String degrees) {
+    return 'ডানে $degrees° ঘুরুন';
+  }
+
+  @override
+  String compassTurnLeft(String degrees) {
+    return 'বামে $degrees° ঘুরুন';
+  }
+
+  @override
+  String get compassLiveInstruction => 'ফোন সমতল রাখুন। ফিরোজা রঙের নির্দেশকটি ফোনের ওপরের গোলাপি চিহ্নের সঙ্গে মেলান।';
+
+  @override
+  String compassFallbackInstruction(String degrees) {
+    return 'মানচিত্র বা পরিচিত উত্তর দিক দেখে উত্তর থেকে ঘড়ির কাঁটার দিকে $degrees° মুখ করুন। এই ডায়াল ফোন ঘোরালে ঘুরবে না।';
+  }
 
   @override
   String get compassHeadingLabel => 'হেডিং';
 
   @override
-  String get compassQiblaOffsetLabel => 'কিবলা অফসেট';
-
-  @override
-  String get compassAccuracyLabel => 'নির্ভুলতা';
-
-  @override
   String get compassNotAvailableShort => 'প্রযোজ্য নয়';
-
-  @override
-  String get compassApiAccuracyLabel => 'API';
-
-  @override
-  String get compassNativeAccuracyLabel => '±২°';
 
   @override
   String get compassFacingMeccaLabel => 'কিবলার দিকে আছেন!';
 
   @override
-  String get compassRotateToAlignLabel => 'মেলাতে ঘোরান';
-
-  @override
-  String get compassApiFallbackTitle => 'কম্পাস সেন্সর পাওয়া যায়নি';
-
-  @override
-  String get compassApiFallbackBody => 'আপনার ডিভাইস নেটিভ কম্পাস সেন্সর দিচ্ছে না। আপনার লোকেশন থেকে কিবলার কোণ হিসাব করা যাবে, কিন্তু লাইভ ঘূর্ণনের জন্য কম্পাস-সক্ষম ডিভাইস দরকার।';
-
-  @override
-  String compassApiFallbackQibla(String degrees) {
-    return 'কিবলার কোণ: $degrees°';
-  }
+  String get compassNorthUpGuidanceTitle => 'উত্তরমুখী নির্দেশিকা ব্যবহার করুন';
 
   @override
   String get compassLocationDeniedTitle => 'লোকেশন অনুমতি দরকার';
@@ -2383,7 +2405,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get compassGenericErrorTitle => 'কম্পাস চালু করা যায়নি';
 
   @override
-  String get compassGenericErrorBody => 'লোকেশন অনুমতি, সেন্সর এবং সংযোগ দেখে আবার চেষ্টা করুন।';
+  String get compassGenericErrorBody => 'ডিভাইসের লোকেশন সার্ভিস ও অনুমতি দেখে আবার চেষ্টা করুন। কোণ হিসাব করতে ইন্টারনেট লাগে না।';
 
   @override
   String get prayerViewTimelineTitle => 'আজকের নামাজের ছন্দ';

@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:quran_for_all/services/compass_declination_service.dart';
 import 'package:quran_for_all/services/permission_helper.dart';
 import 'package:quran_for_all/services/qibla_api_service.dart';
+import 'package:quran_for_all/services/qibla_bearing.dart';
 
-const double kFallbackQiblaDegrees = 293.0;
-const double kHeadingCorrectionDegrees = 270.0;
 const double kQiblaSnapZone = 5.0;
 
 enum CompassInitErrorType {
@@ -31,32 +31,36 @@ class CompassViewModel extends ChangeNotifier {
   CompassViewModel({
     PermissionHelper? permissionHelper,
     QiblaApiService? qiblaApiService,
+    CompassDeclinationService? declinationService,
+    Future<Position> Function()? positionProvider,
   }) : _permissionHelper = permissionHelper ?? const PermissionHelper(),
-       _qiblaApiService = qiblaApiService ?? const QiblaApiService();
+       _qiblaApiService = qiblaApiService ?? const QiblaApiService(),
+       _declinationService =
+           declinationService ?? const CompassDeclinationService(),
+       _positionProvider = positionProvider;
 
   final PermissionHelper _permissionHelper;
   final QiblaApiService _qiblaApiService;
+  final CompassDeclinationService _declinationService;
+  final Future<Position> Function()? _positionProvider;
 
   double _rawHeading = 0.0;
   double _smoothHeading = 0.0;
-  String _directionLabel = 'North';
   bool _isListening = false;
-  bool _isApiFallback = false;
   bool _isInitializing = true;
-  double _qiblaDegrees = kFallbackQiblaDegrees;
-  String _initError = '';
+  double _qiblaDegrees = 0;
+  bool _isApiBearing = false;
   CompassInitErrorType _initErrorType = CompassInitErrorType.none;
   CompassListeningSession? _compassSession;
   bool _isDisposed = false;
+  int _requestId = 0;
+  bool _hasHeading = false;
 
-  double get rawHeading => _rawHeading;
   double get smoothHeading => _smoothHeading;
-  String get directionLabel => _directionLabel;
   bool get isListening => _isListening;
-  bool get isApiFallback => _isApiFallback;
   bool get isInitializing => _isInitializing;
   double get qiblaDegrees => _qiblaDegrees;
-  String get initError => _initError;
+  bool get isApiBearing => _isApiBearing;
   CompassInitErrorType get initErrorType => _initErrorType;
 
   double get qiblaOffset => (_qiblaDegrees - _smoothHeading + 360) % 360;
@@ -65,64 +69,70 @@ class CompassViewModel extends ChangeNotifier {
       _isListening &&
       (qiblaOffset < kQiblaSnapZone || qiblaOffset > 360 - kQiblaSnapZone);
 
-  bool get showLoadingState =>
-      _isInitializing || (!_isListening && !_isApiFallback);
-
   Future<void> initialize() async {
+    final requestId = ++_requestId;
     await _stopCompass();
-    if (_isDisposed) {
+    if (_isDisposed || requestId != _requestId) {
       return;
     }
 
     _isInitializing = true;
-    _initError = '';
     _initErrorType = CompassInitErrorType.none;
+    _isListening = false;
+    _isApiBearing = false;
+    _rawHeading = 0;
+    _smoothHeading = 0;
+    _hasHeading = false;
     _notifyListenersIfActive();
 
     try {
-      final position = await _getCurrentPosition();
-      if (_isDisposed) {
+      final position = await (_positionProvider ?? _getCurrentPosition)();
+      if (_isDisposed || requestId != _requestId) {
         return;
       }
 
-      final qiblaDirection = await _qiblaApiService.fetchQiblaDirection(
+      // A location fix is sufficient for Qibla. Network lookup can refine the
+      // bearing later, but must never prevent the offline calculation.
+      _qiblaDegrees = QiblaBearing.fromCoordinates(
+        position.latitude,
+        position.longitude,
+      );
+
+      unawaited(_updateApiBearing(position, requestId));
+      final declination = await _declinationService.at(
         latitude: position.latitude,
         longitude: position.longitude,
+        altitude: position.altitude,
       );
-      if (_isDisposed) {
-        return;
-      }
-
-      final hasNativeCompass = await _permissionHelper
-          .hasNativeCompassFeature();
-      if (_isDisposed) {
-        return;
-      }
+      if (_isDisposed || requestId != _requestId) return;
 
       CompassListeningSession? session;
 
-      if (hasNativeCompass) {
+      try {
         session = await _permissionHelper.startCompassWithPermission(
           onHeadingChanged: (heading) {
-            if (_isDisposed) {
+            if (_isDisposed || requestId != _requestId) {
               return;
             }
 
-            _rawHeading = (heading + 360) % 360;
+            _rawHeading = (heading + declination + 360) % 360;
+            if (!_hasHeading) {
+              _smoothHeading = _rawHeading;
+              _hasHeading = true;
+            }
           },
-          onDirectionChanged: (direction) {
-            if (_isDisposed) {
-              return;
-            }
-
-            _directionLabel = direction;
+          onUnavailable: () {
+            if (_isDisposed || requestId != _requestId) return;
+            _isListening = false;
+            unawaited(_stopCompass());
             _notifyListenersIfActive();
           },
-          headingCorrectionDegrees: kHeadingCorrectionDegrees,
         );
+      } catch (error) {
+        debugPrint('Compass sensor unavailable: $error');
       }
 
-      if (_isDisposed) {
+      if (_isDisposed || requestId != _requestId) {
         unawaited(session?.cancel());
         return;
       }
@@ -130,29 +140,21 @@ class CompassViewModel extends ChangeNotifier {
       _compassSession = session;
       final started = session != null;
 
-      _qiblaDegrees = qiblaDirection ?? kFallbackQiblaDegrees;
       _isListening = started;
-      _isApiFallback = !started;
       _isInitializing = false;
-      _directionLabel = started ? _directionLabel : 'No compass sensor';
-      _rawHeading = started ? _rawHeading : 0;
-      _smoothHeading = started ? _smoothHeading : 0;
-      _initError = '';
       _initErrorType = CompassInitErrorType.none;
       _notifyListenersIfActive();
     } catch (e) {
-      if (_isDisposed) {
+      if (_isDisposed || requestId != _requestId) {
         return;
       }
 
       _isListening = false;
-      _isApiFallback = false;
       _isInitializing = false;
       if (e is CompassInitializationException) {
-        _initError = e.message;
         _initErrorType = e.type;
       } else {
-        _initError = 'Failed to initialize compass/Qibla: $e';
+        debugPrint('Failed to initialize compass/Qibla: $e');
         _initErrorType = CompassInitErrorType.generic;
       }
       _notifyListenersIfActive();
@@ -183,6 +185,7 @@ class CompassViewModel extends ChangeNotifier {
   @override
   void dispose() {
     _isDisposed = true;
+    _requestId++;
     unawaited(_stopCompass());
     super.dispose();
   }
@@ -199,6 +202,23 @@ class CompassViewModel extends ChangeNotifier {
     }
 
     notifyListeners();
+  }
+
+  Future<void> _updateApiBearing(Position position, int requestId) async {
+    try {
+      final bearing = await _qiblaApiService
+          .fetchQiblaDirection(
+            latitude: position.latitude,
+            longitude: position.longitude,
+          )
+          .timeout(const Duration(seconds: 4));
+      if (bearing == null || _isDisposed || requestId != _requestId) return;
+      _qiblaDegrees = bearing;
+      _isApiBearing = true;
+      _notifyListenersIfActive();
+    } catch (_) {
+      // Local great-circle bearing remains valid offline.
+    }
   }
 
   Future<Position> _getCurrentPosition() async {
@@ -229,7 +249,10 @@ class CompassViewModel extends ChangeNotifier {
     }
 
     return Geolocator.getCurrentPosition(
-      locationSettings: const LocationSettings(accuracy: LocationAccuracy.high),
+      locationSettings: const LocationSettings(
+        accuracy: LocationAccuracy.medium,
+        timeLimit: Duration(seconds: 15),
+      ),
     );
   }
 }

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/utils/app_page_route.dart';
 import '../../../viewmodels/dashboard_prayer_times_viewmodel.dart';
@@ -29,7 +30,9 @@ class DashboardPrayerSection extends StatelessWidget {
         DashboardSectionTitle(
           title: context.l10n.dashboardSectionPrayerTimes,
           icon: Icons.access_time_rounded,
-          accent: MyColors.secondary,
+          accent: Theme.of(context).brightness == Brightness.dark
+              ? MyColors.secondary
+              : AppThemeColors.light.warning,
         ),
         const SizedBox(height: AppSpacing.md),
         DashboardPrayerCard(

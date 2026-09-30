@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../views/dashboard/when_you_have_a_need/need_amal.dart';
 import '../../../views/dashboard/when_you_have_a_need/when_you_have_a_need_view.dart';
@@ -13,6 +14,7 @@ class DashboardNeedSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isBangla = Localizations.localeOf(context).languageCode == 'bn';
+    final isDark = Theme.of(context).brightness == Brightness.dark;
 
     void openGuide([NeedCategory? category]) => pushDashboardPage(
       context,
@@ -32,16 +34,28 @@ class DashboardNeedSection extends StatelessWidget {
           AppIconGridItem(
             icon: category.icon,
             label: category.title.of(isBangla),
-            accent: _accentFor(category),
+            accent: _accentFor(category, isDark),
             onTap: () => openGuide(category),
           ),
       ],
     );
   }
 
-  Color _accentFor(NeedCategory category) => switch (category) {
-    NeedCategory.quran || NeedCategory.charity => MyColors.tertiaryDark,
-    NeedCategory.salah || NeedCategory.specialTimes => MyColors.secondary,
-    NeedCategory.dhikr || NeedCategory.dua => MyColors.primaryLight,
-  };
+  Color _accentFor(NeedCategory category, bool isDark) {
+    if (isDark) {
+      return switch (category) {
+        NeedCategory.quran || NeedCategory.charity => MyColors.tertiaryDark,
+        NeedCategory.salah || NeedCategory.specialTimes => MyColors.secondary,
+        NeedCategory.dhikr || NeedCategory.dua => MyColors.primaryLight,
+      };
+    }
+    return switch (category) {
+      NeedCategory.quran => AppThemeColors.light.cyan,
+      NeedCategory.salah => AppThemeColors.light.violet,
+      NeedCategory.dhikr => AppThemeColors.light.brand,
+      NeedCategory.dua => AppThemeColors.light.coral,
+      NeedCategory.charity => AppThemeColors.light.success,
+      NeedCategory.specialTimes => AppThemeColors.light.warning,
+    };
+  }
 }

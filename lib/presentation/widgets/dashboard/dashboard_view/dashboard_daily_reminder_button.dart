@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_spacing.dart' show AppRadius;
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 
 class DashboardDailyReminderButton extends StatelessWidget {
@@ -22,6 +23,8 @@ class DashboardDailyReminderButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
     final hasUnread = unreadCount > 0;
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    final accent = dark ? MyColors.secondary : AppThemeColors.light.brand;
     return Tooltip(
       message: label,
       child: Semantics(
@@ -39,22 +42,18 @@ class DashboardDailyReminderButton extends StatelessWidget {
                 child: Material(
                   color: colors.surface,
                   shape: CircleBorder(
-                    side: BorderSide(
-                      color: MyColors.secondary.withValues(alpha: 0.2),
-                    ),
+                    side: BorderSide(color: accent.withValues(alpha: 0.2)),
                   ),
                   elevation: 2,
-                  shadowColor: MyColors.primary.withValues(alpha: 0.18),
+                  shadowColor:
+                      (dark ? MyColors.primary : AppThemeColors.light.shadow)
+                          .withValues(alpha: 0.18),
                   clipBehavior: Clip.antiAlias,
                   child: InkWell(
                     onTap: onTap,
-                    child: const SizedBox.square(
+                    child: SizedBox.square(
                       dimension: 38,
-                      child: Icon(
-                        CupertinoIcons.bell,
-                        size: 23,
-                        color: MyColors.secondary,
-                      ),
+                      child: Icon(CupertinoIcons.bell, size: 23, color: accent),
                     ),
                   ),
                 ),
@@ -70,7 +69,9 @@ class DashboardDailyReminderButton extends StatelessWidget {
                       vertical: 3,
                     ),
                     decoration: BoxDecoration(
-                      color: MyColors.error,
+                      color: dark
+                          ? MyColors.error
+                          : AppThemeColors.light.danger,
                       borderRadius: BorderRadius.circular(AppRadius.full),
                       border: Border.all(color: colors.surface, width: 2),
                     ),

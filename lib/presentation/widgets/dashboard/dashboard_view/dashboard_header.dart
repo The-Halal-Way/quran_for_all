@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../viewmodels/dashboard/dashboard_viewmodel.dart';
@@ -28,6 +29,11 @@ class DashboardHeader extends StatelessWidget {
       hijriDateAdjustment: adjustment,
     );
     final colors = Theme.of(context).colorScheme;
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    final firstAccent = dark
+        ? MyColors.primaryLight
+        : AppThemeColors.light.brand;
+    final secondAccent = dark ? MyColors.tertiary : AppThemeColors.light.cyan;
     final unreadReminders = context.select(
       (DailyRemindersViewModel vm) => vm.unreadCount,
     );
@@ -40,13 +46,11 @@ class DashboardHeader extends StatelessWidget {
             borderRadius: BorderRadius.circular(AppRadius.lg),
             gradient: LinearGradient(
               colors: [
-                Color.lerp(colors.surface, MyColors.primaryLight, 0.08)!,
-                Color.lerp(colors.surface, MyColors.tertiary, 0.04)!,
+                Color.lerp(colors.surface, firstAccent, 0.08)!,
+                Color.lerp(colors.surface, secondAccent, 0.04)!,
               ],
             ),
-            border: Border.all(
-              color: MyColors.primaryLight.withValues(alpha: 0.18),
-            ),
+            border: Border.all(color: firstAccent.withValues(alpha: 0.18)),
           ),
           child: Stack(
             alignment: AlignmentDirectional.center,

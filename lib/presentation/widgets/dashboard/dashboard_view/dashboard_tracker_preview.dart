@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import '../../../views/dashboard/daily_tracker/daily_tracker_full_view.dart';
@@ -22,7 +23,7 @@ class DashboardTrackerPreview extends StatelessWidget {
     final text = AppTheme.text(context);
     final colors = Theme.of(context).colorScheme;
     final dark = Theme.of(context).brightness == Brightness.dark;
-    final accent = dark ? MyColors.tertiaryLight : MyColors.tertiaryDark;
+    final accent = dark ? MyColors.tertiaryLight : AppThemeColors.light.success;
     return Material(
       color: colors.surface,
       clipBehavior: Clip.antiAlias,

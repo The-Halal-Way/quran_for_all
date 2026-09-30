@@ -1,219 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
-import 'package:quran_for_all/core/theme/app_theme.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/compass/compass_info_tile.dart';
 
 class CompassInfoRow extends StatelessWidget {
   const CompassInfoRow({
     super.key,
     required this.heading,
-    required this.qiblaOffset,
-    required this.facingMecca,
-    required this.isDark,
-    required this.isApiFallback,
+    required this.qiblaDegrees,
+    required this.isLive,
+    required this.isApiBearing,
   });
 
   final double heading;
-  final double qiblaOffset;
-  final bool facingMecca;
-  final bool isDark;
-  final bool isApiFallback;
+  final double qiblaDegrees;
+  final bool isLive;
+  final bool isApiBearing;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          final l10n = context.l10n;
-          if (constraints.maxWidth < 360) {
-            return Column(
-              children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: _CompassInfoCard(
-                        label: l10n.compassHeadingLabel,
-                        value: isApiFallback
-                            ? l10n.compassNotAvailableShort
-                            : '${heading.toStringAsFixed(0)}°',
-                        icon: Icons.explore_rounded,
-                        isDark: isDark,
-                      ),
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: _CompassInfoCard(
-                        label: l10n.compassQiblaOffsetLabel,
-                        value: '${qiblaOffset.toStringAsFixed(0)}°',
-                        icon: Icons.mosque_rounded,
-                        isDark: isDark,
-                        accent: !isApiFallback,
-                        isOnTarget: !isApiFallback && facingMecca,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 10),
-                _CompassInfoCard(
-                  label: l10n.compassAccuracyLabel,
-                  value: isApiFallback
-                      ? l10n.compassApiAccuracyLabel
-                      : l10n.compassNativeAccuracyLabel,
-                  icon: Icons.my_location_rounded,
-                  isDark: isDark,
-                ),
-              ],
-            );
-          }
-
-          return Row(
-            children: [
-              Expanded(
-                child: _CompassInfoCard(
-                  label: l10n.compassHeadingLabel,
-                  value: isApiFallback
-                      ? l10n.compassNotAvailableShort
-                      : '${heading.toStringAsFixed(0)}°',
-                  icon: Icons.explore_rounded,
-                  isDark: isDark,
-                ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: _CompassInfoCard(
-                  label: l10n.compassQiblaOffsetLabel,
-                  value: '${qiblaOffset.toStringAsFixed(0)}°',
-                  icon: Icons.mosque_rounded,
-                  isDark: isDark,
-                  accent: !isApiFallback,
-                  isOnTarget: !isApiFallback && facingMecca,
-                ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: _CompassInfoCard(
-                  label: l10n.compassAccuracyLabel,
-                  value: isApiFallback
-                      ? l10n.compassApiAccuracyLabel
-                      : l10n.compassNativeAccuracyLabel,
-                  icon: Icons.my_location_rounded,
-                  isDark: isDark,
-                ),
-              ),
-            ],
-          );
-        },
-      ),
-    );
-  }
-}
-
-class _CompassInfoCard extends StatelessWidget {
-  const _CompassInfoCard({
-    required this.label,
-    required this.value,
-    required this.icon,
-    required this.isDark,
-    this.accent = false,
-    this.isOnTarget = false,
-  });
-
-  final String label;
-  final String value;
-  final IconData icon;
-  final bool isDark;
-  final bool accent;
-  final bool isOnTarget;
-
-  @override
-  Widget build(BuildContext context) {
-    final text = AppTheme.text(context);
     final l10n = context.l10n;
-    final cardBg = isDark ? const Color(0xFF120A2B) : const Color(0xFFFFFFFF);
-    final borderC = isDark ? const Color(0xFF382E54) : const Color(0xFFD9D1E8);
-    final labelC = isDark ? const Color(0xFF7E57C2) : const Color(0xFF7A7288);
-    final valueC = accent && isOnTarget
-        ? const Color(0xFF00BFA5)
-        : (isDark ? const Color(0xFFEDE7F6) : const Color(0xFF120B24));
-    final iconC = accent
-        ? (isOnTarget ? const Color(0xFF00BFA5) : const Color(0xFF4B30A1))
-        : const Color(0xFF4B30A1);
-
-    return Container(
-      padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
-      decoration: BoxDecoration(
-        color: cardBg,
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        border: Border.all(
-          color: accent && isOnTarget
-              ? const Color(0xFF00BFA5).withValues(alpha: 0.5)
-              : borderC,
+    return Row(
+      children: [
+        Expanded(
+          child: CompassInfoTile(
+            icon: Icons.place_rounded,
+            label: l10n.compassQiblaBearingLabel,
+            value: '${qiblaDegrees.toStringAsFixed(0)}°',
+            detail: isApiBearing
+                ? l10n.compassApiBearingSource
+                : l10n.compassCalculatedBearingSource,
+          ),
         ),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(icon, size: 18, color: iconC),
-          const SizedBox(height: 8),
-          SizedBox(
-            height: 24,
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              alignment: Alignment.centerLeft,
-              child: Text(
-                value,
-                style: text.compassInfoValue.copyWith(
-                  color: valueC,
-                  letterSpacing: -0.3,
-                ),
-              ),
-            ),
+        const SizedBox(width: AppSpacing.md),
+        Expanded(
+          child: CompassInfoTile(
+            icon: isLive ? Icons.explore_rounded : Icons.explore_off_rounded,
+            label: l10n.compassHeadingLabel,
+            value: isLive
+                ? '${heading.toStringAsFixed(0)}°'
+                : l10n.compassNotAvailableShort,
+            detail: isLive ? l10n.compassLiveMode : l10n.compassNorthUpMode,
           ),
-          const SizedBox(height: 2),
-          Text(
-            label,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: text.compassInfoLabel.copyWith(
-              color: labelC,
-              letterSpacing: 0.3,
-            ),
-          ),
-          if (accent) ...[
-            const SizedBox(height: 6),
-            Row(
-              children: [
-                Container(
-                  width: 5,
-                  height: 5,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: isOnTarget
-                        ? const Color(0xFF00BFA5)
-                        : const Color(0xFF4B30A1),
-                  ),
-                ),
-                const SizedBox(width: 4),
-                Expanded(
-                  child: Text(
-                    isOnTarget
-                        ? l10n.compassFacingMeccaLabel
-                        : l10n.compassRotateToAlignLabel,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: text.compassInfoAction.copyWith(
-                      color: isOnTarget
-                          ? const Color(0xFF00BFA5)
-                          : const Color(0xFF7E57C2),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
