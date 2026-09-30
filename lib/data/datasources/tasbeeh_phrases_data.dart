@@ -19,6 +19,6 @@ const builtInTasbeehPhrases = [
   TasbeehPhrase(
     id: 'laIlahaIllallah',
     builtInKey: TasbeehPhraseKey.laIlahaIllallah,
-    arabic: 'لَا إِلَٰهَ إِلَّا اللَّهُ',
+    arabic: 'لَآ إِلَٰهَ إِلَّا اللَّهُ',
   ),
 ];

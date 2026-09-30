@@ -489,7 +489,7 @@ class DuahData {
         DuahItem(
           title: 'Entering the washroom',
           arabic:
-              'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ',
+              'اللَّهُمَّ إِنِّيٓ أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ',
           pronunciation:
               'Allāhumma innī aʿūdhu bika minal-khubuthi wal-khabāʾith',
           translation: 'O Allah, I seek refuge in You from evil.',
@@ -544,7 +544,7 @@ class DuahData {
         ),
         DuahItem(
           title: 'There is no god but Allah',
-          arabic: 'لَا إِلٰهَ إِلَّا اللَّهُ',
+          arabic: 'لَآ إِلٰهَ إِلَّا اللَّهُ',
           pronunciation: 'Lā ilāha illallāh',
           translation: 'There is no god but Allah.',
         ),
@@ -576,7 +576,7 @@ class DuahData {
       items: [
         DuahItem(
           title: 'Reassuring someone who is ill',
-          arabic: 'لَا بَأْسَ طَهُورٌ إِنْ شَاءَ اللَّهُ',
+          arabic: 'لَا بَأْسَ طَهُورٌ إِنْ شَآءَ اللَّهُ',
           pronunciation: 'Lā baʾsa, ṭahūrun in shāʾallāh',
           translation:
               'Do not be troubled; may this be a purification, if Allah wills.',
@@ -609,7 +609,7 @@ class DuahData {
         DuahItem(
           title: 'After eating',
           arabic:
-              'الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ',
+              'الْحَمْدُ لِلَّهِ الَّذِيٓ أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ',
           pronunciation:
               'Alhamdu lillāhi alladhī aṭʿamanī hādhā wa razaqanīhi min ghayri ḥawlin minnī wa lā quwwah',
           translation:
@@ -660,7 +660,7 @@ class DuahData {
         DuahItem(
           title: 'Entering washroom',
           arabic:
-              'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ',
+              'اللَّهُمَّ إِنِّيٓ أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ',
           pronunciation:
               'Allāhumma innī aʿūdhu bika minal-khubuthi wal-khabāʾith',
           translation:
@@ -687,7 +687,7 @@ class DuahData {
         DuahItem(
           title: 'After waking',
           arabic:
-              'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ',
+              'الْحَمْدُ لِلَّهِ الَّذِيٓ أَحْيَانَا بَعْدَ مَآ أَمَاتَنَا وَإِلَيْهِ النُّشُورُ',
           pronunciation:
               'Alhamdu lillāhi alladhī aḥyānā baʿda mā amātanā wa ilayhin-nushūr',
           translation:
@@ -708,7 +708,7 @@ class DuahData {
         DuahItem(
           title: 'After wudū\'',
           arabic:
-              'أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ',
+              'أَشْهَدُ أَنْ لَآ إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ',
           pronunciation:
               'Ashhadu an lā ilāha illallāhu waḥdahu lā sharīka lah, wa ashhadu anna Muḥammadan ʿabduhu wa rasūluh',
           translation:
@@ -722,13 +722,13 @@ class DuahData {
       items: [
         DuahItem(
           title: 'Entering masjid',
-          arabic: 'اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ',
+          arabic: 'اللَّهُمَّ افْتَحْ لِيٓ أَبْوَابَ رَحْمَتِكَ',
           pronunciation: 'Allāhumma iftaḥ lī abwāba raḥmatik',
           translation: 'O Allah, open for me the doors of Your mercy.',
         ),
         DuahItem(
           title: 'Leaving masjid',
-          arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ',
+          arabic: 'اللَّهُمَّ إِنِّيٓ أَسْأَلُكَ مِنْ فَضْلِكَ',
           pronunciation: 'Allāhumma innī as\'aluka min faḍlik',
           translation: 'O Allah, I ask You from Your bounty.',
         ),
@@ -758,7 +758,7 @@ class DuahData {
         ),
         DuahItem(
           title: 'There is no god but Allah',
-          arabic: 'لَا إِلٰهَ إِلَّا اللَّهُ',
+          arabic: 'لَآ إِلٰهَ إِلَّا اللَّهُ',
           pronunciation: 'Lā ilāha illallāh',
           translation: 'There is no god but Allah.',
         ),
@@ -815,7 +815,7 @@ class DuahData {
       items: [
         DuahItem(
           title: 'Reassuring someone who is ill',
-          arabic: 'لَا بَأْسَ طَهُورٌ إِنْ شَاءَ اللَّهُ',
+          arabic: 'لَا بَأْسَ طَهُورٌ إِنْ شَآءَ اللَّهُ',
           pronunciation: 'Lā baʾsa, ṭahūrun in shāʾallāh',
           translation:
               'Do not be troubled; may this be a purification, if Allah wills.',
@@ -864,7 +864,7 @@ class DuahData {
         DuahItem(
           title: 'After eating',
           arabic:
-              'الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ',
+              'الْحَمْدُ لِلَّهِ الَّذِيٓ أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ',
           pronunciation:
               'Alhamdu lillāhi alladhī aṭʿamanī hādhā wa razaqanīhi min ghayri ḥawlin minnī wa lā quwwah',
           translation:
@@ -915,7 +915,7 @@ class DuahData {
         DuahItem(
           title: 'Entering washroom',
           arabic:
-              'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ',
+              'اللَّهُمَّ إِنِّيٓ أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ',
           pronunciation:
               'Allāhumma innī aʿūdhu bika minal-khubuthi wal-khabāʾith',
           translation:
@@ -942,7 +942,7 @@ class DuahData {
         DuahItem(
           title: 'After waking',
           arabic:
-              'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ',
+              'الْحَمْدُ لِلَّهِ الَّذِيٓ أَحْيَانَا بَعْدَ مَآ أَمَاتَنَا وَإِلَيْهِ النُّشُورُ',
           pronunciation:
               'Alhamdu lillāhi alladhī aḥyānā baʿda mā amātanā wa ilayhin-nushūr',
           translation:
@@ -963,7 +963,7 @@ class DuahData {
         DuahItem(
           title: 'After wudū\'',
           arabic:
-              'أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ',
+              'أَشْهَدُ أَنْ لَآ إِلٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ',
           pronunciation:
               'Ashhadu an lā ilāha illallāhu waḥdahu lā sharīka lah, wa ashhadu anna Muḥammadan ʿabduhu wa rasūluh',
           translation:
@@ -988,13 +988,13 @@ class DuahData {
       items: [
         DuahItem(
           title: 'Entering masjid',
-          arabic: 'اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ',
+          arabic: 'اللَّهُمَّ افْتَحْ لِيٓ أَبْوَابَ رَحْمَتِكَ',
           pronunciation: 'Allāhumma iftaḥ lī abwāba raḥmatik',
           translation: 'O Allah, open for me the doors of Your mercy.',
         ),
         DuahItem(
           title: 'Leaving masjid',
-          arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ',
+          arabic: 'اللَّهُمَّ إِنِّيٓ أَسْأَلُكَ مِنْ فَضْلِكَ',
           pronunciation: 'Allāhumma innī as\'aluka min faḍlik',
           translation: 'O Allah, I ask You from Your bounty.',
         ),
@@ -1031,7 +1031,7 @@ class DuahData {
         DuahItem(
           title: 'When worried or in difficulty',
           arabic:
-              'حَسْبِيَ اللَّهُ لَا إِلٰهَ إِلَّا هُوَ، عَلَيْهِ تَوَكَّلْتُ، وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',
+              'حَسْبِيَ اللَّهُ لَآ إِلٰهَ إِلَّا هُوَ، عَلَيْهِ تَوَكَّلْتُ، وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',
           pronunciation:
               'Ḥasbiyallāhu lā ilāha illā huwa, ʿalayhi tawakkaltu, wa huwa rabbul-ʿarshil-ʿaẓīm',
           translation:
@@ -1063,7 +1063,7 @@ class DuahData {
         ),
         DuahItem(
           title: 'There is no god but Allah',
-          arabic: 'لَا إِلٰهَ إِلَّا اللَّهُ',
+          arabic: 'لَآ إِلٰهَ إِلَّا اللَّهُ',
           pronunciation: 'Lā ilāha illallāh',
           translation: 'There is no god but Allah.',
         ),
@@ -1121,7 +1121,7 @@ class DuahData {
         DuahItem(
           title: 'Asking Allah for healing',
           arabic:
-              'اللَّهُمَّ رَبَّ النَّاسِ أَذْهِبِ الْبَاسَ، اشْفِهِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا',
+              'اللَّهُمَّ رَبَّ النَّاسِ أَذْهِبِ الْبَاسَ، اشْفِهِ وَأَنْتَ الشَّافِي، لَا شِفَآءَ إِلَّا شِفَآؤُكَ، شِفَآءً لَا يُغَادِرُ سَقَمًا',
           pronunciation:
               'Allāhumma rabban-nāsi adh-hibil-baʾsa, ishfihi wa antash-Shāfī, lā shifāʾa illā shifāʾuka, shifāʾan lā yughādiru saqamā',
           translation:
@@ -1131,7 +1131,7 @@ class DuahData {
         ),
         DuahItem(
           title: 'Reassuring someone who is ill',
-          arabic: 'لَا بَأْسَ طَهُورٌ إِنْ شَاءَ اللَّهُ',
+          arabic: 'لَا بَأْسَ طَهُورٌ إِنْ شَآءَ اللَّهُ',
           pronunciation: 'Lā baʾsa, ṭahūrun in shāʾallāh',
           translation:
               'Do not be troubled; may this be a purification, if Allah wills.',

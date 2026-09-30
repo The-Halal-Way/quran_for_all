@@ -2780,7 +2780,7 @@ abstract class AppLocalizations {
   /// No description provided for @sunnahRecitationWakeArabic.
   ///
   /// In en, this message translates to:
-  /// **'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ'**
+  /// **'الْحَمْدُ لِلَّهِ الَّذِيٓ أَحْيَانَا بَعْدَ مَآ أَمَاتَنَا وَإِلَيْهِ النُّشُورُ'**
   String get sunnahRecitationWakeArabic;
 
   /// No description provided for @sunnahRecitationWakePronunciation.
@@ -2798,7 +2798,7 @@ abstract class AppLocalizations {
   /// No description provided for @sunnahRecitationWashroomArabic.
   ///
   /// In en, this message translates to:
-  /// **'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ\n\nغُفْرَانَكَ'**
+  /// **'اللَّهُمَّ إِنِّيٓ أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ\n\nغُفْرَانَكَ'**
   String get sunnahRecitationWashroomArabic;
 
   /// No description provided for @sunnahRecitationWashroomPronunciation.
@@ -2816,7 +2816,7 @@ abstract class AppLocalizations {
   /// No description provided for @sunnahRecitationWuduArabic.
   ///
   /// In en, this message translates to:
-  /// **'أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ'**
+  /// **'أَشْهَدُ أَنْ لَآ إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ'**
   String get sunnahRecitationWuduArabic;
 
   /// No description provided for @sunnahRecitationWuduPronunciation.
@@ -2834,7 +2834,7 @@ abstract class AppLocalizations {
   /// No description provided for @sunnahRecitationMasjidArabic.
   ///
   /// In en, this message translates to:
-  /// **'اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ\n\nاللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ'**
+  /// **'اللَّهُمَّ افْتَحْ لِيٓ أَبْوَابَ رَحْمَتِكَ\n\nاللَّهُمَّ إِنِّيٓ أَسْأَلُكَ مِنْ فَضْلِكَ'**
   String get sunnahRecitationMasjidArabic;
 
   /// No description provided for @sunnahRecitationMasjidPronunciation.
@@ -2960,7 +2960,7 @@ abstract class AppLocalizations {
   /// No description provided for @sunnahRecitationDifficultyArabic.
   ///
   /// In en, this message translates to:
-  /// **'لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ'**
+  /// **'لَآ إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ'**
   String get sunnahRecitationDifficultyArabic;
 
   /// No description provided for @sunnahRecitationDifficultyPronunciation.
@@ -2996,7 +2996,7 @@ abstract class AppLocalizations {
   /// No description provided for @sunnahRecitationGratitudeArabic.
   ///
   /// In en, this message translates to:
-  /// **'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ'**
+  /// **'رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًۭا تَرْضَىٰهُ وَأَدْخِلْنِى بِرَحْمَتِكَ فِى عِبَادِكَ ٱلصَّٰلِحِينَ'**
   String get sunnahRecitationGratitudeArabic;
 
   /// No description provided for @sunnahRecitationGratitudePronunciation.

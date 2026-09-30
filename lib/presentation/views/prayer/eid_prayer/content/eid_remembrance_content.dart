@@ -1,7 +1,7 @@
 import '../eid_prayer_models.dart';
 
 const eidTakbeer =
-    'اللَّهُ أَكْبَرُ\nاللَّهُ أَكْبَرُ\nلَا إِلَهَ إِلَّا اللَّهُ\nوَاللَّهُ أَكْبَرُ\nاللَّهُ أَكْبَرُ\nوَلِلَّهِ الْحَمْدُ';
+    'اللَّهُ أَكْبَرُ\nاللَّهُ أَكْبَرُ\nلَآ إِلَهَ إِلَّا اللَّهُ\nوَاللَّهُ أَكْبَرُ\nاللَّهُ أَكْبَرُ\nوَلِلَّهِ الْحَمْدُ';
 
 List<EidSection> remembranceSectionsFor(EidKind eid) => [
   EidSection(
@@ -92,7 +92,7 @@ const eidDuasSection = EidSection(
   entries: [
     EidEntry(
       title: EidText('Ask for acceptance', 'কবুলের দোয়া'),
-      arabic: 'رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ',
+      arabic: 'رَبَّنَا تَقَبَّلْ مِنَّآ إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلْعَلِيمُ',
       pronunciation: EidText(
         'Rabbanā taqabbal minnā, innaka antas-samīʿul-ʿalīm.',
         'রব্বানা তাকাব্বাল মিন্না, ইন্নাকা আনতাস-সামীউল আলীম।',
@@ -109,7 +109,7 @@ const eidDuasSection = EidSection(
     ),
     EidEntry(
       title: EidText('Give thanks', 'কৃতজ্ঞতার দোয়া'),
-      arabic: 'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ',
+      arabic: 'رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ',
       pronunciation: EidText(
         'Rabbi awziʿnī an ashkura niʿmataka.',
         'রব্বি আওযিইনী আন আশকুরা নিইমাতাকা।',

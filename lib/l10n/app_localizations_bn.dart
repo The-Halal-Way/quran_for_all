@@ -1380,7 +1380,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineFastingSource => 'সহিহ বুখারি ১৯২৩, ১৯৫৭; সহিহ মুসলিম ১১৬২, ১১৬৪; সহিহ বুখারি ১৮৯৪';
 
   @override
-  String get sunnahRecitationWakeArabic => 'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ';
+  String get sunnahRecitationWakeArabic => 'الْحَمْدُ لِلَّهِ الَّذِيٓ أَحْيَانَا بَعْدَ مَآ أَمَاتَنَا وَإِلَيْهِ النُّشُورُ';
 
   @override
   String get sunnahRecitationWakePronunciation => 'আলহামদু লিল্লাহিল্লাজি আহইয়ানা বা\'দা মা আমাতানা ওয়া ইলাইহিন নুশুর।';
@@ -1389,7 +1389,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRecitationWakeTranslation => 'সমস্ত প্রশংসা আল্লাহর, যিনি আমাদের মৃত্যুর পর জীবন দিয়েছেন; তাঁর কাছেই পুনরুত্থান।';
 
   @override
-  String get sunnahRecitationWashroomArabic => 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ\n\nغُفْرَانَكَ';
+  String get sunnahRecitationWashroomArabic => 'اللَّهُمَّ إِنِّيٓ أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ\n\nغُفْرَانَكَ';
 
   @override
   String get sunnahRecitationWashroomPronunciation => 'প্রবেশের আগে: আল্লাহুম্মা ইন্নি আউজু বিকা মিনাল খুবুছি ওয়াল খাবাইছ।\nবের হয়ে: গুফরানাক।';
@@ -1398,7 +1398,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRecitationWashroomTranslation => 'প্রবেশের আগে: হে আল্লাহ, আমি আপনার কাছে পুরুষ ও নারী শয়তান থেকে আশ্রয় চাই।\nবের হয়ে: আমি আপনার ক্ষমা চাই।';
 
   @override
-  String get sunnahRecitationWuduArabic => 'أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ';
+  String get sunnahRecitationWuduArabic => 'أَشْهَدُ أَنْ لَآ إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ';
 
   @override
   String get sunnahRecitationWuduPronunciation => 'আশহাদু আল্লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু, ওয়া আশহাদু আন্না মুহাম্মাদান আবদুহু ওয়া রাসুলুহু।';
@@ -1407,7 +1407,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRecitationWuduTranslation => 'আমি সাক্ষ্য দিচ্ছি, এক আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই, তাঁর শরিক নেই; মুহাম্মাদ তাঁর বান্দা ও রাসুল।';
 
   @override
-  String get sunnahRecitationMasjidArabic => 'اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ\n\nاللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ';
+  String get sunnahRecitationMasjidArabic => 'اللَّهُمَّ افْتَحْ لِيٓ أَبْوَابَ رَحْمَتِكَ\n\nاللَّهُمَّ إِنِّيٓ أَسْأَلُكَ مِنْ فَضْلِكَ';
 
   @override
   String get sunnahRecitationMasjidPronunciation => 'প্রবেশে: আল্লাহুম্মাফতাহ লি আবওয়াবা রহমাতিক।\nবের হতে: আল্লাহুম্মা ইন্নি আসআলুকা মিন ফাদলিক।';
@@ -1470,7 +1470,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRecitationForgivenessTranslation => 'আমি আল্লাহর কাছে ক্ষমা চাই।';
 
   @override
-  String get sunnahRecitationDifficultyArabic => 'لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ';
+  String get sunnahRecitationDifficultyArabic => 'لَآ إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ';
 
   @override
   String get sunnahRecitationDifficultyPronunciation => 'লা ইলাহা ইল্লাল্লাহুল আযিমুল হালিম। লা ইলাহা ইল্লাল্লাহু রব্বুল আরশিল আযিম। লা ইলাহা ইল্লাল্লাহু রব্বুস সামাওয়াতি ওয়া রব্বুল আরদি ওয়া রব্বুল আরশিল কারিম।';
@@ -1488,7 +1488,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRecitationRemembranceTranslation => 'আল্লাহ পবিত্র; সমস্ত প্রশংসা তাঁর।';
 
   @override
-  String get sunnahRecitationGratitudeArabic => 'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ';
+  String get sunnahRecitationGratitudeArabic => 'رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًۭا تَرْضَىٰهُ وَأَدْخِلْنِى بِرَحْمَتِكَ فِى عِبَادِكَ ٱلصَّٰلِحِينَ';
 
   @override
   String get sunnahRecitationGratitudePronunciation => 'রব্বি আওযি\'নি আন আশকুরা নি\'মাতাকাল্লাতি আন\'আমতা আলাইয়্যা ওয়া আলা ওয়ালিদাইয়্যা ওয়া আন আ\'মালা সালিহান তারদাহু ওয়া আদখিলনি বিরহমাতিকা ফি ইবাদিকাস সালিহিন।';

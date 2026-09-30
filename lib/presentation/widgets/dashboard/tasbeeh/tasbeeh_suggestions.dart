@@ -43,7 +43,7 @@ List<TasbeehSuggestion> tasbeehSuggestions(AppLocalizations l10n) => [
     name: l10n.tasbeehSuggestionLaIlahaIllaAnta,
     // Quran 21:87.
     arabic:
-        'لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',
+        'لَآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ',
     meaning: l10n.tasbeehMeaningLaIlahaIllaAnta,
   ),
   (
@@ -61,20 +61,20 @@ List<TasbeehSuggestion> tasbeehSuggestions(AppLocalizations l10n) => [
     name: l10n.tasbeehSuggestionTahlil,
     // Sahih al-Bukhari 3293.
     arabic:
-        'لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
+        'لَآ إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
     meaning: l10n.tasbeehMeaningTahlil,
   ),
   (
     name: l10n.tasbeehSuggestionRabbanaAtina,
     // Quran 2:201.
     arabic:
-        'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',
+        'رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةًۭ وَفِى ٱلْءَاخِرَةِ حَسَنَةًۭ وَقِنَا عَذَابَ ٱلنَّارِ',
     meaning: l10n.tasbeehMeaningRabbanaAtina,
   ),
   (
     name: l10n.tasbeehSuggestionRabbiInni,
     // Quran 28:24.
-    arabic: 'رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ',
+    arabic: 'رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍۢ فَقِيرٌۭ',
     meaning: l10n.tasbeehMeaningRabbiInni,
   ),
   (

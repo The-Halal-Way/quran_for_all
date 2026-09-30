@@ -1,4 +1,5 @@
 import '../../../../domain/entities/sunnah_dua/sunnah_dua_content.dart';
+import 'quran_recitation_arabic.dart';
 import 'surah_al_kahf_first_ten_arabic.dart';
 
 const List<SunnahDuaContent> sunnahCollectionContentEn = [
@@ -48,7 +49,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
     source: 'Sahih al-Bukhari 6346',
     kind: SunnahDuaKind.dua,
     arabic:
-        'لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ',
+        'لَآ إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ',
     pronunciation:
         'Lā ilāha illallāhul-ʿAẓīmul-Ḥalīm, lā ilāha illallāhu rabbul-ʿarshil-ʿaẓīm, lā ilāha illallāhu rabbus-samāwāti wa rabbul-arḍi wa rabbul-ʿarshil-karīm',
     translation:
@@ -66,8 +67,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
         'This is the supplication of Sulayman from Quran 27:19. The Arabic is the supplication portion of the verse.',
     source: 'Quran 27:19',
     kind: SunnahDuaKind.dua,
-    arabic:
-        'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ',
+    arabic: sulaymanGratitudeArabic,
     pronunciation:
         'Rabbi awziʿnī an ashkura niʿmatakallatī anʿamta ʿalayya wa ʿalā wālidayya wa an aʿmala ṣāliḥan tarḍāhu wa adkhilnī biraḥmatika fī ʿibādikaṣ-ṣāliḥīn',
     translation:
@@ -103,7 +103,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
     source: 'Sahih Muslim 597a',
     kind: SunnahDuaKind.dhikr,
     arabic:
-        'سُبْحَانَ اللَّهِ\nالْحَمْدُ لِلَّهِ\nاللَّهُ أَكْبَرُ\nلَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
+        'سُبْحَانَ اللَّهِ\nالْحَمْدُ لِلَّهِ\nاللَّهُ أَكْبَرُ\nلَآ إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
     pronunciation:
         'Subḥānallāh.\nAlḥamdulillāh.\nAllāhu akbar.\nLā ilāha illallāhu waḥdahu lā sharīka lah, lahul-mulku wa lahul-ḥamdu wa huwa ʿalā kulli shayʾin qadīr.',
     translation:
@@ -122,7 +122,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
     source: 'Sahih al-Bukhari 6357; Sahih Muslim 408',
     kind: SunnahDuaKind.dhikr,
     arabic:
-        'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ',
+        'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَىٰٓ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰٓ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَىٰٓ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰٓ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ',
     pronunciation:
         'Allāhumma ṣalli ʿalā Muḥammadin wa ʿalā āli Muḥammadin, kamā ṣallayta ʿalā āli Ibrāhīma, innaka Ḥamīdun Majīd. Allāhumma bārik ʿalā Muḥammadin wa ʿalā āli Muḥammadin, kamā bārakta ʿalā āli Ibrāhīma, innaka Ḥamīdun Majīd.',
     translation:
@@ -153,7 +153,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
     source: 'Sahih Muslim 918a',
     kind: SunnahDuaKind.dua,
     arabic:
-        'إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا',
+        'إِنَّا لِلَّهِ وَإِنَّآ إِلَيْهِ رَٰجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا',
     pronunciation:
         'Innā lillāhi wa innā ilayhi rājiʿūn. Allāhummaʾjurnī fī muṣībatī wa akhlif lī khayran minhā.',
     translation:
@@ -171,7 +171,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
     source: 'Sunan Ibn Majah 925; sahih (Darussalam)',
     kind: SunnahDuaKind.dua,
     arabic:
-        'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا',
+        'اللَّهُمَّ إِنِّيٓ أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا',
     pronunciation:
         'Allāhumma innī asʾaluka ʿilman nāfiʿan wa rizqan ṭayyiban wa ʿamalan mutaqabbalā',
     translation:
@@ -189,7 +189,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
     source: 'Jami at-Tirmidhi 3433; sahih (Darussalam)',
     kind: SunnahDuaKind.dua,
     arabic:
-        'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ',
+        'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ أَشْهَدُ أَنْ لَآ إِلَهَ إِلَّآ أَنْتَ أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ',
     pronunciation:
         'Subḥānaka Allāhumma wa biḥamdika, ashhadu an lā ilāha illā anta, astaghfiruka wa atūbu ilayk',
     translation:
@@ -221,8 +221,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
         'Recite before sleeping. A separate narration also mentions reciting it after each obligatory prayer.',
     source: 'Surah Al-Baqarah 2:255',
     kind: SunnahDuaKind.quranAyah,
-    arabic:
-        'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ\nلَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ\nلَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ\nمَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ\nيَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ\nوَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ\nوَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ\nوَلَا يَئُودُهُ حِفْظُهُمَا ۚ\nوَهُوَ الْعَلِيُّ الْعَظِيمُ',
+    arabic: ayatulKursiArabic,
     pronunciation:
         "Allahu la ilaha illa huwa al-hayyul qayyum. La ta'khudhuhu sinatuw wala nawm. Lahu ma fis-samawati wa ma fil-ard. Man dhal-ladhi yashfa'u indahu illa bi idhnih. Ya'lamu ma baina aidihim wa ma khalfahum. Wa la yuhituna bishai'im min ilmihi illa bima sha'. Wasi'a kursiyyuhus-samawati wal-ard. Wa la ya'uduhu hifdhuhuma. Wa huwal aliyyul azeem.",
     translation:
@@ -276,8 +275,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
     practice: 'Recite during the night.',
     source: 'Surah Al-Baqarah 2:285–286',
     kind: SunnahDuaKind.quranAyah,
-    arabic:
-        'آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ ۚ\nكُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ ۚ\nلَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ ۚ\nوَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ\nغُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ\n\nلَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ\nلَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ\nرَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ\nرَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ\nرَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ\nوَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ\nأَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',
+    arabic: lastTwoAyahAlBaqarahArabic,
     pronunciation:
         "Āmana r-rasūlu bimā unzila ilayhi mir rabbihi wal-mu'minūn. Kullun āmana billāhi wa malā'ikatihi wa kutubihi wa rusulih. Lā nufarriqu bayna aḥadim mir rusulih. Wa qālū sami'nā wa aṭa'nā; ghufrānaka rabbanā wa ilaykal-maṣīr.\n\nLā yukallifullāhu nafsan illā wus'ahā. Lahā mā kasabat wa 'alayhā maktasabat. Rabbanā lā tu'ākhidhnā in nasīnā aw akhṭa'nā. Rabbanā wa lā taḥmil 'alaynā iṣran kamā ḥamaltahu 'alal-ladhīna min qablinā. Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih. Wa'fu 'annā waghfir lanā warḥamnā. Anta mawlānā fanṣurnā 'alal-qawmil-kāfirīn.",
     translation:
@@ -308,8 +306,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
         'Recite for Quranic reflection. Do not attach a guaranteed morning or evening reward to this practice.',
     source: 'Surah Al-Hashr 59:22–24',
     kind: SunnahDuaKind.quranAyah,
-    arabic:
-        'هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ ۖ\nعَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ\nهُوَ الرَّحْمَٰنُ الرَّحِيمُ\n\nهُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ\nالْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ\nسُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ\n\nهُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ\nلَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ\nيُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ\nوَهُوَ الْعَزِيزُ الْحَكِيمُ',
+    arabic: lastThreeAyahAlHashrArabic,
     pronunciation:
         "Huwa Allāhulladhī lā ilāha illā huwa, 'ālimul-ghaybi wash-shahādah, huwar-raḥmānur-raḥīm.\n\nHuwa Allāhulladhī lā ilāha illā huwa, al-malikul-quddūsus-salāmul-mu'minul-muhayminul-'azīzul-jabbārul-mutakabbir. Subḥānallāhi 'ammā yushrikūn.\n\nHuwa Allāhul-khāliqul-bāri'ul-muṣawwir, lahul-asmā'ul-ḥusnā. Yusabbiḥu lahū mā fis-samāwāti wal-arḍ, wa huwal-'azīzul-ḥakīm.",
     translation:
@@ -348,8 +345,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
         'Recite for reflection when seeking patience, relief and stronger trust in Allah.',
     source: 'Surah At-Talaq 65:2–3 (excerpt)',
     kind: SunnahDuaKind.quranAyah,
-    arabic:
-        'وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا\n\nوَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ ۚ\nوَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ ۚ\nإِنَّ اللَّهَ بَالِغُ أَمْرِهِ ۚ\nقَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا',
+    arabic: surahTalaqAyahTwoThreeArabic,
     pronunciation:
         "Wa may-yattaqillāha yaj'al lahū makhrajā.\n\nWa yarzuqhu min ḥaythu lā yaḥtasib. Wa may-yatawakkal 'alallāhi fahuwa ḥasbuh. Innallāha bālighu amrih. Qad ja'alallāhu likulli shay'in qadrā.",
     translation:
@@ -372,8 +368,7 @@ const List<SunnahDuaContent> sunnahCollectionContentEn = [
     practice: 'Recite for reflection, gratitude and strengthening faith.',
     source: 'Surah Aal-Imran 3:26–27',
     kind: SunnahDuaKind.quranAyah,
-    arabic:
-        'قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ\nتُؤْتِي الْمُلْكَ مَن تَشَاءُ\nوَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ\nوَتُعِزُّ مَن تَشَاءُ\nوَتُذِلُّ مَن تَشَاءُ ۖ\nبِيَدِكَ الْخَيْرُ ۖ\nإِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ\n\nتُولِجُ اللَّيْلَ فِي النَّهَارِ\nوَتُولِجُ النَّهَارَ فِي اللَّيْلِ ۖ\nوَتُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ\nوَتُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ ۖ\nوَتَرْزُقُ مَن تَشَاءُ بِغَيْرِ حِسَابٍ',
+    arabic: aalImranAyahTwentySixTwentySevenArabic,
     pronunciation:
         "Qulillāhumma mālikal-mulki tu'til-mulka man tashā'u wa tanzi'ul-mulka mimman tashā'u, wa tu'izzu man tashā'u wa tudhillu man tashā'. Biyadikal-khayr. Innaka 'alā kulli shay'in qadīr.\n\nTūlijul-layla fin-nahāri wa tūlijun-nahāra fil-layl. Wa tukhrijul-ḥayya minal-mayyiti wa tukhrijul-mayyita minal-ḥayy. Wa tarzuqu man tashā'u bighayri ḥisāb.",
     translation:

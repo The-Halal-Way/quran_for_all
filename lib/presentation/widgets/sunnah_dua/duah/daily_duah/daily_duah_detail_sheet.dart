@@ -108,7 +108,7 @@ class _DailyDuahDetailSheetState extends State<DailyDuahDetailSheet> {
                 item.arabic,
                 textAlign: TextAlign.right,
                 textDirection: ui.TextDirection.rtl,
-                style: text.headlineMedium.copyWith(height: 1.8),
+                style: AppTheme.amiri(context, fontSize: 30, height: 1.8),
               ),
             ),
             const SizedBox(height: AppSpacing.lg),

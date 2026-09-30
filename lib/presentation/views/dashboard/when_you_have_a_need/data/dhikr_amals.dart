@@ -25,7 +25,7 @@ const dhikrAmals = <NeedAmal>[
       ),
     ],
     arabic:
-        'أَسْتَغْفِرُ اللَّهَ\n\nاللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ',
+        'أَسْتَغْفِرُ اللَّهَ\n\nاللَّهُمَّ أَنْتَ رَبِّي لَآ إِلَٰهَ إِلَّآ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوٓءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوٓءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّآ أَنْتَ',
     transliteration:
         'Astaghfirullah.\n\nAllahumma anta Rabbi, la ilaha illa anta, khalaqtani wa ana ʿabduka, wa ana ʿala ʿahdika wa waʿdika mastataʿtu. Aʿudhu bika min sharri ma sanaʿtu. Abu’u laka biniʿmatika ʿalayya, wa abu’u laka bidhanbi, faghfir li, fa innahu la yaghfirudh-dhunuba illa anta.',
     meaning: NeedText(

@@ -25,7 +25,7 @@ const duaAmals = <NeedAmal>[
       ),
     ],
     arabic:
-        'لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ',
+        'لَآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ',
     transliteration: 'La ilaha illa anta, subhanaka, inni kuntu minaz-zalimin.',
     meaning: NeedText(
       'There is no god but You. Glory be to You. I was indeed among the wrongdoers.',

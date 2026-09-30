@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_icon_grid_section.dart';
 import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart';
@@ -128,10 +129,52 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.byType(SunnahDuaDetailSheet), findsOneWidget);
+    final arabic = tester.widget<SelectableText>(find.byType(SelectableText));
+    expect(arabic.data, contains('لَآ'));
+    expect(
+      arabic.style?.fontFamily,
+      AppTheme.quranArabic(
+        tester.element(find.byType(SunnahDuaDetailSheet)),
+      ).fontFamily,
+    );
     expect(find.text('Pronunciation'), findsOneWidget);
     expect(find.text('Benefits & reflection'), findsOneWidget);
     expect(find.text('Evidence'), findsOneWidget);
     expect(find.text('Authenticity note'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('More and routine details show Madd with the Arabic font', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(390, 844));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(const _TestApp());
+    await tester.pumpAndSettle();
+
+    await tester.ensureVisible(find.text('In difficulty'));
+    await tester.tap(find.text('In difficulty'));
+    await tester.pumpAndSettle();
+    final moreArabic = tester.widget<SelectableText>(
+      find.byType(SelectableText),
+    );
+    expect(moreArabic.data, contains('لَآ إِلَهَ'));
+    expect(
+      moreArabic.style?.fontFamily,
+      AppTheme.quranArabic(
+        tester.element(find.byType(SunnahDuaDetailSheet)),
+      ).fontFamily,
+    );
+
+    Navigator.of(tester.element(find.byType(SunnahDuaDetailSheet))).pop();
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.text('Wake up'));
+    await tester.tap(find.text('Wake up'));
+    await tester.pumpAndSettle();
+    final routineArabic = tester.widget<SelectableText>(
+      find.byType(SelectableText),
+    );
+    expect(routineArabic.data, contains('مَآ أَمَاتَنَا'));
     expect(tester.takeException(), isNull);
   });
 

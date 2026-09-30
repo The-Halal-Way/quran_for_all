@@ -66,7 +66,8 @@ class SunnahDuaDetailSheet extends StatelessWidget {
                   item.arabic,
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.right,
-                  style: text.duahCardArabic.copyWith(
+                  style: text.quranArabic.copyWith(
+                    fontSize: text.duahCardArabic.fontSize,
                     color: colorScheme.onSurface,
                     letterSpacing: 0,
                   ),

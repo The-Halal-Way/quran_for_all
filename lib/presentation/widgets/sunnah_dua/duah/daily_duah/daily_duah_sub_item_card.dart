@@ -36,7 +36,7 @@ class DailyDuahSubItemCard extends StatelessWidget {
             item.arabic,
             textAlign: TextAlign.right,
             textDirection: ui.TextDirection.rtl,
-            style: AppTheme.text(context).titleLarge.copyWith(height: 1.7),
+            style: AppTheme.amiri(context, fontSize: 24, height: 1.7),
           ),
           const SizedBox(height: AppSpacing.sm),
           Text(

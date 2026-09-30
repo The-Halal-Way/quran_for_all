@@ -363,7 +363,7 @@ class SpecialPrayerViewModel extends ChangeNotifier {
               'প্রতি রাকাতের নির্ধারিত গণনার জায়গাগুলোতে এই বাক্যটি পড়ুন।',
             ),
             arabic:
-                'سُبْحَانَ اللّٰهِ وَالْحَمْدُ لِلّٰهِ وَلَا إِلٰهَ إِلَّا اللّٰهُ وَاللّٰهُ أَكْبَرُ',
+                'سُبْحَانَ اللّٰهِ وَالْحَمْدُ لِلّٰهِ وَلَآ إِلٰهَ إِلَّا اللّٰهُ وَاللّٰهُ أَكْبَرُ',
             pronunciation: _LocalizedText(
               'Subhanallahi wal hamdu lillahi wa la ilaha illallahu wallahu akbar',
               'সুবহানাল্লাহি ওয়াল হামদু লিল্লাহি ওয়া লা ইলাহা ইল্লাল্লাহু ওয়াল্লাহু আকবার',

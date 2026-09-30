@@ -76,10 +76,10 @@ class DailyDuahCard extends StatelessWidget {
                   textDirection: ui.TextDirection.rtl,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: text.titleLarge.copyWith(
-                    height: 1.7,
-                    fontWeight: AppTheme.weightSemiBold,
-                  ),
+                  style: AppTheme.amiri(
+                    context,
+                    fontSize: 24,
+                  ).copyWith(height: 1.7),
                 ),
                 const SizedBox(height: AppSpacing.sm),
                 Text(

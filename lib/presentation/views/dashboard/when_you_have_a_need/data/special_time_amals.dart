@@ -55,7 +55,7 @@ const specialTimeAmals = <NeedAmal>[
       ),
     ],
     arabic:
-        'اللَّهُمَّ إِنِّي أَسْأَلُكَ بِرَحْمَتِكَ الَّتِي وَسِعَتْ كُلَّ شَيْءٍ أَنْ تَغْفِرَ لِي',
+        'اللَّهُمَّ إِنِّيٓ أَسْأَلُكَ بِرَحْمَتِكَ الَّتِي وَسِعَتْ كُلَّ شَيْءٍ أَنْ تَغْفِرَ لِي',
     transliteration:
         'Allahumma inni as’aluka birahmatikal-lati wasiʿat kulla shay’in an taghfira li.',
     meaning: NeedText(
