@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
-import 'package:quran_for_all/core/theme/my_colors.dart';
+import 'package:quran_for_all/core/theme/app_theme_colors.dart';
 import 'tasbeeh_undo_button.dart';
 
 class TasbeehControls extends StatelessWidget {
@@ -26,7 +26,8 @@ class TasbeehControls extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
-    final foreground = isDark ? Colors.white : MyColors.textPrimary;
+    final colors = Theme.of(context).colorScheme;
+    final foreground = colors.onSurface;
 
     return Wrap(
       alignment: WrapAlignment.center,
@@ -40,7 +41,7 @@ class TasbeehControls extends StatelessWidget {
           label: Text(context.l10n.tasbeehReset),
           style: OutlinedButton.styleFrom(
             foregroundColor: foreground.withValues(alpha: 0.82),
-            side: BorderSide(color: foreground.withValues(alpha: 0.14)),
+            side: BorderSide(color: colors.outlineVariant),
             textStyle: text.labelMedium.copyWith(fontWeight: FontWeight.w800),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           ),
@@ -50,7 +51,9 @@ class TasbeehControls extends StatelessWidget {
           icon: const Icon(CupertinoIcons.trash, size: 18),
           label: Text(context.l10n.tasbeehResetAll),
           style: TextButton.styleFrom(
-            foregroundColor: MyColors.secondary,
+            foregroundColor: isDark
+                ? colors.secondary
+                : AppThemeColors.light.coral,
             textStyle: text.labelMedium.copyWith(fontWeight: FontWeight.w800),
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
           ),

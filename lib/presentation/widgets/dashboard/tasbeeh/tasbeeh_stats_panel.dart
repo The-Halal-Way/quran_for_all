@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
-import 'package:quran_for_all/core/theme/app_theme.dart';
+import 'package:quran_for_all/core/theme/app_theme_colors.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
+
+import 'tasbeeh_stats_divider.dart';
+import 'tasbeeh_stats_metric.dart';
 
 class TasbeehStatsPanel extends StatelessWidget {
   const TasbeehStatsPanel({
@@ -20,112 +23,61 @@ class TasbeehStatsPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final foreground = isDark ? Colors.white : MyColors.textPrimary;
+    final scheme = Theme.of(context).colorScheme;
+    final foreground = scheme.onSurface;
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: (isDark ? MyColors.darkCardFill : Colors.white).withValues(
-          alpha: isDark ? 0.86 : 0.92,
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: isDark
+              ? [scheme.surfaceContainerHigh, scheme.surfaceContainerLow]
+              : [
+                  AppThemeColors.light.surface,
+                  AppThemeColors.light.surfaceElevated,
+                ],
         ),
         borderRadius: BorderRadius.circular(AppRadius.lg),
-        border: Border.all(
-          color: (isDark ? Colors.white : MyColors.divider).withValues(
-            alpha: isDark ? 0.07 : 0.82,
-          ),
-        ),
+        border: Border.all(color: scheme.outlineVariant),
       ),
       child: Row(
         children: [
           Expanded(
-            child: _Metric(
+            child: TasbeehStatsMetric(
               label: context.l10n.tasbeehCurrent,
               value: '$currentCount',
-              color: MyColors.secondary,
+              color: isDark
+                  ? MyColors.secondaryLight
+                  : AppThemeColors.light.coral,
               foreground: foreground,
             ),
           ),
-          _Divider(isDark: isDark),
+          const TasbeehStatsDivider(),
           Expanded(
-            child: _Metric(
+            child: TasbeehStatsMetric(
               label: context.l10n.tasbeehTotal,
               value: '$totalCount',
-              color: MyColors.tertiary,
+              color: isDark
+                  ? MyColors.tertiaryLight
+                  : AppThemeColors.light.cyan,
               foreground: foreground,
             ),
           ),
-          _Divider(isDark: isDark),
+          const TasbeehStatsDivider(),
           Expanded(
-            child: _Metric(
+            child: TasbeehStatsMetric(
               label: context.l10n.tasbeehRounds,
               value: '$completedRounds',
-              color: MyColors.primaryLight,
+              color: isDark
+                  ? MyColors.primaryLight
+                  : AppThemeColors.light.brand,
               foreground: foreground,
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _Metric extends StatelessWidget {
-  const _Metric({
-    required this.label,
-    required this.value,
-    required this.color,
-    required this.foreground,
-  });
-
-  final String label;
-  final String value;
-  final Color color;
-  final Color foreground;
-
-  @override
-  Widget build(BuildContext context) {
-    final text = AppTheme.text(context);
-
-    return Column(
-      children: [
-        Text(
-          value,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: text.titleLarge.copyWith(
-            color: color,
-            fontWeight: FontWeight.w900,
-          ),
-        ),
-        const SizedBox(height: 4),
-        Text(
-          label,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: text.labelSmall.copyWith(
-            color: foreground.withValues(alpha: 0.58),
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _Divider extends StatelessWidget {
-  const _Divider({required this.isDark});
-
-  final bool isDark;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 1,
-      height: 42,
-      margin: const EdgeInsets.symmetric(horizontal: 10),
-      color: (isDark ? Colors.white : MyColors.divider).withValues(
-        alpha: isDark ? 0.08 : 0.9,
       ),
     );
   }

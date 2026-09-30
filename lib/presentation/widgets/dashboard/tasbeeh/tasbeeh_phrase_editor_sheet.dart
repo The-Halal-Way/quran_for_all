@@ -142,7 +142,12 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 minLines: 1,
                 maxLines: null,
                 style: AppTheme.amiri(context, fontSize: 23),
-                decoration: InputDecoration(labelText: l10n.tasbeehArabicLabel),
+                decoration: InputDecoration(
+                  labelText: l10n.tasbeehArabicLabel,
+                  filled: true,
+                  fillColor: Theme.of(context).colorScheme.surface,
+                ),
+                onTapOutside: (event) => FocusScope.of(context).unfocus(),
               ),
               const SizedBox(height: 12),
               TextFormField(
@@ -155,10 +160,13 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 decoration: InputDecoration(
                   labelText: l10n.tasbeehNameLabel,
                   hintText: l10n.tasbeehNameHint,
+                  filled: true,
+                  fillColor: Theme.of(context).colorScheme.surface,
                 ),
                 validator: (value) => value == null || value.trim().isEmpty
                     ? l10n.tasbeehNameRequired
                     : null,
+                onTapOutside: (event) => FocusScope.of(context).unfocus(),
               ),
               const SizedBox(height: 12),
               TextFormField(
@@ -170,7 +178,10 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 decoration: InputDecoration(
                   labelText: l10n.tasbeehMeaningLabel,
                   hintText: l10n.tasbeehMeaningHint,
+                  filled: true,
+                  fillColor: Theme.of(context).colorScheme.surface,
                 ),
+                onTapOutside: (event) => FocusScope.of(context).unfocus(),
               ),
               const SizedBox(height: 12),
               TasbeehTargetField(controller: _target),

@@ -1,63 +1,85 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
+import 'tasbeeh_visuals.dart';
 
 class TasbeehFocusBanner extends StatelessWidget {
   const TasbeehFocusBanner({super.key, required this.onTap});
+
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
+    final scheme = Theme.of(context).colorScheme;
     final text = AppTheme.text(context);
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Material(
-      color: colors.primaryContainer,
-      borderRadius: BorderRadius.circular(AppRadius.lg),
+      color: Colors.transparent,
       child: InkWell(
         key: const ValueKey('tasbeeh_enter_focus'),
-        borderRadius: BorderRadius.circular(AppRadius.lg),
         onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Row(
-            children: [
-              Icon(
-                CupertinoIcons.viewfinder,
-                size: 27,
-                color: colors.onPrimaryContainer,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      context.l10n.tasbeehEnterFocus,
-                      style: text.titleSmall.copyWith(
-                        color: colors.onPrimaryContainer,
-                        fontWeight: FontWeight.w800,
-                      ),
+        borderRadius: BorderRadius.circular(AppRadius.lg),
+        child: Ink(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: isDark
+                  ? [scheme.surfaceContainerHigh, scheme.surfaceContainerLow]
+                  : [scheme.primaryContainer, scheme.surface],
+            ),
+            borderRadius: BorderRadius.circular(AppRadius.lg),
+            border: Border.all(
+              color: scheme.primary.withValues(alpha: isDark ? 0.32 : 0.2),
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(AppSpacing.lg),
+            child: Row(
+              children: [
+                Container(
+                  width: 52,
+                  height: 52,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: TasbeehVisuals.heroColors(context),
                     ),
-                    const SizedBox(height: 3),
-                    Text(
-                      context.l10n.tasbeehTapAnywhere,
-                      style: text.bodySmall.copyWith(
-                        color: colors.onPrimaryContainer,
-                      ),
-                    ),
-                  ],
+                  ),
+                  child: const Icon(
+                    Icons.blur_on_rounded,
+                    color: TasbeehVisuals.gold,
+                    size: 27,
+                  ),
                 ),
-              ),
-              const SizedBox(width: 8),
-              Icon(
-                Icons.arrow_forward_rounded,
-                size: 20,
-                color: colors.onPrimaryContainer,
-              ),
-            ],
+                const SizedBox(width: AppSpacing.md),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        context.l10n.tasbeehEnterFocus,
+                        style: text.titleSmall.copyWith(
+                          color: scheme.onSurface,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.xs),
+                      Text(
+                        context.l10n.tasbeehFocusSubtitle,
+                        style: text.bodySmall.copyWith(
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: AppSpacing.sm),
+                Icon(Icons.arrow_outward_rounded, color: scheme.primary),
+              ],
+            ),
           ),
         ),
       ),

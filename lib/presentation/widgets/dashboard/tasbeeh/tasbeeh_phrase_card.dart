@@ -33,6 +33,9 @@ class TasbeehPhraseCard extends StatelessWidget {
     final text = AppTheme.text(context);
     final label = phrase.label(context.l10n);
     final meaning = phrase.localizedMeaning(context.l10n);
+    final progress = count == 0
+        ? 0.0
+        : (count % target == 0 ? 1.0 : (count % target) / target);
     return Semantics(
       selected: isSelected,
       child: InkWell(
@@ -43,13 +46,18 @@ class TasbeehPhraseCard extends StatelessWidget {
           width: width,
           padding: const EdgeInsets.all(14),
           decoration: BoxDecoration(
-            color: isSelected
-                ? colors.secondaryContainer
-                : colors.surfaceContainerLow,
+            gradient: isSelected
+                ? LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [colors.primaryContainer, colors.surface],
+                  )
+                : null,
+            color: isSelected ? null : colors.surfaceContainerLow,
             borderRadius: BorderRadius.circular(AppRadius.relaxed),
             border: Border.all(
-              color: isSelected ? colors.secondary : colors.outlineVariant,
-              width: isSelected ? 1.2 : 0.8,
+              color: isSelected ? colors.primary : colors.outlineVariant,
+              width: isSelected ? 1.3 : 0.8,
             ),
           ),
           child: Column(
@@ -87,7 +95,7 @@ class TasbeehPhraseCard extends StatelessWidget {
                           ? CupertinoIcons.checkmark_circle_fill
                           : CupertinoIcons.circle,
                       color: isSelected
-                          ? colors.secondary
+                          ? colors.primary
                           : colors.onSurfaceVariant,
                       size: 18,
                     ),
@@ -123,9 +131,7 @@ class TasbeehPhraseCard extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       style: text.labelMedium.copyWith(
                         fontWeight: FontWeight.w800,
-                        color: isSelected
-                            ? colors.onSecondaryContainer
-                            : colors.onSurface,
+                        color: colors.onSurface,
                       ),
                     ),
                   ),
@@ -142,9 +148,19 @@ class TasbeehPhraseCard extends StatelessWidget {
                     Icon(
                       CupertinoIcons.checkmark_circle_fill,
                       size: 17,
-                      color: colors.secondary,
+                      color: colors.primary,
                     ),
                 ],
+              ),
+              const SizedBox(height: AppSpacing.sm),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(AppRadius.full),
+                child: LinearProgressIndicator(
+                  value: progress,
+                  minHeight: 4,
+                  backgroundColor: colors.primary.withValues(alpha: 0.1),
+                  color: colors.primary,
+                ),
               ),
             ],
           ),

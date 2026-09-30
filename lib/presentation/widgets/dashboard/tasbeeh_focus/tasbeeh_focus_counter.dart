@@ -16,12 +16,13 @@ class TasbeehFocusCounter extends StatelessWidget {
     progress: model.progress,
     isTargetReached: model.isTargetReached,
     diameter: diameter,
+    onHero: true,
   );
 
-  Widget _phrase(double width) => FittedBox(
-    fit: BoxFit.scaleDown,
-    child: SizedBox(
-      width: width,
+  Widget _phrase(double width) => SizedBox(
+    width: width,
+    child: SingleChildScrollView(
+      physics: const BouncingScrollPhysics(),
       child: TasbeehFocusPhrase(phrase: model.selectedPhrase),
     ),
   );
@@ -38,12 +39,12 @@ class TasbeehFocusCounter extends StatelessWidget {
                     Center(child: _phrase(bounds.maxWidth)),
               ),
             ),
-            const SizedBox(width: 20),
+            const SizedBox(width: 12),
             Expanded(
               child: LayoutBuilder(
                 builder: (context, bounds) => Center(
                   child: _ring(
-                    math.min(360, math.min(bounds.maxWidth, bounds.maxHeight)),
+                    math.min(320, math.min(bounds.maxWidth, bounds.maxHeight)),
                   ),
                 ),
               ),
@@ -53,22 +54,22 @@ class TasbeehFocusCounter extends StatelessWidget {
       }
       return Column(
         children: [
-          const SizedBox(height: 12),
+          const SizedBox(height: 8),
           ConstrainedBox(
             constraints: BoxConstraints(maxHeight: constraints.maxHeight * 0.4),
             child: _phrase(constraints.maxWidth),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 12),
           Expanded(
             child: LayoutBuilder(
               builder: (context, bounds) => Center(
                 child: _ring(
-                  math.min(360, math.min(bounds.maxWidth, bounds.maxHeight)),
+                  math.min(320, math.min(bounds.maxWidth, bounds.maxHeight)),
                 ),
               ),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 8),
         ],
       );
     },

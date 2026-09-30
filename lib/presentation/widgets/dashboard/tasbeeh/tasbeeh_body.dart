@@ -46,15 +46,6 @@ class TasbeehBody extends StatelessWidget {
                       children: [
                         TasbeehAppBar(isDark: isDark),
                         SizedBox(height: responsive.sectionGap),
-                        TasbeehFocusBanner(
-                          onTap: () => Navigator.push(
-                            context,
-                            MaterialPageRoute<void>(
-                              builder: (_) => const TasbeehFocusView(),
-                            ),
-                          ),
-                        ),
-                        SizedBox(height: responsive.sectionGap),
                         TasbeehCounterDisplay(
                           count: vm.count,
                           target: vm.target,
@@ -70,6 +61,15 @@ class TasbeehBody extends StatelessWidget {
                             HapticFeedback.selectionClick();
                             vm.increment();
                           },
+                        ),
+                        SizedBox(height: responsive.sectionGap),
+                        TasbeehFocusBanner(
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute<void>(
+                              builder: (_) => const TasbeehFocusView(),
+                            ),
+                          ),
                         ),
                         SizedBox(height: responsive.sectionGap + 4),
                         TasbeehPhraseSelector(

@@ -98,6 +98,7 @@ class _NeedExploreState extends State<NeedExplore> {
             filled: true,
             fillColor: scheme.surface,
           ),
+          onTapOutside: (event) => FocusScope.of(context).unfocus(),
         ),
         const SizedBox(height: AppSpacing.md),
         NeedCategoryPicker(

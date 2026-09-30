@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/theme/app_theme_colors.dart';
+import '../../../../core/theme/my_colors.dart';
+import 'tasbeeh_ornament.dart';
+
 class TasbeehBackground extends StatelessWidget {
   const TasbeehBackground({super.key, required this.isDark});
 
@@ -7,16 +11,22 @@ class TasbeehBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    return DecoratedBox(
+    return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: isDark
-              ? [scheme.surface, scheme.surfaceContainerLow]
-              : [scheme.surface, scheme.surfaceContainerLowest],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
+              ? [MyColors.darkScaffold, MyColors.darkSurfaceContainer]
+              : [
+                  AppThemeColors.light.canvas,
+                  AppThemeColors.light.surfaceMuted,
+                ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
         ),
+      ),
+      child: TasbeehOrnament(
+        opacity: isDark ? 0.1 : 0.08,
+        color: isDark ? Colors.white : AppThemeColors.light.brand,
       ),
     );
   }
