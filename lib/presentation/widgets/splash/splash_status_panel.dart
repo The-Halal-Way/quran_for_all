@@ -1,36 +1,27 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/localization/l10n_extensions.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/theme/my_colors.dart';
-import '../../viewmodels/splash_viewmodel.dart';
 
 class SplashStatusPanel extends StatelessWidget {
   const SplashStatusPanel({
     super.key,
     required this.isLoading,
     required this.status,
-    required this.errorMessage,
-    required this.failureReason,
-    required this.onRetry,
+    required this.hasQuranData,
   });
 
   final bool isLoading;
   final String status;
-  final String? errorMessage;
-  final SplashFailureReason failureReason;
-  final VoidCallback onRetry;
+  final bool hasQuranData;
 
   @override
   Widget build(BuildContext context) {
-    final hasError = errorMessage != null;
     final reduceMotion = MediaQuery.disableAnimationsOf(context);
-    final message = hasError
-        ? _errorBody(context)
-        : _localizedStatus(context, status);
-    final accent = hasError ? MyColors.secondaryLight : MyColors.tertiaryLight;
+    final message = _localizedStatus(context, status);
+    const accent = MyColors.tertiaryLight;
 
     return AnimatedContainer(
       duration: reduceMotion
@@ -69,9 +60,8 @@ class SplashStatusPanel extends StatelessWidget {
                     ? Duration.zero
                     : const Duration(milliseconds: 220),
                 child: _StatusMark(
-                  key: ValueKey((hasError, isLoading)),
+                  key: ValueKey(isLoading),
                   isLoading: isLoading,
-                  hasError: hasError,
                   accent: accent,
                 ),
               ),
@@ -82,8 +72,8 @@ class SplashStatusPanel extends StatelessWidget {
                       ? Duration.zero
                       : const Duration(milliseconds: 220),
                   child: Text(
-                    hasError ? _errorTitle(context) : message,
-                    key: ValueKey(hasError ? 'error' : message),
+                    message,
+                    key: ValueKey(message),
                     style: AppTheme.text(context).titleSmall.copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.w800,
@@ -94,41 +84,9 @@ class SplashStatusPanel extends StatelessWidget {
               ),
             ],
           ),
-          if (hasError) ...[
-            const SizedBox(height: AppSpacing.md),
-            Text(
-              message,
-              style: AppTheme.text(context).bodyMedium.copyWith(
-                color: Colors.white.withValues(alpha: 0.92),
-                height: 1.5,
-              ),
-            ),
-            const SizedBox(height: AppSpacing.sm),
-            Text(
-              context.l10n.splashSetupFailedTip,
-              style: AppTheme.text(context).bodySmall.copyWith(
-                color: Colors.white.withValues(alpha: 0.68),
-                height: 1.45,
-              ),
-            ),
-          ],
           const SizedBox(height: AppSpacing.lg),
           if (isLoading)
             _LuminousProgress(accent: accent)
-          else if (hasError)
-            SizedBox(
-              width: double.infinity,
-              child: FilledButton.icon(
-                onPressed: onRetry,
-                style: FilledButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: const Color(0xFF251054),
-                  padding: const EdgeInsets.symmetric(vertical: 13),
-                ),
-                icon: const Icon(CupertinoIcons.refresh),
-                label: Text(context.l10n.splashRetrySetup),
-              ),
-            )
           else
             Row(
               children: [
@@ -136,7 +94,9 @@ class SplashStatusPanel extends StatelessWidget {
                 const SizedBox(width: AppSpacing.sm),
                 Expanded(
                   child: Text(
-                    context.l10n.splashOfflineReady,
+                    hasQuranData
+                        ? context.l10n.splashOfflineReady
+                        : context.l10n.quranDownloadOtherSectionsReady,
                     style: AppTheme.text(context).labelMedium.copyWith(
                       color: Colors.white.withValues(alpha: 0.78),
                     ),
@@ -153,39 +113,15 @@ class SplashStatusPanel extends StatelessWidget {
     return switch (rawStatus) {
       'Preparing local Quran database...' => context.l10n.splashStatusPreparing,
       'Ready' => context.l10n.splashStatusReady,
-      'Ready with saved Quran data. Some newer content may sync later.' =>
-        context.l10n.splashStatusOfflineFallback,
-      _ => rawStatus,
-    };
-  }
-
-  String _errorTitle(BuildContext context) {
-    return switch (failureReason) {
-      SplashFailureReason.firstSetupNeedsNetwork =>
-        context.l10n.splashSetupFailedTitle,
-      SplashFailureReason.none => context.l10n.splashSetupFailedTitle,
-    };
-  }
-
-  String _errorBody(BuildContext context) {
-    return switch (failureReason) {
-      SplashFailureReason.firstSetupNeedsNetwork =>
-        context.l10n.splashSetupFailedBody,
-      SplashFailureReason.none => context.l10n.splashSetupFailedBody,
+      _ => context.l10n.quranDownloadInProgressTitle,
     };
   }
 }
 
 class _StatusMark extends StatelessWidget {
-  const _StatusMark({
-    super.key,
-    required this.isLoading,
-    required this.hasError,
-    required this.accent,
-  });
+  const _StatusMark({super.key, required this.isLoading, required this.accent});
 
   final bool isLoading;
-  final bool hasError;
   final Color accent;
 
   @override
@@ -207,11 +143,7 @@ class _StatusMark extends StatelessWidget {
               backgroundColor: Colors.white.withValues(alpha: 0.13),
             ),
           )
-        : Icon(
-            hasError ? Icons.wifi_off_rounded : Icons.check_rounded,
-            color: accent,
-            size: 23,
-          ),
+        : Icon(Icons.check_rounded, color: accent, size: 23),
   );
 }
 

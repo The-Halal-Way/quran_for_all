@@ -6,7 +6,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'core/constants/app_constants.dart';
 import 'core/localization/l10n_extensions.dart';
 import 'core/theme/app_theme.dart';
-import 'core/utils/app_responsive.dart';
 import 'core/utils/app_ios_scroll_behavior.dart';
 import 'data/datasources/local/app_database.dart';
 import 'data/datasources/local/prayer_times_local_data_source.dart';
@@ -256,19 +255,6 @@ class QuranForAllApp extends StatelessWidget {
               supportedLocales: AppLocalizations.supportedLocales,
               scrollBehavior: const AppIosScrollBehavior(),
               builder: (context, child) {
-                final responsive = AppResponsive.of(context);
-                final mediaQuery = MediaQuery.of(context);
-                final maxTextScale = responsive.pick(
-                  mobile: responsive.isCompactPhone ? 1.02 : 1.08,
-                  tablet: 1.06,
-                  desktop: 1.08,
-                );
-                final clampedMediaQuery = mediaQuery.copyWith(
-                  textScaler: mediaQuery.textScaler.clamp(
-                    maxScaleFactor: maxTextScale,
-                  ),
-                );
-
                 final l10n = AppLocalizations.of(context);
                 if (l10n != null) {
                   LearnQuranTextLocalizer.seedFromLocalizations(
@@ -289,20 +275,17 @@ class QuranForAllApp extends StatelessWidget {
                       navigatorKey: appNavigatorKey,
                       locale: settingsViewModel.settings.language.locale
                           .toLanguageTag(),
-                      child: MediaQuery(
-                        data: clampedMediaQuery,
-                        child: Stack(
-                          children: [
-                            child ?? const SizedBox.shrink(),
-                            if (showBar)
-                              const Positioned(
-                                left: 0,
-                                right: 0,
-                                bottom: 0,
-                                child: GlobalAudioControlBar(),
-                              ),
-                          ],
-                        ),
+                      child: Stack(
+                        children: [
+                          child ?? const SizedBox.shrink(),
+                          if (showBar)
+                            const Positioned(
+                              left: 0,
+                              right: 0,
+                              bottom: 0,
+                              child: GlobalAudioControlBar(),
+                            ),
+                        ],
                       ),
                     );
                   },

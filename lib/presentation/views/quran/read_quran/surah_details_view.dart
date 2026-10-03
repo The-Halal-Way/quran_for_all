@@ -114,46 +114,56 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
           : Column(
               children: [
                 // surah info, reading options & playback controls
-                SurahMetaCard(
-                  surah: widget.surah,
-                  titleText: widget.surah.localizedTitle(
-                    context,
-                    settings.language,
+                ConstrainedBox(
+                  constraints: BoxConstraints(
+                    maxHeight: MediaQuery.sizeOf(context).height * 0.5,
                   ),
-                  readingViewMode: settings.readingViewMode,
-                  showPronunciation: settings.showPronunciation,
-                  showTranslation: settings.showTranslation,
-                  isPlayingFullSurah: viewModel.isPlayingFullSurah,
-                  ayahs: viewModel.ayahs,
-                  language: settings.language,
-                  onJumpToAyah: _jumpToAyahFromSearch,
-                  onToggleReadingMode: () {
-                    final nextMode =
-                        settings.readingViewMode == ReadingViewMode.detailsView
-                        ? ReadingViewMode.regularView
-                        : ReadingViewMode.detailsView;
-                    unawaited(settingsViewModel.setReadingViewMode(nextMode));
-                  },
-                  onTogglePronunciation: () => unawaited(
-                    settingsViewModel.setShowPronunciation(
-                      !settings.showPronunciation,
+                  child: SingleChildScrollView(
+                    child: SurahMetaCard(
+                      surah: widget.surah,
+                      titleText: widget.surah.localizedTitle(
+                        context,
+                        settings.language,
+                      ),
+                      readingViewMode: settings.readingViewMode,
+                      showPronunciation: settings.showPronunciation,
+                      showTranslation: settings.showTranslation,
+                      isPlayingFullSurah: viewModel.isPlayingFullSurah,
+                      ayahs: viewModel.ayahs,
+                      language: settings.language,
+                      onJumpToAyah: _jumpToAyahFromSearch,
+                      onToggleReadingMode: () {
+                        final nextMode =
+                            settings.readingViewMode ==
+                                ReadingViewMode.detailsView
+                            ? ReadingViewMode.regularView
+                            : ReadingViewMode.detailsView;
+                        unawaited(
+                          settingsViewModel.setReadingViewMode(nextMode),
+                        );
+                      },
+                      onTogglePronunciation: () => unawaited(
+                        settingsViewModel.setShowPronunciation(
+                          !settings.showPronunciation,
+                        ),
+                      ),
+                      onToggleTranslation: () => unawaited(
+                        settingsViewModel.setShowTranslation(
+                          !settings.showTranslation,
+                        ),
+                      ),
+                      onTogglePlayback: onTogglePlayback,
+                      totalSurahCount: allSurahs.isNotEmpty
+                          ? allSurahs.length
+                          : 114,
+                      onPreviousSurah: previousSurah == null
+                          ? null
+                          : () => unawaited(_goToSurah(previousSurah)),
+                      onNextSurah: nextSurah == null
+                          ? null
+                          : () => unawaited(_goToSurah(nextSurah)),
                     ),
                   ),
-                  onToggleTranslation: () => unawaited(
-                    settingsViewModel.setShowTranslation(
-                      !settings.showTranslation,
-                    ),
-                  ),
-                  onTogglePlayback: onTogglePlayback,
-                  totalSurahCount: allSurahs.isNotEmpty
-                      ? allSurahs.length
-                      : 114,
-                  onPreviousSurah: previousSurah == null
-                      ? null
-                      : () => unawaited(_goToSurah(previousSurah)),
-                  onNextSurah: nextSurah == null
-                      ? null
-                      : () => unawaited(_goToSurah(nextSurah)),
                 ),
                 SizedBox(height: AppSpacing.md),
                 // // Reading options: mode selector + pronunciation/translation.

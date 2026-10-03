@@ -5,7 +5,10 @@ import '../../data/models/search_result_model.dart';
 import '../../data/models/surah_model.dart';
 
 abstract class QuranRepository {
-  Future<void> importDataIfNeeded({void Function(String status)? onProgress});
+  Future<void> importDataIfNeeded({
+    void Function(String status)? onProgress,
+    void Function()? onCoreDataReady,
+  });
 
   Future<bool> hasLocalData();
 

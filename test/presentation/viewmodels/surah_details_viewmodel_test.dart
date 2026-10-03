@@ -193,7 +193,10 @@ class _GatedQuranRepository extends ReaderQuranRepository {
   int importCalls = 0;
 
   @override
-  Future<void> importDataIfNeeded({void Function(String)? onProgress}) async {
+  Future<void> importDataIfNeeded({
+    void Function(String)? onProgress,
+    void Function()? onCoreDataReady,
+  }) async {
     importCalls++;
   }
 

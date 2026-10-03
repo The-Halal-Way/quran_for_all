@@ -1,18 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
+import '../../../viewmodels/splash_viewmodel.dart';
 
 class SettingsOfflineBadge extends StatelessWidget {
   const SettingsOfflineBadge({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final quranReady = context.watch<SplashViewModel?>()?.hasQuranData ?? true;
+    final title = quranReady
+        ? context.l10n.settingsOfflineTitle
+        : context.l10n.quranDownloadTitle;
+    final body = quranReady
+        ? context.l10n.settingsOfflineBody
+        : context.l10n.quranDownloadBody;
     return Semantics(
-      label:
-          '${context.l10n.settingsOfflineTitle}. ${context.l10n.settingsOfflineBody}',
+      label: '$title. $body',
       excludeSemantics: true,
       child: Container(
         padding: const EdgeInsets.all(AppSpacing.lg),
@@ -35,8 +43,10 @@ class SettingsOfflineBadge extends StatelessWidget {
                 color: MyColors.tertiary.withValues(alpha: 0.14),
                 shape: BoxShape.circle,
               ),
-              child: const Icon(
-                Icons.offline_bolt_rounded,
+              child: Icon(
+                quranReady
+                    ? Icons.offline_bolt_rounded
+                    : Icons.cloud_download_outlined,
                 color: MyColors.tertiary,
                 size: 20,
               ),
@@ -44,7 +54,7 @@ class SettingsOfflineBadge extends StatelessWidget {
             const SizedBox(width: AppSpacing.md),
             Expanded(
               child: Text(
-                context.l10n.settingsOfflineTitle,
+                title,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: AppTheme.text(
@@ -52,8 +62,10 @@ class SettingsOfflineBadge extends StatelessWidget {
                 ).labelMedium.copyWith(fontWeight: AppTheme.weightExtraBold),
               ),
             ),
-            const Icon(
-              Icons.check_circle_rounded,
+            Icon(
+              quranReady
+                  ? Icons.check_circle_rounded
+                  : Icons.cloud_download_outlined,
               color: MyColors.tertiary,
               size: 21,
             ),

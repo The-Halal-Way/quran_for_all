@@ -53,7 +53,7 @@ class PrayerFocusHero extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
-            padding: const EdgeInsets.all(AppSpacing.xl),
+            padding: const EdgeInsets.all(AppSpacing.md),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -103,7 +103,7 @@ class PrayerFocusHero extends StatelessWidget {
                     );
                   },
                 ),
-                const SizedBox(height: AppSpacing.lg),
+                const SizedBox(height: AppSpacing.sm),
                 Text(
                   content.subtitle,
                   style: text.bodyMedium.copyWith(
@@ -117,7 +117,7 @@ class PrayerFocusHero extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(
               horizontal: AppSpacing.xl,
-              vertical: AppSpacing.lg,
+              vertical: AppSpacing.md,
             ),
             decoration: BoxDecoration(
               color: Colors.white.withValues(alpha: 0.06),

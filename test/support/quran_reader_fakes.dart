@@ -51,7 +51,10 @@ class ReaderQuranRepository implements QuranRepository {
   Set<int> bookmarks = {};
 
   @override
-  Future<void> importDataIfNeeded({void Function(String)? onProgress}) async {}
+  Future<void> importDataIfNeeded({
+    void Function(String)? onProgress,
+    void Function()? onCoreDataReady,
+  }) async {}
 
   @override
   Future<List<AyahModel>> getAyahsBySurah(int surahId) async => [

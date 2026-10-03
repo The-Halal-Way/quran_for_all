@@ -31,6 +31,11 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
       return null;
     }
 
+    final config = await _preferencesStore.getCalculationConfig();
+    if (profile.calculation.signatureSeed() != config.signatureSeed()) {
+      return null;
+    }
+
     return _composeDashboardData(
       profile: profile,
       todayKey: _todayKey(profile.timeZoneId),
@@ -271,9 +276,10 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
     final serviceEnabled = await Geolocator.isLocationServiceEnabled();
     if (!serviceEnabled) {
       if (activeProfile != null) {
-        return _ResolvedProfile(
-          profile: activeProfile,
-          isFallbackProfile: true,
+        return _reuseCachedCoordinates(
+          activeProfile: activeProfile,
+          timeZoneId: timeZoneId,
+          config: config,
         );
       }
 
@@ -290,9 +296,10 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
 
     if (permission == LocationPermission.denied) {
       if (activeProfile != null) {
-        return _ResolvedProfile(
-          profile: activeProfile,
-          isFallbackProfile: true,
+        return _reuseCachedCoordinates(
+          activeProfile: activeProfile,
+          timeZoneId: timeZoneId,
+          config: config,
         );
       }
 
@@ -304,9 +311,10 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
 
     if (permission == LocationPermission.deniedForever) {
       if (activeProfile != null) {
-        return _ResolvedProfile(
-          profile: activeProfile,
-          isFallbackProfile: true,
+        return _reuseCachedCoordinates(
+          activeProfile: activeProfile,
+          timeZoneId: timeZoneId,
+          config: config,
         );
       }
 
@@ -340,6 +348,23 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
     await _localDataSource.upsertProfile(profile);
     await _preferencesStore.setActiveProfileSignature(profile.signature);
     return _ResolvedProfile(profile: profile, isFallbackProfile: false);
+  }
+
+  Future<_ResolvedProfile> _reuseCachedCoordinates({
+    required PrayerProfile activeProfile,
+    required String timeZoneId,
+    required PrayerCalculationConfig config,
+  }) async {
+    final profile = _buildProfile(
+      latitude: activeProfile.latitude,
+      longitude: activeProfile.longitude,
+      timeZoneId: timeZoneId,
+      calculation: config,
+      existingProfile: activeProfile,
+    );
+    await _localDataSource.upsertProfile(profile);
+    await _preferencesStore.setActiveProfileSignature(profile.signature);
+    return _ResolvedProfile(profile: profile, isFallbackProfile: true);
   }
 
   PrayerProfile _buildProfile({
@@ -499,6 +524,10 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
           )
           .toList(),
     );
+    final selected = await _preferencesStore.getCalculationConfig();
+    if (profile.calculation.signatureSeed() != selected.signatureSeed()) {
+      return;
+    }
     await _preferencesStore.writeWidgetSnapshot(snapshot);
   }
 

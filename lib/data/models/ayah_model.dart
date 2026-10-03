@@ -1,7 +1,22 @@
 import 'package:avro_phonetic_textfield/avro_phonetic_textfield.dart' as avro;
 
 import '../../core/enums/app_language.dart';
+import '../../core/constants/app_constants.dart';
 import '../../core/quran/quran_bismillah.dart';
+
+class AyahTranslation {
+  const AyahTranslation({
+    required this.text,
+    required this.edition,
+    required this.translator,
+    required this.language,
+  });
+
+  final String text;
+  final String edition;
+  final String translator;
+  final AppLanguage language;
+}
 
 class AyahModel {
   const AyahModel({
@@ -39,6 +54,7 @@ class AyahModel {
   final String transliterationBn;
   final String translationEn;
   final String translationBn;
+  // These legacy database columns contain additional translations, not tafsir.
   final String tafsirEn;
   final String tafsirBn;
   final String audioUrl;
@@ -49,48 +65,66 @@ class AyahModel {
         : transliterationEn;
   }
 
-  String tafsirFor(AppLanguage language) {
-    final cleanTafsirEn = tafsirEn.trim();
-    final cleanTafsirBn = tafsirBn.trim();
+  AyahTranslation? additionalTranslationFor(AppLanguage language) {
+    final englishAdditional = _translationIfValid(
+      tafsirEn,
+      AppConstants.additionalEnglishEdition,
+      AppConstants.additionalEnglishTranslator,
+      AppLanguage.english,
+    );
+    final banglaAdditional = _translationIfValid(
+      tafsirBn,
+      AppConstants.additionalBanglaEdition,
+      AppConstants.additionalBanglaTranslator,
+      AppLanguage.bangla,
+    );
+    final englishPrimary = _translationIfValid(
+      translationEn,
+      AppConstants.englishEdition,
+      AppConstants.englishTranslator,
+      AppLanguage.english,
+    );
+    final banglaPrimary = _translationIfValid(
+      translationBn,
+      AppConstants.banglaEdition,
+      AppConstants.banglaTranslator,
+      AppLanguage.bangla,
+    );
 
     if (language == AppLanguage.bangla) {
-      if (cleanTafsirBn.isNotEmpty && _isBanglaScript(cleanTafsirBn)) {
-        return cleanTafsirBn;
-      }
-
-      if (translationBn.trim().isNotEmpty) {
-        return translationBn;
-      }
-
-      if (cleanTafsirEn.isNotEmpty && _isLatinScript(cleanTafsirEn)) {
-        return cleanTafsirEn;
-      }
-
-      return translationEn;
+      return banglaAdditional ??
+          banglaPrimary ??
+          englishAdditional ??
+          englishPrimary;
     }
-
-    if (cleanTafsirEn.isNotEmpty && _isLatinScript(cleanTafsirEn)) {
-      return cleanTafsirEn;
-    }
-
-    if (translationEn.trim().isNotEmpty) {
-      return translationEn;
-    }
-
-    if (cleanTafsirBn.isNotEmpty && _isBanglaScript(cleanTafsirBn)) {
-      return cleanTafsirBn;
-    }
-
-    return '';
+    return englishAdditional ??
+        englishPrimary ??
+        banglaAdditional ??
+        banglaPrimary;
   }
 
-  static String normalizeTafsir(String text) {
-    return text
-        .replaceAll(RegExp(r'<[^>]*>'), ' ')
-        .replaceAll(RegExp(r'\[[^\]]*\]'), ' ')
-        .replaceAll(RegExp(r'\s+'), ' ')
-        .trim();
+  static AyahTranslation? _translationIfValid(
+    String text,
+    String edition,
+    String translator,
+    AppLanguage language,
+  ) {
+    final clean = text.trim();
+    if (clean.isEmpty ||
+        (language == AppLanguage.bangla
+            ? !_isBanglaScript(clean)
+            : !_isLatinScript(clean))) {
+      return null;
+    }
+    return AyahTranslation(
+      text: clean,
+      edition: edition,
+      translator: translator,
+      language: language,
+    );
   }
+
+  static String normalizeAdditionalTranslation(String text) => text.trim();
 
   static String normalizeBanglaPronunciation({
     required String transliterationEn,
@@ -160,8 +194,12 @@ class AyahModel {
       ),
       translationEn: (englishTranslationAyah?['text'] as String?) ?? '',
       translationBn: (banglaTranslationAyah?['text'] as String?) ?? '',
-      tafsirEn: normalizeTafsir((tafsirEnAyah?['text'] as String?) ?? ''),
-      tafsirBn: normalizeTafsir((tafsirBnAyah?['text'] as String?) ?? ''),
+      tafsirEn: normalizeAdditionalTranslation(
+        (tafsirEnAyah?['text'] as String?) ?? '',
+      ),
+      tafsirBn: normalizeAdditionalTranslation(
+        (tafsirBnAyah?['text'] as String?) ?? '',
+      ),
       audioUrl: '$audioBaseUrl/$globalNumber.mp3',
     );
   }

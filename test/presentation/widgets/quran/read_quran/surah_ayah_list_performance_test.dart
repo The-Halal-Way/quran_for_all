@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/enums/reading_view_mode.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
@@ -60,7 +61,7 @@ void main() {
     await audio.dispose();
   });
 
-  Widget app(Widget child) => ScreenUtilInit(
+  Widget app(Widget child, {double textScale = 1}) => ScreenUtilInit(
     designSize: const Size(390, 844),
     builder: (context, _) => MultiProvider(
       providers: [
@@ -70,9 +71,16 @@ void main() {
         ChangeNotifierProvider.value(value: readQuran),
       ],
       child: MaterialApp(
+        locale: settings.settings.language.locale,
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
         theme: AppTheme.lightTheme,
+        builder: (context, child) => MediaQuery(
+          data: MediaQuery.of(
+            context,
+          ).copyWith(textScaler: TextScaler.linear(textScale)),
+          child: child!,
+        ),
         home: Scaffold(body: child),
       ),
     ),
@@ -118,8 +126,14 @@ void main() {
     expect(playing.playbackProgress, 0.5);
 
     await model.stopPlayback();
-    scroll.jumpTo(scroll.position.maxScrollExtent);
-    await tester.pumpAndSettle();
+    for (
+      var attempt = 0;
+      attempt < 8 && find.text('2:286').evaluate().isEmpty;
+      attempt++
+    ) {
+      scroll.jumpTo(scroll.position.maxScrollExtent);
+      await tester.pumpAndSettle();
+    }
     expect(find.byType(AyahTile).evaluate().length, lessThan(10));
     expect(find.text('2:286'), findsOneWidget);
     expect(tester.takeException(), isNull);
@@ -198,7 +212,9 @@ void main() {
     expect(find.byType(AyahTile), findsWidgets);
   });
 
-  testWidgets('tafsir is fetched when its sheet opens', (tester) async {
+  testWidgets('translation source is fetched when its sheet opens', (
+    tester,
+  ) async {
     await tester.pumpWidget(
       app(
         SurahAyahList(
@@ -212,17 +228,148 @@ void main() {
       ),
     );
     await tester.pumpAndSettle();
-    expect(quran.tafsirReads, 0);
+    expect(quran.translationReads, 0);
 
-    await tester.tap(find.text('Tafsir').first);
+    await tester.tap(find.text('Translation & source').first);
     await tester.pumpAndSettle();
-    expect(quran.tafsirReads, 1);
-    expect(find.text('A short tafsir for the selected ayah.'), findsOneWidget);
+    expect(quran.translationReads, 1);
+    expect(find.text('An additional translation of the ayah.'), findsOneWidget);
+    expect(
+      find.text(
+        'Translation by Muhammad Taqi-ud-Din al-Hilali and Muhammad Muhsin Khan',
+      ),
+      findsOneWidget,
+    );
+    expect(find.text('English · en.hilali'), findsOneWidget);
+  });
+
+  testWidgets('Bangla translation fallback names its actual source', (
+    tester,
+  ) async {
+    await settings.setLanguage(AppLanguage.bangla);
+    await tester.pumpWidget(
+      app(
+        SurahAyahList(
+          controller: scroll,
+          ayahKeys: {},
+          highlightedAyahNumber: null,
+          onLastReadMarked: (_) {},
+          playAyahWithFeedback: (_, vm, ayah) => vm.playAyah(ayah),
+          playBismillahWithFeedback: (_, vm) => vm.playBismillah(),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('অনুবাদ ও উৎস').first);
+    await tester.pumpAndSettle();
+    expect(find.text('বাংলা · bn.bengali'), findsOneWidget);
+    expect(
+      find.descendant(
+        of: find.byType(DraggableScrollableSheet),
+        matching: find.text('অনুবাদ: Muhiuddin Khan'),
+      ),
+      findsOneWidget,
+    );
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('details reader and translation sheet fit at 200% text', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(320, 700));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(
+      app(SurahDetailsView(surah: readerSurah(2)), textScale: 2),
+    );
+    await tester.pumpAndSettle();
+
+    final ayahScroll = find.descendant(
+      of: find.byType(SurahAyahList),
+      matching: find.byType(Scrollable),
+    );
+    await tester.scrollUntilVisible(
+      find.byType(AyahTile),
+      300,
+      scrollable: ayahScroll,
+    );
+    await tester.pumpAndSettle();
+    expect(find.byType(AyahTile), findsWidgets);
+    expect(
+      MediaQuery.textScalerOf(
+        tester.element(find.byType(AyahTile).first),
+      ).scale(16),
+      32,
+    );
+    expect(tester.takeException(), isNull);
+
+    final sourceButton = find.text('Translation & source').first;
+    await tester.ensureVisible(sourceButton);
+    await tester.tap(sourceButton);
+    await tester.pumpAndSettle();
+    expect(find.text('English · en.hilali'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+    await tester.pumpWidget(const SizedBox.shrink());
+    await tester.pump();
+  });
+
+  testWidgets('regular reader fits at 200% text', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(320, 700));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await settings.setReadingViewMode(ReadingViewMode.regularView);
+    await tester.pumpWidget(
+      app(SurahDetailsView(surah: readerSurah(2)), textScale: 2),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.byType(SurahAyahList), findsOneWidget);
+    expect(
+      MediaQuery.textScalerOf(
+        tester.element(find.byType(SurahAyahList)),
+      ).scale(16),
+      32,
+    );
+    expect(tester.takeException(), isNull);
+    await tester.pumpWidget(const SizedBox.shrink());
+    await tester.pump();
+  });
+
+  testWidgets('playing ayah keeps system text scaling', (tester) async {
+    final ayah = model.ayahs.first;
+    await tester.pumpWidget(
+      app(
+        AyahTile(
+          ayah: ayah,
+          showPronunciation: false,
+          showTranslation: false,
+          language: settings.settings.language,
+          isBookmarked: false,
+          isLastReadAyah: false,
+          isPlaying: true,
+          playbackProgress: 0.5,
+          playbackPosition: const Duration(seconds: 5),
+          playbackDuration: const Duration(seconds: 10),
+          onPlay: () {},
+          onToggleBookmark: () {},
+        ),
+        textScale: 2,
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    final arabicText = tester.widget<RichText>(
+      find.byWidgetPredicate(
+        (widget) =>
+            widget is RichText && widget.text.toPlainText() == ayah.arabicText,
+      ),
+    );
+    expect(arabicText.textScaler.scale(16), 32);
+    expect(tester.takeException(), isNull);
   });
 }
 
 class _LongSurahRepository extends ReaderQuranRepository {
-  int tafsirReads = 0;
+  int translationReads = 0;
 
   @override
   Future<List<SurahModel>> getAllSurahs() async =>
@@ -234,7 +381,7 @@ class _LongSurahRepository extends ReaderQuranRepository {
   @override
   Future<AyahModel?> getAyah(int surahId, int ayahNumber) async {
     if (surahId == 1) return super.getAyah(surahId, ayahNumber);
-    tafsirReads++;
+    translationReads++;
     final ayah = readerAyah(surahId: surahId, number: ayahNumber);
     return AyahModel(
       id: ayah.id,
@@ -248,7 +395,7 @@ class _LongSurahRepository extends ReaderQuranRepository {
       transliterationBn: ayah.transliterationBn,
       translationEn: ayah.translationEn,
       translationBn: ayah.translationBn,
-      tafsirEn: 'A short tafsir for the selected ayah.',
+      tafsirEn: 'An additional translation of the ayah.',
       tafsirBn: '',
       audioUrl: ayah.audioUrl,
     );

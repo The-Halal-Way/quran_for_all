@@ -75,10 +75,109 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsThemeDark => 'Dark';
 
   @override
+  String get settingsPrayerTimesTitle => 'Prayer time calculation';
+
+  @override
+  String get settingsPrayerTimesDescription => 'Choose a calculation method and Asr school, then adjust individual times to match your local mosque\'s timetable.';
+
+  @override
+  String get settingsPrayerMethodLabel => 'Calculation method';
+
+  @override
+  String get settingsPrayerSchoolLabel => 'Asr school';
+
+  @override
+  String get settingsPrayerSchoolStandard => 'Standard (Shafi, Maliki, Hanbali)';
+
+  @override
+  String get settingsPrayerSchoolHanafi => 'Hanafi';
+
+  @override
+  String get settingsPrayerAdjustmentsTitle => 'Local adjustments';
+
+  @override
+  String get settingsPrayerAdjustmentsDescription => 'Add or subtract minutes from each calculated time (up to 60 minutes). These changes also update the prayer widget.';
+
+  @override
+  String get settingsPrayerOffsetFajr => 'Fajr';
+
+  @override
+  String get settingsPrayerOffsetSunrise => 'Sunrise';
+
+  @override
+  String get settingsPrayerOffsetDhuhr => 'Dhuhr';
+
+  @override
+  String get settingsPrayerOffsetAsr => 'Asr';
+
+  @override
+  String get settingsPrayerOffsetMaghrib => 'Maghrib';
+
+  @override
+  String get settingsPrayerOffsetIsha => 'Isha';
+
+  @override
+  String get settingsPrayerOffsetMinutes => 'Minutes';
+
+  @override
+  String get settingsPrayerOffsetInvalid => 'Enter a number from -60 to +60';
+
+  @override
+  String get settingsPrayerResetOffsets => 'Reset adjustments';
+
+  @override
+  String get settingsPrayerSave => 'Save prayer settings';
+
+  @override
+  String get settingsPrayerSaved => 'Prayer settings saved. Times are refreshing.';
+
+  @override
+  String get settingsPrayerSaveFailed => 'Could not save prayer settings. Try again.';
+
+  @override
+  String get settingsPrayerMethodKarachi => 'University of Islamic Sciences, Karachi';
+
+  @override
+  String get settingsPrayerMethodIsna => 'Islamic Society of North America';
+
+  @override
+  String get settingsPrayerMethodMwl => 'Muslim World League';
+
+  @override
+  String get settingsPrayerMethodUmmAlQura => 'Umm Al-Qura, Makkah';
+
+  @override
+  String get settingsPrayerMethodEgyptian => 'Egyptian General Authority';
+
+  @override
+  String get settingsPrayerMethodGulf => 'Gulf Region';
+
+  @override
+  String get settingsPrayerMethodKuwait => 'Kuwait';
+
+  @override
+  String get settingsPrayerMethodQatar => 'Qatar';
+
+  @override
+  String get settingsPrayerMethodSingapore => 'Singapore (MUIS)';
+
+  @override
+  String get settingsPrayerMethodTurkey => 'Turkey (Diyanet)';
+
+  @override
+  String get settingsPrayerMethodMoonsighting => 'Moonsighting Committee';
+
+  @override
+  String get settingsPrayerMethodMalaysia => 'Malaysia (JAKIM)';
+
+  @override
+  String get settingsPrayerMethodIndonesia => 'Indonesia (KEMENAG)';
+
+  @override
   String get settingsOfflineTitle => 'Offline mode is enabled';
 
   @override
-  String get settingsOfflineBody => 'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.';
+  String get settingsOfflineBody => 'Quran text and translations are stored locally after setup. Audio is cached after first play.';
 
   @override
   String get settingsHijriCalendarTitle => 'Hijri Calendar';
@@ -218,22 +317,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get splashStatusReady => 'Ready';
 
   @override
-  String get splashStatusOfflineFallback => 'Ready with saved Quran data. Some newer content may sync later.';
-
-  @override
   String get splashOfflineReady => 'Your Quran library stays available offline.';
 
   @override
-  String get splashRetrySetup => 'Retry setup';
+  String get quranDownloadTitle => 'Quran library needs a download';
 
   @override
-  String get splashSetupFailedTitle => 'Setup needs internet';
+  String get quranDownloadBody => 'Connect to the internet to save Quran text and translations on this device.';
 
   @override
-  String get splashSetupFailedBody => 'Quran For All needs a network connection the first time it prepares the local Quran database. Check your internet connection and try again.';
+  String get quranDownloadInProgressTitle => 'Preparing Quran library';
 
   @override
-  String get splashSetupFailedTip => 'After setup, Quran text, translations, tafsir, bookmarks, and reading progress work from local storage.';
+  String get quranDownloadInProgressBody => 'The Quran download is running in the background. Reading will appear here when it is ready.';
+
+  @override
+  String get quranDownloadRetry => 'Retry Quran download';
+
+  @override
+  String get quranDownloadOtherSectionsReady => 'Prayer, Du\'a, and the other sections are available while you wait.';
 
   @override
   String get readQuranTitle => 'Read Quran';
@@ -320,13 +422,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readQuranUnablePlayBismillahAudio => 'Unable to play Bismillah right now. Please try again.';
 
   @override
-  String get readQuranReadTafsirTooltip => 'Read tafsir';
+  String get readQuranTranslationDetailsTitle => 'Translation & source';
 
   @override
-  String get readQuranTafsirTitle => 'Tafsir';
+  String get readQuranNoTranslationBody => 'No translation available for this ayah yet.';
 
   @override
-  String get readQuranNoTafsirBody => 'No tafsir available for this ayah yet.';
+  String readQuranTranslatedBy(String translator) {
+    return 'Translation by $translator';
+  }
 
   @override
   String get readQuranMeccan => 'Meccan';

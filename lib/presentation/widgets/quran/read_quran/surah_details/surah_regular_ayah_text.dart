@@ -55,6 +55,7 @@ class _SurahRegularAyahTextState extends State<SurahRegularAyahText> {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
+    final badgeSize = MediaQuery.textScalerOf(context).scale(14) + 10;
     final spans = <InlineSpan>[];
     for (final ayah in widget.ayahs) {
       final recognizer = _recognizers.putIfAbsent(
@@ -83,8 +84,8 @@ class _SurahRegularAyahTextState extends State<SurahRegularAyahText> {
         WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Container(
-            width: 24,
-            height: 24,
+            width: badgeSize < 24 ? 24 : badgeSize,
+            height: badgeSize < 24 ? 24 : badgeSize,
             alignment: Alignment.center,
             margin: const EdgeInsetsDirectional.only(start: AppSpacing.xs),
             decoration: BoxDecoration(

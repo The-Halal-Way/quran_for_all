@@ -12,12 +12,14 @@ import '../../../data/models/quran/quran_hub_models.dart';
 import '../../viewmodels/learn_quran_viewmodel.dart';
 import '../../viewmodels/quran/quran_viewmodel.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
+import '../../viewmodels/splash_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/common/app_premium_page_background.dart';
 import '../../widgets/common/app_premium_section_title.dart';
 import '../../widgets/quran/quran_view/quran_hub_hero.dart';
 import '../../widgets/quran/quran_view/quran_path_grid.dart';
 import '../../widgets/quran/quran_view/quran_reflection_carousel.dart';
+import '../../widgets/quran/quran_download_panel.dart';
 import 'learn_quran/learn_quran_view.dart';
 import 'read_quran/read_quran_view.dart';
 
@@ -29,6 +31,22 @@ class QuranView extends StatefulWidget {
 }
 
 class _QuranViewState extends State<QuranView> {
+  bool _requestedReadLoad = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final setup = context.watch<SplashViewModel?>();
+    if ((setup?.hasQuranData ?? true) && !_requestedReadLoad) {
+      _requestedReadLoad = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          unawaited(context.read<ReadQuranViewModel>().load());
+        }
+      });
+    }
+  }
+
   @override
   void initState() {
     super.initState();
@@ -36,11 +54,6 @@ class _QuranViewState extends State<QuranView> {
       if (!mounted) {
         return;
       }
-      final readViewModel = context.read<ReadQuranViewModel>();
-      if (readViewModel.surahs.isEmpty && !readViewModel.isLoading) {
-        unawaited(readViewModel.load(showLoading: false));
-      }
-
       final learnViewModel = context.read<LearnQuranViewModel>();
       if (learnViewModel.isLoading) {
         unawaited(learnViewModel.initialize());
@@ -52,6 +65,7 @@ class _QuranViewState extends State<QuranView> {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     final responsive = AppResponsive.of(context);
+    final quranSetup = context.watch<SplashViewModel?>();
     final readViewModel = context.watch<ReadQuranViewModel>();
     final learnViewModel = context.watch<LearnQuranViewModel>();
     final content = context.read<QuranViewModel>().content(
@@ -92,6 +106,10 @@ class _QuranViewState extends State<QuranView> {
                           arabicTitle: l10n.quranHubHeroArabic,
                         ),
                         const SizedBox(height: AppSpacing.xxl),
+                        if (quranSetup != null && !quranSetup.hasQuranData) ...[
+                          QuranDownloadPanel(model: quranSetup),
+                          const SizedBox(height: AppSpacing.xxl),
+                        ],
                         AppPremiumSectionTitle(
                           title: l10n.quranHubSectionChooseTitle,
                         ),

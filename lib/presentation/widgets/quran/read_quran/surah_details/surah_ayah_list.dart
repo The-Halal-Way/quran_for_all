@@ -116,7 +116,8 @@ class SurahAyahList extends StatelessWidget {
           ),
           onMarkAsLastRead: () =>
               unawaited(_markAsLastReadWithFeedback(context, viewModel, ayah)),
-          loadTafsir: () => viewModel.loadTafsir(ayah, settings.language),
+          loadAdditionalTranslation: () =>
+              viewModel.loadAdditionalTranslation(ayah, settings.language),
         );
       },
     );
@@ -187,7 +188,8 @@ class SurahAyahList extends StatelessWidget {
           unawaited(_toggleAyahBookmarkWithFeedback(context, viewModel, ayah)),
       onMarkAsLastRead: () =>
           unawaited(_markAsLastReadWithFeedback(context, viewModel, ayah)),
-      loadTafsir: () => viewModel.loadTafsir(ayah, settings.language),
+      loadAdditionalTranslation: () =>
+          viewModel.loadAdditionalTranslation(ayah, settings.language),
     );
   }
 

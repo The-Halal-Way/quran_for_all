@@ -21,17 +21,19 @@ class QuranRepositoryImpl implements QuranRepository {
   @override
   Future<void> importDataIfNeeded({
     void Function(String status)? onProgress,
+    void Function()? onCoreDataReady,
   }) async {
     final hasQuranData = await _database.hasQuranData();
     if (hasQuranData) {
+      onCoreDataReady?.call();
       if (await _database.hasLocalizedTafsirData()) {
         return;
       }
 
-      onProgress?.call('Downloading tafsir...');
+      onProgress?.call('Downloading additional translations...');
       final tafsirSurahs = await _downloadTafsirSurahs();
 
-      onProgress?.call('Saving tafsir in local storage...');
+      onProgress?.call('Saving additional translations in local storage...');
       await _database.saveTafsirData(
         tafsirEnByAyahId: _buildTafsirByAyahId(tafsirSurahs.tafsirEnSurahs),
         tafsirBnByAyahId: _buildTafsirByAyahId(tafsirSurahs.tafsirBnSurahs),
@@ -55,9 +57,6 @@ class QuranRepositoryImpl implements QuranRepository {
     final transliterationBn = await _apiService.tryFetchEdition(
       AppConstants.transliterationBnEdition,
     );
-    onProgress?.call('Downloading tafsir...');
-    final tafsirSurahs = await _downloadTafsirSurahs();
-
     final arabicSurahs = _readSurahs(arabic);
     final englishSurahs = _readSurahs(english);
     final banglaSurahs = _readSurahs(bangla);
@@ -79,8 +78,6 @@ class QuranRepositoryImpl implements QuranRepository {
       final banglaAyahs = _readAyahsAt(banglaSurahs, s);
       final transliterationEnAyahs = _readAyahsAt(transliterationEnSurahs, s);
       final transliterationBnAyahs = _readAyahsAt(transliterationBnSurahs, s);
-      final tafsirEnAyahs = _readAyahsAt(tafsirSurahs.tafsirEnSurahs, s);
-      final tafsirBnAyahs = _readAyahsAt(tafsirSurahs.tafsirBnSurahs, s);
 
       for (var a = 0; a < arabicAyahs.length; a++) {
         ayahs.add(
@@ -93,16 +90,28 @@ class QuranRepositoryImpl implements QuranRepository {
             transliterationBnAyah:
                 _safeAt(transliterationBnAyahs, a) ??
                 _safeAt(transliterationEnAyahs, a),
-            tafsirEnAyah: _safeAt(tafsirEnAyahs, a),
-            tafsirBnAyah: _safeAt(tafsirBnAyahs, a),
+            tafsirEnAyah: null,
+            tafsirBnAyah: null,
             audioBaseUrl: AppConstants.audioBaseUrl,
           ),
         );
       }
     }
 
+    if (surahs.isEmpty || ayahs.isEmpty) {
+      throw const FormatException('The Quran edition contains no ayahs.');
+    }
+
     onProgress?.call('Saving Quran in local storage...');
     await _database.insertQuranData(surahs: surahs, ayahs: ayahs);
+    onCoreDataReady?.call();
+
+    onProgress?.call('Downloading additional translations...');
+    final tafsirSurahs = await _downloadTafsirSurahs();
+    await _database.saveTafsirData(
+      tafsirEnByAyahId: _buildTafsirByAyahId(tafsirSurahs.tafsirEnSurahs),
+      tafsirBnByAyahId: _buildTafsirByAyahId(tafsirSurahs.tafsirBnSurahs),
+    );
   }
 
   @override
@@ -295,13 +304,13 @@ class QuranRepositoryImpl implements QuranRepository {
 
   Future<_TafsirSurahs> _downloadTafsirSurahs() async {
     final tafsirEn = await _apiService.tryFetchEdition(
-      AppConstants.tafsirEnEdition,
+      AppConstants.additionalEnglishEdition,
     );
     Map<String, dynamic>? tafsirBn;
 
-    final tafsirBnEdition = AppConstants.tafsirBnEdition.trim();
+    final tafsirBnEdition = AppConstants.additionalBanglaEdition.trim();
     if (tafsirBnEdition.isNotEmpty) {
-      if (tafsirBnEdition == AppConstants.tafsirEnEdition) {
+      if (tafsirBnEdition == AppConstants.additionalEnglishEdition) {
         tafsirBn = tafsirEn;
       } else {
         tafsirBn = await _apiService.tryFetchEdition(tafsirBnEdition);
@@ -332,7 +341,7 @@ class QuranRepositoryImpl implements QuranRepository {
           continue;
         }
 
-        final tafsir = AyahModel.normalizeTafsir(
+        final tafsir = AyahModel.normalizeAdditionalTranslation(
           (ayah['text'] as String?) ?? '',
         );
         if (tafsir.isNotEmpty) {

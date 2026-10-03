@@ -3,14 +3,20 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class QuranApiService {
-  QuranApiService(this._client);
+  QuranApiService(
+    this._client, {
+    this.requestTimeout = const Duration(seconds: 25),
+  });
 
   final http.Client _client;
+  final Duration requestTimeout;
 
   static const String _baseUrl = 'https://api.alquran.cloud/v1/quran';
 
   Future<Map<String, dynamic>> fetchEdition(String edition) async {
-    final response = await _client.get(Uri.parse('$_baseUrl/$edition'));
+    final response = await _client
+        .get(Uri.parse('$_baseUrl/$edition'))
+        .timeout(requestTimeout);
 
     if (response.statusCode != 200) {
       throw Exception('Failed to fetch edition: $edition');

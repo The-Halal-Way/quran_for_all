@@ -82,12 +82,15 @@ class SurahDetailsViewModel extends ChangeNotifier {
 
   bool isLastReadAyah(int ayahNumber) => _lastReadAyahNumber == ayahNumber;
 
-  Future<String> loadTafsir(AyahModel ayah, AppLanguage language) async {
+  Future<AyahTranslation?> loadAdditionalTranslation(
+    AyahModel ayah,
+    AppLanguage language,
+  ) async {
     final fullAyah = await _quranRepository.getAyah(
       ayah.surahId,
       ayah.ayahNumber,
     );
-    return (fullAyah ?? ayah).tafsirFor(language);
+    return (fullAyah ?? ayah).additionalTranslationFor(language);
   }
 
   Future<void> openSurah(SurahModel surah) async {

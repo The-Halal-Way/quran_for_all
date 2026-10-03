@@ -96,6 +96,16 @@ class AppDatabase {
       await _addTafsirColumns(db);
       await _resetTafsirColumns(db);
     }
+
+    if (oldVersion < 5) {
+      // Earlier imports removed bracketed words from these translations.
+      // Refresh them from the source while keeping Quran text and user data.
+      await _resetTafsirColumns(db);
+    }
+
+    if (oldVersion < 6) {
+      await _rebuildSearchIndex(db);
+    }
   }
 
   Future<void> _createBookmarksTable(Database db) async {
@@ -556,10 +566,42 @@ class AppDatabase {
   String _buildSearchContent(AyahModel ayah) {
     return [
       ayah.arabicText,
+      StringUtils.normalizeArabicForSearch(ayah.arabicText),
       ayah.transliterationEn,
       ayah.transliterationBn,
       ayah.translationEn,
       ayah.translationBn,
     ].join(' ');
+  }
+
+  Future<void> _rebuildSearchIndex(Database db) async {
+    await db.delete(DbConstants.tableAyahFts);
+    final rows = await db.query(
+      DbConstants.tableAyahs,
+      columns: const [
+        'id',
+        'arabic_text',
+        'transliteration_en',
+        'transliteration_bn',
+        'translation_en',
+        'translation_bn',
+      ],
+    );
+    final batch = db.batch();
+    for (final row in rows) {
+      final arabic = row['arabic_text'] as String? ?? '';
+      batch.insert(DbConstants.tableAyahFts, {
+        'ayah_id': row['id'],
+        'content': [
+          arabic,
+          StringUtils.normalizeArabicForSearch(arabic),
+          row['transliteration_en'] ?? '',
+          row['transliteration_bn'] ?? '',
+          row['translation_en'] ?? '',
+          row['translation_bn'] ?? '',
+        ].join(' '),
+      });
+    }
+    await batch.commit(noResult: true);
   }
 }

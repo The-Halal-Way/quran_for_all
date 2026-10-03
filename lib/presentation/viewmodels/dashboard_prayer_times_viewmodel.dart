@@ -37,6 +37,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   String? _nextPrayer;
   String? _currentPrayer;
   bool _warmingUpcomingDays = false;
+  int _loadVersion = 0;
 
   Map<String, String>? get prayerTimes => _prayerTimes;
   Map<String, String>? get prayerTimeRanges => _prayerTimeRanges;
@@ -51,9 +52,11 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
     if (_loading) {
       return;
     }
+    final version = ++_loadVersion;
 
     if (!forceRefresh) {
       final cached = await _loadPrayerTimesUseCase.loadCached();
+      if (version != _loadVersion) return;
       if (cached != null) {
         _applyDashboardData(cached);
         _error = '';
@@ -73,13 +76,15 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
       final dashboardData = await _loadPrayerTimesUseCase.syncToday(
         forceRefresh: forceRefresh,
       );
+      if (version != _loadVersion) return;
       _applyDashboardData(dashboardData);
-      _scheduleWarmUpcoming(forceRefresh: forceRefresh);
+      _scheduleWarmUpcoming(forceRefresh: forceRefresh, version: version);
       _error = '';
       _errorType = PrayerTimesErrorType.none;
       _loading = false;
       notifyListeners();
     } on PrayerTimesException catch (error) {
+      if (version != _loadVersion) return;
       if (hasData) {
         _loading = false;
         notifyListeners();
@@ -88,11 +93,25 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
 
       _setError(error.message, _mapErrorType(error.type));
     } catch (error) {
+      if (version != _loadVersion) return;
       _setError(
         'Failed to load prayer times: $error',
         PrayerTimesErrorType.unavailable,
       );
     }
+  }
+
+  Future<void> reloadForCalculationChange() async {
+    ++_loadVersion;
+    _prayerTimes = null;
+    _prayerTimeRanges = null;
+    _nextPrayer = null;
+    _currentPrayer = null;
+    _loading = false;
+    _error = '';
+    _errorType = PrayerTimesErrorType.none;
+    notifyListeners();
+    await loadPrayerTimes();
   }
 
   @override
@@ -109,9 +128,10 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   }
 
   Future<void> _refreshOnResume() async {
+    final version = _loadVersion;
     try {
       final refreshed = await _loadPrayerTimesUseCase.refreshAfterResume();
-      if (refreshed == null) {
+      if (refreshed == null || version != _loadVersion) {
         return;
       }
 
@@ -124,7 +144,10 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
     }
   }
 
-  void _scheduleWarmUpcoming({required bool forceRefresh}) {
+  void _scheduleWarmUpcoming({
+    required bool forceRefresh,
+    required int version,
+  }) {
     if (_warmingUpcomingDays) {
       return;
     }
@@ -134,7 +157,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
       _loadPrayerTimesUseCase
           .warmUpcoming(forceRefresh: forceRefresh)
           .then((dashboardData) {
-            if (dashboardData == null) {
+            if (dashboardData == null || version != _loadVersion) {
               return;
             }
 
@@ -146,6 +169,9 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
           })
           .whenComplete(() {
             _warmingUpcomingDays = false;
+            if (version != _loadVersion && hasData) {
+              _scheduleWarmUpcoming(forceRefresh: false, version: _loadVersion);
+            }
           }),
     );
   }

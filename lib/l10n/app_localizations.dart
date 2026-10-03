@@ -227,6 +227,204 @@ abstract class AppLocalizations {
   /// **'Dark'**
   String get settingsThemeDark;
 
+  /// No description provided for @settingsPrayerTimesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer time calculation'**
+  String get settingsPrayerTimesTitle;
+
+  /// No description provided for @settingsPrayerTimesDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a calculation method and Asr school, then adjust individual times to match your local mosque\'s timetable.'**
+  String get settingsPrayerTimesDescription;
+
+  /// No description provided for @settingsPrayerMethodLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculation method'**
+  String get settingsPrayerMethodLabel;
+
+  /// No description provided for @settingsPrayerSchoolLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Asr school'**
+  String get settingsPrayerSchoolLabel;
+
+  /// No description provided for @settingsPrayerSchoolStandard.
+  ///
+  /// In en, this message translates to:
+  /// **'Standard (Shafi, Maliki, Hanbali)'**
+  String get settingsPrayerSchoolStandard;
+
+  /// No description provided for @settingsPrayerSchoolHanafi.
+  ///
+  /// In en, this message translates to:
+  /// **'Hanafi'**
+  String get settingsPrayerSchoolHanafi;
+
+  /// No description provided for @settingsPrayerAdjustmentsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Local adjustments'**
+  String get settingsPrayerAdjustmentsTitle;
+
+  /// No description provided for @settingsPrayerAdjustmentsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Add or subtract minutes from each calculated time (up to 60 minutes). These changes also update the prayer widget.'**
+  String get settingsPrayerAdjustmentsDescription;
+
+  /// No description provided for @settingsPrayerOffsetFajr.
+  ///
+  /// In en, this message translates to:
+  /// **'Fajr'**
+  String get settingsPrayerOffsetFajr;
+
+  /// No description provided for @settingsPrayerOffsetSunrise.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunrise'**
+  String get settingsPrayerOffsetSunrise;
+
+  /// No description provided for @settingsPrayerOffsetDhuhr.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhuhr'**
+  String get settingsPrayerOffsetDhuhr;
+
+  /// No description provided for @settingsPrayerOffsetAsr.
+  ///
+  /// In en, this message translates to:
+  /// **'Asr'**
+  String get settingsPrayerOffsetAsr;
+
+  /// No description provided for @settingsPrayerOffsetMaghrib.
+  ///
+  /// In en, this message translates to:
+  /// **'Maghrib'**
+  String get settingsPrayerOffsetMaghrib;
+
+  /// No description provided for @settingsPrayerOffsetIsha.
+  ///
+  /// In en, this message translates to:
+  /// **'Isha'**
+  String get settingsPrayerOffsetIsha;
+
+  /// No description provided for @settingsPrayerOffsetMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes'**
+  String get settingsPrayerOffsetMinutes;
+
+  /// No description provided for @settingsPrayerOffsetInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a number from -60 to +60'**
+  String get settingsPrayerOffsetInvalid;
+
+  /// No description provided for @settingsPrayerResetOffsets.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset adjustments'**
+  String get settingsPrayerResetOffsets;
+
+  /// No description provided for @settingsPrayerSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save prayer settings'**
+  String get settingsPrayerSave;
+
+  /// No description provided for @settingsPrayerSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer settings saved. Times are refreshing.'**
+  String get settingsPrayerSaved;
+
+  /// No description provided for @settingsPrayerSaveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not save prayer settings. Try again.'**
+  String get settingsPrayerSaveFailed;
+
+  /// No description provided for @settingsPrayerMethodKarachi.
+  ///
+  /// In en, this message translates to:
+  /// **'University of Islamic Sciences, Karachi'**
+  String get settingsPrayerMethodKarachi;
+
+  /// No description provided for @settingsPrayerMethodIsna.
+  ///
+  /// In en, this message translates to:
+  /// **'Islamic Society of North America'**
+  String get settingsPrayerMethodIsna;
+
+  /// No description provided for @settingsPrayerMethodMwl.
+  ///
+  /// In en, this message translates to:
+  /// **'Muslim World League'**
+  String get settingsPrayerMethodMwl;
+
+  /// No description provided for @settingsPrayerMethodUmmAlQura.
+  ///
+  /// In en, this message translates to:
+  /// **'Umm Al-Qura, Makkah'**
+  String get settingsPrayerMethodUmmAlQura;
+
+  /// No description provided for @settingsPrayerMethodEgyptian.
+  ///
+  /// In en, this message translates to:
+  /// **'Egyptian General Authority'**
+  String get settingsPrayerMethodEgyptian;
+
+  /// No description provided for @settingsPrayerMethodGulf.
+  ///
+  /// In en, this message translates to:
+  /// **'Gulf Region'**
+  String get settingsPrayerMethodGulf;
+
+  /// No description provided for @settingsPrayerMethodKuwait.
+  ///
+  /// In en, this message translates to:
+  /// **'Kuwait'**
+  String get settingsPrayerMethodKuwait;
+
+  /// No description provided for @settingsPrayerMethodQatar.
+  ///
+  /// In en, this message translates to:
+  /// **'Qatar'**
+  String get settingsPrayerMethodQatar;
+
+  /// No description provided for @settingsPrayerMethodSingapore.
+  ///
+  /// In en, this message translates to:
+  /// **'Singapore (MUIS)'**
+  String get settingsPrayerMethodSingapore;
+
+  /// No description provided for @settingsPrayerMethodTurkey.
+  ///
+  /// In en, this message translates to:
+  /// **'Turkey (Diyanet)'**
+  String get settingsPrayerMethodTurkey;
+
+  /// No description provided for @settingsPrayerMethodMoonsighting.
+  ///
+  /// In en, this message translates to:
+  /// **'Moonsighting Committee'**
+  String get settingsPrayerMethodMoonsighting;
+
+  /// No description provided for @settingsPrayerMethodMalaysia.
+  ///
+  /// In en, this message translates to:
+  /// **'Malaysia (JAKIM)'**
+  String get settingsPrayerMethodMalaysia;
+
+  /// No description provided for @settingsPrayerMethodIndonesia.
+  ///
+  /// In en, this message translates to:
+  /// **'Indonesia (KEMENAG)'**
+  String get settingsPrayerMethodIndonesia;
+
   /// No description provided for @settingsOfflineTitle.
   ///
   /// In en, this message translates to:
@@ -236,7 +434,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsOfflineBody.
   ///
   /// In en, this message translates to:
-  /// **'Quran text, translations, and tafsir are stored locally after setup. Audio is cached after first play.'**
+  /// **'Quran text and translations are stored locally after setup. Audio is cached after first play.'**
   String get settingsOfflineBody;
 
   /// No description provided for @settingsHijriCalendarTitle.
@@ -509,41 +707,47 @@ abstract class AppLocalizations {
   /// **'Ready'**
   String get splashStatusReady;
 
-  /// No description provided for @splashStatusOfflineFallback.
-  ///
-  /// In en, this message translates to:
-  /// **'Ready with saved Quran data. Some newer content may sync later.'**
-  String get splashStatusOfflineFallback;
-
   /// No description provided for @splashOfflineReady.
   ///
   /// In en, this message translates to:
   /// **'Your Quran library stays available offline.'**
   String get splashOfflineReady;
 
-  /// No description provided for @splashRetrySetup.
+  /// No description provided for @quranDownloadTitle.
   ///
   /// In en, this message translates to:
-  /// **'Retry setup'**
-  String get splashRetrySetup;
+  /// **'Quran library needs a download'**
+  String get quranDownloadTitle;
 
-  /// No description provided for @splashSetupFailedTitle.
+  /// No description provided for @quranDownloadBody.
   ///
   /// In en, this message translates to:
-  /// **'Setup needs internet'**
-  String get splashSetupFailedTitle;
+  /// **'Connect to the internet to save Quran text and translations on this device.'**
+  String get quranDownloadBody;
 
-  /// No description provided for @splashSetupFailedBody.
+  /// No description provided for @quranDownloadInProgressTitle.
   ///
   /// In en, this message translates to:
-  /// **'Quran For All needs a network connection the first time it prepares the local Quran database. Check your internet connection and try again.'**
-  String get splashSetupFailedBody;
+  /// **'Preparing Quran library'**
+  String get quranDownloadInProgressTitle;
 
-  /// No description provided for @splashSetupFailedTip.
+  /// No description provided for @quranDownloadInProgressBody.
   ///
   /// In en, this message translates to:
-  /// **'After setup, Quran text, translations, tafsir, bookmarks, and reading progress work from local storage.'**
-  String get splashSetupFailedTip;
+  /// **'The Quran download is running in the background. Reading will appear here when it is ready.'**
+  String get quranDownloadInProgressBody;
+
+  /// No description provided for @quranDownloadRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry Quran download'**
+  String get quranDownloadRetry;
+
+  /// No description provided for @quranDownloadOtherSectionsReady.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer, Du\'a, and the other sections are available while you wait.'**
+  String get quranDownloadOtherSectionsReady;
 
   /// No description provided for @readQuranTitle.
   ///
@@ -713,23 +917,23 @@ abstract class AppLocalizations {
   /// **'Unable to play Bismillah right now. Please try again.'**
   String get readQuranUnablePlayBismillahAudio;
 
-  /// No description provided for @readQuranReadTafsirTooltip.
+  /// No description provided for @readQuranTranslationDetailsTitle.
   ///
   /// In en, this message translates to:
-  /// **'Read tafsir'**
-  String get readQuranReadTafsirTooltip;
+  /// **'Translation & source'**
+  String get readQuranTranslationDetailsTitle;
 
-  /// No description provided for @readQuranTafsirTitle.
+  /// No description provided for @readQuranNoTranslationBody.
   ///
   /// In en, this message translates to:
-  /// **'Tafsir'**
-  String get readQuranTafsirTitle;
+  /// **'No translation available for this ayah yet.'**
+  String get readQuranNoTranslationBody;
 
-  /// No description provided for @readQuranNoTafsirBody.
+  /// No description provided for @readQuranTranslatedBy.
   ///
   /// In en, this message translates to:
-  /// **'No tafsir available for this ayah yet.'**
-  String get readQuranNoTafsirBody;
+  /// **'Translation by {translator}'**
+  String readQuranTranslatedBy(String translator);
 
   /// No description provided for @readQuranMeccan.
   ///

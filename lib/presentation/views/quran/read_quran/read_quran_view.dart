@@ -14,9 +14,11 @@ import '../../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../../viewmodels/read_quran/search_viewmodel.dart';
 import '../../../viewmodels/read_quran/surah_details_viewmodel.dart';
 import '../../../viewmodels/settings_viewmodel.dart';
+import '../../../viewmodels/splash_viewmodel.dart';
 import '../../../widgets/common/app_gradient_background.dart';
 import '../../../widgets/common/app_page_scrollbar.dart';
 import '../../../widgets/quran/read_quran/home/read_quran_content_list.dart';
+import '../../../widgets/quran/quran_download_panel.dart';
 import '../../../../core/utils/app_page_route.dart';
 import 'bookmarks_view.dart';
 import 'search_view.dart';
@@ -28,6 +30,11 @@ class ReadQuranView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<ReadQuranViewModel>();
+    final quranSetup = context.watch<SplashViewModel?>();
+    final needsDownload =
+        quranSetup != null &&
+        !quranSetup.hasQuranData &&
+        viewModel.surahs.isEmpty;
     final settings = context.watch<SettingsViewModel>().settings;
     final textTheme = AppTheme.text(context);
     final responsive = AppResponsive.of(context);
@@ -59,12 +66,12 @@ class ReadQuranView extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            onPressed: () => _openBookmarks(context),
+            onPressed: needsDownload ? null : () => _openBookmarks(context),
             icon: const Icon(CupertinoIcons.bookmark_fill),
             tooltip: context.l10n.readQuranBookmarksTooltip,
           ),
           IconButton(
-            onPressed: () => _openSearch(context),
+            onPressed: needsDownload ? null : () => _openSearch(context),
             icon: const Icon(CupertinoIcons.search),
             tooltip: context.l10n.readQuranSearchTooltip,
             style: IconButton.styleFrom(
@@ -78,6 +85,18 @@ class ReadQuranView extends StatelessWidget {
       body: AppGradientBackground(
         child: viewModel.isLoading
             ? const Center(child: CircularProgressIndicator())
+            : needsDownload
+            ? Center(
+                child: SingleChildScrollView(
+                  padding: EdgeInsets.all(responsive.padding),
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxWidth: responsive.maxReadingContentWidth,
+                    ),
+                    child: QuranDownloadPanel(model: quranSetup),
+                  ),
+                ),
+              )
             : RefreshIndicator(
                 onRefresh: viewModel.load,
                 child: AppPageScrollbar(

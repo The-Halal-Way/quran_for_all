@@ -8,13 +8,13 @@ class SettingsContentLayout extends StatelessWidget {
     required this.preferences,
     required this.theme,
     required this.hijri,
-    required this.offline,
+    //required this.offline,
   });
 
   final Widget preferences;
   final Widget theme;
   final Widget hijri;
-  final Widget offline;
+  //final Widget offline;
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +28,8 @@ class SettingsContentLayout extends StatelessWidget {
               theme,
               const SizedBox(height: AppSpacing.md),
               hijri,
-              const SizedBox(height: AppSpacing.md),
-              offline,
+             // const SizedBox(height: AppSpacing.md),
+            // offline,
             ],
           );
         }
@@ -45,8 +45,8 @@ class SettingsContentLayout extends StatelessWidget {
                   theme,
                   const SizedBox(height: AppSpacing.md),
                   hijri,
-                  const SizedBox(height: AppSpacing.md),
-                  offline,
+                //  const SizedBox(height: AppSpacing.md),
+                // offline,
                 ],
               ),
             ),

@@ -6,7 +6,6 @@ import 'package:provider/provider.dart';
 import '../../../core/theme/app_spacing.dart';
 import '../../../core/utils/app_page_route.dart';
 import '../../../core/utils/app_responsive.dart';
-import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../viewmodels/splash_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/splash/splash_backdrop.dart';
@@ -15,7 +14,9 @@ import '../../widgets/splash/splash_status_panel.dart';
 import '../home/home_view.dart';
 
 class SplashView extends StatefulWidget {
-  const SplashView({super.key});
+  const SplashView({super.key, this.destination = const HomeView()});
+
+  final Widget destination;
 
   @override
   State<SplashView> createState() => _SplashViewState();
@@ -34,17 +35,15 @@ class _SplashViewState extends State<SplashView> {
 
   Future<void> _initialize() async {
     final viewModel = context.read<SplashViewModel>();
-    final success = await viewModel.initialize();
+    await viewModel.initialize();
 
-    if (!mounted || !success) {
+    if (!mounted) {
       return;
     }
 
-    unawaited(context.read<ReadQuranViewModel>().load());
-
     await Navigator.of(
       context,
-    ).pushReplacement(AppPageRoute<void>(builder: (_) => const HomeView()));
+    ).pushReplacement(AppPageRoute<void>(builder: (_) => widget.destination));
   }
 
   @override
@@ -84,11 +83,12 @@ class _SplashViewState extends State<SplashView> {
                             const SplashBranding(),
                             const SizedBox(height: AppSpacing.xxl),
                             SplashStatusPanel(
-                              isLoading: viewModel.isLoading,
+                              isLoading:
+                                  viewModel.isLoading ||
+                                  (!viewModel.hasQuranData &&
+                                      viewModel.isDownloading),
                               status: viewModel.status,
-                              errorMessage: viewModel.errorMessage,
-                              failureReason: viewModel.failureReason,
-                              onRetry: _initialize,
+                              hasQuranData: viewModel.hasQuranData,
                             ),
                           ],
                         ),

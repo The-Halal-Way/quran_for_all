@@ -12,6 +12,7 @@ import '../../widgets/settings/settings_view/settings_hero.dart';
 import '../../widgets/settings/settings_view/settings_hijri_panel.dart';
 import '../../widgets/settings/settings_view/settings_offline_badge.dart';
 import '../../widgets/settings/settings_view/settings_preferences_panel.dart';
+import '../../widgets/settings/settings_view/settings_prayer_times_panel.dart';
 import '../../widgets/settings/settings_view/settings_theme_panel.dart';
 
 class SettingsView extends StatelessWidget {
@@ -78,8 +79,12 @@ class SettingsView extends StatelessWidget {
                                   onAdjustmentChanged:
                                       viewModel.setHijriDateAdjustment,
                                 ),
-                                offline: const SettingsOfflineBadge(),
+                               // offline: const SettingsOfflineBadge(),
                               ),
+                              const SizedBox(height: AppSpacing.lg),
+                              const SettingsPrayerTimesPanel(),
+                              const SizedBox(height: AppSpacing.lg),
+                              SettingsOfflineBadge(),
                             ],
                           ),
                         ),

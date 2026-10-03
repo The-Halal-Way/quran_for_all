@@ -43,6 +43,26 @@ class PrayerTimesPreferencesStore {
     );
   }
 
+  Future<void> saveCalculationConfig(PrayerCalculationConfig config) async {
+    final previous = await getCalculationConfig();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_keyMethod, config.method.name);
+    await prefs.setString(_keyMadhab, config.madhab.name);
+    await prefs.setString(_keyAdjustments, config.adjustments.apiTuneString);
+    await prefs.setString(
+      _keyLatitudeAdjustment,
+      config.latitudeAdjustmentMethod.name,
+    );
+    await prefs.setString(_keyMidnightMode, config.midnightMode.name);
+    await prefs.setInt(_keyParamsVersion, config.paramsVersion);
+    await prefs.setString(_keyShafaq, config.shafaq);
+    if (previous.signatureSeed() != config.signatureSeed()) {
+      // The existing widget snapshot belongs to another calculation profile.
+      // Native widgets show their empty state until fresh times are fetched.
+      await PrayerHomeWidgetBridge.saveSnapshot('');
+    }
+  }
+
   Future<void> writeWidgetSnapshot(PrayerWidgetSnapshot snapshot) async {
     final prefs = await SharedPreferences.getInstance();
     final decorated = PrayerWidgetCalendar.decorate(

@@ -1,7 +1,19 @@
 import 'dart:convert';
 
 enum PrayerCalculationMethod {
-  muslimWorldLeague(apiMethodId: 3);
+  karachi(apiMethodId: 1),
+  islamicSocietyOfNorthAmerica(apiMethodId: 2),
+  muslimWorldLeague(apiMethodId: 3),
+  ummAlQura(apiMethodId: 4),
+  egyptian(apiMethodId: 5),
+  gulf(apiMethodId: 8),
+  kuwait(apiMethodId: 9),
+  qatar(apiMethodId: 10),
+  singapore(apiMethodId: 11),
+  turkey(apiMethodId: 13),
+  moonsightingCommittee(apiMethodId: 15),
+  malaysia(apiMethodId: 17),
+  indonesia(apiMethodId: 20);
 
   const PrayerCalculationMethod({required this.apiMethodId});
 
@@ -165,6 +177,21 @@ class PrayerCalculationConfig {
   final int paramsVersion;
   final String shafaq;
   final int sehriOffsetMinutes;
+
+  PrayerCalculationConfig copyWith({
+    PrayerCalculationMethod? method,
+    PrayerMadhab? madhab,
+    PrayerAdjustments? adjustments,
+  }) => PrayerCalculationConfig(
+    method: method ?? this.method,
+    madhab: madhab ?? this.madhab,
+    adjustments: adjustments ?? this.adjustments,
+    latitudeAdjustmentMethod: latitudeAdjustmentMethod,
+    midnightMode: midnightMode,
+    paramsVersion: paramsVersion,
+    shafaq: shafaq,
+    sehriOffsetMinutes: sehriOffsetMinutes,
+  );
 
   String signatureSeed() {
     return jsonEncode({

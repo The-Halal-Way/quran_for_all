@@ -75,10 +75,109 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsThemeDark => 'ডার্ক';
 
   @override
+  String get settingsPrayerTimesTitle => 'নামাজের সময় গণনা';
+
+  @override
+  String get settingsPrayerTimesDescription => 'গণনা পদ্ধতি ও আসরের মাযহাব বেছে নিন, তারপর স্থানীয় মসজিদের সময়সূচি অনুযায়ী প্রতিটি সময় সমন্বয় করুন।';
+
+  @override
+  String get settingsPrayerMethodLabel => 'গণনা পদ্ধতি';
+
+  @override
+  String get settingsPrayerSchoolLabel => 'আসরের মাযহাব';
+
+  @override
+  String get settingsPrayerSchoolStandard => 'সাধারণ (শাফেয়ি, মালিকি, হাম্বলি)';
+
+  @override
+  String get settingsPrayerSchoolHanafi => 'হানাফি';
+
+  @override
+  String get settingsPrayerAdjustmentsTitle => 'স্থানীয় সময় সমন্বয়';
+
+  @override
+  String get settingsPrayerAdjustmentsDescription => 'গণনাকৃত প্রতিটি সময়ে মিনিট যোগ বা বিয়োগ করুন (সর্বোচ্চ ৬০ মিনিট)। এই পরিবর্তন নামাজের উইজেটেও প্রযোজ্য হবে।';
+
+  @override
+  String get settingsPrayerOffsetFajr => 'ফজর';
+
+  @override
+  String get settingsPrayerOffsetSunrise => 'সূর্যোদয়';
+
+  @override
+  String get settingsPrayerOffsetDhuhr => 'যোহর';
+
+  @override
+  String get settingsPrayerOffsetAsr => 'আসর';
+
+  @override
+  String get settingsPrayerOffsetMaghrib => 'মাগরিব';
+
+  @override
+  String get settingsPrayerOffsetIsha => 'ইশা';
+
+  @override
+  String get settingsPrayerOffsetMinutes => 'মিনিট';
+
+  @override
+  String get settingsPrayerOffsetInvalid => '-৬০ থেকে +৬০-এর মধ্যে সংখ্যা লিখুন';
+
+  @override
+  String get settingsPrayerResetOffsets => 'সমন্বয় রিসেট করুন';
+
+  @override
+  String get settingsPrayerSave => 'নামাজের সেটিংস সংরক্ষণ করুন';
+
+  @override
+  String get settingsPrayerSaved => 'নামাজের সেটিংস সংরক্ষিত হয়েছে। সময় হালনাগাদ হচ্ছে।';
+
+  @override
+  String get settingsPrayerSaveFailed => 'নামাজের সেটিংস সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get settingsPrayerMethodKarachi => 'ইসলামিক সায়েন্সেস বিশ্ববিদ্যালয়, করাচি';
+
+  @override
+  String get settingsPrayerMethodIsna => 'ইসলামিক সোসাইটি অব নর্থ আমেরিকা';
+
+  @override
+  String get settingsPrayerMethodMwl => 'মুসলিম ওয়ার্ল্ড লীগ';
+
+  @override
+  String get settingsPrayerMethodUmmAlQura => 'উম্মুল কুরা, মক্কা';
+
+  @override
+  String get settingsPrayerMethodEgyptian => 'মিশরীয় জেনারেল অথরিটি';
+
+  @override
+  String get settingsPrayerMethodGulf => 'উপসাগরীয় অঞ্চল';
+
+  @override
+  String get settingsPrayerMethodKuwait => 'কুয়েত';
+
+  @override
+  String get settingsPrayerMethodQatar => 'কাতার';
+
+  @override
+  String get settingsPrayerMethodSingapore => 'সিঙ্গাপুর (MUIS)';
+
+  @override
+  String get settingsPrayerMethodTurkey => 'তুরস্ক (দিয়ানেত)';
+
+  @override
+  String get settingsPrayerMethodMoonsighting => 'মুনসাইটিং কমিটি';
+
+  @override
+  String get settingsPrayerMethodMalaysia => 'মালয়েশিয়া (JAKIM)';
+
+  @override
+  String get settingsPrayerMethodIndonesia => 'ইন্দোনেশিয়া (KEMENAG)';
+
+  @override
   String get settingsOfflineTitle => 'অফলাইন মোড চালু আছে';
 
   @override
-  String get settingsOfflineBody => 'সেটআপের পরে কুরআনের লেখা, অনুবাদ ও তাফসির স্থানীয়ভাবে সংরক্ষিত। অডিও প্রথমবার চালানোর পরে ক্যাশ হয়।';
+  String get settingsOfflineBody => 'সেটআপের পরে কুরআনের লেখা ও অনুবাদ স্থানীয়ভাবে সংরক্ষিত। অডিও প্রথমবার চালানোর পরে ক্যাশ হয়।';
 
   @override
   String get settingsHijriCalendarTitle => 'হিজরি ক্যালেন্ডার';
@@ -218,22 +317,25 @@ class AppLocalizationsBn extends AppLocalizations {
   String get splashStatusReady => 'প্রস্তুত';
 
   @override
-  String get splashStatusOfflineFallback => 'সংরক্ষিত কুরআন ডেটা দিয়ে প্রস্তুত। নতুন কিছু কনটেন্ট পরে সিঙ্ক হতে পারে।';
-
-  @override
   String get splashOfflineReady => 'আপনার কুরআন লাইব্রেরি অফলাইনেও প্রস্তুত থাকবে।';
 
   @override
-  String get splashRetrySetup => 'সেটআপ আবার চেষ্টা করুন';
+  String get quranDownloadTitle => 'কুরআন লাইব্রেরি ডাউনলোড করতে হবে';
 
   @override
-  String get splashSetupFailedTitle => 'সেটআপের জন্য ইন্টারনেট দরকার';
+  String get quranDownloadBody => 'এই ডিভাইসে কুরআনের লেখা ও অনুবাদ সংরক্ষণ করতে ইন্টারনেটে সংযুক্ত হন।';
 
   @override
-  String get splashSetupFailedBody => 'প্রথমবার স্থানীয় কুরআন ডাটাবেস প্রস্তুত করতে Quran For All-এর নেটওয়ার্ক সংযোগ দরকার। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।';
+  String get quranDownloadInProgressTitle => 'কুরআন লাইব্রেরি প্রস্তুত হচ্ছে';
 
   @override
-  String get splashSetupFailedTip => 'সেটআপের পরে কুরআনের লেখা, অনুবাদ, তাফসির, বুকমার্ক ও পড়ার অগ্রগতি স্থানীয় স্টোরেজ থেকে কাজ করবে।';
+  String get quranDownloadInProgressBody => 'পটভূমিতে কুরআন ডাউনলোড হচ্ছে। প্রস্তুত হলে এখানে পড়া যাবে।';
+
+  @override
+  String get quranDownloadRetry => 'কুরআন ডাউনলোড আবার চেষ্টা করুন';
+
+  @override
+  String get quranDownloadOtherSectionsReady => 'অপেক্ষার সময় নামাজ, দু\'আ ও অন্য বিভাগগুলো ব্যবহার করতে পারবেন।';
 
   @override
   String get readQuranTitle => 'কুরআন পড়ুন';
@@ -320,13 +422,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranUnablePlayBismillahAudio => 'এই মুহূর্তে বিসমিল্লাহর অডিও চালানো যাচ্ছে না। আবার চেষ্টা করুন।';
 
   @override
-  String get readQuranReadTafsirTooltip => 'তাফসির পড়ুন';
+  String get readQuranTranslationDetailsTitle => 'অনুবাদ ও উৎস';
 
   @override
-  String get readQuranTafsirTitle => 'তাফসির';
+  String get readQuranNoTranslationBody => 'এই আয়াতের অনুবাদ এখনও পাওয়া যায়নি।';
 
   @override
-  String get readQuranNoTafsirBody => 'এই আয়াতের তাফসির এখনও পাওয়া যায়নি।';
+  String readQuranTranslatedBy(String translator) {
+    return 'অনুবাদ: $translator';
+  }
 
   @override
   String get readQuranMeccan => 'মক্কী';

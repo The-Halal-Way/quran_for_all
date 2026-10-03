@@ -21,7 +21,7 @@ class SurahDetailsAyahItem extends StatelessWidget {
     required this.onPlay,
     required this.onToggleBookmark,
     required this.onMarkAsLastRead,
-    required this.loadTafsir,
+    required this.loadAdditionalTranslation,
   });
 
   final AyahModel ayah;
@@ -35,7 +35,7 @@ class SurahDetailsAyahItem extends StatelessWidget {
   final VoidCallback onPlay;
   final VoidCallback onToggleBookmark;
   final VoidCallback onMarkAsLastRead;
-  final Future<String> Function() loadTafsir;
+  final Future<AyahTranslation?> Function() loadAdditionalTranslation;
 
   @override
   Widget build(BuildContext context) {
@@ -93,6 +93,6 @@ class SurahDetailsAyahItem extends StatelessWidget {
     onPlay: onPlay,
     onToggleBookmark: onToggleBookmark,
     onMarkAsLastRead: onMarkAsLastRead,
-    loadTafsir: loadTafsir,
+    loadAdditionalTranslation: loadAdditionalTranslation,
   );
 }

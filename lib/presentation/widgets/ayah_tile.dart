@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../core/constants/app_constants.dart';
 import '../../core/enums/app_language.dart';
 import '../../core/localization/l10n_extensions.dart';
 import '../../core/theme/app_spacing.dart';
@@ -28,7 +29,7 @@ class AyahTile extends StatelessWidget {
     required this.onPlay,
     required this.onToggleBookmark,
     this.onMarkAsLastRead,
-    this.loadTafsir,
+    this.loadAdditionalTranslation,
   });
 
   final AyahModel ayah;
@@ -44,14 +45,14 @@ class AyahTile extends StatelessWidget {
   final VoidCallback onPlay;
   final VoidCallback onToggleBookmark;
   final VoidCallback? onMarkAsLastRead;
-  final Future<String> Function()? loadTafsir;
+  final Future<AyahTranslation?> Function()? loadAdditionalTranslation;
 
-  void _showTafsirSheet(BuildContext context) {
-    final tafsirFuture = loadTafsir == null
+  void _showTranslationSheet(BuildContext context) {
+    final translationFuture = loadAdditionalTranslation == null
         ? null
-        : Future<String>.sync(
-            loadTafsir!,
-          ).catchError((_) => ayah.tafsirFor(language));
+        : Future<AyahTranslation?>.sync(
+            loadAdditionalTranslation!,
+          ).catchError((_) => ayah.additionalTranslationFor(language));
     showModalBottomSheet<void>(
       context: context,
       useRootNavigator: true,
@@ -60,14 +61,14 @@ class AyahTile extends StatelessWidget {
       showDragHandle: true,
       useSafeArea: true,
       builder: (sheetContext) {
-        if (tafsirFuture == null) {
-          return _TafsirBottomSheet(
+        if (translationFuture == null) {
+          return _TranslationBottomSheet(
             ayah: ayah,
-            tafsir: ayah.tafsirFor(language),
+            translation: ayah.additionalTranslationFor(language),
           );
         }
-        return FutureBuilder<String>(
-          future: tafsirFuture,
+        return FutureBuilder<AyahTranslation?>(
+          future: translationFuture,
           builder: (context, snapshot) {
             if (snapshot.connectionState != ConnectionState.done) {
               return const SizedBox(
@@ -75,9 +76,10 @@ class AyahTile extends StatelessWidget {
                 child: Center(child: CircularProgressIndicator()),
               );
             }
-            return _TafsirBottomSheet(
+            return _TranslationBottomSheet(
               ayah: ayah,
-              tafsir: snapshot.data ?? ayah.tafsirFor(language),
+              translation:
+                  snapshot.data ?? ayah.additionalTranslationFor(language),
             );
           },
         );
@@ -85,11 +87,11 @@ class AyahTile extends StatelessWidget {
     );
   }
 
-  Widget _buildTafsirButton(BuildContext context) {
+  Widget _buildTranslationButton(BuildContext context) {
     return FilledButton.tonalIcon(
-      onPressed: () => _showTafsirSheet(context),
+      onPressed: () => _showTranslationSheet(context),
       icon: const Icon(CupertinoIcons.book, size: 18),
-      label: Text(context.l10n.readQuranTafsirTitle),
+      label: Text(context.l10n.readQuranTranslationDetailsTitle),
       style: FilledButton.styleFrom(
         visualDensity: VisualDensity.compact,
         padding: const EdgeInsets.symmetric(
@@ -116,7 +118,9 @@ class AyahTile extends StatelessWidget {
     return Card(
       child: LayoutBuilder(
         builder: (context, constraints) {
-          final isCompact = constraints.maxWidth < 420;
+          final isCompact =
+              constraints.maxWidth < 420 ||
+              MediaQuery.textScalerOf(context).scale(14) > 20;
 
           return Padding(
             padding: const EdgeInsets.all(AppSpacing.lg),
@@ -179,7 +183,7 @@ class AyahTile extends StatelessWidget {
                       Wrap(
                         spacing: AppSpacing.xs,
                         children: [
-                          _buildTafsirButton(context),
+                          _buildTranslationButton(context),
                           IconButton(
                             onPressed: onToggleBookmark,
                             icon: Icon(
@@ -271,7 +275,7 @@ class AyahTile extends StatelessWidget {
                         ),
                       ),
                       const Spacer(),
-                      _buildTafsirButton(context),
+                      _buildTranslationButton(context),
                       IconButton(
                         onPressed: onToggleBookmark,
                         icon: Icon(
@@ -336,6 +340,17 @@ class AyahTile extends StatelessWidget {
                 if (showTranslation && translation.isNotEmpty) ...[
                   const SizedBox(height: AppSpacing.md),
                   _TranslationLine(label: translationLabel, text: translation),
+                  const SizedBox(height: AppSpacing.xs),
+                  Text(
+                    context.l10n.readQuranTranslatedBy(
+                      language == AppLanguage.bangla
+                          ? AppConstants.banglaTranslator
+                          : AppConstants.englishTranslator,
+                    ),
+                    style: AppTheme.text(
+                      context,
+                    ).labelSmall.copyWith(color: colorScheme.onSurfaceVariant),
+                  ),
                 ],
               ],
             ),
@@ -405,6 +420,7 @@ class AyahTile extends StatelessWidget {
         return RichText(
           textAlign: TextAlign.right,
           textDirection: TextDirection.rtl,
+          textScaler: MediaQuery.textScalerOf(context),
           text: TextSpan(
             style: baseStyle,
             children: [
@@ -472,11 +488,14 @@ class _TranslationLine extends StatelessWidget {
   }
 }
 
-class _TafsirBottomSheet extends StatelessWidget {
-  const _TafsirBottomSheet({required this.ayah, required this.tafsir});
+class _TranslationBottomSheet extends StatelessWidget {
+  const _TranslationBottomSheet({
+    required this.ayah,
+    required this.translation,
+  });
 
   final AyahModel ayah;
-  final String tafsir;
+  final AyahTranslation? translation;
 
   @override
   Widget build(BuildContext context) {
@@ -489,54 +508,56 @@ class _TafsirBottomSheet extends StatelessWidget {
       minChildSize: 0.3,
       maxChildSize: 0.94,
       builder: (context, scrollController) {
-        return Padding(
+        return ListView(
+          controller: scrollController,
           padding: EdgeInsets.fromLTRB(
             AppSpacing.lg,
             0,
             AppSpacing.lg,
             media.viewInsets.bottom + AppSpacing.lg,
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+          children: [
+            Text(
+              context.l10n.readQuranTranslationDetailsTitle,
+              style: AppTheme.text(
+                context,
+              ).titleLarge.copyWith(fontWeight: AppTheme.weightExtraBold),
+            ),
+            const SizedBox(height: AppSpacing.xs),
+            Text(
+              '${context.l10n.readQuranSurahLabel} ${ayah.surahId}:${ayah.ayahNumber}',
+              style: AppTheme.text(context).labelLarge.copyWith(
+                color: colorScheme.primary,
+                fontWeight: AppTheme.weightBold,
+              ),
+            ),
+            const SizedBox(height: AppSpacing.md),
+            if (translation == null)
               Text(
-                context.l10n.readQuranTafsirTitle,
+                context.l10n.readQuranNoTranslationBody,
+                style: AppTheme.text(context).bodyMedium,
+              )
+            else ...[
+              Text(
+                '${translation!.language == AppLanguage.bangla ? context.l10n.languageBangla : context.l10n.languageEnglish} · ${translation!.edition}',
                 style: AppTheme.text(
                   context,
-                ).titleLarge.copyWith(fontWeight: AppTheme.weightExtraBold),
+                ).labelLarge.copyWith(color: colorScheme.onSurfaceVariant),
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
-                '${context.l10n.readQuranSurahLabel} ${ayah.surahId}:${ayah.ayahNumber}',
-                style: AppTheme.text(context).labelLarge.copyWith(
-                  color: colorScheme.primary,
-                  fontWeight: AppTheme.weightBold,
-                ),
+                context.l10n.readQuranTranslatedBy(translation!.translator),
+                style: AppTheme.text(
+                  context,
+                ).bodyMedium.copyWith(color: colorScheme.onSurfaceVariant),
               ),
               const SizedBox(height: AppSpacing.md),
-              Expanded(
-                child: tafsir.trim().isEmpty
-                    ? Center(
-                        child: Text(
-                          context.l10n.readQuranNoTafsirBody,
-                          textAlign: TextAlign.center,
-                          style: AppTheme.text(context).bodyMedium,
-                        ),
-                      )
-                    : ListView(
-                        controller: scrollController,
-                        children: [
-                          SelectableText(
-                            tafsir,
-                            style: AppTheme.text(
-                              context,
-                            ).bodyMedium.copyWith(height: 1.5),
-                          ),
-                        ],
-                      ),
+              SelectableText(
+                translation!.text,
+                style: AppTheme.text(context).bodyMedium.copyWith(height: 1.5),
               ),
             ],
-          ),
+          ],
         );
       },
     );
