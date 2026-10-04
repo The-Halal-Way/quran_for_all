@@ -14,6 +14,7 @@ class DailyDuahSubItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final note = item.localizedNote(context);
     return Container(
       padding: const EdgeInsets.all(AppSpacing.md),
       decoration: BoxDecoration(
@@ -43,6 +44,16 @@ class DailyDuahSubItemCard extends StatelessWidget {
             item.localizedTranslation(context),
             style: AppTheme.text(context).bodySmall.copyWith(height: 1.45),
           ),
+          if (note != null) ...[
+            const SizedBox(height: AppSpacing.sm),
+            Text(
+              note,
+              style: AppTheme.text(context).bodySmall.copyWith(
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+                height: 1.45,
+              ),
+            ),
+          ],
         ],
       ),
     );

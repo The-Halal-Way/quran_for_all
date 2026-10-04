@@ -61,6 +61,10 @@ void main() {
     );
     await tester.pumpAndSettle();
 
+    expect(find.byKey(const ValueKey('prayer-method')), findsNothing);
+    await tester.tap(find.text('Prayer time calculation'));
+    await tester.pumpAndSettle();
+
     await tester.tap(find.byKey(const ValueKey('prayer-method')));
     await tester.pumpAndSettle();
     await tester.tap(find.text('University of Islamic Sciences, Karachi').last);
@@ -74,7 +78,7 @@ void main() {
     final fajr = find.byKey(const ValueKey('prayer-adjustment-fajr'));
     await tester.ensureVisible(fajr);
     await tester.enterText(fajr, '61');
-    final save = find.text('Save prayer settings');
+    final save = find.text('Save');
     await tester.ensureVisible(save);
     await tester.tap(save);
     await tester.pumpAndSettle();
@@ -131,7 +135,9 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(find.text('নামাজের সময় গণনা'), findsOneWidget);
-    final save = find.text('নামাজের সেটিংস সংরক্ষণ করুন');
+    await tester.tap(find.text('নামাজের সময় গণনা'));
+    await tester.pumpAndSettle();
+    final save = find.text('সংরক্ষণ করুন');
     await tester.ensureVisible(save);
     await tester.pumpAndSettle();
     expect(tester.takeException(), isNull);

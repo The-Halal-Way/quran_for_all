@@ -23,6 +23,7 @@ import '../../../widgets/common/app_page_scrollbar.dart';
 import '../../../widgets/common/app_snackbar.dart';
 import '../../../widgets/empty_state.dart';
 import '../../../widgets/quran/read_quran/surah_details/surah_meta_card.dart';
+import '../../../widgets/quran/read_quran/surah_details/surah_reading_options.dart';
 import '../../../widgets/quran/read_quran/surah_details/surah_details_loading.dart';
 import '../../../../services/permission_helper.dart';
 
@@ -166,8 +167,10 @@ class _SurahDetailsViewState extends State<SurahDetailsView> {
                   ),
                 ),
                 SizedBox(height: AppSpacing.md),
-                // // Reading options: mode selector + pronunciation/translation.
-                // const SurahReadingOptions(),
+                // Reading options stay with the Quran reader because they
+                // directly change how this surah is rendered.
+                const SurahReadingOptions(),
+                SizedBox(height: AppSpacing.sm),
                 // ayah list
                 Expanded(
                   child: AppPageScrollbar(

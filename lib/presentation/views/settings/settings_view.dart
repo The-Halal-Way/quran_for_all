@@ -10,8 +10,9 @@ import '../../widgets/common/app_premium_page_background.dart';
 import '../../widgets/settings/settings_view/settings_content_layout.dart';
 import '../../widgets/settings/settings_view/settings_hero.dart';
 import '../../widgets/settings/settings_view/settings_hijri_panel.dart';
+import '../../widgets/settings/settings_view/settings_language_panel.dart';
+import '../../widgets/settings/settings_view/settings_legal_panel.dart';
 import '../../widgets/settings/settings_view/settings_offline_badge.dart';
-import '../../widgets/settings/settings_view/settings_preferences_panel.dart';
 import '../../widgets/settings/settings_view/settings_prayer_times_panel.dart';
 import '../../widgets/settings/settings_view/settings_theme_panel.dart';
 
@@ -56,17 +57,11 @@ class SettingsView extends StatelessWidget {
                                     : () => Navigator.maybePop(context),
                               ),
                               const SizedBox(height: AppSpacing.xxl),
+                              const SettingsPrayerTimesPanel(),
+                              const SizedBox(height: AppSpacing.lg),
                               SettingsContentLayout(
-                                preferences: SettingsPreferencesPanel(
-                                  showPronunciation:
-                                      viewModel.settings.showPronunciation,
-                                  showTranslation:
-                                      viewModel.settings.showTranslation,
+                                language: SettingsLanguagePanel(
                                   language: viewModel.settings.language,
-                                  onShowPronunciationChanged:
-                                      viewModel.setShowPronunciation,
-                                  onShowTranslationChanged:
-                                      viewModel.setShowTranslation,
                                   onLanguageChanged: viewModel.setLanguage,
                                 ),
                                 theme: SettingsThemePanel(
@@ -79,12 +74,11 @@ class SettingsView extends StatelessWidget {
                                   onAdjustmentChanged:
                                       viewModel.setHijriDateAdjustment,
                                 ),
-                               // offline: const SettingsOfflineBadge(),
                               ),
                               const SizedBox(height: AppSpacing.lg),
-                              const SettingsPrayerTimesPanel(),
-                              const SizedBox(height: AppSpacing.lg),
-                              SettingsOfflineBadge(),
+                              const SettingsOfflineBadge(),
+                              const SizedBox(height: AppSpacing.xxxl),
+                              const SettingsLegalPanel(),
                             ],
                           ),
                         ),

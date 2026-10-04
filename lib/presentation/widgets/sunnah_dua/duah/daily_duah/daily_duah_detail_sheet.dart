@@ -39,6 +39,7 @@ class _DailyDuahDetailSheetState extends State<DailyDuahDetailSheet> {
   @override
   Widget build(BuildContext context) {
     final item = widget.item;
+    final note = item.localizedNote(context);
     final text = AppTheme.text(context);
     final colorScheme = Theme.of(context).colorScheme;
 
@@ -122,11 +123,11 @@ class _DailyDuahDetailSheetState extends State<DailyDuahDetailSheet> {
               color: MyColors.tertiary,
               text: item.localizedTranslation(context),
             ),
-            if (item.note != null) ...[
+            if (note != null) ...[
               const SizedBox(height: AppSpacing.lg),
               DailyDuahDetailBlock(
                 color: MyColors.secondary,
-                text: item.note!,
+                text: note,
                 icon: Icons.info_outline_rounded,
               ),
             ],

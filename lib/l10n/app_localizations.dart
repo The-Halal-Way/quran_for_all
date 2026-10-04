@@ -62,7 +62,8 @@ import 'app_localizations_en.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -70,7 +71,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -82,17 +84,18 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('bn'),
-    Locale('en')
+    Locale('en'),
   ];
 
   /// No description provided for @appName.
@@ -196,6 +199,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Language preference'**
   String get settingsLanguagePreferenceLabel;
+
+  /// No description provided for @settingsLanguagePanelTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get settingsLanguagePanelTitle;
 
   /// No description provided for @settingsAppearanceTitle.
   ///
@@ -326,14 +335,26 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPrayerResetOffsets.
   ///
   /// In en, this message translates to:
-  /// **'Reset adjustments'**
+  /// **'Reset'**
   String get settingsPrayerResetOffsets;
 
   /// No description provided for @settingsPrayerSave.
   ///
   /// In en, this message translates to:
-  /// **'Save prayer settings'**
+  /// **'Save'**
   String get settingsPrayerSave;
+
+  /// No description provided for @settingsPrayerSaveSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply changes to your prayer times'**
+  String get settingsPrayerSaveSubtitle;
+
+  /// No description provided for @settingsPrayerResetSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Set all minute adjustments to zero'**
+  String get settingsPrayerResetSubtitle;
 
   /// No description provided for @settingsPrayerSaved.
   ///
@@ -454,6 +475,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Use this if your local moon-sighting date is one day different from the calculated date.'**
   String get settingsHijriAdjustmentSubtitle;
+
+  /// No description provided for @settingsLegalTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy & legal'**
+  String get settingsLegalTitle;
+
+  /// No description provided for @settingsLegalEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'Support & information'**
+  String get settingsLegalEyebrow;
+
+  /// No description provided for @settingsLegalSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy policy, terms, and support links will be available here.'**
+  String get settingsLegalSubtitle;
+
+  /// No description provided for @settingsPrivacyPolicyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get settingsPrivacyPolicyTitle;
+
+  /// No description provided for @settingsPrivacyPolicySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How your data is handled'**
+  String get settingsPrivacyPolicySubtitle;
+
+  /// No description provided for @settingsTermsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms & Conditions'**
+  String get settingsTermsTitle;
+
+  /// No description provided for @settingsTermsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidelines for using Quran For All'**
+  String get settingsTermsSubtitle;
+
+  /// No description provided for @settingsSupportTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact support'**
+  String get settingsSupportTitle;
+
+  /// No description provided for @settingsSupportSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Get help or share your feedback'**
+  String get settingsSupportSubtitle;
+
+  /// No description provided for @settingsLegalLinkPending.
+  ///
+  /// In en, this message translates to:
+  /// **'This link will be available soon.'**
+  String get settingsLegalLinkPending;
+
+  /// No description provided for @settingsLegalLinkFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open this link. Please try again.'**
+  String get settingsLegalLinkFailed;
 
   /// No description provided for @hijriAdjustmentTitle.
   ///
@@ -4617,7 +4704,10 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'{moduleTitle} · {lessonCount} lessons'**
-  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount);
+  String dashboardContinueLearningModuleDetail(
+    String moduleTitle,
+    int lessonCount,
+  );
 
   /// No description provided for @dashboardRetry.
   ///
@@ -6720,7 +6810,8 @@ abstract class AppLocalizations {
   String get dailyRemindersNoResults;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -6729,25 +6820,26 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['bn', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['bn', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'bn': return AppLocalizationsBn();
-    case 'en': return AppLocalizationsEn();
+    case 'bn':
+      return AppLocalizationsBn();
+    case 'en':
+      return AppLocalizationsEn();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
+    'that was used.',
   );
 }

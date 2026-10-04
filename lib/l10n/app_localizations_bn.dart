@@ -39,7 +39,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsTitle => 'সেটিংস';
 
   @override
-  String get settingsIntro => 'আপনার তিলাওয়াত ও পাঠ অভিজ্ঞতা ব্যক্তিগতকৃত করুন।';
+  String get settingsIntro =>
+      'আপনার তিলাওয়াত ও পাঠ অভিজ্ঞতা ব্যক্তিগতকৃত করুন।';
 
   @override
   String get settingsReadingPreferencesTitle => 'পাঠ পছন্দসমূহ';
@@ -48,16 +49,21 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsShowPronunciationTitle => 'উচ্চারণ দেখান';
 
   @override
-  String get settingsShowPronunciationSubtitle => 'আরবি আয়াতের নিচে প্রতিলিপি প্রদর্শন করুন।';
+  String get settingsShowPronunciationSubtitle =>
+      'আরবি আয়াতের নিচে প্রতিলিপি প্রদর্শন করুন।';
 
   @override
   String get settingsShowTranslationsTitle => 'অনুবাদ দেখান';
 
   @override
-  String get settingsShowTranslationsSubtitle => 'নির্বাচিত ভাষায় অর্থ প্রদর্শন করুন।';
+  String get settingsShowTranslationsSubtitle =>
+      'নির্বাচিত ভাষায় অর্থ প্রদর্শন করুন।';
 
   @override
   String get settingsLanguagePreferenceLabel => 'ভাষা পছন্দ';
+
+  @override
+  String get settingsLanguagePanelTitle => 'ভাষা';
 
   @override
   String get settingsAppearanceTitle => 'অ্যাপিয়ারেন্স';
@@ -78,7 +84,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsPrayerTimesTitle => 'নামাজের সময় গণনা';
 
   @override
-  String get settingsPrayerTimesDescription => 'গণনা পদ্ধতি ও আসরের মাযহাব বেছে নিন, তারপর স্থানীয় মসজিদের সময়সূচি অনুযায়ী প্রতিটি সময় সমন্বয় করুন।';
+  String get settingsPrayerTimesDescription =>
+      'গণনা পদ্ধতি ও আসরের মাযহাব বেছে নিন, তারপর স্থানীয় মসজিদের সময়সূচি অনুযায়ী প্রতিটি সময় সমন্বয় করুন।';
 
   @override
   String get settingsPrayerMethodLabel => 'গণনা পদ্ধতি';
@@ -87,7 +94,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsPrayerSchoolLabel => 'আসরের মাযহাব';
 
   @override
-  String get settingsPrayerSchoolStandard => 'সাধারণ (শাফেয়ি, মালিকি, হাম্বলি)';
+  String get settingsPrayerSchoolStandard =>
+      'সাধারণ (শাফেয়ি, মালিকি, হাম্বলি)';
 
   @override
   String get settingsPrayerSchoolHanafi => 'হানাফি';
@@ -96,7 +104,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsPrayerAdjustmentsTitle => 'স্থানীয় সময় সমন্বয়';
 
   @override
-  String get settingsPrayerAdjustmentsDescription => 'গণনাকৃত প্রতিটি সময়ে মিনিট যোগ বা বিয়োগ করুন (সর্বোচ্চ ৬০ মিনিট)। এই পরিবর্তন নামাজের উইজেটেও প্রযোজ্য হবে।';
+  String get settingsPrayerAdjustmentsDescription =>
+      'গণনাকৃত প্রতিটি সময়ে মিনিট যোগ বা বিয়োগ করুন (সর্বোচ্চ ৬০ মিনিট)। এই পরিবর্তন নামাজের উইজেটেও প্রযোজ্য হবে।';
 
   @override
   String get settingsPrayerOffsetFajr => 'ফজর';
@@ -120,22 +129,33 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsPrayerOffsetMinutes => 'মিনিট';
 
   @override
-  String get settingsPrayerOffsetInvalid => '-৬০ থেকে +৬০-এর মধ্যে সংখ্যা লিখুন';
+  String get settingsPrayerOffsetInvalid =>
+      '-৬০ থেকে +৬০-এর মধ্যে সংখ্যা লিখুন';
 
   @override
-  String get settingsPrayerResetOffsets => 'সমন্বয় রিসেট করুন';
+  String get settingsPrayerResetOffsets => 'রিসেট করুন';
 
   @override
-  String get settingsPrayerSave => 'নামাজের সেটিংস সংরক্ষণ করুন';
+  String get settingsPrayerSave => 'সংরক্ষণ করুন';
 
   @override
-  String get settingsPrayerSaved => 'নামাজের সেটিংস সংরক্ষিত হয়েছে। সময় হালনাগাদ হচ্ছে।';
+  String get settingsPrayerSaveSubtitle =>
+      'নামাজের সময়ে পরিবর্তন প্রয়োগ করুন';
 
   @override
-  String get settingsPrayerSaveFailed => 'নামাজের সেটিংস সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।';
+  String get settingsPrayerResetSubtitle => 'সব মিনিটের সমন্বয় শূন্য করুন';
 
   @override
-  String get settingsPrayerMethodKarachi => 'ইসলামিক সায়েন্সেস বিশ্ববিদ্যালয়, করাচি';
+  String get settingsPrayerSaved =>
+      'নামাজের সেটিংস সংরক্ষিত হয়েছে। সময় হালনাগাদ হচ্ছে।';
+
+  @override
+  String get settingsPrayerSaveFailed =>
+      'নামাজের সেটিংস সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get settingsPrayerMethodKarachi =>
+      'ইসলামিক সায়েন্সেস বিশ্ববিদ্যালয়, করাচি';
 
   @override
   String get settingsPrayerMethodIsna => 'ইসলামিক সোসাইটি অব নর্থ আমেরিকা';
@@ -177,7 +197,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsOfflineTitle => 'অফলাইন মোড চালু আছে';
 
   @override
-  String get settingsOfflineBody => 'সেটআপের পরে কুরআনের লেখা ও অনুবাদ স্থানীয়ভাবে সংরক্ষিত। অডিও প্রথমবার চালানোর পরে ক্যাশ হয়।';
+  String get settingsOfflineBody =>
+      'সেটআপের পরে কুরআনের লেখা ও অনুবাদ স্থানীয়ভাবে সংরক্ষিত। অডিও প্রথমবার চালানোর পরে ক্যাশ হয়।';
 
   @override
   String get settingsHijriCalendarTitle => 'হিজরি ক্যালেন্ডার';
@@ -186,7 +207,42 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsHijriAdjustmentTitle => 'স্থানীয় তারিখ সমন্বয়';
 
   @override
-  String get settingsHijriAdjustmentSubtitle => 'স্থানীয় চাঁদ দেখার তারিখ গণনাকৃত তারিখের চেয়ে এক দিন ভিন্ন হলে এটি ব্যবহার করুন।';
+  String get settingsHijriAdjustmentSubtitle =>
+      'স্থানীয় চাঁদ দেখার তারিখ গণনাকৃত তারিখের চেয়ে এক দিন ভিন্ন হলে এটি ব্যবহার করুন।';
+
+  @override
+  String get settingsLegalTitle => 'গোপনীয়তা ও আইনগত তথ্য';
+
+  @override
+  String get settingsLegalEyebrow => 'সহায়তা ও তথ্য';
+
+  @override
+  String get settingsLegalSubtitle =>
+      'গোপনীয়তা নীতি, শর্তাবলি ও সহায়তার লিংক এখানে পাওয়া যাবে।';
+
+  @override
+  String get settingsPrivacyPolicyTitle => 'গোপনীয়তা নীতি';
+
+  @override
+  String get settingsPrivacyPolicySubtitle => 'আপনার তথ্য কীভাবে ব্যবহৃত হয়';
+
+  @override
+  String get settingsTermsTitle => 'শর্তাবলি';
+
+  @override
+  String get settingsTermsSubtitle => 'Quran For All ব্যবহারের নির্দেশনা';
+
+  @override
+  String get settingsSupportTitle => 'সহায়তায় যোগাযোগ করুন';
+
+  @override
+  String get settingsSupportSubtitle => 'সহায়তা নিন বা মতামত জানান';
+
+  @override
+  String get settingsLegalLinkPending => 'এই লিংকটি শীঘ্রই যুক্ত করা হবে।';
+
+  @override
+  String get settingsLegalLinkFailed => 'লিংকটি খোলা যায়নি। আবার চেষ্টা করুন।';
 
   @override
   String get hijriAdjustmentTitle => 'চাঁদ দেখা অনুযায়ী সমন্বয়';
@@ -213,7 +269,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get hijriFinderTitle => 'তারিখ খুঁজুন';
 
   @override
-  String get hijriFinderSubtitle => 'গ্রেগরিয়ান তারিখ বেছে নিন অথবা সরাসরি হিজরি তারিখ দিন।';
+  String get hijriFinderSubtitle =>
+      'গ্রেগরিয়ান তারিখ বেছে নিন অথবা সরাসরি হিজরি তারিখ দিন।';
 
   @override
   String get hijriFindGregorianAction => 'গ্রেগরিয়ান বেছে নিন';
@@ -308,34 +365,40 @@ class AppLocalizationsBn extends AppLocalizations {
   String get splashBrandEyebrow => 'প্রতিটি আয়াতের সঙ্গী';
 
   @override
-  String get splashBrandTagline => 'স্বচ্ছতায় পড়ুন। প্রশান্তিতে ভাবুন। সহজে ফিরে আসুন।';
+  String get splashBrandTagline =>
+      'স্বচ্ছতায় পড়ুন। প্রশান্তিতে ভাবুন। সহজে ফিরে আসুন।';
 
   @override
-  String get splashStatusPreparing => 'স্থানীয় কুরআন ডাটাবেস প্রস্তুত হচ্ছে...';
+  String get splashStatusPreparing =>
+      'স্থানীয় কুরআন ডাটাবেস প্রস্তুত হচ্ছে...';
 
   @override
   String get splashStatusReady => 'প্রস্তুত';
 
   @override
-  String get splashOfflineReady => 'আপনার কুরআন লাইব্রেরি অফলাইনেও প্রস্তুত থাকবে।';
+  String get splashOfflineReady =>
+      'আপনার কুরআন লাইব্রেরি অফলাইনেও প্রস্তুত থাকবে।';
 
   @override
   String get quranDownloadTitle => 'কুরআন লাইব্রেরি ডাউনলোড করতে হবে';
 
   @override
-  String get quranDownloadBody => 'এই ডিভাইসে কুরআনের লেখা ও অনুবাদ সংরক্ষণ করতে ইন্টারনেটে সংযুক্ত হন।';
+  String get quranDownloadBody =>
+      'এই ডিভাইসে কুরআনের লেখা ও অনুবাদ সংরক্ষণ করতে ইন্টারনেটে সংযুক্ত হন।';
 
   @override
   String get quranDownloadInProgressTitle => 'কুরআন লাইব্রেরি প্রস্তুত হচ্ছে';
 
   @override
-  String get quranDownloadInProgressBody => 'পটভূমিতে কুরআন ডাউনলোড হচ্ছে। প্রস্তুত হলে এখানে পড়া যাবে।';
+  String get quranDownloadInProgressBody =>
+      'পটভূমিতে কুরআন ডাউনলোড হচ্ছে। প্রস্তুত হলে এখানে পড়া যাবে।';
 
   @override
   String get quranDownloadRetry => 'কুরআন ডাউনলোড আবার চেষ্টা করুন';
 
   @override
-  String get quranDownloadOtherSectionsReady => 'অপেক্ষার সময় নামাজ, দু\'আ ও অন্য বিভাগগুলো ব্যবহার করতে পারবেন।';
+  String get quranDownloadOtherSectionsReady =>
+      'অপেক্ষার সময় নামাজ, দু\'আ ও অন্য বিভাগগুলো ব্যবহার করতে পারবেন।';
 
   @override
   String get readQuranTitle => 'কুরআন পড়ুন';
@@ -398,7 +461,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranRemoveSurahBookmarkTooltip => 'সূরা বুকমার্ক সরান';
 
   @override
-  String get readQuranMarkAyahLastReadTooltip => 'শেষ পড়া হিসেবে আয়াত চিহ্নিত করুন';
+  String get readQuranMarkAyahLastReadTooltip =>
+      'শেষ পড়া হিসেবে আয়াত চিহ্নিত করুন';
 
   @override
   String get readQuranCurrentLastReadTooltip => 'বর্তমান শেষ পড়া আয়াত';
@@ -419,13 +483,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranStopBismillahAudio => 'বিসমিল্লাহ বন্ধ করুন';
 
   @override
-  String get readQuranUnablePlayBismillahAudio => 'এই মুহূর্তে বিসমিল্লাহর অডিও চালানো যাচ্ছে না। আবার চেষ্টা করুন।';
+  String get readQuranUnablePlayBismillahAudio =>
+      'এই মুহূর্তে বিসমিল্লাহর অডিও চালানো যাচ্ছে না। আবার চেষ্টা করুন।';
 
   @override
   String get readQuranTranslationDetailsTitle => 'অনুবাদ ও উৎস';
 
   @override
-  String get readQuranNoTranslationBody => 'এই আয়াতের অনুবাদ এখনও পাওয়া যায়নি।';
+  String get readQuranNoTranslationBody =>
+      'এই আয়াতের অনুবাদ এখনও পাওয়া যায়নি।';
 
   @override
   String readQuranTranslatedBy(String translator) {
@@ -445,16 +511,20 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranOpeningSurahTitle => 'সূরা খোলা হচ্ছে';
 
   @override
-  String get readQuranOpeningSurahBody => 'অফলাইন সংরক্ষণ থেকে আয়াত লোড হচ্ছে...';
+  String get readQuranOpeningSurahBody =>
+      'অফলাইন সংরক্ষণ থেকে আয়াত লোড হচ্ছে...';
 
   @override
-  String get readQuranUnablePlayAyahAudio => 'এই মুহূর্তে এই আয়াতের অডিও চালানো যাচ্ছে না।';
+  String get readQuranUnablePlayAyahAudio =>
+      'এই মুহূর্তে এই আয়াতের অডিও চালানো যাচ্ছে না।';
 
   @override
-  String get readQuranUnablePlayFullSurahAudio => 'এই মুহূর্তে পূর্ণ সূরার অডিও চালানো যাচ্ছে না।';
+  String get readQuranUnablePlayFullSurahAudio =>
+      'এই মুহূর্তে পূর্ণ সূরার অডিও চালানো যাচ্ছে না।';
 
   @override
-  String get readQuranAudioPermissionRequired => 'অডিও কন্ট্রোলের জন্য নোটিফিকেশন অনুমতি প্রয়োজন।';
+  String get readQuranAudioPermissionRequired =>
+      'অডিও কন্ট্রোলের জন্য নোটিফিকেশন অনুমতি প্রয়োজন।';
 
   @override
   String get readQuranGoToSettings => 'সেটিংসে যান';
@@ -469,7 +539,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranReadingOptionsTitle => 'পাঠের অপশনসমূহ';
 
   @override
-  String get readQuranReadingOptionsSubtitle => 'উচ্চারণ ও অনুবাদের প্রদর্শন নিয়ন্ত্রণ';
+  String get readQuranReadingOptionsSubtitle =>
+      'উচ্চারণ ও অনুবাদের প্রদর্শন নিয়ন্ত্রণ';
 
   @override
   String get readQuranReadingModeLabel => 'পাঠ মোড';
@@ -496,22 +567,26 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranSearchInsideSurahTitle => 'এই সূরার মধ্যে খুঁজুন';
 
   @override
-  String get readQuranSearchInsideSurahHint => 'আয়াত নম্বর, আরবি লেখা বা অনুবাদের কীওয়ার্ড লিখুন';
+  String get readQuranSearchInsideSurahHint =>
+      'আয়াত নম্বর, আরবি লেখা বা অনুবাদের কীওয়ার্ড লিখুন';
 
   @override
-  String get readQuranStartTypingSurahSearch => 'এই সূরায় খুঁজতে টাইপ করা শুরু করুন।';
+  String get readQuranStartTypingSurahSearch =>
+      'এই সূরায় খুঁজতে টাইপ করা শুরু করুন।';
 
   @override
   String get readQuranSearchAyahsTitle => 'আয়াত খুঁজুন';
 
   @override
-  String get readQuranSearchAyahsBody => 'দ্রুত যেতে লেখা বা আয়াত নম্বর টাইপ করুন।';
+  String get readQuranSearchAyahsBody =>
+      'দ্রুত যেতে লেখা বা আয়াত নম্বর টাইপ করুন।';
 
   @override
   String get readQuranNoResultsTitle => 'কোনো ফলাফল নেই';
 
   @override
-  String get readQuranNoResultsBody => 'ভিন্ন কীওয়ার্ড বা আয়াত নম্বর চেষ্টা করুন।';
+  String get readQuranNoResultsBody =>
+      'ভিন্ন কীওয়ার্ড বা আয়াত নম্বর চেষ্টা করুন।';
 
   @override
   String readQuranResultsCount(int count) {
@@ -536,16 +611,19 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranSearchEmptyTitle => 'সূরা, আয়াত বা পারা খুঁজুন';
 
   @override
-  String get readQuranSearchEmptyBody => '1:1, para 2 বা বাংলা/ইংরেজি কীওয়ার্ড ব্যবহার করুন।';
+  String get readQuranSearchEmptyBody =>
+      '1:1, para 2 বা বাংলা/ইংরেজি কীওয়ার্ড ব্যবহার করুন।';
 
   @override
   String get readQuranSearchFailedTitle => 'অনুসন্ধান ব্যর্থ';
 
   @override
-  String get readQuranSearchNoResultsBody => 'ছোট কীওয়ার্ড বা সরাসরি আয়াত রেফারেন্স ব্যবহার করুন।';
+  String get readQuranSearchNoResultsBody =>
+      'ছোট কীওয়ার্ড বা সরাসরি আয়াত রেফারেন্স ব্যবহার করুন।';
 
   @override
-  String get readQuranSearchHint => 'চেষ্টা করুন: Al-Baqarah, 2:255, para 1, mercy';
+  String get readQuranSearchHint =>
+      'চেষ্টা করুন: Al-Baqarah, 2:255, para 1, mercy';
 
   @override
   String get readQuranSearchingLabel => 'অনুসন্ধান চলছে...';
@@ -568,7 +646,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranNoBookmarksTitle => 'এখনও কোনো বুকমার্ক নেই';
 
   @override
-  String get readQuranNoBookmarksBody => 'পরে দ্রুত খুঁজে পেতে আয়াত বা সূরা বুকমার্ক করে রাখুন।';
+  String get readQuranNoBookmarksBody =>
+      'পরে দ্রুত খুঁজে পেতে আয়াত বা সূরা বুকমার্ক করে রাখুন।';
 
   @override
   String get readQuranCouldNotOpenBookmark => 'এই বুকমার্ক খোলা যায়নি।';
@@ -583,16 +662,19 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranAyahBookmarkRemoved => 'আয়াত বুকমার্ক সরানো হয়েছে।';
 
   @override
-  String get readQuranCouldNotUpdateAyahBookmark => 'এই মুহূর্তে আয়াত বুকমার্ক আপডেট করা যাচ্ছে না।';
+  String get readQuranCouldNotUpdateAyahBookmark =>
+      'এই মুহূর্তে আয়াত বুকমার্ক আপডেট করা যাচ্ছে না।';
 
   @override
   String get readQuranMarkedLastRead => 'শেষ পড়া হিসেবে চিহ্নিত হয়েছে।';
 
   @override
-  String get readQuranCouldNotMarkLastRead => 'এই আয়াতকে শেষ পড়া হিসেবে চিহ্নিত করা যায়নি।';
+  String get readQuranCouldNotMarkLastRead =>
+      'এই আয়াতকে শেষ পড়া হিসেবে চিহ্নিত করা যায়নি।';
 
   @override
-  String get readQuranVmSearchFailed => 'অনুসন্ধান ব্যর্থ হয়েছে। আবার চেষ্টা করুন।';
+  String get readQuranVmSearchFailed =>
+      'অনুসন্ধান ব্যর্থ হয়েছে। আবার চেষ্টা করুন।';
 
   @override
   String get readQuranVmNoSurahSelected => 'কোনো সূরা নির্বাচন করা হয়নি।';
@@ -601,7 +683,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readQuranVmUnableLoadAyahs => 'এই সূরার আয়াতগুলো লোড করা যায়নি।';
 
   @override
-  String get readQuranVmUnableLoadBookmarks => 'এই মুহূর্তে বুকমার্ক লোড করা যাচ্ছে না।';
+  String get readQuranVmUnableLoadBookmarks =>
+      'এই মুহূর্তে বুকমার্ক লোড করা যাচ্ছে না।';
 
   @override
   String get quranHubTitle => 'কুরআন';
@@ -613,7 +696,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quranHubHeroArabic => 'الْقُرْآن';
 
   @override
-  String get quranHubHeroBody => 'পড়া, শেখা, ভাবনা এবং আল্লাহর কালামের দিকে শান্ত হৃদয়ে ফিরে আসার এক জায়গা।';
+  String get quranHubHeroBody =>
+      'পড়া, শেখা, ভাবনা এবং আল্লাহর কালামের দিকে শান্ত হৃদয়ে ফিরে আসার এক জায়গা।';
 
   @override
   String get quranHubStatOfflineValue => 'অফলাইন';
@@ -631,13 +715,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quranHubSectionChooseTitle => 'আপনার কুরআন পথ বেছে নিন';
 
   @override
-  String get quranHubSectionChooseSubtitle => 'সরাসরি তিলাওয়াতে যান, অথবা ধীরে ধীরে কুরআনের দক্ষতা গড়ে তুলুন।';
+  String get quranHubSectionChooseSubtitle =>
+      'সরাসরি তিলাওয়াতে যান, অথবা ধীরে ধীরে কুরআনের দক্ষতা গড়ে তুলুন।';
 
   @override
   String get quranHubReadTitle => 'কুরআন পড়ুন';
 
   @override
-  String get quranHubReadSubtitle => 'মুসহাফ খুলুন, আয়াত খুঁজুন, বুকমার্ক রাখুন এবং শেষ পড়া থেকে চালিয়ে যান।';
+  String get quranHubReadSubtitle =>
+      'মুসহাফ খুলুন, আয়াত খুঁজুন, বুকমার্ক রাখুন এবং শেষ পড়া থেকে চালিয়ে যান।';
 
   @override
   String get quranHubReadAction => 'পড়া শুরু করুন';
@@ -654,7 +740,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quranHubLearnTitle => 'কুরআন শিখুন';
 
   @override
-  String get quranHubLearnSubtitle => 'উচ্চারণ, তাজবিদ, শব্দের অর্থ এবং নামাজের উপযোগী তিলাওয়াত ধাপে ধাপে গড়ে তুলুন।';
+  String get quranHubLearnSubtitle =>
+      'উচ্চারণ, তাজবিদ, শব্দের অর্থ এবং নামাজের উপযোগী তিলাওয়াত ধাপে ধাপে গড়ে তুলুন।';
 
   @override
   String get quranHubLearnAction => 'শেখা শুরু করুন';
@@ -666,13 +753,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quranHubHadithTitle => 'কুরআন সম্পর্কে হাদিস';
 
   @override
-  String get quranHubHadithSubtitle => 'পড়া ও শেখাকে সওয়াব, রহমত এবং আমলের সঙ্গে যুক্ত রাখার সংক্ষিপ্ত স্মরণ।';
+  String get quranHubHadithSubtitle =>
+      'পড়া ও শেখাকে সওয়াব, রহমত এবং আমলের সঙ্গে যুক্ত রাখার সংক্ষিপ্ত স্মরণ।';
 
   @override
   String get quranHubHadithBestTitle => 'শেখা ও শেখানো';
 
   @override
-  String get quranHubHadithBestBody => 'নবী ﷺ শিখিয়েছেন, তোমাদের মধ্যে উত্তম সে, যে কুরআন শেখে এবং শেখায়।';
+  String get quranHubHadithBestBody =>
+      'নবী ﷺ শিখিয়েছেন, তোমাদের মধ্যে উত্তম সে, যে কুরআন শেখে এবং শেখায়।';
 
   @override
   String get quranHubHadithBestSource => 'সহীহ বুখারী ৫০২৭';
@@ -681,7 +770,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quranHubHadithIntercessorTitle => 'সেদিনের সঙ্গী';
 
   @override
-  String get quranHubHadithIntercessorBody => 'কিয়ামতের দিন কুরআন তার সঙ্গীদের জন্য সুপারিশকারী হয়ে আসবে।';
+  String get quranHubHadithIntercessorBody =>
+      'কিয়ামতের দিন কুরআন তার সঙ্গীদের জন্য সুপারিশকারী হয়ে আসবে।';
 
   @override
   String get quranHubHadithIntercessorSource => 'সহীহ মুসলিম ৮০৪';
@@ -690,7 +780,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quranHubHadithEffortTitle => 'চেষ্টারও মর্যাদা আছে';
 
   @override
-  String get quranHubHadithEffortBody => 'দক্ষ তিলাওয়াতকারী সম্মানিত ফেরেশতাদের সঙ্গী; আর কষ্ট করে পড়লে দ্বিগুণ সওয়াব।';
+  String get quranHubHadithEffortBody =>
+      'দক্ষ তিলাওয়াতকারী সম্মানিত ফেরেশতাদের সঙ্গী; আর কষ্ট করে পড়লে দ্বিগুণ সওয়াব।';
 
   @override
   String get quranHubHadithEffortSource => 'সহীহ বুখারী ৪৯৩৭; সহীহ মুসলিম ৭৯৮';
@@ -702,13 +793,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get learnQuranTracksTitle => 'লার্নিং ট্র্যাকস';
 
   @override
-  String get learnQuranTracksSubtitle => 'ধাপে ধাপে এই সেকশনগুলো অনুসরণ করুন, অথবা আজ যেটি উন্নত করতে চান সেটি বেছে নিন।';
+  String get learnQuranTracksSubtitle =>
+      'ধাপে ধাপে এই সেকশনগুলো অনুসরণ করুন, অথবা আজ যেটি উন্নত করতে চান সেটি বেছে নিন।';
 
   @override
   String get learnHeaderTitle => 'কুরআন শিখুন';
 
   @override
-  String get learnHeaderSubtitle => 'হরফ, তাজবিদ ও সাবলীল তিলাওয়াতের জন্য কাঠামোবদ্ধ পাঠ।';
+  String get learnHeaderSubtitle =>
+      'হরফ, তাজবিদ ও সাবলীল তিলাওয়াতের জন্য কাঠামোবদ্ধ পাঠ।';
 
   @override
   String learnHeaderLessonProgress(int completed, int total) {
@@ -752,7 +845,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get learnNextAllLessonsCompletedTitle => 'সব লেসন সম্পন্ন';
 
   @override
-  String get learnNextAllLessonsCompletedBody => 'দারুণ কাজ। শেখা মজবুত করতে যেকোনো মডিউল আবার দেখুন।';
+  String get learnNextAllLessonsCompletedBody =>
+      'দারুণ কাজ। শেখা মজবুত করতে যেকোনো মডিউল আবার দেখুন।';
 
   @override
   String get learnNextStartLessonButton => 'পরের লেসন শুরু করুন';
@@ -783,19 +877,24 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get learnVmErrorLoadProgress => 'এই মুহূর্তে শেখার অগ্রগতি লোড করা যাচ্ছে না।';
+  String get learnVmErrorLoadProgress =>
+      'এই মুহূর্তে শেখার অগ্রগতি লোড করা যাচ্ছে না।';
 
   @override
-  String get learnVmErrorSaveProgress => 'অগ্রগতি সংরক্ষণ করা যাচ্ছে না। আবার চেষ্টা করুন।';
+  String get learnVmErrorSaveProgress =>
+      'অগ্রগতি সংরক্ষণ করা যাচ্ছে না। আবার চেষ্টা করুন।';
 
   @override
-  String get learnVmAudioMissingSample => 'এই লেসনের জন্য এখনো কোনো অডিও স্যাম্পল যুক্ত নেই।';
+  String get learnVmAudioMissingSample =>
+      'এই লেসনের জন্য এখনো কোনো অডিও স্যাম্পল যুক্ত নেই।';
 
   @override
-  String get learnVmAudioSampleNotFound => 'এই লেসনের অডিও স্যাম্পল আয়াত খুঁজে পাওয়া যায়নি।';
+  String get learnVmAudioSampleNotFound =>
+      'এই লেসনের অডিও স্যাম্পল আয়াত খুঁজে পাওয়া যায়নি।';
 
   @override
-  String get learnVmAudioPlayFailed => 'এই মুহূর্তে লেসনের অডিও চালানো যাচ্ছে না।';
+  String get learnVmAudioPlayFailed =>
+      'এই মুহূর্তে লেসনের অডিও চালানো যাচ্ছে না।';
 
   @override
   String get duahDailyTitle => 'দৈনন্দিন দু\'আ';
@@ -807,7 +906,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahPowerfulTitle => 'শক্তিশালী দু\'আসমূহ';
 
   @override
-  String get duahPowerfulSearchHint => 'শিরোনাম, অর্থ, আরবি বা সূত্র দিয়ে খুঁজুন';
+  String get duahPowerfulSearchHint =>
+      'শিরোনাম, অর্থ, আরবি বা সূত্র দিয়ে খুঁজুন';
 
   @override
   String get duahLanguageToggleTooltip => 'ভাষা পরিবর্তন করুন';
@@ -822,13 +922,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahLevelAdvanced => 'উন্নত স্তর';
 
   @override
-  String get duahLevelBeginnerDesc => 'প্রতিদিনের জন্য ছোট ও সহজে মুখস্থযোগ্য দু\'আ। যাত্রা শুরু করার জন্য উপযুক্ত।';
+  String get duahLevelBeginnerDesc =>
+      'প্রতিদিনের জন্য ছোট ও সহজে মুখস্থযোগ্য দু\'আ। যাত্রা শুরু করার জন্য উপযুক্ত।';
 
   @override
-  String get duahLevelIntermediateDesc => 'আরও পূর্ণ বাক্য ও গভীর অর্থসহ দু\'আ। বেসিক স্বাভাবিক হলে এটি আদর্শ।';
+  String get duahLevelIntermediateDesc =>
+      'আরও পূর্ণ বাক্য ও গভীর অর্থসহ দু\'আ। বেসিক স্বাভাবিক হলে এটি আদর্শ।';
 
   @override
-  String get duahLevelAdvancedDesc => 'ঐচ্ছিক অংশসহ পূর্ণ প্রামাণ্য দু\'আ এবং দৈনন্দিন সব পরিস্থিতি।';
+  String get duahLevelAdvancedDesc =>
+      'ঐচ্ছিক অংশসহ পূর্ণ প্রামাণ্য দু\'আ এবং দৈনন্দিন সব পরিস্থিতি।';
 
   @override
   String get duahCategoryEatingDrinking => 'খাওয়া ও পানীয়';
@@ -917,7 +1020,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahPowerfulImportantNoteTitle => 'গুরুত্বপূর্ণ নোট';
 
   @override
-  String get duahPowerfulImportantNoteBody => 'দু\'আ কবুল হয় আল্লাহ যেমন চান, যখন চান, এবং যে রূপে চান। এগুলো কুরআন ও হাদিসভিত্তিক প্রামাণ্য ও অত্যন্ত প্রিয় দু\'আ।';
+  String get duahPowerfulImportantNoteBody =>
+      'দু\'আ কবুল হয় আল্লাহ যেমন চান, যখন চান, এবং যে রূপে চান। এগুলো কুরআন ও হাদিসভিত্তিক প্রামাণ্য ও অত্যন্ত প্রিয় দু\'আ।';
 
   @override
   String get duahPowerfulBestFive => 'প্রথমে মুখস্থের জন্য সেরা ৫টি';
@@ -1010,7 +1114,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerRemainingLabel => 'বাকি';
 
   @override
-  String get dailyTrackerEmptyMessage => 'আপনার তালিকা খালি। শুরু করতে একটি কাজ যোগ করুন।';
+  String get dailyTrackerEmptyMessage =>
+      'আপনার তালিকা খালি। শুরু করতে একটি কাজ যোগ করুন।';
 
   @override
   String get dashboardTrackerPrompt => 'প্রতিদিনের আমল';
@@ -1040,7 +1145,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaRoutineTitle => 'সুন্নাহর সঙ্গে একটি দিন';
 
   @override
-  String get sunnahDuaRoutineSubtitle => 'ঘুম থেকে ওঠা থেকে ঘুমানো পর্যন্ত ছোট ছোট আমল।';
+  String get sunnahDuaRoutineSubtitle =>
+      'ঘুম থেকে ওঠা থেকে ঘুমানো পর্যন্ত ছোট ছোট আমল।';
 
   @override
   String get sunnahDuaSearchRoutine => 'দৈনন্দিন সুন্নাহ খুঁজুন';
@@ -1073,7 +1179,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaRestLabel => 'বিশ্রাম';
 
   @override
-  String get sunnahDuaHeroDescription => 'প্রতিদিনের ছোট ছোট মুহূর্তে আল্লাহর আরও কাছে।';
+  String get sunnahDuaHeroDescription =>
+      'প্রতিদিনের ছোট ছোট মুহূর্তে আল্লাহর আরও কাছে।';
 
   @override
   String get sunnahDuaOpenPractice => 'আমল পড়ুন';
@@ -1085,10 +1192,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineWakeUpSubtitle => 'কৃতজ্ঞতায় নতুন দিনের শুরু';
 
   @override
-  String get sunnahRoutineWakeUpPointsRaw => 'ঘুম থেকে উঠে আল্লাহর প্রশংসা করুন।||নামাজের আগে মিসওয়াক দিয়ে মুখ পরিষ্কার করুন।';
+  String get sunnahRoutineWakeUpPointsRaw =>
+      'ঘুম থেকে উঠে আল্লাহর প্রশংসা করুন।||নামাজের আগে মিসওয়াক দিয়ে মুখ পরিষ্কার করুন।';
 
   @override
-  String get sunnahRoutineWakeUpPractice => 'ঘুম থেকে ওঠার দু\'আ দিয়ে দিন শুরু করুন।';
+  String get sunnahRoutineWakeUpPractice =>
+      'ঘুম থেকে ওঠার দু\'আ দিয়ে দিন শুরু করুন।';
 
   @override
   String get sunnahRoutineWashroomTitle => 'শৌচাগারের আদব';
@@ -1097,10 +1206,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineWashroomSubtitle => 'পরিচ্ছন্নতা ও গোপনীয়তার যত্ন';
 
   @override
-  String get sunnahRoutineWashroomPointsRaw => 'শৌচাগারে প্রবেশের আগে দু\'আ পড়ুন।||শৌচকাজের পর পরিষ্কারের জন্য বাম হাত ব্যবহার করুন।||বের হয়ে আল্লাহর কাছে ক্ষমা চান।';
+  String get sunnahRoutineWashroomPointsRaw =>
+      'শৌচাগারে প্রবেশের আগে দু\'আ পড়ুন।||শৌচকাজের পর পরিষ্কারের জন্য বাম হাত ব্যবহার করুন।||বের হয়ে আল্লাহর কাছে ক্ষমা চান।';
 
   @override
-  String get sunnahRoutineWashroomPractice => 'প্রবেশ ও বের হওয়ার ছোট দু\'আগুলো শিখুন।';
+  String get sunnahRoutineWashroomPractice =>
+      'প্রবেশ ও বের হওয়ার ছোট দু\'আগুলো শিখুন।';
 
   @override
   String get sunnahRoutineMiswakTitle => 'মিসওয়াক';
@@ -1109,10 +1220,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineMiswakSubtitle => 'ইবাদতের আগে মুখের পরিচ্ছন্নতা';
 
   @override
-  String get sunnahRoutineMiswakPointsRaw => 'ঘুম থেকে উঠে মিসওয়াক করুন।||নামাজের আগে মিসওয়াক দিয়ে মুখ পরিষ্কার করুন।';
+  String get sunnahRoutineMiswakPointsRaw =>
+      'ঘুম থেকে উঠে মিসওয়াক করুন।||নামাজের আগে মিসওয়াক দিয়ে মুখ পরিষ্কার করুন।';
 
   @override
-  String get sunnahRoutineMiswakPractice => 'মিসওয়াক পরিষ্কার ও হাতের কাছে রাখুন।';
+  String get sunnahRoutineMiswakPractice =>
+      'মিসওয়াক পরিষ্কার ও হাতের কাছে রাখুন।';
 
   @override
   String get sunnahRoutineWuduTitle => 'ওজু';
@@ -1121,10 +1234,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineWuduSubtitle => 'যত্ন নিয়ে নামাজের প্রস্তুতি';
 
   @override
-  String get sunnahRoutineWuduPointsRaw => 'হাত ধুয়ে মুখ ও নাক পরিষ্কার করুন, এরপর মুখমণ্ডল ও হাত ধুয়ে নিন।||ওজুর নিয়ম অনুযায়ী মাথা মাসেহ করুন ও পা ধুয়ে নিন।||যত্নের সঙ্গে ওজু শেষ করে শাহাদাত পাঠ করুন।';
+  String get sunnahRoutineWuduPointsRaw =>
+      'হাত ধুয়ে মুখ ও নাক পরিষ্কার করুন, এরপর মুখমণ্ডল ও হাত ধুয়ে নিন।||ওজুর নিয়ম অনুযায়ী মাথা মাসেহ করুন ও পা ধুয়ে নিন।||যত্নের সঙ্গে ওজু শেষ করে শাহাদাত পাঠ করুন।';
 
   @override
-  String get sunnahRoutineWuduPractice => 'ওজুর পূর্ণ নিয়ম শিখুন; এখানে ফরজ কাজ ও সুন্নাহ আদব উভয়ের স্মরণ রয়েছে।';
+  String get sunnahRoutineWuduPractice =>
+      'ওজুর পূর্ণ নিয়ম শিখুন; এখানে ফরজ কাজ ও সুন্নাহ আদব উভয়ের স্মরণ রয়েছে।';
 
   @override
   String get sunnahRoutineDressingTitle => 'পোশাক ও জুতা';
@@ -1133,10 +1248,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineDressingSubtitle => 'ডান দিক দিয়ে শুরু করুন';
 
   @override
-  String get sunnahRoutineDressingPointsRaw => 'জুতা পরা ও সাজসজ্জায় ডান দিককে অগ্রাধিকার দিন।||আগে ডান পায়ের জুতা পরুন এবং খোলার সময় বাম পা দিয়ে শুরু করুন।';
+  String get sunnahRoutineDressingPointsRaw =>
+      'জুতা পরা ও সাজসজ্জায় ডান দিককে অগ্রাধিকার দিন।||আগে ডান পায়ের জুতা পরুন এবং খোলার সময় বাম পা দিয়ে শুরু করুন।';
 
   @override
-  String get sunnahRoutineDressingPractice => 'প্রস্তুত হওয়ার সময় ছোট এই সুন্নাহটি নিয়মিত পালন করুন।';
+  String get sunnahRoutineDressingPractice =>
+      'প্রস্তুত হওয়ার সময় ছোট এই সুন্নাহটি নিয়মিত পালন করুন।';
 
   @override
   String get sunnahRoutineAdhanTitle => 'আজান শোনা';
@@ -1145,10 +1262,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineAdhanSubtitle => 'থামুন ও আহ্বানে সাড়া দিন';
 
   @override
-  String get sunnahRoutineAdhanPointsRaw => 'মুয়াজ্জিনের কথার জবাব দিন।||নামাজ ও সাফল্যের আহ্বানে লা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ বলুন।||আজানের পর নবী ﷺ-এর ওপর দরুদ পড়ুন এবং তাঁর জন্য ওসিলা প্রার্থনা করুন।';
+  String get sunnahRoutineAdhanPointsRaw =>
+      'মুয়াজ্জিনের কথার জবাব দিন।||নামাজ ও সাফল্যের আহ্বানে লা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ বলুন।||আজানের পর নবী ﷺ-এর ওপর দরুদ পড়ুন এবং তাঁর জন্য ওসিলা প্রার্থনা করুন।';
 
   @override
-  String get sunnahRoutineAdhanPractice => 'কথাবার্তা থামিয়ে মনোযোগ দিয়ে আজান শুনুন ও জবাব দিন।';
+  String get sunnahRoutineAdhanPractice =>
+      'কথাবার্তা থামিয়ে মনোযোগ দিয়ে আজান শুনুন ও জবাব দিন।';
 
   @override
   String get sunnahRoutineMasjidTitle => 'মসজিদের আদব';
@@ -1157,10 +1276,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineMasjidSubtitle => 'শান্তি ও শ্রদ্ধার সঙ্গে প্রবেশ';
 
   @override
-  String get sunnahRoutineMasjidPointsRaw => 'নামাজ শুরু হলেও শান্তভাবে হেঁটে যান।||প্রবেশের সময় আল্লাহর রহমতের দরজা খুলে দেওয়ার দু\'আ করুন।||উপযুক্ত অবস্থায় বসার আগে দুই রাকাত নামাজ পড়ুন।||বের হওয়ার সময় আল্লাহর অনুগ্রহ প্রার্থনা করুন।';
+  String get sunnahRoutineMasjidPointsRaw =>
+      'নামাজ শুরু হলেও শান্তভাবে হেঁটে যান।||প্রবেশের সময় আল্লাহর রহমতের দরজা খুলে দেওয়ার দু\'আ করুন।||উপযুক্ত অবস্থায় বসার আগে দুই রাকাত নামাজ পড়ুন।||বের হওয়ার সময় আল্লাহর অনুগ্রহ প্রার্থনা করুন।';
 
   @override
-  String get sunnahRoutineMasjidPractice => 'অন্য মুসল্লিদের ইবাদতের পরিবেশ শান্ত রাখুন।';
+  String get sunnahRoutineMasjidPractice =>
+      'অন্য মুসল্লিদের ইবাদতের পরিবেশ শান্ত রাখুন।';
 
   @override
   String get sunnahRoutineAfterPrayerTitle => 'নামাজের পরে';
@@ -1169,10 +1290,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineAfterPrayerSubtitle => 'আরও কিছুক্ষণ আল্লাহর স্মরণে';
 
   @override
-  String get sunnahRoutineAfterPrayerPointsRaw => 'নামাজ শেষে তিনবার আল্লাহর কাছে ক্ষমা চান।||আল্লাহুম্মা আনতাস সালাম ওয়া মিনকাস সালাম পড়ুন।||সুবহানাল্লাহ, আলহামদুলিল্লাহ ও আল্লাহু আকবার প্রতিটি ৩৩ বার বলুন এবং বর্ণিত তাওহিদের বাক্য দিয়ে একশ পূর্ণ করুন।';
+  String get sunnahRoutineAfterPrayerPointsRaw =>
+      'নামাজ শেষে তিনবার আল্লাহর কাছে ক্ষমা চান।||আল্লাহুম্মা আনতাস সালাম ওয়া মিনকাস সালাম পড়ুন।||সুবহানাল্লাহ, আলহামদুলিল্লাহ ও আল্লাহু আকবার প্রতিটি ৩৩ বার বলুন এবং বর্ণিত তাওহিদের বাক্য দিয়ে একশ পূর্ণ করুন।';
 
   @override
-  String get sunnahRoutineAfterPrayerPractice => 'নামাজের পরের যিকিরের একটি পূর্ণ ও সহিহ পদ্ধতি শিখুন।';
+  String get sunnahRoutineAfterPrayerPractice =>
+      'নামাজের পরের যিকিরের একটি পূর্ণ ও সহিহ পদ্ধতি শিখুন।';
 
   @override
   String get sunnahRoutineMorningTitle => 'সকালের যিকির';
@@ -1181,10 +1304,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineMorningSubtitle => 'আল্লাহর স্মরণে দিন শুরু';
 
   @override
-  String get sunnahRoutineMorningPointsRaw => 'সকালে সুবহানাল্লাহি ওয়া বিহামদিহি একশ বার পড়ুন।';
+  String get sunnahRoutineMorningPointsRaw =>
+      'সকালে সুবহানাল্লাহি ওয়া বিহামদিহি একশ বার পড়ুন।';
 
   @override
-  String get sunnahRoutineMorningPractice => 'আরবি ও অর্থের জন্য সকাল ও সন্ধ্যার সংগ্রহটি খুলুন।';
+  String get sunnahRoutineMorningPractice =>
+      'আরবি ও অর্থের জন্য সকাল ও সন্ধ্যার সংগ্রহটি খুলুন।';
 
   @override
   String get sunnahRoutineDuhaTitle => 'দুহার নামাজ';
@@ -1193,10 +1318,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineDuhaSubtitle => 'সকালের অবসরে ইবাদত';
 
   @override
-  String get sunnahRoutineDuhaPointsRaw => 'সূর্য ভালোভাবে ওঠার পর থেকে মধ্যাকাশে পৌঁছানোর আগ পর্যন্ত দুহা নামাজের সময়ে দুই রাকাত পড়ুন।';
+  String get sunnahRoutineDuhaPointsRaw =>
+      'সূর্য ভালোভাবে ওঠার পর থেকে মধ্যাকাশে পৌঁছানোর আগ পর্যন্ত দুহা নামাজের সময়ে দুই রাকাত পড়ুন।';
 
   @override
-  String get sunnahRoutineDuhaPractice => 'দুহার সময়সীমার মধ্যে সুবিধাজনক একটি নিয়মিত সময় বেছে নিন।';
+  String get sunnahRoutineDuhaPractice =>
+      'দুহার সময়সীমার মধ্যে সুবিধাজনক একটি নিয়মিত সময় বেছে নিন।';
 
   @override
   String get sunnahRoutineLeavingHomeTitle => 'ঘর থেকে বের হওয়া';
@@ -1205,10 +1332,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineLeavingHomeSubtitle => 'আল্লাহর ভরসায় বাইরে যান';
 
   @override
-  String get sunnahRoutineLeavingHomePointsRaw => 'ঘর থেকে বের হওয়ার দু\'আ পড়ুন।||মনে রাখুন, শক্তি ও সামর্থ্য আল্লাহর পক্ষ থেকে আসে।';
+  String get sunnahRoutineLeavingHomePointsRaw =>
+      'ঘর থেকে বের হওয়ার দু\'আ পড়ুন।||মনে রাখুন, শক্তি ও সামর্থ্য আল্লাহর পক্ষ থেকে আসে।';
 
   @override
-  String get sunnahRoutineLeavingHomePractice => 'দরজায় পৌঁছে আল্লাহর ওপর ভরসার কথা স্মরণ করুন।';
+  String get sunnahRoutineLeavingHomePractice =>
+      'দরজায় পৌঁছে আল্লাহর ওপর ভরসার কথা স্মরণ করুন।';
 
   @override
   String get sunnahRoutineEatingTitle => 'খাওয়ার সুন্নাহ';
@@ -1217,10 +1346,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineEatingSubtitle => 'খাবারের টেবিলেও সুন্নাহ';
 
   @override
-  String get sunnahRoutineEatingPointsRaw => 'খাওয়ার আগে আল্লাহর নাম নিন।||ডান হাতে এবং নিজের কাছের দিক থেকে খান।||খাবারের দোষ বলবেন না।||পরিমিত খাবার খান।';
+  String get sunnahRoutineEatingPointsRaw =>
+      'খাওয়ার আগে আল্লাহর নাম নিন।||ডান হাতে এবং নিজের কাছের দিক থেকে খান।||খাবারের দোষ বলবেন না।||পরিমিত খাবার খান।';
 
   @override
-  String get sunnahRoutineEatingPractice => 'প্রতিটি খাবারের সময় এই আদবগুলো স্মরণ করুন।';
+  String get sunnahRoutineEatingPractice =>
+      'প্রতিটি খাবারের সময় এই আদবগুলো স্মরণ করুন।';
 
   @override
   String get sunnahRoutineDrinkingTitle => 'পানি পান';
@@ -1229,10 +1360,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineDrinkingSubtitle => 'ধীরে পান, আন্তরিক কৃতজ্ঞতা';
 
   @override
-  String get sunnahRoutineDrinkingPointsRaw => 'ডান হাতে পান করুন।||পানের মাঝে পাত্র থেকে মুখ সরিয়ে শ্বাস নিন।||পান শেষে আল্লাহর প্রশংসা করুন।';
+  String get sunnahRoutineDrinkingPointsRaw =>
+      'ডান হাতে পান করুন।||পানের মাঝে পাত্র থেকে মুখ সরিয়ে শ্বাস নিন।||পান শেষে আল্লাহর প্রশংসা করুন।';
 
   @override
-  String get sunnahRoutineDrinkingPractice => 'ধীরে পান করুন এবং পাত্রে শ্বাস ফেলবেন না।';
+  String get sunnahRoutineDrinkingPractice =>
+      'ধীরে পান করুন এবং পাত্রে শ্বাস ফেলবেন না।';
 
   @override
   String get sunnahRoutineGreetingsTitle => 'সালাম ও হাসি';
@@ -1241,10 +1374,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineGreetingsSubtitle => 'সম্ভাষণে আন্তরিকতা';
 
   @override
-  String get sunnahRoutineGreetingsPointsRaw => 'মানুষের মধ্যে সালামের প্রচলন করুন।||হাসিমুখে অন্যের সঙ্গে দেখা করুন।';
+  String get sunnahRoutineGreetingsPointsRaw =>
+      'মানুষের মধ্যে সালামের প্রচলন করুন।||হাসিমুখে অন্যের সঙ্গে দেখা করুন।';
 
   @override
-  String get sunnahRoutineGreetingsPractice => 'সাধারণ সাক্ষাৎও যত্ন ও শ্রদ্ধা দিয়ে শুরু করুন।';
+  String get sunnahRoutineGreetingsPractice =>
+      'সাধারণ সাক্ষাৎও যত্ন ও শ্রদ্ধা দিয়ে শুরু করুন।';
 
   @override
   String get sunnahRoutineSpeechTitle => 'কথার আদব';
@@ -1253,10 +1388,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineSpeechSubtitle => 'ভালো ও কোমল কথা';
 
   @override
-  String get sunnahRoutineSpeechPointsRaw => 'ভালো কথা বলুন, নয়তো নীরব থাকুন।||কথা ও আচরণে কোমল হোন।';
+  String get sunnahRoutineSpeechPointsRaw =>
+      'ভালো কথা বলুন, নয়তো নীরব থাকুন।||কথা ও আচরণে কোমল হোন।';
 
   @override
-  String get sunnahRoutineSpeechPractice => 'মন খারাপ বা রাগের সময় কথা বলার আগে একটু থামুন।';
+  String get sunnahRoutineSpeechPractice =>
+      'মন খারাপ বা রাগের সময় কথা বলার আগে একটু থামুন।';
 
   @override
   String get sunnahRoutineSneezingTitle => 'হাঁচি ও হাই';
@@ -1265,10 +1402,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineSneezingSubtitle => 'ছোট মুহূর্তে কৃতজ্ঞতা';
 
   @override
-  String get sunnahRoutineSneezingPointsRaw => 'হাঁচির পরে আলহামদুলিল্লাহ বলুন।||শ্রবণকারী মুসলিম ইয়ারহামুকাল্লাহ বলবেন; হাঁচিদাতা ইয়াহদিকুমুল্লাহু ওয়া ইউসলিহু বালাকুম বলবেন।||হাই তোলার সময় মুখ ঢেকে রাখুন।';
+  String get sunnahRoutineSneezingPointsRaw =>
+      'হাঁচির পরে আলহামদুলিল্লাহ বলুন।||শ্রবণকারী মুসলিম ইয়ারহামুকাল্লাহ বলবেন; হাঁচিদাতা ইয়াহদিকুমুল্লাহু ওয়া ইউসলিহু বালাকুম বলবেন।||হাই তোলার সময় মুখ ঢেকে রাখুন।';
 
   @override
-  String get sunnahRoutineSneezingPractice => 'যত্নের সঙ্গে জবাব দিতে কথোপকথনের দুই অংশই শিখুন।';
+  String get sunnahRoutineSneezingPractice =>
+      'যত্নের সঙ্গে জবাব দিতে কথোপকথনের দুই অংশই শিখুন।';
 
   @override
   String get sunnahRoutineReturningHomeTitle => 'ঘরে ফেরা';
@@ -1277,10 +1416,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineReturningHomeSubtitle => 'স্মরণ ও সালামে ঘরে ফিরুন';
 
   @override
-  String get sunnahRoutineReturningHomePointsRaw => 'ঘরে প্রবেশের সময় আল্লাহর নাম নিন।||ঘরের মানুষকে সালাম দিন।';
+  String get sunnahRoutineReturningHomePointsRaw =>
+      'ঘরে প্রবেশের সময় আল্লাহর নাম নিন।||ঘরের মানুষকে সালাম দিন।';
 
   @override
-  String get sunnahRoutineReturningHomePractice => 'শান্তিপূর্ণ সম্ভাষণে ঘরে ফেরা শুরু করুন।';
+  String get sunnahRoutineReturningHomePractice =>
+      'শান্তিপূর্ণ সম্ভাষণে ঘরে ফেরা শুরু করুন।';
 
   @override
   String get sunnahRoutineFamilyTitle => 'পরিবারের সঙ্গে';
@@ -1289,10 +1430,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineFamilySubtitle => 'ঘর থেকেই সদাচরণ';
 
   @override
-  String get sunnahRoutineFamilyPointsRaw => 'ঘরের কাজে সাহায্য করুন।||পরিবারের সঙ্গে সদয় আচরণ করুন।';
+  String get sunnahRoutineFamilyPointsRaw =>
+      'ঘরের কাজে সাহায্য করুন।||পরিবারের সঙ্গে সদয় আচরণ করুন।';
 
   @override
-  String get sunnahRoutineFamilyPractice => 'পরিবারের উপকারে আসে এমন একটি কাজ যত্ন নিয়ে করুন।';
+  String get sunnahRoutineFamilyPractice =>
+      'পরিবারের উপকারে আসে এমন একটি কাজ যত্ন নিয়ে করুন।';
 
   @override
   String get sunnahRoutineEveningTitle => 'সন্ধ্যার যিকির';
@@ -1301,10 +1444,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineEveningSubtitle => 'সন্ধ্যায় আল্লাহর স্মরণ';
 
   @override
-  String get sunnahRoutineEveningPointsRaw => 'সন্ধ্যায় সুবহানাল্লাহি ওয়া বিহামদিহি একশ বার পড়ুন।';
+  String get sunnahRoutineEveningPointsRaw =>
+      'সন্ধ্যায় সুবহানাল্লাহি ওয়া বিহামদিহি একশ বার পড়ুন।';
 
   @override
-  String get sunnahRoutineEveningPractice => 'দিন শেষে সকাল ও সন্ধ্যার সংগ্রহে ফিরে আসুন।';
+  String get sunnahRoutineEveningPractice =>
+      'দিন শেষে সকাল ও সন্ধ্যার সংগ্রহে ফিরে আসুন।';
 
   @override
   String get sunnahRoutineNightSafetyTitle => 'রাতের প্রস্তুতি';
@@ -1313,10 +1458,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineNightSafetySubtitle => 'ঘুমের আগে ঘরের যত্ন';
 
   @override
-  String get sunnahRoutineNightSafetyPointsRaw => 'খাবার ও পানীয়ের পাত্র ঢেকে রাখুন।||ঘুমের আগে দরজা বন্ধ করুন।||আগুনের বাতি ও খোলা আগুন নিরাপদে নিভিয়ে দিন।';
+  String get sunnahRoutineNightSafetyPointsRaw =>
+      'খাবার ও পানীয়ের পাত্র ঢেকে রাখুন।||ঘুমের আগে দরজা বন্ধ করুন।||আগুনের বাতি ও খোলা আগুন নিরাপদে নিভিয়ে দিন।';
 
   @override
-  String get sunnahRoutineNightSafetyPractice => 'রাতে ঘরের প্রস্তুতিতে এই কাজগুলো রাখুন।';
+  String get sunnahRoutineNightSafetyPractice =>
+      'রাতে ঘরের প্রস্তুতিতে এই কাজগুলো রাখুন।';
 
   @override
   String get sunnahRoutineBedtimeRecitationTitle => 'ঘুমের আগে তিলাওয়াত';
@@ -1325,10 +1472,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineBedtimeRecitationSubtitle => 'কুরআনে দিন শেষ';
 
   @override
-  String get sunnahRoutineBedtimeRecitationPointsRaw => 'দুই হাত একত্রে সূরা ইখলাস, ফালাক ও নাস পড়ে হালকা ফুঁ দিয়ে শরীরে বুলিয়ে নিন; তিনবার করুন।||ঘুমের আগে আয়াতুল কুরসি পড়ুন।||রাতে সূরা বাকারার শেষ দুই আয়াত পড়ুন।';
+  String get sunnahRoutineBedtimeRecitationPointsRaw =>
+      'দুই হাত একত্রে সূরা ইখলাস, ফালাক ও নাস পড়ে হালকা ফুঁ দিয়ে শরীরে বুলিয়ে নিন; তিনবার করুন।||ঘুমের আগে আয়াতুল কুরসি পড়ুন।||রাতে সূরা বাকারার শেষ দুই আয়াত পড়ুন।';
 
   @override
-  String get sunnahRoutineBedtimeRecitationPractice => 'ধীরে ধীরে আয়াতগুলো শিখুন এবং নিয়মিত পড়ুন।';
+  String get sunnahRoutineBedtimeRecitationPractice =>
+      'ধীরে ধীরে আয়াতগুলো শিখুন এবং নিয়মিত পড়ুন।';
 
   @override
   String get sunnahRoutineSleepTitle => 'ঘুমাতে যাওয়া';
@@ -1337,10 +1486,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineSleepSubtitle => 'আল্লাহর ভরসায় বিশ্রাম';
 
   @override
-  String get sunnahRoutineSleepPointsRaw => 'ঘুমাতে যাওয়ার আগে ওজু করুন।||শোয়ার আগে বিছানা ঝেড়ে নিন।||ডান কাতে শুয়ে ঘুমের দু\'আ পড়ুন।';
+  String get sunnahRoutineSleepPointsRaw =>
+      'ঘুমাতে যাওয়ার আগে ওজু করুন।||শোয়ার আগে বিছানা ঝেড়ে নিন।||ডান কাতে শুয়ে ঘুমের দু\'আ পড়ুন।';
 
   @override
-  String get sunnahRoutineSleepPractice => 'ক্লান্ত রাতেও পালন করা যায় এমন সহজ রুটিন রাখুন।';
+  String get sunnahRoutineSleepPractice =>
+      'ক্লান্ত রাতেও পালন করা যায় এমন সহজ রুটিন রাখুন।';
 
   @override
   String get sunnahRoutineForgivenessTitle => 'ক্ষমা প্রার্থনা';
@@ -1349,10 +1500,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineForgivenessSubtitle => 'বারবার আল্লাহর দিকে ফিরুন';
 
   @override
-  String get sunnahRoutineForgivenessPointsRaw => 'দিনজুড়ে নিয়মিত আল্লাহর কাছে ক্ষমা চান।||আন্তরিকভাবে ফিরে আসুন এবং অন্যায় ছাড়ার চেষ্টা করুন।';
+  String get sunnahRoutineForgivenessPointsRaw =>
+      'দিনজুড়ে নিয়মিত আল্লাহর কাছে ক্ষমা চান।||আন্তরিকভাবে ফিরে আসুন এবং অন্যায় ছাড়ার চেষ্টা করুন।';
 
   @override
-  String get sunnahRoutineForgivenessPractice => 'নবী ﷺ দিনে একশ বার আল্লাহর কাছে ক্ষমা চাইতেন ও তাওবা করতেন।';
+  String get sunnahRoutineForgivenessPractice =>
+      'নবী ﷺ দিনে একশ বার আল্লাহর কাছে ক্ষমা চাইতেন ও তাওবা করতেন।';
 
   @override
   String get sunnahRoutineDifficultyTitle => 'কষ্টের সময়';
@@ -1361,10 +1514,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineDifficultySubtitle => 'ভারাক্রান্ত মনে ভরসার দু\'আ';
 
   @override
-  String get sunnahRoutineDifficultyPointsRaw => 'দুশ্চিন্তা ও বিপদে এই দু\'আ পড়ুন।||আল্লাহর মহত্ত্ব ও সহনশীলতা স্মরণ করুন।';
+  String get sunnahRoutineDifficultyPointsRaw =>
+      'দুশ্চিন্তা ও বিপদে এই দু\'আ পড়ুন।||আল্লাহর মহত্ত্ব ও সহনশীলতা স্মরণ করুন।';
 
   @override
-  String get sunnahRoutineDifficultyPractice => 'কষ্টের সময় ধীরে ও মনোযোগ দিয়ে পড়ুন।';
+  String get sunnahRoutineDifficultyPractice =>
+      'কষ্টের সময় ধীরে ও মনোযোগ দিয়ে পড়ুন।';
 
   @override
   String get sunnahRoutineMorningEveningTitle => 'সকাল ও সন্ধ্যা';
@@ -1373,10 +1528,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineMorningEveningSubtitle => 'প্রতিদিনের যিকির';
 
   @override
-  String get sunnahRoutineMorningEveningPointsRaw => 'সকালে একশ বার এবং সন্ধ্যায় একশ বার সুবহানাল্লাহি ওয়া বিহামদিহি পড়ুন।';
+  String get sunnahRoutineMorningEveningPointsRaw =>
+      'সকালে একশ বার এবং সন্ধ্যায় একশ বার সুবহানাল্লাহি ওয়া বিহামদিহি পড়ুন।';
 
   @override
-  String get sunnahRoutineMorningEveningPractice => 'সকাল ও সন্ধ্যায় যিকিরের জন্য কিছু শান্ত সময় রাখুন।';
+  String get sunnahRoutineMorningEveningPractice =>
+      'সকাল ও সন্ধ্যায় যিকিরের জন্য কিছু শান্ত সময় রাখুন।';
 
   @override
   String get sunnahRoutineGratitudeTitle => 'কৃতজ্ঞতা';
@@ -1385,10 +1542,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineGratitudeSubtitle => 'চারপাশের নিয়ামত স্মরণ';
 
   @override
-  String get sunnahRoutineGratitudePointsRaw => 'কৃতজ্ঞ হতে আল্লাহর সাহায্য চান।||তাঁর পছন্দের নেক কাজ করার তাওফিক চান।';
+  String get sunnahRoutineGratitudePointsRaw =>
+      'কৃতজ্ঞ হতে আল্লাহর সাহায্য চান।||তাঁর পছন্দের নেক কাজ করার তাওফিক চান।';
 
   @override
-  String get sunnahRoutineGratitudePractice => 'এই কুরআনিক দু\'আ সুলাইমান আলাইহিস সালামের প্রার্থনার অংশ।';
+  String get sunnahRoutineGratitudePractice =>
+      'এই কুরআনিক দু\'আ সুলাইমান আলাইহিস সালামের প্রার্থনার অংশ।';
 
   @override
   String get sunnahRoutineFastingTitle => 'সুন্নাহ রোজা';
@@ -1397,16 +1556,19 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineFastingSubtitle => 'নফল ইবাদতের সময়';
 
   @override
-  String get sunnahRoutineFastingPointsRaw => 'সেহরি খান এবং সূর্যাস্তের পর দ্রুত ইফতার করুন।||সামর্থ্য থাকলে সোমবার রোজা রাখুন।||শাওয়ালের ছয় রোজা সম্পর্কে জানুন।';
+  String get sunnahRoutineFastingPointsRaw =>
+      'সেহরি খান এবং সূর্যাস্তের পর দ্রুত ইফতার করুন।||সামর্থ্য থাকলে সোমবার রোজা রাখুন।||শাওয়ালের ছয় রোজা সম্পর্কে জানুন।';
 
   @override
-  String get sunnahRoutineFastingPractice => 'ফরজ দায়িত্বের পাশাপাশি নিয়মিত নফল আমল গড়ে তুলুন।';
+  String get sunnahRoutineFastingPractice =>
+      'ফরজ দায়িত্বের পাশাপাশি নিয়মিত নফল আমল গড়ে তুলুন।';
 
   @override
   String get sunnahRoutineWakeUpSource => 'সহিহ বুখারি ৬৩১২, ২৪৫';
 
   @override
-  String get sunnahRoutineWashroomSource => 'সহিহ বুখারি ১৪২, ১৫৪; জামে তিরমিজি ৭';
+  String get sunnahRoutineWashroomSource =>
+      'সহিহ বুখারি ১৪২, ১৫৪; জামে তিরমিজি ৭';
 
   @override
   String get sunnahRoutineMiswakSource => 'সহিহ বুখারি ২৪৫, ৮৮৭';
@@ -1421,7 +1583,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineAdhanSource => 'সহিহ মুসলিম ৩৮৪, ৩৮৫';
 
   @override
-  String get sunnahRoutineMasjidSource => 'সহিহ বুখারি ৬৩৬, ৪৪৪; সহিহ মুসলিম ৭১৩a';
+  String get sunnahRoutineMasjidSource =>
+      'সহিহ বুখারি ৬৩৬, ৪৪৪; সহিহ মুসলিম ৭১৩a';
 
   @override
   String get sunnahRoutineAfterPrayerSource => 'সহিহ মুসলিম ৫৯১, ৫৯৭a';
@@ -1436,22 +1599,27 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineLeavingHomeSource => 'সুনান আবু দাউদ ৫০৯৫';
 
   @override
-  String get sunnahRoutineEatingSource => 'সহিহ বুখারি ৫৩৭৬, ৫৪০৯; জামে তিরমিজি ২৩৮০';
+  String get sunnahRoutineEatingSource =>
+      'সহিহ বুখারি ৫৩৭৬, ৫৪০৯; জামে তিরমিজি ২৩৮০';
 
   @override
-  String get sunnahRoutineDrinkingSource => 'সহিহ বুখারি ৫৬৩০, ৫৬৩১; সহিহ মুসলিম ২০২০, ২৭৩৪a';
+  String get sunnahRoutineDrinkingSource =>
+      'সহিহ বুখারি ৫৬৩০, ৫৬৩১; সহিহ মুসলিম ২০২০, ২৭৩৪a';
 
   @override
-  String get sunnahRoutineGreetingsSource => 'সহিহ মুসলিম ৫৪a; জামে তিরমিজি ১৯৫৬';
+  String get sunnahRoutineGreetingsSource =>
+      'সহিহ মুসলিম ৫৪a; জামে তিরমিজি ১৯৫৬';
 
   @override
   String get sunnahRoutineSpeechSource => 'সহিহ বুখারি ৬০১৮; সহিহ মুসলিম ২৫৯৪a';
 
   @override
-  String get sunnahRoutineSneezingSource => 'সহিহ বুখারি ৬২২৪; সহিহ মুসলিম ২৯৯৫a';
+  String get sunnahRoutineSneezingSource =>
+      'সহিহ বুখারি ৬২২৪; সহিহ মুসলিম ২৯৯৫a';
 
   @override
-  String get sunnahRoutineReturningHomeSource => 'সহিহ মুসলিম ২০১৮a; কুরআন ২৪:৬১';
+  String get sunnahRoutineReturningHomeSource =>
+      'সহিহ মুসলিম ২০১৮a; কুরআন ২৪:৬১';
 
   @override
   String get sunnahRoutineFamilySource => 'সহিহ বুখারি ৬৭৬; জামে তিরমিজি ৩৮৯৫';
@@ -1463,7 +1631,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineNightSafetySource => 'সহিহ বুখারি ৬২৯৫';
 
   @override
-  String get sunnahRoutineBedtimeRecitationSource => 'সহিহ বুখারি ৫০১৭, ২৩১১, ৫০০৯';
+  String get sunnahRoutineBedtimeRecitationSource =>
+      'সহিহ বুখারি ৫০১৭, ২৩১১, ৫০০৯';
 
   @override
   String get sunnahRoutineSleepSource => 'সহিহ বুখারি ২৪৭, ৬৩২০, ৬৩১২';
@@ -1481,61 +1650,80 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRoutineGratitudeSource => 'কুরআন ২৭:১৯';
 
   @override
-  String get sunnahRoutineFastingSource => 'সহিহ বুখারি ১৯২৩, ১৯৫৭; সহিহ মুসলিম ১১৬২, ১১৬৪; সহিহ বুখারি ১৮৯৪';
+  String get sunnahRoutineFastingSource =>
+      'সহিহ বুখারি ১৯২৩, ১৯৫৭; সহিহ মুসলিম ১১৬২, ১১৬৪; সহিহ বুখারি ১৮৯৪';
 
   @override
-  String get sunnahRecitationWakeArabic => 'الْحَمْدُ لِلَّهِ الَّذِيٓ أَحْيَانَا بَعْدَ مَآ أَمَاتَنَا وَإِلَيْهِ النُّشُورُ';
+  String get sunnahRecitationWakeArabic =>
+      'الْحَمْدُ لِلَّهِ الَّذِيٓ أَحْيَانَا بَعْدَ مَآ أَمَاتَنَا وَإِلَيْهِ النُّشُورُ';
 
   @override
-  String get sunnahRecitationWakePronunciation => 'আলহামদু লিল্লাহিল্লাজি আহইয়ানা বা\'দা মা আমাতানা ওয়া ইলাইহিন নুশুর।';
+  String get sunnahRecitationWakePronunciation =>
+      'আলহামদু লিল্লাহিল্লাজি আহইয়ানা বা\'দা মা আমাতানা ওয়া ইলাইহিন নুশুর।';
 
   @override
-  String get sunnahRecitationWakeTranslation => 'সমস্ত প্রশংসা আল্লাহর, যিনি আমাদের মৃত্যুর পর জীবন দিয়েছেন; তাঁর কাছেই পুনরুত্থান।';
+  String get sunnahRecitationWakeTranslation =>
+      'সমস্ত প্রশংসা আল্লাহর, যিনি আমাদের মৃত্যুর পর জীবন দিয়েছেন; তাঁর কাছেই পুনরুত্থান।';
 
   @override
-  String get sunnahRecitationWashroomArabic => 'اللَّهُمَّ إِنِّيٓ أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ\n\nغُفْرَانَكَ';
+  String get sunnahRecitationWashroomArabic =>
+      'اللَّهُمَّ إِنِّيٓ أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ\n\nغُفْرَانَكَ';
 
   @override
-  String get sunnahRecitationWashroomPronunciation => 'প্রবেশের আগে: আল্লাহুম্মা ইন্নি আউজু বিকা মিনাল খুবুছি ওয়াল খাবাইছ।\nবের হয়ে: গুফরানাক।';
+  String get sunnahRecitationWashroomPronunciation =>
+      'প্রবেশের আগে: আল্লাহুম্মা ইন্নি আউজু বিকা মিনাল খুবুছি ওয়াল খাবাইছ।\nবের হয়ে: গুফরানাক।';
 
   @override
-  String get sunnahRecitationWashroomTranslation => 'প্রবেশের আগে: হে আল্লাহ, আমি আপনার কাছে পুরুষ ও নারী শয়তান থেকে আশ্রয় চাই।\nবের হয়ে: আমি আপনার ক্ষমা চাই।';
+  String get sunnahRecitationWashroomTranslation =>
+      'প্রবেশের আগে: হে আল্লাহ, আমি আপনার কাছে পুরুষ ও নারী শয়তান থেকে আশ্রয় চাই।\nবের হয়ে: আমি আপনার ক্ষমা চাই।';
 
   @override
-  String get sunnahRecitationWuduArabic => 'أَشْهَدُ أَنْ لَآ إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ';
+  String get sunnahRecitationWuduArabic =>
+      'أَشْهَدُ أَنْ لَآ إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ';
 
   @override
-  String get sunnahRecitationWuduPronunciation => 'আশহাদু আল্লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু, ওয়া আশহাদু আন্না মুহাম্মাদান আবদুহু ওয়া রাসুলুহু।';
+  String get sunnahRecitationWuduPronunciation =>
+      'আশহাদু আল্লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু, ওয়া আশহাদু আন্না মুহাম্মাদান আবদুহু ওয়া রাসুলুহু।';
 
   @override
-  String get sunnahRecitationWuduTranslation => 'আমি সাক্ষ্য দিচ্ছি, এক আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই, তাঁর শরিক নেই; মুহাম্মাদ তাঁর বান্দা ও রাসুল।';
+  String get sunnahRecitationWuduTranslation =>
+      'আমি সাক্ষ্য দিচ্ছি, এক আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই, তাঁর শরিক নেই; মুহাম্মাদ তাঁর বান্দা ও রাসুল।';
 
   @override
-  String get sunnahRecitationMasjidArabic => 'اللَّهُمَّ افْتَحْ لِيٓ أَبْوَابَ رَحْمَتِكَ\n\nاللَّهُمَّ إِنِّيٓ أَسْأَلُكَ مِنْ فَضْلِكَ';
+  String get sunnahRecitationMasjidArabic =>
+      'اللَّهُمَّ افْتَحْ لِيٓ أَبْوَابَ رَحْمَتِكَ\n\nاللَّهُمَّ إِنِّيٓ أَسْأَلُكَ مِنْ فَضْلِكَ';
 
   @override
-  String get sunnahRecitationMasjidPronunciation => 'প্রবেশে: আল্লাহুম্মাফতাহ লি আবওয়াবা রহমাতিক।\nবের হতে: আল্লাহুম্মা ইন্নি আসআলুকা মিন ফাদলিক।';
+  String get sunnahRecitationMasjidPronunciation =>
+      'প্রবেশে: আল্লাহুম্মাফতাহ লি আবওয়াবা রহমাতিক।\nবের হতে: আল্লাহুম্মা ইন্নি আসআলুকা মিন ফাদলিক।';
 
   @override
-  String get sunnahRecitationMasjidTranslation => 'প্রবেশে: হে আল্লাহ, আমার জন্য আপনার রহমতের দরজা খুলে দিন।\nবের হতে: হে আল্লাহ, আমি আপনার অনুগ্রহ চাই।';
+  String get sunnahRecitationMasjidTranslation =>
+      'প্রবেশে: হে আল্লাহ, আমার জন্য আপনার রহমতের দরজা খুলে দিন।\nবের হতে: হে আল্লাহ, আমি আপনার অনুগ্রহ চাই।';
 
   @override
-  String get sunnahRecitationAfterPrayerArabic => 'أَسْتَغْفِرُ اللَّهَ\nاللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ ذَا الْجَلَالِ وَالْإِكْرَامِ';
+  String get sunnahRecitationAfterPrayerArabic =>
+      'أَسْتَغْفِرُ اللَّهَ\nاللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ ذَا الْجَلَالِ وَالْإِكْرَامِ';
 
   @override
-  String get sunnahRecitationAfterPrayerPronunciation => 'আস্তাগফিরুল্লাহ (তিনবার)।\nআল্লাহুম্মা আনতাস সালামু ওয়া মিনকাস সালাম, তাবারাকতা জাল জালালি ওয়াল ইকরাম।';
+  String get sunnahRecitationAfterPrayerPronunciation =>
+      'আস্তাগফিরুল্লাহ (তিনবার)।\nআল্লাহুম্মা আনতাস সালামু ওয়া মিনকাস সালাম, তাবারাকতা জাল জালালি ওয়াল ইকরাম।';
 
   @override
-  String get sunnahRecitationAfterPrayerTranslation => 'আমি আল্লাহর ক্ষমা চাই।\nহে আল্লাহ, আপনি শান্তি, আপনার কাছ থেকেই শান্তি আসে। আপনি বরকতময়, মহিমা ও সম্মানের অধিকারী।';
+  String get sunnahRecitationAfterPrayerTranslation =>
+      'আমি আল্লাহর ক্ষমা চাই।\nহে আল্লাহ, আপনি শান্তি, আপনার কাছ থেকেই শান্তি আসে। আপনি বরকতময়, মহিমা ও সম্মানের অধিকারী।';
 
   @override
-  String get sunnahRecitationLeavingHomeArabic => 'بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ';
+  String get sunnahRecitationLeavingHomeArabic =>
+      'بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ';
 
   @override
-  String get sunnahRecitationLeavingHomePronunciation => 'বিসমিল্লাহি তাওয়াক্কালতু আলাল্লাহ, ওয়ালা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ।';
+  String get sunnahRecitationLeavingHomePronunciation =>
+      'বিসমিল্লাহি তাওয়াক্কালতু আলাল্লাহ, ওয়ালা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ।';
 
   @override
-  String get sunnahRecitationLeavingHomeTranslation => 'আল্লাহর নামে, আমি আল্লাহর ওপর ভরসা করলাম। আল্লাহর সাহায্য ছাড়া কোনো শক্তি বা সামর্থ্য নেই।';
+  String get sunnahRecitationLeavingHomeTranslation =>
+      'আল্লাহর নামে, আমি আল্লাহর ওপর ভরসা করলাম। আল্লাহর সাহায্য ছাড়া কোনো শক্তি বা সামর্থ্য নেই।';
 
   @override
   String get sunnahRecitationEatingArabic => 'بِسْمِ اللَّهِ';
@@ -1547,13 +1735,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRecitationEatingTranslation => 'আল্লাহর নামে।';
 
   @override
-  String get sunnahRecitationSneezingArabic => 'الْحَمْدُ لِلَّهِ\nيَرْحَمُكَ اللَّهُ\nيَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ';
+  String get sunnahRecitationSneezingArabic =>
+      'الْحَمْدُ لِلَّهِ\nيَرْحَمُكَ اللَّهُ\nيَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ';
 
   @override
-  String get sunnahRecitationSneezingPronunciation => 'আলহামদুলিল্লাহ।\nইয়ারহামুকাল্লাহ।\nইয়াহদিকুমুল্লাহু ওয়া ইউসলিহু বালাকুম।';
+  String get sunnahRecitationSneezingPronunciation =>
+      'আলহামদুলিল্লাহ।\nইয়ারহামুকাল্লাহ।\nইয়াহদিকুমুল্লাহু ওয়া ইউসলিহু বালাকুম।';
 
   @override
-  String get sunnahRecitationSneezingTranslation => 'সমস্ত প্রশংসা আল্লাহর।\nআল্লাহ আপনার প্রতি দয়া করুন।\nআল্লাহ আপনাদের হিদায়াত দিন ও অবস্থা সংশোধন করুন।';
+  String get sunnahRecitationSneezingTranslation =>
+      'সমস্ত প্রশংসা আল্লাহর।\nআল্লাহ আপনার প্রতি দয়া করুন।\nআল্লাহ আপনাদের হিদায়াত দিন ও অবস্থা সংশোধন করুন।';
 
   @override
   String get sunnahRecitationSleepArabic => 'بِاسْمِكَ أَمُوتُ وَأَحْيَا';
@@ -1571,34 +1762,44 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahRecitationForgivenessPronunciation => 'আস্তাগফিরুল্লাহ।';
 
   @override
-  String get sunnahRecitationForgivenessTranslation => 'আমি আল্লাহর কাছে ক্ষমা চাই।';
+  String get sunnahRecitationForgivenessTranslation =>
+      'আমি আল্লাহর কাছে ক্ষমা চাই।';
 
   @override
-  String get sunnahRecitationDifficultyArabic => 'لَآ إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ';
+  String get sunnahRecitationDifficultyArabic =>
+      'لَآ إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَآ إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ';
 
   @override
-  String get sunnahRecitationDifficultyPronunciation => 'লা ইলাহা ইল্লাল্লাহুল আযিমুল হালিম। লা ইলাহা ইল্লাল্লাহু রব্বুল আরশিল আযিম। লা ইলাহা ইল্লাল্লাহু রব্বুস সামাওয়াতি ওয়া রব্বুল আরদি ওয়া রব্বুল আরশিল কারিম।';
+  String get sunnahRecitationDifficultyPronunciation =>
+      'লা ইলাহা ইল্লাল্লাহুল আযিমুল হালিম। লা ইলাহা ইল্লাল্লাহু রব্বুল আরশিল আযিম। লা ইলাহা ইল্লাল্লাহু রব্বুস সামাওয়াতি ওয়া রব্বুল আরদি ওয়া রব্বুল আরশিল কারিম।';
 
   @override
-  String get sunnahRecitationDifficultyTranslation => 'মহান ও সহনশীল আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই। মহান আরশের রব আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই। আসমানসমূহ, পৃথিবী ও সম্মানিত আরশের রব আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই।';
+  String get sunnahRecitationDifficultyTranslation =>
+      'মহান ও সহনশীল আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই। মহান আরশের রব আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই। আসমানসমূহ, পৃথিবী ও সম্মানিত আরশের রব আল্লাহ ছাড়া কোনো সত্য উপাস্য নেই।';
 
   @override
-  String get sunnahRecitationRemembranceArabic => 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ';
+  String get sunnahRecitationRemembranceArabic =>
+      'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ';
 
   @override
-  String get sunnahRecitationRemembrancePronunciation => 'সুবহানাল্লাহি ওয়া বিহামদিহি।';
+  String get sunnahRecitationRemembrancePronunciation =>
+      'সুবহানাল্লাহি ওয়া বিহামদিহি।';
 
   @override
-  String get sunnahRecitationRemembranceTranslation => 'আল্লাহ পবিত্র; সমস্ত প্রশংসা তাঁর।';
+  String get sunnahRecitationRemembranceTranslation =>
+      'আল্লাহ পবিত্র; সমস্ত প্রশংসা তাঁর।';
 
   @override
-  String get sunnahRecitationGratitudeArabic => 'رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًۭا تَرْضَىٰهُ وَأَدْخِلْنِى بِرَحْمَتِكَ فِى عِبَادِكَ ٱلصَّٰلِحِينَ';
+  String get sunnahRecitationGratitudeArabic =>
+      'رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًۭا تَرْضَىٰهُ وَأَدْخِلْنِى بِرَحْمَتِكَ فِى عِبَادِكَ ٱلصَّٰلِحِينَ';
 
   @override
-  String get sunnahRecitationGratitudePronunciation => 'রব্বি আওযি\'নি আন আশকুরা নি\'মাতাকাল্লাতি আন\'আমতা আলাইয়্যা ওয়া আলা ওয়ালিদাইয়্যা ওয়া আন আ\'মালা সালিহান তারদাহু ওয়া আদখিলনি বিরহমাতিকা ফি ইবাদিকাস সালিহিন।';
+  String get sunnahRecitationGratitudePronunciation =>
+      'রব্বি আওযি\'নি আন আশকুরা নি\'মাতাকাল্লাতি আন\'আমতা আলাইয়্যা ওয়া আলা ওয়ালিদাইয়্যা ওয়া আন আ\'মালা সালিহান তারদাহু ওয়া আদখিলনি বিরহমাতিকা ফি ইবাদিকাস সালিহিন।';
 
   @override
-  String get sunnahRecitationGratitudeTranslation => 'হে আমার রব, আমাকে ও আমার মা-বাবাকে দেওয়া আপনার নিয়ামতের কৃতজ্ঞতা এবং আপনার পছন্দের নেক কাজের তাওফিক দিন। আপনার রহমতে আমাকে সৎ বান্দাদের অন্তর্ভুক্ত করুন।';
+  String get sunnahRecitationGratitudeTranslation =>
+      'হে আমার রব, আমাকে ও আমার মা-বাবাকে দেওয়া আপনার নিয়ামতের কৃতজ্ঞতা এবং আপনার পছন্দের নেক কাজের তাওফিক দিন। আপনার রহমতে আমাকে সৎ বান্দাদের অন্তর্ভুক্ত করুন।';
 
   @override
   String get sunnahRecitationFastingArabic => 'الصِّيَامُ جُنَّةٌ';
@@ -1616,7 +1817,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaHeroEyebrow => 'দৈনন্দিন আমল';
 
   @override
-  String get sunnahDuaHeroBody => 'পূর্ণ সুন্নাহ আমলের ভেতরে সংশ্লিষ্ট দু\'আ, সঙ্গে আলাদা দু\'আ ও যিকির।';
+  String get sunnahDuaHeroBody =>
+      'পূর্ণ সুন্নাহ আমলের ভেতরে সংশ্লিষ্ট দু\'আ, সঙ্গে আলাদা দু\'আ ও যিকির।';
 
   @override
   String get sunnahDuaHeroArabic => 'سُنَّة وَدُعَاء';
@@ -1699,13 +1901,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaEatingSunnahsTitle => 'খাওয়ার সুন্নাহসমূহ';
 
   @override
-  String get sunnahDuaEatingSunnahsSubtitle => 'দু\'আটি পুরো খাওয়ার আদবের একটি অংশ';
+  String get sunnahDuaEatingSunnahsSubtitle =>
+      'দু\'আটি পুরো খাওয়ার আদবের একটি অংশ';
 
   @override
-  String get sunnahDuaEatingSunnahsPointsRaw => 'খাওয়ার আগে আল্লাহর নাম নিন।||ডান হাতে খাবার খান।||নিজের কাছের দিক থেকে খান।||খাবারের দোষ বলবেন না এবং অতিরিক্ত ভরার আগে থামুন।';
+  String get sunnahDuaEatingSunnahsPointsRaw =>
+      'খাওয়ার আগে আল্লাহর নাম নিন।||ডান হাতে খাবার খান।||নিজের কাছের দিক থেকে খান।||খাবারের দোষ বলবেন না এবং অতিরিক্ত ভরার আগে থামুন।';
 
   @override
-  String get sunnahDuaEatingSunnahsPractice => 'খাবারের সময় এই কার্ডটিকে ছোট চেকলিস্ট করুন। দু\'আ বলুন, তারপর পুরো খাবার জুড়ে আদবগুলো রাখুন।';
+  String get sunnahDuaEatingSunnahsPractice =>
+      'খাবারের সময় এই কার্ডটিকে ছোট চেকলিস্ট করুন। দু\'আ বলুন, তারপর পুরো খাবার জুড়ে আদবগুলো রাখুন।';
 
   @override
   String get sunnahDuaMiswakTitle => 'মিসওয়াক';
@@ -1714,7 +1919,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaMiswakSubtitle => 'ইবাদতের আগে মুখ সতেজ রাখুন';
 
   @override
-  String get sunnahDuaMiswakPointsRaw => 'সহজ হলে ওজু বা নামাজের আগে ব্যবহার করুন।||কুরআন তিলাওয়াতের আগে মুখ পরিষ্কার রাখুন।||ঘুম থেকে ওঠার পর বা ঘুমের আগে মুখ সতেজ করুন।||মিসওয়াক পরিষ্কার রাখুন এবং ক্ষয় হলে বদলান।';
+  String get sunnahDuaMiswakPointsRaw =>
+      'সহজ হলে ওজু বা নামাজের আগে ব্যবহার করুন।||কুরআন তিলাওয়াতের আগে মুখ পরিষ্কার রাখুন।||ঘুম থেকে ওঠার পর বা ঘুমের আগে মুখ সতেজ করুন।||মিসওয়াক পরিষ্কার রাখুন এবং ক্ষয় হলে বদলান।';
 
   @override
   String get sunnahDuaMiswakArabic => 'السِّوَاك';
@@ -1723,10 +1929,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaMiswakPronunciation => 'আস-সিওয়াক';
 
   @override
-  String get sunnahDuaMiswakTranslation => 'মিসওয়াক ব্যবহার করা, অথবা মিসওয়াক না থাকলে দাঁত পরিষ্কার রাখা, নামাজ, ওজু ও তিলাওয়াতের জন্য মুখ প্রস্তুত রাখে।';
+  String get sunnahDuaMiswakTranslation =>
+      'মিসওয়াক ব্যবহার করা, অথবা মিসওয়াক না থাকলে দাঁত পরিষ্কার রাখা, নামাজ, ওজু ও তিলাওয়াতের জন্য মুখ প্রস্তুত রাখে।';
 
   @override
-  String get sunnahDuaMiswakPractice => 'ওজুর জায়গা বা জায়নামাজের কাছে একটি মিসওয়াক রাখুন, যেন সুন্নাহটি সহজ দৈনন্দিন অভ্যাস হয়ে যায়।';
+  String get sunnahDuaMiswakPractice =>
+      'ওজুর জায়গা বা জায়নামাজের কাছে একটি মিসওয়াক রাখুন, যেন সুন্নাহটি সহজ দৈনন্দিন অভ্যাস হয়ে যায়।';
 
   @override
   String get sunnahDuaMiswakSource => 'পবিত্রতার সুন্নাহ';
@@ -1735,25 +1943,31 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaSleepingSunnahsTitle => 'ঘুমের সুন্নাহসমূহ';
 
   @override
-  String get sunnahDuaSleepingSunnahsSubtitle => 'দিন শেষ করুন স্মরণ ও প্রশান্তিতে';
+  String get sunnahDuaSleepingSunnahsSubtitle =>
+      'দিন শেষ করুন স্মরণ ও প্রশান্তিতে';
 
   @override
-  String get sunnahDuaSleepingSunnahsPointsRaw => 'সামর্থ্য থাকলে ঘুমের আগে ওজু করুন।||শোয়ার আগে বিছানা ঝেড়ে বা দেখে নিন।||ডান কাতে ঘুমান।||ঘুমের দু\'আ ও যিকির দিয়ে দিন শেষ করুন।';
+  String get sunnahDuaSleepingSunnahsPointsRaw =>
+      'সামর্থ্য থাকলে ঘুমের আগে ওজু করুন।||শোয়ার আগে বিছানা ঝেড়ে বা দেখে নিন।||ডান কাতে ঘুমান।||ঘুমের দু\'আ ও যিকির দিয়ে দিন শেষ করুন।';
 
   @override
-  String get sunnahDuaSleepingSunnahsPractice => 'ঘুমের রুটিনটি ছোট ও পুনরাবৃত্তিযোগ্য রাখুন, যেন ক্লান্ত রাতেও করা যায়।';
+  String get sunnahDuaSleepingSunnahsPractice =>
+      'ঘুমের রুটিনটি ছোট ও পুনরাবৃত্তিযোগ্য রাখুন, যেন ক্লান্ত রাতেও করা যায়।';
 
   @override
   String get sunnahDuaHomeSunnahsTitle => 'ঘরের সুন্নাহসমূহ';
 
   @override
-  String get sunnahDuaHomeSunnahsSubtitle => 'সালাম, স্মরণ ও ভরসা নিয়ে প্রবেশ ও বের হওয়া';
+  String get sunnahDuaHomeSunnahsSubtitle =>
+      'সালাম, স্মরণ ও ভরসা নিয়ে প্রবেশ ও বের হওয়া';
 
   @override
-  String get sunnahDuaHomeSunnahsPointsRaw => 'ঘরে প্রবেশের সময় বিসমিল্লাহ বলুন।||ঘরের মানুষকে সালাম দিন।||বের হওয়ার সময় আল্লাহর ওপর ভরসা রাখুন।||ঘরের প্রথম ও শেষ মুহূর্ত শান্ত রাখুন।';
+  String get sunnahDuaHomeSunnahsPointsRaw =>
+      'ঘরে প্রবেশের সময় বিসমিল্লাহ বলুন।||ঘরের মানুষকে সালাম দিন।||বের হওয়ার সময় আল্লাহর ওপর ভরসা রাখুন।||ঘরের প্রথম ও শেষ মুহূর্ত শান্ত রাখুন।';
 
   @override
-  String get sunnahDuaHomeSunnahsPractice => 'এই আমলটিকে দরজার সঙ্গে যুক্ত করুন, তাহলে অভ্যাসটি স্বাভাবিকভাবে মনে পড়বে।';
+  String get sunnahDuaHomeSunnahsPractice =>
+      'এই আমলটিকে দরজার সঙ্গে যুক্ত করুন, তাহলে অভ্যাসটি স্বাভাবিকভাবে মনে পড়বে।';
 
   @override
   String get sunnahDuaWuduSunnahsTitle => 'ওজুর সুন্নাহসমূহ';
@@ -1762,10 +1976,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaWuduSunnahsSubtitle => 'মনোযোগী খুঁটিনাটিসহ পবিত্রতা';
 
   @override
-  String get sunnahDuaWuduSunnahsPointsRaw => 'আল্লাহর নামে শুরু করুন।||পানি অপচয় না করে যত্ন নিয়ে ধুয়ে নিন।||প্রতিটি অঙ্গ মনোযোগ দিয়ে ধুয়ে নিন।||ওজুর পরে সাক্ষ্য পাঠ করুন।';
+  String get sunnahDuaWuduSunnahsPointsRaw =>
+      'আল্লাহর নামে শুরু করুন।||পানি অপচয় না করে যত্ন নিয়ে ধুয়ে নিন।||প্রতিটি অঙ্গ মনোযোগ দিয়ে ধুয়ে নিন।||ওজুর পরে সাক্ষ্য পাঠ করুন।';
 
   @override
-  String get sunnahDuaWuduSunnahsPractice => 'ওজুকে শুধু কাজ না বানিয়ে নামাজের প্রস্তুতি হিসেবে অনুভব করার মতো ধীরে করুন।';
+  String get sunnahDuaWuduSunnahsPractice =>
+      'ওজুকে শুধু কাজ না বানিয়ে নামাজের প্রস্তুতি হিসেবে অনুভব করার মতো ধীরে করুন।';
 
   @override
   String get sunnahDuaSiyamSunnahsTitle => 'সিয়াম';
@@ -1774,7 +1990,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaSiyamSunnahsSubtitle => 'রমজানের বাইরে সুন্নাহ রোজা';
 
   @override
-  String get sunnahDuaSiyamSunnahsPointsRaw => 'রোজার আগে নিয়তকে আন্তরিক ও স্পষ্ট রাখুন।||রোজাকে শুধু পানাহার থেকে বিরত থাকা বানাবেন না; কথা, রাগ, দৃষ্টি ও কাজকেও সংযত রাখুন।||সামর্থ্য থাকলে সোমবার ও বৃহস্পতিবার রোজা রাখুন।||প্রতি চন্দ্র মাসে তিন দিন রাখুন, বিশেষ করে আইয়ামে বীদ: ১৩, ১৪ ও ১৫ তারিখ।||বিশেষ সুন্নাহ রোজা মনে রাখুন: শাওয়ালের ছয় রোজা, আশুরা, এবং হাজ্জে না থাকা ব্যক্তির জন্য আরাফার দিন।||সেহরি ফজরের কাছাকাছি করুন এবং সূর্যাস্তের পর ইফতার দ্রুত করুন।||খেজুর বা পানি দিয়ে ইফতার করুন এবং ইফতারের সময় দু\'আ করুন।||নিজেকে কষ্ট দেবেন না; অসুস্থতা, সফর বা দায়িত্ব নষ্ট হওয়ার আশঙ্কা থাকলে নফল রোজা ছেড়ে দিন।';
+  String get sunnahDuaSiyamSunnahsPointsRaw =>
+      'রোজার আগে নিয়তকে আন্তরিক ও স্পষ্ট রাখুন।||রোজাকে শুধু পানাহার থেকে বিরত থাকা বানাবেন না; কথা, রাগ, দৃষ্টি ও কাজকেও সংযত রাখুন।||সামর্থ্য থাকলে সোমবার ও বৃহস্পতিবার রোজা রাখুন।||প্রতি চন্দ্র মাসে তিন দিন রাখুন, বিশেষ করে আইয়ামে বীদ: ১৩, ১৪ ও ১৫ তারিখ।||বিশেষ সুন্নাহ রোজা মনে রাখুন: শাওয়ালের ছয় রোজা, আশুরা, এবং হাজ্জে না থাকা ব্যক্তির জন্য আরাফার দিন।||সেহরি ফজরের কাছাকাছি করুন এবং সূর্যাস্তের পর ইফতার দ্রুত করুন।||খেজুর বা পানি দিয়ে ইফতার করুন এবং ইফতারের সময় দু\'আ করুন।||নিজেকে কষ্ট দেবেন না; অসুস্থতা, সফর বা দায়িত্ব নষ্ট হওয়ার আশঙ্কা থাকলে নফল রোজা ছেড়ে দিন।';
 
   @override
   String get sunnahDuaSiyamArabic => 'الصِّيَامُ جُنَّةٌ';
@@ -1786,22 +2003,27 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaSiyamTranslation => 'রোজা ঢালস্বরূপ।';
 
   @override
-  String get sunnahDuaSiyamSunnahsPractice => 'একটি সহজ ও ধারাবাহিক সুন্নাহ রোজা দিয়ে শুরু করুন, তারপর ধীরে ধীরে বাড়ান। লক্ষ্য শুধু ক্ষুধা নয়; লক্ষ্য তাকওয়া, সংযম, কৃতজ্ঞতা ও আল্লাহর সামনে পরিষ্কার অন্তর।';
+  String get sunnahDuaSiyamSunnahsPractice =>
+      'একটি সহজ ও ধারাবাহিক সুন্নাহ রোজা দিয়ে শুরু করুন, তারপর ধীরে ধীরে বাড়ান। লক্ষ্য শুধু ক্ষুধা নয়; লক্ষ্য তাকওয়া, সংযম, কৃতজ্ঞতা ও আল্লাহর সামনে পরিষ্কার অন্তর।';
 
   @override
-  String get sunnahDuaSiyamSource => 'সহিহ বুখারি ১৮৯৪; সহিহ মুসলিম ১১৫১, ১১৬২, ১১৬৪; জামে তিরমিজি ৭৬১';
+  String get sunnahDuaSiyamSource =>
+      'সহিহ বুখারি ১৮৯৪; সহিহ মুসলিম ১১৫১, ১১৬২, ১১৬৪; জামে তিরমিজি ৭৬১';
 
   @override
   String get sunnahDuaMasjidSunnahsTitle => 'মসজিদের সুন্নাহসমূহ';
 
   @override
-  String get sunnahDuaMasjidSunnahsSubtitle => 'রহমত ও স্থিরতা নিয়ে মসজিদে প্রবেশ';
+  String get sunnahDuaMasjidSunnahsSubtitle =>
+      'রহমত ও স্থিরতা নিয়ে মসজিদে প্রবেশ';
 
   @override
-  String get sunnahDuaMasjidSunnahsPointsRaw => 'শান্তভাবে প্রবেশ করুন, তাড়াহুড়া করবেন না।||আল্লাহর কাছে রহমতের দরজা খুলে দেওয়ার দু\'আ করুন।||ফোন ও কথা কম রাখুন।||কৃতজ্ঞতা নিয়ে বের হন এবং আল্লাহর অনুগ্রহ চান।';
+  String get sunnahDuaMasjidSunnahsPointsRaw =>
+      'শান্তভাবে প্রবেশ করুন, তাড়াহুড়া করবেন না।||আল্লাহর কাছে রহমতের দরজা খুলে দেওয়ার দু\'আ করুন।||ফোন ও কথা কম রাখুন।||কৃতজ্ঞতা নিয়ে বের হন এবং আল্লাহর অনুগ্রহ চান।';
 
   @override
-  String get sunnahDuaMasjidSunnahsPractice => 'মসজিদের দরজাটিকে শব্দ, তাড়া ও অমনোযোগ কমানোর স্মরণ বানান।';
+  String get sunnahDuaMasjidSunnahsPractice =>
+      'মসজিদের দরজাটিকে শব্দ, তাড়া ও অমনোযোগ কমানোর স্মরণ বানান।';
 
   @override
   String get sunnahDuaSneezingSunnahTitle => 'হাঁচির সুন্নাহ';
@@ -1810,22 +2032,26 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaSneezingSunnahSubtitle => 'কৃতজ্ঞতা ও রহমতের ছোট মুহূর্ত';
 
   @override
-  String get sunnahDuaSneezingSunnahPointsRaw => 'হাঁচির পরে আলহামদুলিল্লাহ বলুন।||শ্রোতা রহমতের জবাব দেবে।||হাঁচিদাতা হিদায়াত ও কল্যাণের জবাব দেবে।||আদান-প্রদানটি কোমল ও সংক্ষিপ্ত রাখুন।';
+  String get sunnahDuaSneezingSunnahPointsRaw =>
+      'হাঁচির পরে আলহামদুলিল্লাহ বলুন।||শ্রোতা রহমতের জবাব দেবে।||হাঁচিদাতা হিদায়াত ও কল্যাণের জবাব দেবে।||আদান-প্রদানটি কোমল ও সংক্ষিপ্ত রাখুন।';
 
   @override
-  String get sunnahDuaSneezingSunnahPractice => 'এটি ছোট, কিন্তু সাধারণ মুহূর্তকে কৃতজ্ঞতা ও যত্নে বদলে দেয়।';
+  String get sunnahDuaSneezingSunnahPractice =>
+      'এটি ছোট, কিন্তু সাধারণ মুহূর্তকে কৃতজ্ঞতা ও যত্নে বদলে দেয়।';
 
   @override
   String get sunnahDuaSeekingForgivenessSubtitle => 'ইস্তিগফার কাছে রাখুন';
 
   @override
-  String get sunnahDuaSeekingForgivenessPractice => 'কাজের ফাঁকে, নামাজের পরে, অথবা মন ভারী লাগলে এটি বারবার বলুন।';
+  String get sunnahDuaSeekingForgivenessPractice =>
+      'কাজের ফাঁকে, নামাজের পরে, অথবা মন ভারী লাগলে এটি বারবার বলুন।';
 
   @override
   String get sunnahDuaDifficultySubtitle => 'যখন মন ভারী হয়ে যায়';
 
   @override
-  String get sunnahDuaDifficultyPractice => 'ধীরে ধীরে পড়ুন, তারপর আল্লাহর ওপর ভরসা রেখে সঠিক পরের কাজটি বেছে নিন।';
+  String get sunnahDuaDifficultyPractice =>
+      'ধীরে ধীরে পড়ুন, তারপর আল্লাহর ওপর ভরসা রেখে সঠিক পরের কাজটি বেছে নিন।';
 
   @override
   String get dashboardSectionPrayerTimes => 'নামাজের সময়সূচি';
@@ -1915,7 +2141,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get zakatHeroTitle => 'নিশ্চিন্তে হিসাব করুন';
 
   @override
-  String get zakatHeroBody => 'যাকাতযোগ্য সম্পদ যোগ করুন, নিসাবের ভিত্তি বেছে নিন এবং সঙ্গে সঙ্গে হিসাব দেখুন।';
+  String get zakatHeroBody =>
+      'যাকাতযোগ্য সম্পদ যোগ করুন, নিসাবের ভিত্তি বেছে নিন এবং সঙ্গে সঙ্গে হিসাব দেখুন।';
 
   @override
   String get zakatCurrency => 'মুদ্রা';
@@ -1924,7 +2151,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get zakatCurrencyChangeTitle => 'মুদ্রা পরিবর্তন করবেন?';
 
   @override
-  String get zakatCurrencyChangeBody => 'টাকার অঙ্ক স্বয়ংক্রিয়ভাবে রূপান্তর হয় না। মুদ্রা পরিবর্তন করলে লেখা সব অঙ্ক মুছে যাবে।';
+  String get zakatCurrencyChangeBody =>
+      'টাকার অঙ্ক স্বয়ংক্রিয়ভাবে রূপান্তর হয় না। মুদ্রা পরিবর্তন করলে লেখা সব অঙ্ক মুছে যাবে।';
 
   @override
   String get zakatCancel => 'বাতিল';
@@ -1936,7 +2164,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get zakatNisabTitle => 'নিসাব নির্ধারণ করুন';
 
   @override
-  String get zakatNisabHint => 'নির্বাচিত মুদ্রায় আজকের প্রতি গ্রামের দাম লিখুন। দাম স্বয়ংক্রিয়ভাবে হালনাগাদ হয় না।';
+  String get zakatNisabHint =>
+      'নির্বাচিত মুদ্রায় আজকের প্রতি গ্রামের দাম লিখুন। দাম স্বয়ংক্রিয়ভাবে হালনাগাদ হয় না।';
 
   @override
   String get zakatSilver => 'রূপা · ৬১২.৩৬ গ্রাম';
@@ -1990,7 +2219,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get zakatLiabilitiesTitle => 'পরিশোধযোগ্য অর্থ';
 
   @override
-  String get zakatLiabilitiesHint => 'আপনার অনুসৃত নির্দেশনা অনুযায়ী এখন বা আগামী ১২ মাসে পরিশোধযোগ্য ঋণ ও বিল লিখুন।';
+  String get zakatLiabilitiesHint =>
+      'আপনার অনুসৃত নির্দেশনা অনুযায়ী এখন বা আগামী ১২ মাসে পরিশোধযোগ্য ঋণ ও বিল লিখুন।';
 
   @override
   String get zakatDebts => 'পরিশোধযোগ্য ঋণ';
@@ -2008,7 +2238,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get zakatLunarYearTitle => 'এক চান্দ্র বছর পূর্ণ হয়েছে';
 
   @override
-  String get zakatLunarYearBody => 'আপনার যাকাতের বছরে সম্পদ নিসাবে পৌঁছেছে কি না নিশ্চিত করুন।';
+  String get zakatLunarYearBody =>
+      'আপনার যাকাতের বছরে সম্পদ নিসাবে পৌঁছেছে কি না নিশ্চিত করুন।';
 
   @override
   String get zakatResultTitle => 'আপনার হিসাব';
@@ -2044,7 +2275,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get zakatGuideTitle => 'হিসাবের নিয়ম';
 
   @override
-  String get zakatGuideBody => 'নিট সম্পদ = যাকাতযোগ্য সম্পদ থেকে পরিশোধযোগ্য অর্থ বাদ। নির্বাচিত নিসাবে পৌঁছে এক চান্দ্র বছর পূর্ণ হলে পুরো নিট সম্পদের ২.৫% যাকাত। ব্যক্তিগত গয়না, অবসরকালীন তহবিল ও ঋণের ক্ষেত্রে আলাদা পরামর্শ প্রয়োজন হতে পারে।';
+  String get zakatGuideBody =>
+      'নিট সম্পদ = যাকাতযোগ্য সম্পদ থেকে পরিশোধযোগ্য অর্থ বাদ। নির্বাচিত নিসাবে পৌঁছে এক চান্দ্র বছর পূর্ণ হলে পুরো নিট সম্পদের ২.৫% যাকাত। ব্যক্তিগত গয়না, অবসরকালীন তহবিল ও ঋণের ক্ষেত্রে আলাদা পরামর্শ প্রয়োজন হতে পারে।';
 
   @override
   String get zakatGuideSource => 'হিসাবের নির্দেশনা: ইসলামিক রিলিফ';
@@ -2113,16 +2345,19 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tasbeehSuggestionAstaghfirullah => 'আস্তাগফিরুল্লাহ';
 
   @override
-  String get tasbeehSuggestionSubhanAllahiWaBihamdihi => 'সুবহানাল্লাহি ওয়া বিহামদিহি';
+  String get tasbeehSuggestionSubhanAllahiWaBihamdihi =>
+      'সুবহানাল্লাহি ওয়া বিহামদিহি';
 
   @override
-  String get tasbeehSuggestionLaHawla => 'লা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ';
+  String get tasbeehSuggestionLaHawla =>
+      'লা হাওলা ওয়ালা কুওয়াতা ইল্লা বিল্লাহ';
 
   @override
   String get tasbeehSuggestionSalawat => 'আল্লাহুম্মা সাল্লি আলা মুহাম্মাদ';
 
   @override
-  String get tasbeehSuggestionHasbunallah => 'হাসবুনাল্লাহু ওয়া নি\'মাল ওয়াকিল';
+  String get tasbeehSuggestionHasbunallah =>
+      'হাসবুনাল্লাহু ওয়া নি\'মাল ওয়াকিল';
 
   @override
   String get tasbeehSuggestionSubhanAllahilAzim => 'সুবহানাল্লাহিল আজিম';
@@ -2131,22 +2366,27 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tasbeehSuggestionRabbiZidniIlma => 'রব্বি জিদনি ইলমা';
 
   @override
-  String get tasbeehSuggestionLaIlahaIllaAnta => 'লা ইলাহা ইল্লা আনতা সুবহানাকা';
+  String get tasbeehSuggestionLaIlahaIllaAnta =>
+      'লা ইলাহা ইল্লা আনতা সুবহানাকা';
 
   @override
   String get tasbeehSuggestionYaHayyuYaQayyum => 'ইয়া হাইয়্যু ইয়া কাইয়্যুম';
 
   @override
-  String get tasbeehSuggestionTwoWords => 'সুবহানাল্লাহি ওয়া বিহামদিহি, সুবহানাল্লাহিল আজিম';
+  String get tasbeehSuggestionTwoWords =>
+      'সুবহানাল্লাহি ওয়া বিহামদিহি, সুবহানাল্লাহিল আজিম';
 
   @override
-  String get tasbeehSuggestionTahlil => 'লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু';
+  String get tasbeehSuggestionTahlil =>
+      'লা ইলাহা ইল্লাল্লাহু ওয়াহদাহু লা শারিকা লাহু';
 
   @override
-  String get tasbeehSuggestionRabbanaAtina => 'রব্বানা আতিনা ফিদ্দুনিয়া হাসানাহ';
+  String get tasbeehSuggestionRabbanaAtina =>
+      'রব্বানা আতিনা ফিদ্দুনিয়া হাসানাহ';
 
   @override
-  String get tasbeehSuggestionRabbiInni => 'রব্বি ইন্নি লিমা আনযালতা ইলাইয়া মিন খাইরিন ফাকির';
+  String get tasbeehSuggestionRabbiInni =>
+      'রব্বি ইন্নি লিমা আনযালতা ইলাইয়া মিন খাইরিন ফাকির';
 
   @override
   String get tasbeehSuggestionRabbanaLaTuzigh => 'রব্বানা লা তুযিগ কুলুবানা';
@@ -2161,49 +2401,61 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tasbeehMeaningAllahuAkbar => 'আল্লাহ সর্বশ্রেষ্ঠ।';
 
   @override
-  String get tasbeehMeaningLaIlahaIllallah => 'আল্লাহ ছাড়া ইবাদতের যোগ্য কোনো উপাস্য নেই।';
+  String get tasbeehMeaningLaIlahaIllallah =>
+      'আল্লাহ ছাড়া ইবাদতের যোগ্য কোনো উপাস্য নেই।';
 
   @override
   String get tasbeehMeaningAstaghfirullah => 'আমি আল্লাহর কাছে ক্ষমা চাই।';
 
   @override
-  String get tasbeehMeaningSubhanAllahiWaBihamdihi => 'আল্লাহ পবিত্র; তাঁরই প্রশংসা।';
+  String get tasbeehMeaningSubhanAllahiWaBihamdihi =>
+      'আল্লাহ পবিত্র; তাঁরই প্রশংসা।';
 
   @override
-  String get tasbeehMeaningLaHawla => 'আল্লাহ ছাড়া কোনো শক্তি বা সামর্থ্য নেই।';
+  String get tasbeehMeaningLaHawla =>
+      'আল্লাহ ছাড়া কোনো শক্তি বা সামর্থ্য নেই।';
 
   @override
-  String get tasbeehMeaningSalawat => 'হে আল্লাহ, মুহাম্মাদের ওপর রহমত বর্ষণ করুন।';
+  String get tasbeehMeaningSalawat =>
+      'হে আল্লাহ, মুহাম্মাদের ওপর রহমত বর্ষণ করুন।';
 
   @override
-  String get tasbeehMeaningHasbunallah => 'আল্লাহই আমাদের জন্য যথেষ্ট; তিনি উত্তম কর্মবিধায়ক।';
+  String get tasbeehMeaningHasbunallah =>
+      'আল্লাহই আমাদের জন্য যথেষ্ট; তিনি উত্তম কর্মবিধায়ক।';
 
   @override
   String get tasbeehMeaningSubhanAllahilAzim => 'মহান আল্লাহ পবিত্র।';
 
   @override
-  String get tasbeehMeaningRabbiZidniIlma => 'হে আমার রব, আমার জ্ঞান বাড়িয়ে দিন।';
+  String get tasbeehMeaningRabbiZidniIlma =>
+      'হে আমার রব, আমার জ্ঞান বাড়িয়ে দিন।';
 
   @override
-  String get tasbeehMeaningLaIlahaIllaAnta => 'আপনি ছাড়া কোনো উপাস্য নেই; আপনি পবিত্র। আমি অন্যায়কারীদের একজন ছিলাম।';
+  String get tasbeehMeaningLaIlahaIllaAnta =>
+      'আপনি ছাড়া কোনো উপাস্য নেই; আপনি পবিত্র। আমি অন্যায়কারীদের একজন ছিলাম।';
 
   @override
   String get tasbeehMeaningYaHayyuYaQayyum => 'হে চিরঞ্জীব, হে সবকিছুর ধারক।';
 
   @override
-  String get tasbeehMeaningTwoWords => 'আল্লাহ পবিত্র ও প্রশংসিত; মহান আল্লাহ পবিত্র।';
+  String get tasbeehMeaningTwoWords =>
+      'আল্লাহ পবিত্র ও প্রশংসিত; মহান আল্লাহ পবিত্র।';
 
   @override
-  String get tasbeehMeaningTahlil => 'আল্লাহ ছাড়া কোনো উপাস্য নেই; তিনি একক, তাঁর কোনো শরিক নেই। রাজত্ব ও প্রশংসা তাঁরই, তিনি সবকিছুর ওপর ক্ষমতাবান।';
+  String get tasbeehMeaningTahlil =>
+      'আল্লাহ ছাড়া কোনো উপাস্য নেই; তিনি একক, তাঁর কোনো শরিক নেই। রাজত্ব ও প্রশংসা তাঁরই, তিনি সবকিছুর ওপর ক্ষমতাবান।';
 
   @override
-  String get tasbeehMeaningRabbanaAtina => 'হে আমাদের রব, দুনিয়া ও আখিরাতে কল্যাণ দিন এবং আগুনের শাস্তি থেকে রক্ষা করুন।';
+  String get tasbeehMeaningRabbanaAtina =>
+      'হে আমাদের রব, দুনিয়া ও আখিরাতে কল্যাণ দিন এবং আগুনের শাস্তি থেকে রক্ষা করুন।';
 
   @override
-  String get tasbeehMeaningRabbiInni => 'হে আমার রব, আপনি যে কল্যাণই পাঠান, আমি তার মুখাপেক্ষী।';
+  String get tasbeehMeaningRabbiInni =>
+      'হে আমার রব, আপনি যে কল্যাণই পাঠান, আমি তার মুখাপেক্ষী।';
 
   @override
-  String get tasbeehMeaningRabbanaLaTuzigh => 'হে আমাদের রব, পথ দেখানোর পর আমাদের অন্তর বিচ্যুত করবেন না। আপনার পক্ষ থেকে রহমত দিন; আপনিই মহাদাতা।';
+  String get tasbeehMeaningRabbanaLaTuzigh =>
+      'হে আমাদের রব, পথ দেখানোর পর আমাদের অন্তর বিচ্যুত করবেন না। আপনার পক্ষ থেকে রহমত দিন; আপনিই মহাদাতা।';
 
   @override
   String get tasbeehEditDhikr => 'জিকির সম্পাদনা';
@@ -2247,7 +2499,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get tasbeehEditPreservesCount => 'সম্পাদনা করলেও আপনার গণনা অক্ষুণ্ণ থাকবে।';
+  String get tasbeehEditPreservesCount =>
+      'সম্পাদনা করলেও আপনার গণনা অক্ষুণ্ণ থাকবে।';
 
   @override
   String get tasbeehFocusMode => 'মনোযোগ মোড';
@@ -2283,10 +2536,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardContinueReadingTitle => 'পড়া চালিয়ে যান';
 
   @override
-  String get dashboardContinueReadingStartSubtitle => 'যেখান থেকে থেমেছেন সেখান থেকেই শুরু করুন';
+  String get dashboardContinueReadingStartSubtitle =>
+      'যেখান থেকে থেমেছেন সেখান থেকেই শুরু করুন';
 
   @override
-  String get dashboardContinueReadingStartDetail => 'সাম্প্রতিক সূরা খুলে পড়া চালিয়ে যান';
+  String get dashboardContinueReadingStartDetail =>
+      'সাম্প্রতিক সূরা খুলে পড়া চালিয়ে যান';
 
   @override
   String dashboardContinueReadingAyahDetail(int ayahNumber, String surahName) {
@@ -2306,7 +2561,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardContinueLearningStartDetail => 'লার্নিং ট্র্যাক খুলুন';
 
   @override
-  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount) {
+  String dashboardContinueLearningModuleDetail(
+    String moduleTitle,
+    int lessonCount,
+  ) {
     return '$moduleTitle · $lessonCountটি লেসন';
   }
 
@@ -2350,13 +2608,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardHadithAnNawawiTitle => 'ইমাম নববীর ৪০ হাদিস';
 
   @override
-  String get dashboardHadithAnNawawiDescription => 'ইমাম আন-নববীর ক্লাসিক হাদিস সংকলন';
+  String get dashboardHadithAnNawawiDescription =>
+      'ইমাম আন-নববীর ক্লাসিক হাদিস সংকলন';
 
   @override
   String get dashboardHadithShortTitle => '৪০টি ছোট হাদিস';
 
   @override
-  String get dashboardHadithShortDescription => 'সহজে মুখস্থ ও অনুশীলনের জন্য ছোট হাদিস';
+  String get dashboardHadithShortDescription =>
+      'সহজে মুখস্থ ও অনুশীলনের জন্য ছোট হাদিস';
 
   @override
   String get prayerViewTitle => 'নামাজের বিস্তারিত';
@@ -2392,31 +2652,37 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerViewPermissionHelpTitle => 'নামাজের সময়ের জন্য লোকেশন দরকার';
 
   @override
-  String get prayerViewPermissionHelpBody => 'স্থানীয় নামাজের সময় হিসাব করতে লোকেশন অনুমতি দিন। নিচের নির্দেশনাগুলো তবুও পাওয়া যাবে।';
+  String get prayerViewPermissionHelpBody =>
+      'স্থানীয় নামাজের সময় হিসাব করতে লোকেশন অনুমতি দিন। নিচের নির্দেশনাগুলো তবুও পাওয়া যাবে।';
 
   @override
   String get prayerTimesPermissionDeniedTitle => 'লোকেশন অনুমতি দরকার';
 
   @override
-  String get prayerTimesPermissionDeniedBody => 'আপনার এলাকার নামাজের সময় হিসাব করতে লোকেশন অনুমতি দিন। লাইভ সময় ছাড়াও নির্দেশনা সেকশনগুলো ব্যবহার করা যাবে।';
+  String get prayerTimesPermissionDeniedBody =>
+      'আপনার এলাকার নামাজের সময় হিসাব করতে লোকেশন অনুমতি দিন। লাইভ সময় ছাড়াও নির্দেশনা সেকশনগুলো ব্যবহার করা যাবে।';
 
   @override
-  String get prayerTimesPermissionDeniedForeverTitle => 'লোকেশন অনুমতি ব্লক করা আছে';
+  String get prayerTimesPermissionDeniedForeverTitle =>
+      'লোকেশন অনুমতি ব্লক করা আছে';
 
   @override
-  String get prayerTimesPermissionDeniedForeverBody => 'অ্যাপ সেটিংসে গিয়ে লোকেশন অনুমতি দিন, তারপর নামাজের সময় রিফ্রেশ করুন।';
+  String get prayerTimesPermissionDeniedForeverBody =>
+      'অ্যাপ সেটিংসে গিয়ে লোকেশন অনুমতি দিন, তারপর নামাজের সময় রিফ্রেশ করুন।';
 
   @override
   String get prayerTimesLocationDisabledTitle => 'ডিভাইস লোকেশন বন্ধ আছে';
 
   @override
-  String get prayerTimesLocationDisabledBody => 'ডিভাইস লোকেশন সার্ভিস চালু করুন, তারপর স্থানীয় নামাজের সময় হিসাব করতে রিফ্রেশ করুন।';
+  String get prayerTimesLocationDisabledBody =>
+      'ডিভাইস লোকেশন সার্ভিস চালু করুন, তারপর স্থানীয় নামাজের সময় হিসাব করতে রিফ্রেশ করুন।';
 
   @override
   String get prayerTimesNetworkErrorTitle => 'নামাজের সময় প্রস্তুত করা যায়নি';
 
   @override
-  String get prayerTimesNetworkErrorBody => 'ইন্টারনেট সংযোগ ও ডিভাইস লোকেশন সেটিংস দেখে আবার চেষ্টা করুন।';
+  String get prayerTimesNetworkErrorBody =>
+      'ইন্টারনেট সংযোগ ও ডিভাইস লোকেশন সেটিংস দেখে আবার চেষ্টা করুন।';
 
   @override
   String get compassTitle => 'কিবলা কম্পাস';
@@ -2468,7 +2734,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get compassLiveInstruction => 'ফোন সমতল রাখুন। ফিরোজা রঙের নির্দেশকটি ফোনের ওপরের গোলাপি চিহ্নের সঙ্গে মেলান।';
+  String get compassLiveInstruction =>
+      'ফোন সমতল রাখুন। ফিরোজা রঙের নির্দেশকটি ফোনের ওপরের গোলাপি চিহ্নের সঙ্গে মেলান।';
 
   @override
   String compassFallbackInstruction(String degrees) {
@@ -2491,37 +2758,43 @@ class AppLocalizationsBn extends AppLocalizations {
   String get compassLocationDeniedTitle => 'লোকেশন অনুমতি দরকার';
 
   @override
-  String get compassLocationDeniedBody => 'বর্তমান অবস্থান থেকে কিবলা হিসাব করতে লোকেশন অনুমতি দিন।';
+  String get compassLocationDeniedBody =>
+      'বর্তমান অবস্থান থেকে কিবলা হিসাব করতে লোকেশন অনুমতি দিন।';
 
   @override
   String get compassLocationBlockedTitle => 'লোকেশন অনুমতি ব্লক করা আছে';
 
   @override
-  String get compassLocationBlockedBody => 'অ্যাপ সেটিংসে গিয়ে লোকেশন অনুমতি দিন, তারপর কিবলা কম্পাস আবার চেষ্টা করুন।';
+  String get compassLocationBlockedBody =>
+      'অ্যাপ সেটিংসে গিয়ে লোকেশন অনুমতি দিন, তারপর কিবলা কম্পাস আবার চেষ্টা করুন।';
 
   @override
   String get compassLocationDisabledTitle => 'ডিভাইস লোকেশন বন্ধ আছে';
 
   @override
-  String get compassLocationDisabledBody => 'ডিভাইস লোকেশন সার্ভিস চালু করুন, তারপর কিবলা কম্পাস আবার চেষ্টা করুন।';
+  String get compassLocationDisabledBody =>
+      'ডিভাইস লোকেশন সার্ভিস চালু করুন, তারপর কিবলা কম্পাস আবার চেষ্টা করুন।';
 
   @override
   String get compassGenericErrorTitle => 'কম্পাস চালু করা যায়নি';
 
   @override
-  String get compassGenericErrorBody => 'ডিভাইসের লোকেশন সার্ভিস ও অনুমতি দেখে আবার চেষ্টা করুন। কোণ হিসাব করতে ইন্টারনেট লাগে না।';
+  String get compassGenericErrorBody =>
+      'ডিভাইসের লোকেশন সার্ভিস ও অনুমতি দেখে আবার চেষ্টা করুন। কোণ হিসাব করতে ইন্টারনেট লাগে না।';
 
   @override
   String get prayerViewTimelineTitle => 'আজকের নামাজের ছন্দ';
 
   @override
-  String get prayerViewTimelineSubtitle => 'পুরো দিনের সময় দেখুন, পরবর্তী নামাজ চিনে নিন, আর বর্তমান ফোকাস সামনে রাখুন।';
+  String get prayerViewTimelineSubtitle =>
+      'পুরো দিনের সময় দেখুন, পরবর্তী নামাজ চিনে নিন, আর বর্তমান ফোকাস সামনে রাখুন।';
 
   @override
   String get prayerRakatGuideTitle => 'রাকাত গাইড';
 
   @override
-  String get prayerRakatGuideSubtitle => 'প্রতিদিনের নামাজের সাধারণ রাকাত সংখ্যা ও ভাগগুলো এক নজরে দেখুন।';
+  String get prayerRakatGuideSubtitle =>
+      'প্রতিদিনের নামাজের সাধারণ রাকাত সংখ্যা ও ভাগগুলো এক নজরে দেখুন।';
 
   @override
   String get prayerRakatViewDetails => 'বিস্তারিত দেখুন';
@@ -2541,7 +2814,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerRakatTypeSunnahMuakkadah => 'সুন্নাতে মুয়াক্কাদা';
 
   @override
-  String get prayerRakatTypeSunnahGhairMuakkadah => 'সুন্নাতে গায়রে মুয়াক্কাদা';
+  String get prayerRakatTypeSunnahGhairMuakkadah =>
+      'সুন্নাতে গায়রে মুয়াক্কাদা';
 
   @override
   String get prayerRakatTypeNafl => 'নফল';
@@ -2565,49 +2839,59 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerRakatWitrLabel => 'ইশার পরে';
 
   @override
-  String get prayerRakatFajrNote => 'ফজরের আগে ২ রাকাত সুন্নত অত্যন্ত গুরুত্বপূর্ণ।';
+  String get prayerRakatFajrNote =>
+      'ফজরের আগে ২ রাকাত সুন্নত অত্যন্ত গুরুত্বপূর্ণ।';
 
   @override
-  String get prayerRakatDhuhrNote => 'সাধারণ ধারা: ৪ সুন্নত, ৪ ফরজ, ২ সুন্নত, তারপর ঐচ্ছিক নফল।';
+  String get prayerRakatDhuhrNote =>
+      'সাধারণ ধারা: ৪ সুন্নত, ৪ ফরজ, ২ সুন্নত, তারপর ঐচ্ছিক নফল।';
 
   @override
-  String get prayerRakatAsrNote => 'আসরের আগে ৪ রাকাত সুন্নত সাধারণত গায়রে মুয়াক্কাদা হিসেবে ধরা হয়।';
+  String get prayerRakatAsrNote =>
+      'আসরের আগে ৪ রাকাত সুন্নত সাধারণত গায়রে মুয়াক্কাদা হিসেবে ধরা হয়।';
 
   @override
-  String get prayerRakatMaghribNote => 'আগে ৩ রাকাত ফরজ, তারপর সুন্নতে মুয়াক্কাদা ও ঐচ্ছিক নফল।';
+  String get prayerRakatMaghribNote =>
+      'আগে ৩ রাকাত ফরজ, তারপর সুন্নতে মুয়াক্কাদা ও ঐচ্ছিক নফল।';
 
   @override
-  String get prayerRakatIshaNote => 'বিতরের বিস্তারিত মাযহাবভেদে ভিন্ন হতে পারে; অনেক সমাজে ইশার পরে ৩ রাকাত পড়া হয়।';
+  String get prayerRakatIshaNote =>
+      'বিতরের বিস্তারিত মাযহাবভেদে ভিন্ন হতে পারে; অনেক সমাজে ইশার পরে ৩ রাকাত পড়া হয়।';
 
   @override
   String get prayerViewNowTitle => 'এখন কী অনুসরণ করবেন';
 
   @override
-  String get prayerViewNowSubtitle => 'বর্তমান নামাজের সময়ের জন্য ব্যবহারিক পরবর্তী পদক্ষেপ।';
+  String get prayerViewNowSubtitle =>
+      'বর্তমান নামাজের সময়ের জন্য ব্যবহারিক পরবর্তী পদক্ষেপ।';
 
   @override
   String get prayerViewSuggestionsTitle => 'নামাজের পরামর্শ';
 
   @override
-  String get prayerViewSuggestionsSubtitle => 'ছোট ছোট কাজ, যা এই নামাজকে আরও শান্ত ও নিয়তপূর্ণ করে।';
+  String get prayerViewSuggestionsSubtitle =>
+      'ছোট ছোট কাজ, যা এই নামাজকে আরও শান্ত ও নিয়তপূর্ণ করে।';
 
   @override
   String get prayerViewHowTitle => 'কীভাবে নামাজ পড়বেন';
 
   @override
-  String get prayerViewHowSubtitle => 'নামাজের মূল অঙ্গভঙ্গি ও মনোযোগের সহজ ধারা।';
+  String get prayerViewHowSubtitle =>
+      'নামাজের মূল অঙ্গভঙ্গি ও মনোযোগের সহজ ধারা।';
 
   @override
   String get prayerViewBestPracticesTitle => 'সেরা অনুশীলন';
 
   @override
-  String get prayerViewBestPracticesSubtitle => 'বর্তমানে সামনে থাকা নামাজ অনুযায়ী ফোকাসড অভ্যাস।';
+  String get prayerViewBestPracticesSubtitle =>
+      'বর্তমানে সামনে থাকা নামাজ অনুযায়ী ফোকাসড অভ্যাস।';
 
   @override
   String get prayerViewFiqhNoteTitle => 'অনুশীলন নোট';
 
   @override
-  String get prayerViewFiqhNoteBody => 'মাযহাব ও স্থানীয় শিক্ষার ভিত্তিতে কিছু বিস্তারিত বিষয়ে পার্থক্য থাকতে পারে। এটিকে বন্ধুসুলভ নির্দেশনা হিসেবে নিন এবং ফিকহ-নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেম বা ইমামের অনুসরণ করুন।';
+  String get prayerViewFiqhNoteBody =>
+      'মাযহাব ও স্থানীয় শিক্ষার ভিত্তিতে কিছু বিস্তারিত বিষয়ে পার্থক্য থাকতে পারে। এটিকে বন্ধুসুলভ নির্দেশনা হিসেবে নিন এবং ফিকহ-নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেম বা ইমামের অনুসরণ করুন।';
 
   @override
   String get prayerViewFocus => 'ফোকাস';
@@ -2628,13 +2912,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerForbiddenTimesTitle => 'নিষিদ্ধ সময়';
 
   @override
-  String get prayerForbiddenTimesSubtitle => 'ছোট কিছু সময়, যখন নফল নামাজ শুরু করা এড়িয়ে চলা উচিত।';
+  String get prayerForbiddenTimesSubtitle =>
+      'ছোট কিছু সময়, যখন নফল নামাজ শুরু করা এড়িয়ে চলা উচিত।';
 
   @override
   String get prayerForbiddenAlertTitle => 'এখানে নফল নামাজে বিরতি দিন';
 
   @override
-  String get prayerForbiddenAlertBody => 'জিকির, কুরআন শ্রবণ বা নীরব চিন্তায় থাকুন, তারপর সময় পরিষ্কার হলে আবার নামাজ পড়ুন। ফিকহি বিস্তারিত ভিন্ন হতে পারে, তাই নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেমের অনুসরণ করুন।';
+  String get prayerForbiddenAlertBody =>
+      'জিকির, কুরআন শ্রবণ বা নীরব চিন্তায় থাকুন, তারপর সময় পরিষ্কার হলে আবার নামাজ পড়ুন। ফিকহি বিস্তারিত ভিন্ন হতে পারে, তাই নির্দিষ্ট বিষয়ে বিশ্বস্ত আলেমের অনুসরণ করুন।';
 
   @override
   String get prayerForbiddenPauseLabel => 'বিরতি';
@@ -2643,19 +2929,22 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerForbiddenSunriseTitle => 'সূর্যোদয়ের সময়';
 
   @override
-  String get prayerForbiddenSunriseBody => 'সূর্য ওঠার সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; সূর্য স্পষ্টভাবে উঠে গেলে অপেক্ষা শেষ করুন।';
+  String get prayerForbiddenSunriseBody =>
+      'সূর্য ওঠার সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; সূর্য স্পষ্টভাবে উঠে গেলে অপেক্ষা শেষ করুন।';
 
   @override
   String get prayerForbiddenZenithTitle => 'সূর্য মধ্যাকাশে';
 
   @override
-  String get prayerForbiddenZenithBody => 'যোহর শুরুর ঠিক আগে সূর্য যখন সর্বোচ্চ অবস্থানে থাকে, তখন ঐচ্ছিক নামাজে বিরতি দিন।';
+  String get prayerForbiddenZenithBody =>
+      'যোহর শুরুর ঠিক আগে সূর্য যখন সর্বোচ্চ অবস্থানে থাকে, তখন ঐচ্ছিক নামাজে বিরতি দিন।';
 
   @override
   String get prayerForbiddenSunsetTitle => 'সূর্যাস্তের সময়';
 
   @override
-  String get prayerForbiddenSunsetBody => 'সূর্য ডোবার সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; মাগরিবের সময় শুরু হলে মাগরিব পড়ুন।';
+  String get prayerForbiddenSunsetBody =>
+      'সূর্য ডোবার সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; মাগরিবের সময় শুরু হলে মাগরিব পড়ুন।';
 
   @override
   String get prayerForbiddenTimeFallback => 'সময় পাওয়া যায়নি';
@@ -2674,43 +2963,50 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerReferenceTitle => 'নির্দেশনা লাইব্রেরি';
 
   @override
-  String get prayerReferenceSubtitle => 'প্রয়োজন হলে বিস্তারিত খুলুন, যাতে মূল নামাজ ভিউ শান্ত ও হালকা থাকে।';
+  String get prayerReferenceSubtitle =>
+      'প্রয়োজন হলে বিস্তারিত খুলুন, যাতে মূল নামাজ ভিউ শান্ত ও হালকা থাকে।';
 
   @override
   String get prayerReferenceMovementsActionTitle => 'নামাজের অঙ্গভঙ্গি গাইড';
 
   @override
-  String get prayerReferenceMovementsActionSubtitle => 'প্রতিটি অবস্থান, আরবি পাঠ, উচ্চারণ ও অর্থ একসঙ্গে দেখুন।';
+  String get prayerReferenceMovementsActionSubtitle =>
+      'প্রতিটি অবস্থান, আরবি পাঠ, উচ্চারণ ও অর্থ একসঙ্গে দেখুন।';
 
   @override
   String get prayerReferenceForbiddenActionTitle => 'নিষিদ্ধ সময়';
 
   @override
-  String get prayerReferenceForbiddenActionSubtitle => 'কখন নফল নামাজে বিরতি দিতে হবে জেনে নিন।';
+  String get prayerReferenceForbiddenActionSubtitle =>
+      'কখন নফল নামাজে বিরতি দিতে হবে জেনে নিন।';
 
   @override
   String get prayerReferenceNafalActionTitle => 'দৈনিক নফল নামাজ';
 
   @override
-  String get prayerReferenceNafalActionSubtitle => 'তাহাজ্জুদ, ইশরাক, দুহা ও আউয়াবিন এক ধারায় দেখুন।';
+  String get prayerReferenceNafalActionSubtitle =>
+      'তাহাজ্জুদ, ইশরাক, দুহা ও আউয়াবিন এক ধারায় দেখুন।';
 
   @override
   String get prayerReferenceJanazaActionTitle => 'জানাজা নামাজ';
 
   @override
-  String get prayerReferenceJanazaActionSubtitle => 'চার তাকবির ও আন্তরিক দু\'আসহ দাঁড়িয়ে পড়া রহমতের নামাজ।';
+  String get prayerReferenceJanazaActionSubtitle =>
+      'চার তাকবির ও আন্তরিক দু\'আসহ দাঁড়িয়ে পড়া রহমতের নামাজ।';
 
   @override
   String get prayerReferenceTasbeehActionTitle => 'সালাতুত তাসবিহ';
 
   @override
-  String get prayerReferenceTasbeehActionSubtitle => 'চার রাকাতে ৩০০ তাসবিহের ধারা অনুসরণ করুন।';
+  String get prayerReferenceTasbeehActionSubtitle =>
+      'চার রাকাতে ৩০০ তাসবিহের ধারা অনুসরণ করুন।';
 
   @override
   String get prayerReferenceEidActionTitle => 'ঈদের নামাজের গাইড';
 
   @override
-  String get prayerReferenceEidActionSubtitle => 'দুই ঈদ, নামাজের নিয়ম, সুন্নাহ আমল, তাকবীর ও দোয়া।';
+  String get prayerReferenceEidActionSubtitle =>
+      'দুই ঈদ, নামাজের নিয়ম, সুন্নাহ আমল, তাকবীর ও দোয়া।';
 
   @override
   String get prayerReferenceOpenLabel => 'দেখুন';
@@ -2722,7 +3018,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerMovementsVariantTitle => 'আপনার গাইড বেছে নিন';
 
   @override
-  String get prayerMovementsVariantSubtitle => 'আপনার উপযোগী ছবির সঙ্গে প্রতিটি অঙ্গভঙ্গি অনুসরণ করুন।';
+  String get prayerMovementsVariantSubtitle =>
+      'আপনার উপযোগী ছবির সঙ্গে প্রতিটি অঙ্গভঙ্গি অনুসরণ করুন।';
 
   @override
   String get prayerMovementsMaleLabel => 'পুরুষ';
@@ -2740,10 +3037,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerMovementsHeroEyebrow => 'চলনে নামাজ';
 
   @override
-  String get prayerMovementsHeroTitle => 'স্বচ্ছতা, স্থিরতা ও অর্থসহ নামাজ পড়ুন';
+  String get prayerMovementsHeroTitle =>
+      'স্বচ্ছতা, স্থিরতা ও অর্থসহ নামাজ পড়ুন';
 
   @override
-  String get prayerMovementsHeroBody => 'তাকবির থেকে জিকির পর্যন্ত দৃশ্যভিত্তিক গাইড, যেখানে প্রতিটি অঙ্গভঙ্গির সঙ্গে আরবি পাঠ, উচ্চারণ ও অর্থ আছে।';
+  String get prayerMovementsHeroBody =>
+      'তাকবির থেকে জিকির পর্যন্ত দৃশ্যভিত্তিক গাইড, যেখানে প্রতিটি অঙ্গভঙ্গির সঙ্গে আরবি পাঠ, উচ্চারণ ও অর্থ আছে।';
 
   @override
   String prayerMovementsHeroStepsCount(int count) {
@@ -2760,7 +3059,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerMovementsSequenceTitle => 'অঙ্গভঙ্গির ধারাবাহিকতা';
 
   @override
-  String get prayerMovementsSequenceSubtitle => 'তাকবিরে তাহরিমা থেকে নামাজের পরের জিকির পর্যন্ত একেকটি স্থির অঙ্গভঙ্গি অনুসরণ করুন।';
+  String get prayerMovementsSequenceSubtitle =>
+      'তাকবিরে তাহরিমা থেকে নামাজের পরের জিকির পর্যন্ত একেকটি স্থির অঙ্গভঙ্গি অনুসরণ করুন।';
 
   @override
   String get prayerMovementsArabicLabel => 'যে আরবি পড়বেন';
@@ -2778,7 +3078,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerMovementsHadithTitle => 'হাদিসভিত্তিক স্মরণিকা';
 
   @override
-  String get prayerMovementsHadithSubtitle => 'সুন্নাহ, স্থিরতা ও মনোযোগের সঙ্গে এই প্রদর্শনীকে যুক্ত রাখে এমন সংক্ষিপ্ত স্মরণিকা।';
+  String get prayerMovementsHadithSubtitle =>
+      'সুন্নাহ, স্থিরতা ও মনোযোগের সঙ্গে এই প্রদর্শনীকে যুক্ত রাখে এমন সংক্ষিপ্ত স্মরণিকা।';
 
   @override
   String get prayerMovementsHadithSourceLabel => 'সূত্র';
@@ -2787,13 +3088,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerMovementsFiqhNoteTitle => 'সম্মানজনক ভিন্নতার নোট';
 
   @override
-  String get prayerMovementsFiqhNoteBody => 'হাত বাঁধা, আঙুল নাড়ানো এবং কিছু শব্দচয়নে মাযহাব ও শিক্ষকের ভিত্তিতে ভিন্নতা থাকতে পারে। এটিকে বন্ধুসুলভ প্রদর্শনী হিসেবে নিন এবং নির্দিষ্ট বিধানের জন্য বিশ্বস্ত স্থানীয় নির্দেশনা অনুসরণ করুন।';
+  String get prayerMovementsFiqhNoteBody =>
+      'হাত বাঁধা, আঙুল নাড়ানো এবং কিছু শব্দচয়নে মাযহাব ও শিক্ষকের ভিত্তিতে ভিন্নতা থাকতে পারে। এটিকে বন্ধুসুলভ প্রদর্শনী হিসেবে নিন এবং নির্দিষ্ট বিধানের জন্য বিশ্বস্ত স্থানীয় নির্দেশনা অনুসরণ করুন।';
 
   @override
   String get prayerNafalTitle => 'দৈনিক নফল নামাজ';
 
   @override
-  String get prayerNafalSubtitle => 'সকাল, দিন, সন্ধ্যা ও রাতের জন্য শান্ত ঐচ্ছিক নামাজের ধারা।';
+  String get prayerNafalSubtitle =>
+      'সকাল, দিন, সন্ধ্যা ও রাতের জন্য শান্ত ঐচ্ছিক নামাজের ধারা।';
 
   @override
   String get prayerNafalArabicLabel => 'نفل';
@@ -2820,7 +3123,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerNafalNoteTitle => 'ফিকহি কোমল নোট';
 
   @override
-  String get prayerNafalNoteBody => 'এগুলো প্রচলিত নফল সময়ের বন্ধুসুলভ স্মরণিকা। মাযহাব ও শিক্ষকের ভিত্তিতে বিস্তারিত ও রাকাত সংখ্যা ভিন্ন হতে পারে, তাই নির্দিষ্ট বিষয়ে বিশ্বস্ত স্থানীয় নির্দেশনা অনুসরণ করুন।';
+  String get prayerNafalNoteBody =>
+      'এগুলো প্রচলিত নফল সময়ের বন্ধুসুলভ স্মরণিকা। মাযহাব ও শিক্ষকের ভিত্তিতে বিস্তারিত ও রাকাত সংখ্যা ভিন্ন হতে পারে, তাই নির্দিষ্ট বিষয়ে বিশ্বস্ত স্থানীয় নির্দেশনা অনুসরণ করুন।';
 
   @override
   String get prayerNafalTahajjudTitle => 'তাহাজ্জুদ';
@@ -2835,16 +3139,19 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerNafalTahajjudRakah => '২+';
 
   @override
-  String get prayerNafalTahajjudBenefit => 'নীরব রাতকে দু\'আ, তওবা ও গভীর মনোযোগের সময়ে বদলে দেয়।';
+  String get prayerNafalTahajjudBenefit =>
+      'নীরব রাতকে দু\'আ, তওবা ও গভীর মনোযোগের সময়ে বদলে দেয়।';
 
   @override
-  String get prayerNafalTahajjudBody => 'ধীরে জেগে উঠুন, দুই রাকাত করে পড়ুন, আর তিলাওয়াত শান্ত রাখুন। মনোযোগী দুই রাকাতও দিনের সবচেয়ে নীরব ভরসা হতে পারে।';
+  String get prayerNafalTahajjudBody =>
+      'ধীরে জেগে উঠুন, দুই রাকাত করে পড়ুন, আর তিলাওয়াত শান্ত রাখুন। মনোযোগী দুই রাকাতও দিনের সবচেয়ে নীরব ভরসা হতে পারে।';
 
   @override
   String get prayerNafalTahajjudHadith1Source => 'সহিহ মুসলিম ১১৬৩a';
 
   @override
-  String get prayerNafalTahajjudHadith1Body => 'ফরজ নামাজের পর সবচেয়ে উত্তম নামাজ হলো রাতের নামাজ।';
+  String get prayerNafalTahajjudHadith1Body =>
+      'ফরজ নামাজের পর সবচেয়ে উত্তম নামাজ হলো রাতের নামাজ।';
 
   @override
   String get prayerNafalIshraqTitle => 'ইশরাক';
@@ -2859,16 +3166,19 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerNafalIshraqRakah => '২';
 
   @override
-  String get prayerNafalIshraqBenefit => 'ফজর, জিকির ও আশাময় সকালের শুরু একসঙ্গে যুক্ত করে।';
+  String get prayerNafalIshraqBenefit =>
+      'ফজর, জিকির ও আশাময় সকালের শুরু একসঙ্গে যুক্ত করে।';
 
   @override
-  String get prayerNafalIshraqBody => 'সূর্যোদয়ের নিষিদ্ধ সময় শেষ হওয়া পর্যন্ত অপেক্ষা করুন, তারপর হালকা মন ও আন্তরিক নিয়তে শুরু করুন।';
+  String get prayerNafalIshraqBody =>
+      'সূর্যোদয়ের নিষিদ্ধ সময় শেষ হওয়া পর্যন্ত অপেক্ষা করুন, তারপর হালকা মন ও আন্তরিক নিয়তে শুরু করুন।';
 
   @override
   String get prayerNafalIshraqHadith1Source => 'জামে আত-তিরমিজি ৫৮৬';
 
   @override
-  String get prayerNafalIshraqHadith1Body => 'জামাতে ফজর, সূর্য ওঠা পর্যন্ত জিকির, তারপর দুই রাকাতের জন্য হজ ও উমরার সওয়াবের বর্ণনা এসেছে।';
+  String get prayerNafalIshraqHadith1Body =>
+      'জামাতে ফজর, সূর্য ওঠা পর্যন্ত জিকির, তারপর দুই রাকাতের জন্য হজ ও উমরার সওয়াবের বর্ণনা এসেছে।';
 
   @override
   String get prayerNafalDuhaTitle => 'দুহা / চাশত';
@@ -2883,22 +3193,27 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerNafalDuhaRakah => '২-৮';
 
   @override
-  String get prayerNafalDuhaBenefit => 'কৃতজ্ঞতা সতেজ করে এবং শরীরের প্রতিটি জোড়ার সদকার দায়িত্ব পূরণে সাহায্য করে।';
+  String get prayerNafalDuhaBenefit =>
+      'কৃতজ্ঞতা সতেজ করে এবং শরীরের প্রতিটি জোড়ার সদকার দায়িত্ব পূরণে সাহায্য করে।';
 
   @override
-  String get prayerNafalDuhaBody => 'সকালের সময়টুকু কৃতজ্ঞতা, রিজিক ও নতুন শক্তির জন্য ব্যবহার করুন, দিন ভারী হওয়ার আগেই।';
+  String get prayerNafalDuhaBody =>
+      'সকালের সময়টুকু কৃতজ্ঞতা, রিজিক ও নতুন শক্তির জন্য ব্যবহার করুন, দিন ভারী হওয়ার আগেই।';
 
   @override
   String get prayerNafalDuhaHadith1Source => 'সহিহ মুসলিম ৭২০';
 
   @override
-  String get prayerNafalDuhaHadith1Body => 'দুহার দুই রাকাত শরীরের প্রতিটি জোড়ার সকালের সদকার জন্য যথেষ্ট হয়।';
+  String get prayerNafalDuhaHadith1Body =>
+      'দুহার দুই রাকাত শরীরের প্রতিটি জোড়ার সকালের সদকার জন্য যথেষ্ট হয়।';
 
   @override
-  String get prayerNafalDuhaHadith2Source => 'সহিহ বুখারি ১১৭৮; সহিহ মুসলিম ৭২১a';
+  String get prayerNafalDuhaHadith2Source =>
+      'সহিহ বুখারি ১১৭৮; সহিহ মুসলিম ৭২১a';
 
   @override
-  String get prayerNafalDuhaHadith2Body => 'আবু হুরাইরা (রা.)-কে নিয়মিত আমলের মধ্যে দুহা ধরে রাখতে উপদেশ দেওয়া হয়েছিল।';
+  String get prayerNafalDuhaHadith2Body =>
+      'আবু হুরাইরা (রা.)-কে নিয়মিত আমলের মধ্যে দুহা ধরে রাখতে উপদেশ দেওয়া হয়েছিল।';
 
   @override
   String get prayerNafalAwwabinTitle => 'আউয়াবিন';
@@ -2913,181 +3228,220 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerNafalAwwabinRakah => '২-৬';
 
   @override
-  String get prayerNafalAwwabinBenefit => 'মাগরিব-ইশার মাঝের সময়কে ছোট নফল রাকাত ও জিকিরে জীবন্ত রাখে।';
+  String get prayerNafalAwwabinBenefit =>
+      'মাগরিব-ইশার মাঝের সময়কে ছোট নফল রাকাত ও জিকিরে জীবন্ত রাখে।';
 
   @override
-  String get prayerNafalAwwabinBody => 'সন্ধ্যাকে কোমল করুন: ছোট রাকাত, জিকির ও শান্ত মনোযোগে আল্লাহর দিকে ফিরে আসুন।';
+  String get prayerNafalAwwabinBody =>
+      'সন্ধ্যাকে কোমল করুন: ছোট রাকাত, জিকির ও শান্ত মনোযোগে আল্লাহর দিকে ফিরে আসুন।';
 
   @override
-  String get prayerNafalAwwabinHadith1Source => 'জামে আত-তিরমিজি ৪৩৫; সুনান ইবন মাজাহ ১১৬৭';
+  String get prayerNafalAwwabinHadith1Source =>
+      'জামে আত-তিরমিজি ৪৩৫; সুনান ইবন মাজাহ ১১৬৭';
 
   @override
-  String get prayerNafalAwwabinHadith1Body => 'মাগরিবের পর ছয় রাকাতের বর্ণনা এসেছে; এই বর্ণনার শক্তি নিয়ে আলেমদের আলোচনা আছে।';
+  String get prayerNafalAwwabinHadith1Body =>
+      'মাগরিবের পর ছয় রাকাতের বর্ণনা এসেছে; এই বর্ণনার শক্তি নিয়ে আলেমদের আলোচনা আছে।';
 
   @override
   String get prayerNafalAwwabinHadith2Source => 'সহিহ মুসলিম ৭৪৮b';
 
   @override
-  String get prayerNafalAwwabinHadith2Body => 'সালাতুল আউয়াবিন নামটি সহিহভাবে দুহার সময়ের নামাজের জন্যও এসেছে।';
+  String get prayerNafalAwwabinHadith2Body =>
+      'সালাতুল আউয়াবিন নামটি সহিহভাবে দুহার সময়ের নামাজের জন্যও এসেছে।';
 
   @override
   String get prayerHowIntentionTitle => 'নিয়ত ও প্রস্তুতি';
 
   @override
-  String get prayerHowIntentionBody => 'ওজু করুন, কিবলামুখী হন, এবং শুরু করার আগে অন্তরে নিয়ত স্থির করুন।';
+  String get prayerHowIntentionBody =>
+      'ওজু করুন, কিবলামুখী হন, এবং শুরু করার আগে অন্তরে নিয়ত স্থির করুন।';
 
   @override
   String get prayerHowQiyamTitle => 'কিয়াম';
 
   @override
-  String get prayerHowQiyamBody => 'শান্তভাবে দাঁড়ান, তাকবিরে তাহরিমা বলুন, সূরা ফাতিহা পড়ুন, তারপর কুরআন থেকে যা সহজ হয় পড়ুন।';
+  String get prayerHowQiyamBody =>
+      'শান্তভাবে দাঁড়ান, তাকবিরে তাহরিমা বলুন, সূরা ফাতিহা পড়ুন, তারপর কুরআন থেকে যা সহজ হয় পড়ুন।';
 
   @override
   String get prayerHowRukuTitle => 'রুকু';
 
   @override
-  String get prayerHowRukuBody => 'পিঠ স্থির রেখে রুকু করুন, আল্লাহর পবিত্রতা ঘোষণা করুন, তারপর শান্তভাবে উঠে দাঁড়ান।';
+  String get prayerHowRukuBody =>
+      'পিঠ স্থির রেখে রুকু করুন, আল্লাহর পবিত্রতা ঘোষণা করুন, তারপর শান্তভাবে উঠে দাঁড়ান।';
 
   @override
   String get prayerHowSujoodTitle => 'সিজদা';
 
   @override
-  String get prayerHowSujoodBody => 'বিনয়ের সঙ্গে সিজদা করুন, তাড়াহুড়া না করে থামুন, তারপর সংক্ষিপ্ত বসে দ্বিতীয় সিজদা সম্পন্ন করুন।';
+  String get prayerHowSujoodBody =>
+      'বিনয়ের সঙ্গে সিজদা করুন, তাড়াহুড়া না করে থামুন, তারপর সংক্ষিপ্ত বসে দ্বিতীয় সিজদা সম্পন্ন করুন।';
 
   @override
   String get prayerHowTashahhudTitle => 'তাশাহহুদ';
 
   @override
-  String get prayerHowTashahhudBody => 'শেষ বৈঠকে তাশাহহুদ পড়ুন এবং নবীজির ওপর দরুদ পাঠ করুন।';
+  String get prayerHowTashahhudBody =>
+      'শেষ বৈঠকে তাশাহহুদ পড়ুন এবং নবীজির ওপর দরুদ পাঠ করুন।';
 
   @override
   String get prayerHowSalamTitle => 'সালাম';
 
   @override
-  String get prayerHowSalamBody => 'সালামের মাধ্যমে নামাজ শেষ করুন, তারপর সংক্ষিপ্ত জিকির ও দু\'আর জন্য মনোযোগ ধরে রাখুন।';
+  String get prayerHowSalamBody =>
+      'সালামের মাধ্যমে নামাজ শেষ করুন, তারপর সংক্ষিপ্ত জিকির ও দু\'আর জন্য মনোযোগ ধরে রাখুন।';
 
   @override
   String get prayerFocusFajrTitle => 'ফজরের সময়';
 
   @override
-  String get prayerFocusFajrSubtitle => 'পৃথিবী ব্যস্ত হওয়ার আগেই দিন শুরু করুন।';
+  String get prayerFocusFajrSubtitle =>
+      'পৃথিবী ব্যস্ত হওয়ার আগেই দিন শুরু করুন।';
 
   @override
   String get prayerFocusSunriseTitle => 'সূর্যোদয়ের বিরতি';
 
   @override
-  String get prayerFocusSunriseSubtitle => 'ফজরের পর শান্ত একটি রূপান্তর; ঐচ্ছিক দুহা শুরু করার আগে অপেক্ষা করুন।';
+  String get prayerFocusSunriseSubtitle =>
+      'ফজরের পর শান্ত একটি রূপান্তর; ঐচ্ছিক দুহা শুরু করার আগে অপেক্ষা করুন।';
 
   @override
   String get prayerFocusDhuhrTitle => 'যোহরের নবায়ন';
 
   @override
-  String get prayerFocusDhuhrSubtitle => 'দিনের মাঝামাঝি সময়কে পরিচ্ছন্ন আধ্যাত্মিক রিসেটে বদলে দিন।';
+  String get prayerFocusDhuhrSubtitle =>
+      'দিনের মাঝামাঝি সময়কে পরিচ্ছন্ন আধ্যাত্মিক রিসেটে বদলে দিন।';
 
   @override
   String get prayerFocusAsrTitle => 'আসরের পাহারা';
 
   @override
-  String get prayerFocusAsrSubtitle => 'কাজকর্ম মনোযোগ ছড়িয়ে দেওয়ার আগে বিকেলকে রক্ষা করুন।';
+  String get prayerFocusAsrSubtitle =>
+      'কাজকর্ম মনোযোগ ছড়িয়ে দেওয়ার আগে বিকেলকে রক্ষা করুন।';
 
   @override
   String get prayerFocusMaghribTitle => 'মাগরিবে ফিরে আসা';
 
   @override
-  String get prayerFocusMaghribSubtitle => 'সূর্যাস্ত থেকে দ্রুত স্মরণ ও কৃতজ্ঞতায় ফিরে আসুন।';
+  String get prayerFocusMaghribSubtitle =>
+      'সূর্যাস্ত থেকে দ্রুত স্মরণ ও কৃতজ্ঞতায় ফিরে আসুন।';
 
   @override
   String get prayerFocusIshaTitle => 'ইশার সমাপ্তি';
 
   @override
-  String get prayerFocusIshaSubtitle => 'শান্তি, তাওবা এবং ফজরের প্রস্তুতি দিয়ে দিন শেষ করুন।';
+  String get prayerFocusIshaSubtitle =>
+      'শান্তি, তাওবা এবং ফজরের প্রস্তুতি দিয়ে দিন শেষ করুন।';
 
   @override
   String get prayerNowFajrTitle => 'ভোরকে রক্ষা করুন';
 
   @override
-  String get prayerNowFajrBody => 'সূর্যোদয়ের আগে ফজরের সময়কে রক্ষা করুন। এখনও না পড়ে থাকলে ওজু করে এখনই পড়ুন; পড়ে থাকলে সকালের জিকির বা কুরআনের সঙ্গে থাকুন।';
+  String get prayerNowFajrBody =>
+      'সূর্যোদয়ের আগে ফজরের সময়কে রক্ষা করুন। এখনও না পড়ে থাকলে ওজু করে এখনই পড়ুন; পড়ে থাকলে সকালের জিকির বা কুরআনের সঙ্গে থাকুন।';
 
   @override
   String get prayerNowSunriseTitle => 'বিরতি নিন ও স্মরণ করুন';
 
   @override
-  String get prayerNowSunriseBody => 'ঠিক সূর্যোদয়ের সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; সকালের জিকির চালিয়ে যান এবং সূর্য ওঠার পর দুহার জন্য অপেক্ষা করুন।';
+  String get prayerNowSunriseBody =>
+      'ঠিক সূর্যোদয়ের সময় নফল নামাজ শুরু করা এড়িয়ে চলুন; সকালের জিকির চালিয়ে যান এবং সূর্য ওঠার পর দুহার জন্য অপেক্ষা করুন।';
 
   @override
   String get prayerNowDhuhrTitle => 'দিনের মাঝখানে রিসেট করুন';
 
   @override
-  String get prayerNowDhuhrBody => 'কাজ থেকে একটু সরে আসুন, ওজু নবায়ন করুন, এবং ফরজ নামাজকে তাড়াহুড়াহীন মনোযোগ দিন।';
+  String get prayerNowDhuhrBody =>
+      'কাজ থেকে একটু সরে আসুন, ওজু নবায়ন করুন, এবং ফরজ নামাজকে তাড়াহুড়াহীন মনোযোগ দিন।';
 
   @override
   String get prayerNowAsrTitle => 'বিকেলকে রক্ষা করুন';
 
   @override
-  String get prayerNowAsrBody => 'দিন ভিড়ভাট্টা হওয়ার আগে আসরকে সামনে আনুন। স্থির গতিতে নামাজ পড়ুন এবং শেষে সংক্ষিপ্ত জিকিরের সময় রাখুন।';
+  String get prayerNowAsrBody =>
+      'দিন ভিড়ভাট্টা হওয়ার আগে আসরকে সামনে আনুন। স্থির গতিতে নামাজ পড়ুন এবং শেষে সংক্ষিপ্ত জিকিরের সময় রাখুন।';
 
   @override
   String get prayerNowMaghribTitle => 'দ্রুত এগিয়ে যান';
 
   @override
-  String get prayerNowMaghribBody => 'মাগরিবের সময় হলে সূর্যাস্তের কাজ থেকে দ্রুত নামাজে যান, তারপর হালকা হৃদয়ে পরিবার, খাবার বা যাত্রায় ফিরুন।';
+  String get prayerNowMaghribBody =>
+      'মাগরিবের সময় হলে সূর্যাস্তের কাজ থেকে দ্রুত নামাজে যান, তারপর হালকা হৃদয়ে পরিবার, খাবার বা যাত্রায় ফিরুন।';
 
   @override
   String get prayerNowIshaTitle => 'দিনটি সুন্দরভাবে শেষ করুন';
 
   @override
-  String get prayerNowIshaBody => 'ঘুম ঘিরে ধরার আগেই ইশা পড়ুন। তাওবা, কৃতজ্ঞতা এবং ফজরের জন্য সহজ পরিকল্পনার সঙ্গে এটি জুড়ে দিন।';
+  String get prayerNowIshaBody =>
+      'ঘুম ঘিরে ধরার আগেই ইশা পড়ুন। তাওবা, কৃতজ্ঞতা এবং ফজরের জন্য সহজ পরিকল্পনার সঙ্গে এটি জুড়ে দিন।';
 
   @override
-  String get prayerSuggestionsFajrRaw => 'সামর্থ্য হলে ফরজের আগে দুই রাকাআত সুন্নাহ পড়ুন।||তিলাওয়াত ছোট হলেও শান্ত ও উজ্জ্বল রাখুন।||নামাজের পর কয়েক মিনিট সকালের জিকির বা অল্প কুরআন পাঠে দিন।';
+  String get prayerSuggestionsFajrRaw =>
+      'সামর্থ্য হলে ফরজের আগে দুই রাকাআত সুন্নাহ পড়ুন।||তিলাওয়াত ছোট হলেও শান্ত ও উজ্জ্বল রাখুন।||নামাজের পর কয়েক মিনিট সকালের জিকির বা অল্প কুরআন পাঠে দিন।';
 
   @override
-  String get prayerSuggestionsSunriseRaw => 'সূর্য ওঠার সময় সকালের জিকির চালিয়ে যান।||সূর্যোদয়ের অপছন্দনীয় মুহূর্ত পার হওয়া পর্যন্ত ঐচ্ছিক দুহার জন্য অপেক্ষা করুন।||এ শান্ত সময়টিকে ভেসে না দিয়ে পরবর্তী নামাজের পরিকল্পনায় ব্যবহার করুন।';
+  String get prayerSuggestionsSunriseRaw =>
+      'সূর্য ওঠার সময় সকালের জিকির চালিয়ে যান।||সূর্যোদয়ের অপছন্দনীয় মুহূর্ত পার হওয়া পর্যন্ত ঐচ্ছিক দুহার জন্য অপেক্ষা করুন।||এ শান্ত সময়টিকে ভেসে না দিয়ে পরবর্তী নামাজের পরিকল্পনায় ব্যবহার করুন।';
 
   @override
-  String get prayerSuggestionsDhuhrRaw => 'আজানকে কাজ বা পড়াশোনা থেকে দৃঢ় বিরতি হিসেবে নিন।||দিন আবার ব্যস্ত হওয়ার আগে শান্ত জায়গা বেছে নিন।||কাজে ফেরার আগে ছোট্ট কৃতজ্ঞতার যাচাইয়ের সঙ্গে নামাজটি জুড়ে দিন।';
+  String get prayerSuggestionsDhuhrRaw =>
+      'আজানকে কাজ বা পড়াশোনা থেকে দৃঢ় বিরতি হিসেবে নিন।||দিন আবার ব্যস্ত হওয়ার আগে শান্ত জায়গা বেছে নিন।||কাজে ফেরার আগে ছোট্ট কৃতজ্ঞতার যাচাইয়ের সঙ্গে নামাজটি জুড়ে দিন।';
 
   @override
-  String get prayerSuggestionsAsrRaw => 'বিকেলের ব্যস্ততা শুরু হওয়ার আগেই আসরের পরিকল্পনা করুন।||চাপা তাড়াহুড়ার বদলে গতি স্থির রাখুন।||সালামের পর এক মিনিট আল্লাহর কাছে হিফাজত ও ধারাবাহিকতা চান।';
+  String get prayerSuggestionsAsrRaw =>
+      'বিকেলের ব্যস্ততা শুরু হওয়ার আগেই আসরের পরিকল্পনা করুন।||চাপা তাড়াহুড়ার বদলে গতি স্থির রাখুন।||সালামের পর এক মিনিট আল্লাহর কাছে হিফাজত ও ধারাবাহিকতা চান।';
 
   @override
-  String get prayerSuggestionsMaghribRaw => 'দৈনন্দিন জীবনে সময়টি ছোট মনে হয়, তাই আজানের পর দ্রুত নামাজ পড়ুন।||খাবার, পরিবার বা যাত্রাপথ যেন নামাজকে ঢেকে না ফেলে।||রুটিনে সম্ভব হলে সন্ধ্যার জিকির দিয়ে অনুসরণ করুন।';
+  String get prayerSuggestionsMaghribRaw =>
+      'দৈনন্দিন জীবনে সময়টি ছোট মনে হয়, তাই আজানের পর দ্রুত নামাজ পড়ুন।||খাবার, পরিবার বা যাত্রাপথ যেন নামাজকে ঢেকে না ফেলে।||রুটিনে সম্ভব হলে সন্ধ্যার জিকির দিয়ে অনুসরণ করুন।';
 
   @override
-  String get prayerSuggestionsIshaRaw => 'ঘুম মনোযোগ ভারী করার আগেই নামাজ পড়ুন।||নিজের অনুশীলন অনুযায়ী ইশার পর বিতরের প্রস্তুতি রাখুন।||ঘুমের আগে আগামী ফজরের ব্যবস্থা করুন: অ্যালার্ম, ওজুর পরিকল্পনা, এবং ঘুমের নিয়ত।';
+  String get prayerSuggestionsIshaRaw =>
+      'ঘুম মনোযোগ ভারী করার আগেই নামাজ পড়ুন।||নিজের অনুশীলন অনুযায়ী ইশার পর বিতরের প্রস্তুতি রাখুন।||ঘুমের আগে আগামী ফজরের ব্যবস্থা করুন: অ্যালার্ম, ওজুর পরিকল্পনা, এবং ঘুমের নিয়ত।';
 
   @override
-  String get prayerBestPracticesFajrRaw => 'ফজরকে মাথায় রেখে ঘুমান, পরে দেখা যাবে এমন ভাবনায় নয়।||দিনের প্রথম নামাজ তাড়াহুড়া করে নয়; এটিকে দিনের সুর বানাতে দিন।||ফজরের পরের নীরবতা কুরআন, জিকির বা এক আন্তরিক দু\'আর জন্য ব্যবহার করুন।';
+  String get prayerBestPracticesFajrRaw =>
+      'ফজরকে মাথায় রেখে ঘুমান, পরে দেখা যাবে এমন ভাবনায় নয়।||দিনের প্রথম নামাজ তাড়াহুড়া করে নয়; এটিকে দিনের সুর বানাতে দিন।||ফজরের পরের নীরবতা কুরআন, জিকির বা এক আন্তরিক দু\'আর জন্য ব্যবহার করুন।';
 
   @override
-  String get prayerBestPracticesSunriseRaw => 'সূর্যোদয়কে ফরজ নামাজ ভাববেন না; এটি একটি সময়-পরিবর্তনের চিহ্ন।||ঠিক সূর্যোদয়ের মুহূর্তে নফল নামাজ থেকে বিরত থাকুন।||সূর্য উঠে সময় পরিষ্কার হলে ঐচ্ছিক ইবাদতে ফিরুন।';
+  String get prayerBestPracticesSunriseRaw =>
+      'সূর্যোদয়কে ফরজ নামাজ ভাববেন না; এটি একটি সময়-পরিবর্তনের চিহ্ন।||ঠিক সূর্যোদয়ের মুহূর্তে নফল নামাজ থেকে বিরত থাকুন।||সূর্য উঠে সময় পরিষ্কার হলে ঐচ্ছিক ইবাদতে ফিরুন।';
 
   @override
-  String get prayerBestPracticesDhuhrRaw => 'কর্মদিবস পুরোটা দখল করার আগেই যোহরকে ক্যালেন্ডারে রাখুন।||পুরো কাজের তালিকা নামাজে নিয়ে না দাঁড়ানোর চেষ্টা করুন।||সুন্নাহ নামাজ পড়লে শেখা অনুশীলন অনুযায়ী ফরজের আগে-পরে সাজান।';
+  String get prayerBestPracticesDhuhrRaw =>
+      'কর্মদিবস পুরোটা দখল করার আগেই যোহরকে ক্যালেন্ডারে রাখুন।||পুরো কাজের তালিকা নামাজে নিয়ে না দাঁড়ানোর চেষ্টা করুন।||সুন্নাহ নামাজ পড়লে শেখা অনুশীলন অনুযায়ী ফরজের আগে-পরে সাজান।';
 
   @override
-  String get prayerBestPracticesAsrRaw => 'আসরের সময় একেবারে শেষ প্রান্তে ঠেলে দেওয়া থেকে রক্ষা করুন।||তাকবিরের আগে গতি কমান, যাতে নামাজ দৌড়ের মতো না লাগে।||বাকি দিনের জন্য আসরকে আত্মপর্যালোচনার চেকপয়েন্ট বানান।';
+  String get prayerBestPracticesAsrRaw =>
+      'আসরের সময় একেবারে শেষ প্রান্তে ঠেলে দেওয়া থেকে রক্ষা করুন।||তাকবিরের আগে গতি কমান, যাতে নামাজ দৌড়ের মতো না লাগে।||বাকি দিনের জন্য আসরকে আত্মপর্যালোচনার চেকপয়েন্ট বানান।';
 
   @override
-  String get prayerBestPracticesMaghribRaw => 'মাগরিবের সময় হলে দ্রুত সাড়া দিন।||সূর্যাস্তের খাবার বা জমায়েত যেন নামাজ বিলম্বিত না করে।||মাগরিব দিয়ে সন্ধ্যার জিকির ও পারিবারিক শান্তির দরজা খুলুন।';
+  String get prayerBestPracticesMaghribRaw =>
+      'মাগরিবের সময় হলে দ্রুত সাড়া দিন।||সূর্যাস্তের খাবার বা জমায়েত যেন নামাজ বিলম্বিত না করে।||মাগরিব দিয়ে সন্ধ্যার জিকির ও পারিবারিক শান্তির দরজা খুলুন।';
 
   @override
-  String get prayerBestPracticesIshaRaw => 'ক্লান্তি মনোযোগ ম্লান করার আগে নামাজ পড়ুন।||নিজের অনুশীলন অনুযায়ী রাতের রুটিনে বিতরকে দৃশ্যমান রাখুন।||ঘুমানোর আগে শরীর ও ঘরকে ফজরের জন্য প্রস্তুত করুন।';
+  String get prayerBestPracticesIshaRaw =>
+      'ক্লান্তি মনোযোগ ম্লান করার আগে নামাজ পড়ুন।||নিজের অনুশীলন অনুযায়ী রাতের রুটিনে বিতরকে দৃশ্যমান রাখুন।||ঘুমানোর আগে শরীর ও ঘরকে ফজরের জন্য প্রস্তুত করুন।';
 
   @override
-  String get learnQuranTextMapRaw => 'Arabic Letters=আরবি বর্ণমালা||Pronunciation Basics=উচ্চারণের ভিত্তি||Makharij=মাখারিজ||Tajweed Rules=তাজবিদের নিয়ম||Word-by-Word Understanding=শব্দে-শব্দে বুঝে পড়া||Short Surah Practice=ছোট সূরা অনুশীলন||Audio Assisted Practice=অডিও সহায়তায় অনুশীলন||Beginner=শুরুর স্তর||Beginner to Intermediate=শুরুর স্তর থেকে মধ্যম||Intermediate=মধ্যম||Track Flow=শেখার ধারা||Word map=শব্দ মানচিত্র||Meaning=অর্থ||Family=পরিবার||Core meaning=মূল অর্থ||Examples=উদাহরণ||Tip=টিপস||Focus=ফোকাস||Function=কার্য||Sample=নমুনা||Reading cue=পাঠ নির্দেশনা||Distinction=পার্থক্য||Practice=অনুশীলন||Watch for=খেয়াল রাখুন||Location=অবস্থান||Sound cue=ধ্বনি নির্দেশনা||Common mistake=সাধারণ ভুল||Drill=ড্রিল||Goal=লক্ষ্য||Success marker=সফলতার সূচক||Listen for=শুনে ধরুন||Repeat target=পুনরাবৃত্তির লক্ষ্য||Pacing=গতি||Action=করণীয়||Check prompt=পরীক্ষা নির্দেশনা||Common signs=সাধারণ লক্ষণ||Fix=সংশোধন||Pause=বিরতি||Restart=পুনরারম্ভ||Example=উদাহরণ||Base letter=মূল বর্ণ||Fatha=ফাতহা||Kasra=কাসরা||Damma=দাম্মা||Sukoon=সুকুন||Sound=ধ্বনি||Count=গণনা||Note=নোট||Qalqalah Focus=কালকালাহ ফোকাস||Madd Focus=মাদ্দ ফোকাস||Trigger=ট্রিগার||Delivery=প্রয়োগ পদ্ধতি||How to read=কীভাবে পড়বেন||Coach note=শিক্ষকের নোট||Objective=উদ্দেশ্য||Key theme=মূল বিষয়||Recitation target=তিলাওয়াতের লক্ষ্য||Practice prompt=অনুশীলনের নির্দেশনা||Light sample=হালকা নমুনা||Heavy sample=ভারী নমুনা||Coach tip=শিক্ষকের টিপস||Do this=এভাবে করুন||Message=বার্তা||Recitation cue=তিলাওয়াত নির্দেশনা||Rule=নিয়ম||Correction=সংশোধন||When=কখন||I can recognize at least 20 high-frequency Quran words quickly.=আমি দ্রুত কমপক্ষে ২০টি বহুল ব্যবহৃত কুরআনের শব্দ চিনতে পারি।||I can infer general meaning from common root families.=আমি প্রচলিত মূল-পরিবার থেকে সাধারণ অর্থ অনুমান করতে পারি।||I can identify connector particles and their phrase role.=আমি সংযোজক কণাগুলো এবং বাক্যে তাদের ভূমিকা শনাক্ত করতে পারি।||I can break a short ayah into word groups with translation awareness.=আমি অনুবাদ-বোঝাপড়াসহ একটি ছোট আয়াতকে শব্দগুচ্ছে ভাগ করতে পারি।||I can summarize one short surah in simple meaning-based notes.=আমি সহজ অর্থভিত্তিক নোটে একটি ছোট সূরার সারসংক্ষেপ দিতে পারি।||Word-by-Word Learning=শব্দে-শব্দে শেখা||Audio-Assisted Lessons=অডিও-সহায়তায় পাঠ||All levels=সব স্তর||Difference=পার্থক্য||Indicator=ইঙ্গিত||Do=করুন||Avoid=এড়িয়ে চলুন||Duration=সময়কাল||Output=ফলাফল||Target=লক্ষ্য||From alphabet recognition to first reading drills=বর্ণমালা চেনা থেকে প্রথম পাঠ-ড্রিল পর্যন্ত||Master the full Arabic letter foundation used in Quran reading: isolated forms, similar-letter distinction, beginner pronunciation, and practical review drills.=কুরআন পাঠে ব্যবহৃত পূর্ণ আরবি বর্ণভিত্তি আয়ত্ত করুন: পৃথক রূপ, মিলযুক্ত বর্ণের পার্থক্য, প্রাথমিক উচ্চারণ এবং ব্যবহারিক রিভিউ ড্রিল।||Heavy-light clarity, madd, and recitation flow=ভারী-হালকা ধ্বনির স্বচ্ছতা, মাদ্দ ও তিলাওয়াতের প্রবাহ||Build clear Quran pronunciation through contrast training, articulation cues, controlled lengthening, and guided pause-restart drills.=কনট্রাস্ট অনুশীলন, উচ্চারণ নির্দেশনা, নিয়ন্ত্রিত টান এবং বিরতি-শুরু ড্রিলের মাধ্যমে পরিষ্কার কুরআনিক উচ্চারণ গড়ে তুলুন।||Mapped articulation zones and precision drills=উচ্চারণস্থান মানচিত্র ও নিখুঁত ড্রিল||Learn the exact articulation origins of Quran letters through zone mapping, contrast practice, and guided phrase drills.=জোন ম্যাপিং, কনট্রাস্ট অনুশীলন এবং নির্দেশিত ফ্রেজ ড্রিলের মাধ্যমে কুরআনের বর্ণের সুনির্দিষ্ট উচ্চারণস্থান শিখুন।||Rule-by-rule application with guided drills=ধাপে ধাপে নিয়ম প্রয়োগের গাইডেড ড্রিল||Learn and apply core tajweed rules step by step with focused examples, correction drills, and integrated recitation practice.=নির্বাচিত উদাহরণ, সংশোধনী ড্রিল এবং সমন্বিত তিলাওয়াত অনুশীলনের মাধ্যমে মূল তাজবিদ নিয়ম ধাপে ধাপে শিখুন ও প্রয়োগ করুন।||Vocabulary, roots, and ayah meaning mapping=শব্দভান্ডার, মূলধাতু ও আয়াতের অর্থ মানচিত্র||Build practical Quran understanding through high-frequency vocabulary, root-pattern recognition, connector awareness, and phrase-by-phrase meaning drills.=বহুল ব্যবহৃত শব্দভান্ডার, ধাতু-প্যাটার্ন চেনা, সংযোজক বোঝাপড়া এবং ফ্রেজভিত্তিক অর্থ অনুশীলনের মাধ্যমে ব্যবহারিক কুরআন বোঝাপড়া তৈরি করুন।||Salah-ready recitation with memorization flow=সালাত-প্রস্তুত তিলাওয়াত ও মুখস্থের ধারা||Practice essential short surahs through memorization cycles, tajweed targets, meaning-linked recitation, and prayer-ready fluency checks.=মুখস্থ চক্র, তাজবিদ লক্ষ্য, অর্থসংযুক্ত তিলাওয়াত এবং সালাত-প্রস্তুত সাবলীলতার মূল্যায়নের মাধ্যমে প্রয়োজনীয় ছোট সূরা অনুশীলন করুন।||Focused listening, shadowing, and correction loops=মনোযোগী শোনা, শ্যাডো অনুশীলন ও সংশোধন চক্র||Build strong recitation quality through audio-first drills, imitation practice, structured error detection, and confidence-focused feedback cycles.=অডিও-প্রথম ড্রিল, অনুকরণ অনুশীলন, কাঠামোবদ্ধ ভুল শনাক্তকরণ এবং আত্মবিশ্বাসভিত্তিক ফিডব্যাক চক্রের মাধ্যমে তিলাওয়াতের মান শক্তিশালী করুন।||1) High-Frequency Vocabulary Bank=১) বহুল ব্যবহৃত শব্দভান্ডার ব্যাংক||Memorize recurring Quran words so ayah meaning becomes easier to follow in real time.=পুনরাবৃত্ত কুরআনিক শব্দ মুখস্থ করুন, যাতে বাস্তবে আয়াতের অর্থ অনুসরণ করা সহজ হয়।||2) Root Family Mapping=২) মূলধাতু পরিবার মানচিত্র||Recognize core roots so unfamiliar words still reveal approximate meaning.=মূল ধাতু চিনে নিন, যাতে অচেনা শব্দ থেকেও আনুমানিক অর্থ বোঝা যায়।||3) Connector Words and Particle Cues=৩) সংযোজক শব্দ ও পার্টিকল নির্দেশনা||Spot linking words that shape sentence meaning, sequence, emphasis, and direction.=বাক্যের অর্থ, ক্রম, জোর ও দিক নির্ধারণকারী সংযোজক শব্দগুলো শনাক্ত করুন।||4) Phrase Breakdown Lab=৪) ফ্রেজ বিশ্লেষণ ল্যাব||Break phrases into word units, then reconnect them into complete meaning.=ফ্রেজকে শব্দ এককে ভেঙে নিন, তারপর পূর্ণ অর্থে আবার যুক্ত করুন।||5) Ayah Word Map Practice=৫) আয়াত শব্দ-মানচিত্র অনুশীলন||Apply vocabulary and connector awareness to complete ayah passages.=শব্দভান্ডার ও সংযোজক বোঝাপড়া ব্যবহার করে পূর্ণ আয়াতাংশ অনুধাবন করুন।||Follow this flow to move from vocabulary recognition to ayah-level understanding.=এই ধারা অনুসরণ করে শব্দ চিনে নেওয়া থেকে আয়াত-স্তরের বোঝাপড়ায় যান।||6) Revision and Mastery Checklist=৬) রিভিউ ও দক্ষতা চেকলিস্ট||Use this cycle to shift from memorizing isolated words to understanding recitation meaning.=এই চক্র ব্যবহার করে বিচ্ছিন্ন শব্দ মুখস্থ করা থেকে তিলাওয়াতের অর্থ বোঝায় অগ্রসর হোন।||1) Full Alphabet Map (Isolated Forms)=১) পূর্ণ বর্ণমালা মানচিত্র (পৃথক রূপ)||Start by mastering isolated letters. Read each symbol, then say its name and sound value.=পৃথক বর্ণরূপ দিয়ে শুরু করুন। প্রতিটি চিহ্ন পড়ুন, তারপর তার নাম ও ধ্বনি বলুন।||2) Grouped Shape Learning=২) গুচ্ছভিত্তিক আকৃতি শেখা||Learn high-retention groups so you can decode letters quickly during reading.=উচ্চ-ধারণক্ষমতার বর্ণগুচ্ছ শিখুন, যাতে পড়ার সময় দ্রুত বর্ণ চেনা যায়।||3) Similar Letter Comparison Grid=৩) সাদৃশ্যপূর্ণ বর্ণ তুলনা গ্রিড||Use this as your anti-confusion reference. Compare shape and sound before speed.=এটিকে বিভ্রান্তি-রোধী রেফারেন্স হিসেবে ব্যবহার করুন। গতি বাড়ানোর আগে আকৃতি ও ধ্বনি তুলনা করুন।||4) Beginner Pronunciation and Articulation Hints=৪) প্রাথমিক উচ্চারণ ও উচ্চারণস্থানের নির্দেশনা||These cues guide where each sound is produced. Keep tone natural and avoid over-force.=প্রতিটি ধ্বনি কোথা থেকে উচ্চারিত হয় তা বুঝতে এই নির্দেশনা অনুসরণ করুন। স্বর স্বাভাবিক রাখুন এবং অতিরিক্ত চাপ এড়িয়ে চলুন।||5) Harakat and Sukoon Pattern Practice=৫) হারাকাত ও সুকুন ধরণ অনুশীলন||Read each row slowly. Keep vowel quality stable: fatha (a), kasra (i), damma (u), sukoon (no vowel).=প্রতিটি সারি ধীরে পড়ুন। স্বরধ্বনির মান স্থির রাখুন: ফাতহা (a), কাসরা (i), দাম্মা (u), সুকুন (স্বরহীন)।||6) Example-Based Beginner Reading Cards=৬) উদাহরণভিত্তিক প্রাথমিক পাঠ কার্ড||These words reinforce letters, vowels, and stops used in early Quran recitation.=এই শব্দগুলো প্রাথমিক কুরআন তিলাওয়াতে ব্যবহৃত বর্ণ, স্বরচিহ্ন ও থামার নিয়মকে দৃঢ় করে।||7) Guided Review and Mastery Check=৭) নির্দেশিত রিভিউ ও দক্ষতা যাচাই||Use this block as your daily 12-minute revision loop until recognition and pronunciation feel natural.=চেনা ও উচ্চারণ স্বাভাবিক না হওয়া পর্যন্ত প্রতিদিন ১২ মিনিটের এই রিভিউ ব্লকটি অনুশীলন করুন।||Fatha = short a=ফাতহা = ছোট a||Kasra = short i=কাসরা = ছোট i||Damma = short u=দাম্মা = ছোট u||Sukoon = stop/closed=সুকুন = থামা/বন্ধ||I can name and identify all 29 letters in isolated form.=আমি পৃথক রূপে ২৯টি বর্ণের নাম বলতে ও শনাক্ত করতে পারি।||I can separate look-alike letters by dot count and position.=আমি দেখতে একইরকম বর্ণগুলোকে বিন্দুর সংখ্যা ও অবস্থান দিয়ে আলাদা করতে পারি।||I can produce basic throat, tongue, and lip letters with control.=আমি গলা, জিহ্বা ও ঠোঁটের প্রাথমিক বর্ণগুলো নিয়ন্ত্রিতভাবে উচ্চারণ করতে পারি।||I can read fatha, kasra, damma, and sukoon patterns aloud.=আমি ফাতহা, কাসরা, দাম্মা ও সুকুনের ধরণ জোরে পড়তে পারি।||I can read beginner examples without adding extra vowels.=আমি অতিরিক্ত স্বর না যোগ করে প্রাথমিক উদাহরণগুলো পড়তে পারি।||1) Focused Listening Drills=১) মনোযোগী শোনার ড্রিল||Train your ear before speaking so imitation and correction become easier.=কথা বলার আগে কানকে প্রশিক্ষণ দিন, যাতে অনুকরণ ও সংশোধন সহজ হয়।||2) Shadow Recitation Rounds=২) শ্যাডো তিলাওয়াত রাউন্ড||Imitate audio in staged levels so your articulation and timing transfer into solo recitation.=ধাপে ধাপে অডিও অনুকরণ করুন, যাতে উচ্চারণ ও সময়নিয়ন্ত্রণ একক তিলাওয়াতে চলে আসে।||3) Error Spot and Fix Map=৩) ভুল শনাক্তকরণ ও সংশোধন মানচিত্র||Use structured checks to detect recurring mistakes and apply targeted corrections.=পুনরাবৃত্ত ভুল শনাক্ত করে লক্ষ্যভিত্তিক সংশোধন করতে কাঠামোবদ্ধ যাচাই ব্যবহার করুন।||4) Guided Audio Session Plan=৪) নির্দেশিত অডিও সেশন পরিকল্পনা||Use a fixed routine to structure listening, imitation, correction, and final confidence recitation.=শোনা, অনুকরণ, সংশোধন এবং আত্মবিশ্বাসী চূড়ান্ত তিলাওয়াতের জন্য নির্দিষ্ট রুটিন অনুসরণ করুন।||5) Targeted Audio Sample Practice=৫) লক্ষ্যভিত্তিক অডিও স্যাম্পল অনুশীলন||Practice selected ayah sets with clear listening goals and repeat targets.=পরিষ্কার শোনার লক্ষ্য ও পুনরাবৃত্তি টার্গেট রেখে নির্দিষ্ট আয়াত-সেট অনুশীলন করুন।||Follow this sequence to improve listening accuracy, imitation quality, and self-correction.=শোনার নির্ভুলতা, অনুকরণের মান এবং স্ব-সংশোধন উন্নত করতে এই ক্রম অনুসরণ করুন।||Repeat this block to transform assisted listening into independent recitation quality.=সহায়ক শোনা থেকে স্বতন্ত্র তিলাওয়াতের মানে যেতে এই ব্লকটি পুনরাবৃত্তি করুন।||I can complete focused listening before imitation.=আমি অনুকরণ শুরুর আগে মনোযোগী শোনা সম্পন্ন করতে পারি।||I can shadow recite while maintaining phrase timing.=আমি ফ্রেজের সময়মাত্রা ঠিক রেখে শ্যাডো তিলাওয়াত করতে পারি।||I can detect and correct at least two repeating mistakes.=আমি অন্তত দুটি পুনরাবৃত্ত ভুল শনাক্ত করে সংশোধন করতে পারি।||I can recite solo with stable rhythm after audio guidance.=অডিও নির্দেশনার পরে আমি স্থির ছন্দে একক তিলাওয়াত করতে পারি।||I can compare my recording and explain one improvement point.=আমি নিজের রেকর্ডিং তুলনা করে অন্তত একটি উন্নয়নের দিক ব্যাখ্যা করতে পারি।||7) Revision Block and Mastery Checklist=৭) রিভিউ ব্লক ও দক্ষতা চেকলিস্ট||Run this block daily for one week to stabilize your Pronunciation Basics track.=প্রোনানসিয়েশন বেসিকস ট্র্যাক স্থিতিশীল করতে এক সপ্তাহ প্রতিদিন এই ব্লকটি করুন।||I can distinguish heavy and light pairs without hesitation.=আমি দ্বিধা ছাড়াই ভারী ও হালকা জোড়াগুলো আলাদা করতে পারি।||I can keep natural madd at a consistent 2-beat timing.=আমি স্বাভাবিক মাদ্দ ধারাবাহিক ২-বিট সময়মাত্রায় রাখতে পারি।||I can stop without adding an extra vowel sound.=আমি অতিরিক্ত স্বরধ্বনি যোগ না করে থামতে পারি।||I can restart phrases with stable tone and rhythm.=আমি স্থির স্বর ও ছন্দে ফ্রেজ পুনরারম্ভ করতে পারি।||I can complete one short recitation with clear pronunciation.=আমি স্পষ্ট উচ্চারণে একটি ছোট তিলাওয়াত সম্পন্ন করতে পারি।||Use this review block daily to lock articulation precision into regular recitation.=উচ্চারণের নিখুঁততা নিয়মিত তিলাওয়াতে স্থির করতে প্রতিদিন এই রিভিউ ব্লকটি ব্যবহার করুন।||I can identify each major makhraj zone and its core letters.=আমি প্রতিটি প্রধান মাখরাজ জোন ও তার মূল বর্ণগুলো শনাক্ত করতে পারি।||I can recite throat letters with distinct sound depth.=আমি গলার বর্ণগুলো স্বতন্ত্র ধ্বনির গভীরতাসহ তিলাওয়াত করতে পারি।||I can maintain separation in key confusion pairs.=আমি গুরুত্বপূর্ণ বিভ্রান্তিকর জোড়াগুলোতে স্পষ্ট পার্থক্য বজায় রাখতে পারি।||I can keep lip letters and ghunnah controlled in flow.=আমি তিলাওয়াতের প্রবাহে ঠোঁটের বর্ণ ও গুন্নাহ নিয়ন্ত্রিত রাখতে পারি।||I can apply makharij cues in at least one short surah recitation.=আমি অন্তত একটি ছোট সূরার তিলাওয়াতে মাখারিজ নির্দেশনা প্রয়োগ করতে পারি।||Use this routine repeatedly until rule application becomes consistent in live recitation.=সরাসরি তিলাওয়াতে নিয়ম প্রয়োগ ধারাবাহিক না হওয়া পর্যন্ত এই রুটিন বারবার অনুশীলন করুন।||I can identify the four noon/tanween rules from examples.=আমি উদাহরণ থেকে নূন/তানউইনের চারটি নিয়ম শনাক্ত করতে পারি।||I can apply meem saakin rules with correct lip and ghunnah control.=আমি সঠিক ঠোঁট ও গুন্নাহ নিয়ন্ত্রণসহ মীম সাকিনের নিয়ম প্রয়োগ করতে পারি।||I can produce qalqalah bounce without adding extra vowels.=আমি অতিরিক্ত স্বর যোগ না করে সঠিক কালকালাহ কম্পন দিতে পারি।||I can maintain madd counts and planned waqf points.=আমি মাদ্দের গণনা ও পরিকল্পিত ওয়াক্‌ফ পয়েন্ট বজায় রাখতে পারি।||I can recite a short surah with visible tajweed awareness.=আমি দৃশ্যমান তাজবিদ সচেতনতা নিয়ে একটি ছোট সূরা তিলাওয়াত করতে পারি।||Use this revision loop to turn short surah memorization into long-term confidence.=এই রিভিশন লুপ ব্যবহার করে ছোট সূরা মুখস্থকে দীর্ঘমেয়াদি আত্মবিশ্বাসে রূপ দিন।||I can recite at least 4 short surahs without looking at the text.=আমি লেখা না দেখে অন্তত ৪টি ছোট সূরা তিলাওয়াত করতে পারি।||I can maintain steady pace suitable for salah recitation.=আমি সালাতের উপযোগী স্থির গতি বজায় রাখতে পারি।||I can apply key tajweed targets inside each short surah.=আমি প্রতিটি ছোট সূরায় গুরুত্বপূর্ণ তাজবিদ লক্ষ্য প্রয়োগ করতে পারি।||I can stop and restart at meaningful phrase boundaries.=আমি অর্থবহ ফ্রেজ সীমায় থামতে ও পুনরারম্ভ করতে পারি।||I can summarize the core message of each practiced surah.=আমি অনুশীলিত প্রতিটি সূরার মূল বার্তা সংক্ষেপে বলতে পারি।';
+  String get learnQuranTextMapRaw =>
+      'Arabic Letters=আরবি বর্ণমালা||Pronunciation Basics=উচ্চারণের ভিত্তি||Makharij=মাখারিজ||Tajweed Rules=তাজবিদের নিয়ম||Word-by-Word Understanding=শব্দে-শব্দে বুঝে পড়া||Short Surah Practice=ছোট সূরা অনুশীলন||Audio Assisted Practice=অডিও সহায়তায় অনুশীলন||Beginner=শুরুর স্তর||Beginner to Intermediate=শুরুর স্তর থেকে মধ্যম||Intermediate=মধ্যম||Track Flow=শেখার ধারা||Word map=শব্দ মানচিত্র||Meaning=অর্থ||Family=পরিবার||Core meaning=মূল অর্থ||Examples=উদাহরণ||Tip=টিপস||Focus=ফোকাস||Function=কার্য||Sample=নমুনা||Reading cue=পাঠ নির্দেশনা||Distinction=পার্থক্য||Practice=অনুশীলন||Watch for=খেয়াল রাখুন||Location=অবস্থান||Sound cue=ধ্বনি নির্দেশনা||Common mistake=সাধারণ ভুল||Drill=ড্রিল||Goal=লক্ষ্য||Success marker=সফলতার সূচক||Listen for=শুনে ধরুন||Repeat target=পুনরাবৃত্তির লক্ষ্য||Pacing=গতি||Action=করণীয়||Check prompt=পরীক্ষা নির্দেশনা||Common signs=সাধারণ লক্ষণ||Fix=সংশোধন||Pause=বিরতি||Restart=পুনরারম্ভ||Example=উদাহরণ||Base letter=মূল বর্ণ||Fatha=ফাতহা||Kasra=কাসরা||Damma=দাম্মা||Sukoon=সুকুন||Sound=ধ্বনি||Count=গণনা||Note=নোট||Qalqalah Focus=কালকালাহ ফোকাস||Madd Focus=মাদ্দ ফোকাস||Trigger=ট্রিগার||Delivery=প্রয়োগ পদ্ধতি||How to read=কীভাবে পড়বেন||Coach note=শিক্ষকের নোট||Objective=উদ্দেশ্য||Key theme=মূল বিষয়||Recitation target=তিলাওয়াতের লক্ষ্য||Practice prompt=অনুশীলনের নির্দেশনা||Light sample=হালকা নমুনা||Heavy sample=ভারী নমুনা||Coach tip=শিক্ষকের টিপস||Do this=এভাবে করুন||Message=বার্তা||Recitation cue=তিলাওয়াত নির্দেশনা||Rule=নিয়ম||Correction=সংশোধন||When=কখন||I can recognize at least 20 high-frequency Quran words quickly.=আমি দ্রুত কমপক্ষে ২০টি বহুল ব্যবহৃত কুরআনের শব্দ চিনতে পারি।||I can infer general meaning from common root families.=আমি প্রচলিত মূল-পরিবার থেকে সাধারণ অর্থ অনুমান করতে পারি।||I can identify connector particles and their phrase role.=আমি সংযোজক কণাগুলো এবং বাক্যে তাদের ভূমিকা শনাক্ত করতে পারি।||I can break a short ayah into word groups with translation awareness.=আমি অনুবাদ-বোঝাপড়াসহ একটি ছোট আয়াতকে শব্দগুচ্ছে ভাগ করতে পারি।||I can summarize one short surah in simple meaning-based notes.=আমি সহজ অর্থভিত্তিক নোটে একটি ছোট সূরার সারসংক্ষেপ দিতে পারি।||Word-by-Word Learning=শব্দে-শব্দে শেখা||Audio-Assisted Lessons=অডিও-সহায়তায় পাঠ||All levels=সব স্তর||Difference=পার্থক্য||Indicator=ইঙ্গিত||Do=করুন||Avoid=এড়িয়ে চলুন||Duration=সময়কাল||Output=ফলাফল||Target=লক্ষ্য||From alphabet recognition to first reading drills=বর্ণমালা চেনা থেকে প্রথম পাঠ-ড্রিল পর্যন্ত||Master the full Arabic letter foundation used in Quran reading: isolated forms, similar-letter distinction, beginner pronunciation, and practical review drills.=কুরআন পাঠে ব্যবহৃত পূর্ণ আরবি বর্ণভিত্তি আয়ত্ত করুন: পৃথক রূপ, মিলযুক্ত বর্ণের পার্থক্য, প্রাথমিক উচ্চারণ এবং ব্যবহারিক রিভিউ ড্রিল।||Heavy-light clarity, madd, and recitation flow=ভারী-হালকা ধ্বনির স্বচ্ছতা, মাদ্দ ও তিলাওয়াতের প্রবাহ||Build clear Quran pronunciation through contrast training, articulation cues, controlled lengthening, and guided pause-restart drills.=কনট্রাস্ট অনুশীলন, উচ্চারণ নির্দেশনা, নিয়ন্ত্রিত টান এবং বিরতি-শুরু ড্রিলের মাধ্যমে পরিষ্কার কুরআনিক উচ্চারণ গড়ে তুলুন।||Mapped articulation zones and precision drills=উচ্চারণস্থান মানচিত্র ও নিখুঁত ড্রিল||Learn the exact articulation origins of Quran letters through zone mapping, contrast practice, and guided phrase drills.=জোন ম্যাপিং, কনট্রাস্ট অনুশীলন এবং নির্দেশিত ফ্রেজ ড্রিলের মাধ্যমে কুরআনের বর্ণের সুনির্দিষ্ট উচ্চারণস্থান শিখুন।||Rule-by-rule application with guided drills=ধাপে ধাপে নিয়ম প্রয়োগের গাইডেড ড্রিল||Learn and apply core tajweed rules step by step with focused examples, correction drills, and integrated recitation practice.=নির্বাচিত উদাহরণ, সংশোধনী ড্রিল এবং সমন্বিত তিলাওয়াত অনুশীলনের মাধ্যমে মূল তাজবিদ নিয়ম ধাপে ধাপে শিখুন ও প্রয়োগ করুন।||Vocabulary, roots, and ayah meaning mapping=শব্দভান্ডার, মূলধাতু ও আয়াতের অর্থ মানচিত্র||Build practical Quran understanding through high-frequency vocabulary, root-pattern recognition, connector awareness, and phrase-by-phrase meaning drills.=বহুল ব্যবহৃত শব্দভান্ডার, ধাতু-প্যাটার্ন চেনা, সংযোজক বোঝাপড়া এবং ফ্রেজভিত্তিক অর্থ অনুশীলনের মাধ্যমে ব্যবহারিক কুরআন বোঝাপড়া তৈরি করুন।||Salah-ready recitation with memorization flow=সালাত-প্রস্তুত তিলাওয়াত ও মুখস্থের ধারা||Practice essential short surahs through memorization cycles, tajweed targets, meaning-linked recitation, and prayer-ready fluency checks.=মুখস্থ চক্র, তাজবিদ লক্ষ্য, অর্থসংযুক্ত তিলাওয়াত এবং সালাত-প্রস্তুত সাবলীলতার মূল্যায়নের মাধ্যমে প্রয়োজনীয় ছোট সূরা অনুশীলন করুন।||Focused listening, shadowing, and correction loops=মনোযোগী শোনা, শ্যাডো অনুশীলন ও সংশোধন চক্র||Build strong recitation quality through audio-first drills, imitation practice, structured error detection, and confidence-focused feedback cycles.=অডিও-প্রথম ড্রিল, অনুকরণ অনুশীলন, কাঠামোবদ্ধ ভুল শনাক্তকরণ এবং আত্মবিশ্বাসভিত্তিক ফিডব্যাক চক্রের মাধ্যমে তিলাওয়াতের মান শক্তিশালী করুন।||1) High-Frequency Vocabulary Bank=১) বহুল ব্যবহৃত শব্দভান্ডার ব্যাংক||Memorize recurring Quran words so ayah meaning becomes easier to follow in real time.=পুনরাবৃত্ত কুরআনিক শব্দ মুখস্থ করুন, যাতে বাস্তবে আয়াতের অর্থ অনুসরণ করা সহজ হয়।||2) Root Family Mapping=২) মূলধাতু পরিবার মানচিত্র||Recognize core roots so unfamiliar words still reveal approximate meaning.=মূল ধাতু চিনে নিন, যাতে অচেনা শব্দ থেকেও আনুমানিক অর্থ বোঝা যায়।||3) Connector Words and Particle Cues=৩) সংযোজক শব্দ ও পার্টিকল নির্দেশনা||Spot linking words that shape sentence meaning, sequence, emphasis, and direction.=বাক্যের অর্থ, ক্রম, জোর ও দিক নির্ধারণকারী সংযোজক শব্দগুলো শনাক্ত করুন।||4) Phrase Breakdown Lab=৪) ফ্রেজ বিশ্লেষণ ল্যাব||Break phrases into word units, then reconnect them into complete meaning.=ফ্রেজকে শব্দ এককে ভেঙে নিন, তারপর পূর্ণ অর্থে আবার যুক্ত করুন।||5) Ayah Word Map Practice=৫) আয়াত শব্দ-মানচিত্র অনুশীলন||Apply vocabulary and connector awareness to complete ayah passages.=শব্দভান্ডার ও সংযোজক বোঝাপড়া ব্যবহার করে পূর্ণ আয়াতাংশ অনুধাবন করুন।||Follow this flow to move from vocabulary recognition to ayah-level understanding.=এই ধারা অনুসরণ করে শব্দ চিনে নেওয়া থেকে আয়াত-স্তরের বোঝাপড়ায় যান।||6) Revision and Mastery Checklist=৬) রিভিউ ও দক্ষতা চেকলিস্ট||Use this cycle to shift from memorizing isolated words to understanding recitation meaning.=এই চক্র ব্যবহার করে বিচ্ছিন্ন শব্দ মুখস্থ করা থেকে তিলাওয়াতের অর্থ বোঝায় অগ্রসর হোন।||1) Full Alphabet Map (Isolated Forms)=১) পূর্ণ বর্ণমালা মানচিত্র (পৃথক রূপ)||Start by mastering isolated letters. Read each symbol, then say its name and sound value.=পৃথক বর্ণরূপ দিয়ে শুরু করুন। প্রতিটি চিহ্ন পড়ুন, তারপর তার নাম ও ধ্বনি বলুন।||2) Grouped Shape Learning=২) গুচ্ছভিত্তিক আকৃতি শেখা||Learn high-retention groups so you can decode letters quickly during reading.=উচ্চ-ধারণক্ষমতার বর্ণগুচ্ছ শিখুন, যাতে পড়ার সময় দ্রুত বর্ণ চেনা যায়।||3) Similar Letter Comparison Grid=৩) সাদৃশ্যপূর্ণ বর্ণ তুলনা গ্রিড||Use this as your anti-confusion reference. Compare shape and sound before speed.=এটিকে বিভ্রান্তি-রোধী রেফারেন্স হিসেবে ব্যবহার করুন। গতি বাড়ানোর আগে আকৃতি ও ধ্বনি তুলনা করুন।||4) Beginner Pronunciation and Articulation Hints=৪) প্রাথমিক উচ্চারণ ও উচ্চারণস্থানের নির্দেশনা||These cues guide where each sound is produced. Keep tone natural and avoid over-force.=প্রতিটি ধ্বনি কোথা থেকে উচ্চারিত হয় তা বুঝতে এই নির্দেশনা অনুসরণ করুন। স্বর স্বাভাবিক রাখুন এবং অতিরিক্ত চাপ এড়িয়ে চলুন।||5) Harakat and Sukoon Pattern Practice=৫) হারাকাত ও সুকুন ধরণ অনুশীলন||Read each row slowly. Keep vowel quality stable: fatha (a), kasra (i), damma (u), sukoon (no vowel).=প্রতিটি সারি ধীরে পড়ুন। স্বরধ্বনির মান স্থির রাখুন: ফাতহা (a), কাসরা (i), দাম্মা (u), সুকুন (স্বরহীন)।||6) Example-Based Beginner Reading Cards=৬) উদাহরণভিত্তিক প্রাথমিক পাঠ কার্ড||These words reinforce letters, vowels, and stops used in early Quran recitation.=এই শব্দগুলো প্রাথমিক কুরআন তিলাওয়াতে ব্যবহৃত বর্ণ, স্বরচিহ্ন ও থামার নিয়মকে দৃঢ় করে।||7) Guided Review and Mastery Check=৭) নির্দেশিত রিভিউ ও দক্ষতা যাচাই||Use this block as your daily 12-minute revision loop until recognition and pronunciation feel natural.=চেনা ও উচ্চারণ স্বাভাবিক না হওয়া পর্যন্ত প্রতিদিন ১২ মিনিটের এই রিভিউ ব্লকটি অনুশীলন করুন।||Fatha = short a=ফাতহা = ছোট a||Kasra = short i=কাসরা = ছোট i||Damma = short u=দাম্মা = ছোট u||Sukoon = stop/closed=সুকুন = থামা/বন্ধ||I can name and identify all 29 letters in isolated form.=আমি পৃথক রূপে ২৯টি বর্ণের নাম বলতে ও শনাক্ত করতে পারি।||I can separate look-alike letters by dot count and position.=আমি দেখতে একইরকম বর্ণগুলোকে বিন্দুর সংখ্যা ও অবস্থান দিয়ে আলাদা করতে পারি।||I can produce basic throat, tongue, and lip letters with control.=আমি গলা, জিহ্বা ও ঠোঁটের প্রাথমিক বর্ণগুলো নিয়ন্ত্রিতভাবে উচ্চারণ করতে পারি।||I can read fatha, kasra, damma, and sukoon patterns aloud.=আমি ফাতহা, কাসরা, দাম্মা ও সুকুনের ধরণ জোরে পড়তে পারি।||I can read beginner examples without adding extra vowels.=আমি অতিরিক্ত স্বর না যোগ করে প্রাথমিক উদাহরণগুলো পড়তে পারি।||1) Focused Listening Drills=১) মনোযোগী শোনার ড্রিল||Train your ear before speaking so imitation and correction become easier.=কথা বলার আগে কানকে প্রশিক্ষণ দিন, যাতে অনুকরণ ও সংশোধন সহজ হয়।||2) Shadow Recitation Rounds=২) শ্যাডো তিলাওয়াত রাউন্ড||Imitate audio in staged levels so your articulation and timing transfer into solo recitation.=ধাপে ধাপে অডিও অনুকরণ করুন, যাতে উচ্চারণ ও সময়নিয়ন্ত্রণ একক তিলাওয়াতে চলে আসে।||3) Error Spot and Fix Map=৩) ভুল শনাক্তকরণ ও সংশোধন মানচিত্র||Use structured checks to detect recurring mistakes and apply targeted corrections.=পুনরাবৃত্ত ভুল শনাক্ত করে লক্ষ্যভিত্তিক সংশোধন করতে কাঠামোবদ্ধ যাচাই ব্যবহার করুন।||4) Guided Audio Session Plan=৪) নির্দেশিত অডিও সেশন পরিকল্পনা||Use a fixed routine to structure listening, imitation, correction, and final confidence recitation.=শোনা, অনুকরণ, সংশোধন এবং আত্মবিশ্বাসী চূড়ান্ত তিলাওয়াতের জন্য নির্দিষ্ট রুটিন অনুসরণ করুন।||5) Targeted Audio Sample Practice=৫) লক্ষ্যভিত্তিক অডিও স্যাম্পল অনুশীলন||Practice selected ayah sets with clear listening goals and repeat targets.=পরিষ্কার শোনার লক্ষ্য ও পুনরাবৃত্তি টার্গেট রেখে নির্দিষ্ট আয়াত-সেট অনুশীলন করুন।||Follow this sequence to improve listening accuracy, imitation quality, and self-correction.=শোনার নির্ভুলতা, অনুকরণের মান এবং স্ব-সংশোধন উন্নত করতে এই ক্রম অনুসরণ করুন।||Repeat this block to transform assisted listening into independent recitation quality.=সহায়ক শোনা থেকে স্বতন্ত্র তিলাওয়াতের মানে যেতে এই ব্লকটি পুনরাবৃত্তি করুন।||I can complete focused listening before imitation.=আমি অনুকরণ শুরুর আগে মনোযোগী শোনা সম্পন্ন করতে পারি।||I can shadow recite while maintaining phrase timing.=আমি ফ্রেজের সময়মাত্রা ঠিক রেখে শ্যাডো তিলাওয়াত করতে পারি।||I can detect and correct at least two repeating mistakes.=আমি অন্তত দুটি পুনরাবৃত্ত ভুল শনাক্ত করে সংশোধন করতে পারি।||I can recite solo with stable rhythm after audio guidance.=অডিও নির্দেশনার পরে আমি স্থির ছন্দে একক তিলাওয়াত করতে পারি।||I can compare my recording and explain one improvement point.=আমি নিজের রেকর্ডিং তুলনা করে অন্তত একটি উন্নয়নের দিক ব্যাখ্যা করতে পারি।||7) Revision Block and Mastery Checklist=৭) রিভিউ ব্লক ও দক্ষতা চেকলিস্ট||Run this block daily for one week to stabilize your Pronunciation Basics track.=প্রোনানসিয়েশন বেসিকস ট্র্যাক স্থিতিশীল করতে এক সপ্তাহ প্রতিদিন এই ব্লকটি করুন।||I can distinguish heavy and light pairs without hesitation.=আমি দ্বিধা ছাড়াই ভারী ও হালকা জোড়াগুলো আলাদা করতে পারি।||I can keep natural madd at a consistent 2-beat timing.=আমি স্বাভাবিক মাদ্দ ধারাবাহিক ২-বিট সময়মাত্রায় রাখতে পারি।||I can stop without adding an extra vowel sound.=আমি অতিরিক্ত স্বরধ্বনি যোগ না করে থামতে পারি।||I can restart phrases with stable tone and rhythm.=আমি স্থির স্বর ও ছন্দে ফ্রেজ পুনরারম্ভ করতে পারি।||I can complete one short recitation with clear pronunciation.=আমি স্পষ্ট উচ্চারণে একটি ছোট তিলাওয়াত সম্পন্ন করতে পারি।||Use this review block daily to lock articulation precision into regular recitation.=উচ্চারণের নিখুঁততা নিয়মিত তিলাওয়াতে স্থির করতে প্রতিদিন এই রিভিউ ব্লকটি ব্যবহার করুন।||I can identify each major makhraj zone and its core letters.=আমি প্রতিটি প্রধান মাখরাজ জোন ও তার মূল বর্ণগুলো শনাক্ত করতে পারি।||I can recite throat letters with distinct sound depth.=আমি গলার বর্ণগুলো স্বতন্ত্র ধ্বনির গভীরতাসহ তিলাওয়াত করতে পারি।||I can maintain separation in key confusion pairs.=আমি গুরুত্বপূর্ণ বিভ্রান্তিকর জোড়াগুলোতে স্পষ্ট পার্থক্য বজায় রাখতে পারি।||I can keep lip letters and ghunnah controlled in flow.=আমি তিলাওয়াতের প্রবাহে ঠোঁটের বর্ণ ও গুন্নাহ নিয়ন্ত্রিত রাখতে পারি।||I can apply makharij cues in at least one short surah recitation.=আমি অন্তত একটি ছোট সূরার তিলাওয়াতে মাখারিজ নির্দেশনা প্রয়োগ করতে পারি।||Use this routine repeatedly until rule application becomes consistent in live recitation.=সরাসরি তিলাওয়াতে নিয়ম প্রয়োগ ধারাবাহিক না হওয়া পর্যন্ত এই রুটিন বারবার অনুশীলন করুন।||I can identify the four noon/tanween rules from examples.=আমি উদাহরণ থেকে নূন/তানউইনের চারটি নিয়ম শনাক্ত করতে পারি।||I can apply meem saakin rules with correct lip and ghunnah control.=আমি সঠিক ঠোঁট ও গুন্নাহ নিয়ন্ত্রণসহ মীম সাকিনের নিয়ম প্রয়োগ করতে পারি।||I can produce qalqalah bounce without adding extra vowels.=আমি অতিরিক্ত স্বর যোগ না করে সঠিক কালকালাহ কম্পন দিতে পারি।||I can maintain madd counts and planned waqf points.=আমি মাদ্দের গণনা ও পরিকল্পিত ওয়াক্‌ফ পয়েন্ট বজায় রাখতে পারি।||I can recite a short surah with visible tajweed awareness.=আমি দৃশ্যমান তাজবিদ সচেতনতা নিয়ে একটি ছোট সূরা তিলাওয়াত করতে পারি।||Use this revision loop to turn short surah memorization into long-term confidence.=এই রিভিশন লুপ ব্যবহার করে ছোট সূরা মুখস্থকে দীর্ঘমেয়াদি আত্মবিশ্বাসে রূপ দিন।||I can recite at least 4 short surahs without looking at the text.=আমি লেখা না দেখে অন্তত ৪টি ছোট সূরা তিলাওয়াত করতে পারি।||I can maintain steady pace suitable for salah recitation.=আমি সালাতের উপযোগী স্থির গতি বজায় রাখতে পারি।||I can apply key tajweed targets inside each short surah.=আমি প্রতিটি ছোট সূরায় গুরুত্বপূর্ণ তাজবিদ লক্ষ্য প্রয়োগ করতে পারি।||I can stop and restart at meaningful phrase boundaries.=আমি অর্থবহ ফ্রেজ সীমায় থামতে ও পুনরারম্ভ করতে পারি।||I can summarize the core message of each practiced surah.=আমি অনুশীলিত প্রতিটি সূরার মূল বার্তা সংক্ষেপে বলতে পারি।';
 
   @override
   String get dailyTrackerSectionTitle => 'দৈনিক রুটিন';
 
   @override
-  String get dailyTrackerSectionSubtitle => 'সম্পূর্ণ চেকলিস্ট দেখতে ট্যাপ করুন';
+  String get dailyTrackerSectionSubtitle =>
+      'সম্পূর্ণ চেকলিস্ট দেখতে ট্যাপ করুন';
 
   @override
   String dailyTrackerProgressLabel(int completed, int total) {
-    final intl.NumberFormat completedNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final intl.NumberFormat completedNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
     final String completedString = completedNumberFormat.format(completed);
-    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final intl.NumberFormat totalNumberFormat =
+        intl.NumberFormat.decimalPattern(localeName);
     final String totalString = totalNumberFormat.format(total);
 
     return '$completedString/$totalString সম্পন্ন';
@@ -3106,7 +3460,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerFridayBannerTitle => 'জুমা মুবারক!';
 
   @override
-  String get dailyTrackerFridayBannerSubtitle => 'আজকের রুটিনে বিশেষ জুমার আমল যুক্ত হয়েছে';
+  String get dailyTrackerFridayBannerSubtitle =>
+      'আজকের রুটিনে বিশেষ জুমার আমল যুক্ত হয়েছে';
 
   @override
   String get dailyTrackerCategoryPrayer => 'নামাজ';
@@ -3133,7 +3488,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerCategoryCustom => 'আমার টাস্ক';
 
   @override
-  String get dailyTrackerCelebrationTitle => 'মাশাআল্লাহ! আজকের সমস্ত আমল সম্পন্ন হয়েছে!';
+  String get dailyTrackerCelebrationTitle =>
+      'মাশাআল্লাহ! আজকের সমস্ত আমল সম্পন্ন হয়েছে!';
 
   @override
   String get dailyTrackerCelebrationButton => 'আলহামদুলিল্লাহ';
@@ -3157,7 +3513,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerAddTaskSubtitleLabel => 'সাবটাইটেল (ঐচ্ছিক)';
 
   @override
-  String get dailyTrackerAddTaskSubtitleHint => 'যেমন: অতিরিক্ত বিবরণ বা রিমাইন্ডার';
+  String get dailyTrackerAddTaskSubtitleHint =>
+      'যেমন: অতিরিক্ত বিবরণ বা রিমাইন্ডার';
 
   @override
   String get dailyTrackerAddTaskOptionalLabel => 'ঐচ্ছিক হিসেবে চিহ্নিত করুন';
@@ -3189,10 +3546,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerOrganizeSectionsAction => 'বিভাগ সাজান';
 
   @override
-  String get dailyTrackerOrganizeSectionsSubtitle => 'বিভাগগুলো টেনে সাজান, অথবা দ্রুত সরাতে পাশের মেনু ব্যবহার করুন।';
+  String get dailyTrackerOrganizeSectionsSubtitle =>
+      'বিভাগগুলো টেনে সাজান, অথবা দ্রুত সরাতে পাশের মেনু ব্যবহার করুন।';
 
   @override
-  String get dailyTrackerEmptySectionsHint => 'কাজ যুক্ত করলে খালি বিভাগগুলো আপনার তালিকায় দেখা যাবে।';
+  String get dailyTrackerEmptySectionsHint =>
+      'কাজ যুক্ত করলে খালি বিভাগগুলো আপনার তালিকায় দেখা যাবে।';
 
   @override
   String get dailyTrackerSaveSectionOrderAction => 'ক্রম সংরক্ষণ করুন';
@@ -3233,7 +3592,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerMoveTaskConfirmAction => 'সরান';
 
   @override
-  String get dailyTrackerSaveChangesError => 'পরিবর্তন সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।';
+  String get dailyTrackerSaveChangesError =>
+      'পরিবর্তন সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।';
 
   @override
   String get dailyRemindersTitle => 'দৈনিক স্মরণিকা';
@@ -3272,13 +3632,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyRemindersEmptyTitle => 'এখনও কোনো প্রকাশিত স্মরণিকা নেই';
 
   @override
-  String get dailyRemindersEmptyMessage => 'প্রকাশিত স্মরণিকা নির্ধারিত দিনে এখানে আসবে এবং ইতিহাসে থাকবে।';
+  String get dailyRemindersEmptyMessage =>
+      'প্রকাশিত স্মরণিকা নির্ধারিত দিনে এখানে আসবে এবং ইতিহাসে থাকবে।';
 
   @override
   String get dailyRemindersNoNewTitle => 'আজ নতুন কোনো স্মরণিকা নেই';
 
   @override
-  String get dailyRemindersNoNewMessage => 'প্রকাশিত সব স্মরণিকা ইতিহাসে নিরাপদে আছে।';
+  String get dailyRemindersNoNewMessage =>
+      'প্রকাশিত সব স্মরণিকা ইতিহাসে নিরাপদে আছে।';
 
   @override
   String get dailyRemindersRead => 'পঠিত';
@@ -3325,7 +3687,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyRemindersChecklistAdded => 'আপনার চেকলিস্টে যোগ হয়েছে';
 
   @override
-  String get dailyRemindersSourceError => 'সূত্রটি অফলাইন বা অনলাইনে খোলা যায়নি।';
+  String get dailyRemindersSourceError =>
+      'সূত্রটি অফলাইন বা অনলাইনে খোলা যায়নি।';
 
   @override
   String get dailyRemindersCategoryAll => 'সব বিষয়';
@@ -3346,16 +3709,19 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyRemindersPreferencesTitle => 'স্মরণিকার পছন্দ';
 
   @override
-  String get dailyRemindersInAppDeliveryTitle => 'দৈনিক স্মরণিকা সবসময় পাওয়া যাবে';
+  String get dailyRemindersInAppDeliveryTitle =>
+      'দৈনিক স্মরণিকা সবসময় পাওয়া যাবে';
 
   @override
-  String get dailyRemindersInAppDeliveryMessage => 'সবাই অ্যাপের ভেতরে দৈনিক স্মরণিকা পাবেন। এই ডিভাইসে সতর্কবার্তাও চাইলে শুধু ‘নোটিফিকেশন পাঠান’ চালু করুন।';
+  String get dailyRemindersInAppDeliveryMessage =>
+      'সবাই অ্যাপের ভেতরে দৈনিক স্মরণিকা পাবেন। এই ডিভাইসে সতর্কবার্তাও চাইলে শুধু ‘নোটিফিকেশন পাঠান’ চালু করুন।';
 
   @override
   String get dailyRemindersNotifyToggle => 'নোটিফিকেশন পাঠান';
 
   @override
-  String get dailyRemindersNotifySubtitle => 'আজকের স্মরণিকা প্রস্তুত হলে আমাকে জানান';
+  String get dailyRemindersNotifySubtitle =>
+      'আজকের স্মরণিকা প্রস্তুত হলে আমাকে জানান';
 
   @override
   String get dailyRemindersPreferredTime => 'পছন্দের সময়';
@@ -3379,11 +3745,14 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyRemindersPermissionUnsupported => 'এই প্ল্যাটফর্মে অনুপলব্ধ';
 
   @override
-  String get dailyRemindersNotificationPolicy => '‘নোটিফিকেশন পাঠান’ ও ডিভাইসের অনুমতি—দুটিই চালু থাকলেই নোটিফিকেশন আসবে। বাদ পড়া সতর্কবার্তা পরে পাঠানো হবে না।';
+  String get dailyRemindersNotificationPolicy =>
+      '‘নোটিফিকেশন পাঠান’ ও ডিভাইসের অনুমতি—দুটিই চালু থাকলেই নোটিফিকেশন আসবে। বাদ পড়া সতর্কবার্তা পরে পাঠানো হবে না।';
 
   @override
-  String get dailyRemindersReviewNote => 'এগুলো মৌলিক ভাবনা ও প্রস্তাবিত করণীয়—সরাসরি কুরআনের অনুবাদ বা হাদিসের উদ্ধৃতি নয়।';
+  String get dailyRemindersReviewNote =>
+      'এগুলো মৌলিক ভাবনা ও প্রস্তাবিত করণীয়—সরাসরি কুরআনের অনুবাদ বা হাদিসের উদ্ধৃতি নয়।';
 
   @override
-  String get dailyRemindersNoResults => 'এই ফিল্টারে কোনো স্মরণিকা পাওয়া যায়নি।';
+  String get dailyRemindersNoResults =>
+      'এই ফিল্টারে কোনো স্মরণিকা পাওয়া যায়নি।';
 }

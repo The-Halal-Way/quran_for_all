@@ -5,16 +5,14 @@ import '../../../../core/theme/app_spacing.dart';
 class SettingsContentLayout extends StatelessWidget {
   const SettingsContentLayout({
     super.key,
-    required this.preferences,
+    required this.language,
     required this.theme,
     required this.hijri,
-    //required this.offline,
   });
 
-  final Widget preferences;
+  final Widget language;
   final Widget theme;
   final Widget hijri;
-  //final Widget offline;
 
   @override
   Widget build(BuildContext context) {
@@ -23,13 +21,11 @@ class SettingsContentLayout extends StatelessWidget {
         if (constraints.maxWidth < 720) {
           return Column(
             children: [
-              preferences,
+              language,
               const SizedBox(height: AppSpacing.md),
               theme,
               const SizedBox(height: AppSpacing.md),
               hijri,
-             // const SizedBox(height: AppSpacing.md),
-            // offline,
             ],
           );
         }
@@ -37,7 +33,7 @@ class SettingsContentLayout extends StatelessWidget {
         return Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(child: preferences),
+            Expanded(child: language),
             const SizedBox(width: AppSpacing.md),
             Expanded(
               child: Column(
@@ -45,8 +41,6 @@ class SettingsContentLayout extends StatelessWidget {
                   theme,
                   const SizedBox(height: AppSpacing.md),
                   hijri,
-                //  const SizedBox(height: AppSpacing.md),
-                // offline,
                 ],
               ),
             ),

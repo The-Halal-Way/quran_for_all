@@ -6,11 +6,10 @@ import 'package:provider/provider.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
-import '../../../../core/theme/my_colors.dart';
 import '../../../../data/datasources/local/prayer_times_preferences_store.dart';
 import '../../../../domain/entities/prayer_times/prayer_times_models.dart';
 import '../../../viewmodels/dashboard_prayer_times_viewmodel.dart';
-import 'settings_panel.dart';
+import 'settings_expandable_panel.dart';
 
 class SettingsPrayerTimesPanel extends StatefulWidget {
   const SettingsPrayerTimesPanel({super.key});
@@ -38,6 +37,7 @@ class _SettingsPrayerTimesPanelState extends State<SettingsPrayerTimesPanel> {
   PrayerCalculationMethod _method = PrayerCalculationMethod.muslimWorldLeague;
   PrayerMadhab _madhab = PrayerMadhab.shafi;
   bool _saving = false;
+  bool _expanded = false;
 
   @override
   void initState() {
@@ -205,22 +205,24 @@ class _SettingsPrayerTimesPanelState extends State<SettingsPrayerTimesPanel> {
 
   @override
   Widget build(BuildContext context) {
-    return SettingsPanel(
+    return SettingsExpandablePanel(
       title: context.l10n.settingsPrayerTimesTitle,
+      subtitle: context.l10n.settingsPrayerTimesDescription,
       icon: Icons.access_time_outlined,
-      accent: MyColors.tertiary,
+      accent: Theme.of(context).colorScheme.tertiary,
+      expanded: _expanded,
+      onExpandedChanged: (expanded) => setState(() => _expanded = expanded),
       child: _config == null
-          ? const Center(child: CircularProgressIndicator())
+          ? const Padding(
+              padding: EdgeInsets.symmetric(vertical: AppSpacing.xxl),
+              child: Center(child: CircularProgressIndicator()),
+            )
           : Form(
               key: _formKey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    context.l10n.settingsPrayerTimesDescription,
-                    style: AppTheme.text(context).bodyMedium,
-                  ),
-                  const SizedBox(height: AppSpacing.lg),
+                  const SizedBox(height: AppSpacing.xs),
                   DropdownButtonFormField<PrayerCalculationMethod>(
                     key: const ValueKey('prayer-method'),
                     initialValue: _method,
@@ -288,26 +290,28 @@ class _SettingsPrayerTimesPanelState extends State<SettingsPrayerTimesPanel> {
                   const SizedBox(height: AppSpacing.md),
                   for (final key in _mainOffsets) _offsetRow(context, key),
                   const SizedBox(height: AppSpacing.sm),
-                  Wrap(
+                  Row(
                     spacing: AppSpacing.md,
-                    runSpacing: AppSpacing.sm,
-                    alignment: WrapAlignment.end,
                     children: [
-                      TextButton(
-                        onPressed: _saving
-                            ? null
-                            : () {
-                                for (final controller
-                                    in _offsetControllers.values) {
-                                  controller.text = '0';
-                                }
-                                _formKey.currentState?.validate();
-                              },
-                        child: Text(context.l10n.settingsPrayerResetOffsets),
+                      Expanded(
+                        child: TextButton(
+                          onPressed: _saving
+                              ? null
+                              : () {
+                                  for (final controller
+                                      in _offsetControllers.values) {
+                                    controller.text = '0';
+                                  }
+                                  _formKey.currentState?.validate();
+                                },
+                          child: Text(context.l10n.settingsPrayerResetOffsets),
+                        ),
                       ),
-                      FilledButton(
-                        onPressed: _saving ? null : _save,
-                        child: Text(context.l10n.settingsPrayerSave),
+                      Expanded(
+                        child: FilledButton(
+                          onPressed: _saving ? null : _save,
+                          child: Text(context.l10n.settingsPrayerSave),
+                        ),
                       ),
                     ],
                   ),
