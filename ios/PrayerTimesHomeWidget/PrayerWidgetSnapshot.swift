@@ -4,6 +4,26 @@ struct PrayerWidgetSnapshot: Decodable {
   let timeZoneId: String
   let locationLabel: String
   let days: [PrayerWidgetDaySnapshot]
+  let labels: PrayerWidgetLabels
+
+  private enum CodingKeys: String, CodingKey {
+    case timeZoneId, locationLabel, days, labels
+  }
+
+  init(timeZoneId: String, locationLabel: String, days: [PrayerWidgetDaySnapshot], labels: PrayerWidgetLabels) {
+    self.timeZoneId = timeZoneId
+    self.locationLabel = locationLabel
+    self.days = days
+    self.labels = labels
+  }
+
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    timeZoneId = try container.decode(String.self, forKey: .timeZoneId)
+    locationLabel = try container.decode(String.self, forKey: .locationLabel)
+    days = try container.decode([PrayerWidgetDaySnapshot].self, forKey: .days)
+    labels = try container.decodeIfPresent(PrayerWidgetLabels.self, forKey: .labels) ?? .english
+  }
 
   var resolvedTimeZone: TimeZone { TimeZone(identifier: timeZoneId) ?? .current }
 
@@ -19,9 +39,35 @@ struct PrayerWidgetSnapshot: Decodable {
   static var placeholder: PrayerWidgetSnapshot {
     PrayerWidgetSnapshot(
       timeZoneId: "Asia/Dhaka", locationLabel: "Dhaka",
-      days: [PrayerWidgetDaySnapshot.placeholder]
+      days: [PrayerWidgetDaySnapshot.placeholder], labels: .english
     )
   }
+}
+
+struct PrayerWidgetLabels: Codable {
+  let localeIdentifier: String
+  let appTitle: String
+  let hijriDatePlaceholder: String
+  let prayerTimes: String
+  let sehriEnd: String
+  let iftar: String
+  let openToSync: String
+  let tapToUpdate: String
+  let fajr: String
+  let sunrise: String
+  let dhuhr: String
+  let asr: String
+  let maghrib: String
+  let isha: String
+
+  static let english = PrayerWidgetLabels(
+    localeIdentifier: "en_US", appTitle: "Muslim & Quran Pro",
+    hijriDatePlaceholder: "Hijri date", prayerTimes: "PRAYER TIMES",
+    sehriEnd: "SEHRI END", iftar: "IFTAR",
+    openToSync: "Open the app to update today's times", tapToUpdate: "Tap to update",
+    fajr: "Fajr", sunrise: "Sunrise", dhuhr: "Dhuhr", asr: "Asr",
+    maghrib: "Maghrib", isha: "Isha"
+  )
 }
 
 struct PrayerWidgetDaySnapshot: Decodable {
@@ -37,14 +83,14 @@ struct PrayerWidgetDaySnapshot: Decodable {
 
   var sehriEnd: Int64 { sehriEndUtcMillis ?? fajrUtcMillis - 10 * 60_000 }
 
-  var prayers: [PrayerWidgetTime] {
+  func prayers(labels: PrayerWidgetLabels) -> [PrayerWidgetTime] {
     [
-      PrayerWidgetTime(label: "Fajr", utcMillis: fajrUtcMillis),
-      PrayerWidgetTime(label: "Sunrise", utcMillis: sunriseUtcMillis),
-      PrayerWidgetTime(label: "Dhuhr", utcMillis: dhuhrUtcMillis),
-      PrayerWidgetTime(label: "Asr", utcMillis: asrUtcMillis),
-      PrayerWidgetTime(label: "Maghrib", utcMillis: maghribUtcMillis),
-      PrayerWidgetTime(label: "Isha", utcMillis: ishaUtcMillis),
+      PrayerWidgetTime(label: labels.fajr, utcMillis: fajrUtcMillis),
+      PrayerWidgetTime(label: labels.sunrise, utcMillis: sunriseUtcMillis),
+      PrayerWidgetTime(label: labels.dhuhr, utcMillis: dhuhrUtcMillis),
+      PrayerWidgetTime(label: labels.asr, utcMillis: asrUtcMillis),
+      PrayerWidgetTime(label: labels.maghrib, utcMillis: maghribUtcMillis),
+      PrayerWidgetTime(label: labels.isha, utcMillis: ishaUtcMillis),
     ]
   }
 
@@ -72,6 +118,8 @@ struct PrayerWidgetTime: Identifiable {
   let utcMillis: Int64?
   var id: String { label }
 
-  static let empty = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"]
-    .map { PrayerWidgetTime(label: $0, utcMillis: nil) }
+  static func empty(labels: PrayerWidgetLabels) -> [PrayerWidgetTime] {
+    [labels.fajr, labels.sunrise, labels.dhuhr, labels.asr, labels.maghrib, labels.isha]
+      .map { PrayerWidgetTime(label: $0, utcMillis: nil) }
+  }
 }

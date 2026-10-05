@@ -37,6 +37,7 @@ class SettingsRepositoryImpl implements SettingsRepository {
   Future<void> saveSettings(AppSettings settings) async {
     final prefs = await SharedPreferences.getInstance();
     final previousHijriAdjustment = prefs.getInt(_keyHijriDateAdjustment) ?? 0;
+    final previousLanguage = prefs.getString(_keyLanguage);
 
     await prefs.setBool(_keyShowPronunciation, settings.showPronunciation);
     await prefs.setBool(_keyShowTranslation, settings.showTranslation);
@@ -44,7 +45,8 @@ class SettingsRepositoryImpl implements SettingsRepository {
     await prefs.setString(_keyLanguage, settings.language.code);
     await prefs.setString(_keyThemeMode, settings.themeMode.name);
     await prefs.setInt(_keyHijriDateAdjustment, settings.hijriDateAdjustment);
-    if (previousHijriAdjustment != settings.hijriDateAdjustment) {
+    if (previousHijriAdjustment != settings.hijriDateAdjustment ||
+        previousLanguage != settings.language.code) {
       await PrayerTimesPreferencesStore().refreshWidgetCalendar();
     }
   }

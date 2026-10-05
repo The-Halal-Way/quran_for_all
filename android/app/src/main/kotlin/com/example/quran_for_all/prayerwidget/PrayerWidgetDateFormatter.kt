@@ -9,10 +9,12 @@ import java.util.TimeZone
 class PrayerWidgetDateFormatter(private val timeZone: TimeZone) {
     fun dateKey(now: Long): String = formatter("yyyy-MM-dd", Locale.US).format(Date(now))
 
-    fun date(now: Long): String = formatter("EEEE, MMM d, yyyy").format(Date(now))
+    fun date(now: Long, localeIdentifier: String): String =
+        formatter("EEEE, MMM d, yyyy", Locale.forLanguageTag(localeIdentifier.replace('_', '-')))
+            .format(Date(now))
 
-    fun time(utcMillis: Long?): String = utcMillis?.let {
-        formatter("h:mm a").format(Date(it))
+    fun time(utcMillis: Long?, localeIdentifier: String): String = utcMillis?.let {
+        formatter("h:mm a", Locale.forLanguageTag(localeIdentifier.replace('_', '-'))).format(Date(it))
     } ?: "—"
 
     private fun formatter(pattern: String, locale: Locale = Locale.getDefault()) =

@@ -3,6 +3,7 @@ import SwiftUI
 struct PrayerWidgetTimeRow: View {
   let prayer: PrayerWidgetTime
   let timeZone: TimeZone
+  let labels: PrayerWidgetLabels
   let compact: Bool
 
   var body: some View {
@@ -31,7 +32,9 @@ struct PrayerWidgetTimeRow: View {
   }
 
   private var value: some View {
-    Text(PrayerWidgetDateFormatter.time(prayer.utcMillis, timeZone: timeZone))
+    Text(PrayerWidgetDateFormatter.time(
+      prayer.utcMillis, timeZone: timeZone, localeIdentifier: labels.localeIdentifier
+    ))
       .foregroundColor(PrayerWidgetPalette.gold)
   }
 }

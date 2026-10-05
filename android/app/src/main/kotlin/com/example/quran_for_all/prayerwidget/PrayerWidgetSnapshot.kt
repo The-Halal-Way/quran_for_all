@@ -8,6 +8,7 @@ data class PrayerWidgetSnapshot(
     val timeZoneId: String,
     val locationLabel: String,
     val days: List<PrayerWidgetDay>,
+    val labels: PrayerWidgetLabels = PrayerWidgetLabels.english,
 ) {
     companion object {
         fun fromJson(raw: String): PrayerWidgetSnapshot {
@@ -17,6 +18,84 @@ data class PrayerWidgetSnapshot(
                 timeZoneId = json.optString("timeZoneId").ifBlank { TimeZone.getDefault().id },
                 locationLabel = json.optString("locationLabel"),
                 days = (0 until days.length()).map { PrayerWidgetDay.fromJson(days.getJSONObject(it)) },
+                labels = PrayerWidgetLabels.fromJson(json.optJSONObject("labels")),
+            )
+        }
+    }
+}
+
+data class PrayerWidgetLabels(
+    val localeIdentifier: String,
+    val appTitle: String,
+    val hijriDatePlaceholder: String,
+    val prayerTimes: String,
+    val sehriEnd: String,
+    val iftar: String,
+    val openToSync: String,
+    val tapToUpdate: String,
+    val fajr: String,
+    val sunrise: String,
+    val dhuhr: String,
+    val asr: String,
+    val maghrib: String,
+    val isha: String,
+) {
+    companion object {
+        val english = PrayerWidgetLabels(
+            localeIdentifier = "en_US",
+            appTitle = "Muslim & Quran Pro",
+            hijriDatePlaceholder = "Hijri date",
+            prayerTimes = "PRAYER TIMES",
+            sehriEnd = "SEHRI END",
+            iftar = "IFTAR",
+            openToSync = "Open the app to update today's times",
+            tapToUpdate = "Tap to update",
+            fajr = "Fajr",
+            sunrise = "Sunrise",
+            dhuhr = "Dhuhr",
+            asr = "Asr",
+            maghrib = "Maghrib",
+            isha = "Isha",
+        )
+
+        private val bangla = english.copy(
+            localeIdentifier = "bn_BD",
+            appTitle = "মুসলিম ও কুরআন প্রো",
+            hijriDatePlaceholder = "হিজরি তারিখ",
+            prayerTimes = "নামাজের সময়",
+            sehriEnd = "সেহরির শেষ",
+            iftar = "ইফতার",
+            openToSync = "আজকের সময় হালনাগাদ করতে অ্যাপ খুলুন",
+            tapToUpdate = "হালনাগাদ করতে ট্যাপ করুন",
+            fajr = "ফজর",
+            sunrise = "সূর্যোদয়",
+            dhuhr = "যোহর",
+            asr = "আসর",
+            maghrib = "মাগরিব",
+            isha = "ইশা",
+        )
+
+        fun fromJson(json: JSONObject?): PrayerWidgetLabels {
+            if (json == null) return english
+            val fallback = if (json.optString("localeIdentifier").startsWith("bn")) bangla else english
+            fun value(key: String, default: String): String =
+                json.optString(key).ifBlank { default }
+
+            return PrayerWidgetLabels(
+                localeIdentifier = value("localeIdentifier", fallback.localeIdentifier),
+                appTitle = value("appTitle", fallback.appTitle),
+                hijriDatePlaceholder = value("hijriDatePlaceholder", fallback.hijriDatePlaceholder),
+                prayerTimes = value("prayerTimes", fallback.prayerTimes),
+                sehriEnd = value("sehriEnd", fallback.sehriEnd),
+                iftar = value("iftar", fallback.iftar),
+                openToSync = value("openToSync", fallback.openToSync),
+                tapToUpdate = value("tapToUpdate", fallback.tapToUpdate),
+                fajr = value("fajr", fallback.fajr),
+                sunrise = value("sunrise", fallback.sunrise),
+                dhuhr = value("dhuhr", fallback.dhuhr),
+                asr = value("asr", fallback.asr),
+                maghrib = value("maghrib", fallback.maghrib),
+                isha = value("isha", fallback.isha),
             )
         }
     }

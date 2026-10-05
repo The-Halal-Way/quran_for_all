@@ -4,13 +4,14 @@ struct PrayerWidgetFastingView: View {
   let sehriEnd: Int64?
   let iftar: Int64?
   let timeZone: TimeZone
+  let labels: PrayerWidgetLabels
   let compact: Bool
 
   var body: some View {
     HStack(spacing: 0) {
-      time(label: "SEHRI END", value: sehriEnd)
+      time(label: labels.sehriEnd, value: sehriEnd)
       Rectangle().fill(PrayerWidgetPalette.divider).frame(width: 1, height: compact ? 22 : 28)
-      time(label: "IFTAR", value: iftar)
+      time(label: labels.iftar, value: iftar)
     }
     .padding(.vertical, compact ? 4 : 8)
     .background(
@@ -28,7 +29,9 @@ struct PrayerWidgetFastingView: View {
       Text(label)
         .font(.system(size: compact ? 8 : 10, weight: .bold))
         .tracking(0.5)
-      Text(PrayerWidgetDateFormatter.time(value, timeZone: timeZone))
+      Text(PrayerWidgetDateFormatter.time(
+        value, timeZone: timeZone, localeIdentifier: labels.localeIdentifier
+      ))
         .font(.system(size: compact ? 12 : 17, weight: .bold, design: .rounded).monospacedDigit())
     }
     .foregroundColor(PrayerWidgetPalette.gold)

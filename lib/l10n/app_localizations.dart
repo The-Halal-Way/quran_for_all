@@ -62,8 +62,7 @@ import 'app_localizations_en.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -71,8 +70,7 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
-      _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -84,18 +82,17 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('bn'),
-    Locale('en'),
+    Locale('en')
   ];
 
   /// No description provided for @appName.
@@ -541,6 +538,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Could not open this link. Please try again.'**
   String get settingsLegalLinkFailed;
+
+  /// No description provided for @prayerWidgetTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Muslim & Quran Pro'**
+  String get prayerWidgetTitle;
+
+  /// No description provided for @prayerWidgetHijriPlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Hijri date'**
+  String get prayerWidgetHijriPlaceholder;
+
+  /// No description provided for @prayerWidgetSchedule.
+  ///
+  /// In en, this message translates to:
+  /// **'PRAYER TIMES'**
+  String get prayerWidgetSchedule;
+
+  /// No description provided for @prayerWidgetSehriEnd.
+  ///
+  /// In en, this message translates to:
+  /// **'SEHRI END'**
+  String get prayerWidgetSehriEnd;
+
+  /// No description provided for @prayerWidgetIftar.
+  ///
+  /// In en, this message translates to:
+  /// **'IFTAR'**
+  String get prayerWidgetIftar;
+
+  /// No description provided for @prayerWidgetOpenToSync.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the app to update today\'s times'**
+  String get prayerWidgetOpenToSync;
+
+  /// No description provided for @prayerWidgetTapToUpdate.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to update'**
+  String get prayerWidgetTapToUpdate;
+
+  /// No description provided for @prayerWidgetFajr.
+  ///
+  /// In en, this message translates to:
+  /// **'Fajr'**
+  String get prayerWidgetFajr;
+
+  /// No description provided for @prayerWidgetSunrise.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunrise'**
+  String get prayerWidgetSunrise;
+
+  /// No description provided for @prayerWidgetDhuhr.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhuhr'**
+  String get prayerWidgetDhuhr;
+
+  /// No description provided for @prayerWidgetAsr.
+  ///
+  /// In en, this message translates to:
+  /// **'Asr'**
+  String get prayerWidgetAsr;
+
+  /// No description provided for @prayerWidgetMaghrib.
+  ///
+  /// In en, this message translates to:
+  /// **'Maghrib'**
+  String get prayerWidgetMaghrib;
+
+  /// No description provided for @prayerWidgetIsha.
+  ///
+  /// In en, this message translates to:
+  /// **'Isha'**
+  String get prayerWidgetIsha;
 
   /// No description provided for @hijriAdjustmentTitle.
   ///
@@ -4704,10 +4779,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'{moduleTitle} · {lessonCount} lessons'**
-  String dashboardContinueLearningModuleDetail(
-    String moduleTitle,
-    int lessonCount,
-  );
+  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount);
 
   /// No description provided for @dashboardRetry.
   ///
@@ -6810,8 +6882,7 @@ abstract class AppLocalizations {
   String get dailyRemindersNoResults;
 }
 
-class _AppLocalizationsDelegate
-    extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -6820,26 +6891,25 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['bn', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['bn', 'en'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'bn':
-      return AppLocalizationsBn();
-    case 'en':
-      return AppLocalizationsEn();
+    case 'bn': return AppLocalizationsBn();
+    case 'en': return AppLocalizationsEn();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
+    'that was used.'
   );
 }

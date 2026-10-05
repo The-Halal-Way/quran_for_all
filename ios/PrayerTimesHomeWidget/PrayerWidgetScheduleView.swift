@@ -4,12 +4,13 @@ struct PrayerWidgetScheduleView: View {
   let prayers: [PrayerWidgetTime]
   let location: String
   let timeZone: TimeZone
+  let labels: PrayerWidgetLabels
   let compact: Bool
 
   var body: some View {
     VStack(spacing: compact ? 3 : 5) {
       HStack {
-        Text("PRAYER TIMES")
+        Text(labels.prayerTimes)
           .font(.system(size: compact ? 9 : 10, weight: .bold))
           .tracking(1)
           .foregroundColor(PrayerWidgetPalette.gold)
@@ -25,7 +26,9 @@ struct PrayerWidgetScheduleView: View {
       } else {
         VStack(spacing: 0) {
           ForEach(Array(prayers.enumerated()), id: \.element.id) { index, prayer in
-            PrayerWidgetTimeRow(prayer: prayer, timeZone: timeZone, compact: false)
+            PrayerWidgetTimeRow(
+              prayer: prayer, timeZone: timeZone, labels: labels, compact: false
+            )
               .frame(maxHeight: .infinity)
             if index < prayers.count - 1 { separator }
           }
@@ -41,7 +44,9 @@ struct PrayerWidgetScheduleView: View {
           ForEach(0..<3) { column in
             let index = row * 3 + column
             if index < prayers.count {
-              PrayerWidgetTimeRow(prayer: prayers[index], timeZone: timeZone, compact: true)
+              PrayerWidgetTimeRow(
+                prayer: prayers[index], timeZone: timeZone, labels: labels, compact: true
+              )
                 .frame(maxWidth: .infinity)
               if column < 2 {
                 Rectangle().fill(PrayerWidgetPalette.divider).frame(width: 1, height: 22)
@@ -58,4 +63,3 @@ struct PrayerWidgetScheduleView: View {
     Rectangle().fill(PrayerWidgetPalette.divider).frame(height: 1)
   }
 }
-

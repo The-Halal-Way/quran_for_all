@@ -19,6 +19,7 @@ class PrayerWidgetRenderer(
     )
     // Never label an expired snapshot's first day as today's schedule.
     private val today = snapshot?.days?.firstOrNull { it.localDateKey == formatter.dateKey(now) }
+    private val labels = snapshot?.labels ?: PrayerWidgetLabels.english
 
     fun render(compact: Boolean): RemoteViews {
         val layout = if (compact) R.layout.prayer_times_home_widget_compact
@@ -28,26 +29,36 @@ class PrayerWidgetRenderer(
                 R.id.widget_container,
                 HomeWidgetLaunchIntent.getActivity(context, MainActivity::class.java),
             )
-            setTextViewText(R.id.widget_date, formatter.date(now))
+            setTextViewText(R.id.widget_title, labels.appTitle)
+            setTextViewText(R.id.widget_date, formatter.date(now, labels.localeIdentifier))
+            setTextViewText(R.id.widget_schedule_label, labels.prayerTimes)
+            setTextViewText(R.id.widget_sehri_label, labels.sehriEnd)
+            setTextViewText(R.id.widget_iftar_label, labels.iftar)
+            setTextViewText(R.id.prayer_fajr_label, labels.fajr)
+            setTextViewText(R.id.prayer_sunrise_label, labels.sunrise)
+            setTextViewText(R.id.prayer_dhuhr_label, labels.dhuhr)
+            setTextViewText(R.id.prayer_asr_label, labels.asr)
+            setTextViewText(R.id.prayer_maghrib_label, labels.maghrib)
+            setTextViewText(R.id.prayer_isha_label, labels.isha)
             setTextViewText(
                 R.id.widget_hijri_date,
-                today?.hijriDateLabel?.takeIf(String::isNotBlank)
-                    ?: context.getString(R.string.prayer_widget_hijri_placeholder),
+                today?.hijriDateLabel?.takeIf(String::isNotBlank) ?: labels.hijriDatePlaceholder,
             )
             setTextViewText(R.id.widget_location, snapshot?.locationLabel.orEmpty())
-            setTextViewText(R.id.prayer_fajr_value, formatter.time(today?.fajrUtcMillis))
-            setTextViewText(R.id.prayer_sunrise_value, formatter.time(today?.sunriseUtcMillis))
-            setTextViewText(R.id.prayer_dhuhr_value, formatter.time(today?.dhuhrUtcMillis))
-            setTextViewText(R.id.prayer_asr_value, formatter.time(today?.asrUtcMillis))
-            setTextViewText(R.id.prayer_maghrib_value, formatter.time(today?.maghribUtcMillis))
-            setTextViewText(R.id.prayer_isha_value, formatter.time(today?.ishaUtcMillis))
-            setTextViewText(R.id.widget_sehri_value, formatter.time(today?.sehriEndUtcMillis))
-            setTextViewText(R.id.widget_iftar_value, formatter.time(today?.maghribUtcMillis))
+            setTextViewText(R.id.prayer_fajr_value, formatter.time(today?.fajrUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.prayer_sunrise_value, formatter.time(today?.sunriseUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.prayer_dhuhr_value, formatter.time(today?.dhuhrUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.prayer_asr_value, formatter.time(today?.asrUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.prayer_maghrib_value, formatter.time(today?.maghribUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.prayer_isha_value, formatter.time(today?.ishaUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.widget_sehri_value, formatter.time(today?.sehriEndUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.widget_iftar_value, formatter.time(today?.maghribUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.widget_status, labels.openToSync)
             setViewVisibility(R.id.widget_status, if (today == null && !compact) View.VISIBLE else View.GONE)
             if (compact) {
                 compactTypography(this)
                 if (today == null) {
-                    setTextViewText(R.id.widget_location, context.getString(R.string.prayer_widget_tap_to_update))
+                    setTextViewText(R.id.widget_location, labels.tapToUpdate)
                 }
             }
         }

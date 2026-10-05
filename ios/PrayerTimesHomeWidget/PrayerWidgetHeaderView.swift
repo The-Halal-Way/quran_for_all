@@ -6,10 +6,11 @@ struct PrayerWidgetHeaderView: View {
 
   var body: some View {
     VStack(spacing: compact ? 2 : 5) {
-      Text("Muslim & Quran Pro")
+      Text(entry.snapshot?.labels.appTitle ?? PrayerWidgetLabels.english.appTitle)
         .font(.system(size: compact ? 13 : 17, weight: .semibold, design: .serif))
         .foregroundColor(.white)
-      Text(entry.displayDay?.hijriDateLabel ?? "Hijri date")
+      Text(entry.displayDay?.hijriDateLabel ?? (entry.snapshot?.labels.hijriDatePlaceholder
+        ?? PrayerWidgetLabels.english.hijriDatePlaceholder))
         .font(.system(size: compact ? 15 : 21, weight: .bold))
         .foregroundColor(PrayerWidgetPalette.gold)
         .padding(.horizontal, 12)
@@ -20,7 +21,12 @@ struct PrayerWidgetHeaderView: View {
             .fill(PrayerWidgetPalette.gold.opacity(0.08))
         )
         .environment(\.layoutDirection, .leftToRight)
-      Text(PrayerWidgetDateFormatter.date(entry.date, timeZone: entry.timeZone))
+      Text(PrayerWidgetDateFormatter.date(
+        entry.date,
+        timeZone: entry.timeZone,
+        localeIdentifier: entry.snapshot?.labels.localeIdentifier
+          ?? PrayerWidgetLabels.english.localeIdentifier
+      ))
         .font(.system(size: compact ? 9 : 11, weight: .medium))
         .foregroundColor(.white)
     }

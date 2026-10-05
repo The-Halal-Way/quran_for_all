@@ -11,18 +11,23 @@ struct PrayerTimesHomeWidgetView: View {
       VStack(spacing: compact ? 5 : 10) {
         PrayerWidgetHeaderView(entry: entry, compact: compact)
         PrayerWidgetScheduleView(
-          prayers: entry.displayDay?.prayers ?? PrayerWidgetTime.empty,
+          prayers: entry.displayDay?.prayers(labels: entry.snapshot?.labels ?? .english)
+            ?? PrayerWidgetTime.empty(labels: entry.snapshot?.labels ?? .english),
           location: entry.snapshot?.locationLabel ?? "",
-          timeZone: entry.timeZone, compact: compact
+          timeZone: entry.timeZone,
+          labels: entry.snapshot?.labels ?? .english,
+          compact: compact
         )
         .frame(maxHeight: .infinity)
         PrayerWidgetFastingView(
           sehriEnd: entry.displayDay?.sehriEnd,
           iftar: entry.displayDay?.maghribUtcMillis,
-          timeZone: entry.timeZone, compact: compact
+          timeZone: entry.timeZone,
+          labels: entry.snapshot?.labels ?? .english,
+          compact: compact
         )
         if entry.displayDay == nil && !compact {
-          Text("Open the app to update today's times")
+          Text((entry.snapshot?.labels ?? .english).openToSync)
             .font(.system(size: 10, weight: .medium))
             .foregroundColor(.white)
         }
@@ -34,4 +39,3 @@ struct PrayerTimesHomeWidgetView: View {
     .modifier(PrayerWidgetBackground())
   }
 }
-

@@ -151,6 +151,21 @@ void main() {
   );
 
   test(
+    'snapshot storage exports the selected app language to native widgets',
+    () async {
+      SharedPreferences.setMockInitialValues({'app_language': 'bn'});
+
+      await PrayerTimesPreferencesStore().writeWidgetSnapshot(_snapshot());
+      final stored = PrayerWidgetSnapshot.fromJsonString(savedSnapshot!);
+
+      expect(stored.labels.localeIdentifier, 'bn_BD');
+      expect(stored.labels.prayerTimes, 'নামাজের সময়');
+      expect(stored.labels.fajr, 'ফজর');
+      expect(stored.days.single.hijriDateLabel, contains('হিজরি'));
+    },
+  );
+
+  test(
     'invalid stored data does not prevent saving calendar settings',
     () async {
       savedSnapshot = 'invalid json';

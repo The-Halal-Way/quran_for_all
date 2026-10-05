@@ -2,6 +2,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/prayer_times/prayer_home_widget_bridge.dart';
 import '../../../core/prayer_times/prayer_widget_calendar.dart';
+import '../../../core/prayer_times/prayer_widget_labels.dart';
 import '../../../domain/entities/prayer_times/prayer_times_models.dart';
 
 class PrayerTimesPreferencesStore {
@@ -65,8 +66,11 @@ class PrayerTimesPreferencesStore {
 
   Future<void> writeWidgetSnapshot(PrayerWidgetSnapshot snapshot) async {
     final prefs = await SharedPreferences.getInstance();
+    final localized = snapshot.copyWith(
+      labels: PrayerWidgetLabels.forLocale(prefs.getString('app_language')),
+    );
     final decorated = PrayerWidgetCalendar.decorate(
-      snapshot,
+      localized,
       adjustmentDays: prefs.getInt('hijri_date_adjustment') ?? 0,
     );
     await PrayerHomeWidgetBridge.saveSnapshot(decorated.toJsonString());

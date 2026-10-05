@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import '../../../core/prayer_times/prayer_widget_labels.dart';
+
 enum PrayerCalculationMethod {
   karachi(apiMethodId: 1),
   islamicSocietyOfNorthAmerica(apiMethodId: 2),
@@ -575,6 +577,7 @@ class PrayerWidgetSnapshot {
     required this.generatedAtUtcMillis,
     required this.lastSuccessfulSyncAtUtcMillis,
     required this.days,
+    this.labels = PrayerWidgetLabels.english,
   });
 
   final String profileSignature;
@@ -583,6 +586,19 @@ class PrayerWidgetSnapshot {
   final int generatedAtUtcMillis;
   final int? lastSuccessfulSyncAtUtcMillis;
   final List<PrayerWidgetDaySnapshot> days;
+  final PrayerWidgetLabels labels;
+
+  PrayerWidgetSnapshot copyWith({PrayerWidgetLabels? labels}) {
+    return PrayerWidgetSnapshot(
+      profileSignature: profileSignature,
+      timeZoneId: timeZoneId,
+      locationLabel: locationLabel,
+      generatedAtUtcMillis: generatedAtUtcMillis,
+      lastSuccessfulSyncAtUtcMillis: lastSuccessfulSyncAtUtcMillis,
+      days: days,
+      labels: labels ?? this.labels,
+    );
+  }
 
   String toJsonString() {
     return jsonEncode({
@@ -591,6 +607,7 @@ class PrayerWidgetSnapshot {
       'locationLabel': locationLabel,
       'generatedAtUtcMillis': generatedAtUtcMillis,
       'lastSuccessfulSyncAtUtcMillis': lastSuccessfulSyncAtUtcMillis,
+      'labels': labels.toJson(),
       'days': days.map((day) => day.toJson()).toList(),
     });
   }
@@ -604,6 +621,9 @@ class PrayerWidgetSnapshot {
       generatedAtUtcMillis: (json['generatedAtUtcMillis'] as num).toInt(),
       lastSuccessfulSyncAtUtcMillis:
           (json['lastSuccessfulSyncAtUtcMillis'] as num?)?.toInt(),
+      labels: PrayerWidgetLabels.fromJson(
+        (json['labels'] as Map?)?.cast<String, Object?>(),
+      ),
       days: ((json['days'] as List?) ?? const <Object?>[])
           .map(
             (entry) => PrayerWidgetDaySnapshot.fromJson(

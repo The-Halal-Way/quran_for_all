@@ -6,14 +6,24 @@ enum PrayerWidgetDateFormatter {
       .string(from: date)
   }
 
-  static func date(_ date: Date, timeZone: TimeZone) -> String {
-    formatter("EEEE, MMM d, yyyy", timeZone: timeZone).string(from: date)
+  static func date(_ date: Date, timeZone: TimeZone, localeIdentifier: String) -> String {
+    formatter(
+      "EEEE, MMM d, yyyy",
+      timeZone: timeZone,
+      locale: Locale(identifier: localeIdentifier)
+    ).string(from: date)
   }
 
-  static func time(_ utcMillis: Int64?, timeZone: TimeZone) -> String {
+  static func time(
+    _ utcMillis: Int64?, timeZone: TimeZone, localeIdentifier: String
+  ) -> String {
     guard let utcMillis else { return "—" }
     let date = Date(timeIntervalSince1970: TimeInterval(utcMillis) / 1000)
-    return formatter("h:mm a", timeZone: timeZone).string(from: date)
+    return formatter(
+      "h:mm a",
+      timeZone: timeZone,
+      locale: Locale(identifier: localeIdentifier)
+    ).string(from: date)
   }
 
   private static func formatter(
@@ -27,4 +37,3 @@ enum PrayerWidgetDateFormatter {
     return formatter
   }
 }
-
