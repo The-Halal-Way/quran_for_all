@@ -1481,6 +1481,228 @@ abstract class AppLocalizations {
   /// **'Choose your Quran path'**
   String get quranHubSectionChooseTitle;
 
+  /// No description provided for @nuraniQuranTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Nurani Quran'**
+  String get nuraniQuranTitle;
+
+  /// No description provided for @nuraniQuranDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the original PDF pages, save your place, and bookmark pages for later.'**
+  String get nuraniQuranDescription;
+
+  /// No description provided for @nuraniQuranFileSize.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF · 13.4 MB'**
+  String get nuraniQuranFileSize;
+
+  /// No description provided for @nuraniQuranOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready offline'**
+  String get nuraniQuranOffline;
+
+  /// No description provided for @nuraniQuranDownload.
+  ///
+  /// In en, this message translates to:
+  /// **'Download PDF'**
+  String get nuraniQuranDownload;
+
+  /// No description provided for @nuraniQuranDownloading.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading… {progress}%'**
+  String nuraniQuranDownloading(String progress);
+
+  /// No description provided for @nuraniQuranCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get nuraniQuranCancel;
+
+  /// No description provided for @nuraniQuranRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get nuraniQuranRetry;
+
+  /// No description provided for @nuraniQuranOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Read Nurani Quran'**
+  String get nuraniQuranOpen;
+
+  /// No description provided for @nuraniQuranContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue reading'**
+  String get nuraniQuranContinue;
+
+  /// No description provided for @nuraniQuranLastPage.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue from page {page}'**
+  String nuraniQuranLastPage(String page);
+
+  /// No description provided for @nuraniQuranBookmarkCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} saved pages'**
+  String nuraniQuranBookmarkCount(String count);
+
+  /// No description provided for @nuraniQuranPage.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page}'**
+  String nuraniQuranPage(String page);
+
+  /// No description provided for @nuraniQuranPageCounter.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page} of {total}'**
+  String nuraniQuranPageCounter(String page, String total);
+
+  /// No description provided for @nuraniQuranBookmarks.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved pages'**
+  String get nuraniQuranBookmarks;
+
+  /// No description provided for @nuraniQuranBookmarkAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmark this page'**
+  String get nuraniQuranBookmarkAdd;
+
+  /// No description provided for @nuraniQuranBookmarkRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove page bookmark'**
+  String get nuraniQuranBookmarkRemove;
+
+  /// No description provided for @nuraniQuranBookmarkSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page} bookmarked'**
+  String nuraniQuranBookmarkSaved(String page);
+
+  /// No description provided for @nuraniQuranBookmarkRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page} bookmark removed'**
+  String nuraniQuranBookmarkRemoved(String page);
+
+  /// No description provided for @nuraniQuranBookmarksEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No saved pages yet'**
+  String get nuraniQuranBookmarksEmpty;
+
+  /// No description provided for @nuraniQuranBookmarksHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Use the bookmark icon while reading to save a PDF page here.'**
+  String get nuraniQuranBookmarksHint;
+
+  /// No description provided for @nuraniQuranPageNumberNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Page numbers refer to the PDF, including its cover and introductory pages.'**
+  String get nuraniQuranPageNumberNote;
+
+  /// No description provided for @nuraniQuranJump.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to page'**
+  String get nuraniQuranJump;
+
+  /// No description provided for @nuraniQuranPageField.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF page number'**
+  String get nuraniQuranPageField;
+
+  /// No description provided for @nuraniQuranPageRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a page from 1 to {total}'**
+  String nuraniQuranPageRange(String total);
+
+  /// No description provided for @nuraniQuranGo.
+  ///
+  /// In en, this message translates to:
+  /// **'Go'**
+  String get nuraniQuranGo;
+
+  /// No description provided for @nuraniQuranPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous page'**
+  String get nuraniQuranPrevious;
+
+  /// No description provided for @nuraniQuranNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next page'**
+  String get nuraniQuranNext;
+
+  /// No description provided for @nuraniQuranReaderHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Scroll to read · Pinch to zoom'**
+  String get nuraniQuranReaderHint;
+
+  /// No description provided for @nuraniQuranNetworkError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not download the PDF. Check your connection and try again.'**
+  String get nuraniQuranNetworkError;
+
+  /// No description provided for @nuraniQuranInvalidPdf.
+  ///
+  /// In en, this message translates to:
+  /// **'The download did not contain a complete PDF. Please try again.'**
+  String get nuraniQuranInvalidPdf;
+
+  /// No description provided for @nuraniQuranStorageError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not save on this device. Check available storage and try again.'**
+  String get nuraniQuranStorageError;
+
+  /// No description provided for @nuraniQuranReaderError.
+  ///
+  /// In en, this message translates to:
+  /// **'This PDF could not be opened. Try again or download a fresh copy.'**
+  String get nuraniQuranReaderError;
+
+  /// No description provided for @nuraniQuranDownloadAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Download again'**
+  String get nuraniQuranDownloadAgain;
+
+  /// No description provided for @nuraniQuranRemoveDownload.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove offline PDF'**
+  String get nuraniQuranRemoveDownload;
+
+  /// No description provided for @nuraniQuranRemoveDownloadBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove the downloaded PDF to free up storage? Your saved pages and reading position will be kept.'**
+  String get nuraniQuranRemoveDownloadBody;
+
+  /// No description provided for @nuraniQuranRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get nuraniQuranRemove;
+
   /// No description provided for @quranHubSectionChooseSubtitle.
   ///
   /// In en, this message translates to:

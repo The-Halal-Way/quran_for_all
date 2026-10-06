@@ -712,6 +712,133 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubSectionChooseTitle => 'Choose your Quran path';
 
   @override
+  String get nuraniQuranTitle => 'Nurani Quran';
+
+  @override
+  String get nuraniQuranDescription => 'Read the original PDF pages, save your place, and bookmark pages for later.';
+
+  @override
+  String get nuraniQuranFileSize => 'PDF · 13.4 MB';
+
+  @override
+  String get nuraniQuranOffline => 'Ready offline';
+
+  @override
+  String get nuraniQuranDownload => 'Download PDF';
+
+  @override
+  String nuraniQuranDownloading(String progress) {
+    return 'Downloading… $progress%';
+  }
+
+  @override
+  String get nuraniQuranCancel => 'Cancel';
+
+  @override
+  String get nuraniQuranRetry => 'Try again';
+
+  @override
+  String get nuraniQuranOpen => 'Read Nurani Quran';
+
+  @override
+  String get nuraniQuranContinue => 'Continue reading';
+
+  @override
+  String nuraniQuranLastPage(String page) {
+    return 'Continue from page $page';
+  }
+
+  @override
+  String nuraniQuranBookmarkCount(String count) {
+    return '$count saved pages';
+  }
+
+  @override
+  String nuraniQuranPage(String page) {
+    return 'Page $page';
+  }
+
+  @override
+  String nuraniQuranPageCounter(String page, String total) {
+    return 'Page $page of $total';
+  }
+
+  @override
+  String get nuraniQuranBookmarks => 'Saved pages';
+
+  @override
+  String get nuraniQuranBookmarkAdd => 'Bookmark this page';
+
+  @override
+  String get nuraniQuranBookmarkRemove => 'Remove page bookmark';
+
+  @override
+  String nuraniQuranBookmarkSaved(String page) {
+    return 'Page $page bookmarked';
+  }
+
+  @override
+  String nuraniQuranBookmarkRemoved(String page) {
+    return 'Page $page bookmark removed';
+  }
+
+  @override
+  String get nuraniQuranBookmarksEmpty => 'No saved pages yet';
+
+  @override
+  String get nuraniQuranBookmarksHint => 'Use the bookmark icon while reading to save a PDF page here.';
+
+  @override
+  String get nuraniQuranPageNumberNote => 'Page numbers refer to the PDF, including its cover and introductory pages.';
+
+  @override
+  String get nuraniQuranJump => 'Go to page';
+
+  @override
+  String get nuraniQuranPageField => 'PDF page number';
+
+  @override
+  String nuraniQuranPageRange(String total) {
+    return 'Enter a page from 1 to $total';
+  }
+
+  @override
+  String get nuraniQuranGo => 'Go';
+
+  @override
+  String get nuraniQuranPrevious => 'Previous page';
+
+  @override
+  String get nuraniQuranNext => 'Next page';
+
+  @override
+  String get nuraniQuranReaderHint => 'Scroll to read · Pinch to zoom';
+
+  @override
+  String get nuraniQuranNetworkError => 'Could not download the PDF. Check your connection and try again.';
+
+  @override
+  String get nuraniQuranInvalidPdf => 'The download did not contain a complete PDF. Please try again.';
+
+  @override
+  String get nuraniQuranStorageError => 'Could not save on this device. Check available storage and try again.';
+
+  @override
+  String get nuraniQuranReaderError => 'This PDF could not be opened. Try again or download a fresh copy.';
+
+  @override
+  String get nuraniQuranDownloadAgain => 'Download again';
+
+  @override
+  String get nuraniQuranRemoveDownload => 'Remove offline PDF';
+
+  @override
+  String get nuraniQuranRemoveDownloadBody => 'Remove the downloaded PDF to free up storage? Your saved pages and reading position will be kept.';
+
+  @override
+  String get nuraniQuranRemove => 'Remove';
+
+  @override
   String get quranHubSectionChooseSubtitle => 'Move straight into recitation, or slow down and build stronger Quran skills.';
 
   @override

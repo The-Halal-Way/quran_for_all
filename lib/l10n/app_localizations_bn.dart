@@ -712,6 +712,133 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quranHubSectionChooseTitle => 'আপনার কুরআন পথ বেছে নিন';
 
   @override
+  String get nuraniQuranTitle => 'নূরানী কুরআন';
+
+  @override
+  String get nuraniQuranDescription => 'মূল পিডিএফের পৃষ্ঠা পড়ুন, পড়ার অবস্থান সংরক্ষণ করুন এবং পরে পড়ার জন্য পৃষ্ঠা বুকমার্ক করুন।';
+
+  @override
+  String get nuraniQuranFileSize => 'পিডিএফ · ১৩.৪ এমবি';
+
+  @override
+  String get nuraniQuranOffline => 'অফলাইনে প্রস্তুত';
+
+  @override
+  String get nuraniQuranDownload => 'পিডিএফ ডাউনলোড';
+
+  @override
+  String nuraniQuranDownloading(String progress) {
+    return 'ডাউনলোড হচ্ছে… $progress%';
+  }
+
+  @override
+  String get nuraniQuranCancel => 'বাতিল';
+
+  @override
+  String get nuraniQuranRetry => 'আবার চেষ্টা করুন';
+
+  @override
+  String get nuraniQuranOpen => 'নূরানী কুরআন পড়ুন';
+
+  @override
+  String get nuraniQuranContinue => 'পড়া চালিয়ে যান';
+
+  @override
+  String nuraniQuranLastPage(String page) {
+    return '$page নম্বর পৃষ্ঠা থেকে পড়ুন';
+  }
+
+  @override
+  String nuraniQuranBookmarkCount(String count) {
+    return '$countটি সংরক্ষিত পৃষ্ঠা';
+  }
+
+  @override
+  String nuraniQuranPage(String page) {
+    return 'পৃষ্ঠা $page';
+  }
+
+  @override
+  String nuraniQuranPageCounter(String page, String total) {
+    return '$totalটি পৃষ্ঠার মধ্যে $page';
+  }
+
+  @override
+  String get nuraniQuranBookmarks => 'সংরক্ষিত পৃষ্ঠা';
+
+  @override
+  String get nuraniQuranBookmarkAdd => 'এই পৃষ্ঠা বুকমার্ক করুন';
+
+  @override
+  String get nuraniQuranBookmarkRemove => 'পৃষ্ঠার বুকমার্ক সরান';
+
+  @override
+  String nuraniQuranBookmarkSaved(String page) {
+    return 'পৃষ্ঠা $page বুকমার্ক করা হয়েছে';
+  }
+
+  @override
+  String nuraniQuranBookmarkRemoved(String page) {
+    return 'পৃষ্ঠা $page-এর বুকমার্ক সরানো হয়েছে';
+  }
+
+  @override
+  String get nuraniQuranBookmarksEmpty => 'এখনও কোনো পৃষ্ঠা সংরক্ষিত নেই';
+
+  @override
+  String get nuraniQuranBookmarksHint => 'পড়ার সময় বুকমার্ক আইকন ব্যবহার করে এখানে পিডিএফের পৃষ্ঠা সংরক্ষণ করুন।';
+
+  @override
+  String get nuraniQuranPageNumberNote => 'পৃষ্ঠা নম্বর পিডিএফ অনুযায়ী, প্রচ্ছদ ও শুরুর পৃষ্ঠাগুলোসহ।';
+
+  @override
+  String get nuraniQuranJump => 'পৃষ্ঠায় যান';
+
+  @override
+  String get nuraniQuranPageField => 'পিডিএফ পৃষ্ঠা নম্বর';
+
+  @override
+  String nuraniQuranPageRange(String total) {
+    return '১ থেকে $total-এর মধ্যে পৃষ্ঠা লিখুন';
+  }
+
+  @override
+  String get nuraniQuranGo => 'যান';
+
+  @override
+  String get nuraniQuranPrevious => 'আগের পৃষ্ঠা';
+
+  @override
+  String get nuraniQuranNext => 'পরের পৃষ্ঠা';
+
+  @override
+  String get nuraniQuranReaderHint => 'পড়তে স্ক্রল করুন · বড় করতে দুই আঙুল ব্যবহার করুন';
+
+  @override
+  String get nuraniQuranNetworkError => 'পিডিএফ ডাউনলোড করা যায়নি। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।';
+
+  @override
+  String get nuraniQuranInvalidPdf => 'ডাউনলোডে সম্পূর্ণ পিডিএফ পাওয়া যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get nuraniQuranStorageError => 'এই ডিভাইসে সংরক্ষণ করা যায়নি। খালি জায়গা দেখে আবার চেষ্টা করুন।';
+
+  @override
+  String get nuraniQuranReaderError => 'পিডিএফ খোলা যায়নি। আবার চেষ্টা করুন অথবা নতুন করে ডাউনলোড করুন।';
+
+  @override
+  String get nuraniQuranDownloadAgain => 'আবার ডাউনলোড করুন';
+
+  @override
+  String get nuraniQuranRemoveDownload => 'অফলাইন পিডিএফ সরান';
+
+  @override
+  String get nuraniQuranRemoveDownloadBody => 'জায়গা খালি করতে ডাউনলোড করা পিডিএফ সরাবেন? সংরক্ষিত পৃষ্ঠা ও পড়ার অবস্থান রাখা হবে।';
+
+  @override
+  String get nuraniQuranRemove => 'সরান';
+
+  @override
   String get quranHubSectionChooseSubtitle => 'সরাসরি তিলাওয়াতে যান, অথবা ধীরে ধীরে কুরআনের দক্ষতা গড়ে তুলুন।';
 
   @override

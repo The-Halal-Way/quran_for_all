@@ -16,6 +16,7 @@ import 'data/repositories/audio_repository_impl.dart';
 import 'data/repositories/daily_tracker_repository_impl.dart';
 import 'data/repositories/daily_reminder_repository_impl.dart';
 import 'data/repositories/learning_progress_repository_impl.dart';
+import 'data/repositories/nurani_quran_repository_impl.dart';
 import 'data/repositories/prayer_times_repository_impl.dart';
 import 'data/repositories/quran_repository_impl.dart';
 import 'data/repositories/settings_repository_impl.dart';
@@ -24,6 +25,7 @@ import 'domain/repositories/audio_repository.dart';
 import 'domain/repositories/daily_tracker_repository.dart';
 import 'domain/repositories/daily_reminder_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
+import 'domain/repositories/nurani_quran_repository.dart';
 import 'domain/repositories/prayer_times_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
@@ -44,6 +46,7 @@ import 'presentation/viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
 import 'presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'presentation/viewmodels/quran/quran_viewmodel.dart';
+import 'presentation/viewmodels/quran/nurani_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/bookmarks_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/search_viewmodel.dart';
@@ -102,6 +105,10 @@ class QuranForAllApp extends StatelessWidget {
           ),
         ),
         Provider<SettingsRepository>(create: (_) => SettingsRepositoryImpl()),
+        Provider<NuraniQuranRepository>(
+          create: (context) =>
+              NuraniQuranRepositoryImpl(context.read<http.Client>()),
+        ),
         Provider<PrayerTimesRepository>(
           create: (context) => PrayerTimesRepositoryImpl(
             localDataSource: context.read<PrayerTimesLocalDataSource>(),
@@ -190,6 +197,10 @@ class QuranForAllApp extends StatelessWidget {
           ),
         ),
         Provider<QuranViewModel>(create: (_) => QuranViewModel()),
+        ChangeNotifierProvider<NuraniQuranViewModel>(
+          create: (context) =>
+              NuraniQuranViewModel(context.read<NuraniQuranRepository>()),
+        ),
         ChangeNotifierProvider<SearchViewModel>(
           create: (context) => SearchViewModel(context.read<QuranRepository>()),
         ),

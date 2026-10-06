@@ -11,6 +11,7 @@ import '../../../core/utils/app_responsive.dart';
 import '../../../data/models/quran/quran_hub_models.dart';
 import '../../viewmodels/learn_quran_viewmodel.dart';
 import '../../viewmodels/quran/quran_viewmodel.dart';
+import '../../viewmodels/quran/nurani_quran_viewmodel.dart';
 import '../../viewmodels/read_quran/read_quran_viewmodel.dart';
 import '../../viewmodels/splash_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
@@ -20,6 +21,7 @@ import '../../widgets/quran/quran_view/quran_hub_hero.dart';
 import '../../widgets/quran/quran_view/quran_path_grid.dart';
 import '../../widgets/quran/quran_view/quran_reflection_carousel.dart';
 import '../../widgets/quran/quran_download_panel.dart';
+import '../../widgets/quran/nurani_quran/nurani_quran_library_card.dart';
 import 'learn_quran/learn_quran_view.dart';
 import 'read_quran/read_quran_view.dart';
 
@@ -118,6 +120,8 @@ class _QuranViewState extends State<QuranView> {
                           actions: content.actions,
                           onSelected: _openDestination,
                         ),
+                        const SizedBox(height: AppSpacing.lg),
+                        const NuraniQuranLibraryCard(),
                         const SizedBox(height: AppSpacing.xxl),
                         AppPremiumSectionTitle(title: l10n.quranHubHadithTitle),
                         const SizedBox(height: AppSpacing.md),
@@ -138,6 +142,7 @@ class _QuranViewState extends State<QuranView> {
     await Future.wait([
       context.read<ReadQuranViewModel>().load(showLoading: false),
       context.read<LearnQuranViewModel>().initialize(),
+      context.read<NuraniQuranViewModel>().load(),
     ]);
   }
 
