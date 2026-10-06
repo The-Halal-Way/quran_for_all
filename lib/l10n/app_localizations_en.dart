@@ -2470,6 +2470,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tasbeehExitFocus => 'Exit focus mode';
 
   @override
+  String get tasbeehSwipeDhikr => 'Swipe to change dhikr';
+
+  @override
+  String get tasbeehPreviousDhikr => 'Previous dhikr';
+
+  @override
+  String get tasbeehNextDhikr => 'Next dhikr';
+
+  @override
   String get tasbeehTapAnywhere => 'Tap anywhere to count';
 
   @override

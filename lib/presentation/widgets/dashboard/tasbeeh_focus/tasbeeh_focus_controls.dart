@@ -11,11 +11,13 @@ class TasbeehFocusControls extends StatelessWidget {
     required this.canUndo,
     required this.onUndo,
     required this.rounds,
+    required this.onExit,
   });
 
   final bool canUndo;
   final VoidCallback onUndo;
   final int rounds;
+  final VoidCallback onExit;
 
   @override
   Widget build(BuildContext context) => Wrap(
@@ -67,6 +69,16 @@ class TasbeehFocusControls extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+      IconButton(
+        key: const ValueKey('tasbeeh_exit_focus'),
+        tooltip: context.l10n.tasbeehExitFocus,
+        onPressed: onExit,
+        icon: const Icon(Icons.close_rounded, color: Colors.white),
+        style: IconButton.styleFrom(
+          backgroundColor: Colors.white.withValues(alpha: 0.12),
+          side: BorderSide(color: Colors.white.withValues(alpha: 0.2)),
         ),
       ),
     ],

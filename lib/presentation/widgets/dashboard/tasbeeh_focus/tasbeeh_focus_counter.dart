@@ -2,19 +2,33 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
-import '../../../viewmodels/dashboard/tasbeeh_viewmodel.dart';
+import '../../../../domain/entities/tasbeeh/tasbeeh_phrase.dart';
 import '../tasbeeh/tasbeeh_counter_ring.dart';
 import 'tasbeeh_focus_phrase.dart';
 
 class TasbeehFocusCounter extends StatelessWidget {
-  const TasbeehFocusCounter({super.key, required this.model});
-  final TasbeehViewModel model;
+  const TasbeehFocusCounter({
+    super.key,
+    required this.phrase,
+    required this.count,
+    required this.target,
+  });
+
+  final TasbeehPhrase phrase;
+  final int count;
+  final int target;
+
+  double get _progress {
+    if (count == 0) return 0;
+    final remainder = count % target;
+    return remainder == 0 ? 1 : remainder / target;
+  }
 
   Widget _ring(double diameter) => TasbeehCounterRing(
-    count: model.count,
-    target: model.target,
-    progress: model.progress,
-    isTargetReached: model.isTargetReached,
+    count: count,
+    target: target,
+    progress: _progress,
+    isTargetReached: count > 0 && count % target == 0,
     diameter: diameter,
     onHero: true,
   );
@@ -23,7 +37,7 @@ class TasbeehFocusCounter extends StatelessWidget {
     width: width,
     child: SingleChildScrollView(
       physics: const BouncingScrollPhysics(),
-      child: TasbeehFocusPhrase(phrase: model.selectedPhrase),
+      child: TasbeehFocusPhrase(phrase: phrase),
     ),
   );
 

@@ -4913,6 +4913,24 @@ abstract class AppLocalizations {
   /// **'Exit focus mode'**
   String get tasbeehExitFocus;
 
+  /// No description provided for @tasbeehSwipeDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe to change dhikr'**
+  String get tasbeehSwipeDhikr;
+
+  /// No description provided for @tasbeehPreviousDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous dhikr'**
+  String get tasbeehPreviousDhikr;
+
+  /// No description provided for @tasbeehNextDhikr.
+  ///
+  /// In en, this message translates to:
+  /// **'Next dhikr'**
+  String get tasbeehNextDhikr;
+
   /// No description provided for @tasbeehTapAnywhere.
   ///
   /// In en, this message translates to:

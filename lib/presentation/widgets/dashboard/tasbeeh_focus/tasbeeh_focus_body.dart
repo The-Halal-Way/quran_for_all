@@ -9,8 +9,7 @@ import '../../../viewmodels/dashboard/tasbeeh_viewmodel.dart';
 import '../tasbeeh/tasbeeh_visuals.dart';
 import 'tasbeeh_focus_backdrop.dart';
 import 'tasbeeh_focus_controls.dart';
-import 'tasbeeh_focus_counter.dart';
-import 'tasbeeh_focus_header.dart';
+import 'tasbeeh_focus_dhikr_pager.dart';
 
 class TasbeehFocusBody extends StatelessWidget {
   const TasbeehFocusBody({super.key});
@@ -39,13 +38,14 @@ class TasbeehFocusBody extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(20, 12, 20, 20),
                   child: Column(
                     children: [
-                      const TasbeehFocusHeader(),
                       Expanded(
-                        child: Semantics(
-                          button: true,
-                          label: context.l10n.tasbeehCountAction,
-                          onTap: model.increment,
-                          child: TasbeehFocusCounter(model: model),
+                        child: TasbeehFocusDhikrPager(
+                          phrases: model.phrases,
+                          selectedId: model.selectedPhraseId,
+                          counts: model.counts,
+                          targets: model.selectedTargets,
+                          onSelected: model.selectPhrase,
+                          onCount: model.increment,
                         ),
                       ),
                       const SizedBox(height: AppSpacing.sm),
@@ -76,6 +76,7 @@ class TasbeehFocusBody extends StatelessWidget {
                         canUndo: model.count > 0,
                         onUndo: model.decrement,
                         rounds: model.currentCompletedRounds,
+                        onExit: () => Navigator.maybePop(context),
                       ),
                     ],
                   ),

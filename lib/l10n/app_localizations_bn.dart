@@ -2470,6 +2470,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tasbeehExitFocus => 'মনোযোগ মোড বন্ধ করুন';
 
   @override
+  String get tasbeehSwipeDhikr => 'জিকির বদলাতে সোয়াইপ করুন';
+
+  @override
+  String get tasbeehPreviousDhikr => 'আগের জিকির';
+
+  @override
+  String get tasbeehNextDhikr => 'পরের জিকির';
+
+  @override
   String get tasbeehTapAnywhere => 'গুনতে যেকোনো জায়গায় স্পর্শ করুন';
 
   @override
