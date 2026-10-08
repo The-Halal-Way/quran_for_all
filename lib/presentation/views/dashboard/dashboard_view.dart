@@ -17,6 +17,7 @@ import '../../widgets/dashboard/dashboard_view/dashboard_prayer_section.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_shortcut_catalog.dart';
 import '../../widgets/dashboard/dashboard_view/dashboard_tracker_preview.dart';
 import '../../widgets/dashboard/when_you_have_a_need/dashboard_need_section.dart';
+import '../../widgets/islamic_days/dashboard/dashboard_islamic_days_card.dart';
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
@@ -53,6 +54,8 @@ class DashboardView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const DashboardHeader(),
+                        const SizedBox(height: AppSpacing.lg),
+                        const DashboardIslamicDaysCard(),
                         const SizedBox(height: AppSpacing.lg),
                         const DashboardContinueSection(),
                         const SizedBox(height: AppSpacing.lg),

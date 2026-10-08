@@ -8,6 +8,7 @@ import 'package:timezone/data/latest_all.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
 import 'daily_hadith_schedule_planner.dart';
+import 'notifications/app_notification_coordinator.dart';
 
 enum DailyHadithPermissionStatus { granted, denied, unsupported, unknown }
 
@@ -33,8 +34,10 @@ abstract class DailyHadithNotificationGateway {
 }
 
 class DailyHadithNotificationService implements DailyHadithNotificationGateway {
-  DailyHadithNotificationService({FlutterLocalNotificationsPlugin? plugin})
-    : _plugin = plugin ?? FlutterLocalNotificationsPlugin();
+  DailyHadithNotificationService({
+    FlutterLocalNotificationsPlugin? plugin,
+    AppNotificationCoordinator? coordinator,
+  }) : _coordinator = coordinator ?? AppNotificationCoordinator(plugin: plugin);
 
   // Retain the channel ID so existing device notification settings survive.
   static const _channelId = 'daily_reminders_release_v2';
@@ -42,40 +45,22 @@ class DailyHadithNotificationService implements DailyHadithNotificationGateway {
   static const _channelDescription =
       'Optional notifications for Daily Hadith readings';
 
-  final FlutterLocalNotificationsPlugin _plugin;
-  ValueChanged<String>? _openHandler;
+  final AppNotificationCoordinator _coordinator;
+  FlutterLocalNotificationsPlugin get _plugin => _coordinator.plugin;
   bool _initialized = false;
   String? _lastScheduleSignature;
 
   @override
-  void setOpenHandler(ValueChanged<String> handler) => _openHandler = handler;
+  void setOpenHandler(ValueChanged<String> handler) =>
+      _coordinator.register('dailyHadith', (payload) {
+        final id = payload['contentId'];
+        if (id is String) handler(id);
+      });
 
   @override
   Future<void> initialize() async {
     if (_initialized) return;
-    const settings = InitializationSettings(
-      android: AndroidInitializationSettings('@mipmap/ic_launcher'),
-      iOS: DarwinInitializationSettings(
-        requestAlertPermission: false,
-        requestBadgePermission: false,
-        requestSoundPermission: false,
-      ),
-      macOS: DarwinInitializationSettings(
-        requestAlertPermission: false,
-        requestBadgePermission: false,
-        requestSoundPermission: false,
-      ),
-      linux: LinuxInitializationSettings(
-        defaultActionName: 'Open Daily Hadith',
-      ),
-    );
-    await _plugin.initialize(
-      settings: settings,
-      onDidReceiveNotificationResponse: (response) {
-        final contentId = _contentIdFromPayload(response.payload);
-        if (contentId != null) _openHandler?.call(contentId);
-      },
-    );
+    await _coordinator.initialize();
     if (!kIsWeb && defaultTargetPlatform == TargetPlatform.android) {
       // Creating the same channel updates its display name and description
       // while Android keeps the user's existing sound and permission choices.
@@ -93,94 +78,19 @@ class DailyHadithNotificationService implements DailyHadithNotificationGateway {
           );
     }
     _initialized = true;
-    final launch = await _plugin.getNotificationAppLaunchDetails();
-    if (launch?.didNotificationLaunchApp ?? false) {
-      final contentId = _contentIdFromPayload(
-        launch?.notificationResponse?.payload,
+  }
+
+  @override
+  Future<DailyHadithPermissionStatus> permissionStatus() async =>
+      DailyHadithPermissionStatus.values.byName(
+        (await _coordinator.permissionStatus()).name,
       );
-      if (contentId != null) _openHandler?.call(contentId);
-    }
-  }
 
   @override
-  Future<DailyHadithPermissionStatus> permissionStatus() async {
-    if (kIsWeb) return DailyHadithPermissionStatus.unsupported;
-    try {
-      if (defaultTargetPlatform == TargetPlatform.android) {
-        final enabled = await _plugin
-            .resolvePlatformSpecificImplementation<
-              AndroidFlutterLocalNotificationsPlugin
-            >()
-            ?.areNotificationsEnabled();
-        return enabled == null
-            ? DailyHadithPermissionStatus.unknown
-            : enabled
-            ? DailyHadithPermissionStatus.granted
-            : DailyHadithPermissionStatus.denied;
-      }
-      if (defaultTargetPlatform == TargetPlatform.iOS) {
-        final options = await _plugin
-            .resolvePlatformSpecificImplementation<
-              IOSFlutterLocalNotificationsPlugin
-            >()
-            ?.checkPermissions();
-        return options == null
-            ? DailyHadithPermissionStatus.unknown
-            : options.isEnabled
-            ? DailyHadithPermissionStatus.granted
-            : DailyHadithPermissionStatus.denied;
-      }
-      if (defaultTargetPlatform == TargetPlatform.macOS) {
-        final options = await _plugin
-            .resolvePlatformSpecificImplementation<
-              MacOSFlutterLocalNotificationsPlugin
-            >()
-            ?.checkPermissions();
-        return options == null
-            ? DailyHadithPermissionStatus.unknown
-            : options.isEnabled
-            ? DailyHadithPermissionStatus.granted
-            : DailyHadithPermissionStatus.denied;
-      }
-      return DailyHadithPermissionStatus.unsupported;
-    } catch (_) {
-      return DailyHadithPermissionStatus.unknown;
-    }
-  }
-
-  @override
-  Future<DailyHadithPermissionStatus> requestPermission() async {
-    if (kIsWeb) return DailyHadithPermissionStatus.unsupported;
-    try {
-      bool? granted;
-      if (defaultTargetPlatform == TargetPlatform.android) {
-        granted = await _plugin
-            .resolvePlatformSpecificImplementation<
-              AndroidFlutterLocalNotificationsPlugin
-            >()
-            ?.requestNotificationsPermission();
-      } else if (defaultTargetPlatform == TargetPlatform.iOS) {
-        granted = await _plugin
-            .resolvePlatformSpecificImplementation<
-              IOSFlutterLocalNotificationsPlugin
-            >()
-            ?.requestPermissions(alert: true, sound: true, badge: true);
-      } else if (defaultTargetPlatform == TargetPlatform.macOS) {
-        granted = await _plugin
-            .resolvePlatformSpecificImplementation<
-              MacOSFlutterLocalNotificationsPlugin
-            >()
-            ?.requestPermissions(alert: true, sound: true, badge: true);
-      } else {
-        return DailyHadithPermissionStatus.unsupported;
-      }
-      return granted == true
-          ? DailyHadithPermissionStatus.granted
-          : DailyHadithPermissionStatus.denied;
-    } catch (_) {
-      return DailyHadithPermissionStatus.unknown;
-    }
-  }
+  Future<DailyHadithPermissionStatus> requestPermission() async =>
+      DailyHadithPermissionStatus.values.byName(
+        (await _coordinator.requestPermission()).name,
+      );
 
   @override
   Future<void> reschedule({
@@ -288,15 +198,5 @@ class DailyHadithNotificationService implements DailyHadithNotificationGateway {
     if (!scheduledIds.contains(id)) return;
     await _plugin.cancel(id: id);
     persistScheduledIds({...scheduledIds}..remove(id));
-  }
-
-  String? _contentIdFromPayload(String? payload) {
-    if (payload == null || payload.isEmpty) return null;
-    try {
-      return (jsonDecode(payload) as Map<String, dynamic>)['contentId']
-          as String?;
-    } catch (_) {
-      return null;
-    }
   }
 }

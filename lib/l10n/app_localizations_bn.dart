@@ -3606,4 +3606,208 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dailyHadithNoResults => 'এই ফিল্টারে কোনো পাঠ পাওয়া যায়নি।';
+
+  @override
+  String get islamicDaysTitle => 'ইসলামি দিন';
+
+  @override
+  String get islamicDaysSubtitle => 'ছোট্ট নিয়ত। অর্থবহ একটি দিন।';
+
+  @override
+  String get islamicDaysToday => 'আজ';
+
+  @override
+  String get islamicDaysUpcoming => 'সামনে আসছে';
+
+  @override
+  String get islamicDaysSaved => 'সংরক্ষিত';
+
+  @override
+  String get islamicDaysExplore => 'সব উপলক্ষ দেখুন';
+
+  @override
+  String get islamicDaysViewGuidance => 'নির্দেশিকা দেখুন';
+
+  @override
+  String get islamicDaysNextOccasion => 'আপনার পরের উপলক্ষ';
+
+  @override
+  String get islamicDaysTodayOccasions => 'আজকের জন্য সময় রাখুন';
+
+  @override
+  String get islamicDaysTodayEmpty => 'নিয়মিত ভালো কাজের একটি দিন';
+
+  @override
+  String get islamicDaysTodayEmptyBody => 'আজ আপনার সমন্বয় করা ক্যালেন্ডারে বিশেষ উপলক্ষ নেই। সামনে আসা সুযোগগুলো দেখে নিন।';
+
+  @override
+  String get islamicDaysSavedEmpty => 'প্রয়োজনীয় নির্দেশিকা কাছে রাখুন';
+
+  @override
+  String get islamicDaysSavedEmptyBody => 'কোনো উপলক্ষ সংরক্ষণ করলে তার পরের তারিখসহ নির্দেশিকা এখানে পাবেন।';
+
+  @override
+  String get islamicDaysUpcomingBody => 'আপনার স্থানীয় ক্যালেন্ডার অনুযায়ী প্রতিটি উপলক্ষের পরবর্তী দিন।';
+
+  @override
+  String get islamicDaysCategoryWorship => 'ইবাদত';
+
+  @override
+  String get islamicDaysCategoryFasting => 'রোজা';
+
+  @override
+  String get islamicDaysCategorySeason => 'বরকতময় সময়';
+
+  @override
+  String get islamicDaysCategoryCelebration => 'ঈদ ও তাশরিক';
+
+  @override
+  String get islamicDaysWeekly => 'প্রতি সপ্তাহে';
+
+  @override
+  String get islamicDaysMonthly => 'প্রতি হিজরি মাসে';
+
+  @override
+  String get islamicDaysAnnual => 'প্রতি হিজরি বছরে';
+
+  @override
+  String get islamicDaysPeriod => 'হিজরি সময়কাল';
+
+  @override
+  String get islamicDaysWhen => 'কখন আসে';
+
+  @override
+  String get islamicDaysRecommended => 'নফল রোজার সুযোগ';
+
+  @override
+  String get islamicDaysObligatory => 'রমজানের রোজা';
+
+  @override
+  String get islamicDaysProhibited => 'রোজা নিষিদ্ধ';
+
+  @override
+  String get islamicDaysBlockedBody => 'আজকের রোজার নিষেধাজ্ঞা অগ্রাধিকার পায়। বিরোধী রোজার কাজ ও স্মরণবার্তা বাদ দেওয়া হয়েছে। হজের নির্দিষ্ট ব্যতিক্রম জানতে সংশ্লিষ্ট নির্দেশিকা দেখুন।';
+
+  @override
+  String get islamicDaysRamadanOverride => 'রমজানের নির্দেশনা প্রযোজ্য';
+
+  @override
+  String get islamicDaysRamadanOverrideBody => 'এই তারিখে রমজানের রোজার নির্দেশনা অনুসরণ করুন। আলাদা নফল রোজার করণীয় বাদ দেওয়া হয়েছে।';
+
+  @override
+  String get islamicDaysPilgrimTitle => 'আপনার হজের নির্দেশনা';
+
+  @override
+  String get islamicDaysPilgrimBody => 'আপনার হজের পছন্দ চালু আছে। অ-হাজিদের আরাফার রোজার কাজ ও প্রস্তুতির স্মরণবার্তা বাদ দেওয়া হয়েছে।';
+
+  @override
+  String get islamicDaysActions => 'আপনার ছোট ছোট করণীয়';
+
+  @override
+  String get islamicDaysActionsSubtitle => 'প্রস্তাবিত করণীয় · এই উপলক্ষের জন্য সংরক্ষিত';
+
+  @override
+  String get islamicDaysAvoid => 'যা এড়িয়ে চলবেন';
+
+  @override
+  String get islamicDaysHadith => 'হাদিস থেকে';
+
+  @override
+  String get islamicDaysHadithExcerpt => 'হাদিসের অংশ · অর্থ';
+
+  @override
+  String get islamicDaysNotes => 'আরও কিছু নির্দেশনা';
+
+  @override
+  String get islamicDaysAddChecklist => 'আমার দৈনিক চেকলিস্টে যোগ করুন';
+
+  @override
+  String get islamicDaysChecklistAdded => 'এই তারিখের জন্য যোগ হয়েছে';
+
+  @override
+  String get islamicDaysAlreadyTracked => 'আপনার দৈনিক চেকলিস্টে আছে';
+
+  @override
+  String get islamicDaysSave => 'নির্দেশিকা সংরক্ষণ করুন';
+
+  @override
+  String get islamicDaysUnsave => 'সংরক্ষিত নির্দেশিকা সরান';
+
+  @override
+  String get islamicDaysCalendarTitle => 'আপনার স্থানীয় হিজরি ক্যালেন্ডার';
+
+  @override
+  String get islamicDaysCalendarBody => 'তারিখ অ্যাপের গণনা করা হিজরি ক্যালেন্ডার ও আপনার তারিখ সমন্বয় অনুসরণ করে। রমজান ও ঈদের জন্য স্থানীয় ঘোষিত তারিখ মানুন। সন্ধ্যার প্রস্তুতির স্মরণবার্তা পরের দিনের রোজার জন্য।';
+
+  @override
+  String get islamicDaysCalendarAction => 'ক্যালেন্ডার সমন্বয় করুন';
+
+  @override
+  String get islamicDaysPreferences => 'স্মরণবার্তার পছন্দ';
+
+  @override
+  String get islamicDaysNotify => 'উপলক্ষের স্মরণবার্তা';
+
+  @override
+  String get islamicDaysNotifyBody => 'এই ডিভাইসে গুরুত্বপূর্ণ তারিখের ঐচ্ছিক স্মরণবার্তা।';
+
+  @override
+  String get islamicDaysReminderTime => 'সকাল / দিনের স্মরণবার্তা';
+
+  @override
+  String get islamicDaysPreparation => 'আগের সন্ধ্যায় প্রস্তুতি';
+
+  @override
+  String get islamicDaysPreparationBody => 'শুধু উপযুক্ত আসন্ন রোজার জন্য প্রস্তুতির স্মরণবার্তা।';
+
+  @override
+  String get islamicDaysPreparationTime => 'সন্ধ্যার প্রস্তুতির সময়';
+
+  @override
+  String get islamicDaysHajj => 'আমি হজ পালন করছি';
+
+  @override
+  String get islamicDaysHajjBody => 'আরাফার জন্য হাজিদের নির্দেশনা অনুসরণ করুন। তাশরিকের সাধারণ রোজার স্মরণবার্তা বন্ধ থাকবে।';
+
+  @override
+  String get islamicDaysNotificationCategories => 'আপনার উপলক্ষ বেছে নিন';
+
+  @override
+  String get islamicDaysNotificationPolicy => 'রোজার নিষেধাজ্ঞা বেছে নেওয়া বিষয়ের ওপরও অগ্রাধিকার পায়। একই দিনে একাধিক উপলক্ষের জন্য একটি স্মরণবার্তা আসে। অ্যাপে ফিরলে আসন্ন স্মরণবার্তা নতুন করে নির্ধারিত হয়।';
+
+  @override
+  String get islamicDaysNotificationsUnavailable => 'এই প্ল্যাটফর্মে নোটিফিকেশন পাওয়া যায় না।';
+
+  @override
+  String get islamicDaysNotificationsDenied => 'ডিভাইসে অনুমতি বন্ধ আছে। স্মরণবার্তা পেতে ডিভাইসের সেটিংসে নোটিফিকেশন অনুমতি দিন।';
+
+  @override
+  String get islamicDaysNotificationError => 'স্মরণবার্তা নির্ধারণ করা যায়নি। ডিভাইসের টাইমজোন ও নোটিফিকেশন সেটিংস দেখে আবার চেষ্টা করুন।';
+
+  @override
+  String get islamicDaysRetry => 'আবার চেষ্টা করুন';
+
+  @override
+  String get islamicDaysLoadError => 'ইসলামি দিনের নির্দেশিকা খোলা যায়নি।';
+
+  @override
+  String get islamicDaysSaveError => 'পরিবর্তন সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get islamicDaysSourceError => 'এই সূত্র খোলা যায়নি।';
+
+  @override
+  String get islamicDaysSource => 'সূত্রটি পড়ুন';
+
+  @override
+  String get islamicDaysMoreToday => 'আজকের আরও উপলক্ষ';
+
+  @override
+  String get islamicDaysAllGuides => 'নির্দেশিকাগুলো দেখুন';
+
+  @override
+  String get islamicDaysSearch => 'উপলক্ষ বা নির্দেশিকা খুঁজুন';
+
+  @override
+  String get islamicDaysNoResults => 'আপনার অনুসন্ধানে কোনো উপলক্ষ পাওয়া যায়নি।';
 }

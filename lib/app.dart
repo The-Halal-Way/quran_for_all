@@ -16,6 +16,7 @@ import 'data/datasources/remote/prayer_times_api_service.dart';
 import 'data/repositories/audio_repository_impl.dart';
 import 'data/repositories/daily_tracker_repository_impl.dart';
 import 'data/repositories/daily_hadith_repository_impl.dart';
+import 'data/repositories/islamic_days_repository.dart';
 import 'data/repositories/learning_progress_repository_impl.dart';
 import 'data/repositories/nurani_quran_repository_impl.dart';
 import 'data/repositories/prayer_times_repository_impl.dart';
@@ -45,6 +46,7 @@ import 'presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import 'presentation/viewmodels/dashboard/tasbeeh_viewmodel.dart';
 import 'presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
+import 'presentation/viewmodels/islamic_days/islamic_days_viewmodel.dart';
 import 'presentation/viewmodels/quran/quran_viewmodel.dart';
 import 'presentation/viewmodels/quran/nurani_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/bookmarks_viewmodel.dart';
@@ -56,8 +58,11 @@ import 'presentation/viewmodels/splash_viewmodel.dart';
 import 'presentation/views/splash/splash_view.dart';
 import 'presentation/widgets/common/global_audio_control_bar.dart';
 import 'presentation/widgets/daily_hadith/shared/daily_hadith_notification_router.dart';
+import 'presentation/widgets/islamic_days/shared/islamic_days_notification_router.dart';
 import 'services/audio_service.dart';
 import 'services/daily_hadith_notification_service.dart';
+import 'services/islamic_days/islamic_days_notification_service.dart';
+import 'services/notifications/app_notification_coordinator.dart';
 import 'services/permission_helper.dart';
 import 'services/pronunciation_service.dart';
 
@@ -133,9 +138,20 @@ class QuranForAllApp extends StatelessWidget {
         Provider<DailyHadithRepository>(
           create: (_) => DailyHadithRepositoryImpl(),
         ),
+        Provider<IslamicDaysRepository>(create: (_) => IslamicDaysRepository()),
+        Provider<AppNotificationCoordinator>(
+          create: (_) => AppNotificationCoordinator(),
+        ),
+        Provider<IslamicDaysNotificationService>(
+          create: (context) => IslamicDaysNotificationService(
+            context.read<AppNotificationCoordinator>(),
+          ),
+        ),
         Provider<TasbeehRepository>(create: (_) => TasbeehRepositoryImpl()),
         Provider<DailyHadithNotificationGateway>(
-          create: (_) => DailyHadithNotificationService(),
+          create: (context) => DailyHadithNotificationService(
+            coordinator: context.read<AppNotificationCoordinator>(),
+          ),
         ),
         Provider<GetDailyTasksUseCase>(
           create: (context) =>
@@ -220,6 +236,12 @@ class QuranForAllApp extends StatelessWidget {
             loadPrayerTimesUseCase: context.read<LoadPrayerTimesUseCase>(),
           ),
         ),
+        ChangeNotifierProvider<IslamicDaysViewModel>(
+          create: (context) => IslamicDaysViewModel(
+            repository: context.read<IslamicDaysRepository>(),
+            notifications: context.read<IslamicDaysNotificationService>(),
+          ),
+        ),
         ChangeNotifierProvider<DailyTrackerViewModel>(
           create: (context) => DailyTrackerViewModel(
             getDailyTasksUseCase: context.read<GetDailyTasksUseCase>(),
@@ -233,13 +255,13 @@ class QuranForAllApp extends StatelessWidget {
             saveSectionOrderUseCase: context
                 .read<SaveTrackerSectionOrderUseCase>(),
             moveCustomTaskUseCase: context.read<MoveCustomTaskUseCase>(),
+            islamicDays: context.read<IslamicDaysViewModel>(),
           ),
         ),
         ChangeNotifierProvider<DailyHadithViewModel>(
           create: (context) => DailyHadithViewModel(
             repository: context.read<DailyHadithRepository>(),
-            notificationGateway: context
-                .read<DailyHadithNotificationGateway>(),
+            notificationGateway: context.read<DailyHadithNotificationGateway>(),
           ),
         ),
         ChangeNotifierProvider<TasbeehViewModel>(
@@ -282,21 +304,29 @@ class QuranForAllApp extends StatelessWidget {
                   selector: (_, audioControlVm) =>
                       audioControlVm.showMiniPlayer,
                   builder: (context, showBar, _) {
-                    return DailyHadithNotificationRouter(
+                    return IslamicDaysNotificationRouter(
                       navigatorKey: appNavigatorKey,
                       locale: settingsViewModel.settings.language.locale
                           .toLanguageTag(),
-                      child: Stack(
-                        children: [
-                          child ?? const SizedBox.shrink(),
-                          if (showBar)
-                            const Positioned(
-                              left: 0,
-                              right: 0,
-                              bottom: 0,
-                              child: GlobalAudioControlBar(),
-                            ),
-                        ],
+                      adjustment:
+                          settingsViewModel.settings.hijriDateAdjustment,
+                      settingsReady: !settingsViewModel.isLoading,
+                      child: DailyHadithNotificationRouter(
+                        navigatorKey: appNavigatorKey,
+                        locale: settingsViewModel.settings.language.locale
+                            .toLanguageTag(),
+                        child: Stack(
+                          children: [
+                            child ?? const SizedBox.shrink(),
+                            if (showBar)
+                              const Positioned(
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                child: GlobalAudioControlBar(),
+                              ),
+                          ],
+                        ),
                       ),
                     );
                   },

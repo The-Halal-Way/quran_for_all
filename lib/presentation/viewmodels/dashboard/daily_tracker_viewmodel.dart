@@ -13,6 +13,8 @@ import '../../../domain/usecases/move_custom_task_usecase.dart';
 import '../../../domain/usecases/reorder_custom_tasks_usecase.dart';
 import '../../../domain/usecases/save_tracker_section_order_usecase.dart';
 import '../../../domain/usecases/toggle_task_usecase.dart';
+import '../../models/islamic_day_tracker_tasks.dart';
+import '../islamic_days/islamic_days_viewmodel.dart';
 
 /// Holds the state of today's Daily Tracker checklist: the task list,
 /// loading state, and whether the completion celebration should be shown.
@@ -26,6 +28,7 @@ class DailyTrackerViewModel extends ChangeNotifier {
     required GetTrackerSectionOrderUseCase getSectionOrderUseCase,
     required SaveTrackerSectionOrderUseCase saveSectionOrderUseCase,
     required MoveCustomTaskUseCase moveCustomTaskUseCase,
+    IslamicDaysViewModel? islamicDays,
   }) : _getDailyTasksUseCase = getDailyTasksUseCase,
        _toggleTaskUseCase = toggleTaskUseCase,
        _addCustomTaskUseCase = addCustomTaskUseCase,
@@ -33,7 +36,9 @@ class DailyTrackerViewModel extends ChangeNotifier {
        _reorderCustomTasksUseCase = reorderCustomTasksUseCase,
        _getSectionOrderUseCase = getSectionOrderUseCase,
        _saveSectionOrderUseCase = saveSectionOrderUseCase,
-       _moveCustomTaskUseCase = moveCustomTaskUseCase {
+       _moveCustomTaskUseCase = moveCustomTaskUseCase,
+       _islamicDays = islamicDays {
+    _islamicDays?.addListener(_onIslamicDaysChanged);
     unawaited(loadTasks());
   }
 
@@ -45,6 +50,7 @@ class DailyTrackerViewModel extends ChangeNotifier {
   final GetTrackerSectionOrderUseCase _getSectionOrderUseCase;
   final SaveTrackerSectionOrderUseCase _saveSectionOrderUseCase;
   final MoveCustomTaskUseCase _moveCustomTaskUseCase;
+  final IslamicDaysViewModel? _islamicDays;
 
   List<DailyTask> _tasks = [];
   List<TaskCategory> _sectionOrder = completeTaskCategoryOrder([]);
@@ -52,15 +58,15 @@ class DailyTrackerViewModel extends ChangeNotifier {
   bool _showCelebration = false;
   bool _disposed = false;
 
-  List<DailyTask> get tasks => List.unmodifiable(_tasks);
+  List<DailyTask> get tasks =>
+      List.unmodifiable([..._tasks, ...?_islamicDays?.trackerTasks]);
   List<TaskCategory> get sectionOrder => List.unmodifiable(_sectionOrder);
   bool get isLoading => _isLoading;
   bool get showCelebration => _showCelebration;
   bool get isFriday => DateTime.now().weekday == DateTime.friday;
 
-  int get totalTasks => _tasks.length;
-  int get completedTasks =>
-      _tasks.where((task) => task.isCompletedToday).length;
+  int get totalTasks => tasks.length;
+  int get completedTasks => tasks.where((task) => task.isCompletedToday).length;
 
   int get totalRequiredTasks => _tasks.where((task) => !task.isOptional).length;
   int get completedRequiredTasks =>
@@ -71,7 +77,7 @@ class DailyTrackerViewModel extends ChangeNotifier {
   /// Nonempty sections in the user's order; task order is kept within sections.
   Map<TaskCategory, List<DailyTask>> get groupedTasks {
     final grouped = <TaskCategory, List<DailyTask>>{};
-    for (final task in _tasks) {
+    for (final task in tasks) {
       grouped.putIfAbsent(task.category, () => []).add(task);
     }
     return {for (final category in _sectionOrder) category: ?grouped[category]};
@@ -91,6 +97,7 @@ class DailyTrackerViewModel extends ChangeNotifier {
   @override
   void dispose() {
     _disposed = true;
+    _islamicDays?.removeListener(_onIslamicDaysChanged);
     super.dispose();
   }
 
@@ -98,6 +105,10 @@ class DailyTrackerViewModel extends ChangeNotifier {
   /// this completes every non-optional task, the celebration overlay is
   /// triggered.
   Future<void> toggleTask(String taskId) async {
+    if (taskId.startsWith(islamicDayTaskPrefix)) {
+      await _islamicDays?.toggleTrackerTask(taskId);
+      return;
+    }
     final index = _tasks.indexWhere((task) => task.id == taskId);
     if (index == -1) {
       return;
@@ -125,6 +136,10 @@ class DailyTrackerViewModel extends ChangeNotifier {
       _showCelebration = true;
       notifyListeners();
     }
+  }
+
+  void _onIslamicDaysChanged() {
+    if (!_disposed) notifyListeners();
   }
 
   /// Creates a new custom task and reloads the checklist.

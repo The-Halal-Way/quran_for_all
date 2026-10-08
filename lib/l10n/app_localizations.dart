@@ -7126,6 +7126,414 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No readings match these filters.'**
   String get dailyHadithNoResults;
+
+  /// No description provided for @islamicDaysTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Islamic Days'**
+  String get islamicDaysTitle;
+
+  /// No description provided for @islamicDaysSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A little intention. A meaningful day.'**
+  String get islamicDaysSubtitle;
+
+  /// No description provided for @islamicDaysToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get islamicDaysToday;
+
+  /// No description provided for @islamicDaysUpcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get islamicDaysUpcoming;
+
+  /// No description provided for @islamicDaysSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get islamicDaysSaved;
+
+  /// No description provided for @islamicDaysExplore.
+  ///
+  /// In en, this message translates to:
+  /// **'View all occasions'**
+  String get islamicDaysExplore;
+
+  /// No description provided for @islamicDaysViewGuidance.
+  ///
+  /// In en, this message translates to:
+  /// **'View guidance'**
+  String get islamicDaysViewGuidance;
+
+  /// No description provided for @islamicDaysNextOccasion.
+  ///
+  /// In en, this message translates to:
+  /// **'Your next occasion'**
+  String get islamicDaysNextOccasion;
+
+  /// No description provided for @islamicDaysTodayOccasions.
+  ///
+  /// In en, this message translates to:
+  /// **'Make room for today'**
+  String get islamicDaysTodayOccasions;
+
+  /// No description provided for @islamicDaysTodayEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'A quiet day for consistent good deeds'**
+  String get islamicDaysTodayEmpty;
+
+  /// No description provided for @islamicDaysTodayEmptyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no special occasion on your adjusted calendar today. Your next opportunity is just ahead.'**
+  String get islamicDaysTodayEmptyBody;
+
+  /// No description provided for @islamicDaysSavedEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep meaningful guidance close'**
+  String get islamicDaysSavedEmpty;
+
+  /// No description provided for @islamicDaysSavedEmptyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Save an occasion to find its guidance here, together with its next date.'**
+  String get islamicDaysSavedEmptyBody;
+
+  /// No description provided for @islamicDaysUpcomingBody.
+  ///
+  /// In en, this message translates to:
+  /// **'The next occurrence of each occasion, calculated from your local calendar.'**
+  String get islamicDaysUpcomingBody;
+
+  /// No description provided for @islamicDaysCategoryWorship.
+  ///
+  /// In en, this message translates to:
+  /// **'Worship'**
+  String get islamicDaysCategoryWorship;
+
+  /// No description provided for @islamicDaysCategoryFasting.
+  ///
+  /// In en, this message translates to:
+  /// **'Fasting'**
+  String get islamicDaysCategoryFasting;
+
+  /// No description provided for @islamicDaysCategorySeason.
+  ///
+  /// In en, this message translates to:
+  /// **'Blessed seasons'**
+  String get islamicDaysCategorySeason;
+
+  /// No description provided for @islamicDaysCategoryCelebration.
+  ///
+  /// In en, this message translates to:
+  /// **'Eid & Tashriq'**
+  String get islamicDaysCategoryCelebration;
+
+  /// No description provided for @islamicDaysWeekly.
+  ///
+  /// In en, this message translates to:
+  /// **'Every week'**
+  String get islamicDaysWeekly;
+
+  /// No description provided for @islamicDaysMonthly.
+  ///
+  /// In en, this message translates to:
+  /// **'Every Hijri month'**
+  String get islamicDaysMonthly;
+
+  /// No description provided for @islamicDaysAnnual.
+  ///
+  /// In en, this message translates to:
+  /// **'Every Hijri year'**
+  String get islamicDaysAnnual;
+
+  /// No description provided for @islamicDaysPeriod.
+  ///
+  /// In en, this message translates to:
+  /// **'A Hijri season'**
+  String get islamicDaysPeriod;
+
+  /// No description provided for @islamicDaysWhen.
+  ///
+  /// In en, this message translates to:
+  /// **'When it comes around'**
+  String get islamicDaysWhen;
+
+  /// No description provided for @islamicDaysRecommended.
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended fasting'**
+  String get islamicDaysRecommended;
+
+  /// No description provided for @islamicDaysObligatory.
+  ///
+  /// In en, this message translates to:
+  /// **'Ramadan fasting'**
+  String get islamicDaysObligatory;
+
+  /// No description provided for @islamicDaysProhibited.
+  ///
+  /// In en, this message translates to:
+  /// **'Fasting prohibited'**
+  String get islamicDaysProhibited;
+
+  /// No description provided for @islamicDaysBlockedBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Today’s fasting restriction takes precedence. Conflicting fasting tasks and alerts are removed. See the relevant guidance for specific Hajj exceptions.'**
+  String get islamicDaysBlockedBody;
+
+  /// No description provided for @islamicDaysRamadanOverride.
+  ///
+  /// In en, this message translates to:
+  /// **'Ramadan guidance applies'**
+  String get islamicDaysRamadanOverride;
+
+  /// No description provided for @islamicDaysRamadanOverrideBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow the Ramadan fasting guidance for this date. Separate voluntary fasting tasks are omitted.'**
+  String get islamicDaysRamadanOverrideBody;
+
+  /// No description provided for @islamicDaysPilgrimTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Guidance for your Hajj'**
+  String get islamicDaysPilgrimTitle;
+
+  /// No description provided for @islamicDaysPilgrimBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Hajj preference is enabled. The non-pilgrim Arafah fasting task and preparation alert are omitted.'**
+  String get islamicDaysPilgrimBody;
+
+  /// No description provided for @islamicDaysActions.
+  ///
+  /// In en, this message translates to:
+  /// **'Your small steps'**
+  String get islamicDaysActions;
+
+  /// No description provided for @islamicDaysActionsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggested actions · saved for this occurrence'**
+  String get islamicDaysActionsSubtitle;
+
+  /// No description provided for @islamicDaysAvoid.
+  ///
+  /// In en, this message translates to:
+  /// **'Things to avoid'**
+  String get islamicDaysAvoid;
+
+  /// No description provided for @islamicDaysHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'From the hadith'**
+  String get islamicDaysHadith;
+
+  /// No description provided for @islamicDaysHadithExcerpt.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith excerpt · meaning'**
+  String get islamicDaysHadithExcerpt;
+
+  /// No description provided for @islamicDaysNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'A little more guidance'**
+  String get islamicDaysNotes;
+
+  /// No description provided for @islamicDaysAddChecklist.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to my daily checklist'**
+  String get islamicDaysAddChecklist;
+
+  /// No description provided for @islamicDaysChecklistAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Added for this date'**
+  String get islamicDaysChecklistAdded;
+
+  /// No description provided for @islamicDaysAlreadyTracked.
+  ///
+  /// In en, this message translates to:
+  /// **'In your daily checklist'**
+  String get islamicDaysAlreadyTracked;
+
+  /// No description provided for @islamicDaysSave.
+  ///
+  /// In en, this message translates to:
+  /// **'Save guidance'**
+  String get islamicDaysSave;
+
+  /// No description provided for @islamicDaysUnsave.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove saved guidance'**
+  String get islamicDaysUnsave;
+
+  /// No description provided for @islamicDaysCalendarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your local Hijri calendar'**
+  String get islamicDaysCalendarTitle;
+
+  /// No description provided for @islamicDaysCalendarBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Dates follow the app’s calculated Hijri calendar and your date adjustment. For Ramadan and Eid, follow locally announced dates. Evening preparation alerts refer to the next daytime fast.'**
+  String get islamicDaysCalendarBody;
+
+  /// No description provided for @islamicDaysCalendarAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Adjust calendar'**
+  String get islamicDaysCalendarAction;
+
+  /// No description provided for @islamicDaysPreferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder preferences'**
+  String get islamicDaysPreferences;
+
+  /// No description provided for @islamicDaysNotify.
+  ///
+  /// In en, this message translates to:
+  /// **'Occasion reminders'**
+  String get islamicDaysNotify;
+
+  /// No description provided for @islamicDaysNotifyBody.
+  ///
+  /// In en, this message translates to:
+  /// **'An optional alert for significant dates on this device.'**
+  String get islamicDaysNotifyBody;
+
+  /// No description provided for @islamicDaysReminderTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Morning / daytime alert'**
+  String get islamicDaysReminderTime;
+
+  /// No description provided for @islamicDaysPreparation.
+  ///
+  /// In en, this message translates to:
+  /// **'Prepare the evening before'**
+  String get islamicDaysPreparation;
+
+  /// No description provided for @islamicDaysPreparationBody.
+  ///
+  /// In en, this message translates to:
+  /// **'A preparation alert only for eligible upcoming fasts.'**
+  String get islamicDaysPreparationBody;
+
+  /// No description provided for @islamicDaysPreparationTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Evening preparation time'**
+  String get islamicDaysPreparationTime;
+
+  /// No description provided for @islamicDaysHajj.
+  ///
+  /// In en, this message translates to:
+  /// **'I am performing Hajj'**
+  String get islamicDaysHajj;
+
+  /// No description provided for @islamicDaysHajjBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Use pilgrim guidance for Arafah. Ordinary Tashriq fasting reminders stay suppressed.'**
+  String get islamicDaysHajjBody;
+
+  /// No description provided for @islamicDaysNotificationCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your occasions'**
+  String get islamicDaysNotificationCategories;
+
+  /// No description provided for @islamicDaysNotificationPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Fasting restrictions always override selected categories. Overlapping occasions share an alert. Upcoming alerts are refreshed when you return to the app.'**
+  String get islamicDaysNotificationPolicy;
+
+  /// No description provided for @islamicDaysNotificationsUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications are unavailable on this platform.'**
+  String get islamicDaysNotificationsUnavailable;
+
+  /// No description provided for @islamicDaysNotificationsDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Device permission is off. Allow notifications in your device settings to receive alerts.'**
+  String get islamicDaysNotificationsDenied;
+
+  /// No description provided for @islamicDaysNotificationError.
+  ///
+  /// In en, this message translates to:
+  /// **'Alerts could not be scheduled. Check your device’s timezone and notification settings, then try again.'**
+  String get islamicDaysNotificationError;
+
+  /// No description provided for @islamicDaysRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get islamicDaysRetry;
+
+  /// No description provided for @islamicDaysLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'The Islamic Days guides could not be opened.'**
+  String get islamicDaysLoadError;
+
+  /// No description provided for @islamicDaysSaveError.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn’t save your change. Please try again.'**
+  String get islamicDaysSaveError;
+
+  /// No description provided for @islamicDaysSourceError.
+  ///
+  /// In en, this message translates to:
+  /// **'This reference could not be opened.'**
+  String get islamicDaysSourceError;
+
+  /// No description provided for @islamicDaysSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the reference'**
+  String get islamicDaysSource;
+
+  /// No description provided for @islamicDaysMoreToday.
+  ///
+  /// In en, this message translates to:
+  /// **'More occasions today'**
+  String get islamicDaysMoreToday;
+
+  /// No description provided for @islamicDaysAllGuides.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse the guides'**
+  String get islamicDaysAllGuides;
+
+  /// No description provided for @islamicDaysSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Search occasions or guidance'**
+  String get islamicDaysSearch;
+
+  /// No description provided for @islamicDaysNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No occasions match your search.'**
+  String get islamicDaysNoResults;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

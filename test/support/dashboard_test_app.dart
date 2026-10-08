@@ -15,6 +15,10 @@ import 'package:quran_for_all/domain/usecases/reorder_custom_tasks_usecase.dart'
 import 'package:quran_for_all/domain/usecases/save_tracker_section_order_usecase.dart';
 import 'package:quran_for_all/domain/usecases/toggle_task_usecase.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
+import 'package:quran_for_all/data/repositories/islamic_days_repository.dart';
+import 'package:quran_for_all/presentation/viewmodels/islamic_days/islamic_days_viewmodel.dart';
+import 'package:quran_for_all/services/islamic_days/islamic_days_notification_service.dart';
+import 'package:quran_for_all/services/notifications/app_notification_coordinator.dart';
 import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_hadith_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
@@ -46,6 +50,10 @@ class DashboardTestState {
   final repository = MemoryTrackerRepository();
   late final DailyTrackerViewModel tracker;
   late final DailyHadithViewModel reminders;
+  final islamicDays = IslamicDaysViewModel(
+    repository: IslamicDaysRepository(),
+    notifications: IslamicDaysNotificationService(AppNotificationCoordinator()),
+  );
   final prayer = TestPrayerViewModel();
   final read = _TestReadViewModel();
   final learn = _TestLearnViewModel();
@@ -57,6 +65,7 @@ class DashboardTestState {
     _disposed = true;
     tracker.dispose();
     reminders.dispose();
+    islamicDays.dispose();
     prayer.dispose();
     read.dispose();
     learn.dispose();
@@ -94,6 +103,9 @@ class DashboardTestApp extends StatelessWidget {
       ChangeNotifierProvider<SettingsViewModel>.value(value: state.settings),
       ChangeNotifierProvider<DailyHadithViewModel>.value(
         value: state.reminders,
+      ),
+      ChangeNotifierProvider<IslamicDaysViewModel>.value(
+        value: state.islamicDays,
       ),
     ],
     child: MaterialApp(

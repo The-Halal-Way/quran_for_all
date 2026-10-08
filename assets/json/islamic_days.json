@@ -1,0 +1,920 @@
+{
+  "schemaVersion": 1,
+  "events": [
+    {
+      "id": "friday",
+      "title": {
+        "en": "Friday · Jumuʿah",
+        "bn": "শুক্রবার · জুমুআ"
+      },
+      "description": {
+        "en": "A weekly opportunity to prepare for Jumuʿah, listen attentively to the khutbah and increase blessings upon the Prophet ﷺ. Make space for worship and kindness throughout the day.",
+        "bn": "জুমুআর প্রস্তুতি নেওয়া, মনোযোগ দিয়ে খুতবা শোনা এবং নবী ﷺ-এর প্রতি বেশি দরুদ পাঠ করার সাপ্তাহিক সুযোগ। দিনের মধ্যে ইবাদত ও মানুষের উপকারের জন্য সময় রাখুন।"
+      },
+      "category": "worship",
+      "rule": {
+        "type": "weekly",
+        "weekdays": [
+          5
+        ]
+      },
+      "priority": 35,
+      "fasting": "none",
+      "actions": [
+        {
+          "id": "prepare",
+          "text": {
+            "en": "Prepare with ghusl and clean clothing for Jumuʿah.",
+            "bn": "জুমুআর জন্য গোসল করে পরিষ্কার পোশাক পরুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "khutbah",
+          "text": {
+            "en": "Attend Jumuʿah when it applies to you and listen quietly to the khutbah.",
+            "bn": "আপনার জন্য প্রযোজ্য হলে জুমুআয় অংশ নিন এবং নীরবে খুতবা শুনুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "salawat",
+          "text": {
+            "en": "Set aside time to send blessings upon the Prophet ﷺ.",
+            "bn": "নবী ﷺ-এর প্রতি দরুদ পাঠের জন্য সময় রাখুন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Avoid talking during the khutbah or disturbing people already seated.",
+          "bn": "খুতবার সময় কথা বলা এবং আগে বসে থাকা মানুষকে বিরক্ত করা থেকে বিরত থাকুন।"
+        },
+        {
+          "en": "Do not choose a Friday-only voluntary fast merely because it is Friday; established fasting occasions have their own guidance.",
+          "bn": "শুধু শুক্রবার হওয়ার কারণে কেবল এই দিন নফল রোজার জন্য বেছে নেবেন না; নির্ধারিত রোজার উপলক্ষের আলাদা নির্দেশনা আছে।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "ثُمَّ يُنْصِتُ إِذَا تَكَلَّمَ الإِمَامُ",
+          "meaning": {
+            "en": "Then he listens in silence when the imam speaks.",
+            "bn": "এরপর ইমাম কথা বললে তিনি নীরবে মনোযোগ দিয়ে শোনেন।"
+          },
+          "reference": "Sahih al-Bukhari 883",
+          "url": "https://sunnah.com/bukhari:883",
+          "grade": "Sahih"
+        },
+        {
+          "arabic": "فَأَكْثِرُوا عَلَيَّ مِنَ الصَّلَاةِ فِيهِ فَإِنَّ صَلَاتَكُمْ مَعْرُوضَةٌ عَلَيَّ",
+          "meaning": {
+            "en": "Increase your blessings upon me on this day; your blessings are presented to me.",
+            "bn": "এই দিনে আমার প্রতি বেশি দরুদ পাঠ করো; তোমাদের দরুদ আমার কাছে পেশ করা হয়।"
+          },
+          "reference": "Sunan Abi Dawud 1047",
+          "url": "https://sunnah.com/abudawud:1047",
+          "grade": "Sahih (Al-Albani)"
+        }
+      ],
+      "notes": [
+        {
+          "en": "Friday fasting guidance: Sahih al-Bukhari 1985. A Friday that coincides with an established fast is not automatically excluded by this app.",
+          "bn": "শুক্রবারের রোজা সম্পর্কে: সহিহ বুখারি ১৯৮৫। নির্ধারিত রোজার উপলক্ষ শুক্রবারে পড়লে অ্যাপ তা স্বয়ংক্রিয়ভাবে বাদ দেয় না।"
+        }
+      ],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "monday_thursday",
+      "title": {
+        "en": "Monday & Thursday fasting",
+        "bn": "সোমবার ও বৃহস্পতিবারের রোজা"
+      },
+      "description": {
+        "en": "These two weekdays offer a recurring opportunity for voluntary fasting. Plan your suhur and keep the day centred on sincere worship, good conduct and manageable responsibilities.",
+        "bn": "এই দুই দিনে নিয়মিত নফল রোজার সুযোগ রয়েছে। সাহরির পরিকল্পনা করুন এবং আন্তরিক ইবাদত, সুন্দর আচরণ ও দৈনন্দিন দায়িত্বের মধ্যে ভারসাম্য রাখুন।"
+      },
+      "category": "fasting",
+      "rule": {
+        "type": "weekly",
+        "weekdays": [
+          1,
+          4
+        ]
+      },
+      "priority": 30,
+      "fasting": "recommended",
+      "actions": [
+        {
+          "id": "fast",
+          "text": {
+            "en": "Observe the voluntary fast if it is appropriate for you today.",
+            "bn": "আজ আপনার জন্য উপযুক্ত হলে নফল রোজা রাখুন।"
+          },
+          "fasting": true
+        },
+        {
+          "id": "intention",
+          "text": {
+            "en": "Renew your intention and make time for duʿa.",
+            "bn": "নিয়ত নবায়ন করুন এবং দুআর জন্য সময় রাখুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "kindness",
+          "text": {
+            "en": "Choose one act of kindness to accompany your worship.",
+            "bn": "ইবাদতের পাশাপাশি একটি ভালো কাজ বেছে নিন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Avoid treating a voluntary fast as compulsory.",
+          "bn": "নফল রোজাকে বাধ্যতামূলক মনে করবেন না।"
+        },
+        {
+          "en": "Avoid harsh speech and arguments while fasting.",
+          "bn": "রোজার সময় কঠোর কথা ও ঝগড়া থেকে বিরত থাকুন।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "تُعْرَضُ الْأَعْمَالُ يَوْمَ الاِثْنَيْنِ وَالْخَمِيسِ فَأُحِبُّ أَنْ يُعْرَضَ عَمَلِي وَأَنَا صَائِمٌ",
+          "meaning": {
+            "en": "Deeds are presented on Mondays and Thursdays, and I wish my deeds to be presented while I am fasting.",
+            "bn": "সোমবার ও বৃহস্পতিবার আমল পেশ করা হয়; আমি চাই রোজা অবস্থায় আমার আমল পেশ হোক।"
+          },
+          "reference": "Jamiʿ at-Tirmidhi 747",
+          "url": "https://sunnah.com/tirmidhi:747",
+          "grade": "Hasan (Darussalam)"
+        }
+      ],
+      "notes": [],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "white_days",
+      "title": {
+        "en": "The white days",
+        "bn": "আইয়ামে বিজ · সাদা দিন"
+      },
+      "description": {
+        "en": "The 13th, 14th and 15th of each Hijri month are the white days. They provide a simple monthly rhythm for voluntary fasting, subject to the fasting rules that apply to the date.",
+        "bn": "প্রতি হিজরি মাসের ১৩, ১৪ ও ১৫ তারিখকে আইয়ামে বিজ বলা হয়। সংশ্লিষ্ট দিনের রোজার বিধান মেনে এই দিনগুলো মাসিক নফল রোজার সুযোগ দেয়।"
+      },
+      "category": "fasting",
+      "rule": {
+        "type": "hijriMonthly",
+        "hijriDays": [
+          13,
+          14,
+          15
+        ]
+      },
+      "priority": 40,
+      "fasting": "recommended",
+      "actions": [
+        {
+          "id": "fast",
+          "text": {
+            "en": "Observe today’s white-day fast when fasting is permitted and appropriate for you.",
+            "bn": "রোজা রাখা অনুমোদিত ও আপনার জন্য উপযুক্ত হলে আজ আইয়ামে বিজের রোজা রাখুন।"
+          },
+          "fasting": true
+        },
+        {
+          "id": "plan",
+          "text": {
+            "en": "Look ahead to the remaining white days in this Hijri month.",
+            "bn": "এই মাসের বাকি আইয়ামে বিজের দিনগুলোর দিকে নজর রাখুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "dua",
+          "text": {
+            "en": "Make time for duʿa and a small act of charity.",
+            "bn": "দুআ ও সামান্য সদকার জন্য সময় রাখুন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Do not fast on a prohibited date even when it falls on the 13th, 14th or 15th.",
+          "bn": "১৩, ১৪ বা ১৫ তারিখ হলেও নিষিদ্ধ দিনে রোজা রাখবেন না।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "إِذَا صُمْتَ شَيْئًا مِنَ الشَّهْرِ فَصُمْ ثَلَاثَ عَشْرَةَ وَأَرْبَعَ عَشْرَةَ وَخَمْسَ عَشْرَةَ",
+          "meaning": {
+            "en": "When choosing days to fast during the month, fast its thirteenth, fourteenth and fifteenth.",
+            "bn": "মাসের কিছু দিনে রোজা রাখতে চাইলে তেরো, চৌদ্দ ও পনেরো তারিখে রাখো।"
+          },
+          "reference": "Sunan an-Nasaʾi 2424",
+          "url": "https://sunnah.com/nasai:2424",
+          "grade": "Hasan (Darussalam)"
+        }
+      ],
+      "notes": [
+        {
+          "en": "13 Dhul-Hijjah falls within Tashriq, so its normal voluntary fasting action is suppressed. See the Tashriq guide for its specific Hajj exception.",
+          "bn": "১৩ জিলহজ তাশরিকের মধ্যে পড়ে, তাই স্বাভাবিক নফল রোজার করণীয় দেখানো হয় না। হজের নির্দিষ্ট ব্যতিক্রম জানতে তাশরিকের নির্দেশিকা দেখুন।"
+        }
+      ],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "ramadan",
+      "title": {
+        "en": "Ramadan",
+        "bn": "রমজান"
+      },
+      "description": {
+        "en": "A month of fasting, Quran, prayer and generosity. Keep a sustainable routine and give attention to both your worship and your conduct with others.",
+        "bn": "রোজা, কুরআন, নামাজ ও উদারতার মাস। নিয়মিতভাবে পালন করা যায় এমন রুটিন তৈরি করুন এবং ইবাদতের পাশাপাশি মানুষের সঙ্গে সুন্দর আচরণে মনোযোগ দিন।"
+      },
+      "category": "season",
+      "rule": {
+        "type": "hijriPeriod",
+        "hijriMonth": 9,
+        "firstDay": 1,
+        "lastDay": 30
+      },
+      "priority": 70,
+      "fasting": "obligatory",
+      "actions": [
+        {
+          "id": "fast",
+          "text": {
+            "en": "Observe the Ramadan fast if you are required to fast today.",
+            "bn": "আজ আপনার ওপর রোজা ফরজ হলে রমজানের রোজা রাখুন।"
+          },
+          "fasting": true
+        },
+        {
+          "id": "quran",
+          "text": {
+            "en": "Read or listen to a portion of the Quran with attention.",
+            "bn": "মনোযোগ দিয়ে কুরআনের কিছু অংশ পড়ুন বা শুনুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "prayer",
+          "text": {
+            "en": "Protect your obligatory prayers and make room for night worship.",
+            "bn": "ফরজ নামাজের যত্ন নিন এবং রাতের ইবাদতের জন্য সময় রাখুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "give",
+          "text": {
+            "en": "Offer charity or help someone with a practical need.",
+            "bn": "সদকা করুন অথবা কারও প্রয়োজন মেটাতে সাহায্য করুন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Avoid quarrelling, insults and dishonest speech.",
+          "bn": "ঝগড়া, গালমন্দ ও অসত্য কথা এড়িয়ে চলুন।"
+        },
+        {
+          "en": "Avoid planning so much that you cannot maintain your obligatory duties.",
+          "bn": "এত বেশি পরিকল্পনা করবেন না যাতে ফরজ দায়িত্ব পালন ব্যাহত হয়।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "مَنْ صَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+          "meaning": {
+            "en": "Past sins are forgiven for the person who fasts Ramadan with faith and seeks Allah’s reward.",
+            "bn": "যে ব্যক্তি ঈমান নিয়ে আল্লাহর প্রতিদানের আশায় রমজানের রোজা রাখে, তার আগের গুনাহ মাফ করা হয়।"
+          },
+          "reference": "Sahih al-Bukhari 38",
+          "url": "https://sunnah.com/bukhari:38",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [
+        {
+          "en": "Ramadan fasting includes recognised exemptions. The fasting task applies to people required to fast; the other worship actions remain useful when a valid exemption applies.",
+          "bn": "রমজানের রোজায় স্বীকৃত ছাড় রয়েছে। রোজার করণীয়টি যাদের ওপর রোজা ফরজ তাদের জন্য; বৈধ ছাড় থাকলেও অন্য ইবাদতের করণীয়গুলো প্রযোজ্য হতে পারে।"
+        }
+      ],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "ramadan_last_ten",
+      "title": {
+        "en": "The last ten of Ramadan",
+        "bn": "রমজানের শেষ দশক"
+      },
+      "description": {
+        "en": "Give these final days and nights special attention through prayer, Quran, duʿa and charity. Seek Laylat al-Qadr throughout the last ten nights, particularly their odd nights.",
+        "bn": "শেষ দিন ও রাতগুলোতে নামাজ, কুরআন, দুআ ও সদকায় বেশি মনোযোগ দিন। শেষ দশ রাতজুড়ে, বিশেষত বেজোড় রাতগুলোতে লাইলাতুল কদর অনুসন্ধান করুন।"
+      },
+      "category": "season",
+      "rule": {
+        "type": "hijriPeriod",
+        "hijriMonth": 9,
+        "firstDay": 21,
+        "lastDay": 30
+      },
+      "priority": 85,
+      "fasting": "none",
+      "actions": [
+        {
+          "id": "night",
+          "text": {
+            "en": "Set aside a realistic period for worship tonight.",
+            "bn": "আজ রাতে ইবাদতের জন্য বাস্তবসম্মত একটি সময় নির্ধারণ করুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "dua",
+          "text": {
+            "en": "Ask Allah for forgiveness and make personal duʿa.",
+            "bn": "আল্লাহর কাছে ক্ষমা চান এবং নিজের জন্য দুআ করুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "family",
+          "text": {
+            "en": "Encourage your family gently to take part in night worship.",
+            "bn": "পরিবারকে কোমলভাবে রাতের ইবাদতে অংশ নিতে উৎসাহ দিন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "charity",
+          "text": {
+            "en": "Give a manageable amount of charity.",
+            "bn": "সামর্থ্য অনুযায়ী সদকা করুন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Do not assume that Laylat al-Qadr is certainly one fixed night.",
+          "bn": "লাইলাতুল কদর নিশ্চিতভাবে একটিমাত্র নির্দিষ্ট রাত—এমন ধারণা করবেন না।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "كَانَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِذَا دَخَلَ الْعَشْرُ شَدَّ مِئْزَرَهُ، وَأَحْيَا لَيْلَهُ، وَأَيْقَظَ أَهْلَهُ",
+          "meaning": {
+            "en": "During the last ten, the Prophet ﷺ devoted himself to worship, stayed awake at night and awakened his family.",
+            "bn": "শেষ দশক এলে নবী ﷺ ইবাদতে বেশি মনোযোগ দিতেন, রাত জাগতেন এবং পরিবারের সদস্যদের জাগাতেন।"
+          },
+          "reference": "Sahih al-Bukhari 2024",
+          "url": "https://sunnah.com/bukhari:2024",
+          "grade": "Sahih"
+        },
+        {
+          "arabic": "تَحَرَّوْا لَيْلَةَ الْقَدْرِ فِي الْوِتْرِ مِنَ الْعَشْرِ الْأَوَاخِرِ مِنْ رَمَضَانَ",
+          "meaning": {
+            "en": "Seek Laylat al-Qadr in the odd nights among Ramadan’s last ten nights.",
+            "bn": "রমজানের শেষ দশকের বেজোড় রাতগুলোতে লাইলাতুল কদর অনুসন্ধান করো।"
+          },
+          "reference": "Sahih al-Bukhari 2017",
+          "url": "https://sunnah.com/bukhari:2017",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [
+        {
+          "en": "The night associated with a Hijri date begins on the preceding evening. Use locally announced Ramadan dates when identifying these nights.",
+          "bn": "হিজরি তারিখের সঙ্গে সংশ্লিষ্ট রাত আগের সন্ধ্যা থেকে শুরু হয়। এই রাতগুলো নির্ধারণে স্থানীয়ভাবে ঘোষিত রমজানের তারিখ অনুসরণ করুন।"
+        }
+      ],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "dhul_hijjah",
+      "title": {
+        "en": "The first ten of Dhul-Hijjah",
+        "bn": "জিলহজের প্রথম দশক"
+      },
+      "description": {
+        "en": "A special season for good deeds: remembrance, prayer, charity and helping others. Voluntary fasting belongs to the first nine days for eligible people; the tenth is Eid al-Adha and fasting is prohibited.",
+        "bn": "জিকির, নামাজ, সদকা ও মানুষের উপকারের বিশেষ সময়। উপযুক্ত ব্যক্তির জন্য প্রথম নয় দিনে নফল রোজার সুযোগ আছে; দশম দিন ঈদুল আজহা এবং সে দিন রোজা নিষিদ্ধ।"
+      },
+      "category": "season",
+      "rule": {
+        "type": "hijriPeriod",
+        "hijriMonth": 12,
+        "firstDay": 1,
+        "lastDay": 10
+      },
+      "priority": 65,
+      "fasting": "recommended",
+      "actions": [
+        {
+          "id": "dhikr",
+          "text": {
+            "en": "Increase your remembrance of Allah and takbir.",
+            "bn": "আল্লাহর জিকির ও তাকবির বেশি পাঠ করুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "charity",
+          "text": {
+            "en": "Choose a good deed or act of charity for today.",
+            "bn": "আজকের জন্য একটি ভালো কাজ বা সদকা বেছে নিন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "fast",
+          "text": {
+            "en": "Consider a voluntary fast during the first nine days if appropriate for you.",
+            "bn": "আপনার জন্য উপযুক্ত হলে প্রথম নয় দিনে নফল রোজা রাখার চেষ্টা করুন।"
+          },
+          "fasting": true
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Do not extend a fasting plan into Eid al-Adha or the days of Tashriq.",
+          "bn": "রোজার পরিকল্পনা ঈদুল আজহা বা তাশরিকের দিনগুলো পর্যন্ত বাড়াবেন না।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "مَا الْعَمَلُ فِي أَيَّامِ الْعَشْرِ أَفْضَلَ مِنَ الْعَمَلِ فِي هَذِهِ",
+          "meaning": {
+            "en": "The hadith highlights the exceptional value of good deeds during these ten days.",
+            "bn": "এই হাদিসে দশ দিনে ভালো কাজ করার বিশেষ মর্যাদার কথা বলা হয়েছে।"
+          },
+          "reference": "Sahih al-Bukhari 969",
+          "url": "https://sunnah.com/bukhari:969",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "arafah",
+      "title": {
+        "en": "The day of Arafah",
+        "bn": "আরাফার দিন"
+      },
+      "description": {
+        "en": "The 9th of Dhul-Hijjah is a day for sincere duʿa and remembrance. Its voluntary fasting guidance is for people who are not performing Hajj; pilgrims should follow the guidance appropriate to their pilgrimage.",
+        "bn": "৯ জিলহজ আন্তরিক দুআ ও জিকিরের দিন। এই দিনের নফল রোজার নির্দেশনা হজ পালন করছেন না এমন ব্যক্তিদের জন্য; হাজিরা তাঁদের হজের জন্য প্রযোজ্য নির্দেশনা অনুসরণ করবেন।"
+      },
+      "category": "fasting",
+      "rule": {
+        "type": "hijriAnnual",
+        "hijriMonth": 12,
+        "hijriDays": [
+          9
+        ]
+      },
+      "priority": 90,
+      "fasting": "recommended",
+      "actions": [
+        {
+          "id": "fast",
+          "text": {
+            "en": "Observe the Arafah fast if you are not performing Hajj and it is appropriate for you.",
+            "bn": "হজ পালন না করলে এবং আপনার জন্য উপযুক্ত হলে আরাফার রোজা রাখুন।"
+          },
+          "fasting": true
+        },
+        {
+          "id": "dua",
+          "text": {
+            "en": "Make time for heartfelt duʿa, repentance and remembrance.",
+            "bn": "আন্তরিক দুআ, তওবা ও জিকিরের জন্য সময় রাখুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "kindness",
+          "text": {
+            "en": "Reach out with kindness to family or someone in need.",
+            "bn": "পরিবার বা প্রয়োজনগ্রস্ত কারও প্রতি সদয় হোন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Do not apply non-pilgrim fasting advice to yourself while performing Hajj.",
+          "bn": "হজ পালনের সময় নিজের ক্ষেত্রে অ-হাজিদের রোজার নির্দেশনা প্রয়োগ করবেন না।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "يُكَفِّرُ السَّنَةَ الْمَاضِيَةَ وَالْبَاقِيَةَ",
+          "meaning": {
+            "en": "The Arafah fast brings expiation for the preceding year and the following year.",
+            "bn": "আরাফার রোজা আগের ও পরের বছরের গুনাহের কাফফারা হয়।"
+          },
+          "reference": "Sahih Muslim 1162b",
+          "url": "https://sunnah.com/muslim:1162b",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [],
+      "nonPilgrimOnly": true,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "tasuah",
+      "title": {
+        "en": "Preparing for Ashura · Tasuʿa",
+        "bn": "আশুরার প্রস্তুতি · তাসুআ"
+      },
+      "description": {
+        "en": "The 9th of Muharram is an opportunity to accompany the Ashura fast on the tenth. Plan the two days together when voluntary fasting is appropriate for you.",
+        "bn": "৯ মুহাররম আশুরার দশম দিনের রোজার সঙ্গে মিলিয়ে রোজা রাখার সুযোগ। নফল রোজা আপনার জন্য উপযুক্ত হলে দুই দিন একসঙ্গে পরিকল্পনা করুন।"
+      },
+      "category": "fasting",
+      "rule": {
+        "type": "hijriAnnual",
+        "hijriMonth": 1,
+        "hijriDays": [
+          9
+        ]
+      },
+      "priority": 75,
+      "fasting": "recommended",
+      "actions": [
+        {
+          "id": "fast",
+          "text": {
+            "en": "Consider fasting today together with Ashura tomorrow.",
+            "bn": "আগামীকালের আশুরার রোজার সঙ্গে আজও রোজা রাখার চেষ্টা করুন।"
+          },
+          "fasting": true
+        },
+        {
+          "id": "prepare",
+          "text": {
+            "en": "Plan tomorrow’s suhur and a manageable worship routine.",
+            "bn": "আগামীকালের সাহরি ও ইবাদতের সহজ রুটিন পরিকল্পনা করুন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Treat this as voluntary fasting, without making it compulsory.",
+          "bn": "এটিকে নফল রোজা হিসেবে নিন; বাধ্যতামূলক মনে করবেন না।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "فَإِذَا كَانَ الْعَامُ الْمُقْبِلُ إِنْ شَاءَ اللَّهُ صُمْنَا الْيَوْمَ التَّاسِعَ",
+          "meaning": {
+            "en": "If the coming year arrives, Allah willing, we shall also fast the ninth day.",
+            "bn": "আগামী বছর এলে ইনশাআল্লাহ আমরা নবম দিনেও রোজা রাখব।"
+          },
+          "reference": "Sahih Muslim 1134a",
+          "url": "https://sunnah.com/muslim:1134",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "ashura",
+      "title": {
+        "en": "Ashura",
+        "bn": "আশুরা"
+      },
+      "description": {
+        "en": "The 10th of Muharram is a recognised occasion for voluntary fasting and gratitude to Allah. Give attention to sincere worship and the established guidance for this day.",
+        "bn": "১০ মুহাররম নফল রোজা এবং আল্লাহর প্রতি কৃতজ্ঞতার স্বীকৃত উপলক্ষ। আন্তরিক ইবাদত ও এই দিনের প্রতিষ্ঠিত নির্দেশনায় মনোযোগ দিন।"
+      },
+      "category": "fasting",
+      "rule": {
+        "type": "hijriAnnual",
+        "hijriMonth": 1,
+        "hijriDays": [
+          10
+        ]
+      },
+      "priority": 85,
+      "fasting": "recommended",
+      "actions": [
+        {
+          "id": "fast",
+          "text": {
+            "en": "Observe the Ashura fast if appropriate for you.",
+            "bn": "আপনার জন্য উপযুক্ত হলে আশুরার রোজা রাখুন।"
+          },
+          "fasting": true
+        },
+        {
+          "id": "thanks",
+          "text": {
+            "en": "Reflect on Allah’s blessings and make duʿa with gratitude.",
+            "bn": "আল্লাহর নিয়ামতের কথা ভাবুন এবং কৃতজ্ঞতার সঙ্গে দুআ করুন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Avoid presenting unsourced rituals as required observances of Ashura.",
+          "bn": "সূত্রবিহীন কোনো রীতিকে আশুরার আবশ্যক পালন হিসেবে উপস্থাপন করবেন না।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "يُكَفِّرُ السَّنَةَ الْمَاضِيَةَ",
+          "meaning": {
+            "en": "The Ashura fast brings expiation for the preceding year.",
+            "bn": "আশুরার রোজা আগের বছরের গুনাহের কাফফারা হয়।"
+          },
+          "reference": "Sahih Muslim 1162b",
+          "url": "https://sunnah.com/muslim:1162b",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "eid_fitr",
+      "title": {
+        "en": "Eid al-Fitr",
+        "bn": "ঈদুল ফিতর"
+      },
+      "description": {
+        "en": "Celebrate the completion of Ramadan with gratitude, Eid prayer when applicable, generosity and time with family. This is a day on which fasting is prohibited.",
+        "bn": "কৃতজ্ঞতা, প্রযোজ্য ক্ষেত্রে ঈদের নামাজ, উদারতা এবং পরিবারের সঙ্গে সময় কাটিয়ে রমজান শেষে ঈদ উদযাপন করুন। এ দিনে রোজা রাখা নিষিদ্ধ।"
+      },
+      "category": "celebration",
+      "rule": {
+        "type": "hijriAnnual",
+        "hijriMonth": 10,
+        "hijriDays": [
+          1
+        ]
+      },
+      "priority": 110,
+      "fasting": "prohibited",
+      "actions": [
+        {
+          "id": "eat",
+          "text": {
+            "en": "Eat and celebrate today; leave fasting for an eligible day.",
+            "bn": "আজ খাবার খেয়ে ঈদ উদযাপন করুন; অনুমোদিত দিনের জন্য রোজা রাখুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "prayer",
+          "text": {
+            "en": "Prepare for Eid prayer when it applies to you.",
+            "bn": "আপনার জন্য প্রযোজ্য হলে ঈদের নামাজের প্রস্তুতি নিন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "family",
+          "text": {
+            "en": "Greet family and include someone who may feel alone.",
+            "bn": "পরিবারকে শুভেচ্ছা জানান এবং একাকী কাউকে আনন্দে শামিল করুন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Do not fast today, including a planned Monday/Thursday or other voluntary fast.",
+          "bn": "আজ রোজা রাখবেন না—পরিকল্পিত সোমবার/বৃহস্পতিবার বা অন্য নফল রোজাও নয়।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "نَهَى رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَنْ صِيَامِهِمَا يَوْمُ فِطْرِكُمْ مِنْ صِيَامِكُمْ، وَالْيَوْمُ الْآخَرُ تَأْكُلُونَ فِيهِ مِنْ نُسُكِكُمْ",
+          "meaning": {
+            "en": "The Messenger prohibited fasting on the day Ramadan ends and on the day people eat from their sacrifices.",
+            "bn": "রাসুলুল্লাহ ﷺ রমজানের রোজা শেষে ঈদের দিন এবং কুরবানির গোশত খাওয়ার দিনে রোজা রাখতে নিষেধ করেছেন।"
+          },
+          "reference": "Sahih al-Bukhari 1990",
+          "url": "https://sunnah.com/bukhari:1990",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "eid_adha",
+      "title": {
+        "en": "Eid al-Adha",
+        "bn": "ঈদুল আজহা"
+      },
+      "description": {
+        "en": "A day of gratitude, Eid prayer, sacrifice for those to whom it applies and sharing with others. Fasting is prohibited on this day, even when a weekly fasting day coincides with it.",
+        "bn": "কৃতজ্ঞতা, ঈদের নামাজ, প্রযোজ্য ব্যক্তির কুরবানি এবং অন্যের সঙ্গে ভাগ করে নেওয়ার দিন। সাপ্তাহিক রোজার দিন মিলে গেলেও এ দিনে রোজা নিষিদ্ধ।"
+      },
+      "category": "celebration",
+      "rule": {
+        "type": "hijriAnnual",
+        "hijriMonth": 12,
+        "hijriDays": [
+          10
+        ]
+      },
+      "priority": 110,
+      "fasting": "prohibited",
+      "actions": [
+        {
+          "id": "celebrate",
+          "text": {
+            "en": "Eat, celebrate and remember Allah.",
+            "bn": "খাবার খান, ঈদ উদযাপন করুন এবং আল্লাহকে স্মরণ করুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "prayer",
+          "text": {
+            "en": "Prepare for Eid prayer when it applies to you.",
+            "bn": "আপনার জন্য প্রযোজ্য হলে ঈদের নামাজের প্রস্তুতি নিন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "share",
+          "text": {
+            "en": "Share your celebration and support people in need.",
+            "bn": "ঈদের আনন্দ ভাগ করে নিন এবং প্রয়োজনগ্রস্ত মানুষকে সাহায্য করুন।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Do not fast on the tenth of Dhul-Hijjah.",
+          "bn": "জিলহজের দশম দিনে রোজা রাখবেন না।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "نَهَى رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَنْ صِيَامِهِمَا يَوْمُ فِطْرِكُمْ مِنْ صِيَامِكُمْ، وَالْيَوْمُ الْآخَرُ تَأْكُلُونَ فِيهِ مِنْ نُسُكِكُمْ",
+          "meaning": {
+            "en": "The Messenger prohibited fasting on the day Ramadan ends and on the day people eat from their sacrifices.",
+            "bn": "রাসুলুল্লাহ ﷺ রমজানের রোজা শেষে ঈদের দিন এবং কুরবানির গোশত খাওয়ার দিনে রোজা রাখতে নিষেধ করেছেন।"
+          },
+          "reference": "Sahih al-Bukhari 1990",
+          "url": "https://sunnah.com/bukhari:1990",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    },
+    {
+      "id": "tashriq",
+      "title": {
+        "en": "The days of Tashriq",
+        "bn": "তাশরিকের দিনগুলো"
+      },
+      "description": {
+        "en": "The 11th, 12th and 13th of Dhul-Hijjah are days of eating, drinking and remembrance of Allah. Normal voluntary fasting reminders are suppressed throughout these days.",
+        "bn": "জিলহজের ১১, ১২ ও ১৩ তারিখ খাবার খাওয়া, পান করা এবং আল্লাহকে স্মরণ করার দিন। এই দিনগুলোতে স্বাভাবিক নফল রোজার স্মরণবার্তা দেখানো হয় না।"
+      },
+      "category": "celebration",
+      "rule": {
+        "type": "hijriPeriod",
+        "hijriMonth": 12,
+        "firstDay": 11,
+        "lastDay": 13
+      },
+      "priority": 105,
+      "fasting": "prohibited",
+      "actions": [
+        {
+          "id": "dhikr",
+          "text": {
+            "en": "Remember Allah and make time for takbir.",
+            "bn": "আল্লাহকে স্মরণ করুন এবং তাকবিরের জন্য সময় রাখুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "share",
+          "text": {
+            "en": "Eat, drink and share food with others.",
+            "bn": "খাবার খান, পান করুন এবং অন্যের সঙ্গে খাবার ভাগ করুন।"
+          },
+          "fasting": false
+        },
+        {
+          "id": "kindness",
+          "text": {
+            "en": "Continue your good deeds and acts of kindness.",
+            "bn": "ভালো কাজ ও মানুষের উপকার চালিয়ে যান।"
+          },
+          "fasting": false
+        }
+      ],
+      "avoid": [
+        {
+          "en": "Do not observe an ordinary voluntary fast, including the white-day fast on 13 Dhul-Hijjah.",
+          "bn": "সাধারণ নফল রোজা রাখবেন না—১৩ জিলহজের আইয়ামে বিজের রোজাও নয়।"
+        }
+      ],
+      "hadith": [
+        {
+          "arabic": "أَيَّامُ التَّشْرِيقِ أَيَّامُ أَكْلٍ وَشُرْبٍ",
+          "meaning": {
+            "en": "The days of Tashriq are days for eating and drinking.",
+            "bn": "তাশরিকের দিনগুলো খাবার খাওয়া ও পান করার দিন।"
+          },
+          "reference": "Sahih Muslim 1141a",
+          "url": "https://sunnah.com/muslim:1141a",
+          "grade": "Sahih"
+        },
+        {
+          "arabic": "لَمْ يُرَخَّصْ فِي أَيَّامِ التَّشْرِيقِ أَنْ يُصَمْنَ، إِلَّا لِمَنْ لَمْ يَجِدِ الْهَدْيَ",
+          "meaning": {
+            "en": "Permission to fast during Tashriq was restricted to those unable to obtain the sacrificial offering.",
+            "bn": "তাশরিকের দিনে রোজার অনুমতি শুধু তাঁদের জন্য ছিল যাঁরা হাদির পশু সংগ্রহ করতে পারেননি।"
+          },
+          "reference": "Sahih al-Bukhari 1997–1998",
+          "url": "https://sunnah.com/bukhari:1997",
+          "grade": "Sahih"
+        }
+      ],
+      "notes": [
+        {
+          "en": "There is a specific exception for qualifying Hajj pilgrims unable to obtain the hadi. The app keeps ordinary voluntary fasting prompts disabled; pilgrims should follow the guidance for their own Hajj situation.",
+          "bn": "হাদি সংগ্রহ করতে অক্ষম নির্দিষ্ট হাজিদের জন্য ব্যতিক্রম আছে। অ্যাপ সাধারণ নফল রোজার স্মরণবার্তা বন্ধ রাখে; হাজিরা তাঁদের নিজ হজের পরিস্থিতির নির্দেশনা অনুসরণ করবেন।"
+        }
+      ],
+      "nonPilgrimOnly": false,
+      "actionLabel": {
+        "en": "Add to my checklist",
+        "bn": "আমার চেকলিস্টে যোগ করুন"
+      }
+    }
+  ]
+}

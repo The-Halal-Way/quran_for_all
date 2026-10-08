@@ -11,7 +11,11 @@ class HijriCalendarService {
   static final DateTime maxSupportedGregorianDate = DateTime(2077, 11, 16);
 
   HijriDateInfo fromGregorian(DateTime date, {int adjustmentDays = 0}) {
-    final adjustedDate = _dateOnly(date).add(Duration(days: adjustmentDays));
+    final adjustedDate = DateTime(
+      date.year,
+      date.month,
+      date.day + adjustmentDays,
+    );
     final hijri = HijriCalendar.fromDate(adjustedDate);
 
     return HijriDateInfo(
@@ -23,10 +27,12 @@ class HijriCalendarService {
   }
 
   DateTime toGregorian(int year, int month, int day, {int adjustmentDays = 0}) {
-    final gregorian = HijriCalendar()
-        .hijriToGregorian(year, month, day)
-        .subtract(Duration(days: adjustmentDays));
-    return _dateOnly(gregorian);
+    final gregorian = HijriCalendar().hijriToGregorian(year, month, day);
+    return DateTime(
+      gregorian.year,
+      gregorian.month,
+      gregorian.day - adjustmentDays,
+    );
   }
 
   HijriCalendarMonth monthFor(int year, int month, {int adjustmentDays = 0}) {

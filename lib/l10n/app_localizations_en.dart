@@ -3613,4 +3613,208 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dailyHadithNoResults => 'No readings match these filters.';
+
+  @override
+  String get islamicDaysTitle => 'Islamic Days';
+
+  @override
+  String get islamicDaysSubtitle => 'A little intention. A meaningful day.';
+
+  @override
+  String get islamicDaysToday => 'Today';
+
+  @override
+  String get islamicDaysUpcoming => 'Upcoming';
+
+  @override
+  String get islamicDaysSaved => 'Saved';
+
+  @override
+  String get islamicDaysExplore => 'View all occasions';
+
+  @override
+  String get islamicDaysViewGuidance => 'View guidance';
+
+  @override
+  String get islamicDaysNextOccasion => 'Your next occasion';
+
+  @override
+  String get islamicDaysTodayOccasions => 'Make room for today';
+
+  @override
+  String get islamicDaysTodayEmpty => 'A quiet day for consistent good deeds';
+
+  @override
+  String get islamicDaysTodayEmptyBody => 'There is no special occasion on your adjusted calendar today. Your next opportunity is just ahead.';
+
+  @override
+  String get islamicDaysSavedEmpty => 'Keep meaningful guidance close';
+
+  @override
+  String get islamicDaysSavedEmptyBody => 'Save an occasion to find its guidance here, together with its next date.';
+
+  @override
+  String get islamicDaysUpcomingBody => 'The next occurrence of each occasion, calculated from your local calendar.';
+
+  @override
+  String get islamicDaysCategoryWorship => 'Worship';
+
+  @override
+  String get islamicDaysCategoryFasting => 'Fasting';
+
+  @override
+  String get islamicDaysCategorySeason => 'Blessed seasons';
+
+  @override
+  String get islamicDaysCategoryCelebration => 'Eid & Tashriq';
+
+  @override
+  String get islamicDaysWeekly => 'Every week';
+
+  @override
+  String get islamicDaysMonthly => 'Every Hijri month';
+
+  @override
+  String get islamicDaysAnnual => 'Every Hijri year';
+
+  @override
+  String get islamicDaysPeriod => 'A Hijri season';
+
+  @override
+  String get islamicDaysWhen => 'When it comes around';
+
+  @override
+  String get islamicDaysRecommended => 'Recommended fasting';
+
+  @override
+  String get islamicDaysObligatory => 'Ramadan fasting';
+
+  @override
+  String get islamicDaysProhibited => 'Fasting prohibited';
+
+  @override
+  String get islamicDaysBlockedBody => 'Today’s fasting restriction takes precedence. Conflicting fasting tasks and alerts are removed. See the relevant guidance for specific Hajj exceptions.';
+
+  @override
+  String get islamicDaysRamadanOverride => 'Ramadan guidance applies';
+
+  @override
+  String get islamicDaysRamadanOverrideBody => 'Follow the Ramadan fasting guidance for this date. Separate voluntary fasting tasks are omitted.';
+
+  @override
+  String get islamicDaysPilgrimTitle => 'Guidance for your Hajj';
+
+  @override
+  String get islamicDaysPilgrimBody => 'Your Hajj preference is enabled. The non-pilgrim Arafah fasting task and preparation alert are omitted.';
+
+  @override
+  String get islamicDaysActions => 'Your small steps';
+
+  @override
+  String get islamicDaysActionsSubtitle => 'Suggested actions · saved for this occurrence';
+
+  @override
+  String get islamicDaysAvoid => 'Things to avoid';
+
+  @override
+  String get islamicDaysHadith => 'From the hadith';
+
+  @override
+  String get islamicDaysHadithExcerpt => 'Hadith excerpt · meaning';
+
+  @override
+  String get islamicDaysNotes => 'A little more guidance';
+
+  @override
+  String get islamicDaysAddChecklist => 'Add to my daily checklist';
+
+  @override
+  String get islamicDaysChecklistAdded => 'Added for this date';
+
+  @override
+  String get islamicDaysAlreadyTracked => 'In your daily checklist';
+
+  @override
+  String get islamicDaysSave => 'Save guidance';
+
+  @override
+  String get islamicDaysUnsave => 'Remove saved guidance';
+
+  @override
+  String get islamicDaysCalendarTitle => 'Your local Hijri calendar';
+
+  @override
+  String get islamicDaysCalendarBody => 'Dates follow the app’s calculated Hijri calendar and your date adjustment. For Ramadan and Eid, follow locally announced dates. Evening preparation alerts refer to the next daytime fast.';
+
+  @override
+  String get islamicDaysCalendarAction => 'Adjust calendar';
+
+  @override
+  String get islamicDaysPreferences => 'Reminder preferences';
+
+  @override
+  String get islamicDaysNotify => 'Occasion reminders';
+
+  @override
+  String get islamicDaysNotifyBody => 'An optional alert for significant dates on this device.';
+
+  @override
+  String get islamicDaysReminderTime => 'Morning / daytime alert';
+
+  @override
+  String get islamicDaysPreparation => 'Prepare the evening before';
+
+  @override
+  String get islamicDaysPreparationBody => 'A preparation alert only for eligible upcoming fasts.';
+
+  @override
+  String get islamicDaysPreparationTime => 'Evening preparation time';
+
+  @override
+  String get islamicDaysHajj => 'I am performing Hajj';
+
+  @override
+  String get islamicDaysHajjBody => 'Use pilgrim guidance for Arafah. Ordinary Tashriq fasting reminders stay suppressed.';
+
+  @override
+  String get islamicDaysNotificationCategories => 'Choose your occasions';
+
+  @override
+  String get islamicDaysNotificationPolicy => 'Fasting restrictions always override selected categories. Overlapping occasions share an alert. Upcoming alerts are refreshed when you return to the app.';
+
+  @override
+  String get islamicDaysNotificationsUnavailable => 'Notifications are unavailable on this platform.';
+
+  @override
+  String get islamicDaysNotificationsDenied => 'Device permission is off. Allow notifications in your device settings to receive alerts.';
+
+  @override
+  String get islamicDaysNotificationError => 'Alerts could not be scheduled. Check your device’s timezone and notification settings, then try again.';
+
+  @override
+  String get islamicDaysRetry => 'Try again';
+
+  @override
+  String get islamicDaysLoadError => 'The Islamic Days guides could not be opened.';
+
+  @override
+  String get islamicDaysSaveError => 'Couldn’t save your change. Please try again.';
+
+  @override
+  String get islamicDaysSourceError => 'This reference could not be opened.';
+
+  @override
+  String get islamicDaysSource => 'Read the reference';
+
+  @override
+  String get islamicDaysMoreToday => 'More occasions today';
+
+  @override
+  String get islamicDaysAllGuides => 'Browse the guides';
+
+  @override
+  String get islamicDaysSearch => 'Search occasions or guidance';
+
+  @override
+  String get islamicDaysNoResults => 'No occasions match your search.';
 }

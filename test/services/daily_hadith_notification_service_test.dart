@@ -49,10 +49,10 @@ void main() {
 
     expect(calls.map((call) => call.method), [
       'initialize',
-      'createNotificationChannel',
       'getNotificationAppLaunchDetails',
+      'createNotificationChannel',
     ]);
-    final arguments = calls[1].arguments as Map<dynamic, dynamic>;
+    final arguments = calls[2].arguments as Map<dynamic, dynamic>;
     expect(arguments['id'], 'daily_reminders_release_v2');
     expect(arguments['name'], 'Daily Hadith');
     expect(
