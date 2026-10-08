@@ -6827,305 +6827,305 @@ abstract class AppLocalizations {
   /// **'Couldn’t save your changes. Please try again.'**
   String get dailyTrackerSaveChangesError;
 
-  /// No description provided for @dailyRemindersTitle.
+  /// No description provided for @dailyHadithTitle.
   ///
   /// In en, this message translates to:
-  /// **'Daily Reminders'**
-  String get dailyRemindersTitle;
+  /// **'Daily Hadith'**
+  String get dailyHadithTitle;
 
-  /// No description provided for @dailyRemindersSubtitle.
+  /// No description provided for @dailyHadithSubtitle.
   ///
   /// In en, this message translates to:
   /// **'Small pauses. Lasting light.'**
-  String get dailyRemindersSubtitle;
+  String get dailyHadithSubtitle;
 
-  /// No description provided for @dailyRemindersToday.
+  /// No description provided for @dailyHadithToday.
   ///
   /// In en, this message translates to:
-  /// **'Today\'s reminder'**
-  String get dailyRemindersToday;
+  /// **'Today\'s reading'**
+  String get dailyHadithToday;
 
-  /// No description provided for @dailyRemindersHistory.
+  /// No description provided for @dailyHadithHistory.
   ///
   /// In en, this message translates to:
   /// **'History'**
-  String get dailyRemindersHistory;
+  String get dailyHadithHistory;
 
-  /// No description provided for @dailyRemindersSearchHint.
+  /// No description provided for @dailyHadithSearchHint.
   ///
   /// In en, this message translates to:
   /// **'Search reflections, actions or sources'**
-  String get dailyRemindersSearchHint;
+  String get dailyHadithSearchHint;
 
-  /// No description provided for @dailyRemindersAll.
+  /// No description provided for @dailyHadithAll.
   ///
   /// In en, this message translates to:
   /// **'All'**
-  String get dailyRemindersAll;
+  String get dailyHadithAll;
 
-  /// No description provided for @dailyRemindersUnread.
+  /// No description provided for @dailyHadithUnread.
   ///
   /// In en, this message translates to:
   /// **'Unread'**
-  String get dailyRemindersUnread;
+  String get dailyHadithUnread;
 
-  /// No description provided for @dailyRemindersSaved.
+  /// No description provided for @dailyHadithSaved.
   ///
   /// In en, this message translates to:
   /// **'Saved'**
-  String get dailyRemindersSaved;
+  String get dailyHadithSaved;
 
-  /// No description provided for @dailyRemindersSettings.
+  /// No description provided for @dailyHadithSettings.
   ///
   /// In en, this message translates to:
-  /// **'Reminder preferences'**
-  String get dailyRemindersSettings;
+  /// **'Daily Hadith preferences'**
+  String get dailyHadithSettings;
 
-  /// No description provided for @dailyRemindersRetry.
+  /// No description provided for @dailyHadithRetry.
   ///
   /// In en, this message translates to:
   /// **'Try again'**
-  String get dailyRemindersRetry;
+  String get dailyHadithRetry;
 
-  /// No description provided for @dailyRemindersLoadError.
+  /// No description provided for @dailyHadithLoadError.
   ///
   /// In en, this message translates to:
-  /// **'The reminder pack could not be opened.'**
-  String get dailyRemindersLoadError;
+  /// **'The Daily Hadith collection could not be opened.'**
+  String get dailyHadithLoadError;
 
-  /// No description provided for @dailyRemindersEmptyTitle.
+  /// No description provided for @dailyHadithEmptyTitle.
   ///
   /// In en, this message translates to:
-  /// **'No released reminders yet'**
-  String get dailyRemindersEmptyTitle;
+  /// **'No published readings yet'**
+  String get dailyHadithEmptyTitle;
 
-  /// No description provided for @dailyRemindersEmptyMessage.
+  /// No description provided for @dailyHadithEmptyMessage.
   ///
   /// In en, this message translates to:
-  /// **'Published reminders will appear here on their release dates and stay in History.'**
-  String get dailyRemindersEmptyMessage;
+  /// **'Published readings will appear here on their release dates and stay in History.'**
+  String get dailyHadithEmptyMessage;
 
-  /// No description provided for @dailyRemindersNoNewTitle.
+  /// No description provided for @dailyHadithNoNewTitle.
   ///
   /// In en, this message translates to:
-  /// **'No new reminder today'**
-  String get dailyRemindersNoNewTitle;
+  /// **'No new reading today'**
+  String get dailyHadithNoNewTitle;
 
-  /// No description provided for @dailyRemindersNoNewMessage.
+  /// No description provided for @dailyHadithNoNewMessage.
   ///
   /// In en, this message translates to:
-  /// **'Your released reminders remain safely available in History.'**
-  String get dailyRemindersNoNewMessage;
+  /// **'Your published readings remain safely available in History.'**
+  String get dailyHadithNoNewMessage;
 
-  /// No description provided for @dailyRemindersRead.
+  /// No description provided for @dailyHadithRead.
   ///
   /// In en, this message translates to:
   /// **'Read'**
-  String get dailyRemindersRead;
+  String get dailyHadithRead;
 
-  /// No description provided for @dailyRemindersUnreadBadge.
+  /// No description provided for @dailyHadithUnreadBadge.
   ///
   /// In en, this message translates to:
   /// **'New'**
-  String get dailyRemindersUnreadBadge;
+  String get dailyHadithUnreadBadge;
 
-  /// No description provided for @dailyRemindersOriginalArabic.
+  /// No description provided for @dailyHadithOriginalArabic.
   ///
   /// In en, this message translates to:
   /// **'Original Arabic'**
-  String get dailyRemindersOriginalArabic;
+  String get dailyHadithOriginalArabic;
 
-  /// No description provided for @dailyRemindersExcerpt.
+  /// No description provided for @dailyHadithExcerpt.
   ///
   /// In en, this message translates to:
   /// **'Excerpt'**
-  String get dailyRemindersExcerpt;
+  String get dailyHadithExcerpt;
 
-  /// No description provided for @dailyRemindersOriginalReflection.
+  /// No description provided for @dailyHadithOriginalReflection.
   ///
   /// In en, this message translates to:
   /// **'Original reflection'**
-  String get dailyRemindersOriginalReflection;
+  String get dailyHadithOriginalReflection;
 
-  /// No description provided for @dailyRemindersSuggestedAction.
+  /// No description provided for @dailyHadithSuggestedAction.
   ///
   /// In en, this message translates to:
   /// **'Suggested action'**
-  String get dailyRemindersSuggestedAction;
+  String get dailyHadithSuggestedAction;
 
-  /// No description provided for @dailyRemindersSources.
+  /// No description provided for @dailyHadithSources.
   ///
   /// In en, this message translates to:
   /// **'Sources'**
-  String get dailyRemindersSources;
+  String get dailyHadithSources;
 
-  /// No description provided for @dailyRemindersOpenSource.
+  /// No description provided for @dailyHadithOpenSource.
   ///
   /// In en, this message translates to:
   /// **'Open source'**
-  String get dailyRemindersOpenSource;
+  String get dailyHadithOpenSource;
 
-  /// No description provided for @dailyRemindersFallbackLanguage.
+  /// No description provided for @dailyHadithFallbackLanguage.
   ///
   /// In en, this message translates to:
   /// **'Showing {language} content'**
-  String dailyRemindersFallbackLanguage(String language);
+  String dailyHadithFallbackLanguage(String language);
 
-  /// No description provided for @dailyRemindersSave.
+  /// No description provided for @dailyHadithSave.
   ///
   /// In en, this message translates to:
   /// **'Save'**
-  String get dailyRemindersSave;
+  String get dailyHadithSave;
 
-  /// No description provided for @dailyRemindersUnsave.
+  /// No description provided for @dailyHadithUnsave.
   ///
   /// In en, this message translates to:
   /// **'Remove saved'**
-  String get dailyRemindersUnsave;
+  String get dailyHadithUnsave;
 
-  /// No description provided for @dailyRemindersShare.
+  /// No description provided for @dailyHadithShare.
   ///
   /// In en, this message translates to:
   /// **'Share'**
-  String get dailyRemindersShare;
+  String get dailyHadithShare;
 
-  /// No description provided for @dailyRemindersAddChecklist.
+  /// No description provided for @dailyHadithAddChecklist.
   ///
   /// In en, this message translates to:
   /// **'Add to checklist'**
-  String get dailyRemindersAddChecklist;
+  String get dailyHadithAddChecklist;
 
-  /// No description provided for @dailyRemindersChecklistAdded.
+  /// No description provided for @dailyHadithChecklistAdded.
   ///
   /// In en, this message translates to:
   /// **'Added to your checklist'**
-  String get dailyRemindersChecklistAdded;
+  String get dailyHadithChecklistAdded;
 
-  /// No description provided for @dailyRemindersSourceError.
+  /// No description provided for @dailyHadithSourceError.
   ///
   /// In en, this message translates to:
   /// **'This source could not be opened offline or online.'**
-  String get dailyRemindersSourceError;
+  String get dailyHadithSourceError;
 
-  /// No description provided for @dailyRemindersCategoryAll.
+  /// No description provided for @dailyHadithCategoryAll.
   ///
   /// In en, this message translates to:
   /// **'All themes'**
-  String get dailyRemindersCategoryAll;
+  String get dailyHadithCategoryAll;
 
-  /// No description provided for @dailyRemindersCategoryQuran.
+  /// No description provided for @dailyHadithCategoryQuran.
   ///
   /// In en, this message translates to:
   /// **'Quran reflection'**
-  String get dailyRemindersCategoryQuran;
+  String get dailyHadithCategoryQuran;
 
-  /// No description provided for @dailyRemindersCategoryHadith.
+  /// No description provided for @dailyHadithCategoryHadith.
   ///
   /// In en, this message translates to:
   /// **'Hadith reflection'**
-  String get dailyRemindersCategoryHadith;
+  String get dailyHadithCategoryHadith;
 
-  /// No description provided for @dailyRemindersCategorySunnah.
+  /// No description provided for @dailyHadithCategorySunnah.
   ///
   /// In en, this message translates to:
   /// **'Sunnah'**
-  String get dailyRemindersCategorySunnah;
+  String get dailyHadithCategorySunnah;
 
-  /// No description provided for @dailyRemindersCategoryAkhirah.
+  /// No description provided for @dailyHadithCategoryAkhirah.
   ///
   /// In en, this message translates to:
   /// **'Hereafter'**
-  String get dailyRemindersCategoryAkhirah;
+  String get dailyHadithCategoryAkhirah;
 
-  /// No description provided for @dailyRemindersPreferencesTitle.
+  /// No description provided for @dailyHadithPreferencesTitle.
   ///
   /// In en, this message translates to:
-  /// **'Reminder preferences'**
-  String get dailyRemindersPreferencesTitle;
+  /// **'Daily Hadith preferences'**
+  String get dailyHadithPreferencesTitle;
 
-  /// No description provided for @dailyRemindersInAppDeliveryTitle.
+  /// No description provided for @dailyHadithInAppDeliveryTitle.
   ///
   /// In en, this message translates to:
-  /// **'Daily reminders are always available'**
-  String get dailyRemindersInAppDeliveryTitle;
+  /// **'Daily Hadith is always available'**
+  String get dailyHadithInAppDeliveryTitle;
 
-  /// No description provided for @dailyRemindersInAppDeliveryMessage.
+  /// No description provided for @dailyHadithInAppDeliveryMessage.
   ///
   /// In en, this message translates to:
-  /// **'Everyone receives the daily reminder inside the app. Turn on Send notification only if you also want an alert on this device.'**
-  String get dailyRemindersInAppDeliveryMessage;
+  /// **'Everyone receives the daily reading inside the app. Turn on Send notification if you also want an alert on this device.'**
+  String get dailyHadithInAppDeliveryMessage;
 
-  /// No description provided for @dailyRemindersNotifyToggle.
+  /// No description provided for @dailyHadithNotifyToggle.
   ///
   /// In en, this message translates to:
   /// **'Send notification'**
-  String get dailyRemindersNotifyToggle;
+  String get dailyHadithNotifyToggle;
 
-  /// No description provided for @dailyRemindersNotifySubtitle.
+  /// No description provided for @dailyHadithNotifySubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Alert me when today\'s reminder is ready'**
-  String get dailyRemindersNotifySubtitle;
+  /// **'Alert me when today\'s reading is ready'**
+  String get dailyHadithNotifySubtitle;
 
-  /// No description provided for @dailyRemindersPreferredTime.
+  /// No description provided for @dailyHadithPreferredTime.
   ///
   /// In en, this message translates to:
   /// **'Preferred time'**
-  String get dailyRemindersPreferredTime;
+  String get dailyHadithPreferredTime;
 
-  /// No description provided for @dailyRemindersCategories.
+  /// No description provided for @dailyHadithCategories.
   ///
   /// In en, this message translates to:
   /// **'Notification themes'**
-  String get dailyRemindersCategories;
+  String get dailyHadithCategories;
 
-  /// No description provided for @dailyRemindersPermission.
+  /// No description provided for @dailyHadithPermission.
   ///
   /// In en, this message translates to:
   /// **'Permission status'**
-  String get dailyRemindersPermission;
+  String get dailyHadithPermission;
 
-  /// No description provided for @dailyRemindersPermissionGranted.
+  /// No description provided for @dailyHadithPermissionGranted.
   ///
   /// In en, this message translates to:
   /// **'Allowed'**
-  String get dailyRemindersPermissionGranted;
+  String get dailyHadithPermissionGranted;
 
-  /// No description provided for @dailyRemindersPermissionDenied.
+  /// No description provided for @dailyHadithPermissionDenied.
   ///
   /// In en, this message translates to:
   /// **'Not allowed'**
-  String get dailyRemindersPermissionDenied;
+  String get dailyHadithPermissionDenied;
 
-  /// No description provided for @dailyRemindersPermissionUnknown.
+  /// No description provided for @dailyHadithPermissionUnknown.
   ///
   /// In en, this message translates to:
   /// **'Not checked'**
-  String get dailyRemindersPermissionUnknown;
+  String get dailyHadithPermissionUnknown;
 
-  /// No description provided for @dailyRemindersPermissionUnsupported.
+  /// No description provided for @dailyHadithPermissionUnsupported.
   ///
   /// In en, this message translates to:
   /// **'Unavailable on this platform'**
-  String get dailyRemindersPermissionUnsupported;
+  String get dailyHadithPermissionUnsupported;
 
-  /// No description provided for @dailyRemindersNotificationPolicy.
+  /// No description provided for @dailyHadithNotificationPolicy.
   ///
   /// In en, this message translates to:
   /// **'Notifications are optional and are sent only when Send notification and device permission are both enabled. Missed alerts are not sent later.'**
-  String get dailyRemindersNotificationPolicy;
+  String get dailyHadithNotificationPolicy;
 
-  /// No description provided for @dailyRemindersReviewNote.
+  /// No description provided for @dailyHadithReviewNote.
   ///
   /// In en, this message translates to:
   /// **'These are authored reflections and suggested actions—not direct Quran translations or hadith quotations.'**
-  String get dailyRemindersReviewNote;
+  String get dailyHadithReviewNote;
 
-  /// No description provided for @dailyRemindersNoResults.
+  /// No description provided for @dailyHadithNoResults.
   ///
   /// In en, this message translates to:
-  /// **'No reminders match these filters.'**
-  String get dailyRemindersNoResults;
+  /// **'No readings match these filters.'**
+  String get dailyHadithNoResults;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

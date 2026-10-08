@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
+import 'package:quran_for_all/presentation/views/daily_reminders/daily_hadith_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/daily_tracker/daily_tracker_full_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
-import 'package:quran_for_all/presentation/views/daily_reminders/daily_reminders_view.dart';
 import 'package:quran_for_all/presentation/views/prayer/eid_prayer/eid_prayer_view.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_icon_grid_section.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_daily_reminder_button.dart';
@@ -21,17 +21,17 @@ void main() {
   setUp(() => state = DashboardTestState());
   tearDown(() => state.dispose());
 
-  testWidgets('daily reminders open from the dashboard header', (tester) async {
+  testWidgets('Daily Hadith opens from the dashboard header', (tester) async {
     await tester.pumpWidget(
       DashboardTestApp(state: state, home: const DashboardView()),
     );
     await tester.pumpAndSettle();
 
-    expect(find.byType(DashboardDailyReminderButton), findsOneWidget);
-    await tester.tap(find.byType(DashboardDailyReminderButton));
+    expect(find.byType(DashboardDailyHadithButton), findsOneWidget);
+    await tester.tap(find.byType(DashboardDailyHadithButton));
     await tester.pumpAndSettle();
 
-    expect(find.byType(DailyRemindersView), findsOneWidget);
+    expect(find.byType(DailyHadithView), findsOneWidget);
     expect(tester.takeException(), isNull);
 
     await tester.pumpWidget(const SizedBox.shrink());

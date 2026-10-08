@@ -1,17 +1,17 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:quran_for_all/data/datasources/local/daily_reminder_pack_parser.dart';
+import 'package:quran_for_all/data/datasources/local/daily_hadith_pack_parser.dart';
 import 'package:quran_for_all/data/models/daily_reminders/daily_reminder_pack.dart';
-import 'package:quran_for_all/domain/repositories/daily_reminder_repository.dart';
-import 'package:quran_for_all/services/daily_reminder_notification_service.dart';
+import 'package:quran_for_all/domain/repositories/daily_hadith_repository.dart';
+import 'package:quran_for_all/services/daily_hadith_notification_service.dart';
 
-Future<String> loadDailyReminderJson() =>
-    rootBundle.loadString('assets/json/daily_reminders.json');
+Future<String> loadDailyHadithJson() =>
+    rootBundle.loadString('assets/json/daily_hadith.json');
 
-Future<DailyReminderPack> loadDraftPack() async {
+Future<DailyHadithPack> loadDraftPack() async {
   final decoded =
-      jsonDecode(await loadDailyReminderJson()) as Map<String, dynamic>;
+      jsonDecode(await loadDailyHadithJson()) as Map<String, dynamic>;
   (decoded['metadata'] as Map<String, dynamic>)['reviewStatus'] =
       'needsEditorialReview';
   for (final item in decoded['items'] as List<dynamic>) {
@@ -22,38 +22,38 @@ Future<DailyReminderPack> loadDraftPack() async {
           'needsEditorialReview';
     }
   }
-  return parseDailyReminderPack(jsonEncode(decoded));
+  return parseDailyHadithPack(jsonEncode(decoded));
 }
 
-Future<DailyReminderPack> loadPublishedPack() async =>
-    parseDailyReminderPack(await loadDailyReminderJson());
+Future<DailyHadithPack> loadPublishedPack() async =>
+    parseDailyHadithPack(await loadDailyHadithJson());
 
-class MemoryDailyReminderRepository implements DailyReminderRepository {
-  MemoryDailyReminderRepository(this.pack);
+class MemoryDailyHadithRepository implements DailyHadithRepository {
+  MemoryDailyHadithRepository(this.pack);
 
-  final DailyReminderPack pack;
-  DailyReminderUserState state = const DailyReminderUserState();
-  DailyReminderPreferences preferences = const DailyReminderPreferences();
+  final DailyHadithPack pack;
+  DailyHadithUserState state = const DailyHadithUserState();
+  DailyHadithPreferences preferences = const DailyHadithPreferences();
   Set<int> scheduledIds = {};
   int packLoads = 0;
 
   @override
-  Future<DailyReminderPack> loadPack({bool forceRefresh = false}) async {
+  Future<DailyHadithPack> loadPack({bool forceRefresh = false}) async {
     packLoads++;
     return pack;
   }
 
   @override
-  Future<DailyReminderPreferences> loadPreferences() async => preferences;
+  Future<DailyHadithPreferences> loadPreferences() async => preferences;
 
   @override
   Future<Set<int>> loadScheduledOccurrenceIds() async => {...scheduledIds};
 
   @override
-  Future<DailyReminderUserState> loadUserState() async => state;
+  Future<DailyHadithUserState> loadUserState() async => state;
 
   @override
-  Future<void> savePreferences(DailyReminderPreferences preferences) async {
+  Future<void> savePreferences(DailyHadithPreferences preferences) async {
     this.preferences = preferences;
   }
 
@@ -63,21 +63,21 @@ class MemoryDailyReminderRepository implements DailyReminderRepository {
   }
 
   @override
-  Future<void> saveUserState(DailyReminderUserState state) async {
+  Future<void> saveUserState(DailyHadithUserState state) async {
     this.state = state;
   }
 }
 
-class FakeDailyReminderNotificationGateway
-    implements DailyReminderNotificationGateway {
+class FakeDailyHadithNotificationGateway
+    implements DailyHadithNotificationGateway {
   ValueChanged<String>? openHandler;
-  DailyReminderPermissionStatus status = DailyReminderPermissionStatus.granted;
+  DailyHadithPermissionStatus status = DailyHadithPermissionStatus.granted;
   int rescheduleCalls = 0;
   int cancelCalls = 0;
 
   @override
   Future<void> cancelContent(
-    DailyReminderPack pack,
+    DailyHadithPack pack,
     String contentId,
     Set<int> scheduledIds,
     ValueChanged<Set<int>> persistScheduledIds,
@@ -89,12 +89,12 @@ class FakeDailyReminderNotificationGateway
   Future<void> initialize() async {}
 
   @override
-  Future<DailyReminderPermissionStatus> permissionStatus() async => status;
+  Future<DailyHadithPermissionStatus> permissionStatus() async => status;
 
   @override
   Future<void> reschedule({
-    required DailyReminderPack pack,
-    required DailyReminderPreferences preferences,
+    required DailyHadithPack pack,
+    required DailyHadithPreferences preferences,
     required String locale,
     required Set<int> previouslyScheduledIds,
     required ValueChanged<Set<int>> persistScheduledIds,
@@ -104,7 +104,7 @@ class FakeDailyReminderNotificationGateway
   }
 
   @override
-  Future<DailyReminderPermissionStatus> requestPermission() async => status;
+  Future<DailyHadithPermissionStatus> requestPermission() async => status;
 
   @override
   void setOpenHandler(ValueChanged<String> handler) {

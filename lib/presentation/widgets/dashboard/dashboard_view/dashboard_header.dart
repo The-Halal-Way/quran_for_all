@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_hadith_viewmodel.dart';
+import 'package:quran_for_all/presentation/views/daily_reminders/daily_hadith_view.dart';
 
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
@@ -8,9 +10,7 @@ import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../viewmodels/dashboard/dashboard_viewmodel.dart';
-import '../../../viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
 import '../../../viewmodels/settings_viewmodel.dart';
-import '../../../views/daily_reminders/daily_reminders_view.dart';
 import 'dashboard_daily_reminder_button.dart';
 import 'dashboard_date_label.dart';
 import 'dashboard_navigation.dart';
@@ -35,7 +35,7 @@ class DashboardHeader extends StatelessWidget {
         : AppThemeColors.light.brand;
     final secondAccent = dark ? MyColors.tertiary : AppThemeColors.light.cyan;
     final unreadReminders = context.select(
-      (DailyRemindersViewModel vm) => vm.unreadCount,
+      (DailyHadithViewModel vm) => vm.unreadCount,
     );
     return Column(
       children: [
@@ -65,11 +65,11 @@ class DashboardHeader extends StatelessWidget {
               ),
               Align(
                 alignment: AlignmentDirectional.centerEnd,
-                child: DashboardDailyReminderButton(
-                  label: context.l10n.dailyRemindersTitle,
+                child: DashboardDailyHadithButton(
+                  label: context.l10n.dailyHadithTitle,
                   unreadCount: unreadReminders,
                   onTap: () =>
-                      pushDashboardPage(context, const DailyRemindersView()),
+                      pushDashboardPage(context, const DailyHadithView()),
                 ),
               ),
             ],

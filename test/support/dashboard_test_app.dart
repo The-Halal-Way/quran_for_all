@@ -15,9 +15,9 @@ import 'package:quran_for_all/domain/usecases/reorder_custom_tasks_usecase.dart'
 import 'package:quran_for_all/domain/usecases/save_tracker_section_order_usecase.dart';
 import 'package:quran_for_all/domain/usecases/toggle_task_usecase.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
+import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_hadith_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
-import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
@@ -37,15 +37,15 @@ class DashboardTestState {
       saveSectionOrderUseCase: SaveTrackerSectionOrderUseCase(repository),
       moveCustomTaskUseCase: MoveCustomTaskUseCase(repository),
     );
-    reminders = DailyRemindersViewModel(
-      repository: MemoryDailyReminderRepository(_emptyReminderPack),
-      notificationGateway: FakeDailyReminderNotificationGateway(),
+    reminders = DailyHadithViewModel(
+      repository: MemoryDailyHadithRepository(_emptyReminderPack),
+      notificationGateway: FakeDailyHadithNotificationGateway(),
     );
   }
 
   final repository = MemoryTrackerRepository();
   late final DailyTrackerViewModel tracker;
-  late final DailyRemindersViewModel reminders;
+  late final DailyHadithViewModel reminders;
   final prayer = TestPrayerViewModel();
   final read = _TestReadViewModel();
   final learn = _TestLearnViewModel();
@@ -92,7 +92,7 @@ class DashboardTestApp extends StatelessWidget {
       ChangeNotifierProvider<ReadQuranViewModel>.value(value: state.read),
       ChangeNotifierProvider<LearnQuranViewModel>.value(value: state.learn),
       ChangeNotifierProvider<SettingsViewModel>.value(value: state.settings),
-      ChangeNotifierProvider<DailyRemindersViewModel>.value(
+      ChangeNotifierProvider<DailyHadithViewModel>.value(
         value: state.reminders,
       ),
     ],
@@ -112,7 +112,7 @@ class DashboardTestApp extends StatelessWidget {
   );
 }
 
-const _emptyReminderPack = DailyReminderPack(
+const _emptyReminderPack = DailyHadithPack(
   packId: 'dashboard-test',
   revision: 1,
   defaultLocale: 'en',
@@ -123,7 +123,7 @@ const _emptyReminderPack = DailyReminderPack(
   assets: {},
   items: [],
   schedule: [],
-  retentionPolicy: DailyReminderRetentionPolicy(
+  retentionPolicy: DailyHadithRetentionPolicy(
     keepReleasedContent: true,
     keepReadContent: true,
     keepUnreadContent: true,

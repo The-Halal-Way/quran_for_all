@@ -56,8 +56,8 @@ class LocalCalendarDate implements Comparable<LocalCalendarDate> {
 }
 
 @immutable
-class DailyReminderPack {
-  const DailyReminderPack({
+class DailyHadithPack {
+  const DailyHadithPack({
     required this.packId,
     required this.revision,
     required this.defaultLocale,
@@ -77,22 +77,22 @@ class DailyReminderPack {
   final String defaultLocale;
   final List<String> supportedLocales;
   final String reviewStatus;
-  final Map<String, DailyReminderSource> sources;
-  final Map<String, DailyReminderPassage> passages;
-  final Map<String, DailyReminderAsset> assets;
-  final List<DailyReminderItem> items;
-  final List<DailyReminderSchedule> schedule;
-  final DailyReminderRetentionPolicy retentionPolicy;
+  final Map<String, DailyHadithSource> sources;
+  final Map<String, DailyHadithPassage> passages;
+  final Map<String, DailyHadithAsset> assets;
+  final List<DailyHadithItem> items;
+  final List<DailyHadithSchedule> schedule;
+  final DailyHadithRetentionPolicy retentionPolicy;
   final Set<String> unavailableItemIds;
 
-  DailyReminderItem? itemById(String id) {
+  DailyHadithItem? itemById(String id) {
     for (final item in items) {
       if (item.id == id) return item;
     }
     return null;
   }
 
-  DailyReminderSchedule? scheduleForContent(String id) {
+  DailyHadithSchedule? scheduleForContent(String id) {
     for (final entry in schedule) {
       if (entry.contentId == id) return entry;
     }
@@ -101,8 +101,8 @@ class DailyReminderPack {
 }
 
 @immutable
-class DailyReminderSource {
-  const DailyReminderSource({
+class DailyHadithSource {
+  const DailyHadithSource({
     required this.id,
     required this.type,
     required this.displayName,
@@ -137,8 +137,8 @@ class DailyReminderSource {
 }
 
 @immutable
-class DailyReminderPassage {
-  const DailyReminderPassage({
+class DailyHadithPassage {
+  const DailyHadithPassage({
     required this.id,
     required this.language,
     required this.direction,
@@ -156,8 +156,8 @@ class DailyReminderPassage {
 }
 
 @immutable
-class DailyReminderAsset {
-  const DailyReminderAsset({
+class DailyHadithAsset {
+  const DailyHadithAsset({
     required this.id,
     required this.mimeType,
     this.bundledAssetPath,
@@ -171,8 +171,8 @@ class DailyReminderAsset {
 }
 
 @immutable
-class DailyReminderItem {
-  const DailyReminderItem({
+class DailyHadithItem {
+  const DailyHadithItem({
     required this.id,
     required this.revision,
     required this.sequence,
@@ -195,14 +195,14 @@ class DailyReminderItem {
   final String defaultLocale;
   final List<String> sourceIds;
   final List<String> originalPassageIds;
-  final Map<String, DailyReminderEdition> editions;
+  final Map<String, DailyHadithEdition> editions;
   final String status;
   final DateTime updatedAt;
   final String editorialNote;
 
   bool get isPublished => status == 'published';
 
-  ResolvedDailyReminderEdition? resolveEdition(
+  ResolvedDailyHadithEdition? resolveEdition(
     String locale, {
     bool approvedOnly = false,
   }) {
@@ -215,7 +215,7 @@ class DailyReminderItem {
           (!approvedOnly ||
               (edition.reviewStatus == 'approved' &&
                   edition.basedOnRevision == revision))) {
-        return ResolvedDailyReminderEdition(
+        return ResolvedDailyHadithEdition(
           edition: edition,
           requestedLocale: normalized,
           isFallback: key != normalized && !(normalized == base && key == base),
@@ -231,21 +231,21 @@ class DailyReminderItem {
 }
 
 @immutable
-class ResolvedDailyReminderEdition {
-  const ResolvedDailyReminderEdition({
+class ResolvedDailyHadithEdition {
+  const ResolvedDailyHadithEdition({
     required this.edition,
     required this.requestedLocale,
     required this.isFallback,
   });
 
-  final DailyReminderEdition edition;
+  final DailyHadithEdition edition;
   final String requestedLocale;
   final bool isFallback;
 }
 
 @immutable
-class DailyReminderEdition {
-  const DailyReminderEdition({
+class DailyHadithEdition {
+  const DailyHadithEdition({
     required this.locale,
     required this.title,
     required this.summary,
@@ -258,15 +258,15 @@ class DailyReminderEdition {
   final String locale;
   final String title;
   final String summary;
-  final DailyReminderNotificationCopy notification;
-  final List<DailyReminderBlock> blocks;
+  final DailyHadithNotificationCopy notification;
+  final List<DailyHadithBlock> blocks;
   final String reviewStatus;
   final int basedOnRevision;
 }
 
 @immutable
-class DailyReminderNotificationCopy {
-  const DailyReminderNotificationCopy({
+class DailyHadithNotificationCopy {
+  const DailyHadithNotificationCopy({
     required this.title,
     required this.body,
     this.imageAssetId,
@@ -277,7 +277,7 @@ class DailyReminderNotificationCopy {
   final String? imageAssetId;
 }
 
-enum DailyReminderBlockType {
+enum DailyHadithBlockType {
   paragraph,
   heading,
   originalPassage,
@@ -292,8 +292,8 @@ enum DailyReminderBlockType {
 }
 
 @immutable
-class DailyReminderBlock {
-  const DailyReminderBlock({
+class DailyHadithBlock {
+  const DailyHadithBlock({
     required this.id,
     required this.type,
     required this.required,
@@ -320,7 +320,7 @@ class DailyReminderBlock {
   });
 
   final String id;
-  final DailyReminderBlockType type;
+  final DailyHadithBlockType type;
   final bool required;
   final String? role;
   final String? language;
@@ -345,8 +345,8 @@ class DailyReminderBlock {
 }
 
 @immutable
-class DailyReminderSchedule {
-  const DailyReminderSchedule({
+class DailyHadithSchedule {
+  const DailyHadithSchedule({
     required this.id,
     required this.contentId,
     required this.localDate,
@@ -362,8 +362,8 @@ class DailyReminderSchedule {
 }
 
 @immutable
-class DailyReminderRetentionPolicy {
-  const DailyReminderRetentionPolicy({
+class DailyHadithRetentionPolicy {
+  const DailyHadithRetentionPolicy({
     required this.keepReleasedContent,
     required this.keepReadContent,
     required this.keepUnreadContent,
@@ -379,8 +379,8 @@ class DailyReminderRetentionPolicy {
 }
 
 @immutable
-class DailyReminderUserState {
-  const DailyReminderUserState({
+class DailyHadithUserState {
+  const DailyHadithUserState({
     this.readAtByContentId = const {},
     this.savedContentIds = const {},
     this.releasedContentIds = const {},
@@ -394,8 +394,8 @@ class DailyReminderUserState {
 }
 
 @immutable
-class DailyReminderPreferences {
-  const DailyReminderPreferences({
+class DailyHadithPreferences {
+  const DailyHadithPreferences({
     this.notificationsEnabled = false,
     this.hour = 8,
     this.minute = 0,
@@ -412,12 +412,12 @@ class DailyReminderPreferences {
   final int minute;
   final Set<String> enabledKinds;
 
-  DailyReminderPreferences copyWith({
+  DailyHadithPreferences copyWith({
     bool? notificationsEnabled,
     int? hour,
     int? minute,
     Set<String>? enabledKinds,
-  }) => DailyReminderPreferences(
+  }) => DailyHadithPreferences(
     notificationsEnabled: notificationsEnabled ?? this.notificationsEnabled,
     hour: hour ?? this.hour,
     minute: minute ?? this.minute,

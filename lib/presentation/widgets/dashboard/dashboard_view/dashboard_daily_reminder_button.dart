@@ -5,8 +5,8 @@ import '../../../../core/theme/app_spacing.dart' show AppRadius;
 import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 
-class DashboardDailyReminderButton extends StatelessWidget {
-  const DashboardDailyReminderButton({
+class DashboardDailyHadithButton extends StatelessWidget {
+  const DashboardDailyHadithButton({
     super.key,
     required this.label,
     required this.unreadCount,

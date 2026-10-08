@@ -3456,154 +3456,154 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyTrackerSaveChangesError => 'পরিবর্তন সংরক্ষণ করা যায়নি। আবার চেষ্টা করুন।';
 
   @override
-  String get dailyRemindersTitle => 'দৈনিক স্মরণিকা';
+  String get dailyHadithTitle => 'দৈনিক হাদিস';
 
   @override
-  String get dailyRemindersSubtitle => 'ছোট বিরতি। স্থায়ী আলো।';
+  String get dailyHadithSubtitle => 'ছোট বিরতি। স্থায়ী আলো।';
 
   @override
-  String get dailyRemindersToday => 'আজকের স্মরণিকা';
+  String get dailyHadithToday => 'আজকের পাঠ';
 
   @override
-  String get dailyRemindersHistory => 'ইতিহাস';
+  String get dailyHadithHistory => 'ইতিহাস';
 
   @override
-  String get dailyRemindersSearchHint => 'ভাবনা, করণীয় বা সূত্র খুঁজুন';
+  String get dailyHadithSearchHint => 'ভাবনা, করণীয় বা সূত্র খুঁজুন';
 
   @override
-  String get dailyRemindersAll => 'সব';
+  String get dailyHadithAll => 'সব';
 
   @override
-  String get dailyRemindersUnread => 'অপঠিত';
+  String get dailyHadithUnread => 'অপঠিত';
 
   @override
-  String get dailyRemindersSaved => 'সংরক্ষিত';
+  String get dailyHadithSaved => 'সংরক্ষিত';
 
   @override
-  String get dailyRemindersSettings => 'স্মরণিকার পছন্দ';
+  String get dailyHadithSettings => 'দৈনিক হাদিসের পছন্দ';
 
   @override
-  String get dailyRemindersRetry => 'আবার চেষ্টা করুন';
+  String get dailyHadithRetry => 'আবার চেষ্টা করুন';
 
   @override
-  String get dailyRemindersLoadError => 'স্মরণিকার সংগ্রহ খোলা যায়নি।';
+  String get dailyHadithLoadError => 'দৈনিক হাদিসের সংগ্রহ খোলা যায়নি।';
 
   @override
-  String get dailyRemindersEmptyTitle => 'এখনও কোনো প্রকাশিত স্মরণিকা নেই';
+  String get dailyHadithEmptyTitle => 'এখনও কোনো প্রকাশিত পাঠ নেই';
 
   @override
-  String get dailyRemindersEmptyMessage => 'প্রকাশিত স্মরণিকা নির্ধারিত দিনে এখানে আসবে এবং ইতিহাসে থাকবে।';
+  String get dailyHadithEmptyMessage => 'প্রকাশিত পাঠ নির্ধারিত দিনে এখানে আসবে এবং ইতিহাসে থাকবে।';
 
   @override
-  String get dailyRemindersNoNewTitle => 'আজ নতুন কোনো স্মরণিকা নেই';
+  String get dailyHadithNoNewTitle => 'আজ নতুন কোনো পাঠ নেই';
 
   @override
-  String get dailyRemindersNoNewMessage => 'প্রকাশিত সব স্মরণিকা ইতিহাসে নিরাপদে আছে।';
+  String get dailyHadithNoNewMessage => 'প্রকাশিত সব পাঠ ইতিহাসে নিরাপদে আছে।';
 
   @override
-  String get dailyRemindersRead => 'পঠিত';
+  String get dailyHadithRead => 'পঠিত';
 
   @override
-  String get dailyRemindersUnreadBadge => 'নতুন';
+  String get dailyHadithUnreadBadge => 'নতুন';
 
   @override
-  String get dailyRemindersOriginalArabic => 'মূল আরবি';
+  String get dailyHadithOriginalArabic => 'মূল আরবি';
 
   @override
-  String get dailyRemindersExcerpt => 'উদ্ধৃত অংশ';
+  String get dailyHadithExcerpt => 'উদ্ধৃত অংশ';
 
   @override
-  String get dailyRemindersOriginalReflection => 'মৌলিক ভাবনা';
+  String get dailyHadithOriginalReflection => 'মৌলিক ভাবনা';
 
   @override
-  String get dailyRemindersSuggestedAction => 'প্রস্তাবিত করণীয়';
+  String get dailyHadithSuggestedAction => 'প্রস্তাবিত করণীয়';
 
   @override
-  String get dailyRemindersSources => 'সূত্র';
+  String get dailyHadithSources => 'সূত্র';
 
   @override
-  String get dailyRemindersOpenSource => 'সূত্র খুলুন';
+  String get dailyHadithOpenSource => 'সূত্র খুলুন';
 
   @override
-  String dailyRemindersFallbackLanguage(String language) {
+  String dailyHadithFallbackLanguage(String language) {
     return '$language ভাষার কনটেন্ট দেখানো হচ্ছে';
   }
 
   @override
-  String get dailyRemindersSave => 'সংরক্ষণ';
+  String get dailyHadithSave => 'সংরক্ষণ';
 
   @override
-  String get dailyRemindersUnsave => 'সংরক্ষণ সরান';
+  String get dailyHadithUnsave => 'সংরক্ষণ সরান';
 
   @override
-  String get dailyRemindersShare => 'শেয়ার';
+  String get dailyHadithShare => 'শেয়ার';
 
   @override
-  String get dailyRemindersAddChecklist => 'চেকলিস্টে যোগ করুন';
+  String get dailyHadithAddChecklist => 'চেকলিস্টে যোগ করুন';
 
   @override
-  String get dailyRemindersChecklistAdded => 'আপনার চেকলিস্টে যোগ হয়েছে';
+  String get dailyHadithChecklistAdded => 'আপনার চেকলিস্টে যোগ হয়েছে';
 
   @override
-  String get dailyRemindersSourceError => 'সূত্রটি অফলাইন বা অনলাইনে খোলা যায়নি।';
+  String get dailyHadithSourceError => 'সূত্রটি অফলাইন বা অনলাইনে খোলা যায়নি।';
 
   @override
-  String get dailyRemindersCategoryAll => 'সব বিষয়';
+  String get dailyHadithCategoryAll => 'সব বিষয়';
 
   @override
-  String get dailyRemindersCategoryQuran => 'কুরআনের ভাবনা';
+  String get dailyHadithCategoryQuran => 'কুরআনের ভাবনা';
 
   @override
-  String get dailyRemindersCategoryHadith => 'হাদিসের ভাবনা';
+  String get dailyHadithCategoryHadith => 'হাদিসের ভাবনা';
 
   @override
-  String get dailyRemindersCategorySunnah => 'সুন্নাহ';
+  String get dailyHadithCategorySunnah => 'সুন্নাহ';
 
   @override
-  String get dailyRemindersCategoryAkhirah => 'আখিরাত';
+  String get dailyHadithCategoryAkhirah => 'আখিরাত';
 
   @override
-  String get dailyRemindersPreferencesTitle => 'স্মরণিকার পছন্দ';
+  String get dailyHadithPreferencesTitle => 'দৈনিক হাদিসের পছন্দ';
 
   @override
-  String get dailyRemindersInAppDeliveryTitle => 'দৈনিক স্মরণিকা সবসময় পাওয়া যাবে';
+  String get dailyHadithInAppDeliveryTitle => 'দৈনিক হাদিস সবসময় পাওয়া যাবে';
 
   @override
-  String get dailyRemindersInAppDeliveryMessage => 'সবাই অ্যাপের ভেতরে দৈনিক স্মরণিকা পাবেন। এই ডিভাইসে সতর্কবার্তাও চাইলে শুধু ‘নোটিফিকেশন পাঠান’ চালু করুন।';
+  String get dailyHadithInAppDeliveryMessage => 'সবাই অ্যাপের ভেতরে দৈনিক পাঠ পাবেন। এই ডিভাইসে সতর্কবার্তাও চাইলে ‘নোটিফিকেশন পাঠান’ চালু করুন।';
 
   @override
-  String get dailyRemindersNotifyToggle => 'নোটিফিকেশন পাঠান';
+  String get dailyHadithNotifyToggle => 'নোটিফিকেশন পাঠান';
 
   @override
-  String get dailyRemindersNotifySubtitle => 'আজকের স্মরণিকা প্রস্তুত হলে আমাকে জানান';
+  String get dailyHadithNotifySubtitle => 'আজকের পাঠ প্রস্তুত হলে আমাকে জানান';
 
   @override
-  String get dailyRemindersPreferredTime => 'পছন্দের সময়';
+  String get dailyHadithPreferredTime => 'পছন্দের সময়';
 
   @override
-  String get dailyRemindersCategories => 'নোটিফিকেশনের বিষয়';
+  String get dailyHadithCategories => 'নোটিফিকেশনের বিষয়';
 
   @override
-  String get dailyRemindersPermission => 'অনুমতির অবস্থা';
+  String get dailyHadithPermission => 'অনুমতির অবস্থা';
 
   @override
-  String get dailyRemindersPermissionGranted => 'অনুমোদিত';
+  String get dailyHadithPermissionGranted => 'অনুমোদিত';
 
   @override
-  String get dailyRemindersPermissionDenied => 'অনুমোদিত নয়';
+  String get dailyHadithPermissionDenied => 'অনুমোদিত নয়';
 
   @override
-  String get dailyRemindersPermissionUnknown => 'যাচাই করা হয়নি';
+  String get dailyHadithPermissionUnknown => 'যাচাই করা হয়নি';
 
   @override
-  String get dailyRemindersPermissionUnsupported => 'এই প্ল্যাটফর্মে অনুপলব্ধ';
+  String get dailyHadithPermissionUnsupported => 'এই প্ল্যাটফর্মে অনুপলব্ধ';
 
   @override
-  String get dailyRemindersNotificationPolicy => '‘নোটিফিকেশন পাঠান’ ও ডিভাইসের অনুমতি—দুটিই চালু থাকলেই নোটিফিকেশন আসবে। বাদ পড়া সতর্কবার্তা পরে পাঠানো হবে না।';
+  String get dailyHadithNotificationPolicy => '‘নোটিফিকেশন পাঠান’ ও ডিভাইসের অনুমতি—দুটিই চালু থাকলেই নোটিফিকেশন আসবে। বাদ পড়া সতর্কবার্তা পরে পাঠানো হবে না।';
 
   @override
-  String get dailyRemindersReviewNote => 'এগুলো মৌলিক ভাবনা ও প্রস্তাবিত করণীয়—সরাসরি কুরআনের অনুবাদ বা হাদিসের উদ্ধৃতি নয়।';
+  String get dailyHadithReviewNote => 'এগুলো মৌলিক ভাবনা ও প্রস্তাবিত করণীয়—সরাসরি কুরআনের অনুবাদ বা হাদিসের উদ্ধৃতি নয়।';
 
   @override
-  String get dailyRemindersNoResults => 'এই ফিল্টারে কোনো স্মরণিকা পাওয়া যায়নি।';
+  String get dailyHadithNoResults => 'এই ফিল্টারে কোনো পাঠ পাওয়া যায়নি।';
 }

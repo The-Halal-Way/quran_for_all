@@ -3,6 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_hadith_viewmodel.dart';
 import 'core/constants/app_constants.dart';
 import 'core/localization/l10n_extensions.dart';
 import 'core/theme/app_theme.dart';
@@ -14,7 +15,7 @@ import 'data/datasources/remote/quran_api_service.dart';
 import 'data/datasources/remote/prayer_times_api_service.dart';
 import 'data/repositories/audio_repository_impl.dart';
 import 'data/repositories/daily_tracker_repository_impl.dart';
-import 'data/repositories/daily_reminder_repository_impl.dart';
+import 'data/repositories/daily_hadith_repository_impl.dart';
 import 'data/repositories/learning_progress_repository_impl.dart';
 import 'data/repositories/nurani_quran_repository_impl.dart';
 import 'data/repositories/prayer_times_repository_impl.dart';
@@ -23,7 +24,7 @@ import 'data/repositories/settings_repository_impl.dart';
 import 'data/repositories/tasbeeh_repository_impl.dart';
 import 'domain/repositories/audio_repository.dart';
 import 'domain/repositories/daily_tracker_repository.dart';
-import 'domain/repositories/daily_reminder_repository.dart';
+import 'domain/repositories/daily_hadith_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/nurani_quran_repository.dart';
 import 'domain/repositories/prayer_times_repository.dart';
@@ -42,7 +43,6 @@ import 'domain/usecases/toggle_task_usecase.dart';
 import 'presentation/viewmodels/audio_control_viewmodel.dart';
 import 'presentation/viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import 'presentation/viewmodels/dashboard/tasbeeh_viewmodel.dart';
-import 'presentation/viewmodels/daily_reminders/daily_reminders_viewmodel.dart';
 import 'presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
 import 'presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'presentation/viewmodels/quran/quran_viewmodel.dart';
@@ -55,9 +55,9 @@ import 'presentation/viewmodels/settings_viewmodel.dart';
 import 'presentation/viewmodels/splash_viewmodel.dart';
 import 'presentation/views/splash/splash_view.dart';
 import 'presentation/widgets/common/global_audio_control_bar.dart';
-import 'presentation/widgets/daily_reminders/shared/daily_reminder_notification_router.dart';
+import 'presentation/widgets/daily_hadith/shared/daily_hadith_notification_router.dart';
 import 'services/audio_service.dart';
-import 'services/daily_reminder_notification_service.dart';
+import 'services/daily_hadith_notification_service.dart';
 import 'services/permission_helper.dart';
 import 'services/pronunciation_service.dart';
 
@@ -130,12 +130,12 @@ class QuranForAllApp extends StatelessWidget {
         Provider<DailyTrackerRepository>(
           create: (_) => DailyTrackerRepositoryImpl(),
         ),
-        Provider<DailyReminderRepository>(
-          create: (_) => DailyReminderRepositoryImpl(),
+        Provider<DailyHadithRepository>(
+          create: (_) => DailyHadithRepositoryImpl(),
         ),
         Provider<TasbeehRepository>(create: (_) => TasbeehRepositoryImpl()),
-        Provider<DailyReminderNotificationGateway>(
-          create: (_) => DailyReminderNotificationService(),
+        Provider<DailyHadithNotificationGateway>(
+          create: (_) => DailyHadithNotificationService(),
         ),
         Provider<GetDailyTasksUseCase>(
           create: (context) =>
@@ -235,11 +235,11 @@ class QuranForAllApp extends StatelessWidget {
             moveCustomTaskUseCase: context.read<MoveCustomTaskUseCase>(),
           ),
         ),
-        ChangeNotifierProvider<DailyRemindersViewModel>(
-          create: (context) => DailyRemindersViewModel(
-            repository: context.read<DailyReminderRepository>(),
+        ChangeNotifierProvider<DailyHadithViewModel>(
+          create: (context) => DailyHadithViewModel(
+            repository: context.read<DailyHadithRepository>(),
             notificationGateway: context
-                .read<DailyReminderNotificationGateway>(),
+                .read<DailyHadithNotificationGateway>(),
           ),
         ),
         ChangeNotifierProvider<TasbeehViewModel>(
@@ -282,7 +282,7 @@ class QuranForAllApp extends StatelessWidget {
                   selector: (_, audioControlVm) =>
                       audioControlVm.showMiniPlayer,
                   builder: (context, showBar, _) {
-                    return DailyReminderNotificationRouter(
+                    return DailyHadithNotificationRouter(
                       navigatorKey: appNavigatorKey,
                       locale: settingsViewModel.settings.language.locale
                           .toLanguageTag(),

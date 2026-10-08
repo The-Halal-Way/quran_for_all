@@ -3463,154 +3463,154 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dailyTrackerSaveChangesError => 'Couldn’t save your changes. Please try again.';
 
   @override
-  String get dailyRemindersTitle => 'Daily Reminders';
+  String get dailyHadithTitle => 'Daily Hadith';
 
   @override
-  String get dailyRemindersSubtitle => 'Small pauses. Lasting light.';
+  String get dailyHadithSubtitle => 'Small pauses. Lasting light.';
 
   @override
-  String get dailyRemindersToday => 'Today\'s reminder';
+  String get dailyHadithToday => 'Today\'s reading';
 
   @override
-  String get dailyRemindersHistory => 'History';
+  String get dailyHadithHistory => 'History';
 
   @override
-  String get dailyRemindersSearchHint => 'Search reflections, actions or sources';
+  String get dailyHadithSearchHint => 'Search reflections, actions or sources';
 
   @override
-  String get dailyRemindersAll => 'All';
+  String get dailyHadithAll => 'All';
 
   @override
-  String get dailyRemindersUnread => 'Unread';
+  String get dailyHadithUnread => 'Unread';
 
   @override
-  String get dailyRemindersSaved => 'Saved';
+  String get dailyHadithSaved => 'Saved';
 
   @override
-  String get dailyRemindersSettings => 'Reminder preferences';
+  String get dailyHadithSettings => 'Daily Hadith preferences';
 
   @override
-  String get dailyRemindersRetry => 'Try again';
+  String get dailyHadithRetry => 'Try again';
 
   @override
-  String get dailyRemindersLoadError => 'The reminder pack could not be opened.';
+  String get dailyHadithLoadError => 'The Daily Hadith collection could not be opened.';
 
   @override
-  String get dailyRemindersEmptyTitle => 'No released reminders yet';
+  String get dailyHadithEmptyTitle => 'No published readings yet';
 
   @override
-  String get dailyRemindersEmptyMessage => 'Published reminders will appear here on their release dates and stay in History.';
+  String get dailyHadithEmptyMessage => 'Published readings will appear here on their release dates and stay in History.';
 
   @override
-  String get dailyRemindersNoNewTitle => 'No new reminder today';
+  String get dailyHadithNoNewTitle => 'No new reading today';
 
   @override
-  String get dailyRemindersNoNewMessage => 'Your released reminders remain safely available in History.';
+  String get dailyHadithNoNewMessage => 'Your published readings remain safely available in History.';
 
   @override
-  String get dailyRemindersRead => 'Read';
+  String get dailyHadithRead => 'Read';
 
   @override
-  String get dailyRemindersUnreadBadge => 'New';
+  String get dailyHadithUnreadBadge => 'New';
 
   @override
-  String get dailyRemindersOriginalArabic => 'Original Arabic';
+  String get dailyHadithOriginalArabic => 'Original Arabic';
 
   @override
-  String get dailyRemindersExcerpt => 'Excerpt';
+  String get dailyHadithExcerpt => 'Excerpt';
 
   @override
-  String get dailyRemindersOriginalReflection => 'Original reflection';
+  String get dailyHadithOriginalReflection => 'Original reflection';
 
   @override
-  String get dailyRemindersSuggestedAction => 'Suggested action';
+  String get dailyHadithSuggestedAction => 'Suggested action';
 
   @override
-  String get dailyRemindersSources => 'Sources';
+  String get dailyHadithSources => 'Sources';
 
   @override
-  String get dailyRemindersOpenSource => 'Open source';
+  String get dailyHadithOpenSource => 'Open source';
 
   @override
-  String dailyRemindersFallbackLanguage(String language) {
+  String dailyHadithFallbackLanguage(String language) {
     return 'Showing $language content';
   }
 
   @override
-  String get dailyRemindersSave => 'Save';
+  String get dailyHadithSave => 'Save';
 
   @override
-  String get dailyRemindersUnsave => 'Remove saved';
+  String get dailyHadithUnsave => 'Remove saved';
 
   @override
-  String get dailyRemindersShare => 'Share';
+  String get dailyHadithShare => 'Share';
 
   @override
-  String get dailyRemindersAddChecklist => 'Add to checklist';
+  String get dailyHadithAddChecklist => 'Add to checklist';
 
   @override
-  String get dailyRemindersChecklistAdded => 'Added to your checklist';
+  String get dailyHadithChecklistAdded => 'Added to your checklist';
 
   @override
-  String get dailyRemindersSourceError => 'This source could not be opened offline or online.';
+  String get dailyHadithSourceError => 'This source could not be opened offline or online.';
 
   @override
-  String get dailyRemindersCategoryAll => 'All themes';
+  String get dailyHadithCategoryAll => 'All themes';
 
   @override
-  String get dailyRemindersCategoryQuran => 'Quran reflection';
+  String get dailyHadithCategoryQuran => 'Quran reflection';
 
   @override
-  String get dailyRemindersCategoryHadith => 'Hadith reflection';
+  String get dailyHadithCategoryHadith => 'Hadith reflection';
 
   @override
-  String get dailyRemindersCategorySunnah => 'Sunnah';
+  String get dailyHadithCategorySunnah => 'Sunnah';
 
   @override
-  String get dailyRemindersCategoryAkhirah => 'Hereafter';
+  String get dailyHadithCategoryAkhirah => 'Hereafter';
 
   @override
-  String get dailyRemindersPreferencesTitle => 'Reminder preferences';
+  String get dailyHadithPreferencesTitle => 'Daily Hadith preferences';
 
   @override
-  String get dailyRemindersInAppDeliveryTitle => 'Daily reminders are always available';
+  String get dailyHadithInAppDeliveryTitle => 'Daily Hadith is always available';
 
   @override
-  String get dailyRemindersInAppDeliveryMessage => 'Everyone receives the daily reminder inside the app. Turn on Send notification only if you also want an alert on this device.';
+  String get dailyHadithInAppDeliveryMessage => 'Everyone receives the daily reading inside the app. Turn on Send notification if you also want an alert on this device.';
 
   @override
-  String get dailyRemindersNotifyToggle => 'Send notification';
+  String get dailyHadithNotifyToggle => 'Send notification';
 
   @override
-  String get dailyRemindersNotifySubtitle => 'Alert me when today\'s reminder is ready';
+  String get dailyHadithNotifySubtitle => 'Alert me when today\'s reading is ready';
 
   @override
-  String get dailyRemindersPreferredTime => 'Preferred time';
+  String get dailyHadithPreferredTime => 'Preferred time';
 
   @override
-  String get dailyRemindersCategories => 'Notification themes';
+  String get dailyHadithCategories => 'Notification themes';
 
   @override
-  String get dailyRemindersPermission => 'Permission status';
+  String get dailyHadithPermission => 'Permission status';
 
   @override
-  String get dailyRemindersPermissionGranted => 'Allowed';
+  String get dailyHadithPermissionGranted => 'Allowed';
 
   @override
-  String get dailyRemindersPermissionDenied => 'Not allowed';
+  String get dailyHadithPermissionDenied => 'Not allowed';
 
   @override
-  String get dailyRemindersPermissionUnknown => 'Not checked';
+  String get dailyHadithPermissionUnknown => 'Not checked';
 
   @override
-  String get dailyRemindersPermissionUnsupported => 'Unavailable on this platform';
+  String get dailyHadithPermissionUnsupported => 'Unavailable on this platform';
 
   @override
-  String get dailyRemindersNotificationPolicy => 'Notifications are optional and are sent only when Send notification and device permission are both enabled. Missed alerts are not sent later.';
+  String get dailyHadithNotificationPolicy => 'Notifications are optional and are sent only when Send notification and device permission are both enabled. Missed alerts are not sent later.';
 
   @override
-  String get dailyRemindersReviewNote => 'These are authored reflections and suggested actions—not direct Quran translations or hadith quotations.';
+  String get dailyHadithReviewNote => 'These are authored reflections and suggested actions—not direct Quran translations or hadith quotations.';
 
   @override
-  String get dailyRemindersNoResults => 'No reminders match these filters.';
+  String get dailyHadithNoResults => 'No readings match these filters.';
 }
