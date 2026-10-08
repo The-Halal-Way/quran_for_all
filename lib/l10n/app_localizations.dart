@@ -2363,6 +2363,12 @@ abstract class AppLocalizations {
   /// **'Beautiful Names'**
   String get duahNintyNineNamesGridTitle;
 
+  /// No description provided for @duahNintyNineSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search names or meanings'**
+  String get duahNintyNineSearchHint;
+
   /// No description provided for @duahNintyNineLoading.
   ///
   /// In en, this message translates to:

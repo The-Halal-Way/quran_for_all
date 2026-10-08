@@ -1191,6 +1191,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duahNintyNineNamesGridTitle => 'Beautiful Names';
 
   @override
+  String get duahNintyNineSearchHint => 'Search names or meanings';
+
+  @override
   String get duahNintyNineLoading => 'Loading the beautiful names...';
 
   @override

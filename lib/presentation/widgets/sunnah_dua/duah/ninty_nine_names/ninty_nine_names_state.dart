@@ -31,6 +31,36 @@ class NintyNineNamesLoadingState extends StatelessWidget {
   }
 }
 
+class NintyNineNamesEmptyState extends StatelessWidget {
+  const NintyNineNamesEmptyState({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    final text = AppTheme.text(context);
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: AppSpacing.xxxl),
+      child: Column(
+        children: [
+          Icon(Icons.search_off_rounded, size: 40, color: colors.primary),
+          const SizedBox(height: AppSpacing.md),
+          Text(
+            context.l10n.sunnahDuaNoResults,
+            textAlign: TextAlign.center,
+            style: text.titleMedium,
+          ),
+          const SizedBox(height: AppSpacing.sm),
+          Text(
+            context.l10n.sunnahDuaNoResultsBody,
+            textAlign: TextAlign.center,
+            style: text.bodySmall.copyWith(color: colors.onSurfaceVariant),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class NintyNineNamesErrorState extends StatelessWidget {
   const NintyNineNamesErrorState({
     super.key,

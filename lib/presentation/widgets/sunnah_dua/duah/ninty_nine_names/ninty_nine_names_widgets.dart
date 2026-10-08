@@ -4,4 +4,5 @@ export 'ninty_nine_names_grid.dart';
 export 'ninty_nine_names_hero.dart';
 export 'ninty_nine_names_insight_card.dart';
 export 'ninty_nine_names_localized.dart';
+export 'ninty_nine_names_search_field.dart';
 export 'ninty_nine_names_state.dart';

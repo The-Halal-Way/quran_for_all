@@ -97,6 +97,7 @@ class NintyNineNamesSliverGrid extends StatelessWidget {
           ),
           itemBuilder: (context, index) {
             return NintyNineNameCard(
+              key: ValueKey(names[index].id),
               name: names[index],
               language: language,
               isDark: isDark,

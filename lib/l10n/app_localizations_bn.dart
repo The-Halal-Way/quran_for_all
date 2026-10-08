@@ -1191,6 +1191,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duahNintyNineNamesGridTitle => 'সুন্দর নামসমূহ';
 
   @override
+  String get duahNintyNineSearchHint => 'নাম বা অর্থ দিয়ে খুঁজুন';
+
+  @override
   String get duahNintyNineLoading => 'সুন্দর নামসমূহ লোড হচ্ছে...';
 
   @override

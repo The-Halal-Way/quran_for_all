@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/core/enums/app_language.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+import 'package:quran_for_all/core/theme/app_spacing.dart';
 import 'package:quran_for_all/core/theme/my_colors.dart';
 import 'package:quran_for_all/core/utils/app_responsive.dart';
 import 'package:quran_for_all/presentation/viewmodels/duah/ninty_nine_names_viewmodel.dart';
@@ -49,6 +50,8 @@ class _DuahNintyNineBody extends StatelessWidget {
               return AppPageScrollbar(
                 builder: (context, controller) => CustomScrollView(
                   controller: controller,
+                  keyboardDismissBehavior:
+                      ScrollViewKeyboardDismissBehavior.onDrag,
                   physics: const BouncingScrollPhysics(),
                   slivers: [
                     const NintyNineNamesAppBar(),
@@ -91,61 +94,80 @@ class _DuahNintyNineBody extends StatelessWidget {
     required double horizontal,
   }) {
     final data = vm.data!;
+    final names = vm.visibleNames;
 
     return [
       SliverPadding(
-        padding: EdgeInsets.symmetric(horizontal: horizontal),
+        padding: EdgeInsets.fromLTRB(
+          horizontal,
+          AppSpacing.lg,
+          horizontal,
+          AppSpacing.lg,
+        ),
         sliver: SliverToBoxAdapter(
-          child: NintyNineNamesHero(
-            data: data,
-            language: language,
-            categoryCount: vm.categories.length,
-            isDark: isDark,
+          child: NintyNineNamesSearchField(
+            query: vm.query,
+            onChanged: vm.setQuery,
           ),
         ),
       ),
-      SliverPadding(
-        padding: EdgeInsets.symmetric(horizontal: horizontal),
-        sliver: SliverToBoxAdapter(
-          child: NintyNineNamesInsightCard(
-            icon: Icons.favorite_rounded,
-            title: context.l10n.duahNintyNineBenefitTitle,
-            body: data.metadata.benefitFor(language),
-            accent: MyColors.secondary,
-            isDark: isDark,
+      if (!vm.isSearching) ...[
+        SliverPadding(
+          padding: EdgeInsets.symmetric(horizontal: horizontal),
+          sliver: SliverToBoxAdapter(
+            child: NintyNineNamesHero(
+              data: data,
+              language: language,
+              categoryCount: vm.categories.length,
+              isDark: isDark,
+            ),
           ),
         ),
-      ),
-
+        SliverPadding(
+          padding: EdgeInsets.symmetric(horizontal: horizontal),
+          sliver: SliverToBoxAdapter(
+            child: NintyNineNamesInsightCard(
+              icon: Icons.favorite_rounded,
+              title: context.l10n.duahNintyNineBenefitTitle,
+              body: data.metadata.benefitFor(language),
+              accent: MyColors.secondary,
+              isDark: isDark,
+            ),
+          ),
+        ),
+      ],
       SliverPadding(
         padding: EdgeInsets.symmetric(horizontal: horizontal),
         sliver: SliverToBoxAdapter(
           child: NintyNineNamesGridHeader(
-            totalNames: data.names.length,
+            totalNames: names.length,
             isDark: isDark,
           ),
         ),
       ),
       SliverPadding(
         padding: EdgeInsets.fromLTRB(horizontal, 0, horizontal, 36),
-        sliver: NintyNineNamesSliverGrid(
-          names: data.names,
-          language: language,
-          isDark: isDark,
-        ),
+        sliver: names.isEmpty
+            ? const SliverToBoxAdapter(child: NintyNineNamesEmptyState())
+            : NintyNineNamesSliverGrid(
+                names: names,
+                language: language,
+                isDark: isDark,
+              ),
       ),
-      SliverPadding(
-        padding: EdgeInsets.symmetric(horizontal: horizontal),
-        sliver: SliverToBoxAdapter(
-          child: NintyNineNamesInsightCard(
-            icon: Icons.verified_rounded,
-            title: context.l10n.duahNintyNineConclusionTitle,
-            body: data.metadata.conclusionFor(language),
-            accent: MyColors.tertiary,
-            isDark: isDark,
+      if (!vm.isSearching)
+        SliverPadding(
+          padding: EdgeInsets.symmetric(horizontal: horizontal),
+          sliver: SliverToBoxAdapter(
+            child: NintyNineNamesInsightCard(
+              icon: Icons.verified_rounded,
+              title: context.l10n.duahNintyNineConclusionTitle,
+              body: data.metadata.conclusionFor(language),
+              accent: MyColors.tertiary,
+              isDark: isDark,
+            ),
           ),
         ),
-      ),
     ];
   }
 }
