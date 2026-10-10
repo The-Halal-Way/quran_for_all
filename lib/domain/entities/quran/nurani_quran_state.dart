@@ -1,3 +1,5 @@
+import '../../../core/constants/nurani_quran_document.dart';
+
 /// PDF page numbers are one-based, including the cover and introductory pages.
 class NuraniQuranReadingState {
   NuraniQuranReadingState({
@@ -44,10 +46,15 @@ class NuraniQuranReadingState {
 }
 
 class NuraniQuranLibrary {
-  const NuraniQuranLibrary({required this.reading, this.filePath});
+  const NuraniQuranLibrary({
+    required this.reading,
+    this.filePath,
+    this.document,
+  });
 
   final NuraniQuranReadingState reading;
   final String? filePath;
+  final NuraniQuranDocument? document;
 }
 
 enum NuraniQuranIssue { network, invalidPdf, storage, cancelled }

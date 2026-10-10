@@ -21,6 +21,7 @@ class NuraniQuranDownloadProgress extends StatelessWidget {
       nuraniNumber(context, (progress * 100).floor()),
     );
     return Column(
+      mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ClipRRect(

@@ -1496,8 +1496,38 @@ abstract class AppLocalizations {
   /// No description provided for @nuraniQuranFileSize.
   ///
   /// In en, this message translates to:
-  /// **'PDF · 13.4 MB'**
-  String get nuraniQuranFileSize;
+  /// **'PDF · {size} MB'**
+  String nuraniQuranFileSize(String size);
+
+  /// No description provided for @nuraniQuranChooseEdition.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your Quran style'**
+  String get nuraniQuranChooseEdition;
+
+  /// No description provided for @nuraniQuranEditionsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'The same Quran in two page designs. Preview both and choose the style you prefer for offline reading.'**
+  String get nuraniQuranEditionsDescription;
+
+  /// No description provided for @nuraniQuranEditionsAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Two page styles · Offline PDF'**
+  String get nuraniQuranEditionsAvailable;
+
+  /// No description provided for @nuraniQuranGreenEdition.
+  ///
+  /// In en, this message translates to:
+  /// **'Green design'**
+  String get nuraniQuranGreenEdition;
+
+  /// No description provided for @nuraniQuranBlueEdition.
+  ///
+  /// In en, this message translates to:
+  /// **'Blue design'**
+  String get nuraniQuranBlueEdition;
 
   /// No description provided for @nuraniQuranOffline.
   ///

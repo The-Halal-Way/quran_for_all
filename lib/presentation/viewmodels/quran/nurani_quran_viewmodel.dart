@@ -16,22 +16,27 @@ class NuraniQuranViewModel extends ChangeNotifier {
   Future<void> _pendingWrite = Future.value();
   Future<void>? _loadOperation;
   String? _filePath;
+  NuraniQuranDocument? _document;
+  NuraniQuranDocument? _downloadDocument;
   NuraniQuranIssue? _issue;
   bool _loading = true;
   bool _downloading = false;
+  bool _downloadCancelled = false;
   bool _disposed = false;
   int _receivedBytes = 0;
   int? _totalBytes;
 
   NuraniQuranReadingState get reading => _reading;
   String? get filePath => _filePath;
+  NuraniQuranDocument? get document => _document;
+  NuraniQuranDocument? get downloadDocument => _downloadDocument;
   NuraniQuranIssue? get issue => _issue;
   bool get loading => _loading;
   bool get downloading => _downloading;
   bool get available => _filePath != null;
   int get receivedBytes => _receivedBytes;
   double get progress =>
-      (_receivedBytes / (_totalBytes ?? NuraniQuranDocument.expectedBytes))
+      (_receivedBytes / (_totalBytes ?? _downloadDocument?.expectedBytes ?? 1))
           .clamp(0, 0.99);
 
   Future<void> load() {
@@ -48,6 +53,7 @@ class NuraniQuranViewModel extends ChangeNotifier {
       if (_disposed) return;
       _reading = library.reading;
       _filePath = library.filePath;
+      _document = library.document;
       _issue = null;
     } catch (_) {
       _issue = NuraniQuranIssue.storage;
@@ -57,9 +63,11 @@ class NuraniQuranViewModel extends ChangeNotifier {
     }
   }
 
-  Future<bool> download() async {
+  Future<bool> download(NuraniQuranDocument document) async {
     if (_downloading || _loading || _disposed) return false;
     _downloading = true;
+    _downloadCancelled = false;
+    _downloadDocument = document;
     _receivedBytes = 0;
     _totalBytes = null;
     _issue = null;
@@ -67,7 +75,11 @@ class NuraniQuranViewModel extends ChangeNotifier {
     var lastPercent = -1;
     var downloaded = false;
     try {
-      _filePath = await _repository.download(
+      // Finish writes to the previous edition before changing its state key.
+      await flushReading();
+      if (_disposed || _downloadCancelled) return false;
+      final library = await _repository.download(
+        document: document,
         onProgress: (bytes, total) {
           _receivedBytes = bytes;
           _totalBytes = total != null && total > 0 ? total : null;
@@ -78,7 +90,11 @@ class NuraniQuranViewModel extends ChangeNotifier {
           }
         },
       );
-      downloaded = true;
+      if (_disposed) return false;
+      _filePath = library.filePath;
+      _document = library.document;
+      _reading = library.reading;
+      downloaded = available;
     } on NuraniQuranException catch (error) {
       if (error.issue != NuraniQuranIssue.cancelled) _issue = error.issue;
     } catch (_) {
@@ -90,7 +106,10 @@ class NuraniQuranViewModel extends ChangeNotifier {
     return downloaded;
   }
 
-  void cancelDownload() => _repository.cancelDownload();
+  void cancelDownload() {
+    _downloadCancelled = true;
+    _repository.cancelDownload();
+  }
 
   void documentOpened(int pageCount, int page) {
     if (pageCount < 1) return;
@@ -153,10 +172,11 @@ class NuraniQuranViewModel extends ChangeNotifier {
   Future<void> flushReading() => _pendingWrite;
 
   Future<bool> removeDownload() async {
-    if (_downloading) return false;
+    if (_downloading || _loading || _disposed) return false;
     try {
       await _repository.removeDownload();
       _filePath = null;
+      _downloadDocument = null;
       _issue = null;
       _notify();
       return true;

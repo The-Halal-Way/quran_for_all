@@ -718,7 +718,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get nuraniQuranDescription => 'Read the original PDF pages, save your place, and bookmark pages for later.';
 
   @override
-  String get nuraniQuranFileSize => 'PDF · 13.4 MB';
+  String nuraniQuranFileSize(String size) {
+    return 'PDF · $size MB';
+  }
+
+  @override
+  String get nuraniQuranChooseEdition => 'Choose your Quran style';
+
+  @override
+  String get nuraniQuranEditionsDescription => 'The same Quran in two page designs. Preview both and choose the style you prefer for offline reading.';
+
+  @override
+  String get nuraniQuranEditionsAvailable => 'Two page styles · Offline PDF';
+
+  @override
+  String get nuraniQuranGreenEdition => 'Green design';
+
+  @override
+  String get nuraniQuranBlueEdition => 'Blue design';
 
   @override
   String get nuraniQuranOffline => 'Ready offline';

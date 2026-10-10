@@ -10,6 +10,7 @@ import '../../../../core/utils/app_page_route.dart';
 import '../../../viewmodels/quran/nurani_quran_viewmodel.dart';
 import '../../../views/quran/nurani_quran/nurani_quran_reader_view.dart';
 import 'nurani_quran_download_progress.dart';
+import 'nurani_quran_edition_sheet.dart';
 import 'nurani_quran_labels.dart';
 
 class NuraniQuranLibraryCard extends StatelessWidget {
@@ -21,6 +22,9 @@ class NuraniQuranLibraryCard extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
     final text = AppTheme.text(context);
     final l10n = context.l10n;
+    final document = model.downloading
+        ? model.downloadDocument
+        : model.document;
 
     return Container(
       width: double.infinity,
@@ -85,7 +89,7 @@ class NuraniQuranLibraryCard extends StatelessWidget {
                   ],
                 ),
               ),
-              if (model.available && !model.downloading)
+              if (model.available && !model.downloading && !model.loading)
                 PopupMenuButton<String>(
                   tooltip: l10n.nuraniQuranRemoveDownload,
                   onSelected: (_) => unawaited(_removeDownload(context, model)),
@@ -104,7 +108,14 @@ class NuraniQuranLibraryCard extends StatelessWidget {
             runSpacing: AppSpacing.sm,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              Text(l10n.nuraniQuranFileSize, style: text.labelSmall),
+              if (document != null) ...[
+                Text(
+                  nuraniEditionLabel(context, document.edition),
+                  style: text.labelSmall,
+                ),
+                Text(nuraniFileSize(context, document), style: text.labelSmall),
+              ] else if (!model.available)
+                Text(l10n.nuraniQuranEditionsAvailable, style: text.labelSmall),
               if (model.available)
                 Text(
                   l10n.nuraniQuranOffline,
@@ -151,7 +162,7 @@ class NuraniQuranLibraryCard extends StatelessWidget {
               child: FilledButton.icon(
                 onPressed: model.available
                     ? () => _openReader(context, model)
-                    : () => unawaited(model.download()),
+                    : () => unawaited(_chooseDownload(context, model)),
                 icon: Icon(
                   model.available
                       ? Icons.auto_stories_outlined
@@ -169,6 +180,19 @@ class NuraniQuranLibraryCard extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Future<void> _chooseDownload(
+    BuildContext context,
+    NuraniQuranViewModel model,
+  ) async {
+    final document = await showNuraniQuranEditionSheet(
+      context,
+      initialDocument: model.downloadDocument ?? model.document,
+    );
+    if (context.mounted && document != null) {
+      await model.download(document);
+    }
   }
 
   void _openReader(BuildContext context, NuraniQuranViewModel model) {

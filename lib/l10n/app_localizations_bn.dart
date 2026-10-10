@@ -718,7 +718,24 @@ class AppLocalizationsBn extends AppLocalizations {
   String get nuraniQuranDescription => 'মূল পিডিএফের পৃষ্ঠা পড়ুন, পড়ার অবস্থান সংরক্ষণ করুন এবং পরে পড়ার জন্য পৃষ্ঠা বুকমার্ক করুন।';
 
   @override
-  String get nuraniQuranFileSize => 'পিডিএফ · ১৩.৪ এমবি';
+  String nuraniQuranFileSize(String size) {
+    return 'পিডিএফ · $size এমবি';
+  }
+
+  @override
+  String get nuraniQuranChooseEdition => 'কুরআনের পৃষ্ঠা নকশা বেছে নিন';
+
+  @override
+  String get nuraniQuranEditionsDescription => 'একই কুরআন, পৃষ্ঠার দুটি নকশা। দুটির নমুনা দেখে অফলাইনে পড়ার জন্য পছন্দের নকশাটি বেছে নিন।';
+
+  @override
+  String get nuraniQuranEditionsAvailable => 'পৃষ্ঠার দুটি নকশা · অফলাইন পিডিএফ';
+
+  @override
+  String get nuraniQuranGreenEdition => 'সবুজ নকশা';
+
+  @override
+  String get nuraniQuranBlueEdition => 'নীল নকশা';
 
   @override
   String get nuraniQuranOffline => 'অফলাইনে প্রস্তুত';

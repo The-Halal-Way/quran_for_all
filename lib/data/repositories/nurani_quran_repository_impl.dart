@@ -15,42 +15,48 @@ class NuraniQuranRepositoryImpl implements NuraniQuranRepository {
   NuraniQuranRepositoryImpl(this._client);
 
   final http.Client _client;
+  NuraniQuranDocument? _document;
   Completer<void>? _abort;
   static const _timeout = Duration(seconds: 45);
 
-  Future<File> _documentFile() async {
+  Future<File> _documentFile([NuraniQuranDocument? document]) async {
     final root = await getApplicationSupportDirectory();
     final directory = Directory(path.join(root.path, 'nurani_quran'));
     await directory.create(recursive: true);
-    return File(path.join(directory.path, NuraniQuranDocument.fileName));
+    return File(
+      path.join(
+        directory.path,
+        document?.fileName ?? NuraniQuranDocument.legacyFileName,
+      ),
+    );
   }
 
   @override
   Future<NuraniQuranLibrary> loadLibrary() async {
     final preferences = await SharedPreferences.getInstance();
-    var reading = NuraniQuranReadingState();
-    final raw = preferences.getString(NuraniQuranDocument.preferencesKey);
-    if (raw != null) {
-      try {
-        reading = NuraniQuranReadingState.fromJson(
-          jsonDecode(raw) as Map<String, dynamic>,
+    final document = NuraniQuranDocument.fromEditionName(
+      preferences.getString(NuraniQuranDocument.editionPreferencesKey),
+    );
+    final reading = _readReading(preferences, document);
+    final file = await _documentFile(document);
+    final available =
+        await file.exists() &&
+        await _isPdf(
+          file,
+          maximumBytes:
+              document?.maximumBytes ?? NuraniQuranDocument.legacyMaximumBytes,
         );
-      } on FormatException {
-        // A damaged preference must not prevent downloading or reading the PDF.
-      } on TypeError {
-        // Preserve the offline file even if reading metadata cannot be decoded.
-      }
-    }
-    final file = await _documentFile();
-    final available = await file.exists() && await _isPdf(file);
+    _document = document;
     return NuraniQuranLibrary(
       reading: reading,
       filePath: available ? file.path : null,
+      document: document,
     );
   }
 
   @override
-  Future<String> download({
+  Future<NuraniQuranLibrary> download({
+    required NuraniQuranDocument document,
     required void Function(int bytes, int? total) onProgress,
   }) async {
     if (_abort != null) throw StateError('A PDF download is already running');
@@ -59,13 +65,13 @@ class NuraniQuranRepositoryImpl implements NuraniQuranRepository {
     File? partial;
     RandomAccessFile? writer;
     try {
-      final destination = await _documentFile();
+      final destination = await _documentFile(document);
       partial = File('${destination.path}.part');
       final response = await _client
           .send(
             http.AbortableRequest(
               'GET',
-              NuraniQuranDocument.downloadUri,
+              document.downloadUri,
               abortTrigger: abort.future,
             ),
           )
@@ -76,7 +82,7 @@ class NuraniQuranRepositoryImpl implements NuraniQuranRepository {
       final contentType = response.headers['content-type']?.toLowerCase() ?? '';
       final total = response.contentLength;
       if (contentType.contains('text/html') ||
-          (total != null && total > NuraniQuranDocument.maximumBytes)) {
+          (total != null && total > document.maximumBytes)) {
         throw const NuraniQuranException(NuraniQuranIssue.invalidPdf);
       }
       writer = await partial.open(mode: FileMode.write);
@@ -86,7 +92,7 @@ class NuraniQuranRepositoryImpl implements NuraniQuranRepository {
           throw const NuraniQuranException(NuraniQuranIssue.cancelled);
         }
         received += chunk.length;
-        if (received > NuraniQuranDocument.maximumBytes) {
+        if (received > document.maximumBytes) {
           throw const NuraniQuranException(NuraniQuranIssue.invalidPdf);
         }
         await writer.writeFrom(chunk);
@@ -98,12 +104,23 @@ class NuraniQuranRepositoryImpl implements NuraniQuranRepository {
       if (abort.isCompleted) {
         throw const NuraniQuranException(NuraniQuranIssue.cancelled);
       }
-      if ((total != null && received != total) || !await _isPdf(partial)) {
+      if ((total != null && received != total) ||
+          !await _isPdf(partial, maximumBytes: document.maximumBytes)) {
         throw const NuraniQuranException(NuraniQuranIssue.invalidPdf);
+      }
+      if (abort.isCompleted) {
+        throw const NuraniQuranException(NuraniQuranIssue.cancelled);
       }
       // Only promote a complete PDF; interrupted downloads never appear ready.
       await partial.rename(destination.path);
-      return destination.path;
+      final reading = await _selectDocument(document);
+      _document = document;
+      await _removeOtherCopies(document, destination.parent);
+      return NuraniQuranLibrary(
+        reading: reading,
+        document: document,
+        filePath: destination.path,
+      );
     } on http.RequestAbortedException {
       throw const NuraniQuranException(NuraniQuranIssue.cancelled);
     } on NuraniQuranException {
@@ -124,9 +141,68 @@ class NuraniQuranRepositoryImpl implements NuraniQuranRepository {
     }
   }
 
-  Future<bool> _isPdf(File file) async {
+  NuraniQuranReadingState _readReading(
+    SharedPreferences preferences,
+    NuraniQuranDocument? document,
+  ) {
+    try {
+      final raw = preferences.getString(
+        document?.preferencesKey ?? NuraniQuranDocument.legacyPreferencesKey,
+      );
+      if (raw != null) {
+        return NuraniQuranReadingState.fromJson(
+          jsonDecode(raw) as Map<String, dynamic>,
+        );
+      }
+    } on FormatException {
+      // Reading metadata must not prevent opening a valid offline PDF.
+    } on TypeError {
+      // Ignore damaged metadata and start this edition at its first page.
+    }
+    return NuraniQuranReadingState();
+  }
+
+  Future<NuraniQuranReadingState> _selectDocument(
+    NuraniQuranDocument document,
+  ) async {
+    try {
+      final preferences = await SharedPreferences.getInstance();
+      final reading = _readReading(preferences, document);
+      if (!await preferences.setString(
+        NuraniQuranDocument.editionPreferencesKey,
+        document.edition.name,
+      )) {
+        throw StateError('Could not save the selected edition');
+      }
+      return reading;
+    } catch (_) {
+      throw const NuraniQuranException(NuraniQuranIssue.storage);
+    }
+  }
+
+  Future<void> _removeOtherCopies(
+    NuraniQuranDocument selected,
+    Directory directory,
+  ) async {
+    for (final document in [null, ...NuraniQuranDocument.editions]) {
+      if (document == selected) continue;
+      try {
+        final file = File(
+          path.join(
+            directory.path,
+            document?.fileName ?? NuraniQuranDocument.legacyFileName,
+          ),
+        );
+        if (await file.exists()) await file.delete();
+      } on FileSystemException {
+        // Cleanup must not hide a successfully downloaded and selected PDF.
+      }
+    }
+  }
+
+  Future<bool> _isPdf(File file, {required int maximumBytes}) async {
     final length = await file.length();
-    if (length < 16 || length > NuraniQuranDocument.maximumBytes) return false;
+    if (length < 16 || length > maximumBytes) return false;
     final reader = await file.open();
     try {
       final header = ascii.decode(await reader.read(5), allowInvalid: true);
@@ -148,7 +224,7 @@ class NuraniQuranRepositoryImpl implements NuraniQuranRepository {
   Future<void> saveReading(NuraniQuranReadingState reading) async {
     final preferences = await SharedPreferences.getInstance();
     final saved = await preferences.setString(
-      NuraniQuranDocument.preferencesKey,
+      _document?.preferencesKey ?? NuraniQuranDocument.legacyPreferencesKey,
       jsonEncode(reading.toJson()),
     );
     if (!saved) throw const NuraniQuranException(NuraniQuranIssue.storage);
@@ -156,8 +232,10 @@ class NuraniQuranRepositoryImpl implements NuraniQuranRepository {
 
   @override
   Future<void> removeDownload() async {
-    final file = await _documentFile();
-    if (await file.exists()) await file.delete();
+    for (final document in [null, ...NuraniQuranDocument.editions]) {
+      final file = await _documentFile(document);
+      if (await file.exists()) await file.delete();
+    }
     // Bookmarks and the last page belong to the document, not its offline copy.
   }
 }

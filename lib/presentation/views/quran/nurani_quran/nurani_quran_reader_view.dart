@@ -8,6 +8,8 @@ import '../../../../domain/entities/quran/nurani_quran_state.dart';
 import '../../../viewmodels/quran/nurani_quran_reader_controller.dart';
 import '../../../viewmodels/quran/nurani_quran_viewmodel.dart';
 import '../../../widgets/quran/nurani_quran/nurani_quran_bookmarks_sheet.dart';
+import '../../../widgets/quran/nurani_quran/nurani_quran_download_progress.dart';
+import '../../../widgets/quran/nurani_quran/nurani_quran_edition_sheet.dart';
 import '../../../widgets/quran/nurani_quran/nurani_quran_jump_dialog.dart';
 import '../../../widgets/quran/nurani_quran/nurani_quran_labels.dart';
 import '../../../widgets/quran/nurani_quran/nurani_quran_pdf_canvas.dart';
@@ -101,13 +103,22 @@ class _NuraniQuranReaderViewState extends State<NuraniQuranReaderView>
                       ),
                     ),
                   Expanded(
-                    child: reader.loading
+                    child: library.downloading
+                        ? Center(
+                            child: Padding(
+                              padding: const EdgeInsets.all(24),
+                              child: NuraniQuranDownloadProgress(
+                                progress: library.progress,
+                                onCancel: library.cancelDownload,
+                              ),
+                            ),
+                          )
+                        : reader.loading
                         ? const Center(child: CircularProgressIndicator())
                         : reader.failed || controller == null
                         ? NuraniQuranReaderError(
                             onRetry: () => unawaited(reader.open()),
-                            onDownloadAgain: () =>
-                                unawaited(reader.downloadAgain()),
+                            onDownloadAgain: () => unawaited(_downloadAgain()),
                           )
                         : NuraniQuranPdfCanvas(
                             controller: controller,
@@ -131,6 +142,16 @@ class _NuraniQuranReaderViewState extends State<NuraniQuranReaderView>
         },
       ),
     );
+  }
+
+  Future<void> _downloadAgain() async {
+    final document = await showNuraniQuranEditionSheet(
+      context,
+      initialDocument: _library.downloadDocument ?? _library.document,
+    );
+    if (mounted && document != null) {
+      await _reader.downloadAgain(document);
+    }
   }
 
   Future<void> _toggleBookmark() async {

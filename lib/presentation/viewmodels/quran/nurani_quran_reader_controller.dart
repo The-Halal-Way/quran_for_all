@@ -3,18 +3,21 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
 
+import '../../../core/constants/nurani_quran_document.dart';
 import 'nurani_quran_viewmodel.dart';
 
 /// Owns the native document and reader controls for a single reading session.
 class NuraniQuranReaderController extends ChangeNotifier {
   NuraniQuranReaderController({
-    required this.filePath,
+    required String filePath,
     required NuraniQuranViewModel library,
-  }) : _library = library {
+  }) : _filePath = filePath,
+       _library = library {
     unawaited(open());
   }
 
-  final String filePath;
+  String _filePath;
+  String get filePath => _filePath;
   final NuraniQuranViewModel _library;
   PdfDocument? _document;
   PdfControllerPinch? _pdfController;
@@ -99,11 +102,12 @@ class NuraniQuranReaderController extends ChangeNotifier {
     );
   }
 
-  Future<void> downloadAgain() async {
+  Future<void> downloadAgain(NuraniQuranDocument document) async {
     if (_loading || _library.downloading || _disposed) return;
     _releaseDocument();
-    final downloaded = await _library.download();
+    final downloaded = await _library.download(document);
     if (!_disposed && downloaded) {
+      _filePath = _library.filePath!;
       await open();
     }
   }
