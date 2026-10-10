@@ -2063,6 +2063,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardActionQiblaCompassSub => 'Find qibla direction';
 
   @override
+  String get dashboardRefreshError => 'Some dashboard information could not be refreshed. Please try again.';
+
+  @override
   String get dashboardActionHijriCalendar => 'Hijri Calendar';
 
   @override

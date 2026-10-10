@@ -4103,6 +4103,12 @@ abstract class AppLocalizations {
   /// **'Find qibla direction'**
   String get dashboardActionQiblaCompassSub;
 
+  /// No description provided for @dashboardRefreshError.
+  ///
+  /// In en, this message translates to:
+  /// **'Some dashboard information could not be refreshed. Please try again.'**
+  String get dashboardRefreshError;
+
   /// No description provided for @dashboardActionHijriCalendar.
   ///
   /// In en, this message translates to:

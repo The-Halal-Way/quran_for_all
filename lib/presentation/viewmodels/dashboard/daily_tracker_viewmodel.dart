@@ -85,13 +85,19 @@ class DailyTrackerViewModel extends ChangeNotifier {
 
   /// Loads (or reloads) today's checklist, applying the daily reset rule.
   Future<void> loadTasks() async {
+    if (_disposed) return;
     _isLoading = true;
     notifyListeners();
-
-    _tasks = await _getDailyTasksUseCase();
-    _sectionOrder = await _getSectionOrderUseCase();
-    _isLoading = false;
-    if (!_disposed) notifyListeners();
+    try {
+      final tasks = await _getDailyTasksUseCase();
+      final sectionOrder = await _getSectionOrderUseCase();
+      if (_disposed) return;
+      _tasks = tasks;
+      _sectionOrder = sectionOrder;
+    } finally {
+      _isLoading = false;
+      if (!_disposed) notifyListeners();
+    }
   }
 
   @override

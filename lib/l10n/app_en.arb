@@ -820,6 +820,7 @@
   "dashboardActionFullPrayerView": "Full Prayer View",
   "dashboardActionQiblaCompass": "Qibla Compass",
   "dashboardActionQiblaCompassSub": "Find qibla direction",
+  "dashboardRefreshError": "Some dashboard information could not be refreshed. Please try again.",
   "dashboardActionHijriCalendar": "Hijri Calendar",
   "dashboardActionHijriCalendarSub": "Islamic date finder",
   "dashboardSectionDua": "Duah",

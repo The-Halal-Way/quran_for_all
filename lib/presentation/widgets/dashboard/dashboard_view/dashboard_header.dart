@@ -10,6 +10,7 @@ import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../viewmodels/dashboard/dashboard_viewmodel.dart';
+import '../../../viewmodels/islamic_days/islamic_days_viewmodel.dart';
 import '../../../viewmodels/settings_viewmodel.dart';
 import 'dashboard_daily_reminder_button.dart';
 import 'dashboard_date_label.dart';
@@ -23,9 +24,13 @@ class DashboardHeader extends StatelessWidget {
     final adjustment = context.select(
       (SettingsViewModel vm) => vm.settings.hijriDateAdjustment,
     );
+    final today = context.select((IslamicDaysViewModel vm) {
+      final now = vm.localNow;
+      return (year: now.year, month: now.month, day: now.day);
+    });
     final info = DashboardViewModel().headerInfo(
       context.l10n,
-      DateTime.now(),
+      DateTime(today.year, today.month, today.day),
       hijriDateAdjustment: adjustment,
     );
     final colors = Theme.of(context).colorScheme;
@@ -41,7 +46,7 @@ class DashboardHeader extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadius.lg),
             gradient: LinearGradient(
@@ -75,7 +80,7 @@ class DashboardHeader extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(height: AppSpacing.md),
+        const SizedBox(height: AppSpacing.sm),
         LayoutBuilder(
           builder: (context, constraints) {
             final stacked =

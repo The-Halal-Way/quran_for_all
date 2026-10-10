@@ -820,6 +820,7 @@
   "dashboardActionFullPrayerView": "পূর্ণ নামাজ ভিউ",
   "dashboardActionQiblaCompass": "কিবলা কম্পাস",
   "dashboardActionQiblaCompassSub": "কিবলার দিক দেখুন",
+  "dashboardRefreshError": "ড্যাশবোর্ডের কিছু তথ্য হালনাগাদ করা যায়নি। আবার চেষ্টা করুন।",
   "dashboardActionHijriCalendar": "হিজরি ক্যালেন্ডার",
   "dashboardActionHijriCalendarSub": "ইসলামি তারিখ খুঁজুন",
   "dashboardSectionDua": "দু'আ",

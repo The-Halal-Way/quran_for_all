@@ -2063,6 +2063,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardActionQiblaCompassSub => 'কিবলার দিক দেখুন';
 
   @override
+  String get dashboardRefreshError => 'ড্যাশবোর্ডের কিছু তথ্য হালনাগাদ করা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
   String get dashboardActionHijriCalendar => 'হিজরি ক্যালেন্ডার';
 
   @override

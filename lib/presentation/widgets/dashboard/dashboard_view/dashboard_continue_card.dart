@@ -36,7 +36,7 @@ class DashboardContinueCard extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           child: Ink(
-            height: 166 + (scale - 1).clamp(0, 3) * 110,
+            height: 144 + (scale - 1).clamp(0, 3) * 110,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [

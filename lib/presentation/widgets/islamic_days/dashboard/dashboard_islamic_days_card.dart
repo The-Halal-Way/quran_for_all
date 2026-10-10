@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/utils/app_page_route.dart';
 import '../../../../data/models/islamic_days/islamic_day.dart';
@@ -15,25 +16,28 @@ class DashboardIslamicDaysCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final vm = context.watch<IslamicDaysViewModel>();
+    final state = context.select(
+      (IslamicDaysViewModel vm) => (
+        entry: vm.today.isNotEmpty ? vm.today.first : vm.upcoming.firstOrNull,
+        todayCount: vm.today.length,
+      ),
+    );
     final l10n = context.l10n;
     final scheme = Theme.of(context).colorScheme;
-    final entry = vm.today.isNotEmpty
-        ? vm.today.first
-        : vm.upcoming.isNotEmpty
-        ? vm.upcoming.first
-        : null;
+    final entry = state.entry;
+    final isToday = state.todayCount > 0;
     final prohibited =
-        entry?.dayFasting == IslamicDayFasting.prohibited &&
-        vm.today.isNotEmpty;
+        entry?.dayFasting == IslamicDayFasting.prohibited && isToday;
     final accent = prohibited ? scheme.error : scheme.primary;
+    final hasDetails =
+        prohibited || state.todayCount > 1 || (entry != null && !isToday);
     return Semantics(
       button: true,
       label: l10n.islamicDaysTitle,
       child: Container(
         clipBehavior: Clip.antiAlias,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(AppRadius.xl),
           border: Border.all(color: accent.withValues(alpha: .2)),
           gradient: LinearGradient(
             begin: Alignment.topLeft,
@@ -56,17 +60,17 @@ class DashboardIslamicDaysCard extends StatelessWidget {
             child: Stack(
               children: [
                 Positioned(
-                  right: -45,
-                  top: -45,
-                  width: 185,
-                  height: 185,
+                  right: -32,
+                  top: -36,
+                  width: 150,
+                  height: 150,
                   child: Opacity(
                     opacity: .23,
                     child: IslamicDaysArtwork(color: accent),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(AppSpacing.lg),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -77,10 +81,12 @@ class DashboardIslamicDaysCard extends StatelessWidget {
                             color: accent,
                             size: 19,
                           ),
-                          const SizedBox(width: 8),
+                          const SizedBox(width: AppSpacing.sm),
                           Expanded(
                             child: Text(
-                              l10n.islamicDaysTitle,
+                              entry == null
+                                  ? l10n.islamicDaysTitle
+                                  : '${l10n.islamicDaysTitle} · ${isToday ? l10n.islamicDaysToday : l10n.islamicDaysUpcoming}',
                               style: AppTheme.text(context).labelLarge.copyWith(
                                 color: accent,
                                 fontWeight: FontWeight.w800,
@@ -90,39 +96,42 @@ class DashboardIslamicDaysCard extends StatelessWidget {
                           const Icon(Icons.arrow_outward_rounded, size: 20),
                         ],
                       ),
-                      const SizedBox(height: 14),
+                      const SizedBox(height: AppSpacing.sm),
                       Text(
                         entry?.event.title.resolve(l10n.localeName) ??
-                            l10n.islamicDaysSubtitle,
+                            l10n.islamicDaysExplore,
                         style: AppTheme.text(
                           context,
-                        ).titleLarge.copyWith(fontWeight: FontWeight.w800),
+                        ).titleMedium.copyWith(fontWeight: FontWeight.w800),
                       ),
-                      const SizedBox(height: 8),
-                      Text(
-                        entry == null
-                            ? l10n.islamicDaysExplore
-                            : '${vm.today.isNotEmpty ? l10n.islamicDaysToday : l10n.islamicDaysNextOccasion} · ${islamicDayHijriLabel(l10n, entry)}',
-                        style: AppTheme.text(
-                          context,
-                        ).bodySmall.copyWith(color: scheme.onSurfaceVariant),
-                      ),
-                      if (prohibited) ...[
-                        const SizedBox(height: 12),
-                        Text(
-                          l10n.islamicDaysProhibited,
-                          style: AppTheme.text(
-                            context,
-                          ).labelLarge.copyWith(color: accent),
-                        ),
-                      ],
-                      if (vm.today.length > 1) ...[
-                        const SizedBox(height: 8),
-                        Text(
-                          '${l10n.islamicDaysMoreToday} · ${islamicDayNumber(l10n, vm.today.length - 1)}',
-                          style: AppTheme.text(
-                            context,
-                          ).labelSmall.copyWith(color: accent),
+                      if (hasDetails) ...[
+                        const SizedBox(height: AppSpacing.sm),
+                        Wrap(
+                          spacing: AppSpacing.md,
+                          runSpacing: AppSpacing.xs,
+                          children: [
+                            if (entry != null && !isToday)
+                              Text(
+                                islamicDayGregorianLabel(l10n, entry.date),
+                                style: AppTheme.text(context).bodySmall
+                                    .copyWith(color: scheme.onSurfaceVariant),
+                              ),
+                            if (prohibited)
+                              Text(
+                                l10n.islamicDaysProhibited,
+                                style: AppTheme.text(context).bodySmall
+                                    .copyWith(
+                                      color: accent,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                              ),
+                            if (state.todayCount > 1)
+                              Text(
+                                '${l10n.islamicDaysMoreToday} · ${islamicDayNumber(l10n, state.todayCount - 1)}',
+                                style: AppTheme.text(context).bodySmall
+                                    .copyWith(color: scheme.onSurfaceVariant),
+                              ),
+                          ],
                         ),
                       ],
                     ],
