@@ -1,0 +1,1403 @@
+{
+  "schemaVersion": "1.0.0",
+  "part": 2,
+  "title": {
+    "en": "Prophecies — Part 2",
+    "bn": "ভবিষ্যদ্বাণী — দ্বিতীয় অংশ"
+  },
+  "defaultLocale": "en",
+  "supportedLocales": [
+    "en",
+    "bn"
+  ],
+  "fallbackLocale": "en",
+  "translationStatus": {
+    "en": "complete_source_text",
+    "bn": "translated"
+  },
+  "sourceTextPolicy": "The English source is preserved exactly. Bengali titles and body content are translated; the English source remains available in the en fields.",
+  "prophecyCount": 50,
+  "sourceSectionCount": 46,
+  "items": [
+    {
+      "id": "part2_section_01",
+      "sourceNumbers": [
+        1
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The appearance of a Fire from Hijaz which would illuminate the necks of the camels of Busra.",
+          "content": "Click here to read “The Fire of Hejaz”"
+        },
+        "bn": {
+          "title": "হিজাজে এমন আগুনের আবির্ভাব, যা বসরার উটগুলোর ঘাড় আলোকিত করবে",
+          "content": "“হিজাজের আগুন” পড়তে এখানে ক্লিক করুন।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [],
+      "detailsPage": {
+        "route": "/prophecies/fire-of-hejaz",
+        "url": null
+      }
+    },
+    {
+      "id": "part2_section_02",
+      "sourceNumbers": [
+        2
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The extension of the inhabitants of Medina.",
+          "content": "The Prophet (ﷺ) prophesied that the inhabitants of Medina would extend to reach the area of Ihab or Yahab which are miles away from the original area of the city of Medina [2]. Now, Medina’s inhabitants extend to these areas and further."
+        },
+        "bn": {
+          "title": "মদিনার জনবসতির বিস্তার",
+          "content": "নবী (ﷺ) ভবিষ্যদ্বাণী করেছিলেন যে, মদিনার অধিবাসীরা শহরের মূল সীমানা থেকে বহু মাইল দূরের ইহাব বা ইয়াহাব অঞ্চল পর্যন্ত বিস্তৃত হবে [২]। এখন মদিনার অধিবাসীরা এসব অঞ্চল এবং তারও পরবর্তী এলাকায় বিস্তৃত হয়েছে।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 2,
+          "text": "Sahih Muslim Book 54, Hadith 56"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_03",
+      "sourceNumbers": [
+        3
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Muslim conquest of Greater Syria",
+          "content": "“One of the greatest hardships to befall Muhammad was the Battle of the Trench. In the year 627 CE, a coalition army of pagan Arabs, numbering 10,000 men, attacked the only Muslim city in the world at the time, Medina. This was a good opportunity for the enemies of Islam to wipe out Muslims from the face of the earth. The Muslims were outnumbered three to one, and for two whole weeks they were under siege….\n\nShortly before the battle commenced, whilst the Muslims were digging a trench around the city of Medina in preparation for the impending attack, when they were facing impossible odds and were staring in the face of certain defeat, Muhammad made a bold prediction:”\n\nThe Prophet (ﷺ) then prophesied that the Muslims would conquer Greater Syria, as well as\n\nThe Muslim conquest of Persia, and\n\nThe Muslim conquest of Yemen. [3]\n\n“Muhammad (ﷺ) made the astonishing claim that the Muslims would not only take the lands of Yemen and Greater Syria, which was under the occupation of the Roman empire, but that they would also defeat the mighty Persian empire, one of the world’s great superpowers.”.\n\nWhen the Prophet (ﷺ) spoke about the Muslims conquering Persia, one of the companions was shocked. This is because it seemed impossible for the tiny Muslim state to defeat the world superpowers of the time. However, within a decade of the Prophet’s (ﷺ) death, this all came true.\n\n“The astonishing way that the Muslims defeated the superpowers captured the world by surprise, as historian Barnaby Rogerson explains:\n\n“You have to remember, that the two great superpowers were the Byzantine empire [Eastern Roman empire] and Sassanid Persia, they were the dominant powers. If you’re putting it in a modern parlance it’s a bit like the Eskimos taking on the United States of America and Russia”.”. [4]"
+        },
+        "bn": {
+          "title": "মুসলিমদের বৃহত্তর সিরিয়া বিজয়",
+          "content": "“মুহাম্মদের ওপর আপতিত হওয়া সবচেয়ে বড় বিপদগুলোর একটি ছিল খন্দকের যুদ্ধ। ৬২৭ খ্রিস্টাব্দে ১০,০০০ পৌত্তলিক আরবের একটি জোটবাহিনী তৎকালীন বিশ্বের একমাত্র মুসলিম নগরী মদিনায় আক্রমণ করে। পৃথিবীর বুক থেকে মুসলিমদের মুছে ফেলার জন্য এটি ইসলামের শত্রুদের একটি সুবর্ণ সুযোগ ছিল। মুসলিমরা সংখ্যায় তিন অনুপাতে এক ছিল এবং পুরো দুই সপ্তাহ অবরুদ্ধ অবস্থায় ছিল….\n\nযুদ্ধ শুরু হওয়ার কিছুক্ষণ আগে মুসলিমরা আসন্ন আক্রমণের প্রস্তুতিতে মদিনা নগরীর চারপাশে খন্দক খনন করছিল। তখন তারা অসম্ভব প্রতিকূলতার মুখোমুখি এবং নিশ্চিত পরাজয়ের দ্বারপ্রান্তে থাকা অবস্থায় মুহাম্মদ একটি সাহসী ভবিষ্যদ্বাণী করেন:”\n\nএরপর নবী (ﷺ) ভবিষ্যদ্বাণী করেন যে মুসলিমরা বৃহত্তর সিরিয়া বিজয় করবে, পাশাপাশি\n\nমুসলিমরা পারস্য বিজয় করবে এবং\n\nমুসলিমরা ইয়েমেন বিজয় করবে [৩]।\n\n“মুহাম্মদ (ﷺ) বিস্ময়করভাবে দাবি করেছিলেন যে মুসলিমরা শুধু রোমান সাম্রাজ্যের অধীনে থাকা ইয়েমেন ও বৃহত্তর সিরিয়ার ভূখণ্ডই দখল করবে না, তারা বিশ্বের অন্যতম বৃহৎ পরাশক্তি শক্তিশালী পারস্য সাম্রাজ্যকেও পরাজিত করবে।”\n\nনবী (ﷺ) যখন মুসলিমদের পারস্য বিজয়ের কথা বলেছিলেন, তখন একজন সাহাবি বিস্মিত হয়েছিলেন। কারণ, তৎকালীন বিশ্বের পরাশক্তিগুলোকে ক্ষুদ্র মুসলিম রাষ্ট্রের পরাজিত করা অসম্ভব মনে হচ্ছিল। কিন্তু নবী (ﷺ)-এর মৃত্যুর এক দশকের মধ্যেই এসব সত্যে পরিণত হয়।\n\n“মুসলিমরা যেভাবে পরাশক্তিগুলোকে পরাজিত করেছিল, তা বিশ্বকে বিস্মিত করেছিল—ইতিহাসবিদ বার্নাবি রজারসন এভাবে ব্যাখ্যা করেন:\n\n“মনে রাখতে হবে, দুটি বড় পরাশক্তি ছিল বাইজেন্টাইন সাম্রাজ্য [পূর্ব রোমান সাম্রাজ্য] এবং সাসানীয় পারস্য; তারাই ছিল প্রভাবশালী শক্তি। আধুনিক ভাষায় বললে, ব্যাপারটি এমন যেন এস্কিমোরা যুক্তরাষ্ট্র ও রাশিয়ার বিরুদ্ধে লড়াই করছে”।” [৪]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 3,
+          "text": "Sunan al-Kubra by an-Nasa’i, Hadith #8858. Ibn Hajar said “good chain of narrators” in Fath al-Bari, commentary on Hadith #3875."
+        },
+        {
+          "id": 4,
+          "text": "The Forbidden Prophecies, p. 62-65."
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_04",
+      "sourceNumbers": [
+        4
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Ali will fight the Khawarij.",
+          "content": "As spoken about in the first article, Ali and Mu’awiyah became leaders of the two groups of Muslims that split at the time. The Prophet (ﷺ) had prophesied this split beforehand, but also implicitly mentioned that Ali would be closer to the truth. This is unanimously accepted by Muslim scholars.\n\nThis is important here because the Prophet (ﷺ) also prophesied that the Khawarij would be fought by “the group closest to the truth”, i.e. Ali and those with him [5].\n\nAdditionally, the Prophet (ﷺ) said, ”… [Dhul-Khuwaisira, father of the Khawarij] has companions who pray and fast in such a way that you will consider your fasting negligible in comparison to theirs. They recite Qur’an but it does not go beyond their throats (i.e. they do not act on it) and they will desert Islam as an arrow goes through a victim’s body, so that the hunter, on looking at the arrow’s blade, would see nothing on it… The sign by which they will be recognized is that among them there will be a black man, one of whose arms will resemble a woman’s breast or a lump of meat moving loosely. Those people will appear when there will be differences amongst the people.” [6].\n\nAbu Sa’id al-Khudri said, “I testify that I heard this narration from Allah’s Messenger (ﷺ) and I testify that `Ali bin Abi Talib fought with such people [the Khawarij], and I was in his company. He ordered that the man should be looked for. The man was brought and I looked at him and noticed that he looked exactly as the Prophet (ﷺ) had described him.”\n\nThus, Ali was prophesied to fight the Khawarij, which came to pass. Adding onto that, there is also a second prophecy here which came true, which is that"
+        },
+        "bn": {
+          "title": "আলী খারিজিদের বিরুদ্ধে যুদ্ধ করবেন",
+          "content": "প্রথম প্রবন্ধে যেমন বলা হয়েছে, আলী ও মু‘আবিয়া তখন বিভক্ত হয়ে যাওয়া মুসলিমদের দুই দলের নেতা হয়েছিলেন। নবী (ﷺ) এই বিভক্তির আগেই ভবিষ্যদ্বাণী করেছিলেন এবং ইঙ্গিত দিয়েছিলেন যে আলী সত্যের অধিক নিকটবর্তী হবেন। মুসলিম আলেমরা এ বিষয়ে একমত।\n\nএখানে বিষয়টি গুরুত্বপূর্ণ, কারণ নবী (ﷺ) আরও ভবিষ্যদ্বাণী করেছিলেন যে খারিজিদের বিরুদ্ধে “সত্যের নিকটবর্তী দল” যুদ্ধ করবে—অর্থাৎ আলী ও তাঁর সঙ্গীরা [৫]।\n\nএছাড়া নবী (ﷺ) বলেছেন, “... [খারিজিদের পিতা ধুল-খুয়াইসিরার] এমন কিছু সঙ্গী থাকবে যারা এমনভাবে নামাজ পড়বে ও রোজা রাখবে যে তাদের তুলনায় তোমরা নিজেদের রোজাকে তুচ্ছ মনে করবে। তারা কুরআন তিলাওয়াত করবে, কিন্তু তা তাদের কণ্ঠনালীর নিচে নামবে না (অর্থাৎ তারা তার ওপর আমল করবে না), এবং তারা ইসলাম থেকে এমনভাবে বেরিয়ে যাবে যেমন তীর শিকারের দেহ ভেদ করে বেরিয়ে যায়; শিকারি তীরের ফলার দিকে তাকিয়ে তাতে কিছুই দেখতে পাবে না... তাদের চেনার লক্ষণ হলো, তাদের মধ্যে এমন এক কৃষ্ণাঙ্গ ব্যক্তি থাকবে যার একটি বাহু নারীর স্তন বা ঢিলে নড়তে থাকা মাংসপিণ্ডের মতো হবে। মানুষের মধ্যে মতভেদ দেখা দিলে এসব লোক প্রকাশ পাবে।” [৬]\n\nআবু সাঈদ আল-খুদরি বলেন, “আমি সাক্ষ্য দিচ্ছি যে আমি আল্লাহর রাসুলের (ﷺ) কাছ থেকে এই বর্ণনা শুনেছি এবং আমি সাক্ষ্য দিচ্ছি যে আলী ইবন আবি তালিব এমন লোকদের—খারিজিদের—বিরুদ্ধে যুদ্ধ করেছেন, আর আমি তাঁর সঙ্গী ছিলাম। তিনি লোকটিকে খুঁজে বের করার নির্দেশ দিলেন। লোকটিকে আনা হলে আমি তাকে দেখলাম এবং লক্ষ করলাম যে নবী (ﷺ) যেভাবে বর্ণনা করেছিলেন, তাকে ঠিক সেরকমই দেখাচ্ছিল।”\n\nঅতএব, আলী খারিজিদের বিরুদ্ধে যুদ্ধ করবেন—এ ভবিষ্যদ্বাণী সত্যে পরিণত হয়। এর সঙ্গে এখানে আরও একটি সত্যে পরিণত হওয়া ভবিষ্যদ্বাণী রয়েছে, তা হলো",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 5,
+          "text": "Sahih Muslim Book 5, Hadith 2325"
+        },
+        {
+          "id": 6,
+          "text": "Sahih al-Bukhari Book 61, Hadith 117"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_05",
+      "sourceNumbers": [
+        5
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "There will be a man amongst the Khawarij with the above traits.",
+          "content": ""
+        },
+        "bn": {
+          "title": "খারিজিদের মধ্যে বর্ণিত বৈশিষ্ট্যের একজন ব্যক্তি থাকবে",
+          "content": "",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_06",
+      "sourceNumbers": [
+        6
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The caliphate will be for thirty years, then there will be a monarchy after that.",
+          "content": "The Prophet (ﷺ) said: “The Caliphate will be in my Ummah for thirty years, then there will be monarchy after that.”\n\nAbu Bakr ruled for approximately two years, then Umar for ten, then Uthman for twelve, then Ali for five, then after Hassan ruled for a while, he gave Mu’awiyah leadership and the Umayyad dynasty came.\n\nSafinah, the narrator of this hadith who was a companion of the Prophet (ﷺ), said to Sa’id, “Count the Caliphate of Abu Bakr,” then he said: “Count the Caliphate of ‘Umar and the Caliphate of ‘Uthman.” Then he said to me: “Count the Caliphate of ‘Ali.”, then Sa’id said: “So we found that they add up to thirty years.” [7].\n\nIbn al-Arabi al-Maliki (not the heretic) said, “And the promise of the Truthful (ﷺ) came to pass… [the period of the caliphate] neither exceeded nor fell short a day, so glory be to the All-Encompassing; there is no other Lord but He.” [8]."
+        },
+        "bn": {
+          "title": "খিলাফত ত্রিশ বছর থাকবে, এরপর রাজতন্ত্র প্রতিষ্ঠিত হবে",
+          "content": "নবী (ﷺ) বলেছেন: “আমার উম্মতের মধ্যে ত্রিশ বছর খেলাফত থাকবে, এরপর রাজতন্ত্র হবে।”\n\nআবু বকর প্রায় দুই বছর শাসন করেন, এরপর উমর দশ বছর, উসমান বারো বছর এবং আলী পাঁচ বছর শাসন করেন। এরপর হাসান কিছু সময় শাসন করার পর মু‘আবিয়ার হাতে নেতৃত্ব অর্পণ করেন এবং উমাইয়া রাজবংশ প্রতিষ্ঠিত হয়।\n\nএই হাদিসের বর্ণনাকারী এবং নবী (ﷺ)-এর সাহাবি সাফিনা সাঈদকে বললেন, “আবু বকরের খেলাফতের সময় গণনা করো।” এরপর তিনি বললেন, “উমর ও উসমানের খেলাফতের সময় গণনা করো।” তারপর আমাকে বললেন, “আলীর খেলাফতের সময় গণনা করো।” এরপর সাঈদ বললেন, “তখন আমরা দেখতে পেলাম যে এগুলোর মোট সময় ত্রিশ বছর।” [৭]\n\nইবনুল আরাবি আল-মালিকি (ধর্মদ্রোহী ব্যক্তি নন) বলেন, “সত্যবাদী (ﷺ)-এর প্রতিশ্রুতি বাস্তবায়িত হয়েছে... [খেলাফতের সময়কাল] এক দিনও বেশি বা কম হয়নি। সুতরাং সর্বব্যাপী সত্তার পবিত্রতা ঘোষণা করছি; তিনি ছাড়া কোনো রব নেই।” [৮]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 7,
+          "text": "Jami’ at-Tirmidhi Book 33, Hadith 69"
+        },
+        {
+          "id": 8,
+          "text": "Ahkam al-Qur’an (4/1720)"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_07",
+      "sourceNumbers": [
+        7
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "A great murderer would be born from Thaqif.",
+          "content": "One of the companions of the Prophet (ﷺ), Abdullah ibn Zubair, was crucified on the road from Medina to Mecca by the tyrant king Hajjaj ibn Yusuf. Hajjaj was a Thaqafi and had killed many of the companions. After a while, Zubair’s corpse was thrown into the graveyard of the Jews as an insult towards him. Feeling proud with his sin, Hajjaj called for Zubair’s mother, Asma’, to come meet him. She refused multiple times, and his ego was hurt. So he went to her instead.\n\nHajjaj went to the mother of Zubair and boasted, “What do you think of what I’ve done to the enemy of Allah?”. She replied, “I think that you’ve destroyed his worldly life and destroyed your own afterlife.”. Then, she narrated something she heard from the Prophet (ﷺ), “The Prophet (ﷺ) told us that from Thaqif, there would be born a great liar and great murderer. The liar we have seen, and as far as the murderer is concerned, I do not find anyone else besides you.”. Hajjaj then got up and left with no reply [9]."
+        },
+        "bn": {
+          "title": "সাকিফ গোত্র থেকে একজন মহা হত্যাকারী জন্মগ্রহণ করবে",
+          "content": "নবী (ﷺ)-এর একজন সাহাবি আবদুল্লাহ ইবন যুবাইরকে মদিনা থেকে মক্কার পথে অত্যাচারী রাজা হাজ্জাজ ইবন ইউসুফ শূলে চড়িয়েছিল। হাজ্জাজ ছিল সাকাফি এবং সে বহু সাহাবিকে হত্যা করেছিল। কিছু সময় পর যুবাইরের মরদেহকে অপমান করার জন্য ইহুদিদের কবরস্থানে ফেলে দেওয়া হয়। নিজের অপরাধে গর্বিত হয়ে হাজ্জাজ যুবাইরের মা আসমাকে তার সঙ্গে দেখা করতে ডাকল। তিনি বারবার অস্বীকার করলেন, এতে তার অহংকারে আঘাত লাগল। তাই সে নিজেই তাঁর কাছে গেল।\n\nহাজ্জাজ যুবাইরের মাকে বলল, “আল্লাহর শত্রুর সঙ্গে আমি যা করেছি, তা সম্পর্কে তোমার কী মত?” তিনি উত্তর দিলেন, “আমার মনে হয়, তুমি তার দুনিয়া ধ্বংস করেছ এবং নিজের আখিরাতও ধ্বংস করেছ।” এরপর তিনি নবী (ﷺ)-এর কাছ থেকে শোনা একটি কথা বর্ণনা করলেন, “নবী (ﷺ) আমাদের বলেছেন যে সাকাফ গোত্র থেকে একজন বড় মিথ্যাবাদী এবং একজন বড় হত্যাকারী জন্ম নেবে। মিথ্যাবাদীকে আমরা দেখেছি; আর হত্যাকারীর ব্যাপারে তোমাকে ছাড়া আর কাউকে আমি মনে করি না।” হাজ্জাজ তখন কোনো উত্তর না দিয়ে উঠে চলে গেল [৯]।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 9,
+          "text": "Sahih Muslim Book 44, Hadith 325"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_08",
+      "sourceNumbers": [
+        8
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "A great liar would be born from Thaqif.",
+          "content": "As mentioned in the previous prophecy, a great liar was prophesied to come from Thaqif (a tribe). The question is, who is this great liar? Asma’ knew who it was while she spoke to Hajjaj and it was al-Mukhtar al-Thaqafi.\n\nMukhtar deceived many people and gathered a following before telling them that Gabriel is bringing him revelation. Eventually, Mukhtar became bold enough to proclaim prophethood. Mukhtar brought a lot of trouble to the Muslims due to his cunning deceit. His deceit eventually brought the Kaysaniyya sect, and his lies still live on today, as the Shia fell for his tricks and saw him as a good man despite his evil."
+        },
+        "bn": {
+          "title": "সাকিফ গোত্র থেকে একজন মহা মিথ্যাবাদী জন্মগ্রহণ করবে",
+          "content": "আগের ভবিষ্যদ্বাণীতে উল্লেখ করা হয়েছে যে সাকাফ গোত্র থেকে একজন বড় মিথ্যাবাদী আসবে। প্রশ্ন হলো, এই বড় মিথ্যাবাদী কে? আসমা হাজ্জাজের সঙ্গে কথা বলার সময় জানতেন যে সে হলো আল-মুখতার আস-সাকাফি।\n\nমুখতার অনেক মানুষকে প্রতারিত করে অনুসারী জড়ো করেছিল। এরপর সে বলত যে জিবরাইল তার কাছে ওহি নিয়ে আসছেন। শেষ পর্যন্ত মুখতার এতটা দুঃসাহসী হয়ে ওঠে যে নিজেকে নবী দাবি করে। তার কপট প্রতারণার কারণে মুসলিমরা অনেক সমস্যায় পড়ে। তার প্রতারণার ফলেই কায়সানিয়া সম্প্রদায়ের জন্ম হয়; আর তার মিথ্যাগুলো আজও টিকে আছে, কারণ শিয়ারা তার কৌশলে পড়ে তার দুষ্টতা সত্ত্বেও তাকে ভালো মানুষ মনে করেছিল।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_09",
+      "sourceNumbers": [
+        9
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Interest will become so widespread that even the one who tries to avoid it will still feel its consequences.",
+          "content": "The Prophet (ﷺ) said, “A time will come upon people in which they will consume usury.” It was said, “All of the people?”. The Prophet (ﷺ) replied, “Whoever does not consume it will be affected by its dust.” [10].\n\n“This clearly describes the state of the world economy today. As Muhammad predicted, in the modern world it is virtually impossible to avoid dealing with, or at the very least being impacted by, interest. Just think about how many people have interest-bearing bank accounts, buy things using credit cards, and are only able to afford to purchase a home through an interest-based mortgage.\n\nEven if one somehow manages to avoid dealing in interest directly, almost every aspect of our lives is impacted by it. Virtually every country in the world, even those considered to be wealthy, is drowning in interest-based debt. The United States, for example, is currently wrestling with a debt of trillions of dollars. Central banks influence the purchasing power of our money, and the financial system even suffered a global collapse in 2008 because of the widespread practice of buying and selling interest-based financial debt. This was a disaster which has plunged the world into economic turmoil, the consequences of which will be felt for generations to come.” [11]\n\nIt would be quite odd to hear this at the time of the Prophet (ﷺ), especially considering the fact that Muslims cannot do interest at all in any form. This, along with how the Prophet (ﷺ) said the Muslims would control a lot of land makes interest being widespread unlikely.\n\nOne of the factors that allowed interest to flourish and spread this much was the removal of the Gold Standard. Governments can now print as much money as they like and utilize interest to profit off of loans."
+        },
+        "bn": {
+          "title": "সুদ এত ব্যাপক হবে যে তা এড়াতে চাইলেও তার প্রভাব ভোগ করতে হবে",
+          "content": "নবী (ﷺ) বলেছেন, “মানুষের ওপর এমন একটি সময় আসবে যখন তারা সুদ ভক্ষণ করবে।” তাঁকে জিজ্ঞেস করা হলো, “সব মানুষ?” নবী (ﷺ) উত্তর দিলেন, “যে তা ভক্ষণ করবে না, সেও তার ধুলোয় আক্রান্ত হবে।” [১০]\n\n“এটি আজকের বিশ্ব অর্থনীতির অবস্থাকে স্পষ্টভাবে বর্ণনা করে। মুহাম্মদ যেমন ভবিষ্যদ্বাণী করেছিলেন, আধুনিক বিশ্বে সুদের লেনদেন থেকে—অথবা অন্তত তার প্রভাব থেকে—সম্পূর্ণভাবে বেঁচে থাকা প্রায় অসম্ভব। ভেবে দেখুন, কত মানুষ সুদভিত্তিক ব্যাংক হিসাব রাখে, ক্রেডিট কার্ডে কেনাকাটা করে এবং সুদভিত্তিক বন্ধক ছাড়া বাড়ি কেনার সামর্থ্য রাখে না।\n\nকেউ সরাসরি সুদের লেনদেন এড়াতে পারলেও আমাদের জীবনের প্রায় প্রতিটি দিক এর দ্বারা প্রভাবিত। বিশ্বের প্রায় প্রতিটি দেশ, এমনকি ধনী বলে বিবেচিত দেশগুলোও সুদভিত্তিক ঋণে ডুবে আছে। উদাহরণস্বরূপ, যুক্তরাষ্ট্র বর্তমানে ট্রিলিয়ন ডলারের ঋণের সঙ্গে লড়ছে। কেন্দ্রীয় ব্যাংকগুলো আমাদের অর্থের ক্রয়ক্ষমতাকে প্রভাবিত করে এবং সুদভিত্তিক আর্থিক ঋণ কেনাবেচার ব্যাপক চর্চার কারণে ২০০৮ সালে আর্থিক ব্যবস্থাও বৈশ্বিক ধসের শিকার হয়েছিল। এই বিপর্যয় বিশ্বকে অর্থনৈতিক অস্থিরতায় নিমজ্জিত করেছে, যার প্রভাব বহু প্রজন্ম ধরে অনুভূত হবে।” [১১]\n\nনবী (ﷺ)-এর সময়ে এ কথা শোনা বেশ অদ্ভুত হতো, বিশেষ করে যেহেতু মুসলিমরা কোনোভাবেই সুদ গ্রহণ করতে পারে না। এর সঙ্গে নবী (ﷺ)-এর এই কথা যে মুসলিমরা বিস্তীর্ণ ভূখণ্ড নিয়ন্ত্রণ করবে—এটি বিবেচনা করলে সুদের ব্যাপক বিস্তার অসম্ভব মনে হয়।\n\nসুদকে এত ব্যাপকভাবে ছড়িয়ে পড়ার সুযোগ দেওয়া একটি কারণ ছিল গোল্ড স্ট্যান্ডার্ড বাতিল করা। সরকারগুলো এখন ইচ্ছামতো টাকা ছাপতে পারে এবং ঋণের ওপর সুদ ব্যবহার করে লাভ করতে পারে।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 10,
+          "text": "Musnad Ahmed #10191"
+        },
+        {
+          "id": 11,
+          "text": "The Forbidden Prophecies, p. 67-68."
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_10",
+      "sourceNumbers": [
+        10
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Killing will increase.",
+          "content": "Another one of the prophecies from Muhammad (ﷺ) is the increase of killing [12].\n\nOnce again, there seems to be a paradox because literacy was prophesied to increase (Check part one to see that prophecy), but now we also hear of the increase of killing. How could people become educated yet kill each other so much? Yet this has been our reality and continues to be so. The historian Niall Ferguson notes this paradox of our modern age:\n\n“Why? What made the twentieth century, and particularly the fifty years from 1904 until 1953, so bloody? That this era was exceptionally violent may seem paradoxical. After all, the hundred years after 1900 were a time of unparalleled progress.” [13]"
+        },
+        "bn": {
+          "title": "হত্যাকাণ্ড বেড়ে যাবে",
+          "content": "মুহাম্মদ (ﷺ)-এর আরেকটি ভবিষ্যদ্বাণী হলো হত্যাকাণ্ড বৃদ্ধি পাবে [১২]।\n\nআবারও এখানে একটি আপাত বৈপরীত্য দেখা যায়, কারণ লেখাপড়া ও সাক্ষরতা বৃদ্ধির ভবিষ্যদ্বাণী করা হয়েছিল (এই ভবিষ্যদ্বাণীর জন্য প্রথম অংশ দেখুন), অথচ এখন আমরা হত্যাকাণ্ড বৃদ্ধির কথাও শুনছি। মানুষ কীভাবে শিক্ষিত হয়েও এত বেশি পরস্পরকে হত্যা করতে পারে? তবু এটাই আমাদের বাস্তবতা এবং এখনও তা অব্যাহত আছে। ইতিহাসবিদ নায়াল ফার্গুসন আমাদের আধুনিক যুগের এই বৈপরীত্য উল্লেখ করেছেন:\n\n“কেন? কী কারণে বিংশ শতাব্দী, বিশেষ করে ১৯০৪ থেকে ১৯৫৩ সাল পর্যন্ত পঞ্চাশ বছর এত রক্তক্ষয়ী ছিল? এই যুগটি অস্বাভাবিকভাবে সহিংস ছিল—বিষয়টি আপাতদৃষ্টিতে বৈপরীত্যপূর্ণ। সর্বোপরি, ১৯০০ সালের পরের একশ বছর ছিল অভূতপূর্ব অগ্রগতির সময়।” [১৩]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 12,
+          "text": "Sunan ibn Majah Book 36, Hadith 122"
+        },
+        {
+          "id": 13,
+          "text": "Ferguson, N. “The war of the world : history’s age of hatred.” (2007). Introduction."
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_11",
+      "sourceNumbers": [
+        11
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "People will pray in the mosque without a single believer amongst them.",
+          "content": "The Prophet (ﷺ) told us that, “An age will surely come when people gather and pray in the mosques, while there is not a single believer amongst them.” [14].\n\n“Al-Dhahabi, may Allah have mercy on him, said: “Its meaning is any believer who is complete in faith. He meant that there is no believer among them who is free from hypocrisy, in the sense that they do not engage in the characteristics of hypocrisy, such as habitual lying, betrayal, breaking promises, immorality, treachery, and other such traits. Today, we see groups of people, from the nomads of the state, gathering in the mosque, and there is not a single true believer among them, and indeed, we are among them.””[Al-Magrawi, The Encyclopedia of the Stances of the Salaf in Creed, Methodology, and Education / جهنملاو ةديقعلا يف فلسلا فقاوم ةعوسوم باتك ةيبرتلاو vol. 8, p. 282.]"
+        },
+        "bn": {
+          "title": "মানুষ মসজিদে নামাজ পড়বে, কিন্তু তাদের মধ্যে একজনও প্রকৃত মুমিন থাকবে না",
+          "content": "নবী (ﷺ) আমাদের বলেছেন, “এমন এক যুগ অবশ্যই আসবে যখন মানুষ মসজিদে একত্র হয়ে নামাজ পড়বে, অথচ তাদের মধ্যে একজনও মুমিন থাকবে না।” [১৪]\n\n“আল-যাহাবি (আল্লাহ তাঁর ওপর রহম করুন) বলেছেন: ‘এর অর্থ হলো এমন কোনো পূর্ণ ঈমানদার মুমিন থাকা নয়। তিনি বোঝাতে চেয়েছেন যে তাদের মধ্যে এমন কোনো মুমিন নেই যে মুনাফিকির বৈশিষ্ট্য—অভ্যাসগত মিথ্যা বলা, বিশ্বাসঘাতকতা, প্রতিশ্রুতি ভঙ্গ, অনৈতিকতা, প্রতারণা এবং এ ধরনের কাজ—থেকে মুক্ত। আজ আমরা দেখি, রাষ্ট্রের যাযাবরদের দল মসজিদে জড়ো হচ্ছে, অথচ তাদের মধ্যে একজন সত্যিকারের মুমিনও নেই; বরং আমরাও তাদের অন্তর্ভুক্ত।’” [আল-মাগরাওয়ি, আকিদা, পদ্ধতি ও শিক্ষায় সালাফদের অবস্থানের বিশ্বকোষ / موسوعة مواقف السلف في العقيدة والمنهج والتربية, খণ্ড ৮, পৃষ্ঠা ২৮২]।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 14,
+          "text": "Collected by Ibn Abi Shayba in al-Musannaf (30355, 37586) and al-Hakim (8365) who deemed it authentic according to the criteria of Sahih al-Bukhari and Sahih Muslim, and adh-Dhahabi concurred."
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_12",
+      "sourceNumbers": [
+        12
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Some Muslim tribes will unite with the idolators and become one of them.",
+          "content": "The Prophet (ﷺ) said, “The Hour shall not be established until tribes of my Ummah unite with the idolaters, and until they worship idols.” [15].\n\nThere are many examples of Muslim tribes uniting with idolators and becoming one of them throughout history, and one of the specific tribes was mentioned beforehand. Click here to read about “Dhul-Khalasa Prophecy”."
+        },
+        "bn": {
+          "title": "কিছু মুসলিম গোত্র মুশরিকদের সঙ্গে একত্রিত হয়ে তাদেরই অংশ হয়ে যাবে",
+          "content": "নবী (ﷺ) বলেছেন, “আমার উম্মতের গোত্রগুলো মুশরিকদের সঙ্গে একত্রিত না হওয়া এবং তারা মূর্তিপূজা না করা পর্যন্ত কিয়ামত প্রতিষ্ঠিত হবে না।” [১৫]\n\nইতিহাসজুড়ে মুসলিম গোত্রগুলো মুশরিকদের সঙ্গে একত্রিত হয়ে তাদেরই অংশে পরিণত হওয়ার বহু উদাহরণ রয়েছে, এবং একটি নির্দিষ্ট গোত্রের কথাও আগেই উল্লেখ করা হয়েছে। “ধুল-খালাসা ভবিষ্যদ্বাণী” সম্পর্কে পড়তে এখানে ক্লিক করুন।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 15,
+          "text": "Jami’ at-Tirmidhi Book 33, Hadith 62"
+        }
+      ],
+      "detailsPage": {
+        "route": "/prophecies/details",
+        "url": null
+      }
+    },
+    {
+      "id": "part2_section_13",
+      "sourceNumbers": [
+        13
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The seemingly tragic Treaty of Hudaibiya would end up as a “clear victory” for the Muslims.",
+          "content": "After the Muslims were tortured in Mecca for a decade, they were eventually forced to migrate out of the city. The main hub of the Muslims then became Medina. However, the pagans who stole from, tortured, and killed Muslims in Mecca were not happy yet, as they still attacked the Muslims even after their migration. The Muslims began to fight back and took back some of their stolen wealth, but they were still weak. Taking advantage of their weakness, the pagans forced the Muslims into a treaty which saddened them, as it ordered the Muslims to send any Muslim fleeing Mecca back into pagan hands.\n\nDuring the aftermath of what seemed to be a major setback for the Muslims, Surah al-Fath was revealed.\n\n“Indeed, We have given you a clear victory, that Allah may forgive you your sins of the past and the future” [Qur’an 48:1-2] [16]\n\nAlthough it may have seemed paradoxical how such a treaty would end up as a victory, the future events highlight it clearly.\n\nThe Muslims who were being tortured by the pagans in Mecca and forced to stay, one of them being Abu Jandal, banded together and fought back. Panicking, the pagans asked the Prophet (ﷺ) to tell them to stop. In return, they would revoke the part of the treaty that disallowed the Muslims to flee from Mecca [17].\n\nThe Treaty of Hudaibiya went from a setback to a victory, as the treaty also had a peace period of 10 years in it. From this, the Muslims were finally allowed to move around Arabia without constant threat from the Pagans of Mecca. Great benefits came to the Muslims because of this. Ibn Kathir says in his tafsir for the beginning of Surah al-Fath:\n\n“[The Treaty of Hudaibiya] resulted in great goodness, including people embracing Islam in large crowds and having the chance to meet each other openly. During that time, the believers preached to the idolaters and thus beneficial knowledge and faith spread all around.”"
+        },
+        "bn": {
+          "title": "দুঃখজনক মনে হওয়া হুদাইবিয়ার সন্ধি মুসলিমদের জন্য সুস্পষ্ট বিজয়ে পরিণত হবে",
+          "content": "মক্কায় এক দশক ধরে নির্যাতিত হওয়ার পর মুসলিমরা শেষ পর্যন্ত শহর ছেড়ে হিজরত করতে বাধ্য হয়। এরপর মুসলিমদের প্রধান কেন্দ্র হয়ে ওঠে মদিনা। কিন্তু মক্কার সেই মুশরিকরা, যারা মুসলিমদের সম্পদ লুট করেছিল, নির্যাতন করেছিল এবং হত্যা করেছিল, তারা তখনও সন্তুষ্ট ছিল না; হিজরতের পরও তারা মুসলিমদের আক্রমণ করতে থাকে। মুসলিমরা পাল্টা লড়াই শুরু করে এবং লুট করা কিছু সম্পদ ফিরিয়ে নেয়, কিন্তু তারা তখনও দুর্বল ছিল। তাদের দুর্বলতার সুযোগ নিয়ে মুশরিকরা মুসলিমদের ওপর এমন একটি চুক্তি চাপিয়ে দেয় যা তাদের দুঃখিত করেছিল, কারণ এতে মক্কা থেকে পালিয়ে আসা যেকোনো মুসলিমকে মুশরিকদের হাতে ফিরিয়ে দেওয়ার নির্দেশ ছিল।\n\nমুসলিমদের জন্য বড় বিপর্যয় মনে হওয়া সেই ঘটনার পরিপ্রেক্ষিতে সূরা আল-ফাতহ অবতীর্ণ হয়।\n\n“নিশ্চয়ই আমি তোমাকে এক সুস্পষ্ট বিজয় দান করেছি, যাতে আল্লাহ তোমার অতীত ও ভবিষ্যতের গুনাহ ক্ষমা করেন” [কুরআন ৪৮:১-২] [১৬]\n\nএমন একটি চুক্তি কীভাবে বিজয়ে পরিণত হবে তা আপাতদৃষ্টিতে বৈপরীত্যপূর্ণ মনে হলেও পরবর্তী ঘটনাগুলো তা স্পষ্ট করে।\n\nমক্কার মুশরিকদের হাতে নির্যাতিত এবং সেখানে থাকতে বাধ্য হওয়া মুসলিমরা—যাদের একজন ছিলেন আবু জান্দাল—একত্রিত হয়ে প্রতিরোধ শুরু করে। আতঙ্কিত হয়ে মুশরিকরা নবী (ﷺ)-কে তাদের থামাতে বলল। এর বিনিময়ে তারা চুক্তির সেই অংশ বাতিল করতে রাজি হলো, যা মুসলিমদের মক্কা থেকে পালিয়ে আসতে নিষেধ করেছিল [১৭]।\n\nহুদাইবিয়ার চুক্তি একটি বিপর্যয় থেকে বিজয়ে পরিণত হয়, কারণ চুক্তিতে দশ বছরের শান্তির সময়ও ছিল। এর ফলে মুসলিমরা অবশেষে মক্কার মুশরিকদের постоян угрозা ছাড়াই আরবজুড়ে চলাফেরা করতে পারল। এর কারণে মুসলিমরা অনেক বড় উপকার লাভ করে। সূরা আল-ফাতহের শুরু সম্পর্কে ইবন কাসির তাঁর তাফসিরে বলেন:\n\n“[হুদাইবিয়ার চুক্তির] ফলে অনেক কল্যাণ হয়েছিল; এর মধ্যে ছিল দলে দলে মানুষের ইসলাম গ্রহণ এবং একে অন্যের সঙ্গে প্রকাশ্যে সাক্ষাতের সুযোগ। সেই সময় মুমিনরা মুশরিকদের কাছে ইসলামের দাওয়াত দিত, ফলে উপকারী জ্ঞান ও ঈমান চারদিকে ছড়িয়ে পড়ে।”",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 16,
+          "text": "Sahih Muslim Book 32, Hadith 115"
+        },
+        {
+          "id": 17,
+          "text": "Sahih al-Bukhari Book 54, Hadith 19"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_14",
+      "sourceNumbers": [
+        14
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The first wife of the Prophet (ﷺ) to pass after him will be the most generous.",
+          "content": "Some of the wives of the Prophet (ﷺ) asked him, “Who amongst us will be the first to follow you (i.e. die after you)?” He said, “Whoever has the longest hand.”.\n\nAisha then says, “It was the hand of Zainab that was the longest amongst them, as she used to work with her hand and spend (that income) on charity.” and Zainab was the first wife of the Prophet (ﷺ) to pass after him [18]."
+        },
+        "bn": {
+          "title": "নবী ﷺ-এর স্ত্রীদের মধ্যে তাঁর পরে সর্বপ্রথম যিনি ইন্তেকাল করবেন, তিনি হবেন সবচেয়ে দানশীল",
+          "content": "নবী (ﷺ)-এর কয়েকজন স্ত্রী তাঁকে জিজ্ঞেস করলেন, “আমাদের মধ্যে কে সবার আগে আপনার সঙ্গে মিলিত হবে (অর্থাৎ আপনার পরে মারা যাবে)?” তিনি বললেন, “যার হাত সবচেয়ে লম্বা।”\n\nআয়েশা বলেন, “তাদের মধ্যে জয়নাবের হাতই সবচেয়ে লম্বা ছিল, কারণ তিনি নিজ হাতে কাজ করতেন এবং সেই উপার্জন সদকায় ব্যয় করতেন।” নবী (ﷺ)-এর স্ত্রীদের মধ্যে জয়নাবই তাঁর পরে সর্বপ্রথম ইন্তেকাল করেন [১৮]।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 18,
+          "text": "Sahih al-Bukhari Book 24, Hadith 24, Sahih Muslim Book 44, Hadith 146"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_15",
+      "sourceNumbers": [
+        15
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Qur’an will be preserved.",
+          "content": "“It is certainly We Who have revealed the Reminder, and it is certainly We Who will preserve it.” [Qur’an 15:9]\n\nIn contrast to books like the Bible, which still has Christian scholars debating on the authenticity of certain verses, the Qur’an is preserved and has no debate amongst Muslims on any verse being a fabrication or not.\n\nTo show the contrast, let’s look at one of the multiple verses that are debated in the Bible. The story of the Adultress in the Bible (Pericope Adulterae). Chris Keith, professor of New Testament and Early Christianity says this about the story:\n\n“Interestingly enough, the earliest manuscripts of the Gospel of John do not contain this beloved passage. Indeed, the first manuscript to contain the story is from around 400 C.E… The majority of scholars believe a later Christian scribe inserted the passage into John’s Gospel…” [Reference].\n\nHowever, to the dismay of those who wish otherwise, the Qur’an is clearly preserved. Although the Qur’an was transmitted orally and not through manuscripts, we can still use manuscripts to prove the Qur’an’s preservation.\n\n“The Qur’an of Uthman” at the Topkapi Museum in Istanbul has more than 99% of the Qur’an in text and dates to around 100 AH.\n\n“Codex Mashhad” has >90% of the Qur’anic text and is dated to originate within the first century Hijrah. There are many many more manuscripts that prove my point, some being dated to the lifetime of the Prophet (ﷺ), but you can see more here as I won’t list off dozens of manuscripts here.\n\nThis is one of the reasons why the Muslims are unanimous in agreement about the authenticity of every verse in the Qur’an, which many other groups cannot say about their own scripture. This is also proof that the Qur’an was prophesied to be preserved and that this prophecy was fulfilled."
+        },
+        "bn": {
+          "title": "কুরআন সংরক্ষিত থাকবে",
+          "content": "“নিশ্চয়ই আমিই উপদেশ [কুরআন] অবতীর্ণ করেছি এবং নিশ্চয়ই আমিই এর সংরক্ষক।” [কুরআন ১৫:৯]\n\nবাইবেলের মতো গ্রন্থগুলোর বিপরীতে, যেগুলোর কিছু আয়াতের সত্যতা নিয়ে খ্রিস্টান আলেমরা এখনও বিতর্ক করেন, কুরআন সংরক্ষিত এবং কোনো আয়াত জাল কি না—এ নিয়ে মুসলিমদের মধ্যে কোনো বিতর্ক নেই।\n\nবিষয়টি বোঝাতে বাইবেলের বিতর্কিত একাধিক আয়াতের একটি দেখা যাক। বাইবেলে ব্যভিচারিণীর কাহিনি (Pericope Adulterae) সম্পর্কে নিউ টেস্টামেন্ট ও প্রাচীন খ্রিস্টধর্মের অধ্যাপক ক্রিস কিথ বলেন:\n\n“আশ্চর্যের বিষয় হলো, যোহনের সুসমাচারের প্রাচীনতম পাণ্ডুলিপিগুলোতে এই প্রিয় অংশটি নেই। প্রকৃতপক্ষে, কাহিনিটি ধারণকারী প্রথম পাণ্ডুলিপিটি প্রায় ৪০০ খ্রিস্টাব্দের। অধিকাংশ আলেম মনে করেন, পরবর্তী সময়ের একজন খ্রিস্টান লিপিকার এই অংশটি যোহনের সুসমাচারে যুক্ত করেছিলেন...” [তথ্যসূত্র]\n\nযারা এর বিপরীত কামনা করে, তাদের হতাশ করে কুরআন স্পষ্টভাবেই সংরক্ষিত। কুরআন পাণ্ডুলিপির মাধ্যমে নয়, মৌখিকভাবে প্রচারিত হলেও পাণ্ডুলিপি ব্যবহার করেও এর সংরক্ষণ প্রমাণ করা যায়।\n\nইস্তাম্বুলের তোপকাপি জাদুঘরে থাকা “উসমানের কুরআন”-এ কুরআনের ৯৯ শতাংশেরও বেশি পাঠ রয়েছে এবং এটি আনুমানিক ১০০ হিজরির সময়কার।\n\n“কোডেক্স মাশহাদ”-এ কুরআনের ৯০ শতাংশের বেশি পাঠ রয়েছে এবং এটি হিজরি প্রথম শতাব্দীর বলে ধারণা করা হয়। এ দাবির প্রমাণ হিসেবে আরও অনেক পাণ্ডুলিপি রয়েছে; কিছু পাণ্ডুলিপি নবী (ﷺ)-এর জীবদ্দশার সময়কার। তবে এখানে কয়েক ডজন পাণ্ডুলিপির তালিকা দেওয়া হবে না।\n\nমুসলিমরা কুরআনের প্রতিটি আয়াতের সত্যতা সম্পর্কে সর্বসম্মত—এটি তার অন্যতম কারণ, অথচ অনেক অন্য সম্প্রদায় নিজেদের ধর্মগ্রন্থ সম্পর্কে এমন কথা বলতে পারে না। এটিও প্রমাণ করে যে কুরআন সংরক্ষিত থাকবে—এ ভবিষ্যদ্বাণী করা হয়েছিল এবং তা পূর্ণ হয়েছে।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [],
+      "detailsPage": {
+        "route": "/prophecies/dhul-khalasa",
+        "url": null
+      }
+    },
+    {
+      "id": "part2_section_16",
+      "sourceNumbers": [
+        16
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Muslims will use intoxicants and justify it by calling them another name.",
+          "content": "The Prophet (ﷺ) said, “People from my nation (i.e. the Muslims) will certainly consume khamr, calling it by another name.” [19].\n\nKhamr is anything that intoxicates the user, but it usually refers to wine in Arabic. Due to this, people in the past justified drinking alcoholic drinks by saying “It’s not really khamr”, calling it another name and falling into the exact trick the Prophet (ﷺ) warned us of. Now, we have it even worse. People take drugs and then say “Only alcohol is prohibited, not drugs.” because, once again, khamr usually refers to wine. So this prophecy has come true in the past and still rings true today."
+        },
+        "bn": {
+          "title": "মুসলিমরা মাদকদ্রব্য ব্যবহার করবে এবং অন্য নামে ডেকে তা বৈধতা দেওয়ার চেষ্টা করবে",
+          "content": "নবী (ﷺ) বলেছেন, “আমার উম্মতের কিছু লোক অবশ্যই খামর পান করবে এবং তার অন্য নাম দেবে।” [১৯]\n\nখামর এমন যেকোনো বস্তু যা ব্যবহারকারীকে নেশাগ্রস্ত করে, যদিও আরবিতে এটি সাধারণত মদ বোঝায়। এ কারণে অতীতে কিছু মানুষ মদ্যপানকে বৈধ প্রমাণ করতে বলত, “এটি আসলে খামর নয়”; তারা অন্য নাম দিয়ে সেই একই কৌশলে পড়ত, যে কৌশল সম্পর্কে নবী (ﷺ) আমাদের সতর্ক করেছিলেন। এখন বিষয়টি আরও গুরুতর। মানুষ মাদক গ্রহণ করে বলে, “শুধু মদ নিষিদ্ধ, মাদক নয়।” কারণ খামর সাধারণত মদ বোঝায়। অতএব এই ভবিষ্যদ্বাণী অতীতেও সত্য হয়েছে এবং আজও সত্য হয়ে চলেছে।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 19,
+          "text": "Sunan Ibn Majah, Hadith: 4020, Musannaf Ibn Abi Shaybah, Hadith: 24227. Also see: Sunan Abi Dawud, Hadith: 3681"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_17",
+      "sourceNumbers": [
+        17
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "There will be people who abuse others with multi-flailed whips.",
+          "content": "The Prophet (ﷺ) said, “There are two kinds of people among the denizens of Hell whom I have not seen yet…”, one being “people having whips like the tails of an ox, [unjustly] beating people.” [20].\n\nNotice how the Prophet (ﷺ) had never seen this kind of person before, and now this is a common image in our minds. Two of the most prominent examples of this type of person are the abusive police force in the past and the American slave owners, both beating those they had authority over with whips like the tails of ox, i.e. multi-flailed whips.\n\nAl-Nawawi said: “With regard to those who would have whips, they are those who work for the police.” [21].\n\nAl-Sakhaawi said: “They are now the helpers of the oppressors, and usually it refers to the worst group around the ruler.” [22]."
+        },
+        "bn": {
+          "title": "কিছু মানুষ বহু ফিতাযুক্ত চাবুক দিয়ে অন্যদের নির্যাতন করবে",
+          "content": "নবী (ﷺ) বলেছেন, “জাহান্নামের অধিবাসীদের মধ্যে এমন দুই শ্রেণির মানুষ আছে যাদের আমি এখনও দেখিনি...” তাদের একটি হলো “এমন লোক, যাদের হাতে গরুর লেজের মতো চাবুক থাকবে এবং তারা অন্যায়ভাবে মানুষকে প্রহার করবে।” [২০]\n\nলক্ষ করুন, নবী (ﷺ) আগে কখনও এই ধরনের মানুষ দেখেননি; অথচ এখন তারা আমাদের পরিচিত এক চিত্র। এই ধরনের মানুষের সবচেয়ে উল্লেখযোগ্য দুটি উদাহরণ হলো অতীতের অত্যাচারী পুলিশ বাহিনী এবং আমেরিকান দাসমালিকরা—উভয়েই তাদের অধীনস্থ মানুষকে গরুর লেজের মতো বহু-ফিতাযুক্ত চাবুক দিয়ে প্রহার করত।\n\nআন-নববী বলেন: “যাদের হাতে চাবুক থাকবে, তারা হলো পুলিশের কাজে নিয়োজিত লোকেরা।” [২১]\n\nআস-সাখাবি বলেন: “তারা এখন অত্যাচারীদের সহকারী; সাধারণত শাসকের আশপাশের নিকৃষ্ট দলকে এ কথা বোঝানো হয়।” [২২]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 20,
+          "text": "Sahih Muslim Book 37, Hadith 190"
+        },
+        {
+          "id": 21,
+          "text": "Sharh al-Nawawi ‘ala Saheeh Muslim, 17/191"
+        },
+        {
+          "id": 22,
+          "text": "Al-Ishaa’ah li Ashraat il-Saa’ah, p. 119"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_18",
+      "sourceNumbers": [
+        18
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The wind that brought news.",
+          "content": "Jabir reported that the Prophet (ﷺ) came back from a journey, and as he was near Medina, there was such a violent gale that the mountain seemed to be pressed. The Prophet (ﷺ) said: “This wind has brought news of the death of a hypocrite.”. As they reached Medina, they were told a notorious hypocrite from amongst the hypocrites had died [23].\n\nThe notorious hypocrite was Rifa’ah bin Zayd, an influential Jew who pretended to be Muslim to try and destroy Islam from within."
+        },
+        "bn": {
+          "title": "সংবাদবাহী বাতাস",
+          "content": "জাবির বর্ণনা করেন, নবী (ﷺ) একটি সফর থেকে ফিরছিলেন। মদিনার কাছে পৌঁছালে এমন প্রবল ঝড় উঠল যে মনে হচ্ছিল পাহাড়টি চেপে ধরা হয়েছে। নবী (ﷺ) বললেন, “এই বাতাস একজন মুনাফিকের মৃত্যুর সংবাদ নিয়ে এসেছে।” মদিনায় পৌঁছে তাঁদের জানানো হলো যে মুনাফিকদের মধ্যে একজন কুখ্যাত মুনাফিক মারা গেছে [২৩]।\n\nসেই কুখ্যাত মুনাফিক ছিল রিফাআহ ইবন যায়দ—একজন প্রভাবশালী ইহুদি, যে ভেতর থেকে ইসলাম ধ্বংস করার উদ্দেশ্যে নিজেকে মুসলিম সাজিয়েছিল।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 23,
+          "text": "Sahih Muslim Book 51, Hadith 18"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_19",
+      "sourceNumbers": [
+        19
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The next four prophecies are all in one hadith:",
+          "content": "In an authentic hadith, the Prophet (ﷺ) said, “From among my followers there will be some people who will consider illegal sexual intercourse, the wearing of silk, the drinking of alcoholic drinks and the use of musical instruments, as lawful.” [24].\n\nFrom this, we see that,\n\n1. Muslims will say fornication is permissible,\n\n2. Muslims will say men wearing silk is permissible,\n\n3. Muslims will say Khamr (intoxicants) are permissible, and finally\n\n4. Muslims will say musical instruments are permissible.\n\nOne of the biggest culprits are the Hadith rejectors, which I spoke about in the first part. These people who only refer to the Qur’an and reject hadith claim that the matters in prophecies 22, 23, and 24 (2, 3, 4) are not prohibited in the Qur’an so they’re permissible.\n\nHowever, you will even see this happen outside of those that reject Hadiths. For example, some use intoxicants and refer to them by another name to justify it (3, See prophecy #18). Some others reject this hadith and say that it is not authentic, and so they say music is permissible (4). This is despite the hadith having a separate authentic chain, as well as a past consensus on the impermissibility of most musical instruments. There are even some others who say a Muslim woman can marry a Christian man, even though that “marriage” is null and will be fornication in all cases (1)!\n\nMore examples are out there, but I will stop here."
+        },
+        "bn": {
+          "title": "বাংলা অনুবাদ প্রয়োজন: The next four prophecies are all in one hadith:",
+          "content": "একটি সহিহ হাদিসে নবী (ﷺ) বলেছেন, “আমার অনুসারীদের মধ্যে এমন কিছু লোক হবে যারা অবৈধ যৌনসম্পর্ক, পুরুষদের রেশম পরা, মদ্যপান এবং বাদ্যযন্ত্র ব্যবহারকে বৈধ মনে করবে।” [২৪]\n\nএ থেকে আমরা দেখতে পাই,\n\n১. কিছু মুসলিম ব্যভিচারকে বৈধ বলবে,\n\n২. কিছু মুসলিম পুরুষের রেশম পরাকে বৈধ বলবে,\n\n৩. কিছু মুসলিম খামর (নেশাদ্রব্য) বৈধ বলবে, এবং সবশেষে\n\n৪. কিছু মুসলিম বাদ্যযন্ত্রকে বৈধ বলবে।\n\nএর অন্যতম বড় কারণ হলো হাদিস অস্বীকারকারীরা, যাদের কথা প্রথম অংশে বলা হয়েছে। যারা শুধু কুরআনের দিকে ফিরে হাদিস অস্বীকার করে, তারা দাবি করে যে ভবিষ্যদ্বাণী ২২, ২৩ ও ২৪-এর বিষয়গুলো (২, ৩ ও ৪) কুরআনে নিষিদ্ধ নয়, তাই সেগুলো বৈধ।\n\nতবে হাদিস অস্বীকারকারীদের বাইরেও এমন ঘটনা দেখা যায়। উদাহরণস্বরূপ, কেউ কেউ নেশাদ্রব্যের অন্য নাম ব্যবহার করে তা বৈধ করার চেষ্টা করে (৩; ভবিষ্যদ্বাণী ১৮ দেখুন)। আবার কেউ কেউ এই হাদিসকে অপ্রামাণিক বলে দাবি করে এবং তাই বাদ্যযন্ত্রকে বৈধ বলে (৪)। অথচ এই হাদিসের পৃথক একটি সহিহ সনদ রয়েছে এবং অধিকাংশ বাদ্যযন্ত্রের অবৈধতার বিষয়ে অতীতের আলেমদের ঐকমত্যও ছিল। আরও কেউ কেউ বলে যে একজন মুসলিম নারী খ্রিস্টান পুরুষকে বিয়ে করতে পারে, যদিও এমন “বিয়ে” বাতিল এবং সব ক্ষেত্রেই ব্যভিচার হবে (১)!\n\nএ ধরনের আরও উদাহরণ আছে, কিন্তু এখানে আমি থামছি।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 24,
+          "text": "Sahih Bukhari Book 74, Hadith 16"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_20",
+      "sourceNumbers": [
+        20
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Muslims will conquer Egypt, along with some advice about it.",
+          "content": "Abu Dharr reported the Prophet (ﷺ) as saying:\n\n“You will soon conquer Egypt… So when you conquer it, treat its inhabitants well, for they have a right of kinship upon you. And when you see two persons falling into dispute amongst themselves for the space of a brick, then get out of that land.”. Abu Dharr said: I saw Abd al-Rahman bin Shurahbil and his brother Rabi’a disputing with one another for the space of a brick. So I left that land [25]."
+        },
+        "bn": {
+          "title": "মুসলিমরা মিসর বিজয় করবে এবং সে সম্পর্কে উপদেশ থাকবে",
+          "content": "আবু যার নবী (ﷺ)-এর বক্তব্য বর্ণনা করেন:\n\n“তোমরা শিগগিরই মিসর বিজয় করবে... অতএব যখন তা বিজয় করবে, তার অধিবাসীদের সঙ্গে সদাচরণ করবে, কারণ তাদের সঙ্গে তোমাদের আত্মীয়তার অধিকার রয়েছে। আর যখন দেখবে দুজন মানুষ একটি ইটের জায়গা নিয়ে পরস্পর বিবাদ করছে, তখন সেই ভূমি ছেড়ে চলে যাবে।” আবু যার বলেন: আমি আবদুর রহমান ইবন শুরাহবিল ও তার ভাই রাবিয়াকে একটি ইটের জায়গা নিয়ে বিবাদ করতে দেখেছি। তাই আমি সেই ভূমি ছেড়ে চলে যাই [২৫]।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 25,
+          "text": "Sahih Muslim Book 44, Hadith 323"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_21",
+      "sourceNumbers": [
+        21
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Constantinople will be conquered by the Muslims before Rome.",
+          "content": "Someone asked the Prophet (ﷺ), “Which city will be conquered first, Constantinople or Rome?”, and the Prophet (ﷺ) replied, “The city of Heraclius will be liberated first.”, meaning Constantinople [26].\n\n800 years later, Constantinople was conquered by the Muslims, and Rome is yet to be liberated."
+        },
+        "bn": {
+          "title": "রোমের আগে মুসলিমরা কনস্টান্টিনোপল বিজয় করবে",
+          "content": "এক ব্যক্তি নবী (ﷺ)-কে জিজ্ঞেস করল, “কোন শহর আগে বিজিত হবে—কনস্টান্টিনোপল না রোম?” নবী (ﷺ) উত্তর দিলেন, “হেরাক্লিয়াসের শহর আগে মুক্ত হবে”—অর্থাৎ কনস্টান্টিনোপল [২৬]।\n\nএর ৮০০ বছর পর মুসলিমরা কনস্টান্টিনোপল বিজয় করে, আর রোম এখনও মুক্ত হয়নি।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 26,
+          "text": "Collected by Ahmad (2/176), and al-Hakim (4/468; 508, 555) who deemed it authentic according to the criteria of Sahih al-Bukhari and Sahih Muslim, and adh-Dhahabi concurred."
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_22",
+      "sourceNumbers": [
+        22
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Muslims will fall into the same traps as the Jews and Christians.",
+          "content": "The Prophet (ﷺ) said, “You will follow the ways of those nations who were before you, span by span and cubit by cubit (i.e., inch by inch) so much so that even if they entered a hole of a lizard, you would follow them.” The companions said, “O Allah’s Messenger (ﷺ)! Do you mean the Jews and the Christians?” He said, “Who else?” [27].\n\nSo some Muslims will end up following the Jews and Christians in their deviances even in what is dangerous and clearly prohibited. This is an incredibly profound hadith that describes many of the deviances of the Muslims throughout history and you will see how true it is even today.\n\nOne prominent example that has happened in the past and is still somewhat prominent today is praying to Saints and Prophets. The Orthodox and Catholic Christians pray to their saints and even have certain saints for certain things they want. This is what the Shias do today, among other groups who have fallen into this trap.\n\nHowever, an example that is especially telling is something that has, as far as I know, only happened recently. Some Christians and Jews in the West have distorted their book and said that homosexuality is not prohibited in their religion. The exact excuse they use when the story of Lutt (Job) is brought up is to say that “It’s not about homosexuality, it’s about rpe!”. Amazingly, some Muslims are now saying that homosexuality is not prohibited in Islam. Their excuse? The exact same as the Christians and Jews: “The story of Lutt is about rpe and not homosexuality.”."
+        },
+        "bn": {
+          "title": "মুসলিমরা ইহুদি ও খ্রিস্টানদের একই ফাঁদে পড়বে",
+          "content": "নবী (ﷺ) বলেছেন, “তোমরা অবশ্যই তোমাদের আগের জাতিদের পথ অনুসরণ করবে—হাত বিঘত বিঘত, হাতের মাপ মাপ; এমনকি তারা যদি গিরগিটির গর্তে প্রবেশ করে, তবুও তোমরা তাদের অনুসরণ করবে।” সাহাবিরা বললেন, “হে আল্লাহর রাসুল (ﷺ)! আপনি কি ইহুদি ও খ্রিস্টানদের বোঝাচ্ছেন?” তিনি বললেন, “আর কে?” [২৭]\n\nফলে কিছু মুসলিম ইহুদি ও খ্রিস্টানদের বিচ্যুতিগুলোতেও তাদের অনুসরণ করবে, এমনকি যেসব বিষয় বিপজ্জনক ও স্পষ্টভাবে নিষিদ্ধ। এটি অত্যন্ত গভীর একটি হাদিস, যা ইতিহাসজুড়ে মুসলিমদের বহু বিচ্যুতি বর্ণনা করে; আজও এর সত্যতা দেখা যায়।\n\nঅতীতে ঘটে যাওয়া এবং আজও কিছুটা প্রচলিত একটি উল্লেখযোগ্য উদাহরণ হলো সাধু ও নবীদের কাছে প্রার্থনা করা। অর্থোডক্স ও ক্যাথলিক খ্রিস্টানরা তাদের সাধুদের কাছে প্রার্থনা করে এবং বিভিন্ন প্রয়োজনের জন্য নির্দিষ্ট সাধুও রয়েছে। শিয়ারা আজ এ কাজ করে, পাশাপাশি আরও কিছু গোষ্ঠীও এই ফাঁদে পড়েছে।\n\nতবে বিশেষভাবে লক্ষণীয় একটি উদাহরণ, যতদূর আমি জানি, সম্প্রতি ঘটেছে। পশ্চিমের কিছু খ্রিস্টান ও ইহুদি তাদের ধর্মগ্রন্থ বিকৃত করে বলেছে যে তাদের ধর্মে সমকামিতা নিষিদ্ধ নয়। লুতের (জব) কাহিনি সামনে এলে তারা যে অজুহাত ব্যবহার করে তা হলো, “এটি সমকামিতা নিয়ে নয়, এটি ধর্ষণ নিয়ে!” আশ্চর্যের বিষয়, কিছু মুসলিমও এখন বলছে ইসলাম সমকামিতা নিষিদ্ধ করেনি। তাদের অজুহাত? খ্রিস্টান ও ইহুদিদের মতো ঠিক একই: “লুতের কাহিনি ধর্ষণ নিয়ে, সমকামিতা নিয়ে নয়।”",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 27,
+          "text": "Sahih al-Bukhari Book 96, Hadith 50"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_23",
+      "sourceNumbers": [
+        23
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Muslims will adorn their mosques and compete with them like the Jews and Christian.",
+          "content": "Another one of the ways that the Muslims followed the Jews and Christians was the adornment of their places of worship.\n\nThe Prophet (ﷺ) said: “The Last Hour will not come until people compete with one another about mosques.” [28], and Ibn Abbas said about this prophecy, “You will adorn your mosques like the Jews and Christians did.”."
+        },
+        "bn": {
+          "title": "মুসলিমরা ইহুদি ও খ্রিস্টানদের মতো মসজিদ সাজিয়ে তা নিয়ে প্রতিযোগিতা করবে",
+          "content": "মুসলিমরা ইহুদি ও খ্রিস্টানদের অনুসরণ করার আরেকটি দিক হলো তাদের উপাসনালয় সাজানো।\n\nনবী (ﷺ) বলেছেন: “মানুষ পরস্পরের সঙ্গে মসজিদ নির্মাণ নিয়ে প্রতিযোগিতা না করা পর্যন্ত কিয়ামত আসবে না।” [২৮]। আর ইবন আব্বাস এই ভবিষ্যদ্বাণী সম্পর্কে বলেছেন, “তোমরা ইহুদি ও খ্রিস্টানদের মতো তোমাদের মসজিদগুলো সাজাবে।”",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 28,
+          "text": "Sunan Abi Dawud Book 2, Hadith 59, Authenticated by al-Albani"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_24",
+      "sourceNumbers": [
+        24
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Authority will be given to those who do not deserve it.",
+          "content": "The Prophet (ﷺ) said, “When trust is lost, then wait for the Hour.” Abu Huraira said, “How is the trust lost, O Messenger of Allah?” The Prophet said, “When authority is given to those who do not deserve it, then wait for the Hour.”[29]."
+        },
+        "bn": {
+          "title": "যারা কর্তৃত্বের যোগ্য নয়, তাদের হাতে কর্তৃত্ব দেওয়া হবে",
+          "content": "নবী (ﷺ) বলেছেন, “যখন আমানত নষ্ট হয়ে যাবে, তখন কিয়ামতের অপেক্ষা করো।” আবু হুরায়রা বললেন, “হে আল্লাহর রাসুল, আমানত কীভাবে নষ্ট হবে?” নবী বললেন, “যখন অযোগ্য লোকদের হাতে কর্তৃত্ব অর্পণ করা হবে, তখন কিয়ামতের অপেক্ষা করো।” [২৯]।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 29,
+          "text": "Sahih al-Bukhari Book 81, Hadith 85"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_25",
+      "sourceNumbers": [
+        25
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "People will start decorating their houses like clothes.",
+          "content": "The Prophet (ﷺ) said, “The Final Hour will not come until people build houses which are designed like colored garments.” [30], i.e. dyed and painted with designs and colors.\n\nTo understand this fully, compare what the Prophet’s (ﷺ) house looked like to what we have now. People’s homes in the past were simple and almost colorless, as dye and paint were expensive and hard to come by. Now, both of those are easily accessible and commercially available for a relatively cheap price. That is why this description was not accurate in the past, but it is today."
+        },
+        "bn": {
+          "title": "মানুষ পোশাকের মতো নিজেদের ঘর সাজাতে শুরু করবে",
+          "content": "নবী (ﷺ) বলেছেন, “মানুষ রঙিন পোশাকের মতো নকশা করা বাড়ি নির্মাণ না করা পর্যন্ত শেষ সময় আসবে না।” [৩০] অর্থাৎ রং ও নকশা দিয়ে রঞ্জিত ও আঁকা বাড়ি।\n\nএটি সম্পূর্ণভাবে বুঝতে নবী (ﷺ)-এর বাড়ির সঙ্গে আমাদের বর্তমান বাড়ির তুলনা করুন। অতীতে মানুষের বাড়িগুলো ছিল সরল এবং প্রায় রংহীন, কারণ রং ও রঞ্জক পদার্থ দুষ্প্রাপ্য ও ব্যয়বহুল ছিল। এখন দুটিই সহজলভ্য এবং তুলনামূলকভাবে কম দামে বাজারে পাওয়া যায়। এ কারণেই অতীতে এই বর্ণনা যথাযথ ছিল না, কিন্তু আজ তা বাস্তবতার সঙ্গে মিলে যায়।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 30,
+          "text": "al-Adab al-Mufrad Book 25, Hadith 18, Authenticated by al-Albani"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_26",
+      "sourceNumbers": [
+        26
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Security will come to the previously dangerous Arab lands.",
+          "content": "Narrated `Adi bin Hatim:\n\nWhile I was in the city of the Prophet (ﷺ), a man came and complained to him of destitution and poverty. Then another man came and complained of robbery by highwaymen. The Prophet (ﷺ) said, “Adi! Have you been to Al-Hira?” I said, “I haven’t been to it, but I was informed about it.” He said, “If you live long [enough], you will see a woman travel on camelback from al-Hira till she circles the Ka‘ba while not fearing anyone but Allah.” I said to myself, “What will happen to the robbers of the tribe of Tai who have spread evil throughout the country?” The Prophet (ﷺ) further said. “If you should live long, the treasures of Khosrau will be and taken as spoils.” I asked, “You mean Khosrau, son of Hurmuz?” He said, “Khosrau, son of Hurmuz.”.\n\n‘Adi then speaks about what happened later in his life: “I have in fact seen a woman travel on camelback from al-Hira till she circled the Ka‘ba while not fearing anyone but Allah, and I was among those who conquered the treasures of Chosroes, the son of Hurmuz.” [31]."
+        },
+        "bn": {
+          "title": "আগে বিপজ্জনক আরব ভূখণ্ডে নিরাপত্তা প্রতিষ্ঠিত হবে",
+          "content": "আদি ইবন হাতিম বর্ণনা করেন:\n\nআমি যখন নবী (ﷺ)-এর শহরে ছিলাম, তখন একজন লোক এসে তাঁর কাছে দারিদ্র্য ও অভাবের অভিযোগ করল। এরপর আরেকজন এসে পথে ডাকাতদের ভয়ে আতঙ্কিত হওয়ার অভিযোগ করল। নবী (ﷺ) বললেন, “আদি! তুমি কি হিরায় গিয়েছ?” আমি বললাম, “আমি সেখানে যাইনি, তবে সে সম্পর্কে আমাকে জানানো হয়েছে।” তিনি বললেন, “তুমি যদি দীর্ঘজীবী হও, তবে অবশ্যই দেখবে—একজন নারী আল-হিরা থেকে উটে চড়ে কাবা প্রদক্ষিণ করবে এবং আল্লাহ ছাড়া কাউকে ভয় করবে না।” আমি মনে মনে বললাম, “তাই গোত্রের ডাকাতদের কী হবে, যারা সারা দেশে অশান্তি ছড়িয়েছে?” নবী (ﷺ) আরও বললেন, “তুমি যদি দীর্ঘজীবী হও, তবে কিসরার ধনসম্পদ লুণ্ঠিত হতে দেখবে।” আমি জিজ্ঞেস করলাম, “হুরমুজের পুত্র কিসরার কথা বলছেন?” তিনি বললেন, “হুরমুজের পুত্র কিসরার কথা বলছি।”\n\nআদি তাঁর জীবনের পরবর্তী ঘটনা সম্পর্কে বলেন: “আমি সত্যিই এক নারীকে আল-হিরা থেকে উটে চড়ে কাবা প্রদক্ষিণ করতে দেখেছি, সে আল্লাহ ছাড়া কাউকে ভয় করছিল না। আর আমি হুরমুজের পুত্র কিসরার ধনসম্পদ বিজয়ীদের একজন ছিলাম।” [৩১]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 31,
+          "text": "Sahih al-Bukhari Book 61, Hadith 102"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_27",
+      "sourceNumbers": [
+        27
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Obesity/fatness will spread amongst Muslims.",
+          "content": "The Prophet (ﷺ) said, “The best of my nation is the generation among whom I was sent, then those who follow them, then there shall appear people who testify while their testimony was not sought, who are treacherous, not trusted, and fatness shall spread among them.” [32].\n\nThe Muslim Gulf countries today are some of the most obese in the world. According to World Population Review, the UAE has a ~32% obesity rate and Kuwait has a 37% obesity rate.\n\nAlso, Kuwait is the fourth most obese country with an average BMI of 30, and Kuwait’s rate of obesity is even higher than the US rate of obesity."
+        },
+        "bn": {
+          "title": "মুসলিমদের মধ্যে স্থূলতা ছড়িয়ে পড়বে",
+          "content": "নবী (ﷺ) বলেছেন, “আমার উম্মতের সর্বোত্তম প্রজন্ম হলো যাদের মধ্যে আমাকে পাঠানো হয়েছে, এরপর যারা তাদের অনুসরণ করবে। তারপর এমন লোক আসবে যারা চাওয়া না হলেও সাক্ষ্য দেবে, বিশ্বাসঘাতকতা করবে, যাদের ওপর বিশ্বাস রাখা যাবে না, এবং তাদের মধ্যে স্থূলতা ছড়িয়ে পড়বে।” [৩২]\n\nআজ মুসলিম উপসাগরীয় দেশগুলো বিশ্বের সবচেয়ে স্থূল জনগোষ্ঠীর কয়েকটি দেশ। ওয়ার্ল্ড পপুলেশন রিভিউ অনুসারে, সংযুক্ত আরব আমিরাতে স্থূলতার হার প্রায় ৩২ শতাংশ এবং কুয়েতে ৩৭ শতাংশ।\n\nএছাড়া কুয়েত গড় বিএমআই ৩০ নিয়ে বিশ্বের চতুর্থ সর্বাধিক স্থূল দেশ, এবং কুয়েতের স্থূলতার হার যুক্তরাষ্ট্রের হারের চেয়েও বেশি।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 32,
+          "text": "Sahih al-Jami’ 3317, Authenticated by al-Albani"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_28",
+      "sourceNumbers": [
+        28
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Islam will become a global religion.",
+          "content": "The Prophet (ﷺ) said, “This matter will certainly reach every place touched by the night and day. Allah will not leave a house of mud or [even] fur except that Allah will cause this religion to enter it, by which the honorable will be honored and the disgraceful will be disgraced. Allah will honor the honorable with Islam and he will disgrace the disgraceful with unbelief” [33].\n\nOne-fourth of the Earth’s population is now Muslim, and Islam is predicted to continue to rise despite people’s attempts otherwise. Not only is Islam the fastest-growing religion on Earth right now, but other religions are failing. According to Pew Research, Christianity is predicted to lose 66 million followers in 30 years purely from religious switching, while Muslims are expected to gain more than 3 million followers due to conversion alone."
+        },
+        "bn": {
+          "title": "ইসলাম একটি বৈশ্বিক ধর্মে পরিণত হবে",
+          "content": "নবী (ﷺ) বলেছেন, “এই দ্বীন রাত ও দিন যতদূর পৌঁছে, ততদূর অবশ্যই পৌঁছাবে। আল্লাহ মাটি বা পশমের তৈরি এমন কোনো ঘরও রাখবেন না যেখানে তিনি এই দ্বীন প্রবেশ করাবেন না; এর মাধ্যমে সম্মানিত ব্যক্তি সম্মানিত হবে এবং লাঞ্ছিত ব্যক্তি লাঞ্ছিত হবে। আল্লাহ ইসলাম দিয়ে সম্মানিতকে সম্মানিত করবেন এবং কুফর দিয়ে লাঞ্ছিতকে লাঞ্ছিত করবেন।” [৩৩]\n\nএখন পৃথিবীর এক-চতুর্থাংশ মানুষ মুসলিম, এবং মানুষের নানা প্রচেষ্টা সত্ত্বেও ইসলাম আরও বিস্তৃত হবে বলে ধারণা করা হয়। ইসলাম বর্তমানে পৃথিবীর দ্রুততম বর্ধনশীল ধর্মই নয়, অন্য ধর্মগুলোর অনুসারীও কমছে। পিউ রিসার্চের মতে, শুধু ধর্ম পরিবর্তনের কারণে আগামী ৩০ বছরে খ্রিস্টধর্ম ৬ কোটি ৬০ লাখ অনুসারী হারাবে, আর শুধু ধর্মান্তরের কারণে মুসলিমদের সংখ্যা ৩০ লাখেরও বেশি বাড়বে।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 33,
+          "text": "as-Silsilah as-Sahiha #3"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_29",
+      "sourceNumbers": [
+        29
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "People will stop greeting each other in the street, saving their greetings only for those they know.",
+          "content": "The Prophet (ﷺ) said, “Verily, before the Final Hour, people will only greet those that they know.” [34].\n\nFor those that have been born into this modern world, this may seem normal, but it is not. If you go to areas that have older folk, you will likely notice that even strangers smile at you and greet you. In contrast, younger people walk by you without a glance. This prophecy exactly describes the social situation we are in today, and you can still see how things used to be."
+        },
+        "bn": {
+          "title": "মানুষ রাস্তায় একে অপরকে সালাম দেওয়া বন্ধ করবে এবং পরিচিতদেরই শুধু সালাম দেবে",
+          "content": "নবী (ﷺ) বলেছেন, “নিশ্চয়ই কিয়ামতের আগে মানুষ শুধু পরিচিতদের সালাম দেবে।” [৩৪]\n\nআধুনিক যুগে জন্ম নেওয়া মানুষের কাছে এটি স্বাভাবিক মনে হতে পারে, কিন্তু আসলে তা স্বাভাবিক নয়। বয়স্ক মানুষ বসবাস করেন এমন এলাকায় গেলে সম্ভবত লক্ষ্য করবেন, অপরিচিতরাও আপনাকে দেখে হাসেন ও সালাম দেন। বিপরীতে, তরুণরা কোনো দিকে না তাকিয়ে আপনার পাশ দিয়ে চলে যায়। এই ভবিষ্যদ্বাণী আমাদের বর্তমান সামাজিক পরিস্থিতিকে হুবহু বর্ণনা করে; অতীতে পরিস্থিতি কেমন ছিল, তাও এখনও দেখা যায়।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 34,
+          "text": "Musnad Ahmed 6/35, Authenticated by Ahmed Shakir, Sahih al-Adab al-Mufrad 801"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_30",
+      "sourceNumbers": [
+        30
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Trade will increase until the woman helps her husband in it.",
+          "content": "The Prophet (ﷺ) told us that one of the signs of the Hour is, “Business will become so widespread and extensive that even the wife will begin to assist her husband in it [i.e. in amassing wealth].” [34]."
+        },
+        "bn": {
+          "title": "ব্যবসা এত বেড়ে যাবে যে স্ত্রী তার স্বামীকে ব্যবসায় সাহায্য করবে",
+          "content": "নবী (ﷺ) আমাদের বলেছেন যে কিয়ামতের একটি নিদর্শন হলো, “ব্যবসা এত ব্যাপক ও বিস্তৃত হবে যে স্ত্রীও তার স্বামীকে এতে [অর্থ সঞ্চয়ে] সাহায্য করতে শুরু করবে।” [৩৪]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 34,
+          "text": "Musnad Ahmed 6/35, Authenticated by Ahmed Shakir, Sahih al-Adab al-Mufrad 801"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_31",
+      "sourceNumbers": [
+        31
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The issue between Ali and Aisha, and advice to Ali.",
+          "content": "The Prophet (ﷺ) said to ‘Ali, “There will be an issue between you and Aisha.” He said, “Me, O Messenger of Allah?” He said, “Yes.” He said, “Me?!” He said, “Yes.” He said, “Then I would be the worst of them (i.e. the worst of people).” He said, “No, but when this occurs, return her to her safe quarters.” [35].\n\nIt then came to pass that an issue broke out between the armies of Ali and Aisha in the Battle of the Camel, although both of them were trying to reach a peaceful conclusion. Ali was shocked that such a thing would happen, but of course as the Prophet (ﷺ) said, it happened anyways."
+        },
+        "bn": {
+          "title": "আলী ও আয়েশার মধ্যকার ঘটনা এবং আলীর প্রতি উপদেশ",
+          "content": "নবী (ﷺ) আলীকে বললেন, “তোমার ও আয়েশার মধ্যে একটি ঘটনা ঘটবে।” তিনি বললেন, “আমার, হে আল্লাহর রাসুল?” নবী বললেন, “হ্যাঁ।” তিনি বললেন, “আমার?” নবী বললেন, “হ্যাঁ।” তিনি বললেন, “তাহলে আমি তাদের মধ্যে সবচেয়ে নিকৃষ্ট হব (অর্থাৎ মানুষের মধ্যে সবচেয়ে নিকৃষ্ট)।” নবী বললেন, “না; তবে যখন তা ঘটবে, তাকে তার নিরাপদ স্থানে ফিরিয়ে দিও।” [৩৫]\n\nপরবর্তীতে আলী ও আয়েশার বাহিনীর মধ্যে উটের যুদ্ধে এমন একটি ঘটনা ঘটে, যদিও দুজনেই শান্তিপূর্ণ সমাধানের চেষ্টা করছিলেন। এমন ঘটনা ঘটবে শুনে আলী বিস্মিত হয়েছিলেন; কিন্তু নবী (ﷺ) যেমন বলেছিলেন, তা-ই ঘটেছিল।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 35,
+          "text": "Musnad Ahmed 27198, graded Hasan in Fath al-Bari 13/46 by Ibn Hajar"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_32",
+      "sourceNumbers": [
+        32
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "People will sever links with their relatives.",
+          "content": "The Prophet (ﷺ) told us that one of the signs of the Hour is that, “Familial links will be cut.” [34].\n\nThose who are aware of what’s happening in the West know how much things have changed in regards to familial ties. The emphasis on close familial ties is now disappearing, and an individualist philosophy has overtaken the West. The family unit has been attacked, and it’s normal to cut ties with one’s family completely now. In fact, the go-to solution that I have seen from most Westerners when it comes to a troublesome family is to either cut ties with them completely, or throw them in a care home and then cut ties with them completely."
+        },
+        "bn": {
+          "title": "মানুষ আত্মীয়তার সম্পর্ক ছিন্ন করবে",
+          "content": "নবী (ﷺ) আমাদের বলেছেন যে কিয়ামতের একটি নিদর্শন হলো, “আত্মীয়তার বন্ধন ছিন্ন করা হবে।” [৩৪]\n\nপশ্চিমে কী ঘটছে সে সম্পর্কে যারা জানেন, তারা বুঝতে পারেন পারিবারিক বন্ধনের ক্ষেত্রে কত পরিবর্তন এসেছে। ঘনিষ্ঠ পারিবারিক সম্পর্কের গুরুত্ব ধীরে ধীরে হারিয়ে যাচ্ছে এবং ব্যক্তিকেন্দ্রিক দর্শন পশ্চিমকে গ্রাস করেছে। পরিবারব্যবস্থা আক্রমণের শিকার হয়েছে; এখন নিজের পরিবারের সঙ্গে সম্পূর্ণ সম্পর্ক ছিন্ন করাও স্বাভাবিক বলে মনে করা হয়। বাস্তবে, কোনো পরিবারের সদস্য সমস্যাজনক হলে পশ্চিমাদের মধ্যে আমি যে প্রচলিত সমাধান দেখেছি তা হলো—সম্পূর্ণ সম্পর্ক ছিন্ন করা, অথবা তাকে বৃদ্ধাশ্রমে পাঠিয়ে চিরতরে সম্পর্ক ছিন্ন করা।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 34,
+          "text": "Musnad Ahmed 6/35, Authenticated by Ahmed Shakir, Sahih al-Adab al-Mufrad 801"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_33",
+      "sourceNumbers": [
+        33
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "False testimony will appear and true testimony will be concealed.",
+          "content": "Another sign of the Hour the Prophet (ﷺ) told us about is that, “False testimony will appear and true testimony will be concealed.” [34]."
+        },
+        "bn": {
+          "title": "মিথ্যা সাক্ষ্য প্রকাশ পাবে এবং সত্য সাক্ষ্য গোপন করা হবে",
+          "content": "নবী (ﷺ) আমাদের আরও বলেছেন যে কিয়ামতের একটি নিদর্শন হলো, “মিথ্যা সাক্ষ্য প্রকাশ পাবে এবং সত্য সাক্ষ্য গোপন করা হবে।” [৩৪]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 34,
+          "text": "Musnad Ahmed 6/35, Authenticated by Ahmed Shakir, Sahih al-Adab al-Mufrad 801"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_34",
+      "sourceNumbers": [
+        34
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Muslims will be ruled by 12 Caliphs from Quraish, and things will decline from then.",
+          "content": "Jabir bin Samura said:\n\nI heard the Messenger of Allah (ﷺ) say, “Islam will continue to be triumphant until there have been twelve Caliphs.” and that all of these Caliphs will be from the tribe of Quraish [36].\n\nThis means that there would be twelve rulers from Quraish amongst the Muslims, and once they pass, the state of the Muslims will decline. This does not mean that all of these twelve rulers will be just, however, but that the Muslims will be united and strong under them.\n\nIbn Taymiyyah said,\n\n“This is how they were: the caliphs were Abu Bakr, ‘Umar, ‘Uthmaan and ‘Ali.  Then there came to power whoever the people rallied behind and were able to hold the reins of power: Mu‘aawiyah and his son Yazeed, then ‘Abd al-Malik and his four sons; and then ‘Umar ibn ‘Abd al-‘Azeez (making twelve in total).\n\nAfter that, the Islamic state was beset by the decline that has continued until the present. The Umayyads ruled all the Muslim lands, and during their era the Islamic state was powerful…\n\nOne of them would be the one who led the people in offering the five daily prayers, handed out banners in the mosque (to the armies setting out on expeditions), and appoint commanders, but he would live in his own house; they did not live in palaces or remain aloof from the common people.” [37]."
+        },
+        "bn": {
+          "title": "মুসলিমরা কুরাইশের ১২ খলিফার দ্বারা শাসিত হবে, এরপর অবনতি শুরু হবে",
+          "content": "জাবির ইবন সামুরা বলেন:\n\nআমি আল্লাহর রাসুল (ﷺ)-কে বলতে শুনেছি, “বারোজন খলিফা না হওয়া পর্যন্ত ইসলাম বিজয়ী থাকবে।” এবং এই সব খলিফাই কুরাইশ গোত্রের হবে [৩৬]।\n\nএর অর্থ হলো মুসলিমদের মধ্যে কুরাইশের বারোজন শাসক আসবেন এবং তাঁরা চলে যাওয়ার পর মুসলিম রাষ্ট্রের পতন শুরু হবে। এর অর্থ এই নয় যে এই বারোজন শাসক সবাই ন্যায়পরায়ণ হবেন; বরং তাঁদের অধীনে মুসলিমরা ঐক্যবদ্ধ ও শক্তিশালী থাকবে।\n\nইবন তাইমিয়া বলেন,\n\n“তাঁরা ছিলেন এমনই: খলিফারা ছিলেন আবু বকর, উমর, উসমান ও আলী। এরপর যে ব্যক্তির চারপাশে মানুষ একত্রিত হয়েছিল এবং যে ক্ষমতার লাগাম ধরে রাখতে সক্ষম ছিল, সে ক্ষমতায় এসেছিল: মু‘আবিয়া ও তাঁর পুত্র ইয়াজিদ, এরপর আবদুল মালিক ও তাঁর চার পুত্র; তারপর উমর ইবন আবদুল আজিজ—মোট বারোজন।\n\nএরপর ইসলামী রাষ্ট্র সেই পতনের মুখে পড়ে যা বর্তমান সময় পর্যন্ত অব্যাহত আছে। উমাইয়ারা সব মুসলিম ভূখণ্ড শাসন করেছিল এবং তাদের যুগে ইসলামী রাষ্ট্র শক্তিশালী ছিল…\n\nতাদের একজন এমন ব্যক্তি ছিলেন যিনি মানুষকে পাঁচ ওয়াক্ত নামাজ পড়াতেন, মসজিদে [অভিযানে বের হওয়া বাহিনীর জন্য] পতাকা বিতরণ করতেন এবং সেনাপতি নিযুক্ত করতেন; কিন্তু তিনি নিজের ঘরেই থাকতেন। তাঁরা প্রাসাদে বাস করতেন না এবং সাধারণ মানুষ থেকে দূরে থাকতেন না।” [৩৭]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 36,
+          "text": "Sahih Muslim Book 33, Hadith 8"
+        },
+        {
+          "id": 37,
+          "text": "Minhaaj as-Sunnah, 8/170"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_35",
+      "sourceNumbers": [
+        35
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The disbelievers would not attack Muslims after the Battle of the Trench.",
+          "content": "Narrated Sulaiman bin Surd:\n\nWhen the clans were driven away [after the Battle of the Trench], I heard the Prophet (ﷺ) saying, “From now onwards we will go to attack them (i.e. the Pagans and Jews who fought the Muslims at the time) and they will not come to attack us, but we will go to them.” [38].\n\nThe Prophet (ﷺ) knew what would come to pass, as the Battle of the Trench was one of the pivotal moments of Islamic history. After it, the Muslims stopped being the ones in a weaker position of power and the Muslims would initiate the battles, one of them being the Conquest of Mecca (although it was barely a battle since there was little fighting). It ended with the Muslims enacting a rule of justice on those around them, as the Muslims were given authority over the rest."
+        },
+        "bn": {
+          "title": "খন্দকের যুদ্ধের পর কাফিররা মুসলিমদের আক্রমণ করবে না",
+          "content": "সুলাইমান ইবন সুরদ বর্ণনা করেন:\n\nখন্দকের যুদ্ধের পর গোত্রগুলো বিতাড়িত হলে আমি নবী (ﷺ)-কে বলতে শুনেছি, “এখন থেকে আমরা তাদের বিরুদ্ধে আক্রমণ করতে যাব (অর্থাৎ সেই সময় মুসলিমদের বিরুদ্ধে যুদ্ধ করা মুশরিক ও ইহুদিদের), তারা আর আমাদের আক্রমণ করতে আসবে না; বরং আমরা তাদের কাছে যাব।” [৩৮]\n\nনবী (ﷺ) জানতেন যে ভবিষ্যতে কী ঘটবে, কারণ খন্দকের যুদ্ধ ইসলামের ইতিহাসের একটি গুরুত্বপূর্ণ মোড় ছিল। এরপর মুসলিমরা আর দুর্বল অবস্থানে থাকা পক্ষ ছিল না; মুসলিমরাই যুদ্ধ শুরু করতে লাগল। এর একটি উদাহরণ মক্কা বিজয়, যদিও সেখানে খুব কম যুদ্ধ হওয়ায় সেটি প্রায় যুদ্ধই ছিল না। শেষ পর্যন্ত মুসলিমরা আশপাশের মানুষের ওপর ন্যায়বিচারের শাসন প্রতিষ্ঠা করে, কারণ তাদের অন্যদের ওপর কর্তৃত্ব দেওয়া হয়েছিল।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 38,
+          "text": "Sahih al-Bukhari Book 64, Hadith 154"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_36",
+      "sourceNumbers": [
+        36
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Muslims will fight with one another after their first conquests.",
+          "content": "Abdullah ibn Amr ibn al-Aas reported that the Prophet (ﷺ) said:\n\n“How would you be, O people, when Persia and the Byzantines would be conquered for you?” `Abd ar-Rahman ibn Auf said, “We would say as Allah has commanded us and we would express our gratitude to Allah.”. The Prophet (ﷺ) replied, “Nothing else besides it? You would (in fact) compete with one another, then you would feel jealous, then your relations would be estranged and then you will bear enmity against one another. Then you would go to the poor emigrants and would make some the masters of the others.” [39]."
+        },
+        "bn": {
+          "title": "প্রথম বিজয়গুলোর পর মুসলিমরা পরস্পরের বিরুদ্ধে যুদ্ধ করবে",
+          "content": "আবদুল্লাহ ইবন আমর ইবনুল আস বর্ণনা করেন যে নবী (ﷺ) বলেছেন:\n\n“হে লোকেরা, যখন তোমাদের জন্য পারস্য ও বাইজেন্টাইন সাম্রাজ্য বিজিত হবে, তখন তোমরা কেমন থাকবে?” আবদুর রহমান ইবন আওফ বললেন, “আল্লাহ আমাদের যেভাবে নির্দেশ দিয়েছেন আমরা সেভাবে বলব এবং আল্লাহর শুকরিয়া আদায় করব।” নবী (ﷺ) উত্তর দিলেন, “এ ছাড়া আর কিছুই নয়? বরং তোমরা পরস্পর প্রতিযোগিতা করবে, একে অন্যের প্রতি ঈর্ষা করবে, তোমাদের সম্পর্ক বিচ্ছিন্ন হবে এবং পরস্পরের প্রতি শত্রুতা পোষণ করবে। এরপর তোমরা দরিদ্র মুহাজিরদের কাছে যাবে এবং তাদের কাউকে কারও ওপর কর্তৃত্বশীল করে তুলবে।” [৩৯]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 39,
+          "text": "Sahih Muslim Book 55, Hadith 11"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_37",
+      "sourceNumbers": [
+        37
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Hatibs’ letter to the polytheists.",
+          "content": "Ali, Zubair, and Abu Marthad were once called by the Prophet (ﷺ) and told, “Go to Raudat Hajj, there will be a woman carrying a letter from Hatib to the Pagans, bring that letter to me.”. The three went off on their horses and found a woman in that same place on a camel, so they stopped her. “Where is the letter?” Ali asked, and the woman replied, “I don’t have any letter.”. Her luggage was searched and nothing was found, so the others said to Ali, “We think she doesn’t have a letter.” to which Ali replied, “We know the Prophet (ﷺ) has not lied to us.”\n\nEventually, the woman broke and gave them the letter, which they brought back to the Prophet (ﷺ) [40]."
+        },
+        "bn": {
+          "title": "হাতিবের মুশরিকদের কাছে পাঠানো চিঠি",
+          "content": "একবার নবী (ﷺ) আলী, যুবাইর ও আবু মারসাদকে ডেকে বললেন, “রওদাত হাজ্জে যাও; সেখানে একজন নারী থাকবে, যে হাতিবের পক্ষ থেকে মুশরিকদের কাছে একটি চিঠি বহন করছে। চিঠিটি আমার কাছে নিয়ে এসো।” তাঁরা ঘোড়ায় রওনা হয়ে একই স্থানে একটি উটে থাকা নারীকে দেখতে পেলেন এবং তাকে থামালেন। আলী জিজ্ঞেস করলেন, “চিঠিটি কোথায়?” নারী বলল, “আমার কাছে কোনো চিঠি নেই।” তার মালপত্র তল্লাশি করেও কিছু পাওয়া গেল না। তখন অন্যরা আলীকে বলল, “আমাদের মনে হয় তার কাছে কোনো চিঠি নেই।” আলী উত্তর দিলেন, “আমরা জানি, নবী (ﷺ) আমাদের কাছে মিথ্যা বলেননি।”\n\nশেষ পর্যন্ত নারীটি ভেঙে পড়ে চিঠিটি দিয়ে দিল এবং তাঁরা তা নবী (ﷺ)-এর কাছে নিয়ে এলেন [৪০]।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 40,
+          "text": "Sahih al-Bukhari Book 88, Hadith 21"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_38",
+      "sourceNumbers": [
+        38
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Jews would be expelled from Khaibar.",
+          "content": "Although some Jews during the time of the Prophet (ﷺ) fulfilled their trusts and contracts, some others did not. They were ungrateful to the Muslims despite them giving the Jews their due rights and protecting the Jews from harm. Not only did they conspire to unite with the Pagans and attack the Muslims, but they even tried to assassinate the Prophet (ﷺ).\n\nThe Jews of Khaibar were one of those who betrayed the Muslims, but they were given some leeway and were allowed to stay in Khaibar under some conditions. However, the Prophet (ﷺ) told them, “What will your condition be when you are expelled from Khaibar and your camel will be carrying you night after night?” prophesying the Jews expulsion from Khaibar.\n\nAfter the Prophet (ﷺ) passed away and Umar was the Caliph, the Jews of Khaibar betrayed the Muslims again, so Umar expelled them from Khaibar, fulfilling the prophecy [41]."
+        },
+        "bn": {
+          "title": "ইহুদিদের খায়বার থেকে বহিষ্কার করা হবে",
+          "content": "নবী (ﷺ)-এর সময়ে কিছু ইহুদি তাদের আমানত ও চুক্তি রক্ষা করলেও অন্যরা তা করেনি। মুসলিমরা ইহুদিদের অধিকার প্রদান এবং ক্ষতি থেকে সুরক্ষা দেওয়া সত্ত্বেও তারা মুসলিমদের প্রতি অকৃতজ্ঞ ছিল। তারা শুধু মুশরিকদের সঙ্গে জোট বেঁধে মুসলিমদের আক্রমণের ষড়যন্ত্রই করেনি, নবী (ﷺ)-কে হত্যার চেষ্টাও করেছিল।\n\nখাইবারের ইহুদিরা তাদেরই অন্তর্ভুক্ত ছিল যারা মুসলিমদের সঙ্গে বিশ্বাসঘাতকতা করেছিল। তবুও তাদের কিছু সুযোগ দিয়ে নির্দিষ্ট শর্তে খাইবারে থাকতে দেওয়া হয়েছিল। কিন্তু নবী (ﷺ) তাদের বলেছিলেন, “তোমাদের অবস্থা কেমন হবে যখন তোমাদের খাইবার থেকে বিতাড়িত করা হবে এবং তোমাদের উট রাতের পর রাত তোমাদের বহন করবে?” এভাবে তিনি ইহুদিদের খাইবার থেকে বিতাড়নের ভবিষ্যদ্বাণী করেছিলেন।\n\nনবী (ﷺ) ইন্তেকাল করার পর উমর খলিফা হলে খাইবারের ইহুদিরা আবার মুসলিমদের সঙ্গে বিশ্বাসঘাতকতা করে। ফলে উমর তাদের খাইবার থেকে বহিষ্কার করেন এবং ভবিষ্যদ্বাণী পূর্ণ হয় [৪১]।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 41,
+          "text": "Sahih al-Bukhari Book 54, Hadith 18"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_39",
+      "sourceNumbers": [
+        39
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Muslims will stop caring about whether their money is haram or not.",
+          "content": "The Prophet (ﷺ) said, “A time will come when people will not care where they earned their money from; whether by lawful means or unlawful means.” [42] meaning they will not care if their wealth is haram or not, despite the harsh warnings against it."
+        },
+        "bn": {
+          "title": "মুসলিমরা তাদের উপার্জন হালাল না হারাম, তা নিয়ে চিন্তা করবে না",
+          "content": "নবী (ﷺ) বলেছেন, “এমন এক সময় আসবে যখন মানুষ তাদের অর্থ কোথা থেকে উপার্জিত হয়েছে—বৈধ না অবৈধ—তা নিয়ে চিন্তা করবে না।” [৪২] অর্থাৎ কঠোর সতর্কতা সত্ত্বেও তারা তাদের সম্পদ হারাম কি না, তা পরোয়া করবে না।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 42,
+          "text": "Sahih al-Bukhari Book 34, Hadith 36"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_40",
+      "sourceNumbers": [
+        40
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The news of a far army.",
+          "content": "Narrated Anas:\n\nThe Prophet (ﷺ) had informed the people about the death of Zaid, Ja`far and Ibn Rawaha before the news of their death reached them.\n\nHe said with his eyes flowing with tears, “Zaid took the flag and was martyred; then Ja`far took the flag and was martyred, and then Ibn Rawaha took the flag and was martyred. Finally, the flag was taken by one of Allah’s Swords (i.e. Khalid bin Al-Walid) and Allah gave them (i.e. the Muslims) victory.” [43]."
+        },
+        "bn": {
+          "title": "দূরবর্তী সেনাবাহিনীর সংবাদ",
+          "content": "আনাস বর্ণনা করেন:\n\nনবী (ﷺ) মানুষের কাছে যায়দ, জাফর ও ইবন রাওয়াহার মৃত্যুর সংবাদ তাঁদের মৃত্যুর খবর পৌঁছানোর আগেই জানিয়েছিলেন।\n\nতিনি চোখের পানি ফেলতে ফেলতে বললেন, “যায়দ পতাকা গ্রহণ করে শহীদ হয়েছেন; এরপর জাফর পতাকা গ্রহণ করে শহীদ হয়েছেন; এরপর ইবন রাওয়াহা পতাকা গ্রহণ করে শহীদ হয়েছেন। সবশেষে আল্লাহর তরবারিগুলোর একজন [অর্থাৎ খালিদ ইবন আল-ওয়ালিদ] পতাকা গ্রহণ করেছেন এবং আল্লাহ তাদের—অর্থাৎ মুসলিমদের—বিজয় দিয়েছেন।” [৪৩]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 43,
+          "text": "Sahih al-Bukhari Book 62, Hadith 103"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_41",
+      "sourceNumbers": [
+        41
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "People will pass through mosques without praying.",
+          "content": "The Prophet (ﷺ) said, “Some of the signs of the Hour is that a man will pass through a mosque without praying two rak’ahs and that he will only greet those he knows.” [44].\n\nThis ties into a past prophecy I’ve covered that stated that people will compete with the building of their mosques just like the People of the Book did. Nowadays, some mosques are seen as tourist destinations and areas to observe and take pictures of. That is partially because of the extravagance in design for the sake of competition, but a lack of knowledge and piety also plays a part."
+        },
+        "bn": {
+          "title": "মানুষ নামাজ না পড়েই মসজিদ অতিক্রম করবে",
+          "content": "নবী (ﷺ) বলেছেন, “কিয়ামতের কিছু নিদর্শন হলো—একজন মানুষ মসজিদের পাশ দিয়ে যাবে অথচ দুই রাকাত নামাজ পড়বে না, এবং সে শুধু পরিচিতদের সালাম দেবে।” [৪৪]\n\nএটি আমি পূর্বে উল্লেখ করা একটি ভবিষ্যদ্বাণীর সঙ্গে সম্পর্কিত—মানুষ আহলে কিতাবের মতো মসজিদ নির্মাণ নিয়ে প্রতিযোগিতা করবে। বর্তমানে কিছু মসজিদ পর্যটনকেন্দ্র এবং দেখা ও ছবি তোলার স্থান হিসেবে বিবেচিত হয়। প্রতিযোগিতার জন্য নকশায় অতিরঞ্জন এর একটি কারণ; তবে জ্ঞানের ও তাকওয়ার অভাবও এতে ভূমিকা রাখে।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 44,
+          "text": "Narrated by at-Tabarani 9489, Authenticated by al-Albani"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_42",
+      "sourceNumbers": [
+        42
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "People will recite Qur’an for the sake of reputation and fame.",
+          "content": "Narrated Jabir ibn Abdullah:\n\nThe Messenger of Allah (ﷺ) came to us while we were reciting the Qur’an, and there were among us bedouins and the non-Arabs. He said, “Recite, all is well. In the near future, there will appear people who will straighten it (the Qur’an) as an arrow is straightened. They will get their reward for it in this world and will not get it in the Hereafter.” [45]."
+        },
+        "bn": {
+          "title": "মানুষ খ্যাতি ও সুনামের জন্য কুরআন তিলাওয়াত করবে",
+          "content": "জাবির ইবন আবদুল্লাহ বর্ণনা করেন:\n\nআল্লাহর রাসুল (ﷺ) আমাদের কাছে এলেন, তখন আমরা কুরআন তিলাওয়াত করছিলাম; আমাদের মধ্যে বেদুইন ও অনারব লোকও ছিল। তিনি বললেন, “তিলাওয়াত করো, এতে কোনো অসুবিধা নেই। অদূর ভবিষ্যতে এমন লোক আসবে যারা তীর সোজা করার মতো কুরআনকে সোজা করবে [অর্থাৎ কেবল সুন্দরভাবে পড়বে]। তারা এর প্রতিদান দুনিয়ায় পাবে, আখিরাতে পাবে না।” [৪৫]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 45,
+          "text": "Sunan Abi Dawud Book 2, Hadith 440, Authenticated by al-Albani"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_43",
+      "sourceNumbers": [
+        43
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Muslims will innovate things in the religion despite the clear warnings against it.",
+          "content": "There are clear warnings in Islam from innovating new things in the religion. For example, new holidays, ways of worship, political structures, etc.\n\nThe Prophet (ﷺ) said, “The most evil matters are those that are newly invented, for every newly-invented matter is an innovation. Every innovation is misguidance, and every misguidance is in the Hellfire.” [46].\n\nHowever, the Prophet (ﷺ) still said that the Muslims will innovate new things in the religion. In one narration the Prophet (ﷺ) says, “Some of my companions will come to me at my Lake Fount (on the Day of Judgement), and after I recognize them, they will then be taken away from me. I will say, ‘My companions!’ Then it will be said, ‘You do not know what they innovated (new things) in the religion after you.” [47].\n\nIn another narration the Prophet (ﷺ) said, “Those who came before you of the people of the Book split into 72 sects, and this ummah will split into 73: 72 in Hell and one in Paradise…” [48].\n\nThose who are knowledgeable on what the earliest generations of Muslims did will recognize that there is a lot of religious innovation in our world today."
+        },
+        "bn": {
+          "title": "সুস্পষ্ট সতর্কতা সত্ত্বেও মুসলিমরা দ্বীনের মধ্যে নতুন বিষয় উদ্ভাবন করবে",
+          "content": "ইসলামে দ্বীনের মধ্যে নতুন বিষয় উদ্ভাবনের ব্যাপারে স্পষ্ট সতর্কতা রয়েছে। যেমন নতুন উৎসব, ইবাদতের নতুন পদ্ধতি, রাজনৈতিক কাঠামো ইত্যাদি।\n\nনবী (ﷺ) বলেছেন, “সবচেয়ে নিকৃষ্ট বিষয় হলো নতুন উদ্ভাবিত বিষয়; কারণ প্রত্যেক নতুন উদ্ভাবন বিদআত, প্রত্যেক বিদআত ভ্রষ্টতা এবং প্রত্যেক ভ্রষ্টতা জাহান্নামে।” [৪৬]\n\nতবুও নবী (ﷺ) বলেছেন যে মুসলিমরা দ্বীনের মধ্যে নতুন বিষয় উদ্ভাবন করবে। একটি বর্ণনায় নবী (ﷺ) বলেন, “আমার কিছু সাহাবি হাউজে কাউসারে আমার কাছে আসবে। আমি তাদের চিনে নেওয়ার পর তাদের আমার কাছ থেকে দূরে সরিয়ে নেওয়া হবে। আমি বলব, ‘আমার সাহাবিরা!’ তখন বলা হবে, ‘তুমি জানো না, তোমার পরে তারা দ্বীনের মধ্যে কী নতুন বিষয় উদ্ভাবন করেছে।’” [৪৭]\n\nআরেক বর্ণনায় নবী (ﷺ) বলেছেন, “তোমাদের আগের আহলে কিতাব বাহাত্তর দলে বিভক্ত হয়েছিল এবং এই উম্মত তিয়াত্তর দলে বিভক্ত হবে: বাহাত্তর দল জাহান্নামে এবং একটি দল জান্নাতে...” [৪৮]\n\nপ্রথম প্রজন্মের মুসলিমরা কী আমল করতেন সে সম্পর্কে যারা জ্ঞান রাখেন, তারা বুঝতে পারবেন যে আজকের পৃথিবীতে দ্বীনের মধ্যে অনেক বিদআত রয়েছে।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 46,
+          "text": "Sunan an-Nasa’i 1578, Authenticated by al-Albani. Also see Sahih Muslim Book 30, Hadith 23"
+        },
+        {
+          "id": 47,
+          "text": "Sahih al-Bukhari Book 81, Hadith 170"
+        },
+        {
+          "id": 48,
+          "text": "Sunan Abi Dawud Book 42, Hadith 2, graded Hasan by al-Albani and Sahih by Ibn Taymiyyah"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_44",
+      "sourceNumbers": [
+        44
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The fulfillment of a Prophetic dream.",
+          "content": "The Prophet (ﷺ) would sometimes gain knowledge of the future through his dreams. Although this happened multiple times, this is just one example.\n\nHe (ﷺ) delivered a sermon where he said: “I saw in my dream that I was prostrating in mud and water.” The narrator of the hadith goes on to say:\n\n“In those days, the roof of the mosque was made of branches of date-palm trees. At that time (when the Prophet gave his sermon) the sky was clear and no cloud was visible*, but suddenly a cloud came and it rained. The Prophet (ﷺ) led us in the prayer and I saw the traces of mud on the forehead and on the nose of Allah’s Messenger (ﷺ). So it was the confirmation of that dream.”* [49]."
+        },
+        "bn": {
+          "title": "নবী ﷺ-এর স্বপ্নের বাস্তবায়ন",
+          "content": "নবী (ﷺ) কখনও কখনও স্বপ্নের মাধ্যমে ভবিষ্যতের জ্ঞান লাভ করতেন। এমন ঘটনা একাধিকবার ঘটলেও এখানে একটি উদাহরণ দেওয়া হলো।\n\nতিনি (ﷺ) একটি খুতবায় বলেছিলেন: “আমি স্বপ্নে দেখেছি যে আমি কাদা ও পানিতে সিজদা করছি।” হাদিসের বর্ণনাকারী এরপর বলেন:\n\n“সেই সময় মসজিদের ছাদ খেজুরগাছের ডাল দিয়ে তৈরি ছিল। নবী খুতবা দেওয়ার সময় আকাশ পরিষ্কার ছিল এবং কোনো মেঘ দেখা যাচ্ছিল না*, কিন্তু হঠাৎ একটি মেঘ এলো এবং বৃষ্টি হলো। নবী (ﷺ) আমাদের নামাজ পড়ালেন এবং আমি আল্লাহর রাসুল (ﷺ)-এর কপাল ও নাকে কাদার চিহ্ন দেখতে পেলাম। এভাবেই সেই স্বপ্নের সত্যতা প্রমাণিত হলো।”* [৪৯]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 49,
+          "text": "Sahih al-Bukhari 813"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_45",
+      "sourceNumbers": [
+        45
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Muslims will make homosexual intercourse permissible.",
+          "content": "The Prophet ﷺ said, “Once my nation considers five things permissible… [one being when] men suffice themselves with men and women suffice themselves with women.” [50].\n\nAs mentioned previously in prophecy #27, this is now a reality. Muslims have fallen into the same trap that Western Jews and Christians fell into and are following them even in making homosexual intercourse permissible. Even just 15 years ago, this would have sounded like an impossibility, and yet this is the world we live in today, predicted 1400+ years ago."
+        },
+        "bn": {
+          "title": "মুসলিমরা সমকামী যৌনতাকে বৈধ মনে করবে",
+          "content": "নবী ﷺ বলেছেন, “আমার উম্মত একসময় পাঁচটি বিষয়কে বৈধ মনে করবে... [তার একটি হলো] পুরুষরা পুরুষদের মাধ্যমে এবং নারীরা নারীদের মাধ্যমে নিজেদের চাহিদা পূরণ করবে।” [৫০]\n\nআগের ২৭ নম্বর ভবিষ্যদ্বাণীতে যেমন উল্লেখ করা হয়েছে, এটি এখন বাস্তবতা। মুসলিমরা পশ্চিমা ইহুদি ও খ্রিস্টানদের যে ফাঁদে পড়েছে, সেই একই ফাঁদে পড়ে সমকামী যৌনসম্পর্ককে বৈধ করার ক্ষেত্রেও তাদের অনুসরণ করছে। মাত্র ১৫ বছর আগেও এটি অসম্ভব মনে হতে পারত, অথচ ১৪০০ বছরেরও বেশি আগে ভবিষ্যদ্বাণী করা এই পৃথিবীতেই আমরা বাস করছি।",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [
+        {
+          "id": 50,
+          "text": "Collected by al-Bayhaqi in Shu‘ab al-Eeman (5055) who deemed it strong; also deemed Hasan by al-Albani in Sahih at-Targhib (2054, 2386)."
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "part2_section_46",
+      "sourceNumbers": [
+        46
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Islam will prevail and become clear over all other religions. This list has proven that.",
+          "content": "“They want to extinguish the light of Allah with their mouths, but Allah refuses except to perfect His light, although the disbelievers hate it.\n\nIt is He who has sent His Messenger with guidance and the religion of truth to manifest it over all religion, although they who associate others with Allah hate it.” [Qur’an 9:32-33]"
+        },
+        "bn": {
+          "title": "ইসলাম সব ধর্মের ওপর বিজয়ী ও সুস্পষ্ট হবে; এই তালিকা তা প্রমাণ করেছে",
+          "content": "“তারা তাদের মুখের ফুঁ দিয়ে আল্লাহর আলো নিভিয়ে দিতে চায়, কিন্তু কাফিররা অপছন্দ করলেও আল্লাহ তাঁর আলো পূর্ণ করবেন।\n\nতিনিই তাঁর রাসুলকে হিদায়াত ও সত্য দ্বীনসহ পাঠিয়েছেন, যাতে তিনি একে সব ধর্মের ওপর বিজয়ী করেন; যদিও মুশরিকরা তা অপছন্দ করে।” [কুরআন ৯:৩২-৩৩]",
+          "isFallbackEnglish": false
+        }
+      },
+      "references": [],
+      "detailsPage": null
+    }
+  ],
+  "references": {
+    "1": {
+      "en": "Sahih Muslim Book 54, Hadith 55",
+      "bn": "Sahih Muslim Book 54, Hadith 55"
+    },
+    "2": {
+      "en": "Sahih Muslim Book 54, Hadith 56",
+      "bn": "Sahih Muslim Book 54, Hadith 56"
+    },
+    "3": {
+      "en": "Sunan al-Kubra by an-Nasa’i, Hadith #8858. Ibn Hajar said “good chain of narrators” in Fath al-Bari, commentary on Hadith #3875.",
+      "bn": "Sunan al-Kubra by an-Nasa’i, Hadith #8858. Ibn Hajar said “good chain of narrators” in Fath al-Bari, commentary on Hadith #3875."
+    },
+    "4": {
+      "en": "The Forbidden Prophecies, p. 62-65.",
+      "bn": "The Forbidden Prophecies, p. 62-65."
+    },
+    "5": {
+      "en": "Sahih Muslim Book 5, Hadith 2325",
+      "bn": "Sahih Muslim Book 5, Hadith 2325"
+    },
+    "6": {
+      "en": "Sahih al-Bukhari Book 61, Hadith 117",
+      "bn": "Sahih al-Bukhari Book 61, Hadith 117"
+    },
+    "7": {
+      "en": "Jami’ at-Tirmidhi Book 33, Hadith 69",
+      "bn": "Jami’ at-Tirmidhi Book 33, Hadith 69"
+    },
+    "8": {
+      "en": "Ahkam al-Qur’an (4/1720)",
+      "bn": "Ahkam al-Qur’an (4/1720)"
+    },
+    "9": {
+      "en": "Sahih Muslim Book 44, Hadith 325",
+      "bn": "Sahih Muslim Book 44, Hadith 325"
+    },
+    "10": {
+      "en": "Musnad Ahmed #10191",
+      "bn": "Musnad Ahmed #10191"
+    },
+    "11": {
+      "en": "The Forbidden Prophecies, p. 67-68.",
+      "bn": "The Forbidden Prophecies, p. 67-68."
+    },
+    "12": {
+      "en": "Sunan ibn Majah Book 36, Hadith 122",
+      "bn": "Sunan ibn Majah Book 36, Hadith 122"
+    },
+    "13": {
+      "en": "Ferguson, N. “The war of the world : history’s age of hatred.” (2007). Introduction.",
+      "bn": "Ferguson, N. “The war of the world : history’s age of hatred.” (2007). Introduction."
+    },
+    "14": {
+      "en": "Collected by Ibn Abi Shayba in al-Musannaf (30355, 37586) and al-Hakim (8365) who deemed it authentic according to the criteria of Sahih al-Bukhari and Sahih Muslim, and adh-Dhahabi concurred.",
+      "bn": "Collected by Ibn Abi Shayba in al-Musannaf (30355, 37586) and al-Hakim (8365) who deemed it authentic according to the criteria of Sahih al-Bukhari and Sahih Muslim, and adh-Dhahabi concurred."
+    },
+    "15": {
+      "en": "Jami’ at-Tirmidhi Book 33, Hadith 62",
+      "bn": "Jami’ at-Tirmidhi Book 33, Hadith 62"
+    },
+    "16": {
+      "en": "Sahih Muslim Book 32, Hadith 115",
+      "bn": "Sahih Muslim Book 32, Hadith 115"
+    },
+    "17": {
+      "en": "Sahih al-Bukhari Book 54, Hadith 19",
+      "bn": "Sahih al-Bukhari Book 54, Hadith 19"
+    },
+    "18": {
+      "en": "Sahih al-Bukhari Book 24, Hadith 24, Sahih Muslim Book 44, Hadith 146",
+      "bn": "Sahih al-Bukhari Book 24, Hadith 24, Sahih Muslim Book 44, Hadith 146"
+    },
+    "19": {
+      "en": "Sunan Ibn Majah, Hadith: 4020, Musannaf Ibn Abi Shaybah, Hadith: 24227. Also see: Sunan Abi Dawud, Hadith: 3681",
+      "bn": "Sunan Ibn Majah, Hadith: 4020, Musannaf Ibn Abi Shaybah, Hadith: 24227. Also see: Sunan Abi Dawud, Hadith: 3681"
+    },
+    "20": {
+      "en": "Sahih Muslim Book 37, Hadith 190",
+      "bn": "Sahih Muslim Book 37, Hadith 190"
+    },
+    "21": {
+      "en": "Sharh al-Nawawi ‘ala Saheeh Muslim, 17/191",
+      "bn": "Sharh al-Nawawi ‘ala Saheeh Muslim, 17/191"
+    },
+    "22": {
+      "en": "Al-Ishaa’ah li Ashraat il-Saa’ah, p. 119",
+      "bn": "Al-Ishaa’ah li Ashraat il-Saa’ah, p. 119"
+    },
+    "23": {
+      "en": "Sahih Muslim Book 51, Hadith 18",
+      "bn": "Sahih Muslim Book 51, Hadith 18"
+    },
+    "24": {
+      "en": "Sahih Bukhari Book 74, Hadith 16",
+      "bn": "Sahih Bukhari Book 74, Hadith 16"
+    },
+    "25": {
+      "en": "Sahih Muslim Book 44, Hadith 323",
+      "bn": "Sahih Muslim Book 44, Hadith 323"
+    },
+    "26": {
+      "en": "Collected by Ahmad (2/176), and al-Hakim (4/468; 508, 555) who deemed it authentic according to the criteria of Sahih al-Bukhari and Sahih Muslim, and adh-Dhahabi concurred.",
+      "bn": "Collected by Ahmad (2/176), and al-Hakim (4/468; 508, 555) who deemed it authentic according to the criteria of Sahih al-Bukhari and Sahih Muslim, and adh-Dhahabi concurred."
+    },
+    "27": {
+      "en": "Sahih al-Bukhari Book 96, Hadith 50",
+      "bn": "Sahih al-Bukhari Book 96, Hadith 50"
+    },
+    "28": {
+      "en": "Sunan Abi Dawud Book 2, Hadith 59, Authenticated by al-Albani",
+      "bn": "Sunan Abi Dawud Book 2, Hadith 59, Authenticated by al-Albani"
+    },
+    "29": {
+      "en": "Sahih al-Bukhari Book 81, Hadith 85",
+      "bn": "Sahih al-Bukhari Book 81, Hadith 85"
+    },
+    "30": {
+      "en": "al-Adab al-Mufrad Book 25, Hadith 18, Authenticated by al-Albani",
+      "bn": "al-Adab al-Mufrad Book 25, Hadith 18, Authenticated by al-Albani"
+    },
+    "31": {
+      "en": "Sahih al-Bukhari Book 61, Hadith 102",
+      "bn": "Sahih al-Bukhari Book 61, Hadith 102"
+    },
+    "32": {
+      "en": "Sahih al-Jami’ 3317, Authenticated by al-Albani",
+      "bn": "Sahih al-Jami’ 3317, Authenticated by al-Albani"
+    },
+    "33": {
+      "en": "as-Silsilah as-Sahiha #3",
+      "bn": "as-Silsilah as-Sahiha #3"
+    },
+    "34": {
+      "en": "Musnad Ahmed 6/35, Authenticated by Ahmed Shakir, Sahih al-Adab al-Mufrad 801",
+      "bn": "Musnad Ahmed 6/35, Authenticated by Ahmed Shakir, Sahih al-Adab al-Mufrad 801"
+    },
+    "35": {
+      "en": "Musnad Ahmed 27198, graded Hasan in Fath al-Bari 13/46 by Ibn Hajar",
+      "bn": "Musnad Ahmed 27198, graded Hasan in Fath al-Bari 13/46 by Ibn Hajar"
+    },
+    "36": {
+      "en": "Sahih Muslim Book 33, Hadith 8",
+      "bn": "Sahih Muslim Book 33, Hadith 8"
+    },
+    "37": {
+      "en": "Minhaaj as-Sunnah, 8/170",
+      "bn": "Minhaaj as-Sunnah, 8/170"
+    },
+    "38": {
+      "en": "Sahih al-Bukhari Book 64, Hadith 154",
+      "bn": "Sahih al-Bukhari Book 64, Hadith 154"
+    },
+    "39": {
+      "en": "Sahih Muslim Book 55, Hadith 11",
+      "bn": "Sahih Muslim Book 55, Hadith 11"
+    },
+    "40": {
+      "en": "Sahih al-Bukhari Book 88, Hadith 21",
+      "bn": "Sahih al-Bukhari Book 88, Hadith 21"
+    },
+    "41": {
+      "en": "Sahih al-Bukhari Book 54, Hadith 18",
+      "bn": "Sahih al-Bukhari Book 54, Hadith 18"
+    },
+    "42": {
+      "en": "Sahih al-Bukhari Book 34, Hadith 36",
+      "bn": "Sahih al-Bukhari Book 34, Hadith 36"
+    },
+    "43": {
+      "en": "Sahih al-Bukhari Book 62, Hadith 103",
+      "bn": "Sahih al-Bukhari Book 62, Hadith 103"
+    },
+    "44": {
+      "en": "Narrated by at-Tabarani 9489, Authenticated by al-Albani",
+      "bn": "Narrated by at-Tabarani 9489, Authenticated by al-Albani"
+    },
+    "45": {
+      "en": "Sunan Abi Dawud Book 2, Hadith 440, Authenticated by al-Albani",
+      "bn": "Sunan Abi Dawud Book 2, Hadith 440, Authenticated by al-Albani"
+    },
+    "46": {
+      "en": "Sunan an-Nasa’i 1578, Authenticated by al-Albani. Also see Sahih Muslim Book 30, Hadith 23",
+      "bn": "Sunan an-Nasa’i 1578, Authenticated by al-Albani. Also see Sahih Muslim Book 30, Hadith 23"
+    },
+    "47": {
+      "en": "Sahih al-Bukhari Book 81, Hadith 170",
+      "bn": "Sahih al-Bukhari Book 81, Hadith 170"
+    },
+    "48": {
+      "en": "Sunan Abi Dawud Book 42, Hadith 2, graded Hasan by al-Albani and Sahih by Ibn Taymiyyah",
+      "bn": "Sunan Abi Dawud Book 42, Hadith 2, graded Hasan by al-Albani and Sahih by Ibn Taymiyyah"
+    },
+    "49": {
+      "en": "Sahih al-Bukhari 813",
+      "bn": "Sahih al-Bukhari 813"
+    },
+    "50": {
+      "en": "Collected by al-Bayhaqi in Shu‘ab al-Eeman (5055) who deemed it strong; also deemed Hasan by al-Albani in Sahih at-Targhib (2054, 2386).",
+      "bn": "Collected by al-Bayhaqi in Shu‘ab al-Eeman (5055) who deemed it strong; also deemed Hasan by al-Albani in Sahih at-Targhib (2054, 2386)."
+    }
+  }
+}

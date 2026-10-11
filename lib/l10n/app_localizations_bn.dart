@@ -718,6 +718,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get scienceInQuranDescription => 'কুরআনে উল্লেখিত সৃষ্টির নিদর্শন নিয়ে সংক্ষিপ্ত পুস্তিকাটি পড়ুন।';
 
   @override
+  String get dashboardBookPdf => 'PDF পুস্তিকা';
+
+  @override
+  String get dashboardBooksViewAll => 'সব দেখুন';
+
+  @override
+  String get dashboardBooksLibrarySubtitle => 'আপনার পড়ার সংগ্রহ দেখুন।';
+
+  @override
   String get scienceInQuranEnglish => 'ইংরেজি সংস্করণ';
 
   @override
@@ -843,6 +852,53 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get scienceInQuranRemove => 'সরান';
+
+  @override
+  String get propheciesBookTitle => 'মুহাম্মদ (সা.)-এর ভবিষ্যদ্বাণীসমূহ';
+
+  @override
+  String get propheciesBookDescription => 'মুহাম্মদ (সা.)-এর প্রতি আরোপিত এবং পূর্ণ হয়েছে বলে উপস্থাপিত ভবিষ্যদ্বাণীগুলোর সংকলন।';
+
+  @override
+  String propheciesPartsCount(String count) {
+    return '$countটি অংশ';
+  }
+
+  @override
+  String propheciesItemsCount(String count) {
+    return '$countটি এন্ট্রি';
+  }
+
+  @override
+  String propheciesPartLabel(String part) {
+    return 'অংশ $part';
+  }
+
+  @override
+  String propheciesPartItems(String count) {
+    return '$countটি এন্ট্রি · দেখতে ট্যাপ করুন';
+  }
+
+  @override
+  String get propheciesLoadError => 'ভবিষ্যদ্বাণীর সংকলন লোড করা যায়নি।';
+
+  @override
+  String get propheciesRetry => 'আবার চেষ্টা করুন';
+
+  @override
+  String get propheciesDetailsComingSoon => 'বিস্তারিত পৃষ্ঠা শীঘ্রই আসছে';
+
+  @override
+  String get propheciesContentComingSoon => 'এই এন্ট্রির আরও বিস্তারিত শীঘ্রই যোগ করা হবে।';
+
+  @override
+  String get propheciesEnglishFallbackNote => 'এই এন্ট্রিটির বাংলা অনুবাদ এখনও যোগ করা হয়নি, তাই সরবরাহ করা ইংরেজি মূল বক্তব্য দেখানো হচ্ছে।';
+
+  @override
+  String get propheciesReferences => 'তথ্যসূত্র';
+
+  @override
+  String get propheciesClose => 'বন্ধ করুন';
 
   @override
   String get nuraniQuranTitle => 'নূরানী কুরআন';

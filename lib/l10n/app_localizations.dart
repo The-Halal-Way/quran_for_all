@@ -1493,6 +1493,24 @@ abstract class AppLocalizations {
   /// **'Explore a concise booklet about signs of creation mentioned in the Quran.'**
   String get scienceInQuranDescription;
 
+  /// No description provided for @dashboardBookPdf.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF booklet'**
+  String get dashboardBookPdf;
+
+  /// No description provided for @dashboardBooksViewAll.
+  ///
+  /// In en, this message translates to:
+  /// **'View all'**
+  String get dashboardBooksViewAll;
+
+  /// No description provided for @dashboardBooksLibrarySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore your saved reading collection.'**
+  String get dashboardBooksLibrarySubtitle;
+
   /// No description provided for @scienceInQuranEnglish.
   ///
   /// In en, this message translates to:
@@ -1714,6 +1732,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remove'**
   String get scienceInQuranRemove;
+
+  /// No description provided for @propheciesBookTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prophecies of Muhammad ﷺ'**
+  String get propheciesBookTitle;
+
+  /// No description provided for @propheciesBookDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'A collection of prophecies attributed to Muhammad ﷺ that are presented as fulfilled.'**
+  String get propheciesBookDescription;
+
+  /// No description provided for @propheciesPartsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} parts'**
+  String propheciesPartsCount(String count);
+
+  /// No description provided for @propheciesItemsCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} entries'**
+  String propheciesItemsCount(String count);
+
+  /// No description provided for @propheciesPartLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Part {part}'**
+  String propheciesPartLabel(String part);
+
+  /// No description provided for @propheciesPartItems.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} entries · Tap to explore'**
+  String propheciesPartItems(String count);
+
+  /// No description provided for @propheciesLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'The prophecy collection could not be loaded.'**
+  String get propheciesLoadError;
+
+  /// No description provided for @propheciesRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get propheciesRetry;
+
+  /// No description provided for @propheciesDetailsComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Detailed page coming soon'**
+  String get propheciesDetailsComingSoon;
+
+  /// No description provided for @propheciesContentComingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'More detail for this entry is coming soon.'**
+  String get propheciesContentComingSoon;
+
+  /// No description provided for @propheciesEnglishFallbackNote.
+  ///
+  /// In en, this message translates to:
+  /// **'The Bengali translation for this entry is not available yet, so the supplied English source is shown.'**
+  String get propheciesEnglishFallbackNote;
+
+  /// No description provided for @propheciesReferences.
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get propheciesReferences;
+
+  /// No description provided for @propheciesClose.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get propheciesClose;
 
   /// No description provided for @nuraniQuranTitle.
   ///

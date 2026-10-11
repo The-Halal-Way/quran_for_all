@@ -718,6 +718,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get scienceInQuranDescription => 'Explore a concise booklet about signs of creation mentioned in the Quran.';
 
   @override
+  String get dashboardBookPdf => 'PDF booklet';
+
+  @override
+  String get dashboardBooksViewAll => 'View all';
+
+  @override
+  String get dashboardBooksLibrarySubtitle => 'Explore your saved reading collection.';
+
+  @override
   String get scienceInQuranEnglish => 'English edition';
 
   @override
@@ -843,6 +852,53 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get scienceInQuranRemove => 'Remove';
+
+  @override
+  String get propheciesBookTitle => 'Prophecies of Muhammad ﷺ';
+
+  @override
+  String get propheciesBookDescription => 'A collection of prophecies attributed to Muhammad ﷺ that are presented as fulfilled.';
+
+  @override
+  String propheciesPartsCount(String count) {
+    return '$count parts';
+  }
+
+  @override
+  String propheciesItemsCount(String count) {
+    return '$count entries';
+  }
+
+  @override
+  String propheciesPartLabel(String part) {
+    return 'Part $part';
+  }
+
+  @override
+  String propheciesPartItems(String count) {
+    return '$count entries · Tap to explore';
+  }
+
+  @override
+  String get propheciesLoadError => 'The prophecy collection could not be loaded.';
+
+  @override
+  String get propheciesRetry => 'Retry';
+
+  @override
+  String get propheciesDetailsComingSoon => 'Detailed page coming soon';
+
+  @override
+  String get propheciesContentComingSoon => 'More detail for this entry is coming soon.';
+
+  @override
+  String get propheciesEnglishFallbackNote => 'The Bengali translation for this entry is not available yet, so the supplied English source is shown.';
+
+  @override
+  String get propheciesReferences => 'References';
+
+  @override
+  String get propheciesClose => 'Close';
 
   @override
   String get nuraniQuranTitle => 'Nurani Quran';

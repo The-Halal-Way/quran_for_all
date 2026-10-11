@@ -11,6 +11,7 @@ import 'core/utils/app_ios_scroll_behavior.dart';
 import 'data/datasources/local/app_database.dart';
 import 'data/datasources/local/prayer_times_local_data_source.dart';
 import 'data/datasources/local/prayer_times_preferences_store.dart';
+import 'data/datasources/local/prophecies_pack_loader.dart';
 import 'data/datasources/remote/quran_api_service.dart';
 import 'data/datasources/remote/prayer_times_api_service.dart';
 import 'data/repositories/audio_repository_impl.dart';
@@ -51,6 +52,7 @@ import 'presentation/viewmodels/learn_quran_viewmodel.dart';
 import 'presentation/viewmodels/islamic_days/islamic_days_viewmodel.dart';
 import 'presentation/viewmodels/quran/quran_viewmodel.dart';
 import 'presentation/viewmodels/quran/nurani_quran_viewmodel.dart';
+import 'presentation/viewmodels/prophecies_viewmodel.dart';
 import 'presentation/viewmodels/science_in_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/bookmarks_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
@@ -121,6 +123,7 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               ScienceInQuranRepositoryImpl(context.read<http.Client>()),
         ),
+        Provider<PropheciesPackLoader>(create: (_) => PropheciesPackLoader()),
         Provider<PrayerTimesRepository>(
           create: (context) => PrayerTimesRepositoryImpl(
             localDataSource: context.read<PrayerTimesLocalDataSource>(),
@@ -227,6 +230,10 @@ class QuranForAllApp extends StatelessWidget {
         ChangeNotifierProvider<ScienceInQuranViewModel>(
           create: (context) =>
               ScienceInQuranViewModel(context.read<ScienceInQuranRepository>()),
+        ),
+        ChangeNotifierProvider<PropheciesViewModel>(
+          create: (context) =>
+              PropheciesViewModel(context.read<PropheciesPackLoader>()),
         ),
         ChangeNotifierProvider<SearchViewModel>(
           create: (context) => SearchViewModel(context.read<QuranRepository>()),

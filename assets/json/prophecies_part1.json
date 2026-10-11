@@ -1,0 +1,1222 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": {
+    "en": "50 Prophecies",
+    "bn": "৫০টি ভবিষ্যদ্বাণী"
+  },
+  "defaultLocale": "en",
+  "supportedLocales": [
+    "en",
+    "bn"
+  ],
+  "fallbackLocale": "en",
+  "translationStatus": {
+    "en": "complete_source_text",
+    "bn": "translated"
+  },
+  "contentPolicy": "The English content is preserved exactly from the supplied source. Bengali fields are intentionally null until an approved translation is supplied; the app should fall back to English.",
+  "prophecyCount": 50,
+  "sourceBlockCount": 47,
+  "items": [
+    {
+      "id": "prophecy_01",
+      "sourceNumbers": [
+        1
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "1. [The Muslim conquest of Jerusalem.]",
+          "content": "The Muslims went from being persecuted by the pagans of Mecca to fighting the two superpowers of the region, the Byzantines and Sassanids. In the year 637 AD, Jerusalem was captured from the Byzantines by the Muslims. This was done under the rule of Umar ibn Al-Khattab, the second Caliph of the Rashidun. [2]"
+        },
+        "bn": {
+          "title": "১. [মুসলিমদের জেরুজালেম বিজয়।]",
+          "content": "মুসলিমরা মক্কার পৌত্তলিকদের নির্যাতনের শিকার হওয়ার অবস্থা থেকে উত্তরণ ঘটিয়ে এ অঞ্চলের দুই পরাশক্তি—বাইজেন্টাইন ও সাসানীয়দের সঙ্গে যুদ্ধে অবতীর্ণ হয়েছিল। ৬৩৭ খ্রিষ্টাব্দে মুসলিমরা বাইজেন্টাইনদের কাছ থেকে জেরুজালেম দখল করে। খোলাফায়ে রাশেদিনের দ্বিতীয় খলিফা উমর ইবনুল খাত্তাবের শাসনামলে এটি ঘটেছিল। [2]"
+        }
+      },
+      "references": [
+        {
+          "id": 2,
+          "text": "See “Siege of Jerusalem (636-637)”"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_02",
+      "sourceNumbers": [
+        2
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "2. [A plague will ravage the Muslims.]",
+          "content": "In the year 638 AD, a plague dubbed the “Plague of Amwas” or the “Plague of Emmaus” ravaged the Muslims in Syria and ended in tens of thousands of deaths. This was also under the rule of Umar. [3]"
+        },
+        "bn": {
+          "title": "২. [একটি মহামারি মুসলিমদের বিপর্যস্ত করবে।]",
+          "content": "৬৩৮ খ্রিষ্টাব্দে “আমওয়াসের মহামারি” বা “এমাউসের মহামারি” নামে পরিচিত একটি মহামারি সিরিয়ার মুসলিমদের বিপর্যস্ত করে এবং এতে কয়েক দশ হাজার মানুষের মৃত্যু হয়। এটিও উমরের শাসনামলে ঘটেছিল। [3]"
+        }
+      },
+      "references": [
+        {
+          "id": 3,
+          "text": "See “Plague of Amwas”"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_03",
+      "sourceNumbers": [
+        3
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "3. [An increase of wealth amongst the Muslims to the point that nobody would be found to accept sadaqah (Donations to the poor).]",
+          "content": "During Uthman’s leadership, the Muslim empire expanded quickly through continued conquests. This growth brought in a lot of wealth, enabling the prophecy to come true. Some scholars say that this happened during Umar ibn Abdul Aziz’s rule, however. [4]"
+        },
+        "bn": {
+          "title": "৩. [মুসলিমদের সম্পদ এত বেড়ে যাবে যে সদকা (দরিদ্রদের দান) গ্রহণ করার মতো কাউকে পাওয়া যাবে না।]",
+          "content": "উসমানের নেতৃত্বে ধারাবাহিক বিজয়ের মাধ্যমে মুসলিম সাম্রাজ্য দ্রুত বিস্তৃত হয়। এই বিস্তার বিপুল সম্পদ নিয়ে আসে, যার ফলে ভবিষ্যদ্বাণীটি বাস্তবায়িত হয়। তবে কিছু আলেম বলেন, এটি উমর ইবনে আবদুল আজিজের শাসনামলে ঘটেছিল। [4]"
+        }
+      },
+      "references": [
+        {
+          "id": 4,
+          "text": "Fath Al-Bari commentary of Hadith 3005, starts on 6/319"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_04",
+      "sourceNumbers": [
+        4
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "4. [A massive affliction that no Arab home would escape.]",
+          "content": "After the assassination of the Caliph Uthman in 656 AD, chaos was widespread throughout the entirety of Arabia and no Arab home was spared. This eventually led to the war between Mu’awiyah and Ali, where much killing took place, and the affliction continued for years after. [4]\n\nAll of these events not only fulfilled the prophecies described in the hadith, but they were also in the exact order mentioned."
+        },
+        "bn": {
+          "title": "৪. [একটি ব্যাপক বিপর্যয়, যা থেকে কোনো আরব ঘরই রক্ষা পাবে না।]",
+          "content": "৬৫৬ খ্রিষ্টাব্দে খলিফা উসমানকে হত্যার পর সমগ্র আরবজুড়ে বিশৃঙ্খলা ছড়িয়ে পড়ে এবং কোনো আরব ঘরই এর প্রভাব থেকে রক্ষা পায়নি। শেষ পর্যন্ত এটি মুয়াবিয়া ও আলীর মধ্যকার যুদ্ধে গড়ায়, যেখানে ব্যাপক প্রাণহানি ঘটে; পরবর্তী বহু বছরও এই বিপর্যয় চলতে থাকে। [4]\n\nএই ঘটনাগুলো শুধু হাদিসে বর্ণিত ভবিষ্যদ্বাণীগুলোই পূরণ করেনি, বরং ঠিক যে ক্রমে উল্লেখ করা হয়েছিল, সেই ক্রমেই ঘটেছিল।"
+        }
+      },
+      "references": [
+        {
+          "id": 4,
+          "text": "Fath Al-Bari commentary of Hadith 3005, starts on 6/319"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_05",
+      "sourceNumbers": [
+        5
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "5. The barefoot Bedouins competing in the construction of tall buildings.",
+          "content": "Click here to read “Rags to Riches: The Bedouin Prophecy“."
+        },
+        "bn": {
+          "title": "৫. খালি পায়ের বেদুইনদের উঁচু ভবন নির্মাণে প্রতিযোগিতা।",
+          "content": "“দারিদ্র্য থেকে প্রাচুর্য: বেদুইনদের সম্পর্কে ভবিষ্যদ্বাণী” পড়তে এখানে ক্লিক করুন।"
+        }
+      },
+      "references": [],
+      "detailsPage": {
+        "route": "/prophecies/barefoot-bedouins-tall-buildings",
+        "url": null
+      }
+    },
+    {
+      "id": "prophecy_06",
+      "sourceNumbers": [
+        6
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The emergence of the Khawarij (An extreme deviant group that was the precursor to ISIS and their ilk). [5][6][7]",
+          "content": "The Prophet ﷺ said:\n\n“There will appear some people among you whose prayer will make you look down upon yours, and whose fasting will make you look down upon yours, but they will recite the Qur’an which will not exceed their throats (they will not act on it) and they will go out of Islam as an arrow goes out through the game. [a hunted animal]”\n\nAdditionally, the Prophet ﷺ said that they would come from Iraq and that another distinguishing characteristic would be shaved heads. The Khawarij eventually appeared and fulfilled all of these signs. They came from Iraq and were extreme in their worship due to their flawed beliefs.\n\nTo them, a major sin like fornication meant apostasy. This idea made them fear so heavily that they would sin and apostate that they went to extremes in worship in an attempt to avoid those sins. Ironically, this same philosophy led to the other part of the prophecy coming true about them. That being the fact they would “go out of Islam as an arrow goes through the game”, i.e. they would apostate easily, which came from the burnout of acting in such a way along with attacking and excommunicating the rest of the Muslims.\n\nFinally, the Khawarij also distinguished themselves by fully shaving their heads as a sign of asceticism which fulfilled the final part of the prophecy. [8]"
+        },
+        "bn": {
+          "title": "খারিজিদের আবির্ভাব (একটি চরমপন্থী পথভ্রষ্ট গোষ্ঠী, যারা আইএসআইএস ও তাদের মতো গোষ্ঠীগুলোর পূর্বসূরি ছিল)। [5][6][7]",
+          "content": "নবী ﷺ বলেছেন:\n\n“তোমাদের মধ্যে এমন কিছু লোকের আবির্ভাব হবে, যাদের নামাজের তুলনায় তোমরা নিজেদের নামাজকে এবং যাদের রোজার তুলনায় নিজেদের রোজাকে তুচ্ছ মনে করবে। কিন্তু তারা কুরআন পড়বে, যা তাদের গলা অতিক্রম করবে না (তারা সে অনুযায়ী আমল করবে না), এবং তারা ইসলাম থেকে এমনভাবে বেরিয়ে যাবে, যেমন তীর শিকারভেদ করে বেরিয়ে যায়। [শিকার করা একটি প্রাণী]”\n\nএ ছাড়া নবী ﷺ বলেছেন, তারা ইরাক থেকে আসবে এবং তাদের আরেকটি স্বতন্ত্র বৈশিষ্ট্য হবে মাথা মুণ্ডন করা। শেষ পর্যন্ত খারিজিদের আবির্ভাব ঘটে এবং এই সব নিদর্শন তাদের মধ্যে পাওয়া যায়। তারা ইরাক থেকে এসেছিল এবং তাদের ভ্রান্ত বিশ্বাসের কারণে ইবাদতে চরমপন্থা অবলম্বন করেছিল।\n\nতাদের কাছে ব্যভিচারের মতো কোনো কবিরা গুনাহ করার অর্থ ছিল ইসলাম ত্যাগ করা। এই ধারণার কারণে তারা গুনাহ করে ইসলাম থেকে বেরিয়ে যাওয়ার এত তীব্র ভয়ে ভুগত যে, এসব গুনাহ এড়ানোর চেষ্টায় ইবাদতের ক্ষেত্রে চরমপন্থায় চলে যেত। পরিহাসের বিষয় হলো, একই দর্শন তাদের সম্পর্কে ভবিষ্যদ্বাণীর অন্য অংশটিও সত্য করে তোলে। সেটি হলো, তারা “ইসলাম থেকে এমনভাবে বেরিয়ে যাবে, যেমন তীর শিকারভেদ করে বেরিয়ে যায়”; অর্থাৎ তারা সহজেই ইসলাম ত্যাগ করবে। এমন আচরণের ফলে সৃষ্ট চরম অবসাদ এবং অন্য মুসলিমদের আক্রমণ করা ও ইসলাম থেকে বহিষ্কৃত ঘোষণা করার মধ্য দিয়ে এটি ঘটেছিল।\n\nসবশেষে, খারিজিরা দুনিয়াবিমুখতার নিদর্শন হিসেবে পুরো মাথা মুণ্ডন করেও নিজেদের আলাদা পরিচয় তৈরি করেছিল, যা ভবিষ্যদ্বাণীর শেষ অংশটি পূরণ করে। [8]"
+        }
+      },
+      "references": [
+        {
+          "id": 5,
+          "text": "Sahih al-Bukhari 7562"
+        },
+        {
+          "id": 6,
+          "text": "Sahih al-Bukhari 6934"
+        },
+        {
+          "id": 7,
+          "text": "Sahih al-Bukhari 5058"
+        },
+        {
+          "id": 8,
+          "text": "Fath Al-Bari commentary on Hadith 7123, starts on 13/546"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_07",
+      "sourceNumbers": [
+        7
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The locations and names of the fallen at the Battle of Badr.",
+          "content": "Before the decisive Battle of Badr, the Prophet ﷺ went on the battlefield with at least one of his companions. He placed his hand on different areas on the ground and said, “this is the place where so-and-so will be killed”, naming the to-be-dead and their death-places. After the battle, that companion saw in the exact areas the Prophet ﷺ put his hand on the soldiers that were named. [9]"
+        },
+        "bn": {
+          "title": "বদরের যুদ্ধে নিহত ব্যক্তিদের নাম ও নিহত হওয়ার স্থান।",
+          "content": "নির্ণায়ক বদরের যুদ্ধের আগে নবী ﷺ তাঁর অন্তত একজন সাহাবিকে সঙ্গে নিয়ে যুদ্ধক্ষেত্রে গিয়েছিলেন। তিনি মাটির বিভিন্ন স্থানে হাত রেখে বলেছিলেন, “এটি অমুকের নিহত হওয়ার স্থান”—এভাবে যাঁরা নিহত হবেন, তাঁদের নাম ও মৃত্যুর স্থান উল্লেখ করেছিলেন। যুদ্ধের পর সেই সাহাবি দেখেন, নবী ﷺ ঠিক যেসব স্থানে হাত রেখেছিলেন, সেসব স্থানেই তাঁর উল্লেখ করা সৈন্যরা পড়ে আছে। [9]"
+        }
+      },
+      "references": [
+        {
+          "id": 9,
+          "text": "Sahih Muslim 1779"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_08",
+      "sourceNumbers": [
+        8
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "A trial where the one who sits is better than the one who stands.",
+          "content": "The Prophet (ﷺ) said: “The Last Hour will not come until the two parties (of Muslims) confront each other and there is a large-scale massacre amongst them and the claim of both of them is the same.” [10]\n\nThis was briefly spoken about beforehand, and it is the war between Ali and Mu’awiyah. Both of them claimed to be the true leader of the Muslims due to their own interpretations of the events that unfolded after the chaos that came from the assassination of Uthman, which we will go into more detail on soon.\n\nWhen the Prophet ﷺ spoke about this trial in another hadith, he said that those who are sitting during it will be better than the one who stands, meaning that one should stay away from fighting at all costs. [Sahih al-Bukhari Vol. 9, Book 88, Hadith 203]\n\nThis event split up the Muslims into three groups, one fighting on the side of Ali, one fighting on the side of Mu’awiyah, and the last being the ones who realized that this exact event was prophesied beforehand, so they stayed out of the trial.\n\nThe group that realized this was prophesied followed the Prophet’s ﷺ orders, dulling their swords and staying away from fighting. They also tried to warn the others, but many did not see them as being correct and left them.\n\nThis is proven by the fact that the majority of the companions did not take part in the trial between Ali and Mu’awiyah ﵄.\n\nIbn Sirin said:\n\n“The trial raged, and the companions of the Prophet were around ten thousand in number at that time; and less than a hundred of them attended it. In fact, there were not more than thirty of them.”"
+        },
+        "bn": {
+          "title": "এমন এক ফিতনা, যখন বসে থাকা ব্যক্তি দাঁড়িয়ে থাকা ব্যক্তির চেয়ে উত্তম হবে।",
+          "content": "নবী (ﷺ) বলেছেন: “কিয়ামত সংঘটিত হবে না, যতক্ষণ না (মুসলিমদের) দুটি দল পরস্পরের মুখোমুখি হবে এবং তাদের মধ্যে ব্যাপক হত্যাযজ্ঞ ঘটবে, অথচ উভয়ের দাবি হবে একই।” [10]\n\nএর আগে এ বিষয়ে সংক্ষেপে আলোচনা করা হয়েছে; এটি হলো আলী ও মুয়াবিয়ার মধ্যকার যুদ্ধ। উসমানকে হত্যার পর সৃষ্ট বিশৃঙ্খলা এবং পরবর্তী ঘটনাপ্রবাহ সম্পর্কে নিজেদের ব্যাখ্যার ভিত্তিতে তাঁরা উভয়েই নিজেদের মুসলিমদের প্রকৃত নেতা বলে দাবি করেছিলেন। অচিরেই আমরা এ বিষয়ে আরও বিস্তারিত আলোচনা করব।\n\nঅন্য একটি হাদিসে নবী ﷺ এই ফিতনা সম্পর্কে বলতে গিয়ে বলেছেন, এ সময় যে বসে থাকবে, সে দাঁড়িয়ে থাকা ব্যক্তির চেয়ে উত্তম হবে। অর্থাৎ যেকোনো মূল্যে এই যুদ্ধ থেকে দূরে থাকা উচিত। [Sahih al-Bukhari Vol. 9, Book 88, Hadith 203]\n\nএই ঘটনা মুসলিমদের তিনটি দলে বিভক্ত করে: একটি দল আলীর পক্ষে যুদ্ধ করেছিল, একটি দল মুয়াবিয়ার পক্ষে যুদ্ধ করেছিল এবং শেষ দলটি বুঝতে পেরেছিল যে ঠিক এই ঘটনার কথাই আগে ভবিষ্যদ্বাণী করা হয়েছিল, তাই তারা এই ফিতনা থেকে দূরে ছিল।\n\nযে দলটি বুঝেছিল যে এ ঘটনার ভবিষ্যদ্বাণী করা হয়েছে, তারা নবী ﷺ-এর নির্দেশ মেনে নিজেদের তলোয়ার ভোঁতা করে যুদ্ধ থেকে দূরে ছিল। তারা অন্যদের সতর্ক করারও চেষ্টা করেছিল, কিন্তু অনেকে তাদের সঠিক মনে করেনি এবং তাদের ছেড়ে চলে গিয়েছিল।\n\nআলী ও মুয়াবিয়া ﵄-এর মধ্যকার ফিতনায় অধিকাংশ সাহাবি অংশ নেননি—এই তথ্য এর প্রমাণ।\n\nইবনে সিরিন বলেছেন:\n\n“ফিতনা তীব্র হয়ে উঠেছিল, আর সে সময় নবীর সাহাবিদের সংখ্যা ছিল প্রায় দশ হাজার; তাঁদের মধ্যে একশ জনেরও কম এতে উপস্থিত ছিলেন। প্রকৃতপক্ষে, তাঁদের সংখ্যা ত্রিশের বেশি ছিল না।”"
+        }
+      },
+      "references": [
+        {
+          "id": 10,
+          "text": "Sahih Muslim 157i"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_09",
+      "sourceNumbers": [
+        9
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Jizya in Muslim areas prevented by the non-Muslims.",
+          "content": "The Prophet (ﷺ) said: “Iraq would withhold its [money and foodstuffs]; Syria would withhold its [money and foodstuffs], and Egypt would withhold its [money and foodstuffs]…” [11] and then said that the non-Muslims would prevent them. As explained by An-Nawawi, the money and foodstuffs mean the payment of Jizya, which is the tax taken from non-Muslims in a caliphate.\n\nIn other words, the hadith is saying that non-Muslims will prevent the Muslims from taking Jizya. Today, the Jizya tax is no longer taken in these areas due to foreign influence, pressure, as well as occupation by oppressive disbelievers like the Rafidah, Jews, Nusayris, and so on.\n\nAdditionally, the Prophet ﷺ also said “you would recoil to that position from where you started”, referencing another hadith telling us that during this time Islam will be seen as strange once again, which has played a part in the prevention of Jizya"
+        },
+        "bn": {
+          "title": "মুসলিম অঞ্চলগুলোতে অমুসলিমদের দ্বারা জিজিয়া আদায়ে বাধা সৃষ্টি।",
+          "content": "নবী (ﷺ) বলেছেন: “ইরাক তার [অর্থ ও খাদ্যদ্রব্য] বন্ধ করে দেবে; সিরিয়া তার [অর্থ ও খাদ্যদ্রব্য] বন্ধ করে দেবে এবং মিসর তার [অর্থ ও খাদ্যদ্রব্য] বন্ধ করে দেবে…” [11] এরপর তিনি বলেছেন, অমুসলিমরা তাদের বাধা দেবে। আন-নববির ব্যাখ্যা অনুযায়ী, অর্থ ও খাদ্যদ্রব্য বলতে জিজিয়া পরিশোধ বোঝানো হয়েছে, যা খিলাফতে অমুসলিমদের কাছ থেকে আদায় করা কর।\n\nঅন্যভাবে বললে, হাদিসটি বলছে যে অমুসলিমরা মুসলিমদের জিজিয়া আদায়ে বাধা দেবে। বর্তমানে বিদেশি প্রভাব ও চাপের কারণে এবং রাফিদা, ইহুদি, নুসাইরি প্রভৃতি নিপীড়নকারী অবিশ্বাসীদের দখলদারির কারণে এসব অঞ্চলে আর জিজিয়া কর আদায় করা হয় না।\n\nএ ছাড়া নবী ﷺ আরও বলেছেন, “তোমরা যেখান থেকে শুরু করেছিলে, আবার সেই অবস্থায় ফিরে যাবে।” এটি অন্য একটি হাদিসের দিকে ইঙ্গিত করে, যেখানে বলা হয়েছে যে এ সময় ইসলামকে আবার অপরিচিত মনে করা হবে, যা জিজিয়া বন্ধ হওয়ার ক্ষেত্রে ভূমিকা রেখেছে।"
+        }
+      },
+      "references": [
+        {
+          "id": 11,
+          "text": "Sahih Muslim 2896"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_10",
+      "sourceNumbers": [
+        10
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Numerous afflictions would befall the Muslims.",
+          "content": "Usama once spoke of a time the Prophet (ﷺ) stood at the top of one of the taller buildings of Medina and said, “Do you see what I see? I see the spots where afflictions will take place among your houses, and these afflictions will be as numerous as the spots where raindrops fall.” [12].\n\nSome of the afflictions that came are spoken about in this article, but there are many that are not spoken about here. Among the trials that the early Muslims faced were the Khawarij, the assassination of Umar and Uthman, the fights between the armies of Ali and Mu’awiya, the Battle of Harrah that was caused by a tyrannical ruler killing the Muslims, and the Mu’tazilah taking over, then torturing and killing the Muslims to force their false ideology."
+        },
+        "bn": {
+          "title": "মুসলিমদের ওপর বহু বিপর্যয় নেমে আসবে।",
+          "content": "উসামা একবার এমন একটি ঘটনার কথা বলেছিলেন, যখন নবী (ﷺ) মদিনার একটি উঁচু ভবনের চূড়ায় দাঁড়িয়ে বলেছিলেন, “আমি যা দেখছি, তোমরা কি তা দেখছ? আমি তোমাদের ঘরগুলোর মধ্যে ফিতনা সংঘটিত হওয়ার স্থানগুলো দেখতে পাচ্ছি, আর এসব ফিতনা হবে বৃষ্টির ফোঁটা পড়ার স্থানগুলোর মতো অসংখ্য।” [12]।\n\nযেসব বিপর্যয় এসেছিল, তার কিছু এই নিবন্ধে আলোচনা করা হয়েছে; তবে অনেকগুলো এখানে আলোচনা করা হয়নি। প্রাথমিক যুগের মুসলিমরা যেসব পরীক্ষার মুখোমুখি হয়েছিলেন, তার মধ্যে ছিল খারিজিদের আবির্ভাব, উমর ও উসমানের হত্যাকাণ্ড, আলী ও মুয়াবিয়ার সেনাবাহিনীর মধ্যকার সংঘর্ষ, এক অত্যাচারী শাসকের মুসলিমদের হত্যার ফলে সংঘটিত হাররার যুদ্ধ এবং মুতাজিলাদের ক্ষমতা দখল করে নিজেদের ভ্রান্ত মতবাদ চাপিয়ে দিতে মুসলিমদের নির্যাতন ও হত্যা করা।"
+        }
+      },
+      "references": [
+        {
+          "id": 12,
+          "text": "Sahih al-Bukhari Vol. 3, Book 30, Hadith 102"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_11",
+      "sourceNumbers": [
+        11
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The killing of Umar would be the door to the trials that will afflict the Muslims.",
+          "content": "Umar was once sitting amongst some of the other companions of the Prophet (ﷺ) and asked them if any of them remember what the Prophet (ﷺ) had said about the afflictions that the Muslims would face. Hudhaifa replied by telling Umar that there is no reason for him to be worried about those afflictions, as he will never experience them. He said, “Don’t worry about it, O chief of the believers, for there is a closed door between you and them.”. Umar said, “Will that door be broken or opened?” Hudaifa replied, “It will be broken.” Umar asked further, “Then it will never be closed?” and Hudhaifa replied in the affirmative. [13]\n\nLater, when Hudhaifa was asked what is meant by “the closed door”, he replied that it is Umar. This meant that Hudhaifa was saying that Umar would never face any of the large afflictions that were prophesied as Umar himself was the door to them, and this door would be “broken”, i.e. Umar would be killed.\n\nThings ended up unfolding as Hudhaifa had known back then, for Umar was assassinated and a massive amount of trials had befallen the Muslims right after, many mentioned in the prophecy above this one."
+        },
+        "bn": {
+          "title": "উমরকে হত্যা করা মুসলিমদের ওপর আসন্ন ফিতনাগুলোর দ্বার খুলে দেবে।",
+          "content": "উমর একবার নবী (ﷺ)-এর অন্য কয়েকজন সাহাবির সঙ্গে বসে তাঁদের জিজ্ঞেস করলেন, মুসলিমরা যেসব ফিতনার মুখোমুখি হবে, সে সম্পর্কে নবী (ﷺ) যা বলেছিলেন, তা তাঁদের কারও মনে আছে কি না। হুজাইফা উত্তরে উমরকে বললেন, এসব ফিতনা নিয়ে তাঁর উদ্বিগ্ন হওয়ার কোনো কারণ নেই, কারণ তাঁকে কখনো সেগুলোর মুখোমুখি হতে হবে না। তিনি বললেন, “হে মুমিনদের নেতা, এ নিয়ে চিন্তা করবেন না; কারণ আপনার ও সেগুলোর মধ্যে একটি বন্ধ দরজা রয়েছে।” উমর বললেন, “সেই দরজা কি ভেঙে ফেলা হবে, নাকি খুলে দেওয়া হবে?” হুজাইফা উত্তর দিলেন, “সেটি ভেঙে ফেলা হবে।” উমর আরও জিজ্ঞেস করলেন, “তাহলে তা আর কখনো বন্ধ হবে না?” হুজাইফা সম্মতিসূচক উত্তর দিলেন। [13]\n\nপরে হুজাইফাকে যখন জিজ্ঞেস করা হলো, “বন্ধ দরজা” বলতে কী বোঝানো হয়েছে, তিনি বললেন, সেটি উমর। এর অর্থ হলো, হুজাইফা বলছিলেন, ভবিষ্যদ্বাণীতে উল্লিখিত বড় ফিতনাগুলোর কোনোটির মুখোমুখি উমর হবেন না, কারণ উমর নিজেই সেগুলোর সামনে দরজা হয়ে আছেন। আর এই দরজা “ভেঙে ফেলা” হবে, অর্থাৎ উমরকে হত্যা করা হবে।\n\nশেষ পর্যন্ত ঘটনাগুলো সেভাবেই ঘটেছিল, যেভাবে হুজাইফা তখন জানতেন। উমরকে হত্যা করা হয় এবং এর পরপরই মুসলিমদের ওপর বিপুলসংখ্যক ফিতনা নেমে আসে, যার অনেকগুলো আগের ভবিষ্যদ্বাণীতে উল্লেখ করা হয়েছে।"
+        }
+      },
+      "references": [
+        {
+          "id": 13,
+          "text": "Sahih al-Bukhari Vol. 9, Book 88, Hadith 216"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_12",
+      "sourceNumbers": [
+        12
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The brave soldier in Hellfire.",
+          "content": "During one of the battles the Muslims had with the pagans, there was a brave warrior amongst the Muslims which the other Muslims looked at in awe. As the two armies rested in their camps, the Prophet (ﷺ) heard this man being praised and said “He is from the dwellers of the Hell-Fire.” The people were shocked and said, “Who amongst us will be of the dwellers of Paradise if this man is from the dwellers of the Hell-Fire?”. Thus, one of the men decided to follow this seemingly brave man in his next battle.\n\nLater on, that man came to the Prophet (ﷺ) and told him “I testify that you are the messenger of Allah.”. He explained that as he watched the brave warrior, the warrior was wounded. The soldier responded by immediately throwing himself onto his sword, impaling it through his chest and committing suicide. As the Prophet (ﷺ) predicted, there was an insincerity in this warrior’s heart that the others could not see which was exposed by his suicide. The Prophet (ﷺ) then explained that a person may outwardly show the deeds of the dwellers of paradise his whole life, but in reality will be in Hell, and vice versa. [14]"
+        },
+        "bn": {
+          "title": "জাহান্নামে যাওয়া বীর সৈনিক।",
+          "content": "পৌত্তলিকদের সঙ্গে মুসলিমদের একটি যুদ্ধে মুসলিমদের মধ্যে একজন বীর যোদ্ধা ছিল, যাকে অন্য মুসলিমরা মুগ্ধ হয়ে দেখছিলেন। দুই বাহিনী নিজেদের শিবিরে বিশ্রাম নেওয়ার সময় নবী (ﷺ) ওই ব্যক্তির প্রশংসা শুনে বললেন, “সে জাহান্নামের অধিবাসীদের একজন।” লোকেরা বিস্মিত হয়ে বলল, “এই ব্যক্তি যদি জাহান্নামের অধিবাসীদের একজন হয়, তাহলে আমাদের মধ্যে কে জান্নাতের অধিবাসী হবে?” তখন তাঁদের একজন পরবর্তী যুদ্ধে এই আপাতদৃষ্টিতে বীর ব্যক্তিকে অনুসরণ করার সিদ্ধান্ত নিলেন।\n\nপরে সেই ব্যক্তি নবী (ﷺ)-এর কাছে এসে বললেন, “আমি সাক্ষ্য দিচ্ছি যে আপনি আল্লাহর রাসুল।” তিনি ব্যাখ্যা করলেন, বীর যোদ্ধাটিকে পর্যবেক্ষণ করার সময় দেখেন, সে আহত হয়েছে। সঙ্গে সঙ্গে সৈনিকটি নিজের তলোয়ারের ওপর ঝাঁপিয়ে পড়ে, সেটি বুকের মধ্যে বিদ্ধ করে আত্মহত্যা করে। নবী (ﷺ) যেমন ভবিষ্যদ্বাণী করেছিলেন, এই যোদ্ধার অন্তরে আন্তরিকতার অভাব ছিল, যা অন্যরা দেখতে পায়নি; তার আত্মহত্যার মাধ্যমে তা প্রকাশ পায়। এরপর নবী (ﷺ) ব্যাখ্যা করেন, একজন ব্যক্তি সারা জীবন বাহ্যিকভাবে জান্নাতবাসীদের আমল করতে পারে, কিন্তু প্রকৃতপক্ষে সে জাহান্নামে যাবে; আবার এর উল্টোটিও হতে পারে। [14]"
+        }
+      },
+      "references": [
+        {
+          "id": 14,
+          "text": "Sahih al-Bukhari 4207"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_13",
+      "sourceNumbers": [
+        13
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Liars will make up narrations from the Prophet (ﷺ).",
+          "content": "The Prophet (ﷺ) said: “There will be deceivers near the end of time, liars who will bring narrations you have never heard, neither you nor your fathers. Beware, lest they misguide you and afflict you with trials.” [15]\n\nWe have had people in the past who have fabricated narrations about the Prophet (ﷺ) and were caught out on it, like the infamous Al-Waqidi, and we now have people today fabricating hadiths as well.\n\nThe motives range from Muslims wanting to justify their reprehensible innovated practices in religion, to non-Muslims wanting to make Islam look bad with their baseless lies. There are many examples of the latter as well, some of these anti-Islam polemicists having somewhat large followings to this day. This ties into the next prophecy."
+        },
+        "bn": {
+          "title": "মিথ্যাবাদীরা নবী (ﷺ)-এর নামে বর্ণনা বানিয়ে বলবে।",
+          "content": "নবী (ﷺ) বলেছেন: “শেষ যুগে প্রতারক ও মিথ্যাবাদীরা থাকবে, যারা তোমাদের কাছে এমন বর্ণনা নিয়ে আসবে, যা তোমরা বা তোমাদের পূর্বপুরুষেরা কখনো শোনোনি। সাবধান থেকো, যেন তারা তোমাদের পথভ্রষ্ট করতে না পারে এবং ফিতনায় ফেলতে না পারে।” [15]\n\nঅতীতেও এমন লোক ছিল, যারা নবী (ﷺ)-এর নামে বর্ণনা জাল করেছিল এবং ধরা পড়েছিল, যেমন কুখ্যাত আল-ওয়াকিদি; আর বর্তমানেও এমন লোক আছে, যারা হাদিস জাল করছে।\n\nএর উদ্দেশ্য বিভিন্ন ধরনের: কোনো মুসলিম ধর্মে নিজের নিন্দনীয় নবউদ্ভাবিত চর্চাকে বৈধ প্রমাণ করতে চায়, আবার কোনো অমুসলিম ভিত্তিহীন মিথ্যার মাধ্যমে ইসলামকে খারাপভাবে তুলে ধরতে চায়। দ্বিতীয় ধরনেরও অনেক উদাহরণ রয়েছে; এসব ইসলামবিরোধী বিতর্ককারীর কারও কারও আজও বেশ বড় অনুসারী গোষ্ঠী রয়েছে। এর সঙ্গে পরবর্তী ভবিষ্যদ্বাণীর সম্পর্ক আছে।"
+        }
+      },
+      "references": [
+        {
+          "id": 15,
+          "text": "Sahih Muslim 7"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_14",
+      "sourceNumbers": [
+        14
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The deceitful will be trusted and the trustworthy will be denied.",
+          "content": "The Prophet (ﷺ) said: “Years of treachery will come over people in which liars are believed and the truthful are denied, the deceitful are trusted and the trustworthy are considered traitors…” [16].\n\nThis has applied in multiple periods of history but is especially relevant to what I spoke about previously. In the past, the fabricators of narrations were rejected from society and known to everyone as liars. Nowadays, the ease of creating a hugbox on the internet has allowed these deceivers to garner massive followings with no resistance. This has resulted in their ignorant followers believing these deceivers and denying the trustworthy."
+        },
+        "bn": {
+          "title": "প্রতারকদের বিশ্বাস করা হবে এবং বিশ্বস্তদের অস্বীকার করা হবে।",
+          "content": "নবী (ﷺ) বলেছেন: “মানুষের ওপর প্রতারণাপূর্ণ কিছু বছর আসবে, যখন মিথ্যাবাদীকে বিশ্বাস করা হবে এবং সত্যবাদীকে অস্বীকার করা হবে, প্রতারককে বিশ্বস্ত মনে করা হবে এবং বিশ্বস্তকে বিশ্বাসঘাতক মনে করা হবে…” [16]।\n\nইতিহাসের বিভিন্ন সময়ে এটি প্রযোজ্য হয়েছে, তবে আগে আমি যা বলেছি, তার সঙ্গে এটি বিশেষভাবে সম্পর্কিত। অতীতে বর্ণনা জালকারীদের সমাজ থেকে প্রত্যাখ্যান করা হতো এবং সবাই তাদের মিথ্যাবাদী হিসেবে জানত। বর্তমানে ইন্টারনেটে এমন একটি বলয় তৈরি করা সহজ, যেখানে সবাই শুধু একে অপরকে সমর্থন করে; এর ফলে এসব প্রতারক কোনো প্রতিরোধ ছাড়াই বিপুল অনুসারী সংগ্রহ করতে পারছে। এর ফল হলো, তাদের অজ্ঞ অনুসারীরা এসব প্রতারককে বিশ্বাস করছে এবং বিশ্বস্তদের অস্বীকার করছে।"
+        }
+      },
+      "references": [
+        {
+          "id": 16,
+          "text": "Sunan Ibn Majah 4036, Authenticated by Al-Albani"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_15",
+      "sourceNumbers": [
+        15
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Hour will not be established until a man passes near a grave and rolls on it, wishing he was in it. [17]",
+          "content": "U.S. Suicide Rates Are the Highest They’ve Been Since World War II."
+        },
+        "bn": {
+          "title": "কিয়ামত সংঘটিত হবে না, যতক্ষণ না কোনো ব্যক্তি কবরের পাশ দিয়ে যাওয়ার সময় তার ওপর গড়াগড়ি দিয়ে কামনা করবে যে সে-ই যদি এর ভেতরে থাকত। [17]",
+          "content": "যুক্তরাষ্ট্রে আত্মহত্যার হার দ্বিতীয় বিশ্বযুদ্ধের পর সর্বোচ্চ পর্যায়ে পৌঁছেছে।"
+        }
+      },
+      "references": [
+        {
+          "id": 17,
+          "text": "Sahih Muslim 157, Sahih Muslim 157L"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_16",
+      "sourceNumbers": [
+        16
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The revival of the cult of Dhul-Khalasa by the tribe of Daws.",
+          "content": "Click here to read “Dhul-Khalasa Prophecy”."
+        },
+        "bn": {
+          "title": "দাওস গোত্রের মাধ্যমে যুল-খালাসার উপাসনার পুনরুজ্জীবন।",
+          "content": "“যুল-খালাসা সম্পর্কে ভবিষ্যদ্বাণী” পড়তে এখানে ক্লিক করুন।"
+        }
+      },
+      "references": [],
+      "detailsPage": {
+        "route": "/prophecies/dhul-khalasa",
+        "url": null
+      }
+    },
+    {
+      "id": "prophecy_17",
+      "sourceNumbers": [
+        17
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Prophet (ﷺ) said: “The Hour will not begin until time passes quickly, so a year will be like a month, and a month will be like a week, and a week will be like a day, and a day will be like an hour, and an hour will be like the burning of a braid of palm leaves.” [19]",
+          "content": "What is meant by “time passing quickly” is that the days will feel like they are passing quicker and that the people will do less beneficial deeds due to how fast time feels like it is going."
+        },
+        "bn": {
+          "title": "নবী (ﷺ) বলেছেন: “কিয়ামত শুরু হবে না, যতক্ষণ না সময় দ্রুত অতিক্রান্ত হবে; তখন এক বছর এক মাসের মতো, এক মাস এক সপ্তাহের মতো, এক সপ্তাহ এক দিনের মতো, এক দিন এক ঘণ্টার মতো এবং এক ঘণ্টা খেজুরপাতার একটি বেণি পুড়ে যাওয়ার সময়ের মতো মনে হবে।” [19]",
+          "content": "“সময় দ্রুত অতিক্রান্ত হওয়া” বলতে বোঝানো হয়েছে, দিনগুলোকে আরও দ্রুত কেটে যাচ্ছে বলে মনে হবে এবং সময় এত দ্রুত যাচ্ছে বলে মনে হওয়ার কারণে মানুষ কম উপকারী কাজ করবে।"
+        }
+      },
+      "references": [
+        {
+          "id": 19,
+          "text": "Musnad Ahmad, 10560"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_18",
+      "sourceNumbers": [
+        18
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "There will be thirty deceivers who gain a significant following and become a trial, each claiming to be a prophet of God. [20]",
+          "content": "There have been many claimants to prophethood who have gained a following while causing many issues for the people, whether that be through deceit or by causing harm to the people. Some examples are Musaylimah the Liar, Joseph Smith, Shoko Asahara, and Mukhtar al-Thaqafi, all of them ending up harming and killing many due to their actions; Shoko Asahara causing the relatively recent Tokyo Subway Sarin Gas Attacks."
+        },
+        "bn": {
+          "title": "ত্রিশজন প্রতারক আসবে, যারা উল্লেখযোগ্যসংখ্যক অনুসারী লাভ করবে এবং ফিতনার কারণ হবে; তাদের প্রত্যেকেই নিজেকে আল্লাহর নবী বলে দাবি করবে। [20]",
+          "content": "নবুওয়াতের বহু দাবিদার অনুসারী সংগ্রহ করেছে এবং প্রতারণা বা মানুষের ক্ষতি করার মাধ্যমে মানুষের জন্য নানা সমস্যা সৃষ্টি করেছে। এর কিছু উদাহরণ হলো মুসাইলিমা মিথ্যাবাদী, জোসেফ স্মিথ, শোকো আসাহারা ও মুখতার আস-সাকাফি। তাদের কর্মকাণ্ডের ফলে শেষ পর্যন্ত বহু মানুষ ক্ষতিগ্রস্ত ও নিহত হয়েছে; শোকো আসাহারা তুলনামূলকভাবে সাম্প্রতিক টোকিও সাবওয়েতে সারিন গ্যাস হামলার কারণ হয়েছিল।"
+        }
+      },
+      "references": [
+        {
+          "id": 20,
+          "text": "Sahih al-Bukhari 7121"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_19",
+      "sourceNumbers": [
+        19
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Killing with no reason known to the killer or killed.",
+          "content": "The Prophet (ﷺ) said: “A time would come when the murderer would not know why he has committed the murder, and the victim would not know why he has been killed.” [21].\n\nLook no further than modern mass killings to see this prophecy in action. Even outside of mass killings, this is clear as day for the modern world. “Teen McDonald’s worker killed in ‘random’ shooting by man at drive-thru.”"
+        },
+        "bn": {
+          "title": "এমন হত্যাকাণ্ড, যার কারণ হত্যাকারী বা নিহত ব্যক্তি কেউই জানবে না।",
+          "content": "নবী (ﷺ) বলেছেন: “এমন এক সময় আসবে, যখন হত্যাকারী জানবে না কেন সে হত্যা করেছে এবং নিহত ব্যক্তি জানবে না কেন তাকে হত্যা করা হয়েছে।” [21]।\n\nএই ভবিষ্যদ্বাণী বাস্তবে দেখতে আধুনিক গণহত্যার ঘটনাগুলোর দিকে তাকালেই যথেষ্ট। গণহত্যার বাইরেও আধুনিক বিশ্বে বিষয়টি দিনের আলোর মতো স্পষ্ট। “ড্রাইভ-থ্রুতে এক ব্যক্তির ‘নির্বিচার’ গুলিতে ম্যাকডোনাল্ডসের কিশোর কর্মী নিহত।”"
+        }
+      },
+      "references": [
+        {
+          "id": 21,
+          "text": "Sahih Muslim Book 41, Hadith 6949"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_20",
+      "sourceNumbers": [
+        20
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The disappearance of religious knowledge.",
+          "content": "The Prophet (ﷺ) said that religious knowledge will be taken away by the death of religious scholars. After the death of the scholars, “people will take as their leaders’ ignorant persons who, when consulted, will give their verdict without knowledge. So they will go astray and will lead the people astray.” [22].\n\nToday, most of the scholars who stick to the texts of the classical scholars are reaching the end of their lives. It has become common to look on the news and see that another one of these scholars has died due to health complications from old age."
+        },
+        "bn": {
+          "title": "ধর্মীয় জ্ঞানের বিলুপ্তি।",
+          "content": "নবী (ﷺ) বলেছেন, ধর্মীয় আলেমদের মৃত্যুর মাধ্যমে ধর্মীয় জ্ঞান তুলে নেওয়া হবে। আলেমদের মৃত্যুর পর “মানুষ অজ্ঞ ব্যক্তিদের নিজেদের নেতা হিসেবে গ্রহণ করবে। তাদের কাছে পরামর্শ চাওয়া হলে তারা জ্ঞান ছাড়াই ফতোয়া দেবে। ফলে তারা নিজেরাও পথভ্রষ্ট হবে এবং মানুষকেও পথভ্রষ্ট করবে।” [22]।\n\nবর্তমানে ধ্রুপদি আলেমদের রচনাগুলো অনুসরণ করে চলেন এমন অধিকাংশ আলেম জীবনের শেষ পর্যায়ে পৌঁছাচ্ছেন। সংবাদে দেখা এখন সাধারণ ঘটনা হয়ে দাঁড়িয়েছে যে বার্ধক্যজনিত স্বাস্থ্যজটিলতায় তাঁদের আরেকজন মারা গেছেন।"
+        }
+      },
+      "references": [
+        {
+          "id": 22,
+          "text": "Sahih al-Bukhari Vol. 9, Book 88, Hadith 237, Sahih al-Bukhari Vol. 1, Book 3, Hadith 100"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_21",
+      "sourceNumbers": [
+        21
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "People will take religious knowledge from the ignorant.",
+          "content": "As this is happening, the laymen are being led astray by people who claim to be scholars while ignoring, and sometimes even attacking, the classical scholars and their positions.\n\nThrough the deaths of the learned scholars and the rise of the ignorant, this prophecy is coming true right in front of our eyes."
+        },
+        "bn": {
+          "title": "মানুষ অজ্ঞদের কাছ থেকে ধর্মীয় জ্ঞান গ্রহণ করবে।",
+          "content": "এটি ঘটতে থাকার পাশাপাশি সাধারণ মানুষ এমন লোকদের দ্বারা পথভ্রষ্ট হচ্ছে, যারা নিজেদের আলেম দাবি করে, অথচ ধ্রুপদি আলেমদের এবং তাঁদের অবস্থানগুলোকে উপেক্ষা করে, কখনো কখনো আক্রমণও করে।\n\nজ্ঞানী আলেমদের মৃত্যু এবং অজ্ঞদের উত্থানের মাধ্যমে এই ভবিষ্যদ্বাণী আমাদের চোখের সামনেই সত্য হয়ে উঠছে।"
+        }
+      },
+      "references": [],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_22",
+      "sourceNumbers": [
+        22
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The fighting of the Muslims with the Mongols, and the Siege of Baghdad.",
+          "content": "Click here to read “The Siege of Baghdad Prophecy”.\n\nAdditionally, the Prophet (ﷺ) said that the Muslims would fight a people with flat faces and small eyes wearing shoes and clothes made of hair (i.e. fur) [23]. This is the exact description of the Mongols and their clothing. [24]"
+        },
+        "bn": {
+          "title": "মঙ্গোলদের সঙ্গে মুসলিমদের যুদ্ধ এবং বাগদাদ অবরোধ।",
+          "content": "“বাগদাদ অবরোধ সম্পর্কে ভবিষ্যদ্বাণী” পড়তে এখানে ক্লিক করুন।\n\nএ ছাড়া নবী (ﷺ) বলেছেন, মুসলিমরা এমন এক জাতির সঙ্গে যুদ্ধ করবে, যাদের মুখমণ্ডল চ্যাপ্টা ও চোখ ছোট হবে এবং যারা পশমের তৈরি জুতা ও পোশাক পরবে [23]। এটি মঙ্গোলদের ও তাদের পোশাকের হুবহু বর্ণনা। [24]"
+        }
+      },
+      "references": [
+        {
+          "id": 23,
+          "text": "Sahih Muslim Book 41, Hadith 6959, Sahih Muslim Book 41, Hadith 6958"
+        },
+        {
+          "id": 24,
+          "text": "From the Encyclopedia of Mongolia and the Mongolian Empire: “Valuable furs, especially sable and ermine, were worn in winter… In winter the underlayers were made of skin with the fur inmost, while with the outer layer the fur faced out, at least on the upper part.”. About the footwear: they would wear fur covers named degtii over their boots."
+        }
+      ],
+      "detailsPage": {
+        "route": "/prophecies/mongols-sack-of-baghdad",
+        "url": "https://www.provingislam.com/proofs/mongols-sack-of-baghdad"
+      }
+    },
+    {
+      "id": "prophecy_23",
+      "sourceNumbers": [
+        23
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "A band of rebels would kill ‘Ammar. [25]",
+          "content": "‘Ammar, a companion of the Prophet (ﷺ), was told during the Battle of the Ditch that he would be killed by a band of rebels. Three decades after the prophecy was made, the Battle of Siffin, which is one of the battles between Ali and Muawiyah, had begun. Right before ‘Ammar had gone to battle, he asked for a drink. As ‘Ammar saw that he was given milk, he laughed and said, “The Prophet (ﷺ) told me that the last drink I would have from this world would be milk.” [26]. Finally, he went out to fight the rebellious group with Muawiyah and was martyred."
+        },
+        "bn": {
+          "title": "একটি বিদ্রোহী দল আম্মারকে হত্যা করবে। [25]",
+          "content": "খন্দকের যুদ্ধের সময় নবী (ﷺ)-এর সাহাবি আম্মারকে বলা হয়েছিল যে একটি বিদ্রোহী দল তাঁকে হত্যা করবে। এই ভবিষ্যদ্বাণীর তিন দশক পর সিফফিনের যুদ্ধ শুরু হয়, যা আলী ও মুয়াবিয়ার মধ্যকার যুদ্ধগুলোর একটি। যুদ্ধে যাওয়ার ঠিক আগে আম্মার পান করার জন্য কিছু চেয়েছিলেন। তাঁকে দুধ দেওয়া হয়েছে দেখে আম্মার হেসে বললেন, “নবী (ﷺ) আমাকে বলেছেন, এই দুনিয়ায় আমার শেষ পানীয় হবে দুধ।” [26]। এরপর তিনি মুয়াবিয়ার সঙ্গে থাকা বিদ্রোহী দলের বিরুদ্ধে যুদ্ধ করতে বেরিয়ে যান এবং শহীদ হন।"
+        }
+      },
+      "references": [
+        {
+          "id": 25,
+          "text": "Sahih Muslim Book 41, Hadith 6966"
+        },
+        {
+          "id": 26,
+          "text": "Musnad Ahmad, 18883"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_24",
+      "sourceNumbers": [
+        24
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The end of the Emperor’s influence.",
+          "content": "The Arab tribe of Quraysh had embraced Islam, but something worried them. They relied heavily on the trade routes to and from Greater Syria and Iraq and they feared that they would be blocked from using them. What made them worry was the fact that both Greater Syria and Iraq were controlled by the Byzantium and Sassanid empires, empires that had their leaders reject Islam after being called to it.\n\nWhen this worry was brought forth to the Prophet (ﷺ), he told them: “When Chosroes dies, there will be no Chosroes after him; and when Caesar dies, there will be no Caesar after him, [and] you will spend their treasures in the path of God.” [27] meaning that once these rulers pass away, their empires will lose their influence in these areas. As the Prophet (ﷺ) said, these empires lost their influence on these areas once their current rulers died, the Sassanid Empire even collapsing completely soon after."
+        },
+        "bn": {
+          "title": "সম্রাটের প্রভাবের অবসান।",
+          "content": "আরবের কুরাইশ গোত্র ইসলাম গ্রহণ করেছিল, তবে একটি বিষয় তাদের উদ্বিগ্ন করছিল। তারা বৃহত্তর সিরিয়া ও ইরাকের সঙ্গে বাণিজ্যপথের ওপর ব্যাপকভাবে নির্ভরশীল ছিল এবং আশঙ্কা করছিল যে এসব পথ ব্যবহারে তাদের বাধা দেওয়া হবে। তাদের উদ্বেগের কারণ ছিল, বৃহত্তর সিরিয়া ও ইরাক উভয়ই বাইজেন্টাইন ও সাসানীয় সাম্রাজ্যের নিয়ন্ত্রণে ছিল, যাদের শাসকেরা ইসলামের দাওয়াত পাওয়ার পর তা প্রত্যাখ্যান করেছিলেন।\n\nএই উদ্বেগ নবী (ﷺ)-এর কাছে তুলে ধরা হলে তিনি তাদের বলেন: “কিসরা মারা গেলে তার পরে আর কোনো কিসরা থাকবে না; আর কায়সার মারা গেলে তার পরে আর কোনো কায়সার থাকবে না, [এবং] তোমরা তাদের ধনভান্ডার আল্লাহর পথে ব্যয় করবে।” [27] অর্থাৎ এসব শাসক মারা গেলে তাদের সাম্রাজ্যগুলো এসব অঞ্চলে নিজেদের প্রভাব হারাবে। নবী (ﷺ) যেমন বলেছিলেন, তৎকালীন শাসকদের মৃত্যুর পর এসব সাম্রাজ্য ওই অঞ্চলগুলোতে তাদের প্রভাব হারায়; এমনকি এর কিছুদিন পর সাসানীয় সাম্রাজ্য পুরোপুরি ধ্বংস হয়ে যায়।"
+        }
+      },
+      "references": [
+        {
+          "id": 27,
+          "text": "Sahih Muslim Book 41, Hadith 6975"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_25",
+      "sourceNumbers": [
+        25
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Byzantine Comeback.",
+          "content": "This is an example of a Quranic prophecy, one which shocked the world when it was fulfilled:\n\nClick here to read “The Byzantine Comeback”"
+        },
+        "bn": {
+          "title": "বাইজেন্টাইনদের ঘুরে দাঁড়ানো।",
+          "content": "এটি কুরআনের একটি ভবিষ্যদ্বাণীর উদাহরণ, যা পূর্ণ হওয়ার সময় বিশ্বকে বিস্মিত করেছিল:\n\n“বাইজেন্টাইনদের ঘুরে দাঁড়ানো” পড়তে এখানে ক্লিক করুন।"
+        }
+      },
+      "references": [],
+      "detailsPage": {
+        "route": "/prophecies/byzantine-comeback",
+        "url": null
+      }
+    },
+    {
+      "id": "prophecy_26",
+      "sourceNumbers": [
+        26
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The destruction of the Sassanid Empire.",
+          "content": "Click here to read “The Destruction of the Sassanids”"
+        },
+        "bn": {
+          "title": "সাসানীয় সাম্রাজ্যের ধ্বংস।",
+          "content": "“সাসানীয়দের ধ্বংস” পড়তে এখানে ক্লিক করুন।"
+        }
+      },
+      "references": [],
+      "detailsPage": {
+        "route": "/prophecies/destruction-of-the-sassanids",
+        "url": null
+      }
+    },
+    {
+      "id": "prophecy_27",
+      "sourceNumbers": [
+        27
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The Muslims would be the ones to take over the Sassanid Empire.",
+          "content": "The Prophet (ﷺ) said: “There would lie open for a group of Muslims the treasures of the family of Chosroes, which would be in the white palace.” [28]. Not too long after the Prophet (ﷺ) passed away, the Muslims had become so powerful that they took over Persia and gave the final blow to the Sassanid Empire, destroying it forever. When the Muslims entered their conquered land, the white palace where the Chosroes kept an immense amount of treasure laid wide open for them."
+        },
+        "bn": {
+          "title": "মুসলিমরাই সাসানীয় সাম্রাজ্য দখল করবে।",
+          "content": "নবী (ﷺ) বলেছেন: “মুসলিমদের একটি দলের সামনে কিসরার পরিবারের ধনভান্ডার উন্মুক্ত হবে, যা থাকবে সাদা প্রাসাদে।” [28]। নবী (ﷺ)-এর ইন্তেকালের অল্পদিন পরই মুসলিমরা এত শক্তিশালী হয়ে ওঠে যে তারা পারস্য দখল করে এবং সাসানীয় সাম্রাজ্যের ওপর চূড়ান্ত আঘাত হেনে সেটিকে চিরতরে ধ্বংস করে দেয়। মুসলিমরা যখন তাদের বিজিত ভূখণ্ডে প্রবেশ করে, তখন কিসরার বিপুল ধনসম্পদে ভরা সাদা প্রাসাদ তাদের সামনে উন্মুক্ত পড়ে ছিল।"
+        }
+      },
+      "references": [
+        {
+          "id": 28,
+          "text": "Sahih Muslim Book 41, Hadith 6977"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_28",
+      "sourceNumbers": [
+        28
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Prevalence of fornication in public.",
+          "content": "The Prophet (ﷺ) said: “There will be prevalence of open illegal sexual intercourse.” [29] meaning fornication in the public space will become common.\n\nThis has become common and accepted in Western society due to general degeneracy and pornography. So common, in fact, that there are people making guides on the internet on how to fornicate in public without getting caught. Additionally, the NY Times reports that people having sex in public is becoming more and more common, with 22% of Americans reporting having sex in public in the preceding year alone."
+        },
+        "bn": {
+          "title": "জনসমক্ষে ব্যভিচারের প্রাদুর্ভাব ।",
+          "content": "The Prophet (ﷺ) said: “There will be prevalence of open illegal sexual intercourse.” [29] meaning fornication in the public space will become common.\n\nThis has become common and accepted in Western society due to general degeneracy and pornography. So common, in fact, that there are people making guides on the internet on how to fornicate in public without getting caught. Additionally, the NY Times reports that people having sex in public is becoming more and more common, with 22% of Americans reporting having sex in public in the preceding year alone."
+        }
+      },
+      "references": [
+        {
+          "id": 29,
+          "text": "Sahih al-Bukhari Vol. 1, Book 3, Hadith 80"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_29",
+      "sourceNumbers": [
+        29
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Open sexual immorality will result in diseases unknown to the peoples’ predecessors.",
+          "content": "The Prophet (ﷺ) said: “[Sexual] immorality never appears among a people to such an extent that they commit it openly, but plagues and diseases that were never known among the predecessors will spread among them.” [30].\n\nThis plays a part in the previous prophecy. Once a people embrace this degeneracy of fornicating in the streets and being open about it, they will be punished with diseases unknown to their forefathers. Up until the 1980s, AIDs was never known to the people, yet AIDs now ravages much of the lands that have openly embraced fornication and public sex as normal. Some people theorize it existed since the 1920s, but we can only speculate on the origin of AIDs and when the first infection was."
+        },
+        "bn": {
+          "title": "উন্মুক্ত যৌন অনৈতিকতার ফলে জনগণের পূর্বসূরীদের অজানা রোগ হবে ।",
+          "content": "The Prophet (ﷺ) said: “[Sexual] immorality never appears among a people to such an extent that they commit it openly, but plagues and diseases that were never known among the predecessors will spread among them.” [30].\n\nThis plays a part in the previous prophecy. Once a people embrace this degeneracy of fornicating in the streets and being open about it, they will be punished with diseases unknown to their forefathers. Up until the 1980s, AIDs was never known to the people, yet AIDs now ravages much of the lands that have openly embraced fornication and public sex as normal. Some people theorize it existed since the 1920s, but we can only speculate on the origin of AIDs and when the first infection was."
+        }
+      },
+      "references": [
+        {
+          "id": 30,
+          "text": "Sunan ibn Majah Vol. 5, Book 36, Hadith 4019"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_30",
+      "sourceNumbers": [
+        30
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Children will treat their parents with disrespect, neglecting and insulting them.",
+          "content": "The Prophet (ﷺ) said: “[One of the signs of the Hour is] that the slave-girl will give birth to her mistress and master.” [31].\n\nThere are several views among the scholars as to what this means. The view favored by Ibn Hajar is that there will be widespread disobedience among children, so that a child will treat his mother as an oppressive master treats his slave woman, with negligence and insults. With the widespread philosophy of individualism in the West, and this philosophy being imported by the West into other cultures, people have stopped caring about anything but themselves. Nowadays, the family structure has become so broken in the West that it is acceptable to throw your parents in a nursing home and never see them again in your life."
+        },
+        "bn": {
+          "title": "শিশুরা তাদের পিতামাতাকে অসম্মান করবে, অবহেলা করবে এবং অপমান করবে ।",
+          "content": "The Prophet (ﷺ) said: “[One of the signs of the Hour is] that the slave-girl will give birth to her mistress and master.” [31].\n\nThere are several views among the scholars as to what this means. The view favored by Ibn Hajar is that there will be widespread disobedience among children, so that a child will treat his mother as an oppressive master treats his slave woman, with negligence and insults. With the widespread philosophy of individualism in the West, and this philosophy being imported by the West into other cultures, people have stopped caring about anything but themselves. Nowadays, the family structure has become so broken in the West that it is acceptable to throw your parents in a nursing home and never see them again in your life."
+        }
+      },
+      "references": [
+        {
+          "id": 31,
+          "text": "Sahih Muslim Book 1, Hadith 1"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_31",
+      "sourceNumbers": [
+        31
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Who will be the first of the Prophet’s (ﷺ) family to pass away after him?",
+          "content": "While the Prophet (ﷺ) was on his deathbed, he called his daughter, Fatima, to him. He whispered to her one thing, and she cried, then he whispered a second thing to her and she laughed. The Prophet (ﷺ) had told her at first, “Gabriel used to review the Qur’an with me one time each year, and he reviewed it twice with me this year. I do not see this [to mean] except that my time has arrived, and you will be the first of my family to catch up with me.” and she cried. Then he told her, “Are you not pleased to be the queen of the believers [in Paradise]?” so she laughed. [32]\n\nThis is two prophecies in one, but I will only count it as one. Since Gabriel reviewed the Qur’an twice with the Prophet (ﷺ) that year, that meant that the Prophet (ﷺ) would not survive to reach the next year. Additionally, he told his daughter Fatima that she would be the first to “catch up with him”, i.e. she would be the first to die after the Prophet (ﷺ). Things ended up unfolding exactly as he said, as Fatima died less than a year after the Prophet (ﷺ), being the first to catch up with him.\n\nThe next two prophecies are part of one hadith.*"
+        },
+        "bn": {
+          "title": "নবীর (ﷺ) পরিবারের মধ্যে কে সর্বপ্রথম তার পরে মারা যাবেন?",
+          "content": "While the Prophet (ﷺ) was on his deathbed, he called his daughter, Fatima, to him. He whispered to her one thing, and she cried, then he whispered a second thing to her and she laughed. The Prophet (ﷺ) had told her at first, “Gabriel used to review the Qur’an with me one time each year, and he reviewed it twice with me this year. I do not see this [to mean] except that my time has arrived, and you will be the first of my family to catch up with me.” and she cried. Then he told her, “Are you not pleased to be the queen of the believers [in Paradise]?” so she laughed. [32]\n\nThis is two prophecies in one, but I will only count it as one. Since Gabriel reviewed the Qur’an twice with the Prophet (ﷺ) that year, that meant that the Prophet (ﷺ) would not survive to reach the next year. Additionally, he told his daughter Fatima that she would be the first to “catch up with him”, i.e. she would be the first to die after the Prophet (ﷺ). Things ended up unfolding exactly as he said, as Fatima died less than a year after the Prophet (ﷺ), being the first to catch up with him.\n\nThe next two prophecies are part of one hadith.*"
+        }
+      },
+      "references": [
+        {
+          "id": 32,
+          "text": "Sahih al-Bukhari Vol. 8, Book 74, Hadith 301"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_32",
+      "sourceNumbers": [
+        32
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The martyrdom of Umar.",
+          "content": "The Prophet (ﷺ) once climbed Mount Uhud with Abu Bakr as-Siddiq, Umar, and Uthman, and the mountain shook. The Prophet responded by saying “Be firm Uhud, for upon you are none other than a Prophet, a Siddiq, and two martyrs.” [33].\n\nThe Prophet describes himself and Abu Bakr by their known titles, then he names Umar and Uthman as martyrs.\n\nLater on, after the Prophet (ﷺ) and Abu Bakr passed away, Umar had become the leader of the Muslims. Things were very good for the citizens under the Caliphate and everything seemed to be going smoothly for everyone involved. However, one of the Zoroastrian slaves, Abu Lulu, felt that he was not being paid well enough by his master. Despite Umar not being the one allegedly underpaying him, Abu Lulu decided to assassinate him during prayer. As the Muslims prayed with Umar as their imam, Abu Lulu killed Umar by stabbing him in the side with a poisoned dagger, then proceeded to kill multiple other people praying in the mosque, then finally killing himself.\n\nUmar was thus martyred while leading the prayer."
+        },
+        "bn": {
+          "title": "উমরের শহীদ ।",
+          "content": "The Prophet (ﷺ) once climbed Mount Uhud with Abu Bakr as-Siddiq, Umar, and Uthman, and the mountain shook. The Prophet responded by saying “Be firm Uhud, for upon you are none other than a Prophet, a Siddiq, and two martyrs.” [33].\n\nThe Prophet describes himself and Abu Bakr by their known titles, then he names Umar and Uthman as martyrs.\n\nLater on, after the Prophet (ﷺ) and Abu Bakr passed away, Umar had become the leader of the Muslims. Things were very good for the citizens under the Caliphate and everything seemed to be going smoothly for everyone involved. However, one of the Zoroastrian slaves, Abu Lulu, felt that he was not being paid well enough by his master. Despite Umar not being the one allegedly underpaying him, Abu Lulu decided to assassinate him during prayer. As the Muslims prayed with Umar as their imam, Abu Lulu killed Umar by stabbing him in the side with a poisoned dagger, then proceeded to kill multiple other people praying in the mosque, then finally killing himself.\n\nUmar was thus martyred while leading the prayer."
+        }
+      },
+      "references": [
+        {
+          "id": 33,
+          "text": "Sahih al-Bukhari Vol. 5, Book 57, Hadith 24"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_33",
+      "sourceNumbers": [
+        33
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The martyrdom of Uthman.",
+          "content": "After the sudden martyrdom and assassination of Umar, the door to trials had swung wide open on the Muslims.\n\nUthman had been chosen to be the Caliph of the Muslims, ruling over them as a just ruler. Nobody opposed him except those who were constantly warned and reprimanded for their love of rebellion and evil. The rebels who opposed Uthman were forgiven after they apparently repented multiple times, but they returned to their evil ways once again. They had spread lies and fabrications about Uthman, justifying to themselves the killing of him in the name of “justice”, and thus took the steps to murder Uthman.\n\nThey surrounded Uthman in his own home, demanding that he give up his role as leader of the Muslims using the lies they had spread amongst themselves as justification. Eventually, they broke into his house and killed Uthman in his own home as he read the Quran.\n\nUthman was martyred just like the Prophet (ﷺ) had prophesied.\n\nThis group of rebels mirrors Abu Lulu in a way. Before the door to trials was opened with the assassination of Umar, there was only one who ended up causing trials to the Muslims. Afterwards, that increased to a group with the rebels against Uthman. Later in part 2, we will see that these groups that caused chaos increased in size even further, God willing."
+        },
+        "bn": {
+          "title": "উসমানের শহীদ ।",
+          "content": "After the sudden martyrdom and assassination of Umar, the door to trials had swung wide open on the Muslims.\n\nUthman had been chosen to be the Caliph of the Muslims, ruling over them as a just ruler. Nobody opposed him except those who were constantly warned and reprimanded for their love of rebellion and evil. The rebels who opposed Uthman were forgiven after they apparently repented multiple times, but they returned to their evil ways once again. They had spread lies and fabrications about Uthman, justifying to themselves the killing of him in the name of “justice”, and thus took the steps to murder Uthman.\n\nThey surrounded Uthman in his own home, demanding that he give up his role as leader of the Muslims using the lies they had spread amongst themselves as justification. Eventually, they broke into his house and killed Uthman in his own home as he read the Quran.\n\nUthman was martyred just like the Prophet (ﷺ) had prophesied.\n\nThis group of rebels mirrors Abu Lulu in a way. Before the door to trials was opened with the assassination of Umar, there was only one who ended up causing trials to the Muslims. Afterwards, that increased to a group with the rebels against Uthman. Later in part 2, we will see that these groups that caused chaos increased in size even further, God willing."
+        }
+      },
+      "references": [],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_34",
+      "sourceNumbers": [
+        34
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The hypocrites will demand Uthman to “remove his shirt”.",
+          "content": "As established in the past point, evil people had demanded Uthman to give up his role as leader of the Muslims with the threat of death, but why did he not just give up his role? Uthman did not even choose himself to be the leader and he lived an ascetic lifestyle, so it was not for power or wealth as he did not desire those things. So what was it?\n\nThe reason is that the Prophet (ﷺ) knew that some evil people would demand Uthman to give up his leadership and threaten him, so he warned Uthman about it. The Prophet (ﷺ) said to Uthman, “O ‘Uthman! Indeed Allah may give you a shirt, and if [some of the people] wish that you take it off, do not take it off for them.” [34]. The meaning of “a shirt” is the role of the leader of the Muslims, and the rebels demanded that Uthman “take off his shirt” i.e. give up his leadership.\n\nSo Uthman was warned that people will demand he gives up his leadership and that he should not listen to them. That is why he refused to give it up despite him having no attachment to it."
+        },
+        "bn": {
+          "title": "ভণ্ডরা উসমানকে \"তার জামা খুলে ফেলতে\" বলবে ।",
+          "content": "As established in the past point, evil people had demanded Uthman to give up his role as leader of the Muslims with the threat of death, but why did he not just give up his role? Uthman did not even choose himself to be the leader and he lived an ascetic lifestyle, so it was not for power or wealth as he did not desire those things. So what was it?\n\nThe reason is that the Prophet (ﷺ) knew that some evil people would demand Uthman to give up his leadership and threaten him, so he warned Uthman about it. The Prophet (ﷺ) said to Uthman, “O ‘Uthman! Indeed Allah may give you a shirt, and if [some of the people] wish that you take it off, do not take it off for them.” [34]. The meaning of “a shirt” is the role of the leader of the Muslims, and the rebels demanded that Uthman “take off his shirt” i.e. give up his leadership.\n\nSo Uthman was warned that people will demand he gives up his leadership and that he should not listen to them. That is why he refused to give it up despite him having no attachment to it."
+        }
+      },
+      "references": [
+        {
+          "id": 34,
+          "text": "Jami` at-Tirmidhi, Vol. 6, Book of Al-Manaqib (Virtues), Hadith 3705"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_35",
+      "sourceNumbers": [
+        35
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Hassan will be the one to reconcile the groups of Ali and Mu’awiyah.",
+          "content": "Further prophesying how the events would unfold during the massive trials that would inflict the Muslims, the Prophet (ﷺ) also knew who would end up mending much of the issues that came forth. He took his grandson, al-Hassan, and said “This son of mine is a Chief and I hope that Allah will help him bring about reconciliation between two Muslim groups.” [35].\n\nJust as the Prophet (ﷺ) predicted, al-Hassan ended up mending the bond between the two groups that split off from one another. After the martyrdom of Ali, his son al-Hassan was given the role of being the leader of the Muslims. He saw an opportunity in this and gave leadership to Muawiyah. This helped unite the two groups of Ali and Muawiyah, as the son of Ali had united with Muawiyah after their conflict, showing to the people that they have reconciled."
+        },
+        "bn": {
+          "title": "হাসানই হবেন আলী ও মুয়াবিয়ার দলগুলোর মধ্যে সমন্বয় সাধনকারী ।",
+          "content": "Further prophesying how the events would unfold during the massive trials that would inflict the Muslims, the Prophet (ﷺ) also knew who would end up mending much of the issues that came forth. He took his grandson, al-Hassan, and said “This son of mine is a Chief and I hope that Allah will help him bring about reconciliation between two Muslim groups.” [35].\n\nJust as the Prophet (ﷺ) predicted, al-Hassan ended up mending the bond between the two groups that split off from one another. After the martyrdom of Ali, his son al-Hassan was given the role of being the leader of the Muslims. He saw an opportunity in this and gave leadership to Muawiyah. This helped unite the two groups of Ali and Muawiyah, as the son of Ali had united with Muawiyah after their conflict, showing to the people that they have reconciled."
+        }
+      },
+      "references": [
+        {
+          "id": 35,
+          "text": "Sahih al-Bukhari Vol. 4, Book 56, Hadith 823"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_36",
+      "sourceNumbers": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "(36-39) Um Haram and the Muslim conquests.",
+          "content": "Um Haram informed us that she heard the Prophet (ﷺ) saying, “Paradise is granted to the first batch of my followers who will undertake a naval expedition.” Um Haram added, I said, ‘O Allah’s Messenger (ﷺ)! Will I be amongst them?’ He replied, ‘You are amongst them.’ The Prophet (ﷺ) then said, ‘The first army amongst my followers who will invade Caesar’s City [Constantinople] will be forgiven their sins.’ I asked, ‘Will I be one of them, O Allah’s Messenger (ﷺ)?’ He replied in the negative.” [36]\n\nUm Haram ended up being in the first Muslim army unit which took a naval expedition, and this happened under the Caliphate of Mu’awiyah. However, she died shortly after and did not live to witness or partake in the conquest of Constantinople [37].\n\nIbn Hajar said, “This contains multiple prophecies by the Prophet ﷺ of what would take place, and it all occurred just as he said, and hence is considered among the signs of his prophethood.\n\nOf them is that his nation would remain after him, and that among them are those who would be strong, formidable, and a consequential force against the enemy, and that they [the Muslims] would conquer territories until the army rides the sea,\n\nand that [it would be so soon that] Um Haram would live until that time,\n\nand that she would be with that army who rides the sea,\n\nand that she would not live to see the second military campaign [to Constantinople].” [38]\n\nCredit goes to Mohammad Elshinawy for the translation of this excerpt and for some of the information in this article."
+        },
+        "bn": {
+          "title": "(৩৬-৩৯) উম হারাম এবং মুসলিম বিজয় ।",
+          "content": "Um Haram informed us that she heard the Prophet (ﷺ) saying, “Paradise is granted to the first batch of my followers who will undertake a naval expedition.” Um Haram added, I said, ‘O Allah’s Messenger (ﷺ)! Will I be amongst them?’ He replied, ‘You are amongst them.’ The Prophet (ﷺ) then said, ‘The first army amongst my followers who will invade Caesar’s City [Constantinople] will be forgiven their sins.’ I asked, ‘Will I be one of them, O Allah’s Messenger (ﷺ)?’ He replied in the negative.” [36]\n\nUm Haram ended up being in the first Muslim army unit which took a naval expedition, and this happened under the Caliphate of Mu’awiyah. However, she died shortly after and did not live to witness or partake in the conquest of Constantinople [37].\n\nIbn Hajar said, “This contains multiple prophecies by the Prophet ﷺ of what would take place, and it all occurred just as he said, and hence is considered among the signs of his prophethood.\n\nOf them is that his nation would remain after him, and that among them are those who would be strong, formidable, and a consequential force against the enemy, and that they [the Muslims] would conquer territories until the army rides the sea,\n\nand that [it would be so soon that] Um Haram would live until that time,\n\nand that she would be with that army who rides the sea,\n\nand that she would not live to see the second military campaign [to Constantinople].” [38]\n\nCredit goes to Mohammad Elshinawy for the translation of this excerpt and for some of the information in this article."
+        }
+      },
+      "references": [
+        {
+          "id": 36,
+          "text": "Sahih al-Bukhari Vol. 4, Book 52, Hadith 175"
+        },
+        {
+          "id": 37,
+          "text": "Sahih al-Bukhari Vol. 4, Book 52, Hadith 47"
+        },
+        {
+          "id": 38,
+          "text": "Fath al-Bari commentary on Hadith 5926, 11/80"
+        }
+      ],
+      "detailsPage": null,
+      "note": "The original source presents prophecies 36–39 as one combined section. Its English content is retained as one source block without rewriting."
+    },
+    {
+      "id": "prophecy_37",
+      "sourceNumbers": [
+        37
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "“Muslims” rejecting the actions and sayings of the Prophet (ﷺ) and only referring to the Qur’an, despite both being revelation.",
+          "content": "The Prophet (ﷺ) said, “I have surely been given the Quran and something like it along with it. Soon the time is come when a man will recline on his couch, saying: Only follow the Quran, make lawful what you find in it as lawful and outlaw what you find in it as unlawful.” [39]\n\nWhat the Prophet (ﷺ) is referring to when saying “something like” the Qur’an, he means his own sayings and actions when it comes to religious matters, which is also called the Sunnah.\n\nHassaan ibn ‘Atiyah said, “Gabriel used to bring the Sunnah down to the Prophet (ﷺ) as he used to bring the Qur’an down to him.” [40].\n\nIn recent years, a new sect that claims Islam has emerged. They call themselves the “Quranists” or “Quraniyoon” because they reject every Hadith and only refer to the Qur’an. Despite this clear warning from the Prophet (ﷺ) centuries ago, they still fell into this trap."
+        },
+        "bn": {
+          "title": "\"মুসলমানরা\" নবী (স) এর কাজ এবং বক্তব্যকে প্রত্যাখ্যান করে এবং শুধুমাত্র কুরআনকে উল্লেখ করে, যদিও উভয় প্রকাশ ।",
+          "content": "The Prophet (ﷺ) said, “I have surely been given the Quran and something like it along with it. Soon the time is come when a man will recline on his couch, saying: Only follow the Quran, make lawful what you find in it as lawful and outlaw what you find in it as unlawful.” [39]\n\nWhat the Prophet (ﷺ) is referring to when saying “something like” the Qur’an, he means his own sayings and actions when it comes to religious matters, which is also called the Sunnah.\n\nHassaan ibn ‘Atiyah said, “Gabriel used to bring the Sunnah down to the Prophet (ﷺ) as he used to bring the Qur’an down to him.” [40].\n\nIn recent years, a new sect that claims Islam has emerged. They call themselves the “Quranists” or “Quraniyoon” because they reject every Hadith and only refer to the Qur’an. Despite this clear warning from the Prophet (ﷺ) centuries ago, they still fell into this trap."
+        }
+      },
+      "references": [
+        {
+          "id": 39,
+          "text": "Jami’ at-Tirmidhi Vol. 5, Book 39, Hadith 2664, Sunan abi Dawud 4604"
+        },
+        {
+          "id": 40,
+          "text": "Narrated by al-Daarimi in his Sunan (588) and by al-Khateeb in al-Kifaayah (12). It was attributed by al-Haafiz in al-Fath (13/291) to al-Bayhaqi, and he said: With a saheeh isnaad."
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_38",
+      "sourceNumbers": [
+        38
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Women will be “clothed yet naked” and would have what resembles a camel’s hump on their heads.",
+          "content": "The Prophet (ﷺ) said that he was shown the denizens of Hell, and there were two that he had never seen before. One of them will be talked about in part 2 of this article, God willing, and the other is this: “women who are clothed yet naked, walking with an enticing gait, with something on their heads that looks like the humps of camels, leaning to one side” [41].\n\nSo they would be women who would walk in a way to get sexual attention from those in the streets while being clothed, yet naked, i.e. clothes that are so revealing they may as well not be wearing anything. Anybody who has seen how the modern dress has evolved will know that there are many examples of this today, but I will not go into specifics.\n\nAdditionally, they would have something on their heads that resembles a camel’s hump. This has happened in the past with famous hairstyles, but now it is done even by those who wear “hijab”. The “turban hijab” that the likes of Ilhan Omar wear today is exactly as described in this hadith.\n\nOnce again though, despite the Prophet (ﷺ) warning of these exact traps, many self-proclaimed “Muslims” fall into them anyway."
+        },
+        "bn": {
+          "title": "মহিলাদের \"পোশাকে এখনও উলঙ্গ\" করা হবে এবং তাদের মাথায় উটের কুঁড়ির মতো দেখতে হবে ।",
+          "content": "The Prophet (ﷺ) said that he was shown the denizens of Hell, and there were two that he had never seen before. One of them will be talked about in part 2 of this article, God willing, and the other is this: “women who are clothed yet naked, walking with an enticing gait, with something on their heads that looks like the humps of camels, leaning to one side” [41].\n\nSo they would be women who would walk in a way to get sexual attention from those in the streets while being clothed, yet naked, i.e. clothes that are so revealing they may as well not be wearing anything. Anybody who has seen how the modern dress has evolved will know that there are many examples of this today, but I will not go into specifics.\n\nAdditionally, they would have something on their heads that resembles a camel’s hump. This has happened in the past with famous hairstyles, but now it is done even by those who wear “hijab”. The “turban hijab” that the likes of Ilhan Omar wear today is exactly as described in this hadith.\n\nOnce again though, despite the Prophet (ﷺ) warning of these exact traps, many self-proclaimed “Muslims” fall into them anyway."
+        }
+      },
+      "references": [
+        {
+          "id": 41,
+          "text": "Sahih Muslim Book 24, Hadith 5310"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_39",
+      "sourceNumbers": [
+        39
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The degeneration of the Muslims’ morals.",
+          "content": "As somewhat of a continuation of the past prophecy, the degeneration of morals, especially sexual, would not be purely amongst the disbelievers. Despite how conservative Islam is when it comes to minimizing any possibility for fornication, the morals of some Muslims would degrade as well.\n\nThe Prophet (ﷺ) said, “There will be in the end of my nation men who ride chariots who are [in reality] pseudo-men; they will drop off their women, at the gates of the mosques, who are clothed [and yet] naked. Upon their heads will be the likes of a lean camel’s hump.” [42].\n\nSo this immorality would not only stop at just being among the actions of the women, just in the public level, but the men would allow and promote it, and it would creep into religious sites like mosques as well. Also, as explained previously, the camel hump “turban hijab” on their heads has even become a trend in some groups. We can see this prophecy being the reality in many places in the west, especially areas where extreme liberalism has become accepted and the norm."
+        },
+        "bn": {
+          "title": "মুসলমানদের নৈতিকতার অবক্ষয় ।",
+          "content": "As somewhat of a continuation of the past prophecy, the degeneration of morals, especially sexual, would not be purely amongst the disbelievers. Despite how conservative Islam is when it comes to minimizing any possibility for fornication, the morals of some Muslims would degrade as well.\n\nThe Prophet (ﷺ) said, “There will be in the end of my nation men who ride chariots who are [in reality] pseudo-men; they will drop off their women, at the gates of the mosques, who are clothed [and yet] naked. Upon their heads will be the likes of a lean camel’s hump.” [42].\n\nSo this immorality would not only stop at just being among the actions of the women, just in the public level, but the men would allow and promote it, and it would creep into religious sites like mosques as well. Also, as explained previously, the camel hump “turban hijab” on their heads has even become a trend in some groups. We can see this prophecy being the reality in many places in the west, especially areas where extreme liberalism has become accepted and the norm."
+        }
+      },
+      "references": [
+        {
+          "id": 42,
+          "text": "as-Silsila as-Sahiha by al-Albani (2683)"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_40",
+      "sourceNumbers": [
+        40
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The killing of Umaya bin Khalaf.",
+          "content": "Umaya bin Khalaf was a heinous man. Once Islam was beginning to be preached in public and idolatry was spoken against, the pagans of Quraysh increased in animosity towards the Muslims. They started to torture and kill the Muslims in the streets to force them to renounce their Islam for years on end. Umaya was one of these men, as he took his slave, Bilal, and forced him to lie on the hot desert sand while a large rock was placed on his chest.\n\nDespite his staunch resistance against Islam, he subconsciously accepted it as the truth. When he heard that the Prophet (ﷺ) had predicted that the Muslims would kill him, Umaya was terrified. He took every precaution to avoid any conflict with the Muslims as he knew that the Prophethood of Muhammad (ﷺ) was true, and thus heeded this warning. He swore to himself, “By Allah, I will never leave Mecca.”.\n\nThen the day came when Abu Jahl was rallying the pagans to fight the Muslims. Umaya still had fear in his heart due to the prophecy, and thus refused to go, but Abu Jahl would not relent on Umaya. Eventually, Umaya broke and said that he would go out to fight the Muslims, but on the condition that he would buy the best camel he could and that he would only go for a short distance to protect himself.\n\nUmaya’s wife knew of the prophecy and was also scared for him so she reminded him of it as he was heading out, but he comforted her by telling her he would take the precautions and not be out for long. Despite his best efforts to avoid battle and to take as many precautions as possible, he was caught in battle with the Muslims and was killed in the Battle of Badr [43]."
+        },
+        "bn": {
+          "title": "উমাইয়া বিন খালাফকে হত্যা ।",
+          "content": "Umaya bin Khalaf was a heinous man. Once Islam was beginning to be preached in public and idolatry was spoken against, the pagans of Quraysh increased in animosity towards the Muslims. They started to torture and kill the Muslims in the streets to force them to renounce their Islam for years on end. Umaya was one of these men, as he took his slave, Bilal, and forced him to lie on the hot desert sand while a large rock was placed on his chest.\n\nDespite his staunch resistance against Islam, he subconsciously accepted it as the truth. When he heard that the Prophet (ﷺ) had predicted that the Muslims would kill him, Umaya was terrified. He took every precaution to avoid any conflict with the Muslims as he knew that the Prophethood of Muhammad (ﷺ) was true, and thus heeded this warning. He swore to himself, “By Allah, I will never leave Mecca.”.\n\nThen the day came when Abu Jahl was rallying the pagans to fight the Muslims. Umaya still had fear in his heart due to the prophecy, and thus refused to go, but Abu Jahl would not relent on Umaya. Eventually, Umaya broke and said that he would go out to fight the Muslims, but on the condition that he would buy the best camel he could and that he would only go for a short distance to protect himself.\n\nUmaya’s wife knew of the prophecy and was also scared for him so she reminded him of it as he was heading out, but he comforted her by telling her he would take the precautions and not be out for long. Despite his best efforts to avoid battle and to take as many precautions as possible, he was caught in battle with the Muslims and was killed in the Battle of Badr [43]."
+        }
+      },
+      "references": [
+        {
+          "id": 43,
+          "text": "Sahih al-Bukhari Vol. 5, Book 59, Hadith 286"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_41",
+      "sourceNumbers": [
+        41
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The history of Uwais al-Qarani.",
+          "content": "While the Prophet (ﷺ) was still alive, he told Umar ibn al-Khattab about a pious man that he would meet in the future. He told Umar that this man would be named Uwais coming as reinforcements from Yemen, being from the tribe Qaran of Murid. Additionally, Uwais would have had his leprosy cured except for the space of a coin and that his mother would be alive and his treatment of her would be well.\n\nYears later, after the Prophet (ﷺ) had passed away, reinforcements from Yemen came to aid the Muslim army and Umar was there. He remembered what he had heard from the Prophet (ﷺ) and asked around for Uwais.\n\nUmar went around asking “Is there amongst you Uwais b. ‘Amir?” until he met Uwais. Umar continued to check every attribute of Uwais that the Prophet (ﷺ) had described and they were all accurate. Umar then said, “I heard Allah’s Messenger (ﷺ) say: “There would come to you Uwais b. Amir with the reinforcement from the people of Yemen. (He would be) from Qaran, (the branch) of Murid. He had been suffering from leprosy from which he was cured but for a spot of a dirham. His treatment with his mother would have been excellent. If he were to take an oath in the name of Allah, He would honour that. And if it is possible for you, then do ask him to beg forgiveness for you (from your Lord).”” So Uwais prayed for Umar. Then Umar asked Uwais where he was going and offered to make his living easier there, but Uwais replied that he would rather live amongst its poor [44]."
+        },
+        "bn": {
+          "title": "উয়াইস আল-কারানির ইতিহাস ।",
+          "content": "While the Prophet (ﷺ) was still alive, he told Umar ibn al-Khattab about a pious man that he would meet in the future. He told Umar that this man would be named Uwais coming as reinforcements from Yemen, being from the tribe Qaran of Murid. Additionally, Uwais would have had his leprosy cured except for the space of a coin and that his mother would be alive and his treatment of her would be well.\n\nYears later, after the Prophet (ﷺ) had passed away, reinforcements from Yemen came to aid the Muslim army and Umar was there. He remembered what he had heard from the Prophet (ﷺ) and asked around for Uwais.\n\nUmar went around asking “Is there amongst you Uwais b. ‘Amir?” until he met Uwais. Umar continued to check every attribute of Uwais that the Prophet (ﷺ) had described and they were all accurate. Umar then said, “I heard Allah’s Messenger (ﷺ) say: “There would come to you Uwais b. Amir with the reinforcement from the people of Yemen. (He would be) from Qaran, (the branch) of Murid. He had been suffering from leprosy from which he was cured but for a spot of a dirham. His treatment with his mother would have been excellent. If he were to take an oath in the name of Allah, He would honour that. And if it is possible for you, then do ask him to beg forgiveness for you (from your Lord).”” So Uwais prayed for Umar. Then Umar asked Uwais where he was going and offered to make his living easier there, but Uwais replied that he would rather live amongst its poor [44]."
+        }
+      },
+      "references": [
+        {
+          "id": 44,
+          "text": "Sahih Muslim Book 31, Hadith 6172"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_42",
+      "sourceNumbers": [
+        42
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Literacy will become widespread.",
+          "content": "“Many of us take for granted the abundance of books that are available in the modern age. However, the majority of people in history have never even held a book in their hands. One reason is the lack of education as most people used to be illiterate so there was not a big demand for books.\n\nAnother reason is scarcity; books were difficult and expensive to produce because each copy had to be written manually by hand. This has been the norm for most of human history, and seventh-century Arabia was no different. Muhammad was born into a society in which very few people could read or write. It is estimated that the number of people who were literate in his locality of Mecca did not exceed seventeen. Muhammad (ﷺ) himself could not read or write. There were even whole societies that didn’t have any books, they didn’t write anything down because they only had an oral language.” [The Forbidden Prophecies p.69-70]\n\nAdditionally, the suppression of knowledge and the few books that were written was taking place during the life of the Prophet (ﷺ), as he was alive during the Christian Dark Ages. Despite all of this, he prophesied that “the pen would prevail” meaning that reading and writing will become widespread [45]. It is an incredibly unintuitive prophecy to make, but we now see it as our reality.\n\nCenturies later, the printing press was created and books started to become widespread, with literacy along with it. “To put this into perspective, the fifteenth century saw about the same number of manuscripts printed in Europe as had been produced by hand during the entire preceding fourteen centuries.” [Idib. p.71]."
+        },
+        "bn": {
+          "title": "সাক্ষরতা ব্যাপকভাবে ছড়িয়ে পড়বে ।",
+          "content": "“Many of us take for granted the abundance of books that are available in the modern age. However, the majority of people in history have never even held a book in their hands. One reason is the lack of education as most people used to be illiterate so there was not a big demand for books.\n\nAnother reason is scarcity; books were difficult and expensive to produce because each copy had to be written manually by hand. This has been the norm for most of human history, and seventh-century Arabia was no different. Muhammad was born into a society in which very few people could read or write. It is estimated that the number of people who were literate in his locality of Mecca did not exceed seventeen. Muhammad (ﷺ) himself could not read or write. There were even whole societies that didn’t have any books, they didn’t write anything down because they only had an oral language.” [The Forbidden Prophecies p.69-70]\n\nAdditionally, the suppression of knowledge and the few books that were written was taking place during the life of the Prophet (ﷺ), as he was alive during the Christian Dark Ages. Despite all of this, he prophesied that “the pen would prevail” meaning that reading and writing will become widespread [45]. It is an incredibly unintuitive prophecy to make, but we now see it as our reality.\n\nCenturies later, the printing press was created and books started to become widespread, with literacy along with it. “To put this into perspective, the fifteenth century saw about the same number of manuscripts printed in Europe as had been produced by hand during the entire preceding fourteen centuries.” [Idib. p.71]."
+        }
+      },
+      "references": [
+        {
+          "id": 45,
+          "text": "al-Adab al-Mufrad 1035"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_43",
+      "sourceNumbers": [
+        43
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "But ignorance will increase simultaneously.",
+          "content": "Paradoxically to the last point, the Prophet (ﷺ) also said, “ignorance will become widespread.” [46]. At face value, it seems contradicting to say that people will become literate and start reading and writing, while also saying that ignorance will become widespread at this time. How could this be the case?\n\nSadly, this is also our world today. While most of the modern world has access to millions of books right at their fingertips for free, ignorance has become a massive problem. With the spread of the internet came the spread of fringe communities coming together and confirming each other’s false beliefs over and over. In the past, if you were wrong about something then people would likely tell you to stop, but now these people have found communities where their every thought will be accepted and parroted with no resistance. Whenever any resistance does come up, however, they are insulted, berated, and kicked out of the community to keep up the facade they have built up over the years.\n\nThe reader has likely come across some of these groups and been baffled by them, as I have."
+        },
+        "bn": {
+          "title": "কিন্তু অজ্ঞতা একই সাথে বৃদ্ধি পাবে ।",
+          "content": "Paradoxically to the last point, the Prophet (ﷺ) also said, “ignorance will become widespread.” [46]. At face value, it seems contradicting to say that people will become literate and start reading and writing, while also saying that ignorance will become widespread at this time. How could this be the case?\n\nSadly, this is also our world today. While most of the modern world has access to millions of books right at their fingertips for free, ignorance has become a massive problem. With the spread of the internet came the spread of fringe communities coming together and confirming each other’s false beliefs over and over. In the past, if you were wrong about something then people would likely tell you to stop, but now these people have found communities where their every thought will be accepted and parroted with no resistance. Whenever any resistance does come up, however, they are insulted, berated, and kicked out of the community to keep up the facade they have built up over the years.\n\nThe reader has likely come across some of these groups and been baffled by them, as I have."
+        }
+      },
+      "references": [
+        {
+          "id": 46,
+          "text": "Sunan ibn Majah Vol. 5, Book 36, Hadith 4051"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_44",
+      "sourceNumbers": [
+        44
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "The windy night.",
+          "content": "“When we [were traveling and] reached Tabuk, the Prophet (ﷺ) said, “There will be a strong wind tonight and so no one should stand and whoever has a camel, should fasten it.” So we fastened our camels. A strong wind blew at night and a man stood up and he was blown away to a mountain called Taiy.” [47]."
+        },
+        "bn": {
+          "title": "বাতাসের রাত ।",
+          "content": "“When we [were traveling and] reached Tabuk, the Prophet (ﷺ) said, “There will be a strong wind tonight and so no one should stand and whoever has a camel, should fasten it.” So we fastened our camels. A strong wind blew at night and a man stood up and he was blown away to a mountain called Taiy.” [47]."
+        }
+      },
+      "references": [
+        {
+          "id": 47,
+          "text": "Sahih al-Bukhari Vol. 2, Book 24, Hadith 559"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_45",
+      "sourceNumbers": [
+        45
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "A time will come when someone getting 100 dinars will be dissatisfied.",
+          "content": "When it comes to the prophecies that were foretold, it is known that some may happen multiple times, and this is one of them.\n\nThe Prophet said that one of the signs of the Hour would be “the increase of wealth to such an extent that even if one is given one hundred Dinars, he will not be satisfied” [1]. 100 Dinars is roughly the equivalent of 3,300 USD today.\n\nThis came true during the aforementioned period of wealth the Muslims experienced when they could not find anyone to give charity to, but it is also true today in some areas. There are many people today stating that if they were given a couple thousand dollars, they would not be happy about it. The reason being that it is pretty much only enough for a month or two of their rent. They have been pushed into surviving paycheck to paycheck and a large sum of cash like that is only seen as a temporary relief."
+        },
+        "bn": {
+          "title": "এমন একটা সময় আসবে যখন কেউ ১০০ দিনার পেয়ে অসন্তুষ্ট হবে ।",
+          "content": "When it comes to the prophecies that were foretold, it is known that some may happen multiple times, and this is one of them.\n\nThe Prophet said that one of the signs of the Hour would be “the increase of wealth to such an extent that even if one is given one hundred Dinars, he will not be satisfied” [1]. 100 Dinars is roughly the equivalent of 3,300 USD today.\n\nThis came true during the aforementioned period of wealth the Muslims experienced when they could not find anyone to give charity to, but it is also true today in some areas. There are many people today stating that if they were given a couple thousand dollars, they would not be happy about it. The reason being that it is pretty much only enough for a month or two of their rent. They have been pushed into surviving paycheck to paycheck and a large sum of cash like that is only seen as a temporary relief."
+        }
+      },
+      "references": [
+        {
+          "id": 1,
+          "text": "Sahih Al-Bukhari 3176, Sahih Muslim 157d"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_46",
+      "sourceNumbers": [
+        46
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Muslims will be many but the non-Muslims will devour them.",
+          "content": "The Prophet (ﷺ) said: “The people will soon summon one another to attack you just as people eating invite others to share their dish.” Someone asked: “Will that be because of our small numbers at that time?” He replied: “No, you will be numerous at that time: but you will be scum and rubbish like that carried down by a torrent, and Allah will take fear of you from the chests of your enemy and cast wahn into your hearts.” Someone asked: “What is wahn?” He replied: “Love of the world and hatred of death.” [48].\n\n“This prediction accurately describes the radical turn of events that took place in the Muslim world in the nineteenth and twentieth century. Prior to this, the Muslim lands had grown to be some of the most powerful in the world.\n\nFrom the time of the death of Muhammad until the nineteenth century, the Muslims had large empires which were economically, politically, militarily, technologically, and educationally far ahead of most of the world. In the nineteenth and twentieth century the unthinkable happened, nearly all of the Muslim world from Indonesia in the far east to Libya in the far west was occupied, colonized, and militarily defeated by [various] non-Muslim nations…\n\nIn the early twentieth century, there were an estimated 200 million Muslims, representing 12.5% of the world’s population. But their considerable numbers could do nothing to prevent the defeat, the non-Muslim nations came, divided, conquered, and invited each other to take the Muslim lands, just as Muhammad foretold.” [The Forbidden Prophecies p.78].\n\nThe modern borders of the Middle East are almost all the result of the partitioning of Muslim land between colonial powers like Britain and France after WWI."
+        },
+        "bn": {
+          "title": "মুসলমানরা অনেক হবে কিন্তু অমুসলিমরা তাদের গ্রাস করবে ।",
+          "content": "The Prophet (ﷺ) said: “The people will soon summon one another to attack you just as people eating invite others to share their dish.” Someone asked: “Will that be because of our small numbers at that time?” He replied: “No, you will be numerous at that time: but you will be scum and rubbish like that carried down by a torrent, and Allah will take fear of you from the chests of your enemy and cast wahn into your hearts.” Someone asked: “What is wahn?” He replied: “Love of the world and hatred of death.” [48].\n\n“This prediction accurately describes the radical turn of events that took place in the Muslim world in the nineteenth and twentieth century. Prior to this, the Muslim lands had grown to be some of the most powerful in the world.\n\nFrom the time of the death of Muhammad until the nineteenth century, the Muslims had large empires which were economically, politically, militarily, technologically, and educationally far ahead of most of the world. In the nineteenth and twentieth century the unthinkable happened, nearly all of the Muslim world from Indonesia in the far east to Libya in the far west was occupied, colonized, and militarily defeated by [various] non-Muslim nations…\n\nIn the early twentieth century, there were an estimated 200 million Muslims, representing 12.5% of the world’s population. But their considerable numbers could do nothing to prevent the defeat, the non-Muslim nations came, divided, conquered, and invited each other to take the Muslim lands, just as Muhammad foretold.” [The Forbidden Prophecies p.78].\n\nThe modern borders of the Middle East are almost all the result of the partitioning of Muslim land between colonial powers like Britain and France after WWI."
+        }
+      },
+      "references": [
+        {
+          "id": 48,
+          "text": "Sunah abu Dawud Book 38, Hadith 4284"
+        }
+      ],
+      "detailsPage": null
+    },
+    {
+      "id": "prophecy_47",
+      "sourceNumbers": [
+        47
+      ],
+      "sourceTextPreserved": true,
+      "localization": {
+        "en": {
+          "title": "Sudden death will increase.",
+          "content": "The Prophet (ﷺ) told us that one of the signs of the Hour would be “an increase of sudden deaths” [49].\n\nAt the time, people would rarely ever suddenly die as many of the deaths would come from things like battles and old age. The only people who would ever truly experience something like “sudden death” at the time would be those who would have heart attacks, but heart attacks would have been much rarer than they are today. Now, due to the modern diet and lifestyle, heart attacks are increasing even amongst the young, and even in areas that are not exceptionally wealthy."
+        },
+        "bn": {
+          "title": "আকস্মিক মৃত্যু বৃদ্ধি পাবে ।",
+          "content": "The Prophet (ﷺ) told us that one of the signs of the Hour would be “an increase of sudden deaths” [49].\n\nAt the time, people would rarely ever suddenly die as many of the deaths would come from things like battles and old age. The only people who would ever truly experience something like “sudden death” at the time would be those who would have heart attacks, but heart attacks would have been much rarer than they are today. Now, due to the modern diet and lifestyle, heart attacks are increasing even amongst the young, and even in areas that are not exceptionally wealthy."
+        }
+      },
+      "references": [
+        {
+          "id": 49,
+          "text": "Sahih al-Jami’, 2/1026"
+        }
+      ],
+      "detailsPage": null
+    }
+  ],
+  "references": {
+    "1": "Sahih Al-Bukhari 3176, Sahih Muslim 157d",
+    "2": "See “Siege of Jerusalem (636-637)”",
+    "3": "See “Plague of Amwas”",
+    "4": "Fath Al-Bari commentary of Hadith 3005, starts on 6/319",
+    "5": "Sahih al-Bukhari 7562",
+    "6": "Sahih al-Bukhari 6934",
+    "7": "Sahih al-Bukhari 5058",
+    "8": "Fath Al-Bari commentary on Hadith 7123, starts on 13/546",
+    "9": "Sahih Muslim 1779",
+    "10": "Sahih Muslim 157i",
+    "11": "Sahih Muslim 2896",
+    "12": "Sahih al-Bukhari Vol. 3, Book 30, Hadith 102",
+    "13": "Sahih al-Bukhari Vol. 9, Book 88, Hadith 216",
+    "14": "Sahih al-Bukhari 4207",
+    "15": "Sahih Muslim 7",
+    "16": "Sunan Ibn Majah 4036, Authenticated by Al-Albani",
+    "17": "Sahih Muslim 157, Sahih Muslim 157L",
+    "18": "Sahih Al-Bukhari 7116",
+    "19": "Musnad Ahmad, 10560",
+    "20": "Sahih al-Bukhari 7121",
+    "21": "Sahih Muslim Book 41, Hadith 6949",
+    "22": "Sahih al-Bukhari Vol. 9, Book 88, Hadith 237, Sahih al-Bukhari Vol. 1, Book 3, Hadith 100",
+    "23": "Sahih Muslim Book 41, Hadith 6959, Sahih Muslim Book 41, Hadith 6958",
+    "24": "From the Encyclopedia of Mongolia and the Mongolian Empire: “Valuable furs, especially sable and ermine, were worn in winter… In winter the underlayers were made of skin with the fur inmost, while with the outer layer the fur faced out, at least on the upper part.”. About the footwear: they would wear fur covers named degtii over their boots.",
+    "25": "Sahih Muslim Book 41, Hadith 6966",
+    "26": "Musnad Ahmad, 18883",
+    "27": "Sahih Muslim Book 41, Hadith 6975",
+    "28": "Sahih Muslim Book 41, Hadith 6977",
+    "29": "Sahih al-Bukhari Vol. 1, Book 3, Hadith 80",
+    "30": "Sunan ibn Majah Vol. 5, Book 36, Hadith 4019",
+    "31": "Sahih Muslim Book 1, Hadith 1",
+    "32": "Sahih al-Bukhari Vol. 8, Book 74, Hadith 301",
+    "33": "Sahih al-Bukhari Vol. 5, Book 57, Hadith 24",
+    "34": "Jami` at-Tirmidhi, Vol. 6, Book of Al-Manaqib (Virtues), Hadith 3705",
+    "35": "Sahih al-Bukhari Vol. 4, Book 56, Hadith 823",
+    "36": "Sahih al-Bukhari Vol. 4, Book 52, Hadith 175",
+    "37": "Sahih al-Bukhari Vol. 4, Book 52, Hadith 47",
+    "38": "Fath al-Bari commentary on Hadith 5926, 11/80",
+    "39": "Jami’ at-Tirmidhi Vol. 5, Book 39, Hadith 2664, Sunan abi Dawud 4604",
+    "40": "Narrated by al-Daarimi in his Sunan (588) and by al-Khateeb in al-Kifaayah (12). It was attributed by al-Haafiz in al-Fath (13/291) to al-Bayhaqi, and he said: With a saheeh isnaad.",
+    "41": "Sahih Muslim Book 24, Hadith 5310",
+    "42": "as-Silsila as-Sahiha by al-Albani (2683)",
+    "43": "Sahih al-Bukhari Vol. 5, Book 59, Hadith 286",
+    "44": "Sahih Muslim Book 31, Hadith 6172",
+    "45": "al-Adab al-Mufrad 1035",
+    "46": "Sunan ibn Majah Vol. 5, Book 36, Hadith 4051",
+    "47": "Sahih al-Bukhari Vol. 2, Book 24, Hadith 559",
+    "48": "Sunah abu Dawud Book 38, Hadith 4284",
+    "49": "Sahih al-Jami’, 2/1026"
+  }
+}
