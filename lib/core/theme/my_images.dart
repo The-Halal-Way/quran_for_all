@@ -56,10 +56,13 @@ class MyImages {
   static const String femaleTashahhudFingerLiftCorrected =
       'assets/images/prayer/female/female_tashahhud_finger_lift_corrected.png';
 
-
   // nurani quran images
   static const String nuraniQuranBlueReview =
       'assets/images/nurani_quran/blue_preview.jpg';
   static const String nuraniQuranGreenReview =
       'assets/images/nurani_quran/green_preview.jpg';
+
+  // books images
+  static const String bookScienceEng = 'assets/images/books/science_en.jpg';
+  static const String bookScienceBn = 'assets/images/books/science_bn.jpg';
 }

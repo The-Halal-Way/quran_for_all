@@ -1481,6 +1481,240 @@ abstract class AppLocalizations {
   /// **'Choose your Quran path'**
   String get quranHubSectionChooseTitle;
 
+  /// No description provided for @scienceInQuranTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Science in Quran'**
+  String get scienceInQuranTitle;
+
+  /// No description provided for @scienceInQuranDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore a concise booklet about signs of creation mentioned in the Quran.'**
+  String get scienceInQuranDescription;
+
+  /// No description provided for @scienceInQuranEnglish.
+  ///
+  /// In en, this message translates to:
+  /// **'English edition'**
+  String get scienceInQuranEnglish;
+
+  /// No description provided for @scienceInQuranBangla.
+  ///
+  /// In en, this message translates to:
+  /// **'Bangla edition'**
+  String get scienceInQuranBangla;
+
+  /// No description provided for @scienceInQuranFileSize.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF · {size} MB'**
+  String scienceInQuranFileSize(String size);
+
+  /// No description provided for @scienceInQuranChooseLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a language'**
+  String get scienceInQuranChooseLanguage;
+
+  /// No description provided for @scienceInQuranLanguageDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Download the edition you prefer. It will be available offline with your reading position and saved pages.'**
+  String get scienceInQuranLanguageDescription;
+
+  /// No description provided for @scienceInQuranOfflineReady.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready offline'**
+  String get scienceInQuranOfflineReady;
+
+  /// No description provided for @scienceInQuranDownload.
+  ///
+  /// In en, this message translates to:
+  /// **'Download booklet'**
+  String get scienceInQuranDownload;
+
+  /// No description provided for @scienceInQuranDownloading.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading… {progress}%'**
+  String scienceInQuranDownloading(String progress);
+
+  /// No description provided for @scienceInQuranCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get scienceInQuranCancel;
+
+  /// No description provided for @scienceInQuranOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Read booklet'**
+  String get scienceInQuranOpen;
+
+  /// No description provided for @scienceInQuranContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue reading'**
+  String get scienceInQuranContinue;
+
+  /// No description provided for @scienceInQuranLastPage.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue from page {page}'**
+  String scienceInQuranLastPage(String page);
+
+  /// No description provided for @scienceInQuranBookmarks.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved pages'**
+  String get scienceInQuranBookmarks;
+
+  /// No description provided for @scienceInQuranBookmarkAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Bookmark this page'**
+  String get scienceInQuranBookmarkAdd;
+
+  /// No description provided for @scienceInQuranBookmarkRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove page bookmark'**
+  String get scienceInQuranBookmarkRemove;
+
+  /// No description provided for @scienceInQuranBookmarkSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page} bookmarked'**
+  String scienceInQuranBookmarkSaved(String page);
+
+  /// No description provided for @scienceInQuranBookmarkRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page} bookmark removed'**
+  String scienceInQuranBookmarkRemoved(String page);
+
+  /// No description provided for @scienceInQuranBookmarksEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No saved pages yet'**
+  String get scienceInQuranBookmarksEmpty;
+
+  /// No description provided for @scienceInQuranPageNumberNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Page numbers refer to the booklet PDF.'**
+  String get scienceInQuranPageNumberNote;
+
+  /// No description provided for @scienceInQuranPage.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page}'**
+  String scienceInQuranPage(String page);
+
+  /// No description provided for @scienceInQuranPageCounter.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page} of {total}'**
+  String scienceInQuranPageCounter(String page, String total);
+
+  /// No description provided for @scienceInQuranJump.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to page'**
+  String get scienceInQuranJump;
+
+  /// No description provided for @scienceInQuranPageField.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF page number'**
+  String get scienceInQuranPageField;
+
+  /// No description provided for @scienceInQuranPageRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a page from 1 to {total}'**
+  String scienceInQuranPageRange(String total);
+
+  /// No description provided for @scienceInQuranGo.
+  ///
+  /// In en, this message translates to:
+  /// **'Go'**
+  String get scienceInQuranGo;
+
+  /// No description provided for @scienceInQuranPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous page'**
+  String get scienceInQuranPrevious;
+
+  /// No description provided for @scienceInQuranNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next page'**
+  String get scienceInQuranNext;
+
+  /// No description provided for @scienceInQuranReaderHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Scroll to read · Pinch to zoom'**
+  String get scienceInQuranReaderHint;
+
+  /// No description provided for @scienceInQuranRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get scienceInQuranRetry;
+
+  /// No description provided for @scienceInQuranDownloadAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Download again'**
+  String get scienceInQuranDownloadAgain;
+
+  /// No description provided for @scienceInQuranReaderError.
+  ///
+  /// In en, this message translates to:
+  /// **'This PDF could not be opened. Try again or download a fresh copy.'**
+  String get scienceInQuranReaderError;
+
+  /// No description provided for @scienceInQuranNetworkError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not download the booklet. Check your connection and try again.'**
+  String get scienceInQuranNetworkError;
+
+  /// No description provided for @scienceInQuranInvalidPdf.
+  ///
+  /// In en, this message translates to:
+  /// **'The download did not contain a complete PDF. Please try again.'**
+  String get scienceInQuranInvalidPdf;
+
+  /// No description provided for @scienceInQuranStorageError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not save on this device. Check available storage and try again.'**
+  String get scienceInQuranStorageError;
+
+  /// No description provided for @scienceInQuranRemoveDownload.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove offline booklet'**
+  String get scienceInQuranRemoveDownload;
+
+  /// No description provided for @scienceInQuranRemoveDownloadBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove the downloaded booklet to free up storage? Your saved pages and reading position will be kept.'**
+  String get scienceInQuranRemoveDownloadBody;
+
+  /// No description provided for @scienceInQuranRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get scienceInQuranRemove;
+
   /// No description provided for @nuraniQuranTitle.
   ///
   /// In en, this message translates to:
@@ -4100,7 +4334,7 @@ abstract class AppLocalizations {
   /// No description provided for @dashboardNeedTitle.
   ///
   /// In en, this message translates to:
-  /// **'When You Have a Need'**
+  /// **'The Art of Dua Acceptance'**
   String get dashboardNeedTitle;
 
   /// No description provided for @dashboardNeedSubtitle.
@@ -4546,6 +4780,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Hadith'**
   String get dashboardSectionHadith;
+
+  /// No description provided for @dashboardSectionBooks.
+  ///
+  /// In en, this message translates to:
+  /// **'Books & reflections'**
+  String get dashboardSectionBooks;
 
   /// No description provided for @tasbeehTitle.
   ///

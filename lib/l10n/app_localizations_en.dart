@@ -712,6 +712,139 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubSectionChooseTitle => 'Choose your Quran path';
 
   @override
+  String get scienceInQuranTitle => 'Science in Quran';
+
+  @override
+  String get scienceInQuranDescription => 'Explore a concise booklet about signs of creation mentioned in the Quran.';
+
+  @override
+  String get scienceInQuranEnglish => 'English edition';
+
+  @override
+  String get scienceInQuranBangla => 'Bangla edition';
+
+  @override
+  String scienceInQuranFileSize(String size) {
+    return 'PDF · $size MB';
+  }
+
+  @override
+  String get scienceInQuranChooseLanguage => 'Choose a language';
+
+  @override
+  String get scienceInQuranLanguageDescription => 'Download the edition you prefer. It will be available offline with your reading position and saved pages.';
+
+  @override
+  String get scienceInQuranOfflineReady => 'Ready offline';
+
+  @override
+  String get scienceInQuranDownload => 'Download booklet';
+
+  @override
+  String scienceInQuranDownloading(String progress) {
+    return 'Downloading… $progress%';
+  }
+
+  @override
+  String get scienceInQuranCancel => 'Cancel';
+
+  @override
+  String get scienceInQuranOpen => 'Read booklet';
+
+  @override
+  String get scienceInQuranContinue => 'Continue reading';
+
+  @override
+  String scienceInQuranLastPage(String page) {
+    return 'Continue from page $page';
+  }
+
+  @override
+  String get scienceInQuranBookmarks => 'Saved pages';
+
+  @override
+  String get scienceInQuranBookmarkAdd => 'Bookmark this page';
+
+  @override
+  String get scienceInQuranBookmarkRemove => 'Remove page bookmark';
+
+  @override
+  String scienceInQuranBookmarkSaved(String page) {
+    return 'Page $page bookmarked';
+  }
+
+  @override
+  String scienceInQuranBookmarkRemoved(String page) {
+    return 'Page $page bookmark removed';
+  }
+
+  @override
+  String get scienceInQuranBookmarksEmpty => 'No saved pages yet';
+
+  @override
+  String get scienceInQuranPageNumberNote => 'Page numbers refer to the booklet PDF.';
+
+  @override
+  String scienceInQuranPage(String page) {
+    return 'Page $page';
+  }
+
+  @override
+  String scienceInQuranPageCounter(String page, String total) {
+    return 'Page $page of $total';
+  }
+
+  @override
+  String get scienceInQuranJump => 'Go to page';
+
+  @override
+  String get scienceInQuranPageField => 'PDF page number';
+
+  @override
+  String scienceInQuranPageRange(String total) {
+    return 'Enter a page from 1 to $total';
+  }
+
+  @override
+  String get scienceInQuranGo => 'Go';
+
+  @override
+  String get scienceInQuranPrevious => 'Previous page';
+
+  @override
+  String get scienceInQuranNext => 'Next page';
+
+  @override
+  String get scienceInQuranReaderHint => 'Scroll to read · Pinch to zoom';
+
+  @override
+  String get scienceInQuranRetry => 'Try again';
+
+  @override
+  String get scienceInQuranDownloadAgain => 'Download again';
+
+  @override
+  String get scienceInQuranReaderError => 'This PDF could not be opened. Try again or download a fresh copy.';
+
+  @override
+  String get scienceInQuranNetworkError => 'Could not download the booklet. Check your connection and try again.';
+
+  @override
+  String get scienceInQuranInvalidPdf => 'The download did not contain a complete PDF. Please try again.';
+
+  @override
+  String get scienceInQuranStorageError => 'Could not save on this device. Check available storage and try again.';
+
+  @override
+  String get scienceInQuranRemoveDownload => 'Remove offline booklet';
+
+  @override
+  String get scienceInQuranRemoveDownloadBody => 'Remove the downloaded booklet to free up storage? Your saved pages and reading position will be kept.';
+
+  @override
+  String get scienceInQuranRemove => 'Remove';
+
+  @override
   String get nuraniQuranTitle => 'Nurani Quran';
 
   @override
@@ -2062,7 +2195,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardSectionExplore => 'Explore';
 
   @override
-  String get dashboardNeedTitle => 'When You Have a Need';
+  String get dashboardNeedTitle => 'The Art of Dua Acceptance';
 
   @override
   String get dashboardNeedSubtitle => 'Quran and Sunnah practices for times of need';
@@ -2285,6 +2418,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dashboardSectionHadith => 'Hadith';
+
+  @override
+  String get dashboardSectionBooks => 'Books & reflections';
 
   @override
   String get tasbeehTitle => 'Tasbeeh Counter';

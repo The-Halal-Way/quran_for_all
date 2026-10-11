@@ -712,6 +712,139 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quranHubSectionChooseTitle => 'আপনার কুরআন পথ বেছে নিন';
 
   @override
+  String get scienceInQuranTitle => 'কুরআনে বিজ্ঞান';
+
+  @override
+  String get scienceInQuranDescription => 'কুরআনে উল্লেখিত সৃষ্টির নিদর্শন নিয়ে সংক্ষিপ্ত পুস্তিকাটি পড়ুন।';
+
+  @override
+  String get scienceInQuranEnglish => 'ইংরেজি সংস্করণ';
+
+  @override
+  String get scienceInQuranBangla => 'বাংলা সংস্করণ';
+
+  @override
+  String scienceInQuranFileSize(String size) {
+    return 'পিডিএফ · $size এমবি';
+  }
+
+  @override
+  String get scienceInQuranChooseLanguage => 'ভাষা বেছে নিন';
+
+  @override
+  String get scienceInQuranLanguageDescription => 'আপনার পছন্দের সংস্করণ ডাউনলোড করুন। এটি পড়ার অবস্থান ও সংরক্ষিত পৃষ্ঠাসহ অফলাইনে থাকবে।';
+
+  @override
+  String get scienceInQuranOfflineReady => 'অফলাইনে প্রস্তুত';
+
+  @override
+  String get scienceInQuranDownload => 'পুস্তিকা ডাউনলোড করুন';
+
+  @override
+  String scienceInQuranDownloading(String progress) {
+    return 'ডাউনলোড হচ্ছে… $progress%';
+  }
+
+  @override
+  String get scienceInQuranCancel => 'বাতিল';
+
+  @override
+  String get scienceInQuranOpen => 'পুস্তিকা পড়ুন';
+
+  @override
+  String get scienceInQuranContinue => 'পড়া চালিয়ে যান';
+
+  @override
+  String scienceInQuranLastPage(String page) {
+    return 'পৃষ্ঠা $page থেকে চালিয়ে যান';
+  }
+
+  @override
+  String get scienceInQuranBookmarks => 'সংরক্ষিত পৃষ্ঠা';
+
+  @override
+  String get scienceInQuranBookmarkAdd => 'এই পৃষ্ঠা সংরক্ষণ করুন';
+
+  @override
+  String get scienceInQuranBookmarkRemove => 'পৃষ্ঠা সংরক্ষণ সরান';
+
+  @override
+  String scienceInQuranBookmarkSaved(String page) {
+    return 'পৃষ্ঠা $page সংরক্ষণ করা হয়েছে';
+  }
+
+  @override
+  String scienceInQuranBookmarkRemoved(String page) {
+    return 'পৃষ্ঠা $page-এর সংরক্ষণ সরানো হয়েছে';
+  }
+
+  @override
+  String get scienceInQuranBookmarksEmpty => 'এখনও কোনো পৃষ্ঠা সংরক্ষিত নেই';
+
+  @override
+  String get scienceInQuranPageNumberNote => 'পৃষ্ঠা নম্বর পুস্তিকার পিডিএফ অনুযায়ী।';
+
+  @override
+  String scienceInQuranPage(String page) {
+    return 'পৃষ্ঠা $page';
+  }
+
+  @override
+  String scienceInQuranPageCounter(String page, String total) {
+    return '$totalটি পৃষ্ঠার মধ্যে $page';
+  }
+
+  @override
+  String get scienceInQuranJump => 'পৃষ্ঠায় যান';
+
+  @override
+  String get scienceInQuranPageField => 'পিডিএফ পৃষ্ঠা নম্বর';
+
+  @override
+  String scienceInQuranPageRange(String total) {
+    return '১ থেকে $total-এর মধ্যে পৃষ্ঠা লিখুন';
+  }
+
+  @override
+  String get scienceInQuranGo => 'যান';
+
+  @override
+  String get scienceInQuranPrevious => 'আগের পৃষ্ঠা';
+
+  @override
+  String get scienceInQuranNext => 'পরের পৃষ্ঠা';
+
+  @override
+  String get scienceInQuranReaderHint => 'পড়তে স্ক্রল করুন · বড় করতে দুই আঙুল ব্যবহার করুন';
+
+  @override
+  String get scienceInQuranRetry => 'আবার চেষ্টা করুন';
+
+  @override
+  String get scienceInQuranDownloadAgain => 'আবার ডাউনলোড করুন';
+
+  @override
+  String get scienceInQuranReaderError => 'পিডিএফ খোলা যায়নি। আবার চেষ্টা করুন অথবা নতুন করে ডাউনলোড করুন।';
+
+  @override
+  String get scienceInQuranNetworkError => 'পুস্তিকা ডাউনলোড করা যায়নি। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।';
+
+  @override
+  String get scienceInQuranInvalidPdf => 'ডাউনলোডে সম্পূর্ণ পিডিএফ পাওয়া যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get scienceInQuranStorageError => 'এই ডিভাইসে সংরক্ষণ করা যায়নি। খালি জায়গা দেখে আবার চেষ্টা করুন।';
+
+  @override
+  String get scienceInQuranRemoveDownload => 'অফলাইন পুস্তিকা সরান';
+
+  @override
+  String get scienceInQuranRemoveDownloadBody => 'জায়গা খালি করতে ডাউনলোড করা পুস্তিকা সরাবেন? সংরক্ষিত পৃষ্ঠা ও পড়ার অবস্থান রাখা হবে।';
+
+  @override
+  String get scienceInQuranRemove => 'সরান';
+
+  @override
   String get nuraniQuranTitle => 'নূরানী কুরআন';
 
   @override
@@ -2062,7 +2195,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardSectionExplore => 'এক্সপ্লোর করুন';
 
   @override
-  String get dashboardNeedTitle => 'প্রয়োজন ও দোয়া কবুলের আমল';
+  String get dashboardNeedTitle => 'দুয়া কবুল হওয়ার শিল্প';
 
   @override
   String get dashboardNeedSubtitle => 'প্রয়োজনে কুরআন ও সুন্নাহভিত্তিক আমল';
@@ -2285,6 +2418,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dashboardSectionHadith => 'হাদিস';
+
+  @override
+  String get dashboardSectionBooks => 'বই ও ভাবনা';
 
   @override
   String get tasbeehTitle => 'তাসবিহ কাউন্টার';

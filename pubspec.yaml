@@ -60,6 +60,7 @@ flutter:
     - assets/images/prayer/
     - assets/images/prayer/female/
     - assets/images/nurani_quran/
+    - assets/images/books/
     - assets/json/
 
   # An image asset can refer to one or more resolution-specific "variants", see

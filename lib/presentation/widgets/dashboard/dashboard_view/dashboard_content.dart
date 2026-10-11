@@ -5,6 +5,7 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/utils/app_responsive.dart';
 import '../../common/app_icon_grid_section.dart';
 import '../../islamic_days/dashboard/dashboard_islamic_days_card.dart';
+import '../books/dashboard_books_section.dart';
 import '../when_you_have_a_need/dashboard_need_section.dart';
 import 'dashboard_continue_section.dart';
 import 'dashboard_hadith_section.dart';
@@ -38,6 +39,8 @@ class DashboardContent extends StatelessWidget {
               const DashboardPrayerSection(),
               const SizedBox(height: AppSpacing.lg),
               const DashboardIslamicDaysCard(),
+              const SizedBox(height: AppSpacing.md),
+              const DashboardBooksSection(),
               const SizedBox(height: AppSpacing.md),
               const DashboardContinueSection(),
               const SizedBox(height: AppSpacing.md),
