@@ -1736,7 +1736,7 @@ abstract class AppLocalizations {
   /// No description provided for @propheciesBookTitle.
   ///
   /// In en, this message translates to:
-  /// **'Prophecies of Muhammad ﷺ'**
+  /// **'101 Fulfilled Prophecies'**
   String get propheciesBookTitle;
 
   /// No description provided for @propheciesBookDescription.
@@ -1804,6 +1804,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'References'**
   String get propheciesReferences;
+
+  /// No description provided for @propheciesOpenSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Open source'**
+  String get propheciesOpenSource;
+
+  /// No description provided for @propheciesOpenSourceFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open this source.'**
+  String get propheciesOpenSourceFailed;
 
   /// No description provided for @propheciesClose.
   ///

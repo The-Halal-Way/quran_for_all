@@ -854,7 +854,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get scienceInQuranRemove => 'Remove';
 
   @override
-  String get propheciesBookTitle => 'Prophecies of Muhammad ﷺ';
+  String get propheciesBookTitle => '101 Fulfilled Prophecies';
 
   @override
   String get propheciesBookDescription => 'A collection of prophecies attributed to Muhammad ﷺ that are presented as fulfilled.';
@@ -896,6 +896,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get propheciesReferences => 'References';
+
+  @override
+  String get propheciesOpenSource => 'Open source';
+
+  @override
+  String get propheciesOpenSourceFailed => 'Could not open this source.';
 
   @override
   String get propheciesClose => 'Close';

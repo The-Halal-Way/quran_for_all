@@ -28,7 +28,8 @@ class PropheciesPartView extends StatelessWidget {
         separatorBuilder: (_, _) => const SizedBox(height: AppSpacing.sm),
         itemBuilder: (context, index) {
           final item = part.items[index];
-          final hasDetails = item.detailsPage != null;
+          final hasComingSoonDetails =
+              item.detailsPage != null && item.detailsPage!.url == null;
           return Material(
             color: scheme.surfaceContainerLow,
             borderRadius: BorderRadius.circular(AppRadius.lg),
@@ -56,7 +57,7 @@ class PropheciesPartView extends StatelessWidget {
                               fontWeight: AppTheme.weightBold,
                             ),
                           ),
-                          if (hasDetails) ...[
+                          if (hasComingSoonDetails) ...[
                             const SizedBox(height: AppSpacing.xs),
                             Text(
                               context.l10n.propheciesDetailsComingSoon,
@@ -70,10 +71,10 @@ class PropheciesPartView extends StatelessWidget {
                     ),
                     const SizedBox(width: AppSpacing.sm),
                     Icon(
-                      hasDetails
+                      hasComingSoonDetails
                           ? Icons.auto_awesome_rounded
                           : Icons.chevron_right_rounded,
-                      color: hasDetails
+                      color: hasComingSoonDetails
                           ? scheme.tertiary
                           : scheme.onSurfaceVariant,
                     ),

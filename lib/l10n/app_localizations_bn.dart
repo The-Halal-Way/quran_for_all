@@ -854,7 +854,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get scienceInQuranRemove => 'সরান';
 
   @override
-  String get propheciesBookTitle => 'মুহাম্মদ (সা.)-এর ভবিষ্যদ্বাণীসমূহ';
+  String get propheciesBookTitle => '১০১টি সত্যে পরিণত ভবিষ্যদ্বাণী';
 
   @override
   String get propheciesBookDescription => 'মুহাম্মদ (সা.)-এর প্রতি আরোপিত এবং পূর্ণ হয়েছে বলে উপস্থাপিত ভবিষ্যদ্বাণীগুলোর সংকলন।';
@@ -896,6 +896,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get propheciesReferences => 'তথ্যসূত্র';
+
+  @override
+  String get propheciesOpenSource => 'উৎস খুলুন';
+
+  @override
+  String get propheciesOpenSourceFailed => 'এই উৎসটি খোলা যায়নি।';
 
   @override
   String get propheciesClose => 'বন্ধ করুন';
