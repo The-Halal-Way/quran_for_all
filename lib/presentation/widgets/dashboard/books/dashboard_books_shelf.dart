@@ -26,7 +26,7 @@ class DashboardBooksShelf extends StatelessWidget {
     final colors = AppThemeColors.light;
 
     return Container(
-      height: 128,
+      constraints: const BoxConstraints(minHeight: 128),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -57,14 +57,11 @@ class DashboardBooksShelf extends StatelessWidget {
         children: [
           const _ShelfGlow(alignment: Alignment(-1.12, -1.35)),
           const _ShelfGlow(alignment: Alignment(1.1, 1.45)),
-          Align(
-            alignment: Alignment.center,
+          ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 128),
             child: Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: AppSpacing.xs,
-                // Keep enough vertical room for the longest localized title.
-                // The shelf is intentionally short, so the cards use the
-                // available height instead of adding another dashboard row.
                 vertical: AppSpacing.xs,
               ),
               child: Row(
