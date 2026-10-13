@@ -10,6 +10,7 @@ import '../tasbeeh/tasbeeh_visuals.dart';
 import 'tasbeeh_focus_backdrop.dart';
 import 'tasbeeh_focus_controls.dart';
 import 'tasbeeh_focus_dhikr_pager.dart';
+import '../tasbeeh/tasbeeh_haptics.dart';
 
 class TasbeehFocusBody extends StatelessWidget {
   const TasbeehFocusBody({super.key});
@@ -25,8 +26,7 @@ class TasbeehFocusBody extends StatelessWidget {
           behavior: HitTestBehavior.opaque,
           // Child buttons win their gestures, preventing an Undo/Exit tap from counting.
           onTap: () {
-            HapticFeedback.selectionClick();
-            model.increment();
+            TasbeehHaptics.count(targetReached: model.increment());
           },
           child: Stack(
             children: [
@@ -45,7 +45,9 @@ class TasbeehFocusBody extends StatelessWidget {
                           counts: model.counts,
                           targets: model.selectedTargets,
                           onSelected: model.selectPhrase,
-                          onCount: model.increment,
+                          onCount: () => TasbeehHaptics.count(
+                            targetReached: model.increment(),
+                          ),
                         ),
                       ),
                       const SizedBox(height: AppSpacing.sm),

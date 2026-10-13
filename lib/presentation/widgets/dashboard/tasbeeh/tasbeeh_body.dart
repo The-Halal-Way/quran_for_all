@@ -1,16 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
+import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/utils/app_responsive.dart';
 import '../../../viewmodels/dashboard/tasbeeh_viewmodel.dart';
 import '../../../views/dashboard/tasbeeh/tasbeeh_focus_view.dart';
 import '../../common/app_page_scrollbar.dart';
 import 'tasbeeh_focus_banner.dart';
 import 'tasbeeh_info_grid.dart';
+import 'tasbeeh_haptics.dart';
 import 'tasbeeh_phrase_actions.dart';
+import 'tasbeeh_phrase_picker_sheet.dart';
+import 'tasbeeh_phrase_menu.dart';
 import 'tasbeeh_widgets.dart';
 
 class TasbeehBody extends StatelessWidget {
@@ -22,6 +25,7 @@ class TasbeehBody extends StatelessWidget {
     final vm = context.watch<TasbeehViewModel>();
     final responsive = AppResponsive.of(context);
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final sectionGap = responsive.isMobile ? 10.0 : responsive.sectionGap;
     if (!vm.isLoaded) {
       return const Scaffold(body: Center(child: CupertinoActivityIndicator()));
     }
@@ -41,28 +45,43 @@ class TasbeehBody extends StatelessWidget {
                   builder: (context, controller) => SingleChildScrollView(
                     controller: controller,
                     physics: const BouncingScrollPhysics(),
-                    padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 48),
+                    padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 24),
                     child: Column(
                       children: [
                         TasbeehAppBar(isDark: isDark),
-                        SizedBox(height: responsive.sectionGap),
+                        SizedBox(height: sectionGap),
                         TasbeehCounterDisplay(
                           count: vm.count,
                           target: vm.target,
                           progress: vm.progress,
                           phraseArabic: vm.selectedPhrase.arabic,
+                          phraseId: vm.selectedPhraseId,
                           phraseLabel: vm.selectedPhrase.label(context.l10n),
                           phraseMeaning: vm.selectedPhrase.localizedMeaning(
                             context.l10n,
                           ),
                           isTargetReached: vm.isTargetReached,
                           isDark: isDark,
-                          onTap: () {
-                            HapticFeedback.selectionClick();
-                            vm.increment();
-                          },
+                          onTap: () => TasbeehHaptics.count(
+                            targetReached: vm.increment(),
+                          ),
+                          onPhraseTap: () =>
+                              showTasbeehPhrasePicker(context, vm),
+                          onAddPhrase: () =>
+                              TasbeehPhraseActions.add(context, vm),
+                          phraseMenu: vm.selectedPhrase.isBuiltIn
+                              ? null
+                              : TasbeehPhraseMenu(
+                                  onSelected: (action) =>
+                                      TasbeehPhraseActions.handle(
+                                        context,
+                                        vm,
+                                        vm.selectedPhrase,
+                                        action,
+                                      ),
+                                ),
                         ),
-                        SizedBox(height: responsive.sectionGap),
+                        SizedBox(height: sectionGap),
                         TasbeehFocusBanner(
                           onTap: () => Navigator.push(
                             context,
@@ -71,23 +90,7 @@ class TasbeehBody extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(height: responsive.sectionGap + 4),
-                        TasbeehPhraseSelector(
-                          phrases: vm.phrases,
-                          selectedId: vm.selectedPhraseId,
-                          counts: vm.counts,
-                          targets: vm.selectedTargets,
-                          onSelected: vm.selectPhrase,
-                          onAdd: () => TasbeehPhraseActions.add(context, vm),
-                          onAction: (phrase, action) =>
-                              TasbeehPhraseActions.handle(
-                                context,
-                                vm,
-                                phrase,
-                                action,
-                              ),
-                        ),
-                        SizedBox(height: responsive.sectionGap),
+                        SizedBox(height: sectionGap),
                         TasbeehInfoGrid(
                           isWide: constraints.maxWidth >= 700,
                           targetSelector: TasbeehTargetSelector(
@@ -99,10 +102,16 @@ class TasbeehBody extends StatelessWidget {
                             totalCount: vm.totalCount,
                             completedRounds: vm.completedRounds,
                             currentCount: vm.count,
+                            selectedPhraseLabel: vm.selectedPhrase.label(
+                              context.l10n,
+                            ),
+                            selectedRounds: vm.currentCompletedRounds,
+                            selectedTarget: vm.target,
+                            selectedProgress: vm.progress,
                             isDark: isDark,
                           ),
                         ),
-                        SizedBox(height: responsive.sectionGap),
+                        const SizedBox(height: AppSpacing.sm),
                         TasbeehControls(
                           isDark: isDark,
                           canUndo: vm.count > 0,

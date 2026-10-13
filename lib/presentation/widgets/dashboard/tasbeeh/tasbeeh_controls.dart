@@ -29,33 +29,35 @@ class TasbeehControls extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
     final foreground = colors.onSurface;
 
-    return Wrap(
-      alignment: WrapAlignment.center,
-      spacing: 10,
-      runSpacing: 10,
+    return Row(
       children: [
-        TasbeehUndoButton(enabled: canUndo, onPressed: onUndo),
-        OutlinedButton.icon(
-          onPressed: canUndo ? onResetCount : null,
-          icon: const Icon(CupertinoIcons.arrow_counterclockwise, size: 18),
-          label: Text(context.l10n.tasbeehReset),
-          style: OutlinedButton.styleFrom(
-            foregroundColor: foreground.withValues(alpha: 0.82),
-            side: BorderSide(color: colors.outlineVariant),
-            textStyle: text.labelMedium.copyWith(fontWeight: FontWeight.w800),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        Expanded(
+          child: TasbeehUndoButton(enabled: canUndo, onPressed: onUndo),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: OutlinedButton.icon(
+            onPressed: canUndo ? onResetCount : null,
+            icon: const Icon(CupertinoIcons.arrow_counterclockwise, size: 17),
+            label: Text(context.l10n.tasbeehReset),
+            style: OutlinedButton.styleFrom(
+              foregroundColor: foreground.withValues(alpha: 0.82),
+              side: BorderSide(color: colors.outlineVariant),
+              textStyle: text.labelMedium.copyWith(fontWeight: FontWeight.w800),
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
+            ),
           ),
         ),
-        TextButton.icon(
+        const SizedBox(width: 4),
+        IconButton.filledTonal(
           onPressed: canResetAll ? onResetAll : null,
+          tooltip: context.l10n.tasbeehResetAll,
           icon: const Icon(CupertinoIcons.trash, size: 18),
-          label: Text(context.l10n.tasbeehResetAll),
-          style: TextButton.styleFrom(
+          style: IconButton.styleFrom(
             foregroundColor: isDark
                 ? colors.secondary
                 : AppThemeColors.light.coral,
-            textStyle: text.labelMedium.copyWith(fontWeight: FontWeight.w800),
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+            minimumSize: const Size(42, 42),
           ),
         ),
       ],

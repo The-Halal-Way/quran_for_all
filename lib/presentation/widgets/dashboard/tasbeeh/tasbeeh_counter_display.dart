@@ -14,22 +14,30 @@ class TasbeehCounterDisplay extends StatelessWidget {
     required this.target,
     required this.progress,
     required this.phraseArabic,
+    required this.phraseId,
     required this.phraseLabel,
     required this.phraseMeaning,
     required this.isTargetReached,
     required this.isDark,
     required this.onTap,
+    required this.onPhraseTap,
+    required this.onAddPhrase,
+    this.phraseMenu,
   });
 
   final int count;
   final int target;
   final double progress;
   final String phraseArabic;
+  final String phraseId;
   final String phraseLabel;
   final String phraseMeaning;
   final bool isTargetReached;
   final bool isDark;
   final VoidCallback onTap;
+  final VoidCallback onPhraseTap;
+  final VoidCallback onAddPhrase;
+  final Widget? phraseMenu;
 
   @override
   Widget build(BuildContext context) {
@@ -65,83 +73,69 @@ class TasbeehCounterDisplay extends StatelessWidget {
             children: [
               const Positioned.fill(child: TasbeehOrnament()),
               Padding(
-                padding: const EdgeInsets.fromLTRB(22, 22, 22, 24),
+                padding: const EdgeInsets.fromLTRB(22, 22, 22, 16),
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        const Icon(
-                          Icons.auto_awesome_rounded,
-                          color: TasbeehVisuals.gold,
-                          size: 17,
-                        ),
-                        const SizedBox(width: AppSpacing.sm),
-                        Expanded(
-                          child: Text(
-                            context.l10n.tasbeehCurrent,
-                            style: text.labelSmall.copyWith(
-                              color: TasbeehVisuals.gold,
-                              fontWeight: FontWeight.w800,
-                              letterSpacing: 1.4,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 11,
-                            vertical: 6,
-                          ),
-                          decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.12),
-                            borderRadius: BorderRadius.circular(AppRadius.full),
-                            border: Border.all(
-                              color: Colors.white.withValues(alpha: 0.2),
-                            ),
-                          ),
-                          child: Text(
-                            '${context.l10n.tasbeehTarget} $target',
-                            style: text.labelSmall.copyWith(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                        ),
-                      ],
+                    KeyedSubtree(
+                      key: ValueKey(phraseId),
+                      child: _TasbeehCounterHeader(
+                        target: target,
+                        phraseMenu: phraseMenu,
+                        onAddPhrase: onAddPhrase,
+                      ),
                     ),
                     const SizedBox(height: AppSpacing.xl),
-                    if (phraseArabic.isNotEmpty) ...[
-                      Text(
-                        phraseArabic,
-                        textAlign: TextAlign.center,
-                        textDirection: TextDirection.rtl,
-                        style: AppTheme.amiri(
-                          context,
-                          fontSize: 32,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white,
-                          height: 1.35,
+                    Semantics(
+                      button: true,
+                      label: context.l10n.tasbeehPhraseOptions,
+                      child: GestureDetector(
+                        onTap: onPhraseTap,
+                        behavior: HitTestBehavior.opaque,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpacing.sm,
+                            vertical: AppSpacing.xs,
+                          ),
+                          child: Column(
+                            children: [
+                              if (phraseArabic.isNotEmpty) ...[
+                                Text(
+                                  phraseArabic,
+                                  textAlign: TextAlign.center,
+                                  textDirection: TextDirection.rtl,
+                                  style: AppTheme.amiri(
+                                    context,
+                                    fontSize: 32,
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                    height: 1.35,
+                                  ),
+                                ),
+                                const SizedBox(height: AppSpacing.sm),
+                              ],
+                              Text(
+                                phraseLabel,
+                                textAlign: TextAlign.center,
+                                style: text.titleSmall.copyWith(
+                                  color: TasbeehVisuals.gold,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                              if (phraseMeaning.isNotEmpty) ...[
+                                const SizedBox(height: AppSpacing.xs),
+                                Text(
+                                  phraseMeaning,
+                                  textAlign: TextAlign.center,
+                                  style: text.bodySmall.copyWith(
+                                    color: Colors.white.withValues(alpha: 0.78),
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: AppSpacing.sm),
-                    ],
-                    Text(
-                      phraseLabel,
-                      textAlign: TextAlign.center,
-                      style: text.titleSmall.copyWith(
-                        color: TasbeehVisuals.gold,
-                        fontWeight: FontWeight.w800,
                       ),
                     ),
-                    if (phraseMeaning.isNotEmpty) ...[
-                      const SizedBox(height: AppSpacing.xs),
-                      Text(
-                        phraseMeaning,
-                        textAlign: TextAlign.center,
-                        style: text.bodySmall.copyWith(
-                          color: Colors.white.withValues(alpha: 0.78),
-                        ),
-                      ),
-                    ],
                     const SizedBox(height: AppSpacing.lg),
                     TasbeehCounterRing(
                       count: count,
@@ -179,6 +173,96 @@ class TasbeehCounterDisplay extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class _TasbeehCounterHeader extends StatelessWidget {
+  const _TasbeehCounterHeader({
+    required this.target,
+    required this.phraseMenu,
+    required this.onAddPhrase,
+  });
+
+  final int target;
+  final Widget? phraseMenu;
+  final VoidCallback onAddPhrase;
+
+  @override
+  Widget build(BuildContext context) {
+    final text = AppTheme.text(context);
+    final controls = <Widget>[
+      IconButton(
+        key: const ValueKey('tasbeeh_add'),
+        onPressed: onAddPhrase,
+        tooltip: context.l10n.tasbeehAddDhikr,
+        visualDensity: VisualDensity.compact,
+        padding: EdgeInsets.zero,
+        constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+        style: IconButton.styleFrom(
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        ),
+        color: TasbeehVisuals.mint,
+        icon: const Icon(Icons.add_rounded, size: 19),
+      ),
+      Container(
+        padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.12),
+          borderRadius: BorderRadius.circular(AppRadius.full),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
+        ),
+        child: Text(
+          '${context.l10n.tasbeehTarget} $target',
+          style: text.labelSmall.copyWith(
+            color: Colors.white,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+      ),
+    ];
+
+    final title = Row(
+      children: [
+        const Icon(
+          Icons.auto_awesome_rounded,
+          color: TasbeehVisuals.gold,
+          size: 17,
+        ),
+        const SizedBox(width: AppSpacing.sm),
+        Expanded(
+          child: Text(
+            context.l10n.tasbeehCurrent,
+            style: text.labelSmall.copyWith(
+              color: TasbeehVisuals.gold,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 1.4,
+            ),
+          ),
+        ),
+        ?phraseMenu,
+      ],
+    );
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth < 300) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              title,
+              const SizedBox(height: AppSpacing.xs),
+              Row(mainAxisAlignment: MainAxisAlignment.end, children: controls),
+            ],
+          );
+        }
+        return Row(
+          children: [
+            Expanded(child: title),
+            ...controls,
+          ],
+        );
+      },
     );
   }
 }

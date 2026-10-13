@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/theme/app_spacing.dart';
+
 class TasbeehInfoGrid extends StatelessWidget {
   const TasbeehInfoGrid({
     super.key,
@@ -15,14 +17,18 @@ class TasbeehInfoGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     if (!isWide) {
       return Column(
-        children: [targetSelector, const SizedBox(height: 12), statsPanel],
+        children: [
+          targetSelector,
+          const SizedBox(height: AppSpacing.sm),
+          statsPanel,
+        ],
       );
     }
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(child: targetSelector),
-        const SizedBox(width: 12),
+        const SizedBox(width: AppSpacing.sm),
         Expanded(child: statsPanel),
       ],
     );

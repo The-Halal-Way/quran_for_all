@@ -96,9 +96,11 @@ class TasbeehViewModel extends ChangeNotifier {
     }
   }
 
-  void increment() {
-    _counts[_selectedPhraseId] = count + 1;
+  bool increment() {
+    final nextCount = count + 1;
+    _counts[_selectedPhraseId] = nextCount;
     _commit();
+    return nextCount % target == 0;
   }
 
   void decrement() {
