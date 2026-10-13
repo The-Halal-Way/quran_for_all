@@ -4457,6 +4457,66 @@ abstract class AppLocalizations {
   /// **'View all'**
   String get dashboardNeedOpen;
 
+  /// No description provided for @dashboardMercyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Allah’s Mercy'**
+  String get dashboardMercyTitle;
+
+  /// No description provided for @dashboardMercySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Comfort for the heart. Hope for the soul.'**
+  String get dashboardMercySubtitle;
+
+  /// No description provided for @dashboardMercyHadithTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith for the Heart'**
+  String get dashboardMercyHadithTitle;
+
+  /// No description provided for @dashboardMercyHadithSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith and reflections that bring comfort, hope, and closeness to Allah.'**
+  String get dashboardMercyHadithSubtitle;
+
+  /// No description provided for @dashboardMercyStoriesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stories That Touch the Heart'**
+  String get dashboardMercyStoriesTitle;
+
+  /// No description provided for @dashboardMercyStoriesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Stories of repentance, hidden goodness, patience, guidance, and Allah’s mercy.'**
+  String get dashboardMercyStoriesSubtitle;
+
+  /// No description provided for @dashboardMercyOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open collection'**
+  String get dashboardMercyOpen;
+
+  /// No description provided for @mercyEntryCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} entries'**
+  String mercyEntryCount(String count);
+
+  /// No description provided for @mercyLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load this collection.'**
+  String get mercyLoadError;
+
+  /// No description provided for @mercyRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get mercyRetry;
+
   /// No description provided for @dashboardActionFullPrayerView.
   ///
   /// In en, this message translates to:

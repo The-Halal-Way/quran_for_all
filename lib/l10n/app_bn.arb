@@ -892,6 +892,23 @@
   "dashboardNeedTitle": "দুয়া কবুল হওয়ার শিল্প",
   "dashboardNeedSubtitle": "প্রয়োজনে কুরআন ও সুন্নাহভিত্তিক আমল",
   "dashboardNeedOpen": "সব দেখুন",
+  "dashboardMercyTitle": "আল্লাহর রহমত",
+  "dashboardMercySubtitle": "হৃদয়ের প্রশান্তি। আত্মার আশা।",
+  "dashboardMercyHadithTitle": "হৃদয়ের জন্য হাদিস",
+  "dashboardMercyHadithSubtitle": "আল্লাহর নৈকট্য, আশা ও সান্ত্বনা জাগানো হাদিস ও ভাবনা।",
+  "dashboardMercyStoriesTitle": "হৃদয় ছুঁয়ে যাওয়া গল্প",
+  "dashboardMercyStoriesSubtitle": "তওবা, অদৃশ্য নেকি, ধৈর্য, হেদায়াত ও আল্লাহর রহমতের গল্প।",
+  "dashboardMercyOpen": "সংকলন খুলুন",
+  "mercyEntryCount": "{count}টি এন্ট্রি",
+  "@mercyEntryCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "mercyLoadError": "এই সংকলনটি খোলা যায়নি।",
+  "mercyRetry": "আবার চেষ্টা করুন",
   "dashboardActionFullPrayerView": "পূর্ণ নামাজ ভিউ",
   "dashboardActionQiblaCompass": "কিবলা কম্পাস",
   "dashboardActionQiblaCompassSub": "কিবলার দিক দেখুন",

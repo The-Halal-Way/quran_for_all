@@ -2266,6 +2266,38 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardNeedOpen => 'View all';
 
   @override
+  String get dashboardMercyTitle => 'Allah’s Mercy';
+
+  @override
+  String get dashboardMercySubtitle => 'Comfort for the heart. Hope for the soul.';
+
+  @override
+  String get dashboardMercyHadithTitle => 'Hadith for the Heart';
+
+  @override
+  String get dashboardMercyHadithSubtitle => 'Hadith and reflections that bring comfort, hope, and closeness to Allah.';
+
+  @override
+  String get dashboardMercyStoriesTitle => 'Stories That Touch the Heart';
+
+  @override
+  String get dashboardMercyStoriesSubtitle => 'Stories of repentance, hidden goodness, patience, guidance, and Allah’s mercy.';
+
+  @override
+  String get dashboardMercyOpen => 'Open collection';
+
+  @override
+  String mercyEntryCount(String count) {
+    return '$count entries';
+  }
+
+  @override
+  String get mercyLoadError => 'Could not load this collection.';
+
+  @override
+  String get mercyRetry => 'Retry';
+
+  @override
   String get dashboardActionFullPrayerView => 'Full Prayer View';
 
   @override

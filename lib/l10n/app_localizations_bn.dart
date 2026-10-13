@@ -2266,6 +2266,38 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardNeedOpen => 'সব দেখুন';
 
   @override
+  String get dashboardMercyTitle => 'আল্লাহর রহমত';
+
+  @override
+  String get dashboardMercySubtitle => 'হৃদয়ের প্রশান্তি। আত্মার আশা।';
+
+  @override
+  String get dashboardMercyHadithTitle => 'হৃদয়ের জন্য হাদিস';
+
+  @override
+  String get dashboardMercyHadithSubtitle => 'আল্লাহর নৈকট্য, আশা ও সান্ত্বনা জাগানো হাদিস ও ভাবনা।';
+
+  @override
+  String get dashboardMercyStoriesTitle => 'হৃদয় ছুঁয়ে যাওয়া গল্প';
+
+  @override
+  String get dashboardMercyStoriesSubtitle => 'তওবা, অদৃশ্য নেকি, ধৈর্য, হেদায়াত ও আল্লাহর রহমতের গল্প।';
+
+  @override
+  String get dashboardMercyOpen => 'সংকলন খুলুন';
+
+  @override
+  String mercyEntryCount(String count) {
+    return '$countটি এন্ট্রি';
+  }
+
+  @override
+  String get mercyLoadError => 'এই সংকলনটি খোলা যায়নি।';
+
+  @override
+  String get mercyRetry => 'আবার চেষ্টা করুন';
+
+  @override
   String get dashboardActionFullPrayerView => 'পূর্ণ নামাজ ভিউ';
 
   @override

@@ -892,6 +892,23 @@
   "dashboardNeedTitle": "The Art of Dua Acceptance",
   "dashboardNeedSubtitle": "Quran and Sunnah practices for times of need",
   "dashboardNeedOpen": "View all",
+  "dashboardMercyTitle": "Allah’s Mercy",
+  "dashboardMercySubtitle": "Comfort for the heart. Hope for the soul.",
+  "dashboardMercyHadithTitle": "Hadith for the Heart",
+  "dashboardMercyHadithSubtitle": "Hadith and reflections that bring comfort, hope, and closeness to Allah.",
+  "dashboardMercyStoriesTitle": "Stories That Touch the Heart",
+  "dashboardMercyStoriesSubtitle": "Stories of repentance, hidden goodness, patience, guidance, and Allah’s mercy.",
+  "dashboardMercyOpen": "Open collection",
+  "mercyEntryCount": "{count} entries",
+  "@mercyEntryCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "mercyLoadError": "Could not load this collection.",
+  "mercyRetry": "Retry",
   "dashboardActionFullPrayerView": "Full Prayer View",
   "dashboardActionQiblaCompass": "Qibla Compass",
   "dashboardActionQiblaCompassSub": "Find qibla direction",
