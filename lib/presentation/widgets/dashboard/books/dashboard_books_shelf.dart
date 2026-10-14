@@ -188,6 +188,7 @@ class _DashboardBookPreview extends StatelessWidget {
                     )
                   : Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,

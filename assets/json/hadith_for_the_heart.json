@@ -14,6 +14,17 @@
     {
       "id": 1,
       "title": {
+        "en": "A Broken Heart’s Call",
+        "bn": "ভগ্নহৃদয়ের ডাক"
+      },
+      "content": {
+        "en": "it is said that whenever a broken-hearted servant cries out \"Ya Rabb!\" (O Lord!), Allah immediately responds with:\n\nلبّيك يا عَبْدي\n\"Labbayk, ya 'Abdi.\"\n(Here I am, O My servant. Ask, and you shall be given.)\nEven when you cannot find the perfect words to explain your pain, stress, or sadness, just whispering \"Rabbana\" carries everything your heart is trying to say. He hears the silent tears behind the word",
+        "bn": "কথিত আছে যে, যখনই কোনো ভগ্নহৃদয় বান্দা আর্তনাদ করে বলে \"ইয়া রব!\" (হে আমার প্রভু!), আল্লাহ তখনই সাড়া দিয়ে বলেন:\n\n\"লাব্বাইক, ইয়া আবদি।\"\n(আমি উপস্থিত, হে আমার বান্দা। তুমি চাও, তোমাকে তা-ই দেওয়া হবে।)\nএমনকি যখন নিজের কষ্ট, মানসিক চাপ বা বিষাদ প্রকাশের জন্য উপযুক্ত শব্দ খুঁজে পাওয়া যায় না, তখনও কেবল \"রব্বানা\" (হে আমাদের প্রভু) শব্দটি ফিসফিস করে উচ্চারণ করলেই আপনার হৃদয়ের সমস্ত অব্যক্ত কথা তাঁর কাছে পৌঁছে যায়। সেই শব্দের আড়ালে লুকিয়ে থাকা নীরব অশ্রুর ভাষাও তিনি শুনতে পান।"
+      }
+    },
+    {
+      "id": 2,
+      "title": {
         "en": "When You Come Closer to Allah",
         "bn": "তুমি আল্লাহর কাছে এগিয়ে এলে"
       },
@@ -23,7 +34,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "title": {
         "en": "Allah’s Forgiveness Has No Limit",
         "bn": "আল্লাহর ক্ষমার কোনো সীমা নেই"
@@ -34,7 +45,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "title": {
         "en": "Prayer Keeps Us Connected to Allah",
         "bn": "নামাজ আমাদের আল্লাহর সঙ্গে যুক্ত রাখে"
@@ -45,7 +56,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 5,
       "title": {
         "en": "Allah Protects Us from Harm",
         "bn": "আল্লাহ আমাদের ক্ষতি থেকে রক্ষা করেন"
@@ -56,7 +67,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "title": {
         "en": "Never Despair of Allah’s Mercy",
         "bn": "আল্লাহর রহমত থেকে নিরাশ হয়ো না"
@@ -67,7 +78,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 7,
       "title": {
         "en": "Allah Loves Those Who Return",
         "bn": "আল্লাহ ফিরে আসা বান্দাকে ভালোবাসেন"
@@ -78,7 +89,7 @@
       }
     },
     {
-      "id": 7,
+      "id": 8,
       "title": {
         "en": "Allah’s Mercy Is Greater Than a Mother’s",
         "bn": "মায়ের চেয়েও আল্লাহ বেশি দয়ালু"
@@ -89,7 +100,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 9,
       "title": {
         "en": "Allah Rejoices When You Repent",
         "bn": "তওবায় আল্লাহ আনন্দিত হন"
@@ -100,7 +111,7 @@
       }
     },
     {
-      "id": 9,
+      "id": 10,
       "title": {
         "en": "When You Remember Allah, He Remembers You",
         "bn": "তুমি আল্লাহকে স্মরণ করলে তিনিও তোমাকে স্মরণ করেন"
@@ -111,7 +122,7 @@
       }
     },
     {
-      "id": 10,
+      "id": 11,
       "title": {
         "en": "Becoming a Beloved Servant of Allah",
         "bn": "আল্লাহর প্রিয় বান্দা হওয়া সম্ভব"
@@ -122,7 +133,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 12,
       "title": {
         "en": "Forgiveness Through Mercy to a Thirsty Dog",
         "bn": "তৃষ্ণার্ত কুকুরের প্রতি দয়া ও ক্ষমা"
@@ -133,7 +144,7 @@
       }
     },
     {
-      "id": 12,
+      "id": 13,
       "title": {
         "en": "A Sinful Woman Forgiven for Helping a Dog",
         "bn": "এক তৃষ্ণার্ত কুকুরকে পানি পান করিয়ে ক্ষমা"
@@ -144,7 +155,7 @@
       }
     },
     {
-      "id": 13,
+      "id": 14,
       "title": {
         "en": "Every Sincere Return Is Forgiven",
         "bn": "প্রতিটি আন্তরিক ফিরে আসা ক্ষমাপ্রাপ্ত হয়"
@@ -155,7 +166,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 15,
       "title": {
         "en": "Allah Knows the Fear in Your Heart",
         "bn": "আল্লাহ তোমার অন্তরের ভয় জানেন"

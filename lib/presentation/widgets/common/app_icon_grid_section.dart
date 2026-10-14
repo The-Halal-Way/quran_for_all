@@ -90,7 +90,7 @@ class AppIconGridSection extends StatelessWidget {
           const SizedBox(height: AppSpacing.xs),
           Text(subtitle!, style: AppTheme.text(context).bodySmall),
         ],
-        const SizedBox(height: AppSpacing.md),
+        const SizedBox(height: AppSpacing.sm),
         LayoutBuilder(
           builder: (context, constraints) {
             final scale = MediaQuery.textScalerOf(context).scale(14) / 14;
@@ -111,7 +111,7 @@ class AppIconGridSection extends StatelessWidget {
             return Wrap(
               alignment: WrapAlignment.center,
               spacing: spacing,
-              runSpacing: AppSpacing.lg,
+              runSpacing: AppSpacing.md,
               children: [
                 for (final item in items)
                   SizedBox(
@@ -236,7 +236,7 @@ class _AppIconGridTile extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: AppSpacing.sm),
+                  const SizedBox(height: AppSpacing.xs),
                   Text(
                     item.label,
                     maxLines: scale > 1.4 ? labelMaxLines + 1 : labelMaxLines,

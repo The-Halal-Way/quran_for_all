@@ -79,6 +79,7 @@ class DashboardMercyCard extends StatelessWidget {
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Row(
                         children: [
@@ -106,15 +107,13 @@ class DashboardMercyCard extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: AppSpacing.xs),
-                      Expanded(
-                        child: Text(
-                          title,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTheme.text(context).labelLarge.copyWith(
-                            fontWeight: AppTheme.weightExtraBold,
-                            height: 1.1,
-                          ),
+                      Text(
+                        title,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTheme.text(context).labelLarge.copyWith(
+                          fontWeight: AppTheme.weightExtraBold,
+                          height: 1.1,
                         ),
                       ),
                       Row(

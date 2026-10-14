@@ -7,193 +7,159 @@ import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/utils/app_page_route.dart';
 import '../../../../data/models/mercy/mercy_collection.dart';
 import '../../../views/dashboard/mercy/mercy_collection_view.dart';
+import '../dashboard_view/dashboard_section_title.dart';
 import 'dashboard_mercy_card.dart';
 
-/// A compact, two-card shelf for the heart-focused reading collections.
+/// A compact shelf for the two heart-focused Mercy collections.
 ///
-/// Both collections are visible at once so the dashboard does not grow by a
-/// full horizontal carousel height. The JSON remains lazy: navigation only
-/// happens after a card is tapped.
+/// The layout mirrors the Books section so related reading content has the
+/// same visual rhythm while still using Mercy's coral and violet accents.
 class DashboardMercySection extends StatelessWidget {
   const DashboardMercySection({super.key});
 
   @override
   Widget build(BuildContext context) {
     final colors = AppThemeColors.light;
-    final scheme = Theme.of(context).colorScheme;
-
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(
-        AppSpacing.md,
-        AppSpacing.md,
-        AppSpacing.md,
-        AppSpacing.sm,
-      ),
-      decoration: BoxDecoration(
-        color: Color.alphaBlend(
-          colors.coral.withValues(
-            alpha: Theme.of(context).brightness == Brightness.dark
-                ? 0.12
-                : 0.045,
-          ),
-          scheme.surface,
-        ),
-        borderRadius: BorderRadius.circular(AppRadius.xl),
-        border: Border.all(color: colors.coral.withValues(alpha: 0.2)),
-        boxShadow: [
-          BoxShadow(
-            color: colors.coral.withValues(alpha: 0.08),
-            blurRadius: 22,
-            offset: const Offset(0, 10),
-          ),
-        ],
-      ),
-      child: Stack(
-        clipBehavior: Clip.none,
-        children: [
-          Positioned(
-            right: -30,
-            top: -48,
-            child: _MercyGlow(
-              color: colors.violet.withValues(alpha: 0.13),
-              size: 116,
-            ),
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _MercySectionHeader(
-                title: context.l10n.dashboardMercyTitle,
-                subtitle: context.l10n.dashboardMercySubtitle,
-              ),
-              const SizedBox(height: AppSpacing.md),
-              SizedBox(
-                height: 124,
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: DashboardMercyCard(
-                        kind: MercyCollectionKind.hadith,
-                        onTap: () => _openCollection(
-                          context,
-                          MercyCollectionKind.hadith,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: AppSpacing.sm),
-                    Expanded(
-                      child: DashboardMercyCard(
-                        kind: MercyCollectionKind.stories,
-                        onTap: () => _openCollection(
-                          context,
-                          MercyCollectionKind.stories,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  void _openCollection(BuildContext context, MercyCollectionKind kind) {
-    Navigator.of(
-      context,
-    ).push(AppPageRoute<void>(builder: (_) => MercyCollectionView(kind: kind)));
-  }
-}
-
-class _MercySectionHeader extends StatelessWidget {
-  const _MercySectionHeader({required this.title, required this.subtitle});
-
-  final String title;
-  final String subtitle;
-
-  @override
-  Widget build(BuildContext context) {
-    final colors = AppThemeColors.light;
-    final scheme = Theme.of(context).colorScheme;
-    return Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          width: 40,
-          height: 40,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [colors.coral, colors.violet],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
+        DashboardSectionTitle(
+          title: context.l10n.dashboardMercyTitle,
+          icon: Icons.favorite_rounded,
+          accent: colors.coral,
+        ),
+        const SizedBox(height: AppSpacing.xs),
+        Padding(
+          padding: const EdgeInsetsDirectional.only(start: 4),
+          child: Text(
+            context.l10n.dashboardMercySubtitle,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTheme.text(context).bodySmall.copyWith(
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
-            borderRadius: BorderRadius.circular(AppRadius.md),
-            boxShadow: [
-              BoxShadow(
-                color: colors.coral.withValues(alpha: 0.22),
-                blurRadius: 12,
-                offset: const Offset(0, 5),
-              ),
-            ],
-          ),
-          child: const Icon(
-            Icons.favorite_rounded,
-            size: 21,
-            color: Colors.white,
           ),
         ),
-        const SizedBox(width: AppSpacing.sm),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                title,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: AppTheme.text(
-                  context,
-                ).titleMedium.copyWith(fontWeight: AppTheme.weightExtraBold),
-              ),
-              const SizedBox(height: 2),
-              Text(
-                subtitle,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: AppTheme.text(
-                  context,
-                ).bodySmall.copyWith(color: scheme.onSurfaceVariant),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(width: AppSpacing.xs),
-        Icon(Icons.auto_awesome_rounded, color: colors.violet, size: 20),
+        const SizedBox(height: AppSpacing.sm),
+        const DashboardMercyShelf(),
       ],
     );
   }
 }
 
-class _MercyGlow extends StatelessWidget {
-  const _MercyGlow({required this.color, required this.size});
+class DashboardMercyShelf extends StatelessWidget {
+  const DashboardMercyShelf({super.key});
 
-  final Color color;
-  final double size;
+  static const _collections = [
+    MercyCollectionKind.hadith,
+    MercyCollectionKind.stories,
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return IgnorePointer(
-      child: Container(
-        width: size,
-        height: size,
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          border: Border.all(color: color, width: 16),
-          boxShadow: [BoxShadow(color: color, blurRadius: 26, spreadRadius: 8)],
+    final scheme = Theme.of(context).colorScheme;
+    final colors = AppThemeColors.light;
+    return Container(
+      constraints: const BoxConstraints(minHeight: 128),
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Color.alphaBlend(
+              colors.coral.withValues(alpha: 0.08),
+              scheme.surface,
+            ),
+            Color.alphaBlend(
+              colors.violet.withValues(alpha: 0.08),
+              scheme.surface,
+            ),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
         ),
+        border: Border.all(color: scheme.outlineVariant),
+        borderRadius: BorderRadius.circular(AppRadius.xl),
+        boxShadow: [
+          BoxShadow(
+            color: colors.shadow.withValues(alpha: 0.06),
+            blurRadius: 18,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
+      child: Stack(
+        children: [
+          _MercyShelfGlow(
+            alignment: Alignment(-1.12, -1.35),
+            color: AppThemeColors.light.coral,
+          ),
+          _MercyShelfGlow(
+            alignment: Alignment(1.1, 1.45),
+            color: AppThemeColors.light.violet,
+          ),
+          ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 128),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppSpacing.xs,
+                vertical: AppSpacing.xs,
+              ),
+              child: Row(
+                children: [
+                  for (var index = 0; index < _collections.length; index++) ...[
+                    Expanded(
+                      child: DashboardMercyCard(
+                        kind: _collections[index],
+                        onTap: () => Navigator.of(context).push(
+                          AppPageRoute<void>(
+                            builder: (_) =>
+                                MercyCollectionView(kind: _collections[index]),
+                          ),
+                        ),
+                      ),
+                    ),
+                    if (index < _collections.length - 1)
+                      const _MercyShelfDivider(),
+                  ],
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
+}
+
+class _MercyShelfDivider extends StatelessWidget {
+  const _MercyShelfDivider();
+
+  @override
+  Widget build(BuildContext context) => Container(
+    width: 1,
+    height: 82,
+    color: Theme.of(context).colorScheme.outlineVariant,
+  );
+}
+
+class _MercyShelfGlow extends StatelessWidget {
+  const _MercyShelfGlow({required this.alignment, required this.color});
+
+  final Alignment alignment;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) => Align(
+    alignment: alignment,
+    child: IgnorePointer(
+      child: Container(
+        width: 130,
+        height: 130,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: color.withValues(alpha: 0.07),
+        ),
+      ),
+    ),
+  );
 }
