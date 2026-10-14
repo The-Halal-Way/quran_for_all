@@ -3183,7 +3183,67 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerReferenceEidActionSubtitle => 'Both Eids, the two-rak\'ah prayer, Sunnah practices, takbeer and duas.';
 
   @override
+  String get prayerReferenceTayammumActionTitle => 'Tayammum Guide';
+
+  @override
+  String get prayerReferenceTayammumActionSubtitle => 'Learn dry purification with a clear visual step-by-step guide.';
+
+  @override
   String get prayerReferenceOpenLabel => 'View';
+
+  @override
+  String get prayerTayammumTitle => 'Tayammum';
+
+  @override
+  String get prayerTayammumSubtitle => 'A simple visual guide to dry purification before salah.';
+
+  @override
+  String get prayerTayammumHeroLabel => 'Purification with ease';
+
+  @override
+  String get prayerTayammumHeroBody => 'When water is unavailable or using it would cause harm, Allah gives a clean-earth concession for purification.';
+
+  @override
+  String get prayerTayammumWhenTitle => 'When is Tayammum used?';
+
+  @override
+  String get prayerTayammumWhenBody => 'Use Tayammum when water cannot be found, or when using it would cause harm because of illness, injury, or another valid need. Use clean earth or another qualifying natural surface according to a trusted scholar.';
+
+  @override
+  String get prayerTayammumStepsTitle => 'The basic steps';
+
+  @override
+  String get prayerTayammumStep1Title => 'Make your intention';
+
+  @override
+  String get prayerTayammumStep1Body => 'Intend Tayammum as purification for the prayer. Keep the intention in your heart.';
+
+  @override
+  String get prayerTayammumStep2Title => 'Touch clean earth';
+
+  @override
+  String get prayerTayammumStep2Body => 'Place both palms lightly on clean earth or a qualifying dusty surface, then remove excess dust.';
+
+  @override
+  String get prayerTayammumStep3Title => 'Wipe the face and hands';
+
+  @override
+  String get prayerTayammumStep3Body => 'Wipe the face, then wipe the hands. Exact details can differ by madhhab, so follow a trusted scholar for your situation.';
+
+  @override
+  String get prayerTayammumNoteTitle => 'A concession with a valid cause';
+
+  @override
+  String get prayerTayammumNoteBody => 'Tayammum is used for a valid reason. When water becomes available and can be used safely, return to wudu or ghusl as required.';
+
+  @override
+  String get prayerTayammumSourceTitle => 'Evidence and further guidance';
+
+  @override
+  String get prayerTayammumSourceQuran => 'Qur’an 5:6 — clean earth, then wipe the face and hands.';
+
+  @override
+  String get prayerTayammumSourceHadith => 'Sahih al-Bukhari 338 — the Prophet ﷺ demonstrated striking the earth, removing excess dust, and wiping the face and hands.';
 
   @override
   String get prayerMovementsTitle => 'Salah Movement Guide';

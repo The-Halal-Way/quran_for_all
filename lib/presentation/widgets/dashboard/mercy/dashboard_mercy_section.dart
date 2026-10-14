@@ -10,10 +10,7 @@ import '../../../views/dashboard/mercy/mercy_collection_view.dart';
 import '../dashboard_view/dashboard_section_title.dart';
 import 'dashboard_mercy_card.dart';
 
-/// A compact shelf for the two heart-focused Mercy collections.
-///
-/// The layout mirrors the Books section so related reading content has the
-/// same visual rhythm while still using Mercy's coral and violet accents.
+/// Two independent reading cards below the Mercy heading and subtitle.
 class DashboardMercySection extends StatelessWidget {
   const DashboardMercySection({super.key});
 
@@ -91,11 +88,11 @@ class DashboardMercyShelf extends StatelessWidget {
         children: [
           _MercyShelfGlow(
             alignment: Alignment(-1.12, -1.35),
-            color: AppThemeColors.light.coral,
+            color: colors.coral,
           ),
           _MercyShelfGlow(
             alignment: Alignment(1.1, 1.45),
-            color: AppThemeColors.light.violet,
+            color: colors.violet,
           ),
           ConstrainedBox(
             constraints: const BoxConstraints(minHeight: 128),
@@ -105,8 +102,10 @@ class DashboardMercyShelf extends StatelessWidget {
                 vertical: AppSpacing.xs,
               ),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   for (var index = 0; index < _collections.length; index++) ...[
+                    if (index > 0) const SizedBox(width: AppSpacing.sm),
                     Expanded(
                       child: DashboardMercyCard(
                         kind: _collections[index],
@@ -118,8 +117,6 @@ class DashboardMercyShelf extends StatelessWidget {
                         ),
                       ),
                     ),
-                    if (index < _collections.length - 1)
-                      const _MercyShelfDivider(),
                   ],
                 ],
               ),
@@ -129,17 +126,6 @@ class DashboardMercyShelf extends StatelessWidget {
       ),
     );
   }
-}
-
-class _MercyShelfDivider extends StatelessWidget {
-  const _MercyShelfDivider();
-
-  @override
-  Widget build(BuildContext context) => Container(
-    width: 1,
-    height: 82,
-    color: Theme.of(context).colorScheme.outlineVariant,
-  );
 }
 
 class _MercyShelfGlow extends StatelessWidget {

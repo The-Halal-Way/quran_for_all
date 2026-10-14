@@ -29,6 +29,17 @@ class TasbeehBody extends StatelessWidget {
     if (!vm.isLoaded) {
       return const Scaffold(body: Center(child: CupertinoActivityIndicator()));
     }
+    final phrases = vm.phrases;
+    final selectedPhraseIndex = phrases.indexWhere(
+      (phrase) => phrase.id == vm.selectedPhraseId,
+    );
+
+    void selectPhraseAt(int index) {
+      if (index < 0 || index >= phrases.length) return;
+      TasbeehHaptics.select();
+      vm.selectPhrase(phrases[index].id);
+    }
+
     return Scaffold(
       body: Stack(
         children: [
@@ -69,6 +80,12 @@ class TasbeehBody extends StatelessWidget {
                               showTasbeehPhrasePicker(context, vm),
                           onAddPhrase: () =>
                               TasbeehPhraseActions.add(context, vm),
+                          onPreviousPhrase: selectedPhraseIndex > 0
+                              ? () => selectPhraseAt(selectedPhraseIndex - 1)
+                              : null,
+                          onNextPhrase: selectedPhraseIndex < phrases.length - 1
+                              ? () => selectPhraseAt(selectedPhraseIndex + 1)
+                              : null,
                           phraseMenu: vm.selectedPhrase.isBuiltIn
                               ? null
                               : TasbeehPhraseMenu(

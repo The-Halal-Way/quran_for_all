@@ -11,6 +11,7 @@ import '../../../views/prayer/how_to_pray/how_to_pray_view.dart';
 import '../../../views/prayer/janaza_prayer/janaza_prayer_view.dart';
 import '../../../views/prayer/nafal_prayers/nafal_prayers_view.dart';
 import '../../../views/prayer/salatul_tasbeeh/salatul_tasbeeh_view.dart';
+import '../../../views/prayer/tayammum/tayammum_view.dart';
 import '../../common/app_icon_grid_section.dart';
 
 class PrayerReferenceSection extends StatelessWidget {
@@ -70,6 +71,13 @@ class PrayerReferenceSection extends StatelessWidget {
           icon: Icons.nightlight_round,
           accent: MyColors.tertiaryDark,
           onTap: () => open(const EidPrayerView()),
+        ),
+        AppIconGridItem(
+          label: l10n.prayerReferenceTayammumActionTitle,
+          description: l10n.prayerReferenceTayammumActionSubtitle,
+          icon: Icons.back_hand_rounded,
+          accent: MyColors.secondary,
+          onTap: () => open(const TayammumView()),
         ),
       ],
     );

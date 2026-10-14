@@ -5,6 +5,10 @@ import 'package:flutter/services.dart';
 class TasbeehHaptics {
   const TasbeehHaptics._();
 
+  static void select() {
+    unawaited(HapticFeedback.selectionClick());
+  }
+
   static void count({required bool targetReached}) {
     if (!targetReached) {
       unawaited(HapticFeedback.selectionClick());

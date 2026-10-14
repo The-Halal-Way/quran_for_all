@@ -6251,11 +6251,131 @@ abstract class AppLocalizations {
   /// **'Both Eids, the two-rak\'ah prayer, Sunnah practices, takbeer and duas.'**
   String get prayerReferenceEidActionSubtitle;
 
+  /// No description provided for @prayerReferenceTayammumActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tayammum Guide'**
+  String get prayerReferenceTayammumActionTitle;
+
+  /// No description provided for @prayerReferenceTayammumActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn dry purification with a clear visual step-by-step guide.'**
+  String get prayerReferenceTayammumActionSubtitle;
+
   /// No description provided for @prayerReferenceOpenLabel.
   ///
   /// In en, this message translates to:
   /// **'View'**
   String get prayerReferenceOpenLabel;
+
+  /// No description provided for @prayerTayammumTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Tayammum'**
+  String get prayerTayammumTitle;
+
+  /// No description provided for @prayerTayammumSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A simple visual guide to dry purification before salah.'**
+  String get prayerTayammumSubtitle;
+
+  /// No description provided for @prayerTayammumHeroLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Purification with ease'**
+  String get prayerTayammumHeroLabel;
+
+  /// No description provided for @prayerTayammumHeroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'When water is unavailable or using it would cause harm, Allah gives a clean-earth concession for purification.'**
+  String get prayerTayammumHeroBody;
+
+  /// No description provided for @prayerTayammumWhenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'When is Tayammum used?'**
+  String get prayerTayammumWhenTitle;
+
+  /// No description provided for @prayerTayammumWhenBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Use Tayammum when water cannot be found, or when using it would cause harm because of illness, injury, or another valid need. Use clean earth or another qualifying natural surface according to a trusted scholar.'**
+  String get prayerTayammumWhenBody;
+
+  /// No description provided for @prayerTayammumStepsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'The basic steps'**
+  String get prayerTayammumStepsTitle;
+
+  /// No description provided for @prayerTayammumStep1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Make your intention'**
+  String get prayerTayammumStep1Title;
+
+  /// No description provided for @prayerTayammumStep1Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Intend Tayammum as purification for the prayer. Keep the intention in your heart.'**
+  String get prayerTayammumStep1Body;
+
+  /// No description provided for @prayerTayammumStep2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Touch clean earth'**
+  String get prayerTayammumStep2Title;
+
+  /// No description provided for @prayerTayammumStep2Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Place both palms lightly on clean earth or a qualifying dusty surface, then remove excess dust.'**
+  String get prayerTayammumStep2Body;
+
+  /// No description provided for @prayerTayammumStep3Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Wipe the face and hands'**
+  String get prayerTayammumStep3Title;
+
+  /// No description provided for @prayerTayammumStep3Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Wipe the face, then wipe the hands. Exact details can differ by madhhab, so follow a trusted scholar for your situation.'**
+  String get prayerTayammumStep3Body;
+
+  /// No description provided for @prayerTayammumNoteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A concession with a valid cause'**
+  String get prayerTayammumNoteTitle;
+
+  /// No description provided for @prayerTayammumNoteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Tayammum is used for a valid reason. When water becomes available and can be used safely, return to wudu or ghusl as required.'**
+  String get prayerTayammumNoteBody;
+
+  /// No description provided for @prayerTayammumSourceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence and further guidance'**
+  String get prayerTayammumSourceTitle;
+
+  /// No description provided for @prayerTayammumSourceQuran.
+  ///
+  /// In en, this message translates to:
+  /// **'Qur’an 5:6 — clean earth, then wipe the face and hands.'**
+  String get prayerTayammumSourceQuran;
+
+  /// No description provided for @prayerTayammumSourceHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih al-Bukhari 338 — the Prophet ﷺ demonstrated striking the earth, removing excess dust, and wiping the face and hands.'**
+  String get prayerTayammumSourceHadith;
 
   /// No description provided for @prayerMovementsTitle.
   ///

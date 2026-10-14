@@ -3183,7 +3183,67 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerReferenceEidActionSubtitle => 'দুই ঈদ, নামাজের নিয়ম, সুন্নাহ আমল, তাকবীর ও দোয়া।';
 
   @override
+  String get prayerReferenceTayammumActionTitle => 'তায়াম্মুম গাইড';
+
+  @override
+  String get prayerReferenceTayammumActionSubtitle => 'চিত্রভিত্তিক ধাপে ধাপে শুকনো পবিত্রতার নিয়ম শিখুন।';
+
+  @override
   String get prayerReferenceOpenLabel => 'দেখুন';
+
+  @override
+  String get prayerTayammumTitle => 'তায়াম্মুম';
+
+  @override
+  String get prayerTayammumSubtitle => 'নামাজের আগে শুকনো পবিত্রতার সহজ চিত্রভিত্তিক গাইড।';
+
+  @override
+  String get prayerTayammumHeroLabel => 'সহজে পবিত্রতা';
+
+  @override
+  String get prayerTayammumHeroBody => 'পানি না পাওয়া গেলে বা পানি ব্যবহার করলে ক্ষতির আশঙ্কা থাকলে আল্লাহ পবিত্র মাটি দিয়ে পবিত্রতার সুযোগ দিয়েছেন।';
+
+  @override
+  String get prayerTayammumWhenTitle => 'কখন তায়াম্মুম করবেন?';
+
+  @override
+  String get prayerTayammumWhenBody => 'পানি না পাওয়া গেলে, অথবা অসুস্থতা, আঘাত কিংবা অন্য কোনো গ্রহণযোগ্য কারণে পানি ব্যবহার ক্ষতিকর হলে তায়াম্মুম করা যায়। বিশ্বস্ত আলেমের পরামর্শ অনুযায়ী পবিত্র মাটি বা গ্রহণযোগ্য ধুলোময় প্রাকৃতিক পৃষ্ঠ ব্যবহার করুন।';
+
+  @override
+  String get prayerTayammumStepsTitle => 'মূল ধাপগুলো';
+
+  @override
+  String get prayerTayammumStep1Title => 'নিয়ত করুন';
+
+  @override
+  String get prayerTayammumStep1Body => 'নামাজের পবিত্রতার জন্য তায়াম্মুমের নিয়ত করুন। নিয়ত অন্তরে রাখুন।';
+
+  @override
+  String get prayerTayammumStep2Title => 'পবিত্র মাটিতে হাত রাখুন';
+
+  @override
+  String get prayerTayammumStep2Body => 'দুই হাত পবিত্র মাটি বা গ্রহণযোগ্য ধুলোময় পৃষ্ঠে হালকাভাবে রাখুন, তারপর অতিরিক্ত ধুলো ঝেড়ে নিন।';
+
+  @override
+  String get prayerTayammumStep3Title => 'মুখ ও হাতে মাসাহ করুন';
+
+  @override
+  String get prayerTayammumStep3Body => 'প্রথমে মুখ, তারপর হাতে মাসাহ করুন। মাজহাবভেদে বিস্তারিত কিছুটা ভিন্ন হতে পারে, তাই আপনার অবস্থার জন্য বিশ্বস্ত আলেমের নির্দেশনা অনুসরণ করুন।';
+
+  @override
+  String get prayerTayammumNoteTitle => 'বৈধ কারণের সহজ সুযোগ';
+
+  @override
+  String get prayerTayammumNoteBody => 'তায়াম্মুম বৈধ কারণেই করা হয়। পানি পাওয়া গেলে এবং নিরাপদে ব্যবহার করা সম্ভব হলে প্রয়োজন অনুযায়ী অজু বা গোসল করুন।';
+
+  @override
+  String get prayerTayammumSourceTitle => 'দলিল ও আরও নির্দেশনা';
+
+  @override
+  String get prayerTayammumSourceQuran => 'কুরআন ৫:৬ — পবিত্র মাটি দিয়ে মুখ ও হাতে মাসাহ করার নির্দেশ।';
+
+  @override
+  String get prayerTayammumSourceHadith => 'সহিহ আল-বুখারি ৩৩৮ — নবী ﷺ মাটিতে হাত রেখে অতিরিক্ত ধুলো সরিয়ে মুখ ও হাতে মাসাহ দেখিয়েছেন।';
 
   @override
   String get prayerMovementsTitle => 'নামাজের অঙ্গভঙ্গি গাইড';
