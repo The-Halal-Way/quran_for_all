@@ -6290,7 +6290,7 @@ abstract class AppLocalizations {
   /// No description provided for @prayerTayammumHeroBody.
   ///
   /// In en, this message translates to:
-  /// **'When water is unavailable or using it would cause harm, Allah gives a clean-earth concession for purification.'**
+  /// **'Begin with the intention to purify for prayer. When water is unavailable or using it would cause harm, Allah gives a clean-earth concession for purification.'**
   String get prayerTayammumHeroBody;
 
   /// No description provided for @prayerTayammumWhenTitle.
@@ -6314,37 +6314,37 @@ abstract class AppLocalizations {
   /// No description provided for @prayerTayammumStep1Title.
   ///
   /// In en, this message translates to:
-  /// **'Make your intention'**
+  /// **'Touch clean earth'**
   String get prayerTayammumStep1Title;
 
   /// No description provided for @prayerTayammumStep1Body.
   ///
   /// In en, this message translates to:
-  /// **'Intend Tayammum as purification for the prayer. Keep the intention in your heart.'**
+  /// **'Place both palms lightly on clean earth or a qualifying dusty surface, then remove excess dust.'**
   String get prayerTayammumStep1Body;
 
   /// No description provided for @prayerTayammumStep2Title.
   ///
   /// In en, this message translates to:
-  /// **'Touch clean earth'**
+  /// **'Wipe the face'**
   String get prayerTayammumStep2Title;
 
   /// No description provided for @prayerTayammumStep2Body.
   ///
   /// In en, this message translates to:
-  /// **'Place both palms lightly on clean earth or a qualifying dusty surface, then remove excess dust.'**
+  /// **'Use the dust on your hands to wipe the face completely.'**
   String get prayerTayammumStep2Body;
 
   /// No description provided for @prayerTayammumStep3Title.
   ///
   /// In en, this message translates to:
-  /// **'Wipe the face and hands'**
+  /// **'Wipe the hands'**
   String get prayerTayammumStep3Title;
 
   /// No description provided for @prayerTayammumStep3Body.
   ///
   /// In en, this message translates to:
-  /// **'Wipe the face, then wipe the hands. Exact details can differ by madhhab, so follow a trusted scholar for your situation.'**
+  /// **'Wipe each hand with the other. Exact details can differ by madhhab, so follow a trusted scholar for your situation.'**
   String get prayerTayammumStep3Body;
 
   /// No description provided for @prayerTayammumNoteTitle.
@@ -6376,6 +6376,354 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sahih al-Bukhari 338 — the Prophet ﷺ demonstrated striking the earth, removing excess dust, and wiping the face and hands.'**
   String get prayerTayammumSourceHadith;
+
+  /// No description provided for @prayerReferenceWuduActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Wudu Guide'**
+  String get prayerReferenceWuduActionTitle;
+
+  /// No description provided for @prayerReferenceWuduActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Follow the complete washing sequence with real illustrations.'**
+  String get prayerReferenceWuduActionSubtitle;
+
+  /// No description provided for @prayerReferenceRulesActionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer & Wudu Rules'**
+  String get prayerReferenceRulesActionTitle;
+
+  /// No description provided for @prayerReferenceRulesActionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Conditions, invalidators, and school-aware reminders.'**
+  String get prayerReferenceRulesActionSubtitle;
+
+  /// No description provided for @prayerWuduTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Wudu'**
+  String get prayerWuduTitle;
+
+  /// No description provided for @prayerWuduSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A complete illustrated guide to purification before prayer.'**
+  String get prayerWuduSubtitle;
+
+  /// No description provided for @prayerWuduHeroLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cleanliness before standing'**
+  String get prayerWuduHeroLabel;
+
+  /// No description provided for @prayerWuduHeroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin with the intention and Bismillah. Wudu prepares the body and heart for salah; follow the sequence below to see which steps are washed and which are wiped.'**
+  String get prayerWuduHeroBody;
+
+  /// No description provided for @prayerWuduStepsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'The full sequence'**
+  String get prayerWuduStepsTitle;
+
+  /// No description provided for @prayerWuduStep1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash the hands'**
+  String get prayerWuduStep1Title;
+
+  /// No description provided for @prayerWuduStep1Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash both hands to the wrists three times, including between the fingers.'**
+  String get prayerWuduStep1Body;
+
+  /// No description provided for @prayerWuduStep2Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Rinse the mouth'**
+  String get prayerWuduStep2Title;
+
+  /// No description provided for @prayerWuduStep2Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Rinse the mouth three times with the right hand.'**
+  String get prayerWuduStep2Body;
+
+  /// No description provided for @prayerWuduStep3Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Clean the nose'**
+  String get prayerWuduStep3Title;
+
+  /// No description provided for @prayerWuduStep3Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Draw water gently into the nose and expel it three times.'**
+  String get prayerWuduStep3Body;
+
+  /// No description provided for @prayerWuduStep4Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash the face'**
+  String get prayerWuduStep4Title;
+
+  /// No description provided for @prayerWuduStep4Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash the whole face from the hairline to the chin and from ear to ear three times.'**
+  String get prayerWuduStep4Body;
+
+  /// No description provided for @prayerWuduStep5Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash the arms'**
+  String get prayerWuduStep5Title;
+
+  /// No description provided for @prayerWuduStep5Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash the right arm and then the left, from the fingertips up to and including the elbows.'**
+  String get prayerWuduStep5Body;
+
+  /// No description provided for @prayerWuduStep6Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Wipe the head'**
+  String get prayerWuduStep6Title;
+
+  /// No description provided for @prayerWuduStep6Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Wipe over the head once with wet hands. This is a wipe, not a wash.'**
+  String get prayerWuduStep6Body;
+
+  /// No description provided for @prayerWuduStep7Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Wipe the ears'**
+  String get prayerWuduStep7Title;
+
+  /// No description provided for @prayerWuduStep7Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Wipe the inside and outside of both ears once with the remaining moisture.'**
+  String get prayerWuduStep7Body;
+
+  /// No description provided for @prayerWuduStep8Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash the feet'**
+  String get prayerWuduStep8Title;
+
+  /// No description provided for @prayerWuduStep8Body.
+  ///
+  /// In en, this message translates to:
+  /// **'Wash the right foot and then the left to the ankles, reaching between the toes.'**
+  String get prayerWuduStep8Body;
+
+  /// No description provided for @prayerWuduNoteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A gentle reminder'**
+  String get prayerWuduNoteTitle;
+
+  /// No description provided for @prayerWuduNoteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Use water carefully and let it reach every required area. Sunnah details can vary between schools, so follow a trusted teacher for your madhhab.'**
+  String get prayerWuduNoteBody;
+
+  /// No description provided for @prayerWuduSourceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence and further guidance'**
+  String get prayerWuduSourceTitle;
+
+  /// No description provided for @prayerWuduSourceQuran.
+  ///
+  /// In en, this message translates to:
+  /// **'Qur’an 5:6 — wash the face and arms, wipe the head, and wash the feet.'**
+  String get prayerWuduSourceQuran;
+
+  /// No description provided for @prayerWuduSourceHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 225 — prayer is not accepted in a state of impurity until purification is performed.'**
+  String get prayerWuduSourceHadith;
+
+  /// No description provided for @prayerRulesTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Prayer & Wudu Rules'**
+  String get prayerRulesTitle;
+
+  /// No description provided for @prayerRulesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A practical checklist for entering prayer with clarity.'**
+  String get prayerRulesSubtitle;
+
+  /// No description provided for @prayerRulesHeroLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'A calm pre-prayer check'**
+  String get prayerRulesHeroLabel;
+
+  /// No description provided for @prayerRulesHeroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Use these reminders before salah and when you are unsure whether purification or prayer has been affected.'**
+  String get prayerRulesHeroBody;
+
+  /// No description provided for @prayerRulesBeforePrayerTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Conditions before prayer'**
+  String get prayerRulesBeforePrayerTitle;
+
+  /// No description provided for @prayerRulesBeforePrayerItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete wudu, ghusl, or tayammum when your state requires it.'**
+  String get prayerRulesBeforePrayerItem1;
+
+  /// No description provided for @prayerRulesBeforePrayerItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Make sure your body, clothing, and prayer place are clean.'**
+  String get prayerRulesBeforePrayerItem2;
+
+  /// No description provided for @prayerRulesBeforePrayerItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Cover the awrah according to your situation and the guidance you follow.'**
+  String get prayerRulesBeforePrayerItem3;
+
+  /// No description provided for @prayerRulesBeforePrayerItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'Wait until the appointed prayer time has entered.'**
+  String get prayerRulesBeforePrayerItem4;
+
+  /// No description provided for @prayerRulesBeforePrayerItem5.
+  ///
+  /// In en, this message translates to:
+  /// **'Face the qiblah and hold the intention to pray.'**
+  String get prayerRulesBeforePrayerItem5;
+
+  /// No description provided for @prayerRulesWuduBreaksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What breaks wudu?'**
+  String get prayerRulesWuduBreaksTitle;
+
+  /// No description provided for @prayerRulesWuduBreaksItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Urine, stool, wind, or anything that exits from the front or rear passage.'**
+  String get prayerRulesWuduBreaksItem1;
+
+  /// No description provided for @prayerRulesWuduBreaksItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Loss of consciousness, intoxication, or sleep deep enough to remove awareness.'**
+  String get prayerRulesWuduBreaksItem2;
+
+  /// No description provided for @prayerRulesWuduBreaksItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Menstruation, postnatal bleeding, or janabah requires the purification appropriate to that state.'**
+  String get prayerRulesWuduBreaksItem3;
+
+  /// No description provided for @prayerRulesWuduBreaksItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'A new state of impurity means purification must be renewed before prayer.'**
+  String get prayerRulesWuduBreaksItem4;
+
+  /// No description provided for @prayerRulesWuduBreaksItem5.
+  ///
+  /// In en, this message translates to:
+  /// **'Touching the opposite sex or private parts has school-specific rulings; follow your trusted teacher.'**
+  String get prayerRulesWuduBreaksItem5;
+
+  /// No description provided for @prayerRulesPrayerBreaksTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What can invalidate prayer?'**
+  String get prayerRulesPrayerBreaksTitle;
+
+  /// No description provided for @prayerRulesPrayerBreaksItem1.
+  ///
+  /// In en, this message translates to:
+  /// **'Losing wudu or entering a state that requires ghusl during prayer.'**
+  String get prayerRulesPrayerBreaksItem1;
+
+  /// No description provided for @prayerRulesPrayerBreaksItem2.
+  ///
+  /// In en, this message translates to:
+  /// **'Deliberate speech unrelated to the prayer, or deliberate eating and drinking.'**
+  String get prayerRulesPrayerBreaksItem2;
+
+  /// No description provided for @prayerRulesPrayerBreaksItem3.
+  ///
+  /// In en, this message translates to:
+  /// **'Exposing the awrah or turning away from the qiblah without a valid excuse.'**
+  String get prayerRulesPrayerBreaksItem3;
+
+  /// No description provided for @prayerRulesPrayerBreaksItem4.
+  ///
+  /// In en, this message translates to:
+  /// **'Excessive continuous movement that changes the form of the prayer.'**
+  String get prayerRulesPrayerBreaksItem4;
+
+  /// No description provided for @prayerRulesPrayerBreaksItem5.
+  ///
+  /// In en, this message translates to:
+  /// **'Deliberately omitting a required pillar or changing the prayer\'s essential structure.'**
+  String get prayerRulesPrayerBreaksItem5;
+
+  /// No description provided for @prayerRulesPrayerBreaksItem6.
+  ///
+  /// In en, this message translates to:
+  /// **'Loud laughter or another action that clearly conflicts with the prayer.'**
+  String get prayerRulesPrayerBreaksItem6;
+
+  /// No description provided for @prayerRulesNoteTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Rulings can differ'**
+  String get prayerRulesNoteTitle;
+
+  /// No description provided for @prayerRulesNoteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'This is a practical overview, not a fatwa. Some details differ between madhhabs and personal circumstances; ask a qualified local scholar when a ruling matters.'**
+  String get prayerRulesNoteBody;
+
+  /// No description provided for @prayerRulesSourceTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Foundations'**
+  String get prayerRulesSourceTitle;
+
+  /// No description provided for @prayerRulesSourceQuran.
+  ///
+  /// In en, this message translates to:
+  /// **'Qur’an 5:6 and 2:144 — purification and facing the qiblah before prayer.'**
+  String get prayerRulesSourceQuran;
+
+  /// No description provided for @prayerRulesSourceHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'Sahih Muslim 225 — purification is required for prayer when a person is in a state of impurity.'**
+  String get prayerRulesSourceHadith;
 
   /// No description provided for @prayerMovementsTitle.
   ///

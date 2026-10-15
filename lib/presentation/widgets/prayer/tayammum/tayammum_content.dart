@@ -35,7 +35,7 @@ class TayammumContent extends StatelessWidget {
         const SizedBox(height: AppSpacing.md),
         TayammumStepCard(
           number: 1,
-          type: TayammumStepType.intention,
+          type: TayammumStepType.earth,
           title: context.l10n.prayerTayammumStep1Title,
           body: context.l10n.prayerTayammumStep1Body,
           accent: MyColors.secondary,
@@ -43,7 +43,7 @@ class TayammumContent extends StatelessWidget {
         const SizedBox(height: AppSpacing.md),
         TayammumStepCard(
           number: 2,
-          type: TayammumStepType.earth,
+          type: TayammumStepType.face,
           title: context.l10n.prayerTayammumStep2Title,
           body: context.l10n.prayerTayammumStep2Body,
           accent: MyColors.tertiary,
@@ -51,7 +51,7 @@ class TayammumContent extends StatelessWidget {
         const SizedBox(height: AppSpacing.md),
         TayammumStepCard(
           number: 3,
-          type: TayammumStepType.wipe,
+          type: TayammumStepType.hands,
           title: context.l10n.prayerTayammumStep3Title,
           body: context.l10n.prayerTayammumStep3Body,
           accent: MyColors.primaryLight,

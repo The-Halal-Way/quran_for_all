@@ -1,1 +1,1 @@
-enum TayammumStepType { intention, earth, wipe }
+enum TayammumStepType { earth, face, hands }

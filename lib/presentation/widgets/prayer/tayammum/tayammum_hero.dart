@@ -5,6 +5,7 @@ import '../../../../core/theme/app_shadows.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
+import '../../../../core/theme/my_images.dart';
 
 class TayammumHero extends StatelessWidget {
   const TayammumHero({super.key});
@@ -99,6 +100,31 @@ class TayammumHero extends StatelessWidget {
                 style: text.bodySmall.copyWith(
                   color: Colors.white.withValues(alpha: 0.72),
                   height: 1.5,
+                ),
+              ),
+              const SizedBox(height: AppSpacing.lg),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(AppRadius.lg),
+                child: Container(
+                  width: double.infinity,
+                  color: Colors.white.withValues(alpha: 0.94),
+                  padding: const EdgeInsets.all(AppSpacing.xs),
+                  child: Image.asset(
+                    MyImages.tayammumSteps,
+                    height: 124,
+                    fit: BoxFit.contain,
+                    errorBuilder: (context, error, stackTrace) =>
+                        const SizedBox(
+                          height: 124,
+                          child: Center(
+                            child: Icon(
+                              Icons.auto_awesome_rounded,
+                              color: MyColors.primary,
+                              size: 42,
+                            ),
+                          ),
+                        ),
+                  ),
                 ),
               ),
             ],

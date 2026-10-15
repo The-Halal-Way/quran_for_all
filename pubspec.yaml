@@ -59,6 +59,8 @@ flutter:
     - assets/images/
     - assets/images/prayer/
     - assets/images/prayer/female/
+    - assets/images/prayer/tayammum/
+    - assets/images/prayer/wudu/
     - assets/images/nurani_quran/
     - assets/images/books/
     - assets/json/

@@ -3201,7 +3201,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerTayammumHeroLabel => 'সহজে পবিত্রতা';
 
   @override
-  String get prayerTayammumHeroBody => 'পানি না পাওয়া গেলে বা পানি ব্যবহার করলে ক্ষতির আশঙ্কা থাকলে আল্লাহ পবিত্র মাটি দিয়ে পবিত্রতার সুযোগ দিয়েছেন।';
+  String get prayerTayammumHeroBody => 'নামাজের পবিত্রতার জন্য নিয়ত করে নিন। পানি না পাওয়া গেলে বা পানি ব্যবহার করলে ক্ষতির আশঙ্কা থাকলে আল্লাহ পবিত্র মাটি দিয়ে পবিত্রতার সুযোগ দিয়েছেন।';
 
   @override
   String get prayerTayammumWhenTitle => 'কখন তায়াম্মুম করবেন?';
@@ -3213,22 +3213,22 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerTayammumStepsTitle => 'মূল ধাপগুলো';
 
   @override
-  String get prayerTayammumStep1Title => 'নিয়ত করুন';
+  String get prayerTayammumStep1Title => 'পবিত্র মাটিতে হাত রাখুন';
 
   @override
-  String get prayerTayammumStep1Body => 'নামাজের পবিত্রতার জন্য তায়াম্মুমের নিয়ত করুন। নিয়ত অন্তরে রাখুন।';
+  String get prayerTayammumStep1Body => 'দুই হাত পবিত্র মাটি বা গ্রহণযোগ্য ধুলোময় পৃষ্ঠে হালকাভাবে রাখুন, তারপর অতিরিক্ত ধুলো ঝেড়ে নিন।';
 
   @override
-  String get prayerTayammumStep2Title => 'পবিত্র মাটিতে হাত রাখুন';
+  String get prayerTayammumStep2Title => 'মুখে মাসাহ করুন';
 
   @override
-  String get prayerTayammumStep2Body => 'দুই হাত পবিত্র মাটি বা গ্রহণযোগ্য ধুলোময় পৃষ্ঠে হালকাভাবে রাখুন, তারপর অতিরিক্ত ধুলো ঝেড়ে নিন।';
+  String get prayerTayammumStep2Body => 'হাতে থাকা ধুলো দিয়ে পুরো মুখে মাসাহ করুন।';
 
   @override
-  String get prayerTayammumStep3Title => 'মুখ ও হাতে মাসাহ করুন';
+  String get prayerTayammumStep3Title => 'হাতে মাসাহ করুন';
 
   @override
-  String get prayerTayammumStep3Body => 'প্রথমে মুখ, তারপর হাতে মাসাহ করুন। মাজহাবভেদে বিস্তারিত কিছুটা ভিন্ন হতে পারে, তাই আপনার অবস্থার জন্য বিশ্বস্ত আলেমের নির্দেশনা অনুসরণ করুন।';
+  String get prayerTayammumStep3Body => 'এক হাত দিয়ে অন্য হাতে মাসাহ করুন। মাজহাবভেদে বিস্তারিত কিছুটা ভিন্ন হতে পারে, তাই আপনার অবস্থার জন্য বিশ্বস্ত আলেমের নির্দেশনা অনুসরণ করুন।';
 
   @override
   String get prayerTayammumNoteTitle => 'বৈধ কারণের সহজ সুযোগ';
@@ -3244,6 +3244,180 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get prayerTayammumSourceHadith => 'সহিহ আল-বুখারি ৩৩৮ — নবী ﷺ মাটিতে হাত রেখে অতিরিক্ত ধুলো সরিয়ে মুখ ও হাতে মাসাহ দেখিয়েছেন।';
+
+  @override
+  String get prayerReferenceWuduActionTitle => 'অজুর গাইড';
+
+  @override
+  String get prayerReferenceWuduActionSubtitle => 'বাস্তব চিত্রসহ অজুর সম্পূর্ণ ধাপগুলো অনুসরণ করুন।';
+
+  @override
+  String get prayerReferenceRulesActionTitle => 'নামাজ ও অজুর নিয়ম';
+
+  @override
+  String get prayerReferenceRulesActionSubtitle => 'নামাজের আগে শর্ত, অজু ভঙ্গের কারণ ও গুরুত্বপূর্ণ স্মরণিকা।';
+
+  @override
+  String get prayerWuduTitle => 'অজু';
+
+  @override
+  String get prayerWuduSubtitle => 'নামাজের আগে পবিত্রতার সম্পূর্ণ চিত্রভিত্তিক গাইড।';
+
+  @override
+  String get prayerWuduHeroLabel => 'নামাজের আগে পবিত্রতা';
+
+  @override
+  String get prayerWuduHeroBody => 'নিয়ত ও বিসমিল্লাহ দিয়ে শুরু করুন। অজু নামাজের জন্য শরীর ও হৃদয়কে প্রস্তুত করে; নিচের ধাপগুলো অনুসরণ করে দেখুন কোন অংশ ধুতে হবে আর কোন অংশ মাসাহ করতে হবে।';
+
+  @override
+  String get prayerWuduStepsTitle => 'সম্পূর্ণ ধাপগুলো';
+
+  @override
+  String get prayerWuduStep1Title => 'হাত ধুয়ে নিন';
+
+  @override
+  String get prayerWuduStep1Body => 'দুই হাত কবজি পর্যন্ত তিনবার ধুয়ে নিন এবং আঙুলের ফাঁকেও পানি পৌঁছান।';
+
+  @override
+  String get prayerWuduStep2Title => 'কুলি করুন';
+
+  @override
+  String get prayerWuduStep2Body => 'ডান হাত দিয়ে তিনবার মুখে পানি নিয়ে কুলি করুন।';
+
+  @override
+  String get prayerWuduStep3Title => 'নাক পরিষ্কার করুন';
+
+  @override
+  String get prayerWuduStep3Body => 'হালকাভাবে নাকে পানি নিয়ে তিনবার পরিষ্কার করে বের করে দিন।';
+
+  @override
+  String get prayerWuduStep4Title => 'মুখ ধুয়ে নিন';
+
+  @override
+  String get prayerWuduStep4Body => 'চুলের গোড়া থেকে থুতনি এবং এক কান থেকে অন্য কান পর্যন্ত পুরো মুখ তিনবার ধুয়ে নিন।';
+
+  @override
+  String get prayerWuduStep5Title => 'দুই হাত ধুয়ে নিন';
+
+  @override
+  String get prayerWuduStep5Body => 'ডান হাত, তারপর বাম হাত আঙুলের ডগা থেকে কনুইসহ ধুয়ে নিন।';
+
+  @override
+  String get prayerWuduStep6Title => 'মাথায় মাসাহ করুন';
+
+  @override
+  String get prayerWuduStep6Body => 'ভেজা হাত দিয়ে একবার মাথায় মাসাহ করুন। এটি ধোয়া নয়, মাসাহ করা।';
+
+  @override
+  String get prayerWuduStep7Title => 'কানে মাসাহ করুন';
+
+  @override
+  String get prayerWuduStep7Body => 'অবশিষ্ট ভেজাভাব দিয়ে দুই কানের ভেতর ও বাইরে একবার মাসাহ করুন।';
+
+  @override
+  String get prayerWuduStep8Title => 'পা ধুয়ে নিন';
+
+  @override
+  String get prayerWuduStep8Body => 'ডান পা, তারপর বাম পা টাখনু পর্যন্ত ধুয়ে নিন এবং আঙুলের ফাঁকে পানি পৌঁছান।';
+
+  @override
+  String get prayerWuduNoteTitle => 'মনে রাখুন';
+
+  @override
+  String get prayerWuduNoteBody => 'পানি অপচয় করবেন না এবং প্রয়োজনীয় প্রতিটি অংশে পানি পৌঁছান। সুন্নাহর কিছু বিস্তারিত মাজহাবভেদে ভিন্ন হতে পারে—আপনার অনুসৃত মাজহাবের বিশ্বস্ত শিক্ষকের নির্দেশনা নিন।';
+
+  @override
+  String get prayerWuduSourceTitle => 'দলিল ও আরও নির্দেশনা';
+
+  @override
+  String get prayerWuduSourceQuran => 'কুরআন ৫:৬ — মুখ ও হাত ধোয়া, মাথায় মাসাহ এবং পা ধোয়ার নির্দেশ।';
+
+  @override
+  String get prayerWuduSourceHadith => 'সহিহ মুসলিম ২২৫ — অপবিত্র অবস্থায় পবিত্রতা অর্জন না করা পর্যন্ত নামাজ কবুল হয় না।';
+
+  @override
+  String get prayerRulesTitle => 'নামাজ ও অজুর নিয়ম';
+
+  @override
+  String get prayerRulesSubtitle => 'নামাজে দাঁড়ানোর আগে পরিষ্কার ও শান্ত থাকার ব্যবহারিক তালিকা।';
+
+  @override
+  String get prayerRulesHeroLabel => 'নামাজের আগে সহজ যাচাই';
+
+  @override
+  String get prayerRulesHeroBody => 'নামাজের আগে এবং পবিত্রতা বা নামাজ ঠিক আছে কি না—এ নিয়ে সন্দেহ হলে এই স্মরণিকাগুলো দেখুন।';
+
+  @override
+  String get prayerRulesBeforePrayerTitle => 'নামাজের আগে শর্ত';
+
+  @override
+  String get prayerRulesBeforePrayerItem1 => 'প্রয়োজন অনুযায়ী অজু, গোসল বা তায়াম্মুম সম্পন্ন করুন।';
+
+  @override
+  String get prayerRulesBeforePrayerItem2 => 'শরীর, পোশাক ও নামাজের স্থান পরিষ্কার আছে কি না নিশ্চিত করুন।';
+
+  @override
+  String get prayerRulesBeforePrayerItem3 => 'আপনার অবস্থা ও অনুসৃত নির্দেশনা অনুযায়ী সতর ঢেকে নিন।';
+
+  @override
+  String get prayerRulesBeforePrayerItem4 => 'নির্ধারিত নামাজের সময় শুরু হওয়া পর্যন্ত অপেক্ষা করুন।';
+
+  @override
+  String get prayerRulesBeforePrayerItem5 => 'কিবলামুখী হয়ে নামাজের নিয়ত করুন।';
+
+  @override
+  String get prayerRulesWuduBreaksTitle => 'কোন কারণে অজু ভেঙে যায়?';
+
+  @override
+  String get prayerRulesWuduBreaksItem1 => 'প্রস্রাব, পায়খানা, বায়ু বা সামনের/পেছনের রাস্তা দিয়ে কিছু বের হওয়া।';
+
+  @override
+  String get prayerRulesWuduBreaksItem2 => 'চেতনা হারানো, নেশাগ্রস্ত হওয়া বা গভীর ঘুমে সচেতনতা চলে যাওয়া।';
+
+  @override
+  String get prayerRulesWuduBreaksItem3 => 'হায়েজ, নিফাস বা জানাবাতের ক্ষেত্রে সেই অবস্থার উপযুক্ত পবিত্রতা অর্জন করতে হয়।';
+
+  @override
+  String get prayerRulesWuduBreaksItem4 => 'নতুন করে অপবিত্রতা ঘটলে নামাজের আগে পবিত্রতা আবার সম্পন্ন করতে হয়।';
+
+  @override
+  String get prayerRulesWuduBreaksItem5 => 'পরনারী/পরপুরুষ বা লজ্জাস্থান স্পর্শের বিধান মাজহাবভেদে ভিন্ন—বিশ্বস্ত আলেমের নির্দেশনা নিন।';
+
+  @override
+  String get prayerRulesPrayerBreaksTitle => 'কোন কারণে নামাজ নষ্ট হতে পারে?';
+
+  @override
+  String get prayerRulesPrayerBreaksItem1 => 'নামাজের মধ্যে অজু ভেঙে যাওয়া বা গোসল ফরজ হওয়ার অবস্থায় প্রবেশ করা।';
+
+  @override
+  String get prayerRulesPrayerBreaksItem2 => 'ইচ্ছাকৃতভাবে নামাজের বাইরের কথা বলা, খাওয়া বা পান করা।';
+
+  @override
+  String get prayerRulesPrayerBreaksItem3 => 'বৈধ কারণ ছাড়া সতর খোলা থাকা বা কিবলা থেকে ঘুরে যাওয়া।';
+
+  @override
+  String get prayerRulesPrayerBreaksItem4 => 'নামাজের আকৃতি বদলে দেয় এমন অতিরিক্ত ও ধারাবাহিক নড়াচড়া করা।';
+
+  @override
+  String get prayerRulesPrayerBreaksItem5 => 'ইচ্ছাকৃতভাবে কোনো ফরজ স্তম্ভ বাদ দেওয়া বা নামাজের মূল কাঠামো বদলে ফেলা।';
+
+  @override
+  String get prayerRulesPrayerBreaksItem6 => 'জোরে হাসা বা নামাজের সঙ্গে স্পষ্টভাবে অসঙ্গত কোনো কাজ করা।';
+
+  @override
+  String get prayerRulesNoteTitle => 'বিধানে মতভেদ থাকতে পারে';
+
+  @override
+  String get prayerRulesNoteBody => 'এটি ব্যবহারিক সারসংক্ষেপ, ফতোয়া নয়। মাজহাব ও ব্যক্তিগত পরিস্থিতিভেদে কিছু বিধান ভিন্ন হতে পারে; গুরুত্বপূর্ণ বিষয়ে যোগ্য স্থানীয় আলেমের পরামর্শ নিন।';
+
+  @override
+  String get prayerRulesSourceTitle => 'মূল ভিত্তি';
+
+  @override
+  String get prayerRulesSourceQuran => 'কুরআন ৫:৬ ও ২:১৪৪ — নামাজের আগে পবিত্রতা ও কিবলামুখী হওয়ার ভিত্তি।';
+
+  @override
+  String get prayerRulesSourceHadith => 'সহিহ মুসলিম ২২৫ — অপবিত্র অবস্থায় নামাজের জন্য পবিত্রতা অর্জন করা জরুরি।';
 
   @override
   String get prayerMovementsTitle => 'নামাজের অঙ্গভঙ্গি গাইড';

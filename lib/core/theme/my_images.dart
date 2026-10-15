@@ -27,6 +27,36 @@ class MyImages {
       'assets/images/prayer/tashahhud_finger_lift.png';
   static const String tashahhud = 'assets/images/prayer/tashahhud.png';
 
+  /// Wudu visual guide
+  static const String wuduOverview =
+      'assets/images/prayer/wudu/wudu_overview.jpeg';
+  static const String wuduStep1Hands =
+      'assets/images/prayer/wudu/wudu_step_1_hands.jpeg';
+  static const String wuduStep2Mouth =
+      'assets/images/prayer/wudu/wudu_step_2_mouth.jpeg';
+  static const String wuduStep3Nose =
+      'assets/images/prayer/wudu/wudu_step_3_nose.jpeg';
+  static const String wuduStep4Face =
+      'assets/images/prayer/wudu/wudu_step_4_face.jpeg';
+  static const String wuduStep5Arms =
+      'assets/images/prayer/wudu/wudu_step_5_arms.jpeg';
+  static const String wuduStep6Head =
+      'assets/images/prayer/wudu/wudu_step_6_head.jpeg';
+  static const String wuduStep7Ears =
+      'assets/images/prayer/wudu/wudu_step_7_ears.jpeg';
+  static const String wuduStep8Feet =
+      'assets/images/prayer/wudu/wudu_step_8_feet.jpeg';
+
+  /// Tayammum visual guide
+  static const String tayammumSteps =
+      'assets/images/prayer/tayammum/tayammum_steps.webp';
+  static const String tayammumStep1 =
+      'assets/images/prayer/tayammum/tayammum_step_1.webp';
+  static const String tayammumStep2 =
+      'assets/images/prayer/tayammum/tayammum_step_2.webp';
+  static const String tayammumStep3 =
+      'assets/images/prayer/tayammum/tayammum_step_3.webp';
+
   static const String femaleAfterPrayer =
       'assets/images/prayer/female/female_after_pray.png';
   static const String femaleAlQiyam =

@@ -3201,7 +3201,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerTayammumHeroLabel => 'Purification with ease';
 
   @override
-  String get prayerTayammumHeroBody => 'When water is unavailable or using it would cause harm, Allah gives a clean-earth concession for purification.';
+  String get prayerTayammumHeroBody => 'Begin with the intention to purify for prayer. When water is unavailable or using it would cause harm, Allah gives a clean-earth concession for purification.';
 
   @override
   String get prayerTayammumWhenTitle => 'When is Tayammum used?';
@@ -3213,22 +3213,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerTayammumStepsTitle => 'The basic steps';
 
   @override
-  String get prayerTayammumStep1Title => 'Make your intention';
+  String get prayerTayammumStep1Title => 'Touch clean earth';
 
   @override
-  String get prayerTayammumStep1Body => 'Intend Tayammum as purification for the prayer. Keep the intention in your heart.';
+  String get prayerTayammumStep1Body => 'Place both palms lightly on clean earth or a qualifying dusty surface, then remove excess dust.';
 
   @override
-  String get prayerTayammumStep2Title => 'Touch clean earth';
+  String get prayerTayammumStep2Title => 'Wipe the face';
 
   @override
-  String get prayerTayammumStep2Body => 'Place both palms lightly on clean earth or a qualifying dusty surface, then remove excess dust.';
+  String get prayerTayammumStep2Body => 'Use the dust on your hands to wipe the face completely.';
 
   @override
-  String get prayerTayammumStep3Title => 'Wipe the face and hands';
+  String get prayerTayammumStep3Title => 'Wipe the hands';
 
   @override
-  String get prayerTayammumStep3Body => 'Wipe the face, then wipe the hands. Exact details can differ by madhhab, so follow a trusted scholar for your situation.';
+  String get prayerTayammumStep3Body => 'Wipe each hand with the other. Exact details can differ by madhhab, so follow a trusted scholar for your situation.';
 
   @override
   String get prayerTayammumNoteTitle => 'A concession with a valid cause';
@@ -3244,6 +3244,180 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get prayerTayammumSourceHadith => 'Sahih al-Bukhari 338 — the Prophet ﷺ demonstrated striking the earth, removing excess dust, and wiping the face and hands.';
+
+  @override
+  String get prayerReferenceWuduActionTitle => 'Wudu Guide';
+
+  @override
+  String get prayerReferenceWuduActionSubtitle => 'Follow the complete washing sequence with real illustrations.';
+
+  @override
+  String get prayerReferenceRulesActionTitle => 'Prayer & Wudu Rules';
+
+  @override
+  String get prayerReferenceRulesActionSubtitle => 'Conditions, invalidators, and school-aware reminders.';
+
+  @override
+  String get prayerWuduTitle => 'Wudu';
+
+  @override
+  String get prayerWuduSubtitle => 'A complete illustrated guide to purification before prayer.';
+
+  @override
+  String get prayerWuduHeroLabel => 'Cleanliness before standing';
+
+  @override
+  String get prayerWuduHeroBody => 'Begin with the intention and Bismillah. Wudu prepares the body and heart for salah; follow the sequence below to see which steps are washed and which are wiped.';
+
+  @override
+  String get prayerWuduStepsTitle => 'The full sequence';
+
+  @override
+  String get prayerWuduStep1Title => 'Wash the hands';
+
+  @override
+  String get prayerWuduStep1Body => 'Wash both hands to the wrists three times, including between the fingers.';
+
+  @override
+  String get prayerWuduStep2Title => 'Rinse the mouth';
+
+  @override
+  String get prayerWuduStep2Body => 'Rinse the mouth three times with the right hand.';
+
+  @override
+  String get prayerWuduStep3Title => 'Clean the nose';
+
+  @override
+  String get prayerWuduStep3Body => 'Draw water gently into the nose and expel it three times.';
+
+  @override
+  String get prayerWuduStep4Title => 'Wash the face';
+
+  @override
+  String get prayerWuduStep4Body => 'Wash the whole face from the hairline to the chin and from ear to ear three times.';
+
+  @override
+  String get prayerWuduStep5Title => 'Wash the arms';
+
+  @override
+  String get prayerWuduStep5Body => 'Wash the right arm and then the left, from the fingertips up to and including the elbows.';
+
+  @override
+  String get prayerWuduStep6Title => 'Wipe the head';
+
+  @override
+  String get prayerWuduStep6Body => 'Wipe over the head once with wet hands. This is a wipe, not a wash.';
+
+  @override
+  String get prayerWuduStep7Title => 'Wipe the ears';
+
+  @override
+  String get prayerWuduStep7Body => 'Wipe the inside and outside of both ears once with the remaining moisture.';
+
+  @override
+  String get prayerWuduStep8Title => 'Wash the feet';
+
+  @override
+  String get prayerWuduStep8Body => 'Wash the right foot and then the left to the ankles, reaching between the toes.';
+
+  @override
+  String get prayerWuduNoteTitle => 'A gentle reminder';
+
+  @override
+  String get prayerWuduNoteBody => 'Use water carefully and let it reach every required area. Sunnah details can vary between schools, so follow a trusted teacher for your madhhab.';
+
+  @override
+  String get prayerWuduSourceTitle => 'Evidence and further guidance';
+
+  @override
+  String get prayerWuduSourceQuran => 'Qur’an 5:6 — wash the face and arms, wipe the head, and wash the feet.';
+
+  @override
+  String get prayerWuduSourceHadith => 'Sahih Muslim 225 — prayer is not accepted in a state of impurity until purification is performed.';
+
+  @override
+  String get prayerRulesTitle => 'Prayer & Wudu Rules';
+
+  @override
+  String get prayerRulesSubtitle => 'A practical checklist for entering prayer with clarity.';
+
+  @override
+  String get prayerRulesHeroLabel => 'A calm pre-prayer check';
+
+  @override
+  String get prayerRulesHeroBody => 'Use these reminders before salah and when you are unsure whether purification or prayer has been affected.';
+
+  @override
+  String get prayerRulesBeforePrayerTitle => 'Conditions before prayer';
+
+  @override
+  String get prayerRulesBeforePrayerItem1 => 'Complete wudu, ghusl, or tayammum when your state requires it.';
+
+  @override
+  String get prayerRulesBeforePrayerItem2 => 'Make sure your body, clothing, and prayer place are clean.';
+
+  @override
+  String get prayerRulesBeforePrayerItem3 => 'Cover the awrah according to your situation and the guidance you follow.';
+
+  @override
+  String get prayerRulesBeforePrayerItem4 => 'Wait until the appointed prayer time has entered.';
+
+  @override
+  String get prayerRulesBeforePrayerItem5 => 'Face the qiblah and hold the intention to pray.';
+
+  @override
+  String get prayerRulesWuduBreaksTitle => 'What breaks wudu?';
+
+  @override
+  String get prayerRulesWuduBreaksItem1 => 'Urine, stool, wind, or anything that exits from the front or rear passage.';
+
+  @override
+  String get prayerRulesWuduBreaksItem2 => 'Loss of consciousness, intoxication, or sleep deep enough to remove awareness.';
+
+  @override
+  String get prayerRulesWuduBreaksItem3 => 'Menstruation, postnatal bleeding, or janabah requires the purification appropriate to that state.';
+
+  @override
+  String get prayerRulesWuduBreaksItem4 => 'A new state of impurity means purification must be renewed before prayer.';
+
+  @override
+  String get prayerRulesWuduBreaksItem5 => 'Touching the opposite sex or private parts has school-specific rulings; follow your trusted teacher.';
+
+  @override
+  String get prayerRulesPrayerBreaksTitle => 'What can invalidate prayer?';
+
+  @override
+  String get prayerRulesPrayerBreaksItem1 => 'Losing wudu or entering a state that requires ghusl during prayer.';
+
+  @override
+  String get prayerRulesPrayerBreaksItem2 => 'Deliberate speech unrelated to the prayer, or deliberate eating and drinking.';
+
+  @override
+  String get prayerRulesPrayerBreaksItem3 => 'Exposing the awrah or turning away from the qiblah without a valid excuse.';
+
+  @override
+  String get prayerRulesPrayerBreaksItem4 => 'Excessive continuous movement that changes the form of the prayer.';
+
+  @override
+  String get prayerRulesPrayerBreaksItem5 => 'Deliberately omitting a required pillar or changing the prayer\'s essential structure.';
+
+  @override
+  String get prayerRulesPrayerBreaksItem6 => 'Loud laughter or another action that clearly conflicts with the prayer.';
+
+  @override
+  String get prayerRulesNoteTitle => 'Rulings can differ';
+
+  @override
+  String get prayerRulesNoteBody => 'This is a practical overview, not a fatwa. Some details differ between madhhabs and personal circumstances; ask a qualified local scholar when a ruling matters.';
+
+  @override
+  String get prayerRulesSourceTitle => 'Foundations';
+
+  @override
+  String get prayerRulesSourceQuran => 'Qur’an 5:6 and 2:144 — purification and facing the qiblah before prayer.';
+
+  @override
+  String get prayerRulesSourceHadith => 'Sahih Muslim 225 — purification is required for prayer when a person is in a state of impurity.';
 
   @override
   String get prayerMovementsTitle => 'Salah Movement Guide';
