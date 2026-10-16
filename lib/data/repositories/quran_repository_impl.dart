@@ -120,6 +120,14 @@ class QuranRepositoryImpl implements QuranRepository {
   }
 
   @override
+  Future<bool> hasCompleteLocalData() async {
+    if (!await _database.hasQuranData()) {
+      return false;
+    }
+    return _database.hasLocalizedTafsirData();
+  }
+
+  @override
   Future<List<SurahModel>> getAllSurahs() {
     return _database.getAllSurahs();
   }

@@ -21,13 +21,23 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   int _selectedIndex = 0;
 
-  final List<Widget> _sections = const [
-    DashboardView(),
-    PrayerView(),
-    QuranView(),
-    SunnahDuaView(),
-    SettingsView(embedded: true),
+  late final List<Widget Function()> _sectionBuilders = [
+    () => const DashboardView(),
+    () => const PrayerView(),
+    () => const QuranView(),
+    () => const SunnahDuaView(),
+    () => const SettingsView(embedded: true),
   ];
+  late final List<Widget?> _sections = List<Widget?>.filled(
+    _sectionBuilders.length,
+    null,
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    _sections[0] = _sectionBuilders[0]();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,9 +48,12 @@ class _HomeViewState extends State<HomeView> {
     final iconSize = responsive.isTablet ? 22.0 : 24.0;
     final active = colors.primary;
     final inactive = colors.onSurfaceVariant.withValues(alpha: 0.58);
+    final sections = [
+      for (final section in _sections) section ?? const SizedBox.shrink(),
+    ];
 
     return Scaffold(
-      body: IndexedStack(index: _selectedIndex, children: _sections),
+      body: IndexedStack(index: _selectedIndex, children: sections),
       bottomNavigationBar: SafeArea(
         top: false,
         minimum: EdgeInsets.fromLTRB(
@@ -68,7 +81,10 @@ class _HomeViewState extends State<HomeView> {
             borderRadius: BorderRadius.circular(AppRadius.xl),
             child: CupertinoTabBar(
               currentIndex: _selectedIndex,
-              onTap: (index) => setState(() => _selectedIndex = index),
+              onTap: (index) => setState(() {
+                _selectedIndex = index;
+                _sections[index] ??= _sectionBuilders[index]();
+              }),
               height: responsive.isTablet ? 60 : 58,
               iconSize: iconSize,
               activeColor: active,

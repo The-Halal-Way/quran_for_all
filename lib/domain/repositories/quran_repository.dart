@@ -12,6 +12,10 @@ abstract class QuranRepository {
 
   Future<bool> hasLocalData();
 
+  /// Complete means the core library and the localized tafsir are available.
+  /// Repositories without a separate tafsir store can use core readiness.
+  Future<bool> hasCompleteLocalData() => hasLocalData();
+
   Future<List<SurahModel>> getAllSurahs();
 
   Future<List<AyahModel>> getAyahsBySurah(int surahId);

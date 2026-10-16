@@ -120,7 +120,6 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
       requestPermissionIfNeeded: false,
     );
     await loadDashboardData(forceRefresh: false);
-    await warmUpcomingPrayerDays();
   }
 
   Future<void> _performWarmUpcomingPrayerDays({

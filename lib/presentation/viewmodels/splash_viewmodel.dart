@@ -1,16 +1,12 @@
-import 'dart:async';
-
 import 'package:flutter/widgets.dart';
 
 import '../../domain/repositories/quran_repository.dart';
 
-/// Checks local storage for startup, then prepares missing Quran content in
-/// the background so the rest of the app remains available without internet.
-class SplashViewModel extends ChangeNotifier with WidgetsBindingObserver {
+/// Checks local storage during startup. Quran content is downloaded only after
+/// the user explicitly starts it from the Quran experience.
+class SplashViewModel extends ChangeNotifier {
   SplashViewModel({required QuranRepository quranRepository})
-    : _quranRepository = quranRepository {
-    WidgetsBinding.instance.addObserver(this);
-  }
+    : _quranRepository = quranRepository;
 
   final QuranRepository _quranRepository;
 
@@ -21,7 +17,6 @@ class SplashViewModel extends ChangeNotifier with WidgetsBindingObserver {
   String _status = 'Preparing local Quran database...';
   Future<void>? _startupTask;
   Future<void>? _downloadTask;
-  DateTime? _lastDownloadAttempt;
 
   bool get isLoading => _isLoading;
   bool get hasQuranData => _hasQuranData;
@@ -32,7 +27,7 @@ class SplashViewModel extends ChangeNotifier with WidgetsBindingObserver {
 
   Future<void> _prepare() async {
     try {
-      _hasQuranData = await _quranRepository.hasLocalData();
+      _hasQuranData = await _quranRepository.hasCompleteLocalData();
     } catch (_) {
       // A database failure should not keep Prayer, Du'a, or Settings behind
       // the splash screen. The Quran panel offers another attempt.
@@ -40,9 +35,8 @@ class SplashViewModel extends ChangeNotifier with WidgetsBindingObserver {
     }
 
     _isLoading = false;
-    _status = _hasQuranData ? 'Ready' : 'Downloading Quran data...';
+    _status = _hasQuranData ? 'Ready' : 'Quran download available on demand';
     _notify();
-    unawaited(retryDownload());
   }
 
   Future<void> retryDownload() {
@@ -55,7 +49,6 @@ class SplashViewModel extends ChangeNotifier with WidgetsBindingObserver {
   }
 
   Future<void> _import() async {
-    _lastDownloadAttempt = DateTime.now();
     _isDownloading = true;
     _notify();
 
@@ -66,41 +59,22 @@ class SplashViewModel extends ChangeNotifier with WidgetsBindingObserver {
           _notify();
         },
         onCoreDataReady: () {
-          _hasQuranData = true;
-          _status = 'Ready';
+          _status = 'Quran text ready; finishing library...';
           _notify();
         },
       );
-      _hasQuranData = await _quranRepository.hasLocalData();
+      _hasQuranData = await _quranRepository.hasCompleteLocalData();
       _status = _hasQuranData ? 'Ready' : 'Quran download unavailable';
     } catch (_) {
       try {
-        _hasQuranData = await _quranRepository.hasLocalData();
+        _hasQuranData = await _quranRepository.hasCompleteLocalData();
       } catch (_) {
         _hasQuranData = false;
       }
-      if (!_hasQuranData) {
-        _status = 'Quran download unavailable';
-      } else {
-        _status = 'Ready';
-      }
+      _status = _hasQuranData ? 'Ready' : 'Quran download unavailable';
     } finally {
       _isDownloading = false;
       _notify();
-    }
-  }
-
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state != AppLifecycleState.resumed ||
-        _hasQuranData ||
-        _isDownloading ||
-        _lastDownloadAttempt == null) {
-      return;
-    }
-    if (DateTime.now().difference(_lastDownloadAttempt!) >=
-        const Duration(seconds: 30)) {
-      unawaited(retryDownload());
     }
   }
 
@@ -111,7 +85,6 @@ class SplashViewModel extends ChangeNotifier with WidgetsBindingObserver {
   @override
   void dispose() {
     _disposed = true;
-    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 }

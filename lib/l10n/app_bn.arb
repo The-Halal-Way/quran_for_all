@@ -147,6 +147,9 @@
   "quranDownloadBody": "এই ডিভাইসে কুরআনের লেখা ও অনুবাদ সংরক্ষণ করতে ইন্টারনেটে সংযুক্ত হন।",
   "quranDownloadInProgressTitle": "কুরআন লাইব্রেরি প্রস্তুত হচ্ছে",
   "quranDownloadInProgressBody": "পটভূমিতে কুরআন ডাউনলোড হচ্ছে। প্রস্তুত হলে এখানে পড়া যাবে।",
+  "quranDownloadGateTitle": "শুরু করতে কুরআন ডাউনলোড করুন",
+  "quranDownloadGateBody": "পড়া ও শেখার ফিচার খোলার আগে কুরআনের লেখা, অনুবাদ, উচ্চারণ ও তাফসির এই ডিভাইসে সংরক্ষণ করুন।",
+  "quranDownloadGateButton": "কুরআন লাইব্রেরি ডাউনলোড",
   "quranDownloadRetry": "কুরআন ডাউনলোড আবার চেষ্টা করুন",
   "quranDownloadOtherSectionsReady": "অপেক্ষার সময় নামাজ, দু'আ ও অন্য বিভাগগুলো ব্যবহার করতে পারবেন।",
   "readQuranTitle": "কুরআন পড়ুন",
@@ -275,7 +278,7 @@
   "quranHubStatOfflineLabel": "টেক্সট প্রস্তুত",
   "quranHubStatLanguagesValue": "২",
   "quranHubStatLanguagesLabel": "ভাষা",
-  "quranHubSectionChooseTitle": "আপনার কুরআন পথ বেছে নিন",
+  "quranHubSectionChooseTitle": "আপনার কুরআন যাত্রা",
   "scienceInQuranTitle": "কুরআনে বিজ্ঞান",
   "scienceInQuranDescription": "কুরআনে উল্লেখিত সৃষ্টির নিদর্শন নিয়ে সংক্ষিপ্ত পুস্তিকাটি পড়ুন।",
   "dashboardBookPdf": "PDF পুস্তিকা",
@@ -892,7 +895,7 @@
   "dashboardNeedTitle": "দুয়া কবুল হওয়ার শিল্প",
   "dashboardNeedSubtitle": "প্রয়োজনে কুরআন ও সুন্নাহভিত্তিক আমল",
   "dashboardNeedOpen": "সব দেখুন",
-  "dashboardMercyTitle": "আল্লাহর রহমত",
+  "dashboardMercyTitle": "আল্লাহর ভালোবাসা ও রহমত",
   "dashboardMercySubtitle": "হৃদয়ের প্রশান্তি। আত্মার আশা।",
   "dashboardMercyHadithTitle": "হৃদয়ের জন্য হাদিস",
   "dashboardMercyHadithSubtitle": "আল্লাহর নৈকট্য, আশা ও সান্ত্বনা জাগানো হাদিস ও ভাবনা।",
@@ -1060,11 +1063,11 @@
   "tasbeehTargetRange": "১ থেকে ৯৯৯৯৯৯-এর মধ্যে লক্ষ্য লিখুন",
   "tasbeehApplyTarget": "লক্ষ্য নির্ধারণ",
   "@tasbeehDeleteConfirm": {"placeholders": {"name": {"type": "String"}}},
-  "dashboardContinueReadingTitle": "পড়া চালিয়ে যান",
-  "dashboardContinueReadingStartSubtitle": "যেখান থেকে থেমেছেন সেখান থেকেই শুরু করুন",
-  "dashboardContinueReadingStartDetail": "সাম্প্রতিক সূরা খুলে পড়া চালিয়ে যান",
-  "dashboardContinueReadingAyahDetail": "আয়াত {ayahNumber} · {surahName}",
-  "@dashboardContinueReadingAyahDetail": {
+  "quranHubContinueReadingTitle": "পড়া চালিয়ে যান",
+  "quranHubContinueReadingStartSubtitle": "যেখান থেকে থেমেছেন সেখান থেকেই শুরু করুন",
+  "quranHubContinueReadingStartDetail": "সাম্প্রতিক সূরা খুলে পড়া চালিয়ে যান",
+  "quranHubContinueReadingAyahDetail": "আয়াত {ayahNumber} · {surahName}",
+  "@quranHubContinueReadingAyahDetail": {
     "placeholders": {
       "ayahNumber": {
         "type": "int"
@@ -1074,12 +1077,11 @@
       }
     }
   },
-  "dashboardQuranLabel": "কুরআন",
-  "dashboardContinueLearningTitle": "শেখা চালিয়ে যান",
-  "dashboardContinueLearningStartSubtitle": "শেখা শুরু করুন",
-  "dashboardContinueLearningStartDetail": "লার্নিং ট্র্যাক খুলুন",
-  "dashboardContinueLearningModuleDetail": "{moduleTitle} · {lessonCount}টি লেসন",
-  "@dashboardContinueLearningModuleDetail": {
+  "quranHubContinueLearningTitle": "শেখা চালিয়ে যান",
+  "quranHubContinueLearningStartSubtitle": "শেখা শুরু করুন",
+  "quranHubContinueLearningStartDetail": "লার্নিং ট্র্যাক খুলুন",
+  "quranHubContinueLearningModuleDetail": "{moduleTitle} · {lessonCount}টি লেসন",
+  "@quranHubContinueLearningModuleDetail": {
     "placeholders": {
       "moduleTitle": {
         "type": "String"

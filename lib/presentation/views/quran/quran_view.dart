@@ -20,8 +20,9 @@ import '../../widgets/common/app_premium_section_title.dart';
 import '../../widgets/quran/quran_view/quran_hub_hero.dart';
 import '../../widgets/quran/quran_view/quran_path_grid.dart';
 import '../../widgets/quran/quran_view/quran_reflection_carousel.dart';
-import '../../widgets/quran/quran_download_panel.dart';
 import '../../widgets/quran/nurani_quran/nurani_quran_library_card.dart';
+import '../../widgets/quran/quran_view/quran_continue_section.dart';
+import '../../widgets/quran/quran_view/quran_feature_gate.dart';
 import 'learn_quran/learn_quran_view.dart';
 import 'read_quran/read_quran_view.dart';
 
@@ -108,17 +109,23 @@ class _QuranViewState extends State<QuranView> {
                           arabicTitle: l10n.quranHubHeroArabic,
                         ),
                         const SizedBox(height: AppSpacing.xxl),
-                        if (quranSetup != null && !quranSetup.hasQuranData) ...[
-                          QuranDownloadPanel(model: quranSetup),
-                          const SizedBox(height: AppSpacing.xxl),
-                        ],
                         AppPremiumSectionTitle(
                           title: l10n.quranHubSectionChooseTitle,
                         ),
                         const SizedBox(height: AppSpacing.md),
-                        QuranPathGrid(
-                          actions: content.actions,
-                          onSelected: _openDestination,
+                        QuranFeatureGate(
+                          model: quranSetup,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const QuranContinueSection(),
+                              const SizedBox(height: AppSpacing.xxl),
+                              QuranPathGrid(
+                                actions: content.actions,
+                                onSelected: _openDestination,
+                              ),
+                            ],
+                          ),
                         ),
                         const SizedBox(height: AppSpacing.lg),
                         const NuraniQuranLibraryCard(),

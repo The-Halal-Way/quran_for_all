@@ -113,6 +113,7 @@ class SplashStatusPanel extends StatelessWidget {
     return switch (rawStatus) {
       'Preparing local Quran database...' => context.l10n.splashStatusPreparing,
       'Ready' => context.l10n.splashStatusReady,
+      'Quran download available on demand' => context.l10n.quranDownloadTitle,
       _ => context.l10n.quranDownloadInProgressTitle,
     };
   }

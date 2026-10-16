@@ -147,6 +147,9 @@
   "quranDownloadBody": "Connect to the internet to save Quran text and translations on this device.",
   "quranDownloadInProgressTitle": "Preparing Quran library",
   "quranDownloadInProgressBody": "The Quran download is running in the background. Reading will appear here when it is ready.",
+  "quranDownloadGateTitle": "Download Quran to begin",
+  "quranDownloadGateBody": "Save Quran text, translations, transliteration, and tafsir before opening the reading and learning features.",
+  "quranDownloadGateButton": "Download Quran library",
   "quranDownloadRetry": "Retry Quran download",
   "quranDownloadOtherSectionsReady": "Prayer, Du'a, and the other sections are available while you wait.",
   "readQuranTitle": "Read Quran",
@@ -275,7 +278,7 @@
   "quranHubStatOfflineLabel": "Text ready",
   "quranHubStatLanguagesValue": "2",
   "quranHubStatLanguagesLabel": "Languages",
-  "quranHubSectionChooseTitle": "Choose your Quran path",
+  "quranHubSectionChooseTitle": "Your Quran journey",
   "scienceInQuranTitle": "Science in Quran",
   "scienceInQuranDescription": "Explore a concise booklet about signs of creation mentioned in the Quran.",
   "dashboardBookPdf": "PDF booklet",
@@ -892,7 +895,7 @@
   "dashboardNeedTitle": "The Art of Dua Acceptance",
   "dashboardNeedSubtitle": "Quran and Sunnah practices for times of need",
   "dashboardNeedOpen": "View all",
-  "dashboardMercyTitle": "Allah’s Mercy",
+  "dashboardMercyTitle": "ALLAH's Love & Mercy",
   "dashboardMercySubtitle": "Comfort for the heart. Hope for the soul.",
   "dashboardMercyHadithTitle": "Hadith for the Heart",
   "dashboardMercyHadithSubtitle": "Hadith and reflections that bring comfort, hope, and closeness to Allah.",
@@ -1060,11 +1063,11 @@
   "tasbeehTargetRange": "Enter a target from 1 to 999999",
   "tasbeehApplyTarget": "Set target",
   "@tasbeehDeleteConfirm": {"placeholders": {"name": {"type": "String"}}},
-  "dashboardContinueReadingTitle": "Continue Reading",
-  "dashboardContinueReadingStartSubtitle": "Start where you left off",
-  "dashboardContinueReadingStartDetail": "Open your recent surah and continue",
-  "dashboardContinueReadingAyahDetail": "Ayah {ayahNumber} · {surahName}",
-  "@dashboardContinueReadingAyahDetail": {
+  "quranHubContinueReadingTitle": "Continue Reading",
+  "quranHubContinueReadingStartSubtitle": "Start where you left off",
+  "quranHubContinueReadingStartDetail": "Open your recent surah and continue",
+  "quranHubContinueReadingAyahDetail": "Ayah {ayahNumber} · {surahName}",
+  "@quranHubContinueReadingAyahDetail": {
     "placeholders": {
       "ayahNumber": {
         "type": "int"
@@ -1074,12 +1077,11 @@
       }
     }
   },
-  "dashboardQuranLabel": "Quran",
-  "dashboardContinueLearningTitle": "Continue Learning",
-  "dashboardContinueLearningStartSubtitle": "Start Learning",
-  "dashboardContinueLearningStartDetail": "Open learning tracks",
-  "dashboardContinueLearningModuleDetail": "{moduleTitle} · {lessonCount} lessons",
-  "@dashboardContinueLearningModuleDetail": {
+  "quranHubContinueLearningTitle": "Continue Learning",
+  "quranHubContinueLearningStartSubtitle": "Start Learning",
+  "quranHubContinueLearningStartDetail": "Open learning tracks",
+  "quranHubContinueLearningModuleDetail": "{moduleTitle} · {lessonCount} lessons",
+  "@quranHubContinueLearningModuleDetail": {
     "placeholders": {
       "moduleTitle": {
         "type": "String"

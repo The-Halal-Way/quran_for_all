@@ -36,7 +36,6 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   bool _loading = false;
   String? _nextPrayer;
   String? _currentPrayer;
-  bool _warmingUpcomingDays = false;
   int _loadVersion = 0;
 
   Map<String, String>? get prayerTimes => _prayerTimes;
@@ -78,7 +77,6 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
       );
       if (version != _loadVersion) return;
       _applyDashboardData(dashboardData);
-      _scheduleWarmUpcoming(forceRefresh: forceRefresh, version: version);
       _error = '';
       _errorType = PrayerTimesErrorType.none;
       _loading = false;
@@ -142,38 +140,6 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
     } catch (_) {
       // Keep the current local state if the resume sync cannot improve it.
     }
-  }
-
-  void _scheduleWarmUpcoming({
-    required bool forceRefresh,
-    required int version,
-  }) {
-    if (_warmingUpcomingDays) {
-      return;
-    }
-
-    _warmingUpcomingDays = true;
-    unawaited(
-      _loadPrayerTimesUseCase
-          .warmUpcoming(forceRefresh: forceRefresh)
-          .then((dashboardData) {
-            if (dashboardData == null || version != _loadVersion) {
-              return;
-            }
-
-            _applyDashboardData(dashboardData);
-            notifyListeners();
-          })
-          .catchError((_) {
-            // Background completion failure should not displace current data.
-          })
-          .whenComplete(() {
-            _warmingUpcomingDays = false;
-            if (version != _loadVersion && hasData) {
-              _scheduleWarmUpcoming(forceRefresh: false, version: _loadVersion);
-            }
-          }),
-    );
   }
 
   void _applyDashboardData(PrayerDashboardData dashboardData) {

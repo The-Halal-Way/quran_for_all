@@ -5,8 +5,8 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
 
-class DashboardContinueCard extends StatelessWidget {
-  const DashboardContinueCard({
+class QuranContinueCard extends StatelessWidget {
+  const QuranContinueCard({
     super.key,
     required this.title,
     required this.subtitle,
@@ -15,7 +15,10 @@ class DashboardContinueCard extends StatelessWidget {
     required this.accent,
     required this.onTap,
   });
-  final String title, subtitle, detail;
+
+  final String title;
+  final String subtitle;
+  final String detail;
   final IconData icon;
   final Color accent;
   final VoidCallback onTap;
@@ -24,6 +27,8 @@ class DashboardContinueCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final text = AppTheme.text(context);
     final scale = MediaQuery.textScalerOf(context).scale(14) / 14;
+    final dark = Theme.of(context).brightness == Brightness.dark;
+
     return Semantics(
       button: true,
       onTap: onTap,
@@ -40,9 +45,7 @@ class DashboardContinueCard extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Theme.of(context).brightness == Brightness.dark
-                      ? MyColors.primary
-                      : AppThemeColors.light.heroStart,
+                  dark ? MyColors.primary : AppThemeColors.light.heroStart,
                   accent,
                 ],
                 begin: Alignment.bottomLeft,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/utils/app_page_route.dart';
 import '../../../../data/models/mercy/mercy_collection.dart';
@@ -25,7 +24,7 @@ class DashboardMercySection extends StatelessWidget {
           icon: Icons.favorite_rounded,
           accent: colors.coral,
         ),
-        const SizedBox(height: AppSpacing.xs),
+       /* const SizedBox(height: AppSpacing.xs),
         Padding(
           padding: const EdgeInsetsDirectional.only(start: 4),
           child: Text(
@@ -36,7 +35,7 @@ class DashboardMercySection extends StatelessWidget {
               color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
           ),
-        ),
+        ), */
         const SizedBox(height: AppSpacing.sm),
         const DashboardMercyShelf(),
       ],

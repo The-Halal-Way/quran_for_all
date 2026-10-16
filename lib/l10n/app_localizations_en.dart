@@ -413,6 +413,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranDownloadInProgressBody => 'The Quran download is running in the background. Reading will appear here when it is ready.';
 
   @override
+  String get quranDownloadGateTitle => 'Download Quran to begin';
+
+  @override
+  String get quranDownloadGateBody => 'Save Quran text, translations, transliteration, and tafsir before opening the reading and learning features.';
+
+  @override
+  String get quranDownloadGateButton => 'Download Quran library';
+
+  @override
   String get quranDownloadRetry => 'Retry Quran download';
 
   @override
@@ -709,7 +718,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get quranHubStatLanguagesLabel => 'Languages';
 
   @override
-  String get quranHubSectionChooseTitle => 'Choose your Quran path';
+  String get quranHubSectionChooseTitle => 'Your Quran journey';
 
   @override
   String get scienceInQuranTitle => 'Science in Quran';
@@ -2266,7 +2275,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardNeedOpen => 'View all';
 
   @override
-  String get dashboardMercyTitle => 'Allah’s Mercy';
+  String get dashboardMercyTitle => 'ALLAH\'s Love & Mercy';
 
   @override
   String get dashboardMercySubtitle => 'Comfort for the heart. Hope for the soul.';
@@ -2750,33 +2759,30 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tasbeehApplyTarget => 'Set target';
 
   @override
-  String get dashboardContinueReadingTitle => 'Continue Reading';
+  String get quranHubContinueReadingTitle => 'Continue Reading';
 
   @override
-  String get dashboardContinueReadingStartSubtitle => 'Start where you left off';
+  String get quranHubContinueReadingStartSubtitle => 'Start where you left off';
 
   @override
-  String get dashboardContinueReadingStartDetail => 'Open your recent surah and continue';
+  String get quranHubContinueReadingStartDetail => 'Open your recent surah and continue';
 
   @override
-  String dashboardContinueReadingAyahDetail(int ayahNumber, String surahName) {
+  String quranHubContinueReadingAyahDetail(int ayahNumber, String surahName) {
     return 'Ayah $ayahNumber · $surahName';
   }
 
   @override
-  String get dashboardQuranLabel => 'Quran';
+  String get quranHubContinueLearningTitle => 'Continue Learning';
 
   @override
-  String get dashboardContinueLearningTitle => 'Continue Learning';
+  String get quranHubContinueLearningStartSubtitle => 'Start Learning';
 
   @override
-  String get dashboardContinueLearningStartSubtitle => 'Start Learning';
+  String get quranHubContinueLearningStartDetail => 'Open learning tracks';
 
   @override
-  String get dashboardContinueLearningStartDetail => 'Open learning tracks';
-
-  @override
-  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount) {
+  String quranHubContinueLearningModuleDetail(String moduleTitle, int lessonCount) {
     return '$moduleTitle · $lessonCount lessons';
   }
 

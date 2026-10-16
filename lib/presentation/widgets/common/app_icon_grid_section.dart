@@ -86,10 +86,10 @@ class AppIconGridSection extends StatelessWidget {
               ),
           ],
         ),
-        if (subtitle != null) ...[
+       /* if (subtitle != null) ...[
           const SizedBox(height: AppSpacing.xs),
           Text(subtitle!, style: AppTheme.text(context).bodySmall),
-        ],
+        ], */
         const SizedBox(height: AppSpacing.sm),
         LayoutBuilder(
           builder: (context, constraints) {

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
-import 'package:quran_for_all/presentation/viewmodels/learn_quran_viewmodel.dart';
-import 'package:quran_for_all/presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'package:quran_for_all/services/hijri_calendar_service.dart';
 
 import 'models/dashboard_view_data.dart';
@@ -32,54 +30,6 @@ class DashboardViewModel {
         _formatNumber(l10n, hijriDate.year),
       ),
     );
-  }
-
-  DashboardContinueCardsInfo continueCardsInfo({
-    required AppLocalizations l10n,
-    required ReadQuranViewModel readViewModel,
-    required LearnQuranViewModel learnViewModel,
-  }) {
-    final hasLastRead =
-        readViewModel.lastRead != null && readViewModel.lastReadSurah != null;
-    final lastRead = readViewModel.lastRead;
-    final lastReadSurah = readViewModel.lastReadSurah;
-
-    final reading = DashboardContinueCardInfo(
-      subtitle: hasLastRead
-          ? '${lastReadSurah!.nameEnglish} (${lastReadSurah.nameArabic})'
-          : l10n.dashboardContinueReadingStartSubtitle,
-      detail: hasLastRead
-          ? l10n.dashboardContinueReadingAyahDetail(
-              lastRead!.ayahNumber,
-              lastReadSurah!.nameTranslated.isNotEmpty
-                  ? lastReadSurah.nameTranslated
-                  : l10n.dashboardQuranLabel,
-            )
-          : l10n.dashboardContinueReadingStartDetail,
-      hasExistingProgress: hasLastRead,
-      surah: lastReadSurah,
-      ayahNumber: lastRead?.ayahNumber,
-    );
-
-    final nextLesson = learnViewModel.nextLesson;
-    final nextModule = nextLesson != null
-        ? learnViewModel.moduleForLesson(nextLesson.id)
-        : (learnViewModel.modules.isNotEmpty
-              ? learnViewModel.modules.first
-              : null);
-
-    final learning = DashboardContinueLearningInfo(
-      subtitle:
-          nextLesson?.title ?? l10n.dashboardContinueLearningStartSubtitle,
-      detail: nextModule != null
-          ? l10n.dashboardContinueLearningModuleDetail(
-              nextModule.title,
-              nextModule.lessons.length,
-            )
-          : l10n.dashboardContinueLearningStartDetail,
-    );
-
-    return DashboardContinueCardsInfo(reading: reading, learning: learning);
   }
 
   IconData prayerIcon(String prayer) {

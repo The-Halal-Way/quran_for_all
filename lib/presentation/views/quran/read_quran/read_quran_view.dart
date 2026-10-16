@@ -24,8 +24,33 @@ import 'bookmarks_view.dart';
 import 'search_view.dart';
 import 'surah_details_view.dart';
 
-class ReadQuranView extends StatelessWidget {
+class ReadQuranView extends StatefulWidget {
   const ReadQuranView({super.key});
+
+  @override
+  State<ReadQuranView> createState() => _ReadQuranViewState();
+}
+
+class _ReadQuranViewState extends State<ReadQuranView> {
+  bool _requestedLoad = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final quranSetup = context.watch<SplashViewModel?>();
+    final readViewModel = context.read<ReadQuranViewModel>();
+    if ((quranSetup?.hasQuranData ?? true) &&
+        !_requestedLoad &&
+        readViewModel.surahs.isEmpty &&
+        !readViewModel.isLoading) {
+      _requestedLoad = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) {
+          unawaited(readViewModel.load());
+        }
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

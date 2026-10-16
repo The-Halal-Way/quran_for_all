@@ -899,6 +899,24 @@ abstract class AppLocalizations {
   /// **'The Quran download is running in the background. Reading will appear here when it is ready.'**
   String get quranDownloadInProgressBody;
 
+  /// No description provided for @quranDownloadGateTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Download Quran to begin'**
+  String get quranDownloadGateTitle;
+
+  /// No description provided for @quranDownloadGateBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Quran text, translations, transliteration, and tafsir before opening the reading and learning features.'**
+  String get quranDownloadGateBody;
+
+  /// No description provided for @quranDownloadGateButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Download Quran library'**
+  String get quranDownloadGateButton;
+
   /// No description provided for @quranDownloadRetry.
   ///
   /// In en, this message translates to:
@@ -1478,7 +1496,7 @@ abstract class AppLocalizations {
   /// No description provided for @quranHubSectionChooseTitle.
   ///
   /// In en, this message translates to:
-  /// **'Choose your Quran path'**
+  /// **'Your Quran journey'**
   String get quranHubSectionChooseTitle;
 
   /// No description provided for @scienceInQuranTitle.
@@ -4460,7 +4478,7 @@ abstract class AppLocalizations {
   /// No description provided for @dashboardMercyTitle.
   ///
   /// In en, this message translates to:
-  /// **'Allah’s Mercy'**
+  /// **'ALLAH\'s Love & Mercy'**
   String get dashboardMercyTitle;
 
   /// No description provided for @dashboardMercySubtitle.
@@ -5417,59 +5435,53 @@ abstract class AppLocalizations {
   /// **'Set target'**
   String get tasbeehApplyTarget;
 
-  /// No description provided for @dashboardContinueReadingTitle.
+  /// No description provided for @quranHubContinueReadingTitle.
   ///
   /// In en, this message translates to:
   /// **'Continue Reading'**
-  String get dashboardContinueReadingTitle;
+  String get quranHubContinueReadingTitle;
 
-  /// No description provided for @dashboardContinueReadingStartSubtitle.
+  /// No description provided for @quranHubContinueReadingStartSubtitle.
   ///
   /// In en, this message translates to:
   /// **'Start where you left off'**
-  String get dashboardContinueReadingStartSubtitle;
+  String get quranHubContinueReadingStartSubtitle;
 
-  /// No description provided for @dashboardContinueReadingStartDetail.
+  /// No description provided for @quranHubContinueReadingStartDetail.
   ///
   /// In en, this message translates to:
   /// **'Open your recent surah and continue'**
-  String get dashboardContinueReadingStartDetail;
+  String get quranHubContinueReadingStartDetail;
 
-  /// No description provided for @dashboardContinueReadingAyahDetail.
+  /// No description provided for @quranHubContinueReadingAyahDetail.
   ///
   /// In en, this message translates to:
   /// **'Ayah {ayahNumber} · {surahName}'**
-  String dashboardContinueReadingAyahDetail(int ayahNumber, String surahName);
+  String quranHubContinueReadingAyahDetail(int ayahNumber, String surahName);
 
-  /// No description provided for @dashboardQuranLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Quran'**
-  String get dashboardQuranLabel;
-
-  /// No description provided for @dashboardContinueLearningTitle.
+  /// No description provided for @quranHubContinueLearningTitle.
   ///
   /// In en, this message translates to:
   /// **'Continue Learning'**
-  String get dashboardContinueLearningTitle;
+  String get quranHubContinueLearningTitle;
 
-  /// No description provided for @dashboardContinueLearningStartSubtitle.
+  /// No description provided for @quranHubContinueLearningStartSubtitle.
   ///
   /// In en, this message translates to:
   /// **'Start Learning'**
-  String get dashboardContinueLearningStartSubtitle;
+  String get quranHubContinueLearningStartSubtitle;
 
-  /// No description provided for @dashboardContinueLearningStartDetail.
+  /// No description provided for @quranHubContinueLearningStartDetail.
   ///
   /// In en, this message translates to:
   /// **'Open learning tracks'**
-  String get dashboardContinueLearningStartDetail;
+  String get quranHubContinueLearningStartDetail;
 
-  /// No description provided for @dashboardContinueLearningModuleDetail.
+  /// No description provided for @quranHubContinueLearningModuleDetail.
   ///
   /// In en, this message translates to:
   /// **'{moduleTitle} · {lessonCount} lessons'**
-  String dashboardContinueLearningModuleDetail(String moduleTitle, int lessonCount);
+  String quranHubContinueLearningModuleDetail(String moduleTitle, int lessonCount);
 
   /// No description provided for @dashboardRetry.
   ///
