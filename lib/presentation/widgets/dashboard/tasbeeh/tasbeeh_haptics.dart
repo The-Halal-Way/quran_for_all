@@ -15,13 +15,13 @@ class TasbeehHaptics {
       return;
     }
 
-    // A short three-pulse pattern is easy to recognize without looking at the
+    // A three-pulse pattern is easy to recognize without looking at the
     // screen and remains distinct from the light feedback used for each tap.
     unawaited(HapticFeedback.heavyImpact());
-    Future<void>.delayed(const Duration(milliseconds: 100), () {
+    Future<void>.delayed(const Duration(milliseconds: 130), () {
       unawaited(HapticFeedback.mediumImpact());
     });
-    Future<void>.delayed(const Duration(milliseconds: 210), () {
+    Future<void>.delayed(const Duration(milliseconds: 280), () {
       unawaited(HapticFeedback.heavyImpact());
     });
   }

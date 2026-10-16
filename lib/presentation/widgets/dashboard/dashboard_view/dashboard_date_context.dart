@@ -119,16 +119,14 @@ class _DashboardDateContextSurface extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  DashboardCalendarHeader(
-                    info: info,
-                    unreadReminders: unreadReminders,
-                  ),
+                  DashboardCalendarHeader(unreadReminders: unreadReminders),
                   const SizedBox(height: AppSpacing.md),
                   Divider(
                     height: 1,
                     color: colors.outlineVariant.withValues(alpha: .5),
                   ),
                   DashboardIslamicDaySummary(
+                    info: info,
                     entry: entry,
                     todayCount: occasion.todayCount,
                     isToday: isToday,
