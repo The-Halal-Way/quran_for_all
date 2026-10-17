@@ -2529,28 +2529,28 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hadithIntegritySectionTitle => 'Hadith Integrity';
 
   @override
-  String get hadithIntegritySectionSubtitle => 'Verify before you share.';
+  String get hadithIntegritySectionSubtitle => 'Popular forged hadith — verify before you share.';
 
   @override
-  String get hadithIntegritySectionDescription => 'Learn how scholars assess narrations and how to avoid attributing words to the Prophet ﷺ without evidence.';
+  String get hadithIntegritySectionDescription => 'See famous sayings often shared as hadith, understand why they are not authentic, and avoid common misconceptions.';
 
   @override
   String get hadithIntegrityOpen => 'Open';
 
   @override
-  String get hadithIntegrityHeroKicker => 'AUTHENTICITY MATTERS';
+  String get hadithIntegrityHeroKicker => 'POPULAR FORGED HADITH';
 
   @override
-  String get hadithIntegrityHeroTitle => 'Share with confidence';
+  String get hadithIntegrityHeroTitle => 'Spot the claims people share';
 
   @override
-  String get hadithIntegrityHeroDescription => 'Explore popular narrations, verification principles, hadith status terms, common misconceptions, and authentic warnings.';
+  String get hadithIntegrityHeroDescription => 'Read famous sayings often passed around as hadith, see their status and evidence, then learn the common misconceptions behind them.';
 
   @override
   String get hadithIntegrityOverviewLabel => 'Explore the collection';
 
   @override
-  String get hadithIntegrityPopularLabel => 'Popular narrations requiring verification';
+  String get hadithIntegrityPopularLabel => 'Popular forged hadith';
 
   @override
   String hadithIntegrityPartsLabel(String count) {
@@ -2601,7 +2601,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hadithIntegritySourceLabel => 'Source';
 
   @override
-  String get hadithIntegrityEditorialNote => 'Educational content is not a replacement for qualified hadith scholarship. Verify detailed rulings and grading with reliable source works and qualified scholars.';
+  String get hadithIntegrityEditorialNote => 'Start with the popular narrations: some are fabricated, weak, or have no reliable basis. This educational guide is not a replacement for qualified hadith scholarship; verify detailed rulings and grading with reliable sources and scholars.';
 
   @override
   String get hadithIntegritySourceText => 'Reference';

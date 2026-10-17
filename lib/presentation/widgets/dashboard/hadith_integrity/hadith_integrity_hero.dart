@@ -56,7 +56,7 @@ class HadithIntegrityHero extends StatelessWidget {
                       child: const Padding(
                         padding: EdgeInsets.all(AppSpacing.md),
                         child: Icon(
-                          Icons.verified_rounded,
+                          Icons.fact_check_rounded,
                           color: Colors.white,
                           size: 26,
                         ),

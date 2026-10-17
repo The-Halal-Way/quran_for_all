@@ -4982,13 +4982,13 @@ abstract class AppLocalizations {
   /// No description provided for @hadithIntegritySectionSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Verify before you share.'**
+  /// **'Popular forged hadith — verify before you share.'**
   String get hadithIntegritySectionSubtitle;
 
   /// No description provided for @hadithIntegritySectionDescription.
   ///
   /// In en, this message translates to:
-  /// **'Learn how scholars assess narrations and how to avoid attributing words to the Prophet ﷺ without evidence.'**
+  /// **'See famous sayings often shared as hadith, understand why they are not authentic, and avoid common misconceptions.'**
   String get hadithIntegritySectionDescription;
 
   /// No description provided for @hadithIntegrityOpen.
@@ -5000,19 +5000,19 @@ abstract class AppLocalizations {
   /// No description provided for @hadithIntegrityHeroKicker.
   ///
   /// In en, this message translates to:
-  /// **'AUTHENTICITY MATTERS'**
+  /// **'POPULAR FORGED HADITH'**
   String get hadithIntegrityHeroKicker;
 
   /// No description provided for @hadithIntegrityHeroTitle.
   ///
   /// In en, this message translates to:
-  /// **'Share with confidence'**
+  /// **'Spot the claims people share'**
   String get hadithIntegrityHeroTitle;
 
   /// No description provided for @hadithIntegrityHeroDescription.
   ///
   /// In en, this message translates to:
-  /// **'Explore popular narrations, verification principles, hadith status terms, common misconceptions, and authentic warnings.'**
+  /// **'Read famous sayings often passed around as hadith, see their status and evidence, then learn the common misconceptions behind them.'**
   String get hadithIntegrityHeroDescription;
 
   /// No description provided for @hadithIntegrityOverviewLabel.
@@ -5024,7 +5024,7 @@ abstract class AppLocalizations {
   /// No description provided for @hadithIntegrityPopularLabel.
   ///
   /// In en, this message translates to:
-  /// **'Popular narrations requiring verification'**
+  /// **'Popular forged hadith'**
   String get hadithIntegrityPopularLabel;
 
   /// No description provided for @hadithIntegrityPartsLabel.
@@ -5114,7 +5114,7 @@ abstract class AppLocalizations {
   /// No description provided for @hadithIntegrityEditorialNote.
   ///
   /// In en, this message translates to:
-  /// **'Educational content is not a replacement for qualified hadith scholarship. Verify detailed rulings and grading with reliable source works and qualified scholars.'**
+  /// **'Start with the popular narrations: some are fabricated, weak, or have no reliable basis. This educational guide is not a replacement for qualified hadith scholarship; verify detailed rulings and grading with reliable sources and scholars.'**
   String get hadithIntegrityEditorialNote;
 
   /// No description provided for @hadithIntegritySourceText.

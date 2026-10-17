@@ -119,7 +119,7 @@ class _IntegrityTopBar extends StatelessWidget {
                 icon: const Icon(Icons.arrow_back_rounded),
               ),
               const SizedBox(width: AppSpacing.sm),
-              Icon(Icons.verified_rounded, color: accent),
+              Icon(Icons.fact_check_rounded, color: accent),
               const SizedBox(width: AppSpacing.sm),
               Expanded(
                 child: Text(
@@ -157,7 +157,7 @@ class _IntegrityContent extends StatelessWidget {
         const SizedBox(height: AppSpacing.xxl),
         _IntegrityHeading(
           title: l10n.hadithIntegrityPopularLabel,
-          icon: Icons.auto_awesome_rounded,
+          icon: Icons.fact_check_rounded,
           accent: colors.cyan,
         ),
         const SizedBox(height: AppSpacing.md),

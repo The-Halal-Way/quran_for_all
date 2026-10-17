@@ -2529,28 +2529,28 @@ class AppLocalizationsBn extends AppLocalizations {
   String get hadithIntegritySectionTitle => 'হাদিসের বিশুদ্ধতা';
 
   @override
-  String get hadithIntegritySectionSubtitle => 'শেয়ার করার আগে যাচাই করুন।';
+  String get hadithIntegritySectionSubtitle => 'প্রচলিত জাল হাদিস — শেয়ার করার আগে যাচাই করুন।';
 
   @override
-  String get hadithIntegritySectionDescription => 'আলেমরা কীভাবে বর্ণনা যাচাই করেন এবং প্রমাণ ছাড়া নবী ﷺ-এর নামে কথা বলা থেকে কীভাবে বাঁচবেন, তা জানুন।';
+  String get hadithIntegritySectionDescription => 'হাদিস হিসেবে প্রচলিত বিখ্যাত কথাগুলোর প্রকৃত মান জানুন এবং সাধারণ ভুল ধারণা এড়িয়ে চলুন।';
 
   @override
   String get hadithIntegrityOpen => 'খুলুন';
 
   @override
-  String get hadithIntegrityHeroKicker => 'বিশুদ্ধতা গুরুত্বপূর্ণ';
+  String get hadithIntegrityHeroKicker => 'প্রচলিত জাল হাদিস';
 
   @override
-  String get hadithIntegrityHeroTitle => 'নিশ্চিন্তে শেয়ার করুন';
+  String get hadithIntegrityHeroTitle => 'প্রচলিত দাবিগুলো চিনে নিন';
 
   @override
-  String get hadithIntegrityHeroDescription => 'প্রচলিত বর্ণনা, যাচাইয়ের নীতি, হাদিসের মান, সাধারণ ভুল ধারণা এবং মিথ্যা আরোপের বিরুদ্ধে সহিহ সতর্কতা দেখুন।';
+  String get hadithIntegrityHeroDescription => 'হাদিস হিসেবে ছড়িয়ে পড়া বিখ্যাত কথাগুলোর মান ও প্রমাণ দেখুন, তারপর সেগুলোর পেছনের সাধারণ ভুল ধারণাগুলো বুঝুন।';
 
   @override
   String get hadithIntegrityOverviewLabel => 'সংকলনটি দেখুন';
 
   @override
-  String get hadithIntegrityPopularLabel => 'যাচাই প্রয়োজন এমন প্রচলিত বর্ণনা';
+  String get hadithIntegrityPopularLabel => 'প্রচলিত জাল হাদিস';
 
   @override
   String hadithIntegrityPartsLabel(String count) {
@@ -2601,7 +2601,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get hadithIntegritySourceLabel => 'উৎস';
 
   @override
-  String get hadithIntegrityEditorialNote => 'এটি একটি শিক্ষামূলক সংকলন; যোগ্য হাদিসশাস্ত্রের বিকল্প নয়। বিস্তারিত বিধান ও মান নির্ধারণের জন্য নির্ভরযোগ্য গ্রন্থ এবং যোগ্য আলেমের পরামর্শ নিন।';
+  String get hadithIntegrityEditorialNote => 'প্রচলিত বর্ণনাগুলো দিয়ে শুরু করুন: কিছু জাল, দুর্বল বা নির্ভরযোগ্য ভিত্তিহীন। এটি একটি শিক্ষামূলক সংকলন, যোগ্য হাদিসশাস্ত্রের বিকল্প নয়; বিস্তারিত বিধান ও মান নির্ধারণের জন্য নির্ভরযোগ্য উৎস ও যোগ্য আলেমের পরামর্শ নিন।';
 
   @override
   String get hadithIntegritySourceText => 'তথ্যসূত্র';

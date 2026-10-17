@@ -24,7 +24,7 @@ class DashboardHadithIntegritySection extends StatelessWidget {
       children: [
         DashboardSectionTitle(
           title: context.l10n.hadithIntegritySectionTitle,
-          icon: Icons.verified_rounded,
+          icon: Icons.fact_check_rounded,
           accent: _accent,
         ),
         const SizedBox(height: AppSpacing.sm),
@@ -126,8 +126,10 @@ class _IntegrityLaunchCard extends StatelessWidget {
                                 label: context.l10n.hadithIntegrityPopularLabel,
                               ),
                               _IntegrityChip(
-                                icon: Icons.school_rounded,
-                                label: context.l10n.hadithIntegrityGuideLabel,
+                                icon: Icons.warning_amber_rounded,
+                                label: context
+                                    .l10n
+                                    .hadithIntegrityMisconceptionLabel,
                               ),
                             ],
                           ),
