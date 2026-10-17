@@ -4973,6 +4973,162 @@ abstract class AppLocalizations {
   /// **'Books & reflections'**
   String get dashboardSectionBooks;
 
+  /// No description provided for @hadithIntegritySectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith Integrity'**
+  String get hadithIntegritySectionTitle;
+
+  /// No description provided for @hadithIntegritySectionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify before you share.'**
+  String get hadithIntegritySectionSubtitle;
+
+  /// No description provided for @hadithIntegritySectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn how scholars assess narrations and how to avoid attributing words to the Prophet ﷺ without evidence.'**
+  String get hadithIntegritySectionDescription;
+
+  /// No description provided for @hadithIntegrityOpen.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get hadithIntegrityOpen;
+
+  /// No description provided for @hadithIntegrityHeroKicker.
+  ///
+  /// In en, this message translates to:
+  /// **'AUTHENTICITY MATTERS'**
+  String get hadithIntegrityHeroKicker;
+
+  /// No description provided for @hadithIntegrityHeroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Share with confidence'**
+  String get hadithIntegrityHeroTitle;
+
+  /// No description provided for @hadithIntegrityHeroDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore popular narrations, verification principles, hadith status terms, common misconceptions, and authentic warnings.'**
+  String get hadithIntegrityHeroDescription;
+
+  /// No description provided for @hadithIntegrityOverviewLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore the collection'**
+  String get hadithIntegrityOverviewLabel;
+
+  /// No description provided for @hadithIntegrityPopularLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular narrations requiring verification'**
+  String get hadithIntegrityPopularLabel;
+
+  /// No description provided for @hadithIntegrityPartsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} parts'**
+  String hadithIntegrityPartsLabel(String count);
+
+  /// No description provided for @hadithIntegrityResourcesLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Resources'**
+  String get hadithIntegrityResourcesLabel;
+
+  /// No description provided for @hadithIntegrityGuideLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification guide'**
+  String get hadithIntegrityGuideLabel;
+
+  /// No description provided for @hadithIntegrityStatusLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith status explained'**
+  String get hadithIntegrityStatusLabel;
+
+  /// No description provided for @hadithIntegrityMisconceptionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Common misconceptions'**
+  String get hadithIntegrityMisconceptionLabel;
+
+  /// No description provided for @hadithIntegrityWarningsLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Warnings against false attribution'**
+  String get hadithIntegrityWarningsLabel;
+
+  /// No description provided for @hadithIntegrityLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Opening Hadith Integrity…'**
+  String get hadithIntegrityLoading;
+
+  /// No description provided for @hadithIntegrityError.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load Hadith Integrity.'**
+  String get hadithIntegrityError;
+
+  /// No description provided for @hadithIntegrityRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get hadithIntegrityRetry;
+
+  /// No description provided for @hadithIntegrityItemCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} items'**
+  String hadithIntegrityItemCount(String count);
+
+  /// No description provided for @hadithIntegrityPartLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Part {part}'**
+  String hadithIntegrityPartLabel(String part);
+
+  /// No description provided for @hadithIntegrityViewSource.
+  ///
+  /// In en, this message translates to:
+  /// **'View source'**
+  String get hadithIntegrityViewSource;
+
+  /// No description provided for @hadithIntegritySourceUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Source unavailable'**
+  String get hadithIntegritySourceUnavailable;
+
+  /// No description provided for @hadithIntegritySourceLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get hadithIntegritySourceLabel;
+
+  /// No description provided for @hadithIntegrityEditorialNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Educational content is not a replacement for qualified hadith scholarship. Verify detailed rulings and grading with reliable source works and qualified scholars.'**
+  String get hadithIntegrityEditorialNote;
+
+  /// No description provided for @hadithIntegritySourceText.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference'**
+  String get hadithIntegritySourceText;
+
+  /// No description provided for @hadithIntegrityNoItems.
+  ///
+  /// In en, this message translates to:
+  /// **'No entries are available yet.'**
+  String get hadithIntegrityNoItems;
+
   /// No description provided for @tasbeehTitle.
   ///
   /// In en, this message translates to:

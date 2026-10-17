@@ -2266,7 +2266,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardSectionExplore => 'এক্সপ্লোর করুন';
 
   @override
-  String get dashboardNeedTitle => 'দুয়া কবুল হওয়ার শিল্প';
+  String get dashboardNeedTitle => 'দোয়া কবুলের আমল';
 
   @override
   String get dashboardNeedSubtitle => 'প্রয়োজনে কুরআন ও সুন্নাহভিত্তিক আমল';
@@ -2524,6 +2524,90 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dashboardSectionBooks => 'বই ও ভাবনা';
+
+  @override
+  String get hadithIntegritySectionTitle => 'হাদিসের বিশুদ্ধতা';
+
+  @override
+  String get hadithIntegritySectionSubtitle => 'শেয়ার করার আগে যাচাই করুন।';
+
+  @override
+  String get hadithIntegritySectionDescription => 'আলেমরা কীভাবে বর্ণনা যাচাই করেন এবং প্রমাণ ছাড়া নবী ﷺ-এর নামে কথা বলা থেকে কীভাবে বাঁচবেন, তা জানুন।';
+
+  @override
+  String get hadithIntegrityOpen => 'খুলুন';
+
+  @override
+  String get hadithIntegrityHeroKicker => 'বিশুদ্ধতা গুরুত্বপূর্ণ';
+
+  @override
+  String get hadithIntegrityHeroTitle => 'নিশ্চিন্তে শেয়ার করুন';
+
+  @override
+  String get hadithIntegrityHeroDescription => 'প্রচলিত বর্ণনা, যাচাইয়ের নীতি, হাদিসের মান, সাধারণ ভুল ধারণা এবং মিথ্যা আরোপের বিরুদ্ধে সহিহ সতর্কতা দেখুন।';
+
+  @override
+  String get hadithIntegrityOverviewLabel => 'সংকলনটি দেখুন';
+
+  @override
+  String get hadithIntegrityPopularLabel => 'যাচাই প্রয়োজন এমন প্রচলিত বর্ণনা';
+
+  @override
+  String hadithIntegrityPartsLabel(String count) {
+    return '$countটি অংশ';
+  }
+
+  @override
+  String get hadithIntegrityResourcesLabel => 'সহায়ক সূত্র';
+
+  @override
+  String get hadithIntegrityGuideLabel => 'যাচাই নির্দেশিকা';
+
+  @override
+  String get hadithIntegrityStatusLabel => 'হাদিসের মান ব্যাখ্যা';
+
+  @override
+  String get hadithIntegrityMisconceptionLabel => 'প্রচলিত ভুল ধারণা';
+
+  @override
+  String get hadithIntegrityWarningsLabel => 'মিথ্যা আরোপের সতর্কতা';
+
+  @override
+  String get hadithIntegrityLoading => 'হাদিসের বিশুদ্ধতা সংকলন খোলা হচ্ছে…';
+
+  @override
+  String get hadithIntegrityError => 'হাদিসের বিশুদ্ধতা সংকলন খোলা যায়নি।';
+
+  @override
+  String get hadithIntegrityRetry => 'আবার চেষ্টা করুন';
+
+  @override
+  String hadithIntegrityItemCount(String count) {
+    return '$countটি এন্ট্রি';
+  }
+
+  @override
+  String hadithIntegrityPartLabel(String part) {
+    return 'অংশ $part';
+  }
+
+  @override
+  String get hadithIntegrityViewSource => 'উৎস দেখুন';
+
+  @override
+  String get hadithIntegritySourceUnavailable => 'উৎস পাওয়া যায়নি';
+
+  @override
+  String get hadithIntegritySourceLabel => 'উৎস';
+
+  @override
+  String get hadithIntegrityEditorialNote => 'এটি একটি শিক্ষামূলক সংকলন; যোগ্য হাদিসশাস্ত্রের বিকল্প নয়। বিস্তারিত বিধান ও মান নির্ধারণের জন্য নির্ভরযোগ্য গ্রন্থ এবং যোগ্য আলেমের পরামর্শ নিন।';
+
+  @override
+  String get hadithIntegritySourceText => 'তথ্যসূত্র';
+
+  @override
+  String get hadithIntegrityNoItems => 'এখনও কোনো এন্ট্রি পাওয়া যায়নি।';
 
   @override
   String get tasbeehTitle => 'তাসবিহ কাউন্টার';

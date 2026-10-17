@@ -1,0 +1,219 @@
+{
+  "section": {
+    "key": "famous_unauthenticated_hadiths_part_3",
+    "title": {
+      "en": "Famous Statements Not Authenticated as Hadith — Part 3",
+      "bn": "প্রচলিত কিন্তু প্রমাণিত নয় এমন হাদিস — পর্ব ৩"
+    },
+    "description": {
+      "en": "Popular statements that are often attributed to the Prophet ﷺ, but should not be quoted as authenticated hadith without qualification.",
+      "bn": "এখানে এমন কিছু প্রচলিত বক্তব্য দেওয়া হয়েছে, যেগুলো প্রায়ই নবী ﷺ-এর নামে বলা হয়; কিন্তু যথাযথ সতর্কতা ছাড়া এগুলোকে প্রমাণিত হাদিস হিসেবে উদ্ধৃত করা উচিত নয়।"
+    },
+    "editorial_note": {
+      "en": "The labels describe the grading reported by the cited scholarly source. They do not judge the general meaning of every statement; they indicate whether the wording is established as a Prophetic hadith.",
+      "bn": "স্ট্যাটাসে উদ্ধৃত আলেমদের উৎসে উল্লেখিত হাদিসের মান বোঝানো হয়েছে। প্রতিটি বক্তব্যের সাধারণ অর্থ বিচার করা উদ্দেশ্য নয়; বরং বক্তব্যটি নবী ﷺ-এর হাদিস হিসেবে প্রমাণিত কি না, তা বোঝানো হয়েছে।"
+    }
+  },
+  "items": [
+    {
+      "id": 21,
+      "text": {
+        "en": "Everything has a heart, and the heart of the Qur’an is Ya-Sin; whoever reads it, it is as if he has read the Qur’an ten times.",
+        "bn": "প্রত্যেক জিনিসের একটি হৃদয় আছে, আর কুরআনের হৃদয় হলো ইয়াসিন; যে ব্যক্তি এটি পড়ে, সে যেন দশবার কুরআন পড়ল।"
+      },
+      "status": {
+        "code": "weak_or_fabricated",
+        "en": "Not authentic; scholars have judged the reports for this wording to be weak or fabricated.",
+        "bn": "প্রমাণিত সহিহ নয়; আলেমরা এই বক্তব্যের বর্ণনাগুলোকে দুর্বল বা জাল বলেছেন।"
+      },
+      "explanation": {
+        "en": "Surah Ya-Sin is part of the Qur’an and may be recited like any other surah. However, this specific promise of tenfold Qur’an-recitation reward is not established in an authentic hadith.",
+        "bn": "সূরা ইয়াসিন কুরআনের অংশ এবং অন্য যেকোনো সূরার মতো তা তিলাওয়াত করা যায়। তবে দশবার কুরআন পড়ার সমান সওয়াবের এই নির্দিষ্ট প্রতিশ্রুতি কোনো সহিহ হাদিসে প্রমাণিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Virtues of Surah Yasin: What Are They?",
+        "url": "https://islamqa.info/en/answers/75894"
+      }
+    },
+    {
+      "id": 22,
+      "text": {
+        "en": "Ya-Sin is for that for which it is read.",
+        "bn": "যে উদ্দেশ্যে ইয়াসিন পড়া হয়, ইয়াসিন সেই উদ্দেশ্য পূরণ করে।"
+      },
+      "status": {
+        "code": "no_basis",
+        "en": "No reliable basis has been found for attributing this wording to the Prophet ﷺ.",
+        "bn": "এই বক্তব্যটি নবী ﷺ-এর নামে বলার নির্ভরযোগ্য কোনো ভিত্তি পাওয়া যায়নি।"
+      },
+      "explanation": {
+        "en": "A person may make du‘a and recite Qur’an seeking Allah’s reward, but this fixed formula should not be presented as a Prophetic guarantee.",
+        "bn": "আল্লাহর সওয়াবের আশায় কুরআন তিলাওয়াত ও দোয়া করা যায়; তবে এই নির্দিষ্ট বাক্যকে নবী ﷺ-এর প্রতিশ্রুতি হিসেবে উপস্থাপন করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Virtues of Surah Yasin: What Are They?",
+        "url": "https://islamqa.info/en/answers/75894"
+      }
+    },
+    {
+      "id": 23,
+      "text": {
+        "en": "Whoever reads Surah Ya-Sin in one night will be forgiven in the morning.",
+        "bn": "যে ব্যক্তি এক রাতে সূরা ইয়াসিন পড়বে, সকালে তাকে ক্ষমা করে দেওয়া হবে।"
+      },
+      "status": {
+        "code": "weak_or_not_authentic",
+        "en": "Not established as an authentic hadith.",
+        "bn": "সহিহ হাদিস হিসেবে প্রমাণিত নয়।"
+      },
+      "explanation": {
+        "en": "The promise of automatic forgiveness for reading this surah on one particular night is not supported by an authentic chain according to the cited scholarly assessment.",
+        "bn": "এক নির্দিষ্ট রাতে এই সূরা পড়লেই স্বয়ংক্রিয়ভাবে ক্ষমা পাওয়ার এই প্রতিশ্রুতি উদ্ধৃত আলেমদের মূল্যায়ন অনুযায়ী সহিহ সনদে প্রমাণিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Virtues of Surah Yasin: What Are They?",
+        "url": "https://islamqa.info/en/answers/75894"
+      }
+    },
+    {
+      "id": 24,
+      "text": {
+        "en": "Whoever reads Surah al-Waqi‘ah every night, poverty will never afflict him.",
+        "bn": "যে ব্যক্তি প্রতি রাতে সূরা আল-ওয়াকিয়াহ পড়বে, দারিদ্র্য তাকে কখনো স্পর্শ করবে না।"
+      },
+      "status": {
+        "code": "weak",
+        "en": "The narration is weak and should not be quoted as an assured Prophetic promise.",
+        "bn": "বর্ণনাটি দুর্বল; এটিকে নিশ্চিত নববী প্রতিশ্রুতি হিসেবে উদ্ধৃত করা উচিত নয়।"
+      },
+      "explanation": {
+        "en": "Reciting the Qur’an is virtuous, but this specific guarantee of protection from poverty is not established through an authentic hadith.",
+        "bn": "কুরআন তিলাওয়াত ফজিলতপূর্ণ; তবে দারিদ্র্য থেকে রক্ষার এই নির্দিষ্ট নিশ্চয়তা কোনো সহিহ হাদিসে প্রমাণিত নয়।"
+      },
+      "source": {
+        "title": "IslamWeb: Virtues of Surahs",
+        "url": "https://www.islamweb.net/en/printfatwa.php?id=84157"
+      }
+    },
+    {
+      "id": 25,
+      "text": {
+        "en": "Ten protect against ten: al-Fatihah protects from Allah’s anger; Ya-Sin from thirst; al-Waqi‘ah from poverty; al-Dukhan from the terrors of the Day of Resurrection; al-Mulk from the punishment of the grave; al-Kawthar from disputes; al-Kafirun from disbelief at death; al-Ikhlas from hypocrisy; al-Falaq from envy; and al-Nas from whispers.",
+        "bn": "দশটি দশটি বিষয় থেকে রক্ষা করে: আল-ফাতিহা আল্লাহর ক্রোধ থেকে; ইয়াসিন তৃষ্ণা থেকে; আল-ওয়াকিয়াহ দারিদ্র্য থেকে; আদ-দুখান কিয়ামতের ভয়াবহতা থেকে; আল-মুলক কবরের শাস্তি থেকে; আল-কাওসার বিবাদ থেকে; আল-কাফিরুন মৃত্যুর সময় কুফরি থেকে; আল-ইখলাস মুনাফিকি থেকে; আল-ফালাক হিংসা থেকে; আর আন-নাস কুমন্ত্রণা থেকে রক্ষা করে।"
+      },
+      "status": {
+        "code": "baseless",
+        "en": "This collection is baseless as a Prophetic hadith.",
+        "bn": "এই পুরো সংকলনটি নবী ﷺ-এর হাদিস হিসেবে ভিত্তিহীন।"
+      },
+      "explanation": {
+        "en": "The individual surahs may be recited as Qur’an, but these assigned protections should not be attributed to the Prophet ﷺ without authentic evidence.",
+        "bn": "প্রতিটি সূরা কুরআনের অংশ হিসেবে তিলাওয়াত করা যায়; কিন্তু এভাবে নির্দিষ্ট সুরক্ষা আরোপ করে তা নবী ﷺ-এর নামে বলা সহিহ দলিল ছাড়া উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: A baseless hadith about the virtues of some surahs",
+        "url": "https://islamqa.info/en/answers/82800"
+      }
+    },
+    {
+      "id": 26,
+      "text": {
+        "en": "The hadith promising special reward for Salat al-Ragha’ib: twelve rak‘ahs prayed on the first Friday night of Rajab.",
+        "bn": "সালাতুর রাগায়িবের বিশেষ সওয়াবের হাদিস: রজব মাসের প্রথম জুমার রাতে বারো রাকাত নামাজ পড়া।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "The hadith describing this special prayer and its rewards is fabricated; the prayer is not an established Sunnah.",
+        "bn": "এই বিশেষ নামাজ ও এর সওয়াব বর্ণনাকারী হাদিস জাল; এই নামাজ প্রমাণিত সুন্নাহ নয়।"
+      },
+      "explanation": {
+        "en": "General voluntary prayer is encouraged, but assigning a special number, night, and promised reward requires authentic evidence.",
+        "bn": "সাধারণ নফল নামাজ উৎসাহিত; তবে নির্দিষ্ট সংখ্যা, রাত ও প্রতিশ্রুত সওয়াব নির্ধারণ করতে সহিহ দলিল প্রয়োজন।"
+      },
+      "source": {
+        "title": "IslamQA: Is Salat al-Raghaib Sunnah?",
+        "url": "https://islamqa.info/en/answers/60180"
+      }
+    },
+    {
+      "id": 27,
+      "text": {
+        "en": "I was an unknown treasure and I wanted to be known, so I created mankind so that I could be known.",
+        "bn": "আমি এক অজ্ঞাত গুপ্তধন ছিলাম; পরিচিত হতে চাইলাম, তাই মানুষ সৃষ্টি করলাম, যেন তারা আমাকে চিনতে পারে।"
+      },
+      "status": {
+        "code": "not_a_hadith",
+        "en": "This is not established as a hadith and has no known authentic chain to the Prophet ﷺ.",
+        "bn": "এটি হাদিস হিসেবে প্রমাণিত নয় এবং নবী ﷺ পর্যন্ত পৌঁছায় এমন কোনো নির্ভরযোগ্য সনদ জানা নেই।"
+      },
+      "explanation": {
+        "en": "Its wording is common in devotional literature, but popularity does not make it a Prophetic narration. Do not quote it as a hadith.",
+        "bn": "আধ্যাত্মিক লেখায় বাক্যটি প্রচলিত; কিন্তু প্রচলিত হওয়া এটিকে নবী ﷺ-এর হাদিস বানায় না। এটিকে হাদিস হিসেবে উদ্ধৃত করবেন না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 28,
+      "text": {
+        "en": "The heart is the house of the Lord.",
+        "bn": "হৃদয় হলো রবের ঘর।"
+      },
+      "status": {
+        "code": "no_basis",
+        "en": "This wording has no established basis as a Prophetic hadith.",
+        "bn": "এই বাক্যটি নবী ﷺ-এর হাদিস হিসেবে প্রমাণিত ভিত্তিহীন।"
+      },
+      "explanation": {
+        "en": "A spiritually meaningful phrase should not be presented as revelation or as a hadith unless its source is verified.",
+        "bn": "আধ্যাত্মিকভাবে অর্থবহ মনে হলেও উৎস যাচাই ছাড়া এই বাক্যকে ওহি বা হাদিস হিসেবে উপস্থাপন করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 29,
+      "text": {
+        "en": "Allah created the intellect and said to it: ‘Come,’ and it came; then He said: ‘Go,’ and it went. Allah said: ‘By My might, I have created nothing more noble than you.’",
+        "bn": "আল্লাহ বিবেক সৃষ্টি করে তাকে বললেন, ‘এসো’; সে এলো। এরপর বললেন, ‘যাও’; সে চলে গেল। আল্লাহ বললেন, ‘আমার ইজ্জতের কসম, তোমার চেয়ে মর্যাদাবান কিছু আমি সৃষ্টি করিনি।’"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "This narration is judged fabricated and is not an authentic hadith.",
+        "bn": "এই বর্ণনাটি জাল হিসেবে চিহ্নিত; এটি সহিহ হাদিস নয়।"
+      },
+      "explanation": {
+        "en": "The importance of sound reason is recognized in Islam, but this dramatic dialogue must not be attributed to the Prophet ﷺ as a hadith.",
+        "bn": "ইসলামে সুস্থ বিবেকের গুরুত্ব স্বীকৃত; তবে এই সংলাপকে নবী ﷺ-এর হাদিস হিসেবে উদ্ধৃত করা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 30,
+      "text": {
+        "en": "Whoever visits me and my father Ibrahim in one year will enter Paradise.",
+        "bn": "যে ব্যক্তি এক বছরে আমাকে ও আমার পিতা ইবরাহিমকে জিয়ারত করবে, সে জান্নাতে প্রবেশ করবে।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "This report is described as a fabricated lie and is not an authentic hadith.",
+        "bn": "এই বর্ণনাকে জাল মিথ্যা বলা হয়েছে; এটি সহিহ হাদিস নয়।"
+      },
+      "explanation": {
+        "en": "A promise of Paradise tied to this specific visit has no reliable Prophetic proof in the cited source.",
+        "bn": "এই নির্দিষ্ট জিয়ারতের সঙ্গে জান্নাতের প্রতিশ্রুতি যুক্ত করার কোনো নির্ভরযোগ্য নববী প্রমাণ উদ্ধৃত উৎসে নেই।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    }
+  ]
+}

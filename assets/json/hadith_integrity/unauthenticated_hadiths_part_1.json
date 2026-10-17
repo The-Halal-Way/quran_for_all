@@ -1,0 +1,227 @@
+{
+  "section": {
+    "key": "famous_unauthenticated_hadiths",
+    "title": {
+      "en": "Famous Statements Not Authenticated as Hadith",
+      "bn": "প্রচলিত কিন্তু প্রমাণিত নয় এমন হাদিস"
+    },
+    "description": {
+      "en": "Well-known statements commonly attributed to the Prophet ﷺ, with their hadith status and verification notes.",
+      "bn": "নবী ﷺ-এর নামে প্রচলিত পরিচিত বাণী, তাদের হাদিসের মান এবং যাচাই-সংক্রান্ত তথ্য।"
+    },
+    "editorial_note": {
+      "en": "‘Fabricated’ is used only where a source explicitly describes the report as fabricated or a lie. ‘Not established’ and ‘weak’ do not automatically mean fabricated.",
+      "bn": "কোনো সূত্র স্পষ্টভাবে ‘জাল’ বা ‘মিথ্যা’ বললে কেবল তখনই ‘জাল’ শব্দটি ব্যবহার করা হয়েছে। ‘প্রমাণিত নয়’ বা ‘দুর্বল’ মানেই স্বয়ংক্রিয়ভাবে জাল নয়।"
+    }
+  },
+  "items": [
+    {
+      "id": 1,
+      "arabic": "حب الوطن من الإيمان",
+      "text": {
+        "en": "Love of one’s homeland is part of faith.",
+        "bn": "দেশপ্রেম ঈমানের অংশ।"
+      },
+      "status": {
+        "code": "not_established",
+        "en": "Not established as a hadith. Some scholars have classified the attribution as fabricated, while others say it has no reliable basis.",
+        "bn": "হাদিস হিসেবে প্রমাণিত নয়। কিছু আলেম এটিকে জাল হিসেবে উল্লেখ করেছেন; অন্যরা বলেছেন এর কোনো নির্ভরযোগ্য ভিত্তি নেই।"
+      },
+      "explanation": {
+        "en": "Loving one’s homeland may be a natural and permissible feeling, but this popular sentence should not be attributed to the Prophet ﷺ.",
+        "bn": "নিজ দেশের প্রতি ভালোবাসা স্বাভাবিক ও বৈধ অনুভূতি হতে পারে; তবে এই প্রচলিত বাক্যটি নবী ﷺ-এর নামে বলা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Is there any hadith stating ‘Love your country is part of faith’?",
+        "url": "https://islamqa.org/hanafi/askimam/103217/is-there-any-hadith-stating-love-your-country-in-which-you-live/"
+      }
+    },
+    {
+      "id": 2,
+      "arabic": "اختلاف أمتي رحمة",
+      "text": {
+        "en": "The differences of my Ummah are a mercy.",
+        "bn": "আমার উম্মতের মতভেদ রহমত।"
+      },
+      "status": {
+        "code": "not_authentic",
+        "en": "Not authentic as a hadith; it is not established as a statement of the Prophet ﷺ.",
+        "bn": "হাদিস হিসেবে সহিহ নয়; এটি নবী ﷺ-এর বক্তব্য হিসেবে প্রমাণিত নয়।"
+      },
+      "explanation": {
+        "en": "The wording is widely circulated, but hadith scholars did not establish it as a Prophetic narration. Scholarly disagreement on a genuine matter should still be judged by evidence; this saying cannot be used as proof by itself.",
+        "bn": "বাক্যটি ব্যাপকভাবে প্রচলিত হলেও হাদিসবিশারদরা এটিকে নবী ﷺ-এর হাদিস হিসেবে প্রমাণিত করেননি। কোনো গ্রহণযোগ্য বিষয়ে আলেমদের মতভেদ হলে তা প্রমাণের আলোকে বিচার করতে হবে; এই বাক্যটি নিজে কোনো দলিল নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Ruling on the hadith ‘The differences of my Ummah are a mercy’",
+        "url": "https://e-quran.com/qa/ar/fatwa/e3851576528ea677/"
+      }
+    },
+    {
+      "id": 3,
+      "arabic": "اطلبوا العلم ولو في الصين",
+      "text": {
+        "en": "Seek knowledge, even if you have to go to China.",
+        "bn": "জ্ঞান অর্জন করো, প্রয়োজনে চীন পর্যন্ত যেতে হলেও।"
+      },
+      "status": {
+        "code": "weak_not_authentic",
+        "en": "A weak narration; it is not authentic from the Prophet ﷺ.",
+        "bn": "দুর্বল বর্ণনা; নবী ﷺ থেকে এটি সহিহভাবে প্রমাণিত নয়।"
+      },
+      "explanation": {
+        "en": "The encouragement to seek beneficial knowledge is sound, but this particular wording should not be presented as an authentic hadith.",
+        "bn": "উপকারী জ্ঞান অর্জনের উৎসাহ ইসলামে প্রতিষ্ঠিত; কিন্তু এই নির্দিষ্ট বাক্যটি সহিহ হাদিস হিসেবে উপস্থাপন করা উচিত নয়।"
+      },
+      "source": {
+        "title": "Islamweb: Seek knowledge even if it was in China",
+        "url": "https://www.islamweb.net/en/fatwa/92268/seek-knowledge-even-if-it-was-in-china"
+      }
+    },
+    {
+      "id": 4,
+      "arabic": "النظافة من الإيمان",
+      "text": {
+        "en": "Cleanliness is part of faith.",
+        "bn": "পরিচ্ছন্নতা ঈমানের অংশ।"
+      },
+      "status": {
+        "code": "not_established_in_this_wording",
+        "en": "This exact wording is not established as a Prophetic hadith. Do not confuse it with the authentic hadith: ‘Purification is half of faith.’",
+        "bn": "এই নির্দিষ্ট শব্দগুলোতে এটি নবী ﷺ-এর হাদিস হিসেবে প্রমাণিত নয়। এটি সহিহ হাদিস ‘পবিত্রতা ঈমানের অর্ধেক’-এর সঙ্গে গুলিয়ে ফেলবেন না।"
+      },
+      "explanation": {
+        "en": "Cleanliness is encouraged in Islam, but the popular sentence should be quoted as a general reminder, not attributed to the Prophet ﷺ without qualification.",
+        "bn": "ইসলামে পরিচ্ছন্নতার গুরুত্ব আছে; তবে এই প্রচলিত বাক্যটি নবী ﷺ-এর নামে নিশ্চিতভাবে উদ্ধৃত না করে সাধারণ উপদেশ হিসেবে বলা উচিত।"
+      },
+      "source": {
+        "title": "IslamOnline: Is ‘Cleanliness is part of faith’ a hadith?",
+        "url": "https://fiqh.islamonline.net/%D8%A7%D9%87%D8%AA%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85-%D8%A8%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D9%81%D8%A9-%D9%88%D9%87%D9%84-%D9%87%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D9%8A/"
+      }
+    },
+    {
+      "id": 5,
+      "arabic": "الفقر فخري",
+      "text": {
+        "en": "Poverty is my pride, and I boast of it.",
+        "bn": "দারিদ্র্য আমার গর্ব, আর আমি তা নিয়ে গর্ব করি।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "Fabricated; hadith scholars describe it as a lie and it is not known in the recognised hadith books.",
+        "bn": "জাল; হাদিসবিশারদরা এটিকে মিথ্যা বলেছেন এবং স্বীকৃত হাদিসগ্রন্থে এর নির্ভরযোগ্য ভিত্তি নেই।"
+      },
+      "explanation": {
+        "en": "This sentence is frequently circulated in spiritual writings, but it must not be quoted as a saying of the Prophet ﷺ.",
+        "bn": "বাক্যটি আধ্যাত্মিক লেখায় প্রায়ই দেখা যায়; কিন্তু এটিকে নবী ﷺ-এর বক্তব্য হিসেবে উদ্ধৃত করা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated narrations attributed to the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 6,
+      "arabic": "أنا مدينة العلم وعلي بابها",
+      "text": {
+        "en": "I am the city of knowledge, and Ali is its gate.",
+        "bn": "আমি জ্ঞানের নগরী, আর আলী তার দরজা।"
+      },
+      "status": {
+        "code": "weak_or_fabricated",
+        "en": "Scholars have judged it weak; some hadith scholars classify it as fabricated.",
+        "bn": "আলেমরা এটিকে দুর্বল বলেছেন; কিছু হাদিসবিশারদ এটিকে জাল হিসেবে শ্রেণিবদ্ধ করেছেন।"
+      },
+      "explanation": {
+        "en": "Because its authenticity is disputed and the stronger hadith criticism rejects it, it should not be presented as an authentic hadith.",
+        "bn": "এর সনদ নিয়ে আপত্তি আছে এবং শক্তিশালী হাদিস সমালোচনায় এটি গ্রহণযোগ্য নয়; তাই এটিকে সহিহ হাদিস হিসেবে উপস্থাপন করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated narrations attributed to the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 7,
+      "arabic": "اعمل لدنياك كأنك تعيش أبداً واعمل لآخرتك كأنك تموت غداً",
+      "text": {
+        "en": "Work for your worldly life as if you will live forever, and work for your Hereafter as if you will die tomorrow.",
+        "bn": "দুনিয়ার জন্য এমনভাবে কাজ করো যেন তুমি চিরকাল বেঁচে থাকবে, আর আখিরাতের জন্য এমনভাবে কাজ করো যেন তুমি আগামীকাল মারা যাবে।"
+      },
+      "status": {
+        "code": "not_prophetic",
+        "en": "Not authentic as a hadith of the Prophet ﷺ. It is reported as a statement attributed to Abdullah ibn Amr ibn al-As.",
+        "bn": "নবী ﷺ-এর হাদিস হিসেবে সহিহ নয়। এটি আবদুল্লাহ ইবন আমর ইবনুল আসের বক্তব্য হিসেবে বর্ণিত হয়েছে।"
+      },
+      "explanation": {
+        "en": "The wording may express a reasonable life lesson, but the attribution to the Prophet ﷺ is incorrect.",
+        "bn": "বাক্যটি একটি যুক্তিসঙ্গত জীবন-উপদেশ হতে পারে; কিন্তু এটি নবী ﷺ-এর নামে বলা সঠিক নয়।"
+      },
+      "source": {
+        "title": "Islamweb: Work for your worldly life as if you are living forever",
+        "url": "https://www.islamweb.net/en/fatwa/91760/%E2%80%9Cwork-for-your-worldly-life-as-if-you-are-living-forever%E2%80%9D"
+      }
+    },
+    {
+      "id": 8,
+      "arabic": "الجنة تحت أقدام الأمهات",
+      "text": {
+        "en": "Paradise is beneath the feet of mothers.",
+        "bn": "মায়েদের পায়ের নিচে জান্নাত।"
+      },
+      "status": {
+        "code": "not_authentic_in_this_wording",
+        "en": "This exact wording is not confirmed as a hadith. A similar meaning is established in authentic narrations about serving and honouring one’s mother.",
+        "bn": "এই নির্দিষ্ট শব্দগুলো হাদিস হিসেবে প্রমাণিত নয়। তবে মায়ের সেবা ও সম্মান করার বিষয়ে সহিহ বর্ণনায় একই অর্থ পাওয়া যায়।"
+      },
+      "explanation": {
+        "en": "The meaning is sound when understood as encouragement to serve one’s mother, but the popular wording should not be attributed to the Prophet ﷺ as-is.",
+        "bn": "মায়ের সেবার উৎসাহ হিসেবে অর্থটি সঠিক; তবে প্রচলিত বাক্যটি হুবহু নবী ﷺ-এর হাদিস হিসেবে বলা উচিত নয়।"
+      },
+      "source": {
+        "title": "Islamweb: Paradise is under the feet of mothers",
+        "url": "https://www.islamweb.net/en/fatwa/91756/paradise-is-under-the-feet-of-mothers-learning-other-peoples-language"
+      }
+    },
+    {
+      "id": 9,
+      "text": {
+        "en": "The first ten days of Ramadan are mercy, the middle ten are forgiveness, and the last ten are freedom from the Fire.",
+        "bn": "রমজানের প্রথম দশ দিন রহমত, মাঝের দশ দিন মাগফিরাত এবং শেষের দশ দিন জাহান্নাম থেকে মুক্তির সময়।"
+      },
+      "status": {
+        "code": "not_established",
+        "en": "The division of Ramadan into three fixed ten-day stages is not established by an authentic hadith. The specific du'as assigned to each stage also have no sound basis.",
+        "bn": "রমজানকে তিনটি নির্দিষ্ট দশকে ভাগ করার বিষয়টি কোনো সহিহ হাদিস দ্বারা প্রমাণিত নয়। প্রতিটি দশকের জন্য নির্দিষ্ট দোয়াগুলোরও সহিহ ভিত্তি নেই।"
+      },
+      "explanation": {
+        "en": "Ramadan is a month of mercy, forgiveness, worship, and protection from the Fire throughout the entire month; these virtues should not be restricted to separate ten-day periods without evidence.",
+        "bn": "পুরো রমজানই রহমত, ক্ষমা, ইবাদত ও জাহান্নাম থেকে মুক্তির মাস; প্রমাণ ছাড়া এই গুণগুলোকে আলাদা দশকে সীমাবদ্ধ করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Is there a specific du'a for each part of Ramadan?",
+        "url": "https://islamqa.info/en/answers/220647"
+      }
+    },
+    {
+      "id": 10,
+      "text": {
+        "en": "My heaven and My earth cannot contain Me, but the heart of My believing servant contains Me.",
+        "bn": "আমার আসমান ও জমিন আমাকে ধারণ করতে পারে না, কিন্তু আমার মুমিন বান্দার হৃদয় আমাকে ধারণ করে।"
+      },
+      "status": {
+        "code": "fabricated_or_baseless",
+        "en": "No chain is known for this as a Prophetic hadith; hadith scholars describe it as false or fabricated.",
+        "bn": "নবী ﷺ-এর হাদিস হিসেবে এর কোনো পরিচিত সনদ নেই; হাদিসবিশারদরা এটিকে মিথ্যা বা জাল বলেছেন।"
+      },
+      "explanation": {
+        "en": "The intended meaning may refer to love and knowledge of Allah in the believer’s heart, but this wording must not be attributed to Allah as a hadith qudsi or to the Prophet ﷺ.",
+        "bn": "এর উদ্দেশ্য হয়তো মুমিনের হৃদয়ে আল্লাহর ভালোবাসা ও জ্ঞান থাকা বোঝানো; তবে এই বাক্যটি হাদিসে কুদসি বা নবী ﷺ-এর হাদিস হিসেবে বলা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated narrations attributed to the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    }
+  ]
+}

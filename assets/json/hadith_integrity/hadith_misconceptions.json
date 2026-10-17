@@ -1,0 +1,301 @@
+{
+  "section": {
+    "key": "hadith_misconceptions",
+    "title": {
+      "en": "Common Hadith Misconceptions",
+      "bn": "হাদিস সম্পর্কে প্রচলিত ভুল ধারণা"
+    },
+    "subtitle": {
+      "en": "A popular quote is not automatically a Prophetic hadith.",
+      "bn": "কোনো কথা প্রচলিত হলেই তা নবী ﷺ-এর হাদিস হয়ে যায় না।"
+    },
+    "description": {
+      "en": "Simple corrections for common mistakes people make when reading, quoting, or sharing hadith online.",
+      "bn": "অনলাইনে হাদিস পড়া, উদ্ধৃত করা বা শেয়ার করার সময় মানুষ যে সাধারণ ভুলগুলো করে, সেগুলোর সহজ সংশোধন।"
+    },
+    "editorial_note": {
+      "en": "These are educational explanations. Detailed rulings and hadith grading should be referred to qualified scholars and reliable source works.",
+      "bn": "এগুলো শিক্ষামূলক ব্যাখ্যা। বিস্তারিত শরয়ি সিদ্ধান্ত ও হাদিসের মান নির্ধারণের জন্য যোগ্য আলেম ও নির্ভরযোগ্য উৎসগ্রন্থের সাহায্য নিন।"
+    }
+  },
+  "items": [
+    {
+      "id": 1,
+      "category": "popularity",
+      "misconception": {
+        "en": "If a quote is famous among Muslims, it must be a hadith.",
+        "bn": "মুসলিমদের মধ্যে কোনো কথা খুব প্রচলিত হলে তা অবশ্যই হাদিস।"
+      },
+      "correction": {
+        "en": "Popularity proves that a statement is widely circulated, not that the Prophet ﷺ said it. Many famous sayings are from scholars, later writers, or unknown sources.",
+        "bn": "প্রচলিত হওয়া শুধু প্রমাণ করে যে কথাটি ব্যাপকভাবে ছড়িয়েছে; নবী ﷺ বলেছেন—এটি প্রমাণ করে না। অনেক বিখ্যাত কথা আলেম, পরবর্তী লেখক বা অজ্ঞাত উৎসের।"
+      },
+      "user_action": {
+        "en": "Look for the original source and grading before attributing it to the Prophet ﷺ.",
+        "bn": "নবী ﷺ-এর নামে বলার আগে মূল উৎস ও হাদিসের মান খুঁজে দেখুন।"
+      }
+    },
+    {
+      "id": 2,
+      "category": "meaning",
+      "misconception": {
+        "en": "If the meaning is good, the statement can be called a hadith.",
+        "bn": "কথাটির অর্থ ভালো হলে সেটিকে হাদিস বলা যায়।"
+      },
+      "correction": {
+        "en": "A true or beautiful meaning does not prove that the Prophet ﷺ said those exact words. The meaning and attribution must be checked separately.",
+        "bn": "অর্থ সত্য বা সুন্দর হলেই প্রমাণ হয় না যে নবী ﷺ ঠিক এই শব্দগুলো বলেছেন। বক্তব্যের অর্থ ও কার দিকে সম্বন্ধিত—দুটো আলাদাভাবে যাচাই করতে হবে।"
+      },
+      "user_action": {
+        "en": "If the source is unknown, present it as a saying or reflection, not as a hadith.",
+        "bn": "উৎস জানা না থাকলে এটিকে হাদিস না বলে সাধারণ উক্তি বা ভাবনা হিসেবে উপস্থাপন করুন।"
+      }
+    },
+    {
+      "id": 3,
+      "category": "book_reference",
+      "misconception": {
+        "en": "If a report appears in a hadith book, it is automatically authentic.",
+        "bn": "কোনো হাদিসগ্রন্থে বর্ণনা থাকলেই তা স্বয়ংক্রিয়ভাবে সহিহ।"
+      },
+      "correction": {
+        "en": "Hadith collections contain reports with different levels of strength. A book reference identifies where a report appears; it does not by itself settle its authenticity.",
+        "bn": "হাদিসগ্রন্থে বিভিন্ন মানের বর্ণনা থাকতে পারে। গ্রন্থের রেফারেন্স শুধু জানায় যে বর্ণনাটি কোথায় আছে; একাই তার সহিহতা প্রমাণ করে না।"
+      },
+      "user_action": {
+        "en": "Check the scholar’s grading and the source’s explanation.",
+        "bn": "আলেমের মূল্যায়ন ও উৎসের ব্যাখ্যা যাচাই করুন।"
+      }
+    },
+    {
+      "id": 4,
+      "category": "status",
+      "misconception": {
+        "en": "Weak, fabricated, and not authentic all mean exactly the same thing.",
+        "bn": "দুর্বল, জাল ও সহিহ নয়—এই তিনটির অর্থ একই।"
+      },
+      "correction": {
+        "en": "They are different labels. Weak means the report has a problem affecting its reliability; fabricated means it was invented; not authentic means it has not been established as authentic and may require more specific classification.",
+        "bn": "এগুলো আলাদা মান। দুর্বল মানে নির্ভরযোগ্যতায় সমস্যা আছে; জাল মানে বানানো; আর সহিহ নয় মানে সহিহ হিসেবে প্রমাণিত নয়—এর আরও নির্দিষ্ট শ্রেণিবিভাগ প্রয়োজন হতে পারে।"
+      },
+      "user_action": {
+        "en": "Use the exact status given by the cited scholarly source.",
+        "bn": "উদ্ধৃত আলেমি উৎসে দেওয়া সঠিক মানটি ব্যবহার করুন।"
+      }
+    },
+    {
+      "id": 5,
+      "category": "attribution",
+      "misconception": {
+        "en": "A Companion’s statement is the same as a Prophetic hadith.",
+        "bn": "সাহাবির বক্তব্য ও নবী ﷺ-এর হাদিস একই বিষয়।"
+      },
+      "correction": {
+        "en": "A Companion’s report can be valuable, but it should be identified as mawquf rather than presented as a statement of the Prophet ﷺ.",
+        "bn": "সাহাবির বর্ণনা মূল্যবান হতে পারে; তবে সেটিকে মাওকূফ হিসেবে চিহ্নিত করতে হবে, নবী ﷺ-এর বক্তব্য হিসেবে নয়।"
+      },
+      "user_action": {
+        "en": "Show the actual speaker or narrator clearly.",
+        "bn": "প্রকৃত বক্তা বা বর্ণনাকারীর পরিচয় স্পষ্টভাবে দেখান।"
+      }
+    },
+    {
+      "id": 6,
+      "category": "hadith_qudsi",
+      "misconception": {
+        "en": "Every hadith qudsi is equal to the Qur’an or is automatically authentic.",
+        "bn": "প্রতিটি হাদিসে কুদসি কুরআনের সমান বা স্বয়ংক্রিয়ভাবে সহিহ।"
+      },
+      "correction": {
+        "en": "Hadith qudsi is a category of attribution in which a meaning is conveyed from Allah through the Prophet ﷺ. It is not the Qur’an, and each report still requires authenticity verification.",
+        "bn": "হাদিসে কুদসি এমন একটি বর্ণনা যেখানে কোনো অর্থ আল্লাহর দিকে সম্বন্ধিত হয়ে নবী ﷺ-এর মাধ্যমে বর্ণিত হয়। এটি কুরআন নয় এবং প্রতিটি বর্ণনার সহিহতাও যাচাই করতে হয়।"
+      },
+      "user_action": {
+        "en": "Display the authenticity grade separately from the label ‘qudsi’.",
+        "bn": "‘কুদসি’ পরিচয়ের পাশাপাশি হাদিসের সহিহতার মান আলাদাভাবে দেখান।"
+      }
+    },
+    {
+      "id": 7,
+      "category": "social_media",
+      "misconception": {
+        "en": "A hadith image with Arabic text and a reference must be authentic.",
+        "bn": "আরবি লেখা ও রেফারেন্সযুক্ত হাদিসের ছবি অবশ্যই সহিহ।"
+      },
+      "correction": {
+        "en": "Images can contain mistranslations, incomplete wording, incorrect numbers, or invented references. Visual design is not evidence of authenticity.",
+        "bn": "ছবিতে ভুল অনুবাদ, অসম্পূর্ণ বক্তব্য, ভুল নম্বর বা বানানো রেফারেন্স থাকতে পারে। সুন্দর ডিজাইন সহিহতার প্রমাণ নয়।"
+      },
+      "user_action": {
+        "en": "Open the cited collection and verify the wording and grading yourself.",
+        "bn": "উদ্ধৃত গ্রন্থ খুলে বক্তব্য ও হাদিসের মান নিজে যাচাই করুন।"
+      }
+    },
+    {
+      "id": 8,
+      "category": "forwarding",
+      "misconception": {
+        "en": "If a message says ‘share this or you will sin’, forwarding it is obligatory.",
+        "bn": "‘শেয়ার না করলে গুনাহ হবে’ বলা হলে তা ফরওয়ার্ড করা ফরজ।"
+      },
+      "correction": {
+        "en": "A forwarding instruction is not a religious proof. A message cannot make an action obligatory without valid evidence.",
+        "bn": "ফরওয়ার্ড করার নির্দেশ নিজে কোনো ধর্মীয় দলিল নয়। বৈধ প্রমাণ ছাড়া কোনো মেসেজ কোনো কাজকে ফরজ বানাতে পারে না।"
+      },
+      "user_action": {
+        "en": "Do not forward chain messages until their claims and sources are checked.",
+        "bn": "চেইন মেসেজের দাবি ও উৎস যাচাই না করা পর্যন্ত তা ফরওয়ার্ড করবেন না।"
+      }
+    },
+    {
+      "id": 9,
+      "category": "good_intention",
+      "misconception": {
+        "en": "It is permissible to invent or share a hadith if it encourages people to do good.",
+        "bn": "মানুষকে ভালো কাজে উৎসাহ দিলে জাল হাদিস বানানো বা শেয়ার করা বৈধ।"
+      },
+      "correction": {
+        "en": "Encouraging good does not permit attributing false words to the Prophet ﷺ. Share authentic Qur’an and Sunnah, or label general advice as advice.",
+        "bn": "ভালো কাজে উৎসাহ দেওয়া নবী ﷺ-এর নামে মিথ্যা কথা বলার অনুমতি দেয় না। সহিহ কুরআন-সুন্নাহ শেয়ার করুন, অথবা সাধারণ পরামর্শকে পরামর্শ হিসেবেই লিখুন।"
+      },
+      "user_action": {
+        "en": "Never use ‘The Prophet ﷺ said’ when the source is unverified.",
+        "bn": "উৎস যাচাই না হলে কখনো ‘নবী ﷺ বলেছেন’ লিখবেন না।"
+      }
+    },
+    {
+      "id": 10,
+      "category": "rewards",
+      "misconception": {
+        "en": "Every special reward assigned to a particular surah, day, number, or prayer is authentic.",
+        "bn": "কোনো নির্দিষ্ট সূরা, দিন, সংখ্যা বা নামাজের সঙ্গে যুক্ত প্রতিটি বিশেষ সওয়াব সহিহ।"
+      },
+      "correction": {
+        "en": "Specific rewards require specific evidence. Many popular reports promise protection from poverty, forgiveness, or enormous rewards without an authentic basis.",
+        "bn": "নির্দিষ্ট সওয়াবের জন্য নির্দিষ্ট দলিল প্রয়োজন। দারিদ্র্য থেকে সুরক্ষা, ক্ষমা বা বিশাল সওয়াবের অনেক প্রচলিত বর্ণনার সহিহ ভিত্তি নেই।"
+      },
+      "user_action": {
+        "en": "Verify the exact reward before publishing it as a hadith.",
+        "bn": "হাদিস হিসেবে প্রকাশের আগে নির্দিষ্ট সওয়াবটি যাচাই করুন।"
+      }
+    },
+    {
+      "id": 11,
+      "category": "scholarly_difference",
+      "misconception": {
+        "en": "If one scholar calls a hadith weak, everyone agrees that it is fabricated.",
+        "bn": "একজন আলেম কোনো হাদিসকে দুর্বল বললে সবাই সেটিকে জাল মনে করেন।"
+      },
+      "correction": {
+        "en": "Scholars may differ about a report’s chain, supporting routes, or wording. Weak and fabricated are not interchangeable judgments.",
+        "bn": "সনদ, সমর্থক বর্ণনা বা বক্তব্যের কারণে আলেমদের মধ্যে কোনো বর্ণনার মান নিয়ে মতভেদ হতে পারে। দুর্বল ও জাল একই সিদ্ধান্ত নয়।"
+      },
+      "user_action": {
+        "en": "When a real disagreement exists, show it fairly and name the grading source.",
+        "bn": "বাস্তব মতভেদ থাকলে তা ন্যায্যভাবে দেখান এবং কোন উৎস কোন মান দিয়েছে তা উল্লেখ করুন।"
+      }
+    },
+    {
+      "id": 12,
+      "category": "forgetting",
+      "misconception": {
+        "en": "Forgetting a memorized Qur’an verse because of normal human memory loss is automatically a major sin.",
+        "bn": "স্বাভাবিক স্মৃতিভ্রংশের কারণে মুখস্থ করা কুরআনের আয়াত ভুলে যাওয়া স্বয়ংক্রিয়ভাবে বড় গুনাহ।"
+      },
+      "correction": {
+        "en": "Natural forgetting is different from deliberately abandoning or neglecting the Qur’an. A widely circulated report about the ‘greatest sin’ should not be used to shame people without careful explanation.",
+        "bn": "স্বাভাবিকভাবে ভুলে যাওয়া এবং ইচ্ছাকৃতভাবে কুরআন ত্যাগ বা অবহেলা করা এক বিষয় নয়। ‘সবচেয়ে বড় গুনাহ’ সংক্রান্ত প্রচলিত বর্ণনা দিয়ে যথাযথ ব্যাখ্যা ছাড়া মানুষকে লজ্জিত করা উচিত নয়।"
+      },
+      "user_action": {
+        "en": "Encourage revision and learning with mercy, without declaring a person sinful merely because of ordinary forgetfulness.",
+        "bn": "দয়া ও উৎসাহের সঙ্গে পুনরাবৃত্তি ও শেখার পরামর্শ দিন; স্বাভাবিকভাবে ভুলে যাওয়ার কারণে কাউকে গুনাহগার ঘোষণা করবেন না।"
+      }
+    },
+    {
+      "id": 13,
+      "category": "stories",
+      "misconception": {
+        "en": "Every inspiring Islamic story about the Prophet ﷺ must be historically authentic.",
+        "bn": "নবী ﷺ-কে নিয়ে প্রচলিত প্রতিটি অনুপ্রেরণামূলক ইসলামী গল্প অবশ্যই ঐতিহাসিকভাবে সত্য।"
+      },
+      "correction": {
+        "en": "A story may be authentic, weak, historically disputed, or invented. Emotional detail does not prove that an event occurred.",
+        "bn": "কোনো গল্প সহিহ, দুর্বল, ঐতিহাসিকভাবে বিতর্কিত বা বানানো হতে পারে। আবেগপূর্ণ বিবরণ ঘটনা সত্য হওয়ার প্রমাণ নয়।"
+      },
+      "user_action": {
+        "en": "Label stories as authentic narration, historical account, disputed report, or illustrative story.",
+        "bn": "গল্পকে সহিহ বর্ণনা, ঐতিহাসিক ঘটনা, বিতর্কিত বর্ণনা বা শিক্ষামূলক গল্প হিসেবে লেবেল করুন।"
+      }
+    },
+    {
+      "id": 14,
+      "category": "reference",
+      "misconception": {
+        "en": "A number written after a hadith is enough as a reference.",
+        "bn": "হাদিসের পরে শুধু একটি নম্বর থাকলেই যথেষ্ট রেফারেন্স হয়ে যায়।"
+      },
+      "correction": {
+        "en": "Hadith numbering differs between editions and websites. A useful reference should include the collection name, book or chapter when available, hadith number, and grading source.",
+        "bn": "সংস্করণ ও ওয়েবসাইটভেদে হাদিসের নম্বর পরিবর্তিত হতে পারে। ভালো রেফারেন্সে গ্রন্থের নাম, কিতাব বা অধ্যায়, হাদিস নম্বর এবং মান নির্ধারণকারী উৎস থাকা উচিত।"
+      },
+      "user_action": {
+        "en": "Store references in structured fields rather than as an unexplained number.",
+        "bn": "শুধু অস্পষ্ট নম্বর না রেখে কাঠামোবদ্ধ ফিল্ডে রেফারেন্স সংরক্ষণ করুন।"
+      }
+    },
+    {
+      "id": 15,
+      "category": "translation",
+      "misconception": {
+        "en": "If a translation sounds correct, the Arabic original must say exactly the same thing.",
+        "bn": "অনুবাদটি ঠিক মনে হলে আরবি মূলেও অবশ্যই একই কথা আছে।"
+      },
+      "correction": {
+        "en": "Translations can paraphrase, omit details, or use different wording. The Arabic text, translation, and source should be checked together.",
+        "bn": "অনুবাদে ভাবানুবাদ, সংক্ষিপ্তকরণ বা ভিন্ন শব্দ থাকতে পারে। আরবি মূল, অনুবাদ ও উৎস একসঙ্গে যাচাই করা উচিত।"
+      },
+      "user_action": {
+        "en": "Keep the original wording and identify the translation source when possible.",
+        "bn": "মূল বক্তব্য সংরক্ষণ করুন এবং সম্ভব হলে অনুবাদের উৎস উল্লেখ করুন।"
+      }
+    },
+    {
+      "id": 16,
+      "category": "correction",
+      "misconception": {
+        "en": "Once a false hadith has been shared, there is no need to correct it.",
+        "bn": "জাল হাদিস একবার শেয়ার হয়ে গেলে আর সংশোধন করার দরকার নেই।"
+      },
+      "correction": {
+        "en": "Leaving a false attribution uncorrected can continue to mislead people. A clear correction helps stop further circulation.",
+        "bn": "ভুলভাবে আরোপিত বক্তব্য সংশোধন না করলে মানুষ বিভ্রান্ত হতে থাকে। স্পষ্ট সংশোধনী এর বিস্তার থামাতে সাহায্য করে।"
+      },
+      "user_action": {
+        "en": "Remove the post when possible and publish a correction with the verified status.",
+        "bn": "সম্ভব হলে পোস্টটি মুছে দিন এবং যাচাইকৃত মানসহ একটি সংশোধনী প্রকাশ করুন।"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sahih al-Bukhari 106",
+      "url": "https://sunnah.com/bukhari:106"
+    },
+    {
+      "title": "Sahih Muslim, Introduction",
+      "url": "https://sunnah.com/muslim:3004"
+    },
+    {
+      "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+      "url": "https://islamqa.info/en/answers/6981"
+    },
+    {
+      "title": "IslamQA: Messages saying ‘forward this or you will be sinning’",
+      "url": "https://islamqa.info/en/answers/101317"
+    },
+    {
+      "title": "IslamQA: He sent a hadith to spread good, then found it was fabricated",
+      "url": "https://islamqa.info/en/answers/66273"
+    }
+  ]
+}

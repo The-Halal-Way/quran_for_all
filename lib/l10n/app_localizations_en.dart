@@ -2526,6 +2526,90 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardSectionBooks => 'Books & reflections';
 
   @override
+  String get hadithIntegritySectionTitle => 'Hadith Integrity';
+
+  @override
+  String get hadithIntegritySectionSubtitle => 'Verify before you share.';
+
+  @override
+  String get hadithIntegritySectionDescription => 'Learn how scholars assess narrations and how to avoid attributing words to the Prophet ﷺ without evidence.';
+
+  @override
+  String get hadithIntegrityOpen => 'Open';
+
+  @override
+  String get hadithIntegrityHeroKicker => 'AUTHENTICITY MATTERS';
+
+  @override
+  String get hadithIntegrityHeroTitle => 'Share with confidence';
+
+  @override
+  String get hadithIntegrityHeroDescription => 'Explore popular narrations, verification principles, hadith status terms, common misconceptions, and authentic warnings.';
+
+  @override
+  String get hadithIntegrityOverviewLabel => 'Explore the collection';
+
+  @override
+  String get hadithIntegrityPopularLabel => 'Popular narrations requiring verification';
+
+  @override
+  String hadithIntegrityPartsLabel(String count) {
+    return '$count parts';
+  }
+
+  @override
+  String get hadithIntegrityResourcesLabel => 'Resources';
+
+  @override
+  String get hadithIntegrityGuideLabel => 'Verification guide';
+
+  @override
+  String get hadithIntegrityStatusLabel => 'Hadith status explained';
+
+  @override
+  String get hadithIntegrityMisconceptionLabel => 'Common misconceptions';
+
+  @override
+  String get hadithIntegrityWarningsLabel => 'Warnings against false attribution';
+
+  @override
+  String get hadithIntegrityLoading => 'Opening Hadith Integrity…';
+
+  @override
+  String get hadithIntegrityError => 'Could not load Hadith Integrity.';
+
+  @override
+  String get hadithIntegrityRetry => 'Retry';
+
+  @override
+  String hadithIntegrityItemCount(String count) {
+    return '$count items';
+  }
+
+  @override
+  String hadithIntegrityPartLabel(String part) {
+    return 'Part $part';
+  }
+
+  @override
+  String get hadithIntegrityViewSource => 'View source';
+
+  @override
+  String get hadithIntegritySourceUnavailable => 'Source unavailable';
+
+  @override
+  String get hadithIntegritySourceLabel => 'Source';
+
+  @override
+  String get hadithIntegrityEditorialNote => 'Educational content is not a replacement for qualified hadith scholarship. Verify detailed rulings and grading with reliable source works and qualified scholars.';
+
+  @override
+  String get hadithIntegritySourceText => 'Reference';
+
+  @override
+  String get hadithIntegrityNoItems => 'No entries are available yet.';
+
+  @override
   String get tasbeehTitle => 'Tasbeeh Counter';
 
   @override

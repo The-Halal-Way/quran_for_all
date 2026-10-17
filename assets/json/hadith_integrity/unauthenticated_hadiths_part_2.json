@@ -1,0 +1,221 @@
+{
+  "section": {
+    "key": "famous_unauthenticated_hadiths_part_2",
+    "title": {
+      "en": "Famous Statements Not Authenticated as Hadith — Part 2",
+      "bn": "প্রচলিত কিন্তু প্রমাণিত নয় এমন হাদিস — পর্ব ২"
+    },
+    "description": {
+      "en": "More popular statements whose attribution to the Prophet ﷺ requires correction.",
+      "bn": "নবী ﷺ-এর নামে প্রচলিত আরও কিছু বাণী, যেগুলোর ক্ষেত্রে সঠিক অবস্থান জানা জরুরি।"
+    },
+    "editorial_note": {
+      "en": "The status labels follow the cited verification notes. A statement may have a sound general meaning while still not being an authentic hadith.",
+      "bn": "স্ট্যাটাসগুলো উল্লেখিত যাচাই-সূত্র অনুসরণ করে দেওয়া হয়েছে। কোনো বক্তব্যের সাধারণ অর্থ সঠিক হলেও তা সহিহ হাদিস নাও হতে পারে।"
+    }
+  },
+  "items": [
+    {
+      "id": 11,
+      "arabic": "مداد العلماء أفضل من دماء الشهداء",
+      "text": {
+        "en": "The ink of scholars is more sacred than the blood of martyrs.",
+        "bn": "আলেমদের কালি শহীদদের রক্তের চেয়েও পবিত্র।"
+      },
+      "status": {
+        "code": "weak_or_fabricated",
+        "en": "The reports used for this wording have weak, flimsy, or fabricated chains; it is not an authentic hadith in this form.",
+        "bn": "এই বক্তব্যের বর্ণনাগুলোর সনদ দুর্বল, অত্যন্ত দুর্বল বা জাল; এই রূপে এটি সহিহ হাদিস নয়।"
+      },
+      "explanation": {
+        "en": "The value of knowledge is established by authentic evidence, but this famous comparison should not be quoted as an authenticated Prophetic hadith.",
+        "bn": "জ্ঞানের মর্যাদা সহিহ দলিলে প্রতিষ্ঠিত; তবে এই প্রচলিত তুলনাটিকে প্রমাণিত হাদিস হিসেবে উদ্ধৃত করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Hadeeths that differentiate between scholars and martyrs",
+        "url": "https://islamqa.info/en/answers/11920"
+      }
+    },
+    {
+      "id": 12,
+      "text": {
+        "en": "Seek knowledge from the cradle to the grave.",
+        "bn": "দোলনা থেকে কবর পর্যন্ত জ্ঞান অর্জন করো।"
+      },
+      "status": {
+        "code": "not_prophetic",
+        "en": "A popular saying, not an established hadith of the Prophet ﷺ.",
+        "bn": "একটি প্রচলিত বাণী; নবী ﷺ-এর প্রমাণিত হাদিস নয়।"
+      },
+      "explanation": {
+        "en": "The wording encourages lifelong learning, but it should be presented as a saying or advice, not attributed to the Prophet ﷺ.",
+        "bn": "বাক্যটি সারাজীবন জ্ঞান অর্জনের উৎসাহ দেয়; তবে এটিকে নবী ﷺ-এর হাদিস না বলে সাধারণ বাণী বা উপদেশ হিসেবে উপস্থাপন করতে হবে।"
+      },
+      "source": {
+        "title": "Islamweb: Etiquettes of Seeking Knowledge",
+        "url": "https://www.islamweb.net/en/article/186760/etiquettes-of-seeking-knowledge-i"
+      }
+    },
+    {
+      "id": 13,
+      "text": {
+        "en": "Whoever performs Hajj but does not visit me has shunned me.",
+        "bn": "যে ব্যক্তি হজ করল কিন্তু আমাকে দেখতে এল না, সে আমাকে অবহেলা করল।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "Fabricated (mawdu‘).",
+        "bn": "জাল (মাওদূ‘)।"
+      },
+      "explanation": {
+        "en": "This statement must not be used to make visiting the Prophet’s grave an obligation of Hajj.",
+        "bn": "এই বক্তব্য ব্যবহার করে নবী ﷺ-এর কবর জিয়ারতকে হজের বাধ্যতামূলক অংশ বানানো যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Status of ‘Whoever performs Hajj but does not visit me…’",
+        "url": "https://islamqa.info/en/answers/14003"
+      }
+    },
+    {
+      "id": 14,
+      "text": {
+        "en": "Whoever visits my grave after my death, it is as if he visited me during my lifetime.",
+        "bn": "আমার মৃত্যুর পর যে ব্যক্তি আমার কবর জিয়ারত করে, সে যেন আমার জীবদ্দশায় আমাকে জিয়ারত করল।"
+      },
+      "status": {
+        "code": "weak_or_false",
+        "en": "The narration is not authentic; many hadith scholars judged its chains weak, and some called it false.",
+        "bn": "বর্ণনাটি সহিহ নয়; বহু হাদিসবিশারদ এর সনদ দুর্বল বলেছেন এবং কেউ কেউ এটিকে মিথ্যা বলেছেন।"
+      },
+      "explanation": {
+        "en": "Visiting the Prophet’s Mosque and greeting the Prophet ﷺ are separate matters from claiming this specific reward through an unauthenticated narration.",
+        "bn": "নবী ﷺ-এর মসজিদে যাওয়া ও তাঁকে সালাম দেওয়া আলাদা বিষয়; এই অপ্রমাণিত বর্ণনার মাধ্যমে নির্দিষ্ট ফজিলত দাবি করা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: How sound is ‘Whoever visits my grave after I die…’",
+        "url": "https://islamqa.info/en/answers/2534"
+      }
+    },
+    {
+      "id": 15,
+      "arabic": "اللهم بارك لنا في رجب وشعبان وبلغنا رمضان",
+      "text": {
+        "en": "O Allah, bless Rajab and Sha‘ban for us and let us reach Ramadan.",
+        "bn": "হে আল্লাহ, আমাদের জন্য রজব ও শাবানে বরকত দিন এবং আমাদের রমজান পর্যন্ত পৌঁছে দিন।"
+      },
+      "status": {
+        "code": "weak_not_authentic",
+        "en": "A weak narration; no authentic hadith establishes this as a specific Prophetic supplication.",
+        "bn": "দুর্বল বর্ণনা; এটিকে নির্দিষ্ট নববী দোয়া হিসেবে প্রমাণ করার মতো সহিহ হাদিস নেই।"
+      },
+      "explanation": {
+        "en": "A person may make this supplication as a personal du‘a, but it should not be labelled an authentic Sunnah wording.",
+        "bn": "ব্যক্তিগত দোয়া হিসেবে এটি পড়া যেতে পারে; তবে এটিকে সহিহ সুন্নাহর নির্দিষ্ট দোয়া বলা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Is ‘Allahumma ballighna Ramadan’ authentically reported?",
+        "url": "https://islamqa.info/en/answers/202017"
+      }
+    },
+    {
+      "id": 16,
+      "text": {
+        "en": "Whoever says in Rajab, ‘I seek Allah’s forgiveness; there is no god but Him,’ one hundred times, Allah will decree mercy and forgiveness for him.",
+        "bn": "যে ব্যক্তি রজব মাসে একশবার বলে, ‘আমি আল্লাহর কাছে ক্ষমা চাই; তিনি ছাড়া কোনো উপাস্য নেই,’ আল্লাহ তার জন্য রহমত ও ক্ষমা নির্ধারণ করবেন।"
+      },
+      "status": {
+        "code": "fabricated_or_not_authentic",
+        "en": "Not authentic; the specific Rajab virtue and reward are not established by a sound hadith.",
+        "bn": "সহিহ নয়; রজব মাসের এই নির্দিষ্ট আমল ও পুরস্কার কোনো সহিহ হাদিসে প্রমাণিত নয়।"
+      },
+      "explanation": {
+        "en": "General istighfar is virtuous throughout the year, but this specific number, month, and promised reward should not be attributed to the Prophet ﷺ.",
+        "bn": "সারা বছর ইস্তিগফার করা নেক আমল; কিন্তু নির্দিষ্ট সংখ্যা, মাস ও পুরস্কারকে নবী ﷺ-এর নামে বলা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: The hadith about saying this in Rajab is fabricated",
+        "url": "https://islamqa.info/en/answers/171509"
+      }
+    },
+    {
+      "id": 17,
+      "text": {
+        "en": "The heart is the house of the Lord.",
+        "bn": "হৃদয় হলো রবের ঘর।"
+      },
+      "status": {
+        "code": "baseless",
+        "en": "No known authentic chain establishes this as a Prophetic hadith or hadith qudsi.",
+        "bn": "এটিকে নবী ﷺ-এর হাদিস বা হাদিসে কুদসি হিসেবে প্রমাণ করার মতো কোনো নির্ভরযোগ্য সনদ জানা নেই।"
+      },
+      "explanation": {
+        "en": "A believer’s heart may contain faith, love, and knowledge of Allah, but Allah is not physically contained by creation. This slogan must not be presented as revelation.",
+        "bn": "মুমিনের হৃদয়ে আল্লাহর ঈমান, ভালোবাসা ও জ্ঞান থাকতে পারে; কিন্তু সৃষ্টিজগত আল্লাহকে শারীরিকভাবে ধারণ করতে পারে না। এই বাক্যকে ওহি হিসেবে উপস্থাপন করা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated narrations attributed to the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 18,
+      "text": {
+        "en": "Love of this world is the root of all evil.",
+        "bn": "দুনিয়ার ভালোবাসা সব অনিষ্টের মূল।"
+      },
+      "status": {
+        "code": "not_prophetic",
+        "en": "Not established as a Prophetic hadith; it is known as a statement attributed to Jundub ibn ‘Abdullah al-Bajali.",
+        "bn": "নবী ﷺ-এর হাদিস হিসেবে প্রমাণিত নয়; এটি জুন্দুব ইবন আবদুল্লাহ আল-বাজালির বক্তব্য হিসেবে পরিচিত।"
+      },
+      "explanation": {
+        "en": "The statement may be used as a reflection when clearly labelled as a saying, but it should not be quoted as a hadith.",
+        "bn": "স্পষ্টভাবে বাণী হিসেবে উল্লেখ করলে এটি ভাবনার বিষয় হতে পারে; তবে হাদিস হিসেবে উদ্ধৃত করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated narrations attributed to the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 19,
+      "text": {
+        "en": "Allah created the intellect and said to it: ‘Come forward,’ and it came; then He said: ‘Go back,’ and it went back.",
+        "bn": "আল্লাহ বুদ্ধি সৃষ্টি করে তাকে বললেন, ‘এগিয়ে আসো,’ তখন তা এগিয়ে এলো; তারপর বললেন, ‘ফিরে যাও,’ তখন তা ফিরে গেল।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "Classified as false and fabricated by hadith scholars.",
+        "bn": "হাদিসবিশারদরা এটিকে মিথ্যা ও জাল হিসেবে শ্রেণিবদ্ধ করেছেন।"
+      },
+      "explanation": {
+        "en": "The statement is sometimes circulated as a hadith qudsi, but it has no reliable basis as such.",
+        "bn": "বাক্যটি কখনো হাদিসে কুদসি হিসেবে প্রচার করা হয়; কিন্তু এর কোনো নির্ভরযোগ্য ভিত্তি নেই।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated narrations attributed to the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 20,
+      "text": {
+        "en": "Whoever visits me and my father Ibrahim in one year will enter Paradise.",
+        "bn": "যে ব্যক্তি এক বছরে আমাকে ও আমার পিতা ইবরাহিমকে জিয়ারত করবে, সে জান্নাতে প্রবেশ করবে।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "A fabricated lie; it is not known from the recognised hadith scholars’ books.",
+        "bn": "জাল মিথ্যা বর্ণনা; স্বীকৃত হাদিসবিশারদদের গ্রন্থে এর নির্ভরযোগ্য ভিত্তি নেই।"
+      },
+      "explanation": {
+        "en": "Do not use this report to promise Paradise for a particular travel practice or to establish a religious obligation.",
+        "bn": "কোনো নির্দিষ্ট ভ্রমণ-পদ্ধতির জন্য জান্নাতের নিশ্চয়তা দিতে বা ধর্মীয় বাধ্যবাধকতা প্রতিষ্ঠা করতে এই বর্ণনা ব্যবহার করবেন না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated narrations attributed to the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    }
+  ]
+}

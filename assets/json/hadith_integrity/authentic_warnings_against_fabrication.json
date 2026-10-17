@@ -1,0 +1,281 @@
+{
+  "section": {
+    "key": "authentic_warnings_against_fabrication",
+    "title": {
+      "en": "Authentic Warnings Against Fabricating Hadith",
+      "bn": "জাল হাদিস সম্পর্কে প্রামাণিক সতর্কবার্তা"
+    },
+    "subtitle": {
+      "en": "Truthfulness is part of preserving the Sunnah.",
+      "bn": "সত্যবাদিতা সুন্নাহ সংরক্ষণের অংশ।"
+    },
+    "description": {
+      "en": "Authentic texts and practical reminders about attributing words to the Prophet ﷺ carefully and truthfully.",
+      "bn": "নবী ﷺ-এর নামে কোনো কথা বলার ক্ষেত্রে সতর্কতা ও সত্যবাদিতা সম্পর্কে প্রামাণিক দলিল এবং ব্যবহারিক স্মরণিকা।"
+    },
+    "editorial_note": {
+      "en": "The first entries are source texts. The practical reminders are editorial explanations based on those texts and are not themselves Prophetic hadith.",
+      "bn": "প্রথম দিকের আইটেমগুলো মূল দলিলের বক্তব্য। ব্যবহারিক স্মরণিকাগুলো সেই দলিলের ভিত্তিতে সম্পাদকীয় ব্যাখ্যা; এগুলো নিজেরা নবী ﷺ-এর হাদিস নয়।"
+    }
+  },
+  "items": [
+    {
+      "id": 1,
+      "kind": "hadith",
+      "title": {
+        "en": "Do not deliberately lie about the Prophet ﷺ",
+        "bn": "ইচ্ছাকৃতভাবে নবী ﷺ-এর নামে মিথ্যা বলবেন না"
+      },
+      "text": {
+        "en": "The Prophet ﷺ said: ‘Do not tell a lie against me. Whoever tells a lie against me intentionally, let him take his seat in Hell.’",
+        "bn": "নবী ﷺ বলেছেন: ‘আমার নামে মিথ্যা বলো না। যে ব্যক্তি ইচ্ছাকৃতভাবে আমার নামে মিথ্যা বলে, সে যেন জাহান্নামে তার আসন গ্রহণ করে।’"
+      },
+      "lesson": {
+        "en": "Attributing invented words to the Prophet ﷺ is a grave matter, even when the statement sounds religious or inspiring.",
+        "bn": "নবী ﷺ-এর নামে বানানো কথা বলা অত্যন্ত গুরুতর বিষয়—কথাটি ধর্মীয় বা অনুপ্রেরণামূলক মনে হলেও।"
+      },
+      "reference": {
+        "collection": "Sahih al-Bukhari",
+        "hadith_number": "106",
+        "grading": "Sahih",
+        "url": "https://sunnah.com/bukhari:106"
+      }
+    },
+    {
+      "id": 2,
+      "kind": "hadith",
+      "title": {
+        "en": "Do not report what you believe is false",
+        "bn": "মিথ্যা মনে হয় এমন বর্ণনা প্রচার করবেন না"
+      },
+      "text": {
+        "en": "The Prophet ﷺ said that whoever reports from him a statement that he thinks is false is one of the liars.",
+        "bn": "নবী ﷺ বলেছেন, যে ব্যক্তি তাঁর কাছ থেকে এমন কোনো কথা বর্ণনা করে যা সে মিথ্যা মনে করে, সে মিথ্যাবাদীদের একজন।"
+      },
+      "lesson": {
+        "en": "A person must not pass on a report merely because it is popular. Suspicion that a report is false requires stopping and checking.",
+        "bn": "শুধু প্রচলিত বলে কোনো বর্ণনা প্রচার করা যাবে না। বর্ণনাটি মিথ্যা হতে পারে মনে হলে থেমে যাচাই করতে হবে।"
+      },
+      "reference": {
+        "collection": "Sahih Muslim, Introduction",
+        "hadith_number": "Introduction 1 / related wording",
+        "grading": "Sahih",
+        "url": "https://sunnah.com/muslim:introduction/8"
+      }
+    },
+    {
+      "id": 3,
+      "kind": "hadith",
+      "title": {
+        "en": "Do not narrate everything you hear",
+        "bn": "যা শুনবেন সব প্রচার করবেন না"
+      },
+      "text": {
+        "en": "The Prophet ﷺ said: ‘It is enough of a lie for a person that he narrates everything he hears.’",
+        "bn": "নবী ﷺ বলেছেন: ‘একজন মানুষের মিথ্যাবাদী হওয়ার জন্য এতটুকুই যথেষ্ট যে সে যা শোনে সবই বর্ণনা করে।’"
+      },
+      "lesson": {
+        "en": "Passing on every message without checking makes a person responsible for spreading falsehood, even if he did not invent the original claim.",
+        "bn": "যাচাই ছাড়া প্রতিটি মেসেজ প্রচার করলে মানুষ মিথ্যা ছড়ানোর দায়ে পড়তে পারে, যদিও মূল বক্তব্যটি সে নিজে বানায়নি।"
+      },
+      "reference": {
+        "collection": "Sahih Muslim, Introduction",
+        "hadith_number": "Introduction 8",
+        "grading": "Sahih",
+        "url": "https://sunnah.com/muslim:introduction/8"
+      }
+    },
+    {
+      "id": 4,
+      "kind": "hadith",
+      "title": {
+        "en": "A lie about the Prophet ﷺ is not like an ordinary lie",
+        "bn": "নবী ﷺ-এর নামে মিথ্যা সাধারণ মিথ্যার মতো নয়"
+      },
+      "text": {
+        "en": "The Prophet ﷺ said that lying about him is not like lying about anyone else, and whoever deliberately lies about him will take his place in the Fire.",
+        "bn": "নবী ﷺ বলেছেন, তাঁর নামে মিথ্যা বলা অন্য কারও নামে মিথ্যা বলার মতো নয়; যে ব্যক্তি ইচ্ছাকৃতভাবে তাঁর নামে মিথ্যা বলে, সে আগুনে তার স্থান গ্রহণ করবে।"
+      },
+      "lesson": {
+        "en": "Religious authority makes accurate attribution especially important. A fabricated quote can change how people understand Islam.",
+        "bn": "ধর্মীয় কর্তৃত্বের কারণে সঠিকভাবে বক্তব্য আরোপ করা অত্যন্ত গুরুত্বপূর্ণ। জাল উক্তি মানুষের ইসলামের বোঝাপড়া বদলে দিতে পারে।"
+      },
+      "reference": {
+        "collection": "Sahih Muslim",
+        "hadith_number": "3004 / related wording",
+        "grading": "Sahih",
+        "url": "https://sunnah.com/muslim:3004"
+      }
+    },
+    {
+      "id": 5,
+      "kind": "quran",
+      "title": {
+        "en": "Do not follow what you do not know",
+        "bn": "যে বিষয়ে জ্ঞান নেই তার অনুসরণ করবেন না"
+      },
+      "text": {
+        "en": "The Qur’an teaches: ‘Do not pursue that of which you have no knowledge. Indeed, the hearing, the sight, and the heart—all will be questioned.’",
+        "bn": "কুরআনে শিক্ষা দেওয়া হয়েছে: ‘যে বিষয়ে তোমার জ্ঞান নেই, তার অনুসরণ করো না। নিশ্চয় কান, চোখ ও হৃদয়—সবকিছুর জবাবদিহি হবে।’"
+      },
+      "lesson": {
+        "en": "This principle applies to religious posts, hadith images, forwarded messages, and claims about what is halal, haram, sunnah, or wajib.",
+        "bn": "এই নীতি ধর্মীয় পোস্ট, হাদিসের ছবি, ফরওয়ার্ড করা মেসেজ এবং হালাল, হারাম, সুন্নাহ বা ওয়াজিব সম্পর্কে দাবির ক্ষেত্রেও প্রযোজ্য।"
+      },
+      "reference": {
+        "collection": "The Qur’an",
+        "reference": "Surah al-Isra 17:36",
+        "grading": "Qur’anic verse",
+        "url": "https://quran.com/17/36"
+      }
+    },
+    {
+      "id": 6,
+      "kind": "application_rule",
+      "title": {
+        "en": "Good intentions do not permit false attribution",
+        "bn": "ভালো নিয়ত মিথ্যা আরোপের অনুমতি দেয় না"
+      },
+      "text": {
+        "en": "A person may want to encourage prayer, charity, repentance, or good character. That intention does not permit him to attach an invented reward or warning to the Prophet ﷺ.",
+        "bn": "কেউ নামাজ, দান, তওবা বা উত্তম চরিত্রে উৎসাহ দিতে চাইতে পারেন। সেই নিয়ত নবী ﷺ-এর নামে বানানো সওয়াব বা সতর্কবার্তা জুড়ে দেওয়ার অনুমতি দেয় না।"
+      },
+      "lesson": {
+        "en": "Use authentic evidence for encouragement. If a sentence is personal advice, label it as advice rather than hadith.",
+        "bn": "উৎসাহ দেওয়ার জন্য সহিহ দলিল ব্যবহার করুন। কোনো বাক্য ব্যক্তিগত পরামর্শ হলে সেটিকে পরামর্শ হিসেবেই লিখুন, হাদিস হিসেবে নয়।"
+      },
+      "reference": {
+        "collection": "Scholarly application of the warnings against false attribution",
+        "grading": "Editorial guidance based on authentic warnings",
+        "url": "https://islamqa.info/en/answers/66273"
+      }
+    },
+    {
+      "id": 7,
+      "kind": "application_rule",
+      "title": {
+        "en": "Forwarding is also transmitting",
+        "bn": "ফরওয়ার্ড করাও প্রচারের অন্তর্ভুক্ত"
+      },
+      "text": {
+        "en": "Copying a hadith into a group, posting it as an image, or repeating it in a talk is still transmitting it. The responsibility does not disappear because someone else wrote it first.",
+        "bn": "কোনো হাদিস গ্রুপে কপি করা, ছবি হিসেবে পোস্ট করা বা বক্তৃতায় বলা—সবই প্রচারের অন্তর্ভুক্ত। অন্য কেউ আগে লিখেছে বলে দায়িত্ব শেষ হয়ে যায় না।"
+      },
+      "lesson": {
+        "en": "Check before forwarding, especially when the message contains a specific reward, punishment, date, number, or threat.",
+        "bn": "ফরওয়ার্ড করার আগে যাচাই করুন—বিশেষ করে যখন মেসেজে নির্দিষ্ট সওয়াব, শাস্তি, তারিখ, সংখ্যা বা হুমকি থাকে।"
+      },
+      "reference": {
+        "collection": "Sahih Muslim, Introduction",
+        "hadith_number": "Introduction 8",
+        "grading": "Sahih principle applied to modern sharing",
+        "url": "https://sunnah.com/muslim:introduction/8"
+      }
+    },
+    {
+      "id": 8,
+      "kind": "application_rule",
+      "title": {
+        "en": "Correct a false attribution when you discover it",
+        "bn": "ভুল আরোপ জানতে পারলে সংশোধন করুন"
+      },
+      "text": {
+        "en": "If you previously shared a report and later learn that it is fabricated or wrongly attributed, remove it where possible and publish a clear correction.",
+        "bn": "আপনি আগে কোনো বর্ণনা শেয়ার করার পর জানতে পারলে যে সেটি জাল বা ভুলভাবে আরোপিত, সম্ভব হলে তা মুছে দিন এবং স্পষ্ট সংশোধনী প্রকাশ করুন।"
+      },
+      "lesson": {
+        "en": "A correction protects people who may otherwise continue sharing the report because they trust your post.",
+        "bn": "সংশোধনী তাদের রক্ষা করে, যারা আপনার পোস্ট বিশ্বাস করে বর্ণনাটি আরও ছড়িয়ে দিতে পারে।"
+      },
+      "reference": {
+        "collection": "Scholarly guidance on correcting fabricated reports",
+        "grading": "Editorial guidance based on authentic warnings",
+        "url": "https://islamqa.info/en/answers/66273"
+      }
+    },
+    {
+      "id": 9,
+      "kind": "app_rule",
+      "title": {
+        "en": "Show the warning before the quote",
+        "bn": "উক্তির আগে সতর্কতা দেখান"
+      },
+      "text": {
+        "en": "When displaying a fabricated or unauthenticated narration for educational purposes, show its status before or beside the quotation. Do not let the quote look like an ordinary hadith card.",
+        "bn": "শিক্ষামূলক কারণে জাল বা অপ্রমাণিত বর্ণনা দেখালে উক্তির আগে বা পাশে তার মান দেখান। উক্তিটিকে সাধারণ হাদিস কার্ডের মতো দেখাবেন না।"
+      },
+      "lesson": {
+        "en": "The interface should prevent users from accidentally remembering a false quote as authentic.",
+        "bn": "ইন্টারফেস এমন হওয়া উচিত যাতে ব্যবহারকারী ভুল করে জাল উক্তিকে সহিহ হাদিস হিসেবে মনে না রাখেন।"
+      },
+      "reference": {
+        "collection": "Hadith verification and responsible-publication guidance",
+        "grading": "Editorial rule for app presentation",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    },
+    {
+      "id": 10,
+      "kind": "app_rule",
+      "title": {
+        "en": "Keep the source visible",
+        "bn": "উৎস দৃশ্যমান রাখুন"
+      },
+      "text": {
+        "en": "Every hadith card should show the collection, hadith number when available, grading, and source link. Users should be able to inspect the evidence instead of relying only on the app’s claim.",
+        "bn": "প্রতিটি হাদিস কার্ডে গ্রন্থের নাম, সম্ভব হলে হাদিস নম্বর, মান এবং উৎসের লিংক দেখান। ব্যবহারকারী যেন শুধু অ্যাপের কথার ওপর নির্ভর না করে প্রমাণ দেখতেও পারেন।"
+      },
+      "lesson": {
+        "en": "Transparent references build trust and make later correction easier.",
+        "bn": "স্বচ্ছ রেফারেন্স আস্থা তৈরি করে এবং পরে সংশোধন করাও সহজ করে।"
+      },
+      "reference": {
+        "collection": "Hadith verification guidance",
+        "grading": "Editorial rule for app presentation",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    }
+  ],
+  "display_rules": {
+    "en": [
+      "Use a clear warning color for fabricated or unauthenticated reports.",
+      "Keep authentic warnings visually separate from fabricated examples.",
+      "Do not place an unauthenticated quotation above its status label.",
+      "Always show the collection and reference when available.",
+      "Do not describe an editorial rule as a Prophetic hadith."
+    ],
+    "bn": [
+      "জাল বা অপ্রমাণিত বর্ণনার জন্য স্পষ্ট সতর্কতা-রঙ ব্যবহার করুন।",
+      "প্রামাণিক সতর্কবার্তা ও জাল বর্ণনার উদাহরণ আলাদা রাখুন।",
+      "অপ্রমাণিত উক্তির উপরে তার মানের লেবেল না দিয়ে দেখাবেন না।",
+      "সম্ভব হলে গ্রন্থ ও রেফারেন্স সবসময় দেখান।",
+      "সম্পাদকীয় নিয়মকে নবী ﷺ-এর হাদিস হিসেবে লিখবেন না।"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Sahih al-Bukhari 106",
+      "url": "https://sunnah.com/bukhari:106"
+    },
+    {
+      "title": "Sahih Muslim, Introduction",
+      "url": "https://sunnah.com/muslim:introduction/8"
+    },
+    {
+      "title": "Sahih Muslim 3004",
+      "url": "https://sunnah.com/muslim:3004"
+    },
+    {
+      "title": "Qur’an 17:36",
+      "url": "https://quran.com/17/36"
+    },
+    {
+      "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+      "url": "https://islamqa.info/en/answers/6981"
+    },
+    {
+      "title": "IslamQA: He sent a hadith to spread good, then found it was fabricated",
+      "url": "https://islamqa.info/en/answers/66273"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "section": {
+    "key": "famous_unauthenticated_hadiths_part_4",
+    "title": {
+      "en": "Famous Statements Not Authenticated as Hadith — Part 4",
+      "bn": "প্রচলিত কিন্তু প্রমাণিত নয় এমন হাদিস — পর্ব ৪"
+    },
+    "description": {
+      "en": "More widely circulated statements and reports that should not be attributed to the Prophet ﷺ without reliable evidence.",
+      "bn": "আরও কিছু প্রচলিত বক্তব্য ও বর্ণনা, যেগুলো নির্ভরযোগ্য প্রমাণ ছাড়া নবী ﷺ-এর নামে বলা উচিত নয়।"
+    },
+    "editorial_note": {
+      "en": "A report may contain a general idea that sounds meaningful, but that does not make its wording a Prophetic hadith. Always show the grading and source with the item.",
+      "bn": "কোনো বক্তব্যের সাধারণ অর্থ ভালো মনে হলেও তার শব্দগুলো প্রমাণিত নববী হাদিস হয়ে যায় না। প্রতিটি আইটেমের সঙ্গে মান ও উৎস দেখান।"
+    }
+  },
+  "items": [
+    {
+      "id": 31,
+      "text": {
+        "en": "This world is merely a step for the believing man.",
+        "bn": "এই দুনিয়া মুমিন মানুষের জন্য কেবল একটি ধাপ।"
+      },
+      "status": {
+        "code": "not_established",
+        "en": "Not known as a statement of the Prophet ﷺ or of the early Muslim scholars in this wording.",
+        "bn": "এই শব্দে এটি নবী ﷺ বা প্রাথমিক যুগের মুসলিম আলেমদের বক্তব্য হিসেবে প্রমাণিত নয়।"
+      },
+      "explanation": {
+        "en": "The temporary nature of worldly life is established by the Qur’an and authentic Sunnah, but this sentence should not be quoted as a hadith.",
+        "bn": "দুনিয়ার জীবন ক্ষণস্থায়ী—এ কথা কুরআন ও সহিহ সুন্নাহতে প্রতিষ্ঠিত; তবে এই বাক্যকে হাদিস হিসেবে উদ্ধৃত করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 32,
+      "text": {
+        "en": "Do favours for the poor, for tomorrow they will have authority—and what authority!",
+        "bn": "দরিদ্রদের উপকার করো; কারণ আগামীকাল তাদের কর্তৃত্ব থাকবে—কী মহা কর্তৃত্ব!"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "This report is described as a lie and is not known in the recognised hadith books.",
+        "bn": "এই বর্ণনাকে মিথ্যা বলা হয়েছে; স্বীকৃত হাদিসগ্রন্থে এর কোনো ভিত্তি জানা যায় না।"
+      },
+      "explanation": {
+        "en": "Islam encourages charity and care for the poor through authentic evidence, but this dramatic promise should not be attributed to the Prophet ﷺ.",
+        "bn": "সহিহ দলিলে ইসলাম দান ও দরিদ্রদের যত্ন নিতে উৎসাহিত করেছে; তবে এই নাটকীয় প্রতিশ্রুতিকে নবী ﷺ-এর কথা বলা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 33,
+      "text": {
+        "en": "The poor will sit on the Day of Resurrection, and Allah will say: ‘I did not deprive you of worldly things because you were insignificant. Rather, I wanted to raise your status on this Day. Go to the people, and whoever gave you bread, water, or clothing, take him to Paradise.’",
+        "bn": "কিয়ামতের দিন দরিদ্ররা বসবে এবং আল্লাহ বলবেন: ‘তোমরা তুচ্ছ ছিলে বলে আমি তোমাদের দুনিয়ার সম্পদ থেকে বঞ্চিত করিনি; বরং আজ তোমাদের মর্যাদা বাড়াতে চেয়েছি। মানুষের কাছে যাও; যে তোমাদের রুটি, পানি বা পোশাক দিয়েছে, তাকে জান্নাতে নিয়ে যাও।’"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "This report is described as a lie, with no recognised hadith scholar known to have narrated it.",
+        "bn": "এই বর্ণনাকে মিথ্যা বলা হয়েছে; কোনো স্বীকৃত হাদিসবিশারদ এটি বর্ণনা করেছেন বলে জানা যায় না।"
+      },
+      "explanation": {
+        "en": "Kindness to the poor is a genuine Islamic virtue, but this detailed scene and reward cannot be presented as an authenticated hadith.",
+        "bn": "দরিদ্রদের প্রতি দয়া ইসলামের সত্যিকারের শিক্ষা; কিন্তু এই বিস্তারিত দৃশ্য ও প্রতিদানকে প্রমাণিত হাদিস হিসেবে বলা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 34,
+      "text": {
+        "en": "O Allah, You brought me out of the place that is most beloved to me, so make me dwell in the place that is most beloved to You.",
+        "bn": "হে আল্লাহ, আপনি আমাকে আমার সবচেয়ে প্রিয় স্থান থেকে বের করেছেন; তাই আমাকে আপনার সবচেয়ে প্রিয় স্থানে বসবাস করান।"
+      },
+      "status": {
+        "code": "false_report",
+        "en": "This wording is described as false and is not an authentic hadith.",
+        "bn": "এই বক্তব্যকে মিথ্যা বলা হয়েছে; এটি সহিহ হাদিস নয়।"
+      },
+      "explanation": {
+        "en": "Authentic reports describe the Prophet ﷺ’s love for Makkah, but this particular supplication is not established in the cited source.",
+        "bn": "সহিহ বর্ণনায় নবী ﷺ-এর মক্কার প্রতি ভালোবাসা জানা যায়; তবে এই নির্দিষ্ট দোয়াটি উদ্ধৃত উৎসে প্রমাণিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 35,
+      "text": {
+        "en": "The bed of a single man is fire. Poor is the man who has no woman, and poor is the woman who has no man.",
+        "bn": "অবিবাহিত পুরুষের বিছানা আগুন; যে পুরুষের কোনো নারী নেই সে দরিদ্র, আর যে নারীর কোনো পুরুষ নেই সেও দরিদ্র।"
+      },
+      "status": {
+        "code": "not_a_hadith",
+        "en": "These words are not established as the words of the Prophet ﷺ.",
+        "bn": "এই কথাগুলো নবী ﷺ-এর বক্তব্য হিসেবে প্রমাণিত নয়।"
+      },
+      "explanation": {
+        "en": "Marriage has authentic guidance in Islam, but this wording should not be used to shame unmarried people or presented as a hadith.",
+        "bn": "ইসলামে বিবাহ সম্পর্কে সহিহ নির্দেশনা রয়েছে; তবে এই বাক্য ব্যবহার করে অবিবাহিত মানুষকে হেয় করা বা এটিকে হাদিস বলা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 36,
+      "text": {
+        "en": "Do not despise tribulation, for it will reap the hypocrites.",
+        "bn": "বিপদকে তুচ্ছ মনে করো না; কারণ তা মুনাফিকদের ধ্বংস করবে।"
+      },
+      "status": {
+        "code": "not_established",
+        "en": "This wording is not known as an established Prophetic hadith.",
+        "bn": "এই বক্তব্যটি প্রমাণিত নববী হাদিস হিসেবে পরিচিত নয়।"
+      },
+      "explanation": {
+        "en": "Trials and patience are discussed in authentic Islamic texts, but this exact statement should not be attributed to the Prophet ﷺ.",
+        "bn": "পরীক্ষা ও ধৈর্য সম্পর্কে সহিহ ইসলামী দলিল রয়েছে; তবে এই নির্দিষ্ট বাক্যকে নবী ﷺ-এর কথা বলা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 37,
+      "text": {
+        "en": "Whoever teaches his brother one verse from the Book of Allah becomes his master.",
+        "bn": "যে ব্যক্তি তার ভাইকে আল্লাহর কিতাবের একটি আয়াত শেখায়, সে তার মনিব হয়ে যায়।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "This report is described as a lie and is not known in the recognised books of the scholars.",
+        "bn": "এই বর্ণনাকে মিথ্যা বলা হয়েছে; আলেমদের স্বীকৃত গ্রন্থে এর কোনো ভিত্তি জানা যায় না।"
+      },
+      "explanation": {
+        "en": "Teaching the Qur’an is a noble deed, but it does not make the teacher a master over the learner in the legal or social sense suggested here.",
+        "bn": "কুরআন শেখানো মহৎ কাজ; কিন্তু এতে এখানে বোঝানো আইনগত বা সামাজিক অর্থে শিক্ষক শিক্ষার্থীর মনিব হয়ে যান না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 38,
+      "text": {
+        "en": "One verse of the Qur’an is better than Muhammad and the family of Muhammad. The Qur’an is the word of Allah, revealed and not created, and nothing resembles it.",
+        "bn": "কুরআনের একটি আয়াত মুহাম্মদ ﷺ ও মুহাম্মদ ﷺ-এর পরিবারের চেয়েও উত্তম। কুরআন আল্লাহর বাণী, সৃষ্ট নয়, আর এর মতো কিছু নেই।"
+      },
+      "status": {
+        "code": "not_reported",
+        "en": "This wording is not reported from the Prophet ﷺ as an authentic hadith.",
+        "bn": "এই বক্তব্যটি নবী ﷺ থেকে সহিহ হাদিস হিসেবে বর্ণিত নয়।"
+      },
+      "explanation": {
+        "en": "Beliefs about the Qur’an must be stated using established Qur’anic and Prophetic evidence; this unattributed wording should not be presented as hadith.",
+        "bn": "কুরআন সম্পর্কে আকিদার কথা প্রমাণিত কুরআন ও সুন্নাহর দলিলে বলতে হবে; এই অপ্রমাণিত বক্তব্যকে হাদিস হিসেবে বলা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 39,
+      "text": {
+        "en": "Whoever lights a lamp in the mosque, the angels and the Bearers of the Throne will continue praying for his forgiveness as long as the lamp is shining.",
+        "bn": "যে ব্যক্তি মসজিদে একটি প্রদীপ জ্বালায়, প্রদীপটি যতক্ষণ জ্বলবে ততক্ষণ ফেরেশতা ও আরশ বহনকারীরা তার জন্য ক্ষমা চাইতে থাকবে।"
+      },
+      "status": {
+        "code": "no_known_chain",
+        "en": "No chain of transmission for this wording from the Prophet ﷺ is known to the cited scholar.",
+        "bn": "এই বক্তব্যের নবী ﷺ পর্যন্ত পৌঁছানো কোনো সনদ উদ্ধৃত আলেমের জানা নেই।"
+      },
+      "explanation": {
+        "en": "Maintaining and serving a mosque can be rewarded, but this specific promise should not be quoted as an authenticated hadith.",
+        "bn": "মসজিদের যত্ন ও সেবা সওয়াবের কাজ হতে পারে; তবে এই নির্দিষ্ট প্রতিশ্রুতিকে প্রমাণিত হাদিস হিসেবে উদ্ধৃত করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 40,
+      "text": {
+        "en": "Whoever recites the surah in which the family of ‘Imran is mentioned on Fridays, Allah and His angels will send blessings upon him until the sun sets.",
+        "bn": "যে ব্যক্তি শুক্রবার সেই সূরা তিলাওয়াত করবে যাতে ইমরানের পরিবার উল্লেখ করা হয়েছে, সূর্য অস্ত যাওয়া পর্যন্ত আল্লাহ ও তাঁর ফেরেশতারা তার ওপর রহমত পাঠাবেন।"
+      },
+      "status": {
+        "code": "very_weak_or_fabricated",
+        "en": "The report is judged very weak or fabricated; it is not an authentic hadith.",
+        "bn": "বর্ণনাটি অত্যন্ত দুর্বল বা জাল হিসেবে চিহ্নিত; এটি সহিহ হাদিস নয়।"
+      },
+      "explanation": {
+        "en": "Surah Aal ‘Imran may be recited at any time, but this special Friday reward is not established through an authentic report.",
+        "bn": "সূরা আলে ইমরান যেকোনো সময় তিলাওয়াত করা যায়; তবে শুক্রবারের এই বিশেষ সওয়াব সহিহ বর্ণনায় প্রমাণিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: When to Read Surat al-Kahf on Friday",
+        "url": "https://islamqa.info/en/answers/10700"
+      }
+    }
+  ]
+}

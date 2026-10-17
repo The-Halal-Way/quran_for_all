@@ -1,0 +1,345 @@
+{
+  "section": {
+    "key": "hadith_verification_guide",
+    "title": {
+      "en": "Hadith Verification Guide",
+      "bn": "হাদিস যাচাই নির্দেশিকা"
+    },
+    "subtitle": {
+      "en": "Verify before you share.",
+      "bn": "শেয়ার করার আগে যাচাই করুন।"
+    },
+    "description": {
+      "en": "A simple guide for checking whether a statement can safely be attributed to the Prophet ﷺ.",
+      "bn": "কোনো বক্তব্য নিরাপদভাবে নবী ﷺ-এর নামে বলা যায় কি না, তা বোঝার জন্য একটি সহজ নির্দেশিকা।"
+    },
+    "editorial_note": {
+      "en": "This is an educational guide, not a replacement for qualified hadith scholars. A report may require specialist analysis of its chain and wording.",
+      "bn": "এটি একটি শিক্ষামূলক নির্দেশিকা; যোগ্য হাদিসবিশারদের বিকল্প নয়। কোনো বর্ণনার সনদ ও বক্তব্য বিশ্লেষণের জন্য বিশেষজ্ঞের প্রয়োজন হতে পারে।"
+    }
+  },
+  "items": [
+    {
+      "id": 1,
+      "type": "principle",
+      "title": {
+        "en": "Do not attribute a statement without evidence",
+        "bn": "প্রমাণ ছাড়া কোনো বক্তব্য নবী ﷺ-এর নামে বলবেন না"
+      },
+      "content": {
+        "en": "Before writing ‘The Prophet ﷺ said’, confirm that the statement has a reliable source and that the source actually attributes it to the Prophet ﷺ.",
+        "bn": "‘নবী ﷺ বলেছেন’ লেখার আগে নিশ্চিত হন যে বক্তব্যটির নির্ভরযোগ্য উৎস আছে এবং সেই উৎস সত্যিই এটি নবী ﷺ-এর বক্তব্য হিসেবে উল্লেখ করেছে।"
+      },
+      "action": {
+        "en": "If you cannot verify it, write ‘This statement is commonly circulated’ instead of attributing it to the Prophet ﷺ.",
+        "bn": "যাচাই করতে না পারলে নবী ﷺ-এর নামে না বলে লিখুন, ‘বক্তব্যটি প্রচলিত’, অথবা এটি প্রকাশ করবেন না।"
+      },
+      "source": {
+        "title": "Sahih al-Bukhari 106",
+        "url": "https://sunnah.com/bukhari:106"
+      }
+    },
+    {
+      "id": 2,
+      "type": "warning",
+      "title": {
+        "en": "Good intentions do not authenticate a hadith",
+        "bn": "ভালো নিয়ত কোনো হাদিসকে সহিহ বানায় না"
+      },
+      "content": {
+        "en": "A person may share a statement to encourage good, but a good intention does not make an unverified or fabricated report a Prophetic hadith.",
+        "bn": "কেউ ভালো কাজের উৎসাহ দিতে কোনো বক্তব্য শেয়ার করতে পারেন; কিন্তু ভালো নিয়ত কোনো অযাচাইকৃত বা জাল বর্ণনাকে নবী ﷺ-এর হাদিস বানায় না।"
+      },
+      "action": {
+        "en": "Verify the report first, then share it with the correct status and source.",
+        "bn": "প্রথমে বর্ণনাটি যাচাই করুন; এরপর সঠিক মান ও উৎস উল্লেখ করে শেয়ার করুন।"
+      },
+      "source": {
+        "title": "IslamQA: He sent a hadith to spread good, then found it was fabricated",
+        "url": "https://islamqa.info/en/answers/66273"
+      }
+    },
+    {
+      "id": 3,
+      "type": "method",
+      "title": {
+        "en": "Find the exact wording",
+        "bn": "সঠিক বক্তব্যটি খুঁজুন"
+      },
+      "content": {
+        "en": "A quotation may exist in several translations or shortened forms. Small changes can alter its meaning or make a scholar’s statement look like a Prophetic hadith.",
+        "bn": "একটি বক্তব্যের একাধিক অনুবাদ বা সংক্ষিপ্ত রূপ থাকতে পারে। সামান্য পরিবর্তনে অর্থ বদলে যেতে পারে, অথবা কোনো আলেমের বক্তব্যকে নবী ﷺ-এর হাদিস মনে হতে পারে।"
+      },
+      "action": {
+        "en": "Search the exact phrase, and if possible compare the Arabic wording with a reliable translation.",
+        "bn": "সঠিক বাক্যাংশ দিয়ে অনুসন্ধান করুন এবং সম্ভব হলে নির্ভরযোগ্য অনুবাদের সঙ্গে আরবি বক্তব্য মিলিয়ে দেখুন।"
+      },
+      "source": {
+        "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    },
+    {
+      "id": 4,
+      "type": "method",
+      "title": {
+        "en": "Locate the primary source",
+        "bn": "মূল উৎস খুঁজে বের করুন"
+      },
+      "content": {
+        "en": "A social-media image, video, blog, or message is not the original hadith source. It may omit the reference or change the wording.",
+        "bn": "সামাজিক যোগাযোগমাধ্যমের ছবি, ভিডিও, ব্লগ বা মেসেজ মূল হাদিসের উৎস নয়। এতে রেফারেন্স বাদ পড়তে বা বক্তব্য পরিবর্তিত হতে পারে।"
+      },
+      "action": {
+        "en": "Look for the collection name, book, chapter, hadith number, Arabic text, and a recognized grading.",
+        "bn": "গ্রন্থের নাম, কিতাব বা অধ্যায়, হাদিস নম্বর, আরবি বক্তব্য এবং স্বীকৃত হাদিসের মান খুঁজুন।"
+      },
+      "source": {
+        "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    },
+    {
+      "id": 5,
+      "type": "method",
+      "title": {
+        "en": "Check the hadith grading",
+        "bn": "হাদিসের মান যাচাই করুন"
+      },
+      "content": {
+        "en": "A reference alone does not prove authenticity. Check whether qualified hadith scholars graded the report as sahih, hasan, da‘if, mawdu‘, or otherwise.",
+        "bn": "শুধু রেফারেন্স থাকলেই হাদিস সহিহ প্রমাণিত হয় না। যোগ্য হাদিসবিশারদরা বর্ণনাটিকে সহিহ, হাসান, দুর্বল, জাল বা অন্য কোনো মান দিয়েছেন কি না দেখুন।"
+      },
+      "action": {
+        "en": "Record the grading used by the source and avoid presenting a disputed report as universally authentic.",
+        "bn": "উৎসে দেওয়া মানটি উল্লেখ করুন এবং মতভেদপূর্ণ বর্ণনাকে সর্বসম্মত সহিহ হিসেবে উপস্থাপন করবেন না।"
+      },
+      "source": {
+        "title": "IslamQA: The science of hadith is based on reason and shar‘i guidelines",
+        "url": "https://islamqa.info/en/answers/239540"
+      }
+    },
+    {
+      "id": 6,
+      "type": "status",
+      "title": {
+        "en": "Understand the main status labels",
+        "bn": "প্রধান হাদিসের মানগুলো বুঝুন"
+      },
+      "labels": [
+        {
+          "code": "sahih",
+          "en": "Authentic: accepted as reliable according to hadith standards.",
+          "bn": "সহিহ: হাদিসের মানদণ্ড অনুযায়ী নির্ভরযোগ্য হিসেবে গ্রহণযোগ্য।"
+        },
+        {
+          "code": "hasan",
+          "en": "Good: acceptable, although below sahih in strength.",
+          "bn": "হাসান: গ্রহণযোগ্য, তবে শক্তির দিক থেকে সহিহের নিচে।"
+        },
+        {
+          "code": "daif",
+          "en": "Weak: it has a problem affecting its strength or reliability.",
+          "bn": "দুর্বল: এর সনদ বা নির্ভরযোগ্যতায় সমস্যা রয়েছে।"
+        },
+        {
+          "code": "mawdu",
+          "en": "Fabricated: invented and falsely attributed to the Prophet ﷺ.",
+          "bn": "জাল: বানানো এবং মিথ্যাভাবে নবী ﷺ-এর নামে আরোপিত।"
+        },
+        {
+          "code": "la_yasih",
+          "en": "Not authentic: it has not been established as sahih.",
+          "bn": "সহিহ নয়: সহিহ হিসেবে প্রমাণিত হয়নি।"
+        },
+        {
+          "code": "la_asla_lahu",
+          "en": "No known basis: no reliable source has been found for the report.",
+          "bn": "কোনো ভিত্তি জানা নেই: বর্ণনাটির নির্ভরযোগ্য উৎস পাওয়া যায়নি।"
+        }
+      ],
+      "source": {
+        "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    },
+    {
+      "id": 7,
+      "type": "distinction",
+      "title": {
+        "en": "A Companion’s statement is not automatically a hadith",
+        "bn": "সাহাবির বক্তব্য স্বয়ংক্রিয়ভাবে হাদিস নয়"
+      },
+      "content": {
+        "en": "A report may be attributed to the Prophet ﷺ, a Companion, a Successor, a later scholar, or an unknown person. These are not the same level of attribution.",
+        "bn": "কোনো বর্ণনা নবী ﷺ, সাহাবি, তাবেয়ি, পরবর্তী আলেম বা অজ্ঞাত ব্যক্তির নামে হতে পারে। এগুলো একই স্তরের বক্তব্য নয়।"
+      },
+      "action": {
+        "en": "Show the narrator or speaker clearly. Do not convert a scholar’s wisdom into a Prophetic quote.",
+        "bn": "বক্তা বা বর্ণনাকারীর পরিচয় স্পষ্টভাবে দেখান। কোনো আলেমের জ্ঞানগর্ভ কথা নবী ﷺ-এর উক্তিতে রূপান্তর করবেন না।"
+      },
+      "source": {
+        "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    },
+    {
+      "id": 8,
+      "type": "warning_sign",
+      "title": {
+        "en": "Be cautious with guaranteed rewards and punishments",
+        "bn": "নিশ্চিত সওয়াব ও শাস্তির দাবিতে সতর্ক থাকুন"
+      },
+      "content": {
+        "en": "Reports promising an enormous reward for a tiny action, or a specific punishment for a small mistake, require careful verification. Fabricated reports often use exaggerated numbers and dramatic promises.",
+        "bn": "সামান্য কাজের জন্য বিশাল সওয়াব বা ছোট ভুলের জন্য নির্দিষ্ট শাস্তির দাবি থাকলে সতর্কভাবে যাচাই করুন। জাল বর্ণনায় প্রায়ই অতিরঞ্জিত সংখ্যা ও নাটকীয় প্রতিশ্রুতি থাকে।"
+      },
+      "action": {
+        "en": "Do not share the reward or punishment until a reliable source confirms it.",
+        "bn": "নির্ভরযোগ্য উৎস নিশ্চিত না করা পর্যন্ত সেই সওয়াব বা শাস্তির কথা শেয়ার করবেন না।"
+      },
+      "source": {
+        "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    },
+    {
+      "id": 9,
+      "type": "warning_sign",
+      "title": {
+        "en": "Be careful with ‘share this or else’ messages",
+        "bn": "‘শেয়ার না করলে বিপদ হবে’ ধরনের বার্তায় সতর্ক থাকুন"
+      },
+      "content": {
+        "en": "Messages that promise reward for forwarding, threaten sin for not forwarding, or predict an unseen event are not automatically Islamic evidence.",
+        "bn": "ফরওয়ার্ড করলে সওয়াব, ফরওয়ার্ড না করলে গুনাহ, অথবা ভবিষ্যৎ বিপদের ভবিষ্যদ্বাণী—এসব বার্তা স্বয়ংক্রিয়ভাবে ইসলামী দলিল নয়।"
+      },
+      "action": {
+        "en": "Do not forward the message until its religious claim and source have been verified.",
+        "bn": "বার্তাটির ধর্মীয় দাবি ও উৎস যাচাই না করা পর্যন্ত ফরওয়ার্ড করবেন না।"
+      },
+      "source": {
+        "title": "IslamQA: Messages saying ‘forward this or you will be sinning’",
+        "url": "https://islamqa.info/en/answers/101317"
+      }
+    },
+    {
+      "id": 10,
+      "type": "distinction",
+      "title": {
+        "en": "Weak is not the same as fabricated",
+        "bn": "দুর্বল ও জাল এক জিনিস নয়"
+      },
+      "content": {
+        "en": "A weak report has a problem in its chain or evidence. A fabricated report is invented and falsely attributed. The two labels should not be used interchangeably.",
+        "bn": "দুর্বল বর্ণনার সনদ বা প্রমাণে সমস্যা থাকে। জাল বর্ণনা বানানো এবং মিথ্যাভাবে আরোপিত। এই দুটি মানকে একই অর্থে ব্যবহার করা উচিত নয়।"
+      },
+      "action": {
+        "en": "Display the exact status given by the scholarly source instead of simply labeling every unverified report ‘fake’.",
+        "bn": "প্রতিটি অযাচাইকৃত বর্ণনাকে শুধু ‘ভুয়া’ না বলে আলেমের উৎসে দেওয়া সঠিক মানটি দেখান।"
+      },
+      "source": {
+        "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    },
+    {
+      "id": 11,
+      "type": "method",
+      "title": {
+        "en": "Compare the wording with established teachings",
+        "bn": "প্রতিষ্ঠিত শিক্ষার সঙ্গে বক্তব্য মিলিয়ে দেখুন"
+      },
+      "content": {
+        "en": "Scholars examine both the chain and the text. A report that conflicts with clear Qur’anic principles, stronger authentic hadiths, or established facts needs specialist review.",
+        "bn": "আলেমরা সনদ ও বক্তব্য—দুটিই পরীক্ষা করেন। কোনো বর্ণনা কুরআনের স্পষ্ট নীতি, শক্তিশালী সহিহ হাদিস বা প্রতিষ্ঠিত সত্যের বিরোধী হলে বিশেষজ্ঞের পর্যালোচনা দরকার।"
+      },
+      "action": {
+        "en": "Do not reject a report only because it sounds unfamiliar; use qualified scholarly analysis.",
+        "bn": "শুধু অপরিচিত মনে হলেই বর্ণনা বাতিল করবেন না; যোগ্য আলেমের বিশ্লেষণ অনুসরণ করুন।"
+      },
+      "source": {
+        "title": "IslamQA: The science of hadith is based on reason and shar‘i guidelines",
+        "url": "https://islamqa.info/en/answers/239540"
+      }
+    },
+    {
+      "id": 12,
+      "type": "sharing_rule",
+      "title": {
+        "en": "If the report is weak, label it clearly",
+        "bn": "বর্ণনা দুর্বল হলে তা স্পষ্টভাবে লিখুন"
+      },
+      "content": {
+        "en": "A weak report must never be presented with confident wording such as ‘The Prophet ﷺ definitely said’. If it is shown for educational purposes, its weakness must be visible.",
+        "bn": "দুর্বল বর্ণনাকে ‘নবী ﷺ অবশ্যই বলেছেন’—এভাবে নিশ্চিত ভাষায় উপস্থাপন করা যাবে না। শিক্ষামূলক কারণে দেখালে তার দুর্বলতা স্পষ্টভাবে দেখাতে হবে।"
+      },
+      "action": {
+        "en": "Use labels such as ‘weak narration’, ‘not authentic’, or ‘scholars differed’ according to the source.",
+        "bn": "উৎস অনুযায়ী ‘দুর্বল বর্ণনা’, ‘সহিহ নয়’ বা ‘আলেমদের মধ্যে মতভেদ রয়েছে’—এ ধরনের লেবেল ব্যবহার করুন।"
+      },
+      "source": {
+        "title": "IslamQA: The ruling on fabricated narrations",
+        "url": "https://islamqa.org/hanafi/hadithanswers/122689/the-ruling-of-fabricated-narrations/"
+      }
+    },
+    {
+      "id": 13,
+      "type": "correction",
+      "title": {
+        "en": "Correct a mistaken share",
+        "bn": "ভুলভাবে শেয়ার করলে সংশোধন করুন"
+      },
+      "content": {
+        "en": "If you discover that you shared a fabricated or wrongly attributed report, remove it where possible and publish a correction so that others are not misled.",
+        "bn": "আপনি যদি জানতে পারেন যে জাল বা ভুলভাবে আরোপিত কোনো বর্ণনা শেয়ার করেছেন, সম্ভব হলে তা মুছে দিন এবং সংশোধনী প্রকাশ করুন, যাতে অন্যরা বিভ্রান্ত না হয়।"
+      },
+      "action": {
+        "en": "Write: ‘Correction: this statement is not established as an authentic hadith. Please do not attribute it to the Prophet ﷺ.’",
+        "bn": "লিখুন: ‘সংশোধন: বক্তব্যটি সহিহ হাদিস হিসেবে প্রমাণিত নয়। অনুগ্রহ করে এটি নবী ﷺ-এর নামে বলবেন না।’"
+      },
+      "source": {
+        "title": "IslamQA: He sent a hadith to spread good, then found it was fabricated",
+        "url": "https://islamqa.info/en/answers/66273"
+      }
+    },
+    {
+      "id": 14,
+      "type": "app_checklist",
+      "title": {
+        "en": "App publishing checklist",
+        "bn": "অ্যাপে প্রকাশের আগে যাচাই তালিকা"
+      },
+      "checklist": [
+        {
+          "en": "Is the exact text preserved?",
+          "bn": "মূল বক্তব্যটি কি অপরিবর্তিত আছে?"
+        },
+        {
+          "en": "Is the narrator or speaker identified?",
+          "bn": "বক্তা বা বর্ণনাকারীর পরিচয় কি দেওয়া আছে?"
+        },
+        {
+          "en": "Is the book and hadith number provided?",
+          "bn": "গ্রন্থ ও হাদিস নম্বর কি দেওয়া আছে?"
+        },
+        {
+          "en": "Is the grading visible to the user?",
+          "bn": "হাদিসের মান কি ব্যবহারকারীর কাছে স্পষ্ট?"
+        },
+        {
+          "en": "Is disagreement between scholars explained fairly?",
+          "bn": "আলেমদের মতভেদ থাকলে কি ন্যায্যভাবে ব্যাখ্যা করা হয়েছে?"
+        },
+        {
+          "en": "Are fabricated reports clearly marked and not promoted as religious proof?",
+          "bn": "জাল বর্ণনা কি স্পষ্টভাবে চিহ্নিত এবং ধর্মীয় দলিল হিসেবে প্রচার না করা হয়েছে?"
+        }
+      ],
+      "source": {
+        "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+        "url": "https://islamqa.info/en/answers/6981"
+      }
+    }
+  ]
+}

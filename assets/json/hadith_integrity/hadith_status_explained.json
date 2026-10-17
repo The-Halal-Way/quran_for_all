@@ -1,0 +1,380 @@
+{
+  "section": {
+    "key": "hadith_status_explained",
+    "title": {
+      "en": "Hadith Status Explained",
+      "bn": "হাদিসের মান ও পরিভাষা"
+    },
+    "subtitle": {
+      "en": "Understand what each label really means.",
+      "bn": "প্রতিটি হাদিসের মানের প্রকৃত অর্থ বুঝুন।"
+    },
+    "description": {
+      "en": "A simple reference for understanding hadith grades, attribution labels, and common chain terminology.",
+      "bn": "হাদিসের মান, কার বক্তব্য হিসেবে বর্ণিত হয়েছে এবং সনদ-সম্পর্কিত সাধারণ পরিভাষা বোঝার জন্য একটি সহজ রেফারেন্স।"
+    },
+    "editorial_note": {
+      "en": "Hadith terminology can involve detailed scholarly differences. These short explanations are introductory and should not replace specialist hadith analysis.",
+      "bn": "হাদিসের পরিভাষায় বিস্তারিত আলেমি মতভেদ থাকতে পারে। এই সংক্ষিপ্ত ব্যাখ্যাগুলো প্রাথমিক ধারণার জন্য; বিশেষজ্ঞ হাদিস বিশ্লেষণের বিকল্প নয়।"
+    }
+  },
+  "groups": [
+    {
+      "key": "authenticity_grades",
+      "title": {
+        "en": "Authenticity and reliability grades",
+        "bn": "সহিহতা ও নির্ভরযোগ্যতার মান"
+      },
+      "items": [
+        {
+          "code": "sahih",
+          "arabic": "صحيح",
+          "title": {
+            "en": "Sahih — Authentic",
+            "bn": "সহিহ — প্রমাণিত ও নির্ভরযোগ্য"
+          },
+          "meaning": {
+            "en": "A hadith that meets the accepted conditions of authenticity, including a connected chain, reliable narrators, accurate transmission, and freedom from serious hidden defects or contradiction.",
+            "bn": "যে হাদিসে সহিহতার স্বীকৃত শর্তগুলো পূরণ হয়—যেমন সংযুক্ত সনদ, নির্ভরযোগ্য বর্ণনাকারী, যথাযথ সংরক্ষণ এবং গুরুতর গোপন ত্রুটি বা বিরোধ না থাকা।"
+          },
+          "app_label": {
+            "en": "Authentic",
+            "bn": "সহিহ"
+          },
+          "important_note": {
+            "en": "Sahih describes the report’s reliability; it does not mean every legal or theological interpretation is automatically simple or undisputed.",
+            "bn": "সহিহ বলতে বর্ণনার নির্ভরযোগ্যতা বোঝায়; এর অর্থ এই নয় যে প্রতিটি ফিকহি বা আকিদাগত ব্যাখ্যা স্বয়ংক্রিয়ভাবে সহজ বা মতভেদহীন।"
+          }
+        },
+        {
+          "code": "hasan",
+          "arabic": "حسن",
+          "title": {
+            "en": "Hasan — Good or acceptable",
+            "bn": "হাসান — ভালো বা গ্রহণযোগ্য"
+          },
+          "meaning": {
+            "en": "A report that is generally acceptable, but whose narrators or precision do not reach the level of a sahih hadith.",
+            "bn": "যে বর্ণনা সাধারণভাবে গ্রহণযোগ্য, তবে এর বর্ণনাকারী বা সংরক্ষণ-নির্ভুলতা সহিহ হাদিসের স্তরে পৌঁছায় না।"
+          },
+          "app_label": {
+            "en": "Good / acceptable",
+            "bn": "হাসান / গ্রহণযোগ্য"
+          },
+          "important_note": {
+            "en": "Hasan is not the same as fabricated. It is commonly treated as usable evidence, subject to scholarly context.",
+            "bn": "হাসান জাল হাদিসের মতো নয়। আলেমি প্রেক্ষাপট অনুযায়ী এটি সাধারণত গ্রহণযোগ্য দলিল হিসেবে ব্যবহৃত হয়।"
+          }
+        },
+        {
+          "code": "daif",
+          "arabic": "ضعيف",
+          "title": {
+            "en": "Da‘if — Weak",
+            "bn": "দুর্বল — দাঈফ"
+          },
+          "meaning": {
+            "en": "A report that does not meet the conditions required for sahih or hasan, because of a problem in its chain, narrator, accuracy, wording, or another factor.",
+            "bn": "যে বর্ণনা সনদ, বর্ণনাকারী, সংরক্ষণ, বক্তব্য বা অন্য কোনো সমস্যার কারণে সহিহ বা হাসানের শর্ত পূরণ করে না।"
+          },
+          "app_label": {
+            "en": "Weak narration",
+            "bn": "দুর্বল বর্ণনা"
+          },
+          "important_note": {
+            "en": "Weak does not automatically mean fabricated. It means the report has not reached the required level of reliability.",
+            "bn": "দুর্বল মানেই জাল নয়। এর অর্থ হলো বর্ণনাটি প্রয়োজনীয় নির্ভরযোগ্যতার স্তরে পৌঁছায়নি।"
+          }
+        },
+        {
+          "code": "daif_jiddan",
+          "arabic": "ضعيف جداً",
+          "title": {
+            "en": "Da‘if Jiddan — Very weak",
+            "bn": "অত্যন্ত দুর্বল — দাঈফ জিদ্দান"
+          },
+          "meaning": {
+            "en": "A report with a severe weakness. The problem is more serious than ordinary da‘if, and it should not be treated as an established Prophetic teaching.",
+            "bn": "যে বর্ণনায় গুরুতর দুর্বলতা রয়েছে। সাধারণ দাঈফের তুলনায় এর সমস্যা বেশি এবং এটিকে প্রতিষ্ঠিত নববী শিক্ষা হিসেবে ধরা উচিত নয়।"
+          },
+          "app_label": {
+            "en": "Very weak",
+            "bn": "অত্যন্ত দুর্বল"
+          },
+          "important_note": {
+            "en": "The exact application of very weak reports can differ among scholars; display the source’s full explanation where relevant.",
+            "bn": "অত্যন্ত দুর্বল বর্ণনা ব্যবহারের ক্ষেত্রে আলেমদের মধ্যে পার্থক্য থাকতে পারে; প্রয়োজনে উৎসের পূর্ণ ব্যাখ্যা দেখান।"
+          }
+        },
+        {
+          "code": "mawdu",
+          "arabic": "موضوع",
+          "title": {
+            "en": "Mawdu‘ — Fabricated",
+            "bn": "মাওযূ — জাল বা বানানো"
+          },
+          "meaning": {
+            "en": "A statement invented and falsely attributed to the Prophet ﷺ. It is not a Prophetic hadith.",
+            "bn": "বানানো কোনো বক্তব্যকে মিথ্যাভাবে নবী ﷺ-এর নামে আরোপ করা। এটি নবী ﷺ-এর হাদিস নয়।"
+          },
+          "app_label": {
+            "en": "Fabricated — do not attribute to the Prophet ﷺ",
+            "bn": "জাল — নবী ﷺ-এর নামে বলবেন না"
+          },
+          "important_note": {
+            "en": "If shown for educational warning, mark it clearly as fabricated and never display it as a normal hadith card.",
+            "bn": "সতর্কতামূলক শিক্ষার জন্য দেখালে ‘জাল’ লেবেলটি স্পষ্ট রাখুন এবং সাধারণ হাদিস কার্ড হিসেবে দেখাবেন না।"
+          }
+        },
+        {
+          "code": "la_yasih",
+          "arabic": "لا يصح",
+          "title": {
+            "en": "La Yasih — Not authentic",
+            "bn": "লা ইয়াসিহ — সহিহ নয়"
+          },
+          "meaning": {
+            "en": "A scholarly judgment that the report has not been established as authentic. It may be weak, fabricated, or unsupported depending on the detailed assessment.",
+            "bn": "আলেমদের এমন একটি মূল্যায়ন যে বর্ণনাটি সহিহ হিসেবে প্রমাণিত নয়। বিস্তারিত বিশ্লেষণ অনুযায়ী এটি দুর্বল, জাল বা ভিত্তিহীন হতে পারে।"
+          },
+          "app_label": {
+            "en": "Not authentic",
+            "bn": "সহিহ নয়"
+          },
+          "important_note": {
+            "en": "Do not automatically translate ‘not authentic’ as ‘fabricated’. Keep the source’s exact wording.",
+            "bn": "‘সহিহ নয়’কে স্বয়ংক্রিয়ভাবে ‘জাল’ অনুবাদ করবেন না। উৎসে ব্যবহৃত সঠিক শব্দটি রাখুন।"
+          }
+        },
+        {
+          "code": "la_asla_lahu",
+          "arabic": "لا أصل له",
+          "title": {
+            "en": "La Asla Lahu — No known basis",
+            "bn": "লা আসলা লাহু — কোনো ভিত্তি জানা নেই"
+          },
+          "meaning": {
+            "en": "No reliable basis or recognized source has been found for the statement in the form being circulated.",
+            "bn": "যে রূপে বক্তব্যটি প্রচলিত, তার কোনো নির্ভরযোগ্য ভিত্তি বা স্বীকৃত উৎস পাওয়া যায়নি।"
+          },
+          "app_label": {
+            "en": "No known basis",
+            "bn": "কোনো ভিত্তি জানা নেই"
+          },
+          "important_note": {
+            "en": "This label describes the available evidence; it should not be changed to ‘fabricated’ unless qualified scholars make that judgment.",
+            "bn": "এই লেবেলটি পাওয়া প্রমাণের অবস্থা বোঝায়; যোগ্য আলেমরা জাল বলেছেন এমন না হলে এটিকে ‘জাল’ বানিয়ে লিখবেন না।"
+          }
+        },
+        {
+          "code": "sahih_li_ghayrihi",
+          "arabic": "صحيح لغيره",
+          "title": {
+            "en": "Sahih Li-Ghayrihi — Authentic through supporting routes",
+            "bn": "সহিহ লিগাইরিহি — সমর্থক বর্ণনার কারণে সহিহ"
+          },
+          "meaning": {
+            "en": "A report that may not be strong enough on its own, but becomes strengthened through multiple acceptable supporting chains or reports.",
+            "bn": "যে বর্ণনা এককভাবে যথেষ্ট শক্তিশালী নাও হতে পারে, কিন্তু একাধিক গ্রহণযোগ্য সমর্থক সনদ বা বর্ণনার কারণে শক্তিশালী হয়।"
+          },
+          "app_label": {
+            "en": "Authentic with supporting evidence",
+            "bn": "সমর্থক প্রমাণে সহিহ"
+          },
+          "important_note": {
+            "en": "This is a technical scholarly classification and should be displayed only when the cited source uses it.",
+            "bn": "এটি একটি কারিগরি আলেমি শ্রেণিবিভাগ; উদ্ধৃত উৎসে এই মান থাকলেই ব্যবহার করুন।"
+          }
+        },
+        {
+          "code": "hasan_li_ghayrihi",
+          "arabic": "حسن لغيره",
+          "title": {
+            "en": "Hasan Li-Ghayrihi — Good through supporting routes",
+            "bn": "হাসান লিগাইরিহি — সমর্থক বর্ণনার কারণে হাসান"
+          },
+          "meaning": {
+            "en": "A weak report whose weakness is not severe and which is strengthened by other supporting reports until it reaches an acceptable level.",
+            "bn": "এমন দুর্বল বর্ণনা যার দুর্বলতা অতিরিক্ত গুরুতর নয় এবং সমর্থক বর্ণনার মাধ্যমে তা গ্রহণযোগ্য স্তরে উন্নীত হয়।"
+          },
+          "app_label": {
+            "en": "Acceptable with supporting evidence",
+            "bn": "সমর্থক প্রমাণে গ্রহণযোগ্য"
+          },
+          "important_note": {
+            "en": "Not every weak report becomes hasan through repetition; qualified hadith analysis is required.",
+            "bn": "একাধিকবার বর্ণিত হলেই প্রতিটি দুর্বল হাদিস হাসান হয়ে যায় না; যোগ্য হাদিস বিশ্লেষণ প্রয়োজন।"
+          }
+        }
+      ]
+    },
+    {
+      "key": "attribution_labels",
+      "title": {
+        "en": "Who is the report attributed to?",
+        "bn": "বর্ণনাটি কার বক্তব্য?"
+      },
+      "items": [
+        {
+          "code": "marfu",
+          "arabic": "مرفوع",
+          "title": {
+            "en": "Marfu‘ — Attributed to the Prophet ﷺ",
+            "bn": "মারফূ — নবী ﷺ-এর দিকে সম্বন্ধিত"
+          },
+          "meaning": {
+            "en": "A report attributed to the Prophet ﷺ in words, actions, approvals, or descriptions. Marfu‘ describes attribution, not automatically authenticity.",
+            "bn": "নবী ﷺ-এর কথা, কাজ, অনুমোদন বা বৈশিষ্ট্যের দিকে সম্বন্ধিত বর্ণনা। মারফূ কেবল সম্বন্ধ বোঝায়; এটি স্বয়ংক্রিয়ভাবে সহিহ বোঝায় না।"
+          },
+          "app_label": {
+            "en": "Prophetic report — check its grade",
+            "bn": "নববী বর্ণনা — মান যাচাই করুন"
+          }
+        },
+        {
+          "code": "mawquf",
+          "arabic": "موقوف",
+          "title": {
+            "en": "Mawquf — Attributed to a Companion",
+            "bn": "মাওকূফ — সাহাবির দিকে সম্বন্ধিত"
+          },
+          "meaning": {
+            "en": "A statement, action, or judgment attributed to a Companion rather than directly to the Prophet ﷺ.",
+            "bn": "নবী ﷺ-এর পরিবর্তে কোনো সাহাবির বক্তব্য, কাজ বা সিদ্ধান্তের দিকে সম্বন্ধিত বর্ণনা।"
+          },
+          "app_label": {
+            "en": "Companion report",
+            "bn": "সাহাবির বর্ণনা"
+          },
+          "important_note": {
+            "en": "A mawquf report can still be valuable, but it should not be displayed as a Prophetic hadith.",
+            "bn": "মাওকূফ বর্ণনা মূল্যবান হতে পারে; তবে এটিকে নবী ﷺ-এর হাদিস হিসেবে দেখানো যাবে না।"
+          }
+        },
+        {
+          "code": "maqtu",
+          "arabic": "مقطوع",
+          "title": {
+            "en": "Maqtu‘ — Attributed to a Successor",
+            "bn": "মাকতূ — তাবেয়ির দিকে সম্বন্ধিত"
+          },
+          "meaning": {
+            "en": "A statement or action attributed to a Tabi‘i or another early scholar after the Companions.",
+            "bn": "সাহাবিদের পরবর্তী তাবেয়ি বা প্রাথমিক যুগের অন্য কোনো আলেমের বক্তব্য বা কাজের দিকে সম্বন্ধিত বর্ণনা।"
+          },
+          "app_label": {
+            "en": "Successor or early-scholar report",
+            "bn": "তাবেয়ি বা প্রাথমিক আলেমের বর্ণনা"
+          },
+          "important_note": {
+            "en": "Maqtu‘ is an attribution label, not a declaration that the report is fabricated.",
+            "bn": "মাকতূ একটি সম্বন্ধের লেবেল; এটি বর্ণনাটি জাল—এমন ঘোষণা নয়।"
+          }
+        },
+        {
+          "code": "qudsi",
+          "arabic": "حديث قدسي",
+          "title": {
+            "en": "Hadith Qudsi — Sacred hadith",
+            "bn": "হাদিসে কুদসি — পবিত্র হাদিস"
+          },
+          "meaning": {
+            "en": "A report in which the Prophet ﷺ conveys a meaning attributed to Allah. It is not the Qur’an, and each hadith qudsi must still be checked for authenticity.",
+            "bn": "যে বর্ণনায় নবী ﷺ আল্লাহর দিকে সম্বন্ধিত কোনো বক্তব্য বা অর্থ বর্ণনা করেন। এটি কুরআন নয় এবং প্রতিটি হাদিসে কুদসির সহিহতাও যাচাই করতে হবে।"
+          },
+          "app_label": {
+            "en": "Sacred hadith — verify its grade",
+            "bn": "হাদিসে কুদসি — মান যাচাই করুন"
+          },
+          "important_note": {
+            "en": "The label ‘qudsi’ does not automatically mean sahih.",
+            "bn": "‘হাদিসে কুদসি’ বলা হলেই তা স্বয়ংক্রিয়ভাবে সহিহ হয়ে যায় না।"
+          }
+        }
+      ]
+    },
+    {
+      "key": "chain_terms",
+      "title": {
+        "en": "Common chain terminology",
+        "bn": "সনদ-সম্পর্কিত সাধারণ পরিভাষা"
+      },
+      "items": [
+        {
+          "code": "mursal",
+          "arabic": "مرسل",
+          "title": {
+            "en": "Mursal — A link is omitted before the Companion",
+            "bn": "মুরসাল — সাহাবির আগের একটি সংযোগ বাদ পড়েছে"
+          },
+          "meaning": {
+            "en": "A Tabi‘i attributes a report directly to the Prophet ﷺ without naming the Companion from whom it was received.",
+            "bn": "কোনো তাবেয়ি সাহাবির নাম উল্লেখ না করে সরাসরি নবী ﷺ-এর নামে বর্ণনা করলে তাকে মুরসাল বলা হয়।"
+          },
+          "important_note": {
+            "en": "Scholars differ in how they evaluate mursal reports; do not simplify every mursal report as identical.",
+            "bn": "মুরসাল বর্ণনার মূল্যায়নে আলেমদের মধ্যে পার্থক্য আছে; প্রতিটি মুরসাল বর্ণনাকে একইভাবে বিচার করবেন না।"
+          }
+        },
+        {
+          "code": "munqati",
+          "arabic": "منقطع",
+          "title": {
+            "en": "Munqati‘ — Disconnected chain",
+            "bn": "মুনকাতি — বিচ্ছিন্ন সনদ"
+          },
+          "meaning": {
+            "en": "A chain in which a link is missing at some point, without the specific pattern of omission covered by another technical term.",
+            "bn": "সনদের কোনো পর্যায়ে একটি সংযোগ বাদ পড়েছে, তবে বাদ পড়ার ধরন অন্য কোনো নির্দিষ্ট কারিগরি পরিভাষার মধ্যে পড়ে না।"
+          },
+          "important_note": {
+            "en": "A disconnected chain affects reliability, but the final judgment still requires examining all routes and evidence.",
+            "bn": "বিচ্ছিন্ন সনদ নির্ভরযোগ্যতাকে প্রভাবিত করে; তবে চূড়ান্ত মান নির্ধারণে সব সনদ ও প্রমাণ পরীক্ষা করতে হয়।"
+          }
+        },
+        {
+          "code": "muallaq",
+          "arabic": "معلق",
+          "title": {
+            "en": "Mu‘allaq — Suspended chain",
+            "bn": "মুআল্লাক — ঝুলন্ত বা অসম্পূর্ণ সনদ"
+          },
+          "meaning": {
+            "en": "One or more narrators are omitted from the beginning of the chain as presented by the compiler.",
+            "bn": "গ্রন্থসংকলক যেভাবে সনদটি উল্লেখ করেছেন, তার শুরুতে এক বা একাধিক বর্ণনাকারীর নাম বাদ রয়েছে।"
+          },
+          "important_note": {
+            "en": "A mu‘allaq citation may have a connected route elsewhere; assess the complete source before judging it.",
+            "bn": "অন্য কোনো উৎসে মুআল্লাক বর্ণনার পূর্ণ সনদ থাকতে পারে; তাই মান নির্ধারণের আগে সম্পূর্ণ উৎস দেখুন।"
+          }
+        }
+      ]
+    }
+  ],
+  "display_rules": {
+    "en": [
+      "Always show the exact status used by your source.",
+      "Keep authenticity grade separate from attribution type.",
+      "Do not convert ‘not authentic’ into ‘fabricated’ without evidence.",
+      "Show a source link and hadith number whenever available.",
+      "For disputed reports, show the scholarly disagreement briefly and fairly."
+    ],
+    "bn": [
+      "উৎসে ব্যবহৃত সঠিক মানটি দেখান।",
+      "হাদিসের সহিহতা ও কার বক্তব্য—এই দুটি আলাদা রাখুন।",
+      "প্রমাণ ছাড়া ‘সহিহ নয়’কে ‘জাল’ বানিয়ে লিখবেন না।",
+      "সম্ভব হলে উৎসের লিংক ও হাদিস নম্বর দেখান।",
+      "মতভেদপূর্ণ বর্ণনায় সংক্ষেপে ও ন্যায্যভাবে আলেমদের মতভেদ উল্লেখ করুন।"
+    ]
+  },
+  "sources": [
+    {
+      "title": "IslamQA: How can we tell sound hadiths from fabricated ones?",
+      "url": "https://islamqa.info/en/answers/6981"
+    },
+    {
+      "title": "IslamQA: The science of hadith is based on reason and shar‘i guidelines",
+      "url": "https://islamqa.info/en/answers/239540"
+    }
+  ]
+}

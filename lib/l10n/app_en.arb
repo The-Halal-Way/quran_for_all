@@ -985,6 +985,53 @@
   "zakatReset": "Clear all",
   "dashboardSectionHadith": "Hadith",
   "dashboardSectionBooks": "Books & reflections",
+  "hadithIntegritySectionTitle": "Hadith Integrity",
+  "hadithIntegritySectionSubtitle": "Verify before you share.",
+  "hadithIntegritySectionDescription": "Learn how scholars assess narrations and how to avoid attributing words to the Prophet ﷺ without evidence.",
+  "hadithIntegrityOpen": "Open",
+  "hadithIntegrityHeroKicker": "AUTHENTICITY MATTERS",
+  "hadithIntegrityHeroTitle": "Share with confidence",
+  "hadithIntegrityHeroDescription": "Explore popular narrations, verification principles, hadith status terms, common misconceptions, and authentic warnings.",
+  "hadithIntegrityOverviewLabel": "Explore the collection",
+  "hadithIntegrityPopularLabel": "Popular narrations requiring verification",
+  "hadithIntegrityPartsLabel": "{count} parts",
+  "@hadithIntegrityPartsLabel": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "hadithIntegrityResourcesLabel": "Resources",
+  "hadithIntegrityGuideLabel": "Verification guide",
+  "hadithIntegrityStatusLabel": "Hadith status explained",
+  "hadithIntegrityMisconceptionLabel": "Common misconceptions",
+  "hadithIntegrityWarningsLabel": "Warnings against false attribution",
+  "hadithIntegrityLoading": "Opening Hadith Integrity…",
+  "hadithIntegrityError": "Could not load Hadith Integrity.",
+  "hadithIntegrityRetry": "Retry",
+  "hadithIntegrityItemCount": "{count} items",
+  "@hadithIntegrityItemCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "hadithIntegrityPartLabel": "Part {part}",
+  "@hadithIntegrityPartLabel": {
+    "placeholders": {
+      "part": {
+        "type": "String"
+      }
+    }
+  },
+  "hadithIntegrityViewSource": "View source",
+  "hadithIntegritySourceUnavailable": "Source unavailable",
+  "hadithIntegritySourceLabel": "Source",
+  "hadithIntegrityEditorialNote": "Educational content is not a replacement for qualified hadith scholarship. Verify detailed rulings and grading with reliable source works and qualified scholars.",
+  "hadithIntegritySourceText": "Reference",
+  "hadithIntegrityNoItems": "No entries are available yet.",
   "tasbeehTitle": "Tasbeeh Counter",
   "tasbeehSubtitle": "Count dhikr with focus",
   "tasbeehPhraseTitle": "Dhikr",

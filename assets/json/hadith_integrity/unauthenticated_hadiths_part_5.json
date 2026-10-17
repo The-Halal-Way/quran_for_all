@@ -1,0 +1,219 @@
+{
+  "section": {
+    "key": "famous_unauthenticated_hadiths_part_5",
+    "title": {
+      "en": "Famous Statements Not Authenticated as Hadith — Part 5",
+      "bn": "প্রচলিত কিন্তু প্রমাণিত নয় এমন হাদিস — পর্ব ৫"
+    },
+    "description": {
+      "en": "Further reports connected with special prayers, surah virtues, and popular stories that should not be circulated as authenticated hadith without verification.",
+      "bn": "বিশেষ নামাজ, সূরার ফজিলত এবং প্রচলিত কিছু কাহিনি-সম্পর্কিত আরও কিছু বর্ণনা, যেগুলো যাচাই ছাড়া প্রমাণিত হাদিস হিসেবে প্রচার করা উচিত নয়।"
+    },
+    "editorial_note": {
+      "en": "Some entries concern an entire type of report rather than one short sentence. The wording is summarized so the app can clearly show what claim is being assessed.",
+      "bn": "কিছু আইটেম একটি নির্দিষ্ট বাক্যের বদলে একটি নির্দিষ্ট ধরনের বর্ণনা নিয়ে। অ্যাপে কোন দাবির মান যাচাই করা হচ্ছে তা স্পষ্ট রাখার জন্য বক্তব্য সংক্ষেপে দেওয়া হয়েছে।"
+    }
+  },
+  "items": [
+    {
+      "id": 41,
+      "text": {
+        "en": "A special two-rak‘ah prayer should be performed every Thursday during Sha‘ban with promised special rewards.",
+        "bn": "শাবান মাসের প্রতি বৃহস্পতিবার বিশেষ সওয়াবের আশায় দুই রাকাত বিশেষ নামাজ পড়তে হবে।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "The narration prescribing this prayer is fabricated and has no basis in the books of Sunnah.",
+        "bn": "এই নামাজ নির্ধারণকারী বর্ণনাটি জাল এবং সুন্নাহর গ্রন্থগুলোতে এর কোনো ভিত্তি নেই।"
+      },
+      "explanation": {
+        "en": "Voluntary prayer is generally virtuous, but assigning a particular weekday, number of rak‘ahs, and special reward requires authentic evidence.",
+        "bn": "সাধারণ নফল নামাজ ফজিলতপূর্ণ; তবে নির্দিষ্ট বার, রাকাত সংখ্যা ও বিশেষ সওয়াব নির্ধারণের জন্য সহিহ দলিল প্রয়োজন।"
+      },
+      "source": {
+        "title": "IslamQA: Fabricated Hadeeth About Praying Two Rak‘ahs Every Thursday During Sha‘ban",
+        "url": "https://islamqa.info/en/answers/154397"
+      }
+    },
+    {
+      "id": 42,
+      "text": {
+        "en": "A special prayer and fixed worship on the fifteenth night of Sha‘ban are established by Prophetic hadith.",
+        "bn": "শাবান মাসের পনেরোতম রাতে বিশেষ নামাজ ও নির্দিষ্ট ইবাদত সহিহ নববী হাদিসে প্রতিষ্ঠিত।"
+      },
+      "status": {
+        "code": "weak_or_fabricated_reports",
+        "en": "Reports prescribing specific prayers and worship for this night are weak or fabricated according to the cited scholarly discussion.",
+        "bn": "এই রাতে নির্দিষ্ট নামাজ ও ইবাদত নির্ধারণকারী বর্ণনাগুলো উদ্ধৃত আলেমদের আলোচনায় দুর্বল বা জাল হিসেবে উল্লেখিত।"
+      },
+      "explanation": {
+        "en": "A Muslim may worship Allah at any time, but a special ritual must not be presented as Sunnah without reliable evidence.",
+        "bn": "মুসলিম যেকোনো সময় আল্লাহর ইবাদত করতে পারেন; তবে নির্ভরযোগ্য প্রমাণ ছাড়া কোনো বিশেষ আমলকে সুন্নাহ বলা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Shab e Barat / 15th Night of Sha‘ban",
+        "url": "https://islamqa.info/en/answers/154850"
+      }
+    },
+    {
+      "id": 43,
+      "text": {
+        "en": "On the fifteenth night of Sha‘ban, one hundred rak‘ahs should be prayed, reciting Surah al-Ikhlas ten times in every rak‘ah, with a special guaranteed reward.",
+        "bn": "শাবান মাসের পনেরোতম রাতে একশ রাকাত নামাজ পড়তে হবে এবং প্রতি রাকাতে দশবার সূরা ইখলাস পড়লে বিশেষ নিশ্চিত সওয়াব পাওয়া যাবে।"
+      },
+      "status": {
+        "code": "fabricated",
+        "en": "This prescribed prayer is described by hadith scholars as fabricated and is not an established Sunnah.",
+        "bn": "এই নির্ধারিত নামাজকে হাদিসবিশারদরা জাল বলেছেন; এটি প্রমাণিত সুন্নাহ নয়।"
+      },
+      "explanation": {
+        "en": "The exact number of rak‘ahs, repetition, and promised reward are not established by an authentic Prophetic report.",
+        "bn": "রাকাতের নির্দিষ্ট সংখ্যা, পুনরাবৃত্তি এবং প্রতিশ্রুত সওয়াব কোনো সহিহ নববী বর্ণনায় প্রমাণিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Shab e Barat / 15th Night of Sha‘ban",
+        "url": "https://islamqa.info/en/answers/154850"
+      }
+    },
+    {
+      "id": 44,
+      "text": {
+        "en": "Surah al-Muzzammil has a special set of guaranteed worldly and spiritual benefits assigned to it by a Prophetic hadith.",
+        "bn": "সূরা আল-মুযযাম্মিলের জন্য নবী ﷺ বিশেষ দুনিয়াবি ও আখিরাতের নিশ্চিত উপকার নির্ধারণ করেছেন।"
+      },
+      "status": {
+        "code": "fabricated_report",
+        "en": "Hadiths claiming specific virtues for Surah al-Muzzammil are described as fabricated.",
+        "bn": "সূরা আল-মুযযাম্মিলের নির্দিষ্ট ফজিলত দাবি করা হাদিসগুলোকে জাল বলা হয়েছে।"
+      },
+      "explanation": {
+        "en": "The surah may be recited as Qur’an, but invented promises of fixed benefits should not be attributed to the Prophet ﷺ.",
+        "bn": "সূরাটি কুরআন হিসেবে তিলাওয়াত করা যায়; তবে নির্দিষ্ট উপকারের বানানো প্রতিশ্রুতি নবী ﷺ-এর নামে বলা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Virtues of Quran",
+        "url": "https://islamqa.info/en/categories/topics/32/virtues-of-quraan"
+      }
+    },
+    {
+      "id": 45,
+      "text": {
+        "en": "Surah al-Zalzalah is equal to half of the Qur’an in reward.",
+        "bn": "সূরা আল-যিলযালার সওয়াব অর্ধেক কুরআনের সমান।"
+      },
+      "status": {
+        "code": "not_authentic",
+        "en": "The hadith making this comparison is inauthentic.",
+        "bn": "এই তুলনা করা হাদিসটি সহিহ নয়।"
+      },
+      "explanation": {
+        "en": "The surah has great meaning and may be recited, but its reward should not be described as equal to half the Qur’an without authentic proof.",
+        "bn": "সূরাটির গভীর অর্থ রয়েছে এবং তা তিলাওয়াত করা যায়; তবে সহিহ প্রমাণ ছাড়া এর সওয়াবকে অর্ধেক কুরআনের সমান বলা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Virtues of Quran",
+        "url": "https://islamqa.info/en/categories/topics/32/virtues-of-quraan"
+      }
+    },
+    {
+      "id": 46,
+      "text": {
+        "en": "A Bedouin prayed rapidly, pecking like a bird; ‘Ali told him not to do so, and the Bedouin replied that if ‘Ali’s father had prayed that way he would not have entered Hell.",
+        "bn": "এক বেদুঈন পাখির মতো ঠোকর দিয়ে দ্রুত নামাজ পড়ল। আলী তাকে এমন না করতে বললে বেদুঈন জবাব দিল, ‘আলীর পিতা এভাবে নামাজ পড়লে জাহান্নামে যেতেন না।’"
+      },
+      "status": {
+        "code": "fabricated_story",
+        "en": "This story is described as a lie and is not an authentic hadith.",
+        "bn": "এই কাহিনিটিকে মিথ্যা বলা হয়েছে; এটি সহিহ হাদিস নয়।"
+      },
+      "explanation": {
+        "en": "Correct prayer and tranquillity are established through authentic evidence, but this insulting story should not be presented as a Prophetic report.",
+        "bn": "সঠিকভাবে ও স্থিরতার সঙ্গে নামাজ পড়ার শিক্ষা সহিহ দলিলে রয়েছে; তবে এই অপমানজনক কাহিনিকে নববী বর্ণনা হিসেবে বলা যাবে না।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 47,
+      "text": {
+        "en": "When Salman al-Farsi was eating grapes, the Prophet ﷺ said ‘Du, du,’ meaning ‘eat them two by two.’",
+        "bn": "সালমান আল-ফারসি আঙুর খাওয়ার সময় নবী ﷺ বললেন, ‘দু, দু’, অর্থাৎ ‘দুইটি করে খাও।’"
+      },
+      "status": {
+        "code": "false_report",
+        "en": "These are not established as the words of the Prophet ﷺ; the report is described as false.",
+        "bn": "এগুলো নবী ﷺ-এর বক্তব্য হিসেবে প্রমাণিত নয়; বর্ণনাটিকে মিথ্যা বলা হয়েছে।"
+      },
+      "explanation": {
+        "en": "Stories about the Prophet’s table manners require a verified chain; this humorous wording should not be circulated as hadith.",
+        "bn": "নবী ﷺ-এর খাবার ও আচার-ব্যবহার সম্পর্কিত কাহিনির জন্য যাচাই করা সনদ দরকার; এই হাস্যরসাত্মক বক্তব্যকে হাদিস হিসেবে প্রচার করা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 48,
+      "text": {
+        "en": "Whoever mistreats a non-Muslim living under Muslim protection, Allah—or the Prophet ﷺ—will be his opponent on the Day of Resurrection.",
+        "bn": "মুসলিম শাসনের অধীনে থাকা কোনো অমুসলিমের সঙ্গে যে দুর্ব্যবহার করবে, কিয়ামতের দিন আল্লাহ—অথবা নবী ﷺ—তার প্রতিপক্ষ হবেন।"
+      },
+      "status": {
+        "code": "weak_wording",
+        "en": "This wording is weak. A different authentic warning exists regarding killing a protected non-Muslim unjustly.",
+        "bn": "এই শব্দের বর্ণনাটি দুর্বল। তবে সুরক্ষাপ্রাপ্ত অমুসলিমকে অন্যায়ভাবে হত্যার বিষয়ে ভিন্ন একটি সহিহ সতর্কবাণী রয়েছে।"
+      },
+      "explanation": {
+        "en": "The general principle of justice and protection is important, but weak wording should not replace the authentic reports that establish it.",
+        "bn": "ন্যায় ও সুরক্ষার সাধারণ নীতি গুরুত্বপূর্ণ; তবে তা প্রতিষ্ঠার জন্য দুর্বল বর্ণনার বদলে সহিহ বর্ণনা ব্যবহার করা উচিত।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 49,
+      "text": {
+        "en": "When you discuss disputes among my Companions, remain silent; and when you discuss divine decree, remain silent.",
+        "bn": "তোমরা যখন আমার সাহাবিদের পারস্পরিক মতভেদ নিয়ে আলোচনা করবে, তখন নীরব থাকবে; আর তাকদির নিয়ে আলোচনা করলে নীরব থাকবে।"
+      },
+      "status": {
+        "code": "broken_chain",
+        "en": "The report is transmitted through interrupted chains and is not established as an authentic hadith in this form.",
+        "bn": "বর্ণনাটি বিচ্ছিন্ন সনদে এসেছে; এই রূপে এটি সহিহ হাদিস হিসেবে প্রমাণিত নয়।"
+      },
+      "explanation": {
+        "en": "Scholars may advise restraint and proper manners in sensitive discussions, but this exact wording should not be quoted as an authenticated hadith.",
+        "bn": "সংবেদনশীল বিষয়ে আলেমরা সংযম ও শিষ্টাচারের পরামর্শ দিতে পারেন; তবে এই নির্দিষ্ট বাক্যকে প্রমাণিত হাদিস হিসেবে বলা উচিত নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    },
+    {
+      "id": 50,
+      "text": {
+        "en": "I looked at the sins of my Ummah and found no greater sin than that of a person who learns a verse and then forgets it.",
+        "bn": "আমি আমার উম্মতের পাপগুলো দেখলাম; এমন ব্যক্তির চেয়ে বড় পাপী কাউকে পেলাম না, যে একটি আয়াত শেখে এবং পরে তা ভুলে যায়।"
+      },
+      "status": {
+        "code": "not_authentic_in_this_wording",
+        "en": "This wording is not established as an authentic hadith. The cited discussion explains that, if a related report is accepted, ‘forgetting’ means neglecting the Qur’an rather than ordinary memory loss.",
+        "bn": "এই শব্দে এটি সহিহ হাদিস হিসেবে প্রমাণিত নয়। উদ্ধৃত আলোচনায় বলা হয়েছে, সম্পর্কিত কোনো বর্ণনা গ্রহণযোগ্য হলে ‘ভুলে যাওয়া’ বলতে কুরআন অবহেলা করা বোঝায়, স্বাভাবিকভাবে স্মৃতি থেকে মুছে যাওয়া নয়।"
+      },
+      "explanation": {
+        "en": "People should not be shamed for ordinary forgetfulness. The warning concerns deliberate neglect and turning away from the Qur’an, not unavoidable memory loss.",
+        "bn": "স্বাভাবিকভাবে ভুলে যাওয়ার কারণে কাউকে অপমান করা উচিত নয়। সতর্কতাটি কুরআনকে ইচ্ছাকৃতভাবে অবহেলা করা ও মুখ ফিরিয়ে নেওয়ার বিষয়ে, অনিচ্ছাকৃত স্মৃতিভ্রংশের বিষয়ে নয়।"
+      },
+      "source": {
+        "title": "IslamQA: Weak and fabricated ahaadeeth narrated by the Sufis",
+        "url": "https://archive-1446.islamqa.info/amp/en/answers/14017"
+      }
+    }
+  ]
+}
