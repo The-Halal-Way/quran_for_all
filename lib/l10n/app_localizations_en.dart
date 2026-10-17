@@ -2664,6 +2664,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tasbeehSuggestionHint => 'Tap one to fill the fields';
 
   @override
+  String get tasbeehSuggestionShahada => 'La ilaha illallahu Muhammadur Rasoolullah';
+
+  @override
+  String get tasbeehSuggestionFourPhrases => 'Subhanallahi wal-hamdulillahi wa la ilaha illallahu wallahu akbar';
+
+  @override
+  String get tasbeehSuggestionSalawatUmmi => 'Allahumma salli \'ala Muhammadin-nabiyyil-ummiyyi wa-\'ala alihi wa-sallim taslima';
+
+  @override
+  String get tasbeehSuggestionSayyidulIstighfar => 'Allahumma anta rabbi la ilaha illa anta, khalaqtani wa ana abduka wa ana ‘ala ‘ahdika wa wa’dika ma istata’tu, a’udhu bika min sharri ma san’atu, abu’u laka bini’matika ‘alayya wa abu’u laka bidhanbi, faghfir li, fa’innahu la yaghfiru adhdhunuba illa anta.';
+
+  @override
   String get tasbeehSuggestionAstaghfirullah => 'Astaghfirullah';
 
   @override
@@ -2707,6 +2719,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tasbeehMeaningSubhanAllah => 'Glory be to Allah.';
+
+  @override
+  String get tasbeehMeaningShahada => 'There is no god but Allah, and Muhammad is the Messenger of Allah';
+
+  @override
+  String get tasbeehMeaningFourPhrases => 'Glory be to Allah, praise be to Allah, there is no god but Allah, and Allah is the Greatest';
+
+  @override
+  String get tasbeehMeaningSalawatUmmi => 'O Allah, send blessings upon Muhammad, the unlettered Prophet, and upon his family, and grant them peace.';
+
+  @override
+  String get tasbeehMeaningSayyidulIstighfar => 'O Allah, You are my Lord, there is no deity except You. You created me and I am Your servant, and I am on Your covenant and promise as much as I am able.';
 
   @override
   String get tasbeehMeaningAlhamdulillah => 'All praise is for Allah.';

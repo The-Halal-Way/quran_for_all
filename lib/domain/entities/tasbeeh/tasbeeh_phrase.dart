@@ -14,7 +14,8 @@ class TasbeehPhrase {
     this.builtInKey,
   });
 
-  static const maxNameLength = 60;
+  // The name field also stores full pronunciations from dhikr suggestions.
+  static const maxNameLength = 1024;
   static const maxTarget = 999999;
 
   final String id;

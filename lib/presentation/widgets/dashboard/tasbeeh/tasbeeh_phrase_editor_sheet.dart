@@ -156,6 +156,8 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 autofocus: widget.phrase != null,
                 textCapitalization: TextCapitalization.sentences,
                 textInputAction: TextInputAction.next,
+                minLines: 1,
+                maxLines: null,
                 maxLength: TasbeehPhrase.maxNameLength,
                 decoration: InputDecoration(
                   labelText: l10n.tasbeehNameLabel,

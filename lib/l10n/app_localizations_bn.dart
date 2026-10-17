@@ -2664,6 +2664,18 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tasbeehSuggestionHint => 'লেখা পূরণ করতে একটি বেছে নিন';
 
   @override
+  String get tasbeehSuggestionShahada => 'লা ইলাহা ইল্লাল্লাহু মুহাম্মাদুর রাসুলুল্লাহ্।';
+
+  @override
+  String get tasbeehSuggestionFourPhrases => 'সুবহানাল্লাহি ওয়াল হামদুলিল্লাহি ওয়া লা ইলাহা ইল্লাল্লাহু ওয়াল্লাহু আকবার।';
+
+  @override
+  String get tasbeehSuggestionSalawatUmmi => 'আল্লাহুম্মা ছাল্লি আলা মুহাম্মাদিনিন নাবিয়্যিল উম্মিয়্যি ওয়া আলা আলিহি ওয়া সাল্লিম তাসলিমা।';
+
+  @override
+  String get tasbeehSuggestionSayyidulIstighfar => 'আল্লাহুম্মা আন্তা রাব্বী লা ইলাহা ইল্লা আন্তা, খালাকতানী ওয়া আনা আবদুকা, ওয়া আনা আলা আহদিকা ওয়া ওয়া’দিকা মাসতাত’তু। আ’উযুবিকা মিন শাররি মা ছানাতু, আবূউ লাকা বিনি’মাতিকা আলাইয়্যা, ওয়া আবূউ লাকা বিযাম্বী ফাগফিরলী, ফা-ইন্নাহু লা ইয়াগফিরুয যুনূবা ইল্লা আন্তা।';
+
+  @override
   String get tasbeehSuggestionAstaghfirullah => 'আস্তাগফিরুল্লাহ';
 
   @override
@@ -2707,6 +2719,18 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tasbeehMeaningSubhanAllah => 'আল্লাহ পবিত্র।';
+
+  @override
+  String get tasbeehMeaningShahada => 'আল্লাহ ব্যতীত কোনো উপাস্য নেই, মুহাম্মাদ (সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম) আল্লাহর রাসূল।';
+
+  @override
+  String get tasbeehMeaningFourPhrases => 'আল্লাহ পবিত্র, সমস্ত প্রশংসা আল্লাহর, আল্লাহ ব্যতীত কোনো উপাস্য নেই এবং আল্লাহ মহান।';
+
+  @override
+  String get tasbeehMeaningSalawatUmmi => 'হে আল্লাহ! আপনি উম্মি (নিরক্ষর) নবী মুহাম্মাদ এবং তাঁর পরিবার-পরিজনের ওপর শান্তি ও রহমত বর্ষণ করুন।';
+
+  @override
+  String get tasbeehMeaningSayyidulIstighfar => 'হে আল্লাহ, আপনিই আমার রব; আপনি ছাড়া ইবাদতের যোগ্য আর কেউ নেই। আপনি আমাকে সৃষ্টি করেছেন এবং আমি আপনারই বান্দা। আমি আমার সাধ্যমতো আপনার সাথে করা অঙ্গীকার ও প্রতিশ্রুতির ওপর অটল আছি। আমি আমার কৃতকর্মের অনিষ্ট থেকে আপনার আশ্রয় নিচ্ছি। আপনি আমাকে যে অনুগ্রহ দান করেছেন তা স্বীকার করছি এবং আমার পাপকেও স্বীকার করছি। সুতরাং আপনি আমাকে ক্ষমা করে দিন; কারণ আপনি ছাড়া পাপ ক্ষমা করার আর কেউ নেই।';
 
   @override
   String get tasbeehMeaningAlhamdulillah => 'সব প্রশংসা আল্লাহর।';

@@ -5237,6 +5237,30 @@ abstract class AppLocalizations {
   /// **'Tap one to fill the fields'**
   String get tasbeehSuggestionHint;
 
+  /// No description provided for @tasbeehSuggestionShahada.
+  ///
+  /// In en, this message translates to:
+  /// **'La ilaha illallahu Muhammadur Rasoolullah'**
+  String get tasbeehSuggestionShahada;
+
+  /// No description provided for @tasbeehSuggestionFourPhrases.
+  ///
+  /// In en, this message translates to:
+  /// **'Subhanallahi wal-hamdulillahi wa la ilaha illallahu wallahu akbar'**
+  String get tasbeehSuggestionFourPhrases;
+
+  /// No description provided for @tasbeehSuggestionSalawatUmmi.
+  ///
+  /// In en, this message translates to:
+  /// **'Allahumma salli \'ala Muhammadin-nabiyyil-ummiyyi wa-\'ala alihi wa-sallim taslima'**
+  String get tasbeehSuggestionSalawatUmmi;
+
+  /// No description provided for @tasbeehSuggestionSayyidulIstighfar.
+  ///
+  /// In en, this message translates to:
+  /// **'Allahumma anta rabbi la ilaha illa anta, khalaqtani wa ana abduka wa ana ‘ala ‘ahdika wa wa’dika ma istata’tu, a’udhu bika min sharri ma san’atu, abu’u laka bini’matika ‘alayya wa abu’u laka bidhanbi, faghfir li, fa’innahu la yaghfiru adhdhunuba illa anta.'**
+  String get tasbeehSuggestionSayyidulIstighfar;
+
   /// No description provided for @tasbeehSuggestionAstaghfirullah.
   ///
   /// In en, this message translates to:
@@ -5326,6 +5350,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Glory be to Allah.'**
   String get tasbeehMeaningSubhanAllah;
+
+  /// No description provided for @tasbeehMeaningShahada.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no god but Allah, and Muhammad is the Messenger of Allah'**
+  String get tasbeehMeaningShahada;
+
+  /// No description provided for @tasbeehMeaningFourPhrases.
+  ///
+  /// In en, this message translates to:
+  /// **'Glory be to Allah, praise be to Allah, there is no god but Allah, and Allah is the Greatest'**
+  String get tasbeehMeaningFourPhrases;
+
+  /// No description provided for @tasbeehMeaningSalawatUmmi.
+  ///
+  /// In en, this message translates to:
+  /// **'O Allah, send blessings upon Muhammad, the unlettered Prophet, and upon his family, and grant them peace.'**
+  String get tasbeehMeaningSalawatUmmi;
+
+  /// No description provided for @tasbeehMeaningSayyidulIstighfar.
+  ///
+  /// In en, this message translates to:
+  /// **'O Allah, You are my Lord, there is no deity except You. You created me and I am Your servant, and I am on Your covenant and promise as much as I am able.'**
+  String get tasbeehMeaningSayyidulIstighfar;
 
   /// No description provided for @tasbeehMeaningAlhamdulillah.
   ///

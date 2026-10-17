@@ -4,6 +4,29 @@ typedef TasbeehSuggestion = ({String name, String arabic, String meaning});
 
 List<TasbeehSuggestion> tasbeehSuggestions(AppLocalizations l10n) => [
   (
+    name: l10n.tasbeehSuggestionShahada,
+    arabic: 'لَا إِلَهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ اللَّهِ',
+    meaning: l10n.tasbeehMeaningShahada,
+  ),
+  (
+    name: l10n.tasbeehSuggestionFourPhrases,
+    arabic:
+        'سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ',
+    meaning: l10n.tasbeehMeaningFourPhrases,
+  ),
+  (
+    name: l10n.tasbeehSuggestionSalawatUmmi,
+    arabic:
+        'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ وَعَلَى آلِهِ وَسَلِّمْ تَسْلِيمًا',
+    meaning: l10n.tasbeehMeaningSalawatUmmi,
+  ),
+  (
+    name: l10n.tasbeehSuggestionSayyidulIstighfar,
+    arabic:
+        'اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ',
+    meaning: l10n.tasbeehMeaningSayyidulIstighfar,
+  ),
+  (
     name: l10n.tasbeehSuggestionAstaghfirullah,
     arabic: 'أَسْتَغْفِرُ اللَّهَ',
     meaning: l10n.tasbeehMeaningAstaghfirullah,
