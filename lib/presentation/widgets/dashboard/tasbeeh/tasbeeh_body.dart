@@ -14,6 +14,7 @@ import 'tasbeeh_haptics.dart';
 import 'tasbeeh_phrase_actions.dart';
 import 'tasbeeh_phrase_picker_sheet.dart';
 import 'tasbeeh_phrase_menu.dart';
+import 'tasbeeh_session_empty.dart';
 import 'tasbeeh_widgets.dart';
 
 class TasbeehBody extends StatelessWidget {
@@ -59,84 +60,92 @@ class TasbeehBody extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 24),
                     child: Column(
                       children: [
-                        TasbeehAppBar(isDark: isDark),
+                        const TasbeehHeader(),
                         SizedBox(height: sectionGap),
-                        TasbeehCounterDisplay(
-                          count: vm.count,
-                          target: vm.target,
-                          progress: vm.progress,
-                          phraseArabic: vm.selectedPhrase.arabic,
-                          phraseId: vm.selectedPhraseId,
-                          phraseLabel: vm.selectedPhrase.label(context.l10n),
-                          phraseMeaning: vm.selectedPhrase.localizedMeaning(
-                            context.l10n,
-                          ),
-                          isTargetReached: vm.isTargetReached,
-                          isDark: isDark,
-                          onTap: () => TasbeehHaptics.count(
-                            targetReached: vm.increment(),
-                          ),
-                          onPhraseTap: () =>
-                              showTasbeehPhrasePicker(context, vm),
-                          onAddPhrase: () =>
-                              TasbeehPhraseActions.add(context, vm),
-                          onPreviousPhrase: selectedPhraseIndex > 0
-                              ? () => selectPhraseAt(selectedPhraseIndex - 1)
-                              : null,
-                          onNextPhrase: selectedPhraseIndex < phrases.length - 1
-                              ? () => selectPhraseAt(selectedPhraseIndex + 1)
-                              : null,
-                          phraseMenu: vm.selectedPhrase.isBuiltIn
-                              ? null
-                              : TasbeehPhraseMenu(
-                                  onSelected: (action) =>
-                                      TasbeehPhraseActions.handle(
-                                        context,
-                                        vm,
-                                        vm.selectedPhrase,
-                                        action,
-                                      ),
-                                ),
-                        ),
-                        SizedBox(height: sectionGap),
-                        TasbeehFocusBanner(
-                          onTap: () => Navigator.push(
-                            context,
-                            MaterialPageRoute<void>(
-                              builder: (_) => const TasbeehFocusView(),
-                            ),
-                          ),
-                        ),
-                        SizedBox(height: sectionGap),
-                        TasbeehInfoGrid(
-                          isWide: constraints.maxWidth >= 700,
-                          targetSelector: TasbeehTargetSelector(
-                            targets: TasbeehViewModel.targets,
-                            selectedTarget: vm.target,
-                            onSelected: vm.selectTarget,
-                          ),
-                          statsPanel: TasbeehStatsPanel(
-                            totalCount: vm.totalCount,
-                            completedRounds: vm.completedRounds,
-                            currentCount: vm.count,
-                            selectedPhraseLabel: vm.selectedPhrase.label(
+                        if (!vm.hasPhrases)
+                          TasbeehSessionEmpty(
+                            onAdd: () => TasbeehPhraseActions.add(context, vm),
+                          )
+                        else ...[
+                          TasbeehCounterDisplay(
+                            count: vm.count,
+                            target: vm.target,
+                            progress: vm.progress,
+                            phraseArabic: vm.selectedPhrase.arabic,
+                            phraseId: vm.selectedPhraseId,
+                            phraseLabel: vm.selectedPhrase.label(context.l10n),
+                            phraseMeaning: vm.selectedPhrase.localizedMeaning(
                               context.l10n,
                             ),
-                            selectedRounds: vm.currentCompletedRounds,
-                            selectedTarget: vm.target,
-                            selectedProgress: vm.progress,
+                            isTargetReached: vm.isTargetReached,
                             isDark: isDark,
+                            onTap: () => TasbeehHaptics.count(
+                              targetReached: vm.increment(),
+                            ),
+                            onPhraseTap: () =>
+                                showTasbeehPhrasePicker(context, vm),
+                            onAddPhrase: () =>
+                                TasbeehPhraseActions.add(context, vm),
+                            onPreviousPhrase: selectedPhraseIndex > 0
+                                ? () => selectPhraseAt(selectedPhraseIndex - 1)
+                                : null,
+                            onNextPhrase:
+                                selectedPhraseIndex < phrases.length - 1
+                                ? () => selectPhraseAt(selectedPhraseIndex + 1)
+                                : null,
+                            phraseMenu: vm.selectedPhrase.isBuiltIn
+                                ? null
+                                : TasbeehPhraseMenu(
+                                    onSelected: (action) =>
+                                        TasbeehPhraseActions.handle(
+                                          context,
+                                          vm,
+                                          vm.selectedPhrase,
+                                          action,
+                                        ),
+                                  ),
                           ),
-                        ),
-                        const SizedBox(height: AppSpacing.sm),
-                        TasbeehControls(
-                          isDark: isDark,
-                          canUndo: vm.count > 0,
-                          canResetAll: vm.totalCount > 0,
-                          onUndo: vm.decrement,
-                          onResetCount: vm.resetCount,
-                          onResetAll: vm.resetAll,
-                        ),
+                          SizedBox(height: sectionGap),
+                          TasbeehFocusBanner(
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute<void>(
+                                builder: (_) => const TasbeehFocusView(),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: sectionGap),
+                          TasbeehInfoGrid(
+                            isWide: constraints.maxWidth >= 700,
+                            targetSelector: TasbeehTargetSelector(
+                              targets: TasbeehViewModel.targets,
+                              selectedTarget: vm.target,
+                              onSelected: vm.selectTarget,
+                            ),
+                            statsPanel: TasbeehStatsPanel(
+                              totalCount: vm.totalCount,
+                              completedRounds: vm.completedRounds,
+                              currentCount: vm.count,
+                              selectedPhraseLabel: vm.selectedPhrase.label(
+                                context.l10n,
+                              ),
+                              selectedRounds: vm.currentCompletedRounds,
+                              selectedTarget: vm.target,
+                              selectedProgress: vm.progress,
+                              isDark: isDark,
+                            ),
+                          ),
+                          const SizedBox(height: AppSpacing.sm),
+                          TasbeehControls(
+                            isDark: isDark,
+                            canUndo: vm.canUndo,
+                            canResetCount: vm.count > 0,
+                            canResetAll: vm.totalCount > 0,
+                            onUndo: vm.decrement,
+                            onResetCount: vm.resetCount,
+                            onResetAll: vm.resetAll,
+                          ),
+                        ],
                       ],
                     ),
                   ),

@@ -1,47 +1,46 @@
-import '../../domain/entities/tasbeeh/tasbeeh_phrase.dart';
+import 'tasbeeh_session.dart';
 
-class TasbeehSavedState {
+class TasbeehSavedState extends TasbeehProgress {
   const TasbeehSavedState({
-    required this.counts,
-    required this.targets,
-    this.selectedPhrase,
-    this.customPhrases = const [],
+    required super.counts,
+    required super.targets,
+    super.selectedPhrase,
+    super.customPhrases,
+    super.autoNext,
+    this.sessions = const [],
+    this.selectedSessionId = TasbeehSession.defaultId,
   });
 
-  final Map<String, int> counts;
-  final Map<String, int> targets;
-  final String? selectedPhrase;
-  final List<TasbeehPhrase> customPhrases;
+  final List<TasbeehSession> sessions;
+  final String selectedSessionId;
 
+  @override
   Map<String, dynamic> toMap() => {
-    'counts': counts,
-    'targets': targets,
-    'selectedPhrase': selectedPhrase,
-    'customPhrases': customPhrases.map((phrase) => phrase.toMap()).toList(),
+    ...super.toMap(),
+    'version': 2,
+    'selectedSessionId': selectedSessionId,
+    'sessions': sessions.map((session) => session.toMap()).toList(),
   };
 
   factory TasbeehSavedState.fromMap(Map<String, dynamic> map) {
+    final legacy = TasbeehProgress.fromMap(map);
+    final rawSessions = map['sessions'];
     return TasbeehSavedState(
-      counts: _readIntMap(map['counts']),
-      targets: _readIntMap(map['targets']),
-      selectedPhrase: map['selectedPhrase'] as String?,
-      customPhrases: _readCustomPhrases(map['customPhrases']),
+      counts: legacy.counts,
+      targets: legacy.targets,
+      selectedPhrase: legacy.selectedPhrase,
+      customPhrases: legacy.customPhrases,
+      autoNext: legacy.autoNext,
+      selectedSessionId: map['selectedSessionId'] is String
+          ? map['selectedSessionId'] as String
+          : TasbeehSession.defaultId,
+      sessions: rawSessions is List
+          ? List.unmodifiable([
+              for (final entry in rawSessions)
+                if (entry is Map<String, dynamic>)
+                  ?TasbeehSession.fromMap(entry),
+            ])
+          : const [],
     );
-  }
-
-  static Map<String, int> _readIntMap(Object? value) {
-    if (value is! Map<String, dynamic>) return const {};
-    return value.map((key, count) {
-      final parsed = count is num ? count.toInt() : int.tryParse('$count') ?? 0;
-      return MapEntry(key, parsed);
-    });
-  }
-
-  static List<TasbeehPhrase> _readCustomPhrases(Object? value) {
-    if (value is! List) return const [];
-    return [
-      for (final entry in value)
-        if (entry is Map<String, dynamic>) ?TasbeehPhrase.customFromMap(entry),
-    ];
   }
 }

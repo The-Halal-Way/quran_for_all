@@ -95,4 +95,6 @@ class MyImages {
   // books images
   static const String bookScienceEng = 'assets/images/books/science_en.jpg';
   static const String bookScienceBn = 'assets/images/books/science_bn.jpg';
+  static const String lifeOfMuhammadEn = 'assets/images/books/life_of_muhammad_en.jpg';
+  static const String lifeOfMuhammadBn = 'assets/images/books/life_of_muhammad_bn.jpeg';
 }

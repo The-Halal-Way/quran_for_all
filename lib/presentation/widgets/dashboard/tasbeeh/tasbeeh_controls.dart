@@ -10,6 +10,7 @@ class TasbeehControls extends StatelessWidget {
     super.key,
     required this.isDark,
     required this.canUndo,
+    required this.canResetCount,
     required this.canResetAll,
     required this.onUndo,
     required this.onResetCount,
@@ -18,6 +19,7 @@ class TasbeehControls extends StatelessWidget {
 
   final bool isDark;
   final bool canUndo;
+  final bool canResetCount;
   final bool canResetAll;
   final VoidCallback onUndo;
   final VoidCallback onResetCount;
@@ -37,7 +39,7 @@ class TasbeehControls extends StatelessWidget {
         const SizedBox(width: 8),
         Expanded(
           child: OutlinedButton.icon(
-            onPressed: canUndo ? onResetCount : null,
+            onPressed: canResetCount ? onResetCount : null,
             icon: const Icon(CupertinoIcons.arrow_counterclockwise, size: 17),
             label: Text(context.l10n.tasbeehReset),
             style: OutlinedButton.styleFrom(

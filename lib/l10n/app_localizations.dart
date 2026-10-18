@@ -5141,6 +5141,138 @@ abstract class AppLocalizations {
   /// **'Count dhikr with focus'**
   String get tasbeehSubtitle;
 
+  /// No description provided for @tasbeehSessionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Session'**
+  String get tasbeehSessionLabel;
+
+  /// No description provided for @tasbeehSessions.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr sessions'**
+  String get tasbeehSessions;
+
+  /// No description provided for @tasbeehSessionsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Each session keeps its own dhikrs, targets, and progress.'**
+  String get tasbeehSessionsDescription;
+
+  /// No description provided for @tasbeehDefaultSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Default session'**
+  String get tasbeehDefaultSession;
+
+  /// No description provided for @tasbeehNewSession.
+  ///
+  /// In en, this message translates to:
+  /// **'New session'**
+  String get tasbeehNewSession;
+
+  /// No description provided for @tasbeehNewSessionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Start with an empty session and add the dhikrs you want to recite.'**
+  String get tasbeehNewSessionDescription;
+
+  /// No description provided for @tasbeehSessionName.
+  ///
+  /// In en, this message translates to:
+  /// **'Session name'**
+  String get tasbeehSessionName;
+
+  /// No description provided for @tasbeehSessionNameHint.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. Morning dhikr'**
+  String get tasbeehSessionNameHint;
+
+  /// No description provided for @tasbeehSessionNameRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a session name'**
+  String get tasbeehSessionNameRequired;
+
+  /// No description provided for @tasbeehCreateSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Create session'**
+  String get tasbeehCreateSession;
+
+  /// No description provided for @tasbeehSessionOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'Session options'**
+  String get tasbeehSessionOptions;
+
+  /// No description provided for @tasbeehRenameSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Rename session'**
+  String get tasbeehRenameSession;
+
+  /// No description provided for @tasbeehRenameSessionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Change the title while keeping your dhikrs, targets, and progress.'**
+  String get tasbeehRenameSessionDescription;
+
+  /// No description provided for @tasbeehSaveSessionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Save title'**
+  String get tasbeehSaveSessionTitle;
+
+  /// No description provided for @tasbeehDeleteSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete session'**
+  String get tasbeehDeleteSession;
+
+  /// No description provided for @tasbeehDeleteSessionConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete “{name}” and all its dhikrs, targets, and counts? This cannot be undone.'**
+  String tasbeehDeleteSessionConfirm(String name);
+
+  /// No description provided for @tasbeehSessionDhikrCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} dhikrs'**
+  String tasbeehSessionDhikrCount(String count);
+
+  /// No description provided for @tasbeehEmptySessionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Make this session your own'**
+  String get tasbeehEmptySessionTitle;
+
+  /// No description provided for @tasbeehEmptySessionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Add your first dhikr and set its target to start counting.'**
+  String get tasbeehEmptySessionDescription;
+
+  /// No description provided for @tasbeehAutoNextOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto next · On'**
+  String get tasbeehAutoNextOn;
+
+  /// No description provided for @tasbeehAutoNextOff.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto next · Off'**
+  String get tasbeehAutoNextOff;
+
+  /// No description provided for @tasbeehAutoNextDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch to the next dhikr when its target is reached. After the last dhikr, return to the first. Each tap still counts once.'**
+  String get tasbeehAutoNextDescription;
+
   /// No description provided for @tasbeehPhraseTitle.
   ///
   /// In en, this message translates to:

@@ -2616,6 +2616,76 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tasbeehSubtitle => 'Count dhikr with focus';
 
   @override
+  String get tasbeehSessionLabel => 'Session';
+
+  @override
+  String get tasbeehSessions => 'Dhikr sessions';
+
+  @override
+  String get tasbeehSessionsDescription => 'Each session keeps its own dhikrs, targets, and progress.';
+
+  @override
+  String get tasbeehDefaultSession => 'Default session';
+
+  @override
+  String get tasbeehNewSession => 'New session';
+
+  @override
+  String get tasbeehNewSessionDescription => 'Start with an empty session and add the dhikrs you want to recite.';
+
+  @override
+  String get tasbeehSessionName => 'Session name';
+
+  @override
+  String get tasbeehSessionNameHint => 'e.g. Morning dhikr';
+
+  @override
+  String get tasbeehSessionNameRequired => 'Enter a session name';
+
+  @override
+  String get tasbeehCreateSession => 'Create session';
+
+  @override
+  String get tasbeehSessionOptions => 'Session options';
+
+  @override
+  String get tasbeehRenameSession => 'Rename session';
+
+  @override
+  String get tasbeehRenameSessionDescription => 'Change the title while keeping your dhikrs, targets, and progress.';
+
+  @override
+  String get tasbeehSaveSessionTitle => 'Save title';
+
+  @override
+  String get tasbeehDeleteSession => 'Delete session';
+
+  @override
+  String tasbeehDeleteSessionConfirm(String name) {
+    return 'Delete “$name” and all its dhikrs, targets, and counts? This cannot be undone.';
+  }
+
+  @override
+  String tasbeehSessionDhikrCount(String count) {
+    return '$count dhikrs';
+  }
+
+  @override
+  String get tasbeehEmptySessionTitle => 'Make this session your own';
+
+  @override
+  String get tasbeehEmptySessionDescription => 'Add your first dhikr and set its target to start counting.';
+
+  @override
+  String get tasbeehAutoNextOn => 'Auto next · On';
+
+  @override
+  String get tasbeehAutoNextOff => 'Auto next · Off';
+
+  @override
+  String get tasbeehAutoNextDescription => 'Switch to the next dhikr when its target is reached. After the last dhikr, return to the first. Each tap still counts once.';
+
+  @override
   String get tasbeehPhraseTitle => 'Dhikr';
 
   @override

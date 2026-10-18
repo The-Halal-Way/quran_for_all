@@ -57,7 +57,7 @@ class _TasbeehPhrasePickerSheet extends StatelessWidget {
           child: Column(
             children: [
               _PickerHeader(
-                selectedPhrase: model.selectedPhrase,
+                selectedPhrase: model.hasPhrases ? model.selectedPhrase : null,
                 accent: colors.violet,
               ),
               Expanded(
@@ -106,7 +106,7 @@ class _TasbeehPhrasePickerSheet extends StatelessWidget {
 class _PickerHeader extends StatelessWidget {
   const _PickerHeader({required this.selectedPhrase, required this.accent});
 
-  final TasbeehPhrase selectedPhrase;
+  final TasbeehPhrase? selectedPhrase;
   final Color accent;
 
   @override
@@ -149,7 +149,9 @@ class _PickerHeader extends StatelessWidget {
           ),
           const SizedBox(height: AppSpacing.xs),
           Text(
-            '${context.l10n.tasbeehCurrent}: ${selectedPhrase.label(context.l10n)}',
+            selectedPhrase == null
+                ? context.l10n.tasbeehEmptySessionDescription
+                : '${context.l10n.tasbeehCurrent}: ${selectedPhrase!.label(context.l10n)}',
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: text.bodySmall.copyWith(

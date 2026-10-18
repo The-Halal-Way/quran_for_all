@@ -2616,6 +2616,76 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tasbeehSubtitle => 'মনোযোগ দিয়ে জিকির গুনুন';
 
   @override
+  String get tasbeehSessionLabel => 'সেশন';
+
+  @override
+  String get tasbeehSessions => 'জিকিরের সেশন';
+
+  @override
+  String get tasbeehSessionsDescription => 'প্রতিটি সেশনের জিকির, লক্ষ্য ও অগ্রগতি আলাদাভাবে সংরক্ষিত থাকে।';
+
+  @override
+  String get tasbeehDefaultSession => 'ডিফল্ট সেশন';
+
+  @override
+  String get tasbeehNewSession => 'নতুন সেশন';
+
+  @override
+  String get tasbeehNewSessionDescription => 'খালি সেশন দিয়ে শুরু করুন এবং আপনার পছন্দের জিকিরগুলো যোগ করুন।';
+
+  @override
+  String get tasbeehSessionName => 'সেশনের নাম';
+
+  @override
+  String get tasbeehSessionNameHint => 'যেমন: সকালের জিকির';
+
+  @override
+  String get tasbeehSessionNameRequired => 'সেশনের একটি নাম লিখুন';
+
+  @override
+  String get tasbeehCreateSession => 'সেশন তৈরি করুন';
+
+  @override
+  String get tasbeehSessionOptions => 'সেশনের অপশন';
+
+  @override
+  String get tasbeehRenameSession => 'সেশনের নাম বদলান';
+
+  @override
+  String get tasbeehRenameSessionDescription => 'জিকির, লক্ষ্য ও অগ্রগতি অক্ষুণ্ণ রেখে সেশনের নাম পরিবর্তন করুন।';
+
+  @override
+  String get tasbeehSaveSessionTitle => 'নাম সংরক্ষণ করুন';
+
+  @override
+  String get tasbeehDeleteSession => 'সেশন মুছুন';
+
+  @override
+  String tasbeehDeleteSessionConfirm(String name) {
+    return '“$name” সেশন এবং এর সব জিকির, লক্ষ্য ও গণনা মুছে ফেলবেন? এটি আর ফেরত আনা যাবে না।';
+  }
+
+  @override
+  String tasbeehSessionDhikrCount(String count) {
+    return '$countটি জিকির';
+  }
+
+  @override
+  String get tasbeehEmptySessionTitle => 'নিজের মতো সেশন সাজান';
+
+  @override
+  String get tasbeehEmptySessionDescription => 'প্রথম জিকির যোগ করুন এবং গণনা শুরু করতে তার লক্ষ্য নির্ধারণ করুন।';
+
+  @override
+  String get tasbeehAutoNextOn => 'অটো পরবর্তী · চালু';
+
+  @override
+  String get tasbeehAutoNextOff => 'অটো পরবর্তী · বন্ধ';
+
+  @override
+  String get tasbeehAutoNextDescription => 'লক্ষ্য পূরণ হলে পরের জিকিরে চলে যাবে। শেষ জিকিরের পর আবার প্রথমটিতে ফিরবে। প্রতিবার স্পর্শে একবারই গণনা হবে।';
+
+  @override
   String get tasbeehPhraseTitle => 'জিকির';
 
   @override

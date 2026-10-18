@@ -6,6 +6,9 @@ import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../viewmodels/dashboard/tasbeeh_viewmodel.dart';
+import '../tasbeeh/tasbeeh_auto_next_button.dart';
+import '../tasbeeh/tasbeeh_phrase_actions.dart';
+import '../tasbeeh/tasbeeh_session_empty.dart';
 import '../tasbeeh/tasbeeh_visuals.dart';
 import 'tasbeeh_focus_backdrop.dart';
 import 'tasbeeh_focus_controls.dart';
@@ -25,9 +28,11 @@ class TasbeehFocusBody extends StatelessWidget {
           key: const ValueKey('tasbeeh_focus_tap_area'),
           behavior: HitTestBehavior.opaque,
           // Child buttons win their gestures, preventing an Undo/Exit tap from counting.
-          onTap: () {
-            TasbeehHaptics.count(targetReached: model.increment());
-          },
+          onTap: model.hasPhrases
+              ? () {
+                  TasbeehHaptics.count(targetReached: model.increment());
+                }
+              : null,
           child: Stack(
             children: [
               Positioned.fill(
@@ -38,17 +43,47 @@ class TasbeehFocusBody extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(20, 12, 20, 20),
                   child: Column(
                     children: [
-                      Expanded(
-                        child: TasbeehFocusDhikrPager(
-                          phrases: model.phrases,
-                          selectedId: model.selectedPhraseId,
-                          counts: model.counts,
-                          targets: model.selectedTargets,
-                          onSelected: model.selectPhrase,
-                          onCount: () => TasbeehHaptics.count(
-                            targetReached: model.increment(),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              model.currentSession.isDefault
+                                  ? context.l10n.tasbeehDefaultSession
+                                  : model.currentSession.name,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTheme.text(
+                                context,
+                              ).labelMedium.copyWith(color: Colors.white70),
+                            ),
                           ),
-                        ),
+                          TasbeehAutoNextButton(
+                            enabled: model.autoNextEnabled,
+                            onChanged: model.setAutoNext,
+                            onHero: true,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: AppSpacing.sm),
+                      Expanded(
+                        child: model.hasPhrases
+                            ? TasbeehFocusDhikrPager(
+                                key: ValueKey(model.selectedSessionId),
+                                phrases: model.phrases,
+                                selectedId: model.selectedPhraseId,
+                                counts: model.counts,
+                                targets: model.selectedTargets,
+                                onSelected: model.selectPhrase,
+                                onCount: () => TasbeehHaptics.count(
+                                  targetReached: model.increment(),
+                                ),
+                              )
+                            : SingleChildScrollView(
+                                child: TasbeehSessionEmpty(
+                                  onAdd: () =>
+                                      TasbeehPhraseActions.add(context, model),
+                                ),
+                              ),
                       ),
                       const SizedBox(height: AppSpacing.sm),
                       Row(
@@ -75,7 +110,7 @@ class TasbeehFocusBody extends StatelessWidget {
                       ),
                       const SizedBox(height: AppSpacing.lg),
                       TasbeehFocusControls(
-                        canUndo: model.count > 0,
+                        canUndo: model.canUndo,
                         onUndo: model.decrement,
                         rounds: model.currentCompletedRounds,
                         onExit: () => Navigator.maybePop(context),
