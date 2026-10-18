@@ -3,20 +3,20 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
 
-import '../../core/constants/science_in_quran_document.dart';
-import 'science_in_quran_viewmodel.dart';
+import '../../core/constants/pdf_book_document.dart';
+import 'pdf_book_viewmodel.dart';
 
-class ScienceInQuranReaderController extends ChangeNotifier {
-  ScienceInQuranReaderController({
+class PdfBookReaderController extends ChangeNotifier {
+  PdfBookReaderController({
     required String filePath,
-    required ScienceInQuranViewModel library,
+    required PdfBookViewModel library,
   }) : _filePath = filePath,
        _library = library {
     unawaited(open());
   }
 
   String _filePath;
-  final ScienceInQuranViewModel _library;
+  final PdfBookViewModel _library;
   PdfDocument? _document;
   PdfControllerPinch? _pdfController;
   bool _loading = false;
@@ -100,9 +100,11 @@ class ScienceInQuranReaderController extends ChangeNotifier {
     );
   }
 
-  Future<void> downloadAgain(ScienceInQuranDocument document) async {
+  Future<void> downloadAgain(PdfBookDocument document) async {
     if (_loading || _library.downloading || _disposed) return;
+    _ready = false;
     _releaseDocument();
+    notifyListeners();
     final downloaded = await _library.download(document);
     if (!_disposed && downloaded) {
       _filePath = _library.filePath!;

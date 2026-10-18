@@ -736,131 +736,131 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardBooksLibrarySubtitle => 'Explore your saved reading collection.';
 
   @override
-  String get scienceInQuranEnglish => 'English edition';
+  String get pdfBookEnglish => 'English edition';
 
   @override
-  String get scienceInQuranBangla => 'Bangla edition';
+  String get pdfBookBangla => 'Bangla edition';
 
   @override
-  String scienceInQuranFileSize(String size) {
+  String pdfBookFileSize(String size) {
     return 'PDF · $size MB';
   }
 
   @override
-  String get scienceInQuranChooseLanguage => 'Choose a language';
+  String get pdfBookChooseLanguage => 'Choose a language';
 
   @override
-  String get scienceInQuranLanguageDescription => 'Download the edition you prefer. It will be available offline with your reading position and saved pages.';
+  String get pdfBookLanguageDescription => 'Choose a book for offline reading. Your reading position and saved pages are kept separately for each edition.';
 
   @override
-  String get scienceInQuranOfflineReady => 'Ready offline';
+  String get pdfBookOfflineReady => 'Ready offline';
 
   @override
-  String get scienceInQuranDownload => 'Download booklet';
+  String get pdfBookDownload => 'Download book';
 
   @override
-  String scienceInQuranDownloading(String progress) {
+  String pdfBookDownloading(String progress) {
     return 'Downloading… $progress%';
   }
 
   @override
-  String get scienceInQuranCancel => 'Cancel';
+  String get pdfBookCancel => 'Cancel';
 
   @override
-  String get scienceInQuranOpen => 'Read booklet';
+  String get pdfBookOpen => 'Read book';
 
   @override
-  String get scienceInQuranContinue => 'Continue reading';
+  String get pdfBookContinue => 'Continue reading';
 
   @override
-  String scienceInQuranLastPage(String page) {
+  String pdfBookLastPage(String page) {
     return 'Continue from page $page';
   }
 
   @override
-  String get scienceInQuranBookmarks => 'Saved pages';
+  String get pdfBookBookmarks => 'Saved pages';
 
   @override
-  String get scienceInQuranBookmarkAdd => 'Bookmark this page';
+  String get pdfBookBookmarkAdd => 'Bookmark this page';
 
   @override
-  String get scienceInQuranBookmarkRemove => 'Remove page bookmark';
+  String get pdfBookBookmarkRemove => 'Remove page bookmark';
 
   @override
-  String scienceInQuranBookmarkSaved(String page) {
+  String pdfBookBookmarkSaved(String page) {
     return 'Page $page bookmarked';
   }
 
   @override
-  String scienceInQuranBookmarkRemoved(String page) {
+  String pdfBookBookmarkRemoved(String page) {
     return 'Page $page bookmark removed';
   }
 
   @override
-  String get scienceInQuranBookmarksEmpty => 'No saved pages yet';
+  String get pdfBookBookmarksEmpty => 'No saved pages yet';
 
   @override
-  String get scienceInQuranPageNumberNote => 'Page numbers refer to the booklet PDF.';
+  String get pdfBookPageNumberNote => 'Page numbers refer to the PDF.';
 
   @override
-  String scienceInQuranPage(String page) {
+  String pdfBookPage(String page) {
     return 'Page $page';
   }
 
   @override
-  String scienceInQuranPageCounter(String page, String total) {
+  String pdfBookPageCounter(String page, String total) {
     return 'Page $page of $total';
   }
 
   @override
-  String get scienceInQuranJump => 'Go to page';
+  String get pdfBookJump => 'Go to page';
 
   @override
-  String get scienceInQuranPageField => 'PDF page number';
+  String get pdfBookPageField => 'PDF page number';
 
   @override
-  String scienceInQuranPageRange(String total) {
+  String pdfBookPageRange(String total) {
     return 'Enter a page from 1 to $total';
   }
 
   @override
-  String get scienceInQuranGo => 'Go';
+  String get pdfBookGo => 'Go';
 
   @override
-  String get scienceInQuranPrevious => 'Previous page';
+  String get pdfBookPrevious => 'Previous page';
 
   @override
-  String get scienceInQuranNext => 'Next page';
+  String get pdfBookNext => 'Next page';
 
   @override
-  String get scienceInQuranReaderHint => 'Scroll to read · Pinch to zoom';
+  String get pdfBookReaderHint => 'Scroll to read · Pinch to zoom';
 
   @override
-  String get scienceInQuranRetry => 'Try again';
+  String get pdfBookRetry => 'Try again';
 
   @override
-  String get scienceInQuranDownloadAgain => 'Download again';
+  String get pdfBookDownloadAgain => 'Download again';
 
   @override
-  String get scienceInQuranReaderError => 'This PDF could not be opened. Try again or download a fresh copy.';
+  String get pdfBookReaderError => 'This PDF could not be opened. Try again or download a fresh copy.';
 
   @override
-  String get scienceInQuranNetworkError => 'Could not download the booklet. Check your connection and try again.';
+  String get pdfBookNetworkError => 'Could not download the book. Check your connection and try again.';
 
   @override
-  String get scienceInQuranInvalidPdf => 'The download did not contain a complete PDF. Please try again.';
+  String get pdfBookInvalidPdf => 'The download did not contain a complete PDF. Please try again.';
 
   @override
-  String get scienceInQuranStorageError => 'Could not save on this device. Check available storage and try again.';
+  String get pdfBookStorageError => 'Could not save on this device. Check available storage and try again.';
 
   @override
-  String get scienceInQuranRemoveDownload => 'Remove offline booklet';
+  String get pdfBookRemoveDownload => 'Remove offline book';
 
   @override
-  String get scienceInQuranRemoveDownloadBody => 'Remove the downloaded booklet to free up storage? Your saved pages and reading position will be kept.';
+  String get pdfBookRemoveDownloadBody => 'Remove the downloaded book to free up storage? Your saved pages and reading position will be kept.';
 
   @override
-  String get scienceInQuranRemove => 'Remove';
+  String get pdfBookRemove => 'Remove';
 
   @override
   String get propheciesBookTitle => '101 Fulfilled Prophecies';
@@ -4485,4 +4485,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get islamicDaysNoResults => 'No occasions match your search.';
+
+  @override
+  String get pdfBookDownloadingUnknown => 'Downloading book…';
+
+  @override
+  String get pdfBookLoading => 'Opening book…';
+
+  @override
+  String pdfBookAuthor(String author) {
+    return 'By $author';
+  }
+
+  @override
+  String get lifeOfMuhammadDescription => 'Explore the life of Prophet Muhammad ﷺ. Choose an English or Bangla book, each with its own author.';
+
+  @override
+  String get dashboardBookBiography => 'Prophet’s life';
 }

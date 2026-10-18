@@ -1,33 +1,34 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/science_in_quran_document.dart';
-import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/theme/app_theme.dart';
-import 'science_in_quran_labels.dart';
+import '../../../core/constants/pdf_book_document.dart';
+import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_theme.dart';
+import '../dashboard/books/dashboard_book_cover.dart';
+import 'pdf_book_labels.dart';
 
-class ScienceInQuranLanguageOption extends StatelessWidget {
-  const ScienceInQuranLanguageOption({
+class PdfBookLanguageOption extends StatelessWidget {
+  const PdfBookLanguageOption({
     super.key,
     required this.document,
     required this.selected,
     required this.onTap,
   });
 
-  final ScienceInQuranDocument document;
+  final PdfBookDocument document;
   final bool selected;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final accent = document.language == ScienceInQuranLanguage.bangla
+    final accent = document.language == PdfBookLanguage.bangla
         ? scheme.tertiary
         : scheme.primary;
     return Semantics(
       button: true,
       selected: selected,
-      label: scienceLanguageLabel(context, document.language),
+      label: pdfBookLanguageLabel(context, document.language),
       child: Material(
         color: selected
             ? accent.withValues(alpha: 0.11)
@@ -48,20 +49,11 @@ class ScienceInQuranLanguageOption extends StatelessWidget {
             ),
             child: Row(
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(AppRadius.md),
-                  child: Image.asset(
-                    document.previewImage,
-                    width: 78,
-                    height: 104,
-                    fit: BoxFit.cover,
-                    errorBuilder: (_, _, _) => Container(
-                      width: 78,
-                      height: 104,
-                      color: accent.withValues(alpha: 0.14),
-                      child: Icon(Icons.menu_book_rounded, color: accent),
-                    ),
-                  ),
+                DashboardBookCover(
+                  imagePath: document.previewImage,
+                  accent: accent,
+                  width: 64,
+                  height: 94,
                 ),
                 const SizedBox(width: AppSpacing.md),
                 Expanded(
@@ -69,19 +61,35 @@ class ScienceInQuranLanguageOption extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        scienceLanguageLabel(context, document.language),
+                        pdfBookLanguageLabel(context, document.language),
                         style: AppTheme.text(context).titleMedium.copyWith(
                           fontWeight: AppTheme.weightExtraBold,
                         ),
                       ),
                       const SizedBox(height: AppSpacing.xs),
+                      if (document.title case final title?) ...[
+                        Text(
+                          title,
+                          style: AppTheme.text(context).titleSmall.copyWith(
+                            fontWeight: AppTheme.weightBold,
+                          ),
+                        ),
+                        const SizedBox(height: AppSpacing.xs),
+                      ],
+                      if (document.author case final author?) ...[
+                        Text(
+                          context.l10n.pdfBookAuthor(author),
+                          style: AppTheme.text(context).bodySmall,
+                        ),
+                        const SizedBox(height: AppSpacing.xs),
+                      ],
                       Text(
-                        scienceFileSize(context, document),
+                        pdfBookFileSize(context, document),
                         style: AppTheme.text(context).bodySmall,
                       ),
                       const SizedBox(height: AppSpacing.sm),
                       Text(
-                        context.l10n.scienceInQuranOfflineReady,
+                        context.l10n.pdfBookOfflineReady,
                         style: AppTheme.text(
                           context,
                         ).labelSmall.copyWith(color: accent),

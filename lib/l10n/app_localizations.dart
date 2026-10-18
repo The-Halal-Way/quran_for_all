@@ -1529,227 +1529,227 @@ abstract class AppLocalizations {
   /// **'Explore your saved reading collection.'**
   String get dashboardBooksLibrarySubtitle;
 
-  /// No description provided for @scienceInQuranEnglish.
+  /// No description provided for @pdfBookEnglish.
   ///
   /// In en, this message translates to:
   /// **'English edition'**
-  String get scienceInQuranEnglish;
+  String get pdfBookEnglish;
 
-  /// No description provided for @scienceInQuranBangla.
+  /// No description provided for @pdfBookBangla.
   ///
   /// In en, this message translates to:
   /// **'Bangla edition'**
-  String get scienceInQuranBangla;
+  String get pdfBookBangla;
 
-  /// No description provided for @scienceInQuranFileSize.
+  /// No description provided for @pdfBookFileSize.
   ///
   /// In en, this message translates to:
   /// **'PDF · {size} MB'**
-  String scienceInQuranFileSize(String size);
+  String pdfBookFileSize(String size);
 
-  /// No description provided for @scienceInQuranChooseLanguage.
+  /// No description provided for @pdfBookChooseLanguage.
   ///
   /// In en, this message translates to:
   /// **'Choose a language'**
-  String get scienceInQuranChooseLanguage;
+  String get pdfBookChooseLanguage;
 
-  /// No description provided for @scienceInQuranLanguageDescription.
+  /// No description provided for @pdfBookLanguageDescription.
   ///
   /// In en, this message translates to:
-  /// **'Download the edition you prefer. It will be available offline with your reading position and saved pages.'**
-  String get scienceInQuranLanguageDescription;
+  /// **'Choose a book for offline reading. Your reading position and saved pages are kept separately for each edition.'**
+  String get pdfBookLanguageDescription;
 
-  /// No description provided for @scienceInQuranOfflineReady.
+  /// No description provided for @pdfBookOfflineReady.
   ///
   /// In en, this message translates to:
   /// **'Ready offline'**
-  String get scienceInQuranOfflineReady;
+  String get pdfBookOfflineReady;
 
-  /// No description provided for @scienceInQuranDownload.
+  /// No description provided for @pdfBookDownload.
   ///
   /// In en, this message translates to:
-  /// **'Download booklet'**
-  String get scienceInQuranDownload;
+  /// **'Download book'**
+  String get pdfBookDownload;
 
-  /// No description provided for @scienceInQuranDownloading.
+  /// No description provided for @pdfBookDownloading.
   ///
   /// In en, this message translates to:
   /// **'Downloading… {progress}%'**
-  String scienceInQuranDownloading(String progress);
+  String pdfBookDownloading(String progress);
 
-  /// No description provided for @scienceInQuranCancel.
+  /// No description provided for @pdfBookCancel.
   ///
   /// In en, this message translates to:
   /// **'Cancel'**
-  String get scienceInQuranCancel;
+  String get pdfBookCancel;
 
-  /// No description provided for @scienceInQuranOpen.
+  /// No description provided for @pdfBookOpen.
   ///
   /// In en, this message translates to:
-  /// **'Read booklet'**
-  String get scienceInQuranOpen;
+  /// **'Read book'**
+  String get pdfBookOpen;
 
-  /// No description provided for @scienceInQuranContinue.
+  /// No description provided for @pdfBookContinue.
   ///
   /// In en, this message translates to:
   /// **'Continue reading'**
-  String get scienceInQuranContinue;
+  String get pdfBookContinue;
 
-  /// No description provided for @scienceInQuranLastPage.
+  /// No description provided for @pdfBookLastPage.
   ///
   /// In en, this message translates to:
   /// **'Continue from page {page}'**
-  String scienceInQuranLastPage(String page);
+  String pdfBookLastPage(String page);
 
-  /// No description provided for @scienceInQuranBookmarks.
+  /// No description provided for @pdfBookBookmarks.
   ///
   /// In en, this message translates to:
   /// **'Saved pages'**
-  String get scienceInQuranBookmarks;
+  String get pdfBookBookmarks;
 
-  /// No description provided for @scienceInQuranBookmarkAdd.
+  /// No description provided for @pdfBookBookmarkAdd.
   ///
   /// In en, this message translates to:
   /// **'Bookmark this page'**
-  String get scienceInQuranBookmarkAdd;
+  String get pdfBookBookmarkAdd;
 
-  /// No description provided for @scienceInQuranBookmarkRemove.
+  /// No description provided for @pdfBookBookmarkRemove.
   ///
   /// In en, this message translates to:
   /// **'Remove page bookmark'**
-  String get scienceInQuranBookmarkRemove;
+  String get pdfBookBookmarkRemove;
 
-  /// No description provided for @scienceInQuranBookmarkSaved.
+  /// No description provided for @pdfBookBookmarkSaved.
   ///
   /// In en, this message translates to:
   /// **'Page {page} bookmarked'**
-  String scienceInQuranBookmarkSaved(String page);
+  String pdfBookBookmarkSaved(String page);
 
-  /// No description provided for @scienceInQuranBookmarkRemoved.
+  /// No description provided for @pdfBookBookmarkRemoved.
   ///
   /// In en, this message translates to:
   /// **'Page {page} bookmark removed'**
-  String scienceInQuranBookmarkRemoved(String page);
+  String pdfBookBookmarkRemoved(String page);
 
-  /// No description provided for @scienceInQuranBookmarksEmpty.
+  /// No description provided for @pdfBookBookmarksEmpty.
   ///
   /// In en, this message translates to:
   /// **'No saved pages yet'**
-  String get scienceInQuranBookmarksEmpty;
+  String get pdfBookBookmarksEmpty;
 
-  /// No description provided for @scienceInQuranPageNumberNote.
+  /// No description provided for @pdfBookPageNumberNote.
   ///
   /// In en, this message translates to:
-  /// **'Page numbers refer to the booklet PDF.'**
-  String get scienceInQuranPageNumberNote;
+  /// **'Page numbers refer to the PDF.'**
+  String get pdfBookPageNumberNote;
 
-  /// No description provided for @scienceInQuranPage.
+  /// No description provided for @pdfBookPage.
   ///
   /// In en, this message translates to:
   /// **'Page {page}'**
-  String scienceInQuranPage(String page);
+  String pdfBookPage(String page);
 
-  /// No description provided for @scienceInQuranPageCounter.
+  /// No description provided for @pdfBookPageCounter.
   ///
   /// In en, this message translates to:
   /// **'Page {page} of {total}'**
-  String scienceInQuranPageCounter(String page, String total);
+  String pdfBookPageCounter(String page, String total);
 
-  /// No description provided for @scienceInQuranJump.
+  /// No description provided for @pdfBookJump.
   ///
   /// In en, this message translates to:
   /// **'Go to page'**
-  String get scienceInQuranJump;
+  String get pdfBookJump;
 
-  /// No description provided for @scienceInQuranPageField.
+  /// No description provided for @pdfBookPageField.
   ///
   /// In en, this message translates to:
   /// **'PDF page number'**
-  String get scienceInQuranPageField;
+  String get pdfBookPageField;
 
-  /// No description provided for @scienceInQuranPageRange.
+  /// No description provided for @pdfBookPageRange.
   ///
   /// In en, this message translates to:
   /// **'Enter a page from 1 to {total}'**
-  String scienceInQuranPageRange(String total);
+  String pdfBookPageRange(String total);
 
-  /// No description provided for @scienceInQuranGo.
+  /// No description provided for @pdfBookGo.
   ///
   /// In en, this message translates to:
   /// **'Go'**
-  String get scienceInQuranGo;
+  String get pdfBookGo;
 
-  /// No description provided for @scienceInQuranPrevious.
+  /// No description provided for @pdfBookPrevious.
   ///
   /// In en, this message translates to:
   /// **'Previous page'**
-  String get scienceInQuranPrevious;
+  String get pdfBookPrevious;
 
-  /// No description provided for @scienceInQuranNext.
+  /// No description provided for @pdfBookNext.
   ///
   /// In en, this message translates to:
   /// **'Next page'**
-  String get scienceInQuranNext;
+  String get pdfBookNext;
 
-  /// No description provided for @scienceInQuranReaderHint.
+  /// No description provided for @pdfBookReaderHint.
   ///
   /// In en, this message translates to:
   /// **'Scroll to read · Pinch to zoom'**
-  String get scienceInQuranReaderHint;
+  String get pdfBookReaderHint;
 
-  /// No description provided for @scienceInQuranRetry.
+  /// No description provided for @pdfBookRetry.
   ///
   /// In en, this message translates to:
   /// **'Try again'**
-  String get scienceInQuranRetry;
+  String get pdfBookRetry;
 
-  /// No description provided for @scienceInQuranDownloadAgain.
+  /// No description provided for @pdfBookDownloadAgain.
   ///
   /// In en, this message translates to:
   /// **'Download again'**
-  String get scienceInQuranDownloadAgain;
+  String get pdfBookDownloadAgain;
 
-  /// No description provided for @scienceInQuranReaderError.
+  /// No description provided for @pdfBookReaderError.
   ///
   /// In en, this message translates to:
   /// **'This PDF could not be opened. Try again or download a fresh copy.'**
-  String get scienceInQuranReaderError;
+  String get pdfBookReaderError;
 
-  /// No description provided for @scienceInQuranNetworkError.
+  /// No description provided for @pdfBookNetworkError.
   ///
   /// In en, this message translates to:
-  /// **'Could not download the booklet. Check your connection and try again.'**
-  String get scienceInQuranNetworkError;
+  /// **'Could not download the book. Check your connection and try again.'**
+  String get pdfBookNetworkError;
 
-  /// No description provided for @scienceInQuranInvalidPdf.
+  /// No description provided for @pdfBookInvalidPdf.
   ///
   /// In en, this message translates to:
   /// **'The download did not contain a complete PDF. Please try again.'**
-  String get scienceInQuranInvalidPdf;
+  String get pdfBookInvalidPdf;
 
-  /// No description provided for @scienceInQuranStorageError.
+  /// No description provided for @pdfBookStorageError.
   ///
   /// In en, this message translates to:
   /// **'Could not save on this device. Check available storage and try again.'**
-  String get scienceInQuranStorageError;
+  String get pdfBookStorageError;
 
-  /// No description provided for @scienceInQuranRemoveDownload.
+  /// No description provided for @pdfBookRemoveDownload.
   ///
   /// In en, this message translates to:
-  /// **'Remove offline booklet'**
-  String get scienceInQuranRemoveDownload;
+  /// **'Remove offline book'**
+  String get pdfBookRemoveDownload;
 
-  /// No description provided for @scienceInQuranRemoveDownloadBody.
+  /// No description provided for @pdfBookRemoveDownloadBody.
   ///
   /// In en, this message translates to:
-  /// **'Remove the downloaded booklet to free up storage? Your saved pages and reading position will be kept.'**
-  String get scienceInQuranRemoveDownloadBody;
+  /// **'Remove the downloaded book to free up storage? Your saved pages and reading position will be kept.'**
+  String get pdfBookRemoveDownloadBody;
 
-  /// No description provided for @scienceInQuranRemove.
+  /// No description provided for @pdfBookRemove.
   ///
   /// In en, this message translates to:
   /// **'Remove'**
-  String get scienceInQuranRemove;
+  String get pdfBookRemove;
 
   /// No description provided for @propheciesBookTitle.
   ///
@@ -8794,6 +8794,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No occasions match your search.'**
   String get islamicDaysNoResults;
+
+  /// No description provided for @pdfBookDownloadingUnknown.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading book…'**
+  String get pdfBookDownloadingUnknown;
+
+  /// No description provided for @pdfBookLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Opening book…'**
+  String get pdfBookLoading;
+
+  /// No description provided for @pdfBookAuthor.
+  ///
+  /// In en, this message translates to:
+  /// **'By {author}'**
+  String pdfBookAuthor(String author);
+
+  /// No description provided for @lifeOfMuhammadDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore the life of Prophet Muhammad ﷺ. Choose an English or Bangla book, each with its own author.'**
+  String get lifeOfMuhammadDescription;
+
+  /// No description provided for @dashboardBookBiography.
+  ///
+  /// In en, this message translates to:
+  /// **'Prophet’s life'**
+  String get dashboardBookBiography;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

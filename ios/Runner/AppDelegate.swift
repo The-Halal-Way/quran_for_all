@@ -7,6 +7,7 @@ import UserNotifications
 @objc class AppDelegate: FlutterAppDelegate {
   private var qiblaHeadingHandler: QiblaHeadingStreamHandler?
   private var qiblaHeadingChannel: FlutterEventChannel?
+  private var tasbeehHaptics: TasbeehHapticsChannel?
 
   override func application(
     _ application: UIApplication,
@@ -15,6 +16,7 @@ import UserNotifications
     UNUserNotificationCenter.current().delegate = self
     GeneratedPluginRegistrant.register(with: self)
     let controller = window?.rootViewController as! FlutterViewController
+    tasbeehHaptics = TasbeehHapticsChannel(messenger: controller.binaryMessenger)
     let headingChannel = FlutterEventChannel(
       name: "quran_for_all/heading",
       binaryMessenger: controller.binaryMessenger

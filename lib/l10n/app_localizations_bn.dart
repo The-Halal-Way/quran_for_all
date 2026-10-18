@@ -736,131 +736,131 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardBooksLibrarySubtitle => 'আপনার পড়ার সংগ্রহ দেখুন।';
 
   @override
-  String get scienceInQuranEnglish => 'ইংরেজি সংস্করণ';
+  String get pdfBookEnglish => 'ইংরেজি সংস্করণ';
 
   @override
-  String get scienceInQuranBangla => 'বাংলা সংস্করণ';
+  String get pdfBookBangla => 'বাংলা সংস্করণ';
 
   @override
-  String scienceInQuranFileSize(String size) {
+  String pdfBookFileSize(String size) {
     return 'পিডিএফ · $size এমবি';
   }
 
   @override
-  String get scienceInQuranChooseLanguage => 'ভাষা বেছে নিন';
+  String get pdfBookChooseLanguage => 'ভাষা বেছে নিন';
 
   @override
-  String get scienceInQuranLanguageDescription => 'আপনার পছন্দের সংস্করণ ডাউনলোড করুন। এটি পড়ার অবস্থান ও সংরক্ষিত পৃষ্ঠাসহ অফলাইনে থাকবে।';
+  String get pdfBookLanguageDescription => 'অফলাইনে পড়ার জন্য বই বেছে নিন। প্রতিটি সংস্করণের পড়ার অবস্থান ও সংরক্ষিত পৃষ্ঠা আলাদাভাবে রাখা হবে।';
 
   @override
-  String get scienceInQuranOfflineReady => 'অফলাইনে প্রস্তুত';
+  String get pdfBookOfflineReady => 'অফলাইনে প্রস্তুত';
 
   @override
-  String get scienceInQuranDownload => 'পুস্তিকা ডাউনলোড করুন';
+  String get pdfBookDownload => 'বই ডাউনলোড করুন';
 
   @override
-  String scienceInQuranDownloading(String progress) {
+  String pdfBookDownloading(String progress) {
     return 'ডাউনলোড হচ্ছে… $progress%';
   }
 
   @override
-  String get scienceInQuranCancel => 'বাতিল';
+  String get pdfBookCancel => 'বাতিল';
 
   @override
-  String get scienceInQuranOpen => 'পুস্তিকা পড়ুন';
+  String get pdfBookOpen => 'বই পড়ুন';
 
   @override
-  String get scienceInQuranContinue => 'পড়া চালিয়ে যান';
+  String get pdfBookContinue => 'পড়া চালিয়ে যান';
 
   @override
-  String scienceInQuranLastPage(String page) {
+  String pdfBookLastPage(String page) {
     return 'পৃষ্ঠা $page থেকে চালিয়ে যান';
   }
 
   @override
-  String get scienceInQuranBookmarks => 'সংরক্ষিত পৃষ্ঠা';
+  String get pdfBookBookmarks => 'সংরক্ষিত পৃষ্ঠা';
 
   @override
-  String get scienceInQuranBookmarkAdd => 'এই পৃষ্ঠা সংরক্ষণ করুন';
+  String get pdfBookBookmarkAdd => 'এই পৃষ্ঠা সংরক্ষণ করুন';
 
   @override
-  String get scienceInQuranBookmarkRemove => 'পৃষ্ঠা সংরক্ষণ সরান';
+  String get pdfBookBookmarkRemove => 'পৃষ্ঠা সংরক্ষণ সরান';
 
   @override
-  String scienceInQuranBookmarkSaved(String page) {
+  String pdfBookBookmarkSaved(String page) {
     return 'পৃষ্ঠা $page সংরক্ষণ করা হয়েছে';
   }
 
   @override
-  String scienceInQuranBookmarkRemoved(String page) {
+  String pdfBookBookmarkRemoved(String page) {
     return 'পৃষ্ঠা $page-এর সংরক্ষণ সরানো হয়েছে';
   }
 
   @override
-  String get scienceInQuranBookmarksEmpty => 'এখনও কোনো পৃষ্ঠা সংরক্ষিত নেই';
+  String get pdfBookBookmarksEmpty => 'এখনও কোনো পৃষ্ঠা সংরক্ষিত নেই';
 
   @override
-  String get scienceInQuranPageNumberNote => 'পৃষ্ঠা নম্বর পুস্তিকার পিডিএফ অনুযায়ী।';
+  String get pdfBookPageNumberNote => 'পৃষ্ঠা নম্বর পিডিএফ অনুযায়ী।';
 
   @override
-  String scienceInQuranPage(String page) {
+  String pdfBookPage(String page) {
     return 'পৃষ্ঠা $page';
   }
 
   @override
-  String scienceInQuranPageCounter(String page, String total) {
+  String pdfBookPageCounter(String page, String total) {
     return '$totalটি পৃষ্ঠার মধ্যে $page';
   }
 
   @override
-  String get scienceInQuranJump => 'পৃষ্ঠায় যান';
+  String get pdfBookJump => 'পৃষ্ঠায় যান';
 
   @override
-  String get scienceInQuranPageField => 'পিডিএফ পৃষ্ঠা নম্বর';
+  String get pdfBookPageField => 'পিডিএফ পৃষ্ঠা নম্বর';
 
   @override
-  String scienceInQuranPageRange(String total) {
+  String pdfBookPageRange(String total) {
     return '১ থেকে $total-এর মধ্যে পৃষ্ঠা লিখুন';
   }
 
   @override
-  String get scienceInQuranGo => 'যান';
+  String get pdfBookGo => 'যান';
 
   @override
-  String get scienceInQuranPrevious => 'আগের পৃষ্ঠা';
+  String get pdfBookPrevious => 'আগের পৃষ্ঠা';
 
   @override
-  String get scienceInQuranNext => 'পরের পৃষ্ঠা';
+  String get pdfBookNext => 'পরের পৃষ্ঠা';
 
   @override
-  String get scienceInQuranReaderHint => 'পড়তে স্ক্রল করুন · বড় করতে দুই আঙুল ব্যবহার করুন';
+  String get pdfBookReaderHint => 'পড়তে স্ক্রল করুন · বড় করতে দুই আঙুল ব্যবহার করুন';
 
   @override
-  String get scienceInQuranRetry => 'আবার চেষ্টা করুন';
+  String get pdfBookRetry => 'আবার চেষ্টা করুন';
 
   @override
-  String get scienceInQuranDownloadAgain => 'আবার ডাউনলোড করুন';
+  String get pdfBookDownloadAgain => 'আবার ডাউনলোড করুন';
 
   @override
-  String get scienceInQuranReaderError => 'পিডিএফ খোলা যায়নি। আবার চেষ্টা করুন অথবা নতুন করে ডাউনলোড করুন।';
+  String get pdfBookReaderError => 'পিডিএফ খোলা যায়নি। আবার চেষ্টা করুন অথবা নতুন করে ডাউনলোড করুন।';
 
   @override
-  String get scienceInQuranNetworkError => 'পুস্তিকা ডাউনলোড করা যায়নি। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।';
+  String get pdfBookNetworkError => 'বই ডাউনলোড করা যায়নি। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।';
 
   @override
-  String get scienceInQuranInvalidPdf => 'ডাউনলোডে সম্পূর্ণ পিডিএফ পাওয়া যায়নি। আবার চেষ্টা করুন।';
+  String get pdfBookInvalidPdf => 'ডাউনলোডে সম্পূর্ণ পিডিএফ পাওয়া যায়নি। আবার চেষ্টা করুন।';
 
   @override
-  String get scienceInQuranStorageError => 'এই ডিভাইসে সংরক্ষণ করা যায়নি। খালি জায়গা দেখে আবার চেষ্টা করুন।';
+  String get pdfBookStorageError => 'এই ডিভাইসে সংরক্ষণ করা যায়নি। খালি জায়গা দেখে আবার চেষ্টা করুন।';
 
   @override
-  String get scienceInQuranRemoveDownload => 'অফলাইন পুস্তিকা সরান';
+  String get pdfBookRemoveDownload => 'অফলাইন বই সরান';
 
   @override
-  String get scienceInQuranRemoveDownloadBody => 'জায়গা খালি করতে ডাউনলোড করা পুস্তিকা সরাবেন? সংরক্ষিত পৃষ্ঠা ও পড়ার অবস্থান রাখা হবে।';
+  String get pdfBookRemoveDownloadBody => 'জায়গা খালি করতে ডাউনলোড করা বই সরাবেন? সংরক্ষিত পৃষ্ঠা ও পড়ার অবস্থান রাখা হবে।';
 
   @override
-  String get scienceInQuranRemove => 'সরান';
+  String get pdfBookRemove => 'সরান';
 
   @override
   String get propheciesBookTitle => '১০১টি সত্যে পরিণত ভবিষ্যদ্বাণী';
@@ -4478,4 +4478,21 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get islamicDaysNoResults => 'আপনার অনুসন্ধানে কোনো উপলক্ষ পাওয়া যায়নি।';
+
+  @override
+  String get pdfBookDownloadingUnknown => 'বই ডাউনলোড হচ্ছে…';
+
+  @override
+  String get pdfBookLoading => 'বই খোলা হচ্ছে…';
+
+  @override
+  String pdfBookAuthor(String author) {
+    return 'লেখক: $author';
+  }
+
+  @override
+  String get lifeOfMuhammadDescription => 'নবী মুহাম্মদ ﷺ-এর জীবন সম্পর্কে পড়ুন। ইংরেজি বা বাংলা বই বেছে নিন; প্রতিটি বইয়ের লেখক আলাদা।';
+
+  @override
+  String get dashboardBookBiography => 'নবীজির জীবন';
 }

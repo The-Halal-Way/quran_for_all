@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/theme/app_theme.dart';
-import 'science_in_quran_labels.dart';
+import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_theme.dart';
+import 'pdf_book_labels.dart';
 
-class ScienceInQuranReaderControls extends StatelessWidget {
-  const ScienceInQuranReaderControls({
+class PdfBookReaderControls extends StatelessWidget {
+  const PdfBookReaderControls({
     super.key,
     required this.page,
     required this.pageCount,
@@ -39,7 +39,7 @@ class ScienceInQuranReaderControls extends StatelessWidget {
                 children: [
                   IconButton.filledTonal(
                     onPressed: ready && page > 1 ? onPrevious : null,
-                    tooltip: context.l10n.scienceInQuranPrevious,
+                    tooltip: context.l10n.pdfBookPrevious,
                     icon: const Icon(Icons.chevron_left_rounded),
                   ),
                   const SizedBox(width: AppSpacing.sm),
@@ -48,11 +48,11 @@ class ScienceInQuranReaderControls extends StatelessWidget {
                       onPressed: ready ? onJump : null,
                       child: Text(
                         pageCount > 0
-                            ? context.l10n.scienceInQuranPageCounter(
-                                scienceNumber(context, page),
-                                scienceNumber(context, pageCount),
+                            ? context.l10n.pdfBookPageCounter(
+                                pdfBookNumber(context, page),
+                                pdfBookNumber(context, pageCount),
                               )
-                            : context.l10n.scienceInQuranTitle,
+                            : context.l10n.pdfBookLoading,
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -60,13 +60,13 @@ class ScienceInQuranReaderControls extends StatelessWidget {
                   const SizedBox(width: AppSpacing.sm),
                   IconButton.filledTonal(
                     onPressed: ready && page < pageCount ? onNext : null,
-                    tooltip: context.l10n.scienceInQuranNext,
+                    tooltip: context.l10n.pdfBookNext,
                     icon: const Icon(Icons.chevron_right_rounded),
                   ),
                 ],
               ),
               Text(
-                context.l10n.scienceInQuranReaderHint,
+                context.l10n.pdfBookReaderHint,
                 textAlign: TextAlign.center,
                 style: AppTheme.text(
                   context,

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/localization/l10n_extensions.dart';
-import 'science_in_quran_labels.dart';
+import '../../../core/localization/l10n_extensions.dart';
+import 'pdf_book_labels.dart';
 
-class ScienceInQuranJumpDialog extends StatefulWidget {
-  const ScienceInQuranJumpDialog({
+class PdfBookJumpDialog extends StatefulWidget {
+  const PdfBookJumpDialog({
     super.key,
     required this.page,
     required this.pageCount,
@@ -14,11 +14,10 @@ class ScienceInQuranJumpDialog extends StatefulWidget {
   final int pageCount;
 
   @override
-  State<ScienceInQuranJumpDialog> createState() =>
-      _ScienceInQuranJumpDialogState();
+  State<PdfBookJumpDialog> createState() => _PdfBookJumpDialogState();
 }
 
-class _ScienceInQuranJumpDialogState extends State<ScienceInQuranJumpDialog> {
+class _PdfBookJumpDialogState extends State<PdfBookJumpDialog> {
   final _form = GlobalKey<FormState>();
   late final _controller = TextEditingController(text: '${widget.page}');
 
@@ -42,7 +41,7 @@ class _ScienceInQuranJumpDialogState extends State<ScienceInQuranJumpDialog> {
   @override
   Widget build(BuildContext context) => AlertDialog(
     scrollable: true,
-    title: Text(context.l10n.scienceInQuranJump),
+    title: Text(context.l10n.pdfBookJump),
     content: Form(
       key: _form,
       child: TextFormField(
@@ -52,14 +51,14 @@ class _ScienceInQuranJumpDialogState extends State<ScienceInQuranJumpDialog> {
         textInputAction: TextInputAction.go,
         onFieldSubmitted: (_) => _submit(),
         decoration: InputDecoration(
-          labelText: context.l10n.scienceInQuranPageField,
-          helperText: context.l10n.scienceInQuranPageRange(
-            scienceNumber(context, widget.pageCount),
+          labelText: context.l10n.pdfBookPageField,
+          helperText: context.l10n.pdfBookPageRange(
+            pdfBookNumber(context, widget.pageCount),
           ),
         ),
         validator: (value) => _parsePage(value ?? '') == null
-            ? context.l10n.scienceInQuranPageRange(
-                scienceNumber(context, widget.pageCount),
+            ? context.l10n.pdfBookPageRange(
+                pdfBookNumber(context, widget.pageCount),
               )
             : null,
       ),
@@ -67,12 +66,9 @@ class _ScienceInQuranJumpDialogState extends State<ScienceInQuranJumpDialog> {
     actions: [
       TextButton(
         onPressed: () => Navigator.pop(context),
-        child: Text(context.l10n.scienceInQuranCancel),
+        child: Text(context.l10n.pdfBookCancel),
       ),
-      FilledButton(
-        onPressed: _submit,
-        child: Text(context.l10n.scienceInQuranGo),
-      ),
+      FilledButton(onPressed: _submit, child: Text(context.l10n.pdfBookGo)),
     ],
   );
 }

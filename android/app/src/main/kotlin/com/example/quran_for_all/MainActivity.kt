@@ -6,8 +6,12 @@ import io.flutter.embedding.android.FlutterActivity
 import io.flutter.plugin.common.MethodChannel
 
 class MainActivity : FlutterActivity() {
+    private var tasbeehHaptics: TasbeehHapticsChannel? = null
+
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        tasbeehHaptics?.dispose()
+        tasbeehHaptics = TasbeehHapticsChannel(this, flutterEngine.dartExecutor.binaryMessenger)
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "quran_for_all/compass")
             .setMethodCallHandler { call, result ->
                 if (call.method != "declination") {
@@ -31,5 +35,11 @@ class MainActivity : FlutterActivity() {
                 )
                 result.success(field.declination.toDouble())
             }
+    }
+
+    override fun cleanUpFlutterEngine(flutterEngine: FlutterEngine) {
+        tasbeehHaptics?.dispose()
+        tasbeehHaptics = null
+        super.cleanUpFlutterEngine(flutterEngine)
     }
 }

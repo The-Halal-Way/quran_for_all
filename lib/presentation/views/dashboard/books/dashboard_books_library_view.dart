@@ -10,16 +10,24 @@ import '../../../widgets/common/app_language_action_button.dart';
 import '../../../widgets/common/app_page_scrollbar.dart';
 import '../../../widgets/common/app_premium_page_background.dart';
 import '../../../widgets/dashboard/books/dashboard_prophecies_card.dart';
+import '../../../widgets/dashboard/books/dashboard_book_kind.dart';
+import '../../../widgets/dashboard/books/dashboard_pdf_book_card.dart';
 import '../../../widgets/dashboard/science_in_quran/dashboard_science_in_quran_card.dart';
 
 /// Full reading library opened from the compact dashboard shelf.
 class DashboardBooksLibraryView extends StatelessWidget {
-  const DashboardBooksLibraryView({super.key});
+  const DashboardBooksLibraryView({super.key, this.initialBook});
+
+  final DashboardBookKind? initialBook;
 
   @override
   Widget build(BuildContext context) {
     final responsive = AppResponsive.of(context);
     final settings = context.watch<SettingsViewModel>();
+    final books = [
+      ?initialBook,
+      ...DashboardBookKind.values.where((book) => book != initialBook),
+    ];
     return Scaffold(
       body: AppPremiumPageBackground(
         child: SafeArea(
@@ -88,10 +96,22 @@ class DashboardBooksLibraryView extends StatelessWidget {
                         constraints: const BoxConstraints(maxWidth: 720),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: const [
-                            DashboardScienceInQuranCard(),
-                            SizedBox(height: AppSpacing.lg),
-                            DashboardPropheciesCard(),
+                          children: [
+                            for (final book in books) ...[
+                              if (book != books.first)
+                                const SizedBox(height: AppSpacing.lg),
+                              switch (book) {
+                                DashboardBookKind.science =>
+                                  const DashboardScienceInQuranCard(),
+                                DashboardBookKind.prophecies =>
+                                  const DashboardPropheciesCard(),
+                                DashboardBookKind.lifeOfMuhammad =>
+                                  DashboardPdfBookCard(
+                                    book: book.pdfBook!,
+                                    accent: book.accent,
+                                  ),
+                              },
+                            ],
                           ],
                         ),
                       ),

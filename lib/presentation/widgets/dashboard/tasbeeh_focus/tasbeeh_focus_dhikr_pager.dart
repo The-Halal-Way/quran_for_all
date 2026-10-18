@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../domain/entities/tasbeeh/tasbeeh_phrase.dart';
+import '../tasbeeh/tasbeeh_haptics.dart';
 import 'tasbeeh_focus_counter.dart';
 import 'tasbeeh_focus_dhikr_navigation.dart';
 
@@ -63,7 +63,7 @@ class _TasbeehFocusDhikrPagerState extends State<TasbeehFocusDhikrPager> {
   void _selectPage(int index) {
     final id = widget.phrases[index].id;
     if (id == widget.selectedId) return;
-    HapticFeedback.selectionClick();
+    TasbeehHaptics.select();
     widget.onSelected(id);
   }
 

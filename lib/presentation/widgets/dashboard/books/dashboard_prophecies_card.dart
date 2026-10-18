@@ -12,6 +12,7 @@ import '../../../../core/utils/app_page_route.dart';
 import '../../../../data/models/prophecies/prophecy_book.dart';
 import '../../../viewmodels/prophecies_viewmodel.dart';
 import '../../../views/dashboard/books/prophecies_part_view.dart';
+import 'dashboard_book_cover.dart';
 
 class DashboardPropheciesCard extends StatelessWidget {
   const DashboardPropheciesCard({super.key});
@@ -53,7 +54,12 @@ class DashboardPropheciesCard extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const _PropheciesBookMark(),
+              DashboardBookCover(
+                accent: colors.coral,
+                fallbackLabel: '101',
+                width: 64,
+                height: 96,
+              ),
               const SizedBox(width: AppSpacing.md),
               Expanded(
                 child: Column(
@@ -257,35 +263,6 @@ class _PartCover extends StatelessWidget {
           ),
         ),
       ],
-    ),
-  );
-}
-
-class _PropheciesBookMark extends StatelessWidget {
-  const _PropheciesBookMark();
-
-  @override
-  Widget build(BuildContext context) => Container(
-    width: 54,
-    height: 62,
-    decoration: BoxDecoration(
-      gradient: const LinearGradient(
-        colors: [Color(0xFFE94D8C), Color(0xFF625BF6)],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      ),
-      borderRadius: BorderRadius.circular(AppRadius.base),
-      boxShadow: [
-        BoxShadow(
-          color: AppThemeColors.light.coral.withValues(alpha: 0.24),
-          blurRadius: 12,
-        ),
-      ],
-    ),
-    child: const Icon(
-      Icons.auto_stories_rounded,
-      color: Colors.white,
-      size: 30,
     ),
   );
 }

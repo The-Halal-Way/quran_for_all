@@ -1,7 +1,7 @@
-import '../../core/constants/science_in_quran_document.dart';
+import '../../core/constants/pdf_book_document.dart';
 
-class ScienceInQuranReadingState {
-  ScienceInQuranReadingState({
+class PdfBookReadingState {
+  PdfBookReadingState({
     this.pageCount = 0,
     this.lastPage = 1,
     Iterable<int> bookmarks = const <int>[],
@@ -11,11 +11,11 @@ class ScienceInQuranReadingState {
   final int lastPage;
   final List<int> bookmarks;
 
-  ScienceInQuranReadingState copyWith({
+  PdfBookReadingState copyWith({
     int? pageCount,
     int? lastPage,
     Iterable<int>? bookmarks,
-  }) => ScienceInQuranReadingState(
+  }) => PdfBookReadingState(
     pageCount: pageCount ?? this.pageCount,
     lastPage: lastPage ?? this.lastPage,
     bookmarks: bookmarks ?? this.bookmarks,
@@ -27,9 +27,9 @@ class ScienceInQuranReadingState {
     'bookmarks': bookmarks,
   };
 
-  factory ScienceInQuranReadingState.fromJson(Map<String, dynamic> json) {
+  factory PdfBookReadingState.fromJson(Map<String, dynamic> json) {
     final rawBookmarks = json['bookmarks'];
-    return ScienceInQuranReadingState(
+    return PdfBookReadingState(
       pageCount: (json['pageCount'] as num?)?.toInt() ?? 0,
       lastPage: (json['lastPage'] as num?)?.toInt() ?? 1,
       bookmarks: rawBookmarks is List
@@ -39,22 +39,22 @@ class ScienceInQuranReadingState {
   }
 }
 
-class ScienceInQuranLibrary {
-  const ScienceInQuranLibrary({
+class PdfBookLibrary {
+  const PdfBookLibrary({
     required this.reading,
     required this.filePath,
     required this.document,
   });
 
-  final ScienceInQuranReadingState reading;
+  final PdfBookReadingState reading;
   final String? filePath;
-  final ScienceInQuranDocument? document;
+  final PdfBookDocument? document;
 }
 
-enum ScienceInQuranIssue { network, invalidPdf, storage, cancelled }
+enum PdfBookIssue { network, invalidPdf, storage, cancelled }
 
-class ScienceInQuranException implements Exception {
-  const ScienceInQuranException(this.issue);
+class PdfBookException implements Exception {
+  const PdfBookException(this.issue);
 
-  final ScienceInQuranIssue issue;
+  final PdfBookIssue issue;
 }

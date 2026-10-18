@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/theme/app_theme.dart';
-import 'science_in_quran_labels.dart';
+import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_theme.dart';
+import 'pdf_book_labels.dart';
 
-class ScienceInQuranDownloadProgress extends StatelessWidget {
-  const ScienceInQuranDownloadProgress({
+class PdfBookDownloadProgress extends StatelessWidget {
+  const PdfBookDownloadProgress({
     super.key,
     required this.progress,
     required this.onCancel,
   });
 
-  final double progress;
+  final double? progress;
   final VoidCallback onCancel;
 
   @override
@@ -30,15 +30,17 @@ class ScienceInQuranDownloadProgress extends StatelessWidget {
           children: [
             Expanded(
               child: Text(
-                context.l10n.scienceInQuranDownloading(
-                  scienceNumber(context, (progress * 100).floor()),
-                ),
+                progress == null
+                    ? context.l10n.pdfBookDownloadingUnknown
+                    : context.l10n.pdfBookDownloading(
+                        pdfBookNumber(context, (progress! * 100).floor()),
+                      ),
                 style: AppTheme.text(context).bodySmall,
               ),
             ),
             TextButton(
               onPressed: onCancel,
-              child: Text(context.l10n.scienceInQuranCancel),
+              child: Text(context.l10n.pdfBookCancel),
             ),
           ],
         ),

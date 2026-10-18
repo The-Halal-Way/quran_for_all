@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../core/localization/l10n_extensions.dart';
-import '../../../../core/theme/app_spacing.dart';
-import '../../../../core/theme/app_theme.dart';
-import '../../viewmodels/science_in_quran_viewmodel.dart';
-import 'science_in_quran_labels.dart';
+import '../../../core/localization/l10n_extensions.dart';
+import '../../../core/theme/app_spacing.dart';
+import '../../../core/theme/app_theme.dart';
+import '../../viewmodels/pdf_book_viewmodel.dart';
+import 'pdf_book_labels.dart';
 
-class ScienceInQuranBookmarksSheet extends StatelessWidget {
-  const ScienceInQuranBookmarksSheet({super.key});
+class PdfBookBookmarksSheet extends StatelessWidget {
+  const PdfBookBookmarksSheet({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final model = context.watch<ScienceInQuranViewModel>();
+    final model = context.watch<PdfBookViewModel>();
     final pages = model.reading.bookmarks;
     final scheme = Theme.of(context).colorScheme;
     return FractionallySizedBox(
@@ -28,12 +28,12 @@ class ScienceInQuranBookmarksSheet extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              context.l10n.scienceInQuranBookmarks,
+              context.l10n.pdfBookBookmarks,
               style: AppTheme.text(context).titleLarge,
             ),
             const SizedBox(height: AppSpacing.sm),
             Text(
-              context.l10n.scienceInQuranPageNumberNote,
+              context.l10n.pdfBookPageNumberNote,
               style: AppTheme.text(context).bodySmall,
             ),
             const SizedBox(height: AppSpacing.xl),
@@ -50,7 +50,7 @@ class ScienceInQuranBookmarksSheet extends StatelessWidget {
                           ),
                           const SizedBox(height: AppSpacing.lg),
                           Text(
-                            context.l10n.scienceInQuranBookmarksEmpty,
+                            context.l10n.pdfBookBookmarksEmpty,
                             style: AppTheme.text(context).titleMedium,
                             textAlign: TextAlign.center,
                           ),
@@ -73,14 +73,13 @@ class ScienceInQuranBookmarksSheet extends StatelessWidget {
                               color: scheme.primary,
                             ),
                             title: Text(
-                              context.l10n.scienceInQuranPage(
-                                scienceNumber(context, page),
+                              context.l10n.pdfBookPage(
+                                pdfBookNumber(context, page),
                               ),
                             ),
                             onTap: () => Navigator.of(context).pop(page),
                             trailing: IconButton(
-                              tooltip:
-                                  context.l10n.scienceInQuranBookmarkRemove,
+                              tooltip: context.l10n.pdfBookBookmarkRemove,
                               icon: const Icon(Icons.bookmark_remove_outlined),
                               onPressed: () => model.toggleBookmark(page),
                             ),

@@ -20,7 +20,6 @@ import 'data/repositories/daily_hadith_repository_impl.dart';
 import 'data/repositories/islamic_days_repository.dart';
 import 'data/repositories/learning_progress_repository_impl.dart';
 import 'data/repositories/nurani_quran_repository_impl.dart';
-import 'data/repositories/science_in_quran_repository_impl.dart';
 import 'data/repositories/prayer_times_repository_impl.dart';
 import 'data/repositories/quran_repository_impl.dart';
 import 'data/repositories/settings_repository_impl.dart';
@@ -30,7 +29,6 @@ import 'domain/repositories/daily_tracker_repository.dart';
 import 'domain/repositories/daily_hadith_repository.dart';
 import 'domain/repositories/learning_progress_repository.dart';
 import 'domain/repositories/nurani_quran_repository.dart';
-import 'domain/repositories/science_in_quran_repository.dart';
 import 'domain/repositories/prayer_times_repository.dart';
 import 'domain/repositories/quran_repository.dart';
 import 'domain/repositories/settings_repository.dart';
@@ -53,7 +51,7 @@ import 'presentation/viewmodels/islamic_days/islamic_days_viewmodel.dart';
 import 'presentation/viewmodels/quran/quran_viewmodel.dart';
 import 'presentation/viewmodels/quran/nurani_quran_viewmodel.dart';
 import 'presentation/viewmodels/prophecies_viewmodel.dart';
-import 'presentation/viewmodels/science_in_quran_viewmodel.dart';
+import 'presentation/viewmodels/pdf_books_library.dart';
 import 'presentation/viewmodels/read_quran/bookmarks_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/read_quran_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/search_viewmodel.dart';
@@ -118,10 +116,6 @@ class QuranForAllApp extends StatelessWidget {
         Provider<NuraniQuranRepository>(
           create: (context) =>
               NuraniQuranRepositoryImpl(context.read<http.Client>()),
-        ),
-        Provider<ScienceInQuranRepository>(
-          create: (context) =>
-              ScienceInQuranRepositoryImpl(context.read<http.Client>()),
         ),
         Provider<PropheciesPackLoader>(create: (_) => PropheciesPackLoader()),
         Provider<PrayerTimesRepository>(
@@ -227,9 +221,9 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) =>
               NuraniQuranViewModel(context.read<NuraniQuranRepository>()),
         ),
-        ChangeNotifierProvider<ScienceInQuranViewModel>(
-          create: (context) =>
-              ScienceInQuranViewModel(context.read<ScienceInQuranRepository>()),
+        Provider<PdfBooksLibrary>(
+          create: (context) => PdfBooksLibrary(context.read<http.Client>()),
+          dispose: (_, library) => library.dispose(),
         ),
         ChangeNotifierProvider<PropheciesViewModel>(
           create: (context) =>

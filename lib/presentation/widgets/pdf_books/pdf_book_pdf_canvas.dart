@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
 
-import '../../../../core/localization/l10n_extensions.dart';
+import '../../../core/localization/l10n_extensions.dart';
 
-class ScienceInQuranPdfCanvas extends StatelessWidget {
-  const ScienceInQuranPdfCanvas({
+class PdfBookPdfCanvas extends StatelessWidget {
+  const PdfBookPdfCanvas({
     super.key,
     required this.controller,
     required this.onPageChanged,
@@ -35,7 +35,7 @@ class ScienceInQuranPdfCanvas extends StatelessWidget {
           const Center(child: CircularProgressIndicator()),
       errorBuilder: (context, _) => Center(
         child: Text(
-          context.l10n.scienceInQuranReaderError,
+          context.l10n.pdfBookReaderError,
           textAlign: TextAlign.center,
         ),
       ),

@@ -24,6 +24,7 @@
 		4D72545788B0FA34CEA9DFC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04486EBC8B968A2680955AA /* Foundation.framework */; };
 		562EFEBFEA91F29334FB14CF /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C46E440F0C5E32F75BB0E3 /* Pods_Runner.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		B10515000000000000000001 /* TasbeehHapticsChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10515000000000000000002 /* TasbeehHapticsChannel.swift */; };
 		8AF65D99C780B9063CDB5CC0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310EA2B33A2AB6D6004F91C1 /* WidgetKit.framework */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 		6DFE853B0EAE9DA4C2F3BDAC /* PrayerTimesHomeWidget.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = PrayerTimesHomeWidget.entitlements; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B10515000000000000000002 /* TasbeehHapticsChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbeehHapticsChannel.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
 		905BBA5E65D534AA81D1A1BC /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
+				B10515000000000000000002 /* TasbeehHapticsChannel.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 				31FECC55000415E5C5E6BA48 /* Runner.entitlements */,
 			);
@@ -519,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				B10515000000000000000001 /* TasbeehHapticsChannel.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

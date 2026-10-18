@@ -7,32 +7,33 @@ import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../core/constants/science_in_quran_document.dart';
-import '../../domain/entities/science_in_quran_state.dart';
-import '../../domain/repositories/science_in_quran_repository.dart';
+import '../../core/constants/pdf_book_document.dart';
+import '../../domain/entities/pdf_book_state.dart';
+import '../../domain/repositories/pdf_book_repository.dart';
 
-class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
-  ScienceInQuranRepositoryImpl(this._client);
+class PdfBookRepositoryImpl implements PdfBookRepository {
+  PdfBookRepositoryImpl(this._client, {required this.book});
 
   final http.Client _client;
+  final PdfBookDefinition book;
   Completer<void>? _abort;
-  ScienceInQuranDocument? _document;
+  PdfBookDocument? _document;
   static const _timeout = Duration(seconds: 45);
 
-  Future<File> _documentFile([ScienceInQuranDocument? document]) async {
+  Future<File> _documentFile([PdfBookDocument? document]) async {
     final root = await getApplicationSupportDirectory();
-    final directory = Directory(path.join(root.path, 'science_in_quran'));
+    final directory = Directory(path.join(root.path, book.id));
     await directory.create(recursive: true);
     return File(
-      path.join(directory.path, document?.fileName ?? 'science_in_quran.pdf'),
+      path.join(directory.path, document?.fileName ?? '${book.id}.pdf'),
     );
   }
 
   @override
-  Future<ScienceInQuranLibrary> loadLibrary() async {
+  Future<PdfBookLibrary> loadLibrary() async {
     final preferences = await SharedPreferences.getInstance();
-    final document = ScienceInQuranDocument.fromLanguageName(
-      preferences.getString(ScienceInQuranDocument.selectedLanguageKey),
+    final document = book.fromLanguageName(
+      preferences.getString(book.selectedLanguageKey),
     );
     final file = await _documentFile(document);
     final available =
@@ -40,7 +41,7 @@ class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
         await file.exists() &&
         await _isPdf(file, maximumBytes: document.maximumBytes);
     _document = document;
-    return ScienceInQuranLibrary(
+    return PdfBookLibrary(
       reading: _readReading(preferences, document),
       filePath: available ? file.path : null,
       document: document,
@@ -48,10 +49,13 @@ class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
   }
 
   @override
-  Future<ScienceInQuranLibrary> download({
-    required ScienceInQuranDocument document,
+  Future<PdfBookLibrary> download({
+    required PdfBookDocument document,
     required void Function(int bytes, int? total) onProgress,
   }) async {
+    if (!book.documents.contains(document)) {
+      throw ArgumentError('The document does not belong to this book');
+    }
     if (_abort != null) throw StateError('A PDF download is already running');
     final abort = Completer<void>();
     _abort = abort;
@@ -74,17 +78,17 @@ class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
       if (response.statusCode != 200 ||
           contentType.contains('text/html') ||
           (total != null && total > document.maximumBytes)) {
-        throw const ScienceInQuranException(ScienceInQuranIssue.invalidPdf);
+        throw const PdfBookException(PdfBookIssue.invalidPdf);
       }
       writer = await partial.open(mode: FileMode.write);
       var received = 0;
       await for (final chunk in response.stream.timeout(_timeout)) {
         if (abort.isCompleted) {
-          throw const ScienceInQuranException(ScienceInQuranIssue.cancelled);
+          throw const PdfBookException(PdfBookIssue.cancelled);
         }
         received += chunk.length;
         if (received > document.maximumBytes) {
-          throw const ScienceInQuranException(ScienceInQuranIssue.invalidPdf);
+          throw const PdfBookException(PdfBookIssue.invalidPdf);
         }
         await writer.writeFrom(chunk);
         onProgress(received, total);
@@ -94,28 +98,28 @@ class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
       writer = null;
       if ((total != null && total != received) ||
           !await _isPdf(partial, maximumBytes: document.maximumBytes)) {
-        throw const ScienceInQuranException(ScienceInQuranIssue.invalidPdf);
+        throw const PdfBookException(PdfBookIssue.invalidPdf);
       }
       if (abort.isCompleted) {
-        throw const ScienceInQuranException(ScienceInQuranIssue.cancelled);
+        throw const PdfBookException(PdfBookIssue.cancelled);
       }
       await partial.rename(destination.path);
       final reading = await _selectDocument(document);
       _document = document;
       await _removeOtherCopies(document, destination.parent);
-      return ScienceInQuranLibrary(
+      return PdfBookLibrary(
         reading: reading,
         filePath: destination.path,
         document: document,
       );
     } on http.RequestAbortedException {
-      throw const ScienceInQuranException(ScienceInQuranIssue.cancelled);
-    } on ScienceInQuranException {
+      throw const PdfBookException(PdfBookIssue.cancelled);
+    } on PdfBookException {
       rethrow;
     } on FileSystemException {
-      throw const ScienceInQuranException(ScienceInQuranIssue.storage);
+      throw const PdfBookException(PdfBookIssue.storage);
     } catch (_) {
-      throw const ScienceInQuranException(ScienceInQuranIssue.network);
+      throw const PdfBookException(PdfBookIssue.network);
     } finally {
       if (!abort.isCompleted) abort.complete();
       try {
@@ -128,15 +132,15 @@ class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
     }
   }
 
-  ScienceInQuranReadingState _readReading(
+  PdfBookReadingState _readReading(
     SharedPreferences preferences,
-    ScienceInQuranDocument? document,
+    PdfBookDocument? document,
   ) {
-    if (document == null) return ScienceInQuranReadingState();
+    if (document == null) return PdfBookReadingState();
     try {
       final raw = preferences.getString(document.preferencesKey);
       if (raw != null) {
-        return ScienceInQuranReadingState.fromJson(
+        return PdfBookReadingState.fromJson(
           jsonDecode(raw) as Map<String, dynamic>,
         );
       }
@@ -145,32 +149,30 @@ class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
     } on TypeError {
       // Start from page one if metadata has an unexpected shape.
     }
-    return ScienceInQuranReadingState();
+    return PdfBookReadingState();
   }
 
-  Future<ScienceInQuranReadingState> _selectDocument(
-    ScienceInQuranDocument document,
-  ) async {
+  Future<PdfBookReadingState> _selectDocument(PdfBookDocument document) async {
     try {
       final preferences = await SharedPreferences.getInstance();
       final reading = _readReading(preferences, document);
       if (!await preferences.setString(
-        ScienceInQuranDocument.selectedLanguageKey,
+        book.selectedLanguageKey,
         document.language.name,
       )) {
         throw StateError('Could not save selected language');
       }
       return reading;
     } catch (_) {
-      throw const ScienceInQuranException(ScienceInQuranIssue.storage);
+      throw const PdfBookException(PdfBookIssue.storage);
     }
   }
 
   Future<void> _removeOtherCopies(
-    ScienceInQuranDocument selected,
+    PdfBookDocument selected,
     Directory directory,
   ) async {
-    for (final document in ScienceInQuranDocument.documents) {
+    for (final document in book.documents) {
       if (document == selected) continue;
       try {
         final file = File(path.join(directory.path, document.fileName));
@@ -203,7 +205,7 @@ class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
   }
 
   @override
-  Future<void> saveReading(ScienceInQuranReadingState reading) async {
+  Future<void> saveReading(PdfBookReadingState reading) async {
     final document = _document;
     if (document == null) return;
     final preferences = await SharedPreferences.getInstance();
@@ -211,13 +213,13 @@ class ScienceInQuranRepositoryImpl implements ScienceInQuranRepository {
       document.preferencesKey,
       jsonEncode(reading.toJson()),
     )) {
-      throw const ScienceInQuranException(ScienceInQuranIssue.storage);
+      throw const PdfBookException(PdfBookIssue.storage);
     }
   }
 
   @override
   Future<void> removeDownload() async {
-    for (final document in ScienceInQuranDocument.documents) {
+    for (final document in book.documents) {
       final file = await _documentFile(document);
       if (await file.exists()) await file.delete();
     }
