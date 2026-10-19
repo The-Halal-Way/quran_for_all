@@ -1727,5 +1727,11 @@
   "pdfBookAuthor": "লেখক: {author}",
   "@pdfBookAuthor": {"placeholders": {"author": {"type": "String"}}},
   "lifeOfMuhammadDescription": "নবী মুহাম্মদ ﷺ-এর জীবন সম্পর্কে পড়ুন। ইংরেজি বা বাংলা বই বেছে নিন; প্রতিটি বইয়ের লেখক আলাদা।",
-  "dashboardBookBiography": "নবীজির জীবন"
+  "dashboardBookBiography": "নবীজির জীবন",
+  "kidsBooksSectionTitle": "ছোটদের বইঘর",
+  "kidsBooksLanguages": "বাংলা · English",
+  "kidsBooksSahabahDescription": "ছোট্ট পাঠকদের জন্য সাহাবিদের জীবনের গল্প।",
+  "kidsBooksProphetsDescription": "কৌতূহলী ছোট্ট হৃদয়ের জন্য নবীদের গল্প।",
+  "kidsBooksProphetLifeDescription": "পাতায় পাতায় জানো মহানবী মুহাম্মদ (সা.)-এর জীবন।",
+  "kidsBooksHadithDescription": "শিশুদের জন্য গল্পে গল্পে ৪০টি হাদিস।"
 }

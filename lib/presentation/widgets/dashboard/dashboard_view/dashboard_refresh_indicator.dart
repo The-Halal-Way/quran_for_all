@@ -8,7 +8,6 @@ import '../../../viewmodels/daily_reminders/daily_hadith_viewmodel.dart';
 import '../../../viewmodels/dashboard/daily_tracker_viewmodel.dart';
 import '../../../viewmodels/dashboard_prayer_times_viewmodel.dart';
 import '../../../viewmodels/islamic_days/islamic_days_viewmodel.dart';
-import '../../../viewmodels/settings_viewmodel.dart';
 
 class DashboardRefreshIndicator extends StatelessWidget {
   const DashboardRefreshIndicator({super.key, required this.child});
@@ -29,20 +28,15 @@ class DashboardRefreshIndicator extends StatelessWidget {
     final tracker = context.read<DailyTrackerViewModel>();
     final hadith = context.read<DailyHadithViewModel>();
     final islamicDays = context.read<IslamicDaysViewModel>();
-    final settings = context.read<SettingsViewModel>().settings;
-    final locale = context.l10n.localeName;
 
     try {
       await Future.wait<void>([
         prayer.loadPrayerTimes(forceRefresh: true),
         if (!tracker.isLoading) tracker.loadTasks(),
-        if (!hadith.isLoading)
-          hadith.pack == null || hadith.error != null
-              ? hadith.initialize(locale)
-              : hadith.refreshAvailability(reschedule: true),
-        islamicDays.ready && !islamicDays.isLoading && islamicDays.error == null
-            ? islamicDays.refresh(force: true)
-            : islamicDays.initialize(locale, settings.hijriDateAdjustment),
+        if (hadith.pack != null && !hadith.isLoading)
+          hadith.refreshAvailability(reschedule: true),
+        if (islamicDays.ready && !islamicDays.isLoading)
+          islamicDays.refresh(force: true),
       ]);
     } catch (_) {
       if (!context.mounted) return;

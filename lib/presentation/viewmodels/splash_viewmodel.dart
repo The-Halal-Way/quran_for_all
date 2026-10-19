@@ -2,8 +2,8 @@ import 'package:flutter/widgets.dart';
 
 import '../../domain/repositories/quran_repository.dart';
 
-/// Checks local storage during startup. Quran content is downloaded only after
-/// the user explicitly starts it from the Quran experience.
+/// Checks local Quran storage when a Quran page (or the optional splash) opens.
+/// Quran content downloads only after an explicit request.
 class SplashViewModel extends ChangeNotifier {
   SplashViewModel({required QuranRepository quranRepository})
     : _quranRepository = quranRepository;

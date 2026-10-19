@@ -97,4 +97,8 @@ class MyImages {
   static const String bookScienceBn = 'assets/images/books/science_bn.jpg';
   static const String lifeOfMuhammadEn = 'assets/images/books/life_of_muhammad_en.jpg';
   static const String lifeOfMuhammadBn = 'assets/images/books/life_of_muhammad_bn.jpeg';
+  static const String fortyHadithStoriesCover = 'assets/images/books/40_hadith_stories_cover.jpg';
+  static const String lifeOfProphetCover = 'assets/images/books/life_of_prophet_cover.jpg';
+  static const String prophetsStoriesCover = 'assets/images/books/prophets_stories_cover.jpg';
+  static const String sahabaStoriesCover = 'assets/images/books/sahaba_stories_cover.jpg';
 }

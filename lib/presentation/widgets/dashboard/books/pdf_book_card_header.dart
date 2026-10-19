@@ -16,6 +16,7 @@ class PdfBookCardHeader extends StatelessWidget {
     required this.available,
     required this.onRemove,
     required this.onChangeLanguage,
+    this.description,
   });
 
   final PdfBookDefinition book;
@@ -24,6 +25,7 @@ class PdfBookCardHeader extends StatelessWidget {
   final bool available;
   final VoidCallback onRemove;
   final VoidCallback onChangeLanguage;
+  final String? description;
 
   @override
   Widget build(BuildContext context) => Row(
@@ -55,11 +57,14 @@ class PdfBookCardHeader extends StatelessWidget {
                 ),
               ),
             ],
-            const SizedBox(height: AppSpacing.sm),
-            Text(
-              pdfBookDescription(context, book),
-              style: AppTheme.text(context).bodySmall,
-            ),
+            if ((description ?? pdfBookDescription(context, book))
+                .isNotEmpty) ...[
+              const SizedBox(height: AppSpacing.sm),
+              Text(
+                description ?? pdfBookDescription(context, book),
+                style: AppTheme.text(context).bodySmall,
+              ),
+            ],
           ],
         ),
       ),

@@ -34,6 +34,8 @@ class IslamicDaysViewModel extends ChangeNotifier with WidgetsBindingObserver {
       }
     });
     WidgetsBinding.instance.addObserver(this);
+    // Keep the dashboard's local date current without loading the catalog.
+    _timer = Timer.periodic(const Duration(minutes: 1), (_) => refresh());
   }
 
   final IslamicDaysRepository _repository;
@@ -109,7 +111,6 @@ class IslamicDaysViewModel extends ChangeNotifier with WidgetsBindingObserver {
       await _progress.load();
       if (_disposed) return;
       _recompute();
-      _timer = Timer.periodic(const Duration(minutes: 1), (_) => refresh());
       // Native notification failures should not hide offline guidance.
       await _reschedule();
     } catch (error) {
@@ -140,19 +141,25 @@ class IslamicDaysViewModel extends ChangeNotifier with WidgetsBindingObserver {
   }
 
   Future<void> configure(String locale, int adjustment) async {
-    if (!ready || _loading) return initialize(locale, adjustment);
     if (_locale == locale && _adjustment == adjustment) return;
     _locale = locale;
     _adjustment = adjustment;
+    // The app shell may update preferences without opening this feature.
+    if (!ready || _loading) return;
     _recompute();
     await _reschedule();
   }
 
   Future<void> refresh({bool force = false}) async {
-    if (!ready || _disposed) return;
+    if (_disposed) return;
     final now = localNow;
     final signature = '${islamicDayDateKey(now)}|${now.timeZoneOffset}';
     if (!force && signature == _dateSignature) return;
+    if (!ready) {
+      _dateSignature = signature;
+      _notify();
+      return;
+    }
     _recompute();
     await _reschedule();
   }

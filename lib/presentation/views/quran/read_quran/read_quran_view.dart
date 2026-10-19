@@ -35,6 +35,14 @@ class _ReadQuranViewState extends State<ReadQuranView> {
   bool _requestedLoad = false;
 
   @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) unawaited(context.read<SplashViewModel?>()?.initialize());
+    });
+  }
+
+  @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     final quranSetup = context.watch<SplashViewModel?>();

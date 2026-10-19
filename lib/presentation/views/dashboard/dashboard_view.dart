@@ -14,13 +14,8 @@ class DashboardView extends StatelessWidget {
       child: SafeArea(
         child: DashboardRefreshIndicator(
           child: AppPageScrollbar(
-            builder: (context, controller) => SingleChildScrollView(
-              controller: controller,
-              physics: const AlwaysScrollableScrollPhysics(
-                parent: BouncingScrollPhysics(),
-              ),
-              child: const DashboardContent(),
-            ),
+            builder: (context, controller) =>
+                DashboardContent(controller: controller),
           ),
         ),
       ),

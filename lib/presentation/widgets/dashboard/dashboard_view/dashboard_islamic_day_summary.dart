@@ -74,9 +74,9 @@ class DashboardIslamicDaySummary extends StatelessWidget {
                 return Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(child: content),
+                    Expanded(flex: 4, child: content),
                     const SizedBox(width: AppSpacing.lg),
-                    dates,
+                    Expanded(flex: 3, child: dates),
                   ],
                 );
               },
@@ -184,7 +184,7 @@ class _SummaryDateRail extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     return Container(
       padding: const EdgeInsets.symmetric(
-       horizontal: AppSpacing.md,
+        horizontal: AppSpacing.md,
         vertical: AppSpacing.sm,
       ),
       decoration: BoxDecoration(
@@ -198,17 +198,19 @@ class _SummaryDateRail extends StatelessWidget {
         children: [
           Expanded(
             flex: 3,
-            child:  DashboardDateLabel(
-            label: info.hijriDateLabel,
-            icon: Icons.nightlight_round,
-            highlighted: true,
-          )),
-         Expanded(
-          flex: 2,
-          child:  DashboardDateLabel(
-            label: info.dateLabel,
-            icon: Icons.calendar_today_rounded,
-          ),),
+            child: DashboardDateLabel(
+              label: info.hijriDateLabel,
+              icon: Icons.nightlight_round,
+              highlighted: true,
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: DashboardDateLabel(
+              label: info.dateLabel,
+              icon: Icons.calendar_today_rounded,
+            ),
+          ),
         ],
       ),
     );

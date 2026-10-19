@@ -16,12 +16,30 @@ class AudioService {
     AudioPlayer? audioPlayer,
     Future<Directory> Function()? audioCacheDirectory,
   }) : _httpClient = httpClient,
-       _player = audioPlayer ?? AudioPlayer(),
+       _player = audioPlayer,
        _cacheDirectoryProvider = audioCacheDirectory {
-    _playerStateSubscription = _player.onPlayerStateChanged.listen(
+    if (audioPlayer != null) _attachPlayer(audioPlayer);
+  }
+
+  AudioPlayer _ensurePlayer() {
+    final existing = _player;
+    if (existing != null) return existing;
+    final player = AudioPlayer();
+    _player = player;
+    _attachPlayer(player);
+    return player;
+  }
+
+  void _attachPlayer(AudioPlayer player) {
+    _playerStateSubscription = player.onPlayerStateChanged.listen(
       _onPlayerStateChanged,
     );
-    unawaited(_configureAudioSession());
+    _positionSubscription = player.onPositionChanged.listen(
+      _positionController.add,
+    );
+    _durationSubscription = player.onDurationChanged.listen(
+      _durationController.add,
+    );
   }
 
   /// Configures the platform audio session so that:
@@ -57,7 +75,8 @@ class AudioService {
   }
 
   final http.Client _httpClient;
-  final AudioPlayer _player;
+  AudioPlayer? _player;
+  Future<void>? _sessionConfiguration;
   final Future<Directory> Function()? _cacheDirectoryProvider;
   final StreamController<bool> _isPlayingController =
       StreamController<bool>.broadcast();
@@ -66,6 +85,10 @@ class AudioService {
   final StreamController<int> _currentAyahNumberController =
       StreamController<int>.broadcast();
   StreamSubscription<PlayerState>? _playerStateSubscription;
+  StreamSubscription<Duration>? _positionSubscription;
+  StreamSubscription<Duration>? _durationSubscription;
+  final _positionController = StreamController<Duration>.broadcast();
+  final _durationController = StreamController<Duration>.broadcast();
 
   bool _isPlaying = false;
   bool _isPaused = false;
@@ -82,8 +105,8 @@ class AudioService {
   bool get isPaused => _isPaused;
   Stream<bool> get isPlayingStream => _isPlayingController.stream;
   Stream<bool> get isPausedStream => _isPausedController.stream;
-  Stream<Duration> get positionStream => _player.onPositionChanged;
-  Stream<Duration> get durationStream => _player.onDurationChanged;
+  Stream<Duration> get positionStream => _positionController.stream;
+  Stream<Duration> get durationStream => _durationController.stream;
   Stream<int> get currentAyahNumberStream =>
       _currentAyahNumberController.stream;
 
@@ -132,19 +155,19 @@ class AudioService {
   Future<void> stop() async {
     _stopRequested = true;
     ++_playbackRequestId;
-    await _player.stop();
+    await _player?.stop();
     _setIsPaused(false);
     _setIsPlaying(false);
   }
 
   Future<void> pause() async {
     if (!_isPlaying) return;
-    await _player.pause();
+    await _player?.pause();
   }
 
   Future<void> resume() async {
     if (!_isPaused) return;
-    await _player.resume();
+    await _player?.resume();
   }
 
   Future<String> _getOrDownloadAyahAudio(AyahModel ayah) async {
@@ -187,18 +210,21 @@ class AudioService {
   }
 
   Future<void> _playAndWait(String localPath, int requestId) async {
+    final player = _ensurePlayer();
+    await (_sessionConfiguration ??= _configureAudioSession());
+    if (_stopRequested || requestId != _playbackRequestId) return;
     final completer = Completer<void>();
 
     late StreamSubscription<void> completeSubscription;
     late StreamSubscription<PlayerState> stateSubscription;
 
-    completeSubscription = _player.onPlayerComplete.listen((_) {
+    completeSubscription = player.onPlayerComplete.listen((_) {
       if (!completer.isCompleted) {
         completer.complete();
       }
     });
 
-    stateSubscription = _player.onPlayerStateChanged.listen((state) {
+    stateSubscription = player.onPlayerStateChanged.listen((state) {
       if ((_stopRequested || requestId != _playbackRequestId) &&
           state != PlayerState.playing &&
           !completer.isCompleted) {
@@ -207,7 +233,7 @@ class AudioService {
     });
 
     try {
-      await _player.play(DeviceFileSource(localPath));
+      await player.play(DeviceFileSource(localPath));
       if (_stopRequested || requestId != _playbackRequestId) return;
       await completer.future;
     } finally {
@@ -255,8 +281,14 @@ class AudioService {
   }
 
   Future<void> dispose() async {
+    _stopRequested = true;
+    ++_playbackRequestId;
     await _playerStateSubscription?.cancel();
-    await _player.dispose();
+    await _positionSubscription?.cancel();
+    await _durationSubscription?.cancel();
+    await _player?.dispose();
+    await _positionController.close();
+    await _durationController.close();
     await _isPlayingController.close();
     await _isPausedController.close();
     await _currentAyahNumberController.close();

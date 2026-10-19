@@ -1727,5 +1727,11 @@
   "pdfBookAuthor": "By {author}",
   "@pdfBookAuthor": {"placeholders": {"author": {"type": "String"}}},
   "lifeOfMuhammadDescription": "Explore the life of Prophet Muhammad ﷺ. Choose an English or Bangla book, each with its own author.",
-  "dashboardBookBiography": "Prophet’s life"
+  "dashboardBookBiography": "Prophet’s life",
+  "kidsBooksSectionTitle": "Little Muslims’ Library",
+  "kidsBooksLanguages": "English · বাংলা",
+  "kidsBooksSahabahDescription": "Stories about the Sahabah for young readers.",
+  "kidsBooksProphetsDescription": "Stories of the Prophets for curious little hearts.",
+  "kidsBooksProphetLifeDescription": "Discover the life of Prophet Muhammad (SAW), one page at a time.",
+  "kidsBooksHadithDescription": "Explore 40 hadiths through stories for children."
 }

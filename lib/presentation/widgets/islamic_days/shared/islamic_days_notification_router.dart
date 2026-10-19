@@ -5,8 +5,8 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/utils/app_page_route.dart';
 import '../../../viewmodels/islamic_days/islamic_days_viewmodel.dart';
-import '../../../viewmodels/splash_viewmodel.dart';
 import '../../../views/islamic_days/islamic_day_details_view.dart';
+import '../../../views/islamic_days/islamic_days_view.dart';
 
 class IslamicDaysNotificationRouter extends StatefulWidget {
   const IslamicDaysNotificationRouter({
@@ -64,34 +64,35 @@ class _IslamicDaysNotificationRouterState
       (IslamicDaysViewModel vm) =>
           (pending: vm.pendingOpen, ready: vm.ready, loading: vm.isLoading),
     );
-    final starting = context.select((SplashViewModel vm) => vm.isLoading);
-    if (!starting &&
-        state.ready &&
-        !state.loading &&
-        state.pending != null &&
-        !_handling) {
+    if (widget.settingsReady && state.pending != null && !_handling) {
       _handling = true;
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (!mounted) return;
-        final navigator = widget.navigatorKey.currentState;
-        if (navigator != null) {
-          final pending = context
-              .read<IslamicDaysViewModel>()
-              .takePendingOpen();
-          if (pending != null) {
-            navigator.push(
-              AppPageRoute<void>(
-                builder: (_) => IslamicDayDetailsView(
-                  eventId: pending.eventId,
-                  date: pending.date,
-                ),
-              ),
-            );
-          }
-        }
-        _handling = false;
-      });
+      WidgetsBinding.instance.addPostFrameCallback((_) => _openPending());
     }
     return widget.child;
+  }
+
+  Future<void> _openPending() async {
+    if (!mounted) return;
+    final vm = context.read<IslamicDaysViewModel>();
+    // Loading the catalog is reserved for opening a page or a notification.
+    if (!vm.ready || vm.isLoading) {
+      await vm.initialize(widget.locale, widget.adjustment);
+    }
+    if (!mounted) return;
+    final navigator = widget.navigatorKey.currentState;
+    final pending = navigator == null ? null : vm.takePendingOpen();
+    if (pending != null) {
+      navigator!.push(
+        AppPageRoute<void>(
+          builder: (_) => vm.ready
+              ? IslamicDayDetailsView(
+                  eventId: pending.eventId,
+                  date: pending.date,
+                )
+              : const IslamicDaysView(),
+        ),
+      );
+    }
+    _handling = false;
   }
 }

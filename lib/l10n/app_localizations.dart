@@ -8824,6 +8824,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Prophet’s life'**
   String get dashboardBookBiography;
+
+  /// No description provided for @kidsBooksSectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Little Muslims’ Library'**
+  String get kidsBooksSectionTitle;
+
+  /// No description provided for @kidsBooksLanguages.
+  ///
+  /// In en, this message translates to:
+  /// **'English · বাংলা'**
+  String get kidsBooksLanguages;
+
+  /// No description provided for @kidsBooksSahabahDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Stories about the Sahabah for young readers.'**
+  String get kidsBooksSahabahDescription;
+
+  /// No description provided for @kidsBooksProphetsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Stories of the Prophets for curious little hearts.'**
+  String get kidsBooksProphetsDescription;
+
+  /// No description provided for @kidsBooksProphetLifeDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover the life of Prophet Muhammad (SAW), one page at a time.'**
+  String get kidsBooksProphetLifeDescription;
+
+  /// No description provided for @kidsBooksHadithDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore 40 hadiths through stories for children.'**
+  String get kidsBooksHadithDescription;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

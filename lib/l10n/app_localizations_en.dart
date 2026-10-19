@@ -4502,4 +4502,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dashboardBookBiography => 'Prophet’s life';
+
+  @override
+  String get kidsBooksSectionTitle => 'Little Muslims’ Library';
+
+  @override
+  String get kidsBooksLanguages => 'English · বাংলা';
+
+  @override
+  String get kidsBooksSahabahDescription => 'Stories about the Sahabah for young readers.';
+
+  @override
+  String get kidsBooksProphetsDescription => 'Stories of the Prophets for curious little hearts.';
+
+  @override
+  String get kidsBooksProphetLifeDescription => 'Discover the life of Prophet Muhammad (SAW), one page at a time.';
+
+  @override
+  String get kidsBooksHadithDescription => 'Explore 40 hadiths through stories for children.';
 }

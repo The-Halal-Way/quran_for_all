@@ -89,7 +89,7 @@ class QuranFeatureGate extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: AppSpacing.lg),
-                    if (downloading)
+                    if (downloading || setup.isLoading)
                       const SizedBox(
                         width: double.infinity,
                         child: LinearProgressIndicator(),

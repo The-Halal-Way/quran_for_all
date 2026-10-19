@@ -1,16 +1,42 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../viewmodels/dashboard/daily_tracker_viewmodel.dart';
+import '../../../viewmodels/islamic_days/islamic_days_viewmodel.dart';
+import '../../../viewmodels/settings_viewmodel.dart';
 import '../../../widgets/common/app_premium_page_background.dart';
 import '../../../widgets/dashboard/daily_tracker_full_view/daily_tracker_add_task_bar.dart';
 import '../../../widgets/dashboard/daily_tracker_full_view/daily_tracker_celebration.dart';
 import '../../../widgets/dashboard/daily_tracker_full_view/daily_tracker_checklist.dart';
 import '../../../widgets/dashboard/daily_tracker_full_view/daily_tracker_section_actions.dart';
 
-class DailyTrackerFullView extends StatelessWidget {
+class DailyTrackerFullView extends StatefulWidget {
   const DailyTrackerFullView({super.key});
+
+  @override
+  State<DailyTrackerFullView> createState() => _DailyTrackerFullViewState();
+}
+
+class _DailyTrackerFullViewState extends State<DailyTrackerFullView> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final days = context.read<IslamicDaysViewModel>();
+      if (!days.ready) {
+        unawaited(
+          days.initialize(
+            context.l10n.localeName,
+            context.read<SettingsViewModel>().settings.hijriDateAdjustment,
+          ),
+        );
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

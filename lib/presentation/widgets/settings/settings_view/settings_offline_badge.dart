@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -7,8 +9,21 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../viewmodels/splash_viewmodel.dart';
 
-class SettingsOfflineBadge extends StatelessWidget {
+class SettingsOfflineBadge extends StatefulWidget {
   const SettingsOfflineBadge({super.key});
+
+  @override
+  State<SettingsOfflineBadge> createState() => _SettingsOfflineBadgeState();
+}
+
+class _SettingsOfflineBadgeState extends State<SettingsOfflineBadge> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) unawaited(context.read<SplashViewModel?>()?.initialize());
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

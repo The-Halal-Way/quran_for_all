@@ -39,6 +39,10 @@ class _QuranViewState extends State<QuranView> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    LearnQuranTextLocalizer.seedFromLocalizations(
+      context.l10n,
+      Localizations.localeOf(context),
+    );
     final setup = context.watch<SplashViewModel?>();
     if ((setup?.hasQuranData ?? true) && !_requestedReadLoad) {
       _requestedReadLoad = true;
@@ -57,6 +61,8 @@ class _QuranViewState extends State<QuranView> {
       if (!mounted) {
         return;
       }
+      // Local Quran validation belongs to this tab, never app startup.
+      unawaited(context.read<SplashViewModel?>()?.initialize());
       final learnViewModel = context.read<LearnQuranViewModel>();
       if (learnViewModel.isLoading) {
         unawaited(learnViewModel.initialize());
@@ -146,8 +152,12 @@ class _QuranViewState extends State<QuranView> {
   }
 
   Future<void> _refresh() async {
+    final setup = context.read<SplashViewModel?>();
+    await setup?.initialize();
+    if (!mounted) return;
     await Future.wait([
-      context.read<ReadQuranViewModel>().load(showLoading: false),
+      if (setup?.hasQuranData ?? true)
+        context.read<ReadQuranViewModel>().load(showLoading: false),
       context.read<LearnQuranViewModel>().initialize(),
       context.read<NuraniQuranViewModel>().load(),
     ]);

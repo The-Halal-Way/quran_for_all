@@ -5,7 +5,6 @@ import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_hadith_viewmodel.dart';
 import 'core/constants/app_constants.dart';
-import 'core/localization/l10n_extensions.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/app_ios_scroll_behavior.dart';
 import 'data/datasources/local/app_database.dart';
@@ -58,7 +57,7 @@ import 'presentation/viewmodels/read_quran/search_viewmodel.dart';
 import 'presentation/viewmodels/read_quran/surah_details_viewmodel.dart';
 import 'presentation/viewmodels/settings_viewmodel.dart';
 import 'presentation/viewmodels/splash_viewmodel.dart';
-import 'presentation/views/splash/splash_view.dart';
+import 'presentation/views/home/home_view.dart';
 import 'presentation/widgets/common/global_audio_control_bar.dart';
 import 'presentation/widgets/daily_hadith/shared/daily_hadith_notification_router.dart';
 import 'presentation/widgets/islamic_days/shared/islamic_days_notification_router.dart';
@@ -300,14 +299,6 @@ class QuranForAllApp extends StatelessWidget {
               supportedLocales: AppLocalizations.supportedLocales,
               scrollBehavior: const AppIosScrollBehavior(),
               builder: (context, child) {
-                final l10n = AppLocalizations.of(context);
-                if (l10n != null) {
-                  LearnQuranTextLocalizer.seedFromLocalizations(
-                    l10n,
-                    Localizations.localeOf(context),
-                  );
-                }
-
                 // Overlay the global audio mini-player at the bottom of the
                 // navigator stack. The bar floats above all content and is
                 // only visible when audio is playing and the user has
@@ -344,7 +335,7 @@ class QuranForAllApp extends StatelessWidget {
                   },
                 );
               },
-              home: const SplashView(),
+              home: const HomeView(),
             ),
           );
         },

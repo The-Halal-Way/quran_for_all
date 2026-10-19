@@ -45,6 +45,7 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
   DailyHadithFeedFilter _feedFilter = DailyHadithFeedFilter.all;
   String? _pendingOpenContentId;
   Timer? _midnightTimer;
+  Future<void>? _initialization;
 
   bool get isLoading => _isLoading;
   Object? get error => _error;
@@ -135,9 +136,23 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
         .toList(growable: false);
   }
 
-  Future<void> initialize(String locale, {bool forceRefresh = false}) async {
+  Future<void> initialize(String locale, {bool forceRefresh = false}) {
     _locale = locale;
-    if (_isLoading) return;
+    return _initialization ??= _initialize(
+      forceRefresh: forceRefresh,
+    ).whenComplete(() => _initialization = null);
+  }
+
+  /// Notification routing needs the native callback, not the JSON catalog.
+  Future<void> prepareNotifications() async {
+    try {
+      await _notificationGateway.initialize();
+    } catch (_) {
+      // Offline content can still be opened if native setup is unavailable.
+    }
+  }
+
+  Future<void> _initialize({required bool forceRefresh}) async {
     _isLoading = true;
     _error = null;
     notifyListeners();
@@ -331,7 +346,7 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) {
+    if (state == AppLifecycleState.resumed && _pack != null) {
       unawaited(refreshAvailability(reschedule: true));
       unawaited(_updatePermission());
       _scheduleMidnightRefresh();

@@ -18,6 +18,8 @@ class AppTheme {
   static const FontWeight weightExtraBold = FontWeight.w800;
   static const FontWeight weightBlack = FontWeight.w900;
 
+  static final _themeCache = <(Brightness, _ThemeMetrics), ThemeData>{};
+
   static AppTypography text(BuildContext context) {
     return AppTypography._(Theme.of(context), _themeMetrics);
   }
@@ -98,6 +100,13 @@ class AppTheme {
   }
 
   static ThemeData get lightTheme {
+    return _themeCache.putIfAbsent((
+      Brightness.light,
+      _themeMetrics,
+    ), _createLightTheme);
+  }
+
+  static ThemeData _createLightTheme() {
     const colors = AppThemeColors.light;
     final colorScheme =
         ColorScheme.fromSeed(
@@ -153,6 +162,13 @@ class AppTheme {
   }
 
   static ThemeData get darkTheme {
+    return _themeCache.putIfAbsent((
+      Brightness.dark,
+      _themeMetrics,
+    ), _createDarkTheme);
+  }
+
+  static ThemeData _createDarkTheme() {
     final colorScheme =
         ColorScheme.fromSeed(
           seedColor: MyColors.primary,

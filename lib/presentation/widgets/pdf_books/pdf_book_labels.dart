@@ -28,9 +28,11 @@ String pdfBookTitle(BuildContext context, PdfBookDefinition book) =>
     : book.forLocale(Localizations.localeOf(context)).title!;
 
 String pdfBookDescription(BuildContext context, PdfBookDefinition book) =>
-    book.id == 'science_in_quran'
-    ? context.l10n.scienceInQuranDescription
-    : context.l10n.lifeOfMuhammadDescription;
+    switch (book.id) {
+      'science_in_quran' => context.l10n.scienceInQuranDescription,
+      'life_of_muhammad' => context.l10n.lifeOfMuhammadDescription,
+      _ => '',
+    };
 
 String pdfBookIssueMessage(BuildContext context, PdfBookIssue issue) =>
     switch (issue) {

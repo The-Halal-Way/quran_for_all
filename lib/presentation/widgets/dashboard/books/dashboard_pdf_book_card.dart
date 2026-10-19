@@ -23,23 +23,34 @@ class DashboardPdfBookCard extends StatelessWidget {
     super.key,
     required this.book,
     required this.accent,
+    this.description,
   });
 
   final PdfBookDefinition book;
   final Color accent;
+  final String? description;
 
   @override
   Widget build(BuildContext context) => ChangeNotifierProvider.value(
     value: context.read<PdfBooksLibrary>().forBook(book),
-    child: _PdfBookCardBody(book: book, accent: accent),
+    child: _PdfBookCardBody(
+      book: book,
+      accent: accent,
+      description: description,
+    ),
   );
 }
 
 class _PdfBookCardBody extends StatelessWidget {
-  const _PdfBookCardBody({required this.book, required this.accent});
+  const _PdfBookCardBody({
+    required this.book,
+    required this.accent,
+    this.description,
+  });
 
   final PdfBookDefinition book;
   final Color accent;
+  final String? description;
 
   @override
   Widget build(BuildContext context) {
@@ -80,6 +91,7 @@ class _PdfBookCardBody extends StatelessWidget {
           PdfBookCardHeader(
             book: book,
             document: document ?? recommended,
+            description: description,
             accent: accent,
             available: model.available && !model.downloading && !model.loading,
             onRemove: () => unawaited(_removeDownload(context, model)),

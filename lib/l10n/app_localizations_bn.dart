@@ -4495,4 +4495,22 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dashboardBookBiography => 'নবীজির জীবন';
+
+  @override
+  String get kidsBooksSectionTitle => 'ছোটদের বইঘর';
+
+  @override
+  String get kidsBooksLanguages => 'বাংলা · English';
+
+  @override
+  String get kidsBooksSahabahDescription => 'ছোট্ট পাঠকদের জন্য সাহাবিদের জীবনের গল্প।';
+
+  @override
+  String get kidsBooksProphetsDescription => 'কৌতূহলী ছোট্ট হৃদয়ের জন্য নবীদের গল্প।';
+
+  @override
+  String get kidsBooksProphetLifeDescription => 'পাতায় পাতায় জানো মহানবী মুহাম্মদ (সা.)-এর জীবন।';
+
+  @override
+  String get kidsBooksHadithDescription => 'শিশুদের জন্য গল্পে গল্পে ৪০টি হাদিস।';
 }
