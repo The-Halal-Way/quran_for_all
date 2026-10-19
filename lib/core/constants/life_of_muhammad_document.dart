@@ -9,7 +9,6 @@ abstract final class LifeOfMuhammadDocument {
     author: 'Hazrat Mirza Bashiruddin Mahmud Ahmad',
     downloadUrl:
         'https://drive.google.com/file/d/14cYsCcgjPtS38cP50s7VvKtTXoyRe9Sd/view?usp=sharing',
-    previewImage: MyImages.lifeOfMuhammadEn,
   );
 
   static const bangla = PdfBookDocument(
@@ -19,11 +18,11 @@ abstract final class LifeOfMuhammadDocument {
     author: 'আবু সালীম মুহাম্মদ আবদুল হাই',
     downloadUrl:
         'https://drive.google.com/file/d/1NqOoiDRbJXAvIQv4kcvw8FALV7tjuqZ2/view?usp=sharing',
-    previewImage: MyImages.lifeOfMuhammadBn,
   );
 
   static const book = PdfBookDefinition(
     id: 'life_of_muhammad',
+    coverImage: MyImages.lifeOfMuhammadCover,
     documents: [english, bangla],
   );
 }

@@ -10,11 +10,13 @@ import 'pdf_book_labels.dart';
 class PdfBookLanguageOption extends StatelessWidget {
   const PdfBookLanguageOption({
     super.key,
+    required this.coverImage,
     required this.document,
     required this.selected,
     required this.onTap,
   });
 
+  final String coverImage;
   final PdfBookDocument document;
   final bool selected;
   final VoidCallback onTap;
@@ -50,7 +52,7 @@ class PdfBookLanguageOption extends StatelessWidget {
             child: Row(
               children: [
                 DashboardBookCover(
-                  imagePath: document.previewImage,
+                  imagePath: coverImage,
                   accent: accent,
                   width: 64,
                   height: 94,

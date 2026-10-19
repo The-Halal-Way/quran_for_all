@@ -93,12 +93,15 @@ class MyImages {
       'assets/images/nurani_quran/green_preview.jpg';
 
   // books images
-  static const String bookScienceEng = 'assets/images/books/science_en.jpg';
-  static const String bookScienceBn = 'assets/images/books/science_bn.jpg';
-  static const String lifeOfMuhammadEn = 'assets/images/books/life_of_muhammad_en.jpg';
-  static const String lifeOfMuhammadBn = 'assets/images/books/life_of_muhammad_bn.jpeg';
-  static const String fortyHadithStoriesCover = 'assets/images/books/40_hadith_stories_cover.jpg';
-  static const String lifeOfProphetCover = 'assets/images/books/life_of_prophet_cover.jpg';
-  static const String prophetsStoriesCover = 'assets/images/books/prophets_stories_cover.jpg';
-  static const String sahabaStoriesCover = 'assets/images/books/sahaba_stories_cover.jpg';
+  static const String bookScienceCover = 'assets/images/books/science_en.jpg';
+  static const String lifeOfMuhammadCover =
+      'assets/images/books/life_of_muhammad_en.jpg';
+  static const String fortyHadithStoriesCover =
+      'assets/images/books/40_hadith_stories_cover.jpg';
+  static const String lifeOfProphetCover =
+      'assets/images/books/life_of_prophet_cover.jpg';
+  static const String prophetsStoriesCover =
+      'assets/images/books/prophets_stories_cover.jpg';
+  static const String sahabaStoriesCover =
+      'assets/images/books/sahaba_stories_cover.jpg';
 }

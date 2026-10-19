@@ -8,7 +8,6 @@ abstract final class ScienceInQuranDocument {
     downloadUrl:
         'https://drive.google.com/file/d/1-HqyttfneYEHpFkGVPs1H0FSpZ-pJGFV/view?usp=sharing',
     sizeMegabytes: 2.7,
-    previewImage: MyImages.bookScienceEng,
   );
 
   static const bangla = PdfBookDocument(
@@ -17,11 +16,11 @@ abstract final class ScienceInQuranDocument {
     downloadUrl:
         'https://drive.google.com/file/d/1TlDOyWo-qSJjqYe-1Ms7uG4Wc3jgZQXe/view?usp=sharing',
     sizeMegabytes: 3,
-    previewImage: MyImages.bookScienceBn,
   );
 
   static const book = PdfBookDefinition(
     id: 'science_in_quran',
+    coverImage: MyImages.bookScienceCover,
     documents: [english, bangla],
   );
 }

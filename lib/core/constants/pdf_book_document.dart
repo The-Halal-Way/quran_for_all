@@ -8,7 +8,6 @@ class PdfBookDocument {
     required this.bookId,
     required this.language,
     required this.downloadUrl,
-    required this.previewImage,
     this.title,
     this.author,
     this.sizeMegabytes,
@@ -17,7 +16,6 @@ class PdfBookDocument {
   final String bookId;
   final PdfBookLanguage language;
   final String downloadUrl;
-  final String previewImage;
   final String? title;
   final String? author;
   final double? sizeMegabytes;
@@ -49,9 +47,14 @@ class PdfBookDocument {
 
 /// Stable IDs keep downloads and page bookmarks separate for every book.
 class PdfBookDefinition {
-  const PdfBookDefinition({required this.id, required this.documents});
+  const PdfBookDefinition({
+    required this.id,
+    required this.coverImage,
+    required this.documents,
+  });
 
   final String id;
+  final String coverImage;
   final List<PdfBookDocument> documents;
 
   String get selectedLanguageKey => '${id}_selected_language';

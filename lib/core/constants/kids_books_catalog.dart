@@ -5,6 +5,7 @@ import 'pdf_book_document.dart';
 abstract final class KidsBooksCatalog {
   static const sahabah = PdfBookDefinition(
     id: 'kids_sahabah_stories',
+    coverImage: MyImages.sahabaStoriesCover,
     documents: [
       PdfBookDocument(
         bookId: 'kids_sahabah_stories',
@@ -13,7 +14,6 @@ abstract final class KidsBooksCatalog {
         downloadUrl:
             'https://drive.google.com/file/d/1DjcMxY4zixo_bw_iidGfDh-bQr-CIoj9/view?usp=sharing',
         sizeMegabytes: 11.8,
-        previewImage: MyImages.sahabaStoriesCover,
       ),
       PdfBookDocument(
         bookId: 'kids_sahabah_stories',
@@ -22,13 +22,13 @@ abstract final class KidsBooksCatalog {
         downloadUrl:
             'https://drive.google.com/file/d/1tTkj57z2mqrdpbD2zOKtdO4MRkjMwD7x/view?usp=sharing',
         sizeMegabytes: 8.8,
-        previewImage: MyImages.sahabaStoriesCover,
       ),
     ],
   );
 
   static const prophets = PdfBookDefinition(
     id: 'kids_prophets_stories',
+    coverImage: MyImages.prophetsStoriesCover,
     documents: [
       PdfBookDocument(
         bookId: 'kids_prophets_stories',
@@ -37,7 +37,6 @@ abstract final class KidsBooksCatalog {
         downloadUrl:
             'https://drive.google.com/file/d/1sMWibEBuz01rgl_hrw_1wsd1THbr2C7J/view?usp=sharing',
         sizeMegabytes: 5.4,
-        previewImage: MyImages.prophetsStoriesCover,
       ),
       PdfBookDocument(
         bookId: 'kids_prophets_stories',
@@ -46,13 +45,13 @@ abstract final class KidsBooksCatalog {
         downloadUrl:
             'https://drive.google.com/file/d/1JaPH9Vv-oKMHA1VAvxiQyjtOS_Z9SjvL/view?usp=sharing',
         sizeMegabytes: 4.3,
-        previewImage: MyImages.prophetsStoriesCover,
       ),
     ],
   );
 
   static const prophetLife = PdfBookDefinition(
     id: 'kids_prophet_muhammad_life',
+    coverImage: MyImages.lifeOfProphetCover,
     documents: [
       PdfBookDocument(
         bookId: 'kids_prophet_muhammad_life',
@@ -61,7 +60,6 @@ abstract final class KidsBooksCatalog {
         downloadUrl:
             'https://drive.google.com/file/d/1WWLjVlL03FoE-d8gyX3p4iDuW9Lkeqcx/view?usp=sharing',
         sizeMegabytes: 10.6,
-        previewImage: MyImages.lifeOfProphetCover,
       ),
       PdfBookDocument(
         bookId: 'kids_prophet_muhammad_life',
@@ -70,13 +68,13 @@ abstract final class KidsBooksCatalog {
         downloadUrl:
             'https://drive.google.com/file/d/1NCouafP91COy8uLp09PNo0n64jIjX52f/view?usp=sharing',
         sizeMegabytes: 30.2,
-        previewImage: MyImages.lifeOfProphetCover,
       ),
     ],
   );
 
   static const fortyHadith = PdfBookDefinition(
     id: 'kids_forty_hadith_stories',
+    coverImage: MyImages.fortyHadithStoriesCover,
     documents: [
       PdfBookDocument(
         bookId: 'kids_forty_hadith_stories',
@@ -85,7 +83,6 @@ abstract final class KidsBooksCatalog {
         downloadUrl:
             'https://drive.google.com/file/d/1Smw2EetTXDjDp-obY2JNrQ4uIIt_ZP_J/view?usp=sharing',
         sizeMegabytes: 2.4,
-        previewImage: MyImages.fortyHadithStoriesCover,
       ),
       PdfBookDocument(
         bookId: 'kids_forty_hadith_stories',
@@ -94,7 +91,6 @@ abstract final class KidsBooksCatalog {
         downloadUrl:
             'https://drive.google.com/file/d/1WpSc-6X3KWG5d9kGITqTMpWZt6z7kNZp/view?usp=sharing',
         sizeMegabytes: 2.3,
-        previewImage: MyImages.fortyHadithStoriesCover,
       ),
     ],
   );

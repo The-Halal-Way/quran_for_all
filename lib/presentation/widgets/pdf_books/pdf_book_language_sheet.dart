@@ -60,6 +60,7 @@ class _PdfBookLanguageSheetState extends State<PdfBookLanguageSheet> {
           const SizedBox(height: AppSpacing.xl),
           for (final document in widget.book.documents) ...[
             PdfBookLanguageOption(
+              coverImage: widget.book.coverImage,
               document: document,
               selected: document == _selected,
               onTap: () => setState(() => _selected = document),

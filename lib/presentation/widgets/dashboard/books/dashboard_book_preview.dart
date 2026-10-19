@@ -35,7 +35,7 @@ class DashboardBookPreview extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   DashboardBookCover(
-                    imagePath: book.pdfBook?.documents.first.previewImage,
+                    imagePath: book.pdfBook?.coverImage,
                     accent: book.accent,
                     width: 42,
                     height: 60,

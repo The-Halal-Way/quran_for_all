@@ -32,7 +32,7 @@ class PdfBookCardHeader extends StatelessWidget {
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       DashboardBookCover(
-        imagePath: document.previewImage,
+        imagePath: book.coverImage,
         accent: accent,
         width: 64,
         height: 96,

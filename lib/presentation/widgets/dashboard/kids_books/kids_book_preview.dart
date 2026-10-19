@@ -57,7 +57,7 @@ class KidsBookPreview extends StatelessWidget {
               child: Row(
                 children: [
                   KidsBookCoverStage(
-                    image: kind.book.documents.first.previewImage,
+                    image: kind.book.coverImage,
                     accent: accent,
                   ),
                   const SizedBox(width: AppSpacing.md),
