@@ -16,6 +16,27 @@ class AppPremiumPageBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        Positioned.fill(
+          child: RepaintBoundary(child: _PageBackgroundSurface(isDark: isDark)),
+        ),
+        child,
+      ],
+    );
+  }
+}
+
+/// Isolated from scrolling content so the static gradients and ornament can
+/// retain their own paint layer as the foreground moves.
+class _PageBackgroundSurface extends StatelessWidget {
+  const _PageBackgroundSurface({required this.isDark});
+
+  final bool isDark;
+
+  @override
+  Widget build(BuildContext context) {
     const light = AppThemeColors.light;
 
     return DecoratedBox(
@@ -48,6 +69,7 @@ class AppPremiumPageBackground extends StatelessWidget {
           Positioned.fill(
             child: IgnorePointer(
               child: CustomPaint(
+                isComplex: true,
                 painter: _PagePattern(
                   isDark: isDark,
                   stroke: isDark ? MyColors.secondaryLight : light.brand,
@@ -55,7 +77,6 @@ class AppPremiumPageBackground extends StatelessWidget {
               ),
             ),
           ),
-          child,
         ],
       ),
     );

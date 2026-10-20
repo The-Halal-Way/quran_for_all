@@ -4,9 +4,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:quran_for_all/data/models/daily_reminders/daily_reminder_pack.dart';
-import 'package:timezone/data/latest_all.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
+import '../core/prayer_times/prayer_time_zone_helper.dart';
 import 'daily_hadith_schedule_planner.dart';
 import 'notifications/app_notification_coordinator.dart';
 
@@ -102,20 +102,35 @@ class DailyHadithNotificationService implements DailyHadithNotificationGateway {
     DateTime? now,
   }) async {
     await initialize();
+    final permission = await permissionStatus();
+    // The badge can load without preparing any timezone data or schedules when
+    // alerts are off. Existing alerts must still be cancelled if disabled.
+    if (!preferences.notificationsEnabled ||
+        permission != DailyHadithPermissionStatus.granted) {
+      for (final id in previouslyScheduledIds) {
+        await _plugin.cancel(id: id);
+      }
+      final signature = 'disabled|${permission.name}';
+      if (_lastScheduleSignature != signature ||
+          previouslyScheduledIds.isNotEmpty) {
+        persistScheduledIds(<int>{});
+      }
+      _lastScheduleSignature = signature;
+      return;
+    }
     var timezoneName = 'UTC';
     try {
       timezoneName = await FlutterTimezone.getLocalTimezone();
     } catch (_) {
       // UTC is a deterministic fallback for platforms without timezone access.
     }
-    tz_data.initializeTimeZones();
+    PrayerTimeZoneHelper.ensureInitialized();
     try {
       tz.setLocalLocation(tz.getLocation(timezoneName));
     } catch (_) {
       tz.setLocalLocation(tz.UTC);
     }
     final localNow = now ?? tz.TZDateTime.now(tz.local);
-    final permission = await permissionStatus();
     final signature = [
       pack.packId,
       pack.revision,
@@ -132,12 +147,6 @@ class DailyHadithNotificationService implements DailyHadithNotificationGateway {
 
     for (final id in previouslyScheduledIds) {
       await _plugin.cancel(id: id);
-    }
-    if (!preferences.notificationsEnabled ||
-        permission != DailyHadithPermissionStatus.granted) {
-      persistScheduledIds(<int>{});
-      _lastScheduleSignature = signature;
-      return;
     }
     final planned = planDailyHadithOccurrences(
       pack: pack,

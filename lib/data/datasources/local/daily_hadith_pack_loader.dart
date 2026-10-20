@@ -5,8 +5,7 @@ import 'package:quran_for_all/data/models/daily_reminders/daily_reminder_pack.da
 import 'daily_hadith_pack_parser.dart';
 
 typedef DailyHadithAssetLoader = Future<String> Function(String path);
-typedef DailyHadithParserRunner =
-    Future<DailyHadithPack> Function(String raw);
+typedef DailyHadithParserRunner = Future<DailyHadithPack> Function(String raw);
 
 class DailyHadithPackLoader {
   DailyHadithPackLoader({
@@ -27,9 +26,8 @@ class DailyHadithPackLoader {
   Future<DailyHadithPack> load({bool forceRefresh = false}) {
     if (!forceRefresh && _cache != null) return Future.value(_cache);
     if (_inFlight != null) return _inFlight!;
-    final operation = _loadAndParse();
+    final operation = _loadAndParse().whenComplete(() => _inFlight = null);
     _inFlight = operation;
-    operation.whenComplete(() => _inFlight = null);
     return operation;
   }
 
@@ -49,5 +47,5 @@ class DailyHadithPackLoader {
   // Flutter's compute uses a worker isolate on native platforms. On web it
   // preserves behavior but runs on the browser event loop (no native isolate).
   static Future<DailyHadithPack> _parseInBackground(String raw) =>
-      compute(parseDailyHadithPack, raw, debugLabel: 'daily-reminder-pack');
+      compute(parseDailyHadithPack, raw, debugLabel: 'daily-hadith-pack');
 }

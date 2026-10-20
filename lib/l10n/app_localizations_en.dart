@@ -4134,6 +4134,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dailyHadithTitle => 'Daily Hadith';
 
   @override
+  String get dailyHadithLoading => 'Loading daily hadith…';
+
+  @override
   String get dailyHadithSubtitle => 'Small pauses. Lasting light.';
 
   @override

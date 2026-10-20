@@ -4,24 +4,30 @@ import 'package:flutter/material.dart';
 
 /// A crescent and geometric rosette drawn without image downloads or assets.
 class IslamicDaysArtwork extends StatelessWidget {
-  const IslamicDaysArtwork({super.key, this.color = Colors.white});
+  const IslamicDaysArtwork({
+    super.key,
+    this.color = Colors.white,
+    this.opacity = 1,
+  }) : assert(opacity >= 0 && opacity <= 1);
   final Color color;
+  final double opacity;
 
   @override
   Widget build(BuildContext context) =>
-      IgnorePointer(child: CustomPaint(painter: _OccasionArt(color)));
+      IgnorePointer(child: CustomPaint(painter: _OccasionArt(color, opacity)));
 }
 
 class _OccasionArt extends CustomPainter {
-  const _OccasionArt(this.color);
+  const _OccasionArt(this.color, this.opacity);
   final Color color;
+  final double opacity;
 
   @override
   void paint(Canvas canvas, Size size) {
     final centre = Offset(size.width * .7, size.height * .45);
     final radius = math.min(size.width, size.height) * .28;
     final stroke = Paint()
-      ..color = color.withValues(alpha: .17)
+      ..color = color.withValues(alpha: .17 * opacity)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1;
     for (final factor in [1.1, 1.6, 2.1]) {
@@ -52,7 +58,7 @@ class _OccasionArt extends CustomPainter {
       );
     canvas.drawPath(
       Path.combine(PathOperation.difference, disc, cut),
-      Paint()..color = color.withValues(alpha: .8),
+      Paint()..color = color.withValues(alpha: .8 * opacity),
     );
     for (final offset in [
       const Offset(.28, .2),
@@ -70,11 +76,14 @@ class _OccasionArt extends CustomPainter {
         ..lineTo(point.dx - 5, point.dy)
         ..lineTo(point.dx - 2, point.dy - 2)
         ..close();
-      canvas.drawPath(star, Paint()..color = color.withValues(alpha: .65));
+      canvas.drawPath(
+        star,
+        Paint()..color = color.withValues(alpha: .65 * opacity),
+      );
     }
   }
 
   @override
   bool shouldRepaint(covariant _OccasionArt oldDelegate) =>
-      oldDelegate.color != color;
+      oldDelegate.color != color || oldDelegate.opacity != opacity;
 }

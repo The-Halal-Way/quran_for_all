@@ -86,7 +86,7 @@ class AppIconGridSection extends StatelessWidget {
               ),
           ],
         ),
-       /* if (subtitle != null) ...[
+        /* if (subtitle != null) ...[
           const SizedBox(height: AppSpacing.xs),
           Text(subtitle!, style: AppTheme.text(context).bodySmall),
         ], */
@@ -195,8 +195,8 @@ class _AppIconGridTile extends StatelessWidget {
                       boxShadow: [
                         BoxShadow(
                           color: accent.withValues(alpha: isDark ? 0.18 : 0.12),
-                          blurRadius: 22,
-                          offset: const Offset(0, 9),
+                          blurRadius: 8,
+                          offset: const Offset(0, 4),
                         ),
                       ],
                     ),

@@ -4127,6 +4127,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dailyHadithTitle => 'দৈনিক হাদিস';
 
   @override
+  String get dailyHadithLoading => 'দৈনিক হাদিস লোড হচ্ছে…';
+
+  @override
   String get dailyHadithSubtitle => 'ছোট বিরতি। স্থায়ী আলো।';
 
   @override

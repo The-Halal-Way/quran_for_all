@@ -32,6 +32,7 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
   final DateTime Function() _clock;
 
   DailyHadithPack? _pack;
+  List<DailyHadithRecord>? _releasedRecords;
   DailyHadithUserState _userState = const DailyHadithUserState();
   DailyHadithPreferences _preferences = const DailyHadithPreferences();
   DailyHadithPermissionStatus _permissionStatus =
@@ -67,6 +68,8 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
       LocalCalendarDate.fromDateTime(_clock());
 
   List<DailyHadithRecord> get releasedRecords {
+    final cached = _releasedRecords;
+    if (cached != null) return cached;
     final pack = _pack;
     if (pack == null) return const [];
     final records = <DailyHadithRecord>[];
@@ -86,7 +89,7 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
     records.sort(
       (a, b) => b.schedule.localDate.compareTo(a.schedule.localDate),
     );
-    return List.unmodifiable(records);
+    return _releasedRecords = List.unmodifiable(records);
   }
 
   DailyHadithRecord? get todayReminder {
@@ -137,6 +140,7 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
   }
 
   Future<void> initialize(String locale, {bool forceRefresh = false}) {
+    if (_locale != locale) _releasedRecords = null;
     _locale = locale;
     return _initialization ??= _initialize(
       forceRefresh: forceRefresh,
@@ -165,6 +169,7 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
         _repository.loadScheduledOccurrenceIds(),
       ]);
       _pack = results[0] as DailyHadithPack;
+      _releasedRecords = null;
       _userState = results[1] as DailyHadithUserState;
       _preferences = results[2] as DailyHadithPreferences;
       _scheduledIds = results[3] as Set<int>;
@@ -182,6 +187,7 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
   Future<void> localeChanged(String locale) async {
     if (_locale == locale) return;
     _locale = locale;
+    _releasedRecords = null;
     notifyListeners();
     await _reschedule();
   }
@@ -208,6 +214,7 @@ class DailyHadithViewModel extends ChangeNotifier with WidgetsBindingObserver {
       releasedContentIds: released,
       highWaterDate: highWater,
     );
+    _releasedRecords = null;
     await _repository.saveUserState(_userState);
     if (reschedule) await _reschedule();
     notifyListeners();

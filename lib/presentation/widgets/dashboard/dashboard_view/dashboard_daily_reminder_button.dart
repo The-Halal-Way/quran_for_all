@@ -11,11 +11,15 @@ class DashboardDailyHadithButton extends StatelessWidget {
     required this.label,
     required this.unreadCount,
     required this.onTap,
+    this.isLoading = false,
+    this.loadingLabel,
   });
 
   final String label;
   final int unreadCount;
   final VoidCallback onTap;
+  final bool isLoading;
+  final String? loadingLabel;
 
   String get _badgeLabel => unreadCount > 99 ? '99+' : '$unreadCount';
 
@@ -26,19 +30,20 @@ class DashboardDailyHadithButton extends StatelessWidget {
     final dark = Theme.of(context).brightness == Brightness.dark;
     final accent = dark ? MyColors.secondary : AppThemeColors.light.brand;
     return Tooltip(
-      message: label,
+      message: isLoading ? loadingLabel ?? label : label,
       child: Semantics(
         button: true,
         label: hasUnread ? '$label, $_badgeLabel' : label,
+        value: isLoading ? loadingLabel : null,
         child: SizedBox(
-          width: 40,
-          height: 35,
+          width: 44,
+          height: 44,
           child: Stack(
             clipBehavior: Clip.none,
             children: [
               PositionedDirectional(
-                start: 0,
-                bottom: 0,
+                start: 3,
+                bottom: 3,
                 child: Material(
                   color: colors.surface,
                   shape: CircleBorder(
@@ -53,12 +58,26 @@ class DashboardDailyHadithButton extends StatelessWidget {
                     onTap: onTap,
                     child: SizedBox.square(
                       dimension: 38,
-                      child: Icon(CupertinoIcons.bell, size: 23, color: accent),
+                      child: Center(
+                        child: isLoading
+                            ? SizedBox.square(
+                                dimension: 20,
+                                child: CircularProgressIndicator(
+                                  color: accent,
+                                  strokeWidth: 1.8,
+                                ),
+                              )
+                            : Icon(
+                                CupertinoIcons.bell,
+                                size: 23,
+                                color: accent,
+                              ),
+                      ),
                     ),
                   ),
                 ),
               ),
-              if (hasUnread)
+              if (hasUnread && !isLoading)
                 PositionedDirectional(
                   end: -5,
                   top: -10,

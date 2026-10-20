@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quran_for_all/presentation/viewmodels/daily_reminders/daily_hadith_viewmodel.dart';
 
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
@@ -43,15 +42,7 @@ class DashboardDateContext extends StatelessWidget {
         todayCount: vm.today.length,
       ),
     );
-    final unreadReminders = context.select(
-      (DailyHadithViewModel vm) => vm.unreadCount,
-    );
-
-    return _DashboardDateContextSurface(
-      info: info,
-      occasion: occasion,
-      unreadReminders: unreadReminders,
-    );
+    return _DashboardDateContextSurface(info: info, occasion: occasion);
   }
 }
 
@@ -59,12 +50,10 @@ class _DashboardDateContextSurface extends StatelessWidget {
   const _DashboardDateContextSurface({
     required this.info,
     required this.occasion,
-    required this.unreadReminders,
   });
 
   final DashboardHeaderInfo info;
   final ({IslamicDayOccurrence? entry, int todayCount}) occasion;
-  final int unreadReminders;
 
   @override
   Widget build(BuildContext context) {
@@ -105,10 +94,7 @@ class _DashboardDateContextSurface extends StatelessWidget {
               bottom: -48,
               width: 170,
               height: 170,
-              child: Opacity(
-                opacity: .16,
-                child: IslamicDaysArtwork(color: occasionAccent),
-              ),
+              child: IslamicDaysArtwork(color: occasionAccent, opacity: .16),
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(
@@ -119,7 +105,7 @@ class _DashboardDateContextSurface extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  DashboardCalendarHeader(unreadReminders: unreadReminders),
+                  const DashboardCalendarHeader(),
                   const SizedBox(height: AppSpacing.md),
                   Divider(
                     height: 1,

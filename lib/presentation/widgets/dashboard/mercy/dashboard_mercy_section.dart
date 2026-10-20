@@ -24,7 +24,7 @@ class DashboardMercySection extends StatelessWidget {
           icon: Icons.favorite_rounded,
           accent: colors.coral,
         ),
-       /* const SizedBox(height: AppSpacing.xs),
+        /* const SizedBox(height: AppSpacing.xs),
         Padding(
           padding: const EdgeInsetsDirectional.only(start: 4),
           child: Text(
@@ -78,8 +78,8 @@ class DashboardMercyShelf extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: colors.shadow.withValues(alpha: 0.06),
-            blurRadius: 18,
-            offset: const Offset(0, 8),
+            blurRadius: 8,
+            offset: const Offset(0, 4),
           ),
         ],
       ),

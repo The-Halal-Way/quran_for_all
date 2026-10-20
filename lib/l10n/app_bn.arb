@@ -1604,6 +1604,7 @@
     }
   },
   "dailyHadithTitle": "দৈনিক হাদিস",
+  "dailyHadithLoading": "দৈনিক হাদিস লোড হচ্ছে…",
   "dailyHadithSubtitle": "ছোট বিরতি। স্থায়ী আলো।",
   "dailyHadithToday": "আজকের পাঠ",
   "dailyHadithHistory": "ইতিহাস",

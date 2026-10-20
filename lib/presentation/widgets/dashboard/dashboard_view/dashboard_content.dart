@@ -10,12 +10,13 @@ import '../kids_books/dashboard_kids_books_section.dart';
 import '../mercy/dashboard_mercy_section.dart';
 import '../when_you_have_a_need/dashboard_need_section.dart';
 import 'dashboard_hadith_section.dart';
+import 'dashboard_feed_section.dart';
 import 'dashboard_date_context.dart';
 import 'dashboard_prayer_section.dart';
 import 'dashboard_shortcut_catalog.dart';
 import 'dashboard_tracker_preview.dart';
 
-/// Builds only visible sections; feature pages own their content loading.
+/// Builds sections lazily and retains them for smooth return scrolling.
 class DashboardContent extends StatelessWidget {
   const DashboardContent({super.key, this.controller});
 
@@ -49,33 +50,25 @@ class DashboardContent extends StatelessWidget {
         padding,
         AppSpacing.xxxl,
       ),
-      cacheExtent: 100,
       itemCount: _gaps.length,
-      itemBuilder: (context, index) => Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 940),
-          child: Padding(
-            padding: EdgeInsets.only(bottom: _gaps[index]),
-            child: KeyedSubtree(
-              key: PageStorageKey('dashboard-section-$index'),
-              child: switch (index) {
-                0 => const DashboardDateContext(),
-                1 => const DashboardPrayerSection(),
-                2 => const DashboardTrackerPreview(),
-                3 => AppIconGridSection(
-                  title: context.l10n.dashboardSectionExplore,
-                  items: dashboardActions(context),
-                ),
-                4 => const DashboardBooksSection(),
-                5 => const DashboardKidsBooksSection(),
-                6 => const DashboardMercySection(),
-                7 => const DashboardNeedSection(),
-                8 => const DashboardHadithSection(),
-                _ => const DashboardHadithIntegritySection(),
-              },
-            ),
+      itemBuilder: (context, index) => DashboardFeedSection(
+        key: ValueKey('dashboard-section-$index'),
+        gap: _gaps[index],
+        child: switch (index) {
+          0 => const DashboardDateContext(),
+          1 => const DashboardPrayerSection(),
+          2 => const DashboardTrackerPreview(),
+          3 => AppIconGridSection(
+            title: context.l10n.dashboardSectionExplore,
+            items: dashboardActions(context),
           ),
-        ),
+          4 => const DashboardBooksSection(),
+          5 => const DashboardKidsBooksSection(),
+          6 => const DashboardMercySection(),
+          7 => const DashboardNeedSection(),
+          8 => const DashboardHadithSection(),
+          _ => const DashboardHadithIntegritySection(),
+        },
       ),
     );
   }

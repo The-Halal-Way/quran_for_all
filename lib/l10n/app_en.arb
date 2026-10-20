@@ -1604,6 +1604,7 @@
     }
   },
   "dailyHadithTitle": "Daily Hadith",
+  "dailyHadithLoading": "Loading daily hadith…",
   "dailyHadithSubtitle": "Small pauses. Lasting light.",
   "dailyHadithToday": "Today's reading",
   "dailyHadithHistory": "History",

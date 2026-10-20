@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart' as cupertino;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'my_colors.dart';
 import 'app_spacing.dart';
@@ -56,7 +55,8 @@ class AppTheme {
     double? height,
     double? letterSpacing,
   }) {
-    return GoogleFonts.sora(
+    return TextStyle(
+      fontFamily: 'Sora',
       fontSize: fontSize,
       fontWeight: fontWeight,
       color: color,
@@ -73,7 +73,8 @@ class AppTheme {
     double? height,
     double? letterSpacing,
   }) {
-    return GoogleFonts.manrope(
+    return TextStyle(
+      fontFamily: 'Manrope',
       fontSize: fontSize,
       fontWeight: fontWeight,
       color: color,
@@ -90,7 +91,8 @@ class AppTheme {
     double? height,
     double? letterSpacing,
   }) {
-    return GoogleFonts.amiri(
+    return TextStyle(
+      fontFamily: 'Amiri',
       fontSize: fontSize,
       fontWeight: fontWeight,
       color: color,
@@ -643,32 +645,38 @@ class AppTheme {
     Color onSurface,
     _ThemeMetrics metrics,
   ) {
-    final body = GoogleFonts.manropeTextTheme(
-      base,
-    ).apply(bodyColor: onSurface, displayColor: onSurface);
+    final body = base.apply(
+      fontFamily: 'Manrope',
+      bodyColor: onSurface,
+      displayColor: onSurface,
+    );
 
     return body.copyWith(
-      displaySmall: GoogleFonts.sora(
+      displaySmall: TextStyle(
+        fontFamily: 'Sora',
         fontSize: metrics.text(36),
         height: 1.08,
         fontWeight: FontWeight.w700,
         letterSpacing: -0.5,
         color: onSurface,
       ),
-      headlineMedium: GoogleFonts.sora(
+      headlineMedium: TextStyle(
+        fontFamily: 'Sora',
         fontSize: metrics.text(28),
         height: 1.18,
         fontWeight: FontWeight.w700,
         letterSpacing: -0.4,
         color: onSurface,
       ),
-      titleLarge: GoogleFonts.sora(
+      titleLarge: TextStyle(
+        fontFamily: 'Sora',
         fontSize: metrics.text(21),
         fontWeight: FontWeight.w700,
         letterSpacing: -0.2,
         color: onSurface,
       ),
-      titleMedium: GoogleFonts.sora(
+      titleMedium: TextStyle(
+        fontFamily: 'Sora',
         fontSize: metrics.text(17),
         fontWeight: FontWeight.w600,
         letterSpacing: -0.15,
@@ -692,7 +700,8 @@ class AppTheme {
         letterSpacing: 0.1,
         color: onSurface,
       ),
-      labelLarge: GoogleFonts.manrope(
+      labelLarge: TextStyle(
+        fontFamily: 'Manrope',
         fontSize: metrics.text(15),
         fontWeight: FontWeight.w700,
         letterSpacing: 0.15,
@@ -1241,7 +1250,8 @@ class AppTypography {
     double? height,
     double? letterSpacing,
   }) {
-    return GoogleFonts.amiri(
+    return TextStyle(
+      fontFamily: 'Amiri',
       fontSize: _metrics.text(size),
       fontWeight: weight,
       height: height,
@@ -1256,7 +1266,8 @@ class AppTypography {
     double? height,
     double? letterSpacing,
   }) {
-    return GoogleFonts.manrope(
+    return TextStyle(
+      fontFamily: 'Manrope',
       fontSize: _metrics.text(size),
       fontWeight: weight,
       height: height,
@@ -1271,7 +1282,8 @@ class AppTypography {
     double? height,
     double? letterSpacing,
   }) {
-    return GoogleFonts.sora(
+    return TextStyle(
+      fontFamily: 'Sora',
       fontSize: _metrics.text(size),
       fontWeight: weight,
       height: height,

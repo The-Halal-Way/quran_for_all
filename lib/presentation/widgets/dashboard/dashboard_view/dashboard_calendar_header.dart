@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:quran_for_all/presentation/views/daily_reminders/daily_hadith_view.dart';
 
-import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_theme.dart';
-import 'dashboard_daily_reminder_button.dart';
-import 'dashboard_navigation.dart';
+import 'dashboard_daily_hadith_action.dart';
 
 class DashboardCalendarHeader extends StatelessWidget {
-  const DashboardCalendarHeader({super.key, required this.unreadReminders});
-
-  final int unreadReminders;
+  const DashboardCalendarHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,13 +20,9 @@ class DashboardCalendarHeader extends StatelessWidget {
             context,
           ).dashboardBismillah.copyWith(color: colors.onSurface),
         ),
-        Align(
+        const Align(
           alignment: AlignmentDirectional.centerEnd,
-          child: DashboardDailyHadithButton(
-            label: context.l10n.dailyHadithTitle,
-            unreadCount: unreadReminders,
-            onTap: () => pushDashboardPage(context, const DailyHadithView()),
-          ),
+          child: DashboardDailyHadithAction(),
         ),
       ],
     );

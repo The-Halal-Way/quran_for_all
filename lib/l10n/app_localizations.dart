@@ -8093,6 +8093,12 @@ abstract class AppLocalizations {
   /// **'Daily Hadith'**
   String get dailyHadithTitle;
 
+  /// No description provided for @dailyHadithLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading daily hadith…'**
+  String get dailyHadithLoading;
+
   /// No description provided for @dailyHadithSubtitle.
   ///
   /// In en, this message translates to:

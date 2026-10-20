@@ -36,8 +36,8 @@ class DashboardBooksShelf extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: colors.shadow.withValues(alpha: 0.06),
-            blurRadius: 18,
-            offset: const Offset(0, 8),
+            blurRadius: 8,
+            offset: const Offset(0, 4),
           ),
         ],
       ),
