@@ -1,0 +1,2267 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "categoryId": "quran_knowledge",
+  "title": "কুরআন সম্পর্কে জ্ঞান",
+  "description": "কুরআনের গঠন, নাজিল, ঘটনাবলি, শিক্ষা ও মনোযোগী পাঠ সম্পর্কে প্রশ্নব্যাংক; প্রতিটি প্রশ্নে ব্যাখ্যা ও সূত্র রয়েছে।",
+  "questionCount": 60,
+  "difficultyCounts": {
+    "foundation": 30,
+    "intermediate": 15,
+    "advanced": 15
+  },
+  "difficultyMethod": "কঠিনতার স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। উচ্চতর স্তর এই বিষয়ের গভীরতর বোঝাপড়া নির্দেশ করে, আলেম হওয়ার যোগ্যতা নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় মূল কুরআন-হাদিসের সূত্র মিলিয়ে দেখা হয়েছে; এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "perAssessment": {
+      "foundation": 2,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর হিসেবে না রেখে আলাদা UI বিকল্প হিসেবে ব্যবহার করুন।"
+  },
+  "questions": [
+    {
+      "id": "quran_001",
+      "conceptId": "quran_surah_count",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআনে মোট কতটি সূরা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "১১৪টি"
+        },
+        {
+          "id": "b",
+          "text": "১১০টি"
+        },
+        {
+          "id": "c",
+          "text": "১২০টি"
+        },
+        {
+          "id": "d",
+          "text": "১২৪টি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনের প্রচলিত সূরা তালিকায় ১১৪টি সূরা রয়েছে। এটি সূরা আল-ফাতিহা দিয়ে শুরু এবং সূরা আন-নাস দিয়ে শেষ হয়েছে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "quran_002",
+      "conceptId": "quran_surah_term",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআনের গঠনে ‘সূরা’ বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অনুবাদের একটি ভাষা"
+        },
+        {
+          "id": "b",
+          "text": "একটি অধ্যায়"
+        },
+        {
+          "id": "c",
+          "text": "তিলাওয়াতের একটি রেকর্ডিং"
+        },
+        {
+          "id": "d",
+          "text": "এক ধরনের তাফসির"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা হলো কুরআনের একটি অধ্যায়। প্রতিটি সূরায় আয়াত রয়েছে, যেগুলোকে ইংরেজিতে সাধারণত verse বলা হয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran Foundation: অধ্যায় ও আয়াত নির্দেশনার নথি",
+          "url": "https://api-docs.quran.com/docs/content_apis_versioned/4.0.0/verses-by-verse-key/"
+        }
+      ]
+    },
+    {
+      "id": "quran_003",
+      "conceptId": "quran_ayah_term",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআনের ১২:৪-এর মতো একটি নির্দেশনায় দ্বিতীয় সংখ্যাটি কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব সংস্করণে একই মুদ্রিত পৃষ্ঠা"
+        },
+        {
+          "id": "b",
+          "text": "অধ্যায়টির শব্দসংখ্যা"
+        },
+        {
+          "id": "c",
+          "text": "সূরার ভেতরের আয়াতের নম্বর"
+        },
+        {
+          "id": "d",
+          "text": "নাজিল হওয়ার বছর"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনের সূত্রে প্রথমে সূরার নম্বর এবং পরে আয়াতের নম্বর লেখা হয়। মুদ্রিত সংস্করণভেদে পৃষ্ঠা নম্বর ভিন্ন হতে পারে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran Foundation: অধ্যায় ও আয়াত নির্দেশনার নথি",
+          "url": "https://api-docs.quran.com/docs/content_apis_versioned/4.0.0/verses-by-verse-key/"
+        }
+      ]
+    },
+    {
+      "id": "quran_004",
+      "conceptId": "quran_opening_surah",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআনের প্রচলিত লিখিত বিন্যাসে কোন সূরাটি প্রথমে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-বাকারা"
+        },
+        {
+          "id": "b",
+          "text": "আল-আলাক"
+        },
+        {
+          "id": "c",
+          "text": "আন-নাস"
+        },
+        {
+          "id": "d",
+          "text": "আল-ফাতিহা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "প্রচলিত লিখিত বিন্যাসে আল-ফাতিহা প্রথম সূরা। এখানে লিখিত বিন্যাসের কথা বলা হয়েছে, নাজিল হওয়ার ক্রমের কথা নয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "quran_005",
+      "conceptId": "quran_closing_surah",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআনের প্রচলিত লিখিত বিন্যাসে কোন সূরাটি সবার শেষে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন-নাস"
+        },
+        {
+          "id": "b",
+          "text": "আল-ফালাক"
+        },
+        {
+          "id": "c",
+          "text": "আল-ইখলাস"
+        },
+        {
+          "id": "d",
+          "text": "আল-কাওসার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আন-নাস হলো ১১৪ নম্বর সূরা এবং প্রচলিত লিখিত বিন্যাসের শেষ অধ্যায়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "quran_006",
+      "conceptId": "quran_arabic_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১২:২ অনুযায়ী কুরআন কোন ভাষায় নাজিল হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হিব্রু"
+        },
+        {
+          "id": "b",
+          "text": "আরবি"
+        },
+        {
+          "id": "c",
+          "text": "আরামায়িক"
+        },
+        {
+          "id": "d",
+          "text": "ফারসি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা ইউসুফের ১২:২ আয়াতে কুরআনকে আরবি ভাষায় নাজিল করার কথা বলা হয়েছে এবং এর সঙ্গে বোঝার বিষয়টি যুক্ত করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "quran_007",
+      "conceptId": "quran_revelation_month",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:১৮৫-এ কুরআন নাজিলের সঙ্গে কোন মাসের কথা উল্লেখ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুহররম"
+        },
+        {
+          "id": "b",
+          "text": "রজব"
+        },
+        {
+          "id": "c",
+          "text": "রমজান"
+        },
+        {
+          "id": "d",
+          "text": "জিলহজ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আল-বাকারার ২:১৮৫ আয়াতে রমজানকে কুরআন নাজিলের মাস হিসেবে উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "quran_008",
+      "conceptId": "quran_revelation_night",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৯৭:১-এ কুরআন নাজিলের সঙ্গে কোন রাতের কথা বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঈদুল আজহার আগের রাত"
+        },
+        {
+          "id": "b",
+          "text": "মুহররমের প্রথম রাত"
+        },
+        {
+          "id": "c",
+          "text": "প্রতি পূর্ণিমার রাত"
+        },
+        {
+          "id": "d",
+          "text": "লাইলাতুল কদর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-কদরের ৯৭:১ আয়াতে লাইলাতুল কদরে কুরআন নাজিলের কথা বলা হয়েছে। আয়াতটিতে রমজানের নির্দিষ্ট কোনো তারিখ উল্লেখ নেই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "কুরআন ৯৭:১",
+          "url": "https://quran.com/97/1"
+        }
+      ]
+    },
+    {
+      "id": "quran_009",
+      "conceptId": "quran_first_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৩-এর বর্ণনায় ওহির সূচনার সঙ্গে কোন অংশটি সম্পর্কিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূরা আল-আলাকের শুরুর আয়াতগুলো"
+        },
+        {
+          "id": "b",
+          "text": "সূরা আল-ফাতিহার শুরুর আয়াতগুলো"
+        },
+        {
+          "id": "c",
+          "text": "সূরা আল-বাকারার শেষের আয়াতগুলো"
+        },
+        {
+          "id": "d",
+          "text": "সম্পূর্ণ সূরা আন-নাস"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "প্রথম ওহির বর্ণনায় সূরা আল-আলাকের ৯৬:১–৫ আয়াতের পাঠ বা তিলাওয়াতের প্রাথমিক নির্দেশ এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "quran",
+          "surah": 96,
+          "ayahs": "1-5",
+          "label": "কুরআন ৯৬:১-৫",
+          "url": "https://quran.com/96/1-5"
+        }
+      ]
+    },
+    {
+      "id": "quran_010",
+      "conceptId": "quran_preservation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১৫:৯-এ আল্লাহ ‘যিকর’ সম্পর্কে কী প্রতিশ্রুতি দিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এর সংরক্ষণ কেবল একটি মানবপরিবারের ওপর নির্ভরশীল।"
+        },
+        {
+          "id": "b",
+          "text": "তিনি তা সংরক্ষণ করবেন।"
+        },
+        {
+          "id": "c",
+          "text": "কোনো শাসক চাইলে এটি বদলে যাবে।"
+        },
+        {
+          "id": "d",
+          "text": "শুধু এর সূরাগুলোর নাম অবশিষ্ট থাকবে।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আল-হিজরের ১৫:৯ আয়াতে যিকর নাজিল ও সংরক্ষণের দায়িত্ব আল্লাহ নিজের বলে উল্লেখ করেছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "9",
+          "label": "কুরআন ১৫:৯",
+          "url": "https://quran.com/15/9"
+        }
+      ]
+    },
+    {
+      "id": "quran_011",
+      "conceptId": "quran_criterion_name",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২৫:১-এ সত্য ও মিথ্যার পার্থক্য নির্ণয়কারী হিসেবে ওহিকে কোন নামে উল্লেখ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-মিজান: দাঁড়িপাল্লা"
+        },
+        {
+          "id": "b",
+          "text": "আল-বাইত: ঘর"
+        },
+        {
+          "id": "c",
+          "text": "আল-ফুরকান: সত্য-মিথ্যার পার্থক্যকারী"
+        },
+        {
+          "id": "d",
+          "text": "আল-জাবাল: পাহাড়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আল-ফুরকানের ২৫:১ আয়াতে ‘ফুরকান’ শব্দটি এসেছে। এর অর্থ সত্য-মিথ্যার পার্থক্য নির্ণয়কারী। প্রশ্নটি এই আয়াতে ব্যবহৃত নাম সম্পর্কে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "1",
+          "label": "কুরআন ২৫:১",
+          "url": "https://quran.com/25/1"
+        }
+      ]
+    },
+    {
+      "id": "quran_012",
+      "conceptId": "quran_guidance",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:২-এ আল্লাহসচেতন মানুষের জন্য কিতাবকে কী হিসেবে বর্ণনা করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গোত্রগুলোর মর্যাদার তালিকা"
+        },
+        {
+          "id": "b",
+          "text": "ব্যবসায়িক লাভের হিসাব"
+        },
+        {
+          "id": "c",
+          "text": "ভবিষ্যতের তারিখের তালিকা"
+        },
+        {
+          "id": "d",
+          "text": "পথনির্দেশ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-বাকারার ২:২ আয়াতে কিতাবকে মুত্তাকিদের জন্য হিদায়াত বা পথনির্দেশ বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "2",
+          "label": "কুরআন ২:২",
+          "url": "https://quran.com/2/2"
+        }
+      ]
+    },
+    {
+      "id": "quran_013",
+      "conceptId": "quran_seeking_refuge",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১৬:৯৮ অনুযায়ী কুরআন তিলাওয়াতের সময় কী প্রার্থনা করতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিতাড়িত শয়তান থেকে আল্লাহর আশ্রয়"
+        },
+        {
+          "id": "b",
+          "text": "নিজের কণ্ঠের জন্য জনসমর্থন"
+        },
+        {
+          "id": "c",
+          "text": "দুনিয়ার সম্পদ পাওয়ার নিশ্চয়তা"
+        },
+        {
+          "id": "d",
+          "text": "প্রত্যেক শ্রোতার অনুমতি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আন-নাহলের ১৬:৯৮ আয়াতে তিলাওয়াতের সময় শয়তান থেকে আল্লাহর আশ্রয় চাইতে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "কুরআন ১৬:৯৮",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "quran_014",
+      "conceptId": "quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৭৩:৪-এ কীভাবে কুরআন তিলাওয়াত করতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এত দ্রুত যে শব্দগুলো অস্পষ্টভাবে মিশে যায়"
+        },
+        {
+          "id": "b",
+          "text": "স্পষ্ট ও ধীরস্থিরভাবে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু শ্রোতাদের মুগ্ধ করার জন্য"
+        },
+        {
+          "id": "d",
+          "text": "পছন্দের সুরের সঙ্গে মেলাতে শব্দ বদলে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আল-মুযযাম্মিলের ৭৩:৪ আয়াতে ধীরস্থির ও সুস্পষ্ট তিলাওয়াতের নির্দেশ এসেছে। গতি বা পরিবেশনার কারণে শব্দের প্রতি মনোযোগ হারানো উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "কুরআন ৭৩:৪",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "quran_015",
+      "conceptId": "quran_reflection",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩৮:২৯ অনুযায়ী কিতাবের আয়াতগুলো নিয়ে মানুষের কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চিন্তাভাবনাকে অপ্রয়োজনীয় মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু সূরার নামগুলো পড়া"
+        },
+        {
+          "id": "c",
+          "text": "চিন্তা করা ও উপদেশ গ্রহণ করা"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতগুলো শুধু সাজসজ্জায় ব্যবহার করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা সোয়াদের ৩৮:২৯ আয়াতে বরকতময় কিতাব নাজিলের সঙ্গে এর আয়াত নিয়ে চিন্তা ও উপদেশ গ্রহণের উদ্দেশ্য যুক্ত করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "quran_016",
+      "conceptId": "quran_ayatul_kursi_location",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কোন সূত্রটি আয়াতুল কুরসিকে নির্দেশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফাতিহা ১:৭"
+        },
+        {
+          "id": "b",
+          "text": "আল-ইখলাস ১১২:১"
+        },
+        {
+          "id": "c",
+          "text": "আন-নাস ১১৪:৬"
+        },
+        {
+          "id": "d",
+          "text": "আল-বাকারা ২:২৫৫"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতুল কুরসি হলো সূরা আল-বাকারার ২:২৫৫ আয়াত। এই নামটি নির্দিষ্ট ওই আয়াতের জন্য ব্যবহৃত হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "quran_017",
+      "conceptId": "quran_no_compulsion",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:২৫৬-এ কোন শিক্ষা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধর্মের ব্যাপারে কোনো জবরদস্তি নেই।"
+        },
+        {
+          "id": "b",
+          "text": "শারীরিক বলপ্রয়োগে ঈমান সৃষ্টি করা যায়।"
+        },
+        {
+          "id": "c",
+          "text": "পারিবারিক মর্যাদা থাকলে ব্যক্তিগত বিশ্বাসের দরকার নেই।"
+        },
+        {
+          "id": "d",
+          "text": "কেবল ধনী ব্যক্তিরাই ধর্ম শিখতে পারে।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-বাকারার ২:২৫৬ আয়াতে ধর্মের ব্যাপারে জবরদস্তি না থাকার কথা বলা হয়েছে এবং সঠিক পথ ও ভ্রান্তির পার্থক্য স্পষ্ট করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "কুরআন ২:২৫৬",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "quran_018",
+      "conceptId": "quran_maryam_surah",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "ঈসা (আ.)-এর মা মরিয়মের নামে কুরআনের কোন সূরার নাম রাখা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লুকমান"
+        },
+        {
+          "id": "b",
+          "text": "মরিয়ম"
+        },
+        {
+          "id": "c",
+          "text": "ইউসুফ"
+        },
+        {
+          "id": "d",
+          "text": "আল-কাহফ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মরিয়ম হলো ঈসা (আ.)-এর মায়ের নাম এবং কুরআনের ১৯ নম্বর সূরার নাম।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 19,
+          "ayahs": "16",
+          "label": "কুরআন ১৯:১৬",
+          "url": "https://quran.com/19/16"
+        }
+      ]
+    },
+    {
+      "id": "quran_019",
+      "conceptId": "quran_yusuf_dream",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১২:৪-এ কোন নবী তাঁর বাবাকে স্বপ্নে এগারোটি তারা, সূর্য ও চাঁদ দেখার কথা বলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইউনুস (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ইউসুফ (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "সুলাইমান (আ.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা ইউসুফের ১২:৪ আয়াতে ইউসুফ (আ.) তাঁর বাবার কাছে এই স্বপ্নের কথা বর্ণনা করেছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "কুরআন ১২:৪",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "quran_020",
+      "conceptId": "quran_moses_pharaoh",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২০:৪৩-এ মূসা ও হারুন (আ.)-কে কার কাছে যেতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লুকমান"
+        },
+        {
+          "id": "b",
+          "text": "যুলকারনাইন"
+        },
+        {
+          "id": "c",
+          "text": "ইউসুফ (আ.)-এর কাহিনিতে উল্লিখিত রাজা"
+        },
+        {
+          "id": "d",
+          "text": "ফিরআউন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা ত্বহার ২০:৪৩ আয়াতে সীমালঙ্ঘনকারী ফিরআউনের কাছে মূসা ও হারুন (আ.)-কে যেতে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "43",
+          "label": "কুরআন ২০:৪৩",
+          "url": "https://quran.com/20/43"
+        }
+      ]
+    },
+    {
+      "id": "quran_021",
+      "conceptId": "quran_people_cave",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কোন সূরায় গুহাবাসীদের ঘটনা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-কাহফ"
+        },
+        {
+          "id": "b",
+          "text": "আল-ফিল"
+        },
+        {
+          "id": "c",
+          "text": "আল-মাসাদ"
+        },
+        {
+          "id": "d",
+          "text": "আল-কাওসার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-কাহফের ১৮:৯ আয়াতে গুহাবাসীদের প্রসঙ্গ শুরু হয়েছে এবং পরবর্তী আয়াতগুলোতে তাঁদের ঘটনা বর্ণিত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "9-26",
+          "label": "কুরআন ১৮:৯-২৬",
+          "url": "https://quran.com/18/9-26"
+        }
+      ]
+    },
+    {
+      "id": "quran_022",
+      "conceptId": "quran_luqman_advice",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩১:১৩-এ লুকমান আল্লাহর সঙ্গে শরিক না করার উপদেশ কাকে দিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফিরআউনকে"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর ছেলেকে"
+        },
+        {
+          "id": "c",
+          "text": "একজন আগত রাজাকে"
+        },
+        {
+          "id": "d",
+          "text": "একদল ব্যবসায়ীকে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা লুকমানের ৩১:১৩ আয়াতে লুকমান তাঁর ছেলেকে উপদেশ দিচ্ছেন। আয়াতের ভাষায় তাঁদের সম্পর্ক স্পষ্টভাবে উল্লেখ আছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "13",
+          "label": "কুরআন ৩১:১৩",
+          "url": "https://quran.com/31/13"
+        }
+      ]
+    },
+    {
+      "id": "quran_023",
+      "conceptId": "quran_dhul_qarnayn_location",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কোন সূরায় যুলকারনাইনের ঘটনা শুরু হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মরিয়ম"
+        },
+        {
+          "id": "b",
+          "text": "আল-মুলক"
+        },
+        {
+          "id": "c",
+          "text": "আল-কাহফ"
+        },
+        {
+          "id": "d",
+          "text": "আল-ফালাক"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আল-কাহফের ১৮:৮৩ আয়াতে যুলকারনাইন সম্পর্কে প্রশ্নের উল্লেখ করে তাঁর ঘটনার বর্ণনা শুরু হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "83",
+          "label": "কুরআন ১৮:৮৩",
+          "url": "https://quran.com/18/83"
+        }
+      ]
+    },
+    {
+      "id": "quran_024",
+      "conceptId": "quran_maryam_jesus",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১৯:১৬–২২-এ কে পুত্রসন্তানের সুসংবাদ পান এবং পরে গর্ভধারণ করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফিরআউনের স্ত্রী"
+        },
+        {
+          "id": "b",
+          "text": "সাবার রানি"
+        },
+        {
+          "id": "c",
+          "text": "মূসা (আ.)-এর বোন"
+        },
+        {
+          "id": "d",
+          "text": "মরিয়ম"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "এই আয়াতগুলোতে মরিয়মকে সুসংবাদ দেওয়া ও তাঁর গর্ভধারণের ঘটনা রয়েছে। এগুলো ঈসা (আ.)-এর জন্মের কুরআনিক বিবরণের অংশ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 19,
+          "ayahs": "16-22",
+          "label": "কুরআন ১৯:১৬-২২",
+          "url": "https://quran.com/19/16-22"
+        }
+      ]
+    },
+    {
+      "id": "quran_025",
+      "conceptId": "quran_noah_ark",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১১:৩৭-এ কোন নবীকে নৌকা তৈরি করতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নূহ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ইলিয়াস (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইসহাক (আ.)"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা হুদের ১১:৩৭ আয়াতে আল্লাহর তত্ত্বাবধান ও নির্দেশ অনুযায়ী নূহ (আ.)-কে নৌকা তৈরি করতে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 11,
+          "ayahs": "36-37",
+          "label": "কুরআন ১১:৩৬-৩৭",
+          "url": "https://quran.com/11/36-37"
+        }
+      ]
+    },
+    {
+      "id": "quran_026",
+      "conceptId": "quran_yunus_fish",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩৭:১৩৯–১৪২-এর বড় মাছসংক্রান্ত ঘটনায় কোন রাসুলের নাম রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইয়াহইয়া (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইউনুস (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "শুআইব (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইদরিস (আ.)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আস-সাফফাতের ৩৭:১৩৯ আয়াতে ইউনুস (আ.)-এর নাম এসেছে। পরের আয়াতগুলোতে তাঁর প্রস্থান, জাহাজ ও মাছের ঘটনা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 37,
+          "ayahs": "139-142",
+          "label": "কুরআন ৩৭:১৩৯-১৪২",
+          "url": "https://quran.com/37/139-142"
+        }
+      ]
+    },
+    {
+      "id": "quran_027",
+      "conceptId": "quran_kaabah_foundations",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:১২৭-এ ইবরাহিম (আ.)-এর সঙ্গে কে ঘরের ভিত্তি উঁচু করছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইসহাক (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইয়াকুব (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ইসমাঈল (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইউসুফ (আ.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আল-বাকারার ২:১২৭ আয়াতে ঘরের ভিত্তি উঁচু করার সময় ইবরাহিম ও ইসমাঈল (আ.)-এর নাম একসঙ্গে উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "কুরআন ২:১২৭",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "quran_028",
+      "conceptId": "quran_adam_prostration",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:৩৪-এ ফেরেশতাদের কার সামনে সিজদা করতে বলা হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নূহ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইবরাহিম (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "আদম (আ.)"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-বাকারার ২:৩৪ আয়াতে এই নির্দেশে আদম (আ.)-এর নাম এসেছে। একই আয়াতে ইবলিসের অস্বীকৃতি ও অহংকারের কথাও রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "34",
+          "label": "কুরআন ২:৩৪",
+          "url": "https://quran.com/2/34"
+        }
+      ]
+    },
+    {
+      "id": "quran_029",
+      "conceptId": "quran_qadr_value",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৯৭:৩ অনুযায়ী লাইলাতুল কদর কত সময়ের চেয়ে উত্তম?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এক হাজার মাস"
+        },
+        {
+          "id": "b",
+          "text": "এক হাজার দিন"
+        },
+        {
+          "id": "c",
+          "text": "এক শ মাস"
+        },
+        {
+          "id": "d",
+          "text": "এক শ রাত"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-কদরের ৯৭:৩ আয়াতে এই রাতকে এক হাজার মাসের চেয়ে উত্তম বলা হয়েছে। এখানে সময়ের একক মাস, দিন নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "কুরআন ৯৭:৩",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "quran_030",
+      "conceptId": "quran_charity_harm",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:২৬৪-এ মুমিনদের কোন আচরণের মাধ্যমে দান নষ্ট করতে নিষেধ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রশংসা না চেয়ে গোপনে দান করে"
+        },
+        {
+          "id": "b",
+          "text": "দান করার খোঁটা দিয়ে ও কষ্ট দিয়ে"
+        },
+        {
+          "id": "c",
+          "text": "ফিরিয়ে দিতে অক্ষম ব্যক্তিকে দান করে"
+        },
+        {
+          "id": "d",
+          "text": "হালাল উপার্জন থেকে দান করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আল-বাকারার ২:২৬৪ আয়াতে দানের খোঁটা দেওয়া এবং গ্রহীতাকে কষ্ট দেওয়ার মাধ্যমে দান নষ্ট করার ব্যাপারে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "quran_031",
+      "conceptId": "quran_gradual_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ মনে করেন, সম্পূর্ণ কুরআন একটিমাত্র প্রকাশ্য ভাষণে মানুষের সামনে পাঠ করা হয়েছিল। কুরআন ১৭:১০৬ কী স্পষ্ট করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রথমে শুধু সূরাগুলোর নাম নাজিল হয়েছিল।"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি সমাবেশের পরে শ্রোতারা এর আয়াত রচনা করেছিলেন।"
+        },
+        {
+          "id": "c",
+          "text": "মানুষকে ধীরস্থিরভাবে শোনানোর জন্য এটি পর্যায়ক্রমে নাজিল হয়েছে।"
+        },
+        {
+          "id": "d",
+          "text": "এর বার্তা মানুষকে পাঠ করে শোনানোর সঙ্গে সম্পর্কিত ছিল না।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আল-ইসরার ১৭:১০৬ আয়াতে পর্যায়ক্রমে নাজিল ও ধীরস্থিরভাবে পাঠ করে শোনানোর কথা এসেছে। এটি একবারেই সম্পূর্ণ কুরআন প্রকাশ্যে পাঠের ধারণা সংশোধন করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "106",
+          "label": "কুরআন ১৭:১০৬",
+          "url": "https://quran.com/17/106"
+        }
+      ]
+    },
+    {
+      "id": "quran_032",
+      "conceptId": "quran_gradual_purpose",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কুরআন ২৫:৩২-এ পর্যায়ক্রমে ওহি নাজিলের কোন উদ্দেশ্য উল্লেখ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোন আয়াত ওহি হবে তা শ্রোতাদের বেছে নিতে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "রাজনৈতিক নেতাদের শব্দচয়নের অনুমোদনের জন্য অপেক্ষা করা"
+        },
+        {
+          "id": "c",
+          "text": "ওহি মনে রাখার প্রয়োজন দূর করা"
+        },
+        {
+          "id": "d",
+          "text": "নবী (সা.)-এর হৃদয় সুদৃঢ় করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-ফুরকানের ২৫:৩২ আয়াতে ধাপে ধাপে নাজিলের বিষয়ে আপত্তির উত্তরে নবী (সা.)-এর হৃদয় সুদৃঢ় করার কথা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "32",
+          "label": "কুরআন ২৫:৩২",
+          "url": "https://quran.com/25/32"
+        }
+      ]
+    },
+    {
+      "id": "quran_033",
+      "conceptId": "quran_quotation_context",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "একজন পাঠক কুরআন ৪:৪৩ থেকে শুধু ‘সালাতের কাছে যেয়ো না’ কথাটি উদ্ধৃত করেন। তিনি আয়াতের কোন জরুরি শর্তটি বাদ দিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নেশাগ্রস্ত অবস্থায়, যতক্ষণ না কী বলছে তা বুঝতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "যখনই কোনো দায়িত্ব পালন করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "যখনই অন্যেরা তাকে সালাত আদায় করতে দেখে"
+        },
+        {
+          "id": "d",
+          "text": "সালাতের অর্থ শেখার পরে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আন-নিসার ৪:৪৩ আয়াতের শুরুতে নেশাগ্রস্ত অবস্থায় কী বলছে তা বোঝার আগ পর্যন্ত সালাতের কাছে যেতে নিষেধ করা হয়েছে। এই শর্ত বাদ দিলে অর্থ বদলে যায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "43",
+          "label": "কুরআন ৪:৪৩",
+          "url": "https://quran.com/4/43"
+        }
+      ]
+    },
+    {
+      "id": "quran_034",
+      "conceptId": "quran_arabic_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ বলেন, কুরআন আরবিতে হওয়ায় এর বার্তা বোঝা অপ্রাসঙ্গিক। কুরআন ১২:২-এর কোন বিষয়টি এই দাবিকে প্রশ্নবিদ্ধ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতটি বলেছে, এর ভাষা বোঝার পথে বাধা।"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতটি আরবি ভাষায় নাজিলের সঙ্গে বোঝার বিষয়টি স্পষ্টভাবে যুক্ত করেছে।"
+        },
+        {
+          "id": "c",
+          "text": "আয়াতটি বোঝাকে শুধু সূরার নম্বর জানার মধ্যে সীমিত করেছে।"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতটি বার্তার অর্থ জানতে চাওয়া এড়িয়ে যেতে বলেছে।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা ইউসুফের ১২:২ আয়াতে শ্রোতারা যেন বুঝতে পারে, সে উদ্দেশ্যের সঙ্গে আরবি কুরআনের কথা যুক্ত হয়েছে। ভাষাকে অর্থ উপেক্ষার কারণ হিসেবে তুলে ধরা হয়নি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "quran_035",
+      "conceptId": "quran_asking_informed_people",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কুরআন ১৬:৪৩-এ পূর্ববর্তী রাসুলদের বিষয়ে যারা জানে না, তাদের কীভাবে অজ্ঞতা দূর করতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লোকসংখ্যা দেখে বিষয়টির সিদ্ধান্ত নিতে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি ব্যক্তিগত স্বপ্নকে ঐতিহাসিক প্রমাণ ধরতে"
+        },
+        {
+          "id": "c",
+          "text": "পূর্ববর্তী ওহি সম্পর্কে জ্ঞানীদের জিজ্ঞাসা করতে"
+        },
+        {
+          "id": "d",
+          "text": "নিজের না জানাকেই রাসুলদের অস্তিত্ব না থাকার প্রমাণ ধরতে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আন-নাহলের ১৬:৪৩ আয়াতে পূর্ববর্তী রাসুলরা ওহিপ্রাপ্ত মানুষ ছিলেন—এই প্রসঙ্গে অজ্ঞ ব্যক্তিদের যিকরের জ্ঞানীদের জিজ্ঞাসা করতে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "43",
+          "label": "কুরআন ১৬:৪৩",
+          "url": "https://quran.com/16/43"
+        }
+      ]
+    },
+    {
+      "id": "quran_036",
+      "conceptId": "quran_parents_speech",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "বয়স্ক মা-বাবার যত্ন নেওয়া কঠিন হয়ে পড়লে কোন আচরণ কুরআন ১৭:২৩–২৪-এর শিক্ষার সঙ্গে সবচেয়ে বেশি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যত্ন নেওয়া অসুবিধাজনক হলে অবজ্ঞাসূচক ভাষা ব্যবহার করা"
+        },
+        {
+          "id": "b",
+          "text": "আর্থিক সহায়তা দিলেই অপমানজনক কথা বলা যায় মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "বার্ধক্যের কারণে সব সদয় আচরণ বন্ধ করে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সম্মান দিয়ে কথা বলা এবং বিনয় ও মমতা দেখানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-ইসরার ১৭:২৩–২৪ আয়াতে মা-বাবার প্রতি সদাচারের সঙ্গে সম্মানজনক কথা, বিনয়, মমতা ও তাঁদের জন্য দোয়ার কথা যুক্ত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23-24",
+          "label": "কুরআন ১৭:২৩-২৪",
+          "url": "https://quran.com/17/23-24"
+        }
+      ]
+    },
+    {
+      "id": "quran_037",
+      "conceptId": "quran_justice_with_disliked_people",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ একটি গোষ্ঠীকে অপছন্দ করেন এবং তাদের সঙ্গে অন্যায় করতে চান। কুরআন ৫:৮-এর কোন নির্দেশটি এখানে প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিদ্বেষ যেন ন্যায়বিচার থেকে সরিয়ে না দেয়।"
+        },
+        {
+          "id": "b",
+          "text": "কেবল পছন্দের মানুষের প্রতিই ন্যায়বিচার জরুরি।"
+        },
+        {
+          "id": "c",
+          "text": "অপছন্দ করলেই গোষ্ঠীটির বিরুদ্ধে প্রতিটি অভিযোগ বিশ্বাসযোগ্য হয়।"
+        },
+        {
+          "id": "d",
+          "text": "ব্যক্তিগত রাগ থাকলে ন্যায্যতার দরকার নেই।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-মায়িদার ৫:৮ আয়াতে ন্যায়বিচারের নির্দেশ দেওয়া হয়েছে এবং বিদ্বেষ যেন অন্যায়ের কারণ না হয় সে বিষয়ে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "quran_038",
+      "conceptId": "quran_mockery",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "একদল মানুষ নিজেদের শ্রেষ্ঠ ভেবে অন্য একটি দলকে উপহাস করে। কুরআন ৪৯:১১-এ সংযত হওয়ার কোন কারণ এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অনেকে একসঙ্গে করলে উপহাস গ্রহণযোগ্য হয়।"
+        },
+        {
+          "id": "b",
+          "text": "উপহাসের শিকার ব্যক্তিরা উপহাসকারীদের চেয়ে ভালো হতে পারে।"
+        },
+        {
+          "id": "c",
+          "text": "প্রচলিত ডাকনাম হলেই তা সম্মানজনক।"
+        },
+        {
+          "id": "d",
+          "text": "সম্পদ থাকলে অন্যদের নিয়ে বিদ্রূপ করার অনুমতি মেলে।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আল-হুজুরাতের ৪৯:১১ আয়াতে উপহাস নিষেধ করা হয়েছে এবং যাদের উপহাস করা হচ্ছে তারা উপহাসকারীদের চেয়ে ভালো হতে পারে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "quran_039",
+      "conceptId": "quran_suspicion_spying",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪৯:১২-এ কোন আচরণগুলোর ব্যাপারে বিশেষভাবে সতর্ক করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সতর্ক যাচাই, গোপনীয়তা রক্ষা ও মীমাংসা"
+        },
+        {
+          "id": "b",
+          "text": "সম্মানজনক মতভেদ, পরামর্শ ও ধৈর্য"
+        },
+        {
+          "id": "c",
+          "text": "ভিত্তিহীন সন্দেহ, গুপ্তচরবৃত্তি ও গিবত"
+        },
+        {
+          "id": "d",
+          "text": "দান, সংযত কথা ও কৃতজ্ঞতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আল-হুজুরাতের ৪৯:১২ আয়াতে অধিক সন্দেহ, গুপ্তচরবৃত্তি ও গিবত থেকে সতর্ক করা হয়েছে। সন্দেহকে প্রমাণিত সত্য ধরে নেওয়া হয়নি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "quran_040",
+      "conceptId": "quran_balanced_spending",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "ব্যয়ের ক্ষেত্রে কোন পদ্ধতি কুরআন ২৫:৬৭-এর সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রয়োজন না দেখে নজর কাড়তে সব খরচ করা"
+        },
+        {
+          "id": "b",
+          "text": "দায়িত্বশীল যত্নের প্রয়োজন হলেও সব ব্যয় অস্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "যেকোনো মাত্রার ব্যয়কে সমানভাবে ভারসাম্যপূর্ণ মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "অপব্যয় ও কৃপণতা এড়িয়ে ভারসাম্য রাখা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-ফুরকানের ২৫:৬৭ আয়াতে অপব্যয় ও কৃপণতার মাঝামাঝি ভারসাম্যপূর্ণ পথের কথা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "কুরআন ২৫:৬৭",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "quran_041",
+      "conceptId": "quran_documenting_debt",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "নির্দিষ্ট মেয়াদের ঋণের ক্ষেত্রে কুরআন ২:২৮২ কোন ব্যবহারিক সুরক্ষার নির্দেশ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তা লিখে রাখা"
+        },
+        {
+          "id": "b",
+          "text": "ইচ্ছাকৃতভাবে শর্ত অস্পষ্ট রাখা"
+        },
+        {
+          "id": "c",
+          "text": "পরে শুধু ধনী পক্ষকে পরিমাণ ঠিক করতে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধুত্ব থাকলে স্পষ্ট শর্তের দরকার নেই মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-বাকারার ২:২৮২ আয়াতে নির্দিষ্ট মেয়াদের ঋণ লিখে রাখার বিস্তারিত নির্দেশ রয়েছে। শর্তের স্পষ্টতা পক্ষগুলোর অধিকার রক্ষায় সহায়ক।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "282",
+          "label": "কুরআন ২:২৮২",
+          "url": "https://quran.com/2/282"
+        }
+      ]
+    },
+    {
+      "id": "quran_042",
+      "conceptId": "quran_reconciliation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪৯:৯–১০ অনুযায়ী মুমিনদের দলগুলোর মধ্যে লড়াই হলে কী চেষ্টা করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মীমাংসার চেষ্টা ছাড়াই স্থায়ী শত্রুতা"
+        },
+        {
+          "id": "b",
+          "text": "ন্যায়বিচারের ভিত্তিতে মীমাংসা"
+        },
+        {
+          "id": "c",
+          "text": "যে দল বড় তাকেই স্বয়ংক্রিয়ভাবে সমর্থন"
+        },
+        {
+          "id": "d",
+          "text": "দায় এড়াতে অন্যায় উপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আল-হুজুরাতের ৪৯:৯–১০ আয়াতে মীমাংসা ও ন্যায়বিচারের নির্দেশ এসেছে। শান্তির আহ্বান ন্যায্যতার প্রয়োজন দূর করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "9-10",
+          "label": "কুরআন ৪৯:৯-১০",
+          "url": "https://quran.com/49/9-10"
+        }
+      ]
+    },
+    {
+      "id": "quran_043",
+      "conceptId": "quran_hardship_and_ease",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ কুরআন ৯৪:৫–৬ পড়ে মনে করেন, প্রতিটি সমস্যা সঙ্গে সঙ্গে দূর হবেই। কোন ব্যাখ্যাটি বেশি সতর্ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতগুলো প্রত্যেকের স্বস্তি পাওয়ার ক্যালেন্ডার-তারিখ দেয়।"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতগুলো বলেছে, কোনো মুমিন কখনো কষ্ট পাবেন না।"
+        },
+        {
+          "id": "c",
+          "text": "আয়াতগুলো কষ্টের সঙ্গে স্বস্তির নিশ্চয়তা দেয়, তবে প্রতিটি সমস্যার জন্য তাৎক্ষণিক সময়সীমা নির্ধারণ করে না।"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতগুলো ধৈর্য ও বাস্তব প্রচেষ্টাকে অপ্রয়োজনীয় করে।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আশ-শারহের ৯৪:৫–৬ আয়াত কষ্টের সঙ্গে স্বস্তির আশ্বাস দেয়। প্রত্যেক ব্যক্তির পরিস্থিতির জন্য নির্দিষ্ট সময়সূচি দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "কুরআন ৯৪:৫-৬",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "quran_044",
+      "conceptId": "quran_lessons_in_narratives",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কুরআন ১২:১১১-এ কুরআনিক ঘটনাবলির কোন উদ্দেশ্য তুলে ধরা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোনো পথনির্দেশ ছাড়াই বিনোদন দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অনুল্লিখিত ঘটনা বানিয়ে নেওয়ার অনুমতি দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "চিন্তার বদলে শুধু চরিত্রগুলোর নাম মুখস্থ করানো"
+        },
+        {
+          "id": "d",
+          "text": "বোধসম্পন্ন মানুষের জন্য শিক্ষা দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা ইউসুফের ১২:১১১ আয়াতে ঘটনাবলিতে শিক্ষা থাকার কথা এবং মুমিনদের জন্য হিদায়াত ও রহমতের কথা এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "111",
+          "label": "কুরআন ১২:১১১",
+          "url": "https://quran.com/12/111"
+        }
+      ]
+    },
+    {
+      "id": "quran_045",
+      "conceptId": "quran_wastefulness",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ উদারভাবে অর্থ দেন, আবার অসতর্কভাবে সম্পদও নষ্ট করেন। কুরআন ১৭:২৬–২৭-এর কোন পার্থক্যটি এখানে জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের প্রাপ্য দেওয়া উৎসাহিত, কিন্তু অপচয় নিন্দিত।"
+        },
+        {
+          "id": "b",
+          "text": "উদারতা নাম দিলেই যেকোনো ব্যয় অপচয়মুক্ত।"
+        },
+        {
+          "id": "c",
+          "text": "অর্থের বিষয় জড়িত হলে আত্মীয়কে সাহায্য করা নিষিদ্ধ।"
+        },
+        {
+          "id": "d",
+          "text": "দর্শকের পছন্দ-অপছন্দই শুধু অপচয় নির্ধারণ করে।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-ইসরার ১৭:২৬–২৭ আয়াতে আত্মীয়, অভাবী ও মুসাফিরের প্রাপ্য দেওয়ার সঙ্গে অপচয় নিষেধের কথা এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "26-27",
+          "label": "কুরআন ১৭:২৬-২৭",
+          "url": "https://quran.com/17/26-27"
+        }
+      ]
+    },
+    {
+      "id": "quran_046",
+      "conceptId": "quran_clear_verses",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩:৭ অনুযায়ী সুস্পষ্ট আয়াতগুলোর সঙ্গে পুরো কিতাবের সম্পর্ক কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোনো অস্পষ্ট অংশ আকর্ষণীয় মনে হলেই সেগুলো উপেক্ষা করা যায়।"
+        },
+        {
+          "id": "b",
+          "text": "সেগুলো কিতাবের ভিত্তি।"
+        },
+        {
+          "id": "c",
+          "text": "সেগুলো কেবল প্রথম শ্রোতাদের জন্য প্রযোজ্য।"
+        },
+        {
+          "id": "d",
+          "text": "সেগুলো থাকায় বাকি ওহিতে বিশ্বাসের প্রয়োজন নেই।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আলে ইমরানের ৩:৭ আয়াতে সুস্পষ্ট আয়াতগুলোকে কিতাবের ভিত্তি বলা হয়েছে এবং বিকৃত উদ্দেশ্যে অস্পষ্টতার পেছনে চলা থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "7",
+          "label": "কুরআন ৩:৭",
+          "url": "https://quran.com/3/7"
+        }
+      ]
+    },
+    {
+      "id": "quran_047",
+      "conceptId": "quran_consistency_and_reflection",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪:৮২ চিন্তার আহ্বান জানায় এবং বহু অসংগতি না থাকার কথা বলে। কোন পদ্ধতি এর যুক্তির সঙ্গে সবচেয়ে বেশি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চিন্তাশীল পর্যালোচনা নিষিদ্ধ ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রসঙ্গের সব আয়াত উপেক্ষা করে প্রতিটি জটিলতা মেটানো"
+        },
+        {
+          "id": "c",
+          "text": "আপাত জটিলতা দেখেই অনুসন্ধান থামিয়ে না দিয়ে মনোযোগসহ কুরআন পড়া ও পর্যালোচনা করা"
+        },
+        {
+          "id": "d",
+          "text": "যেকোনো পাঠকের প্রথম ধারণাকেই চূড়ান্ত অর্থ ধরা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আন-নিসার ৪:৮২ আয়াত চিন্তার আহ্বান জানায় এবং কুরআনের সংগতির সঙ্গে এর ঐশী উৎসের সম্পর্ক তুলে ধরে। এটি উপরিতলে প্রত্যাখ্যানের বদলে মনোযোগী বিবেচনায় উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "82",
+          "label": "কুরআন ৪:৮২",
+          "url": "https://quran.com/4/82"
+        }
+      ]
+    },
+    {
+      "id": "quran_048",
+      "conceptId": "quran_no_compulsion",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:২৫৬ ও ১০:৯৯ একসঙ্গে পড়লে মানুষকে জোর করে বিশ্বাসী বানানোর চেষ্টা সম্পর্কে কী শিক্ষা পাওয়া যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এগুলো বলে, বলপ্রয়োগে সবার অন্তরে আন্তরিক ঈমান প্রতিষ্ঠা করা যায়।"
+        },
+        {
+          "id": "b",
+          "text": "এগুলো অন্যের বিশ্বাস গ্রহণকে সম্পূর্ণভাবে একজন দাঈর নিয়ন্ত্রণাধীন করে।"
+        },
+        {
+          "id": "c",
+          "text": "এগুলো ধর্মের যেকোনো শান্তিপূর্ণ ব্যাখ্যা প্রত্যাখ্যান করতে বলে।"
+        },
+        {
+          "id": "d",
+          "text": "এগুলো জবরদস্তি প্রত্যাখ্যান করে এবং সবাইকে বাধ্য করে বিশ্বাসী বানানোর চেষ্টাকে প্রশ্ন করে।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-বাকারার ২:২৫৬ আয়াতে ধর্মে জবরদস্তি না থাকার কথা এসেছে। সূরা ইউনুসের ১০:৯৯ আয়াতে মানুষকে বাধ্য করে বিশ্বাসী বানানোর চেষ্টা সম্পর্কে প্রশ্ন করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "কুরআন ২:২৫৬",
+          "url": "https://quran.com/2/256"
+        },
+        {
+          "type": "quran",
+          "surah": 10,
+          "ayahs": "99",
+          "label": "কুরআন ১০:৯৯",
+          "url": "https://quran.com/10/99"
+        }
+      ]
+    },
+    {
+      "id": "quran_049",
+      "conceptId": "quran_quotation_context",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ শুধু কুরআন ১০৭:৪ উদ্ধৃত করে দাবি করেন, কুরআন সালাত আদায়কারী সবাইকে নিন্দা করে। এই পাঠের মূল সমস্যা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরবর্তী আয়াতগুলোতে উদাসীনতা, লোকদেখানো আচরণ ও ছোট সাহায্য আটকে রাখার বর্ণনা রয়েছে।"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতটিতে সালাতের কোনো উল্লেখই নেই।"
+        },
+        {
+          "id": "c",
+          "text": "পরবর্তী আয়াতগুলো সব ধরনের সালাত নিষিদ্ধ বলেছে।"
+        },
+        {
+          "id": "d",
+          "text": "চতুর্থ আয়াতের পরে সূরায় আর কোনো ব্যাখ্যা নেই।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-মাউনের ১০৭:৪–৭ একসঙ্গে পড়তে হয়। শুরুর সতর্কবাণী আলাদা করলে পরের আয়াতগুলোতে দেওয়া বিবরণ বাদ পড়ে যায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "4-7",
+          "label": "কুরআন ১০৭:৪-৭",
+          "url": "https://quran.com/107/4-7"
+        }
+      ]
+    },
+    {
+      "id": "quran_050",
+      "conceptId": "quran_clear_verses",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ নিজের পূর্বনির্ধারিত ইচ্ছাকে সমর্থন করতে একটি অস্পষ্ট অংশ বেছে নেন এবং সুস্পষ্ট আয়াত বিবেচনা করতে অস্বীকার করেন। কুরআন ৩:৭-এর কোন সতর্কতা এখানে প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোনো ব্যাখ্যার পক্ষে তীব্র অনুভূতি থাকলেই তা সঠিক হয়।"
+        },
+        {
+          "id": "b",
+          "text": "ফিতনা সৃষ্টির জন্য বা কাঙ্ক্ষিত ব্যাখ্যা চাপাতে অস্পষ্টতার পেছনে চলা নিন্দিত।"
+        },
+        {
+          "id": "c",
+          "text": "কেবল অস্পষ্ট আয়াতগুলোরই ধর্মীয় মূল্য রয়েছে।"
+        },
+        {
+          "id": "d",
+          "text": "সুস্পষ্ট আয়াত নিজের পছন্দের বিরুদ্ধে গেলে সরিয়ে রাখা যায়।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আলে ইমরানের ৩:৭ আয়াতে অস্পষ্ট অংশের অপব্যবহার থেকে সতর্ক করা হয়েছে। এই প্রশ্নে আয়াতের কোথায় বিরতি দিতে হবে, সে বিষয়ে আলেমদের মতগুলোর মধ্যে কোনো একটি বেছে নিতে হচ্ছে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "7",
+          "label": "কুরআন ৩:৭",
+          "url": "https://quran.com/3/7"
+        }
+      ]
+    },
+    {
+      "id": "quran_051",
+      "conceptId": "quran_gradual_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ৯৭:১-এ লাইলাতুল কদরে নাজিলের কথা এবং ১৭:১০৬-এ পর্যায়ক্রমে নাজিলের কথা রয়েছে। প্রাথমিকভাবে কোন সিদ্ধান্তটি সবচেয়ে সতর্ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এক রাতের উল্লেখ প্রমাণ করে, নবী (সা.) এক বৈঠকে সম্পূর্ণ কুরআন প্রকাশ্যে পাঠ করেছিলেন।"
+        },
+        {
+          "id": "b",
+          "text": "পর্যায়ক্রমে নাজিলের উল্লেখ প্রমাণ করে, লাইলাতুল কদরের সঙ্গে ওহির কোনো সম্পর্ক নেই।"
+        },
+        {
+          "id": "c",
+          "text": "দুটি বিবরণই বিবেচনা করতে হবে; নিজের ধারণা বজায় রাখতে কোনো আয়াত বাদ দেওয়া যাবে না।"
+        },
+        {
+          "id": "d",
+          "text": "পাঠককে একটি আয়াত সত্য এবং অন্যটি মিথ্যা বলে বেছে নিতে হবে।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতগুলোতে কুরআন নাজিল ও পর্যায়ক্রমিক ওহির বিবরণ রয়েছে। প্রমাণহীন ‘একটি অথবা অন্যটি’ ধারণায় বাধ্য না করে এগুলো একসঙ্গে অধ্যয়ন করা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "কুরআন ৯৭:১",
+          "url": "https://quran.com/97/1"
+        },
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "106",
+          "label": "কুরআন ১৭:১০৬",
+          "url": "https://quran.com/17/106"
+        }
+      ]
+    },
+    {
+      "id": "quran_052",
+      "conceptId": "quran_abrogation_claims",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:১০৬-এ কোনো ওহি রহিত বা প্রতিস্থাপনের আলোচনা আছে। শুধু এ কারণে কি পাঠক নিজের অপছন্দের যেকোনো নির্দেশকে রহিত ঘোষণা করতে পারেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ; কোনো নির্দেশ অপছন্দ হওয়াই তা রহিত হওয়ার যথেষ্ট প্রমাণ।"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ; অনলাইনের জনপ্রিয় মত স্বয়ংক্রিয়ভাবে রহিত হওয়া প্রতিষ্ঠা করে।"
+        },
+        {
+          "id": "c",
+          "text": "না; আয়াতটি অস্বীকার করে যে আল্লাহ কোনো ওহি প্রতিস্থাপন করতে পারেন।"
+        },
+        {
+          "id": "d",
+          "text": "না; ব্যক্তিগত পছন্দ দিয়ে নির্দিষ্ট কোনো নির্দেশ রহিত হওয়ার দাবি প্রতিষ্ঠার অনুমতি আয়াতটি দেয় না।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-বাকারার ২:১০৬ আয়াতে ওহির ওপর আল্লাহর কর্তৃত্বের আলোচনা আছে। একটি বিধান অন্যটিকে রহিত করেছে—এমন নির্দিষ্ট দাবিতে প্রমাণ দরকার, ব্যক্তিগত পছন্দ যথেষ্ট নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "106",
+          "label": "কুরআন ২:১০৬",
+          "url": "https://quran.com/2/106"
+        }
+      ]
+    },
+    {
+      "id": "quran_053",
+      "conceptId": "quran_first_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "মুসহাফে প্রথমে আছে বলেই আল-ফাতিহাকে প্রথম নাজিল হওয়া অংশ ধরে নেওয়া ভুল কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লিখিত বিন্যাস ও নাজিলের ক্রম আলাদা; প্রথম ওহির বর্ণনা আল-আলাকের দিকে নির্দেশ করে।"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি বইয়ের প্রথম পাতায় তার প্রাচীনতম ঐতিহাসিক ঘটনা থাকতেই হবে।"
+        },
+        {
+          "id": "c",
+          "text": "আল-ফাতিহা কুরআনের অংশ নয়।"
+        },
+        {
+          "id": "d",
+          "text": "প্রথম ওহির বর্ণনায় আন-নাসকে চিহ্নিত করা হয়েছে।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা তালিকা আল-ফাতিহা দিয়ে শুরু হলেও সহিহ বুখারি ৩-এ আল-আলাক থেকে প্রথম ওহির বিবরণ রয়েছে। এগুলো দুই ধরনের ক্রমের বিষয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "quran_054",
+      "conceptId": "quran_messenger_explanation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ বলেন, ওহি ব্যাখ্যায় রাসুলের কোনো ভূমিকা কুরআন দেয়নি। কোন অংশটি এই দাবিকে সরাসরি প্রশ্নবিদ্ধ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআন ১২:৪, যেখানে ইউসুফ (আ.)-এর স্বপ্নের কথা আছে।"
+        },
+        {
+          "id": "b",
+          "text": "কুরআন ১৬:৪৪, যেখানে মানুষের প্রতি নাজিল হওয়া বিষয় ব্যাখ্যার দায়িত্ব তাঁকে দেওয়া হয়েছে।"
+        },
+        {
+          "id": "c",
+          "text": "কুরআন ১৮:৮৩, যেখানে যুলকারনাইনের প্রসঙ্গ শুরু হয়েছে।"
+        },
+        {
+          "id": "d",
+          "text": "কুরআন ৯৭:৩, যেখানে লাইলাতুল কদরের মর্যাদার কথা আছে।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আন-নাহলের ১৬:৪৪ আয়াতে যিকর নাজিলের সঙ্গে রাসুলের মাধ্যমে তা মানুষের কাছে ব্যাখ্যা করার কথা স্পষ্টভাবে যুক্ত হয়েছে, যাতে তারা চিন্তা করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "44",
+          "label": "কুরআন ১৬:৪৪",
+          "url": "https://quran.com/16/44"
+        }
+      ]
+    },
+    {
+      "id": "quran_055",
+      "conceptId": "quran_lessons_in_narratives",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "একজন গল্পকার কুরআনিক ঘটনায় বানানো সংলাপ যোগ করে তা আল্লাহর নাজিল করা বাণী হিসেবে উপস্থাপন করেন। কোন পার্থক্যটি জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উৎসাহব্যঞ্জক শিক্ষা থাকলেই বানানো কথা ওহি হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "শ্রোতারা উপভোগ করলেই বিবরণ কুরআনের অংশ হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "শিক্ষামূলক উদাহরণ ও কুরআন আসলে যা বলেছে—এ দুটির পার্থক্য স্পষ্ট রাখা"
+        },
+        {
+          "id": "d",
+          "text": "কোনো নবীকে ঘিরে যেকোনো সংলাপ কুরআনে থাকতেই হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা ইউসুফের ১২:১১১ আয়াতে ওহির বিবরণকে সত্য ও পথনির্দেশ হিসেবে তুলে ধরা হয়েছে। উপকারী শিক্ষা থাকলেই বর্ণনাকারীর সংযোজন কুরআনের অংশ হয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "111",
+          "label": "কুরআন ১২:১১১",
+          "url": "https://quran.com/12/111"
+        }
+      ]
+    },
+    {
+      "id": "quran_056",
+      "conceptId": "quran_responsibility_and_capacity",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ কুরআন ২:২৮৬ দিয়ে দাবি করেন, মুমিন কখনো ক্লান্ত হবেন না বা সাহায্যের প্রয়োজন হবে না। কোন উত্তরটি সবচেয়ে সতর্ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতটি বলেছে, কারও সাহায্য চাওয়া নিষিদ্ধ।"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতটি প্রত্যেক মুমিনকে সীমাহীন শারীরিক শক্তির প্রতিশ্রুতি দেয়।"
+        },
+        {
+          "id": "c",
+          "text": "আয়াতটি সামর্থ্য বিবেচনায় অসুস্থতা উপেক্ষা করতে বলে।"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতটি সামর্থ্য অনুযায়ী দায়িত্বের কথা বলে; মানুষ কখনো ক্লান্ত হবে না বা সহায়তা চাইবে না—এমন প্রতিশ্রুতি দেয় না।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-বাকারার ২:২৮৬ আয়াতে আল্লাহ কারও সামর্থ্যের বাইরে বোঝা দেন না বলা হয়েছে। এ থেকে ক্লান্তি বা সহায়তার প্রয়োজন অসম্ভব—এমন দাবি করা উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "286",
+          "label": "কুরআন ২:২৮৬",
+          "url": "https://quran.com/2/286"
+        }
+      ]
+    },
+    {
+      "id": "quran_057",
+      "conceptId": "quran_identifying_addressees",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ কুরআন ৩৩:৩২ পড়ে শুরুতে নবী (সা.)-এর স্ত্রীদের সম্বোধন উপেক্ষা করেন। প্রতিটি বিষয় সবার ক্ষেত্রে প্রয়োগের আগে কী দেখা দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কাদের সম্বোধন করা হয়েছে এবং আশপাশের অংশে নির্দেশটি কীভাবে এসেছে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু আয়াতে মনে রাখার মতো কোনো বাক্য আছে কি না"
+        },
+        {
+          "id": "c",
+          "text": "পাঠক নির্দেশটি সবার ক্ষেত্রে প্রযোজ্য করতে চান কি না"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মুদ্রিত পাতায় আয়াতটির অবস্থান"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-আহযাবের ৩৩:৩২ আয়াতে নবী (সা.)-এর স্ত্রীদের স্পষ্টভাবে সম্বোধন করা হয়েছে। আরও ব্যাপক প্রয়োগ সম্পর্কে ব্যাখ্যামূলক দাবি করার আগে সম্বোধিত ব্যক্তি ও প্রসঙ্গ চিহ্নিত করা জরুরি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "32-34",
+          "label": "কুরআন ৩৩:৩২-৩৪",
+          "url": "https://quran.com/33/32-34"
+        }
+      ]
+    },
+    {
+      "id": "quran_058",
+      "conceptId": "quran_oaths_distinction",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "প্রতিটি অসতর্ক উচ্চারণের ফল এক—এই সিদ্ধান্ত এড়াতে কুরআন ৫:৮৯-এর কোন পার্থক্যটি জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঘরে ও বাইরে করা শপথের পার্থক্য"
+        },
+        {
+          "id": "b",
+          "text": "অনিচ্ছাকৃত শপথ ও ইচ্ছাকৃতভাবে করা শপথের পার্থক্য"
+        },
+        {
+          "id": "c",
+          "text": "ধনী ও দরিদ্র বক্তার পার্থক্য"
+        },
+        {
+          "id": "d",
+          "text": "ছোট ও বড় বাক্যের পার্থক্য"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আল-মায়িদার ৫:৮৯ আয়াতে অনিচ্ছাকৃত ও ইচ্ছাকৃত শপথের পার্থক্য করা হয়েছে, এরপর কাফফারার আলোচনা এসেছে। ব্যক্তিগত নির্দিষ্ট ঘটনার জন্য এই কুইজের চেয়ে বেশি তথ্য দরকার।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "89",
+          "label": "কুরআন ৫:৮৯",
+          "url": "https://quran.com/5/89"
+        }
+      ]
+    },
+    {
+      "id": "quran_059",
+      "conceptId": "quran_scholarly_humility",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ২০:১১৪ পড়ে একজন শিক্ষার্থী মনে করেন, কিছু জ্ঞান অর্জনের পরে আর শেখার প্রয়োজন নেই। আয়াতটির কোন বিষয় এই ধারণাকে প্রশ্ন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতটি বলেছে, ওহি বোঝায় জ্ঞানের কোনো ভূমিকা নেই।"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতটি সব শিক্ষার্থীকে সমান জ্ঞানী বলেছে।"
+        },
+        {
+          "id": "c",
+          "text": "নবী (সা.)-কে তাঁর রবের কাছে জ্ঞান বৃদ্ধির দোয়া করতে বলা হয়েছে।"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতটি বলেছে, অনিশ্চয়তা সব সময় লুকাতে হবে।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা ত্বহার ২০:১১৪ আয়াতে জ্ঞান বৃদ্ধির দোয়া রয়েছে। এটি নিজেকে সম্পূর্ণ জ্ঞানী দাবি করার বদলে বিনয় ও শেখা চালিয়ে যাওয়ার শিক্ষা দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "কুরআন ২০:১১৪",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "quran_060",
+      "conceptId": "quran_hour_date_claim",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ দাবি করেন, কুরআনের একটি আয়াত থেকে তিনি কিয়ামতের সঠিক ক্যালেন্ডার-তারিখ জেনেছেন। কুরআন ৭:১৮৭-এর কোন নীতি দিয়ে দাবিটি সরাসরি যাচাই করা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে জনপ্রিয় ভবিষ্যদ্বাণীই এর সময় নির্ধারণ করে।"
+        },
+        {
+          "id": "b",
+          "text": "আরবি জানলেই যে কেউ স্বয়ংক্রিয়ভাবে এর তারিখ জানে।"
+        },
+        {
+          "id": "c",
+          "text": "প্রত্যেক প্রজন্মের আলেমরা এর তারিখ নির্ধারণ করেন।"
+        },
+        {
+          "id": "d",
+          "text": "এর সময়ের জ্ঞান আল্লাহর কাছেই রয়েছে।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-আরাফের ৭:১৮৭ আয়াতে কিয়ামতের সময়ের জ্ঞান আল্লাহর কাছে থাকার কথা এবং এর আকস্মিক আগমনের কথা এসেছে। তারিখ জানার দাবি স্বয়ংক্রিয়ভাবে মেনে না নিয়ে যাচাই করা দরকার।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "187",
+          "label": "কুরআন ৭:১৮৭",
+          "url": "https://quran.com/7/187"
+        }
+      ]
+    }
+  ]
+}

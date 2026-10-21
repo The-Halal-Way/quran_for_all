@@ -4523,4 +4523,338 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get kidsBooksHadithDescription => 'Explore 40 hadiths through stories for children.';
+
+  @override
+  String get quizAssessmentTitle => 'Islamic Knowledge Assessment';
+
+  @override
+  String get quizDashboardSubtitle => 'Reflect on what you know. Discover what to revisit.';
+
+  @override
+  String get quizDashboardAction => 'Choose your learning path';
+
+  @override
+  String get quizEyebrow => 'A MOMENT TO REFLECT';
+
+  @override
+  String get quizIntroTitle => 'Let curiosity lead the way';
+
+  @override
+  String get quizIntroDescription => 'A fresh selection across Islamic subjects, with explanations to explore after you finish.';
+
+  @override
+  String get quizSampleNotice => 'This result describes your performance on these sampled questions only. It does not measure faith, piety, or complete Islamic knowledge.';
+
+  @override
+  String get quizPreviewNotice => 'Development preview · these question banks are awaiting editorial and scholarly review.';
+
+  @override
+  String get quizStart => 'Begin assessment';
+
+  @override
+  String get quizResume => 'Continue your assessment';
+
+  @override
+  String get quizDiscard => 'Discard attempt';
+
+  @override
+  String get quizDiscardTitle => 'Discard this attempt?';
+
+  @override
+  String get quizDiscardMessage => 'Your current answers will be left unfinished. Questions you have already seen remain in your question history.';
+
+  @override
+  String get quizSubjects => 'Subjects';
+
+  @override
+  String get quizQuestions => 'Questions';
+
+  @override
+  String get quizUntimed => 'No time limit';
+
+  @override
+  String get quizQuestionMix => 'Your question mix';
+
+  @override
+  String get quizPerSubject => 'From every subject';
+
+  @override
+  String get quizHistory => 'Past attempts';
+
+  @override
+  String get quizHistoryEmpty => 'Your completed assessments will appear here.';
+
+  @override
+  String get quizNotSure => 'I’m not sure';
+
+  @override
+  String get quizNext => 'Next question';
+
+  @override
+  String get quizPrevious => 'Previous';
+
+  @override
+  String get quizSkip => 'Skip for now';
+
+  @override
+  String get quizClear => 'Clear response';
+
+  @override
+  String get quizSubmit => 'Finish assessment';
+
+  @override
+  String get quizSubmitTitle => 'Finish with unanswered questions?';
+
+  @override
+  String get quizSubmitMessage => 'Unanswered questions will be included in your results as unanswered. You can return to them before finishing.';
+
+  @override
+  String get quizSubmitAnyway => 'Finish and view results';
+
+  @override
+  String get quizKeepGoing => 'Keep answering';
+
+  @override
+  String get quizNavigator => 'Question navigator';
+
+  @override
+  String get quizSaved => 'Progress saved on this device';
+
+  @override
+  String get quizSaving => 'Saving your progress…';
+
+  @override
+  String get quizPreparing => 'Preparing your questions…';
+
+  @override
+  String get quizLoading => 'Opening your assessment…';
+
+  @override
+  String get quizResultsTitle => 'Your sampled results';
+
+  @override
+  String get quizCorrect => 'Correct';
+
+  @override
+  String get quizIncorrect => 'Incorrect';
+
+  @override
+  String get quizUnknown => 'Not sure';
+
+  @override
+  String get quizUnanswered => 'Unanswered';
+
+  @override
+  String get quizSubjectBreakdown => 'By subject';
+
+  @override
+  String get quizDifficultyBreakdown => 'By difficulty';
+
+  @override
+  String get quizReview => 'Explore the explanations';
+
+  @override
+  String get quizReviewTitle => 'Review & reflect';
+
+  @override
+  String get quizRetake => 'Try a new selection';
+
+  @override
+  String get quizBackToOverview => 'Back to overview';
+
+  @override
+  String get quizYourAnswer => 'Your response';
+
+  @override
+  String get quizCorrectAnswer => 'Correct answer';
+
+  @override
+  String get quizExplanation => 'Why this answer';
+
+  @override
+  String get quizReferences => 'References';
+
+  @override
+  String get quizFoundation => 'Foundation';
+
+  @override
+  String get quizIntermediate => 'Intermediate';
+
+  @override
+  String get quizAdvanced => 'Advanced';
+
+  @override
+  String get quizBeliefs => 'Beliefs & Foundations';
+
+  @override
+  String get quizQuran => 'Quran Knowledge';
+
+  @override
+  String get quizSeerah => 'Seerah';
+
+  @override
+  String get quizHadith => 'Hadith Knowledge';
+
+  @override
+  String get quizWorship => 'Everyday Worship';
+
+  @override
+  String get quizCharacter => 'Character & Conduct';
+
+  @override
+  String get quizErrorTitle => 'Assessment unavailable';
+
+  @override
+  String get quizErrorConfig => 'The assessment settings are missing or unsupported. Your saved attempts have been kept.';
+
+  @override
+  String get quizErrorAssets => 'The question files are missing or inconsistent. Please retry after updating the app.';
+
+  @override
+  String get quizErrorTranslation => 'The selected question language is unavailable. Your saved answers and progress have been kept.';
+
+  @override
+  String get quizErrorInsufficient => 'There are not enough distinct concepts to meet this assessment’s subject and question-mix quotas.';
+
+  @override
+  String get quizErrorStorage => 'Your latest action could not be saved. Please retry it before leaving the assessment.';
+
+  @override
+  String get quizErrorSaved => 'A saved assessment could not be read safely. No saved data has been deleted.';
+
+  @override
+  String get quizErrorReview => 'These question banks are awaiting editorial and scholarly review before publication.';
+
+  @override
+  String get quizErrorCooldown => 'A new assessment is not available yet. You can still explore your saved results.';
+
+  @override
+  String get quizRetry => 'Try again';
+
+  @override
+  String get quizLanguage => 'Assessment language';
+
+  @override
+  String get quizReusedNotice => 'Some previously seen questions were reused to keep the configured subject and question balance. Distinct concepts are preserved.';
+
+  @override
+  String get quizRetakeDisabled => 'New attempts are disabled in the current assessment settings.';
+
+  @override
+  String get quizTimeRemaining => 'Time remaining';
+
+  @override
+  String get quizTimeExpired => 'The time limit has ended.';
+
+  @override
+  String get quizOpenLinkError => 'This reference could not be opened.';
+
+  @override
+  String quizProgress(int current, int total) {
+    final intl.NumberFormat currentNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String currentString = currentNumberFormat.format(current);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return 'Question $currentString of $totalString';
+  }
+
+  @override
+  String quizAnsweredCount(int answered, int total) {
+    final intl.NumberFormat answeredNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String answeredString = answeredNumberFormat.format(answered);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return '$answeredString of $totalString responses recorded';
+  }
+
+  @override
+  String quizCorrectOf(int correct, int total) {
+    final intl.NumberFormat correctNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String correctString = correctNumberFormat.format(correct);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return '$correctString of $totalString correct';
+  }
+
+  @override
+  String quizQuota(int count, String difficulty) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    return '$countString $difficulty';
+  }
+
+  @override
+  String quizAvailableAfter(String date) {
+    return 'New selection available after $date';
+  }
+
+  @override
+  String get quizSelectionEyebrow => 'YOUR LEARNING JOURNEY';
+
+  @override
+  String get quizSelectionTitle => 'Find your starting point';
+
+  @override
+  String get quizSelectionDescription => 'Choose a learning group and level, then select your question language before you begin.';
+
+  @override
+  String get quizAudienceKids => 'Kids';
+
+  @override
+  String get quizAudienceGeneral => 'General Learners';
+
+  @override
+  String get quizAudienceEducated => 'Islamically Educated';
+
+  @override
+  String get quizAudienceKidsDescription => 'Small steps for young, curious minds.';
+
+  @override
+  String get quizAudienceGeneralDescription => 'Explore the foundations and build on what you know.';
+
+  @override
+  String get quizAudienceEducatedDescription => 'For learners with a background in Islamic studies.';
+
+  @override
+  String get quizLevelBeginner => 'Beginner';
+
+  @override
+  String get quizLevelPro => 'Pro';
+
+  @override
+  String get quizLevelAvailable => 'Explore';
+
+  @override
+  String get quizLevelSoon => 'Coming soon';
+
+  @override
+  String get quizComingSoonMessage => 'Questions haven’t been added for this level yet. You can explore another level in the meantime.';
+
+  @override
+  String get quizBrowseLevels => 'Browse levels';
+
+  @override
+  String get quizLanguageBeforeStart => 'Choose your question language. It cannot be changed after you begin.';
+
+  @override
+  String get quizLanguageLocked => 'Language is fixed for this attempt, including results and review.';
+
+  @override
+  String get quizStyleFamiliarFact => 'Familiar facts';
+
+  @override
+  String get quizStyleBroaderBasic => 'Broader basics';
+
+  @override
+  String get quizStyleEverydayApplication => 'Everyday application';
+
+  @override
+  String get quizStyleBreakdown => 'By question style';
+
+  @override
+  String get quizStylesNotice => 'Question styles describe the kind of task, not its difficulty. All questions belong to your selected level.';
 }

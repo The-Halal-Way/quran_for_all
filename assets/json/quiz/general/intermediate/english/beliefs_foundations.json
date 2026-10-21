@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "mid",
+  "categoryId": "beliefs_foundations",
+  "title": "Beliefs & Foundations",
+  "description": "General User → Mid. Familiar facts, broader basics and short everyday applications that build on Beginner knowledge of faith. Focuses on meanings and straightforward connections, without advanced theological debates or reference-number memorization. Scores reflect knowledge, not a judgment of faith.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding required across all question styles. Styles are not difficulty levels. Requires more understanding and simple connections than Beginner, without specialist study. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Everyday scenarios apply the cited principles. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_mid_beliefs_001",
+      "conceptId": "beliefs_tawhid",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does tawhid mean for a Muslim's worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Directing worship to Allah alone"
+        },
+        {
+          "id": "b",
+          "text": "Worshipping Allah and other beings together"
+        },
+        {
+          "id": "c",
+          "text": "Honoring every powerful being through worship"
+        },
+        {
+          "id": "d",
+          "text": "Treating all objects of worship as equal"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Tawhid includes worshipping Allah alone, the central call of His messengers.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "Quran 16:36",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_002",
+      "conceptId": "beliefs_worship_purpose",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What purpose for humans and jinn is stated in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To become independent of Allah"
+        },
+        {
+          "id": "b",
+          "text": "To worship Allah"
+        },
+        {
+          "id": "c",
+          "text": "To seek wealth as life's only goal"
+        },
+        {
+          "id": "d",
+          "text": "To avoid every responsibility"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran identifies worship of Allah as the purpose of human and jinn creation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "56",
+          "label": "Quran 51:56",
+          "url": "https://quran.com/51/56"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_003",
+      "conceptId": "beliefs_ihsan",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which description expresses ihsan in worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worshipping carefully only when people watch"
+        },
+        {
+          "id": "b",
+          "text": "Judging worship solely by its public appearance"
+        },
+        {
+          "id": "c",
+          "text": "Worshipping with awareness that Allah sees you"
+        },
+        {
+          "id": "d",
+          "text": "Assuming worship matters only in a mosque"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "In the hadith of Jibril, ihsan involves worship with deep awareness of Allah's sight.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_004",
+      "conceptId": "beliefs_shirk",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is shirk in the context of worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning about Allah's creation"
+        },
+        {
+          "id": "b",
+          "text": "Asking someone for ordinary practical help"
+        },
+        {
+          "id": "c",
+          "text": "Respecting one's parents"
+        },
+        {
+          "id": "d",
+          "text": "Associating partners with Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran identifies associating partners with Allah as a grave sin. Ordinary human assistance is not itself worship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "48",
+          "label": "Quran 4:48",
+          "url": "https://quran.com/4/48"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_005",
+      "conceptId": "beliefs_allah_unique",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about Allah's relationship to His creation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nothing is comparable to Him"
+        },
+        {
+          "id": "b",
+          "text": "He is simply the strongest created being"
+        },
+        {
+          "id": "c",
+          "text": "He depends on creation for knowledge"
+        },
+        {
+          "id": "d",
+          "text": "His nature can be measured like a creature's"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah is unlike His creation; the verse also affirms His hearing and sight.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_006",
+      "conceptId": "beliefs_allah_independent",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which belief reflects Surah al-Ikhlas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah needs others to sustain Him"
+        },
+        {
+          "id": "b",
+          "text": "Allah is needed by all and depends on none"
+        },
+        {
+          "id": "c",
+          "text": "Allah has a parent who created Him"
+        },
+        {
+          "id": "d",
+          "text": "Allah has an equal who shares His divinity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The surah teaches Allah's oneness, independence and uniqueness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1-4",
+          "label": "Quran 112:1-4",
+          "url": "https://quran.com/112/1-4"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_007",
+      "conceptId": "beliefs_recording_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What duty of noble recording angels is mentioned in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deciding independently what Allah must know"
+        },
+        {
+          "id": "b",
+          "text": "Creating people's choices"
+        },
+        {
+          "id": "c",
+          "text": "Recording what people do"
+        },
+        {
+          "id": "d",
+          "text": "Choosing which humans deserve worship"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran describes noble recording angels who know what people do.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "Quran 82:10-12",
+          "url": "https://quran.com/82/10-12"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_008",
+      "conceptId": "beliefs_angels_obedience",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How are the angels mentioned in this verse described in relation to Allah's commands?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They decide which divine commands to reject"
+        },
+        {
+          "id": "b",
+          "text": "They require human worship to obey"
+        },
+        {
+          "id": "c",
+          "text": "They compete with Allah for authority"
+        },
+        {
+          "id": "d",
+          "text": "They obey what Allah commands"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse describes angels who do not disobey Allah and carry out His commands.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "6",
+          "label": "Quran 66:6",
+          "url": "https://quran.com/66/6"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_009",
+      "conceptId": "beliefs_iblis",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to the Quran, Iblis was one of which creation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The jinn"
+        },
+        {
+          "id": "b",
+          "text": "The human prophets"
+        },
+        {
+          "id": "c",
+          "text": "The divine beings"
+        },
+        {
+          "id": "d",
+          "text": "The recording angels"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran explicitly identifies Iblis as one of the jinn.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "Quran 18:50",
+          "url": "https://quran.com/18/50"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_010",
+      "conceptId": "beliefs_zabur",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To which prophet was the Zabur given?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Musa (Moses)"
+        },
+        {
+          "id": "b",
+          "text": "Dawud (David)"
+        },
+        {
+          "id": "c",
+          "text": "Isa (Jesus)"
+        },
+        {
+          "id": "d",
+          "text": "Yusuf (Joseph)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran names Dawud as the prophet given the Zabur.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "163",
+          "label": "Quran 4:163",
+          "url": "https://quran.com/4/163"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_011",
+      "conceptId": "beliefs_injil",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To which prophet was the Injil originally given?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nuh (Noah)"
+        },
+        {
+          "id": "b",
+          "text": "Dawud (David)"
+        },
+        {
+          "id": "c",
+          "text": "Isa (Jesus)"
+        },
+        {
+          "id": "d",
+          "text": "Yunus (Jonah)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran states that Allah gave Isa the Injil as guidance and light.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "Quran 5:46",
+          "url": "https://quran.com/5/46"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_012",
+      "conceptId": "beliefs_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does belief in Allah's messengers require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accepting only messengers from one's own people"
+        },
+        {
+          "id": "b",
+          "text": "Rejecting earlier messengers because Muhammad came later"
+        },
+        {
+          "id": "c",
+          "text": "Treating messengers as gods"
+        },
+        {
+          "id": "d",
+          "text": "Accepting all of His true messengers"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Muslims affirm all of Allah's messengers rather than accepting some and denying others.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_013",
+      "conceptId": "beliefs_final_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Muhammad being the final prophet mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No new prophet will come after him"
+        },
+        {
+          "id": "b",
+          "text": "Every later religious teacher becomes a prophet"
+        },
+        {
+          "id": "c",
+          "text": "His message has already been replaced"
+        },
+        {
+          "id": "d",
+          "text": "He was the only prophet ever sent"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran calls Muhammad the seal of the prophets; Muslims believe prophethood concludes with him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "Quran 33:40",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_014",
+      "conceptId": "beliefs_prophets_human",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does the Quran describe Prophet Muhammad in relation to humanity and revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A divine being who needs no revelation"
+        },
+        {
+          "id": "b",
+          "text": "A human messenger receiving revelation"
+        },
+        {
+          "id": "c",
+          "text": "An angel pretending to be human"
+        },
+        {
+          "id": "d",
+          "text": "A person whose message came only from his own opinions"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet is human and honored with revelation; worship belongs to Allah alone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "Quran 18:110",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_015",
+      "conceptId": "beliefs_resurrection",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What argument does the Quran give for Allah's power to restore life?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Life can return only if people remember every bone"
+        },
+        {
+          "id": "b",
+          "text": "Resurrection depends on worldly wealth"
+        },
+        {
+          "id": "c",
+          "text": "The One who created life first can restore it"
+        },
+        {
+          "id": "d",
+          "text": "Only those whose bodies remain intact can rise"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran points to the first creation as evidence of Allah's power to resurrect.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 36,
+          "ayahs": "78-79",
+          "label": "Quran 36:78-79",
+          "url": "https://quran.com/36/78-79"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_016",
+      "conceptId": "beliefs_hour_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who has knowledge of the exact time of the Last Hour?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any person who studies enough calendars"
+        },
+        {
+          "id": "b",
+          "text": "Every religious teacher"
+        },
+        {
+          "id": "c",
+          "text": "Anyone who reports a vivid dream"
+        },
+        {
+          "id": "d",
+          "text": "Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran places knowledge of the Hour's appointed time with Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "187",
+          "label": "Quran 7:187",
+          "url": "https://quran.com/7/187"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_017",
+      "conceptId": "beliefs_qadar",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does belief in qadar affirm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nothing happens outside Allah's decree"
+        },
+        {
+          "id": "b",
+          "text": "Events exist beyond Allah's knowledge and authority"
+        },
+        {
+          "id": "c",
+          "text": "Human planning guarantees every outcome"
+        },
+        {
+          "id": "d",
+          "text": "People can control the unseen by guessing"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran teaches that Allah created everything according to a decree and measure.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 54,
+          "ayahs": "49",
+          "label": "Quran 54:49",
+          "url": "https://quran.com/54/49"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_018",
+      "conceptId": "beliefs_faith_articles",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which belongs to the articles of faith rather than the list of five pillars of Islam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fasting Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Belief in the angels"
+        },
+        {
+          "id": "c",
+          "text": "Paying zakah"
+        },
+        {
+          "id": "d",
+          "text": "Performing Hajj when able"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith distinguishes the six articles of faith from the five pillars of Islam while teaching both together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_019",
+      "conceptId": "beliefs_quran_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How is the Quran described in relation to earlier scripture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rejecting the idea that Allah ever revealed books before"
+        },
+        {
+          "id": "b",
+          "text": "Being only a record of one tribe's customs"
+        },
+        {
+          "id": "c",
+          "text": "Confirming earlier revelation and serving as a criterion over it"
+        },
+        {
+          "id": "d",
+          "text": "Having no role in guidance"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran confirms earlier revelation and serves as an authoritative standard over it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "48",
+          "label": "Quran 5:48",
+          "url": "https://quran.com/5/48"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_020",
+      "conceptId": "beliefs_personal_accountability",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does personal accountability mean in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A person's family automatically bears every sin they commit"
+        },
+        {
+          "id": "b",
+          "text": "A famous name removes individual responsibility"
+        },
+        {
+          "id": "c",
+          "text": "Wealth allows a person to transfer all blame"
+        },
+        {
+          "id": "d",
+          "text": "No one carries another person's burden of sin"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Each person is accountable for their own deeds; family status does not transfer guilt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_021",
+      "conceptId": "beliefs_tawakkul_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does trusting Allah mean abandoning reasonable effort?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, effort and reliance on Allah belong together"
+        },
+        {
+          "id": "b",
+          "text": "Yes, planning always shows weak faith"
+        },
+        {
+          "id": "c",
+          "text": "Yes, useful action contradicts belief in qadar"
+        },
+        {
+          "id": "d",
+          "text": "Only outcomes, never effort, deserve attention"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran links decision-making with reliance on Allah, and hadith encourages pursuing benefit and seeking His help.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "Quran 3:159",
+          "url": "https://quran.com/3/159"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_022",
+      "conceptId": "beliefs_qadar_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does belief in qadar remove responsibility for our choices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, wrongdoing never needs repentance"
+        },
+        {
+          "id": "b",
+          "text": "No, people remain responsible for their actions"
+        },
+        {
+          "id": "c",
+          "text": "Yes, every choice is automatically approved"
+        },
+        {
+          "id": "d",
+          "text": "Only other people's choices matter"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Belief in Allah's decree does not erase the Quran's teaching about human response and accountability.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 76,
+          "ayahs": "3",
+          "label": "Quran 76:3",
+          "url": "https://quran.com/76/3"
+        },
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_023",
+      "conceptId": "beliefs_trials",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does hardship by itself prove that Allah has rejected a person?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every difficulty proves rejection"
+        },
+        {
+          "id": "b",
+          "text": "Yes, believers are promised a life without loss"
+        },
+        {
+          "id": "c",
+          "text": "No, hardship can be a test"
+        },
+        {
+          "id": "d",
+          "text": "Only wealth can show that faith is accepted"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran tells believers they will face tests involving fear, hunger and loss.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "155",
+          "label": "Quran 2:155",
+          "url": "https://quran.com/2/155"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_024",
+      "conceptId": "beliefs_wealth_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is worldly wealth alone a reliable measure of a person's honor before Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the richest person is always the most righteous"
+        },
+        {
+          "id": "b",
+          "text": "Yes, poverty always means Allah despises someone"
+        },
+        {
+          "id": "c",
+          "text": "Only a person's public lifestyle matters"
+        },
+        {
+          "id": "d",
+          "text": "No, prosperity and restricted provision can both be tests"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "These verses challenge treating wealth as automatic honor or limited provision as automatic humiliation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 89,
+          "ayahs": "15-17",
+          "label": "Quran 89:15-17",
+          "url": "https://quran.com/89/15-17"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_025",
+      "conceptId": "beliefs_repentance_hope",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What attitude toward past sins does the Quran encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hope in Allah's mercy and a sincere return to Him"
+        },
+        {
+          "id": "b",
+          "text": "Despair that makes repentance pointless"
+        },
+        {
+          "id": "c",
+          "text": "Confidence that continuing every sin needs no concern"
+        },
+        {
+          "id": "d",
+          "text": "Assuming only people without a past can repent"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah calls sinners not to despair of His mercy; that hope invites returning to Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "Quran 39:53",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_026",
+      "conceptId": "beliefs_repentance_sincere",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What kind of repentance does the Quran call for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An apology intended only to impress people"
+        },
+        {
+          "id": "b",
+          "text": "Sincere repentance"
+        },
+        {
+          "id": "c",
+          "text": "A performance with no wish to change"
+        },
+        {
+          "id": "d",
+          "text": "Blaming everyone else while defending the wrong"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Repentance should be a sincere turning back to Allah, not an empty outward display.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "Quran 66:8",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_027",
+      "conceptId": "beliefs_hidden_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Allah know deeds that remain hidden from other people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, only public deeds are known"
+        },
+        {
+          "id": "b",
+          "text": "Only if someone records them on a device"
+        },
+        {
+          "id": "c",
+          "text": "Yes, His knowledge includes the hidden and the apparent"
+        },
+        {
+          "id": "d",
+          "text": "Only if the person announces them"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran describes Allah's complete knowledge, including things concealed from us.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "59",
+          "label": "Quran 6:59",
+          "url": "https://quran.com/6/59"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_028",
+      "conceptId": "beliefs_unseen_claims",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can a person independently possess Allah's complete knowledge of the unseen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, if they become popular enough"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if they charge for predictions"
+        },
+        {
+          "id": "c",
+          "text": "Yes, if their guesses sometimes come true"
+        },
+        {
+          "id": "d",
+          "text": "No, complete knowledge of the unseen belongs to Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "People do not independently share Allah's all-encompassing knowledge of the unseen.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "Quran 27:65",
+          "url": "https://quran.com/27/65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_029",
+      "conceptId": "beliefs_small_deeds",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What do the verses about an atom's weight of deeds teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Even small good and evil deeds matter"
+        },
+        {
+          "id": "b",
+          "text": "Only famous deeds are accountable"
+        },
+        {
+          "id": "c",
+          "text": "Small harms never matter"
+        },
+        {
+          "id": "d",
+          "text": "Only deeds witnessed by many people count"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran emphasizes the significance of even very small deeds in accountability.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "Quran 99:7-8",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_030",
+      "conceptId": "beliefs_intentions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why can two outwardly similar good deeds differ in reward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The more expensive clothing always earns more"
+        },
+        {
+          "id": "b",
+          "text": "The intentions behind them can differ"
+        },
+        {
+          "id": "c",
+          "text": "The deed with more photographs must be better"
+        },
+        {
+          "id": "d",
+          "text": "Only the person's age determines the reward"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith teaches the importance of intention; outward resemblance does not tell the whole story.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_031",
+      "conceptId": "beliefs_worship_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "When claiming a specific act as prescribed worship, what matters beyond good intentions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How fashionable the act becomes"
+        },
+        {
+          "id": "b",
+          "text": "Whether it is difficult to perform"
+        },
+        {
+          "id": "c",
+          "text": "A sound basis in the religion's guidance"
+        },
+        {
+          "id": "d",
+          "text": "How many people post about it"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet warned against introducing into the religion what does not belong to it. A specific claim about worship needs a sound basis.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2697",
+          "label": "Sahih al-Bukhari 2697",
+          "url": "https://sunnah.com/bukhari:2697"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_032",
+      "conceptId": "beliefs_worship_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can admiration for a prophet justify worshipping that prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, admiration always makes worship appropriate"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if the prophet is widely loved"
+        },
+        {
+          "id": "c",
+          "text": "Only if the person also gives charity"
+        },
+        {
+          "id": "d",
+          "text": "No, prophets are honored while worship belongs to Allah alone"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Respect for Allah's messengers must remain consistent with worshipping Allah alone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "Quran 18:110",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_033",
+      "conceptId": "beliefs_angels_not_divine",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How should angels be understood in relation to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Honored servants, not divine partners"
+        },
+        {
+          "id": "b",
+          "text": "Equal gods who share His rule"
+        },
+        {
+          "id": "c",
+          "text": "Beings who deserve worship because they are unseen"
+        },
+        {
+          "id": "d",
+          "text": "Sources of authority independent of Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran describes them as honored servants who act according to Allah's command.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "26-27",
+          "label": "Quran 21:26-27",
+          "url": "https://quran.com/21/26-27"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_034",
+      "conceptId": "beliefs_prophets_shared_call",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What fundamental call was shared by Allah's messengers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make every messenger a separate god"
+        },
+        {
+          "id": "b",
+          "text": "Worship Allah and reject false objects of worship"
+        },
+        {
+          "id": "c",
+          "text": "Accept only the customs of one modern nation"
+        },
+        {
+          "id": "d",
+          "text": "Seek wealth regardless of right and wrong"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran describes the common call to worship Allah and turn away from false worship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "Quran 16:36",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_035",
+      "conceptId": "beliefs_shahadah_meaning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which response reflects both parts of the shahadah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Honor Muhammad while rejecting Allah's oneness"
+        },
+        {
+          "id": "b",
+          "text": "Affirm Allah's oneness but deny His messenger"
+        },
+        {
+          "id": "c",
+          "text": "Worship Allah alone and accept Muhammad as His messenger"
+        },
+        {
+          "id": "d",
+          "text": "Treat Muhammad as a partner in divinity"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The testimony affirms Allah's sole right to worship and Muhammad's messengership.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_036",
+      "conceptId": "beliefs_dua_nearness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Allah's nearness in the verse about dua encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assuming He cannot hear ordinary people"
+        },
+        {
+          "id": "b",
+          "text": "Believing only famous people may ask Him"
+        },
+        {
+          "id": "c",
+          "text": "Waiting until one knows every religious rule before asking"
+        },
+        {
+          "id": "d",
+          "text": "Turning to Him in supplication"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah invites His servants to call on Him and respond to His guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_037",
+      "conceptId": "beliefs_faith_obedience",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which response to revelation is modeled by the believers in this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Listening, obeying and seeking forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "Treating guidance only as decoration"
+        },
+        {
+          "id": "c",
+          "text": "Demanding praise before following guidance"
+        },
+        {
+          "id": "d",
+          "text": "Assuming belief removes every need to obey"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse joins belief with obedience, seeking forgiveness and awareness of return to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_038",
+      "conceptId": "beliefs_human_limits",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran teach about our judgment of what benefits us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Everything we dislike must be harmful"
+        },
+        {
+          "id": "b",
+          "text": "Our preferences do not give us complete knowledge"
+        },
+        {
+          "id": "c",
+          "text": "Everything we desire must be good"
+        },
+        {
+          "id": "d",
+          "text": "Our immediate opinion is always wiser than revelation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse reminds us that Allah knows while our knowledge is limited.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "216",
+          "label": "Quran 2:216",
+          "url": "https://quran.com/2/216"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_039",
+      "conceptId": "beliefs_grief_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does feeling sadness or shedding tears necessarily contradict faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, a believer can never feel sorrow"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every tear is rejection of Allah's decree"
+        },
+        {
+          "id": "c",
+          "text": "No, grief can coexist with faith and patient speech"
+        },
+        {
+          "id": "d",
+          "text": "Only people with no faith experience loss"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet wept at his son's death while speaking in a way pleasing to Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "Sahih al-Bukhari 1303",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_040",
+      "conceptId": "beliefs_justice_hereafter",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran teach about Allah's judgment on the Last Day?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A famous family name automatically decides every judgment"
+        },
+        {
+          "id": "b",
+          "text": "Small deeds are always ignored"
+        },
+        {
+          "id": "c",
+          "text": "Human popularity is the final standard"
+        },
+        {
+          "id": "d",
+          "text": "No person will be treated unjustly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran describes just scales and affirms that no soul will be wronged.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "47",
+          "label": "Quran 21:47",
+          "url": "https://quran.com/21/47"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_041",
+      "conceptId": "beliefs_ihsan",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can do a task honestly or cheat while no one is watching. Which thought reflects ihsan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah sees me even when other people do not"
+        },
+        {
+          "id": "b",
+          "text": "Only what people notice has moral importance"
+        },
+        {
+          "id": "c",
+          "text": "Hidden actions cannot affect my accountability"
+        },
+        {
+          "id": "d",
+          "text": "Being alone removes every duty"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Awareness of Allah encourages integrity beyond public appearances.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_042",
+      "conceptId": "beliefs_tawakkul_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are preparing for an important exam. Which approach best reflects tawakkul?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Skip preparation to prove reliance"
+        },
+        {
+          "id": "b",
+          "text": "Prepare carefully, seek Allah's help and entrust the outcome to Him"
+        },
+        {
+          "id": "c",
+          "text": "Assume studying guarantees the exact result you want"
+        },
+        {
+          "id": "d",
+          "text": "Refuse advice because planning shows weak faith"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Responsible preparation and reliance on Allah can be practiced together.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "Quran 3:159",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_043",
+      "conceptId": "beliefs_qadar_response",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A plan fails despite reasonable effort. Which response best fits the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give up all useful effort forever"
+        },
+        {
+          "id": "b",
+          "text": "Insist the past must change because you are upset"
+        },
+        {
+          "id": "c",
+          "text": "Accept Allah's decree and continue pursuing what benefits you"
+        },
+        {
+          "id": "d",
+          "text": "Treat the failure as proof that every future effort is pointless"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith combines useful effort, seeking Allah's help and accepting what has already occurred.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_044",
+      "conceptId": "beliefs_qadar_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You knowingly wronged someone and say, 'It was decreed, so I owe no apology.' What is the better understanding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The statement removes all responsibility"
+        },
+        {
+          "id": "b",
+          "text": "The victim now carries your sin"
+        },
+        {
+          "id": "c",
+          "text": "Believing in qadar makes every action lawful"
+        },
+        {
+          "id": "d",
+          "text": "Qadar does not excuse the wrong; repent and address the harm"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah's decree is not an excuse to avoid repentance or responsibility for harming someone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        },
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "Quran 66:8",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_045",
+      "conceptId": "beliefs_repentance_hope",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend says past sins make returning to Allah pointless. What response reflects the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Encourage sincere repentance and hope in Allah's mercy"
+        },
+        {
+          "id": "b",
+          "text": "Agree that worship can never matter again"
+        },
+        {
+          "id": "c",
+          "text": "Tell them only a perfect past allows repentance"
+        },
+        {
+          "id": "d",
+          "text": "Urge them to continue because change is impossible"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran's call not to despair supports a sincere return to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "Quran 39:53",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_046",
+      "conceptId": "beliefs_repentance_sincere",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone wants to repent but plans to continue the same wrong without concern. What needs to change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the wording of the announcement matters"
+        },
+        {
+          "id": "b",
+          "text": "Repentance should include a sincere desire to turn away from the wrong"
+        },
+        {
+          "id": "c",
+          "text": "More people need to watch the apology"
+        },
+        {
+          "id": "d",
+          "text": "The wrong becomes harmless if it is renamed"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Sincere repentance is more than declaring words while intending to defend the wrongdoing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "Quran 66:8",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_047",
+      "conceptId": "beliefs_small_deeds",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can quietly help someone in a small way. What belief encourages you to do so?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only large public projects count"
+        },
+        {
+          "id": "b",
+          "text": "An unnoticed kindness has no value"
+        },
+        {
+          "id": "c",
+          "text": "Even small good deeds matter to Allah"
+        },
+        {
+          "id": "d",
+          "text": "Good deeds matter only if photographed"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Accountability includes small deeds, so a modest act of good should not be dismissed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "Quran 99:7-8",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_048",
+      "conceptId": "beliefs_hidden_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You returned something honestly and nobody noticed. Which belief remains relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The deed is unknown to Allah until someone reports it"
+        },
+        {
+          "id": "b",
+          "text": "The deed cannot matter without public thanks"
+        },
+        {
+          "id": "c",
+          "text": "Only recorded video can establish that it happened"
+        },
+        {
+          "id": "d",
+          "text": "Allah's knowledge is not limited to what people observe"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah knows actions regardless of whether other people see or praise them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "59",
+          "label": "Quran 6:59",
+          "url": "https://quran.com/6/59"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_049",
+      "conceptId": "beliefs_unseen_claims",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An online account claims independent, certain knowledge of everyone's future. How should you assess that claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reject the claim that this account possesses such knowledge"
+        },
+        {
+          "id": "b",
+          "text": "Accept it if the account has many followers"
+        },
+        {
+          "id": "c",
+          "text": "Accept it if the predictions are expensive"
+        },
+        {
+          "id": "d",
+          "text": "Treat dramatic presentation as proof"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Popularity, payment and confident delivery do not grant a person Allah's knowledge of the unseen.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "Quran 27:65",
+          "url": "https://quran.com/27/65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_050",
+      "conceptId": "beliefs_hour_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A video announces the exact date of the Last Hour. Which response follows the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept it if the video is widely shared"
+        },
+        {
+          "id": "b",
+          "text": "Do not accept the claim; its exact timing is known to Allah"
+        },
+        {
+          "id": "c",
+          "text": "Use the date to abandon all responsibilities"
+        },
+        {
+          "id": "d",
+          "text": "Assume a detailed calculation guarantees certainty"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran does not give people authority to set the Hour's date.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "187",
+          "label": "Quran 7:187",
+          "url": "https://quran.com/7/187"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_051",
+      "conceptId": "beliefs_trials",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A practicing Muslim faces a painful loss. Which conclusion should you avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Believers can face trials"
+        },
+        {
+          "id": "b",
+          "text": "Patience can matter during hardship"
+        },
+        {
+          "id": "c",
+          "text": "The loss proves Allah has rejected them"
+        },
+        {
+          "id": "d",
+          "text": "Support may be needed during difficulty"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Hardship alone does not establish someone's standing before Allah; believers are also tested.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "155",
+          "label": "Quran 2:155",
+          "url": "https://quran.com/2/155"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_052",
+      "conceptId": "beliefs_wealth_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone calls a wealthy person automatically more beloved to Allah than a poor person. What is the better response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Income alone settles the matter"
+        },
+        {
+          "id": "b",
+          "text": "Poverty always proves divine rejection"
+        },
+        {
+          "id": "c",
+          "text": "Expensive possessions guarantee accepted worship"
+        },
+        {
+          "id": "d",
+          "text": "Wealth alone does not establish spiritual rank"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran corrects simplistic judgments based on abundance or restriction of wealth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 89,
+          "ayahs": "15-17",
+          "label": "Quran 89:15-17",
+          "url": "https://quran.com/89/15-17"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_053",
+      "conceptId": "beliefs_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn about a prophet from a people different from yours. What does faith require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respect and belief in every true messenger of Allah"
+        },
+        {
+          "id": "b",
+          "text": "Rejecting him because he is from another people"
+        },
+        {
+          "id": "c",
+          "text": "Accepting only prophets with familiar names"
+        },
+        {
+          "id": "d",
+          "text": "Treating nationality as the test of prophethood"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Belief in Allah's messengers crosses ethnic and national boundaries.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_054",
+      "conceptId": "beliefs_final_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A new teacher claims to be a prophet after Muhammad. Which belief applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A teacher's popularity creates prophethood"
+        },
+        {
+          "id": "b",
+          "text": "Muhammad is the final prophet"
+        },
+        {
+          "id": "c",
+          "text": "A claim is true whenever it sounds inspiring"
+        },
+        {
+          "id": "d",
+          "text": "Every generation must appoint a prophet"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The finality of Muhammad's prophethood rules out new prophetic claimants after him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "Quran 33:40",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_055",
+      "conceptId": "beliefs_intentions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are about to help at a community event. Which intention should you cultivate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Making everyone feel inferior to you"
+        },
+        {
+          "id": "b",
+          "text": "Earning praise regardless of how people are treated"
+        },
+        {
+          "id": "c",
+          "text": "Seeking Allah's pleasure through useful service"
+        },
+        {
+          "id": "d",
+          "text": "Proving that no other volunteer matters"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sincerity gives direction to outwardly good work and guards against showing off.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_056",
+      "conceptId": "beliefs_worship_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A post promises a guaranteed religious reward for a newly prescribed ritual without evidence. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume detailed instructions prove it is prescribed"
+        },
+        {
+          "id": "b",
+          "text": "Accept it because the reward sounds attractive"
+        },
+        {
+          "id": "c",
+          "text": "Add it to the religion because it is popular"
+        },
+        {
+          "id": "d",
+          "text": "Check the religious basis with reliable sources or a qualified teacher"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Specific claims about prescribed worship and rewards need evidence, not just enthusiasm.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2697",
+          "label": "Sahih al-Bukhari 2697",
+          "url": "https://sunnah.com/bukhari:2697"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_057",
+      "conceptId": "beliefs_dua_nearness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You feel too ordinary to ask Allah for help. What does the verse about dua encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Call upon Allah; His invitation includes His servants"
+        },
+        {
+          "id": "b",
+          "text": "Wait until you become famous"
+        },
+        {
+          "id": "c",
+          "text": "Assume only religious leaders can be heard"
+        },
+        {
+          "id": "d",
+          "text": "Avoid dua until you know every scholarly term"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Dua is not reserved for prominent people; Allah invites His servants to turn to Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_058",
+      "conceptId": "beliefs_human_limits",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An outcome disappoints you even though you hoped for it. Which thought reflects humility about knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "My immediate preference proves what must be best"
+        },
+        {
+          "id": "b",
+          "text": "I do not know every consequence, while Allah knows"
+        },
+        {
+          "id": "c",
+          "text": "Every disappointment proves all effort is useless"
+        },
+        {
+          "id": "d",
+          "text": "My limited view is the final measure of wisdom"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Our knowledge of outcomes is limited. Recognizing this can accompany continued responsible effort.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "216",
+          "label": "Quran 2:216",
+          "url": "https://quran.com/2/216"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_059",
+      "conceptId": "beliefs_personal_accountability",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone claims a respected family background removes responsibility for wrongdoing. What principle applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Family reputation transfers every sin elsewhere"
+        },
+        {
+          "id": "b",
+          "text": "An ancestor's status cancels personal duties"
+        },
+        {
+          "id": "c",
+          "text": "Each person is accountable for their own deeds"
+        },
+        {
+          "id": "d",
+          "text": "Only people from unknown families face judgment"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Honor associated with a family does not remove personal accountability.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_060",
+      "conceptId": "beliefs_grief_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A grieving believer cries after a death. Which response reflects the Prophet's example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accuse them of rejecting Allah merely because they cry"
+        },
+        {
+          "id": "b",
+          "text": "Demand that grief end immediately"
+        },
+        {
+          "id": "c",
+          "text": "Tell them faith means never feeling sadness"
+        },
+        {
+          "id": "d",
+          "text": "Offer compassion; tears can coexist with faith"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet's tears show that natural grief need not contradict patience or faith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "Sahih al-Bukhari 1303",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    }
+  ]
+}

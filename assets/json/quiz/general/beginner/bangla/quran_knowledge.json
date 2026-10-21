@@ -1,0 +1,2295 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "quran_knowledge",
+  "title": "কুরআন সম্পর্কে জ্ঞান",
+  "description": "সাধারণ ব্যবহারকারী → প্রাথমিক স্তর। কুরআনের পরিচিত তথ্য, আরও কিছু মৌলিক জ্ঞান ও ছোট দৈনন্দিন পরিস্থিতির মিশ্রণ। সব প্রশ্ন প্রাথমিক স্তরের; সূত্রের নম্বর মুখস্থের প্রয়োজন নেই।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞানের মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় মূল কুরআন-হাদিসের সূত্র মিলিয়ে দেখা হয়েছে; এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_beginner_quran_001",
+      "conceptId": "quran_language",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন কোন ভাষায় নাজিল হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরবি"
+        },
+        {
+          "id": "b",
+          "text": "ফারসি"
+        },
+        {
+          "id": "c",
+          "text": "লাতিন"
+        },
+        {
+          "id": "d",
+          "text": "গ্রিক"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন আরবি ভাষায় নাজিল হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_002",
+      "conceptId": "quran_surah_count",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনে মোট কতটি সূরা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "১০০টি"
+        },
+        {
+          "id": "b",
+          "text": "১১৪টি"
+        },
+        {
+          "id": "c",
+          "text": "১১০টি"
+        },
+        {
+          "id": "d",
+          "text": "১২০টি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে ১১৪টি সূরা রয়েছে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_003",
+      "conceptId": "quran_surah_term",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূরা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এক ধরনের জায়নামাজ"
+        },
+        {
+          "id": "b",
+          "text": "বছরের একটি মাস"
+        },
+        {
+          "id": "c",
+          "text": "কুরআনের একটি অধ্যায়"
+        },
+        {
+          "id": "d",
+          "text": "সালাতের একটি সময়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা হলো কুরআনের একটি অধ্যায়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran Foundation: অধ্যায় ও আয়াতের সূত্রপদ্ধতির নথি",
+          "url": "https://api-docs.quran.com/docs/content_apis_versioned/4.0.0/verses-by-verse-key/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_004",
+      "conceptId": "quran_ayah_term",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের আয়াত বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অধ্যায়ের শিরোনাম"
+        },
+        {
+          "id": "b",
+          "text": "বইয়ের মলাট"
+        },
+        {
+          "id": "c",
+          "text": "এক ধরনের কালি"
+        },
+        {
+          "id": "d",
+          "text": "সূরার ভেতরের একটি বাণী বা পদ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াত হলো সূরার ভেতরের বাণী বা পদ।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran Foundation: অধ্যায় ও আয়াতের সূত্রপদ্ধতির নথি",
+          "url": "https://api-docs.quran.com/docs/content_apis_versioned/4.0.0/verses-by-verse-key/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_005",
+      "conceptId": "quran_first_surah",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের লিখিত বিন্যাসে কোন সূরাটি প্রথমে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফাতিহা"
+        },
+        {
+          "id": "b",
+          "text": "আল-বাকারা"
+        },
+        {
+          "id": "c",
+          "text": "আল-ইখলাস"
+        },
+        {
+          "id": "d",
+          "text": "আন-নাস"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনের প্রচলিত লিখিত বিন্যাস আল-ফাতিহা দিয়ে শুরু হয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_006",
+      "conceptId": "quran_last_surah",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের লিখিত বিন্যাসে কোন সূরাটি শেষে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফালাক"
+        },
+        {
+          "id": "b",
+          "text": "আন-নাস"
+        },
+        {
+          "id": "c",
+          "text": "আল-ইখলাস"
+        },
+        {
+          "id": "d",
+          "text": "আল-কাওসার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "প্রচলিত লিখিত বিন্যাসে আন-নাস শেষ সূরা।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_007",
+      "conceptId": "quran_longest_surah",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন সূরায় সবচেয়ে বেশি আয়াত রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফাতিহা"
+        },
+        {
+          "id": "b",
+          "text": "ইউসুফ"
+        },
+        {
+          "id": "c",
+          "text": "আল-বাকারা"
+        },
+        {
+          "id": "d",
+          "text": "আল-কাহফ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল-বাকারায় ২৮৬টি আয়াত রয়েছে, যা অন্য সব সূরার চেয়ে বেশি।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_008",
+      "conceptId": "quran_fatihah_count",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল-ফাতিহায় কতটি আয়াত রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনটি"
+        },
+        {
+          "id": "b",
+          "text": "পাঁচটি"
+        },
+        {
+          "id": "c",
+          "text": "দশটি"
+        },
+        {
+          "id": "d",
+          "text": "সাতটি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল-ফাতিহায় সাতটি আয়াত রয়েছে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_009",
+      "conceptId": "quran_kawthar_count",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল-কাওসারে কতটি আয়াত রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনটি"
+        },
+        {
+          "id": "b",
+          "text": "সাতটি"
+        },
+        {
+          "id": "c",
+          "text": "দশটি"
+        },
+        {
+          "id": "d",
+          "text": "বারোটি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল-কাওসারে তিনটি আয়াত রয়েছে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_010",
+      "conceptId": "quran_fatihah_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল-ফাতিহা নামের অর্থ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাতি"
+        },
+        {
+          "id": "b",
+          "text": "সূচনা"
+        },
+        {
+          "id": "c",
+          "text": "গুহা"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল-ফাতিহা মানে সূচনা।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_011",
+      "conceptId": "quran_ikhlas",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ এক—এই ঘোষণা দিয়ে কোন সূরা শুরু হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফিল"
+        },
+        {
+          "id": "b",
+          "text": "আল-কাওসার"
+        },
+        {
+          "id": "c",
+          "text": "আল-ইখলাস"
+        },
+        {
+          "id": "d",
+          "text": "আল-মাসাদ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল-ইখলাস আল্লাহর একত্ব ও অতুলনীয়তা শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1-4",
+          "label": "কুরআন ১১২:১-৪",
+          "url": "https://quran.com/112/1-4"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_012",
+      "conceptId": "quran_nas_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আন-নাস মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চাঁদ"
+        },
+        {
+          "id": "b",
+          "text": "পাহাড়"
+        },
+        {
+          "id": "c",
+          "text": "সমুদ্র"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ বা মানবজাতি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আন-নাস মানে মানুষ বা মানবজাতি।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_013",
+      "conceptId": "quran_falaq_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল-ফালাক মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভোর"
+        },
+        {
+          "id": "b",
+          "text": "বিকেল"
+        },
+        {
+          "id": "c",
+          "text": "পাহাড়"
+        },
+        {
+          "id": "d",
+          "text": "নদী"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল-ফালাক বলতে ভোর বোঝায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1",
+          "label": "কুরআন ১১৩:১",
+          "url": "https://quran.com/113/1"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_014",
+      "conceptId": "quran_baqarah_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল-বাকারা মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মৌমাছি"
+        },
+        {
+          "id": "b",
+          "text": "গাভি"
+        },
+        {
+          "id": "c",
+          "text": "পিঁপড়া"
+        },
+        {
+          "id": "d",
+          "text": "হাতি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল-বাকারা মানে গাভি।",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: প্রচলিত সূরা তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_015",
+      "conceptId": "quran_revelation_month",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন নাজিলের সঙ্গে কোন মাসের সম্পর্ক রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সফর"
+        },
+        {
+          "id": "b",
+          "text": "রজব"
+        },
+        {
+          "id": "c",
+          "text": "রমজান"
+        },
+        {
+          "id": "d",
+          "text": "মুহররম"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে রমজানকে এটি নাজিলের মাস বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_016",
+      "conceptId": "quran_qadr",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন নাজিলের সঙ্গে কোন বিশেষ রাতের সম্পর্ক রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঈদুল আজহার আগের রাত"
+        },
+        {
+          "id": "b",
+          "text": "প্রতি পূর্ণিমার রাত"
+        },
+        {
+          "id": "c",
+          "text": "সফরের প্রথম রাত"
+        },
+        {
+          "id": "d",
+          "text": "লাইলাতুল কদর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-কদরে কুরআন নাজিলের সঙ্গে লাইলাতুল কদরের কথা এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "কুরআন ৯৭:১",
+          "url": "https://quran.com/97/1"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_017",
+      "conceptId": "quran_revelation_angel",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন ফেরেশতা আল্লাহর অনুমতিতে কুরআন নিয়ে এসেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জিবরিল (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "মিকাইল (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "মালিক"
+        },
+        {
+          "id": "d",
+          "text": "মৃত্যুর ফেরেশতা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জিবরিল (আ.) নবী (সা.)-এর অন্তরে ওহি নিয়ে এসেছিলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "কুরআন ২:৯৭",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_018",
+      "conceptId": "quran_recipient",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন নবীর ওপর কুরআন নাজিল হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "মুহাম্মদ (সা.)"
+        },
+        {
+          "id": "c",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ঈসা (আ.)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী মুহাম্মদ (সা.)-এর ওপর কুরআন নাজিল হয়েছিল।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "কুরআন ৪৭:২",
+          "url": "https://quran.com/47/2"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_019",
+      "conceptId": "quran_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন মানুষকে কী দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লটারির পূর্বাভাস"
+        },
+        {
+          "id": "b",
+          "text": "ধনী পরিবারগুলোর তালিকা"
+        },
+        {
+          "id": "c",
+          "text": "পথনির্দেশ"
+        },
+        {
+          "id": "d",
+          "text": "ভালো-মন্দ উপেক্ষার অনুমতি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন নিজেকে পথনির্দেশ হিসেবে বর্ণনা করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "2",
+          "label": "কুরআন ২:২",
+          "url": "https://quran.com/2/2"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_020",
+      "conceptId": "quran_kursi_location",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আয়াতুল কুরসি কোন সূরার অংশ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফাতিহা"
+        },
+        {
+          "id": "b",
+          "text": "আল-ইখলাস"
+        },
+        {
+          "id": "c",
+          "text": "আন-নাস"
+        },
+        {
+          "id": "d",
+          "text": "আল-বাকারা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতুল কুরসি আল-বাকারার একটি আয়াত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_021",
+      "conceptId": "quran_nuh",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন নবীকে নৌকা তৈরি করতে বলা হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নূহ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইউসুফ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইয়াহইয়া (আ.)"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে নূহ (আ.)-কে নৌকা তৈরির জন্য আল্লাহর নির্দেশের কথা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 11,
+          "ayahs": "36-37",
+          "label": "কুরআন ১১:৩৬-৩৭",
+          "url": "https://quran.com/11/36-37"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_022",
+      "conceptId": "quran_yunus",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন নবীর ঘটনায় বড় মাছের গিলে ফেলার কথা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইবরাহিম (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইউনুস (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "সুলাইমান (আ.)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে ইউনুস (আ.)-এর জীবনের এই ঘটনা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 37,
+          "ayahs": "139-142",
+          "label": "কুরআন ৩৭:১৩৯-১৪২",
+          "url": "https://quran.com/37/139-142"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_023",
+      "conceptId": "quran_musa",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হারুন (আ.)-এর সঙ্গে কোন নবীকে ফিরআউনের কাছে পাঠানো হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইউসুফ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "নূহ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইদরিস (আ.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহ মূসা ও হারুন (আ.)-কে ফিরআউনের কাছে যেতে বলেছিলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "43",
+          "label": "কুরআন ২০:৪৩",
+          "url": "https://quran.com/20/43"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_024",
+      "conceptId": "quran_yusuf",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন নবী তাঁর বাবাকে এগারোটি তারা, সূর্য ও চাঁদের স্বপ্নের কথা বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইউনুস (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ইসমাঈল (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইউসুফ (আ.)"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা ইউসুফে ইউসুফ (আ.) তাঁর বাবাকে এই স্বপ্নের কথা বলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "কুরআন ১২:৪",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_025",
+      "conceptId": "quran_maryam",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন নারীর নামে কুরআনে একটি সূরা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মরিয়ম"
+        },
+        {
+          "id": "b",
+          "text": "আসিয়া"
+        },
+        {
+          "id": "c",
+          "text": "হাজেরা"
+        },
+        {
+          "id": "d",
+          "text": "খাদিজা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ঈসা (আ.)-এর মা মরিয়মের নামে সূরা মরিয়মের নামকরণ হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 19,
+          "ayahs": "16",
+          "label": "কুরআন ১৯:১৬",
+          "url": "https://quran.com/19/16"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_026",
+      "conceptId": "quran_kahf",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন সূরায় গুহাবাসীদের ঘটনা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফিল"
+        },
+        {
+          "id": "b",
+          "text": "আল-কাহফ"
+        },
+        {
+          "id": "c",
+          "text": "আল-কাওসার"
+        },
+        {
+          "id": "d",
+          "text": "আন-নাস"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ঘটনাটি সূরা আল-কাহফে রয়েছে; নামটির অর্থ গুহা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "9-26",
+          "label": "কুরআন ১৮:৯-২৬",
+          "url": "https://quran.com/18/9-26"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_027",
+      "conceptId": "quran_luqman",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনে লুকমান পরিবারের কোন সদস্যকে উপদেশ দেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর বাবাকে"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর ভাইকে"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর ছেলেকে"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর চাচাকে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে লুকমানের ছেলেকে দেওয়া উপদেশ রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "13",
+          "label": "কুরআন ৩১:১৩",
+          "url": "https://quran.com/31/13"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_028",
+      "conceptId": "quran_kaabah",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইবরাহিম (আ.)-এর সঙ্গে কে কাবার ভিত্তি উঁচু করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইউসুফ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ইউনুস (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইসমাঈল (আ.)"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে পবিত্র ঘরের ভিত্তি উঁচু করার সময় ইবরাহিম ও ইসমাঈল (আ.)-এর নাম একসঙ্গে রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "কুরআন ২:১২৭",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_029",
+      "conceptId": "quran_parents",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মা-বাবার সঙ্গে কুরআন কীভাবে কথা বলতে শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্মান দিয়ে"
+        },
+        {
+          "id": "b",
+          "text": "অবজ্ঞা করে"
+        },
+        {
+          "id": "c",
+          "text": "ইচ্ছাকৃত অপমান করে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু টাকা দরকার হলে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন মা-বাবার সঙ্গে মর্যাদাপূর্ণ কথা ও সদাচারের নির্দেশ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23-24",
+          "label": "কুরআন ১৭:২৩-২৪",
+          "url": "https://quran.com/17/23-24"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_030",
+      "conceptId": "quran_justice",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অপছন্দের মানুষের প্রতিও কি কুরআন ন্যায্যতা চায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু তারা ধনী হলে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু তারা প্রশংসা করলে"
+        },
+        {
+          "id": "d",
+          "text": "না, অপছন্দ হলে ন্যায্যতা বাতিল"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বিদ্বেষ যেন মানুষকে ন্যায় থেকে সরিয়ে না দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_031",
+      "conceptId": "quran_truth",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন মুমিনদের কেমন কথা বলতে নির্দেশ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিভ্রান্তিকর কথা"
+        },
+        {
+          "id": "b",
+          "text": "বিনোদনের জন্য অপমান"
+        },
+        {
+          "id": "c",
+          "text": "সত্য ও সঠিক কথা"
+        },
+        {
+          "id": "d",
+          "text": "সত্যের তোয়াক্কা ছাড়া দাবি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন মুমিনদের সঠিক ও সত্য কথা বলতে বলে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "70",
+          "label": "কুরআন ৩৩:৭০",
+          "url": "https://quran.com/33/70"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_032",
+      "conceptId": "quran_needy",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অভাবীদের প্রতি কোন আচরণের নিন্দা সূরা আল-মাউনে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কাউকে খাবার খুঁজে পেতে সাহায্য করা"
+        },
+        {
+          "id": "b",
+          "text": "সদয়ভাবে খাবার ভাগ করা"
+        },
+        {
+          "id": "c",
+          "text": "এতিমের যত্ন নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "গরিবকে খাবার দিতে উৎসাহ না দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরাটিতে এতিমের সঙ্গে কঠোর আচরণ ও গরিবকে খাওয়ানোর প্রতি অবহেলার নিন্দা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "1-3",
+          "label": "কুরআন ১০৭:১-৩",
+          "url": "https://quran.com/107/1-3"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_033",
+      "conceptId": "quran_mercy",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গুনাহ করা ব্যক্তিদের কুরআন কোন বিষয়ে আশা না হারাতে বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর রহমত"
+        },
+        {
+          "id": "b",
+          "text": "সবাইকে মুগ্ধ করার সামর্থ্য"
+        },
+        {
+          "id": "c",
+          "text": "নিশ্চিত সহজ জীবন"
+        },
+        {
+          "id": "d",
+          "text": "সামাজিক জনপ্রিয়তা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ তাঁর রহমত থেকে নিরাশ না হয়ে তাঁর দিকে ফিরে আসতে ডাকেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "কুরআন ৩৯:৫৩-৫৪",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_034",
+      "conceptId": "quran_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নিয়ামতের জবাবে কুরআন কোন মনোভাব উৎসাহিত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অহংকার"
+        },
+        {
+          "id": "b",
+          "text": "কৃতজ্ঞতা"
+        },
+        {
+          "id": "c",
+          "text": "হিংসা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যকে ছোট মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন আল্লাহর নিয়ামতের জন্য কৃতজ্ঞ হতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "7",
+          "label": "কুরআন ১৪:৭",
+          "url": "https://quran.com/14/7"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_035",
+      "conceptId": "quran_unity",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন মুমিনদের একসঙ্গে কোনটি দৃঢ়ভাবে ধরতে বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু পারিবারিক গর্ব"
+        },
+        {
+          "id": "b",
+          "text": "অন্য দল সম্পর্কে গুজব"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর রজ্জু"
+        },
+        {
+          "id": "d",
+          "text": "একমাত্র লক্ষ্য হিসেবে সম্পদ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন সবাইকে আল্লাহর রজ্জু দৃঢ়ভাবে ধরতে এবং বিভক্তি এড়াতে বলে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "103",
+          "label": "কুরআন ৩:১০৩",
+          "url": "https://quran.com/3/103"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_036",
+      "conceptId": "quran_no_compulsion",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ধর্ম সম্পর্কে কোন শিক্ষা কুরআনে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বলপ্রয়োগ স্বয়ংক্রিয়ভাবে আন্তরিক ঈমান তৈরি করে।"
+        },
+        {
+          "id": "b",
+          "text": "সম্পদ ঠিক করে কোনটি সত্য।"
+        },
+        {
+          "id": "c",
+          "text": "শুধু একটি জাতির মানুষ বিশ্বাস করতে পারে।"
+        },
+        {
+          "id": "d",
+          "text": "ধর্মের ব্যাপারে কোনো জবরদস্তি নেই।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন জানায় যে ধর্মের ব্যাপারে কোনো জবরদস্তি নেই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "কুরআন ২:২৫৬",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_037",
+      "conceptId": "quran_falaq_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল-ফালাকে আমরা কার আশ্রয় চাই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভোরের রবের"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যের নিজের"
+        },
+        {
+          "id": "c",
+          "text": "অন্ধকারের"
+        },
+        {
+          "id": "d",
+          "text": "ভাগ্যবান বস্তুর"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল-ফালাক ভোরের রব আল্লাহর কাছে আশ্রয় চাইতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1-5",
+          "label": "কুরআন ১১৩:১-৫",
+          "url": "https://quran.com/113/1-5"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_038",
+      "conceptId": "quran_fatihah_help",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল-ফাতিহায় আমরা কার ইবাদত করি ও সাহায্য চাই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তারাদের"
+        },
+        {
+          "id": "b",
+          "text": "কেবল আল্লাহর"
+        },
+        {
+          "id": "c",
+          "text": "পূর্বপুরুষদের"
+        },
+        {
+          "id": "d",
+          "text": "পাহাড়গুলোর"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল-ফাতিহায় আল্লাহর ইবাদত ও তাঁর সাহায্য চাওয়ার ঘোষণা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "5",
+          "label": "কুরআন ১:৫",
+          "url": "https://quran.com/1/5"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_039",
+      "conceptId": "quran_parents",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মা-বাবার জন্য কোন প্রার্থনা কুরআনে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কেউ যেন তাঁদের কখনো উপদেশ না দেয়"
+        },
+        {
+          "id": "b",
+          "text": "তাঁদের প্রতি সব সদাচার থেকে মুক্তি"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ যেন তাঁদের প্রতি দয়া করেন"
+        },
+        {
+          "id": "d",
+          "text": "তাঁদের যত্নের বদলে শুধু সম্পদ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন মা-বাবার জন্য আল্লাহর দয়া চেয়ে দোয়া করতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "24",
+          "label": "কুরআন ১৭:২৪",
+          "url": "https://quran.com/17/24"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_040",
+      "conceptId": "quran_hardship_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সূরা আশ-শারহে কী আশ্বাস রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোনো মুমিনের কখনো কঠিন দিন আসবে না।"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি সমস্যা এক ঘণ্টায় শেষ হতেই হবে।"
+        },
+        {
+          "id": "c",
+          "text": "চেষ্টা ও ধৈর্য অপ্রয়োজনীয়।"
+        },
+        {
+          "id": "d",
+          "text": "কষ্টের সঙ্গে স্বস্তি রয়েছে।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কষ্টের সঙ্গে স্বস্তির কথা জানিয়ে সূরাটি আশা দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "কুরআন ৯৪:৫-৬",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_041",
+      "conceptId": "quran_reading_pace",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনি তিলাওয়াত শিখছেন। কোন পদ্ধতি ভালো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাড়াহুড়ার বদলে মনোযোগ দিয়ে পড়া"
+        },
+        {
+          "id": "b",
+          "text": "শব্দ অস্পষ্ট হলেও দ্রুত পড়া"
+        },
+        {
+          "id": "c",
+          "text": "সুর মেলাতে শব্দ বদলানো"
+        },
+        {
+          "id": "d",
+          "text": "কঠিন শব্দ বাদ দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন ধীরস্থির ও সুস্পষ্ট তিলাওয়াতের নির্দেশ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "কুরআন ৭৩:৪",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_042",
+      "conceptId": "quran_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ছোট একটি সূরা পড়লেন। তা থেকে শিখতে কী সহায়ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অর্থ শেখা এড়িয়ে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "এর অর্থ ও শিক্ষা নিয়ে চিন্তা করা"
+        },
+        {
+          "id": "c",
+          "text": "নাম পড়াই যথেষ্ট ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বার্তাটিকে জীবনের সঙ্গে সম্পর্কহীন মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন এর আয়াত নিয়ে চিন্তা করতে বলে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_043",
+      "conceptId": "quran_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এখনো আরবি বোঝেন না। কোনো অংশ বুঝতে কী সাহায্য করতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শব্দের আওয়াজ থেকে অর্থ বানানো"
+        },
+        {
+          "id": "b",
+          "text": "বোঝার কখনো গুরুত্ব নেই ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "অর্থের নির্ভরযোগ্য অনুবাদ পড়া"
+        },
+        {
+          "id": "d",
+          "text": "আকর্ষণীয় মনে হওয়া আন্দাজ বেছে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বোঝা গুরুত্বপূর্ণ। শেখা চালিয়ে যাওয়ার পাশাপাশি নির্ভরযোগ্য অনুবাদ অর্থ বুঝতে সহায়তা করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        },
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_044",
+      "conceptId": "quran_learning_support",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তিলাওয়াত করতে আপনার কষ্ট হয়। পরের কোন পদক্ষেপ সহায়ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চেষ্টার মূল্য নেই ঠিক করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি শব্দ জানার ভান করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সাবলীল পাঠকরাই গুরুত্বপূর্ণ বলে থামা"
+        },
+        {
+          "id": "d",
+          "text": "ধৈর্যশীল সহায়তায় শেখা চালিয়ে যাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী (সা.) কষ্ট করে তিলাওয়াতকারীকে উৎসাহ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "সহিহ বুখারি ৪৯৩৭",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_045",
+      "conceptId": "quran_teaching",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ছোট একটি সূরা শুদ্ধভাবে পড়তে পারেন, কেউ শিখতে চান। কোনটি সহায়ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যা জানেন তা সঠিকভাবে শেখানো"
+        },
+        {
+          "id": "b",
+          "text": "সহজ করতে শব্দ বানানো"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর ভুল নিয়ে উপহাস করা"
+        },
+        {
+          "id": "d",
+          "text": "শেখার মূল্য নেই বলা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী (সা.) কুরআন শেখা ও শেখানোর প্রশংসা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "সহিহ বুখারি ৫০২৭",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_046",
+      "conceptId": "quran_seeking_refuge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুরআন তিলাওয়াত শুরু করবেন। কুরআন কী চাইতে শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রত্যেক শ্রোতার প্রশংসা"
+        },
+        {
+          "id": "b",
+          "text": "শয়তান থেকে আল্লাহর আশ্রয়"
+        },
+        {
+          "id": "c",
+          "text": "সম্পদের নিশ্চয়তা"
+        },
+        {
+          "id": "d",
+          "text": "এর শব্দ বদলানোর অনুমতি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন তিলাওয়াতের সময় আল্লাহর আশ্রয় চাইতে নির্দেশ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "কুরআন ১৬:৯৮",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_047",
+      "conceptId": "quran_parents",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লান্ত অবস্থায় মা বা বাবা সাহায্য চান। কোন প্রতিক্রিয়া কুরআনের শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চাওয়ার জন্য অপমান"
+        },
+        {
+          "id": "b",
+          "text": "ক্লান্তিকে অবজ্ঞার অজুহাত করা"
+        },
+        {
+          "id": "c",
+          "text": "সম্মান দিয়ে উত্তর ও সামর্থ্য অনুযায়ী সাহায্য"
+        },
+        {
+          "id": "d",
+          "text": "অন্যের সামনে হেয় করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন মা-বাবার প্রতি সম্মানজনক কথা ও মমতা শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23-24",
+          "label": "কুরআন ১৭:২৩-২৪",
+          "url": "https://quran.com/17/23-24"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_048",
+      "conceptId": "quran_justice",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অপছন্দের কেউ জড়িত এমন বিরোধের বিচার করতে হবে। কী আপনাকে পরিচালিত করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ব্যক্তিগত অপছন্দ"
+        },
+        {
+          "id": "b",
+          "text": "তাঁকে বিব্রত করার ইচ্ছা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু তাঁর জনপ্রিয়তা"
+        },
+        {
+          "id": "d",
+          "text": "ন্যায্যতা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন বলে বিদ্বেষ যেন অন্যায়ের দিকে না নিয়ে যায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_049",
+      "conceptId": "quran_verify",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কারও সম্পর্কে অযাচাইকৃত অভিযোগ পেলেন। ছড়ানোর আগে কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সতর্কভাবে যাচাই করা"
+        },
+        {
+          "id": "b",
+          "text": "চাঞ্চল্যকর বলে ফরওয়ার্ড করা"
+        },
+        {
+          "id": "c",
+          "text": "বিশ্বাসযোগ্য করতে তথ্য যোগ করা"
+        },
+        {
+          "id": "d",
+          "text": "বেশি শেয়ার সত্যের প্রমাণ ধরা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন যাচাইহীন সংবাদ দিয়ে মানুষের ক্ষতি করা থেকে সতর্ক করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "কুরআন ৪৯:৬",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_050",
+      "conceptId": "quran_mockery",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধুরা কাউকে নিয়ে হাসছে এবং যোগ দিতে বলছে। কোন সিদ্ধান্ত কুরআনের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাদের প্রিয় হতে যোগ দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "উপহাসে যোগ না দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আরও কষ্টদায়ক ডাকনাম বানানো"
+        },
+        {
+          "id": "d",
+          "text": "আরও হাসির জন্য ভিডিও করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন মানুষকে উপহাস ও অপমানজনক নামে ডাকা নিষেধ করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_051",
+      "conceptId": "quran_spying",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শুধু কৌতূহলে কারও ব্যক্তিগত বার্তা পড়তে চান। কুরআনের কোন শিক্ষা জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কৌতূহল সব অনুপ্রবেশ গ্রহণযোগ্য করে।"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বিখ্যাতদের গোপনীয়তা গুরুত্বপূর্ণ।"
+        },
+        {
+          "id": "c",
+          "text": "অন্যের গোপন বিষয় খুঁজো না।"
+        },
+        {
+          "id": "d",
+          "text": "ফোন থাকলে সব গোপনীয়তা উঠে যায়।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন একে অন্যের গোপন বিষয় অনুসন্ধান নিষেধ করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_052",
+      "conceptId": "quran_gift_hurt",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কাউকে সাহায্য করলেন। পরে তাঁর সঙ্গে কেমন আচরণ করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রশংসা পাওনা বলে বারবার মনে করানো"
+        },
+        {
+          "id": "b",
+          "text": "প্রকাশ্যে বিব্রত করা"
+        },
+        {
+          "id": "c",
+          "text": "উপহার দিয়ে অপমানের যুক্তি বানানো"
+        },
+        {
+          "id": "d",
+          "text": "খোঁটা না দিয়ে সদয় আচরণ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন খোঁটা ও কষ্ট দিয়ে দান নষ্ট করা থেকে সতর্ক করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_053",
+      "conceptId": "quran_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনি নিয়ামত পেলেন। কোন প্রতিক্রিয়া কুরআনের শিক্ষা অনুসরণ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর শুকরিয়া আদায় করা"
+        },
+        {
+          "id": "b",
+          "text": "কারও সাহায্য লাগে না বলে গর্ব করা"
+        },
+        {
+          "id": "c",
+          "text": "অন্যকে ছোট মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "কৃতজ্ঞতা অর্থহীন মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন কৃতজ্ঞতা ও নিয়ামতের সৎ ব্যবহার উৎসাহিত করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "কুরআন ২৭:১৯",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_054",
+      "conceptId": "quran_mercy",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বুঝলেন অন্যায় করেছেন। কুরআন কী উৎসাহিত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রহমতের সব আশা ছাড়া"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর দিকে ফিরে ক্ষমা চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "বদলানো অর্থহীন বলে চালিয়ে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "নির্দোষ কাউকে দোষ দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন আল্লাহর রহমতের আশা দেয় এবং তাঁর দিকে ফিরতে বলে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "কুরআন ৩৯:৫৩-৫৪",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_055",
+      "conceptId": "quran_small_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আজ শুধু ছোট একটি উপকার করতে পারেন। সেটিকে মূল্যহীন ভাববেন কি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু ব্যয়বহুল কাজ গণ্য হয়।"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, যদি সবাই না দেখে।"
+        },
+        {
+          "id": "c",
+          "text": "না, ছোট ভালো কাজও গুরুত্বপূর্ণ।"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, যদি বিখ্যাত না করে।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন বলে অণু পরিমাণ ভালো কাজও দেখা হবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7",
+          "label": "কুরআন ৯৯:৭",
+          "url": "https://quran.com/99/7"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_056",
+      "conceptId": "quran_trust",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ আপনার কাছে জিনিস গচ্ছিত রাখলেন। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পছন্দ হয়েছে বলে রেখে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অনুমতি ছাড়া দান করা"
+        },
+        {
+          "id": "c",
+          "text": "নিজের হয়ে গেছে এমন ভান করা"
+        },
+        {
+          "id": "d",
+          "text": "প্রকৃত মালিককে ফেরত দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন আমানত প্রকৃত হকদারের কাছে ফেরত দিতে নির্দেশ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_057",
+      "conceptId": "quran_promise",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "প্রতিশ্রুতি দিলেন। সেটিকে কীভাবে দেখবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পালন করার দায়িত্ব হিসেবে"
+        },
+        {
+          "id": "b",
+          "text": "অসুবিধা হলেই অর্থহীন হিসেবে"
+        },
+        {
+          "id": "c",
+          "text": "ভিডিও থাকলেই শুধু গুরুত্বপূর্ণ হিসেবে"
+        },
+        {
+          "id": "d",
+          "text": "অন্যকে বিভ্রান্ত করার কারণ হিসেবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন অঙ্গীকার পূরণ ও তার জবাবদিহি শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "কুরআন ১৭:৩৪",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_058",
+      "conceptId": "quran_generosity_balance",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ব্যয় নিয়ে সিদ্ধান্ত নিচ্ছেন। কোন পদ্ধতি কুরআনে প্রশংসিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষকে মুগ্ধ করতে অসতর্ক ব্যয়"
+        },
+        {
+          "id": "b",
+          "text": "অপচয় ও কৃপণতা দুটোই এড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি জরুরি ব্যয় অস্বীকার"
+        },
+        {
+          "id": "d",
+          "text": "অপচয়কে উদারতা মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন অপব্যয় ও কৃপণতার মাঝামাঝি ভারসাম্যপূর্ণ পথের কথা বলে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "কুরআন ২৫:৬৭",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_059",
+      "conceptId": "quran_gentle_reply",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ আপনার সঙ্গে কঠোরভাবে কথা বললেন। কুরআনের শিক্ষা কোন প্রতিক্রিয়া উৎসাহিত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব সময় আরও কঠোর অপমান বেছে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "মিথ্যা অভিযোগ ছড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "আরও ভালোভাবে জবাব দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "রাগ সব প্রতিক্রিয়া সঠিক করে ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন মন্দের জবাব উত্তম আচরণ দিয়ে দিতে উৎসাহিত করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 41,
+          "ayahs": "34",
+          "label": "কুরআন ৪১:৩৪",
+          "url": "https://quran.com/41/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_060",
+      "conceptId": "quran_dua_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পাঠ শুরু করছেন। শেখার জন্য কুরআনের কোন দোয়া উপযুক্ত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আমার আর কখনো শেখার প্রয়োজন রাখবেন না।"
+        },
+        {
+          "id": "b",
+          "text": "আমার প্রতিটি আন্দাজ সঠিক করে দিন।"
+        },
+        {
+          "id": "c",
+          "text": "আমাকে চিরকাল সব প্রশ্ন এড়াতে দিন।"
+        },
+        {
+          "id": "d",
+          "text": "হে আমার রব, আমার জ্ঞান বাড়িয়ে দিন।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন আল্লাহর কাছে জ্ঞান বৃদ্ধির দোয়া করতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "কুরআন ২০:১১৪",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    }
+  ]
+}

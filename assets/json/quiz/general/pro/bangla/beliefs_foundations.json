@@ -1,0 +1,2387 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "pro",
+  "categoryId": "beliefs_foundations",
+  "title": "ঈমান ও বিশ্বাসের ভিত্তি",
+  "description": "সাধারণ ব্যবহারকারী → প্রো স্তর। পরিচিত বিশ্বাসের শিক্ষা, আরও কিছু মৌলিক বিষয় ও ছোট দৈনন্দিন প্রয়োগ, যেখানে আরও গভীর বোঝাপড়া ও শিক্ষাগুলোর সম্পর্ক ধরতে হবে। আল্লাহর মুখাপেক্ষিতা, ওহি, রাসুল, আখিরাত, রহমত ও জবাবদিহি অন্তর্ভুক্ত। সব প্রশ্ন সাধারণ ব্যবহারকারীর প্রো স্তরের। বিশেষজ্ঞ পর্যায়ের আকিদাগত বিতর্ক ও সূত্রের নম্বর মুখস্থের প্রশ্ন রাখা হয়নি।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রো স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও উপলব্ধির মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। মধ্যমের চেয়ে পরিচিত শিক্ষার গভীর বোঝাপড়া, সেগুলোর সম্পর্ক ধরা এবং প্রচলিত ভুল ধারণা আলাদা করার প্রয়োজন; বিশেষজ্ঞ পর্যায়ের পড়াশোনা নয়। এটি সাধারণ ব্যবহারকারীর প্রো স্তর, আলাদা আল্ট্রা প্রশ্নভান্ডার নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিসের মূল পাঠ মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যাগুলো শিক্ষামূলকভাবে নিজস্ব ভাষায় লেখা; এগুলো হুবহু অনুবাদ নয়। আধুনিক পরিস্থিতিগুলো সূত্রে উল্লিখিত মূলনীতির উদাহরণ। এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_pro_beliefs_foundations_001",
+      "conceptId": "beliefs_worship_and_need",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ ও তাঁর ইবাদতকারীদের নির্ভরতা সম্পর্কে কোন বক্তব্যটি সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইবাদতকারীরা আল্লাহর মুখাপেক্ষী; তিনি তাদের মুখাপেক্ষী নন"
+        },
+        {
+          "id": "b",
+          "text": "ক্ষমতাবান থাকতে আল্লাহর ইবাদতকারীদের প্রয়োজন"
+        },
+        {
+          "id": "c",
+          "text": "উভয়ে সমানভাবে একে অপরের ওপর নির্ভরশীল"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সম্পদহীন মানুষই আল্লাহর মুখাপেক্ষী"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলো মানুষের আল্লাহর প্রতি মুখাপেক্ষিতা এবং মানুষের কাছ থেকে রিজিক পাওয়ার কোনো প্রয়োজন থেকে আল্লাহর মুক্ত থাকার কথা জানায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        },
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "57",
+          "label": "কুরআন ৫১:৫৭",
+          "url": "https://quran.com/51/57"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_002",
+      "conceptId": "beliefs_provider_and_means",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর আর-রাজ্জাক নামটি কী ঘোষণা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি আয় নৈতিকভাবে গ্রহণযোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ রিজিকদাতা"
+        },
+        {
+          "id": "c",
+          "text": "জীবিকা খোঁজায় চেষ্টার কোনো স্থান নেই"
+        },
+        {
+          "id": "d",
+          "text": "সফল মালিক আল্লাহর মুখাপেক্ষিতা থেকে মুক্ত হয়ে যান"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে আল্লাহকে রিজিকদাতা ও সুদৃঢ় শক্তির অধিকারী বলা হয়েছে। এতে উপার্জনের প্রতিটি পদ্ধতি গ্রহণযোগ্য হয়ে যায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "58",
+          "label": "কুরআন ৫১:৫৮",
+          "url": "https://quran.com/51/58"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_003",
+      "conceptId": "beliefs_justice_and_grace",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ৪:৪০-এ কোন দুটি শিক্ষা একসঙ্গে এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বড় অন্যায় গুরুত্বপূর্ণ, ছোট সৎকাজ হারিয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিদান শুধু দুনিয়ার খ্যাতির ওপর নির্ভর করে"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ জুলুম করেন না এবং সৎকাজের প্রতিদান বহুগুণ করেন"
+        },
+        {
+          "id": "d",
+          "text": "সৎকাজ আল্লাহকে মানুষের কাছে ঋণী করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে পরিপূর্ণ ন্যায়বিচারের সঙ্গে সৎকাজের উদার প্রতিদান দেওয়ার কথা একসঙ্গে এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "কুরআন ৪:৪০",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_004",
+      "conceptId": "beliefs_revealed_unseen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াতগুলোতে একজন রাসুলের গায়েবের জ্ঞান পাওয়ার বিষয়টি কীভাবে বর্ণিত হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রাসুল আল্লাহর থেকে স্বাধীনভাবে জ্ঞান অর্জন করেন"
+        },
+        {
+          "id": "b",
+          "text": "প্রত্যেকে অনুমান করে একই জ্ঞান পান"
+        },
+        {
+          "id": "c",
+          "text": "জ্ঞান পাওয়ার পর রাসুল আল্লাহর সমান জ্ঞানী হয়ে যান"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ তাঁর মনোনীত রাসুলকে যা ইচ্ছা জানান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ওহির মাধ্যমে পাওয়া জ্ঞান আল্লাহর কাছ থেকে আসে। তা পেয়ে কোনো রাসুল স্বাধীন ও সীমাহীন জ্ঞানের অধিকারী হন না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "কুরআন ৭২:২৬-২৭",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_005",
+      "conceptId": "beliefs_jinn_moral_variety",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা আল-জিনে বক্তব্য দেওয়া জিনেরা নিজেদের কীভাবে বর্ণনা করেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাদের মধ্যে কেউ সৎ, অন্যরা তেমন নয়"
+        },
+        {
+          "id": "b",
+          "text": "সবার নৈতিক চরিত্র হুবহু এক"
+        },
+        {
+          "id": "c",
+          "text": "তাদের প্রত্যেকেই ফেরেশতা"
+        },
+        {
+          "id": "d",
+          "text": "তাদের কাউকেই সৎ বলা যায় না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে জিনদের মধ্যে পার্থক্যের কথা এসেছে, যার মধ্যে সৎ হওয়া বা না হওয়ার পার্থক্যও রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "11",
+          "label": "কুরআন ৭২:১১",
+          "url": "https://quran.com/72/11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_006",
+      "conceptId": "beliefs_messengers_chosen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ২২:৭৫ অনুযায়ী, রাসুল হওয়ার মর্যাদা কীভাবে নির্ধারিত হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জনপ্রিয়তায় রাসুল হওয়া যায়"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ তাঁর রাসুলদের মনোনীত করেন"
+        },
+        {
+          "id": "c",
+          "text": "দান দিয়ে মানুষ এই মর্যাদা কিনে নেয়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু পড়াশোনাই শিক্ষককে রাসুল বানিয়ে দেয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ফেরেশতা ও মানুষের মধ্য থেকে রাসুল মনোনীত করার বিষয়টি আয়াতে আল্লাহর প্রতি সম্বন্ধিত করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "75",
+          "label": "কুরআন ২২:৭৫",
+          "url": "https://quran.com/22/75"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_007",
+      "conceptId": "beliefs_messengers_rank",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রাসুলদের মর্যাদার স্তর সম্পর্কে কুরআন ২:২৫৩ কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি বিষয়ে সব রাসুলের মর্যাদা হুবহু এক"
+        },
+        {
+          "id": "b",
+          "text": "জাতীয়তা দিয়ে মানুষ মর্যাদা ঠিক করে"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ কিছু রাসুলকে অন্যদের ওপর বিশেষ মর্যাদা দিয়েছেন"
+        },
+        {
+          "id": "d",
+          "text": "মর্যাদায় নিচে হলেই প্রকৃত রাসুল মিথ্যা হয়ে যান"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে রাসুলদের সত্যতা অস্বীকার না করেই তাঁদের মর্যাদার পার্থক্য স্বীকার করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "253",
+          "label": "কুরআন ২:২৫৩",
+          "url": "https://quran.com/2/253"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_008",
+      "conceptId": "beliefs_shared_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুহাম্মদ ﷺ ও পূর্ববর্তী নবীদের মধ্যে কুরআন ৪২:১৩ কোন ধারাবাহিকতা বর্ণনা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতি যুগে আলাদা উপাস্যের ইবাদতের নির্দেশ"
+        },
+        {
+          "id": "b",
+          "text": "আগের প্রতিটি ওহি প্রত্যাখ্যান করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু গোত্রীয় বংশপরিচয়ভিত্তিক ধর্ম"
+        },
+        {
+          "id": "d",
+          "text": "দ্বীন প্রতিষ্ঠার অভিন্ন নির্দেশ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে ওহির মাধ্যমে দেওয়া পথকে নূহ, ইবরাহিম, মূসা ও ঈসা (আ.)-কে দেওয়া নির্দেশের সঙ্গে যুক্ত করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "13",
+          "label": "কুরআন ৪২:১৩",
+          "url": "https://quran.com/42/13"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_009",
+      "conceptId": "beliefs_universal_message",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ৩৪:২৮-এ মুহাম্মদ ﷺ-কে কাদের জন্য সুসংবাদদাতা ও সতর্ককারী বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সমগ্র মানবজাতির জন্য"
+        },
+        {
+          "id": "b",
+          "text": "শুধু নিজের গোত্রের জন্য"
+        },
+        {
+          "id": "c",
+          "text": "শুধু আরবিভাষীদের জন্য"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সেই সময় মক্কায় জীবিত থাকা মানুষদের জন্য"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে বার্তাটি মানবজাতির উদ্দেশে বলা হয়েছে; একটি জাতি বা ভাষাগোষ্ঠীতে সীমাবদ্ধ করা হয়নি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 34,
+          "ayahs": "28",
+          "label": "কুরআন ৩৪:২৮",
+          "url": "https://quran.com/34/28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_010",
+      "conceptId": "beliefs_intercession_permission",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আয়াতুল কুরসি অনুযায়ী, আল্লাহর কাছে সুপারিশের জন্য কী প্রয়োজন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ থেকে সুপারিশকারীর স্বাধীনতা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর অনুমতি"
+        },
+        {
+          "id": "c",
+          "text": "নিশ্চয়তা কেনার মতো টাকা দেওয়ার সামর্থ্য"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর সিদ্ধান্ত অগ্রাহ্য করতে পারে এমন চুক্তি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে সুপারিশকে আল্লাহর অনুমতির অধীন করা হয়েছে; তাঁর কর্তৃত্বের বিরুদ্ধে ব্যবহারের ক্ষমতা হিসেবে নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_011",
+      "conceptId": "beliefs_resurrection_precision",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাড় একত্র করার সন্দেহের জবাবে কুরআন আরও কোন ক্ষমতার কথা জানায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু অক্ষত দেহই পুনর্গঠন করা যায়"
+        },
+        {
+          "id": "b",
+          "text": "পুনরুত্থানের জন্য বেঁচে থাকা একটি ছবি লাগে"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ মানুষের আঙুলের ডগাও পুনর্গঠন করতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে আগে নিজেকেই পুনর্গঠন করতে হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতগুলোতে আঙুলের ডগাসহ মানুষকে বিস্তারিতভাবে পুনর্গঠন করার আল্লাহর ক্ষমতা ঘোষণা করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 75,
+          "ayahs": "3-4",
+          "label": "কুরআন ৭৫:৩-৪",
+          "url": "https://quran.com/75/3-4"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_012",
+      "conceptId": "beliefs_barzakh",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মৃত্যুর আলোচনায় বারযাখ বলতে কী বোঝানো হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিবার মৃত্যুর পর নতুন দুনিয়াবি জীবন"
+        },
+        {
+          "id": "b",
+          "text": "সব জবাবদিহি চিরদিন পিছিয়ে দেওয়ার উপায়"
+        },
+        {
+          "id": "c",
+          "text": "আমল ওজনের চূড়ান্ত দাঁড়িপাল্লার নাম"
+        },
+        {
+          "id": "d",
+          "text": "পুনরুত্থান পর্যন্ত স্থায়ী একটি অন্তরাল"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো আমল নতুন করে করতে দুনিয়ায় ফিরে আসা অস্বীকার করে এবং পুনরুত্থান পর্যন্ত একটি অন্তরালের কথা জানায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "99-100",
+          "label": "কুরআন ২৩:৯৯-১০০",
+          "url": "https://quran.com/23/99-100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_013",
+      "conceptId": "beliefs_record_completeness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ১৮:৪৯-এ আমলনামার কোন বৈশিষ্ট্য অপরাধীদের আতঙ্কিত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে ছোট-বড় কোনো কাজই বাদ পড়ে না"
+        },
+        {
+          "id": "b",
+          "text": "শুধু প্রকাশ্যে বিখ্যাত হওয়া কাজ লেখা হয়"
+        },
+        {
+          "id": "c",
+          "text": "সামাজিক মর্যাদা অনুযায়ী তা বদলে যায়"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ ডায়েরি রাখে কি না তার ওপর তা নির্ভর করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে পূর্ণাঙ্গ আমলনামার বর্ণনা রয়েছে এবং আল্লাহ কারও প্রতি জুলুম করেন না বলে জানানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "কুরআন ১৮:৪৯",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_014",
+      "conceptId": "beliefs_faculties_accountable",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ১৭:৩৬ মানুষের কোন বিষয়গুলোকে জবাবদিহির সঙ্গে যুক্ত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু শারীরিক শক্তি"
+        },
+        {
+          "id": "b",
+          "text": "শ্রবণ, দৃষ্টি ও অন্তর বা উপলব্ধি"
+        },
+        {
+          "id": "c",
+          "text": "শুধু প্রকাশ্যে কথা বলার ক্ষমতা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বেতনের কাজে ব্যবহৃত দক্ষতা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে অজানা বিষয়ের অনুসরণ থেকে সতর্ক করা হয়েছে এবং এসব বিষয়ে জবাবদিহির কথা জানানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "কুরআন ১৭:৩৬",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_015",
+      "conceptId": "beliefs_no_compulsion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ধর্ম সম্পর্কে কোন মূলনীতি দিয়ে কুরআন ২:২৫৬ শুরু হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জোর করে বলানো কথাই আন্তরিক বিশ্বাস প্রতিষ্ঠা করে"
+        },
+        {
+          "id": "b",
+          "text": "বিশ্বাসকে সবচেয়ে শক্তিশালী সামাজিক গোষ্ঠীর অনুসারী হতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "দ্বীনের ব্যাপারে কোনো জবরদস্তি নেই"
+        },
+        {
+          "id": "d",
+          "text": "মানুষের সম্পদ নির্ধারণ করে কোনটি সত্য"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে ধর্মে জবরদস্তি অস্বীকার করা হয়েছে এবং সঠিক পথ ও ভ্রান্তির পার্থক্য তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "কুরআন ২:২৫৬",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_016",
+      "conceptId": "beliefs_deeds_and_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উল্লিখিত বর্ণনায় জান্নাতে প্রবেশ সম্পর্কে নবী ﷺ কী শেখান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সৎকাজ করলে আল্লাহর রহমত অপ্রয়োজনীয় হয়"
+        },
+        {
+          "id": "b",
+          "text": "শিক্ষাটি নবী ﷺ ছাড়া সবার জন্য প্রযোজ্য"
+        },
+        {
+          "id": "c",
+          "text": "দুনিয়ার সাফল্য জান্নাতে প্রবেশ নিশ্চিত করে"
+        },
+        {
+          "id": "d",
+          "text": "কারও আমল একাই তাকে আল্লাহর রহমতের মুখাপেক্ষিতা থেকে মুক্ত করে না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহর রহমতের প্রয়োজনে বর্ণনাটি নবী ﷺ-কেও অন্তর্ভুক্ত করে। এতে নিজেকে স্বয়ংসম্পূর্ণ বা প্রতিদানের অবধারিত দাবিদার মনে করা থেকে সতর্ক করা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2816c",
+          "label": "সহিহ মুসলিম ২৮১৬c",
+          "url": "https://sunnah.com/muslim:2816c"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_017",
+      "conceptId": "beliefs_hope_and_warning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াতগুলোতে কোন দুটি সত্য পাশাপাশি রাখা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর ক্ষমা ও রহমত এবং তাঁর শাস্তির গুরুতরতা"
+        },
+        {
+          "id": "b",
+          "text": "বিখ্যাতদের জন্য রহমত ও অন্যদের কোনো জবাবদিহি না থাকা"
+        },
+        {
+          "id": "c",
+          "text": "রহমতের কোনো সম্ভাবনা ছাড়া শাস্তি"
+        },
+        {
+          "id": "d",
+          "text": "এমন ক্ষমা, যা প্রতিটি কাজকে সমানভাবে সঠিক করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলো একটি সত্য মুছে না দিয়ে আল্লাহর রহমতের আশ্বাসের পাশাপাশি গুরুতর সতর্কতা দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "49-50",
+          "label": "কুরআন ১৫:৪৯-৫০",
+          "url": "https://quran.com/15/49-50"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_018",
+      "conceptId": "beliefs_rights_and_hereafter",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্যের প্রতি অন্যায় করা ব্যক্তির শেষ দিনের আগে কী চাওয়া উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যায়ের পক্ষে কথা বলার জন্য আরও দর্শক"
+        },
+        {
+          "id": "b",
+          "text": "অন্যায়ের দায় থেকে মুক্তি ও ভুক্তভোগীর ক্ষমা"
+        },
+        {
+          "id": "c",
+          "text": "দুনিয়ার মর্যাদাকে জবাবদিহির বিকল্প করার উপায়"
+        },
+        {
+          "id": "d",
+          "text": "অন্য কোনো ভালো কাজের পর বিষয়টি উপেক্ষার অনুমতি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে সতর্ক করা হয়েছে, অমীমাংসিত অন্যায়ের নিষ্পত্তি শেষ দিনে টাকার বদলে আমলের মাধ্যমে হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "সহিহ বুখারি ২৪৪৯",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_019",
+      "conceptId": "beliefs_life_as_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মৃত্যু ও জীবন সৃষ্টির কোন উদ্দেশ্য কুরআন ৬৭:২-এ বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কে সবচেয়ে বেশি মানুষের মনোযোগ পায়, তা পরীক্ষা করা"
+        },
+        {
+          "id": "b",
+          "text": "দুনিয়ার আরামকে সাফল্যের একমাত্র মাপকাঠি করা"
+        },
+        {
+          "id": "c",
+          "text": "কারা আমলে উত্তম, তা পরীক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "দায়িত্বশীল সিদ্ধান্তের প্রয়োজন দূর করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে জীবনকে আমলের উৎকর্ষের সঙ্গে সম্পর্কিত পরীক্ষা হিসেবে বর্ণনা করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "কুরআন ৬৭:২",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_020",
+      "conceptId": "beliefs_satan_and_choice",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "বিচারের পরের বক্তব্যে শয়তান অনুসারীদের ওপর নিজের প্রভাব কীভাবে বর্ণনা করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার এমন কর্তৃত্ব ছিল, যা তাদের সব দায়িত্ব দূর করেছিল"
+        },
+        {
+          "id": "b",
+          "text": "সে তার প্রতিটি অনুসারীকে বাঁচাতে পারত"
+        },
+        {
+          "id": "c",
+          "text": "তার প্রতিশ্রুতি আল্লাহর প্রতিশ্রুতির মতো নির্ভরযোগ্য ছিল"
+        },
+        {
+          "id": "d",
+          "text": "সে ডেকেছিল এবং তারা সাড়া দিয়েছিল"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে শয়তানকে নিজের ব্যর্থ প্রতিশ্রুতি এবং তার ডাকে অনুসারীদের সাড়া দেওয়ার কথা স্বীকার করতে দেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "22",
+          "label": "কুরআন ১৪:২২",
+          "url": "https://quran.com/14/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_021",
+      "conceptId": "beliefs_worship_and_need",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইবাদত কেন আল্লাহর কোনো অভাব পূরণ করার সেবা নয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ অমুখাপেক্ষী, আর মানুষ তাঁর মুখাপেক্ষী"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর শুধু ধনীদের ইবাদত প্রয়োজন"
+        },
+        {
+          "id": "c",
+          "text": "ইবাদত আল্লাহকে আগে না জানা জ্ঞান দেয়"
+        },
+        {
+          "id": "d",
+          "text": "মানুষের প্রশংসা আল্লাহর শক্তির উৎস"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলো স্রষ্টার অমুখাপেক্ষিতাকে সৃষ্টির মুখাপেক্ষিতা থেকে আলাদা করে। ইবাদত আল্লাহর কোনো ঘাটতি পূরণ করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        },
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "57",
+          "label": "কুরআন ৫১:৫৭",
+          "url": "https://quran.com/51/57"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_022",
+      "conceptId": "beliefs_provider_and_means",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহ রিজিকদাতা—এই বিশ্বাসের সঙ্গে জীবিকার চেষ্টা কীভাবে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কাজ প্রমাণ করে রিজিক আল্লাহর কর্তৃত্বের বাইরে"
+        },
+        {
+          "id": "b",
+          "text": "সাধারণ চেষ্টাও তাঁর রিজিক আমাদের কাছে পৌঁছানোর মাধ্যম হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "বিশ্বাসের কারণে আয়ের প্রতিটি মাধ্যম প্রত্যাখ্যান করতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু অপ্রত্যাশিত উপহারই রিজিক হতে পারে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "এক আয়াতে আল্লাহকে রিজিকদাতা বলা হয়েছে। অন্য আয়াতে পৃথিবীতে চলাফেরা করে তাঁর দেওয়া রিজিক থেকে খেতে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "58",
+          "label": "কুরআন ৫১:৫৮",
+          "url": "https://quran.com/51/58"
+        },
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "15",
+          "label": "কুরআন ৬৭:১৫",
+          "url": "https://quran.com/67/15"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_023",
+      "conceptId": "beliefs_justice_and_grace",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সৎকাজের উদার প্রতিদান দেওয়ার অর্থ অবিচার নয় কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ন্যায়বিচারের জন্য প্রতিটি উদার প্রতিদান অস্বীকার করতে হয়"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিদান অন্যের ক্ষতির ওপর নির্ভর করতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "কারও প্রতি জুলুম না করেও আল্লাহ অতিরিক্ত অনুগ্রহ দিতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "অনুগ্রহ মানে ভালো-মন্দকে হুবহু একইভাবে দেখা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতেই জুলুম না করার সঙ্গে বহুগুণ প্রতিদান একত্রে এসেছে। ন্যায়বিচার ও উদারতা পরস্পরের বিপরীত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "কুরআন ৪:৪০",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_024",
+      "conceptId": "beliefs_revealed_unseen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অদেখা ঘটনা সম্পর্কে ওহি পাওয়া আর নিজে স্বাধীনভাবে সব জানার দাবি আলাদা কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেকোনো সঠিক ভবিষ্যদ্বাণী সীমাহীন জ্ঞান প্রমাণ করে"
+        },
+        {
+          "id": "b",
+          "text": "রাসুলের জ্ঞান আল্লাহর জ্ঞানের হুবহু সমান হতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "একবার ওহি হলে সব গোপন বিষয় সবার জানা হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "ওহি আল্লাহর দেওয়া জ্ঞান; তাঁর থেকে স্বাধীন জ্ঞান নয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো জ্ঞান ও তা প্রকাশের বিষয় আল্লাহর প্রতি সম্বন্ধিত করে। একটি বিষয় জানানো মানে গায়েবের প্রতিটি বিষয়ে সীমাহীন প্রবেশাধিকার নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "কুরআন ৭২:২৬-২৭",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_025",
+      "conceptId": "beliefs_jinn_moral_variety",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন ৭২:১১-এ জিনদের বর্ণনার সঙ্গে কোন ধারণাটি সাংঘর্ষিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব জিনের নৈতিক চরিত্র একই হতেই হবে"
+        },
+        {
+          "id": "b",
+          "text": "কিছু জিন সৎ"
+        },
+        {
+          "id": "c",
+          "text": "জিনেরা নৈতিকভাবে হুবহু একই নয়"
+        },
+        {
+          "id": "d",
+          "text": "কুরআনে তাদের মধ্যে পার্থক্যের কথা এসেছে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে স্পষ্টভাবে বিভিন্ন দলের কথা বলা হয়েছে, যার মধ্যে সৎ জিন এবং তাদের থেকে ভিন্ন অন্যরাও রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "11",
+          "label": "কুরআন ৭২:১১",
+          "url": "https://quran.com/72/11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_026",
+      "conceptId": "beliefs_messengers_chosen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জ্ঞানী শিক্ষক হওয়াই কাউকে রাসুল হিসেবে প্রতিষ্ঠা করে না কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি শিক্ষক এমনিতেই নবুয়তের ওহি পান"
+        },
+        {
+          "id": "b",
+          "text": "রাসুল হওয়া আল্লাহর মনোনয়ন; মানুষের দেওয়া যোগ্যতার স্বীকৃতি নয়"
+        },
+        {
+          "id": "c",
+          "text": "অনুসারীর বড় সংখ্যাই চূড়ান্ত পরীক্ষা"
+        },
+        {
+          "id": "d",
+          "text": "জনগণ ভোট দিয়ে কাউকে রাসুল বানাতে পারে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "পড়াশোনা কাউকে শিক্ষক করতে পারে। তবে আয়াতে রাসুল বেছে নেওয়ার বিষয়টি আল্লাহর প্রতি সম্বন্ধিত করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "75",
+          "label": "কুরআন ২২:৭৫",
+          "url": "https://quran.com/22/75"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_027",
+      "conceptId": "beliefs_messengers_rank",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সব রাসুলের প্রতি বিশ্বাসের সঙ্গে কাউকে বিশেষ মর্যাদা দেওয়া কীভাবে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবাইকে মানার অর্থ মর্যাদার প্রতিটি পার্থক্য অস্বীকার করা"
+        },
+        {
+          "id": "b",
+          "text": "মর্যাদার পার্থক্যে কিছু সত্য রাসুলকে প্রত্যাখ্যান করা যায়"
+        },
+        {
+          "id": "c",
+          "text": "সবাইকে সত্য রাসুল হিসেবে মানতে তাঁদের মর্যাদা হুবহু এক হওয়া জরুরি নয়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সর্বোচ্চ মর্যাদার রাসুলই আল্লাহর প্রেরিত ছিলেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতগুলো ভিন্ন বিষয় জানায়: আল্লাহর সব রাসুলকে মেনে নেওয়া এবং তাঁদের মধ্যে আল্লাহর দেওয়া বিশেষ মর্যাদা স্বীকার করা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "253",
+          "label": "কুরআন ২:২৫৩",
+          "url": "https://quran.com/2/253"
+        },
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_028",
+      "conceptId": "beliefs_shared_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অভিন্ন ওহিভিত্তিক বিশ্বাস মানে কি প্রতিটি সম্প্রদায় হুবহু একই বিস্তারিত বিধান পেয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি ব্যবহারিক বিধান হুবহু এক হতেই হবে"
+        },
+        {
+          "id": "b",
+          "text": "না, কারণ নবীরা সম্পর্কহীন বিভিন্ন উপাস্যের শিক্ষা দিয়েছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, তাই পরবর্তী নির্দেশনা কখনো আমল পরিচালনা করতে পারে না"
+        },
+        {
+          "id": "d",
+          "text": "না, অভিন্ন ভিত্তির সঙ্গে নির্ধারিত বিধানের পার্থক্য থাকতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো দ্বীনের ধারাবাহিকতা এবং বিভিন্ন সম্প্রদায়ের জন্য নির্ধারিত স্বতন্ত্র বিধান ও পথ বর্ণনা করে। এই শিক্ষাগুলো পরস্পরবিরোধী নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "13",
+          "label": "কুরআন ৪২:১৩",
+          "url": "https://quran.com/42/13"
+        },
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "48",
+          "label": "কুরআন ৫:৪৮",
+          "url": "https://quran.com/5/48"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_029",
+      "conceptId": "beliefs_universal_message",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন আরবি ভাষায় হওয়া মুহাম্মদ ﷺ-এর বার্তাকে আরবদের মধ্যে সীমাবদ্ধ করে না কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বার্তার উল্লিখিত শ্রোতা সমগ্র মানবজাতি"
+        },
+        {
+          "id": "b",
+          "text": "ভাষা এমনিতেই বার্তাকে একটি জাতিতে সীমাবদ্ধ করে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু মাতৃভাষাভাষীরাই ওহির সম্বোধিত হতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "অনুবাদে সম্পূর্ণ নতুন কোনো নবীর বার্তা তৈরি হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে নববী বার্তার পরিধি সমগ্র মানবজাতি বলা হয়েছে; একটি ভাষাগোষ্ঠী নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 34,
+          "ayahs": "28",
+          "label": "কুরআন ৩৪:২৮",
+          "url": "https://quran.com/34/28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_030",
+      "conceptId": "beliefs_intercession_permission",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সুপারিশ সম্পর্কে কোন ধারণাটি আল্লাহর কর্তৃত্ব অক্ষুণ্ণ রাখে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুপারিশকারী আল্লাহকে রায় বদলাতে বাধ্য করতে পারেন"
+        },
+        {
+          "id": "b",
+          "text": "সুপারিশকারী শুধু আল্লাহর অনুমতিতে সুপারিশ করেন"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর অনুমতি ছাড়া স্বাধীনভাবে সুপারিশ কেনা যায়"
+        },
+        {
+          "id": "d",
+          "text": "কোনো সৃষ্টি আল্লাহর চূড়ান্ত কর্তৃত্বের অংশীদার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি আল্লাহর অনুমতি থেকে স্বাধীনভাবে সুপারিশ করার ক্ষমতা অস্বীকার করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_031",
+      "conceptId": "beliefs_resurrection_precision",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দেহ পচে যাওয়া কেন পুনরুত্থান আল্লাহর ক্ষমতার বাইরে—এটি প্রমাণ করে না?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের দেহ গড়তে না পারা আল্লাহর ক্ষমতা সীমিত করে"
+        },
+        {
+          "id": "b",
+          "text": "পুনরুত্থান মানুষের নিখুঁত সংরক্ষণের ওপর নির্ভর করে"
+        },
+        {
+          "id": "c",
+          "text": "আয়াতগুলো দেহ একত্র করে পুনর্গঠনের তাঁর ক্ষমতা জানায়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু চিনতে পারা দেহাবশেষই আল্লাহ পুনর্গঠন করতে পারেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাড় নিয়ে সন্দেহের জবাবে কুরআন আরও সূক্ষ্ম পুনর্গঠনের ক্ষমতা জানায়। মানুষের সীমাবদ্ধতা আল্লাহর ক্ষমতার মাপকাঠি নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 75,
+          "ayahs": "3-4",
+          "label": "কুরআন ৭৫:৩-৪",
+          "url": "https://quran.com/75/3-4"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_032",
+      "conceptId": "beliefs_barzakh",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অবহেলিত দায়িত্ব শেষ করতে মৃত্যুর পর ফিরে আসার পরিকল্পনায় সমস্যা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রত্যেককে দুনিয়ায় আরেকটি সুযোগের প্রতিশ্রুতি দেওয়া হয়েছে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু জনপ্রিয় ব্যক্তিরা পরিকল্পনা শেষ করতে ফিরতে পারেন"
+        },
+        {
+          "id": "c",
+          "text": "পুনরুত্থান মানে একই দুনিয়ার জীবন অনন্তকাল পুনরাবৃত্তি করা"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতগুলো দুনিয়ার আমল নতুন করে করতে ফিরে আসা অস্বীকার করে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ফিরে এসে সৎকাজ করার আবেদন আয়াতগুলোতে প্রত্যাখ্যান করা হয়েছে। এরপর পুনরুত্থান পর্যন্ত অন্তরালের কথা এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "99-100",
+          "label": "কুরআন ২৩:৯৯-১০০",
+          "url": "https://quran.com/23/99-100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_033",
+      "conceptId": "beliefs_record_completeness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মানুষের নজর এড়ানো অন্যায় সম্পর্কে আমলনামা কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রচার না হলে জবাবদিহি মুছে যায় না"
+        },
+        {
+          "id": "b",
+          "text": "শুধু প্রকাশ্য কেলেঙ্কারিই আমলনামায় আসতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "মেসেজ মুছলেই প্রতিটি দায়িত্ব মুছে যায়"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ এখনো প্রমাণ করতে পারলেই শুধু কাজটি গণ্য হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতের পূর্ণাঙ্গ আমলনামা বিখ্যাত হওয়া বা মানুষের নথিতে থেকে যাওয়া কাজেই সীমাবদ্ধ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "কুরআন ১৮:৪৯",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_034",
+      "conceptId": "beliefs_faculties_accountable",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শ্রবণ, দৃষ্টি ও উপলব্ধির জবাবদিহি আমরা যে দাবিগুলো ছড়াই তাতে কী প্রভাব ফেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আত্মবিশ্বাস জ্ঞানের প্রয়োজন দূর করে"
+        },
+        {
+          "id": "b",
+          "text": "যা জানি ও যা শুধু ধারণা করি, তা আলাদা করতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "পুনরাবৃত্তিতে জনপ্রিয় দাবি নিশ্চিত হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "ধর্মীয় উৎসাহে নির্ভুলতা অপ্রয়োজনীয় হয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি আমাদের ক্ষমতাগুলোর দায়িত্বশীল ব্যবহারকে জ্ঞানহীন দাবি এড়ানোর সঙ্গে যুক্ত করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "কুরআন ১৭:৩৬",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_035",
+      "conceptId": "beliefs_no_compulsion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বিশ্বাসের কথা বলতে চাপ দেওয়া আর বিশ্বাস বুঝতে সাহায্য করা আলাদা কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জোর করলেই প্রতিটি বক্তব্যের বিষয়বস্তু সত্য হয়"
+        },
+        {
+          "id": "b",
+          "text": "ঘোষণা কত জোরে হলো, শুধু তাতেই আন্তরিকতা নির্ভর করে"
+        },
+        {
+          "id": "c",
+          "text": "জবরদস্তি ও স্বেচ্ছায় দৃঢ় বিশ্বাস এক নয়"
+        },
+        {
+          "id": "d",
+          "text": "চাপ সফল হলেই বোঝার প্রয়োজন থাকে না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে ধর্মে জবরদস্তি অস্বীকার করা হয়েছে। বাধ্য করে বলানো ঘোষণাকে প্রকৃত বিশ্বাসের সঙ্গে গুলিয়ে ফেলা উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "কুরআন ২:২৫৬",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_036",
+      "conceptId": "beliefs_deeds_and_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর রহমত প্রয়োজন মানে কি সৎকাজ অর্থহীন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, তাই সব আনুগত্য অপ্রয়োজনীয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, চেষ্টা রহমতের বিরোধী হবে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ যথেষ্ট আমল আল্লাহকে আমাদের মুখাপেক্ষী করে"
+        },
+        {
+          "id": "d",
+          "text": "না, আমলকে অবধারিত পাওনার দাবি না বানিয়ে মুমিনদের সৎকাজ করতে হবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে রহমতের মুখাপেক্ষিতা শেখানো হয়েছে। আয়াতে ঈমান ও সৎকাজের সঙ্গে প্রতিদানের সম্পর্ক এসেছে। বিনয় ও চেষ্টা একসঙ্গেই থাকবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2816c",
+          "label": "সহিহ মুসলিম ২৮১৬c",
+          "url": "https://sunnah.com/muslim:2816c"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "124",
+          "label": "কুরআন ৪:১২৪",
+          "url": "https://quran.com/4/124"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_037",
+      "conceptId": "beliefs_hope_and_warning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন মনোভাব এই আয়াতগুলোর দুটি শিক্ষা একসঙ্গে ধরে রাখে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যায়কে গুরুত্ব দিয়ে রহমতের আশা রাখা"
+        },
+        {
+          "id": "b",
+          "text": "ইচ্ছাকৃত অন্যায় কখনো গুরুত্বপূর্ণ নয় বলে নিশ্চিন্ত থাকা"
+        },
+        {
+          "id": "c",
+          "text": "কোনো গুনাহগার ক্ষমা পেতেই পারে না বলে নিশ্চিত হওয়া"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি সতর্কতা আরও কঠোর করতে রহমত উপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলো উদাসীনতা ছাড়া আশা এবং আল্লাহর রহমত অস্বীকার না করে সতর্কতা সমর্থন করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "49-50",
+          "label": "কুরআন ১৫:৪৯-৫০",
+          "url": "https://quran.com/15/49-50"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_038",
+      "conceptId": "beliefs_rights_and_hereafter",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্য সৎকাজ করলে আরেকজনের অনাদায়ী অধিকার গুরুত্বহীন হয় না কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রকাশ্য ভালো কাজ এমনিতেই প্রতিটি ব্যক্তিগত ঋণ বাতিল করে"
+        },
+        {
+          "id": "b",
+          "text": "হাদিসে মানুষের প্রতি অন্যায়ের জবাবদিহি বর্ণনা করা হয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু টাকা জড়িত অন্যায় গুরুত্বপূর্ণ হতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "ভুক্তভোগীর অধিকার অন্যায়কারীর জনপ্রিয়তার ওপর নির্ভর করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় সতর্ক করা হয়েছে, অমীমাংসিত জুলুম ব্যক্তির সৎকাজে প্রভাব ফেলতে পারে। ভালো কাজ অন্যের অধিকার উপেক্ষার অজুহাত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "সহিহ বুখারি ২৪৪৯",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_039",
+      "conceptId": "beliefs_life_as_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দেখতে আকর্ষণীয় কাজ গুনে যাওয়া জীবনের পরীক্ষার পূর্ণ মাপকাঠি নয় কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষ লক্ষ করে এমন কাজেরই শুধু মূল্য আছে"
+        },
+        {
+          "id": "b",
+          "text": "গুণগত মান ও দায়িত্ব কখনো গুরুত্বপূর্ণ নয়"
+        },
+        {
+          "id": "c",
+          "text": "আয়াতটি কারা আমলে উত্তম তা নিয়ে; শুধু বাহ্যিক পরিমাণ নয়"
+        },
+        {
+          "id": "d",
+          "text": "যাঁর তালিকা সবচেয়ে দীর্ঘ, তিনিই সেরা হতেই হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি দৃশ্যমান মোট সংখ্যা নিয়ে প্রতিযোগিতার বদলে আমলের উৎকর্ষের দিকে মনোযোগ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "কুরআন ৬৭:২",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_040",
+      "conceptId": "beliefs_satan_and_choice",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শয়তানকে দোষ দিলেই ইচ্ছাকৃত অন্যায়ের দায় শেষ হয় না কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শয়তান ব্যক্তির হয়ে সব পরিণাম গ্রহণ করে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি প্ররোচনা পরের কাজটি বাধ্যতামূলক করে"
+        },
+        {
+          "id": "c",
+          "text": "শয়তানের মিথ্যা প্রতিশ্রুতি অন্যায়কে সঠিক করে"
+        },
+        {
+          "id": "d",
+          "text": "প্ররোচনা ব্যক্তির সাড়া ও সিদ্ধান্ত মুছে দেয় না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে শয়তান স্বীকার করে যে সে ডেকেছিল আর মানুষ সাড়া দিয়েছিল। সে তাদের পরিণাম থেকে উদ্ধার করতে পারে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "22",
+          "label": "কুরআন ১৪:২২",
+          "url": "https://quran.com/14/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_041",
+      "conceptId": "beliefs_worship_and_need",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বক্তা বললেন, মানুষ ইবাদত বন্ধ করলে আল্লাহ দুর্বল হয়ে যাবেন। আয়াতগুলো অনুযায়ী সঠিক জবাব কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের ক্ষমতার জন্য আল্লাহ মানুষের ইবাদতের ওপর নির্ভর করেন না"
+        },
+        {
+          "id": "b",
+          "text": "শুধু কিছু জাতির ইবাদত তাঁর ক্ষমতা বজায় রাখে"
+        },
+        {
+          "id": "c",
+          "text": "ইবাদতকারীর সংখ্যায় তাঁর ক্ষমতা বাড়ে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু কঠিন সময়ে তাঁর ইবাদতের প্রয়োজন হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহর অমুখাপেক্ষিতার অর্থ, মানুষের ইবাদত তাঁর ক্ষমতা জোগায় না। মানুষই তাঁর মুখাপেক্ষী থাকে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        },
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "57",
+          "label": "কুরআন ৫১:৫৭",
+          "url": "https://quran.com/51/57"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_042",
+      "conceptId": "beliefs_provider_and_means",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আল্লাহ রিজিকদাতা বলে কেউ উপযুক্ত কাজ করতে অস্বীকার করছেন। কোন জবাব শিক্ষাগুলো ভালোভাবে যুক্ত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপার্জন সব সময় ভরসার বিরোধী ধরে নিন"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর ওপর ভরসা রেখে উপযুক্ত মাধ্যমে রিজিক খুঁজুন"
+        },
+        {
+          "id": "c",
+          "text": "শুধু চেষ্টা ছাড়া পাওয়া টাকাকে রিজিক মনে করুন"
+        },
+        {
+          "id": "d",
+          "text": "সফল কাজে আল্লাহর মুখাপেক্ষিতা পুরো শেষ হয় বিশ্বাস করুন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহকে রিজিকদাতা মানার সঙ্গে জীবিকার চেষ্টা সামঞ্জস্যপূর্ণ। মাধ্যম ব্যবহার করা সেগুলোকে তাঁর থেকে স্বাধীন করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "58",
+          "label": "কুরআন ৫১:৫৮",
+          "url": "https://quran.com/51/58"
+        },
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "15",
+          "label": "কুরআন ৬৭:১৫",
+          "url": "https://quran.com/67/15"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_043",
+      "conceptId": "beliefs_justice_and_grace",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক শিক্ষার্থী ভাবছেন, সৎকাজের প্রতিদান বহুগুণ করা ন্যায়বিচারের বিরোধী হতেই হবে। আয়াতটি কীভাবে বোঝা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি অতিরিক্ত প্রতিদানে অন্য কারও প্রতি অবিচার লাগবেই"
+        },
+        {
+          "id": "b",
+          "text": "ন্যায়বিচার মানে আল্লাহ কোনো অনুগ্রহ দিতে পারেন না"
+        },
+        {
+          "id": "c",
+          "text": "কারও প্রতি জুলুম না করেও আল্লাহ উদার হতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "সবার ফল হুবহু এক হলেই শুধু ন্যায়বিচার হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে আল্লাহ জুলুম করেন না এবং সৎকাজের প্রতিদান বহুগুণ করেন—দুটিই ঘোষণা করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "কুরআন ৪:৪০",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_044",
+      "conceptId": "beliefs_revealed_unseen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক সহপাঠী বললেন, ভবিষ্যৎ সম্পর্কে ওহিভিত্তিক সংবাদ মানেই রাসুল নিজে স্বাধীনভাবে সব গোপন বিষয় জানতেন। কী সংশোধন দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একটি ঘটনা ওহিতে জানলে গায়েবের সব বিষয় সমানভাবে জানা হয়"
+        },
+        {
+          "id": "b",
+          "text": "ওহি রাসুলের নিজের ক্ষমতা থেকে আসতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "ভবিষ্যৎ সম্পর্কে প্রতিটি সঠিক কথা নিজের থেকেই তৈরি হয়"
+        },
+        {
+          "id": "d",
+          "text": "ওহিতে একটি বিষয় জানা স্বাধীন ও সীমাহীন জ্ঞান প্রমাণ করে না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো আল্লাহর জ্ঞানকে তাঁর মনোনীত রাসুলকে জানানো জ্ঞান থেকে আলাদা করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "কুরআন ৭২:২৬-২৭",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_045",
+      "conceptId": "beliefs_jinn_moral_variety",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক আলোচনায় দাবি করা হলো, প্রতিটি জিন অবশ্যই অসৎ। আয়াত অনুযায়ী সঠিক সংশোধন কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআনে সৎ জিনের পাশাপাশি অন্যদেরও বর্ণনা রয়েছে"
+        },
+        {
+          "id": "b",
+          "text": "জিন ও ফেরেশতা একই অর্থের দুটি নাম"
+        },
+        {
+          "id": "c",
+          "text": "সব জিনের নৈতিক অবস্থা হুবহু এক"
+        },
+        {
+          "id": "d",
+          "text": "কোনো জিনকে কখনো সৎ বলা যায় না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সুরা আল-জিনে তাদের নৈতিক পার্থক্য বর্ণিত হয়েছে। তারা অদৃশ্য বলে ওহির বক্তব্য উপেক্ষা করা যায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "11",
+          "label": "কুরআন ৭২:১১",
+          "url": "https://quran.com/72/11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_046",
+      "conceptId": "beliefs_messengers_chosen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি দল বলছে, তাদের ভোটে সম্মানিত শিক্ষক আল্লাহর রাসুল হয়ে যেতে পারেন। কোন মূলনীতি প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যথেষ্ট ভোটে ওহি তৈরি হয়"
+        },
+        {
+          "id": "b",
+          "text": "মানুষ ভোট দিয়ে আল্লাহর মনোনয়ন প্রদান করতে পারে না"
+        },
+        {
+          "id": "c",
+          "text": "শিক্ষার্থীদের সম্মানই রাসুল হওয়ার মর্যাদা"
+        },
+        {
+          "id": "d",
+          "text": "শিক্ষাদানের ক্ষমতায় এমনিতেই একই মর্যাদা আসে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে রাসুল মনোনয়ন আল্লাহর প্রতি সম্বন্ধিত করা হয়েছে; কোনো সম্প্রদায়ের সিদ্ধান্তের প্রতি নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "75",
+          "label": "কুরআন ২২:৭৫",
+          "url": "https://quran.com/22/75"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_047",
+      "conceptId": "beliefs_messengers_rank",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু বললেন, সব রাসুলকে মানলে কাউকে আল্লাহর বিশেষ মর্যাদা দেওয়ার কথা অস্বীকার করতে হবে। সঠিক পার্থক্য কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু সমমর্যাদার ব্যক্তিরাই সত্য রাসুল হতে পারেন"
+        },
+        {
+          "id": "b",
+          "text": "একজন রাসুলকে মানতে অন্যদের অস্বীকার করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "সবাইকে সত্য হিসেবে মানা হয়, আর আল্লাহ মর্যাদার পার্থক্য দেন"
+        },
+        {
+          "id": "d",
+          "text": "মর্যাদার পার্থক্য আমাদের পছন্দে নির্ধারিত হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সব রাসুলের প্রতি ঈমান এবং তাঁদের মধ্যে আল্লাহর দেওয়া বিশেষ মর্যাদা—দুটিই কুরআনে শেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "253",
+          "label": "কুরআন ২:২৫৩",
+          "url": "https://quran.com/2/253"
+        },
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_048",
+      "conceptId": "beliefs_shared_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ বললেন, নির্ধারিত বিধান আলাদা হওয়াই প্রমাণ করে নবীদের অভিন্ন বিশ্বাস থাকতে পারে না। আয়াতগুলো অনুযায়ী উত্তর কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিধানের প্রতিটি পার্থক্য আলাদা স্রষ্টা বোঝায়"
+        },
+        {
+          "id": "b",
+          "text": "কোনো নবী আমলের নির্দেশনা পাননি"
+        },
+        {
+          "id": "c",
+          "text": "অভিন্ন বিশ্বাস মানে ইতিহাসের প্রতিটি বিধান হুবহু এক থাকে"
+        },
+        {
+          "id": "d",
+          "text": "অভিন্ন ভিত্তির জন্য হুবহু একই বিস্তারিত বিধান জরুরি নয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন নির্ধারিত বিধান ও পথের পার্থক্যের পাশাপাশি ওহিভিত্তিক দ্বীনের ধারাবাহিকতা শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "13",
+          "label": "কুরআন ৪২:১৩",
+          "url": "https://quran.com/42/13"
+        },
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "48",
+          "label": "কুরআন ৫:৪৮",
+          "url": "https://quran.com/5/48"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_049",
+      "conceptId": "beliefs_universal_message",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক অ্যাপের বিবরণে লেখা, ইসলামের বার্তা শুধু আরব পরিবারে জন্ম নেওয়া মানুষের জন্য। কী লেখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জাতিগত পরিচয়ের বাইরে বার্তাটি মানবজাতির জন্য"
+        },
+        {
+          "id": "b",
+          "text": "বার্তাটি শুধু মাতৃভাষা আরবি এমন মানুষের জন্য"
+        },
+        {
+          "id": "c",
+          "text": "বার্তাটি শুধু নবী ﷺ-এর গোত্রের বংশধরদের জন্য"
+        },
+        {
+          "id": "d",
+          "text": "জাতিগত বংশপরিচয় নির্দেশনার প্রাসঙ্গিকতা ঠিক করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে বর্ণিত নববী বার্তা একটি বংশগোষ্ঠীর বদলে সমগ্র মানবজাতির উদ্দেশে এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 34,
+          "ayahs": "28",
+          "label": "কুরআন ৩৪:২৮",
+          "url": "https://quran.com/34/28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_050",
+      "conceptId": "beliefs_intercession_permission",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ টাকা নিয়ে এমন সুপারিশের প্রতিশ্রুতি দেয়, যা নাকি আল্লাহর সিদ্ধান্ত অগ্রাহ্য করে। কোন বিশ্বাস দাবিটি বাতিল করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বেশি টাকা আল্লাহর ঊর্ধ্বে কর্তৃত্ব তৈরি করে"
+        },
+        {
+          "id": "b",
+          "text": "সুপারিশ আল্লাহর অনুমতির অধীন"
+        },
+        {
+          "id": "c",
+          "text": "সুপারিশকারী স্রষ্টা থেকে স্বাধীন"
+        },
+        {
+          "id": "d",
+          "text": "আত্মবিশ্বাসী প্রতিশ্রুতি আল্লাহর অনুমতির প্রয়োজন দূর করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতুল কুরসি আল্লাহকে বাধ্য করতে বা তাঁর সিদ্ধান্ত অগ্রাহ্য করতে পারে এমন স্বাধীন ক্ষমতা স্বীকার করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_051",
+      "conceptId": "beliefs_resurrection_precision",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক ভিডিওতে দাবি করা হলো, আল্লাহ পুনরুত্থিত করতে হলে দেহ অক্ষত থাকতেই হবে। আয়াতগুলো অনুযায়ী উত্তর কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের সংরক্ষণেই পুনরুত্থান সম্ভব হয়"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি হাড় আছে এমন দেহই শুধু পুনরুত্থিত হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "পচনের কারণে আল্লাহর পুনর্গঠনের ক্ষমতা সীমিত হয় না"
+        },
+        {
+          "id": "d",
+          "text": "দেহের কোনো অংশ হারানো আল্লাহর ক্ষমতাকে ব্যর্থ করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাড় একত্র করা নিয়ে সন্দেহের জবাবে আয়াতগুলো আঙুলের ডগাও পুনর্গঠন করার আল্লাহর ক্ষমতা ঘোষণা করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 75,
+          "ayahs": "3-4",
+          "label": "কুরআন ৭৫:৩-৪",
+          "url": "https://quran.com/75/3-4"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_052",
+      "conceptId": "beliefs_barzakh",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ এখন সৎকাজ উপেক্ষা করে মৃত্যুর পর ফিরে এসে তা করার পরিকল্পনা করছেন। কী আবার ভাবা দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রত্যেকেই অতিরিক্ত দুনিয়াবি জীবন চাইতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মৃত্যুর পরই সৎকাজ সম্ভব হয়"
+        },
+        {
+          "id": "c",
+          "text": "অন্তরাল থাকার অর্থ দুনিয়ার দায়িত্ব কখনো গুরুত্বপূর্ণ ছিল না"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতগুলো এমন দ্বিতীয় দুনিয়াবি সুযোগ দেয় না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ফিরে এসে সৎকাজ করার আবেদন প্রত্যাখ্যান করা হয়েছে। আয়াতগুলো বর্তমান সুযোগকে গুরুত্ব দিতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "99-100",
+          "label": "কুরআন ২৩:৯৯-১০০",
+          "url": "https://quran.com/23/99-100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_053",
+      "conceptId": "beliefs_record_completeness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক ব্যক্তি ভাবছেন, ইচ্ছাকৃত অন্যায়ের একমাত্র অনলাইন রেকর্ড মুছলেই সব জবাবদিহি শেষ। আয়াত অনুযায়ী তাঁকে কী মনে করানো যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের মুছে দেওয়ায় আল্লাহর আমলনামা মুছে যায় না"
+        },
+        {
+          "id": "b",
+          "text": "ডিভাইসে সংরক্ষিত কাজই শুধু লেখা হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "স্ক্রিনশট না থাকলে অন্যায় সঠিক হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "ফাইল সম্পাদনা করে মানুষ চূড়ান্ত আমলনামা নিয়ন্ত্রণ করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে বর্ণিত আমলনামা মানুষের সংরক্ষণের ওপর নির্ভরশীল নয়। দায়িত্ব হলো অন্যায়ের প্রতিকার করা; শুধু প্রমাণ লুকানো নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "কুরআন ১৮:৪৯",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_054",
+      "conceptId": "beliefs_faculties_accountable",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ধর্মীয় একটি দাবি অনুপ্রেরণাদায়ক শোনায়, কিন্তু সত্য কি না জানেন না। আয়াত অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো লাগছে বলে নিশ্চিত সত্য হিসেবে ছড়াবেন"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিষ্ঠিত জ্ঞান হিসেবে জানানোর আগে যাচাই করবেন"
+        },
+        {
+          "id": "c",
+          "text": "আত্মবিশ্বাসকে প্রমাণের বিকল্প মনে করবেন"
+        },
+        {
+          "id": "d",
+          "text": "জনপ্রিয়তায় নির্ভুলতার দায় শেষ ধরে নেবেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে অজানা বিষয়ের অনুসরণ থেকে সতর্ক করা হয়েছে। ধর্মীয় দাবিতেও শোনা ও বোঝার ক্ষমতা দায়িত্বশীলভাবে ব্যবহার করতে হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "কুরআন ১৭:৩৬",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_055",
+      "conceptId": "beliefs_no_compulsion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক অমুসলিম বন্ধুকে ঈমানের ঘোষণা দিতে হুমকির প্রস্তাব করা হলো। আয়াতের মূলনীতি অনুযায়ী সঠিক আচরণ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কথাগুলো ধর্মীয়ভাবে সঠিক হলে হুমকি দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "শুধু ভয়কেই আন্তরিক বিশ্বাস হিসেবে গণ্য করা"
+        },
+        {
+          "id": "c",
+          "text": "ঘোষণায় জবরদস্তি না করে ঈমানের বিষয় বুঝিয়ে বলা"
+        },
+        {
+          "id": "d",
+          "text": "চাপ দিলে আর বোঝার দরকার নেই ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে ধর্মে জবরদস্তি অস্বীকার করা হয়েছে। ঈমান বুঝিয়ে বলা আর জোর করে ঘোষণা আদায় করা ভিন্ন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "কুরআন ২:২৫৬",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_056",
+      "conceptId": "beliefs_deeds_and_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিয়মিত এক ইবাদতকারী বললেন, তাঁর আমলের কারণে আল্লাহর রহমত আর দরকার নেই। কী মনে রাখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যথেষ্ট দৃশ্যমান ইবাদতে রহমত অপ্রয়োজনীয় হয়"
+        },
+        {
+          "id": "b",
+          "text": "শুধু নবী ﷺ-এর রহমত প্রয়োজন ছিল"
+        },
+        {
+          "id": "c",
+          "text": "রহমতের প্রয়োজনে প্রতিটি সৎকাজ মূল্যহীন হয়"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর রহমতের মুখাপেক্ষী থেকেই সৎকাজ চালিয়ে যেতে হবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে আল্লাহর রহমতের মুখাপেক্ষিতায় নবী ﷺ-কেও অন্তর্ভুক্ত করা হয়েছে। আয়াতেও ঈমান ও সৎকাজের মূল্য নিশ্চিত করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2816c",
+          "label": "সহিহ মুসলিম ২৮১৬c",
+          "url": "https://sunnah.com/muslim:2816c"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "124",
+          "label": "কুরআন ৪:১২৪",
+          "url": "https://quran.com/4/124"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_057",
+      "conceptId": "beliefs_hope_and_warning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু আল্লাহর রহমতকে ইচ্ছাকৃত অন্যায় উপেক্ষার কারণ বানাচ্ছেন। কোন স্মরণ করানো আয়াতগুলোর ভারসাম্য রাখে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষমার আশার সঙ্গে আল্লাহর সতর্কতাও গুরুত্ব দিতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "রহমত মানে ইচ্ছাকৃত অন্যায় সব সময় ক্ষতিহীন"
+        },
+        {
+          "id": "c",
+          "text": "সতর্কতা প্রমাণ করে ক্ষমা অসম্ভব"
+        },
+        {
+          "id": "d",
+          "text": "শুধু ভয় গুরুত্বপূর্ণ; আশার কোনো স্থান নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলো রহমত ও সতর্কতা একসঙ্গে রাখে। এগুলো অন্যায়কে হালকা না করে আল্লাহর দিকে ফেরার শিক্ষা দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "49-50",
+          "label": "কুরআন ১৫:৪৯-৫০",
+          "url": "https://quran.com/15/49-50"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_058",
+      "conceptId": "beliefs_rights_and_hereafter",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কারও টাকা আটকে রেখেছিলেন, এখন সংশোধন করতে চান। হাদিসের সতর্কতা অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য কোনো ভালো কাজ করে টাকা রেখে দেবেন"
+        },
+        {
+          "id": "b",
+          "text": "ব্যক্তির প্রাপ্য মিটিয়ে যথাযথভাবে ক্ষমা চাইবেন"
+        },
+        {
+          "id": "c",
+          "text": "প্রকাশ্য প্রশংসায় বিষয়টি হারিয়ে যাওয়ার অপেক্ষা করবেন"
+        },
+        {
+          "id": "d",
+          "text": "ধর্মীয় জ্ঞানে পাওনা বাতিল হয় ধরে নেবেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে শেষ দিনের আগে মানুষের প্রতি অন্যায়ের নিষ্পত্তি করতে উৎসাহ দেওয়া হয়েছে। অন্য সৎকাজের নামে তাদের অধিকার উপেক্ষা করা উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "সহিহ বুখারি ২৪৪৯",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_059",
+      "conceptId": "beliefs_life_as_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুইজের ফলে অনেক উত্তর সঠিক হয়েছে। জীবন আমলের পরীক্ষা—এর সঙ্গে কোন প্রতিক্রিয়া সবচেয়ে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু নম্বরেই প্রতিটি আমল কবুল হওয়া প্রমাণিত ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "দায়িত্বশীল কাজের বিকল্প হিসেবে জ্ঞানকে ব্যবহার করা"
+        },
+        {
+          "id": "c",
+          "text": "যা জানেন তা জীবনযাপন উন্নত করতে কাজে লাগানো"
+        },
+        {
+          "id": "d",
+          "text": "ফল দিয়ে নিজেকে সবার চেয়ে ভালো ঘোষণা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জ্ঞান কাজে সহায়তা করতে পারে, তবে আয়াতটি আমলের উৎকর্ষের দিকে মনোযোগ দেয়। কুইজের ফল আল্লাহর কাছে কারও মর্যাদার বিচার নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "কুরআন ৬৭:২",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_060",
+      "conceptId": "beliefs_satan_and_choice",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জেনেশুনে ক্ষতিকর সিদ্ধান্ত নেওয়ার পর কেউ বললেন, সব দোষ শয়তানের। তাঁর কী বোঝা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শয়তানের ডাক এমনিতেই জবাবদিহি বাতিল করে"
+        },
+        {
+          "id": "b",
+          "text": "প্ররোচনা জোরালো হলে ক্ষতি করা বৈধ হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "শয়তান প্রতিটি পরিণাম থেকে মুক্তির নিশ্চয়তা দেয়"
+        },
+        {
+          "id": "d",
+          "text": "প্ররোচনা অন্যায় সংশোধনের দায়িত্ব দূর করে না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে শয়তান স্বীকার করে যে সে ডেকেছিল আর মানুষ সাড়া দিয়েছিল। তাকে দোষ দেওয়া নিজের ইচ্ছাকৃত কাজের দায়িত্ব নেওয়ার বিকল্প নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "22",
+          "label": "কুরআন ১৪:২২",
+          "url": "https://quran.com/14/22"
+        }
+      ]
+    }
+  ]
+}

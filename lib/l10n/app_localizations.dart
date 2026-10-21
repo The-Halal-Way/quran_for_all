@@ -8866,6 +8866,618 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Explore 40 hadiths through stories for children.'**
   String get kidsBooksHadithDescription;
+
+  /// No description provided for @quizAssessmentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Islamic Knowledge Assessment'**
+  String get quizAssessmentTitle;
+
+  /// No description provided for @quizDashboardSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reflect on what you know. Discover what to revisit.'**
+  String get quizDashboardSubtitle;
+
+  /// No description provided for @quizDashboardAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your learning path'**
+  String get quizDashboardAction;
+
+  /// No description provided for @quizEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'A MOMENT TO REFLECT'**
+  String get quizEyebrow;
+
+  /// No description provided for @quizIntroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Let curiosity lead the way'**
+  String get quizIntroTitle;
+
+  /// No description provided for @quizIntroDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'A fresh selection across Islamic subjects, with explanations to explore after you finish.'**
+  String get quizIntroDescription;
+
+  /// No description provided for @quizSampleNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'This result describes your performance on these sampled questions only. It does not measure faith, piety, or complete Islamic knowledge.'**
+  String get quizSampleNotice;
+
+  /// No description provided for @quizPreviewNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Development preview · these question banks are awaiting editorial and scholarly review.'**
+  String get quizPreviewNotice;
+
+  /// No description provided for @quizStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Begin assessment'**
+  String get quizStart;
+
+  /// No description provided for @quizResume.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue your assessment'**
+  String get quizResume;
+
+  /// No description provided for @quizDiscard.
+  ///
+  /// In en, this message translates to:
+  /// **'Discard attempt'**
+  String get quizDiscard;
+
+  /// No description provided for @quizDiscardTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Discard this attempt?'**
+  String get quizDiscardTitle;
+
+  /// No description provided for @quizDiscardMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your current answers will be left unfinished. Questions you have already seen remain in your question history.'**
+  String get quizDiscardMessage;
+
+  /// No description provided for @quizSubjects.
+  ///
+  /// In en, this message translates to:
+  /// **'Subjects'**
+  String get quizSubjects;
+
+  /// No description provided for @quizQuestions.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions'**
+  String get quizQuestions;
+
+  /// No description provided for @quizUntimed.
+  ///
+  /// In en, this message translates to:
+  /// **'No time limit'**
+  String get quizUntimed;
+
+  /// No description provided for @quizQuestionMix.
+  ///
+  /// In en, this message translates to:
+  /// **'Your question mix'**
+  String get quizQuestionMix;
+
+  /// No description provided for @quizPerSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'From every subject'**
+  String get quizPerSubject;
+
+  /// No description provided for @quizHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Past attempts'**
+  String get quizHistory;
+
+  /// No description provided for @quizHistoryEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Your completed assessments will appear here.'**
+  String get quizHistoryEmpty;
+
+  /// No description provided for @quizNotSure.
+  ///
+  /// In en, this message translates to:
+  /// **'I’m not sure'**
+  String get quizNotSure;
+
+  /// No description provided for @quizNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next question'**
+  String get quizNext;
+
+  /// No description provided for @quizPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous'**
+  String get quizPrevious;
+
+  /// No description provided for @quizSkip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip for now'**
+  String get quizSkip;
+
+  /// No description provided for @quizClear.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear response'**
+  String get quizClear;
+
+  /// No description provided for @quizSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish assessment'**
+  String get quizSubmit;
+
+  /// No description provided for @quizSubmitTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish with unanswered questions?'**
+  String get quizSubmitTitle;
+
+  /// No description provided for @quizSubmitMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Unanswered questions will be included in your results as unanswered. You can return to them before finishing.'**
+  String get quizSubmitMessage;
+
+  /// No description provided for @quizSubmitAnyway.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish and view results'**
+  String get quizSubmitAnyway;
+
+  /// No description provided for @quizKeepGoing.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep answering'**
+  String get quizKeepGoing;
+
+  /// No description provided for @quizNavigator.
+  ///
+  /// In en, this message translates to:
+  /// **'Question navigator'**
+  String get quizNavigator;
+
+  /// No description provided for @quizSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress saved on this device'**
+  String get quizSaved;
+
+  /// No description provided for @quizSaving.
+  ///
+  /// In en, this message translates to:
+  /// **'Saving your progress…'**
+  String get quizSaving;
+
+  /// No description provided for @quizPreparing.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing your questions…'**
+  String get quizPreparing;
+
+  /// No description provided for @quizLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Opening your assessment…'**
+  String get quizLoading;
+
+  /// No description provided for @quizResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your sampled results'**
+  String get quizResultsTitle;
+
+  /// No description provided for @quizCorrect.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct'**
+  String get quizCorrect;
+
+  /// No description provided for @quizIncorrect.
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect'**
+  String get quizIncorrect;
+
+  /// No description provided for @quizUnknown.
+  ///
+  /// In en, this message translates to:
+  /// **'Not sure'**
+  String get quizUnknown;
+
+  /// No description provided for @quizUnanswered.
+  ///
+  /// In en, this message translates to:
+  /// **'Unanswered'**
+  String get quizUnanswered;
+
+  /// No description provided for @quizSubjectBreakdown.
+  ///
+  /// In en, this message translates to:
+  /// **'By subject'**
+  String get quizSubjectBreakdown;
+
+  /// No description provided for @quizDifficultyBreakdown.
+  ///
+  /// In en, this message translates to:
+  /// **'By difficulty'**
+  String get quizDifficultyBreakdown;
+
+  /// No description provided for @quizReview.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore the explanations'**
+  String get quizReview;
+
+  /// No description provided for @quizReviewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Review & reflect'**
+  String get quizReviewTitle;
+
+  /// No description provided for @quizRetake.
+  ///
+  /// In en, this message translates to:
+  /// **'Try a new selection'**
+  String get quizRetake;
+
+  /// No description provided for @quizBackToOverview.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to overview'**
+  String get quizBackToOverview;
+
+  /// No description provided for @quizYourAnswer.
+  ///
+  /// In en, this message translates to:
+  /// **'Your response'**
+  String get quizYourAnswer;
+
+  /// No description provided for @quizCorrectAnswer.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answer'**
+  String get quizCorrectAnswer;
+
+  /// No description provided for @quizExplanation.
+  ///
+  /// In en, this message translates to:
+  /// **'Why this answer'**
+  String get quizExplanation;
+
+  /// No description provided for @quizReferences.
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get quizReferences;
+
+  /// No description provided for @quizFoundation.
+  ///
+  /// In en, this message translates to:
+  /// **'Foundation'**
+  String get quizFoundation;
+
+  /// No description provided for @quizIntermediate.
+  ///
+  /// In en, this message translates to:
+  /// **'Intermediate'**
+  String get quizIntermediate;
+
+  /// No description provided for @quizAdvanced.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get quizAdvanced;
+
+  /// No description provided for @quizBeliefs.
+  ///
+  /// In en, this message translates to:
+  /// **'Beliefs & Foundations'**
+  String get quizBeliefs;
+
+  /// No description provided for @quizQuran.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran Knowledge'**
+  String get quizQuran;
+
+  /// No description provided for @quizSeerah.
+  ///
+  /// In en, this message translates to:
+  /// **'Seerah'**
+  String get quizSeerah;
+
+  /// No description provided for @quizHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith Knowledge'**
+  String get quizHadith;
+
+  /// No description provided for @quizWorship.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyday Worship'**
+  String get quizWorship;
+
+  /// No description provided for @quizCharacter.
+  ///
+  /// In en, this message translates to:
+  /// **'Character & Conduct'**
+  String get quizCharacter;
+
+  /// No description provided for @quizErrorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Assessment unavailable'**
+  String get quizErrorTitle;
+
+  /// No description provided for @quizErrorConfig.
+  ///
+  /// In en, this message translates to:
+  /// **'The assessment settings are missing or unsupported. Your saved attempts have been kept.'**
+  String get quizErrorConfig;
+
+  /// No description provided for @quizErrorAssets.
+  ///
+  /// In en, this message translates to:
+  /// **'The question files are missing or inconsistent. Please retry after updating the app.'**
+  String get quizErrorAssets;
+
+  /// No description provided for @quizErrorTranslation.
+  ///
+  /// In en, this message translates to:
+  /// **'The selected question language is unavailable. Your saved answers and progress have been kept.'**
+  String get quizErrorTranslation;
+
+  /// No description provided for @quizErrorInsufficient.
+  ///
+  /// In en, this message translates to:
+  /// **'There are not enough distinct concepts to meet this assessment’s subject and question-mix quotas.'**
+  String get quizErrorInsufficient;
+
+  /// No description provided for @quizErrorStorage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your latest action could not be saved. Please retry it before leaving the assessment.'**
+  String get quizErrorStorage;
+
+  /// No description provided for @quizErrorSaved.
+  ///
+  /// In en, this message translates to:
+  /// **'A saved assessment could not be read safely. No saved data has been deleted.'**
+  String get quizErrorSaved;
+
+  /// No description provided for @quizErrorReview.
+  ///
+  /// In en, this message translates to:
+  /// **'These question banks are awaiting editorial and scholarly review before publication.'**
+  String get quizErrorReview;
+
+  /// No description provided for @quizErrorCooldown.
+  ///
+  /// In en, this message translates to:
+  /// **'A new assessment is not available yet. You can still explore your saved results.'**
+  String get quizErrorCooldown;
+
+  /// No description provided for @quizRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get quizRetry;
+
+  /// No description provided for @quizLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Assessment language'**
+  String get quizLanguage;
+
+  /// No description provided for @quizReusedNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Some previously seen questions were reused to keep the configured subject and question balance. Distinct concepts are preserved.'**
+  String get quizReusedNotice;
+
+  /// No description provided for @quizRetakeDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'New attempts are disabled in the current assessment settings.'**
+  String get quizRetakeDisabled;
+
+  /// No description provided for @quizTimeRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'Time remaining'**
+  String get quizTimeRemaining;
+
+  /// No description provided for @quizTimeExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'The time limit has ended.'**
+  String get quizTimeExpired;
+
+  /// No description provided for @quizOpenLinkError.
+  ///
+  /// In en, this message translates to:
+  /// **'This reference could not be opened.'**
+  String get quizOpenLinkError;
+
+  /// No description provided for @quizProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {current} of {total}'**
+  String quizProgress(int current, int total);
+
+  /// No description provided for @quizAnsweredCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{answered} of {total} responses recorded'**
+  String quizAnsweredCount(int answered, int total);
+
+  /// No description provided for @quizCorrectOf.
+  ///
+  /// In en, this message translates to:
+  /// **'{correct} of {total} correct'**
+  String quizCorrectOf(int correct, int total);
+
+  /// No description provided for @quizQuota.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} {difficulty}'**
+  String quizQuota(int count, String difficulty);
+
+  /// No description provided for @quizAvailableAfter.
+  ///
+  /// In en, this message translates to:
+  /// **'New selection available after {date}'**
+  String quizAvailableAfter(String date);
+
+  /// No description provided for @quizSelectionEyebrow.
+  ///
+  /// In en, this message translates to:
+  /// **'YOUR LEARNING JOURNEY'**
+  String get quizSelectionEyebrow;
+
+  /// No description provided for @quizSelectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Find your starting point'**
+  String get quizSelectionTitle;
+
+  /// No description provided for @quizSelectionDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a learning group and level, then select your question language before you begin.'**
+  String get quizSelectionDescription;
+
+  /// No description provided for @quizAudienceKids.
+  ///
+  /// In en, this message translates to:
+  /// **'Kids'**
+  String get quizAudienceKids;
+
+  /// No description provided for @quizAudienceGeneral.
+  ///
+  /// In en, this message translates to:
+  /// **'General Learners'**
+  String get quizAudienceGeneral;
+
+  /// No description provided for @quizAudienceEducated.
+  ///
+  /// In en, this message translates to:
+  /// **'Islamically Educated'**
+  String get quizAudienceEducated;
+
+  /// No description provided for @quizAudienceKidsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Small steps for young, curious minds.'**
+  String get quizAudienceKidsDescription;
+
+  /// No description provided for @quizAudienceGeneralDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore the foundations and build on what you know.'**
+  String get quizAudienceGeneralDescription;
+
+  /// No description provided for @quizAudienceEducatedDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'For learners with a background in Islamic studies.'**
+  String get quizAudienceEducatedDescription;
+
+  /// No description provided for @quizLevelBeginner.
+  ///
+  /// In en, this message translates to:
+  /// **'Beginner'**
+  String get quizLevelBeginner;
+
+  /// No description provided for @quizLevelPro.
+  ///
+  /// In en, this message translates to:
+  /// **'Pro'**
+  String get quizLevelPro;
+
+  /// No description provided for @quizLevelAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore'**
+  String get quizLevelAvailable;
+
+  /// No description provided for @quizLevelSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming soon'**
+  String get quizLevelSoon;
+
+  /// No description provided for @quizComingSoonMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions haven’t been added for this level yet. You can explore another level in the meantime.'**
+  String get quizComingSoonMessage;
+
+  /// No description provided for @quizBrowseLevels.
+  ///
+  /// In en, this message translates to:
+  /// **'Browse levels'**
+  String get quizBrowseLevels;
+
+  /// No description provided for @quizLanguageBeforeStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your question language. It cannot be changed after you begin.'**
+  String get quizLanguageBeforeStart;
+
+  /// No description provided for @quizLanguageLocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Language is fixed for this attempt, including results and review.'**
+  String get quizLanguageLocked;
+
+  /// No description provided for @quizStyleFamiliarFact.
+  ///
+  /// In en, this message translates to:
+  /// **'Familiar facts'**
+  String get quizStyleFamiliarFact;
+
+  /// No description provided for @quizStyleBroaderBasic.
+  ///
+  /// In en, this message translates to:
+  /// **'Broader basics'**
+  String get quizStyleBroaderBasic;
+
+  /// No description provided for @quizStyleEverydayApplication.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyday application'**
+  String get quizStyleEverydayApplication;
+
+  /// No description provided for @quizStyleBreakdown.
+  ///
+  /// In en, this message translates to:
+  /// **'By question style'**
+  String get quizStyleBreakdown;
+
+  /// No description provided for @quizStylesNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Question styles describe the kind of task, not its difficulty. All questions belong to your selected level.'**
+  String get quizStylesNotice;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

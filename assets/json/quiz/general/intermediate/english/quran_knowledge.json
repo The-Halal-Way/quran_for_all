@@ -1,0 +1,2317 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "mid",
+  "categoryId": "quran_knowledge",
+  "title": "Quran Knowledge",
+  "description": "General User → Mid. Familiar Quran facts, broader basics and short everyday applications focused on messages of well-known passages, responsible reading and simple connections. All questions are Mid level; specialist terminology, obscure trivia and reference-number memorization are excluded.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding required across all question styles. Styles are not difficulty levels. Requires more understanding and simple connections than Beginner, without specialist study. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Everyday scenarios illustrate the cited principles. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_mid_quran_knowledge_001",
+      "conceptId": "quran_first_command",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What command appears at the start of the first Quranic revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read or recite in the name of your Lord"
+        },
+        {
+          "id": "b",
+          "text": "Travel to another country immediately"
+        },
+        {
+          "id": "c",
+          "text": "Count the stars before speaking"
+        },
+        {
+          "id": "d",
+          "text": "Write a history of every nation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The first revealed passage begins with reading or reciting in the name of the Creator.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 96,
+          "ayahs": "1-5",
+          "label": "Quran 96:1-5",
+          "url": "https://quran.com/96/1-5"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_002",
+      "conceptId": "quran_gradual_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How was the Quran conveyed to the Prophet over his mission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As a book he composed after his mission"
+        },
+        {
+          "id": "b",
+          "text": "In portions, over time"
+        },
+        {
+          "id": "c",
+          "text": "Only through one public speech"
+        },
+        {
+          "id": "d",
+          "text": "Through later teachers after his death"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran describes its revelation in stages so it could be recited to people gradually.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "106",
+          "label": "Quran 17:106",
+          "url": "https://quran.com/17/106"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_003",
+      "conceptId": "quran_revelation_heart",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What wisdom for gradual revelation is specifically mentioned in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keeping guidance unavailable to people"
+        },
+        {
+          "id": "b",
+          "text": "Allowing people to invent missing verses"
+        },
+        {
+          "id": "c",
+          "text": "Strengthening the Prophet's heart"
+        },
+        {
+          "id": "d",
+          "text": "Making revelation depend on popularity"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran explains that revelation in stages strengthened the Prophet's heart.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "32",
+          "label": "Quran 25:32",
+          "url": "https://quran.com/25/32"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_004",
+      "conceptId": "quran_furqan",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the description Al-Furqan emphasize about the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is only a collection of travel accounts"
+        },
+        {
+          "id": "b",
+          "text": "It is useful only for counting dates"
+        },
+        {
+          "id": "c",
+          "text": "It gives every reader personal knowledge of the future"
+        },
+        {
+          "id": "d",
+          "text": "It distinguishes truth from falsehood"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Furqan describes revelation as a criterion or decisive standard.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "1",
+          "label": "Quran 25:1",
+          "url": "https://quran.com/25/1"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_005",
+      "conceptId": "quran_kursi_message",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which message is central to Ayat al-Kursi?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah's perfect life, knowledge and authority"
+        },
+        {
+          "id": "b",
+          "text": "Human independence from Allah"
+        },
+        {
+          "id": "c",
+          "text": "The appointment of a new prophet"
+        },
+        {
+          "id": "d",
+          "text": "A detailed account of a battle"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Ayat al-Kursi describes Allah's greatness and His sustaining authority over creation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_006",
+      "conceptId": "quran_fatihah_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What guidance do worshippers request in Al-Fatihah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promise of wealth without responsibility"
+        },
+        {
+          "id": "b",
+          "text": "Guidance to the straight path"
+        },
+        {
+          "id": "c",
+          "text": "Knowledge of every person's future"
+        },
+        {
+          "id": "d",
+          "text": "Freedom from all duties"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Fatihah combines worship and seeking help with a request for right guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "5-7",
+          "label": "Quran 1:5-7",
+          "url": "https://quran.com/1/5-7"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_007",
+      "conceptId": "quran_nas_whispers",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "From what does Surah An-Nas teach people to seek Allah's protection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every kind of useful advice"
+        },
+        {
+          "id": "b",
+          "text": "All human contact"
+        },
+        {
+          "id": "c",
+          "text": "The evil of whispering that draws people toward wrong"
+        },
+        {
+          "id": "d",
+          "text": "Learning about one's responsibilities"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The surah seeks refuge in Allah from the whisperer, including whispering from jinn and humans.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 114,
+          "ayahs": "1-6",
+          "label": "Quran 114:1-6",
+          "url": "https://quran.com/114/1-6"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_008",
+      "conceptId": "quran_ikhlas_message",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which statement agrees with Surah Al-Ikhlas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah was born before creation"
+        },
+        {
+          "id": "b",
+          "text": "Allah has an equal who shares His divinity"
+        },
+        {
+          "id": "c",
+          "text": "Allah depends on His creatures"
+        },
+        {
+          "id": "d",
+          "text": "Allah has neither parent nor offspring"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah declares Allah's oneness and uniqueness, including that He is not born and has no offspring.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1-4",
+          "label": "Quran 112:1-4",
+          "url": "https://quran.com/112/1-4"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_009",
+      "conceptId": "quran_asr_message",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which four qualities are joined in Surah Al-Asr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faith, good deeds, encouraging truth and encouraging patience"
+        },
+        {
+          "id": "b",
+          "text": "Wealth, fame, strength and family rank"
+        },
+        {
+          "id": "c",
+          "text": "Travel, trade, victory and public praise"
+        },
+        {
+          "id": "d",
+          "text": "Silence, isolation, possessions and appearance"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Asr links avoiding loss with faith, righteous action and mutual encouragement in truth and patience.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "Quran 103:1-3",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_010",
+      "conceptId": "quran_maun_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Besides neglecting those in need, what behavior does Al-Maun criticize?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Offering practical assistance"
+        },
+        {
+          "id": "b",
+          "text": "Showing off and withholding small acts of help"
+        },
+        {
+          "id": "c",
+          "text": "Sincere prayer"
+        },
+        {
+          "id": "d",
+          "text": "Kindness toward orphans"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The surah connects concern for others with sincere worship and warns against refusing small kindnesses.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "1-7",
+          "label": "Quran 107:1-7",
+          "url": "https://quran.com/107/1-7"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_011",
+      "conceptId": "quran_quraysh_blessings",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which blessings are recalled as reasons to worship the Lord of the House in Surah Quraysh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A guarantee that no one will ever face hardship"
+        },
+        {
+          "id": "b",
+          "text": "Unlimited authority over other peoples"
+        },
+        {
+          "id": "c",
+          "text": "Food against hunger and safety against fear"
+        },
+        {
+          "id": "d",
+          "text": "Permission to ignore every duty"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Surah Quraysh calls attention to Allah's provision of food and security.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 106,
+          "ayahs": "3-4",
+          "label": "Quran 106:3-4",
+          "url": "https://quran.com/106/3-4"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_012",
+      "conceptId": "quran_luqman_oneness",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What fundamental warning does Luqman give his son?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Never ask anyone a question"
+        },
+        {
+          "id": "b",
+          "text": "Judge people only by wealth"
+        },
+        {
+          "id": "c",
+          "text": "Treat family status as a replacement for faith"
+        },
+        {
+          "id": "d",
+          "text": "Do not associate partners with Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Luqman's advice begins by warning against shirk, described as a great wrong.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "13",
+          "label": "Quran 31:13",
+          "url": "https://quran.com/31/13"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_013",
+      "conceptId": "quran_cave_faith",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does the Quran describe the young people of the Cave?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Young believers whose guidance Allah increased"
+        },
+        {
+          "id": "b",
+          "text": "People rewarded for denying Allah"
+        },
+        {
+          "id": "c",
+          "text": "Rulers seeking fame through cruelty"
+        },
+        {
+          "id": "d",
+          "text": "People who knew every future event"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Their story includes faith in Allah and His granting them increased guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "13",
+          "label": "Quran 18:13",
+          "url": "https://quran.com/18/13"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_014",
+      "conceptId": "quran_yusuf_pardon",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What response does Yusuf give his brothers after their wrongdoing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He demands that they be worshipped"
+        },
+        {
+          "id": "b",
+          "text": "He offers pardon rather than reproach"
+        },
+        {
+          "id": "c",
+          "text": "He denies that forgiveness has any value"
+        },
+        {
+          "id": "d",
+          "text": "He asks them to abandon belief in Allah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Yusuf's response in this verse is an example of mercy and pardon after being wronged.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "92",
+          "label": "Quran 12:92",
+          "url": "https://quran.com/12/92"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_015",
+      "conceptId": "quran_maryam_honor",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What honor is announced to Maryam in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She became an object of worship"
+        },
+        {
+          "id": "b",
+          "text": "She gained independent power over creation"
+        },
+        {
+          "id": "c",
+          "text": "Allah chose and purified her"
+        },
+        {
+          "id": "d",
+          "text": "She no longer needed to worship Allah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The angels announce Maryam's selection and purification by Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "42",
+          "label": "Quran 3:42",
+          "url": "https://quran.com/3/42"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_016",
+      "conceptId": "quran_sulayman_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Sulayman ask Allah to help him do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use blessings to look down on everyone"
+        },
+        {
+          "id": "b",
+          "text": "Become independent of Allah's mercy"
+        },
+        {
+          "id": "c",
+          "text": "Ignore the blessings given to his parents"
+        },
+        {
+          "id": "d",
+          "text": "Be grateful and perform pleasing good deeds"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Sulayman's prayer joins gratitude for blessings with righteous action and hope in Allah's mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "Quran 27:19",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_017",
+      "conceptId": "quran_musa_gentle_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How were Musa and Harun told to address Pharaoh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "With gentle speech"
+        },
+        {
+          "id": "b",
+          "text": "With false promises"
+        },
+        {
+          "id": "c",
+          "text": "With worship directed to him"
+        },
+        {
+          "id": "d",
+          "text": "With praise of his oppression"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Even when confronting Pharaoh's wrongdoing, they were instructed to speak gently.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "43-44",
+          "label": "Quran 20:43-44",
+          "url": "https://quran.com/20/43-44"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_018",
+      "conceptId": "quran_ibrahim_prayer",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Ibrahim ask for himself and his descendants in this dua?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Freedom from every responsibility"
+        },
+        {
+          "id": "b",
+          "text": "Steadfastness in prayer"
+        },
+        {
+          "id": "c",
+          "text": "Superiority based only on ancestry"
+        },
+        {
+          "id": "d",
+          "text": "A life without needing Allah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ibrahim asks Allah to make him and his descendants people who establish prayer.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "40",
+          "label": "Quran 14:40",
+          "url": "https://quran.com/14/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_019",
+      "conceptId": "quran_dua_both_worlds",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the dua beginning 'Rabbana atina' ask for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worldly success with no concern for the Hereafter"
+        },
+        {
+          "id": "b",
+          "text": "Only other people's possessions"
+        },
+        {
+          "id": "c",
+          "text": "Good in this world, good in the Hereafter and protection from the Fire"
+        },
+        {
+          "id": "d",
+          "text": "Knowledge of the exact time of the Last Day"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "This Quranic supplication brings worldly and eternal wellbeing together.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "Quran 2:201",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_020",
+      "conceptId": "quran_qadr_value",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does Surah Al-Qadr describe the value of the Night of Decree?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exactly the same as every other night"
+        },
+        {
+          "id": "b",
+          "text": "Important only for worldly trade"
+        },
+        {
+          "id": "c",
+          "text": "A night without any connection to worship"
+        },
+        {
+          "id": "d",
+          "text": "Better than a thousand months"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse highlights the extraordinary value of Laylat al-Qadr.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "Quran 97:3",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_021",
+      "conceptId": "quran_guidance_action",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does describing the Quran as guidance imply for a learner?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its teachings should help shape belief and conduct"
+        },
+        {
+          "id": "b",
+          "text": "Its message matters only as decoration"
+        },
+        {
+          "id": "c",
+          "text": "Understanding is never useful"
+        },
+        {
+          "id": "d",
+          "text": "Its role ends once a beautiful cover is chosen"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran guides toward what is upright; engagement with it includes responding to its guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "9",
+          "label": "Quran 17:9",
+          "url": "https://quran.com/17/9"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_022",
+      "conceptId": "quran_reflection",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran identify as a purpose of sending down the blessed Book?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collecting its pages without engaging with them"
+        },
+        {
+          "id": "b",
+          "text": "Reflecting on its verses and taking lessons"
+        },
+        {
+          "id": "c",
+          "text": "Using verses only to win attention"
+        },
+        {
+          "id": "d",
+          "text": "Avoiding thought about their meaning"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "This verse explicitly encourages reflection and learning from revelation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_023",
+      "conceptId": "quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What approach to recitation does the command to recite with measured care support?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Speed regardless of clarity"
+        },
+        {
+          "id": "b",
+          "text": "Skipping words to finish faster"
+        },
+        {
+          "id": "c",
+          "text": "Clear, deliberate recitation"
+        },
+        {
+          "id": "d",
+          "text": "Treating correct wording as unimportant"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Measured recitation values care and clarity rather than rushing through the text.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "Quran 73:4",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_024",
+      "conceptId": "quran_learning_difficulty",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What encouragement is given to someone sincerely struggling to recite the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They should stop because only fluent readers matter"
+        },
+        {
+          "id": "b",
+          "text": "Difficulty means their effort is worthless"
+        },
+        {
+          "id": "c",
+          "text": "They should deliberately preserve mistakes"
+        },
+        {
+          "id": "d",
+          "text": "Their effort and difficulty are recognized with reward"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith honors the struggling reciter. It encourages perseverance while learning, not keeping avoidable errors.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "Sahih al-Bukhari 4937",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_025",
+      "conceptId": "quran_review_memory",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does Quran memorization need regular review?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Memorized passages can be forgotten without attention"
+        },
+        {
+          "id": "b",
+          "text": "One reading guarantees permanent recall"
+        },
+        {
+          "id": "c",
+          "text": "Revision is only for new converts"
+        },
+        {
+          "id": "d",
+          "text": "Review makes correct memorization less reliable"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet urged maintaining one's connection with the Quran because memorization can slip away.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5033",
+          "label": "Sahih al-Bukhari 5033",
+          "url": "https://sunnah.com/bukhari:5033"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_026",
+      "conceptId": "quran_stories_lessons",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran say about the stories it relates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are only entertainment without guidance"
+        },
+        {
+          "id": "b",
+          "text": "They contain lessons for people of understanding"
+        },
+        {
+          "id": "c",
+          "text": "They require inventing details not mentioned"
+        },
+        {
+          "id": "d",
+          "text": "They replace every command about daily conduct"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Quranic stories offer guidance and lessons rather than merely interesting events.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "111",
+          "label": "Quran 12:111",
+          "url": "https://quran.com/12/111"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_027",
+      "conceptId": "quran_words_actions",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which inconsistency does the Quran strongly criticize?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trying to correct a mistake"
+        },
+        {
+          "id": "b",
+          "text": "Learning before teaching"
+        },
+        {
+          "id": "c",
+          "text": "Saying what one does not do"
+        },
+        {
+          "id": "d",
+          "text": "Admitting a lack of knowledge"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "These verses warn against a gap between claims and conduct.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 61,
+          "ayahs": "2-3",
+          "label": "Quran 61:2-3",
+          "url": "https://quran.com/61/2-3"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_028",
+      "conceptId": "quran_context",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why would quoting only 'do not approach prayer' from this verse be misleading?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves all prayer is forbidden"
+        },
+        {
+          "id": "b",
+          "text": "It shows that the full verse has no meaning"
+        },
+        {
+          "id": "c",
+          "text": "It means any shortened quote is always accurate"
+        },
+        {
+          "id": "d",
+          "text": "It removes the condition about intoxication from the statement"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The phrase is followed by a condition. Reading the full verse prevents a false conclusion about prayer.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "43",
+          "label": "Quran 4:43",
+          "url": "https://quran.com/4/43"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_029",
+      "conceptId": "quran_clear_foundation",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What attitude helps when a passage is difficult to understand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read in light of clear guidance and seek sound explanation"
+        },
+        {
+          "id": "b",
+          "text": "Build a dramatic claim from an uncertain reading"
+        },
+        {
+          "id": "c",
+          "text": "Assume one's first guess is always final"
+        },
+        {
+          "id": "d",
+          "text": "Ignore all clearer teachings"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse identifies clear passages as the Book's foundation and warns against pursuing ambiguity to cause confusion.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "7",
+          "label": "Quran 3:7",
+          "url": "https://quran.com/3/7"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_030",
+      "conceptId": "quran_guidance_scope",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Who is the Quran described as guidance for in the verse about Ramadan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only one profession"
+        },
+        {
+          "id": "b",
+          "text": "Humanity"
+        },
+        {
+          "id": "c",
+          "text": "Only one economic class"
+        },
+        {
+          "id": "d",
+          "text": "Only people from one modern country"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse describes the Quran as guidance for people, not a privilege restricted to a social group.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_031",
+      "conceptId": "quran_community_dignity",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What shared concern connects the warnings against spying and backbiting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Making gossip more entertaining"
+        },
+        {
+          "id": "b",
+          "text": "Helping rumors travel faster"
+        },
+        {
+          "id": "c",
+          "text": "Protecting people's privacy and honor"
+        },
+        {
+          "id": "d",
+          "text": "Giving everyone access to private faults"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "These commands protect relationships from intrusive and harmful behavior.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_032",
+      "conceptId": "quran_diversity",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What purpose is mentioned for humanity being made into peoples and tribes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proving one race is always superior"
+        },
+        {
+          "id": "b",
+          "text": "Removing the need for justice"
+        },
+        {
+          "id": "c",
+          "text": "Making wealth the only source of honor"
+        },
+        {
+          "id": "d",
+          "text": "Knowing one another"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse connects human diversity with knowing one another and honor with taqwa.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "Quran 49:13",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_033",
+      "conceptId": "quran_anger_pardon",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which combination of qualities does the Quran praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Controlling anger and pardoning people"
+        },
+        {
+          "id": "b",
+          "text": "Suppressing every feeling and seeking revenge"
+        },
+        {
+          "id": "c",
+          "text": "Boasting and humiliating others"
+        },
+        {
+          "id": "d",
+          "text": "Refusing all reconciliation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse presents restraint and forgiveness among the qualities of those who do good.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "Quran 3:134",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_034",
+      "conceptId": "quran_wealth_test",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What assumption do these verses correct about prosperity and hardship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That people can be tested in their lives"
+        },
+        {
+          "id": "b",
+          "text": "That wealth automatically means honor and limited provision means disgrace"
+        },
+        {
+          "id": "c",
+          "text": "That provision can vary between people"
+        },
+        {
+          "id": "d",
+          "text": "That people should reflect on their response to blessings"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran rejects simplistic judgments of a person's standing based on their material circumstances.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 89,
+          "ayahs": "15-17",
+          "label": "Quran 89:15-17",
+          "url": "https://quran.com/89/15-17"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_035",
+      "conceptId": "quran_mercy_return",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What response does the Quran invite from people burdened by past sins?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decide that change is impossible"
+        },
+        {
+          "id": "b",
+          "text": "Treat repentance as reserved for people with perfect pasts"
+        },
+        {
+          "id": "c",
+          "text": "Return with hope in Allah's mercy"
+        },
+        {
+          "id": "d",
+          "text": "Assume wrongdoing can never matter"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The call not to despair is an invitation to return to Allah, not a reason to keep doing wrong.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "Quran 39:53",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_036",
+      "conceptId": "quran_trusts_justice",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which two responsibilities are joined in this Quranic instruction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seeking fame and displaying wealth"
+        },
+        {
+          "id": "b",
+          "text": "Hiding property and favoring friends"
+        },
+        {
+          "id": "c",
+          "text": "Keeping secrets only when paid"
+        },
+        {
+          "id": "d",
+          "text": "Returning trusts and judging fairly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse joins fulfilling trusts with justice in judgment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_037",
+      "conceptId": "quran_fairness_dislike",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What must not be allowed to distort justice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hatred or dislike of a people"
+        },
+        {
+          "id": "b",
+          "text": "Reliable evidence"
+        },
+        {
+          "id": "c",
+          "text": "Honest testimony"
+        },
+        {
+          "id": "d",
+          "text": "A fair hearing"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran requires justice even when we strongly dislike someone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_038",
+      "conceptId": "quran_kindness_circle",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the range of people named for kindness show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only relatives deserve care"
+        },
+        {
+          "id": "b",
+          "text": "Good treatment extends beyond one's closest family"
+        },
+        {
+          "id": "c",
+          "text": "Neighbors matter only when wealthy"
+        },
+        {
+          "id": "d",
+          "text": "Strangers can never have a claim to consideration"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse includes parents, relatives, vulnerable people, neighbors, companions and travelers among those deserving good treatment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "Quran 4:36",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_039",
+      "conceptId": "quran_spending_balance",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does the Quran describe balanced spending?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spending everything to impress people"
+        },
+        {
+          "id": "b",
+          "text": "Refusing every reasonable need"
+        },
+        {
+          "id": "c",
+          "text": "Avoiding both wastefulness and stinginess"
+        },
+        {
+          "id": "d",
+          "text": "Treating the largest expense as always best"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse praises a balanced course between extravagance and miserliness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_040",
+      "conceptId": "quran_claims_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What principle does the Quran give about claims made without knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confidence alone makes a statement true"
+        },
+        {
+          "id": "b",
+          "text": "Many repetitions turn a rumor into evidence"
+        },
+        {
+          "id": "c",
+          "text": "An attractive design guarantees accuracy"
+        },
+        {
+          "id": "d",
+          "text": "Do not follow or assert what you have no knowledge of"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse emphasizes responsibility for what we hear, see and take to heart.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_041",
+      "conceptId": "quran_context",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A social post cuts a verse at a point that reverses its meaning. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read the full passage before drawing or sharing a conclusion"
+        },
+        {
+          "id": "b",
+          "text": "Share it because the fragment contains Quranic words"
+        },
+        {
+          "id": "c",
+          "text": "Assume the missing words cannot matter"
+        },
+        {
+          "id": "d",
+          "text": "Choose the interpretation with the most reactions"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A genuine fragment can still be presented misleadingly when essential wording is omitted.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "43",
+          "label": "Quran 4:43",
+          "url": "https://quran.com/4/43"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_042",
+      "conceptId": "quran_review_memory",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have memorized several surahs and are adding new ones. Which plan best preserves what you know?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stop reviewing every completed surah"
+        },
+        {
+          "id": "b",
+          "text": "Include regular revision alongside new learning"
+        },
+        {
+          "id": "c",
+          "text": "Assume one correct recitation makes forgetting impossible"
+        },
+        {
+          "id": "d",
+          "text": "Replace revision with counting how many pages you own"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Regular review helps keep earlier memorization secure while learning continues.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5033",
+          "label": "Sahih al-Bukhari 5033",
+          "url": "https://sunnah.com/bukhari:5033"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_043",
+      "conceptId": "quran_learning_difficulty",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner feels ashamed because reciting still takes effort. Which reminder fits the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only naturally fluent readers have any value"
+        },
+        {
+          "id": "b",
+          "text": "Difficulty proves they should never open the Quran"
+        },
+        {
+          "id": "c",
+          "text": "Sincere effort in difficulty is rewarded, so continue learning"
+        },
+        {
+          "id": "d",
+          "text": "They should avoid correction to protect their pride"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith supports perseverance and recognizes the struggling learner's effort.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "Sahih al-Bukhari 4937",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_044",
+      "conceptId": "quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your reading target is making you skip words and rush. What should take priority?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Finishing the target even with missing words"
+        },
+        {
+          "id": "b",
+          "text": "Competing with a faster reader"
+        },
+        {
+          "id": "c",
+          "text": "Treating clarity as an obstacle"
+        },
+        {
+          "id": "d",
+          "text": "Careful recitation rather than the page count"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A reading target should support measured recitation rather than undermine it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "Quran 73:4",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_045",
+      "conceptId": "quran_reflection",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You know a surah's sound but have not explored its message. Which step adds reflection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Study a reliable explanation and consider its lessons"
+        },
+        {
+          "id": "b",
+          "text": "Assume knowing the sound removes any need to understand"
+        },
+        {
+          "id": "c",
+          "text": "Invent a meaning based only on how it feels"
+        },
+        {
+          "id": "d",
+          "text": "Treat the message as unrelated to your life"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Sound understanding helps reflection; the Quran itself calls people to ponder its verses.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_046",
+      "conceptId": "quran_claims_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An image claims a sentence is a Quran verse but gives no reference. What should you do before calling it Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trust it because the calligraphy is beautiful"
+        },
+        {
+          "id": "b",
+          "text": "Check the wording against a reliable Quran text"
+        },
+        {
+          "id": "c",
+          "text": "Assume a large following proves it is a verse"
+        },
+        {
+          "id": "d",
+          "text": "Invent a surah number for it"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Careful verification applies the principle of not asserting what one does not know.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_047",
+      "conceptId": "quran_asr_message",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After studying Al-Asr, a group wants one practical habit. Which fits its message?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat time as useful only for earning praise"
+        },
+        {
+          "id": "b",
+          "text": "Ignore good deeds because belief alone is mentioned"
+        },
+        {
+          "id": "c",
+          "text": "Encourage one another toward truth and patience"
+        },
+        {
+          "id": "d",
+          "text": "Make public status the group's main purpose"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The surah joins faith and action with mutual encouragement in truth and patience.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "Quran 103:1-3",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_048",
+      "conceptId": "quran_yusuf_pardon",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A family wants a Quranic example of pardon after wrongdoing. Which passage is directly relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pharaoh's claim to authority"
+        },
+        {
+          "id": "b",
+          "text": "The account of building an ark"
+        },
+        {
+          "id": "c",
+          "text": "A passage listing categories of inheritance"
+        },
+        {
+          "id": "d",
+          "text": "Yusuf's response of pardon to his brothers"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Yusuf's words in this verse provide a clear example of forgiveness after personal harm.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "92",
+          "label": "Quran 12:92",
+          "url": "https://quran.com/12/92"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_049",
+      "conceptId": "quran_sulayman_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After receiving a blessing, which response follows Sulayman's prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask Allah for gratitude and help to do good"
+        },
+        {
+          "id": "b",
+          "text": "Assume blessings prove you need no guidance"
+        },
+        {
+          "id": "c",
+          "text": "Use the blessing to belittle others"
+        },
+        {
+          "id": "d",
+          "text": "Forget those whose care helped you"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Sulayman's dua connects appreciation of blessings with righteous action.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "Quran 27:19",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_050",
+      "conceptId": "quran_musa_gentle_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are correcting a serious mistake. What lesson can be drawn from Musa and Harun being sent to Pharaoh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gentleness requires calling wrongdoing good"
+        },
+        {
+          "id": "b",
+          "text": "Truth can be conveyed with gentle speech"
+        },
+        {
+          "id": "c",
+          "text": "A harsh tone always proves sincerity"
+        },
+        {
+          "id": "d",
+          "text": "Correction requires humiliating the listener"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Gentle speech and a clear stance against wrongdoing can coexist.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "43-44",
+          "label": "Quran 20:43-44",
+          "url": "https://quran.com/20/43-44"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_051",
+      "conceptId": "quran_ibrahim_prayer",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to make a Quranic dua for your family's worship. Which request follows Ibrahim's example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask that family status replace every duty"
+        },
+        {
+          "id": "b",
+          "text": "Ask to be excused from caring about worship"
+        },
+        {
+          "id": "c",
+          "text": "Ask Allah to make you and your descendants steadfast in prayer"
+        },
+        {
+          "id": "d",
+          "text": "Ask only to appear religious in public"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Ibrahim's prayer includes both his own worship and that of his descendants.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "40",
+          "label": "Quran 14:40",
+          "url": "https://quran.com/14/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_052",
+      "conceptId": "quran_dua_both_worlds",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Which request follows the balance of 'Rabbana atina'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask for wealth while dismissing the Hereafter"
+        },
+        {
+          "id": "b",
+          "text": "Ask only to defeat friends in competition"
+        },
+        {
+          "id": "c",
+          "text": "Ask to gain benefits through any means"
+        },
+        {
+          "id": "d",
+          "text": "Ask for good in this life and the Hereafter"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "This dua teaches concern for both worldly wellbeing and the eternal future.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "Quran 2:201",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_053",
+      "conceptId": "quran_fatihah_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You recite the request for the straight path in Al-Fatihah. Which attitude gives it practical meaning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seek guidance sincerely when making choices"
+        },
+        {
+          "id": "b",
+          "text": "Assume every personal desire is already correct"
+        },
+        {
+          "id": "c",
+          "text": "Treat guidance as unnecessary outside prayer"
+        },
+        {
+          "id": "d",
+          "text": "Refuse all opportunities to learn"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Requesting guidance should be accompanied by openness to what is right.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "5-7",
+          "label": "Quran 1:5-7",
+          "url": "https://quran.com/1/5-7"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_054",
+      "conceptId": "quran_nas_whispers",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "While reflecting on An-Nas, you want to respond to a temptation toward wrongdoing. Which action fits the surah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat every harmful suggestion as a command to obey"
+        },
+        {
+          "id": "b",
+          "text": "Seek refuge in Allah from harmful whispering"
+        },
+        {
+          "id": "c",
+          "text": "Assume protection comes from popularity"
+        },
+        {
+          "id": "d",
+          "text": "Stop seeking Allah's help because thoughts can occur"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An-Nas directs a person to Allah for refuge from the whisperer's evil.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 114,
+          "ayahs": "1-6",
+          "label": "Quran 114:1-6",
+          "url": "https://quran.com/114/1-6"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_055",
+      "conceptId": "quran_maun_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone claims outward religious display excuses refusing every small kindness. How does Al-Maun challenge this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It says care for others has no connection with conduct"
+        },
+        {
+          "id": "b",
+          "text": "It praises humiliating those in need"
+        },
+        {
+          "id": "c",
+          "text": "It criticizes showing off and withholding small help"
+        },
+        {
+          "id": "d",
+          "text": "It makes public praise the aim of prayer"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The surah warns against an outward display disconnected from sincerity and concern for others.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "1-7",
+          "label": "Quran 107:1-7",
+          "url": "https://quran.com/107/1-7"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_056",
+      "conceptId": "quran_loss_return",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After a loss, which Quranic reminder fits 'Inna lillahi wa inna ilayhi rajiun'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A believer is guaranteed never to lose anything"
+        },
+        {
+          "id": "b",
+          "text": "Grief makes every act of worship worthless"
+        },
+        {
+          "id": "c",
+          "text": "Loss means Allah no longer knows our situation"
+        },
+        {
+          "id": "d",
+          "text": "We belong to Allah and will return to Him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse gives a reminder of belonging to Allah and returning to Him during hardship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "156",
+          "label": "Quran 2:156",
+          "url": "https://quran.com/2/156"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_057",
+      "conceptId": "quran_fairness_dislike",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are evaluating work by members of a group you dislike. Which approach applies this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use fair criteria rather than letting dislike lower their marks"
+        },
+        {
+          "id": "b",
+          "text": "Give lower marks purely because of their group"
+        },
+        {
+          "id": "c",
+          "text": "Ignore evidence that favors them"
+        },
+        {
+          "id": "d",
+          "text": "Make dislike the main scoring rule"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran's requirement of justice applies even when personal feelings pull the other way.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_058",
+      "conceptId": "quran_trusts_justice",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You manage money entrusted for a group project. Which choice reflects the verse about trusts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use some privately and assume nobody will notice"
+        },
+        {
+          "id": "b",
+          "text": "Keep accurate records and use it for its agreed purpose"
+        },
+        {
+          "id": "c",
+          "text": "Treat access to the funds as personal ownership"
+        },
+        {
+          "id": "d",
+          "text": "Give yourself an unagreed payment in secret"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Fulfilling a trust includes respecting the rights attached to what has been entrusted.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_059",
+      "conceptId": "quran_spending_balance",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are making a budget that must cover needs and allow generosity. Which choice reflects Quranic balance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spend everything to maintain an impressive image"
+        },
+        {
+          "id": "b",
+          "text": "Refuse essential expenses solely to hoard money"
+        },
+        {
+          "id": "c",
+          "text": "Avoid showy waste while meeting reasonable needs"
+        },
+        {
+          "id": "d",
+          "text": "Decide that any spending is a moral failure"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Balanced spending avoids both extravagance and harmful tightfistedness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_quran_knowledge_060",
+      "conceptId": "quran_kindness_circle",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A traveler in your community needs reasonable assistance. What does this verse suggest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dismiss them because they are not family"
+        },
+        {
+          "id": "b",
+          "text": "Make their difficulty a public joke"
+        },
+        {
+          "id": "c",
+          "text": "Assume only wealthy visitors deserve respect"
+        },
+        {
+          "id": "d",
+          "text": "Offer considerate help within your ability"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran includes travelers among those toward whom good treatment is directed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "Quran 4:36",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    }
+  ]
+}

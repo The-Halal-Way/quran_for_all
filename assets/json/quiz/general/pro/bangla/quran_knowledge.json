@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "pro",
+  "categoryId": "quran_knowledge",
+  "title": "কুরআনের জ্ঞান",
+  "description": "সাধারণ ব্যবহারকারী → প্রো স্তর। পরিচিত কুরআনিক শিক্ষা, আরও কিছু মৌলিক বিষয় ও ছোট দৈনন্দিন প্রয়োগ, যেখানে আয়াত ও ঘটনাগুলো আরও গভীরভাবে বুঝতে হবে। শেখা, তিলাওয়াত, দোয়া, কষ্ট, প্রস্তুতি, কৃতজ্ঞতা ও দায়িত্বশীল ব্যাখ্যা অন্তর্ভুক্ত। সব প্রশ্ন সাধারণ ব্যবহারকারীর প্রো স্তরের। বিশেষজ্ঞ পর্যায়ের তাফসিরগত বিতর্ক ও আয়াতের নম্বর মুখস্থের প্রশ্ন রাখা হয়নি।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রো স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও উপলব্ধির মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। মধ্যমের চেয়ে পরিচিত শিক্ষার গভীর বোঝাপড়া, সেগুলোর সম্পর্ক ধরা এবং প্রচলিত ভুল ধারণা আলাদা করার প্রয়োজন; বিশেষজ্ঞ পর্যায়ের পড়াশোনা নয়। এটি সাধারণ ব্যবহারকারীর প্রো স্তর, আলাদা আল্ট্রা প্রশ্নভান্ডার নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যাগুলো শিক্ষামূলকভাবে নিজস্ব ভাষায় লেখা; এগুলো হুবহু অনুবাদ নয়। আধুনিক পরিস্থিতিগুলো সূত্রে উল্লিখিত মূলনীতির উদাহরণ। এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_pro_quran_knowledge_001",
+      "conceptId": "quran_righteousness_whole",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ২:১৭৭-এ কোন সমন্বয়কে নেকির অন্তর্ভুক্ত করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঈমান, ইবাদত, দানশীলতা ও প্রতিশ্রুতি রক্ষা"
+        },
+        {
+          "id": "b",
+          "text": "আচরণের পরোয়া না করে শুধু বাহ্যিকভাবে সঠিক দিকে মুখ করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু বংশপরিচয় ও জনপ্রিয়তা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যের প্রতি দায়িত্বহীন সম্পদ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে নেকির বর্ণনায় বিশ্বাস, ইবাদত, অন্যের যত্ন, প্রতিশ্রুতি ও ধৈর্য একসঙ্গে এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "কুরআন ২:১৭৭",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_002",
+      "conceptId": "quran_attentive_listening",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন তিলাওয়াতের প্রতি এই আয়াতে কোন আচরণের নির্দেশ রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাশাপাশি অন্য আলাপ চালিয়ে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "মনোযোগ দিয়ে শোনা ও নীরব থাকা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু তিলাওয়াতকারীর জনপ্রিয়তা বিচার করা"
+        },
+        {
+          "id": "d",
+          "text": "মনোযোগের সঙ্গে শোনার সম্পর্ক নেই মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে শ্রোতাদের মনোযোগ দিতে ও নীরব থাকতে বলা হয়েছে। নির্দিষ্ট পরিবেশের বিস্তারিত বিধানের জন্য যথাযথ নির্দেশনা নিতে হবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "কুরআন ৭:২০৪",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_003",
+      "conceptId": "quran_refuge_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ১৬:৯৮-এ তিলাওয়াতকারীকে কী চাইতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বোঝার সব প্রয়োজন থেকে মুক্তি"
+        },
+        {
+          "id": "b",
+          "text": "সব শ্রোতার প্রশংসা"
+        },
+        {
+          "id": "c",
+          "text": "শয়তান থেকে আল্লাহর আশ্রয়"
+        },
+        {
+          "id": "d",
+          "text": "ভবিষ্যতের নিশ্চিত পূর্বাভাস"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে কুরআন তিলাওয়াতের সঙ্গে শয়তান থেকে আল্লাহর আশ্রয় চাওয়ার শিক্ষা এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "কুরআন ১৬:৯৮",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_004",
+      "conceptId": "quran_increase_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রব্বি যিদনি ইলমা দোয়ায় আল্লাহর কাছে কী চাওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের প্রশংসা পাওয়ার নিশ্চয়তা"
+        },
+        {
+          "id": "b",
+          "text": "সব দায়িত্ব থেকে মুক্তি"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর থেকে স্বাধীন জ্ঞান"
+        },
+        {
+          "id": "d",
+          "text": "জ্ঞান বৃদ্ধি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ওহি সম্পর্কে নবী ﷺ-কে নির্দেশনার পাশাপাশি আয়াতটি নিজের রবের কাছে জ্ঞান বৃদ্ধি চাইতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "কুরআন ২০:১১৪",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_005",
+      "conceptId": "quran_musa_learning_request",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ১৮:৬৬-এ মূসা (আ.) কীভাবে শেখার অনুরোধ করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অনুসরণ করে সঠিক পথের শিক্ষা পেতে চান"
+        },
+        {
+          "id": "b",
+          "text": "শেখা নিজের মর্যাদার নিচে বলে ঘোষণা করেন"
+        },
+        {
+          "id": "c",
+          "text": "নির্দেশনা নেওয়ার আগে প্রশংসা দাবি করেন"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর আর কিছু শেখার নেই বলে দাবি করেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "অন্যকে শেখানো সঠিক পথের জ্ঞান থেকে সম্মানের সঙ্গে শিখতে চাওয়া মূসা (আ.)-এর অনুরোধে প্রকাশ পায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "66",
+          "label": "কুরআন ১৮:৬৬",
+          "url": "https://quran.com/18/66"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_006",
+      "conceptId": "quran_musa_dua_clarity",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দায়িত্ব পালনের আগে মূসা (আ.)-এর দোয়ায় কী রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্য আর ব্যাখ্যা করতে হবে না—এমন প্রার্থনা"
+        },
+        {
+          "id": "b",
+          "text": "অন্তরের প্রশস্ততা, কাজে সহজতা ও বোধগম্য কথা"
+        },
+        {
+          "id": "c",
+          "text": "কেউ দ্বিমত করবে না—এমন নিশ্চয়তা"
+        },
+        {
+          "id": "d",
+          "text": "সব দায়িত্ব এড়ানোর দাবি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দোয়ায় আল্লাহর কাছে কাজে সাহায্য ও এমনভাবে কথা বলার সামর্থ্য চাওয়া হয়েছে, যাতে মানুষ তাঁর কথা বোঝে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "কুরআন ২০:২৫-২৮",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_007",
+      "conceptId": "quran_ibrahim_reassurance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ কীভাবে মৃতকে জীবিত করেন তা দেখতে চাওয়ার কারণ ইবরাহিম (আ.) কী বলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পুনরুত্থান অসম্ভব ঘোষণা করা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ মানুষের চেষ্টার ওপর নির্ভরশীল প্রমাণ করা"
+        },
+        {
+          "id": "c",
+          "text": "বিশ্বাস স্বীকার করেই অন্তরের প্রশান্তি পেতে চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর ক্ষমতা অস্বীকার করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "এই কথোপকথনে ইবরাহিম (আ.) স্পষ্টভাবে বিশ্বাস স্বীকার করেন এবং অন্তরের নিশ্চিন্ততার জন্য অনুরোধের কথা জানান।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "260",
+          "label": "কুরআন ২:২৬০",
+          "url": "https://quran.com/2/260"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_008",
+      "conceptId": "quran_yunus_own_wrong",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইউনুস (আ.)-এর দোয়ায় কোন বিষয়গুলো একসঙ্গে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দায়িত্ব অস্বীকার ও নিজেকে নিখুঁত দাবি"
+        },
+        {
+          "id": "b",
+          "text": "অন্য সবাইকে দোষ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ তাঁর কথা শুনতে পারেন না—এমন দাবি"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর একত্ব ও পবিত্রতা ঘোষণা এবং নিজের অন্যায় স্বীকার"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দোয়ায় আল্লাহর একমাত্র ইবাদতের অধিকার ও পবিত্রতা ঘোষণা করা হয় এবং নিজের অন্যায় স্বীকার করা হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87-88",
+          "label": "কুরআন ২১:৮৭-৮৮",
+          "url": "https://quran.com/21/87-88"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_009",
+      "conceptId": "quran_ayyub_adversity_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কষ্ট সম্পর্কে আইয়ুব (আ.) কীভাবে আল্লাহকে ডাকেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের কষ্ট জানিয়ে আল্লাহর রহমত চান"
+        },
+        {
+          "id": "b",
+          "text": "ঈমান থাকলে কষ্ট অসম্ভব বলে দাবি করেন"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর মুখাপেক্ষিতা অস্বীকার করেন"
+        },
+        {
+          "id": "d",
+          "text": "সব দোয়া অর্থহীন ঘোষণা করেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আইয়ুব (আ.) নিজের কষ্টের কথা জানান এবং আল্লাহকে দয়াকারীদের মধ্যে সর্বাধিক দয়ালু হিসেবে স্বীকার করেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "83-84",
+          "label": "কুরআন ২১:৮৩-৮৪",
+          "url": "https://quran.com/21/83-84"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_010",
+      "conceptId": "quran_yaqub_active_hope",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইয়াকুব (আ.) ছেলেদের কোন দুটি নির্দেশ একসঙ্গে দেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খোঁজ বন্ধ করে শুধু বাহ্যিক অবস্থার ওপর নির্ভর করা"
+        },
+        {
+          "id": "b",
+          "text": "ইউসুফ ও তাঁর ভাইয়ের খোঁজ করা এবং আল্লাহর রহমত থেকে নিরাশ না হওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আশা ছেড়ে মর্যাদার প্রতিযোগিতা চালানো"
+        },
+        {
+          "id": "d",
+          "text": "উপকারী কিছু আর করা সম্ভব নয় ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে বাস্তব অনুসন্ধানের সঙ্গে আল্লাহর রহমতের আশা যুক্ত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "87",
+          "label": "কুরআন ১২:৮৭",
+          "url": "https://quran.com/12/87"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_011",
+      "conceptId": "quran_yusuf_resisting_pressure",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্যায়ের জন্য চাপের মুখে ইউসুফ (আ.)-এর দোয়ায় কী প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চাপ থাকলে প্রতিটি কাজ সঠিক মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর সাহায্য থেকে নিজেকে স্বাধীন ঘোষণা করা"
+        },
+        {
+          "id": "c",
+          "text": "চাপের কাছে নতি স্বীকার না করে আল্লাহর সাহায্য চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সততার চেয়ে মানুষের সমর্থন বেছে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "প্রস্তাবিত অন্যায়ের চেয়ে ইউসুফ (আ.) কারাগারকে প্রিয় বলেন এবং আল্লাহর কাছে ষড়যন্ত্র দূর করার সাহায্য চান।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "33",
+          "label": "কুরআন ১২:৩৩",
+          "url": "https://quran.com/12/33"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_012",
+      "conceptId": "quran_yusuf_preparation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কঠিন বছরগুলোর আগে ইউসুফ (আ.) কী বাস্তব পরামর্শ দেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পুরো ফসল সঙ্গে সঙ্গে খেয়ে ফেলা"
+        },
+        {
+          "id": "b",
+          "text": "ভবিষ্যৎ জানা বলে কাজ বন্ধ করা"
+        },
+        {
+          "id": "c",
+          "text": "যেকোনো রসদ রাখা নিষিদ্ধ মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "পরের প্রয়োজনের জন্য চাষ ও শস্য সংরক্ষণ করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তাঁর পরামর্শে আসন্ন কষ্টের প্রস্তুতির জন্য চাষ, সীমিত ভোগ ও সংরক্ষণ একসঙ্গে এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "47-49",
+          "label": "কুরআন ১২:৪৭-৪৯",
+          "url": "https://quran.com/12/47-49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_013",
+      "conceptId": "quran_sulayman_blessing_test",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াতে সুলাইমান (আ.) নিজের পাওয়া অনুগ্রহকে কীভাবে দেখেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রবের অনুগ্রহ, যার মাধ্যমে তাঁর কৃতজ্ঞতার পরীক্ষা হচ্ছে"
+        },
+        {
+          "id": "b",
+          "text": "আর কোনো দায়িত্ব নেই—এর প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর মুখাপেক্ষিতা শেষ করার বিষয়"
+        },
+        {
+          "id": "d",
+          "text": "কম পাওয়া সবাইকে তুচ্ছ করার কারণ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সুলাইমান (আ.) আল্লাহর অনুগ্রহ স্বীকার করেন এবং এর মধ্যে কৃতজ্ঞতার পরীক্ষা দেখেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "40",
+          "label": "কুরআন ২৭:৪০",
+          "url": "https://quran.com/27/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_014",
+      "conceptId": "quran_qarun_self_credit",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নিজের পাওয়া সম্পদ সম্পর্কে কারুন কী দাবি করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্পদে কোনো দায়িত্ব শেষ হয় না বলে স্বীকার করে"
+        },
+        {
+          "id": "b",
+          "text": "নিজের জ্ঞানের কারণে তা পেয়েছে বলে দাবি করে"
+        },
+        {
+          "id": "c",
+          "text": "দেওয়া উপদেশ থেকে শিখতে চায়"
+        },
+        {
+          "id": "d",
+          "text": "সব মালিকানা শেষ হয়ে গেছে বলে জানায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তার জবাবে নিজের জ্ঞানকে কেন্দ্র করা হয়েছে। এরপর আরও শক্তিশালী ও সম্পদশালী পূর্ববর্তী লোকদের কথা স্মরণ করানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "78",
+          "label": "কুরআন ২৮:৭৮",
+          "url": "https://quran.com/28/78"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_015",
+      "conceptId": "quran_qarun_balanced_counsel",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কারুনকে দেওয়া উপদেশে কোন ভারসাম্য রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আখিরাতের চিন্তা ছাড়া সম্পদ খোঁজা"
+        },
+        {
+          "id": "b",
+          "text": "দুনিয়ার প্রতিটি প্রয়োজন বাদ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "দুনিয়ার অংশ না ভুলে প্রাপ্ত নিয়ামত দিয়ে আখিরাতের কল্যাণ খোঁজা"
+        },
+        {
+          "id": "d",
+          "text": "সম্পদকে বিপর্যয় ছড়ানোর অনুমতি মনে করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে আখিরাতের চিন্তা, দুনিয়ার অংশ, ভালো কাজ এবং বিপর্যয় এড়ানোর কথা একসঙ্গে এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "77",
+          "label": "কুরআন ২৮:৭৭",
+          "url": "https://quran.com/28/77"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_016",
+      "conceptId": "quran_servants_peace",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াতে পরম করুণাময়ের বান্দাদের কোন আচরণ বর্ণিত হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অহংকার ও প্রতিটি ঝগড়ায় জেতার প্রয়োজন"
+        },
+        {
+          "id": "b",
+          "text": "কথা বলে প্রশংসা না পেলেই শুধু নীরবতা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু চেহারা দেখে অন্যকে বিচার"
+        },
+        {
+          "id": "d",
+          "text": "বিনয় এবং মূর্খতাপূর্ণ উসকানিতে শান্ত জবাব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে বিনয়ী আচরণ ও মূর্খতাপূর্ণ উসকানির জবাবে একই আচরণে না জড়ানোর বর্ণনা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "63",
+          "label": "কুরআন ২৫:৬৩",
+          "url": "https://quran.com/25/63"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_017",
+      "conceptId": "quran_cave_known_limits",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "গুহাবাসী যুবকদের সংখ্যা নিয়ে আলোচনায় নবী ﷺ-কে কী জবাব দিতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর রব তাদের সংখ্যা সবচেয়ে ভালো জানেন"
+        },
+        {
+          "id": "b",
+          "text": "জনপ্রিয়তায় সঠিক সংখ্যা ঠিক হয়"
+        },
+        {
+          "id": "c",
+          "text": "প্রস্তাবিত প্রতিটি সংখ্যাই সমান নিশ্চিত"
+        },
+        {
+          "id": "d",
+          "text": "অনুমানে গায়েবের সম্পূর্ণ জ্ঞান পাওয়া যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি মানুষের জ্ঞানের সীমা স্বীকার করে এবং নির্ভরযোগ্য ভিত্তির বাইরে তর্ক করতে সতর্ক করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "কুরআন ১৮:২২",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_018",
+      "conceptId": "quran_garden_acknowledgment",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "বাগানে প্রবেশের সময় মালিকের সঙ্গী কী স্বীকার করতে বলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ থেকে স্বাধীনভাবে সম্পদ স্থায়ী থাকার দাবি"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর ইচ্ছা এবং তাঁর মাধ্যমেই শক্তি পাওয়ার কথা"
+        },
+        {
+          "id": "c",
+          "text": "সবাই মালিককে হিংসা করুক—এমন দাবি"
+        },
+        {
+          "id": "d",
+          "text": "নিয়ামতে আল্লাহর মুখাপেক্ষিতা আছে—তা অস্বীকার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সঙ্গী বাগানকে নিজের অমুখাপেক্ষিতার ভিত্তি না বানিয়ে আল্লাহকে স্বীকার করার উপদেশ দেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "39",
+          "label": "কুরআন ১৮:৩৯",
+          "url": "https://quran.com/18/39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_019",
+      "conceptId": "quran_duha_gratitude_conduct",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা আদ-দুহা কোন নির্দেশগুলো দিয়ে শেষ হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অসহায়দের উপেক্ষা করে প্রশংসা চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি অনুরোধকে অপমান মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "এতিমের ওপর জুলুম না করা, সাহায্যপ্রার্থীকে ধমক না দেওয়া এবং রবের নিয়ামতের কথা বলা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি নিয়ামত গোপন ও প্রতিটি দায়িত্ব প্রত্যাখ্যান করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শেষের আয়াতগুলোতে অসহায় মানুষের প্রতি আচরণের সঙ্গে রবের নিয়ামত স্বীকারের নির্দেশ যুক্ত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "কুরআন ৯৩:৯-১১",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_020",
+      "conceptId": "quran_sharh_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা আশ-শারহের এই আয়াতগুলোতে কোন আশ্বাস পুনরাবৃত্তি হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুমিনের কখনো কষ্ট হতে পারে না"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি সমস্যা পরের সকালেই শেষ হয়"
+        },
+        {
+          "id": "c",
+          "text": "কষ্ট সব চেষ্টা অর্থহীন করে"
+        },
+        {
+          "id": "d",
+          "text": "কষ্টের সঙ্গে স্বস্তি রয়েছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো কষ্টের সঙ্গে স্বস্তির আশ্বাস বারবার দেয়। প্রতিটি কষ্টের জন্য ব্যক্তিগত সময়সূচি দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "কুরআন ৯৪:৫-৬",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_021",
+      "conceptId": "quran_righteousness_whole",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নেকিকে শুধু বাহ্যিক রূপে সীমাবদ্ধ করা অসম্পূর্ণ কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতে বিশ্বাস, কর্তব্য ও অন্যের প্রতি আচরণও রয়েছে"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতে শুধু বাহ্যিক রূপ নিয়েই আলোচনা হয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "নৈতিক আচরণ প্রতিটি ইবাদতের বিকল্প"
+        },
+        {
+          "id": "d",
+          "text": "নামাজ ও দানশীলতা কখনো একসঙ্গে হতে পারে না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি নেকির ধারণাকে বিস্তৃত করে। ইবাদত বা ভালো আচরণ—কোনোটিকেই অপ্রয়োজনীয় করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "কুরআন ২:১৭৭",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_022",
+      "conceptId": "quran_attentive_listening",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পাশে তিলাওয়াতের শব্দ শোনা যাওয়া থেকে মনোযোগী শ্রবণ আলাদা কীভাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপেক্ষা করেই শব্দ বাড়ানো"
+        },
+        {
+          "id": "b",
+          "text": "সচেতনভাবে তিলাওয়াতে মন দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "শুধু অডিওর দৈর্ঘ্যে মনোযোগ মাপা"
+        },
+        {
+          "id": "d",
+          "text": "পেছনের সংগীত দিয়ে তিলাওয়াত বিচার করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নির্দেশনাটি শুধু শব্দ উপস্থিত থাকা নয়, মন দিয়ে শোনা ও নীরব থাকার বিষয়ে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "কুরআন ৭:২০৪",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_023",
+      "conceptId": "quran_refuge_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "তিলাওয়াতের সময় আল্লাহর আশ্রয় চাওয়ার সঙ্গে কোন মনোভাবটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিলাওয়াতে মুখাপেক্ষিতা অপ্রয়োজনীয় হয় ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অনুরোধটিকে সব জানার দাবি মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর সুরক্ষার প্রয়োজন স্বীকার করা"
+        },
+        {
+          "id": "d",
+          "text": "সুরক্ষা হিসেবে শ্রোতাদের প্রশংসা চাওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি তিলাওয়াতকারীকে আশ্রয়ের জন্য আল্লাহর দিকে নির্দেশ করে। এতে নিজের অমুখাপেক্ষিতা নয়, তাঁর মুখাপেক্ষিতা প্রকাশ পায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "কুরআন ১৬:৯৮",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_024",
+      "conceptId": "quran_increase_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জ্ঞান বৃদ্ধির দোয়ার সঙ্গে শেখার কোন মনোভাব মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আগের পড়াশোনায় শেখার সব প্রয়োজন শেষ ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রশ্নকে শেখা মূল্যহীন হওয়ার প্রমাণ মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "ভালো স্মৃতিশক্তিকে ভুলের ঊর্ধ্বে থাকার প্রমাণ করা"
+        },
+        {
+          "id": "d",
+          "text": "সম্পূর্ণ জ্ঞানের দাবি না করে আরও শিখতে প্রস্তুত থাকা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহর কাছে আরও জ্ঞান চাওয়ায় শেখার চলমান প্রয়োজন প্রকাশ পায়; সবকিছু আয়ত্ত করার দাবি নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "কুরআন ২০:১১৪",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_025",
+      "conceptId": "quran_musa_learning_request",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সম্মানিত হওয়া ও শেখা সম্পর্কে মূসা (আ.)-এর অনুরোধ কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্মানিত ব্যক্তিও বিনয়ের সঙ্গে শিক্ষা চাইতে পারেন"
+        },
+        {
+          "id": "b",
+          "text": "সম্মান মানে অন্যের কাছে কখনো না শেখা"
+        },
+        {
+          "id": "c",
+          "text": "শেখার অনুমতি চাওয়া সব সময় ব্যর্থতা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু নতুনরাই নির্দেশনা থেকে উপকৃত হতে পারেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ঘটনায় মূসা (আ.) সম্মানের সঙ্গে শিখতে চান। মর্যাদার কারণে শেখার আগ্রহ কারও সম্মানের নিচে হয়ে যায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "66",
+          "label": "কুরআন ১৮:৬৬",
+          "url": "https://quran.com/18/66"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_026",
+      "conceptId": "quran_musa_dua_clarity",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মূসা (আ.)-এর দোয়ায় বোধগম্য কথা গুরুত্বপূর্ণ কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অর্থের চেয়ে আকর্ষণীয় আওয়াজ গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "উদ্দেশ্যের মধ্যে মানুষকে তাঁর বার্তা বোঝানো রয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "শ্রোতা বুঝল কি না তা অপ্রাসঙ্গিক"
+        },
+        {
+          "id": "d",
+          "text": "কঠিন শব্দ সব সময় উন্নত জ্ঞান প্রমাণ করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দোয়ায় কথা বলায় সহজতার সঙ্গে মানুষ তাঁর কথা বুঝবে—এই লক্ষ্য স্পষ্টভাবে যুক্ত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "কুরআন ২০:২৫-২৮",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_027",
+      "conceptId": "quran_ibrahim_reassurance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইবরাহিম (আ.)-এর প্রশ্ন পুনরুত্থান অস্বীকার প্রমাণ করে বলা কেন আয়াতের ভুল পাঠ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি প্রশ্ন এমনিতেই অস্বীকার বোঝায়"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতে ইবরাহিম (আ.)-এর কোনো জবাব নেই"
+        },
+        {
+          "id": "c",
+          "text": "এতে তাঁর স্পষ্ট বিশ্বাস স্বীকার উপেক্ষা করা হয়"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতগুলো বলে আল্লাহ জীবন ফিরিয়ে দিতে পারেন না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কথোপকথন বুঝতে ইবরাহিম (আ.)-এর বিশ্বাস স্বীকার ও অন্তরের নিশ্চিন্ততার অনুরোধ একসঙ্গে রাখতে হবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "260",
+          "label": "কুরআন ২:২৬০",
+          "url": "https://quran.com/2/260"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_028",
+      "conceptId": "quran_yunus_own_wrong",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইউনুস (আ.)-এর দোয়ার অর্থ কোন মনোভাবে প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধর্মীয় কথা দিয়ে নিজের প্রতিটি দোষ অস্বীকার"
+        },
+        {
+          "id": "b",
+          "text": "বাক্যগুলো অন্যায়কে গ্রহণযোগ্য করে বলে দাবি"
+        },
+        {
+          "id": "c",
+          "text": "ভুল স্বীকার অপ্রয়োজনীয় মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "বিনয় ও দায়িত্ববোধ নিয়ে আল্লাহর দিকে ফেরা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দোয়ার অর্থে আল্লাহর পবিত্রতা ঘোষণা ও নিজের অন্যায় স্বীকার রয়েছে। সেই বার্তা উপেক্ষা করে শুধু ধ্বনি পুনরাবৃত্তিই এর পুরো অর্থ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87-88",
+          "label": "কুরআন ২১:৮৭-৮৮",
+          "url": "https://quran.com/21/87-88"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_029",
+      "conceptId": "quran_ayyub_adversity_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ঈমান থাকলে আল্লাহকে নিজের কষ্ট বলা নিষিদ্ধ—আইয়ুব (আ.)-এর দোয়া কি এ দাবি সমর্থন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, তিনি সম্মানের সঙ্গে আল্লাহকে ডেকে নিজের কষ্ট জানান"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, তিনি কোনো কষ্টের কথা বলতে অস্বীকার করেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কষ্টে প্রতিটি দোয়া অগ্রহণযোগ্য হয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ তিনি আল্লাহর ওপর ভরসা ছেড়ে দেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলোতে আল্লাহর রহমত স্বীকারের পাশাপাশি কষ্টের সৎ প্রকাশ রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "83-84",
+          "label": "কুরআন ২১:৮৩-৮৪",
+          "url": "https://quran.com/21/83-84"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_030",
+      "conceptId": "quran_yaqub_active_hope",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইয়াকুব (আ.)-এর নির্দেশে আশা ও কাজ কীভাবে যুক্ত হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আশার জন্য প্রতিটি উপকারী পদক্ষেপ বাদ দিতে হয়"
+        },
+        {
+          "id": "b",
+          "text": "আশার পাশাপাশি বাস্তব অনুসন্ধান রয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "কাজ প্রমাণ করে আশা নেই"
+        },
+        {
+          "id": "d",
+          "text": "অনুসন্ধান দোয়া অসম্ভব করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি আশা ও বাস্তব কাজকে পরস্পরের বিরুদ্ধে দাঁড় করায় না; দুটির নির্দেশ একসঙ্গে দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "87",
+          "label": "কুরআন ১২:৮৭",
+          "url": "https://quran.com/12/87"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_031",
+      "conceptId": "quran_yusuf_resisting_pressure",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "চাপ প্রতিরোধের শিক্ষায় ইউসুফ (আ.)-এর দোয়া কী যোগ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আত্মবিশ্বাসে সাহায্য অপ্রয়োজনীয় হয়"
+        },
+        {
+          "id": "b",
+          "text": "চাপ থাকলে এমনিতেই অন্যায় বৈধ হয়"
+        },
+        {
+          "id": "c",
+          "text": "নিজেকে অজেয় দাবি না করে প্রতিরোধের সঙ্গে আল্লাহর সাহায্য চাওয়া যায়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মানুষের সমর্থনই ব্যক্তিকে রক্ষা করতে পারে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নিজের সুরক্ষার প্রয়োজন নেই দাবি না করে ইউসুফ (আ.) ষড়যন্ত্রের বিরুদ্ধে আল্লাহর সাহায্য চান।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "33",
+          "label": "কুরআন ১২:৩৩",
+          "url": "https://quran.com/12/33"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_032",
+      "conceptId": "quran_yusuf_preparation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "প্রস্তুতি সব সময় দুর্বল ঈমানের প্রমাণ—এ ধারণাকে ইউসুফ (আ.)-এর পরামর্শ কীভাবে চ্যালেঞ্জ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি সবাইকে চাষ ছেড়ে দিতে বলেন"
+        },
+        {
+          "id": "b",
+          "text": "তিনি বলেন, সংরক্ষিত শস্য আল্লাহর কর্তৃত্বের বিকল্প"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর পরিকল্পনায় আসন্ন প্রয়োজন উপেক্ষা করা হয়"
+        },
+        {
+          "id": "d",
+          "text": "ঘটনাতেই সতর্ক বাস্তব প্রস্তুতি রয়েছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো কঠিন বছরের জন্য বাস্তব পরিকল্পনা দেয়। ঈমান ও দায়িত্বশীল প্রস্তুতি পরস্পরবিরোধী হওয়া জরুরি নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "47-49",
+          "label": "কুরআন ১২:৪৭-৪৯",
+          "url": "https://quran.com/12/47-49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_033",
+      "conceptId": "quran_sulayman_blessing_test",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নিয়ামত পাওয়া মানে প্রাপকের আর দায়িত্ব নেই—এমন নয় কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুলাইমান (আ.) এটি পাওয়াকে কৃতজ্ঞতার পরীক্ষা বলেছেন"
+        },
+        {
+          "id": "b",
+          "text": "নিয়ামতে কৃতজ্ঞতা অপ্রয়োজনীয় হয়"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি সুবিধা জবাবদিহি থেকে স্থায়ী মুক্তি প্রমাণ করে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু কষ্টই পরীক্ষা হতে পারে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে অনুগ্রহকে দায়িত্বের সমাপ্তি নয়, কৃতজ্ঞতা ও পরীক্ষার উপলক্ষ হিসেবে দেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "40",
+          "label": "কুরআন ২৭:৪০",
+          "url": "https://quran.com/27/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_034",
+      "conceptId": "quran_qarun_self_credit",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কারুনের জবাব থেকে শিক্ষা নিতে কোন মনোভাব এড়াতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপকারী দক্ষতা শেখা"
+        },
+        {
+          "id": "b",
+          "text": "নিজের জ্ঞান ও সম্পদকে অহংকারী অমুখাপেক্ষিতার ভিত্তি করা"
+        },
+        {
+          "id": "c",
+          "text": "উপদেশের প্রয়োজন স্বীকার করা"
+        },
+        {
+          "id": "d",
+          "text": "সম্পদ হারাতে পারে স্বীকার করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সতর্কতাটি উপদেশের প্রতি তার অহংকারী জবাব নিয়ে। সব শেখা বা উপকারী সামর্থ্যের সামগ্রিক নিন্দা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "78",
+          "label": "কুরআন ২৮:৭৮",
+          "url": "https://quran.com/28/78"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_035",
+      "conceptId": "quran_qarun_balanced_counsel",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আখিরাতকে দুনিয়ার প্রতিটি প্রয়োজন অবহেলার কারণ বানানো অসম্পূর্ণ কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতটি দুনিয়ার বিলাসিতাকে একমাত্র লক্ষ্য করে"
+        },
+        {
+          "id": "b",
+          "text": "এতে সব ধরনের উপকারী কাজ নিষিদ্ধ"
+        },
+        {
+          "id": "c",
+          "text": "একই উপদেশে দুনিয়ার নিজের অংশ না ভুলতেও বলা হয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "এতে বলা হয়েছে, সম্পদের সঙ্গে ভালো আচরণ সম্পর্কহীন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি আখিরাতের চিন্তার সঙ্গে যথাযথ দুনিয়ার অংশ ও ভালো কাজ যুক্ত করে। একটি অংশ দিয়ে অন্যটি মুছে দেওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "77",
+          "label": "কুরআন ২৮:৭৭",
+          "url": "https://quran.com/28/77"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_036",
+      "conceptId": "quran_servants_peace",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মূর্খতাপূর্ণ ঝগড়া প্রত্যাখ্যান মানেই কি উসকানির সঙ্গে একমত হওয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, জবাব না দেওয়া প্রতিটি অপমান সত্য হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রতিটি মতভেদে প্রকাশ্য লড়াই লাগে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ বিনয় মানে নিচু স্বরে অপমান করা"
+        },
+        {
+          "id": "d",
+          "text": "না, শান্ত সংযম ও অন্যায় সমর্থন আলাদা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি মূর্খতাপূর্ণ উসকানির অনুকরণ না করে শান্ত জবাবের প্রশংসা করে। ঝগড়া না বাড়ানো মানে তাতে একমত হওয়া নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "63",
+          "label": "কুরআন ২৫:৬৩",
+          "url": "https://quran.com/25/63"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_037",
+      "conceptId": "quran_cave_known_limits",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গুহার ঘটনার বিতর্কিত বিস্তারিত নিয়ে সতর্কতার সঙ্গে পড়ার কোন অভ্যাস মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নির্ভরযোগ্য জ্ঞানকে অনুমান থেকে আলাদা করা"
+        },
+        {
+          "id": "b",
+          "text": "মনোযোগ টানে বলেই অনিশ্চিত বিস্তারিতকে মূল বিষয় করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি অনুমানকে ওহি মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু তর্কেই নিশ্চয়তা প্রতিষ্ঠিত হয় ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি আল্লাহর জ্ঞানের দিকে মনোযোগ দেয় ও তর্কের সীমা রাখে। বাদ থাকা বিস্তারিত আত্মবিশ্বাসের সঙ্গে বানিয়ে বলতে উৎসাহ দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "কুরআন ১৮:২২",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_038",
+      "conceptId": "quran_garden_acknowledgment",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সঙ্গীর উপদেশের প্রকৃত শিক্ষার বাইরে কোন দাবি যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিয়ামতে আল্লাহর মুখাপেক্ষিতা স্বীকার করা উচিত"
+        },
+        {
+          "id": "b",
+          "text": "ওই স্বীকৃতির বাক্য বললেই সম্পদ কখনো হারাবে না বলা"
+        },
+        {
+          "id": "c",
+          "text": "সম্পদ নিজের অমুখাপেক্ষিতা দাবির অজুহাত নয়"
+        },
+        {
+          "id": "d",
+          "text": "সঙ্গী আল্লাহর ইচ্ছা ও শক্তির উল্লেখ করতে বলেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি আল্লাহকে স্বীকার করতে শেখায়। সম্পদ কখনো ক্ষতিগ্রস্ত হবে না—এমন নিঃশর্ত নিশ্চয়তা দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "39",
+          "label": "কুরআন ১৮:৩৯",
+          "url": "https://quran.com/18/39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_039",
+      "conceptId": "quran_duha_gratitude_conduct",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আদ-দুহার শেষের নির্দেশগুলো কৃতজ্ঞতা ও আচরণ কীভাবে যুক্ত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিয়ামতের কথা বললে অভাবীদের অপমানের অজুহাত হয়"
+        },
+        {
+          "id": "b",
+          "text": "কৃতজ্ঞতা শুধু সম্পদের বিষয়"
+        },
+        {
+          "id": "c",
+          "text": "নিয়ামত স্বীকারের পাশাপাশি মানুষের সঙ্গে মানবিক আচরণ"
+        },
+        {
+          "id": "d",
+          "text": "প্রাপক দাতার প্রশংসা করলেই শুধু সদাচরণ গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতগুলো নির্দেশনাগুলো একসঙ্গে রেখে এমন কৃতজ্ঞতার আহ্বান জানায়, যাতে অসহায় মানুষ উপেক্ষিত না হন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "কুরআন ৯৩:৯-১১",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_040",
+      "conceptId": "quran_sharh_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "এই আয়াত দিয়ে কোনো নির্দিষ্ট ব্যক্তির সমস্যা আগামীকাল শেষ হবে বলা উচিত নয় কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে বলা আছে, প্রতিটি পরীক্ষা ঠিক এক দিন থাকে"
+        },
+        {
+          "id": "b",
+          "text": "এগুলো কষ্টের বাস্তবতা অস্বীকার করে"
+        },
+        {
+          "id": "c",
+          "text": "এগুলো আশাকে নির্দিষ্ট ব্যক্তিগত সময়সূচির অধীন করে"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতগুলো সেই সময়সীমা না দিয়ে আশ্বাস দেয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নির্দিষ্ট সময়সীমার প্রতিশ্রুতি এমন তথ্য যোগ করে, যা উল্লিখিত আয়াতগুলো দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "কুরআন ৯৪:৫-৬",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_041",
+      "conceptId": "quran_righteousness_whole",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক পাঠচক্র ধর্মীয় বাহ্যিক রূপে গুরুত্ব দেয়, কিন্তু প্রতিশ্রুতি ও মানুষকে সাহায্য তুচ্ছ করে। আয়াত অনুযায়ী কী বদলানো উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইবাদতের সঙ্গে আয়াতে থাকা অন্যের প্রতি দায়িত্বও অন্তর্ভুক্ত করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি ইবাদতের বদলে আলোচনা করা"
+        },
+        {
+          "id": "c",
+          "text": "বাহ্যিক রূপকে নেকির একমাত্র লক্ষণ মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "তিলাওয়াত সুন্দর হলেই আচরণ উপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে ঈমান ও ইবাদতের সঙ্গে দানশীলতা, প্রতিশ্রুতি ও ধৈর্য যুক্ত হয়েছে। শেখার পরিকল্পনাতেও এই ব্যাপ্তি রাখা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "কুরআন ২:১৭৭",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_042",
+      "conceptId": "quran_attentive_listening",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শুধু কুরআন শোনার জন্য আয়োজিত আসরে মানুষ পাশের আলাপ চালিয়ে যাচ্ছেন। আয়াত অনুযায়ী কী করা ভালো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুই আলাপ চলার জন্য অডিওর শব্দ বাড়ানো"
+        },
+        {
+          "id": "b",
+          "text": "আলাপ থামিয়ে তিলাওয়াতে মন দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "ফাইল চললে শোনা অপ্রয়োজনীয় মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সময়ের দৈর্ঘ্যে আসর বিচার করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "এই শ্রবণের পরিবেশে নীরব মনোযোগ নির্দেশনার সরাসরি প্রয়োগ। তিলাওয়াতকে শুধু পেছনে চলতে থাকা শব্দ করা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "কুরআন ৭:২০৪",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_043",
+      "conceptId": "quran_refuge_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনি কুরআন তিলাওয়াত শুরু করবেন। আয়াত অনুযায়ী কোন প্রস্তুতি নেবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর সুরক্ষা আর দরকার নেই ঘোষণা করবেন"
+        },
+        {
+          "id": "b",
+          "text": "শ্রোতাদের প্রশংসার মাধ্যমে সুরক্ষা চাইবেন"
+        },
+        {
+          "id": "c",
+          "text": "শয়তান থেকে আল্লাহর আশ্রয় চাইবেন"
+        },
+        {
+          "id": "d",
+          "text": "শুরু করতে ভবিষ্যৎ বলা লাগে ধরে নেবেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে তিলাওয়াতকারীকে শয়তান থেকে আল্লাহর আশ্রয় চাইতে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "কুরআন ১৬:৯৮",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_044",
+      "conceptId": "quran_increase_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুরআনের কোর্স শেষ করে এক শিক্ষার্থী ভাবলেন, আর কিছু শেখার নেই। আয়াত অনুযায়ী কোন স্মরণ করানো সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোর্স শেষ হলেই প্রতিটি ব্যাখ্যা নির্ভুল হয়"
+        },
+        {
+          "id": "b",
+          "text": "ভালো নম্বরে প্রশ্ন আর উপকারী নয়"
+        },
+        {
+          "id": "c",
+          "text": "আগের পড়াশোনায় সতর্ক শিক্ষার প্রয়োজন শেষ"
+        },
+        {
+          "id": "d",
+          "text": "বিনয়ের সঙ্গে জ্ঞান বৃদ্ধির চেষ্টা চালিয়ে যাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "জ্ঞান বৃদ্ধির দোয়া সম্পূর্ণ দক্ষতার দাবি নয়, শেখা চালিয়ে যাওয়া সমর্থন করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "কুরআন ২০:১১৪",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_045",
+      "conceptId": "quran_musa_learning_request",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অভিজ্ঞতা আছে, তবু এমন কারও দেখা পেলেন যিনি উপকারী কিছু শেখাতে পারেন। কোন আচরণ মূসা (আ.)-এর অনুরোধের মতো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর জ্ঞান থেকে শেখার জন্য সম্মানের সঙ্গে অনুরোধ করা"
+        },
+        {
+          "id": "b",
+          "text": "মর্যাদা রক্ষায় শিক্ষা নিতে অস্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "শোনার আগে প্রশংসা দাবি করা"
+        },
+        {
+          "id": "d",
+          "text": "অভিজ্ঞতা মানেই সব জানা ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে সম্মানের সঙ্গে শেখার আগ্রহ রয়েছে। এখানে সাধারণ শেখাকে নবীদের বিশেষ পরিস্থিতির সমান না করে সেই মনোভাব প্রয়োগ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "66",
+          "label": "কুরআন ১৮:৬৬",
+          "url": "https://quran.com/18/66"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_046",
+      "conceptId": "quran_musa_dua_clarity",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "গুরুত্বপূর্ণ বার্তা বোঝানোর আগে কোন প্রার্থনা মূসা (আ.)-এর দোয়ার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু সবার চেয়ে আকর্ষণীয় শোনাতে চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর কাছে সহজতা ও মানুষ বোঝে এমন কথার সামর্থ্য চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "শ্রোতা বোঝে কি না উপেক্ষা করে প্রশংসা চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "পরিষ্কার ব্যাখ্যাকে দুর্বলতা মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দোয়ার লক্ষ্যগুলোর মধ্যে কাজে সহজতা ও বার্তাকে বোধগম্য করা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "কুরআন ২০:২৫-২৮",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_047",
+      "conceptId": "quran_ibrahim_reassurance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইবরাহিম (আ.)-এর অনুরোধ দেখিয়ে এক আলোচনায় দাবি করা হলো, প্রতিটি আন্তরিক প্রশ্নই অবিশ্বাস প্রমাণ করে। কী যাচাই করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উদ্ধৃতি থেকে তাঁর উত্তর সরিয়ে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রশ্নেই তাঁর বাকি সব কথা বাতিল ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "একই আয়াতে তাঁর বিশ্বাস স্বীকার ও প্রশ্নের কারণ পড়া"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতগুলোকে পুনরুত্থান অস্বীকার হিসেবে দেখা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ইবরাহিম (আ.) স্পষ্টভাবে বিশ্বাস স্বীকার করেন ও অন্তরের নিশ্চিন্ততা চান। তাৎক্ষণিক কথোপকথন থেকে তাঁর কথা বিচ্ছিন্ন করা উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "260",
+          "label": "কুরআন ২:২৬০",
+          "url": "https://quran.com/2/260"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_048",
+      "conceptId": "quran_yunus_own_wrong",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ নিজের কোনো অন্যায় স্বীকার এড়ানোর উপায় হিসেবে ইউনুস (আ.)-এর দোয়া ছড়ালেন। কী বাদ পড়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতগুলো আল্লাহকে ডাকা প্রত্যাখ্যান করে"
+        },
+        {
+          "id": "b",
+          "text": "বাক্যগুলো বক্তাকে ভুলের ঊর্ধ্বে ঘোষণা করে"
+        },
+        {
+          "id": "c",
+          "text": "দোয়া শুধু মানুষের সমর্থন পাওয়ার জন্য"
+        },
+        {
+          "id": "d",
+          "text": "দোয়াতেই নিজের অন্যায় স্বীকার রয়েছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দোয়া দায়িত্বশীলভাবে ব্যবহার করতে এর বিনয় ও স্বীকারোক্তিতে মন দিতে হয়; অর্থ উল্টে দিতে নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87-88",
+          "label": "কুরআন ২১:৮৭-৮৮",
+          "url": "https://quran.com/21/87-88"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_049",
+      "conceptId": "quran_ayyub_adversity_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কষ্টে থাকা বন্ধু ভাবছেন, আল্লাহকে কষ্টের কথা বললে ঈমানের অভাব বোঝাবেই। কোন উদাহরণ প্রাসঙ্গিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আইয়ুব (আ.)-এর নিজের কষ্ট জানিয়ে আল্লাহর রহমত চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "কারুনের নিজের সম্পদের কৃতিত্ব দাবি"
+        },
+        {
+          "id": "c",
+          "text": "সম্পদ নিয়ে বাগানমালিকের গর্ব"
+        },
+        {
+          "id": "d",
+          "text": "সব দোয়া বন্ধ করার নির্দেশ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আইয়ুব (আ.)-এর উদাহরণে কষ্টের সৎ প্রকাশের সঙ্গে শ্রদ্ধা ও আল্লাহর রহমতের আশা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "83-84",
+          "label": "কুরআন ২১:৮৩-৮৪",
+          "url": "https://quran.com/21/83-84"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_050",
+      "conceptId": "quran_yaqub_active_hope",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক দল বলছে, আল্লাহর ওপর আশা রাখলে উপকারী ও নিরাপদ অনুসন্ধান বন্ধ করতে হবে। ইয়াকুব (আ.)-এর নির্দেশের শিক্ষা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আশা প্রতিটি বাস্তব পদক্ষেপ নিষিদ্ধ করে"
+        },
+        {
+          "id": "b",
+          "text": "আশা না ছেড়ে উপযুক্ত অনুসন্ধান চালিয়ে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "খোঁজার অর্থ আল্লাহর ওপর ভরসা করা যায় না"
+        },
+        {
+          "id": "d",
+          "text": "সম্পূর্ণ নিষ্ক্রিয়তাই শুধু ঈমান দেখায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইয়াকুব (আ.) ছেলেদের খুঁজতে এবং নিরাশ না হতে বলেন। ঘটনায় কাজ ও আশা একসঙ্গে এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "87",
+          "label": "কুরআন ১২:৮৭",
+          "url": "https://quran.com/12/87"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_051",
+      "conceptId": "quran_yusuf_resisting_pressure",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধুরা অন্যায়ে চাপ দিয়ে বলছে, নিজের শক্তির ওপরই শুধু ভরসা করতে হবে। ইউসুফ (আ.)-এর দোয়ার শিক্ষা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আত্মবিশ্বাসে অন্যায় ক্ষতিহীন হয় ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "বন্ধুদের সমর্থনকে চূড়ান্ত মাপকাঠি করা"
+        },
+        {
+          "id": "c",
+          "text": "চাপ প্রতিরোধের সঙ্গে আল্লাহর সাহায্য চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "চাপে দায়িত্বশীল সিদ্ধান্তের সব প্রয়োজন শেষ বিশ্বাস করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নিজেকে অজেয় না ধরে আল্লাহর সাহায্য চাওয়ার উদাহরণ ইউসুফ (আ.)-এর দোয়ায় রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "33",
+          "label": "কুরআন ১২:৩৩",
+          "url": "https://quran.com/12/33"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_052",
+      "conceptId": "quran_yusuf_preparation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সম্ভাব্য সংকটের জন্য একটি সম্প্রদায় যুক্তিসংগতভাবে রসদ প্রস্তুত করতে পারে। ইউসুফ (আ.)-এর পরিকল্পনা কোন শিক্ষা সমর্থন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভরসার প্রমাণ দিতে সব এখনই ব্যবহার করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রস্তুতিতে ভবিষ্যতের পুরো নিয়ন্ত্রণ আসে ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "ঘটনায় ওহি আছে বলে বাস্তব জ্ঞান প্রত্যাখ্যান করা"
+        },
+        {
+          "id": "d",
+          "text": "পরিকল্পনাকে ঈমানহীনতা না ভেবে দায়িত্বশীল প্রস্তুতি নেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আধুনিক পরিস্থিতিটি দায়িত্বশীল প্রস্তুতির উদাহরণ। এতে পরিকল্পনাকারীরা ইউসুফ (আ.)-এর ভবিষ্যৎ সম্পর্কে ওহিভিত্তিক জ্ঞান পেয়ে যান না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "47-49",
+          "label": "কুরআন ১২:৪৭-৪৯",
+          "url": "https://quran.com/12/47-49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_053",
+      "conceptId": "quran_sulayman_blessing_test",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বড় সাফল্যের পর কেউ বললেন, কৃতজ্ঞতা নিয়ে আর ভাবার দরকার নেই। সুলাইমান (আ.)-এর জবাব কী মনে করায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিয়ামত পাওয়াই কৃতজ্ঞতার পরীক্ষা হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "সাফল্যে প্রতিটি দায়িত্ব শেষ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ব্যর্থদেরই আল্লাহর প্রয়োজন"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি সুবিধা স্থায়ী আধ্যাত্মিক শ্রেষ্ঠত্ব প্রমাণ করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সুলাইমান (আ.) অনুগ্রহকে তাঁর রবের দান বলেন এবং নিজের প্রতিক্রিয়ার মধ্যে পরীক্ষা দেখেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "40",
+          "label": "কুরআন ২৭:৪০",
+          "url": "https://quran.com/27/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_054",
+      "conceptId": "quran_qarun_self_credit",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক সফল ব্যক্তি নিজের দক্ষতা দিয়ে আল্লাহর মুখাপেক্ষিতার সব স্মরণ প্রত্যাখ্যান করেন। কোন সতর্কতা প্রাসঙ্গিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব শেখা নিষিদ্ধ—এমন দাবি"
+        },
+        {
+          "id": "b",
+          "text": "নিজের জ্ঞানের কারণে সম্পদ পেয়েছে—কারুনের অহংকারী দাবি"
+        },
+        {
+          "id": "c",
+          "text": "কেউ ব্যবহারিক দক্ষতা ব্যবহার করতে পারবে না—এমন বিধান"
+        },
+        {
+          "id": "d",
+          "text": "শুধু দরিদ্রদের উপদেশ প্রয়োজন—এর প্রমাণ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "শিক্ষাটি অহংকারী অমুখাপেক্ষিতাকে চ্যালেঞ্জ করে। উপকারী পড়াশোনার নিন্দা বা মানুষের সাধারণ চেষ্টা অস্বীকার করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "78",
+          "label": "কুরআন ২৮:৭৮",
+          "url": "https://quran.com/28/78"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_055",
+      "conceptId": "quran_qarun_balanced_counsel",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক ব্যক্তি বললেন, আখিরাত চাইলে দুনিয়ার প্রতিটি যুক্তিসংগত দায়িত্ব ছাড়তে হবে। আয়াত অনুযায়ী সংশোধন কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এর বদলে দুনিয়ার আরামকে একমাত্র উদ্দেশ্য করা"
+        },
+        {
+          "id": "b",
+          "text": "সম্পদে ভালো আচরণের প্রয়োজন শেষ ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "যথাযথ দুনিয়ার অংশ ও ভালো কাজ বজায় রেখে আখিরাতের কল্যাণ চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "উদ্দেশ্য ধর্মীয় শোনালে বিপর্যয় গ্রহণযোগ্য মনে করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "উপদেশে চিরস্থায়ী লক্ষ্য, দুনিয়ার অংশ, ভালো আচরণ ও বিপর্যয় প্রত্যাখ্যান একসঙ্গে এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "77",
+          "label": "কুরআন ২৮:৭৭",
+          "url": "https://quran.com/28/77"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_056",
+      "conceptId": "quran_servants_peace",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিরাপদ এক আলোচনায় কেউ পাল্টাপাল্টি অপমানে আপনাকে জড়াতে চাইছেন। আয়াত অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের ভাবমূর্তি রক্ষায় আরও কঠোর অপমান খুঁজবেন"
+        },
+        {
+          "id": "b",
+          "text": "ঝগড়া দীর্ঘ করতে অন্যদের ডাকবেন"
+        },
+        {
+          "id": "c",
+          "text": "লড়াই না করাকে প্রতিটি অভিযোগ মানা মনে করবেন"
+        },
+        {
+          "id": "d",
+          "text": "অপমানে যোগ না দিয়ে শান্তভাবে জবাব দেবেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে বিনয় ও মূর্খতাপূর্ণ উসকানিতে শান্ত জবাবের বর্ণনা রয়েছে। এই পরিস্থিতি নিরাপদ আলাপ নিয়ে; হুমকি উপেক্ষা করা নিয়ে নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "63",
+          "label": "কুরআন ২৫:৬৩",
+          "url": "https://quran.com/25/63"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_057",
+      "conceptId": "quran_cave_known_limits",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক গল্পকথক গুহার ঘটনায় অনুমান যোগ করে নিশ্চিত কুরআনিক তথ্য হিসেবে জানাচ্ছেন। কী পরিবর্তন করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মূল পাঠ ও অনুমান আলাদা করে ভিত্তিহীন নিশ্চয়তা এড়ানো"
+        },
+        {
+          "id": "b",
+          "text": "বিশ্বাসযোগ্য শোনাতে বিস্তারিত আরও নাটকীয় করা"
+        },
+        {
+          "id": "c",
+          "text": "পুনরাবৃত্তিতে অনুমান ওহি হয়ে যায় ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "শ্রোতার প্রশংসাকে যাচাই মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বিতর্কিত বিস্তারিত সম্পর্কে সতর্কতা কুরআনের ঘটনা জানানোর সময় নিজের জ্ঞানের সীমা নিয়ে সচেতন থাকতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "কুরআন ১৮:২২",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_058",
+      "conceptId": "quran_garden_acknowledgment",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বাগানমালিকের সঙ্গীর উপদেশ শুনে কেউ তার বাক্যকে সব ধরনের ক্ষতি থেকে নিশ্চয়তা হিসেবে প্রচার করছেন। আয়াত অনুযায়ী উত্তর কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্পদ আর ক্ষতিগ্রস্ত হতে পারবে না—এতে একমত হওয়া"
+        },
+        {
+          "id": "b",
+          "text": "চূড়ান্ত নিশ্চয়তা না বানিয়ে আল্লাহকে স্বীকার করার শিক্ষা দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কোনো মুমিনের সম্পদ কখনো কমবে না—এমন প্রতিশ্রুতি দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "কৃতজ্ঞতাকে গায়েবের ওপর মালিকানা মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি আল্লাহর ইচ্ছা ও শক্তি স্বীকার করতে উৎসাহ দেয়। প্রচারিত নিঃশর্ত ক্ষতিমুক্তির দাবি এতে নেই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "39",
+          "label": "কুরআন ১৮:৩৯",
+          "url": "https://quran.com/18/39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_059",
+      "conceptId": "quran_duha_gratitude_conduct",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক প্রচারণায় উচ্ছ্বাসের সঙ্গে নিয়ামতের কথা বলা হলেও সাহায্যপ্রার্থীদের ঠাট্টা করা হচ্ছে। আদ-দুহা অনুযায়ী কী বদলানো উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কৃতজ্ঞতাকে প্রার্থীদের অপমানের কারণ করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি অনুরোধকে অপমানের অনুমতি মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "কৃতজ্ঞতার সঙ্গে অভাবীদের প্রতি সম্মানজনক আচরণ রাখা"
+        },
+        {
+          "id": "d",
+          "text": "নিয়ামতের কথা বললে অন্যের প্রতি দায়িত্ব শেষ ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সুরার শেষের নির্দেশগুলো নিয়ামত স্বীকারের সঙ্গে জুলুম ও রূঢ় আচরণ এড়ানোকে যুক্ত করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "কুরআন ৯৩:৯-১১",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_060",
+      "conceptId": "quran_sharh_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ পোস্ট করলেন, এই আয়াতগুলো প্রতিটি পাঠকের কষ্ট চব্বিশ ঘণ্টায় শেষ হওয়া নিশ্চিত করে। কী সংশোধন দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সময়সীমা বদলে আরেকটি বানানো তারিখ দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতে কোনো আশা নেই বলা"
+        },
+        {
+          "id": "c",
+          "text": "কষ্ট থেকে যাওয়াই পাঠকের ঈমান নেই—এটি প্রমাণ করে বলা"
+        },
+        {
+          "id": "d",
+          "text": "আশ্বাস রেখে ভিত্তিহীন সময়সীমা সরানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো কষ্টের সঙ্গে স্বস্তির আশ্বাস পুনরাবৃত্তি করে; এমন ব্যক্তিগত সময়সূচি দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "কুরআন ৯৪:৫-৬",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    }
+  ]
+}

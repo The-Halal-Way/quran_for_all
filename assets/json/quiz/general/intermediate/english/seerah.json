@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.1",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "mid",
+  "categoryId": "seerah",
+  "title": "Seerah",
+  "description": "General User → Mid. Familiar events, broader basics and short everyday lessons from the life of Prophet Muhammad (peace be upon him). Includes migration, community life, leadership, teaching, justice and compassion. All questions are Mid level; no obscure dates or reference-number memorization are required.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding required across all question styles. Styles are not difficulty levels. Requires more understanding and simple connections than Beginner, without specialist study. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith reports checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Modern scenarios illustrate lessons from the reports, rather than reproduce historical events. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_mid_seerah_001",
+      "conceptId": "seerah_shepherd",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which ordinary work did the Prophet recall doing for people in Makkah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shepherding sheep"
+        },
+        {
+          "id": "b",
+          "text": "Building royal palaces"
+        },
+        {
+          "id": "c",
+          "text": "Collecting taxes for an empire"
+        },
+        {
+          "id": "d",
+          "text": "Commanding a merchant fleet"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet mentioned tending the sheep of people in Makkah for payment.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2262",
+          "label": "Sahih al-Bukhari 2262",
+          "url": "https://sunnah.com/bukhari:2262"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_002",
+      "conceptId": "seerah_isra",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which journey is described in the opening of Surah Al-Isra?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The migration from Makkah to Madinah"
+        },
+        {
+          "id": "b",
+          "text": "From the Sacred Mosque to Al-Aqsa Mosque by night"
+        },
+        {
+          "id": "c",
+          "text": "The journey from Madinah for the Farewell Hajj"
+        },
+        {
+          "id": "d",
+          "text": "The return from Hudaybiyyah to Madinah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse describes the Night Journey between the Sacred Mosque and Al-Aqsa Mosque.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "1",
+          "label": "Quran 17:1",
+          "url": "https://quran.com/17/1"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_003",
+      "conceptId": "seerah_miraj_prayers",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which daily obligation is connected with the account of the Miraj?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A daily pilgrimage to Makkah"
+        },
+        {
+          "id": "b",
+          "text": "A requirement to fast every day of the year"
+        },
+        {
+          "id": "c",
+          "text": "The five daily prayers"
+        },
+        {
+          "id": "d",
+          "text": "An obligation to remain awake every night"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The narration of the ascent includes the prescription of five daily prayers.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "349",
+          "label": "Sahih al-Bukhari 349",
+          "url": "https://sunnah.com/bukhari:349"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_004",
+      "conceptId": "seerah_persecution",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What injustice does the Quran recall about believers driven from their homes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They refused every form of honest work"
+        },
+        {
+          "id": "b",
+          "text": "They were required to leave because travel was forbidden"
+        },
+        {
+          "id": "c",
+          "text": "They had rejected all belief in Allah"
+        },
+        {
+          "id": "d",
+          "text": "They were expelled for declaring Allah their Lord"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse recalls people unjustly driven out for affirming their faith in Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "40",
+          "label": "Quran 22:40",
+          "url": "https://quran.com/22/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_005",
+      "conceptId": "seerah_najashi_prayer",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet do on learning of An-Najashi's death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He led the companions in funeral prayer for him"
+        },
+        {
+          "id": "b",
+          "text": "He declared that the news should be mocked"
+        },
+        {
+          "id": "c",
+          "text": "He treated the death as a reason to abandon prayer"
+        },
+        {
+          "id": "d",
+          "text": "He ordered that no one mention him"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet announced An-Najashi's death and led a funeral prayer for him.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1333",
+          "label": "Sahih al-Bukhari 1333",
+          "url": "https://sunnah.com/bukhari:1333"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_006",
+      "conceptId": "seerah_quba",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which mosque did the Prophet establish while staying with Banu Amr ibn Awf on arrival near Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Aqsa Mosque"
+        },
+        {
+          "id": "b",
+          "text": "The mosque of Quba"
+        },
+        {
+          "id": "c",
+          "text": "The Sacred Mosque in Makkah"
+        },
+        {
+          "id": "d",
+          "text": "The mosque of Kufa"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The migration account describes the Prophet establishing and praying in the mosque of Quba before continuing into Madinah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3906",
+          "label": "Sahih al-Bukhari 3906",
+          "url": "https://sunnah.com/bukhari:3906"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_007",
+      "conceptId": "seerah_brotherhood",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two groups were brought together through bonds of brotherhood in Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Romans and Persians"
+        },
+        {
+          "id": "b",
+          "text": "The people of Makkah and Pharaoh's court"
+        },
+        {
+          "id": "c",
+          "text": "The Muhajirun and Ansar"
+        },
+        {
+          "id": "d",
+          "text": "The rulers of Yemen and Byzantium"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet established brotherhood between emigrants and their supporters in Madinah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3781",
+          "label": "Sahih al-Bukhari 3781",
+          "url": "https://sunnah.com/bukhari:3781"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_008",
+      "conceptId": "seerah_uhud_archers",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "At Uhud, what did the Prophet instruct the archers about their position?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leave as soon as victory appeared likely"
+        },
+        {
+          "id": "b",
+          "text": "Change their position whenever they preferred"
+        },
+        {
+          "id": "c",
+          "text": "Follow anyone collecting belongings from the field"
+        },
+        {
+          "id": "d",
+          "text": "Remain there until he sent for them"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The archers were clearly instructed not to leave their assigned place without the Prophet's direction.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3039",
+          "label": "Sahih al-Bukhari 3039",
+          "url": "https://sunnah.com/bukhari:3039"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_009",
+      "conceptId": "seerah_trench_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet personally do during the work at Al-Khandaq?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help carry earth"
+        },
+        {
+          "id": "b",
+          "text": "Stay away from every practical task"
+        },
+        {
+          "id": "c",
+          "text": "Demand that only newcomers work"
+        },
+        {
+          "id": "d",
+          "text": "Treat the digging as entertainment"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report describes the Prophet carrying earth during the work at the trench.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "Sahih al-Bukhari 4104",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_010",
+      "conceptId": "seerah_hudaybiyyah_purpose",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What was the purpose of the Prophet's journey that led to Hudaybiyyah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To move permanently to Yemen"
+        },
+        {
+          "id": "b",
+          "text": "To visit the Sacred House for Umrah"
+        },
+        {
+          "id": "c",
+          "text": "To lead the Farewell Hajj"
+        },
+        {
+          "id": "d",
+          "text": "To establish a royal court outside Makkah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Muslims approached for pilgrimage rites; negotiations led to the agreement at Hudaybiyyah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_011",
+      "conceptId": "seerah_umm_salamah",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which wife advised the Prophet to begin the concluding rites himself when the companions hesitated at Hudaybiyyah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aishah"
+        },
+        {
+          "id": "b",
+          "text": "Hafsah"
+        },
+        {
+          "id": "c",
+          "text": "Umm Salamah"
+        },
+        {
+          "id": "d",
+          "text": "Sawdah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Umm Salamah offered practical advice, and the companions followed when the Prophet acted.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_012",
+      "conceptId": "seerah_letter_seal",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Why did the Prophet have a seal ring made for correspondence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He wished to stop sending any messages"
+        },
+        {
+          "id": "b",
+          "text": "He believed every letter needed a costly gift"
+        },
+        {
+          "id": "c",
+          "text": "He intended the ring to replace the message itself"
+        },
+        {
+          "id": "d",
+          "text": "He was told rulers would not read unsealed letters"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report connects the seal ring with the accepted way rulers received letters.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "65",
+          "label": "Sahih al-Bukhari 65",
+          "url": "https://sunnah.com/bukhari:65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_013",
+      "conceptId": "seerah_muadh_yemen",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which companion was sent to Yemen with instructions about teaching faith, prayer and zakah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muadh ibn Jabal"
+        },
+        {
+          "id": "b",
+          "text": "Bilal ibn Rabah"
+        },
+        {
+          "id": "c",
+          "text": "Anas ibn Malik"
+        },
+        {
+          "id": "d",
+          "text": "Zayd ibn Thabit"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet gave Muadh a clear sequence for teaching foundational duties in Yemen.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1395",
+          "label": "Sahih al-Bukhari 1395",
+          "url": "https://sunnah.com/bukhari:1395"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_014",
+      "conceptId": "seerah_aishah_speech",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which wife described the Prophet's speech as clear enough for his words to be counted?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umm Salamah"
+        },
+        {
+          "id": "b",
+          "text": "Aishah"
+        },
+        {
+          "id": "c",
+          "text": "Hafsah"
+        },
+        {
+          "id": "d",
+          "text": "Zaynab bint Jahsh"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah's description highlights the clarity of the Prophet's communication.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3567",
+          "label": "Sahih al-Bukhari 3567",
+          "url": "https://sunnah.com/bukhari:3567"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_015",
+      "conceptId": "seerah_bedouin_mosque",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When a Bedouin urinated in the mosque, what response did the Prophet direct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leave the place unclean permanently"
+        },
+        {
+          "id": "b",
+          "text": "Encourage the crowd to humiliate him"
+        },
+        {
+          "id": "c",
+          "text": "Restrain the crowd and clean the place with water"
+        },
+        {
+          "id": "d",
+          "text": "Declare the mosque unusable forever"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet prevented a harsh reaction and directed that the affected place be cleaned.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "Sahih al-Bukhari 220",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_016",
+      "conceptId": "seerah_sick_boy",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet do when a young Jewish boy who served him became ill?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He mocked his illness"
+        },
+        {
+          "id": "b",
+          "text": "He refused to acknowledge his condition"
+        },
+        {
+          "id": "c",
+          "text": "He ordered others to frighten him"
+        },
+        {
+          "id": "d",
+          "text": "He visited him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration records the Prophet visiting the boy during his illness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "Sahih al-Bukhari 1356",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_017",
+      "conceptId": "seerah_funeral_dignity",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet do when a Jewish funeral procession passed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He stood up"
+        },
+        {
+          "id": "b",
+          "text": "He mocked the mourners"
+        },
+        {
+          "id": "c",
+          "text": "He ordered the procession to be insulted"
+        },
+        {
+          "id": "d",
+          "text": "He denied the deceased was a human being"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "When told whose funeral it was, he drew attention to the deceased being a human soul.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1312",
+          "label": "Sahih al-Bukhari 1312",
+          "url": "https://sunnah.com/bukhari:1312"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_018",
+      "conceptId": "seerah_equal_justice",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet reject in the case of a socially prominent woman accused of theft?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The idea that evidence should matter"
+        },
+        {
+          "id": "b",
+          "text": "Special treatment based on social rank"
+        },
+        {
+          "id": "c",
+          "text": "The rights of people without social influence"
+        },
+        {
+          "id": "d",
+          "text": "The principle that wrongdoing should be addressed"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report warns against excusing the powerful while applying standards only to the weak.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3475",
+          "label": "Sahih al-Bukhari 3475",
+          "url": "https://sunnah.com/bukhari:3475"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_019",
+      "conceptId": "seerah_eclipse",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet clarify when an eclipse coincided with his son Ibrahim's death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The eclipse proved his son controlled the sun"
+        },
+        {
+          "id": "b",
+          "text": "Every eclipse announces the death of a prophet"
+        },
+        {
+          "id": "c",
+          "text": "Eclipses do not occur because of someone's death or birth"
+        },
+        {
+          "id": "d",
+          "text": "People should use the eclipse to predict private events"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet corrected the claim connecting the eclipse to his son's death.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1043",
+          "label": "Sahih al-Bukhari 1043",
+          "url": "https://sunnah.com/bukhari:1043"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_020",
+      "conceptId": "seerah_abubakr_prayer",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Whom did the Prophet direct to lead the people in prayer during his severe illness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umar ibn al-Khattab"
+        },
+        {
+          "id": "b",
+          "text": "Ali ibn Abi Talib"
+        },
+        {
+          "id": "c",
+          "text": "Bilal ibn Rabah"
+        },
+        {
+          "id": "d",
+          "text": "Abu Bakr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration records the Prophet repeatedly instructing that Abu Bakr lead the prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "678",
+          "label": "Sahih al-Bukhari 678",
+          "url": "https://sunnah.com/bukhari:678"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_021",
+      "conceptId": "seerah_khadijah_reassurance",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why was Khadijah's reassurance after the first revelation more than empty praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She recalled the Prophet's established care for relatives and people in need"
+        },
+        {
+          "id": "b",
+          "text": "She promised that difficult experiences could never happen"
+        },
+        {
+          "id": "c",
+          "text": "She dismissed his distress without listening"
+        },
+        {
+          "id": "d",
+          "text": "She based her support only on social status"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Khadijah pointed to known qualities and acts of service while reassuring him.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_022",
+      "conceptId": "seerah_hijrah_planning",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the migration account show about reliance on Allah and preparation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trust required abandoning every travel arrangement"
+        },
+        {
+          "id": "b",
+          "text": "Careful arrangements accompanied trust in Allah"
+        },
+        {
+          "id": "c",
+          "text": "Only wealth made the journey possible"
+        },
+        {
+          "id": "d",
+          "text": "Planning meant rejecting divine help"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The account includes practical arrangements for the journey alongside faith and reliance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_023",
+      "conceptId": "seerah_cave_reassurance",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What reassurance did the Prophet give his companion in the cave?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their pursuers had become their protectors"
+        },
+        {
+          "id": "b",
+          "text": "No human danger could ever exist"
+        },
+        {
+          "id": "c",
+          "text": "Allah was with them in support"
+        },
+        {
+          "id": "d",
+          "text": "They should abandon the journey because fear was possible"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse recounts the Prophet reassuring his companion of Allah's support.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "40",
+          "label": "Quran 9:40",
+          "url": "https://quran.com/9/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_024",
+      "conceptId": "seerah_brotherhood_support",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What community purpose is illustrated by brotherhood between the Muhajirun and Ansar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keeping new arrivals permanently excluded"
+        },
+        {
+          "id": "b",
+          "text": "Replacing faith with family rivalry"
+        },
+        {
+          "id": "c",
+          "text": "Making wealth the only basis for belonging"
+        },
+        {
+          "id": "d",
+          "text": "Turning welcome into practical support for newcomers"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The bonds helped connect emigrants with a supportive community in Madinah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3781",
+          "label": "Sahih al-Bukhari 3781",
+          "url": "https://sunnah.com/bukhari:3781"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_025",
+      "conceptId": "seerah_shared_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What leadership quality is illustrated by the Prophet carrying earth at the trench?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sharing the community's effort"
+        },
+        {
+          "id": "b",
+          "text": "Avoiding difficult tasks because of status"
+        },
+        {
+          "id": "c",
+          "text": "Measuring leadership only by comfort"
+        },
+        {
+          "id": "d",
+          "text": "Leaving hardship entirely to others"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "His participation provides an example of practical involvement in shared responsibilities.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "Sahih al-Bukhari 4104",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_026",
+      "conceptId": "seerah_uhud_responsibility",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What general lesson can be drawn from the archers' assignment at Uhud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Early success makes every instruction irrelevant"
+        },
+        {
+          "id": "b",
+          "text": "A clear responsibility should not be abandoned merely because success seems near"
+        },
+        {
+          "id": "c",
+          "text": "A shared plan works best when no one keeps a role"
+        },
+        {
+          "id": "d",
+          "text": "Personal excitement always overrides an agreed task"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The incident illustrates the importance of maintaining an assigned responsibility.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3039",
+          "label": "Sahih al-Bukhari 3039",
+          "url": "https://sunnah.com/bukhari:3039"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_027",
+      "conceptId": "seerah_hudaybiyyah_patience",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does accepting a difficult agreement at Hudaybiyyah illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The idea that agreements never matter"
+        },
+        {
+          "id": "b",
+          "text": "The belief that every disagreement must become a fight"
+        },
+        {
+          "id": "c",
+          "text": "Patient commitment to a considered peaceful course"
+        },
+        {
+          "id": "d",
+          "text": "The refusal to consider any negotiated solution"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The account shows restraint and commitment amid terms that were difficult for the companions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_028",
+      "conceptId": "seerah_consultation",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran's instruction to the Prophet to consult companions show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leader must reject every useful suggestion"
+        },
+        {
+          "id": "b",
+          "text": "Seeking advice always proves inability"
+        },
+        {
+          "id": "c",
+          "text": "Only the least experienced person may make decisions"
+        },
+        {
+          "id": "d",
+          "text": "Consultation belongs alongside responsible leadership and trust in Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse joins consultation, decision-making and reliance on Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "Quran 3:159",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_029",
+      "conceptId": "seerah_communication_means",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What lesson can be drawn from using a seal for letters to rulers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use appropriate practical means to communicate the message"
+        },
+        {
+          "id": "b",
+          "text": "A message never needs to consider how it will be received"
+        },
+        {
+          "id": "c",
+          "text": "Presentation should replace meaningful content"
+        },
+        {
+          "id": "d",
+          "text": "Ordinary communication tools always conflict with faith"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet used an accepted means for correspondence to reach its intended audience.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "65",
+          "label": "Sahih al-Bukhari 65",
+          "url": "https://sunnah.com/bukhari:65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_030",
+      "conceptId": "seerah_teaching_priorities",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What teaching approach appears in the instructions to Muadh for Yemen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Begin with obscure disagreements before basic belief"
+        },
+        {
+          "id": "b",
+          "text": "Start with foundational belief, then explain central duties"
+        },
+        {
+          "id": "c",
+          "text": "Teach every detail at once regardless of understanding"
+        },
+        {
+          "id": "d",
+          "text": "Avoid explaining prayer and charity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Muadh was given a sequence beginning with the testimony of faith, then prayer and zakah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1395",
+          "label": "Sahih al-Bukhari 1395",
+          "url": "https://sunnah.com/bukhari:1395"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_031",
+      "conceptId": "seerah_correction_mercy",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What balance appears in the Prophet's response to the Bedouin in the mosque?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Show kindness by leaving the problem unaddressed"
+        },
+        {
+          "id": "b",
+          "text": "Protect cleanliness by allowing uncontrolled humiliation"
+        },
+        {
+          "id": "c",
+          "text": "Correct the practical problem without needless harshness"
+        },
+        {
+          "id": "d",
+          "text": "Make anger the only teaching method"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The place was cleaned while the crowd's harsh reaction was restrained.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "Sahih al-Bukhari 220",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_032",
+      "conceptId": "seerah_care_across_groups",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does visiting the sick Jewish boy demonstrate about the Prophet's concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Concern was reserved only for people of high rank"
+        },
+        {
+          "id": "b",
+          "text": "Illness was treated as an opportunity for mockery"
+        },
+        {
+          "id": "c",
+          "text": "Different beliefs made every kind act impossible"
+        },
+        {
+          "id": "d",
+          "text": "Compassion reached someone outside the Muslim community"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The visit demonstrates care toward the boy during his illness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "Sahih al-Bukhari 1356",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_033",
+      "conceptId": "seerah_human_dignity",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What principle is reflected in the Prophet's response to the Jewish funeral procession?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recognition of a person's humanity across religious differences"
+        },
+        {
+          "id": "b",
+          "text": "The idea that grief deserves ridicule"
+        },
+        {
+          "id": "c",
+          "text": "The claim that only wealth gives people dignity"
+        },
+        {
+          "id": "d",
+          "text": "The need to insult every unfamiliar community"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "His response drew attention to the deceased being a human soul.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1312",
+          "label": "Sahih al-Bukhari 1312",
+          "url": "https://sunnah.com/bukhari:1312"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_034",
+      "conceptId": "seerah_justice_status",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is excusing the powerful while punishing only the weak a failure of justice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Power automatically makes every action right"
+        },
+        {
+          "id": "b",
+          "text": "Social rank must not decide whether a fair standard applies"
+        },
+        {
+          "id": "c",
+          "text": "Rules matter only for those without connections"
+        },
+        {
+          "id": "d",
+          "text": "Respect for leaders requires denying every fault"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet warned against a double standard favoring socially prominent people.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3475",
+          "label": "Sahih al-Bukhari 3475",
+          "url": "https://sunnah.com/bukhari:3475"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_035",
+      "conceptId": "seerah_correcting_claims",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is important about the Prophet correcting the eclipse claim after Ibrahim's death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He accepted every flattering explanation"
+        },
+        {
+          "id": "b",
+          "text": "He treated coincidence as enough proof of a cause"
+        },
+        {
+          "id": "c",
+          "text": "He corrected a false claim even though it appeared to honor his family"
+        },
+        {
+          "id": "d",
+          "text": "He encouraged people to invent signs about him"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report shows truth taking priority over an unsupported interpretation that could have enhanced personal prestige.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1043",
+          "label": "Sahih al-Bukhari 1043",
+          "url": "https://sunnah.com/bukhari:1043"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_036",
+      "conceptId": "seerah_anas_patience",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Anas's account reveal about the Prophet's daily character?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kindness only during public speeches"
+        },
+        {
+          "id": "b",
+          "text": "A habit of humiliating helpers"
+        },
+        {
+          "id": "c",
+          "text": "Respect only for wealthy adults"
+        },
+        {
+          "id": "d",
+          "text": "Consideration and restraint in a long working relationship"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Anas remembered years of service without harsh reproach from the Prophet.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "Sahih al-Bukhari 6038",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_037",
+      "conceptId": "seerah_prayer_compassion",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why did the Prophet shorten a prayer on hearing a child cry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To avoid distressing the child's mother"
+        },
+        {
+          "id": "b",
+          "text": "Because prayer had no importance to him"
+        },
+        {
+          "id": "c",
+          "text": "Because children were forbidden from ever being nearby"
+        },
+        {
+          "id": "d",
+          "text": "To punish the congregation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "He adjusted the length out of concern for the mother while continuing to lead prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "Sahih al-Bukhari 707",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_038",
+      "conceptId": "seerah_personal_revenge",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What distinction appears in Aishah's description of the Prophet's response to wrongs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He ignored every moral responsibility"
+        },
+        {
+          "id": "b",
+          "text": "He did not seek revenge for personal injury"
+        },
+        {
+          "id": "c",
+          "text": "He treated all personal irritation as a reason to retaliate"
+        },
+        {
+          "id": "d",
+          "text": "He made personal pride the measure of justice"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah distinguished his restraint over personal offenses from concern for Allah's limits.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6126",
+          "label": "Sahih al-Bukhari 6126",
+          "url": "https://sunnah.com/bukhari:6126"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_039",
+      "conceptId": "seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How did the Prophet respond to food he did not like?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He humiliated whoever prepared it"
+        },
+        {
+          "id": "b",
+          "text": "He treated every disliked dish as forbidden"
+        },
+        {
+          "id": "c",
+          "text": "He left it without criticizing it"
+        },
+        {
+          "id": "d",
+          "text": "He demanded that everyone dislike the same food"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report distinguishes personal preference from insulting food or its preparation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "Sahih al-Bukhari 5409",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_040",
+      "conceptId": "seerah_repetition_teaching",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why did the Prophet sometimes repeat his words?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To prevent anyone from asking questions"
+        },
+        {
+          "id": "b",
+          "text": "To make the message impossible to remember"
+        },
+        {
+          "id": "c",
+          "text": "To replace clear meaning with volume"
+        },
+        {
+          "id": "d",
+          "text": "So listeners could understand properly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Anas described repetition as a way to make the Prophet's words understood.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "Sahih al-Bukhari 95",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_041",
+      "conceptId": "seerah_communication_means",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You need a useful message to reach an unfamiliar audience. Which approach follows the lesson of the Prophet's sealed letters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use an appropriate accepted format without losing the message"
+        },
+        {
+          "id": "b",
+          "text": "Refuse every practical format the audience can receive"
+        },
+        {
+          "id": "c",
+          "text": "Focus on impressive packaging while removing the content"
+        },
+        {
+          "id": "d",
+          "text": "Assume good intentions make delivery irrelevant"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The seal episode supports taking practical steps so communication reaches its audience.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "65",
+          "label": "Sahih al-Bukhari 65",
+          "url": "https://sunnah.com/bukhari:65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_042",
+      "conceptId": "seerah_hijrah_planning",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A group is arranging an important journey. Which approach reflects the migration account?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid preparation to prove faith"
+        },
+        {
+          "id": "b",
+          "text": "Prepare routes and responsibilities while trusting Allah"
+        },
+        {
+          "id": "c",
+          "text": "Assume preparation gives complete control of the outcome"
+        },
+        {
+          "id": "d",
+          "text": "Leave everyone unsure about their tasks"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Practical planning can work together with reliance on Allah, as the migration account illustrates.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_043",
+      "conceptId": "seerah_brotherhood_support",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "New families join your community with few local contacts. Which action draws on the Madinan brotherhood example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Limit welcome to a public photograph"
+        },
+        {
+          "id": "b",
+          "text": "Treat needing help as a permanent disgrace"
+        },
+        {
+          "id": "c",
+          "text": "Connect them with people who can offer real support"
+        },
+        {
+          "id": "d",
+          "text": "Keep them outside every useful network"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The brotherhood example encourages meaningful relationships and practical support.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3781",
+          "label": "Sahih al-Bukhari 3781",
+          "url": "https://sunnah.com/bukhari:3781"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_044",
+      "conceptId": "seerah_shared_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You lead volunteers doing difficult shared work. Which action reflects the trench account?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat your title as a reason to avoid all work"
+        },
+        {
+          "id": "b",
+          "text": "Reserve every hard task for new members"
+        },
+        {
+          "id": "c",
+          "text": "Only criticize others from a comfortable distance"
+        },
+        {
+          "id": "d",
+          "text": "Join the useful effort where you can"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet's participation at the trench illustrates leadership that shares responsibility.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "Sahih al-Bukhari 4104",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_045",
+      "conceptId": "seerah_uhud_responsibility",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have a clear, lawful safety role during an event and the team still relies on you. What lesson from Uhud applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do not abandon the role just because things seem to be going well"
+        },
+        {
+          "id": "b",
+          "text": "Leave without notice when you see something more exciting"
+        },
+        {
+          "id": "c",
+          "text": "Assume early success cancels the agreed plan"
+        },
+        {
+          "id": "d",
+          "text": "Make your role depend entirely on others praising you"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "This is a general lesson about dependable responsibility, not a claim that every instruction in every setting must be followed blindly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3039",
+          "label": "Sahih al-Bukhari 3039",
+          "url": "https://sunnah.com/bukhari:3039"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_046",
+      "conceptId": "seerah_hudaybiyyah_patience",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A considered, lawful agreement is unpopular with your group. Which lesson from Hudaybiyyah is relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume every difficult agreement must be broken"
+        },
+        {
+          "id": "b",
+          "text": "Do not confuse immediate disappointment with a reason to abandon every peaceful commitment"
+        },
+        {
+          "id": "c",
+          "text": "Treat patience as proof of having no principles"
+        },
+        {
+          "id": "d",
+          "text": "Turn disagreement into personal threats"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The episode illustrates patience and commitment through a difficult negotiated situation; it does not make every proposed agreement wise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_047",
+      "conceptId": "seerah_consultation",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A leader is deciding an important matter and dismisses all useful advice as weakness. Which Prophetic guidance challenges that attitude?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid listening so that authority looks stronger"
+        },
+        {
+          "id": "b",
+          "text": "Replace every decision with endless discussion"
+        },
+        {
+          "id": "c",
+          "text": "Consult people, then decide responsibly and rely on Allah"
+        },
+        {
+          "id": "d",
+          "text": "Judge advice only by the speaker's wealth"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran's instruction to the Prophet combines consultation with action and reliance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "Quran 3:159",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_048",
+      "conceptId": "seerah_correction_mercy",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A newcomer makes a serious but correctable mistake in a shared space. Which approach reflects the mosque incident?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore the practical problem completely"
+        },
+        {
+          "id": "b",
+          "text": "Invite everyone to insult the newcomer"
+        },
+        {
+          "id": "c",
+          "text": "Make punishment more important than correcting the situation"
+        },
+        {
+          "id": "d",
+          "text": "Address the problem calmly without encouraging humiliation"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet's response combined a practical remedy with restraint toward the person.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "Sahih al-Bukhari 220",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_049",
+      "conceptId": "seerah_care_across_groups",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A neighbor of another faith is ill and welcomes contact. Which example can guide a considerate visit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Prophet's visit to the sick Jewish boy"
+        },
+        {
+          "id": "b",
+          "text": "The archers' assignment at Uhud"
+        },
+        {
+          "id": "c",
+          "text": "The use of a seal on official letters"
+        },
+        {
+          "id": "d",
+          "text": "The prescription of five prayers during the Miraj"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The visit provides a concrete Seerah example of concern across religious differences.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "Sahih al-Bukhari 1356",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_050",
+      "conceptId": "seerah_equal_justice",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A team wants to excuse a powerful member while blaming weaker members for the same breach. What lesson applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat influence as proof of innocence"
+        },
+        {
+          "id": "b",
+          "text": "Use a fair standard rather than favoring connections"
+        },
+        {
+          "id": "c",
+          "text": "Apply accountability only to people without status"
+        },
+        {
+          "id": "d",
+          "text": "Hide the breach because the member is popular"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet's warning against unequal standards gives a clear lesson about fairness; this scenario concerns ordinary team accountability.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3475",
+          "label": "Sahih al-Bukhari 3475",
+          "url": "https://sunnah.com/bukhari:3475"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_051",
+      "conceptId": "seerah_correcting_claims",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A coincidence is being used to make a flattering but unsupported claim about you. Which response follows the eclipse example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Encourage it because admiration is useful"
+        },
+        {
+          "id": "b",
+          "text": "Invent extra details to strengthen it"
+        },
+        {
+          "id": "c",
+          "text": "Correct the claim even if it brings you praise"
+        },
+        {
+          "id": "d",
+          "text": "Treat attention as proof that it is true"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet did not allow an unsupported eclipse explanation to stand for the sake of personal honor.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1043",
+          "label": "Sahih al-Bukhari 1043",
+          "url": "https://sunnah.com/bukhari:1043"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_052",
+      "conceptId": "seerah_prayer_compassion",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You arrange a community activity involving parents with young children. Which lesson fits the shortened-prayer account?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume a longer activity is always more virtuous"
+        },
+        {
+          "id": "b",
+          "text": "Treat every child's distress as a reason for public blame"
+        },
+        {
+          "id": "c",
+          "text": "Ignore participants' circumstances to preserve your preferred schedule"
+        },
+        {
+          "id": "d",
+          "text": "Consider real burdens when planning the activity"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The account shows concern for another person's difficulty while fulfilling a shared religious activity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "Sahih al-Bukhari 707",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_053",
+      "conceptId": "seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone offers lawful food that does not suit your taste. Which response follows the Prophet's food manners?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decline without insulting the food or the person"
+        },
+        {
+          "id": "b",
+          "text": "Humiliate the cook in front of everyone"
+        },
+        {
+          "id": "c",
+          "text": "Declare the dish forbidden simply because you dislike it"
+        },
+        {
+          "id": "d",
+          "text": "Demand that all guests share your preference"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Personal taste does not require fault-finding or humiliation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "Sahih al-Bukhari 5409",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_054",
+      "conceptId": "seerah_anas_patience",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone who assists you makes a mistake. Which response reflects the long-term character Anas described?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat their lower position as permission to insult them"
+        },
+        {
+          "id": "b",
+          "text": "Respond with restraint and avoid needless reproach"
+        },
+        {
+          "id": "c",
+          "text": "Make one mistake a reason for constant humiliation"
+        },
+        {
+          "id": "d",
+          "text": "Save respectful treatment only for important visitors"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Anas's memory points toward considerate daily treatment, including relationships with unequal power.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "Sahih al-Bukhari 6038",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_055",
+      "conceptId": "seerah_grief_mercy",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A bereaved person is told that crying always shows weak faith. Which Seerah event corrects that claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sealing of letters to rulers"
+        },
+        {
+          "id": "b",
+          "text": "The appointment of archers at Uhud"
+        },
+        {
+          "id": "c",
+          "text": "The Prophet's tears at Ibrahim's death"
+        },
+        {
+          "id": "d",
+          "text": "The building of Quba Mosque"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet grieved and shed tears while remaining mindful of speech pleasing to Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "Sahih al-Bukhari 1303",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_056",
+      "conceptId": "seerah_repetition_teaching",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner has not understood an important point. Which teaching approach fits the report from Anas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat repetition as always beneath a teacher"
+        },
+        {
+          "id": "b",
+          "text": "Increase the speed to finish sooner"
+        },
+        {
+          "id": "c",
+          "text": "Replace explanation with ridicule"
+        },
+        {
+          "id": "d",
+          "text": "Repeat the point clearly to help understanding"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Thoughtful repetition can serve understanding rather than merely repeating for its own sake.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "Sahih al-Bukhari 95",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_057",
+      "conceptId": "seerah_learning_example",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have learned several events from the Prophet's life. What makes the learning more useful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify a sound lesson and apply it responsibly"
+        },
+        {
+          "id": "b",
+          "text": "Assume recalling names removes every need to act well"
+        },
+        {
+          "id": "c",
+          "text": "Invent dramatic details to make the stories stronger"
+        },
+        {
+          "id": "d",
+          "text": "Treat Seerah only as a competition over dates"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran presents the Messenger as an excellent example; studying his life should inform conduct.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "Quran 33:21",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_058",
+      "conceptId": "seerah_lawful_ease",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two ways to complete a task are available: one easier but sinful, one lawful. Which qualification in the Prophet's example matters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ease made every choice acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Ease was chosen when it did not involve sin"
+        },
+        {
+          "id": "c",
+          "text": "Difficulty alone was the only measure of goodness"
+        },
+        {
+          "id": "d",
+          "text": "Personal convenience removed every moral limit"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah's report explicitly limits the choice of the easier option to what is not sinful.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6126",
+          "label": "Sahih al-Bukhari 6126",
+          "url": "https://sunnah.com/bukhari:6126"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_059",
+      "conceptId": "seerah_taif_hope",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After harsh rejection, someone urges you to wish ruin on every person involved. Which lesson from the Prophet's response near Taif is relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rejection makes all cruelty acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Anger always gives complete knowledge of others' futures"
+        },
+        {
+          "id": "c",
+          "text": "Mercy and hope for future guidance can restrain a desire for revenge"
+        },
+        {
+          "id": "d",
+          "text": "Every rejected request must end all possibility of goodwill"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet expressed hope that future generations would worship Allah rather than asking for the people's destruction.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_060",
+      "conceptId": "seerah_khadijah_reassurance",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A loved one feels frightened and overwhelmed. Which response draws on Khadijah's support after revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promise that nothing difficult can ever happen again"
+        },
+        {
+          "id": "b",
+          "text": "Dismiss their feelings because respected people cannot be afraid"
+        },
+        {
+          "id": "c",
+          "text": "Make their distress a public spectacle"
+        },
+        {
+          "id": "d",
+          "text": "Listen and offer reassurance grounded in what you know of their goodness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Khadijah offered caring reassurance and recalled the Prophet's service to others. The lesson is supportive conduct, not a guarantee of a trouble-free life.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    }
+  ]
+}

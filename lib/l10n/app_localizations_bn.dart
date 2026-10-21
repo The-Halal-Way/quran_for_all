@@ -4516,4 +4516,338 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get kidsBooksHadithDescription => 'শিশুদের জন্য গল্পে গল্পে ৪০টি হাদিস।';
+
+  @override
+  String get quizAssessmentTitle => 'ইসলামি জ্ঞান মূল্যায়ন';
+
+  @override
+  String get quizDashboardSubtitle => 'যা জানেন তা নিয়ে ভাবুন। নতুন করে জানার বিষয় খুঁজুন।';
+
+  @override
+  String get quizDashboardAction => 'শেখার ধাপ বেছে নিন';
+
+  @override
+  String get quizEyebrow => 'একটু ভাবার সময়';
+
+  @override
+  String get quizIntroTitle => 'জানার আগ্রহই হোক পথপ্রদর্শক';
+
+  @override
+  String get quizIntroDescription => 'ইসলামের বিভিন্ন বিষয় থেকে নতুন প্রশ্নের সমন্বয়। শেষে ব্যাখ্যা পড়ে আরও জানুন।';
+
+  @override
+  String get quizSampleNotice => 'এই ফলাফল কেবল বাছাই করা প্রশ্নগুলোতে আপনার উত্তরের মূল্যায়ন। এটি ঈমান, তাকওয়া বা সামগ্রিক ইসলামি জ্ঞানের পরিমাপ নয়।';
+
+  @override
+  String get quizPreviewNotice => 'উন্নয়ন পর্যায়ের প্রিভিউ · প্রশ্নব্যাংকগুলোর সম্পাদকীয় ও আলেমের পর্যালোচনা এখনো বাকি।';
+
+  @override
+  String get quizStart => 'মূল্যায়ন শুরু করুন';
+
+  @override
+  String get quizResume => 'অসমাপ্ত মূল্যায়ন চালিয়ে যান';
+
+  @override
+  String get quizDiscard => 'এই চেষ্টা বাতিল করুন';
+
+  @override
+  String get quizDiscardTitle => 'এই চেষ্টা বাতিল করবেন?';
+
+  @override
+  String get quizDiscardMessage => 'বর্তমান উত্তরগুলো অসমাপ্ত থাকবে। ইতিমধ্যে দেখা প্রশ্নগুলো আপনার প্রশ্নের ইতিহাসে থেকে যাবে।';
+
+  @override
+  String get quizSubjects => 'বিষয়';
+
+  @override
+  String get quizQuestions => 'প্রশ্ন';
+
+  @override
+  String get quizUntimed => 'সময়সীমা নেই';
+
+  @override
+  String get quizQuestionMix => 'প্রশ্নের বিন্যাস';
+
+  @override
+  String get quizPerSubject => 'প্রতিটি বিষয় থেকে';
+
+  @override
+  String get quizHistory => 'আগের চেষ্টাগুলো';
+
+  @override
+  String get quizHistoryEmpty => 'আপনার সম্পন্ন মূল্যায়নগুলো এখানে দেখা যাবে।';
+
+  @override
+  String get quizNotSure => 'আমি নিশ্চিত নই';
+
+  @override
+  String get quizNext => 'পরের প্রশ্ন';
+
+  @override
+  String get quizPrevious => 'আগের প্রশ্ন';
+
+  @override
+  String get quizSkip => 'এখন এড়িয়ে যান';
+
+  @override
+  String get quizClear => 'উত্তর মুছুন';
+
+  @override
+  String get quizSubmit => 'মূল্যায়ন শেষ করুন';
+
+  @override
+  String get quizSubmitTitle => 'উত্তর না দেওয়া প্রশ্ন রেখেই শেষ করবেন?';
+
+  @override
+  String get quizSubmitMessage => 'যেসব প্রশ্নের উত্তর দেননি, ফলাফলে সেগুলো অনুত্তরিত হিসেবে থাকবে। শেষ করার আগে সেগুলোতে ফিরে যেতে পারেন।';
+
+  @override
+  String get quizSubmitAnyway => 'শেষ করে ফলাফল দেখুন';
+
+  @override
+  String get quizKeepGoing => 'উত্তর দিতে থাকুন';
+
+  @override
+  String get quizNavigator => 'প্রশ্ন বেছে নিন';
+
+  @override
+  String get quizSaved => 'অগ্রগতি এই ডিভাইসে সংরক্ষিত';
+
+  @override
+  String get quizSaving => 'অগ্রগতি সংরক্ষণ হচ্ছে…';
+
+  @override
+  String get quizPreparing => 'প্রশ্ন প্রস্তুত হচ্ছে…';
+
+  @override
+  String get quizLoading => 'মূল্যায়ন খোলা হচ্ছে…';
+
+  @override
+  String get quizResultsTitle => 'বাছাই করা প্রশ্নে আপনার ফলাফল';
+
+  @override
+  String get quizCorrect => 'সঠিক';
+
+  @override
+  String get quizIncorrect => 'ভুল';
+
+  @override
+  String get quizUnknown => 'নিশ্চিত নই';
+
+  @override
+  String get quizUnanswered => 'অনুত্তরিত';
+
+  @override
+  String get quizSubjectBreakdown => 'বিষয় অনুযায়ী';
+
+  @override
+  String get quizDifficultyBreakdown => 'কঠিনতার স্তর অনুযায়ী';
+
+  @override
+  String get quizReview => 'ব্যাখ্যাগুলো পড়ুন';
+
+  @override
+  String get quizReviewTitle => 'পড়ুন ও ভাবুন';
+
+  @override
+  String get quizRetake => 'নতুন প্রশ্নে আবার চেষ্টা করুন';
+
+  @override
+  String get quizBackToOverview => 'শুরুর পাতায় ফিরুন';
+
+  @override
+  String get quizYourAnswer => 'আপনার উত্তর';
+
+  @override
+  String get quizCorrectAnswer => 'সঠিক উত্তর';
+
+  @override
+  String get quizExplanation => 'কেন এই উত্তর';
+
+  @override
+  String get quizReferences => 'তথ্যসূত্র';
+
+  @override
+  String get quizFoundation => 'মৌলিক';
+
+  @override
+  String get quizIntermediate => 'মধ্যম';
+
+  @override
+  String get quizAdvanced => 'উচ্চতর';
+
+  @override
+  String get quizBeliefs => 'ঈমান ও ইসলামের ভিত্তি';
+
+  @override
+  String get quizQuran => 'কুরআন সম্পর্কে জ্ঞান';
+
+  @override
+  String get quizSeerah => 'সিরাত';
+
+  @override
+  String get quizHadith => 'হাদিস সম্পর্কে জ্ঞান';
+
+  @override
+  String get quizWorship => 'দৈনন্দিন ইবাদত';
+
+  @override
+  String get quizCharacter => 'চরিত্র ও আচরণ';
+
+  @override
+  String get quizErrorTitle => 'মূল্যায়ন এখন পাওয়া যাচ্ছে না';
+
+  @override
+  String get quizErrorConfig => 'মূল্যায়নের সেটিংস পাওয়া যায়নি বা সমর্থিত নয়। আপনার সংরক্ষিত চেষ্টাগুলো অক্ষত আছে।';
+
+  @override
+  String get quizErrorAssets => 'প্রশ্নের ফাইল পাওয়া যায়নি বা সেগুলো পরস্পর সামঞ্জস্যপূর্ণ নয়। অ্যাপ হালনাগাদ করে আবার চেষ্টা করুন।';
+
+  @override
+  String get quizErrorTranslation => 'নির্বাচিত ভাষায় প্রশ্ন পাওয়া যাচ্ছে না। আপনার সংরক্ষিত উত্তর ও অগ্রগতি অক্ষুণ্ণ রয়েছে।';
+
+  @override
+  String get quizErrorInsufficient => 'এই মূল্যায়নের বিষয় ও প্রশ্নের ধরন অনুযায়ী পর্যাপ্ত ভিন্ন ধারণার প্রশ্ন নেই।';
+
+  @override
+  String get quizErrorStorage => 'সর্বশেষ কাজটি সংরক্ষণ করা যায়নি। মূল্যায়ন থেকে বের হওয়ার আগে আবার চেষ্টা করুন।';
+
+  @override
+  String get quizErrorSaved => 'সংরক্ষিত মূল্যায়ন নিরাপদে পড়া যায়নি। সংরক্ষিত কোনো তথ্য মোছা হয়নি।';
+
+  @override
+  String get quizErrorReview => 'প্রকাশের আগে প্রশ্নব্যাংকগুলোর সম্পাদকীয় ও আলেমের পর্যালোচনা প্রয়োজন।';
+
+  @override
+  String get quizErrorCooldown => 'এখনই নতুন মূল্যায়ন শুরু করা যাবে না। সংরক্ষিত ফলাফলগুলো পড়তে পারেন।';
+
+  @override
+  String get quizRetry => 'আবার চেষ্টা করুন';
+
+  @override
+  String get quizLanguage => 'মূল্যায়নের ভাষা';
+
+  @override
+  String get quizReusedNotice => 'নির্ধারিত বিষয় ও প্রশ্নের ভারসাম্য বজায় রাখতে আগে দেখা কিছু প্রশ্ন আবার এসেছে। প্রতিটি প্রশ্নের ধারণা ভিন্ন রাখা হয়েছে।';
+
+  @override
+  String get quizRetakeDisabled => 'বর্তমান সেটিংসে নতুন করে মূল্যায়ন শুরু করা বন্ধ আছে।';
+
+  @override
+  String get quizTimeRemaining => 'অবশিষ্ট সময়';
+
+  @override
+  String get quizTimeExpired => 'সময়সীমা শেষ হয়েছে।';
+
+  @override
+  String get quizOpenLinkError => 'এই তথ্যসূত্রের লিংক খোলা যায়নি।';
+
+  @override
+  String quizProgress(int current, int total) {
+    final intl.NumberFormat currentNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String currentString = currentNumberFormat.format(current);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return '$totalStringটি প্রশ্নের মধ্যে $currentString নম্বর';
+  }
+
+  @override
+  String quizAnsweredCount(int answered, int total) {
+    final intl.NumberFormat answeredNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String answeredString = answeredNumberFormat.format(answered);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return '$totalStringটির মধ্যে $answeredStringটির উত্তর সংরক্ষিত';
+  }
+
+  @override
+  String quizCorrectOf(int correct, int total) {
+    final intl.NumberFormat correctNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String correctString = correctNumberFormat.format(correct);
+    final intl.NumberFormat totalNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String totalString = totalNumberFormat.format(total);
+
+    return '$totalStringটির মধ্যে $correctStringটি সঠিক';
+  }
+
+  @override
+  String quizQuota(int count, String difficulty) {
+    final intl.NumberFormat countNumberFormat = intl.NumberFormat.decimalPattern(localeName);
+    final String countString = countNumberFormat.format(count);
+
+    return '$countStringটি $difficulty';
+  }
+
+  @override
+  String quizAvailableAfter(String date) {
+    return '$date-এর পরে নতুন প্রশ্নে চেষ্টা করা যাবে';
+  }
+
+  @override
+  String get quizSelectionEyebrow => 'আপনার শেখার যাত্রা';
+
+  @override
+  String get quizSelectionTitle => 'বেছে নিন আপনার শুরুর ধাপ';
+
+  @override
+  String get quizSelectionDescription => 'শেখার বিভাগ ও ধাপ বেছে নিন। শুরু করার আগে প্রশ্নের ভাষা নির্বাচন করুন।';
+
+  @override
+  String get quizAudienceKids => 'শিশুদের জন্য';
+
+  @override
+  String get quizAudienceGeneral => 'সাধারণ শিক্ষার্থী';
+
+  @override
+  String get quizAudienceEducated => 'ইসলামি শিক্ষায় শিক্ষিত';
+
+  @override
+  String get quizAudienceKidsDescription => 'ছোট্ট কৌতূহলী মনের জন্য শেখার ছোট ছোট ধাপ।';
+
+  @override
+  String get quizAudienceGeneralDescription => 'মৌলিক বিষয় জানুন এবং জানা বিষয়গুলো আরও চর্চা করুন।';
+
+  @override
+  String get quizAudienceEducatedDescription => 'যাঁদের ইসলামি শিক্ষা সম্পর্কে পূর্বজ্ঞান রয়েছে, তাঁদের জন্য।';
+
+  @override
+  String get quizLevelBeginner => 'প্রাথমিক';
+
+  @override
+  String get quizLevelPro => 'উন্নত';
+
+  @override
+  String get quizLevelAvailable => 'শুরু করুন';
+
+  @override
+  String get quizLevelSoon => 'শীঘ্রই আসছে';
+
+  @override
+  String get quizComingSoonMessage => 'এই ধাপে এখনো প্রশ্ন যোগ করা হয়নি। আপাতত অন্য একটি ধাপ ঘুরে দেখতে পারেন।';
+
+  @override
+  String get quizBrowseLevels => 'ধাপগুলো দেখুন';
+
+  @override
+  String get quizLanguageBeforeStart => 'প্রশ্নের ভাষা বেছে নিন। শুরু করার পর এই চেষ্টার ভাষা পরিবর্তন করা যাবে না।';
+
+  @override
+  String get quizLanguageLocked => 'এই চেষ্টার প্রশ্ন, ফলাফল ও পর্যালোচনার ভাষা অপরিবর্তিত থাকবে।';
+
+  @override
+  String get quizStyleFamiliarFact => 'পরিচিত তথ্য';
+
+  @override
+  String get quizStyleBroaderBasic => 'বিস্তৃত মৌলিক জ্ঞান';
+
+  @override
+  String get quizStyleEverydayApplication => 'দৈনন্দিন প্রয়োগ';
+
+  @override
+  String get quizStyleBreakdown => 'প্রশ্নের ধরন অনুযায়ী';
+
+  @override
+  String get quizStylesNotice => 'প্রশ্নের ধরন কাজের প্রকৃতি বোঝায়, কঠিনতার মাত্রা নয়। সব প্রশ্নই আপনার নির্বাচিত স্তরের অন্তর্ভুক্ত।';
 }

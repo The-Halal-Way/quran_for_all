@@ -1,0 +1,2295 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "quran_knowledge",
+  "title": "Quran Knowledge",
+  "description": "General User → Beginner. Familiar Quran facts, broader basics and short everyday applications, all at Beginner level. No memorization of reference numbers is required.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge required across all question styles. Styles are not difficulty levels. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Primary-text references checked during preparation; this is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_beginner_quran_001",
+      "conceptId": "quran_language",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which language was the Quran revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arabic"
+        },
+        {
+          "id": "b",
+          "text": "Persian"
+        },
+        {
+          "id": "c",
+          "text": "Latin"
+        },
+        {
+          "id": "d",
+          "text": "Greek"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran was revealed in Arabic.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_002",
+      "conceptId": "quran_surah_count",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How many surahs are in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100"
+        },
+        {
+          "id": "b",
+          "text": "114"
+        },
+        {
+          "id": "c",
+          "text": "110"
+        },
+        {
+          "id": "d",
+          "text": "120"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran contains 114 surahs.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_003",
+      "conceptId": "quran_surah_term",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is a surah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A kind of prayer mat"
+        },
+        {
+          "id": "b",
+          "text": "A month of the year"
+        },
+        {
+          "id": "c",
+          "text": "A chapter of the Quran"
+        },
+        {
+          "id": "d",
+          "text": "A prayer time"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A surah is a chapter of the Quran.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran Foundation: chapter and verse reference documentation",
+          "url": "https://api-docs.quran.com/docs/content_apis_versioned/4.0.0/verses-by-verse-key/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_004",
+      "conceptId": "quran_ayah_term",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is an ayah in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A chapter title"
+        },
+        {
+          "id": "b",
+          "text": "A book cover"
+        },
+        {
+          "id": "c",
+          "text": "A type of ink"
+        },
+        {
+          "id": "d",
+          "text": "A verse"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "An ayah is a verse within a surah.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran Foundation: chapter and verse reference documentation",
+          "url": "https://api-docs.quran.com/docs/content_apis_versioned/4.0.0/verses-by-verse-key/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_005",
+      "conceptId": "quran_first_surah",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which surah comes first in the Quran's written order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fatihah"
+        },
+        {
+          "id": "b",
+          "text": "Al-Baqarah"
+        },
+        {
+          "id": "c",
+          "text": "Al-Ikhlas"
+        },
+        {
+          "id": "d",
+          "text": "An-Nas"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Fatihah opens the Quran's standard written order.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_006",
+      "conceptId": "quran_last_surah",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which surah comes last in the Quran's written order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Falaq"
+        },
+        {
+          "id": "b",
+          "text": "An-Nas"
+        },
+        {
+          "id": "c",
+          "text": "Al-Ikhlas"
+        },
+        {
+          "id": "d",
+          "text": "Al-Kawthar"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An-Nas is the final surah in the standard written order.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_007",
+      "conceptId": "quran_longest_surah",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which surah has the most ayahs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fatihah"
+        },
+        {
+          "id": "b",
+          "text": "Yusuf"
+        },
+        {
+          "id": "c",
+          "text": "Al-Baqarah"
+        },
+        {
+          "id": "d",
+          "text": "Al-Kahf"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Baqarah has 286 ayahs, more than any other surah.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_008",
+      "conceptId": "quran_fatihah_count",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How many ayahs are in Al-Fatihah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Three"
+        },
+        {
+          "id": "b",
+          "text": "Five"
+        },
+        {
+          "id": "c",
+          "text": "Ten"
+        },
+        {
+          "id": "d",
+          "text": "Seven"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Fatihah has seven ayahs.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_009",
+      "conceptId": "quran_kawthar_count",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How many ayahs are in Al-Kawthar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Three"
+        },
+        {
+          "id": "b",
+          "text": "Seven"
+        },
+        {
+          "id": "c",
+          "text": "Ten"
+        },
+        {
+          "id": "d",
+          "text": "Twelve"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Kawthar has three ayahs.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_010",
+      "conceptId": "quran_fatihah_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the name Al-Fatihah mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Elephant"
+        },
+        {
+          "id": "b",
+          "text": "The Opening"
+        },
+        {
+          "id": "c",
+          "text": "The Cave"
+        },
+        {
+          "id": "d",
+          "text": "The People"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Fatihah means The Opening.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_011",
+      "conceptId": "quran_ikhlas",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which surah begins by declaring that Allah is One?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fil"
+        },
+        {
+          "id": "b",
+          "text": "Al-Kawthar"
+        },
+        {
+          "id": "c",
+          "text": "Al-Ikhlas"
+        },
+        {
+          "id": "d",
+          "text": "Al-Masad"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Ikhlas teaches Allah's oneness and uniqueness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1-4",
+          "label": "Quran 112:1-4",
+          "url": "https://quran.com/112/1-4"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_012",
+      "conceptId": "quran_nas_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does An-Nas mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The moon"
+        },
+        {
+          "id": "b",
+          "text": "The mountain"
+        },
+        {
+          "id": "c",
+          "text": "The sea"
+        },
+        {
+          "id": "d",
+          "text": "Humankind or people"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "An-Nas means people or humankind.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_013",
+      "conceptId": "quran_falaq_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Al-Falaq mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Daybreak"
+        },
+        {
+          "id": "b",
+          "text": "The afternoon"
+        },
+        {
+          "id": "c",
+          "text": "The mountain"
+        },
+        {
+          "id": "d",
+          "text": "The river"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Falaq refers to daybreak.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1",
+          "label": "Quran 113:1",
+          "url": "https://quran.com/113/1"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_014",
+      "conceptId": "quran_baqarah_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Al-Baqarah mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Bee"
+        },
+        {
+          "id": "b",
+          "text": "The Cow"
+        },
+        {
+          "id": "c",
+          "text": "The Ant"
+        },
+        {
+          "id": "d",
+          "text": "The Elephant"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Baqarah means The Cow.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_015",
+      "conceptId": "quran_revelation_month",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which month is associated with the Quran being revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Safar"
+        },
+        {
+          "id": "b",
+          "text": "Rajab"
+        },
+        {
+          "id": "c",
+          "text": "Ramadan"
+        },
+        {
+          "id": "d",
+          "text": "Muharram"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran names Ramadan as the month of its revelation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_016",
+      "conceptId": "quran_qadr",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which special night is linked with the Quran being sent down?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The night before Eid al-Adha"
+        },
+        {
+          "id": "b",
+          "text": "Every full-moon night"
+        },
+        {
+          "id": "c",
+          "text": "The first night of Safar"
+        },
+        {
+          "id": "d",
+          "text": "Laylat al-Qadr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah Al-Qadr names Laylat al-Qadr in connection with the Quran's descent.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "Quran 97:1",
+          "url": "https://quran.com/97/1"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_017",
+      "conceptId": "quran_revelation_angel",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which angel brought the Quran by Allah's permission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jibril"
+        },
+        {
+          "id": "b",
+          "text": "Mikail"
+        },
+        {
+          "id": "c",
+          "text": "Malik"
+        },
+        {
+          "id": "d",
+          "text": "The angel of death"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Jibril brought the revelation to the Prophet's heart.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "Quran 2:97",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_018",
+      "conceptId": "quran_recipient",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To which prophet was the Quran revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Musa (Moses)"
+        },
+        {
+          "id": "b",
+          "text": "Muhammad (peace be upon him)"
+        },
+        {
+          "id": "c",
+          "text": "Dawud (David)"
+        },
+        {
+          "id": "d",
+          "text": "Isa (Jesus)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran was revealed to Prophet Muhammad (peace be upon him).",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "Quran 47:2",
+          "url": "https://quran.com/47/2"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_019",
+      "conceptId": "quran_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran offer people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lottery predictions"
+        },
+        {
+          "id": "b",
+          "text": "A ranking of wealthy families"
+        },
+        {
+          "id": "c",
+          "text": "Guidance"
+        },
+        {
+          "id": "d",
+          "text": "Permission to ignore right and wrong"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran describes itself as guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "2",
+          "label": "Quran 2:2",
+          "url": "https://quran.com/2/2"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_020",
+      "conceptId": "quran_kursi_location",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Ayat al-Kursi is part of which surah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fatihah"
+        },
+        {
+          "id": "b",
+          "text": "Al-Ikhlas"
+        },
+        {
+          "id": "c",
+          "text": "An-Nas"
+        },
+        {
+          "id": "d",
+          "text": "Al-Baqarah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Ayat al-Kursi is an ayah in Al-Baqarah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_021",
+      "conceptId": "quran_nuh",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which prophet was told to build an ark?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nuh (Noah)"
+        },
+        {
+          "id": "b",
+          "text": "Yusuf (Joseph)"
+        },
+        {
+          "id": "c",
+          "text": "Dawud (David)"
+        },
+        {
+          "id": "d",
+          "text": "Yahya (John)"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran describes Allah instructing Nuh to build the ark.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 11,
+          "ayahs": "36-37",
+          "label": "Quran 11:36-37",
+          "url": "https://quran.com/11/36-37"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_022",
+      "conceptId": "quran_yunus",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which prophet's story includes being swallowed by a great fish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ibrahim (Abraham)"
+        },
+        {
+          "id": "b",
+          "text": "Yunus (Jonah)"
+        },
+        {
+          "id": "c",
+          "text": "Musa (Moses)"
+        },
+        {
+          "id": "d",
+          "text": "Sulayman (Solomon)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran tells this part of Yunus's story.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 37,
+          "ayahs": "139-142",
+          "label": "Quran 37:139-142",
+          "url": "https://quran.com/37/139-142"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_023",
+      "conceptId": "quran_musa",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which prophet was sent with Harun to Pharaoh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yusuf (Joseph)"
+        },
+        {
+          "id": "b",
+          "text": "Nuh (Noah)"
+        },
+        {
+          "id": "c",
+          "text": "Musa (Moses)"
+        },
+        {
+          "id": "d",
+          "text": "Idris"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah instructed Musa and Harun to go to Pharaoh.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "43",
+          "label": "Quran 20:43",
+          "url": "https://quran.com/20/43"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_024",
+      "conceptId": "quran_yusuf",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which prophet told his father about a dream of eleven stars, the sun and the moon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yunus (Jonah)"
+        },
+        {
+          "id": "b",
+          "text": "Dawud (David)"
+        },
+        {
+          "id": "c",
+          "text": "Ismail (Ishmael)"
+        },
+        {
+          "id": "d",
+          "text": "Yusuf (Joseph)"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Yusuf describes this dream to his father in Surah Yusuf.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "Quran 12:4",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_025",
+      "conceptId": "quran_maryam",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which woman has a Quran surah named after her?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maryam (Mary)"
+        },
+        {
+          "id": "b",
+          "text": "Asiyah"
+        },
+        {
+          "id": "c",
+          "text": "Hajar"
+        },
+        {
+          "id": "d",
+          "text": "Khadijah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Surah Maryam is named after Maryam, the mother of Isa.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 19,
+          "ayahs": "16",
+          "label": "Quran 19:16",
+          "url": "https://quran.com/19/16"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_026",
+      "conceptId": "quran_kahf",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which surah tells the story of the Companions of the Cave?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fil"
+        },
+        {
+          "id": "b",
+          "text": "Al-Kahf"
+        },
+        {
+          "id": "c",
+          "text": "Al-Kawthar"
+        },
+        {
+          "id": "d",
+          "text": "An-Nas"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The story appears in Surah Al-Kahf, whose name means The Cave.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "9-26",
+          "label": "Quran 18:9-26",
+          "url": "https://quran.com/18/9-26"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_027",
+      "conceptId": "quran_luqman",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In the Quran, Luqman gives advice to which family member?",
+      "options": [
+        {
+          "id": "a",
+          "text": "His father"
+        },
+        {
+          "id": "b",
+          "text": "His brother"
+        },
+        {
+          "id": "c",
+          "text": "His son"
+        },
+        {
+          "id": "d",
+          "text": "His uncle"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran records Luqman's advice to his son.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "13",
+          "label": "Quran 31:13",
+          "url": "https://quran.com/31/13"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_028",
+      "conceptId": "quran_kaabah",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Who raised the foundations of the Kabah with Ibrahim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yusuf (Joseph)"
+        },
+        {
+          "id": "b",
+          "text": "Dawud (David)"
+        },
+        {
+          "id": "c",
+          "text": "Yunus (Jonah)"
+        },
+        {
+          "id": "d",
+          "text": "Ismail (Ishmael)"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran names Ibrahim and Ismail together in raising the House's foundations.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "Quran 2:127",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_029",
+      "conceptId": "quran_parents",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does the Quran teach us to speak to parents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respectfully"
+        },
+        {
+          "id": "b",
+          "text": "With contempt"
+        },
+        {
+          "id": "c",
+          "text": "With deliberate insults"
+        },
+        {
+          "id": "d",
+          "text": "Only when we need money"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran commands honourable speech and kindness toward parents.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23-24",
+          "label": "Quran 17:23-24",
+          "url": "https://quran.com/17/23-24"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_030",
+      "conceptId": "quran_justice",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the Quran require fairness toward people we dislike?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only if they are wealthy"
+        },
+        {
+          "id": "b",
+          "text": "Yes"
+        },
+        {
+          "id": "c",
+          "text": "Only if they praise us"
+        },
+        {
+          "id": "d",
+          "text": "No, dislike cancels fairness"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Hatred must not lead people away from justice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_031",
+      "conceptId": "quran_truth",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What kind of speech does the Quran instruct believers to use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Misleading speech"
+        },
+        {
+          "id": "b",
+          "text": "Insults used for entertainment"
+        },
+        {
+          "id": "c",
+          "text": "Truthful and upright speech"
+        },
+        {
+          "id": "d",
+          "text": "Claims made without concern for truth"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran calls believers to speak rightly and truthfully.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "70",
+          "label": "Quran 33:70",
+          "url": "https://quran.com/33/70"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_032",
+      "conceptId": "quran_needy",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What behaviour toward people in need does Surah Al-Maun criticize?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Helping someone find food"
+        },
+        {
+          "id": "b",
+          "text": "Sharing a meal kindly"
+        },
+        {
+          "id": "c",
+          "text": "Caring about an orphan"
+        },
+        {
+          "id": "d",
+          "text": "Failing to encourage feeding the poor"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah criticizes harshness toward the orphan and neglect of feeding the poor.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "1-3",
+          "label": "Quran 107:1-3",
+          "url": "https://quran.com/107/1-3"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_033",
+      "conceptId": "quran_mercy",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran tell people who have sinned not to lose hope in?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah's mercy"
+        },
+        {
+          "id": "b",
+          "text": "Their ability to impress everyone"
+        },
+        {
+          "id": "c",
+          "text": "A guaranteed easy life"
+        },
+        {
+          "id": "d",
+          "text": "Their social popularity"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah calls people not to despair of His mercy and to return to Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "Quran 39:53-54",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_034",
+      "conceptId": "quran_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What response to blessings does the Quran encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arrogance"
+        },
+        {
+          "id": "b",
+          "text": "Gratitude"
+        },
+        {
+          "id": "c",
+          "text": "Envy"
+        },
+        {
+          "id": "d",
+          "text": "Looking down on others"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran encourages gratitude for Allah's blessings.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "7",
+          "label": "Quran 14:7",
+          "url": "https://quran.com/14/7"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_035",
+      "conceptId": "quran_unity",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran tell believers to hold firmly to together?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their family pride alone"
+        },
+        {
+          "id": "b",
+          "text": "Rumours about other groups"
+        },
+        {
+          "id": "c",
+          "text": "The rope of Allah"
+        },
+        {
+          "id": "d",
+          "text": "Wealth as their only goal"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran calls believers to hold firmly together to Allah's rope and avoid division.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "103",
+          "label": "Quran 3:103",
+          "url": "https://quran.com/3/103"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_036",
+      "conceptId": "quran_no_compulsion",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which teaching about religion is found in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Force automatically creates sincere faith."
+        },
+        {
+          "id": "b",
+          "text": "Wealth decides what is true."
+        },
+        {
+          "id": "c",
+          "text": "Only one nationality may believe."
+        },
+        {
+          "id": "d",
+          "text": "There is no compulsion in religion."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran states that there is no compulsion in religion.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "Quran 2:256",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_037",
+      "conceptId": "quran_falaq_name",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In Al-Falaq, whose protection do we seek?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Lord of daybreak"
+        },
+        {
+          "id": "b",
+          "text": "The sun itself"
+        },
+        {
+          "id": "c",
+          "text": "The darkness"
+        },
+        {
+          "id": "d",
+          "text": "A lucky object"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Falaq teaches seeking refuge with Allah, the Lord of daybreak.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1-5",
+          "label": "Quran 113:1-5",
+          "url": "https://quran.com/113/1-5"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_038",
+      "conceptId": "quran_fatihah_help",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In Al-Fatihah, whom do we worship and ask for help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The stars"
+        },
+        {
+          "id": "b",
+          "text": "Allah alone"
+        },
+        {
+          "id": "c",
+          "text": "Our ancestors"
+        },
+        {
+          "id": "d",
+          "text": "The mountains"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Fatihah declares worship of Allah and seeking His help.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "5",
+          "label": "Quran 1:5",
+          "url": "https://quran.com/1/5"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_039",
+      "conceptId": "quran_parents",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which request for parents appears in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask that no one ever advises them."
+        },
+        {
+          "id": "b",
+          "text": "Ask to be free from all kindness to them."
+        },
+        {
+          "id": "c",
+          "text": "Ask Allah to have mercy on them."
+        },
+        {
+          "id": "d",
+          "text": "Ask for wealth instead of any care for them."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran teaches a dua asking Allah's mercy for parents.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "24",
+          "label": "Quran 17:24",
+          "url": "https://quran.com/17/24"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_040",
+      "conceptId": "quran_hardship_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What reassurance appears in Surah Ash-Sharh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No believer will ever have a difficult day."
+        },
+        {
+          "id": "b",
+          "text": "Every problem must end within one hour."
+        },
+        {
+          "id": "c",
+          "text": "Effort and patience are unnecessary."
+        },
+        {
+          "id": "d",
+          "text": "With hardship comes ease."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah gives hope by affirming ease with hardship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "Quran 94:5-6",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_041",
+      "conceptId": "quran_reading_pace",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are learning to recite. Which approach is better?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read carefully rather than rush past the words."
+        },
+        {
+          "id": "b",
+          "text": "Race through even if words become unclear."
+        },
+        {
+          "id": "c",
+          "text": "Change words to fit a tune."
+        },
+        {
+          "id": "d",
+          "text": "Skip any word you find difficult."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran instructs measured recitation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "Quran 73:4",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_042",
+      "conceptId": "quran_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have read a short surah. What can help you learn from it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid learning what it means."
+        },
+        {
+          "id": "b",
+          "text": "Think about its meaning and lesson."
+        },
+        {
+          "id": "c",
+          "text": "Assume reading its title is enough."
+        },
+        {
+          "id": "d",
+          "text": "Treat its message as unrelated to life."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran calls people to reflect on its verses.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_043",
+      "conceptId": "quran_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You do not understand Arabic yet. What can help you understand a passage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invent a meaning from its sound."
+        },
+        {
+          "id": "b",
+          "text": "Assume understanding never matters."
+        },
+        {
+          "id": "c",
+          "text": "Read a reliable translation of its meaning."
+        },
+        {
+          "id": "d",
+          "text": "Choose whichever guess feels exciting."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Understanding matters. A reliable translation can help a learner access the meaning while continuing to learn.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        },
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_044",
+      "conceptId": "quran_learning_support",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Reciting is difficult for you. What is a helpful next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decide effort has no value."
+        },
+        {
+          "id": "b",
+          "text": "Pretend to know every word."
+        },
+        {
+          "id": "c",
+          "text": "Stop because only fluent readers matter."
+        },
+        {
+          "id": "d",
+          "text": "Keep learning with patient guidance."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet gave encouragement to a reader who struggles with recitation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "Sahih al-Bukhari 4937",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_045",
+      "conceptId": "quran_teaching",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can read a short surah correctly and someone wants to learn it. What is helpful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Teach what you know accurately."
+        },
+        {
+          "id": "b",
+          "text": "Invent words to make it easier."
+        },
+        {
+          "id": "c",
+          "text": "Mock their mistakes."
+        },
+        {
+          "id": "d",
+          "text": "Tell them learning has no value."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet praised learning the Quran and teaching it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "Sahih al-Bukhari 5027",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_046",
+      "conceptId": "quran_seeking_refuge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are about to recite the Quran. What does it teach you to seek?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Praise from every listener"
+        },
+        {
+          "id": "b",
+          "text": "Allah's refuge from Satan"
+        },
+        {
+          "id": "c",
+          "text": "A guarantee of wealth"
+        },
+        {
+          "id": "d",
+          "text": "Permission to change its words"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran instructs seeking refuge in Allah when reciting.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "Quran 16:98",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_047",
+      "conceptId": "quran_parents",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A parent needs help while you are tired. Which response reflects the Quran's teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insult them for asking."
+        },
+        {
+          "id": "b",
+          "text": "Use your tiredness to justify contempt."
+        },
+        {
+          "id": "c",
+          "text": "Answer respectfully and help as you are able."
+        },
+        {
+          "id": "d",
+          "text": "Humiliate them in front of others."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran teaches respectful speech and mercy toward parents.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23-24",
+          "label": "Quran 17:23-24",
+          "url": "https://quran.com/17/23-24"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_048",
+      "conceptId": "quran_justice",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You must judge a disagreement involving someone you dislike. What should guide you?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Personal dislike"
+        },
+        {
+          "id": "b",
+          "text": "A wish to embarrass them"
+        },
+        {
+          "id": "c",
+          "text": "Their popularity alone"
+        },
+        {
+          "id": "d",
+          "text": "Fairness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran says hostility must not lead to injustice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_049",
+      "conceptId": "quran_verify",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You receive an unverified accusation about someone. What should you do before spreading it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check it carefully."
+        },
+        {
+          "id": "b",
+          "text": "Forward it because it is dramatic."
+        },
+        {
+          "id": "c",
+          "text": "Add details to make it convincing."
+        },
+        {
+          "id": "d",
+          "text": "Assume many shares prove it true."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran warns against harming people through unchecked reports.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_050",
+      "conceptId": "quran_mockery",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends laugh at someone and ask you to join. Which choice fits the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Join so they will like you."
+        },
+        {
+          "id": "b",
+          "text": "Do not join the ridicule."
+        },
+        {
+          "id": "c",
+          "text": "Invent a more hurtful nickname."
+        },
+        {
+          "id": "d",
+          "text": "Film the person for more laughs."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran forbids ridiculing people and offensive name-calling.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_051",
+      "conceptId": "quran_spying",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to read someone's private messages just out of curiosity. What Quranic teaching matters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Curiosity makes every intrusion acceptable."
+        },
+        {
+          "id": "b",
+          "text": "Privacy matters only for famous people."
+        },
+        {
+          "id": "c",
+          "text": "Do not spy on others."
+        },
+        {
+          "id": "d",
+          "text": "A phone removes all privacy."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran prohibits spying on one another.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_052",
+      "conceptId": "quran_gift_hurt",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You give someone help. How should you treat them afterward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep reminding them they owe you praise."
+        },
+        {
+          "id": "b",
+          "text": "Publicly embarrass them."
+        },
+        {
+          "id": "c",
+          "text": "Use the gift to justify insults."
+        },
+        {
+          "id": "d",
+          "text": "Kindly, without hurtful reminders."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran warns against spoiling charity with reminders and hurt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_053",
+      "conceptId": "quran_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You receive a blessing. Which response follows Quranic teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thank Allah."
+        },
+        {
+          "id": "b",
+          "text": "Boast that you need no help from anyone."
+        },
+        {
+          "id": "c",
+          "text": "Look down on others."
+        },
+        {
+          "id": "d",
+          "text": "Treat gratitude as pointless."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran encourages gratitude and righteous use of blessings.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "Quran 27:19",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_054",
+      "conceptId": "quran_mercy",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You realize you have done wrong. What does the Quran encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give up all hope of mercy."
+        },
+        {
+          "id": "b",
+          "text": "Return to Allah and seek forgiveness."
+        },
+        {
+          "id": "c",
+          "text": "Keep doing it because change is pointless."
+        },
+        {
+          "id": "d",
+          "text": "Blame someone innocent."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran offers hope in Allah's mercy and calls people to return to Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "Quran 39:53-54",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_055",
+      "conceptId": "quran_small_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can offer only a small kindness today. Should you dismiss it as worthless?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only expensive deeds count."
+        },
+        {
+          "id": "b",
+          "text": "Yes, unless everyone sees it."
+        },
+        {
+          "id": "c",
+          "text": "No, even a small good deed matters."
+        },
+        {
+          "id": "d",
+          "text": "Yes, unless it makes you famous."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran says even an atom's weight of good will be seen.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7",
+          "label": "Quran 99:7",
+          "url": "https://quran.com/99/7"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_056",
+      "conceptId": "quran_trust",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone leaves an item with you for safekeeping. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep it because you like it."
+        },
+        {
+          "id": "b",
+          "text": "Give it away without permission."
+        },
+        {
+          "id": "c",
+          "text": "Pretend it became yours."
+        },
+        {
+          "id": "d",
+          "text": "Return it to its rightful owner."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran commands returning trusts to their rightful owners.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_057",
+      "conceptId": "quran_promise",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You make a promise. How should you treat it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As a responsibility to fulfil"
+        },
+        {
+          "id": "b",
+          "text": "As meaningless once inconvenient"
+        },
+        {
+          "id": "c",
+          "text": "As important only if recorded on video"
+        },
+        {
+          "id": "d",
+          "text": "As a reason to mislead others"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran teaches fulfilling commitments and accountability for them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "Quran 17:34",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_058",
+      "conceptId": "quran_generosity_balance",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are deciding how to spend. Which approach does the Quran praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spend carelessly to impress people."
+        },
+        {
+          "id": "b",
+          "text": "Avoid both wastefulness and stinginess."
+        },
+        {
+          "id": "c",
+          "text": "Refuse every necessary expense."
+        },
+        {
+          "id": "d",
+          "text": "Treat waste as generosity."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran describes a balanced course between extravagance and miserliness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_059",
+      "conceptId": "quran_gentle_reply",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone speaks harshly to you. Which response is encouraged by Quranic teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always choose a harsher insult."
+        },
+        {
+          "id": "b",
+          "text": "Spread a false accusation."
+        },
+        {
+          "id": "c",
+          "text": "Respond in a better manner."
+        },
+        {
+          "id": "d",
+          "text": "Assume anger makes every response right."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran encourages responding to evil with what is better.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 41,
+          "ayahs": "34",
+          "label": "Quran 41:34",
+          "url": "https://quran.com/41/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_quran_060",
+      "conceptId": "quran_dua_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are starting a lesson. Which Quranic dua fits learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make me need no learning ever again."
+        },
+        {
+          "id": "b",
+          "text": "Make every guess of mine correct."
+        },
+        {
+          "id": "c",
+          "text": "Let me avoid all questions forever."
+        },
+        {
+          "id": "d",
+          "text": "My Lord, increase me in knowledge."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches asking Allah for increased knowledge.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "Quran 20:114",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    }
+  ]
+}

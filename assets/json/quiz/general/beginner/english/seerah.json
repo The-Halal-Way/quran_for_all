@@ -1,0 +1,2317 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "seerah",
+  "title": "Seerah",
+  "description": "General User → Beginner. Familiar facts, broader basics and short everyday lessons from the life of Prophet Muhammad (peace be upon him). All questions are Beginner level; no reference-number memorization is required.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge required across all question styles. Styles are not difficulty levels. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Primary-text references checked during preparation; this is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_beginner_seerah_001",
+      "conceptId": "seerah_name",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who is the prophet whose life Muslims study in Seerah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muhammad (peace be upon him)"
+        },
+        {
+          "id": "b",
+          "text": "Musa (Moses)"
+        },
+        {
+          "id": "c",
+          "text": "Yusuf (Joseph)"
+        },
+        {
+          "id": "d",
+          "text": "Dawud (David)"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "In this section, Seerah means the life and example of Prophet Muhammad (peace be upon him).",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "Quran 33:21",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_002",
+      "conceptId": "seerah_father",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What was the name of Prophet Muhammad's father?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Bakr"
+        },
+        {
+          "id": "b",
+          "text": "Abdullah"
+        },
+        {
+          "id": "c",
+          "text": "Umar"
+        },
+        {
+          "id": "d",
+          "text": "Uthman"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet is identified as Muhammad ibn Abdullah in the Hudaybiyyah account.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_003",
+      "conceptId": "seerah_tribe",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To which tribe did the Prophet belong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aws"
+        },
+        {
+          "id": "b",
+          "text": "Khazraj"
+        },
+        {
+          "id": "c",
+          "text": "Quraysh"
+        },
+        {
+          "id": "d",
+          "text": "Thaqif"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet belonged to Quraysh.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2276",
+          "label": "Sahih Muslim 2276",
+          "url": "https://sunnah.com/muslim:2276"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_004",
+      "conceptId": "seerah_clan",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which clan of Quraysh did the Prophet belong to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Banu Umayyah"
+        },
+        {
+          "id": "b",
+          "text": "Banu Makhzum"
+        },
+        {
+          "id": "c",
+          "text": "Banu Taym"
+        },
+        {
+          "id": "d",
+          "text": "Banu Hashim"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet was from Banu Hashim within Quraysh.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2276",
+          "label": "Sahih Muslim 2276",
+          "url": "https://sunnah.com/muslim:2276"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_005",
+      "conceptId": "seerah_orphan",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What childhood circumstance does the Quran recall about the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He was an orphan."
+        },
+        {
+          "id": "b",
+          "text": "He grew up as a king."
+        },
+        {
+          "id": "c",
+          "text": "He commanded an army as a child."
+        },
+        {
+          "id": "d",
+          "text": "He ruled Persia."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Surah Ad-Duha recalls Allah giving shelter to the Prophet as an orphan.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "6",
+          "label": "Quran 93:6",
+          "url": "https://quran.com/93/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_006",
+      "conceptId": "seerah_hira",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which cave did the first Quranic revelation come?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thawr"
+        },
+        {
+          "id": "b",
+          "text": "Hira"
+        },
+        {
+          "id": "c",
+          "text": "The Cave of the Sleepers"
+        },
+        {
+          "id": "d",
+          "text": "A cave in Madinah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The first-revelation account names the cave of Hira.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_007",
+      "conceptId": "seerah_khadijah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which wife comforted the Prophet after the first revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aishah"
+        },
+        {
+          "id": "b",
+          "text": "Hafsah"
+        },
+        {
+          "id": "c",
+          "text": "Khadijah"
+        },
+        {
+          "id": "d",
+          "text": "Umm Salamah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Khadijah reassured him after the experience of revelation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_008",
+      "conceptId": "seerah_jibril",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which angel brought the Quran to the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mikail"
+        },
+        {
+          "id": "b",
+          "text": "Malik"
+        },
+        {
+          "id": "c",
+          "text": "The angel of death"
+        },
+        {
+          "id": "d",
+          "text": "Jibril"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Jibril brought the Quran by Allah's permission.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "Quran 2:97",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_009",
+      "conceptId": "seerah_revelation_age",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "About how old was the Prophet when revelation began?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forty"
+        },
+        {
+          "id": "b",
+          "text": "Twenty"
+        },
+        {
+          "id": "c",
+          "text": "Thirty"
+        },
+        {
+          "id": "d",
+          "text": "Sixty"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Anas's description places the beginning of revelation at forty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3547",
+          "label": "Sahih al-Bukhari 3547",
+          "url": "https://sunnah.com/bukhari:3547"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_010",
+      "conceptId": "seerah_first_passage",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "The first Quranic revelation included the opening of which surah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An-Nas"
+        },
+        {
+          "id": "b",
+          "text": "Al-Alaq"
+        },
+        {
+          "id": "c",
+          "text": "Al-Kawthar"
+        },
+        {
+          "id": "d",
+          "text": "Al-Fil"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The first-revelation narration includes the opening verses of Al-Alaq.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_011",
+      "conceptId": "seerah_migration_from",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "From which city did the Prophet leave for the Hijrah to Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taif"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalem"
+        },
+        {
+          "id": "c",
+          "text": "Makkah"
+        },
+        {
+          "id": "d",
+          "text": "Alexandria"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The migration account describes the departure from Makkah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_012",
+      "conceptId": "seerah_migration_to",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To which city did the Prophet migrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taif"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalem"
+        },
+        {
+          "id": "c",
+          "text": "Damascus"
+        },
+        {
+          "id": "d",
+          "text": "Madinah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Madinah was the destination of the Hijrah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_013",
+      "conceptId": "seerah_migration_companion",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who accompanied the Prophet during the Hijrah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Bakr"
+        },
+        {
+          "id": "b",
+          "text": "Umar"
+        },
+        {
+          "id": "c",
+          "text": "Uthman"
+        },
+        {
+          "id": "d",
+          "text": "Bilal"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Abu Bakr accompanied the Prophet on the migration journey.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_014",
+      "conceptId": "seerah_migration_cave",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which cave did the Prophet and Abu Bakr stay during the Hijrah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hira"
+        },
+        {
+          "id": "b",
+          "text": "Thawr"
+        },
+        {
+          "id": "c",
+          "text": "The Cave of the Sleepers"
+        },
+        {
+          "id": "d",
+          "text": "A cave at Uhud"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "They stayed in a cave on Mount Thawr during the migration.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_015",
+      "conceptId": "seerah_madinah_mosque",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which city did the Prophet help establish his mosque after the Hijrah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taif"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalem"
+        },
+        {
+          "id": "c",
+          "text": "Madinah"
+        },
+        {
+          "id": "d",
+          "text": "Khaybar"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The arrival account describes the building of the mosque in Madinah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3932",
+          "label": "Sahih al-Bukhari 3932",
+          "url": "https://sunnah.com/bukhari:3932"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_016",
+      "conceptId": "seerah_fatimah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which of these was a daughter of the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aishah"
+        },
+        {
+          "id": "b",
+          "text": "Hafsah"
+        },
+        {
+          "id": "c",
+          "text": "Umm Salamah"
+        },
+        {
+          "id": "d",
+          "text": "Fatimah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Fatimah is identified as the Prophet's daughter in the account of his final illness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4462",
+          "label": "Sahih al-Bukhari 4462",
+          "url": "https://sunnah.com/bukhari:4462"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_017",
+      "conceptId": "seerah_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which grandson did the Prophet kiss in a well-known narration about mercy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Hasan"
+        },
+        {
+          "id": "b",
+          "text": "Abu Bakr"
+        },
+        {
+          "id": "c",
+          "text": "Umar"
+        },
+        {
+          "id": "d",
+          "text": "Anas"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration describes the Prophet kissing Al-Hasan ibn Ali.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_018",
+      "conceptId": "seerah_grief",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which son of the Prophet died as a young child in the narration about his tears?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ismail"
+        },
+        {
+          "id": "b",
+          "text": "Ibrahim"
+        },
+        {
+          "id": "c",
+          "text": "Yusuf"
+        },
+        {
+          "id": "d",
+          "text": "Yahya"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration records the Prophet's grief at the death of his son Ibrahim.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "Sahih al-Bukhari 1303",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_019",
+      "conceptId": "seerah_gentle_service",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which companion described serving the Prophet for ten years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Hurayrah"
+        },
+        {
+          "id": "b",
+          "text": "Abdullah ibn Abbas"
+        },
+        {
+          "id": "c",
+          "text": "Anas ibn Malik"
+        },
+        {
+          "id": "d",
+          "text": "Abdullah ibn Umar"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Anas described the Prophet's patient treatment during his years of service.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "Sahih al-Bukhari 6038",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_020",
+      "conceptId": "seerah_last_prophet",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Islam teach about Muhammad's place among the prophets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He is the first human."
+        },
+        {
+          "id": "b",
+          "text": "He is an angel."
+        },
+        {
+          "id": "c",
+          "text": "He is a partner in worship."
+        },
+        {
+          "id": "d",
+          "text": "He is the final prophet."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran identifies Muhammad as Allah's Messenger and the seal of the prophets.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "Quran 33:40",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_021",
+      "conceptId": "seerah_khadijah_character",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What did Khadijah recall when reassuring the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "His kindness and help for people"
+        },
+        {
+          "id": "b",
+          "text": "His desire to become wealthy"
+        },
+        {
+          "id": "c",
+          "text": "His habit of humiliating guests"
+        },
+        {
+          "id": "d",
+          "text": "His wish to avoid every responsibility"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "She recalled qualities such as family care, hospitality and helping those in difficulty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_022",
+      "conceptId": "seerah_waraqah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Whom did Khadijah take the Prophet to after the first revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Jahl"
+        },
+        {
+          "id": "b",
+          "text": "Waraqah ibn Nawfal"
+        },
+        {
+          "id": "c",
+          "text": "Abu Lahab"
+        },
+        {
+          "id": "d",
+          "text": "Suraqah ibn Malik"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Khadijah consulted Waraqah, who knew earlier scripture.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_023",
+      "conceptId": "seerah_public_warning",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "From which place did the Prophet call Quraysh to give a public warning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mount Uhud"
+        },
+        {
+          "id": "b",
+          "text": "Arafat"
+        },
+        {
+          "id": "c",
+          "text": "Al-Safa"
+        },
+        {
+          "id": "d",
+          "text": "Mina"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The account describes him calling the clans of Quraysh from Al-Safa.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_024",
+      "conceptId": "seerah_truthful_reputation",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "At Al-Safa, what did the people acknowledge about the Prophet's speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They knew he always lied."
+        },
+        {
+          "id": "b",
+          "text": "He never spoke to anyone."
+        },
+        {
+          "id": "c",
+          "text": "He only recited poetry."
+        },
+        {
+          "id": "d",
+          "text": "They had known him to speak truthfully."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Before the warning, the listeners acknowledged his truthfulness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_025",
+      "conceptId": "seerah_asma",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Who helped prepare food for the Prophet and Abu Bakr's migration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asma bint Abi Bakr"
+        },
+        {
+          "id": "b",
+          "text": "Fatimah bint Muhammad"
+        },
+        {
+          "id": "c",
+          "text": "Hafsah bint Umar"
+        },
+        {
+          "id": "d",
+          "text": "Safiyyah bint Huyayy"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The migration account describes Asma helping with the journey's provisions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_026",
+      "conceptId": "seerah_ansar",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Who were the Ansar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The rulers of Persia"
+        },
+        {
+          "id": "b",
+          "text": "The Muslim supporters in Madinah"
+        },
+        {
+          "id": "c",
+          "text": "The army of Pharaoh"
+        },
+        {
+          "id": "d",
+          "text": "A group of Roman merchants"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Ansar were the Madinan supporters who welcomed and helped the emigrants.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "9",
+          "label": "Quran 59:9",
+          "url": "https://quran.com/59/9"
+        },
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "100",
+          "label": "Quran 9:100",
+          "url": "https://quran.com/9/100"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_027",
+      "conceptId": "seerah_muhajirun",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Muhajirun refer to in the early Muslim community?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The market inspectors"
+        },
+        {
+          "id": "b",
+          "text": "The rulers of Rome"
+        },
+        {
+          "id": "c",
+          "text": "The emigrants"
+        },
+        {
+          "id": "d",
+          "text": "The keepers of a royal palace"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran names the Muhajirun, or emigrants, alongside the Ansar.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "100",
+          "label": "Quran 9:100",
+          "url": "https://quran.com/9/100"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_028",
+      "conceptId": "seerah_host",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which companion hosted the Prophet on his arrival in Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Lahab"
+        },
+        {
+          "id": "b",
+          "text": "Waraqah ibn Nawfal"
+        },
+        {
+          "id": "c",
+          "text": "Heraclius"
+        },
+        {
+          "id": "d",
+          "text": "Abu Ayyub al-Ansari"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The arrival narration places the Prophet at Abu Ayyub's home.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3932",
+          "label": "Sahih al-Bukhari 3932",
+          "url": "https://sunnah.com/bukhari:3932"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_029",
+      "conceptId": "seerah_mosque_work",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Did the Prophet join the community in work during the building of the mosque?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No, he forbade ordinary work."
+        },
+        {
+          "id": "c",
+          "text": "Only visitors could work."
+        },
+        {
+          "id": "d",
+          "text": "Only wealthy people could help."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The arrival account places him with the companions during the building work.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3932",
+          "label": "Sahih al-Bukhari 3932",
+          "url": "https://sunnah.com/bukhari:3932"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_030",
+      "conceptId": "seerah_badr",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which battle is named in the Quran as an occasion of Allah's help to the early Muslims?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Khaybar"
+        },
+        {
+          "id": "b",
+          "text": "Badr"
+        },
+        {
+          "id": "c",
+          "text": "Tabuk"
+        },
+        {
+          "id": "d",
+          "text": "Mu'tah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran explicitly names Badr when recalling Allah's help.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "123",
+          "label": "Quran 3:123",
+          "url": "https://quran.com/3/123"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_031",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What was Hudaybiyyah especially known for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The first revelation"
+        },
+        {
+          "id": "b",
+          "text": "The Prophet's birth"
+        },
+        {
+          "id": "c",
+          "text": "A peace agreement"
+        },
+        {
+          "id": "d",
+          "text": "The building of an ark"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Hudaybiyyah account describes negotiations and a peace agreement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_032",
+      "conceptId": "seerah_conquest",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "At the conquest of Makkah, what did the Prophet remove from around the Kabah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quran manuscripts"
+        },
+        {
+          "id": "b",
+          "text": "The Kabah's walls"
+        },
+        {
+          "id": "c",
+          "text": "Prayer mats"
+        },
+        {
+          "id": "d",
+          "text": "Idols"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration describes the removal of idols around the Kabah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4287",
+          "label": "Sahih al-Bukhari 4287",
+          "url": "https://sunnah.com/bukhari:4287"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_033",
+      "conceptId": "seerah_farewell",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is the Prophet's final Hajj commonly called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Farewell Pilgrimage"
+        },
+        {
+          "id": "b",
+          "text": "The Hijrah"
+        },
+        {
+          "id": "c",
+          "text": "The first revelation"
+        },
+        {
+          "id": "d",
+          "text": "The journey to Taif"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet's Hajj near the end of his life is known as the Farewell Pilgrimage.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "Sahih Muslim 1218a",
+          "url": "https://sunnah.com/muslim:1218a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_034",
+      "conceptId": "seerah_home_help",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How did Aishah describe the Prophet's conduct at home?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He refused every household task."
+        },
+        {
+          "id": "b",
+          "text": "He helped his family."
+        },
+        {
+          "id": "c",
+          "text": "He demanded praise before helping."
+        },
+        {
+          "id": "d",
+          "text": "He avoided all family responsibilities."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah described him serving his family and going out for prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "676",
+          "label": "Sahih al-Bukhari 676",
+          "url": "https://sunnah.com/bukhari:676"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_035",
+      "conceptId": "seerah_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What did the Prophet's affection toward his grandson demonstrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That tenderness is shameful"
+        },
+        {
+          "id": "b",
+          "text": "That only adults deserve kindness"
+        },
+        {
+          "id": "c",
+          "text": "Mercy toward children"
+        },
+        {
+          "id": "d",
+          "text": "That children should never be greeted"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The account connects affection toward a child with mercy.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_036",
+      "conceptId": "seerah_gentle_service",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What did Anas remember about the Prophet's treatment of him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He mocked every mistake."
+        },
+        {
+          "id": "b",
+          "text": "He demanded gifts for every lesson."
+        },
+        {
+          "id": "c",
+          "text": "He refused to speak to him at all."
+        },
+        {
+          "id": "d",
+          "text": "He did not speak to him with impatient contempt."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Anas recalled remarkable patience and the absence of harsh reproach.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "Sahih al-Bukhari 6038",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_037",
+      "conceptId": "seerah_ramadan_generosity",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "According to Ibn Abbas, when was the Prophet especially generous?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Only when praised"
+        },
+        {
+          "id": "c",
+          "text": "Only after receiving gifts"
+        },
+        {
+          "id": "d",
+          "text": "Only when wealthy visitors arrived"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Ibn Abbas described his increased generosity in Ramadan.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "Sahih al-Bukhari 6",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_038",
+      "conceptId": "seerah_ease",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "When choosing between two options, what did the Prophet prefer if neither involved sin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The more painful option simply because it hurt"
+        },
+        {
+          "id": "b",
+          "text": "The easier option"
+        },
+        {
+          "id": "c",
+          "text": "The option that gained more applause"
+        },
+        {
+          "id": "d",
+          "text": "The option that caused more confusion"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah described his preference for ease when the choice was not sinful.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "Sahih al-Bukhari 3560",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_039",
+      "conceptId": "seerah_grief",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Did the Prophet shed tears when his son Ibrahim died?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, he said all tears were forbidden."
+        },
+        {
+          "id": "b",
+          "text": "No, he felt no sadness."
+        },
+        {
+          "id": "c",
+          "text": "Yes"
+        },
+        {
+          "id": "d",
+          "text": "Only because someone ordered him to"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "His tears expressed mercy and grief while his speech remained pleasing to Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "Sahih al-Bukhari 1303",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_040",
+      "conceptId": "seerah_mercy_mission",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does the Quran describe the Prophet's mission in relation to the worlds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As a pursuit of wealth alone"
+        },
+        {
+          "id": "b",
+          "text": "As permission for cruelty"
+        },
+        {
+          "id": "c",
+          "text": "As a reason to reject all learning"
+        },
+        {
+          "id": "d",
+          "text": "As a mercy"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran describes him as sent as a mercy to the worlds.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "107",
+          "label": "Quran 21:107",
+          "url": "https://quran.com/21/107"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_041",
+      "conceptId": "seerah_home_help",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your family needs help with chores. Which choice follows the Prophet's example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help with the work."
+        },
+        {
+          "id": "b",
+          "text": "Refuse because helping lowers your status."
+        },
+        {
+          "id": "c",
+          "text": "Demand applause before starting."
+        },
+        {
+          "id": "d",
+          "text": "Leave every task for someone else."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet served his family at home.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "676",
+          "label": "Sahih al-Bukhari 676",
+          "url": "https://sunnah.com/bukhari:676"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_042",
+      "conceptId": "seerah_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A young child wants your attention. Which response reflects the Prophet's tenderness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock the child."
+        },
+        {
+          "id": "b",
+          "text": "Respond with kindness."
+        },
+        {
+          "id": "c",
+          "text": "Say children never deserve affection."
+        },
+        {
+          "id": "d",
+          "text": "Humiliate them for asking."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet's affection toward children teaches mercy.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_043",
+      "conceptId": "seerah_gentle_service",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone helping you makes a mistake. What reflects the patience Anas remembered?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock them in front of others."
+        },
+        {
+          "id": "b",
+          "text": "Insult their family."
+        },
+        {
+          "id": "c",
+          "text": "Correct them calmly without humiliation."
+        },
+        {
+          "id": "d",
+          "text": "Treat the mistake as a reason for cruelty."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Anas's account highlights patient treatment rather than harsh reproach.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "Sahih al-Bukhari 6038",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_044",
+      "conceptId": "seerah_truthful_reputation",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Telling the truth may be uncomfortable. What follows the Prophet's truthful example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invent a story to look better."
+        },
+        {
+          "id": "b",
+          "text": "Change the facts for applause."
+        },
+        {
+          "id": "c",
+          "text": "Let popularity decide what is true."
+        },
+        {
+          "id": "d",
+          "text": "Speak honestly."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His public reputation for truthfulness is recalled in the Al-Safa account.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_045",
+      "conceptId": "seerah_migration_planning",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are preparing for an important journey. What lesson fits the Hijrah account?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plan carefully while trusting Allah."
+        },
+        {
+          "id": "b",
+          "text": "Avoid all planning to prove faith."
+        },
+        {
+          "id": "c",
+          "text": "Assume trust means ignoring every practical need."
+        },
+        {
+          "id": "d",
+          "text": "Rely on a lucky number instead of preparation."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The migration included provisions, transport and a guide.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_046",
+      "conceptId": "seerah_ansar",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A newcomer needs support in your community. Which example can inspire you?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mocking people who arrive with little"
+        },
+        {
+          "id": "b",
+          "text": "The Ansar welcoming the emigrants"
+        },
+        {
+          "id": "c",
+          "text": "Demanding fame before offering help"
+        },
+        {
+          "id": "d",
+          "text": "Refusing kindness to every newcomer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran praises the receiving community's care for the emigrants.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "9",
+          "label": "Quran 59:9",
+          "url": "https://quran.com/59/9"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_047",
+      "conceptId": "seerah_mosque_work",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your community is doing useful shared work. What reflects the Prophet's example during mosque construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume important people never help."
+        },
+        {
+          "id": "b",
+          "text": "Demand that only newcomers work."
+        },
+        {
+          "id": "c",
+          "text": "Join in as you are able."
+        },
+        {
+          "id": "d",
+          "text": "Mock those doing practical tasks."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The mosque-building account shows participation alongside the community.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3932",
+          "label": "Sahih al-Bukhari 3932",
+          "url": "https://sunnah.com/bukhari:3932"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_048",
+      "conceptId": "seerah_khadijah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A loved one is frightened after a difficult experience. What can you learn from Khadijah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laugh at their fear."
+        },
+        {
+          "id": "b",
+          "text": "Demand they never speak about it."
+        },
+        {
+          "id": "c",
+          "text": "Humiliate them in front of others."
+        },
+        {
+          "id": "d",
+          "text": "Offer reassurance and caring support."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Khadijah responded to the Prophet's distress with comfort and reassurance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_049",
+      "conceptId": "seerah_ramadan_generosity",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to follow the Prophet's example in Ramadan. Which quality should you practise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Generosity"
+        },
+        {
+          "id": "b",
+          "text": "Showing off"
+        },
+        {
+          "id": "c",
+          "text": "Looking down on the poor"
+        },
+        {
+          "id": "d",
+          "text": "Keeping every useful thing from others"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet was especially generous during Ramadan.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "Sahih al-Bukhari 6",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_050",
+      "conceptId": "seerah_ease",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two lawful ways to complete a task are available. Is choosing the easier one necessarily wrong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, hardship is always the only goal."
+        },
+        {
+          "id": "b",
+          "text": "No"
+        },
+        {
+          "id": "c",
+          "text": "Yes, ease always means laziness."
+        },
+        {
+          "id": "d",
+          "text": "Yes, every easier option is forbidden."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet chose the easier option when it did not involve sin.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "Sahih al-Bukhari 3560",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_051",
+      "conceptId": "seerah_grief",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are grieving a loss. Does the Prophet's example show that tears can go with faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, any tear rejects faith."
+        },
+        {
+          "id": "b",
+          "text": "Only if no one sees you"
+        },
+        {
+          "id": "c",
+          "text": "Yes"
+        },
+        {
+          "id": "d",
+          "text": "Only for wealthy families"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "He wept at Ibrahim's death and still spoke with faith and restraint.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "Sahih al-Bukhari 1303",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_052",
+      "conceptId": "seerah_loyalty",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An old family friend needs kindness. Which example can guide you?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treating old friendships as worthless"
+        },
+        {
+          "id": "b",
+          "text": "Helping only people who can repay you"
+        },
+        {
+          "id": "c",
+          "text": "Ignoring someone because they are not famous"
+        },
+        {
+          "id": "d",
+          "text": "The Prophet honouring Khadijah's friends"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Aishah recalled the Prophet sending gifts to Khadijah's friends.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3818",
+          "label": "Sahih al-Bukhari 3818",
+          "url": "https://sunnah.com/bukhari:3818"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_053",
+      "conceptId": "seerah_teaching_clear",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are explaining something useful. Which habit reflects Aishah's description of the Prophet's speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Speak clearly so listeners can understand."
+        },
+        {
+          "id": "b",
+          "text": "Rush so no one can follow."
+        },
+        {
+          "id": "c",
+          "text": "Use confusion to impress them."
+        },
+        {
+          "id": "d",
+          "text": "Refuse every question."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Aishah described speech that listeners could follow, rather than hurried speech.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3567",
+          "label": "Sahih al-Bukhari 3567",
+          "url": "https://sunnah.com/bukhari:3567"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_054",
+      "conceptId": "seerah_greeting_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You meet a group of children. Which action follows a reported practice of the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore them because of their age."
+        },
+        {
+          "id": "b",
+          "text": "Greet them."
+        },
+        {
+          "id": "c",
+          "text": "Demand that they leave."
+        },
+        {
+          "id": "d",
+          "text": "Say greetings are only for adults."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Anas recalled the Prophet greeting children.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6247",
+          "label": "Sahih al-Bukhari 6247",
+          "url": "https://sunnah.com/bukhari:6247"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_055",
+      "conceptId": "seerah_patient_learning",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A beginner asks how to pray. Which response fits the Prophet's teaching example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock them for not knowing."
+        },
+        {
+          "id": "b",
+          "text": "Invent a new prayer."
+        },
+        {
+          "id": "c",
+          "text": "Show and explain patiently."
+        },
+        {
+          "id": "d",
+          "text": "Tell them questions have no place."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet explained the prayer to a man who needed correction.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "757",
+          "label": "Sahih al-Bukhari 757",
+          "url": "https://sunnah.com/bukhari:757"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_056",
+      "conceptId": "seerah_advice",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You need a practical solution and a trusted person offers useful advice. Which Seerah example supports listening?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rejecting advice solely because it came from family"
+        },
+        {
+          "id": "b",
+          "text": "Assuming leadership means knowing every practical answer alone"
+        },
+        {
+          "id": "c",
+          "text": "Treating advice as automatic disrespect"
+        },
+        {
+          "id": "d",
+          "text": "The Prophet listening to Umm Salamah at Hudaybiyyah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Hudaybiyyah narration records Umm Salamah's helpful advice and the Prophet acting on it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_057",
+      "conceptId": "seerah_merciful_leadership",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone disagrees with you. Which quality fits the Prophet's merciful leadership?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gentleness"
+        },
+        {
+          "id": "b",
+          "text": "Needless harshness"
+        },
+        {
+          "id": "c",
+          "text": "Humiliation"
+        },
+        {
+          "id": "d",
+          "text": "Contempt"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran describes the Prophet's gentleness and warns that harshness would drive people away.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "Quran 3:159",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_058",
+      "conceptId": "seerah_making_time",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want your household to benefit from Ramadan's final nights. Which example can guide you?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forbidding family members from praying"
+        },
+        {
+          "id": "b",
+          "text": "The Prophet encouraging his family to worship"
+        },
+        {
+          "id": "c",
+          "text": "Treating the nights as meaningless"
+        },
+        {
+          "id": "d",
+          "text": "Making worship only about public praise"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah described him waking his family during the last ten nights.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2024",
+          "label": "Sahih al-Bukhari 2024",
+          "url": "https://sunnah.com/bukhari:2024"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_059",
+      "conceptId": "seerah_hope_after_rejection",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "People reject your good advice. Which response reflects the hope in the Prophet's account after rejection near Taif?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume no one from that community can ever change."
+        },
+        {
+          "id": "b",
+          "text": "Treat rejection as permission for every cruelty."
+        },
+        {
+          "id": "c",
+          "text": "Keep concern for people's guidance instead of wishing destruction on everyone."
+        },
+        {
+          "id": "d",
+          "text": "Invent false claims to punish them."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet declined the offered destruction and hoped for descendants who would worship Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_seerah_060",
+      "conceptId": "seerah_learn_life",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn a story from the Prophet's life. What is a useful next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invent extra dialogue and call it revelation."
+        },
+        {
+          "id": "b",
+          "text": "Assume remembering a name is the only purpose."
+        },
+        {
+          "id": "c",
+          "text": "Treat his example as unrelated to daily life."
+        },
+        {
+          "id": "d",
+          "text": "Look for a sound lesson to practise."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran presents the Messenger as an example for believers.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "Quran 33:21",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    }
+  ]
+}

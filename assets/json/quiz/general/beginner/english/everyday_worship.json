@@ -1,0 +1,2317 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "everyday_worship",
+  "title": "Everyday Worship",
+  "description": "General User → Beginner. Familiar worship facts, broader basics and short everyday applications covering prayer, purification, fasting, charity, remembrance and supplication. All questions are Beginner level; detailed disputed rulings and reference-number memorization are excluded.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge required across all question styles. Styles are not difficulty levels. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_beginner_everyday_worship_001",
+      "conceptId": "worship_prayer_count",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How many obligatory daily prayers are there?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Five"
+        },
+        {
+          "id": "b",
+          "text": "Three"
+        },
+        {
+          "id": "c",
+          "text": "Four"
+        },
+        {
+          "id": "d",
+          "text": "Six"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The five daily prayers form a central part of Muslim worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_002",
+      "conceptId": "worship_prayer_names",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which list names the five daily prayers in order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fajr, Asr, Dhuhr, Isha, Maghrib"
+        },
+        {
+          "id": "b",
+          "text": "Fajr, Dhuhr, Asr, Maghrib, Isha"
+        },
+        {
+          "id": "c",
+          "text": "Dhuhr, Fajr, Maghrib, Asr, Isha"
+        },
+        {
+          "id": "d",
+          "text": "Isha, Maghrib, Asr, Dhuhr, Fajr"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The prayers follow the day from dawn through midday, afternoon, sunset and night.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "Sahih Muslim 612a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_003",
+      "conceptId": "worship_fajr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which daily prayer is offered at dawn before sunrise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dhuhr"
+        },
+        {
+          "id": "b",
+          "text": "Asr"
+        },
+        {
+          "id": "c",
+          "text": "Fajr"
+        },
+        {
+          "id": "d",
+          "text": "Isha"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Fajr is the dawn prayer; its time ends at sunrise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "Sahih Muslim 612a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_004",
+      "conceptId": "worship_maghrib",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which daily prayer begins at sunset?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fajr"
+        },
+        {
+          "id": "b",
+          "text": "Dhuhr"
+        },
+        {
+          "id": "c",
+          "text": "Asr"
+        },
+        {
+          "id": "d",
+          "text": "Maghrib"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Maghrib is the sunset prayer. Sunset also marks the end of the daily fast.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "Quran 2:187",
+          "url": "https://quran.com/2/187"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "Sahih Muslim 612a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_005",
+      "conceptId": "worship_wudu",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is wudu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ritual washing before prayer"
+        },
+        {
+          "id": "b",
+          "text": "The meal that ends a fast"
+        },
+        {
+          "id": "c",
+          "text": "The Friday sermon"
+        },
+        {
+          "id": "d",
+          "text": "The annual pilgrimage"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Wudu is purification that includes washing specified body parts and wiping the head.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_006",
+      "conceptId": "worship_qibla",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What direction do Muslims normally face in prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toward the nearest mountain"
+        },
+        {
+          "id": "b",
+          "text": "Toward the Kaaba in Makkah"
+        },
+        {
+          "id": "c",
+          "text": "Always toward the rising sun"
+        },
+        {
+          "id": "d",
+          "text": "Always toward the nearest mosque"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The qibla is the direction of the Kaaba; its compass direction depends on location.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "Quran 2:144",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_007",
+      "conceptId": "worship_adhan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is the adhan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A type of charitable payment"
+        },
+        {
+          "id": "b",
+          "text": "The evening meal"
+        },
+        {
+          "id": "c",
+          "text": "The call to prayer"
+        },
+        {
+          "id": "d",
+          "text": "A name for pilgrimage"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The adhan announces prayer time and calls people to worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "631",
+          "label": "Sahih al-Bukhari 631",
+          "url": "https://sunnah.com/bukhari:631"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_008",
+      "conceptId": "worship_iqamah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the iqamah announce?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The end of Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "The start of a journey"
+        },
+        {
+          "id": "c",
+          "text": "The end of the Friday sermon alone"
+        },
+        {
+          "id": "d",
+          "text": "The immediate start of congregational prayer"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The iqamah is the call given as the congregation prepares to begin prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "603",
+          "label": "Sahih al-Bukhari 603",
+          "url": "https://sunnah.com/bukhari:603"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_009",
+      "conceptId": "worship_fatihah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which opening surah is regularly recited in salah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fatihah"
+        },
+        {
+          "id": "b",
+          "text": "Al-Masad"
+        },
+        {
+          "id": "c",
+          "text": "Al-Fil"
+        },
+        {
+          "id": "d",
+          "text": "Quraysh"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Fatihah has a central place in the recitation of prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "756",
+          "label": "Sahih al-Bukhari 756",
+          "url": "https://sunnah.com/bukhari:756"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_010",
+      "conceptId": "worship_ruku",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is ruku in salah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sitting after prayer"
+        },
+        {
+          "id": "b",
+          "text": "Bowing"
+        },
+        {
+          "id": "c",
+          "text": "Calling the adhan"
+        },
+        {
+          "id": "d",
+          "text": "Giving charity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ruku is the bowing posture in prayer, performed with calmness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6251",
+          "label": "Sahih al-Bukhari 6251",
+          "url": "https://sunnah.com/bukhari:6251"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_011",
+      "conceptId": "worship_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is sujud in salah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The call to prayer"
+        },
+        {
+          "id": "b",
+          "text": "The Friday sermon"
+        },
+        {
+          "id": "c",
+          "text": "Prostration"
+        },
+        {
+          "id": "d",
+          "text": "The pre-dawn meal"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sujud is prostration, one of the postures of prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6251",
+          "label": "Sahih al-Bukhari 6251",
+          "url": "https://sunnah.com/bukhari:6251"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_012",
+      "conceptId": "worship_ramadan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which month do Muslims observe the obligatory month-long fast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shawwal"
+        },
+        {
+          "id": "b",
+          "text": "Safar"
+        },
+        {
+          "id": "c",
+          "text": "Rajab"
+        },
+        {
+          "id": "d",
+          "text": "Ramadan"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Ramadan is the month of obligatory fasting for those to whom the duty applies.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_013",
+      "conceptId": "worship_fast_start",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When does the daily Ramadan fast begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At true dawn"
+        },
+        {
+          "id": "b",
+          "text": "At sunrise"
+        },
+        {
+          "id": "c",
+          "text": "At midday"
+        },
+        {
+          "id": "d",
+          "text": "At sunset"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The fast begins at true dawn, when Fajr time begins, rather than at sunrise.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "Quran 2:187",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_014",
+      "conceptId": "worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is suhur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The meal at sunset"
+        },
+        {
+          "id": "b",
+          "text": "The pre-dawn meal before fasting"
+        },
+        {
+          "id": "c",
+          "text": "The Friday sermon"
+        },
+        {
+          "id": "d",
+          "text": "The call to prayer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Suhur is the meal eaten before the fast begins, and the Prophet encouraged it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_015",
+      "conceptId": "worship_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is iftar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Beginning the fast at dawn"
+        },
+        {
+          "id": "b",
+          "text": "The noon prayer"
+        },
+        {
+          "id": "c",
+          "text": "Breaking the fast at sunset"
+        },
+        {
+          "id": "d",
+          "text": "A form of ritual washing"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Iftar is the breaking of the fast once sunset has arrived.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "Sahih al-Bukhari 1957",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_016",
+      "conceptId": "worship_zakah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which is the prescribed obligatory charity when its conditions are met?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adhan"
+        },
+        {
+          "id": "b",
+          "text": "Ruku"
+        },
+        {
+          "id": "c",
+          "text": "Suhur"
+        },
+        {
+          "id": "d",
+          "text": "Zakah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Zakah is an obligation for those who meet its conditions; it is distinct from voluntary giving.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_017",
+      "conceptId": "worship_jumuah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "On which day is Jumuah prayer held?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Friday"
+        },
+        {
+          "id": "b",
+          "text": "Monday"
+        },
+        {
+          "id": "c",
+          "text": "Wednesday"
+        },
+        {
+          "id": "d",
+          "text": "Sunday"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Jumuah is the weekly Friday congregational prayer.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 62,
+          "ayahs": "9",
+          "label": "Quran 62:9",
+          "url": "https://quran.com/62/9"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_018",
+      "conceptId": "worship_hajj",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which act is the pilgrimage to the Sacred House in Makkah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wudu"
+        },
+        {
+          "id": "b",
+          "text": "Hajj"
+        },
+        {
+          "id": "c",
+          "text": "Iftar"
+        },
+        {
+          "id": "d",
+          "text": "Adhan"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Hajj is the pilgrimage associated with the Sacred House, required of those who are able and meet its conditions.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "97",
+          "label": "Quran 3:97",
+          "url": "https://quran.com/3/97"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_019",
+      "conceptId": "worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does dhikr mean in worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Planning a journey"
+        },
+        {
+          "id": "b",
+          "text": "Announcing a wedding"
+        },
+        {
+          "id": "c",
+          "text": "Remembering Allah"
+        },
+        {
+          "id": "d",
+          "text": "Calculating a calendar"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Dhikr is remembrance of Allah, including words of praise and glorification.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "Quran 33:41",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_020",
+      "conceptId": "worship_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is dua?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An alternative name for zakah"
+        },
+        {
+          "id": "b",
+          "text": "The formal call to prayer"
+        },
+        {
+          "id": "c",
+          "text": "The name of a prayer posture"
+        },
+        {
+          "id": "d",
+          "text": "Calling upon Allah in supplication"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Through dua, a person turns to Allah and asks for help and good.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_021",
+      "conceptId": "worship_prayer_purpose",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What important purpose of salah is stated in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remembering Allah"
+        },
+        {
+          "id": "b",
+          "text": "Displaying expensive clothes"
+        },
+        {
+          "id": "c",
+          "text": "Competing for attention"
+        },
+        {
+          "id": "d",
+          "text": "Avoiding every daily responsibility"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Prayer is worship and a means of remembering Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "Quran 20:14",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_022",
+      "conceptId": "worship_prayer_times",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can the daily prayers simply be moved to any convenient time without a valid reason?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every prayer has the same time"
+        },
+        {
+          "id": "b",
+          "text": "No, they have appointed times"
+        },
+        {
+          "id": "c",
+          "text": "Yes, timing never matters"
+        },
+        {
+          "id": "d",
+          "text": "Yes, all five are only weekly"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran describes prayer as a duty with appointed times. Specific concessions have their own rules.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "103",
+          "label": "Quran 4:103",
+          "url": "https://quran.com/4/103"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_023",
+      "conceptId": "worship_wudu_parts",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In wudu, how are the arms washed as specified in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the fingertips"
+        },
+        {
+          "id": "b",
+          "text": "Only above the shoulders"
+        },
+        {
+          "id": "c",
+          "text": "Up to and including the elbows"
+        },
+        {
+          "id": "d",
+          "text": "Only the backs of the hands"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran specifies washing the arms to the elbows as part of wudu.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_024",
+      "conceptId": "worship_wudu_head",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What action is specified for the head in wudu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Covering it with dust every time"
+        },
+        {
+          "id": "b",
+          "text": "Cutting the hair each time"
+        },
+        {
+          "id": "c",
+          "text": "Washing only a hat"
+        },
+        {
+          "id": "d",
+          "text": "Wiping it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Wiping the head is among the acts of wudu described in the Quran.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_025",
+      "conceptId": "worship_wudu_break",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which action clearly breaks wudu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passing wind"
+        },
+        {
+          "id": "b",
+          "text": "Reading quietly"
+        },
+        {
+          "id": "c",
+          "text": "Looking at a clock"
+        },
+        {
+          "id": "d",
+          "text": "Carrying a book"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Passing wind breaks wudu, so purification must be renewed before prayer when water can be used.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "Sahih al-Bukhari 135",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_026",
+      "conceptId": "worship_tayammum",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What purification is provided when water cannot be found and its conditions apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iftar"
+        },
+        {
+          "id": "b",
+          "text": "Tayammum"
+        },
+        {
+          "id": "c",
+          "text": "Adhan"
+        },
+        {
+          "id": "d",
+          "text": "Jumuah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Tayammum is purification using clean earth under prescribed conditions. Its method should be learned properly.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_027",
+      "conceptId": "worship_prayer_calm",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How should the postures of prayer be performed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As quickly as possible"
+        },
+        {
+          "id": "b",
+          "text": "Without pausing in any posture"
+        },
+        {
+          "id": "c",
+          "text": "With calmness and proper settling"
+        },
+        {
+          "id": "d",
+          "text": "As a race with other people"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet taught a man to bow, stand, prostrate and sit with calmness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6251",
+          "label": "Sahih al-Bukhari 6251",
+          "url": "https://sunnah.com/bukhari:6251"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_028",
+      "conceptId": "worship_rows",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What practice is encouraged for rows in congregational prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Making them deliberately uneven"
+        },
+        {
+          "id": "b",
+          "text": "Standing wherever blocks others"
+        },
+        {
+          "id": "c",
+          "text": "Leaving disorder as the goal"
+        },
+        {
+          "id": "d",
+          "text": "Keeping them straight"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet instructed worshippers to straighten their rows.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "723",
+          "label": "Sahih al-Bukhari 723",
+          "url": "https://sunnah.com/bukhari:723"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_029",
+      "conceptId": "worship_fasting_purpose",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What spiritual aim of fasting is mentioned in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Growing in mindfulness of Allah"
+        },
+        {
+          "id": "b",
+          "text": "Showing superiority over others"
+        },
+        {
+          "id": "c",
+          "text": "Winning arguments"
+        },
+        {
+          "id": "d",
+          "text": "Replacing all other worship"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Fasting is prescribed to help believers develop taqwa, or mindfulness of Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "183",
+          "label": "Quran 2:183",
+          "url": "https://quran.com/2/183"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_030",
+      "conceptId": "worship_fasting_conduct",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does fasting concern behavior as well as avoiding food and drink?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, behavior never matters"
+        },
+        {
+          "id": "b",
+          "text": "Yes, lying and wrongdoing must also be avoided"
+        },
+        {
+          "id": "c",
+          "text": "No, lying becomes allowed while fasting"
+        },
+        {
+          "id": "d",
+          "text": "Only appearance matters"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet warned against false speech and wrongdoing while fasting. This question concerns conduct, not a ruling that every sin legally breaks the fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_031",
+      "conceptId": "worship_suhur_status",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How should suhur be understood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A replacement for Fajr prayer"
+        },
+        {
+          "id": "b",
+          "text": "The time the fast ends"
+        },
+        {
+          "id": "c",
+          "text": "A recommended meal with blessing"
+        },
+        {
+          "id": "d",
+          "text": "A meal required after sunrise"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet encouraged suhur. Missing the meal alone does not invalidate a fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_032",
+      "conceptId": "worship_iftar_prompt",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Once sunset is certain, what practice is encouraged?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waiting until midnight every day"
+        },
+        {
+          "id": "b",
+          "text": "Waiting until the next dawn"
+        },
+        {
+          "id": "c",
+          "text": "Continuing only to impress others"
+        },
+        {
+          "id": "d",
+          "text": "Breaking the fast without unnecessary delay"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet encouraged prompt iftar when its proper time has arrived.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "Sahih al-Bukhari 1957",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_033",
+      "conceptId": "worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What if a fasting person eats or drinks genuinely forgetfully?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They should stop on remembering and complete the fast"
+        },
+        {
+          "id": "b",
+          "text": "They must keep eating all day"
+        },
+        {
+          "id": "c",
+          "text": "They can never fast again"
+        },
+        {
+          "id": "d",
+          "text": "They must assume every later fast is invalid"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet instructed someone who ate or drank forgetfully to complete the fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "Sahih al-Bukhari 1933",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_034",
+      "conceptId": "worship_fasting_concession",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran provide for temporary illness or travel during Ramadan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A rule that all worship ends permanently"
+        },
+        {
+          "id": "b",
+          "text": "A concession to make up missed fasts later under its rules"
+        },
+        {
+          "id": "c",
+          "text": "Permission to mock those who fast"
+        },
+        {
+          "id": "d",
+          "text": "A rule that missed fasts never need attention"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse allows missed days to be made up for illness or travel. Individual circumstances should be discussed with a qualified person.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_035",
+      "conceptId": "worship_zakah_recipients",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which group is specifically included among zakah recipients?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only wealthy business owners"
+        },
+        {
+          "id": "b",
+          "text": "Only people with famous names"
+        },
+        {
+          "id": "c",
+          "text": "The poor and needy"
+        },
+        {
+          "id": "d",
+          "text": "Only the donor's social followers"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran names the poor and needy among the eligible categories for zakah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "60",
+          "label": "Quran 9:60",
+          "url": "https://quran.com/9/60"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_036",
+      "conceptId": "worship_charity_dignity",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What should someone avoid after giving charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respecting the recipient"
+        },
+        {
+          "id": "b",
+          "text": "Speaking kindly"
+        },
+        {
+          "id": "c",
+          "text": "Protecting the recipient's dignity"
+        },
+        {
+          "id": "d",
+          "text": "Hurtful reminders and humiliation"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran warns against undermining charity through hurtful reminders or injury.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_037",
+      "conceptId": "worship_hamd",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which expression means praise belongs to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alhamdulillah"
+        },
+        {
+          "id": "b",
+          "text": "Allahu Akbar"
+        },
+        {
+          "id": "c",
+          "text": "La ilaha illallah"
+        },
+        {
+          "id": "d",
+          "text": "Subhanallah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Alhamdulillah expresses praise of Allah and is among the beloved words of remembrance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2137a",
+          "label": "Sahih Muslim 2137a",
+          "url": "https://sunnah.com/muslim:2137a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_038",
+      "conceptId": "worship_takbir",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which expression means Allah is the Greatest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alhamdulillah"
+        },
+        {
+          "id": "b",
+          "text": "Allahu Akbar"
+        },
+        {
+          "id": "c",
+          "text": "Subhanallah"
+        },
+        {
+          "id": "d",
+          "text": "La ilaha illallah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allahu Akbar affirms Allah's greatness and is used in remembrance and prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2137a",
+          "label": "Sahih Muslim 2137a",
+          "url": "https://sunnah.com/muslim:2137a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_039",
+      "conceptId": "worship_tasbih",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which expression glorifies Allah as free from imperfection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alhamdulillah"
+        },
+        {
+          "id": "b",
+          "text": "Allahu Akbar"
+        },
+        {
+          "id": "c",
+          "text": "Subhanallah"
+        },
+        {
+          "id": "d",
+          "text": "La ilaha illallah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Subhanallah glorifies Allah and affirms His perfection.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2137a",
+          "label": "Sahih Muslim 2137a",
+          "url": "https://sunnah.com/muslim:2137a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_040",
+      "conceptId": "worship_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What response to Allah's blessings does the Quran encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arrogance"
+        },
+        {
+          "id": "b",
+          "text": "Denial of every blessing"
+        },
+        {
+          "id": "c",
+          "text": "Looking down on others"
+        },
+        {
+          "id": "d",
+          "text": "Gratitude"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Gratitude recognizes Allah's blessings and should shape how we live.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "7",
+          "label": "Quran 14:7",
+          "url": "https://quran.com/14/7"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_041",
+      "conceptId": "worship_prayer_times",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are planning a busy day. Which approach helps protect the daily prayers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plan breaks within the prayer times"
+        },
+        {
+          "id": "b",
+          "text": "Leave all prayers until bedtime without a valid reason"
+        },
+        {
+          "id": "c",
+          "text": "Assume work removes every prayer duty"
+        },
+        {
+          "id": "d",
+          "text": "Replace every prayer with a calendar note"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Planning around prayer times is a practical way to care for this obligation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "103",
+          "label": "Quran 4:103",
+          "url": "https://quran.com/4/103"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_042",
+      "conceptId": "worship_wudu_break",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You know you passed wind after making wudu, and water is available. What should you do before praying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only change your shoes"
+        },
+        {
+          "id": "b",
+          "text": "Renew wudu"
+        },
+        {
+          "id": "c",
+          "text": "Only read a short message"
+        },
+        {
+          "id": "d",
+          "text": "Assume the earlier wudu is unaffected"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Known passing of wind breaks wudu, so it needs to be renewed before prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "Sahih al-Bukhari 135",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_043",
+      "conceptId": "worship_qibla",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are in an unfamiliar place and do not know the qibla. What is a sensible first step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always face east wherever you are"
+        },
+        {
+          "id": "b",
+          "text": "Face the nearest door without checking"
+        },
+        {
+          "id": "c",
+          "text": "Use a reliable direction source or ask someone who knows"
+        },
+        {
+          "id": "d",
+          "text": "Choose the direction with the best view"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Making a reasonable effort to identify the qibla helps prepare for prayer.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "Quran 2:144",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_044",
+      "conceptId": "worship_prayer_calm",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You notice you are rushing through bowing and prostration. What should you change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Move faster to finish first"
+        },
+        {
+          "id": "b",
+          "text": "Skip the postures you find slow"
+        },
+        {
+          "id": "c",
+          "text": "Treat calmness as irrelevant"
+        },
+        {
+          "id": "d",
+          "text": "Slow down and settle properly in each posture"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet's teaching emphasizes settled, calm prayer movements.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6251",
+          "label": "Sahih al-Bukhari 6251",
+          "url": "https://sunnah.com/bukhari:6251"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_045",
+      "conceptId": "worship_prayer_illness",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You cannot stand for an obligatory prayer because of illness, but you can sit. How should you pray?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sitting, according to your ability"
+        },
+        {
+          "id": "b",
+          "text": "Abandon prayer solely because you cannot stand"
+        },
+        {
+          "id": "c",
+          "text": "Wait until you can stand even if recovery takes months"
+        },
+        {
+          "id": "d",
+          "text": "Ask someone to pray all your prayers instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet allowed a person unable to stand to pray sitting, with further accommodation if unable to sit.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "Sahih al-Bukhari 1117",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_046",
+      "conceptId": "worship_prayer_forgotten",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You genuinely forgot a prayer and now remember it. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wait until the same day next week"
+        },
+        {
+          "id": "b",
+          "text": "Offer it when you remember"
+        },
+        {
+          "id": "c",
+          "text": "Assume remembering cancels the duty"
+        },
+        {
+          "id": "d",
+          "text": "Replace it only with a donation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet instructed a person who forgot a prayer to perform it on remembering.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "Sahih al-Bukhari 597",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_047",
+      "conceptId": "worship_rows",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are arranging a row before congregational prayer. Which action follows the Prophet's instruction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make the row deliberately crooked"
+        },
+        {
+          "id": "b",
+          "text": "Encourage everyone to face different directions"
+        },
+        {
+          "id": "c",
+          "text": "Help keep the row straight"
+        },
+        {
+          "id": "d",
+          "text": "Create disorder for amusement"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Straightening the rows is part of caring for congregational prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "723",
+          "label": "Sahih al-Bukhari 723",
+          "url": "https://sunnah.com/bukhari:723"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_048",
+      "conceptId": "worship_fast_start",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your reliable local timetable shows true dawn has begun. What does that mean for today's fast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "You may eat until sunrise"
+        },
+        {
+          "id": "b",
+          "text": "The fast has already ended"
+        },
+        {
+          "id": "c",
+          "text": "Only the afternoon counts as fasting"
+        },
+        {
+          "id": "d",
+          "text": "The time to abstain from food and drink has begun"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The daily fast begins at true dawn, not sunrise. Use reliable local timing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "Quran 2:187",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_049",
+      "conceptId": "worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are planning for tomorrow's fast. Which meal follows the Prophet's encouragement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A meal before true dawn"
+        },
+        {
+          "id": "b",
+          "text": "A breakfast after sunrise while continuing to call it fasting"
+        },
+        {
+          "id": "c",
+          "text": "A meal at midday"
+        },
+        {
+          "id": "d",
+          "text": "A meal that replaces all prayers"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Preparing for suhur helps make room for the blessed pre-dawn meal.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_050",
+      "conceptId": "worship_iftar_prompt",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Sunset has reliably arrived and food or water is ready. Which choice follows the Sunnah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Delay only to appear more devout"
+        },
+        {
+          "id": "b",
+          "text": "Break the fast without unnecessary delay"
+        },
+        {
+          "id": "c",
+          "text": "Wait until the next morning"
+        },
+        {
+          "id": "d",
+          "text": "Refuse food because iftar is discouraged"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Prompt iftar at the proper time follows the Prophet's teaching.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "Sahih al-Bukhari 1957",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_051",
+      "conceptId": "worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You accidentally drank water while genuinely forgetting that you were fasting. What should you do once you remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deliberately finish another bottle"
+        },
+        {
+          "id": "b",
+          "text": "Declare all future fasts invalid"
+        },
+        {
+          "id": "c",
+          "text": "Stop drinking and continue the fast"
+        },
+        {
+          "id": "d",
+          "text": "Keep eating until sunset"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Forgetful eating or drinking is treated differently from deliberately breaking a fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "Sahih al-Bukhari 1933",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_052",
+      "conceptId": "worship_fasting_conflict",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone tries to start an argument while you are fasting. Which response follows Prophetic guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insult them more loudly"
+        },
+        {
+          "id": "b",
+          "text": "Use the fast as an excuse to threaten them"
+        },
+        {
+          "id": "c",
+          "text": "Start a fight to prove your strength"
+        },
+        {
+          "id": "d",
+          "text": "Avoid fighting and say that you are fasting"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet taught fasting people to avoid abusive behavior and not join a fight.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1894",
+          "label": "Sahih al-Bukhari 1894",
+          "url": "https://sunnah.com/bukhari:1894"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_053",
+      "conceptId": "worship_fasting_conduct",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend suggests lying because you are hungry while fasting. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remain truthful despite the hunger"
+        },
+        {
+          "id": "b",
+          "text": "Lie because fasting permits it"
+        },
+        {
+          "id": "c",
+          "text": "Invent a story to entertain others"
+        },
+        {
+          "id": "d",
+          "text": "Treat hunger as permission for wrongdoing"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Fasting should be accompanied by guarding speech and conduct.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_054",
+      "conceptId": "worship_zakah_recipients",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are ready to distribute zakah. What should you check?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only how many followers they have"
+        },
+        {
+          "id": "b",
+          "text": "That the recipient fits an eligible category"
+        },
+        {
+          "id": "c",
+          "text": "Only whether they will praise you"
+        },
+        {
+          "id": "d",
+          "text": "Only whether they wear expensive clothes"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Zakah has defined categories of recipients; eligibility should be checked before payment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "60",
+          "label": "Quran 9:60",
+          "url": "https://quran.com/9/60"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_055",
+      "conceptId": "worship_charity_dignity",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You helped someone financially. Which action protects their dignity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Announce their private difficulties for praise"
+        },
+        {
+          "id": "b",
+          "text": "Demand public thanks every day"
+        },
+        {
+          "id": "c",
+          "text": "Avoid shaming them or repeatedly reminding them"
+        },
+        {
+          "id": "d",
+          "text": "Use the gift to insult them later"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Giving should not be followed by hurtful reminders or humiliation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_056",
+      "conceptId": "worship_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You feel worried and want Allah's help. What act of worship can you turn to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume Allah cannot hear you"
+        },
+        {
+          "id": "b",
+          "text": "Treat worry as a ban on supplication"
+        },
+        {
+          "id": "c",
+          "text": "Wait until you become famous before asking"
+        },
+        {
+          "id": "d",
+          "text": "Make dua to Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Dua is a way to turn to Allah, who hears His servants' supplication.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_057",
+      "conceptId": "worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have a quiet moment during the day. Which action is remembrance of Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reflectively recite words of praise to Allah"
+        },
+        {
+          "id": "b",
+          "text": "Spread a rumor"
+        },
+        {
+          "id": "c",
+          "text": "Boast about possessions"
+        },
+        {
+          "id": "d",
+          "text": "Mock someone else's worship"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Remembering Allah can be part of ordinary daily life, alongside the prescribed prayers.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "Quran 33:41",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_058",
+      "conceptId": "worship_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You receive a blessing you hoped for. What response reflects gratitude?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Claim you never need Allah"
+        },
+        {
+          "id": "b",
+          "text": "Thank Allah and use the blessing responsibly"
+        },
+        {
+          "id": "c",
+          "text": "Use it to belittle others"
+        },
+        {
+          "id": "d",
+          "text": "Deny that anything good happened"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Thankfulness recognizes Allah's favor and encourages a responsible response.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "7",
+          "label": "Quran 14:7",
+          "url": "https://quran.com/14/7"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_059",
+      "conceptId": "worship_prayer_learning",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are unsure how to perform a prayer correctly. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invent a method without learning"
+        },
+        {
+          "id": "b",
+          "text": "Give up because beginners make mistakes"
+        },
+        {
+          "id": "c",
+          "text": "Learn from a reliable teacher following the Prophet's guidance"
+        },
+        {
+          "id": "d",
+          "text": "Assume learning the prayer is unnecessary"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet instructed Muslims to pray as he prayed; reliable instruction helps us learn that example.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "631",
+          "label": "Sahih al-Bukhari 631",
+          "url": "https://sunnah.com/bukhari:631"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_060",
+      "conceptId": "worship_repentance_hope",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You feel ashamed of past sins and want to return to worship. Which response fits the Quran's message?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decide Allah's mercy can never reach you"
+        },
+        {
+          "id": "b",
+          "text": "Give up worship permanently"
+        },
+        {
+          "id": "c",
+          "text": "Continue sinning because repentance has no purpose"
+        },
+        {
+          "id": "d",
+          "text": "Repent and return to Allah with hope"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran calls sinners not to despair of Allah's mercy. Turn back sincerely rather than abandoning hope.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "Quran 39:53",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    }
+  ]
+}

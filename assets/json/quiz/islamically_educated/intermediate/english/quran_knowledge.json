@@ -1,0 +1,2267 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "categoryId": "quran_knowledge",
+  "title": "Quran Knowledge",
+  "description": "A question bank on Quran structure, revelation, narratives, teachings and careful reading, with explanations and source references.",
+  "questionCount": 60,
+  "difficultyCounts": {
+    "foundation": 30,
+    "intermediate": 15,
+    "advanced": 15
+  },
+  "difficultyMethod": "Editorial classification; not calibrated from learner response data. Advanced means greater reasoning depth within this subject, not a scholarly qualification.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Primary-text references checked during preparation; this is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "perAssessment": {
+      "foundation": 2,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Handle I am not sure as a UI action, not as a fifth answer option."
+  },
+  "questions": [
+    {
+      "id": "quran_001",
+      "conceptId": "quran_surah_count",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "How many surahs are in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "114"
+        },
+        {
+          "id": "b",
+          "text": "110"
+        },
+        {
+          "id": "c",
+          "text": "120"
+        },
+        {
+          "id": "d",
+          "text": "124"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran's standard surah index contains 114 chapters, beginning with Al-Fatihah and ending with An-Nas.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "quran_002",
+      "conceptId": "quran_surah_term",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In the structure of the Quran, what is a surah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A translation language"
+        },
+        {
+          "id": "b",
+          "text": "A chapter"
+        },
+        {
+          "id": "c",
+          "text": "A recitation recording"
+        },
+        {
+          "id": "d",
+          "text": "A type of commentary"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A surah is a chapter of the Quran. Each chapter contains ayahs, commonly called verses in English.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran Foundation: chapter and verse-key documentation",
+          "url": "https://api-docs.quran.com/docs/content_apis_versioned/4.0.0/verses-by-verse-key/"
+        }
+      ]
+    },
+    {
+      "id": "quran_003",
+      "conceptId": "quran_ayah_term",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In a Quran reference such as 12:4, what does the second number identify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The printed page in every edition"
+        },
+        {
+          "id": "b",
+          "text": "The number of words in the chapter"
+        },
+        {
+          "id": "c",
+          "text": "The ayah or verse within the surah"
+        },
+        {
+          "id": "d",
+          "text": "The year of revelation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Quran references use the surah number followed by the ayah number. Page numbers can differ between printed editions.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran Foundation: chapter and verse-key documentation",
+          "url": "https://api-docs.quran.com/docs/content_apis_versioned/4.0.0/verses-by-verse-key/"
+        }
+      ]
+    },
+    {
+      "id": "quran_004",
+      "conceptId": "quran_opening_surah",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which surah comes first in the Quran's standard written order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Baqarah"
+        },
+        {
+          "id": "b",
+          "text": "Al-'Alaq"
+        },
+        {
+          "id": "c",
+          "text": "An-Nas"
+        },
+        {
+          "id": "d",
+          "text": "Al-Fatihah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Fatihah is the first surah in the standard written order. This question concerns written order, not the chronology of revelation.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "quran_005",
+      "conceptId": "quran_closing_surah",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which surah comes last in the Quran's standard written order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An-Nas"
+        },
+        {
+          "id": "b",
+          "text": "Al-Falaq"
+        },
+        {
+          "id": "c",
+          "text": "Al-Ikhlas"
+        },
+        {
+          "id": "d",
+          "text": "Al-Kawthar"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An-Nas is surah 114, the final chapter in the standard written order.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "quran_006",
+      "conceptId": "quran_arabic_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Quran 12:2, in which language was the Quran revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hebrew"
+        },
+        {
+          "id": "b",
+          "text": "Arabic"
+        },
+        {
+          "id": "c",
+          "text": "Aramaic"
+        },
+        {
+          "id": "d",
+          "text": "Persian"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Yusuf 12:2 identifies the revelation as an Arabic Quran and links this with understanding.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "quran_007",
+      "conceptId": "quran_revelation_month",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which month is associated with the revelation of the Quran in Quran 2:185?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muharram"
+        },
+        {
+          "id": "b",
+          "text": "Rajab"
+        },
+        {
+          "id": "c",
+          "text": "Ramadan"
+        },
+        {
+          "id": "d",
+          "text": "Dhul-Hijjah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Baqarah 2:185 names Ramadan as the month in which the Quran was revealed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "quran_008",
+      "conceptId": "quran_revelation_night",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which night is named in Quran 97:1 in connection with the Quran being sent down?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The night before Eid al-Adha"
+        },
+        {
+          "id": "b",
+          "text": "The first night of Muharram"
+        },
+        {
+          "id": "c",
+          "text": "The night of every full moon"
+        },
+        {
+          "id": "d",
+          "text": "Laylat al-Qadr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Qadr 97:1 identifies Laylat al-Qadr as the night of the Quran's descent. The verse does not specify a numbered night of Ramadan.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "Quran 97:1",
+          "url": "https://quran.com/97/1"
+        }
+      ]
+    },
+    {
+      "id": "quran_009",
+      "conceptId": "quran_first_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which passage is associated with the beginning of revelation in Sahih al-Bukhari 3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The opening verses of Al-'Alaq"
+        },
+        {
+          "id": "b",
+          "text": "The opening verses of Al-Fatihah"
+        },
+        {
+          "id": "c",
+          "text": "The final verses of Al-Baqarah"
+        },
+        {
+          "id": "d",
+          "text": "The whole of An-Nas"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration of the first revelation includes the opening command to read or recite from Al-'Alaq 96:1-5.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "quran",
+          "surah": 96,
+          "ayahs": "1-5",
+          "label": "Quran 96:1-5",
+          "url": "https://quran.com/96/1-5"
+        }
+      ]
+    },
+    {
+      "id": "quran_010",
+      "conceptId": "quran_preservation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does Allah promise concerning the Reminder in Quran 15:9?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its preservation depends only on one human family."
+        },
+        {
+          "id": "b",
+          "text": "He will preserve it."
+        },
+        {
+          "id": "c",
+          "text": "It will be replaced whenever a ruler chooses."
+        },
+        {
+          "id": "d",
+          "text": "Only its chapter titles will remain."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Hijr 15:9 attributes the sending down and preservation of the Reminder to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "9",
+          "label": "Quran 15:9",
+          "url": "https://quran.com/15/9"
+        }
+      ]
+    },
+    {
+      "id": "quran_011",
+      "conceptId": "quran_criterion_name",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 25:1, which term describes the revelation as distinguishing right from wrong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Mizan: the Balance"
+        },
+        {
+          "id": "b",
+          "text": "Al-Bayt: the House"
+        },
+        {
+          "id": "c",
+          "text": "Al-Furqan: the Criterion"
+        },
+        {
+          "id": "d",
+          "text": "Al-Jabal: the Mountain"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Furqan 25:1 uses the term Furqan, commonly translated as the Criterion. The question asks about the term in this verse.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "1",
+          "label": "Quran 25:1",
+          "url": "https://quran.com/25/1"
+        }
+      ]
+    },
+    {
+      "id": "quran_012",
+      "conceptId": "quran_guidance",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "How does Quran 2:2 describe the Book for those mindful of Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As a collection of tribal rankings"
+        },
+        {
+          "id": "b",
+          "text": "As a record of business profits"
+        },
+        {
+          "id": "c",
+          "text": "As a list of future calendar dates"
+        },
+        {
+          "id": "d",
+          "text": "As guidance"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Baqarah 2:2 describes the Book as guidance for those who are mindful of Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "2",
+          "label": "Quran 2:2",
+          "url": "https://quran.com/2/2"
+        }
+      ]
+    },
+    {
+      "id": "quran_013",
+      "conceptId": "quran_seeking_refuge",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does Quran 16:98 instruct a person to seek when reciting the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah's protection from the rejected Satan"
+        },
+        {
+          "id": "b",
+          "text": "Public approval of their voice"
+        },
+        {
+          "id": "c",
+          "text": "A guarantee of worldly wealth"
+        },
+        {
+          "id": "d",
+          "text": "Permission from every listener"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An-Nahl 16:98 instructs the reciter to seek refuge in Allah from Satan.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "Quran 16:98",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "quran_014",
+      "conceptId": "quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What manner of Quran recitation is instructed in Quran 73:4?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rushing so that words merge indistinctly"
+        },
+        {
+          "id": "b",
+          "text": "Measured, deliberate recitation"
+        },
+        {
+          "id": "c",
+          "text": "Reciting only to impress an audience"
+        },
+        {
+          "id": "d",
+          "text": "Changing words to match a preferred rhythm"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Muzzammil 73:4 instructs measured recitation. Speed or performance should not replace attention to the words.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "Quran 73:4",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "quran_015",
+      "conceptId": "quran_reflection",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Quran 38:29, what should people do with the Book's verses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat reflection as unnecessary."
+        },
+        {
+          "id": "b",
+          "text": "Read only the chapter titles."
+        },
+        {
+          "id": "c",
+          "text": "Reflect on them and take heed."
+        },
+        {
+          "id": "d",
+          "text": "Use the verses only as decoration."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sad 38:29 connects the revelation of the blessed Book with reflection on its verses and taking heed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "quran_016",
+      "conceptId": "quran_ayatul_kursi_location",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which reference identifies Ayat al-Kursi?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fatihah 1:7"
+        },
+        {
+          "id": "b",
+          "text": "Al-Ikhlas 112:1"
+        },
+        {
+          "id": "c",
+          "text": "An-Nas 114:6"
+        },
+        {
+          "id": "d",
+          "text": "Al-Baqarah 2:255"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Ayat al-Kursi is Al-Baqarah 2:255. The title refers to this particular ayah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "quran_017",
+      "conceptId": "quran_no_compulsion",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which teaching appears in Quran 2:256?",
+      "options": [
+        {
+          "id": "a",
+          "text": "There is no compulsion in religion."
+        },
+        {
+          "id": "b",
+          "text": "Religious belief can be created by physical force."
+        },
+        {
+          "id": "c",
+          "text": "Family status removes the need for personal belief."
+        },
+        {
+          "id": "d",
+          "text": "Only wealthy people may learn religion."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Baqarah 2:256 states that there is no compulsion in religion and distinguishes right guidance from error.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "Quran 2:256",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "quran_018",
+      "conceptId": "quran_maryam_surah",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which Quran surah is named after Mary, the mother of Isa (Jesus)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Luqman"
+        },
+        {
+          "id": "b",
+          "text": "Maryam"
+        },
+        {
+          "id": "c",
+          "text": "Yusuf"
+        },
+        {
+          "id": "d",
+          "text": "Al-Kahf"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Maryam is the Arabic form of Mary and the name of surah 19.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 19,
+          "ayahs": "16",
+          "label": "Quran 19:16",
+          "url": "https://quran.com/19/16"
+        }
+      ]
+    },
+    {
+      "id": "quran_019",
+      "conceptId": "quran_yusuf_dream",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 12:4, which prophet tells his father about seeing eleven stars, the sun and the moon in a dream?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Musa (Moses)"
+        },
+        {
+          "id": "b",
+          "text": "Yunus (Jonah)"
+        },
+        {
+          "id": "c",
+          "text": "Yusuf (Joseph)"
+        },
+        {
+          "id": "d",
+          "text": "Sulayman (Solomon)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Yusuf 12:4 records Yusuf describing this dream to his father.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "Quran 12:4",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "quran_020",
+      "conceptId": "quran_moses_pharaoh",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 20:43, Musa and Harun are instructed to go to whom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Luqman"
+        },
+        {
+          "id": "b",
+          "text": "Dhul-Qarnayn"
+        },
+        {
+          "id": "c",
+          "text": "The king in Yusuf's story"
+        },
+        {
+          "id": "d",
+          "text": "Pharaoh"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Taha 20:43 directs Musa and Harun to Pharaoh because he had transgressed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "43",
+          "label": "Quran 20:43",
+          "url": "https://quran.com/20/43"
+        }
+      ]
+    },
+    {
+      "id": "quran_021",
+      "conceptId": "quran_people_cave",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which surah contains the account of the Companions of the Cave?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Kahf"
+        },
+        {
+          "id": "b",
+          "text": "Al-Fil"
+        },
+        {
+          "id": "c",
+          "text": "Al-Masad"
+        },
+        {
+          "id": "d",
+          "text": "Al-Kawthar"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Kahf introduces the Companions of the Cave in 18:9 and continues their account in the following verses.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "9-26",
+          "label": "Quran 18:9-26",
+          "url": "https://quran.com/18/9-26"
+        }
+      ]
+    },
+    {
+      "id": "quran_022",
+      "conceptId": "quran_luqman_advice",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 31:13, to whom does Luqman give advice against associating partners with Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pharaoh"
+        },
+        {
+          "id": "b",
+          "text": "His son"
+        },
+        {
+          "id": "c",
+          "text": "A visiting king"
+        },
+        {
+          "id": "d",
+          "text": "A group of merchants"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Luqman 31:13 presents Luqman advising his son. The wording clearly identifies their relationship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "13",
+          "label": "Quran 31:13",
+          "url": "https://quran.com/31/13"
+        }
+      ]
+    },
+    {
+      "id": "quran_023",
+      "conceptId": "quran_dhul_qarnayn_location",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In which surah is the account of Dhul-Qarnayn introduced?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maryam"
+        },
+        {
+          "id": "b",
+          "text": "Al-Mulk"
+        },
+        {
+          "id": "c",
+          "text": "Al-Kahf"
+        },
+        {
+          "id": "d",
+          "text": "Al-Falaq"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Kahf 18:83 introduces a question about Dhul-Qarnayn and begins the account that follows.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "83",
+          "label": "Quran 18:83",
+          "url": "https://quran.com/18/83"
+        }
+      ]
+    },
+    {
+      "id": "quran_024",
+      "conceptId": "quran_maryam_jesus",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 19:16-22, who receives the announcement of a son and then conceives him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The wife of Pharaoh"
+        },
+        {
+          "id": "b",
+          "text": "The queen of Sheba"
+        },
+        {
+          "id": "c",
+          "text": "The sister of Musa"
+        },
+        {
+          "id": "d",
+          "text": "Maryam (Mary)"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "These verses narrate the announcement to Maryam and her conception of the child. They form part of the Quran's account of Isa's birth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 19,
+          "ayahs": "16-22",
+          "label": "Quran 19:16-22",
+          "url": "https://quran.com/19/16-22"
+        }
+      ]
+    },
+    {
+      "id": "quran_025",
+      "conceptId": "quran_noah_ark",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which prophet is instructed to build an ark in Quran 11:37?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nuh (Noah)"
+        },
+        {
+          "id": "b",
+          "text": "Dawud (David)"
+        },
+        {
+          "id": "c",
+          "text": "Ilyas (Elijah)"
+        },
+        {
+          "id": "d",
+          "text": "Ishaq (Isaac)"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Hud 11:37 records the instruction to Nuh to build the ark under Allah's observation and instruction.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 11,
+          "ayahs": "36-37",
+          "label": "Quran 11:36-37",
+          "url": "https://quran.com/11/36-37"
+        }
+      ]
+    },
+    {
+      "id": "quran_026",
+      "conceptId": "quran_yunus_fish",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which messenger is named in Quran 37:139-142 in the account involving a great fish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yahya (John)"
+        },
+        {
+          "id": "b",
+          "text": "Yunus (Jonah)"
+        },
+        {
+          "id": "c",
+          "text": "Shu'ayb"
+        },
+        {
+          "id": "d",
+          "text": "Idris"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "As-Saffat 37:139 names Yunus; the following verses describe his departure, the ship and the fish.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 37,
+          "ayahs": "139-142",
+          "label": "Quran 37:139-142",
+          "url": "https://quran.com/37/139-142"
+        }
+      ]
+    },
+    {
+      "id": "quran_027",
+      "conceptId": "quran_kaabah_foundations",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Who raises the foundations of the House alongside Ibrahim in Quran 2:127?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ishaq (Isaac)"
+        },
+        {
+          "id": "b",
+          "text": "Ya'qub (Jacob)"
+        },
+        {
+          "id": "c",
+          "text": "Isma'il (Ishmael)"
+        },
+        {
+          "id": "d",
+          "text": "Yusuf (Joseph)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Baqarah 2:127 names Ibrahim and Isma'il together as they raise the foundations of the House.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "Quran 2:127",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "quran_028",
+      "conceptId": "quran_adam_prostration",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 2:34, the angels are instructed to prostrate before whom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nuh (Noah)"
+        },
+        {
+          "id": "b",
+          "text": "Ibrahim (Abraham)"
+        },
+        {
+          "id": "c",
+          "text": "Musa (Moses)"
+        },
+        {
+          "id": "d",
+          "text": "Adam"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Baqarah 2:34 names Adam in this command. The verse also describes Iblis's refusal and arrogance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "34",
+          "label": "Quran 2:34",
+          "url": "https://quran.com/2/34"
+        }
+      ]
+    },
+    {
+      "id": "quran_029",
+      "conceptId": "quran_qadr_value",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Quran 97:3, Laylat al-Qadr is better than what period?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A thousand months"
+        },
+        {
+          "id": "b",
+          "text": "A thousand days"
+        },
+        {
+          "id": "c",
+          "text": "A hundred months"
+        },
+        {
+          "id": "d",
+          "text": "A hundred nights"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Qadr 97:3 compares the night favourably with a thousand months. The unit in the verse is months, not days.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "Quran 97:3",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "quran_030",
+      "conceptId": "quran_charity_harm",
+      "categoryId": "quran_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does Quran 2:264 warn believers not to do to their charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give it quietly without seeking recognition."
+        },
+        {
+          "id": "b",
+          "text": "Invalidate it through reminders of generosity and hurtful treatment."
+        },
+        {
+          "id": "c",
+          "text": "Give to someone who cannot repay them."
+        },
+        {
+          "id": "d",
+          "text": "Spend from their lawful earnings."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Baqarah 2:264 warns against spoiling charity by reminding recipients of favours and causing hurt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "quran_031",
+      "conceptId": "quran_gradual_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone assumes the Quran was recited to the people as one complete public address. What does Quran 17:106 clarify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It was first revealed only as chapter titles."
+        },
+        {
+          "id": "b",
+          "text": "Its verses were composed by the audience after each gathering."
+        },
+        {
+          "id": "c",
+          "text": "It was revealed in stages for deliberate recitation to the people."
+        },
+        {
+          "id": "d",
+          "text": "Its message did not involve recitation to people."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Isra 17:106 describes successive revelation and deliberate recitation. This corrects the assumption of a single complete public delivery.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "106",
+          "label": "Quran 17:106",
+          "url": "https://quran.com/17/106"
+        }
+      ]
+    },
+    {
+      "id": "quran_032",
+      "conceptId": "quran_gradual_purpose",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Which purpose for revelation in stages is mentioned in Quran 25:32?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allowing listeners to choose which verses became revelation"
+        },
+        {
+          "id": "b",
+          "text": "Waiting for political leaders to approve the wording"
+        },
+        {
+          "id": "c",
+          "text": "Replacing the need to remember the revelation"
+        },
+        {
+          "id": "d",
+          "text": "Strengthening the Prophet's heart"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Furqan 25:32 answers an objection about gradual revelation by explaining its role in strengthening the Prophet's heart.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "32",
+          "label": "Quran 25:32",
+          "url": "https://quran.com/25/32"
+        }
+      ]
+    },
+    {
+      "id": "quran_033",
+      "conceptId": "quran_quotation_context",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A reader cites only the words 'do not approach prayer' from Quran 4:43. What essential condition from the verse have they omitted?",
+      "options": [
+        {
+          "id": "a",
+          "text": "While intoxicated, until one knows what one is saying"
+        },
+        {
+          "id": "b",
+          "text": "Whenever one has a responsibility to fulfil"
+        },
+        {
+          "id": "c",
+          "text": "Whenever other people can see one praying"
+        },
+        {
+          "id": "d",
+          "text": "After learning the meaning of the prayer"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The opening of An-Nisa 4:43 prohibits approaching prayer while intoxicated until one knows what one is saying. Removing that condition changes the meaning.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "43",
+          "label": "Quran 4:43",
+          "url": "https://quran.com/4/43"
+        }
+      ]
+    },
+    {
+      "id": "quran_034",
+      "conceptId": "quran_arabic_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A reader says the Quran's Arabic form makes understanding its message irrelevant. What feature of Quran 12:2 challenges that claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verse says its language prevents understanding."
+        },
+        {
+          "id": "b",
+          "text": "The verse explicitly connects the Arabic revelation with understanding."
+        },
+        {
+          "id": "c",
+          "text": "The verse limits understanding to knowing chapter numbers."
+        },
+        {
+          "id": "d",
+          "text": "The verse tells listeners to avoid asking what the message means."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Yusuf 12:2 identifies the Quran as Arabic so that its audience may understand. The language is not presented as a reason to disregard meaning.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "quran_035",
+      "conceptId": "quran_asking_informed_people",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "In Quran 16:43, how are people who do not know about the earlier messengers directed to resolve their lack of knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decide the matter by the size of a crowd."
+        },
+        {
+          "id": "b",
+          "text": "Treat every private dream as historical evidence."
+        },
+        {
+          "id": "c",
+          "text": "Ask those who know the earlier revelation."
+        },
+        {
+          "id": "d",
+          "text": "Assume that not knowing proves the messengers did not exist."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An-Nahl 16:43 concerns earlier messengers being men who received revelation and directs those who do not know to ask people of the Reminder.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "43",
+          "label": "Quran 16:43",
+          "url": "https://quran.com/16/43"
+        }
+      ]
+    },
+    {
+      "id": "quran_036",
+      "conceptId": "quran_parents_speech",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Which response best follows Quran 17:23-24 when an elderly parent becomes difficult to care for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use contemptuous language if care becomes inconvenient."
+        },
+        {
+          "id": "b",
+          "text": "Assume financial help permits humiliating speech."
+        },
+        {
+          "id": "c",
+          "text": "Treat old age as a reason to withdraw all kindness."
+        },
+        {
+          "id": "d",
+          "text": "Speak respectfully and respond with humility and mercy."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Isra 17:23-24 joins kind treatment of parents with respectful speech, humility, mercy and supplication for them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23-24",
+          "label": "Quran 17:23-24",
+          "url": "https://quran.com/17/23-24"
+        }
+      ]
+    },
+    {
+      "id": "quran_037",
+      "conceptId": "quran_justice_with_disliked_people",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person dislikes a group and wants to treat its members unfairly. Which instruction in Quran 5:8 addresses this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do not let hatred lead you away from justice."
+        },
+        {
+          "id": "b",
+          "text": "Justice is required only toward people you like."
+        },
+        {
+          "id": "c",
+          "text": "Dislike makes every accusation against a group reliable."
+        },
+        {
+          "id": "d",
+          "text": "Personal anger replaces the need for fairness."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Ma'idah 5:8 commands justice and warns that hostility must not lead to injustice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "quran_038",
+      "conceptId": "quran_mockery",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A group makes fun of another group, assuming they are superior. Which reason for restraint appears in Quran 49:11?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mockery becomes acceptable when many people join in."
+        },
+        {
+          "id": "b",
+          "text": "The people mocked may be better than those mocking them."
+        },
+        {
+          "id": "c",
+          "text": "A popular nickname is automatically respectful."
+        },
+        {
+          "id": "d",
+          "text": "Wealth gives a group permission to ridicule others."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Hujurat 49:11 prohibits ridicule and notes that those mocked may be better than those doing the mocking.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "quran_039",
+      "conceptId": "quran_suspicion_spying",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Which combination of conduct is specifically warned against in Quran 49:12?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Careful verification, privacy and reconciliation"
+        },
+        {
+          "id": "b",
+          "text": "Respectful disagreement, consultation and patience"
+        },
+        {
+          "id": "c",
+          "text": "Unfounded suspicion, spying and backbiting"
+        },
+        {
+          "id": "d",
+          "text": "Charity, modest speech and gratitude"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Hujurat 49:12 warns against much suspicion, spying and backbiting. The verse does not make every suspicion a proven fact.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "quran_040",
+      "conceptId": "quran_balanced_spending",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Which approach to spending matches Quran 25:67?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spend everything to gain attention regardless of need."
+        },
+        {
+          "id": "b",
+          "text": "Refuse every expense even when responsible care is required."
+        },
+        {
+          "id": "c",
+          "text": "Treat any level of spending as equally balanced."
+        },
+        {
+          "id": "d",
+          "text": "Avoid extravagance and miserliness, keeping a balanced course."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Furqan 25:67 describes a middle course between extravagance and stinginess.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "quran_041",
+      "conceptId": "quran_documenting_debt",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What practical safeguard does Quran 2:282 prescribe for a debt with a specified term?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Record it in writing."
+        },
+        {
+          "id": "b",
+          "text": "Leave the terms deliberately unclear."
+        },
+        {
+          "id": "c",
+          "text": "Let only the wealthier party decide the amount later."
+        },
+        {
+          "id": "d",
+          "text": "Assume friendship removes the need for clear terms."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Baqarah 2:282 gives detailed guidance on recording a debt for a fixed period. Clarity helps protect the parties' rights.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "282",
+          "label": "Quran 2:282",
+          "url": "https://quran.com/2/282"
+        }
+      ]
+    },
+    {
+      "id": "quran_042",
+      "conceptId": "quran_reconciliation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "According to Quran 49:9-10, what should be sought when groups of believers fight?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Permanent hostility without attempting settlement"
+        },
+        {
+          "id": "b",
+          "text": "Reconciliation with justice"
+        },
+        {
+          "id": "c",
+          "text": "Automatic support for whichever group is larger"
+        },
+        {
+          "id": "d",
+          "text": "Ignoring injustice to avoid any responsibility"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Hujurat 49:9-10 calls for reconciliation and justice. The call to peace does not remove the requirement of fairness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "9-10",
+          "label": "Quran 49:9-10",
+          "url": "https://quran.com/49/9-10"
+        }
+      ]
+    },
+    {
+      "id": "quran_043",
+      "conceptId": "quran_hardship_and_ease",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person reads Quran 94:5-6 as a promise that every problem must disappear immediately. Which reading is more careful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verses provide a calendar date for every person's relief."
+        },
+        {
+          "id": "b",
+          "text": "The verses say no believer can ever experience difficulty."
+        },
+        {
+          "id": "c",
+          "text": "The verses affirm ease with hardship without specifying an immediate timetable for each problem."
+        },
+        {
+          "id": "d",
+          "text": "The verses make patience and practical effort unnecessary."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Ash-Sharh 94:5-6 offers reassurance about ease with hardship. It does not give a fixed schedule for each individual's circumstances.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "Quran 94:5-6",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "quran_044",
+      "conceptId": "quran_lessons_in_narratives",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What purpose of Quranic accounts is highlighted in Quran 12:111?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entertaining people without any guidance"
+        },
+        {
+          "id": "b",
+          "text": "Giving readers permission to invent missing events"
+        },
+        {
+          "id": "c",
+          "text": "Replacing reflection with memorizing character names alone"
+        },
+        {
+          "id": "d",
+          "text": "Providing lessons for people of understanding"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Yusuf 12:111 identifies lessons in the accounts and describes guidance and mercy for believers.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "111",
+          "label": "Quran 12:111",
+          "url": "https://quran.com/12/111"
+        }
+      ]
+    },
+    {
+      "id": "quran_045",
+      "conceptId": "quran_wastefulness",
+      "categoryId": "quran_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone gives money generously but also wastes resources carelessly. Which distinction in Quran 17:26-27 matters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving people their due is encouraged, while wastefulness is condemned."
+        },
+        {
+          "id": "b",
+          "text": "Any spending labelled generous is automatically free from waste."
+        },
+        {
+          "id": "c",
+          "text": "Helping relatives is forbidden whenever it involves money."
+        },
+        {
+          "id": "d",
+          "text": "Wastefulness is defined only by whether an audience approves."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Isra 17:26-27 combines giving relatives, the needy and travellers their due with a prohibition of wastefulness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "26-27",
+          "label": "Quran 17:26-27",
+          "url": "https://quran.com/17/26-27"
+        }
+      ]
+    },
+    {
+      "id": "quran_046",
+      "conceptId": "quran_clear_verses",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "According to Quran 3:7, how are the clear verses related to the Book as a whole?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They may be ignored whenever an ambiguous passage is more exciting."
+        },
+        {
+          "id": "b",
+          "text": "They form its foundation."
+        },
+        {
+          "id": "c",
+          "text": "They apply only to the people who first heard them."
+        },
+        {
+          "id": "d",
+          "text": "They remove the need to believe in the rest of revelation."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ali 'Imran 3:7 identifies clear verses as the foundation of the Book and warns about pursuing ambiguity with a distorted purpose.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "7",
+          "label": "Quran 3:7",
+          "url": "https://quran.com/3/7"
+        }
+      ]
+    },
+    {
+      "id": "quran_047",
+      "conceptId": "quran_consistency_and_reflection",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Quran 4:82 invites reflection and mentions the absence of much inconsistency. Which use of the verse best follows its reasoning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume that thoughtful examination is prohibited."
+        },
+        {
+          "id": "b",
+          "text": "Resolve every difficulty by ignoring all surrounding verses."
+        },
+        {
+          "id": "c",
+          "text": "Read and examine the Quran thoughtfully rather than treating apparent difficulty as a reason to stop inquiry."
+        },
+        {
+          "id": "d",
+          "text": "Treat any reader's first impression as the final meaning."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An-Nisa 4:82 calls for reflection and connects the Quran's coherence with its divine origin. It encourages thoughtful consideration rather than superficial dismissal.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "82",
+          "label": "Quran 4:82",
+          "url": "https://quran.com/4/82"
+        }
+      ]
+    },
+    {
+      "id": "quran_048",
+      "conceptId": "quran_no_compulsion",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Read together, what do Quran 2:256 and 10:99 teach about trying to force people into belief?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They say physical force can establish sincere belief in every heart."
+        },
+        {
+          "id": "b",
+          "text": "They make another person's acceptance entirely controllable by a preacher."
+        },
+        {
+          "id": "c",
+          "text": "They require rejection of any peaceful explanation of religion."
+        },
+        {
+          "id": "d",
+          "text": "They reject compulsion and challenge the attempt to compel everyone to believe."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Baqarah 2:256 states that there is no compulsion in religion. Yunus 10:99 questions compelling people to become believers.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "Quran 2:256",
+          "url": "https://quran.com/2/256"
+        },
+        {
+          "type": "quran",
+          "surah": 10,
+          "ayahs": "99",
+          "label": "Quran 10:99",
+          "url": "https://quran.com/10/99"
+        }
+      ]
+    },
+    {
+      "id": "quran_049",
+      "conceptId": "quran_quotation_context",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone quotes only Quran 107:4 to claim that the Quran condemns everyone who prays. What is the main textual problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The following verses identify heedlessness, showing off and withholding small assistance in the description."
+        },
+        {
+          "id": "b",
+          "text": "The verse does not mention prayer at all."
+        },
+        {
+          "id": "c",
+          "text": "The following verses state that every form of prayer is forbidden."
+        },
+        {
+          "id": "d",
+          "text": "The chapter contains no further explanation after verse 4."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Ma'un 107:4-7 must be read together. Isolating the opening warning removes the description supplied by the subsequent verses.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "4-7",
+          "label": "Quran 107:4-7",
+          "url": "https://quran.com/107/4-7"
+        }
+      ]
+    },
+    {
+      "id": "quran_050",
+      "conceptId": "quran_clear_verses",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A reader selects an ambiguous passage only to support a pre-existing desire and refuses to consider clear passages. What warning in Quran 3:7 is relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any interpretation becomes sound if the reader feels strongly about it."
+        },
+        {
+          "id": "b",
+          "text": "Pursuing ambiguity to cause discord or force a desired interpretation is criticized."
+        },
+        {
+          "id": "c",
+          "text": "Ambiguous passages are the only verses with religious value."
+        },
+        {
+          "id": "d",
+          "text": "Clear passages may be set aside whenever they challenge a preference."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ali 'Imran 3:7 warns against the misuse of ambiguous passages. The question does not require choosing between scholarly positions on where to pause in the verse.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "7",
+          "label": "Quran 3:7",
+          "url": "https://quran.com/3/7"
+        }
+      ]
+    },
+    {
+      "id": "quran_051",
+      "conceptId": "quran_gradual_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Quran 97:1 mentions revelation on Laylat al-Qadr, while 17:106 describes revelation in stages. Which is the most careful initial conclusion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mention of a night proves that the Prophet delivered the entire Quran in one public sitting."
+        },
+        {
+          "id": "b",
+          "text": "The mention of stages proves that Laylat al-Qadr has no connection to revelation."
+        },
+        {
+          "id": "c",
+          "text": "Both descriptions must be considered; neither verse should simply be discarded to preserve an assumption."
+        },
+        {
+          "id": "d",
+          "text": "Readers must choose one verse as true and the other as false."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verses describe the Quran's descent and its successive revelation. They should be studied together rather than forced into an unsupported either-or claim.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "Quran 97:1",
+          "url": "https://quran.com/97/1"
+        },
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "106",
+          "label": "Quran 17:106",
+          "url": "https://quran.com/17/106"
+        }
+      ]
+    },
+    {
+      "id": "quran_052",
+      "conceptId": "quran_abrogation_claims",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Quran 2:106 discusses abrogation or replacement of a revelation. Does that alone allow a reader to declare any disliked instruction abrogated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; disliking an instruction is sufficient evidence that it has been abrogated."
+        },
+        {
+          "id": "b",
+          "text": "Yes; a popular online opinion automatically establishes abrogation."
+        },
+        {
+          "id": "c",
+          "text": "No; the verse denies that Allah can replace any revelation."
+        },
+        {
+          "id": "d",
+          "text": "No; the verse does not authorize personal preference to establish a specific claim of abrogation."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Baqarah 2:106 discusses Allah's authority over revelation. A specific claim that one ruling supersedes another requires evidence, not personal preference.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "106",
+          "label": "Quran 2:106",
+          "url": "https://quran.com/2/106"
+        }
+      ]
+    },
+    {
+      "id": "quran_053",
+      "conceptId": "quran_first_revelation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Why is it mistaken to infer that Al-Fatihah was the first passage revealed simply because it appears first in the mushaf?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Written order and revelation chronology are different, and the first-revelation narration points to Al-'Alaq."
+        },
+        {
+          "id": "b",
+          "text": "The first page of every book must record its earliest historical event."
+        },
+        {
+          "id": "c",
+          "text": "Al-Fatihah is not part of the Quran."
+        },
+        {
+          "id": "d",
+          "text": "The first-revelation narration identifies An-Nas instead."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The surah index begins with Al-Fatihah, while Sahih al-Bukhari 3 describes the opening revelation from Al-'Alaq. These concern different kinds of order.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com: standard surah index",
+          "url": "https://quran.com/"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "quran_054",
+      "conceptId": "quran_messenger_explanation",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone says the Quran gives the Messenger no role in explaining revelation. Which passage most directly challenges this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quran 12:4, which recounts Yusuf's dream."
+        },
+        {
+          "id": "b",
+          "text": "Quran 16:44, which assigns him the task of explaining what was sent down to people."
+        },
+        {
+          "id": "c",
+          "text": "Quran 18:83, which introduces Dhul-Qarnayn."
+        },
+        {
+          "id": "d",
+          "text": "Quran 97:3, which describes Laylat al-Qadr's value."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An-Nahl 16:44 explicitly connects the sending down of the Reminder with the Messenger explaining it to people so they may reflect.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "44",
+          "label": "Quran 16:44",
+          "url": "https://quran.com/16/44"
+        }
+      ]
+    },
+    {
+      "id": "quran_055",
+      "conceptId": "quran_lessons_in_narratives",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A storyteller adds invented dialogue to a Quranic account and presents the dialogue as Allah's revealed words. What distinction is essential?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An uplifting lesson automatically turns invented wording into revelation."
+        },
+        {
+          "id": "b",
+          "text": "Details become Quranic whenever the audience enjoys them."
+        },
+        {
+          "id": "c",
+          "text": "A teaching illustration must be distinguished from what the Quran actually states."
+        },
+        {
+          "id": "d",
+          "text": "Any dialogue associated with a prophet must appear in the Quran."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Yusuf 12:111 describes the revealed account as truth and guidance. A narrator's additions are not made Quranic by having a useful lesson.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "111",
+          "label": "Quran 12:111",
+          "url": "https://quran.com/12/111"
+        }
+      ]
+    },
+    {
+      "id": "quran_056",
+      "conceptId": "quran_responsibility_and_capacity",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone uses Quran 2:286 to claim that a believer will never experience exhaustion or need help. Which response is most careful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verse states that asking anyone for help is forbidden."
+        },
+        {
+          "id": "b",
+          "text": "The verse promises unlimited physical strength to every believer."
+        },
+        {
+          "id": "c",
+          "text": "The verse requires ignoring illness when evaluating one's capacity."
+        },
+        {
+          "id": "d",
+          "text": "The verse concerns responsibility within capacity; it does not promise that people never become tired or need support."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Baqarah 2:286 states that Allah does not burden a soul beyond its capacity. This should not be turned into a claim that fatigue or a need for help is impossible.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "286",
+          "label": "Quran 2:286",
+          "url": "https://quran.com/2/286"
+        }
+      ]
+    },
+    {
+      "id": "quran_057",
+      "conceptId": "quran_identifying_addressees",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A reader studies Quran 33:32 and ignores its opening address to the Prophet's wives. What should be checked before generalizing every detail?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Who is addressed and how the surrounding passage frames the instruction."
+        },
+        {
+          "id": "b",
+          "text": "Only whether the verse contains a memorable phrase."
+        },
+        {
+          "id": "c",
+          "text": "Whether the reader prefers the instruction to apply universally."
+        },
+        {
+          "id": "d",
+          "text": "Only the verse's position on a printed page."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Ahzab 33:32 explicitly addresses the Prophet's wives. Identifying the addressees and context is necessary before making interpretive claims about wider application.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "32-34",
+          "label": "Quran 33:32-34",
+          "url": "https://quran.com/33/32-34"
+        }
+      ]
+    },
+    {
+      "id": "quran_058",
+      "conceptId": "quran_oaths_distinction",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "In Quran 5:89, what distinction prevents the conclusion that every casual expression has identical consequences?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The distinction between oaths spoken indoors and outdoors"
+        },
+        {
+          "id": "b",
+          "text": "The distinction between unintentional oaths and deliberately binding oaths"
+        },
+        {
+          "id": "c",
+          "text": "The distinction between a wealthy speaker and a poor speaker"
+        },
+        {
+          "id": "d",
+          "text": "The distinction between short and long sentences"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Ma'idah 5:89 distinguishes unintentional oaths from deliberate ones and then discusses expiation. Specific personal cases require more detail than this quiz provides.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "89",
+          "label": "Quran 5:89",
+          "url": "https://quran.com/5/89"
+        }
+      ]
+    },
+    {
+      "id": "quran_059",
+      "conceptId": "quran_scholarly_humility",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "After reading Quran 20:114, a learner concludes that gaining some knowledge removes any need to keep learning. Which feature of the verse challenges that?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verse says knowledge has no role in understanding revelation."
+        },
+        {
+          "id": "b",
+          "text": "The verse makes every learner equally knowledgeable."
+        },
+        {
+          "id": "c",
+          "text": "The Prophet is instructed to ask his Lord for an increase in knowledge."
+        },
+        {
+          "id": "d",
+          "text": "The verse says uncertainty should always be hidden."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Taha 20:114 includes a supplication for increased knowledge. It supports humility and continuing to learn rather than claiming completeness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "Quran 20:114",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "quran_060",
+      "conceptId": "quran_hour_date_claim",
+      "categoryId": "quran_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone claims a Quran verse gives them the exact calendar date of the Hour. Which principle in Quran 7:187 most directly tests that claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The most popular prediction determines its timing."
+        },
+        {
+          "id": "b",
+          "text": "Anyone who knows Arabic automatically knows its date."
+        },
+        {
+          "id": "c",
+          "text": "The date is assigned by each generation's scholars."
+        },
+        {
+          "id": "d",
+          "text": "Knowledge of its timing belongs to Allah."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-A'raf 7:187 places knowledge of the Hour's timing with Allah and describes its sudden arrival. A claimed date requires scrutiny rather than automatic acceptance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "187",
+          "label": "Quran 7:187",
+          "url": "https://quran.com/7/187"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2286 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "categoryId": "seerah",
+  "title": "Seerah",
+  "description": "A question bank on the life of Prophet Muhammad (peace be upon him), covering revelation, migration, community life, major events and lessons, with explanations and primary-text references.",
+  "questionCount": 60,
+  "difficultyCounts": {
+    "foundation": 30,
+    "intermediate": 15,
+    "advanced": 15
+  },
+  "difficultyMethod": "Editorial classification; not calibrated from learner response data. Advanced means greater reasoning depth within this subject, not a scholarly qualification.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Primary-text references checked during preparation; this is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "perAssessment": {
+      "foundation": 2,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Handle I am not sure as a UI action, not as a fifth answer option."
+  },
+  "questions": [
+    {
+      "id": "seerah_001",
+      "conceptId": "seerah_hira",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In which cave did the Prophet Muhammad (peace be upon him) receive the opening revelation described in Sahih al-Bukhari 3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hira"
+        },
+        {
+          "id": "b",
+          "text": "Thawr"
+        },
+        {
+          "id": "c",
+          "text": "The Cave of the Sleepers"
+        },
+        {
+          "id": "d",
+          "text": "A cave near Jerusalem"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The first-revelation account places the encounter in Hira, where he had been spending time in worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "seerah_002",
+      "conceptId": "seerah_khadijah_support",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Who reassured the Prophet after his first encounter with revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hafsah"
+        },
+        {
+          "id": "b",
+          "text": "Khadijah"
+        },
+        {
+          "id": "c",
+          "text": "Umm Salamah"
+        },
+        {
+          "id": "d",
+          "text": "Aishah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Khadijah comforted him and recalled his care for relatives, vulnerable people and guests.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "seerah_003",
+      "conceptId": "seerah_waraqa",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Whom did Khadijah consult about the Prophet's experience of revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Lahab"
+        },
+        {
+          "id": "b",
+          "text": "Abu Jahl"
+        },
+        {
+          "id": "c",
+          "text": "Waraqah ibn Nawfal"
+        },
+        {
+          "id": "d",
+          "text": "Suraqah ibn Malik"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Khadijah took him to Waraqah, her cousin, who had knowledge of earlier scripture.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "seerah_004",
+      "conceptId": "seerah_age_revelation",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "At approximately what age did the Prophet begin receiving revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Twenty"
+        },
+        {
+          "id": "b",
+          "text": "Thirty"
+        },
+        {
+          "id": "c",
+          "text": "Sixty"
+        },
+        {
+          "id": "d",
+          "text": "Forty"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Anas's description in Sahih al-Bukhari 3547 places the beginning of revelation at forty years of age.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3547",
+          "label": "Sahih al-Bukhari 3547",
+          "url": "https://sunnah.com/bukhari:3547"
+        }
+      ]
+    },
+    {
+      "id": "seerah_005",
+      "conceptId": "seerah_public_warning",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "From which place did the Prophet call Quraysh when warning his close relatives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Safa"
+        },
+        {
+          "id": "b",
+          "text": "Mount Uhud"
+        },
+        {
+          "id": "c",
+          "text": "The plain of Arafat"
+        },
+        {
+          "id": "d",
+          "text": "The valley of Mina"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration of the public warning describes him ascending Al-Safa and calling the clans of Quraysh.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "seerah_006",
+      "conceptId": "seerah_hijrah_destination",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "To which city did the Prophet migrate from Makkah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taif"
+        },
+        {
+          "id": "b",
+          "text": "Madinah"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalem"
+        },
+        {
+          "id": "d",
+          "text": "Alexandria"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Hijrah account describes his departure from Makkah and arrival in Madinah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "seerah_007",
+      "conceptId": "seerah_cave_companion",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Who accompanied the Prophet in the cave during the migration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umar"
+        },
+        {
+          "id": "b",
+          "text": "Uthman"
+        },
+        {
+          "id": "c",
+          "text": "Abu Bakr"
+        },
+        {
+          "id": "d",
+          "text": "Ali"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Abu Bakr narrates his concern while with the Prophet in the cave and the Prophet's reassurance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "seerah_008",
+      "conceptId": "seerah_asma_provisions",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Who prepared provisions and used part of her waistband to tie them for the migration journey?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fatimah bint Muhammad"
+        },
+        {
+          "id": "b",
+          "text": "Umm Ayman"
+        },
+        {
+          "id": "c",
+          "text": "Safiyyah bint Huyayy"
+        },
+        {
+          "id": "d",
+          "text": "Asma bint Abi Bakr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The migration account identifies Asma's practical help with the travellers' provisions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "seerah_009",
+      "conceptId": "seerah_madinah_host",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "At whose home did the Prophet dismount on arriving in the central settlement of Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Ayyub al-Ansari"
+        },
+        {
+          "id": "b",
+          "text": "Abu Lahab"
+        },
+        {
+          "id": "c",
+          "text": "Heraclius"
+        },
+        {
+          "id": "d",
+          "text": "Waraqah ibn Nawfal"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Anas's arrival account describes the Prophet dismounting in the courtyard of Abu Ayyub's home.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3932",
+          "label": "Sahih al-Bukhari 3932",
+          "url": "https://sunnah.com/bukhari:3932"
+        }
+      ]
+    },
+    {
+      "id": "seerah_010",
+      "conceptId": "seerah_ansar_identity",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 9:100, which group is named alongside the Muhajirun among the early believers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Romans"
+        },
+        {
+          "id": "b",
+          "text": "The Ansar"
+        },
+        {
+          "id": "c",
+          "text": "The Persians"
+        },
+        {
+          "id": "d",
+          "text": "The people of Pharaoh"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse names the Muhajirun and Ansar. Ansar refers to the supporters from Madinah who helped the Muslim community.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "100",
+          "label": "Quran 9:100",
+          "url": "https://quran.com/9/100"
+        }
+      ]
+    },
+    {
+      "id": "seerah_011",
+      "conceptId": "seerah_badr",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which battle is explicitly named in Quran 3:123 as an occasion of Allah's help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uhud"
+        },
+        {
+          "id": "b",
+          "text": "Hunayn"
+        },
+        {
+          "id": "c",
+          "text": "Badr"
+        },
+        {
+          "id": "d",
+          "text": "Khaybar"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Ali Imran 3:123 explicitly names Badr when reminding believers of Allah's help.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "123",
+          "label": "Quran 3:123",
+          "url": "https://quran.com/3/123"
+        }
+      ]
+    },
+    {
+      "id": "seerah_012",
+      "conceptId": "seerah_uhud_archers",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "At Uhud, which companion commanded the archers whom the Prophet stationed at a designated position?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Ayyub al-Ansari"
+        },
+        {
+          "id": "b",
+          "text": "Zayd ibn Thabit"
+        },
+        {
+          "id": "c",
+          "text": "Waraqah ibn Nawfal"
+        },
+        {
+          "id": "d",
+          "text": "Abdullah ibn Jubayr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Bara's account names Abdullah ibn Jubayr as the commander of the archers and records their instructions to remain at their post.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4043",
+          "label": "Sahih al-Bukhari 4043",
+          "url": "https://sunnah.com/bukhari:4043"
+        }
+      ]
+    },
+    {
+      "id": "seerah_013",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which agreement is described in Sahih al-Bukhari 2731–2732?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The treaty of Hudaybiyyah"
+        },
+        {
+          "id": "b",
+          "text": "A trade agreement with Persia"
+        },
+        {
+          "id": "c",
+          "text": "A pact made after the Prophet's death"
+        },
+        {
+          "id": "d",
+          "text": "A treaty between Musa and Pharaoh"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The extended narration describes the journey, negotiations and agreement at Hudaybiyyah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "seerah_014",
+      "conceptId": "seerah_khaybar_banner",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Who received the banner from the Prophet in the well-known Khaybar narration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Lahab"
+        },
+        {
+          "id": "b",
+          "text": "Ali ibn Abi Talib"
+        },
+        {
+          "id": "c",
+          "text": "Suraqah ibn Malik"
+        },
+        {
+          "id": "d",
+          "text": "Waraqah ibn Nawfal"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Sahl ibn Sad's narration identifies Ali as the recipient of the banner at Khaybar.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2942",
+          "label": "Sahih al-Bukhari 2942",
+          "url": "https://sunnah.com/bukhari:2942"
+        }
+      ]
+    },
+    {
+      "id": "seerah_015",
+      "conceptId": "seerah_tabuk_absence",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which companion's truthful account of missing Tabuk is narrated at length in Sahih al-Bukhari 4418?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bilal ibn Rabah"
+        },
+        {
+          "id": "b",
+          "text": "Abu Dharr"
+        },
+        {
+          "id": "c",
+          "text": "Kab ibn Malik"
+        },
+        {
+          "id": "d",
+          "text": "Musab ibn Umayr"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Kab recounts his failure to join Tabuk, his truthful admission and the acceptance of his repentance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4418",
+          "label": "Sahih al-Bukhari 4418",
+          "url": "https://sunnah.com/bukhari:4418"
+        }
+      ]
+    },
+    {
+      "id": "seerah_016",
+      "conceptId": "seerah_conquest_idols",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "At the conquest of Makkah, what did the Prophet remove from around the Kabah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copies of the Quran"
+        },
+        {
+          "id": "b",
+          "text": "Palm trees planted by the Ansar"
+        },
+        {
+          "id": "c",
+          "text": "The walls of the Kabah"
+        },
+        {
+          "id": "d",
+          "text": "Idols"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Ibn Masud's narration describes the Prophet striking the idols around the Kabah while proclaiming the triumph of truth.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4287",
+          "label": "Sahih al-Bukhari 4287",
+          "url": "https://sunnah.com/bukhari:4287"
+        }
+      ]
+    },
+    {
+      "id": "seerah_017",
+      "conceptId": "seerah_farewell_pilgrimage",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does the expression Hajjat al-Wada refer to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Farewell Pilgrimage"
+        },
+        {
+          "id": "b",
+          "text": "The migration to Abyssinia"
+        },
+        {
+          "id": "c",
+          "text": "The first revelation"
+        },
+        {
+          "id": "d",
+          "text": "The treaty of Hudaybiyyah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The expression refers to the Prophet's Farewell Pilgrimage, described in pilgrimage narrations including Jabir's detailed account.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "Sahih Muslim 1218a",
+          "url": "https://sunnah.com/muslim:1218a"
+        }
+      ]
+    },
+    {
+      "id": "seerah_018",
+      "conceptId": "seerah_ibrahim_son",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which son of the Prophet is named in the narration about his tears at a child's death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ismail"
+        },
+        {
+          "id": "b",
+          "text": "Ibrahim"
+        },
+        {
+          "id": "c",
+          "text": "Yusuf"
+        },
+        {
+          "id": "d",
+          "text": "Yahya"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Anas describes the death of the Prophet's son Ibrahim and the Prophet's tears of mercy and grief.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "Sahih al-Bukhari 1303",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "seerah_019",
+      "conceptId": "seerah_home_service",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Aishah, what did the Prophet do at home?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refuse all household tasks"
+        },
+        {
+          "id": "b",
+          "text": "Spend every moment receiving official visitors"
+        },
+        {
+          "id": "c",
+          "text": "Help with his family's work"
+        },
+        {
+          "id": "d",
+          "text": "Require guests to do all domestic work"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Aishah describes him serving his family and going out when the call to prayer was heard.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5363",
+          "label": "Sahih al-Bukhari 5363",
+          "url": "https://sunnah.com/bukhari:5363"
+        }
+      ]
+    },
+    {
+      "id": "seerah_020",
+      "conceptId": "seerah_khadijah_friends",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "How did the Prophet continue to honour Khadijah's friendships after her death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He forbade anyone to mention her."
+        },
+        {
+          "id": "b",
+          "text": "He demanded that her friends leave Madinah."
+        },
+        {
+          "id": "c",
+          "text": "He treated loyalty to her as unnecessary."
+        },
+        {
+          "id": "d",
+          "text": "He sent portions of meat to her friends."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Aishah recalls his frequent remembrance of Khadijah and his gifts to her women friends.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3818",
+          "label": "Sahih al-Bukhari 3818",
+          "url": "https://sunnah.com/bukhari:3818"
+        }
+      ]
+    },
+    {
+      "id": "seerah_021",
+      "conceptId": "seerah_ramadan_review",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Who reviewed the Quran with the Prophet in Ramadan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jibril"
+        },
+        {
+          "id": "b",
+          "text": "Heraclius"
+        },
+        {
+          "id": "c",
+          "text": "Abu Lahab"
+        },
+        {
+          "id": "d",
+          "text": "The ruler of Persia"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Ibn Abbas describes Jibril meeting the Prophet in Ramadan to study the Quran with him.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "Sahih al-Bukhari 6",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "seerah_022",
+      "conceptId": "seerah_final_review",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Sahih al-Bukhari 4998, how many times was the Quran reviewed with the Prophet in the year of his death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Once"
+        },
+        {
+          "id": "b",
+          "text": "Twice"
+        },
+        {
+          "id": "c",
+          "text": "Three times"
+        },
+        {
+          "id": "d",
+          "text": "Ten times"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Abu Hurayrah reports an annual review, with two reviews in the Prophet's final year.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4998",
+          "label": "Sahih al-Bukhari 4998",
+          "url": "https://sunnah.com/bukhari:4998"
+        }
+      ]
+    },
+    {
+      "id": "seerah_023",
+      "conceptId": "seerah_heraclius_letter",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which ruler received the Prophet's letter discussed in the narration of Abu Sufyan's interview?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pharaoh"
+        },
+        {
+          "id": "b",
+          "text": "The king in Yusuf's story"
+        },
+        {
+          "id": "c",
+          "text": "Heraclius"
+        },
+        {
+          "id": "d",
+          "text": "Dhul-Qarnayn"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sahih al-Bukhari 7 records Heraclius questioning Abu Sufyan and hearing the Prophet's letter.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7",
+          "label": "Sahih al-Bukhari 7",
+          "url": "https://sunnah.com/bukhari:7"
+        }
+      ]
+    },
+    {
+      "id": "seerah_024",
+      "conceptId": "seerah_orphan_childhood",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which childhood circumstance is recalled in Quran 93:6 when addressing the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Growing up as a reigning king"
+        },
+        {
+          "id": "b",
+          "text": "Commanding an army as a child"
+        },
+        {
+          "id": "c",
+          "text": "Owning the treasury of Persia"
+        },
+        {
+          "id": "d",
+          "text": "Being an orphan"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Ad-Duha 93:6 recalls Allah finding him an orphan and giving him shelter.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "6",
+          "label": "Quran 93:6",
+          "url": "https://quran.com/93/6"
+        }
+      ]
+    },
+    {
+      "id": "seerah_025",
+      "conceptId": "seerah_qiblah_change",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 2:144, toward which sacred place is the Prophet instructed to turn in prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Masjid al-Haram"
+        },
+        {
+          "id": "b",
+          "text": "Mount Sinai"
+        },
+        {
+          "id": "c",
+          "text": "The palace of Heraclius"
+        },
+        {
+          "id": "d",
+          "text": "The cave of Hira"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Baqarah 2:144 records the instruction to turn toward Al-Masjid al-Haram.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "Quran 2:144",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "seerah_026",
+      "conceptId": "seerah_night_journey",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which destination is named alongside Al-Masjid al-Haram in Quran 17:1's account of the night journey?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mosque of Quba"
+        },
+        {
+          "id": "b",
+          "text": "Al-Masjid al-Aqsa"
+        },
+        {
+          "id": "c",
+          "text": "Mount Uhud"
+        },
+        {
+          "id": "d",
+          "text": "The valley of Hunayn"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Isra 17:1 names the journey from Al-Masjid al-Haram to Al-Masjid al-Aqsa.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "1",
+          "label": "Quran 17:1",
+          "url": "https://quran.com/17/1"
+        }
+      ]
+    },
+    {
+      "id": "seerah_027",
+      "conceptId": "seerah_hunayn",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which battle is named in Quran 9:25 when explaining that large numbers did not by themselves ensure success?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Badr"
+        },
+        {
+          "id": "b",
+          "text": "Tabuk"
+        },
+        {
+          "id": "c",
+          "text": "Hunayn"
+        },
+        {
+          "id": "d",
+          "text": "Khaybar"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "At-Tawbah 9:25 names Hunayn and recalls that the believers' impressive numbers did not initially benefit them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "25",
+          "label": "Quran 9:25",
+          "url": "https://quran.com/9/25"
+        }
+      ]
+    },
+    {
+      "id": "seerah_028",
+      "conceptId": "seerah_public_warning",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which uncle opposed the Prophet's warning at Al-Safa in the narration of Sahih al-Bukhari 4770?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hamzah"
+        },
+        {
+          "id": "b",
+          "text": "Al-Abbas"
+        },
+        {
+          "id": "c",
+          "text": "Abu Talib"
+        },
+        {
+          "id": "d",
+          "text": "Abu Lahab"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration records Abu Lahab's hostile response to the public warning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "seerah_029",
+      "conceptId": "seerah_ashura_madinah",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "After arriving in Madinah, which prophet's deliverance was mentioned in the account of fasting on Ashura?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Musa"
+        },
+        {
+          "id": "b",
+          "text": "Yusuf"
+        },
+        {
+          "id": "c",
+          "text": "Dawud"
+        },
+        {
+          "id": "d",
+          "text": "Sulayman"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Ibn Abbas's account connects the observed fast with Allah granting Musa and the Israelites deliverance from Pharaoh.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3943",
+          "label": "Sahih al-Bukhari 3943",
+          "url": "https://sunnah.com/bukhari:3943"
+        }
+      ]
+    },
+    {
+      "id": "seerah_030",
+      "conceptId": "seerah_monday_death",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Aishah's answer in Sahih al-Bukhari 1387, on which day of the week did the Prophet die?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Friday"
+        },
+        {
+          "id": "b",
+          "text": "Monday"
+        },
+        {
+          "id": "c",
+          "text": "Saturday"
+        },
+        {
+          "id": "d",
+          "text": "Thursday"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah's answer identifies Monday as the day of the Prophet's death. This question does not ask for a disputed calendar date.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1387",
+          "label": "Sahih al-Bukhari 1387",
+          "url": "https://sunnah.com/bukhari:1387"
+        }
+      ]
+    },
+    {
+      "id": "seerah_031",
+      "conceptId": "seerah_khadijah_support",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Why did Khadijah's reassurance after the first revelation involve more than a general expression of sympathy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She claimed kindness removed any need for revelation."
+        },
+        {
+          "id": "b",
+          "text": "She promised he would never face opposition."
+        },
+        {
+          "id": "c",
+          "text": "She pointed to his established care for people as grounds for confidence in Allah's help."
+        },
+        {
+          "id": "d",
+          "text": "She said public wealth was the only sign of divine favour."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Her reassurance recalled concrete qualities of character, including maintaining family ties and helping people in distress.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "seerah_032",
+      "conceptId": "seerah_hijrah_destination",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "The migration account mentions preparations, provisions and a hired guide. Which conclusion fits these details?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trust in Allah required rejecting every practical precaution."
+        },
+        {
+          "id": "b",
+          "text": "A guide replaced the need for trust in Allah."
+        },
+        {
+          "id": "c",
+          "text": "Planning meant the travellers were certain no danger existed."
+        },
+        {
+          "id": "d",
+          "text": "Trust in Allah was accompanied by practical planning."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The account presents purposeful arrangements alongside reliance on Allah; these are not treated as opposites.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "seerah_033",
+      "conceptId": "seerah_cave_companion",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What best captures the Prophet's response when Abu Bakr feared discovery in the cave?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reassurance grounded in Allah's presence and support"
+        },
+        {
+          "id": "b",
+          "text": "A claim that no pursuer had come near them"
+        },
+        {
+          "id": "c",
+          "text": "An instruction to abandon belief because of danger"
+        },
+        {
+          "id": "d",
+          "text": "A promise that no believer would ever feel afraid again"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration records reassurance in a real moment of danger, rather than denying the existence of that danger.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "seerah_034",
+      "conceptId": "seerah_uhud_archers",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What made the archers' departure from their position at Uhud a failure to follow the Prophet's instruction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He had ordered them to follow the first person who left."
+        },
+        {
+          "id": "b",
+          "text": "He had told them to remain even if the battle appeared to turn decisively."
+        },
+        {
+          "id": "c",
+          "text": "He had given no instructions about leaving."
+        },
+        {
+          "id": "d",
+          "text": "He had made collecting spoils their only responsibility."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The order covered contrasting battlefield outcomes, so apparent success did not cancel it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4043",
+          "label": "Sahih al-Bukhari 4043",
+          "url": "https://sunnah.com/bukhari:4043"
+        }
+      ]
+    },
+    {
+      "id": "seerah_035",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "At Hudaybiyyah, how did Umm Salamah help when the companions were slow to act on the instruction to end ihram?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She advised abandoning the agreement secretly."
+        },
+        {
+          "id": "b",
+          "text": "She instructed the companions to invent a new pilgrimage ritual."
+        },
+        {
+          "id": "c",
+          "text": "She advised the Prophet to go out and perform the actions himself."
+        },
+        {
+          "id": "d",
+          "text": "She said consultation had no place in resolving the difficulty."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The narration describes her practical advice and the companions following the Prophet's example once he acted.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "seerah_036",
+      "conceptId": "seerah_tabuk_absence",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What distinguished Kab ibn Malik's explanation for not joining Tabuk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He blamed a journey he had never taken."
+        },
+        {
+          "id": "b",
+          "text": "He claimed illness despite knowing he was healthy."
+        },
+        {
+          "id": "c",
+          "text": "He denied that he had been expected to join."
+        },
+        {
+          "id": "d",
+          "text": "He admitted that he had no valid excuse instead of inventing one."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Kab's account centres on truthful admission despite the immediate difficulty it brought.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4418",
+          "label": "Sahih al-Bukhari 4418",
+          "url": "https://sunnah.com/bukhari:4418"
+        }
+      ]
+    },
+    {
+      "id": "seerah_037",
+      "conceptId": "seerah_taif_mercy",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "After severe rejection, the angel of the mountains offered to crush the people between the mountains. How did the Prophet respond?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He hoped their descendants would worship Allah alone."
+        },
+        {
+          "id": "b",
+          "text": "He demanded that all their descendants also be destroyed."
+        },
+        {
+          "id": "c",
+          "text": "He declared that no one from their community could ever believe."
+        },
+        {
+          "id": "d",
+          "text": "He accepted destruction because every rejection required it."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Aishah's narration records a response of restraint and hope rather than the offered destruction.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "seerah_038",
+      "conceptId": "seerah_ibrahim_son",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What does the Prophet's response to Ibrahim's death show about grief?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faith makes every tear a sign of disbelief."
+        },
+        {
+          "id": "b",
+          "text": "Tears and sadness can coexist with speech that pleases Allah."
+        },
+        {
+          "id": "c",
+          "text": "Parents must pretend they feel no loss."
+        },
+        {
+          "id": "d",
+          "text": "Grief requires speaking resentfully about Allah."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration joins heartfelt sorrow with restraint in what is said.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "Sahih al-Bukhari 1303",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "seerah_039",
+      "conceptId": "seerah_ease_condition",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Aishah says the Prophet chose the easier of two matters. What condition is essential to that description?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The easier option always brought more money."
+        },
+        {
+          "id": "b",
+          "text": "The easier option had to impress the largest crowd."
+        },
+        {
+          "id": "c",
+          "text": "The easier option did not involve sin."
+        },
+        {
+          "id": "d",
+          "text": "The easier option could ignore every religious limit."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The narration explicitly limits this preference to choices that were not sinful.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "Sahih al-Bukhari 3560",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "seerah_040",
+      "conceptId": "seerah_personal_retaliation",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "According to Aishah's description, how did the Prophet deal with personal injury or offence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He always retaliated more harshly than the injury."
+        },
+        {
+          "id": "b",
+          "text": "He treated every personal slight as a reason for warfare."
+        },
+        {
+          "id": "c",
+          "text": "He allowed anger to replace all religious limits."
+        },
+        {
+          "id": "d",
+          "text": "He did not seek revenge merely for himself."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Her description distinguishes personal revenge from the matter of Allah's limits being violated.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "Sahih al-Bukhari 3560",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "seerah_041",
+      "conceptId": "seerah_farewell_rights",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "In the Farewell Pilgrimage address reported by Jabir, which responsibilities toward women were emphasized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treating them with awareness of Allah and providing food and clothing appropriately"
+        },
+        {
+          "id": "b",
+          "text": "Treating financial care as unnecessary"
+        },
+        {
+          "id": "c",
+          "text": "Making harshness the measure of family leadership"
+        },
+        {
+          "id": "d",
+          "text": "Withholding basic care whenever convenient"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The address includes concrete obligations of care, rather than reducing family responsibility to a title.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "Sahih Muslim 1218a",
+          "url": "https://sunnah.com/muslim:1218a"
+        }
+      ]
+    },
+    {
+      "id": "seerah_042",
+      "conceptId": "seerah_transmit_message",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What responsibility did the Prophet give those present in the Farewell Pilgrimage address reported by Abu Bakrah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep the address secret from later Muslims."
+        },
+        {
+          "id": "b",
+          "text": "Convey the message to those who were absent."
+        },
+        {
+          "id": "c",
+          "text": "Pass it on only if they added a new story."
+        },
+        {
+          "id": "d",
+          "text": "Assume no absent person could understand it."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The address directs those present to transmit what they heard and notes that a later recipient may understand it well.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4406",
+          "label": "Sahih al-Bukhari 4406",
+          "url": "https://sunnah.com/bukhari:4406"
+        }
+      ]
+    },
+    {
+      "id": "seerah_043",
+      "conceptId": "seerah_leadership_gentleness",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Quran 3:159 describes gentleness and consultation in the Prophet's leadership. What outcome does it associate with harshness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "People would automatically become more sincere."
+        },
+        {
+          "id": "b",
+          "text": "Consultation would become unnecessary."
+        },
+        {
+          "id": "c",
+          "text": "People would have dispersed from around him."
+        },
+        {
+          "id": "d",
+          "text": "Every disagreement would disappear."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse connects merciful conduct with community cohesion and instructs consultation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "Quran 3:159",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "seerah_044",
+      "conceptId": "seerah_mosque_community",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What did the Prophet's participation in building the mosque after arriving in Madinah demonstrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A refusal to take part in ordinary labour"
+        },
+        {
+          "id": "b",
+          "text": "A rule that only visitors could build places of worship"
+        },
+        {
+          "id": "c",
+          "text": "An instruction to postpone all community life indefinitely"
+        },
+        {
+          "id": "d",
+          "text": "Shared practical work in establishing the community"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Anas's arrival narration describes the mosque's construction and the Prophet joining in carrying building materials.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3932",
+          "label": "Sahih al-Bukhari 3932",
+          "url": "https://sunnah.com/bukhari:3932"
+        }
+      ]
+    },
+    {
+      "id": "seerah_045",
+      "conceptId": "seerah_khaybar_banner",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "In the Khaybar banner narration, what instruction accompanied the mission given to Ali?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invite the people to Islam and explain their duties toward Allah."
+        },
+        {
+          "id": "b",
+          "text": "Treat guidance as less important than personal recognition."
+        },
+        {
+          "id": "c",
+          "text": "Assume no explanation of the message was needed."
+        },
+        {
+          "id": "d",
+          "text": "Promise that worldly payment alone would establish belief."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration highlights invitation and guidance, including the value of one person being guided.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2942",
+          "label": "Sahih al-Bukhari 2942",
+          "url": "https://sunnah.com/bukhari:2942"
+        }
+      ]
+    },
+    {
+      "id": "seerah_046",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Some companions found the Hudaybiyyah terms difficult to accept. What is the soundest lesson about evaluating the agreement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every agreement that feels difficult must be rejected."
+        },
+        {
+          "id": "b",
+          "text": "Immediate discomfort did not by itself establish that the Prophet's decision was mistaken."
+        },
+        {
+          "id": "c",
+          "text": "The companions' distress proved they had no faith at all."
+        },
+        {
+          "id": "d",
+          "text": "Any later leader's treaty must automatically have the same authority as a prophetic decision."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The account records genuine distress alongside the Prophet's commitment to the agreement. The lesson does not make every later political decision infallible.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "seerah_047",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "In the Hudaybiyyah account, Abu Jandal's arrival created an especially painful test. Which tension is central to understanding the episode?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A disagreement over whether prayer existed"
+        },
+        {
+          "id": "b",
+          "text": "A choice between two unrelated trade routes"
+        },
+        {
+          "id": "c",
+          "text": "Concern for a persecuted believer alongside commitment to negotiated terms"
+        },
+        {
+          "id": "d",
+          "text": "A dispute about who had memorized more poetry"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The episode must be read within the negotiations and the Prophet's response, rather than reduced to indifference toward suffering.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "seerah_048",
+      "conceptId": "seerah_tabuk_absence",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Kab's repentance was not followed by immediate public relief. Which conclusion avoids misreading his account?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repentance is genuine only when consequences end the same day."
+        },
+        {
+          "id": "b",
+          "text": "His honesty guaranteed that no discipline could follow."
+        },
+        {
+          "id": "c",
+          "text": "The delay proved that Allah never accepts serious repentance."
+        },
+        {
+          "id": "d",
+          "text": "A period of painful waiting did not mean that truthful repentance was pointless."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His narrative ends with acceptance after a difficult interval, distinguishing sincere repentance from instant removal of consequences.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4418",
+          "label": "Sahih al-Bukhari 4418",
+          "url": "https://sunnah.com/bukhari:4418"
+        }
+      ]
+    },
+    {
+      "id": "seerah_049",
+      "conceptId": "seerah_tabuk_absence",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "During Kab's isolation, a foreign ruler offered him an alternative allegiance. Why is his rejection significant in the narrative?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He refused an apparently attractive escape that would compromise his loyalty."
+        },
+        {
+          "id": "b",
+          "text": "He proved that every letter from outside Arabia was forged."
+        },
+        {
+          "id": "c",
+          "text": "He established that reading any foreign correspondence was forbidden."
+        },
+        {
+          "id": "d",
+          "text": "He showed that isolation removes all moral responsibility."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Kab recognized the invitation as another trial and destroyed the letter rather than using it to escape the consequences of his failure.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4418",
+          "label": "Sahih al-Bukhari 4418",
+          "url": "https://sunnah.com/bukhari:4418"
+        }
+      ]
+    },
+    {
+      "id": "seerah_050",
+      "conceptId": "seerah_conquest_sanctuary",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone argues that the conquest gave everyone a permanent licence to fight in Makkah. What distinction did the Prophet expressly make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The conquest permanently ended the city's sacred status."
+        },
+        {
+          "id": "b",
+          "text": "His exceptional permission was limited and did not remove Makkah's continuing sanctity."
+        },
+        {
+          "id": "c",
+          "text": "Any person could claim the same exception without evidence."
+        },
+        {
+          "id": "d",
+          "text": "The city's sanctity depended entirely on a later ruler's preference."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Abu Shurayh's report warns against generalizing the Prophet's exceptional permission into an unrestricted licence.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4295",
+          "label": "Sahih al-Bukhari 4295",
+          "url": "https://sunnah.com/bukhari:4295"
+        }
+      ]
+    },
+    {
+      "id": "seerah_051",
+      "conceptId": "seerah_taif_mercy",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "What conclusion goes beyond the report about the Prophet's restraint after rejection near Taif?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That he declined the offered destruction"
+        },
+        {
+          "id": "b",
+          "text": "That he hoped for future generations who would worship Allah"
+        },
+        {
+          "id": "c",
+          "text": "That the report alone proves there can never be any lawful response to wrongdoing in any circumstance"
+        },
+        {
+          "id": "d",
+          "text": "That rejection did not eliminate his concern for people's guidance"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report demonstrates a particular act of mercy. Turning it into a universal legal conclusion without considering other evidence exceeds what this episode alone establishes.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "seerah_052",
+      "conceptId": "seerah_home_service",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone says public religious leadership made household service beneath the Prophet's dignity. Which response best uses Aishah's report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The report proves household work was his only activity."
+        },
+        {
+          "id": "b",
+          "text": "The report says only people without public responsibilities should help."
+        },
+        {
+          "id": "c",
+          "text": "The report makes service to family incompatible with worship."
+        },
+        {
+          "id": "d",
+          "text": "His own practice directly challenges the claim: he served his family and attended prayer."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Aishah's description places domestic service and worship within the same daily life, undermining the claimed conflict.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5363",
+          "label": "Sahih al-Bukhari 5363",
+          "url": "https://sunnah.com/bukhari:5363"
+        }
+      ]
+    },
+    {
+      "id": "seerah_053",
+      "conceptId": "seerah_farewell_pilgrimage",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A social-media post combines several farewell-address reports into one long quotation. What is the most accurate way to present it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identify the sources for each passage and label a combined presentation as a compilation."
+        },
+        {
+          "id": "b",
+          "text": "Attribute every sentence to one hadith number without checking."
+        },
+        {
+          "id": "c",
+          "text": "Assume all popular versions have identical wording."
+        },
+        {
+          "id": "d",
+          "text": "Add inspiring sentences and keep quotation marks around the whole text."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Jabir and Abu Bakrah transmit distinct reports. A compiled summary must not be presented as the exact uninterrupted wording of one narration.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "Sahih Muslim 1218a",
+          "url": "https://sunnah.com/muslim:1218a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4406",
+          "label": "Sahih al-Bukhari 4406",
+          "url": "https://sunnah.com/bukhari:4406"
+        }
+      ]
+    },
+    {
+      "id": "seerah_054",
+      "conceptId": "seerah_public_warning",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "At Al-Safa, the audience acknowledged the Prophet's truthfulness before some rejected his warning. What does this distinction show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every listener immediately accepted Islam."
+        },
+        {
+          "id": "b",
+          "text": "Acknowledging someone's honesty does not necessarily mean accepting the message they bring."
+        },
+        {
+          "id": "c",
+          "text": "The audience said he had always been dishonest."
+        },
+        {
+          "id": "d",
+          "text": "The warning concerned only a military attack and had no religious purpose."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration distinguishes recognition of his truthful character from the subsequent response to his warning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "seerah_055",
+      "conceptId": "seerah_leadership_gentleness",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Quran 3:159 joins pardon, seeking forgiveness, consultation and reliance on Allah. Which leadership response best reflects this combination after a setback?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat a setback as permission to abandon all consultation."
+        },
+        {
+          "id": "b",
+          "text": "Assume mercy prevents any decision from being made."
+        },
+        {
+          "id": "c",
+          "text": "Address failures while maintaining mercy, consultation and trust in Allah."
+        },
+        {
+          "id": "d",
+          "text": "Replace reliance on Allah with confidence in numbers alone."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse holds these responsibilities together; none cancels the others.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "Quran 3:159",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "seerah_056",
+      "conceptId": "seerah_hunayn",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "How does Quran 9:25 correct the assumption that numerical superiority guarantees success?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It states that preparing resources is always forbidden."
+        },
+        {
+          "id": "b",
+          "text": "It claims the believers never felt fear."
+        },
+        {
+          "id": "c",
+          "text": "It makes defeat proof that every member of a community is insincere."
+        },
+        {
+          "id": "d",
+          "text": "It recalls that impressive numbers at Hunayn did not initially protect the believers."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse challenges reliance on numbers as a guarantee. It does not abolish practical preparation or authorize judging every person's sincerity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "25",
+          "label": "Quran 9:25",
+          "url": "https://quran.com/9/25"
+        }
+      ]
+    },
+    {
+      "id": "seerah_057",
+      "conceptId": "seerah_madinah_brotherhood",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Quran 59:9 praises the receiving community's generosity even amid need. Which conclusion best preserves the point of this praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their support involved real preference for others despite personal need."
+        },
+        {
+          "id": "b",
+          "text": "They were generous only because they had no needs of their own."
+        },
+        {
+          "id": "c",
+          "text": "The passage praises envy of the newcomers' gifts."
+        },
+        {
+          "id": "d",
+          "text": "It says the newcomers needed no assistance."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse describes affection for the emigrants and generosity despite need, giving substance to the idea of support.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "9",
+          "label": "Quran 59:9",
+          "url": "https://quran.com/59/9"
+        }
+      ]
+    },
+    {
+      "id": "seerah_058",
+      "conceptId": "seerah_final_review",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "The final-year report says the Quran was reviewed twice and the Prophet's itikaf lasted twenty days. Which claim is directly supported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every Muslim must perform twenty days of itikaf every year."
+        },
+        {
+          "id": "b",
+          "text": "His final year included an increased review and a longer retreat than his usual annual practice."
+        },
+        {
+          "id": "c",
+          "text": "The Quran was reviewed only after the Prophet's death."
+        },
+        {
+          "id": "d",
+          "text": "The report gives an exact date for the first revelation."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration reports his practice. A universal obligation or an unrelated historical date cannot be established merely from these details.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4998",
+          "label": "Sahih al-Bukhari 4998",
+          "url": "https://sunnah.com/bukhari:4998"
+        }
+      ]
+    },
+    {
+      "id": "seerah_059",
+      "conceptId": "seerah_prophet_mortality",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "After the Prophet's death, Quran 3:144 was recited in the account of Abu Bakr's address. Which distinction was central?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Messenger's death made every previous teaching false."
+        },
+        {
+          "id": "b",
+          "text": "The community could no longer worship Allah."
+        },
+        {
+          "id": "c",
+          "text": "The Messenger's death does not mean that Allah dies or that worship of Allah ends."
+        },
+        {
+          "id": "d",
+          "text": "All messengers had been exempt from death."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report recalls Abu Bakr redirecting the community to Allah and reciting the verse about the Messenger's mortality.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4452",
+          "label": "Sahih al-Bukhari 4452",
+          "url": "https://sunnah.com/bukhari:4452"
+        },
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "144",
+          "label": "Quran 3:144",
+          "url": "https://quran.com/3/144"
+        }
+      ]
+    },
+    {
+      "id": "seerah_060",
+      "conceptId": "seerah_chronology_basics",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Which sequence correctly orders these major events in the Prophet's life?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Migration to Madinah, first revelation, Farewell Pilgrimage, Hudaybiyyah"
+        },
+        {
+          "id": "b",
+          "text": "Hudaybiyyah, first revelation, migration to Madinah, Farewell Pilgrimage"
+        },
+        {
+          "id": "c",
+          "text": "Farewell Pilgrimage, Hudaybiyyah, migration to Madinah, first revelation"
+        },
+        {
+          "id": "d",
+          "text": "First revelation, migration to Madinah, Hudaybiyyah, Farewell Pilgrimage"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The first revelation belongs to the Makkan period; migration begins the Madinan period; Hudaybiyyah precedes the Farewell Pilgrimage. The linked reports document these distinct stages.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "Sahih Muslim 1218a",
+          "url": "https://sunnah.com/muslim:1218a"
+        }
+      ]
+    }
+  ]
+}

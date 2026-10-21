@@ -1,0 +1,2286 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "categoryId": "everyday_worship",
+  "title": "Everyday Worship",
+  "description": "A question bank on purification, prayer, fasting, charity, supplication and remembrance, with practical scenarios and primary-text references. Focuses on broadly shared Sunni teachings; detailed school-specific rulings and individual fatwas are outside its scope.",
+  "questionCount": 60,
+  "difficultyCounts": {
+    "foundation": 30,
+    "intermediate": 15,
+    "advanced": 15
+  },
+  "difficultyMethod": "Editorial classification; not calibrated from learner response data. Advanced means greater reasoning depth within this subject, not a scholarly qualification.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Primary-text references checked during preparation; this is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "perAssessment": {
+      "foundation": 2,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Handle I am not sure as a UI action, not as a fifth answer option."
+  },
+  "questions": [
+    {
+      "id": "worship_001",
+      "conceptId": "worship_five_prayers",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "How many obligatory daily prayers are prescribed in the narration of Sahih al-Bukhari 46?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Five"
+        },
+        {
+          "id": "b",
+          "text": "Three"
+        },
+        {
+          "id": "c",
+          "text": "Four"
+        },
+        {
+          "id": "d",
+          "text": "Seven"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration identifies five prayers during the day and night, distinguishing them from additional voluntary prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "worship_002",
+      "conceptId": "worship_duha_prayer",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which voluntary daytime prayer is included as two rakahs in the advice to Abu Hurayrah in Sahih al-Bukhari 1981?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Eid al-Fitr prayer"
+        },
+        {
+          "id": "b",
+          "text": "Duha, the forenoon prayer"
+        },
+        {
+          "id": "c",
+          "text": "The funeral prayer"
+        },
+        {
+          "id": "d",
+          "text": "The Friday congregational prayer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Abu Hurayrah reports advice to pray two rakahs of Duha, alongside monthly fasting and witr before sleep.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1981",
+          "label": "Sahih al-Bukhari 1981",
+          "url": "https://sunnah.com/bukhari:1981"
+        }
+      ]
+    },
+    {
+      "id": "worship_003",
+      "conceptId": "worship_wudu_face",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which action is explicitly included in the purification instructions of Quran 5:6?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Washing only one's clothes"
+        },
+        {
+          "id": "b",
+          "text": "Perfuming the hands instead of washing"
+        },
+        {
+          "id": "c",
+          "text": "Washing the face"
+        },
+        {
+          "id": "d",
+          "text": "Washing only the hair"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Maidah 5:6 includes washing the face among the instructions for purification before prayer.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "worship_004",
+      "conceptId": "worship_wudu_head",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Quran 5:6, what action is specified concerning the head?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shaving it before every prayer"
+        },
+        {
+          "id": "b",
+          "text": "Covering it with perfume"
+        },
+        {
+          "id": "c",
+          "text": "Washing it exactly seven times"
+        },
+        {
+          "id": "d",
+          "text": "Wiping it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse instructs wiping the head. This question does not ask about differences over the extent of wiping.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "worship_005",
+      "conceptId": "worship_ghusl",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does Quran 5:6 instruct for someone in a state of janabah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full purification through bathing"
+        },
+        {
+          "id": "b",
+          "text": "Only changing their outer clothing"
+        },
+        {
+          "id": "c",
+          "text": "Only washing their hands"
+        },
+        {
+          "id": "d",
+          "text": "Postponing all purification for a week"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse distinguishes purification from janabah from the ordinary ablution instructions.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "worship_006",
+      "conceptId": "worship_tayammum",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What alternative purification is named in Quran 5:6 when its conditions are met and water cannot be found?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replacing prayer with a donation"
+        },
+        {
+          "id": "b",
+          "text": "Tayammum using clean earth"
+        },
+        {
+          "id": "c",
+          "text": "Skipping purification without an alternative"
+        },
+        {
+          "id": "d",
+          "text": "Washing with perfume alone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse prescribes tayammum rather than treating the absence of water as the end of worship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "worship_007",
+      "conceptId": "worship_prayer_times",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "How does Quran 4:103 describe prayer for believers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An act with no connection to time"
+        },
+        {
+          "id": "b",
+          "text": "A practice required only during travel"
+        },
+        {
+          "id": "c",
+          "text": "An obligation at appointed times"
+        },
+        {
+          "id": "d",
+          "text": "A duty performed only once in a lifetime"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An-Nisa 4:103 emphasizes prescribed prayer times.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "103",
+          "label": "Quran 4:103",
+          "url": "https://quran.com/4/103"
+        }
+      ]
+    },
+    {
+      "id": "worship_008",
+      "conceptId": "worship_qiblah",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Toward which sacred place does Quran 2:144 direct the worshipper?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The cave of Hira"
+        },
+        {
+          "id": "b",
+          "text": "Mount Uhud"
+        },
+        {
+          "id": "c",
+          "text": "The palace of a ruler"
+        },
+        {
+          "id": "d",
+          "text": "Al-Masjid al-Haram"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse directs the Prophet and believers toward Al-Masjid al-Haram.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "Quran 2:144",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "worship_009",
+      "conceptId": "worship_learn_prayer",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Sahih al-Bukhari 631, whose practice provides the model for prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Prophet's prayer"
+        },
+        {
+          "id": "b",
+          "text": "The most popular local celebrity's preference"
+        },
+        {
+          "id": "c",
+          "text": "Any individual's invented routine"
+        },
+        {
+          "id": "d",
+          "text": "A ruler's preferred gestures"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet instructed the visitors to pray following the prayer they had observed him perform.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "631",
+          "label": "Sahih al-Bukhari 631",
+          "url": "https://sunnah.com/bukhari:631"
+        }
+      ]
+    },
+    {
+      "id": "worship_010",
+      "conceptId": "worship_bowing",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Sahih al-Bukhari 757, what follows bowing before the next prostration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moving directly to the final salutation"
+        },
+        {
+          "id": "b",
+          "text": "Rising until standing upright"
+        },
+        {
+          "id": "c",
+          "text": "Ending the prayer immediately"
+        },
+        {
+          "id": "d",
+          "text": "Beginning another prayer without rising"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The instruction includes bowing, returning to an upright standing position and then prostration, with composure in the postures.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "757",
+          "label": "Sahih al-Bukhari 757",
+          "url": "https://sunnah.com/bukhari:757"
+        }
+      ]
+    },
+    {
+      "id": "worship_011",
+      "conceptId": "worship_sujud",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Sahih Muslim 482, in which posture is a servant described as nearest to their Lord?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Walking to a market"
+        },
+        {
+          "id": "b",
+          "text": "Sitting at a meal"
+        },
+        {
+          "id": "c",
+          "text": "Prostration"
+        },
+        {
+          "id": "d",
+          "text": "Standing in a queue"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The narration associates prostration with nearness to Allah and encourages supplication in it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "Sahih Muslim 482",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "worship_012",
+      "conceptId": "worship_adhan_response",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Sahih al-Bukhari 611, what is a listener instructed to do on hearing the call to prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore it as unrelated to worship."
+        },
+        {
+          "id": "b",
+          "text": "Start a competing call to drown it out."
+        },
+        {
+          "id": "c",
+          "text": "Treat it as permission to mock the caller."
+        },
+        {
+          "id": "d",
+          "text": "Repeat what the caller says."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration teaches attentive response to the call. Other reports explain particular response phrases.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "611",
+          "label": "Sahih al-Bukhari 611",
+          "url": "https://sunnah.com/bukhari:611"
+        }
+      ]
+    },
+    {
+      "id": "worship_013",
+      "conceptId": "worship_ramadan",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which month is the obligatory fasting month identified in Quran 2:185?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Muharram"
+        },
+        {
+          "id": "c",
+          "text": "Rajab"
+        },
+        {
+          "id": "d",
+          "text": "Safar"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Baqarah 2:185 connects the month of Ramadan with the instruction to fast.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "worship_014",
+      "conceptId": "worship_fasting_purpose",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which purpose of fasting is stated in Quran 2:183?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guaranteeing social recognition"
+        },
+        {
+          "id": "b",
+          "text": "Developing mindfulness of Allah"
+        },
+        {
+          "id": "c",
+          "text": "Removing every need to control speech"
+        },
+        {
+          "id": "d",
+          "text": "Requiring permanent abstention from food"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse connects prescribed fasting with taqwa, or mindfulness of Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "183",
+          "label": "Quran 2:183",
+          "url": "https://quran.com/2/183"
+        }
+      ]
+    },
+    {
+      "id": "worship_015",
+      "conceptId": "worship_fasting_start",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Quran 2:187, when does the daily fasting period begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At sunrise"
+        },
+        {
+          "id": "b",
+          "text": "At midday"
+        },
+        {
+          "id": "c",
+          "text": "At the onset of dawn"
+        },
+        {
+          "id": "d",
+          "text": "At sunset"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse permits eating and drinking until dawn becomes distinct, then commands completing the fast until night.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "Quran 2:187",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "worship_016",
+      "conceptId": "worship_fasting_end",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Sahih al-Bukhari 1954, what marks the time to end the day's fast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The following sunrise"
+        },
+        {
+          "id": "b",
+          "text": "The disappearance of all stars"
+        },
+        {
+          "id": "c",
+          "text": "Midnight in every location"
+        },
+        {
+          "id": "d",
+          "text": "Sunset, as night approaches and day withdraws"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration links the end of fasting to the setting of the sun and the arrival of night.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1954",
+          "label": "Sahih al-Bukhari 1954",
+          "url": "https://sunnah.com/bukhari:1954"
+        }
+      ]
+    },
+    {
+      "id": "worship_017",
+      "conceptId": "worship_suhur",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What reason does Sahih al-Bukhari 1923 give for taking suhur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "There is blessing in the pre-dawn meal."
+        },
+        {
+          "id": "b",
+          "text": "It guarantees that a person never feels hungry."
+        },
+        {
+          "id": "c",
+          "text": "It replaces the need to fast."
+        },
+        {
+          "id": "d",
+          "text": "It must be eaten after sunrise."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration encourages suhur because of its blessing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "worship_018",
+      "conceptId": "worship_iftar_promptness",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What practice does Sahih al-Bukhari 1957 encourage once the fast's ending time has arrived?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waiting until midnight as a daily rule"
+        },
+        {
+          "id": "b",
+          "text": "Breaking the fast without unnecessary delay"
+        },
+        {
+          "id": "c",
+          "text": "Continuing without food until the next evening"
+        },
+        {
+          "id": "d",
+          "text": "Delaying solely to appear more devout"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report praises prompt breaking of the fast, not eating before its proper time.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "Sahih al-Bukhari 1957",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "worship_019",
+      "conceptId": "worship_eid_fasting",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "On which two days does Sahih al-Bukhari 1990 prohibit fasting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every Monday and Thursday"
+        },
+        {
+          "id": "b",
+          "text": "The first two days of every month"
+        },
+        {
+          "id": "c",
+          "text": "Eid al-Fitr and Eid al-Adha"
+        },
+        {
+          "id": "d",
+          "text": "Every Friday and Saturday"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The narration identifies the two Eid days as days on which fasting is prohibited.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1990",
+          "label": "Sahih al-Bukhari 1990",
+          "url": "https://sunnah.com/bukhari:1990"
+        }
+      ]
+    },
+    {
+      "id": "worship_020",
+      "conceptId": "worship_three_monthly_fasts",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "How many days of fasting each month are included in the advice to Abu Hurayrah in Sahih al-Bukhari 1981?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One"
+        },
+        {
+          "id": "b",
+          "text": "Seven"
+        },
+        {
+          "id": "c",
+          "text": "Ten"
+        },
+        {
+          "id": "d",
+          "text": "Three"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The advice includes fasting three days each month, along with other acts of worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1981",
+          "label": "Sahih al-Bukhari 1981",
+          "url": "https://sunnah.com/bukhari:1981"
+        }
+      ]
+    },
+    {
+      "id": "worship_021",
+      "conceptId": "worship_zakat_recipients",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which group is explicitly included among zakat recipients in Quran 9:60?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The poor and needy"
+        },
+        {
+          "id": "b",
+          "text": "Only wealthy donors"
+        },
+        {
+          "id": "c",
+          "text": "Only the donor's business partners"
+        },
+        {
+          "id": "d",
+          "text": "Only people who promise repayment"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "At-Tawbah 9:60 specifies recipient categories, including the poor and needy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "60",
+          "label": "Quran 9:60",
+          "url": "https://quran.com/9/60"
+        }
+      ]
+    },
+    {
+      "id": "worship_022",
+      "conceptId": "worship_small_charity",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does Sahih al-Bukhari 1417 teach about giving even half a date in charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only expensive gifts have value."
+        },
+        {
+          "id": "b",
+          "text": "A small gift can still matter."
+        },
+        {
+          "id": "c",
+          "text": "A gift counts only if photographed."
+        },
+        {
+          "id": "d",
+          "text": "Charity must always be beyond one's means."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration encourages charity even when the amount available is very small.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1417",
+          "label": "Sahih al-Bukhari 1417",
+          "url": "https://sunnah.com/bukhari:1417"
+        }
+      ]
+    },
+    {
+      "id": "worship_023",
+      "conceptId": "worship_everyday_charity",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which everyday action is included as charity in Sahih al-Bukhari 2989?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leaving hazards for others to manage"
+        },
+        {
+          "id": "b",
+          "text": "Mocking someone who needs help"
+        },
+        {
+          "id": "c",
+          "text": "Removing something harmful from a path"
+        },
+        {
+          "id": "d",
+          "text": "Refusing to reconcile fairly"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The narration includes helpful everyday actions among forms of charity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2989",
+          "label": "Sahih al-Bukhari 2989",
+          "url": "https://sunnah.com/bukhari:2989"
+        }
+      ]
+    },
+    {
+      "id": "worship_024",
+      "conceptId": "worship_dua_humility",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "How does Quran 7:55 instruct people to call on their Lord?",
+      "options": [
+        {
+          "id": "a",
+          "text": "With arrogance and demands"
+        },
+        {
+          "id": "b",
+          "text": "Only to impress an audience"
+        },
+        {
+          "id": "c",
+          "text": "By insisting that Allah is unaware of their needs"
+        },
+        {
+          "id": "d",
+          "text": "Humbly and privately"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Araf 7:55 connects supplication with humility and discretion.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "55",
+          "label": "Quran 7:55",
+          "url": "https://quran.com/7/55"
+        }
+      ]
+    },
+    {
+      "id": "worship_025",
+      "conceptId": "worship_dua_both_worlds",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What combination is requested in the supplication in Quran 2:201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Good in this world, good in the Hereafter and protection from the Fire"
+        },
+        {
+          "id": "b",
+          "text": "Worldly wealth while rejecting the Hereafter"
+        },
+        {
+          "id": "c",
+          "text": "Knowledge of the date of the Hour"
+        },
+        {
+          "id": "d",
+          "text": "Public status instead of any spiritual good"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The supplication seeks comprehensive good rather than restricting concern to worldly life.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "Quran 2:201",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "worship_026",
+      "conceptId": "worship_dhikr_postures",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which postures for remembering Allah are named in Quran 3:191?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only standing in a mosque"
+        },
+        {
+          "id": "b",
+          "text": "Standing, sitting and lying on one's side"
+        },
+        {
+          "id": "c",
+          "text": "Only sitting after a public speech"
+        },
+        {
+          "id": "d",
+          "text": "Only lying down before sunrise"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse describes remembrance in different everyday postures, alongside reflection on creation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "191",
+          "label": "Quran 3:191",
+          "url": "https://quran.com/3/191"
+        }
+      ]
+    },
+    {
+      "id": "worship_027",
+      "conceptId": "worship_tasbih_meaning",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does Subhan Allah express?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking another person for payment"
+        },
+        {
+          "id": "b",
+          "text": "Announcing the start of a journey"
+        },
+        {
+          "id": "c",
+          "text": "Declaring Allah free from imperfection"
+        },
+        {
+          "id": "d",
+          "text": "Describing oneself as sinless"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Tasbih glorifies Allah and declares His transcendence above imperfection. The phrase appears among the forms of remembrance in the cited narration.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2137a",
+          "label": "Sahih Muslim 2137a",
+          "url": "https://sunnah.com/muslim:2137a"
+        }
+      ]
+    },
+    {
+      "id": "worship_028",
+      "conceptId": "worship_hamd_meaning",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does Alhamdulillah express?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I have no need to be grateful."
+        },
+        {
+          "id": "b",
+          "text": "Every person is beyond error."
+        },
+        {
+          "id": "c",
+          "text": "Wealth is the only blessing."
+        },
+        {
+          "id": "d",
+          "text": "Praise belongs to Allah."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The phrase expresses praise of Allah and is included among the beloved words of remembrance in the cited report.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2137a",
+          "label": "Sahih Muslim 2137a",
+          "url": "https://sunnah.com/muslim:2137a"
+        }
+      ]
+    },
+    {
+      "id": "worship_029",
+      "conceptId": "worship_istighfar",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What is a person doing when asking Allah to forgive them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seeking forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "Declaring that repentance is impossible"
+        },
+        {
+          "id": "c",
+          "text": "Claiming to know every hidden matter"
+        },
+        {
+          "id": "d",
+          "text": "Making a payment to another person"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An-Nisa 4:110 connects wrongdoing followed by seeking Allah's forgiveness with finding Him forgiving and merciful.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "110",
+          "label": "Quran 4:110",
+          "url": "https://quran.com/4/110"
+        }
+      ]
+    },
+    {
+      "id": "worship_030",
+      "conceptId": "worship_final_nights",
+      "categoryId": "everyday_worship",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Aishah's report in Sahih al-Bukhari 2024, what did the Prophet do in Ramadan's last ten nights?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stopped all night worship"
+        },
+        {
+          "id": "b",
+          "text": "Intensified worship and woke his family"
+        },
+        {
+          "id": "c",
+          "text": "Forbade his family from praying"
+        },
+        {
+          "id": "d",
+          "text": "Treated the nights as unrelated to Ramadan"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah describes increased dedication and waking the household during the final ten nights.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2024",
+          "label": "Sahih al-Bukhari 2024",
+          "url": "https://sunnah.com/bukhari:2024"
+        }
+      ]
+    },
+    {
+      "id": "worship_031",
+      "conceptId": "worship_wudu_certainty",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A worshipper is certain they had wudu but merely imagines that they may have passed wind. What principle is illustrated by Sahih al-Bukhari 137?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every doubtful sensation certainly invalidates wudu."
+        },
+        {
+          "id": "b",
+          "text": "No event can ever invalidate wudu."
+        },
+        {
+          "id": "c",
+          "text": "Do not abandon established purity because of mere doubt."
+        },
+        {
+          "id": "d",
+          "text": "Only the time shown on a clock decides purity."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report tells a person troubled by doubt not to leave prayer without an indication establishing the event. It distinguishes suspicion from certainty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "137",
+          "label": "Sahih al-Bukhari 137",
+          "url": "https://sunnah.com/bukhari:137"
+        }
+      ]
+    },
+    {
+      "id": "worship_032",
+      "conceptId": "worship_illness_prayer",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person cannot stand for prayer because of illness. What accommodation is given in Sahih al-Bukhari 1117?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abandon all prayer until able to run."
+        },
+        {
+          "id": "b",
+          "text": "Replace every prayer permanently with money."
+        },
+        {
+          "id": "c",
+          "text": "Stand regardless of inability."
+        },
+        {
+          "id": "d",
+          "text": "Pray sitting; if unable, on one's side."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The instruction adapts posture to ability rather than treating inability to stand as the end of prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "Sahih al-Bukhari 1117",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "worship_033",
+      "conceptId": "worship_forgotten_prayer",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person genuinely forgets a prayer and later remembers it. What does Sahih al-Bukhari 597 instruct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pray it when remembered."
+        },
+        {
+          "id": "b",
+          "text": "Leave it permanently because its time passed."
+        },
+        {
+          "id": "c",
+          "text": "Wait until the same weekday next week."
+        },
+        {
+          "id": "d",
+          "text": "Replace it with an unrelated voluntary fast."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration directly addresses a forgotten prayer and instructs performance when it is remembered.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "Sahih al-Bukhari 597",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "worship_034",
+      "conceptId": "worship_composure",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A learner rushes through bowing and prostration without settling. Which feature of Sahih al-Bukhari 757 corrects this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An instruction to prioritize speed over every posture"
+        },
+        {
+          "id": "b",
+          "text": "The repeated instruction to become composed in the prayer's postures"
+        },
+        {
+          "id": "c",
+          "text": "A rule that only the opening words matter"
+        },
+        {
+          "id": "d",
+          "text": "A claim that movements need no attention"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet's correction of the man's prayer includes deliberate settling in its principal postures.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "757",
+          "label": "Sahih al-Bukhari 757",
+          "url": "https://sunnah.com/bukhari:757"
+        }
+      ]
+    },
+    {
+      "id": "worship_035",
+      "conceptId": "worship_friday_trade",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person continues shopping when the Friday prayer call addressed in Quran 62:9 is made. What does the verse tell those addressed to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat business as a substitute for the gathering."
+        },
+        {
+          "id": "b",
+          "text": "Wait until the next day before responding."
+        },
+        {
+          "id": "c",
+          "text": "Leave trade and proceed to Allah's remembrance."
+        },
+        {
+          "id": "d",
+          "text": "Assume the instruction concerns only sellers, never buyers."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse prioritizes the Friday gathering over trade at the specified call. This question does not define every condition of personal obligation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 62,
+          "ayahs": "9",
+          "label": "Quran 62:9",
+          "url": "https://quran.com/62/9"
+        }
+      ]
+    },
+    {
+      "id": "worship_036",
+      "conceptId": "worship_forgetful_eating",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone who is fasting eats or drinks out of genuine forgetfulness. What does Sahih al-Bukhari 1933 tell them to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "End the fast for the rest of the day."
+        },
+        {
+          "id": "b",
+          "text": "Treat the mistake as deliberate rejection of fasting."
+        },
+        {
+          "id": "c",
+          "text": "Assume all future fasts are invalid."
+        },
+        {
+          "id": "d",
+          "text": "Continue the fast."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration specifically addresses forgetful eating or drinking and instructs completing the fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "Sahih al-Bukhari 1933",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "worship_037",
+      "conceptId": "worship_fasting_conduct",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A fasting person avoids food but continues deliberate lying. What warning in Sahih al-Bukhari 1903 is relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fasting must not be separated from abandoning false speech and conduct."
+        },
+        {
+          "id": "b",
+          "text": "Avoiding food makes lying harmless."
+        },
+        {
+          "id": "c",
+          "text": "The report encourages lying when hungry."
+        },
+        {
+          "id": "d",
+          "text": "The report says all truthful speech breaks the fast."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration strongly rebukes false speech and acting on it while fasting. It should not be misused as a command to start eating.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "worship_038",
+      "conceptId": "worship_fasting_provocation",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone tries to provoke a fasting person into a fight. What response is taught in Sahih al-Bukhari 1894?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume hunger permits verbal abuse."
+        },
+        {
+          "id": "b",
+          "text": "Avoid abusive conduct and identify oneself as fasting."
+        },
+        {
+          "id": "c",
+          "text": "Escalate the dispute to prove resolve."
+        },
+        {
+          "id": "d",
+          "text": "Break the fast to win the argument."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration describes fasting as a shield and teaches restraint in response to provocation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1894",
+          "label": "Sahih al-Bukhari 1894",
+          "url": "https://sunnah.com/bukhari:1894"
+        }
+      ]
+    },
+    {
+      "id": "worship_039",
+      "conceptId": "worship_ill_traveller",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What does Quran 2:185 provide for a person who is ill or travelling and does not fast under the concession?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat every missed day as permanently unaccountable."
+        },
+        {
+          "id": "b",
+          "text": "Replace all future Ramadans with one donation automatically."
+        },
+        {
+          "id": "c",
+          "text": "Make up the missed days on other days."
+        },
+        {
+          "id": "d",
+          "text": "Assume the concession means Ramadan fasting was never prescribed."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse states an equivalent number of other days and emphasizes Allah's desire for ease. Individual eligibility requires attention to the actual circumstances.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "worship_040",
+      "conceptId": "worship_menstruation_makeup",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "According to Aishah's report in Sahih Muslim 335c, what was the instruction after menstruation regarding missed worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make up the prayers, but not the fasts."
+        },
+        {
+          "id": "b",
+          "text": "Make up neither prayers nor fasts."
+        },
+        {
+          "id": "c",
+          "text": "Make up every prayer twice."
+        },
+        {
+          "id": "d",
+          "text": "Make up the fasts, but not the prayers."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Aishah distinguishes the instruction concerning missed fasts from that concerning missed prayers.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "335c",
+          "label": "Sahih Muslim 335c",
+          "url": "https://sunnah.com/muslim:335c"
+        }
+      ]
+    },
+    {
+      "id": "worship_041",
+      "conceptId": "worship_charity_hurt",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A donor repeatedly humiliates a recipient by mentioning their help. Which warning in Quran 2:264 applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do not spoil charity through reminders of favours and hurt."
+        },
+        {
+          "id": "b",
+          "text": "Donating creates a right to humiliate."
+        },
+        {
+          "id": "c",
+          "text": "Financial help makes respectful speech unnecessary."
+        },
+        {
+          "id": "d",
+          "text": "Recipients must praise a donor publicly for charity to count."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse links the manner of giving with the protection of the charitable deed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "worship_042",
+      "conceptId": "worship_dua_impatience",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person stops making dua because the requested outcome has not appeared quickly. What does Sahih al-Bukhari 6340 warn against?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking Allah sincerely more than once"
+        },
+        {
+          "id": "b",
+          "text": "Impatience expressed by saying one prayed but was not answered"
+        },
+        {
+          "id": "c",
+          "text": "Admitting one's dependence on Allah"
+        },
+        {
+          "id": "d",
+          "text": "Seeking good for another person"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration cautions against impatiently giving up; it does not promise the requested outcome on a personal deadline.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6340",
+          "label": "Sahih al-Bukhari 6340",
+          "url": "https://sunnah.com/bukhari:6340"
+        }
+      ]
+    },
+    {
+      "id": "worship_043",
+      "conceptId": "worship_balanced_rights",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone pursues voluntary worship while neglecting their body and family. What lesson does Sahih al-Bukhari 1968 provide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voluntary worship removes every family responsibility."
+        },
+        {
+          "id": "b",
+          "text": "Physical needs always have no relevance to worship."
+        },
+        {
+          "id": "c",
+          "text": "Give Allah, oneself and one's family their respective rights."
+        },
+        {
+          "id": "d",
+          "text": "Neglect proves superior devotion by itself."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet approved Salman's counsel to Abu al-Darda about recognizing and fulfilling these rights.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1968",
+          "label": "Sahih al-Bukhari 1968",
+          "url": "https://sunnah.com/bukhari:1968"
+        }
+      ]
+    },
+    {
+      "id": "worship_044",
+      "conceptId": "worship_obligations_priority",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person wants more voluntary practices but regularly neglects obligatory duties. Which principle in Sahih al-Bukhari 6502 should guide priorities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voluntary acts always cancel every neglected duty."
+        },
+        {
+          "id": "b",
+          "text": "A long optional routine makes obligations irrelevant."
+        },
+        {
+          "id": "c",
+          "text": "Religious priorities depend only on personal enjoyment."
+        },
+        {
+          "id": "d",
+          "text": "The obligatory duties are foremost among acts by which a servant draws near to Allah."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration places what Allah has made obligatory before continued approach through voluntary deeds.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6502",
+          "label": "Sahih al-Bukhari 6502",
+          "url": "https://sunnah.com/bukhari:6502"
+        }
+      ]
+    },
+    {
+      "id": "worship_045",
+      "conceptId": "worship_charity_privacy",
+      "categoryId": "everyday_worship",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "According to Quran 2:271, which assessment of giving openly or secretly is most accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open charity can be good, while discreet giving to the poor is described as better."
+        },
+        {
+          "id": "b",
+          "text": "Every publicly visible donation is automatically invalid."
+        },
+        {
+          "id": "c",
+          "text": "Secret giving is forbidden."
+        },
+        {
+          "id": "d",
+          "text": "Only the size of an audience determines a gift's value."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse distinguishes praise of giving from the added value of concealing a gift to the poor.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "271",
+          "label": "Quran 2:271",
+          "url": "https://quran.com/2/271"
+        }
+      ]
+    },
+    {
+      "id": "worship_046",
+      "conceptId": "worship_tayammum",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Quran 5:6 concludes its purification instructions by rejecting an intention to impose hardship. What is the most careful inference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any inconvenience automatically cancels every purification rule."
+        },
+        {
+          "id": "b",
+          "text": "Prescribed purification and lawful accommodations belong together; ease does not mean inventing personal exemptions."
+        },
+        {
+          "id": "c",
+          "text": "Tayammum proves that ordinary wudu has no purpose."
+        },
+        {
+          "id": "d",
+          "text": "The verse requires hardship as an end in itself."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The conclusion explains purification and Allah's favour while the verse itself retains instructions and conditions.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "worship_047",
+      "conceptId": "worship_wudu_certainty",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A person uses Sahih al-Bukhari 137 to claim that wudu remains valid even when they are certain they passed wind silently. What has been confused?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The report prohibits all prayer after wudu."
+        },
+        {
+          "id": "b",
+          "text": "The report makes every smell invalidate everyone's wudu."
+        },
+        {
+          "id": "c",
+          "text": "An instruction about mere doubt has been turned into permission to ignore a certain event."
+        },
+        {
+          "id": "d",
+          "text": "The report concerns only the cleanliness of clothing."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report addresses uncertainty. Sound and smell are not permissions to dismiss an event known with certainty; Sahih al-Bukhari 135 separately requires ablution after an invalidating event.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "137",
+          "label": "Sahih al-Bukhari 137",
+          "url": "https://sunnah.com/bukhari:137"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "Sahih al-Bukhari 135",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "worship_048",
+      "conceptId": "worship_three_monthly_fasts",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A learner reads the advice about three monthly fasts and concludes that these replace Ramadan. Which distinction resolves the mistake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The three monthly fasts were the only fasts ever taught."
+        },
+        {
+          "id": "b",
+          "text": "Ramadan is merely a name for any three days."
+        },
+        {
+          "id": "c",
+          "text": "A companion's advice cancels a Quranic obligation automatically."
+        },
+        {
+          "id": "d",
+          "text": "A recommended monthly practice does not replace the separately prescribed Ramadan fast."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Read the advice in Sahih al-Bukhari 1981 alongside the Ramadan instruction in Quran 2:185, rather than making one erase the other.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1981",
+          "label": "Sahih al-Bukhari 1981",
+          "url": "https://sunnah.com/bukhari:1981"
+        },
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "worship_049",
+      "conceptId": "worship_fasting_end",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "An app says it is iftar time using a city in another time zone, but the sun has not set at the user's location. Which principle should govern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The relevant local sunset must be established; a mismatched app setting is not the fasting boundary."
+        },
+        {
+          "id": "b",
+          "text": "Any notification makes eating permissible everywhere."
+        },
+        {
+          "id": "c",
+          "text": "The phone's display overrides the physical timing described in the narration."
+        },
+        {
+          "id": "d",
+          "text": "Every place on Earth shares one sunset time."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration's sunset criterion must be applied to the relevant location. Technology assists timing rather than creating the worship boundary.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1954",
+          "label": "Sahih al-Bukhari 1954",
+          "url": "https://sunnah.com/bukhari:1954"
+        }
+      ]
+    },
+    {
+      "id": "worship_050",
+      "conceptId": "worship_fasting_start",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A person assumes they may keep eating until sunrise because dawn and sunrise are the same event. Which distinction matters in Quran 2:187?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verse explicitly sets the boundary at midday."
+        },
+        {
+          "id": "b",
+          "text": "The fasting boundary is dawn, which occurs before sunrise."
+        },
+        {
+          "id": "c",
+          "text": "Sunrise is always earlier than dawn."
+        },
+        {
+          "id": "d",
+          "text": "The verse has no starting boundary for fasting."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse uses the distinction of dawn, not the later appearance of the sun, as the beginning of the abstention period.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "Quran 2:187",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "worship_051",
+      "conceptId": "worship_fasting_conduct",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone claims the warnings about false speech while fasting prove that lying automatically requires ending the fast with food. What is the sounder conclusion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The warning makes deliberate lying a recommended way to end fasting."
+        },
+        {
+          "id": "b",
+          "text": "The warning replaces every fasting rule with a speech rule."
+        },
+        {
+          "id": "c",
+          "text": "The warning demands abandoning sinful conduct; it is not an instruction to eat."
+        },
+        {
+          "id": "d",
+          "text": "The warning says food and drink are irrelevant to fasting."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report's severe moral warning should not be converted into an unstated command to break the fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "worship_052",
+      "conceptId": "worship_eid_fasting",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone wants to fast on Eid al-Fitr because they feel unusually sincere that day. What principle follows from Sahih al-Bukhari 1990?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sincerity changes the day into an ordinary voluntary fasting day."
+        },
+        {
+          "id": "b",
+          "text": "The prohibition applies only when no one feels motivated."
+        },
+        {
+          "id": "c",
+          "text": "The report prohibits Eid prayer rather than fasting."
+        },
+        {
+          "id": "d",
+          "text": "A sincere personal wish does not remove the prohibition on fasting that day."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Worship includes respecting the specified limits, rather than treating enthusiasm as permission to reverse them.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1990",
+          "label": "Sahih al-Bukhari 1990",
+          "url": "https://sunnah.com/bukhari:1990"
+        }
+      ]
+    },
+    {
+      "id": "worship_053",
+      "conceptId": "worship_zakat_recipients",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A person assumes any useful donation automatically fulfils their zakat. Which issue raised by Quran 9:60 must first be examined?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whether it reaches an eligible recipient category, alongside the other applicable zakat conditions"
+        },
+        {
+          "id": "b",
+          "text": "Only whether the donor liked the project"
+        },
+        {
+          "id": "c",
+          "text": "Only whether the payment was made through an app"
+        },
+        {
+          "id": "d",
+          "text": "Whether the recipient promised social-media promotion"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse specifies recipients for obligatory charity. A useful gift and valid payment of zakat are not automatically identical.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "60",
+          "label": "Quran 9:60",
+          "url": "https://quran.com/9/60"
+        }
+      ]
+    },
+    {
+      "id": "worship_054",
+      "conceptId": "worship_illness_prayer",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Why should the illness accommodation in Sahih al-Bukhari 1117 not be interpreted as making every prayer posture optional for anyone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It forbids prayer for everyone who is ill."
+        },
+        {
+          "id": "b",
+          "text": "The instruction ties changes in posture to inability."
+        },
+        {
+          "id": "c",
+          "text": "It says personal preference alone determines every posture."
+        },
+        {
+          "id": "d",
+          "text": "It removes standing from every prayer permanently."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The sequence of standing, sitting and lying on one's side is expressly linked to what the worshipper can do.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "Sahih al-Bukhari 1117",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "worship_055",
+      "conceptId": "worship_friday_trade",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Read together, how do Quran 62:9–10 frame worship and lawful livelihood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abandon all earning permanently after attending one Friday prayer."
+        },
+        {
+          "id": "b",
+          "text": "Continue trade through the addressed call and postpone prayer indefinitely."
+        },
+        {
+          "id": "c",
+          "text": "Leave trade for the addressed Friday gathering, then lawful activity may resume after prayer with remembrance of Allah."
+        },
+        {
+          "id": "d",
+          "text": "Treat earning and remembering Allah as impossible to combine."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The two verses give a time-specific priority and then permit dispersing to seek Allah's bounty, while retaining remembrance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 62,
+          "ayahs": "9-10",
+          "label": "Quran 62:9-10",
+          "url": "https://quran.com/62/9-10"
+        }
+      ]
+    },
+    {
+      "id": "worship_056",
+      "conceptId": "worship_dua_humility",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone reads Quran 7:55 as proof that Allah cannot hear a quiet supplication. What does the verse actually support?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dua is heard only if shouted."
+        },
+        {
+          "id": "b",
+          "text": "Private supplication has no place in worship."
+        },
+        {
+          "id": "c",
+          "text": "Allah requires an audience to know a person's needs."
+        },
+        {
+          "id": "d",
+          "text": "Calling on Allah humbly and quietly is meaningful worship."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The command to call privately or discreetly contradicts the assumption that quietness prevents supplication from reaching Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "55",
+          "label": "Quran 7:55",
+          "url": "https://quran.com/7/55"
+        }
+      ]
+    },
+    {
+      "id": "worship_057",
+      "conceptId": "worship_dhikr_postures",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A person cites Quran 3:191 to say remembrance while lying down removes the need for obligatory prayer. What distinction is needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The availability of remembrance in different postures does not cancel the separate obligation of prayer."
+        },
+        {
+          "id": "b",
+          "text": "The verse says lying down is always the only valid prayer posture."
+        },
+        {
+          "id": "c",
+          "text": "The verse abolishes prescribed prayer times."
+        },
+        {
+          "id": "d",
+          "text": "Only people who cannot remember Allah need prayer."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Read the description of remembrance alongside Quran 4:103's statement of prayer as a timed obligation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "191",
+          "label": "Quran 3:191",
+          "url": "https://quran.com/3/191"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "103",
+          "label": "Quran 4:103",
+          "url": "https://quran.com/4/103"
+        }
+      ]
+    },
+    {
+      "id": "worship_058",
+      "conceptId": "worship_charity_hurt",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A donor hides the amount of a gift but privately humiliates its recipient. Which assessment best combines Quran 2:271 and 2:264?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Privacy automatically makes every manner of giving acceptable."
+        },
+        {
+          "id": "b",
+          "text": "Concealment does not excuse reminders of favours or hurtful treatment."
+        },
+        {
+          "id": "c",
+          "text": "Only public insults can harm charity."
+        },
+        {
+          "id": "d",
+          "text": "Concealing a gift removes the recipient's dignity."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The praise of discreet giving should be read with the prohibition on spoiling charity through hurt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "271",
+          "label": "Quran 2:271",
+          "url": "https://quran.com/2/271"
+        },
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "worship_059",
+      "conceptId": "worship_final_nights",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Does the report of intensified worship in the last ten nights establish that worship in the rest of Ramadan is unnecessary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; no worship matters before the final ten nights."
+        },
+        {
+          "id": "b",
+          "text": "Yes; all earlier obligatory prayers become optional."
+        },
+        {
+          "id": "c",
+          "text": "No; it describes increased dedication, not cancellation of worship at other times."
+        },
+        {
+          "id": "d",
+          "text": "No; the report actually forbids extra worship in the last ten nights."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A report about increased effort in a special period should not be made to abolish duties or devotion outside it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2024",
+          "label": "Sahih al-Bukhari 2024",
+          "url": "https://sunnah.com/bukhari:2024"
+        }
+      ]
+    },
+    {
+      "id": "worship_060",
+      "conceptId": "worship_balanced_rights",
+      "categoryId": "everyday_worship",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone cites the encouragement of voluntary worship but ignores obligations to dependants. Which pairing best corrects their priorities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase voluntary acts until dependants no longer need support."
+        },
+        {
+          "id": "b",
+          "text": "Treat family duties as obstacles without religious significance."
+        },
+        {
+          "id": "c",
+          "text": "Assume greater exhaustion always means greater obedience."
+        },
+        {
+          "id": "d",
+          "text": "Fulfil obligatory duties and give the family its due while maintaining voluntary devotion."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report on obligations and the approved counsel about personal and family rights should inform a sustainable worship routine together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6502",
+          "label": "Sahih al-Bukhari 6502",
+          "url": "https://sunnah.com/bukhari:6502"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1968",
+          "label": "Sahih al-Bukhari 1968",
+          "url": "https://sunnah.com/bukhari:1968"
+        }
+      ]
+    }
+  ]
+}

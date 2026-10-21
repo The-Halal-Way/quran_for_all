@@ -9,6 +9,7 @@ import '../hadith_integrity/dashboard_hadith_integrity_section.dart';
 import '../kids_books/dashboard_kids_books_section.dart';
 import '../mercy/dashboard_mercy_section.dart';
 import '../when_you_have_a_need/dashboard_need_section.dart';
+import '../../quiz/dashboard/dashboard_quiz_section.dart';
 import 'dashboard_hadith_section.dart';
 import 'dashboard_feed_section.dart';
 import 'dashboard_date_context.dart';
@@ -25,6 +26,7 @@ class DashboardContent extends StatelessWidget {
   static const _gaps = [
     AppSpacing.lg,
     AppSpacing.md,
+    AppSpacing.lg,
     AppSpacing.lg,
     AppSpacing.md,
     AppSpacing.md,
@@ -62,11 +64,12 @@ class DashboardContent extends StatelessWidget {
             title: context.l10n.dashboardSectionExplore,
             items: dashboardActions(context),
           ),
-          4 => const DashboardBooksSection(),
-          5 => const DashboardKidsBooksSection(),
-          6 => const DashboardMercySection(),
-          7 => const DashboardNeedSection(),
-          8 => const DashboardHadithSection(),
+          4 => const DashboardQuizSection(),
+          5 => const DashboardBooksSection(),
+          6 => const DashboardKidsBooksSection(),
+          7 => const DashboardMercySection(),
+          8 => const DashboardNeedSection(),
+          9 => const DashboardHadithSection(),
           _ => const DashboardHadithIntegritySection(),
         },
       ),

@@ -1,0 +1,2212 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "categoryId": "hadith_knowledge",
+  "title": "Hadith Knowledge",
+  "description": "A question bank on hadith terminology, collections, selected authentic teachings, responsible transmission and contextual understanding, with explanations and references. Introductory terminology follows mainstream Sunni hadith scholarship.",
+  "questionCount": 60,
+  "difficultyCounts": {
+    "foundation": 30,
+    "intermediate": 15,
+    "advanced": 15
+  },
+  "difficultyMethod": "Editorial classification; not calibrated from learner response data. Advanced means greater reasoning depth within this subject, not a scholarly qualification.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Primary-text references checked during preparation; this is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "perAssessment": {
+      "foundation": 2,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Handle I am not sure as a UI action, not as a fifth answer option."
+  },
+  "questions": [
+    {
+      "id": "hadith_001",
+      "conceptId": "hadith_hadith_scope",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which description best fits a prophetic hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A transmitted report about the Prophet's words, actions, approvals or characteristics"
+        },
+        {
+          "id": "b",
+          "text": "Any inspiring statement shared by a Muslim"
+        },
+        {
+          "id": "c",
+          "text": "Only a verse of the Quran"
+        },
+        {
+          "id": "d",
+          "text": "Any later scholar's legal opinion"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Prophetic hadith report the Prophet's teachings and life; an inspiring saying alone does not establish prophetic attribution.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com: About Hadith; sources and numbering",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "hadith_002",
+      "conceptId": "hadith_isnad",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What is an isnad in hadith study?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The English title of a chapter"
+        },
+        {
+          "id": "b",
+          "text": "The chain of transmitters"
+        },
+        {
+          "id": "c",
+          "text": "The printed page number"
+        },
+        {
+          "id": "d",
+          "text": "The legal ruling derived by a reader"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An isnad identifies a report's transmitters.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_003",
+      "conceptId": "hadith_matn",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What is the matn of a hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The publisher's address"
+        },
+        {
+          "id": "b",
+          "text": "The chain of transmitters"
+        },
+        {
+          "id": "c",
+          "text": "The report's text or content"
+        },
+        {
+          "id": "d",
+          "text": "The translator's biography"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Matn refers to the transmitted content, as distinct from its chain.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_004",
+      "conceptId": "hadith_sahih",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does sahih mean as a hadith grade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fabricated"
+        },
+        {
+          "id": "b",
+          "text": "A translation into Arabic"
+        },
+        {
+          "id": "c",
+          "text": "A report without any attribution"
+        },
+        {
+          "id": "d",
+          "text": "Sound or authentic"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Sahih is an authenticity classification.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_005",
+      "conceptId": "hadith_hasan",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does hasan commonly mean as a hadith grade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Good or fair, within the accepted categories"
+        },
+        {
+          "id": "b",
+          "text": "Definitely fabricated"
+        },
+        {
+          "id": "c",
+          "text": "A chapter title rather than a grade"
+        },
+        {
+          "id": "d",
+          "text": "Necessarily stronger than every sahih report"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Hasan is an accepted grade below sahih in the basic classification.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_006",
+      "conceptId": "hadith_daif",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does daif mean in hadith classification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mass-transmitted"
+        },
+        {
+          "id": "b",
+          "text": "Weak"
+        },
+        {
+          "id": "c",
+          "text": "A Quranic verse"
+        },
+        {
+          "id": "d",
+          "text": "Automatically fabricated"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Daif denotes weakness; it is not simply another word for fabricated.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_007",
+      "conceptId": "hadith_mawdu",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does mawdu mean when applied to a report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sound in itself"
+        },
+        {
+          "id": "b",
+          "text": "A translation footnote"
+        },
+        {
+          "id": "c",
+          "text": "Fabricated"
+        },
+        {
+          "id": "d",
+          "text": "A narrator's birthplace"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Mawdu denotes fabrication.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_008",
+      "conceptId": "hadith_collection_bukhari",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Who compiled Sahih al-Bukhari?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Imam Malik ibn Anas"
+        },
+        {
+          "id": "b",
+          "text": "Imam al-Nawawi"
+        },
+        {
+          "id": "c",
+          "text": "Ibn Kathir"
+        },
+        {
+          "id": "d",
+          "text": "Imam Muhammad ibn Ismail al-Bukhari"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The collection is named after its compiler, Imam al-Bukhari.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sahih al-Bukhari: collection introduction",
+          "url": "https://sunnah.com/bukhari"
+        }
+      ]
+    },
+    {
+      "id": "hadith_009",
+      "conceptId": "hadith_collection_muslim",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Who compiled Sahih Muslim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Imam Muslim ibn al-Hajjaj"
+        },
+        {
+          "id": "b",
+          "text": "Imam Abu Hanifah"
+        },
+        {
+          "id": "c",
+          "text": "Imam al-Tabari"
+        },
+        {
+          "id": "d",
+          "text": "Ibn Hisham"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Sahih Muslim is the collection compiled by Imam Muslim ibn al-Hajjaj.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sahih Muslim: collection introduction",
+          "url": "https://sunnah.com/muslim"
+        }
+      ]
+    },
+    {
+      "id": "hadith_010",
+      "conceptId": "hadith_intentions_narrator",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which companion narrates the hadith on intentions at the beginning of Sahih al-Bukhari?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Hurayrah"
+        },
+        {
+          "id": "b",
+          "text": "Umar ibn al-Khattab"
+        },
+        {
+          "id": "c",
+          "text": "Anas ibn Malik"
+        },
+        {
+          "id": "d",
+          "text": "Abdullah ibn Abbas"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The opening hadith is transmitted from Umar ibn al-Khattab.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "hadith_011",
+      "conceptId": "hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Sahih al-Bukhari 1, what is central to the value of an action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The number of people watching"
+        },
+        {
+          "id": "b",
+          "text": "The action's popularity online"
+        },
+        {
+          "id": "c",
+          "text": "The person's intention"
+        },
+        {
+          "id": "d",
+          "text": "The amount of praise received"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith connects deeds and their reward with intentions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "hadith_012",
+      "conceptId": "hadith_fabrication_warning",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What does Sahih al-Bukhari 110 warn against?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning the name of a narrator"
+        },
+        {
+          "id": "b",
+          "text": "Asking for a source"
+        },
+        {
+          "id": "c",
+          "text": "Comparing two translations"
+        },
+        {
+          "id": "d",
+          "text": "Intentionally lying about the Prophet"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The warning concerns deliberately attributing falsehood to the Prophet.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "Sahih al-Bukhari 110",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "hadith_013",
+      "conceptId": "hadith_indiscriminate_transmission",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What conduct is warned against in Sahih Muslim 5, in the Introduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Narrating everything one hears"
+        },
+        {
+          "id": "b",
+          "text": "Checking a report before passing it on"
+        },
+        {
+          "id": "c",
+          "text": "Declining to share an unverified claim"
+        },
+        {
+          "id": "d",
+          "text": "Asking a knowledgeable person for help"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration cautions against passing on everything heard without discrimination.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "Sahih Muslim 5",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "hadith_014",
+      "conceptId": "hadith_good_speech",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Sahih al-Bukhari 6018, how should a believer approach speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say whatever attracts attention."
+        },
+        {
+          "id": "b",
+          "text": "Say what is good or remain silent."
+        },
+        {
+          "id": "c",
+          "text": "Repeat every rumour immediately."
+        },
+        {
+          "id": "d",
+          "text": "Treat silence as always forbidden."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith joins responsible speech with care for neighbours and guests.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "hadith_015",
+      "conceptId": "hadith_strength",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Sahih al-Bukhari 6114, who is truly strong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The person who always wins an argument"
+        },
+        {
+          "id": "b",
+          "text": "The person with the loudest voice"
+        },
+        {
+          "id": "c",
+          "text": "The person who controls themselves when angry"
+        },
+        {
+          "id": "d",
+          "text": "The person who never accepts correction"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith shifts attention from defeating others physically to self-control in anger.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "hadith_016",
+      "conceptId": "hadith_anger_advice",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What repeated advice did the Prophet give the man in Sahih al-Bukhari 6116?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always answer an insult immediately."
+        },
+        {
+          "id": "b",
+          "text": "Never listen to advice."
+        },
+        {
+          "id": "c",
+          "text": "Make others afraid of you."
+        },
+        {
+          "id": "d",
+          "text": "Do not become angry."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The man repeatedly requested advice, and the Prophet repeated the warning concerning anger.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6116",
+          "label": "Sahih al-Bukhari 6116",
+          "url": "https://sunnah.com/bukhari:6116"
+        }
+      ]
+    },
+    {
+      "id": "hadith_017",
+      "conceptId": "hadith_consistency",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "According to Sahih al-Bukhari 6464, which deeds are especially beloved to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Those maintained regularly, even if small"
+        },
+        {
+          "id": "b",
+          "text": "Only those done once before a large crowd"
+        },
+        {
+          "id": "c",
+          "text": "Only those that cause complete exhaustion"
+        },
+        {
+          "id": "d",
+          "text": "Those done solely to win praise"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration emphasizes sustained deeds, even when modest in quantity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "Sahih al-Bukhari 6464",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "hadith_018",
+      "conceptId": "hadith_mercy_children",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which lesson accompanies the Prophet's kissing of his grandson in Sahih al-Bukhari 5997?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Affection toward children is a weakness."
+        },
+        {
+          "id": "b",
+          "text": "Mercy toward others matters."
+        },
+        {
+          "id": "c",
+          "text": "Public dignity requires rejecting children."
+        },
+        {
+          "id": "d",
+          "text": "Only adults deserve tenderness."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration responds to a man's lack of affection toward his children with a warning about withholding mercy.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "hadith_019",
+      "conceptId": "hadith_teaching_ease",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which teaching approach appears in Sahih al-Bukhari 69?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make learning deliberately inaccessible."
+        },
+        {
+          "id": "b",
+          "text": "Drive learners away with unnecessary harshness."
+        },
+        {
+          "id": "c",
+          "text": "Make matters easier and give encouraging news."
+        },
+        {
+          "id": "d",
+          "text": "Withhold every explanation from beginners."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The instruction joins facilitation with encouragement and warns against making people averse.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "Sahih al-Bukhari 69",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    },
+    {
+      "id": "hadith_020",
+      "conceptId": "hadith_understanding_religion",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "What blessing is mentioned in Sahih al-Bukhari 71 for someone for whom Allah intends good?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatic knowledge of every future event"
+        },
+        {
+          "id": "b",
+          "text": "Freedom from the need to learn"
+        },
+        {
+          "id": "c",
+          "text": "Guaranteed public fame"
+        },
+        {
+          "id": "d",
+          "text": "Understanding of religion"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration links intended good with understanding religion.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "71",
+          "label": "Sahih al-Bukhari 71",
+          "url": "https://sunnah.com/bukhari:71"
+        }
+      ]
+    },
+    {
+      "id": "hadith_021",
+      "conceptId": "hadith_loss_knowledge",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "How does Sahih al-Bukhari 100 describe knowledge being taken away?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Through the deaths of knowledgeable scholars"
+        },
+        {
+          "id": "b",
+          "text": "By every book disappearing simultaneously"
+        },
+        {
+          "id": "c",
+          "text": "By every learner forgetting all words overnight"
+        },
+        {
+          "id": "d",
+          "text": "Through the invention of page numbers"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report describes scholars dying and uninformed leaders then giving answers without knowledge.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "100",
+          "label": "Sahih al-Bukhari 100",
+          "url": "https://sunnah.com/bukhari:100"
+        }
+      ]
+    },
+    {
+      "id": "hadith_022",
+      "conceptId": "hadith_trustworthiness",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which conduct is named among the signs of hypocrisy in Sahih al-Bukhari 33?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Returning what was entrusted"
+        },
+        {
+          "id": "b",
+          "text": "Betraying a trust"
+        },
+        {
+          "id": "c",
+          "text": "Keeping a promise"
+        },
+        {
+          "id": "d",
+          "text": "Speaking truthfully"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The narration names lying, breaking promises and betraying trusts as signs requiring serious self-examination.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "Sahih al-Bukhari 33",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "hadith_023",
+      "conceptId": "hadith_heart",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Sahih al-Bukhari 52, which bodily organ is used to explain the importance of inner soundness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The hand"
+        },
+        {
+          "id": "b",
+          "text": "The ear"
+        },
+        {
+          "id": "c",
+          "text": "The heart"
+        },
+        {
+          "id": "d",
+          "text": "The foot"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith links the soundness or corruption of the whole body with the heart.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "52",
+          "label": "Sahih al-Bukhari 52",
+          "url": "https://sunnah.com/bukhari:52"
+        }
+      ]
+    },
+    {
+      "id": "hadith_024",
+      "conceptId": "hadith_doubtful_matters",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Besides clearly lawful and clearly unlawful matters, what does Sahih al-Bukhari 52 describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A category decided only by popularity"
+        },
+        {
+          "id": "b",
+          "text": "Actions beyond all moral evaluation"
+        },
+        {
+          "id": "c",
+          "text": "A rule that uncertainty makes everything forbidden forever"
+        },
+        {
+          "id": "d",
+          "text": "Doubtful matters not known by many people"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration identifies doubtful matters and counsels care in protecting one's religion and honour.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "52",
+          "label": "Sahih al-Bukhari 52",
+          "url": "https://sunnah.com/bukhari:52"
+        }
+      ]
+    },
+    {
+      "id": "hadith_025",
+      "conceptId": "hadith_jibril_identity",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In the hadith of Jibril in Sahih Muslim 8a, who is the visiting questioner ultimately identified as?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jibril"
+        },
+        {
+          "id": "b",
+          "text": "A merchant seeking payment"
+        },
+        {
+          "id": "c",
+          "text": "The ruler of Persia"
+        },
+        {
+          "id": "d",
+          "text": "An unnamed enemy commander"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet explains that Jibril came to teach the companions their religion through the exchange.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "hadith_026",
+      "conceptId": "hadith_ihsan",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In the hadith of Jibril, how is ihsan explained?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worshipping only when other people watch"
+        },
+        {
+          "id": "b",
+          "text": "Worshipping Allah as though seeing Him, knowing He sees you even though you do not see Him"
+        },
+        {
+          "id": "c",
+          "text": "Knowing the date of the Hour"
+        },
+        {
+          "id": "d",
+          "text": "Avoiding all questions about religion"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The explanation concerns awareness of Allah in worship, not public display.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "hadith_027",
+      "conceptId": "hadith_nasihah",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "Which expression best captures nasihah in Sahih Muslim 55a?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insulting someone to win an argument"
+        },
+        {
+          "id": "b",
+          "text": "Public humiliation as a goal"
+        },
+        {
+          "id": "c",
+          "text": "Sincere commitment and counsel"
+        },
+        {
+          "id": "d",
+          "text": "Indifference to others' wellbeing"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The narration describes religion through nasihah and identifies those toward whom it is directed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "55a",
+          "label": "Sahih Muslim 55a",
+          "url": "https://sunnah.com/muslim:55a"
+        }
+      ]
+    },
+    {
+      "id": "hadith_028",
+      "conceptId": "hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Sahih Muslim 2564c, what does Allah look at rather than people's appearance and wealth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their clothing brands"
+        },
+        {
+          "id": "b",
+          "text": "Their family names alone"
+        },
+        {
+          "id": "c",
+          "text": "Their public follower counts"
+        },
+        {
+          "id": "d",
+          "text": "Their hearts and deeds"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The narration joins the heart with deeds, rather than making outward status the measure.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "hadith_029",
+      "conceptId": "hadith_seeking_knowledge",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Sahih Muslim 2699a, what is promised for taking a path in search of knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah facilitates a path to Paradise."
+        },
+        {
+          "id": "b",
+          "text": "The learner becomes incapable of error."
+        },
+        {
+          "id": "c",
+          "text": "The learner no longer needs sincere intentions."
+        },
+        {
+          "id": "d",
+          "text": "Every difficult question becomes instantly obvious."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report encourages seeking knowledge and also describes mutual help and gatherings of learning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "hadith_030",
+      "conceptId": "hadith_writing_hadith",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "In Sahih al-Bukhari 112, what did the Prophet instruct when a man from Yemen asked for the address in writing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Destroy every written record of the address."
+        },
+        {
+          "id": "b",
+          "text": "Have the address written for him."
+        },
+        {
+          "id": "c",
+          "text": "Refuse because writing could never preserve teaching."
+        },
+        {
+          "id": "d",
+          "text": "Replace the address with a poem."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report includes a specific instruction to write the address for the man.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "112",
+          "label": "Sahih al-Bukhari 112",
+          "url": "https://sunnah.com/bukhari:112"
+        }
+      ]
+    },
+    {
+      "id": "hadith_031",
+      "conceptId": "hadith_reference_completeness",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A message gives only a hadith number, without naming a collection. What is missing for a usable citation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sender's favourite colour"
+        },
+        {
+          "id": "b",
+          "text": "A count of how many times it was forwarded"
+        },
+        {
+          "id": "c",
+          "text": "The collection and enough details to identify the report"
+        },
+        {
+          "id": "d",
+          "text": "A decorative Arabic border"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A number identifies a report only within a reference system; the collection must also be known.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com: About Hadith; sources and numbering",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "hadith_032",
+      "conceptId": "hadith_edition_numbering",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Two editions use different numbers for apparently the same hadith. What is the most sensible next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Declare both reports fabricated immediately."
+        },
+        {
+          "id": "b",
+          "text": "Assume the larger number is more authentic."
+        },
+        {
+          "id": "c",
+          "text": "Choose whichever number is easiest to memorize."
+        },
+        {
+          "id": "d",
+          "text": "Compare the collection, wording and numbering systems."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Numbering can differ between editions and arrangements.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com: About Hadith; sources and numbering",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "hadith_033",
+      "conceptId": "hadith_book_presence",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A report appears in a hadith collection. Does its presence alone establish that it is authentic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No; collections have different inclusion criteria, so the report's status must be checked."
+        },
+        {
+          "id": "b",
+          "text": "Yes; every collection includes only authentic reports."
+        },
+        {
+          "id": "c",
+          "text": "Yes; printing a chain guarantees soundness."
+        },
+        {
+          "id": "d",
+          "text": "No; no written collection can preserve authentic reports."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Inclusion and authentication are separate questions.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com: About Hadith; sources and numbering",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "hadith_034",
+      "conceptId": "hadith_quotation_commentary",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A page contains a hadith followed by an editor's explanation. What should be done before quoting both as the Prophet's words?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep everything inside one prophetic quotation."
+        },
+        {
+          "id": "b",
+          "text": "Separate the transmitted text from the explanation."
+        },
+        {
+          "id": "c",
+          "text": "Treat the editor as a companion automatically."
+        },
+        {
+          "id": "d",
+          "text": "Assume every sentence on a hadith page has the same speaker."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Only the report's actual wording should be represented as its transmitted text.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com: About Hadith; sources and numbering",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "hadith_035",
+      "conceptId": "hadith_small_transmission",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Sahih al-Bukhari 3461 encourages conveying even a small amount. Which clause in the same report prevents using this as permission to invent material?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promise that popularity authenticates every saying"
+        },
+        {
+          "id": "b",
+          "text": "An instruction to omit every source"
+        },
+        {
+          "id": "c",
+          "text": "Its warning against deliberately lying about the Prophet"
+        },
+        {
+          "id": "d",
+          "text": "A statement that good intentions change invented words into hadith"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Encouragement to convey teaching appears alongside a grave warning against false attribution.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3461",
+          "label": "Sahih al-Bukhari 3461",
+          "url": "https://sunnah.com/bukhari:3461"
+        }
+      ]
+    },
+    {
+      "id": "hadith_036",
+      "conceptId": "hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone uses the hadith on intentions to argue that a good motive makes any method acceptable. Which assessment is most careful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A sincere motive automatically makes all methods lawful."
+        },
+        {
+          "id": "b",
+          "text": "Only public actions need intentions."
+        },
+        {
+          "id": "c",
+          "text": "The hadith says actions have no importance at all."
+        },
+        {
+          "id": "d",
+          "text": "The hadith establishes the importance of intention; it does not by itself authorize every method."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A principle about intention should not be expanded into an unrestricted permission absent from the text.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "hadith_037",
+      "conceptId": "hadith_indiscriminate_transmission",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A moving religious story arrives without a source. Which response best follows the warning against narrating everything heard?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pause and verify its attribution before sharing it as hadith."
+        },
+        {
+          "id": "b",
+          "text": "Share it because it produced tears."
+        },
+        {
+          "id": "c",
+          "text": "Add a hadith number from an unrelated report."
+        },
+        {
+          "id": "d",
+          "text": "Assume a religious image proves its origin."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Emotional impact does not establish whether the Prophet said something.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "Sahih Muslim 5",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "hadith_038",
+      "conceptId": "hadith_strength",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone interprets the instruction about anger as saying moral strength means overpowering opponents. Which related narration most directly corrects this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The report identifying the number of sacred months"
+        },
+        {
+          "id": "b",
+          "text": "The narration defining strength as self-control when angry"
+        },
+        {
+          "id": "c",
+          "text": "The narration about writing for Abu Shah"
+        },
+        {
+          "id": "d",
+          "text": "The report about migration intentions alone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Reading the anger advice with the description of strength emphasizes restraint rather than domination.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6116",
+          "label": "Sahih al-Bukhari 6116",
+          "url": "https://sunnah.com/bukhari:6116"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "hadith_039",
+      "conceptId": "hadith_trustworthiness",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A Muslim breaks a promise, and someone cites Sahih al-Bukhari 33 to declare them outside Islam. What conclusion does the cited narration directly support?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every broken promise automatically proves disbelief."
+        },
+        {
+          "id": "b",
+          "text": "Only non-Muslims can ever break promises."
+        },
+        {
+          "id": "c",
+          "text": "Promise-breaking is a serious hypocritical trait; the report alone does not establish that person's exclusion from Islam."
+        },
+        {
+          "id": "d",
+          "text": "The report makes honest repentance impossible."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The warning identifies dangerous conduct; judging a particular person's faith requires more than this isolated observation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "Sahih al-Bukhari 33",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "hadith_040",
+      "conceptId": "hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone says the hadith about hearts means conduct never matters. Which part of Sahih Muslim 2564c challenges the claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It says wealth is the only criterion."
+        },
+        {
+          "id": "b",
+          "text": "It says all intentions are equally sincere."
+        },
+        {
+          "id": "c",
+          "text": "It excludes every outward action from consideration."
+        },
+        {
+          "id": "d",
+          "text": "It explicitly mentions deeds alongside hearts."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report does not contrast the heart with moral responsibility; it names hearts and deeds together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "hadith_041",
+      "conceptId": "hadith_loss_knowledge",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "After reading Sahih al-Bukhari 100, what should a learner avoid when asked a religious question beyond their knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving a confident ruling without knowledge"
+        },
+        {
+          "id": "b",
+          "text": "Admitting uncertainty"
+        },
+        {
+          "id": "c",
+          "text": "Referring the question to a qualified scholar"
+        },
+        {
+          "id": "d",
+          "text": "Continuing to learn"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narration warns of uninformed leaders who answer without knowledge and mislead themselves and others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "100",
+          "label": "Sahih al-Bukhari 100",
+          "url": "https://sunnah.com/bukhari:100"
+        }
+      ]
+    },
+    {
+      "id": "hadith_042",
+      "conceptId": "hadith_consistency",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person uses the encouragement of small regular deeds to justify abandoning obligations. What is the best reading?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Small voluntary deeds automatically replace all duties."
+        },
+        {
+          "id": "b",
+          "text": "The narration praises consistency; it does not itself cancel obligations."
+        },
+        {
+          "id": "c",
+          "text": "Any action is acceptable if repeated often."
+        },
+        {
+          "id": "d",
+          "text": "Only the size of an action matters, never its regularity."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The praise of sustained deeds should not be made into an exemption that the narration does not state.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "Sahih al-Bukhari 6464",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "hadith_043",
+      "conceptId": "hadith_jibril_identity",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "What feature of the hadith of Jibril shows that questions can serve a teaching purpose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The companions were forbidden to learn from the exchange."
+        },
+        {
+          "id": "b",
+          "text": "The questioner was praised for concealing every answer."
+        },
+        {
+          "id": "c",
+          "text": "The Prophet identifies the questioner's visit as teaching the community."
+        },
+        {
+          "id": "d",
+          "text": "The encounter made explanation unnecessary."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The exchange models instruction through questions and answers, followed by clarification of the visitor's identity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "hadith_044",
+      "conceptId": "hadith_good_speech",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "A person treats the instruction to speak good or remain silent as a ban on all beneficial speech. What has been overlooked?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The hadith commands continuous talking."
+        },
+        {
+          "id": "b",
+          "text": "The hadith applies only to business records."
+        },
+        {
+          "id": "c",
+          "text": "The hadith says silence changes falsehood into truth."
+        },
+        {
+          "id": "d",
+          "text": "Speaking good is itself one of the options the hadith gives."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Responsible speech includes useful good speech; silence is not presented as the sole acceptable action.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6475",
+          "label": "Sahih al-Bukhari 6475",
+          "url": "https://sunnah.com/bukhari:6475"
+        }
+      ]
+    },
+    {
+      "id": "hadith_045",
+      "conceptId": "hadith_writing_hadith",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "Someone claims no prophetic teaching was ever written during the Prophet's lifetime. Which report directly challenges this absolute claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The instruction to write an address for a man from Yemen"
+        },
+        {
+          "id": "b",
+          "text": "The report about controlling anger"
+        },
+        {
+          "id": "c",
+          "text": "The report about regular deeds"
+        },
+        {
+          "id": "d",
+          "text": "The report about welcoming a guest"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The specific writing instruction is enough to disprove the claim that there was never any writing at all.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "112",
+          "label": "Sahih al-Bukhari 112",
+          "url": "https://sunnah.com/bukhari:112"
+        }
+      ]
+    },
+    {
+      "id": "hadith_046",
+      "conceptId": "hadith_sahih",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A chain contains accurate, trustworthy narrators. Is that fact alone sufficient to establish sahih status?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; no other condition exists."
+        },
+        {
+          "id": "b",
+          "text": "No; continuity and freedom from disqualifying anomaly or hidden defect also matter."
+        },
+        {
+          "id": "c",
+          "text": "Yes; an attractive meaning supplies every missing condition."
+        },
+        {
+          "id": "d",
+          "text": "No; trustworthy narrators can never transmit a sound report."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "All relevant conditions matter.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_047",
+      "conceptId": "hadith_chain_text_scope",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A specialist says a particular chain is sound. Which further claim should not be assumed automatically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The statement concerns an assessment of transmission."
+        },
+        {
+          "id": "b",
+          "text": "The exact report under discussion should be identified."
+        },
+        {
+          "id": "c",
+          "text": "Every wording attributed to that report, including later additions, is thereby authenticated."
+        },
+        {
+          "id": "d",
+          "text": "The scope of the specialist's wording matters."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Assess additions separately.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_048",
+      "conceptId": "hadith_daif",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Why is it inaccurate to label every weak report fabricated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every weak report is necessarily sound."
+        },
+        {
+          "id": "b",
+          "text": "Fabrication refers only to spelling mistakes."
+        },
+        {
+          "id": "c",
+          "text": "Weak and fabricated are always interchangeable labels."
+        },
+        {
+          "id": "d",
+          "text": "Weakness may arise from a transmission problem without proof that the report was invented."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Weakness need not mean invention.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_049",
+      "conceptId": "hadith_corroboration_limits",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Several transmission routes appear to support a report. What must be checked before claiming that their number strengthens it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their independence and the nature of their defects"
+        },
+        {
+          "id": "b",
+          "text": "Only the number of social-media accounts quoting them"
+        },
+        {
+          "id": "c",
+          "text": "Whether all routes use the same font"
+        },
+        {
+          "id": "d",
+          "text": "Whether the conclusion would be emotionally pleasing"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Comparing routes requires more than counting them.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_050",
+      "conceptId": "hadith_ahad_authenticity",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A report is classified as ahad. Which statement avoids confusing transmission quantity with authenticity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ahad automatically means fabricated."
+        },
+        {
+          "id": "b",
+          "text": "It still needs assessment and can be accepted or rejected depending on the evidence."
+        },
+        {
+          "id": "c",
+          "text": "Ahad automatically means every wording is beyond examination."
+        },
+        {
+          "id": "d",
+          "text": "Ahad is simply another name for a Quranic verse."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ahad reports include accepted and rejected reports.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_051",
+      "conceptId": "hadith_apparent_conflict",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Two accepted narrations appear to conflict. What should precede declaring that one has been abrogated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Select the one that matches personal preference."
+        },
+        {
+          "id": "b",
+          "text": "Assume the shorter one must be later."
+        },
+        {
+          "id": "c",
+          "text": "Examine whether they can be reconciled in context."
+        },
+        {
+          "id": "d",
+          "text": "Declare both fabricated immediately."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Consider reconciliation first.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_052",
+      "conceptId": "hadith_apparent_conflict",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Why is knowing which report is later important to a specific claim of abrogation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A report's page number always establishes its date."
+        },
+        {
+          "id": "b",
+          "text": "The less popular report must be earlier."
+        },
+        {
+          "id": "c",
+          "text": "A reader's preference determines historical order."
+        },
+        {
+          "id": "d",
+          "text": "Supersession requires an established later instruction, not an assumed sequence."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Sequence requires evidence.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Ibn Hajar: Nukhbat al-Fikr, sections on transmission, accepted reports and defects",
+          "url": "https://islamcontent.com/storage/contents/2498/en_Nukhbat_al_Fikr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "hadith_053",
+      "conceptId": "hadith_fabrication_warning",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A saying contains sound advice, but its prophetic attribution has not been established. Which presentation is most responsible?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Present the advice without claiming the Prophet said it, while investigating the attribution."
+        },
+        {
+          "id": "b",
+          "text": "Declare it authentic because its advice is good."
+        },
+        {
+          "id": "c",
+          "text": "Invent a chain to preserve the lesson."
+        },
+        {
+          "id": "d",
+          "text": "Say its meaning removes any need for a source."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Truthful advice and truthful attribution are distinct responsibilities; the warning against false attribution remains relevant.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "109",
+          "label": "Sahih al-Bukhari 109",
+          "url": "https://sunnah.com/bukhari:109"
+        }
+      ]
+    },
+    {
+      "id": "hadith_054",
+      "conceptId": "hadith_narrator_vs_prophet",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A narration in Muslim's Introduction records Ibn Sirin's own statement about checking sources. Who should be credited with that statement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Prophet automatically, because it appears in a hadith book"
+        },
+        {
+          "id": "b",
+          "text": "Ibn Sirin, unless separate evidence establishes prophetic attribution"
+        },
+        {
+          "id": "c",
+          "text": "The translator as the original speaker"
+        },
+        {
+          "id": "d",
+          "text": "Any companion chosen by the reader"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A collection can contain scholarly statements as well as prophetic reports. The cited passage explicitly attributes this statement to Ibn Sirin.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sahih Muslim, Introduction 26: statement of Ibn Sirin (in-book narration 25)",
+          "url": "https://sunnah.com/muslim/introduction/25"
+        }
+      ]
+    },
+    {
+      "id": "hadith_055",
+      "conceptId": "hadith_unqualified_ruling",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "A reader finds one authentic narration and immediately issues a complex legal verdict without training. What distinction matters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An authentic report never has any legal significance."
+        },
+        {
+          "id": "b",
+          "text": "A translation alone eliminates the need for context."
+        },
+        {
+          "id": "c",
+          "text": "Establishing a report's authenticity and deriving a ruling are different tasks."
+        },
+        {
+          "id": "d",
+          "text": "Every reader's first legal conclusion is equally authoritative."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Authenticity does not remove the need for interpretation and relevant evidence.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com: About Hadith; sources and numbering",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "hadith_056",
+      "conceptId": "hadith_grading_disagreement",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Two qualified specialists give different grades to a report. What should a careful learner preserve when recording the disagreement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only whichever grade is more convenient"
+        },
+        {
+          "id": "b",
+          "text": "An invented claim that all specialists agree"
+        },
+        {
+          "id": "c",
+          "text": "A conclusion that hadith study has no methods"
+        },
+        {
+          "id": "d",
+          "text": "Who graded it, the exact report or route assessed, and each stated judgment"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A grading belongs to a particular assessment; comparing evidence is more careful than erasing the disagreement.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Abu Dawud: Letter to the People of Makkah, discussion of collection methods and assessments",
+          "url": "https://sunnah.com/abudawud/letter"
+        }
+      ]
+    },
+    {
+      "id": "hadith_057",
+      "conceptId": "hadith_small_transmission",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Someone quotes only an encouraging part of Sahih al-Bukhari 3461 and omits its fabrication warning. Which response best preserves the report's meaning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read the encouragement together with the warning rather than turning permission to convey into permission to invent."
+        },
+        {
+          "id": "b",
+          "text": "Assume encouragement cancels every warning in the same narration."
+        },
+        {
+          "id": "c",
+          "text": "Treat the omitted warning as a translator's decorative note."
+        },
+        {
+          "id": "d",
+          "text": "Conclude that adding false sayings is recommended if they inspire people."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Selective quotation should not reverse the responsibility that the full narration establishes.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3461",
+          "label": "Sahih al-Bukhari 3461",
+          "url": "https://sunnah.com/bukhari:3461"
+        }
+      ]
+    },
+    {
+      "id": "hadith_058",
+      "conceptId": "hadith_judgment_qualification",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "Sahih al-Bukhari 7352 mentions reward for a judge who strives to reach a judgment but errs. Which inference exceeds what the report itself establishes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The narration distinguishes a correct judgment from an erroneous one."
+        },
+        {
+          "id": "b",
+          "text": "Any untrained person is guaranteed reward for guessing a religious ruling."
+        },
+        {
+          "id": "c",
+          "text": "The report concerns a judge exercising judgment."
+        },
+        {
+          "id": "d",
+          "text": "A mistake and a correct conclusion are not described identically."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report concerns striving in judgment; it is not an unrestricted endorsement of uninformed guessing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7352",
+          "label": "Sahih al-Bukhari 7352",
+          "url": "https://sunnah.com/bukhari:7352"
+        }
+      ]
+    },
+    {
+      "id": "hadith_059",
+      "conceptId": "hadith_hadith_qudsi_example",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "In Sahih Muslim 2577a, the Prophet narrates a message from his Lord. What feature makes this a clear example of hadith qudsi?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The report becomes a numbered Quranic ayah."
+        },
+        {
+          "id": "b",
+          "text": "The narration has no transmitters."
+        },
+        {
+          "id": "c",
+          "text": "The Prophet explicitly reports words from Allah."
+        },
+        {
+          "id": "d",
+          "text": "The message was composed by its English translator."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "This report is transmitted as hadith with attribution to Allah; it is not thereby part of the Quran.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2577a",
+          "label": "Sahih Muslim 2577a",
+          "url": "https://sunnah.com/muslim:2577a"
+        }
+      ]
+    },
+    {
+      "id": "hadith_060",
+      "conceptId": "hadith_fabrication_warning",
+      "categoryId": "hadith_knowledge",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "After sharing a saying as hadith, a person discovers that the attribution was false. What best serves truthful transmission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leave it unchanged because correcting it may be embarrassing."
+        },
+        {
+          "id": "b",
+          "text": "Replace its source with an unrelated authentic hadith number."
+        },
+        {
+          "id": "c",
+          "text": "Continue sharing it while privately admitting the problem."
+        },
+        {
+          "id": "d",
+          "text": "Correct the attribution clearly where it was shared and stop circulating it as prophetic."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The prohibition of false attribution supports correcting a known error rather than preserving its circulation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "107",
+          "label": "Sahih al-Bukhari 107",
+          "url": "https://sunnah.com/bukhari:107"
+        }
+      ]
+    }
+  ]
+}

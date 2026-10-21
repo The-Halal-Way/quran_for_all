@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "pro",
+  "categoryId": "character_conduct",
+  "title": "Character & Conduct",
+  "description": "General User → Pro. Familiar moral teachings, broader meanings and short everyday applications requiring deeper understanding. Covers respectful boundaries, family ties, responsible claims, personal accountability, privacy, integrity, making amends, generous conduct and shared spaces. All questions are Pro level within the General User audience; specialist legal disputes and individual fatwas are outside the scope.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro describes the knowledge and understanding required across all question styles. Styles are not difficulty levels. Requires deeper understanding, connecting familiar teachings and distinguishing common misconceptions beyond Mid, without specialist study. This is General User Pro, not the separate Ultra bank. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Modern scenarios illustrate the cited principles. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_pro_character_conduct_001",
+      "conceptId": "character_parents_respectful_refusal",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When parents pressure someone toward shirk, what two instructions does the Quran combine?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refuse that demand and continue courteous companionship"
+        },
+        {
+          "id": "b",
+          "text": "Obey the demand to preserve all family harmony"
+        },
+        {
+          "id": "c",
+          "text": "Refuse the demand and make contempt a duty"
+        },
+        {
+          "id": "d",
+          "text": "Treat disagreement as cancelling every family responsibility"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse separates refusal of shirk from treatment of parents: do not obey that demand, yet keep their company courteously.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "15",
+          "label": "Quran 31:15",
+          "url": "https://quran.com/31/15"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_002",
+      "conceptId": "character_kinship_beyond_reciprocity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who is especially described as maintaining kinship in the cited hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One who matches only the kindness received"
+        },
+        {
+          "id": "b",
+          "text": "One who maintains ties when relatives have cut them"
+        },
+        {
+          "id": "c",
+          "text": "One who contacts only influential relatives"
+        },
+        {
+          "id": "d",
+          "text": "One who makes every visit conditional on a gift"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report goes beyond returning favors and praises maintaining kinship when the other side has broken it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5991",
+          "label": "Sahih al-Bukhari 5991",
+          "url": "https://sunnah.com/bukhari:5991"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_003",
+      "conceptId": "character_claims_and_knowledge",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which faculties are linked with accountability in the verse warning against following without knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wealth, professional rank and popularity"
+        },
+        {
+          "id": "b",
+          "text": "Physical strength, age and family size"
+        },
+        {
+          "id": "c",
+          "text": "Hearing, sight and the heart"
+        },
+        {
+          "id": "d",
+          "text": "Travel experience, clothing and possessions"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse connects responsible knowledge with accountability for hearing, sight and the heart, rather than outward status.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_004",
+      "conceptId": "character_individual_responsibility",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What principle does the Quran state about one person's burden of sin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A relative automatically inherits every moral fault"
+        },
+        {
+          "id": "b",
+          "text": "Group membership proves each member equally guilty"
+        },
+        {
+          "id": "c",
+          "text": "A respected family name removes personal accountability"
+        },
+        {
+          "id": "d",
+          "text": "No person bears another's burden merely by association"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse affirms personal moral responsibility. Another person's wrongdoing does not automatically establish an uninvolved person's guilt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_005",
+      "conceptId": "character_household_privacy",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which household privacy times are specified for children's requests to enter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Before Fajr, the midday undressing period and after Isha"
+        },
+        {
+          "id": "b",
+          "text": "Only before guests arrive and after they leave"
+        },
+        {
+          "id": "c",
+          "text": "Only during meals and the weekly family meeting"
+        },
+        {
+          "id": "d",
+          "text": "Every moment outside obligatory prayer without distinction"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse identifies three particular times of privacy, showing that everyday familiarity does not remove the need for household boundaries.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "58",
+          "label": "Quran 24:58",
+          "url": "https://quran.com/24/58"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_006",
+      "conceptId": "character_obedience_in_good",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What principle did the Prophet give after a commander's order to enter a fire?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An appointed leader makes every instruction right"
+        },
+        {
+          "id": "b",
+          "text": "Obedience applies to what is good, not wrongdoing"
+        },
+        {
+          "id": "c",
+          "text": "A dangerous command becomes right when repeated"
+        },
+        {
+          "id": "d",
+          "text": "A subordinate never bears responsibility for obeying"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report places a moral limit on obedience; holding authority does not turn an evil instruction into a good one.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7257",
+          "label": "Sahih al-Bukhari 7257",
+          "url": "https://sunnah.com/bukhari:7257"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_007",
+      "conceptId": "character_words_and_deeds",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What mismatch receives a strong warning in Surah al-Saff?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning from a person younger than oneself"
+        },
+        {
+          "id": "b",
+          "text": "Asking for help before taking action"
+        },
+        {
+          "id": "c",
+          "text": "Saying what one does not do"
+        },
+        {
+          "id": "d",
+          "text": "Changing an opinion after learning better evidence"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verses warn against a gap between professed words and conduct, directing attention to personal integrity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 61,
+          "ayahs": "2-3",
+          "label": "Quran 61:2-3",
+          "url": "https://quran.com/61/2-3"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_008",
+      "conceptId": "character_kind_words_over_hurtful_giving",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran describe as better than charity followed by hurt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A larger donation with a harsher insult"
+        },
+        {
+          "id": "b",
+          "text": "A gift that creates permanent personal control"
+        },
+        {
+          "id": "c",
+          "text": "A public account of the recipient's shortcomings"
+        },
+        {
+          "id": "d",
+          "text": "Kind speech and forgiveness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse values kind speech and pardon above giving followed by injury, showing that a transfer of money alone is not enough.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "263",
+          "label": "Quran 2:263",
+          "url": "https://quran.com/2/263"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_009",
+      "conceptId": "character_amends_before_judgment",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Prophet urge someone who has wronged another's reputation or rights to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seek release from the wrong before the Hereafter"
+        },
+        {
+          "id": "b",
+          "text": "Wait until good deeds make the victim irrelevant"
+        },
+        {
+          "id": "c",
+          "text": "Assume time alone settles the person's claim"
+        },
+        {
+          "id": "d",
+          "text": "Replace every apology with a display of wealth"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report urges addressing a person's grievance now, before accountability when money cannot settle it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_010",
+      "conceptId": "character_concealing_private_faults",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What response to another Muslim's faults receives encouragement in the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collecting them for later humiliation"
+        },
+        {
+          "id": "b",
+          "text": "Concealing them rather than needlessly exposing them"
+        },
+        {
+          "id": "c",
+          "text": "Publishing them to gain an audience"
+        },
+        {
+          "id": "d",
+          "text": "Treating disclosure as a competition for status"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report praises concealing faults. Its encouragement should be applied with the wider duties of justice and protecting people in view.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_011",
+      "conceptId": "character_ending_personal_estrangement",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the report about two estranged Muslims, who is described as better?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The one who makes the other wait longest"
+        },
+        {
+          "id": "b",
+          "text": "The one whose friends take their side"
+        },
+        {
+          "id": "c",
+          "text": "The one who begins the greeting"
+        },
+        {
+          "id": "d",
+          "text": "The one who refuses every peaceful opening"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report praises initiating salam, challenging the idea that taking the first peaceful step is a defeat.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6077",
+          "label": "Sahih al-Bukhari 6077",
+          "url": "https://sunnah.com/bukhari:6077"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_012",
+      "conceptId": "character_private_counsel_purpose",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What distinction does the Quran make about private conversations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Privacy makes any plan morally acceptable"
+        },
+        {
+          "id": "b",
+          "text": "All private conversations are inherently forbidden"
+        },
+        {
+          "id": "c",
+          "text": "Only the number of participants determines rightness"
+        },
+        {
+          "id": "d",
+          "text": "Converse for goodness, not sin and aggression"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse assesses the purpose of private counsel, directing it toward righteousness instead of wrongdoing and aggression.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "9",
+          "label": "Quran 58:9",
+          "url": "https://quran.com/58/9"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_013",
+      "conceptId": "character_feeding_without_return",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which recipients are named in the verses praising feeding others for Allah's sake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The poor, the orphan and the captive"
+        },
+        {
+          "id": "b",
+          "text": "Only wealthy guests and prominent leaders"
+        },
+        {
+          "id": "c",
+          "text": "Only relatives who can repay the meal"
+        },
+        {
+          "id": "d",
+          "text": "Only people who publicly praise the giver"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses describe feeding vulnerable people for Allah without seeking repayment or thanks.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 76,
+          "ayahs": "8-9",
+          "label": "Quran 76:8-9",
+          "url": "https://quran.com/76/8-9"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_014",
+      "conceptId": "character_giving_cherished_possessions",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What kind of giving is connected with attaining righteousness in the cited verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving only what one actively despises"
+        },
+        {
+          "id": "b",
+          "text": "Spending from what one cherishes"
+        },
+        {
+          "id": "c",
+          "text": "Announcing a gift without actually giving it"
+        },
+        {
+          "id": "d",
+          "text": "Choosing donations solely for public recognition"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse calls for giving from what is loved, directing attention to the giver's attachment as well as the outward gift.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "92",
+          "label": "Quran 3:92",
+          "url": "https://quran.com/3/92"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_015",
+      "conceptId": "character_orphan_and_asker_dignity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What paired guidance does Surah al-Duha give about an orphan and someone asking for help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give influence only to those able to repay"
+        },
+        {
+          "id": "b",
+          "text": "Use vulnerability as a reason for public ridicule"
+        },
+        {
+          "id": "c",
+          "text": "Do not oppress the orphan or harshly repel the asker"
+        },
+        {
+          "id": "d",
+          "text": "Demand a flattering speech before showing courtesy"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verses protect vulnerable people from oppression and harsh rejection, making dignified treatment part of the response.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9",
+          "label": "Quran 93:9",
+          "url": "https://quran.com/93/9"
+        },
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "10",
+          "label": "Quran 93:10",
+          "url": "https://quran.com/93/10"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_016",
+      "conceptId": "character_leniency_in_transactions",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which settings are joined in the Prophet's prayer for a lenient person?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buying only when a crowd is watching"
+        },
+        {
+          "id": "b",
+          "text": "Selling only to close family members"
+        },
+        {
+          "id": "c",
+          "text": "Seeking repayment only through public embarrassment"
+        },
+        {
+          "id": "d",
+          "text": "Buying, selling and seeking repayment"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report praises an accommodating manner across commercial dealings, including when a person is seeking what is owed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2076",
+          "label": "Sahih al-Bukhari 2076",
+          "url": "https://sunnah.com/bukhari:2076"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_017",
+      "conceptId": "character_truthful_humor",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When companions mentioned the Prophet's joking, what limit did he describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He spoke only what was true"
+        },
+        {
+          "id": "b",
+          "text": "Joking made truthfulness unnecessary"
+        },
+        {
+          "id": "c",
+          "text": "A laugh automatically justified a false account"
+        },
+        {
+          "id": "d",
+          "text": "Truth mattered only in formal testimony"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report allows a place for humor while keeping it within truthfulness, rather than treating amusement as an exemption.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1990",
+          "label": "Jami at-Tirmidhi 1990",
+          "url": "https://sunnah.com/tirmidhi:1990"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_018",
+      "conceptId": "character_weight_of_careless_speech",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What contrast does the hadith draw about words a speaker may treat lightly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A brief remark can never have serious consequences"
+        },
+        {
+          "id": "b",
+          "text": "A word can bring elevation or grave accountability before Allah"
+        },
+        {
+          "id": "c",
+          "text": "Only a prepared speech carries moral weight"
+        },
+        {
+          "id": "d",
+          "text": "Approval from listeners always determines a word's worth"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report warns that a speaker's casual attitude does not determine the spiritual seriousness of what is said.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "Sahih al-Bukhari 6478",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_019",
+      "conceptId": "character_rights_of_public_space",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet require of people who continued gathering beside the road?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat the gathering as ownership of the road"
+        },
+        {
+          "id": "b",
+          "text": "Require passersby to avoid their conversation area"
+        },
+        {
+          "id": "c",
+          "text": "Observe the rights of the way"
+        },
+        {
+          "id": "d",
+          "text": "Judge strangers' worth by their clothes"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report lists duties including avoiding harm, lowering the gaze and returning greetings, connecting social gatherings with others' rights.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2465",
+          "label": "Sahih al-Bukhari 2465",
+          "url": "https://sunnah.com/bukhari:2465"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_020",
+      "conceptId": "character_balanced_spending",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Between which two extremes does the Quran praise balance in spending?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Generosity and honesty"
+        },
+        {
+          "id": "b",
+          "text": "Gratitude and responsible planning"
+        },
+        {
+          "id": "c",
+          "text": "Lawful earning and fulfilling duties"
+        },
+        {
+          "id": "d",
+          "text": "Extravagance and stinginess"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse praises measured spending between wastefulness and miserliness, rather than making either extreme a virtue.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_021",
+      "conceptId": "character_parents_respectful_refusal",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does refusing a wrongful parental demand not automatically justify insulting the parent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refusal and courteous treatment are distinct responsibilities"
+        },
+        {
+          "id": "b",
+          "text": "Respect requires accepting every religious demand"
+        },
+        {
+          "id": "c",
+          "text": "Any disagreement cancels the value of courtesy"
+        },
+        {
+          "id": "d",
+          "text": "Only agreement can make respectful behavior possible"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse keeps courteous companionship alongside refusal of shirk. A boundary about obedience does not itself authorize contempt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "15",
+          "label": "Quran 31:15",
+          "url": "https://quran.com/31/15"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_022",
+      "conceptId": "character_kinship_beyond_reciprocity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What separates maintaining kinship from merely matching relatives' favors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every contact must produce a matching gift"
+        },
+        {
+          "id": "b",
+          "text": "Care is not entirely conditional on equal returns"
+        },
+        {
+          "id": "c",
+          "text": "Family kindness counts only if initiated by others"
+        },
+        {
+          "id": "d",
+          "text": "Unreturned greetings erase all value from one's effort"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report praises preserving ties beyond a strict exchange of favors, rather than measuring every effort by immediate reciprocity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5991",
+          "label": "Sahih al-Bukhari 5991",
+          "url": "https://sunnah.com/bukhari:5991"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_023",
+      "conceptId": "character_claims_and_knowledge",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is sounding certain not enough to make an unsupported claim responsible?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A confident tone turns a guess into evidence"
+        },
+        {
+          "id": "b",
+          "text": "Repeated wording removes the need for a basis"
+        },
+        {
+          "id": "c",
+          "text": "Confidence does not supply the knowledge the claim lacks"
+        },
+        {
+          "id": "d",
+          "text": "An impressive position makes every statement reliable"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse restrains following without knowledge and emphasizes accountability. The manner of speaking cannot replace a sound basis.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_024",
+      "conceptId": "character_individual_responsibility",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does rejecting collective blame mean a person is never accountable for their own involvement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; belonging to a group removes all accountability"
+        },
+        {
+          "id": "b",
+          "text": "Yes; only the group's most famous member can be responsible"
+        },
+        {
+          "id": "c",
+          "text": "No; innocent relatives must share every penalty"
+        },
+        {
+          "id": "d",
+          "text": "No; personal participation still carries personal responsibility"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The principle rejects automatically transferring guilt; it does not remove responsibility for a person's own wrongdoing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_025",
+      "conceptId": "character_household_privacy",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does teaching children to seek permission at private times show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Family familiarity and personal privacy can coexist"
+        },
+        {
+          "id": "b",
+          "text": "Privacy matters only when strangers visit"
+        },
+        {
+          "id": "c",
+          "text": "Living together removes every need for permission"
+        },
+        {
+          "id": "d",
+          "text": "Only public buildings require any boundaries"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse builds permission into household life. Familiarity does not mean that every private moment must be openly accessible.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "58",
+          "label": "Quran 24:58",
+          "url": "https://quran.com/24/58"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_026",
+      "conceptId": "character_obedience_in_good",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does a superior's instruction not settle whether an action is morally right?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rank automatically changes wrongdoing into goodness"
+        },
+        {
+          "id": "b",
+          "text": "Authority has limits where wrongdoing is ordered"
+        },
+        {
+          "id": "c",
+          "text": "Responsibility always transfers entirely to the person giving orders"
+        },
+        {
+          "id": "d",
+          "text": "An instruction becomes right if enough people obey it"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet limited obedience to what is good. Another person's authority is not an unrestricted moral exemption.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7257",
+          "label": "Sahih al-Bukhari 7257",
+          "url": "https://sunnah.com/bukhari:7257"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_027",
+      "conceptId": "character_words_and_deeds",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What should someone examine when they repeatedly promote a virtue they deliberately ignore?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only whether the audience applauds the message"
+        },
+        {
+          "id": "b",
+          "text": "Only whether others make worse mistakes"
+        },
+        {
+          "id": "c",
+          "text": "The consistency between their own words and conduct"
+        },
+        {
+          "id": "d",
+          "text": "Whether popularity can replace personal practice"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The warning concerns saying what one does not do. It calls for integrity rather than using a good message to excuse one's conduct.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 61,
+          "ayahs": "2-3",
+          "label": "Quran 61:2-3",
+          "url": "https://quran.com/61/2-3"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_028",
+      "conceptId": "character_kind_words_over_hurtful_giving",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does preferring kind words to hurtful charity show about generosity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A large amount makes humiliating treatment acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Courtesy matters only when nothing is donated"
+        },
+        {
+          "id": "c",
+          "text": "A recipient's dignity disappears once help is needed"
+        },
+        {
+          "id": "d",
+          "text": "The manner of treatment matters alongside the material gift"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse compares speech with a gift followed by injury, showing why generosity cannot be assessed by amount alone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "263",
+          "label": "Quran 2:263",
+          "url": "https://quran.com/2/263"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_029",
+      "conceptId": "character_amends_before_judgment",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does doing unrelated good deeds not justify ignoring someone one has wronged?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The person's grievance still needs to be addressed"
+        },
+        {
+          "id": "b",
+          "text": "A good reputation cancels every personal grievance"
+        },
+        {
+          "id": "c",
+          "text": "Only wrongs involving large sums can matter"
+        },
+        {
+          "id": "d",
+          "text": "Time automatically converts an unresolved wrong into permission"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report warns that unresolved oppression has consequences even for someone with good deeds, urging settlement of the wrong now.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_030",
+      "conceptId": "character_concealing_private_faults",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How should concealing faults be understood alongside the duty of justice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat privacy as permission to falsify necessary testimony"
+        },
+        {
+          "id": "b",
+          "text": "Avoid needless exposure without using privacy to obstruct justice"
+        },
+        {
+          "id": "c",
+          "text": "Make every private mistake public regardless of need"
+        },
+        {
+          "id": "d",
+          "text": "Protect a person's image by denying every victim's rights"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The encouragement to conceal faults must be read with the Quran's command to uphold justice. Neither needless humiliation nor dishonest shielding follows.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "135",
+          "label": "Quran 4:135",
+          "url": "https://quran.com/4/135"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_031",
+      "conceptId": "character_ending_personal_estrangement",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is initiating salam after an ordinary personal quarrel not a sign of defeat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The first greeting proves every disputed claim was false"
+        },
+        {
+          "id": "b",
+          "text": "A greeting transfers all blame to its speaker"
+        },
+        {
+          "id": "c",
+          "text": "The report gives merit to the person who begins"
+        },
+        {
+          "id": "d",
+          "text": "Merit belongs only to whoever receives the greeting"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report honors the first peaceful greeting, challenging pride that prolongs personal estrangement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6077",
+          "label": "Sahih al-Bukhari 6077",
+          "url": "https://sunnah.com/bukhari:6077"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_032",
+      "conceptId": "character_private_counsel_purpose",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does discussing something privately make it automatically blameworthy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; every private plan is necessarily sinful"
+        },
+        {
+          "id": "b",
+          "text": "No; privacy makes every kind of aggression acceptable"
+        },
+        {
+          "id": "c",
+          "text": "Yes; only public decisions can involve good intentions"
+        },
+        {
+          "id": "d",
+          "text": "No; its purpose can be righteous or wrongful"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse contrasts sinful private counsel with counsel for goodness, so privacy alone is not the decisive moral test.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "9",
+          "label": "Quran 58:9",
+          "url": "https://quran.com/58/9"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_033",
+      "conceptId": "character_feeding_without_return",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is demanding public praise inconsistent with the motive described in these feeding verses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The givers seek Allah's pleasure rather than repayment or thanks"
+        },
+        {
+          "id": "b",
+          "text": "A meal has value only when the recipient advertises it"
+        },
+        {
+          "id": "c",
+          "text": "People unable to praise cannot receive meaningful help"
+        },
+        {
+          "id": "d",
+          "text": "Giving becomes sincere only after an audience approves"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The givers seek Allah's pleasure without demanding repayment or thanks. Their help is not a purchase of admiration.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 76,
+          "ayahs": "8-9",
+          "label": "Quran 76:8-9",
+          "url": "https://quran.com/76/8-9"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_034",
+      "conceptId": "character_giving_cherished_possessions",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why can giving something one genuinely values express a deeper generosity than clearing unwanted clutter alone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the market price determines every gift's worth"
+        },
+        {
+          "id": "b",
+          "text": "It challenges attachment to what the giver loves"
+        },
+        {
+          "id": "c",
+          "text": "Useful belongings must never be donated"
+        },
+        {
+          "id": "d",
+          "text": "Every possession must be given away at once"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse directs spending toward cherished things. It does not say that every possession must be surrendered immediately.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "92",
+          "label": "Quran 3:92",
+          "url": "https://quran.com/3/92"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_035",
+      "conceptId": "character_orphan_and_asker_dignity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What shared concern links the instructions about the orphan and the asker?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help is valuable only when the recipient has influence"
+        },
+        {
+          "id": "b",
+          "text": "Need makes a person less entitled to respectful treatment"
+        },
+        {
+          "id": "c",
+          "text": "Vulnerability is not permission for humiliation or oppression"
+        },
+        {
+          "id": "d",
+          "text": "Courtesy must depend on a guaranteed material return"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verses address how vulnerable people are treated, so an outward offer of help cannot excuse oppressive or harsh conduct.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9",
+          "label": "Quran 93:9",
+          "url": "https://quran.com/93/9"
+        },
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "10",
+          "label": "Quran 93:10",
+          "url": "https://quran.com/93/10"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_036",
+      "conceptId": "character_leniency_in_transactions",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How can leniency in seeking repayment coexist with having a legitimate claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A valid claim automatically permits every form of intimidation"
+        },
+        {
+          "id": "b",
+          "text": "Leniency means that no obligation can ever be mentioned"
+        },
+        {
+          "id": "c",
+          "text": "Only someone abandoning every claim can show good character"
+        },
+        {
+          "id": "d",
+          "text": "One can seek what is owed without unnecessary harshness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report includes seeking repayment among settings for leniency. Claiming a right and acting considerately are not opposites.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2076",
+          "label": "Sahih al-Bukhari 2076",
+          "url": "https://sunnah.com/bukhari:2076"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_037",
+      "conceptId": "character_truthful_humor",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which understanding preserves both the Prophet's humor and his stated standard?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cheerfulness does not require making false claims"
+        },
+        {
+          "id": "b",
+          "text": "Truthfulness requires removing every lighthearted moment"
+        },
+        {
+          "id": "c",
+          "text": "A listener's laughter makes any false claim truthful"
+        },
+        {
+          "id": "d",
+          "text": "A humorous tone removes all responsibility for accuracy"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report combines joking with truth, showing that warmth and honest speech can coexist.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1990",
+          "label": "Jami at-Tirmidhi 1990",
+          "url": "https://sunnah.com/tirmidhi:1990"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_038",
+      "conceptId": "character_weight_of_careless_speech",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does calling a remark casual not settle its moral seriousness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only formally recorded statements can be serious"
+        },
+        {
+          "id": "b",
+          "text": "The speaker may underestimate words that matter greatly before Allah"
+        },
+        {
+          "id": "c",
+          "text": "A short statement cannot hurt or benefit anyone"
+        },
+        {
+          "id": "d",
+          "text": "The absence of a prepared script guarantees innocence"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report warns about the weight of words a person treats lightly. Casual delivery does not make their consequences irrelevant.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "Sahih al-Bukhari 6478",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_039",
+      "conceptId": "character_rights_of_public_space",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What changes when friends use a shared road as their meeting place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their enjoyment gives them priority over every passerby"
+        },
+        {
+          "id": "b",
+          "text": "Familiarity with the area removes duties toward strangers"
+        },
+        {
+          "id": "c",
+          "text": "Their gathering must still respect the rights of passersby"
+        },
+        {
+          "id": "d",
+          "text": "A conversation automatically converts public space into private space"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report permits no disregard for others merely because people want to gather. The rights of the way remain important.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2465",
+          "label": "Sahih al-Bukhari 2465",
+          "url": "https://sunnah.com/bukhari:2465"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_040",
+      "conceptId": "character_balanced_spending",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is refusing every useful expense not automatically the moderation praised in the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The lowest possible spending always proves the most piety"
+        },
+        {
+          "id": "b",
+          "text": "Moderation means that every expense is equally wrong"
+        },
+        {
+          "id": "c",
+          "text": "Saving any money removes every responsibility toward others"
+        },
+        {
+          "id": "d",
+          "text": "The verse rejects stinginess as well as extravagance"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The praised balance lies between two extremes. Avoiding waste does not turn miserliness into a virtue.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_041",
+      "conceptId": "character_parents_respectful_refusal",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A parent demands participation in shirk. Which response combines the verse's two instructions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decline the demand while preserving respectful treatment"
+        },
+        {
+          "id": "b",
+          "text": "Participate because respect requires agreement"
+        },
+        {
+          "id": "c",
+          "text": "Use the demand as permission for insults"
+        },
+        {
+          "id": "d",
+          "text": "Treat all future courtesy as religiously forbidden"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse requires refusing shirk while continuing courteous companionship. Disagreement about obedience does not remove the instruction about treatment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "15",
+          "label": "Quran 31:15",
+          "url": "https://quran.com/31/15"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_042",
+      "conceptId": "character_kinship_beyond_reciprocity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "In a safe family relationship, a relative rarely initiates contact. Which response goes beyond exchanging equal favors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "End all contact until an equal number of messages arrives"
+        },
+        {
+          "id": "b",
+          "text": "Make a kind effort without requiring an identical return"
+        },
+        {
+          "id": "c",
+          "text": "Measure every act of kindness against gifts received"
+        },
+        {
+          "id": "d",
+          "text": "Announce that only influential relatives deserve attention"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report praises maintaining ties beyond reciprocity. This ordinary situation concerns initiative, not exposure to danger or abuse.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5991",
+          "label": "Sahih al-Bukhari 5991",
+          "url": "https://sunnah.com/bukhari:5991"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_043",
+      "conceptId": "character_claims_and_knowledge",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Asked to explain an incident you only partly observed, what response fits responsible knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fill the gaps with a confident account"
+        },
+        {
+          "id": "b",
+          "text": "Present a guess as something personally witnessed"
+        },
+        {
+          "id": "c",
+          "text": "Separate what you know from what you cannot confirm"
+        },
+        {
+          "id": "d",
+          "text": "Let a respected title replace the missing information"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse's restraint about knowledge supports acknowledging limits instead of presenting assumptions as established facts.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_044",
+      "conceptId": "character_individual_responsibility",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A group blames an uninvolved classmate solely because their sibling cheated. What principle should correct this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Family connection proves identical moral responsibility"
+        },
+        {
+          "id": "b",
+          "text": "The classmate must inherit every consequence of the act"
+        },
+        {
+          "id": "c",
+          "text": "An accusation becomes fair when the group repeats it"
+        },
+        {
+          "id": "d",
+          "text": "Another person's sin does not establish the classmate's guilt"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The scenario applies the verse's principle of personal responsibility: association alone does not transfer another person's guilt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_045",
+      "conceptId": "character_household_privacy",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A child assumes being family means entering a parent's private room at any time. What teaching is appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Teach permission at the private times identified in the verse"
+        },
+        {
+          "id": "b",
+          "text": "Explain that family membership cancels every privacy boundary"
+        },
+        {
+          "id": "c",
+          "text": "Restrict all privacy rules to visiting strangers"
+        },
+        {
+          "id": "d",
+          "text": "Teach that a closed door can never matter at home"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse explicitly teaches household permission at particular private times, rather than limiting privacy to encounters with strangers.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "58",
+          "label": "Quran 24:58",
+          "url": "https://quran.com/24/58"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_046",
+      "conceptId": "character_obedience_in_good",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A team leader orders you to knowingly falsify a report and says obedience removes responsibility. What fits the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comply because the leader's title makes it right"
+        },
+        {
+          "id": "b",
+          "text": "Refuse the wrongdoing; authority is not unlimited permission"
+        },
+        {
+          "id": "c",
+          "text": "Comply if most team members agree"
+        },
+        {
+          "id": "d",
+          "text": "Treat the instruction itself as evidence of honesty"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report limits obedience to what is good. A leader's command cannot by itself justify a knowingly wrongful act.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7257",
+          "label": "Sahih al-Bukhari 7257",
+          "url": "https://sunnah.com/bukhari:7257"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_047",
+      "conceptId": "character_words_and_deeds",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person loudly promotes honesty while deliberately falsifying their own work. What should they address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume a good slogan compensates for the falsification"
+        },
+        {
+          "id": "b",
+          "text": "Focus only on whether the audience likes the message"
+        },
+        {
+          "id": "c",
+          "text": "Bring personal conduct into line with the virtue they promote"
+        },
+        {
+          "id": "d",
+          "text": "Use worse behavior elsewhere to excuse their own"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verses challenge saying what one does not do, so personal correction is needed alongside promoting a good principle.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 61,
+          "ayahs": "2-3",
+          "label": "Quran 61:2-3",
+          "url": "https://quran.com/61/2-3"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_048",
+      "conceptId": "character_kind_words_over_hurtful_giving",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone unable to give money thinks a respectful response is worthless. Which reminder fits the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only a financial transfer can ever have moral value"
+        },
+        {
+          "id": "b",
+          "text": "A hurtful donation is always better than courtesy"
+        },
+        {
+          "id": "c",
+          "text": "Inability to give money requires a harsh rejection"
+        },
+        {
+          "id": "d",
+          "text": "Kind words are better than a gift followed by hurt"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse gives real value to kind words and forgiveness, even comparing them favorably with charity followed by injury.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "263",
+          "label": "Quran 2:263",
+          "url": "https://quran.com/2/263"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_049",
+      "conceptId": "character_amends_before_judgment",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You publicly insulted someone who knows about the insult. What response best addresses the wrong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take responsibility and seek their pardon rather than dismissing it"
+        },
+        {
+          "id": "b",
+          "text": "Assume unrelated good deeds automatically settle their grievance"
+        },
+        {
+          "id": "c",
+          "text": "Demand forgiveness as something the victim owes you"
+        },
+        {
+          "id": "d",
+          "text": "Wait for the incident to become inconvenient for them to mention"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report urges seeking release from a wrong now. Good deeds are not a reason to dismiss the injured person's grievance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_050",
+      "conceptId": "character_concealing_private_faults",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend's past private mistake is corrected and poses no ongoing risk. Others want details for amusement. What fits the teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Publish the details if enough people are curious"
+        },
+        {
+          "id": "b",
+          "text": "Decline needless exposure rather than making it entertainment"
+        },
+        {
+          "id": "c",
+          "text": "Use the mistake as leverage for future favors"
+        },
+        {
+          "id": "d",
+          "text": "Treat a private correction as a reason for public humiliation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report encourages concealing faults. In this scenario, no protection or justice need is served by exposing the corrected private mistake.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_051",
+      "conceptId": "character_ending_personal_estrangement",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two Muslim friends prolong silence over a minor personal quarrel. What peaceful first step does the report praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each waits until the other's friends admit defeat"
+        },
+        {
+          "id": "b",
+          "text": "Each refuses every greeting to protect their pride"
+        },
+        {
+          "id": "c",
+          "text": "One begins with salam instead of waiting for the other"
+        },
+        {
+          "id": "d",
+          "text": "One demands public humiliation before offering courtesy"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report praises the person who initiates the greeting. The scenario concerns an ordinary personal quarrel, not a safety boundary.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6077",
+          "label": "Sahih al-Bukhari 6077",
+          "url": "https://sunnah.com/bukhari:6077"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_052",
+      "conceptId": "character_private_counsel_purpose",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A private group chat is planning to intimidate a classmate. What should guide participation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume privacy makes the plan acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Judge the plan only by how many people joined"
+        },
+        {
+          "id": "c",
+          "text": "Treat loyalty to the chat as more important than its purpose"
+        },
+        {
+          "id": "d",
+          "text": "Reject the aggression and direct discussion toward good"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse forbids private counsel for aggression and directs it toward goodness. A closed chat does not remove accountability.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "9",
+          "label": "Quran 58:9",
+          "url": "https://quran.com/58/9"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_053",
+      "conceptId": "character_feeding_without_return",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A volunteer wants a hungry recipient to publicly praise the giver before receiving food. What motive should be corrected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serve for Allah without making praise the price of help"
+        },
+        {
+          "id": "b",
+          "text": "Make the recipient's influence the measure of their need"
+        },
+        {
+          "id": "c",
+          "text": "Treat public gratitude as the only source of reward"
+        },
+        {
+          "id": "d",
+          "text": "Prefer hunger to helping someone unable to promote the giver"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses describe feeding for Allah without demanding reward or thanks from recipients. Help is not a purchase of their admiration.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 76,
+          "ayahs": "8-9",
+          "label": "Quran 76:8-9",
+          "url": "https://quran.com/76/8-9"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_054",
+      "conceptId": "character_giving_cherished_possessions",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can responsibly donate a useful item you genuinely cherish. Which aspect reflects the cited verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The belief that usefulness prevents an item being donated"
+        },
+        {
+          "id": "b",
+          "text": "Willingness to give from what you personally value"
+        },
+        {
+          "id": "c",
+          "text": "The assumption that only unwanted belongings can be given"
+        },
+        {
+          "id": "d",
+          "text": "The idea that publicity alone establishes the gift's sincerity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse calls for spending from cherished things, so generosity can include loosening one's attachment to a valued possession.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "92",
+          "label": "Quran 3:92",
+          "url": "https://quran.com/3/92"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_055",
+      "conceptId": "character_orphan_and_asker_dignity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An adult humiliates an orphan while claiming that providing meals excuses the treatment. What needs correction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Food provision removes every limit on treatment"
+        },
+        {
+          "id": "b",
+          "text": "The child's vulnerability makes humiliation acceptable"
+        },
+        {
+          "id": "c",
+          "text": "Material support does not permit oppression of the child"
+        },
+        {
+          "id": "d",
+          "text": "Only influential children deserve protection from oppression"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse forbids oppressing the orphan. Providing material help is not permission to disregard the child's dignity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9",
+          "label": "Quran 93:9",
+          "url": "https://quran.com/93/9"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_056",
+      "conceptId": "character_leniency_in_transactions",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "While requesting a repayment genuinely owed, someone plans unnecessary insults to show strength. What fits the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat the claim as permission for any humiliation"
+        },
+        {
+          "id": "b",
+          "text": "Assume insults are required to prove seriousness"
+        },
+        {
+          "id": "c",
+          "text": "Decide courtesy is possible only after abandoning every right"
+        },
+        {
+          "id": "d",
+          "text": "Seek the right with a considerate manner"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report praises leniency even when seeking repayment, so having a claim does not justify unnecessary harshness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2076",
+          "label": "Sahih al-Bukhari 2076",
+          "url": "https://sunnah.com/bukhari:2076"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_057",
+      "conceptId": "character_truthful_humor",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends want you to invent a false embarrassing story about a classmate for laughs. What reflects the Prophet's stated standard?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep humor truthful rather than presenting a fabricated claim"
+        },
+        {
+          "id": "b",
+          "text": "Treat laughter as permission to make false allegations"
+        },
+        {
+          "id": "c",
+          "text": "Assume adding a joking tone makes the claim true"
+        },
+        {
+          "id": "d",
+          "text": "Judge honesty only by whether the audience enjoyed it"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report keeps humor within truthfulness. Amusement does not turn a fabricated account about a real person into an honest one.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1990",
+          "label": "Jami at-Tirmidhi 1990",
+          "url": "https://sunnah.com/tirmidhi:1990"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_058",
+      "conceptId": "character_weight_of_careless_speech",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone dismisses a deeply harmful remark as just a quick comment. Which reminder fits the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A short duration makes any remark morally weightless"
+        },
+        {
+          "id": "b",
+          "text": "Casual words can still carry serious accountability"
+        },
+        {
+          "id": "c",
+          "text": "Only scheduled speeches can displease Allah"
+        },
+        {
+          "id": "d",
+          "text": "Approval from a group automatically clears the speaker"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report warns that words treated lightly can have grave consequences before Allah. Casualness alone is no defense.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "Sahih al-Bukhari 6478",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_059",
+      "conceptId": "character_rights_of_public_space",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends gather on a walkway and cause avoidable difficulty for passersby. What applies the rights-of-the-way teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Claim the path because the group arrived first"
+        },
+        {
+          "id": "b",
+          "text": "Require everyone else to avoid the shared space"
+        },
+        {
+          "id": "c",
+          "text": "Adjust the gathering to stop harming other users"
+        },
+        {
+          "id": "d",
+          "text": "Treat the conversation's enjoyment as cancelling others' rights"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Avoiding harm is among the report's explicit rights of the way. Shared use should not become a reason to disregard passersby.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2465",
+          "label": "Sahih al-Bukhari 2465",
+          "url": "https://sunnah.com/bukhari:2465"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_character_conduct_060",
+      "conceptId": "character_balanced_spending",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone rejects waste but then praises withholding every necessary household expense despite having the means. What is missing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verse makes the smallest expense the sole goal"
+        },
+        {
+          "id": "b",
+          "text": "Avoiding extravagance automatically excuses miserliness"
+        },
+        {
+          "id": "c",
+          "text": "Responsible spending must always be treated as waste"
+        },
+        {
+          "id": "d",
+          "text": "The verse's balance also rejects stinginess"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse praises a balance between extravagance and stinginess. Avoiding one extreme does not justify adopting the other.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    }
+  ]
+}

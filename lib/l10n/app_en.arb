@@ -1734,5 +1734,161 @@
   "kidsBooksSahabahDescription": "Stories about the Sahabah for young readers.",
   "kidsBooksProphetsDescription": "Stories of the Prophets for curious little hearts.",
   "kidsBooksProphetLifeDescription": "Discover the life of Prophet Muhammad (SAW), one page at a time.",
-  "kidsBooksHadithDescription": "Explore 40 hadiths through stories for children."
+  "kidsBooksHadithDescription": "Explore 40 hadiths through stories for children.",
+  "quizAssessmentTitle": "Islamic Knowledge Assessment",
+  "quizDashboardSubtitle": "Reflect on what you know. Discover what to revisit.",
+  "quizDashboardAction": "Choose your learning path",
+  "quizEyebrow": "A MOMENT TO REFLECT",
+  "quizIntroTitle": "Let curiosity lead the way",
+  "quizIntroDescription": "A fresh selection across Islamic subjects, with explanations to explore after you finish.",
+  "quizSampleNotice": "This result describes your performance on these sampled questions only. It does not measure faith, piety, or complete Islamic knowledge.",
+  "quizPreviewNotice": "Development preview · these question banks are awaiting editorial and scholarly review.",
+  "quizStart": "Begin assessment",
+  "quizResume": "Continue your assessment",
+  "quizDiscard": "Discard attempt",
+  "quizDiscardTitle": "Discard this attempt?",
+  "quizDiscardMessage": "Your current answers will be left unfinished. Questions you have already seen remain in your question history.",
+  "quizSubjects": "Subjects",
+  "quizQuestions": "Questions",
+  "quizUntimed": "No time limit",
+  "quizQuestionMix": "Your question mix",
+  "quizPerSubject": "From every subject",
+  "quizHistory": "Past attempts",
+  "quizHistoryEmpty": "Your completed assessments will appear here.",
+  "quizNotSure": "I’m not sure",
+  "quizNext": "Next question",
+  "quizPrevious": "Previous",
+  "quizSkip": "Skip for now",
+  "quizClear": "Clear response",
+  "quizSubmit": "Finish assessment",
+  "quizSubmitTitle": "Finish with unanswered questions?",
+  "quizSubmitMessage": "Unanswered questions will be included in your results as unanswered. You can return to them before finishing.",
+  "quizSubmitAnyway": "Finish and view results",
+  "quizKeepGoing": "Keep answering",
+  "quizNavigator": "Question navigator",
+  "quizSaved": "Progress saved on this device",
+  "quizSaving": "Saving your progress…",
+  "quizPreparing": "Preparing your questions…",
+  "quizLoading": "Opening your assessment…",
+  "quizResultsTitle": "Your sampled results",
+  "quizCorrect": "Correct",
+  "quizIncorrect": "Incorrect",
+  "quizUnknown": "Not sure",
+  "quizUnanswered": "Unanswered",
+  "quizSubjectBreakdown": "By subject",
+  "quizDifficultyBreakdown": "By difficulty",
+  "quizReview": "Explore the explanations",
+  "quizReviewTitle": "Review & reflect",
+  "quizRetake": "Try a new selection",
+  "quizBackToOverview": "Back to overview",
+  "quizYourAnswer": "Your response",
+  "quizCorrectAnswer": "Correct answer",
+  "quizExplanation": "Why this answer",
+  "quizReferences": "References",
+  "quizFoundation": "Foundation",
+  "quizIntermediate": "Intermediate",
+  "quizAdvanced": "Advanced",
+  "quizBeliefs": "Beliefs & Foundations",
+  "quizQuran": "Quran Knowledge",
+  "quizSeerah": "Seerah",
+  "quizHadith": "Hadith Knowledge",
+  "quizWorship": "Everyday Worship",
+  "quizCharacter": "Character & Conduct",
+  "quizErrorTitle": "Assessment unavailable",
+  "quizErrorConfig": "The assessment settings are missing or unsupported. Your saved attempts have been kept.",
+  "quizErrorAssets": "The question files are missing or inconsistent. Please retry after updating the app.",
+  "quizErrorTranslation": "The selected question language is unavailable. Your saved answers and progress have been kept.",
+  "quizErrorInsufficient": "There are not enough distinct concepts to meet this assessment’s subject and question-mix quotas.",
+  "quizErrorStorage": "Your latest action could not be saved. Please retry it before leaving the assessment.",
+  "quizErrorSaved": "A saved assessment could not be read safely. No saved data has been deleted.",
+  "quizErrorReview": "These question banks are awaiting editorial and scholarly review before publication.",
+  "quizErrorCooldown": "A new assessment is not available yet. You can still explore your saved results.",
+  "quizRetry": "Try again",
+  "quizLanguage": "Assessment language",
+  "quizReusedNotice": "Some previously seen questions were reused to keep the configured subject and question balance. Distinct concepts are preserved.",
+  "quizRetakeDisabled": "New attempts are disabled in the current assessment settings.",
+  "quizTimeRemaining": "Time remaining",
+  "quizTimeExpired": "The time limit has ended.",
+  "quizOpenLinkError": "This reference could not be opened.",
+  "quizProgress": "Question {current} of {total}",
+  "@quizProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "quizAnsweredCount": "{answered} of {total} responses recorded",
+  "@quizAnsweredCount": {
+    "placeholders": {
+      "answered": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "quizCorrectOf": "{correct} of {total} correct",
+  "@quizCorrectOf": {
+    "placeholders": {
+      "correct": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "total": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "quizQuota": "{count} {difficulty}",
+  "@quizQuota": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "difficulty": {
+        "type": "String"
+      }
+    }
+  },
+  "quizAvailableAfter": "New selection available after {date}",
+  "@quizAvailableAfter": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "quizSelectionEyebrow": "YOUR LEARNING JOURNEY",
+  "quizSelectionTitle": "Find your starting point",
+  "quizSelectionDescription": "Choose a learning group and level, then select your question language before you begin.",
+  "quizAudienceKids": "Kids",
+  "quizAudienceGeneral": "General Learners",
+  "quizAudienceEducated": "Islamically Educated",
+  "quizAudienceKidsDescription": "Small steps for young, curious minds.",
+  "quizAudienceGeneralDescription": "Explore the foundations and build on what you know.",
+  "quizAudienceEducatedDescription": "For learners with a background in Islamic studies.",
+  "quizLevelBeginner": "Beginner",
+  "quizLevelPro": "Pro",
+  "quizLevelAvailable": "Explore",
+  "quizLevelSoon": "Coming soon",
+  "quizComingSoonMessage": "Questions haven’t been added for this level yet. You can explore another level in the meantime.",
+  "quizBrowseLevels": "Browse levels",
+  "quizLanguageBeforeStart": "Choose your question language. It cannot be changed after you begin.",
+  "quizLanguageLocked": "Language is fixed for this attempt, including results and review.",
+  "quizStyleFamiliarFact": "Familiar facts",
+  "quizStyleBroaderBasic": "Broader basics",
+  "quizStyleEverydayApplication": "Everyday application",
+  "quizStyleBreakdown": "By question style",
+  "quizStylesNotice": "Question styles describe the kind of task, not its difficulty. All questions belong to your selected level."
 }

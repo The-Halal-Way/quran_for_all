@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "pro",
+  "categoryId": "everyday_worship",
+  "title": "দৈনন্দিন ইবাদত",
+  "description": "সাধারণ ব্যবহারকারী → প্রো স্তর। পরিচিত ইবাদতের জ্ঞান, বিস্তৃত অর্থ ও ছোট দৈনন্দিন প্রয়োগ, যেখানে আরও গভীরভাবে বুঝতে হবে। পবিত্রতা, নামাজ, নফল ইবাদত, রোজা, হজ, কুরবানি, দোয়া ও ক্ষমা প্রার্থনা অন্তর্ভুক্ত। বিশেষজ্ঞ পর্যায়ের মতভেদ ও ব্যক্তিবিশেষের ফতোয়া এর আওতার বাইরে।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রো স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও উপলব্ধির মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। মধ্যমের চেয়ে পরিচিত শিক্ষার গভীর বোঝাপড়া, সেগুলোর সম্পর্ক ধরা এবং প্রচলিত ভুল ধারণা আলাদা করার প্রয়োজন; বিশেষজ্ঞ পর্যায়ের পড়াশোনা নয়। এটি সাধারণ ব্যবহারকারীর প্রো স্তর, আলাদা আল্ট্রা প্রশ্নভান্ডার নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিসের মূল পাঠ মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যাগুলো শিক্ষামূলকভাবে নিজস্ব ভাষায় লেখা; এগুলো হুবহু অনুবাদ নয়। আধুনিক পরিস্থিতিগুলো সূত্রে উল্লিখিত মূলনীতির উদাহরণ। এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_pro_everyday_worship_001",
+      "conceptId": "worship_wudu_spiritual_cleansing",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শরীর ধোয়ার পাশাপাশি অজুর হাদিসে আর কোন উপকারের কথা এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পানির সঙ্গে গুনাহ ঝরে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "ভবিষ্যতে আর কখনো গুনাহ না করার নিশ্চয়তা"
+        },
+        {
+          "id": "c",
+          "text": "ভবিষ্যতের সব দায়িত্ব থেকে মুক্তি"
+        },
+        {
+          "id": "d",
+          "text": "অন্যের অধিকারের ওপর স্বয়ংক্রিয় মালিকানা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসে অঙ্গ ধোয়ার সঙ্গে আত্মিক পরিশুদ্ধির সম্পর্ক দেখানো হয়েছে। এই উৎসাহ অন্যায় চালিয়ে যাওয়ার অনুমতি নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "244",
+          "label": "সহিহ মুসলিম ২৪৪",
+          "url": "https://sunnah.com/muslim:244"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_002",
+      "conceptId": "worship_adhan_wasilah",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আজানের জবাব ও নবী ﷺ-এর ওপর দরুদ পাঠের পর হাদিসে কী করতে উৎসাহ দেওয়া হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সঙ্গে সঙ্গে ফরজ নামাজ আবার পড়া"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর কাছে তাঁর জন্য আল-ওয়াসিলা চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "প্রকাশ্যে ব্যক্তিগত অঙ্গীকার ঘোষণা করা"
+        },
+        {
+          "id": "d",
+          "text": "ইকামতকে অপ্রয়োজনীয় মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে আল্লাহর কাছে নবী ﷺ-এর জন্য আল-ওয়াসিলা চাইতে শেখানো হয়েছে। এটি জান্নাতের একটি বিশেষ মর্যাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "384",
+          "label": "সহিহ মুসলিম ৩৮৪",
+          "url": "https://sunnah.com/muslim:384"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_003",
+      "conceptId": "worship_sujud_supplication",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নামাজের কোন অবস্থার সঙ্গে আল্লাহর নৈকট্য ও বেশি দোয়ার বিশেষ সম্পর্ক এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রুকু"
+        },
+        {
+          "id": "b",
+          "text": "তাশাহহুদে বসা"
+        },
+        {
+          "id": "c",
+          "text": "সিজদা"
+        },
+        {
+          "id": "d",
+          "text": "রুকু থেকে উঠে দাঁড়ানো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে সিজদায় বান্দার আল্লাহর নৈকট্যের কথা বলা হয়েছে এবং এ অবস্থায় বেশি দোয়া করতে উৎসাহ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "সহিহ মুসলিম ৪৮২",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_004",
+      "conceptId": "worship_fatihah_praise_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা ফাতিহা তিলাওয়াতে আল্লাহর সাড়া দেওয়ার হাদিসে এর কোন দুটি বিষয় তুলে ধরা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বেচাকেনার বিধান ও শাস্তির বিবরণ"
+        },
+        {
+          "id": "b",
+          "text": "ঐতিহাসিক ঘটনা ও বংশপরিচয়"
+        },
+        {
+          "id": "c",
+          "text": "সফরের নির্দেশনা ও পথের দিকনির্দেশ"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর প্রশংসা ও হিদায়াত প্রার্থনা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে সুরা ফাতিহার আল্লাহর প্রশংসা থেকে ইবাদত, তাঁর ওপর নির্ভরতা ও হিদায়াত প্রার্থনার বিষয়গুলো এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "395a",
+          "label": "সহিহ মুসলিম ৩৯৫a",
+          "url": "https://sunnah.com/muslim:395a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_005",
+      "conceptId": "worship_prayer_avoid_distractions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নামাজের প্রস্তুতি সম্পর্কে হাদিসে মনোযোগে বাধা দেয় এমন কোন দুটি বিষয় বিশেষভাবে এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খেতে ইচ্ছা করে এমন খাবার পরিবেশন ও শৌচাগারের তীব্র প্রয়োজন"
+        },
+        {
+          "id": "b",
+          "text": "সাধারণ ঘড়ি ও সাদামাটা জায়নামাজ"
+        },
+        {
+          "id": "c",
+          "text": "নীরব কক্ষ ও পরিষ্কার পোশাক"
+        },
+        {
+          "id": "d",
+          "text": "ছোট সুরা ও অল্পসংখ্যক মুসল্লির জামাত"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসে মনোযোগে প্রভাব ফেলে এমন প্রবল প্রয়োজনের কথা এসেছে; যেমন সামনে পছন্দের খাবার থাকা এবং প্রস্রাব-পায়খানার তীব্র চাপ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "560a",
+          "label": "সহিহ মুসলিম ৫৬০a",
+          "url": "https://sunnah.com/muslim:560a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_006",
+      "conceptId": "worship_voluntary_fatigue",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ক্লান্তি সত্ত্বেও নামাজে দাঁড়িয়ে থাকতে ব্যবহৃত দড়ি দেখে নবী ﷺ কী নির্দেশ দেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরও দীর্ঘক্ষণ দাঁড়াতে শক্ত দড়ি ব্যবহার করতে বলেন"
+        },
+        {
+          "id": "b",
+          "text": "দড়ি সরিয়ে ক্লান্ত অবস্থায় জোর করে ইবাদত চালানো এড়াতে বলেন"
+        },
+        {
+          "id": "c",
+          "text": "সবার জন্য কাজটি বাধ্যতামূলক করেন"
+        },
+        {
+          "id": "d",
+          "text": "কেবল দাঁড়িয়ে থাকার সময় দিয়ে ভক্তি মাপতে বলেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ক্লান্ত অবস্থায় জোর করে দাঁড়িয়ে থাকা তিনি সংশোধন করেন। উদ্যম থাকা পর্যন্ত নামাজ পড়তে ও ক্লান্ত হলে বসতে বলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1150",
+          "label": "সহিহ বুখারি ১১৫০",
+          "url": "https://sunnah.com/bukhari:1150"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_007",
+      "conceptId": "worship_prayer_at_home",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ঘরে নামাজের সাধারণ প্রশংসার সঙ্গে উল্লিখিত হাদিসে কোন ব্যতিক্রম এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফজরের আগের সুন্নত নামাজ"
+        },
+        {
+          "id": "b",
+          "text": "জোহরের পরের সুন্নত নামাজ"
+        },
+        {
+          "id": "c",
+          "text": "ফরজ নামাজ"
+        },
+        {
+          "id": "d",
+          "text": "দিনের সাধারণ নফল নামাজ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ঘরে নামাজের প্রশংসা করার সময় হাদিসে ফরজ নামাজকে স্পষ্টভাবে ব্যতিক্রম রাখা হয়েছে। প্রয়োগের ক্ষেত্রে এই পার্থক্য গুরুত্বপূর্ণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "731",
+          "label": "সহিহ বুখারি ৭৩১",
+          "url": "https://sunnah.com/bukhari:731"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_008",
+      "conceptId": "worship_duha_daily_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শরীরের জোড়াগুলোর জন্য দৈনিক সদকার ক্ষেত্রে কোন নামাজ যথেষ্ট বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফজরের আগের দুই রাকাত সুন্নত"
+        },
+        {
+          "id": "b",
+          "text": "বিতর নামাজ"
+        },
+        {
+          "id": "c",
+          "text": "তারাবির নামাজ"
+        },
+        {
+          "id": "d",
+          "text": "দুই রাকাত দুহা নামাজ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে বিভিন্ন ভালো কাজকে সদকা বলা হয়েছে এবং এ প্রসঙ্গে দুই রাকাত দুহা নামাজের বিশেষ কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "720",
+          "label": "সহিহ মুসলিম ৭২০",
+          "url": "https://sunnah.com/muslim:720"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_009",
+      "conceptId": "worship_witr_planning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রাতের শেষ নামাজ হিসেবে নবী ﷺ কোন নামাজ রাখতে উৎসাহ দিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিতর"
+        },
+        {
+          "id": "b",
+          "text": "ফজরের আগের দুই রাকাত সুন্নত"
+        },
+        {
+          "id": "c",
+          "text": "সূর্যাস্তের পর প্রথম নফল নামাজ"
+        },
+        {
+          "id": "d",
+          "text": "দুই রাকাত দুহা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসে রাতের নামাজ বিতর দিয়ে শেষ করতে উৎসাহ দেওয়া হয়েছে। অন্য হাদিসে পরে জাগার প্রত্যাশা অনুযায়ী এর সময় ঠিক করার নির্দেশনা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "998",
+          "label": "সহিহ বুখারি ৯৯৮",
+          "url": "https://sunnah.com/bukhari:998"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_010",
+      "conceptId": "worship_fasting_reward_joy",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রোজা সম্পর্কে হাদিসে কোন দুটি আনন্দের কথা বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাহরি শেষ করা ও কাজ শুরু করা"
+        },
+        {
+          "id": "b",
+          "text": "ইফতার করা ও নিজ রবের সঙ্গে সাক্ষাৎ"
+        },
+        {
+          "id": "c",
+          "text": "অতিথি আপ্যায়ন ও খাবার ভাগ করা"
+        },
+        {
+          "id": "d",
+          "text": "রমজান শুরু করা ও যাকাত হিসাব করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে ইফতারের আনন্দের সঙ্গে রোজার কারণে আল্লাহর সাক্ষাতের সময় মুমিনের আনন্দের কথাও এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1904",
+          "label": "সহিহ বুখারি ১৯০৪",
+          "url": "https://sunnah.com/bukhari:1904"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_011",
+      "conceptId": "worship_ramadan_makeup_record",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আয়িশা শাবান মাসে কোন রোজা কাজা করার কথা জানিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু সাপ্তাহিক অভ্যাসের নফল রোজা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু শাওয়ালের ছয় রোজা"
+        },
+        {
+          "id": "c",
+          "text": "রমজানের ছুটে যাওয়া রোজা"
+        },
+        {
+          "id": "d",
+          "text": "অতিরিক্ত পুরো এক মাস নফল রোজা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়িশার বর্ণনাটি রমজানের ছুটে যাওয়া রোজা পূরণ সম্পর্কে। এতে বাকি থাকা দায়িত্ব ও অতিরিক্ত নফল রোজার পার্থক্য বোঝা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1950",
+          "label": "সহিহ বুখারি ১৯৫০",
+          "url": "https://sunnah.com/bukhari:1950"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_012",
+      "conceptId": "worship_shawwal_six",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অতিরিক্ত ছয় রোজার হাদিসে রমজানের সঙ্গে কোন আমল যুক্ত হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রমজান মাসের সঙ্গে আরও ছয় দিন যোগ করা"
+        },
+        {
+          "id": "b",
+          "text": "রমজানের বদলে ছয় দিন রোজা রাখা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু দুই ঈদের দিনে রোজা রাখা"
+        },
+        {
+          "id": "d",
+          "text": "রমজানের পর শাওয়ালে ছয়টি রোজা রাখা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে রমজানের পর শাওয়ালের ছয় দিনের কথা এসেছে; রমজান মাসের দৈর্ঘ্য নতুন করে নির্ধারণ করা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1164a",
+          "label": "সহিহ মুসলিম ১১৬৪a",
+          "url": "https://sunnah.com/muslim:1164a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_013",
+      "conceptId": "worship_ashura_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আশুরার হাদিসে মুসা আলাইহিস সালামের রোজার সঙ্গে কোন ঘটনার সম্পর্ক এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ বনি ইসরাইলকে শত্রুর হাত থেকে রক্ষা করেন"
+        },
+        {
+          "id": "b",
+          "text": "বিদায় হজ সম্পন্ন হওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কুরআন নাজিলের সূচনা"
+        },
+        {
+          "id": "d",
+          "text": "মক্কা বিজয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় আল্লাহর হাতে মুসা আলাইহিস সালামের সম্প্রদায়ের মুক্তির সঙ্গে রোজার সম্পর্ক এসেছে। এটি ইবাদতের মাধ্যমে কৃতজ্ঞতা প্রকাশের একটি উদাহরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2004",
+          "label": "সহিহ বুখারি ২০০৪",
+          "url": "https://sunnah.com/bukhari:2004"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_014",
+      "conceptId": "worship_arafah_expiation",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন দিনের রোজা সম্পর্কে নবী ﷺ আগের ও পরের বছরের গুনাহ মোচনের আশা প্রকাশ করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঈদুল ফিতর"
+        },
+        {
+          "id": "b",
+          "text": "আরাফার দিন"
+        },
+        {
+          "id": "c",
+          "text": "ঈদুল আজহা"
+        },
+        {
+          "id": "d",
+          "text": "শাওয়ালের প্রথম দিন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে এই আশাব্যঞ্জক গুনাহ মোচনের জন্য আরাফার রোজার বিশেষ উল্লেখ আছে। এই সওয়াব ইবাদতের উৎসাহ, গুনাহ করার অনুমতি নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1162a",
+          "label": "সহিহ মুসলিম ১১৬২a",
+          "url": "https://sunnah.com/muslim:1162a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_015",
+      "conceptId": "worship_dhul_hijjah_good_deeds",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উল্লিখিত হাদিসে ভালো আমলের জন্য কোন সময়ের বিশেষ মর্যাদা এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু শাবানের প্রথম দশ দিন"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মহররমের শেষ দশ দিন"
+        },
+        {
+          "id": "c",
+          "text": "জিলহজের প্রথম দশ দিন"
+        },
+        {
+          "id": "d",
+          "text": "শুধু শাওয়ালের প্রথম দশ দিন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে জিলহজের প্রথম দশ দিনে ভালো আমলের বিশেষ মর্যাদা বর্ণিত হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "969",
+          "label": "সহিহ বুখারি ৯৬৯",
+          "url": "https://sunnah.com/bukhari:969"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_016",
+      "conceptId": "worship_sacrifice_taqwa",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরবানির ক্ষেত্রে কোন বিষয় আল্লাহর কাছে পৌঁছায় বলে কুরআনে গুরুত্ব দেওয়া হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পশুর রক্ত নিজেই"
+        },
+        {
+          "id": "b",
+          "text": "পশুর গোশত নিজেই"
+        },
+        {
+          "id": "c",
+          "text": "অন্যদের কাছে ঘোষণা করা দাম"
+        },
+        {
+          "id": "d",
+          "text": "ইবাদতকারীর তাকওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে তাকওয়ার দিকে দৃষ্টি দেওয়া হয়েছে এবং বোঝানো হয়েছে, গোশত বা রক্ত নিজে আল্লাহর কাছে পৌঁছায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "37",
+          "label": "কুরআন ২২:৩৭",
+          "url": "https://quran.com/22/37"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_017",
+      "conceptId": "worship_hajj_conduct_provisions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হজের জন্য পাথেয় নেওয়ার পাশাপাশি কুরআনে সর্বোত্তম পাথেয় কী বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাকওয়া বা আল্লাহ-সচেতনতা"
+        },
+        {
+          "id": "b",
+          "text": "আরও বড় সফরদল"
+        },
+        {
+          "id": "c",
+          "text": "আরও দামি মালপত্র"
+        },
+        {
+          "id": "d",
+          "text": "আরও চমকপ্রদ সফরের গল্প"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে ব্যবহারিক পাথেয়ের সঙ্গে তাকওয়া যুক্ত করা হয়েছে। এতে হাজিকে বস্তুগত পরিকল্পনার পাশাপাশি আত্মিক প্রস্তুতির দিকেও দৃষ্টি দিতে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "197",
+          "label": "কুরআন ২:১৯৭",
+          "url": "https://quran.com/2/197"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_018",
+      "conceptId": "worship_istikhara_trust",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শেখানো ইস্তিখারার দোয়ায় কল্যাণকর বিষয় বেছে নিতে কার জ্ঞানের ওপর নির্ভর করা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "স্বপ্নব্যাখ্যাকারীর সবকিছু সম্পর্কে নিশ্চিত জ্ঞান"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর জ্ঞান"
+        },
+        {
+          "id": "c",
+          "text": "সবচেয়ে জোরে কথা বলা বন্ধুর পছন্দ"
+        },
+        {
+          "id": "d",
+          "text": "দোয়াকারীর গায়েব জানার দাবি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দোয়ায় আল্লাহর জ্ঞান ও ক্ষমতা স্বীকার করে দ্বীন, জীবিকা ও পরিণামের জন্য কল্যাণকর বিষয় চাওয়া হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1166",
+          "label": "সহিহ বুখারি ১১৬৬",
+          "url": "https://sunnah.com/bukhari:1166"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_019",
+      "conceptId": "worship_dua_firm_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উল্লিখিত হাদিসে কোন পদ্ধতিতে ক্ষমা চাইতে শেখানো হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের সমর্থনের ওপর প্রার্থনা নির্ভর করানো"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহকে জোর করে রাজি করাতে হয় এমনভাবে চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "‘আপনি চাইলে’ না জুড়ে আল্লাহর কাছে দৃঢ়ভাবে ক্ষমা চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "ফল আগে জানা না থাকলে প্রার্থনা না করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে আন্তরিক ও দৃঢ়ভাবে চাইতে শেখানো হয়েছে এবং বোঝানো হয়েছে, আল্লাহকে কেউ বাধ্য করতে পারে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6339",
+          "label": "সহিহ বুখারি ৬৩৩৯",
+          "url": "https://sunnah.com/bukhari:6339"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_020",
+      "conceptId": "worship_istighfar_regular",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ প্রতিদিন বহুবার কোন নিয়মিত আমল করার কথা জানিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব নফল ইবাদত শুধু রমজানের জন্য রাখা"
+        },
+        {
+          "id": "b",
+          "text": "ক্ষমার প্রার্থনাকে স্বপ্নের ওপর নির্ভর করানো"
+        },
+        {
+          "id": "c",
+          "text": "তওবাকে বার্ষিক সমাবেশে সীমিত রাখা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর কাছে ক্ষমা চাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তাঁর বারবার ইস্তিগফার করা দেখায়, ক্ষমা চাওয়া নিয়মিত ইবাদতের অংশ; শুধু বিরল উপলক্ষের কাজ নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2702a",
+          "label": "সহিহ মুসলিম ২৭০২a",
+          "url": "https://sunnah.com/muslim:2702a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_021",
+      "conceptId": "worship_wudu_spiritual_cleansing",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন বোঝাপড়ায় ইবাদতের মাধ্যমে পরিশুদ্ধির প্রতিশ্রুতির সঠিক নৈতিক প্রেক্ষাপট বজায় থাকে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষমার আশার সঙ্গে অন্যায় এড়ানোর চেষ্টা থাকা উচিত"
+        },
+        {
+          "id": "b",
+          "text": "ধোয়ার মাধ্যমে ভবিষ্যৎ গুনাহের আগাম অনুমতি পাওয়া যায়"
+        },
+        {
+          "id": "c",
+          "text": "শরীর পরিষ্কার থাকলে তওবার প্রয়োজন হয় না"
+        },
+        {
+          "id": "d",
+          "text": "যেকোনো অজুর পর অন্য মানুষের অধিকার মুছে যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "পরিশুদ্ধির হাদিস আশা জাগায়, আর গুনাহ মোচনের হাদিসে কবিরা গুনাহ এড়ানোর ওপরও গুরুত্ব দেওয়া হয়েছে। কোনোটিই অন্যের প্রতি জুলুমের অনুমতি দেয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "244",
+          "label": "সহিহ মুসলিম ২৪৪",
+          "url": "https://sunnah.com/muslim:244"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "233a",
+          "label": "সহিহ মুসলিম ২৩৩a",
+          "url": "https://sunnah.com/muslim:233a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_022",
+      "conceptId": "worship_adhan_wasilah",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাদিসে বর্ণিত আজানের দোয়ায় নবী ﷺ-কে আল-ওয়াসিলা দেওয়ার জন্য কার কাছে চাওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুয়াজ্জিন"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "জামাতের ইমাম"
+        },
+        {
+          "id": "d",
+          "text": "আজান শোনা ব্যক্তি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "শিক্ষাটি হলো আল্লাহর কাছে নবী ﷺ-এর জন্য বিশেষ মর্যাদা চাওয়া। কার কাছে চাওয়া হচ্ছে, তা স্পষ্ট রাখা গুরুত্বপূর্ণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "384",
+          "label": "সহিহ মুসলিম ৩৮৪",
+          "url": "https://sunnah.com/muslim:384"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_023",
+      "conceptId": "worship_sujud_supplication",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সিজদায় দোয়ার উৎসাহ এই অবস্থার বোঝাপড়া কীভাবে গভীর করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে নামাজের বাকি অংশ অপ্রয়োজনীয় হয়"
+        },
+        {
+          "id": "b",
+          "text": "এটি সঠিকভাবে নামাজ শেখার বিকল্প হয়"
+        },
+        {
+          "id": "c",
+          "text": "এতে বিনয়ী আত্মসমর্পণের সঙ্গে নিজের প্রয়োজনে আল্লাহর দিকে ফেরা যুক্ত হয়"
+        },
+        {
+          "id": "d",
+          "text": "এর অর্থ অন্য সব সময় দোয়া করা নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে এই অবস্থার সঙ্গে নৈকট্য ও দোয়ার অর্থ যুক্ত হয়েছে। তবে সব দোয়া কেবল এ অবস্থায় সীমাবদ্ধ করা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "সহিহ মুসলিম ৪৮২",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_024",
+      "conceptId": "worship_fatihah_praise_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সুরা ফাতিহাকে দোয়ার সঙ্গে সম্পর্কহীন মনে করা ভুল কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এর অর্থ কেবল ঐতিহাসিক বিবরণ"
+        },
+        {
+          "id": "b",
+          "text": "এর শেষ আয়াতগুলোতে কোনো প্রার্থনা নেই"
+        },
+        {
+          "id": "c",
+          "text": "এর কথাগুলো শুধু পাশের মানুষকে উদ্দেশ্য করে"
+        },
+        {
+          "id": "d",
+          "text": "এর তিলাওয়াতে হিদায়াতের প্রার্থনা রয়েছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে সরল পথের প্রার্থনার সঙ্গে বান্দার চাওয়া ও আল্লাহর সাড়ার স্পষ্ট সম্পর্ক দেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "395a",
+          "label": "সহিহ মুসলিম ৩৯৫a",
+          "url": "https://sunnah.com/muslim:395a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_025",
+      "conceptId": "worship_prayer_avoid_distractions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পছন্দের খাবার ও শৌচাগারের তীব্র প্রয়োজন সম্পর্কে উপদেশের মধ্যে অভিন্ন বিবেচনা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নামাজে মনোযোগে বড় বাধা দূর করা"
+        },
+        {
+          "id": "b",
+          "text": "সুবিধাকেই নামাজের একমাত্র মাপকাঠি করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি ক্ষণিক চিন্তাকে জরুরি অবস্থা মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি নামাজের আগে খাবার আবশ্যক করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দুটি উদাহরণই মনোযোগ দখল করতে পারে এমন প্রয়োজন সম্পর্কে। এগুলোর অর্থ প্রতিটি নামাজের আগে খেতে হবে—এমন নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "560a",
+          "label": "সহিহ মুসলিম ৫৬০a",
+          "url": "https://sunnah.com/muslim:560a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_026",
+      "conceptId": "worship_voluntary_fatigue",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নামাজে দড়ি ব্যবহারের ঘটনা কোন নীতিকে সবচেয়ে ভালোভাবে সমর্থন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যত বেশি ক্লান্তি, ইবাদত অবশ্যই তত উত্তম"
+        },
+        {
+          "id": "b",
+          "text": "কেবল শারীরিক কষ্ট নফল ইবাদতকে আরও উত্তম করে না"
+        },
+        {
+          "id": "c",
+          "text": "ক্লান্তি সত্ত্বেও সবসময় জোর করে দাঁড়িয়ে থাকতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "অবলম্বন নিয়ে ক্লান্তি দীর্ঘায়িত করাই নফল নামাজের লক্ষ্য"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ক্লান্ত অবস্থায় জোর করে দাঁড়িয়ে থাকতে দড়ি ব্যবহারের প্রশংসা নবী ﷺ করেননি। ঘটনাটি শুধু কষ্ট দিয়ে ভক্তি মাপার ধারণা সংশোধন করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1150",
+          "label": "সহিহ বুখারি ১১৫০",
+          "url": "https://sunnah.com/bukhari:1150"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_027",
+      "conceptId": "worship_prayer_at_home",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ঘরে নামাজের হাদিস ফরজ জামাত ছেড়ে দেওয়ার যথেষ্ট দলিল নয় কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে সব মসজিদকে ধর্মীয় উদ্দেশ্যহীন বলা হয়েছে"
+        },
+        {
+          "id": "b",
+          "text": "এটি শুধু হাঁটতে অক্ষম ব্যক্তিদের সম্পর্কে"
+        },
+        {
+          "id": "c",
+          "text": "সাধারণ প্রশংসা থেকে ফরজ নামাজকে এতে স্পষ্টভাবে আলাদা করা হয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "এতে ঘরের প্রতিটি নামাজ বাতিল বলা হয়েছে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিস প্রয়োগ করতে এর নির্দিষ্ট ব্যতিক্রম বজায় রাখতে হবে। সাধারণ বক্তব্য সব নামাজের ওপর একইভাবে প্রয়োগ করা যাবে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "731",
+          "label": "সহিহ বুখারি ৭৩১",
+          "url": "https://sunnah.com/bukhari:731"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_028",
+      "conceptId": "worship_duha_daily_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সদকা করতে সবসময় টাকা লাগে—এই ধারণাকে দুহার হাদিস কীভাবে সংশোধন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে অর্থ দানের কোনো মূল্য নেই বলা হয়"
+        },
+        {
+          "id": "b",
+          "text": "এতে সদকা কেবল ধনী ইবাদতকারীর জন্য সীমিত হয়"
+        },
+        {
+          "id": "c",
+          "text": "এতে প্রতিটি নফল নামাজ যাকাত পরিশোধ হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "এতে নামাজের পাশাপাশি জিকির ও ভালো আচরণও সদকা গণ্য হয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে আল্লাহর প্রশংসা ও ভালো কাজের নির্দেশকে সদকার অন্তর্ভুক্ত করে দুহার কথা এসেছে। এতে স্বতন্ত্র আর্থিক দায়িত্ব মুছে যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "720",
+          "label": "সহিহ মুসলিম ৭২০",
+          "url": "https://sunnah.com/muslim:720"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_029",
+      "conceptId": "worship_witr_planning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বিতর আগে বা পরে পড়ার উপদেশে হাদিস কোন বিষয় বিবেচনা করেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ব্যক্তির পরে জেগে ওঠার প্রত্যাশা আছে কি না"
+        },
+        {
+          "id": "b",
+          "text": "অন্যেরা নামাজটি দেখবেন কি না"
+        },
+        {
+          "id": "c",
+          "text": "বন্ধুরা কোন রাকাতসংখ্যা পছন্দ করেন"
+        },
+        {
+          "id": "d",
+          "text": "পরের দিন শুক্রবার কি না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নির্দেশনায় পরে জাগার প্রত্যাশা বিবেচিত হয়েছে। শেষ রাতে জাগতে না পারার আশঙ্কাকারী ও জাগার আশা রাখেন এমন ব্যক্তির মধ্যে পার্থক্য করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "755a",
+          "label": "সহিহ মুসলিম ৭৫৫a",
+          "url": "https://sunnah.com/muslim:755a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_030",
+      "conceptId": "worship_fasting_reward_joy",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইফতারের আনন্দের সঙ্গে আল্লাহর সাক্ষাতের আনন্দ যুক্ত করা রোজাদারের আনন্দ সম্পর্কে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এটি শুধু দামি খাবার উপভোগে সীমিত"
+        },
+        {
+          "id": "b",
+          "text": "এতে বর্তমান স্বস্তি ও আল্লাহর কাছে সওয়াবের আশা উভয়ই আছে"
+        },
+        {
+          "id": "c",
+          "text": "অন্যেরা রোজার কথা জানার ওপর এটি নির্ভরশীল"
+        },
+        {
+          "id": "d",
+          "text": "এতে দিনশেষে কোনো আনন্দের স্থান নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দুটি আনন্দে বর্তমানের বৈধ আনন্দের সঙ্গে আখিরাতে সওয়াবের গভীর আশা যুক্ত হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1904",
+          "label": "সহিহ বুখারি ১৯০৪",
+          "url": "https://sunnah.com/bukhari:1904"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_031",
+      "conceptId": "worship_ramadan_makeup_record",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আয়িশার পরে রোজা রাখার বর্ণনা পড়তে কোন পার্থক্য গুরুত্বপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সময় পার হলেই ছুটে যাওয়া রোজা ঐচ্ছিক হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মূল তারিখেই রোজা গণ্য হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "রমজানের কাজা ও অতিরিক্ত নফল রোজা আলাদা"
+        },
+        {
+          "id": "d",
+          "text": "রমজানের বাইরে সব রোজার উদ্দেশ্য একই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তাঁর বর্ণনায় রমজানের বাকি থাকা দায়িত্ব পরে পালনের কথা আছে। পরে রাখা সব রোজাকে নফল বলা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1950",
+          "label": "সহিহ বুখারি ১৯৫০",
+          "url": "https://sunnah.com/bukhari:1950"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_032",
+      "conceptId": "worship_shawwal_six",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ছয় দিনের হাদিস রমজানের বদলে শুধু ছয় দিন রোজার পক্ষে দলিল নয় কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে রমজান ছয় বা ত্রিশ দিনের পছন্দসাপেক্ষ বিষয়"
+        },
+        {
+          "id": "b",
+          "text": "এতে প্রতিটি মাসকে রমজানের সমতুল্য ধরা হয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "এতে ফরজ ও অতিরিক্ত রোজার পার্থক্য মুছে দেওয়া হয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "এতে রমজানের পরে রোজার কথা, রমজান বদলে দেওয়ার কথা নয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বক্তব্যে অতিরিক্ত শাওয়ালের রোজার সঙ্গে রমজান পালনের সম্পর্ক আছে। অতিরিক্ত আমল ফরজের বিকল্প নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1164a",
+          "label": "সহিহ মুসলিম ১১৬৪a",
+          "url": "https://sunnah.com/muslim:1164a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_033",
+      "conceptId": "worship_ashura_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আশুরার বর্ণনায় কৃতজ্ঞতা ও ইবাদতের কোন সম্পর্ক দেখা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর দেওয়া মুক্তি রোজার মাধ্যমে স্মরণ করা হয়"
+        },
+        {
+          "id": "b",
+          "text": "কৃতজ্ঞতা কেবল প্রকাশ্য উদ্‌যাপন দিয়ে মাপা হয়"
+        },
+        {
+          "id": "c",
+          "text": "নিয়ামত স্মরণ করলে আনুগত্যের প্রয়োজন শেষ হয়"
+        },
+        {
+          "id": "d",
+          "text": "কৃতজ্ঞতায় কখনো ইবাদত অন্তর্ভুক্ত হতে পারে না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় আল্লাহর দেওয়া মুক্তির সঙ্গে মুসা আলাইহিস সালামের রোজা ও নবী ﷺ-এর আমলের সম্পর্ক এসেছে। এটি কৃতজ্ঞতাপূর্ণ ইবাদতের উদাহরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2004",
+          "label": "সহিহ বুখারি ২০০৪",
+          "url": "https://sunnah.com/bukhari:2004"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_034",
+      "conceptId": "worship_arafah_expiation",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন সিদ্ধান্তটি রোজার সঙ্গে যুক্ত গুনাহ মোচনের প্রতিশ্রুতির অপব্যবহার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এটি আল্লাহর কাছে ক্ষমা চাইতে উৎসাহ দেয়"
+        },
+        {
+          "id": "b",
+          "text": "এটি ভবিষ্যতে ইচ্ছাকৃত অন্যায়কে নিরাপদ করে"
+        },
+        {
+          "id": "c",
+          "text": "এটি আন্তরিক ইবাদতের প্রেরণা দেয়"
+        },
+        {
+          "id": "d",
+          "text": "এটি গুনাহের অনুমতি ছাড়াই আশা দেয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "গুনাহ মোচনের শিক্ষা আল্লাহর দিকে ফিরতে উৎসাহ দেয়। এ বিষয়ে সামগ্রিক শিক্ষায় কবিরা গুনাহ এড়ানোর কথাও আছে, সেগুলোর পরিকল্পনা করার কথা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1162a",
+          "label": "সহিহ মুসলিম ১১৬২a",
+          "url": "https://sunnah.com/muslim:1162a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "233a",
+          "label": "সহিহ মুসলিম ২৩৩a",
+          "url": "https://sunnah.com/muslim:233a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_035",
+      "conceptId": "worship_dhul_hijjah_good_deeds",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জিলহজের প্রথম দশ দিনকে কেবল হাজিদের জন্য প্রাসঙ্গিক মনে করা উচিত নয় কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তখন কোনো সওয়াব পেতে সবাইকে সফর করতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মক্কার ভেতরের কাজই ভালো আমল হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "হাদিসে ভালো আমলের প্রশংসা হাজিদের মধ্যে সীমিত করা হয়নি"
+        },
+        {
+          "id": "d",
+          "text": "সাধারণ মুমিনদের তখন সব ইবাদত বন্ধ রাখতে হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "উৎসাহটি সাধারণভাবে ভালো আমল সম্পর্কে। হাদিসে শ্রোতাদের শুধু হজ পালনকারীদের মধ্যে সীমিত করা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "969",
+          "label": "সহিহ বুখারি ৯৬৯",
+          "url": "https://sunnah.com/bukhari:969"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_036",
+      "conceptId": "worship_sacrifice_taqwa",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরবানিতে আল্লাহর কাছে কী পৌঁছায়—সেই আয়াত কোন দাবিকে সংশোধন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইবাদতে আন্তরিক আনুগত্য গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "কুরবানিতে আল্লাহ-সচেতনতা নিয়ে এগোনো উচিত"
+        },
+        {
+          "id": "c",
+          "text": "বাহ্যিক উৎসর্গের সঙ্গে আত্মিক উদ্দেশ্য যুক্ত"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বেশি ক্রয়মূল্যই বেশি তাকওয়ার প্রমাণ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে তাকওয়াকে কেন্দ্রীয় বিষয় করা হয়েছে। বাহ্যিক দামের তুলনা একাই ইবাদতকারীর আন্তরিকতা বা মর্যাদা প্রমাণ করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "37",
+          "label": "কুরআন ২২:৩৭",
+          "url": "https://quran.com/22/37"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_037",
+      "conceptId": "worship_hajj_conduct_provisions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হজের কেবল অঙ্গভঙ্গি শেখা অসম্পূর্ণ প্রস্তুতি কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআনে হজের সময় আচরণ ও তাকওয়ার কথাও আছে"
+        },
+        {
+          "id": "b",
+          "text": "অঙ্গভঙ্গি শিখলে ভালো আচরণের প্রয়োজন থাকে না"
+        },
+        {
+          "id": "c",
+          "text": "সফরের আয়োজন প্রত্যেক হাজির আন্তরিকতা নির্ধারণ করে"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতে সব আনুষ্ঠানিক আমলের বদলে ভদ্র আলাপ রাখা হয়েছে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে পাথেয় ও তাকওয়ার পাশাপাশি অন্যায় ও তর্কের কথাও আছে। এতে আমলের প্রস্তুতির সঙ্গে আচরণ যুক্ত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "197",
+          "label": "কুরআন ২:১৯৭",
+          "url": "https://quran.com/2/197"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_038",
+      "conceptId": "worship_istikhara_trust",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শেখানো ইস্তিখারার হাদিসে কোন প্রত্যাশাকে আবশ্যক করা হয়নি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর কাছে কল্যাণ সহজ করে দিতে চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "পরবর্তী কোনো পদক্ষেপের আগে একটি স্বপ্ন দেখা"
+        },
+        {
+          "id": "c",
+          "text": "ক্ষতিকর সিদ্ধান্ত দূরে সরিয়ে দিতে চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "নিজে যা জানে না আল্লাহ তা জানেন—এটি স্বীকার করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে কল্যাণকর ফলের জন্য নামাজ ও দোয়া শেখানো হয়েছে। উত্তরের আবশ্যক শর্ত হিসেবে স্বপ্ন নির্ধারণ করা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1166",
+          "label": "সহিহ বুখারি ১১৬৬",
+          "url": "https://sunnah.com/bukhari:1166"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_039",
+      "conceptId": "worship_dua_firm_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর কাছে দৃঢ়ভাবে চাওয়া ও তাঁর ওপর ক্ষমতা দাবি করার পার্থক্য কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এর অর্থ ইবাদতকারী ফল ঘটাতে বাধ্য করতে পারেন"
+        },
+        {
+          "id": "b",
+          "text": "এতে নিজ ইচ্ছামতো দানের আল্লাহর স্বাধীনতা দূর হয়"
+        },
+        {
+          "id": "c",
+          "text": "তাঁকে বাধ্য করার সামর্থ্য ছাড়াই আন্তরিক প্রয়োজন প্রকাশ করা"
+        },
+        {
+          "id": "d",
+          "text": "এতে নিজের ইচ্ছা পূরণ হতেই হবে বলে ঘোষণা করতে হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে দৃঢ় প্রার্থনার সঙ্গে আল্লাহকে বাধ্য করা যায় না—এই ব্যাখ্যা যুক্ত হয়েছে। আন্তরিকতা তাঁর ওপর নিয়ন্ত্রণ নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6339",
+          "label": "সহিহ বুখারি ৬৩৩৯",
+          "url": "https://sunnah.com/bukhari:6339"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_040",
+      "conceptId": "worship_istighfar_regular",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ-এর বারবার ক্ষমা চাওয়ার আমল কোন ধারণাকে সংশোধন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষমা চাওয়া দৈনিক ইবাদতের অংশ হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "মানুষ সারা জীবন আল্লাহর দিকে ফিরতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "নববী আমল জিকিরের রুটিন গড়তে নির্দেশনা দিতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "ধর্মচর্চায় নিয়মিত হলে আর নিয়মিত ইস্তিগফারের প্রয়োজন নেই"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তাঁর উদাহরণে ক্ষমা চাওয়া নিয়মিত ইবাদতের অন্তর্ভুক্ত। আগে থেকেই ধর্মচর্চাকারী ব্যক্তির জন্য একে অপ্রয়োজনীয় মনে করা ঠিক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2702a",
+          "label": "সহিহ মুসলিম ২৭০২a",
+          "url": "https://sunnah.com/muslim:2702a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_041",
+      "conceptId": "worship_wudu_spiritual_cleansing",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ অজুকে আত্মিক অর্থহীন রুটিন মনে করেন। পরিশুদ্ধির হাদিস অনুযায়ী কোন স্মরণটি যথাযথ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অঙ্গ ধোয়ার সঙ্গে ক্ষমার সম্পর্কও রয়েছে"
+        },
+        {
+          "id": "b",
+          "text": "অজু ভবিষ্যতে কোনো গুনাহ না হওয়ার নিশ্চয়তা দেয়"
+        },
+        {
+          "id": "c",
+          "text": "দামি পানি বেশি আন্তরিকতার নিশ্চয়তা দেয়"
+        },
+        {
+          "id": "d",
+          "text": "পবিত্রতা আচরণের প্রতি খেয়াল রাখার প্রয়োজন দূর করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসে ধোয়া অঙ্গের সঙ্গে গুনাহ দূর হওয়ার সম্পর্ক দেখিয়ে পবিত্রতার আত্মিক দিক তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "244",
+          "label": "সহিহ মুসলিম ২৪৪",
+          "url": "https://sunnah.com/muslim:244"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_042",
+      "conceptId": "worship_adhan_wasilah",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আজানের জবাব দেওয়ার পর একজন শিক্ষার্থী উল্লিখিত আমল করতে চান। এরপর কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আসন্ন নামাজের বদলে ব্যক্তিগত কোনো ইচ্ছা প্রকাশ করবেন"
+        },
+        {
+          "id": "b",
+          "text": "নবী ﷺ-এর ওপর দরুদ পড়ে আল্লাহর কাছে তাঁর জন্য আল-ওয়াসিলা চাইবেন"
+        },
+        {
+          "id": "c",
+          "text": "মুয়াজ্জিনকে নিজ ক্ষমতায় জান্নাত দিতে বলবেন"
+        },
+        {
+          "id": "d",
+          "text": "জবাব দেওয়ায় নামাজের প্রয়োজন শেষ ধরে নেবেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে নবী ﷺ-এর ওপর দরুদের পর আল্লাহর কাছে তাঁর জন্য আল-ওয়াসিলা চাইতে শেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "384",
+          "label": "সহিহ মুসলিম ৩৮৪",
+          "url": "https://sunnah.com/muslim:384"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_043",
+      "conceptId": "worship_sujud_supplication",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক শিক্ষার্থী সিজদাকে শুধু শারীরিক নড়াচড়া মনে করেন। কোন উপলব্ধি উল্লিখিত শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এটিকে নামাজের অন্য সব অবস্থার বিকল্প মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "এতে অন্য সব সময় দোয়া নিষিদ্ধ হয় ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "এ অবস্থায় আল্লাহর নৈকট্য উপলব্ধি করে যথাযথ দোয়া করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু কতজন দেখেন তা দিয়ে এর মূল্য মাপা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে সিজদায় আল্লাহর নৈকট্য ও দোয়ার উৎসাহ এসেছে। এতে শুধু নড়াচড়ার বাইরে এই অবস্থার গভীর অর্থ বোঝা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "সহিহ মুসলিম ৪৮২",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_044",
+      "conceptId": "worship_fatihah_praise_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ যান্ত্রিকভাবে ফাতিহা পড়েন এবং আরও ভালোভাবে বুঝতে চান। হাদিস অনুযায়ী কোন বিষয়ে মন দেবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এর কথাগুলোর সঙ্গে নিজের হিদায়াতের প্রয়োজনের সম্পর্ক নেই মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "এর প্রার্থনাগুলো কেবল অন্য মুসল্লিদের জন্য মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু আশপাশের সবার আগে শেষ করায় মন দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "এর আল্লাহর প্রশংসা ও আন্তরিক হিদায়াত প্রার্থনা লক্ষ করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে বান্দার প্রশংসা ও প্রার্থনার সঙ্গে আল্লাহর সাড়ার সম্পর্ক এসেছে। এটি তিলাওয়াতের অর্থে মনোযোগ দিতে সহায়তা করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "395a",
+          "label": "সহিহ মুসলিম ৩৯৫a",
+          "url": "https://sunnah.com/muslim:395a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_045",
+      "conceptId": "worship_prayer_avoid_distractions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নামাজের যথেষ্ট সময় বাকি আছে। কারও শৌচাগারের তীব্র প্রয়োজন, তবু তিনি জোর করে তখনই নামাজে দাঁড়ান। নির্দেশনা অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রয়োজন সেরে যথাযথ পবিত্রতা অর্জন করে ওয়াক্তের মধ্যে নামাজ পড়বেন"
+        },
+        {
+          "id": "b",
+          "text": "তীব্র চাপকে বেশি ভক্তির প্রমাণ মনে করবেন"
+        },
+        {
+          "id": "c",
+          "text": "ইচ্ছাকৃতভাবে নামাজের সময় শেষ হওয়া পর্যন্ত অপেক্ষা করবেন"
+        },
+        {
+          "id": "d",
+          "text": "এই প্রয়োজনে নামাজের সব শর্ত উঠে যায় ধরবেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসে প্রস্রাব-পায়খানার তীব্র চাপ ঠেকিয়ে নামাজ পড়া নিরুৎসাহিত করা হয়েছে। এই পরিস্থিতিতে ওয়াক্ত না হারিয়ে প্রয়োজন মেটানোর সুযোগ আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "560a",
+          "label": "সহিহ মুসলিম ৫৬০a",
+          "url": "https://sunnah.com/muslim:560a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_046",
+      "conceptId": "worship_voluntary_fatigue",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নফল নামাজে কেউ কেবল ক্লান্তি সত্ত্বেও দাঁড়িয়ে থাকতে অবলম্বন নেন। দড়ির ঘটনার শিক্ষা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বেশি কষ্ট মানেই বেশি সওয়াব বলে যেভাবেই হোক চালিয়ে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "কষ্টকেই লক্ষ্য মনে করে জোর করে ক্লান্ত অবস্থায় চালিয়ে যাওয়া এড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "সব মুসল্লির কাছ থেকে একই আমল দাবি করা"
+        },
+        {
+          "id": "d",
+          "text": "এই ক্লান্তির কারণে ভবিষ্যতের সব নফল নামাজ ছেড়ে দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী ﷺ দড়ি সরাতে বলেন এবং উদ্যম থাকা পর্যন্ত নামাজ পড়তে ও ক্লান্ত হলে বসতে উপদেশ দেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1150",
+          "label": "সহিহ বুখারি ১১৫০",
+          "url": "https://sunnah.com/bukhari:1150"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_047",
+      "conceptId": "worship_prayer_at_home",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ মনে করেন ঘরে সাধারণ নফল নামাজ সবসময় প্রকাশ্যে পড়ার চেয়ে কম মর্যাদার। হাদিস অনুযায়ী কোন স্মরণটি সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি নফল নামাজ লোকসমাগমের সামনে পড়তে হবে"
+        },
+        {
+          "id": "b",
+          "text": "মসজিদ না থাকলেই কেবল ঘর উপযুক্ত হয়"
+        },
+        {
+          "id": "c",
+          "text": "ঘরে নামাজের বিশেষ প্রশংসা আছে, তবে ফরজ নামাজ ব্যতিক্রম"
+        },
+        {
+          "id": "d",
+          "text": "হাদিসে এ বিষয়ে ফরজ ও নফল নামাজকে এক বলা হয়েছে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে ঘরে নামাজের মূল্য স্বীকার করা হয়েছে এবং ফরজ নামাজের ক্ষেত্রে পার্থক্য বজায় রাখা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "731",
+          "label": "সহিহ বুখারি ৭৩১",
+          "url": "https://sunnah.com/bukhari:731"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_048",
+      "conceptId": "worship_duha_daily_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক শিক্ষার্থী দুহার সদকার মর্যাদাকে আদায়যোগ্য যাকাত পরিশোধের সঙ্গে গুলিয়ে ফেলেন। সঠিক পার্থক্য কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুই রাকাতেই স্বয়ংক্রিয়ভাবে সব বাকি আর্থিক দায়িত্ব মেটে"
+        },
+        {
+          "id": "b",
+          "text": "নামাজের মর্যাদায় অন্য সব দানের মূল্য শেষ হয়"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ধনীরা দুহা নামাজের উপকার পেতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "হাদিসে দুহার প্রশংসা আছে, একে যাকাত পরিশোধ বানানো হয়নি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে সদকার মধ্যে জিকির ও ভালো কাজও অন্তর্ভুক্ত। দুহাকে আলাদাভাবে আদায়যোগ্য যাকাতের বিকল্প করা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "720",
+          "label": "সহিহ মুসলিম ৭২০",
+          "url": "https://sunnah.com/muslim:720"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_049",
+      "conceptId": "worship_witr_planning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কারও আশঙ্কা, রাতের শেষভাগ ঘুমিয়েই কেটে যাবে। হাদিস অনুযায়ী বিতরের কোন পরিকল্পনা ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মিস করার ঝুঁকি না নিয়ে রাতের আগের অংশে বিতর পড়া"
+        },
+        {
+          "id": "b",
+          "text": "জাগবেন না মনে হলেও পরে পড়ার ব্যাপারে অনড় থাকা"
+        },
+        {
+          "id": "c",
+          "text": "শেষ সময় অনিশ্চিত বলে বিতর বাদ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বিতর পরের দিনের বিকেলে সরিয়ে নেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "শেষ রাতে উঠতে না পারার আশঙ্কাকারীকে হাদিসে আগে বিতর পড়তে বলা হয়েছে। আর উঠতে পারবেন বলে আশা রাখেন এমন ব্যক্তির জন্য শেষ রাতে নামাজের প্রশংসা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "755a",
+          "label": "সহিহ মুসলিম ৭৫৫a",
+          "url": "https://sunnah.com/muslim:755a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_050",
+      "conceptId": "worship_fasting_reward_joy",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "রোজাদার ইফতারে আনন্দিত হয়ে ভাবছেন, এতে কি ভক্তির বিরোধ হচ্ছে? হাদিস অনুযায়ী কী বোঝা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিক রোজায় সূর্যাস্তে কোনো স্বস্তি থাকা চলবে না"
+        },
+        {
+          "id": "b",
+          "text": "ইফতারের আনন্দ স্পষ্টভাবে স্বীকৃত"
+        },
+        {
+          "id": "c",
+          "text": "আনন্দ মানেই রোজার আত্মিক উদ্দেশ্য ছিল না"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মানুষের প্রশংসাই আনন্দকে গ্রহণযোগ্য করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে ইফতারে রোজাদারের আনন্দ এবং রোজার কারণে আল্লাহর সাক্ষাতের আনন্দ—উভয়টিই স্বীকৃত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1904",
+          "label": "সহিহ বুখারি ১৯০৪",
+          "url": "https://sunnah.com/bukhari:1904"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_051",
+      "conceptId": "worship_ramadan_makeup_record",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কারও রমজানের কিছু রোজা কাজা বাকি। তিনি রোজার ট্র্যাকার সাজাচ্ছেন। কোন পার্থক্য রাখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু রোজার কথা অন্যেরা জেনেছেন কি না"
+        },
+        {
+          "id": "b",
+          "text": "শুধু ব্যক্তি কত ঘণ্টা জেগেছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "বাকি থাকা রমজানের রোজা ও অতিরিক্ত নফল রোজা"
+        },
+        {
+          "id": "d",
+          "text": "পরে রাখা সব রোজা রমজানের সঙ্গে সম্পর্কহীন ধরা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়িশার বর্ণনায় রমজানের ছুটে যাওয়া রোজা পরে পূরণ করার কথা আছে। ট্র্যাকারে সব ঐচ্ছিক না দেখিয়ে এই উদ্দেশ্য বজায় রাখা উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1950",
+          "label": "সহিহ বুখারি ১৯৫০",
+          "url": "https://sunnah.com/bukhari:1950"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_052",
+      "conceptId": "worship_shawwal_six",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "রমজান পূর্ণ করার পর এক শিক্ষার্থী জানতে চান, ছয় দিনের হাদিসে কোন অতিরিক্ত রোজা এসেছে। সঠিক উত্তর কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরের বছরের রমজানের বিকল্প ছয় দিন"
+        },
+        {
+          "id": "b",
+          "text": "রমজানের অংশ হিসেবে গণ্য অতিরিক্ত ছয় দিন"
+        },
+        {
+          "id": "c",
+          "text": "আমল শুরু করতে ঈদুল ফিতরে রোজা রাখা"
+        },
+        {
+          "id": "d",
+          "text": "রমজানের পর শাওয়ালে ছয় রোজা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে রমজানের পর শাওয়ালের ছয় দিনের উল্লেখ আছে। মাসব্যাপী দায়িত্ব ও অতিরিক্ত রোজার পার্থক্য বজায় আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1164a",
+          "label": "সহিহ মুসলিম ১১৬৪a",
+          "url": "https://sunnah.com/muslim:1164a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_053",
+      "conceptId": "worship_ashura_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ বলেন, আল্লাহর দেওয়া মুক্তির কৃতজ্ঞতা শুধু কথায় প্রকাশ করা যায়। আশুরার ঘটনা কী দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইবাদতের মাধ্যমেও কৃতজ্ঞতা প্রকাশ করা যায়"
+        },
+        {
+          "id": "b",
+          "text": "কৃতজ্ঞতার জন্য নতুন বার্ষিক ফরজ উদ্ভাবন করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "নিয়ামত স্মরণে রোজা সবসময় বাদ থাকে"
+        },
+        {
+          "id": "d",
+          "text": "ইবাদতের সঙ্গে কৃতজ্ঞতার কোনো সম্পর্ক নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় মুক্তির সঙ্গে রোজার সম্পর্ক এসেছে। এতে কেবল কথায় নয়, ইবাদতের মাধ্যমেও কৃতজ্ঞ স্মরণের উদাহরণ পাওয়া যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2004",
+          "label": "সহিহ বুখারি ২০০৪",
+          "url": "https://sunnah.com/bukhari:2004"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_054",
+      "conceptId": "worship_arafah_expiation",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মর্যাদাপূর্ণ রোজায় গুনাহ মোচনের প্রতিশ্রুতি আছে বলে কেউ ইচ্ছাকৃত অন্যায়ের পরিকল্পনা করেন। কী সংশোধন করা দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রোজা পরিকল্পিত অন্যায়কে ধর্মীয়ভাবে ক্ষতিহীন করে"
+        },
+        {
+          "id": "b",
+          "text": "সওয়াবের প্রতিশ্রুতি গুনাহ করার অনুমতি নয়"
+        },
+        {
+          "id": "c",
+          "text": "ক্যালেন্ডারের চিহ্ন নৈতিক দায়িত্বের বিকল্প হয়"
+        },
+        {
+          "id": "d",
+          "text": "গুনাহ মোচনের উল্লেখ থাকলে ভবিষ্যতের আচরণ আর গুরুত্বপূর্ণ নয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "প্রতিশ্রুতি আন্তরিক ইবাদত ও আল্লাহর দিকে ফিরতে উৎসাহ দেবে। গুনাহ মোচনের সামগ্রিক শিক্ষায় কবিরা গুনাহ এড়াতে গুরুত্ব দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1162a",
+          "label": "সহিহ মুসলিম ১১৬২a",
+          "url": "https://sunnah.com/muslim:1162a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "233a",
+          "label": "সহিহ মুসলিম ২৩৩a",
+          "url": "https://sunnah.com/muslim:233a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_055",
+      "conceptId": "worship_dhul_hijjah_good_deeds",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হজে যাচ্ছেন না এমন কেউ ভাবেন, জিলহজের প্রথম দশ দিনে ঘরে করার মতো প্রাসঙ্গিক কিছু নেই। হাদিস অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব ভালো আমলের জন্য মক্কায় থাকা দরকার ধরবেন"
+        },
+        {
+          "id": "b",
+          "text": "সফরের সুযোগ না হওয়া পর্যন্ত সাধারণ ইবাদত বন্ধ রাখবেন"
+        },
+        {
+          "id": "c",
+          "text": "নিজ পরিস্থিতির মধ্যে সময়টি ভালো আমলে কাজে লাগাবেন"
+        },
+        {
+          "id": "d",
+          "text": "সময়টিকে হজে না যাওয়া মানুষের জন্য অপ্রাসঙ্গিক ভাববেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে সাধারণভাবে ভালো আমলে উৎসাহ দেওয়া হয়েছে। তাই এই উৎসাহে সাড়া দিতে হজে থাকা আবশ্যক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "969",
+          "label": "সহিহ বুখারি ৯৬৯",
+          "url": "https://sunnah.com/bukhari:969"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_056",
+      "conceptId": "worship_sacrifice_taqwa",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দুই ব্যক্তি কুরবানির দাম তুলনা করে বললেন, বেশি দামই বেশি তাকওয়ার প্রমাণ। কী সংশোধন দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রকাশ্য দামের তুলনায় সবার আন্তরিকতা প্রকাশ পায়"
+        },
+        {
+          "id": "b",
+          "text": "উৎসর্গ থেকে আল্লাহর প্রয়োজন পশুর রক্ত"
+        },
+        {
+          "id": "c",
+          "text": "কুরবানির সঙ্গে তাকওয়ার সম্পর্ক নেই"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতে গুরুত্ব দেওয়া তাকওয়া শুধু দাম দিয়ে প্রমাণিত হয় না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে তাকওয়াকে কেন্দ্রীয় বিষয় করে বলা হয়েছে, গোশত বা রক্ত নিজে আল্লাহর কাছে পৌঁছায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "37",
+          "label": "কুরআন ২২:৩৭",
+          "url": "https://quran.com/22/37"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_057",
+      "conceptId": "worship_hajj_conduct_provisions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক হাজি আমলগুলো ভালোভাবে শেখেন, কিন্তু ঝগড়াকে হজে অপ্রাসঙ্গিক মনে করেন। আয়াত আর কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তর্ক ও অন্যায় এড়ানো হজের নির্দেশনার অংশ"
+        },
+        {
+          "id": "b",
+          "text": "সঠিক অঙ্গভঙ্গি থাকলে সব বিবাদ আত্মিকভাবে অপ্রাসঙ্গিক"
+        },
+        {
+          "id": "c",
+          "text": "সফরের খরচ স্বয়ংক্রিয়ভাবে ক্ষতিকর আচরণের ক্ষতিপূরণ করে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মালপত্র ও পথের প্রস্তুতি দরকার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে ব্যবহারিক প্রস্তুতির পাশাপাশি হজের সময় আচরণ, বিশেষ করে তর্ক ও অন্যায় এড়ানোর সরাসরি নির্দেশনা আছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "197",
+          "label": "কুরআন ২:১৯৭",
+          "url": "https://quran.com/2/197"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_058",
+      "conceptId": "worship_istikhara_trust",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইস্তিখারার পর স্বপ্ন না দেখায় কেউ মনে করেন আমল অসম্পূর্ণ ছিল। শেখানো হাদিস কী প্রতিষ্ঠা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিবার নির্দিষ্ট রঙের স্বপ্ন আবশ্যক"
+        },
+        {
+          "id": "b",
+          "text": "এতে স্বপ্ন আবশ্যক না করে নামাজ ও দোয়া শেখানো হয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "ব্যক্তির প্রথম পছন্দ পূরণ হবেই—এ নিশ্চয়তা দেয়"
+        },
+        {
+          "id": "d",
+          "text": "ইবাদতকারীকে গায়েবের জ্ঞান দিয়ে দেয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে আল্লাহর কাছে কল্যাণ সহজ করা ও ক্ষতি সরিয়ে দেওয়া চাওয়া হয়। স্বপ্ন দেখাকে আবশ্যক শর্ত করা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1166",
+          "label": "সহিহ বুখারি ১১৬৬",
+          "url": "https://sunnah.com/bukhari:1166"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_059",
+      "conceptId": "worship_dua_firm_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নবী ﷺ-এর শেখানো পদ্ধতিতে ক্ষমা চাইতে এক শিক্ষার্থী জানতে চান। কোন কথাটি যথাযথ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হে আল্লাহ, আপনার যদি ইচ্ছা হয় তবেই আমাকে ক্ষমা করুন"
+        },
+        {
+          "id": "b",
+          "text": "আমি আল্লাহকে আমাকে ক্ষমা করতে বাধ্য করতে পারি"
+        },
+        {
+          "id": "c",
+          "text": "হে আল্লাহ, আমাকে ক্ষমা করুন"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর কাছে চাইব কি না তা মানুষের সমর্থন ঠিক করবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে আল্লাহ চাইবেন কি না—এর ওপর শর্ত না বসিয়ে দৃঢ়ভাবে ক্ষমা চাইতে শেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6339",
+          "label": "সহিহ বুখারি ৬৩৩৯",
+          "url": "https://sunnah.com/bukhari:6339"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_060",
+      "conceptId": "worship_istighfar_regular",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক নিয়মিত ইবাদতকারী মনে করেন, শুধু বার্ষিক সমাবেশেই ক্ষমা চাওয়া দরকার। নবী ﷺ-এর উদাহরণ অনুযায়ী কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরের বার্ষিক সমাবেশ পর্যন্ত সব প্রার্থনা পেছানো"
+        },
+        {
+          "id": "b",
+          "text": "নিয়মিত নামাজে ইস্তিগফার অপ্রয়োজনীয় বলে বন্ধ করা"
+        },
+        {
+          "id": "c",
+          "text": "ক্ষমা চাওয়ার আগে স্বপ্নের অপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "সাধারণ দৈনিক ইবাদতে ক্ষমা চাওয়া অন্তর্ভুক্ত করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ প্রতিদিন বারবার ক্ষমা চাওয়ার কথা জানিয়েছেন। এতে নিয়মিত জিকির ও আল্লাহর দিকে ফেরার উদাহরণ আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2702a",
+          "label": "সহিহ মুসলিম ২৭০২a",
+          "url": "https://sunnah.com/muslim:2702a"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "pro",
+  "categoryId": "quran_knowledge",
+  "title": "Quran Knowledge",
+  "description": "General User → Pro. Familiar Quranic teachings, broader basics and short everyday applications requiring deeper understanding of passages and narratives. Covers learning, recitation, supplication, hardship, preparation, gratitude and responsible interpretation. All questions are Pro level within the General User audience; specialist interpretive disputes and verse-number memorization are excluded.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro describes the knowledge and understanding required across all question styles. Styles are not difficulty levels. Requires deeper understanding, connecting familiar teachings and distinguishing common misconceptions beyond Mid, without specialist study. This is General User Pro, not the separate Ultra bank. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Modern scenarios illustrate the cited principles. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_pro_quran_knowledge_001",
+      "conceptId": "quran_righteousness_whole",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which combination forms part of righteousness in Quran 2:177?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faith, worship, generosity and keeping commitments"
+        },
+        {
+          "id": "b",
+          "text": "Correct outward direction with no concern for conduct"
+        },
+        {
+          "id": "c",
+          "text": "Ancestry and popularity alone"
+        },
+        {
+          "id": "d",
+          "text": "Wealth without responsibility toward others"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse brings belief, worship, care for others, promises and patience together in its account of righteousness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "Quran 2:177",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_002",
+      "conceptId": "quran_attentive_listening",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What response to Quran recitation does this verse instruct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuing a competing conversation"
+        },
+        {
+          "id": "b",
+          "text": "Attentive listening and quietness"
+        },
+        {
+          "id": "c",
+          "text": "Judging only the reciter's popularity"
+        },
+        {
+          "id": "d",
+          "text": "Treating attention as unrelated to listening"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse directs listeners to pay attention and be quiet. Detailed rulings for particular settings require appropriate guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "Quran 7:204",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_003",
+      "conceptId": "quran_refuge_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Quran 16:98 instruct a person reciting the Quran to seek?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Freedom from needing any understanding"
+        },
+        {
+          "id": "b",
+          "text": "Praise from everyone listening"
+        },
+        {
+          "id": "c",
+          "text": "Allah's refuge from Satan"
+        },
+        {
+          "id": "d",
+          "text": "A guaranteed prediction of the future"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse teaches seeking Allah's protection from Satan in connection with reciting the Quran.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "Quran 16:98",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_004",
+      "conceptId": "quran_increase_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the supplication Rabbi zidni ilma ask Allah for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A guarantee of public approval"
+        },
+        {
+          "id": "b",
+          "text": "Freedom from all responsibilities"
+        },
+        {
+          "id": "c",
+          "text": "Knowledge independent of Allah"
+        },
+        {
+          "id": "d",
+          "text": "An increase in knowledge"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse teaches asking one's Lord for increased knowledge, alongside guidance to the Prophet concerning revelation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "Quran 20:114",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_005",
+      "conceptId": "quran_musa_learning_request",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does Musa ask to learn in Quran 18:66?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He asks to follow and be taught right guidance"
+        },
+        {
+          "id": "b",
+          "text": "He declares learning beneath his dignity"
+        },
+        {
+          "id": "c",
+          "text": "He demands praise before accepting instruction"
+        },
+        {
+          "id": "d",
+          "text": "He claims there is nothing more he can learn"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Musa's request shows a respectful willingness to learn from guidance another person has been taught.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "66",
+          "label": "Quran 18:66",
+          "url": "https://quran.com/18/66"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_006",
+      "conceptId": "quran_musa_dua_clarity",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Musa's prayer before his mission include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A request that truth no longer need explaining"
+        },
+        {
+          "id": "b",
+          "text": "An uplifted heart, ease in his task and understandable speech"
+        },
+        {
+          "id": "c",
+          "text": "A guarantee that nobody will disagree"
+        },
+        {
+          "id": "d",
+          "text": "A demand to avoid every responsibility"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The prayer asks Allah for help with the task and with communicating so people understand his words.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "Quran 20:25-28",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_007",
+      "conceptId": "quran_ibrahim_reassurance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Why does Ibrahim say he wants to see how Allah gives life to the dead?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because he declares resurrection impossible"
+        },
+        {
+          "id": "b",
+          "text": "To prove Allah depends on human effort"
+        },
+        {
+          "id": "c",
+          "text": "To reassure his heart while affirming belief"
+        },
+        {
+          "id": "d",
+          "text": "Because he denies Allah's power"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "In the exchange, Ibrahim explicitly affirms belief and explains his request as seeking reassurance for his heart.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "260",
+          "label": "Quran 2:260",
+          "url": "https://quran.com/2/260"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_008",
+      "conceptId": "quran_yunus_own_wrong",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Yunus's supplication combine?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Denial of responsibility and a claim to perfection"
+        },
+        {
+          "id": "b",
+          "text": "Blaming every other person"
+        },
+        {
+          "id": "c",
+          "text": "A claim that Allah cannot hear him"
+        },
+        {
+          "id": "d",
+          "text": "Allah's oneness and perfection with admitting his own wrong"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His supplication affirms Allah's sole right to worship, glorifies Him and acknowledges wrongdoing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87-88",
+          "label": "Quran 21:87-88",
+          "url": "https://quran.com/21/87-88"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_009",
+      "conceptId": "quran_ayyub_adversity_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does Ayyub address Allah about his adversity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He states his suffering and appeals to Allah's mercy"
+        },
+        {
+          "id": "b",
+          "text": "He claims faith makes suffering impossible"
+        },
+        {
+          "id": "c",
+          "text": "He denies needing Allah"
+        },
+        {
+          "id": "d",
+          "text": "He declares all supplication pointless"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Ayyub's prayer names his distress while recognizing Allah as the most merciful of those who show mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "83-84",
+          "label": "Quran 21:83-84",
+          "url": "https://quran.com/21/83-84"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_010",
+      "conceptId": "quran_yaqub_active_hope",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What two directions does Yaqub give his sons together?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stop searching and rely only on appearances"
+        },
+        {
+          "id": "b",
+          "text": "Search for Yusuf and his brother, and do not lose hope in Allah's mercy"
+        },
+        {
+          "id": "c",
+          "text": "Abandon hope but keep competing for status"
+        },
+        {
+          "id": "d",
+          "text": "Assume nothing useful can still be done"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse joins practical searching with hope in Allah's mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "87",
+          "label": "Quran 12:87",
+          "url": "https://quran.com/12/87"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_011",
+      "conceptId": "quran_yusuf_resisting_pressure",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Yusuf's prayer show when he is pressured toward wrongdoing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He treats pressure as making every act right"
+        },
+        {
+          "id": "b",
+          "text": "He declares himself independent of Allah's help"
+        },
+        {
+          "id": "c",
+          "text": "He seeks Allah's help rather than yield to the pressure"
+        },
+        {
+          "id": "d",
+          "text": "He chooses approval over integrity"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Yusuf prefers prison to the wrongdoing proposed to him and asks Allah to turn the plot away.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "33",
+          "label": "Quran 12:33",
+          "url": "https://quran.com/12/33"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_012",
+      "conceptId": "quran_yusuf_preparation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What practical response does Yusuf advise before the difficult years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consume the whole harvest immediately"
+        },
+        {
+          "id": "b",
+          "text": "Stop working because the future is known"
+        },
+        {
+          "id": "c",
+          "text": "Treat storing any provision as forbidden"
+        },
+        {
+          "id": "d",
+          "text": "Cultivate and preserve grain for later need"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His advice links cultivation, limited consumption and preservation with preparing for the coming hardship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "47-49",
+          "label": "Quran 12:47-49",
+          "url": "https://quran.com/12/47-49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_013",
+      "conceptId": "quran_sulayman_blessing_test",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does Sulayman describe the favor he receives in this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A favor from his Lord testing his gratitude"
+        },
+        {
+          "id": "b",
+          "text": "Proof that no further responsibility remains"
+        },
+        {
+          "id": "c",
+          "text": "Something that makes him independent of Allah"
+        },
+        {
+          "id": "d",
+          "text": "A reason to despise everyone with less"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Sulayman recognizes Allah's favor and sees a test of gratitude in it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "40",
+          "label": "Quran 27:40",
+          "url": "https://quran.com/27/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_014",
+      "conceptId": "quran_qarun_self_credit",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What claim does Qarun make about the wealth he has received?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He acknowledges that wealth removes no duty"
+        },
+        {
+          "id": "b",
+          "text": "He attributes it to knowledge he possesses"
+        },
+        {
+          "id": "c",
+          "text": "He asks to learn from the advice given"
+        },
+        {
+          "id": "d",
+          "text": "He states that all ownership has ended"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "His reply centers his own knowledge and is followed by a reminder of earlier people with greater power and wealth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "78",
+          "label": "Quran 28:78",
+          "url": "https://quran.com/28/78"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_015",
+      "conceptId": "quran_qarun_balanced_counsel",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which balance appears in the counsel given to Qarun?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pursue wealth with no concern for the Hereafter"
+        },
+        {
+          "id": "b",
+          "text": "Abandon every worldly need"
+        },
+        {
+          "id": "c",
+          "text": "Seek the Hereafter through blessings without forgetting one's worldly share"
+        },
+        {
+          "id": "d",
+          "text": "Treat possessions as permission to spread corruption"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse joins concern for the Hereafter, a worldly share, doing good and avoiding corruption.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "77",
+          "label": "Quran 28:77",
+          "url": "https://quran.com/28/77"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_016",
+      "conceptId": "quran_servants_peace",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What conduct marks the servants of the Most Compassionate in this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arrogance and a need to win every quarrel"
+        },
+        {
+          "id": "b",
+          "text": "Silence only when speaking would bring no praise"
+        },
+        {
+          "id": "c",
+          "text": "Judging others solely by appearance"
+        },
+        {
+          "id": "d",
+          "text": "Humility and a peaceful response to foolish provocation"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse describes humble conduct and refusing to answer foolish provocation with similar behavior.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "63",
+          "label": "Quran 25:63",
+          "url": "https://quran.com/25/63"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_017",
+      "conceptId": "quran_cave_known_limits",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the discussion of the Cave companions' number, what response is the Prophet told to give?",
+      "options": [
+        {
+          "id": "a",
+          "text": "His Lord knows their number best"
+        },
+        {
+          "id": "b",
+          "text": "Popularity decides the correct number"
+        },
+        {
+          "id": "c",
+          "text": "Every proposed number is equally certain"
+        },
+        {
+          "id": "d",
+          "text": "Guessing gives complete knowledge of the unseen"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse acknowledges limited human knowledge and warns against arguing beyond a sound basis.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "Quran 18:22",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_018",
+      "conceptId": "quran_garden_acknowledgment",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What acknowledgment does the companion urge upon entering the garden?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A claim that wealth lasts independently of Allah"
+        },
+        {
+          "id": "b",
+          "text": "Recognition of Allah's will and that power is through Him"
+        },
+        {
+          "id": "c",
+          "text": "A demand that everyone envy its owner"
+        },
+        {
+          "id": "d",
+          "text": "A denial that blessings involve dependence on Allah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The companion urges acknowledgment of Allah rather than treating the garden as a basis for self-sufficiency.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "39",
+          "label": "Quran 18:39",
+          "url": "https://quran.com/18/39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_019",
+      "conceptId": "quran_duha_gratitude_conduct",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which instructions close Surah Ad-Duha?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seek praise while dismissing the vulnerable"
+        },
+        {
+          "id": "b",
+          "text": "Treat every request as an insult"
+        },
+        {
+          "id": "c",
+          "text": "Do not oppress the orphan, do not scold the petitioner, and speak of Allah's blessings"
+        },
+        {
+          "id": "d",
+          "text": "Hide every blessing and reject every duty"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The closing verses join treatment of vulnerable people with acknowledging the Lord's blessings.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "Quran 93:9-11",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_020",
+      "conceptId": "quran_sharh_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What reassurance is repeated in these verses of Ash-Sharh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A believer can never experience hardship"
+        },
+        {
+          "id": "b",
+          "text": "Every problem ends by the next morning"
+        },
+        {
+          "id": "c",
+          "text": "Difficulty makes all effort meaningless"
+        },
+        {
+          "id": "d",
+          "text": "Ease accompanies hardship"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verses repeat reassurance of ease with hardship. They do not give a personal timetable for every difficulty.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "Quran 94:5-6",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_021",
+      "conceptId": "quran_righteousness_whole",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is it incomplete to reduce righteousness to outward form alone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verse also includes belief, obligations and conduct toward others"
+        },
+        {
+          "id": "b",
+          "text": "Outward form is the only matter the verse discusses"
+        },
+        {
+          "id": "c",
+          "text": "Ethical conduct replaces every act of worship"
+        },
+        {
+          "id": "d",
+          "text": "Prayer and generosity can never be joined"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse broadens the account of righteousness rather than making either worship or good conduct dispensable.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "Quran 2:177",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_022",
+      "conceptId": "quran_attentive_listening",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What distinguishes attentive listening from merely having recitation audible nearby?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increasing volume while ignoring it"
+        },
+        {
+          "id": "b",
+          "text": "Giving the recitation deliberate attention"
+        },
+        {
+          "id": "c",
+          "text": "Measuring attention only by audio length"
+        },
+        {
+          "id": "d",
+          "text": "Judging the recitation by background music"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The instruction concerns listening and quietness, not simply the presence of sound.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "Quran 7:204",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_023",
+      "conceptId": "quran_refuge_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What attitude fits seeking Allah's refuge when reciting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assuming recitation makes dependence unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "Treating the request as a claim to know everything"
+        },
+        {
+          "id": "c",
+          "text": "Recognizing one's need for Allah's protection"
+        },
+        {
+          "id": "d",
+          "text": "Seeking the audience's approval as protection"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse directs the reciter to Allah for refuge, expressing dependence rather than self-sufficiency.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "Quran 16:98",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_024",
+      "conceptId": "quran_increase_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What learning attitude fits the request for increased knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assuming previous study ends every need to learn"
+        },
+        {
+          "id": "b",
+          "text": "Treating questions as proof that learning is worthless"
+        },
+        {
+          "id": "c",
+          "text": "Using a good memory as proof of infallibility"
+        },
+        {
+          "id": "d",
+          "text": "Remaining open to learning rather than claiming complete knowledge"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Asking Allah for more knowledge reflects a continuing need to learn, not a claim of having mastered everything.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "Quran 20:114",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_025",
+      "conceptId": "quran_musa_learning_request",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Musa's request suggest about being respected and learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A respected person can still seek instruction humbly"
+        },
+        {
+          "id": "b",
+          "text": "Respect means never learning from another person"
+        },
+        {
+          "id": "c",
+          "text": "Asking permission to learn always shows failure"
+        },
+        {
+          "id": "d",
+          "text": "Only beginners can benefit from guidance"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The narrative presents Musa asking respectfully to learn. Status does not make a willing approach to learning beneath someone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "66",
+          "label": "Quran 18:66",
+          "url": "https://quran.com/18/66"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_026",
+      "conceptId": "quran_musa_dua_clarity",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is understandable speech important in Musa's prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Impressive sound matters more than meaning"
+        },
+        {
+          "id": "b",
+          "text": "The aim includes people understanding his message"
+        },
+        {
+          "id": "c",
+          "text": "A listener's understanding is irrelevant"
+        },
+        {
+          "id": "d",
+          "text": "Difficult wording always proves better knowledge"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The prayer expressly links ease in speech with people understanding what he says.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "Quran 20:25-28",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_027",
+      "conceptId": "quran_ibrahim_reassurance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why would saying Ibrahim's question proves he denied resurrection misread the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every question automatically means denial"
+        },
+        {
+          "id": "b",
+          "text": "The verse contains no response from Ibrahim"
+        },
+        {
+          "id": "c",
+          "text": "It overlooks his explicit affirmation of belief"
+        },
+        {
+          "id": "d",
+          "text": "The passage says Allah cannot restore life"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Understanding the exchange requires keeping Ibrahim's affirmation and his request for reassurance together.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "260",
+          "label": "Quran 2:260",
+          "url": "https://quran.com/2/260"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_028",
+      "conceptId": "quran_yunus_own_wrong",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which attitude reflects the meaning of Yunus's supplication?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using religious words to deny every personal fault"
+        },
+        {
+          "id": "b",
+          "text": "Claiming the words make wrongdoing acceptable"
+        },
+        {
+          "id": "c",
+          "text": "Treating acknowledgment of error as unnecessary"
+        },
+        {
+          "id": "d",
+          "text": "Turning to Allah with humility and responsibility"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The supplication's meaning includes glorifying Allah and admitting wrong, not merely repeating sounds without regard to that message.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87-88",
+          "label": "Quran 21:87-88",
+          "url": "https://quran.com/21/87-88"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_029",
+      "conceptId": "quran_ayyub_adversity_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Ayyub's prayer support the claim that faith forbids mentioning one's pain to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, he names his distress while appealing respectfully to Allah"
+        },
+        {
+          "id": "b",
+          "text": "Yes, he refuses to mention any adversity"
+        },
+        {
+          "id": "c",
+          "text": "Yes, distress makes every prayer unacceptable"
+        },
+        {
+          "id": "d",
+          "text": "No, because he abandons trust in Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The passage presents honest expression of suffering together with recognition of Allah's mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "83-84",
+          "label": "Quran 21:83-84",
+          "url": "https://quran.com/21/83-84"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_030",
+      "conceptId": "quran_yaqub_active_hope",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does Yaqub's instruction connect hope with action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hope requires abandoning every useful step"
+        },
+        {
+          "id": "b",
+          "text": "Hope accompanies a practical search"
+        },
+        {
+          "id": "c",
+          "text": "Action proves hope is absent"
+        },
+        {
+          "id": "d",
+          "text": "Searching makes supplication impossible"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse does not set hope and practical action against each other; it gives both directions together.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "87",
+          "label": "Quran 12:87",
+          "url": "https://quran.com/12/87"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_031",
+      "conceptId": "quran_yusuf_resisting_pressure",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Yusuf's prayer add to a lesson about resisting pressure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confidence makes help unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "Pressure automatically makes wrongdoing permissible"
+        },
+        {
+          "id": "c",
+          "text": "Resistance can include asking Allah for help, rather than boasting of invulnerability"
+        },
+        {
+          "id": "d",
+          "text": "Only public approval can protect a person"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Yusuf seeks Allah's help against the plot rather than claiming he needs no protection.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "33",
+          "label": "Quran 12:33",
+          "url": "https://quran.com/12/33"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_032",
+      "conceptId": "quran_yusuf_preparation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does Yusuf's advice challenge the idea that preparation always shows weak faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He instructs everyone to abandon cultivation"
+        },
+        {
+          "id": "b",
+          "text": "He says stored grain replaces Allah's authority"
+        },
+        {
+          "id": "c",
+          "text": "His plan depends on ignoring the approaching need"
+        },
+        {
+          "id": "d",
+          "text": "The narrative itself includes careful practical preparation"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The passage offers a concrete plan for difficult years. Faith and responsible preparation need not be opposed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "47-49",
+          "label": "Quran 12:47-49",
+          "url": "https://quran.com/12/47-49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_033",
+      "conceptId": "quran_sulayman_blessing_test",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does a blessing not mean that the recipient has no further responsibilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sulayman identifies receiving it as a test of gratitude"
+        },
+        {
+          "id": "b",
+          "text": "A blessing makes gratitude unnecessary"
+        },
+        {
+          "id": "c",
+          "text": "Every benefit proves permanent freedom from accountability"
+        },
+        {
+          "id": "d",
+          "text": "Only hardship can ever involve a test"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse presents favor as an occasion for gratitude and testing, rather than an end to responsibility.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "40",
+          "label": "Quran 27:40",
+          "url": "https://quran.com/27/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_034",
+      "conceptId": "quran_qarun_self_credit",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What attitude should a reader avoid when learning from Qarun's reply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning useful skills"
+        },
+        {
+          "id": "b",
+          "text": "Treating personal knowledge and wealth as grounds for arrogant self-sufficiency"
+        },
+        {
+          "id": "c",
+          "text": "Acknowledging the need for advice"
+        },
+        {
+          "id": "d",
+          "text": "Recognizing that wealth can be lost"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The warning concerns his proud response to counsel, not a blanket condemnation of learning or useful ability.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "78",
+          "label": "Quran 28:78",
+          "url": "https://quran.com/28/78"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_035",
+      "conceptId": "quran_qarun_balanced_counsel",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is using the Hereafter as a reason to neglect every worldly need incomplete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verse makes worldly luxury the only goal"
+        },
+        {
+          "id": "b",
+          "text": "It forbids every form of useful work"
+        },
+        {
+          "id": "c",
+          "text": "The same counsel also says not to forget one's worldly share"
+        },
+        {
+          "id": "d",
+          "text": "It says good treatment is irrelevant to wealth"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse combines concern for the Hereafter with a proper worldly share and doing good. Neither part should erase the other.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "77",
+          "label": "Quran 28:77",
+          "url": "https://quran.com/28/77"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_036",
+      "conceptId": "quran_servants_peace",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does refusing a foolish quarrel necessarily mean agreeing with the provocation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every unanswered insult becomes true"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every disagreement requires a public fight"
+        },
+        {
+          "id": "c",
+          "text": "No, because humility requires insulting more quietly"
+        },
+        {
+          "id": "d",
+          "text": "No, peaceful restraint differs from endorsing a wrong"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse praises a peaceful response rather than imitation of foolish provocation. Refusing escalation is not agreement with it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "63",
+          "label": "Quran 25:63",
+          "url": "https://quran.com/25/63"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_037",
+      "conceptId": "quran_cave_known_limits",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What reading habit fits the warning about disputed details in the Cave story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distinguish soundly grounded knowledge from speculation"
+        },
+        {
+          "id": "b",
+          "text": "Make uncertain details central just because they attract attention"
+        },
+        {
+          "id": "c",
+          "text": "Treat every guess as revelation"
+        },
+        {
+          "id": "d",
+          "text": "Assume argument alone establishes certainty"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse directs attention to Allah's knowledge and limits argument. It does not invite confident invention of missing details.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "Quran 18:22",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_038",
+      "conceptId": "quran_garden_acknowledgment",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which claim goes beyond the lesson actually stated in the companion's advice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A blessing should be recognized as dependent on Allah"
+        },
+        {
+          "id": "b",
+          "text": "Saying the acknowledgment guarantees property can never be lost"
+        },
+        {
+          "id": "c",
+          "text": "Wealth does not justify self-sufficiency"
+        },
+        {
+          "id": "d",
+          "text": "The companion urges mention of Allah's will and power"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse teaches acknowledgment of Allah. It does not state an unconditional guarantee that property will never suffer loss.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "39",
+          "label": "Quran 18:39",
+          "url": "https://quran.com/18/39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_039",
+      "conceptId": "quran_duha_gratitude_conduct",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How do Ad-Duha's closing instructions connect gratitude with conduct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Speaking of blessings excuses humiliating people in need"
+        },
+        {
+          "id": "b",
+          "text": "Gratitude concerns possessions alone"
+        },
+        {
+          "id": "c",
+          "text": "Acknowledging blessings goes alongside humane treatment of others"
+        },
+        {
+          "id": "d",
+          "text": "Kindness matters only if the recipient praises the giver"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The passage places these instructions together, inviting gratitude that does not disregard vulnerable people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "Quran 93:9-11",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_040",
+      "conceptId": "quran_sharh_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should these verses not be used to promise a particular person's problem will end tomorrow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They state that every trial lasts exactly one day"
+        },
+        {
+          "id": "b",
+          "text": "They deny the reality of hardship"
+        },
+        {
+          "id": "c",
+          "text": "They make hope depend on a fixed personal schedule"
+        },
+        {
+          "id": "d",
+          "text": "They give reassurance without specifying that deadline"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A promise about an exact deadline adds information the cited verses do not supply.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "Quran 94:5-6",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_041",
+      "conceptId": "quran_righteousness_whole",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A study circle focuses on religious appearance but dismisses promises and helping people. Which change fits this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Include the verse's responsibilities toward others alongside worship"
+        },
+        {
+          "id": "b",
+          "text": "Replace every act of worship with discussion"
+        },
+        {
+          "id": "c",
+          "text": "Treat appearance as the only sign of righteousness"
+        },
+        {
+          "id": "d",
+          "text": "Ignore conduct whenever recitation sounds beautiful"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse connects faith and worship with generosity, commitments and patience. A learning plan should preserve that breadth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "Quran 2:177",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_042",
+      "conceptId": "quran_attentive_listening",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "During a dedicated Quran-listening session, people keep holding side conversations. What would better follow the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raise the audio so both conversations continue"
+        },
+        {
+          "id": "b",
+          "text": "Pause the conversations and attend to the recitation"
+        },
+        {
+          "id": "c",
+          "text": "Treat listening as unnecessary if the file is playing"
+        },
+        {
+          "id": "d",
+          "text": "Judge the session only by its duration"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "In this listening setting, quiet attention directly applies the instruction rather than treating recitation as background sound.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "Quran 7:204",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_043",
+      "conceptId": "quran_refuge_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are about to begin reciting the Quran. Which preparation follows this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Declare that you no longer need Allah's protection"
+        },
+        {
+          "id": "b",
+          "text": "Seek protection through the audience's praise"
+        },
+        {
+          "id": "c",
+          "text": "Seek refuge in Allah from Satan"
+        },
+        {
+          "id": "d",
+          "text": "Assume starting requires predicting the future"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse instructs the reciter to seek Allah's refuge from Satan.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "Quran 16:98",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_044",
+      "conceptId": "quran_increase_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner finishes a Quran course and decides there is nothing more to learn. Which reminder fits this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A completed course makes every interpretation infallible"
+        },
+        {
+          "id": "b",
+          "text": "Good marks mean questions are no longer useful"
+        },
+        {
+          "id": "c",
+          "text": "Prior study removes the need for careful learning"
+        },
+        {
+          "id": "d",
+          "text": "Keep seeking increased knowledge with humility"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The request for increased knowledge supports continued learning rather than a claim to complete mastery.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "Quran 20:114",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_045",
+      "conceptId": "quran_musa_learning_request",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have experience but meet someone who can teach you something useful. Which response resembles Musa's request?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask respectfully to learn from their knowledge"
+        },
+        {
+          "id": "b",
+          "text": "Refuse instruction to protect your status"
+        },
+        {
+          "id": "c",
+          "text": "Demand praise before listening"
+        },
+        {
+          "id": "d",
+          "text": "Assume experience means you know everything"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse presents respectful willingness to learn. The scenario applies that attitude without equating ordinary learning with prophetic circumstances.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "66",
+          "label": "Quran 18:66",
+          "url": "https://quran.com/18/66"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_046",
+      "conceptId": "quran_musa_dua_clarity",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before explaining an important message, which request follows Musa's prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask only to sound more impressive than everyone"
+        },
+        {
+          "id": "b",
+          "text": "Ask Allah for ease and speech people can understand"
+        },
+        {
+          "id": "c",
+          "text": "Seek praise regardless of whether listeners understand"
+        },
+        {
+          "id": "d",
+          "text": "Treat clear explanation as a weakness"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The prayer's concern includes ease in the task and making the message understandable.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "Quran 20:25-28",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_047",
+      "conceptId": "quran_ibrahim_reassurance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A discussion claims every sincere question automatically proves disbelief, citing Ibrahim's request. What should be checked?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove his answer from the quotation"
+        },
+        {
+          "id": "b",
+          "text": "Assume the question cancels everything else he says"
+        },
+        {
+          "id": "c",
+          "text": "Read his affirmation of belief and reason for asking in the same verse"
+        },
+        {
+          "id": "d",
+          "text": "Treat the passage as denying resurrection"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Ibrahim explicitly affirms belief and seeks reassurance. His words should not be removed from their immediate exchange.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "260",
+          "label": "Quran 2:260",
+          "url": "https://quran.com/2/260"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_048",
+      "conceptId": "quran_yunus_own_wrong",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone shares Yunus's dua as a way to avoid admitting any personal wrong. What has been missed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The passage rejects calling on Allah"
+        },
+        {
+          "id": "b",
+          "text": "The words declare the speaker incapable of error"
+        },
+        {
+          "id": "c",
+          "text": "The prayer is only about gaining public approval"
+        },
+        {
+          "id": "d",
+          "text": "The supplication itself includes acknowledgment of wrongdoing"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Using the supplication responsibly includes attending to its humility and acknowledgment, not reversing its meaning.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87-88",
+          "label": "Quran 21:87-88",
+          "url": "https://quran.com/21/87-88"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_049",
+      "conceptId": "quran_ayyub_adversity_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A distressed friend thinks telling Allah about their pain must show lack of faith. Which example is relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ayyub naming his adversity and appealing to Allah's mercy"
+        },
+        {
+          "id": "b",
+          "text": "Qarun claiming credit for his wealth"
+        },
+        {
+          "id": "c",
+          "text": "The garden owner's pride in possessions"
+        },
+        {
+          "id": "d",
+          "text": "An instruction to stop all supplication"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Ayyub's example joins honest expression of distress with reverence and hope in Allah's mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "83-84",
+          "label": "Quran 21:83-84",
+          "url": "https://quran.com/21/83-84"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_050",
+      "conceptId": "quran_yaqub_active_hope",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A group says hoping in Allah means they must stop a useful, safe search. Which lesson fits Yaqub's instruction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hope makes every practical step forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Continue appropriate searching without abandoning hope"
+        },
+        {
+          "id": "c",
+          "text": "Searching means Allah cannot be trusted"
+        },
+        {
+          "id": "d",
+          "text": "Only complete inactivity demonstrates faith"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Yaqub tells his sons to search and not despair. The story brings action and hope together.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "87",
+          "label": "Quran 12:87",
+          "url": "https://quran.com/12/87"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_051",
+      "conceptId": "quran_yusuf_resisting_pressure",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends pressure someone into wrongdoing and say they should trust their own strength alone. What lesson fits Yusuf's prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume confidence makes wrongdoing harmless"
+        },
+        {
+          "id": "b",
+          "text": "Treat peer approval as the final standard"
+        },
+        {
+          "id": "c",
+          "text": "Seek Allah's help while resisting the pressure"
+        },
+        {
+          "id": "d",
+          "text": "Believe pressure removes all need to choose responsibly"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Yusuf's prayer models seeking Allah's help rather than assuming personal invulnerability.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "33",
+          "label": "Quran 12:33",
+          "url": "https://quran.com/12/33"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_052",
+      "conceptId": "quran_yusuf_preparation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A community can sensibly prepare supplies for a foreseeable shortage. Which lesson does Yusuf's plan support?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use everything now to prove trust"
+        },
+        {
+          "id": "b",
+          "text": "Assume preparation gives total control of the future"
+        },
+        {
+          "id": "c",
+          "text": "Reject practical knowledge because the story mentions revelation"
+        },
+        {
+          "id": "d",
+          "text": "Prepare responsibly rather than treating planning as faithlessness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The modern scenario illustrates responsible preparation. It does not give planners Yusuf's revealed knowledge of future events.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "47-49",
+          "label": "Quran 12:47-49",
+          "url": "https://quran.com/12/47-49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_053",
+      "conceptId": "quran_sulayman_blessing_test",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After a major success, someone says they now have no need to think about gratitude. What does Sulayman's response remind them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Receiving a blessing can itself test gratitude"
+        },
+        {
+          "id": "b",
+          "text": "Success ends every responsibility"
+        },
+        {
+          "id": "c",
+          "text": "Only those who fail need Allah"
+        },
+        {
+          "id": "d",
+          "text": "Every advantage proves permanent spiritual superiority"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Sulayman attributes the favor to his Lord and recognizes a test in how he responds.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "40",
+          "label": "Quran 27:40",
+          "url": "https://quran.com/27/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_054",
+      "conceptId": "quran_qarun_self_credit",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An achiever uses personal skill as a reason to reject all reminders of dependence on Allah. Which warning is relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A claim that all learning is forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Qarun's proud attribution of wealth to his own knowledge"
+        },
+        {
+          "id": "c",
+          "text": "A rule that no one may use practical skills"
+        },
+        {
+          "id": "d",
+          "text": "Proof that advice matters only for poor people"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The lesson challenges arrogant self-sufficiency. It does not condemn useful study or deny ordinary human effort.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "78",
+          "label": "Quran 28:78",
+          "url": "https://quran.com/28/78"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_055",
+      "conceptId": "quran_qarun_balanced_counsel",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person says seeking the Hereafter requires abandoning every reasonable worldly responsibility. Which correction fits the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make worldly comfort the sole purpose instead"
+        },
+        {
+          "id": "b",
+          "text": "Assume possessions remove the need for good conduct"
+        },
+        {
+          "id": "c",
+          "text": "Pursue the Hereafter while honoring a proper worldly share and doing good"
+        },
+        {
+          "id": "d",
+          "text": "Treat corruption as acceptable if the aim sounds religious"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The counsel combines an eternal aim with one's worldly share, good treatment and rejection of corruption.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 28,
+          "ayahs": "77",
+          "label": "Quran 28:77",
+          "url": "https://quran.com/28/77"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_056",
+      "conceptId": "quran_servants_peace",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "In a safe discussion, someone tries to provoke you into an exchange of insults. Which response fits this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Find a harsher insult to protect your image"
+        },
+        {
+          "id": "b",
+          "text": "Invite others to prolong the quarrel"
+        },
+        {
+          "id": "c",
+          "text": "Treat refusing to fight as agreement with every accusation"
+        },
+        {
+          "id": "d",
+          "text": "Respond peacefully rather than join the insults"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse describes humility and a peaceful response to foolish provocation. This scenario concerns a safe conversation, not ignoring a threat.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "63",
+          "label": "Quran 25:63",
+          "url": "https://quran.com/25/63"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_057",
+      "conceptId": "quran_cave_known_limits",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A storyteller adds guessed details to the Cave story and presents them as certain Quranic facts. What should change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate the actual text from guesses and avoid unsupported certainty"
+        },
+        {
+          "id": "b",
+          "text": "Make the details more dramatic so they sound convincing"
+        },
+        {
+          "id": "c",
+          "text": "Assume repetition turns guesses into revelation"
+        },
+        {
+          "id": "d",
+          "text": "Treat audience approval as verification"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The warning about disputed details encourages care with the limits of one's knowledge when presenting Quranic narratives.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "Quran 18:22",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_058",
+      "conceptId": "quran_garden_acknowledgment",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After hearing the garden companion's advice, someone advertises its words as insurance against every possible loss. Which response fits the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agree that property can no longer be damaged"
+        },
+        {
+          "id": "b",
+          "text": "Teach acknowledgment of Allah without inventing an absolute guarantee"
+        },
+        {
+          "id": "c",
+          "text": "Promise that no believer's possessions can ever decline"
+        },
+        {
+          "id": "d",
+          "text": "Treat gratitude as ownership of the unseen"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse urges recognition of Allah's will and power. It does not offer the advertised unconditional insurance claim.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "39",
+          "label": "Quran 18:39",
+          "url": "https://quran.com/18/39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_059",
+      "conceptId": "quran_duha_gratitude_conduct",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A campaign speaks enthusiastically of blessings but mocks people seeking help. Which change fits Ad-Duha?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use gratitude as a reason to shame petitioners"
+        },
+        {
+          "id": "b",
+          "text": "Treat every request as permission to insult"
+        },
+        {
+          "id": "c",
+          "text": "Keep gratitude together with respectful treatment of those in need"
+        },
+        {
+          "id": "d",
+          "text": "Assume speaking of blessings removes duties toward others"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The surah's closing instructions join acknowledgment of blessings with avoiding oppression and harsh treatment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "Quran 93:9-11",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_quran_knowledge_060",
+      "conceptId": "quran_sharh_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone posts that these verses guarantee every reader's difficulty ends within twenty-four hours. What should be corrected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Change the deadline to another invented date"
+        },
+        {
+          "id": "b",
+          "text": "Deny that the verses contain any hope"
+        },
+        {
+          "id": "c",
+          "text": "Claim that continuing hardship proves the reader has no faith"
+        },
+        {
+          "id": "d",
+          "text": "Keep the reassurance and remove the unsupported deadline"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The passage offers repeated reassurance of ease with hardship, without specifying that personal timetable.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "Quran 94:5-6",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    }
+  ]
+}

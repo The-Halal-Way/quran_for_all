@@ -71,6 +71,18 @@ flutter:
     - assets/images/books/
     - assets/json/
     - assets/json/hadith_integrity/
+    - assets/json/quiz/general/beginner/
+    - assets/json/quiz/general/beginner/bangla/
+    - assets/json/quiz/general/beginner/english/
+    - assets/json/quiz/general/intermediate/
+    - assets/json/quiz/general/intermediate/bangla/
+    - assets/json/quiz/general/intermediate/english/
+    - assets/json/quiz/general/pro/
+    - assets/json/quiz/general/pro/bangla/
+    - assets/json/quiz/general/pro/english/
+    - assets/json/quiz/islamically_educated/intermediate/
+    - assets/json/quiz/islamically_educated/intermediate/bangla/
+    - assets/json/quiz/islamically_educated/intermediate/english/
 
   # Registered families avoid runtime FontLoader calls and repeated relayouts.
   fonts:

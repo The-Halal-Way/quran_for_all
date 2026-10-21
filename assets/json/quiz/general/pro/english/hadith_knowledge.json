@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "pro",
+  "categoryId": "hadith_knowledge",
+  "title": "Hadith Knowledge",
+  "description": "General User → Pro. Familiar hadith examples, broader meanings and short everyday applications requiring deeper understanding. Covers intention, sound guidance, balance in worship, knowledge, trust, companionship and common misreadings. All questions are Pro level within the General User audience; specialist terminology, grading disputes and reference-number memorization are excluded.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro describes the knowledge and understanding required across all question styles. Styles are not difficulty levels. Requires deeper understanding, connecting familiar teachings and distinguishing common misconceptions beyond Mid, without specialist study. This is General User Pro, not the separate Ultra bank. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked hadith texts checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Modern scenarios illustrate the cited principles. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_pro_hadith_knowledge_001",
+      "conceptId": "hadith_migration_motive",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which example illustrates the teaching about intentions in the opening hadith of Sahih al-Bukhari?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Migration motivated by a worldly gain"
+        },
+        {
+          "id": "b",
+          "text": "Trading with an unclear price"
+        },
+        {
+          "id": "c",
+          "text": "Planting food eaten by birds"
+        },
+        {
+          "id": "d",
+          "text": "Settling an argument through witnesses"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report uses migration for worldly aims to show that an outward act and its intended purpose must be distinguished.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_002",
+      "conceptId": "hadith_doubtful_boundaries",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the hadith about doubtful matters, what does grazing near a protected pasture illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every unfamiliar thing is forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Approaching a boundary risks crossing it"
+        },
+        {
+          "id": "c",
+          "text": "Public approval makes something lawful"
+        },
+        {
+          "id": "d",
+          "text": "Avoiding all trade is necessary"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The comparison warns about moving close to forbidden conduct through doubtful matters; it does not declare every unfamiliar thing forbidden.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "52",
+          "label": "Sahih al-Bukhari 52",
+          "url": "https://sunnah.com/bukhari:52"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_003",
+      "conceptId": "hadith_guidance_acceptance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith about rejected actions make central to an act of worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The number of participants"
+        },
+        {
+          "id": "b",
+          "text": "The expense of organizing it"
+        },
+        {
+          "id": "c",
+          "text": "Accord with the Prophet’s guidance"
+        },
+        {
+          "id": "d",
+          "text": "The admiration it receives"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report makes conformity to prophetic guidance essential. Popularity and expense cannot establish a religious practice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1718b",
+          "label": "Sahih Muslim 1718b",
+          "url": "https://sunnah.com/muslim:1718b"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_004",
+      "conceptId": "hadith_ihsan_all_things",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which example accompanies the command for excellence in all things in the hadith of Shaddad ibn Aws?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choosing the largest possible sacrifice"
+        },
+        {
+          "id": "b",
+          "text": "Giving every animal a special name"
+        },
+        {
+          "id": "c",
+          "text": "Restricting kindness to useful animals"
+        },
+        {
+          "id": "d",
+          "text": "Reducing an animal’s suffering during slaughter"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report applies excellence even to slaughter, showing that lawful action still requires humane care.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1955a",
+          "label": "Sahih Muslim 1955a",
+          "url": "https://sunnah.com/muslim:1955a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_005",
+      "conceptId": "hadith_traveler_perspective",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which comparison did the Prophet use when advising Ibn Umar about life in this world?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A stranger or passing traveler"
+        },
+        {
+          "id": "b",
+          "text": "A merchant owning every market"
+        },
+        {
+          "id": "c",
+          "text": "A ruler with permanent authority"
+        },
+        {
+          "id": "d",
+          "text": "A guest guaranteed a long stay"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The comparison presents worldly life as temporary, encouraging preparation rather than attachment as though it will last forever.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6416",
+          "label": "Sahih al-Bukhari 6416",
+          "url": "https://sunnah.com/bukhari:6416"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_006",
+      "conceptId": "hadith_strength_good_in_both",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What qualification accompanies the preference for a strong believer over a weak believer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the strong receive any reward"
+        },
+        {
+          "id": "b",
+          "text": "Both believers have good in them"
+        },
+        {
+          "id": "c",
+          "text": "Weak believers should stop trying"
+        },
+        {
+          "id": "d",
+          "text": "Strength means wealth alone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report preserves the goodness of both while encouraging beneficial effort. Preference does not mean that the weaker believer has no worth.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_007",
+      "conceptId": "hadith_reward_sincere_intention",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does the hadith about recording deeds describe a good deed sincerely intended but not performed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is always recorded as a sin"
+        },
+        {
+          "id": "b",
+          "text": "It earns reward only if announced"
+        },
+        {
+          "id": "c",
+          "text": "A complete good deed is recorded"
+        },
+        {
+          "id": "d",
+          "text": "It cancels every earlier obligation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report describes Allah’s generosity in recording a sincere good intention even when the deed is not carried out.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6491",
+          "label": "Sahih al-Bukhari 6491",
+          "url": "https://sunnah.com/bukhari:6491"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_008",
+      "conceptId": "hadith_admiration_good_use",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair is presented as worthy of aspiration in the hadith about two admirable examples?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inherited wealth and a famous family"
+        },
+        {
+          "id": "b",
+          "text": "Long life and public popularity"
+        },
+        {
+          "id": "c",
+          "text": "Physical strength and military victory"
+        },
+        {
+          "id": "d",
+          "text": "Rightly used wealth and practiced, taught wisdom"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The examples concern using gifts well: spending wealth rightly and applying and teaching wisdom, rather than simply possessing advantages.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "73",
+          "label": "Sahih al-Bukhari 73",
+          "url": "https://sunnah.com/bukhari:73"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_009",
+      "conceptId": "hadith_modesty_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did Umm Sulaym’s question to the Prophet demonstrate about learning purification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A personal religious question can be asked respectfully"
+        },
+        {
+          "id": "b",
+          "text": "Personal questions must always remain unanswered"
+        },
+        {
+          "id": "c",
+          "text": "Only men may ask about purification"
+        },
+        {
+          "id": "d",
+          "text": "Modesty requires guessing every ruling"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "She asked about a sensitive purification matter and received an answer. Respectful learning can coexist with modesty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "130",
+          "label": "Sahih al-Bukhari 130",
+          "url": "https://sunnah.com/bukhari:130"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_010",
+      "conceptId": "hadith_charity_pardon_humility",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which three qualities are joined in the hadith about wealth, honor and being raised by Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wealth, authority and popularity"
+        },
+        {
+          "id": "b",
+          "text": "Charity, forgiveness and humility"
+        },
+        {
+          "id": "c",
+          "text": "Silence, isolation and celibacy"
+        },
+        {
+          "id": "d",
+          "text": "Travel, trade and physical strength"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report links charity with wealth, forgiveness with honor, and humility before Allah with being raised in status.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "Sahih Muslim 2588",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_011",
+      "conceptId": "hadith_planting_benefit",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Whose eating from a Muslim’s planting is described as charity for the planter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the planter’s own family"
+        },
+        {
+          "id": "b",
+          "text": "Only people who request permission"
+        },
+        {
+          "id": "c",
+          "text": "People, birds or animals"
+        },
+        {
+          "id": "d",
+          "text": "Only travelers who cannot pay"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report includes human and animal benefit, extending the charitable value of planting beyond a direct gift to a person.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "Sahih al-Bukhari 2320",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_012",
+      "conceptId": "hadith_gifts_official_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What question exposed the problem with a zakah collector’s claimed personal gifts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Were the gifts wrapped attractively?"
+        },
+        {
+          "id": "b",
+          "text": "Did every gift have the same price?"
+        },
+        {
+          "id": "c",
+          "text": "Had he thanked each giver publicly?"
+        },
+        {
+          "id": "d",
+          "text": "Would gifts have come without his official role?"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet questioned whether the gifts would have reached the collector at home, separating personal generosity from benefits arising through office.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7174",
+          "label": "Sahih al-Bukhari 7174",
+          "url": "https://sunnah.com/bukhari:7174"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_013",
+      "conceptId": "hadith_learning_from_harm",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which image does the hadith use to teach learning from harmful experience?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Being stung again from the same hole"
+        },
+        {
+          "id": "b",
+          "text": "Losing a camel in a desert"
+        },
+        {
+          "id": "c",
+          "text": "Spilling water from a full vessel"
+        },
+        {
+          "id": "d",
+          "text": "Sailing a boat against the wind"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The image encourages alertness after experience, rather than repeatedly exposing oneself to the same avoidable harm.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6133",
+          "label": "Sahih al-Bukhari 6133",
+          "url": "https://sunnah.com/bukhari:6133"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_014",
+      "conceptId": "hadith_two_faced_conduct",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which conduct is condemned through the description of a person with two faces?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Explaining truth in two languages"
+        },
+        {
+          "id": "b",
+          "text": "Presenting deceptive loyalties to different groups"
+        },
+        {
+          "id": "c",
+          "text": "Being friendly to unfamiliar people"
+        },
+        {
+          "id": "d",
+          "text": "Disagreeing politely with a friend"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The warning concerns deceptive dealings with different groups. Changing language or speaking courteously is not itself the condemned conduct.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6058",
+          "label": "Sahih al-Bukhari 6058",
+          "url": "https://sunnah.com/bukhari:6058"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_015",
+      "conceptId": "hadith_ease_without_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What warning accompanies the hadith’s description of religion as easy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All religious duties become optional"
+        },
+        {
+          "id": "b",
+          "text": "Effort in worship is discouraged"
+        },
+        {
+          "id": "c",
+          "text": "Overburdening oneself leads to being overcome"
+        },
+        {
+          "id": "d",
+          "text": "Only complete perfection has value"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report warns against unsustainable severity while encouraging sincere striving and hope, rather than abandoning religious practice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "Sahih al-Bukhari 39",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_016",
+      "conceptId": "hadith_understanding_religion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What gift does the Prophet connect with Allah intending good for someone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Winning every discussion"
+        },
+        {
+          "id": "b",
+          "text": "Remembering the most reference numbers"
+        },
+        {
+          "id": "c",
+          "text": "Having the largest audience"
+        },
+        {
+          "id": "d",
+          "text": "Understanding the religion"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The praised gift is religious understanding. Fame, argument and a large store of numbers are not the measure named here.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "71",
+          "label": "Sahih al-Bukhari 71",
+          "url": "https://sunnah.com/bukhari:71"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_017",
+      "conceptId": "hadith_loss_of_scholars",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does the hadith describe knowledge being taken away from the community?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scholars die and ignorant leaders answer without knowledge"
+        },
+        {
+          "id": "b",
+          "text": "All written books disappear at once"
+        },
+        {
+          "id": "c",
+          "text": "Every learner immediately forgets all words"
+        },
+        {
+          "id": "d",
+          "text": "People stop needing guidance entirely"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report links the loss of learned people with the rise of uninformed answers that mislead both speakers and listeners.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "100",
+          "label": "Sahih al-Bukhari 100",
+          "url": "https://sunnah.com/bukhari:100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_018",
+      "conceptId": "hadith_three_worshippers_balance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did the Prophet answer men proposing extreme lifelong worship routines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He approved every increase in hardship"
+        },
+        {
+          "id": "b",
+          "text": "He described worship alongside sleep, breaking fast and marriage"
+        },
+        {
+          "id": "c",
+          "text": "He required all companions to avoid marriage"
+        },
+        {
+          "id": "d",
+          "text": "He replaced obligatory prayer with rest"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "His own example corrected the idea that greater self-denial necessarily represents greater devotion.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5063",
+          "label": "Sahih al-Bukhari 5063",
+          "url": "https://sunnah.com/bukhari:5063"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_019",
+      "conceptId": "hadith_eloquence_and_rights",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What danger does the hadith about disputing parties associate with persuasive speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every eloquent person must be dishonest"
+        },
+        {
+          "id": "b",
+          "text": "A fluent claim needs no examination"
+        },
+        {
+          "id": "c",
+          "text": "A judgment may favor someone taking another’s right"
+        },
+        {
+          "id": "d",
+          "text": "A favorable decision removes all wrongdoing"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The warning distinguishes a decision based on presented arguments from the true entitlement known to the person making the claim.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2680",
+          "label": "Sahih al-Bukhari 2680",
+          "url": "https://sunnah.com/bukhari:2680"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_020",
+      "conceptId": "hadith_company_influence",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair illustrates the influence of good and harmful companionship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A farmer and a traveler"
+        },
+        {
+          "id": "b",
+          "text": "A teacher and a student"
+        },
+        {
+          "id": "c",
+          "text": "A host and an unexpected guest"
+        },
+        {
+          "id": "d",
+          "text": "A musk seller and someone working bellows"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The pleasant scent and harmful smoke illustrate how company can affect a person, rather than ranking occupations as moral identities.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_021",
+      "conceptId": "hadith_migration_motive",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why can two people making the same outward journey differ in its religious reward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their purposes can differ despite matching actions"
+        },
+        {
+          "id": "b",
+          "text": "Travel distance is the only measure"
+        },
+        {
+          "id": "c",
+          "text": "A shared destination guarantees equal reward"
+        },
+        {
+          "id": "d",
+          "text": "Other people’s praise determines the reward"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The migration example directs attention to purpose; identical outward movement does not establish identical intention.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_022",
+      "conceptId": "hadith_doubtful_boundaries",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does the report about lawful and forbidden matters also mention the heart?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Good feelings erase forbidden boundaries"
+        },
+        {
+          "id": "b",
+          "text": "Inner soundness influences outward conduct"
+        },
+        {
+          "id": "c",
+          "text": "Physical fitness determines every ruling"
+        },
+        {
+          "id": "d",
+          "text": "Outward actions have no religious importance"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report connects moral boundaries with the heart’s condition. Inner reform and outward choices belong together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "52",
+          "label": "Sahih al-Bukhari 52",
+          "url": "https://sunnah.com/bukhari:52"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_023",
+      "conceptId": "hadith_guidance_acceptance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which reasoning conflicts with the hadith about rejected religious actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Religious practice needs sound guidance"
+        },
+        {
+          "id": "b",
+          "text": "A popular practice can need examination"
+        },
+        {
+          "id": "c",
+          "text": "Sincerity alone establishes any invented ritual"
+        },
+        {
+          "id": "d",
+          "text": "Good motives require a sound method"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A sincere motive does not by itself establish a ritual as part of the religion; conformity to guidance also matters.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1718b",
+          "label": "Sahih Muslim 1718b",
+          "url": "https://sunnah.com/muslim:1718b"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_024",
+      "conceptId": "hadith_ihsan_all_things",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What broader principle follows from requiring humane care even in lawful slaughter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A lawful aim excuses every method"
+        },
+        {
+          "id": "b",
+          "text": "Excellence applies only inside prayer"
+        },
+        {
+          "id": "c",
+          "text": "Animal suffering has no moral relevance"
+        },
+        {
+          "id": "d",
+          "text": "Permission does not remove responsibility for how one acts"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The example distinguishes an action’s permissibility from the care and excellence required in carrying it out.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1955a",
+          "label": "Sahih Muslim 1955a",
+          "url": "https://sunnah.com/muslim:1955a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_025",
+      "conceptId": "hadith_traveler_perspective",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which understanding best fits the advice to live like a passing traveler?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Let temporary life serve preparation for the Hereafter"
+        },
+        {
+          "id": "b",
+          "text": "Avoid all work and family responsibilities"
+        },
+        {
+          "id": "c",
+          "text": "Assume tomorrow is guaranteed"
+        },
+        {
+          "id": "d",
+          "text": "Treat every comfort as forbidden"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A traveler’s perspective changes priorities. The comparison does not itself require abandoning ordinary responsibilities or declaring comforts forbidden.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6416",
+          "label": "Sahih al-Bukhari 6416",
+          "url": "https://sunnah.com/bukhari:6416"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_026",
+      "conceptId": "hadith_strength_good_in_both",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is using the strong-believer hadith to ridicule someone’s weakness a poor reading?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves believers must never improve"
+        },
+        {
+          "id": "b",
+          "text": "It ignores the goodness affirmed in both believers"
+        },
+        {
+          "id": "c",
+          "text": "It makes every difference in ability unreal"
+        },
+        {
+          "id": "d",
+          "text": "It limits faith to athletic performance"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report combines encouragement to strengthen oneself with recognition of good in the weaker believer, not contempt.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_027",
+      "conceptId": "hadith_reward_sincere_intention",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does rewarding an intended good deed reveal about how deeds are recorded?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Good intentions make action unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "People can calculate everyone’s final reward"
+        },
+        {
+          "id": "c",
+          "text": "Allah’s generosity extends beyond completed outward acts"
+        },
+        {
+          "id": "d",
+          "text": "A wish guarantees all duties are fulfilled"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report gives hope through Allah’s generous accounting. It does not turn intention into completion of an outstanding duty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6491",
+          "label": "Sahih al-Bukhari 6491",
+          "url": "https://sunnah.com/bukhari:6491"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_028",
+      "conceptId": "hadith_admiration_good_use",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What distinguishes the aspiration praised in the two-examples hadith from destructive envy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wanting every advantage taken from others"
+        },
+        {
+          "id": "b",
+          "text": "Resenting any person who teaches well"
+        },
+        {
+          "id": "c",
+          "text": "Measuring goodness only by possessions"
+        },
+        {
+          "id": "d",
+          "text": "Wanting similar goodness without another losing theirs"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The examples invite aspiration toward beneficial use of gifts, not resentment or a wish to deprive their recipients.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "73",
+          "label": "Sahih al-Bukhari 73",
+          "url": "https://sunnah.com/bukhari:73"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_029",
+      "conceptId": "hadith_modesty_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which claim is challenged by Umm Sulaym’s respectful question about purification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modesty always requires silence about necessary learning"
+        },
+        {
+          "id": "b",
+          "text": "Sensitive questions deserve respectful answers"
+        },
+        {
+          "id": "c",
+          "text": "Worship can require learning personal rulings"
+        },
+        {
+          "id": "d",
+          "text": "Questions can be asked with good manners"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Her example distinguishes modest conduct from allowing embarrassment to prevent necessary religious understanding.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "130",
+          "label": "Sahih al-Bukhari 130",
+          "url": "https://sunnah.com/bukhari:130"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_030",
+      "conceptId": "hadith_charity_pardon_humility",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which claim goes beyond the hadith that charity does not decrease wealth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Charity carries blessing beyond simple subtraction"
+        },
+        {
+          "id": "b",
+          "text": "Every donation guarantees an immediate cash increase"
+        },
+        {
+          "id": "c",
+          "text": "Forgiveness can be a source of honor"
+        },
+        {
+          "id": "d",
+          "text": "Humility before Allah can raise someone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report encourages trust in Allah’s promise; it does not specify an immediate increase in a bank balance after each gift.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "Sahih Muslim 2588",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_031",
+      "conceptId": "hadith_planting_benefit",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does the planting hadith broaden a person’s understanding of charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only cash gifts have charitable value"
+        },
+        {
+          "id": "b",
+          "text": "Every profitable crop is religiously worthless"
+        },
+        {
+          "id": "c",
+          "text": "Benefit can reach others without a direct handover"
+        },
+        {
+          "id": "d",
+          "text": "Animal benefit excludes human benefit"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Food growing through someone’s planting can benefit others and count as charity, even without a separate personal presentation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "Sahih al-Bukhari 2320",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_032",
+      "conceptId": "hadith_gifts_official_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is calling something a gift insufficient to settle the collector’s case?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All gifts between any people are forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Only expensive gifts raise concerns"
+        },
+        {
+          "id": "c",
+          "text": "A private label removes public accountability"
+        },
+        {
+          "id": "d",
+          "text": "Its connection to entrusted authority still matters"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report examines why the benefit arose. A favorable label does not remove a conflict with an entrusted role.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7174",
+          "label": "Sahih al-Bukhari 7174",
+          "url": "https://sunnah.com/bukhari:7174"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_033",
+      "conceptId": "hadith_learning_from_harm",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction best fits the warning about being stung twice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forgiveness and sensible precautions can coexist"
+        },
+        {
+          "id": "b",
+          "text": "Forgiveness requires repeating every risk"
+        },
+        {
+          "id": "c",
+          "text": "Caution requires suspecting every person"
+        },
+        {
+          "id": "d",
+          "text": "Past harm justifies harming innocent people"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Learning from harm need not mean revenge or universal mistrust; sensible precautions are consistent with the report’s lesson.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6133",
+          "label": "Sahih al-Bukhari 6133",
+          "url": "https://sunnah.com/bukhari:6133"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_034",
+      "conceptId": "hadith_two_faced_conduct",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does tact differ from the two-faced conduct condemned in the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tact requires endorsing incompatible lies"
+        },
+        {
+          "id": "b",
+          "text": "Tact can preserve truth while adapting its delivery"
+        },
+        {
+          "id": "c",
+          "text": "Any change of tone proves deception"
+        },
+        {
+          "id": "d",
+          "text": "Friendliness always means agreeing with wrongdoing"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The moral issue is deception, not every adjustment in tone. Truthful courtesy need not involve dishonest loyalties.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6058",
+          "label": "Sahih al-Bukhari 6058",
+          "url": "https://sunnah.com/bukhari:6058"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_035",
+      "conceptId": "hadith_ease_without_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which interpretation keeps both ease and striving together in the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove every duty that feels demanding"
+        },
+        {
+          "id": "b",
+          "text": "Make worship as exhausting as possible"
+        },
+        {
+          "id": "c",
+          "text": "Aim sincerely for sound practice without destructive excess"
+        },
+        {
+          "id": "d",
+          "text": "Stop practicing unless perfection is certain"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report joins moderation with striving toward correctness, so ease is not a license to discard duties.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "Sahih al-Bukhari 39",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_036",
+      "conceptId": "hadith_understanding_religion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does knowing many quotations alone not demonstrate the gift praised in the understanding hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remembering any religious wording is forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Only public speakers can understand religion"
+        },
+        {
+          "id": "c",
+          "text": "Reference numbers determine a person’s sincerity"
+        },
+        {
+          "id": "d",
+          "text": "Understanding requires grasping meaning, not merely recalling words"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report praises comprehension. Remembering words can help learning, but recall and understanding are not identical.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "71",
+          "label": "Sahih al-Bukhari 71",
+          "url": "https://sunnah.com/bukhari:71"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_037",
+      "conceptId": "hadith_loss_of_scholars",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why are many available religious statements not enough to prevent the danger in the knowledge-loss hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Statements can circulate without knowledgeable guidance"
+        },
+        {
+          "id": "b",
+          "text": "Popularity always establishes an answer’s soundness"
+        },
+        {
+          "id": "c",
+          "text": "A confident tone replaces subject knowledge"
+        },
+        {
+          "id": "d",
+          "text": "Learners should never ask anyone questions"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The danger is uninformed authority and misleading answers, not simply a shortage of circulating words.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "100",
+          "label": "Sahih al-Bukhari 100",
+          "url": "https://sunnah.com/bukhari:100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_038",
+      "conceptId": "hadith_three_worshippers_balance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What mistake lay behind treating the Prophet’s balanced worship as insufficient?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recognizing the value of regular prayer"
+        },
+        {
+          "id": "b",
+          "text": "Equating greater severity with greater devotion"
+        },
+        {
+          "id": "c",
+          "text": "Allowing time for ordinary human needs"
+        },
+        {
+          "id": "d",
+          "text": "Learning how the Prophet worshipped"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The response shows that prophetic balance is guidance, rather than a lower standard to surpass through self-imposed extremes.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5063",
+          "label": "Sahih al-Bukhari 5063",
+          "url": "https://sunnah.com/bukhari:5063"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_039",
+      "conceptId": "hadith_eloquence_and_rights",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does a favorable judgment not make a knowingly false claim morally sound?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Winning always establishes innocence before Allah"
+        },
+        {
+          "id": "b",
+          "text": "The better speaker automatically owns the property"
+        },
+        {
+          "id": "c",
+          "text": "A decision on presented evidence cannot change the underlying right"
+        },
+        {
+          "id": "d",
+          "text": "Another person’s rights end when they speak poorly"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report warns against knowingly taking another’s entitlement through persuasive presentation, even after receiving a favorable decision.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2680",
+          "label": "Sahih al-Bukhari 2680",
+          "url": "https://sunnah.com/bukhari:2680"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_040",
+      "conceptId": "hadith_company_influence",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is the main point of the musk-and-bellows comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every musk seller has perfect character"
+        },
+        {
+          "id": "b",
+          "text": "Every metalworker is morally corrupt"
+        },
+        {
+          "id": "c",
+          "text": "Only paid lessons can influence behavior"
+        },
+        {
+          "id": "d",
+          "text": "Companionship can leave beneficial or harmful effects"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The occupations supply an illustration of influence. The lesson concerns companionship, not judging all workers in either trade.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_041",
+      "conceptId": "hadith_migration_motive",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two volunteers do identical work; one seeks Allah’s pleasure, the other only admiration. What follows from the intentions hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Outward similarity does not establish equal religious reward"
+        },
+        {
+          "id": "b",
+          "text": "Both must have identical intentions"
+        },
+        {
+          "id": "c",
+          "text": "The admired volunteer necessarily receives greater reward"
+        },
+        {
+          "id": "d",
+          "text": "Their motives become irrelevant once work ends"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The migration example teaches that the purpose behind an outward act matters to its religious reward.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_042",
+      "conceptId": "hadith_doubtful_boundaries",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An offer has a serious unresolved concern about permissibility. What best applies the doubtful-matters lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proceed because the profit is large"
+        },
+        {
+          "id": "b",
+          "text": "Pause and seek qualified clarification"
+        },
+        {
+          "id": "c",
+          "text": "Declare every similar offer forbidden"
+        },
+        {
+          "id": "d",
+          "text": "Ignore the concern if friends approve"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Caution about a genuine unresolved concern protects religious boundaries. Seeking clarification is different from declaring everything unfamiliar forbidden.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "52",
+          "label": "Sahih al-Bukhari 52",
+          "url": "https://sunnah.com/bukhari:52"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_043",
+      "conceptId": "hadith_guidance_acceptance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A post invents a fixed ritual and promises a reward without evidence. What best applies the rejection hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept it because the author means well"
+        },
+        {
+          "id": "b",
+          "text": "Require it because many people share it"
+        },
+        {
+          "id": "c",
+          "text": "Check its religious basis before treating it as prescribed"
+        },
+        {
+          "id": "d",
+          "text": "Assume attractive wording establishes its reward"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report calls for conformity to guidance; an appealing purpose or presentation does not establish a prescribed ritual or promised reward.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1718b",
+          "label": "Sahih Muslim 1718b",
+          "url": "https://sunnah.com/muslim:1718b"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_044",
+      "conceptId": "hadith_ihsan_all_things",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An animal handler says a lawful task excuses avoidable roughness. Which reply best fits the excellence hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kindness matters only when people watch"
+        },
+        {
+          "id": "b",
+          "text": "A useful result excuses all suffering"
+        },
+        {
+          "id": "c",
+          "text": "Excellence applies only to expensive animals"
+        },
+        {
+          "id": "d",
+          "text": "Lawfulness still requires care in the method"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report’s animal example directly challenges careless methods in a lawful task. Excellence includes reducing avoidable suffering.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1955a",
+          "label": "Sahih Muslim 1955a",
+          "url": "https://sunnah.com/muslim:1955a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_045",
+      "conceptId": "hadith_traveler_perspective",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person repeatedly postpones repentance because life feels permanent. Which response fits the traveler comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Act on needed change while the opportunity exists"
+        },
+        {
+          "id": "b",
+          "text": "Wait until retirement to consider accountability"
+        },
+        {
+          "id": "c",
+          "text": "Treat present opportunities as guaranteed forever"
+        },
+        {
+          "id": "d",
+          "text": "Abandon every family duty immediately"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The temporary-life perspective encourages timely preparation. It does not guarantee another opportunity or require neglecting responsibilities.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6416",
+          "label": "Sahih al-Bukhari 6416",
+          "url": "https://sunnah.com/bukhari:6416"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_046",
+      "conceptId": "hadith_strength_good_in_both",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone mocks a struggling believer as worthless using the strength hadith. What important wording should correct them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The report denies any value in effort"
+        },
+        {
+          "id": "b",
+          "text": "The report affirms good in both believers"
+        },
+        {
+          "id": "c",
+          "text": "The report equates strength only with muscle"
+        },
+        {
+          "id": "d",
+          "text": "The report forbids seeking beneficial improvement"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Encouragement toward strength should be read alongside the report’s recognition of goodness in the weaker believer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_047",
+      "conceptId": "hadith_reward_sincere_intention",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A sincere plan to visit a sick neighbor is prevented by an unexpected illness. What hope fits the recording-deeds hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The prevented visit must count as wrongdoing"
+        },
+        {
+          "id": "b",
+          "text": "Only an announced intention can earn reward"
+        },
+        {
+          "id": "c",
+          "text": "Allah can reward the sincere good intention"
+        },
+        {
+          "id": "d",
+          "text": "The intention removes every future responsibility"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report gives hope of reward for genuinely intending good even when it is not carried out.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6491",
+          "label": "Sahih al-Bukhari 6491",
+          "url": "https://sunnah.com/bukhari:6491"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_048",
+      "conceptId": "hadith_admiration_good_use",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend teaches beneficial knowledge well. Which response fits the admirable-examples hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hope the friend loses that ability"
+        },
+        {
+          "id": "b",
+          "text": "Treat teaching as worthless without fame"
+        },
+        {
+          "id": "c",
+          "text": "Compete to hide useful knowledge from learners"
+        },
+        {
+          "id": "d",
+          "text": "Wish to learn and benefit others similarly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The praised aspiration concerns practicing and sharing wisdom, rather than resenting the person who has been given it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "73",
+          "label": "Sahih al-Bukhari 73",
+          "url": "https://sunnah.com/bukhari:73"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_049",
+      "conceptId": "hadith_modesty_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner is embarrassed to ask about a needed purification ruling. What best follows Umm Sulaym’s example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask a knowledgeable teacher respectfully and privately if needed"
+        },
+        {
+          "id": "b",
+          "text": "Keep guessing to prove personal modesty"
+        },
+        {
+          "id": "c",
+          "text": "Assume the ruling does not apply"
+        },
+        {
+          "id": "d",
+          "text": "Replace learning with unverified comments"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Her example supports respectful questions about necessary religious matters. Embarrassment need not leave a learner without guidance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "130",
+          "label": "Sahih al-Bukhari 130",
+          "url": "https://sunnah.com/bukhari:130"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_050",
+      "conceptId": "hadith_charity_pardon_humility",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After donating, someone sees a lower account balance and says the hadith failed. What is the soundest correction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every donation must return cash that day"
+        },
+        {
+          "id": "b",
+          "text": "The hadith does not promise an instant cash replacement"
+        },
+        {
+          "id": "c",
+          "text": "A donation only counts when it earns profit"
+        },
+        {
+          "id": "d",
+          "text": "Bank records determine whether Allah rewards charity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah’s promise should not be reduced to a specified banking outcome. The report gives no deadline for an immediate cash return.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "Sahih Muslim 2588",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_051",
+      "conceptId": "hadith_planting_benefit",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Birds eat fruit from a Muslim gardener’s tree. How does the planting hadith frame this benefit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only purchased bird food can count"
+        },
+        {
+          "id": "b",
+          "text": "It removes the need for all other duties"
+        },
+        {
+          "id": "c",
+          "text": "It can count as charity for the planter"
+        },
+        {
+          "id": "d",
+          "text": "It is worthless without a human recipient"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report expressly includes birds benefiting from planting. Such charity does not by itself replace separate religious obligations.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "Sahih al-Bukhari 2320",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_052",
+      "conceptId": "hadith_gifts_official_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A buyer offers a charity’s purchasing officer a private reward for choosing their supplier. Which question applies the collector’s lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Is the reward small enough to hide?"
+        },
+        {
+          "id": "b",
+          "text": "Can it be renamed a friendship token?"
+        },
+        {
+          "id": "c",
+          "text": "Will accepting it improve personal popularity?"
+        },
+        {
+          "id": "d",
+          "text": "Would this benefit be offered without the entrusted role?"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The scenario applies the report’s test of benefits arising through office. A personal label does not resolve the trust concern.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7174",
+          "label": "Sahih al-Bukhari 7174",
+          "url": "https://sunnah.com/bukhari:7174"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_053",
+      "conceptId": "hadith_learning_from_harm",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person deceived by the same seller is offered an identical unchecked deal. What fits the repeated-sting lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the experience to verify and take precautions"
+        },
+        {
+          "id": "b",
+          "text": "Repeat the deal to demonstrate forgiveness"
+        },
+        {
+          "id": "c",
+          "text": "Assume every other seller is dishonest"
+        },
+        {
+          "id": "d",
+          "text": "Seek revenge on the seller’s relatives"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The lesson supports learning from experience and avoiding a repeated trap, without extending blame to uninvolved people.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6133",
+          "label": "Sahih al-Bukhari 6133",
+          "url": "https://sunnah.com/bukhari:6133"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_054",
+      "conceptId": "hadith_two_faced_conduct",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone privately tells two rival groups false stories, claiming exclusive loyalty to each. Which teaching most directly addresses this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The encouragement to plant beneficial crops"
+        },
+        {
+          "id": "b",
+          "text": "The warning against two-faced dealings"
+        },
+        {
+          "id": "c",
+          "text": "The reward for an intended good deed"
+        },
+        {
+          "id": "d",
+          "text": "The comparison of life to a journey"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The deception changes with the audience and fuels conflicting loyalties, illustrating the two-faced conduct condemned in the report.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6058",
+          "label": "Sahih al-Bukhari 6058",
+          "url": "https://sunnah.com/bukhari:6058"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_055",
+      "conceptId": "hadith_ease_without_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner says religion’s ease means abandoning duties whenever inconvenient. Which correction fits the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ease makes every religious duty optional"
+        },
+        {
+          "id": "b",
+          "text": "Only exhausting practice has religious value"
+        },
+        {
+          "id": "c",
+          "text": "Ease accompanies sincere practice and avoiding excess"
+        },
+        {
+          "id": "d",
+          "text": "One mistake means all effort should stop"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The same report that mentions ease encourages striving and warns against overburdening oneself, rather than removing religious commitment.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "Sahih al-Bukhari 39",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_056",
+      "conceptId": "hadith_understanding_religion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A student knows a quotation but asks how its meaning applies. How does the understanding hadith frame this effort?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As proof that memorization has no value"
+        },
+        {
+          "id": "b",
+          "text": "As a reason to stop asking questions"
+        },
+        {
+          "id": "c",
+          "text": "As something reserved for famous speakers"
+        },
+        {
+          "id": "d",
+          "text": "As seeking comprehension beyond memorization"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report praises understanding religion. Asking for explanation can help move from remembering wording toward grasping its meaning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "71",
+          "label": "Sahih al-Bukhari 71",
+          "url": "https://sunnah.com/bukhari:71"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_057",
+      "conceptId": "hadith_loss_of_scholars",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A popular speaker confidently answers every religious question without studying it. Which danger from the knowledge-loss hadith is relevant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uninformed answers can mislead speaker and audience"
+        },
+        {
+          "id": "b",
+          "text": "Confidence is sufficient evidence of knowledge"
+        },
+        {
+          "id": "c",
+          "text": "A large audience guarantees sound guidance"
+        },
+        {
+          "id": "d",
+          "text": "Any answer is better than admitting uncertainty"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report warns about people answering without knowledge and misleading others. Public confidence does not supply the missing learning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "100",
+          "label": "Sahih al-Bukhari 100",
+          "url": "https://sunnah.com/bukhari:100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_058",
+      "conceptId": "hadith_three_worshippers_balance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone calls lifelong rejection of sleep and marriage a superior religious path. What best applies the three-men report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approve every hardship as greater devotion"
+        },
+        {
+          "id": "b",
+          "text": "Follow prophetic balance rather than inventing superior severity"
+        },
+        {
+          "id": "c",
+          "text": "Treat all voluntary worship as unnecessary"
+        },
+        {
+          "id": "d",
+          "text": "Make celibacy a requirement for every believer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet corrected extreme proposals by explaining his own balanced life. The report challenges making such severity a superior religious ideal.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5063",
+          "label": "Sahih al-Bukhari 5063",
+          "url": "https://sunnah.com/bukhari:5063"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_059",
+      "conceptId": "hadith_eloquence_and_rights",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person knowingly wins another’s property through a misleading presentation. What principle applies despite the favorable decision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The successful presentation makes the taking honest"
+        },
+        {
+          "id": "b",
+          "text": "The other party’s weak speech cancels their right"
+        },
+        {
+          "id": "c",
+          "text": "The decision does not make knowingly taking it rightful"
+        },
+        {
+          "id": "d",
+          "text": "A favorable decision removes accountability before Allah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report warns that persuasive success cannot turn knowingly taking another person’s right into a morally rightful act.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2680",
+          "label": "Sahih al-Bukhari 2680",
+          "url": "https://sunnah.com/bukhari:2680"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_hadith_knowledge_060",
+      "conceptId": "hadith_company_influence",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A group repeatedly normalizes ridicule, and a member notices copying it. Which lesson fits the companionship comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Influence exists only during planned lessons"
+        },
+        {
+          "id": "b",
+          "text": "Joining a group removes personal responsibility"
+        },
+        {
+          "id": "c",
+          "text": "Every member’s occupation determines their character"
+        },
+        {
+          "id": "d",
+          "text": "Repeated company can shape conduct without formal teaching"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The comparison draws attention to effects of company. Noticing a harmful influence is a reason to reconsider participation and habits.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    }
+  ]
+}

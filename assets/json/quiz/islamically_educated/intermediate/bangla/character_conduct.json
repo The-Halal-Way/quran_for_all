@@ -1,0 +1,2279 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "categoryId": "character_conduct",
+  "title": "চরিত্র ও আচরণ",
+  "description": "সত্যবাদিতা, ন্যায়বিচার, দয়া, দায়িত্বশীল কথা, পরিবার ও প্রতিবেশীর অধিকার এবং দৈনন্দিন নৈতিক আচরণ সম্পর্কে প্রশ্নব্যাংক; ব্যাখ্যা ও কুরআন-সহিহ হাদিসের সূত্রসহ।",
+  "questionCount": 60,
+  "difficultyCounts": {
+    "foundation": 30,
+    "intermediate": 15,
+    "advanced": 15
+  },
+  "difficultyMethod": "কঠিনতার স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। উচ্চতর স্তর এই বিষয়ের গভীরতর বোঝাপড়া নির্দেশ করে, আলেম হওয়ার যোগ্যতা নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় মূল কুরআন-হাদিসের সূত্র মিলিয়ে দেখা হয়েছে; এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "perAssessment": {
+      "foundation": 2,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর হিসেবে না রেখে আলাদা UI বিকল্প হিসেবে ব্যবহার করুন।"
+  },
+  "questions": [
+    {
+      "id": "character_001",
+      "conceptId": "character_truthfulness",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৬০৯৪ অনুযায়ী সত্যবাদিতা কোন দিকে নিয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সৎকর্মের দিকে"
+        },
+        {
+          "id": "b",
+          "text": "জনপ্রিয়তার নিশ্চয়তার দিকে"
+        },
+        {
+          "id": "c",
+          "text": "সব জবাবদিহি থেকে মুক্তির দিকে"
+        },
+        {
+          "id": "d",
+          "text": "সুবিধামতো বিভ্রান্ত করার অনুমতির দিকে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় সত্যবাদিতার সঙ্গে সৎকর্ম ও জান্নাতের সম্পর্ক রয়েছে; এর বিপরীতে ক্রমাগত মিথ্যার পথ তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "সহিহ বুখারি ৬০৯৪",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "character_002",
+      "conceptId": "character_trusts",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪:৫৮-এ আমানত সম্পর্কে কী নির্দেশ দেওয়া হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মালিক অজনপ্রিয় হলে রেখে দিতে"
+        },
+        {
+          "id": "b",
+          "text": "প্রকৃত হকদারদের কাছে ফিরিয়ে দিতে"
+        },
+        {
+          "id": "c",
+          "text": "চুক্তির তোয়াক্কা না করে ব্যবহার করতে"
+        },
+        {
+          "id": "d",
+          "text": "অন্যেরা দেখলেই শুধু ফিরিয়ে দিতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটিতে আমানত আদায়ের সঙ্গে মানুষের মধ্যে ন্যায়বিচারের নির্দেশ যুক্ত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "character_003",
+      "conceptId": "character_promises",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১৭:৩৪-এ অঙ্গীকার সম্পর্কে কী বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অসুবিধা হলেই অপ্রাসঙ্গিক মনে করো।"
+        },
+        {
+          "id": "b",
+          "text": "শুধু প্রকাশ্যে করা অঙ্গীকার রাখো।"
+        },
+        {
+          "id": "c",
+          "text": "তা পূর্ণ করো; এ সম্পর্কে জিজ্ঞাসা করা হবে।"
+        },
+        {
+          "id": "d",
+          "text": "কোনো অঙ্গীকারে দায়িত্ব তৈরি হয় না ধরে নাও।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আল-ইসরার ১৭:৩৪ আয়াতে অঙ্গীকার পূরণ ও সে বিষয়ে জবাবদিহির ওপর গুরুত্ব দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "কুরআন ১৭:৩৪",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "character_004",
+      "conceptId": "character_justice_relatives",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪:১৩৫ অনুযায়ী কার বিরুদ্ধে গেলেও ন্যায় বজায় রাখতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু অন্য শহরের মানুষের"
+        },
+        {
+          "id": "b",
+          "text": "শুধু দরিদ্র অপরিচিতদের"
+        },
+        {
+          "id": "c",
+          "text": "শুধু প্রভাবহীন মানুষের"
+        },
+        {
+          "id": "d",
+          "text": "নিজের, মা-বাবার বা নিকটাত্মীয়দের"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে পারিবারিক সম্পর্ক ও ব্যক্তিগত স্বার্থকে সাক্ষ্য বিকৃত করার যথেষ্ট কারণ হিসেবে গ্রহণ করা হয়নি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "135",
+          "label": "কুরআন ৪:১৩৫",
+          "url": "https://quran.com/4/135"
+        }
+      ]
+    },
+    {
+      "id": "character_005",
+      "conceptId": "character_justice_hostility",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কোনো জনগোষ্ঠীর প্রতি বিদ্বেষ সম্পর্কে কুরআন ৫:৮ কী সতর্কতা দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তা যেন অন্যায়ের দিকে না নিয়ে যায়।"
+        },
+        {
+          "id": "b",
+          "text": "এতে তাদের ন্যায্য আচরণ পাওয়ার অধিকার উঠে যায়।"
+        },
+        {
+          "id": "c",
+          "text": "এতে তাদের বিরুদ্ধে প্রতিটি অভিযোগ সত্য হয়।"
+        },
+        {
+          "id": "d",
+          "text": "এটি প্রমাণের প্রয়োজনের বিকল্প।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-মায়িদার ৫:৮ আয়াতে বিদ্বেষ সত্ত্বেও ন্যায়ের নির্দেশ এবং ন্যায়ের সঙ্গে তাকওয়ার সম্পর্ক রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "character_006",
+      "conceptId": "character_verify_news",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪৯:৬ অনুযায়ী কোনো পাপাচারী সংবাদ আনলে মুমিনদের কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিস্ময়কর বলে ছড়িয়ে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অজ্ঞতাবশত ক্ষতি করার আগে যাচাই করা"
+        },
+        {
+          "id": "c",
+          "text": "আবেগকেই যথেষ্ট প্রমাণ মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "যাচাইয়ের আগে অভিযুক্তকে শাস্তি দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে যাচাইয়ের সঙ্গে অজ্ঞতাবশত ক্ষতি ও পরে অনুতাপ এড়ানোর সম্পর্ক তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "কুরআন ৪৯:৬",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "character_007",
+      "conceptId": "character_ridicule",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪৯:১১-এ একদলকে অন্য দলের প্রতি কী করতে নিষেধ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরস্পরের নাম শিখতে"
+        },
+        {
+          "id": "b",
+          "text": "সম্মানের সঙ্গে পরস্পরকে সাহায্য করতে"
+        },
+        {
+          "id": "c",
+          "text": "পরস্পরকে উপহাস করতে"
+        },
+        {
+          "id": "d",
+          "text": "মীমাংসার চেষ্টা করতে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে উপহাস নিষেধ করা হয়েছে এবং যাঁদের উপহাস করা হচ্ছে তাঁরা উপহাসকারীদের চেয়ে ভালো হতে পারেন বলে স্মরণ করানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "character_008",
+      "conceptId": "character_offensive_names",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "পরস্পরকে অপমান করার পাশাপাশি কুরআন ৪৯:১১-এ কোন আচরণ নিষিদ্ধ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কারও পছন্দের সম্মানজনক নাম ব্যবহার"
+        },
+        {
+          "id": "b",
+          "text": "নতুন সহকর্মীর পরিচয় করানো"
+        },
+        {
+          "id": "c",
+          "text": "কঠিন উচ্চারণ শেখা"
+        },
+        {
+          "id": "d",
+          "text": "অপমানজনক নামে ডাকা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি সাধারণ সম্মানজনক পরিচয়ের বিরুদ্ধে নয়; অবমাননাকর নামের বিরুদ্ধে সতর্ক করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "character_009",
+      "conceptId": "character_spying",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪৯:১২-এ কোন আচরণ স্পষ্টভাবে নিষিদ্ধ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একে অন্যের গোপন বিষয় অনুসন্ধান করা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের গোপনীয়তা রক্ষা করা"
+        },
+        {
+          "id": "c",
+          "text": "গুজব পুনরাবৃত্তি না করা"
+        },
+        {
+          "id": "d",
+          "text": "নিজের ভুল যাচাই করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটিতে সন্দেহ, গুপ্তচরবৃত্তি ও গিবতকে ক্ষতিকর আচরণ হিসেবে আলোচনা করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "character_010",
+      "conceptId": "character_backbiting_definition",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ মুসলিম ২৫৮৯-এ গিবতের ব্যাখ্যা কীভাবে করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যের নামের যেকোনো উল্লেখ"
+        },
+        {
+          "id": "b",
+          "text": "কারও সম্পর্কে এমন কিছু বলা যা তিনি অপছন্দ করবেন"
+        },
+        {
+          "id": "c",
+          "text": "কোনো ধারণা নিয়ে প্রতিটি মতভেদ"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মিথ্যা বলে জানা কথা বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় কারও সম্পর্কে অপছন্দনীয় সত্য কথা এবং মিথ্যা অভিযোগ আলাদা করা হয়েছে; মিথ্যা অভিযোগ অপবাদ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "সহিহ মুসলিম ২৫৮৯",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "character_011",
+      "conceptId": "character_human_diversity",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪৯:১৩ অনুযায়ী মানুষকে বিভিন্ন জাতি ও গোত্রে করা হয়েছে কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেন শুধু বংশই মর্যাদা নির্ধারণ করে"
+        },
+        {
+          "id": "b",
+          "text": "যেন কোনো ভাষার বক্তারা স্বয়ংক্রিয় পবিত্রতা দাবি করতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "যেন তারা পরস্পরকে চিনতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "যেন ধনী গোষ্ঠী অন্যের অধিকার উপেক্ষা করতে পারে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে মানুষের বৈচিত্র্যের সঙ্গে পরিচিত হওয়ার উদ্দেশ্য এবং আল্লাহর কাছে মর্যাদার সঙ্গে তাকওয়ার সম্পর্ক রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "কুরআন ৪৯:১৩",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "character_012",
+      "conceptId": "character_humility",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩১:১৮ কোন মনোভাব থেকে সতর্ক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজেকে বড় না ভেবে শোনা"
+        },
+        {
+          "id": "b",
+          "text": "ভুল স্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "অপরিচিতের সঙ্গে সম্মানজনক কথা বলা"
+        },
+        {
+          "id": "d",
+          "text": "অহংকার করে মানুষের দিক থেকে মুখ ফিরিয়ে নেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "লুকমানের উপদেশে অবজ্ঞাপূর্ণ আচরণ ও আত্মগর্ব থেকে সতর্কতা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "কুরআন ৩১:১৮",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "character_013",
+      "conceptId": "character_voice",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩১:১৯-এ কথা সম্পর্কে কোন উপদেশ রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কণ্ঠস্বর নিচু বা সংযত রাখা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি বক্তব্য প্রমাণে চিৎকার করা"
+        },
+        {
+          "id": "c",
+          "text": "উচ্চস্বরকেই সত্যের প্রমাণ ধরা"
+        },
+        {
+          "id": "d",
+          "text": "সব ধরনের কথোপকথন এড়ানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি অপ্রয়োজনীয় উচ্চস্বরের বদলে চলন ও কণ্ঠে সংযমের উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "কুরআন ৩১:১৯",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "character_014",
+      "conceptId": "character_parents_speech",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১৭:২৩-এ বয়স্ক মা-বাবার সঙ্গে কেমন কথা বলতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যত্নে ক্লান্ত হলেই অপমান"
+        },
+        {
+          "id": "b",
+          "text": "অবজ্ঞা বা ধমক ছাড়া সম্মানজনক কথা"
+        },
+        {
+          "id": "c",
+          "text": "আর্থিক সাহায্যের সঙ্গে গালি"
+        },
+        {
+          "id": "d",
+          "text": "শুধু শাস্তি দিতে নীরবতা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে বিরক্তির সামান্য প্রকাশও নিষেধ করে মর্যাদাপূর্ণ কথার নির্দেশ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23-24",
+          "label": "কুরআন ১৭:২৩-২৪",
+          "url": "https://quran.com/17/23-24"
+        }
+      ]
+    },
+    {
+      "id": "character_015",
+      "conceptId": "character_kinship",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৫৯৯১-এ আত্মীয়তার সম্পর্ক রাখা শুধু কোনটির চেয়ে বেশি কিছু?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অভাবী আত্মীয়কে সাহায্য করা"
+        },
+        {
+          "id": "b",
+          "text": "সম্মানের সঙ্গে কথা বলা"
+        },
+        {
+          "id": "c",
+          "text": "আত্মীয়দের ভালো আচরণের প্রতিদান দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "মীমাংসায় আন্তরিক চেষ্টা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় শুধু প্রতিদানের বদলে আত্মীয়রা সম্পর্ক ছিন্ন করলেও সম্পর্ক বজায় রাখার প্রশংসা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5991",
+          "label": "সহিহ বুখারি ৫৯৯১",
+          "url": "https://sunnah.com/bukhari:5991"
+        }
+      ]
+    },
+    {
+      "id": "character_016",
+      "conceptId": "character_neighbours",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৬০১৪-এ জিবরিল (আ.)-এর বারবার উপদেশ কী গুরুত্ব দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিবেশীর সব সম্পদের স্বয়ংক্রিয় হস্তান্তর"
+        },
+        {
+          "id": "b",
+          "text": "রাতে প্রতিবেশীকে বিরক্ত করার অনুমতি"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিবেশীর কখনো সাহায্য লাগে না—এমন নিয়ম"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিবেশীর প্রতি সদাচার"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বারবার গুরুত্ব দেওয়া প্রতিবেশীর যত্নের মর্যাদা দেখায়; বর্ণনাটি নিজে কোনো উত্তরাধিকার-অধিকার প্রতিষ্ঠা করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "সহিহ বুখারি ৬০১৪",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    },
+    {
+      "id": "character_017",
+      "conceptId": "character_guests",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৬০১৮-এ অতিথির প্রতি কোন আচরণ শেখানো হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অতিথিকে সম্মান করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রকাশ্যে অতিথিকে অপমান করা"
+        },
+        {
+          "id": "c",
+          "text": "সদয় হওয়ার আগে প্রশংসা দাবি করা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি আগন্তুককে শত্রু মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় ঈমানের সঙ্গে অতিথির সম্মান, দায়িত্বশীল কথা ও প্রতিবেশীর ক্ষতি না করার সম্পর্ক রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "সহিহ বুখারি ৬০১৮",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "character_018",
+      "conceptId": "character_greetings",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "পারস্পরিক ভালোবাসা বাড়ানোর উপায় হিসেবে সহিহ মুসলিম ৫৪a কোন আমল উৎসাহিত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপমানে প্রতিযোগিতা করা"
+        },
+        {
+          "id": "b",
+          "text": "সালাম ছড়িয়ে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সব অভিবাদন এড়ানো"
+        },
+        {
+          "id": "d",
+          "text": "প্রকাশ্যে সম্পদ অনুযায়ী মানুষের তালিকা করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় পরস্পরকে সালাম দেওয়ার সঙ্গে ভালোবাসা বাড়ার সম্পর্ক রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "54a",
+          "label": "সহিহ মুসলিম ৫৪a",
+          "url": "https://sunnah.com/muslim:54a"
+        }
+      ]
+    },
+    {
+      "id": "character_019",
+      "conceptId": "character_entering_homes",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "নিজের ঘর ছাড়া অন্যের ঘরে ঢোকার আগে কুরআন ২৪:২৭ কী করতে বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দরজা খোলা থাকলেই ঢুকে পড়া"
+        },
+        {
+          "id": "b",
+          "text": "দৃশ্যমান যেকোনো জিনিসের মালিকানা ঘোষণা"
+        },
+        {
+          "id": "c",
+          "text": "অনুমতি চাওয়া ও বাসিন্দাদের সালাম দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "পরিচিত হলেই সব গোপনীয়তা উঠে যায় ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতে বাসিন্দাদের অনুমতি ও সালামের প্রতি সম্মান শেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27",
+          "label": "কুরআন ২৪:২৭",
+          "url": "https://quran.com/24/27"
+        }
+      ]
+    },
+    {
+      "id": "character_020",
+      "conceptId": "character_permission_three",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৬২৪৫ অনুযায়ী তিনবার অনুমতি চেয়েও না পেলে আগন্তুকের কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য দরজা দিয়ে ঢোকা"
+        },
+        {
+          "id": "b",
+          "text": "বাসিন্দারা বাধ্য না হওয়া পর্যন্ত কড়া নাড়া"
+        },
+        {
+          "id": "c",
+          "text": "জবাব আদায়ে জানালা দিয়ে তাকানো"
+        },
+        {
+          "id": "d",
+          "text": "ফিরে যাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় প্রবেশের তিনটি অনুরোধে অনুমতি না পাওয়ার পরে ফিরে যাওয়ার নির্দেশ রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6245",
+          "label": "সহিহ বুখারি ৬২৪৫",
+          "url": "https://sunnah.com/bukhari:6245"
+        }
+      ]
+    },
+    {
+      "id": "character_021",
+      "conceptId": "character_trade_disclosure",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ২০৭৯ অনুযায়ী লেনদেনের বরকতে কী সহায়ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্যবাদিতা ও স্পষ্টভাবে তথ্য জানানো"
+        },
+        {
+          "id": "b",
+          "text": "সফলভাবে ত্রুটি লুকানো"
+        },
+        {
+          "id": "c",
+          "text": "মিথ্যা তথ্য দিয়ে ক্রেতাকে চাপ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "কেউ যাচাই করতে পারবে না এমন দাবি করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় সত্যনিষ্ঠ প্রকাশের বিপরীতে বরকত দূর করে এমন মিথ্যা ও গোপন করার কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "সহিহ বুখারি ২০৭৯",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "character_022",
+      "conceptId": "character_cheating",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ মুসলিম ১০২-এ বিক্রির খাদ্যস্তূপে নবী (সা.) কোন সমস্যা প্রকাশ করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিক্রেতা প্রতিটি ত্রুটি দৃশ্যমান করেছিলেন।"
+        },
+        {
+          "id": "b",
+          "text": "ক্রেতাদের চোখে পড়া অংশের নিচে ভেজা খাদ্য লুকানো ছিল।"
+        },
+        {
+          "id": "c",
+          "text": "খাদ্য বিনা মূল্যে দেওয়া হয়েছিল।"
+        },
+        {
+          "id": "d",
+          "text": "বিক্রেতা সব বিক্রি প্রত্যাখ্যান করেছিলেন।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী (সা.) লুকানো ভেজা অংশ সম্পর্কে প্রশ্ন করেন এবং প্রতারণামূলক উপস্থাপনের নিন্দা করেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "character_023",
+      "conceptId": "character_animals",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ২৩৬৩-এর তৃষ্ণার্ত কুকুরের ঘটনায় কোন কাজের প্রতিদান দেওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষমতা দেখাতে পানি আটকে রাখা"
+        },
+        {
+          "id": "b",
+          "text": "কষ্টে থাকা প্রাণীকে উপহাস করা"
+        },
+        {
+          "id": "c",
+          "text": "তৃষ্ণার্ত প্রাণীকে পানি দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ নয় বলে দয়া না করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ঘটনাটি শেখায় যে জীবন্ত প্রাণীর প্রতি দয়াও পুরস্কৃত হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "সহিহ বুখারি ২৩৬৩",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "character_024",
+      "conceptId": "character_wages",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ২২৭০-এ কোন নিয়োগকর্তার আচরণের বিরুদ্ধে কঠোর সতর্কতা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চুক্তির মজুরি দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "নিয়োগের আগে দায়িত্ব স্পষ্ট করা"
+        },
+        {
+          "id": "c",
+          "text": "সৎ কাজের জন্য ধন্যবাদ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "শ্রমিকের পূর্ণ কাজ নিয়ে মজুরি না দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় কাজ নিয়ে মজুরি আটকে রাখাকে গুরুতর অন্যায়ের অন্তর্ভুক্ত করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2270",
+          "label": "সহিহ বুখারি ২২৭০",
+          "url": "https://sunnah.com/bukhari:2270"
+        }
+      ]
+    },
+    {
+      "id": "character_025",
+      "conceptId": "character_anger_control",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৬১১৪-এ প্রকৃত শক্তির মাপকাঠি কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রাগের সময় নিজেকে নিয়ন্ত্রণ"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি শারীরিক প্রতিযোগিতায় জয়"
+        },
+        {
+          "id": "c",
+          "text": "সব সময় শেষ গালিটি দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "মতভেদ করতেই সবাইকে ভয় দেখানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় শুধু অন্যকে পরাস্ত করার বদলে রাগের সংযমকে শক্তি হিসেবে চিহ্নিত করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "সহিহ বুখারি ৬১১৪",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "character_026",
+      "conceptId": "character_envy_hostility",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৬০৬৫-এ কোন আচরণ নিষিদ্ধ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিক কল্যাণকামিতা"
+        },
+        {
+          "id": "b",
+          "text": "হিংসা ও পারস্পরিক বিদ্বেষ"
+        },
+        {
+          "id": "c",
+          "text": "সম্মানজনক সহযোগিতা"
+        },
+        {
+          "id": "d",
+          "text": "মতবিরোধ মিটিয়ে নেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় হিংসা, বিদ্বেষ ও পরস্পর থেকে মুখ ফিরিয়ে নেওয়া থেকে সতর্ক করে ভ্রাতৃত্বের আহ্বান রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6065",
+          "label": "সহিহ বুখারি ৬০৬৫",
+          "url": "https://sunnah.com/bukhari:6065"
+        }
+      ]
+    },
+    {
+      "id": "character_027",
+      "conceptId": "character_help_oppressor",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ২৪৪৪ অনুযায়ী অন্যের ওপর জুলুমকারীকে কীভাবে সাহায্য করতে হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর অন্যায়ের সব চিহ্ন লুকিয়ে"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর জন্য আরও শিকার এনে"
+        },
+        {
+          "id": "c",
+          "text": "তাঁকে জুলুম করা থেকে থামিয়ে"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর জুলুমকে গুণ বলে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী (সা.) ব্যাখ্যা করেন, জালিমকে প্রতিরোধ করাই এখানে প্রয়োজনীয় সাহায্য।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "সহিহ বুখারি ২৪৪৪",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "character_028",
+      "conceptId": "character_gentleness",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কোমলতা সম্পর্কে সহিহ মুসলিম ২৫৯৪a কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে অবশ্যই সব সংশোধন অসম্ভব হয়।"
+        },
+        {
+          "id": "b",
+          "text": "কোনো মতভেদ না থাকলেই কেবল তা উপকারী।"
+        },
+        {
+          "id": "c",
+          "text": "এর মানে সব অন্যায় গোপন করা।"
+        },
+        {
+          "id": "d",
+          "text": "তা যে বিষয়ে থাকে সেটিকে সুন্দর করে।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় কোমলতার প্রশংসা এবং এর অনুপস্থিতির ক্ষতি তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "সহিহ মুসলিম ২৫৯৪a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "character_029",
+      "conceptId": "character_kind_words",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:২৬৩-এ কষ্ট দেওয়ার পরিণামযুক্ত দানের চেয়ে কোনটিকে উত্তম বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো কথা ও ক্ষমা"
+        },
+        {
+          "id": "b",
+          "text": "দাতার জন্য বড় দর্শকসমাগম"
+        },
+        {
+          "id": "c",
+          "text": "প্রকাশ্য কৃতজ্ঞতার দাবি"
+        },
+        {
+          "id": "d",
+          "text": "উদারতার অপমানজনক খোঁটা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে আঘাতের পরিণামযুক্ত দানের চেয়ে বিবেচনাপূর্ণ কথা ও ক্ষমাকে মূল্য দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "263",
+          "label": "কুরআন ২:২৬৩",
+          "url": "https://quran.com/2/263"
+        }
+      ]
+    },
+    {
+      "id": "character_030",
+      "conceptId": "character_peaceful_nonmuslims",
+      "categoryId": "character_conduct",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "যারা ধর্মের কারণে যুদ্ধ করেনি বা ঘরছাড়া করেনি, তাদের প্রতি কুরআন ৬০:৮ অনুযায়ী মুসলিমরা কেমন আচরণ করতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আচরণ না দেখে স্বয়ংক্রিয় শত্রুতা"
+        },
+        {
+          "id": "b",
+          "text": "সদাচার ও ন্যায়বিচার"
+        },
+        {
+          "id": "c",
+          "text": "তাদের সঙ্গে প্রতিটি চুক্তি অস্বীকার"
+        },
+        {
+          "id": "d",
+          "text": "তাদের সম্পদ সুরক্ষাহীন ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটিতে বর্ণিত মানুষদের প্রতি সদাচার ও ন্যায়বিচারের স্পষ্ট অনুমতি রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 60,
+          "ayahs": "8",
+          "label": "কুরআন ৬০:৮",
+          "url": "https://quran.com/60/8"
+        }
+      ]
+    },
+    {
+      "id": "character_031",
+      "conceptId": "character_verify_news",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "অবিশ্বস্ত সূত্র থেকে সহকর্মীর বিরুদ্ধে চাঞ্চল্যকর অভিযোগ এল। কুরআন ৪৯:৬-এর সবচেয়ে যথাযথ প্রয়োগ কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অভিযোগ গুরুতর বলে ফরওয়ার্ড করা"
+        },
+        {
+          "id": "b",
+          "text": "নজর কাড়তে আরও কঠোর ভাষা যোগ করা"
+        },
+        {
+          "id": "c",
+          "text": "ছড়ানো বা তাঁর বিরুদ্ধে ব্যবস্থা নেওয়ার আগে তথ্য যাচাই করা"
+        },
+        {
+          "id": "d",
+          "text": "ফরওয়ার্ডের সংখ্যাকে প্রমাণ ধরা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "দাবির ভিত্তিতে কাজ করলে কারও ক্ষতি হতে পারে—এমন ক্ষেত্রে যাচাইয়ের নীতি বিশেষ গুরুত্বপূর্ণ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "কুরআন ৪৯:৬",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "character_032",
+      "conceptId": "character_justice_relatives",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "সত্য বললে ঘনিষ্ঠ বন্ধুর অন্যায় প্রকাশ হবে। কোন প্রতিক্রিয়া কুরআন ৪:১৩৫ অনুসরণ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিশ্বস্ততা দেখাতে বিকল্প ঘটনা বানানো"
+        },
+        {
+          "id": "b",
+          "text": "বন্ধুত্বে জবাবদিহি উঠে যায় ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "বন্ধুর সম্পদ দিয়ে সত্য নির্ধারণ করা"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধুকে বাঁচাতে সাক্ষ্য না বদলে ন্যায় বজায় রাখা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ব্যক্তিগত ও পারিবারিক স্বার্থ কঠিন করে তুললেও আয়াতটি ন্যায়ের দাবি করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "135",
+          "label": "কুরআন ৪:১৩৫",
+          "url": "https://quran.com/4/135"
+        }
+      ]
+    },
+    {
+      "id": "character_033",
+      "conceptId": "character_backbiting_definition",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ বলেন, তথ্য সত্য বলে ব্যক্তির অনুপস্থিতিতে করা নিষ্ঠুর আলোচনা গিবত নয়। সহিহ মুসলিম ২৫৮৯ কী জবাব দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্য হওয়া নিজে থেকে গিবত দূর করে না; মিথ্যা হলে অপবাদও হয়।"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি সত্য কথা স্বয়ংক্রিয়ভাবে ক্ষতিহীন।"
+        },
+        {
+          "id": "c",
+          "text": "গিবত বলতে শুধু বানানভুল বোঝায়।"
+        },
+        {
+          "id": "d",
+          "text": "ব্যক্তি অনুপস্থিত থাকলে সব দাবি গ্রহণযোগ্য।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনার পার্থক্যটি দেখায় যে সত্য হওয়া কারও সম্পর্কে ক্ষতিকর কথা বলার অবাধ সাফাই নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "সহিহ মুসলিম ২৫৮৯",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "character_034",
+      "conceptId": "character_trade_disclosure",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "বিক্রেতা জানেন যন্ত্রটিতে বারবার সমস্যা হয়, কিন্তু ক্রেতা টের পাননি। সহিহ বুখারি ২০৭৯ অনুযায়ী কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্রেতা সঠিক নাম আন্দাজ না করা পর্যন্ত লুকানো"
+        },
+        {
+          "id": "b",
+          "text": "বিক্রি শেষ করার আগে সততার সঙ্গে ত্রুটি জানানো"
+        },
+        {
+          "id": "c",
+          "text": "বাইরের আবরণ পরিষ্কার বলে নতুন দাবি করা"
+        },
+        {
+          "id": "d",
+          "text": "দাম বেশি হলে তথ্য জানানোর দায় নেই ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় সত্যবাদিতা এবং প্রাসঙ্গিক গুণ ও ত্রুটি স্পষ্ট করার গুরুত্ব রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "সহিহ বুখারি ২০৭৯",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "character_035",
+      "conceptId": "character_help_oppressor",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "নিজের দলের একজন অন্য কাউকে নিপীড়ন করছেন। সহিহ বুখারি ২৪৪৪ অনুযায়ী প্রতিক্রিয়া কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের দলের বলে আচরণটিকে সমর্থন"
+        },
+        {
+          "id": "b",
+          "text": "দলের ভাবমূর্তি বাঁচাতে ভুক্তভোগীকে দোষারোপ"
+        },
+        {
+          "id": "c",
+          "text": "দলীয় আনুগত্যে রক্ষা না করে অন্যায় থামানো"
+        },
+        {
+          "id": "d",
+          "text": "জালিমকে সাহায্য মানে জুলুম সফল করা ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় অন্যায়কারীকে সাহায্য করাকে তাঁর অন্যায় ঠেকানো হিসেবে ব্যাখ্যা করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "সহিহ বুখারি ২৪৪৪",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "character_036",
+      "conceptId": "character_poor_debtor",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "ঋণগ্রহীতা সত্যিই আর্থিক কষ্টে আছেন। কুরআন ২:২৮০ কী নির্দেশ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রথম প্রতিক্রিয়া হিসেবে অপমান করা"
+        },
+        {
+          "id": "b",
+          "text": "আর্থিক কষ্টের অস্তিত্ব নেই এমন ভান করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু দৃষ্টান্ত বানাতে চাপ বাড়ানো"
+        },
+        {
+          "id": "d",
+          "text": "সচ্ছলতা আসা পর্যন্ত সময় দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে কষ্টে থাকা ঋণগ্রহীতাকে অবকাশের নির্দেশ এবং দান হিসেবে মওকুফের প্রশংসা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "280",
+          "label": "কুরআন ২:২৮০",
+          "url": "https://quran.com/2/280"
+        }
+      ]
+    },
+    {
+      "id": "character_037",
+      "conceptId": "character_parental_limits",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "মা-বাবা সন্তানকে আল্লাহর সঙ্গে শরিক করতে চাপ দেন। কুরআন ৩১:১৫-এ কোন ভারসাম্য রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সেই দাবি না মানা, কিন্তু দুনিয়ায় সদয় সাহচর্য বজায় রাখা"
+        },
+        {
+          "id": "b",
+          "text": "মা-বাবার সব নির্দেশ বিশ্বাসের ঊর্ধ্বে বলে মেনে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "মতভেদকে নিষ্ঠুরতার অনুমতি করা"
+        },
+        {
+          "id": "d",
+          "text": "সদয় হতে হলে দাবি গ্রহণ করতেই হবে ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটিতে ওই দাবি প্রত্যাখ্যানের সঙ্গে ভালো আচরণ স্পষ্টভাবে একত্র করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "15",
+          "label": "কুরআন ৩১:১৫",
+          "url": "https://quran.com/31/15"
+        }
+      ]
+    },
+    {
+      "id": "character_038",
+      "conceptId": "character_permission_three",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "তিনবার অনুমতি চেয়েও আগন্তুক কোনো উত্তর পাননি। সহিহ বুখারি ৬২৪৫-এর নির্দেশকে কোন আচরণ সম্মান করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নীরবতা সব সময় সম্মতি বলে ঢুকে পড়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রবেশকে নিজের অধিকার না ভেবে চলে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিবেশীদের দরজা খুলতে দাবি করা"
+        },
+        {
+          "id": "d",
+          "text": "ঘর দেখতে জানালায় অপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সম্মানজনক সাক্ষাতের মধ্যে অনুমতি দেওয়া হয়নি—এটি মেনে নেওয়াও রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6245",
+          "label": "সহিহ বুখারি ৬২৪৫",
+          "url": "https://sunnah.com/bukhari:6245"
+        }
+      ]
+    },
+    {
+      "id": "character_039",
+      "conceptId": "character_kind_words",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ উদারভাবে দান করেও প্রকাশ্যে গ্রহীতাকে অপমান করেন। কুরআন ২:২৬৩-এর কোন তুলনা অগ্রাধিকার সংশোধন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দানের পরিমাণ সব অপমান গ্রহণযোগ্য করে।"
+        },
+        {
+          "id": "b",
+          "text": "সাহায্য নিলে গ্রহীতার মর্যাদা থাকে না।"
+        },
+        {
+          "id": "c",
+          "text": "কষ্ট দেওয়ার পরিণামযুক্ত দানের চেয়ে ভালো কথা ও ক্ষমা উত্তম।"
+        },
+        {
+          "id": "d",
+          "text": "প্রকাশ্যে অপমান দানের আবশ্যিক অংশ।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি উপহারের পরের আচরণ থেকে উপহারকে আলাদা করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "263",
+          "label": "কুরআন ২:২৬৩",
+          "url": "https://quran.com/2/263"
+        }
+      ]
+    },
+    {
+      "id": "character_040",
+      "conceptId": "character_cooperation_limits",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "বন্ধু অসৎ পরিকল্পনা বাস্তবায়নে সাহায্য চান। কুরআন ৫:২-এর কোন নির্দেশ প্রাসঙ্গিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বন্ধুত্ব পুরোনো হলে যেকোনো পরিকল্পনায় সহযোগিতা"
+        },
+        {
+          "id": "b",
+          "text": "আনুগত্যকে অন্যায় উপেক্ষার অনুমতি মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু লাভ দিয়ে পরিকল্পনা বিচার করা"
+        },
+        {
+          "id": "d",
+          "text": "সৎকাজে সহযোগিতা, গুনাহ ও সীমালঙ্ঘনে নয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি কল্যাণকর সহযোগিতা ও অন্যায়ে সহায়তার পার্থক্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "character_041",
+      "conceptId": "character_weights_measures",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "ব্যবসায়ী কেনার সময় পুরো মাপ চান, কিন্তু বিক্রির সময় কম দেন। কোন অংশ সরাসরি এই আচরণ নিয়ে বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআন ৮৩:১–৩"
+        },
+        {
+          "id": "b",
+          "text": "লাইলাতুল কদর সম্পর্কে কুরআন ৯৭:১–৩"
+        },
+        {
+          "id": "c",
+          "text": "ইউসুফ (আ.)-এর স্বপ্ন সম্পর্কে কুরআন ১২:৪"
+        },
+        {
+          "id": "d",
+          "text": "হস্তিবাহিনী সম্পর্কে কুরআন ১০৫:১"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-মুতাফফিফিন নিজের জন্য পুরো মাপ চাওয়া কিন্তু অন্যকে কম দেওয়া ব্যক্তিদের নিন্দা করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 83,
+          "ayahs": "1-3",
+          "label": "কুরআন ৮৩:১-৩",
+          "url": "https://quran.com/83/1-3"
+        }
+      ]
+    },
+    {
+      "id": "character_042",
+      "conceptId": "character_anger_control",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "মতবিরোধে সহকর্মী কাউকে অপমান করলেন। সহিহ বুখারি ৬১১৪-এ প্রশংসিত শক্তির সঙ্গে কোন প্রতিক্রিয়া মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সঙ্গে সঙ্গে আরও অপমানজনক কথা খোঁজা"
+        },
+        {
+          "id": "b",
+          "text": "গালিগালাজে ফেটে না পড়ে প্রতিক্রিয়া নিয়ন্ত্রণ ও সমস্যা মোকাবিলা"
+        },
+        {
+          "id": "c",
+          "text": "নিয়ন্ত্রণ হারানোকে সাহসের প্রমাণ ধরা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি তথ্যগত দাবি রাগকে ঠিক করতে দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় প্রতিশোধের বদলে আত্মসংযমকে শক্তির প্রাসঙ্গিক মাপকাঠি করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "সহিহ বুখারি ৬১১৪",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "character_043",
+      "conceptId": "character_offensive_names",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "অপমানজনক জেনেও দলটি কাউকে একই ডাকনামে ডাকে। কুরআন ৪৯:১১-এর কোন শিক্ষা প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দলের আনন্দ ব্যক্তির মর্যাদার ঊর্ধ্বে"
+        },
+        {
+          "id": "b",
+          "text": "জনপ্রিয় হলেই ডাকনাম সম্মানজনক"
+        },
+        {
+          "id": "c",
+          "text": "অপমানজনক নামে ডাকা এড়ানো"
+        },
+        {
+          "id": "d",
+          "text": "অর্থের ক্ষতি না হলে অপমান গ্রহণযোগ্য"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বক্তারা রসিকতা বললেও অবমাননাকর নামের নিষেধ প্রাসঙ্গিক থাকে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "character_044",
+      "conceptId": "character_neighbours",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ বারবার এড়ানো সম্ভব এমন শব্দ করে প্রতিবেশীর ক্ষতি করেন ও অভিযোগ উপেক্ষা করেন। কোন শিক্ষা সরাসরি প্রাসঙ্গিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইবাদত সব বিরক্তি ক্ষমাযোগ্য করে—এমন দাবি"
+        },
+        {
+          "id": "b",
+          "text": "আত্মীয় হলেই কেবল প্রতিবেশীর অধিকার—এমন নিয়ম"
+        },
+        {
+          "id": "c",
+          "text": "নিজের বাড়ি মানে সীমাহীন ক্ষতির অনুমতি—এমন ধারণা"
+        },
+        {
+          "id": "d",
+          "text": "সহিহ বুখারি ৬০১৮-এ প্রতিবেশীর ক্ষতি না করার নির্দেশ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "প্রতিবেশীর ক্ষতি এড়ানোর দায়িত্ব শুধু ভদ্র অভিবাদন নয়, আচরণেও প্রযোজ্য।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "সহিহ বুখারি ৬০১৮",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "character_045",
+      "conceptId": "character_repairing_wrong",
+      "categoryId": "character_conduct",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কেউ অন্যের সম্মান বা আরেকটি অধিকারে অন্যায় করেছেন। সহিহ বুখারি ২৪৪৯ কী করতে তাগিদ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অর্থ দিয়ে মেটানো যাবে না এমন দিনের আগে সেই অন্যায়ের দায় থেকে মুক্তি চাইতে"
+        },
+        {
+          "id": "b",
+          "text": "সময় স্বয়ংক্রিয়ভাবে অধিকার বাতিল করে বলে উপেক্ষা করতে"
+        },
+        {
+          "id": "c",
+          "text": "সুনাম থাকলে দায়িত্ব উঠে যায় ধরে নিতে"
+        },
+        {
+          "id": "d",
+          "text": "ক্ষতিগ্রস্ত ব্যক্তি সব ভুলে যাওয়া পর্যন্ত অপেক্ষা করতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় জবাবদিহি অনির্দিষ্টকাল পিছিয়ে না দিয়ে অন্যের দাবি মোকাবিলার গুরুত্ব রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "সহিহ বুখারি ২৪৪৯",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "character_046",
+      "conceptId": "character_worship_and_rights",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "সহিহ মুসলিম ২৫৮১-এ একজন সালাত, রোজা ও দান নিয়ে আসেন, কিন্তু অন্যদের ক্ষতি করেছেন। নিঃস্বতার এই বিবরণ কী প্রতিষ্ঠা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাত মানুষকে অপমানের অবাধ অনুমতি দেয়।"
+        },
+        {
+          "id": "b",
+          "text": "ইবাদত অন্যের অধিকার লঙ্ঘনকে নৈতিকভাবে অপ্রাসঙ্গিক করে না।"
+        },
+        {
+          "id": "c",
+          "text": "শুধু অর্থের অভাবকেই নিঃস্বতা বলা যায়।"
+        },
+        {
+          "id": "d",
+          "text": "অন্যের ক্ষতি সব সময় নিজের নেকি বাড়ায়।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় ক্ষতিগ্রস্তদের কাছে নেকি দিয়ে দেওয়ার কথা রয়েছে, যা পারস্পরিক জুলুমের গুরুত্ব দেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2581",
+          "label": "সহিহ মুসলিম ২৫৮১",
+          "url": "https://sunnah.com/muslim:2581"
+        }
+      ]
+    },
+    {
+      "id": "character_047",
+      "conceptId": "character_reporting_harm",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ ক্ষতিকর কথার নিষেধ দিয়ে অন্যায়ের পরে সাহায্যপ্রার্থীকে চুপ করাতে চান। কুরআন ৪:১৪৮-এর কোন ব্যতিক্রম জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতটি বলে প্রতিটি অভিযোগ সত্য।"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতটি সুরক্ষার প্রতিটি আবেদন নিষিদ্ধ করে।"
+        },
+        {
+          "id": "c",
+          "text": "যাঁর প্রতি অন্যায় হয়েছে তাঁর ক্ষেত্রে আয়াতটিতে ব্যতিক্রম রয়েছে।"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতটি ভুক্তভোগীকে ক্ষতিকর আচরণের প্রশংসা করতে বলে।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ব্যতিক্রমটি কথার নীতি দিয়ে মজলুমকে নির্বিচারে চুপ করানো ঠেকায়; তবে বানানো অভিযোগ বা সীমাহীন প্রকাশের অনুমতি দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "148",
+          "label": "কুরআন ৪:১৪৮",
+          "url": "https://quran.com/4/148"
+        }
+      ]
+    },
+    {
+      "id": "character_048",
+      "conceptId": "character_forgiveness_and_redress",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪২:৪০–৪৩ একসঙ্গে পড়লে কী ভারসাম্য দেখা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেকোনো প্রতিকার চাইলেই মজলুম সব সময় দোষী।"
+        },
+        {
+          "id": "b",
+          "text": "ক্ষমা করতে হলে অন্যায়কে ভালো বলতে হয়।"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিক্রিয়া সীমাহীনভাবে মূল অন্যায় ছাড়িয়ে যেতে পারে।"
+        },
+        {
+          "id": "d",
+          "text": "ক্ষমা প্রশংসিত, আবার অন্যায়ের পরে প্রতিকার চাওয়া নিজে নিন্দিত নয়; জুলুম নিন্দিতই থাকে।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অংশটিতে সমপরিমাণ প্রতিক্রিয়া, ক্ষমা ও মীমাংসাকে জুলুম ও সীমালঙ্ঘন থেকে আলাদা করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "40-43",
+          "label": "কুরআন ৪২:৪০-৪৩",
+          "url": "https://quran.com/42/40-43"
+        }
+      ]
+    },
+    {
+      "id": "character_049",
+      "conceptId": "character_courtroom_eloquence",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "প্রতারণাপূর্ণ কিন্তু প্রভাবশালী যুক্তি দিয়ে কেউ নিজের পক্ষে রায় পেলেন। সহিহ বুখারি ২৬৮০-এ কী সতর্কতা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শোনা বক্তব্যের ভিত্তিতে রায় অন্যের হক নেওয়াকে হালাল করে না।"
+        },
+        {
+          "id": "b",
+          "text": "প্রভাবশালী উপস্থাপন মিথ্যাকে সত্য করে।"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি সফল দাবিদার অবশ্যই নৈতিকভাবে নির্দোষ।"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে বেশি সময় কথা বলা ব্যক্তিই বিতর্কিত সম্পদের মালিক।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী (সা.) সতর্ক করেছেন, অন্যের হক ক্ষুণ্ন করে পাওয়া রায় মূল অন্যায় দূর করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2680",
+          "label": "সহিহ বুখারি ২৬৮০",
+          "url": "https://sunnah.com/bukhari:2680"
+        }
+      ]
+    },
+    {
+      "id": "character_050",
+      "conceptId": "character_justice_relatives",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "আত্মীয়কে বাঁচাতে প্রমাণ বিকৃত করতে বলে পরিবার একে পারিবারিক দায়িত্ব বলছে। কুরআন ৪:১৩৫ অনুযায়ী কোন পার্থক্য জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পারিবারিক সম্পর্ক স্বয়ংক্রিয়ভাবে ন্যায়ের ঊর্ধ্বে।"
+        },
+        {
+          "id": "b",
+          "text": "পারিবারিক আনুগত্য মিথ্যা সাক্ষ্য বা অন্যায়ের অনুমতি দেয় না।"
+        },
+        {
+          "id": "c",
+          "text": "লজ্জা এড়ালেই প্রমাণ বদলাতে হবে।"
+        },
+        {
+          "id": "d",
+          "text": "আত্মীয় জড়িত না থাকলেই শুধু ন্যায় প্রযোজ্য।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে নিজের, মা-বাবার ও আত্মীয়দের জড়িত থাকার কঠিন ক্ষেত্রগুলো স্পষ্টভাবে রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "135",
+          "label": "কুরআন ৪:১৩৫",
+          "url": "https://quran.com/4/135"
+        }
+      ]
+    },
+    {
+      "id": "character_051",
+      "conceptId": "character_justice_hostility",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "শুধু অপছন্দের সম্প্রদায় থেকে এসেছে বলে কেউ বৈধ দাবি প্রত্যাখ্যান করেন। কুরআন ৫:৮ কীভাবে তা প্রশ্ন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপছন্দ দাবিটি মিথ্যা হওয়ার চূড়ান্ত প্রমাণ।"
+        },
+        {
+          "id": "b",
+          "text": "ব্যক্তিগত বিশ্বস্তদের জন্যই শুধু ন্যায়বিচার।"
+        },
+        {
+          "id": "c",
+          "text": "বিদ্বেষ দাবির ন্যায্য বিচারকে প্রতিস্থাপন করতে পারে না।"
+        },
+        {
+          "id": "d",
+          "text": "গোষ্ঠীর অজনপ্রিয়তা প্রতিটি সদস্যের সব অধিকার সরিয়ে দেয়।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ন্যায়ের নির্দেশ ব্যক্তিগত বা সামষ্টিক বিদ্বেষের প্রভাবকে সীমিত করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "character_052",
+      "conceptId": "character_verify_news",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ৪৯:৬ কি পরীক্ষা ছাড়াই প্রতিটি অপরিচিত ব্যক্তিকে মিথ্যাবাদী বলার যুক্তি দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ; অপরিচিত হওয়াই অন্যায়ের প্রমাণ।"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ; প্রকাশ্য প্রোফাইল না থাকলেই অসততা প্রতিষ্ঠিত।"
+        },
+        {
+          "id": "c",
+          "text": "না; বরং আয়াতটি কখনো সংবাদ যাচাই করতে নিষেধ করে।"
+        },
+        {
+          "id": "d",
+          "text": "না; যাচাইয়ের নির্দেশ ভিত্তিহীন অভিযোগের অনুমতি নয়।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি ক্ষতিকর কাজের আগে সতর্কতা দাবি করে; যাচাইয়ের দাবি করতে করতে অভিযোগ বানানো সেই সতর্কতার বিপরীত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "কুরআন ৪৯:৬",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "character_053",
+      "conceptId": "character_parental_limits",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "মা-বাবা আল্লাহর সঙ্গে শরিক করতে বললে কোন সিদ্ধান্তে কুরআন ৩১:১৫-এর দুই অংশই বজায় থাকে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দাবিটি প্রত্যাখ্যানের সঙ্গে সদাচার রাখা; অস্বীকৃতি ও নিষ্ঠুরতা আলাদা।"
+        },
+        {
+          "id": "b",
+          "text": "সদয় হতে হলে দাবি মানতেই হবে।"
+        },
+        {
+          "id": "c",
+          "text": "অস্বীকৃতিতে সব ধরনের অপমানের অনুমতি মেলে।"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতটি মা-বাবা ও সন্তানের সব দায়িত্ব বাতিল করে।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতে ভালো সাহচর্যের নির্দেশ বজায় রেখেই আনুগত্যের একটি সীমা দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "15",
+          "label": "কুরআন ৩১:১৫",
+          "url": "https://quran.com/31/15"
+        }
+      ]
+    },
+    {
+      "id": "character_054",
+      "conceptId": "character_backbiting_definition",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কারও বিব্রতকর তথ্য ব্যাপকভাবে ছড়াতে ‘তথ্যটি সত্য’—এটুকু নিজে যথেষ্ট যুক্তি নয় কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কারও সম্পর্কে প্রতিটি সত্য কথা সব পরিস্থিতিতে নিষিদ্ধ।"
+        },
+        {
+          "id": "b",
+          "text": "সত্য হওয়া দিয়ে প্রকাশের বৈধ উদ্দেশ্য, যথাযথ সীমা বা গিবতের বিষয় নির্ধারিত হয় না।"
+        },
+        {
+          "id": "c",
+          "text": "ব্যক্তির অনুপস্থিতি সব প্রকাশকে ক্ষতিহীন করে।"
+        },
+        {
+          "id": "d",
+          "text": "বেশি ছড়ালেই তথ্য বেশি নির্ভুল হয়।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সহিহ মুসলিম ২৫৮৯ দেখায় সত্য একাই গিবত দূর করে না; কুরআন ৪:১৪৮-এ মজলুমের কথা বলার প্রসঙ্গও বিবেচনা করতে হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "সহিহ মুসলিম ২৫৮৯",
+          "url": "https://sunnah.com/muslim:2589"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "148",
+          "label": "কুরআন ৪:১৪৮",
+          "url": "https://quran.com/4/148"
+        }
+      ]
+    },
+    {
+      "id": "character_055",
+      "conceptId": "character_peace_with_justice",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "দুর্বল পক্ষকে চলমান জুলুম মেনে নিতে বলে মধ্যস্থতাকারী বিরোধ থামাতে চান। কুরআন ৪৯:৯–১০-এর কোন বিষয় তা প্রশ্ন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বড় দলটি স্বয়ংক্রিয়ভাবে সঠিক।"
+        },
+        {
+          "id": "b",
+          "text": "প্রকাশ্য তর্ক শেষ হলেই প্রতিটি সমাধান ন্যায্য।"
+        },
+        {
+          "id": "c",
+          "text": "মীমাংসার সঙ্গে ন্যায় ও সমতা যুক্ত হয়েছে।"
+        },
+        {
+          "id": "d",
+          "text": "মধ্যস্থতা শুরু হলে ন্যায় অপ্রাসঙ্গিক হয়।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "অংশটি শান্তির গ্রহণযোগ্য ভিত্তি হিসেবে জুলুম না তুলে ধরে মীমাংসার আহ্বান জানায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "9-10",
+          "label": "কুরআন ৪৯:৯-১০",
+          "url": "https://quran.com/49/9-10"
+        }
+      ]
+    },
+    {
+      "id": "character_056",
+      "conceptId": "character_wages",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কর্মীর অর্জিত মজুরি আটকে রেখে নিয়োগকর্তা নিজের উদার দানের প্রচার করেন। কোন পার্থক্য জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রকাশ্য দান স্বয়ংক্রিয়ভাবে মজুরির দায় বাতিল করে।"
+        },
+        {
+          "id": "b",
+          "text": "কর্মীর অধিকার পুরোপুরি জনসমর্থনের ওপর নির্ভর করে।"
+        },
+        {
+          "id": "c",
+          "text": "দাতা চাকরিসংক্রান্ত সব দায়িত্ব দানের গ্রহীতার ওপর দিতে পারেন।"
+        },
+        {
+          "id": "d",
+          "text": "নফল উদারতা বিদ্যমান অধিকার অস্বীকারের অজুহাত নয়।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সহিহ বুখারি ২২৭০-এ মজুরিবঞ্চনার সতর্কতা রয়েছে; সহিহ মুসলিম ২৫৮১-এর নিঃস্বতার বিবরণ দেখায় ইবাদত ও দান পারস্পরিক অন্যায় মুছে দেয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2270",
+          "label": "সহিহ বুখারি ২২৭০",
+          "url": "https://sunnah.com/bukhari:2270"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2581",
+          "label": "সহিহ মুসলিম ২৫৮১",
+          "url": "https://sunnah.com/muslim:2581"
+        }
+      ]
+    },
+    {
+      "id": "character_057",
+      "conceptId": "character_peaceful_nonmuslims",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ বলেন, আচরণ যা-ই হোক অমুসলিমদের প্রতি সব সদাচার নিষিদ্ধ। কুরআন ৬০:৮-এর কোন নির্দিষ্ট বিষয় জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধর্মের কারণে যুদ্ধ বা উচ্ছেদ করেনি এমন ব্যক্তিদের প্রতি সদাচার ও ন্যায়ের স্পষ্ট অনুমতি রয়েছে।"
+        },
+        {
+          "id": "b",
+          "text": "এটি প্রত্যেক বাইরের ব্যক্তির প্রতি ন্যায় নিষিদ্ধ করে।"
+        },
+        {
+          "id": "c",
+          "text": "এটি সদাচারকে শুধু একই বংশের ওপর নির্ভরশীল করে।"
+        },
+        {
+          "id": "d",
+          "text": "এটি বলে প্রতিটি চুক্তি সব নৈতিক দায় দূর করে।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতের স্পষ্ট অনুমতি নির্বিচার নিষেধ খণ্ডন করে; প্রতিটি রাজনৈতিক সম্পর্কের সংজ্ঞা দেওয়া এই প্রশ্নের উদ্দেশ্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 60,
+          "ayahs": "8",
+          "label": "কুরআন ৬০:৮",
+          "url": "https://quran.com/60/8"
+        }
+      ]
+    },
+    {
+      "id": "character_058",
+      "conceptId": "character_trusts",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "মতবিরোধের পরে শুধু মালিককে শাস্তি দিতে কেউ তাঁর গচ্ছিত সম্পদ রাখতে চান। কুরআন ৪:৫৮-এর কোন নীতি প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি বিরোধ স্বয়ংক্রিয়ভাবে মালিকানা বদলে দেয়।"
+        },
+        {
+          "id": "b",
+          "text": "গচ্ছিত সম্পদ প্রকৃত হকদারের প্রাপ্যই থাকে; ব্যক্তিগত রাগ নিজে আমানত বাতিল করে না।"
+        },
+        {
+          "id": "c",
+          "text": "বেশি কষ্ট পাওয়া পক্ষ যেকোনো গচ্ছিত সম্পদ নিতে পারে।"
+        },
+        {
+          "id": "d",
+          "text": "প্রমাণ ছাড়াই ব্যক্তিগত শাস্তি বৈধ মালিকানা তৈরি করে।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আমানত ফেরতের নির্দেশ ব্যক্তিগত স্নেহ বজায় থাকার শর্তে দেওয়া হয়নি। রাগ থেকে আলাদা আইনি দাবি বানানো উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "character_059",
+      "conceptId": "character_help_oppressor",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "বন্ধু বলেন, তাঁর অন্যায় থামানো অবিশ্বস্ততা। কোন দুটি শিক্ষা সরাসরি তা প্রশ্ন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অতিথিকে সম্মান ও ক্যালেন্ডারের তারিখ মুখস্থ"
+        },
+        {
+          "id": "b",
+          "text": "প্রবেশের অনুমতি ও পোশাক বদল"
+        },
+        {
+          "id": "c",
+          "text": "জুলুম ঠেকিয়ে জালিমকে সাহায্য করা এবং গুনাহ ও সীমালঙ্ঘনে সহযোগিতা না করা"
+        },
+        {
+          "id": "d",
+          "text": "কণ্ঠ নিচু রাখা ও সব পরিকল্পনা বৈধ ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সহিহ বুখারি ২৪৪৪ ও কুরআন ৫:২ সাহায্যকে শর্তহীন সহায়তা না ধরে নৈতিক সীমাকে তার অংশ করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "সহিহ বুখারি ২৪৪৪",
+          "url": "https://sunnah.com/bukhari:2444"
+        },
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "character_060",
+      "conceptId": "character_humility",
+      "categoryId": "character_conduct",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ বিনয়ের অর্থ করেন, প্রতিটি অন্যায্য দাবি মানতে হবে। কোন সমন্বিত পাঠটি বেশি সতর্ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিনয় সব প্রমাণ অপ্রয়োজনীয় করে"
+        },
+        {
+          "id": "b",
+          "text": "কথা অস্বস্তিকর হলেই ন্যায় নিষিদ্ধ"
+        },
+        {
+          "id": "c",
+          "text": "অন্যায় প্রত্যাখ্যান অবশ্যই অহংকারের প্রমাণ"
+        },
+        {
+          "id": "d",
+          "text": "অহংকার এড়িয়েও ন্যায় বজায় রাখা ও মানুষের হক ফিরিয়ে দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন ৩১:১৮ অহংকারের নিন্দা করে, আবার কুরআন ৪:৫৮ ন্যায়ের নির্দেশ দেয়। বিনয় আচরণের বিষয়; এটি সেই দায়িত্ব বাতিল করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "কুরআন ৩১:১৮",
+          "url": "https://quran.com/31/18"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    }
+  ]
+}

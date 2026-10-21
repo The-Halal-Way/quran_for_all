@@ -1,0 +1,2317 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "everyday_worship",
+  "title": "দৈনন্দিন ইবাদত",
+  "description": "সাধারণ ব্যবহারকারী → প্রাথমিক স্তর। সালাত, পবিত্রতা, রোজা, দান, জিকির ও দোয়া নিয়ে পরিচিত তথ্য, আরও কিছু মৌলিক জ্ঞান ও ছোট দৈনন্দিন প্রয়োগ। প্রতিটি প্রশ্নই প্রাথমিক স্তরের। বিস্তারিত মতভেদপূর্ণ বিধান ও সূত্রের নম্বর মুখস্থের প্রশ্ন রাখা হয়নি।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞানের মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিসের মূল পাঠ মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যাগুলো শিক্ষামূলকভাবে নিজস্ব ভাষায় লেখা; এগুলো হুবহু অনুবাদ নয়। এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_beginner_everyday_worship_001",
+      "conceptId": "worship_prayer_count",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "প্রতিদিন কত ওয়াক্ত ফরজ সালাত রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাঁচ ওয়াক্ত"
+        },
+        {
+          "id": "b",
+          "text": "তিন ওয়াক্ত"
+        },
+        {
+          "id": "c",
+          "text": "চার ওয়াক্ত"
+        },
+        {
+          "id": "d",
+          "text": "ছয় ওয়াক্ত"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "পাঁচ ওয়াক্ত সালাত মুসলিমদের ইবাদতের একটি প্রধান অংশ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "সহিহ বুখারি ৪৬",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_002",
+      "conceptId": "worship_prayer_names",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন তালিকায় পাঁচ ওয়াক্ত সালাতের নাম সঠিক ক্রমে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফজর, আসর, জোহর, এশা, মাগরিব"
+        },
+        {
+          "id": "b",
+          "text": "ফজর, জোহর, আসর, মাগরিব, এশা"
+        },
+        {
+          "id": "c",
+          "text": "জোহর, ফজর, মাগরিব, আসর, এশা"
+        },
+        {
+          "id": "d",
+          "text": "এশা, মাগরিব, আসর, জোহর, ফজর"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সালাতের সময় ভোর থেকে দুপুর, বিকেল, সূর্যাস্ত ও রাত পর্যন্ত পর্যায়ক্রমে আসে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "সহিহ মুসলিম ৬১২a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_003",
+      "conceptId": "worship_fajr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূর্যোদয়ের আগে ভোরে কোন সালাত আদায় করা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জোহর"
+        },
+        {
+          "id": "b",
+          "text": "আসর"
+        },
+        {
+          "id": "c",
+          "text": "ফজর"
+        },
+        {
+          "id": "d",
+          "text": "এশা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ফজর হলো ভোরের সালাত। সূর্যোদয়ের সঙ্গে এর সময় শেষ হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "সহিহ মুসলিম ৬১২a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_004",
+      "conceptId": "worship_maghrib",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূর্যাস্তের সময় কোন সালাতের সময় শুরু হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফজর"
+        },
+        {
+          "id": "b",
+          "text": "জোহর"
+        },
+        {
+          "id": "c",
+          "text": "আসর"
+        },
+        {
+          "id": "d",
+          "text": "মাগরিব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মাগরিব হলো সূর্যাস্তের সালাত। সূর্যাস্তের সঙ্গে দিনের রোজাও শেষ হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "কুরআন ২:১৮৭",
+          "url": "https://quran.com/2/187"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "সহিহ মুসলিম ৬১২a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_005",
+      "conceptId": "worship_wudu",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অজু কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাতের জন্য নির্ধারিত নিয়মে পবিত্রতা অর্জন"
+        },
+        {
+          "id": "b",
+          "text": "যে খাবারের মাধ্যমে রোজা শেষ হয়"
+        },
+        {
+          "id": "c",
+          "text": "জুমার খুতবা"
+        },
+        {
+          "id": "d",
+          "text": "বার্ষিক হজযাত্রা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "অজুর মাধ্যমে পবিত্রতা অর্জন করা হয়। এতে নির্দিষ্ট অঙ্গ ধোয়া ও মাথা মাসেহ করা অন্তর্ভুক্ত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_006",
+      "conceptId": "worship_qibla",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুসলিমরা সাধারণ অবস্থায় সালাতে কোন দিকে মুখ করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিকটতম পাহাড়ের দিকে"
+        },
+        {
+          "id": "b",
+          "text": "মক্কার কাবার দিকে"
+        },
+        {
+          "id": "c",
+          "text": "সব জায়গায় সূর্য ওঠার দিকে"
+        },
+        {
+          "id": "d",
+          "text": "সব জায়গায় নিকটতম মসজিদের দিকে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কিবলা হলো কাবার দিক। স্থানভেদে কম্পাসে এর দিক আলাদা হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "কুরআন ২:১৪৪",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_007",
+      "conceptId": "worship_adhan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আজান কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এক ধরনের দান"
+        },
+        {
+          "id": "b",
+          "text": "সন্ধ্যার খাবার"
+        },
+        {
+          "id": "c",
+          "text": "সালাতের আহ্বান"
+        },
+        {
+          "id": "d",
+          "text": "হজের আরেকটি নাম"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আজানের মাধ্যমে সালাতের সময় ঘোষণা করা হয় এবং মানুষকে ইবাদতের জন্য ডাকা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "631",
+          "label": "সহিহ বুখারি ৬৩১",
+          "url": "https://sunnah.com/bukhari:631"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_008",
+      "conceptId": "worship_iqamah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইকামত কী ঘোষণা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রমজান শেষ হওয়ার কথা"
+        },
+        {
+          "id": "b",
+          "text": "সফর শুরু হওয়ার কথা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু জুমার খুতবা শেষ হওয়ার কথা"
+        },
+        {
+          "id": "d",
+          "text": "জামাতে সালাত এখনই শুরু হওয়ার কথা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "জামাত সালাত শুরু করার জন্য প্রস্তুত হলে ইকামত দেওয়া হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "603",
+          "label": "সহিহ বুখারি ৬০৩",
+          "url": "https://sunnah.com/bukhari:603"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_009",
+      "conceptId": "worship_fatihah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের কোন প্রথম সুরাটি নিয়মিত সালাতে পড়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফাতিহা"
+        },
+        {
+          "id": "b",
+          "text": "আল-মাসাদ"
+        },
+        {
+          "id": "c",
+          "text": "আল-ফিল"
+        },
+        {
+          "id": "d",
+          "text": "কুরাইশ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সালাতের কিরাআতে সুরা আল-ফাতিহার বিশেষ গুরুত্ব রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "756",
+          "label": "সহিহ বুখারি ৭৫৬",
+          "url": "https://sunnah.com/bukhari:756"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_010",
+      "conceptId": "worship_ruku",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সালাতে রুকু কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাতের পরে বসা"
+        },
+        {
+          "id": "b",
+          "text": "ঝুঁকে দাঁড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "আজান দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "দান করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "রুকু হলো সালাতে ঝুঁকে দাঁড়ানোর ভঙ্গি। তা ধীরস্থিরভাবে আদায় করতে হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6251",
+          "label": "সহিহ বুখারি ৬২৫১",
+          "url": "https://sunnah.com/bukhari:6251"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_011",
+      "conceptId": "worship_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সালাতে সিজদা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাতের আহ্বান"
+        },
+        {
+          "id": "b",
+          "text": "জুমার খুতবা"
+        },
+        {
+          "id": "c",
+          "text": "মাটিতে কপাল রেখে নত হওয়া"
+        },
+        {
+          "id": "d",
+          "text": "ভোরের আগের খাবার"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সিজদা সালাতের একটি ভঙ্গি, যাতে বান্দা মাটিতে কপাল রেখে নত হন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6251",
+          "label": "সহিহ বুখারি ৬২৫১",
+          "url": "https://sunnah.com/bukhari:6251"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_012",
+      "conceptId": "worship_ramadan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুসলিমরা কোন মাসে মাসব্যাপী ফরজ রোজা পালন করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শাওয়াল"
+        },
+        {
+          "id": "b",
+          "text": "সফর"
+        },
+        {
+          "id": "c",
+          "text": "রজব"
+        },
+        {
+          "id": "d",
+          "text": "রমজান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "যাঁদের ওপর রোজা ফরজ হওয়ার শর্ত প্রযোজ্য, তাঁদের জন্য রমজান ফরজ রোজার মাস।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_013",
+      "conceptId": "worship_fast_start",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রমজানের প্রতিদিনের রোজা কখন শুরু হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুবহে সাদিকের সময়"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যোদয়ের সময়"
+        },
+        {
+          "id": "c",
+          "text": "দুপুরে"
+        },
+        {
+          "id": "d",
+          "text": "সূর্যাস্তের সময়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সুবহে সাদিক অর্থাৎ প্রকৃত ভোর হলে রোজা ও ফজরের সময় শুরু হয়। সূর্যোদয়ের সময় নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "কুরআন ২:১৮৭",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_014",
+      "conceptId": "worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সাহরি কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূর্যাস্তের সময়ের খাবার"
+        },
+        {
+          "id": "b",
+          "text": "রোজার আগে ভোর হওয়ার পূর্বে খাওয়া খাবার"
+        },
+        {
+          "id": "c",
+          "text": "জুমার খুতবা"
+        },
+        {
+          "id": "d",
+          "text": "সালাতের আহ্বান"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সাহরি রোজা শুরু হওয়ার আগে খাওয়া হয়। নবীজি তা খেতে উৎসাহ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_015",
+      "conceptId": "worship_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইফতার কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভোরে রোজা শুরু করা"
+        },
+        {
+          "id": "b",
+          "text": "দুপুরের সালাত"
+        },
+        {
+          "id": "c",
+          "text": "সূর্যাস্তের সময় রোজা ভাঙা"
+        },
+        {
+          "id": "d",
+          "text": "পবিত্রতা অর্জনের একটি পদ্ধতি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূর্যাস্ত হয়ে গেলে রোজা ভাঙাকে ইফতার বলা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "সহিহ বুখারি ১৯৫৭",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_016",
+      "conceptId": "worship_zakah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শর্ত পূরণ হলে কোন দানটি নির্ধারিতভাবে ফরজ হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আজান"
+        },
+        {
+          "id": "b",
+          "text": "রুকু"
+        },
+        {
+          "id": "c",
+          "text": "সাহরি"
+        },
+        {
+          "id": "d",
+          "text": "জাকাত"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "যাঁদের ক্ষেত্রে শর্ত পূরণ হয়, তাঁদের জন্য জাকাত ফরজ। এটি ঐচ্ছিক দান থেকে আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "সহিহ বুখারি ৪৬",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_017",
+      "conceptId": "worship_jumuah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "জুমার সালাত সপ্তাহের কোন দিনে হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুক্রবার"
+        },
+        {
+          "id": "b",
+          "text": "সোমবার"
+        },
+        {
+          "id": "c",
+          "text": "বুধবার"
+        },
+        {
+          "id": "d",
+          "text": "রবিবার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জুমা হলো শুক্রবারের সাপ্তাহিক জামাতের সালাত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 62,
+          "ayahs": "9",
+          "label": "কুরআন ৬২:৯",
+          "url": "https://quran.com/62/9"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_018",
+      "conceptId": "worship_hajj",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন ইবাদতটি মক্কার পবিত্র কাবাঘরকে কেন্দ্র করে পালিত তীর্থযাত্রা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অজু"
+        },
+        {
+          "id": "b",
+          "text": "হজ"
+        },
+        {
+          "id": "c",
+          "text": "ইফতার"
+        },
+        {
+          "id": "d",
+          "text": "আজান"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হজ কাবাঘরকে কেন্দ্র করে পালিত ইবাদত। সামর্থ্য ও প্রযোজ্য শর্ত পূরণ হলে তা ফরজ হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "97",
+          "label": "কুরআন ৩:৯৭",
+          "url": "https://quran.com/3/97"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_019",
+      "conceptId": "worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইবাদতে জিকির বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সফরের পরিকল্পনা করা"
+        },
+        {
+          "id": "b",
+          "text": "বিয়ের ঘোষণা দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহকে স্মরণ করা"
+        },
+        {
+          "id": "d",
+          "text": "পঞ্জিকার হিসাব করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জিকির হলো আল্লাহকে স্মরণ করা। তাঁর প্রশংসা ও পবিত্রতা ঘোষণার বাক্যও এর অন্তর্ভুক্ত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "কুরআন ৩৩:৪১",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_020",
+      "conceptId": "worship_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দোয়া কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জাকাতের আরেকটি নাম"
+        },
+        {
+          "id": "b",
+          "text": "সালাতের আনুষ্ঠানিক আহ্বান"
+        },
+        {
+          "id": "c",
+          "text": "সালাতের একটি ভঙ্গির নাম"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর কাছে প্রার্থনা করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দোয়ার মাধ্যমে মানুষ আল্লাহর দিকে ফিরে সাহায্য ও কল্যাণ চায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_021",
+      "conceptId": "worship_prayer_purpose",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনে সালাতের কোন গুরুত্বপূর্ণ উদ্দেশ্য উল্লেখ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহকে স্মরণ করা"
+        },
+        {
+          "id": "b",
+          "text": "দামি পোশাক দেখানো"
+        },
+        {
+          "id": "c",
+          "text": "মনোযোগ পাওয়ার প্রতিযোগিতা"
+        },
+        {
+          "id": "d",
+          "text": "দৈনন্দিন সব দায়িত্ব এড়ানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সালাত ইবাদত এবং আল্লাহকে স্মরণ করার একটি মাধ্যম।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "কুরআন ২০:১৪",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_022",
+      "conceptId": "worship_prayer_times",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বৈধ কারণ ছাড়া কি সুবিধামতো যেকোনো সময়ে দৈনিক সালাত সরিয়ে নেওয়া যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি সালাতের সময় একই"
+        },
+        {
+          "id": "b",
+          "text": "না, সালাতের নির্ধারিত সময় রয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সময়ের কোনো গুরুত্ব নেই"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, পাঁচ ওয়াক্তই শুধু সাপ্তাহিক"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে সালাতকে নির্ধারিত সময়ের ফরজ ইবাদত বলা হয়েছে। বিশেষ ছাড়ের নিজস্ব বিধান রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "103",
+          "label": "কুরআন ৪:১০৩",
+          "url": "https://quran.com/4/103"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_023",
+      "conceptId": "worship_wudu_parts",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনের নির্দেশ অনুযায়ী অজুতে হাত কতটুকু ধুতে হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু আঙুলের ডগা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু কাঁধের ওপরের অংশ"
+        },
+        {
+          "id": "c",
+          "text": "কনুইসহ কনুই পর্যন্ত"
+        },
+        {
+          "id": "d",
+          "text": "শুধু হাতের পিঠ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "অজুর অংশ হিসেবে কুরআনে কনুই পর্যন্ত হাত ধোয়ার নির্দেশ রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_024",
+      "conceptId": "worship_wudu_head",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অজুতে মাথার জন্য কোন কাজটি নির্ধারিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিবার ধুলা দিয়ে ঢেকে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিবার চুল কাটা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু টুপি ধোয়া"
+        },
+        {
+          "id": "d",
+          "text": "মাসেহ করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে বর্ণিত অজুর কাজগুলোর মধ্যে মাথা মাসেহ করা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_025",
+      "conceptId": "worship_wudu_break",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন কাজটিতে নিশ্চিতভাবে অজু ভাঙে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বায়ু বের হওয়া"
+        },
+        {
+          "id": "b",
+          "text": "নীরবে পড়া"
+        },
+        {
+          "id": "c",
+          "text": "ঘড়ির দিকে তাকানো"
+        },
+        {
+          "id": "d",
+          "text": "বই বহন করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বায়ু বের হলে অজু ভাঙে। পানি ব্যবহার করা সম্ভব হলে সালাতের আগে আবার অজু করতে হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "সহিহ বুখারি ১৩৫",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_026",
+      "conceptId": "worship_tayammum",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পানি না পাওয়া গেলে এবং প্রযোজ্য শর্ত পূরণ হলে কোন পবিত্রতার ব্যবস্থা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইফতার"
+        },
+        {
+          "id": "b",
+          "text": "তায়াম্মুম"
+        },
+        {
+          "id": "c",
+          "text": "আজান"
+        },
+        {
+          "id": "d",
+          "text": "জুমা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তায়াম্মুম হলো নির্ধারিত শর্তে পবিত্র মাটি দিয়ে পবিত্রতা অর্জন। এর পদ্ধতি সঠিকভাবে শিখতে হবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_027",
+      "conceptId": "worship_prayer_calm",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সালাতের ভঙ্গিগুলো কীভাবে আদায় করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যত দ্রুত সম্ভব"
+        },
+        {
+          "id": "b",
+          "text": "কোনো ভঙ্গিতে না থেমে"
+        },
+        {
+          "id": "c",
+          "text": "ধীরস্থিরভাবে প্রতিটি ভঙ্গিতে স্থির হয়ে"
+        },
+        {
+          "id": "d",
+          "text": "অন্যদের সঙ্গে প্রতিযোগিতা করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি এক ব্যক্তিকে ধীরস্থিরভাবে রুকু, দাঁড়ানো, সিজদা ও বসার শিক্ষা দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6251",
+          "label": "সহিহ বুখারি ৬২৫১",
+          "url": "https://sunnah.com/bukhari:6251"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_028",
+      "conceptId": "worship_rows",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জামাতে সালাতের কাতারের জন্য কোন কাজটি উৎসাহিত করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইচ্ছা করে কাতার বাঁকা করা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের পথ আটকে যেখানে-সেখানে দাঁড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "ইচ্ছা করে বিশৃঙ্খলা রাখা"
+        },
+        {
+          "id": "d",
+          "text": "কাতার সোজা রাখা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবীজি মুসল্লিদের কাতার সোজা করার নির্দেশ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "723",
+          "label": "সহিহ বুখারি ৭২৩",
+          "url": "https://sunnah.com/bukhari:723"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_029",
+      "conceptId": "worship_fasting_purpose",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনে রোজার কোন আত্মিক উদ্দেশ্য উল্লেখ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ-সচেতনতা বৃদ্ধি করা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের চেয়ে শ্রেষ্ঠত্ব দেখানো"
+        },
+        {
+          "id": "c",
+          "text": "তর্কে জেতা"
+        },
+        {
+          "id": "d",
+          "text": "অন্য সব ইবাদতের বিকল্প হওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মুমিনদের মধ্যে তাকওয়া বা আল্লাহ-সচেতনতা গড়ে তুলতে রোজা নির্ধারিত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "183",
+          "label": "কুরআন ২:১৮৩",
+          "url": "https://quran.com/2/183"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_030",
+      "conceptId": "worship_fasting_conduct",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খাবার ও পানীয় থেকে বিরত থাকার পাশাপাশি আচরণও কি রোজার শিক্ষার অন্তর্ভুক্ত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, আচরণের কোনো গুরুত্ব নেই"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, মিথ্যা ও অন্যায় থেকেও বাঁচতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "না, রোজায় মিথ্যা বলা বৈধ হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বাহ্যিক চেহারা গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবীজি রোজা অবস্থায় মিথ্যা কথা ও অন্যায় কাজ থেকে সতর্ক করেছেন। এখানে আচরণের কথা বলা হচ্ছে; প্রতিটি গুনাহে বিধানগতভাবে রোজা ভেঙে যায়, তা বলা হচ্ছে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "সহিহ বুখারি ১৯০৩",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_031",
+      "conceptId": "worship_suhur_status",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাহরিকে কীভাবে বোঝা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফজরের সালাতের বিকল্প"
+        },
+        {
+          "id": "b",
+          "text": "রোজা শেষ হওয়ার সময়"
+        },
+        {
+          "id": "c",
+          "text": "বরকতপূর্ণ ও উৎসাহিত একটি খাবার"
+        },
+        {
+          "id": "d",
+          "text": "সূর্যোদয়ের পরে আবশ্যক খাবার"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি সাহরি খেতে উৎসাহ দিয়েছেন। শুধু সাহরি খেতে না পারায় রোজা নষ্ট হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_032",
+      "conceptId": "worship_iftar_prompt",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সূর্যাস্ত নিশ্চিত হয়ে গেলে কোন কাজটি উৎসাহিত করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিদিন মধ্যরাত পর্যন্ত অপেক্ষা করা"
+        },
+        {
+          "id": "b",
+          "text": "পরের ভোর পর্যন্ত অপেক্ষা করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু মানুষকে মুগ্ধ করতে রোজা চালিয়ে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "অপ্রয়োজনীয় দেরি না করে ইফতার করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সঠিক সময় হয়ে গেলে নবীজি দ্রুত ইফতার করতে উৎসাহ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "সহিহ বুখারি ১৯৫৭",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_033",
+      "conceptId": "worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "রোজার কথা সত্যিই ভুলে কেউ খেলে বা পান করলে কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মনে পড়লে থেমে রোজা পূর্ণ করবেন"
+        },
+        {
+          "id": "b",
+          "text": "সারাদিন খেতে থাকবেন"
+        },
+        {
+          "id": "c",
+          "text": "আর কখনো রোজা রাখতে পারবেন না"
+        },
+        {
+          "id": "d",
+          "text": "পরের সব রোজাও অকার্যকর ধরে নেবেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি ভুলে খাওয়া বা পান করা ব্যক্তিকে রোজা পূর্ণ করার নির্দেশ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "সহিহ বুখারি ১৯৩৩",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_034",
+      "conceptId": "worship_fasting_concession",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "রমজানে সাময়িক অসুস্থতা বা সফরের জন্য কুরআনে কী ব্যবস্থা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব ইবাদত স্থায়ীভাবে শেষ হওয়ার বিধান"
+        },
+        {
+          "id": "b",
+          "text": "নিয়ম অনুযায়ী পরে বাদ যাওয়া রোজা আদায়ের ছাড়"
+        },
+        {
+          "id": "c",
+          "text": "রোজাদারদের উপহাস করার অনুমতি"
+        },
+        {
+          "id": "d",
+          "text": "বাদ যাওয়া রোজা নিয়ে কখনো ভাবতে না হওয়ার বিধান"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতে অসুস্থতা বা সফরের কারণে বাদ যাওয়া রোজা পরে আদায়ের সুযোগ রয়েছে। ব্যক্তিগত অবস্থা সম্পর্কে যোগ্য ব্যক্তির পরামর্শ নেওয়া উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_035",
+      "conceptId": "worship_zakah_recipients",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জাকাত পাওয়ার যোগ্যদের মধ্যে কোন শ্রেণি বিশেষভাবে উল্লেখ করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ধনী ব্যবসায়ী"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বিখ্যাত নামের মানুষ"
+        },
+        {
+          "id": "c",
+          "text": "দরিদ্র ও অভাবী"
+        },
+        {
+          "id": "d",
+          "text": "শুধু দাতার সামাজিক মাধ্যমের অনুসারী"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে জাকাত পাওয়ার যোগ্য শ্রেণিগুলোর মধ্যে দরিদ্র ও অভাবীদের উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "60",
+          "label": "কুরআন ৯:৬০",
+          "url": "https://quran.com/9/60"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_036",
+      "conceptId": "worship_charity_dignity",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দান করার পরে কোনটি এড়ানো উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গ্রহীতাকে সম্মান করা"
+        },
+        {
+          "id": "b",
+          "text": "সুন্দর কথা বলা"
+        },
+        {
+          "id": "c",
+          "text": "গ্রহীতার মর্যাদা রক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "কষ্ট দিয়ে খোঁটা দেওয়া ও অপমান করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে খোঁটা ও কষ্ট দিয়ে দানের মূল্য নষ্ট করা থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_037",
+      "conceptId": "worship_hamd",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন বাক্যটির অর্থ সব প্রশংসা আল্লাহর?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আলহামদুলিল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহু আকবার"
+        },
+        {
+          "id": "c",
+          "text": "লা ইলাহা ইল্লাল্লাহ"
+        },
+        {
+          "id": "d",
+          "text": "সুবহানাল্লাহ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আলহামদুলিল্লাহ দিয়ে আল্লাহর প্রশংসা করা হয়। এটি আল্লাহর প্রিয় জিকিরের বাক্যগুলোর একটি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2137a",
+          "label": "সহিহ মুসলিম ২১৩৭a",
+          "url": "https://sunnah.com/muslim:2137a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_038",
+      "conceptId": "worship_takbir",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন বাক্যটির অর্থ আল্লাহ সর্বশ্রেষ্ঠ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আলহামদুলিল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহু আকবার"
+        },
+        {
+          "id": "c",
+          "text": "সুবহানাল্লাহ"
+        },
+        {
+          "id": "d",
+          "text": "লা ইলাহা ইল্লাল্লাহ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহু আকবার আল্লাহর শ্রেষ্ঠত্ব ঘোষণা করে। এটি জিকির ও সালাতে ব্যবহৃত হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2137a",
+          "label": "সহিহ মুসলিম ২১৩৭a",
+          "url": "https://sunnah.com/muslim:2137a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_039",
+      "conceptId": "worship_tasbih",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন বাক্যটি আল্লাহকে সব অপূর্ণতা থেকে পবিত্র ঘোষণা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আলহামদুলিল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহু আকবার"
+        },
+        {
+          "id": "c",
+          "text": "সুবহানাল্লাহ"
+        },
+        {
+          "id": "d",
+          "text": "লা ইলাহা ইল্লাল্লাহ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সুবহানাল্লাহ আল্লাহর পবিত্রতা ও পূর্ণতা ঘোষণা করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2137a",
+          "label": "সহিহ মুসলিম ২১৩৭a",
+          "url": "https://sunnah.com/muslim:2137a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_040",
+      "conceptId": "worship_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর নেয়ামতের প্রতি কুরআন কোন প্রতিক্রিয়ায় উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অহংকার"
+        },
+        {
+          "id": "b",
+          "text": "সব নেয়ামত অস্বীকার"
+        },
+        {
+          "id": "c",
+          "text": "অন্যদের তুচ্ছ করা"
+        },
+        {
+          "id": "d",
+          "text": "কৃতজ্ঞতা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কৃতজ্ঞতা আল্লাহর নেয়ামতকে স্বীকার করে এবং আমাদের জীবনযাপনে তার প্রভাব থাকা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "7",
+          "label": "কুরআন ১৪:৭",
+          "url": "https://quran.com/14/7"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_041",
+      "conceptId": "worship_prayer_times",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ব্যস্ত দিনের পরিকল্পনা করছেন। কোনটি দৈনিক সালাত রক্ষায় সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাতের সময়ের মধ্যে বিরতির পরিকল্পনা করা"
+        },
+        {
+          "id": "b",
+          "text": "বৈধ কারণ ছাড়া সব সালাত ঘুমানোর সময় পর্যন্ত ফেলে রাখা"
+        },
+        {
+          "id": "c",
+          "text": "কাজ থাকলে সালাতের সব দায়িত্ব শেষ ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি সালাতের বদলে শুধু পঞ্জিকায় নোট রাখা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সালাতের সময় মাথায় রেখে পরিকল্পনা করা এই ফরজ ইবাদতের যত্ন নেওয়ার একটি উপায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "103",
+          "label": "কুরআন ৪:১০৩",
+          "url": "https://quran.com/4/103"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_042",
+      "conceptId": "worship_wudu_break",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অজুর পরে আপনার বায়ু বের হয়েছে বলে নিশ্চিত এবং পানি আছে। সালাতের আগে কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু জুতা বদলাব"
+        },
+        {
+          "id": "b",
+          "text": "আবার অজু করব"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ছোট একটি বার্তা পড়ব"
+        },
+        {
+          "id": "d",
+          "text": "আগের অজু অক্ষত আছে ধরে নেব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বায়ু বের হওয়া নিশ্চিত হলে অজু ভাঙে। তাই সালাতের আগে আবার অজু করতে হবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "সহিহ বুখারি ১৩৫",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_043",
+      "conceptId": "worship_qibla",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অপরিচিত জায়গায় কিবলার দিক জানেন না। যুক্তিসংগত প্রথম পদক্ষেপ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব জায়গায় সব সময় পূর্ব দিকে মুখ করা"
+        },
+        {
+          "id": "b",
+          "text": "যাচাই ছাড়া নিকটতম দরজার দিকে মুখ করা"
+        },
+        {
+          "id": "c",
+          "text": "নির্ভরযোগ্য দিকনির্দেশ ব্যবহার করা বা জানেন এমন কাউকে জিজ্ঞেস করা"
+        },
+        {
+          "id": "d",
+          "text": "যে দিকে দৃশ্য সুন্দর সে দিকে মুখ করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কিবলা নির্ধারণে যুক্তিসংগত চেষ্টা সালাতের প্রস্তুতিতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "কুরআন ২:১৪৪",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_044",
+      "conceptId": "worship_prayer_calm",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খেয়াল করলেন রুকু ও সিজদায় তাড়াহুড়া করছেন। কী পরিবর্তন করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আগে শেষ করতে আরও দ্রুত চলব"
+        },
+        {
+          "id": "b",
+          "text": "ধীর মনে হয় এমন ভঙ্গি বাদ দেব"
+        },
+        {
+          "id": "c",
+          "text": "ধীরস্থিরতাকে অপ্রয়োজনীয় ভাবব"
+        },
+        {
+          "id": "d",
+          "text": "ধীরে আদায় করে প্রতিটি ভঙ্গিতে ঠিকভাবে স্থির হব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবীজির শিক্ষায় সালাতের ভঙ্গিতে স্থির ও ধীরস্থির থাকার ওপর গুরুত্ব রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6251",
+          "label": "সহিহ বুখারি ৬২৫১",
+          "url": "https://sunnah.com/bukhari:6251"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_045",
+      "conceptId": "worship_prayer_illness",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অসুস্থতার কারণে ফরজ সালাতে দাঁড়াতে পারছেন না, তবে বসতে পারেন। কীভাবে সালাত আদায় করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সামর্থ্য অনুযায়ী বসে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু দাঁড়াতে না পারায় সালাত ছেড়ে দেব"
+        },
+        {
+          "id": "c",
+          "text": "সুস্থ হতে মাস লাগলেও দাঁড়াতে পারা পর্যন্ত অপেক্ষা করব"
+        },
+        {
+          "id": "d",
+          "text": "অন্য কাউকে নিজের সব সালাত আদায় করতে বলব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দাঁড়াতে অক্ষম ব্যক্তিকে নবীজি বসে সালাতের অনুমতি দিয়েছেন। বসতেও অক্ষম হলে আরও সহজ ব্যবস্থা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "সহিহ বুখারি ১১১৭",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_046",
+      "conceptId": "worship_prayer_forgotten",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সত্যিই ভুলে যাওয়া একটি সালাতের কথা এখন মনে পড়েছে। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরের সপ্তাহের একই দিন পর্যন্ত অপেক্ষা করব"
+        },
+        {
+          "id": "b",
+          "text": "মনে পড়লে সালাতটি আদায় করব"
+        },
+        {
+          "id": "c",
+          "text": "মনে পড়লেই দায়িত্ব শেষ ধরে নেব"
+        },
+        {
+          "id": "d",
+          "text": "শুধু দান দিয়ে এর বিকল্প করব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবীজি ভুলে যাওয়া সালাত মনে পড়লে তা আদায় করার নির্দেশ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "সহিহ বুখারি ৫৯৭",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_047",
+      "conceptId": "worship_rows",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জামাতের আগে কাতার গুছিয়ে দাঁড়াচ্ছেন। কোন কাজটি নবীজির নির্দেশের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইচ্ছা করে কাতার বাঁকা করা"
+        },
+        {
+          "id": "b",
+          "text": "সবাইকে আলাদা দিকে মুখ করতে বলা"
+        },
+        {
+          "id": "c",
+          "text": "কাতার সোজা রাখতে সাহায্য করা"
+        },
+        {
+          "id": "d",
+          "text": "মজা করার জন্য বিশৃঙ্খলা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কাতার সোজা করা জামাতে সালাতের যত্ন নেওয়ার অংশ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "723",
+          "label": "সহিহ বুখারি ৭২৩",
+          "url": "https://sunnah.com/bukhari:723"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_048",
+      "conceptId": "worship_fast_start",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নির্ভরযোগ্য স্থানীয় সময়সূচি অনুযায়ী সুবহে সাদিক শুরু হয়েছে। আজকের রোজার জন্য এর অর্থ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূর্যোদয় পর্যন্ত খেতে পারবেন"
+        },
+        {
+          "id": "b",
+          "text": "রোজা ইতিমধ্যেই শেষ হয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু বিকেলের সময় রোজা হিসেবে গণ্য হবে"
+        },
+        {
+          "id": "d",
+          "text": "খাবার ও পানীয় থেকে বিরত থাকার সময় শুরু হয়েছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "প্রতিদিনের রোজা সুবহে সাদিক থেকে শুরু হয়, সূর্যোদয় থেকে নয়। নির্ভরযোগ্য স্থানীয় সময় অনুসরণ করুন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "কুরআন ২:১৮৭",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_049",
+      "conceptId": "worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আগামীকাল রোজার পরিকল্পনা করছেন। নবীজি কোন খাবারটি খেতে উৎসাহ দিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুবহে সাদিকের আগের খাবার"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যোদয়ের পরে নাশতা করেও রোজা চলছে বলা"
+        },
+        {
+          "id": "c",
+          "text": "দুপুরের খাবার"
+        },
+        {
+          "id": "d",
+          "text": "সব সালাতের বিকল্প একটি খাবার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সাহরির প্রস্তুতি বরকতপূর্ণ ভোরের আগের খাবারের জন্য সময় রাখতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_050",
+      "conceptId": "worship_iftar_prompt",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সূর্যাস্ত নির্ভরযোগ্যভাবে নিশ্চিত হয়েছে এবং খাবার বা পানি প্রস্তুত। কোনটি সুন্নাহর সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বেশি ধার্মিক দেখানোর জন্য দেরি করা"
+        },
+        {
+          "id": "b",
+          "text": "অপ্রয়োজনীয় দেরি না করে ইফতার করা"
+        },
+        {
+          "id": "c",
+          "text": "পরদিন সকাল পর্যন্ত অপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "ইফতার নিরুৎসাহিত ভেবে খাবার প্রত্যাখ্যান করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সঠিক সময়ে দ্রুত ইফতার করা নবীজির শিক্ষার অনুসরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "সহিহ বুখারি ১৯৫৭",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_051",
+      "conceptId": "worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "রোজার কথা সত্যিই ভুলে পানি পান করেছেন। মনে পড়ার পরে কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইচ্ছা করে আরও এক বোতল শেষ করব"
+        },
+        {
+          "id": "b",
+          "text": "ভবিষ্যতের সব রোজা অকার্যকর ঘোষণা করব"
+        },
+        {
+          "id": "c",
+          "text": "পানি পান বন্ধ করে রোজা চালিয়ে যাব"
+        },
+        {
+          "id": "d",
+          "text": "সূর্যাস্ত পর্যন্ত খেতে থাকব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ভুলে খাওয়া বা পান করার বিধান ইচ্ছাকৃতভাবে রোজা ভাঙার থেকে আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "সহিহ বুখারি ১৯৩৩",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_052",
+      "conceptId": "worship_fasting_conflict",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "রোজা অবস্থায় কেউ আপনার সঙ্গে ঝগড়া শুরু করতে চাইছে। নবীজির নির্দেশ অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরও জোরে তাকে অপমান করব"
+        },
+        {
+          "id": "b",
+          "text": "রোজার অজুহাতে তাকে হুমকি দেব"
+        },
+        {
+          "id": "c",
+          "text": "নিজের শক্তি দেখাতে মারামারি শুরু করব"
+        },
+        {
+          "id": "d",
+          "text": "ঝগড়া এড়িয়ে বলব যে আমি রোজা রেখেছি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবীজি রোজাদারকে অশোভন আচরণ এড়াতে এবং ঝগড়ায় না জড়াতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1894",
+          "label": "সহিহ বুখারি ১৮৯৪",
+          "url": "https://sunnah.com/bukhari:1894"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_053",
+      "conceptId": "worship_fasting_conduct",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "রোজায় ক্ষুধা লাগায় এক বন্ধু মিথ্যা বলতে বলছে। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষুধা থাকা সত্ত্বেও সত্য বলব"
+        },
+        {
+          "id": "b",
+          "text": "রোজায় মিথ্যা বৈধ ভেবে মিথ্যা বলব"
+        },
+        {
+          "id": "c",
+          "text": "অন্যদের আনন্দ দিতে গল্প বানাব"
+        },
+        {
+          "id": "d",
+          "text": "ক্ষুধাকে অন্যায়ের অনুমতি মনে করব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "রোজার সঙ্গে কথা ও আচরণ সংযত রাখাও থাকা উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "সহিহ বুখারি ১৯০৩",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_054",
+      "conceptId": "worship_zakah_recipients",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জাকাত দিতে প্রস্তুত হয়েছেন। কী যাচাই করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু তার অনুসারী কতজন"
+        },
+        {
+          "id": "b",
+          "text": "গ্রহীতা জাকাত পাওয়ার যোগ্য শ্রেণির অন্তর্ভুক্ত কি না"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সে আপনার প্রশংসা করবে কি না"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সে দামি পোশাক পরে কি না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "জাকাতের নির্দিষ্ট প্রাপকশ্রেণি রয়েছে। দেওয়ার আগে যোগ্যতা যাচাই করা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "60",
+          "label": "কুরআন ৯:৬০",
+          "url": "https://quran.com/9/60"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_055",
+      "conceptId": "worship_charity_dignity",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কাউকে আর্থিক সাহায্য করেছেন। কোন কাজটি তাঁর মর্যাদা রক্ষা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রশংসার জন্য তাঁর ব্যক্তিগত কষ্ট প্রচার করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিদিন সবার সামনে ধন্যবাদ দাবি করা"
+        },
+        {
+          "id": "c",
+          "text": "অপমান ও বারবার খোঁটা দেওয়া থেকে বিরত থাকা"
+        },
+        {
+          "id": "d",
+          "text": "পরে দানের কথা তুলে তাঁকে অপমান করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "দানের পরে কষ্টদায়ক খোঁটা বা অপমান করা উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_056",
+      "conceptId": "worship_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "উদ্বিগ্ন বোধ করছেন এবং আল্লাহর সাহায্য চান। কোন ইবাদতের মাধ্যমে তাঁর দিকে ফিরতে পারেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ শুনতে পান না ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "উদ্বেগকে দোয়া করার নিষেধাজ্ঞা মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "চাওয়ার আগে বিখ্যাত হওয়ার অপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর কাছে দোয়া করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দোয়া আল্লাহর দিকে ফেরার একটি মাধ্যম। তিনি বান্দাদের প্রার্থনা শোনেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_057",
+      "conceptId": "worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দিনের মধ্যে কিছু অবসর পেলেন। কোন কাজটি আল্লাহর জিকির?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মনোযোগ দিয়ে আল্লাহর প্রশংসার বাক্য পড়া"
+        },
+        {
+          "id": "b",
+          "text": "গুজব ছড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "সম্পদ নিয়ে বড়াই করা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যের ইবাদত নিয়ে উপহাস করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নির্ধারিত সালাতের পাশাপাশি আল্লাহকে স্মরণ করা দৈনন্দিন জীবনেরও অংশ হতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "কুরআন ৩৩:৪১",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_058",
+      "conceptId": "worship_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আশা করেছিলেন এমন একটি নেয়ামত পেয়েছেন। কৃতজ্ঞতার পরিচয় কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কখনো আল্লাহকে প্রয়োজন হয় না দাবি করা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহকে ধন্যবাদ দেওয়া ও দায়িত্বের সঙ্গে নেয়ামত ব্যবহার করা"
+        },
+        {
+          "id": "c",
+          "text": "নেয়ামত দিয়ে অন্যকে ছোট করা"
+        },
+        {
+          "id": "d",
+          "text": "ভালো কিছু ঘটেছে তা অস্বীকার করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কৃতজ্ঞতা আল্লাহর অনুগ্রহ স্বীকার করে এবং দায়িত্বশীল আচরণে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "7",
+          "label": "কুরআন ১৪:৭",
+          "url": "https://quran.com/14/7"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_059",
+      "conceptId": "worship_prayer_learning",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কীভাবে সঠিকভাবে সালাত আদায় করবেন তা নিয়ে নিশ্চিত নন। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না শিখে নিজের মতো পদ্ধতি বানাব"
+        },
+        {
+          "id": "b",
+          "text": "নতুনদের ভুল হয় বলে ছেড়ে দেব"
+        },
+        {
+          "id": "c",
+          "text": "নবীজির নির্দেশ অনুসরণ করেন এমন নির্ভরযোগ্য শিক্ষকের কাছে শিখব"
+        },
+        {
+          "id": "d",
+          "text": "সালাত শেখা অপ্রয়োজনীয় ধরে নেব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি তাঁর মতো করে সালাত আদায়ের নির্দেশ দিয়েছেন। নির্ভরযোগ্য শিক্ষা সেই আদর্শ শিখতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "631",
+          "label": "সহিহ বুখারি ৬৩১",
+          "url": "https://sunnah.com/bukhari:631"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_everyday_worship_060",
+      "conceptId": "worship_repentance_hope",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আগের গুনাহের জন্য অনুতপ্ত এবং ইবাদতে ফিরতে চান। কুরআনের বার্তার সঙ্গে কোনটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর রহমত কখনো পাব না বলে সিদ্ধান্ত নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "ইবাদত স্থায়ীভাবে ছেড়ে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "তওবার অর্থ নেই ভেবে গুনাহ চালিয়ে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "তওবা করে আশা নিয়ে আল্লাহর দিকে ফেরা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন গুনাহগারদের আল্লাহর রহমত থেকে নিরাশ হতে নিষেধ করে। আশা ছেড়ে না দিয়ে আন্তরিকভাবে ফিরে আসুন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "কুরআন ৩৯:৫৩",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    }
+  ]
+}

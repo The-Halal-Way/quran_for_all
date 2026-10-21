@@ -1,0 +1,2387 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "pro",
+  "categoryId": "beliefs_foundations",
+  "title": "Beliefs & Foundations",
+  "description": "General User → Pro. Familiar belief teachings, broader basics and short everyday applications requiring deeper understanding and connections. Covers dependence on Allah, revelation, messengers, the Hereafter, mercy and accountability. All questions are Pro level within the General User audience; specialist theological disputes and reference-number memorization are excluded.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro describes the knowledge and understanding required across all question styles. Styles are not difficulty levels. Requires deeper understanding, connecting familiar teachings and distinguishing common misconceptions beyond Mid, without specialist study. This is General User Pro, not the separate Ultra bank. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Modern scenarios illustrate the cited principles. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_pro_beliefs_foundations_001",
+      "conceptId": "beliefs_worship_and_need",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which statement correctly describes dependence between Allah and His worshippers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worshippers need Allah; He does not need them"
+        },
+        {
+          "id": "b",
+          "text": "Allah needs worshippers to remain powerful"
+        },
+        {
+          "id": "c",
+          "text": "Both depend equally on one another"
+        },
+        {
+          "id": "d",
+          "text": "Only people without wealth need Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses affirm people's need for Allah and His freedom from any need for provision from them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        },
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "57",
+          "label": "Quran 51:57",
+          "url": "https://quran.com/51/57"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_002",
+      "conceptId": "beliefs_provider_and_means",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Allah's name al-Razzaq affirm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every income is morally acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Allah is the Provider"
+        },
+        {
+          "id": "c",
+          "text": "Effort has no place in seeking a living"
+        },
+        {
+          "id": "d",
+          "text": "A successful employer becomes independent of Allah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse identifies Allah as the Provider, possessing enduring power. It does not make every way of earning acceptable.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "58",
+          "label": "Quran 51:58",
+          "url": "https://quran.com/51/58"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_003",
+      "conceptId": "beliefs_justice_and_grace",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair of teachings appears together in Quran 4:40?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only large wrongs matter and small good deeds disappear"
+        },
+        {
+          "id": "b",
+          "text": "Reward is based only on worldly fame"
+        },
+        {
+          "id": "c",
+          "text": "Allah does no injustice and multiplies good deeds"
+        },
+        {
+          "id": "d",
+          "text": "Good deeds make Allah indebted to people"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse joins perfect justice with generous reward for good deeds.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "Quran 4:40",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_004",
+      "conceptId": "beliefs_revealed_unseen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How do these verses describe a messenger receiving knowledge of the unseen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The messenger acquires knowledge independent of Allah"
+        },
+        {
+          "id": "b",
+          "text": "Every person gains the same knowledge through guessing"
+        },
+        {
+          "id": "c",
+          "text": "The messenger becomes equal to Allah in knowledge"
+        },
+        {
+          "id": "d",
+          "text": "Allah discloses what He wills to a chosen messenger"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Revealed knowledge comes from Allah; receiving it does not give a messenger independent, unlimited knowledge.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "Quran 72:26-27",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_005",
+      "conceptId": "beliefs_jinn_moral_variety",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How do the jinn speaking in Surah al-Jinn describe themselves?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Some are righteous and others are not"
+        },
+        {
+          "id": "b",
+          "text": "All have exactly the same moral character"
+        },
+        {
+          "id": "c",
+          "text": "Every one of them is an angel"
+        },
+        {
+          "id": "d",
+          "text": "None can be described as righteous"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse reports differences among the jinn, including differences in righteousness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "11",
+          "label": "Quran 72:11",
+          "url": "https://quran.com/72/11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_006",
+      "conceptId": "beliefs_messengers_chosen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to Quran 22:75, how is messengership established?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public popularity creates messengership"
+        },
+        {
+          "id": "b",
+          "text": "Allah selects His messengers"
+        },
+        {
+          "id": "c",
+          "text": "People buy it through donations"
+        },
+        {
+          "id": "d",
+          "text": "Study alone turns a teacher into a messenger"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse attributes the selection of messengers from angels and humans to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "75",
+          "label": "Quran 22:75",
+          "url": "https://quran.com/22/75"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_007",
+      "conceptId": "beliefs_messengers_rank",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Quran 2:253 teach about the ranks of messengers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every messenger has an identical rank in every respect"
+        },
+        {
+          "id": "b",
+          "text": "People determine rank by nationality"
+        },
+        {
+          "id": "c",
+          "text": "Allah favored some messengers above others"
+        },
+        {
+          "id": "d",
+          "text": "A lower rank makes a true messenger false"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse affirms distinctions in rank among messengers without denying their messengership.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "253",
+          "label": "Quran 2:253",
+          "url": "https://quran.com/2/253"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_008",
+      "conceptId": "beliefs_shared_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What continuity does Quran 42:13 describe between Muhammad and earlier prophets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A command to worship a different god in each age"
+        },
+        {
+          "id": "b",
+          "text": "Rejection of every earlier revelation"
+        },
+        {
+          "id": "c",
+          "text": "A religion based solely on tribal ancestry"
+        },
+        {
+          "id": "d",
+          "text": "A shared command to uphold the faith"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse links the revealed way with the commands given to Nuh, Ibrahim, Musa and Isa.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "13",
+          "label": "Quran 42:13",
+          "url": "https://quran.com/42/13"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_009",
+      "conceptId": "beliefs_universal_message",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To whom does Quran 34:28 describe Muhammad as bringing good news and warning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All humanity"
+        },
+        {
+          "id": "b",
+          "text": "Only his own tribe"
+        },
+        {
+          "id": "c",
+          "text": "Only people who speak Arabic"
+        },
+        {
+          "id": "d",
+          "text": "Only those alive in Makkah at that time"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse describes the message as addressed to humanity, not limited to one ethnic or language group.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 34,
+          "ayahs": "28",
+          "label": "Quran 34:28",
+          "url": "https://quran.com/34/28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_010",
+      "conceptId": "beliefs_intercession_permission",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to Ayat al-Kursi, what is required for intercession before Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The intercessor's independence from Allah"
+        },
+        {
+          "id": "b",
+          "text": "Allah's permission"
+        },
+        {
+          "id": "c",
+          "text": "A person's ability to pay for a guarantee"
+        },
+        {
+          "id": "d",
+          "text": "An agreement that can overrule Allah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse makes intercession dependent on Allah's permission, not a power exercised against His authority.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_011",
+      "conceptId": "beliefs_resurrection_precision",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When answering doubt about reassembling bones, what further ability does the Quran affirm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only intact bodies can be restored"
+        },
+        {
+          "id": "b",
+          "text": "Resurrection requires a surviving photograph"
+        },
+        {
+          "id": "c",
+          "text": "Allah can restore even a person's fingertips"
+        },
+        {
+          "id": "d",
+          "text": "Humans must reconstruct themselves first"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The passage affirms Allah's power to restore the person in detail, including the fingertips.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 75,
+          "ayahs": "3-4",
+          "label": "Quran 75:3-4",
+          "url": "https://quran.com/75/3-4"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_012",
+      "conceptId": "beliefs_barzakh",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the passage about death, what does barzakh refer to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A new earthly lifetime after every death"
+        },
+        {
+          "id": "b",
+          "text": "A way to postpone all accountability forever"
+        },
+        {
+          "id": "c",
+          "text": "The name of the final scale of deeds"
+        },
+        {
+          "id": "d",
+          "text": "A barrier lasting until resurrection"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The passage denies a return to earthly life to redo one's deeds and mentions a barrier until resurrection.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "99-100",
+          "label": "Quran 23:99-100",
+          "url": "https://quran.com/23/99-100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_013",
+      "conceptId": "beliefs_record_completeness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What feature of the record of deeds alarms the wrongdoers in Quran 18:49?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It leaves out neither small nor large deeds"
+        },
+        {
+          "id": "b",
+          "text": "It records only what became publicly famous"
+        },
+        {
+          "id": "c",
+          "text": "It changes according to a person's social rank"
+        },
+        {
+          "id": "d",
+          "text": "It depends on whether people kept a diary"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse describes a comprehensive record and affirms that Allah wrongs no one.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "Quran 18:49",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_014",
+      "conceptId": "beliefs_faculties_accountable",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which human faculties does Quran 17:36 connect with accountability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only physical strength"
+        },
+        {
+          "id": "b",
+          "text": "Hearing, sight and the heart or understanding"
+        },
+        {
+          "id": "c",
+          "text": "Only the ability to speak publicly"
+        },
+        {
+          "id": "d",
+          "text": "Only skills used in paid employment"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse warns against following what one lacks knowledge of and makes these faculties accountable.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_015",
+      "conceptId": "beliefs_no_compulsion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What principle opens Quran 2:256 concerning religion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forced words alone establish sincere belief"
+        },
+        {
+          "id": "b",
+          "text": "Belief must follow the strongest social group"
+        },
+        {
+          "id": "c",
+          "text": "There is no compulsion in religion"
+        },
+        {
+          "id": "d",
+          "text": "A person's wealth decides what is true"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse rejects compulsion in religion and distinguishes right guidance from error.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "Quran 2:256",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_016",
+      "conceptId": "beliefs_deeds_and_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Prophet teach about entering Paradise in the cited report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Good deeds make Allah's mercy unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "The teaching applies to everyone except the Prophet"
+        },
+        {
+          "id": "c",
+          "text": "Worldly success guarantees entry to Paradise"
+        },
+        {
+          "id": "d",
+          "text": "No one's deeds alone make them independent of Allah's mercy"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report includes the Prophet himself in the need for Allah's mercy, guarding against self-sufficiency and entitlement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2816c",
+          "label": "Sahih Muslim 2816c",
+          "url": "https://sunnah.com/muslim:2816c"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_017",
+      "conceptId": "beliefs_hope_and_warning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two truths are placed side by side in these verses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah's forgiveness and mercy, and the seriousness of His punishment"
+        },
+        {
+          "id": "b",
+          "text": "Mercy for famous people and no accountability for others"
+        },
+        {
+          "id": "c",
+          "text": "Punishment without any possibility of mercy"
+        },
+        {
+          "id": "d",
+          "text": "Forgiveness that makes every action equally right"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The passage gives assurance of Allah's mercy alongside a serious warning, rather than erasing either truth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "49-50",
+          "label": "Quran 15:49-50",
+          "url": "https://quran.com/15/49-50"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_018",
+      "conceptId": "beliefs_rights_and_hereafter",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What should someone who has wronged another person seek before the Last Day?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A larger audience to defend the wrong"
+        },
+        {
+          "id": "b",
+          "text": "Release from the wrong and the person's pardon"
+        },
+        {
+          "id": "c",
+          "text": "A way to make worldly status replace accountability"
+        },
+        {
+          "id": "d",
+          "text": "Permission to ignore it after doing an unrelated good deed"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith warns that unresolved wrongs can be settled through deeds on the Last Day rather than money.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_019",
+      "conceptId": "beliefs_life_as_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What purpose for creating death and life is stated in Quran 67:2?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Testing who receives the most public attention"
+        },
+        {
+          "id": "b",
+          "text": "Making earthly comfort the only measure of success"
+        },
+        {
+          "id": "c",
+          "text": "Testing which people are best in deeds"
+        },
+        {
+          "id": "d",
+          "text": "Removing the need for responsible choices"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse describes life as a test concerned with the quality of deeds.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_020",
+      "conceptId": "beliefs_satan_and_choice",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In Satan's speech after judgment, how does he describe his influence over his followers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He had authority that removed all their responsibility"
+        },
+        {
+          "id": "b",
+          "text": "He could save everyone who followed him"
+        },
+        {
+          "id": "c",
+          "text": "His promises were as reliable as Allah's"
+        },
+        {
+          "id": "d",
+          "text": "He called them and they responded"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse depicts Satan admitting his failed promises and the followers' own response to his invitation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "22",
+          "label": "Quran 14:22",
+          "url": "https://quran.com/14/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_021",
+      "conceptId": "beliefs_worship_and_need",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is worship not a service that supplies something Allah lacks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah is self-sufficient, while people depend on Him"
+        },
+        {
+          "id": "b",
+          "text": "Allah needs only the worship of wealthy people"
+        },
+        {
+          "id": "c",
+          "text": "Worship gives Allah knowledge He previously lacked"
+        },
+        {
+          "id": "d",
+          "text": "Human praise is the source of Allah's power"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses distinguish the Creator's self-sufficiency from the creature's dependence. Worship does not meet a deficiency in Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        },
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "57",
+          "label": "Quran 51:57",
+          "url": "https://quran.com/51/57"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_022",
+      "conceptId": "beliefs_provider_and_means",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How can seeking a living fit belief that Allah is the Provider?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Work proves provision exists outside Allah's authority"
+        },
+        {
+          "id": "b",
+          "text": "Ordinary effort can be a means through which His provision reaches us"
+        },
+        {
+          "id": "c",
+          "text": "Belief requires refusing every means of earning"
+        },
+        {
+          "id": "d",
+          "text": "Only unexpected gifts can count as provision"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "One verse names Allah as Provider; the other calls people to move through the earth and eat from His sustenance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "58",
+          "label": "Quran 51:58",
+          "url": "https://quran.com/51/58"
+        },
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "15",
+          "label": "Quran 67:15",
+          "url": "https://quran.com/67/15"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_023",
+      "conceptId": "beliefs_justice_and_grace",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does generous reward for good deeds not imply injustice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Justice requires denying every generous reward"
+        },
+        {
+          "id": "b",
+          "text": "Reward must depend on other people's losses"
+        },
+        {
+          "id": "c",
+          "text": "Allah can bestow extra favor while wronging no one"
+        },
+        {
+          "id": "d",
+          "text": "Grace means good and evil are treated identically"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse itself joins freedom from injustice with multiplied reward. Justice and generosity are not opposites.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "Quran 4:40",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_024",
+      "conceptId": "beliefs_revealed_unseen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is revelation about an unseen event different from a person's claim to know everything independently?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any correct prediction proves unlimited knowledge"
+        },
+        {
+          "id": "b",
+          "text": "A messenger's knowledge must be identical to Allah's"
+        },
+        {
+          "id": "c",
+          "text": "Every hidden matter becomes known to all people after one revelation"
+        },
+        {
+          "id": "d",
+          "text": "Revelation is knowledge Allah grants, not knowledge independent of Him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verses locate knowledge and disclosure with Allah. A disclosed matter does not mean unlimited access to every unseen matter.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "Quran 72:26-27",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_025",
+      "conceptId": "beliefs_jinn_moral_variety",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which assumption conflicts with the jinn's description in Quran 72:11?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All jinn must have the same moral character"
+        },
+        {
+          "id": "b",
+          "text": "Some jinn are righteous"
+        },
+        {
+          "id": "c",
+          "text": "Jinn are not morally identical to one another"
+        },
+        {
+          "id": "d",
+          "text": "The Quran reports differences among them"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse explicitly describes different groups, including righteous jinn and others unlike them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "11",
+          "label": "Quran 72:11",
+          "url": "https://quran.com/72/11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_026",
+      "conceptId": "beliefs_messengers_chosen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does being a knowledgeable teacher not itself establish messengership?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every teacher automatically receives prophetic revelation"
+        },
+        {
+          "id": "b",
+          "text": "Messengership is Allah's selection, not a qualification people confer"
+        },
+        {
+          "id": "c",
+          "text": "A large following is the decisive test"
+        },
+        {
+          "id": "d",
+          "text": "The public can vote a person into messengership"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Learning can make someone a teacher; the verse gives the choice of messengers to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "75",
+          "label": "Quran 22:75",
+          "url": "https://quran.com/22/75"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_027",
+      "conceptId": "beliefs_messengers_rank",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How can belief in all messengers fit Allah favoring some above others?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Believing all means denying every difference in rank"
+        },
+        {
+          "id": "b",
+          "text": "Differences in rank permit rejection of some true messengers"
+        },
+        {
+          "id": "c",
+          "text": "Accepting all as true messengers does not require identical ranks"
+        },
+        {
+          "id": "d",
+          "text": "Only the highest-ranked messenger was sent by Allah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verses address different matters: accepting Allah's messengers and recognizing distinctions Allah grants among them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "253",
+          "label": "Quran 2:253",
+          "url": "https://quran.com/2/253"
+        },
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_028",
+      "conceptId": "beliefs_shared_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a shared revealed faith mean every community received identical detailed laws?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every practical law must be identical"
+        },
+        {
+          "id": "b",
+          "text": "No, because the prophets taught unrelated gods"
+        },
+        {
+          "id": "c",
+          "text": "Yes, so no later guidance can ever govern practice"
+        },
+        {
+          "id": "d",
+          "text": "No, shared foundations can coexist with different prescribed laws"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The passages describe continuity in the faith and distinct laws and ways prescribed for communities. These teachings do not contradict one another.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "13",
+          "label": "Quran 42:13",
+          "url": "https://quran.com/42/13"
+        },
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "48",
+          "label": "Quran 5:48",
+          "url": "https://quran.com/5/48"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_029",
+      "conceptId": "beliefs_universal_message",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does the Quran's Arabic language not restrict Muhammad's message to Arabs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The stated audience is all humanity"
+        },
+        {
+          "id": "b",
+          "text": "Language automatically limits a message to one ethnicity"
+        },
+        {
+          "id": "c",
+          "text": "Only native speakers can be addressed by revelation"
+        },
+        {
+          "id": "d",
+          "text": "A translation creates an entirely new prophet's message"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse explicitly describes the scope of the mission as humanity, rather than one language community.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 34,
+          "ayahs": "28",
+          "label": "Quran 34:28",
+          "url": "https://quran.com/34/28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_030",
+      "conceptId": "beliefs_intercession_permission",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which understanding of intercession preserves Allah's authority?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An intercessor can force Allah to change a judgment"
+        },
+        {
+          "id": "b",
+          "text": "An intercessor acts only with Allah's permission"
+        },
+        {
+          "id": "c",
+          "text": "Intercession can be bought independently of Allah"
+        },
+        {
+          "id": "d",
+          "text": "A created being shares Allah's ultimate authority"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse rules out intercession exercised independently of Allah's permission.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_031",
+      "conceptId": "beliefs_resurrection_precision",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does bodily decay not establish that resurrection is beyond Allah's power?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Human inability to reconstruct a body limits Allah"
+        },
+        {
+          "id": "b",
+          "text": "Resurrection depends on perfect preservation by people"
+        },
+        {
+          "id": "c",
+          "text": "The passage affirms His ability to reassemble and restore the body"
+        },
+        {
+          "id": "d",
+          "text": "Only recognizable remains can be restored by Allah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran answers doubt about bones with an affirmation of even more detailed restoration. Human limitations are not the measure of Allah's power.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 75,
+          "ayahs": "3-4",
+          "label": "Quran 75:3-4",
+          "url": "https://quran.com/75/3-4"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_032",
+      "conceptId": "beliefs_barzakh",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is the problem with planning to return after death to finish neglected duties?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Everyone is promised another earthly chance"
+        },
+        {
+          "id": "b",
+          "text": "Only popular people may return to complete their plans"
+        },
+        {
+          "id": "c",
+          "text": "Resurrection means repeating the same earthly life indefinitely"
+        },
+        {
+          "id": "d",
+          "text": "The passage rejects a return to redo earthly deeds"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The request to return and do good is refused in the passage, which then mentions the barrier until resurrection.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "99-100",
+          "label": "Quran 23:99-100",
+          "url": "https://quran.com/23/99-100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_033",
+      "conceptId": "beliefs_record_completeness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the record of deeds imply about wrongs that escape public attention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lack of publicity does not erase accountability"
+        },
+        {
+          "id": "b",
+          "text": "Only public scandals can appear in the record"
+        },
+        {
+          "id": "c",
+          "text": "Deleting a message deletes every responsibility"
+        },
+        {
+          "id": "d",
+          "text": "An action counts only if people can still prove it"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse's comprehensive record is not limited to deeds that became famous or remained in human records.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "Quran 18:49",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_034",
+      "conceptId": "beliefs_faculties_accountable",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does accountability for hearing, sight and understanding affect claims we repeat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confidence removes the need for knowledge"
+        },
+        {
+          "id": "b",
+          "text": "We should distinguish what we know from what we merely assume"
+        },
+        {
+          "id": "c",
+          "text": "A popular claim becomes certain by repetition"
+        },
+        {
+          "id": "d",
+          "text": "Religious enthusiasm makes accuracy unnecessary"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse connects responsible use of our faculties with avoiding claims unsupported by knowledge.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_035",
+      "conceptId": "beliefs_no_compulsion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is pressuring someone to say words of belief different from helping them understand faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Force makes the content of every statement true"
+        },
+        {
+          "id": "b",
+          "text": "Sincerity depends only on the loudness of a declaration"
+        },
+        {
+          "id": "c",
+          "text": "Compulsion is not the same as willing conviction"
+        },
+        {
+          "id": "d",
+          "text": "Understanding is unnecessary whenever pressure succeeds"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse rejects compulsion in religion. A forced declaration should not be confused with genuine conviction.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "Quran 2:256",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_036",
+      "conceptId": "beliefs_deeds_and_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does needing Allah's mercy mean that good deeds are pointless?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, so all obedience becomes unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "Yes, effort would contradict mercy"
+        },
+        {
+          "id": "c",
+          "text": "No, because enough deeds make Allah dependent on us"
+        },
+        {
+          "id": "d",
+          "text": "No, believers should do good without treating deeds as a claim of entitlement"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith teaches dependence on mercy, while the verse connects faith and righteous deeds with reward. Humility and effort belong together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2816c",
+          "label": "Sahih Muslim 2816c",
+          "url": "https://sunnah.com/muslim:2816c"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "124",
+          "label": "Quran 4:124",
+          "url": "https://quran.com/4/124"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_037",
+      "conceptId": "beliefs_hope_and_warning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which attitude keeps the two teachings in these verses together?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hope in mercy while taking wrongdoing seriously"
+        },
+        {
+          "id": "b",
+          "text": "Assurance that deliberate wrongdoing never matters"
+        },
+        {
+          "id": "c",
+          "text": "Certainty that no sinner can be forgiven"
+        },
+        {
+          "id": "d",
+          "text": "Ignoring mercy to make every warning harsher"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses support hope without carelessness and warning without denying Allah's mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "49-50",
+          "label": "Quran 15:49-50",
+          "url": "https://quran.com/15/49-50"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_038",
+      "conceptId": "beliefs_rights_and_hereafter",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why do unrelated good deeds not make another person's unresolved rights unimportant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A public good deed cancels every private debt automatically"
+        },
+        {
+          "id": "b",
+          "text": "The hadith describes accountability for wrongs against people"
+        },
+        {
+          "id": "c",
+          "text": "Only wrongs involving money can matter"
+        },
+        {
+          "id": "d",
+          "text": "The victim's rights depend on the wrongdoer's popularity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report warns that a person's good deeds can be affected by unresolved oppression. Doing good does not justify disregarding someone's rights.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_039",
+      "conceptId": "beliefs_life_as_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is counting impressive-looking activities not a complete measure of the test of life?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only activities noticed by others have value"
+        },
+        {
+          "id": "b",
+          "text": "Quality and responsibility never matter"
+        },
+        {
+          "id": "c",
+          "text": "The verse concerns who is best in deeds, not outward quantity alone"
+        },
+        {
+          "id": "d",
+          "text": "The person with the longest list must be best"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse directs attention to excellence in deeds rather than a competition in visible totals.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_040",
+      "conceptId": "beliefs_satan_and_choice",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does blaming Satan not settle responsibility for deliberate wrongdoing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Satan accepts all consequences on the person's behalf"
+        },
+        {
+          "id": "b",
+          "text": "Every temptation makes the resulting act compulsory"
+        },
+        {
+          "id": "c",
+          "text": "Satan's false promise changes a wrong into a right"
+        },
+        {
+          "id": "d",
+          "text": "Temptation does not erase the person's response and choice"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "In the verse, Satan admits calling people while they responded. He cannot rescue them from the consequences.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "22",
+          "label": "Quran 14:22",
+          "url": "https://quran.com/14/22"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_041",
+      "conceptId": "beliefs_worship_and_need",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A speaker says Allah would become weaker if people stopped worshipping Him. Which response fits the verses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah does not depend on people's worship for His power"
+        },
+        {
+          "id": "b",
+          "text": "Only the worship of certain nations sustains His power"
+        },
+        {
+          "id": "c",
+          "text": "His power rises with the number of worshippers"
+        },
+        {
+          "id": "d",
+          "text": "He needs worship only during difficult times"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah's self-sufficiency means His power is not supplied by human worship. People remain dependent on Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        },
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "57",
+          "label": "Quran 51:57",
+          "url": "https://quran.com/51/57"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_042",
+      "conceptId": "beliefs_provider_and_means",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone refuses reasonable work because Allah is the Provider. Which response best connects the teachings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume earning always conflicts with reliance"
+        },
+        {
+          "id": "b",
+          "text": "Seek provision through appropriate means while relying on Allah"
+        },
+        {
+          "id": "c",
+          "text": "Treat only money received without effort as provision"
+        },
+        {
+          "id": "d",
+          "text": "Believe successful work removes all dependence on Allah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Seeking a living is compatible with recognizing Allah as Provider; using means does not make them independent of Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "58",
+          "label": "Quran 51:58",
+          "url": "https://quran.com/51/58"
+        },
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "15",
+          "label": "Quran 67:15",
+          "url": "https://quran.com/67/15"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_043",
+      "conceptId": "beliefs_justice_and_grace",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner thinks multiplying a good deed's reward must conflict with justice. What explains the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every extra reward requires injustice to someone else"
+        },
+        {
+          "id": "b",
+          "text": "Justice means Allah cannot grant any favor"
+        },
+        {
+          "id": "c",
+          "text": "Allah can be generous without wronging anyone"
+        },
+        {
+          "id": "d",
+          "text": "Only identical outcomes for every person count as justice"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse affirms both that Allah does no injustice and that He multiplies good deeds.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "Quran 4:40",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_044",
+      "conceptId": "beliefs_revealed_unseen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate says a prophecy means the messenger independently knew every hidden matter. What needs correcting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One revealed event makes all unseen matters equally known"
+        },
+        {
+          "id": "b",
+          "text": "Revelation must come from the messenger's own power"
+        },
+        {
+          "id": "c",
+          "text": "Every accurate statement about the future is self-generated"
+        },
+        {
+          "id": "d",
+          "text": "A revealed matter does not establish independent, unlimited knowledge"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verses distinguish Allah's knowledge from knowledge He discloses to a messenger He chooses.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "Quran 72:26-27",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_045",
+      "conceptId": "beliefs_jinn_moral_variety",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A discussion claims every jinn is necessarily evil. Which correction follows the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Quran describes righteous jinn as well as others"
+        },
+        {
+          "id": "b",
+          "text": "Jinn and angels are interchangeable names"
+        },
+        {
+          "id": "c",
+          "text": "All jinn share exactly one moral condition"
+        },
+        {
+          "id": "d",
+          "text": "No jinn can ever be described as righteous"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Surah al-Jinn reports moral differences among them. Their being unseen does not justify ignoring what revelation says.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "11",
+          "label": "Quran 72:11",
+          "url": "https://quran.com/72/11"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_046",
+      "conceptId": "beliefs_messengers_chosen",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A group says its vote can turn a respected teacher into a messenger of Allah. What principle applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enough votes create revelation"
+        },
+        {
+          "id": "b",
+          "text": "People cannot confer Allah's selection by voting"
+        },
+        {
+          "id": "c",
+          "text": "Respect from students is itself messengership"
+        },
+        {
+          "id": "d",
+          "text": "Teaching ability automatically carries the same status"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse assigns the selection of messengers to Allah, not to a community's decision.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "75",
+          "label": "Quran 22:75",
+          "url": "https://quran.com/22/75"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_047",
+      "conceptId": "beliefs_messengers_rank",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend says belief in all messengers requires denying that Allah favored some. What is the correct distinction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only equally ranked people can be true messengers"
+        },
+        {
+          "id": "b",
+          "text": "Accepting one messenger requires rejecting the others"
+        },
+        {
+          "id": "c",
+          "text": "All are accepted as true, while Allah grants differences in rank"
+        },
+        {
+          "id": "d",
+          "text": "Differences in rank are decided by our preferences"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Belief in all messengers and Allah's distinctions among them are both taught in the Quran.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "253",
+          "label": "Quran 2:253",
+          "url": "https://quran.com/2/253"
+        },
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_048",
+      "conceptId": "beliefs_shared_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone says different prescribed laws prove the prophets could not share a common faith. Which answer fits the passages?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every difference in law means a different Creator"
+        },
+        {
+          "id": "b",
+          "text": "No prophet received guidance for practice"
+        },
+        {
+          "id": "c",
+          "text": "A common faith means every historical rule remains identical"
+        },
+        {
+          "id": "d",
+          "text": "Shared foundations do not require identical detailed laws"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches continuity in the revealed faith alongside differences in prescribed law and way.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "13",
+          "label": "Quran 42:13",
+          "url": "https://quran.com/42/13"
+        },
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "48",
+          "label": "Quran 5:48",
+          "url": "https://quran.com/5/48"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_049",
+      "conceptId": "beliefs_universal_message",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An app description says Islam's message addresses only people born into an Arab family. What should it say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The message addresses humanity, beyond ethnic origin"
+        },
+        {
+          "id": "b",
+          "text": "It addresses only native Arabic speakers"
+        },
+        {
+          "id": "c",
+          "text": "It addresses only people descended from the Prophet's tribe"
+        },
+        {
+          "id": "d",
+          "text": "Ethnic ancestry decides whether its guidance is relevant"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The mission described in the verse is directed to humanity rather than a single ancestry group.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 34,
+          "ayahs": "28",
+          "label": "Quran 34:28",
+          "url": "https://quran.com/34/28"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_050",
+      "conceptId": "beliefs_intercession_permission",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone sells a promise of intercession that supposedly overrides Allah's decision. Which belief rules out the claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A high payment creates authority above Allah's"
+        },
+        {
+          "id": "b",
+          "text": "Intercession depends on Allah's permission"
+        },
+        {
+          "id": "c",
+          "text": "An intercessor is independent of the Creator"
+        },
+        {
+          "id": "d",
+          "text": "A confident promise removes the need for Allah's permission"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ayat al-Kursi does not allow an independent power that can compel or overrule Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_051",
+      "conceptId": "beliefs_resurrection_precision",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A video claims a body must stay intact for Allah to resurrect it. Which response reflects the passage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Human preservation is what makes resurrection possible"
+        },
+        {
+          "id": "b",
+          "text": "Only bodies with every bone present can be raised"
+        },
+        {
+          "id": "c",
+          "text": "Allah's power to restore is not limited by decay"
+        },
+        {
+          "id": "d",
+          "text": "Loss of a body part defeats Allah's power"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The passage answers doubt about reassembling bones by affirming Allah's ability to restore even the fingertips.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 75,
+          "ayahs": "3-4",
+          "label": "Quran 75:3-4",
+          "url": "https://quran.com/75/3-4"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_052",
+      "conceptId": "beliefs_barzakh",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone plans to ignore good deeds now and return after death to do them. What should they reconsider?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Everyone can request an extra earthly lifetime"
+        },
+        {
+          "id": "b",
+          "text": "Good deeds become possible only after death"
+        },
+        {
+          "id": "c",
+          "text": "The barrier means earthly duties never mattered"
+        },
+        {
+          "id": "d",
+          "text": "The passage gives no such second earthly opportunity"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The request to return and do good is refused. The passage encourages taking the present opportunity seriously.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "99-100",
+          "label": "Quran 23:99-100",
+          "url": "https://quran.com/23/99-100"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_053",
+      "conceptId": "beliefs_record_completeness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person thinks deleting the only online record of a deliberate wrong ends all accountability. Which reminder fits the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Human deletion does not erase Allah's record of deeds"
+        },
+        {
+          "id": "b",
+          "text": "Only actions preserved on a device can be recorded"
+        },
+        {
+          "id": "c",
+          "text": "A missing screenshot makes the wrong become right"
+        },
+        {
+          "id": "d",
+          "text": "People control the final record by editing their files"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran's account of the record is not dependent on human storage. Responsibility requires addressing the wrong, not merely hiding evidence.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "Quran 18:49",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_054",
+      "conceptId": "beliefs_faculties_accountable",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A religious claim sounds inspiring, but you do not know whether it is true. Which response fits the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repeat it as certain because it feels uplifting"
+        },
+        {
+          "id": "b",
+          "text": "Check it before presenting it as established knowledge"
+        },
+        {
+          "id": "c",
+          "text": "Treat confidence as a substitute for evidence"
+        },
+        {
+          "id": "d",
+          "text": "Assume popularity removes responsibility for accuracy"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse warns against following what one lacks knowledge of. Religious claims also call for responsible use of what we hear and understand.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_055",
+      "conceptId": "beliefs_no_compulsion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone proposes threats to make a non-Muslim friend declare belief. Which response follows the verse's principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use threats if the words are religiously correct"
+        },
+        {
+          "id": "b",
+          "text": "Count fear alone as sincere conviction"
+        },
+        {
+          "id": "c",
+          "text": "Explain faith without coercing the person's declaration"
+        },
+        {
+          "id": "d",
+          "text": "Assume pressure removes the need for understanding"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse rejects compulsion in religion. Explaining faith differs from forcing a declaration.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "256",
+          "label": "Quran 2:256",
+          "url": "https://quran.com/2/256"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_056",
+      "conceptId": "beliefs_deeds_and_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A regular worshipper says their deeds mean they no longer need Allah's mercy. What should they remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enough visible worship makes mercy unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "The Prophet alone needed mercy"
+        },
+        {
+          "id": "c",
+          "text": "Needing mercy makes every good deed worthless"
+        },
+        {
+          "id": "d",
+          "text": "Continue doing good while remaining dependent on Allah's mercy"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith includes the Prophet in dependence on Allah's mercy. The verse also affirms the value of faith and righteous deeds.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2816c",
+          "label": "Sahih Muslim 2816c",
+          "url": "https://sunnah.com/muslim:2816c"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "124",
+          "label": "Quran 4:124",
+          "url": "https://quran.com/4/124"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_057",
+      "conceptId": "beliefs_hope_and_warning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend uses Allah's mercy as a reason to dismiss deliberate wrongdoing. What reminder preserves the passage's balance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hope in forgiveness should go with taking Allah's warning seriously"
+        },
+        {
+          "id": "b",
+          "text": "Mercy means deliberate wrongdoing is always harmless"
+        },
+        {
+          "id": "c",
+          "text": "Warnings prove forgiveness is impossible"
+        },
+        {
+          "id": "d",
+          "text": "Only fear matters; hope has no place"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The passage places mercy and warning together. It supports turning toward Allah without treating wrongdoing lightly.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "49-50",
+          "label": "Quran 15:49-50",
+          "url": "https://quran.com/15/49-50"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_058",
+      "conceptId": "beliefs_rights_and_hereafter",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You withheld someone's money and want to put things right. What fits the hadith's warning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do an unrelated good deed and keep the money"
+        },
+        {
+          "id": "b",
+          "text": "Settle the person's right and seek pardon appropriately"
+        },
+        {
+          "id": "c",
+          "text": "Wait until public praise makes the matter disappear"
+        },
+        {
+          "id": "d",
+          "text": "Assume religious knowledge cancels what is owed"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith urges resolving wrongs against people before the Last Day. Their rights should not be ignored in the name of other good deeds.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_059",
+      "conceptId": "beliefs_life_as_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A quiz result shows many correct answers. Which response best fits life being a test of deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume the score alone proves acceptance of every deed"
+        },
+        {
+          "id": "b",
+          "text": "Treat knowledge as a substitute for acting responsibly"
+        },
+        {
+          "id": "c",
+          "text": "Use what you know to improve how you live"
+        },
+        {
+          "id": "d",
+          "text": "Use the result to declare yourself better than everyone"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Knowledge can support action, but the verse directs attention to excellence in deeds. A quiz result is not a judgment of a person's standing before Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_beliefs_foundations_060",
+      "conceptId": "beliefs_satan_and_choice",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After knowingly making a harmful choice, someone says Satan bears all the blame. What should they understand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Satan's invitation automatically cancels accountability"
+        },
+        {
+          "id": "b",
+          "text": "The harm becomes lawful if temptation was strong"
+        },
+        {
+          "id": "c",
+          "text": "Satan guarantees rescue from every consequence"
+        },
+        {
+          "id": "d",
+          "text": "Temptation does not remove their responsibility to correct the wrong"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse portrays Satan admitting that he called and people responded. Blaming him does not replace taking responsibility for one's deliberate action.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 14,
+          "ayahs": "22",
+          "label": "Quran 14:22",
+          "url": "https://quran.com/14/22"
+        }
+      ]
+    }
+  ]
+}

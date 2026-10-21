@@ -1,0 +1,2324 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "character_conduct",
+  "title": "Character & Conduct",
+  "description": "General User → Beginner. Familiar teachings, broader basics and short everyday applications about honesty, trust, family, kindness, fairness, privacy and responsible conduct. All questions are Beginner level; scores indicate knowledge of these teachings, not a judgment of faith or personal character.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge required across all question styles. Styles are not difficulty levels. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Modern scenarios illustrate the cited principles. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_beginner_character_conduct_001",
+      "conceptId": "character_truth",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality does Islam encourage in our speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Truthfulness"
+        },
+        {
+          "id": "b",
+          "text": "Dishonesty"
+        },
+        {
+          "id": "c",
+          "text": "Boasting"
+        },
+        {
+          "id": "d",
+          "text": "False accusations"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet taught that truthfulness leads toward righteousness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_002",
+      "conceptId": "character_trust",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does fulfilling an amanah mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treating borrowed property as a gift"
+        },
+        {
+          "id": "b",
+          "text": "Taking care of a trust and giving what is due"
+        },
+        {
+          "id": "c",
+          "text": "Hiding what belongs to someone else"
+        },
+        {
+          "id": "d",
+          "text": "Keeping only promises that bring praise"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An amanah is a trust or responsibility. The Quran commands returning trusts to their rightful owners.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_003",
+      "conceptId": "character_promises",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How should a lawful promise be treated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As words with no responsibility"
+        },
+        {
+          "id": "b",
+          "text": "As binding only when convenient"
+        },
+        {
+          "id": "c",
+          "text": "As a commitment to fulfill"
+        },
+        {
+          "id": "d",
+          "text": "As something to break for amusement"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran emphasizes fulfilling commitments and being accountable for them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "Quran 17:34",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_004",
+      "conceptId": "character_parents",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran command toward parents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mockery when they grow old"
+        },
+        {
+          "id": "b",
+          "text": "Harsh words over small requests"
+        },
+        {
+          "id": "c",
+          "text": "Public humiliation"
+        },
+        {
+          "id": "d",
+          "text": "Kindness and respectful speech"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran joins worship of Allah alone with good treatment of parents.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "Quran 17:23",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_005",
+      "conceptId": "character_neighbors",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How should neighbors be treated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "With kindness"
+        },
+        {
+          "id": "b",
+          "text": "With deliberate disturbance"
+        },
+        {
+          "id": "c",
+          "text": "With contempt"
+        },
+        {
+          "id": "d",
+          "text": "With needless hostility"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran includes both near and more distant neighbors among those deserving good treatment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "Quran 4:36",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_006",
+      "conceptId": "character_guests",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Prophet encourage toward a guest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Humiliation"
+        },
+        {
+          "id": "b",
+          "text": "Hospitality and honor"
+        },
+        {
+          "id": "c",
+          "text": "Mockery"
+        },
+        {
+          "id": "d",
+          "text": "Deliberate neglect"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet linked faith with honoring guests and responsible conduct toward others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_007",
+      "conceptId": "character_mercy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality belongs in our treatment of children?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cruelty"
+        },
+        {
+          "id": "b",
+          "text": "Contempt"
+        },
+        {
+          "id": "c",
+          "text": "Mercy"
+        },
+        {
+          "id": "d",
+          "text": "Indifference to their distress"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet showed affection to children and emphasized mercy.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_008",
+      "conceptId": "character_gentleness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality makes our dealings more beautiful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rudeness"
+        },
+        {
+          "id": "b",
+          "text": "Arrogance"
+        },
+        {
+          "id": "c",
+          "text": "Mockery"
+        },
+        {
+          "id": "d",
+          "text": "Gentleness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet praised gentleness in how we deal with others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_009",
+      "conceptId": "character_greetings",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which greeting does Islam encourage spreading?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salam, the greeting of peace"
+        },
+        {
+          "id": "b",
+          "text": "An insulting nickname"
+        },
+        {
+          "id": "c",
+          "text": "A threat"
+        },
+        {
+          "id": "d",
+          "text": "A boast about wealth"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet encouraged greeting people, including those we do not already know.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "Sahih al-Bukhari 12",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_010",
+      "conceptId": "character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which response to others' faults is praised in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enjoying revenge"
+        },
+        {
+          "id": "b",
+          "text": "Forgiveness"
+        },
+        {
+          "id": "c",
+          "text": "Spreading humiliation"
+        },
+        {
+          "id": "d",
+          "text": "Keeping every quarrel alive"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran praises restraining anger and pardoning people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "Quran 3:134",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_011",
+      "conceptId": "character_patience",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does sabr commonly mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving up every responsibility"
+        },
+        {
+          "id": "b",
+          "text": "Responding to every delay with abuse"
+        },
+        {
+          "id": "c",
+          "text": "Patience and perseverance"
+        },
+        {
+          "id": "d",
+          "text": "Pretending problems never exist"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sabr includes remaining steadfast in difficulty; the Quran encourages seeking help through patience and prayer.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "153",
+          "label": "Quran 2:153",
+          "url": "https://quran.com/2/153"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_012",
+      "conceptId": "character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which attitude is the opposite of looking down on people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arrogance"
+        },
+        {
+          "id": "b",
+          "text": "Boastfulness"
+        },
+        {
+          "id": "c",
+          "text": "Contempt"
+        },
+        {
+          "id": "d",
+          "text": "Humility"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran warns against arrogant and boastful behavior toward others.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "Quran 31:18",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_013",
+      "conceptId": "character_mockery",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran say about offensive nicknames?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They should be avoided"
+        },
+        {
+          "id": "b",
+          "text": "They are encouraged if popular"
+        },
+        {
+          "id": "c",
+          "text": "They prove friendship in every case"
+        },
+        {
+          "id": "d",
+          "text": "They are acceptable whenever others laugh"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran forbids ridicule and calling others by offensive names.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_014",
+      "conceptId": "character_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is backbiting in the Prophet's explanation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Offering a sincere greeting"
+        },
+        {
+          "id": "b",
+          "text": "Mentioning an absent person's faults in a way they dislike"
+        },
+        {
+          "id": "c",
+          "text": "Praising someone honestly"
+        },
+        {
+          "id": "d",
+          "text": "Asking for directions"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith explains backbiting and distinguishes it from false accusations. Legitimate reporting of harm is a separate matter.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "Sahih Muslim 2589",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_015",
+      "conceptId": "character_privacy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What should you seek before entering someone else's home?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A chance to look through their belongings"
+        },
+        {
+          "id": "b",
+          "text": "Proof of their income"
+        },
+        {
+          "id": "c",
+          "text": "Permission"
+        },
+        {
+          "id": "d",
+          "text": "A reason to surprise them without warning"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran teaches seeking permission and greeting the household before entering.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27",
+          "label": "Quran 24:27",
+          "url": "https://quran.com/24/27"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_016",
+      "conceptId": "character_justice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality must be maintained even toward someone we dislike?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Favoritism"
+        },
+        {
+          "id": "b",
+          "text": "Cruelty"
+        },
+        {
+          "id": "c",
+          "text": "Dishonesty"
+        },
+        {
+          "id": "d",
+          "text": "Justice"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran warns that dislike must not lead us away from justice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_017",
+      "conceptId": "character_family_ties",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does maintaining ties of kinship involve?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keeping good relations with relatives"
+        },
+        {
+          "id": "b",
+          "text": "Speaking only to wealthy relatives"
+        },
+        {
+          "id": "c",
+          "text": "Valuing relatives only for gifts"
+        },
+        {
+          "id": "d",
+          "text": "Cutting contact over every small annoyance"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet encouraged maintaining family relationships.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5986",
+          "label": "Sahih al-Bukhari 5986",
+          "url": "https://sunnah.com/bukhari:5986"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_018",
+      "conceptId": "character_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about food and drink?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waste them to show wealth"
+        },
+        {
+          "id": "b",
+          "text": "Enjoy them without wastefulness"
+        },
+        {
+          "id": "c",
+          "text": "Treat waste as a sign of success"
+        },
+        {
+          "id": "d",
+          "text": "Always take more than you need"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran permits eating and drinking while warning against excess.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "Quran 7:31",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_019",
+      "conceptId": "character_cooperation",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In what should people cooperate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sin and aggression"
+        },
+        {
+          "id": "b",
+          "text": "Cheating and deceit"
+        },
+        {
+          "id": "c",
+          "text": "Goodness and mindfulness of Allah"
+        },
+        {
+          "id": "d",
+          "text": "Bullying and humiliation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran encourages cooperation in righteousness and forbids cooperation in wrongdoing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "Quran 5:2",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_020",
+      "conceptId": "character_good_character",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality did the Prophet praise among the best people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A famous surname"
+        },
+        {
+          "id": "b",
+          "text": "Expensive possessions"
+        },
+        {
+          "id": "c",
+          "text": "Physical appearance alone"
+        },
+        {
+          "id": "d",
+          "text": "Good character"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet praised excellence in character and manners.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6035",
+          "label": "Sahih al-Bukhari 6035",
+          "url": "https://sunnah.com/bukhari:6035"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_021",
+      "conceptId": "character_truth",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does truthfulness matter when admitting a mistake is embarrassing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, honesty still matters"
+        },
+        {
+          "id": "b",
+          "text": "No, embarrassment always permits lying"
+        },
+        {
+          "id": "c",
+          "text": "Only if someone has recorded the mistake"
+        },
+        {
+          "id": "d",
+          "text": "Only when no friend is involved"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The call to truthfulness applies beyond easy or comfortable situations.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_022",
+      "conceptId": "character_trust",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does borrowing something make you its owner?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, if you keep it long enough"
+        },
+        {
+          "id": "b",
+          "text": "No, its owner's rights remain"
+        },
+        {
+          "id": "c",
+          "text": "Yes, if you like it more"
+        },
+        {
+          "id": "d",
+          "text": "Yes, if the owner forgets to ask"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A borrowed item remains someone else's property and should be handled as a trust.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_023",
+      "conceptId": "character_promises",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should commitments not be made carelessly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because only written words matter"
+        },
+        {
+          "id": "b",
+          "text": "Because promises are merely decoration"
+        },
+        {
+          "id": "c",
+          "text": "Because people are accountable for their commitments"
+        },
+        {
+          "id": "d",
+          "text": "Because breaking them always improves trust"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran treats fulfilling commitments as a responsibility.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "Quran 17:34",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_024",
+      "conceptId": "character_parents",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does respect for parents apply when they become elderly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, only young parents deserve respect"
+        },
+        {
+          "id": "b",
+          "text": "Only if they are wealthy"
+        },
+        {
+          "id": "c",
+          "text": "Only when visitors are watching"
+        },
+        {
+          "id": "d",
+          "text": "Yes, their age calls for care and respectful speech"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran specifically emphasizes kindness when parents reach old age.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "Quran 17:23",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_025",
+      "conceptId": "character_good_speech",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is saying every thought aloud always the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, speech should be good and responsible"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every thought must be announced"
+        },
+        {
+          "id": "c",
+          "text": "Yes, silence is always forbidden"
+        },
+        {
+          "id": "d",
+          "text": "Only the loudest words count as good"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet taught speaking what is good or remaining silent.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_026",
+      "conceptId": "character_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a comment become harmless gossip simply because it is true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, truth always removes any problem"
+        },
+        {
+          "id": "b",
+          "text": "No, a true hurtful comment may still be backbiting"
+        },
+        {
+          "id": "c",
+          "text": "Yes, if it is posted online"
+        },
+        {
+          "id": "d",
+          "text": "Yes, if enough people repeat it"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith explains that an actual fault can still be the subject of backbiting; inventing it is slander.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "Sahih Muslim 2589",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_027",
+      "conceptId": "character_verification",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should harmful news be checked before it is spread?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To make it more dramatic"
+        },
+        {
+          "id": "b",
+          "text": "To gather more reactions first"
+        },
+        {
+          "id": "c",
+          "text": "To avoid harming people through ignorance"
+        },
+        {
+          "id": "d",
+          "text": "To make every rumor look certain"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran teaches verification so that people are not harmed through careless reliance on reports.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_028",
+      "conceptId": "character_suspicion",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How should an unsupported suspicion about someone be treated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat it as proof immediately"
+        },
+        {
+          "id": "b",
+          "text": "Publish it to pressure them"
+        },
+        {
+          "id": "c",
+          "text": "Add details to make it convincing"
+        },
+        {
+          "id": "d",
+          "text": "Do not present it as an established fact"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran warns against sinful suspicion. A guess is not established evidence.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_029",
+      "conceptId": "character_fairness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Should friendship change what is true or fair in a dispute?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, fairness must be maintained"
+        },
+        {
+          "id": "b",
+          "text": "Yes, a friend must always be declared right"
+        },
+        {
+          "id": "c",
+          "text": "Yes, facts matter only for strangers"
+        },
+        {
+          "id": "d",
+          "text": "Yes, fairness is unnecessary within a group"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Justice should not depend on whether we like the people involved.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_030",
+      "conceptId": "character_arrogance",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What did the Prophet identify as arrogance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simply wearing clean, nice clothes"
+        },
+        {
+          "id": "b",
+          "text": "Rejecting truth and looking down on people"
+        },
+        {
+          "id": "c",
+          "text": "Asking politely for help"
+        },
+        {
+          "id": "d",
+          "text": "Accepting a correction"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith distinguishes arrogance from enjoying a neat appearance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "Sahih Muslim 91a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_031",
+      "conceptId": "character_human_dignity",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran identify as the basis of honor before Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Race or tribe alone"
+        },
+        {
+          "id": "b",
+          "text": "Wealth alone"
+        },
+        {
+          "id": "c",
+          "text": "Righteousness and mindfulness of Allah"
+        },
+        {
+          "id": "d",
+          "text": "Popularity alone"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "People and tribes are not grounds for superiority; the verse points to taqwa.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "Quran 49:13",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_032",
+      "conceptId": "character_anger",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does controlling anger involve?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Denying that feelings ever occur"
+        },
+        {
+          "id": "b",
+          "text": "Making others fear your temper"
+        },
+        {
+          "id": "c",
+          "text": "Answering every insult with an insult"
+        },
+        {
+          "id": "d",
+          "text": "Restraining harmful reactions"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran praises those who restrain anger; feeling upset does not require acting unjustly.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "Quran 3:134",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_033",
+      "conceptId": "character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which attitude best reflects forgiveness for a minor personal offense?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choosing pardon instead of revenge"
+        },
+        {
+          "id": "b",
+          "text": "Seeking chances to humiliate the person"
+        },
+        {
+          "id": "c",
+          "text": "Repeating the offense publicly forever"
+        },
+        {
+          "id": "d",
+          "text": "Wishing to make every disagreement worse"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Forgiveness is praised. It does not require ignoring danger or abandoning protection from harm.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "Quran 3:134",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_034",
+      "conceptId": "character_voice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What guidance does Luqman's advice give about the voice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shout to prove you are right"
+        },
+        {
+          "id": "b",
+          "text": "Avoid unnecessarily harsh, loud speech"
+        },
+        {
+          "id": "c",
+          "text": "Never speak audibly in any situation"
+        },
+        {
+          "id": "d",
+          "text": "Use volume instead of good reasoning"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The advice encourages moderation and lowering the voice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "Quran 31:19",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_035",
+      "conceptId": "character_permission",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What should a visitor do if asked to return another time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Force entry"
+        },
+        {
+          "id": "b",
+          "text": "Argue until allowed inside"
+        },
+        {
+          "id": "c",
+          "text": "Leave respectfully"
+        },
+        {
+          "id": "d",
+          "text": "Peer through the windows"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran instructs visitors to turn back when asked to do so.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "28",
+          "label": "Quran 24:28",
+          "url": "https://quran.com/24/28"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_036",
+      "conceptId": "character_trade",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What conduct brings blessing to a sale according to hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hiding known defects"
+        },
+        {
+          "id": "b",
+          "text": "Inventing product claims"
+        },
+        {
+          "id": "c",
+          "text": "Misleading the buyer"
+        },
+        {
+          "id": "d",
+          "text": "Truthfulness and clear disclosure"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet praised honesty and openness between buyer and seller.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "Sahih al-Bukhari 2079",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_037",
+      "conceptId": "character_help_wrongdoer",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How can you help a friend who is wronging someone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help stop the wrongdoing"
+        },
+        {
+          "id": "b",
+          "text": "Defend every action regardless of facts"
+        },
+        {
+          "id": "c",
+          "text": "Help hide the harm so it continues"
+        },
+        {
+          "id": "d",
+          "text": "Encourage more aggression"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet explained that helping an oppressor means preventing their oppression.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "Sahih al-Bukhari 2444",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_038",
+      "conceptId": "character_helping",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which attitude does the hadith about helping others encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enjoying their distress"
+        },
+        {
+          "id": "b",
+          "text": "Easing another person's difficulty"
+        },
+        {
+          "id": "c",
+          "text": "Refusing all help to strangers"
+        },
+        {
+          "id": "d",
+          "text": "Helping only for applause"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith encourages practical support and relief of hardship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_039",
+      "conceptId": "character_harm",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does good conduct include avoiding harmful words as well as harmful actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, words can never hurt"
+        },
+        {
+          "id": "b",
+          "text": "Only physical strength matters"
+        },
+        {
+          "id": "c",
+          "text": "Yes, both speech and actions matter"
+        },
+        {
+          "id": "d",
+          "text": "Only public actions matter"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet emphasized protecting others from harm through the tongue and hand.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "Sahih al-Bukhari 10",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_040",
+      "conceptId": "character_kindness_scope",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is kindness limited only to one's closest family?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, no one else matters"
+        },
+        {
+          "id": "b",
+          "text": "Yes, strangers never deserve consideration"
+        },
+        {
+          "id": "c",
+          "text": "Only wealthy acquaintances should be added"
+        },
+        {
+          "id": "d",
+          "text": "No, neighbors, people in need and others also have rights"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran names several groups deserving good treatment beyond one's parents and relatives.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "Quran 4:36",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_041",
+      "conceptId": "character_truth",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You accidentally damaged something at work. Which response follows truthfulness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Explain honestly and help put it right"
+        },
+        {
+          "id": "b",
+          "text": "Blame someone who is absent"
+        },
+        {
+          "id": "c",
+          "text": "Invent an excuse to avoid all responsibility"
+        },
+        {
+          "id": "d",
+          "text": "Deny it despite knowing what happened"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Admitting a mistake and helping correct it puts truthfulness into practice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_042",
+      "conceptId": "character_trust",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend lends you a book. What should you do with it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Write in it without permission"
+        },
+        {
+          "id": "b",
+          "text": "Care for it and return it as agreed"
+        },
+        {
+          "id": "c",
+          "text": "Give it away as your own"
+        },
+        {
+          "id": "d",
+          "text": "Hide it when your friend asks"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Returning borrowed property respects the trust and its owner's rights.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_043",
+      "conceptId": "character_promises",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You agreed to help with a lawful task at a set time. What should you aim to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore it because it was spoken, not written"
+        },
+        {
+          "id": "b",
+          "text": "Skip it just to see if anyone notices"
+        },
+        {
+          "id": "c",
+          "text": "Keep the agreement"
+        },
+        {
+          "id": "d",
+          "text": "Deny agreeing because something more fun appeared"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Treating a commitment seriously reflects the Quran's teaching about promises.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "Quran 17:34",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_044",
+      "conceptId": "character_parents",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An elderly parent asks you to repeat something. Which reply reflects good manners?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shout that they should listen better"
+        },
+        {
+          "id": "b",
+          "text": "Mock their hearing"
+        },
+        {
+          "id": "c",
+          "text": "Insult them in front of others"
+        },
+        {
+          "id": "d",
+          "text": "Repeat it patiently and respectfully"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Respectful speech is particularly important when caring for aging parents.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "Quran 17:23",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_045",
+      "conceptId": "character_neighbors",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn that your unnecessary late-night noise disturbs a neighbor. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduce the disturbance and be considerate"
+        },
+        {
+          "id": "b",
+          "text": "Increase the noise to annoy them"
+        },
+        {
+          "id": "c",
+          "text": "Mock their need to sleep"
+        },
+        {
+          "id": "d",
+          "text": "Tell others to disturb them too"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Being considerate about avoidable disturbance applies kindness toward neighbors.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "Quran 4:36",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_046",
+      "conceptId": "character_guests",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A guest arrives and you have only simple refreshments. Which response reflects hospitality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Humiliate them because the food is simple"
+        },
+        {
+          "id": "b",
+          "text": "Welcome them warmly with what you can reasonably offer"
+        },
+        {
+          "id": "c",
+          "text": "Pretend expensive food is the only form of kindness"
+        },
+        {
+          "id": "d",
+          "text": "Treat them as unworthy of a greeting"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Hospitality includes a respectful welcome; kindness need not depend on luxury.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_047",
+      "conceptId": "character_mockery",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A group uses a nickname that upsets a classmate. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep using it because others laugh"
+        },
+        {
+          "id": "b",
+          "text": "Invent an even harsher nickname"
+        },
+        {
+          "id": "c",
+          "text": "Use the classmate's preferred respectful name"
+        },
+        {
+          "id": "d",
+          "text": "Post the nickname publicly"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Avoiding offensive names protects dignity and follows the Quran's instruction.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_048",
+      "conceptId": "character_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends are sharing an absent person's faults just for entertainment. What is the best response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contribute another embarrassing fault"
+        },
+        {
+          "id": "b",
+          "text": "Record the discussion to spread it"
+        },
+        {
+          "id": "c",
+          "text": "Say it is always acceptable if true"
+        },
+        {
+          "id": "d",
+          "text": "Avoid joining in and redirect the conversation"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran and hadith warn against backbiting. Reporting harm to obtain help is a different matter.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "Sahih Muslim 2589",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_049",
+      "conceptId": "character_verification",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You receive an unverified accusation in a message. What should you do before repeating it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check its reliability instead of forwarding it as fact"
+        },
+        {
+          "id": "b",
+          "text": "Forward it quickly to every group"
+        },
+        {
+          "id": "c",
+          "text": "Add a dramatic detail"
+        },
+        {
+          "id": "d",
+          "text": "Assume a screenshot proves everything"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Verification helps prevent unfair harm from rumors and misleading reports.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_050",
+      "conceptId": "character_privacy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone leaves their private phone messages open beside you. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read everything out of curiosity"
+        },
+        {
+          "id": "b",
+          "text": "Respect their privacy and avoid snooping"
+        },
+        {
+          "id": "c",
+          "text": "Copy the messages for entertainment"
+        },
+        {
+          "id": "d",
+          "text": "Share screenshots without permission"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Avoiding spying is part of respecting another person's privacy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_051",
+      "conceptId": "character_justice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone you dislike is wrongly blamed. Which response reflects justice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Support the false blame because you dislike them"
+        },
+        {
+          "id": "b",
+          "text": "Invent more evidence against them"
+        },
+        {
+          "id": "c",
+          "text": "State the facts fairly"
+        },
+        {
+          "id": "d",
+          "text": "Ignore known facts to win an argument"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Justice applies even when being fair benefits someone we do not like.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_052",
+      "conceptId": "character_anger",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are angry during a disagreement. Which choice reflects self-control?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Threaten the other person"
+        },
+        {
+          "id": "b",
+          "text": "Break their belongings"
+        },
+        {
+          "id": "c",
+          "text": "Bring their family into the argument"
+        },
+        {
+          "id": "d",
+          "text": "Pause and respond without insults or harm"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Restraining harmful reactions is a practical expression of controlling anger.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "Quran 3:134",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_053",
+      "conceptId": "character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend apologizes for a minor unintentional offense. Which response best reflects pardon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the apology without seeking revenge"
+        },
+        {
+          "id": "b",
+          "text": "Keep planning ways to embarrass them"
+        },
+        {
+          "id": "c",
+          "text": "Demand that everyone stop speaking to them"
+        },
+        {
+          "id": "d",
+          "text": "Repeat the incident to humiliate them"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Pardoning a minor personal offense puts the Quran's praise of forgiveness into practice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "Quran 3:134",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_054",
+      "conceptId": "character_gentleness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A new learner struggles with a basic task. Which response shows gentleness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Call them foolish"
+        },
+        {
+          "id": "b",
+          "text": "Explain patiently and encourage another try"
+        },
+        {
+          "id": "c",
+          "text": "Laugh at them in front of everyone"
+        },
+        {
+          "id": "d",
+          "text": "Make the task harder to punish them"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Gentleness helps us correct mistakes without needless humiliation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_055",
+      "conceptId": "character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone younger points out a real mistake you made. What shows humility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reject it only because of their age"
+        },
+        {
+          "id": "b",
+          "text": "Mock them to protect your pride"
+        },
+        {
+          "id": "c",
+          "text": "Accept the correction and learn"
+        },
+        {
+          "id": "d",
+          "text": "Insist truth depends on seniority"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Accepting truth instead of dismissing the person is the opposite of arrogance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "Sahih Muslim 91a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_056",
+      "conceptId": "character_family_ties",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have not checked on a relative for a while and can safely contact them. Which action maintains family ties?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contact them only to boast"
+        },
+        {
+          "id": "b",
+          "text": "Ignore them because they are not wealthy"
+        },
+        {
+          "id": "c",
+          "text": "Wait until you need money"
+        },
+        {
+          "id": "d",
+          "text": "Ask how they are and show sincere care"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Thoughtful contact is one everyday way to maintain good family relationships.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5986",
+          "label": "Sahih al-Bukhari 5986",
+          "url": "https://sunnah.com/bukhari:5986"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_057",
+      "conceptId": "character_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "At a meal, you can choose how much food to take. Which choice avoids waste?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take a suitable portion and get more if needed"
+        },
+        {
+          "id": "b",
+          "text": "Pile up food only to throw it away"
+        },
+        {
+          "id": "c",
+          "text": "Waste food to impress guests"
+        },
+        {
+          "id": "d",
+          "text": "Treat leftovers as a reason to waste more"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Taking a reasonable amount applies the instruction to avoid wastefulness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "Quran 7:31",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_058",
+      "conceptId": "character_permission",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You visit a home and are asked to come back later. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enter anyway because you know the family"
+        },
+        {
+          "id": "b",
+          "text": "Respect the request and leave"
+        },
+        {
+          "id": "c",
+          "text": "Keep knocking to force a welcome"
+        },
+        {
+          "id": "d",
+          "text": "Look through the windows"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Seeking permission includes accepting when entry is not convenient.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27-28",
+          "label": "Quran 24:27-28",
+          "url": "https://quran.com/24/27-28"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_059",
+      "conceptId": "character_trade",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are selling a used phone with a known fault. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hide it until payment is complete"
+        },
+        {
+          "id": "b",
+          "text": "Claim the phone has no faults"
+        },
+        {
+          "id": "c",
+          "text": "Clearly tell the buyer about the fault"
+        },
+        {
+          "id": "d",
+          "text": "Use misleading photos to conceal it"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Honest disclosure respects the buyer and follows Prophetic guidance on trade.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "Sahih al-Bukhari 2079",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_060",
+      "conceptId": "character_cooperation",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend asks you to help bully someone. What is the right response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Join in to prove loyalty"
+        },
+        {
+          "id": "b",
+          "text": "Record it for laughs"
+        },
+        {
+          "id": "c",
+          "text": "Help plan a worse attack"
+        },
+        {
+          "id": "d",
+          "text": "Refuse and help stop the harm safely"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Good friendship supports what is right; it does not help a person harm others.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "Quran 5:2",
+          "url": "https://quran.com/5/2"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "Sahih al-Bukhari 2444",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    }
+  ]
+}

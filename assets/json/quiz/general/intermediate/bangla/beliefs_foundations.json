@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "mid",
+  "categoryId": "beliefs_foundations",
+  "title": "ঈমান ও ইসলামের ভিত্তি",
+  "description": "সাধারণ ব্যবহারকারী → মধ্যম স্তর। প্রাথমিক স্তরের ঈমানবিষয়ক জ্ঞানের ওপর ভিত্তি করে পরিচিত তথ্য, আরও কিছু মৌলিক জ্ঞান ও ছোট দৈনন্দিন প্রয়োগ। মূল অর্থ ও সহজ সম্পর্ক বোঝার ওপর গুরুত্ব দেওয়া হয়েছে; উন্নত আকিদাগত বিতর্ক বা সূত্রের নম্বর মুখস্থের প্রশ্ন নেই। নম্বর জ্ঞান বোঝায়, ঈমানের বিচার নয়।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "মধ্যম স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও উপলব্ধির মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। প্রাথমিকের চেয়ে কিছু বেশি বোঝাপড়া ও সহজ সম্পর্ক ধরার প্রয়োজন, বিশেষজ্ঞ পর্যায়ের পড়াশোনা নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিসের মূল পাঠ মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যাগুলো শিক্ষামূলকভাবে নিজস্ব ভাষায় লেখা; এগুলো হুবহু অনুবাদ নয়। আধুনিক পরিস্থিতিগুলো সূত্রে উল্লিখিত মূলনীতির উদাহরণ। এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_mid_beliefs_001",
+      "conceptId": "beliefs_tawhid",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "একজন মুসলিমের ইবাদতে তাওহিদের অর্থ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু আল্লাহর জন্য ইবাদত করা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর পাশাপাশি অন্য সত্তার ইবাদত করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি শক্তিশালী সত্তাকে ইবাদতের মাধ্যমে সম্মান করা"
+        },
+        {
+          "id": "d",
+          "text": "সব উপাস্যকে সমান মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তাওহিদের মধ্যে শুধু আল্লাহর ইবাদত করা অন্তর্ভুক্ত। তাঁর রাসুলদের মূল আহ্বান ছিল এটিই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "কুরআন ১৬:৩৬",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_002",
+      "conceptId": "beliefs_worship_purpose",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনে মানুষ ও জিন সৃষ্টির কোন উদ্দেশ্য বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর ওপর নির্ভরতা থেকে মুক্ত হওয়া"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর ইবাদত করা"
+        },
+        {
+          "id": "c",
+          "text": "সম্পদ অর্জনকে জীবনের একমাত্র লক্ষ্য করা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি দায়িত্ব এড়িয়ে চলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে আল্লাহর ইবাদতকে মানুষ ও জিন সৃষ্টির উদ্দেশ্য হিসেবে উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "56",
+          "label": "কুরআন ৫১:৫৬",
+          "url": "https://quran.com/51/56"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_003",
+      "conceptId": "beliefs_ihsan",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন বর্ণনাটি ইবাদতে ইহসানের অর্থ প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু মানুষ দেখলে যত্ন নিয়ে ইবাদত করা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু প্রকাশ্য চেহারা দিয়ে ইবাদত বিচার করা"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ দেখছেন—এই সচেতনতা নিয়ে ইবাদত করা"
+        },
+        {
+          "id": "d",
+          "text": "ইবাদত শুধু মসজিদে গুরুত্বপূর্ণ মনে করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জিবরিল (আ.)-এর হাদিসে ইহসান হলো আল্লাহর দৃষ্টি সম্পর্কে গভীর সচেতনতা নিয়ে ইবাদত করা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_004",
+      "conceptId": "beliefs_shirk",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইবাদতের ক্ষেত্রে শিরক কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর সৃষ্টি সম্পর্কে শেখা"
+        },
+        {
+          "id": "b",
+          "text": "কারও কাছে সাধারণ কাজের সাহায্য চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "মা-বাবাকে সম্মান করা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর সঙ্গে শরিক করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে আল্লাহর সঙ্গে শরিক করাকে গুরুতর গুনাহ বলা হয়েছে। মানুষের সাধারণ সাহায্য চাওয়া নিজে ইবাদত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "48",
+          "label": "কুরআন ৪:৪৮",
+          "url": "https://quran.com/4/48"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_005",
+      "conceptId": "beliefs_allah_unique",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ ও তাঁর সৃষ্টির সম্পর্ক নিয়ে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোনো কিছুই তাঁর তুলনীয় নয়"
+        },
+        {
+          "id": "b",
+          "text": "তিনি শুধু সবচেয়ে শক্তিশালী সৃষ্ট সত্তা"
+        },
+        {
+          "id": "c",
+          "text": "জ্ঞানের জন্য তিনি সৃষ্টির ওপর নির্ভরশীল"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর সত্তাকে সৃষ্ট জীবের মতো মাপা যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ তাঁর সৃষ্টির মতো নন। আয়াতটিতে তাঁর শোনা ও দেখার গুণও উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_006",
+      "conceptId": "beliefs_allah_independent",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন বিশ্বাসটি সুরা আল-ইখলাসের শিক্ষা প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজেকে টিকিয়ে রাখতে আল্লাহর অন্যকে প্রয়োজন"
+        },
+        {
+          "id": "b",
+          "text": "সবাই আল্লাহর মুখাপেক্ষী, তিনি কারও মুখাপেক্ষী নন"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর একজন জন্মদাতা আছেন যিনি তাঁকে সৃষ্টি করেছেন"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর সমতুল্য কেউ তাঁর সঙ্গে ইলাহত্ব ভাগ করেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সুরাটিতে আল্লাহর একত্ব, অমুখাপেক্ষিতা ও অতুলনীয়তার শিক্ষা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1-4",
+          "label": "কুরআন ১১২:১-৪",
+          "url": "https://quran.com/112/1-4"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_007",
+      "conceptId": "beliefs_recording_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সম্মানিত আমল লেখক ফেরেশতাদের কোন দায়িত্ব কুরআনে উল্লেখ রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ কী জানবেন তা নিজেরা নির্ধারণ করা"
+        },
+        {
+          "id": "b",
+          "text": "মানুষের সিদ্ধান্ত সৃষ্টি করা"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের কাজ লিপিবদ্ধ করা"
+        },
+        {
+          "id": "d",
+          "text": "কোন মানুষ ইবাদত পাওয়ার যোগ্য তা বেছে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে সম্মানিত আমল লেখক ফেরেশতাদের কথা বলা হয়েছে, যাঁরা মানুষের কাজ জানেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "কুরআন ৮২:১০-১২",
+          "url": "https://quran.com/82/10-12"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_008",
+      "conceptId": "beliefs_angels_obedience",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াতে ফেরেশতাদের আল্লাহর নির্দেশ পালনের ব্যাপারে কী বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁরা কোন আদেশ প্রত্যাখ্যান করবেন তা বেছে নেন"
+        },
+        {
+          "id": "b",
+          "text": "আদেশ মানতে তাঁদের মানুষের ইবাদত প্রয়োজন"
+        },
+        {
+          "id": "c",
+          "text": "তাঁরা কর্তৃত্বের জন্য আল্লাহর সঙ্গে প্রতিযোগিতা করেন"
+        },
+        {
+          "id": "d",
+          "text": "তাঁরা আল্লাহর আদেশ পালন করেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতে এমন ফেরেশতাদের বর্ণনা রয়েছে, যাঁরা আল্লাহর অবাধ্য হন না এবং তাঁর নির্দেশ পালন করেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "6",
+          "label": "কুরআন ৬৬:৬",
+          "url": "https://quran.com/66/6"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_009",
+      "conceptId": "beliefs_iblis",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন অনুযায়ী ইবলিস কোন সৃষ্টির অন্তর্ভুক্ত ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জিন"
+        },
+        {
+          "id": "b",
+          "text": "মানব নবিগণ"
+        },
+        {
+          "id": "c",
+          "text": "ইলাহি সত্তাসমূহ"
+        },
+        {
+          "id": "d",
+          "text": "আমল লেখক ফেরেশতাগণ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে স্পষ্টভাবে ইবলিসকে জিনদের অন্তর্ভুক্ত বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "কুরআন ১৮:৫০",
+          "url": "https://quran.com/18/50"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_010",
+      "conceptId": "beliefs_zabur",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন নবিকে জাবুর দেওয়া হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুসা (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ঈসা (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইউসুফ (আ.)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে দাউদ (আ.)-কে জাবুর দেওয়ার কথা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "163",
+          "label": "কুরআন ৪:১৬৩",
+          "url": "https://quran.com/4/163"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_011",
+      "conceptId": "beliefs_injil",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইনজিল মূলত কোন নবিকে দেওয়া হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নুহ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ঈসা (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইউনুস (আ.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে বলা হয়েছে, আল্লাহ ঈসা (আ.)-কে হেদায়েত ও আলো হিসেবে ইনজিল দিয়েছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "কুরআন ৫:৪৬",
+          "url": "https://quran.com/5/46"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_012",
+      "conceptId": "beliefs_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর রাসুলদের প্রতি ঈমানের দাবি কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু নিজের জাতির রাসুলদের মেনে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "মুহাম্মদ (সা.) পরে এসেছেন বলে আগের রাসুলদের অস্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "রাসুলদের উপাস্য মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর সব সত্য রাসুলকে মেনে নেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মুসলিমরা আল্লাহর সব রাসুলকে মানেন; কাউকে মানা ও কাউকে অস্বীকার করা তাঁদের বিশ্বাস নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_013",
+      "conceptId": "beliefs_final_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুহাম্মদ (সা.) শেষ নবি হওয়ার অর্থ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর পরে নতুন কোনো নবি আসবেন না"
+        },
+        {
+          "id": "b",
+          "text": "পরবর্তী প্রতিটি ধর্মীয় শিক্ষক নবি হয়ে যাবেন"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর বার্তা ইতিমধ্যে বদলে গেছে"
+        },
+        {
+          "id": "d",
+          "text": "তিনিই ছিলেন পৃথিবীতে পাঠানো একমাত্র নবি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে মুহাম্মদ (সা.)-কে নবিগণের সিলমোহর বলা হয়েছে। মুসলিমদের বিশ্বাস, তাঁর মাধ্যমে নবুওয়াত সমাপ্ত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "কুরআন ৩৩:৪০",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_014",
+      "conceptId": "beliefs_prophets_human",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মানবসত্তা ও ওহির ব্যাপারে কুরআন নবী মুহাম্মদ (সা.)-কে কীভাবে বর্ণনা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ওহির প্রয়োজন নেই এমন ইলাহি সত্তা"
+        },
+        {
+          "id": "b",
+          "text": "ওহিপ্রাপ্ত একজন মানব রাসুল"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের ছদ্মবেশে একজন ফেরেশতা"
+        },
+        {
+          "id": "d",
+          "text": "এমন ব্যক্তি যাঁর বার্তা শুধু নিজের মতামত থেকে এসেছে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবীজি মানুষ এবং ওহির মাধ্যমে সম্মানিত। ইবাদত শুধু আল্লাহর জন্য।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "কুরআন ১৮:১১০",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_015",
+      "conceptId": "beliefs_resurrection",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর পুনর্জীবিত করার ক্ষমতার পক্ষে কুরআন কোন যুক্তি দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষ প্রতিটি হাড় মনে রাখলেই কেবল জীবন ফিরতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "পুনরুত্থান দুনিয়ার সম্পদের ওপর নির্ভর করে"
+        },
+        {
+          "id": "c",
+          "text": "যিনি প্রথমবার সৃষ্টি করেছেন, তিনিই আবার জীবন দিতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "শুধু যাদের দেহ অক্ষত থাকে তারা উঠতে পারে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহর পুনরুত্থানের ক্ষমতার প্রমাণ হিসেবে কুরআন প্রথম সৃষ্টির দিকে দৃষ্টি দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 36,
+          "ayahs": "78-79",
+          "label": "কুরআন ৩৬:৭৮-৭৯",
+          "url": "https://quran.com/36/78-79"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_016",
+      "conceptId": "beliefs_hour_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কিয়ামতের সঠিক সময়ের জ্ঞান কার কাছে রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যথেষ্ট পঞ্জিকা নিয়ে পড়াশোনা করেন এমন যেকোনো ব্যক্তির কাছে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি ধর্মীয় শিক্ষকের কাছে"
+        },
+        {
+          "id": "c",
+          "text": "স্পষ্ট স্বপ্ন দেখেছেন এমন যেকোনো ব্যক্তির কাছে"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর কাছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে কিয়ামতের নির্ধারিত সময়ের জ্ঞান আল্লাহর কাছে থাকার কথা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "187",
+          "label": "কুরআন ৭:১৮৭",
+          "url": "https://quran.com/7/187"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_017",
+      "conceptId": "beliefs_qadar",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "তাকদিরে বিশ্বাস কী স্বীকার করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর নির্ধারণের বাইরে কিছু ঘটে না"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর জ্ঞান ও কর্তৃত্বের বাইরেও ঘটনা ঘটে"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের পরিকল্পনা প্রতিটি ফল নিশ্চিত করে"
+        },
+        {
+          "id": "d",
+          "text": "অনুমান করে মানুষ অদৃশ্য জগৎ নিয়ন্ত্রণ করতে পারে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন শেখায়, আল্লাহ সবকিছু নির্ধারিত পরিমাপ ও ফয়সালা অনুযায়ী সৃষ্টি করেছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 54,
+          "ayahs": "49",
+          "label": "কুরআন ৫৪:৪৯",
+          "url": "https://quran.com/54/49"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_018",
+      "conceptId": "beliefs_faith_articles",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোনটি ইসলামের পাঁচ স্তম্ভের তালিকার বদলে ঈমানের মৌলিক বিষয়গুলোর অন্তর্ভুক্ত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রমজানে রোজা রাখা"
+        },
+        {
+          "id": "b",
+          "text": "ফেরেশতাদের প্রতি বিশ্বাস"
+        },
+        {
+          "id": "c",
+          "text": "জাকাত দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সামর্থ্য থাকলে হজ করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে ঈমানের ছয়টি মৌলিক বিষয় ও ইসলামের পাঁচটি স্তম্ভ আলাদাভাবে উল্লেখ করে দুটিই শেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_019",
+      "conceptId": "beliefs_quran_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আগের কিতাবগুলোর সঙ্গে কুরআনের সম্পর্ক কীভাবে বর্ণিত হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ আগে কখনো কিতাব দেননি—এমন দাবি করে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু একটি গোত্রের রীতিনীতির বিবরণ"
+        },
+        {
+          "id": "c",
+          "text": "আগের ওহির সত্যতা নিশ্চিত করে এবং তার ওপর মানদণ্ড হিসেবে থাকে"
+        },
+        {
+          "id": "d",
+          "text": "হেদায়েতে কোনো ভূমিকা নেই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন আগের ওহির সত্যতা নিশ্চিত করে এবং তার ওপর কর্তৃত্বপূর্ণ মানদণ্ড হিসেবে কাজ করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "48",
+          "label": "কুরআন ৫:৪৮",
+          "url": "https://quran.com/5/48"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_020",
+      "conceptId": "beliefs_personal_accountability",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনে ব্যক্তিগত জবাবদিহির অর্থ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কারও প্রতিটি গুনাহ তার পরিবার নিজে থেকেই বহন করে"
+        },
+        {
+          "id": "b",
+          "text": "বিখ্যাত নাম ব্যক্তিগত দায়িত্ব সরিয়ে দেয়"
+        },
+        {
+          "id": "c",
+          "text": "সম্পদ দিয়ে সব দায় অন্যের ওপর চাপানো যায়"
+        },
+        {
+          "id": "d",
+          "text": "কেউ অন্যের গুনাহের বোঝা বহন করে না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "প্রত্যেকে নিজের কাজের জন্য দায়ী। পারিবারিক পরিচয়ে অপরাধের দায় স্থানান্তর হয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "কুরআন ৬:১৬৪",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_021",
+      "conceptId": "beliefs_tawakkul_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর ওপর ভরসা করার অর্থ কি যুক্তিসংগত চেষ্টা ছেড়ে দেওয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, চেষ্টা ও আল্লাহর ওপর ভরসা একসঙ্গে থাকে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, পরিকল্পনা সব সময় দুর্বল ঈমানের লক্ষণ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, উপকারী কাজ তাকদিরে বিশ্বাসের বিরোধী"
+        },
+        {
+          "id": "d",
+          "text": "শুধু ফলাফল গুরুত্বপূর্ণ, চেষ্টা কখনো নয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে সিদ্ধান্তের সঙ্গে আল্লাহর ওপর ভরসার কথা রয়েছে। হাদিসে উপকারী কাজের চেষ্টা ও তাঁর সাহায্য চাইতে উৎসাহ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "কুরআন ৩:১৫৯",
+          "url": "https://quran.com/3/159"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_022",
+      "conceptId": "beliefs_qadar_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "তাকদিরে বিশ্বাস কি নিজের সিদ্ধান্তের দায়িত্ব সরিয়ে দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, অন্যায়ের জন্য কখনো তওবার দরকার নেই"
+        },
+        {
+          "id": "b",
+          "text": "না, মানুষ নিজের কাজের জন্য দায়ী থাকে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, প্রতিটি সিদ্ধান্ত নিজে থেকেই অনুমোদিত"
+        },
+        {
+          "id": "d",
+          "text": "শুধু অন্যদের সিদ্ধান্তই গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহর নির্ধারণে বিশ্বাস মানুষের সাড়া ও জবাবদিহি নিয়ে কুরআনের শিক্ষা মুছে দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 76,
+          "ayahs": "3",
+          "label": "কুরআন ৭৬:৩",
+          "url": "https://quran.com/76/3"
+        },
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "কুরআন ৬:১৬৪",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_023",
+      "conceptId": "beliefs_trials",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শুধু কষ্ট পাওয়াই কি প্রমাণ করে যে আল্লাহ কাউকে প্রত্যাখ্যান করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি কষ্ট প্রত্যাখ্যানের প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, মুমিনদের ক্ষতিহীন জীবনের প্রতিশ্রুতি দেওয়া হয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "না, কষ্ট পরীক্ষা হতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সম্পদই ঈমান কবুল হওয়ার প্রমাণ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে মুমিনদের ভয়, ক্ষুধা ও ক্ষতির মাধ্যমে পরীক্ষার মুখোমুখি হওয়ার কথা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "155",
+          "label": "কুরআন ২:১৫৫",
+          "url": "https://quran.com/2/155"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_024",
+      "conceptId": "beliefs_wealth_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শুধু দুনিয়ার সম্পদ কি আল্লাহর কাছে কারও মর্যাদার নির্ভরযোগ্য মাপকাঠি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সবচেয়ে ধনী ব্যক্তিই সব সময় সবচেয়ে নেককার"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, দারিদ্র্যের অর্থ আল্লাহ সব সময় কাউকে অপছন্দ করেন"
+        },
+        {
+          "id": "c",
+          "text": "শুধু প্রকাশ্য জীবনযাপনই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "না, সচ্ছলতা ও সীমিত রিজিক দুটোই পরীক্ষা হতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "এই আয়াতগুলো সম্পদকে স্বয়ংক্রিয় সম্মান বা সীমিত রিজিককে স্বয়ংক্রিয় অপমান ভাবার ধারণা খণ্ডন করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 89,
+          "ayahs": "15-17",
+          "label": "কুরআন ৮৯:১৫-১৭",
+          "url": "https://quran.com/89/15-17"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_025",
+      "conceptId": "beliefs_repentance_hope",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আগের গুনাহের ব্যাপারে কুরআন কোন মনোভাব উৎসাহিত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর রহমতের আশা ও আন্তরিকভাবে তাঁর দিকে ফেরা"
+        },
+        {
+          "id": "b",
+          "text": "এমন হতাশা যা তওবাকে অর্থহীন মনে করায়"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি গুনাহ চালিয়ে গেলেও চিন্তা নেই এমন নিশ্চয়তা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু নিষ্পাপ অতীতের মানুষ তওবা করতে পারেন মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ গুনাহগারদের তাঁর রহমত থেকে নিরাশ হতে নিষেধ করেন। এই আশা তাঁর দিকে ফিরতে আহ্বান করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "কুরআন ৩৯:৫৩",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_026",
+      "conceptId": "beliefs_repentance_sincere",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন কেমন তওবার আহ্বান জানায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু মানুষকে মুগ্ধ করতে ক্ষমা চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "আন্তরিক তওবা"
+        },
+        {
+          "id": "c",
+          "text": "পরিবর্তনের ইচ্ছা ছাড়া বাহ্যিক অভিনয়"
+        },
+        {
+          "id": "d",
+          "text": "অন্যায়ের পক্ষে দাঁড়িয়ে সবাইকে দোষ দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তওবা হওয়া উচিত আন্তরিকভাবে আল্লাহর দিকে ফিরে আসা; কেবল ফাঁকা বাহ্যিক প্রদর্শন নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "কুরআন ৬৬:৮",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_027",
+      "conceptId": "beliefs_hidden_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্য মানুষের অজানা কাজও কি আল্লাহ জানেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, শুধু প্রকাশ্য কাজ জানা থাকে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু কেউ যন্ত্রে রেকর্ড করলে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, তাঁর জ্ঞানে গোপন ও প্রকাশ্য সবই অন্তর্ভুক্ত"
+        },
+        {
+          "id": "d",
+          "text": "শুধু ব্যক্তি নিজে ঘোষণা করলে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে আল্লাহর পূর্ণ জ্ঞানের কথা বলা হয়েছে, যার মধ্যে আমাদের কাছে গোপন বিষয়ও রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "59",
+          "label": "কুরআন ৬:৫৯",
+          "url": "https://quran.com/6/59"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_028",
+      "conceptId": "beliefs_unseen_claims",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো ব্যক্তি কি স্বাধীনভাবে আল্লাহর মতো গায়েবের পূর্ণ জ্ঞান রাখতে পারেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, যথেষ্ট জনপ্রিয় হলে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, ভবিষ্যদ্বাণীর জন্য টাকা নিলে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কিছু অনুমান মিলে গেলে"
+        },
+        {
+          "id": "d",
+          "text": "না, গায়েবের পূর্ণ জ্ঞান আল্লাহর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মানুষ স্বাধীনভাবে আল্লাহর গায়েবের সর্বব্যাপী জ্ঞানের অংশীদার নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "কুরআন ২৭:৬৫",
+          "url": "https://quran.com/27/65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_029",
+      "conceptId": "beliefs_small_deeds",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অণু পরিমাণ আমলের আয়াতগুলো কী শিক্ষা দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ছোট ভালো ও মন্দ কাজও গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বিখ্যাত কাজের হিসাব হবে"
+        },
+        {
+          "id": "c",
+          "text": "ছোট ক্ষতি কখনো গুরুত্বপূর্ণ নয়"
+        },
+        {
+          "id": "d",
+          "text": "অনেক মানুষ দেখলেই শুধু কাজের হিসাব হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জবাবদিহিতে খুব ছোট কাজের গুরুত্বও কুরআনে তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "কুরআন ৯৯:৭-৮",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_030",
+      "conceptId": "beliefs_intentions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বাইরে থেকে একই রকম দুটি ভালো কাজের প্রতিদান কেন ভিন্ন হতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দামি পোশাকে করলে সব সময় বেশি প্রতিদান হয়"
+        },
+        {
+          "id": "b",
+          "text": "কাজ দুটির পেছনের নিয়ত আলাদা হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "বেশি ছবি তোলা কাজটি অবশ্যই উত্তম"
+        },
+        {
+          "id": "d",
+          "text": "শুধু ব্যক্তির বয়স প্রতিদান নির্ধারণ করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে নিয়তের গুরুত্ব শেখানো হয়েছে। বাহ্যিক মিল দিয়ে পুরো বিষয় বোঝা যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_031",
+      "conceptId": "beliefs_worship_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো নির্দিষ্ট কাজকে বিধিবদ্ধ ইবাদত বলার ক্ষেত্রে ভালো নিয়তের পাশাপাশি কী গুরুত্বপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কাজটি কতটা জনপ্রিয় হয়ে ওঠে"
+        },
+        {
+          "id": "b",
+          "text": "কাজটি করা কঠিন কি না"
+        },
+        {
+          "id": "c",
+          "text": "দ্বীনের নির্দেশনায় নির্ভরযোগ্য ভিত্তি থাকা"
+        },
+        {
+          "id": "d",
+          "text": "কত মানুষ তা নিয়ে পোস্ট করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি দ্বীনের অন্তর্ভুক্ত নয় এমন কিছু এতে যুক্ত করা থেকে সতর্ক করেছেন। নির্দিষ্ট ইবাদতের দাবির জন্য নির্ভরযোগ্য ভিত্তি প্রয়োজন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2697",
+          "label": "সহিহ বুখারি ২৬৯৭",
+          "url": "https://sunnah.com/bukhari:2697"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_032",
+      "conceptId": "beliefs_worship_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো নবির প্রতি গভীর শ্রদ্ধা কি তাঁর ইবাদত করাকে বৈধ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শ্রদ্ধা সব সময় ইবাদতকে উপযুক্ত করে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, নবি সবার প্রিয় হলে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ব্যক্তি দানও করলে"
+        },
+        {
+          "id": "d",
+          "text": "না, নবিরা সম্মানিত, কিন্তু ইবাদত শুধু আল্লাহর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহর রাসুলদের সম্মান করতে গিয়েও শুধু আল্লাহর ইবাদতের নীতি বজায় রাখতে হবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "কুরআন ১৮:১১০",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_033",
+      "conceptId": "beliefs_angels_not_divine",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর সঙ্গে সম্পর্কের ক্ষেত্রে ফেরেশতাদের কীভাবে বুঝতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্মানিত বান্দা, ইলাহি অংশীদার নন"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর শাসনে অংশ নেওয়া সমতুল্য উপাস্য"
+        },
+        {
+          "id": "c",
+          "text": "অদৃশ্য বলে ইবাদত পাওয়ার যোগ্য সত্তা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ থেকে স্বাধীন কর্তৃত্বের উৎস"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে তাঁদের সম্মানিত বান্দা বলা হয়েছে, যাঁরা আল্লাহর আদেশ অনুযায়ী কাজ করেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "26-27",
+          "label": "কুরআন ২১:২৬-২৭",
+          "url": "https://quran.com/21/26-27"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_034",
+      "conceptId": "beliefs_prophets_shared_call",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর রাসুলদের সবার মৌলিক আহ্বান কী ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি রাসুলকে আলাদা উপাস্য করা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর ইবাদত করা ও মিথ্যা উপাস্য বর্জন করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু একটি আধুনিক জাতির রীতি গ্রহণ করা"
+        },
+        {
+          "id": "d",
+          "text": "ন্যায়-অন্যায় না দেখে সম্পদ অর্জন করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে আল্লাহর ইবাদত ও মিথ্যা উপাসনা ত্যাগের অভিন্ন আহ্বান বর্ণিত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "কুরআন ১৬:৩৬",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_035",
+      "conceptId": "beliefs_shahadah_meaning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনটি শাহাদাতের উভয় অংশের অর্থ প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুহাম্মদ (সা.)-কে সম্মান করে আল্লাহর একত্ব অস্বীকার করা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর একত্ব মেনে তাঁর রাসুলকে অস্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু আল্লাহর ইবাদত করা এবং মুহাম্মদ (সা.)-কে তাঁর রাসুল হিসেবে মানা"
+        },
+        {
+          "id": "d",
+          "text": "মুহাম্মদ (সা.)-কে ইলাহত্বের অংশীদার মনে করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সাক্ষ্যবাক্য আল্লাহর একক ইবাদতের অধিকার ও মুহাম্মদ (সা.)-এর রিসালাত স্বীকার করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_036",
+      "conceptId": "beliefs_dua_nearness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দোয়ার আয়াতে আল্লাহর নিকটবর্তী থাকার কথা আমাদের কী করতে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি সাধারণ মানুষের কথা শুনতে পান না মনে করতে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বিখ্যাত মানুষেরা চাইতে পারেন মনে করতে"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি ধর্মীয় বিধান জানা পর্যন্ত চাওয়া বন্ধ রাখতে"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর কাছে দোয়ার মাধ্যমে ফিরে যেতে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ তাঁর বান্দাদের তাঁকে ডাকতে ও তাঁর নির্দেশনায় সাড়া দিতে আহ্বান করেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_037",
+      "conceptId": "beliefs_faith_obedience",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "এই আয়াতে মুমিনরা ওহির প্রতি কেমন সাড়ার আদর্শ দেখিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শোনা, মান্য করা ও ক্ষমা চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "হেদায়েতকে শুধু সাজসজ্জা মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "নির্দেশনা মানার আগে প্রশংসা দাবি করা"
+        },
+        {
+          "id": "d",
+          "text": "বিশ্বাস করলেই আনুগত্যের আর দরকার নেই মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটিতে বিশ্বাসের সঙ্গে আনুগত্য, ক্ষমা চাওয়া ও আল্লাহর কাছে ফেরার সচেতনতা যুক্ত হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_038",
+      "conceptId": "beliefs_human_limits",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নিজের উপকার সম্পর্কে আমাদের বিচার নিয়ে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যা অপছন্দ করি তা অবশ্যই ক্ষতিকর"
+        },
+        {
+          "id": "b",
+          "text": "পছন্দ-অপছন্দ আমাদের পূর্ণ জ্ঞান দেয় না"
+        },
+        {
+          "id": "c",
+          "text": "যা চাই তা অবশ্যই ভালো"
+        },
+        {
+          "id": "d",
+          "text": "আমাদের তাৎক্ষণিক মতামত সব সময় ওহির চেয়ে প্রজ্ঞাপূর্ণ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি মনে করিয়ে দেয় যে আল্লাহ জানেন, আর আমাদের জ্ঞান সীমিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "216",
+          "label": "কুরআন ২:২১৬",
+          "url": "https://quran.com/2/216"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_039",
+      "conceptId": "beliefs_grief_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মন খারাপ হওয়া বা চোখে পানি আসা কি অবশ্যই ঈমানের বিরোধী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, মুমিন কখনো দুঃখ পেতে পারেন না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রতিটি অশ্রু আল্লাহর নির্ধারণ প্রত্যাখ্যান"
+        },
+        {
+          "id": "c",
+          "text": "না, ঈমান ও ধৈর্যপূর্ণ কথার সঙ্গে শোকও থাকতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু ঈমানহীন মানুষের জীবনে ক্ষতি ঘটে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ছেলের মৃত্যুর সময় নবীজি কেঁদেছেন, তবে আল্লাহর সন্তুষ্টির উপযোগী কথাই বলেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "সহিহ বুখারি ১৩০৩",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_040",
+      "conceptId": "beliefs_justice_hereafter",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কিয়ামতের দিনে আল্লাহর বিচার সম্পর্কে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিখ্যাত বংশের নাম নিজে থেকেই সব বিচার নির্ধারণ করে"
+        },
+        {
+          "id": "b",
+          "text": "ছোট কাজ সব সময় উপেক্ষিত থাকে"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের জনপ্রিয়তাই শেষ মানদণ্ড"
+        },
+        {
+          "id": "d",
+          "text": "কারও প্রতি অন্যায় করা হবে না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে ন্যায়ের পাল্লার কথা বর্ণিত হয়েছে এবং কাউকে অবিচার না করার নিশ্চয়তা দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "47",
+          "label": "কুরআন ২১:৪৭",
+          "url": "https://quran.com/21/47"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_041",
+      "conceptId": "beliefs_ihsan",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ দেখছে না—এমন সময় একটি কাজ সৎভাবে করতে বা প্রতারণা করতে পারেন। কোন চিন্তাটি ইহসান প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষ না দেখলেও আল্লাহ আমাকে দেখছেন"
+        },
+        {
+          "id": "b",
+          "text": "মানুষ যা খেয়াল করে শুধু তারই নৈতিক গুরুত্ব আছে"
+        },
+        {
+          "id": "c",
+          "text": "গোপন কাজ আমার জবাবদিহিতে প্রভাব ফেলতে পারে না"
+        },
+        {
+          "id": "d",
+          "text": "একা থাকলে সব দায়িত্ব উঠে যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহর সচেতনতা প্রকাশ্য চেহারার বাইরেও সততা বজায় রাখতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_042",
+      "conceptId": "beliefs_tawakkul_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "গুরুত্বপূর্ণ পরীক্ষার প্রস্তুতি নিচ্ছেন। কোন পদ্ধতিতে তাওয়াক্কুল সবচেয়ে ভালোভাবে প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভরসা প্রমাণ করতে প্রস্তুতি বাদ দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "যত্ন নিয়ে প্রস্তুতি, আল্লাহর সাহায্য চাওয়া ও ফল তাঁর হাতে সোপর্দ করা"
+        },
+        {
+          "id": "c",
+          "text": "পড়লেই চাওয়া ফল নিশ্চিত ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "পরিকল্পনাকে দুর্বল ঈমান ভেবে পরামর্শ প্রত্যাখ্যান করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দায়িত্বশীল প্রস্তুতি ও আল্লাহর ওপর ভরসা একসঙ্গে থাকতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "কুরআন ৩:১৫৯",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_043",
+      "conceptId": "beliefs_qadar_response",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "যুক্তিসংগত চেষ্টা সত্ত্বেও পরিকল্পনা ব্যর্থ হয়েছে। কোন প্রতিক্রিয়া হাদিসের সঙ্গে সবচেয়ে বেশি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব উপকারী চেষ্টা চিরদিনের জন্য ছেড়ে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "মন খারাপ হয়েছে বলে অতীত বদলাতেই হবে দাবি করা"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর নির্ধারণ মেনে উপকারী চেষ্টা চালিয়ে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "একটি ব্যর্থতাকে ভবিষ্যতের সব চেষ্টার অর্থহীনতার প্রমাণ ধরা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে উপকারী চেষ্টা, আল্লাহর সাহায্য চাওয়া ও ঘটে যাওয়া ঘটনা মেনে নেওয়া একসঙ্গে শেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_044",
+      "conceptId": "beliefs_qadar_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জেনেশুনে কারও ক্ষতি করে বললেন, ‘এটি নির্ধারিত ছিল, তাই আমার ক্ষমা চাওয়ার দায় নেই।’ সঠিক উপলব্ধি কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এই কথায় সব দায়িত্ব শেষ হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "ক্ষতিগ্রস্ত ব্যক্তি এখন আপনার গুনাহ বহন করবেন"
+        },
+        {
+          "id": "c",
+          "text": "তাকদিরে বিশ্বাস প্রতিটি কাজকে বৈধ করে"
+        },
+        {
+          "id": "d",
+          "text": "তাকদির অন্যায়ের অজুহাত নয়; তওবা ও ক্ষতির প্রতিকারের চেষ্টা করতে হবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অন্যের ক্ষতির জন্য তওবা বা দায়িত্ব এড়ানোর অজুহাত আল্লাহর নির্ধারণ হতে পারে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "কুরআন ৬:১৬৪",
+          "url": "https://quran.com/6/164"
+        },
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "কুরআন ৬৬:৮",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_045",
+      "conceptId": "beliefs_repentance_hope",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু বলছেন, আগের গুনাহের কারণে আল্লাহর দিকে ফেরা অর্থহীন। কুরআনের শিক্ষা অনুযায়ী কী বলবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিক তওবা ও আল্লাহর রহমতের আশা রাখতে উৎসাহ দেব"
+        },
+        {
+          "id": "b",
+          "text": "একমত হব যে ইবাদত আর কখনো গুরুত্বপূর্ণ হবে না"
+        },
+        {
+          "id": "c",
+          "text": "বলব শুধু নিখুঁত অতীত থাকলেই তওবা করা যায়"
+        },
+        {
+          "id": "d",
+          "text": "পরিবর্তন অসম্ভব বলে গুনাহ চালাতে বলব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনের নিরাশ না হওয়ার আহ্বান আন্তরিকভাবে আল্লাহর দিকে ফিরতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "কুরআন ৩৯:৫৩",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_046",
+      "conceptId": "beliefs_repentance_sincere",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ তওবা করতে চান, কিন্তু কোনো অনুতাপ ছাড়াই একই অন্যায় চালানোর পরিকল্পনা করছেন। কী বদলানো প্রয়োজন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ঘোষণার ভাষা গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "তওবায় অন্যায় থেকে ফেরার আন্তরিক ইচ্ছা থাকা উচিত"
+        },
+        {
+          "id": "c",
+          "text": "আরও মানুষের ক্ষমা চাওয়া দেখা দরকার"
+        },
+        {
+          "id": "d",
+          "text": "নাম বদলালে অন্যায় ক্ষতিহীন হয়ে যায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অন্যায়ের পক্ষে থাকার ইচ্ছা রেখে মুখে কিছু বলার চেয়ে আন্তরিক তওবা গভীর বিষয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "কুরআন ৬৬:৮",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_047",
+      "conceptId": "beliefs_small_deeds",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নীরবে কাউকে ছোট একটি সাহায্য করতে পারেন। কোন বিশ্বাসটি কাজে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বড় প্রকাশ্য প্রকল্প গণ্য হয়"
+        },
+        {
+          "id": "b",
+          "text": "কারও অজানা সদাচরণের মূল্য নেই"
+        },
+        {
+          "id": "c",
+          "text": "ছোট নেক আমলও আল্লাহর কাছে গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "ছবি তুললেই শুধু নেক আমল গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জবাবদিহিতে ছোট কাজও অন্তর্ভুক্ত, তাই অল্প ভালো কাজকেও তুচ্ছ মনে করা উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "কুরআন ৯৯:৭-৮",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_048",
+      "conceptId": "beliefs_hidden_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সৎভাবে একটি জিনিস ফেরত দিয়েছেন, কিন্তু কেউ খেয়াল করেনি। কোন বিশ্বাসটি তখনো প্রাসঙ্গিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কেউ জানানো পর্যন্ত কাজটি আল্লাহর অজানা থাকে"
+        },
+        {
+          "id": "b",
+          "text": "সবার সামনে ধন্যবাদ না পেলে কাজটি গুরুত্বপূর্ণ নয়"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ভিডিও রেকর্ড থাকলেই কাজটি ঘটেছে প্রমাণ হয়"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর জ্ঞান মানুষের পর্যবেক্ষণে সীমাবদ্ধ নয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অন্যরা দেখুক বা প্রশংসা করুক, আল্লাহ কাজ সম্পর্কে জানেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "59",
+          "label": "কুরআন ৬:৫৯",
+          "url": "https://quran.com/6/59"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_049",
+      "conceptId": "beliefs_unseen_claims",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি অনলাইন অ্যাকাউন্ট দাবি করছে, সবার ভবিষ্যৎ সম্পর্কে তার স্বাধীন ও নিশ্চিত জ্ঞান আছে। দাবিটি কীভাবে বিচার করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অ্যাকাউন্টটির এমন জ্ঞান থাকার দাবি প্রত্যাখ্যান করব"
+        },
+        {
+          "id": "b",
+          "text": "অনেক অনুসারী থাকলে গ্রহণ করব"
+        },
+        {
+          "id": "c",
+          "text": "ভবিষ্যদ্বাণীর দাম বেশি হলে গ্রহণ করব"
+        },
+        {
+          "id": "d",
+          "text": "নাটকীয় উপস্থাপনাকে প্রমাণ মনে করব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জনপ্রিয়তা, টাকা ও আত্মবিশ্বাসী বক্তব্য কাউকে আল্লাহর গায়েবের জ্ঞান দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "কুরআন ২৭:৬৫",
+          "url": "https://quran.com/27/65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_050",
+      "conceptId": "beliefs_hour_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি ভিডিওতে কিয়ামতের নির্দিষ্ট তারিখ ঘোষণা করা হয়েছে। কুরআন অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভিডিও বেশি শেয়ার হলে গ্রহণ করব"
+        },
+        {
+          "id": "b",
+          "text": "দাবি গ্রহণ করব না; সঠিক সময় আল্লাহ জানেন"
+        },
+        {
+          "id": "c",
+          "text": "তারিখ ধরে সব দায়িত্ব ছেড়ে দেব"
+        },
+        {
+          "id": "d",
+          "text": "বিস্তারিত হিসাব নিশ্চিত জ্ঞান দেয় ধরে নেব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন মানুষকে কিয়ামতের তারিখ নির্ধারণের অধিকার দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "187",
+          "label": "কুরআন ৭:১৮৭",
+          "url": "https://quran.com/7/187"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_051",
+      "conceptId": "beliefs_trials",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একজন আমলকারী মুসলিম বেদনাদায়ক ক্ষতির মুখোমুখি হয়েছেন। কোন সিদ্ধান্তটি এড়ানো উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুমিনরাও পরীক্ষার মুখোমুখি হতে পারেন"
+        },
+        {
+          "id": "b",
+          "text": "কষ্টে ধৈর্য গুরুত্বপূর্ণ হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "এই ক্ষতি প্রমাণ করে যে আল্লাহ তাঁকে প্রত্যাখ্যান করেছেন"
+        },
+        {
+          "id": "d",
+          "text": "কঠিন সময়ে সাহায্য প্রয়োজন হতে পারে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শুধু কষ্ট দিয়ে আল্লাহর কাছে কারও অবস্থান নির্ধারণ করা যায় না। মুমিনদেরও পরীক্ষা হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "155",
+          "label": "কুরআন ২:১৫৫",
+          "url": "https://quran.com/2/155"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_052",
+      "conceptId": "beliefs_wealth_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ ধনী ব্যক্তিকে স্বয়ংক্রিয়ভাবে দরিদ্রের চেয়ে আল্লাহর বেশি প্রিয় বলছেন। সঠিক প্রতিক্রিয়া কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু আয় দিয়েই বিষয়টির নিষ্পত্তি হয়"
+        },
+        {
+          "id": "b",
+          "text": "দারিদ্র্য সব সময় আল্লাহর প্রত্যাখ্যানের প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "দামি সম্পদ ইবাদত কবুল হওয়ার নিশ্চয়তা দেয়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সম্পদ আত্মিক মর্যাদা নির্ধারণ করে না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অঢেল বা সীমিত সম্পদের ওপর ভিত্তি করে সরলভাবে মর্যাদা বিচার করার ধারণা কুরআন সংশোধন করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 89,
+          "ayahs": "15-17",
+          "label": "কুরআন ৮৯:১৫-১৭",
+          "url": "https://quran.com/89/15-17"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_053",
+      "conceptId": "beliefs_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিজের জাতির বাইরে অন্য জনগোষ্ঠীর একজন নবি সম্পর্কে জানলেন। ঈমান কী দাবি করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর প্রত্যেক সত্য রাসুলের প্রতি সম্মান ও বিশ্বাস"
+        },
+        {
+          "id": "b",
+          "text": "অন্য জনগোষ্ঠীর বলে তাঁকে অস্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু পরিচিত নামের নবিগণকে মানা"
+        },
+        {
+          "id": "d",
+          "text": "জাতীয়তাকে নবুওয়াতের মাপকাঠি করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহর রাসুলদের প্রতি বিশ্বাস জাতি ও দেশের সীমানা ছাড়িয়ে যায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_054",
+      "conceptId": "beliefs_final_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নতুন এক শিক্ষক মুহাম্মদ (সা.)-এর পরে নিজেকে নবি দাবি করছেন। কোন বিশ্বাসটি প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শিক্ষকের জনপ্রিয়তা নবুওয়াত সৃষ্টি করে"
+        },
+        {
+          "id": "b",
+          "text": "মুহাম্মদ (সা.) শেষ নবি"
+        },
+        {
+          "id": "c",
+          "text": "অনুপ্রেরণাদায়ক শোনালেই দাবি সত্য"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি প্রজন্মকে একজন নবি নিয়োগ করতে হবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুহাম্মদ (সা.)-এর নবুওয়াতের সমাপ্তির বিশ্বাস তাঁর পরে নতুন নবির দাবি বাতিল করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "কুরআন ৩৩:৪০",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_055",
+      "conceptId": "beliefs_intentions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি সামাজিক আয়োজনে সাহায্য করতে যাচ্ছেন। কোন নিয়তটি গড়ে তোলা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবাইকে নিজের চেয়ে ছোট মনে করানো"
+        },
+        {
+          "id": "b",
+          "text": "মানুষের সঙ্গে যেমনই আচরণ হোক, প্রশংসা পাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "উপকারী সেবার মাধ্যমে আল্লাহর সন্তুষ্টি চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "অন্য স্বেচ্ছাসেবীদের কোনো গুরুত্ব নেই প্রমাণ করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আন্তরিকতা বাহ্যিক ভালো কাজকে দিকনির্দেশ দেয় এবং লোক দেখানো থেকে বাঁচায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_056",
+      "conceptId": "beliefs_worship_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি পোস্টে প্রমাণ ছাড়া নতুনভাবে নির্ধারিত একটি আমলের জন্য নিশ্চিত ধর্মীয় প্রতিদানের দাবি করা হয়েছে। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিস্তারিত নির্দেশনাকেই বিধিবদ্ধ হওয়ার প্রমাণ মনে করব"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিদান আকর্ষণীয় বলে গ্রহণ করব"
+        },
+        {
+          "id": "c",
+          "text": "জনপ্রিয় বলে তা দ্বীনের অংশ করব"
+        },
+        {
+          "id": "d",
+          "text": "নির্ভরযোগ্য সূত্র বা যোগ্য শিক্ষকের কাছে দ্বীনি ভিত্তি যাচাই করব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নির্ধারিত ইবাদত ও প্রতিদানের নির্দিষ্ট দাবিতে প্রমাণ প্রয়োজন, শুধু উৎসাহ নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2697",
+          "label": "সহিহ বুখারি ২৬৯৭",
+          "url": "https://sunnah.com/bukhari:2697"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_057",
+      "conceptId": "beliefs_dua_nearness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিজেকে আল্লাহর সাহায্য চাওয়ার জন্য খুব সাধারণ মানুষ মনে হচ্ছে। দোয়ার আয়াত কী উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহকে ডাকুন; তাঁর আহ্বান বান্দাদের জন্য"
+        },
+        {
+          "id": "b",
+          "text": "বিখ্যাত হওয়া পর্যন্ত অপেক্ষা করুন"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ধর্মীয় নেতাদের কথা শোনা হয় মনে করুন"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি শাস্ত্রীয় পরিভাষা না জানা পর্যন্ত দোয়া এড়ান"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দোয়া শুধু বিশিষ্ট ব্যক্তিদের জন্য নয়। আল্লাহ তাঁর বান্দাদের তাঁর দিকে ফিরতে ডাকেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_058",
+      "conceptId": "beliefs_human_limits",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আশা করা কোনো ফল না পাওয়ায় হতাশ হয়েছেন। জ্ঞানের ব্যাপারে কোন চিন্তাটি বিনয় প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আমার তাৎক্ষণিক পছন্দই অবশ্যই সর্বোত্তম কী তা প্রমাণ করে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি পরিণতি আমি জানি না, আল্লাহ জানেন"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি হতাশা সব চেষ্টার অর্থহীনতার প্রমাণ"
+        },
+        {
+          "id": "d",
+          "text": "আমার সীমিত দৃষ্টিই প্রজ্ঞার শেষ মাপকাঠি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ফলাফলের ব্যাপারে আমাদের জ্ঞান সীমিত। তা মেনেও দায়িত্বশীল চেষ্টা চালিয়ে যাওয়া যায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "216",
+          "label": "কুরআন ২:২১৬",
+          "url": "https://quran.com/2/216"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_059",
+      "conceptId": "beliefs_personal_accountability",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ দাবি করছেন, সম্মানিত পারিবারিক পরিচয় অন্যায়ের দায় সরিয়ে দেয়। কোন নীতি প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিবারের সুনাম সব গুনাহ অন্যত্র সরিয়ে দেয়"
+        },
+        {
+          "id": "b",
+          "text": "পূর্বপুরুষের মর্যাদা ব্যক্তিগত দায়িত্ব বাতিল করে"
+        },
+        {
+          "id": "c",
+          "text": "প্রত্যেকে নিজের কাজের জন্য জবাবদিহি করবে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু অপরিচিত পরিবারের মানুষের বিচার হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "পরিবারের সম্মান ব্যক্তিগত জবাবদিহি দূর করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "কুরআন ৬:১৬৪",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_beliefs_060",
+      "conceptId": "beliefs_grief_faith",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কারও মৃত্যুর পরে শোকার্ত একজন মুমিন কাঁদছেন। নবীজির আদর্শ অনুযায়ী কেমন প্রতিক্রিয়া হওয়া উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু কাঁদছেন বলে আল্লাহকে প্রত্যাখ্যানের অভিযোগ করা"
+        },
+        {
+          "id": "b",
+          "text": "সঙ্গে সঙ্গে শোক শেষ করার দাবি করা"
+        },
+        {
+          "id": "c",
+          "text": "ঈমান মানে কখনো দুঃখ না পাওয়া বলা"
+        },
+        {
+          "id": "d",
+          "text": "সহমর্মিতা দেখানো; অশ্রু ও ঈমান একসঙ্গে থাকতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবীজির অশ্রু দেখায় যে স্বাভাবিক শোক ধৈর্য বা ঈমানের বিরোধী হওয়া আবশ্যক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "সহিহ বুখারি ১৩০৩",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    }
+  ]
+}

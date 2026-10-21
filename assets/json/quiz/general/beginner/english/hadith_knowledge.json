@@ -1,0 +1,2304 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "hadith_knowledge",
+  "title": "Hadith Knowledge",
+  "description": "General User → Beginner. Basic knowledge about hadith, familiar Prophetic teachings and short everyday applications. All questions are Beginner level; no hadith-number memorization or technical hadith terminology is required.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge required across all question styles. Styles are not difficulty levels. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked hadith texts and the source introduction were checked during preparation. Questions and explanations are original educational paraphrases, not verbatim hadith translations. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_beginner_hadith_knowledge_001",
+      "conceptId": "hadith_definition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does a Prophetic hadith report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Prophet's words, actions or approvals"
+        },
+        {
+          "id": "b",
+          "text": "Only the names of Quran chapters"
+        },
+        {
+          "id": "c",
+          "text": "Only events after the Prophet's lifetime"
+        },
+        {
+          "id": "d",
+          "text": "Only the opinions of modern writers"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Hadith preserve reports about Prophet Muhammad (peace be upon him), including his speech, conduct and approvals.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_002",
+      "conceptId": "hadith_collections",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which is a well-known collection of hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surah al-Fatihah"
+        },
+        {
+          "id": "b",
+          "text": "Sahih al-Bukhari"
+        },
+        {
+          "id": "c",
+          "text": "Surah al-Ikhlas"
+        },
+        {
+          "id": "d",
+          "text": "Surah al-Kawthar"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Sahih al-Bukhari is a hadith collection; the other options are chapters of the Quran.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_003",
+      "conceptId": "hadith_transmission",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who heard the Prophet's teachings and passed them to others?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only rulers centuries later"
+        },
+        {
+          "id": "b",
+          "text": "Only people living today"
+        },
+        {
+          "id": "c",
+          "text": "His Companions"
+        },
+        {
+          "id": "d",
+          "text": "Only people who never met him"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Companions heard and conveyed his teachings. In this report, he asked those present to inform those absent.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "67",
+          "label": "Sahih al-Bukhari 67",
+          "url": "https://sunnah.com/bukhari:67"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_004",
+      "conceptId": "hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to a famous hadith, deeds are judged by what?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clothing"
+        },
+        {
+          "id": "b",
+          "text": "Age"
+        },
+        {
+          "id": "c",
+          "text": "Popularity"
+        },
+        {
+          "id": "d",
+          "text": "Intentions"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Our purpose matters to Allah; two outwardly similar deeds can have different intentions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_005",
+      "conceptId": "hadith_speech",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Prophet teach about speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Speak what is good or remain silent"
+        },
+        {
+          "id": "b",
+          "text": "Say everything that comes to mind"
+        },
+        {
+          "id": "c",
+          "text": "Speak more loudly than others"
+        },
+        {
+          "id": "d",
+          "text": "Always have the final word"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith connects faith with responsible speech, care for neighbors and hospitality.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_006",
+      "conceptId": "hadith_self_control",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who is truly strong according to the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Someone who wins every argument"
+        },
+        {
+          "id": "b",
+          "text": "Someone who controls anger"
+        },
+        {
+          "id": "c",
+          "text": "Someone who frightens others"
+        },
+        {
+          "id": "d",
+          "text": "Someone who never asks for help"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith praises self-control when angry, rather than physical dominance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_007",
+      "conceptId": "hadith_truthfulness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality does the Prophet say leads to righteousness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boasting"
+        },
+        {
+          "id": "b",
+          "text": "Jealousy"
+        },
+        {
+          "id": "c",
+          "text": "Truthfulness"
+        },
+        {
+          "id": "d",
+          "text": "Dishonesty"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Telling the truth leads toward righteous conduct and Paradise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_008",
+      "conceptId": "hadith_regular_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which good deeds are especially beloved to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Those done only when people watch"
+        },
+        {
+          "id": "b",
+          "text": "Those always announced publicly"
+        },
+        {
+          "id": "c",
+          "text": "Those abandoned after one day"
+        },
+        {
+          "id": "d",
+          "text": "Those maintained regularly, even if small"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Consistency matters. A small good deed kept up regularly is valuable.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "Sahih al-Bukhari 6464",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_009",
+      "conceptId": "hadith_quran_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which activity does a famous hadith praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning and teaching the Quran"
+        },
+        {
+          "id": "b",
+          "text": "Collecting books without reading"
+        },
+        {
+          "id": "c",
+          "text": "Competing to own more books"
+        },
+        {
+          "id": "d",
+          "text": "Judging others by their books"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet praised those who learn the Quran and teach it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "Sahih al-Bukhari 5027",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_010",
+      "conceptId": "hadith_eating",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which hand did the Prophet teach a child to eat with?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The left hand as the usual choice"
+        },
+        {
+          "id": "b",
+          "text": "The right hand"
+        },
+        {
+          "id": "c",
+          "text": "Both hands for every bite"
+        },
+        {
+          "id": "d",
+          "text": "Different hands at random for each bite"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The teaching includes mentioning Allah, eating with the right hand and taking food from nearby.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5376",
+          "label": "Sahih al-Bukhari 5376",
+          "url": "https://sunnah.com/bukhari:5376"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_011",
+      "conceptId": "hadith_mother",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who was named first when a man asked who deserved his best companionship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "His employer"
+        },
+        {
+          "id": "b",
+          "text": "His business partner"
+        },
+        {
+          "id": "c",
+          "text": "His mother"
+        },
+        {
+          "id": "d",
+          "text": "His neighbor"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet emphasized the mother's right repeatedly, then mentioned the father.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5971",
+          "label": "Sahih al-Bukhari 5971",
+          "url": "https://sunnah.com/bukhari:5971"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_012",
+      "conceptId": "hadith_neighbors",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Whose rights did Jibril repeatedly emphasize to the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only rulers' rights"
+        },
+        {
+          "id": "b",
+          "text": "Only travelers' rights"
+        },
+        {
+          "id": "c",
+          "text": "Only merchants' rights"
+        },
+        {
+          "id": "d",
+          "text": "Neighbors' rights"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Jibril repeatedly urged good treatment of neighbors.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "Sahih al-Bukhari 6014",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_013",
+      "conceptId": "hadith_children_mercy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What quality did the Prophet show when kissing his grandson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mercy and affection"
+        },
+        {
+          "id": "b",
+          "text": "Pride in wealth"
+        },
+        {
+          "id": "c",
+          "text": "Dislike of children"
+        },
+        {
+          "id": "d",
+          "text": "Fear of criticism"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report shows affection toward children and warns against being unmerciful.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_014",
+      "conceptId": "hadith_kind_words",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What can count as charity according to hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An insult"
+        },
+        {
+          "id": "b",
+          "text": "A good word"
+        },
+        {
+          "id": "c",
+          "text": "A cruel joke"
+        },
+        {
+          "id": "d",
+          "text": "A false accusation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Charity includes helpful conduct and kind speech, as well as giving money.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2989",
+          "label": "Sahih al-Bukhari 2989",
+          "url": "https://sunnah.com/bukhari:2989"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_015",
+      "conceptId": "hadith_small_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which small act did the Prophet encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignoring every greeting"
+        },
+        {
+          "id": "b",
+          "text": "Mocking a visitor"
+        },
+        {
+          "id": "c",
+          "text": "Meeting someone with a cheerful face"
+        },
+        {
+          "id": "d",
+          "text": "Turning away from everyone"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "We should not dismiss small acts of goodness, including a warm expression.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "Sahih Muslim 2626",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_016",
+      "conceptId": "hadith_gentleness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Prophet say makes conduct more beautiful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Harshness"
+        },
+        {
+          "id": "b",
+          "text": "Mockery"
+        },
+        {
+          "id": "c",
+          "text": "Arrogance"
+        },
+        {
+          "id": "d",
+          "text": "Gentleness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Gentleness improves the way we deal with others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_017",
+      "conceptId": "hadith_purification",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is described in hadith as half of faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Purification"
+        },
+        {
+          "id": "b",
+          "text": "Physical strength"
+        },
+        {
+          "id": "c",
+          "text": "Expensive clothing"
+        },
+        {
+          "id": "d",
+          "text": "A large house"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith highlights purification, alongside prayer, charity, patience and remembrance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "223",
+          "label": "Sahih Muslim 223",
+          "url": "https://sunnah.com/muslim:223"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_018",
+      "conceptId": "hadith_feeding",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair of actions did the Prophet praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boasting and seeking attention"
+        },
+        {
+          "id": "b",
+          "text": "Feeding others and spreading salam"
+        },
+        {
+          "id": "c",
+          "text": "Collecting wealth and ignoring people"
+        },
+        {
+          "id": "d",
+          "text": "Arguing and interrupting"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith praises feeding people and greeting both familiar and unfamiliar people.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "Sahih al-Bukhari 12",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_019",
+      "conceptId": "hadith_help_sick",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet encourage toward sick people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Blaming them for being ill"
+        },
+        {
+          "id": "b",
+          "text": "Avoiding them out of contempt"
+        },
+        {
+          "id": "c",
+          "text": "Visiting them"
+        },
+        {
+          "id": "d",
+          "text": "Mocking their weakness"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet encouraged visiting the sick and feeding the hungry.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5649",
+          "label": "Sahih al-Bukhari 5649",
+          "url": "https://sunnah.com/bukhari:5649"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_020",
+      "conceptId": "hadith_fabrication",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How serious is deliberately inventing a saying and attributing it to the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is harmless if entertaining"
+        },
+        {
+          "id": "b",
+          "text": "It is acceptable if popular"
+        },
+        {
+          "id": "c",
+          "text": "It is allowed to gain followers"
+        },
+        {
+          "id": "d",
+          "text": "It is a grave sin"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet gave a severe warning against knowingly lying about him.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "Sahih al-Bukhari 110",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_021",
+      "conceptId": "hadith_definition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can a report of the Prophet's actions be a hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, hadith include actions as well as words"
+        },
+        {
+          "id": "b",
+          "text": "No, only rhyming speech counts"
+        },
+        {
+          "id": "c",
+          "text": "No, only written letters count"
+        },
+        {
+          "id": "d",
+          "text": "No, actions can never be reported"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Hadith are not limited to spoken statements; reports of conduct and approvals are included.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_022",
+      "conceptId": "hadith_transmission",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What did the Prophet ask those present to do with his teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep it only for their families"
+        },
+        {
+          "id": "b",
+          "text": "Convey it to those absent"
+        },
+        {
+          "id": "c",
+          "text": "Sell it only to wealthy people"
+        },
+        {
+          "id": "d",
+          "text": "Hide it from new learners"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The instruction helped his teaching reach people who were not there to hear it directly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "67",
+          "label": "Sahih al-Bukhari 67",
+          "url": "https://sunnah.com/bukhari:67"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_023",
+      "conceptId": "hadith_fabrication",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a good intention make it acceptable to invent a hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, if it encourages charity"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if it sounds religious"
+        },
+        {
+          "id": "c",
+          "text": "No, words must not be falsely attributed to the Prophet"
+        },
+        {
+          "id": "d",
+          "text": "Yes, if no author is named"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A worthy aim does not justify knowingly making up a Prophetic statement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "Sahih al-Bukhari 110",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_024",
+      "conceptId": "hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is an intention in the hadith about deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The place where someone lives"
+        },
+        {
+          "id": "b",
+          "text": "The amount of time on a clock"
+        },
+        {
+          "id": "c",
+          "text": "The number of people nearby"
+        },
+        {
+          "id": "d",
+          "text": "The purpose behind an action"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "An intention is why someone chooses to act; sincerity is central to worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_025",
+      "conceptId": "hadith_care_others",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What should a believer wish for a fellow Muslim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The good they wish for themselves"
+        },
+        {
+          "id": "b",
+          "text": "Failure in every effort"
+        },
+        {
+          "id": "c",
+          "text": "Hardship without reason"
+        },
+        {
+          "id": "d",
+          "text": "Loss of every blessing"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith teaches sincere goodwill toward one's fellow believer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "13",
+          "label": "Sahih al-Bukhari 13",
+          "url": "https://sunnah.com/bukhari:13"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_026",
+      "conceptId": "hadith_no_harm",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which two sources of harm are specifically mentioned in a hadith about a Muslim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The hair and the shoes"
+        },
+        {
+          "id": "b",
+          "text": "The tongue and the hand"
+        },
+        {
+          "id": "c",
+          "text": "The height and the age"
+        },
+        {
+          "id": "d",
+          "text": "The clothes and the bag"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report emphasizes protecting others from harmful words and actions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "Sahih al-Bukhari 10",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_027",
+      "conceptId": "hadith_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which behavior is warned against as a trait of hypocrisy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Returning a borrowed item"
+        },
+        {
+          "id": "b",
+          "text": "Keeping a promise"
+        },
+        {
+          "id": "c",
+          "text": "Betraying a trust"
+        },
+        {
+          "id": "d",
+          "text": "Speaking honestly"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The warning calls us to examine our conduct; it is not a license to label people over a single mistake.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "Sahih al-Bukhari 33",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_028",
+      "conceptId": "hadith_character",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What quality did the Prophet praise among the best people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An expensive appearance"
+        },
+        {
+          "id": "b",
+          "text": "A famous family name"
+        },
+        {
+          "id": "c",
+          "text": "A large social following"
+        },
+        {
+          "id": "d",
+          "text": "Good character"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet linked excellence with good manners and character.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6035",
+          "label": "Sahih al-Bukhari 6035",
+          "url": "https://sunnah.com/bukhari:6035"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_029",
+      "conceptId": "hadith_backbiting",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can a true but hurtful comment about an absent person still be backbiting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, truth alone does not make such speech acceptable"
+        },
+        {
+          "id": "b",
+          "text": "No, true comments can never be backbiting"
+        },
+        {
+          "id": "c",
+          "text": "Only if it is written in a book"
+        },
+        {
+          "id": "d",
+          "text": "Only if money is involved"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith distinguishes backbiting from slander: a false allegation adds another wrong. Legitimate reporting of harm is a separate matter.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "Sahih Muslim 2589",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_030",
+      "conceptId": "hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Allah regard rather than appearance and wealth in this hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fashion and fame"
+        },
+        {
+          "id": "b",
+          "text": "Hearts and deeds"
+        },
+        {
+          "id": "c",
+          "text": "Height and hairstyle"
+        },
+        {
+          "id": "d",
+          "text": "Titles and possessions"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The teaching directs attention to the heart and conduct, rather than outward status.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_031",
+      "conceptId": "hadith_charity_actions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is charity limited to giving money?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only coins count"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only large donations count"
+        },
+        {
+          "id": "c",
+          "text": "No, practical help can also be charity"
+        },
+        {
+          "id": "d",
+          "text": "Yes, only wealthy people can give it"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report includes helping with transport, kind words and removing hazards among acts of charity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2989",
+          "label": "Sahih al-Bukhari 2989",
+          "url": "https://sunnah.com/bukhari:2989"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_032",
+      "conceptId": "hadith_road_safety",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does hadith say about removing something harmful from a path?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is valuable only if paid"
+        },
+        {
+          "id": "b",
+          "text": "It is only a ruler's concern"
+        },
+        {
+          "id": "c",
+          "text": "It has no connection with goodness"
+        },
+        {
+          "id": "d",
+          "text": "It is an act of charity"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Making a shared path safer is one of the charitable actions named in the report.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2989",
+          "label": "Sahih al-Bukhari 2989",
+          "url": "https://sunnah.com/bukhari:2989"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_033",
+      "conceptId": "hadith_animals",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the story of giving water to a thirsty dog teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kindness to animals can be rewarded"
+        },
+        {
+          "id": "b",
+          "text": "Only kindness to people matters"
+        },
+        {
+          "id": "c",
+          "text": "Animals should always be ignored"
+        },
+        {
+          "id": "d",
+          "text": "Water must never be shared"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet affirmed reward for caring for living creatures.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "Sahih al-Bukhari 2363",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_034",
+      "conceptId": "hadith_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What encouragement does hadith give someone seeking religious knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning benefits only famous people"
+        },
+        {
+          "id": "b",
+          "text": "Allah eases a path to Paradise for the learner"
+        },
+        {
+          "id": "c",
+          "text": "Only wealthy people may learn"
+        },
+        {
+          "id": "d",
+          "text": "Beginners should avoid asking questions"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Seeking knowledge is a valuable path; beginners can start with reliable, accessible learning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_035",
+      "conceptId": "hadith_helping",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does hadith teach about helping a fellow Muslim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help is worthwhile only when public"
+        },
+        {
+          "id": "b",
+          "text": "Only relatives deserve any help"
+        },
+        {
+          "id": "c",
+          "text": "Allah helps His servant who helps their brother"
+        },
+        {
+          "id": "d",
+          "text": "Helping others always wastes time"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report encourages easing others' difficulties and offering support.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_036",
+      "conceptId": "hadith_sincerity_advice",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In the hadith describing religion as sincere counsel, what attitude belongs toward fellow Muslims?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enjoyment of their mistakes"
+        },
+        {
+          "id": "b",
+          "text": "A wish to embarrass them"
+        },
+        {
+          "id": "c",
+          "text": "Indifference to their needs"
+        },
+        {
+          "id": "d",
+          "text": "Sincere concern for their welfare"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Sincere counsel includes wishing people well and guiding them honestly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "55a",
+          "label": "Sahih Muslim 55a",
+          "url": "https://sunnah.com/muslim:55a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_037",
+      "conceptId": "hadith_ease_teaching",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How did the Prophet tell people to teach and encourage others?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make things easy and offer glad tidings"
+        },
+        {
+          "id": "b",
+          "text": "Make every lesson frightening"
+        },
+        {
+          "id": "c",
+          "text": "Make beginners feel unwelcome"
+        },
+        {
+          "id": "d",
+          "text": "Demand that everyone learn instantly"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The instruction promotes encouragement and avoids unnecessary difficulty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "Sahih al-Bukhari 69",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_038",
+      "conceptId": "hadith_lawful_ease",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "When choosing the easier of two options, what condition did the Prophet observe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It must impress the most people"
+        },
+        {
+          "id": "b",
+          "text": "The option must not be sinful"
+        },
+        {
+          "id": "c",
+          "text": "It must cost more money"
+        },
+        {
+          "id": "d",
+          "text": "It must be the least familiar"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ease is valued within obedience to Allah; it does not make a sinful choice acceptable.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6126",
+          "label": "Sahih al-Bukhari 6126",
+          "url": "https://sunnah.com/bukhari:6126"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_039",
+      "conceptId": "hadith_prayer_light",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is prayer compared to in a well-known hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A heavy chain"
+        },
+        {
+          "id": "b",
+          "text": "A locked door"
+        },
+        {
+          "id": "c",
+          "text": "A light"
+        },
+        {
+          "id": "d",
+          "text": "An empty container"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report describes prayer as light and highlights several other forms of worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "223",
+          "label": "Sahih Muslim 223",
+          "url": "https://sunnah.com/muslim:223"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_040",
+      "conceptId": "hadith_angry_advice",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What advice did the Prophet repeat to a man seeking counsel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always win the argument"
+        },
+        {
+          "id": "b",
+          "text": "Never accept advice"
+        },
+        {
+          "id": "c",
+          "text": "Answer every insult immediately"
+        },
+        {
+          "id": "d",
+          "text": "Do not give in to anger"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "This brief counsel encourages guarding oneself against anger and its harmful consequences.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6116",
+          "label": "Sahih al-Bukhari 6116",
+          "url": "https://sunnah.com/bukhari:6116"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_041",
+      "conceptId": "hadith_fabrication",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A post labels an unfamiliar quote as a hadith without a source. What should you do before sharing it as the Prophet's words?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check a reliable source or ask a qualified person"
+        },
+        {
+          "id": "b",
+          "text": "Forward it because it is popular"
+        },
+        {
+          "id": "c",
+          "text": "Add a hadith number of your own"
+        },
+        {
+          "id": "d",
+          "text": "Assume every religious quote is authentic"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Checking before attribution is a practical way to avoid spreading false statements about the Prophet.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "Sahih al-Bukhari 110",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_042",
+      "conceptId": "hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are about to donate. Which intention best reflects the hadith about deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Making others feel inferior"
+        },
+        {
+          "id": "b",
+          "text": "Seeking Allah's pleasure and helping someone"
+        },
+        {
+          "id": "c",
+          "text": "Winning praise at any cost"
+        },
+        {
+          "id": "d",
+          "text": "Proving you are richer than everyone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A donation should be guided by sincerity rather than a desire to show off.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_043",
+      "conceptId": "hadith_speech",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A group chat is becoming insulting. Which response follows the teaching about good speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Add a sharper insult"
+        },
+        {
+          "id": "b",
+          "text": "Spread the insults to another group"
+        },
+        {
+          "id": "c",
+          "text": "Use helpful words or refrain from joining in"
+        },
+        {
+          "id": "d",
+          "text": "Invent a rumor to distract people"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Responsible speech includes refusing to add harmful words to a conversation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_044",
+      "conceptId": "hadith_self_control",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone insults you. What best reflects the strength praised in hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Threaten them immediately"
+        },
+        {
+          "id": "b",
+          "text": "Break something to show power"
+        },
+        {
+          "id": "c",
+          "text": "Humiliate their family"
+        },
+        {
+          "id": "d",
+          "text": "Control your response without abusing them"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Choosing self-control in anger shows the strength described by the Prophet.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_045",
+      "conceptId": "hadith_truthfulness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You made an error at work. Which response follows the teaching on truthfulness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Explain honestly and work to correct it"
+        },
+        {
+          "id": "b",
+          "text": "Blame an absent colleague"
+        },
+        {
+          "id": "c",
+          "text": "Create a false excuse"
+        },
+        {
+          "id": "d",
+          "text": "Alter the records to hide it"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Truthfulness remains important when admitting a mistake feels uncomfortable.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_046",
+      "conceptId": "hadith_regular_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Which voluntary learning plan best reflects the hadith about regular deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A huge target you abandon immediately"
+        },
+        {
+          "id": "b",
+          "text": "A manageable amount you can continue daily"
+        },
+        {
+          "id": "c",
+          "text": "Studying only when someone praises you"
+        },
+        {
+          "id": "d",
+          "text": "Making promises without starting"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A realistic, steady habit applies the teaching about consistent good deeds.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "Sahih al-Bukhari 6464",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_047",
+      "conceptId": "hadith_quran_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can accurately help a beginner read a short surah. Which action follows the teaching about learning and teaching Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock their slow progress"
+        },
+        {
+          "id": "b",
+          "text": "Pretend to know what you do not"
+        },
+        {
+          "id": "c",
+          "text": "Teach patiently within what you know"
+        },
+        {
+          "id": "d",
+          "text": "Discourage them from practicing"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Passing on Quran knowledge carefully and patiently puts this teaching into practice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "Sahih al-Bukhari 5027",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_048",
+      "conceptId": "hadith_eating",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You sit down to a shared meal. Which practice matches the Prophet's guidance to a child?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reach across everyone for each bite"
+        },
+        {
+          "id": "b",
+          "text": "Start by criticizing the other guests"
+        },
+        {
+          "id": "c",
+          "text": "Take food from someone else's plate"
+        },
+        {
+          "id": "d",
+          "text": "Mention Allah, use the right hand and eat from nearby"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report gives simple table manners that can be practiced at everyday meals.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5376",
+          "label": "Sahih al-Bukhari 5376",
+          "url": "https://sunnah.com/bukhari:5376"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_049",
+      "conceptId": "hadith_mother",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your mother asks for reasonable help while you are free. Which action reflects her right to good companionship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respond kindly and help her"
+        },
+        {
+          "id": "b",
+          "text": "Ignore her to appear important"
+        },
+        {
+          "id": "c",
+          "text": "Mock her request"
+        },
+        {
+          "id": "d",
+          "text": "Insist she should never ask you"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith emphasizes a mother's right to care and good companionship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5971",
+          "label": "Sahih al-Bukhari 5971",
+          "url": "https://sunnah.com/bukhari:5971"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_050",
+      "conceptId": "hadith_neighbors",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An elderly neighbor is struggling with groceries. Which response reflects care for neighbors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laugh at their difficulty"
+        },
+        {
+          "id": "b",
+          "text": "Offer suitable help"
+        },
+        {
+          "id": "c",
+          "text": "Block the entrance"
+        },
+        {
+          "id": "d",
+          "text": "Make the task harder"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Offering considerate help is a practical expression of the neighborly care emphasized in hadith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "Sahih al-Bukhari 6014",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_051",
+      "conceptId": "hadith_children_mercy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A young child is upset. Which approach reflects the Prophet's mercy toward children?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat kindness as weakness"
+        },
+        {
+          "id": "b",
+          "text": "Mock the child's tears"
+        },
+        {
+          "id": "c",
+          "text": "Offer comfort and affection"
+        },
+        {
+          "id": "d",
+          "text": "Frighten the child for amusement"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Mercy and appropriate affection belong in our treatment of children.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_052",
+      "conceptId": "hadith_kind_words",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have no money to donate today. What charitable act can you still offer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An embarrassing nickname"
+        },
+        {
+          "id": "b",
+          "text": "A false accusation"
+        },
+        {
+          "id": "c",
+          "text": "A cruel public comment"
+        },
+        {
+          "id": "d",
+          "text": "An encouraging, truthful word"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A good word is one of the nonfinancial forms of charity mentioned in hadith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2989",
+          "label": "Sahih al-Bukhari 2989",
+          "url": "https://sunnah.com/bukhari:2989"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_053",
+      "conceptId": "hadith_small_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You meet a classmate who seems left out. Which simple act fits the teaching about small good deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Greet them warmly"
+        },
+        {
+          "id": "b",
+          "text": "Turn their loneliness into a joke"
+        },
+        {
+          "id": "c",
+          "text": "Pretend not to see them"
+        },
+        {
+          "id": "d",
+          "text": "Tell others to avoid them"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A friendly welcome applies the encouragement not to dismiss small acts of goodness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "Sahih Muslim 2626",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_054",
+      "conceptId": "hadith_gentleness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A beginner asks the same question again. Which response reflects gentleness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insult their intelligence"
+        },
+        {
+          "id": "b",
+          "text": "Explain calmly once more"
+        },
+        {
+          "id": "c",
+          "text": "Make fun of them publicly"
+        },
+        {
+          "id": "d",
+          "text": "Refuse because they are new"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Gentleness improves how we teach and interact with others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_055",
+      "conceptId": "hadith_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend leaves a book with you for safekeeping. Which action avoids betraying that trust?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sell it without permission"
+        },
+        {
+          "id": "b",
+          "text": "Hide it and deny receiving it"
+        },
+        {
+          "id": "c",
+          "text": "Protect it and return it as agreed"
+        },
+        {
+          "id": "d",
+          "text": "Give it away as though it were yours"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Safeguarding what someone entrusts to us is the opposite of betrayal.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "Sahih al-Bukhari 33",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_056",
+      "conceptId": "hadith_road_safety",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You notice a small obstacle on a walkway and can safely move it. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Push it where people are more likely to trip"
+        },
+        {
+          "id": "b",
+          "text": "Hide it under a loose mat"
+        },
+        {
+          "id": "c",
+          "text": "Leave it there for amusement"
+        },
+        {
+          "id": "d",
+          "text": "Remove it so people can pass safely"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Removing a hazard applies the charitable action described in the hadith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2989",
+          "label": "Sahih al-Bukhari 2989",
+          "url": "https://sunnah.com/bukhari:2989"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_057",
+      "conceptId": "hadith_animals",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A thirsty animal can safely be given water. Which action reflects the lesson of the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provide water without harming it"
+        },
+        {
+          "id": "b",
+          "text": "Tease it with an empty bowl"
+        },
+        {
+          "id": "c",
+          "text": "Prevent it from reaching water"
+        },
+        {
+          "id": "d",
+          "text": "Hurt it for approaching"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report encourages compassionate care for animals.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "Sahih al-Bukhari 2363",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_058",
+      "conceptId": "hadith_backbiting",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends are mocking an absent person's faults for entertainment. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Add another embarrassing detail"
+        },
+        {
+          "id": "b",
+          "text": "Avoid joining in and redirect the talk"
+        },
+        {
+          "id": "c",
+          "text": "Record the mockery to spread it"
+        },
+        {
+          "id": "d",
+          "text": "Say it is always fine if true"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Being true does not automatically make such talk acceptable; the hadith warns against backbiting.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "Sahih Muslim 2589",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_059",
+      "conceptId": "hadith_help_sick",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend is ill and welcomes a visit. Which action follows the Prophet's encouragement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demand that they entertain you"
+        },
+        {
+          "id": "b",
+          "text": "Mock them for resting"
+        },
+        {
+          "id": "c",
+          "text": "Visit considerately without overburdening them"
+        },
+        {
+          "id": "d",
+          "text": "Insist their illness makes them worthless"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A considerate visit is one way to care for someone who is unwell.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5649",
+          "label": "Sahih al-Bukhari 5649",
+          "url": "https://sunnah.com/bukhari:5649"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_hadith_knowledge_060",
+      "conceptId": "hadith_ease_teaching",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone has just begun learning Islam. Which approach follows the instruction to encourage and ease learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Overwhelm them to prove your knowledge"
+        },
+        {
+          "id": "b",
+          "text": "Mock every mistake"
+        },
+        {
+          "id": "c",
+          "text": "Tell them beginners are unwelcome"
+        },
+        {
+          "id": "d",
+          "text": "Explain a simple next step and encourage them"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Clear, encouraging teaching helps a new learner progress without unnecessary hardship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "Sahih al-Bukhari 69",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    }
+  ]
+}

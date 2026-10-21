@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "pro",
+  "categoryId": "everyday_worship",
+  "title": "Everyday Worship",
+  "description": "General User → Pro. Familiar worship knowledge, broader meanings and short everyday applications requiring deeper understanding. Covers purification, prayer, voluntary worship, fasting, Hajj, sacrifice, supplication and seeking forgiveness. Specialist disputes and individual fatwas are outside the scope.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro describes the knowledge and understanding required across all question styles. Styles are not difficulty levels. Requires deeper understanding, connecting familiar teachings and distinguishing common misconceptions beyond Mid, without specialist study. This is General User Pro, not the separate Ultra bank. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original educational paraphrases, not verbatim translations. Modern scenarios illustrate the cited principles. This is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_pro_everyday_worship_001",
+      "conceptId": "worship_wudu_spiritual_cleansing",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Beyond washing the body, what benefit does the wudu report describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sins being washed away with the water"
+        },
+        {
+          "id": "b",
+          "text": "A guarantee of never sinning again"
+        },
+        {
+          "id": "c",
+          "text": "Freedom from every future duty"
+        },
+        {
+          "id": "d",
+          "text": "Automatic ownership of others' rights"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report connects washing the limbs with spiritual cleansing. Its encouragement is not permission to continue wrongdoing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "244",
+          "label": "Sahih Muslim 244",
+          "url": "https://sunnah.com/muslim:244"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_002",
+      "conceptId": "worship_adhan_wasilah",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "After responding to the adhan and sending blessings on the Prophet, what does the report encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repeating the obligatory prayer immediately"
+        },
+        {
+          "id": "b",
+          "text": "Asking Allah to grant him al-Wasilah"
+        },
+        {
+          "id": "c",
+          "text": "Announcing a personal promise publicly"
+        },
+        {
+          "id": "d",
+          "text": "Treating the iqamah as unnecessary"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report teaches asking Allah to grant the Prophet al-Wasilah, a special rank in Paradise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "384",
+          "label": "Sahih Muslim 384",
+          "url": "https://sunnah.com/muslim:384"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_003",
+      "conceptId": "worship_sujud_supplication",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which prayer posture is especially connected with closeness to Allah and increased supplication?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bowing"
+        },
+        {
+          "id": "b",
+          "text": "Sitting for the tashahhud"
+        },
+        {
+          "id": "c",
+          "text": "Prostration"
+        },
+        {
+          "id": "d",
+          "text": "Standing after bowing"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report highlights the servant's closeness to Allah in prostration and encourages abundant dua there.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "Sahih Muslim 482",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_004",
+      "conceptId": "worship_fatihah_praise_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What two elements of Al-Fatihah are highlighted in the report describing Allah's response to its recitation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rules of trade and descriptions of penalties"
+        },
+        {
+          "id": "b",
+          "text": "Historical accounts and family lineages"
+        },
+        {
+          "id": "c",
+          "text": "Travel instructions and directions"
+        },
+        {
+          "id": "d",
+          "text": "Praising Allah and asking for guidance"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report follows Al-Fatihah from praise of Allah to worship, dependence and the request for guidance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "395a",
+          "label": "Sahih Muslim 395a",
+          "url": "https://sunnah.com/muslim:395a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_005",
+      "conceptId": "worship_prayer_avoid_distractions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two distractions are specifically addressed in the report about preparing for prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desired food being served and an urgent toilet need"
+        },
+        {
+          "id": "b",
+          "text": "An ordinary watch and a plain prayer mat"
+        },
+        {
+          "id": "c",
+          "text": "A quiet room and clean clothing"
+        },
+        {
+          "id": "d",
+          "text": "A short surah and a small congregation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report addresses pressing distractions that interfere with attention, including food one wants and the urgent need to relieve oneself.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "560a",
+          "label": "Sahih Muslim 560a",
+          "url": "https://sunnah.com/muslim:560a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_006",
+      "conceptId": "worship_voluntary_fatigue",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet direct when shown a rope used to keep standing in prayer through fatigue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use a stronger rope for longer standing"
+        },
+        {
+          "id": "b",
+          "text": "Remove the rope and avoid forcing exhausted worship"
+        },
+        {
+          "id": "c",
+          "text": "Make the practice compulsory for everyone"
+        },
+        {
+          "id": "d",
+          "text": "Measure devotion only by time spent standing"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "He corrected forcing continued standing through exhaustion and directed prayer while active, with sitting when tired.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1150",
+          "label": "Sahih al-Bukhari 1150",
+          "url": "https://sunnah.com/bukhari:1150"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_007",
+      "conceptId": "worship_prayer_at_home",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What exception accompanies the general praise of prayer at home in the cited report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Sunnah prayers before Fajr"
+        },
+        {
+          "id": "b",
+          "text": "The Sunnah prayers after Dhuhr"
+        },
+        {
+          "id": "c",
+          "text": "The obligatory prayers"
+        },
+        {
+          "id": "d",
+          "text": "Ordinary voluntary prayers during the day"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report praises prayer at home while explicitly excepting the obligatory prayers. The distinction matters when applying it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "731",
+          "label": "Sahih al-Bukhari 731",
+          "url": "https://sunnah.com/bukhari:731"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_008",
+      "conceptId": "worship_duha_daily_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which prayer is described as sufficient for the daily charity connected with the body's joints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The two Sunnah rakahs before Fajr"
+        },
+        {
+          "id": "b",
+          "text": "The Witr prayer"
+        },
+        {
+          "id": "c",
+          "text": "The Tarawih prayer"
+        },
+        {
+          "id": "d",
+          "text": "Two rakahs of Duha"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report describes different good acts as charity and highlights two rakahs of Duha in this connection.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "720",
+          "label": "Sahih Muslim 720",
+          "url": "https://sunnah.com/muslim:720"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_009",
+      "conceptId": "worship_witr_planning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which prayer does the Prophet encourage as the final prayer of the night?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Witr"
+        },
+        {
+          "id": "b",
+          "text": "The two Sunnah rakahs before Fajr"
+        },
+        {
+          "id": "c",
+          "text": "The first voluntary prayer after sunset"
+        },
+        {
+          "id": "d",
+          "text": "The two rakahs of Duha"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report encourages ending one's night prayer with Witr. Other reports explain planning its timing according to waking expectations.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "998",
+          "label": "Sahih al-Bukhari 998",
+          "url": "https://sunnah.com/bukhari:998"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_010",
+      "conceptId": "worship_fasting_reward_joy",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two joys does the fasting report describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Completing suhur and starting work"
+        },
+        {
+          "id": "b",
+          "text": "Breaking the fast and meeting one's Lord"
+        },
+        {
+          "id": "c",
+          "text": "Receiving guests and sharing food"
+        },
+        {
+          "id": "d",
+          "text": "Beginning Ramadan and calculating zakah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report joins the joy of breaking the fast with the believer's joy on meeting Allah because of fasting.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1904",
+          "label": "Sahih al-Bukhari 1904",
+          "url": "https://sunnah.com/bukhari:1904"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_011",
+      "conceptId": "worship_ramadan_makeup_record",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which fasts did Aishah report making up in Shaban?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only voluntary fasts from a weekly routine"
+        },
+        {
+          "id": "b",
+          "text": "Only the six fasts of Shawwal"
+        },
+        {
+          "id": "c",
+          "text": "Days missed from Ramadan"
+        },
+        {
+          "id": "d",
+          "text": "An additional full month of voluntary fasting"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Aishah's report concerns making up missed Ramadan days, distinguishing an outstanding duty from an additional voluntary fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1950",
+          "label": "Sahih al-Bukhari 1950",
+          "url": "https://sunnah.com/bukhari:1950"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_012",
+      "conceptId": "worship_shawwal_six",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which practice is linked with Ramadan in the report about six additional fasts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adding six days to Ramadan itself"
+        },
+        {
+          "id": "b",
+          "text": "Fasting six days instead of Ramadan"
+        },
+        {
+          "id": "c",
+          "text": "Fasting only on the two Eid days"
+        },
+        {
+          "id": "d",
+          "text": "Following Ramadan with six fasts in Shawwal"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report concerns Ramadan followed by six days in Shawwal; it does not redefine the length of Ramadan.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1164a",
+          "label": "Sahih Muslim 1164a",
+          "url": "https://sunnah.com/muslim:1164a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_013",
+      "conceptId": "worship_ashura_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which event is linked with Musa's fasting in the report about Ashura?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah rescuing the Children of Israel from their enemy"
+        },
+        {
+          "id": "b",
+          "text": "The completion of the Farewell Hajj"
+        },
+        {
+          "id": "c",
+          "text": "The beginning of Quranic revelation"
+        },
+        {
+          "id": "d",
+          "text": "The conquest of Makkah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report connects the fast with Allah's rescue of Musa's people, giving an example of gratitude expressed through worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2004",
+          "label": "Sahih al-Bukhari 2004",
+          "url": "https://sunnah.com/bukhari:2004"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_014",
+      "conceptId": "worship_arafah_expiation",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "For which day's fast did the Prophet express hope of expiation concerning the preceding and coming years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eid al-Fitr"
+        },
+        {
+          "id": "b",
+          "text": "The day of Arafah"
+        },
+        {
+          "id": "c",
+          "text": "Eid al-Adha"
+        },
+        {
+          "id": "d",
+          "text": "The first day of Shawwal"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report singles out Arafah's fast for this hoped-for expiation. The reward is encouragement toward worship, not a license to sin.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1162a",
+          "label": "Sahih Muslim 1162a",
+          "url": "https://sunnah.com/muslim:1162a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_015",
+      "conceptId": "worship_dhul_hijjah_good_deeds",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which period is especially praised for good deeds in the cited report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the first ten days of Shaban"
+        },
+        {
+          "id": "b",
+          "text": "Only the final ten days of Muharram"
+        },
+        {
+          "id": "c",
+          "text": "The first ten days of Dhul-Hijjah"
+        },
+        {
+          "id": "d",
+          "text": "Only the first ten days of Shawwal"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report gives special merit to good deeds during the first ten days of Dhul-Hijjah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "969",
+          "label": "Sahih al-Bukhari 969",
+          "url": "https://sunnah.com/bukhari:969"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_016",
+      "conceptId": "worship_sacrifice_taqwa",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran emphasize as reaching Allah in connection with sacrifice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The animal's blood itself"
+        },
+        {
+          "id": "b",
+          "text": "The animal's meat itself"
+        },
+        {
+          "id": "c",
+          "text": "The price announced to other people"
+        },
+        {
+          "id": "d",
+          "text": "The worshipper's piety"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse directs attention to piety, explaining that neither the meat nor blood itself reaches Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "37",
+          "label": "Quran 22:37",
+          "url": "https://quran.com/22/37"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_017",
+      "conceptId": "worship_hajj_conduct_provisions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Alongside taking provisions for Hajj, what does the Quran call the best provision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taqwa, or mindfulness of Allah"
+        },
+        {
+          "id": "b",
+          "text": "A larger travel group"
+        },
+        {
+          "id": "c",
+          "text": "More expensive luggage"
+        },
+        {
+          "id": "d",
+          "text": "A more impressive travel story"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse joins practical provisions with taqwa, directing the pilgrim toward spiritual preparation as well as material planning.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "197",
+          "label": "Quran 2:197",
+          "url": "https://quran.com/2/197"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_018",
+      "conceptId": "worship_istikhara_trust",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the taught istikhara supplication, whose knowledge is relied upon to choose what is good?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dream interpreter's certainty about everything"
+        },
+        {
+          "id": "b",
+          "text": "Allah's knowledge"
+        },
+        {
+          "id": "c",
+          "text": "The loudest friend's preference"
+        },
+        {
+          "id": "d",
+          "text": "The applicant's claim to know the unseen"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The supplication acknowledges Allah's knowledge and power and asks for what is good in religion, livelihood and outcome.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1166",
+          "label": "Sahih al-Bukhari 1166",
+          "url": "https://sunnah.com/bukhari:1166"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_019",
+      "conceptId": "worship_dua_firm_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which manner of asking for forgiveness does the cited hadith teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make the request depend on public approval"
+        },
+        {
+          "id": "b",
+          "text": "Ask as though Allah needs persuasion by force"
+        },
+        {
+          "id": "c",
+          "text": "Ask Allah firmly rather than adding 'if You wish'"
+        },
+        {
+          "id": "d",
+          "text": "Avoid asking unless the outcome is already known"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report teaches earnest, definite asking and explains that no one can compel Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6339",
+          "label": "Sahih al-Bukhari 6339",
+          "url": "https://sunnah.com/bukhari:6339"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_020",
+      "conceptId": "worship_istighfar_regular",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What regular practice did the Prophet describe doing many times each day?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reserving all voluntary worship for Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Making forgiveness requests depend on dreams"
+        },
+        {
+          "id": "c",
+          "text": "Limiting repentance to an annual gathering"
+        },
+        {
+          "id": "d",
+          "text": "Seeking Allah's forgiveness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His frequent istighfar shows that seeking forgiveness belongs in ongoing worship, rather than only rare occasions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2702a",
+          "label": "Sahih Muslim 2702a",
+          "url": "https://sunnah.com/muslim:2702a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_021",
+      "conceptId": "worship_wudu_spiritual_cleansing",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which reading keeps the promise of cleansing through worship in its proper moral context?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hope for forgiveness should accompany avoiding wrongdoing"
+        },
+        {
+          "id": "b",
+          "text": "Washing gives advance permission for future sins"
+        },
+        {
+          "id": "c",
+          "text": "Physical cleanliness makes repentance unnecessary"
+        },
+        {
+          "id": "d",
+          "text": "Other people's rights disappear after any wudu"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The cleansing report encourages hope, while the expiation report also stresses avoiding major sins. Neither grants permission to wrong others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "244",
+          "label": "Sahih Muslim 244",
+          "url": "https://sunnah.com/muslim:244"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "233a",
+          "label": "Sahih Muslim 233a",
+          "url": "https://sunnah.com/muslim:233a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_022",
+      "conceptId": "worship_adhan_wasilah",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In the adhan supplication described in the report, who is asked to grant the Prophet al-Wasilah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The caller to prayer"
+        },
+        {
+          "id": "b",
+          "text": "Allah"
+        },
+        {
+          "id": "c",
+          "text": "The congregation's leader"
+        },
+        {
+          "id": "d",
+          "text": "The person hearing the adhan"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The teaching is a request directed to Allah to grant the Prophet the special rank; keeping that direction clear matters.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "384",
+          "label": "Sahih Muslim 384",
+          "url": "https://sunnah.com/muslim:384"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_023",
+      "conceptId": "worship_sujud_supplication",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does the encouragement to make dua in sujud broaden understanding of that posture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It makes the rest of prayer unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "It replaces the need to learn prayer properly"
+        },
+        {
+          "id": "c",
+          "text": "It combines humble submission with turning to Allah in need"
+        },
+        {
+          "id": "d",
+          "text": "It means supplication is forbidden at every other time"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report adds the meaning of closeness and supplication to the posture, without restricting all dua to it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "Sahih Muslim 482",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_024",
+      "conceptId": "worship_fatihah_praise_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is treating Al-Fatihah as unrelated to supplication a mistaken reading?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its meaning consists only of a historical account"
+        },
+        {
+          "id": "b",
+          "text": "Its final verses contain no request at all"
+        },
+        {
+          "id": "c",
+          "text": "Its words address only the people nearby"
+        },
+        {
+          "id": "d",
+          "text": "Its recitation includes a request for guidance"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report explicitly connects the request for the straight path with the servant's asking and Allah's response.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "395a",
+          "label": "Sahih Muslim 395a",
+          "url": "https://sunnah.com/muslim:395a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_025",
+      "conceptId": "worship_prayer_avoid_distractions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What concern links the advice about desired food and an urgent toilet need?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Removing pressing distractions from prayer"
+        },
+        {
+          "id": "b",
+          "text": "Making convenience the only measure of prayer"
+        },
+        {
+          "id": "c",
+          "text": "Treating every passing thought as an emergency"
+        },
+        {
+          "id": "d",
+          "text": "Requiring a meal before every prayer"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Both examples concern needs that can occupy attention. They do not mean every prayer requires eating first.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "560a",
+          "label": "Sahih Muslim 560a",
+          "url": "https://sunnah.com/muslim:560a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_026",
+      "conceptId": "worship_voluntary_fatigue",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which principle is best supported by the incident of the prayer rope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The greater the exhaustion, the better the worship must be"
+        },
+        {
+          "id": "b",
+          "text": "Physical strain alone does not make voluntary worship better"
+        },
+        {
+          "id": "c",
+          "text": "Continued standing must always be forced despite exhaustion"
+        },
+        {
+          "id": "d",
+          "text": "Using support to prolong exhaustion is the goal of voluntary prayer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet did not praise using a rope to force exhausted standing. The example challenges measuring devotion by strain alone.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1150",
+          "label": "Sahih al-Bukhari 1150",
+          "url": "https://sunnah.com/bukhari:1150"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_027",
+      "conceptId": "worship_prayer_at_home",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is the home-prayer report insufficient evidence for abandoning obligatory congregational prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It says all mosques have no religious purpose"
+        },
+        {
+          "id": "b",
+          "text": "It refers only to people unable to walk"
+        },
+        {
+          "id": "c",
+          "text": "It explicitly distinguishes obligatory prayers from its general praise"
+        },
+        {
+          "id": "d",
+          "text": "It declares every prayer at home invalid"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Applying the report requires preserving its stated exception, rather than extending its general wording to every prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "731",
+          "label": "Sahih al-Bukhari 731",
+          "url": "https://sunnah.com/bukhari:731"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_028",
+      "conceptId": "worship_duha_daily_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does the Duha report challenge the idea that charity always requires money?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It says financial giving has no value"
+        },
+        {
+          "id": "b",
+          "text": "It limits charity to wealthy worshippers"
+        },
+        {
+          "id": "c",
+          "text": "It turns every voluntary prayer into payment of zakah"
+        },
+        {
+          "id": "d",
+          "text": "It counts remembrance and good conduct alongside the prayer"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report includes praise of Allah and promoting good as charity, and then mentions Duha. This does not erase separate financial obligations.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "720",
+          "label": "Sahih Muslim 720",
+          "url": "https://sunnah.com/muslim:720"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_029",
+      "conceptId": "worship_witr_planning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What factor does the report use when advising earlier or later Witr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whether a person expects to wake later"
+        },
+        {
+          "id": "b",
+          "text": "Whether the prayer will be observed by others"
+        },
+        {
+          "id": "c",
+          "text": "Which rakah count one's friends prefer"
+        },
+        {
+          "id": "d",
+          "text": "Whether the following day is Friday"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The guidance takes waking expectations into account, distinguishing one who fears missing the later night from one who expects to rise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "755a",
+          "label": "Sahih Muslim 755a",
+          "url": "https://sunnah.com/muslim:755a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_030",
+      "conceptId": "worship_fasting_reward_joy",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does linking iftar with meeting Allah show about the fasting person's joy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is limited to enjoying an expensive meal"
+        },
+        {
+          "id": "b",
+          "text": "It includes present relief and hoped-for reward with Allah"
+        },
+        {
+          "id": "c",
+          "text": "It depends on other people knowing the fast"
+        },
+        {
+          "id": "d",
+          "text": "It excludes any joy at the end of the day"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The two joys connect a lawful present pleasure with the deeper hope of reward in the Hereafter.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1904",
+          "label": "Sahih al-Bukhari 1904",
+          "url": "https://sunnah.com/bukhari:1904"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_031",
+      "conceptId": "worship_ramadan_makeup_record",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What distinction is important when reading Aishah's account of later fasting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A missed day becomes optional merely as time passes"
+        },
+        {
+          "id": "b",
+          "text": "Only the original calendar date can count for a fast"
+        },
+        {
+          "id": "c",
+          "text": "Making up Ramadan is different from adding optional fasts"
+        },
+        {
+          "id": "d",
+          "text": "All fasting outside Ramadan has the same purpose"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Her report identifies a remaining Ramadan obligation fulfilled later, rather than treating every later fast as voluntary.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1950",
+          "label": "Sahih al-Bukhari 1950",
+          "url": "https://sunnah.com/bukhari:1950"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_032",
+      "conceptId": "worship_shawwal_six",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does the six-days report not support fasting only six days instead of Ramadan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It makes Ramadan a choice between six or thirty days"
+        },
+        {
+          "id": "b",
+          "text": "It treats every month as interchangeable with Ramadan"
+        },
+        {
+          "id": "c",
+          "text": "It removes the difference between obligatory and extra fasting"
+        },
+        {
+          "id": "d",
+          "text": "It describes following Ramadan, not replacing it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The wording links the additional Shawwal fasts to observing Ramadan; the extra practice is not a substitute for the obligation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1164a",
+          "label": "Sahih Muslim 1164a",
+          "url": "https://sunnah.com/muslim:1164a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_033",
+      "conceptId": "worship_ashura_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What relationship between gratitude and worship appears in the Ashura account?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deliverance by Allah is remembered through fasting"
+        },
+        {
+          "id": "b",
+          "text": "Gratitude is measured only by public celebration"
+        },
+        {
+          "id": "c",
+          "text": "Remembering a blessing removes the need for obedience"
+        },
+        {
+          "id": "d",
+          "text": "Thankfulness must never include an act of worship"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The account links Allah's rescue with Musa's fast and the Prophet's observance, illustrating grateful worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2004",
+          "label": "Sahih al-Bukhari 2004",
+          "url": "https://sunnah.com/bukhari:2004"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_034",
+      "conceptId": "worship_arafah_expiation",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which conclusion misuses a promise of expiation associated with fasting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It encourages seeking Allah's forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "It makes deliberate future wrongdoing safe"
+        },
+        {
+          "id": "c",
+          "text": "It provides motivation for sincere worship"
+        },
+        {
+          "id": "d",
+          "text": "It gives hope without permission to commit sins"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Expiation encourages return to Allah. The wider teaching about expiation also addresses avoiding major sins, rather than planning them.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1162a",
+          "label": "Sahih Muslim 1162a",
+          "url": "https://sunnah.com/muslim:1162a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "233a",
+          "label": "Sahih Muslim 233a",
+          "url": "https://sunnah.com/muslim:233a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_035",
+      "conceptId": "worship_dhul_hijjah_good_deeds",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should the first ten days of Dhul-Hijjah not be treated as relevant only to pilgrims?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Everyone must travel to receive any reward then"
+        },
+        {
+          "id": "b",
+          "text": "Only acts performed inside Makkah can be good deeds"
+        },
+        {
+          "id": "c",
+          "text": "The report praises good deeds without limiting them to Hajj participants"
+        },
+        {
+          "id": "d",
+          "text": "Ordinary believers must suspend all worship during those days"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The encouragement concerns good deeds generally. The report does not restrict its audience to people performing Hajj.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "969",
+          "label": "Sahih al-Bukhari 969",
+          "url": "https://sunnah.com/bukhari:969"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_036",
+      "conceptId": "worship_sacrifice_taqwa",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which claim is challenged by the verse explaining what reaches Allah in sacrifice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sincere obedience matters in worship"
+        },
+        {
+          "id": "b",
+          "text": "Sacrifice should be approached with mindfulness of Allah"
+        },
+        {
+          "id": "c",
+          "text": "The physical offering is connected with a spiritual purpose"
+        },
+        {
+          "id": "d",
+          "text": "The purchase price alone proves superior piety"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse makes piety central. An outward price comparison cannot by itself establish the worshipper's sincerity or standing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "37",
+          "label": "Quran 22:37",
+          "url": "https://quran.com/22/37"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_037",
+      "conceptId": "worship_hajj_conduct_provisions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is learning Hajj's movements alone an incomplete preparation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Quran also addresses conduct and taqwa during Hajj"
+        },
+        {
+          "id": "b",
+          "text": "Learning the movements makes good conduct unnecessary"
+        },
+        {
+          "id": "c",
+          "text": "Travel arrangements determine every pilgrim's sincerity"
+        },
+        {
+          "id": "d",
+          "text": "The verse replaces all rites with polite conversation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse addresses wrongdoing and argument as well as provisions and taqwa, joining ritual preparation with conduct.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "197",
+          "label": "Quran 2:197",
+          "url": "https://quran.com/2/197"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_038",
+      "conceptId": "worship_istikhara_trust",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which expectation is not made a requirement in the taught istikhara report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking Allah to facilitate what is good"
+        },
+        {
+          "id": "b",
+          "text": "Receiving a dream before taking any further step"
+        },
+        {
+          "id": "c",
+          "text": "Asking for harmful choices to be turned away"
+        },
+        {
+          "id": "d",
+          "text": "Acknowledging that Allah knows what one does not"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report teaches prayer and supplication for a good outcome. It does not stipulate a dream as a required response.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1166",
+          "label": "Sahih al-Bukhari 1166",
+          "url": "https://sunnah.com/bukhari:1166"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_039",
+      "conceptId": "worship_dua_firm_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How does firmly asking Allah differ from claiming power over Him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It means the worshipper can force an outcome"
+        },
+        {
+          "id": "b",
+          "text": "It removes Allah's freedom to grant as He wills"
+        },
+        {
+          "id": "c",
+          "text": "It expresses earnest need without any ability to compel Him"
+        },
+        {
+          "id": "d",
+          "text": "It requires announcing that one's wish must occur"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report joins determined asking with the explanation that Allah cannot be compelled. Earnestness is not control over Him.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6339",
+          "label": "Sahih al-Bukhari 6339",
+          "url": "https://sunnah.com/bukhari:6339"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_040",
+      "conceptId": "worship_istighfar_regular",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which assumption is challenged by the Prophet's frequent seeking of forgiveness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seeking forgiveness can be part of daily worship"
+        },
+        {
+          "id": "b",
+          "text": "A person can keep turning to Allah throughout life"
+        },
+        {
+          "id": "c",
+          "text": "Prophetic practice can guide a remembrance routine"
+        },
+        {
+          "id": "d",
+          "text": "Religious commitment makes regular istighfar unnecessary"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His example places seeking forgiveness within regular devotion. It should not be dismissed as unnecessary for people already practicing religion.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2702a",
+          "label": "Sahih Muslim 2702a",
+          "url": "https://sunnah.com/muslim:2702a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_041",
+      "conceptId": "worship_wudu_spiritual_cleansing",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone treats wudu as an empty routine with no spiritual meaning. Which reminder fits the cleansing report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Washing the limbs is also connected with forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "Wudu guarantees that no future sin will occur"
+        },
+        {
+          "id": "c",
+          "text": "More expensive water guarantees greater sincerity"
+        },
+        {
+          "id": "d",
+          "text": "Purification removes the need to care about conduct"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report gives purification a spiritual dimension by connecting the washed limbs with sins being removed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "244",
+          "label": "Sahih Muslim 244",
+          "url": "https://sunnah.com/muslim:244"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_042",
+      "conceptId": "worship_adhan_wasilah",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After responding to the adhan, a learner wants to follow the cited practice. What comes next?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace the coming prayer with a private wish"
+        },
+        {
+          "id": "b",
+          "text": "Send blessings on the Prophet and ask Allah for his al-Wasilah"
+        },
+        {
+          "id": "c",
+          "text": "Ask the caller to personally grant Paradise"
+        },
+        {
+          "id": "d",
+          "text": "Assume responding removes the need for prayer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report teaches blessings on the Prophet followed by asking Allah to grant him al-Wasilah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "384",
+          "label": "Sahih Muslim 384",
+          "url": "https://sunnah.com/muslim:384"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_043",
+      "conceptId": "worship_sujud_supplication",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner thinks sujud is only a physical movement. Which addition reflects the cited teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treat it as a substitute for every other prayer posture"
+        },
+        {
+          "id": "b",
+          "text": "Assume it prevents supplication at all other times"
+        },
+        {
+          "id": "c",
+          "text": "Recognize its closeness to Allah and make appropriate dua"
+        },
+        {
+          "id": "d",
+          "text": "Measure its value only by how many people observe it"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report highlights closeness to Allah in prostration and encourages supplication, deepening understanding beyond movement alone.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "Sahih Muslim 482",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_044",
+      "conceptId": "worship_fatihah_praise_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person recites Al-Fatihah mechanically and wants to understand it better. What focus fits the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Think of its words as unrelated to one's need for guidance"
+        },
+        {
+          "id": "b",
+          "text": "Treat its requests as intended only for other worshippers"
+        },
+        {
+          "id": "c",
+          "text": "Focus only on finishing before anyone nearby"
+        },
+        {
+          "id": "d",
+          "text": "Notice its praise of Allah and sincere request for guidance"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report connects the servant's praise and request with Allah's response, supporting meaningful attention to what is recited.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "395a",
+          "label": "Sahih Muslim 395a",
+          "url": "https://sunnah.com/muslim:395a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_045",
+      "conceptId": "worship_prayer_avoid_distractions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With ample prayer time remaining, someone has an urgent toilet need but forces immediate prayer. What fits the cited guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Attend to the need, purify properly and pray within the time"
+        },
+        {
+          "id": "b",
+          "text": "Use the urgency as proof of stronger devotion"
+        },
+        {
+          "id": "c",
+          "text": "Deliberately wait until the prayer time has ended"
+        },
+        {
+          "id": "d",
+          "text": "Assume the need removes every prayer requirement"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report discourages praying while resisting an urgent toilet need. The scenario allows addressing it without losing the prayer time.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "560a",
+          "label": "Sahih Muslim 560a",
+          "url": "https://sunnah.com/muslim:560a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_046",
+      "conceptId": "worship_voluntary_fatigue",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "During extra prayer, someone uses support solely to force exhausted standing. Which lesson fits the rope incident?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continue regardless because greater strain always means greater reward"
+        },
+        {
+          "id": "b",
+          "text": "Avoid forcing exhaustion as though strain itself were the goal"
+        },
+        {
+          "id": "c",
+          "text": "Require the same practice from all worshippers"
+        },
+        {
+          "id": "d",
+          "text": "Abandon all future voluntary prayer because of this fatigue"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet directed removal of the rope and advised prayer while active, with sitting when tired.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1150",
+          "label": "Sahih al-Bukhari 1150",
+          "url": "https://sunnah.com/bukhari:1150"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_047",
+      "conceptId": "worship_prayer_at_home",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person assumes ordinary voluntary prayer at home is always inferior to praying it publicly. What reminder fits the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every voluntary prayer must be witnessed by a crowd"
+        },
+        {
+          "id": "b",
+          "text": "A home becomes suitable only when no mosque exists"
+        },
+        {
+          "id": "c",
+          "text": "Prayer at home receives special praise, with obligatory prayers excepted"
+        },
+        {
+          "id": "d",
+          "text": "The report says obligatory and voluntary prayers are identical in this respect"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report recognizes the value of home prayer and preserves a distinction concerning obligatory prayers.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "731",
+          "label": "Sahih al-Bukhari 731",
+          "url": "https://sunnah.com/bukhari:731"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_048",
+      "conceptId": "worship_duha_daily_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner confuses Duha's charitable value with paying due zakah. What is the sound distinction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two rakahs automatically pay every outstanding financial obligation"
+        },
+        {
+          "id": "b",
+          "text": "A prayer's merit makes every other charitable act worthless"
+        },
+        {
+          "id": "c",
+          "text": "Only wealthy people may benefit from the Duha prayer"
+        },
+        {
+          "id": "d",
+          "text": "The report praises Duha without turning it into payment of zakah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report's use of charity includes remembrance and good acts; it does not make Duha a substitute for separately due zakah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "720",
+          "label": "Sahih Muslim 720",
+          "url": "https://sunnah.com/muslim:720"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_049",
+      "conceptId": "worship_witr_planning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone fears sleeping through the later night. Which Witr plan follows the cited guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pray Witr earlier in the night rather than risk missing it"
+        },
+        {
+          "id": "b",
+          "text": "Insist on delaying despite expecting not to wake"
+        },
+        {
+          "id": "c",
+          "text": "Omit Witr because the latest time is uncertain"
+        },
+        {
+          "id": "d",
+          "text": "Move Witr to the following afternoon instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report specifically advises earlier Witr for someone who fears not rising later, while praising later prayer for one expecting to wake.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "755a",
+          "label": "Sahih Muslim 755a",
+          "url": "https://sunnah.com/muslim:755a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_050",
+      "conceptId": "worship_fasting_reward_joy",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A fasting person is pleased at iftar and wonders whether that joy contradicts devotion. What fits the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A sincere fast requires feeling no relief at sunset"
+        },
+        {
+          "id": "b",
+          "text": "Joy at breaking the fast is expressly recognized"
+        },
+        {
+          "id": "c",
+          "text": "Joy means the fast had no spiritual purpose"
+        },
+        {
+          "id": "d",
+          "text": "Only other people's praise can justify happiness"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report recognizes the fasting person's joy at iftar alongside joy on meeting Allah because of the fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1904",
+          "label": "Sahih al-Bukhari 1904",
+          "url": "https://sunnah.com/bukhari:1904"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_051",
+      "conceptId": "worship_ramadan_makeup_record",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person has missed Ramadan days to make up and is organizing a fasting tracker. What distinction should it preserve?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only whether a fast was noticed by other people"
+        },
+        {
+          "id": "b",
+          "text": "Only how many hours the person stayed awake"
+        },
+        {
+          "id": "c",
+          "text": "Outstanding Ramadan days and additional voluntary fasts"
+        },
+        {
+          "id": "d",
+          "text": "Treat every later fast as unrelated to Ramadan"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Aishah's account shows missed Ramadan days being made up later. A tracker should retain that purpose rather than classify everything as optional.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1950",
+          "label": "Sahih al-Bukhari 1950",
+          "url": "https://sunnah.com/bukhari:1950"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_052",
+      "conceptId": "worship_shawwal_six",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After completing Ramadan, a learner asks which extra fasts the six-days report describes. Which answer fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Six days that replace next year's Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Six additional days counted as Ramadan itself"
+        },
+        {
+          "id": "c",
+          "text": "Fasting on Eid al-Fitr to begin the practice"
+        },
+        {
+          "id": "d",
+          "text": "Six fasts in Shawwal following Ramadan"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report names six days in Shawwal following Ramadan, preserving the distinction between the month-long duty and the additional fasts.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1164a",
+          "label": "Sahih Muslim 1164a",
+          "url": "https://sunnah.com/muslim:1164a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_053",
+      "conceptId": "worship_ashura_gratitude",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone says gratitude for Allah's rescue can only be expressed through words. What does the Ashura account illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gratitude can also be expressed through an act of worship"
+        },
+        {
+          "id": "b",
+          "text": "Gratitude requires inventing a new annual obligation"
+        },
+        {
+          "id": "c",
+          "text": "Remembering blessings always excludes fasting"
+        },
+        {
+          "id": "d",
+          "text": "An act of worship has no connection with thankfulness"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The account connects deliverance with fasting, showing grateful remembrance through worship rather than words alone.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2004",
+          "label": "Sahih al-Bukhari 2004",
+          "url": "https://sunnah.com/bukhari:2004"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_054",
+      "conceptId": "worship_arafah_expiation",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A person plans deliberate wrongdoing because a virtuous fast has a promise of expiation. What should be corrected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The fast makes planned wrongdoing religiously harmless"
+        },
+        {
+          "id": "b",
+          "text": "A reward promise is not permission to commit sins"
+        },
+        {
+          "id": "c",
+          "text": "A calendar entry replaces the need for moral responsibility"
+        },
+        {
+          "id": "d",
+          "text": "Mentioning expiation means future conduct no longer matters"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The promise should encourage sincere worship and return to Allah. The broader expiation teaching stresses avoiding major sins.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1162a",
+          "label": "Sahih Muslim 1162a",
+          "url": "https://sunnah.com/muslim:1162a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "233a",
+          "label": "Sahih Muslim 233a",
+          "url": "https://sunnah.com/muslim:233a"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_055",
+      "conceptId": "worship_dhul_hijjah_good_deeds",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A non-pilgrim thinks the first ten days of Dhul-Hijjah offer nothing relevant at home. What fits the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume every good deed requires being in Makkah"
+        },
+        {
+          "id": "b",
+          "text": "Suspend ordinary worship until travel becomes possible"
+        },
+        {
+          "id": "c",
+          "text": "Use the days for good deeds within one's circumstances"
+        },
+        {
+          "id": "d",
+          "text": "Treat the period as unrelated to non-pilgrims"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report encourages good deeds generally, so a person need not be on Hajj to respond to that encouragement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "969",
+          "label": "Sahih al-Bukhari 969",
+          "url": "https://sunnah.com/bukhari:969"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_056",
+      "conceptId": "worship_sacrifice_taqwa",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two people compare sacrifice prices and claim the higher price proves greater piety. What should be corrected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A public price comparison reveals everyone's sincerity"
+        },
+        {
+          "id": "b",
+          "text": "The physical blood is what Allah needs from the offering"
+        },
+        {
+          "id": "c",
+          "text": "Piety has no relationship to sacrifice"
+        },
+        {
+          "id": "d",
+          "text": "Price alone cannot establish the piety emphasized by the verse"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse makes taqwa central and denies that the meat or blood itself reaches Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "37",
+          "label": "Quran 22:37",
+          "url": "https://quran.com/22/37"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_057",
+      "conceptId": "worship_hajj_conduct_provisions",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A pilgrim studies the rites carefully but dismisses quarrelling as irrelevant to Hajj. What does the verse add?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoiding argument and wrongdoing is part of Hajj's guidance"
+        },
+        {
+          "id": "b",
+          "text": "Correct movements make every dispute spiritually irrelevant"
+        },
+        {
+          "id": "c",
+          "text": "Travel expense compensates automatically for harmful conduct"
+        },
+        {
+          "id": "d",
+          "text": "Only the luggage and route require preparation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse directly addresses conduct during Hajj, including avoiding argument and wrongdoing, alongside its practical preparation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "197",
+          "label": "Quran 2:197",
+          "url": "https://quran.com/2/197"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_058",
+      "conceptId": "worship_istikhara_trust",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After istikhara, someone believes the prayer was incomplete because no dream came. What does the taught report establish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It requires a particular dream color every time"
+        },
+        {
+          "id": "b",
+          "text": "It teaches prayer and dua without requiring a dream"
+        },
+        {
+          "id": "c",
+          "text": "It guarantees that one's original preference must happen"
+        },
+        {
+          "id": "d",
+          "text": "It transfers knowledge of the unseen to the worshipper"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report asks Allah to facilitate good and turn away harm. It does not make receiving a dream a requirement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1166",
+          "label": "Sahih al-Bukhari 1166",
+          "url": "https://sunnah.com/bukhari:1166"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_059",
+      "conceptId": "worship_dua_firm_request",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner asks how to request forgiveness in the manner taught by the Prophet. Which wording fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Allah, forgive me only if You happen to wish"
+        },
+        {
+          "id": "b",
+          "text": "I can compel Allah to forgive me"
+        },
+        {
+          "id": "c",
+          "text": "O Allah, forgive me"
+        },
+        {
+          "id": "d",
+          "text": "People's approval must decide whether I ask Allah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report teaches a firm request for forgiveness rather than making the request conditional on whether Allah wishes.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6339",
+          "label": "Sahih al-Bukhari 6339",
+          "url": "https://sunnah.com/bukhari:6339"
+        }
+      ]
+    },
+    {
+      "id": "general_pro_everyday_worship_060",
+      "conceptId": "worship_istighfar_regular",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A regular worshipper thinks seeking forgiveness is needed only at an annual gathering. What fits the Prophet's example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Postpone every request until the next yearly gathering"
+        },
+        {
+          "id": "b",
+          "text": "Stop because regular prayer makes istighfar unnecessary"
+        },
+        {
+          "id": "c",
+          "text": "Wait for a dream before asking forgiveness"
+        },
+        {
+          "id": "d",
+          "text": "Include seeking forgiveness in ordinary daily worship"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet described seeking forgiveness repeatedly each day, giving an example of ongoing remembrance and return to Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2702a",
+          "label": "Sahih Muslim 2702a",
+          "url": "https://sunnah.com/muslim:2702a"
+        }
+      ]
+    }
+  ]
+}

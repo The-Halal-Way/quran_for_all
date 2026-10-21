@@ -1,0 +1,2324 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "character_conduct",
+  "title": "চরিত্র ও আচরণ",
+  "description": "সাধারণ ব্যবহারকারী → প্রাথমিক স্তর। সততা, আমানত, পরিবার, সদাচরণ, ন্যায়, গোপনীয়তা ও দায়িত্বশীল আচরণ নিয়ে পরিচিত শিক্ষা, আরও কিছু মৌলিক জ্ঞান ও ছোট দৈনন্দিন প্রয়োগ। প্রতিটি প্রশ্নই প্রাথমিক স্তরের। নম্বর এই শিক্ষাগুলো সম্পর্কে জ্ঞান বোঝায়; ঈমান বা ব্যক্তিগত চরিত্রের বিচার নয়।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞানের মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিসের মূল পাঠ মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যাগুলো শিক্ষামূলকভাবে নিজস্ব ভাষায় লেখা; এগুলো হুবহু অনুবাদ নয়। আধুনিক পরিস্থিতিগুলো সূত্রে উল্লিখিত মূলনীতির উদাহরণ। এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_beginner_character_conduct_001",
+      "conceptId": "character_truth",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইসলাম আমাদের কথায় কোন গুণটি থাকতে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্যবাদিতা"
+        },
+        {
+          "id": "b",
+          "text": "অসততা"
+        },
+        {
+          "id": "c",
+          "text": "বড়াই করা"
+        },
+        {
+          "id": "d",
+          "text": "মিথ্যা অভিযোগ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি শিখিয়েছেন যে সত্যবাদিতা নেকির পথে নিয়ে যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "সহিহ বুখারি ৬০৯৪",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_002",
+      "conceptId": "character_trust",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আমানত রক্ষা করার অর্থ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধার করা জিনিসকে উপহার মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "গচ্ছিত জিনিস ও দায়িত্বের যত্ন নেওয়া এবং প্রাপ্য বুঝিয়ে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "অন্যের জিনিস লুকিয়ে রাখা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু প্রশংসা পাওয়া যায় এমন প্রতিশ্রুতি রাখা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আমানত হলো গচ্ছিত জিনিস বা অর্পিত দায়িত্ব। কুরআনে আমানত তার প্রকৃত হকদারের কাছে ফিরিয়ে দেওয়ার নির্দেশ রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_003",
+      "conceptId": "character_promises",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "বৈধ কোনো প্রতিশ্রুতিকে কীভাবে দেখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দায়িত্বহীন কিছু কথা হিসেবে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু সুবিধা হলে মানতে হবে এমন কথা হিসেবে"
+        },
+        {
+          "id": "c",
+          "text": "পূরণ করার অঙ্গীকার হিসেবে"
+        },
+        {
+          "id": "d",
+          "text": "মজা করার জন্য ভাঙার বিষয় হিসেবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে অঙ্গীকার পূরণ ও তার জন্য জবাবদিহির ওপর গুরুত্ব দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "কুরআন ১৭:৩৪",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_004",
+      "conceptId": "character_parents",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মা-বাবার প্রতি কুরআন কী নির্দেশ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বৃদ্ধ হলে উপহাস"
+        },
+        {
+          "id": "b",
+          "text": "ছোট অনুরোধে রূঢ় কথা"
+        },
+        {
+          "id": "c",
+          "text": "সবার সামনে অপমান"
+        },
+        {
+          "id": "d",
+          "text": "সদাচরণ ও সম্মানজনক কথা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে এক আল্লাহর ইবাদতের সঙ্গে মা-বাবার প্রতি সদাচরণের নির্দেশ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "কুরআন ১৭:২৩",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_005",
+      "conceptId": "character_neighbors",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "প্রতিবেশীদের সঙ্গে কীভাবে আচরণ করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দয়া ও সদাচরণের সঙ্গে"
+        },
+        {
+          "id": "b",
+          "text": "ইচ্ছা করে বিরক্ত করে"
+        },
+        {
+          "id": "c",
+          "text": "অবজ্ঞার সঙ্গে"
+        },
+        {
+          "id": "d",
+          "text": "অকারণ শত্রুতা করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে কাছের ও দূরের উভয় ধরনের প্রতিবেশীকে সদাচরণ পাওয়ার যোগ্যদের মধ্যে উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "কুরআন ৪:৩৬",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_006",
+      "conceptId": "character_guests",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অতিথির প্রতি নবীজি কী করতে উৎসাহ দিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপমান করতে"
+        },
+        {
+          "id": "b",
+          "text": "আপ্যায়ন ও সম্মান করতে"
+        },
+        {
+          "id": "c",
+          "text": "উপহাস করতে"
+        },
+        {
+          "id": "d",
+          "text": "ইচ্ছা করে অবহেলা করতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবীজি অতিথিকে সম্মান করা ও অন্যদের সঙ্গে দায়িত্বশীল আচরণকে ঈমানের সঙ্গে যুক্ত করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "সহিহ বুখারি ৬০১৮",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_007",
+      "conceptId": "character_mercy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শিশুদের সঙ্গে আচরণে কোন গুণটি থাকা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিষ্ঠুরতা"
+        },
+        {
+          "id": "b",
+          "text": "অবজ্ঞা"
+        },
+        {
+          "id": "c",
+          "text": "মমতা"
+        },
+        {
+          "id": "d",
+          "text": "তাদের কষ্টের প্রতি উদাসীনতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি শিশুদের স্নেহ করেছেন এবং মমতার ওপর গুরুত্ব দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "সহিহ বুখারি ৫৯৯৭",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_008",
+      "conceptId": "character_gentleness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন গুণ আমাদের পারস্পরিক আচরণকে সুন্দর করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রূঢ়তা"
+        },
+        {
+          "id": "b",
+          "text": "অহংকার"
+        },
+        {
+          "id": "c",
+          "text": "উপহাস"
+        },
+        {
+          "id": "d",
+          "text": "কোমলতা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অন্যদের সঙ্গে আচরণে নবীজি কোমলতার প্রশংসা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "সহিহ মুসলিম ২৫৯৪a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_009",
+      "conceptId": "character_greetings",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইসলাম কোন অভিবাদন ছড়িয়ে দিতে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শান্তির অভিবাদন সালাম"
+        },
+        {
+          "id": "b",
+          "text": "অপমানজনক ডাকনাম"
+        },
+        {
+          "id": "c",
+          "text": "হুমকি"
+        },
+        {
+          "id": "d",
+          "text": "সম্পদ নিয়ে বড়াই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি পরিচিতের পাশাপাশি অপরিচিত মানুষকেও সালাম দিতে উৎসাহ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "সহিহ বুখারি ১২",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_010",
+      "conceptId": "character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্যের ভুলের প্রতি কোন প্রতিক্রিয়ার প্রশংসা কুরআনে করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিশোধ নিয়ে আনন্দ পাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "ক্ষমা করা"
+        },
+        {
+          "id": "c",
+          "text": "অপমান ছড়িয়ে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি ঝগড়া জিইয়ে রাখা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে রাগ সংবরণ ও মানুষকে ক্ষমা করার প্রশংসা করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "কুরআন ৩:১৩৪",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_011",
+      "conceptId": "character_patience",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সবর বলতে সাধারণত কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব দায়িত্ব ছেড়ে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি দেরিতে গালাগাল করা"
+        },
+        {
+          "id": "c",
+          "text": "ধৈর্য ও অবিচল থাকা"
+        },
+        {
+          "id": "d",
+          "text": "কোনো সমস্যাই নেই এমন ভান করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সবরের মধ্যে কষ্টের সময় অবিচল থাকা অন্তর্ভুক্ত। কুরআনে ধৈর্য ও সালাতের মাধ্যমে সাহায্য চাইতে উৎসাহ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "153",
+          "label": "কুরআন ২:১৫৩",
+          "url": "https://quran.com/2/153"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_012",
+      "conceptId": "character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মানুষকে তুচ্ছ মনে করার বিপরীত মনোভাব কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অহংকার"
+        },
+        {
+          "id": "b",
+          "text": "আত্মপ্রশংসা"
+        },
+        {
+          "id": "c",
+          "text": "অবজ্ঞা"
+        },
+        {
+          "id": "d",
+          "text": "বিনয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে মানুষের প্রতি অহংকার ও বড়াইপূর্ণ আচরণ থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "কুরআন ৩১:১৮",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_013",
+      "conceptId": "character_mockery",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অপমানজনক ডাকনাম সম্পর্কে কুরআন কী বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তা এড়িয়ে চলতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "জনপ্রিয় হলে তা উৎসাহিত"
+        },
+        {
+          "id": "c",
+          "text": "সব ক্ষেত্রেই তা বন্ধুত্বের প্রমাণ"
+        },
+        {
+          "id": "d",
+          "text": "অন্যরা হাসলেই তা গ্রহণযোগ্য"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে উপহাস ও অপমানজনক নামে ডাকা নিষেধ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_014",
+      "conceptId": "character_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবীজির ব্যাখ্যা অনুযায়ী গিবত কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিকভাবে সালাম দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অনুপস্থিত কারও দোষ এমনভাবে বলা যা সে অপছন্দ করে"
+        },
+        {
+          "id": "c",
+          "text": "সত্যভাবে কারও প্রশংসা করা"
+        },
+        {
+          "id": "d",
+          "text": "পথের দিকনির্দেশ চাওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে গিবতের ব্যাখ্যা এবং মিথ্যা অপবাদ থেকে এর পার্থক্য করা হয়েছে। ক্ষতির প্রতিকার চাইতে যথাযথভাবে জানানো আলাদা বিষয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "সহিহ মুসলিম ২৫৮৯",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_015",
+      "conceptId": "character_privacy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্যের বাড়িতে ঢোকার আগে কী চাইতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাদের জিনিসপত্র দেখার সুযোগ"
+        },
+        {
+          "id": "b",
+          "text": "তাদের আয়ের প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "অনুমতি"
+        },
+        {
+          "id": "d",
+          "text": "না জানিয়ে চমকে দেওয়ার অজুহাত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে প্রবেশের আগে অনুমতি চাওয়া ও বাড়ির লোকদের সালাম দেওয়া শেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27",
+          "label": "কুরআন ২৪:২৭",
+          "url": "https://quran.com/24/27"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_016",
+      "conceptId": "character_justice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অপছন্দের কারও ক্ষেত্রেও কোন গুণ বজায় রাখতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পক্ষপাত"
+        },
+        {
+          "id": "b",
+          "text": "নিষ্ঠুরতা"
+        },
+        {
+          "id": "c",
+          "text": "অসততা"
+        },
+        {
+          "id": "d",
+          "text": "ন্যায়বিচার"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন সতর্ক করে যে কাউকে অপছন্দ করা যেন আমাদের ন্যায়বিচার থেকে সরিয়ে না দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_017",
+      "conceptId": "character_family_ties",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আত্মীয়তার সম্পর্ক বজায় রাখার মধ্যে কী রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আত্মীয়দের সঙ্গে ভালো সম্পর্ক রাখা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু ধনী আত্মীয়দের সঙ্গে কথা বলা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু উপহারের জন্য আত্মীয়দের গুরুত্ব দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি ছোট বিরক্তিতে যোগাযোগ ছিন্ন করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি আত্মীয়তার সম্পর্ক বজায় রাখতে উৎসাহ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5986",
+          "label": "সহিহ বুখারি ৫৯৮৬",
+          "url": "https://sunnah.com/bukhari:5986"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_018",
+      "conceptId": "character_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "খাবার ও পানীয় সম্পর্কে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্পদ দেখাতে তা নষ্ট করতে"
+        },
+        {
+          "id": "b",
+          "text": "অপচয় না করে তা গ্রহণ করতে"
+        },
+        {
+          "id": "c",
+          "text": "অপচয়কে সাফল্যের লক্ষণ মনে করতে"
+        },
+        {
+          "id": "d",
+          "text": "সব সময় প্রয়োজনের চেয়ে বেশি নিতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে খাওয়া ও পান করার অনুমতির পাশাপাশি সীমালঙ্ঘন থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "কুরআন ৭:৩১",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_019",
+      "conceptId": "character_cooperation",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন কাজে মানুষের সহযোগিতা করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গুনাহ ও সীমালঙ্ঘনে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতারণা ও ধোঁকায়"
+        },
+        {
+          "id": "c",
+          "text": "নেকি ও আল্লাহ-সচেতনতায়"
+        },
+        {
+          "id": "d",
+          "text": "হয়রানি ও অপমানে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে সৎকাজে সহযোগিতা করতে এবং অন্যায়ে সহযোগিতা না করতে বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_020",
+      "conceptId": "character_good_character",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবীজি উত্তম মানুষদের কোন গুণের প্রশংসা করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিখ্যাত পদবি"
+        },
+        {
+          "id": "b",
+          "text": "দামি সম্পদ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু বাহ্যিক চেহারা"
+        },
+        {
+          "id": "d",
+          "text": "উত্তম চরিত্র"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবীজি চরিত্র ও আচরণে উৎকৃষ্ট হওয়ার প্রশংসা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6035",
+          "label": "সহিহ বুখারি ৬০৩৫",
+          "url": "https://sunnah.com/bukhari:6035"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_021",
+      "conceptId": "character_truth",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ভুল স্বীকার করা লজ্জার হলেও কি সত্যবাদিতা গুরুত্বপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, তখনো সততা গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "না, লজ্জা লাগলেই মিথ্যা বলা বৈধ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু কেউ ভুলটি রেকর্ড করলে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু কোনো বন্ধু জড়িত না থাকলে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সত্যবাদিতার শিক্ষা শুধু সহজ বা স্বস্তিকর পরিস্থিতির জন্য নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "সহিহ বুখারি ৬০৯৪",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_022",
+      "conceptId": "character_trust",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো জিনিস ধার নিলে কি আপনি তার মালিক হয়ে যান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, যথেষ্ট দিন রাখলে"
+        },
+        {
+          "id": "b",
+          "text": "না, প্রকৃত মালিকের অধিকার বহাল থাকে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, আপনার বেশি পছন্দ হলে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, মালিক চাইতে ভুলে গেলে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ধার করা জিনিস অন্যের সম্পদই থাকে এবং আমানত হিসেবে তার যত্ন নেওয়া উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_023",
+      "conceptId": "character_promises",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কেন না ভেবে অঙ্গীকার করা উচিত নয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কারণ শুধু লিখিত কথাই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "কারণ প্রতিশ্রুতি কেবল কথার সাজসজ্জা"
+        },
+        {
+          "id": "c",
+          "text": "কারণ অঙ্গীকারের জন্য মানুষকে জবাবদিহি করতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "কারণ প্রতিশ্রুতি ভাঙলে সব সময় বিশ্বাস বাড়ে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে অঙ্গীকার পূরণকে দায়িত্ব হিসেবে তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "কুরআন ১৭:৩৪",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_024",
+      "conceptId": "character_parents",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মা-বাবা বৃদ্ধ হয়ে গেলেও কি তাঁদের সম্মান করতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, শুধু কম বয়সী মা-বাবা সম্মানের যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "শুধু তাঁরা ধনী হলে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু অতিথিরা দেখলে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, বৃদ্ধ বয়সে যত্ন ও সম্মানজনক কথা বিশেষভাবে প্রয়োজন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মা-বাবা বৃদ্ধ বয়সে পৌঁছালে তাঁদের সঙ্গে সদাচরণের ওপর কুরআন বিশেষভাবে গুরুত্ব দিয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "কুরআন ১৭:২৩",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_025",
+      "conceptId": "character_good_speech",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মনে আসা প্রতিটি কথা বলে ফেলাই কি সব সময় উত্তম?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, কথা ভালো ও দায়িত্বশীল হওয়া উচিত"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রতিটি চিন্তা ঘোষণা করতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, নীরব থাকা সব সময় নিষিদ্ধ"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সবচেয়ে জোরে বলা কথাই ভালো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি ভালো কথা বলতে অথবা নীরব থাকতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "সহিহ বুখারি ৬০১৮",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_026",
+      "conceptId": "character_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো কথা সত্য হলেই কি তা নির্দোষ আড্ডার কথা হয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সত্য হলে সব সমস্যা শেষ"
+        },
+        {
+          "id": "b",
+          "text": "না, সত্য কিন্তু কষ্টদায়ক কথাও গিবত হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, অনলাইনে পোস্ট করলে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, যথেষ্ট মানুষ পুনরাবৃত্তি করলে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে ব্যাখ্যা করা হয়েছে যে প্রকৃত দোষ বলাও গিবত হতে পারে; বানিয়ে বললে তা অপবাদ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "সহিহ মুসলিম ২৫৮৯",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_027",
+      "conceptId": "character_verification",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ক্ষতিকর সংবাদ ছড়ানোর আগে কেন যাচাই করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরও নাটকীয় করতে"
+        },
+        {
+          "id": "b",
+          "text": "আগে বেশি প্রতিক্রিয়া পেতে"
+        },
+        {
+          "id": "c",
+          "text": "অজ্ঞতাবশত মানুষের ক্ষতি করা এড়াতে"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি গুজবকে নিশ্চিত বলে দেখাতে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন যাচাই করতে শেখায়, যেন অসতর্কভাবে সংবাদ বিশ্বাস করে মানুষের ক্ষতি না করা হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "কুরআন ৪৯:৬",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_028",
+      "conceptId": "character_suspicion",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কারও সম্পর্কে প্রমাণহীন সন্দেহকে কীভাবে দেখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সঙ্গে সঙ্গে প্রমাণ হিসেবে ধরতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "তাকে চাপ দিতে প্রকাশ করতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "বিশ্বাসযোগ্য করতে আরও তথ্য বানিয়ে যোগ করতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "তাকে প্রতিষ্ঠিত সত্য হিসেবে উপস্থাপন করা যাবে না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে গুনাহপূর্ণ সন্দেহ থেকে সতর্ক করা হয়েছে। অনুমান প্রতিষ্ঠিত প্রমাণ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_029",
+      "conceptId": "character_fairness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বন্ধুত্বের কারণে কি বিরোধে সত্য বা ন্যায় বদলে যাওয়া উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, ন্যায় বজায় রাখতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, বন্ধুকে সব সময় সঠিক ঘোষণা করতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু অপরিচিতদের ক্ষেত্রে তথ্য গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, নিজের দলের মধ্যে ন্যায়ের দরকার নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কাউকে পছন্দ করি কি না, তার ওপর ন্যায়বিচার নির্ভর করা উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_030",
+      "conceptId": "character_arrogance",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবীজি কোনটিকে অহংকার হিসেবে চিহ্নিত করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু পরিষ্কার সুন্দর পোশাক পরা"
+        },
+        {
+          "id": "b",
+          "text": "সত্য প্রত্যাখ্যান করা ও মানুষকে তুচ্ছ করা"
+        },
+        {
+          "id": "c",
+          "text": "ভদ্রভাবে সাহায্য চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "নিজের ভুলের সংশোধন গ্রহণ করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে পরিপাটি সাজপোশাক পছন্দ করা থেকে অহংকারকে আলাদা করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "সহিহ মুসলিম ৯১a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_031",
+      "conceptId": "character_human_dignity",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর কাছে মর্যাদার ভিত্তি হিসেবে কুরআন কী উল্লেখ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু জাতি বা গোত্র"
+        },
+        {
+          "id": "b",
+          "text": "শুধু সম্পদ"
+        },
+        {
+          "id": "c",
+          "text": "নেকি ও আল্লাহ-সচেতনতা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু জনপ্রিয়তা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জাতি ও গোত্র শ্রেষ্ঠত্বের ভিত্তি নয়। আয়াতটি তাকওয়ার দিকে নির্দেশ করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "কুরআন ৪৯:১৩",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_032",
+      "conceptId": "character_anger",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "রাগ নিয়ন্ত্রণ করার মধ্যে কী রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কখনো কোনো অনুভূতি হয় না বলে অস্বীকার করা"
+        },
+        {
+          "id": "b",
+          "text": "নিজের মেজাজ দিয়ে অন্যকে ভয় দেখানো"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি অপমানের জবাবে অপমান করা"
+        },
+        {
+          "id": "d",
+          "text": "ক্ষতিকর প্রতিক্রিয়া সংবরণ করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে রাগ সংবরণকারীদের প্রশংসা করা হয়েছে। মন খারাপ হলেই অন্যায় আচরণ করতে হবে এমন নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "কুরআন ৩:১৩৪",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_033",
+      "conceptId": "character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সামান্য ব্যক্তিগত অপরাধ ক্ষমা করার পরিচয় কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিশোধের বদলে ক্ষমা বেছে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অন্যকে অপমান করার সুযোগ খোঁজা"
+        },
+        {
+          "id": "c",
+          "text": "অপরাধটি অনন্তকাল সবার সামনে বলা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি মতবিরোধ আরও বাড়াতে চাওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ক্ষমার প্রশংসা করা হয়েছে। এর অর্থ বিপদ উপেক্ষা করা বা ক্ষতি থেকে সুরক্ষা ছেড়ে দেওয়া নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "কুরআন ৩:১৩৪",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_034",
+      "conceptId": "character_voice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কণ্ঠস্বর নিয়ে লুকমানের উপদেশ কী নির্দেশনা দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজেকে সঠিক প্রমাণ করতে চিৎকার করতে"
+        },
+        {
+          "id": "b",
+          "text": "অপ্রয়োজনীয় রূঢ় ও উচ্চস্বরে কথা এড়াতে"
+        },
+        {
+          "id": "c",
+          "text": "কোনো পরিস্থিতিতেই শোনার মতো স্বরে কথা না বলতে"
+        },
+        {
+          "id": "d",
+          "text": "যুক্তির বদলে গলার জোর ব্যবহার করতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "এই উপদেশ সংযম ও কণ্ঠস্বর নিচু রাখতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "কুরআন ৩১:১৯",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_035",
+      "conceptId": "character_permission",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো দর্শনার্থীকে অন্য সময় আসতে বলা হলে তাঁর কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জোর করে প্রবেশ করা"
+        },
+        {
+          "id": "b",
+          "text": "ঢুকতে না দেওয়া পর্যন্ত তর্ক করা"
+        },
+        {
+          "id": "c",
+          "text": "সম্মানের সঙ্গে ফিরে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "জানালা দিয়ে উঁকি দেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে ফিরে যেতে বলা হলে ফিরে যাওয়ার নির্দেশ রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "28",
+          "label": "কুরআন ২৪:২৮",
+          "url": "https://quran.com/24/28"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_036",
+      "conceptId": "character_trade",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাদিস অনুযায়ী কোন আচরণ বেচাকেনায় বরকত আনে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জানা ত্রুটি লুকানো"
+        },
+        {
+          "id": "b",
+          "text": "পণ্যের বৈশিষ্ট্য বানিয়ে বলা"
+        },
+        {
+          "id": "c",
+          "text": "ক্রেতাকে বিভ্রান্ত করা"
+        },
+        {
+          "id": "d",
+          "text": "সত্য বলা ও বিষয় পরিষ্কার করে জানানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবীজি ক্রেতা ও বিক্রেতার মধ্যে সততা ও খোলামেলা তথ্য দেওয়ার প্রশংসা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "সহিহ বুখারি ২০৭৯",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_037",
+      "conceptId": "character_help_wrongdoer",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো বন্ধু অন্যের ওপর জুলুম করলে তাকে কীভাবে সাহায্য করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যায় বন্ধ করতে সাহায্য করে"
+        },
+        {
+          "id": "b",
+          "text": "তথ্য না দেখে তার প্রতিটি কাজ সমর্থন করে"
+        },
+        {
+          "id": "c",
+          "text": "ক্ষতি চালিয়ে যেতে তা লুকাতে সাহায্য করে"
+        },
+        {
+          "id": "d",
+          "text": "আরও আক্রমণে উৎসাহ দিয়ে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি ব্যাখ্যা করেছেন, জালিমকে সাহায্য করার অর্থ তার জুলুম প্রতিরোধ করা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "সহিহ বুখারি ২৪৪৪",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_038",
+      "conceptId": "character_helping",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্যকে সাহায্য করার হাদিস কোন মনোভাবে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার দুর্দশা দেখে আনন্দ পাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের কষ্ট লাঘব করা"
+        },
+        {
+          "id": "c",
+          "text": "অপরিচিতদের সব সাহায্য অস্বীকার করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু প্রশংসার জন্য সাহায্য করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে বাস্তব সাহায্য ও কষ্ট লাঘব করতে উৎসাহ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "সহিহ মুসলিম ২৬৯৯a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_039",
+      "conceptId": "character_harm",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ভালো আচরণের মধ্যে ক্ষতিকর কাজের পাশাপাশি ক্ষতিকর কথাও এড়ানো কি অন্তর্ভুক্ত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, কথায় কখনো ক্ষতি হয় না"
+        },
+        {
+          "id": "b",
+          "text": "শুধু শারীরিক শক্তি গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কথা ও কাজ দুটোই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "শুধু প্রকাশ্যে করা কাজ গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি জিহ্বা ও হাতের ক্ষতি থেকে অন্যদের নিরাপদ রাখার ওপর গুরুত্ব দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "সহিহ বুখারি ১০",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_040",
+      "conceptId": "character_kindness_scope",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সদাচরণ কি শুধু সবচেয়ে কাছের পরিবারের মধ্যে সীমাবদ্ধ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, অন্য কেউ গুরুত্বপূর্ণ নয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অপরিচিতরা কখনো বিবেচনা পাওয়ার যোগ্য নয়"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ধনী পরিচিতদের যুক্ত করা উচিত"
+        },
+        {
+          "id": "d",
+          "text": "না, প্রতিবেশী, অভাবী ও অন্যদেরও অধিকার রয়েছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে মা-বাবা ও আত্মীয়দের বাইরেও কয়েকটি শ্রেণির সঙ্গে সদাচরণের নির্দেশ রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "কুরআন ৪:৩৬",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_041",
+      "conceptId": "character_truth",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কর্মক্ষেত্রে অনিচ্ছাকৃতভাবে কিছু নষ্ট করেছেন। কোনটি সত্যবাদিতার অনুসরণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্যভাবে জানিয়ে ঠিক করতে সাহায্য করা"
+        },
+        {
+          "id": "b",
+          "text": "অনুপস্থিত কাউকে দোষ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সব দায় এড়াতে অজুহাত বানানো"
+        },
+        {
+          "id": "d",
+          "text": "ঘটনা জেনেও অস্বীকার করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ভুল স্বীকার ও সংশোধনে সাহায্য করা সত্যবাদিতার বাস্তব প্রয়োগ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "সহিহ বুখারি ৬০৯৪",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_042",
+      "conceptId": "character_trust",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু আপনাকে বই ধার দিয়েছেন। বইটি নিয়ে কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অনুমতি ছাড়া তাতে লিখব"
+        },
+        {
+          "id": "b",
+          "text": "যত্নে রেখে কথা অনুযায়ী ফেরত দেব"
+        },
+        {
+          "id": "c",
+          "text": "নিজের বলে কাউকে দিয়ে দেব"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধু চাইলে লুকিয়ে রাখব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ধার করা জিনিস ফেরত দেওয়া আমানত ও মালিকের অধিকারকে সম্মান করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_043",
+      "conceptId": "character_promises",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নির্দিষ্ট সময়ে একটি বৈধ কাজে সাহায্য করতে সম্মত হয়েছেন। কী করার চেষ্টা করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মৌখিক, লিখিত নয় বলে উপেক্ষা করা"
+        },
+        {
+          "id": "b",
+          "text": "কেউ খেয়াল করে কি না দেখতে ইচ্ছা করে না যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কথা অনুযায়ী কাজটি করা"
+        },
+        {
+          "id": "d",
+          "text": "মজার কিছু পাওয়ায় কথা দেওয়া অস্বীকার করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "অঙ্গীকারকে গুরুত্ব দিয়ে দেখা প্রতিশ্রুতি সম্পর্কে কুরআনের শিক্ষার প্রতিফলন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "কুরআন ১৭:৩৪",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_044",
+      "conceptId": "character_parents",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বৃদ্ধ মা বা বাবা আপনাকে একটি কথা আবার বলতে বলেছেন। কোন উত্তরটি সদাচরণের পরিচয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো করে শোনা উচিত বলে চিৎকার করা"
+        },
+        {
+          "id": "b",
+          "text": "তাঁদের শ্রবণশক্তি নিয়ে ঠাট্টা করা"
+        },
+        {
+          "id": "c",
+          "text": "অন্যদের সামনে অপমান করা"
+        },
+        {
+          "id": "d",
+          "text": "ধৈর্য ও সম্মানের সঙ্গে আবার বলা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বয়স্ক মা-বাবার যত্নে সম্মানজনক কথা বিশেষভাবে গুরুত্বপূর্ণ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "কুরআন ১৭:২৩",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_045",
+      "conceptId": "character_neighbors",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জানলেন, গভীর রাতে আপনার অপ্রয়োজনীয় শব্দ প্রতিবেশীর অসুবিধা করছে। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শব্দ কমিয়ে তাঁর অসুবিধার কথা বিবেচনা করব"
+        },
+        {
+          "id": "b",
+          "text": "বিরক্ত করতে আরও শব্দ করব"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর ঘুমের প্রয়োজন নিয়ে ঠাট্টা করব"
+        },
+        {
+          "id": "d",
+          "text": "অন্যদেরও তাঁকে বিরক্ত করতে বলব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "এড়ানো যায় এমন বিরক্তি কমানো প্রতিবেশীর প্রতি সদাচরণের প্রয়োগ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "কুরআন ৪:৩৬",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_046",
+      "conceptId": "character_guests",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অতিথি এসেছেন, কিন্তু আপনার কাছে শুধু সাধারণ আপ্যায়নের ব্যবস্থা আছে। কোনটি অতিথিপরায়ণতা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাবার সাধারণ বলে অতিথিকে অপমান করা"
+        },
+        {
+          "id": "b",
+          "text": "সামর্থ্যের মধ্যে যা আছে তা দিয়ে আন্তরিকভাবে স্বাগত জানানো"
+        },
+        {
+          "id": "c",
+          "text": "দামি খাবারই একমাত্র সদাচরণ বলে ভাবা"
+        },
+        {
+          "id": "d",
+          "text": "অতিথিকে সালামেরও অযোগ্য মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অতিথিপরায়ণতার মধ্যে সম্মানজনক অভ্যর্থনা রয়েছে। সদাচরণ বিলাসিতার ওপর নির্ভর করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "সহিহ বুখারি ৬০১৮",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_047",
+      "conceptId": "character_mockery",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি দল এমন ডাকনাম ব্যবহার করছে যা এক সহপাঠীকে কষ্ট দেয়। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যরা হাসে বলে তা ব্যবহার করে যাব"
+        },
+        {
+          "id": "b",
+          "text": "আরও খারাপ ডাকনাম বানাব"
+        },
+        {
+          "id": "c",
+          "text": "সহপাঠীর পছন্দের সম্মানজনক নাম ব্যবহার করব"
+        },
+        {
+          "id": "d",
+          "text": "ডাকনামটি প্রকাশ্যে পোস্ট করব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "অপমানজনক নাম এড়ানো মর্যাদা রক্ষা করে এবং কুরআনের নির্দেশ অনুসরণ করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_048",
+      "conceptId": "character_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধুরা শুধু মজা করার জন্য অনুপস্থিত কারও দোষ বলছে। উত্তম প্রতিক্রিয়া কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরও বিব্রতকর দোষ যোগ করা"
+        },
+        {
+          "id": "b",
+          "text": "আলোচনাটি রেকর্ড করে ছড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "সত্য হলে সব সময় গ্রহণযোগ্য বলা"
+        },
+        {
+          "id": "d",
+          "text": "যোগ না দিয়ে কথা অন্যদিকে নেওয়ার চেষ্টা করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন ও হাদিসে গিবত থেকে সতর্ক করা হয়েছে। সাহায্য পেতে ক্ষতির কথা যথাযথভাবে জানানো আলাদা বিষয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "সহিহ মুসলিম ২৫৮৯",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_049",
+      "conceptId": "character_verification",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বার্তায় যাচাইহীন একটি অভিযোগ পেলেন। অন্যকে বলার আগে কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্য হিসেবে ফরোয়ার্ড না করে নির্ভরযোগ্যতা যাচাই করব"
+        },
+        {
+          "id": "b",
+          "text": "দ্রুত সব গ্রুপে ফরোয়ার্ড করব"
+        },
+        {
+          "id": "c",
+          "text": "নাটকীয় তথ্য যোগ করব"
+        },
+        {
+          "id": "d",
+          "text": "স্ক্রিনশট সবকিছু প্রমাণ করে ধরে নেব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "যাচাই গুজব ও বিভ্রান্তিকর সংবাদ থেকে অন্যায় ক্ষতি প্রতিরোধে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "কুরআন ৪৯:৬",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_050",
+      "conceptId": "character_privacy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ আপনার পাশে ফোনে ব্যক্তিগত বার্তা খোলা রেখেছেন। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কৌতূহল থেকে সব পড়ব"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর গোপনীয়তা রক্ষা করে উঁকিঝুঁকি এড়াব"
+        },
+        {
+          "id": "c",
+          "text": "মজা করার জন্য বার্তা নকল করব"
+        },
+        {
+          "id": "d",
+          "text": "অনুমতি ছাড়া স্ক্রিনশট ছড়াব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "গোয়েন্দাগিরি এড়ানো অন্যের গোপনীয়তা সম্মান করার অংশ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_051",
+      "conceptId": "character_justice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনার অপছন্দের একজনকে অন্যায়ভাবে দোষ দেওয়া হচ্ছে। কোনটি ন্যায়ের পরিচয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপছন্দ করি বলে মিথ্যা দোষ সমর্থন করা"
+        },
+        {
+          "id": "b",
+          "text": "তার বিরুদ্ধে আরও প্রমাণ বানানো"
+        },
+        {
+          "id": "c",
+          "text": "নিরপেক্ষভাবে সত্য তথ্য বলা"
+        },
+        {
+          "id": "d",
+          "text": "তর্কে জিততে জানা তথ্য উপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ন্যায়ের ফলে অপছন্দের কারও উপকার হলেও ন্যায় বজায় রাখতে হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_052",
+      "conceptId": "character_anger",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মতবিরোধের সময় রেগে গেছেন। কোনটি আত্মসংযমের পরিচয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য ব্যক্তিকে হুমকি দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর জিনিসপত্র ভাঙা"
+        },
+        {
+          "id": "c",
+          "text": "তর্কে তাঁর পরিবারকে টেনে আনা"
+        },
+        {
+          "id": "d",
+          "text": "বিরতি নিয়ে অপমান বা ক্ষতি ছাড়া জবাব দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ক্ষতিকর প্রতিক্রিয়া সংবরণ করা রাগ নিয়ন্ত্রণের বাস্তব পরিচয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "কুরআন ৩:১৩৪",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_053",
+      "conceptId": "character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু অনিচ্ছাকৃত সামান্য অপরাধের জন্য ক্ষমা চেয়েছেন। কোনটি ক্ষমার পরিচয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিশোধ না চেয়ে ক্ষমার আবেদন গ্রহণ করা"
+        },
+        {
+          "id": "b",
+          "text": "তাঁকে বিব্রত করার পরিকল্পনা চালিয়ে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সবাইকে তাঁর সঙ্গে কথা বন্ধ করতে বলা"
+        },
+        {
+          "id": "d",
+          "text": "অপমান করতে ঘটনাটি বারবার বলা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সামান্য ব্যক্তিগত অপরাধ ক্ষমা করা কুরআনে প্রশংসিত ক্ষমার বাস্তব প্রয়োগ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "134",
+          "label": "কুরআন ৩:১৩৪",
+          "url": "https://quran.com/3/134"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_054",
+      "conceptId": "character_gentleness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একজন নতুন শিক্ষার্থী একটি সহজ কাজে অসুবিধায় পড়েছেন। কোনটি কোমলতা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁকে বোকা বলা"
+        },
+        {
+          "id": "b",
+          "text": "ধৈর্য নিয়ে বুঝিয়ে আবার চেষ্টা করতে উৎসাহ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সবার সামনে তাঁকে নিয়ে হাসা"
+        },
+        {
+          "id": "d",
+          "text": "শাস্তি দিতে কাজটি আরও কঠিন করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কোমলতা অপ্রয়োজনীয় অপমান ছাড়া ভুল সংশোধন করতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "সহিহ মুসলিম ২৫৯৪a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_055",
+      "conceptId": "character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনার চেয়ে ছোট কেউ আপনার প্রকৃত ভুল ধরিয়ে দিয়েছেন। কোনটি বিনয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু তাঁর বয়সের কারণে তা প্রত্যাখ্যান করা"
+        },
+        {
+          "id": "b",
+          "text": "অহংকার বাঁচাতে তাঁকে উপহাস করা"
+        },
+        {
+          "id": "c",
+          "text": "সংশোধন গ্রহণ করে শেখা"
+        },
+        {
+          "id": "d",
+          "text": "সত্য বয়সের জ্যেষ্ঠতার ওপর নির্ভর করে দাবি করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ব্যক্তিকে খাটো না করে সত্য গ্রহণ করা অহংকারের বিপরীত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "সহিহ মুসলিম ৯১a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_056",
+      "conceptId": "character_family_ties",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কিছুদিন আত্মীয়ের খোঁজ নেননি এবং নিরাপদে যোগাযোগ করতে পারেন। কোনটি আত্মীয়তার সম্পর্ক বজায় রাখে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বড়াই করতে যোগাযোগ করা"
+        },
+        {
+          "id": "b",
+          "text": "ধনী নন বলে উপেক্ষা করা"
+        },
+        {
+          "id": "c",
+          "text": "টাকা দরকার হওয়া পর্যন্ত অপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর খবর জেনে আন্তরিক যত্ন দেখানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বিবেচনার সঙ্গে খোঁজ নেওয়া ভালো পারিবারিক সম্পর্ক বজায় রাখার একটি দৈনন্দিন উপায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5986",
+          "label": "সহিহ বুখারি ৫৯৮৬",
+          "url": "https://sunnah.com/bukhari:5986"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_057",
+      "conceptId": "character_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খাওয়ার সময় কতটুকু খাবার নেবেন তা বেছে নিতে পারেন। কোনটি অপচয় এড়ায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিমাণমতো নিয়ে প্রয়োজনে পরে আরও নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "পরে ফেলে দেওয়ার জন্য অনেক খাবার নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "অতিথিদের মুগ্ধ করতে খাবার নষ্ট করা"
+        },
+        {
+          "id": "d",
+          "text": "বেঁচে যাওয়া খাবারকে আরও অপচয়ের অজুহাত করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "পরিমাণমতো খাবার নেওয়া অপচয় এড়ানোর নির্দেশের প্রয়োগ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "কুরআন ৭:৩১",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_058",
+      "conceptId": "character_permission",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কারও বাড়িতে গেলে আপনাকে পরে আসতে বলা হলো। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিবারকে চিনি বলে ঢুকে পড়ব"
+        },
+        {
+          "id": "b",
+          "text": "অনুরোধকে সম্মান করে ফিরে যাব"
+        },
+        {
+          "id": "c",
+          "text": "জোর করে অভ্যর্থনা পেতে কড়া নাড়তে থাকব"
+        },
+        {
+          "id": "d",
+          "text": "জানালা দিয়ে দেখব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অনুমতি চাওয়ার মধ্যে প্রবেশের সুবিধা না থাকলে তা মেনে নেওয়াও রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27-28",
+          "label": "কুরআন ২৪:২৭-২৮",
+          "url": "https://quran.com/24/27-28"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_059",
+      "conceptId": "character_trade",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জানা একটি ত্রুটিসহ ব্যবহৃত ফোন বিক্রি করছেন। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "টাকা দেওয়া শেষ হওয়া পর্যন্ত লুকিয়ে রাখব"
+        },
+        {
+          "id": "b",
+          "text": "ফোনে কোনো ত্রুটি নেই দাবি করব"
+        },
+        {
+          "id": "c",
+          "text": "ত্রুটিটি ক্রেতাকে স্পষ্টভাবে জানাব"
+        },
+        {
+          "id": "d",
+          "text": "লুকাতে বিভ্রান্তিকর ছবি ব্যবহার করব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সত্যভাবে তথ্য জানানো ক্রেতার অধিকারকে সম্মান করে এবং ব্যবসায় নবীজির নির্দেশ অনুসরণ করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "সহিহ বুখারি ২০৭৯",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "general_beginner_character_conduct_060",
+      "conceptId": "character_cooperation",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু কাউকে হয়রানি করতে আপনার সাহায্য চেয়েছেন। সঠিক প্রতিক্রিয়া কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আনুগত্য দেখাতে যোগ দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "হাসির জন্য রেকর্ড করা"
+        },
+        {
+          "id": "c",
+          "text": "আরও খারাপ আক্রমণের পরিকল্পনায় সাহায্য করা"
+        },
+        {
+          "id": "d",
+          "text": "অস্বীকার করে নিরাপদে ক্ষতি বন্ধ করতে সাহায্য করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ভালো বন্ধুত্ব সঠিক কাজে সমর্থন দেয়। কাউকে অন্যের ক্ষতি করতে সাহায্য করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "সহিহ বুখারি ২৪৪৪",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    }
+  ]
+}

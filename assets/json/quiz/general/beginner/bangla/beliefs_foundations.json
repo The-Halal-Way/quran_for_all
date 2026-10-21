@@ -1,0 +1,2345 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "beliefs_foundations",
+  "title": "ঈমান ও ইসলামের ভিত্তি",
+  "description": "সাধারণ ব্যবহারকারী → প্রাথমিক স্তর। পরিচিত তথ্য, আরও কিছু মৌলিক জ্ঞান ও ছোট দৈনন্দিন পরিস্থিতির মিশ্রণ। প্রতিটি প্রশ্নই প্রাথমিক স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞানের মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় মূল কুরআন-হাদিসের সূত্র মিলিয়ে দেখা হয়েছে; এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_beginner_beliefs_001",
+      "conceptId": "beliefs_allah_one",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "মুসলিমরা কতজন উপাস্যের ইবাদত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একজন"
+        },
+        {
+          "id": "b",
+          "text": "দুইজন"
+        },
+        {
+          "id": "c",
+          "text": "তিনজন"
+        },
+        {
+          "id": "d",
+          "text": "অনেকজন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মুসলিমরা কেবল আল্লাহর ইবাদত করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1",
+          "label": "কুরআন ১১২:১",
+          "url": "https://quran.com/112/1"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_002",
+      "conceptId": "beliefs_creator",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আসমান ও জমিন কে সৃষ্টি করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফেরেশতারা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "সূর্য"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহ আসমান ও জমিনের স্রষ্টা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "62",
+          "label": "কুরআন ৩৯:৬২",
+          "url": "https://quran.com/39/62"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_003",
+      "conceptId": "beliefs_final_messenger",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "ইসলামে সর্বশেষ নবী কে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ঈসা (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "মুহাম্মদ (সা.)"
+        },
+        {
+          "id": "d",
+          "text": "ইবরাহিম (আ.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মুহাম্মদ (সা.) আল্লাহর রাসুল এবং সর্বশেষ নবী।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "কুরআন ৩৩:৪০",
+          "url": "https://quran.com/33/40"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_004",
+      "conceptId": "beliefs_quran",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "নবী মুহাম্মদ (সা.)-এর ওপর কোন কিতাব নাজিল হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাওরাত"
+        },
+        {
+          "id": "b",
+          "text": "জাবুর"
+        },
+        {
+          "id": "c",
+          "text": "ইনজিল"
+        },
+        {
+          "id": "d",
+          "text": "কুরআন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী মুহাম্মদ (সা.)-এর ওপর কুরআন নাজিল হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "কুরআন ৪৭:২",
+          "url": "https://quran.com/47/2"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_005",
+      "conceptId": "beliefs_angel_revelation",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "কোন ফেরেশতা নবী (সা.)-এর কাছে কুরআন নিয়ে এসেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জিবরিল (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "মিকাইল (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "মালিক"
+        },
+        {
+          "id": "d",
+          "text": "মৃত্যুর ফেরেশতা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জিবরিল (আ.) আল্লাহর অনুমতিতে ওহি নিয়ে এসেছিলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "কুরআন ২:৯৭",
+          "url": "https://quran.com/2/97"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_006",
+      "conceptId": "beliefs_shahadah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "ঈমানের সাক্ষ্য দেওয়াকে কী বলা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাত"
+        },
+        {
+          "id": "b",
+          "text": "শাহাদাহ"
+        },
+        {
+          "id": "c",
+          "text": "জাকাত"
+        },
+        {
+          "id": "d",
+          "text": "হজ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "শাহাদাহে একমাত্র আল্লাহর ইবাদত এবং মুহাম্মদ (সা.) তাঁর রাসুল হওয়ার সাক্ষ্য দেওয়া হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_007",
+      "conceptId": "beliefs_pillars_count",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "ইসলামের স্তম্ভ কয়টি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনটি"
+        },
+        {
+          "id": "b",
+          "text": "ছয়টি"
+        },
+        {
+          "id": "c",
+          "text": "পাঁচটি"
+        },
+        {
+          "id": "d",
+          "text": "সাতটি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সুপরিচিত বর্ণনায় ইসলাম পাঁচটি স্তম্ভের ওপর প্রতিষ্ঠিত বলা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_008",
+      "conceptId": "beliefs_salah_term",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "নির্ধারিত নামাজকে কোন শব্দে বোঝানো হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জাকাত"
+        },
+        {
+          "id": "b",
+          "text": "সাওম"
+        },
+        {
+          "id": "c",
+          "text": "হজ"
+        },
+        {
+          "id": "d",
+          "text": "সালাত"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সালাত হলো নির্ধারিত নামাজ এবং ইসলামের একটি স্তম্ভ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_009",
+      "conceptId": "beliefs_zakat_term",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "কোন স্তম্ভে ফরজ দান দেওয়ার বিষয় রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জাকাত"
+        },
+        {
+          "id": "b",
+          "text": "হজ"
+        },
+        {
+          "id": "c",
+          "text": "সালাত"
+        },
+        {
+          "id": "d",
+          "text": "সাওম"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জাকাত হলো প্রযোজ্য শর্ত অনুযায়ী ফরজ দান।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_010",
+      "conceptId": "beliefs_fasting_month",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "মুসলিমরা কোন মাসে বছরের ফরজ রোজা রাখে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুহররম"
+        },
+        {
+          "id": "b",
+          "text": "রমজান"
+        },
+        {
+          "id": "c",
+          "text": "রজব"
+        },
+        {
+          "id": "d",
+          "text": "সফর"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "যাঁদের রোজা ফরজ, তাঁদের জন্য রমজান ফরজ রোজার মাস।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_011",
+      "conceptId": "beliefs_hajj_destination",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "হজ করতে যে পবিত্র ঘরে যেতে হয়, সেটি কোন শহরে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মদিনা"
+        },
+        {
+          "id": "b",
+          "text": "জেরুসালেম"
+        },
+        {
+          "id": "c",
+          "text": "মক্কা"
+        },
+        {
+          "id": "d",
+          "text": "তায়েফ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "পবিত্র ঘর কাবা মক্কায় অবস্থিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "96-97",
+          "label": "কুরআন ৩:৯৬-৯৭",
+          "url": "https://quran.com/3/96-97"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_012",
+      "conceptId": "beliefs_faith_angels",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "কোনটি ইসলামের বিশ্বাসের অংশ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তারার উপাসনা"
+        },
+        {
+          "id": "b",
+          "text": "অন্ধ ভাগ্য সবকিছু নিয়ন্ত্রণ করে—এমন বিশ্বাস"
+        },
+        {
+          "id": "c",
+          "text": "পূর্বপুরুষের উপাসনা"
+        },
+        {
+          "id": "d",
+          "text": "ফেরেশতাদের প্রতি বিশ্বাস"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহর ফেরেশতাদের প্রতি বিশ্বাস ঈমানের অংশ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_013",
+      "conceptId": "beliefs_afterlife",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আখিরাতে বিশ্বাসের মধ্যে কোনটি রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মৃত্যুর পরের জীবন"
+        },
+        {
+          "id": "b",
+          "text": "শুধু এই দুনিয়ার জীবন"
+        },
+        {
+          "id": "c",
+          "text": "পৃথিবীতে চিরকাল বেঁচে থাকা"
+        },
+        {
+          "id": "d",
+          "text": "ভিন্ন প্রাণী হয়ে ফিরে আসা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মুসলিমরা পুনরুত্থান ও মৃত্যুর পরের জীবনে বিশ্বাস করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "7",
+          "label": "কুরআন ২২:৭",
+          "url": "https://quran.com/22/7"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_014",
+      "conceptId": "beliefs_jannah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "জান্নাত কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একটি পাহাড়"
+        },
+        {
+          "id": "b",
+          "text": "বেহেশত"
+        },
+        {
+          "id": "c",
+          "text": "একটি মাস"
+        },
+        {
+          "id": "d",
+          "text": "আরবের একটি শহর"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "জান্নাত হলো বেহেশত, যা আল্লাহ সৎকর্মশীল মুমিনদের প্রতিশ্রুতি দিয়েছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "57",
+          "label": "কুরআন ৪:৫৭",
+          "url": "https://quran.com/4/57"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_015",
+      "conceptId": "beliefs_jahannam",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "জাহান্নাম কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একটি মসজিদ"
+        },
+        {
+          "id": "b",
+          "text": "একজন নবীর নাম"
+        },
+        {
+          "id": "c",
+          "text": "দোজখ"
+        },
+        {
+          "id": "d",
+          "text": "রোজার একটি মাস"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জাহান্নাম হলো আখিরাতে শাস্তির স্থান।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "56",
+          "label": "কুরআন ৪:৫৬",
+          "url": "https://quran.com/4/56"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_016",
+      "conceptId": "beliefs_dua",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "দোয়া কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফরজ দান দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "মক্কায় সফর করা"
+        },
+        {
+          "id": "c",
+          "text": "সালাতের সময় ঘোষণা করা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহকে ডাকা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দোয়া মানে আল্লাহকে ডাকা এবং তাঁর কাছে চাওয়া।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_017",
+      "conceptId": "beliefs_tawbah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "তাওবা মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অনুতপ্ত হয়ে আল্লাহর দিকে ফিরে আসা"
+        },
+        {
+          "id": "b",
+          "text": "হজ করা"
+        },
+        {
+          "id": "c",
+          "text": "রোজা রাখা"
+        },
+        {
+          "id": "d",
+          "text": "অভিবাদন জানানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তাওবা মানে অনুতপ্ত হয়ে আল্লাহর দিকে ফিরে আসা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "কুরআন ৬৬:৮",
+          "url": "https://quran.com/66/8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_018",
+      "conceptId": "beliefs_tawhid",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "তাওহিদ মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একাধিক উপাস্যের ইবাদত"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর একত্বে বিশ্বাস ও কেবল তাঁর ইবাদত"
+        },
+        {
+          "id": "c",
+          "text": "ফেরেশতাদের উপাস্য মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "সৃষ্টির কোনো স্রষ্টা নেই মনে করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কেবল আল্লাহর ইবাদতের ভিত্তি হলো তাওহিদ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1-4",
+          "label": "কুরআন ১১২:১-৪",
+          "url": "https://quran.com/112/1-4"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_019",
+      "conceptId": "beliefs_shirk",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "শিরক কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর কাছে ক্ষমা চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিবেশীকে সাহায্য করা"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর সঙ্গে শরিক করা"
+        },
+        {
+          "id": "d",
+          "text": "সালাত শেখা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "একমাত্র আল্লাহর প্রাপ্য বিষয়ে অন্য কাউকে অংশীদার করাকে শিরক বলে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "13",
+          "label": "কুরআন ৩১:১৩",
+          "url": "https://quran.com/31/13"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_020",
+      "conceptId": "beliefs_allah_knows",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আমাদের অন্তরের গোপন কথা কি আল্লাহ জানেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু জোরে বললে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু অন্যেরা জানতে পারলে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সালাতের সময়"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, তিনি জানেন।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মানুষ যা গোপন করে ও যা প্রকাশ করে, আল্লাহ সব জানেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "29",
+          "label": "কুরআন ৩:২৯",
+          "url": "https://quran.com/3/29"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_021",
+      "conceptId": "beliefs_allah_hears",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আল্লাহ কি নিচু স্বরের দোয়া শুনতে পান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মসজিদের ভেতরে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু অন্য কেউ আবার বললে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু আগে চিৎকার করলে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ সব শোনেন; নিচু স্বর তাঁর শোনার বাধা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        },
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "55",
+          "label": "কুরআন ৭:৫৫",
+          "url": "https://quran.com/7/55"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_022",
+      "conceptId": "beliefs_allah_needs",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আল্লাহর কি খাবার বা পানীয়ের প্রয়োজন হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিদিন"
+        },
+        {
+          "id": "b",
+          "text": "না, তিনি অভাবমুক্ত।"
+        },
+        {
+          "id": "c",
+          "text": "শুধু রমজানে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মানুষ তাঁকে ভুলে গেলে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহ স্বয়ংসম্পূর্ণ ও অভাবমুক্ত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "14",
+          "label": "কুরআন ৬:১৪",
+          "url": "https://quran.com/6/14"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_023",
+      "conceptId": "beliefs_all_prophets",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আল্লাহর নবীদের প্রতি মুসলিমদের মনোভাব কেমন হওয়া উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু নিজের জাতির নবীদের সম্মান করা"
+        },
+        {
+          "id": "b",
+          "text": "নবীদের উপাস্য মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "সবাইকে বিশ্বাস ও সম্মান করা"
+        },
+        {
+          "id": "d",
+          "text": "একজনকে বেছে বাকি সব নবীকে অস্বীকার করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহর রাসুলদের প্রতি বিশ্বাসের মধ্যে সবাইকে গ্রহণ করা রয়েছে; কাউকে রাসুল হিসেবে অস্বীকার করা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_024",
+      "conceptId": "beliefs_isa",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "ইসলামে ঈসা (আ.) কে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর অংশীদার"
+        },
+        {
+          "id": "b",
+          "text": "পৃথিবীর স্রষ্টা"
+        },
+        {
+          "id": "c",
+          "text": "একজন ফেরেশতা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর একজন নবী ও রাসুল"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে ঈসা (আ.)-কে আল্লাহর রাসুল হিসেবে পরিচয় দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "171",
+          "label": "কুরআন ৪:১৭১",
+          "url": "https://quran.com/4/171"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_025",
+      "conceptId": "beliefs_adam",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আল্লাহ কোন নবীকে নামগুলো শিখিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আদম (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইউনুস (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "নূহ (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "মূসা (আ.)"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে আল্লাহর পক্ষ থেকে আদম (আ.)-কে নামগুলো শেখানোর কথা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "31",
+          "label": "কুরআন ২:৩১",
+          "url": "https://quran.com/2/31"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_026",
+      "conceptId": "beliefs_ibrahim",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "ইংরেজিতে Abraham নামে কোন নবী পরিচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইউসুফ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইবরাহিম (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ইউনুস (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "দাউদ (আ.)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইংরেজিতে Abraham নামে পরিচিত নবীর আরবি নাম ইবরাহিম।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "কুরআন ২:১২৭",
+          "url": "https://quran.com/2/127"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_027",
+      "conceptId": "beliefs_musa",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "ইংরেজিতে Moses নামে কোন নবী পরিচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নূহ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইসমাঈল (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "সুলাইমান (আ.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ইংরেজিতে Moses নামে পরিচিত নবীর আরবি নাম মূসা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "9",
+          "label": "কুরআন ২০:৯",
+          "url": "https://quran.com/20/9"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_028",
+      "conceptId": "beliefs_quran_guidance",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "কুরআনের একটি প্রধান উদ্দেশ্য কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লটারির নম্বর বলে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সম্পদ অনুযায়ী মানুষের তালিকা করা"
+        },
+        {
+          "id": "c",
+          "text": "সব ধরনের শিক্ষার বিকল্প হওয়া"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে পথ দেখানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন নিজেকে পথনির্দেশ হিসেবে বর্ণনা করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "2",
+          "label": "কুরআন ২:২",
+          "url": "https://quran.com/2/2"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_029",
+      "conceptId": "beliefs_purpose_worship",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আল্লাহ মানুষ ও জিনকে কী উদ্দেশ্যে সৃষ্টি করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর ইবাদত করতে"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যের উপাসনা করতে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সম্পদের প্রতিযোগিতা করতে"
+        },
+        {
+          "id": "d",
+          "text": "দায়িত্ব ছাড়া বাঁচতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে মানুষ ও জিনের সৃষ্টির সঙ্গে আল্লাহর ইবাদতের সম্পর্ক রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "56",
+          "label": "কুরআন ৫১:৫৬",
+          "url": "https://quran.com/51/56"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_030",
+      "conceptId": "beliefs_mercy_hope",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "অন্যায় করার পরে একজনের কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব আশা ছেড়ে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "তাওবা ও আল্লাহর ক্ষমা প্রার্থনা"
+        },
+        {
+          "id": "c",
+          "text": "ক্ষমা অসম্ভব ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বদলানোর মূল্য নেই বলে চালিয়ে যাওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহ তাঁর রহমত থেকে নিরাশ না হয়ে তাঁর দিকে ফিরে আসতে ডাকেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "কুরআন ৩৯:৫৩-৫৪",
+          "url": "https://quran.com/39/53-54"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_031",
+      "conceptId": "beliefs_faith_six",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "ঈমানের সুপরিচিত ব্যাখ্যায় কয়টি বিশ্বাসের কথা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চারটি"
+        },
+        {
+          "id": "b",
+          "text": "পাঁচটি"
+        },
+        {
+          "id": "c",
+          "text": "ছয়টি"
+        },
+        {
+          "id": "d",
+          "text": "আটটি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "এর মধ্যে আল্লাহ, ফেরেশতা, কিতাব, রাসুল, শেষ দিন ও তাকদিরের প্রতি বিশ্বাস রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_032",
+      "conceptId": "beliefs_qadar",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "তাকদিরে বিশ্বাস মানে কীসে বিশ্বাস?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভাগ্যবান সংখ্যার শক্তিতে"
+        },
+        {
+          "id": "b",
+          "text": "প্রকৃতির উপাসনায়"
+        },
+        {
+          "id": "c",
+          "text": "কাজের কখনো গুরুত্ব নেই—এমন ধারণায়"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর নির্ধারণে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তাকদিরের মধ্যে ভালো ও মন্দ সম্পর্কে আল্লাহর নির্ধারণে বিশ্বাস রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_033",
+      "conceptId": "beliefs_tawrah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "তাওরাত বিশেষভাবে কোন নবীর সঙ্গে সম্পর্কিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইউনুস (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "নূহ (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "সুলাইমান (আ.)"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে তাওরাত ও মূসা (আ.)-কে দেওয়া কিতাবের কথা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "3",
+          "label": "কুরআন ৩:৩",
+          "url": "https://quran.com/3/3"
+        },
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "154",
+          "label": "কুরআন ৬:১৫৪",
+          "url": "https://quran.com/6/154"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_034",
+      "conceptId": "beliefs_zabur",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "কোন নবীকে জাবুর দেওয়া হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইউসুফ (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "আদম (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইয়াহইয়া (আ.)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে দাউদ (আ.)-কে জাবুর দেওয়ার কথা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "163",
+          "label": "কুরআন ৪:১৬৩",
+          "url": "https://quran.com/4/163"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_035",
+      "conceptId": "beliefs_injil",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "কোন নবীকে ইনজিল দেওয়া হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইবরাহিম (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইসমাঈল (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "ঈসা (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "ইদরিস (আ.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনে ঈসা (আ.)-কে ইনজিল দেওয়ার কথা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "কুরআন ৫:৪৬",
+          "url": "https://quran.com/5/46"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_036",
+      "conceptId": "beliefs_iblis",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "ইবলিস ফেরেশতা ছিল, নাকি জিনদের একজন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফেরেশতা"
+        },
+        {
+          "id": "b",
+          "text": "মানুষের মধ্যকার একজন নবী"
+        },
+        {
+          "id": "c",
+          "text": "মানবজাতির কাছে পাঠানো রাসুল"
+        },
+        {
+          "id": "d",
+          "text": "জিনদের একজন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে ইবলিসকে স্পষ্টভাবে জিনদের একজন বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "কুরআন ১৮:৫০",
+          "url": "https://quran.com/18/50"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_037",
+      "conceptId": "beliefs_angel_obedience",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আল্লাহর নির্দেশ পালনকারী ফেরেশতাদের কুরআনে কীভাবে বর্ণনা করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁরা তাঁর নির্দেশ মানেন।"
+        },
+        {
+          "id": "b",
+          "text": "তাঁদের মানুষের উপাসনা দরকার।"
+        },
+        {
+          "id": "c",
+          "text": "কার ইবাদত হবে তাঁরা ঠিক করেন।"
+        },
+        {
+          "id": "d",
+          "text": "তাঁরা আল্লাহর সিদ্ধান্ত নিয়ন্ত্রণ করেন।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে এই ফেরেশতাদের আল্লাহর অনুগত বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "6",
+          "label": "কুরআন ৬৬:৬",
+          "url": "https://quran.com/66/6"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_038",
+      "conceptId": "beliefs_deeds_recorded",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "আমাদের কথা ও কাজ সম্পর্কে ইসলাম কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভিডিও হলেই শুধু তা গুরুত্বপূর্ণ।"
+        },
+        {
+          "id": "b",
+          "text": "তা লেখা হয় এবং আমরা জবাবদিহি করব।"
+        },
+        {
+          "id": "c",
+          "text": "শুধু বিখ্যাত মানুষের কাজ গণ্য হয়।"
+        },
+        {
+          "id": "d",
+          "text": "গোপন কাজ কখনো জানা সম্ভব নয়।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে আমল লেখার ফেরেশতা ও কথা লিখে রাখার বিবরণ রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "কুরআন ৮২:১০-১২",
+          "url": "https://quran.com/82/10-12"
+        },
+        {
+          "type": "quran",
+          "surah": 50,
+          "ayahs": "18",
+          "label": "কুরআন ৫০:১৮",
+          "url": "https://quran.com/50/18"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_039",
+      "conceptId": "beliefs_resurrection",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "পুনরুত্থান মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য শহরে চলে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "ফেরেশতা হয়ে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "মৃত্যুর পরে আবার জীবিত করে ওঠানো"
+        },
+        {
+          "id": "d",
+          "text": "ভিন্ন প্রাণী হয়ে জন্মানো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আখিরাতের জন্য আল্লাহ মৃতদের আবার জীবিত করে তুলবেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "7",
+          "label": "কুরআন ২২:৭",
+          "url": "https://quran.com/22/7"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_040",
+      "conceptId": "beliefs_judgment_time",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "কিয়ামতের সঠিক সময় কে জানেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রত্যেক গণক"
+        },
+        {
+          "id": "b",
+          "text": "তারা দেখে গণনাকারী যে কেউ"
+        },
+        {
+          "id": "c",
+          "text": "প্রত্যেক ধর্মীয় বক্তা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন কিয়ামতের সময়ের জ্ঞান আল্লাহর কাছে থাকার কথা জানায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "187",
+          "label": "কুরআন ৭:১৮৭",
+          "url": "https://quran.com/7/187"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_gratitude",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সুসংবাদ পেয়েছেন। কোন বাক্যে আল্লাহর প্রতি কৃতজ্ঞতা প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আলহামদুলিল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "বিদায়"
+        },
+        {
+          "id": "c",
+          "text": "ভেতরে আসুন"
+        },
+        {
+          "id": "d",
+          "text": "আপনার নাম কী?"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আলহামদুলিল্লাহ মানে সমস্ত প্রশংসা আল্লাহর।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "কুরআন ২৭:১৯",
+          "url": "https://quran.com/27/19"
+        }
+      ],
+      "id": "general_beginner_beliefs_041",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_dua",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনি চিন্তিত এবং দোয়া করতে চান। কাকে ডাকবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূর্যকে"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহকে"
+        },
+        {
+          "id": "c",
+          "text": "ভাগ্যবান পাথরকে"
+        },
+        {
+          "id": "d",
+          "text": "একটি তারাকে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দোয়া হলো আল্লাহকে ডাকা; তিনি তাঁর বান্দাদের শোনেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ],
+      "id": "general_beginner_beliefs_042",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_allah_hears",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিজের ঘরে নিচু স্বরে দোয়া করছেন। আল্লাহ কি শুনতে পান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু দরজা খোলা থাকলে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু কেউ আবার বললে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, তিনি পারেন।"
+        },
+        {
+          "id": "d",
+          "text": "শুধু চিৎকার করলে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহ নিচু স্বরের দোয়া ও প্রকাশ্য দোয়া দুটোই শোনেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        },
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "55",
+          "label": "কুরআন ৭:৫৫",
+          "url": "https://quran.com/7/55"
+        }
+      ],
+      "id": "general_beginner_beliefs_043",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_tawbah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনি অন্যায় করেছেন। আল্লাহর কাছে কী চাইবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যায় চালিয়ে যাওয়ার অনুমতি"
+        },
+        {
+          "id": "b",
+          "text": "অন্যকে দোষ দেওয়ার উপায়"
+        },
+        {
+          "id": "c",
+          "text": "চেষ্টা ছাড়ার কারণ"
+        },
+        {
+          "id": "d",
+          "text": "ক্ষমা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহর দিকে ফিরে তাঁর ক্ষমা চান।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "110",
+          "label": "কুরআন ৪:১১০",
+          "url": "https://quran.com/4/110"
+        }
+      ],
+      "id": "general_beginner_beliefs_044",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_allah_knows",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হারানো মানিব্যাগ ফেরত দিতে কেউ আপনাকে দেখেনি। আল্লাহ কি জানেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ"
+        },
+        {
+          "id": "b",
+          "text": "শুধু ভিডিও করা হলে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু মালিক ধন্যবাদ দিলে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বন্ধুকে বললে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মানুষের কাছ থেকে গোপন থাকা কাজসহ আমাদের সব কাজ আল্লাহ জানেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "29",
+          "label": "কুরআন ৩:২৯",
+          "url": "https://quran.com/3/29"
+        }
+      ],
+      "id": "general_beginner_beliefs_045",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_effort",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আগামীকাল পরীক্ষা। আল্লাহর সাহায্য চাওয়ার পাশাপাশি কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব প্রস্তুতি ছেড়ে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রস্তুতি ও পড়াশোনা"
+        },
+        {
+          "id": "c",
+          "text": "ভাগ্যবান সংখ্যার অপেক্ষা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যের উত্তর নকল"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী (সা.) উপকারী বিষয়ের চেষ্টা করতে ও আল্লাহর সাহায্য চাইতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ],
+      "id": "general_beginner_beliefs_046",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_intentions",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অভাবী কাউকে দিচ্ছেন। কোন নিয়তটি ভালো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁকে লজ্জা দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অন্যদের ছোট মনে করানো"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর সন্তুষ্টি অর্জন ও অভাবীকে সাহায্য করা"
+        },
+        {
+          "id": "d",
+          "text": "মানুষের প্রশংসা কেনা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ভালো কাজ আন্তরিক নিয়তে করা উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ],
+      "id": "general_beginner_beliefs_047",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_mercy_hope",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি গুনাহের জন্য অনুতপ্ত। কোন চিন্তা আপনাকে পথ দেখাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর রহমত কখনো আমার কাছে আসবে না।"
+        },
+        {
+          "id": "b",
+          "text": "বদলানো সব সময় অর্থহীন।"
+        },
+        {
+          "id": "c",
+          "text": "সব ভালো কাজ ছেড়ে দেওয়া উচিত।"
+        },
+        {
+          "id": "d",
+          "text": "আমি তাওবা করে আল্লাহর রহমত চাইতে পারি।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ তাঁর রহমত থেকে নিরাশ না হতে ডাকেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "কুরআন ৩৯:৫৩-৫৪",
+          "url": "https://quran.com/39/53-54"
+        }
+      ],
+      "id": "general_beginner_beliefs_048",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_quran_guidance",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আল্লাহর পথনির্দেশ বুঝতে চান। কোন কিতাব থেকে শিখবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআন"
+        },
+        {
+          "id": "b",
+          "text": "রাশিফলের বই"
+        },
+        {
+          "id": "c",
+          "text": "লটারির নির্দেশিকা"
+        },
+        {
+          "id": "d",
+          "text": "গুজবের সংকলন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন আল্লাহর পক্ষ থেকে পথনির্দেশ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "2",
+          "label": "কুরআন ২:২",
+          "url": "https://quran.com/2/2"
+        }
+      ],
+      "id": "general_beginner_beliefs_049",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_prophetic_example",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নবীজি কীভাবে সালাত আদায় করতেন শিখতে চান। কার আদর্শ অনুসরণ করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চলচ্চিত্রের চরিত্রের"
+        },
+        {
+          "id": "b",
+          "text": "নবী মুহাম্মদ (সা.)-এর"
+        },
+        {
+          "id": "c",
+          "text": "গণকের"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে বেশি নতুন ভঙ্গি বানায় যে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী (সা.) তাঁর আদর্শ অনুসরণ করে সালাত আদায় করতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "631",
+          "label": "সহিহ বুখারি ৬৩১",
+          "url": "https://sunnah.com/bukhari:631"
+        }
+      ],
+      "id": "general_beginner_beliefs_050",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_gratitude",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনি খাবার উপভোগ করছেন। আল্লাহর নিয়ামতে বিশ্বাসের সঙ্গে কোন মনোভাব মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অহংকার"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের প্রতি অবজ্ঞা"
+        },
+        {
+          "id": "c",
+          "text": "কৃতজ্ঞতা"
+        },
+        {
+          "id": "d",
+          "text": "আর কখনো সাহায্য লাগবে না মনে করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহর নিয়ামত চিনলে কৃতজ্ঞ হওয়া উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "কুরআন ২৭:১৯",
+          "url": "https://quran.com/27/19"
+        }
+      ],
+      "id": "general_beginner_beliefs_051",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_dua",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনার অর্থ কম। তবুও কি আল্লাহকে ডাকতে পারেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ধনী হওয়ার পরে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু কাউকে টাকা দিতে পারলে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু হজের সময়"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহকে ডাকার আহ্বান শুধু ধনী ব্যক্তিদের জন্য সীমিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ],
+      "id": "general_beginner_beliefs_052",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_effort",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দিনটি কঠিন যাচ্ছে। কোন প্রতিক্রিয়া ঈমানের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর সাহায্য চাওয়া ও চেষ্টা চালানো"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ শুনতে পান না ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সব চেষ্টা অর্থহীন মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "ভালো-মন্দের তোয়াক্কা ছেড়ে দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহর সাহায্য চান এবং উপকারী চেষ্টা ছেড়ে দেবেন না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ],
+      "id": "general_beginner_beliefs_053",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_all_prophets",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু মূসা ও ঈসা (আ.)-এর কথা বললেন। তাঁদের প্রতি আপনার মনোভাব কেমন হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর অংশীদার হিসেবে"
+        },
+        {
+          "id": "b",
+          "text": "বিশ্বাস ও সম্মানের"
+        },
+        {
+          "id": "c",
+          "text": "কাল্পনিক চরিত্র হিসেবে"
+        },
+        {
+          "id": "d",
+          "text": "মুসলিমদের প্রত্যাখ্যান করা উচিত এমন ব্যক্তি হিসেবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুসলিমরা মূসা ও ঈসা (আ.)-সহ আল্লাহর রাসুলদের বিশ্বাস করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ],
+      "id": "general_beginner_beliefs_054",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_allah_knows",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ দেখছে না এমন অবস্থায় সালাত পড়ছেন। আল্লাহর জানার জন্য কি প্রকাশ্য প্রশংসা দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, কাউকে ভিডিও করতেই হবে।"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অনলাইনে দিতেই হবে।"
+        },
+        {
+          "id": "c",
+          "text": "না"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, আগে ঘোষণা করতেই হবে।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "গোপন ও প্রকাশ্য—সবকিছুই আল্লাহ জানেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "29",
+          "label": "কুরআন ৩:২৯",
+          "url": "https://quran.com/3/29"
+        }
+      ],
+      "id": "general_beginner_beliefs_055",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_tawbah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বুঝলেন আপনি অন্যায় করছেন। প্রথমে কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লজ্জা এড়াতে চালিয়ে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অন্যদেরও করতে শেখানো"
+        },
+        {
+          "id": "c",
+          "text": "অন্যায় আর গুরুত্বপূর্ণ নয় দাবি করা"
+        },
+        {
+          "id": "d",
+          "text": "থামা ও আল্লাহর দিকে ফিরে আসা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সত্যিকারের তাওবার মধ্যে জেনেশুনে চালিয়ে না গিয়ে অন্যায় ছেড়ে দেওয়া রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "135",
+          "label": "কুরআন ৩:১৩৫",
+          "url": "https://quran.com/3/135"
+        }
+      ],
+      "id": "general_beginner_beliefs_056",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_family_reward",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আল্লাহর জন্য আন্তরিকভাবে পরিবারের ভরণপোষণ করছেন। এতে কি সওয়াব হতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ"
+        },
+        {
+          "id": "b",
+          "text": "শুধু অপরিচিতরা দেখলে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ঈদে"
+        },
+        {
+          "id": "d",
+          "text": "না, কখনো নয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "পরিবারের জন্য আন্তরিক ব্যয় সদকা হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "55",
+          "label": "সহিহ বুখারি ৫৫",
+          "url": "https://sunnah.com/bukhari:55"
+        }
+      ],
+      "id": "general_beginner_beliefs_057",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_small_good",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আজ শুধু ছোট একটি ভালো কাজ করতে পারেন। তবুও কি এর গুরুত্ব আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বিখ্যাত করলে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, ছোট ভালো কাজও গুরুত্বপূর্ণ।"
+        },
+        {
+          "id": "c",
+          "text": "শুধু অনেক খরচ হলে"
+        },
+        {
+          "id": "d",
+          "text": "না, ছোট কাজ কখনো গণ্য হয় না।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন শেখায় যে অণু পরিমাণ ভালো কাজও দেখা হবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7",
+          "label": "কুরআন ৯৯:৭",
+          "url": "https://quran.com/99/7"
+        }
+      ],
+      "id": "general_beginner_beliefs_058",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_accountability",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মনে পড়ল আল্লাহর কাছে জবাব দিতে হবে। কোন সিদ্ধান্ত এই বিশ্বাসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যাচাই সম্ভব না হলেই মিথ্যা বলা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের জিনিস নিয়ে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "মিথ্যা সহজ মনে হলেও সত্য বলা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যকে দোষ দিয়ে সব ভুল লুকানো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জবাবদিহির বিশ্বাস দায়িত্বশীল সিদ্ধান্তে উৎসাহ দেয়; নবী (সা.) সত্যবাদিতার প্রশংসা করেছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "কুরআন ৯৯:৭-৮",
+          "url": "https://quran.com/99/7-8"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "সহিহ বুখারি ৬০৯৪",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ],
+      "id": "general_beginner_beliefs_059",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_learning",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ধর্মীয় প্রশ্নের উত্তর জানেন না। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উত্তর বানিয়ে বলা"
+        },
+        {
+          "id": "b",
+          "text": "আত্মবিশ্বাসে যেকোনো গুজব বলা"
+        },
+        {
+          "id": "c",
+          "text": "আন্দাজ করলেই সত্য হয় এমন ভান করা"
+        },
+        {
+          "id": "d",
+          "text": "জানি না বলে জ্ঞানী কাউকে জিজ্ঞাসা করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "জানার ভান করার চেয়ে জ্ঞানী ব্যক্তিকে জিজ্ঞাসা করা উত্তম।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "43",
+          "label": "কুরআন ১৬:৪৩",
+          "url": "https://quran.com/16/43"
+        }
+      ],
+      "id": "general_beginner_beliefs_060",
+      "levelId": "beginner"
+    }
+  ]
+}

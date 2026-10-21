@@ -1,0 +1,2345 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "general_user",
+  "levelId": "beginner",
+  "categoryId": "beliefs_foundations",
+  "title": "Beliefs & Foundations",
+  "description": "General User → Beginner. A mix of familiar facts, broader basics and short everyday applications. Every question belongs to the Beginner level.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge required across all question styles. Styles are not difficulty levels. Editorial classification, not calibrated with learner response data.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Primary-text references checked during preparation; this is not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "general_beginner_beliefs_001",
+      "conceptId": "beliefs_allah_one",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "How many gods do Muslims worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One"
+        },
+        {
+          "id": "b",
+          "text": "Two"
+        },
+        {
+          "id": "c",
+          "text": "Three"
+        },
+        {
+          "id": "d",
+          "text": "Many"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Muslims worship Allah alone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1",
+          "label": "Quran 112:1",
+          "url": "https://quran.com/112/1"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_002",
+      "conceptId": "beliefs_creator",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Who created the heavens and the earth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The angels"
+        },
+        {
+          "id": "b",
+          "text": "Allah"
+        },
+        {
+          "id": "c",
+          "text": "The sun"
+        },
+        {
+          "id": "d",
+          "text": "Human beings"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah is the Creator of the heavens and the earth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "62",
+          "label": "Quran 39:62",
+          "url": "https://quran.com/39/62"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_003",
+      "conceptId": "beliefs_final_messenger",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Who is the final prophet in Islam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Musa (Moses)"
+        },
+        {
+          "id": "b",
+          "text": "Isa (Jesus)"
+        },
+        {
+          "id": "c",
+          "text": "Muhammad (peace be upon him)"
+        },
+        {
+          "id": "d",
+          "text": "Ibrahim (Abraham)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Muhammad (peace be upon him) is Allah's Messenger and the last of the prophets.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "Quran 33:40",
+          "url": "https://quran.com/33/40"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_004",
+      "conceptId": "beliefs_quran",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which book was revealed to Prophet Muhammad (peace be upon him)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Tawrah"
+        },
+        {
+          "id": "b",
+          "text": "The Zabur"
+        },
+        {
+          "id": "c",
+          "text": "The Injil"
+        },
+        {
+          "id": "d",
+          "text": "The Quran"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran was revealed to Prophet Muhammad (peace be upon him).",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "Quran 47:2",
+          "url": "https://quran.com/47/2"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_005",
+      "conceptId": "beliefs_angel_revelation",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which angel brought the Quran to the Prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jibril (Gabriel)"
+        },
+        {
+          "id": "b",
+          "text": "Mikail"
+        },
+        {
+          "id": "c",
+          "text": "Malik"
+        },
+        {
+          "id": "d",
+          "text": "The angel of death"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Jibril brought the revelation by Allah's permission.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "Quran 2:97",
+          "url": "https://quran.com/2/97"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_006",
+      "conceptId": "beliefs_shahadah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What is the declaration of faith called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salah"
+        },
+        {
+          "id": "b",
+          "text": "Shahadah"
+        },
+        {
+          "id": "c",
+          "text": "Zakat"
+        },
+        {
+          "id": "d",
+          "text": "Hajj"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Shahadah testifies to worshipping Allah alone and Muhammad being His Messenger.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_007",
+      "conceptId": "beliefs_pillars_count",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "How many pillars of Islam are there?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Three"
+        },
+        {
+          "id": "b",
+          "text": "Six"
+        },
+        {
+          "id": "c",
+          "text": "Five"
+        },
+        {
+          "id": "d",
+          "text": "Seven"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The well-known narration describes Islam as built on five pillars.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_008",
+      "conceptId": "beliefs_salah_term",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which word means the prescribed Islamic prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zakat"
+        },
+        {
+          "id": "b",
+          "text": "Sawm"
+        },
+        {
+          "id": "c",
+          "text": "Hajj"
+        },
+        {
+          "id": "d",
+          "text": "Salah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Salah is the prescribed prayer and one of Islam's pillars.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_009",
+      "conceptId": "beliefs_zakat_term",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which pillar involves giving obligatory charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zakat"
+        },
+        {
+          "id": "b",
+          "text": "Hajj"
+        },
+        {
+          "id": "c",
+          "text": "Salah"
+        },
+        {
+          "id": "d",
+          "text": "Sawm"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Zakat is obligatory charity, subject to its conditions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_010",
+      "conceptId": "beliefs_fasting_month",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "In which month do Muslims observe the obligatory annual fast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muharram"
+        },
+        {
+          "id": "b",
+          "text": "Ramadan"
+        },
+        {
+          "id": "c",
+          "text": "Rajab"
+        },
+        {
+          "id": "d",
+          "text": "Safar"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ramadan is the month of obligatory fasting for those required to fast.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_011",
+      "conceptId": "beliefs_hajj_destination",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Hajj is a pilgrimage to the Sacred House in which city?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Madinah"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalem"
+        },
+        {
+          "id": "c",
+          "text": "Makkah"
+        },
+        {
+          "id": "d",
+          "text": "Taif"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Sacred House, the Kabah, is in Makkah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "96-97",
+          "label": "Quran 3:96-97",
+          "url": "https://quran.com/3/96-97"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_012",
+      "conceptId": "beliefs_faith_angels",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which of these is part of Islamic belief?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worship of stars"
+        },
+        {
+          "id": "b",
+          "text": "Belief that luck controls everything"
+        },
+        {
+          "id": "c",
+          "text": "Worship of ancestors"
+        },
+        {
+          "id": "d",
+          "text": "Belief in angels"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Belief in Allah's angels is part of faith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_013",
+      "conceptId": "beliefs_afterlife",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What does belief in the Hereafter include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Life after death"
+        },
+        {
+          "id": "b",
+          "text": "Only life in this world"
+        },
+        {
+          "id": "c",
+          "text": "Living forever on earth"
+        },
+        {
+          "id": "d",
+          "text": "Returning as a different animal"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Muslims believe in resurrection and life after death.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "7",
+          "label": "Quran 22:7",
+          "url": "https://quran.com/22/7"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_014",
+      "conceptId": "beliefs_jannah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What is Jannah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A mountain"
+        },
+        {
+          "id": "b",
+          "text": "Paradise"
+        },
+        {
+          "id": "c",
+          "text": "A month"
+        },
+        {
+          "id": "d",
+          "text": "A city in Arabia"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Jannah is Paradise, promised by Allah to the believers who do good.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "57",
+          "label": "Quran 4:57",
+          "url": "https://quran.com/4/57"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_015",
+      "conceptId": "beliefs_jahannam",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What is Jahannam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A mosque"
+        },
+        {
+          "id": "b",
+          "text": "A prophet's name"
+        },
+        {
+          "id": "c",
+          "text": "Hell"
+        },
+        {
+          "id": "d",
+          "text": "A month of fasting"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Jahannam is Hell, a place of punishment in the Hereafter.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "56",
+          "label": "Quran 4:56",
+          "url": "https://quran.com/4/56"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_016",
+      "conceptId": "beliefs_dua",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What is dua?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving obligatory charity"
+        },
+        {
+          "id": "b",
+          "text": "Travelling to Makkah"
+        },
+        {
+          "id": "c",
+          "text": "Announcing prayer time"
+        },
+        {
+          "id": "d",
+          "text": "Calling upon Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Dua means calling upon Allah and asking Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_017",
+      "conceptId": "beliefs_tawbah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What does tawbah mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repentance"
+        },
+        {
+          "id": "b",
+          "text": "Pilgrimage"
+        },
+        {
+          "id": "c",
+          "text": "Fasting"
+        },
+        {
+          "id": "d",
+          "text": "A greeting"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Tawbah means turning back to Allah in repentance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "Quran 66:8",
+          "url": "https://quran.com/66/8"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_018",
+      "conceptId": "beliefs_tawhid",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What does Tawhid mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worshipping several gods"
+        },
+        {
+          "id": "b",
+          "text": "Believing in Allah's oneness and worshipping Him alone"
+        },
+        {
+          "id": "c",
+          "text": "Treating angels as gods"
+        },
+        {
+          "id": "d",
+          "text": "Believing that creation has no Creator"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Tawhid is the foundation of worshipping Allah alone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1-4",
+          "label": "Quran 112:1-4",
+          "url": "https://quran.com/112/1-4"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_019",
+      "conceptId": "beliefs_shirk",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What is shirk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking Allah for forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "Helping a neighbour"
+        },
+        {
+          "id": "c",
+          "text": "Associating partners with Allah"
+        },
+        {
+          "id": "d",
+          "text": "Learning to pray"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Shirk means giving a partner a share in what belongs to Allah alone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "13",
+          "label": "Quran 31:13",
+          "url": "https://quran.com/31/13"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_020",
+      "conceptId": "beliefs_allah_knows",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Does Allah know what is hidden in our hearts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only if we say it aloud"
+        },
+        {
+          "id": "b",
+          "text": "Only when others discover it"
+        },
+        {
+          "id": "c",
+          "text": "Only during prayer"
+        },
+        {
+          "id": "d",
+          "text": "Yes, He knows it."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah knows what people conceal as well as what they reveal.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "29",
+          "label": "Quran 3:29",
+          "url": "https://quran.com/3/29"
+        }
+      ],
+      "questionStyle": "familiar_fact",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_021",
+      "conceptId": "beliefs_allah_hears",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Can Allah hear a quiet dua?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "Only inside a mosque"
+        },
+        {
+          "id": "c",
+          "text": "Only when someone else repeats it"
+        },
+        {
+          "id": "d",
+          "text": "Only if it is shouted first"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah is All-Hearing; quietness does not prevent Him from hearing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        },
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "55",
+          "label": "Quran 7:55",
+          "url": "https://quran.com/7/55"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_022",
+      "conceptId": "beliefs_allah_needs",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Does Allah need food or drink?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every day"
+        },
+        {
+          "id": "b",
+          "text": "No, He is free of need."
+        },
+        {
+          "id": "c",
+          "text": "Only during Ramadan"
+        },
+        {
+          "id": "d",
+          "text": "Only when people forget Him"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah is self-sufficient and free of need.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "14",
+          "label": "Quran 6:14",
+          "url": "https://quran.com/6/14"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_023",
+      "conceptId": "beliefs_all_prophets",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "How should Muslims regard Allah's prophets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respect only the prophets from their own nation"
+        },
+        {
+          "id": "b",
+          "text": "Treat prophets as gods"
+        },
+        {
+          "id": "c",
+          "text": "Believe in and respect them all"
+        },
+        {
+          "id": "d",
+          "text": "Choose one prophet and reject every other prophet"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Belief in Allah's messengers includes accepting them, without rejecting some as messengers.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_024",
+      "conceptId": "beliefs_isa",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Who is Isa (Jesus) in Islam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A partner of Allah"
+        },
+        {
+          "id": "b",
+          "text": "The creator of the earth"
+        },
+        {
+          "id": "c",
+          "text": "An angel"
+        },
+        {
+          "id": "d",
+          "text": "A prophet and messenger of Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran identifies Isa as a messenger of Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "171",
+          "label": "Quran 4:171",
+          "url": "https://quran.com/4/171"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_025",
+      "conceptId": "beliefs_adam",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which prophet was taught the names by Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adam"
+        },
+        {
+          "id": "b",
+          "text": "Yunus"
+        },
+        {
+          "id": "c",
+          "text": "Nuh"
+        },
+        {
+          "id": "d",
+          "text": "Musa"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran tells of Allah teaching Adam the names.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "31",
+          "label": "Quran 2:31",
+          "url": "https://quran.com/2/31"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_026",
+      "conceptId": "beliefs_ibrahim",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which prophet is also known in English as Abraham?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yusuf"
+        },
+        {
+          "id": "b",
+          "text": "Ibrahim"
+        },
+        {
+          "id": "c",
+          "text": "Yunus"
+        },
+        {
+          "id": "d",
+          "text": "Dawud"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ibrahim is the Arabic name of the prophet known in English as Abraham.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "Quran 2:127",
+          "url": "https://quran.com/2/127"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_027",
+      "conceptId": "beliefs_musa",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which prophet is also known in English as Moses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nuh"
+        },
+        {
+          "id": "b",
+          "text": "Ismail"
+        },
+        {
+          "id": "c",
+          "text": "Musa"
+        },
+        {
+          "id": "d",
+          "text": "Sulayman"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Musa is the Arabic name of the prophet known in English as Moses.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "9",
+          "label": "Quran 20:9",
+          "url": "https://quran.com/20/9"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_028",
+      "conceptId": "beliefs_quran_guidance",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What is a main purpose of the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To predict lottery numbers"
+        },
+        {
+          "id": "b",
+          "text": "To rank people's wealth"
+        },
+        {
+          "id": "c",
+          "text": "To replace every kind of learning"
+        },
+        {
+          "id": "d",
+          "text": "To guide people"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran describes itself as guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "2",
+          "label": "Quran 2:2",
+          "url": "https://quran.com/2/2"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_029",
+      "conceptId": "beliefs_purpose_worship",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "For what purpose did Allah create humans and jinn?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To worship Him"
+        },
+        {
+          "id": "b",
+          "text": "To worship the sun"
+        },
+        {
+          "id": "c",
+          "text": "To compete only for wealth"
+        },
+        {
+          "id": "d",
+          "text": "To live without responsibility"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran connects the creation of humans and jinn with worshipping Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 51,
+          "ayahs": "56",
+          "label": "Quran 51:56",
+          "url": "https://quran.com/51/56"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_030",
+      "conceptId": "beliefs_mercy_hope",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "After doing wrong, what should a person do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give up all hope"
+        },
+        {
+          "id": "b",
+          "text": "Repent and seek Allah's forgiveness"
+        },
+        {
+          "id": "c",
+          "text": "Assume forgiveness is impossible"
+        },
+        {
+          "id": "d",
+          "text": "Continue because change never matters"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah calls people not to despair of His mercy and to return to Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "Quran 39:53-54",
+          "url": "https://quran.com/39/53-54"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_031",
+      "conceptId": "beliefs_faith_six",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "How many beliefs are listed in the well-known explanation of iman?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Four"
+        },
+        {
+          "id": "b",
+          "text": "Five"
+        },
+        {
+          "id": "c",
+          "text": "Six"
+        },
+        {
+          "id": "d",
+          "text": "Eight"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "They include Allah, angels, books, messengers, the Last Day and divine decree.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_032",
+      "conceptId": "beliefs_qadar",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Belief in qadar means belief in what?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The power of lucky numbers"
+        },
+        {
+          "id": "b",
+          "text": "The worship of nature"
+        },
+        {
+          "id": "c",
+          "text": "The idea that actions never matter"
+        },
+        {
+          "id": "d",
+          "text": "Allah's divine decree"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Qadar concerns Allah's divine decree, including good and bad.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_033",
+      "conceptId": "beliefs_tawrah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "The Tawrah is especially associated with which prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Musa"
+        },
+        {
+          "id": "b",
+          "text": "Yunus"
+        },
+        {
+          "id": "c",
+          "text": "Nuh"
+        },
+        {
+          "id": "d",
+          "text": "Sulayman"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran describes the Torah and the revelation given to Musa.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "3",
+          "label": "Quran 3:3",
+          "url": "https://quran.com/3/3"
+        },
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "154",
+          "label": "Quran 6:154",
+          "url": "https://quran.com/6/154"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_034",
+      "conceptId": "beliefs_zabur",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which prophet was given the Zabur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yusuf"
+        },
+        {
+          "id": "b",
+          "text": "Dawud"
+        },
+        {
+          "id": "c",
+          "text": "Adam"
+        },
+        {
+          "id": "d",
+          "text": "Yahya"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran names Dawud as the prophet given the Zabur.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "163",
+          "label": "Quran 4:163",
+          "url": "https://quran.com/4/163"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_035",
+      "conceptId": "beliefs_injil",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Which prophet was given the Injil?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ibrahim"
+        },
+        {
+          "id": "b",
+          "text": "Ismail"
+        },
+        {
+          "id": "c",
+          "text": "Isa"
+        },
+        {
+          "id": "d",
+          "text": "Idris"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran states that Isa was given the Injil.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "Quran 5:46",
+          "url": "https://quran.com/5/46"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_036",
+      "conceptId": "beliefs_iblis",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Was Iblis an angel or one of the jinn?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An angel"
+        },
+        {
+          "id": "b",
+          "text": "A human prophet"
+        },
+        {
+          "id": "c",
+          "text": "A messenger sent to humanity"
+        },
+        {
+          "id": "d",
+          "text": "One of the jinn"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran explicitly identifies Iblis as one of the jinn.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "Quran 18:50",
+          "url": "https://quran.com/18/50"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_037",
+      "conceptId": "beliefs_angel_obedience",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "How does the Quran describe the angels mentioned as carrying out Allah's commands?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They obey what He commands."
+        },
+        {
+          "id": "b",
+          "text": "They need people to worship them."
+        },
+        {
+          "id": "c",
+          "text": "They decide who should be worshipped."
+        },
+        {
+          "id": "d",
+          "text": "They control Allah's decisions."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran describes these angels as obedient to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "6",
+          "label": "Quran 66:6",
+          "url": "https://quran.com/66/6"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_038",
+      "conceptId": "beliefs_deeds_recorded",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What does Islam teach about our words and actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They matter only when filmed."
+        },
+        {
+          "id": "b",
+          "text": "They are recorded and we are accountable."
+        },
+        {
+          "id": "c",
+          "text": "Only famous people's actions count."
+        },
+        {
+          "id": "d",
+          "text": "Hidden actions can never be known."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran describes recording angels and the recording of speech.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "Quran 82:10-12",
+          "url": "https://quran.com/82/10-12"
+        },
+        {
+          "type": "quran",
+          "surah": 50,
+          "ayahs": "18",
+          "label": "Quran 50:18",
+          "url": "https://quran.com/50/18"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_039",
+      "conceptId": "beliefs_resurrection",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "What does resurrection mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moving to another city"
+        },
+        {
+          "id": "b",
+          "text": "Becoming an angel"
+        },
+        {
+          "id": "c",
+          "text": "Being raised after death"
+        },
+        {
+          "id": "d",
+          "text": "Being born as a different animal"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah will raise the dead for the Hereafter.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "7",
+          "label": "Quran 22:7",
+          "url": "https://quran.com/22/7"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "id": "general_beginner_beliefs_040",
+      "conceptId": "beliefs_judgment_time",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "question": "Who knows the exact time of the Hour?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every fortune-teller"
+        },
+        {
+          "id": "b",
+          "text": "Anyone who reads the stars"
+        },
+        {
+          "id": "c",
+          "text": "Every religious speaker"
+        },
+        {
+          "id": "d",
+          "text": "Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran places knowledge of its timing with Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "187",
+          "label": "Quran 7:187",
+          "url": "https://quran.com/7/187"
+        }
+      ],
+      "questionStyle": "broader_basic",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_gratitude",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You receive good news. Which phrase expresses gratitude to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alhamdulillah"
+        },
+        {
+          "id": "b",
+          "text": "Goodbye"
+        },
+        {
+          "id": "c",
+          "text": "Please come in"
+        },
+        {
+          "id": "d",
+          "text": "What is your name?"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Alhamdulillah means that praise belongs to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "Quran 27:19",
+          "url": "https://quran.com/27/19"
+        }
+      ],
+      "id": "general_beginner_beliefs_041",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_dua",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are worried and want to make dua. Whom do you call upon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sun"
+        },
+        {
+          "id": "b",
+          "text": "Allah"
+        },
+        {
+          "id": "c",
+          "text": "A lucky stone"
+        },
+        {
+          "id": "d",
+          "text": "A star"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Dua is calling upon Allah, who hears His servants.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ],
+      "id": "general_beginner_beliefs_042",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_allah_hears",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You make dua quietly in your room. Can Allah hear you?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only if the door is open"
+        },
+        {
+          "id": "b",
+          "text": "Only if someone repeats it"
+        },
+        {
+          "id": "c",
+          "text": "Yes, He can."
+        },
+        {
+          "id": "d",
+          "text": "Only if you shout"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah hears a quiet dua as well as an audible one.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        },
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "55",
+          "label": "Quran 7:55",
+          "url": "https://quran.com/7/55"
+        }
+      ],
+      "id": "general_beginner_beliefs_043",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_tawbah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have done something wrong. What should you ask Allah for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Permission to keep doing it"
+        },
+        {
+          "id": "b",
+          "text": "A way to blame someone else"
+        },
+        {
+          "id": "c",
+          "text": "A reason to stop trying"
+        },
+        {
+          "id": "d",
+          "text": "Forgiveness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Turn back to Allah and seek His forgiveness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "110",
+          "label": "Quran 4:110",
+          "url": "https://quran.com/4/110"
+        }
+      ],
+      "id": "general_beginner_beliefs_044",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_allah_knows",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "No one sees you return a lost wallet. Does Allah know?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "Only if it is filmed"
+        },
+        {
+          "id": "c",
+          "text": "Only if the owner thanks you"
+        },
+        {
+          "id": "d",
+          "text": "Only if you tell a friend"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah knows our actions, including what is hidden from people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "29",
+          "label": "Quran 3:29",
+          "url": "https://quran.com/3/29"
+        }
+      ],
+      "id": "general_beginner_beliefs_045",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_effort",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have a test tomorrow. What goes with asking Allah for help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving up all preparation"
+        },
+        {
+          "id": "b",
+          "text": "Preparing and studying"
+        },
+        {
+          "id": "c",
+          "text": "Waiting for a lucky number"
+        },
+        {
+          "id": "d",
+          "text": "Copying someone else's answers"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet taught people to seek what benefits them and ask Allah for help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ],
+      "id": "general_beginner_beliefs_046",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_intentions",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You give to someone in need. Which intention is best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To embarrass them"
+        },
+        {
+          "id": "b",
+          "text": "To make others feel inferior"
+        },
+        {
+          "id": "c",
+          "text": "To please Allah and help them"
+        },
+        {
+          "id": "d",
+          "text": "To buy people's praise"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Good deeds should be done with a sincere intention.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ],
+      "id": "general_beginner_beliefs_047",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_mercy_hope",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You regret a sin. Which thought should guide you?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah's mercy can never reach me."
+        },
+        {
+          "id": "b",
+          "text": "Changing is always pointless."
+        },
+        {
+          "id": "c",
+          "text": "I should give up every good deed."
+        },
+        {
+          "id": "d",
+          "text": "I can repent and seek Allah's mercy."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah calls people not to despair of His mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "Quran 39:53-54",
+          "url": "https://quran.com/39/53-54"
+        }
+      ],
+      "id": "general_beginner_beliefs_048",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_quran_guidance",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to understand Allah's guidance. Which book should you learn from?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Quran"
+        },
+        {
+          "id": "b",
+          "text": "A book of horoscopes"
+        },
+        {
+          "id": "c",
+          "text": "A lottery guide"
+        },
+        {
+          "id": "d",
+          "text": "A collection of rumours"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran is guidance from Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "2",
+          "label": "Quran 2:2",
+          "url": "https://quran.com/2/2"
+        }
+      ],
+      "id": "general_beginner_beliefs_049",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_prophetic_example",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to learn how the Prophet prayed. Whose example should you follow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A film character's"
+        },
+        {
+          "id": "b",
+          "text": "Prophet Muhammad's"
+        },
+        {
+          "id": "c",
+          "text": "A fortune-teller's"
+        },
+        {
+          "id": "d",
+          "text": "Whoever invents the most movements"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet taught Muslims to pray following his example.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "631",
+          "label": "Sahih al-Bukhari 631",
+          "url": "https://sunnah.com/bukhari:631"
+        }
+      ],
+      "id": "general_beginner_beliefs_050",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_gratitude",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You enjoy a meal. What attitude fits belief in Allah's blessings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arrogance"
+        },
+        {
+          "id": "b",
+          "text": "Contempt for others"
+        },
+        {
+          "id": "c",
+          "text": "Gratitude"
+        },
+        {
+          "id": "d",
+          "text": "Believing you will never need help"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Recognizing Allah's blessings should lead to gratitude.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "Quran 27:19",
+          "url": "https://quran.com/27/19"
+        }
+      ],
+      "id": "general_beginner_beliefs_051",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_dua",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have little money. Can you still call upon Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only after becoming wealthy"
+        },
+        {
+          "id": "b",
+          "text": "Only if you can pay someone"
+        },
+        {
+          "id": "c",
+          "text": "Only during Hajj"
+        },
+        {
+          "id": "d",
+          "text": "Yes"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah's invitation to call upon Him is not limited to wealthy people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ],
+      "id": "general_beginner_beliefs_052",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_effort",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have a difficult day. Which response fits faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask Allah for help and keep trying."
+        },
+        {
+          "id": "b",
+          "text": "Assume Allah cannot hear you."
+        },
+        {
+          "id": "c",
+          "text": "Believe every effort is useless."
+        },
+        {
+          "id": "d",
+          "text": "Stop caring about right and wrong."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Seek Allah's help and do not give up on beneficial effort.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ],
+      "id": "general_beginner_beliefs_053",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_all_prophets",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend mentions Musa and Isa. How should you regard these prophets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partners to Allah"
+        },
+        {
+          "id": "b",
+          "text": "With belief and respect"
+        },
+        {
+          "id": "c",
+          "text": "As imaginary figures"
+        },
+        {
+          "id": "d",
+          "text": "As people Muslims must reject"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Muslims believe in Allah's messengers, including Musa and Isa.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ],
+      "id": "general_beginner_beliefs_054",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_allah_knows",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You pray without anyone watching. Is public praise needed for Allah to know your worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, someone must film it."
+        },
+        {
+          "id": "b",
+          "text": "Yes, you must post it online."
+        },
+        {
+          "id": "c",
+          "text": "No"
+        },
+        {
+          "id": "d",
+          "text": "Yes, you must announce it first."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah knows what is hidden as well as what is public.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "29",
+          "label": "Quran 3:29",
+          "url": "https://quran.com/3/29"
+        }
+      ],
+      "id": "general_beginner_beliefs_055",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_tawbah",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You realize you are doing something wrong. What is the right first response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep doing it to avoid embarrassment."
+        },
+        {
+          "id": "b",
+          "text": "Teach others to do it too."
+        },
+        {
+          "id": "c",
+          "text": "Claim that wrong no longer matters."
+        },
+        {
+          "id": "d",
+          "text": "Stop and turn back to Allah."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Sincere repentance includes leaving the wrongdoing rather than knowingly persisting.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "135",
+          "label": "Quran 3:135",
+          "url": "https://quran.com/3/135"
+        }
+      ],
+      "id": "general_beginner_beliefs_056",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_family_reward",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You provide for your family sincerely for Allah. Can this be rewarded?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "Only if strangers watch"
+        },
+        {
+          "id": "c",
+          "text": "Only on Eid"
+        },
+        {
+          "id": "d",
+          "text": "No, never"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Sincere spending on one's family can be an act of charity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "55",
+          "label": "Sahih al-Bukhari 55",
+          "url": "https://sunnah.com/bukhari:55"
+        }
+      ],
+      "id": "general_beginner_beliefs_057",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_small_good",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can do only a small good deed today. Does it still matter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only if it makes you famous"
+        },
+        {
+          "id": "b",
+          "text": "Yes, even a small good deed matters."
+        },
+        {
+          "id": "c",
+          "text": "Only if it costs a lot"
+        },
+        {
+          "id": "d",
+          "text": "No, small deeds never count."
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran teaches that even an atom's weight of good will be seen.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7",
+          "label": "Quran 99:7",
+          "url": "https://quran.com/99/7"
+        }
+      ],
+      "id": "general_beginner_beliefs_058",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_accountability",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You remember that you will answer to Allah. Which choice fits that belief?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lie whenever no one can check."
+        },
+        {
+          "id": "b",
+          "text": "Take what belongs to someone else."
+        },
+        {
+          "id": "c",
+          "text": "Tell the truth even when a lie seems easier."
+        },
+        {
+          "id": "d",
+          "text": "Hide every mistake by blaming others."
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Belief in accountability encourages responsible choices, and the Prophet praised truthfulness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "Quran 99:7-8",
+          "url": "https://quran.com/99/7-8"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ],
+      "id": "general_beginner_beliefs_059",
+      "levelId": "beginner"
+    },
+    {
+      "conceptId": "beliefs_learning",
+      "categoryId": "beliefs_foundations",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You do not know the answer to a religious question. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make up an answer."
+        },
+        {
+          "id": "b",
+          "text": "Repeat any rumour confidently."
+        },
+        {
+          "id": "c",
+          "text": "Pretend guessing makes it true."
+        },
+        {
+          "id": "d",
+          "text": "Say you do not know and ask someone knowledgeable."
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Asking knowledgeable people is better than pretending to know.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "43",
+          "label": "Quran 16:43",
+          "url": "https://quran.com/16/43"
+        }
+      ],
+      "id": "general_beginner_beliefs_060",
+      "levelId": "beginner"
+    }
+  ]
+}

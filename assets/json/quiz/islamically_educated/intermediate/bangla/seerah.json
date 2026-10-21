@@ -1,0 +1,2286 @@
+{
+  "schemaVersion": 1,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "categoryId": "seerah",
+  "title": "সিরাত",
+  "description": "নবী মুহাম্মদ (সা.)-এর জীবন সম্পর্কে প্রশ্নব্যাংক; ওহি, হিজরত, সমাজজীবন, প্রধান ঘটনা ও শিক্ষা নিয়ে প্রশ্ন, ব্যাখ্যা ও মূল সূত্র রয়েছে।",
+  "questionCount": 60,
+  "difficultyCounts": {
+    "foundation": 30,
+    "intermediate": 15,
+    "advanced": 15
+  },
+  "difficultyMethod": "কঠিনতার স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। উচ্চতর স্তর এই বিষয়ের গভীরতর বোঝাপড়া নির্দেশ করে, আলেম হওয়ার যোগ্যতা নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় মূল কুরআন-হাদিসের সূত্র মিলিয়ে দেখা হয়েছে; এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "perAssessment": {
+      "foundation": 2,
+      "intermediate": 1,
+      "advanced": 1
+    },
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর হিসেবে না রেখে আলাদা UI বিকল্প হিসেবে ব্যবহার করুন।"
+  },
+  "questions": [
+    {
+      "id": "seerah_001",
+      "conceptId": "seerah_hira",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৩-এ বর্ণিত প্রথম ওহি নবী মুহাম্মদ (সা.) কোন গুহায় পেয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হেরা"
+        },
+        {
+          "id": "b",
+          "text": "সাওর"
+        },
+        {
+          "id": "c",
+          "text": "গুহাবাসীদের গুহা"
+        },
+        {
+          "id": "d",
+          "text": "জেরুসালেমের কাছে একটি গুহা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "প্রথম ওহির বর্ণনায় হেরা গুহার কথা এসেছে, যেখানে তিনি নির্জনে ইবাদত করতেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "seerah_002",
+      "conceptId": "seerah_khadijah_support",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "প্রথম ওহির অভিজ্ঞতার পরে নবী (সা.)-কে কে আশ্বস্ত করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাফসা (রা.)"
+        },
+        {
+          "id": "b",
+          "text": "খাদিজা (রা.)"
+        },
+        {
+          "id": "c",
+          "text": "উম্মে সালামা (রা.)"
+        },
+        {
+          "id": "d",
+          "text": "আয়িশা (রা.)"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "খাদিজা (রা.) তাঁকে সান্ত্বনা দেন এবং আত্মীয়, অসহায় মানুষ ও অতিথিদের প্রতি তাঁর যত্নের কথা স্মরণ করিয়ে দেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "seerah_003",
+      "conceptId": "seerah_waraqa",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "নবী (সা.)-এর ওহির অভিজ্ঞতা সম্পর্কে খাদিজা (রা.) কার সঙ্গে পরামর্শ করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবু লাহাব"
+        },
+        {
+          "id": "b",
+          "text": "আবু জাহল"
+        },
+        {
+          "id": "c",
+          "text": "ওয়ারাকা ইবন নওফল"
+        },
+        {
+          "id": "d",
+          "text": "সুরাকা ইবন মালিক"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "খাদিজা (রা.) তাঁকে তাঁর চাচাতো ভাই ওয়ারাকার কাছে নিয়ে যান। ওয়ারাকার পূর্ববর্তী আসমানি কিতাব সম্পর্কে জ্ঞান ছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "seerah_004",
+      "conceptId": "seerah_age_revelation",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "আনুমানিক কত বছর বয়সে নবী (সা.) ওহি পেতে শুরু করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিশ"
+        },
+        {
+          "id": "b",
+          "text": "ত্রিশ"
+        },
+        {
+          "id": "c",
+          "text": "ষাট"
+        },
+        {
+          "id": "d",
+          "text": "চল্লিশ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সহিহ বুখারি ৩৫৪৭-এ আনাস (রা.)-এর বর্ণনায় চল্লিশ বছর বয়সে ওহি শুরু হওয়ার কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3547",
+          "label": "সহিহ বুখারি ৩৫৪৭",
+          "url": "https://sunnah.com/bukhari:3547"
+        }
+      ]
+    },
+    {
+      "id": "seerah_005",
+      "conceptId": "seerah_public_warning",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "নিকটাত্মীয়দের সতর্ক করার সময় নবী (সা.) কোন স্থান থেকে কুরাইশদের ডেকেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাফা"
+        },
+        {
+          "id": "b",
+          "text": "উহুদ পাহাড়"
+        },
+        {
+          "id": "c",
+          "text": "আরাফাতের ময়দান"
+        },
+        {
+          "id": "d",
+          "text": "মিনার উপত্যকা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "প্রকাশ্যে সতর্ক করার বর্ণনায় তিনি সাফায় উঠে কুরাইশের বিভিন্ন গোত্রকে ডেকেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "সহিহ বুখারি ৪৭৭০",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "seerah_006",
+      "conceptId": "seerah_hijrah_destination",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "নবী (সা.) মক্কা থেকে কোন শহরে হিজরত করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তায়েফ"
+        },
+        {
+          "id": "b",
+          "text": "মদিনা"
+        },
+        {
+          "id": "c",
+          "text": "জেরুসালেম"
+        },
+        {
+          "id": "d",
+          "text": "আলেকজান্দ্রিয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হিজরতের বর্ণনায় তাঁর মক্কা ত্যাগ ও মদিনায় পৌঁছানোর কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "seerah_007",
+      "conceptId": "seerah_cave_companion",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "হিজরতের সময় গুহায় নবী (সা.)-এর সঙ্গী কে ছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উমর (রা.)"
+        },
+        {
+          "id": "b",
+          "text": "উসমান (রা.)"
+        },
+        {
+          "id": "c",
+          "text": "আবু বকর (রা.)"
+        },
+        {
+          "id": "d",
+          "text": "আলী (রা.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আবু বকর (রা.) গুহায় নবী (সা.)-এর সঙ্গে থাকার সময় নিজের উদ্বেগ ও নবীজির আশ্বাসের কথা বর্ণনা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "সহিহ বুখারি ৩৬৫৩",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "seerah_008",
+      "conceptId": "seerah_asma_provisions",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "হিজরতের সফরের খাবার প্রস্তুত করে নিজের কোমরবন্ধের অংশ দিয়ে তা কে বেঁধেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফাতিমা বিনতে মুহাম্মদ (রা.)"
+        },
+        {
+          "id": "b",
+          "text": "উম্মে আইমান (রা.)"
+        },
+        {
+          "id": "c",
+          "text": "সাফিয়্যা বিনতে হুয়াই (রা.)"
+        },
+        {
+          "id": "d",
+          "text": "আসমা বিনতে আবু বকর (রা.)"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হিজরতের বর্ণনায় সফরের খাবারের ব্যবস্থা করতে আসমা (রা.)-এর এই বাস্তব সহায়তার কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "seerah_009",
+      "conceptId": "seerah_madinah_host",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "মদিনার মূল জনবসতিতে পৌঁছে নবী (সা.) কার বাড়ির আঙিনায় নেমেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবু আইয়ুব আল-আনসারি (রা.)"
+        },
+        {
+          "id": "b",
+          "text": "আবু লাহাব"
+        },
+        {
+          "id": "c",
+          "text": "হিরাক্লিয়াস"
+        },
+        {
+          "id": "d",
+          "text": "ওয়ারাকা ইবন নওফল"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আনাস (রা.)-এর আগমনের বর্ণনায় নবী (সা.)-এর আবু আইয়ুব (রা.)-এর বাড়ির আঙিনায় নামার কথা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3932",
+          "label": "সহিহ বুখারি ৩৯৩২",
+          "url": "https://sunnah.com/bukhari:3932"
+        }
+      ]
+    },
+    {
+      "id": "seerah_010",
+      "conceptId": "seerah_ansar_identity",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৯:১০০-এ প্রথম দিকের মুমিনদের মধ্যে মুহাজিরদের পাশাপাশি কোন দলের নাম এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রোমান"
+        },
+        {
+          "id": "b",
+          "text": "আনসার"
+        },
+        {
+          "id": "c",
+          "text": "পারসিক"
+        },
+        {
+          "id": "d",
+          "text": "ফিরআউনের লোকজন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটিতে মুহাজির ও আনসারদের নাম রয়েছে। আনসার বলতে মদিনার সেই সহায়তাকারীদের বোঝায়, যাঁরা মুসলিম সমাজকে সহযোগিতা করেছিলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "100",
+          "label": "কুরআন ৯:১০০",
+          "url": "https://quran.com/9/100"
+        }
+      ]
+    },
+    {
+      "id": "seerah_011",
+      "conceptId": "seerah_badr",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩:১২৩-এ আল্লাহর সাহায্যের প্রসঙ্গে কোন যুদ্ধের নাম স্পষ্টভাবে এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উহুদ"
+        },
+        {
+          "id": "b",
+          "text": "হুনাইন"
+        },
+        {
+          "id": "c",
+          "text": "বদর"
+        },
+        {
+          "id": "d",
+          "text": "খাইবার"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আলে ইমরানের ৩:১২৩ আয়াতে আল্লাহর সাহায্য স্মরণ করাতে বদরের নাম স্পষ্টভাবে উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "123",
+          "label": "কুরআন ৩:১২৩",
+          "url": "https://quran.com/3/123"
+        }
+      ]
+    },
+    {
+      "id": "seerah_012",
+      "conceptId": "seerah_uhud_archers",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "উহুদে নবী (সা.) নির্দিষ্ট স্থানে যে তিরন্দাজদের রেখেছিলেন, তাঁদের অধিনায়ক কে ছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবু আইয়ুব আল-আনসারি (রা.)"
+        },
+        {
+          "id": "b",
+          "text": "জায়েদ ইবন সাবিত (রা.)"
+        },
+        {
+          "id": "c",
+          "text": "ওয়ারাকা ইবন নওফল"
+        },
+        {
+          "id": "d",
+          "text": "আবদুল্লাহ ইবন জুবাইর (রা.)"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল-বারা (রা.)-এর বর্ণনায় আবদুল্লাহ ইবন জুবাইর (রা.)-কে তিরন্দাজদের অধিনায়ক বলা হয়েছে এবং তাঁদের অবস্থান না ছাড়ার নির্দেশ উল্লেখ আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4043",
+          "label": "সহিহ বুখারি ৪০৪৩",
+          "url": "https://sunnah.com/bukhari:4043"
+        }
+      ]
+    },
+    {
+      "id": "seerah_013",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ২৭৩১–২৭৩২-এ কোন চুক্তির বিবরণ রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হুদাইবিয়ার সন্ধি"
+        },
+        {
+          "id": "b",
+          "text": "পারস্যের সঙ্গে বাণিজ্যচুক্তি"
+        },
+        {
+          "id": "c",
+          "text": "নবী (সা.)-এর মৃত্যুর পরে করা চুক্তি"
+        },
+        {
+          "id": "d",
+          "text": "মূসা (আ.) ও ফিরআউনের মধ্যকার চুক্তি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দীর্ঘ এই বর্ণনায় হুদাইবিয়ার সফর, আলোচনা ও চুক্তির বিবরণ রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "seerah_014",
+      "conceptId": "seerah_khaybar_banner",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "খাইবারের সুপরিচিত বর্ণনায় নবী (সা.) কাকে পতাকা দিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবু লাহাব"
+        },
+        {
+          "id": "b",
+          "text": "আলী ইবন আবি তালিব (রা.)"
+        },
+        {
+          "id": "c",
+          "text": "সুরাকা ইবন মালিক"
+        },
+        {
+          "id": "d",
+          "text": "ওয়ারাকা ইবন নওফল"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সাহল ইবন সাদ (রা.)-এর বর্ণনায় খাইবারে পতাকা গ্রহণকারী হিসেবে আলী (রা.)-এর নাম রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2942",
+          "label": "সহিহ বুখারি ২৯৪২",
+          "url": "https://sunnah.com/bukhari:2942"
+        }
+      ]
+    },
+    {
+      "id": "seerah_015",
+      "conceptId": "seerah_tabuk_absence",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "তাবুকে অংশ না নেওয়া সম্পর্কে কোন সাহাবির সত্যনিষ্ঠ বিবরণ সহিহ বুখারি ৪৪১৮-এ বিস্তারিত এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিলাল ইবন রাবাহ (রা.)"
+        },
+        {
+          "id": "b",
+          "text": "আবু যর (রা.)"
+        },
+        {
+          "id": "c",
+          "text": "কা’ব ইবন মালিক (রা.)"
+        },
+        {
+          "id": "d",
+          "text": "মুসআব ইবন উমাইর (রা.)"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কা’ব (রা.) তাবুকে যোগ দিতে ব্যর্থ হওয়া, সত্য স্বীকার করা এবং তাঁর তাওবা কবুল হওয়ার কথা বর্ণনা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4418",
+          "label": "সহিহ বুখারি ৪৪১৮",
+          "url": "https://sunnah.com/bukhari:4418"
+        }
+      ]
+    },
+    {
+      "id": "seerah_016",
+      "conceptId": "seerah_conquest_idols",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "মক্কা বিজয়ের সময় নবী (সা.) কাবার চারপাশ থেকে কী সরিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআনের অনুলিপি"
+        },
+        {
+          "id": "b",
+          "text": "আনসারদের লাগানো খেজুরগাছ"
+        },
+        {
+          "id": "c",
+          "text": "কাবার দেয়াল"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিমা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ইবন মাসউদ (রা.)-এর বর্ণনায় সত্যের বিজয় ঘোষণা করতে করতে নবী (সা.)-এর কাবার চারপাশের প্রতিমাগুলোতে আঘাত করার কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4287",
+          "label": "সহিহ বুখারি ৪২৮৭",
+          "url": "https://sunnah.com/bukhari:4287"
+        }
+      ]
+    },
+    {
+      "id": "seerah_017",
+      "conceptId": "seerah_farewell_pilgrimage",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "‘হাজ্জাতুল বিদা’ বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিদায় হজ"
+        },
+        {
+          "id": "b",
+          "text": "হাবশায় হিজরত"
+        },
+        {
+          "id": "c",
+          "text": "প্রথম ওহি"
+        },
+        {
+          "id": "d",
+          "text": "হুদাইবিয়ার সন্ধি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "এটি নবী (সা.)-এর বিদায় হজকে বোঝায়। জাবির (রা.)-এর বিস্তারিত বিবরণসহ হজের বিভিন্ন বর্ণনায় এর আলোচনা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "সহিহ মুসলিম ১২১৮a",
+          "url": "https://sunnah.com/muslim:1218a"
+        }
+      ]
+    },
+    {
+      "id": "seerah_018",
+      "conceptId": "seerah_ibrahim_son",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "শিশুসন্তানের মৃত্যুতে নবী (সা.)-এর অশ্রুপাতের বর্ণনায় তাঁর কোন ছেলের নাম এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইসমাঈল"
+        },
+        {
+          "id": "b",
+          "text": "ইবরাহিম"
+        },
+        {
+          "id": "c",
+          "text": "ইউসুফ"
+        },
+        {
+          "id": "d",
+          "text": "ইয়াহইয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আনাস (রা.) নবী (সা.)-এর ছেলে ইবরাহিমের মৃত্যু এবং নবীজির মমতা ও শোকের অশ্রুর কথা বর্ণনা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "সহিহ বুখারি ১৩০৩",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "seerah_019",
+      "conceptId": "seerah_home_service",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "আয়িশা (রা.)-এর বর্ণনা অনুযায়ী নবী (সা.) বাড়িতে কী করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঘরের সব কাজ করতে অস্বীকার করতেন"
+        },
+        {
+          "id": "b",
+          "text": "সব সময় শুধু আনুষ্ঠানিক সাক্ষাৎপ্রার্থীদের সঙ্গে থাকতেন"
+        },
+        {
+          "id": "c",
+          "text": "পরিবারের কাজে সহায়তা করতেন"
+        },
+        {
+          "id": "d",
+          "text": "অতিথিদের দিয়ে ঘরের সব কাজ করাতেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়িশা (রা.) বলেছেন, তিনি পরিবারের কাজে নিয়োজিত থাকতেন এবং আজান শুনলে বের হতেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5363",
+          "label": "সহিহ বুখারি ৫৩৬৩",
+          "url": "https://sunnah.com/bukhari:5363"
+        }
+      ]
+    },
+    {
+      "id": "seerah_020",
+      "conceptId": "seerah_khadijah_friends",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "খাদিজা (রা.)-এর মৃত্যুর পরও নবী (সা.) কীভাবে তাঁর বন্ধুত্বগুলোর মর্যাদা রাখতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর নাম উল্লেখ করতে সবাইকে নিষেধ করতেন।"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর বান্ধবীদের মদিনা ছাড়তে বলতেন।"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর প্রতি বিশ্বস্ততা ধরে রাখাকে অপ্রয়োজনীয় মনে করতেন।"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর বান্ধবীদের কাছে গোশতের অংশ পাঠাতেন।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়িশা (রা.) নবীজির ঘন ঘন খাদিজা (রা.)-কে স্মরণ করা এবং তাঁর বান্ধবীদের উপহার দেওয়ার কথা বলেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3818",
+          "label": "সহিহ বুখারি ৩৮১৮",
+          "url": "https://sunnah.com/bukhari:3818"
+        }
+      ]
+    },
+    {
+      "id": "seerah_021",
+      "conceptId": "seerah_ramadan_review",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "রমজানে নবী (সা.)-এর সঙ্গে কে কুরআন পর্যালোচনা করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জিবরিল (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "হিরাক্লিয়াস"
+        },
+        {
+          "id": "c",
+          "text": "আবু লাহাব"
+        },
+        {
+          "id": "d",
+          "text": "পারস্যের শাসক"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ইবন আব্বাস (রা.) বর্ণনা করেছেন, রমজানে জিবরিল (আ.) নবী (সা.)-এর সঙ্গে সাক্ষাৎ করে কুরআন অধ্যয়ন করতেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "সহিহ বুখারি ৬",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "seerah_022",
+      "conceptId": "seerah_final_review",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৪৯৯৮ অনুযায়ী মৃত্যুর বছরে নবী (সা.)-এর সঙ্গে কতবার কুরআন পর্যালোচনা করা হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একবার"
+        },
+        {
+          "id": "b",
+          "text": "দুইবার"
+        },
+        {
+          "id": "c",
+          "text": "তিনবার"
+        },
+        {
+          "id": "d",
+          "text": "দশবার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আবু হুরাইরা (রা.) প্রতিবছর একবার পর্যালোচনা এবং নবী (সা.)-এর শেষ বছরে দুইবার পর্যালোচনার কথা বর্ণনা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4998",
+          "label": "সহিহ বুখারি ৪৯৯৮",
+          "url": "https://sunnah.com/bukhari:4998"
+        }
+      ]
+    },
+    {
+      "id": "seerah_023",
+      "conceptId": "seerah_heraclius_letter",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "আবু সুফিয়ানের সাক্ষাৎকারের বর্ণনায় নবী (সা.)-এর চিঠি পাওয়া কোন শাসকের কথা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফিরআউন"
+        },
+        {
+          "id": "b",
+          "text": "ইউসুফ (আ.)-এর কাহিনির রাজা"
+        },
+        {
+          "id": "c",
+          "text": "হিরাক্লিয়াস"
+        },
+        {
+          "id": "d",
+          "text": "যুলকারনাইন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সহিহ বুখারি ৭-এ হিরাক্লিয়াসের আবু সুফিয়ানকে প্রশ্ন করা ও নবী (সা.)-এর চিঠি শোনার বিবরণ রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "7",
+          "label": "সহিহ বুখারি ৭",
+          "url": "https://sunnah.com/bukhari:7"
+        }
+      ]
+    },
+    {
+      "id": "seerah_024",
+      "conceptId": "seerah_orphan_childhood",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "নবী (সা.)-কে সম্বোধন করে কুরআন ৯৩:৬-এ তাঁর শৈশবের কোন অবস্থা স্মরণ করানো হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রাজা হিসেবে বড় হওয়া"
+        },
+        {
+          "id": "b",
+          "text": "শৈশবে সেনাবাহিনীর নেতৃত্ব দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "পারস্যের কোষাগারের মালিক হওয়া"
+        },
+        {
+          "id": "d",
+          "text": "এতিম থাকা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আদ-দুহার ৯৩:৬ আয়াতে আল্লাহ তাঁকে এতিম অবস্থায় পেয়ে আশ্রয় দেওয়ার কথা স্মরণ করিয়েছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "6",
+          "label": "কুরআন ৯৩:৬",
+          "url": "https://quran.com/93/6"
+        }
+      ]
+    },
+    {
+      "id": "seerah_025",
+      "conceptId": "seerah_qiblah_change",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ২:১৪৪-এ সালাতে নবী (সা.)-কে কোন পবিত্র স্থানের দিকে ফিরতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-মাসজিদুল হারাম"
+        },
+        {
+          "id": "b",
+          "text": "সিনাই পর্বত"
+        },
+        {
+          "id": "c",
+          "text": "হিরাক্লিয়াসের প্রাসাদ"
+        },
+        {
+          "id": "d",
+          "text": "হেরা গুহা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূরা আল-বাকারার ২:১৪৪ আয়াতে আল-মাসজিদুল হারামের দিকে মুখ ফেরানোর নির্দেশ রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "কুরআন ২:১৪৪",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "seerah_026",
+      "conceptId": "seerah_night_journey",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ১৭:১-এ রাতের সফরের বর্ণনায় আল-মাসজিদুল হারামের পাশাপাশি কোন গন্তব্যের নাম এসেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুবা মসজিদ"
+        },
+        {
+          "id": "b",
+          "text": "আল-মাসজিদুল আকসা"
+        },
+        {
+          "id": "c",
+          "text": "উহুদ পাহাড়"
+        },
+        {
+          "id": "d",
+          "text": "হুনাইনের উপত্যকা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূরা আল-ইসরার ১৭:১ আয়াতে আল-মাসজিদুল হারাম থেকে আল-মাসজিদুল আকসায় সফরের কথা এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "1",
+          "label": "কুরআন ১৭:১",
+          "url": "https://quran.com/17/1"
+        }
+      ]
+    },
+    {
+      "id": "seerah_027",
+      "conceptId": "seerah_hunayn",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "কুরআন ৯:২৫-এ কোন যুদ্ধের উল্লেখ করে বলা হয়েছে যে বেশি লোকসংখ্যা নিজে থেকেই সাফল্য নিশ্চিত করেনি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বদর"
+        },
+        {
+          "id": "b",
+          "text": "তাবুক"
+        },
+        {
+          "id": "c",
+          "text": "হুনাইন"
+        },
+        {
+          "id": "d",
+          "text": "খাইবার"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা আত-তাওবার ৯:২৫ আয়াতে হুনাইনের কথা এবং মুমিনদের বেশি সংখ্যাও প্রথমে উপকারে না আসার কথা স্মরণ করানো হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "25",
+          "label": "কুরআন ৯:২৫",
+          "url": "https://quran.com/9/25"
+        }
+      ]
+    },
+    {
+      "id": "seerah_028",
+      "conceptId": "seerah_public_warning",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ৪৭৭০-এর বর্ণনায় সাফায় নবী (সা.)-এর সতর্কবাণীর বিরোধিতা করেছিলেন তাঁর কোন চাচা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হামজা (রা.)"
+        },
+        {
+          "id": "b",
+          "text": "আল-আব্বাস (রা.)"
+        },
+        {
+          "id": "c",
+          "text": "আবু তালিব"
+        },
+        {
+          "id": "d",
+          "text": "আবু লাহাব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় প্রকাশ্য সতর্কবাণীর প্রতি আবু লাহাবের বিরূপ প্রতিক্রিয়ার কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "সহিহ বুখারি ৪৭৭০",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "seerah_029",
+      "conceptId": "seerah_ashura_madinah",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "মদিনায় পৌঁছানোর পর আশুরার রোজার ঘটনায় কোন নবীর মুক্তিলাভের কথা উল্লেখ করা হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মূসা (আ.)"
+        },
+        {
+          "id": "b",
+          "text": "ইউসুফ (আ.)"
+        },
+        {
+          "id": "c",
+          "text": "দাউদ (আ.)"
+        },
+        {
+          "id": "d",
+          "text": "সুলাইমান (আ.)"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ইবন আব্বাস (রা.)-এর বর্ণনায় এই রোজার সঙ্গে আল্লাহর পক্ষ থেকে মূসা (আ.) ও বনি ইসরাইলকে ফিরআউনের হাত থেকে মুক্তি দেওয়ার সম্পর্ক এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3943",
+          "label": "সহিহ বুখারি ৩৯৪৩",
+          "url": "https://sunnah.com/bukhari:3943"
+        }
+      ]
+    },
+    {
+      "id": "seerah_030",
+      "conceptId": "seerah_monday_death",
+      "categoryId": "seerah",
+      "difficulty": "foundation",
+      "questionType": "single_choice",
+      "question": "সহিহ বুখারি ১৩৮৭-এ আয়িশা (রা.)-এর উত্তর অনুযায়ী নবী (সা.) সপ্তাহের কোন দিনে মারা যান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুক্রবার"
+        },
+        {
+          "id": "b",
+          "text": "সোমবার"
+        },
+        {
+          "id": "c",
+          "text": "শনিবার"
+        },
+        {
+          "id": "d",
+          "text": "বৃহস্পতিবার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়িশা (রা.)-এর উত্তরে নবী (সা.)-এর মৃত্যুর দিন সোমবার বলা হয়েছে। এখানে বিতর্কিত কোনো ক্যালেন্ডার-তারিখ জানতে চাওয়া হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1387",
+          "label": "সহিহ বুখারি ১৩৮৭",
+          "url": "https://sunnah.com/bukhari:1387"
+        }
+      ]
+    },
+    {
+      "id": "seerah_031",
+      "conceptId": "seerah_khadijah_support",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "প্রথম ওহির পরে খাদিজা (রা.)-এর আশ্বাস কেন সাধারণ সহানুভূতির চেয়েও বেশি তাৎপর্যপূর্ণ ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি দাবি করেছিলেন, সদাচার থাকলে ওহির আর প্রয়োজন নেই।"
+        },
+        {
+          "id": "b",
+          "text": "তিনি প্রতিশ্রুতি দিয়েছিলেন, নবীজি কখনো বিরোধিতার মুখে পড়বেন না।"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের প্রতি তাঁর প্রতিষ্ঠিত সদাচারকে আল্লাহর সাহায্যের বিষয়ে আস্থার কারণ হিসেবে তুলে ধরেছিলেন।"
+        },
+        {
+          "id": "d",
+          "text": "তিনি বলেছিলেন, সম্পদই আল্লাহর অনুগ্রহের একমাত্র চিহ্ন।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তাঁর আশ্বাসে আত্মীয়তার সম্পর্ক রক্ষা এবং বিপদগ্রস্তদের সাহায্য করার মতো নির্দিষ্ট গুণের কথা ছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "seerah_032",
+      "conceptId": "seerah_hijrah_destination",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "হিজরতের বর্ণনায় প্রস্তুতি, খাবার ও ভাড়া করা পথপ্রদর্শকের উল্লেখ রয়েছে। এসব থেকে কোন সিদ্ধান্তটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর ওপর ভরসা করতে সব বাস্তব সতর্কতা বাদ দিতে হয়েছিল।"
+        },
+        {
+          "id": "b",
+          "text": "পথপ্রদর্শক থাকায় আল্লাহর ওপর ভরসার দরকার ছিল না।"
+        },
+        {
+          "id": "c",
+          "text": "পরিকল্পনা করার অর্থ ছিল, তাঁরা নিশ্চিত ছিলেন কোনো বিপদ নেই।"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর ওপর ভরসার সঙ্গে বাস্তব পরিকল্পনাও ছিল।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় আল্লাহর ওপর নির্ভরতার পাশাপাশি উদ্দেশ্যপূর্ণ ব্যবস্থাপনা রয়েছে; দুটিকে পরস্পরবিরোধী হিসেবে দেখানো হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "seerah_033",
+      "conceptId": "seerah_cave_companion",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "গুহায় ধরা পড়ার আশঙ্কায় আবু বকর (রা.) উদ্বিগ্ন হলে নবী (সা.)-এর উত্তরের মূল কথা কী ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর সঙ্গ ও সাহায্যের ওপর ভিত্তি করে আশ্বাস"
+        },
+        {
+          "id": "b",
+          "text": "কোনো অনুসরণকারী কাছেই আসেনি বলে দাবি"
+        },
+        {
+          "id": "c",
+          "text": "বিপদের কারণে বিশ্বাস ত্যাগের নির্দেশ"
+        },
+        {
+          "id": "d",
+          "text": "কোনো মুমিন আর কখনো ভয় পাবেন না—এমন প্রতিশ্রুতি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বাস্তব বিপদের মুহূর্তে আশ্বাস দেওয়ার কথা বর্ণিত হয়েছে; বিপদ থাকার বিষয়টি অস্বীকার করা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "সহিহ বুখারি ৩৬৫৩",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "seerah_034",
+      "conceptId": "seerah_uhud_archers",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "উহুদে তিরন্দাজদের অবস্থান ছেড়ে যাওয়া কেন নবী (সা.)-এর নির্দেশ অমান্য করা হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি প্রথমে চলে যাওয়া ব্যক্তিকে অনুসরণ করতে বলেছিলেন।"
+        },
+        {
+          "id": "b",
+          "text": "যুদ্ধের ফল স্পষ্ট হয়ে গেছে মনে হলেও তিনি তাঁদের অবস্থানে থাকতে বলেছিলেন।"
+        },
+        {
+          "id": "c",
+          "text": "তিনি অবস্থান ছাড়া সম্পর্কে কোনো নির্দেশই দেননি।"
+        },
+        {
+          "id": "d",
+          "text": "তিনি যুদ্ধলব্ধ সম্পদ সংগ্রহকেই তাঁদের একমাত্র দায়িত্ব করেছিলেন।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বিপরীত দুই ধরনের যুদ্ধপরিস্থিতিতেই অবস্থানে থাকার নির্দেশ ছিল। তাই আপাত বিজয় সেই নির্দেশ বাতিল করেনি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4043",
+          "label": "সহিহ বুখারি ৪০৪৩",
+          "url": "https://sunnah.com/bukhari:4043"
+        }
+      ]
+    },
+    {
+      "id": "seerah_035",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "হুদাইবিয়ায় ইহরাম শেষ করার নির্দেশ পালনে সাহাবিরা দেরি করলে উম্মে সালামা (রা.) কীভাবে সাহায্য করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গোপনে চুক্তি ভেঙে দিতে বলেছিলেন।"
+        },
+        {
+          "id": "b",
+          "text": "সাহাবিদের নতুন হজের রীতি বানাতে বলেছিলেন।"
+        },
+        {
+          "id": "c",
+          "text": "নবী (সা.)-কে বাইরে গিয়ে কাজগুলো নিজেই করে দেখাতে পরামর্শ দিয়েছিলেন।"
+        },
+        {
+          "id": "d",
+          "text": "সমস্যা সমাধানে পরামর্শের কোনো স্থান নেই বলেছিলেন।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় তাঁর বাস্তব পরামর্শ এবং নবীজি নিজে কাজ করলে সাহাবিদের তা অনুসরণ করার কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "seerah_036",
+      "conceptId": "seerah_tabuk_absence",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "তাবুকে যোগ না দেওয়ার বিষয়ে কা’ব ইবন মালিক (রা.)-এর ব্যাখ্যার বিশেষত্ব কী ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যে সফর করেননি সেটির ওপর দোষ চাপিয়েছিলেন।"
+        },
+        {
+          "id": "b",
+          "text": "সুস্থ জেনেও অসুস্থতার দাবি করেছিলেন।"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর যোগ দেওয়ার কথা ছিল—এটি অস্বীকার করেছিলেন।"
+        },
+        {
+          "id": "d",
+          "text": "তিনি অজুহাত না বানিয়ে স্বীকার করেছিলেন যে তাঁর বৈধ অজুহাত ছিল না।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তাৎক্ষণিক কষ্টের মুখে পড়েও সত্য স্বীকার করা তাঁর বিবরণের কেন্দ্রীয় বিষয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4418",
+          "label": "সহিহ বুখারি ৪৪১৮",
+          "url": "https://sunnah.com/bukhari:4418"
+        }
+      ]
+    },
+    {
+      "id": "seerah_037",
+      "conceptId": "seerah_taif_mercy",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কঠোর প্রত্যাখ্যানের পরে পাহাড়ের ফেরেশতা দুই পাহাড়ের মাঝে লোকদের পিষে দেওয়ার প্রস্তাব দিলে নবী (সা.) কী বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি আশা করেছিলেন, তাদের বংশধররা এক আল্লাহর ইবাদত করবে।"
+        },
+        {
+          "id": "b",
+          "text": "তিনি দাবি করেছিলেন, তাদের সব বংশধরকেও ধ্বংস করতে হবে।"
+        },
+        {
+          "id": "c",
+          "text": "তিনি ঘোষণা করেছিলেন, তাদের সমাজের কেউ কখনো ঈমান আনতে পারবে না।"
+        },
+        {
+          "id": "d",
+          "text": "প্রত্যেক প্রত্যাখ্যানের শাস্তি ধ্বংস হওয়া উচিত বলে প্রস্তাব মেনে নিয়েছিলেন।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়িশা (রা.)-এর বর্ণনায় প্রস্তাবিত ধ্বংসের বদলে সংযম ও আশার প্রতিক্রিয়া এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "সহিহ বুখারি ৩২৩১",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "seerah_038",
+      "conceptId": "seerah_ibrahim_son",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "ইবরাহিমের মৃত্যুতে নবী (সা.)-এর প্রতিক্রিয়া শোক সম্পর্কে কী দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঈমান থাকলে প্রতিটি অশ্রুই অবিশ্বাসের চিহ্ন হয়।"
+        },
+        {
+          "id": "b",
+          "text": "চোখের পানি ও দুঃখের সঙ্গেও আল্লাহকে সন্তুষ্ট করে এমন কথা বলা সম্ভব।"
+        },
+        {
+          "id": "c",
+          "text": "মা-বাবাকে কোনো কষ্ট হচ্ছে না এমন ভান করতে হয়।"
+        },
+        {
+          "id": "d",
+          "text": "শোক হলে আল্লাহ সম্পর্কে অসন্তোষের কথা বলতেই হয়।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় গভীর শোকের সঙ্গে কথায় সংযম বজায় রাখার বিষয়টি একসঙ্গে এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "সহিহ বুখারি ১৩০৩",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "seerah_039",
+      "conceptId": "seerah_ease_condition",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "আয়িশা (রা.) বলেছেন, দুটি বিষয়ের মধ্যে নবী (সা.) সহজটি বেছে নিতেন। এই বর্ণনার জরুরি শর্ত কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সহজ বিকল্পটিতে সব সময় বেশি অর্থ মিলত।"
+        },
+        {
+          "id": "b",
+          "text": "সহজ বিকল্পটি সবচেয়ে বেশি লোককে মুগ্ধ করত।"
+        },
+        {
+          "id": "c",
+          "text": "সহজ বিকল্পটিতে গুনাহ থাকত না।"
+        },
+        {
+          "id": "d",
+          "text": "সহজ বিকল্পে সব ধর্মীয় সীমা উপেক্ষা করা যেত।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় স্পষ্টভাবে এই পছন্দকে গুনাহমুক্ত বিকল্পের মধ্যে সীমিত রাখা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "সহিহ বুখারি ৩৫৬০",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "seerah_040",
+      "conceptId": "seerah_personal_retaliation",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "আয়িশা (রা.)-এর বর্ণনা অনুযায়ী ব্যক্তিগত আঘাত বা অপমানের ক্ষেত্রে নবী (সা.)-এর আচরণ কেমন ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি সব সময় আঘাতের চেয়ে বেশি কঠোর প্রতিশোধ নিতেন।"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি ব্যক্তিগত অপমানকে যুদ্ধের কারণ মনে করতেন।"
+        },
+        {
+          "id": "c",
+          "text": "তিনি রাগকে সব ধর্মীয় সীমার বিকল্প করতেন।"
+        },
+        {
+          "id": "d",
+          "text": "তিনি কেবল নিজের জন্য প্রতিশোধ নিতেন না।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তাঁর বর্ণনায় ব্যক্তিগত প্রতিশোধ এবং আল্লাহর নির্ধারিত সীমা লঙ্ঘনের বিষয় আলাদা করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "সহিহ বুখারি ৩৫৬০",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "seerah_041",
+      "conceptId": "seerah_farewell_rights",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "জাবির (রা.)-এর বর্ণিত বিদায় হজের ভাষণে নারীদের প্রতি কোন দায়িত্বগুলো গুরুত্ব পেয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁদের ব্যাপারে আল্লাহকে ভয় করা এবং যথাযথ খাবার ও পোশাকের ব্যবস্থা করা"
+        },
+        {
+          "id": "b",
+          "text": "আর্থিক যত্নকে অপ্রয়োজনীয় মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "কঠোরতাকে পারিবারিক নেতৃত্বের মাপকাঠি করা"
+        },
+        {
+          "id": "d",
+          "text": "সুবিধামতো মৌলিক যত্ন বন্ধ করে দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ভাষণে যত্নের নির্দিষ্ট দায়িত্ব এসেছে। পরিবারের দায়িত্বকে শুধু কোনো পদমর্যাদায় সীমিত করা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "সহিহ মুসলিম ১২১৮a",
+          "url": "https://sunnah.com/muslim:1218a"
+        }
+      ]
+    },
+    {
+      "id": "seerah_042",
+      "conceptId": "seerah_transmit_message",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "আবু বাকরাহ (রা.)-এর বর্ণিত বিদায় হজের ভাষণে উপস্থিত ব্যক্তিদের নবী (সা.) কোন দায়িত্ব দিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরবর্তী মুসলিমদের থেকে ভাষণ গোপন রাখা"
+        },
+        {
+          "id": "b",
+          "text": "অনুপস্থিত ব্যক্তিদের কাছে বার্তা পৌঁছে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "নতুন গল্প যোগ করতে পারলেই কেবল প্রচার করা"
+        },
+        {
+          "id": "d",
+          "text": "অনুপস্থিত কেউ তা বুঝতে পারবে না ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ভাষণে উপস্থিতদের শোনা কথা পৌঁছে দিতে বলা হয়েছে এবং পরবর্তী শ্রোতা ভালোভাবে বুঝতে পারেন—এমন কথাও এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4406",
+          "label": "সহিহ বুখারি ৪৪০৬",
+          "url": "https://sunnah.com/bukhari:4406"
+        }
+      ]
+    },
+    {
+      "id": "seerah_043",
+      "conceptId": "seerah_leadership_gentleness",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩:১৫৯-এ নবী (সা.)-এর নেতৃত্বে কোমলতা ও পরামর্শের কথা রয়েছে। কঠোরতার সঙ্গে কোন ফল যুক্ত করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লোকেরা স্বয়ংক্রিয়ভাবে আরও আন্তরিক হয়ে যেত।"
+        },
+        {
+          "id": "b",
+          "text": "পরামর্শ অপ্রয়োজনীয় হয়ে যেত।"
+        },
+        {
+          "id": "c",
+          "text": "লোকেরা তাঁর চারপাশ থেকে সরে যেত।"
+        },
+        {
+          "id": "d",
+          "text": "সব মতভেদ দূর হয়ে যেত।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটিতে দয়াপূর্ণ আচরণের সঙ্গে সমাজের ঐক্যের সম্পর্ক দেখানো হয়েছে এবং পরামর্শের নির্দেশ এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "কুরআন ৩:১৫৯",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "seerah_044",
+      "conceptId": "seerah_mosque_community",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "মদিনায় পৌঁছে মসজিদ নির্মাণে নবী (সা.)-এর অংশ নেওয়া কী প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাধারণ শ্রমে অংশ নিতে অস্বীকার করা"
+        },
+        {
+          "id": "b",
+          "text": "কেবল অতিথিরাই ইবাদতের স্থান তৈরি করতে পারবে—এমন নিয়ম"
+        },
+        {
+          "id": "c",
+          "text": "সমাজজীবনের সব কাজ অনির্দিষ্টকাল পিছিয়ে দেওয়ার নির্দেশ"
+        },
+        {
+          "id": "d",
+          "text": "সমাজ গড়ার কাজে সবার সঙ্গে বাস্তব শ্রম দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আনাস (রা.)-এর আগমনের বর্ণনায় মসজিদ নির্মাণ এবং নির্মাণসামগ্রী বহনে নবী (সা.)-এর অংশগ্রহণের কথা এসেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3932",
+          "label": "সহিহ বুখারি ৩৯৩২",
+          "url": "https://sunnah.com/bukhari:3932"
+        }
+      ]
+    },
+    {
+      "id": "seerah_045",
+      "conceptId": "seerah_khaybar_banner",
+      "categoryId": "seerah",
+      "difficulty": "intermediate",
+      "questionType": "single_choice",
+      "question": "খাইবারে পতাকা দেওয়ার বর্ণনায় আলী (রা.)-কে দায়িত্বের সঙ্গে কোন নির্দেশ দেওয়া হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষকে ইসলামের দাওয়াত দেওয়া এবং আল্লাহর প্রতি তাদের কর্তব্য বোঝানো"
+        },
+        {
+          "id": "b",
+          "text": "মানুষের হিদায়াতের চেয়ে ব্যক্তিগত খ্যাতিকে বড় মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "বার্তার কোনো ব্যাখ্যার দরকার নেই ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "দুনিয়ার অর্থ দিলেই বিশ্বাস প্রতিষ্ঠিত হবে—এমন প্রতিশ্রুতি দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় দাওয়াত ও হিদায়াতের গুরুত্ব এবং একজন মানুষের হিদায়াত পাওয়ার মূল্য তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2942",
+          "label": "সহিহ বুখারি ২৯৪২",
+          "url": "https://sunnah.com/bukhari:2942"
+        }
+      ]
+    },
+    {
+      "id": "seerah_046",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কিছু সাহাবির কাছে হুদাইবিয়ার শর্ত মেনে নেওয়া কঠিন মনে হয়েছিল। চুক্তিটি মূল্যায়নের ক্ষেত্রে সবচেয়ে যথাযথ শিক্ষা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কষ্টকর মনে হওয়া প্রতিটি চুক্তি বাতিল করতে হবে।"
+        },
+        {
+          "id": "b",
+          "text": "তাৎক্ষণিক অস্বস্তি একাই নবী (সা.)-এর সিদ্ধান্ত ভুল প্রমাণ করেনি।"
+        },
+        {
+          "id": "c",
+          "text": "সাহাবিদের কষ্ট প্রমাণ করে, তাঁদের কোনো ঈমানই ছিল না।"
+        },
+        {
+          "id": "d",
+          "text": "পরবর্তী যেকোনো নেতার চুক্তি স্বয়ংক্রিয়ভাবে নবীর সিদ্ধান্তের সমান কর্তৃত্ব পাবে।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় প্রকৃত কষ্টের পাশাপাশি চুক্তিতে নবী (সা.)-এর অবিচল থাকার কথা রয়েছে। এই শিক্ষা পরবর্তী সব রাজনৈতিক সিদ্ধান্তকে ভুলের ঊর্ধ্বে রাখে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "seerah_047",
+      "conceptId": "seerah_hudaybiyyah",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "হুদাইবিয়ার বর্ণনায় আবু জানদালের আগমন বিশেষ কষ্টকর পরীক্ষা তৈরি করেছিল। ঘটনাটি বুঝতে কোন টানাপোড়েনটি কেন্দ্রীয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাত আদৌ আছে কি না তা নিয়ে মতভেদ"
+        },
+        {
+          "id": "b",
+          "text": "পরস্পর সম্পর্কহীন দুটি বাণিজ্যপথের মধ্যে নির্বাচন"
+        },
+        {
+          "id": "c",
+          "text": "নির্যাতিত একজন মুমিনের জন্য উদ্বেগের পাশাপাশি আলোচিত শর্তের প্রতি অঙ্গীকার"
+        },
+        {
+          "id": "d",
+          "text": "কে বেশি কবিতা মুখস্থ করেছেন তা নিয়ে বিরোধ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ঘটনাটি আলোচনা ও নবী (সা.)-এর প্রতিক্রিয়ার প্রেক্ষাপটে পড়তে হয়। একে কষ্টের প্রতি উদাসীনতা বলে সরল করা ঠিক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "seerah_048",
+      "conceptId": "seerah_tabuk_absence",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কা’ব (রা.)-এর তাওবার পরে সঙ্গে সঙ্গে প্রকাশ্য স্বস্তি আসেনি। কোন সিদ্ধান্ত তাঁর বিবরণকে ভুলভাবে বোঝা থেকে বাঁচায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একই দিনে পরিণতি শেষ হলেই কেবল তাওবা সত্য হয়।"
+        },
+        {
+          "id": "b",
+          "text": "সত্য বলায় নিশ্চিত হয়েছিল যে কোনো শাস্তিমূলক ব্যবস্থা আসবে না।"
+        },
+        {
+          "id": "c",
+          "text": "দেরি হওয়া প্রমাণ করে, আল্লাহ গুরুতর বিষয়ে তাওবা কবুল করেন না।"
+        },
+        {
+          "id": "d",
+          "text": "কষ্টকর অপেক্ষার অর্থ এই নয় যে সত্যনিষ্ঠ তাওবা অর্থহীন ছিল।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কঠিন সময়ের পরে তাঁর তাওবা কবুল হওয়ার মধ্য দিয়ে বর্ণনা শেষ হয়। আন্তরিক তাওবা এবং পরিণতি সঙ্গে সঙ্গে সরে যাওয়া আলাদা বিষয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4418",
+          "label": "সহিহ বুখারি ৪৪১৮",
+          "url": "https://sunnah.com/bukhari:4418"
+        }
+      ]
+    },
+    {
+      "id": "seerah_049",
+      "conceptId": "seerah_tabuk_absence",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কা’ব (রা.)-এর বিচ্ছিন্নতার সময় এক বিদেশি শাসক তাঁকে নিজের পক্ষে যোগ দেওয়ার প্রস্তাব দেন। তাঁর প্রত্যাখ্যান কেন তাৎপর্যপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি এমন আকর্ষণীয় মুক্তির পথ নেননি, যা তাঁর বিশ্বস্ততার সঙ্গে আপস করাত।"
+        },
+        {
+          "id": "b",
+          "text": "তিনি প্রমাণ করেছিলেন, আরবের বাইরের প্রতিটি চিঠি জাল।"
+        },
+        {
+          "id": "c",
+          "text": "তিনি প্রতিষ্ঠা করেছিলেন, বিদেশি কোনো চিঠি পড়াই নিষিদ্ধ।"
+        },
+        {
+          "id": "d",
+          "text": "তিনি দেখিয়েছিলেন, বিচ্ছিন্নতা সব নৈতিক দায় দূর করে।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কা’ব (রা.) আমন্ত্রণটিকে আরও একটি পরীক্ষা হিসেবে চিনেছিলেন এবং নিজের ব্যর্থতার পরিণতি এড়াতে ব্যবহার না করে চিঠিটি পুড়িয়ে দিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4418",
+          "label": "সহিহ বুখারি ৪৪১৮",
+          "url": "https://sunnah.com/bukhari:4418"
+        }
+      ]
+    },
+    {
+      "id": "seerah_050",
+      "conceptId": "seerah_conquest_sanctuary",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ বলেন, মক্কা বিজয় সবাইকে সেখানে স্থায়ীভাবে যুদ্ধের অনুমতি দিয়েছে। নবী (সা.) কোন পার্থক্য স্পষ্ট করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিজয়ের মাধ্যমে শহরটির পবিত্রতা চিরতরে শেষ হয়েছে।"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর বিশেষ অনুমতি সীমিত ছিল এবং এতে মক্কার স্থায়ী পবিত্রতা উঠে যায়নি।"
+        },
+        {
+          "id": "c",
+          "text": "প্রমাণ ছাড়াই যে কেউ একই ব্যতিক্রম দাবি করতে পারে।"
+        },
+        {
+          "id": "d",
+          "text": "শহরের পবিত্রতা পুরোপুরি পরবর্তী কোনো শাসকের পছন্দনির্ভর।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আবু শুরাইহ (রা.)-এর বর্ণনায় নবীজির বিশেষ অনুমতিকে সবার জন্য অবাধ অনুমতি হিসেবে ধরে নেওয়া থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4295",
+          "label": "সহিহ বুখারি ৪২৯৫",
+          "url": "https://sunnah.com/bukhari:4295"
+        }
+      ]
+    },
+    {
+      "id": "seerah_051",
+      "conceptId": "seerah_taif_mercy",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "তায়েফের কাছে প্রত্যাখ্যানের পরে নবী (সা.)-এর সংযমের ঘটনা থেকে কোন সিদ্ধান্ত নিলে বর্ণনার সীমা ছাড়িয়ে যাওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি প্রস্তাবিত ধ্বংস গ্রহণ করেননি"
+        },
+        {
+          "id": "b",
+          "text": "তিনি আশা করেছিলেন, ভবিষ্যৎ প্রজন্ম আল্লাহর ইবাদত করবে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু এই ঘটনা প্রমাণ করে যে কোনো পরিস্থিতিতেই অন্যায়ের বিরুদ্ধে বৈধ কোনো ব্যবস্থা নেওয়া যায় না"
+        },
+        {
+          "id": "d",
+          "text": "প্রত্যাখ্যানের পরও মানুষের হিদায়াতের জন্য তাঁর উদ্বেগ ছিল"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটি দয়ার একটি নির্দিষ্ট আচরণ তুলে ধরে। অন্য প্রমাণ বিবেচনা না করে শুধু এটি থেকে সর্বজনীন আইনি সিদ্ধান্ত নেওয়া ঘটনাটির সীমা ছাড়ায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "সহিহ বুখারি ৩২৩১",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "seerah_052",
+      "conceptId": "seerah_home_service",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কেউ বলেন, প্রকাশ্য ধর্মীয় নেতৃত্বের কারণে পরিবারের কাজ করা নবী (সা.)-এর মর্যাদার নিচে ছিল। আয়িশা (রা.)-এর বর্ণনা অনুযায়ী যথাযথ উত্তর কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বর্ণনাটি প্রমাণ করে, ঘরের কাজই ছিল তাঁর একমাত্র কাজ।"
+        },
+        {
+          "id": "b",
+          "text": "বর্ণনাটি বলে, জনদায়িত্ব নেই এমন ব্যক্তিরাই শুধু সাহায্য করবে।"
+        },
+        {
+          "id": "c",
+          "text": "বর্ণনাটি পরিবারের সেবা ও ইবাদতকে পরস্পরবিরোধী করে।"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর নিজের আমলই দাবিটি খণ্ডন করে: তিনি পরিবারের সেবা করতেন এবং সালাতে যেতেন।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়িশা (রা.)-এর বিবরণে একই দৈনন্দিন জীবনে ঘরের কাজে সহায়তা ও ইবাদত রয়েছে। ফলে কথিত বিরোধ টেকে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5363",
+          "label": "সহিহ বুখারি ৫৩৬৩",
+          "url": "https://sunnah.com/bukhari:5363"
+        }
+      ]
+    },
+    {
+      "id": "seerah_053",
+      "conceptId": "seerah_farewell_pilgrimage",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "একটি সামাজিক যোগাযোগমাধ্যমের পোস্টে বিদায় হজের বিভিন্ন বর্ণনা মিলিয়ে একটি দীর্ঘ উদ্ধৃতি তৈরি করা হয়েছে। এটি উপস্থাপনের সবচেয়ে নির্ভুল পদ্ধতি কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি অংশের সূত্র চিহ্নিত করা এবং মিলিত উপস্থাপনাটিকে সংকলন বলা"
+        },
+        {
+          "id": "b",
+          "text": "যাচাই না করেই প্রতিটি বাক্য একটি হাদিস নম্বরের নামে চালানো"
+        },
+        {
+          "id": "c",
+          "text": "সব জনপ্রিয় সংস্করণের ভাষা হুবহু এক ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "অনুপ্রেরণামূলক নতুন বাক্য যোগ করেও পুরোটিতে উদ্ধৃতিচিহ্ন রাখা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জাবির (রা.) ও আবু বাকরাহ (রা.) পৃথক বর্ণনা দিয়েছেন। সংকলিত সারাংশকে একটি বর্ণনার হুবহু অবিচ্ছিন্ন ভাষা হিসেবে উপস্থাপন করা উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "সহিহ মুসলিম ১২১৮a",
+          "url": "https://sunnah.com/muslim:1218a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4406",
+          "label": "সহিহ বুখারি ৪৪০৬",
+          "url": "https://sunnah.com/bukhari:4406"
+        }
+      ]
+    },
+    {
+      "id": "seerah_054",
+      "conceptId": "seerah_public_warning",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "সাফায় সতর্কবাণীর আগে শ্রোতারা নবী (সা.)-এর সত্যবাদিতা স্বীকার করেছিলেন, কিন্তু পরে কেউ কেউ তাঁর সতর্কবাণী প্রত্যাখ্যান করেন। এই পার্থক্য কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রত্যেক শ্রোতা সঙ্গে সঙ্গে ইসলাম গ্রহণ করেছিলেন।"
+        },
+        {
+          "id": "b",
+          "text": "কারও সততা স্বীকার করলেই তাঁর আনা বার্তা গ্রহণ করা হয় না।"
+        },
+        {
+          "id": "c",
+          "text": "শ্রোতারা বলেছিলেন, তিনি সব সময় অসৎ ছিলেন।"
+        },
+        {
+          "id": "d",
+          "text": "সতর্কবাণীটি শুধু সামরিক আক্রমণ নিয়ে ছিল; কোনো ধর্মীয় উদ্দেশ্য ছিল না।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় তাঁর সত্যবাদী চরিত্রের স্বীকৃতি এবং পরে তাঁর সতর্কবাণীর প্রতিক্রিয়ার মধ্যে পার্থক্য রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "সহিহ বুখারি ৪৭৭০",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "seerah_055",
+      "conceptId": "seerah_leadership_gentleness",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ৩:১৫৯-এ ক্ষমা, ক্ষমার দোয়া, পরামর্শ ও আল্লাহর ওপর নির্ভরতা একসঙ্গে এসেছে। বিপর্যয়ের পরে কোন নেতৃত্বমূলক আচরণ এর সঙ্গে সবচেয়ে বেশি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিপর্যয়কে সব পরামর্শ বাদ দেওয়ার অনুমতি মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "দয়া থাকলে কোনো সিদ্ধান্তই নেওয়া যায় না ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "দয়া, পরামর্শ ও আল্লাহর ওপর ভরসা বজায় রেখে ব্যর্থতা মোকাবিলা করা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর ওপর নির্ভরতার বদলে শুধু লোকসংখ্যায় আস্থা রাখা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি এসব দায়িত্ব একসঙ্গে ধরে রেখেছে; একটি অন্যটিকে বাতিল করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "কুরআন ৩:১৫৯",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "seerah_056",
+      "conceptId": "seerah_hunayn",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ৯:২৫ কীভাবে সংখ্যায় বেশি হলেই সাফল্য নিশ্চিত—এই ধারণা সংশোধন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব ধরনের উপকরণ প্রস্তুত করাই নিষিদ্ধ বলে।"
+        },
+        {
+          "id": "b",
+          "text": "দাবি করে, মুমিনরা কখনো ভয় পাননি।"
+        },
+        {
+          "id": "c",
+          "text": "পরাজয়কে সমাজের প্রত্যেকের অসততার প্রমাণ করে।"
+        },
+        {
+          "id": "d",
+          "text": "হুনাইনে বেশি সংখ্যাও প্রথমে মুমিনদের রক্ষা করতে পারেনি বলে স্মরণ করায়।"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি লোকসংখ্যাকে নিশ্চয়তা মনে করে নির্ভর করার ধারণাকে প্রশ্ন করে। এটি বাস্তব প্রস্তুতি বাদ দেয় না বা প্রত্যেকের আন্তরিকতা বিচার করার অনুমতি দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "25",
+          "label": "কুরআন ৯:২৫",
+          "url": "https://quran.com/9/25"
+        }
+      ]
+    },
+    {
+      "id": "seerah_057",
+      "conceptId": "seerah_madinah_brotherhood",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "কুরআন ৫৯:৯-এ অভাব থাকা সত্ত্বেও আশ্রয়দাতা সমাজের উদারতার প্রশংসা করা হয়েছে। কোন সিদ্ধান্তে এই প্রশংসার মূল কথা বজায় থাকে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজেদের প্রয়োজন থাকা সত্ত্বেও অন্যদের অগ্রাধিকার দেওয়ার বাস্তব ত্যাগ তাঁদের সাহায্যে ছিল।"
+        },
+        {
+          "id": "b",
+          "text": "তাঁদের কোনো প্রয়োজন ছিল না বলেই শুধু তাঁরা উদার ছিলেন।"
+        },
+        {
+          "id": "c",
+          "text": "আয়াতটি আগত ব্যক্তিদের প্রাপ্তির প্রতি ঈর্ষার প্রশংসা করে।"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতটি বলে, আগত ব্যক্তিদের সাহায্যের প্রয়োজন ছিল না।"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটিতে মুহাজিরদের প্রতি ভালোবাসা ও অভাবের মাঝেও উদারতার কথা রয়েছে। এতে সহায়তার বাস্তব তাৎপর্য ফুটে ওঠে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "9",
+          "label": "কুরআন ৫৯:৯",
+          "url": "https://quran.com/59/9"
+        }
+      ]
+    },
+    {
+      "id": "seerah_058",
+      "conceptId": "seerah_final_review",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "শেষ বছরের বর্ণনায় কুরআন দুইবার পর্যালোচনা ও নবী (সা.)-এর বিশ দিন ইতিকাফের কথা আছে। কোন দাবিটি সরাসরি সমর্থিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রত্যেক মুসলিমকে প্রতিবছর বিশ দিন ইতিকাফ করতেই হবে।"
+        },
+        {
+          "id": "b",
+          "text": "শেষ বছরে তাঁর স্বাভাবিক বার্ষিক আমলের তুলনায় বেশি পর্যালোচনা ও দীর্ঘতর ইতিকাফ ছিল।"
+        },
+        {
+          "id": "c",
+          "text": "কুরআন শুধু নবী (সা.)-এর মৃত্যুর পর পর্যালোচনা করা হয়েছিল।"
+        },
+        {
+          "id": "d",
+          "text": "বর্ণনাটি প্রথম ওহির নির্দিষ্ট তারিখ দেয়।"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটি তাঁর আমল জানায়। শুধু এসব তথ্য থেকে সর্বজনীন বাধ্যবাধকতা বা সম্পর্কহীন ঐতিহাসিক তারিখ প্রতিষ্ঠা করা যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4998",
+          "label": "সহিহ বুখারি ৪৯৯৮",
+          "url": "https://sunnah.com/bukhari:4998"
+        }
+      ]
+    },
+    {
+      "id": "seerah_059",
+      "conceptId": "seerah_prophet_mortality",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "নবী (সা.)-এর মৃত্যুর পরে আবু বকর (রা.)-এর ভাষণের বর্ণনায় কুরআন ৩:১৪৪ তিলাওয়াত করা হয়। কোন পার্থক্যটি কেন্দ্রীয় ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রাসুলের মৃত্যুতে আগের সব শিক্ষা মিথ্যা হয়ে গেছে।"
+        },
+        {
+          "id": "b",
+          "text": "সমাজ আর আল্লাহর ইবাদত করতে পারবে না।"
+        },
+        {
+          "id": "c",
+          "text": "রাসুলের মৃত্যু মানে আল্লাহর মৃত্যু বা আল্লাহর ইবাদত শেষ হয়ে যাওয়া নয়।"
+        },
+        {
+          "id": "d",
+          "text": "সব রাসুল মৃত্যুর ঊর্ধ্বে ছিলেন।"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় আবু বকর (রা.) সমাজকে আল্লাহর দিকে ফিরিয়ে দেন এবং রাসুলের মরণশীলতার আয়াত তিলাওয়াত করেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4452",
+          "label": "সহিহ বুখারি ৪৪৫২",
+          "url": "https://sunnah.com/bukhari:4452"
+        },
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "144",
+          "label": "কুরআন ৩:১৪৪",
+          "url": "https://quran.com/3/144"
+        }
+      ]
+    },
+    {
+      "id": "seerah_060",
+      "conceptId": "seerah_chronology_basics",
+      "categoryId": "seerah",
+      "difficulty": "advanced",
+      "questionType": "single_choice",
+      "question": "নবী (সা.)-এর জীবনের প্রধান ঘটনাগুলোর কোন ক্রমটি সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মদিনায় হিজরত, প্রথম ওহি, বিদায় হজ, হুদাইবিয়া"
+        },
+        {
+          "id": "b",
+          "text": "হুদাইবিয়া, প্রথম ওহি, মদিনায় হিজরত, বিদায় হজ"
+        },
+        {
+          "id": "c",
+          "text": "বিদায় হজ, হুদাইবিয়া, মদিনায় হিজরত, প্রথম ওহি"
+        },
+        {
+          "id": "d",
+          "text": "প্রথম ওহি, মদিনায় হিজরত, হুদাইবিয়া, বিদায় হজ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "প্রথম ওহি মক্কি জীবনের ঘটনা; হিজরতে মদিনার জীবন শুরু হয়; হুদাইবিয়া বিদায় হজের আগে। যুক্ত সূত্রগুলো এই পৃথক পর্যায়ের বিবরণ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1218a",
+          "label": "সহিহ মুসলিম ১২১৮a",
+          "url": "https://sunnah.com/muslim:1218a"
+        }
+      ]
+    }
+  ]
+}

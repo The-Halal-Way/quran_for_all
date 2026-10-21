@@ -1,0 +1,2296 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "mid",
+  "categoryId": "hadith_knowledge",
+  "title": "হাদিসের জ্ঞান",
+  "description": "সাধারণ ব্যবহারকারী → মধ্যম স্তর। হাদিসের পরিচিত জ্ঞান, আরও কিছু মৌলিক বিষয় ও ছোট দৈনন্দিন প্রয়োগ। সুপরিচিত সংকলন, দায়িত্বশীল প্রচার ও ব্যাখ্যা এবং সহজবোধ্য নববী শিক্ষা অন্তর্ভুক্ত। সব প্রশ্ন মধ্যম স্তরের। বিশেষজ্ঞ পর্যায়ের হাদিসের মান নির্ধারণের নিয়ম বা সূত্রের নম্বর মুখস্থের প্রশ্ন রাখা হয়নি।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "মধ্যম স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও উপলব্ধির মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। প্রাথমিকের চেয়ে কিছু বেশি বোঝাপড়া ও সহজ সম্পর্ক ধরার প্রয়োজন, বিশেষজ্ঞ পর্যায়ের পড়াশোনা নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত হাদিসের মূল পাঠ ও প্রকাশকের পরিচিতিমূলক লেখা মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যাগুলো শিক্ষামূলকভাবে নিজস্ব ভাষায় লেখা; এগুলো হুবহু অনুবাদ নয়। আধুনিক পরিস্থিতিগুলো সূত্রে উল্লিখিত মূলনীতির উদাহরণ। এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_mid_hadith_knowledge_001",
+      "conceptId": "hadith_bukhari_compiler",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সহিহ বুখারি কে সংকলন করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইমাম বুখারি"
+        },
+        {
+          "id": "b",
+          "text": "ইমাম মুসলিম"
+        },
+        {
+          "id": "c",
+          "text": "ইমাম নববি"
+        },
+        {
+          "id": "d",
+          "text": "ইমাম তিরমিজি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সহিহ বুখারি সংকলন করেছেন মুহাম্মদ ইবনু ইসমাইল আল-বুখারি।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ বুখারি পরিচিতি",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_002",
+      "conceptId": "hadith_muslim_compiler",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সহিহ মুসলিম কে সংকলন করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইমাম বুখারি"
+        },
+        {
+          "id": "b",
+          "text": "ইমাম মুসলিম ইবনুল হাজ্জাজ"
+        },
+        {
+          "id": "c",
+          "text": "ইমাম মালিক"
+        },
+        {
+          "id": "d",
+          "text": "ইমাম নববি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সহিহ মুসলিম সংকলন করেছেন মুসলিম ইবনুল হাজ্জাজ।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ মুসলিম পরিচিতি",
+          "url": "https://sunnah.com/muslim/about"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_003",
+      "conceptId": "hadith_two_sahihs",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন দুটি সংকলনকে সাধারণত সহিহাইন বা দুই সহিহ বলা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুনান আবু দাউদ ও আল-মুওয়াত্তা"
+        },
+        {
+          "id": "b",
+          "text": "রিয়াদুস সালিহিন ও আল-আদাবুল মুফরাদ"
+        },
+        {
+          "id": "c",
+          "text": "সহিহ বুখারি ও সহিহ মুসলিম"
+        },
+        {
+          "id": "d",
+          "text": "কুরআন ও সহিহ বুখারি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "এই পরিভাষায় বুখারি ও মুসলিমের সংকলন দুটিকে বোঝানো হয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ মুসলিম পরিচিতি",
+          "url": "https://sunnah.com/muslim/about"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_004",
+      "conceptId": "hadith_chain",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিসচর্চায় বর্ণনাকারীদের ধারাবাহিকতা বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআনের সুরাগুলোর ক্রম"
+        },
+        {
+          "id": "b",
+          "text": "মুদ্রিত বইয়ের পৃষ্ঠা নম্বর"
+        },
+        {
+          "id": "c",
+          "text": "যেসব জায়গায় বই বিক্রি হয়েছে তার তালিকা"
+        },
+        {
+          "id": "d",
+          "text": "যাঁদের মাধ্যমে বর্ণনাটি এসেছে তাঁদের ক্রম"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনা কীভাবে পৌঁছেছে তা নিয়ে গবেষণায় কারা সেটি বর্ণনা করেছেন তা যাচাই করাও অন্তর্ভুক্ত।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_005",
+      "conceptId": "hadith_divine_report",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "‘আমার বান্দারা’ সম্বোধন দিয়ে শুরু হওয়া বর্ণনায় নবীজি কার পক্ষ থেকে জুলুম নিষিদ্ধ করার কথা বলেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "আবু জার"
+        },
+        {
+          "id": "c",
+          "text": "মদিনার কোনো শাসক"
+        },
+        {
+          "id": "d",
+          "text": "বর্ণনাকারীর শিক্ষক"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি আল্লাহর এই ঘোষণা বর্ণনা করেন যে তাঁর বান্দাদের মধ্যে জুলুম নিষিদ্ধ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2577a",
+          "label": "সহিহ মুসলিম ২৫৭৭a",
+          "url": "https://sunnah.com/muslim:2577a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_006",
+      "conceptId": "hadith_jibril_visitor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইসলাম, ঈমান ও ইহসানের হাদিসে আগন্তুককে পরে কার পরিচয়ে শনাক্ত করা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মিকাইল"
+        },
+        {
+          "id": "b",
+          "text": "জিবরিল"
+        },
+        {
+          "id": "c",
+          "text": "ইয়েমেনের একজন শাসক"
+        },
+        {
+          "id": "d",
+          "text": "অপরিচিত একজন ব্যবসায়ী"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবীজি ব্যাখ্যা করেন যে মানুষকে দ্বীন শেখাতে জিবরিল এসেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_007",
+      "conceptId": "hadith_question_teaching",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "জিবরিলের হাদিসে কোন শিক্ষাপদ্ধতি বিশেষভাবে দেখা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপরিচিত তারিখ নিয়ে প্রতিযোগিতা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু ব্যবসার দাম নিয়ে পাঠ"
+        },
+        {
+          "id": "c",
+          "text": "মৌলিক বিষয় নিয়ে প্রশ্ন ও উত্তর"
+        },
+        {
+          "id": "d",
+          "text": "পারিবারিক সম্পদ নিয়ে বিতর্ক"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় ধারাবাহিক প্রশ্নোত্তরের মাধ্যমে দ্বীনের মৌলিক বিষয় শেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_008",
+      "conceptId": "hadith_report_care",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "যা শোনা যায় সব বলে বেড়ানো সম্পর্কে হাদিসে কোন অভ্যাস থেকে সতর্ক করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নির্ভরযোগ্য সূত্র চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "জানা নেই বলে স্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "ভুল বর্ণনা সংশোধন করা"
+        },
+        {
+          "id": "d",
+          "text": "যত্ন বা যাচাই ছাড়া বর্ণনা প্রচার"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সতর্কবাণীটি বাছবিচারহীন প্রচারের বদলে সতর্কতা অবলম্বন করতে বলে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "সহিহ মুসলিম ৫",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_009",
+      "conceptId": "hadith_all_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ভালো কাজ সম্পর্কে হাদিসের বিস্তৃত শিক্ষা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি ভালো কাজ সদকা হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু নির্দিষ্ট অঙ্কের বেশি দানই সদকা হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু প্রকাশ্য কাজের মূল্য থাকতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "সহায়ক কাজের সঙ্গে সদকার সম্পর্ক নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি সদকাকে শুধু আর্থিক দানের বাইরেও বুঝতে শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1005",
+          "label": "সহিহ মুসলিম ১০০৫",
+          "url": "https://sunnah.com/muslim:1005"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_010",
+      "conceptId": "hadith_guiding_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্য কাউকে ভালো কাজের পথ দেখান এমন ব্যক্তিকে কী উৎসাহ দেওয়া হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য ব্যক্তির সম্পদের মালিকানা"
+        },
+        {
+          "id": "b",
+          "text": "সেই ভালো কাজকারীর অনুরূপ প্রতিদান"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি আমলকে নিজের বলে দাবি করার অনুমতি"
+        },
+        {
+          "id": "d",
+          "text": "বিখ্যাত হওয়ার নিশ্চয়তা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে অন্যকে ভালো কাজের সুযোগ খুঁজে পেতে সাহায্য করতে উৎসাহ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "সহিহ মুসলিম ১৮৯৩a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_011",
+      "conceptId": "hadith_contentment",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই হাদিসে প্রকৃত ধনাঢ্যতা কিসের সঙ্গে যুক্ত করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে বেশি সম্পদ থাকা"
+        },
+        {
+          "id": "b",
+          "text": "সব সময় প্রতিবেশীর চেয়ে বেশি থাকা"
+        },
+        {
+          "id": "c",
+          "text": "অন্তরের তৃপ্তি"
+        },
+        {
+          "id": "d",
+          "text": "দামি কেনাকাটার জন্য প্রশংসা পাওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি শুধু অনেক জিনিসের মালিক হওয়া থেকে অন্তরের পরিতৃপ্তিকে আলাদা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6446",
+          "label": "সহিহ বুখারি ৬৪৪৬",
+          "url": "https://sunnah.com/bukhari:6446"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_012",
+      "conceptId": "hadith_one_body",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "পারস্পরিক ভালোবাসা ও মমতায় মুমিনদের বোঝাতে কোন উপমা দেওয়া হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একে অন্যের চিন্তাহীন আলাদা দ্বীপ"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের কষ্টে লাভবান প্রতিদ্বন্দ্বী"
+        },
+        {
+          "id": "c",
+          "text": "শুধু লাভ দিয়ে বিচার করা বাজার"
+        },
+        {
+          "id": "d",
+          "text": "এক অংশে কষ্ট হলে প্রভাবিত হয় এমন একটি দেহ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "এই উপমা অন্যের কষ্টে একসঙ্গে উদ্বিগ্ন হওয়া ও সাড়া দেওয়ার গুরুত্ব বোঝায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "সহিহ মুসলিম ২৫৮৬a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_013",
+      "conceptId": "hadith_building",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুমিনদের পরস্পরকে শক্তিশালী করার জন্য কোন উপমা দেওয়া হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একটি ভবনের এক অংশ অন্য অংশকে সমর্থন করা"
+        },
+        {
+          "id": "b",
+          "text": "কোনো সহায়তা ছাড়াই দাঁড়ানোর চেষ্টা করা মানুষ"
+        },
+        {
+          "id": "c",
+          "text": "একসঙ্গে গড়া দেয়াল ভাঙতে থাকা প্রতিদ্বন্দ্বী"
+        },
+        {
+          "id": "d",
+          "text": "সব উপকারী সম্পদ লুকিয়ে রাখা পথিক"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি ভবনের উপমা ব্যবহার করেছেন এবং পারস্পরিক সহায়তা বোঝাতে আঙুলগুলো পরস্পরে প্রবেশ করিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "সহিহ বুখারি ৪৮১",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_014",
+      "conceptId": "hadith_trade_blessing",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কেনাবেচায় কোন আচরণের সঙ্গে বরকত যুক্ত করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আকর্ষণীয় বর্ণনার আড়ালে ত্রুটি লুকানো"
+        },
+        {
+          "id": "b",
+          "text": "সত্য বলা ও তথ্য প্রকাশ করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রশ্ন ঠেকাতে চাপ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "জেনেশুনে মিথ্যা দাবি করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় সত্যভাবে বুঝিয়ে বলার সঙ্গে বরকত যুক্ত এবং গোপন করা ও মিথ্যা থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "সহিহ বুখারি ২০৭৯",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_015",
+      "conceptId": "hadith_concealed_defect",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "বিক্রির জন্য রাখা খাবারের স্তূপের ভেতরে ভেজা খাবার পেয়ে নবীজি কী বিষয়ে আপত্তি করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্যভাবে খাবার দেখানো"
+        },
+        {
+          "id": "b",
+          "text": "ক্রেতাদের অবস্থা দেখতে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "ক্রেতাদের কাছ থেকে খাবারের অবস্থা লুকানো"
+        },
+        {
+          "id": "d",
+          "text": "খাবার কীভাবে ভিজেছে তা জানানো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ক্রেতাদের দেখার মতো সমস্যা লুকিয়ে প্রতারণার নিন্দা বর্ণনায় করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_016",
+      "conceptId": "hadith_ongoing_reward",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মৃত্যুর পরেও উপকার চলতে থাকার কোন তিনটি মাধ্যম উল্লেখ আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খ্যাতি, বংশমর্যাদা ও দামি সম্পদ"
+        },
+        {
+          "id": "b",
+          "text": "ব্যক্তিগত সঞ্চয়, প্রকাশ্য প্রশংসা ও শারীরিক শক্তি"
+        },
+        {
+          "id": "c",
+          "text": "পদবি, সফরের নথি ও সামাজিক প্রভাব"
+        },
+        {
+          "id": "d",
+          "text": "সদকায়ে জারিয়া, উপকারী জ্ঞান ও দোয়াকারী নেক সন্তান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে মৃত্যুর পরেও উপকার চলতে থাকার এই তিনটি পথ উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1631",
+          "label": "সহিহ মুসলিম ১৬৩১",
+          "url": "https://sunnah.com/muslim:1631"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_017",
+      "conceptId": "hadith_honest_work",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নিজের কাজের উপার্জন থেকে খাওয়ার উদাহরণ হিসেবে কোন নবির কথা বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দাউদ"
+        },
+        {
+          "id": "b",
+          "text": "ইউনুস"
+        },
+        {
+          "id": "c",
+          "text": "ইয়াহইয়া"
+        },
+        {
+          "id": "d",
+          "text": "জাকারিয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি নিজের কাজের মাধ্যমে উপার্জনের প্রশংসা করেছেন এবং দাউদকে উদাহরণ হিসেবে উল্লেখ করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2072",
+          "label": "সহিহ বুখারি ২০৭২",
+          "url": "https://sunnah.com/bukhari:2072"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_018",
+      "conceptId": "hadith_repayment",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ধার করা উট ফেরত দেওয়ার বর্ণনায় কোন গুণের প্রশংসা করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মর্যাদা ব্যবহার করে পাওনা এড়ানো"
+        },
+        {
+          "id": "b",
+          "text": "উত্তমভাবে পাওনা পরিশোধ করা"
+        },
+        {
+          "id": "c",
+          "text": "পাওনাদার চাইলে তাঁকে লজ্জা দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "পরিশোধ সম্ভব হলেও ঋণ অস্বীকার করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবীজি উদারভাবে পাওনাদারের প্রাপ্য দিয়েছেন এবং উত্তম পরিশোধের প্রশংসা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2305",
+          "label": "সহিহ বুখারি ২৩০৫",
+          "url": "https://sunnah.com/bukhari:2305"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_019",
+      "conceptId": "hadith_private_talk",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শুধু তিনজন একসঙ্গে থাকলে হাদিসে কোন আচরণ থেকে সতর্ক করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনজনই অংশ নিতে পারেন এমনভাবে কথা বলা"
+        },
+        {
+          "id": "b",
+          "text": "তৃতীয়জনকে আলোচনায় স্বাগত জানানো"
+        },
+        {
+          "id": "c",
+          "text": "তৃতীয়জনকে বাদ দিয়ে দুজনের গোপন আলাপ"
+        },
+        {
+          "id": "d",
+          "text": "ব্যক্তিগত বিষয়ের জন্য উপযুক্ত সময়ের অপেক্ষা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় বাদ পড়া ব্যক্তির মনে কষ্ট হওয়াকে এর কারণ হিসেবে উল্লেখ করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "সহিহ বুখারি ৬২৯০",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_020",
+      "conceptId": "hadith_gifts",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উপহার সম্পর্কে আয়িশা নবীজির কোন অভ্যাসের কথা বলেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি প্রতিটি সাধারণ উপহার দামি হওয়ার শর্ত দিতেন"
+        },
+        {
+          "id": "b",
+          "text": "তিনি প্রতিটি উপহারকে পক্ষপাতের অনুমতি মনে করতেন"
+        },
+        {
+          "id": "c",
+          "text": "তিনি সাধারণ উপহারদাতাদের উপহাস করতেন"
+        },
+        {
+          "id": "d",
+          "text": "তিনি উপহার নিতেন এবং বিনিময়ে কিছু দিতেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় উপহার গ্রহণ ও প্রতিদানে উপহার দেওয়ার অভ্যাসের কথা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2585",
+          "label": "সহিহ বুখারি ২৫৮৫",
+          "url": "https://sunnah.com/bukhari:2585"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_021",
+      "conceptId": "hadith_collection_authenticity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাদিসের সংকলনে থাকলেই কি প্রতিটি বর্ণনার সত্যতা নিজে থেকে প্রতিষ্ঠিত হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, সংকলনগুলোর অন্তর্ভুক্তির মানদণ্ড ভিন্ন"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রতিটি সংকলনে শুধু সহিহ বর্ণনা থাকে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু মুদ্রিত পৃষ্ঠাই সত্যতা নির্ধারণ করে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সাজানো মলাটই যথেষ্ট"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনার মান নির্ভরযোগ্যভাবে মূল্যায়ন করতে হয়; শুধু সংকলনে থাকা যথেষ্ট নয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_022",
+      "conceptId": "hadith_ruling_context",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "প্রশিক্ষণহীন পাঠকের একটি বিচ্ছিন্ন অনূদিত বর্ণনা থেকে জটিল বিধান নির্ধারণ এড়ানো উচিত কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অনুবাদ বিধানসম্পর্কিত প্রতিটি প্রশ্ন সহজ করে দেয়"
+        },
+        {
+          "id": "b",
+          "text": "আলেমদের ব্যাখ্যায় প্রাসঙ্গিক প্রমাণ ও পরিস্থিতি বিবেচিত হয়"
+        },
+        {
+          "id": "c",
+          "text": "একটি বাক্য সব সময় অন্য সব প্রমাণ বাতিল করে"
+        },
+        {
+          "id": "d",
+          "text": "ব্যক্তিগত আত্মবিশ্বাস শেখার বিকল্প"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "একটি বর্ণনা নিজে পূর্ণ বিধান নয়; যোগ্য ব্যাখ্যা গুরুত্বপূর্ণ।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_023",
+      "conceptId": "hadith_paraphrase",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নিজের ভাষায় হাদিস ব্যাখ্যা করার সময় কোন পার্থক্যটি স্পষ্ট রাখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি ব্যক্তিগত মন্তব্য হাদিসের অংশ হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "উপকারী ব্যাখ্যার সঙ্গে বর্ণনার সম্পর্ক দরকার নেই"
+        },
+        {
+          "id": "c",
+          "text": "নিজের ব্যাখ্যা নবীজির হুবহু কথা নয়"
+        },
+        {
+          "id": "d",
+          "text": "যেকোনো অনুপ্রেরণামূলক কথা নবীজির নামে বলা যায়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "যত্নশীলভাবে কথা আরোপের মধ্যে বর্ণনা ও নিজের ব্যাখ্যাকে আলাদা করাও অন্তর্ভুক্ত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3461",
+          "label": "সহিহ বুখারি ৩৪৬১",
+          "url": "https://sunnah.com/bukhari:3461"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_024",
+      "conceptId": "hadith_convey_accurately",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অল্প শিক্ষাও পৌঁছে দেওয়ার উৎসাহ প্রচারকারীর কাছে কী দাবি করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জ্ঞান অসম্পূর্ণ হলেই স্বাধীনভাবে অনুমান করা"
+        },
+        {
+          "id": "b",
+          "text": "জনপ্রিয়তাকে নির্ভুলতার প্রমাণ ধরা"
+        },
+        {
+          "id": "c",
+          "text": "আগ্রহ বাড়াতে নাটকীয় তথ্য যোগ করা"
+        },
+        {
+          "id": "d",
+          "text": "কিছু না বানিয়ে নির্ভরযোগ্যভাবে জানা বিষয় পৌঁছে দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "যে বর্ণনায় শিক্ষা পৌঁছে দিতে উৎসাহ দেওয়া হয়েছে, সেখানেই নবীজির নামে মিথ্যা বলা থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3461",
+          "label": "সহিহ বুখারি ৩৪৬১",
+          "url": "https://sunnah.com/bukhari:3461"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_025",
+      "conceptId": "hadith_fabrication_warning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বার্তা আকর্ষণীয় হলেই কি ইচ্ছা করে নবীজির নামে মিথ্যা কথা চালানো গ্রহণযোগ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, ইচ্ছাকৃত মিথ্যা আরোপ গুরুতর অন্যায়ই থাকে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, যথেষ্ট মানুষ পছন্দ করলে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, এতে আরও অনুসারী হলে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, কোনো নেক আমলের কথা থাকলেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "উদ্দেশ্য উপকারী মনে হলেও কোনো দাবি মিথ্যাভাবে নবীজির নামে চালানো উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "4a",
+          "label": "সহিহ মুসলিম ৪a",
+          "url": "https://sunnah.com/muslim:4a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_026",
+      "conceptId": "hadith_oppression",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "এই বর্ণনায় জুলুম নিষিদ্ধ করার আল্লাহর ঘোষণা থেকে কোন প্রধান দায়িত্ব আসে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষমতা প্রতিটি কাজ বৈধ করে ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের ওপর অন্যায় করা থেকে বাঁচা"
+        },
+        {
+          "id": "c",
+          "text": "অন্যের অধিকারকে অপ্রাসঙ্গিক মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "সুবিধা পেলেই ক্ষতির অজুহাত দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় আল্লাহর বান্দাদের মধ্যে জুলুম নিষিদ্ধ হিসেবে তুলে ধরা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2577a",
+          "label": "সহিহ মুসলিম ২৫৭৭a",
+          "url": "https://sunnah.com/muslim:2577a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_027",
+      "conceptId": "hadith_charity_scope",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাদিসে সদকার অর্থ কি শুধু আর্থিক সামর্থ্যের মধ্যে সীমিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু টাকায় মূল্য তৈরি হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সম্পদহীন মানুষের কোনো ভালো অবদান নেই"
+        },
+        {
+          "id": "c",
+          "text": "না, অর্থ ছাড়াও ভালো কাজ রয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু ধনী দাতারা সমাজকে সাহায্য করতে পারেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শিক্ষাটি আর্থিক দানের মূল্য বজায় রেখেই অর্থের বাইরে ভালো কাজের স্বীকৃতি দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1005",
+          "label": "সহিহ মুসলিম ১০০৫",
+          "url": "https://sunnah.com/muslim:1005"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_028",
+      "conceptId": "hadith_guiding_role",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কাউকে ভালো কাজের পথ খুঁজে পেতে সাহায্য করাও কি মূল্যবান হতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, সব কাজ নিজে করলেই শুধু মূল্য থাকতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "সাহায্যকারী বিখ্যাত হলেই শুধু"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্যপ্রাপ্ত ব্যক্তি ফি দিলেই শুধু"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, ভালো কাজের দিকনির্দেশ দেওয়ার প্রতিদান রয়েছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় মানুষকে উপকারী সুযোগের সঙ্গে যুক্ত করতে উৎসাহ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "সহিহ মুসলিম ১৮৯৩a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_029",
+      "conceptId": "hadith_contentment_balance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্তরের তৃপ্তি কি প্রতিটি বাস্তব প্রয়োজন উপেক্ষা করা বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, অন্তরের পরিতৃপ্তি ও প্রকৃত প্রয়োজন অস্বীকার আলাদা"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, খাবারের প্রয়োজন দুর্বল ঈমানের প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, মৌলিক প্রয়োজনের পরিকল্পনা সব সময় ভুল"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সব কাজ প্রত্যাখ্যান করাই তৃপ্তি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি সম্পদকেই ধনাঢ্যতা ভাবার ধারণা সংশোধন করে; সাধারণ প্রয়োজন দূর করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6446",
+          "label": "সহিহ বুখারি ৬৪৪৬",
+          "url": "https://sunnah.com/bukhari:6446"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_030",
+      "conceptId": "hadith_compassion_response",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্য মুমিনের কষ্টে কোন প্রতিক্রিয়া একটি দেহের উপমার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কষ্ট নিজের নয় বলে উদাসীনতা"
+        },
+        {
+          "id": "b",
+          "text": "উদ্বেগ যা উপযুক্ত সাহায্যে রূপ নেয়"
+        },
+        {
+          "id": "c",
+          "text": "অন্যের অসুবিধা দেখে আনন্দ"
+        },
+        {
+          "id": "d",
+          "text": "শুধু প্রকাশ্য কষ্ট গুরুত্বপূর্ণ—এমন ধারণা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "এই উপমা মানসিক দূরত্বের বদলে আন্তরিক চিন্তায় উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "সহিহ মুসলিম ২৫৮৬a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_031",
+      "conceptId": "hadith_support_cooperation",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "একটি সহায়ক ভবনের উপমা কোন নীতি শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপকারী সহযোগিতা সব সময় ব্যক্তিগত ঈমান দুর্বল করে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি সদস্যের অন্যদের ক্ষতি করা উচিত"
+        },
+        {
+          "id": "c",
+          "text": "পারস্পরিক সহায়তা সমাজকে শক্তিশালী করে"
+        },
+        {
+          "id": "d",
+          "text": "কারও কখনো সাহায্য নেওয়া উচিত নয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মুমিনদের একে অন্যের বিরুদ্ধে কাজ না করে শক্তি জোগাতে উৎসাহ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "সহিহ বুখারি ৪৮১",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_032",
+      "conceptId": "hadith_bankruptcy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "প্রকৃত নিঃস্ব ব্যক্তি সম্পর্কে হাদিসে কোন বিপদ তুলে ধরা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অল্প টাকা থাকা নিজেই গুনাহ"
+        },
+        {
+          "id": "b",
+          "text": "ধর্মীয় চেহারা অন্যের অধিকার দূর করে"
+        },
+        {
+          "id": "c",
+          "text": "ব্যক্তিগত জনপ্রিয়তা জবাবদিহি ঠেকায়"
+        },
+        {
+          "id": "d",
+          "text": "অন্যের ওপর জুলুম নিজের নেক আমলের প্রতিদান নিঃশেষ করতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় ইবাদত নিয়ে উপস্থিত হলেও গুরুতর অন্যায়ের জন্য অন্যদের কাছে দায়বদ্ধ থাকার ব্যাপারে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2581",
+          "label": "সহিহ মুসলিম ২৫৮১",
+          "url": "https://sunnah.com/muslim:2581"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_033",
+      "conceptId": "hadith_trade_disclosure",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বিক্রি কঠিন হয়ে যেতে পারলেও সত্যভাবে তথ্য প্রকাশ গুরুত্বপূর্ণ কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতারণা করে ক্রেতাকে কিনতে রাজি করানো উচিত নয়"
+        },
+        {
+          "id": "b",
+          "text": "লাভ সততার সব দায় সরিয়ে দেয়"
+        },
+        {
+          "id": "c",
+          "text": "প্রচলিত হলেই গোপন করা বৈধ হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বিক্রেতার তাৎক্ষণিক লাভ গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসে সত্যভাবে তথ্য জানানোর সঙ্গে বরকত যুক্ত এবং মিথ্যা ও গোপন করা থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "সহিহ বুখারি ২০৭৯",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_034",
+      "conceptId": "hadith_visible_condition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ভেজা খাবার লুকানোর বর্ণনা নির্দিষ্ট বেচাকেনার বাইরেও কী শিক্ষা দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ওই নির্দিষ্ট খাবারেই প্রতারণা হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "গুরুত্বপূর্ণ সমস্যা লুকিয়ে মানুষকে বিভ্রান্ত কোরো না"
+        },
+        {
+          "id": "c",
+          "text": "ক্রেতা না দেখলে সমস্যা ক্ষতিহীন"
+        },
+        {
+          "id": "d",
+          "text": "ভালো বিক্রয়কথা সব গোপন করা গ্রহণযোগ্য করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নির্দিষ্ট ঘটনাটি প্রতারণার বিরুদ্ধে বিস্তৃত সতর্কতার উদাহরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_035",
+      "conceptId": "hadith_beneficial_knowledge",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "উপকারী জ্ঞান শেখানোর দীর্ঘস্থায়ী মূল্য থাকতে পারে কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু শিক্ষকের নাম বিখ্যাত থাকলেই হবে"
+        },
+        {
+          "id": "b",
+          "text": "লিখে রাখলেই প্রতিটি মতামত উপকারী হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "শিক্ষকের মৃত্যুর পরেও মানুষ তা থেকে উপকৃত হতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "উপকারের চেয়ে ফাইলের সংখ্যা গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় চলমান উপকারকে বিশেষভাবে এমন জ্ঞানের সঙ্গে যুক্ত করা হয়েছে যা মানুষ উপকারীভাবে কাজে লাগায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1631",
+          "label": "সহিহ মুসলিম ১৬৩১",
+          "url": "https://sunnah.com/muslim:1631"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_036",
+      "conceptId": "hadith_work_dignity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নিজের উপার্জনের প্রশংসা করা হাদিস সৎ কাজের প্রতি কোন মনোভাব শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু উচ্চ মর্যাদার কাজ সম্মানের যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "কায়িক শ্রম সব সময় ধার্মিক ব্যক্তির মর্যাদার নিচে"
+        },
+        {
+          "id": "c",
+          "text": "মর্যাদাপূর্ণ দেখালেই নির্ভরশীলতা উত্তম"
+        },
+        {
+          "id": "d",
+          "text": "সাধারণ কাজকে তুচ্ছ না করে হালাল পরিশ্রমকে সম্মান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে নিজের পরিশ্রমে উপার্জনকে সম্মান করা হয়েছে এবং একজন নবিকে উদাহরণ দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2072",
+          "label": "সহিহ বুখারি ২০৭২",
+          "url": "https://sunnah.com/bukhari:2072"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_037",
+      "conceptId": "hadith_repayment_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "উত্তমভাবে পাওনা পরিশোধ কোন বিষয়টির ওপর গুরুত্ব দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যের প্রাপ্যকে সম্মান করা"
+        },
+        {
+          "id": "b",
+          "text": "স্বীকার করা ঋণ অস্বীকারে অজুহাত ব্যবহার"
+        },
+        {
+          "id": "c",
+          "text": "প্রকাশ্য প্রশংসার ওপর পরিশোধ নির্ভর করানো"
+        },
+        {
+          "id": "d",
+          "text": "ধার করা জিনিসকে স্থায়ীভাবে নিজের মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় অন্যের অধিকার সুন্দরভাবে পূরণ করার প্রশংসা করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2305",
+          "label": "সহিহ বুখারি ২৩০৫",
+          "url": "https://sunnah.com/bukhari:2305"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_038",
+      "conceptId": "hadith_exclusion_feelings",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "তিনজনের মধ্যে ব্যক্তিগত আলাপের নির্দেশ গুরুত্বপূর্ণ কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি আলাপ সবার কাছে প্রচার করতেই হবে"
+        },
+        {
+          "id": "b",
+          "text": "বাদ পড়লে দুঃখ ও সন্দেহ হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "সব পরিস্থিতিতে ব্যক্তিগত আলাপ নিষিদ্ধ"
+        },
+        {
+          "id": "d",
+          "text": "কথা কখনো মানুষের অনুভূতিতে প্রভাব ফেলে না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "উপস্থিত একমাত্র অন্য ব্যক্তিকে বাদ দেওয়ার মানসিক প্রভাব নির্দেশটিতে বিবেচনা করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "সহিহ বুখারি ৬২৯০",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_039",
+      "conceptId": "hadith_gift_response",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "উপহারের প্রতিদানে নবীজির উপহার দেওয়া থেকে কোন দৈনন্দিন মূল্যবোধ শেখা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি উপহারকে বিশেষ সুবিধার দাবিতে পরিণত করা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু দাম দিয়ে সদাচরণ বিচার"
+        },
+        {
+          "id": "c",
+          "text": "বিনিময়ে সদাচরণের মাধ্যমে কদর প্রকাশ"
+        },
+        {
+          "id": "d",
+          "text": "উপহার দিয়ে দাতাকে অপমান"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটি বিবেচনাপূর্ণ প্রতিদানের উদাহরণ; প্রতিটি উপহারে প্রভাব কেনা যায় এমন নিয়ম নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2585",
+          "label": "সহিহ বুখারি ২৫৮৫",
+          "url": "https://sunnah.com/bukhari:2585"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_040",
+      "conceptId": "hadith_health_time",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন দুটি নেয়ামত ভালোভাবে কাজে না লাগানোর ব্যাপারে হাদিসে অনেক মানুষকে সতর্ক করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্পদ ও বংশপরিচয়"
+        },
+        {
+          "id": "b",
+          "text": "খ্যাতি ও পদবি"
+        },
+        {
+          "id": "c",
+          "text": "পোশাক ও শারীরিক উচ্চতা"
+        },
+        {
+          "id": "d",
+          "text": "সুস্থতা ও অবসর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে সুযোগ হাতে থাকতে তা নষ্ট হয়ে যেতে পারে—এই সচেতনতার আহ্বান রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6412",
+          "label": "সহিহ বুখারি ৬৪১২",
+          "url": "https://sunnah.com/bukhari:6412"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_041",
+      "conceptId": "hadith_report_care",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি বার্তায় প্রতিটি ধর্মীয় গল্প ফরোয়ার্ড করতেই হবে বলা হয়েছে। হাদিসের কোন নীতি এই দাবির বিপরীত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবকিছু বাছবিচারহীনভাবে পুনরাবৃত্তি কোরো না"
+        },
+        {
+          "id": "b",
+          "text": "ফরোয়ার্ড করলেই সত্যতা প্রতিষ্ঠিত হয়"
+        },
+        {
+          "id": "c",
+          "text": "ধর্মীয় পরিচয় থাকলে সতর্কতার দরকার নেই"
+        },
+        {
+          "id": "d",
+          "text": "বেশি শেয়ার যেকোনো গল্প নির্ভরযোগ্য করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "যা শোনা যায় সব বলে বেড়ানোর সতর্কতা অসতর্ক ফরোয়ার্ডের ক্ষেত্রেও প্রযোজ্য।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "সহিহ মুসলিম ৫",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_042",
+      "conceptId": "hadith_ruling_context",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি অনূদিত বাক্য দিয়ে জটিল ব্যক্তিগত বিধানের সিদ্ধান্ত দেওয়া হচ্ছে। দায়িত্বশীল পরবর্তী ধাপ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একটি স্ক্রিনশট সব পরিস্থিতির নিষ্পত্তি করে ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রাসঙ্গিক প্রমাণের যোগ্য ব্যাখ্যা চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "বাক্য ছোট বলে পরিস্থিতি উপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সহজ শোনায় এমন উত্তর দিয়ে সিদ্ধান্ত নেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "জটিল বিধানে যথাযথ ব্যাখ্যা প্রয়োজন, বিচ্ছিন্ন উদ্ধৃতি নয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_043",
+      "conceptId": "hadith_convey_accurately",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ছোট একটি শিক্ষা নির্ভরযোগ্যভাবে জানেন, কিন্তু সংশ্লিষ্ট একটি বিস্তারিত বিষয় ব্যাখ্যা করতে পারেন না। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ব্যাখ্যা সম্পূর্ণ দেখাতে বিস্তারিত বানাব"
+        },
+        {
+          "id": "b",
+          "text": "সীমা স্বীকার দুর্বল দেখায় বলে নিশ্চিত দাবি করব"
+        },
+        {
+          "id": "c",
+          "text": "যা জানি তা সঠিকভাবে জানিয়ে নিজের সীমা স্বীকার করব"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধুর অনুমানকে নবীজির কথা বলব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বানানো দাবি দিয়ে বাড়ানোর চেয়ে অল্প শিক্ষা সঠিকভাবে পৌঁছে দেওয়া উত্তম।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3461",
+          "label": "সহিহ বুখারি ৩৪৬১",
+          "url": "https://sunnah.com/bukhari:3461"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_044",
+      "conceptId": "hadith_oppression",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অন্যের স্পষ্ট অধিকার অস্বীকার করলে সুবিধা পেতে পারেন। এই বর্ণনার কোন শিক্ষা প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জিতলেই পদ্ধতি অপ্রাসঙ্গিক"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের দুর্বলতা তার অধিকার বাতিল করে"
+        },
+        {
+          "id": "c",
+          "text": "গোপন অন্যায় গুরুত্বপূর্ণ হতে পারে না"
+        },
+        {
+          "id": "d",
+          "text": "ব্যক্তিগত সুবিধা জুলুমকে গ্রহণযোগ্য করে না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অন্যায়ে নিজের লাভ হলেও অন্যদের প্রতি আচরণে জুলুম নিষিদ্ধের ঘোষণা প্রযোজ্য।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2577a",
+          "label": "সহিহ মুসলিম ২৫৭৭a",
+          "url": "https://sunnah.com/muslim:2577a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_045",
+      "conceptId": "hadith_guiding_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "প্রয়োজনীয় সেবা নিজে দিতে পারছেন না, তবে নির্ভরযোগ্য সেবাদাতাকে চেনেন। কোন প্রতিক্রিয়া হাদিসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ব্যক্তিকে উপকারী সাহায্যের সঙ্গে যুক্ত করা"
+        },
+        {
+          "id": "b",
+          "text": "সব নিজে না করলে সাহায্যের মূল্য নেই মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "মনোযোগ ধরে রাখতে তথ্য আটকে রাখা"
+        },
+        {
+          "id": "d",
+          "text": "যা পারি না তা দিতে পারি ভান করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কাউকে উপকারী সুযোগের পথ দেখানো নিজেই উৎসাহিত কাজ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "সহিহ মুসলিম ১৮৯৩a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_046",
+      "conceptId": "hadith_charity_scope",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সমাজের একজন টাকা দান করতে পারেন না, কিন্তু উপকারী কাজ করতে পারেন। অবদানটিকে কীভাবে দেখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "টাকা নেই বলে মূল্যহীন হিসেবে"
+        },
+        {
+          "id": "b",
+          "text": "অর্থবহ ভালো কাজ হিসেবে"
+        },
+        {
+          "id": "c",
+          "text": "ভিডিও করলেই শুধু মূল্যবান হিসেবে"
+        },
+        {
+          "id": "d",
+          "text": "প্রত্যাখ্যান করতেই হবে এমন কাজ হিসেবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ভালো কাজ সম্পর্কে বিস্তৃত শিক্ষা আন্তরিক ব্যবহারিক অবদানের স্বীকৃতি দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1005",
+          "label": "সহিহ মুসলিম ১০০৫",
+          "url": "https://sunnah.com/muslim:1005"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_047",
+      "conceptId": "hadith_contentment",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শুধু অন্যের সম্পদ বেশি বলে নিজেকে ব্যর্থ মনে হচ্ছে। কোন স্মরণটি হাদিসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বেশি সম্পদ সব সময় বেশি মর্যাদার প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "তৃপ্ত থাকতে সব ধনী মানুষকে ঘৃণা করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সম্পদ দিয়ে প্রকৃত ধনাঢ্যতা মাপা যায় না"
+        },
+        {
+          "id": "d",
+          "text": "শুধু প্রকাশ্য বিলাসিতা জীবনকে অর্থবহ করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসটি অনন্ত তুলনার বদলে অন্তরের পরিতৃপ্তির দিকে দৃষ্টি দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6446",
+          "label": "সহিহ বুখারি ৬৪৪৬",
+          "url": "https://sunnah.com/bukhari:6446"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_048",
+      "conceptId": "hadith_compassion_response",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সমাজের একটি পরিবার কষ্টে পড়েছে। মুমিনদের এক দেহের উপমা কোন কাজে প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের নয় বলে তাঁদের কষ্ট অপ্রাসঙ্গিক মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "তাঁদের দুর্দশাকে বিনোদন বানানো"
+        },
+        {
+          "id": "c",
+          "text": "চিন্তা দেখানোর আগে মনোযোগ দাবি করা"
+        },
+        {
+          "id": "d",
+          "text": "তাঁদের কষ্ট খেয়াল করে উপযুক্ত সাহায্য দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দেহের উপমা অন্যের কষ্টে সাড়া দেয় এমন যত্নে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "সহিহ মুসলিম ২৫৮৬a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_049",
+      "conceptId": "hadith_support_cooperation",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি উপকারী সামাজিক প্রকল্পে কয়েকটি কাজ রয়েছে। সহায়ক ভবনের উপমার সঙ্গে কোনটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অবদান সমন্বয় করে একে অন্যকে শক্তিশালী করা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যরা ব্যর্থ হোক বলে তথ্য লুকানো"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি সাহায্যকারীকে হারানোর প্রতিদ্বন্দ্বী ভাবা"
+        },
+        {
+          "id": "d",
+          "text": "স্বাধীন দেখাতে সব সহযোগিতা প্রত্যাখ্যান"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "এই উপমা উপকারী সহযোগিতার মাধ্যমে পরস্পরকে শক্তিশালী করতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "সহিহ বুখারি ৪৮১",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_050",
+      "conceptId": "hadith_trade_disclosure",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বিক্রির জিনিসে জানা ত্রুটি থাকায় দাম কমতে পারে। কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "টাকা পরিশোধ শেষ না হওয়া পর্যন্ত লুকাব"
+        },
+        {
+          "id": "b",
+          "text": "ক্রেতার সিদ্ধান্তের আগে ত্রুটিটি সত্যভাবে জানাব"
+        },
+        {
+          "id": "c",
+          "text": "বিশ্বাসযোগ্য দেখাই বলে পরীক্ষা অপ্রয়োজনীয় দাবি করব"
+        },
+        {
+          "id": "d",
+          "text": "দাম ধরে রাখতে বিভ্রান্তিকর বর্ণনা দেব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সত্যভাবে তথ্য জানানোর শিক্ষা সততায় বিক্রি প্রভাবিত হলেও প্রযোজ্য।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2079",
+          "label": "সহিহ বুখারি ২০৭৯",
+          "url": "https://sunnah.com/bukhari:2079"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_051",
+      "conceptId": "hadith_visible_condition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বিক্রেতা ভালো স্তর দেখিয়ে নিচে নষ্ট পণ্য লুকিয়েছেন। কোন বর্ণনা সরাসরি এই আচরণের বিরুদ্ধে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপহার গ্রহণের বর্ণনা"
+        },
+        {
+          "id": "b",
+          "text": "সুস্থতা ও অবসরের বর্ণনা"
+        },
+        {
+          "id": "c",
+          "text": "স্তূপের ভেতরে ভেজা খাবার লুকানোর বর্ণনা"
+        },
+        {
+          "id": "d",
+          "text": "তিনজনের মধ্যে ব্যক্তিগত আলাপের বর্ণনা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ক্রেতাদের দেখতে পারার কথা এমন অবস্থা লুকানোয় নবীজি আপত্তি করেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_052",
+      "conceptId": "hadith_beneficial_knowledge",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিজের মৃত্যুর পরেও একটি শিক্ষার উপকরণ উপকারী থাকুক চান। কী অগ্রাধিকার পাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু নিজের নামের গুরুত্ব"
+        },
+        {
+          "id": "b",
+          "text": "যাচাইহীন দাবির সর্বোচ্চ সংখ্যা"
+        },
+        {
+          "id": "c",
+          "text": "কারও পক্ষে বোঝা অসম্ভব করা"
+        },
+        {
+          "id": "d",
+          "text": "নির্ভুলতা ও শিক্ষার্থীদের প্রকৃত উপকার"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "স্থায়ী শিক্ষামূলক উপকার শুধু কিছু বিষয়বস্তু রেখে যাওয়া নয়, উপকারী জ্ঞানের ওপর নির্ভর করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1631",
+          "label": "সহিহ মুসলিম ১৬৩১",
+          "url": "https://sunnah.com/muslim:1631"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_053",
+      "conceptId": "hadith_work_dignity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সাধারণ হালাল কাজ করে উপার্জনের জন্য কাউকে উপহাস করা হচ্ছে। কোন স্মরণটি হাদিসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সৎ পরিশ্রম সম্মানের যোগ্য; দাউদ নিজের কাজের মাধ্যমে উপার্জন করতেন"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মর্যাদাপূর্ণ পদবি সম্মানের যোগ্য"
+        },
+        {
+          "id": "c",
+          "text": "আয় অল্প হলে হালাল কাজ লজ্জার হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "উপার্জনের উৎসের চেয়ে চেহারা গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নববী উদাহরণ নিজের সৎ পরিশ্রমের উপার্জনকে তুচ্ছ করার মনোভাবের বিপরীত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2072",
+          "label": "সহিহ বুখারি ২০৭২",
+          "url": "https://sunnah.com/bukhari:2072"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_054",
+      "conceptId": "hadith_repayment_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "স্বীকার করা একটি ঋণ পরিশোধের সময় হয়েছে এবং আপনি তা দিতে পারেন। উত্তম পরিশোধের বর্ণনা অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি চাপ দিতে পারেন না দেখাতে দেরি করব"
+        },
+        {
+          "id": "b",
+          "text": "সম্মানের সঙ্গে ব্যক্তির পাওনা দেব"
+        },
+        {
+          "id": "c",
+          "text": "অনানুষ্ঠানিক ছিল বলে ঋণ অস্বীকার করব"
+        },
+        {
+          "id": "d",
+          "text": "অধিকার ফেরত দেওয়ার আগে প্রশংসা দাবি করব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "উত্তম পরিশোধ দায়িত্ব ও প্রাপ্য ব্যক্তিকে সম্মান করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2305",
+          "label": "সহিহ বুখারি ২৩০৫",
+          "url": "https://sunnah.com/bukhari:2305"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_055",
+      "conceptId": "hadith_exclusion_feelings",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শুধু তিনজন বসে আছেন এবং একজন বন্ধুর সঙ্গে ব্যক্তিগত আলোচনা করতে চান। কী বিবেচনা করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তৃতীয়জন নেই এমন ভান করে দীর্ঘক্ষণ ফিসফিস করব"
+        },
+        {
+          "id": "b",
+          "text": "তৃতীয়জনের অনুভূতি গুরুত্বপূর্ণ নয় ধরে নেব"
+        },
+        {
+          "id": "c",
+          "text": "তৃতীয়জনকে বাদ না দিয়ে পরে উপযুক্ত পরিবেশ বেছে নেব"
+        },
+        {
+          "id": "d",
+          "text": "তাঁকে হীন মনে করাতে ব্যক্তিগত আলাপ করব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "একমাত্র তৃতীয়জনকে বাদ দিয়ে কষ্ট দেওয়া থেকে নির্দেশটি সতর্ক করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "সহিহ বুখারি ৬২৯০",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_056",
+      "conceptId": "hadith_gift_response",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আন্তরিকভাবে দেওয়া সাধারণ একটি উপহার পেয়েছেন। কোনটি বর্ণিত নববী উদাহরণ প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপহারকে ন্যায় উপেক্ষার অনুমতি মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "দামি না হলে উপহাস করা"
+        },
+        {
+          "id": "c",
+          "text": "আরও বড় উপহার দাবি করতে ব্যবহার করা"
+        },
+        {
+          "id": "d",
+          "text": "কদর করে উপযুক্ত সদাচরণে সাড়া দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় উপহার গ্রহণ ও বিনিময়ে দেওয়ার কথা রয়েছে। এটি অন্যায় সুবিধা বা ঘুষকে বৈধ করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2585",
+          "label": "সহিহ বুখারি ২৫৮৫",
+          "url": "https://sunnah.com/bukhari:2585"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_057",
+      "conceptId": "hadith_bankruptcy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ বলছেন, নিয়মিত ইবাদত করলে প্রতারণা ও অপমান গুরুত্বপূর্ণ নয়। কোন হাদিস এই ধারণার বিপরীত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রকৃত নিঃস্ব ব্যক্তি সম্পর্কে হাদিস"
+        },
+        {
+          "id": "b",
+          "text": "চিঠির সিলমোহর সম্পর্কে বর্ণনা"
+        },
+        {
+          "id": "c",
+          "text": "ভোরের আগের খাবার সম্পর্কে বর্ণনা"
+        },
+        {
+          "id": "d",
+          "text": "বোঝাতে কথা পুনরাবৃত্তির বর্ণনা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ইবাদত অন্যের অধিকার দূর করে না। হাদিসে মানুষের ক্ষতির জন্য জবাবদিহি থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2581",
+          "label": "সহিহ মুসলিম ২৫৮১",
+          "url": "https://sunnah.com/muslim:2581"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_058",
+      "conceptId": "hadith_health_time",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কিছুদিন সুস্থতা ও অবসর পেয়েছেন। কোন প্রতিক্রিয়া হাদিসের স্মরণ কাজে লাগায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুযোগ চিরদিন থাকতেই হবে ধরে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সুযোগের কিছু অংশ মূল্যবান কাজে ব্যবহার করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি উপকারী কাজ অনির্দিষ্টকাল পিছিয়ে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "অন্যরা দেখলেই শুধু অবসরের মূল্য আছে বিশ্বাস করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "স্মরণটি নেয়ামত হাতে থাকতে বিচক্ষণভাবে কাজে লাগাতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6412",
+          "label": "সহিহ বুখারি ৬৪১২",
+          "url": "https://sunnah.com/bukhari:6412"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_059",
+      "conceptId": "hadith_fabrication_warning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আরও আবেগময় করতে একটি বর্ণনা বদলে নবীজির কথা হিসেবেই উপস্থাপন করতে চান। কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উদ্দেশ্য ভালো মনে হয় বলে বানানো কথা যোগ করা"
+        },
+        {
+          "id": "b",
+          "text": "আবেগের প্রভাবেই শব্দগুলো সহিহ হয় ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "নবীজির কথা সঠিকভাবে তুলে ধরে নিজের ব্যাখ্যা আলাদা করা"
+        },
+        {
+          "id": "d",
+          "text": "বর্ণনা বদলে বানানো সূত্র দেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আবেগময় বার্তা ইচ্ছা করে নবীজির নামে বানানো কথা চালানোকে বৈধ করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "4a",
+          "label": "সহিহ মুসলিম ৪a",
+          "url": "https://sunnah.com/muslim:4a"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_hadith_knowledge_060",
+      "conceptId": "hadith_effort_reliance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু বলছেন, আল্লাহর ওপর ভরসা মানে সব উপকারী চেষ্টা ছেড়ে দেওয়া। এই হাদিস কোন সমন্বয় শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফলাফলে কোনো দায় না নিতে কাজ এড়ানো"
+        },
+        {
+          "id": "b",
+          "text": "চেষ্টায় ভবিষ্যতের পুরো নিয়ন্ত্রণ পাওয়া যায় বিশ্বাস করা"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্য চাওয়াকে সব দায়িত্বের বিকল্প করা"
+        },
+        {
+          "id": "d",
+          "text": "উপকারী কাজের চেষ্টা ও আল্লাহর সাহায্য চাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে উপকারী চেষ্টার সঙ্গে আল্লাহর সাহায্য চাওয়া যুক্ত এবং অসহায়ভাবে হাল ছেড়ে দেওয়া থেকে সতর্ক করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    }
+  ]
+}

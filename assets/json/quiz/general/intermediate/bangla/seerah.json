@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.1",
+  "language": "bn",
+  "audienceId": "general_user",
+  "levelId": "mid",
+  "categoryId": "seerah",
+  "title": "সিরাত",
+  "description": "সাধারণ ব্যবহারকারী → মধ্যম স্তর। নবী মুহাম্মদ (সা.)-এর জীবনের পরিচিত ঘটনা, আরও কিছু মৌলিক জ্ঞান ও ছোট দৈনন্দিন শিক্ষা। হিজরত, সামাজিক জীবন, নেতৃত্ব, শিক্ষা, ন্যায় ও মমতা অন্তর্ভুক্ত। সব প্রশ্ন মধ্যম স্তরের। অপরিচিত তারিখ বা সূত্রের নম্বর মুখস্থের প্রয়োজন নেই।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "মধ্যম স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও উপলব্ধির মাত্রা বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। প্রাথমিকের চেয়ে কিছু বেশি বোঝাপড়া ও সহজ সম্পর্ক ধরার প্রয়োজন, বিশেষজ্ঞ পর্যায়ের পড়াশোনা নয়। বিষয়বস্তু বিচার করে স্তর নির্ধারিত; শিক্ষার্থীদের বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিসের মূল পাঠ মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যাগুলো শিক্ষামূলকভাবে নিজস্ব ভাষায় লেখা; এগুলো হুবহু অনুবাদ নয়। আধুনিক পরিস্থিতিগুলো বর্ণনার শিক্ষা বোঝানোর উদাহরণ; ঐতিহাসিক ঘটনার পুনর্বর্ণনা নয়। এটি স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "general_mid_seerah_001",
+      "conceptId": "seerah_shepherd",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মক্কার মানুষের জন্য কোন সাধারণ কাজ করার কথা নবীজি স্মরণ করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভেড়া চরানো"
+        },
+        {
+          "id": "b",
+          "text": "রাজপ্রাসাদ নির্মাণ"
+        },
+        {
+          "id": "c",
+          "text": "সাম্রাজ্যের কর আদায়"
+        },
+        {
+          "id": "d",
+          "text": "বাণিজ্যিক নৌবহরের নেতৃত্ব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি পারিশ্রমিকের বিনিময়ে মক্কার মানুষের ভেড়া চরানোর কথা বলেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2262",
+          "label": "সহিহ বুখারি ২২৬২",
+          "url": "https://sunnah.com/bukhari:2262"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_002",
+      "conceptId": "seerah_isra",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা আল-ইসরার শুরুতে কোন সফরের বর্ণনা রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মক্কা থেকে মদিনায় হিজরত"
+        },
+        {
+          "id": "b",
+          "text": "রাতে মসজিদুল হারাম থেকে মসজিদুল আকসা পর্যন্ত সফর"
+        },
+        {
+          "id": "c",
+          "text": "বিদায় হজের জন্য মদিনা থেকে যাত্রা"
+        },
+        {
+          "id": "d",
+          "text": "হুদায়বিয়া থেকে মদিনায় ফিরে আসা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটিতে মসজিদুল হারাম ও মসজিদুল আকসার মধ্যকার রাতের সফরের বর্ণনা রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "1",
+          "label": "কুরআন ১৭:১",
+          "url": "https://quran.com/17/1"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_003",
+      "conceptId": "seerah_miraj_prayers",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মিরাজের বর্ণনার সঙ্গে কোন দৈনিক ফরজ ইবাদত যুক্ত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিদিন মক্কায় হজ করা"
+        },
+        {
+          "id": "b",
+          "text": "বছরের প্রতিদিন রোজা রাখার বাধ্যবাধকতা"
+        },
+        {
+          "id": "c",
+          "text": "পাঁচ ওয়াক্ত সালাত"
+        },
+        {
+          "id": "d",
+          "text": "প্রতি রাত জেগে থাকার বাধ্যবাধকতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ঊর্ধ্বারোহণের বর্ণনায় পাঁচ ওয়াক্ত সালাত ফরজ হওয়ার কথা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "349",
+          "label": "সহিহ বুখারি ৩৪৯",
+          "url": "https://sunnah.com/bukhari:349"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_004",
+      "conceptId": "seerah_persecution",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ঘরবাড়ি থেকে বিতাড়িত মুমিনদের ওপর কোন অন্যায়ের কথা কুরআন স্মরণ করায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁরা সব ধরনের সৎ কাজ প্রত্যাখ্যান করেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "সফর নিষিদ্ধ ছিল বলে তাঁদের চলে যেতে হয়েছিল"
+        },
+        {
+          "id": "c",
+          "text": "তাঁরা আল্লাহর প্রতি সব বিশ্বাস ত্যাগ করেছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহকে রব ঘোষণা করায় তাঁদের বের করে দেওয়া হয়েছিল"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটিতে আল্লাহর প্রতি বিশ্বাস ঘোষণা করায় অন্যায়ভাবে ঘরছাড়া মানুষের কথা স্মরণ করা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 22,
+          "ayahs": "40",
+          "label": "কুরআন ২২:৪০",
+          "url": "https://quran.com/22/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_005",
+      "conceptId": "seerah_najashi_prayer",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নাজাশির মৃত্যুর খবর জেনে নবীজি কী করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাহাবিদের নিয়ে তাঁর জানাজার সালাত আদায় করেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "খবরটি নিয়ে উপহাস করতে বলেছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "মৃত্যুকে সালাত ছাড়ার কারণ মনে করেছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "কাউকে তাঁর কথা উল্লেখ করতে নিষেধ করেছিলেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি নাজাশির মৃত্যুসংবাদ জানিয়ে তাঁর জানাজার সালাতে ইমামতি করেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1333",
+          "label": "সহিহ বুখারি ১৩৩৩",
+          "url": "https://sunnah.com/bukhari:1333"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_006",
+      "conceptId": "seerah_quba",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মদিনার কাছে পৌঁছে বনু আমর ইবনু আওফের কাছে অবস্থানকালে নবীজি কোন মসজিদ প্রতিষ্ঠা করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মসজিদুল আকসা"
+        },
+        {
+          "id": "b",
+          "text": "কুবা মসজিদ"
+        },
+        {
+          "id": "c",
+          "text": "মক্কার মসজিদুল হারাম"
+        },
+        {
+          "id": "d",
+          "text": "কুফার মসজিদ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হিজরতের বর্ণনায় মদিনার ভেতরে যাওয়ার আগে নবীজির কুবা মসজিদ প্রতিষ্ঠা ও তাতে সালাতের কথা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3906",
+          "label": "সহিহ বুখারি ৩৯০৬",
+          "url": "https://sunnah.com/bukhari:3906"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_007",
+      "conceptId": "seerah_brotherhood",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মদিনায় ভ্রাতৃত্বের বন্ধনে কোন দুই দলকে যুক্ত করা হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রোমান ও পারসিক"
+        },
+        {
+          "id": "b",
+          "text": "মক্কাবাসী ও ফেরাউনের দরবার"
+        },
+        {
+          "id": "c",
+          "text": "মুহাজির ও আনসার"
+        },
+        {
+          "id": "d",
+          "text": "ইয়েমেন ও বাইজেন্টাইনের শাসক"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি হিজরতকারীদের সঙ্গে মদিনায় তাঁদের সাহায্যকারীদের ভ্রাতৃত্বের বন্ধন গড়ে দেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3781",
+          "label": "সহিহ বুখারি ৩৭৮১",
+          "url": "https://sunnah.com/bukhari:3781"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_008",
+      "conceptId": "seerah_uhud_archers",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উহুদে তিরন্দাজদের নিজেদের অবস্থান সম্পর্কে নবীজি কী নির্দেশ দিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিজয় সম্ভব মনে হলেই চলে যেতে"
+        },
+        {
+          "id": "b",
+          "text": "যখন ইচ্ছা অবস্থান বদলাতে"
+        },
+        {
+          "id": "c",
+          "text": "ময়দান থেকে জিনিস সংগ্রহকারীদের অনুসরণ করতে"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর পক্ষ থেকে ডেকে পাঠানো পর্যন্ত সেখানে থাকতে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবীজির নির্দেশ ছাড়া নির্ধারিত স্থান না ছাড়তে তিরন্দাজদের স্পষ্টভাবে বলা হয়েছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3039",
+          "label": "সহিহ বুখারি ৩০৩৯",
+          "url": "https://sunnah.com/bukhari:3039"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_009",
+      "conceptId": "seerah_trench_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "খন্দকের কাজের সময় নবীজি নিজে কী করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মাটি বহনে সাহায্য করেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "সব ব্যবহারিক কাজ থেকে দূরে ছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "শুধু নতুনদের কাজ করার দাবি করেছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "খননকাজকে বিনোদন হিসেবে দেখেছিলেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনায় খন্দকের কাজে নবীজির মাটি বহন করার কথা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "সহিহ বুখারি ৪১০৪",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_010",
+      "conceptId": "seerah_hudaybiyyah_purpose",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হুদায়বিয়ায় গিয়ে শেষ হওয়া নবীজির সফরের উদ্দেশ্য কী ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইয়েমেনে স্থায়ীভাবে বসবাস করা"
+        },
+        {
+          "id": "b",
+          "text": "উমরার জন্য পবিত্র কাবাঘরে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "বিদায় হজের নেতৃত্ব দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "মক্কার বাইরে রাজদরবার প্রতিষ্ঠা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুসলিমরা উমরার উদ্দেশ্যে এগিয়েছিলেন। আলোচনার মাধ্যমে হুদায়বিয়ার চুক্তি হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_011",
+      "conceptId": "seerah_umm_salamah",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হুদায়বিয়ায় সাহাবিরা ইতস্তত করলে কোন স্ত্রী নবীজিকে নিজে সমাপ্তির আমলগুলো শুরু করার পরামর্শ দেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়িশা"
+        },
+        {
+          "id": "b",
+          "text": "হাফসা"
+        },
+        {
+          "id": "c",
+          "text": "উম্মে সালামা"
+        },
+        {
+          "id": "d",
+          "text": "সাওদা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "উম্মে সালামা বাস্তবসম্মত পরামর্শ দিয়েছিলেন। নবীজি কাজ করলে সাহাবিরাও অনুসরণ করেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_012",
+      "conceptId": "seerah_letter_seal",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "চিঠিপত্রের জন্য নবীজি কেন সিলমোহরের আংটি তৈরি করিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি সব বার্তা পাঠানো বন্ধ করতে চেয়েছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "তিনি মনে করতেন, প্রতিটি চিঠির সঙ্গে দামি উপহার চাই"
+        },
+        {
+          "id": "c",
+          "text": "তিনি আংটিকে বার্তার বিকল্প করতে চেয়েছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "তাঁকে জানানো হয়েছিল, শাসকেরা সিলমোহর ছাড়া চিঠি পড়েন না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় শাসকদের চিঠি গ্রহণের প্রচলিত পদ্ধতির সঙ্গে সিলমোহরের আংটির সম্পর্ক দেখানো হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "65",
+          "label": "সহিহ বুখারি ৬৫",
+          "url": "https://sunnah.com/bukhari:65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_013",
+      "conceptId": "seerah_muadh_yemen",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ঈমান, সালাত ও জাকাত শেখানোর নির্দেশ দিয়ে কোন সাহাবিকে ইয়েমেনে পাঠানো হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুয়াজ ইবনু জাবাল"
+        },
+        {
+          "id": "b",
+          "text": "বিলাল ইবনু রাবাহ"
+        },
+        {
+          "id": "c",
+          "text": "আনাস ইবনু মালিক"
+        },
+        {
+          "id": "d",
+          "text": "জায়েদ ইবনু সাবিত"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি ইয়েমেনে মৌলিক দায়িত্ব শেখানোর জন্য মুয়াজকে স্পষ্ট ক্রম বলে দিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1395",
+          "label": "সহিহ বুখারি ১৩৯৫",
+          "url": "https://sunnah.com/bukhari:1395"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_014",
+      "conceptId": "seerah_aishah_speech",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবীজির কথা এত স্পষ্ট ছিল যে শব্দ গোনা যেত—কোন স্ত্রী এভাবে বর্ণনা করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উম্মে সালামা"
+        },
+        {
+          "id": "b",
+          "text": "আয়িশা"
+        },
+        {
+          "id": "c",
+          "text": "হাফসা"
+        },
+        {
+          "id": "d",
+          "text": "জায়নাব বিনতু জাহশ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়িশার বর্ণনায় নবীজির যোগাযোগের স্পষ্টতা ফুটে উঠেছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3567",
+          "label": "সহিহ বুখারি ৩৫৬৭",
+          "url": "https://sunnah.com/bukhari:3567"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_015",
+      "conceptId": "seerah_bedouin_mosque",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এক বেদুইন মসজিদে পেশাব করলে নবীজি কী ব্যবস্থা নিতে বলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জায়গাটি স্থায়ীভাবে অপরিষ্কার রাখতে"
+        },
+        {
+          "id": "b",
+          "text": "সবাইকে তাঁকে অপমান করতে উৎসাহ দিতে"
+        },
+        {
+          "id": "c",
+          "text": "লোকদের সংযত করতে ও পানি দিয়ে জায়গাটি পরিষ্কার করতে"
+        },
+        {
+          "id": "d",
+          "text": "মসজিদ চিরদিনের জন্য ব্যবহার-অনুপযোগী ঘোষণা করতে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি রূঢ় প্রতিক্রিয়া ঠেকিয়েছিলেন এবং স্থানটি পরিষ্কার করার নির্দেশ দিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "সহিহ বুখারি ২২০",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_016",
+      "conceptId": "seerah_sick_boy",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবীজির সেবায় থাকা এক ইহুদি কিশোর অসুস্থ হলে তিনি কী করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার অসুস্থতা নিয়ে উপহাস করেন"
+        },
+        {
+          "id": "b",
+          "text": "তার অবস্থার কথা স্বীকার করতে অস্বীকার করেন"
+        },
+        {
+          "id": "c",
+          "text": "অন্যদের তাকে ভয় দেখাতে বলেন"
+        },
+        {
+          "id": "d",
+          "text": "তাকে দেখতে যান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় অসুস্থ অবস্থায় কিশোরটিকে নবীজির দেখতে যাওয়ার কথা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "সহিহ বুখারি ১৩৫৬",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_017",
+      "conceptId": "seerah_funeral_dignity",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এক ইহুদির মৃতদেহ বহন করে নিয়ে যাওয়া হলে নবীজি কী করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উঠে দাঁড়িয়েছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "শোকার্তদের উপহাস করেছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "মৃতদেহবাহী মিছিলকে অপমান করতে বলেছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "মৃত ব্যক্তির মানবসত্তা অস্বীকার করেছিলেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কার মৃতদেহ তা জানানো হলে তিনি মৃত ব্যক্তিরও মানবসত্তা থাকার বিষয়টি স্মরণ করিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1312",
+          "label": "সহিহ বুখারি ১৩১২",
+          "url": "https://sunnah.com/bukhari:1312"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_018",
+      "conceptId": "seerah_equal_justice",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "চুরির অভিযোগে অভিযুক্ত এক সামাজিকভাবে প্রভাবশালী নারীর ক্ষেত্রে নবীজি কী প্রত্যাখ্যান করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রমাণ গুরুত্বপূর্ণ হওয়ার ধারণা"
+        },
+        {
+          "id": "b",
+          "text": "সামাজিক মর্যাদার ভিত্তিতে বিশেষ সুবিধা"
+        },
+        {
+          "id": "c",
+          "text": "সামাজিক প্রভাবহীন মানুষের অধিকার"
+        },
+        {
+          "id": "d",
+          "text": "অন্যায়ের ব্যবস্থা নেওয়ার নীতি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটি ক্ষমতাবানদের ছাড় দিয়ে শুধু দুর্বলদের ওপর মানদণ্ড প্রয়োগের বিরুদ্ধে সতর্ক করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3475",
+          "label": "সহিহ বুখারি ৩৪৭৫",
+          "url": "https://sunnah.com/bukhari:3475"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_019",
+      "conceptId": "seerah_eclipse",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ছেলে ইবরাহিমের মৃত্যুর দিন সূর্যগ্রহণ হলে নবীজি কী স্পষ্ট করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গ্রহণে প্রমাণ হয় তাঁর ছেলে সূর্য নিয়ন্ত্রণ করেন"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি গ্রহণ কোনো নবির মৃত্যুর সংবাদ দেয়"
+        },
+        {
+          "id": "c",
+          "text": "কারও মৃত্যু বা জন্মের কারণে গ্রহণ হয় না"
+        },
+        {
+          "id": "d",
+          "text": "গ্রহণ দিয়ে ব্যক্তিগত ঘটনা ভবিষ্যদ্বাণী করা উচিত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি ছেলের মৃত্যুর সঙ্গে সূর্যগ্রহণের সম্পর্কের দাবিটি সংশোধন করেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1043",
+          "label": "সহিহ বুখারি ১০৪৩",
+          "url": "https://sunnah.com/bukhari:1043"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_020",
+      "conceptId": "seerah_abubakr_prayer",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "গুরুতর অসুস্থতার সময় নবীজি কাকে মানুষের সালাতে ইমামতি করতে বলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উমর ইবনুল খাত্তাব"
+        },
+        {
+          "id": "b",
+          "text": "আলি ইবনু আবি তালিব"
+        },
+        {
+          "id": "c",
+          "text": "বিলাল ইবনু রাবাহ"
+        },
+        {
+          "id": "d",
+          "text": "আবু বকর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় নবীজির বারবার আবু বকরকে সালাতের ইমামতি করতে বলার কথা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "678",
+          "label": "সহিহ বুখারি ৬৭৮",
+          "url": "https://sunnah.com/bukhari:678"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_021",
+      "conceptId": "seerah_khadijah_reassurance",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "প্রথম ওহির পরে খাদিজার সান্ত্বনা কেন শুধু ফাঁকা প্রশংসা ছিল না?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি আত্মীয় ও অভাবীদের প্রতি নবীজির পরিচিত যত্নের কথা স্মরণ করেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "তিনি কখনো কষ্ট হতে পারে না বলে প্রতিশ্রুতি দিয়েছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "তিনি না শুনেই নবীজির কষ্ট উড়িয়ে দিয়েছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "তিনি শুধু সামাজিক মর্যাদার কারণে সমর্থন করেছিলেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সান্ত্বনা দেওয়ার সময় খাদিজা নবীজির পরিচিত গুণ ও সেবামূলক কাজের কথা তুলে ধরেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_022",
+      "conceptId": "seerah_hijrah_planning",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর ওপর ভরসা ও প্রস্তুতি সম্পর্কে হিজরতের বর্ণনা কী দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভরসার জন্য সফরের সব প্রস্তুতি ছাড়তে হয়েছিল"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর ওপর ভরসার সঙ্গে যত্নশীল ব্যবস্থাপনা ছিল"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সম্পদ সফরটি সম্ভব করেছিল"
+        },
+        {
+          "id": "d",
+          "text": "পরিকল্পনার অর্থ ছিল আল্লাহর সাহায্য অস্বীকার করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় ঈমান ও ভরসার পাশাপাশি সফরের ব্যবহারিক ব্যবস্থাপনার কথা রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_023",
+      "conceptId": "seerah_cave_reassurance",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গুহায় নবীজি তাঁর সঙ্গীকে কী সান্ত্বনা দিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধাওয়াকারীরা তাঁদের রক্ষক হয়ে গেছেন"
+        },
+        {
+          "id": "b",
+          "text": "মানুষের কোনো বিপদ কখনো হতে পারে না"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ তাঁদের সাহায্যে সঙ্গে আছেন"
+        },
+        {
+          "id": "d",
+          "text": "ভয় পাওয়া সম্ভব বলে সফর ছেড়ে দেওয়া উচিত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটিতে আল্লাহর সাহায্য সম্পর্কে সঙ্গীকে নবীজির সান্ত্বনা দেওয়ার কথা এসেছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 9,
+          "ayahs": "40",
+          "label": "কুরআন ৯:৪০",
+          "url": "https://quran.com/9/40"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_024",
+      "conceptId": "seerah_brotherhood_support",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মুহাজির ও আনসারের ভ্রাতৃত্বে কোন সামাজিক উদ্দেশ্য ফুটে ওঠে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নতুনদের স্থায়ীভাবে বাইরে রাখা"
+        },
+        {
+          "id": "b",
+          "text": "ঈমানের বদলে পারিবারিক প্রতিদ্বন্দ্বিতা গড়া"
+        },
+        {
+          "id": "c",
+          "text": "সম্পদকে আপন হওয়ার একমাত্র ভিত্তি করা"
+        },
+        {
+          "id": "d",
+          "text": "অভ্যর্থনাকে নতুনদের বাস্তব সাহায্যে পরিণত করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "এই বন্ধন হিজরতকারীদের মদিনার সহায়ক সমাজের সঙ্গে যুক্ত হতে সাহায্য করেছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3781",
+          "label": "সহিহ বুখারি ৩৭৮১",
+          "url": "https://sunnah.com/bukhari:3781"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_025",
+      "conceptId": "seerah_shared_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খন্দকে নবীজির মাটি বহন কোন নেতৃত্বের গুণ প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সমাজের পরিশ্রমে অংশ নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "মর্যাদার কারণে কঠিন কাজ এড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "শুধু আরাম দিয়ে নেতৃত্ব বিচার করা"
+        },
+        {
+          "id": "d",
+          "text": "সব কষ্ট অন্যদের ওপর ছেড়ে দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তাঁর অংশগ্রহণ সম্মিলিত দায়িত্বে সরাসরি যুক্ত হওয়ার উদাহরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "সহিহ বুখারি ৪১০৪",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_026",
+      "conceptId": "seerah_uhud_responsibility",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "উহুদে তিরন্দাজদের দায়িত্ব থেকে কোন সাধারণ শিক্ষা নেওয়া যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রাথমিক সাফল্যে সব নির্দেশ অপ্রাসঙ্গিক হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "সাফল্য কাছে মনে হলেই স্পষ্ট দায়িত্ব ছেড়ে দেওয়া উচিত নয়"
+        },
+        {
+          "id": "c",
+          "text": "কেউ ভূমিকা না রাখলেই যৌথ পরিকল্পনা ভালো হয়"
+        },
+        {
+          "id": "d",
+          "text": "ব্যক্তিগত উত্তেজনা সব সময় সম্মত কাজকে ছাপিয়ে যায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ঘটনাটি অর্পিত দায়িত্বে অটল থাকার গুরুত্ব দেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3039",
+          "label": "সহিহ বুখারি ৩০৩৯",
+          "url": "https://sunnah.com/bukhari:3039"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_027",
+      "conceptId": "seerah_hudaybiyyah_patience",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হুদায়বিয়ায় কঠিন চুক্তি মেনে নেওয়া কী শিক্ষা দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চুক্তি কখনো গুরুত্বপূর্ণ নয়—এই ধারণা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি মতবিরোধকে লড়াই করতেই হবে—এই বিশ্বাস"
+        },
+        {
+          "id": "c",
+          "text": "ভেবে নেওয়া শান্তিপূর্ণ পথে ধৈর্যসহ অঙ্গীকার রক্ষা"
+        },
+        {
+          "id": "d",
+          "text": "যেকোনো আলোচনাভিত্তিক সমাধান বিবেচনা করতে অস্বীকার"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সাহাবিদের জন্য কঠিন শর্তের মধ্যেও বর্ণনায় সংযম ও অঙ্গীকার বজায় রাখার দৃষ্টান্ত রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_028",
+      "conceptId": "seerah_consultation",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাহাবিদের সঙ্গে পরামর্শ করতে নবীজিকে দেওয়া কুরআনের নির্দেশ কী দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নেতাকে প্রতিটি উপকারী পরামর্শ প্রত্যাখ্যান করতে হয়"
+        },
+        {
+          "id": "b",
+          "text": "পরামর্শ চাওয়া সব সময় অযোগ্যতার প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সবচেয়ে কম অভিজ্ঞ ব্যক্তিই সিদ্ধান্ত নিতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "দায়িত্বশীল নেতৃত্ব ও আল্লাহর ওপর ভরসার সঙ্গে পরামর্শও রয়েছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটিতে পরামর্শ, সিদ্ধান্ত ও আল্লাহর ওপর ভরসা একসঙ্গে রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "কুরআন ৩:১৫৯",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_029",
+      "conceptId": "seerah_communication_means",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শাসকদের কাছে চিঠিতে সিলমোহর ব্যবহার থেকে কী শিক্ষা নেওয়া যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বার্তা পৌঁছাতে উপযুক্ত ব্যবহারিক মাধ্যম ব্যবহার করা"
+        },
+        {
+          "id": "b",
+          "text": "বার্তা কীভাবে পৌঁছাবে তা কখনো ভাবার দরকার নেই"
+        },
+        {
+          "id": "c",
+          "text": "উপস্থাপনাকে অর্থবহ বক্তব্যের বিকল্প করা উচিত"
+        },
+        {
+          "id": "d",
+          "text": "সাধারণ যোগাযোগের মাধ্যম সব সময় ঈমানের বিরোধী"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবীজি নির্ধারিত প্রাপকদের কাছে চিঠি পৌঁছাতে গ্রহণযোগ্য মাধ্যম ব্যবহার করেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "65",
+          "label": "সহিহ বুখারি ৬৫",
+          "url": "https://sunnah.com/bukhari:65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_030",
+      "conceptId": "seerah_teaching_priorities",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইয়েমেনের জন্য মুয়াজকে দেওয়া নির্দেশে কোন শেখানোর পদ্ধতি দেখা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মৌলিক বিশ্বাসের আগে অপরিচিত মতভেদ দিয়ে শুরু করা"
+        },
+        {
+          "id": "b",
+          "text": "মৌলিক বিশ্বাস দিয়ে শুরু করে প্রধান কর্তব্য ব্যাখ্যা করা"
+        },
+        {
+          "id": "c",
+          "text": "বোঝাপড়া না দেখে সব বিস্তারিত একসঙ্গে শেখানো"
+        },
+        {
+          "id": "d",
+          "text": "সালাত ও দান ব্যাখ্যা করা এড়ানো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুয়াজকে প্রথমে ঈমানের সাক্ষ্য, এরপর সালাত ও জাকাত শেখানোর ক্রম দেওয়া হয়েছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1395",
+          "label": "সহিহ বুখারি ১৩৯৫",
+          "url": "https://sunnah.com/bukhari:1395"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_031",
+      "conceptId": "seerah_correction_mercy",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মসজিদে বেদুইনের ঘটনায় নবীজির প্রতিক্রিয়ায় কোন ভারসাম্য দেখা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সমস্যা অমীমাংসিত রেখে দয়া দেখানো"
+        },
+        {
+          "id": "b",
+          "text": "অপরিচ্ছন্নতা দূর করতে লাগামহীন অপমানের অনুমতি"
+        },
+        {
+          "id": "c",
+          "text": "অপ্রয়োজনীয় রূঢ়তা ছাড়া বাস্তব সমস্যার সমাধান"
+        },
+        {
+          "id": "d",
+          "text": "রাগকে শেখানোর একমাত্র পদ্ধতি করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "স্থানটি পরিষ্কার করা হয়েছিল এবং লোকদের রূঢ় প্রতিক্রিয়া সংযত করা হয়েছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "সহিহ বুখারি ২২০",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_032",
+      "conceptId": "seerah_care_across_groups",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অসুস্থ ইহুদি কিশোরকে দেখতে যাওয়া নবীজির যত্নের কোন দিক প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যত্ন শুধু উচ্চ মর্যাদার মানুষের জন্য ছিল"
+        },
+        {
+          "id": "b",
+          "text": "অসুস্থতাকে উপহাসের সুযোগ মনে করা হতো"
+        },
+        {
+          "id": "c",
+          "text": "ভিন্ন বিশ্বাসের কারণে সব সদাচরণ অসম্ভব ছিল"
+        },
+        {
+          "id": "d",
+          "text": "মুসলিম সমাজের বাইরের কারও প্রতিও মমতা পৌঁছেছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কিশোরের অসুস্থতায় এই সফর তার প্রতি যত্নের প্রকাশ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "সহিহ বুখারি ১৩৫৬",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_033",
+      "conceptId": "seerah_human_dignity",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইহুদির মৃতদেহবাহী মিছিলের প্রতি নবীজির প্রতিক্রিয়ায় কোন নীতি ফুটে ওঠে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধর্মীয় ভিন্নতার মধ্যেও মানবসত্তার স্বীকৃতি"
+        },
+        {
+          "id": "b",
+          "text": "শোক উপহাসের যোগ্য—এমন ধারণা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সম্পদ মানুষকে মর্যাদা দেয়—এমন দাবি"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি অপরিচিত জনগোষ্ঠীকে অপমানের প্রয়োজন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তাঁর প্রতিক্রিয়ায় মৃত ব্যক্তিরও মানবসত্তা থাকার দিকে দৃষ্টি দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1312",
+          "label": "সহিহ বুখারি ১৩১২",
+          "url": "https://sunnah.com/bukhari:1312"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_034",
+      "conceptId": "seerah_justice_status",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ক্ষমতাবানদের ছাড় দিয়ে শুধু দুর্বলদের শাস্তি দেওয়া কেন ন্যায়বিচারের ব্যর্থতা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষমতা প্রতিটি কাজকে নিজে থেকেই সঠিক করে"
+        },
+        {
+          "id": "b",
+          "text": "ন্যায্য মানদণ্ড প্রযোজ্য কি না তা সামাজিক মর্যাদা নির্ধারণ করতে পারে না"
+        },
+        {
+          "id": "c",
+          "text": "শুধু যোগাযোগহীন মানুষের জন্য নিয়ম গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "নেতাদের সম্মানের জন্য প্রতিটি ভুল অস্বীকার করতে হয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবীজি সামাজিকভাবে প্রভাবশালীদের সুবিধা দেওয়া দ্বৈত মানদণ্ড থেকে সতর্ক করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3475",
+          "label": "সহিহ বুখারি ৩৪৭৫",
+          "url": "https://sunnah.com/bukhari:3475"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_035",
+      "conceptId": "seerah_correcting_claims",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইবরাহিমের মৃত্যুর পরে সূর্যগ্রহণের দাবি সংশোধনে কোন বিষয়টি গুরুত্বপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি প্রতিটি প্রশংসামূলক ব্যাখ্যা মেনে নিয়েছেন"
+        },
+        {
+          "id": "b",
+          "text": "কাকতালীয় ঘটনাকেই কারণের যথেষ্ট প্রমাণ ধরেছেন"
+        },
+        {
+          "id": "c",
+          "text": "পরিবারের সম্মান বাড়ায় মনে হলেও নবীজি মিথ্যা দাবি সংশোধন করেছেন"
+        },
+        {
+          "id": "d",
+          "text": "তিনি নিজের সম্পর্কে লক্ষণ বানাতে উৎসাহ দিয়েছেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটি দেখায়, ব্যক্তিগত মর্যাদা বাড়াতে পারত এমন ভিত্তিহীন ব্যাখ্যার চেয়েও সত্য অগ্রাধিকার পেয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1043",
+          "label": "সহিহ বুখারি ১০৪৩",
+          "url": "https://sunnah.com/bukhari:1043"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_036",
+      "conceptId": "seerah_anas_patience",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আনাসের বর্ণনা নবীজির দৈনন্দিন চরিত্রের কী প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু প্রকাশ্য বক্তব্যে সদাচরণ"
+        },
+        {
+          "id": "b",
+          "text": "সাহায্যকারীদের অপমান করার অভ্যাস"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ধনী প্রাপ্তবয়স্কদের সম্মান"
+        },
+        {
+          "id": "d",
+          "text": "দীর্ঘ কর্মসম্পর্কে বিবেচনা ও সংযম"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আনাস বহু বছরের সেবায় নবীজির কাছ থেকে রূঢ় ভর্ৎসনা না পাওয়ার কথা স্মরণ করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "সহিহ বুখারি ৬০৩৮",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_037",
+      "conceptId": "seerah_prayer_compassion",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শিশুর কান্না শুনে নবীজি কেন সালাত সংক্ষিপ্ত করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শিশুর মায়ের কষ্ট এড়াতে"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর কাছে সালাতের গুরুত্ব ছিল না বলে"
+        },
+        {
+          "id": "c",
+          "text": "শিশুরা কখনো কাছে থাকতে পারত না বলে"
+        },
+        {
+          "id": "d",
+          "text": "জামাতকে শাস্তি দিতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সালাতে ইমামতি চালিয়ে যাওয়ার মধ্যেই মায়ের অসুবিধা ভেবে তিনি সময় কমাতেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "সহিহ বুখারি ৭০৭",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_038",
+      "conceptId": "seerah_personal_revenge",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্যায়ের প্রতিক্রিয়া সম্পর্কে আয়িশার বর্ণনায় কোন পার্থক্য রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি প্রতিটি নৈতিক দায়িত্ব উপেক্ষা করতেন"
+        },
+        {
+          "id": "b",
+          "text": "ব্যক্তিগত আঘাতের জন্য নবীজি প্রতিশোধ চাইতেন না"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি ব্যক্তিগত বিরক্তিকে প্রতিশোধের কারণ ধরতেন"
+        },
+        {
+          "id": "d",
+          "text": "ব্যক্তিগত অহংবোধকে ন্যায়ের মাপকাঠি করতেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়িশা ব্যক্তিগত অপমানের ক্ষেত্রে তাঁর সংযমকে আল্লাহর বিধান নিয়ে উদ্বেগ থেকে আলাদা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6126",
+          "label": "সহিহ বুখারি ৬১২৬",
+          "url": "https://sunnah.com/bukhari:6126"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_039",
+      "conceptId": "seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অপছন্দের খাবারের প্রতি নবীজির আচরণ কেমন ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যিনি রান্না করেছেন তাঁকে অপমান করতেন"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি অপছন্দের খাবারকে হারাম মনে করতেন"
+        },
+        {
+          "id": "c",
+          "text": "দোষ না দিয়ে তা রেখে দিতেন"
+        },
+        {
+          "id": "d",
+          "text": "সবাই একই খাবার অপছন্দ করুক দাবি করতেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটি খাবার বা প্রস্তুতকারীর অপমান থেকে ব্যক্তিগত রুচিকে আলাদা করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "সহিহ বুখারি ৫৪০৯",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_040",
+      "conceptId": "seerah_repetition_teaching",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবীজি কখনো কখনো নিজের কথা পুনরাবৃত্তি করতেন কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেন কেউ প্রশ্ন করতে না পারে"
+        },
+        {
+          "id": "b",
+          "text": "যেন বার্তা মনে রাখা অসম্ভব হয়"
+        },
+        {
+          "id": "c",
+          "text": "স্পষ্ট অর্থের বদলে গলার জোর দেখাতে"
+        },
+        {
+          "id": "d",
+          "text": "যেন শ্রোতারা ভালোভাবে বুঝতে পারেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আনাস পুনরাবৃত্তিকে নবীজির কথা বোঝানোর একটি উপায় হিসেবে বর্ণনা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "সহিহ বুখারি ৯৫",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_041",
+      "conceptId": "seerah_communication_means",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অপরিচিত শ্রোতাদের কাছে উপকারী বার্তা পৌঁছাতে চান। সিলমোহরযুক্ত চিঠির ঘটনা থেকে কোন পদ্ধতি শেখা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বার্তার বিষয়বস্তু ঠিক রেখে উপযুক্ত গ্রহণযোগ্য মাধ্যম ব্যবহার করা"
+        },
+        {
+          "id": "b",
+          "text": "শ্রোতারা গ্রহণ করতে পারেন এমন প্রতিটি ব্যবহারিক মাধ্যম অস্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "বিষয়বস্তু বাদ দিয়ে চমকপ্রদ মোড়কে মনোযোগ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "ভালো উদ্দেশ্য থাকলে পৌঁছানোর ব্যবস্থা অপ্রাসঙ্গিক ভাবা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সিলমোহরের ঘটনা নির্ধারিত শ্রোতার কাছে যোগাযোগ পৌঁছাতে ব্যবহারিক ব্যবস্থা নেওয়ার শিক্ষা দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "65",
+          "label": "সহিহ বুখারি ৬৫",
+          "url": "https://sunnah.com/bukhari:65"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_042",
+      "conceptId": "seerah_hijrah_planning",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি দল গুরুত্বপূর্ণ সফর আয়োজন করছে। কোন পদ্ধতি হিজরতের বর্ণনার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঈমান প্রমাণ করতে প্রস্তুতি এড়ানো"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর ওপর ভরসা রেখে পথ ও দায়িত্বের প্রস্তুতি নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "প্রস্তুতি নিলেই ফলাফলের পুরো নিয়ন্ত্রণ পাওয়া যায় ভাবা"
+        },
+        {
+          "id": "d",
+          "text": "কাজের দায়িত্ব নিয়ে সবাইকে অনিশ্চিত রাখা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হিজরতের বর্ণনা দেখায়, বাস্তব পরিকল্পনা আল্লাহর ওপর ভরসার সঙ্গে থাকতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_043",
+      "conceptId": "seerah_brotherhood_support",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "স্থানীয় পরিচিতজন কম এমন নতুন কয়েকটি পরিবার সমাজে এসেছে। মদিনার ভ্রাতৃত্বের উদাহরণ কোন কাজে প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অভ্যর্থনাকে শুধু প্রকাশ্য ছবিতে সীমিত রাখা"
+        },
+        {
+          "id": "b",
+          "text": "সাহায্যের প্রয়োজনকে স্থায়ী লজ্জা মনে করা"
+        },
+        {
+          "id": "c",
+          "text": "বাস্তব সাহায্য করতে পারেন এমন মানুষের সঙ্গে তাঁদের যুক্ত করা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি উপকারী যোগাযোগের বাইরে তাঁদের রাখা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ভ্রাতৃত্বের উদাহরণ অর্থবহ সম্পর্ক ও বাস্তব সহায়তায় উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3781",
+          "label": "সহিহ বুখারি ৩৭৮১",
+          "url": "https://sunnah.com/bukhari:3781"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_044",
+      "conceptId": "seerah_shared_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কঠিন সম্মিলিত কাজে স্বেচ্ছাসেবীদের নেতৃত্ব দিচ্ছেন। কোন কাজটি খন্দকের ঘটনার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পদবিকে সব কাজ এড়ানোর কারণ করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি কঠিন কাজ নতুনদের জন্য রাখা"
+        },
+        {
+          "id": "c",
+          "text": "আরামে দাঁড়িয়ে শুধু অন্যদের সমালোচনা করা"
+        },
+        {
+          "id": "d",
+          "text": "সামর্থ্য অনুযায়ী উপকারী কাজে অংশ নেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "খন্দকে নবীজির অংশগ্রহণ দায়িত্ব ভাগ করে নেওয়া নেতৃত্বের উদাহরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "সহিহ বুখারি ৪১০৪",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_045",
+      "conceptId": "seerah_uhud_responsibility",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি অনুষ্ঠানে স্পষ্ট ও বৈধ নিরাপত্তার দায়িত্বে আছেন এবং দল এখনো আপনার ওপর নির্ভর করছে। উহুদ থেকে কোন শিক্ষা প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবকিছু ভালো চলছে মনে হলেই দায়িত্ব ছেড়ে দেওয়া যাবে না"
+        },
+        {
+          "id": "b",
+          "text": "আরও আকর্ষণীয় কিছু দেখলে না জানিয়ে চলে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "প্রাথমিক সাফল্যে সম্মত পরিকল্পনা বাতিল ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "অন্যদের প্রশংসার ওপর দায়িত্ব নির্ভর করানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "এটি নির্ভরযোগ্যভাবে দায়িত্ব পালনের সাধারণ শিক্ষা; সব পরিস্থিতিতে সব নির্দেশ অন্ধভাবে মানতে হবে—এমন দাবি নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3039",
+          "label": "সহিহ বুখারি ৩০৩৯",
+          "url": "https://sunnah.com/bukhari:3039"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_046",
+      "conceptId": "seerah_hudaybiyyah_patience",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ভেবেচিন্তে নেওয়া বৈধ একটি চুক্তি দলের কাছে অপ্রিয়। হুদায়বিয়ার কোন শিক্ষা প্রাসঙ্গিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি কঠিন চুক্তি ভাঙতেই হবে মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "সাময়িক হতাশাকে প্রতিটি শান্তিপূর্ণ অঙ্গীকার ছাড়ার কারণ ভাবা যাবে না"
+        },
+        {
+          "id": "c",
+          "text": "ধৈর্যকে নীতিহীনতার প্রমাণ ধরা"
+        },
+        {
+          "id": "d",
+          "text": "মতবিরোধকে ব্যক্তিগত হুমকিতে পরিণত করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ঘটনাটি কঠিন আলোচনাভিত্তিক অবস্থায় ধৈর্য ও অঙ্গীকার দেখায়। এতে প্রতিটি প্রস্তাবিত চুক্তি প্রজ্ঞাপূর্ণ হয়ে যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_047",
+      "conceptId": "seerah_consultation",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক নেতা গুরুত্বপূর্ণ সিদ্ধান্তে সব উপকারী পরামর্শকে দুর্বলতা ভেবে উড়িয়ে দেন। কোন নববী নির্দেশনা এই মনোভাবের বিপরীত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কর্তৃত্ব শক্তিশালী দেখাতে শোনা এড়িয়ে চলুন"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি সিদ্ধান্তের বদলে অন্তহীন আলোচনা করুন"
+        },
+        {
+          "id": "c",
+          "text": "পরামর্শ করে দায়িত্বশীল সিদ্ধান্ত নিন ও আল্লাহর ওপর ভরসা রাখুন"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বক্তার সম্পদ দিয়ে পরামর্শ বিচার করুন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজির প্রতি কুরআনের নির্দেশে পরামর্শ, কাজ ও ভরসা একসঙ্গে রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "159",
+          "label": "কুরআন ৩:১৫৯",
+          "url": "https://quran.com/3/159"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_048",
+      "conceptId": "seerah_correction_mercy",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সবার ব্যবহারের জায়গায় নতুন কেউ গুরুতর কিন্তু সংশোধনযোগ্য ভুল করেছেন। মসজিদের ঘটনাটি কোন পদ্ধতি শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বাস্তব সমস্যা পুরোপুরি উপেক্ষা"
+        },
+        {
+          "id": "b",
+          "text": "সবাইকে নতুন ব্যক্তিকে অপমানের আহ্বান"
+        },
+        {
+          "id": "c",
+          "text": "সমাধানের চেয়ে শাস্তিকে বেশি গুরুত্বপূর্ণ করা"
+        },
+        {
+          "id": "d",
+          "text": "অপমান উৎসাহিত না করে শান্তভাবে সমস্যার সমাধান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবীজির প্রতিক্রিয়ায় ব্যবহারিক সমাধানের সঙ্গে ব্যক্তির প্রতি সংযম ছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "সহিহ বুখারি ২২০",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_049",
+      "conceptId": "seerah_care_across_groups",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অন্য ধর্মের একজন প্রতিবেশী অসুস্থ এবং যোগাযোগে আগ্রহী। বিবেচনার সঙ্গে দেখতে যেতে কোন উদাহরণ পথ দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নবীজির অসুস্থ ইহুদি কিশোরকে দেখতে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "উহুদে তিরন্দাজদের দায়িত্ব"
+        },
+        {
+          "id": "c",
+          "text": "আনুষ্ঠানিক চিঠিতে সিলমোহর ব্যবহার"
+        },
+        {
+          "id": "d",
+          "text": "মিরাজে পাঁচ ওয়াক্ত সালাত ফরজ হওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দেখতে যাওয়ার ঘটনাটি ধর্মীয় ভিন্নতার মধ্যেও যত্নের সুনির্দিষ্ট সিরাত-উদাহরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "সহিহ বুখারি ১৩৫৬",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_050",
+      "conceptId": "seerah_equal_justice",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একই নিয়মভঙ্গে দল ক্ষমতাবান সদস্যকে ছাড় দিয়ে দুর্বলদের দোষ দিতে চায়। কোন শিক্ষা প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রভাবকে নির্দোষতার প্রমাণ ধরা"
+        },
+        {
+          "id": "b",
+          "text": "যোগাযোগের পক্ষপাত না করে ন্যায্য মানদণ্ড ব্যবহার"
+        },
+        {
+          "id": "c",
+          "text": "শুধু মর্যাদাহীনদের জবাবদিহির আওতায় আনা"
+        },
+        {
+          "id": "d",
+          "text": "সদস্য জনপ্রিয় বলে নিয়মভঙ্গ লুকানো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অসম মানদণ্ডের বিরুদ্ধে নবীজির সতর্কতা ন্যায়ের স্পষ্ট শিক্ষা দেয়। এই পরিস্থিতি সাধারণ দলীয় জবাবদিহি নিয়ে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3475",
+          "label": "সহিহ বুখারি ৩৪৭৫",
+          "url": "https://sunnah.com/bukhari:3475"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_051",
+      "conceptId": "seerah_correcting_claims",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কাকতালীয় ঘটনা দিয়ে আপনার প্রশংসায় ভিত্তিহীন দাবি করা হচ্ছে। সূর্যগ্রহণের উদাহরণ অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সমাদর উপকারী বলে উৎসাহ দেব"
+        },
+        {
+          "id": "b",
+          "text": "দাবি জোরালো করতে আরও তথ্য বানাব"
+        },
+        {
+          "id": "c",
+          "text": "প্রশংসা এলেও দাবিটি সংশোধন করব"
+        },
+        {
+          "id": "d",
+          "text": "মনোযোগ পাওয়াকেই সত্যের প্রমাণ ধরব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ব্যক্তিগত সম্মানের জন্য নবীজি সূর্যগ্রহণের ভিত্তিহীন ব্যাখ্যা বহাল থাকতে দেননি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1043",
+          "label": "সহিহ বুখারি ১০৪৩",
+          "url": "https://sunnah.com/bukhari:1043"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_052",
+      "conceptId": "seerah_prayer_compassion",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ছোট শিশুদের মা-বাবাসহ একটি সামাজিক কার্যক্রম আয়োজন করছেন। সালাত সংক্ষিপ্ত করার ঘটনা কী শিক্ষা দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দীর্ঘ কার্যক্রম সব সময় বেশি পুণ্যের মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি শিশুর কষ্টকে প্রকাশ্য দোষারোপের কারণ করা"
+        },
+        {
+          "id": "c",
+          "text": "নিজের পছন্দের সূচি রাখতে অংশগ্রহণকারীদের অবস্থা উপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "পরিকল্পনায় বাস্তব অসুবিধা বিবেচনা করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সম্মিলিত ধর্মীয় কাজ সম্পাদনের মধ্যেও অন্যের অসুবিধার প্রতি যত্ন বর্ণনায় দেখা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "সহিহ বুখারি ৭০৭",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_053",
+      "conceptId": "seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ এমন হালাল খাবার দিয়েছেন যা আপনার পছন্দ নয়। নবীজির খাবারের আদব অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাবার বা ব্যক্তিকে অপমান না করে না বলব"
+        },
+        {
+          "id": "b",
+          "text": "সবার সামনে রাঁধুনিকে অপমান করব"
+        },
+        {
+          "id": "c",
+          "text": "শুধু অপছন্দ বলে খাবারটি হারাম ঘোষণা করব"
+        },
+        {
+          "id": "d",
+          "text": "সব অতিথিকে আপনার রুচি মানতে বাধ্য করব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ব্যক্তিগত রুচির জন্য দোষ ধরা বা অপমান করার প্রয়োজন নেই।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "সহিহ বুখারি ৫৪০৯",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_054",
+      "conceptId": "seerah_anas_patience",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আপনার সাহায্যকারী কেউ ভুল করেছেন। আনাসের বর্ণিত দীর্ঘদিনের চরিত্র কোন আচরণে প্রতিফলিত হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর নিম্ন অবস্থানকে অপমানের অনুমতি মনে করা"
+        },
+        {
+          "id": "b",
+          "text": "সংযম রেখে অপ্রয়োজনীয় ভর্ৎসনা এড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "একটি ভুলকে লাগাতার অপমানের কারণ করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু গুরুত্বপূর্ণ অতিথিদের সম্মান করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আনাসের স্মৃতি দৈনন্দিন বিবেচনাপূর্ণ আচরণের শিক্ষা দেয়, যার মধ্যে অসম ক্ষমতার সম্পর্কও রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "সহিহ বুখারি ৬০৩৮",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_055",
+      "conceptId": "seerah_grief_mercy",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক শোকাহত ব্যক্তিকে বলা হচ্ছে, কাঁদা সব সময় দুর্বল ঈমানের পরিচয়। সিরাতের কোন ঘটনা তা সংশোধন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শাসকদের চিঠিতে সিলমোহর দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "উহুদে তিরন্দাজ নিয়োগ"
+        },
+        {
+          "id": "c",
+          "text": "ইবরাহিমের মৃত্যুর সময় নবীজির অশ্রু"
+        },
+        {
+          "id": "d",
+          "text": "কুবা মসজিদ নির্মাণ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহর পছন্দের কথার ব্যাপারে সচেতন থেকেও নবীজি শোক প্রকাশ করেছেন ও কেঁদেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1303",
+          "label": "সহিহ বুখারি ১৩০৩",
+          "url": "https://sunnah.com/bukhari:1303"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_056",
+      "conceptId": "seerah_repetition_teaching",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একজন শিক্ষার্থী গুরুত্বপূর্ণ বিষয়টি বোঝেননি। আনাসের বর্ণনা অনুযায়ী কোন শিক্ষাপদ্ধতি উপযুক্ত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পুনরাবৃত্তিকে সব সময় শিক্ষকের মর্যাদার নিচে ভাবা"
+        },
+        {
+          "id": "b",
+          "text": "আগে শেষ করতে গতি বাড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "ব্যাখ্যার বদলে উপহাস করা"
+        },
+        {
+          "id": "d",
+          "text": "বোঝাতে বিষয়টি স্পষ্টভাবে আবার বলা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ভেবেচিন্তে পুনরাবৃত্তি শুধু পুনরাবৃত্তির জন্য নয়, বোঝার কাজে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "সহিহ বুখারি ৯৫",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_057",
+      "conceptId": "seerah_learning_example",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নবীজির জীবনের কয়েকটি ঘটনা শিখেছেন। কোন কাজ শেখাকে আরও উপকারী করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সঠিক শিক্ষা চিহ্নিত করে দায়িত্বশীলভাবে প্রয়োগ"
+        },
+        {
+          "id": "b",
+          "text": "নাম মনে রাখলেই ভালো আচরণের প্রয়োজন শেষ ভাবা"
+        },
+        {
+          "id": "c",
+          "text": "গল্প জোরালো করতে নাটকীয় তথ্য বানানো"
+        },
+        {
+          "id": "d",
+          "text": "সিরাতকে শুধু তারিখের প্রতিযোগিতা মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে রাসুলকে উত্তম আদর্শ বলা হয়েছে। তাঁর জীবন অধ্যয়ন আচরণকে পথ দেখাবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "কুরআন ৩৩:২১",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_058",
+      "conceptId": "seerah_lawful_ease",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কাজ শেষ করার দুটি পথ আছে: সহজটি গুনাহের, অন্যটি বৈধ। নবীজির উদাহরণের কোন শর্ত গুরুত্বপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সহজ হলেই প্রতিটি পছন্দ গ্রহণযোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "গুনাহ না হলে সহজ পথ বেছে নেওয়া হতো"
+        },
+        {
+          "id": "c",
+          "text": "শুধু কঠিন হওয়াই ভালো হওয়ার মাপকাঠি"
+        },
+        {
+          "id": "d",
+          "text": "ব্যক্তিগত সুবিধায় সব নৈতিক সীমা উঠে যায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়িশার বর্ণনায় সহজ পথ বেছে নেওয়ার ক্ষেত্রে গুনাহ না হওয়ার শর্তটি স্পষ্ট রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6126",
+          "label": "সহিহ বুখারি ৬১২৬",
+          "url": "https://sunnah.com/bukhari:6126"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_059",
+      "conceptId": "seerah_taif_hope",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তীব্র প্রত্যাখ্যানের পরে কেউ জড়িত সবার ধ্বংস কামনা করতে বলছে। তায়েফের কাছের ঘটনার কোন শিক্ষা প্রাসঙ্গিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রত্যাখ্যান সব নিষ্ঠুরতা বৈধ করে"
+        },
+        {
+          "id": "b",
+          "text": "রাগ সব সময় অন্যের ভবিষ্যতের পূর্ণ জ্ঞান দেয়"
+        },
+        {
+          "id": "c",
+          "text": "মমতা ও ভবিষ্যৎ হেদায়েতের আশা প্রতিশোধের ইচ্ছা সংযত করতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি প্রত্যাখ্যাত অনুরোধে সদিচ্ছার সব সম্ভাবনা শেষ হতে হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবীজি লোকদের ধ্বংস না চেয়ে ভবিষ্যৎ প্রজন্মের আল্লাহর ইবাদত করার আশা প্রকাশ করেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "সহিহ বুখারি ৩২৩১",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "general_mid_seerah_060",
+      "conceptId": "seerah_khadijah_reassurance",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "প্রিয়জন ভীত ও বিপর্যস্ত বোধ করছেন। ওহির পরে খাদিজার সমর্থন থেকে কোন প্রতিক্রিয়া শেখা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আর কখনো কষ্ট হবে না বলে প্রতিশ্রুতি দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সম্মানিত মানুষ ভয় পেতে পারেন না বলে অনুভূতি উড়িয়ে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর কষ্টকে প্রকাশ্য প্রদর্শনী করা"
+        },
+        {
+          "id": "d",
+          "text": "মন দিয়ে শুনে তাঁর পরিচিত ভালো গুণের ভিত্তিতে সান্ত্বনা দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "খাদিজা যত্নশীল সান্ত্বনা দিয়েছিলেন এবং নবীজির মানবসেবার কথা স্মরণ করেছিলেন। শিক্ষা হলো সহায়ক আচরণ, কষ্টহীন জীবনের নিশ্চয়তা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    }
+  ]
+}
