@@ -8,17 +8,17 @@ import '../../data/models/learn_quran_content.dart';
 import '../../data/models/learning_progress.dart';
 import '../../domain/repositories/audio_repository.dart';
 import '../../domain/repositories/learning_progress_repository.dart';
-import '../../domain/repositories/quran_repository.dart';
+import '../../services/lesson_audio_sample_resolver.dart';
 import 'audio_control_viewmodel.dart';
 
 class LearnQuranViewModel extends ChangeNotifier {
   LearnQuranViewModel({
     required LearningProgressRepository progressRepository,
-    required QuranRepository quranRepository,
+    required LessonAudioSampleResolver audioSampleResolver,
     required AudioRepository audioRepository,
     required AudioControlViewModel audioControlViewModel,
   }) : _progressRepository = progressRepository,
-       _quranRepository = quranRepository,
+       _audioSamples = audioSampleResolver,
        _audioRepository = audioRepository,
        _audioControl = audioControlViewModel {
     _audioPlaybackSubscription = _audioRepository.isPlayingStream.listen((
@@ -33,6 +33,7 @@ class LearnQuranViewModel extends ChangeNotifier {
       }
 
       _isLessonAudioPlaying = isPlaying;
+      if (isPlaying) _loadingLessonId = null;
       if (!isPlaying) {
         _playingLessonId = null;
       }
@@ -41,7 +42,7 @@ class LearnQuranViewModel extends ChangeNotifier {
   }
 
   final LearningProgressRepository _progressRepository;
-  final QuranRepository _quranRepository;
+  final LessonAudioSampleResolver _audioSamples;
   final AudioRepository _audioRepository;
   final AudioControlViewModel _audioControl;
   late final StreamSubscription<bool> _audioPlaybackSubscription;
@@ -51,6 +52,9 @@ class LearnQuranViewModel extends ChangeNotifier {
   LearningProgress _progress = LearningProgress.initial();
   bool _isLessonAudioPlaying = false;
   String? _playingLessonId;
+  String? _loadingLessonId;
+  int _audioRequest = 0;
+  bool _disposed = false;
 
   bool get isLoading => _isLoading;
   String? get errorMessageKey => _errorMessageKey;
@@ -110,6 +114,8 @@ class LearnQuranViewModel extends ChangeNotifier {
     // Double-check playback state with both local and repository signals.
     return trackedState || repositoryState;
   }
+
+  bool isAudioLoadingForLesson(String lessonId) => _loadingLessonId == lessonId;
 
   bool isModuleComplete(LearnQuranModule module) {
     return completedLessonCountFor(module) == module.lessons.length;
@@ -190,34 +196,41 @@ class LearnQuranViewModel extends ChangeNotifier {
   }
 
   Future<String?> playLessonAudio(LearnQuranLesson lesson) async {
+    if (_disposed) return null;
     if (!lesson.hasAudioSample) {
       return LearnQuranMessageKeys.audioMissingSample;
     }
 
-    if (isAudioRunningForLesson(lesson.id)) {
-      await _audioRepository.stop();
+    final request = ++_audioRequest;
+    if (_playingLessonId == lesson.id || _loadingLessonId == lesson.id) {
       _isLessonAudioPlaying = false;
       _playingLessonId = null;
+      _loadingLessonId = null;
       notifyListeners();
+      try {
+        await _audioRepository.stop();
+      } catch (_) {
+        return LearnQuranMessageKeys.audioPlayFailed;
+      }
       return null;
     }
 
     final surahId = lesson.sampleSurahId!;
     final ayahNumber = lesson.sampleAyahNumber!;
 
-    try {
-      final ayah = await _quranRepository.getAyah(surahId, ayahNumber);
-      if (ayah == null) {
-        return LearnQuranMessageKeys.audioSampleNotFound;
-      }
+    _loadingLessonId = lesson.id;
+    _playingLessonId = null;
+    _isLessonAudioPlaying = false;
+    notifyListeners();
 
-      if (_audioRepository.isPlaying) {
-        await _audioRepository.stop();
-      }
+    try {
+      // Also cancel audio that is still downloading and has not started playing.
+      await _audioRepository.stop();
+      if (_disposed || request != _audioRequest) return null;
+      final ayah = await _audioSamples.resolve(surahId, ayahNumber);
+      if (_disposed || request != _audioRequest) return null;
 
       _playingLessonId = lesson.id;
-      _isLessonAudioPlaying = true;
-      notifyListeners();
 
       _audioControl.setPlaybackContext(
         source: PlaybackSource.lessonDetail,
@@ -228,10 +241,15 @@ class LearnQuranViewModel extends ChangeNotifier {
       await _audioRepository.playAyah(ayah);
       return null;
     } catch (_) {
-      _isLessonAudioPlaying = false;
-      _playingLessonId = null;
-      notifyListeners();
+      if (_disposed || request != _audioRequest) return null;
       return LearnQuranMessageKeys.audioPlayFailed;
+    } finally {
+      if (!_disposed && request == _audioRequest) {
+        _loadingLessonId = null;
+        _isLessonAudioPlaying = false;
+        _playingLessonId = null;
+        notifyListeners();
+      }
     }
   }
 
@@ -266,6 +284,8 @@ class LearnQuranViewModel extends ChangeNotifier {
 
   @override
   void dispose() {
+    _disposed = true;
+    _audioRequest++;
     _audioPlaybackSubscription.cancel();
     super.dispose();
   }

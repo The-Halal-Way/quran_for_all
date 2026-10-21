@@ -13,6 +13,7 @@ class LearnLessonTile extends StatelessWidget {
     required this.lesson,
     required this.isCompleted,
     required this.isAudioPlaying,
+    this.isAudioLoading = false,
     required this.onCompletionChanged,
     required this.onAudioTap,
   });
@@ -20,6 +21,7 @@ class LearnLessonTile extends StatelessWidget {
   final LearnQuranLesson lesson;
   final bool isCompleted;
   final bool isAudioPlaying;
+  final bool isAudioLoading;
   final ValueChanged<bool> onCompletionChanged;
   final VoidCallback? onAudioTap;
 
@@ -70,12 +72,19 @@ class LearnLessonTile extends StatelessWidget {
                 if (lesson.hasAudioSample)
                   IconButton.filledTonal(
                     onPressed: onAudioTap,
-                    icon: Icon(
-                      isAudioPlaying
-                          ? Icons.pause_rounded
-                          : Icons.play_arrow_rounded,
-                    ),
-                    tooltip: isAudioPlaying
+                    icon: isAudioLoading
+                        ? const SizedBox.square(
+                            dimension: 20,
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          )
+                        : Icon(
+                            isAudioPlaying
+                                ? Icons.pause_rounded
+                                : Icons.play_arrow_rounded,
+                          ),
+                    tooltip: isAudioLoading
+                        ? l10n.learnLessonTooltipCancelAudioLoading
+                        : isAudioPlaying
                         ? l10n.learnLessonTooltipPauseAudio
                         : l10n.learnLessonTooltipPlayAudio,
                   ),

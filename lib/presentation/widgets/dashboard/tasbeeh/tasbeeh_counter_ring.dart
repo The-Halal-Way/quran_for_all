@@ -11,20 +11,19 @@ class TasbeehCounterRing extends StatelessWidget {
     super.key,
     required this.count,
     required this.target,
-    required this.progress,
     required this.isTargetReached,
     this.diameter = 210,
     this.onHero = false,
-  });
+  }) : assert(target > 0);
   final int count;
   final int target;
-  final double progress;
   final bool isTargetReached;
   final double diameter;
   final bool onHero;
 
   @override
   Widget build(BuildContext context) {
+    final roundCount = count % target;
     final colors = Theme.of(context).colorScheme;
     final text = AppTheme.text(context);
     final foreground = onHero ? Colors.white : colors.onSurface;
@@ -36,7 +35,10 @@ class TasbeehCounterRing extends StatelessWidget {
         children: [
           Positioned.fill(
             child: CustomPaint(
-              painter: TasbeehRingPainter(progress: progress, onHero: onHero),
+              painter: TasbeehRingPainter(
+                progress: roundCount / target,
+                onHero: onHero,
+              ),
             ),
           ),
           Container(
@@ -74,7 +76,7 @@ class TasbeehCounterRing extends StatelessWidget {
                     FittedBox(
                       fit: BoxFit.scaleDown,
                       child: Text(
-                        '$count',
+                        '$roundCount',
                         style: AppTheme.sora(
                           context,
                           fontSize: diameter * 0.305,

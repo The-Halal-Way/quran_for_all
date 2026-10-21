@@ -62,6 +62,7 @@ import 'presentation/widgets/common/global_audio_control_bar.dart';
 import 'presentation/widgets/daily_hadith/shared/daily_hadith_notification_router.dart';
 import 'presentation/widgets/islamic_days/shared/islamic_days_notification_router.dart';
 import 'services/audio_service.dart';
+import 'services/lesson_audio_sample_resolver.dart';
 import 'services/daily_hadith_notification_service.dart';
 import 'services/islamic_days/islamic_days_notification_service.dart';
 import 'services/notifications/app_notification_coordinator.dart';
@@ -210,7 +211,10 @@ class QuranForAllApp extends StatelessWidget {
         ChangeNotifierProvider<LearnQuranViewModel>(
           create: (context) => LearnQuranViewModel(
             progressRepository: context.read<LearningProgressRepository>(),
-            quranRepository: context.read<QuranRepository>(),
+            audioSampleResolver: LessonAudioSampleResolver(
+              quranRepository: context.read<QuranRepository>(),
+              apiService: context.read<QuranApiService>(),
+            ),
             audioRepository: context.read<AudioRepository>(),
             audioControlViewModel: context.read<AudioControlViewModel>(),
           ),

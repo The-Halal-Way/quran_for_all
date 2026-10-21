@@ -1196,6 +1196,36 @@ class AppLocalizationsBn extends AppLocalizations {
   String get learnLessonTooltipPlayAudio => 'লেসনের অডিও চালান';
 
   @override
+  String get learnLessonTooltipCancelAudioLoading => 'লেসনের অডিও লোড করা বাতিল করুন';
+
+  @override
+  String get learnPronunciationTooltip => 'আরবি উচ্চারণ শুনুন';
+
+  @override
+  String get learnPronunciationVoiceMissing => 'আরবি কণ্ঠ পাওয়া যাচ্ছে না। ডিভাইসের টেক্সট-টু-স্পিচ সেটিংসে আরবি কণ্ঠ ইনস্টল করে আবার চেষ্টা করুন।';
+
+  @override
+  String get learnPronunciationInstallVoice => 'আরবি কণ্ঠ নিন';
+
+  @override
+  String get learnPronunciationFailed => 'উচ্চারণ চালানো যায়নি। মিডিয়া ভলিউম দেখে আবার চেষ্টা করুন।';
+
+  @override
+  String get learnPronunciationRecordings => 'বর্ণমালার অডিও';
+
+  @override
+  String get learnPronunciationRecordingsDescription => 'বর্ণের নাম ও বর্ণগুচ্ছের জন্য অফলাইন রেকর্ডিং ব্যবহার করা হয়। অন্য অনুশীলনে আপনার ডিভাইসের আরবি কণ্ঠ ব্যবহার করা হয়।';
+
+  @override
+  String get learnPronunciationRecordingsCredit => '“Lesson 1: The Arabic Alphabet” থেকে নেওয়া অডিও। ছোট অংশে কেটে MP3-তে রূপান্তর করা হয়েছে। লাইসেন্স: CC BY 3.0।';
+
+  @override
+  String get learnPronunciationSource => 'মূল রেকর্ডিং';
+
+  @override
+  String get learnPronunciationLicense => 'অডিও লাইসেন্স';
+
+  @override
   String get learnLessonAudioGuided => 'অডিও গাইডেড';
 
   @override

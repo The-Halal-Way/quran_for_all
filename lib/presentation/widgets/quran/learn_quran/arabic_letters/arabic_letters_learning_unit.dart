@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../pronunciation_audio_credits.dart';
 import 'arabic_letters_alphabet_map_section.dart';
 import 'arabic_letters_articulation_section.dart';
 import 'arabic_letters_harakah_section.dart';
@@ -24,6 +25,7 @@ class ArabicLettersLearningUnit extends StatelessWidget {
 
         // Section 2: Full isolated alphabet map.
         ArabicLettersAlphabetMapSection(),
+        PronunciationAudioCredits(),
         SizedBox(height: 10),
 
         // Section 3: Shape-family grouping.

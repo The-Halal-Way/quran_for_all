@@ -26,6 +26,7 @@ import '../../../widgets/quran/learn_quran/word_by_word/word_by_word_learning_un
 import '../../../widgets/quran/learn_quran/learn_lesson_tile.dart';
 import '../../../widgets/quran/learn_quran/learn_module_visuals.dart';
 import '../../../../services/permission_helper.dart';
+import '../../../../services/pronunciation_service.dart';
 
 class LearningQuranDetailView extends StatefulWidget {
   const LearningQuranDetailView({super.key, required this.module});
@@ -39,11 +40,13 @@ class LearningQuranDetailView extends StatefulWidget {
 
 class _LearningQuranDetailViewState extends State<LearningQuranDetailView> {
   late AudioControlViewModel _audioControlVm;
+  late PronunciationService _pronunciation;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     _audioControlVm = context.read<AudioControlViewModel>();
+    _pronunciation = context.read<PronunciationService>();
   }
 
   @override
@@ -59,6 +62,7 @@ class _LearningQuranDetailViewState extends State<LearningQuranDetailView> {
 
   @override
   void dispose() {
+    unawaited(_pronunciation.stop());
     _audioControlVm.clearActivePage(PlaybackSource.lessonDetail);
     super.dispose();
   }
@@ -218,6 +222,9 @@ class _LearningQuranDetailViewState extends State<LearningQuranDetailView> {
                         lesson: lesson,
                         isCompleted: viewModel.isLessonCompleted(lesson.id),
                         isAudioPlaying: viewModel.isAudioRunningForLesson(
+                          lesson.id,
+                        ),
+                        isAudioLoading: viewModel.isAudioLoadingForLesson(
                           lesson.id,
                         ),
                         onCompletionChanged: (isCompleted) {

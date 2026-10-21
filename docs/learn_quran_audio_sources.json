@@ -1,0 +1,214 @@
+{
+  "title": "Lesson 1: The Arabic Alphabet",
+  "author": "Waikato Islamic School of Education",
+  "source": "https://commons.wikimedia.org/wiki/File:The_Arabic_Alphabet-0Isyy_ZvZR8.webm",
+  "original": "https://www.youtube.com/watch?v=0Isyy_ZvZR8",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "changes": "Audio excerpts trimmed from the first alphabet reading; converted to mono 22.05 kHz MP3 at 64 kbit/s. No synthetic voice, speed or pitch change.",
+  "clips": [
+    {
+      "letter": "ا",
+      "asset": "assets/audio/learn_quran/letters/alif.mp3",
+      "sourceStartSeconds": 8.323125,
+      "sourceEndSeconds": 9.156438,
+      "sha256": "4e673c0b96bdf0dc0186ac9445c5e13594896cf09b28bca2728bcb6c69cb0a41"
+    },
+    {
+      "letter": "ب",
+      "asset": "assets/audio/learn_quran/letters/baa.mp3",
+      "sourceStartSeconds": 9.90425,
+      "sourceEndSeconds": 10.87275,
+      "sha256": "2e7fd8024b481d02e0e66fbb4f964eb7abfe71672c8f61eeaf0f36fd7f3ee6f6"
+    },
+    {
+      "letter": "ت",
+      "asset": "assets/audio/learn_quran/letters/taa.mp3",
+      "sourceStartSeconds": 11.510062,
+      "sourceEndSeconds": 12.419438,
+      "sha256": "3f4b8c2460330d95b8ad9a659c1d4bcb6049886e59a329092ad024de26ebe1c2"
+    },
+    {
+      "letter": "ث",
+      "asset": "assets/audio/learn_quran/letters/thaa.mp3",
+      "sourceStartSeconds": 13.072562,
+      "sourceEndSeconds": 14.073063,
+      "sha256": "a4b01b824f3198b03089033fd152d7a966bfe84adda3dae988e28635578b52cd"
+    },
+    {
+      "letter": "ج",
+      "asset": "assets/audio/learn_quran/letters/jeem.mp3",
+      "sourceStartSeconds": 14.6645,
+      "sourceEndSeconds": 15.685375,
+      "sha256": "bcc080d1fe10f5a9919f1248179d25eaefcf3c6e73acfd49e3a6f1fedf704e1f"
+    },
+    {
+      "letter": "ح",
+      "asset": "assets/audio/learn_quran/letters/haa.mp3",
+      "sourceStartSeconds": 16.29025,
+      "sourceEndSeconds": 17.292188,
+      "sha256": "736e8e96b9c62d560bbdaa27bdf70ce4214ecc94c0289c44e45a0254ad2cd7d3"
+    },
+    {
+      "letter": "خ",
+      "asset": "assets/audio/learn_quran/letters/khaa.mp3",
+      "sourceStartSeconds": 18.083125,
+      "sourceEndSeconds": 19.044188,
+      "sha256": "d3861af8eb82100959e3bb7ce8890043709ef3bdb4a33180e886b14f8c261a7f"
+    },
+    {
+      "letter": "د",
+      "asset": "assets/audio/learn_quran/letters/daal.mp3",
+      "sourceStartSeconds": 19.885062,
+      "sourceEndSeconds": 20.9725,
+      "sha256": "38bd4f3747751fa213bb3989741ddd5db7a2922df50c04175b77ee9ea6744ab7"
+    },
+    {
+      "letter": "ذ",
+      "asset": "assets/audio/learn_quran/letters/dhaal.mp3",
+      "sourceStartSeconds": 21.868188,
+      "sourceEndSeconds": 22.96325,
+      "sha256": "e3119c1103b43614546d6e1c6103fba498cbe497fe1f8573cd9b989a1f1b36eb"
+    },
+    {
+      "letter": "ر",
+      "asset": "assets/audio/learn_quran/letters/raa.mp3",
+      "sourceStartSeconds": 23.887063,
+      "sourceEndSeconds": 24.914063,
+      "sha256": "a047669911d5b9636fd59440d18bfd52f7cede5cf2a2819266c6378b181fb15d"
+    },
+    {
+      "letter": "ز",
+      "asset": "assets/audio/learn_quran/letters/zaay.mp3",
+      "sourceStartSeconds": 25.697437,
+      "sourceEndSeconds": 26.682625,
+      "sha256": "4dd4489aedee1b398e04ccd97e14f63beef5920d2d3498362bccbbb6938265db"
+    },
+    {
+      "letter": "س",
+      "asset": "assets/audio/learn_quran/letters/seen.mp3",
+      "sourceStartSeconds": 27.277313,
+      "sourceEndSeconds": 28.320938,
+      "sha256": "ce8f05f5e2837ff0be7a2534e001e9fc8b1ede5f5a927e5cf716b23a7baf7647"
+    },
+    {
+      "letter": "ش",
+      "asset": "assets/audio/learn_quran/letters/sheen.mp3",
+      "sourceStartSeconds": 28.886562,
+      "sourceEndSeconds": 29.902688,
+      "sha256": "449fa7848ddab64688cb517603c2447b9fe79e6d18e687fa837bfc1b74136ab3"
+    },
+    {
+      "letter": "ص",
+      "asset": "assets/audio/learn_quran/letters/saad.mp3",
+      "sourceStartSeconds": 31.644938,
+      "sourceEndSeconds": 32.91325,
+      "sha256": "b5ff30c892d2292f086c661ffd6f03b67c39cfa565454236974cfdbddb312aec"
+    },
+    {
+      "letter": "ض",
+      "asset": "assets/audio/learn_quran/letters/daad.mp3",
+      "sourceStartSeconds": 33.860062,
+      "sourceEndSeconds": 35.123813,
+      "sha256": "71e8bebfdc7480ea115d1e8541643114109c3009073563053fb22f5f6c025664"
+    },
+    {
+      "letter": "ط",
+      "asset": "assets/audio/learn_quran/letters/taa_heavy.mp3",
+      "sourceStartSeconds": 35.929687,
+      "sourceEndSeconds": 36.737625,
+      "sha256": "3b38debccb110886df39b4e7c9573a8ffc14fab295166591640c972dc5c76ec2"
+    },
+    {
+      "letter": "ظ",
+      "asset": "assets/audio/learn_quran/letters/thaa_heavy.mp3",
+      "sourceStartSeconds": 37.518813,
+      "sourceEndSeconds": 38.426063,
+      "sha256": "7be1cf6f54d1ae3eefbfb4e64bb014397d5434914c98b825dd35f61eec89ae0d"
+    },
+    {
+      "letter": "ع",
+      "asset": "assets/audio/learn_quran/letters/ayn.mp3",
+      "sourceStartSeconds": 39.334688,
+      "sourceEndSeconds": 40.373,
+      "sha256": "09375be999b1615ae08cf1bebd515f37afb9efd0ca3d13c879775c8e31ece586"
+    },
+    {
+      "letter": "غ",
+      "asset": "assets/audio/learn_quran/letters/ghayn.mp3",
+      "sourceStartSeconds": 41.343625,
+      "sourceEndSeconds": 42.438,
+      "sha256": "d4cee05125c0b53a5cd7d9c31c76f668410212aa516749289d4d51d0613607db"
+    },
+    {
+      "letter": "ف",
+      "asset": "assets/audio/learn_quran/letters/faa.mp3",
+      "sourceStartSeconds": 43.110563,
+      "sourceEndSeconds": 44.147625,
+      "sha256": "ef4f3de51ba202f9c86a6a8bdf0fc4775e36e5c9a6ec6478475ff930f932a001"
+    },
+    {
+      "letter": "ق",
+      "asset": "assets/audio/learn_quran/letters/qaaf.mp3",
+      "sourceStartSeconds": 44.72775,
+      "sourceEndSeconds": 45.683938,
+      "sha256": "da8d1695c670ec43602f4cff00ec8142d6d15982616ce2421f9b655be2d7cb39"
+    },
+    {
+      "letter": "ك",
+      "asset": "assets/audio/learn_quran/letters/kaaf.mp3",
+      "sourceStartSeconds": 46.33225,
+      "sourceEndSeconds": 47.29575,
+      "sha256": "ec380b057674c93af84e858ba5e8a22375778cbce3311b0116907403cd5b6995"
+    },
+    {
+      "letter": "ل",
+      "asset": "assets/audio/learn_quran/letters/laam.mp3",
+      "sourceStartSeconds": 48.137687,
+      "sourceEndSeconds": 49.253062,
+      "sha256": "201b29088936f4d25c8a792a433591423c6420182297b2854a10961a4815c63c"
+    },
+    {
+      "letter": "م",
+      "asset": "assets/audio/learn_quran/letters/meem.mp3",
+      "sourceStartSeconds": 49.938313,
+      "sourceEndSeconds": 50.959625,
+      "sha256": "e0131134dab764622847af1bd27822a62095b9162d1992b7a421f8d33acabc55"
+    },
+    {
+      "letter": "ن",
+      "asset": "assets/audio/learn_quran/letters/noon.mp3",
+      "sourceStartSeconds": 51.521188,
+      "sourceEndSeconds": 52.496438,
+      "sha256": "76938c55b056f62f388a7e22c22459a793771643ba8caa40272ff80eec653e57"
+    },
+    {
+      "letter": "و",
+      "asset": "assets/audio/learn_quran/letters/waaw.mp3",
+      "sourceStartSeconds": 53.327188,
+      "sourceEndSeconds": 54.352438,
+      "sha256": "2f67afb401610109352b657ab6d1b96c87705b5945e34173d0573d356832168c"
+    },
+    {
+      "letter": "ه",
+      "asset": "assets/audio/learn_quran/letters/haa_light.mp3",
+      "sourceStartSeconds": 54.998187,
+      "sourceEndSeconds": 55.932688,
+      "sha256": "766f044a30b33be56174cd2f83a404f604aa56b4ab895170787be5103541d370"
+    },
+    {
+      "letter": "ء",
+      "asset": "assets/audio/learn_quran/letters/hamza.mp3",
+      "sourceStartSeconds": 56.60075,
+      "sourceEndSeconds": 57.598625,
+      "sha256": "136d06ff304cdbadce65df20d5aeadf3c681bd856e5d50c2aac955f5c83a8ee1"
+    },
+    {
+      "letter": "ي",
+      "asset": "assets/audio/learn_quran/letters/yaa.mp3",
+      "sourceStartSeconds": 58.20825,
+      "sourceEndSeconds": 59.234875,
+      "sha256": "23c77fe7d27c181d1de50ae21c9623ae7e6eba9ed952f7145d4401adc98b2c23"
+    }
+  ]
+}

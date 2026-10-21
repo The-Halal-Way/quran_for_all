@@ -13,7 +13,6 @@ class TasbeehCounterDisplay extends StatelessWidget {
     super.key,
     required this.count,
     required this.target,
-    required this.progress,
     required this.phraseArabic,
     required this.phraseId,
     required this.phraseLabel,
@@ -30,7 +29,6 @@ class TasbeehCounterDisplay extends StatelessWidget {
 
   final int count;
   final int target;
-  final double progress;
   final String phraseArabic;
   final String phraseId;
   final String phraseLabel;
@@ -50,7 +48,8 @@ class TasbeehCounterDisplay extends StatelessWidget {
     final colors = TasbeehVisuals.heroColors(context);
     return Semantics(
       button: true,
-      label: '$phraseLabel, $count, ${context.l10n.tasbeehTarget} $target',
+      label:
+          '$phraseLabel, ${count % target}, ${context.l10n.tasbeehTarget} $target',
       child: GestureDetector(
         key: const ValueKey('tasbeeh_count_area'),
         onTap: onTap,
@@ -172,7 +171,6 @@ class TasbeehCounterDisplay extends StatelessWidget {
                     TasbeehCounterRing(
                       count: count,
                       target: target,
-                      progress: progress,
                       isTargetReached: isTargetReached,
                       onHero: true,
                     ),

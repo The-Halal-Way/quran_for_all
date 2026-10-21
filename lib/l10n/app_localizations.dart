@@ -2345,6 +2345,66 @@ abstract class AppLocalizations {
   /// **'Play lesson sample audio'**
   String get learnLessonTooltipPlayAudio;
 
+  /// No description provided for @learnLessonTooltipCancelAudioLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel loading lesson audio'**
+  String get learnLessonTooltipCancelAudioLoading;
+
+  /// No description provided for @learnPronunciationTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Play Arabic pronunciation'**
+  String get learnPronunciationTooltip;
+
+  /// No description provided for @learnPronunciationVoiceMissing.
+  ///
+  /// In en, this message translates to:
+  /// **'An Arabic speech voice is unavailable. Install an Arabic voice in your device’s text-to-speech settings, then try again.'**
+  String get learnPronunciationVoiceMissing;
+
+  /// No description provided for @learnPronunciationInstallVoice.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Arabic voice'**
+  String get learnPronunciationInstallVoice;
+
+  /// No description provided for @learnPronunciationFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation could not play. Check media volume, then try again.'**
+  String get learnPronunciationFailed;
+
+  /// No description provided for @learnPronunciationRecordings.
+  ///
+  /// In en, this message translates to:
+  /// **'Alphabet audio'**
+  String get learnPronunciationRecordings;
+
+  /// No description provided for @learnPronunciationRecordingsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Letter names and letter groups use offline recordings. Other exercises use your device’s Arabic speech voice.'**
+  String get learnPronunciationRecordingsDescription;
+
+  /// No description provided for @learnPronunciationRecordingsCredit.
+  ///
+  /// In en, this message translates to:
+  /// **'Excerpts from “Lesson 1: The Arabic Alphabet”. Trimmed and converted to MP3. Licensed under CC BY 3.0.'**
+  String get learnPronunciationRecordingsCredit;
+
+  /// No description provided for @learnPronunciationSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Original recording'**
+  String get learnPronunciationSource;
+
+  /// No description provided for @learnPronunciationLicense.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio license'**
+  String get learnPronunciationLicense;
+
   /// No description provided for @learnLessonAudioGuided.
   ///
   /// In en, this message translates to:

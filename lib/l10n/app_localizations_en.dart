@@ -1196,6 +1196,36 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learnLessonTooltipPlayAudio => 'Play lesson sample audio';
 
   @override
+  String get learnLessonTooltipCancelAudioLoading => 'Cancel loading lesson audio';
+
+  @override
+  String get learnPronunciationTooltip => 'Play Arabic pronunciation';
+
+  @override
+  String get learnPronunciationVoiceMissing => 'An Arabic speech voice is unavailable. Install an Arabic voice in your device’s text-to-speech settings, then try again.';
+
+  @override
+  String get learnPronunciationInstallVoice => 'Get Arabic voice';
+
+  @override
+  String get learnPronunciationFailed => 'Pronunciation could not play. Check media volume, then try again.';
+
+  @override
+  String get learnPronunciationRecordings => 'Alphabet audio';
+
+  @override
+  String get learnPronunciationRecordingsDescription => 'Letter names and letter groups use offline recordings. Other exercises use your device’s Arabic speech voice.';
+
+  @override
+  String get learnPronunciationRecordingsCredit => 'Excerpts from “Lesson 1: The Arabic Alphabet”. Trimmed and converted to MP3. Licensed under CC BY 3.0.';
+
+  @override
+  String get learnPronunciationSource => 'Original recording';
+
+  @override
+  String get learnPronunciationLicense => 'Audio license';
+
+  @override
   String get learnLessonAudioGuided => 'Audio guided';
 
   @override

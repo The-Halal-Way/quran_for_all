@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../services/pronunciation_service.dart';
 
 /// Extracts Arabic characters (and common diacritics) from mixed text.
@@ -27,7 +28,7 @@ String extractArabic(String text) {
   return buffer.toString().trim();
 }
 
-/// A small speaker icon button that pronounces Arabic text via TTS.
+/// Plays recorded letter names, or device speech for other Arabic exercises.
 ///
 /// Tapping while idle starts playback; tapping while the same text is
 /// playing stops it (toggle behaviour).
@@ -55,6 +56,8 @@ class PronunciationButton extends StatefulWidget {
 class _PronunciationButtonState extends State<PronunciationButton> {
   StreamSubscription<bool>? _subscription;
   bool _isActive = false;
+  bool _waiting = false;
+  int _tapRequest = 0;
 
   PronunciationService get _service => context.read<PronunciationService>();
 
@@ -88,7 +91,45 @@ class _PronunciationButtonState extends State<PronunciationButton> {
   }
 
   Future<void> _onTap() async {
-    await _service.speak(widget.arabicText);
+    final request = ++_tapRequest;
+    final service = _service;
+    setState(() => _waiting = true);
+    try {
+      await service.speak(widget.arabicText);
+    } on PronunciationException catch (error) {
+      if (!mounted || request != _tapRequest) return;
+      final missingVoice =
+          error.failure == PronunciationFailure.arabicVoiceUnavailable;
+      final l10n = context.l10n;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            missingVoice
+                ? l10n.learnPronunciationVoiceMissing
+                : l10n.learnPronunciationFailed,
+          ),
+          action: missingVoice && service.canInstallVoice
+              ? SnackBarAction(
+                  label: l10n.learnPronunciationInstallVoice,
+                  onPressed: () async {
+                    final opened = await service.installArabicVoice();
+                    if (!opened && mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            context.l10n.learnPronunciationVoiceMissing,
+                          ),
+                        ),
+                      );
+                    }
+                  },
+                )
+              : null,
+        ),
+      );
+    } finally {
+      if (mounted && request == _tapRequest) setState(() => _waiting = false);
+    }
   }
 
   @override
@@ -96,15 +137,32 @@ class _PronunciationButtonState extends State<PronunciationButton> {
     final effectiveColor =
         widget.color ?? Theme.of(context).colorScheme.primary;
 
-    return GestureDetector(
-      onTap: _onTap,
-      behavior: HitTestBehavior.opaque,
-      child: Padding(
-        padding: const EdgeInsets.all(4),
-        child: Icon(
-          _isActive ? Icons.volume_up_rounded : Icons.volume_up_outlined,
-          size: widget.size,
-          color: effectiveColor,
+    return Tooltip(
+      message: context.l10n.learnPronunciationTooltip,
+      child: Semantics(
+        button: true,
+        label: context.l10n.learnPronunciationTooltip,
+        child: GestureDetector(
+          onTap: _onTap,
+          behavior: HitTestBehavior.opaque,
+          child: Padding(
+            padding: const EdgeInsets.all(4),
+            child: _waiting && !_isActive
+                ? SizedBox.square(
+                    dimension: widget.size,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: effectiveColor,
+                    ),
+                  )
+                : Icon(
+                    _isActive
+                        ? Icons.volume_up_rounded
+                        : Icons.volume_up_outlined,
+                    size: widget.size,
+                    color: effectiveColor,
+                  ),
+          ),
         ),
       ),
     );

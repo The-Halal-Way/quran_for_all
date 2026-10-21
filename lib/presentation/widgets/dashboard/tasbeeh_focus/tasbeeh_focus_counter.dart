@@ -18,16 +18,9 @@ class TasbeehFocusCounter extends StatelessWidget {
   final int count;
   final int target;
 
-  double get _progress {
-    if (count == 0) return 0;
-    final remainder = count % target;
-    return remainder == 0 ? 1 : remainder / target;
-  }
-
   Widget _ring(double diameter) => TasbeehCounterRing(
     count: count,
     target: target,
-    progress: _progress,
     isTargetReached: count > 0 && count % target == 0,
     diameter: diameter,
     onHero: true,

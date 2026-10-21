@@ -536,6 +536,10 @@ class FlutterTts {
   Future<dynamic> isLanguageInstalled(String language) async =>
       await _channel.invokeMethod('isLanguageInstalled', language);
 
+  /// Opens the Android engine's voice-data installer following a user action.
+  Future<bool> installVoiceData() async =>
+      await _channel.invokeMethod<bool>('installVoiceData') ?? false;
+
   /// [Future] which invokes the platform specific method for areLanguagesInstalled
   /// Returns a HashMap with `true` or `false` for each submitted language.
   /// ***Android supported only***

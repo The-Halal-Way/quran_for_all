@@ -70,7 +70,6 @@ class TasbeehBody extends StatelessWidget {
                           TasbeehCounterDisplay(
                             count: vm.count,
                             target: vm.target,
-                            progress: vm.progress,
                             phraseArabic: vm.selectedPhrase.arabic,
                             phraseId: vm.selectedPhraseId,
                             phraseLabel: vm.selectedPhrase.label(context.l10n),
