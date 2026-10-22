@@ -5,9 +5,9 @@
 `DashboardQuizSection` opens `KnowledgeAssessmentSelectionView`. Both are static:
 neither reads config, question banks, or the local database. The catalog offers
 Kids, General Learners, and Islamically Educated, each with Beginner,
-Intermediate, and Pro levels. All three General Learners levels and
-Islamically Educated → Intermediate currently have content. The other five
-levels show a localized coming-soon sheet.
+Intermediate, and Pro levels. All three Kids levels, all three General Learners
+levels, and Islamically Educated → Intermediate currently have content.
+The other two levels show a localized coming-soon sheet.
 
 Opening a level's `KnowledgeAssessmentView` loads only its config and local
 attempt summaries. Starting an assessment loads and validates **only the chosen
@@ -18,6 +18,9 @@ language as their attempt.
 
 Each available level has its own `quiz_config.json` beside its question folders:
 
+- `assets/json/quiz/kids/beginner/`
+- `assets/json/quiz/kids/intermediate/`
+- `assets/json/quiz/kids/pro/`
 - `assets/json/quiz/general/beginner/`
 - `assets/json/quiz/general/intermediate/`
 - `assets/json/quiz/general/pro/`
@@ -43,6 +46,53 @@ and `shared/`, with the reusable assessment renderer split under
 `assessment/{overview,questions,results,shared}/`. All available levels share
 this renderer, with their own config and isolated persistence.
 The feature has no domain-layer dependency.
+
+## Kids Beginner banks
+
+Kids → Beginner uses schema-3 banks with `audienceId: kids` and
+`levelId: beginner`. There are six subjects with 60 questions each in English
+and Bangla. Its config selects 24 questions: two `familiar_fact`, one
+`broader_basic`, and one `everyday_application` per subject, following the
+four-per-subject recommendation in the supplied banks. There is no time limit.
+
+The existing localized assessment UI provides language selection before start,
+the separate “I'm not sure” action, resume, results and answer review. Only the
+chosen language's banks are read when starting. No Kids banks are read while
+browsing the dashboard or audience/level picker. Its independent
+`quiz_kids_beginner_v1.db` keeps attempts and exposure history separate from
+General Learners and Islamically Educated assessments. The supplied questions
+and review statuses are kept as authored; the existing draft-content policy
+also applies to this level.
+
+## Kids Intermediate banks
+
+Kids → Intermediate also uses schema-3 banks for six subjects, with 60 questions
+per subject in English and Bangla. The source banks identify the level as `mid`;
+the config preserves that ID while the UI displays Intermediate. Question IDs,
+options, explanations, references and review statuses are not rewritten.
+
+The level selects 24 questions without a time limit: two `familiar_fact`, one
+`broader_basic`, and one `everyday_application` per subject. It uses the shared
+localized assessment UI and lazy selected-language loading. Its independent
+`quiz_kids_intermediate_v1.db` stores progress, completed attempts and exposure
+history separately from every other level. Language stays fixed during an
+attempt and its results/review. The existing draft-content policy applies to
+Intermediate's supplied banks.
+
+## Kids Pro banks
+
+Kids → Pro uses schema-3 banks with `audienceId: kids` and `levelId: pro`.
+English and Bangla each contain 60 questions in each of six subjects. Its
+config selects 24 questions without a time limit: two `familiar_fact`, one
+`broader_basic`, and one `everyday_application` per subject. Question content,
+IDs, options, explanations, references and review statuses remain as authored.
+
+It shares the localized assessment UI, selected-language lazy loading, fixed
+attempt language, unknown response, resume, results and review flow. Its own
+`quiz_kids_pro_v1.db` keeps progress, completed attempts and exposure history
+separate from other levels. Pro is the highest level within Kids; it does not
+change the audience to Islamically Educated. The supplied banks retain their
+draft status and follow the existing content-review policy.
 
 ## General Learners banks
 
@@ -100,6 +150,8 @@ the UI. A new attempt can use another language; question exposure/history uses
 stable IDs across languages. Saved question and option order, responses, and
 grading remain unchanged on resume.
 
+Kids Beginner uses `quiz_kids_beginner_v1.db`; Kids Intermediate uses
+`quiz_kids_intermediate_v1.db`; Kids Pro uses `quiz_kids_pro_v1.db`.
 General Beginner uses `quiz_general_beginner_v1.db`; General Intermediate uses
 `quiz_general_intermediate_v1.db`; General Pro uses `quiz_general_pro_v1.db`.
 Resuming, exposure avoidance, and history are

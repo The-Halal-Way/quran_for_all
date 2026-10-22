@@ -1,0 +1,2324 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "character_conduct",
+  "title": "Character & Conduct",
+  "description": "Little Muslim → Beginner. Short questions about respectful words, fairness, trust, privacy, gratitude, cooperation and making amends, using familiar home and classroom situations. Children can ask a trusted adult for guidance and help. Written with children around ages 6–9 in mind; an adult may read questions aloud. All questions are Beginner level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Uses introductory knowledge of good character and conduct, short wording and straightforward examples for the Kids audience. Age and level are editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith reports checked during preparation. Present-day scenarios illustrate ordinary social conduct. Seeking help about harm is distinguished from gossip, and forgiveness is not presented as requiring continued exposure to harm. No question asks children to judge another person’s faith or worth. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Everyday scenarios illustrate the cited principles. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_character_conduct_001",
+      "conceptId": "kids_character_respectful_names",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about hurtful nicknames?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do not use names that insult people"
+        },
+        {
+          "id": "b",
+          "text": "Use them if your friends laugh"
+        },
+        {
+          "id": "c",
+          "text": "Use them for every new classmate"
+        },
+        {
+          "id": "d",
+          "text": "Make the smallest child a target"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran teaches us not to mock people or use insulting nicknames. Names should show respect.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_002",
+      "conceptId": "kids_character_no_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which kind of talk should we avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kind words of encouragement"
+        },
+        {
+          "id": "b",
+          "text": "Hurtful talk about someone behind their back"
+        },
+        {
+          "id": "c",
+          "text": "Asking a teacher to explain a lesson"
+        },
+        {
+          "id": "d",
+          "text": "Telling a parent that we need help"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran warns against backbiting. We should protect people's dignity in the way we speak about them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_003",
+      "conceptId": "kids_character_return_trusts",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What should we do with something entrusted to us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend it has become ours"
+        },
+        {
+          "id": "b",
+          "text": "Hide it so nobody can use it"
+        },
+        {
+          "id": "c",
+          "text": "Return it to its rightful owner"
+        },
+        {
+          "id": "d",
+          "text": "Give it away without permission"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran teaches us to return trusts to their owners. Looking after another person's belongings is a responsibility.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_004",
+      "conceptId": "kids_character_fairness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Should we be fair only to people we like?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only our friends deserve fairness"
+        },
+        {
+          "id": "b",
+          "text": "Yes, fairness depends on who is strongest"
+        },
+        {
+          "id": "c",
+          "text": "No, fairness never matters at all"
+        },
+        {
+          "id": "d",
+          "text": "No, fairness matters even when we dislike someone"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches fairness even when we dislike someone. Feelings do not make unfair treatment right.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_005",
+      "conceptId": "kids_character_help_good",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What kind of work does the Quran tell us to help one another with?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Good and right actions"
+        },
+        {
+          "id": "b",
+          "text": "Hurting someone together"
+        },
+        {
+          "id": "c",
+          "text": "Planning how to cheat"
+        },
+        {
+          "id": "d",
+          "text": "Hiding another person's belongings for fun"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran teaches cooperation in goodness, not in wrongdoing. Helping should support something good.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "Quran 5:2",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_006",
+      "conceptId": "kids_character_permission_entry",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Before entering another family's home, what should we do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Walk straight in without asking"
+        },
+        {
+          "id": "b",
+          "text": "Ask permission and greet them"
+        },
+        {
+          "id": "c",
+          "text": "Push the door open and hide"
+        },
+        {
+          "id": "d",
+          "text": "Insist that every door belongs to us"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran teaches permission and greetings before entering another home. We wait until we are welcome to enter.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27-28",
+          "label": "Quran 24:27-28",
+          "url": "https://quran.com/24/27-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_007",
+      "conceptId": "kids_character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which behavior shows humility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Looking down on everyone else"
+        },
+        {
+          "id": "b",
+          "text": "Boasting that nobody else matters"
+        },
+        {
+          "id": "c",
+          "text": "Respecting people without acting superior"
+        },
+        {
+          "id": "d",
+          "text": "Refusing kindness to show our importance"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Humility means avoiding arrogance and treating others with respect. The Quran warns against boastful pride.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "Quran 31:18",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_008",
+      "conceptId": "kids_character_considerate_voice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In an ordinary conversation, what kind of voice shows good manners?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shouting over everyone for attention"
+        },
+        {
+          "id": "b",
+          "text": "Screaming to stop others from speaking"
+        },
+        {
+          "id": "c",
+          "text": "Being loud only to annoy people"
+        },
+        {
+          "id": "d",
+          "text": "A calm voice suited to the place"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Luqman's advice in the Quran teaches moderation and lowering the voice. We speak considerately in everyday conversation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "Quran 31:19",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_009",
+      "conceptId": "kids_character_avoid_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about food and drink?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enjoy them without waste"
+        },
+        {
+          "id": "b",
+          "text": "Waste them to show we have plenty"
+        },
+        {
+          "id": "c",
+          "text": "Throw them away for fun"
+        },
+        {
+          "id": "d",
+          "text": "Take far more than we need every time"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran permits eating and drinking while teaching us not to waste. We can handle food thoughtfully.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "Quran 7:31",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_010",
+      "conceptId": "kids_character_return_greeting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When someone greets us kindly, what does the Quran teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Answer with an insult"
+        },
+        {
+          "id": "b",
+          "text": "Return the greeting equally or better"
+        },
+        {
+          "id": "c",
+          "text": "Always pretend we did not hear"
+        },
+        {
+          "id": "d",
+          "text": "Demand a gift before replying"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran teaches us to return greetings equally or more warmly. A respectful reply is good conduct.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "86",
+          "label": "Quran 4:86",
+          "url": "https://quran.com/4/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_011",
+      "conceptId": "kids_character_thank_people",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What should we do when someone helps us kindly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend their effort means nothing"
+        },
+        {
+          "id": "b",
+          "text": "Demand even more before speaking"
+        },
+        {
+          "id": "c",
+          "text": "Thank them"
+        },
+        {
+          "id": "d",
+          "text": "Mock them for helping"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught the importance of thanking people. Gratitude recognizes the kindness we receive.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4811",
+          "label": "Sunan Abi Dawud 4811",
+          "url": "https://sunnah.com/abudawud:4811"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_012",
+      "conceptId": "kids_character_make_peace",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran encourage between believers who disagree?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keeping every argument going"
+        },
+        {
+          "id": "b",
+          "text": "Inventing insults for both sides"
+        },
+        {
+          "id": "c",
+          "text": "Helping a disagreement become a fight"
+        },
+        {
+          "id": "d",
+          "text": "Making peace"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran encourages making peace between believers. We can seek a fair, calm way to settle disagreements.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "10",
+          "label": "Quran 49:10",
+          "url": "https://quran.com/49/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_013",
+      "conceptId": "kids_character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality does the Quran encourage when someone has wronged us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "Endless revenge"
+        },
+        {
+          "id": "c",
+          "text": "Humiliating them forever"
+        },
+        {
+          "id": "d",
+          "text": "Making their family suffer too"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran encourages forgiveness and pardon. Forgiving an ordinary mistake can help us move away from revenge.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "22",
+          "label": "Quran 24:22",
+          "url": "https://quran.com/24/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_014",
+      "conceptId": "kids_character_no_cheating",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ warn against in the report about hidden wet food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Being honest about what is offered"
+        },
+        {
+          "id": "b",
+          "text": "Cheating people"
+        },
+        {
+          "id": "c",
+          "text": "Letting people see what they are buying"
+        },
+        {
+          "id": "d",
+          "text": "Explaining something truthfully"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ warned against cheating. Hiding an important fact to deceive someone is wrong.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "Sahih Muslim 102",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_015",
+      "conceptId": "kids_character_respect_differences",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "The Quran says people were made into different peoples and tribes so they could do what?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock every unfamiliar name"
+        },
+        {
+          "id": "b",
+          "text": "Decide that language makes someone worthless"
+        },
+        {
+          "id": "c",
+          "text": "Get to know one another"
+        },
+        {
+          "id": "d",
+          "text": "Refuse to respect anyone different"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran teaches people to know one another. Different backgrounds are not a reason for contempt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "Quran 49:13",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_016",
+      "conceptId": "kids_character_respect_needy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How should we speak to someone asking for help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "With insults because they need something"
+        },
+        {
+          "id": "b",
+          "text": "With laughter at their difficulty"
+        },
+        {
+          "id": "c",
+          "text": "With cruel names to embarrass them"
+        },
+        {
+          "id": "d",
+          "text": "With respect, without harshly driving them away"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches us not to harshly turn away someone asking. We can speak respectfully and involve an adult when needed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "10",
+          "label": "Quran 93:10",
+          "url": "https://quran.com/93/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_017",
+      "conceptId": "kids_character_make_room",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When asked to make room in a gathering, what does the Quran teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make space for others"
+        },
+        {
+          "id": "b",
+          "text": "Spread our belongings across every empty seat"
+        },
+        {
+          "id": "c",
+          "text": "Push people away for fun"
+        },
+        {
+          "id": "d",
+          "text": "Pretend nobody else belongs there"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran teaches making room in gatherings. Being considerate helps others take part too.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "11",
+          "label": "Quran 58:11",
+          "url": "https://quran.com/58/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_018",
+      "conceptId": "kids_character_give_without_hurting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "After giving charity, which behavior should we avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Letting them keep their dignity"
+        },
+        {
+          "id": "b",
+          "text": "Humiliating the person with hurtful reminders"
+        },
+        {
+          "id": "c",
+          "text": "Giving without showing off"
+        },
+        {
+          "id": "d",
+          "text": "Speaking respectfully to them"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran warns against spoiling charity with hurtful reminders. Giving should not be used to shame someone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_019",
+      "conceptId": "kids_character_make_amends",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When we wrong someone, what should we try to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend their hurt does not matter"
+        },
+        {
+          "id": "b",
+          "text": "Blame them for our own choice"
+        },
+        {
+          "id": "c",
+          "text": "Seek their forgiveness and put things right"
+        },
+        {
+          "id": "d",
+          "text": "Repeat the same wrong for fun"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught us to seek forgiveness for wronging others. We should stop the wrong and work to repair it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_020",
+      "conceptId": "kids_character_kindness_other_faiths",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How should we treat peaceful people of another faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "With cruelty because they are different"
+        },
+        {
+          "id": "b",
+          "text": "With unfair rules just for them"
+        },
+        {
+          "id": "c",
+          "text": "With insults instead of respect"
+        },
+        {
+          "id": "d",
+          "text": "With kindness and fairness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran permits kind and fair dealings with those who are not fighting us. Different faiths do not justify cruelty.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 60,
+          "ayahs": "8",
+          "label": "Quran 60:8",
+          "url": "https://quran.com/60/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_021",
+      "conceptId": "kids_character_respectful_names",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If a nickname hurts a classmate, does making others laugh make it kind?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, laughter does not make an insult kind"
+        },
+        {
+          "id": "b",
+          "text": "Yes, laughter makes every name acceptable"
+        },
+        {
+          "id": "c",
+          "text": "Yes, as long as the classmate is quiet"
+        },
+        {
+          "id": "d",
+          "text": "Yes, if a popular child chooses it"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A joke that insults someone can still hurt. Respect matters more than getting laughs at another person's expense.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_022",
+      "conceptId": "kids_character_no_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does avoiding gossip mean hiding bullying from a trusted adult?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, hurtful behavior must always stay secret"
+        },
+        {
+          "id": "b",
+          "text": "No, getting help for harm is different"
+        },
+        {
+          "id": "c",
+          "text": "Yes, no child may report a problem"
+        },
+        {
+          "id": "d",
+          "text": "No, it means we should invent stories instead"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Reporting harm to get help is different from gossip. Tell a trusted adult when someone is hurting you or another child.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "148",
+          "label": "Quran 4:148",
+          "url": "https://quran.com/4/148"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_023",
+      "conceptId": "kids_character_return_trusts",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does borrowing something make it ours to keep?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, borrowing always means owning"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if we like it more than the owner"
+        },
+        {
+          "id": "c",
+          "text": "No, the owner still has a right to it"
+        },
+        {
+          "id": "d",
+          "text": "Yes, if the owner forgets for one day"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Something borrowed still belongs to its owner. We care for it and return it as agreed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_024",
+      "conceptId": "kids_character_fairness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which choice shows fairness during a game?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Change the rules whenever our team loses"
+        },
+        {
+          "id": "b",
+          "text": "Give only our friends extra turns"
+        },
+        {
+          "id": "c",
+          "text": "Pretend the other team's points do not count"
+        },
+        {
+          "id": "d",
+          "text": "Apply the agreed rules to both teams"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Fairness means applying the agreed rules honestly. Liking one team more does not justify cheating the other.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_025",
+      "conceptId": "kids_character_help_good",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does being helpful mean joining every plan a friend suggests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, we should help with good, not wrongdoing"
+        },
+        {
+          "id": "b",
+          "text": "Yes, even a plan to hurt someone"
+        },
+        {
+          "id": "c",
+          "text": "Yes, a friend's idea can never be wrong"
+        },
+        {
+          "id": "d",
+          "text": "No, it means refusing every kind action"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Cooperation is for good actions. We can refuse an unkind plan and suggest something better.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "Quran 5:2",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_026",
+      "conceptId": "kids_character_permission_entry",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If a home's door is open, is that always permission to enter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, an open door belongs to everyone"
+        },
+        {
+          "id": "b",
+          "text": "No, we still need permission"
+        },
+        {
+          "id": "c",
+          "text": "Yes, we may hide inside without asking"
+        },
+        {
+          "id": "d",
+          "text": "Yes, greetings are never needed at open doors"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An open door does not automatically give permission. The Quran teaches respect for other people's homes.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27-28",
+          "label": "Quran 24:27-28",
+          "url": "https://quran.com/24/27-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_027",
+      "conceptId": "kids_character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can we feel pleased about learning well without looking down on others?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, doing well means others have no value"
+        },
+        {
+          "id": "b",
+          "text": "Yes, but only if we insult slower learners"
+        },
+        {
+          "id": "c",
+          "text": "Yes, confidence can go with respect"
+        },
+        {
+          "id": "d",
+          "text": "No, we must pretend we can never learn"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Humility does not mean denying our progress. We can be pleased while respecting others and avoiding arrogance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "Quran 31:18",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_028",
+      "conceptId": "kids_character_considerate_voice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should we avoid shouting over people in an ordinary conversation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "So nobody else ever gets a turn"
+        },
+        {
+          "id": "b",
+          "text": "So we can frighten quiet classmates"
+        },
+        {
+          "id": "c",
+          "text": "So we can stop every useful discussion"
+        },
+        {
+          "id": "d",
+          "text": "So others can speak and listen comfortably"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A considerate voice helps conversation. The Quran's advice encourages moderation instead of needless loudness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "Quran 31:19",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_029",
+      "conceptId": "kids_character_avoid_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does avoiding food waste mean we must force ourselves to eat too much?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, take a suitable amount and handle leftovers wisely"
+        },
+        {
+          "id": "b",
+          "text": "Yes, discomfort never matters"
+        },
+        {
+          "id": "c",
+          "text": "Yes, we must always take the largest portion"
+        },
+        {
+          "id": "d",
+          "text": "No, it means wasting food is always better"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "We can avoid waste by taking suitable portions and asking an adult how to save safe leftovers. Eating too much is not the goal.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "Quran 7:31",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_030",
+      "conceptId": "kids_character_return_greeting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which response follows the lesson about returning a greeting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Turn every greeting into an argument"
+        },
+        {
+          "id": "b",
+          "text": "Answer respectfully instead of mocking the greeting"
+        },
+        {
+          "id": "c",
+          "text": "Ignore others to show we are important"
+        },
+        {
+          "id": "d",
+          "text": "Laugh at the speaker's voice"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Returning a greeting shows respect. The Quran teaches a reply at least as good as the greeting received.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "86",
+          "label": "Quran 4:86",
+          "url": "https://quran.com/4/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_031",
+      "conceptId": "kids_character_thank_people",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does thanking Allah mean we should never thank a person who helped us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, their kindness must be ignored"
+        },
+        {
+          "id": "b",
+          "text": "Yes, gratitude is only for expensive gifts"
+        },
+        {
+          "id": "c",
+          "text": "No, we should thank people too"
+        },
+        {
+          "id": "d",
+          "text": "No, we should demand another gift first"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Thanking people fits the Prophet's ﷺ teaching. Gratitude to Allah does not require ignoring other people's kindness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4811",
+          "label": "Sunan Abi Dawud 4811",
+          "url": "https://sunnah.com/abudawud:4811"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_032",
+      "conceptId": "kids_character_make_peace",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which action helps make peace in a small disagreement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carry insults from one side to the other"
+        },
+        {
+          "id": "b",
+          "text": "Make up new reasons to argue"
+        },
+        {
+          "id": "c",
+          "text": "Cheer whenever someone gets hurt"
+        },
+        {
+          "id": "d",
+          "text": "Listen fairly and seek a calm solution"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Making peace means helping people settle a disagreement fairly. It does not mean feeding the argument.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "10",
+          "label": "Quran 49:10",
+          "url": "https://quran.com/49/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_033",
+      "conceptId": "kids_character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does forgiveness mean we must let someone keep hurting us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, we can get help and stop harm"
+        },
+        {
+          "id": "b",
+          "text": "Yes, harm must continue forever"
+        },
+        {
+          "id": "c",
+          "text": "Yes, asking an adult for help is always wrong"
+        },
+        {
+          "id": "d",
+          "text": "No, it means hurting innocent people instead"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Forgiveness does not require allowing ongoing harm. Ask a trusted adult for help when you need protection or support.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "22",
+          "label": "Quran 24:22",
+          "url": "https://quran.com/24/22"
+        },
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "41",
+          "label": "Quran 42:41",
+          "url": "https://quran.com/42/41"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_034",
+      "conceptId": "kids_character_no_cheating",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If cheating helps us win, does winning make it honest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, winners never need to follow rules"
+        },
+        {
+          "id": "b",
+          "text": "No, winning does not make cheating honest"
+        },
+        {
+          "id": "c",
+          "text": "Yes, as long as nobody notices"
+        },
+        {
+          "id": "d",
+          "text": "Yes, a prize makes every trick acceptable"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A result gained by cheating is still dishonest. The Prophet's ﷺ warning teaches us to avoid deception.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "Sahih Muslim 102",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_035",
+      "conceptId": "kids_character_respect_differences",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does speaking a different language make a child less worthy of respect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only our language deserves respect"
+        },
+        {
+          "id": "b",
+          "text": "Yes, unfamiliar names have no value"
+        },
+        {
+          "id": "c",
+          "text": "No, language is not a reason to look down on someone"
+        },
+        {
+          "id": "d",
+          "text": "No, but mocking their accent is always kind"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Different peoples can learn about one another. A child's language or background is not a reason for contempt.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "Quran 49:13",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_036",
+      "conceptId": "kids_character_respect_needy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If we cannot provide what someone asks for, can we still respond respectfully?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, an insult is always required"
+        },
+        {
+          "id": "b",
+          "text": "No, we must make fun of their need"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only after embarrassing them"
+        },
+        {
+          "id": "d",
+          "text": "Yes, we can be polite and seek suitable help"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Respectful speech does not require promising everything requested. We can speak kindly and ask an adult about suitable help.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "10",
+          "label": "Quran 93:10",
+          "url": "https://quran.com/93/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_037",
+      "conceptId": "kids_character_make_room",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is making room in a gathering considerate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It helps other people join in"
+        },
+        {
+          "id": "b",
+          "text": "It proves every seat belongs only to us"
+        },
+        {
+          "id": "c",
+          "text": "It gives us a reason to push someone"
+        },
+        {
+          "id": "d",
+          "text": "It means nobody else deserves a place"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Making space helps others participate. We can adjust our belongings without taking over the whole area.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "11",
+          "label": "Quran 58:11",
+          "url": "https://quran.com/58/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_038",
+      "conceptId": "kids_character_give_without_hurting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does giving someone a gift make it right to keep shaming them about it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, gifts let us control people's feelings"
+        },
+        {
+          "id": "b",
+          "text": "No, giving should not become a way to hurt them"
+        },
+        {
+          "id": "c",
+          "text": "Yes, kindness gives permission to insult"
+        },
+        {
+          "id": "d",
+          "text": "Yes, the receiver loses their right to respect"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A gift should not be used for humiliation. The Quran warns against hurtful reminders attached to charity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_039",
+      "conceptId": "kids_character_make_amends",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is saying sorry a reason to keep repeating the same hurtful action on purpose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, an apology makes every repeated harm acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Yes, words remove the need to change anything"
+        },
+        {
+          "id": "c",
+          "text": "No, we should stop and try to repair the wrong"
+        },
+        {
+          "id": "d",
+          "text": "No, it means we should blame someone else"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Seeking forgiveness goes with taking wrongdoing seriously. Stop the hurtful action and work on putting things right.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_040",
+      "conceptId": "kids_character_kindness_other_faiths",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does another person's different religion make unfair treatment acceptable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, fairness is only for our own group"
+        },
+        {
+          "id": "b",
+          "text": "Yes, difference gives permission to insult"
+        },
+        {
+          "id": "c",
+          "text": "No, but cruelty is a good way to make friends"
+        },
+        {
+          "id": "d",
+          "text": "No, we should still act kindly and fairly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Different beliefs do not justify unfairness or cruelty. Peaceful people of another faith deserve kind and fair treatment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 60,
+          "ayahs": "8",
+          "label": "Quran 60:8",
+          "url": "https://quran.com/60/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_041",
+      "conceptId": "kids_character_respectful_names",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate says a nickname hurts them. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stop using it and use a respectful name"
+        },
+        {
+          "id": "b",
+          "text": "Repeat it louder"
+        },
+        {
+          "id": "c",
+          "text": "Teach everyone else to use it"
+        },
+        {
+          "id": "d",
+          "text": "Say their feelings do not matter"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Respect the classmate's feelings and stop the hurtful name. The Quran teaches us to avoid insulting nicknames.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_042",
+      "conceptId": "kids_character_no_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Some friends start sharing hurtful gossip about an absent classmate. Which choice is better?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Add another hurtful story"
+        },
+        {
+          "id": "b",
+          "text": "Avoid joining in and suggest a kinder topic"
+        },
+        {
+          "id": "c",
+          "text": "Invite more children to listen"
+        },
+        {
+          "id": "d",
+          "text": "Turn the gossip into a poster"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Avoid spreading hurtful talk behind someone's back. Changing to a kinder topic can help stop it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_043",
+      "conceptId": "kids_character_return_trusts",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend lends you crayons for a lesson. What should you do afterward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hide them in your bag to keep"
+        },
+        {
+          "id": "b",
+          "text": "Give them to someone else without asking"
+        },
+        {
+          "id": "c",
+          "text": "Care for them and return them to your friend"
+        },
+        {
+          "id": "d",
+          "text": "Break them so nobody else can use them"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Borrowed crayons are a trust. Treat them carefully and return them to their owner.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "Quran 4:58",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_044",
+      "conceptId": "kids_character_fairness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You count points in a game. A team you dislike earns a point. What is fair?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Erase it because you dislike them"
+        },
+        {
+          "id": "b",
+          "text": "Give their point to your favorite team"
+        },
+        {
+          "id": "c",
+          "text": "End the game to avoid counting it"
+        },
+        {
+          "id": "d",
+          "text": "Record the point honestly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Be fair even when feelings are involved. Count the point honestly according to the rules.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "Quran 5:8",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_045",
+      "conceptId": "kids_character_help_good",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend asks you to help hide another child's schoolbag as a cruel joke. What should you choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refuse and suggest something kind instead"
+        },
+        {
+          "id": "b",
+          "text": "Help because friends must agree to everything"
+        },
+        {
+          "id": "c",
+          "text": "Hide the bag farther away"
+        },
+        {
+          "id": "d",
+          "text": "Blame the child for having a schoolbag"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "We cooperate in good, not in hurting people. If the cruel behavior continues, get a trusted adult's help.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "Quran 5:2",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_046",
+      "conceptId": "kids_character_permission_entry",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You visit a friend's home with your parent. What should you do at the door?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Run inside before anyone answers"
+        },
+        {
+          "id": "b",
+          "text": "Greet them, ask permission and wait to be invited"
+        },
+        {
+          "id": "c",
+          "text": "Open every room to explore"
+        },
+        {
+          "id": "d",
+          "text": "Insist they must let you enter immediately"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ask permission and wait. Respecting another family's home follows the Quran's teaching.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27-28",
+          "label": "Quran 24:27-28",
+          "url": "https://quran.com/24/27-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_047",
+      "conceptId": "kids_character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You finish a learning activity quickly. Which response shows humility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tell everyone else they are worthless"
+        },
+        {
+          "id": "b",
+          "text": "Refuse to speak to anyone still learning"
+        },
+        {
+          "id": "c",
+          "text": "Be pleased without belittling slower classmates"
+        },
+        {
+          "id": "d",
+          "text": "Boast that only you deserve respect"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "You can enjoy your progress without looking down on others. Humility leaves room for kindness and respect.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "Quran 31:18",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_048",
+      "conceptId": "kids_character_considerate_voice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "During a quiet classroom discussion, how should you speak?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shout to drown out every other voice"
+        },
+        {
+          "id": "b",
+          "text": "Scream just to get attention"
+        },
+        {
+          "id": "c",
+          "text": "Make loud noises to annoy classmates"
+        },
+        {
+          "id": "d",
+          "text": "Use a suitable voice and let others speak too"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A voice suited to the setting shows consideration. Give other people a chance to speak and be heard.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "Quran 31:19",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_049",
+      "conceptId": "kids_character_avoid_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are serving yourself a snack. Which choice helps avoid waste?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take a suitable amount and ask for more if needed"
+        },
+        {
+          "id": "b",
+          "text": "Take a huge pile just to throw it away"
+        },
+        {
+          "id": "c",
+          "text": "Spill the drink for fun"
+        },
+        {
+          "id": "d",
+          "text": "Throw away untouched food to impress a friend"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Taking a suitable portion helps avoid waste. Ask an adult about saving leftovers safely.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "Quran 7:31",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_050",
+      "conceptId": "kids_character_return_greeting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate says, \"Assalamu alaikum.\" Which reply fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Go away, your greeting is silly"
+        },
+        {
+          "id": "b",
+          "text": "Wa alaikum assalam"
+        },
+        {
+          "id": "c",
+          "text": "Give me a toy before I answer"
+        },
+        {
+          "id": "d",
+          "text": "Only important people may greet me"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Wa alaikum assalam returns the greeting of peace. We can respond respectfully and warmly.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "86",
+          "label": "Quran 4:86",
+          "url": "https://quran.com/4/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_051",
+      "conceptId": "kids_character_thank_people",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A teacher spends extra time helping you understand a lesson. What can you say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Your effort means nothing"
+        },
+        {
+          "id": "b",
+          "text": "You owe me a present too"
+        },
+        {
+          "id": "c",
+          "text": "Thank you for helping me"
+        },
+        {
+          "id": "d",
+          "text": "I will never appreciate your help"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Thanking the teacher recognizes their kindness. Showing gratitude to people follows the Prophet's ﷺ teaching.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4811",
+          "label": "Sunan Abi Dawud 4811",
+          "url": "https://sunnah.com/abudawud:4811"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_052",
+      "conceptId": "kids_character_make_peace",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two friends argue about whose turn comes next. How can you help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invent an insult for each friend"
+        },
+        {
+          "id": "b",
+          "text": "Tell each one the other hates them"
+        },
+        {
+          "id": "c",
+          "text": "Encourage them to start hitting"
+        },
+        {
+          "id": "d",
+          "text": "Help them check the turn order calmly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Help find a fair solution rather than adding anger. Ask a teacher if you need help settling the turn order.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "10",
+          "label": "Quran 49:10",
+          "url": "https://quran.com/49/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_053",
+      "conceptId": "kids_character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend accidentally knocks over your block tower and apologizes. Which response shows willingness to forgive?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the apology without seeking revenge"
+        },
+        {
+          "id": "b",
+          "text": "Destroy their belongings in return"
+        },
+        {
+          "id": "c",
+          "text": "Insult their whole family"
+        },
+        {
+          "id": "d",
+          "text": "Plan to embarrass them every day"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An ordinary accident can be met with forgiveness. You may still explain that you felt upset and ask for help rebuilding.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "22",
+          "label": "Quran 24:22",
+          "url": "https://quran.com/24/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_054",
+      "conceptId": "kids_character_no_cheating",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to win a classroom game. Which choice is honest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Move your piece when nobody is looking"
+        },
+        {
+          "id": "b",
+          "text": "Follow the rules without secretly changing the score"
+        },
+        {
+          "id": "c",
+          "text": "Hide the other team's cards"
+        },
+        {
+          "id": "d",
+          "text": "Pretend you answered correctly when you did not"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Honest play avoids cheating. Winning matters less than acting truthfully and fairly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "Sahih Muslim 102",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_055",
+      "conceptId": "kids_character_respect_differences",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A new classmate has a name from a different language. Which action shows respect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock the name because it is unfamiliar"
+        },
+        {
+          "id": "b",
+          "text": "Refuse to learn anything about them"
+        },
+        {
+          "id": "c",
+          "text": "Ask politely how to pronounce the name"
+        },
+        {
+          "id": "d",
+          "text": "Say only names like yours matter"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Different backgrounds are a chance to learn about one another. Asking politely about a name shows respect.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "Quran 49:13",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_056",
+      "conceptId": "kids_character_respect_needy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are with a parent when someone asks for help. What can you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shout insults at the person"
+        },
+        {
+          "id": "b",
+          "text": "Laugh at their difficulty"
+        },
+        {
+          "id": "c",
+          "text": "Demand that they entertain you first"
+        },
+        {
+          "id": "d",
+          "text": "Stay with your parent and respond respectfully"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Speak with respect and let your parent guide any help. Needing assistance is not a reason to be humiliated.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "10",
+          "label": "Quran 93:10",
+          "url": "https://quran.com/93/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_057",
+      "conceptId": "kids_character_make_room",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher asks everyone to make room for another child in the reading circle. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Move your bag and make suitable space"
+        },
+        {
+          "id": "b",
+          "text": "Spread your belongings across the empty place"
+        },
+        {
+          "id": "c",
+          "text": "Push the child away"
+        },
+        {
+          "id": "d",
+          "text": "Claim the whole circle is yours"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Making room helps another child take part. Follow your teacher's guidance without pushing anyone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "11",
+          "label": "Quran 58:11",
+          "url": "https://quran.com/58/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_058",
+      "conceptId": "kids_character_give_without_hurting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With permission, you give a spare notebook to a child who needs one. What should you avoid afterward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Letting them use it with dignity"
+        },
+        {
+          "id": "b",
+          "text": "Repeatedly reminding them to make them feel small"
+        },
+        {
+          "id": "c",
+          "text": "Treating them as an equal classmate"
+        },
+        {
+          "id": "d",
+          "text": "Keeping your words respectful"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Give without humiliating the person. A helpful gift should not become a reason for hurtful reminders.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_059",
+      "conceptId": "kids_character_make_amends",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You purposely scribbled on a friend's page and now regret it. What is a good next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hide the page and blame another child"
+        },
+        {
+          "id": "b",
+          "text": "Demand forgiveness while scribbling again"
+        },
+        {
+          "id": "c",
+          "text": "Apologize and ask how to help put it right"
+        },
+        {
+          "id": "d",
+          "text": "Say that their feelings are silly"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Seek forgiveness and work on repairing the wrong. An adult can help you decide how to make things right.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "Sahih al-Bukhari 2449",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_060",
+      "conceptId": "kids_character_kindness_other_faiths",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A peaceful classmate of another faith joins your group activity. How should you treat them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insult them because their faith differs"
+        },
+        {
+          "id": "b",
+          "text": "Give them unfair rules to make them lose"
+        },
+        {
+          "id": "c",
+          "text": "Refuse basic kindness just because they are different"
+        },
+        {
+          "id": "d",
+          "text": "Include them kindly and apply the same fair rules"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Kindness and fairness apply in dealing with peaceful people of another faith. Treat your classmate respectfully.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 60,
+          "ayahs": "8",
+          "label": "Quran 60:8",
+          "url": "https://quran.com/60/8"
+        }
+      ]
+    }
+  ]
+}

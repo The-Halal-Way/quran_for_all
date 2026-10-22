@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "quran_knowledge",
+  "title": "কুরআন পরিচিতি",
+  "description": "ছোট্ট মুসলিম → প্রো। পরিচিত কুরআনের অংশের সঙ্গে অর্থ ও দায়িত্বশীল শেখার সম্পর্ক নিয়ে ছোট প্রশ্ন। সুরা-আয়াতের সূত্র, বিন্যাস ও নাজিলের ক্রম, চিন্তা, শোনা, তিলাওয়াতের চেষ্টা, আসর, মাউন, কাউসার, কদর, শারহ, ফালাক, ইউনুস, মুসা, ইব্রাহিম ও ইসমাইল, সুলায়মান, মরিয়ম, গুহাবাসী, আদম, লুকমান ও আরবি কুরআন বোঝা নিয়ে লেখা। শ্রেণিকক্ষ ও দৈনন্দিন জীবনের ছোট প্রয়োগও আছে। বড় কেউ প্রশ্ন পড়ে শোনাতে বা অপরিচিত শব্দ বুঝিয়ে দিতে পারেন। সব প্রশ্ন শিশুদের প্রো স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রো ছোট্ট মুসলিম বিভাগের সর্বোচ্চ নির্ধারিত স্তর, শিক্ষিত ব্যবহারকারী বিভাগের স্তর নয়। পরিচিত তথ্য ও অর্থের সম্পর্ক বোঝা, সম্পর্কিত ধারণা আলাদা করা, সহজ সারাংশ পূরণ এবং ছোট পরিস্থিতিতে কুরআনের অংশের প্রয়োগে গুরুত্ব দেওয়া হয়েছে। তিন ধরনের প্রশ্নই শিশুদের প্রো স্তরের; প্রশ্নের ধরন কঠিনতার স্তর নয়। দেওয়া সূত্র পড়া অংশ খোঁজার দক্ষতা, সূত্রের নম্বর মুখস্থের দাবি নয়। বিশেষজ্ঞ পর্যায়ের তাফসির বিতর্ক, তাজবিদের জটিল পরিভাষা, অপরিচিত ঐতিহাসিক তথ্য বা আরবি ব্যাকরণ বিশ্লেষণ প্রয়োজন নেই। শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে স্তরের মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও সহিহ বুখারির বর্ণনা মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যা শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; হুবহু অনুবাদ নয়। বর্তমান সময়ের পরিস্থিতিগুলো প্রয়োগ বোঝানোর উদাহরণ, উদ্ধৃত সূত্রের ঘটনা নয়। সূত্রের নম্বরের উদাহরণ প্রদর্শিত সুরা-আয়াতের সূত্র অনুসরণ করে; সব সংস্করণের পৃষ্ঠা এক নির্দিষ্ট করে না। প্রথম ওহির তুলনা আলাকের শুরুর অংশ নিয়ে, পুরো সুরা একসঙ্গে নাজিলের দাবি নয়; ফাতিহার প্রথম অবস্থান কুরআনের বিন্যাস সম্পর্কে। নিজের মতো তাফসির বানানোর বদলে চিন্তা ও অর্থ শেখার সঙ্গে নির্ভরযোগ্য নির্দেশনা আছে। নবী ﷺ-এর ইবন মাসউদের তিলাওয়াত শোনার বর্ণনা শিশুকে নির্দিষ্ট আবেগ দেখাতে বাধ্য করে না। কঠিন তিলাওয়াতের উৎসাহ ইচ্ছাকৃত ভুল, সহায়তা প্রত্যাখ্যান বা পড়া ও কথা বলার প্রয়োজনীয় সহায়তা আটকে রাখা শেখায় না। সম্পর্কিত গুণ দিয়ে আসরের সারাংশ করা হয়েছে, নির্দিষ্ট শিশুর মুক্তি বিচার করতে নয়। কারও গোপন নিয়ত বিচার বা অনিরাপদ ধার-দান দাবি ছাড়া মাউনের শেষে লোক দেখানো ও সামান্য সাহায্য না দেওয়ার সতর্কতা শেখানো হয়েছে। কাউসারে উপহার ও ইবাদত আলোচনা হয়েছে; শিশুকে জবাইয়ের নির্দেশনা বা প্রাপ্তবয়স্কের দায়িত্ব দেওয়া হয়নি। প্রতিষ্ঠিত নদীর ব্যাখ্যা বাদ দেওয়ার মতো করে এর অর্থ সীমিত করা হয়নি। কদরের তুলনা মর্যাদা সম্পর্কে, সময়ের দৈর্ঘ্য নয়; কোনো শিশুকে উপযুক্ত ঘুমের রুটিন নষ্ট করতে বলা হয়নি। শারহে নির্দিষ্ট সমস্যা নির্দিষ্ট সময়ে শেষ হওয়ার নিশ্চয়তা ছাড়া আশ্বাস আছে; চলতে থাকা কষ্টকে আধ্যাত্মিক ব্যর্থতা ধরা হয়নি। ফালাক ভিত্তিহীন হিংসার অভিযোগের কারণ নয়। দোয়া ও গল্প উদ্ধৃত বিষয়েই সীমিত; নির্দিষ্ট তিলাওয়াতসংখ্যা, আপনাআপনি পরীক্ষার ফল, বানানো গল্পের তথ্য বা স্কুলের প্রকল্পকে কাবার সঙ্গে সমান করা দাবি করা হয়নি। প্রতিবন্ধিতা বিচার বা প্রস্তুতি ও উপযুক্ত সহায়তার বিকল্প না করে মুসার দোয়া সহজতা ও বোঝা যায় এমন কথা চাওয়ায় প্রয়োগ করা হয়েছে। বিশেষজ্ঞ পর্যায়ের বিতর্ক মীমাংসা বা অন্য নারী-মেয়েকে ছোট করা ছাড়া মরিয়মের সম্মান স্বীকার করা হয়েছে। গুহাবাসীর প্রশ্নে আল্লাহর শ্রেষ্ঠ জ্ঞান ও না জেনে তর্ক এড়ানো গুরুত্ব পেয়েছে; কোনো মানুষ সংখ্যা জানতে পারে না বলা বা উল্লিখিত সংখ্যাগুলোর বিস্তারিত তাফসির ঠিক করা হয়নি। আদমের তওবা আশার সঙ্গে শেখানো হয়েছে, উত্তরাধিকারসূত্রে দোষ বা শিশুর ওপর বড়দের বোঝা নয়। লুকমানের পরামর্শ সাধারণ আচরণে বিবেচনা নিয়ে; জরুরি ডাক, সবার প্রয়োজন অনুযায়ী যোগাযোগ বা আত্মরক্ষা নিষিদ্ধ করা নয়। ভাষা শেখা ও যাচাই করা ব্যাখ্যা উপকারী শিক্ষামূলক প্রয়োগ; নাজিল হওয়া আরবি পাঠ অনুবাদ ও ব্যাখ্যা থেকে আলাদা থাকে। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_pro_quran_knowledge_001",
+      "conceptId": "kids_quran_reference_numbers",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের সূত্র ২:২৫৫-এ লেখা দুটি সংখ্যা কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "২ নম্বর সুরা ও ২৫৫ নম্বর আয়াত"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি ছাপা কপির ২ নম্বর পৃষ্ঠা ও ২৫৫ নম্বর অনুচ্ছেদ"
+        },
+        {
+          "id": "c",
+          "text": "২৫৫ মিনিটে পড়ার দুটি অধ্যায়"
+        },
+        {
+          "id": "d",
+          "text": "দ্বিতীয় শব্দ ২৫৫ বার পড়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সুরা ও আয়াতের সূত্র একটি অংশ চিহ্নিত করে। এটি সব কপির একই পৃষ্ঠা নম্বর বা পড়ার সময়ের মাপ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_002",
+      "conceptId": "kids_quran_order_and_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের শুরুতে থাকা সুরা ও প্রথম নাজিল হওয়া অংশকে কোন কথাটি ঠিকভাবে আলাদা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফাতিহার অবস্থানই প্রমাণ করে, এটিই প্রথম নাজিল হওয়া অংশ"
+        },
+        {
+          "id": "b",
+          "text": "কুরআন শুরু ফাতিহা দিয়ে; ওহির শুরু আলাকের শুরুর অংশ দিয়ে"
+        },
+        {
+          "id": "c",
+          "text": "প্রথম নাজিল হয়েছিল পুরো সুরা নাস"
+        },
+        {
+          "id": "d",
+          "text": "সুরার ক্রম সবসময় ওহি নাজিলের ক্রমের সঙ্গে মেলে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনের বিন্যাসে ফাতিহা প্রথম। ওহির শুরুর বর্ণনায় আলাকের শুরুর অংশ আছে। তাই প্রথম হওয়ার বিষয় দুটি আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "1-7",
+          "label": "কুরআন ১:১-৭",
+          "url": "https://quran.com/1/1-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_003",
+      "conceptId": "kids_quran_reflect_with_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াত কুরআন নাজিলের সঙ্গে কোন উদ্দেশ্যের সম্পর্ক দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কখনো বোঝার চেষ্টা না করে শুধু ধ্বনি সংগ্রহ করা"
+        },
+        {
+          "id": "b",
+          "text": "পছন্দের যেকোনো ধারণা দিয়ে বার্তা বদলে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আয়াত নিয়ে চিন্তা করা ও শিক্ষা নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "পাতাগুলো শুধু জিনিসপত্র তুলনা করতে ব্যবহার করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি কুরআন নিয়ে ভেবেচিন্তে শেখায় উৎসাহ দেয়। যত্ন নিয়ে পড়া ও জ্ঞানী শিক্ষকের কাছে শেখার পাশাপাশি বার্তা বোঝাও চলতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_004",
+      "conceptId": "kids_quran_prophet_listened",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই বর্ণনায় নবী ﷺ আবদুল্লাহ ইবন মাসউদকে কী করতে বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবাইকে কুরআন শোনা থেকে চিরদিন থামাতে"
+        },
+        {
+          "id": "b",
+          "text": "কুরআন তিলাওয়াতের বদলে বানানো গল্প বলতে"
+        },
+        {
+          "id": "c",
+          "text": "প্রমাণ করতে, শুধু নতুন শিক্ষার্থীরাই শুনে উপকৃত হয়"
+        },
+        {
+          "id": "d",
+          "text": "তাঁকে শোনানোর জন্য কুরআন তিলাওয়াত করতে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ ইবন মাসউদের তিলাওয়াত শুনেছিলেন। পাঠক বা শিক্ষক হলেই কুরআন শোনা নিজের মর্যাদার নিচে হয়ে যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5050",
+          "label": "সহিহ বুখারি ৫০৫০",
+          "url": "https://sunnah.com/bukhari:5050"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_005",
+      "conceptId": "kids_quran_effort_not_avoid_learning",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কষ্ট হলেও তিলাওয়াত চালিয়ে যাওয়া ব্যক্তিকে হাদিসটি কী প্রতিশ্রুতি দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুটি প্রতিদান"
+        },
+        {
+          "id": "b",
+          "text": "সব কষ্ট দূর না হওয়া পর্যন্ত কোনো প্রতিদান নেই"
+        },
+        {
+          "id": "c",
+          "text": "সাবলীল পাঠকদের নিয়ে হাসাহাসির অনুমতি"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি উপকারী পাঠ প্রত্যাখ্যানের কারণ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনাটি কষ্টের মধ্যেও আন্তরিক চেষ্টাকে সম্মান দেয়। সংগ্রামরত শিক্ষার্থীকে উন্নতি এড়াতে না বলে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "সহিহ বুখারি ৪৯৩৭",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_006",
+      "conceptId": "kids_quran_asr_four_qualities",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা আসরের শেষ আয়াতে কোন চার গুণ একসঙ্গে আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্পদ, খ্যাতি, উচ্চতা ও শক্তি"
+        },
+        {
+          "id": "b",
+          "text": "ঈমান, সৎকাজ, সত্যের উপদেশ ও ধৈর্যের উপদেশ"
+        },
+        {
+          "id": "c",
+          "text": "গতি, পুরস্কার, জনপ্রিয়তা ও ফ্যাশনের পোশাক"
+        },
+        {
+          "id": "d",
+          "text": "সৎকাজ, বড়াই, মিথ্যা ও অধৈর্য"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সুরা আসরে ঈমান ও আমলের সঙ্গে পরস্পরকে সত্য ও ধৈর্যে উৎসাহ দেওয়া আছে। এর বার্তা শুধু একটি ভালো অভ্যাসে সীমিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "কুরআন ১০৩:১-৩",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_007",
+      "conceptId": "kids_quran_maun_sincerity_aid",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা মাউনের শেষে কোন দুটি দোষের সমালোচনা করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিকভাবে শেখা ও উপযুক্তভাবে ভাগ করা"
+        },
+        {
+          "id": "b",
+          "text": "মন দিয়ে শোনা ও ধৈর্য নিয়ে অনুশীলন"
+        },
+        {
+          "id": "c",
+          "text": "লোক দেখানো ও সাধারণ সাহায্য আটকে রাখা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর প্রতি কৃতজ্ঞতা ও অন্যদের সম্মান"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতগুলো লোক দেখানো ও সামান্য সাহায্যও না দেওয়ার সমালোচনা করে। ধর্মীয় বাহ্যিকতা আন্তরিকতা ও অন্যের যত্নের বিকল্প হবে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "6-7",
+          "label": "কুরআন ১০৭:৬-৭",
+          "url": "https://quran.com/al-maun/6-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_008",
+      "conceptId": "kids_quran_kawthar_worship_response",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "প্রচুর কল্যাণের উল্লেখের পর সুরা কাউসার নবী ﷺ-কে কী করতে শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বড়াই করতে যে তাঁর আর আল্লাহকে দরকার নেই"
+        },
+        {
+          "id": "b",
+          "text": "যে সবচেয়ে বেশি প্রশংসা করে তার ইবাদত করতে"
+        },
+        {
+          "id": "c",
+          "text": "নিয়ামতকে ইবাদত বন্ধ করার কারণ বানাতে"
+        },
+        {
+          "id": "d",
+          "text": "নিজ রবের জন্য নামাজ ও কুরবানি করতে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সুরাটি বড় উপহারের সঙ্গে আল্লাহর উদ্দেশে ইবাদত যুক্ত করে। নিয়ামত নিজেকে বড় ভাবার বদলে কৃতজ্ঞ আচরণের আহ্বান দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 108,
+          "ayahs": "1-2",
+          "label": "কুরআন ১০৮:১-২",
+          "url": "https://quran.com/108/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_009",
+      "conceptId": "kids_quran_qadr_thousand_months",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "লাইলাতুল কদর সম্পর্কে সুরা কদর কোন তুলনা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এটি এক হাজার মাসের চেয়ে উত্তম"
+        },
+        {
+          "id": "b",
+          "text": "এটি ঠিক একটি সাধারণ ঘণ্টার সমান"
+        },
+        {
+          "id": "c",
+          "text": "যেকোনো সাধারণ সন্ধ্যার চেয়ে এর মূল্য কম"
+        },
+        {
+          "id": "d",
+          "text": "এটি হাজার মাস দীর্ঘ একটি রাত"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি রাতের বড় মর্যাদা বর্ণনা করে। হাজার মাসের সঙ্গে এর উৎকৃষ্টতার তুলনা, সময়ের দৈর্ঘ্যের নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "কুরআন ৯৭:৩",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_010",
+      "conceptId": "kids_quran_sharh_hardship_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা শারহের এই আয়াতগুলোতে কোন আশ্বাস বারবার আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি কঠিন কাজ অসম্ভব"
+        },
+        {
+          "id": "b",
+          "text": "কষ্টের সঙ্গে স্বস্তি আসে"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্য কখনো নেওয়া যাবে না"
+        },
+        {
+          "id": "d",
+          "text": "কষ্ট লাগাই ব্যক্তির মূল্যহীনতার প্রমাণ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতগুলো কষ্টের মধ্যেও আশ্বাস দেয়। প্রতিটি নির্দিষ্ট সমস্যা সঙ্গে সঙ্গে দূর হওয়ার প্রতিশ্রুতি ছাড়াই আশায় উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "কুরআন ৯৪:৫-৬",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_011",
+      "conceptId": "kids_quran_falaq_envy",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা ফালাকের শেষে কার ক্ষতিকর হিংসা থেকে আশ্রয় চাই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিক প্রশংসা করে এমন যে কারও"
+        },
+        {
+          "id": "b",
+          "text": "আমাদের মঙ্গল চায় এমন প্রতিটি ব্যক্তির"
+        },
+        {
+          "id": "c",
+          "text": "হিংসুক যখন হিংসা করে"
+        },
+        {
+          "id": "d",
+          "text": "শিখতে সাহায্য করে এমন প্রতিটি বন্ধুর"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি হিংসার অনিষ্ট থেকে আশ্রয় চায়। কোনো নিয়ামত খেয়াল করলেই সবাইকে সন্দেহ করতে বলে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "5",
+          "label": "কুরআন ১১৩:৫",
+          "url": "https://quran.com/113/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_012",
+      "conceptId": "kids_quran_yunus_humble_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্ধকারে ইউনুসের ডাকের সঙ্গে কোন অর্থ মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইউনুস দাবি করেন, আল্লাহর সাহায্য কখনো তাঁর দরকার নেই"
+        },
+        {
+          "id": "b",
+          "text": "ইউনুস মানুষকে তাঁর ইবাদত করতে বলেন"
+        },
+        {
+          "id": "c",
+          "text": "ইউনুস বলেন, অহংকারই রহমত চাওয়ার পথ"
+        },
+        {
+          "id": "d",
+          "text": "একমাত্র আল্লাহ ইবাদতের যোগ্য; ইউনুস নিজের ভুল স্বীকার করেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তাঁর ডাকে আল্লাহর ইবাদত, তাঁর পবিত্রতা ঘোষণা ও নিজের অন্যায় স্বীকার একসঙ্গে আছে। সবাইকে দোষ দেওয়ার বদলে এটি বিনয় শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87",
+          "label": "কুরআন ২১:৮৭",
+          "url": "https://quran.com/21/87"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_013",
+      "conceptId": "kids_quran_musa_clear_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মানুষ যেন কী বুঝতে পারে, সে জন্য মুসা আল্লাহর সাহায্য চেয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর কথা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু তাঁর পোশাকের পছন্দ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু তাঁর জিনিসপত্রের আকার"
+        },
+        {
+          "id": "d",
+          "text": "এমন গোপন কথা যা কারও শোনা অনুমোদিত ছিল না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মানুষ যেন তাঁর কথা বোঝে, সে জন্য মুসা প্রশস্ত হৃদয়, কাজের সহজতা ও কথা বলায় সাহায্য চেয়েছিলেন। দোয়াটি আল্লাহর ওপর ভরসা প্রকাশ করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "কুরআন ২০:২৫-২৮",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_014",
+      "conceptId": "kids_quran_ibrahim_ismail_acceptance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কাবাঘরের ভিত্তি তোলার সময় ইব্রাহিম ও ইসমাইল আল্লাহর কাছে কী চেয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁদের তাঁর যত্নের প্রয়োজন থেকে মুক্ত করতে"
+        },
+        {
+          "id": "b",
+          "text": "তাঁদের কাজ কবুল করতে"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের হাততালিকে আন্তরিকতার বিকল্প করতে"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে নির্মাতাদের ইবাদত করাতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি তাঁদের কাজের সঙ্গে আল্লাহর কাছে কবুলের অনুরোধ যুক্ত করে। ভালো কাজ করার সঙ্গে বিনয় ও দোয়াও চলতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "কুরআন ২:১২৭",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_015",
+      "conceptId": "kids_quran_sulayman_grateful_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুলায়মানের দোয়ায় আল্লাহর নিয়ামতের কৃতজ্ঞতার সঙ্গে কী আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বড়াই করা যে নিয়ামত প্রতিটি সিদ্ধান্ত সঠিক করে"
+        },
+        {
+          "id": "b",
+          "text": "সব দায়িত্ব উপেক্ষা করা"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহকে সন্তুষ্ট করে এমন সৎকাজ করা"
+        },
+        {
+          "id": "d",
+          "text": "কাছের প্রতিটি মানুষের মুগ্ধতা দাবি করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সুলায়মানের দোয়ায় কৃতজ্ঞতা ও সৎকাজ একসঙ্গে আছে। কৃতজ্ঞতা শুধু কথায় নয়, কাজেও প্রভাব ফেলতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "কুরআন ২৭:১৯",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_016",
+      "conceptId": "kids_quran_maryam_honored",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াতে ফেরেশতারা মরিয়মকে কী বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর মূল্য পুরোপুরি সম্পদের ওপর নির্ভর করে"
+        },
+        {
+          "id": "b",
+          "text": "মানুষকে তাঁর ইবাদত করানো উচিত"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ কোনো নারীকে কখনো সম্মান দেন না"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ তাঁকে মনোনীত ও পবিত্র করেছেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি মরিয়মকে সম্মানের সঙ্গে বর্ণনা করে। কুরআনে তাঁর অবস্থান শেখা নারী বা মেয়েদের তুচ্ছ করার বদলে সম্মানে উৎসাহ দেবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "42",
+          "label": "কুরআন ৩:৪২",
+          "url": "https://quran.com/3/42"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_017",
+      "conceptId": "kids_quran_kahf_sure_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "গুহাবাসীদের সংখ্যা নিয়ে আলোচনায় আয়াতটি কার শ্রেষ্ঠ জ্ঞানে গুরুত্ব দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর জ্ঞান"
+        },
+        {
+          "id": "b",
+          "text": "যে সবচেয়ে জোরে অনুমান বলে"
+        },
+        {
+          "id": "c",
+          "text": "যে সবচেয়ে নাটকীয় তথ্য বানায়"
+        },
+        {
+          "id": "d",
+          "text": "যে সবচেয়ে বেশি দর্শক টানে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি বলে, রবই তাঁদের সংখ্যা সবচেয়ে ভালো জানেন এবং না জেনে তর্কে নিরুৎসাহিত করে। কুরআনের গল্প আলোচনায় বিনয় জরুরি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "কুরআন ১৮:২২",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_018",
+      "conceptId": "kids_quran_adam_repentance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াত অনুযায়ী আল্লাহ আদমের কী কবুল করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোনো দিকনির্দেশনা না লাগার দাবি"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর তওবা"
+        },
+        {
+          "id": "c",
+          "text": "কোনো পরিবর্তন দরকার নেই—এই দাবি"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর অন্যায়ের দায় অন্যদের দেওয়ার অনুরোধ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি আদমের তওবা কবুলের কথা বলে এবং আল্লাহকে রহমতশীল বলে। আন্তরিকভাবে আল্লাহর দিকে ফেরা সম্পর্কে গল্পটি আশা দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "37",
+          "label": "কুরআন ২:৩৭",
+          "url": "https://quran.com/2/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_019",
+      "conceptId": "kids_quran_luqman_voice",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সাধারণ কথাবার্তা সম্পর্কে লুকমানের উপদেশে কোন পরামর্শ আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবসময় অন্যের ওপর চিৎকার করা"
+        },
+        {
+          "id": "b",
+          "text": "শ্রেষ্ঠত্ব প্রমাণে গলার জোর ব্যবহার করা"
+        },
+        {
+          "id": "c",
+          "text": "অকারণে জোরে না বলে কণ্ঠস্বর নিচু রাখা"
+        },
+        {
+          "id": "d",
+          "text": "ধরে নেওয়া, আলাপে বিবেচনার গুরুত্ব নেই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি সংযম ও কণ্ঠস্বর নিচু রাখতে শেখায়। সাধারণ আলাপে প্রয়োগ করলে জোরে বলার প্রতিযোগিতার বদলে বিবেচনায় উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "কুরআন ৩১:১৯",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_020",
+      "conceptId": "kids_quran_arabic_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন আরবিতে নাজিল হওয়ার সঙ্গে কোন উদ্দেশ্য উল্লেখ আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেন কেউ কখনো এর অর্থ জানতে না চায়"
+        },
+        {
+          "id": "b",
+          "text": "যেন শুধু ভাষার দক্ষতা ব্যক্তির মূল্য প্রমাণ করে"
+        },
+        {
+          "id": "c",
+          "text": "যেন এর বার্তা শেখা এড়ানো হয়"
+        },
+        {
+          "id": "d",
+          "text": "যেন মানুষ বুঝতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি আরবি কুরআনের সঙ্গে বোঝার সম্পর্ক দেখায়। শিশুর শেখায় পড়ার দক্ষতা ও অর্থ শেখা একে অন্যকে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_021",
+      "conceptId": "kids_quran_reference_numbers",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "২:২৫৫ মানে কি প্রতিটি কুরআন কপির ২৫৫ নম্বর পাতায় আয়াতুল কুরসি থাকতেই হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, ২৫৫ হলো ২ নম্বর সুরার আয়াতের নম্বর"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, এটি প্রতিটি সংস্করণের পৃষ্ঠা নির্দিষ্ট করে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, এটি বইয়ের মলাটের পাতা গোনে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ কুরআনের সূত্র কখনো আয়াত চিহ্নিত করে না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সূত্রটি সুরা ও আয়াত চিহ্নিত করে। পাতার বিন্যাস ভিন্ন হতে পারে, তাই সুরা ও আয়াতের নম্বর একই অংশ খুঁজতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_022",
+      "conceptId": "kids_quran_order_and_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনের সুরার তালিকায় প্রথম হলেই কি ফাতিহা প্রথম নাজিল হওয়া অংশ হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রথম ছাপা সুরাই নাজিলের ক্রম প্রমাণ করে"
+        },
+        {
+          "id": "b",
+          "text": "না, বিন্যাস ও নাজিলের ক্রম আলাদা বিষয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, প্রতিটি সুরা বর্তমান সংখ্যার ক্রমে নাজিল হয়েছিল"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ ফাতিহা কুরআনের অংশ নয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বিন্যাসের প্রথম সুরা ও ওহির প্রথম অংশ আলাদা তথ্য। প্রথম ওহির বর্ণনা আলাকের শুরুর অংশের কথা বলে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "1-7",
+          "label": "কুরআন ১:১-৭",
+          "url": "https://quran.com/1/1-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_023",
+      "conceptId": "kids_quran_reflect_with_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন নিয়ে চিন্তা মানে কি পছন্দমতো যেকোনো অর্থ বানানো যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি পছন্দের ধারণাই আয়াতের অর্থ হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, চিন্তা মূল কথাগুলো পুরোপুরি বদলে দেয়"
+        },
+        {
+          "id": "c",
+          "text": "না, নির্ভরযোগ্য ব্যাখ্যার সাহায্যে বুঝতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আয়াতটি বার্তা নিয়ে ভাবতে নিষেধ করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি চিন্তায় উৎসাহ দেয়, অর্থ বানাতে নয়। জ্ঞানী শিক্ষকের কাছে যত্ন নিয়ে শেখা অংশটির শিক্ষা নিয়ে ভাবতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_024",
+      "conceptId": "kids_quran_prophet_listened",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "তিলাওয়াত জানা মানে কি অন্যের কুরআন তিলাওয়াত শোনা নিজের মর্যাদার নিচে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু কিছু জানে না এমন মানুষদের শোনা উচিত"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শোনা সবসময় শেখার বাধা"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ দক্ষ পাঠকদের কখনো শব্দ করে তিলাওয়াত করা যাবে না"
+        },
+        {
+          "id": "d",
+          "text": "না, নবী ﷺ নিজেই অন্য পাঠকের তিলাওয়াত শুনেছেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনাটি নবী ﷺ-এর ইবন মাসউদের তিলাওয়াত শোনা দেখায়। কুরআন শেখায় শোনা ও পড়া দুটোই থাকতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5050",
+          "label": "সহিহ বুখারি ৫০৫০",
+          "url": "https://sunnah.com/bukhari:5050"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_025",
+      "conceptId": "kids_quran_effort_not_avoid_learning",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কষ্টের প্রতিদান মানে কি শিক্ষার্থীর ইচ্ছা করে ভুল রাখা বা শিক্ষা প্রত্যাখ্যান করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, হাদিসটি উন্নতি এড়াতে নয়, চেষ্টা করতে উৎসাহ দেয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, উপকারী সংশোধন প্রতিটি ভালো বিষয় সরিয়ে দেয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, ইচ্ছা করে ভুল করাই শেখার লক্ষ্য"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ কষ্ট পাওয়া শিক্ষার্থীর আবার চেষ্টা করা উচিত নয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তিলাওয়াত কঠিন লাগে এমন ব্যক্তিকে হাদিসটি সাহস দেয়। শিক্ষা প্রত্যাখ্যান বা ইচ্ছা করে শেখা কঠিন করার কারণ এটি নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "সহিহ বুখারি ৪৯৩৭",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_026",
+      "conceptId": "kids_quran_asr_four_qualities",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সুরা আসর কি কাজ ও উৎসাহ বাদ দিয়ে শুধু ঈমানের উল্লেখ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, পরস্পরকে সাহায্য এর বার্তায় নেই"
+        },
+        {
+          "id": "b",
+          "text": "না, এতে ঈমান, সৎকাজ, সত্য ও ধৈর্য একসঙ্গে আছে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সুরাটিতে আচরণ কখনো গুরুত্বপূর্ণ নয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ এটি সত্যের বদলে জনপ্রিয়তা শেখায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সুরা আসরে শুধু আলাদা একটি অভ্যাস নয়, সম্পর্কিত গুণগুলো আছে। ভালো কাজ ও পরস্পরকে উৎসাহ দেওয়া দুটিই আছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "কুরআন ১০৩:১-৩",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_027",
+      "conceptId": "kids_quran_maun_sincerity_aid",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাধারণ সাহায্য না দিয়ে লোক দেখানোর প্রশংসা কি সুরা মাউনের শেষ আয়াতগুলো করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, লোকের মনোযোগ সব দয়া প্রত্যাখ্যানের অজুহাত"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, ধর্মীয় বাহ্যিকতা আন্তরিকতাকে অপ্রয়োজনীয় করে"
+        },
+        {
+          "id": "c",
+          "text": "না, এগুলো সেই মনোভাবের সমালোচনা করে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সাহায্যের প্রতিটি সাধারণ কাজ নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "অংশটি আন্তরিক যত্ন ছাড়া বাহ্যিক প্রদর্শন থেকে সতর্ক করে। সাধারণ উপযুক্ত সহায়তাকে গুরুত্বহীন মনে করা উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "6-7",
+          "label": "কুরআন ১০৭:৬-৭",
+          "url": "https://quran.com/al-maun/6-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_028",
+      "conceptId": "kids_quran_kawthar_worship_response",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সুরা কাউসার কি আল্লাহর উপহারকে তাঁর ইবাদত বন্ধ করার কারণ হিসেবে দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, নিয়ামত কৃতজ্ঞতার সব কারণ সরিয়ে দেয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, কল্যাণ পাওয়া মানে রবের প্রয়োজন নেই"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ নিয়ামত কখনো স্বীকার করা যাবে না"
+        },
+        {
+          "id": "d",
+          "text": "না, এটি তাঁর উপহারের সঙ্গে তাঁর ইবাদত যুক্ত করে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সুরাটি উপহার থেকে আল্লাহর উদ্দেশে ইবাদতের কথা বলে। এই সম্পর্ক আল্লাহকে আর প্রয়োজন নেই ভাবার বদলে কৃতজ্ঞতায় উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 108,
+          "ayahs": "1-2",
+          "label": "কুরআন ১০৮:১-২",
+          "url": "https://quran.com/108/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_029",
+      "conceptId": "kids_quran_qadr_thousand_months",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাজার মাসের চেয়ে উত্তম মানে কি লাইলাতুল কদর সত্যিই হাজার মাস ধরে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, তুলনাটি এর মর্যাদা সম্পর্কে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, রাতটি হাজার হাজার সাধারণ দিন চলতে থাকে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কুরআন বলে এর পরে সকাল হয় না"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আয়াতটি রাতকে বিশেষ মূল্য দেয় না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি রাতটির মর্যাদার প্রশংসা করে। এটি ঘড়ির হিসাবে রাত হাজার মাস দীর্ঘ হওয়ার বক্তব্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "কুরআন ৯৭:৩",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_030",
+      "conceptId": "kids_quran_sharh_hardship_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "স্বস্তির আশ্বাস কি প্রতিটি কঠিন সমস্যা দূর হওয়ার সময়সীমা ঠিক করে দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি সমস্যা পরের পাঠের আগে শেষ হতেই হবে"
+        },
+        {
+          "id": "b",
+          "text": "না, ওই সময়সীমা না বলেই এটি আশা দেয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কষ্ট চলা কারও প্রত্যাখ্যাত হওয়ার প্রমাণ"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সাহায্য নিলে আশ্বাস বাতিল হবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতগুলো কষ্ট ও স্বস্তি সম্পর্কে আশ্বস্ত করে। এগুলোকে বানানো সময়সূচি বা এখনো কষ্টে থাকা কারও বিরুদ্ধে বিচার বানানো উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "কুরআন ৯৪:৫-৬",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_031",
+      "conceptId": "kids_quran_falaq_envy",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হিংসা সম্পর্কে ফালাকের সতর্কতা কি প্রতিটি প্রশংসার পেছনে ক্ষতি প্রমাণ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি সুন্দর কথা বিপজ্জনক হিংসার প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রতিটি বন্ধু অবশ্যই আমাদের ক্ষতি চায়"
+        },
+        {
+          "id": "c",
+          "text": "না, ভিত্তি ছাড়া মানুষকে অভিযুক্ত করা উচিত নয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আয়াতটি ক্ষতিকর হিংসার প্রশংসা করতে বলে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হিংসা থেকে সুরক্ষা চাওয়া আর সবাইকে হিংসুক বলা আলাদা। আন্তরিক প্রশংসা ক্ষতিকর উদ্দেশ্যের প্রমাণ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "5",
+          "label": "কুরআন ১১৩:৫",
+          "url": "https://quran.com/113/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_032",
+      "conceptId": "kids_quran_yunus_humble_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইউনুসের ডাকে কি তিনি নিজের ভুল স্বীকার অপ্রয়োজনীয় এমন ভান করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, তিনি বরং অন্য সবাইকে দোষ দেন"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, ডাকটিতে দায়িত্ব প্রত্যাখ্যানের প্রশংসা আছে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ ভুল স্বীকার মানে আল্লাহকে ছেড়ে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "না, তিনি বিনয়ের সঙ্গে নিজের অন্যায় স্বীকার করেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দোয়াটিতে আল্লাহর পবিত্রতা ঘোষণার সঙ্গে অন্যায় স্বীকার আছে। বিনয় ও তাঁর দিকে ফেরা একসঙ্গে থাকে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87",
+          "label": "কুরআন ২১:৮৭",
+          "url": "https://quran.com/21/87"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_033",
+      "conceptId": "kids_quran_musa_clear_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কথা সম্পর্কে মুসার অনুরোধের উদ্দেশ্য কি অন্যেরা যেন তাঁকে না বোঝে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, তিনি চেয়েছেন তাঁরা তাঁর কথা বুঝুক"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, বিভ্রান্তিই দোয়ার উদ্দেশ্য ছিল"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, অংশটিতে স্পষ্ট যোগাযোগ প্রত্যাখ্যান করা হয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আয়াতগুলোতে কথা সম্পর্কে কোনো অনুরোধ নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "অংশটি কথা বলায় সাহায্যের সঙ্গে বোঝার সম্পর্ক দেখায়। স্পষ্টতা চাওয়া আর দর্শককে মুগ্ধ বা বিভ্রান্ত করার চেষ্টা আলাদা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "কুরআন ২০:২৫-২৮",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_034",
+      "conceptId": "kids_quran_ibrahim_ismail_acceptance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহকে ভালো কাজ কবুল করতে বলা মানে কি শুধু মানুষের হাততালি যথেষ্ট?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, হাততালি আন্তরিকতার সব প্রয়োজনের বিকল্প"
+        },
+        {
+          "id": "b",
+          "text": "না, আয়াতটি আল্লাহর কাছে কবুল চাওয়াকে গুরুত্ব দেয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, নির্মাতারা নিজেদের ইবাদত চেয়েছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ ভালো কাজ করলে দোয়া অপ্রয়োজনীয় হয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইব্রাহিম ও ইসমাইল কাজ করেছেন এবং কবুলের দোয়া করেছেন। মনোযোগকে লক্ষ্য না বানিয়ে আয়াতটি উপকারী কাজ ও বিনয়ী দোয়া একত্র করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "কুরআন ২:১২৭",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_035",
+      "conceptId": "kids_quran_sulayman_grateful_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সুলায়মানের দোয়া কি ভালো কাজ উপেক্ষা করে কৃতজ্ঞতাকে শুধু কথায় সীমিত রাখে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, দোয়াটিতে আচরণের কথা নেই"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, নিয়ামত প্রতিটি ক্ষতিকর সিদ্ধান্তের অজুহাত"
+        },
+        {
+          "id": "c",
+          "text": "না, তিনি আল্লাহর পছন্দের কাজ করার দোয়াও করেন"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ দোয়াটি আল্লাহর প্রতি কৃতজ্ঞতা প্রত্যাখ্যান করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তাঁর দোয়ায় নিয়ামতের কৃতজ্ঞতার সঙ্গে ভালো কাজ আছে। কৃতজ্ঞতা কথার পাশাপাশি আচরণেও পথ দেখাতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "কুরআন ২৭:১৯",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_036",
+      "conceptId": "kids_quran_maryam_honored",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "এই আয়াত কি মরিয়মকে আল্লাহর কাছে অসম্মানিত হিসেবে দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, আয়াত বলে শুধু সম্পদ তাঁর মূল্য ঠিক করে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, এটি প্রতিটি নারীকে অযোগ্য বলে তুচ্ছ করে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ এটি মানুষকে তাঁর ইবাদত করতে বলে"
+        },
+        {
+          "id": "d",
+          "text": "না, এতে আল্লাহর তাঁকে মনোনীত ও পবিত্র করার কথা আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ফেরেশতাদের বার্তা মরিয়মকে সম্মান দেয়। তাঁকে সম্মান মানে তাঁর ইবাদত বা অন্যের মর্যাদা তুচ্ছ করা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "42",
+          "label": "কুরআন ৩:৪২",
+          "url": "https://quran.com/3/42"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_037",
+      "conceptId": "kids_quran_kahf_sure_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গুহাবাসীদের গল্প কি না জেনে আত্মবিশ্বাসের সঙ্গে তর্কে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, আয়াতটি এমন তর্কে নিরুৎসাহিত করে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সবচেয়ে জোরে বলা ব্যক্তি ইতিহাসের প্রতিটি তথ্য ঠিক করে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, অনুমান নির্ভরযোগ্য জ্ঞান তৈরি করে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ যে কেউ কল্পনা করলেই প্রতিটি তথ্য যাচাই হয়ে যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি রবের শ্রেষ্ঠ জ্ঞানে গুরুত্ব দেয় এবং জানা বিষয়েই আলোচনা সীমিত রাখে। বানানো তথ্যকে কিতাবের ব্যাখ্যার উপায় বানায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "কুরআন ১৮:২২",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_038",
+      "conceptId": "kids_quran_adam_repentance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আদমের আয়াতটি কি আন্তরিক তওবাকে পুরোপুরি আশাহীন বলে দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, আয়াতটি রহমতের সব সম্ভাবনা অস্বীকার করে"
+        },
+        {
+          "id": "b",
+          "text": "না, এতে আল্লাহর তাঁর তওবা কবুলের কথা আছে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, আল্লাহর দিকে ফেরা অর্থহীন বলা হয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ কারও কখনো উন্নতি দরকার নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আদমের তওবা আল্লাহর কবুল করা আয়াতের বার্তার অংশ। অন্যায়কে গুরুত্বহীন না করেই এটি আশায় উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "37",
+          "label": "কুরআন ২:৩৭",
+          "url": "https://quran.com/2/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_039",
+      "conceptId": "kids_quran_luqman_voice",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাধারণ আলাপে কণ্ঠস্বর নিচু রাখার পরামর্শ কি বিপদে সাহায্য চেয়ে ডাকা নিষিদ্ধ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, নিরাপত্তার জন্য শিশুর কখনো গলা তোলা যাবে না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অন্যরা শুনতে পায় এমনভাবে কথা বলা সবসময় খারাপ আদব"
+        },
+        {
+          "id": "c",
+          "text": "না, জরুরি সাহায্যের ডাক এই শিক্ষা দিয়ে থামানো উচিত নয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ কথা বলায় বিবেচনা কখনো গুরুত্বপূর্ণ নয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "পরামর্শটি সাধারণ আচরণে সংযমে উৎসাহ দেয়। দরকার হলে শিশুরা স্পষ্টভাবে সাহায্য চাইতে পারে; নিরাপত্তা চুপ থাকার প্রতিযোগিতা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "কুরআন ৩১:১৯",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_040",
+      "conceptId": "kids_quran_arabic_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন আরবি হওয়া মানে কি এর অর্থ শেখা অপ্রয়োজনীয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, কুরআন শেখায় অর্থের স্থান নেই"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, বোঝার প্রতিটি চেষ্টা থামানো উচিত"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ প্রতিটি অনুবাদ মূল আরবি পাঠ হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "না, আয়াতটিতেই বোঝার কথা আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি আরবিতে ওহির সঙ্গে বোঝার সম্পর্ক দেখায়। আরবি কুরআন থেকে আলাদা থেকেই নির্ভরযোগ্য ব্যাখ্যা শিক্ষার্থীকে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_041",
+      "conceptId": "kids_quran_reference_numbers",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক ২:২৫৫ সূত্র দিলেন। অ্যাপে কোনটি বাছলে ঠিক অংশ পাওয়া যাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুরা বাকারা, আয়াত ২৫৫"
+        },
+        {
+          "id": "b",
+          "text": "সংস্করণ যা-ই হোক ২৫৫ নম্বর পৃষ্ঠা"
+        },
+        {
+          "id": "c",
+          "text": "সুরা ২৫৫, আয়াত ২"
+        },
+        {
+          "id": "d",
+          "text": "২৫৫ মিনিটে ঠিক করা পড়ার টাইমার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "প্রথম সংখ্যা সুরা ও দ্বিতীয়টি আয়াত চিহ্নিত করে। পাতার বিন্যাস ভিন্ন হলেও এটি অংশ খুঁজতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_042",
+      "conceptId": "kids_quran_order_and_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুরআনের শুরুতে আছে বলে পোস্টারে ফাতিহাকে প্রথম নাজিল হওয়া অংশ বলা হয়েছে। কী সংশোধন দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুরার তালিকাই সংখ্যার ক্রমে সব ওহি আসার প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "আলাকের শুরুর অংশে ওহির শুরু; বিন্যাসের শুরু ফাতিহা দিয়ে"
+        },
+        {
+          "id": "c",
+          "text": "ফাতিহা কুরআন থেকে বাদ দেওয়া উচিত"
+        },
+        {
+          "id": "d",
+          "text": "প্রথম ওহি প্রতিটি সংস্করণের শেষ পাতায় ছিল"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "পোস্টারে বিন্যাস ও ওহির ক্রম গুলিয়ে ফেলা হয়েছে। একই দাবি না বানিয়েই তথ্য দুটি শেখা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "1-7",
+          "label": "কুরআন ১:১-৭",
+          "url": "https://quran.com/1/1-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_043",
+      "conceptId": "kids_quran_reflect_with_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আয়াত পড়ার পর দায়িত্বশীলভাবে তা নিয়ে ভাবতে চাও। পরের কোন পদক্ষেপ সাহায্য করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রোমাঞ্চকর লাগে এমন যেকোনো অর্থ দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "কথাগুলো উপেক্ষা করে ভিন্ন বার্তা বানানো"
+        },
+        {
+          "id": "c",
+          "text": "নির্ভরযোগ্য ব্যাখ্যা ও শিক্ষকের সাহায্যে অর্থ শেখা"
+        },
+        {
+          "id": "d",
+          "text": "সিদ্ধান্ত নেওয়া, অর্থ জানতে চাওয়া সবসময় ভুল"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "অংশটি কী বলে তা বোঝা দিয়ে চিন্তা শুরু হতে পারে। জ্ঞানী শিক্ষক অর্থের সঙ্গে উপযুক্ত শিক্ষার সম্পর্ক দেখাতে সাহায্য করেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_044",
+      "conceptId": "kids_quran_prophet_listened",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দক্ষ সহপাঠী বলল, অন্য পাঠকের তিলাওয়াত শুধু নতুনদের জন্য। কোন বর্ণনা এটি সংশোধনে সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নবী ﷺ প্রতিটি দক্ষ ব্যক্তিকে শুনতে নিষেধ করেছেন"
+        },
+        {
+          "id": "b",
+          "text": "শোনার মূল্য নেই বলে ইবন মাসউদ অস্বীকার করেছেন"
+        },
+        {
+          "id": "c",
+          "text": "বর্ণনাটি বলে, পাঠক কখনো অন্য পাঠককে শুনতে পারবেন না"
+        },
+        {
+          "id": "d",
+          "text": "নবী ﷺ ইবন মাসউদকে তাঁকে তিলাওয়াত শোনাতে বলেছেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনাটি শোনার মূল্যবান স্থান দেখায়। দক্ষতা এমন অহংকার হবে না, যা কুরআন তিলাওয়াত শোনা বন্ধ করে দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5050",
+          "label": "সহিহ বুখারি ৫০৫০",
+          "url": "https://sunnah.com/bukhari:5050"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_045",
+      "conceptId": "kids_quran_effort_not_avoid_learning",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষার্থী ভাবে, সাহায্য নিলে কষ্টের তিলাওয়াতের প্রতিদান নষ্ট হবে। আরও ভালো বোঝাপড়া কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চেষ্টা চালিয়ে যাওয়া ও উপকারী শিক্ষা নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "ইচ্ছা করে প্রতিটি ভুল রেখে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিদান বাঁচাতে প্রতিটি শিক্ষক প্রত্যাখ্যান করা"
+        },
+        {
+          "id": "d",
+          "text": "উন্নতি শুরু হলেই পড়া আরও কঠিন করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি কষ্ট করা শিক্ষার্থীর চেষ্টায় উৎসাহ দেয়। উপকারী শিক্ষা ও উন্নতি আন্তরিক শেখার সঙ্গে মেলে, তার বিরোধী নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "সহিহ বুখারি ৪৯৩৭",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_046",
+      "conceptId": "kids_quran_asr_four_qualities",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আসরের পোস্টারে ঈমান, সৎকাজ ও সত্যের উপদেশ আছে। কোন গুণে তা পূর্ণ হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে বেশি প্রশংসা সংগ্রহ"
+        },
+        {
+          "id": "b",
+          "text": "ধৈর্যের উপদেশ"
+        },
+        {
+          "id": "c",
+          "text": "সবসময় তর্কে জেতা"
+        },
+        {
+          "id": "d",
+          "text": "শিক্ষকের কাছে প্রতিটি ভুল লুকানো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "শেষ আয়াতে সত্যের পাশাপাশি পরস্পরকে ধৈর্যে উৎসাহ দেওয়া আছে। পোস্টারে সম্পর্কিত চার গুণই থাকা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "কুরআন ১০৩:১-৩",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_047",
+      "conceptId": "kids_quran_maun_sincerity_aid",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মাউন শেখার পর শিশু ইবাদতের প্রশংসা চায়, কিন্তু সব সাধারণ দয়াকে তুচ্ছ করে। কোন কথাটি মনে করানো উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লোক দেখালে প্রতিটি নির্দয় সিদ্ধান্ত গ্রহণযোগ্য হয়"
+        },
+        {
+          "id": "b",
+          "text": "শুধু নজরে পড়াই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "c",
+          "text": "বাহ্যিকতার পাশাপাশি আন্তরিকতা ও উপযুক্ত সাহায্যও গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "অংশটি সব নিরীহ সাহায্য প্রত্যাখ্যানের প্রশংসা করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শেষাংশ লোক দেখানো ও সাধারণ সাহায্য আটকে রাখা থেকে সতর্ক করে। বাহ্যিকতাকে যথেষ্ট না ভেবে অনুমতি নিয়ে উপযুক্ত দয়া অনুশীলন করো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "6-7",
+          "label": "কুরআন ১০৭:৬-৭",
+          "url": "https://quran.com/al-maun/6-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_048",
+      "conceptId": "kids_quran_kawthar_worship_response",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সুরা কাউসারে উপহার ও নির্দেশের সম্পর্ক নিয়ে শ্রেণিতে আলোচনা হচ্ছে। কোন সারকথা মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপহার পাওয়া মানে আল্লাহকে আর দরকার নেই"
+        },
+        {
+          "id": "b",
+          "text": "নিয়ামত শুধু মানুষকে মুগ্ধ করতে ব্যবহার করা উচিত"
+        },
+        {
+          "id": "c",
+          "text": "নির্দেশটি দর্শকদের উদ্দেশে ইবাদত করতে বলে"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর উপহারের পর তাঁর উদ্দেশে ইবাদতের নির্দেশ আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সুরাটি প্রচুর কল্যাণের সঙ্গে রবের জন্য নামাজ ও কুরবানি যুক্ত করে। শ্রেণির শিক্ষা কৃতজ্ঞতা নিয়ে, শিশুদের কুরবানি করার নির্দেশ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 108,
+          "ayahs": "1-2",
+          "label": "কুরআন ১০৮:১-২",
+          "url": "https://quran.com/108/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_049",
+      "conceptId": "kids_quran_qadr_thousand_months",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সহপাঠী ভাবে, লাইলাতুল কদর হাজার মাস ধরে চলে। কোন ব্যাখ্যা ভুল ধারণা ঠিক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াতটি দৈর্ঘ্যের নয়, মর্যাদার তুলনা করে"
+        },
+        {
+          "id": "b",
+          "text": "রাতটির পরে বহু বছর সকাল হয় না"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি মাস একটি রাতের অংশ হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "আয়াতটি বলে এর বিশেষ মর্যাদা নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাজার মাসের চেয়ে উত্তম ব্যতিক্রমী মর্যাদা বোঝায়। এটি ঘড়ি বা ক্যালেন্ডারে রাতের দৈর্ঘ্যের মাপ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "কুরআন ৯৭:৩",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_050",
+      "conceptId": "kids_quran_sharh_hardship_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অনুশীলন করেও কঠিন পাঠে সময় লাগছে। প্রতিশ্রুতি না বানিয়ে সুরা শারহ অনুযায়ী কোন প্রতিক্রিয়া মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বলা, আয়াতটি পরের মিনিটে সাফল্যের নিশ্চয়তা দেয়"
+        },
+        {
+          "id": "b",
+          "text": "বানানো সময়সীমা না বেঁধে আশা রাখা ও সহায়তা চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কষ্ট চলায় নিজেকে মূল্যহীন বলে দোষ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "স্বস্তি মানে একা সব করা ভেবে সাহায্য প্রত্যাখ্যান করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আশ্বাসটি কষ্টে আশা রাখতে সাহায্য করতে পারে। সঙ্গে সঙ্গে ফলের নিশ্চয়তার দাবি না করেও শিক্ষক শেখায় সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "কুরআন ৯৪:৫-৬",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_051",
+      "conceptId": "kids_quran_falaq_envy",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ফালাক শেখার পর শিশু তার কাজের প্রশংসাকারী সব বন্ধুকে ক্ষতিকর হিংসার অভিযোগ করে। শিক্ষক কী বোঝাবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি প্রশংসা ক্ষতির পরিকল্পনা প্রমাণ করে"
+        },
+        {
+          "id": "b",
+          "text": "সুরাটি প্রতিটি বন্ধুভাবাপন্ন ব্যক্তিকে অবিশ্বাস করতে বলে"
+        },
+        {
+          "id": "c",
+          "text": "সুরক্ষা চাওয়া ভিত্তিহীন অভিযোগের যুক্তি নয়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু অবন্ধুসুলভ কথাই কখনো আন্তরিক হতে পারে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি ক্ষতিকর হিংসা থেকে সুরক্ষা চায়। প্রমাণ ছাড়া অভিযোগ বা আন্তরিক শুভকামনা প্রত্যাখ্যানের অজুহাত এটি হবে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "5",
+          "label": "কুরআন ১১৩:৫",
+          "url": "https://quran.com/113/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_052",
+      "conceptId": "kids_quran_yunus_humble_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ভুলের দায়িত্ব আলোচনার পর ইউনুসের দোয়া পড়ছ। খাতায় কোন শিক্ষা থাকবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দাবি করা, ভুল স্বীকারে রহমত বাধাগ্রস্ত হয়"
+        },
+        {
+          "id": "b",
+          "text": "অহংকারকে দোয়ার উদ্দেশ্য ধরা"
+        },
+        {
+          "id": "c",
+          "text": "বলা, দোষ সবসময় অন্যের"
+        },
+        {
+          "id": "d",
+          "text": "বিনয়ের সঙ্গে আল্লাহর দিকে ফেরা ও অন্যায় স্বীকার করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ইউনুসের ডাকে আল্লাহর প্রশংসা ও ভুল স্বীকার একসঙ্গে আছে। গল্পের তথ্য না বানিয়েই শিশু সততা ও আল্লাহর দিকে ফেরা শিখতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87",
+          "label": "কুরআন ২১:৮৭",
+          "url": "https://quran.com/21/87"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_053",
+      "conceptId": "kids_quran_musa_clear_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সহপাঠীদের পাঠ বোঝানোর আগে কোন অনুরোধ মুসার দোয়ার অর্থ প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সহজতা ও স্পষ্টভাবে কথা বলার সাহায্য আল্লাহর কাছে চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "ইচ্ছা করে সবাইকে বিভ্রান্ত করতে চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "শ্রোতাদের মূল্যহীন মনে করাতে চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "কখনো প্রস্তুতি বা সাহায্য না লাগার দোয়া করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মুসা সহজতা ও মানুষ বোঝে এমন কথা বলার দোয়া করেছেন। শ্রেণির প্রয়োগে দোয়ার সঙ্গে প্রস্তুতি ও উপযুক্ত শিক্ষকের সহায়তা থাকতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "কুরআন ২০:২৫-২৮",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_054",
+      "conceptId": "kids_quran_ibrahim_ismail_acceptance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তত্ত্বাবধানে ভালো প্রকল্পের পর ইব্রাহিম ও ইসমাইলের দোয়া মনে পড়ল। কোন অনুরোধ এর অর্থের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের হাততালিকে প্রতিটি আন্তরিক উদ্দেশ্যের বিকল্প করুন"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ, আমাদের এই কাজ কবুল করুন"
+        },
+        {
+          "id": "c",
+          "text": "কাজটি প্রমাণ করুক, আপনার সাহায্য আমাদের দরকার নেই"
+        },
+        {
+          "id": "d",
+          "text": "সবাইকে সাহায্যকারী ব্যক্তিদের ইবাদত করান"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তাঁদের কবুলের অনুরোধ ভালো কাজেও বিনয় দেখায়। শ্রেণির এই প্রয়োগ প্রকল্পটিকে কাবা নির্মাণের সমান করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "কুরআন ২:১২৭",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_055",
+      "conceptId": "kids_quran_sulayman_grateful_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সুলায়মানের দোয়া শেখার পর সিদ্ধান্তে কৃতজ্ঞতার প্রভাব চাও। কোন পরিকল্পনা মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বড়াই করা, নিয়ামত প্রতিটি ক্ষতিকর কাজের অনুমতি দেয়"
+        },
+        {
+          "id": "b",
+          "text": "ধন্যবাদ বলেও ইচ্ছা করে সব দায়িত্ব প্রত্যাখ্যান করা"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর প্রতি কৃতজ্ঞতা জানিয়ে তাঁর পছন্দের সৎকাজ বেছে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "ধরে নেওয়া, কৃতজ্ঞতা মানে সবার হিংসা চাওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সুলায়মানের দোয়া কৃতজ্ঞতার সঙ্গে সৎকাজ যুক্ত করে। উপযুক্ত ভালো কাজ এই শিক্ষা কাজে লাগাতে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "কুরআন ২৭:১৯",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_056",
+      "conceptId": "kids_quran_maryam_honored",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পোস্টারে দাবি করা হয়েছে, কুরআনে কোনো নারী সম্পর্কে সম্মানের সঙ্গে বলা হয় না। কোন অংশ দাবিটি খণ্ডন করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু সম্পদ মরিয়মকে মূল্য দিয়েছে—এই দাবি"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি নারীর মর্যাদা উপেক্ষার নির্দেশ"
+        },
+        {
+          "id": "c",
+          "text": "মরিয়মকে সম্মান মানে তাঁর ইবাদত—এই দাবি"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ মরিয়মকে মনোনীত ও পবিত্র করেছেন—ফেরেশতাদের এই বার্তা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অংশটি স্পষ্টভাবে মরিয়মকে সম্মান দেয়। বানানো গল্প বা অন্যকে ছোট করা তুলনা ছাড়াই এটি পোস্টার ঠিক করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "42",
+          "label": "কুরআন ৩:৪২",
+          "url": "https://quran.com/3/42"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_057",
+      "conceptId": "kids_quran_kahf_sure_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধুরা গুহাবাসীদের বাড়তি তথ্য বানিয়ে অনুমান নিয়ে তর্ক করছে। আয়াত অনুযায়ী কী মনে করাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ ভালো জানেন; নির্ভরযোগ্য জ্ঞান নিয়েই আলোচনা করো"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে আত্মবিশ্বাসী অনুমান ওহি হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি মজার সংযোজন কুরআন হিসেবে মানতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "জোরের তর্কই সেরা প্রমাণ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতটি না জেনে বিরোধে নিরুৎসাহিত করে ও আল্লাহর শ্রেষ্ঠ জ্ঞানে গুরুত্ব দেয়। সমর্থনহীন সংযোজনকে ওহির তথ্য না বানিয়ে গল্প শেখো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "কুরআন ১৮:২২",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_058",
+      "conceptId": "kids_quran_adam_repentance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিশু ভাবে, ভুল হলে আল্লাহর দিকে ফেরার অর্থ নেই। আদমের গল্প কী শেখাতে সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গল্পটি বলে, অন্যায়ের পর রহমত অসম্ভব"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ তওবা কবুল করেন; আন্তরিক ফেরা আশাহীন নয়"
+        },
+        {
+          "id": "c",
+          "text": "একটি ভুল উন্নতির সব সুযোগ সরিয়ে দেয়"
+        },
+        {
+          "id": "d",
+          "text": "তওবা মানে চিরদিন ক্ষতি করার সিদ্ধান্ত"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি আদমের তওবা আল্লাহর কবুলের কথা বলে। হতাশা ছাড়া ক্ষমা চাইতে ও উন্নতি করতে শিশুকে উৎসাহ দিতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "37",
+          "label": "কুরআন ২:৩৭",
+          "url": "https://quran.com/2/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_059",
+      "conceptId": "kids_quran_luqman_voice",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সাধারণ আলোচনায় সহপাঠীরা পরস্পরকে ছাপিয়ে চিৎকারে প্রতিযোগিতা করে। লুকমানের উপদেশ অনুযায়ী কী মনে করাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে জোরের কণ্ঠ সবসময় সেরা ধারণার প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "যে আস্তে কথা বলে তার মূল্য নেই"
+        },
+        {
+          "id": "c",
+          "text": "গলার জোরে প্রতিযোগিতা না করে বিবেচনা রেখে কথা বলো"
+        },
+        {
+          "id": "d",
+          "text": "ভদ্রতার জন্য বিপদেও কখনো সাহায্য চেয়ে ডাকা যাবে না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "লুকমানের উপদেশ সংযম ও কণ্ঠস্বর নিচু রাখতে উৎসাহ দেয়। প্রতিবন্ধিতা বিচার বা সাহায্যপ্রার্থীকে চুপ না করিয়ে বিবেচনা রেখে মানো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "কুরআন ৩১:১৯",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_060",
+      "conceptId": "kids_quran_arabic_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আরবি তিলাওয়াত শিখছ এবং যাচাই করা বাংলা ব্যাখ্যা ব্যবহার করছ। কাজ দুটি কীভাবে একসঙ্গে চলতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ব্যাখ্যাটি মূল আরবি কথার বিকল্প হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "অর্থ শিখলে তিলাওয়াত পুরোপুরি অর্থহীন হয়"
+        },
+        {
+          "id": "c",
+          "text": "বোঝাকে সবসময় কুরআন শেখা থেকে আলাদা রাখতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "একটি পড়া শেখায়, অন্যটি বার্তা বুঝতে সাহায্য করে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি আরবি কুরআনের সঙ্গে বোঝার সম্পর্ক দেখায়। আরবি পাঠ ও ব্যাখ্যা ভিন্ন হলেও শিক্ষকের নির্দেশনায় পড়া ও নির্ভরযোগ্য ব্যাখ্যা শেখার একই যাত্রায় সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    }
+  ]
+}

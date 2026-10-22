@@ -72,6 +72,15 @@ flutter:
     - assets/images/books/
     - assets/json/
     - assets/json/hadith_integrity/
+    - assets/json/quiz/kids/beginner/
+    - assets/json/quiz/kids/beginner/bangla/
+    - assets/json/quiz/kids/beginner/english/
+    - assets/json/quiz/kids/intermediate/
+    - assets/json/quiz/kids/intermediate/bangla/
+    - assets/json/quiz/kids/intermediate/english/
+    - assets/json/quiz/kids/pro/
+    - assets/json/quiz/kids/pro/bangla/
+    - assets/json/quiz/kids/pro/english/
     - assets/json/quiz/general/beginner/
     - assets/json/quiz/general/beginner/bangla/
     - assets/json/quiz/general/beginner/english/

@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "seerah",
+  "title": "Seerah",
+  "description": "Little Muslim → Mid. Short questions for children who know the first basics of the Prophet’s ﷺ life. Covers his shepherd work, the call at Safa, the Night Journey, the prescribing of daily prayers, the qiblah change, Hijrah preparations, the Ansar, Quba, Hudaybiyyah, community work and caring everyday conduct. Uses familiar learning and home situations to connect authentic accounts with simple lessons. An adult may read questions aloud or explain unfamiliar words. All questions are Mid level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Builds on introductory Seerah through familiar events, simple relationships, basic historical distinctions and straightforward lessons for everyday life. No obscure dates, specialist historical debates or memorization of reference numbers is required. Level is editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and authentic hadith reports checked during preparation. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Historical events and relationships are kept distinct from present-day illustrations. The mosque-building account describes the Prophet being with the builders and praying for them; the trench account separately describes him carrying earth. Patience and mercy are not presented as requiring children to tolerate physical aggression or ongoing harm. Classroom comparisons with Hudaybiyyah do not reproduce the treaty's terms or turn every agreement into a religious requirement. Receiving gifts does not create an instruction to accept unsafe gifts or spend beyond a family's means. The account of Umamah is used for family relationships and tenderness, not as a full guide to prayer procedure. No question asks children to judge another person's faith or worth. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_mid_seerah_001",
+      "conceptId": "kids_seerah_shepherd_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which work did the Prophet ﷺ say he had done for people in Makkah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Caring for their sheep"
+        },
+        {
+          "id": "b",
+          "text": "Ruling their empire"
+        },
+        {
+          "id": "c",
+          "text": "Building their ships"
+        },
+        {
+          "id": "d",
+          "text": "Leading their royal court"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ said he had cared for sheep belonging to people in Makkah. His life included useful, ordinary work.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2262",
+          "label": "Sahih al-Bukhari 2262",
+          "url": "https://sunnah.com/bukhari:2262"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_002",
+      "conceptId": "kids_seerah_safa_public_call",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Where did the Prophet ﷺ gather people when calling his near relatives to hear his warning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quba"
+        },
+        {
+          "id": "b",
+          "text": "Safa"
+        },
+        {
+          "id": "c",
+          "text": "Mina"
+        },
+        {
+          "id": "d",
+          "text": "Arafat"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report describes him calling the clans of Quraysh together at Safa. He publicly delivered an important warning to his people.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_003",
+      "conceptId": "kids_seerah_isra_journey",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two mosques are connected by the Prophet's ﷺ Night Journey in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Prophet's Mosque and Quba Mosque"
+        },
+        {
+          "id": "b",
+          "text": "Quba Mosque and Al-Masjid al-Haram"
+        },
+        {
+          "id": "c",
+          "text": "Al-Masjid al-Haram and Al-Masjid al-Aqsa"
+        },
+        {
+          "id": "d",
+          "text": "Al-Masjid al-Aqsa and Quba Mosque"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran describes Allah taking His servant by night from Al-Masjid al-Haram to Al-Masjid al-Aqsa to show him signs.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "1",
+          "label": "Quran 17:1",
+          "url": "https://quran.com/17/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_004",
+      "conceptId": "kids_seerah_miraj_five_prayers",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How many daily prayers remained prescribed in the account of the Prophet's ﷺ heavenly journey?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two"
+        },
+        {
+          "id": "b",
+          "text": "Three"
+        },
+        {
+          "id": "c",
+          "text": "Seven"
+        },
+        {
+          "id": "d",
+          "text": "Five"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The authentic account describes the prayers being reduced until five remained. This event connects daily salah with the Prophet's ﷺ heavenly journey.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "349",
+          "label": "Sahih al-Bukhari 349",
+          "url": "https://sunnah.com/bukhari:349"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_005",
+      "conceptId": "kids_seerah_qiblah_change",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "After the qiblah changed in Madinah, which direction did the Prophet ﷺ face in prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toward the Kaaba in Makkah"
+        },
+        {
+          "id": "b",
+          "text": "Toward whichever landmark was nearest"
+        },
+        {
+          "id": "c",
+          "text": "Toward the sunrise every day"
+        },
+        {
+          "id": "d",
+          "text": "Toward a different city each week"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report describes the change from facing Jerusalem to facing the Kaaba. The companions followed the new direction when they learned of it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "40",
+          "label": "Sahih al-Bukhari 40",
+          "url": "https://sunnah.com/bukhari:40"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_006",
+      "conceptId": "kids_seerah_asma_journey_food",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who prepared journey food for the Prophet ﷺ and Abu Bakr before their migration to Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hafsah, Umar's daughter"
+        },
+        {
+          "id": "b",
+          "text": "Asma, Abu Bakr's daughter"
+        },
+        {
+          "id": "c",
+          "text": "Umm Salamah"
+        },
+        {
+          "id": "d",
+          "text": "Safiyyah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Asma described preparing food for their journey. Her practical help was part of the preparations for the Hijrah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3907",
+          "label": "Sahih al-Bukhari 3907",
+          "url": "https://sunnah.com/bukhari:3907"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_007",
+      "conceptId": "kids_seerah_hijrah_expert_guide",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What practical help did the Prophet ﷺ and Abu Bakr arrange for their Hijrah route?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A competition for the fastest runner"
+        },
+        {
+          "id": "b",
+          "text": "A crowd to announce their route"
+        },
+        {
+          "id": "c",
+          "text": "An expert guide"
+        },
+        {
+          "id": "d",
+          "text": "A royal parade"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "They employed a skilled guide whom they trusted. The journey included careful planning and practical help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2263",
+          "label": "Sahih al-Bukhari 2263",
+          "url": "https://sunnah.com/bukhari:2263"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_008",
+      "conceptId": "kids_seerah_quba_visits",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which mosque did the Prophet ﷺ regularly visit, sometimes walking and sometimes riding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A mosque in a different country every week"
+        },
+        {
+          "id": "b",
+          "text": "A mosque built only after his lifetime"
+        },
+        {
+          "id": "c",
+          "text": "A mosque chosen by drawing lots each visit"
+        },
+        {
+          "id": "d",
+          "text": "Quba Mosque"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report describes his regular visits to Quba Mosque. It records visits both on foot and while riding.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1193",
+          "label": "Sahih al-Bukhari 1193",
+          "url": "https://sunnah.com/bukhari:1193"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_009",
+      "conceptId": "kids_seerah_ansar_welcome",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What were the believers in Madinah who welcomed and helped the emigrants called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Ansar"
+        },
+        {
+          "id": "b",
+          "text": "The emigrants themselves"
+        },
+        {
+          "id": "c",
+          "text": "The rulers of Rome"
+        },
+        {
+          "id": "d",
+          "text": "The travelers of Quraysh who opposed them"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Ansar were the helpers in Madinah. The Quran praises their love for the emigrants and their generous care for them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "9",
+          "label": "Quran 59:9",
+          "url": "https://quran.com/59/9"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_010",
+      "conceptId": "kids_seerah_hudaybiyyah_treaty",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What kind of agreement did the Prophet ﷺ conclude with Quraysh at Hudaybiyyah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A school timetable"
+        },
+        {
+          "id": "b",
+          "text": "A peace treaty"
+        },
+        {
+          "id": "c",
+          "text": "A promise to stop worshipping Allah"
+        },
+        {
+          "id": "d",
+          "text": "A plan to replace the Quran"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The authentic account describes a negotiated peace treaty. Hudaybiyyah is an important event in the Prophet's ﷺ life.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_011",
+      "conceptId": "kids_seerah_mosque_builders_dua",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ do while he was with the companions building the mosque in Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Told them their work had no value"
+        },
+        {
+          "id": "b",
+          "text": "Said worship had no place in Madinah"
+        },
+        {
+          "id": "c",
+          "text": "Asked Allah to forgive the helpers and emigrants"
+        },
+        {
+          "id": "d",
+          "text": "Forbade them from working together"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report describes the Prophet ﷺ with the builders, praying for the Ansar and emigrants. Their community work was accompanied by remembrance of Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_012",
+      "conceptId": "kids_seerah_trench_shared_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "During the work at the trench, what did the Prophet ﷺ himself help carry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Royal furniture"
+        },
+        {
+          "id": "b",
+          "text": "Goods for a private palace"
+        },
+        {
+          "id": "c",
+          "text": "Prizes for a race"
+        },
+        {
+          "id": "d",
+          "text": "Earth"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ helped carry earth during the trench work. He shared the effort and called upon Allah for help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "Sahih al-Bukhari 4104",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_013",
+      "conceptId": "kids_seerah_mercy_after_rejection",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "After painful rejection, what did the Prophet ﷺ hope for when offered punishment for the people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That their descendants would worship Allah alone"
+        },
+        {
+          "id": "b",
+          "text": "That nobody in their families could ever improve"
+        },
+        {
+          "id": "c",
+          "text": "That revenge would be his only goal"
+        },
+        {
+          "id": "d",
+          "text": "That all future generations would lose hope"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ chose a merciful response and expressed hope for future believers. His grief did not become a wish for endless revenge.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_014",
+      "conceptId": "kids_seerah_cloak_patient_response",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did the Prophet ﷺ respond when a man roughly pulled his cloak and demanded wealth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He ordered everyone to insult the man's family"
+        },
+        {
+          "id": "b",
+          "text": "He smiled and ordered that the man receive something"
+        },
+        {
+          "id": "c",
+          "text": "He encouraged people to copy the rough behavior"
+        },
+        {
+          "id": "d",
+          "text": "He demanded that every child surrender their belongings"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report shows remarkable patience and generosity. It does not make rough grabbing good manners.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5809",
+          "label": "Sahih al-Bukhari 5809",
+          "url": "https://sunnah.com/bukhari:5809"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_015",
+      "conceptId": "kids_seerah_mosque_mistake_gentleness",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When a visitor urinated in the mosque, what did the Prophet ﷺ instruct the people to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Beat him to teach the whole crowd a lesson"
+        },
+        {
+          "id": "b",
+          "text": "Leave the place dirty forever"
+        },
+        {
+          "id": "c",
+          "text": "Leave him and have water poured over the place"
+        },
+        {
+          "id": "d",
+          "text": "Make his mistake into a public joke"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ prevented a harsh response and directed the cleaning. He taught making things easier rather than unnecessarily difficult.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "Sahih al-Bukhari 220",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_016",
+      "conceptId": "kids_seerah_abu_umayr_attention",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What small interest of the child Abu Umayr did the Prophet ﷺ ask about?",
+      "options": [
+        {
+          "id": "a",
+          "text": "His royal palace"
+        },
+        {
+          "id": "b",
+          "text": "His trading fleet"
+        },
+        {
+          "id": "c",
+          "text": "His army"
+        },
+        {
+          "id": "d",
+          "text": "His little bird"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ spoke warmly to the child about his little bird. A child's small interests were not beneath his attention.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6203",
+          "label": "Sahih al-Bukhari 6203",
+          "url": "https://sunnah.com/bukhari:6203"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_017",
+      "conceptId": "kids_seerah_umamah_granddaughter",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which granddaughter did the Prophet ﷺ carry during prayer in this report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umamah"
+        },
+        {
+          "id": "b",
+          "text": "Aishah"
+        },
+        {
+          "id": "c",
+          "text": "Khadijah"
+        },
+        {
+          "id": "d",
+          "text": "Hafsah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Umamah was the daughter of his daughter Zaynab. The report describes him carrying her and putting her down when prostrating.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "516",
+          "label": "Sahih al-Bukhari 516",
+          "url": "https://sunnah.com/bukhari:516"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_018",
+      "conceptId": "kids_seerah_gifts_reciprocation",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did Aishah describe the Prophet's ﷺ practice with gifts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He always mocked the giver"
+        },
+        {
+          "id": "b",
+          "text": "He accepted gifts and gave something in return"
+        },
+        {
+          "id": "c",
+          "text": "He treated every gift as permission to boast"
+        },
+        {
+          "id": "d",
+          "text": "He demanded that every gift be expensive"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah reported that he accepted gifts and reciprocated. His example shows gracious receiving and giving.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2585",
+          "label": "Sahih al-Bukhari 2585",
+          "url": "https://sunnah.com/bukhari:2585"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_019",
+      "conceptId": "kids_seerah_character_quran",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did Aishah connect with the Prophet's ﷺ character when asked about it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A collection of royal customs"
+        },
+        {
+          "id": "b",
+          "text": "A desire to win popularity at any cost"
+        },
+        {
+          "id": "c",
+          "text": "The Quran"
+        },
+        {
+          "id": "d",
+          "text": "A habit of ignoring Allah's guidance"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Aishah described his character through the Quran. His life showed its guidance in practice, rather than separating knowledge from conduct.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "746a",
+          "label": "Sahih Muslim 746a",
+          "url": "https://sunnah.com/muslim:746a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_020",
+      "conceptId": "kids_seerah_hajj_sermon_rights",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In his Hajj sermon, what did the Prophet ﷺ emphasize about people's lives, belongings and honor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They matter only when a person is wealthy"
+        },
+        {
+          "id": "b",
+          "text": "They may be harmed for entertainment"
+        },
+        {
+          "id": "c",
+          "text": "They have no importance outside a ceremony"
+        },
+        {
+          "id": "d",
+          "text": "They must be respected and protected"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The sermon strongly emphasized the protection of life, property and honor. These were serious responsibilities, not passing words.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1739",
+          "label": "Sahih al-Bukhari 1739",
+          "url": "https://sunnah.com/bukhari:1739"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_021",
+      "conceptId": "kids_seerah_shepherd_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the Prophet's ﷺ work as a shepherd suggest honest everyday work is shameful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, his life included useful ordinary work"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only famous people deserve respect"
+        },
+        {
+          "id": "c",
+          "text": "Yes, caring for animals has no value"
+        },
+        {
+          "id": "d",
+          "text": "No, because he said he never worked"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report reminds us that the Prophet ﷺ did useful work. We should not look down on a person for an honest occupation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2262",
+          "label": "Sahih al-Bukhari 2262",
+          "url": "https://sunnah.com/bukhari:2262"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_022",
+      "conceptId": "kids_seerah_safa_public_call",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What makes the gathering at Safa important in the Prophet's ﷺ life story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He was choosing a new king for Rome"
+        },
+        {
+          "id": "b",
+          "text": "He openly called his people to hear his warning"
+        },
+        {
+          "id": "c",
+          "text": "He announced that revelation had never come"
+        },
+        {
+          "id": "d",
+          "text": "He was arranging a sports tournament"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The gathering was part of delivering his message publicly. It was a serious call to his people, not an entertainment event.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_023",
+      "conceptId": "kids_seerah_isra_journey",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is the Night Journey described in the Quran the same event as the Hijrah to Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, both names mean moving to Madinah"
+        },
+        {
+          "id": "b",
+          "text": "Yes, Al-Aqsa is another name for Madinah"
+        },
+        {
+          "id": "c",
+          "text": "No, the journeys have different destinations and meanings"
+        },
+        {
+          "id": "d",
+          "text": "No, because the Quran mentions no Night Journey"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Night Journey connects Al-Masjid al-Haram with Al-Masjid al-Aqsa. It is different from the migration to Madinah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "1",
+          "label": "Quran 17:1",
+          "url": "https://quran.com/17/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_024",
+      "conceptId": "kids_seerah_miraj_five_prayers",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which link between Seerah and daily worship appears in the heavenly journey account?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The rule that daily prayer is only for travelers"
+        },
+        {
+          "id": "b",
+          "text": "The idea that every person chooses a different number"
+        },
+        {
+          "id": "c",
+          "text": "The claim that prayer began as a classroom game"
+        },
+        {
+          "id": "d",
+          "text": "The prescribing of the five daily prayers"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The account connects the five daily prayers with the heavenly journey. Learning Seerah can also explain the history of familiar worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "349",
+          "label": "Sahih al-Bukhari 349",
+          "url": "https://sunnah.com/bukhari:349"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_025",
+      "conceptId": "kids_seerah_qiblah_change",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In the account of the qiblah change, what did companions do when informed of the new direction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Turned toward the Kaaba"
+        },
+        {
+          "id": "b",
+          "text": "Chose a direction by guessing"
+        },
+        {
+          "id": "c",
+          "text": "Decided that prayer no longer mattered"
+        },
+        {
+          "id": "d",
+          "text": "Made every person face a different direction"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The companions responded to the report of the changed qiblah. The account shows them following the newly taught direction.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "40",
+          "label": "Sahih al-Bukhari 40",
+          "url": "https://sunnah.com/bukhari:40"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_026",
+      "conceptId": "kids_seerah_asma_journey_food",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Asma's role in preparing the journey food show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the people traveling can ever help"
+        },
+        {
+          "id": "b",
+          "text": "Practical support can contribute to an important effort"
+        },
+        {
+          "id": "c",
+          "text": "Food preparation can never be useful"
+        },
+        {
+          "id": "d",
+          "text": "Women had no part in supporting the Hijrah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Asma's contribution was practical and valuable. Preparing what travelers needed was part of supporting the journey.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3907",
+          "label": "Sahih al-Bukhari 3907",
+          "url": "https://sunnah.com/bukhari:3907"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_027",
+      "conceptId": "kids_seerah_hijrah_expert_guide",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does arranging a guide for the Hijrah conflict with trusting Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, trust means rejecting every skilled helper"
+        },
+        {
+          "id": "b",
+          "text": "Yes, planning a route is always wrong"
+        },
+        {
+          "id": "c",
+          "text": "No, the Prophet ﷺ used trustworthy practical help"
+        },
+        {
+          "id": "d",
+          "text": "No, because the Prophet ﷺ never made any plans"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ arranged skilled help for the journey. Trust in Allah and sensible preparation can go together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2263",
+          "label": "Sahih al-Bukhari 2263",
+          "url": "https://sunnah.com/bukhari:2263"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_028",
+      "conceptId": "kids_seerah_quba_visits",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the report about walking or riding to Quba describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A rule that everyone must own a riding animal"
+        },
+        {
+          "id": "b",
+          "text": "A journey to a different continent"
+        },
+        {
+          "id": "c",
+          "text": "A visit that happened only after his lifetime"
+        },
+        {
+          "id": "d",
+          "text": "The Prophet's ﷺ visits to that mosque"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report records a practice from his life. Walking and riding are both mentioned; it does not require every person to own a mount.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1193",
+          "label": "Sahih al-Bukhari 1193",
+          "url": "https://sunnah.com/bukhari:1193"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_029",
+      "conceptId": "kids_seerah_ansar_welcome",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which attitude matches the Quran's praise of the Ansar toward the emigrants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Loving welcome and generous support"
+        },
+        {
+          "id": "b",
+          "text": "Jealousy whenever another person received help"
+        },
+        {
+          "id": "c",
+          "text": "Treating newcomers as people without dignity"
+        },
+        {
+          "id": "d",
+          "text": "Refusing to care about another believer's needs"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran praises the helpers' love and generosity. Their care for newcomers was more than simply knowing their names.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "9",
+          "label": "Quran 59:9",
+          "url": "https://quran.com/59/9"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_030",
+      "conceptId": "kids_seerah_hudaybiyyah_treaty",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Hudaybiyyah account show about addressing conflict?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every disagreement must become a fight"
+        },
+        {
+          "id": "b",
+          "text": "Negotiation and agreement can be part of a solution"
+        },
+        {
+          "id": "c",
+          "text": "Listening to the other side is always forbidden"
+        },
+        {
+          "id": "d",
+          "text": "Peaceful agreements have no place in Seerah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ concluded an agreement through negotiation. This event shows that resolving conflict need not mean escalating it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_031",
+      "conceptId": "kids_seerah_mosque_builders_dua",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Prophet's ﷺ prayer for the mosque builders show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That only wealthy helpers were worth remembering"
+        },
+        {
+          "id": "b",
+          "text": "That practical work and worship could never meet"
+        },
+        {
+          "id": "c",
+          "text": "Appreciation for those serving the community"
+        },
+        {
+          "id": "d",
+          "text": "That the builders should compete in insulting one another"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "He prayed for the Ansar and emigrants while with them. Community effort and remembrance of Allah belonged together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_032",
+      "conceptId": "kids_seerah_trench_shared_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Did the Prophet ﷺ consider himself too important to share the trench work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, helping was beneath his dignity"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only unknown people could do useful work"
+        },
+        {
+          "id": "c",
+          "text": "No, because no work was done at the trench"
+        },
+        {
+          "id": "d",
+          "text": "No, he helped carry earth himself"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His participation shows leadership through shared effort. He did not leave every difficult task to others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "Sahih al-Bukhari 4104",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_033",
+      "conceptId": "kids_seerah_mercy_after_rejection",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which lesson fits the Prophet's ﷺ hope after painful rejection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "People and future generations can still turn toward good"
+        },
+        {
+          "id": "b",
+          "text": "A person's family must be hated forever"
+        },
+        {
+          "id": "c",
+          "text": "Revenge is the only response to disappointment"
+        },
+        {
+          "id": "d",
+          "text": "One harsh encounter proves nobody can ever improve"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ expressed hope instead of choosing destruction. We can learn mercy without pretending that hurtful treatment is acceptable.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_034",
+      "conceptId": "kids_seerah_cloak_patient_response",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the Prophet's ﷺ generous response make pulling someone's clothing an acceptable way to ask?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, grabbing is the best way to receive help"
+        },
+        {
+          "id": "b",
+          "text": "No, his patience does not make the roughness right"
+        },
+        {
+          "id": "c",
+          "text": "Yes, force always makes a request polite"
+        },
+        {
+          "id": "d",
+          "text": "No, but insulting the giver would be better"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report praises his patience and generosity. It does not teach us to demand help through force.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5809",
+          "label": "Sahih al-Bukhari 5809",
+          "url": "https://sunnah.com/bukhari:5809"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_035",
+      "conceptId": "kids_seerah_mosque_mistake_gentleness",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the visitor's mosque incident show about gentleness and correcting a problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gentleness requires leaving every place dirty"
+        },
+        {
+          "id": "b",
+          "text": "Correction is only useful when someone is humiliated"
+        },
+        {
+          "id": "c",
+          "text": "A problem can be corrected without a cruel response"
+        },
+        {
+          "id": "d",
+          "text": "Cleaning becomes wrong if it is done calmly"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ directed cleaning while preventing harshness. Dealing with a mistake and treating a person gently can happen together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "Sahih al-Bukhari 220",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_036",
+      "conceptId": "kids_seerah_abu_umayr_attention",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is the Prophet's ﷺ conversation about Abu Umayr's bird meaningful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It proves children's interests never matter"
+        },
+        {
+          "id": "b",
+          "text": "It says only adults deserve conversation"
+        },
+        {
+          "id": "c",
+          "text": "It means every child must keep the same pet"
+        },
+        {
+          "id": "d",
+          "text": "It shows warm attention to a child's world"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The child received kind attention about something familiar to him. The report does not require every family to keep a bird.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6203",
+          "label": "Sahih al-Bukhari 6203",
+          "url": "https://sunnah.com/bukhari:6203"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_037",
+      "conceptId": "kids_seerah_umamah_granddaughter",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How was Umamah related to the Prophet ﷺ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She was his daughter's daughter"
+        },
+        {
+          "id": "b",
+          "text": "She was his mother"
+        },
+        {
+          "id": "c",
+          "text": "She was his wife"
+        },
+        {
+          "id": "d",
+          "text": "She was his aunt"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Umamah was Zaynab's daughter and the Prophet's ﷺ granddaughter. The report also shows his tenderness toward her.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "516",
+          "label": "Sahih al-Bukhari 516",
+          "url": "https://sunnah.com/bukhari:516"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_038",
+      "conceptId": "kids_seerah_gifts_reciprocation",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which description matches the report about the Prophet's ﷺ gifts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demanding expensive gifts before treating people kindly"
+        },
+        {
+          "id": "b",
+          "text": "Receiving graciously and responding with giving"
+        },
+        {
+          "id": "c",
+          "text": "Using gifts as an excuse to insult the giver"
+        },
+        {
+          "id": "d",
+          "text": "Treating every gift as a competition for wealth"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report describes accepting gifts and giving in return. This example is about gracious conduct, not turning kindness into a contest.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2585",
+          "label": "Sahih al-Bukhari 2585",
+          "url": "https://sunnah.com/bukhari:2585"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_039",
+      "conceptId": "kids_seerah_character_quran",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Aishah's description mean the Prophet ﷺ was literally a physical book?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, he was made from pages"
+        },
+        {
+          "id": "b",
+          "text": "Yes, he had no human life"
+        },
+        {
+          "id": "c",
+          "text": "No, it describes his conduct reflecting Quranic guidance"
+        },
+        {
+          "id": "d",
+          "text": "No, because she said the Quran had no guidance"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Aishah was describing character, not physical form. The meaning is that Quranic guidance was reflected in how he lived.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "746a",
+          "label": "Sahih Muslim 746a",
+          "url": "https://sunnah.com/muslim:746a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_040",
+      "conceptId": "kids_seerah_hajj_sermon_rights",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the sermon about life, property and honor mean mistreating someone is only a problem during Hajj?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, people's belongings matter only during Hajj"
+        },
+        {
+          "id": "b",
+          "text": "Yes, harm is acceptable on ordinary school days"
+        },
+        {
+          "id": "c",
+          "text": "No, but only popular people's dignity matters"
+        },
+        {
+          "id": "d",
+          "text": "No, its teaching concerns respect beyond the gathering too"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The sermon uses the sacred occasion to emphasize people's rights. Its lesson is not limited to those listening at that moment.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1739",
+          "label": "Sahih al-Bukhari 1739",
+          "url": "https://sunnah.com/bukhari:1739"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_041",
+      "conceptId": "kids_seerah_shepherd_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate mocks someone for tending animals. Remembering the Prophet's ﷺ work, what is a better response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Explain that honest useful work deserves respect"
+        },
+        {
+          "id": "b",
+          "text": "Join in because simple work is shameful"
+        },
+        {
+          "id": "c",
+          "text": "Claim only rich people's work matters"
+        },
+        {
+          "id": "d",
+          "text": "Say the Prophet ﷺ never cared for sheep"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ himself had tended sheep. A person's honest work is not a reason to mock them.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2262",
+          "label": "Sahih al-Bukhari 2262",
+          "url": "https://sunnah.com/bukhari:2262"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_042",
+      "conceptId": "kids_seerah_safa_public_call",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your class labels an event card, \"The Prophet ﷺ publicly calls his people together.\" Which place fits this report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quba"
+        },
+        {
+          "id": "b",
+          "text": "Safa"
+        },
+        {
+          "id": "c",
+          "text": "Mina"
+        },
+        {
+          "id": "d",
+          "text": "Arafat"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report places this gathering at Safa. Learning the event helps us connect a familiar place with his public message.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_043",
+      "conceptId": "kids_seerah_isra_journey",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Sara makes a route card for the Night Journey. Which destination belongs after Al-Masjid al-Haram?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quba Mosque"
+        },
+        {
+          "id": "b",
+          "text": "The Prophet's Mosque in Madinah"
+        },
+        {
+          "id": "c",
+          "text": "Al-Masjid al-Aqsa"
+        },
+        {
+          "id": "d",
+          "text": "A school in Makkah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran names Al-Masjid al-Aqsa as the destination in this journey. Sara should keep it separate from the Hijrah route.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "1",
+          "label": "Quran 17:1",
+          "url": "https://quran.com/17/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_044",
+      "conceptId": "kids_seerah_miraj_five_prayers",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learning card links the heavenly journey with daily salah. Which number of prescribed daily prayers belongs on it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two"
+        },
+        {
+          "id": "b",
+          "text": "Three"
+        },
+        {
+          "id": "c",
+          "text": "Seven"
+        },
+        {
+          "id": "d",
+          "text": "Five"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report describes five daily prayers remaining prescribed. The card should connect this familiar worship with the correct Seerah event.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "349",
+          "label": "Sahih al-Bukhari 349",
+          "url": "https://sunnah.com/bukhari:349"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_045",
+      "conceptId": "kids_seerah_qiblah_change",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Yusuf draws a timeline of prayer directions after the Hijrah. Which order matches the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalem, then the Kaaba"
+        },
+        {
+          "id": "b",
+          "text": "The Kaaba, then the sunrise"
+        },
+        {
+          "id": "c",
+          "text": "Quba, then a different city every week"
+        },
+        {
+          "id": "d",
+          "text": "A different direction for every person"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report describes the Prophet ﷺ facing Jerusalem before the change to the Kaaba. Yusuf's timeline should preserve that order.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "40",
+          "label": "Sahih al-Bukhari 40",
+          "url": "https://sunnah.com/bukhari:40"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_046",
+      "conceptId": "kids_seerah_asma_journey_food",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning Asma's role, Maryam wants to help her family prepare for a trip. Which safe task fits the lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hide the supplies to make everyone worry"
+        },
+        {
+          "id": "b",
+          "text": "Help pack food with a parent's guidance"
+        },
+        {
+          "id": "c",
+          "text": "Take money from someone else's bag"
+        },
+        {
+          "id": "d",
+          "text": "Refuse to help because she is not driving"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Asma helped through practical preparation. Maryam can contribute through an age-appropriate task guided by her parent.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3907",
+          "label": "Sahih al-Bukhari 3907",
+          "url": "https://sunnah.com/bukhari:3907"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_047",
+      "conceptId": "kids_seerah_hijrah_expert_guide",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before a family journey, Adam says planning shows no trust in Allah. What would the Hijrah guide account help explain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Prophet ﷺ rejected every form of guidance"
+        },
+        {
+          "id": "b",
+          "text": "No one ever helped with the route"
+        },
+        {
+          "id": "c",
+          "text": "The Prophet ﷺ used careful planning and skilled help"
+        },
+        {
+          "id": "d",
+          "text": "Trust requires traveling without knowing where we are going"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ and Abu Bakr arranged a trusted expert guide. Sensible preparation does not cancel reliance on Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2263",
+          "label": "Sahih al-Bukhari 2263",
+          "url": "https://sunnah.com/bukhari:2263"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_048",
+      "conceptId": "kids_seerah_quba_visits",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A worksheet asks which mosque the Prophet ﷺ visited regularly on foot or riding. Which name should Hana write?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A mosque built centuries later"
+        },
+        {
+          "id": "b",
+          "text": "A different unnamed mosque every week"
+        },
+        {
+          "id": "c",
+          "text": "A mosque chosen through a game"
+        },
+        {
+          "id": "d",
+          "text": "Quba Mosque"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Quba is named in the authentic report. Hana can connect the place with the practice described in his life.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1193",
+          "label": "Sahih al-Bukhari 1193",
+          "url": "https://sunnah.com/bukhari:1193"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_049",
+      "conceptId": "kids_seerah_ansar_welcome",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A new pupil arrives after moving to your town. Which welcome reflects the generosity shown by the Ansar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help them feel included and share permitted supplies"
+        },
+        {
+          "id": "b",
+          "text": "Mock them for being new"
+        },
+        {
+          "id": "c",
+          "text": "Hide the information they need"
+        },
+        {
+          "id": "d",
+          "text": "Insist that newcomers deserve no help"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Ansar's care for emigrants offers a lesson in welcoming others. A classroom welcome is an illustration, not the historical Hijrah itself.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "9",
+          "label": "Quran 59:9",
+          "url": "https://quran.com/59/9"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_050",
+      "conceptId": "kids_seerah_hudaybiyyah_treaty",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two classmates disagree over a shared activity. What approach reflects a simple lesson from Hudaybiyyah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume fighting is the only possible solution"
+        },
+        {
+          "id": "b",
+          "text": "Seek a calm agreement with a teacher's guidance"
+        },
+        {
+          "id": "c",
+          "text": "Refuse to listen to any explanation"
+        },
+        {
+          "id": "d",
+          "text": "Make threats until the other child cries"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The historical treaty shows negotiation as part of resolving conflict. A teacher can help children seek a fair, safe agreement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_051",
+      "conceptId": "kids_seerah_mosque_builders_dua",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Classmates help arrange a prayer space with a teacher. Which response reflects appreciation for community helpers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Call their help worthless"
+        },
+        {
+          "id": "b",
+          "text": "Claim helpers should never be remembered"
+        },
+        {
+          "id": "c",
+          "text": "Recognize their effort and make dua for them"
+        },
+        {
+          "id": "d",
+          "text": "Turn their work into a reason to mock them"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ prayed for the helpers while with the mosque builders. We can appreciate those who serve a good purpose.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_052",
+      "conceptId": "kids_seerah_trench_shared_work",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your group has a safe classroom task to finish. Which choice reflects the Prophet's ﷺ shared effort at the trench?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say helping is beneath your importance"
+        },
+        {
+          "id": "b",
+          "text": "Take the credit without doing any work"
+        },
+        {
+          "id": "c",
+          "text": "Make the smallest child do every task"
+        },
+        {
+          "id": "d",
+          "text": "Do your suitable share instead of leaving everything to others"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ took part in the trench work. A child can learn cooperation through safe tasks suited to their ability.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4104",
+          "label": "Sahih al-Bukhari 4104",
+          "url": "https://sunnah.com/bukhari:4104"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_053",
+      "conceptId": "kids_seerah_mercy_after_rejection",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After a disagreement, Ali wishes harm on his friend's whole family. What response reflects the Prophet's ﷺ mercy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid revenge and hope they choose what is good"
+        },
+        {
+          "id": "b",
+          "text": "Blame every relative for the disagreement"
+        },
+        {
+          "id": "c",
+          "text": "Plan to humiliate the family forever"
+        },
+        {
+          "id": "d",
+          "text": "Decide no one in that family can ever improve"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ showed hope after painful rejection. Ali can reject revenge and seek adult help if the disagreement involves ongoing harm.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3231",
+          "label": "Sahih al-Bukhari 3231",
+          "url": "https://sunnah.com/bukhari:3231"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_054",
+      "conceptId": "kids_seerah_cloak_patient_response",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate speaks rudely when asking for a pencil. Which response reflects patience while keeping sensible boundaries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pull their clothing to get revenge"
+        },
+        {
+          "id": "b",
+          "text": "Reply calmly and ask them to speak respectfully"
+        },
+        {
+          "id": "c",
+          "text": "Insult their family in front of everyone"
+        },
+        {
+          "id": "d",
+          "text": "Assume rude demands must always be obeyed"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet's ﷺ patient response can inspire calm conduct. It does not require accepting rough treatment; seek help if someone becomes physically aggressive.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5809",
+          "label": "Sahih al-Bukhari 5809",
+          "url": "https://sunnah.com/bukhari:5809"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_055",
+      "conceptId": "kids_seerah_mosque_mistake_gentleness",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A younger child spills water during a lesson. Which response applies gentleness while fixing a problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make everyone laugh at the child"
+        },
+        {
+          "id": "b",
+          "text": "Leave the spill so someone slips"
+        },
+        {
+          "id": "c",
+          "text": "Get suitable help to clean without humiliating the child"
+        },
+        {
+          "id": "d",
+          "text": "Shout that the child can never improve"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "This is a classroom illustration of gentle correction, not the same incident. Fix the problem safely without turning a mistake into humiliation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "220",
+          "label": "Sahih al-Bukhari 220",
+          "url": "https://sunnah.com/bukhari:220"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_056",
+      "conceptId": "kids_seerah_abu_umayr_attention",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A younger sibling wants to tell you about a small interest. Which response follows the Prophet's ﷺ warm attention to children?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say only adults deserve to be heard"
+        },
+        {
+          "id": "b",
+          "text": "Mock them for caring about something small"
+        },
+        {
+          "id": "c",
+          "text": "Ignore them only to show you are older"
+        },
+        {
+          "id": "d",
+          "text": "Listen kindly instead of dismissing them as unimportant"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ gave kind attention to Abu Umayr's interest. Listening warmly can help a younger child feel valued.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6203",
+          "label": "Sahih al-Bukhari 6203",
+          "url": "https://sunnah.com/bukhari:6203"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_057",
+      "conceptId": "kids_seerah_umamah_granddaughter",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A family-tree activity places Umamah below Zaynab, the Prophet's ﷺ daughter. What is Umamah's relationship to him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Granddaughter"
+        },
+        {
+          "id": "b",
+          "text": "Mother"
+        },
+        {
+          "id": "c",
+          "text": "Wife"
+        },
+        {
+          "id": "d",
+          "text": "Aunt"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Umamah was the daughter of Zaynab. That makes her the Prophet's ﷺ granddaughter, as the report explains.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "516",
+          "label": "Sahih al-Bukhari 516",
+          "url": "https://sunnah.com/bukhari:516"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_058",
+      "conceptId": "kids_seerah_gifts_reciprocation",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With your parent's permission, a friend gives you a small gift. Which response reflects gracious receiving and giving?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock the gift because it is inexpensive"
+        },
+        {
+          "id": "b",
+          "text": "Receive it kindly and consider a suitable gift in return"
+        },
+        {
+          "id": "c",
+          "text": "Demand a bigger one before speaking politely"
+        },
+        {
+          "id": "d",
+          "text": "Turn it into a competition over whose family is richer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ accepted gifts and reciprocated. Let a parent guide any gift in return; kindness need not become an expensive contest.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2585",
+          "label": "Sahih al-Bukhari 2585",
+          "url": "https://sunnah.com/bukhari:2585"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_059",
+      "conceptId": "kids_seerah_character_quran",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn Aishah's description of the Prophet's ﷺ character. What is a useful goal for your own Quran learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Memorize facts while refusing every good change"
+        },
+        {
+          "id": "b",
+          "text": "Use what you know only to belittle classmates"
+        },
+        {
+          "id": "c",
+          "text": "Try to let its guidance improve your behavior"
+        },
+        {
+          "id": "d",
+          "text": "Decide reading and conduct must never connect"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "His character reflected Quranic guidance. A learner can aim to connect understanding with better everyday choices.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "746a",
+          "label": "Sahih Muslim 746a",
+          "url": "https://sunnah.com/muslim:746a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_seerah_060",
+      "conceptId": "kids_seerah_hajj_sermon_rights",
+      "categoryId": "seerah",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend suggests damaging another child's belongings for fun. Which response follows the Hajj sermon's lesson about rights?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agree because it is only a school day"
+        },
+        {
+          "id": "b",
+          "text": "Join in if the child is unpopular"
+        },
+        {
+          "id": "c",
+          "text": "Claim belongings deserve respect only during Hajj"
+        },
+        {
+          "id": "d",
+          "text": "Refuse and respect the child's belongings and dignity"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The sermon strongly protects people's rights. A child's belongings and dignity should not become targets for entertainment or revenge.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1739",
+          "label": "Sahih al-Bukhari 1739",
+          "url": "https://sunnah.com/bukhari:1739"
+        }
+      ]
+    }
+  ]
+}

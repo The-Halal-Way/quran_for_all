@@ -1,0 +1,2304 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "hadith_knowledge",
+  "title": "হাদিস পরিচিতি",
+  "description": "ছোট্ট মুসলিম → মধ্যম স্তর। হাদিসের প্রথম পরিচয় আছে এমন শিশুদের জন্য ছোট প্রশ্ন। বর্ণনা পৌঁছানো, সতর্কভাবে কথা বলা, সুন্দর চরিত্র, আন্তরিক যত্ন, অন্যায় থামানো, অসুস্থের পাশে থাকা, আপ্যায়ন, গোপনীয়তা, ক্ষমা, পরিচিত আদব, ভারসাম্যপূর্ণ আমল, পরিষ্কারভাবে শেখানো ও প্রশ্ন করে শেখা নিয়ে লেখা। বাড়ি ও শ্রেণিকক্ষের দৈনন্দিন পরিস্থিতিও আছে। বড় কেউ প্রশ্ন পড়ে শোনাতে বা অপরিচিত শব্দ বুঝিয়ে দিতে পারেন। সব প্রশ্ন শিশুদের মধ্যম স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "মধ্যম স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। সহজ অর্থ, পরিচিত ভুল ধারণা ও সরল প্রয়োগের মাধ্যমে হাদিসের প্রথম পরিচয়ের ওপর শেখা এগিয়ে নেওয়া হয়েছে। বর্ণনাকারীর জীবনী, সনদ বিশ্লেষণ, বিশেষজ্ঞ পর্যায়ের মান নির্ধারণের বিতর্ক বা সূত্রের নম্বর মুখস্থ করা প্রয়োজন নেই। স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত হাদিসের বর্ণনা ও হাদিস পরিচিতি মিলিয়ে দেখা হয়েছে। সংযুক্ত সূত্রে সুনান আবু দাউদ ৪৯৯০ বর্ণনাটিকে আল-আলবানি হাসান বলেছেন; অন্য অধিকাংশ বর্ণনা সহিহ বুখারি বা সহিহ মুসলিম থেকে নেওয়া। সহিহ মুসলিম ৫ সংকলনটির ভূমিকায় আছে। প্রশ্ন ও ব্যাখ্যা শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; হুবহু অনুবাদ নয়। বর্তমান সময়ের পরিস্থিতিগুলো প্রয়োগ বোঝানোর উদাহরণ, উদ্ধৃত বর্ণনার ঘটনা নয়। শিশুর কর্তব্যকে প্রাপ্তবয়স্কের শরয়ি দায়িত্বের সমান করা হয়নি। ক্ষতি এড়ানো ও অন্যের যত্ন নেওয়ার সাধারণ শিক্ষা ভিন্ন ধর্মের কারও সঙ্গে খারাপ আচরণের অনুমতি নয়। বিশ্বস্ত বড় কাউকে উদ্বেগের কথা জানানো ও যাচাই না করা দাবি ছড়ানোকে আলাদা রাখা হয়েছে। ক্ষমা মানে চলতে থাকা ক্ষতি সহ্য করতেই হবে নয়; হয়রানি ঠেকাতে শিশুকে শারীরিক শক্তি ব্যবহার করতে বলা হয়নি। দর্শনার্থী, অনুমতি, উপহার ও শেখার রুটিন উপযুক্ত বড়দের দিকনির্দেশনার সঙ্গে উপস্থাপন করা হয়েছে। ডান দিকের উদাহরণটি জুতা পরা সম্পর্কে; সব কাজে এক নিয়ম চাপানো বা প্রতিবন্ধিতা বিচার করা নয়। শ্বাসের নির্দেশনা পাত্র সম্পর্কে, স্বাভাবিক শ্বাস সীমিত করা সম্পর্কে নয়। শেখানোর সময় আবার বলার উদ্দেশ্য বোঝানো হয়েছে; সাধারণ কথায় প্রতিটি বাক্য আবার বলার বাধ্যবাধকতা দেখানো হয়নি। কোনো প্রশ্ন শিশুকে অন্য কারও ঈমান বা মূল্য বিচার করতে বলে না। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_mid_hadith_knowledge_001",
+      "conceptId": "kids_hadith_transmitted_reports",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিসের বর্ণনা পরের প্রজন্মগুলোর কাছে কীভাবে পৌঁছেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের বর্ণনা করা ও আলেমদের সংরক্ষণের মাধ্যমে"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে জনপ্রিয় অনুমান বেছে নেওয়ার মাধ্যমে"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিবছর নতুন বার্তা বানানোর মাধ্যমে"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি কবিতাকে নবী ﷺ-এর কথা ধরে নেওয়ার মাধ্যমে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসের বর্ণনা মানুষের মাধ্যমে পৌঁছেছে এবং যত্ন নিয়ে যাচাই ও অধ্যয়ন করা হয়েছে। এই প্রক্রিয়া জানলে নির্ভরযোগ্যভাবে কথা পৌঁছানোর গুরুত্ব বোঝা যায়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_002",
+      "conceptId": "kids_hadith_not_repeat_everything",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "যা শুনি সব বলে বেড়ানো সম্পর্কে হাদিসটি কোন বিষয়ে সতর্ক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোনো ঘটনা নির্ভরযোগ্য কি না যাচাই করা"
+        },
+        {
+          "id": "b",
+          "text": "যাচাইয়ের যত্ন ছাড়া কথা ছড়ানো"
+        },
+        {
+          "id": "c",
+          "text": "কিছু বুঝতে শিক্ষককে প্রশ্ন করা"
+        },
+        {
+          "id": "d",
+          "text": "আমরা জানি না—এ কথা স্বীকার করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "যা শুনি সব বলে বেড়ালে মিথ্যা ছড়াতে পারে। কোনো কথাকে সত্য হিসেবে বলার আগে সতর্ক থাকা দরকার।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "সহিহ মুসলিম ৫",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_003",
+      "conceptId": "kids_hadith_safe_words_hands",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুসলিমের জিহ্বা ও হাত সম্পর্কে হাদিসটি কোন আচরণের প্রশংসা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিরক্ত হলেই মানুষকে কষ্ট দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "নজর কাড়তে অপমান করা"
+        },
+        {
+          "id": "c",
+          "text": "নিজের ক্ষতিকর কথা ও কাজ থেকে অন্য মুসলিমদের নিরাপদ রাখা"
+        },
+        {
+          "id": "d",
+          "text": "নিজেকে গুরুত্বপূর্ণ দেখাতে অন্যদের ধাক্কা দেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কথা ও হাতের মাধ্যমে অন্যদের ক্ষতি এড়ানোকে হাদিসটি ভালো মুসলিমের আচরণের সঙ্গে যুক্ত করেছে। নিজের আচরণের দিকে যত্ন নেওয়া দরকার।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "সহিহ বুখারি ১০",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_004",
+      "conceptId": "kids_hadith_help_stop_oppression",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্যের ওপর জুলুম করছে এমন ব্যক্তিকে সাহায্য করার ব্যাখ্যায় নবী ﷺ কী বলেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাকে আরও মানুষের ক্ষতি করতে সাহায্য করা"
+        },
+        {
+          "id": "b",
+          "text": "তার প্রতিটি অন্যায় লুকিয়ে রাখা"
+        },
+        {
+          "id": "c",
+          "text": "শক্তিশালী হওয়ার জন্য তার প্রশংসা করা"
+        },
+        {
+          "id": "d",
+          "text": "তাকে সেই অন্যায় থেকে থামানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কাউকে জুলুম থেকে থামানোও তাকে সাহায্য করা। কারও পাশে থাকা মানে তার ক্ষতিকর আচরণের পাশে থাকা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "সহিহ বুখারি ২৪৪৪",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_005",
+      "conceptId": "kids_hadith_good_character",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মানুষের মধ্যে উত্তম ব্যক্তি সম্পর্কে হাদিসে নবী ﷺ কোন গুণের প্রশংসা করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুন্দর আচরণ ও চরিত্র"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে দামি পোশাক থাকা"
+        },
+        {
+          "id": "c",
+          "text": "সবসময় সবচেয়ে জোরে কথা বলা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যকে ছোট মনে করানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি সুন্দর চরিত্রকে বিশেষ গুরুত্ব দেয়। আমাদের শেখা কথা বলার ধরন ও মানুষের সঙ্গে আচরণে প্রভাব ফেলা উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3559",
+          "label": "সহিহ বুখারি ৩৫৫৯",
+          "url": "https://sunnah.com/bukhari:3559"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_006",
+      "conceptId": "kids_hadith_sincere_care",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আন্তরিক শুভকামনা ও উপদেশের হাদিস অনুযায়ী অন্য মুসলিমদের জন্য কেমন মনোভাব থাকা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তারা বিব্রত হলে আনন্দ পাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "তাদের প্রকৃত কল্যাণ চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্যের ভান করে ক্ষতির পরিকল্পনা করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু লোক দেখাতে উপদেশ দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসটি অন্য মুসলিমদের প্রতিও আন্তরিকতার শিক্ষা দেয়। ভালো উপদেশের উদ্দেশ্য যত্ন দেখানো, কাউকে অপমান করা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "55a",
+          "label": "সহিহ মুসলিম ৫৫a",
+          "url": "https://sunnah.com/muslim:55a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_007",
+      "conceptId": "kids_hadith_care_for_sick",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অসুস্থ মানুষ সম্পর্কে হাদিসে যত্নের কোন কাজটি সরাসরি উৎসাহিত করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অসুস্থ হওয়ার কারণে কাউকে নিয়ে হাসাহাসি করা"
+        },
+        {
+          "id": "b",
+          "text": "অসুস্থতার কারণে কাউকে দূরে সরিয়ে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "অসুস্থকে দেখতে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "যাদের যত্ন দরকার তাদের সবাইকে উপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ অসুস্থকে দেখতে উৎসাহিত করেছেন। কেউ অসুস্থ হলে তার প্রতি যত্নশীল হতে এই শিক্ষা মনে করিয়ে দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5649",
+          "label": "সহিহ বুখারি ৫৬৪৯",
+          "url": "https://sunnah.com/bukhari:5649"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_008",
+      "conceptId": "kids_hadith_feeding_greetings",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইসলামের ভালো আচরণ সম্পর্কে প্রশ্ন করা হলে নবী ﷺ কোন দুটি কাজের প্রশংসা করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্পদ নিয়ে বড়াই করা ও সব সালাম প্রত্যাখ্যান করা"
+        },
+        {
+          "id": "b",
+          "text": "সব খাবার নিজের কাছে রাখা ও নতুনদের নিয়ে হাসাহাসি করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু উপহার দিতে পারবে এমন মানুষের সঙ্গে কথা বলা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যকে খাওয়ানো ও সালাম দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনাটিতে অন্যকে খাওয়ানো ও সালাম দেওয়া একসঙ্গে এসেছে। দয়া ও আন্তরিক সম্ভাষণ দৈনন্দিন ইসলামী আচরণের অংশ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "সহিহ বুখারি ১২",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_009",
+      "conceptId": "kids_hadith_avoid_envy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্য মুসলিমদের প্রতি কোন মনোভাব এড়াতে হাদিসটি সতর্ক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হিংসা ও শত্রুতা"
+        },
+        {
+          "id": "b",
+          "text": "তাদের কল্যাণ চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "তাদের সম্মান করা"
+        },
+        {
+          "id": "d",
+          "text": "তাদের মর্যাদার খেয়াল রাখা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি হিংসা ও শত্রুতা থেকে সতর্ক করে। অন্যের পাওয়া নিয়ামত তাকে ঘৃণা বা কষ্ট দেওয়ার কারণ হওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564a",
+          "label": "সহিহ মুসলিম ২৫৬৪a",
+          "url": "https://sunnah.com/muslim:2564a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_010",
+      "conceptId": "kids_hadith_considerate_guest",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অতিথিকে কোন আচরণ এড়াতে হাদিসটি শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মেজবানের অবস্থার খেয়াল রাখা"
+        },
+        {
+          "id": "b",
+          "text": "এমনভাবে থাকা যাতে মেজবানের কষ্ট হয়"
+        },
+        {
+          "id": "c",
+          "text": "আপ্যায়নের জন্য কৃতজ্ঞ থাকা"
+        },
+        {
+          "id": "d",
+          "text": "বেড়াতে গিয়ে ভদ্রভাবে কথা বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসটি উদার আপ্যায়ন ও অতিথির বিবেচনাবোধ শেখায়। বেড়াতে যাওয়া যেন মেজবানের জন্য বোঝা না হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6135",
+          "label": "সহিহ বুখারি ৬১৩৫",
+          "url": "https://sunnah.com/bukhari:6135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_011",
+      "conceptId": "kids_hadith_permission_three",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "তিনবার প্রবেশের অনুমতি চেয়েও না পেলে হাদিস অনুযায়ী কী করতে হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "থামা ছাড়া ঢোকার দাবি জানিয়ে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "দরজা ঠেলে খুলে ফেলা"
+        },
+        {
+          "id": "c",
+          "text": "জোর করে না ঢুকে ফিরে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "চুপ থাকাকেই অনুমতি ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তিনবার চেয়েও অনুমতি না পেলে নবী ﷺ ফিরে যেতে শিখিয়েছেন। অন্যের বাড়ির প্রতি সম্মান দেখাতে এই সীমাও মানতে হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6245",
+          "label": "সহিহ বুখারি ৬২৪৫",
+          "url": "https://sunnah.com/bukhari:6245"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_012",
+      "conceptId": "kids_hadith_include_third_person",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "তিনজন একসঙ্গে বসলে কোন গোপন আলাপের ব্যাপারে হাদিসটি সতর্ক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনজনের একসঙ্গে বন্ধুত্বপূর্ণ আলাপে অংশ নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সবাই শুনতে পায় এমনভাবে একজনের প্রশ্ন করা"
+        },
+        {
+          "id": "c",
+          "text": "কেউ কথা বললে মন দিয়ে শোনা"
+        },
+        {
+          "id": "d",
+          "text": "তৃতীয়জনকে বাদ দিয়ে দুজনের ফিসফিস করে কথা বলা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তৃতীয়জনকে বাদ দিলে যে কষ্ট হয়, হাদিসটি তা বিবেচনা করেছে। কথা বলার সময় অন্যদের অনুভূতির খেয়াল রাখা উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "সহিহ বুখারি ৬২৯০",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_013",
+      "conceptId": "kids_hadith_forgiveness_honor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্যকে ক্ষমা করা সম্পর্কে হাদিসটি কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষমা করার মাধ্যমে আল্লাহ মানুষের সম্মান বাড়ান"
+        },
+        {
+          "id": "b",
+          "text": "ক্ষমা করলে মানুষ সবসময় মূল্যহীন হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "শুধু প্রতিশোধই সম্মান এনে দেয়"
+        },
+        {
+          "id": "d",
+          "text": "ক্ষমা করা মানে নিরাপদ থাকার সব অধিকার হারানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি ক্ষমাকে আল্লাহর কাছ থেকে সম্মান পাওয়ার মাধ্যম হিসেবে প্রশংসা করে। ক্ষমাকে মূল্যহীনতা বা দুর্বলতা ভাবা ঠিক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "সহিহ মুসলিম ২৫৮৮",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_014",
+      "conceptId": "kids_hadith_right_shoe_first",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "জুতা পরার সময় নবী ﷺ কোন দিক দিয়ে শুরু করতে পছন্দ করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বাম দিক"
+        },
+        {
+          "id": "b",
+          "text": "ডান দিক"
+        },
+        {
+          "id": "c",
+          "text": "যে জুতাটি বেশি দামি"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিদিন নতুন কোনো দিক"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়িশার বর্ণনায় আছে, নবী ﷺ জুতা পরার সময় ডান দিক দিয়ে শুরু করতে পছন্দ করতেন। এটি দৈনন্দিন সুন্নাহর পরিচিত উদাহরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "168",
+          "label": "সহিহ বুখারি ১৬৮",
+          "url": "https://sunnah.com/bukhari:168"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_015",
+      "conceptId": "kids_hadith_breathe_away_cup",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "পান করার সময় শ্বাস নেওয়া সম্পর্কে হাদিসটি কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবসময় সরাসরি গ্লাসের ভেতর শ্বাস ফেলা"
+        },
+        {
+          "id": "b",
+          "text": "মজা করে অন্যের পানীয়তে ফুঁ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "পান করার পাত্রের ভেতর শ্বাস না ফেলা"
+        },
+        {
+          "id": "d",
+          "text": "পান করার আদব সম্পর্কে কোনো শিক্ষা নেই মনে করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসটি পাত্রের ভেতর শ্বাস ফেলতে নিষেধ করে। শ্বাস নেওয়ার প্রয়োজন হলে গ্লাস মুখ থেকে সরিয়ে নিতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5630",
+          "label": "সহিহ বুখারি ৫৬৩০",
+          "url": "https://sunnah.com/bukhari:5630"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_016",
+      "conceptId": "kids_hadith_avoid_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দ্বীনের সহজতা সম্পর্কে হাদিসটি কোন বিষয়ে সতর্ক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপযুক্ত গতিতে শেখা"
+        },
+        {
+          "id": "b",
+          "text": "প্রয়োজন হলে দিকনির্দেশনা নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "ধীরে ধীরে উন্নতির চেষ্টা করা"
+        },
+        {
+          "id": "d",
+          "text": "চালিয়ে যেতে পারব না এমন অতিরিক্ত চাপ নিজের ওপর নেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসটি দ্বীনকে অকারণে কঠিন না করে ভারসাম্য শেখায়। সামর্থ্য অনুযায়ী চললে শেখা ও আমল চালিয়ে যাওয়া সহজ হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "সহিহ বুখারি ৩৯",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_017",
+      "conceptId": "kids_hadith_repeat_for_understanding",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আনাসের বর্ণনায় নবী ﷺ একটি কথা তিনবার কেন বলতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শ্রোতারা যেন ভালোভাবে বুঝতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "যেন কেউ প্রশ্ন করতে না পারে"
+        },
+        {
+          "id": "c",
+          "text": "যেন বার্তাটি ভিন্ন শিক্ষায় বদলে যায়"
+        },
+        {
+          "id": "d",
+          "text": "যেন শুধু সবচেয়ে দ্রুত বোঝে এমন ব্যক্তিরা শিখতে পারে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনাটিতে আবার বলার সঙ্গে বোঝার সম্পর্ক আছে। শিক্ষার কাজ মানুষকে বিভ্রান্ত রাখা নয়, বিষয়টি বুঝতে সাহায্য করা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "সহিহ বুখারি ৯৫",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_018",
+      "conceptId": "kids_hadith_learning_questions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এক আগন্তুক দ্বীন সম্পর্কে প্রশ্ন করতে চাইলে নবী ﷺ কী করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বলেছিলেন, প্রশ্ন করে শেখা সবসময় নিষিদ্ধ"
+        },
+        {
+          "id": "b",
+          "text": "তাকে প্রশ্ন করার সুযোগ দিয়েছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "নামাজের প্রতিটি প্রশ্নের উত্তর দিতে অস্বীকার করেছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "দাবি করেছিলেন, তাকে আগেই সব উত্তর জানতে হবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটিতে এক আগন্তুকের প্রশ্ন করা ও উত্তর পাওয়ার কথা আছে। বোঝার জন্য প্রশ্ন করা আন্তরিকভাবে শেখার অংশ হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "63",
+          "label": "সহিহ বুখারি ৬৩",
+          "url": "https://sunnah.com/bukhari:63"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_019",
+      "conceptId": "kids_hadith_truthful_humor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মানুষকে হাসানোর চেষ্টা করার সময় কোন কাজ থেকে হাদিসটি সতর্ক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্য ও সুন্দরভাবে কথা বলা"
+        },
+        {
+          "id": "b",
+          "text": "সত্যি কোনো মজার স্মৃতি উপভোগ করা"
+        },
+        {
+          "id": "c",
+          "text": "তাদের আনন্দ দিতে মিথ্যা বলা"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে ধোঁকা দেয় এমন রসিকতা এড়ানো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটি মানুষকে হাসানোর জন্য মিথ্যা বলা থেকে সতর্ক করে। কাউকে হাসাতে পারলেই ইচ্ছাকৃত মিথ্যা গ্রহণযোগ্য হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4990",
+          "label": "সুনান আবু দাউদ ৪৯৯০",
+          "url": "https://sunnah.com/abudawud:4990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_020",
+      "conceptId": "kids_hadith_planting_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "একজন মুসলিম গাছ লাগালে বা বীজ বুনলে কোন বিষয়টি সদকা হতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি জীবকে চিরদিন দূরে রাখা"
+        },
+        {
+          "id": "b",
+          "text": "বড়াই করে বলা, অন্য কেউ খাবার পাওয়ার যোগ্য নয়"
+        },
+        {
+          "id": "c",
+          "text": "শুধু নজর কাড়তে ফসল নষ্ট করা"
+        },
+        {
+          "id": "d",
+          "text": "কোনো মানুষ, পাখি বা প্রাণীর তা থেকে খাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে মুসলিমের লাগানো গাছ বা ফসল থেকে অন্যের খাওয়াকে সদকা বলা হয়েছে। উপকারী গাছ মানুষ ও প্রাণীর কাজে আসতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "সহিহ বুখারি ২৩২০",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_021",
+      "conceptId": "kids_hadith_transmitted_reports",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাদিস সংরক্ষণ করা আর নবী ﷺ-এর নামে নতুন কথা বানানো কি একই কাজ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, সংরক্ষণে বর্ণনা পৌঁছানো হয়, বানানো হয় না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, দুটির অর্থই সুন্দর শোনায় এমন কথা বানানো"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, আলেমকে প্রতিবছর নবী ﷺ-এর নতুন কথা বানাতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ কোনো হাদিসই কখনো সংরক্ষিত হয়নি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আলেমরা মানুষের মাধ্যমে পাওয়া বর্ণনা সংরক্ষণ ও অধ্যয়ন করেন। এটি কথা বানিয়ে নবী ﷺ-এর নামে চালানোর থেকে আলাদা।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_022",
+      "conceptId": "kids_hadith_not_repeat_everything",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অনেকের কাছে একটি ঘটনা শুনলেই কি তা সত্য প্রমাণিত হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, বারবার বলা প্রতিটি ঘটনাই সত্য"
+        },
+        {
+          "id": "b",
+          "text": "না, বারবার শোনা আর নির্ভরযোগ্য প্রমাণ এক নয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সবচেয়ে রোমাঞ্চকর বর্ণনাটিই সবসময় সঠিক"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ বর্ণনা যাচাই কখনোই কাজে আসে না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "একটি ঘটনা সত্য না হয়েও অনেকের কাছে ছড়াতে পারে। শোনা সব কথা না বলার সতর্কতা তথ্য ছড়ানোর আগে যত্ন নিতে শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "সহিহ মুসলিম ৫",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_023",
+      "conceptId": "kids_hadith_safe_words_hands",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কাউকে না মেরেও বারবার অপমান করলে কি জিহ্বা ও হাতের পুরো শিক্ষাটি মানা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, অপমান কখনো ক্ষতি বলে গণ্য হয় না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, কথার কোনো প্রভাবই কারও ওপর পড়ে না"
+        },
+        {
+          "id": "c",
+          "text": "না, ক্ষতিকর কথাও গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ হাদিসটি বরং ধাক্কা দিতে উৎসাহ দেয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শিক্ষাটিতে কথা ও শারীরিক কাজ দুটিই আছে। এক ধরনের ক্ষতি এড়ালেই অন্য ধরনের ক্ষতি গ্রহণযোগ্য হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "সহিহ বুখারি ১০",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_024",
+      "conceptId": "kids_hadith_help_stop_oppression",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বন্ধুকে সাহায্য করা মানে কি সে কাউকে হয়রানি করলে তার সঙ্গে যোগ দেওয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, বন্ধুত্ব প্রতিটি কাজকে সঠিক করে দেয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু সবচেয়ে শক্তিশালী শিশুর অনুভূতিই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ কাউকে সাহায্য করাই সবসময় নিষিদ্ধ"
+        },
+        {
+          "id": "d",
+          "text": "না, তাকে অন্যায় থেকে থামাতে সাহায্য করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হয়রানিতে যোগ না দিলে ভুক্তভোগী ও অন্যায় করা বন্ধু—দুজনেরই উপকার হতে পারে। প্রয়োজনে বিশ্বস্ত বড় কারও সাহায্য নাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "সহিহ বুখারি ২৪৪৪",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_025",
+      "conceptId": "kids_hadith_good_character",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ধর্ম সম্পর্কে অনেক তথ্য জানলে কি সুন্দর আচরণের প্রয়োজন শেষ হয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, ভালো চরিত্র তখনো গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, জ্ঞান অপমান করার অনুমতি দেয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু নতুন শিক্ষার্থীদের জন্যই ভদ্রতা দরকার"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ তথ্য শেখা সবসময় ভুল"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি সুন্দর চরিত্রের প্রশংসা করে। জ্ঞান আমাদের আচরণ ভালো করতে সাহায্য করবে, মানুষের সঙ্গে খারাপ ব্যবহার করার অজুহাত হবে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3559",
+          "label": "সহিহ বুখারি ৩৫৫৯",
+          "url": "https://sunnah.com/bukhari:3559"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_026",
+      "conceptId": "kids_hadith_sincere_care",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শেখার সময় কাউকে আন্তরিক উপদেশ দেওয়ার সবচেয়ে উপযুক্ত উদ্দেশ্য কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাকে নিয়ে পুরো শ্রেণিকে হাসানো"
+        },
+        {
+          "id": "b",
+          "text": "তাকে বুঝতে ও উন্নতি করতে সাহায্য করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রমাণ করা যে তার কোনো মূল্য নেই"
+        },
+        {
+          "id": "d",
+          "text": "তার ভুল দেখিয়ে প্রশংসা কুড়ানো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আন্তরিক উপদেশ অন্যের কল্যাণ চায়। লোক দেখানো বা শিক্ষার্থীকে অপমান করা সেই উদ্দেশ্যের সঙ্গে মেলে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "55a",
+          "label": "সহিহ মুসলিম ৫৫a",
+          "url": "https://sunnah.com/muslim:55a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_027",
+      "conceptId": "kids_hadith_care_for_sick",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অসুস্থের যত্ন নেওয়া মানে কি তাকে ও দর্শনার্থীদের নিরাপদ রাখার নির্দেশ অমান্য করা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, যত্ন মানে যেভাবে চাই সেভাবে দেখতে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অসুস্থ ব্যক্তিকে সবসময় দর্শনার্থী গ্রহণ করতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "না, যত্ন নেওয়ার সময় উপযুক্ত ব্যবস্থাও মানতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ অসুস্থরা কখনো সঙ্গ পাওয়ার যোগ্য নয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শিক্ষাটি যত্নে উৎসাহ দেয়, অসুবিধা করে দেখতে যাওয়ায় নয়। অসুস্থ কাউকে সাহায্যের উপযুক্ত ব্যবস্থা বড় কাউকে করতে দাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5649",
+          "label": "সহিহ বুখারি ৫৬৪৯",
+          "url": "https://sunnah.com/bukhari:5649"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_028",
+      "conceptId": "kids_hadith_feeding_greetings",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাদিসটি কি শুধু সবচেয়ে ঘনিষ্ঠ বন্ধুদের সালাম দিতে বলেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু সবচেয়ে ভালো বন্ধুই সালাম পাওয়ার যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু উপহার আনে এমন ব্যক্তিকেই সালাম দেওয়া যায়"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ এটি সব সালামই নিষিদ্ধ করে"
+        },
+        {
+          "id": "d",
+          "text": "না, পরিচিত ও অপরিচিত উভয়ের কথা আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসটি ছোট বন্ধুদের গণ্ডির বাইরেও আন্তরিক সালাম দিতে উৎসাহ দেয়। শিশুরা বড়দের দিকনির্দেশনায় উপযুক্ত পরিবেশে এটি শিখতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "সহিহ বুখারি ১২",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_029",
+      "conceptId": "kids_hadith_avoid_envy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্যের নিয়ামত হারানোর কামনা না করেও কি আমরা নিজের উন্নতির চেষ্টা করতে পারি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শেখা ও অন্যের কল্যাণ চাওয়া একসঙ্গে সম্ভব"
+        },
+        {
+          "id": "b",
+          "text": "না, উন্নতি করতে হলে অন্যের সাফল্যকে ঘৃণা করতেই হয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, তবে গোপনে তার ব্যর্থতা কামনা করলেই কেবল"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ হিংসাই একমাত্র কার্যকর প্রেরণা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হিংসা এড়ানো মানে নিজের চেষ্টা ছেড়ে দেওয়া নয়। অন্যের নিয়ামত দেখে বিরক্ত না হয়েও নিজের জন্য ভালো চাইতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564a",
+          "label": "সহিহ মুসলিম ২৫৬৪a",
+          "url": "https://sunnah.com/muslim:2564a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_030",
+      "conceptId": "kids_hadith_considerate_guest",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "উদার আপ্যায়ন পেলে কি অতিথিরা মেজবানের প্রয়োজন উপেক্ষা করতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, মেজবানের অবস্থা কখনোই গুরুত্বপূর্ণ নয়"
+        },
+        {
+          "id": "b",
+          "text": "না, অতিথিদেরও বিবেচনা করা উচিত"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, অতিথিরা যা মনে আসে তাই দাবি করতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ অতিথিকে স্বাগত জানানোই সবসময় ভুল"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আপ্যায়ন ও বিবেচনা একসঙ্গে থাকা দরকার। অতিথির উচিত দয়ার মূল্য বোঝা, বেড়ানোকে মেজবানের কষ্টের কারণ না করা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6135",
+          "label": "সহিহ বুখারি ৬১৩৫",
+          "url": "https://sunnah.com/bukhari:6135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_031",
+      "conceptId": "kids_hadith_permission_three",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অনুমতি না পেলে শুধু তিনবার চাওয়ার কারণে কি ঘরে ঢোকা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, তিনবার চাইলেই যেকোনো বাড়ি আমাদের হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, উত্তর না পাওয়া মানেই সবসময় অনুমতি পাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "না, শিক্ষাটি হলো ফিরে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "না, তবে তার বদলে দরজা নষ্ট করা উচিত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "চাওয়া আর অনুমতি পাওয়া এক নয়। হাদিসটি ঢোকার জন্য জেদ না করে ফিরে যেতে বলে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6245",
+          "label": "সহিহ বুখারি ৬২৪৫",
+          "url": "https://sunnah.com/bukhari:6245"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_032",
+      "conceptId": "kids_hadith_include_third_person",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "তিনজনের মধ্যে দুজনের গোপন কথা তৃতীয়জনকে কেন কষ্ট দিতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে তার সবসময় স্বাগত বোধ হয়"
+        },
+        {
+          "id": "b",
+          "text": "এটি প্রমাণ করে, তার অনুভূতির কোনো গুরুত্ব নেই"
+        },
+        {
+          "id": "c",
+          "text": "এতে প্রতিটি গোপন আলাপই ক্ষতিহীন হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "তার মনে হতে পারে, তাকে বাদ দেওয়া হচ্ছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনাটিতে মন খারাপ হওয়ার কথা বলা হয়েছে। শিক্ষাটি অন্যের অনুভূতি বুঝতে উৎসাহ দেয়; সব ধরনের ব্যক্তিগত আলাপ নিষিদ্ধ করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "সহিহ বুখারি ৬২৯০",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_033",
+      "conceptId": "kids_hadith_forgiveness_honor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কারও সাধারণ ভুল ক্ষমা করলে কি নিজের মর্যাদা থাকে না?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, হাদিসে ক্ষমার সঙ্গে সম্মান বৃদ্ধির সম্পর্ক আছে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু প্রতিশোধ নেওয়া ব্যক্তিদেরই মর্যাদা থাকে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, ক্ষমা দয়ার অর্থই নষ্ট করে দেয়"
+        },
+        {
+          "id": "d",
+          "text": "না, তবে এতে চলতে থাকা ক্ষতি মেনে নিতেই হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি ক্ষমার প্রশংসা করে। এটি অনিরাপদ অবস্থায় থাকতে বা ক্ষতি চললে সাহায্য নিতে অস্বীকার করতে বলে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "সহিহ মুসলিম ২৫৮৮",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_034",
+      "conceptId": "kids_hadith_right_shoe_first",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জুতা পরার সময় ডান দিক দিয়ে শুরু করার বর্ণনাটি কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু দামি জুতাই সম্মান রেখে পরা যায়"
+        },
+        {
+          "id": "b",
+          "text": "পরিচিত দৈনন্দিন অভ্যাসও সুন্নাহর অন্তর্ভুক্ত"
+        },
+        {
+          "id": "c",
+          "text": "দৈনন্দিন অভ্যাস সম্পর্কে শেখার মতো কিছুই নেই"
+        },
+        {
+          "id": "d",
+          "text": "ভিন্ন শারীরিক সামর্থ্যের মানুষ উপহাস পাওয়ার যোগ্য"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটি সাধারণ অভ্যাসেও দিকনির্দেশনা দেখায়। এটি যত্ন শেখাবে, ভিন্ন প্রয়োজন বা সামর্থ্যের কাউকে নিয়ে হাসাহাসি নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "168",
+          "label": "সহিহ বুখারি ১৬৮",
+          "url": "https://sunnah.com/bukhari:168"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_035",
+      "conceptId": "kids_hadith_breathe_away_cup",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গ্লাসের ভেতর শ্বাস না ফেলা মানে কি স্বাভাবিক শ্বাস নেওয়াও এড়ানো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, পান করতে হলে স্বাভাবিক শ্বাস বন্ধ রাখতে হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শ্বাস নেওয়া সবসময় অভদ্রতা"
+        },
+        {
+          "id": "c",
+          "text": "না, শ্বাস নিতে গ্লাস সরিয়ে নাও"
+        },
+        {
+          "id": "d",
+          "text": "না, তবে অন্যের গ্লাসে শ্বাস ফেলা উচিত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নির্দেশটি পাত্রের ভেতর শ্বাস ফেলা সম্পর্কে। গ্লাস সরালে স্বাভাবিক শ্বাস নেওয়া ও শেখানো আদব মানা দুটোই সম্ভব।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5630",
+          "label": "সহিহ বুখারি ৫৬৩০",
+          "url": "https://sunnah.com/bukhari:5630"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_036",
+      "conceptId": "kids_hadith_avoid_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দ্বীনে অপ্রয়োজনীয় কষ্ট এড়ানো মানে কি প্রতিটি ভালো কাজ ছেড়ে দেওয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শেখা ও ইবাদত দুটিই বন্ধ করতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, যেকোনো চেষ্টাই ভুল"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ শুধু ক্লান্তিই আন্তরিকতার প্রমাণ"
+        },
+        {
+          "id": "d",
+          "text": "না, সঠিক ও সামর্থ্য অনুযায়ী পথে চলার চেষ্টা করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসটি চালিয়ে যাওয়া যায় এমন ভারসাম্যপূর্ণ পথ শেখায়। অতিরিক্ত চাপ এড়ানো আর শেখা ও ভালো কাজ প্রত্যাখ্যান করা এক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "সহিহ বুখারি ৩৯",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_037",
+      "conceptId": "kids_hadith_repeat_for_understanding",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শেখানোর এই বর্ণনায় আবার বলার গুরুত্বপূর্ণ উদ্দেশ্য কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শ্রোতাকে বুঝতে সাহায্য করা"
+        },
+        {
+          "id": "b",
+          "text": "শেখাকে অসম্ভব মনে করানো"
+        },
+        {
+          "id": "c",
+          "text": "মূল শিক্ষার বদলে নতুন কিছু বানানো"
+        },
+        {
+          "id": "d",
+          "text": "ধীরে শেখে এমন ব্যক্তিরা উপহাস পাওয়ার যোগ্য দেখানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "অর্থ পরিষ্কার করতে আবার বলা হয়। এর উদ্দেশ্য বোঝানো, বেশি সময় দরকার এমন কাউকে লজ্জা দেওয়া নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "সহিহ বুখারি ৯৫",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_038",
+      "conceptId": "kids_hadith_learning_questions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পাঠ বুঝতে ভদ্রভাবে প্রশ্ন করা কি প্রমাণ করে যে শেখাকে আমরা গুরুত্ব দিই না?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি প্রশ্ন মানেই পাঠ প্রত্যাখ্যান করা"
+        },
+        {
+          "id": "b",
+          "text": "না, প্রশ্ন বোঝার আগ্রহ দেখাতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু একেবারে কিছু জানে না এমন ব্যক্তিরাই প্রশ্ন করে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ উত্তর সবসময় বানিয়ে বলা উচিত"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আগন্তুকের প্রশ্নগুলো দ্বীনের শিক্ষা পরিষ্কার করতে সাহায্য করেছিল। আন্তরিক প্রশ্ন শেখায় বাধা না হয়ে সহায়তা করতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "63",
+          "label": "সহিহ বুখারি ৬৩",
+          "url": "https://sunnah.com/bukhari:63"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_039",
+      "conceptId": "kids_hadith_truthful_humor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মানুষ হাসলেই কি ইচ্ছাকৃত মিথ্যা ঘটনা সত্য হয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, যথেষ্ট হাসি হলে প্রতিটি দাবি সঠিক হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, রসিকতায় সততার সব প্রয়োজন শেষ হয়"
+        },
+        {
+          "id": "c",
+          "text": "না, হাসি মিথ্যাকে সত্যে বদলে দেয় না"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সত্য ও সুন্দর রসিকতা সবসময় নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সতর্কতাটি মানুষকে হাসানোর জন্য মিথ্যা বলা সম্পর্কে। আনন্দের জন্যও ইচ্ছাকৃত মিথ্যাকে সত্য ঘটনা হিসেবে বলা যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4990",
+          "label": "সুনান আবু দাউদ ৪৯৯০",
+          "url": "https://sunnah.com/abudawud:4990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_040",
+      "conceptId": "kids_hadith_planting_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গাছ লাগানোর হাদিসে কি শুধু মানুষ ফসল খেলে উপকারের কথা আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, পাখি ও প্রাণী কখনো উপকৃত হতে পারে না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু যে লাগিয়েছে সে-ই খেতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ হাদিসে গাছ লাগানোর কোনো মূল্য নেই বলা হয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "না, পাখি ও প্রাণীর কথাও আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে লাগানো গাছ বা ফসল থেকে মানুষ, পাখি ও প্রাণীর খাওয়ার কথা আছে। এর উপকার নানা জীবের কাছে পৌঁছাতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "সহিহ বুখারি ২৩২০",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_041",
+      "conceptId": "kids_hadith_transmitted_reports",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পাঠে বলা হলো, বর্ণনাকারীরা হাদিস পৌঁছিয়েছেন এবং তা সংকলনে সংরক্ষিত হয়েছে। এটি কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বর্ণনা কীভাবে পৌঁছেছে ও লিখে রাখা হয়েছে"
+        },
+        {
+          "id": "b",
+          "text": "নবী ﷺ-এর নামে নতুন কথা কীভাবে বানাতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "লাইকের সংখ্যা গুনে কীভাবে বর্ণনা বাছতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "যেকোনো কবিতাকে কীভাবে কুরআন বানাতে হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনা পৌঁছানো ও সংকলন করা হাদিস সংরক্ষণের সঙ্গে সম্পর্কিত। এগুলো নবী ﷺ-এর নামে কথা বানানোর অনুমতি দেয় না।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_042",
+      "conceptId": "kids_hadith_not_repeat_everything",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "গ্রুপ চ্যাটে এক সহপাঠী সম্পর্কে যাচাই না করা ঘটনা এসেছে। শোনা সব কথা ছড়ানোর সতর্কতা অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবার আগে অন্যদের কাছে পাঠিয়ে দেব"
+        },
+        {
+          "id": "b",
+          "text": "সত্য বলে পাঠাব না; বড় কাউকে যাচাইয়ে সাহায্য করতে বলব"
+        },
+        {
+          "id": "c",
+          "text": "ঘটনাকে রোমাঞ্চকর করতে আরও তথ্য বানাব"
+        },
+        {
+          "id": "d",
+          "text": "ধরে নেব, প্রতিটি বার্তাই সঠিক"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "যাচাই না করে বারবার বললে মিথ্যা ছড়াতে ও কারও কষ্ট হতে পারে। সত্য ঘটনা হিসেবে ছড়ানোর আগে থামো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "সহিহ মুসলিম ৫",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_043",
+      "conceptId": "kids_hadith_safe_words_hands",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খেলার সময় বিরক্ত লাগছে। জিহ্বা ও হাত দিয়ে ক্ষতি এড়ানোর হাদিস অনুযায়ী কোনটি করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মারিনি বলে সহপাঠীকে অপমান করব"
+        },
+        {
+          "id": "b",
+          "text": "চুপ ছিলাম বলে কাউকে ধাক্কা দেব"
+        },
+        {
+          "id": "c",
+          "text": "ভদ্রভাবে কথা বলব এবং হাত দিয়ে কাউকে আঘাত করব না"
+        },
+        {
+          "id": "d",
+          "text": "কথা ও হাত দিয়ে অন্য দলকে ভয় দেখাব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শিক্ষাটিতে কথা ও শারীরিক আচরণ দুটিই আছে। বিরক্ত লাগা অন্য খেলোয়াড়ের ক্ষতি করার অনুমতি দেয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "সহিহ বুখারি ১০",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_044",
+      "conceptId": "kids_hadith_help_stop_oppression",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু ছোট শিশুকে হয়রানি করতে তোমার সাহায্য চায়। বন্ধুকে সত্যিকারের সাহায্য কীভাবে করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বন্ধুত্ব প্রমাণ করতে যোগ দেব"
+        },
+        {
+          "id": "b",
+          "text": "সব বড় মানুষের কাছ থেকে ঘটনাটি লুকিয়ে রাখব"
+        },
+        {
+          "id": "c",
+          "text": "বন্ধুকে আরও নিষ্ঠুর হতে উৎসাহ দেব"
+        },
+        {
+          "id": "d",
+          "text": "রাজি হব না এবং হয়রানি থামাতে শিক্ষকের সাহায্য নেব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ অন্যায়কারীকে সাহায্য করার ব্যাখ্যায় তাকে অন্যায় থেকে থামানোর কথা বলেছেন। শিক্ষক শিশুটিকে রক্ষা করতে ও নিরাপদভাবে হয়রানি থামাতে সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "সহিহ বুখারি ২৪৪৪",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_045",
+      "conceptId": "kids_hadith_good_character",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হাসান কুইজে ভালো করেও ধীরে শেখা শিশুদের নিয়ে হাসাহাসি করে। সুন্দর চরিত্রের হাদিস অনুযায়ী কোন কথাটি মনে করানো উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জ্ঞানের সঙ্গে সম্মানজনক আচরণও থাকা দরকার"
+        },
+        {
+          "id": "b",
+          "text": "বেশি নম্বর পেলে অন্যকে অপমান করা যায়"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ধীরে শেখা শিশুদেরই দয়া শিখতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "কুইজে জিতলে সবার অনুভূতি উপেক্ষা করা যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি সুন্দর চরিত্রের প্রশংসা করে। শেখা হাসানকে যত্নশীল হতে সাহায্য করবে, অন্যকে ছোট ভাবার কারণ হবে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3559",
+          "label": "সহিহ বুখারি ৩৫৫৯",
+          "url": "https://sunnah.com/bukhari:3559"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_046",
+      "conceptId": "kids_hadith_sincere_care",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু পাঠ ভুল বুঝে সাহায্য চায়। কোন উত্তরে আন্তরিক যত্ন প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার ভুল দিয়ে তাকে লজ্জা দেব"
+        },
+        {
+          "id": "b",
+          "text": "সুন্দরভাবে বুঝিয়ে দেব; নিশ্চিত না হলে শিক্ষককে জিজ্ঞেস করব"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্যের ভান করে ভুল কিছু শেখাব"
+        },
+        {
+          "id": "d",
+          "text": "বলব, সাহায্য লাগলে তার কোনো মূল্য নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আন্তরিক যত্ন অন্যের কল্যাণ চায়। দয়া দেখাও এবং উত্তর বানিয়ে না বলে উপযুক্ত সাহায্য নাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "55a",
+          "label": "সহিহ মুসলিম ৫৫a",
+          "url": "https://sunnah.com/muslim:55a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_047",
+      "conceptId": "kids_hadith_care_for_sick",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক আত্মীয় অসুস্থ। শিশু হিসেবে যত্ন দেখানোর উপযুক্ত উপায় কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিবার বিশ্রাম দরকার বললেও দেখা করার জেদ করা"
+        },
+        {
+          "id": "b",
+          "text": "তার অসুস্থতা নিয়ে হাসাহাসি করা"
+        },
+        {
+          "id": "c",
+          "text": "উপযুক্ত সময়ে দেখা বা বার্তা দেওয়া নিয়ে মা–বাবাকে জিজ্ঞেস করা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যদের বলা, তাকে উপেক্ষা করা উচিত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসটি অসুস্থের যত্ন নিতে উৎসাহ দেয়। যত্ন দেখানোর উপযুক্ত উপায় ঠিক করতে মা–বাবা সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5649",
+          "label": "সহিহ বুখারি ৫৬৪৯",
+          "url": "https://sunnah.com/bukhari:5649"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_048",
+      "conceptId": "kids_hadith_feeding_greetings",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পারিবারিক আয়োজনে কোন দুটি কাজ খাবার ও সালামের হাদিসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাবার লুকিয়ে রাখা ও সব সালাম প্রত্যাখ্যান করা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু উপহার দেয় এমন মানুষের সঙ্গে কথা বলা"
+        },
+        {
+          "id": "c",
+          "text": "অপরিচিত অতিথিদের নিয়ে হাসাহাসি করা"
+        },
+        {
+          "id": "d",
+          "text": "অনুমোদিত খাবার পরিবেশনে সাহায্য করা ও সম্মানের সঙ্গে সালাম দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনাটি অন্যকে খাওয়ানো ও সালাম দেওয়ার প্রশংসা করে। পারিবারিক আয়োজনে বড়দের দিকনির্দেশনায় শিশু দুটিই শিখতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "সহিহ বুখারি ১২",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_049",
+      "conceptId": "kids_hadith_avoid_envy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "যে শিক্ষাপুরস্কার তুমি চেয়েছিলে, বন্ধু সেটি পেয়েছে। কোন আচরণে হিংসা এড়ানো হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাকে অভিনন্দন জানানো ও নিজের শেখার চেষ্টা চালিয়ে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "তার সব ভালো জিনিস হারিয়ে যাক চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "নিজের ভালো লাগার জন্য পুরস্কারটি নষ্ট করা"
+        },
+        {
+          "id": "d",
+          "text": "তার সাফল্যের কারণে তাকে ঘৃণা করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "অন্যের সাফল্য বিরক্তির কারণ হওয়ার দরকার নেই। তার কল্যাণ চেয়েও নিজের শেখায় উন্নতি করা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564a",
+          "label": "সহিহ মুসলিম ২৫৬৪a",
+          "url": "https://sunnah.com/muslim:2564a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_050",
+      "conceptId": "kids_hadith_considerate_guest",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মা–বাবার সঙ্গে বন্ধুর বাড়িতে গিয়েছ, মেজবানের বিশ্রাম দরকার। কোন আচরণে বিবেচনা দেখানো হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দাবি করা, অতিথিরা যতক্ষণ চায় থাকতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "মা–বাবার নির্দেশ মেনে উপযুক্ত সময়ে ভদ্রভাবে চলে আসা"
+        },
+        {
+          "id": "c",
+          "text": "মেজবানকে নিজের প্রয়োজন উপেক্ষা করতে বলা"
+        },
+        {
+          "id": "d",
+          "text": "বিশ্রাম দরকার বলে মেজবানকে নিয়ে হাসাহাসি করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বিবেচক অতিথি মেজবানের অবস্থার খেয়াল রাখে। আপ্যায়নকে বোঝা না বানিয়ে বড়দের ব্যবস্থা মেনে চলো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6135",
+          "label": "সহিহ বুখারি ৬১৩৫",
+          "url": "https://sunnah.com/bukhari:6135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_051",
+      "conceptId": "kids_hadith_permission_three",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মা–বাবার সঙ্গে তিনবার ঢোকার অনুমতি চেয়েও অনুমতি পাওনি। কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপেক্ষা করেছি বলে দরজা ঠেলে খুলব"
+        },
+        {
+          "id": "b",
+          "text": "উত্তর দিতে বাধ্য করতে কড়া নাড়তেই থাকব"
+        },
+        {
+          "id": "c",
+          "text": "মা–বাবার সঙ্গে থেকে সম্মানের সঙ্গে ফিরে যাব"
+        },
+        {
+          "id": "d",
+          "text": "অনুমতি ছাড়া অন্য পথ দিয়ে ঢুকব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তিনবার চেয়েও অনুমতি না পেলে হাদিসটি ফিরে যেতে বলে। পরিবারের গোপনীয়তাকে সম্মান করো এবং মা–বাবার নির্দেশ মানো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6245",
+          "label": "সহিহ বুখারি ৬২৪৫",
+          "url": "https://sunnah.com/bukhari:6245"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_052",
+      "conceptId": "kids_hadith_include_third_person",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তিন সহপাঠীর দুজন তৃতীয়জনকে ইচ্ছা করে বাদ দিয়ে ফিসফিস করছে। হাদিসের শিক্ষা অনুযায়ী কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজেকে অবাঞ্ছিত মনে করাতে ফিসফিস চালিয়ে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সে যোগ দিতে চাইলেই হাসাহাসি করা"
+        },
+        {
+          "id": "c",
+          "text": "বলা, তার অনুভূতির কোনো গুরুত্ব নেই"
+        },
+        {
+          "id": "d",
+          "text": "তৃতীয় শিশুটিকেও একসঙ্গে আলাপে যুক্ত করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বাদ পড়া ব্যক্তির মন খারাপকে হাদিসটি গুরুত্ব দেয়। একসঙ্গে আলাপ করলে সবাই নিজেকে অন্তর্ভুক্ত মনে করতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "সহিহ বুখারি ৬২৯০",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_053",
+      "conceptId": "kids_hadith_forgiveness_honor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু সাধারণ ভুল করে আন্তরিকভাবে ক্ষমা চেয়েছে। ক্ষমার প্রশংসার হাদিস অনুযায়ী কোনটি করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাকে অপমান না করে ক্ষমা করার কথা ভাবব"
+        },
+        {
+          "id": "b",
+          "text": "জেদ করব, শুধু প্রতিশোধই আমার মর্যাদা রক্ষা করতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "ভুলটি দিয়ে প্রতিদিন তাকে লজ্জা দেব"
+        },
+        {
+          "id": "d",
+          "text": "বলব, ক্ষমা সবসময় মূল্যহীন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ক্ষমা করা সম্মানের হতে পারে। কাউকে অপমান করাকে লক্ষ্য না বানিয়েও নিজের অনুভূতি জানাতে ও ভুলের প্রতিকার চাইতে পারো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "সহিহ মুসলিম ২৫৮৮",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_054",
+      "conceptId": "kids_hadith_right_shoe_first",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিজে জুতা পরতে পারো এবং বর্ণিত সুন্নাহ অনুসরণ করতে চাও। কোন জুতা দিয়ে শুরু করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বাম পায়ের জুতা"
+        },
+        {
+          "id": "b",
+          "text": "ডান পায়ের জুতা"
+        },
+        {
+          "id": "c",
+          "text": "যে জুতাটি বেশি দামি"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিদিন আন্দাজের খেলা অনুযায়ী ভিন্ন জুতা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়িশার বর্ণনায় জুতা পরার সময় ডান দিক দিয়ে শুরুর কথা আছে। অন্যের অবস্থা বিচার না করে নিজের সামর্থ্য অনুযায়ী অভ্যাসটি মানো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "168",
+          "label": "সহিহ বুখারি ১৬৮",
+          "url": "https://sunnah.com/bukhari:168"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_055",
+      "conceptId": "kids_hadith_breathe_away_cup",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পান করার সময় শ্বাস নেওয়া দরকার। পাত্র সম্পর্কে হাদিসের শিক্ষা অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সরাসরি পানীয়ের ভেতর শ্বাস ফেলব"
+        },
+        {
+          "id": "b",
+          "text": "তার বদলে বন্ধুর গ্লাসে ফুঁ দেব"
+        },
+        {
+          "id": "c",
+          "text": "শ্বাস নেওয়ার আগে গ্লাস মুখ থেকে সরাব"
+        },
+        {
+          "id": "d",
+          "text": "ধরে নেব, গ্লাসের ভেতর শ্বাস ফেলতেই হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শিক্ষাটি পান করার পাত্রের ভেতর শ্বাস না ফেলা। গ্লাস সরালে স্বাভাবিকভাবে শ্বাস নিতে পারো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5630",
+          "label": "সহিহ বুখারি ৫৬৩০",
+          "url": "https://sunnah.com/bukhari:5630"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_056",
+      "conceptId": "kids_hadith_avoid_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক শিশু এত অতিরিক্ত আমল যোগ করেছে যে চালিয়ে যেতে পারছে না। কোন পরিকল্পনা হাদিসের নির্দেশনার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু চমক দেখাতে আরও যোগ করতে থাকা"
+        },
+        {
+          "id": "b",
+          "text": "ধরে নেওয়া, ক্লান্তি সবসময় বেশি ঈমানের প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "সব উপকারী পাঠ চিরদিনের জন্য ছেড়ে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "ভারসাম্যপূর্ণ উপযুক্ত রুটিনের জন্য মা–বাবা বা শিক্ষকের সাহায্য নেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসটি অতিরিক্ত চাপ থেকে সতর্ক করে। বড়দের দিকনির্দেশনায় শিশুরা উপযুক্ত ও নিয়মিত গতিতে শিখতে এবং আমল করতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "সহিহ বুখারি ৩৯",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_057",
+      "conceptId": "kids_hadith_repeat_for_understanding",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক ছোট শিক্ষার্থী যাচাই করা শিক্ষা আবার বলতে বলেছে। নবী ﷺ-এর আবার বলার উদ্দেশ্য অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধৈর্য ধরে আবার বলব, যেন সে বুঝতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "সঙ্গে সঙ্গে বোঝেনি বলে তাকে নিয়ে হাসাহাসি করব"
+        },
+        {
+          "id": "c",
+          "text": "রোমাঞ্চকর করতে শিক্ষাটি বদলে দেব"
+        },
+        {
+          "id": "d",
+          "text": "বলব, শুধু দ্রুত শেখা ব্যক্তিরাই সাহায্য পাওয়ার যোগ্য"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনাটিতে আবার বলার সঙ্গে বোঝার সম্পর্ক আছে। আবার শোনা দরকার এমন কাউকে লজ্জা না দিয়ে যত্ন ও ধৈর্যের সঙ্গে বলো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "সহিহ বুখারি ৯৫",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_058",
+      "conceptId": "kids_hadith_learning_questions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হাদিসের ব্যাখ্যা বুঝতে পারছ না। পরের উপকারী পদক্ষেপ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বোঝার ভান করে নিজের মতো অর্থ বানানো"
+        },
+        {
+          "id": "b",
+          "text": "শিক্ষককে ভদ্রভাবে প্রশ্ন করা"
+        },
+        {
+          "id": "c",
+          "text": "বুঝতে প্রশ্ন করে এমন অন্যদের নিয়ে হাসাহাসি করা"
+        },
+        {
+          "id": "d",
+          "text": "সিদ্ধান্ত নেওয়া, আন্তরিক প্রশ্ন সবসময় নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটিতে শেখার অংশ হিসেবে প্রশ্নের উত্তর দেওয়া হয়েছে। ভদ্রভাবে প্রশ্ন করলে আন্দাজ না করে বুঝতে সাহায্য পাওয়া যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "63",
+          "label": "সহিহ বুখারি ৬৩",
+          "url": "https://sunnah.com/bukhari:63"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_059",
+      "conceptId": "kids_hadith_truthful_humor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সবাইকে হাসাতে এক বন্ধু মিথ্যা গল্পকে সত্য ঘটনা বলে বলতে চায়। তুমি কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্য বলে বলব, কারণ হাসি মিথ্যাকে সঠিক করে দেয়"
+        },
+        {
+          "id": "b",
+          "text": "মিথ্যা ধরা পড়লে অন্য শিশুকে দোষ দেব"
+        },
+        {
+          "id": "c",
+          "text": "ধোঁকা দিতে রাজি হব না; সত্য ও সুন্দর রসিকতা বেছে নেব"
+        },
+        {
+          "id": "d",
+          "text": "বিশ্বাসযোগ্য শোনাতে বানানো হাদিস যোগ করব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সতর্কতাটি মজার জন্য মিথ্যা বলা সম্পর্কে। মিথ্যা দাবিকে সত্য হিসেবে বলার ওপর নির্ভর করে না এমন রসিকতা বেছে নাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4990",
+          "label": "সুনান আবু দাউদ ৪৯৯০",
+          "url": "https://sunnah.com/abudawud:4990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_060",
+      "conceptId": "kids_hadith_planting_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষকের সঙ্গে এমন ফলের গাছ লাগাতে সাহায্য করছ, যেখান থেকে মানুষ বা পাখি খেতে পারে। কোন শিক্ষাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু টাকাই কখনো সদকা হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "গাছ থেকে পাখির উপকারের কোনো গুরুত্বই নেই"
+        },
+        {
+          "id": "c",
+          "text": "সবাই প্রশংসা করলেই শুধু গাছ লাগানোর মূল্য আছে"
+        },
+        {
+          "id": "d",
+          "text": "উপকারী গাছ লাগানো সদকার মাধ্যম হতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে মুসলিমের লাগানো গাছ থেকে মানুষ বা প্রাণীর খাওয়ায় সদকার কথা আছে। তত্ত্বাবধানে বাগান করার মাধ্যমে এই উপকার বুঝতে পারো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "সহিহ বুখারি ২৩২০",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    }
+  ]
+}

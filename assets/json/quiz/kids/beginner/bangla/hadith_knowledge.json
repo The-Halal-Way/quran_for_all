@@ -1,0 +1,2292 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "hadith_knowledge",
+  "title": "হাদিস পরিচিতি",
+  "description": "ছোট্ট মুসলিম → প্রাথমিক স্তর। হাদিসের পরিচয়, পরিচিত দুটি হাদিসের বই, সতর্কভাবে বর্ণনা করা, সহজ শিক্ষা ও দৈনন্দিন জীবনে তা কাজে লাগানো নিয়ে ছোট প্রশ্ন। প্রায় ৬–৯ বছরের শিশুদের কথা ভেবে লেখা; প্রয়োজনে বড় কেউ প্রশ্ন পড়ে শোনাতে পারেন। সব প্রশ্ন শিশুদের প্রাথমিক স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। শিশুদের জন্য হাদিসের প্রাথমিক পরিচয়, ছোট বাক্য ও সরল উদাহরণ ব্যবহার করা হয়েছে। বয়স ও স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত হাদিস ও সংকলনের পরিচিতি মিলিয়ে দেখা হয়েছে। বর্তমান দিনের উদাহরণে হাদিসের শিক্ষা বোঝানো হয়েছে। কোনো প্রশ্ন শিশুকে অন্যের ঈমান বা মানুষ হিসেবে তার মূল্য বিচার করতে বলে না। প্রশ্ন ও ব্যাখ্যার এই বাংলা রূপ শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; হাদিসের হুবহু অনুবাদ নয়। দৈনন্দিন উদাহরণে সূত্রের মূলনীতি বোঝানো হয়েছে। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_hadith_knowledge_001",
+      "conceptId": "kids_hadith_definition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ-এর কথা বা কাজ সম্পর্কে বর্ণনাকে কী বলা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাদিস"
+        },
+        {
+          "id": "b",
+          "text": "সূরা"
+        },
+        {
+          "id": "c",
+          "text": "পারা"
+        },
+        {
+          "id": "d",
+          "text": "রাকাত"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসে নবী ﷺ-এর কথা, কাজ এবং যেসব কাজে তিনি সম্মতি দিয়েছেন, সেসবের বর্ণনা থাকতে পারে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_002",
+      "conceptId": "kids_hadith_bukhari_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এগুলোর মধ্যে কোনটি পরিচিত হাদিসের বই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূরা আল-ফাতিহা"
+        },
+        {
+          "id": "b",
+          "text": "সহিহ বুখারি"
+        },
+        {
+          "id": "c",
+          "text": "নামাজের সময়সূচি"
+        },
+        {
+          "id": "d",
+          "text": "কুরআনের পৃষ্ঠা চিহ্নিত করার ফিতা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সহিহ বুখারি হাদিসের একটি সংকলন। ইমাম বুখারি হাদিসগুলো একসঙ্গে সংগ্রহ করেছেন।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ বুখারি পরিচিতি",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_003",
+      "conceptId": "kids_hadith_muslim_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সহিহ মুসলিম কী ধরনের বই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গাছের নামের অভিধান"
+        },
+        {
+          "id": "b",
+          "text": "মানচিত্রের বই"
+        },
+        {
+          "id": "c",
+          "text": "হাদিসের বই"
+        },
+        {
+          "id": "d",
+          "text": "বানানো রোমাঞ্চকর গল্পের বই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সহিহ মুসলিম পরিচিত হাদিসের বই। ইমাম মুসলিম হাদিসগুলো একসঙ্গে সংগ্রহ করেছেন।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ মুসলিম পরিচিতি",
+          "url": "https://sunnah.com/muslim/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_004",
+      "conceptId": "kids_hadith_careful_attribution",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ কোনো শিক্ষা দিয়েছেন বলার সময় কোন কাজটি থেকে বিরত থাকতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূত্র মিলিয়ে দেখা"
+        },
+        {
+          "id": "b",
+          "text": "শিক্ষকের সাহায্য চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "নিশ্চিত না হলে তা জানানো"
+        },
+        {
+          "id": "d",
+          "text": "কথা বানিয়ে তাঁর কথা বলে চালানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ সম্পর্কে বলার সময় সত্য বলতে হবে। নিজের বানানো কথাকে তাঁর কথা বলা যাবে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "সহিহ বুখারি ১১০",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_005",
+      "conceptId": "kids_hadith_pass_on_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উপস্থিত ছিলেন না এমন মানুষদের জন্য নবী ﷺ শ্রোতাদের কী করতে বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর শিক্ষা পৌঁছে দিতে"
+        },
+        {
+          "id": "b",
+          "text": "সব শিক্ষা চিরকাল লুকিয়ে রাখতে"
+        },
+        {
+          "id": "c",
+          "text": "মজা করে বার্তা বদলে দিতে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু নিজেদের বানানো কথা শোনাতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "যারা তাঁর শিক্ষা শুনেছেন, নবী ﷺ তাঁদের তা অনুপস্থিত মানুষদের কাছে পৌঁছে দিতে বলেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "67",
+          "label": "সহিহ বুখারি ৬৭",
+          "url": "https://sunnah.com/bukhari:67"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_006",
+      "conceptId": "kids_hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কাজ সম্পর্কে হাদিস অনুযায়ী, আমরা কী করি তার পাশাপাশি কোনটি গুরুত্বপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কাপড়ের রং"
+        },
+        {
+          "id": "b",
+          "text": "আমাদের নিয়ত"
+        },
+        {
+          "id": "c",
+          "text": "মানুষ কত জোরে হাততালি দেয়"
+        },
+        {
+          "id": "d",
+          "text": "জুতা কত দামি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নিয়ত হলো আমরা কী করতে চাই এবং কেন করতে চাই। হাদিস শেখায়, নিয়ত গুরুত্বপূর্ণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_007",
+      "conceptId": "kids_hadith_wish_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "একজন মুসলিম ভাই বা বোনের জন্য আমরা কী ভালো চাইব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু নিজের অপছন্দের জিনিস"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি ভালো চেষ্টায় ব্যর্থতা"
+        },
+        {
+          "id": "c",
+          "text": "নিজের জন্য যে ভালো চাই, তা-ই"
+        },
+        {
+          "id": "d",
+          "text": "শুধু আমরা পুরস্কার পেলেই ভালো ব্যবহার"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নিজের জন্য যেমন ভালো চাই, অন্য মুসলিমের জন্যও তেমন ভালো চাইতে নবী ﷺ শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "13",
+          "label": "সহিহ বুখারি ১৩",
+          "url": "https://sunnah.com/bukhari:13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_008",
+      "conceptId": "kids_hadith_good_speech",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কথা বলা সম্পর্কে হাদিস আমাদের কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মনে আসা সব কষ্টদায়ক কথা বলা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যদের হাসাতে কাউকে অপমান করা"
+        },
+        {
+          "id": "c",
+          "text": "মিথ্যা জেনেও গল্প ছড়ানো"
+        },
+        {
+          "id": "d",
+          "text": "ভালো কথা বলা, নয়তো ক্ষতিকর কথা এড়ানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ ভালো কথা বলতে বা চুপ থাকতে শিখিয়েছেন। কথার ব্যবহারে যত্নশীল হতে হবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "সহিহ বুখারি ৬০১৮",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_009",
+      "conceptId": "kids_hadith_control_anger",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শক্তি সম্পর্কে হাদিসে কাকে সত্যিকার শক্তিশালী বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যে রাগের সময় নিজেকে সামলায়"
+        },
+        {
+          "id": "b",
+          "text": "যে সব সময় মারামারিতে জেতে"
+        },
+        {
+          "id": "c",
+          "text": "যে সবচেয়ে জোরে চিৎকার করে"
+        },
+        {
+          "id": "d",
+          "text": "যে ছোট শিশুদের ভয় দেখায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "রাগের সময় নিজেকে সামলানোর প্রশংসা করেছেন নবী ﷺ। নিজের আচরণ সামলানোও শক্তির পরিচয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "সহিহ বুখারি ৬১১৪",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_010",
+      "conceptId": "kids_hadith_gentleness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিসে কোন গুণটি সবকিছুকে আরও সুন্দর করে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিষ্ঠুরতা"
+        },
+        {
+          "id": "b",
+          "text": "কোমলতা"
+        },
+        {
+          "id": "c",
+          "text": "বিদ্রূপ"
+        },
+        {
+          "id": "d",
+          "text": "রূঢ়তা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে কোমলতার প্রশংসা করা হয়েছে। অন্যের সঙ্গে কোমল ব্যবহার আমাদের আচরণ সুন্দর করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "সহিহ মুসলিম ২৫৯৪a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_011",
+      "conceptId": "kids_hadith_good_deeds_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ভালো কাজ ও সদকা সম্পর্কে কোন কথাটি হাদিসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ধনীরাই ভালো কাজ করতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "টাকা দিলেই কেবল দয়ার মূল্য থাকে"
+        },
+        {
+          "id": "c",
+          "text": "ভালো কাজও সদকা হতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "বড় উপহার ছাড়া সাহায্যের কোনো মূল্য নেই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ শিখিয়েছেন, ভালো কাজ সদকা। টাকা দেওয়া ছাড়াও ভালো করার অনেক উপায় আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6021",
+          "label": "সহিহ বুখারি ৬০২১",
+          "url": "https://sunnah.com/bukhari:6021"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_012",
+      "conceptId": "kids_hadith_clear_path",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিসে কোন কাজটিকে সদকা বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষ হোঁচট খাবে এমন বাধা ফেলে রাখা"
+        },
+        {
+          "id": "b",
+          "text": "মজা করে হাঁটার পথ আটকানো"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের চলার পথে ময়লা ফেলা"
+        },
+        {
+          "id": "d",
+          "text": "পথ থেকে ক্ষতিকর কিছু সরানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "পথ থেকে ক্ষতিকর জিনিস সরানো সদকা। বিপজ্জনক কিছু হলে শিশুদের বড় কারও সাহায্য নিতে হবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1009",
+          "label": "সহিহ মুসলিম ১০০৯",
+          "url": "https://sunnah.com/muslim:1009"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_013",
+      "conceptId": "kids_hadith_regular_small_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ছোট হলেও কোন ভালো কাজগুলো আল্লাহর বিশেষ পছন্দ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেগুলো নিয়মিত করা হয়"
+        },
+        {
+          "id": "b",
+          "text": "যেগুলো শুধু মানুষকে দেখাতে করা হয়"
+        },
+        {
+          "id": "c",
+          "text": "যেগুলো নিয়ে আমরা শুধু বড়াই করি"
+        },
+        {
+          "id": "d",
+          "text": "যেগুলো করার কথা দিই কিন্তু চেষ্টাই করি না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ ছোট হলেও নিয়মিত ভালো কাজের প্রশংসা করেছেন। অল্প করে নিয়মিত চেষ্টা করাও মূল্যবান।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "সহিহ বুখারি ৬৪৬৪",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_014",
+      "conceptId": "kids_hadith_encourage_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মানুষকে দ্বীন শিখতে সাহায্য করার ব্যাপারে নবী ﷺ কী শিখিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অযথা শেখা কঠিন করে দাও"
+        },
+        {
+          "id": "b",
+          "text": "সহজ করে বোঝাও ও উৎসাহ দাও"
+        },
+        {
+          "id": "c",
+          "text": "নতুন শিক্ষার্থীকে দূরে সরিয়ে দাও"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি ভুলে কাউকে অপমান করো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী ﷺ সহজ করা ও উৎসাহ দেওয়ার শিক্ষা দিয়েছেন। কাউকে দূরে ঠেলে না দিয়ে বুঝতে সাহায্য করতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "সহিহ বুখারি ৬৯",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_015",
+      "conceptId": "kids_hadith_kindness_mother",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কে সবচেয়ে ভালো ব্যবহার পাওয়ার যোগ্য—এ প্রশ্নে নবী ﷺ প্রথমে কার কথা বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কাছের সবচেয়ে ধনী ব্যক্তি"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে শক্তিশালী কুস্তিগির"
+        },
+        {
+          "id": "c",
+          "text": "প্রশ্নকারী ব্যক্তির মা"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে জোরে কথা বলা ব্যক্তি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তিনি তিনবার মায়ের কথা, তারপর বাবার কথা বলেছেন। হাদিসটি মায়ের ভালো ব্যবহার পাওয়ার অধিকার বোঝায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5971",
+          "label": "সহিহ বুখারি ৫৯৭১",
+          "url": "https://sunnah.com/bukhari:5971"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_016",
+      "conceptId": "kids_hadith_kindness_animals",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "তৃষ্ণার্ত কুকুরের হাদিসে কোন কাজের জন্য পুরস্কার দেওয়া হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মজা করে কুকুরটিকে তাড়া করা"
+        },
+        {
+          "id": "b",
+          "text": "তার তৃষ্ণা দেখে হাসা"
+        },
+        {
+          "id": "c",
+          "text": "তার কাছ থেকে সব পানি সরিয়ে রাখা"
+        },
+        {
+          "id": "d",
+          "text": "কুকুরটিকে পানি পান করানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ এমন এক ব্যক্তির কথা বলেছেন, যিনি তৃষ্ণার্ত কুকুরকে সাহায্য করে পুরস্কার পেয়েছিলেন। প্রাণীর যত্নও গুরুত্বপূর্ণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "সহিহ বুখারি ২৩৬৩",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_017",
+      "conceptId": "kids_hadith_truthfulness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিস অনুযায়ী, সত্যবাদিতা কোন দিকে নিয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো কাজ ও জান্নাতের দিকে"
+        },
+        {
+          "id": "b",
+          "text": "মানুষকে ঠকানোয় দক্ষ হওয়ার দিকে"
+        },
+        {
+          "id": "c",
+          "text": "নির্দোষকে দোষ দেওয়ার অনুমতির দিকে"
+        },
+        {
+          "id": "d",
+          "text": "যেকোনো বানানো গল্পকে সত্য বলার স্বাধীনতার দিকে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ শিখিয়েছেন, সত্যবাদিতা ভালো কাজ ও জান্নাতের দিকে নিয়ে যায়। প্রতিদিনের জীবনেও আমরা সত্য বলার চর্চা করি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "সহিহ বুখারি ৬০৯৪",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_018",
+      "conceptId": "kids_hadith_keep_promises",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিসে কোন অভ্যাসটি এড়াতে সতর্ক করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো প্রতিশ্রুতি রাখার চেষ্টা করা"
+        },
+        {
+          "id": "b",
+          "text": "ইচ্ছা করে কথা দিয়ে কথা না রাখা"
+        },
+        {
+          "id": "c",
+          "text": "কথা দেওয়াকে গুরুত্ব দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বিশ্বাসযোগ্য হওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে কথা দিয়ে কথা না রাখার ব্যাপারে সতর্ক করা হয়েছে। ভালো প্রতিশ্রুতিকে গুরুত্ব দিতে ও রাখতে চেষ্টা করতে হবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "সহিহ বুখারি ৩৩",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_019",
+      "conceptId": "kids_hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিসে বলা হয়েছে, আমাদের চেহারা বা সম্পদের বদলে আল্লাহ কোন বিষয়গুলো দেখেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু দামি পোশাক"
+        },
+        {
+          "id": "b",
+          "text": "শুধু আমরা কত লম্বা"
+        },
+        {
+          "id": "c",
+          "text": "আমাদের মন ও কাজ"
+        },
+        {
+          "id": "d",
+          "text": "শুধু আমাদের কত টাকা আছে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে আমাদের মন ও কাজের গুরুত্ব বোঝানো হয়েছে। চেহারা বা টাকা দিয়ে মানুষের ভালো হওয়া নির্ধারিত হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "সহিহ মুসলিম ২৫৬৪c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_020",
+      "conceptId": "kids_hadith_kindness_neighbors",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "জিবরিল নবী ﷺ-কে বারবার কোন বিষয়টি মনে করিয়ে দিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিবেশীর সঙ্গে রূঢ় ব্যবহার"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বিখ্যাত মানুষকে সাহায্য"
+        },
+        {
+          "id": "c",
+          "text": "আশপাশের সবাইকে উপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিবেশীর সঙ্গে ভালো ব্যবহার"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "জিবরিল প্রতিবেশীর সঙ্গে ভালো ব্যবহার করতে বারবার বলেছেন। আমাদের কাছাকাছি থাকা মানুষদের কথাও ভাবতে হবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "সহিহ বুখারি ৬০১৪",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_021",
+      "conceptId": "kids_hadith_definition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ কী বলেছেন তার পাশাপাশি হাদিসে কি তাঁর কাজের বর্ণনাও থাকতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, তাঁর কাজের বর্ণনাও থাকতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "না, শুধু অধ্যায়ের নাম থাকলেই হয়"
+        },
+        {
+          "id": "c",
+          "text": "না, হাদিসে শুধু জায়গার নাম থাকে"
+        },
+        {
+          "id": "d",
+          "text": "না, এতে শুধু আবহাওয়ার বর্ণনা থাকে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসে নবী ﷺ-এর কথার পাশাপাশি কাজ ও সম্মতির বর্ণনাও থাকে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_022",
+      "conceptId": "kids_hadith_bukhari_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সহিহ বুখারি কি কুরআনের একটি সূরা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, এটি শুরুর সূরা"
+        },
+        {
+          "id": "b",
+          "text": "না, এটি হাদিসের সংকলন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, এটি শেষ সূরা"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, এটি আল-কাউসারের আরেক নাম"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সহিহ বুখারিতে হাদিস সংগ্রহ করা হয়েছে। আর সূরা হলো কুরআনের একটি অধ্যায়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ বুখারি পরিচিতি",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_023",
+      "conceptId": "kids_hadith_muslim_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সহিহ মুসলিমের মতো হাদিসের বই থেকে আমরা কী জানতে পারি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভবিষ্যতের সব কুইজ বিজয়ীর নাম"
+        },
+        {
+          "id": "b",
+          "text": "কুরআনের নতুন কয়েকটি সূরা"
+        },
+        {
+          "id": "c",
+          "text": "নবী ﷺ-এর শিক্ষা ও আদর্শের বর্ণনা"
+        },
+        {
+          "id": "d",
+          "text": "ওহি বলে চালানো বানানো গল্প"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সহিহ মুসলিমে হাদিসের বর্ণনা সংরক্ষিত আছে। শিক্ষক আমাদের সেগুলোর অর্থ বুঝতে সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ মুসলিম পরিচিতি",
+          "url": "https://sunnah.com/muslim/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_024",
+      "conceptId": "kids_hadith_careful_attribution",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শুনতে ভালো লাগে বলেই কি কোনো বাক্য হাদিস হয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সুন্দর সব বাক্যই হাদিস"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অনেক শিশু বললে হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, রঙিন ছবি থাকলে হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "না, হাদিস বলার আগে মিলিয়ে দেখতে হবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বানানো কথার সঙ্গে নবী ﷺ-এর নাম জুড়ে দেওয়া যাবে না। নিশ্চিত না হলে জানেন এমন শিক্ষককে জিজ্ঞেস করো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "সহিহ বুখারি ১১০",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_025",
+      "conceptId": "kids_hadith_pass_on_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ শ্রোতাদের তাঁর শিক্ষা অন্যদের কাছে পৌঁছাতে বলেছিলেন কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যাঁরা উপস্থিত ছিলেন না, তাঁরাও যেন শিখতে পারেন"
+        },
+        {
+          "id": "b",
+          "text": "সবাই যেন আলাদা আলাদা কথা বানাতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "কেউ যেন বার্তা মনে না রাখে"
+        },
+        {
+          "id": "d",
+          "text": "শেখা যেন শুধু একটি দলের জন্য হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "শিক্ষা পৌঁছে দিলে অন্যরাও শিখতে পারে। বার্তা ঠিকভাবে পৌঁছাতে ও যত্ন নিয়ে বোঝাতে হবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "67",
+          "label": "সহিহ বুখারি ৬৭",
+          "url": "https://sunnah.com/bukhari:67"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_026",
+      "conceptId": "kids_hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো কাজের নিয়ত থেকে কী বোঝা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার জুতা কত ভারী"
+        },
+        {
+          "id": "b",
+          "text": "কেন কেউ কাজটি করতে চায়"
+        },
+        {
+          "id": "c",
+          "text": "কোন রং তার বেশি পছন্দ"
+        },
+        {
+          "id": "d",
+          "text": "কত মানুষ তাকে দেখছে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নিয়ত আমাদের উদ্দেশ্যের সঙ্গে সম্পর্কিত। আল্লাহকে খুশি করতে আমরা আন্তরিকভাবে ভালো কাজের চেষ্টা করি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_027",
+      "conceptId": "kids_hadith_wish_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নিজের মতো অন্যেরও ভালো চাওয়ার সঙ্গে কোন ভাবনাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু আমার শেখাটাই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "আমি খুশি হতে হলে বন্ধুকে ব্যর্থ হতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "আমার সহপাঠীও ভালোভাবে শিখুক"
+        },
+        {
+          "id": "d",
+          "text": "আর কেউ ভালো ব্যবহার পাওয়া উচিত নয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "অন্যরাও ভালোভাবে শিখুক ও ভালো ব্যবহার পাক—এটি আমরা চাইতে পারি। এতে হাদিসের অন্যের ভালো চাওয়ার শিক্ষা মানা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "13",
+          "label": "সহিহ বুখারি ১৩",
+          "url": "https://sunnah.com/bukhari:13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_028",
+      "conceptId": "kids_hadith_good_speech",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ভালো কথা বলার শিক্ষা মানে কি বিশ্বস্ত বড় কারও কাছ থেকে নিজের সমস্যা লুকিয়ে রাখা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, চুপ থাকা মানে সব সমস্যা লুকানো"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, কোনো শিশুই কখনো সাহায্য চাইবে না"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কষ্টদায়ক গোপন কথা কখনো জানানো যাবে না"
+        },
+        {
+          "id": "d",
+          "text": "না, সাহায্য চাওয়াও ভালো কথা হতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ভালো কথার মধ্যে সাহায্য চাওয়াও আছে। ক্ষতিকর কথা এড়ানো মানে প্রয়োজনের সময় চুপ থেকে সাহায্য না চাওয়া নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "সহিহ বুখারি ৬০১৮",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_029",
+      "conceptId": "kids_hadith_control_anger",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "রাগ সামলানো মানে কি আমাদের কখনো মন খারাপ হতে পারে না?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, এর মানে আচরণ যত্ন নিয়ে সামলানো"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, মন খারাপ হলেই মানুষ মূল্যহীন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শক্তিশালী মানুষের অনুভূতি থাকে না"
+        },
+        {
+          "id": "d",
+          "text": "না, এর মানে মন খারাপ হলে অন্যকে কষ্ট দেওয়া যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মন খারাপ হতেই পারে। রাগের সময় আমরা কী করছি, তা সামলাতে হাদিস শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "সহিহ বুখারি ৬১১৪",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_030",
+      "conceptId": "kids_hadith_gentleness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন অনুরোধটিতে কোমলতা আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এখনই সাহায্য করো, বোকা কোথাকার!"
+        },
+        {
+          "id": "b",
+          "text": "সময় হলে দয়া করে আমাকে সাহায্য করবে?"
+        },
+        {
+          "id": "c",
+          "text": "সরো, নয়তো তোমাকে কষ্ট দেব!"
+        },
+        {
+          "id": "d",
+          "text": "আমাকে সাহায্য না করলে তুমি কোনো কাজের নও"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সাহায্য চাওয়ার ধরনেও কোমলতা থাকতে পারে। হুমকি বা অপমানের চেয়ে সম্মান রেখে বলা ভালো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "সহিহ মুসলিম ২৫৯৪a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_031",
+      "conceptId": "kids_hadith_good_deeds_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "টাকা খরচ না করেও কি সদকা করা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, দয়া দেখানো কখনো ধরা হয় না"
+        },
+        {
+          "id": "b",
+          "text": "না, শুধু দামি উপহারই সদকা"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, ভালো কাজ করে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, অন্যের টাকা নিয়ে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিস শেখায়, ভালো কাজ সদকা। অন্যকে সাহায্য করা ভালো কাজের একটি উপায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6021",
+          "label": "সহিহ বুখারি ৬০২১",
+          "url": "https://sunnah.com/bukhari:6021"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_032",
+      "conceptId": "kids_hadith_clear_path",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাঁটার পথ থেকে ক্ষতিকর জিনিস সরানো ভালো কাজ কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে মানুষকে ধাক্কা দেওয়ার অনুমতি মেলে"
+        },
+        {
+          "id": "b",
+          "text": "এতে কাউকে হোঁচট খাওয়ানো ঠিক হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "এতে শিশুদের একাই ধারালো জিনিস ধরতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "এতে পথের মানুষ নিরাপদে চলতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ক্ষতিকর জিনিস সরালে অন্যরা নিরাপদে পথ ব্যবহার করতে পারে। বিপজ্জনক জিনিসে বড় কারও সাহায্য দরকার।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1009",
+          "label": "সহিহ মুসলিম ১০০৯",
+          "url": "https://sunnah.com/muslim:1009"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_033",
+      "conceptId": "kids_hadith_regular_small_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নিয়মিত ভালো কাজের হাদিসের সঙ্গে কোন পরিকল্পনাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাধ্যের মধ্যে ভালো কাজ বেছে নিয়মিত করব"
+        },
+        {
+          "id": "b",
+          "text": "শুরু না করে শুধু বিশাল কাজের পরিকল্পনা করব"
+        },
+        {
+          "id": "c",
+          "text": "মানুষ দেখলেই কেবল ভালো কাজ করব"
+        },
+        {
+          "id": "d",
+          "text": "একবার চেষ্টার পর সব ভালো অভ্যাস ছেড়ে দেব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ছোট ছোট নিয়মিত ভালো কাজ অভ্যাস গড়ে তোলে। সাধ্যের বেশি চাপ না নিয়ে আমরা সাধ্যমতো চেষ্টা করি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "সহিহ বুখারি ৬৪৬৪",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_034",
+      "conceptId": "kids_hadith_encourage_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শেখা সহজ করার মানে কি দ্বীনের শিক্ষা বানিয়ে নেওয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, নিজের মতো সব শিক্ষা বদলে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "না, সাহায্য করে সঠিকভাবে বোঝানো"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শেখার বদলে বানানো নিয়ম দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "না, এর মানে কখনো কিছু না বোঝানো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সহজ করা মানে মানুষকে ঠিকভাবে শিখতে সাহায্য করা। উৎসাহ দেওয়া মানে দ্বীন বানানো বা বদলে দেওয়া নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "সহিহ বুখারি ৬৯",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_035",
+      "conceptId": "kids_hadith_kindness_mother",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মায়ের বিশেষ যত্ন নেওয়ার মানে কি বাবার সঙ্গে খারাপ ব্যবহার করা যাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু একজন ভালো ব্যবহার পাওয়ার যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, বাবাকে সব সময় উপেক্ষা করা উচিত"
+        },
+        {
+          "id": "c",
+          "text": "না, হাদিসে বাবার কথাও আছে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, একজনের পর দয়া ফুরিয়ে যায়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মায়ের বিশেষ অধিকার থাকলে বাবার অধিকার চলে যায় না। হাদিসে মা ও বাবা দুজনের কথাই আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5971",
+          "label": "সহিহ বুখারি ৫৯৭১",
+          "url": "https://sunnah.com/bukhari:5971"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_036",
+      "conceptId": "kids_hadith_kindness_animals",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "তৃষ্ণার্ত কুকুরকে পানি দেওয়ার ঘটনা থেকে কী শিখি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু মানুষেরই যত্ন দরকার হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "প্রাণী দুর্বল হলে তাকে বিরক্ত করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "প্রাণীটি নিজের হলেই শুধু দয়ার মূল্য আছে"
+        },
+        {
+          "id": "d",
+          "text": "প্রাণীকে সাহায্য করাও পুরস্কার পাওয়ার মতো ভালো কাজ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "এ ঘটনা শেখায়, প্রাণীর যত্ন নিলে পুরস্কার পাওয়া যায়। আমরা নিরাপদভাবে সাহায্য করি এবং নিষ্ঠুরতা এড়াই।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "সহিহ বুখারি ২৩৬৩",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_037",
+      "conceptId": "kids_hadith_truthfulness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন অভ্যাসটি সত্যবাদিতা সম্পর্কে হাদিসের শিক্ষা মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বারবার সত্য কথা বেছে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "গল্প মজার করতে যখন-তখন মিথ্যা বলা"
+        },
+        {
+          "id": "c",
+          "text": "সব ভুল এড়াতে অন্যকে দোষ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সব আন্দাজকেই সত্য বলে চালানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সৎ সিদ্ধান্ত নিতে নিতে সত্য বলার অভ্যাস বাড়ে। হাদিস আমাদের এই চর্চা চালিয়ে যেতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "সহিহ বুখারি ৬০৯৪",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_038",
+      "conceptId": "kids_hadith_keep_promises",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ভালো প্রতিশ্রুতি দেওয়ার মানে আমাদের কাছে কী হওয়া উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের ইচ্ছা আদায়ের কৌশল"
+        },
+        {
+          "id": "b",
+          "text": "এমন কথা, যা রাখার ইচ্ছা আছে"
+        },
+        {
+          "id": "c",
+          "text": "এমন কথা, যার জন্য চেষ্টা লাগে না"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধুকে ঠকানোর অনুমতি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ভালো প্রতিশ্রুতি রাখতে আন্তরিক চেষ্টা দরকার। কথা না রাখার পরিকল্পনা করে প্রতিশ্রুতি দেওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "সহিহ বুখারি ৩৩",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_039",
+      "conceptId": "kids_hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দামি পোশাক পরলেই কি কারও মন বেশি ভালো—এটি প্রমাণ হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, দামি পোশাক নিখুঁত চরিত্র প্রমাণ করে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, টাকা দেখেই সবচেয়ে দয়ালু মানুষ চেনা যায়"
+        },
+        {
+          "id": "c",
+          "text": "না, চেহারা দেখে ভালো মন প্রমাণ হয় না"
+        },
+        {
+          "id": "d",
+          "text": "না, শুধু লম্বা হলেই ভালো মন প্রমাণ হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিস আমাদের মন ও কাজের দিকে গুরুত্ব দিতে বলে। পোশাক বা টাকা দেখে কারও ভালো হওয়া বিচার করা উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "সহিহ মুসলিম ২৫৬৪c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_040",
+      "conceptId": "kids_hadith_kindness_neighbors",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কাছাকাছি থাকা মানুষদের কথা আমাদের কেন ভাবা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ধনী প্রতিবেশী সম্মান পাওয়ার যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "কাছে থাকে বলে তাদের অনুভূতির মূল্য নেই"
+        },
+        {
+          "id": "c",
+          "text": "আমাদের দরজার বাইরে দয়া দেখানো বন্ধ করা উচিত"
+        },
+        {
+          "id": "d",
+          "text": "হাদিসে প্রতিবেশীর ভালো ব্যবহার পাওয়ার অধিকার আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে প্রতিবেশীর অধিকারকে গুরুত্ব দেওয়া হয়েছে। তাঁদের যত্ন নেওয়া দৈনন্দিন আচরণের অংশ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "সহিহ বুখারি ৬০১৪",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_041",
+      "conceptId": "kids_hadith_definition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক যাচাই করা একটি বর্ণনায় নবী ﷺ-এর কোনো কাজের কথা বললেন। এটি কী ধরনের বর্ণনা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাদিস"
+        },
+        {
+          "id": "b",
+          "text": "কুরআনের সূরা"
+        },
+        {
+          "id": "c",
+          "text": "নামাজের সময়সূচি"
+        },
+        {
+          "id": "d",
+          "text": "বানানো রোমাঞ্চকর গল্প"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ-এর কাজ সম্পর্কে বর্ণনাও আমরা হাদিস হিসেবে শিখি।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_042",
+      "conceptId": "kids_hadith_bukhari_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি সহিহ বুখারি নামে একটি বই দেখলে। কোন বিভাগের তাকে বইটি রাখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআনের সূরা"
+        },
+        {
+          "id": "b",
+          "text": "হাদিসের সংকলন"
+        },
+        {
+          "id": "c",
+          "text": "মানচিত্র ও অ্যাটলাস"
+        },
+        {
+          "id": "d",
+          "text": "বানানো রোমাঞ্চকর গল্প"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সহিহ বুখারি হাদিসের সংকলনগুলোর একটি।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ বুখারি পরিচিতি",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_043",
+      "conceptId": "kids_hadith_muslim_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক সহিহ মুসলিমের একটি হাদিসের সূত্র দিলেন। তুমি কোন বইয়ে খুঁজবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবহাওয়ার ডায়েরি"
+        },
+        {
+          "id": "b",
+          "text": "বানানের অভিধান"
+        },
+        {
+          "id": "c",
+          "text": "সহিহ মুসলিম"
+        },
+        {
+          "id": "d",
+          "text": "মানচিত্রের বই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূত্রে সহিহ মুসলিমের নাম আছে। তাই সেই হাদিসের বইয়ে খুঁজতে হবে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ মুসলিম পরিচিতি",
+          "url": "https://sunnah.com/muslim/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_044",
+      "conceptId": "kids_hadith_careful_attribution",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি ছবিতে কোনো কথাকে হাদিস বলা হয়েছে, কিন্তু সূত্র নেই। নবী ﷺ-এর কথা বলে জানানোর আগে কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একটি সূত্রের নম্বর বানিয়ে দেব"
+        },
+        {
+          "id": "b",
+          "text": "সুন্দর নকশা দেখেই সত্য ধরে নেব"
+        },
+        {
+          "id": "c",
+          "text": "না মিলিয়ে নিশ্চিত কথা হিসেবে বলব"
+        },
+        {
+          "id": "d",
+          "text": "জানেন এমন শিক্ষককে যাচাই করতে বলব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "শুধু ছবি দেখেই কোনো কথা হাদিস বলে প্রমাণ হয় না। নবী ﷺ-এর কথা বলার আগে জানেন এমন কারও সাহায্য নাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "সহিহ বুখারি ১১০",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_045",
+      "conceptId": "kids_hadith_pass_on_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক বুঝিয়ে দেওয়া একটি হাদিসের শিক্ষা অন্যকে জানাতে চাও। কীভাবে জানানো ভালো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অর্থ মিলিয়ে ঠিকভাবে পৌঁছে দেব"
+        },
+        {
+          "id": "b",
+          "text": "আকর্ষণ বাড়াতে বানানো কথা যোগ করব"
+        },
+        {
+          "id": "c",
+          "text": "বন্ধুকে খেলায় হারাতে শিক্ষা বদলে দেব"
+        },
+        {
+          "id": "d",
+          "text": "নিজের মতামতকে নবী ﷺ-এর হুবহু কথা বলব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "যা শিখেছ, তা ঠিকভাবে পৌঁছে দাও। অর্থ বা শব্দ নিয়ে নিশ্চিত না হলে শিক্ষককে জিজ্ঞেস করো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "67",
+          "label": "সহিহ বুখারি ৬৭",
+          "url": "https://sunnah.com/bukhari:67"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_046",
+      "conceptId": "kids_hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লাসরুম গুছাতে সাহায্য করার আগে কোন নিয়তটি ভালো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যদের মূল্যহীন মনে করানো"
+        },
+        {
+          "id": "b",
+          "text": "উপকারী কাজ করে আল্লাহকে খুশি করা"
+        },
+        {
+          "id": "c",
+          "text": "দেখানো যে শুধু আমিই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "কাউকে অপমান করার সুযোগ পাওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আমরা আন্তরিকভাবে ভালো কাজের চেষ্টা করি। অন্যকে সাহায্য করে আল্লাহকে খুশি করার উদ্দেশ্য ভালো নিয়ত হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_047",
+      "conceptId": "kids_hadith_wish_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি পাঠ ভালোভাবে শিখতে চাও। মুসলিম বন্ধুর জন্য কী চাওয়া হাদিসের শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আমার বন্ধু কখনো বুঝতে না পারুক"
+        },
+        {
+          "id": "b",
+          "text": "কেউ যেন আমার বন্ধুকে সাহায্য না করে"
+        },
+        {
+          "id": "c",
+          "text": "আমার বন্ধুও ভালোভাবে শিখুক"
+        },
+        {
+          "id": "d",
+          "text": "আমার বন্ধু শেখার সব সুযোগ হারাক"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নিজের মতো বন্ধুও ভালোভাবে শিখুক চাওয়া অন্যের ভালো চাওয়ার শিক্ষা মেনে চলে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "13",
+          "label": "সহিহ বুখারি ১৩",
+          "url": "https://sunnah.com/bukhari:13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_048",
+      "conceptId": "kids_hadith_good_speech",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কয়েকজন শিশু সহপাঠীকে অপমান করতে শুরু করল। কোন আচরণটি ভালো কথা বলার হাদিস মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরও একটি নিষ্ঠুর ঠাট্টা করব"
+        },
+        {
+          "id": "b",
+          "text": "অপমানের কথাগুলো অন্য দলেও ছড়াব"
+        },
+        {
+          "id": "c",
+          "text": "আরও খারাপ অপমান করে চিৎকার করব"
+        },
+        {
+          "id": "d",
+          "text": "অপমান এড়িয়ে ভালোভাবে কথা বলব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "উপকারী কথা বলো এবং কষ্টদায়ক কথা এড়াও। কাউকে বারবার কষ্ট দেওয়া হলে বিশ্বস্ত বড় কারও সাহায্য চাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "সহিহ বুখারি ৬০১৮",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_049",
+      "conceptId": "kids_hadith_control_anger",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খেলায় হেরে তোমার রাগ হচ্ছে। হাদিসে প্রশংসা করা শক্তির পরিচয় কোন কাজে পাওয়া যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একটু থামব এবং কাউকে কষ্ট দেব না"
+        },
+        {
+          "id": "b",
+          "text": "শক্তি দেখাতে কাউকে মারব"
+        },
+        {
+          "id": "c",
+          "text": "বন্ধুর দিকে খেলার গুটি ছুড়ে মারব"
+        },
+        {
+          "id": "d",
+          "text": "সবাই চলে না যাওয়া পর্যন্ত গালাগাল করব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কাউকে কষ্ট না দিয়ে রাগ সামলানোই আত্মনিয়ন্ত্রণ। একটু থামো, দরকার হলে শান্ত হতে সাহায্য চাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "সহিহ বুখারি ৬১১৪",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_050",
+      "conceptId": "kids_hadith_gentleness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ছোট ভাই জামার বোতাম লাগানো শিখছে। কোন আচরণে কোমলতা আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাকে কোনো কাজের নয় বলব"
+        },
+        {
+          "id": "b",
+          "text": "ঠাট্টা না করে শান্তভাবে সাহায্য করব"
+        },
+        {
+          "id": "c",
+          "text": "রাগ করে তার কাপড় টানব"
+        },
+        {
+          "id": "d",
+          "text": "সে লজ্জা না পাওয়া পর্যন্ত হাসব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কোমলভাবে সাহায্য করলে হাদিসের শিক্ষা মানা হয়। নতুন কিছু শেখার সময় আমরা ধৈর্য দেখাতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "সহিহ মুসলিম ২৫৯৪a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_051",
+      "conceptId": "kids_hadith_good_deeds_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আজ দান করার মতো টাকা নেই। কোন কাজটি তবুও ভালো কাজের হাদিসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যের ব্যাগ থেকে টাকা নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সাহায্য চাওয়া কাউকে নিয়ে ঠাট্টা করা"
+        },
+        {
+          "id": "c",
+          "text": "সহপাঠীর হারানো খাতা খুঁজতে সাহায্য করা"
+        },
+        {
+          "id": "d",
+          "text": "টাকা নেই বলে ভালো ব্যবহার না করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "উপকারী ভালো কাজও সদকা হতে পারে। সব ধরনের দানের জন্য টাকা দরকার হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6021",
+          "label": "সহিহ বুখারি ৬০২১",
+          "url": "https://sunnah.com/bukhari:6021"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_052",
+      "conceptId": "kids_hadith_clear_path",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হাঁটার পথে ভাঙা কাচ দেখলে। পথ নিরাপদ রাখতে তুমি কীভাবে সাহায্য করতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খালি হাতে ধারালো কাচ তুলব"
+        },
+        {
+          "id": "b",
+          "text": "পথের আরও জায়গায় কাচ ছড়াব"
+        },
+        {
+          "id": "c",
+          "text": "কাউকে কাচের দিকে ঠেলে দেব"
+        },
+        {
+          "id": "d",
+          "text": "নিরাপদে সরাতে পারবেন এমন বড় কাউকে বলব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "পথের ক্ষতিকর জিনিস সরানো ভালো কাজ। ভাঙা কাচ নিজে না ধরে বড় কারও সাহায্য নাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1009",
+          "label": "সহিহ মুসলিম ১০০৯",
+          "url": "https://sunnah.com/muslim:1009"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_053",
+      "conceptId": "kids_hadith_regular_small_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিয়মিত ভালো কাজের হাদিস মেনে অভ্যাস গড়তে চাও। কোন পরিকল্পনাটি ভালো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিদিন সাধ্যের মধ্যে একটি উপকারী কাজ করব"
+        },
+        {
+          "id": "b",
+          "text": "শুরু না করেই বিশাল কাজ নিয়ে বড়াই করব"
+        },
+        {
+          "id": "c",
+          "text": "শুধু হাততালি পেতে একবার সাহায্য করব"
+        },
+        {
+          "id": "d",
+          "text": "ছোট মনে হয় বলে সব ভালো কাজ ছেড়ে দেব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "এমন একটি ছোট ভালো কাজ বেছে নাও, যা চালিয়ে যেতে পারবে। অল্প হলেও নিয়মিত চেষ্টার গুরুত্ব হাদিসে আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "সহিহ বুখারি ৬৪৬৪",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_054",
+      "conceptId": "kids_hadith_encourage_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নতুন একজন শিক্ষার্থীর হাদিসের পাঠ কঠিন লাগছে। তুমি কীভাবে তাকে উৎসাহ দিতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নতুন বলে তাকে নিয়ে হাসব"
+        },
+        {
+          "id": "b",
+          "text": "অল্প অল্প করে বুঝিয়ে সাহায্য করব"
+        },
+        {
+          "id": "c",
+          "text": "ইচ্ছা করে ব্যাখ্যা আরও কঠিন করব"
+        },
+        {
+          "id": "d",
+          "text": "বলব, তার আর কখনো শেখা উচিত নয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ধৈর্য নিয়ে স্পষ্টভাবে বোঝালে শেখা সহজ হয়। এতে সহজ করা ও উৎসাহ দেওয়ার শিক্ষা কাজে লাগে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "সহিহ বুখারি ৬৯",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_055",
+      "conceptId": "kids_hadith_kindness_mother",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মা তোমার খেলনাগুলো গুছিয়ে রাখতে বললেন। কোন আচরণে হাদিসের ভালো ব্যবহারের শিক্ষা মানা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বলেছেন বলে তাঁকে অপমান করব"
+        },
+        {
+          "id": "b",
+          "text": "তাঁকে কষ্ট দিতে আরও অগোছালো করব"
+        },
+        {
+          "id": "c",
+          "text": "সম্মান রেখে উত্তর দিয়ে সাহায্য করব"
+        },
+        {
+          "id": "d",
+          "text": "বলব, ভালো ব্যবহার শুধু বন্ধুদের জন্য"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সম্মান রেখে কথা বলা ও উপযুক্ত কাজে সাহায্য করা মায়ের সঙ্গে ভালো ব্যবহার দেখানোর উপায়। হাদিসে এই ভালো ব্যবহারকে গুরুত্ব দেওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5971",
+          "label": "সহিহ বুখারি ৫৯৭১",
+          "url": "https://sunnah.com/bukhari:5971"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_056",
+      "conceptId": "kids_hadith_kindness_animals",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বড় কারও সাহায্যে তৃষ্ণার্ত পাখিদের জন্য পরিষ্কার পানি রাখতে পারো। কোন কাজটি হাদিসের শিক্ষা মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাখিদের দিকে ঢিল ছুড়ব"
+        },
+        {
+          "id": "b",
+          "text": "তাদের কষ্ট দেখতে পানি লুকাব"
+        },
+        {
+          "id": "c",
+          "text": "তৃষ্ণার্ত বলে তাদের তাড়া করব"
+        },
+        {
+          "id": "d",
+          "text": "নিরাপদে পানি দেব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নিরাপদে পানি দেওয়া প্রাণীর যত্নের একটি উপায়। এতে তৃষ্ণার্ত কুকুরের হাদিসের শিক্ষা কাজে লাগে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "সহিহ বুখারি ২৩৬৩",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_057",
+      "conceptId": "kids_hadith_truthfulness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "স্কুল থেকে দেওয়া বাড়ির কাজ করতে ভুলে গেছ। কোন উত্তরটি সত্যবাদিতার হাদিস মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্য স্বীকার করে কীভাবে কাজ শেষ করব জিজ্ঞেস করব"
+        },
+        {
+          "id": "b",
+          "text": "ঘটেনি এমন জরুরি ঘটনা বানিয়ে বলব"
+        },
+        {
+          "id": "c",
+          "text": "নির্দোষ সহপাঠীকে দোষ দেব"
+        },
+        {
+          "id": "d",
+          "text": "জমা না দিয়েও বলব জমা দিয়েছি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সৎ উত্তর হাদিসের শিক্ষা মেনে চলে। সত্য বলো এবং ভুল ঠিক করার চেষ্টা করো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "সহিহ বুখারি ৬০৯৪",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_058",
+      "conceptId": "kids_hadith_keep_promises",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ধার নেওয়া বই কাল ফেরত দেবে বলে কথা দিয়েছ। কী করার পরিকল্পনা করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "লুকিয়ে রেখে ভুলে যাওয়ার ভান করব"
+        },
+        {
+          "id": "b",
+          "text": "কথামতো বইটি ফেরত দেব"
+        },
+        {
+          "id": "c",
+          "text": "কথার দাম নেই বলে নিজের কাছে রাখব"
+        },
+        {
+          "id": "d",
+          "text": "মালিকের অনুমতি ছাড়া অন্যকে দিয়ে দেব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কথা দেওয়াকে গুরুত্ব দাও এবং বই ফেরত দেওয়ার পরিকল্পনা করো। ভালো প্রতিশ্রুতি রাখলে মানুষ আমাদের বিশ্বাস করতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "সহিহ বুখারি ৩৩",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_059",
+      "conceptId": "kids_hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি শিশুর পোশাক সাধারণ, কিন্তু আচরণ ভালো। মন ও কাজের হাদিস অনুযায়ী তুমি কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "টাকা কম বলে তাকে নিয়ে ঠাট্টা করব"
+        },
+        {
+          "id": "b",
+          "text": "বলব, দামি কাপড়ই দয়ার প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "পোশাক দেখে বিচার না করে তাকে সম্মান করব"
+        },
+        {
+          "id": "d",
+          "text": "জুতা সাধারণ বলে বন্ধুত্ব করব না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিস শেখায়, চেহারা ও সম্পদ দিয়ে ভালো হওয়া নির্ধারিত হয় না। অন্যদের সম্মান দিয়ে আচরণ করো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "সহিহ মুসলিম ২৫৬৪c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_060",
+      "conceptId": "kids_hadith_kindness_neighbors",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "প্রতিবেশীর দরজার কাছে খেলছ। কোন কাজটি হাদিসে শেখানো ভালো ব্যবহার প্রকাশ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মজা করে দরজার পথ আটকে দেব"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর আঙিনায় ময়লা ফেলব"
+        },
+        {
+          "id": "c",
+          "text": "তিনি পাশ দিয়ে গেলে গালাগাল করব"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর ঢোকার পথ খোলা রাখব এবং বিরক্ত করব না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "খেলার সময়ও প্রতিবেশীর প্রয়োজন খেয়াল করো। তাঁর ঢোকার পথ খোলা রাখা যত্ন দেখানোর একটি উপায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "সহিহ বুখারি ৬০১৪",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    }
+  ]
+}

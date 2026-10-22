@@ -1,0 +1,2317 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "beliefs_foundations",
+  "title": "ঈমানের প্রথম পাঠ",
+  "description": "ছোট্ট মুসলিম → প্রাথমিক স্তর। আল্লাহ, ইসলাম, নবী-রাসুল, ফেরেশতা, কুরআন ও মৃত্যুর পরের জীবন সম্পর্কে ছোট প্রশ্ন, সহজ অর্থ ও পরিচিত দৈনন্দিন উদাহরণ। প্রায় ৬–৯ বছরের শিশুদের কথা ভেবে লেখা; প্রয়োজনে বড় কেউ প্রশ্ন পড়ে শোনাতে পারেন। সব প্রশ্ন শিশুদের প্রাথমিক স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। শিশুদের জন্য ঈমানের শুরুর শিক্ষা, ছোট বাক্য ও সরল উদাহরণ ব্যবহার করা হয়েছে। বয়স ও স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিসের মূল পাঠ মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যা শিশুদের উপযোগী নিজস্ব ভাষায় লেখা শিক্ষামূলক বক্তব্য; হুবহু অনুবাদ নয়। দৈনন্দিন উদাহরণে সূত্রের মূলনীতি বোঝানো হয়েছে। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_beliefs_foundations_001",
+      "conceptId": "kids_belief_creator",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আমাদের ও চারপাশের জগৎ কে সৃষ্টি করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "সূর্য"
+        },
+        {
+          "id": "c",
+          "text": "চাঁদ"
+        },
+        {
+          "id": "d",
+          "text": "সমুদ্র"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মানুষ, পশুপাখি ও গাছপালাসহ সবকিছুর সৃষ্টিকর্তা আল্লাহ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "62",
+          "label": "কুরআন ৩৯:৬২",
+          "url": "https://quran.com/39/62"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_002",
+      "conceptId": "kids_belief_one_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুসলিমরা বিশ্বাস করে, আল্লাহ কতজন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুজন"
+        },
+        {
+          "id": "b",
+          "text": "একজন"
+        },
+        {
+          "id": "c",
+          "text": "তিনজন"
+        },
+        {
+          "id": "d",
+          "text": "চারজন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুসলিমরা এক আল্লাহতে বিশ্বাস করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1",
+          "label": "কুরআন ১১২:১",
+          "url": "https://quran.com/112/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_003",
+      "conceptId": "kids_belief_worship_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুসলিমরা কার ইবাদত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূর্যের"
+        },
+        {
+          "id": "b",
+          "text": "কোনো পাহাড়ের"
+        },
+        {
+          "id": "c",
+          "text": "শুধু আল্লাহর"
+        },
+        {
+          "id": "d",
+          "text": "কোনো মূর্তির"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আমরা শুধু আল্লাহর ইবাদত করি। তাঁর সৃষ্টি করা কোনো কিছুই উপাস্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "কুরআন ২০:১৪",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_004",
+      "conceptId": "kids_belief_need_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কার আল্লাহর যত্নের প্রয়োজন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বড়দের"
+        },
+        {
+          "id": "b",
+          "text": "শুধু শিশুদের"
+        },
+        {
+          "id": "c",
+          "text": "শুধু পথিকদের"
+        },
+        {
+          "id": "d",
+          "text": "আমাদের সবার"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সবার আল্লাহকে প্রয়োজন। আল্লাহর কাউকে বা কোনো কিছুকে প্রয়োজন হয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_005",
+      "conceptId": "kids_belief_hears_sees",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন আল্লাহ সম্পর্কে কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি সবকিছু শোনেন ও দেখেন"
+        },
+        {
+          "id": "b",
+          "text": "তিনি শুধু মসজিদে শোনেন"
+        },
+        {
+          "id": "c",
+          "text": "তিনি শুধু দিনের আলোয় দেখেন"
+        },
+        {
+          "id": "d",
+          "text": "দেখতে তাঁর ক্যামেরা লাগে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ সবকিছু শোনেন ও দেখেন। তাঁর শোনা ও দেখা আমাদের মতো সীমিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_006",
+      "conceptId": "kids_belief_hidden_thoughts",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কাউকে না বলা আমাদের মনের কথাও কে জানেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি সহপাঠী"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি প্রতিবেশী"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি দোকানদার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "যা বলা হয় ও যা লুকানো থাকে—আল্লাহ সবই জানেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "7",
+          "label": "কুরআন ২০:৭",
+          "url": "https://quran.com/20/7"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_007",
+      "conceptId": "kids_belief_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা ফাতিহায় আল্লাহকে কেমন বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভুলে যান এমন"
+        },
+        {
+          "id": "b",
+          "text": "অসহায়"
+        },
+        {
+          "id": "c",
+          "text": "দয়ালু"
+        },
+        {
+          "id": "d",
+          "text": "ঘুম পায় এমন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সুরা ফাতিহা শেখায়, আল্লাহ অতি দয়ালু।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "3",
+          "label": "কুরআন ১:৩",
+          "url": "https://quran.com/1/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_008",
+      "conceptId": "kids_belief_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা ফাতিহায় আমরা আল্লাহর কাছে কী চাই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিদিন নতুন খেলনা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি বন্ধুর চেয়ে ভালো হওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কখনো কিছু শিখতে না হওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সঠিক পথে চলার সাহায্য"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আমরা আল্লাহর কাছে সঠিক পথে চলার সাহায্য চাই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "6",
+          "label": "কুরআন ১:৬",
+          "url": "https://quran.com/1/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_009",
+      "conceptId": "kids_belief_provider",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আমাদের খাবার জন্মাতে সাহায্য করে এমন বৃষ্টি কে দেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "আমাদের স্কুলব্যাগ"
+        },
+        {
+          "id": "c",
+          "text": "আমাদের জুতা"
+        },
+        {
+          "id": "d",
+          "text": "আমাদের পেনসিল"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ বৃষ্টি দেন এবং ফসল ও ফল জন্মান।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "10-11",
+          "label": "কুরআন ১৬:১০-১১",
+          "url": "https://quran.com/16/10-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_010",
+      "conceptId": "kids_belief_gratitude",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর নিয়ামত পেলে আমাদের কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবসময় অভিযোগ করা"
+        },
+        {
+          "id": "b",
+          "text": "কৃতজ্ঞ হওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আমাদের কিছু দরকার নেই ভাব করা"
+        },
+        {
+          "id": "d",
+          "text": "সব উপকার ভুলে যাওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন আমাদের আল্লাহকে স্মরণ করতে ও তাঁর প্রতি কৃতজ্ঞ হতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "152",
+          "label": "কুরআন ২:১৫২",
+          "url": "https://quran.com/2/152"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_011",
+      "conceptId": "kids_belief_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর কাছে সাহায্য চাওয়াকে কী বলি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কেনাকাটার তালিকা"
+        },
+        {
+          "id": "b",
+          "text": "খেলার স্কোর"
+        },
+        {
+          "id": "c",
+          "text": "দোয়া"
+        },
+        {
+          "id": "d",
+          "text": "স্কুলের রুটিন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "দোয়া মানে আল্লাহকে ডাকা। আমরা তাঁর কাছে আমাদের প্রয়োজন জানাতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_012",
+      "conceptId": "kids_belief_islam",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুসলিমদের ধর্মের নাম কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরবি"
+        },
+        {
+          "id": "b",
+          "text": "মক্কা"
+        },
+        {
+          "id": "c",
+          "text": "রমজান"
+        },
+        {
+          "id": "d",
+          "text": "ইসলাম"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ইসলাম আমাদের ধর্ম। আরবি ভাষা, মক্কা শহর আর রমজান একটি মাস।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "19",
+          "label": "কুরআন ৩:১৯",
+          "url": "https://quran.com/3/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_013",
+      "conceptId": "kids_belief_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর রাসুলরা মানুষকে কী করতে শিখিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর ইবাদত করতে"
+        },
+        {
+          "id": "b",
+          "text": "তাঁদের নিজেদের ইবাদত করতে"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহকে ভুলে যেতে"
+        },
+        {
+          "id": "d",
+          "text": "সূর্যের ইবাদত করতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মানুষকে তাঁর ইবাদত শেখানোর জন্য আল্লাহ রাসুল পাঠিয়েছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "কুরআন ১৬:৩৬",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_014",
+      "conceptId": "kids_belief_last_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর শেষ নবী কে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুসা"
+        },
+        {
+          "id": "b",
+          "text": "মুহাম্মদ ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "ইবরাহিম"
+        },
+        {
+          "id": "d",
+          "text": "নুহ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুহাম্মদ ﷺ আল্লাহর শেষ নবী। অন্য নামগুলোও নবীদের, যাঁরা তাঁর আগে এসেছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "কুরআন ৩৩:৪০",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_015",
+      "conceptId": "kids_belief_quran",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুসলিমরা পড়ে এমন কোন কিতাব আল্লাহর বাণী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গল্পের বই"
+        },
+        {
+          "id": "b",
+          "text": "রান্নার বই"
+        },
+        {
+          "id": "c",
+          "text": "কুরআন"
+        },
+        {
+          "id": "d",
+          "text": "বানান শেখার খাতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন আল্লাহর কাছ থেকে এসেছে। এতে আমরা তাঁর বাণী শিখি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 10,
+          "ayahs": "37",
+          "label": "কুরআন ১০:৩৭",
+          "url": "https://quran.com/10/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_016",
+      "conceptId": "kids_belief_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ফেরেশতারা কার কথা মেনে চলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দলের অধিনায়কের"
+        },
+        {
+          "id": "b",
+          "text": "টিভির উপস্থাপকের"
+        },
+        {
+          "id": "c",
+          "text": "দোকানদারের"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ যে আদেশ দেন, ফেরেশতারা তা পালন করেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "50",
+          "label": "কুরআন ১৬:৫০",
+          "url": "https://quran.com/16/50"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_017",
+      "conceptId": "kids_belief_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর কোন রাসুলদের মুসলিমরা বিশ্বাস করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবাইকে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু আমাদের শহরের রাসুলদের"
+        },
+        {
+          "id": "c",
+          "text": "শুধু যাঁদের নাম আমরা জানি"
+        },
+        {
+          "id": "d",
+          "text": "শুধু যাঁদের কথা বন্ধুরা বলে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ যত রাসুল পাঠিয়েছেন, মুসলিমরা তাঁদের সবাইকে বিশ্বাস করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_018",
+      "conceptId": "kids_belief_life_after_death",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মৃত্যুর পর মানুষকে আবার জীবিত করতে পারেন কে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খেলনা রোবট"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "গল্পের নায়ক"
+        },
+        {
+          "id": "d",
+          "text": "উঁচু ভবন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহ প্রথমবার আমাদের সৃষ্টি করেছেন। তিনি আমাদের আবার জীবিতও করতে পারেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 36,
+          "ayahs": "79",
+          "label": "কুরআন ৩৬:৭৯",
+          "url": "https://quran.com/36/79"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_019",
+      "conceptId": "kids_belief_allah_fair",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ সম্পর্কে কোন কথাটি সত্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ প্রতিটি ছোট ভালো কাজ ভুলে যান"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ শুধু বিখ্যাত মানুষকে খেয়াল করেন"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ কারও প্রতি অন্যায় করেন না"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ পোশাকের দাম দিয়ে বিচার করেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহ কখনো অন্যায় করেন না। ছোট ভালো কাজও তাঁর কাছে গুরুত্বপূর্ণ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "কুরআন ৪:৪০",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_020",
+      "conceptId": "kids_belief_trust_and_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উপকারী কিছু করতে গেলে আমাদের কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোনো চেষ্টা করতে না চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "অন্যেরা সব করে দেবে বলে বসে থাকা"
+        },
+        {
+          "id": "c",
+          "text": "শুরু করার আগেই ছেড়ে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সাধ্যমতো চেষ্টা করা ও আল্লাহর সাহায্য চাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ আমাদের উপকারী কাজের চেষ্টা করতে ও আল্লাহর সাহায্য চাইতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_021",
+      "conceptId": "kids_belief_creator",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহকে আমাদের সৃষ্টিকর্তা বলার মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি আমাদের ও সবকিছু সৃষ্টি করেছেন"
+        },
+        {
+          "id": "b",
+          "text": "তিনিও সাধারণ একজন মানুষ"
+        },
+        {
+          "id": "c",
+          "text": "তিনি শুধু হাতে ধরা জিনিস তৈরি করেছেন"
+        },
+        {
+          "id": "d",
+          "text": "তিনি শুধু আমাদের শহর তৈরি করেছেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ সবকিছু সৃষ্টি করেছেন। আশপাশে যা দেখি, তাঁর সৃষ্টি তার চেয়েও অনেক বড়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "62",
+          "label": "কুরআন ৩৯:৬২",
+          "url": "https://quran.com/39/62"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_022",
+      "conceptId": "kids_belief_one_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহ এক—এ কথা আমাদের কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি শহরের আলাদা ইলাহ আছে"
+        },
+        {
+          "id": "b",
+          "text": "তিনি ছাড়া আর কোনো ইলাহ নেই"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি তারা একেকটি ইলাহ"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি পরিবারের আলাদা ইলাহ দরকার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহ এক। আমরা অনেক ইলাহে বিশ্বাস করি না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1",
+          "label": "কুরআন ১১২:১",
+          "url": "https://quran.com/112/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_023",
+      "conceptId": "kids_belief_worship_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আমরা সূর্যের ইবাদত করি না কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এটি অনেক দূরে"
+        },
+        {
+          "id": "b",
+          "text": "নাম বলার জন্য এটি খুব উজ্জ্বল"
+        },
+        {
+          "id": "c",
+          "text": "এটি আল্লাহর সৃষ্টি"
+        },
+        {
+          "id": "d",
+          "text": "এটি কখনো মেঘের আড়ালে যায়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূর্য আল্লাহর সৃষ্টি। আমরা সৃষ্টিকর্তা আল্লাহর ইবাদত করি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "কুরআন ২০:১৪",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_024",
+      "conceptId": "kids_belief_need_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কেবল বিপদ হলেই কি আমাদের আল্লাহকে প্রয়োজন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু হেরে গেলে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু ক্ষুধা লাগলে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু পরীক্ষার আগে"
+        },
+        {
+          "id": "d",
+          "text": "না, সবসময় আল্লাহকে প্রয়োজন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আনন্দের সময়েও আল্লাহকে প্রয়োজন, কষ্টের সময়েও প্রয়োজন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_025",
+      "conceptId": "kids_belief_hears_sees",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কী ঘটছে তা দেখতে আল্লাহর কি বাতি লাগে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, বাতি ছাড়াই আল্লাহ দেখেন"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু উজ্জ্বল বাতি"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু মসজিদের বাতি"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, শুধু ঘরের বাতি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ সবকিছু দেখেন। দেখতে তাঁর আলো বা যন্ত্রের দরকার হয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_026",
+      "conceptId": "kids_belief_hidden_thoughts",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহ কি শুধু জোরে বলা কথা জানেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু চিৎকার করে বলা কথা"
+        },
+        {
+          "id": "b",
+          "text": "না, তিনি গোপন কথাও জানেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু স্কুলে বলা কথা"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, শুধু মঞ্চে বলা কথা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বলা কথার পাশাপাশি আমাদের মনের গোপন কথাও আল্লাহ জানেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "7",
+          "label": "কুরআন ২০:৭",
+          "url": "https://quran.com/20/7"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_027",
+      "conceptId": "kids_belief_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ভুল করলে আল্লাহর দয়ার কথা মনে করে আমরা কী শিখি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আমাদের ভালো হওয়ার চেষ্টা বন্ধ করতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "আমাদের কখনো সাহায্য চাওয়া উচিত নয়"
+        },
+        {
+          "id": "c",
+          "text": "আমরা তাঁর কাছে ফিরে ক্ষমা চাইতে পারি"
+        },
+        {
+          "id": "d",
+          "text": "কিছুই ঘটেনি এমন ভাব করতে হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহ শেখান, তাঁর দয়া নিয়ে আশা হারাবে না। আমরা তাঁর কাছে ফিরে ভালো হওয়ার চেষ্টা করতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "কুরআন ৩৯:৫৩",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_028",
+      "conceptId": "kids_belief_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর কাছে সঠিক পথ চাওয়ার মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কখনো স্কুলের বাড়ির কাজ না পেতে চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি তর্কে জিততে চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কখনো কারও কথা না শুনতে চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সঠিক কাজ করতে তাঁর সাহায্য চাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সঠিক পথের সাহায্য চাওয়া মানে শুধু সব ইচ্ছা পূরণ নয়, ঠিক পথে চলতে সাহায্য চাওয়া।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "6",
+          "label": "কুরআন ১:৬",
+          "url": "https://quran.com/1/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_029",
+      "conceptId": "kids_belief_provider",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বৃষ্টি আল্লাহর নিয়ামত কীভাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে পানি পাওয়া যায় ও গাছপালা বাড়ে"
+        },
+        {
+          "id": "b",
+          "text": "এতে গাছের আর যত্ন লাগে না"
+        },
+        {
+          "id": "c",
+          "text": "এতে প্রতিটি পাথর খাবার হয়"
+        },
+        {
+          "id": "d",
+          "text": "এতে আমাদের পানির দরকার শেষ হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন বৃষ্টি ও বেড়ে ওঠা গাছপালায় আল্লাহর যত্ন ও দানের কথা মনে করায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "10-11",
+          "label": "কুরআন ১৬:১০-১১",
+          "url": "https://quran.com/16/10-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_030",
+      "conceptId": "kids_belief_gratitude",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শুধু বড় উপহার পেলেই কি কৃতজ্ঞ হতে হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু দামি উপহার গণ্য হয়"
+        },
+        {
+          "id": "b",
+          "text": "না, ছোট নিয়ামতও গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু জন্মদিনের উপহার গণ্য হয়"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, শুধু স্কুলের পুরস্কার গণ্য হয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহকে ধন্যবাদ দেওয়ার শিক্ষা শুধু বড় বা দামি নিয়ামতের জন্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "152",
+          "label": "কুরআন ২:১৫২",
+          "url": "https://quran.com/2/152"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_031",
+      "conceptId": "kids_belief_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শিশুরাও কি আল্লাহর কাছে দোয়া করতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, শুধু বড়রা পারে"
+        },
+        {
+          "id": "b",
+          "text": "না, শুধু শিক্ষকেরা পারেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শিশুরাও দোয়া করতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "না, শুধু পথিকেরা পারেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শিশুসহ আমরা সবাই দোয়ার মাধ্যমে আল্লাহকে ডাকতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_032",
+      "conceptId": "kids_belief_islam",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইসলাম কি শুধু এক দেশের মানুষের জন্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু এক শহরের মানুষ"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু এক দ্বীপের মানুষ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু আমাদের পাশের মানুষ"
+        },
+        {
+          "id": "d",
+          "text": "না, অনেক দেশের মানুষ ইসলাম মানতে পারেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ তাঁর রাসুলকে সব মানুষের কাছে পাঠিয়েছেন, শুধু এক দেশের জন্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "158",
+          "label": "কুরআন ৭:১৫৮",
+          "url": "https://quran.com/7/158"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_033",
+      "conceptId": "kids_belief_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহ রাসুলদের কেন পাঠিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষকে তাঁর ইবাদতের পথ দেখাতে"
+        },
+        {
+          "id": "b",
+          "text": "মানুষকে খেলনার ইবাদত শেখাতে"
+        },
+        {
+          "id": "c",
+          "text": "সব মানুষকে রাজা বানাতে"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে শিখতে নিষেধ করতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "রাসুলরা আল্লাহর বাণী এনেছেন ও মানুষকে তাঁর ইবাদত করতে ডেকেছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "কুরআন ১৬:৩৬",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_034",
+      "conceptId": "kids_belief_last_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শেষ নবী বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতি বছর নতুন নবী আসেন"
+        },
+        {
+          "id": "b",
+          "text": "মুহাম্মদ ﷺ-এর পরে নতুন নবী আসবেন না"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি শিক্ষক নবী হয়ে যান"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি শাসক নবী হয়ে যান"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুহাম্মদ ﷺ শেষ নবী। তাঁর পরে আর কোনো নবী আসবেন না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "কুরআন ৩৩:৪০",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_035",
+      "conceptId": "kids_belief_quran",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন বানানো গল্পের বই থেকে আলাদা কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এটি শুধু তাক সাজানোর জন্য"
+        },
+        {
+          "id": "b",
+          "text": "এটি শুধু মানুষের নামের তালিকা"
+        },
+        {
+          "id": "c",
+          "text": "এটি আল্লাহর বাণী"
+        },
+        {
+          "id": "d",
+          "text": "এটি ক্লাসের বানানো খেলা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন আল্লাহর কাছ থেকে এসেছে। তাঁর বাণী বোঝার জন্য আমরা এটি শিখি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 10,
+          "ayahs": "37",
+          "label": "কুরআন ১০:৩৭",
+          "url": "https://quran.com/10/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_036",
+      "conceptId": "kids_belief_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ফেরেশতাদের সম্পর্কে কোন কথাটি সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁরাই ইলাহ, যাঁদের ইবাদত করব"
+        },
+        {
+          "id": "b",
+          "text": "তাঁরা আল্লাহর বদলে মানুষের ইবাদত করেন"
+        },
+        {
+          "id": "c",
+          "text": "তাঁরা আমাদের চাঁদের ইবাদত শেখান"
+        },
+        {
+          "id": "d",
+          "text": "তাঁরা আল্লাহর ইবাদত করেন ও তাঁর আদেশ মানেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ফেরেশতারা আল্লাহর বান্দা, ইলাহ নন। তাঁরা তাঁর ইবাদত করেন ও কথা মেনে চলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "49-50",
+          "label": "কুরআন ১৬:৪৯-৫০",
+          "url": "https://quran.com/16/49-50"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_037",
+      "conceptId": "kids_belief_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মুহাম্মদ ﷺ শেষ নবী বলে কি আগের রাসুলদের অস্বীকার করি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, তাঁদেরও বিশ্বাস করি"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, আগের সব রাসুলকে অস্বীকার করি"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু পছন্দের একজনকে বিশ্বাস করি"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, বন্ধুরা মানলেই শুধু বিশ্বাস করি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "শেষ নবীকে বিশ্বাস করার মানে আল্লাহর পাঠানো অন্য রাসুলদের অস্বীকার করা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_038",
+      "conceptId": "kids_belief_life_after_death",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মৃত্যুর পরের জীবনে বিশ্বাস করার মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষ খেলার চরিত্র হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ মানুষকে আবার জীবিত করবেন"
+        },
+        {
+          "id": "c",
+          "text": "সবাই আকাশের তারা হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "ভবন মানুষকে নতুন জীবন দেয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহ জানান, যিনি প্রথমবার মানুষ সৃষ্টি করেছেন, তিনিই তাদের আবার জীবিত করবেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 36,
+          "ayahs": "79",
+          "label": "কুরআন ৩৬:৭৯",
+          "url": "https://quran.com/36/79"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_039",
+      "conceptId": "kids_belief_allah_fair",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ছোট ভালো কাজও কি আল্লাহর কাছে গুরুত্বপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, শুধু খুব খরচের কাজ গণ্য হয়"
+        },
+        {
+          "id": "b",
+          "text": "না, শুধু বিখ্যাতরা ভালো করতে পারেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, ছোট ভালো কাজও গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "না, শুধু অনেকের দেখা কাজ গণ্য হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহ কখনো অন্যায় করেন না এবং ভালো কাজের পুরস্কার দেন। ভালো কাজ অনেক মানুষকে দেখতে হবে—এমন নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "কুরআন ৪:৪০",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_040",
+      "conceptId": "kids_belief_trust_and_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর ওপর ভরসা মানে কি চেষ্টা বন্ধ করা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, উপকারী চেষ্টার মূল্য নেই"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, আমাদের শেখা এড়ানো উচিত"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, অন্য কাউকে সব কাজ করতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "না, আমরা সাহায্য চেয়ে চেষ্টা চালাই"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ-এর শিক্ষায় আল্লাহর সাহায্য চাওয়ার সঙ্গে উপকারী কাজের চেষ্টা যুক্ত আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_041",
+      "conceptId": "kids_belief_creator",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আমিনা পাখি, গাছ ও মেঘ দেখে। সে কী মনে করতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবই আল্লাহ সৃষ্টি করেছেন"
+        },
+        {
+          "id": "b",
+          "text": "পাখিরা গাছ সৃষ্টি করেছে"
+        },
+        {
+          "id": "c",
+          "text": "মেঘ নিজে নিজে তৈরি হয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মানুষই আল্লাহর সৃষ্টি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "প্রকৃতির জিনিসগুলো দেখলে আমাদের মনে পড়তে পারে, আল্লাহই সৃষ্টিকর্তা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "62",
+          "label": "কুরআন ৩৯:৬২",
+          "url": "https://quran.com/39/62"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_042",
+      "conceptId": "kids_belief_one_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইউসুফ সুরা ইখলাস শিখছে। কোন কথাটি এর শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূর্যও আরেক ইলাহ"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ এক"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি তারা একেকটি ইলাহ"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি দেশের আলাদা ইলাহ আছে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সুরা ইখলাস শেখায়, আল্লাহ এক।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1",
+          "label": "কুরআন ১১২:১",
+          "url": "https://quran.com/112/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_043",
+      "conceptId": "kids_belief_worship_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু জিজ্ঞেস করে, মুসলিমরা কি চাঁদের ইবাদত করে? সঠিক উত্তর কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু পূর্ণিমায়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু রাতে"
+        },
+        {
+          "id": "c",
+          "text": "না, আমরা শুধু আল্লাহর ইবাদত করি"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, শুধু রমজানে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "চাঁদ আল্লাহর সৃষ্টি। আমরা শুধু আল্লাহর ইবাদত করি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "কুরআন ২০:১৪",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_044",
+      "conceptId": "kids_belief_need_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হাসান নতুন একটি কাজ শিখেছে। এখন কি তার আল্লাহকে আর প্রয়োজন নেই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, একটি কাজ শেখাই যথেষ্ট"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, পরের জন্মদিন পর্যন্ত"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, বন্ধুরা প্রশংসা করলেই"
+        },
+        {
+          "id": "d",
+          "text": "না, এখনও তার আল্লাহকে প্রয়োজন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "শেখা ও সফলতা নিয়ামত। এগুলো আল্লাহর প্রতি আমাদের প্রয়োজন দূর করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_045",
+      "conceptId": "kids_belief_hears_sees",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মারইয়াম কাউকে সাহায্য করে, অন্য কেউ দেখছে না। তার ভালো কাজ কে দেখেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "শুধু ক্যামেরা আছে এমন কেউ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু একই ঘরের কেউ"
+        },
+        {
+          "id": "d",
+          "text": "শুধু জানালা দিয়ে দেখছে এমন কেউ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ সবকিছু দেখেন। তাই ভালো কাজ তাঁর কাছে লুকানো থাকে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_046",
+      "conceptId": "kids_belief_hidden_thoughts",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আলি চুপিচুপি ভালো একটি চমকের পরিকল্পনা করে। আল্লাহ সম্পর্কে কোন কথাটি সত্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শিক্ষক শোনার পরেই শুধু আল্লাহ জানেন"
+        },
+        {
+          "id": "b",
+          "text": "মানুষকে বলার আগেই আল্লাহ তার পরিকল্পনা জানেন"
+        },
+        {
+          "id": "c",
+          "text": "লেখা হলেই শুধু আল্লাহ জানেন"
+        },
+        {
+          "id": "d",
+          "text": "ছবি তোলার পরেই শুধু আল্লাহ জানেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মানুষকে বলা কথার মতো গোপন বিষয়ও আল্লাহ জানেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "7",
+          "label": "কুরআন ২০:৭",
+          "url": "https://quran.com/20/7"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_047",
+      "conceptId": "kids_belief_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আমিনা ভুল করেছে, এখন ভালো করতে চায়। সে কী মনে রাখতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো অভ্যাস শেখা বন্ধ করা উচিত"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি ভুল চিরকাল লুকিয়ে রাখতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর কাছে ক্ষমা চেয়ে ভালো করার চেষ্টা করতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "অন্য কাউকে দোষ দেওয়া উচিত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহর দয়া আমাদের তাঁর কাছে ফিরে ভালো হওয়ার আশা দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "কুরআন ৩৯:৫৩",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_048",
+      "conceptId": "kids_belief_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইউসুফ সঠিক কাজ বেছে নিতে সাহায্য চায়। কোন দোয়াটি ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব বন্ধুকে আমার সঙ্গে একমত করুন"
+        },
+        {
+          "id": "b",
+          "text": "আমাকে সব তর্কে জিতিয়ে দিন"
+        },
+        {
+          "id": "c",
+          "text": "আমাকে প্রতিটি পাঠ এড়াতে দিন"
+        },
+        {
+          "id": "d",
+          "text": "হে আল্লাহ, আমাকে সঠিক পথ দেখান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সঠিক পথ চাওয়া মানে ঠিক পথে চলতে আল্লাহর সাহায্য চাওয়া।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "6",
+          "label": "কুরআন ১:৬",
+          "url": "https://quran.com/1/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_049",
+      "conceptId": "kids_belief_provider",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বৃষ্টিতে পরিবারের সবজিবাগান পানি পায়। তারা কী মনে করতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ এমন বৃষ্টি দেন, যাতে খাবার জন্মায়"
+        },
+        {
+          "id": "b",
+          "text": "বৃষ্টি মানেই গাছের আর যত্ন লাগে না"
+        },
+        {
+          "id": "c",
+          "text": "পানি দেওয়ার পাত্র বৃষ্টি সৃষ্টি করেছে"
+        },
+        {
+          "id": "d",
+          "text": "কোনো পানি ছাড়াই সবজি জন্মায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন আল্লাহর বৃষ্টির সঙ্গে আমাদের খাবারের ফসল ও ফলের সম্পর্ক মনে করায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "10-11",
+          "label": "কুরআন ১৬:১০-১১",
+          "url": "https://quran.com/16/10-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_050",
+      "conceptId": "kids_belief_gratitude",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খাবার খেয়ে আল্লাহর প্রশংসা করতে জয়নাব কী বলতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কৃতজ্ঞ হওয়ার মতো কিছুই আমার নেই"
+        },
+        {
+          "id": "b",
+          "text": "আলহামদুলিল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু দামি খাবার গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "আমার কখনো কোনো নিয়ামত লাগে না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আলহামদুলিল্লাহ বলে আল্লাহর প্রশংসা করি। খাবারও কৃতজ্ঞ হওয়ার মতো একটি নিয়ামত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "152",
+          "label": "কুরআন ২:১৫২",
+          "url": "https://quran.com/2/152"
+        },
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "2",
+          "label": "কুরআন ১:২",
+          "url": "https://quran.com/1/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_051",
+      "conceptId": "kids_belief_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "স্কুলের একটি কাজের আগে আদম কীভাবে আল্লাহর দিকে ফিরতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বড়রাই দোয়া করে বলে ভাবতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "শিক্ষক হওয়া পর্যন্ত অপেক্ষা করতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্য চেয়ে দোয়া করতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ শুধু মসজিদে শোনেন ভাবতে পারে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আদম আল্লাহকে ডাকতে পারে। দোয়া শুধু বড়দের বা একটি ভবনের জন্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_052",
+      "conceptId": "kids_belief_islam",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মারইয়াম তার ধর্মের কথা বলছে। কোন নামটি বলবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরবি"
+        },
+        {
+          "id": "b",
+          "text": "মক্কা"
+        },
+        {
+          "id": "c",
+          "text": "শাওয়াল"
+        },
+        {
+          "id": "d",
+          "text": "ইসলাম"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ইসলাম তার ধর্মের নাম। এটি ভাষা, শহর বা মাসের নাম নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "19",
+          "label": "কুরআন ৩:১৯",
+          "url": "https://quran.com/3/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_053",
+      "conceptId": "kids_belief_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পাঠে বলা হলো, আল্লাহ রাসুল পাঠিয়েছেন। তাঁরা মানুষকে কী করতে ডেকেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর ইবাদত করতে"
+        },
+        {
+          "id": "b",
+          "text": "রাসুলদের নিজেদের ইবাদত করতে"
+        },
+        {
+          "id": "c",
+          "text": "সূর্যকে ইলাহ বানাতে"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর বাণী ভুলে যেতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহর রাসুলরা নিজেদের নয়, আল্লাহর ইবাদত করতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "কুরআন ১৬:৩৬",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_054",
+      "conceptId": "kids_belief_last_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইউসুফ আমাদের শেষ নবীকে নিয়ে কার্ড বানায়। কোন নামটি লিখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুসা"
+        },
+        {
+          "id": "b",
+          "text": "মুহাম্মদ ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "ইবরাহিম"
+        },
+        {
+          "id": "d",
+          "text": "নুহ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুহাম্মদ ﷺ আল্লাহর শেষ নবী। তাঁর নাম শিখে আমরা আমাদের রাসুলকে চিনতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "কুরআন ৩৩:৪০",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_055",
+      "conceptId": "kids_belief_quran",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আমিনা কুরআন শিখতে শুরু করে। শেখার ভালো উদ্দেশ্য কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বন্ধুদের দেখানো"
+        },
+        {
+          "id": "b",
+          "text": "শুধু স্টিকার জমানো"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর বাণী শেখা"
+        },
+        {
+          "id": "d",
+          "text": "এর কোনো অর্থ না বোঝা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন আল্লাহর কাছ থেকে এসেছে। তাঁর বাণী শেখার জন্য আমরা এটি পড়ি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 10,
+          "ayahs": "37",
+          "label": "কুরআন ১০:৩৭",
+          "url": "https://quran.com/10/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_056",
+      "conceptId": "kids_belief_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লাসে ফেরেশতাদের সম্পর্কে শেখা হচ্ছে। খাতায় কোন কথাটি লেখা ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর পাশাপাশি ফেরেশতারাও ইলাহ"
+        },
+        {
+          "id": "b",
+          "text": "ফেরেশতারা খেলনার ইবাদত করতে বলেন"
+        },
+        {
+          "id": "c",
+          "text": "ফেরেশতারা মানুষের কাছে নিজেদের ইবাদত চান"
+        },
+        {
+          "id": "d",
+          "text": "ফেরেশতারা আল্লাহর ইবাদত করেন ও তাঁর আদেশ মানেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন বলে, ফেরেশতারা আল্লাহর আনুগত্য করেন ও তাঁর আদেশ পালন করেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "49-50",
+          "label": "কুরআন ১৬:৪৯-৫০",
+          "url": "https://quran.com/16/49-50"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_057",
+      "conceptId": "kids_belief_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লাসে মুহাম্মদ ﷺ-এর আগের রাসুলদের কথা শেখা হচ্ছে। মুসলিমরা তাঁদের সম্পর্কে কী বিশ্বাস করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আমরা আল্লাহর সব রাসুলকে বিশ্বাস করি"
+        },
+        {
+          "id": "b",
+          "text": "আগে এসেছেন বলে আমরা তাঁদের মানি না"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সবচেয়ে চেনা নামটিকেই বিশ্বাস করি"
+        },
+        {
+          "id": "d",
+          "text": "সহপাঠীরা ভোট দিলেই শুধু তাঁদের মানি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন শেষ নবীর আগের রাসুলসহ আল্লাহর সব রাসুলকে বিশ্বাস করতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "কুরআন ২:২৮৫",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_058",
+      "conceptId": "kids_belief_life_after_death",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক জিজ্ঞেস করেন, মানুষকে আবার জীবিত করতে পারেন কে? কুরআন অনুযায়ী সঠিক উত্তর কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নতুন ব্যাটারি লাগানো খেলনা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ, যিনি প্রথমবার তাদের সৃষ্টি করেছেন"
+        },
+        {
+          "id": "c",
+          "text": "গল্পের বইয়ের ছবি"
+        },
+        {
+          "id": "d",
+          "text": "বাগানের সবচেয়ে উঁচু গাছ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহর সৃষ্টি করার ক্ষমতা মানুষকে আবার জীবিত করার ক্ষমতার কথাও মনে করায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 36,
+          "ayahs": "79",
+          "label": "কুরআন ৩৬:৭৯",
+          "url": "https://quran.com/36/79"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_059",
+      "conceptId": "kids_belief_allah_fair",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক শিশু ছোট ভালো কাজ করেছে, কেউ প্রশংসা করেনি। আল্লাহর কাছে কি এর মূল্য আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, অনেক দর্শক লাগবে"
+        },
+        {
+          "id": "b",
+          "text": "না, এতে অনেক টাকা খরচ হতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, ছোট ভালো কাজেরও মূল্য আছে"
+        },
+        {
+          "id": "d",
+          "text": "না, শুধু বিখ্যাত মানুষের ভালো কাজ গণ্য হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কাজ ছোট বা মানুষ প্রশংসা করেনি বলে আল্লাহ ভালো কাজকে উপেক্ষা করেন না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "কুরআন ৪:৪০",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_060",
+      "conceptId": "kids_belief_trust_and_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আমিনার পড়ার অনুশীলন কঠিন লাগছে। নবী ﷺ-এর শিক্ষা অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবার চেষ্টা করার আগেই ছেড়ে দেবে"
+        },
+        {
+          "id": "b",
+          "text": "সব উপকারী সাহায্য ফিরিয়ে দেবে"
+        },
+        {
+          "id": "c",
+          "text": "চেষ্টা করার কোনো মূল্য নেই ভাববে"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর সাহায্য চাইবে ও অনুশীলন চালাবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহর সাহায্য চাওয়ার সঙ্গে ধৈর্য ধরে অনুশীলনের মতো উপকারী চেষ্টাও থাকে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "everyday_worship",
+  "title": "Everyday Worship",
+  "description": "Little Muslim → Pro. Short questions connect familiar worship with its meanings and suitable daily practice. Covers wiping the head in wudu, tayammum, prayer at its stated time, opening takbir, learning Al-Fatihah, tashahhud, taslim, dua in sujud, dua after adhan, consideration about mosque odors, remembrance before and after using the toilet, testimony after wudu, sneezing and praise, providing iftar, seeking Laylat al-Qadr, obligatory and voluntary prayer, listening to the Friday khutbah, giving valued things and two short praised expressions of dhikr. A knowledgeable adult may read questions aloud, explain words and guide practice. All questions are Pro level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro is the highest editorial level within Little Muslim, not the Educated User level. It develops connections between a worship action and its meaning, simple distinctions between familiar practices, and suitable choices in short situations. All three question styles remain Kids Pro level; styles are not difficulty tiers. No specialist legal disputes, detailed exception lists, independent religious rulings, obscure reference memorization or advanced Arabic analysis are required. The bank is an introduction for guided learning, not a complete prayer or purification manual. It has not been calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "The linked Quran passages and reports from Sahih al-Bukhari, Sahih Muslim, Sunan Abi Dawud and Jami at-Tirmidhi were checked during preparation. Abi Dawud 30 is labeled Sahih (Al-Albani), and Tirmidhi 807 Sahih (Darussalam), on their linked pages; these are source-attributed gradings rather than independent authentication. Questions and explanations are original child-friendly educational paraphrases, not complete or verbatim translations. Current situations are illustrative applications, not narrated events. The wudu questions concern the report's wiping of the head and do not settle the minimum area to wipe or every accepted method. Tayammum is a prescribed alternative with conditions; the questions do not present any available dirt or any travel as automatically sufficient, and adults should explain suitable material, method and application. Prayer timing is valued without assigning adult accountability to every child, judging an individual's missed prayer, or settling travel, illness, combinations or time-calculation differences. Takbir is taught in its opening-prayer context without claiming every ordinary utterance begins prayer or giving a complete account of intention and entry conditions. Al-Fatihah is emphasized for learning, without declaring a particular child's prayer invalid, denying accommodations or settling recitation behind the imam and other jurisprudential details. Tashahhud is taught through the reported sitting recitation without rejecting other established wordings. Taslim is taught through the reported ending to the right and left without a comprehensive ruling on the number, wording or validity conditions. Sujud's reported nearness and encouragement of dua are retained without explaining their metaphysical nature, prescribing unrestricted language or Quran recitation during sujud, or promising a particular immediate result. A teacher should explain suitable supplications and prayer practice. The dua after adhan is addressed to Allah and summarized through al-Wasilah and the promised honored station; the quiz does not provide an invented formula, replace the established wording with a summary or ask anyone besides Allah to confer that station. The mosque-odor questions concern consideration about the reported food smells, without banning the foods themselves, treating perfume as obligatory, excusing deliberate avoidance of prayer or authorizing humiliation about bodies, illness or poverty. Toilet remembrance is presented as calm routine learning, not a reason to create fear, shame ordinary bodily needs, avoid hygiene or assign invented consequences to forgetting a phrase. Ghufranak is seeking Allah's forgiveness after leaving the toilet; no unsupported explanation for its occasion is invented. The post-wudu testimony follows completing wudu and is not made a substitute for purification or a required condition of wudu's validity. The sneezing exchange distinguishes the sneezer's praise from the companion's prayer for mercy without presenting every circumstance and exception as covered. Providing iftar is encouraged without diminishing the fasting person's reward, specifying an unsupported minimum meal size, obliging costly food or assigning adult fasting duties to children. Family-guided food preparation must remain suitable to a child's abilities and guests' needs. The Laylat al-Qadr questions follow the report about odd nights of the last ten of Ramadan and do not declare a fixed date certain each year, demand sleep deprivation or judge a child's sincerity by exhaustion. The obligatory-voluntary distinction is limited to the report's extra voluntary prayer beyond the five daily prayers; it does not erase separately discussed obligations or classify every named additional prayer across legal schools. Friday-khutbah etiquette concerns ordinary conversation, including telling a companion to listen; it is not an instruction to ignore emergencies, necessary access support or safeguarding, nor a declaration that every child must attend Friday prayer. Quran 3:92 encourages giving from valued possessions without demanding that children donate essentials, all their belongings or property they do not own; family guidance and appropriate permission are included. The two dhikr expressions are taught from Bukhari 6406 without inventing a compulsory count, interpreting the balance as physical effort or judging others by recital speed. Transliteration supports recognition and should be paired with reliable pronunciation teaching. This remains a draft for scholarly and child-readability review, not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_pro_everyday_worship_001",
+      "conceptId": "kids_worship_wipe_head",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the reported demonstration of wudu, how was the head treated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wet hands were passed over it"
+        },
+        {
+          "id": "b",
+          "text": "It was rubbed with a dry towel only"
+        },
+        {
+          "id": "c",
+          "text": "Water was poured over it until the clothes were soaked"
+        },
+        {
+          "id": "d",
+          "text": "It was left out of the demonstration"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The demonstration includes wiping the head with wet hands. Wudu has taught actions to learn, rather than simply getting everything wet.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "185",
+          "label": "Sahih al-Bukhari 185",
+          "url": "https://sunnah.com/bukhari:185"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_002",
+      "conceptId": "kids_worship_tayammum_alternative",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What prescribed purification alternative does Quran 5:6 describe when water cannot be found?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replacing prayer with a meal"
+        },
+        {
+          "id": "b",
+          "text": "Tayammum using clean earth"
+        },
+        {
+          "id": "c",
+          "text": "Skipping all worship for the day"
+        },
+        {
+          "id": "d",
+          "text": "Washing only the outside of one's shoes"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse describes tayammum with clean earth, wiping the face and hands. A knowledgeable adult can explain when and how it applies.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_003",
+      "conceptId": "kids_worship_prayer_stated_time",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which feature of prayer did the Prophet ﷺ praise when asked about deeds dear to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waiting until every other activity is finished"
+        },
+        {
+          "id": "b",
+          "text": "Choosing its time only by convenience"
+        },
+        {
+          "id": "c",
+          "text": "Offering it at its proper time"
+        },
+        {
+          "id": "d",
+          "text": "Making the prayer area as expensive as possible"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report praises prayer at its stated time. Planning daily activities can help us give prayer appropriate attention.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "527",
+          "label": "Sahih al-Bukhari 527",
+          "url": "https://sunnah.com/bukhari:527"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_004",
+      "conceptId": "kids_worship_opening_takbir",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which words begin prayer with the opening takbir?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alhamdulillah after sneezing"
+        },
+        {
+          "id": "b",
+          "text": "Ghufranak after using the toilet"
+        },
+        {
+          "id": "c",
+          "text": "The farewell to a departing guest"
+        },
+        {
+          "id": "d",
+          "text": "Allahu akbar"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet's ﷺ teaching begins prayer with takbir. Allahu akbar expresses Allah's greatness at the start of the prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "757",
+          "label": "Sahih al-Bukhari 757",
+          "url": "https://sunnah.com/bukhari:757"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_005",
+      "conceptId": "kids_worship_fatihah_prayer_learning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which surah does the hadith especially emphasize reciting in prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fatihah"
+        },
+        {
+          "id": "b",
+          "text": "Al-Fil"
+        },
+        {
+          "id": "c",
+          "text": "Al-Kawthar"
+        },
+        {
+          "id": "d",
+          "text": "Al-Asr"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith emphasizes Al-Fatihah's place in prayer. Learning it carefully is an important part of learning to pray.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "756",
+          "label": "Sahih al-Bukhari 756",
+          "url": "https://sunnah.com/bukhari:756"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_006",
+      "conceptId": "kids_worship_tashahhud_sitting",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is the recitation beginning At-tahiyyatu lillah, said while sitting in prayer, commonly called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The opening takbir"
+        },
+        {
+          "id": "b",
+          "text": "Tashahhud"
+        },
+        {
+          "id": "c",
+          "text": "The pilgrimage talbiyah"
+        },
+        {
+          "id": "d",
+          "text": "The adhan"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ taught this recitation for the sitting part of prayer. It includes praise, greetings of peace and the testimony of faith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "831",
+          "label": "Sahih al-Bukhari 831",
+          "url": "https://sunnah.com/bukhari:831"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_007",
+      "conceptId": "kids_worship_taslim_ending",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is the greeting of peace used to conclude prayer called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Suhur"
+        },
+        {
+          "id": "b",
+          "text": "Tayammum"
+        },
+        {
+          "id": "c",
+          "text": "Taslim"
+        },
+        {
+          "id": "d",
+          "text": "Iqamah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report describes the Prophet ﷺ giving taslim to his right and left. Taslim is connected with the conclusion of prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "582",
+          "label": "Sahih Muslim 582",
+          "url": "https://sunnah.com/muslim:582"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_008",
+      "conceptId": "kids_worship_dua_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith particularly encourage us to do while in sujud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plan what to post online"
+        },
+        {
+          "id": "b",
+          "text": "Discuss the day's activities"
+        },
+        {
+          "id": "c",
+          "text": "Rush to finish the movement"
+        },
+        {
+          "id": "d",
+          "text": "Make dua to Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith describes sujud as a special moment of nearness to Allah and encourages supplication. It combines humble worship with asking Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "Sahih Muslim 482",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_009",
+      "conceptId": "kids_worship_after_adhan_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the reported dua after adhan, what do we ask Allah to grant Prophet Muhammad ﷺ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Wasilah and the honored station promised to him"
+        },
+        {
+          "id": "b",
+          "text": "A new direction for prayer every day"
+        },
+        {
+          "id": "c",
+          "text": "An extra month in the year"
+        },
+        {
+          "id": "d",
+          "text": "A different number of daily prayers"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The dua asks Allah to honor His Messenger ﷺ as promised. A teacher can help explain and teach its Arabic words.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "614",
+          "label": "Sahih al-Bukhari 614",
+          "url": "https://sunnah.com/bukhari:614"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_010",
+      "conceptId": "kids_worship_mosque_odor_care",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What concern is addressed by the instruction to keep away from the mosque after eating strong-smelling garlic or onion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Banning every cooked vegetable from the home"
+        },
+        {
+          "id": "b",
+          "text": "Avoiding an unpleasant smell that disturbs others"
+        },
+        {
+          "id": "c",
+          "text": "Making expensive perfume a condition of prayer"
+        },
+        {
+          "id": "d",
+          "text": "Choosing food according to a person's wealth"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report concerns strong food smells in the mosque. Preparing for shared worship includes consideration for others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "855",
+          "label": "Sahih al-Bukhari 855",
+          "url": "https://sunnah.com/bukhari:855"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_011",
+      "conceptId": "kids_worship_before_toilet_refuge",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the reported dua before using the toilet ask Allah for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A larger home"
+        },
+        {
+          "id": "b",
+          "text": "More guests for dinner"
+        },
+        {
+          "id": "c",
+          "text": "Protection from evil"
+        },
+        {
+          "id": "d",
+          "text": "A longer school holiday"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ sought Allah's protection before using the toilet. Remembering Allah can be part of ordinary daily routines.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "142",
+          "label": "Sahih al-Bukhari 142",
+          "url": "https://sunnah.com/bukhari:142"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_012",
+      "conceptId": "kids_worship_after_toilet_forgiveness",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Ghufranak, the reported remembrance after using the toilet, mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I ask for a longer journey"
+        },
+        {
+          "id": "b",
+          "text": "I greet the people in the room"
+        },
+        {
+          "id": "c",
+          "text": "I announce the start of prayer"
+        },
+        {
+          "id": "d",
+          "text": "I ask Your forgiveness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report says the Prophet ﷺ asked Allah's forgiveness after leaving the toilet. Ghufranak is a brief expression of seeking forgiveness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "30",
+          "label": "Sunan Abi Dawud 30",
+          "url": "https://sunnah.com/abudawud:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_013",
+      "conceptId": "kids_worship_after_wudu_testimony",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the reported remembrance after completing wudu include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The testimony of faith"
+        },
+        {
+          "id": "b",
+          "text": "The call to begin suhur"
+        },
+        {
+          "id": "c",
+          "text": "The opening of a Friday sermon"
+        },
+        {
+          "id": "d",
+          "text": "A farewell speech to pilgrims"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report encourages the testimony of faith after completing wudu well. Physical purification is followed by remembrance of Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "234a",
+          "label": "Sahih Muslim 234a",
+          "url": "https://sunnah.com/muslim:234a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_014",
+      "conceptId": "kids_worship_sneeze_praise",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which expression does the hadith teach the person who sneezes to say first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ghufranak"
+        },
+        {
+          "id": "b",
+          "text": "Alhamdulillah"
+        },
+        {
+          "id": "c",
+          "text": "The opening takbir of prayer"
+        },
+        {
+          "id": "d",
+          "text": "The adhan for the congregation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The person who sneezes is taught to praise Allah. The report also teaches kind replies between companions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6224",
+          "label": "Sahih al-Bukhari 6224",
+          "url": "https://sunnah.com/bukhari:6224"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_015",
+      "conceptId": "kids_worship_provide_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith promise someone who provides food for a fasting person to break their fast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A reward removed from the fasting person's account"
+        },
+        {
+          "id": "b",
+          "text": "Permission to decide other people's prayer times"
+        },
+        {
+          "id": "c",
+          "text": "A reward like the fasting person's, without reducing theirs"
+        },
+        {
+          "id": "d",
+          "text": "A requirement that the meal be expensive"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith encourages providing iftar. The giver's reward does not diminish the fasting person's reward.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "807",
+          "label": "Jami at-Tirmidhi 807",
+          "url": "https://sunnah.com/tirmidhi:807"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_016",
+      "conceptId": "kids_worship_qadr_odd_last_ten",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In Aishah's report, when did the Prophet ﷺ tell people to seek Laylat al-Qadr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the first afternoon of Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Any Friday afternoon in the year"
+        },
+        {
+          "id": "c",
+          "text": "Only the first night of Shawwal"
+        },
+        {
+          "id": "d",
+          "text": "The odd nights of Ramadan's last ten nights"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report directs people to the odd nights of Ramadan's last ten. It does not restrict seeking Laylat al-Qadr to one announced date.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2017",
+          "label": "Sahih al-Bukhari 2017",
+          "url": "https://sunnah.com/bukhari:2017"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_017",
+      "conceptId": "kids_worship_obligatory_voluntary",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did the Prophet ﷺ describe extra voluntary prayers beyond the five daily obligatory prayers in this report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additional worship a person may choose"
+        },
+        {
+          "id": "b",
+          "text": "A replacement for every obligatory prayer"
+        },
+        {
+          "id": "c",
+          "text": "Another five prayers required from everyone each day"
+        },
+        {
+          "id": "d",
+          "text": "A way to remove all need for regular prayer"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report distinguishes the five daily obligatory prayers from additional voluntary prayer. Extra worship and obligatory worship are not the same category.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_018",
+      "conceptId": "kids_worship_friday_sermon_listening",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "During the imam's Friday khutbah, which ordinary behavior does the hadith particularly encourage us to avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Listening carefully to the sermon"
+        },
+        {
+          "id": "b",
+          "text": "Talking to a companion, even to tell them to listen"
+        },
+        {
+          "id": "c",
+          "text": "Giving the speaker our attention"
+        },
+        {
+          "id": "d",
+          "text": "Leaving casual conversation for later"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith warns that even telling a companion to be quiet counts as idle speech during the khutbah. Listening deserves care.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "934",
+          "label": "Sahih al-Bukhari 934",
+          "url": "https://sunnah.com/bukhari:934"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_019",
+      "conceptId": "kids_worship_give_what_cherish",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What kind of giving does Quran 3:92 connect with attaining righteousness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving only things we deliberately ruined"
+        },
+        {
+          "id": "b",
+          "text": "Taking someone else's belongings to donate"
+        },
+        {
+          "id": "c",
+          "text": "Giving from things we cherish"
+        },
+        {
+          "id": "d",
+          "text": "Giving only when a crowd applauds"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse encourages giving from what we value. Generosity can involve sharing something meaningful, rather than treating giving as disposal of unwanted things.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "92",
+          "label": "Quran 3:92",
+          "url": "https://quran.com/3/92"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_020",
+      "conceptId": "kids_worship_two_light_phrases",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair is described as light on the tongue and heavy in the balance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The names of the first two prayer times"
+        },
+        {
+          "id": "b",
+          "text": "The first two numbers of the calendar"
+        },
+        {
+          "id": "c",
+          "text": "The opening and closing times of a shop"
+        },
+        {
+          "id": "d",
+          "text": "Subhan Allahi al-Azim; Subhan Allahi wa bihamdihi"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith praises these two expressions of glorifying Allah. Their value is not measured by how long they take to say.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6406",
+          "label": "Sahih al-Bukhari 6406",
+          "url": "https://sunnah.com/bukhari:6406"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_021",
+      "conceptId": "kids_worship_wipe_head",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction helps explain the reported wudu demonstration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The head is wiped, while the face and arms are washed"
+        },
+        {
+          "id": "b",
+          "text": "Every body part is treated only with a dry cloth"
+        },
+        {
+          "id": "c",
+          "text": "Soaking the whole outfit is the purpose of wudu"
+        },
+        {
+          "id": "d",
+          "text": "Wiping the head replaces every other wudu action"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The demonstration distinguishes wiping from washing. A teacher can show the taught method without turning wudu into excessive water use.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "185",
+          "label": "Sahih al-Bukhari 185",
+          "url": "https://sunnah.com/bukhari:185"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_022",
+      "conceptId": "kids_worship_tayammum_alternative",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does tayammum show about purification and worship when its conditions apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Purification has no connection with prayer"
+        },
+        {
+          "id": "b",
+          "text": "A prescribed alternative exists rather than inventing a method"
+        },
+        {
+          "id": "c",
+          "text": "Any substance can replace clean earth without guidance"
+        },
+        {
+          "id": "d",
+          "text": "A person must always abandon prayer if water is unavailable"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse provides an alternative within Allah's guidance. Tayammum has conditions and a taught method; it is not simply skipping purification.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_023",
+      "conceptId": "kids_worship_prayer_stated_time",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which approach best reflects valuing prayer at its stated time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume every prayer time can be moved for a game"
+        },
+        {
+          "id": "b",
+          "text": "Treat a reminder as a reason to ignore all guidance"
+        },
+        {
+          "id": "c",
+          "text": "Plan around prayer rather than leave it to chance"
+        },
+        {
+          "id": "d",
+          "text": "Wait for a perfect room before considering prayer"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report gives prayer's timing importance. A suitable plan and adult guidance can help a child build an attentive routine.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "527",
+          "label": "Sahih al-Bukhari 527",
+          "url": "https://sunnah.com/bukhari:527"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_024",
+      "conceptId": "kids_worship_opening_takbir",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What connection fits the opening takbir in prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The words replace all remaining prayer actions"
+        },
+        {
+          "id": "b",
+          "text": "Saying it casually always means a prayer has begun"
+        },
+        {
+          "id": "c",
+          "text": "The phrase is used only when someone sneezes"
+        },
+        {
+          "id": "d",
+          "text": "The prayer begins by declaring Allah's greatness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Takbir is part of the taught beginning of prayer. Its use there should be learned with the rest of the prayer's method.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "757",
+          "label": "Sahih al-Bukhari 757",
+          "url": "https://sunnah.com/bukhari:757"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_025",
+      "conceptId": "kids_worship_fatihah_prayer_learning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which conclusion fits the hadith's emphasis on Al-Fatihah in prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give learning Al-Fatihah careful attention"
+        },
+        {
+          "id": "b",
+          "text": "A difficult first attempt means learning must stop"
+        },
+        {
+          "id": "c",
+          "text": "Knowing a longer surah makes Al-Fatihah unimportant"
+        },
+        {
+          "id": "d",
+          "text": "A learner should hide every recitation question"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Fatihah deserves careful learning. A trusted teacher can support pronunciation and explain practical questions rather than leaving a learner worried and confused.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "756",
+          "label": "Sahih al-Bukhari 756",
+          "url": "https://sunnah.com/bukhari:756"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_026",
+      "conceptId": "kids_worship_tashahhud_sitting",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which summary best matches the taught tashahhud recitation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A timetable of the five daily prayer times"
+        },
+        {
+          "id": "b",
+          "text": "Honor belongs to Allah, with peace and testimony of faith"
+        },
+        {
+          "id": "c",
+          "text": "A list of the months of the year"
+        },
+        {
+          "id": "d",
+          "text": "A speech inviting people to an ordinary meal"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The sitting recitation is meaningful worship, including praise, peace and testimony. Learning its meaning can accompany learning its words.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "831",
+          "label": "Sahih al-Bukhari 831",
+          "url": "https://sunnah.com/bukhari:831"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_027",
+      "conceptId": "kids_worship_taslim_ending",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which pairing correctly distinguishes two parts of prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taslim begins it; the adhan always concludes it"
+        },
+        {
+          "id": "b",
+          "text": "Suhur begins it; tayammum concludes it"
+        },
+        {
+          "id": "c",
+          "text": "Opening takbir begins it; taslim concludes it"
+        },
+        {
+          "id": "d",
+          "text": "The khutbah begins and concludes every prayer"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Taslim belongs to the ending of prayer in the report. It should be learned as part of the complete prayer method.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "582",
+          "label": "Sahih Muslim 582",
+          "url": "https://sunnah.com/muslim:582"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_028",
+      "conceptId": "kids_worship_dua_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What broader connection does the encouragement to make dua in sujud teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prayer movements have no connection with remembrance"
+        },
+        {
+          "id": "b",
+          "text": "Sujud means talking casually to nearby people"
+        },
+        {
+          "id": "c",
+          "text": "The posture guarantees any particular request immediately"
+        },
+        {
+          "id": "d",
+          "text": "Humble prayer includes turning to Allah with our requests"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report connects sujud with supplication to Allah. Encouragement to make dua does not promise a particular result at a chosen time.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "Sahih Muslim 482",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_029",
+      "conceptId": "kids_worship_after_adhan_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "To whom is the reported dua after adhan addressed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah, asking Him to honor His Messenger ﷺ"
+        },
+        {
+          "id": "b",
+          "text": "The person announcing prayer, asking them for Paradise"
+        },
+        {
+          "id": "c",
+          "text": "Every listener, asking them to alter the adhan"
+        },
+        {
+          "id": "d",
+          "text": "The congregation, asking it to choose a new prophet"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The dua is addressed to Allah and asks Him to honor the Prophet ﷺ. Remembering its meaning helps us understand what we are saying.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "614",
+          "label": "Sahih al-Bukhari 614",
+          "url": "https://sunnah.com/bukhari:614"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_030",
+      "conceptId": "kids_worship_mosque_odor_care",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which lesson fits the report about strong food smells and mosque attendance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All ordinary food smells make every home unclean"
+        },
+        {
+          "id": "b",
+          "text": "Care for others is part of preparing for shared worship"
+        },
+        {
+          "id": "c",
+          "text": "Only expensive clothing makes a worshipper considerate"
+        },
+        {
+          "id": "d",
+          "text": "The instruction permits mocking people about their bodies"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report encourages consideration in a shared worship space. It should not become an excuse to shame another person.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "855",
+          "label": "Sahih al-Bukhari 855",
+          "url": "https://sunnah.com/bukhari:855"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_031",
+      "conceptId": "kids_worship_before_toilet_refuge",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What connection does the dua before using the toilet illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only major ceremonies can include remembrance of Allah"
+        },
+        {
+          "id": "b",
+          "text": "Remembering Allah replaces ordinary cleanliness"
+        },
+        {
+          "id": "c",
+          "text": "A daily routine can include asking Allah for protection"
+        },
+        {
+          "id": "d",
+          "text": "An ordinary bodily need makes a person morally bad"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The reported dua brings remembrance into daily life. It does not replace cleanliness or make ordinary bodily needs shameful.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "142",
+          "label": "Sahih al-Bukhari 142",
+          "url": "https://sunnah.com/bukhari:142"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_032",
+      "conceptId": "kids_worship_after_toilet_forgiveness",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which meaning distinguishes Ghufranak from a greeting of peace?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It calls other people to begin prayer"
+        },
+        {
+          "id": "b",
+          "text": "It gives the time for breaking a fast"
+        },
+        {
+          "id": "c",
+          "text": "It greets a visitor entering the room"
+        },
+        {
+          "id": "d",
+          "text": "It asks Allah for forgiveness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Ghufranak is addressed to Allah in seeking forgiveness. Learning the meaning helps distinguish this remembrance from other familiar expressions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "30",
+          "label": "Sunan Abi Dawud 30",
+          "url": "https://sunnah.com/abudawud:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_033",
+      "conceptId": "kids_worship_after_wudu_testimony",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which order fits the remembrance described in the report about wudu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complete wudu well, then say the testimony of faith"
+        },
+        {
+          "id": "b",
+          "text": "Say the testimony instead of completing wudu"
+        },
+        {
+          "id": "c",
+          "text": "Begin the Friday sermon in the middle of wudu"
+        },
+        {
+          "id": "d",
+          "text": "Treat the testimony as a replacement for using water"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report connects completed wudu with the testimony afterward. Remembrance does not replace the taught purification actions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "234a",
+          "label": "Sahih Muslim 234a",
+          "url": "https://sunnah.com/muslim:234a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_034",
+      "conceptId": "kids_worship_sneeze_praise",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which pairing correctly distinguishes the sneezer's praise from a companion's reply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sneezer calls the adhan; the companion announces iftar"
+        },
+        {
+          "id": "b",
+          "text": "The sneezer praises Allah; the companion asks Allah for mercy"
+        },
+        {
+          "id": "c",
+          "text": "Both must begin a formal prayer together"
+        },
+        {
+          "id": "d",
+          "text": "Only the companion may praise Allah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report teaches praise by the sneezer and a prayer for mercy from the companion. These are related but different parts of the exchange.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6224",
+          "label": "Sahih al-Bukhari 6224",
+          "url": "https://sunnah.com/bukhari:6224"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_035",
+      "conceptId": "kids_worship_provide_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What distinction does the hadith about providing iftar make about reward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only one person can receive reward from a kind action"
+        },
+        {
+          "id": "b",
+          "text": "The giver buys ownership of the faster's worship"
+        },
+        {
+          "id": "c",
+          "text": "The giver can be rewarded without reducing the faster's reward"
+        },
+        {
+          "id": "d",
+          "text": "A larger price always proves greater sincerity"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith explicitly says the fasting person's reward is not diminished. Supporting another person's worship can also be valuable.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "807",
+          "label": "Jami at-Tirmidhi 807",
+          "url": "https://sunnah.com/tirmidhi:807"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_036",
+      "conceptId": "kids_worship_qadr_odd_last_ten",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which statement best follows the report about seeking Laylat al-Qadr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume a poster proves one date is certain every year"
+        },
+        {
+          "id": "b",
+          "text": "Ignore every night except the one friends prefer"
+        },
+        {
+          "id": "c",
+          "text": "Move the search to any convenient daytime"
+        },
+        {
+          "id": "d",
+          "text": "Give attention to the odd nights across Ramadan's final ten"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The instruction encourages seeking across the specified nights. It does not make a child's sleep deprivation a measure of sincerity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2017",
+          "label": "Sahih al-Bukhari 2017",
+          "url": "https://sunnah.com/bukhari:2017"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_037",
+      "conceptId": "kids_worship_obligatory_voluntary",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction helps explain obligatory and voluntary prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An extra voluntary prayer does not replace a required one"
+        },
+        {
+          "id": "b",
+          "text": "Every extra prayer becomes obligatory for every Muslim"
+        },
+        {
+          "id": "c",
+          "text": "A daily required prayer becomes optional after a busy day"
+        },
+        {
+          "id": "d",
+          "text": "The names describe whether a room is indoors or outdoors"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report distinguishes required daily prayers from extra worship. A teacher can explain each practice without treating all extra acts as universal obligations.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_038",
+      "conceptId": "kids_worship_friday_sermon_listening",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why can telling a companion to listen still conflict with the khutbah's etiquette?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every reminder is wrong at every time"
+        },
+        {
+          "id": "b",
+          "text": "It is still speech during the imam's sermon"
+        },
+        {
+          "id": "c",
+          "text": "Listening matters only when the sermon is short"
+        },
+        {
+          "id": "d",
+          "text": "The rule requires ignoring an emergency"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report gives a strong example of avoiding idle speech during the khutbah. It concerns ordinary talk, not refusing necessary help in an emergency.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "934",
+          "label": "Sahih al-Bukhari 934",
+          "url": "https://sunnah.com/bukhari:934"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_039",
+      "conceptId": "kids_worship_give_what_cherish",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which understanding fits giving from what we cherish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only throwing away unusable objects counts as charity"
+        },
+        {
+          "id": "b",
+          "text": "A child must give away every favorite possession"
+        },
+        {
+          "id": "c",
+          "text": "Generosity can include something we personally value"
+        },
+        {
+          "id": "d",
+          "text": "Taking another person's favorite item makes a donation better"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse connects righteousness with giving from valued things. It does not authorize taking someone else's property or require a child to give everything away.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "92",
+          "label": "Quran 3:92",
+          "url": "https://quran.com/3/92"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_040",
+      "conceptId": "kids_worship_two_light_phrases",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What contrast does the hadith make about the two praised expressions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Difficult to pronounce, so forbidden to beginners"
+        },
+        {
+          "id": "b",
+          "text": "Long to recite, so the only worthwhile remembrance"
+        },
+        {
+          "id": "c",
+          "text": "Useful only when others count every repetition"
+        },
+        {
+          "id": "d",
+          "text": "Easy to say, yet weighty in reward"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith joins ease of saying them with great value in the balance. A short remembrance can still be deeply meaningful.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6406",
+          "label": "Sahih al-Bukhari 6406",
+          "url": "https://sunnah.com/bukhari:6406"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_041",
+      "conceptId": "kids_worship_wipe_head",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "While learning wudu, you think the head must be soaked like a bath. What should you learn from a teacher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How to wipe the head with wet hands"
+        },
+        {
+          "id": "b",
+          "text": "How to soak your clothes as well"
+        },
+        {
+          "id": "c",
+          "text": "How to replace every wudu action with drying"
+        },
+        {
+          "id": "d",
+          "text": "How to avoid water for every part without a reason"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The demonstration includes wiping the head. A teacher can show the practical difference between wiping and washing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "185",
+          "label": "Sahih al-Bukhari 185",
+          "url": "https://sunnah.com/bukhari:185"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_042",
+      "conceptId": "kids_worship_tayammum_alternative",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "On a family journey, water cannot be found for purification. What is the sensible next step for a child?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invent a new purification method without guidance"
+        },
+        {
+          "id": "b",
+          "text": "Ask an adult to explain whether and how tayammum applies"
+        },
+        {
+          "id": "c",
+          "text": "Assume prayer can never be offered away from home"
+        },
+        {
+          "id": "d",
+          "text": "Use an unsafe substance because any dirt must work"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Tayammum is a prescribed alternative with conditions. A knowledgeable adult can guide a child in applying it correctly and safely.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_043",
+      "conceptId": "kids_worship_prayer_stated_time",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A game may run across a prayer time. What reflects the report's emphasis on timing while you are learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume a game automatically cancels the prayer time"
+        },
+        {
+          "id": "b",
+          "text": "Ignore every reminder until all entertainment ends"
+        },
+        {
+          "id": "c",
+          "text": "Ask an adult to help plan a suitable prayer break"
+        },
+        {
+          "id": "d",
+          "text": "Decide that checking the score replaces prayer"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Giving prayer its time can be part of a thoughtful routine. Adult help can make planning practical for a child.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "527",
+          "label": "Sahih al-Bukhari 527",
+          "url": "https://sunnah.com/bukhari:527"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_044",
+      "conceptId": "kids_worship_opening_takbir",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are learning how to begin prayer. What is a good next step for the opening takbir?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace it with a greeting to your friends"
+        },
+        {
+          "id": "b",
+          "text": "Assume one phrase removes the need to learn the rest"
+        },
+        {
+          "id": "c",
+          "text": "Turn the lesson into a shouting competition"
+        },
+        {
+          "id": "d",
+          "text": "Practice Allahu akbar with a trusted teacher"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A teacher can help you learn the opening takbir and its place in prayer. Learn patiently as part of the full method.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "757",
+          "label": "Sahih al-Bukhari 757",
+          "url": "https://sunnah.com/bukhari:757"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_045",
+      "conceptId": "kids_worship_fatihah_prayer_learning",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You struggle with a line of Al-Fatihah while learning prayer. What fits its importance in the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask a teacher for patient, manageable practice"
+        },
+        {
+          "id": "b",
+          "text": "Stop trying because the first mistake decides your worth"
+        },
+        {
+          "id": "c",
+          "text": "Hide the difficulty and reject every offer of help"
+        },
+        {
+          "id": "d",
+          "text": "Assume another surah makes all learning unnecessary"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Fatihah's importance is a reason to seek good teaching. A learner deserves support and patience, including appropriate help for reading or speech needs.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "756",
+          "label": "Sahih al-Bukhari 756",
+          "url": "https://sunnah.com/bukhari:756"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_046",
+      "conceptId": "kids_worship_tashahhud_sitting",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You know the prayer movements but are still learning the sitting recitation. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make up any formal wording and call it the report"
+        },
+        {
+          "id": "b",
+          "text": "Learn the taught tashahhud and its meaning with a teacher"
+        },
+        {
+          "id": "c",
+          "text": "Treat the sitting as a time for casual chatting"
+        },
+        {
+          "id": "d",
+          "text": "Assume words can never be part of prayer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ taught words for the sitting part of prayer. Learning their meaning and pronunciation can happen gradually with support.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "831",
+          "label": "Sahih al-Bukhari 831",
+          "url": "https://sunnah.com/bukhari:831"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_047",
+      "conceptId": "kids_worship_taslim_ending",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You confuse the beginning of prayer with its ending. Which reminder helps you learn the reported taslim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taslim is the meal eaten before dawn"
+        },
+        {
+          "id": "b",
+          "text": "Taslim is the call before a congregation begins"
+        },
+        {
+          "id": "c",
+          "text": "Taslim is the closing greeting of peace"
+        },
+        {
+          "id": "d",
+          "text": "Taslim replaces the entire prayer with one greeting"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report places the greeting to the right and left at prayer's conclusion. A teacher can demonstrate it as part of learning prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "582",
+          "label": "Sahih Muslim 582",
+          "url": "https://sunnah.com/muslim:582"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_048",
+      "conceptId": "kids_worship_dua_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to learn the supplications used during sujud. What fits the hadith's encouragement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the moment to start a conversation with a friend"
+        },
+        {
+          "id": "b",
+          "text": "Assume requesting help from Allah has no place in prayer"
+        },
+        {
+          "id": "c",
+          "text": "Demand an immediate result as proof the prayer worked"
+        },
+        {
+          "id": "d",
+          "text": "Ask a teacher to guide your dua within prayer"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report encourages dua during sujud. A teacher can explain suitable words and practice without turning the quiz into a detailed prayer ruling.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "482",
+          "label": "Sahih Muslim 482",
+          "url": "https://sunnah.com/muslim:482"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_049",
+      "conceptId": "kids_worship_after_adhan_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You hear the adhan and want to learn the dua afterward. What is a helpful approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learn the reported words and meaning with a trusted adult"
+        },
+        {
+          "id": "b",
+          "text": "Replace the dua with a random rhyme called a hadith"
+        },
+        {
+          "id": "c",
+          "text": "Assume the dua asks listeners to change prayer times"
+        },
+        {
+          "id": "d",
+          "text": "Give up because you cannot memorize every word immediately"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The reported dua asks Allah to honor His Messenger ﷺ. Patient learning can connect the words with their meaning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "614",
+          "label": "Sahih al-Bukhari 614",
+          "url": "https://sunnah.com/bukhari:614"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_050",
+      "conceptId": "kids_worship_mosque_odor_care",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before a mosque visit, you notice a strong garlic smell on your breath. What reflects consideration for shared worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use the smell to bother people on purpose"
+        },
+        {
+          "id": "b",
+          "text": "Ask a parent how to address the smell appropriately"
+        },
+        {
+          "id": "c",
+          "text": "Mock another worshipper to distract attention"
+        },
+        {
+          "id": "d",
+          "text": "Assume expensive shoes remove every concern"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report addresses strong food smells in the mosque. A parent can help with suitable preparation without shaming you or others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "855",
+          "label": "Sahih al-Bukhari 855",
+          "url": "https://sunnah.com/bukhari:855"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_051",
+      "conceptId": "kids_worship_before_toilet_refuge",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to learn the remembrance before using the toilet. Which approach fits the reported practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace all ordinary cleanliness with saying the dua"
+        },
+        {
+          "id": "b",
+          "text": "Turn using the toilet into something shameful"
+        },
+        {
+          "id": "c",
+          "text": "Learn the protection dua and say it before entering"
+        },
+        {
+          "id": "d",
+          "text": "Recite an invented story and call it the Prophet's words"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The reported dua seeks Allah's protection. Learn it calmly as part of a normal routine that also includes cleanliness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "142",
+          "label": "Sahih al-Bukhari 142",
+          "url": "https://sunnah.com/bukhari:142"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_052",
+      "conceptId": "kids_worship_after_toilet_forgiveness",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have just left the toilet and are learning the reported remembrance. Which phrase matches this occasion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The adhan for Friday prayer"
+        },
+        {
+          "id": "b",
+          "text": "The pilgrimage talbiyah"
+        },
+        {
+          "id": "c",
+          "text": "A call inviting people to suhur"
+        },
+        {
+          "id": "d",
+          "text": "Ghufranak"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report describes seeking Allah's forgiveness after leaving the toilet. Ghufranak expresses that request briefly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "30",
+          "label": "Sunan Abi Dawud 30",
+          "url": "https://sunnah.com/abudawud:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_053",
+      "conceptId": "kids_worship_after_wudu_testimony",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You finish wudu and want to learn the reported remembrance afterward. What should you practice with a teacher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The testimony of faith mentioned in the report"
+        },
+        {
+          "id": "b",
+          "text": "A new prayer call invented for the bathroom"
+        },
+        {
+          "id": "c",
+          "text": "A speech announcing the end of Ramadan"
+        },
+        {
+          "id": "d",
+          "text": "A phrase that replaces completing wudu"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Learn to complete wudu well and then learn the reported testimony. A teacher can help with the words and their meaning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "234a",
+          "label": "Sahih Muslim 234a",
+          "url": "https://sunnah.com/muslim:234a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_054",
+      "conceptId": "kids_worship_sneeze_praise",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You sneeze and say Alhamdulillah. A Muslim friend then says Yarhamukallah. What kind of response did your friend make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An announcement that prayer has ended"
+        },
+        {
+          "id": "b",
+          "text": "A dua asking Allah to have mercy on you"
+        },
+        {
+          "id": "c",
+          "text": "An instruction to stop all conversation for the day"
+        },
+        {
+          "id": "d",
+          "text": "A request that you repay a favor"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The friend's response asks Allah's mercy for you. The report also teaches the sneezer a reply asking for guidance and well-being.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6224",
+          "label": "Sahih al-Bukhari 6224",
+          "url": "https://sunnah.com/bukhari:6224"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_055",
+      "conceptId": "kids_worship_provide_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your family prepares an iftar meal for fasting guests. How can you take part appropriately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insist only the most expensive food can be rewarded"
+        },
+        {
+          "id": "b",
+          "text": "Require guests to give up their own reward"
+        },
+        {
+          "id": "c",
+          "text": "Help an adult prepare suitable portions safely"
+        },
+        {
+          "id": "d",
+          "text": "Assume children must fast to show any kindness"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report praises providing iftar. A child can help with adult guidance without being assigned adult fasting duties or unsafe kitchen tasks.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "807",
+          "label": "Jami at-Tirmidhi 807",
+          "url": "https://sunnah.com/tirmidhi:807"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_056",
+      "conceptId": "kids_worship_qadr_odd_last_ten",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your family plans worship during Ramadan's last ten nights. What fits the report and a child's needs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insist one advertised date is certain for every Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Stay awake every night regardless of health or age"
+        },
+        {
+          "id": "c",
+          "text": "Assume only the most exhausted child is sincere"
+        },
+        {
+          "id": "d",
+          "text": "Plan suitable worship with an adult while protecting needed sleep"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report encourages seeking Laylat al-Qadr on the odd nights. A child's plan should remain suitable for their age, health and sleep needs.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2017",
+          "label": "Sahih al-Bukhari 2017",
+          "url": "https://sunnah.com/bukhari:2017"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_057",
+      "conceptId": "kids_worship_obligatory_voluntary",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend says every extra voluntary prayer is required from everyone daily. What should you explain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The report distinguishes required prayers from voluntary extras"
+        },
+        {
+          "id": "b",
+          "text": "All extra prayers replace the five daily prayers"
+        },
+        {
+          "id": "c",
+          "text": "Prayer is required only on a friend's preferred days"
+        },
+        {
+          "id": "d",
+          "text": "The difference is decided by which prayer takes longer"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Learn which practices are obligatory and which are extra with a teacher. This report does not make every voluntary act a daily duty for everyone.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_058",
+      "conceptId": "kids_worship_friday_sermon_listening",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "While you attend the Friday khutbah, a friend begins an ordinary conversation. What fits the listening etiquette?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Start a long argument about being quiet"
+        },
+        {
+          "id": "b",
+          "text": "Keep your attention on the sermon and leave chatting for later"
+        },
+        {
+          "id": "c",
+          "text": "Answer with jokes so the friend feels entertained"
+        },
+        {
+          "id": "d",
+          "text": "Talk louder to show you can hear the imam"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report emphasizes attentive listening without casual speech during the khutbah. A real emergency calls for appropriate help, not silence at the expense of safety.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "934",
+          "label": "Sahih al-Bukhari 934",
+          "url": "https://sunnah.com/bukhari:934"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_059",
+      "conceptId": "kids_worship_give_what_cherish",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With your parent's approval, you choose an item you value for a suitable donation. What lesson does this apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A donation becomes better if taken without permission"
+        },
+        {
+          "id": "b",
+          "text": "Only broken items should ever be given"
+        },
+        {
+          "id": "c",
+          "text": "Giving can include something personally meaningful"
+        },
+        {
+          "id": "d",
+          "text": "You must give away everything to be a good child"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse encourages giving from what we cherish. A child can learn generosity through an appropriate, freely chosen gift with family guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "92",
+          "label": "Quran 3:92",
+          "url": "https://quran.com/3/92"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_everyday_worship_060",
+      "conceptId": "kids_worship_two_light_phrases",
+      "categoryId": "everyday_worship",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have a quiet moment and want to learn a short dhikr. What fits the hadith about the two light expressions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume short words can never be meaningful worship"
+        },
+        {
+          "id": "b",
+          "text": "Invent a compulsory daily count from the quiz"
+        },
+        {
+          "id": "c",
+          "text": "Judge another child's faith by how fast they recite"
+        },
+        {
+          "id": "d",
+          "text": "Learn the two praised phrases and their meaning patiently"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith praises the two expressions without assigning a count here. Learning their words and meaning is a useful beginning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6406",
+          "label": "Sahih al-Bukhari 6406",
+          "url": "https://sunnah.com/bukhari:6406"
+        }
+      ]
+    }
+  ]
+}

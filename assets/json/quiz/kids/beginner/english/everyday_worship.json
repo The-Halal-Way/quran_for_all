@@ -1,0 +1,2373 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "everyday_worship",
+  "title": "Everyday Worship",
+  "description": "Little Muslim → Beginner. Short questions about daily prayer, wudu, the prayer direction, Ramadan routines, simple duas and words of remembrance. Children learn and practice with adult guidance; prepubescent children are not treated as having adult fasting obligations. Written with children around ages 6–9 in mind; an adult may read questions aloud. All questions are Beginner level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Uses introductory worship knowledge, short wording and straightforward examples for the Kids audience. Age and level are editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith reports checked during preparation. Questions describe ordinary worship practice and introductory meanings, not a full manual of legal details or exceptions. Fasting scenarios concern learning or family routines and do not instruct young children to complete adult fasts. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Everyday scenarios illustrate the cited principles. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_everyday_worship_001",
+      "conceptId": "kids_worship_five_prayers",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How many daily obligatory prayers are there in Islam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Five"
+        },
+        {
+          "id": "b",
+          "text": "Three"
+        },
+        {
+          "id": "c",
+          "text": "Four"
+        },
+        {
+          "id": "d",
+          "text": "Six"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Islam has five obligatory daily prayers, spread across the day and night. Children learn them with guidance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_002",
+      "conceptId": "kids_worship_fajr_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which prayer belongs to dawn, before sunrise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dhuhr"
+        },
+        {
+          "id": "b",
+          "text": "Fajr"
+        },
+        {
+          "id": "c",
+          "text": "Asr"
+        },
+        {
+          "id": "d",
+          "text": "Isha"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Fajr is the dawn prayer. Its time ends when the sun begins to rise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "Sahih Muslim 612a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_003",
+      "conceptId": "kids_worship_maghrib_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which prayer begins after the sun sets?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fajr"
+        },
+        {
+          "id": "b",
+          "text": "Dhuhr"
+        },
+        {
+          "id": "c",
+          "text": "Maghrib"
+        },
+        {
+          "id": "d",
+          "text": "Asr"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Maghrib is the prayer after sunset.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "560",
+          "label": "Sahih al-Bukhari 560",
+          "url": "https://sunnah.com/bukhari:560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_004",
+      "conceptId": "kids_worship_adhan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is the familiar call inviting Muslims to prayer called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Suhur"
+        },
+        {
+          "id": "b",
+          "text": "Iftar"
+        },
+        {
+          "id": "c",
+          "text": "Zakat"
+        },
+        {
+          "id": "d",
+          "text": "Adhan"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The adhan is the call to prayer. The Prophet ﷺ instructed Bilal to give this call.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "604",
+          "label": "Sahih al-Bukhari 604",
+          "url": "https://sunnah.com/bukhari:604"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_005",
+      "conceptId": "kids_worship_wudu",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is wudu for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Purifying ourselves for prayer"
+        },
+        {
+          "id": "b",
+          "text": "Choosing a prayer timetable"
+        },
+        {
+          "id": "c",
+          "text": "Counting prayer beads"
+        },
+        {
+          "id": "d",
+          "text": "Finding a mosque on a map"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Wudu involves washing and wiping particular body parts to prepare for prayer. A teacher or parent can show the steps.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_006",
+      "conceptId": "kids_worship_qiblah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is the prayer direction toward the Kaaba called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adhan"
+        },
+        {
+          "id": "b",
+          "text": "Qiblah"
+        },
+        {
+          "id": "c",
+          "text": "Suhur"
+        },
+        {
+          "id": "d",
+          "text": "Dhikr"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The qiblah is the direction Muslims face in prayer, toward the Kaaba in Makkah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "Quran 2:144",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_007",
+      "conceptId": "kids_worship_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which prayer movement includes placing the forehead and nose on the ground?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Standing"
+        },
+        {
+          "id": "b",
+          "text": "Sitting"
+        },
+        {
+          "id": "c",
+          "text": "Sujud"
+        },
+        {
+          "id": "d",
+          "text": "Ruku"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sujud means prostration. The forehead and nose touch the ground, along with the other points taught by the Prophet ﷺ.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "812",
+          "label": "Sahih al-Bukhari 812",
+          "url": "https://sunnah.com/bukhari:812"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_008",
+      "conceptId": "kids_worship_ramadan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which month is known as the month of fasting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shawwal"
+        },
+        {
+          "id": "b",
+          "text": "Rajab"
+        },
+        {
+          "id": "c",
+          "text": "Muharram"
+        },
+        {
+          "id": "d",
+          "text": "Ramadan"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Ramadan is the month of obligatory fasting. Not everyone has the same obligations or circumstances.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_009",
+      "conceptId": "kids_worship_fasting_day",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "During a normal fasting day, when do Muslims avoid food and drink?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From dawn until sunset"
+        },
+        {
+          "id": "b",
+          "text": "From sunrise until lunchtime"
+        },
+        {
+          "id": "c",
+          "text": "Only during the night"
+        },
+        {
+          "id": "d",
+          "text": "Only while inside a mosque"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Fasting includes avoiding food and drink from dawn until sunset. Dawn is earlier than sunrise.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "Quran 2:187",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_010",
+      "conceptId": "kids_worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is the meal before dawn for a person who plans to fast called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iftar"
+        },
+        {
+          "id": "b",
+          "text": "Suhur"
+        },
+        {
+          "id": "c",
+          "text": "Dhuhr"
+        },
+        {
+          "id": "d",
+          "text": "Adhan"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Suhur is the meal before dawn. The Prophet ﷺ encouraged it and described it as blessed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1921",
+          "label": "Sahih al-Bukhari 1921",
+          "url": "https://sunnah.com/bukhari:1921"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_011",
+      "conceptId": "kids_worship_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What do we call breaking the fast at sunset?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Suhur"
+        },
+        {
+          "id": "b",
+          "text": "Wudu"
+        },
+        {
+          "id": "c",
+          "text": "Iftar"
+        },
+        {
+          "id": "d",
+          "text": "Sujud"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Iftar is breaking the fast at sunset. The Prophet ﷺ taught not to delay it unnecessarily once its time arrives.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1954",
+          "label": "Sahih al-Bukhari 1954",
+          "url": "https://sunnah.com/bukhari:1954"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "Sahih al-Bukhari 1957",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_012",
+      "conceptId": "kids_worship_bedtime_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ do when going to bed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asked the stars to protect him"
+        },
+        {
+          "id": "b",
+          "text": "Said bedtime was never for remembrance"
+        },
+        {
+          "id": "c",
+          "text": "Taught that dua was only for mosques"
+        },
+        {
+          "id": "d",
+          "text": "Remembered Allah with a dua"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ remembered Allah with a dua before sleeping. We can learn a bedtime dua with an adult's help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6312",
+          "label": "Sahih al-Bukhari 6312",
+          "url": "https://sunnah.com/bukhari:6312"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_013",
+      "conceptId": "kids_worship_begin_meal",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair follows the Prophet's ﷺ teaching when starting to eat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mention Allah's name and use the right hand"
+        },
+        {
+          "id": "b",
+          "text": "Boast loudly and grab from everyone"
+        },
+        {
+          "id": "c",
+          "text": "Skip Allah's name and mock the food"
+        },
+        {
+          "id": "d",
+          "text": "Push others away and take their portions"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ taught a child to mention Allah's name, eat with the right hand and eat from what was nearest.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5376",
+          "label": "Sahih al-Bukhari 5376",
+          "url": "https://sunnah.com/bukhari:5376"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_014",
+      "conceptId": "kids_worship_praise_after_food",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "After eating or drinking, whom do we praise and thank?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The stars"
+        },
+        {
+          "id": "b",
+          "text": "Allah"
+        },
+        {
+          "id": "c",
+          "text": "The moon"
+        },
+        {
+          "id": "d",
+          "text": "A lucky charm"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ taught us to praise Allah for food and drink. Saying Alhamdulillah expresses that praise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2734a",
+          "label": "Sahih Muslim 2734a",
+          "url": "https://sunnah.com/muslim:2734a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_015",
+      "conceptId": "kids_worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does dhikr mean in worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Counting only our possessions"
+        },
+        {
+          "id": "b",
+          "text": "Making up religious sayings"
+        },
+        {
+          "id": "c",
+          "text": "Remembering Allah"
+        },
+        {
+          "id": "d",
+          "text": "Choosing a new timetable"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Dhikr is remembrance of Allah. The Quran teaches us to remember Him often.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "Quran 33:41",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_016",
+      "conceptId": "kids_worship_subhanallah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which phrase glorifies Allah and declares Him free from imperfection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Astaghfirullah"
+        },
+        {
+          "id": "b",
+          "text": "Assalamu alaikum"
+        },
+        {
+          "id": "c",
+          "text": "Bismillah"
+        },
+        {
+          "id": "d",
+          "text": "Subhanallah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Subhanallah glorifies Allah as perfect and free from any imperfection. It is a phrase of remembrance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Riyad as-Salihin",
+          "number": "1408",
+          "label": "Riyad as-Salihin 1408",
+          "url": "https://sunnah.com/riyadussalihin:1408"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_017",
+      "conceptId": "kids_worship_allahu_akbar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Allahu akbar mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah is the Greatest"
+        },
+        {
+          "id": "b",
+          "text": "I ask Allah for forgiveness"
+        },
+        {
+          "id": "c",
+          "text": "Peace be upon you"
+        },
+        {
+          "id": "d",
+          "text": "In the name of Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allahu akbar declares Allah's greatness. We say it in worship and remembrance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "601",
+          "label": "Sahih Muslim 601",
+          "url": "https://sunnah.com/muslim:601"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_018",
+      "conceptId": "kids_worship_astaghfirullah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which phrase means asking Allah for forgiveness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assalamu alaikum"
+        },
+        {
+          "id": "b",
+          "text": "Astaghfirullah"
+        },
+        {
+          "id": "c",
+          "text": "Bismillah"
+        },
+        {
+          "id": "d",
+          "text": "Allahu akbar"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Astaghfirullah means that we seek Allah's forgiveness. The Prophet ﷺ sought forgiveness after prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "591",
+          "label": "Sahih Muslim 591",
+          "url": "https://sunnah.com/muslim:591"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_019",
+      "conceptId": "kids_worship_walk_calmly",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did the Prophet ﷺ teach us to go to prayer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Running and pushing people"
+        },
+        {
+          "id": "b",
+          "text": "Shouting to make everyone move"
+        },
+        {
+          "id": "c",
+          "text": "Calmly and without rushing"
+        },
+        {
+          "id": "d",
+          "text": "Racing to beat our friends"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught calmness when going to prayer, even when the prayer is starting.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "Sahih al-Bukhari 636",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_020",
+      "conceptId": "kids_worship_dua_parents",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the Quran's dua for parents, what do we ask Allah to give them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A reason to boast"
+        },
+        {
+          "id": "b",
+          "text": "A chance to hurt others"
+        },
+        {
+          "id": "c",
+          "text": "More arguments with everyone"
+        },
+        {
+          "id": "d",
+          "text": "Mercy"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches a dua asking Allah to show our parents mercy, remembering their care when we were small.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "24",
+          "label": "Quran 17:24",
+          "url": "https://quran.com/17/24"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_021",
+      "conceptId": "kids_worship_five_prayers",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Are the five daily prayers meant to be one single prayer at one time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, they are prayers across the day and night"
+        },
+        {
+          "id": "b",
+          "text": "Yes, five is only another name for one"
+        },
+        {
+          "id": "c",
+          "text": "Yes, all five belong only at midnight"
+        },
+        {
+          "id": "d",
+          "text": "No, they are five prayers only once a year"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The five obligatory prayers belong across each day and night. Their number is five, rather than one combined daily prayer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_022",
+      "conceptId": "kids_worship_fajr_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Fajr's normal time continue after sunrise begins?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, it lasts until midday"
+        },
+        {
+          "id": "b",
+          "text": "No, it ends when the sun begins to rise"
+        },
+        {
+          "id": "c",
+          "text": "Yes, it starts only after sunrise"
+        },
+        {
+          "id": "d",
+          "text": "Yes, it lasts until sunset"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Fajr belongs before sunrise. Its normal time ends as the sun begins to rise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "Sahih Muslim 612a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_023",
+      "conceptId": "kids_worship_maghrib_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What event marks the start of Maghrib time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sun begins to rise"
+        },
+        {
+          "id": "b",
+          "text": "The sun reaches midday"
+        },
+        {
+          "id": "c",
+          "text": "The sun has set"
+        },
+        {
+          "id": "d",
+          "text": "The sky is bright at lunchtime"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Maghrib begins after sunset. We can learn local prayer times with a parent or teacher.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "560",
+          "label": "Sahih al-Bukhari 560",
+          "url": "https://sunnah.com/bukhari:560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_024",
+      "conceptId": "kids_worship_adhan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is the purpose of the adhan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To announce that a meal is ready"
+        },
+        {
+          "id": "b",
+          "text": "To name the months of the year"
+        },
+        {
+          "id": "c",
+          "text": "To count how many people own books"
+        },
+        {
+          "id": "d",
+          "text": "To call people to prayer"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The adhan invites people to salah. It is connected with prayer, rather than a meal announcement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "604",
+          "label": "Sahih al-Bukhari 604",
+          "url": "https://sunnah.com/bukhari:604"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_025",
+      "conceptId": "kids_worship_wudu",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which action belongs to wudu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Washing the face"
+        },
+        {
+          "id": "b",
+          "text": "Counting coins"
+        },
+        {
+          "id": "c",
+          "text": "Painting the hands"
+        },
+        {
+          "id": "d",
+          "text": "Measuring a book"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Washing the face is part of wudu. Other parts are washed or wiped as taught.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_026",
+      "conceptId": "kids_worship_qiblah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does facing the Kaaba mean Muslims worship the building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the building receives our worship"
+        },
+        {
+          "id": "b",
+          "text": "No, Muslims worship Allah and face the qiblah"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the building replaces Allah"
+        },
+        {
+          "id": "d",
+          "text": "No, we worship the sun instead"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "We worship Allah alone. The Kaaba gives us the direction to face in prayer, rather than an object to worship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "Quran 2:144",
+          "url": "https://quran.com/2/144"
+        },
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "Quran 20:14",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_027",
+      "conceptId": "kids_worship_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In sujud, where does the forehead rest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "On top of another person's head"
+        },
+        {
+          "id": "b",
+          "text": "In the air above the floor"
+        },
+        {
+          "id": "c",
+          "text": "On the ground"
+        },
+        {
+          "id": "d",
+          "text": "Against a standing person's back"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "In sujud, the forehead and nose rest on the ground. We learn the posture carefully with a teacher.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "812",
+          "label": "Sahih al-Bukhari 812",
+          "url": "https://sunnah.com/bukhari:812"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_028",
+      "conceptId": "kids_worship_ramadan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does learning about Ramadan mean every young child must fast like an adult?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every baby must fast"
+        },
+        {
+          "id": "b",
+          "text": "Yes, age and ability never matter"
+        },
+        {
+          "id": "c",
+          "text": "Yes, a young child's learning has no value without fasting"
+        },
+        {
+          "id": "d",
+          "text": "No, children before puberty do not have adult fasting duties"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Children before puberty are not obliged to fast. They can learn about Ramadan with their family without being treated as adults.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4403",
+          "label": "Sunan Abi Dawud 4403",
+          "url": "https://sunnah.com/abudawud:4403"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_029",
+      "conceptId": "kids_worship_fasting_day",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the daily fast start at dawn or at sunrise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At dawn"
+        },
+        {
+          "id": "b",
+          "text": "At sunrise"
+        },
+        {
+          "id": "c",
+          "text": "Only at midday"
+        },
+        {
+          "id": "d",
+          "text": "Only after sunset"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The daily fast begins at dawn, earlier than sunrise. Food and drink are avoided until sunset during a normal fast.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "Quran 2:187",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_030",
+      "conceptId": "kids_worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which description of suhur is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The meal that breaks the fast after sunset"
+        },
+        {
+          "id": "b",
+          "text": "A meal before dawn for someone preparing to fast"
+        },
+        {
+          "id": "c",
+          "text": "A name for the afternoon prayer"
+        },
+        {
+          "id": "d",
+          "text": "A way of washing before prayer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Suhur comes before the fasting day begins. Iftar is different: it breaks the fast at sunset.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1921",
+          "label": "Sahih al-Bukhari 1921",
+          "url": "https://sunnah.com/bukhari:1921"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_031",
+      "conceptId": "kids_worship_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Should a fasting person wait until midnight to have iftar after sunset has arrived?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, midnight is always the only time"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the fast never ends at sunset"
+        },
+        {
+          "id": "c",
+          "text": "No, iftar belongs at sunset"
+        },
+        {
+          "id": "d",
+          "text": "No, iftar belongs only before dawn"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The daily fast ends at sunset. The Prophet ﷺ encouraged breaking it promptly when its time comes.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1954",
+          "label": "Sahih al-Bukhari 1954",
+          "url": "https://sunnah.com/bukhari:1954"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "Sahih al-Bukhari 1957",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_032",
+      "conceptId": "kids_worship_bedtime_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can remembering Allah be part of a bedtime routine?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, remembrance belongs only in a mosque"
+        },
+        {
+          "id": "b",
+          "text": "No, bedtime can never include dua"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if we invent the Prophet's ﷺ words"
+        },
+        {
+          "id": "d",
+          "text": "Yes, we can learn and say a bedtime dua"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ remembered Allah before sleep. We can include a learned dua in our bedtime routine.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6312",
+          "label": "Sahih al-Bukhari 6312",
+          "url": "https://sunnah.com/bukhari:6312"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_033",
+      "conceptId": "kids_worship_begin_meal",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why do we mention Allah's name before eating?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To remember Allah as we begin our meal"
+        },
+        {
+          "id": "b",
+          "text": "To claim that we created the food"
+        },
+        {
+          "id": "c",
+          "text": "To make other people feel unwelcome"
+        },
+        {
+          "id": "d",
+          "text": "To replace learning good table manners"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Mentioning Allah's name brings remembrance into eating. It goes along with the other manners the Prophet ﷺ taught.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5376",
+          "label": "Sahih al-Bukhari 5376",
+          "url": "https://sunnah.com/bukhari:5376"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_034",
+      "conceptId": "kids_worship_praise_after_food",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does saying Alhamdulillah after food express?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A claim that we never need help"
+        },
+        {
+          "id": "b",
+          "text": "Praise and gratitude to Allah"
+        },
+        {
+          "id": "c",
+          "text": "A request to worship our plate"
+        },
+        {
+          "id": "d",
+          "text": "Permission to mock someone else's food"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "We praise Allah for the blessing of food and drink. Alhamdulillah is a way to express that thanks.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2734a",
+          "label": "Sahih Muslim 2734a",
+          "url": "https://sunnah.com/muslim:2734a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_035",
+      "conceptId": "kids_worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which activity is dhikr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boasting about all our belongings"
+        },
+        {
+          "id": "b",
+          "text": "Inventing sayings and calling them revelation"
+        },
+        {
+          "id": "c",
+          "text": "Remembering and praising Allah"
+        },
+        {
+          "id": "d",
+          "text": "Counting people only to make fun of them"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Dhikr turns our attention to Allah. It includes remembering Him with words of praise.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "Quran 33:41",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_036",
+      "conceptId": "kids_worship_subhanallah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Subhanallah praise Allah as perfect, or describe Him as having faults?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It describes Him as having faults"
+        },
+        {
+          "id": "b",
+          "text": "It asks the sun for help"
+        },
+        {
+          "id": "c",
+          "text": "It claims that people made the sky"
+        },
+        {
+          "id": "d",
+          "text": "It glorifies Him as perfect"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Subhanallah is glorification of Allah, declaring Him free from faults. It is not a description of any imperfection.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Riyad as-Salihin",
+          "number": "1408",
+          "label": "Riyad as-Salihin 1408",
+          "url": "https://sunnah.com/riyadussalihin:1408"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_037",
+      "conceptId": "kids_worship_allahu_akbar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which meaning matches Allahu akbar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Declaring Allah's greatness"
+        },
+        {
+          "id": "b",
+          "text": "Asking a friend for a gift"
+        },
+        {
+          "id": "c",
+          "text": "Saying goodbye to a classmate"
+        },
+        {
+          "id": "d",
+          "text": "Naming a meal before dawn"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allahu akbar is a declaration of Allah's greatness. It is among the words used in worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "601",
+          "label": "Sahih Muslim 601",
+          "url": "https://sunnah.com/muslim:601"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_038",
+      "conceptId": "kids_worship_astaghfirullah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does asking Allah for forgiveness happen only after a huge mistake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, it can never be part of daily worship"
+        },
+        {
+          "id": "b",
+          "text": "No, seeking forgiveness is a regular part of worship"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the Prophet ﷺ never did it after prayer"
+        },
+        {
+          "id": "d",
+          "text": "No, it means we should stop trying to do good"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ sought forgiveness after prayer. Asking forgiveness can be part of regular worship as we keep trying to do good.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "591",
+          "label": "Sahih Muslim 591",
+          "url": "https://sunnah.com/muslim:591"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_039",
+      "conceptId": "kids_worship_walk_calmly",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If prayer is starting, does that make pushing and rushing a good way to reach it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, speed matters more than everyone else's safety"
+        },
+        {
+          "id": "b",
+          "text": "Yes, we must push anyone ahead of us"
+        },
+        {
+          "id": "c",
+          "text": "No, we should still approach calmly"
+        },
+        {
+          "id": "d",
+          "text": "Yes, racing is the purpose of prayer"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught a calm approach even when prayer was starting. We do not need to turn it into a race.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "Sahih al-Bukhari 636",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_040",
+      "conceptId": "kids_worship_dua_parents",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Quran's dua for parents help us remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That parents never need kind treatment"
+        },
+        {
+          "id": "b",
+          "text": "That dua is only for ourselves"
+        },
+        {
+          "id": "c",
+          "text": "That gratitude means boasting"
+        },
+        {
+          "id": "d",
+          "text": "Their care and our prayer for Allah's mercy for them"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The dua remembers parents' care in childhood and asks Allah to show them mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "24",
+          "label": "Quran 17:24",
+          "url": "https://quran.com/17/24"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_041",
+      "conceptId": "kids_worship_five_prayers",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Sara makes a learning chart for the daily obligatory prayers. How many spaces for prayer names does she need?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Five"
+        },
+        {
+          "id": "b",
+          "text": "Two"
+        },
+        {
+          "id": "c",
+          "text": "Four"
+        },
+        {
+          "id": "d",
+          "text": "Seven"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "There are five daily obligatory prayers. A five-space chart can help Sara learn their names.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "Sahih al-Bukhari 46",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_042",
+      "conceptId": "kids_worship_fajr_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Ayan sees Fajr listed before sunrise on the prayer timetable. Which description fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The midday prayer"
+        },
+        {
+          "id": "b",
+          "text": "The dawn prayer"
+        },
+        {
+          "id": "c",
+          "text": "The sunset prayer"
+        },
+        {
+          "id": "d",
+          "text": "The night prayer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Fajr is the dawn prayer, before sunrise. A local timetable helps us learn its time.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "Sahih Muslim 612a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_043",
+      "conceptId": "kids_worship_maghrib_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "The sun has just set and your family is preparing to pray. Which prayer is beginning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fajr"
+        },
+        {
+          "id": "b",
+          "text": "Dhuhr"
+        },
+        {
+          "id": "c",
+          "text": "Maghrib"
+        },
+        {
+          "id": "d",
+          "text": "Asr"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Maghrib begins after sunset. It is different from the dawn and daytime prayers.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "560",
+          "label": "Sahih al-Bukhari 560",
+          "url": "https://sunnah.com/bukhari:560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_044",
+      "conceptId": "kids_worship_adhan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Maryam hears the adhan with her family. What does this call invite them to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Start a running race"
+        },
+        {
+          "id": "b",
+          "text": "Count their toys"
+        },
+        {
+          "id": "c",
+          "text": "Choose a new birthday date"
+        },
+        {
+          "id": "d",
+          "text": "Prepare for salah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The adhan is the call to prayer. Maryam can learn about salah with her family's help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "604",
+          "label": "Sahih al-Bukhari 604",
+          "url": "https://sunnah.com/bukhari:604"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_045",
+      "conceptId": "kids_worship_wudu",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You need wudu before practicing prayer and are still learning its steps. What is a helpful choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask a parent or teacher to show the washing and wiping"
+        },
+        {
+          "id": "b",
+          "text": "Guess that counting fingers is enough"
+        },
+        {
+          "id": "c",
+          "text": "Only wipe your shoes on a rug"
+        },
+        {
+          "id": "d",
+          "text": "Paint your hands instead of washing"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Learn the steps of wudu carefully. A parent or teacher can show which parts to wash and wipe.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_046",
+      "conceptId": "kids_worship_qiblah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are preparing to practice salah in a new place. Which direction should an adult help you find?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whichever wall has the brightest paint"
+        },
+        {
+          "id": "b",
+          "text": "The qiblah toward the Kaaba"
+        },
+        {
+          "id": "c",
+          "text": "Where the most expensive furniture is"
+        },
+        {
+          "id": "d",
+          "text": "The direction of the nearest shop"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Muslims face the qiblah for prayer. An adult can help you find the direction toward the Kaaba.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "Quran 2:144",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_047",
+      "conceptId": "kids_worship_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher asks you to identify prostration in a prayer lesson. Which movement is it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Standing upright"
+        },
+        {
+          "id": "b",
+          "text": "Sitting upright"
+        },
+        {
+          "id": "c",
+          "text": "Sujud"
+        },
+        {
+          "id": "d",
+          "text": "Ruku"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sujud is prostration, with the forehead and nose on the ground. A teacher can help you learn its posture.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "812",
+          "label": "Sahih al-Bukhari 812",
+          "url": "https://sunnah.com/bukhari:812"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_048",
+      "conceptId": "kids_worship_ramadan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A family calendar marks the month of fasting. Which month should Lina match with it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shawwal"
+        },
+        {
+          "id": "b",
+          "text": "Rajab"
+        },
+        {
+          "id": "c",
+          "text": "Muharram"
+        },
+        {
+          "id": "d",
+          "text": "Ramadan"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Ramadan is the fasting month. Young children can learn about it with their family without having adult fasting obligations.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4403",
+          "label": "Sunan Abi Dawud 4403",
+          "url": "https://sunnah.com/abudawud:4403"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_049",
+      "conceptId": "kids_worship_fasting_day",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher asks when a normal fasting day begins and ends. Which answer fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dawn to sunset"
+        },
+        {
+          "id": "b",
+          "text": "Sunrise to midday"
+        },
+        {
+          "id": "c",
+          "text": "Midnight to dawn"
+        },
+        {
+          "id": "d",
+          "text": "Sunset to sunrise"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The fasting day runs from dawn until sunset. Dawn and sunrise are not the same time.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "Quran 2:187",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_050",
+      "conceptId": "kids_worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before dawn, your family has a meal to prepare for fasting. What is this meal called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iftar"
+        },
+        {
+          "id": "b",
+          "text": "Suhur"
+        },
+        {
+          "id": "c",
+          "text": "Maghrib"
+        },
+        {
+          "id": "d",
+          "text": "Wudu"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The meal before dawn is suhur. The Prophet ﷺ encouraged this meal for those who fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1921",
+          "label": "Sahih al-Bukhari 1921",
+          "url": "https://sunnah.com/bukhari:1921"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_051",
+      "conceptId": "kids_worship_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your fasting family members are ready to end their fast. Sunset has arrived. What is this called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Suhur"
+        },
+        {
+          "id": "b",
+          "text": "Wudu"
+        },
+        {
+          "id": "c",
+          "text": "Iftar"
+        },
+        {
+          "id": "d",
+          "text": "Fajr"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Breaking the fast at sunset is iftar. It does not need to wait until midnight.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1954",
+          "label": "Sahih al-Bukhari 1954",
+          "url": "https://sunnah.com/bukhari:1954"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "Sahih al-Bukhari 1957",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_052",
+      "conceptId": "kids_worship_bedtime_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to follow a bedtime habit of the Prophet ﷺ. Which choice fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask a lucky charm to guard your bed"
+        },
+        {
+          "id": "b",
+          "text": "Make up words and claim the Prophet ﷺ said them"
+        },
+        {
+          "id": "c",
+          "text": "Say that remembering Allah is never for bedtime"
+        },
+        {
+          "id": "d",
+          "text": "Learn and say a bedtime dua to Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ remembered Allah before sleeping. Ask a parent or teacher to help you learn a bedtime dua.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6312",
+          "label": "Sahih al-Bukhari 6312",
+          "url": "https://sunnah.com/bukhari:6312"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_053",
+      "conceptId": "kids_worship_begin_meal",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are about to eat and want to follow the Prophet's ﷺ teaching. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say Bismillah and eat with your right hand"
+        },
+        {
+          "id": "b",
+          "text": "Boast and grab from another person's plate"
+        },
+        {
+          "id": "c",
+          "text": "Push someone away from the table"
+        },
+        {
+          "id": "d",
+          "text": "Say that remembering Allah has no place at meals"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Mention Allah's name before eating and use your right hand, following the teaching given to a child by the Prophet ﷺ.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5376",
+          "label": "Sahih al-Bukhari 5376",
+          "url": "https://sunnah.com/bukhari:5376"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_054",
+      "conceptId": "kids_worship_praise_after_food",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You finish your meal and want to praise Allah for it. Which phrase fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I made every blessing myself"
+        },
+        {
+          "id": "b",
+          "text": "Alhamdulillah"
+        },
+        {
+          "id": "c",
+          "text": "My plate deserves worship"
+        },
+        {
+          "id": "d",
+          "text": "There is no need to be grateful"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Alhamdulillah praises Allah. Saying it after food is a simple way to express gratitude for His blessing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2734a",
+          "label": "Sahih Muslim 2734a",
+          "url": "https://sunnah.com/muslim:2734a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_055",
+      "conceptId": "kids_worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher says, \"Let us remember Allah.\" Which kind of worship is being encouraged?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Counting our money"
+        },
+        {
+          "id": "b",
+          "text": "Choosing a sports team"
+        },
+        {
+          "id": "c",
+          "text": "Dhikr"
+        },
+        {
+          "id": "d",
+          "text": "Measuring our books"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Remembering Allah is dhikr. We can learn words of remembrance and their meanings.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "Quran 33:41",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_056",
+      "conceptId": "kids_worship_subhanallah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A lesson asks for a phrase glorifying Allah as free from imperfection. Which phrase should you choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Astaghfirullah"
+        },
+        {
+          "id": "b",
+          "text": "Assalamu alaikum"
+        },
+        {
+          "id": "c",
+          "text": "Bismillah"
+        },
+        {
+          "id": "d",
+          "text": "Subhanallah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Subhanallah is a phrase that glorifies Allah as perfect. Learning its meaning helps us understand our remembrance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Riyad as-Salihin",
+          "number": "1408",
+          "label": "Riyad as-Salihin 1408",
+          "url": "https://sunnah.com/riyadussalihin:1408"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_057",
+      "conceptId": "kids_worship_allahu_akbar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You hear Allahu akbar in a worship lesson. Which meaning should you remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah is the Greatest"
+        },
+        {
+          "id": "b",
+          "text": "Peace be upon you"
+        },
+        {
+          "id": "c",
+          "text": "I ask Allah for forgiveness"
+        },
+        {
+          "id": "d",
+          "text": "In the name of Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allahu akbar declares Allah's greatness. We learn the words along with their meaning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "601",
+          "label": "Sahih Muslim 601",
+          "url": "https://sunnah.com/muslim:601"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_058",
+      "conceptId": "kids_worship_astaghfirullah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After prayer, you are learning words for seeking Allah's forgiveness. Which phrase belongs in that lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assalamu alaikum"
+        },
+        {
+          "id": "b",
+          "text": "Astaghfirullah"
+        },
+        {
+          "id": "c",
+          "text": "Bismillah"
+        },
+        {
+          "id": "d",
+          "text": "Allahu akbar"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Astaghfirullah asks Allah for forgiveness. Seeking forgiveness after prayer follows the Prophet's ﷺ example.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "591",
+          "label": "Sahih Muslim 591",
+          "url": "https://sunnah.com/muslim:591"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_059",
+      "conceptId": "kids_worship_walk_calmly",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are walking to prayer with an adult and hear that it is starting. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Run through the crowd"
+        },
+        {
+          "id": "b",
+          "text": "Push people out of your way"
+        },
+        {
+          "id": "c",
+          "text": "Continue calmly without pushing or running"
+        },
+        {
+          "id": "d",
+          "text": "Challenge your friend to race inside"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Approach prayer with calmness. The Prophet ﷺ taught this even when the prayer was beginning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "Sahih al-Bukhari 636",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_060",
+      "conceptId": "kids_worship_dua_parents",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to make a dua for your parents using the Quran's lesson. What could you ask Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help me boast about myself"
+        },
+        {
+          "id": "b",
+          "text": "Give me a reason to insult others"
+        },
+        {
+          "id": "c",
+          "text": "Make kindness unimportant to me"
+        },
+        {
+          "id": "d",
+          "text": "Show my parents mercy"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Asking Allah to show your parents mercy follows the Quran's dua for them and remembers their care.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "24",
+          "label": "Quran 17:24",
+          "url": "https://quran.com/17/24"
+        }
+      ]
+    }
+  ]
+}

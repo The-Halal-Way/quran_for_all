@@ -1,0 +1,2373 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "everyday_worship",
+  "title": "দৈনন্দিন ইবাদত",
+  "description": "ছোট্ট মুসলিম → প্রাথমিক স্তর। প্রতিদিনের নামাজ, অজু, কিবলা, রমজানের অভ্যাস, সহজ দোয়া ও জিকির নিয়ে ছোট প্রশ্ন। শিশুরা বড়দের সাহায্যে শেখে ও অনুশীলন করে; বয়ঃসন্ধির আগের শিশুদের বড়দের মতো রোজার দায়িত্ব দেওয়া হয় না। প্রায় ৬–৯ বছরের শিশুদের কথা ভেবে লেখা; প্রয়োজনে বড় কেউ প্রশ্ন পড়ে শোনাতে পারেন। সব প্রশ্ন শিশুদের প্রাথমিক স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। শিশুদের জন্য ইবাদতের প্রাথমিক পরিচয়, ছোট বাক্য ও সরল উদাহরণ ব্যবহার করা হয়েছে। বয়স ও স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিস মিলিয়ে দেখা হয়েছে। প্রশ্নগুলো সাধারণ ইবাদতের অনুশীলন ও শুরুর অর্থ নিয়ে লেখা; ফিকহের সব বিস্তারিত নিয়ম বা ব্যতিক্রমের পূর্ণ নির্দেশিকা নয়। রোজার উদাহরণে শেখা বা পরিবারের অভ্যাস বোঝানো হয়েছে; ছোট শিশুদের বড়দের মতো পূর্ণ রোজা রাখতে বলা হয়নি। প্রশ্ন ও ব্যাখ্যার এই বাংলা রূপ শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; আয়াত বা হাদিসের হুবহু অনুবাদ নয়। দৈনন্দিন উদাহরণে সূত্রের মূলনীতি বোঝানো হয়েছে। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_everyday_worship_001",
+      "conceptId": "kids_worship_five_prayers",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইসলামে প্রতিদিন কত ওয়াক্ত ফরজ নামাজ আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাঁচ"
+        },
+        {
+          "id": "b",
+          "text": "তিন"
+        },
+        {
+          "id": "c",
+          "text": "চার"
+        },
+        {
+          "id": "d",
+          "text": "ছয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ইসলামে দিন ও রাত মিলিয়ে পাঁচ ওয়াক্ত ফরজ নামাজ আছে। শিশুরা বড়দের সাহায্যে সেগুলো শেখে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "সহিহ বুখারি ৪৬",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_002",
+      "conceptId": "kids_worship_fajr_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূর্য ওঠার আগে ভোরের নামাজ কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যোহর"
+        },
+        {
+          "id": "b",
+          "text": "ফজর"
+        },
+        {
+          "id": "c",
+          "text": "আসর"
+        },
+        {
+          "id": "d",
+          "text": "এশা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ফজর ভোরের নামাজ। সূর্য উঠতে শুরু করলে এর সময় শেষ হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "সহিহ মুসলিম ৬১২a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_003",
+      "conceptId": "kids_worship_maghrib_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূর্য ডোবার পর কোন নামাজের সময় শুরু হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফজর"
+        },
+        {
+          "id": "b",
+          "text": "যোহর"
+        },
+        {
+          "id": "c",
+          "text": "মাগরিব"
+        },
+        {
+          "id": "d",
+          "text": "আসর"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মাগরিব সূর্য ডোবার পরের নামাজ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "560",
+          "label": "সহিহ বুখারি ৫৬০",
+          "url": "https://sunnah.com/bukhari:560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_004",
+      "conceptId": "kids_worship_adhan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুসলিমদের নামাজের জন্য ডাকার পরিচিত আহ্বানটির নাম কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সেহরি"
+        },
+        {
+          "id": "b",
+          "text": "ইফতার"
+        },
+        {
+          "id": "c",
+          "text": "জাকাত"
+        },
+        {
+          "id": "d",
+          "text": "আজান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আজান হলো নামাজের আহ্বান। নবী ﷺ বিলালকে এই আহ্বান দিতে বলেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "604",
+          "label": "সহিহ বুখারি ৬০৪",
+          "url": "https://sunnah.com/bukhari:604"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_005",
+      "conceptId": "kids_worship_wudu",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অজু কী জন্য করা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নামাজের জন্য পবিত্র হতে"
+        },
+        {
+          "id": "b",
+          "text": "নামাজের সময়সূচি বেছে নিতে"
+        },
+        {
+          "id": "c",
+          "text": "তসবিহর দানা গুনতে"
+        },
+        {
+          "id": "d",
+          "text": "মানচিত্রে মসজিদ খুঁজতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "অজুতে নামাজের প্রস্তুতির জন্য শরীরের নির্দিষ্ট অংশ ধোয়া ও ভেজা হাতে মোছা হয়। শিক্ষক বা মা-বাবা ধাপগুলো দেখাতে পারেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_006",
+      "conceptId": "kids_worship_qiblah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নামাজে কাবার দিকে মুখ করার দিকটিকে কী বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আজান"
+        },
+        {
+          "id": "b",
+          "text": "কিবলা"
+        },
+        {
+          "id": "c",
+          "text": "সেহরি"
+        },
+        {
+          "id": "d",
+          "text": "জিকির"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কিবলা হলো নামাজে মুসলিমদের মুখ করার দিক। এটি মক্কার কাবার দিকে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "কুরআন ২:১৪৪",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_007",
+      "conceptId": "kids_worship_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নামাজের কোন অবস্থায় কপাল ও নাক মাটিতে রাখা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দাঁড়ানো"
+        },
+        {
+          "id": "b",
+          "text": "বসা"
+        },
+        {
+          "id": "c",
+          "text": "সিজদা"
+        },
+        {
+          "id": "d",
+          "text": "রুকু"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সিজদায় কপাল ও নাক মাটিতে রাখা হয়। নবী ﷺ-এর শেখানো শরীরের অন্য অংশও মাটিতে থাকে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "812",
+          "label": "সহিহ বুখারি ৮১২",
+          "url": "https://sunnah.com/bukhari:812"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_008",
+      "conceptId": "kids_worship_ramadan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন মাসটি রোজার মাস হিসেবে পরিচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শাওয়াল"
+        },
+        {
+          "id": "b",
+          "text": "রজব"
+        },
+        {
+          "id": "c",
+          "text": "মুহাররম"
+        },
+        {
+          "id": "d",
+          "text": "রমজান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "রমজান ফরজ রোজার মাস। সবার দায়িত্ব ও পরিস্থিতি এক রকম নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_009",
+      "conceptId": "kids_worship_fasting_day",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সাধারণভাবে দিনের রোজায় কখন থেকে কখন পর্যন্ত খাওয়া ও পান করা থেকে বিরত থাকা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভোর থেকে সূর্যাস্ত পর্যন্ত"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যোদয় থেকে দুপুরের খাবার পর্যন্ত"
+        },
+        {
+          "id": "c",
+          "text": "শুধু রাতের বেলায়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মসজিদের ভেতরে থাকলে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "রোজায় ভোর থেকে সূর্যাস্ত পর্যন্ত খাওয়া ও পান করা থেকে বিরত থাকা হয়। ভোর সূর্যোদয়ের আগে হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "কুরআন ২:১৮৭",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_010",
+      "conceptId": "kids_worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "যিনি রোজা রাখবেন, তিনি ভোরের আগে যে খাবার খান, তাকে কী বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইফতার"
+        },
+        {
+          "id": "b",
+          "text": "সেহরি"
+        },
+        {
+          "id": "c",
+          "text": "যোহর"
+        },
+        {
+          "id": "d",
+          "text": "আজান"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সেহরি হলো ভোরের আগের খাবার। নবী ﷺ এটি খেতে উৎসাহ দিয়েছেন এবং বরকতময় বলেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1921",
+          "label": "সহিহ বুখারি ১৯২১",
+          "url": "https://sunnah.com/bukhari:1921"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_011",
+      "conceptId": "kids_worship_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূর্যাস্তের সময় রোজা শেষ করে খাওয়াকে কী বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সেহরি"
+        },
+        {
+          "id": "b",
+          "text": "অজু"
+        },
+        {
+          "id": "c",
+          "text": "ইফতার"
+        },
+        {
+          "id": "d",
+          "text": "সিজদা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূর্যাস্তের সময় রোজা শেষ করা হলো ইফতার। সময় হলে অযথা দেরি না করতে নবী ﷺ শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1954",
+          "label": "সহিহ বুখারি ১৯৫৪",
+          "url": "https://sunnah.com/bukhari:1954"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "সহিহ বুখারি ১৯৫৭",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_012",
+      "conceptId": "kids_worship_bedtime_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ঘুমাতে যাওয়ার সময় নবী ﷺ কী করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তারার কাছে নিরাপত্তা চাইতেন"
+        },
+        {
+          "id": "b",
+          "text": "বলতেন, ঘুমের সময় কখনো জিকির করা যায় না"
+        },
+        {
+          "id": "c",
+          "text": "শেখাতেন, দোয়া শুধু মসজিদের জন্য"
+        },
+        {
+          "id": "d",
+          "text": "দোয়া করে আল্লাহকে স্মরণ করতেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ ঘুমানোর আগে দোয়া করে আল্লাহকে স্মরণ করতেন। বড় কারও সাহায্যে আমরা ঘুমানোর দোয়া শিখতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6312",
+          "label": "সহিহ বুখারি ৬৩১২",
+          "url": "https://sunnah.com/bukhari:6312"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_013",
+      "conceptId": "kids_worship_begin_meal",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "খাওয়া শুরুর সময় কোন দুটি কাজ নবী ﷺ-এর শিক্ষা মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর নাম নেওয়া ও ডান হাতে খাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "জোরে বড়াই করা ও সবার খাবার কেড়ে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর নাম বাদ দিয়ে খাবার নিয়ে ঠাট্টা করা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যকে সরিয়ে তার ভাগ নিয়ে নেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ একটি শিশুকে আল্লাহর নাম নিতে, ডান হাতে খেতে এবং সামনে থেকে খাবার নিতে শিখিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5376",
+          "label": "সহিহ বুখারি ৫৩৭৬",
+          "url": "https://sunnah.com/bukhari:5376"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_014",
+      "conceptId": "kids_worship_praise_after_food",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "খাওয়া বা পান করার পর আমরা কার প্রশংসা ও শুকরিয়া আদায় করি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তারার"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর"
+        },
+        {
+          "id": "c",
+          "text": "চাঁদের"
+        },
+        {
+          "id": "d",
+          "text": "সৌভাগ্যের তাবিজের"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "খাবার ও পানীয়ের জন্য আল্লাহর প্রশংসা করতে নবী ﷺ শিখিয়েছেন। আলহামদুলিল্লাহ বললে সেই প্রশংসা প্রকাশ পায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2734a",
+          "label": "সহিহ মুসলিম ২৭৩৪a",
+          "url": "https://sunnah.com/muslim:2734a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_015",
+      "conceptId": "kids_worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইবাদতে জিকির বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু নিজের জিনিসপত্র গোনা"
+        },
+        {
+          "id": "b",
+          "text": "ধর্মের কথা বানিয়ে বলা"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহকে স্মরণ করা"
+        },
+        {
+          "id": "d",
+          "text": "নতুন সময়সূচি বেছে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জিকির মানে আল্লাহকে স্মরণ করা। কুরআন আমাদের বেশি বেশি তাঁকে স্মরণ করতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "কুরআন ৩৩:৪১",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_016",
+      "conceptId": "kids_worship_subhanallah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন কথায় আল্লাহর পবিত্রতা ঘোষণা করে তাঁকে সব দোষ থেকে মুক্ত বলা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আস্তাগফিরুল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "আসসালামু আলাইকুম"
+        },
+        {
+          "id": "c",
+          "text": "বিসমিল্লাহ"
+        },
+        {
+          "id": "d",
+          "text": "সুবহানাল্লাহ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সুবহানাল্লাহ বলে আল্লাহকে সব দোষ ও অপূর্ণতা থেকে পবিত্র ঘোষণা করা হয়। এটি জিকিরের একটি বাক্য।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Riyad as-Salihin",
+          "number": "1408",
+          "label": "রিয়াদুস সালিহিন ১৪০৮",
+          "url": "https://sunnah.com/riyadussalihin:1408"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_017",
+      "conceptId": "kids_worship_allahu_akbar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহু আকবার মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ সর্বশ্রেষ্ঠ"
+        },
+        {
+          "id": "b",
+          "text": "আমি আল্লাহর কাছে ক্ষমা চাই"
+        },
+        {
+          "id": "c",
+          "text": "আপনার ওপর শান্তি বর্ষিত হোক"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর নামে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহু আকবার বলে আল্লাহর মহত্ত্ব ঘোষণা করা হয়। ইবাদত ও জিকিরে আমরা এটি বলি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "601",
+          "label": "সহিহ মুসলিম ৬০১",
+          "url": "https://sunnah.com/muslim:601"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_018",
+      "conceptId": "kids_worship_astaghfirullah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন কথায় আল্লাহর কাছে ক্ষমা চাওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আসসালামু আলাইকুম"
+        },
+        {
+          "id": "b",
+          "text": "আস্তাগফিরুল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "বিসমিল্লাহ"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহু আকবার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আস্তাগফিরুল্লাহ বলে আমরা আল্লাহর কাছে ক্ষমা চাই। নবী ﷺ নামাজের পর ক্ষমা চাইতেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "591",
+          "label": "সহিহ মুসলিম ৫৯১",
+          "url": "https://sunnah.com/muslim:591"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_019",
+      "conceptId": "kids_worship_walk_calmly",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ আমাদের কীভাবে নামাজে যেতে শিখিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দৌড়ে ও মানুষকে ধাক্কা দিয়ে"
+        },
+        {
+          "id": "b",
+          "text": "সবাইকে সরাতে চিৎকার করে"
+        },
+        {
+          "id": "c",
+          "text": "শান্তভাবে, তাড়াহুড়া না করে"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধুদের হারাতে দৌড় প্রতিযোগিতা করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নামাজ শুরু হয়ে গেলেও নবী ﷺ শান্তভাবে নামাজে যেতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "সহিহ বুখারি ৬৩৬",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_020",
+      "conceptId": "kids_worship_dua_parents",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মা-বাবার জন্য কুরআনের দোয়ায় আমরা তাঁদের জন্য আল্লাহর কাছে কী চাই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বড়াই করার কারণ"
+        },
+        {
+          "id": "b",
+          "text": "অন্যকে কষ্ট দেওয়ার সুযোগ"
+        },
+        {
+          "id": "c",
+          "text": "সবার সঙ্গে আরও তর্ক"
+        },
+        {
+          "id": "d",
+          "text": "দয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ছোটবেলায় মা-বাবার যত্ন মনে করে তাঁদের প্রতি দয়া দেখাতে আল্লাহর কাছে চাইতে কুরআন শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "24",
+          "label": "কুরআন ১৭:২৪",
+          "url": "https://quran.com/17/24"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_021",
+      "conceptId": "kids_worship_five_prayers",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পাঁচ ওয়াক্ত নামাজ কি একই সময়ে একটি মাত্র নামাজ বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, দিন ও রাতে আলাদা নামাজ বোঝায়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, পাঁচ হলো একের আরেক নাম"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, পাঁচটিই শুধু মধ্যরাতের জন্য"
+        },
+        {
+          "id": "d",
+          "text": "না, বছরে শুধু একবার পাঁচটি নামাজ বোঝায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দিন ও রাত মিলিয়ে পাঁচ ওয়াক্ত ফরজ নামাজ আছে। এটি প্রতিদিন একটিমাত্র নামাজ বোঝায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "সহিহ বুখারি ৪৬",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_022",
+      "conceptId": "kids_worship_fajr_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সূর্য উঠতে শুরু করার পরও কি ফজরের স্বাভাবিক সময় থাকে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, দুপুর পর্যন্ত থাকে"
+        },
+        {
+          "id": "b",
+          "text": "না, সূর্য উঠতে শুরু হলে সময় শেষ হয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সূর্য ওঠার পরই শুরু হয়"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, সূর্যাস্ত পর্যন্ত থাকে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ফজর সূর্য ওঠার আগের নামাজ। সূর্য উঠতে শুরু করলে এর স্বাভাবিক সময় শেষ হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "সহিহ মুসলিম ৬১২a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_023",
+      "conceptId": "kids_worship_maghrib_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন ঘটনা মাগরিবের সময় শুরু হওয়া বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূর্য উঠতে শুরু করেছে"
+        },
+        {
+          "id": "b",
+          "text": "সূর্য দুপুরের অবস্থানে এসেছে"
+        },
+        {
+          "id": "c",
+          "text": "সূর্য ডুবে গেছে"
+        },
+        {
+          "id": "d",
+          "text": "দুপুরের খাবারের সময় আকাশ উজ্জ্বল আছে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূর্য ডোবার পর মাগরিব শুরু হয়। মা-বাবা বা শিক্ষকের সাহায্যে এলাকার নামাজের সময় শিখতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "560",
+          "label": "সহিহ বুখারি ৫৬০",
+          "url": "https://sunnah.com/bukhari:560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_024",
+      "conceptId": "kids_worship_adhan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আজান দেওয়ার উদ্দেশ্য কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাবার তৈরি হয়েছে জানানো"
+        },
+        {
+          "id": "b",
+          "text": "বছরের মাসগুলোর নাম বলা"
+        },
+        {
+          "id": "c",
+          "text": "কতজনের বই আছে তা গোনা"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে নামাজের জন্য ডাকা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আজান মানুষকে নামাজে ডাকে। এটি খাবার তৈরির খবর নয়, নামাজের আহ্বান।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "604",
+          "label": "সহিহ বুখারি ৬০৪",
+          "url": "https://sunnah.com/bukhari:604"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_025",
+      "conceptId": "kids_worship_wudu",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন কাজটি অজুর অংশ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুখ ধোয়া"
+        },
+        {
+          "id": "b",
+          "text": "টাকা গোনা"
+        },
+        {
+          "id": "c",
+          "text": "হাতে রং লাগানো"
+        },
+        {
+          "id": "d",
+          "text": "বই মাপা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মুখ ধোয়া অজুর অংশ। শেখানো নিয়মে অন্য অংশ ধোয়া বা ভেজা হাতে মোছা হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_026",
+      "conceptId": "kids_worship_qiblah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কাবার দিকে মুখ করার মানে কি মুসলিমরা ওই ঘরের ইবাদত করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, ঘরটির ইবাদত করা হয়"
+        },
+        {
+          "id": "b",
+          "text": "না, মুসলিমরা আল্লাহর ইবাদত করে ও কিবলামুখী হয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, ঘরটি আল্লাহর জায়গা নেয়"
+        },
+        {
+          "id": "d",
+          "text": "না, আমরা সূর্যের ইবাদত করি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আমরা শুধু আল্লাহর ইবাদত করি। কাবা নামাজে মুখ করার দিক, ইবাদত করার বস্তু নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "কুরআন ২:১৪৪",
+          "url": "https://quran.com/2/144"
+        },
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "কুরআন ২০:১৪",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_027",
+      "conceptId": "kids_worship_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সিজদায় কপাল কোথায় রাখা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য কারও মাথার ওপর"
+        },
+        {
+          "id": "b",
+          "text": "মেঝের ওপরে শূন্যে"
+        },
+        {
+          "id": "c",
+          "text": "মাটিতে"
+        },
+        {
+          "id": "d",
+          "text": "দাঁড়ানো কারও পিঠে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সিজদায় কপাল ও নাক মাটিতে রাখা হয়। শিক্ষকের কাছে আমরা যত্ন নিয়ে এই অবস্থান শিখি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "812",
+          "label": "সহিহ বুখারি ৮১২",
+          "url": "https://sunnah.com/bukhari:812"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_028",
+      "conceptId": "kids_worship_ramadan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "রমজান সম্পর্কে শেখার মানে কি প্রতিটি ছোট শিশুকে বড়দের মতো রোজা রাখতেই হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি কোলের শিশুকেও রোজা রাখতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, বয়স ও সামর্থ্যের কোনো মূল্য নেই"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, রোজা না রাখলে ছোট শিশুর শেখার মূল্য নেই"
+        },
+        {
+          "id": "d",
+          "text": "না, বয়ঃসন্ধির আগের শিশুদের বড়দের মতো রোজা ফরজ নয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বয়ঃসন্ধির আগের শিশুদের ওপর রোজা ফরজ নয়। তারা বড়দের মতো দায়িত্ব না নিয়েও পরিবারের সঙ্গে রমজান সম্পর্কে শিখতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4403",
+          "label": "সুনান আবু দাউদ ৪৪০৩",
+          "url": "https://sunnah.com/abudawud:4403"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_029",
+      "conceptId": "kids_worship_fasting_day",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দিনের রোজা ভোরে শুরু হয়, নাকি সূর্যোদয়ের সময়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভোরে"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যোদয়ের সময়"
+        },
+        {
+          "id": "c",
+          "text": "শুধু দুপুরে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সূর্যাস্তের পরে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দিনের রোজা ভোরে শুরু হয়, যা সূর্যোদয়ের আগে। সাধারণভাবে রোজায় সূর্যাস্ত পর্যন্ত খাওয়া ও পান করা থেকে বিরত থাকা হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "কুরআন ২:১৮৭",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_030",
+      "conceptId": "kids_worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সেহরি সম্পর্কে কোন বর্ণনাটি ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূর্যাস্তের পর রোজা শেষ করার খাবার"
+        },
+        {
+          "id": "b",
+          "text": "রোজার প্রস্তুতির জন্য ভোরের আগের খাবার"
+        },
+        {
+          "id": "c",
+          "text": "বিকেলের নামাজের একটি নাম"
+        },
+        {
+          "id": "d",
+          "text": "নামাজের আগে ধোয়ার একটি পদ্ধতি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দিনের রোজা শুরুর আগে সেহরি হয়। ইফতার আলাদা—সূর্যাস্তের সময় রোজা শেষ করা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1921",
+          "label": "সহিহ বুখারি ১৯২১",
+          "url": "https://sunnah.com/bukhari:1921"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_031",
+      "conceptId": "kids_worship_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সূর্য ডুবে গেলে রোজাদারকে কি ইফতারের জন্য মধ্যরাত পর্যন্ত অপেক্ষা করতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, মধ্যরাতই সব সময় একমাত্র সময়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সূর্যাস্তে কখনো রোজা শেষ হয় না"
+        },
+        {
+          "id": "c",
+          "text": "না, সূর্যাস্তেই ইফতারের সময়"
+        },
+        {
+          "id": "d",
+          "text": "না, ইফতার শুধু ভোরের আগে হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "দিনের রোজা সূর্যাস্তে শেষ হয়। সময় হলে দ্রুত ইফতার করতে নবী ﷺ উৎসাহ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1954",
+          "label": "সহিহ বুখারি ১৯৫৪",
+          "url": "https://sunnah.com/bukhari:1954"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "সহিহ বুখারি ১৯৫৭",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_032",
+      "conceptId": "kids_worship_bedtime_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ঘুমানোর নিয়মের অংশ হিসেবে কি আল্লাহকে স্মরণ করা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, জিকির শুধু মসজিদের জন্য"
+        },
+        {
+          "id": "b",
+          "text": "না, ঘুমের সময় কখনো দোয়া করা যায় না"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, তবে নবী ﷺ-এর নামে কথা বানাতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, ঘুমানোর দোয়া শিখে পড়তে পারি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ ঘুমানোর আগে আল্লাহকে স্মরণ করতেন। শেখা একটি দোয়া আমরা ঘুমানোর নিয়মে রাখতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6312",
+          "label": "সহিহ বুখারি ৬৩১২",
+          "url": "https://sunnah.com/bukhari:6312"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_033",
+      "conceptId": "kids_worship_begin_meal",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খাওয়ার আগে আল্লাহর নাম নিই কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাওয়া শুরু করার সময় আল্লাহকে স্মরণ করতে"
+        },
+        {
+          "id": "b",
+          "text": "বলতে যে আমরাই খাবার সৃষ্টি করেছি"
+        },
+        {
+          "id": "c",
+          "text": "অন্যদের অবাঞ্ছিত মনে করাতে"
+        },
+        {
+          "id": "d",
+          "text": "খাওয়ার ভালো আদব শেখার বদলে শুধু এটি করতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহর নাম নিলে খাওয়ার সময়ও তাঁকে স্মরণ করা হয়। এটি নবী ﷺ-এর শেখানো অন্য আদবগুলোর সঙ্গেই পালন করা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5376",
+          "label": "সহিহ বুখারি ৫৩৭৬",
+          "url": "https://sunnah.com/bukhari:5376"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_034",
+      "conceptId": "kids_worship_praise_after_food",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খাওয়ার পর আলহামদুলিল্লাহ বললে কী প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আমাদের কখনো সাহায্য লাগে না—এ দাবি"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর প্রশংসা ও কৃতজ্ঞতা"
+        },
+        {
+          "id": "c",
+          "text": "নিজের থালার ইবাদত করার অনুরোধ"
+        },
+        {
+          "id": "d",
+          "text": "অন্যের খাবার নিয়ে ঠাট্টার অনুমতি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "খাবার ও পানীয়ের নিয়ামতের জন্য আমরা আল্লাহর প্রশংসা করি। আলহামদুলিল্লাহ বলে সেই শুকরিয়া জানানো যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2734a",
+          "label": "সহিহ মুসলিম ২৭৩৪a",
+          "url": "https://sunnah.com/muslim:2734a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_035",
+      "conceptId": "kids_worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন কাজটি জিকির?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের সব জিনিস নিয়ে বড়াই করা"
+        },
+        {
+          "id": "b",
+          "text": "কথা বানিয়ে ওহি বলে চালানো"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহকে স্মরণ ও তাঁর প্রশংসা করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু ঠাট্টা করার জন্য মানুষ গোনা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জিকির আমাদের মনোযোগ আল্লাহর দিকে ফেরায়। প্রশংসার কথায় তাঁকে স্মরণ করাও জিকিরের অংশ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "কুরআন ৩৩:৪১",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_036",
+      "conceptId": "kids_worship_subhanallah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সুবহানাল্লাহ বলে কি আল্লাহকে সব দোষ থেকে পবিত্র বলা হয়, নাকি তাঁর দোষ আছে বলা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর দোষ আছে বলা হয়"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যের কাছে সাহায্য চাওয়া হয়"
+        },
+        {
+          "id": "c",
+          "text": "মানুষ আকাশ বানিয়েছে বলা হয়"
+        },
+        {
+          "id": "d",
+          "text": "তাঁকে সব দোষ থেকে পবিত্র বলা হয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সুবহানাল্লাহ বলে আল্লাহকে সব দোষ থেকে পবিত্র ঘোষণা করা হয়। এতে তাঁর কোনো অপূর্ণতার কথা বলা হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Riyad as-Salihin",
+          "number": "1408",
+          "label": "রিয়াদুস সালিহিন ১৪০৮",
+          "url": "https://sunnah.com/riyadussalihin:1408"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_037",
+      "conceptId": "kids_worship_allahu_akbar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন অর্থটি আল্লাহু আকবারের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর মহত্ত্ব ঘোষণা করা"
+        },
+        {
+          "id": "b",
+          "text": "বন্ধুর কাছে উপহার চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সহপাঠীকে বিদায় বলা"
+        },
+        {
+          "id": "d",
+          "text": "ভোরের আগের খাবারের নাম বলা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহু আকবার আল্লাহর মহত্ত্বের ঘোষণা। ইবাদতে এই কথাটি বলা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "601",
+          "label": "সহিহ মুসলিম ৬০১",
+          "url": "https://sunnah.com/muslim:601"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_038",
+      "conceptId": "kids_worship_astaghfirullah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শুধু বড় ভুল করলেই কি আল্লাহর কাছে ক্ষমা চাইতে হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, এটি কখনো দৈনন্দিন ইবাদতের অংশ নয়"
+        },
+        {
+          "id": "b",
+          "text": "না, ক্ষমা চাওয়া নিয়মিত ইবাদতের অংশ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, নবী ﷺ নামাজের পর কখনো তা করতেন না"
+        },
+        {
+          "id": "d",
+          "text": "না, এর মানে ভালো কাজের চেষ্টা বন্ধ করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী ﷺ নামাজের পর ক্ষমা চাইতেন। ভালো কাজের চেষ্টা চালিয়ে যাওয়ার পাশাপাশি নিয়মিত ইবাদতেও ক্ষমা চাওয়া থাকতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "591",
+          "label": "সহিহ মুসলিম ৫৯১",
+          "url": "https://sunnah.com/muslim:591"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_039",
+      "conceptId": "kids_worship_walk_calmly",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নামাজ শুরু হয়ে গেলে সেখানে পৌঁছাতে ধাক্কাধাক্কি ও তাড়াহুড়া করা কি ভালো উপায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সবার নিরাপত্তার চেয়ে দ্রুত যাওয়া জরুরি"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সামনে থাকা সবাইকে ধাক্কা দিতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "না, তখনও শান্তভাবে যেতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, নামাজের উদ্দেশ্যই দৌড় প্রতিযোগিতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নামাজ শুরু হলেও শান্তভাবে যেতে নবী ﷺ শিখিয়েছেন। একে দৌড় প্রতিযোগিতা বানানোর দরকার নেই।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "সহিহ বুখারি ৬৩৬",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_040",
+      "conceptId": "kids_worship_dua_parents",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মা-বাবার জন্য কুরআনের দোয়া আমাদের কী মনে করিয়ে দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মা-বাবার কখনো ভালো ব্যবহার দরকার নেই"
+        },
+        {
+          "id": "b",
+          "text": "দোয়া শুধু নিজের জন্য"
+        },
+        {
+          "id": "c",
+          "text": "কৃতজ্ঞতা মানে বড়াই করা"
+        },
+        {
+          "id": "d",
+          "text": "তাঁদের যত্ন ও তাঁদের জন্য আল্লাহর দয়া চাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "এই দোয়ায় ছোটবেলায় মা-বাবার যত্ন মনে করে তাঁদের প্রতি আল্লাহর দয়া চাওয়া হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "24",
+          "label": "কুরআন ১৭:২৪",
+          "url": "https://quran.com/17/24"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_041",
+      "conceptId": "kids_worship_five_prayers",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সারা প্রতিদিনের ফরজ নামাজ শেখার ছক বানাচ্ছে। নাম লেখার জন্য কয়টি ঘর লাগবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাঁচ"
+        },
+        {
+          "id": "b",
+          "text": "দুই"
+        },
+        {
+          "id": "c",
+          "text": "চার"
+        },
+        {
+          "id": "d",
+          "text": "সাত"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "প্রতিদিন পাঁচ ওয়াক্ত ফরজ নামাজ আছে। পাঁচ ঘরের ছক সারাকে নামগুলো শিখতে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "46",
+          "label": "সহিহ বুখারি ৪৬",
+          "url": "https://sunnah.com/bukhari:46"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_042",
+      "conceptId": "kids_worship_fajr_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আয়ান নামাজের সময়সূচিতে সূর্যোদয়ের আগে ফজর লেখা দেখল। কোন বর্ণনাটি ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুপুরের নামাজ"
+        },
+        {
+          "id": "b",
+          "text": "ভোরের নামাজ"
+        },
+        {
+          "id": "c",
+          "text": "সূর্যাস্তের নামাজ"
+        },
+        {
+          "id": "d",
+          "text": "রাতের নামাজ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ফজর সূর্য ওঠার আগের ভোরের নামাজ। এলাকার সময়সূচি আমাদের এর সময় শিখতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "612a",
+          "label": "সহিহ মুসলিম ৬১২a",
+          "url": "https://sunnah.com/muslim:612a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_043",
+      "conceptId": "kids_worship_maghrib_time",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সূর্য মাত্র ডুবেছে, আর তোমার পরিবার নামাজের প্রস্তুতি নিচ্ছে। কোন নামাজের সময় শুরু হলো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফজর"
+        },
+        {
+          "id": "b",
+          "text": "যোহর"
+        },
+        {
+          "id": "c",
+          "text": "মাগরিব"
+        },
+        {
+          "id": "d",
+          "text": "আসর"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূর্য ডোবার পর মাগরিব শুরু হয়। এটি ভোরের ও দিনের অন্য নামাজ থেকে আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "560",
+          "label": "সহিহ বুখারি ৫৬০",
+          "url": "https://sunnah.com/bukhari:560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_044",
+      "conceptId": "kids_worship_adhan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মরিয়ম পরিবারের সঙ্গে আজান শুনছে। এই আহ্বান তাঁদের কী করতে ডাকছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দৌড় প্রতিযোগিতা শুরু করতে"
+        },
+        {
+          "id": "b",
+          "text": "খেলনা গুনতে"
+        },
+        {
+          "id": "c",
+          "text": "জন্মদিনের নতুন তারিখ বেছে নিতে"
+        },
+        {
+          "id": "d",
+          "text": "নামাজের প্রস্তুতি নিতে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আজান নামাজের আহ্বান। মরিয়ম পরিবারের সাহায্যে নামাজ শিখতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "604",
+          "label": "সহিহ বুখারি ৬০৪",
+          "url": "https://sunnah.com/bukhari:604"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_045",
+      "conceptId": "kids_worship_wudu",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নামাজ অনুশীলনের আগে তোমার অজু দরকার, আর তুমি ধাপগুলো শিখছ। কোন কাজটি সহায়ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মা-বাবা বা শিক্ষককে ধোয়া ও মোছার ধাপ দেখাতে বলব"
+        },
+        {
+          "id": "b",
+          "text": "আন্দাজ করব, শুধু আঙুল গুনলেই যথেষ্ট"
+        },
+        {
+          "id": "c",
+          "text": "শুধু মাদুরে জুতা মুছব"
+        },
+        {
+          "id": "d",
+          "text": "ধোয়ার বদলে হাতে রং লাগাব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "অজুর ধাপগুলো যত্ন নিয়ে শেখো। মা-বাবা বা শিক্ষক কোন অংশ ধুতে ও ভেজা হাতে মুছতে হয়, তা দেখাতে পারেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_046",
+      "conceptId": "kids_worship_qiblah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নতুন জায়গায় নামাজ অনুশীলনের প্রস্তুতি নিচ্ছ। বড় কেউ কোন দিক খুঁজতে সাহায্য করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যে দেয়ালের রং সবচেয়ে উজ্জ্বল"
+        },
+        {
+          "id": "b",
+          "text": "কাবার দিকে কিবলা"
+        },
+        {
+          "id": "c",
+          "text": "যেখানে সবচেয়ে দামি আসবাব আছে"
+        },
+        {
+          "id": "d",
+          "text": "কাছের দোকানের দিক"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুসলিমরা নামাজে কিবলামুখী হয়। বড় কেউ কাবার দিক খুঁজতে সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "144",
+          "label": "কুরআন ২:১৪৪",
+          "url": "https://quran.com/2/144"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_047",
+      "conceptId": "kids_worship_sujud",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নামাজের পাঠে শিক্ষক কপাল ও নাক মাটিতে রাখার অবস্থানটি চিনতে বললেন। সেটি কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সোজা হয়ে দাঁড়ানো"
+        },
+        {
+          "id": "b",
+          "text": "সোজা হয়ে বসা"
+        },
+        {
+          "id": "c",
+          "text": "সিজদা"
+        },
+        {
+          "id": "d",
+          "text": "রুকু"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সিজদায় কপাল ও নাক মাটিতে রাখা হয়। শিক্ষক তোমাকে এই অবস্থান শিখতে সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "812",
+          "label": "সহিহ বুখারি ৮১২",
+          "url": "https://sunnah.com/bukhari:812"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_048",
+      "conceptId": "kids_worship_ramadan",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পরিবারের ক্যালেন্ডারে রোজার মাস চিহ্নিত করা আছে। লিনা কোন মাসটি মেলাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শাওয়াল"
+        },
+        {
+          "id": "b",
+          "text": "রজব"
+        },
+        {
+          "id": "c",
+          "text": "মুহাররম"
+        },
+        {
+          "id": "d",
+          "text": "রমজান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "রমজান রোজার মাস। ছোট শিশুরা বড়দের মতো রোজার দায়িত্ব না নিয়েও পরিবারের সঙ্গে এ বিষয়ে শিখতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4403",
+          "label": "সুনান আবু দাউদ ৪৪০৩",
+          "url": "https://sunnah.com/abudawud:4403"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_049",
+      "conceptId": "kids_worship_fasting_day",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক সাধারণভাবে দিনের রোজা কখন শুরু ও শেষ হয় জিজ্ঞেস করলেন। কোন উত্তরটি ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভোর থেকে সূর্যাস্ত"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যোদয় থেকে দুপুর"
+        },
+        {
+          "id": "c",
+          "text": "মধ্যরাত থেকে ভোর"
+        },
+        {
+          "id": "d",
+          "text": "সূর্যাস্ত থেকে সূর্যোদয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দিনের রোজা ভোর থেকে সূর্যাস্ত পর্যন্ত চলে। ভোর ও সূর্যোদয় একই সময় নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "187",
+          "label": "কুরআন ২:১৮৭",
+          "url": "https://quran.com/2/187"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_050",
+      "conceptId": "kids_worship_suhur",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "রোজার প্রস্তুতি নিতে তোমার পরিবার ভোরের আগে খাবার খাচ্ছে। এই খাবারের নাম কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইফতার"
+        },
+        {
+          "id": "b",
+          "text": "সেহরি"
+        },
+        {
+          "id": "c",
+          "text": "মাগরিব"
+        },
+        {
+          "id": "d",
+          "text": "অজু"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ভোরের আগের খাবার সেহরি। রোজাদারদের এই খাবার খেতে নবী ﷺ উৎসাহ দিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1921",
+          "label": "সহিহ বুখারি ১৯২১",
+          "url": "https://sunnah.com/bukhari:1921"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_051",
+      "conceptId": "kids_worship_iftar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তোমার পরিবারের রোজাদাররা রোজা শেষ করতে প্রস্তুত। সূর্য ডুবে গেছে। এই সময় রোজা শেষ করাকে কী বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সেহরি"
+        },
+        {
+          "id": "b",
+          "text": "অজু"
+        },
+        {
+          "id": "c",
+          "text": "ইফতার"
+        },
+        {
+          "id": "d",
+          "text": "ফজর"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূর্যাস্তে রোজা শেষ করাকে ইফতার বলে। মধ্যরাত পর্যন্ত অপেক্ষা করতে হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1954",
+          "label": "সহিহ বুখারি ১৯৫৪",
+          "url": "https://sunnah.com/bukhari:1954"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1957",
+          "label": "সহিহ বুখারি ১৯৫৭",
+          "url": "https://sunnah.com/bukhari:1957"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_052",
+      "conceptId": "kids_worship_bedtime_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ঘুমানোর সময় নবী ﷺ-এর একটি অভ্যাস অনুসরণ করতে চাও। কোন কাজটি ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাবিজকে বিছানা পাহারা দিতে বলব"
+        },
+        {
+          "id": "b",
+          "text": "কথা বানিয়ে বলব, নবী ﷺ বলেছেন"
+        },
+        {
+          "id": "c",
+          "text": "বলব, ঘুমের সময় আল্লাহকে স্মরণ করা যায় না"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর কাছে ঘুমানোর দোয়া শিখে পড়ব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ ঘুমানোর আগে আল্লাহকে স্মরণ করতেন। মা-বাবা বা শিক্ষকের কাছে ঘুমানোর দোয়া শিখতে সাহায্য চাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6312",
+          "label": "সহিহ বুখারি ৬৩১২",
+          "url": "https://sunnah.com/bukhari:6312"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_053",
+      "conceptId": "kids_worship_begin_meal",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খাওয়া শুরু করবে এবং নবী ﷺ-এর শিক্ষা মেনে চলতে চাও। কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিসমিল্লাহ বলে ডান হাতে খাব"
+        },
+        {
+          "id": "b",
+          "text": "বড়াই করে অন্যের থালা থেকে খাবার কেড়ে নেব"
+        },
+        {
+          "id": "c",
+          "text": "কাউকে খাওয়ার টেবিল থেকে ঠেলে সরাব"
+        },
+        {
+          "id": "d",
+          "text": "বলব, খাবারের সময় আল্লাহকে স্মরণ করার দরকার নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "খাওয়ার আগে আল্লাহর নাম নাও এবং ডান হাতে খাও। নবী ﷺ একটি শিশুকে এভাবেই শিখিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5376",
+          "label": "সহিহ বুখারি ৫৩৭৬",
+          "url": "https://sunnah.com/bukhari:5376"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_054",
+      "conceptId": "kids_worship_praise_after_food",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খাওয়া শেষ করে খাবারের জন্য আল্লাহর প্রশংসা করতে চাও। কোন কথাটি বলবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব নিয়ামত আমি নিজেই বানিয়েছি"
+        },
+        {
+          "id": "b",
+          "text": "আলহামদুলিল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "আমার থালা ইবাদত পাওয়ার যোগ্য"
+        },
+        {
+          "id": "d",
+          "text": "কৃতজ্ঞ হওয়ার কোনো দরকার নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আলহামদুলিল্লাহ বলে আল্লাহর প্রশংসা করা হয়। খাবারের পর এটি বলে তাঁর নিয়ামতের জন্য সহজভাবে শুকরিয়া জানানো যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2734a",
+          "label": "সহিহ মুসলিম ২৭৩৪a",
+          "url": "https://sunnah.com/muslim:2734a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_055",
+      "conceptId": "kids_worship_dhikr",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক বললেন, “চলো, আল্লাহকে স্মরণ করি।” কোন ইবাদতে উৎসাহ দেওয়া হচ্ছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজেদের টাকা গোনা"
+        },
+        {
+          "id": "b",
+          "text": "খেলার দল বেছে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "জিকির"
+        },
+        {
+          "id": "d",
+          "text": "বই মাপা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহকে স্মরণ করা হলো জিকির। আমরা জিকিরের কথাগুলো এবং সেগুলোর অর্থ শিখতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "41",
+          "label": "কুরআন ৩৩:৪১",
+          "url": "https://quran.com/33/41"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_056",
+      "conceptId": "kids_worship_subhanallah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পাঠে আল্লাহকে সব দোষ থেকে পবিত্র ঘোষণার একটি বাক্য বেছে নিতে বলা হয়েছে। কোনটি নেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আস্তাগফিরুল্লাহ"
+        },
+        {
+          "id": "b",
+          "text": "আসসালামু আলাইকুম"
+        },
+        {
+          "id": "c",
+          "text": "বিসমিল্লাহ"
+        },
+        {
+          "id": "d",
+          "text": "সুবহানাল্লাহ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সুবহানাল্লাহ বলে আল্লাহকে সব দোষ থেকে পবিত্র ঘোষণা করা হয়। অর্থ জানলে জিকিরের কথা বুঝতে সুবিধা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Riyad as-Salihin",
+          "number": "1408",
+          "label": "রিয়াদুস সালিহিন ১৪০৮",
+          "url": "https://sunnah.com/riyadussalihin:1408"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_057",
+      "conceptId": "kids_worship_allahu_akbar",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইবাদতের পাঠে আল্লাহু আকবার শুনলে। কোন অর্থটি মনে রাখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ সর্বশ্রেষ্ঠ"
+        },
+        {
+          "id": "b",
+          "text": "আপনার ওপর শান্তি বর্ষিত হোক"
+        },
+        {
+          "id": "c",
+          "text": "আমি আল্লাহর কাছে ক্ষমা চাই"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর নামে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহু আকবার বলে আল্লাহর মহত্ত্ব ঘোষণা করা হয়। আমরা কথাটির সঙ্গে এর অর্থও শিখি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "601",
+          "label": "সহিহ মুসলিম ৬০১",
+          "url": "https://sunnah.com/muslim:601"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_058",
+      "conceptId": "kids_worship_astaghfirullah",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নামাজের পর আল্লাহর কাছে ক্ষমা চাওয়ার বাক্য শিখছ। কোনটি এই পাঠের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আসসালামু আলাইকুম"
+        },
+        {
+          "id": "b",
+          "text": "আস্তাগফিরুল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "বিসমিল্লাহ"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহু আকবার"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আস্তাগফিরুল্লাহ বলে আল্লাহর কাছে ক্ষমা চাওয়া হয়। নামাজের পর ক্ষমা চাইলে নবী ﷺ-এর উদাহরণ অনুসরণ করা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "591",
+          "label": "সহিহ মুসলিম ৫৯১",
+          "url": "https://sunnah.com/muslim:591"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_059",
+      "conceptId": "kids_worship_walk_calmly",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বড় কারও সঙ্গে নামাজে যাচ্ছ, এমন সময় শুনলে নামাজ শুরু হচ্ছে। কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভিড়ের মধ্যে দৌড় দেব"
+        },
+        {
+          "id": "b",
+          "text": "ধাক্কা দিয়ে মানুষকে সরাব"
+        },
+        {
+          "id": "c",
+          "text": "না দৌড়ে ও ধাক্কা না দিয়ে শান্তভাবে যাব"
+        },
+        {
+          "id": "d",
+          "text": "ভেতরে ঢুকে বন্ধুকে দৌড়ের চ্যালেঞ্জ দেব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শান্তভাবে নামাজে যাও। নামাজ শুরু হওয়ার সময়ও নবী ﷺ এভাবেই যেতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "সহিহ বুখারি ৬৩৬",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_everyday_worship_060",
+      "conceptId": "kids_worship_dua_parents",
+      "categoryId": "everyday_worship",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুরআনের শিক্ষা অনুযায়ী মা-বাবার জন্য দোয়া করতে চাও। আল্লাহর কাছে কী চাইতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আমাকে নিজের বড়াই করতে সাহায্য করুন"
+        },
+        {
+          "id": "b",
+          "text": "অন্যকে অপমান করার কারণ দিন"
+        },
+        {
+          "id": "c",
+          "text": "দয়াকে আমার কাছে গুরুত্বহীন করে দিন"
+        },
+        {
+          "id": "d",
+          "text": "আমার মা-বাবার প্রতি দয়া করুন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মা-বাবার যত্ন মনে করে তাঁদের প্রতি দয়া দেখাতে আল্লাহর কাছে চাইলে তাঁদের জন্য কুরআনের দোয়ার শিক্ষা অনুসরণ করা হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "24",
+          "label": "কুরআন ১৭:২৪",
+          "url": "https://quran.com/17/24"
+        }
+      ]
+    }
+  ]
+}

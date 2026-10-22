@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "character_conduct",
+  "title": "Character & Conduct",
+  "description": "Little Muslim → Pro. Short questions connect Quran and hadith teachings with thoughtful everyday conduct. Covers ridicule and human worth, avoiding spying, private times at home, protecting orphans’ property, near and distant neighbors, travelers in need, moderate spending, kind words compared with hurtful giving, responding with what is better, consultation, Yaqub’s expression of sorrow, dua for freedom from bitterness, choosing the best words, tasks within capacity, rights in shared paths, occupied seats, frightening pranks, beginning salam after a quarrel, InshaAllah when planning and protecting animals from cruelty. Includes short family, classroom, friendship and community situations. A knowledgeable adult may read questions aloud or explain unfamiliar terms. All questions are Pro level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro is the highest editorial level within Little Muslim, not the Educated User level. It emphasizes connecting a teaching with its reason, distinguishing respectful conduct from a misleading excuse, and choosing a suitable action in a short everyday situation. All three question styles remain Kids Pro level; styles are not difficulty tiers. No specialist legal disputes, property-management calculations, independent interpretation, obscure dates or memorization of source numbers are required. Some familiar values are revisited through new distinctions, such as curiosity versus permission and reconciliation versus unsafe contact. The bank has not been calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "The linked Quran passages and reports from Sahih al-Bukhari and Sunan Abi Dawud were checked during preparation. Abi Dawud 5004 is labeled Sahih (Al-Albani) on the linked page; this is an attributed source grading, not independent authentication. Questions and explanations are original child-friendly educational paraphrases, not complete or verbatim translations. Modern school, household, digital, spending and community situations illustrate applications rather than narrated events or comprehensive legal rulings. The ridicule questions use Quran 49:11's reminder that those mocked may be better, without declaring a specific person's hidden rank or restricting dignity to achievement. The spying questions concern intrusive curiosity, not a prohibition on reporting genuine danger, appropriate parental safeguarding, public information or necessary authorized investigation. Family privacy is taught from Quran 24:58, including permission before Fajr; the bank does not state that privacy exists only at three times or provide a complete account of age-related permission rules. Ordinary requests are distinguished from emergencies, and no explicit bodily details are needed. Orphans' property is protected without assigning children guardianship, legal dispute resolution or immediate control of funds irrespective of maturity and the relevant conditions; the classroom gift is an application of respecting ownership. Near and distant neighbors are included as translated on the linked page without settling every detailed interpretation of those categories or requiring unsupervised contact. Quran 2:177's care for needy travelers does not require children to approach strangers or arrange travel independently; trusted adults should organize reliable support. Moderate pocket-money planning illustrates avoiding wastefulness and stinginess, without investment advice, rigid percentages, pressure to give essentials or judging a family with limited means. Kind words and forgiveness are compared with charity followed by hurt in Quran 2:263; this is not permission for adults to evade an actual duty to provide material support. Responding with what is better does not demand submitting to abuse, remaining near danger, abandoning protection or guaranteeing that every aggressor becomes safe. Consultation means considering views in suitable shared matters, not voting to authorize wrongdoing or rejecting necessary adult decisions. Yaqub's grief is acknowledged without invented story details, treating sorrow as disbelief, forbidding tears or claiming the verse prohibits seeking human care or appropriate professional support. The dua against bitterness encourages goodwill without making involuntary distress a moral verdict, imposing instant recovery or requiring the abandonment of fair redress and boundaries. Choosing the best words includes respectful expression of disagreement without suppressing a necessary truthful report or blaming a child for someone else's wrongdoing. Bukhari 30's historical report concerns enslaved people under another's authority; the bank draws on its prohibition of overburdening and its instruction to help, without presenting modern siblings or classmates as owned people or endorsing coercive labor. Shared chores are a present-day application and must remain safe and appropriate. The rights-of-the-way report is used for avoiding harm and considerate use of shared places without instructing children to police strangers or enter unsafe roads. Keeping passage clear is an application, not a quotation of the report's full list. The occupied-seat report concerns displacing another to take their place; it does not prohibit suitable access arrangements, safety directions, freely offered seats or an organizer's legitimate seating plan. The frightening-prank questions concern deliberately causing distress for amusement and do not condemn necessary warnings about real danger or every mutually enjoyed surprise. The salam report's encouragement to end ordinary estrangement is not used to force contact after abuse or to assess every situation by an inflexible countdown; children should seek trusted help and retain safety boundaries. Quran 18:23–24 teaches acknowledging Allah's will for future plans without replacing sincere intention, preparation or responsibility with an excuse for dishonesty; ordinary unpredictability is not treated as a deliberate broken promise. Bukhari 5515's condemnation of cruel use of a living hen is taught without graphic details or a general discussion of hunting, food or necessary animal care. Children should avoid cruelty and get adult help rather than attempt a risky intervention. This remains a draft for scholarly and child-readability review, not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_pro_character_conduct_001",
+      "conceptId": "kids_character_no_ridicule_worth",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What reminder does Quran 49:11 give when forbidding people to ridicule others?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Those mocked may be better than the mockers"
+        },
+        {
+          "id": "b",
+          "text": "Popular people decide everyone else's worth"
+        },
+        {
+          "id": "c",
+          "text": "Ridicule becomes right when many people join in"
+        },
+        {
+          "id": "d",
+          "text": "Only people with expensive clothes deserve respect"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse challenges the assumption that we are better than people we mock. It teaches restraint and respect rather than judging others' worth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_002",
+      "conceptId": "kids_character_no_spying",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Alongside warnings about suspicion and backbiting, what does Quran 49:12 forbid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking a teacher for help"
+        },
+        {
+          "id": "b",
+          "text": "Spying on others"
+        },
+        {
+          "id": "c",
+          "text": "Seeking permission politely"
+        },
+        {
+          "id": "d",
+          "text": "Listening to a public lesson"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse forbids spying. Respect for privacy includes not secretly searching through other people's personal matters out of curiosity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_003",
+      "conceptId": "kids_character_family_private_times",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Quran 24:58 teach young household members about certain private times at home?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enter every room without checking"
+        },
+        {
+          "id": "b",
+          "text": "Treat shared housing as an end to privacy"
+        },
+        {
+          "id": "c",
+          "text": "Ask permission before entering"
+        },
+        {
+          "id": "d",
+          "text": "Invite friends into anyone's room freely"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse identifies private times within family life and teaches permission. Living in the same home does not remove the need for consideration.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "58",
+          "label": "Quran 24:58",
+          "url": "https://quran.com/24/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_004",
+      "conceptId": "kids_character_orphans_property",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What wrongdoing concerning orphans' property does Quran 4:2 warn against?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keeping their belongings safe for them"
+        },
+        {
+          "id": "b",
+          "text": "Respecting what belongs to them"
+        },
+        {
+          "id": "c",
+          "text": "Protecting them from dishonest exchanges"
+        },
+        {
+          "id": "d",
+          "text": "Taking their wealth into one's own unfairly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse protects orphans' property from unfair taking and dishonest substitution. Someone's vulnerability does not remove their rights.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "2",
+          "label": "Quran 4:2",
+          "url": "https://quran.com/4/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_005",
+      "conceptId": "kids_character_neighbors_near_distant",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which neighbors are included in Quran 4:36's teaching about kindness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both near and distant neighbors"
+        },
+        {
+          "id": "b",
+          "text": "Only neighbors who are close relatives"
+        },
+        {
+          "id": "c",
+          "text": "Only neighbors who give us presents"
+        },
+        {
+          "id": "d",
+          "text": "Only neighbors with the same income"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse includes near and distant neighbors among those deserving kindness. Care is not limited to people already close to us.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "Quran 4:36",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_006",
+      "conceptId": "kids_character_needy_travelers",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which people away from home are named among those to support in Quran 2:177?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only travelers with the newest luggage"
+        },
+        {
+          "id": "b",
+          "text": "Travelers in need"
+        },
+        {
+          "id": "c",
+          "text": "Only visitors bringing expensive gifts"
+        },
+        {
+          "id": "d",
+          "text": "Every tourist regardless of any need"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse includes travelers in need among recipients of generosity. Being away from home can leave someone needing practical support.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "Quran 2:177",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_007",
+      "conceptId": "kids_character_moderate_spending",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which balance in spending does Quran 25:67 praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spend everything immediately"
+        },
+        {
+          "id": "b",
+          "text": "Refuse every appropriate expense"
+        },
+        {
+          "id": "c",
+          "text": "Neither wasteful nor stingy"
+        },
+        {
+          "id": "d",
+          "text": "Buy more whenever someone else buys something"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse praises a middle course between wastefulness and stinginess. Thoughtful spending considers real needs and appropriate generosity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_008",
+      "conceptId": "kids_character_kind_words_over_hurtful_gift",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Quran 2:263 describe as better than charity followed by hurt?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A larger gift followed by louder insults"
+        },
+        {
+          "id": "b",
+          "text": "Public reminders of the receiver's weakness"
+        },
+        {
+          "id": "c",
+          "text": "Giving only to make someone feel indebted"
+        },
+        {
+          "id": "d",
+          "text": "Kind words and forgiveness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse values kind speech and forgiveness over giving that causes hurt. A gift does not make humiliating someone acceptable.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "263",
+          "label": "Quran 2:263",
+          "url": "https://quran.com/2/263"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_009",
+      "conceptId": "kids_character_respond_with_better",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What response to wrongdoing does Quran 41:34 encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respond with what is better"
+        },
+        {
+          "id": "b",
+          "text": "Compete to cause the greater hurt"
+        },
+        {
+          "id": "c",
+          "text": "Make every disagreement public entertainment"
+        },
+        {
+          "id": "d",
+          "text": "Assume kindness means wrongdoing becomes right"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse teaches a better response rather than matching harm with harm. For children, safety and trusted adult help remain important.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 41,
+          "ayahs": "34",
+          "label": "Quran 41:34",
+          "url": "https://quran.com/41/34"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_010",
+      "conceptId": "kids_character_mutual_consultation",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does Quran 42:38 describe believers handling their shared affairs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By letting only the loudest person speak"
+        },
+        {
+          "id": "b",
+          "text": "Through consultation with one another"
+        },
+        {
+          "id": "c",
+          "text": "By refusing every suggestion from others"
+        },
+        {
+          "id": "d",
+          "text": "By hiding every decision from those involved"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse praises mutual consultation. Listening to others can be part of responsible decision-making in shared matters.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "38",
+          "label": "Quran 42:38",
+          "url": "https://quran.com/42/38"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_011",
+      "conceptId": "kids_character_sadness_turn_to_allah",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To whom did Yaqub express his deep sorrow in Quran 12:86?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A crowd invited to mock his family"
+        },
+        {
+          "id": "b",
+          "text": "People asked to spread a rumor"
+        },
+        {
+          "id": "c",
+          "text": "Allah"
+        },
+        {
+          "id": "d",
+          "text": "A judge asked to forbid every feeling"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse shows Yaqub bringing sorrow to Allah. Faith and patience do not mean a person never experiences sadness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "86",
+          "label": "Quran 12:86",
+          "url": "https://quran.com/12/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_012",
+      "conceptId": "kids_character_dua_no_bitterness",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In Quran 59:10's dua, what do believers ask Allah to keep from their hearts toward fellow believers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every desire to offer help"
+        },
+        {
+          "id": "b",
+          "text": "The ability to remember a kind action"
+        },
+        {
+          "id": "c",
+          "text": "All concern for another person's rights"
+        },
+        {
+          "id": "d",
+          "text": "Bitterness and resentment"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The dua asks for forgiveness and hearts free of bitterness toward believers. It encourages goodwill without pretending that hurt never happened.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "10",
+          "label": "Quran 59:10",
+          "url": "https://quran.com/59/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_013",
+      "conceptId": "kids_character_choose_best_words",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What kind of speech does Quran 17:53 tell Allah's servants to choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "What is best"
+        },
+        {
+          "id": "b",
+          "text": "Whatever wins the loudest applause"
+        },
+        {
+          "id": "c",
+          "text": "Whatever makes a disagreement spread fastest"
+        },
+        {
+          "id": "d",
+          "text": "Whatever hurts the listener most effectively"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse calls for the best speech and warns about discord. Thoughtful word choices can help prevent a disagreement from growing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "53",
+          "label": "Quran 17:53",
+          "url": "https://quran.com/17/53"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_014",
+      "conceptId": "kids_character_tasks_within_capacity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the report about people under one's care, what does the Prophet ﷺ warn against assigning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fair support with a difficult task"
+        },
+        {
+          "id": "b",
+          "text": "Work beyond their capacity"
+        },
+        {
+          "id": "c",
+          "text": "Suitable food and clothing"
+        },
+        {
+          "id": "d",
+          "text": "Practical help when a task is burdensome"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report warns against overburdening people and instructs helping them with burdensome work. Responsibility includes care for the person doing the task.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "30",
+          "label": "Sahih al-Bukhari 30",
+          "url": "https://sunnah.com/bukhari:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_015",
+      "conceptId": "kids_character_rights_of_path",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When people insisted on sitting by the roads, what did the Prophet ﷺ tell them to observe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Their right to block every passerby"
+        },
+        {
+          "id": "b",
+          "text": "Only the wishes of the biggest group"
+        },
+        {
+          "id": "c",
+          "text": "The rights of the way"
+        },
+        {
+          "id": "d",
+          "text": "A rule that greetings no longer matter"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report names duties including avoiding harm and returning greetings. Shared places come with responsibilities toward other people.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2465",
+          "label": "Sahih al-Bukhari 2465",
+          "url": "https://sunnah.com/bukhari:2465"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_016",
+      "conceptId": "kids_character_do_not_displace_seated",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith forbid someone to do just to obtain a seat at a gathering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Look for a free place"
+        },
+        {
+          "id": "b",
+          "text": "Allow someone to remain where they are seated"
+        },
+        {
+          "id": "c",
+          "text": "Ask an organizer for help finding space"
+        },
+        {
+          "id": "d",
+          "text": "Make another person leave their seat and take it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report forbids displacing another person to take their place. Wanting a particular seat does not erase someone else's rights.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6269",
+          "label": "Sahih al-Bukhari 6269",
+          "url": "https://sunnah.com/bukhari:6269"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_017",
+      "conceptId": "kids_character_no_frightening_pranks",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the report about a frightened companion teach us to avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frightening another Muslim for amusement"
+        },
+        {
+          "id": "b",
+          "text": "Choosing a game everyone enjoys safely"
+        },
+        {
+          "id": "c",
+          "text": "Reassuring someone who feels worried"
+        },
+        {
+          "id": "d",
+          "text": "Asking before joining a playful activity"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report warns against frightening a Muslim. Calling something a joke does not erase the distress caused to another person.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5004",
+          "label": "Sunan Abi Dawud 5004",
+          "url": "https://sunnah.com/abudawud:5004"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_018",
+      "conceptId": "kids_character_first_salam_after_quarrel",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Among two Muslims turning away from each other after a quarrel, whom does the hadith praise as better?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The one who waits longest for praise"
+        },
+        {
+          "id": "b",
+          "text": "The one who begins with salam"
+        },
+        {
+          "id": "c",
+          "text": "The one who gathers more supporters"
+        },
+        {
+          "id": "d",
+          "text": "The one who refuses every peaceful approach"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith praises the one who starts with salam. Making a peaceful first move can be better than prolonging an ordinary quarrel.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6077",
+          "label": "Sahih al-Bukhari 6077",
+          "url": "https://sunnah.com/bukhari:6077"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_019",
+      "conceptId": "kids_character_future_inshaallah",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which expression acknowledges Allah's will when speaking about a future plan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A claim that nothing can change the plan"
+        },
+        {
+          "id": "b",
+          "text": "A promise that our knowledge of tomorrow is complete"
+        },
+        {
+          "id": "c",
+          "text": "InshaAllah"
+        },
+        {
+          "id": "d",
+          "text": "A phrase meaning preparation is never needed"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "These verses teach acknowledging Allah's will when speaking of the future. InshaAllah means if Allah wills.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "23-24",
+          "label": "Quran 18:23-24",
+          "url": "https://quran.com/18/23-24"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_020",
+      "conceptId": "kids_character_animals_not_targets",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What treatment of a living animal is condemned in the report involving a hen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Letting it move safely"
+        },
+        {
+          "id": "b",
+          "text": "Keeping a respectful distance"
+        },
+        {
+          "id": "c",
+          "text": "Asking an adult about its care"
+        },
+        {
+          "id": "d",
+          "text": "Using it as a target for cruelty"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report strongly condemns cruel treatment of a living animal. Entertainment does not justify causing an animal suffering.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5515",
+          "label": "Sahih al-Bukhari 5515",
+          "url": "https://sunnah.com/bukhari:5515"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_021",
+      "conceptId": "kids_character_no_ridicule_worth",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction follows from the Quran's warning about ridicule?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Noticing a difference does not justify treating someone as inferior"
+        },
+        {
+          "id": "b",
+          "text": "A person's accent decides their value"
+        },
+        {
+          "id": "c",
+          "text": "Being laughed at proves someone deserves it"
+        },
+        {
+          "id": "d",
+          "text": "A popular group can make humiliation harmless"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse reminds us that those mocked may be better. A visible difference is not permission to belittle a person.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_022",
+      "conceptId": "kids_character_no_spying",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction helps apply the Quran's warning against spying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Friendship automatically gives access to every private message"
+        },
+        {
+          "id": "b",
+          "text": "Curiosity does not create permission to inspect private things"
+        },
+        {
+          "id": "c",
+          "text": "A quiet person must have something wrong to hide"
+        },
+        {
+          "id": "d",
+          "text": "Checking a public notice is the same as spying"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The warning protects privacy from intrusive curiosity. It does not forbid ordinary public information or necessary help when someone may be unsafe.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_023",
+      "conceptId": "kids_character_family_private_times",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What broader lesson fits the verse about private times within a household?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Family members never need any privacy"
+        },
+        {
+          "id": "b",
+          "text": "A closed door always proves someone is doing wrong"
+        },
+        {
+          "id": "c",
+          "text": "Close relationships still need boundaries and consideration"
+        },
+        {
+          "id": "d",
+          "text": "Privacy matters only in houses with many rooms"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse teaches respect within daily family life. Familiarity is not a reason to ignore another person's private space and time.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "58",
+          "label": "Quran 24:58",
+          "url": "https://quran.com/24/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_024",
+      "conceptId": "kids_character_orphans_property",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What principle connects protection of orphans' property with everyday fairness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lacking a defender means belongings become free for anyone"
+        },
+        {
+          "id": "b",
+          "text": "Being older automatically transfers another person's ownership"
+        },
+        {
+          "id": "c",
+          "text": "Calling a taking helpful makes every taking acceptable"
+        },
+        {
+          "id": "d",
+          "text": "A vulnerable person's belongings still deserve protection"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse protects property rights where someone may be vulnerable. Care should protect the owner, not become an excuse to exploit them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "2",
+          "label": "Quran 4:2",
+          "url": "https://quran.com/4/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_025",
+      "conceptId": "kids_character_neighbors_near_distant",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which statement fits the Quran's inclusion of near and distant neighbors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kindness can extend beyond our closest circle"
+        },
+        {
+          "id": "b",
+          "text": "Only family connections create a reason for care"
+        },
+        {
+          "id": "c",
+          "text": "A neighbor must first earn kindness through gifts"
+        },
+        {
+          "id": "d",
+          "text": "A different background removes every neighborly responsibility"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse names different neighbors within a wider call to kindness. Consideration should not depend only on personal closeness or similarity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "Quran 4:36",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_026",
+      "conceptId": "kids_character_needy_travelers",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does naming travelers in need broaden our understanding of care?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Travel always means someone has no needs"
+        },
+        {
+          "id": "b",
+          "text": "A person may need support while away from familiar help"
+        },
+        {
+          "id": "c",
+          "text": "Only people born nearby can deserve assistance"
+        },
+        {
+          "id": "d",
+          "text": "Helping requires a child to approach every stranger alone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse includes people in need away from home. Appropriate support should be arranged safely, especially when children are involved.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "Quran 2:177",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_027",
+      "conceptId": "kids_character_moderate_spending",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction fits the middle course in spending?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every small purchase is automatically wasteful"
+        },
+        {
+          "id": "b",
+          "text": "Saving means no one should ever give anything"
+        },
+        {
+          "id": "c",
+          "text": "Avoiding waste differs from refusing every useful expense"
+        },
+        {
+          "id": "d",
+          "text": "Generosity means spending all resources without thought"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse rejects both wastefulness and stinginess. Thoughtful choices can include needs, sensible saving and suitable giving without treating one extreme as the goal.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_028",
+      "conceptId": "kids_character_kind_words_over_hurtful_gift",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What comparison does the verse about kind words teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The price of a gift cancels every insult"
+        },
+        {
+          "id": "b",
+          "text": "A receiver loses the right to respectful treatment"
+        },
+        {
+          "id": "c",
+          "text": "Only material gifts can ever be helpful"
+        },
+        {
+          "id": "d",
+          "text": "How we treat a person matters alongside what we give"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse compares kind speech with giving followed by hurt. Material assistance does not replace respect for the person receiving it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "263",
+          "label": "Quran 2:263",
+          "url": "https://quran.com/2/263"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_029",
+      "conceptId": "kids_character_respond_with_better",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction helps apply responding to harm with what is better?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refusing revenge differs from accepting ongoing harm"
+        },
+        {
+          "id": "b",
+          "text": "A good response means agreeing that bullying is right"
+        },
+        {
+          "id": "c",
+          "text": "Seeking adult protection always makes kindness impossible"
+        },
+        {
+          "id": "d",
+          "text": "Every person must become a close friend immediately"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A better response can avoid escalation while maintaining safety. The verse is not a reason to demand that a child remain in an unsafe situation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 41,
+          "ayahs": "34",
+          "label": "Quran 41:34",
+          "url": "https://quran.com/41/34"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_030",
+      "conceptId": "kids_character_mutual_consultation",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What distinguishes consultation from merely announcing a decision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the leader's first idea may be mentioned"
+        },
+        {
+          "id": "b",
+          "text": "Other people's views are heard and considered"
+        },
+        {
+          "id": "c",
+          "text": "Everyone must agree to an unsafe suggestion"
+        },
+        {
+          "id": "d",
+          "text": "Talking longer automatically makes a decision fair"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Consultation involves meaningful consideration of others' views. In a children's activity, suitable adult guidance and safety still matter.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "38",
+          "label": "Quran 42:38",
+          "url": "https://quran.com/42/38"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_031",
+      "conceptId": "kids_character_sadness_turn_to_allah",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Yaqub's expression of sorrow help us understand about patience?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A faithful person can never feel grief"
+        },
+        {
+          "id": "b",
+          "text": "Tears always prove that dua has failed"
+        },
+        {
+          "id": "c",
+          "text": "Sadness can exist alongside turning to Allah"
+        },
+        {
+          "id": "d",
+          "text": "Every painful feeling must be hidden from trusted adults"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse portrays sorrow brought to Allah. A child can make dua and also seek care and understanding from trusted people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "86",
+          "label": "Quran 12:86",
+          "url": "https://quran.com/12/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_032",
+      "conceptId": "kids_character_dua_no_bitterness",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which attitude fits asking Allah for a heart free of bitterness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend harmful conduct never needs correction"
+        },
+        {
+          "id": "b",
+          "text": "Treat every moment of sadness as deliberate hatred"
+        },
+        {
+          "id": "c",
+          "text": "Refuse all help because feelings should change instantly"
+        },
+        {
+          "id": "d",
+          "text": "Seek goodwill while addressing hurt fairly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The dua encourages a heart of goodwill. Healing can take time, and seeking justice or protection does not require nurturing hatred.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "10",
+          "label": "Quran 59:10",
+          "url": "https://quran.com/59/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_033",
+      "conceptId": "kids_character_choose_best_words",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does choosing the best speech add beyond simply winning an argument?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consider truth, tone and the effect of our words"
+        },
+        {
+          "id": "b",
+          "text": "Use the sharpest insult when our facts are correct"
+        },
+        {
+          "id": "c",
+          "text": "Let audience size decide whether a claim is true"
+        },
+        {
+          "id": "d",
+          "text": "Avoid every necessary conversation about a problem"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse connects good speech with avoiding discord. A true point can be expressed without needless contempt or provocation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "53",
+          "label": "Quran 17:53",
+          "url": "https://quran.com/17/53"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_034",
+      "conceptId": "kids_character_tasks_within_capacity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which lesson follows the warning about burdensome work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Someone helping us has no right to reasonable limits"
+        },
+        {
+          "id": "b",
+          "text": "Consider people's capacity and provide needed help"
+        },
+        {
+          "id": "c",
+          "text": "A loud command makes every task suitable"
+        },
+        {
+          "id": "d",
+          "text": "Giving instructions removes the need for consideration"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The original report concerns people under another's authority. Its lesson of avoiding overburdening can guide considerate choices about suitable shared tasks.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "30",
+          "label": "Sahih al-Bukhari 30",
+          "url": "https://sunnah.com/bukhari:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_035",
+      "conceptId": "kids_character_rights_of_path",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What broader idea fits the report about the rights of the way?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Being there first gives us every possible right"
+        },
+        {
+          "id": "b",
+          "text": "A group's comfort always outweighs everyone passing by"
+        },
+        {
+          "id": "c",
+          "text": "Using a shared place includes duties toward others"
+        },
+        {
+          "id": "d",
+          "text": "Public space belongs only to people who speak loudly"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report emphasizes conduct that respects others. Enjoying a shared place does not mean ignoring its effect on other users.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2465",
+          "label": "Sahih al-Bukhari 2465",
+          "url": "https://sunnah.com/bukhari:2465"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_036",
+      "conceptId": "kids_character_do_not_displace_seated",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction fits the hadith about seats in a gathering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A louder request automatically creates priority"
+        },
+        {
+          "id": "b",
+          "text": "Being popular cancels another person's place"
+        },
+        {
+          "id": "c",
+          "text": "Every change arranged for an access need is forbidden"
+        },
+        {
+          "id": "d",
+          "text": "Wanting a seat differs from having a right to take it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The warning concerns making someone move so we can take their seat. Organizers can still arrange appropriate seating for access or safety needs.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6269",
+          "label": "Sahih al-Bukhari 6269",
+          "url": "https://sunnah.com/bukhari:6269"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_037",
+      "conceptId": "kids_character_no_frightening_pranks",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What distinguishes kind play from the frightening behavior condemned in the report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enjoyment should not depend on another person's distress"
+        },
+        {
+          "id": "b",
+          "text": "Only the person making the joke decides whether it hurts"
+        },
+        {
+          "id": "c",
+          "text": "A frightened reaction always makes a prank better"
+        },
+        {
+          "id": "d",
+          "text": "A joke becomes harmless when it is filmed"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report challenges amusement built on another person's fear. Consideration includes the experience of the person affected, not only the joker's intention.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5004",
+          "label": "Sunan Abi Dawud 5004",
+          "url": "https://sunnah.com/abudawud:5004"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_038",
+      "conceptId": "kids_character_first_salam_after_quarrel",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does praising the first person to offer salam teach about an ordinary quarrel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waiting for the other person always proves greater dignity"
+        },
+        {
+          "id": "b",
+          "text": "A peaceful first step can show strength of character"
+        },
+        {
+          "id": "c",
+          "text": "Peace requires pretending every disagreement was imaginary"
+        },
+        {
+          "id": "d",
+          "text": "The person with more supporters must be right"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Beginning with salam can open a path toward peace. It does not force a child to resume an unsafe relationship or abandon needed help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6077",
+          "label": "Sahih al-Bukhari 6077",
+          "url": "https://sunnah.com/bukhari:6077"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_039",
+      "conceptId": "kids_character_future_inshaallah",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which understanding fits saying InshaAllah about a sincere plan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The phrase guarantees every plan will happen"
+        },
+        {
+          "id": "b",
+          "text": "The phrase makes intentional dishonesty acceptable"
+        },
+        {
+          "id": "c",
+          "text": "We intend to try while acknowledging Allah's will"
+        },
+        {
+          "id": "d",
+          "text": "Planning and preparation become unnecessary"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Acknowledging Allah's will is different from claiming control over tomorrow. Saying InshaAllah should not be used as an excuse to mislead people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "23-24",
+          "label": "Quran 18:23-24",
+          "url": "https://quran.com/18/23-24"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_040",
+      "conceptId": "kids_character_animals_not_targets",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction follows from the condemnation of cruelty to the hen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Owning an animal permits every way of treating it"
+        },
+        {
+          "id": "b",
+          "text": "A group activity becomes right if everyone laughs"
+        },
+        {
+          "id": "c",
+          "text": "Cruelty matters only when the animal is expensive"
+        },
+        {
+          "id": "d",
+          "text": "An animal's suffering is not justified by entertainment"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report condemns treating a living animal cruelly. Its value does not depend on price, popularity or usefulness to a game.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5515",
+          "label": "Sahih al-Bukhari 5515",
+          "url": "https://sunnah.com/bukhari:5515"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_041",
+      "conceptId": "kids_character_no_ridicule_worth",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Classmates mock a new student's accent. What applies the verse's reminder about those being ridiculed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid joining in and support respectful treatment"
+        },
+        {
+          "id": "b",
+          "text": "Join because most of the class is laughing"
+        },
+        {
+          "id": "c",
+          "text": "Assume an unfamiliar accent proves lower ability"
+        },
+        {
+          "id": "d",
+          "text": "Ask the student to accept every insult silently"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse challenges ridicule and assumptions of superiority. Support the student's dignity and seek a teacher's help if the teasing continues.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "Quran 49:11",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_042",
+      "conceptId": "kids_character_no_spying",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend's private notebook is open nearby. What applies the warning against spying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read quickly because the notebook was not locked"
+        },
+        {
+          "id": "b",
+          "text": "Leave private pages unread and respect their space"
+        },
+        {
+          "id": "c",
+          "text": "Photograph the pages to discuss later"
+        },
+        {
+          "id": "d",
+          "text": "Assume friendship means permission to inspect everything"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An opportunity to look is not the same as permission. Respect ordinary privacy; seek trusted adult help if there is a genuine safety concern.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_043",
+      "conceptId": "kids_character_family_private_times",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before dawn, you want to enter a parent's closed bedroom for an ordinary request. What fits the verse about private times?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enter suddenly because you live there too"
+        },
+        {
+          "id": "b",
+          "text": "Bring friends in without asking"
+        },
+        {
+          "id": "c",
+          "text": "Ask permission and wait for a response"
+        },
+        {
+          "id": "d",
+          "text": "Treat a need for privacy as an insult"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse includes the time before Fajr among private times. For an ordinary request, asking before entering shows consideration; emergencies need appropriate help.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "58",
+          "label": "Quran 24:58",
+          "url": "https://quran.com/24/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_044",
+      "conceptId": "kids_character_orphans_property",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone says an orphaned classmate's gift is free to take because nobody will defend them. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take a share before anyone else does"
+        },
+        {
+          "id": "b",
+          "text": "Assume fewer defenders means fewer rights"
+        },
+        {
+          "id": "c",
+          "text": "Rename the taking kindness and keep the gift"
+        },
+        {
+          "id": "d",
+          "text": "Respect the child's ownership and tell a trusted teacher"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse protects orphans from unfair taking. A child's belongings deserve respect, and adults should help when someone is being exploited.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "2",
+          "label": "Quran 4:2",
+          "url": "https://quran.com/4/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_045",
+      "conceptId": "kids_character_neighbors_near_distant",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A nearby family is not part of your close family circle. What applies the Quran's teaching about neighbors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Show appropriate consideration with family guidance"
+        },
+        {
+          "id": "b",
+          "text": "Assume only relatives count as neighbors worth caring about"
+        },
+        {
+          "id": "c",
+          "text": "Offer kindness only if they first buy you something"
+        },
+        {
+          "id": "d",
+          "text": "Judge their right to respect by their income"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse extends kindness beyond a narrow circle. A child can show consideration through safe, suitable actions arranged with family.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "36",
+          "label": "Quran 4:36",
+          "url": "https://quran.com/4/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_046",
+      "conceptId": "kids_character_needy_travelers",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your parent helps a trusted group support a family stranded while traveling. What lesson does this apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only people born nearby should receive help"
+        },
+        {
+          "id": "b",
+          "text": "Travelers in need are included in care and generosity"
+        },
+        {
+          "id": "c",
+          "text": "A child must leave alone to solve the family's travel"
+        },
+        {
+          "id": "d",
+          "text": "People away from home never need support"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse includes travelers in need among those to support. Adults can arrange reliable help; a child should not take on unsafe independent tasks.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "177",
+          "label": "Quran 2:177",
+          "url": "https://quran.com/2/177"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_047",
+      "conceptId": "kids_character_moderate_spending",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With a parent's help, you plan pocket money for needs, some saving and suitable giving. Which Quranic balance does this reflect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buying everything immediately to match friends"
+        },
+        {
+          "id": "b",
+          "text": "Refusing every sensible expense even when needed"
+        },
+        {
+          "id": "c",
+          "text": "Avoiding wastefulness and stinginess"
+        },
+        {
+          "id": "d",
+          "text": "Treating generosity as spending without any limit"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse praises moderation. A simple plan can help a child practice thoughtful use of available resources with family guidance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 25,
+          "ayahs": "67",
+          "label": "Quran 25:67",
+          "url": "https://quran.com/25/67"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_048",
+      "conceptId": "kids_character_kind_words_over_hurtful_gift",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You cannot give material help today. What reflects the verse comparing kind words with hurtful charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insult the person because you have no gift"
+        },
+        {
+          "id": "b",
+          "text": "Promise help you know you will not give"
+        },
+        {
+          "id": "c",
+          "text": "Treat a costly gift as permission to humiliate someone"
+        },
+        {
+          "id": "d",
+          "text": "Speak respectfully and ask an adult about suitable help"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Kind words matter, and giving should not cause humiliation. You can be honest and respectful while seeking appropriate adult support.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "263",
+          "label": "Quran 2:263",
+          "url": "https://quran.com/2/263"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_049",
+      "conceptId": "kids_character_respond_with_better",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate sends a rude message after an ordinary disagreement. What applies responding with what is better?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid insults, reply calmly if suitable and seek help if needed"
+        },
+        {
+          "id": "b",
+          "text": "Send a harsher insult to win the exchange"
+        },
+        {
+          "id": "c",
+          "text": "Invite a crowd to mock the classmate"
+        },
+        {
+          "id": "d",
+          "text": "Assume you must accept threats without telling anyone"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A better response can reduce escalation without accepting mistreatment. Keep boundaries and tell a trusted adult if messages become threatening or persistent.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 41,
+          "ayahs": "34",
+          "label": "Quran 41:34",
+          "url": "https://quran.com/41/34"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_050",
+      "conceptId": "kids_character_mutual_consultation",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You help lead an approved class activity. How can you apply mutual consultation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invite suggestions but ignore every answer automatically"
+        },
+        {
+          "id": "b",
+          "text": "Hear teammates' ideas and consider them fairly"
+        },
+        {
+          "id": "c",
+          "text": "Let popularity decide whose ideas may be heard"
+        },
+        {
+          "id": "d",
+          "text": "Insist the first idea is best because it was yours"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Meaningful consultation gives others a chance to contribute. A teacher can help the group make a suitable, safe decision.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "38",
+          "label": "Quran 42:38",
+          "url": "https://quran.com/42/38"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_051",
+      "conceptId": "kids_character_sadness_turn_to_allah",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You miss someone you love and feel sad. What fits the lesson from Yaqub's words?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assume sadness proves you have no faith"
+        },
+        {
+          "id": "b",
+          "text": "Hide every feeling to appear perfectly patient"
+        },
+        {
+          "id": "c",
+          "text": "Tell Allah your sorrow and seek trusted support"
+        },
+        {
+          "id": "d",
+          "text": "Tell another grieving child that tears make them bad"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Yaqub's words show sorrow brought to Allah. A child can make dua and speak with a caring adult without treating sadness as a moral failure.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "86",
+          "label": "Quran 12:86",
+          "url": "https://quran.com/12/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_052",
+      "conceptId": "kids_character_dua_no_bitterness",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You feel lingering resentment after a disagreement. What applies the dua for a heart free of bitterness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Feed the resentment by planning humiliation"
+        },
+        {
+          "id": "b",
+          "text": "Pretend every feeling must disappear instantly"
+        },
+        {
+          "id": "c",
+          "text": "Avoid trusted help because asking would spoil the dua"
+        },
+        {
+          "id": "d",
+          "text": "Ask Allah for a kinder heart and seek fair resolution"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The dua encourages goodwill alongside forgiveness. You can ask Allah for help, take time to heal and address the disagreement appropriately.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 59,
+          "ayahs": "10",
+          "label": "Quran 59:10",
+          "url": "https://quran.com/59/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_053",
+      "conceptId": "kids_character_choose_best_words",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your group disagrees about a project. Which sentence applies choosing the best speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I see it differently; can we compare our reasons?"
+        },
+        {
+          "id": "b",
+          "text": "Your idea proves you are useless."
+        },
+        {
+          "id": "c",
+          "text": "Everyone should laugh at you before we decide."
+        },
+        {
+          "id": "d",
+          "text": "I will spread a rumor unless you agree."
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse encourages the best speech. A calm, respectful sentence can present disagreement without turning it into personal humiliation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "53",
+          "label": "Quran 17:53",
+          "url": "https://quran.com/17/53"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_054",
+      "conceptId": "kids_character_tasks_within_capacity",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A younger sibling cannot safely lift a box during shared chores. What applies the lesson about burdensome tasks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insist they lift it to prove obedience"
+        },
+        {
+          "id": "b",
+          "text": "Ask an adult to arrange safe help or a suitable task"
+        },
+        {
+          "id": "c",
+          "text": "Mock them until they stop asking for help"
+        },
+        {
+          "id": "d",
+          "text": "Add another box because they are taking too long"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report warns against overburdening and calls for help. Shared chores should suit a child's abilities rather than expose them to avoidable harm.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "30",
+          "label": "Sahih al-Bukhari 30",
+          "url": "https://sunnah.com/bukhari:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_055",
+      "conceptId": "kids_character_rights_of_path",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your friends stop to chat where others need to pass. What applies respecting the rights of the way?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Block the path because your group arrived first"
+        },
+        {
+          "id": "b",
+          "text": "Demand a favor from everyone who wants to pass"
+        },
+        {
+          "id": "c",
+          "text": "Move to a safe suitable place and leave passage clear"
+        },
+        {
+          "id": "d",
+          "text": "Treat passersby as interruptions with no rights"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report emphasizes others' rights in shared places. Keeping passage clear is an everyday application of avoiding harm and showing consideration.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2465",
+          "label": "Sahih al-Bukhari 2465",
+          "url": "https://sunnah.com/bukhari:2465"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_056",
+      "conceptId": "kids_character_do_not_displace_seated",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone is already using the seat you wanted at a gathering. What fits the hadith about taking another's place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Order them up because you like that seat"
+        },
+        {
+          "id": "b",
+          "text": "Move their belongings while they are sitting there"
+        },
+        {
+          "id": "c",
+          "text": "Claim being louder gives you the right to the place"
+        },
+        {
+          "id": "d",
+          "text": "Find a free seat or ask the organizer for help"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report forbids making someone leave just to take their seat. An organizer can help with space, access needs or suitable seating arrangements.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6269",
+          "label": "Sahih al-Bukhari 6269",
+          "url": "https://sunnah.com/bukhari:6269"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_057",
+      "conceptId": "kids_character_no_frightening_pranks",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends plan a prank meant to make another child panic. What applies the report's warning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decline and suggest a game that does not frighten anyone"
+        },
+        {
+          "id": "b",
+          "text": "Join because fear makes the video more entertaining"
+        },
+        {
+          "id": "c",
+          "text": "Decide only the prank-maker's feelings matter"
+        },
+        {
+          "id": "d",
+          "text": "Tell the child they must enjoy it afterward"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A joke should not depend on frightening another person. Choose safe, considerate play and seek adult help if someone is being distressed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5004",
+          "label": "Sunan Abi Dawud 5004",
+          "url": "https://sunnah.com/abudawud:5004"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_058",
+      "conceptId": "kids_character_first_salam_after_quarrel",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After a minor quarrel with a safe friend, both of you keep turning away. What reflects the hadith's praised first step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wait until everyone agrees you won"
+        },
+        {
+          "id": "b",
+          "text": "Offer salam and open a respectful path toward peace"
+        },
+        {
+          "id": "c",
+          "text": "Ask others to prolong the silent treatment"
+        },
+        {
+          "id": "d",
+          "text": "Refuse every greeting until you receive a present"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report praises beginning with salam. For an ordinary safe disagreement, a peaceful greeting can help reopen respectful communication.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6077",
+          "label": "Sahih al-Bukhari 6077",
+          "url": "https://sunnah.com/bukhari:6077"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_059",
+      "conceptId": "kids_character_future_inshaallah",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You sincerely plan to help with a project tomorrow. Which approach fits acknowledging Allah's will?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say it while secretly intending never to help"
+        },
+        {
+          "id": "b",
+          "text": "Treat the phrase as a guarantee nothing can change"
+        },
+        {
+          "id": "c",
+          "text": "Say InshaAllah and prepare to do your part responsibly"
+        },
+        {
+          "id": "d",
+          "text": "Stop preparing because responsibility no longer matters"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "InshaAllah recognizes Allah's will concerning the future. Pair a sincere plan with responsible preparation rather than using the phrase to evade a commitment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "23-24",
+          "label": "Quran 18:23-24",
+          "url": "https://quran.com/18/23-24"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_character_conduct_060",
+      "conceptId": "kids_character_animals_not_targets",
+      "categoryId": "character_conduct",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Some children want to use a living bird as a target in a game. What applies the report's teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Join if the bird belongs to someone in the group"
+        },
+        {
+          "id": "b",
+          "text": "Assume laughter makes the harm acceptable"
+        },
+        {
+          "id": "c",
+          "text": "Decide a cheap animal deserves less care"
+        },
+        {
+          "id": "d",
+          "text": "Refuse the cruelty and tell a trusted adult"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report condemns using a living animal cruelly. Do not join in; get adult help without putting yourself or the animal at further risk.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5515",
+          "label": "Sahih al-Bukhari 5515",
+          "url": "https://sunnah.com/bukhari:5515"
+        }
+      ]
+    }
+  ]
+}

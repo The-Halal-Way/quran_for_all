@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "everyday_worship",
+  "title": "Everyday Worship",
+  "description": "Little Muslim → Mid. Short questions for children who know the first worship basics. Covers wudu, certainty and doubt, careful water use, iqamah, following the imam, calm prayer movements, forgotten prayers, praying according to ability, mosque practices, suhur, forgetful eating, fasting manners, Eid, dua, respectful charity and ability for Hajj. Includes familiar home and classroom situations. An adult may read questions aloud or explain unfamiliar words. All questions are Mid level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Builds on familiar names and routines with simple meanings, common misconceptions and straightforward everyday applications. No detailed legal disputes, specialist measurements, advanced travel rules or memorization of reference numbers is required. Level is editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and reports from Sahih al-Bukhari and Sahih Muslim checked during preparation. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Present-day situations illustrate applications; they are not events narrated in the cited reports. This is an introductory question bank, not a complete prayer, wudu, fasting or Hajj manual. A child's learning is not equated with an adult's legal responsibilities. Fasting scenarios involving legal outcomes explicitly use adults; no scenario directs a child to fast despite illness or beyond appropriate ability. Known passing of wind is distinguished from mere doubt. Sound and smell are not presented as the only possible evidence of broken wudu, and children are not encouraged to check their bodies repeatedly. Careful water use is an application of the reported modest water measure, not a fixed volume imposed on every learner. No disputed wording count is required for iqamah. Mosque-entry prayer questions avoid cases where the obligatory congregation has begun and do not settle differences about restricted times. A knowledgeable teacher should guide actual practice. Prayer according to physical ability is taught without judging disability or prescribing medical treatment. Forgotten prayer is distinguished from planning to neglect prayer. The report on forgetful eating is not permission to continue eating deliberately after remembering. Fasting conduct is taught without telling a child that a particular person's fast is legally invalid because of a lie. The two Eid days are identified without suggesting they are the only days with fasting restrictions. Dua questions do not promise that every particular request must be granted immediately or exactly as asked. Charity examples preserve dignity, allow suitable adult guidance and do not imply that all public giving is wrong. Hajj questions address the condition of ability, not its complete conditions or a child's duty to travel. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_mid_everyday_worship_001",
+      "conceptId": "kids_worship_wudu_arms",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In wudu, washing the hands and arms extends up to which joints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The elbows"
+        },
+        {
+          "id": "b",
+          "text": "The shoulders"
+        },
+        {
+          "id": "c",
+          "text": "The knees"
+        },
+        {
+          "id": "d",
+          "text": "Only the fingertips"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran mentions washing the hands and arms up to the elbows. Learn the full steps with a trusted teacher.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_002",
+      "conceptId": "kids_worship_wudu_after_wind",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What happens to wudu when a person passes wind?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It becomes stronger"
+        },
+        {
+          "id": "b",
+          "text": "It is broken and needs renewing before salah"
+        },
+        {
+          "id": "c",
+          "text": "It changes the prayer direction"
+        },
+        {
+          "id": "d",
+          "text": "It lasts until the next day regardless"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Passing wind breaks wudu. Renewing wudu prepares a person to pray again; ordinary bodily functions are not a reason for shame.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "Sahih al-Bukhari 135",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_003",
+      "conceptId": "kids_worship_wudu_certainty",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith teach about merely doubting whether we passed wind?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repeat wudu after every passing thought"
+        },
+        {
+          "id": "b",
+          "text": "Assume every worry proves wudu is broken"
+        },
+        {
+          "id": "c",
+          "text": "Do not treat doubt alone as certainty"
+        },
+        {
+          "id": "d",
+          "text": "Check repeatedly until learning feels impossible"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith teaches not abandoning prayer because of imagined wind. A passing doubt does not undo known wudu.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "137",
+          "label": "Sahih al-Bukhari 137",
+          "url": "https://sunnah.com/bukhari:137"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_004",
+      "conceptId": "kids_worship_careful_water",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the report about the Prophet's ﷺ small amount of wudu water illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wudu needs a whole swimming pool"
+        },
+        {
+          "id": "b",
+          "text": "More spilled water always means better worship"
+        },
+        {
+          "id": "c",
+          "text": "Washing properly is unnecessary"
+        },
+        {
+          "id": "d",
+          "text": "Wudu can be performed with modest water use"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ performed wudu using a modest measure of water. Careful use should still allow proper washing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "201",
+          "label": "Sahih al-Bukhari 201",
+          "url": "https://sunnah.com/bukhari:201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_005",
+      "conceptId": "kids_worship_iqamah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which call signals that the congregational prayer is about to begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iqamah"
+        },
+        {
+          "id": "b",
+          "text": "Iftar"
+        },
+        {
+          "id": "c",
+          "text": "Suhur"
+        },
+        {
+          "id": "d",
+          "text": "Tawaf"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The iqamah is connected with starting the congregational prayer. It is different from the earlier adhan announcing prayer time.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "Sahih al-Bukhari 636",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_006",
+      "conceptId": "kids_worship_follow_imam",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When praying behind an imam, how should we perform the prayer movements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Race to finish before the imam"
+        },
+        {
+          "id": "b",
+          "text": "Follow the imam without going ahead"
+        },
+        {
+          "id": "c",
+          "text": "Choose an unrelated sequence"
+        },
+        {
+          "id": "d",
+          "text": "Ignore the imam's movements entirely"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The imam leads the prayer and is to be followed. Prayer together is not a race to move first.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "722",
+          "label": "Sahih al-Bukhari 722",
+          "url": "https://sunnah.com/bukhari:722"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_007",
+      "conceptId": "kids_worship_calm_movements",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did the Prophet ﷺ teach the man to bow and prostrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As quickly as possible"
+        },
+        {
+          "id": "b",
+          "text": "Without pausing anywhere"
+        },
+        {
+          "id": "c",
+          "text": "With calmness, settling into each position"
+        },
+        {
+          "id": "d",
+          "text": "While turning it into a competition"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report teaches calm bowing, standing, sitting and prostration. Each movement deserves care rather than a hurried rush.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "793",
+          "label": "Sahih al-Bukhari 793",
+          "url": "https://sunnah.com/bukhari:793"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_008",
+      "conceptId": "kids_worship_forgotten_prayer",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What should a person do on remembering a prayer they genuinely forgot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leave it forever"
+        },
+        {
+          "id": "b",
+          "text": "Replace it with a game"
+        },
+        {
+          "id": "c",
+          "text": "Wait until the same date next year"
+        },
+        {
+          "id": "d",
+          "text": "Pray it when they remember"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ taught praying a forgotten prayer when it is remembered. Forgetfulness has a remedy rather than a reason to give up.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "Sahih al-Bukhari 597",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_009",
+      "conceptId": "kids_worship_pray_by_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "If someone cannot stand for prayer, what alternative does the hadith teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Praying while sitting"
+        },
+        {
+          "id": "b",
+          "text": "Stopping every prayer forever"
+        },
+        {
+          "id": "c",
+          "text": "Forcing someone else to carry them upright"
+        },
+        {
+          "id": "d",
+          "text": "Mocking people who sit"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith allows sitting when standing is not possible, and lying on one's side if sitting is not possible either.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "Sahih al-Bukhari 1117",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_010",
+      "conceptId": "kids_worship_mosque_two_rakah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the hadith about entering a mosque, how many rakahs are taught before sitting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Five"
+        },
+        {
+          "id": "b",
+          "text": "Two"
+        },
+        {
+          "id": "c",
+          "text": "Seven"
+        },
+        {
+          "id": "d",
+          "text": "Ten"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report teaches two rakahs before sitting in the mosque. A teacher can explain when and how to practice this.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "444",
+          "label": "Sahih al-Bukhari 444",
+          "url": "https://sunnah.com/bukhari:444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_011",
+      "conceptId": "kids_worship_mosque_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the reported dua for entering the mosque ask Allah to open?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A secret way to become famous"
+        },
+        {
+          "id": "b",
+          "text": "A path to hurting others"
+        },
+        {
+          "id": "c",
+          "text": "The doors of His mercy"
+        },
+        {
+          "id": "d",
+          "text": "Every locked cupboard"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The mosque entry dua asks Allah for His mercy. Learning its meaning helps connect familiar words with sincere worship.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "713a",
+          "label": "Sahih Muslim 713a",
+          "url": "https://sunnah.com/muslim:713a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_012",
+      "conceptId": "kids_worship_suhur_blessing",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Why did the Prophet ﷺ encourage suhur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It lets fasting begin at midday"
+        },
+        {
+          "id": "b",
+          "text": "It makes fasting on Eid necessary"
+        },
+        {
+          "id": "c",
+          "text": "It replaces every daily prayer"
+        },
+        {
+          "id": "d",
+          "text": "There is blessing in it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ described blessing in suhur. This gives the meal before dawn a place in preparing for fasting.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_013",
+      "conceptId": "kids_worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What should a fasting person do after eating or drinking completely forgetfully?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stop on remembering and complete the fast"
+        },
+        {
+          "id": "b",
+          "text": "Assume the whole fast is lost"
+        },
+        {
+          "id": "c",
+          "text": "Keep eating deliberately until sunset"
+        },
+        {
+          "id": "d",
+          "text": "Stop fasting for the whole month"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith tells someone who ate or drank forgetfully to complete the fast. Deliberate eating after remembering is a different matter.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "Sahih al-Bukhari 1933",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_014",
+      "conceptId": "kids_worship_fasting_truthfulness",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which behavior does the hadith especially warn fasting people to leave?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Truthful answers"
+        },
+        {
+          "id": "b",
+          "text": "False speech and wrongdoing"
+        },
+        {
+          "id": "c",
+          "text": "Helpful actions"
+        },
+        {
+          "id": "d",
+          "text": "Respectful conversation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Fasting includes care for our behavior. The hadith strongly warns against false speech and wrongdoing, not just eating and drinking.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_015",
+      "conceptId": "kids_worship_no_fasting_eid",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair of days did the Prophet ﷺ forbid people to fast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every Monday and Thursday"
+        },
+        {
+          "id": "b",
+          "text": "Every Saturday and Sunday"
+        },
+        {
+          "id": "c",
+          "text": "Eid al-Fitr and Eid al-Adha"
+        },
+        {
+          "id": "d",
+          "text": "The first two days of Ramadan"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report forbids fasting on the two Eid days. Following worship guidance includes knowing when not to fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1990",
+          "label": "Sahih al-Bukhari 1990",
+          "url": "https://sunnah.com/bukhari:1990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_016",
+      "conceptId": "kids_worship_allah_hears_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the Quran's teaching about dua, how does Allah describe Himself?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unable to hear quiet requests"
+        },
+        {
+          "id": "b",
+          "text": "Interested only in famous people"
+        },
+        {
+          "id": "c",
+          "text": "Unaware that anyone calls upon Him"
+        },
+        {
+          "id": "d",
+          "text": "Near and responding to the caller"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah tells His servants that He is near and responds when they call upon Him. This encourages sincere dua.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_017",
+      "conceptId": "kids_worship_dua_both_worlds",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "The dua beginning Rabbana atina asks for good in which two places?",
+      "options": [
+        {
+          "id": "a",
+          "text": "This world and the Hereafter"
+        },
+        {
+          "id": "b",
+          "text": "Only the classroom and playground"
+        },
+        {
+          "id": "c",
+          "text": "Only two neighboring towns"
+        },
+        {
+          "id": "d",
+          "text": "Only today's meal and tomorrow's meal"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "This Quranic dua asks for good in this life and the Hereafter, as well as protection from the Fire.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "Quran 2:201",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_018",
+      "conceptId": "kids_worship_charity_no_hurt",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran warn against after giving charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respecting the person helped"
+        },
+        {
+          "id": "b",
+          "text": "Hurtful reminders of our generosity"
+        },
+        {
+          "id": "c",
+          "text": "Speaking kindly to the person"
+        },
+        {
+          "id": "d",
+          "text": "Protecting the person's dignity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Giving does not permit humiliating someone. The Quran warns against spoiling charity with reminders and hurtful treatment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_019",
+      "conceptId": "kids_worship_private_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran say about giving charity privately to people in need?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It has no value without a crowd"
+        },
+        {
+          "id": "b",
+          "text": "It is always forbidden"
+        },
+        {
+          "id": "c",
+          "text": "It is better for the giver"
+        },
+        {
+          "id": "d",
+          "text": "It must be announced on a stage"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse praises charity and especially giving privately to the poor. Helping someone does not require an audience.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "271",
+          "label": "Quran 2:271",
+          "url": "https://quran.com/2/271"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_020",
+      "conceptId": "kids_worship_hajj_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which condition does the Quran mention in the obligation of Hajj?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Owning the newest phone"
+        },
+        {
+          "id": "b",
+          "text": "Being the tallest family member"
+        },
+        {
+          "id": "c",
+          "text": "Winning a school competition"
+        },
+        {
+          "id": "d",
+          "text": "Being able to make the journey"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran connects the obligation of Hajj with ability to reach the House. This is not a demand for every child to travel.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "97",
+          "label": "Quran 3:97",
+          "url": "https://quran.com/3/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_021",
+      "conceptId": "kids_worship_wudu_arms",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is washing only the fingertips the same as washing the hands and arms up to the elbows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the washing includes more than fingertips"
+        },
+        {
+          "id": "b",
+          "text": "Yes, fingertips replace the whole washing"
+        },
+        {
+          "id": "c",
+          "text": "Yes, elbows are unrelated to wudu"
+        },
+        {
+          "id": "d",
+          "text": "No, because arms must never touch water"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Wudu has taught washing and wiping steps. Washing the hands and arms up to the elbows is not merely wetting fingertips.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_022",
+      "conceptId": "kids_worship_wudu_after_wind",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does knowing that we passed wind differ from only wondering whether we did?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, known wind never affects wudu"
+        },
+        {
+          "id": "b",
+          "text": "Yes, known wind means wudu needs renewing"
+        },
+        {
+          "id": "c",
+          "text": "Yes, known wind changes the adhan"
+        },
+        {
+          "id": "d",
+          "text": "No, every bodily feeling requires a new prayer timetable"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The teaching concerns an actual event that breaks wudu. Knowing it happened is different from having an uncertain thought.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "Sahih al-Bukhari 135",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_023",
+      "conceptId": "kids_worship_wudu_certainty",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does every uncertain thought mean that a person must repeat wudu?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, repeat it after every worry"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the more checking the better without limit"
+        },
+        {
+          "id": "c",
+          "text": "No, doubt alone does not undo known wudu"
+        },
+        {
+          "id": "d",
+          "text": "No, because actual wind never breaks wudu"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Known wudu is not treated as lost just because of doubt. Ask a trusted adult if repeated worries make learning difficult.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "137",
+          "label": "Sahih al-Bukhari 137",
+          "url": "https://sunnah.com/bukhari:137"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_024",
+      "conceptId": "kids_worship_careful_water",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does using water carefully mean leaving the required areas unwashed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, skip washing to save effort"
+        },
+        {
+          "id": "b",
+          "text": "Yes, touching the tap replaces washing"
+        },
+        {
+          "id": "c",
+          "text": "No, because spilling more water always improves wudu"
+        },
+        {
+          "id": "d",
+          "text": "No, use enough to wash properly without needless excess"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Careful water use and proper washing go together. The report does not make a large amount of wasted water the goal.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "201",
+          "label": "Sahih al-Bukhari 201",
+          "url": "https://sunnah.com/bukhari:201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_025",
+      "conceptId": "kids_worship_iqamah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Are the adhan and iqamah simply names for the meal that ends a fast?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, they are calls connected with prayer"
+        },
+        {
+          "id": "b",
+          "text": "Yes, both mean the evening meal"
+        },
+        {
+          "id": "c",
+          "text": "Yes, both mean eating before dawn"
+        },
+        {
+          "id": "d",
+          "text": "No, both are names for charity boxes"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The adhan announces prayer time; the iqamah signals the prayer's start. Neither is the name of a meal.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "Sahih al-Bukhari 636",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_026",
+      "conceptId": "kids_worship_follow_imam",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does praying in congregation mean trying to bow before the imam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, moving first earns a race prize"
+        },
+        {
+          "id": "b",
+          "text": "No, the imam is to be followed"
+        },
+        {
+          "id": "c",
+          "text": "Yes, everyone should ignore the leader"
+        },
+        {
+          "id": "d",
+          "text": "No, because nobody may ever bow"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith teaches following the imam. Moving ahead of the leader misses that lesson of praying together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "722",
+          "label": "Sahih al-Bukhari 722",
+          "url": "https://sunnah.com/bukhari:722"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_027",
+      "conceptId": "kids_worship_calm_movements",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is moving quickly through bowing and sujud the same as settling calmly in them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, speed is the only thing that matters"
+        },
+        {
+          "id": "b",
+          "text": "Yes, skipping stillness is always better"
+        },
+        {
+          "id": "c",
+          "text": "No, calm positions need proper attention"
+        },
+        {
+          "id": "d",
+          "text": "No, because prayer contains no movements"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught settling in the prayer's positions. Speed is not a replacement for learning them properly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "793",
+          "label": "Sahih al-Bukhari 793",
+          "url": "https://sunnah.com/bukhari:793"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_028",
+      "conceptId": "kids_worship_forgotten_prayer",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the teaching about a genuinely forgotten prayer tell us to plan to miss prayers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, it encourages forgetting on purpose"
+        },
+        {
+          "id": "b",
+          "text": "Yes, it makes prayer time irrelevant"
+        },
+        {
+          "id": "c",
+          "text": "No, it says forgotten prayers can never be prayed"
+        },
+        {
+          "id": "d",
+          "text": "No, it explains what to do after forgetting"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report gives a remedy for forgetfulness. It is not an instruction to deliberately ignore prayer times.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "Sahih al-Bukhari 597",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_029",
+      "conceptId": "kids_worship_pray_by_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does needing to sit for prayer make someone less deserving of respect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the hadith recognizes different physical abilities"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only standing people deserve kindness"
+        },
+        {
+          "id": "c",
+          "text": "Yes, sitting always proves laziness"
+        },
+        {
+          "id": "d",
+          "text": "No, because all healthy people must lie down"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Prayer guidance takes inability into account. We should not mock a person for using a taught accommodation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "Sahih al-Bukhari 1117",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_030",
+      "conceptId": "kids_worship_mosque_two_rakah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is the two-rakah prayer on entering a mosque a replacement for all five daily prayers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, it replaces the whole day's worship"
+        },
+        {
+          "id": "b",
+          "text": "No, it does not replace the daily prayers"
+        },
+        {
+          "id": "c",
+          "text": "Yes, one mosque visit replaces every future prayer"
+        },
+        {
+          "id": "d",
+          "text": "No, because praying in a mosque is forbidden"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report teaches a prayer connected with entering the mosque. It does not cancel the five daily prayers.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "444",
+          "label": "Sahih al-Bukhari 444",
+          "url": "https://sunnah.com/bukhari:444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_031",
+      "conceptId": "kids_worship_mosque_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the mosque entry dua ask the building itself to grant mercy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the walls answer the dua"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the carpet decides who receives mercy"
+        },
+        {
+          "id": "c",
+          "text": "No, the request is directed to Allah"
+        },
+        {
+          "id": "d",
+          "text": "No, it asks people to worship the doorway"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The dua is addressed to Allah. Entering a mosque is an occasion to remember Him and ask for His mercy.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "713a",
+          "label": "Sahih Muslim 713a",
+          "url": "https://sunnah.com/muslim:713a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_032",
+      "conceptId": "kids_worship_suhur_blessing",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the blessing of suhur mean the most expensive meal is always the best?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only costly food can have blessing"
+        },
+        {
+          "id": "b",
+          "text": "Yes, ordinary family food never counts"
+        },
+        {
+          "id": "c",
+          "text": "No, suhur is a contest to eat the most"
+        },
+        {
+          "id": "d",
+          "text": "No, the hadith does not set a price requirement"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The teaching praises suhur without making expensive food its condition. Families need not turn the meal into a spending competition.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_033",
+      "conceptId": "kids_worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Are eating completely forgetfully and choosing to keep eating after remembering the same situation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the report specifically addresses forgetfulness"
+        },
+        {
+          "id": "b",
+          "text": "Yes, both mean forgetting throughout"
+        },
+        {
+          "id": "c",
+          "text": "Yes, remembering never changes anything"
+        },
+        {
+          "id": "d",
+          "text": "No, because forgetful eating always ends every fast"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith reassures the person who forgot. It does not permit deliberately continuing to eat after remembering the fast.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "Sahih al-Bukhari 1933",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_034",
+      "conceptId": "kids_worship_fasting_truthfulness",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does avoiding food give a fasting person permission to tell lies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, hunger makes every lie acceptable"
+        },
+        {
+          "id": "b",
+          "text": "No, truthful behavior still matters"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only food matters during fasting"
+        },
+        {
+          "id": "d",
+          "text": "No, because speaking truthfully ends the fast"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith links fasting with leaving false speech and wrongdoing. Hunger does not become an excuse for dishonesty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_035",
+      "conceptId": "kids_worship_no_fasting_eid",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is fasting on Eid al-Fitr an extra improvement on following the Prophet's ﷺ guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, it is always the best Eid activity"
+        },
+        {
+          "id": "b",
+          "text": "Yes, eating on Eid is always wrong"
+        },
+        {
+          "id": "c",
+          "text": "No, fasting on that day is forbidden"
+        },
+        {
+          "id": "d",
+          "text": "No, because every Ramadan fast is forbidden"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Worship follows taught limits. The prohibition of fasting on Eid shows that more fasting is not always the correct choice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1990",
+          "label": "Sahih al-Bukhari 1990",
+          "url": "https://sunnah.com/bukhari:1990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_036",
+      "conceptId": "kids_worship_allah_hears_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does being ordinary or unknown to other people prevent us from calling upon Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only celebrities may make dua"
+        },
+        {
+          "id": "b",
+          "text": "Yes, a large audience is required"
+        },
+        {
+          "id": "c",
+          "text": "No, but only competition winners may ask"
+        },
+        {
+          "id": "d",
+          "text": "No, His invitation is not limited to famous people"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah's teaching invites His servants to call upon Him. Fame and attention from other people are not requirements for dua.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_037",
+      "conceptId": "kids_worship_dua_both_worlds",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Rabbana atina teach us to care only about this worldly life?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, it includes good in the Hereafter too"
+        },
+        {
+          "id": "b",
+          "text": "Yes, it excludes the Hereafter"
+        },
+        {
+          "id": "c",
+          "text": "Yes, it asks only for expensive belongings"
+        },
+        {
+          "id": "d",
+          "text": "No, it forbids every request for worldly good"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The dua includes both this life and the Hereafter. It teaches a broader hope than seeking only immediate possessions.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "Quran 2:201",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_038",
+      "conceptId": "kids_worship_charity_no_hurt",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does giving someone charity give us a right to keep embarrassing them about it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, giving buys the right to insult"
+        },
+        {
+          "id": "b",
+          "text": "No, charity should not be followed by hurtful reminders"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the person must accept every humiliation"
+        },
+        {
+          "id": "d",
+          "text": "No, because kind words make charity useless"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse warns against reminders and harm after charity. Helping someone should preserve their dignity rather than become control over them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_039",
+      "conceptId": "kids_worship_private_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Must every charitable gift be public for it to have value?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only gifts with applause count"
+        },
+        {
+          "id": "b",
+          "text": "Yes, a photograph is always required"
+        },
+        {
+          "id": "c",
+          "text": "No, private giving to the poor is praised"
+        },
+        {
+          "id": "d",
+          "text": "No, because all public charity is forbidden"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse recognizes public charity as good and private giving to the poor as better. It does not require publicity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "271",
+          "label": "Quran 2:271",
+          "url": "https://quran.com/2/271"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_040",
+      "conceptId": "kids_worship_hajj_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the Quran's teaching about Hajj ignore whether someone can make the journey?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, ability is never considered"
+        },
+        {
+          "id": "b",
+          "text": "Yes, everyone must travel immediately regardless of circumstances"
+        },
+        {
+          "id": "c",
+          "text": "No, because Hajj is only a school activity"
+        },
+        {
+          "id": "d",
+          "text": "No, ability is part of the teaching"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse mentions ability to reach the House. We should not use the topic to shame people about travel or money.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "97",
+          "label": "Quran 3:97",
+          "url": "https://quran.com/3/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_041",
+      "conceptId": "kids_worship_wudu_arms",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A wudu lesson shows washing from the hands to the elbows. Which body area is being taught?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The hands and arms"
+        },
+        {
+          "id": "b",
+          "text": "Only the top of the head"
+        },
+        {
+          "id": "c",
+          "text": "Only the toes"
+        },
+        {
+          "id": "d",
+          "text": "The shoulders and back"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Match the washing area to the taught step. A parent or teacher can help you learn it correctly.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "Quran 5:6",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_042",
+      "conceptId": "kids_worship_wudu_after_wind",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before prayer practice, Yusuf knows he passed wind after making wudu. What should he learn to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend it never happened"
+        },
+        {
+          "id": "b",
+          "text": "Renew his wudu before praying"
+        },
+        {
+          "id": "c",
+          "text": "Change the qiblah instead"
+        },
+        {
+          "id": "d",
+          "text": "Repeat only the adhan"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Known passing of wind breaks wudu. Yusuf can calmly renew it, asking for help with the steps if needed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "Sahih al-Bukhari 135",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_043",
+      "conceptId": "kids_worship_wudu_certainty",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Amina remembers making wudu and has only an uncertain thought about wind. Which lesson applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every thought proves she must restart"
+        },
+        {
+          "id": "b",
+          "text": "She must keep checking without stopping"
+        },
+        {
+          "id": "c",
+          "text": "A passing doubt alone does not mean wudu is broken"
+        },
+        {
+          "id": "d",
+          "text": "She should abandon learning prayer entirely"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith addresses imagined wind. Amina need not treat a mere doubt as proof that her wudu has ended.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "137",
+          "label": "Sahih al-Bukhari 137",
+          "url": "https://sunnah.com/bukhari:137"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_044",
+      "conceptId": "kids_worship_careful_water",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "During supervised wudu practice, which approach uses water thoughtfully?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leave the tap running for fun"
+        },
+        {
+          "id": "b",
+          "text": "Skip washing the arms entirely"
+        },
+        {
+          "id": "c",
+          "text": "Spill as much water as possible"
+        },
+        {
+          "id": "d",
+          "text": "Wash properly using a manageable flow"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The reported modest water use encourages care. Ask the teacher to help you wash properly while avoiding unnecessary waste.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "201",
+          "label": "Sahih al-Bukhari 201",
+          "url": "https://sunnah.com/bukhari:201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_045",
+      "conceptId": "kids_worship_iqamah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher says the iqamah is being called. What is about to begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The congregational prayer"
+        },
+        {
+          "id": "b",
+          "text": "The meal before dawn"
+        },
+        {
+          "id": "c",
+          "text": "The end of Ramadan fasting"
+        },
+        {
+          "id": "d",
+          "text": "A lesson in planting seeds"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The iqamah signals the congregational prayer's start. Recognizing it helps you understand the order of familiar prayer routines.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "Sahih al-Bukhari 636",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_046",
+      "conceptId": "kids_worship_follow_imam",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "During prayer practice behind an imam, you want to reach sujud first. What should you remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Finishing first wins the prayer"
+        },
+        {
+          "id": "b",
+          "text": "Follow the imam rather than race ahead"
+        },
+        {
+          "id": "c",
+          "text": "Everyone must move in a different order"
+        },
+        {
+          "id": "d",
+          "text": "The imam's movement is unrelated to yours"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The imam is appointed to be followed. Learn the movements with care instead of trying to beat someone to the next position.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "722",
+          "label": "Sahih al-Bukhari 722",
+          "url": "https://sunnah.com/bukhari:722"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_047",
+      "conceptId": "kids_worship_calm_movements",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "In a prayer lesson, Hasan rushes through bowing without settling. What should his teacher help him practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moving even faster"
+        },
+        {
+          "id": "b",
+          "text": "Skipping bowing altogether"
+        },
+        {
+          "id": "c",
+          "text": "Bowing calmly and settling into position"
+        },
+        {
+          "id": "d",
+          "text": "Turning prayer into a timed race"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught calmness in prayer positions. Patient instruction can help Hasan learn rather than embarrass him.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "793",
+          "label": "Sahih al-Bukhari 793",
+          "url": "https://sunnah.com/bukhari:793"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_048",
+      "conceptId": "kids_worship_forgotten_prayer",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An adult remembers a prayer they genuinely forgot. Which action follows the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wait for a yearly reminder"
+        },
+        {
+          "id": "b",
+          "text": "Treat it as impossible to remedy"
+        },
+        {
+          "id": "c",
+          "text": "Replace it with buying a gift"
+        },
+        {
+          "id": "d",
+          "text": "Pray it when remembered"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report teaches praying the forgotten prayer when it comes to mind. Children can learn this without judging anyone's faith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "Sahih al-Bukhari 597",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_049",
+      "conceptId": "kids_worship_pray_by_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A relative cannot stand for salah. Which response reflects the hadith's guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respect their need to pray sitting"
+        },
+        {
+          "id": "b",
+          "text": "Call them lazy for being unwell"
+        },
+        {
+          "id": "c",
+          "text": "Demand that they stand despite inability"
+        },
+        {
+          "id": "d",
+          "text": "Tell them prayer has no accommodations"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith teaches praying according to ability. Respect the person's situation; a knowledgeable adult can guide the details.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "Sahih al-Bukhari 1117",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_050",
+      "conceptId": "kids_worship_mosque_two_rakah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "At a suitable time, your teacher demonstrates the prayer taught before sitting in a mosque. How many rakahs are demonstrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Six"
+        },
+        {
+          "id": "b",
+          "text": "Two"
+        },
+        {
+          "id": "c",
+          "text": "Eight"
+        },
+        {
+          "id": "d",
+          "text": "Twelve"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report mentions two rakahs before sitting. Follow a trusted teacher's guidance about its suitable practice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "444",
+          "label": "Sahih al-Bukhari 444",
+          "url": "https://sunnah.com/bukhari:444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_051",
+      "conceptId": "kids_worship_mosque_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You enter the mosque with a parent and learn its entry dua. What meaning should you remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking the floor to answer prayers"
+        },
+        {
+          "id": "b",
+          "text": "Demanding that everyone praise you"
+        },
+        {
+          "id": "c",
+          "text": "Asking Allah to open the doors of His mercy"
+        },
+        {
+          "id": "d",
+          "text": "Asking for help to bully someone"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The entry dua asks Allah for mercy. Learning the meaning helps make the routine thoughtful rather than only repeating sounds.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "713a",
+          "label": "Sahih Muslim 713a",
+          "url": "https://sunnah.com/muslim:713a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_052",
+      "conceptId": "kids_worship_suhur_blessing",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your family prepares a simple suhur. Which reminder fits the Prophet's ﷺ teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only luxury food can count as suhur"
+        },
+        {
+          "id": "b",
+          "text": "The biggest meal always proves stronger faith"
+        },
+        {
+          "id": "c",
+          "text": "Suhur must become a family spending contest"
+        },
+        {
+          "id": "d",
+          "text": "There is blessing in suhur without a costly feast"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ encouraged suhur for its blessing. A simple family meal need not become a display of wealth.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "Sahih al-Bukhari 1923",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_053",
+      "conceptId": "kids_worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An adult drinks water while completely forgetting the fast, then remembers. What follows the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stop drinking and continue the fast"
+        },
+        {
+          "id": "b",
+          "text": "Keep drinking on purpose"
+        },
+        {
+          "id": "c",
+          "text": "Declare every Ramadan fast ruined"
+        },
+        {
+          "id": "d",
+          "text": "Give up fasting for the year"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report tells the forgetful eater or drinker to complete the fast. Remembering is the point to stop the forgetful eating or drinking.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "Sahih al-Bukhari 1933",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_054",
+      "conceptId": "kids_worship_fasting_truthfulness",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A lesson says fasting is only about an empty stomach. What important teaching should you add?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hunger gives permission to deceive"
+        },
+        {
+          "id": "b",
+          "text": "Avoiding false speech and wrongdoing matters too"
+        },
+        {
+          "id": "c",
+          "text": "Every spoken truth ends a fast"
+        },
+        {
+          "id": "d",
+          "text": "Bad conduct becomes good during Ramadan"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith warns against false speech and wrongdoing while fasting. Learning fasting includes attention to character as well as food and drink.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "Sahih al-Bukhari 1903",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_055",
+      "conceptId": "kids_worship_no_fasting_eid",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend suggests fasting on Eid al-Fitr to earn extra credit. Which lesson should you share?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eid fasting is always required"
+        },
+        {
+          "id": "b",
+          "text": "Eating on Eid cancels Ramadan"
+        },
+        {
+          "id": "c",
+          "text": "The Prophet ﷺ forbade fasting on that day"
+        },
+        {
+          "id": "d",
+          "text": "Every celebration must be spent fasting"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Not fasting on Eid follows the taught limit. You can explain it kindly and ask a teacher for help if needed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1990",
+          "label": "Sahih al-Bukhari 1990",
+          "url": "https://sunnah.com/bukhari:1990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_056",
+      "conceptId": "kids_worship_allah_hears_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Lina thinks Allah's invitation to make dua is only for famous people. Which reminder fits the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A crowd must approve every dua"
+        },
+        {
+          "id": "b",
+          "text": "Only people with trophies may ask"
+        },
+        {
+          "id": "c",
+          "text": "Ordinary families are excluded from dua"
+        },
+        {
+          "id": "d",
+          "text": "Allah is near and responds to those calling upon Him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse reassures Allah's servants about calling upon Him. Lina does not need fame or a public audience to make dua.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_057",
+      "conceptId": "kids_worship_dua_both_worlds",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher explains Rabbana atina. Which summary should you choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask for good here, good hereafter and protection from the Fire"
+        },
+        {
+          "id": "b",
+          "text": "Ask only for the most toys"
+        },
+        {
+          "id": "c",
+          "text": "Ask to forget the Hereafter"
+        },
+        {
+          "id": "d",
+          "text": "Ask for help to harm classmates"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "This Quranic dua brings together good in both lives and protection from the Fire. Its meaning reaches beyond immediate wants.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "Quran 2:201",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_058",
+      "conceptId": "kids_worship_charity_no_hurt",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After helping someone, a child keeps saying, \"You owe me praise.\" Which lesson should a teacher explain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giving earns permission for every insult"
+        },
+        {
+          "id": "b",
+          "text": "Give without using the gift to embarrass or control"
+        },
+        {
+          "id": "c",
+          "text": "The recipient must accept public shame"
+        },
+        {
+          "id": "d",
+          "text": "Kindness after giving has no importance"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran warns against hurtful reminders after charity. Help should be offered with respect for the person receiving it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "Quran 2:264",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_059",
+      "conceptId": "kids_worship_private_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With a parent's permission, Sara gives quietly to a family in need. Must she post a photo for it to matter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, a photo is what makes it charity"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only a large audience makes giving worthwhile"
+        },
+        {
+          "id": "c",
+          "text": "No, private charity to those in need is praised"
+        },
+        {
+          "id": "d",
+          "text": "No, because helping quietly is forbidden"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran praises private giving to the poor. Sara can help with her parent's guidance without seeking public attention.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "271",
+          "label": "Quran 2:271",
+          "url": "https://quran.com/2/271"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_060",
+      "conceptId": "kids_worship_hajj_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A class discusses why ability matters when learning about Hajj. Which answer fits the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every child must travel this week"
+        },
+        {
+          "id": "b",
+          "text": "Only famous families may visit"
+        },
+        {
+          "id": "c",
+          "text": "Travel costs and ability can never matter"
+        },
+        {
+          "id": "d",
+          "text": "The obligation mentions being able to make the journey"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran includes ability in its teaching about Hajj. The lesson is not a competition about whose family can afford travel.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "97",
+          "label": "Quran 3:97",
+          "url": "https://quran.com/3/97"
+        }
+      ]
+    }
+  ]
+}

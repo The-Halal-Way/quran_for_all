@@ -1,0 +1,2292 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "hadith_knowledge",
+  "title": "Hadith Knowledge",
+  "description": "Little Muslim → Beginner. Short questions introducing hadith, two familiar collections, careful reporting, simple teachings and everyday examples of putting them into practice. Written with children around ages 6–9 in mind; an adult may read questions aloud. All questions are Beginner level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Uses introductory hadith knowledge, short wording and straightforward examples for the Kids audience. Age and level are editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked hadith reports and collection introductions checked during preparation. Present-day scenarios illustrate the cited teachings. No question asks children to judge another person’s faith or worth. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Everyday scenarios illustrate the cited principles. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_hadith_knowledge_001",
+      "conceptId": "kids_hadith_definition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What do we call a report about the Prophet's ﷺ words or actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A hadith"
+        },
+        {
+          "id": "b",
+          "text": "A surah"
+        },
+        {
+          "id": "c",
+          "text": "A juz"
+        },
+        {
+          "id": "d",
+          "text": "A rakah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A hadith can report the Prophet's ﷺ words, actions and what he approved.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_002",
+      "conceptId": "kids_hadith_bukhari_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which of these is a well-known hadith collection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surah Al-Fatihah"
+        },
+        {
+          "id": "b",
+          "text": "Sahih al-Bukhari"
+        },
+        {
+          "id": "c",
+          "text": "A prayer timetable"
+        },
+        {
+          "id": "d",
+          "text": "A Quran page marker"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Sahih al-Bukhari is a collection of hadith gathered by Imam al-Bukhari.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih al-Bukhari",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_003",
+      "conceptId": "kids_hadith_muslim_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What kind of book is Sahih Muslim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dictionary of plant names"
+        },
+        {
+          "id": "b",
+          "text": "A map book"
+        },
+        {
+          "id": "c",
+          "text": "A hadith collection"
+        },
+        {
+          "id": "d",
+          "text": "A collection of invented adventures"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sahih Muslim is a well-known collection of hadith gathered by Imam Muslim.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih Muslim",
+          "url": "https://sunnah.com/muslim/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_004",
+      "conceptId": "kids_hadith_careful_attribution",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When saying that the Prophet ﷺ taught something, what must we avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Checking the source"
+        },
+        {
+          "id": "b",
+          "text": "Asking a teacher for help"
+        },
+        {
+          "id": "c",
+          "text": "Saying we are unsure when we are unsure"
+        },
+        {
+          "id": "d",
+          "text": "Making up words and calling them his"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "We must be honest about the Prophet ﷺ. We must not invent words and call them his sayings.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "Sahih al-Bukhari 110",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_005",
+      "conceptId": "kids_hadith_pass_on_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ ask listeners to do for people who were absent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pass on his teaching"
+        },
+        {
+          "id": "b",
+          "text": "Hide every lesson forever"
+        },
+        {
+          "id": "c",
+          "text": "Change the message for fun"
+        },
+        {
+          "id": "d",
+          "text": "Only tell people their own inventions"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ asked those who heard his teaching to pass it on to those who were not there.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "67",
+          "label": "Sahih al-Bukhari 67",
+          "url": "https://sunnah.com/bukhari:67"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_006",
+      "conceptId": "kids_hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to the hadith about deeds, what matters along with what we do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The color of our clothes"
+        },
+        {
+          "id": "b",
+          "text": "Our intention"
+        },
+        {
+          "id": "c",
+          "text": "How loudly people clap"
+        },
+        {
+          "id": "d",
+          "text": "How expensive our shoes are"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An intention is what we mean to do and why. The hadith teaches that intentions matter.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_007",
+      "conceptId": "kids_hadith_wish_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What good should we wish for a fellow Muslim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only things we would dislike"
+        },
+        {
+          "id": "b",
+          "text": "Failure in every good effort"
+        },
+        {
+          "id": "c",
+          "text": "The good we wish for ourselves"
+        },
+        {
+          "id": "d",
+          "text": "Kindness only when we receive a prize"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught us to want good for fellow Muslims, as we want good for ourselves.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "13",
+          "label": "Sahih al-Bukhari 13",
+          "url": "https://sunnah.com/bukhari:13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_008",
+      "conceptId": "kids_hadith_good_speech",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith teach us about speaking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say every hurtful thought aloud"
+        },
+        {
+          "id": "b",
+          "text": "Insult people to entertain others"
+        },
+        {
+          "id": "c",
+          "text": "Spread stories we know are false"
+        },
+        {
+          "id": "d",
+          "text": "Say something good or avoid harmful talk"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ taught good speech or silence. We should use words with care.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_009",
+      "conceptId": "kids_hadith_control_anger",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the hadith about strength, who is truly strong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Someone who controls themselves when angry"
+        },
+        {
+          "id": "b",
+          "text": "Someone who always wins fights"
+        },
+        {
+          "id": "c",
+          "text": "Someone who shouts the loudest"
+        },
+        {
+          "id": "d",
+          "text": "Someone who frightens smaller children"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ praised self-control during anger. Strength includes controlling our behavior.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_010",
+      "conceptId": "kids_hadith_gentleness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality does the hadith say makes things more beautiful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cruelty"
+        },
+        {
+          "id": "b",
+          "text": "Gentleness"
+        },
+        {
+          "id": "c",
+          "text": "Mockery"
+        },
+        {
+          "id": "d",
+          "text": "Rudeness"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith praises gentleness. Treating others gently improves how we behave.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_011",
+      "conceptId": "kids_hadith_good_deeds_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which statement matches the hadith about good deeds and charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only rich people can ever do good"
+        },
+        {
+          "id": "b",
+          "text": "Kindness matters only when money changes hands"
+        },
+        {
+          "id": "c",
+          "text": "Good deeds can be acts of charity"
+        },
+        {
+          "id": "d",
+          "text": "Helping is worthless without a large gift"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught that good deeds are charity. There are ways to do good beyond giving money.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6021",
+          "label": "Sahih al-Bukhari 6021",
+          "url": "https://sunnah.com/bukhari:6021"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_012",
+      "conceptId": "kids_hadith_clear_path",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which action does the hadith count as charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leaving obstacles for people to trip over"
+        },
+        {
+          "id": "b",
+          "text": "Blocking a walkway for fun"
+        },
+        {
+          "id": "c",
+          "text": "Throwing litter where people walk"
+        },
+        {
+          "id": "d",
+          "text": "Removing something harmful from a path"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Removing harm from a path is charity. Children should get an adult's help with anything dangerous.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1009",
+          "label": "Sahih Muslim 1009",
+          "url": "https://sunnah.com/muslim:1009"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_013",
+      "conceptId": "kids_hadith_regular_small_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which good deeds are especially loved by Allah, even when small?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Those done regularly"
+        },
+        {
+          "id": "b",
+          "text": "Those done only to impress people"
+        },
+        {
+          "id": "c",
+          "text": "Those we only boast about"
+        },
+        {
+          "id": "d",
+          "text": "Those we promise but never attempt"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ praised regular good deeds, even small ones. Little, steady efforts matter.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "Sahih al-Bukhari 6464",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_014",
+      "conceptId": "kids_hadith_encourage_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ teach about helping people learn religion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make learning needlessly difficult"
+        },
+        {
+          "id": "b",
+          "text": "Make it easier and encourage them"
+        },
+        {
+          "id": "c",
+          "text": "Drive new learners away"
+        },
+        {
+          "id": "d",
+          "text": "Use every mistake to humiliate someone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ taught ease and encouragement. We can help learners understand without making them feel unwelcome.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "Sahih al-Bukhari 69",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_015",
+      "conceptId": "kids_hadith_kindness_mother",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When asked who most deserved good companionship, whom did the Prophet ﷺ mention first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The richest person nearby"
+        },
+        {
+          "id": "b",
+          "text": "The strongest wrestler"
+        },
+        {
+          "id": "c",
+          "text": "The man's mother"
+        },
+        {
+          "id": "d",
+          "text": "The loudest speaker"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "He mentioned the mother three times, then the father. The report emphasizes a mother's right to kind treatment.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5971",
+          "label": "Sahih al-Bukhari 5971",
+          "url": "https://sunnah.com/bukhari:5971"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_016",
+      "conceptId": "kids_hadith_kindness_animals",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the hadith about a thirsty dog, which action was rewarded?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chasing it for fun"
+        },
+        {
+          "id": "b",
+          "text": "Laughing at its thirst"
+        },
+        {
+          "id": "c",
+          "text": "Keeping all water away from it"
+        },
+        {
+          "id": "d",
+          "text": "Giving the dog water"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ told of a man rewarded for helping a thirsty dog. Caring for animals matters.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "Sahih al-Bukhari 2363",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_017",
+      "conceptId": "kids_hadith_truthfulness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to the hadith, what does truthfulness lead toward?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Goodness and Paradise"
+        },
+        {
+          "id": "b",
+          "text": "Becoming good at deceiving others"
+        },
+        {
+          "id": "c",
+          "text": "Permission to blame innocent people"
+        },
+        {
+          "id": "d",
+          "text": "Freedom to invent any story as fact"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ taught that truthfulness leads toward goodness and Paradise. We practice honesty in everyday life.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_018",
+      "conceptId": "kids_hadith_keep_promises",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which habit does the hadith warn us to avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trying to keep a good promise"
+        },
+        {
+          "id": "b",
+          "text": "Deliberately breaking promises"
+        },
+        {
+          "id": "c",
+          "text": "Taking a promise seriously"
+        },
+        {
+          "id": "d",
+          "text": "Being trustworthy"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith warns against breaking promises. We should take good promises seriously and try to keep them.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "Sahih al-Bukhari 33",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_019",
+      "conceptId": "kids_hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "The hadith says Allah looks at which things, rather than our looks or wealth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only our expensive clothes"
+        },
+        {
+          "id": "b",
+          "text": "Only how tall we are"
+        },
+        {
+          "id": "c",
+          "text": "Our hearts and deeds"
+        },
+        {
+          "id": "d",
+          "text": "Only how much money we have"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith points to our hearts and actions. Appearance and money do not decide a person's goodness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_020",
+      "conceptId": "kids_hadith_kindness_neighbors",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did Jibril repeatedly remind the Prophet ﷺ about?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Being rude to neighbors"
+        },
+        {
+          "id": "b",
+          "text": "Helping only famous people"
+        },
+        {
+          "id": "c",
+          "text": "Ignoring everyone living nearby"
+        },
+        {
+          "id": "d",
+          "text": "Treating neighbors kindly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Jibril repeatedly urged kind treatment of neighbors. People living near us deserve consideration.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "Sahih al-Bukhari 6014",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_021",
+      "conceptId": "kids_hadith_definition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can a hadith describe what the Prophet ﷺ did, as well as what he said?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, it can report his actions too"
+        },
+        {
+          "id": "b",
+          "text": "No, only chapter titles count"
+        },
+        {
+          "id": "c",
+          "text": "No, hadith only lists place names"
+        },
+        {
+          "id": "d",
+          "text": "No, it can only describe the weather"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Hadith include reports of his actions as well as his words and approvals.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_022",
+      "conceptId": "kids_hadith_bukhari_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is Sahih al-Bukhari a surah of the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, it is the opening surah"
+        },
+        {
+          "id": "b",
+          "text": "No, it is a collection of hadith"
+        },
+        {
+          "id": "c",
+          "text": "Yes, it is the last surah"
+        },
+        {
+          "id": "d",
+          "text": "Yes, it is another name for Al-Kawthar"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Sahih al-Bukhari collects hadith. A surah is a chapter of the Quran.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih al-Bukhari",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_023",
+      "conceptId": "kids_hadith_muslim_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What can we learn from a hadith collection such as Sahih Muslim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The names of every future quiz winner"
+        },
+        {
+          "id": "b",
+          "text": "A new set of Quran chapters"
+        },
+        {
+          "id": "c",
+          "text": "Reports about the Prophet's ﷺ teaching and example"
+        },
+        {
+          "id": "d",
+          "text": "Made-up stories presented as revelation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sahih Muslim preserves hadith reports. A teacher can help us understand their meanings.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih Muslim",
+          "url": "https://sunnah.com/muslim/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_024",
+      "conceptId": "kids_hadith_careful_attribution",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a nice-sounding sentence become a hadith just because we like it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, any nice sentence is automatically a hadith"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if many children repeat it"
+        },
+        {
+          "id": "c",
+          "text": "Yes, if it has a colorful picture"
+        },
+        {
+          "id": "d",
+          "text": "No, we must check before calling it a hadith"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "We must not attach the Prophet's ﷺ name to invented words. Check with a knowledgeable teacher when unsure.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "Sahih al-Bukhari 110",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_025",
+      "conceptId": "kids_hadith_pass_on_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why did the Prophet ﷺ tell listeners to pass on his teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "So people who were absent could learn"
+        },
+        {
+          "id": "b",
+          "text": "So everyone could invent different words"
+        },
+        {
+          "id": "c",
+          "text": "So no one would remember the message"
+        },
+        {
+          "id": "d",
+          "text": "So learning would belong only to one group"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Passing on teaching helps others learn. We should carry the message accurately and explain it with care.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "67",
+          "label": "Sahih al-Bukhari 67",
+          "url": "https://sunnah.com/bukhari:67"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_026",
+      "conceptId": "kids_hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does an intention tell us about an action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How heavy their shoes are"
+        },
+        {
+          "id": "b",
+          "text": "Why someone means to do it"
+        },
+        {
+          "id": "c",
+          "text": "Which color they like best"
+        },
+        {
+          "id": "d",
+          "text": "How many people are watching"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "An intention concerns our purpose. We try to do good sincerely, to please Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_027",
+      "conceptId": "kids_hadith_wish_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which thought fits wishing for others what we wish for ourselves?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only my learning should matter"
+        },
+        {
+          "id": "b",
+          "text": "My friend must fail for me to be happy"
+        },
+        {
+          "id": "c",
+          "text": "I want my classmate to learn well too"
+        },
+        {
+          "id": "d",
+          "text": "No one else should receive kindness"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "We can want good learning and kindness for others too. This follows the hadith's lesson of goodwill.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "13",
+          "label": "Sahih al-Bukhari 13",
+          "url": "https://sunnah.com/bukhari:13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_028",
+      "conceptId": "kids_hadith_good_speech",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the lesson about good speech mean we should hide a problem from a trusted adult?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, silence always means hiding every problem"
+        },
+        {
+          "id": "b",
+          "text": "Yes, no child should ever ask for help"
+        },
+        {
+          "id": "c",
+          "text": "Yes, hurtful secrets must never be reported"
+        },
+        {
+          "id": "d",
+          "text": "No, asking for help can be good speech"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Good speech includes asking for help. Avoiding harmful talk does not mean staying silent when you need support.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_029",
+      "conceptId": "kids_hadith_control_anger",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does controlling anger mean we can never feel upset?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, it means handling our behavior with care"
+        },
+        {
+          "id": "b",
+          "text": "Yes, any upset feeling makes someone worthless"
+        },
+        {
+          "id": "c",
+          "text": "Yes, strong people never have feelings"
+        },
+        {
+          "id": "d",
+          "text": "No, it means we may hurt others when upset"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Feeling upset can happen. The hadith teaches us to control what we do when angry.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_030",
+      "conceptId": "kids_hadith_gentleness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which request shows gentleness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help me now, you fool"
+        },
+        {
+          "id": "b",
+          "text": "Please help me when you can"
+        },
+        {
+          "id": "c",
+          "text": "Move, or I will hurt you"
+        },
+        {
+          "id": "d",
+          "text": "You are useless unless you help me"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Gentleness can shape the way we ask for help. Respectful words are better than threats and insults.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_031",
+      "conceptId": "kids_hadith_good_deeds_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can someone without spending money still do an act of charity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, kindness never counts"
+        },
+        {
+          "id": "b",
+          "text": "No, only expensive gifts count"
+        },
+        {
+          "id": "c",
+          "text": "Yes, by doing a good deed"
+        },
+        {
+          "id": "d",
+          "text": "Yes, by taking someone else's money"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith teaches that good deeds are charity. Helping others is one way to do good.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6021",
+          "label": "Sahih al-Bukhari 6021",
+          "url": "https://sunnah.com/bukhari:6021"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_032",
+      "conceptId": "kids_hadith_clear_path",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is removing harm from a walkway a good deed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It gives us permission to push people"
+        },
+        {
+          "id": "b",
+          "text": "It makes tripping others acceptable"
+        },
+        {
+          "id": "c",
+          "text": "It means children must handle sharp objects alone"
+        },
+        {
+          "id": "d",
+          "text": "It helps protect people who use it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Clearing harm helps others use the path safely. Dangerous objects need an adult's help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1009",
+          "label": "Sahih Muslim 1009",
+          "url": "https://sunnah.com/muslim:1009"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_033",
+      "conceptId": "kids_hadith_regular_small_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which plan best matches the hadith about regular deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choose a manageable good deed and keep doing it"
+        },
+        {
+          "id": "b",
+          "text": "Only plan huge deeds we never begin"
+        },
+        {
+          "id": "c",
+          "text": "Do good only when there is an audience"
+        },
+        {
+          "id": "d",
+          "text": "Stop every good habit after one try"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Small, regular deeds build a steady habit. We do our best without taking on more than we can manage.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "Sahih al-Bukhari 6464",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_034",
+      "conceptId": "kids_hadith_encourage_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does making learning easier mean making up religious teachings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, change every teaching to suit ourselves"
+        },
+        {
+          "id": "b",
+          "text": "No, explain correctly in a helpful way"
+        },
+        {
+          "id": "c",
+          "text": "Yes, replace learning with invented rules"
+        },
+        {
+          "id": "d",
+          "text": "No, it means never explaining anything"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ease means helping people learn correctly. Encouragement does not mean inventing or changing the religion.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "Sahih al-Bukhari 69",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_035",
+      "conceptId": "kids_hadith_kindness_mother",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does giving special care to our mother mean we may be unkind to our father?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only one parent deserves kindness"
+        },
+        {
+          "id": "b",
+          "text": "Yes, fathers should always be ignored"
+        },
+        {
+          "id": "c",
+          "text": "No, the hadith mentions the father too"
+        },
+        {
+          "id": "d",
+          "text": "Yes, kindness runs out after one person"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The mother's special right does not remove the father's right. The hadith mentions both parents.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5971",
+          "label": "Sahih al-Bukhari 5971",
+          "url": "https://sunnah.com/bukhari:5971"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_036",
+      "conceptId": "kids_hadith_kindness_animals",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What lesson comes from the man giving water to a thirsty dog?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only people can ever need care"
+        },
+        {
+          "id": "b",
+          "text": "Animals should be teased when weak"
+        },
+        {
+          "id": "c",
+          "text": "Kindness matters only if the animal belongs to us"
+        },
+        {
+          "id": "d",
+          "text": "Helping an animal can be a rewarded good deed"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report teaches that caring for animals can bring reward. We help safely and avoid cruelty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "Sahih al-Bukhari 2363",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_037",
+      "conceptId": "kids_hadith_truthfulness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which habit follows the hadith's teaching on truthfulness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep choosing honest words"
+        },
+        {
+          "id": "b",
+          "text": "Lie whenever a story sounds more exciting"
+        },
+        {
+          "id": "c",
+          "text": "Blame others to avoid every mistake"
+        },
+        {
+          "id": "d",
+          "text": "Call every guess a fact"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Truthfulness grows through honest choices. The hadith encourages us to keep practicing it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_038",
+      "conceptId": "kids_hadith_keep_promises",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What should a good promise mean to us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A trick for getting our own way"
+        },
+        {
+          "id": "b",
+          "text": "A commitment we intend to keep"
+        },
+        {
+          "id": "c",
+          "text": "Words that never need any effort"
+        },
+        {
+          "id": "d",
+          "text": "Permission to deceive a friend"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A good promise deserves sincere effort. We should not make promises with a plan to break them.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "Sahih al-Bukhari 33",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_039",
+      "conceptId": "kids_hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does wearing costly clothes prove someone has a better heart?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, expensive clothes prove perfect character"
+        },
+        {
+          "id": "b",
+          "text": "Yes, money always shows who is kindest"
+        },
+        {
+          "id": "c",
+          "text": "No, appearance does not prove a good heart"
+        },
+        {
+          "id": "d",
+          "text": "No, only height proves a good heart"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith directs us to hearts and deeds. We should not judge someone's goodness by their clothes or money.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_040",
+      "conceptId": "kids_hadith_kindness_neighbors",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should we care about people living near us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only wealthy neighbors deserve respect"
+        },
+        {
+          "id": "b",
+          "text": "Living nearby makes their feelings unimportant"
+        },
+        {
+          "id": "c",
+          "text": "Kindness should stop at our front door"
+        },
+        {
+          "id": "d",
+          "text": "The hadith gives neighbors a right to kind treatment"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith emphasizes neighbors' rights. Care for them is part of our daily conduct.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "Sahih al-Bukhari 6014",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_041",
+      "conceptId": "kids_hadith_definition",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher shares a checked report of something the Prophet ﷺ did. What kind of report is it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A hadith"
+        },
+        {
+          "id": "b",
+          "text": "A Quran surah"
+        },
+        {
+          "id": "c",
+          "text": "A prayer timetable"
+        },
+        {
+          "id": "d",
+          "text": "A made-up adventure"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Reports about the Prophet's ﷺ actions are among the kinds of hadith we learn.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_042",
+      "conceptId": "kids_hadith_bukhari_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You see a book titled Sahih al-Bukhari. Which shelf label fits it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quran surahs"
+        },
+        {
+          "id": "b",
+          "text": "Hadith collections"
+        },
+        {
+          "id": "c",
+          "text": "Maps and atlases"
+        },
+        {
+          "id": "d",
+          "text": "Invented adventures"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Sahih al-Bukhari belongs with hadith collections.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih al-Bukhari",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_043",
+      "conceptId": "kids_hadith_muslim_collection",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A teacher gives you a hadith reference from Sahih Muslim. Which collection should you look in?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A weather diary"
+        },
+        {
+          "id": "b",
+          "text": "A spelling dictionary"
+        },
+        {
+          "id": "c",
+          "text": "Sahih Muslim"
+        },
+        {
+          "id": "d",
+          "text": "A book of maps"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The reference names Sahih Muslim, so that is the hadith collection to look in.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih Muslim",
+          "url": "https://sunnah.com/muslim/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_044",
+      "conceptId": "kids_hadith_careful_attribution",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A picture says a sentence is a hadith, but gives no source. What should you do before sharing it as his words?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invent a reference number"
+        },
+        {
+          "id": "b",
+          "text": "Assume the pretty design proves it"
+        },
+        {
+          "id": "c",
+          "text": "Repeat it as certain without checking"
+        },
+        {
+          "id": "d",
+          "text": "Ask a knowledgeable teacher to check it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A picture alone does not prove a saying is a hadith. Ask someone knowledgeable before attributing it to the Prophet ﷺ.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "110",
+          "label": "Sahih al-Bukhari 110",
+          "url": "https://sunnah.com/bukhari:110"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_045",
+      "conceptId": "kids_hadith_pass_on_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want to share a hadith lesson your teacher explained. What is a good way to do it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Check the meaning and pass it on accurately"
+        },
+        {
+          "id": "b",
+          "text": "Add made-up words for excitement"
+        },
+        {
+          "id": "c",
+          "text": "Change it so your friend loses a game"
+        },
+        {
+          "id": "d",
+          "text": "Pretend your own opinion is the Prophet's ﷺ wording"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Pass on what you have learned accurately. Ask your teacher when you are unsure of its meaning or wording.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "67",
+          "label": "Sahih al-Bukhari 67",
+          "url": "https://sunnah.com/bukhari:67"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_046",
+      "conceptId": "kids_hadith_intentions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before helping tidy the classroom, which intention is good?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To make others feel worthless"
+        },
+        {
+          "id": "b",
+          "text": "To please Allah by doing something helpful"
+        },
+        {
+          "id": "c",
+          "text": "To show everyone that only I matter"
+        },
+        {
+          "id": "d",
+          "text": "To earn a chance to insult someone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "We try to do good sincerely. A good intention can be to please Allah through helping others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_047",
+      "conceptId": "kids_hadith_wish_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You hope to do well in a lesson. What wish for your Muslim friend fits the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I hope my friend never understands"
+        },
+        {
+          "id": "b",
+          "text": "I hope nobody helps my friend"
+        },
+        {
+          "id": "c",
+          "text": "I hope my friend learns well too"
+        },
+        {
+          "id": "d",
+          "text": "I hope my friend loses every chance to learn"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Wishing good learning for a friend follows the lesson of wanting good for others as for ourselves.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "13",
+          "label": "Sahih al-Bukhari 13",
+          "url": "https://sunnah.com/bukhari:13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_048",
+      "conceptId": "kids_hadith_good_speech",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Some children start insulting a classmate. Which response follows the hadith about good speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Add a cruel joke"
+        },
+        {
+          "id": "b",
+          "text": "Spread the insults to another group"
+        },
+        {
+          "id": "c",
+          "text": "Shout an even worse insult"
+        },
+        {
+          "id": "d",
+          "text": "Avoid the insults and speak kindly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Choose helpful words and avoid hurtful talk. If someone is being bullied, ask a trusted adult for help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6018",
+          "label": "Sahih al-Bukhari 6018",
+          "url": "https://sunnah.com/bukhari:6018"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_049",
+      "conceptId": "kids_hadith_control_anger",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You feel angry after losing a game. Which action shows the strength praised in the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pause and avoid hurting anyone"
+        },
+        {
+          "id": "b",
+          "text": "Hit someone to prove you are strong"
+        },
+        {
+          "id": "c",
+          "text": "Throw a game piece at your friend"
+        },
+        {
+          "id": "d",
+          "text": "Shout insults until everyone leaves"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Self-control means handling anger without hurting people. Pause and ask for help calming down if you need it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_050",
+      "conceptId": "kids_hadith_gentleness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your little brother is learning to button his shirt. Which response shows gentleness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Call him useless"
+        },
+        {
+          "id": "b",
+          "text": "Offer calm help without mocking him"
+        },
+        {
+          "id": "c",
+          "text": "Pull at his clothes angrily"
+        },
+        {
+          "id": "d",
+          "text": "Laugh until he feels ashamed"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Gentle help follows the hadith's lesson. We can be patient with someone learning a new skill.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_051",
+      "conceptId": "kids_hadith_good_deeds_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have no money to give today. Which action still fits the hadith about good deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take a coin from someone else's bag"
+        },
+        {
+          "id": "b",
+          "text": "Mock someone asking for help"
+        },
+        {
+          "id": "c",
+          "text": "Help a classmate find a lost notebook"
+        },
+        {
+          "id": "d",
+          "text": "Refuse kindness because you have no coins"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A helpful good deed can be charity. You do not need money for every kind of giving.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6021",
+          "label": "Sahih al-Bukhari 6021",
+          "url": "https://sunnah.com/bukhari:6021"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_052",
+      "conceptId": "kids_hadith_clear_path",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You notice broken glass on a walkway. How can you help keep the path safe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pick up the sharp pieces with bare hands"
+        },
+        {
+          "id": "b",
+          "text": "Scatter it farther across the path"
+        },
+        {
+          "id": "c",
+          "text": "Push someone toward it"
+        },
+        {
+          "id": "d",
+          "text": "Tell an adult who can remove it safely"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Removing harmful things is a good deed. With broken glass, get an adult's help instead of handling it yourself.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1009",
+          "label": "Sahih Muslim 1009",
+          "url": "https://sunnah.com/muslim:1009"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_053",
+      "conceptId": "kids_hadith_regular_small_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want a habit that follows the hadith about regular deeds. Which plan fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do one manageable helpful task each day"
+        },
+        {
+          "id": "b",
+          "text": "Boast about a huge task you never start"
+        },
+        {
+          "id": "c",
+          "text": "Help once only to win applause"
+        },
+        {
+          "id": "d",
+          "text": "Give up every good deed because it seems small"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Choose a small good deed you can maintain. The hadith values steady effort, even when little.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6464",
+          "label": "Sahih al-Bukhari 6464",
+          "url": "https://sunnah.com/bukhari:6464"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_054",
+      "conceptId": "kids_hadith_encourage_learning",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A new learner finds a hadith lesson difficult. How can you encourage them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laugh because they are new"
+        },
+        {
+          "id": "b",
+          "text": "Explain a little at a time and offer help"
+        },
+        {
+          "id": "c",
+          "text": "Make the explanation harder on purpose"
+        },
+        {
+          "id": "d",
+          "text": "Say they should never learn again"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A patient, clear explanation helps someone learn. This applies the teaching of ease and encouragement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "69",
+          "label": "Sahih al-Bukhari 69",
+          "url": "https://sunnah.com/bukhari:69"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_055",
+      "conceptId": "kids_hadith_kindness_mother",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your mother asks you to put away your own toys. Which response practices the hadith's lesson of kind companionship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insult her for asking"
+        },
+        {
+          "id": "b",
+          "text": "Make a bigger mess to upset her"
+        },
+        {
+          "id": "c",
+          "text": "Reply respectfully and help"
+        },
+        {
+          "id": "d",
+          "text": "Say kindness is only for friends"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Respectful words and suitable help are ways to show your mother the kindness emphasized in the hadith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5971",
+          "label": "Sahih al-Bukhari 5971",
+          "url": "https://sunnah.com/bukhari:5971"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_056",
+      "conceptId": "kids_hadith_kindness_animals",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With an adult's help, you can put clean water out for thirsty birds. Which choice follows the hadith's lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Throw stones at the birds"
+        },
+        {
+          "id": "b",
+          "text": "Hide water just to watch them struggle"
+        },
+        {
+          "id": "c",
+          "text": "Chase them for being thirsty"
+        },
+        {
+          "id": "d",
+          "text": "Provide the water safely"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Safely providing water is one way to care for animals, following the lesson of the thirsty-dog report.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2363",
+          "label": "Sahih al-Bukhari 2363",
+          "url": "https://sunnah.com/bukhari:2363"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_057",
+      "conceptId": "kids_hadith_truthfulness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You forgot your homework. Which answer follows the hadith about truthfulness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Admit it honestly and ask how to catch up"
+        },
+        {
+          "id": "b",
+          "text": "Invent an emergency that never happened"
+        },
+        {
+          "id": "c",
+          "text": "Blame a classmate who did nothing"
+        },
+        {
+          "id": "d",
+          "text": "Say you handed it in when you did not"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An honest answer follows the hadith's lesson. Tell the truth and work on putting things right.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6094",
+          "label": "Sahih al-Bukhari 6094",
+          "url": "https://sunnah.com/bukhari:6094"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_058",
+      "conceptId": "kids_hadith_keep_promises",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You promised to return a borrowed book tomorrow. What should you plan to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hide it and pretend to forget"
+        },
+        {
+          "id": "b",
+          "text": "Return it as promised"
+        },
+        {
+          "id": "c",
+          "text": "Keep it because promises do not matter"
+        },
+        {
+          "id": "d",
+          "text": "Give it away without the owner's permission"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Take the promise seriously and plan to return the book. Keeping good promises helps people trust us.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "33",
+          "label": "Sahih al-Bukhari 33",
+          "url": "https://sunnah.com/bukhari:33"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_059",
+      "conceptId": "kids_hadith_hearts_deeds",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A child has simple clothes and treats others kindly. Which response fits the hadith about hearts and deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock them for having less money"
+        },
+        {
+          "id": "b",
+          "text": "Say costly clothes are proof of kindness"
+        },
+        {
+          "id": "c",
+          "text": "Respect them without judging their clothes"
+        },
+        {
+          "id": "d",
+          "text": "Refuse friendship because their shoes are plain"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith teaches that appearance and wealth do not decide goodness. Treat others with respect.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_hadith_knowledge_060",
+      "conceptId": "kids_hadith_kindness_neighbors",
+      "categoryId": "hadith_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are playing near a neighbor's door. Which action shows the kind treatment taught in hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Block their doorway for fun"
+        },
+        {
+          "id": "b",
+          "text": "Throw litter into their yard"
+        },
+        {
+          "id": "c",
+          "text": "Shout insults when they walk past"
+        },
+        {
+          "id": "d",
+          "text": "Keep their entrance clear and avoid disturbing them"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Consider your neighbor's needs while you play. Keeping their entrance clear is one way to show care.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6014",
+          "label": "Sahih al-Bukhari 6014",
+          "url": "https://sunnah.com/bukhari:6014"
+        }
+      ]
+    }
+  ]
+}

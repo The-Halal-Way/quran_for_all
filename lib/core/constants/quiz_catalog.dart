@@ -20,6 +20,27 @@ class QuizAssessmentDefinition {
 class QuizCatalog {
   const QuizCatalog._();
 
+  static const kidsBeginner = QuizAssessmentDefinition(
+    audience: QuizAudience.kids,
+    level: QuizLevel.beginner,
+    configPath: 'assets/json/quiz/kids/beginner/quiz_config.json',
+    databaseName: 'quiz_kids_beginner_v1.db',
+  );
+
+  static const kidsIntermediate = QuizAssessmentDefinition(
+    audience: QuizAudience.kids,
+    level: QuizLevel.intermediate,
+    configPath: 'assets/json/quiz/kids/intermediate/quiz_config.json',
+    databaseName: 'quiz_kids_intermediate_v1.db',
+  );
+
+  static const kidsPro = QuizAssessmentDefinition(
+    audience: QuizAudience.kids,
+    level: QuizLevel.pro,
+    configPath: 'assets/json/quiz/kids/pro/quiz_config.json',
+    databaseName: 'quiz_kids_pro_v1.db',
+  );
+
   static const generalBeginner = QuizAssessmentDefinition(
     audience: QuizAudience.general,
     level: QuizLevel.beginner,
@@ -52,6 +73,9 @@ class QuizCatalog {
   );
 
   static const assessments = [
+    kidsBeginner,
+    kidsIntermediate,
+    kidsPro,
     generalBeginner,
     generalIntermediate,
     generalPro,

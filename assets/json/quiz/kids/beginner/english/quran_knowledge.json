@@ -1,0 +1,2305 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "quran_knowledge",
+  "title": "Quran Knowledge",
+  "description": "Little Muslim → Beginner. Short questions about Quran revelation, familiar chapters, verses, reading habits, learning and everyday lessons. Written with children around ages 6–9 in mind; an adult may read questions aloud. All questions are Beginner level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Uses introductory Quran knowledge, short wording and straightforward examples for the Kids audience. Age and level are editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages, hadith texts and Quran reference pages checked during preparation. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Everyday scenarios illustrate the cited principles. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_quran_knowledge_001",
+      "conceptId": "kids_quran_revealed_to_muhammad",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To which prophet was the Quran revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prophet Muhammad ﷺ"
+        },
+        {
+          "id": "b",
+          "text": "Prophet Musa"
+        },
+        {
+          "id": "c",
+          "text": "Prophet Nuh"
+        },
+        {
+          "id": "d",
+          "text": "Prophet Ibrahim"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah revealed the Quran to Prophet Muhammad ﷺ.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "Quran 47:2",
+          "url": "https://quran.com/47/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_002",
+      "conceptId": "kids_quran_arabic_language",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which language was the Quran revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "English"
+        },
+        {
+          "id": "b",
+          "text": "Arabic"
+        },
+        {
+          "id": "c",
+          "text": "Bangla"
+        },
+        {
+          "id": "d",
+          "text": "Turkish"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran was revealed in Arabic. Translations help us understand its meanings.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_003",
+      "conceptId": "kids_quran_jibril",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which angel brought the Quran to Prophet Muhammad ﷺ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mikail"
+        },
+        {
+          "id": "b",
+          "text": "Israfil"
+        },
+        {
+          "id": "c",
+          "text": "Jibril"
+        },
+        {
+          "id": "d",
+          "text": "The angel of death"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Jibril, also called Gabriel, brought the revelation by Allah's command.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 26,
+          "ayahs": "192-194",
+          "label": "Quran 26:192-194",
+          "url": "https://quran.com/26/192-194"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_004",
+      "conceptId": "kids_quran_surah_chapter",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is a chapter of the Quran called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A salah"
+        },
+        {
+          "id": "b",
+          "text": "A dua"
+        },
+        {
+          "id": "c",
+          "text": "A fast"
+        },
+        {
+          "id": "d",
+          "text": "A surah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah means a chapter of the Quran.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_005",
+      "conceptId": "kids_quran_ayah_verse",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is a verse of the Quran called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An ayah"
+        },
+        {
+          "id": "b",
+          "text": "A surah"
+        },
+        {
+          "id": "c",
+          "text": "A juz"
+        },
+        {
+          "id": "d",
+          "text": "A rakah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An ayah is a verse within a surah.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_006",
+      "conceptId": "kids_quran_fatihah_first",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which surah comes first in the Quran's order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Falaq"
+        },
+        {
+          "id": "b",
+          "text": "Al-Fatihah"
+        },
+        {
+          "id": "c",
+          "text": "Al-Kawthar"
+        },
+        {
+          "id": "d",
+          "text": "An-Nas"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Fatihah is the opening chapter in the Quran's order.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah Al-Fatihah, chapter 1",
+          "url": "https://quran.com/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_007",
+      "conceptId": "kids_quran_nas_last",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which surah comes last in the Quran's order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fatihah"
+        },
+        {
+          "id": "b",
+          "text": "Al-Asr"
+        },
+        {
+          "id": "c",
+          "text": "An-Nas"
+        },
+        {
+          "id": "d",
+          "text": "Al-Falaq"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An-Nas is chapter 114, the last chapter in the Quran's order.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah An-Nas, chapter 114",
+          "url": "https://quran.com/114"
+        },
+        {
+          "type": "web",
+          "label": "Quranic Arabic Corpus — Quran structure and verse numbers",
+          "url": "https://corpus.quran.com/documentation/versemarks.jsp"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_008",
+      "conceptId": "kids_quran_kawthar_three_ayahs",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How many ayahs are in Surah Al-Kawthar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Five"
+        },
+        {
+          "id": "b",
+          "text": "Six"
+        },
+        {
+          "id": "c",
+          "text": "Seven"
+        },
+        {
+          "id": "d",
+          "text": "Three"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah Al-Kawthar has three ayahs. It is a short surah.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah Al-Kawthar, three verses",
+          "url": "https://quran.com/108"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_009",
+      "conceptId": "kids_quran_falaq_refuge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Whom do we ask for protection in Surah Al-Falaq?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah"
+        },
+        {
+          "id": "b",
+          "text": "The sun"
+        },
+        {
+          "id": "c",
+          "text": "The moon"
+        },
+        {
+          "id": "d",
+          "text": "The stars"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Falaq teaches us to seek protection with Allah, the Lord of daybreak.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1",
+          "label": "Quran 113:1",
+          "url": "https://quran.com/113/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_010",
+      "conceptId": "kids_quran_asr_truth_patience",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair of good qualities is taught in Surah Al-Asr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boasting and rushing"
+        },
+        {
+          "id": "b",
+          "text": "Truthfulness and patience"
+        },
+        {
+          "id": "c",
+          "text": "Lying and teasing"
+        },
+        {
+          "id": "d",
+          "text": "Anger and greed"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Asr teaches faith, good deeds, and encouraging one another in truth and patience.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "Quran 103:1-3",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_011",
+      "conceptId": "kids_quran_listen_attentively",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How should we listen during our teacher's Quran recitation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Talk over the teacher"
+        },
+        {
+          "id": "b",
+          "text": "Start a noisy game"
+        },
+        {
+          "id": "c",
+          "text": "Pay close attention"
+        },
+        {
+          "id": "d",
+          "text": "Shout the next word"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran teaches attentive listening. In class, we listen quietly and carefully.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "Quran 7:204",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_012",
+      "conceptId": "kids_quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does the Quran teach us to recite?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As fast as possible"
+        },
+        {
+          "id": "b",
+          "text": "Skipping hard words"
+        },
+        {
+          "id": "c",
+          "text": "Mixing up the words"
+        },
+        {
+          "id": "d",
+          "text": "Calmly and clearly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches measured recitation. We give the words care instead of rushing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "Quran 73:4",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_013",
+      "conceptId": "kids_quran_seek_refuge_before",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Before reciting Quran, whose protection do we seek from Shaytan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah's protection"
+        },
+        {
+          "id": "b",
+          "text": "A friend's protection"
+        },
+        {
+          "id": "c",
+          "text": "A teacher's protection"
+        },
+        {
+          "id": "d",
+          "text": "Our own protection"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Before reciting, we ask Allah to protect us from Shaytan.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "Quran 16:98",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_014",
+      "conceptId": "kids_quran_reflect_meanings",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Along with reading the Quran, what should we try to understand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the cover's color"
+        },
+        {
+          "id": "b",
+          "text": "Its meanings"
+        },
+        {
+          "id": "c",
+          "text": "Only the page size"
+        },
+        {
+          "id": "d",
+          "text": "Only the book's weight"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah gave the Quran for us to think about its verses and learn from them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_015",
+      "conceptId": "kids_quran_review_memorization",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What helps us remember the Quran we have learned?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Never revisiting it"
+        },
+        {
+          "id": "b",
+          "text": "Only counting its pages"
+        },
+        {
+          "id": "c",
+          "text": "Reviewing it regularly"
+        },
+        {
+          "id": "d",
+          "text": "Avoiding all practice"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ encouraged keeping up with the Quran. Review helps us remember.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5033",
+          "label": "Sahih al-Bukhari 5033",
+          "url": "https://sunnah.com/bukhari:5033"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_016",
+      "conceptId": "kids_quran_learn_and_teach",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two Quran activities did the Prophet ﷺ praise together?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Counting and measuring"
+        },
+        {
+          "id": "b",
+          "text": "Racing and boasting"
+        },
+        {
+          "id": "c",
+          "text": "Decorating and stacking"
+        },
+        {
+          "id": "d",
+          "text": "Learning and teaching"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ praised people who learn the Quran and teach it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "Sahih al-Bukhari 5027",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_017",
+      "conceptId": "kids_quran_effort_encouraged",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "A person finds Quran recitation difficult but keeps trying. What does the hadith promise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two rewards"
+        },
+        {
+          "id": "b",
+          "text": "No reward at all"
+        },
+        {
+          "id": "c",
+          "text": "Reward only for speed"
+        },
+        {
+          "id": "d",
+          "text": "Reward only for a beautiful voice"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ promised two rewards for someone who recites with difficulty. Keep learning with care.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "798a",
+          "label": "Sahih Muslim 798a",
+          "url": "https://sunnah.com/muslim:798a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_018",
+      "conceptId": "kids_quran_ramadan_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which month was the Quran revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muharram"
+        },
+        {
+          "id": "b",
+          "text": "Ramadan"
+        },
+        {
+          "id": "c",
+          "text": "Shawwal"
+        },
+        {
+          "id": "d",
+          "text": "Rajab"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran names Ramadan as the month of its revelation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_019",
+      "conceptId": "kids_quran_yusuf_story",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which prophet's story is told in Surah Yusuf?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prophet Musa"
+        },
+        {
+          "id": "b",
+          "text": "Prophet Nuh"
+        },
+        {
+          "id": "c",
+          "text": "Prophet Yusuf"
+        },
+        {
+          "id": "d",
+          "text": "Prophet Yunus"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Surah Yusuf tells the story of Prophet Yusuf, also called Joseph.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "Quran 12:4",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_020",
+      "conceptId": "kids_quran_live_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which behavior agrees with the Quran's teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taking someone else's turn"
+        },
+        {
+          "id": "b",
+          "text": "Laughing at someone in need"
+        },
+        {
+          "id": "c",
+          "text": "Hurting others for fun"
+        },
+        {
+          "id": "d",
+          "text": "Being fair and kind"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran calls us to fairness and kindness. Its lessons guide our actions.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "90",
+          "label": "Quran 16:90",
+          "url": "https://quran.com/16/90"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_021",
+      "conceptId": "kids_quran_revealed_to_muhammad",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does it mean that the Quran was revealed to Prophet Muhammad ﷺ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He received it from Allah"
+        },
+        {
+          "id": "b",
+          "text": "He wrote it from his own ideas"
+        },
+        {
+          "id": "c",
+          "text": "His friends invented its words"
+        },
+        {
+          "id": "d",
+          "text": "He copied it from a storybook"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran is revelation from Allah, not a book the Prophet ﷺ invented.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "Quran 47:2",
+          "url": "https://quran.com/47/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_022",
+      "conceptId": "kids_quran_arabic_language",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is a Bangla or English translation of the Quran meant to help us do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace Arabic with a new revelation"
+        },
+        {
+          "id": "b",
+          "text": "Understand the Arabic Quran's meanings"
+        },
+        {
+          "id": "c",
+          "text": "Change what the Quran teaches"
+        },
+        {
+          "id": "d",
+          "text": "Make up extra Quran verses"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A translation explains meanings in another language. The Quran's revealed language is Arabic.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_023",
+      "conceptId": "kids_quran_jibril",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Jibril brought the Quran to the Prophet ﷺ. Where did this message come from?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jibril's own ideas"
+        },
+        {
+          "id": "b",
+          "text": "The Prophet's neighbors"
+        },
+        {
+          "id": "c",
+          "text": "Allah"
+        },
+        {
+          "id": "d",
+          "text": "A group of poets"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Jibril was the messenger bringing Allah's revelation, not its author.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 26,
+          "ayahs": "192-194",
+          "label": "Quran 26:192-194",
+          "url": "https://quran.com/26/192-194"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_024",
+      "conceptId": "kids_quran_surah_chapter",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which word means a Quran chapter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salah"
+        },
+        {
+          "id": "b",
+          "text": "Sawm"
+        },
+        {
+          "id": "c",
+          "text": "Sadaqah"
+        },
+        {
+          "id": "d",
+          "text": "Surah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran's chapters are called surahs.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_025",
+      "conceptId": "kids_quran_ayah_verse",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "A surah contains verses. What are these verses called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ayahs"
+        },
+        {
+          "id": "b",
+          "text": "Rakahs"
+        },
+        {
+          "id": "c",
+          "text": "Fast days"
+        },
+        {
+          "id": "d",
+          "text": "Prayer times"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Ayahs are the verses that make up a surah.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_026",
+      "conceptId": "kids_quran_fatihah_first",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Al-Fatihah is called the opening chapter. What does this tell us about its place in the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It comes at the end"
+        },
+        {
+          "id": "b",
+          "text": "It comes at the beginning"
+        },
+        {
+          "id": "c",
+          "text": "It comes after An-Nas"
+        },
+        {
+          "id": "d",
+          "text": "It is outside the Quran"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Fatihah opens the Quran. This describes the book's order, not the order of revelation.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah Al-Fatihah, chapter 1",
+          "url": "https://quran.com/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_027",
+      "conceptId": "kids_quran_nas_last",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does calling An-Nas the last surah tell us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The month it was revealed"
+        },
+        {
+          "id": "b",
+          "text": "The first word ever revealed"
+        },
+        {
+          "id": "c",
+          "text": "Its place in the Quran's order"
+        },
+        {
+          "id": "d",
+          "text": "The only surah we may learn"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An-Nas comes last in the Quran's order. This does not mean it was revealed last.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah An-Nas, chapter 114",
+          "url": "https://quran.com/114"
+        },
+        {
+          "type": "web",
+          "label": "Quranic Arabic Corpus — Quran structure and verse numbers",
+          "url": "https://corpus.quran.com/documentation/versemarks.jsp"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_028",
+      "conceptId": "kids_quran_kawthar_three_ayahs",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which description of Surah Al-Kawthar is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A surah with seven ayahs"
+        },
+        {
+          "id": "b",
+          "text": "A book outside the Quran"
+        },
+        {
+          "id": "c",
+          "text": "A name for the whole Quran"
+        },
+        {
+          "id": "d",
+          "text": "A short surah with three ayahs"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Kawthar is a Quran chapter with three ayahs, so it is short.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah Al-Kawthar, three verses",
+          "url": "https://quran.com/108"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_029",
+      "conceptId": "kids_quran_falaq_refuge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does seeking refuge with Allah mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking Allah for protection"
+        },
+        {
+          "id": "b",
+          "text": "Asking Allah for a new name"
+        },
+        {
+          "id": "c",
+          "text": "Counting how many pages we read"
+        },
+        {
+          "id": "d",
+          "text": "Choosing a louder reciting voice"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Seeking refuge means turning to Allah for protection.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1",
+          "label": "Quran 113:1",
+          "url": "https://quran.com/113/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_030",
+      "conceptId": "kids_quran_asr_truth_patience",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which reminder follows the message of Surah Al-Asr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Win every argument by shouting"
+        },
+        {
+          "id": "b",
+          "text": "Help each other be truthful and patient"
+        },
+        {
+          "id": "c",
+          "text": "Pretend good deeds do not matter"
+        },
+        {
+          "id": "d",
+          "text": "Say only fast learners can do good"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Asr teaches us to encourage one another in truth and patience, along with faith and good deeds.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "Quran 103:1-3",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_031",
+      "conceptId": "kids_quran_listen_attentively",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should we avoid talking over Quran recitation during a lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To finish the lesson without listening"
+        },
+        {
+          "id": "b",
+          "text": "To make the teacher speak faster"
+        },
+        {
+          "id": "c",
+          "text": "To listen carefully to what is recited"
+        },
+        {
+          "id": "d",
+          "text": "To stop other children from learning"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Attentive listening shows care for the recitation and helps us follow it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "Quran 7:204",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_032",
+      "conceptId": "kids_quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which reader is following the lesson of measured recitation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One who races without care"
+        },
+        {
+          "id": "b",
+          "text": "One who skips every difficult word"
+        },
+        {
+          "id": "c",
+          "text": "One who changes words to finish early"
+        },
+        {
+          "id": "d",
+          "text": "One who gives each word care"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Measured recitation gives the words proper attention. Finishing fastest is not the goal.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "Quran 73:4",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_033",
+      "conceptId": "kids_quran_seek_refuge_before",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which request seeks refuge before Quran recitation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah, protect me from Shaytan"
+        },
+        {
+          "id": "b",
+          "text": "Allah, help me thank You"
+        },
+        {
+          "id": "c",
+          "text": "Allah, increase my knowledge"
+        },
+        {
+          "id": "d",
+          "text": "Allah, forgive my mistakes"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Seeking refuge before recitation means asking Allah for protection from Shaytan. The other requests are also good duas.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "Quran 16:98",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_034",
+      "conceptId": "kids_quran_reflect_meanings",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does thinking about Quran verses help us do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choose the brightest book cover"
+        },
+        {
+          "id": "b",
+          "text": "Learn what their messages teach"
+        },
+        {
+          "id": "c",
+          "text": "Decide which page weighs the most"
+        },
+        {
+          "id": "d",
+          "text": "Turn every lesson into a race"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "We think about the verses to understand their lessons and take them to heart.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_035",
+      "conceptId": "kids_quran_review_memorization",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should we revisit a surah after memorizing it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Memorizing means we can never forget"
+        },
+        {
+          "id": "b",
+          "text": "Review changes the Quran's words"
+        },
+        {
+          "id": "c",
+          "text": "We can forget without review"
+        },
+        {
+          "id": "d",
+          "text": "Only new lessons are worth reading"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ encouraged regular attention to the Quran. Memorized verses need review too.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5033",
+          "label": "Sahih al-Bukhari 5033",
+          "url": "https://sunnah.com/bukhari:5033"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_036",
+      "conceptId": "kids_quran_learn_and_teach",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which activity matches the hadith about learning and teaching Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refusing to learn anything new"
+        },
+        {
+          "id": "b",
+          "text": "Teaching words we have not checked"
+        },
+        {
+          "id": "c",
+          "text": "Hiding every lesson from others"
+        },
+        {
+          "id": "d",
+          "text": "Learning correctly, then helping someone learn"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Learning and teaching Quran are both valuable. We learn carefully so we can help others correctly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "Sahih al-Bukhari 5027",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_037",
+      "conceptId": "kids_quran_effort_encouraged",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the hadith about difficult recitation teach a new learner?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Difficulty does not make sincere effort worthless"
+        },
+        {
+          "id": "b",
+          "text": "Only people with perfect voices should read"
+        },
+        {
+          "id": "c",
+          "text": "A struggling learner should never try again"
+        },
+        {
+          "id": "d",
+          "text": "Reading quickly matters more than learning correctly"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith encourages the struggling reader with reward. We keep trying and accept help to improve.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "798a",
+          "label": "Sahih Muslim 798a",
+          "url": "https://sunnah.com/muslim:798a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_038",
+      "conceptId": "kids_quran_ramadan_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Ramadan is the month of Quran revelation. When can we learn the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only during Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Throughout the year"
+        },
+        {
+          "id": "c",
+          "text": "Only on the first day of Ramadan"
+        },
+        {
+          "id": "d",
+          "text": "Only after we become adults"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ramadan has a special connection with the Quran. Quran learning can continue throughout the year.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        },
+        {
+          "type": "web",
+          "label": "Quran.com — Quran in a Year reading plan",
+          "url": "https://quran.com/calendar"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_039",
+      "conceptId": "kids_quran_yusuf_story",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In the opening of Yusuf's story, to whom does he tell his dream?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A king"
+        },
+        {
+          "id": "b",
+          "text": "A traveler"
+        },
+        {
+          "id": "c",
+          "text": "His father"
+        },
+        {
+          "id": "d",
+          "text": "A prison guard"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Early in Surah Yusuf, Yusuf tells his father about a dream he had.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "Quran 12:4",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_040",
+      "conceptId": "kids_quran_live_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "After learning that the Quran teaches kindness, what should we do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Save kindness only for quiz time"
+        },
+        {
+          "id": "b",
+          "text": "Read the lesson but choose cruelty"
+        },
+        {
+          "id": "c",
+          "text": "Be kind only when someone gives a prize"
+        },
+        {
+          "id": "d",
+          "text": "Try to treat people kindly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Quran lessons should shape how we behave. Kindness belongs in our daily actions.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "90",
+          "label": "Quran 16:90",
+          "url": "https://quran.com/16/90"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_041",
+      "conceptId": "kids_quran_revealed_to_muhammad",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Sara's worksheet asks who received the Quran. Which name should she choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prophet Muhammad ﷺ"
+        },
+        {
+          "id": "b",
+          "text": "Prophet Adam"
+        },
+        {
+          "id": "c",
+          "text": "Prophet Musa"
+        },
+        {
+          "id": "d",
+          "text": "Prophet Isa"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran was revealed to Prophet Muhammad ﷺ.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "Quran 47:2",
+          "url": "https://quran.com/47/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_042",
+      "conceptId": "kids_quran_arabic_language",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Ayan wants to learn the Quran in its revealed language. Which class should he join?",
+      "options": [
+        {
+          "id": "a",
+          "text": "English spelling"
+        },
+        {
+          "id": "b",
+          "text": "Arabic Quran reading"
+        },
+        {
+          "id": "c",
+          "text": "Bangla handwriting"
+        },
+        {
+          "id": "d",
+          "text": "Turkish conversation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Arabic is the Quran's revealed language. A translation can help Ayan understand meanings alongside learning to read.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_043",
+      "conceptId": "kids_quran_jibril",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A quiz asks, \"Which angel brought Quran revelation?\" Which name should Maryam pick?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mikail"
+        },
+        {
+          "id": "b",
+          "text": "Israfil"
+        },
+        {
+          "id": "c",
+          "text": "Jibril"
+        },
+        {
+          "id": "d",
+          "text": "The angel of death"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Jibril brought Allah's revelation to Prophet Muhammad ﷺ.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 26,
+          "ayahs": "192-194",
+          "label": "Quran 26:192-194",
+          "url": "https://quran.com/26/192-194"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_044",
+      "conceptId": "kids_quran_surah_chapter",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher says, \"Open a Quran chapter.\" What should you look for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A prayer time"
+        },
+        {
+          "id": "b",
+          "text": "A dua list"
+        },
+        {
+          "id": "c",
+          "text": "A fasting date"
+        },
+        {
+          "id": "d",
+          "text": "A surah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A surah is a Quran chapter.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_045",
+      "conceptId": "kids_quran_ayah_verse",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher says, \"Read one Quran verse.\" What should you read?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One ayah"
+        },
+        {
+          "id": "b",
+          "text": "The whole Quran"
+        },
+        {
+          "id": "c",
+          "text": "Every surah"
+        },
+        {
+          "id": "d",
+          "text": "A prayer timetable"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An ayah is one Quran verse.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah index",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_046",
+      "conceptId": "kids_quran_fatihah_first",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You want the opening surah in the Quran's order. Which name should you tap?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An-Nas"
+        },
+        {
+          "id": "b",
+          "text": "Al-Fatihah"
+        },
+        {
+          "id": "c",
+          "text": "Al-Falaq"
+        },
+        {
+          "id": "d",
+          "text": "Al-Asr"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Choose Al-Fatihah to open the first surah in the Quran's order.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah Al-Fatihah, chapter 1",
+          "url": "https://quran.com/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_047",
+      "conceptId": "kids_quran_nas_last",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Hana reaches the last surah in her Quran's chapter list. Which name does she see?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Kawthar"
+        },
+        {
+          "id": "b",
+          "text": "Al-Asr"
+        },
+        {
+          "id": "c",
+          "text": "An-Nas"
+        },
+        {
+          "id": "d",
+          "text": "Al-Fatihah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An-Nas is the last surah in the Quran's order, at chapter 114.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah An-Nas, chapter 114",
+          "url": "https://quran.com/114"
+        },
+        {
+          "type": "web",
+          "label": "Quranic Arabic Corpus — Quran structure and verse numbers",
+          "url": "https://corpus.quran.com/documentation/versemarks.jsp"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_048",
+      "conceptId": "kids_quran_kawthar_three_ayahs",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your class reviews Al-Kawthar, which has three ayahs. After the third ayah, what is complete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only half the surah"
+        },
+        {
+          "id": "b",
+          "text": "Only the first ayah"
+        },
+        {
+          "id": "c",
+          "text": "The whole Quran"
+        },
+        {
+          "id": "d",
+          "text": "The whole surah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Al-Kawthar has three ayahs. Reading all three completes that surah.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Quran.com — Surah Al-Kawthar, three verses",
+          "url": "https://quran.com/108"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_049",
+      "conceptId": "kids_quran_falaq_refuge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Musa is learning Al-Falaq. Which meaning should he connect with its opening?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking Allah for protection"
+        },
+        {
+          "id": "b",
+          "text": "Asking the moon for guidance"
+        },
+        {
+          "id": "c",
+          "text": "Describing how many pages are in the Quran"
+        },
+        {
+          "id": "d",
+          "text": "Naming the days of the week"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Al-Falaq opens by asking Allah, the Lord of daybreak, for protection.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1",
+          "label": "Quran 113:1",
+          "url": "https://quran.com/113/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_050",
+      "conceptId": "kids_quran_asr_truth_patience",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning Al-Asr, Salma wants to encourage her friend. Which reminder fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Let's hide the truth to win"
+        },
+        {
+          "id": "b",
+          "text": "Let's tell the truth and be patient"
+        },
+        {
+          "id": "c",
+          "text": "Let's tease anyone who is slow"
+        },
+        {
+          "id": "d",
+          "text": "Let's give up every good deed"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Encouraging truthfulness and patience puts a lesson from Al-Asr into practice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "Quran 103:1-3",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_051",
+      "conceptId": "kids_quran_listen_attentively",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher starts reciting Quran during class. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep talking to your friend"
+        },
+        {
+          "id": "b",
+          "text": "Play a loud video"
+        },
+        {
+          "id": "c",
+          "text": "Pause your chat and listen"
+        },
+        {
+          "id": "d",
+          "text": "Try to drown out the recitation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "During the recitation, listen with attention. Save your conversation for an appropriate time.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "Quran 7:204",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_052",
+      "conceptId": "kids_quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Omar rushes and misses words while reciting. What is the better next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rush even more to catch up"
+        },
+        {
+          "id": "b",
+          "text": "Skip the rest of each verse"
+        },
+        {
+          "id": "c",
+          "text": "Invent easier words instead"
+        },
+        {
+          "id": "d",
+          "text": "Slow down and recite carefully"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches measured recitation. Slowing down helps Omar give the words proper care.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "Quran 73:4",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_053",
+      "conceptId": "kids_quran_seek_refuge_before",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Lina is about to recite Quran and wants to seek refuge. What should she ask Allah for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Protection from Shaytan"
+        },
+        {
+          "id": "b",
+          "text": "A louder voice than everyone"
+        },
+        {
+          "id": "c",
+          "text": "A prize for reading first"
+        },
+        {
+          "id": "d",
+          "text": "A way to skip learning"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Seeking refuge turns to Allah for protection from Shaytan before reciting.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "Quran 16:98",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_054",
+      "conceptId": "kids_quran_reflect_meanings",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can recite a verse but do not understand it yet. What can help you learn its message?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guess a meaning and teach it as certain"
+        },
+        {
+          "id": "b",
+          "text": "Ask a teacher to explain its meaning"
+        },
+        {
+          "id": "c",
+          "text": "Decide the verse has no meaning"
+        },
+        {
+          "id": "d",
+          "text": "Only look at the page number"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran invites reflection. Ask someone knowledgeable to explain meanings you do not yet understand.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_055",
+      "conceptId": "kids_quran_review_memorization",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learned a short surah last week. What is a helpful plan today?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promise never to read it again"
+        },
+        {
+          "id": "b",
+          "text": "Read only its title forever"
+        },
+        {
+          "id": "c",
+          "text": "Review it with a teacher or parent"
+        },
+        {
+          "id": "d",
+          "text": "Guess the words without checking"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Regular review helps keep memorized Quran fresh. A teacher or parent can help you check it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5033",
+          "label": "Sahih al-Bukhari 5033",
+          "url": "https://sunnah.com/bukhari:5033"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_056",
+      "conceptId": "kids_quran_learn_and_teach",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your younger sister wants to learn a surah you know well. What is a good choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tell her Quran learning is only for you"
+        },
+        {
+          "id": "b",
+          "text": "Teach her made-up words"
+        },
+        {
+          "id": "c",
+          "text": "Refuse because she is a beginner"
+        },
+        {
+          "id": "d",
+          "text": "Help her practice with your teacher's guidance"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Helping someone learn Quran is valuable. Teach carefully and ask your teacher when you are unsure.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "Sahih al-Bukhari 5027",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_057",
+      "conceptId": "kids_quran_effort_encouraged",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Zayd finds reciting difficult and feels discouraged. Which reminder follows the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Your effort matters; keep practicing with help"
+        },
+        {
+          "id": "b",
+          "text": "Only fast readers should learn Quran"
+        },
+        {
+          "id": "c",
+          "text": "A difficult word means you must quit forever"
+        },
+        {
+          "id": "d",
+          "text": "Trying has no value until you sound perfect"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith promises reward for reciting despite difficulty. Zayd can keep practicing and learn from gentle correction.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "798a",
+          "label": "Sahih Muslim 798a",
+          "url": "https://sunnah.com/muslim:798a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_058",
+      "conceptId": "kids_quran_ramadan_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Ramadan has ended. What is a good choice for your Quran learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Put every Quran lesson away until next Ramadan"
+        },
+        {
+          "id": "b",
+          "text": "Keep a small reading and learning routine"
+        },
+        {
+          "id": "c",
+          "text": "Wait until you are an adult to return"
+        },
+        {
+          "id": "d",
+          "text": "Read only when Ramadan starts again"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran's Ramadan connection is special. We can keep learning and reading during the rest of the year too.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "Quran 2:185",
+          "url": "https://quran.com/2/185"
+        },
+        {
+          "type": "web",
+          "label": "Quran.com — Quran in a Year reading plan",
+          "url": "https://quran.com/calendar"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_059",
+      "conceptId": "kids_quran_yusuf_story",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher asks which surah tells Yusuf's story. Which one should you open?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surah Al-Falaq"
+        },
+        {
+          "id": "b",
+          "text": "Surah An-Nas"
+        },
+        {
+          "id": "c",
+          "text": "Surah Yusuf"
+        },
+        {
+          "id": "d",
+          "text": "Surah Al-Fatihah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Surah Yusuf tells Yusuf's story, beginning with his conversation with his father about a dream.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "Quran 12:4",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_060",
+      "conceptId": "kids_quran_live_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn a Quran lesson about kindness. Later, a classmate drops their books. What puts the lesson into practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laugh and walk away"
+        },
+        {
+          "id": "b",
+          "text": "Kick the books farther away"
+        },
+        {
+          "id": "c",
+          "text": "Take a book without asking"
+        },
+        {
+          "id": "d",
+          "text": "Help them pick up the books"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Helping a classmate is an everyday way to practice the Quran's teaching of kindness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "90",
+          "label": "Quran 16:90",
+          "url": "https://quran.com/16/90"
+        }
+      ]
+    }
+  ]
+}

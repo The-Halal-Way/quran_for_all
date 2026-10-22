@@ -1,0 +1,2319 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "hadith_knowledge",
+  "title": "Hadith Knowledge",
+  "description": "Little Muslim → Pro. Short questions develop simple hadith-reading skills and connect familiar teachings with thoughtful conduct. Covers narrator and compiler roles, reading collection references, seeking informed explanation, beneficial companionship, mutual support, shared compassion, small kindnesses, gratitude, helping others and Allah’s help, choosing a clear alternative, guiding others to good, valuing health and free time, haya, arrogance, belongings, careful speech, food’s blessing, dua for others, confidentiality and modest gifts. An adult may read questions aloud or explain unfamiliar terms. All questions are Pro level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro is the highest editorial level within Little Muslim, not the Educated User level. It emphasizes connecting a teaching with its purpose, understanding a simple comparison, distinguishing related ideas and applying a lesson to a brief situation. All three question styles remain Kids Pro level; styles are not difficulty tiers. Supplied reference labels are reading examples, not a requirement to memorize hadith numbers or narrator biographies. No technical chain analysis, independent authentication, specialist legal disputes or obscure historical dates are required. The bank has not been calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked reports from Sahih al-Bukhari, Sahih Muslim, Jami at-Tirmidhi and Sunan Abi Dawud, and Sunnah.com's own collection and explanatory pages were checked during preparation. Tirmidhi 1954 and 2518 are labeled Sahih (Darussalam), Tirmidhi 1959 Hasan (Darussalam) and Abi Dawud 5003 Hasan (Al-Albani) on the linked pages; these are attributed source gradings, not independent authentication. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Present-day situations are illustrative applications rather than narrated events or complete legal rulings. The narrator example distinguishes Umar, the companion reporting that he heard the Prophet, from the later collection compiler, without claiming the report has only one transmitter. Reference reading follows the linked site's displayed collection numbering and does not assume fixed pagination or identical numbering across editions. Seeking a knowledgeable teacher does not authorize rejecting a report merely because it seems unfamiliar. The perfume comparison concerns a companion's influence, not a judgment of a worker's occupation, income, physical smell or human worth. The building and body comparisons encourage mutual support and concern, without requiring children to bear adult burdens, learn private details or enter unsafe situations. The cheerful-face example does not require constant smiling or judge disability, distress, personality or inner faith by facial appearance. Thanking people accompanies gratitude to Allah rather than replacing it or excusing harmful demands. The link between helping others and Allah’s help encourages suitable support, without requiring children to carry dangerous loads, manage adult problems or neglect their own needs. The doubtful-matter questions concern a genuine uncertainty with a clear alternative, not intrusive thoughts, ordinary anxiety, imagined prohibitions or endless checking after clarification. The reward for guiding to good is not presented as taking reward away from another person or a reason to withhold practical help. The health-and-free-time teaching encourages gratitude and thoughtful use of opportunities, without condemning ordinary play, suitable rest, illness or disability; health is not treated as proof of superior faith. Haya is taught as modest restraint from wrongdoing, not a reason to hide harm, avoid necessary questions or label a shy child as better than another. The arrogance report distinguishes contempt and rejection of truth from simply enjoying presentable clothes; no individual's hidden heart or final salvation is judged. The belongings report concerns wrongful taking, including pranks, without classifying every mistake or permitted borrowing as theft. The speech warning encourages care without declaring a particular child's spiritual fate or treating every accidental word as a catastrophe. The food questions draw on the report's reminder of blessing; sensible portions are an educational application, not a quotation or an instruction to eat unsafe food, exceed one's needs or ignore illness. Dua for an absent Muslim is taught through the angel's response without unsupported guarantees, publicity requirements or treating kindness toward others as forbidden. Confidentiality concerns entrusted ordinary information; danger, abuse or risk of harm should be brought to a trusted adult, and secrecy is not made absolute. The modest-gift questions concern appreciation without requiring unsafe acceptance, a costly return gift or assigning monetary thresholds to kindness. This remains a draft for scholarly and child-readability review, not independent scholarly approval."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_pro_hadith_knowledge_001",
+      "conceptId": "kids_hadith_narrator_compiler_roles",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "A page names Umar as narrator and al-Bukhari as compiler. Who heard and reported the Prophet's ﷺ words in this report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umar"
+        },
+        {
+          "id": "b",
+          "text": "Al-Bukhari"
+        },
+        {
+          "id": "c",
+          "text": "The page translator"
+        },
+        {
+          "id": "d",
+          "text": "The app designer"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Umar reported hearing the Prophet ﷺ. Al-Bukhari later compiled the report in his collection; these are different roles.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        },
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih al-Bukhari",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_002",
+      "conceptId": "kids_hadith_read_reference",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the reference Sahih al-Bukhari 8, what does the number help you find?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The narrator's age"
+        },
+        {
+          "id": "b",
+          "text": "The report in the named collection"
+        },
+        {
+          "id": "c",
+          "text": "The number of daily prayers"
+        },
+        {
+          "id": "d",
+          "text": "The page in every printed edition"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The collection name and reference number help locate a report. A hadith reference is not a fixed page number for every edition.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_003",
+      "conceptId": "kids_hadith_explanation_with_guidance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When a hadith seems difficult to understand or apply, whose informed explanation should you seek?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whoever has the most followers"
+        },
+        {
+          "id": "b",
+          "text": "Whoever answers fastest without checking"
+        },
+        {
+          "id": "c",
+          "text": "A knowledgeable, trustworthy teacher or scholar's"
+        },
+        {
+          "id": "d",
+          "text": "Only your own first guess"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Hadith need careful understanding. A knowledgeable teacher or scholar can explain the context and how the teaching should be applied.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_004",
+      "conceptId": "kids_hadith_good_company_image",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the hadith comparing companions, what represents a good companion's beneficial influence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A person carrying empty boxes"
+        },
+        {
+          "id": "b",
+          "text": "A person counting market stalls"
+        },
+        {
+          "id": "c",
+          "text": "A person measuring a road"
+        },
+        {
+          "id": "d",
+          "text": "A person carrying musk perfume"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The pleasant perfume illustrates beneficial company. The comparison helps us think about how companions can influence our conduct.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_005",
+      "conceptId": "kids_hadith_building_support",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What image does the hadith use for believers strengthening one another?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parts of a building supporting each other"
+        },
+        {
+          "id": "b",
+          "text": "Separate islands with no connection"
+        },
+        {
+          "id": "c",
+          "text": "Clouds moving in opposite directions"
+        },
+        {
+          "id": "d",
+          "text": "Coins competing to shine brightest"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ compared believers' support to a building whose parts strengthen each other. Mutual help makes the community stronger.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "Sahih al-Bukhari 481",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_006",
+      "conceptId": "kids_hadith_one_body_compassion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith compare believers' mutual love and compassion to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A collection of unrelated stones"
+        },
+        {
+          "id": "b",
+          "text": "One body responding when a part hurts"
+        },
+        {
+          "id": "c",
+          "text": "A race with only one winner"
+        },
+        {
+          "id": "d",
+          "text": "A tree with no branches"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The comparison describes shared concern. Just as a body responds to pain in one part, believers should care about one another's suffering.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "Sahih Muslim 2586a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_007",
+      "conceptId": "kids_hadith_cheerful_meeting",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which small act of goodness does the hadith specifically say we should not dismiss?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waiting to be greeted by someone important"
+        },
+        {
+          "id": "b",
+          "text": "Saving kindness only for special occasions"
+        },
+        {
+          "id": "c",
+          "text": "Meeting a fellow Muslim with a cheerful face"
+        },
+        {
+          "id": "d",
+          "text": "Measuring friendship by expensive presents"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A warm expression can be a meaningful kindness. Goodness is not limited to costly or dramatic actions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "Sahih Muslim 2626",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_008",
+      "conceptId": "kids_hadith_thank_people",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "The hadith links gratitude to Allah with which response toward people who help us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keeping their help secret from them"
+        },
+        {
+          "id": "b",
+          "text": "Expecting even more from them"
+        },
+        {
+          "id": "c",
+          "text": "Comparing their help with someone else's"
+        },
+        {
+          "id": "d",
+          "text": "Thanking them"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith connects gratitude to Allah with gratitude toward people. Recognizing someone's kindness is part of a thankful attitude.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1954",
+          "label": "Jami at-Tirmidhi 1954",
+          "url": "https://sunnah.com/tirmidhi:1954"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_009",
+      "conceptId": "kids_hadith_help_and_allahs_help",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to the hadith, Allah helps His servant while that person is doing what?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Helping a fellow Muslim"
+        },
+        {
+          "id": "b",
+          "text": "Competing for everyone's attention"
+        },
+        {
+          "id": "c",
+          "text": "Waiting to be praised before helping"
+        },
+        {
+          "id": "d",
+          "text": "Ignoring every difficulty outside their home"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report links helping a fellow Muslim with Allah's help. Caring action is valuable even when it does not bring public attention.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_010",
+      "conceptId": "kids_hadith_choose_clear_over_doubt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When an action is genuinely doubtful, what choice does the hadith encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choose it simply because friends insist"
+        },
+        {
+          "id": "b",
+          "text": "Leave it for a clear, sound alternative"
+        },
+        {
+          "id": "c",
+          "text": "Treat uncertainty as proof that it is best"
+        },
+        {
+          "id": "d",
+          "text": "Make every ordinary action feel doubtful"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The teaching encourages leaving a doubtful matter for what is clear. It is not an invitation to invent doubts about everything.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "2518",
+          "label": "Jami at-Tirmidhi 2518",
+          "url": "https://sunnah.com/tirmidhi:2518"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_011",
+      "conceptId": "kids_hadith_guide_to_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What reward does the hadith describe for someone who guides another person to a good deed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the praise of the people watching"
+        },
+        {
+          "id": "b",
+          "text": "A share taken away from the other person's reward"
+        },
+        {
+          "id": "c",
+          "text": "A reward like that of the person doing it"
+        },
+        {
+          "id": "d",
+          "text": "No reward unless they perform every step themselves"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Guiding someone toward good is itself valuable. The hadith describes a reward like that of the person who does the good deed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "Sahih Muslim 1893a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_012",
+      "conceptId": "kids_hadith_health_free_time",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two blessings does the hadith warn that many people fail to use well?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Popularity and expensive clothes"
+        },
+        {
+          "id": "b",
+          "text": "Travel and large houses"
+        },
+        {
+          "id": "c",
+          "text": "Strength and winning every contest"
+        },
+        {
+          "id": "d",
+          "text": "Health and free time"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ named health and free time as blessings often undervalued. Recognizing their value can guide thoughtful choices.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6412",
+          "label": "Sahih al-Bukhari 6412",
+          "url": "https://sunnah.com/bukhari:6412"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_013",
+      "conceptId": "kids_hadith_haya_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith say haya, or good modesty, brings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Goodness"
+        },
+        {
+          "id": "b",
+          "text": "Permission to mistreat quiet people"
+        },
+        {
+          "id": "c",
+          "text": "A reason to hide every question"
+        },
+        {
+          "id": "d",
+          "text": "A need to avoid all learning"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Haya is a sense of modesty that helps us avoid wrongdoing. The hadith praises it as a source of good.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6117",
+          "label": "Sahih al-Bukhari 6117",
+          "url": "https://sunnah.com/bukhari:6117"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_014",
+      "conceptId": "kids_hadith_pride_truth_contempt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "A man asked about enjoying nice clothes and shoes. Did the Prophet ﷺ define that alone as arrogance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; every neat outfit proves someone is arrogant"
+        },
+        {
+          "id": "b",
+          "text": "No; he distinguished beauty from contempt and rejecting truth"
+        },
+        {
+          "id": "c",
+          "text": "Yes; comfortable shoes are always a sign of pride"
+        },
+        {
+          "id": "d",
+          "text": "No; arrogance means only speaking in a loud voice"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The warning concerns refusing truth and treating people with contempt. Enjoying neat clothes is not by itself the arrogance described here.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "Sahih Muslim 91a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_015",
+      "conceptId": "kids_hadith_belongings_not_prank",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith forbid even when someone claims to be joking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sharing an approved game with friends"
+        },
+        {
+          "id": "b",
+          "text": "Offering to lend your own pencil"
+        },
+        {
+          "id": "c",
+          "text": "Taking another person's belongings without right"
+        },
+        {
+          "id": "d",
+          "text": "Asking before borrowing a book"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report warns against taking another person's property as a joke or seriously. Something taken should be returned.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5003",
+          "label": "Sunan Abi Dawud 5003",
+          "url": "https://sunnah.com/abudawud:5003"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_016",
+      "conceptId": "kids_hadith_words_consequences",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith teach about words a person says without considering their importance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They never matter if said quickly"
+        },
+        {
+          "id": "b",
+          "text": "They matter only when written down"
+        },
+        {
+          "id": "c",
+          "text": "They are harmless whenever others laugh"
+        },
+        {
+          "id": "d",
+          "text": "They can have serious spiritual consequences"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report describes both rewarding and harmful speech. Words deserve care even when the speaker treats them as unimportant.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "Sahih al-Bukhari 6478",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_017",
+      "conceptId": "kids_hadith_food_blessing",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Why does the hadith encourage care even with small portions of food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "We do not know where its blessing lies"
+        },
+        {
+          "id": "b",
+          "text": "Only the largest portions can contain blessing"
+        },
+        {
+          "id": "c",
+          "text": "Every meal must include expensive ingredients"
+        },
+        {
+          "id": "d",
+          "text": "A person must always eat more than needed"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report reminds us that we do not know where the blessing in food lies. Food deserves care rather than thoughtless disregard.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2033d",
+          "label": "Sahih Muslim 2033d",
+          "url": "https://sunnah.com/muslim:2033d"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_018",
+      "conceptId": "kids_hadith_dua_for_absent",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When a Muslim sincerely prays for another Muslim in their absence, what does the angel say for the person praying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That only public duas are accepted"
+        },
+        {
+          "id": "b",
+          "text": "That they may receive the same good"
+        },
+        {
+          "id": "c",
+          "text": "That their friend now owes them a gift"
+        },
+        {
+          "id": "d",
+          "text": "That kindness must be kept for relatives"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith encourages dua for another Muslim who is absent. The angel asks that the same good be granted to the one praying.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2732a",
+          "label": "Sahih Muslim 2732a",
+          "url": "https://sunnah.com/muslim:2732a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_019",
+      "conceptId": "kids_hadith_private_words_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the hadith about private speech, what can looking around while speaking indicate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The listener may announce it to everyone"
+        },
+        {
+          "id": "b",
+          "text": "The speaker wants a public competition"
+        },
+        {
+          "id": "c",
+          "text": "The conversation is being entrusted to the listener"
+        },
+        {
+          "id": "d",
+          "text": "The information must be turned into a joke"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report teaches care with speech given in confidence. A sign of privacy should not be treated as permission to spread it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1959",
+          "label": "Jami at-Tirmidhi 1959",
+          "url": "https://sunnah.com/tirmidhi:1959"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_020",
+      "conceptId": "kids_hadith_small_neighbor_gift",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What attitude does the hadith discourage toward a neighbor's modest gift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Appreciating the neighbor's thoughtfulness"
+        },
+        {
+          "id": "b",
+          "text": "Thanking the giver sincerely"
+        },
+        {
+          "id": "c",
+          "text": "Treating the giver respectfully"
+        },
+        {
+          "id": "d",
+          "text": "Looking down on it because it is small"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith warns against belittling a neighbor's gift, even a very small one. Its price is not the whole measure of kindness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6017",
+          "label": "Sahih al-Bukhari 6017",
+          "url": "https://sunnah.com/bukhari:6017"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_021",
+      "conceptId": "kids_hadith_narrator_compiler_roles",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which statement correctly distinguishes Umar's role from al-Bukhari's in the intentions report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umar narrated it; al-Bukhari compiled it"
+        },
+        {
+          "id": "b",
+          "text": "Al-Bukhari heard it directly from the Prophet ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "Umar translated al-Bukhari's book into English"
+        },
+        {
+          "id": "d",
+          "text": "The narrator and compiler must always be the same person"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report identifies Umar as the companion who heard the Prophet ﷺ. The collection was compiled later by al-Bukhari.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        },
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih al-Bukhari",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_022",
+      "conceptId": "kids_hadith_read_reference",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which information makes Sahih al-Bukhari 8 more useful to look up than the number 8 alone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The number proves every translation uses identical words"
+        },
+        {
+          "id": "b",
+          "text": "The number is paired with its collection name"
+        },
+        {
+          "id": "c",
+          "text": "The number tells us the report's length"
+        },
+        {
+          "id": "d",
+          "text": "The number identifies the reader's score"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A number needs its collection and numbering system to be useful. A reference helps us find and check the relevant report.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_023",
+      "conceptId": "kids_hadith_explanation_with_guidance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why can reading one translated hadith be insufficient for deciding a detailed religious ruling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A short translation always contains every relevant detail"
+        },
+        {
+          "id": "b",
+          "text": "The reader's favorite answer settles the issue"
+        },
+        {
+          "id": "c",
+          "text": "Context and related teachings may need scholarly explanation"
+        },
+        {
+          "id": "d",
+          "text": "Popularity removes the need to understand the report"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Careful interpretation considers more than an isolated line. Scholars explain how reports and other relevant evidence fit together.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_024",
+      "conceptId": "kids_hadith_good_company_image",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is the main point of the perfume comparison about companions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A person's job alone proves their character"
+        },
+        {
+          "id": "b",
+          "text": "Only friends who give presents are valuable"
+        },
+        {
+          "id": "c",
+          "text": "A pleasant smell guarantees a truthful person"
+        },
+        {
+          "id": "d",
+          "text": "Company can influence us for good or harm"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The comparison is about influence, not judging people by occupation or smell. Good company can encourage good conduct.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_025",
+      "conceptId": "kids_hadith_building_support",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which idea best fits the hadith's image of a strong building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "People strengthen one another through mutual support"
+        },
+        {
+          "id": "b",
+          "text": "The strongest person never needs anyone's help"
+        },
+        {
+          "id": "c",
+          "text": "One member's success requires everyone else to fail"
+        },
+        {
+          "id": "d",
+          "text": "Helping matters only when it attracts attention"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The building's parts work together. The image encourages cooperation and support rather than isolated competition.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "Sahih al-Bukhari 481",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_026",
+      "conceptId": "kids_hadith_one_body_compassion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which response best matches the hadith's comparison of believers to one body?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A problem matters only when it affects our home"
+        },
+        {
+          "id": "b",
+          "text": "Another person's suffering should concern us too"
+        },
+        {
+          "id": "c",
+          "text": "Caring means pretending everyone's pain is identical"
+        },
+        {
+          "id": "d",
+          "text": "Compassion requires knowing every private detail"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The image emphasizes shared compassion. We can care about someone's difficulty without assuming we know exactly how they feel.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "Sahih Muslim 2586a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_027",
+      "conceptId": "kids_hadith_cheerful_meeting",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What broader lesson follows from the hadith's example of a cheerful face?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A person must look cheerful every moment"
+        },
+        {
+          "id": "b",
+          "text": "Only visible smiles count as kindness"
+        },
+        {
+          "id": "c",
+          "text": "Small acts of kindness should not be underestimated"
+        },
+        {
+          "id": "d",
+          "text": "Quiet people cannot show goodwill"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A warm greeting illustrates small goodness. The lesson does not require a constant smile or judging someone's feelings from their face.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "Sahih Muslim 2626",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_028",
+      "conceptId": "kids_hadith_thank_people",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which statement fits the hadith about thanking people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thanking a helper replaces gratitude to Allah"
+        },
+        {
+          "id": "b",
+          "text": "Only paid helpers deserve acknowledgment"
+        },
+        {
+          "id": "c",
+          "text": "A small favor never deserves thanks"
+        },
+        {
+          "id": "d",
+          "text": "Thanking people belongs alongside gratitude to Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Gratitude to Allah and appreciation for people's kindness belong together. A helper's effort can deserve acknowledgment even when the favor is small.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1954",
+          "label": "Jami at-Tirmidhi 1954",
+          "url": "https://sunnah.com/tirmidhi:1954"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_029",
+      "conceptId": "kids_hadith_help_and_allahs_help",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the hadith linking our help for others with Allah's help encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responding to another person's needs with suitable support"
+        },
+        {
+          "id": "b",
+          "text": "Helping only when a favor will be returned"
+        },
+        {
+          "id": "c",
+          "text": "Avoiding every task that benefits someone else"
+        },
+        {
+          "id": "d",
+          "text": "Taking over every adult problem by ourselves"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The teaching encourages active support. A child can help within their ability and seek an adult when someone needs more assistance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_030",
+      "conceptId": "kids_hadith_choose_clear_over_doubt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which approach best fits leaving a doubtful matter for a clear alternative?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep inventing doubts after a matter has been clarified"
+        },
+        {
+          "id": "b",
+          "text": "Choose what is clearly appropriate and seek guidance if needed"
+        },
+        {
+          "id": "c",
+          "text": "Follow pressure instead of asking a useful question"
+        },
+        {
+          "id": "d",
+          "text": "Assume every nervous feeling proves something is wrong"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The teaching supports clear, sound choices. Ordinary nervousness and repeated worries are not themselves proof that an action is wrong.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "2518",
+          "label": "Jami at-Tirmidhi 2518",
+          "url": "https://sunnah.com/tirmidhi:2518"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_031",
+      "conceptId": "kids_hadith_guide_to_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the reward for guiding someone to good show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the person receiving public credit can be rewarded"
+        },
+        {
+          "id": "b",
+          "text": "Advice is valuable even when it directs people to harm"
+        },
+        {
+          "id": "c",
+          "text": "Helping good happen can matter beyond doing it yourself"
+        },
+        {
+          "id": "d",
+          "text": "Helping someone requires doing every task in their place"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "We can contribute by showing a useful path to good. Guiding and doing are different ways of helping goodness happen.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "Sahih Muslim 1893a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_032",
+      "conceptId": "kids_hadith_health_free_time",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which understanding fits the hadith about health and free time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rest and suitable play are always wasted time"
+        },
+        {
+          "id": "b",
+          "text": "Illness proves someone failed to be grateful"
+        },
+        {
+          "id": "c",
+          "text": "Every spare minute must become a competition"
+        },
+        {
+          "id": "d",
+          "text": "Value available opportunities and use them thoughtfully"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith encourages valuing these blessings. Thoughtful use of time can include suitable rest, play, learning and worship without judging people who are ill.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6412",
+          "label": "Sahih al-Bukhari 6412",
+          "url": "https://sunnah.com/bukhari:6412"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_033",
+      "conceptId": "kids_hadith_haya_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction helps explain the haya praised in the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoiding wrongdoing differs from being afraid to seek help"
+        },
+        {
+          "id": "b",
+          "text": "Good modesty requires hiding every mistake from a teacher"
+        },
+        {
+          "id": "c",
+          "text": "Feeling nervous always means a person is more righteous"
+        },
+        {
+          "id": "d",
+          "text": "Learning becomes wrong when a question feels embarrassing"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The praised modesty supports good conduct. It should not become a reason to refuse necessary help or avoid honest learning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6117",
+          "label": "Sahih al-Bukhari 6117",
+          "url": "https://sunnah.com/bukhari:6117"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_034",
+      "conceptId": "kids_hadith_pride_truth_contempt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which contrast matches the hadith's explanation of arrogance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simple clothes always prove a humble heart"
+        },
+        {
+          "id": "b",
+          "text": "Neat clothes can be fine; rejecting truth is a problem"
+        },
+        {
+          "id": "c",
+          "text": "Expensive shoes make every action wrong"
+        },
+        {
+          "id": "d",
+          "text": "Winning an argument proves someone's moral worth"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith distinguishes enjoying a good appearance from refusing truth and despising people. We should assess conduct without judging hidden hearts.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "Sahih Muslim 91a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_035",
+      "conceptId": "kids_hadith_belongings_not_prank",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why does calling the taking of someone's property a joke fail to excuse it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A joke automatically creates permission"
+        },
+        {
+          "id": "b",
+          "text": "Only expensive belongings have an owner"
+        },
+        {
+          "id": "c",
+          "text": "The owner's rights still matter"
+        },
+        {
+          "id": "d",
+          "text": "Returning it later makes every method acceptable"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report includes both joking and serious taking. Another person's rights do not disappear because the taker intended amusement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5003",
+          "label": "Sunan Abi Dawud 5003",
+          "url": "https://sunnah.com/abudawud:5003"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_036",
+      "conceptId": "kids_hadith_words_consequences",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction follows from the hadith about careless words?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A short remark can never have lasting effects"
+        },
+        {
+          "id": "b",
+          "text": "A large audience makes harmful speech acceptable"
+        },
+        {
+          "id": "c",
+          "text": "Careless speech matters only when the speaker is famous"
+        },
+        {
+          "id": "d",
+          "text": "A remark's impact can exceed the speaker's attention to it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The speaker may give a remark little thought while its consequences are serious. Careful speech involves more than judging a sentence's length.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "Sahih al-Bukhari 6478",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_037",
+      "conceptId": "kids_hadith_food_blessing",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which conclusion fits the hadith's reminder about blessing in food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A small amount of food can deserve thoughtful care"
+        },
+        {
+          "id": "b",
+          "text": "Only costly food can be blessed"
+        },
+        {
+          "id": "c",
+          "text": "Every leftover must be eaten despite illness or danger"
+        },
+        {
+          "id": "d",
+          "text": "A larger plate always brings greater blessing"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report encourages respect for food. It does not tell children to ignore safety, illness or their body's limits.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2033d",
+          "label": "Sahih Muslim 2033d",
+          "url": "https://sunnah.com/muslim:2033d"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_038",
+      "conceptId": "kids_hadith_dua_for_absent",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the hadith about dua in someone's absence encourage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Praying for others only when they are listening"
+        },
+        {
+          "id": "b",
+          "text": "Wishing good for others without needing their applause"
+        },
+        {
+          "id": "c",
+          "text": "Making a public record of every private dua"
+        },
+        {
+          "id": "d",
+          "text": "Expecting a reward from the person prayed for"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Dua can express sincere goodwill when the other person is absent. Kindness does not need to be performed for their praise.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2732a",
+          "label": "Sahih Muslim 2732a",
+          "url": "https://sunnah.com/muslim:2732a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_039",
+      "conceptId": "kids_hadith_private_words_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which lesson fits the hadith's description of a confidential conversation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Everything said quietly must be shared as news"
+        },
+        {
+          "id": "b",
+          "text": "Private details become public once one person hears them"
+        },
+        {
+          "id": "c",
+          "text": "Treat entrusted information with care"
+        },
+        {
+          "id": "d",
+          "text": "Keeping confidence requires hiding danger from trusted adults"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report teaches trust with private speech. It does not require children to conceal harm or avoid help from trusted adults.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1959",
+          "label": "Jami at-Tirmidhi 1959",
+          "url": "https://sunnah.com/tirmidhi:1959"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_040",
+      "conceptId": "kids_hadith_small_neighbor_gift",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which distinction fits the hadith about a neighbor's small gift?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only gifts of equal price can show friendship"
+        },
+        {
+          "id": "b",
+          "text": "Receiving something small means the giver dislikes you"
+        },
+        {
+          "id": "c",
+          "text": "A grateful response must include an expensive return gift"
+        },
+        {
+          "id": "d",
+          "text": "A gift's modest price does not erase its kindness"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A modest gift can still carry thoughtfulness. The hadith discourages contempt rather than turning kindness into a price comparison.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6017",
+          "label": "Sahih al-Bukhari 6017",
+          "url": "https://sunnah.com/bukhari:6017"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_041",
+      "conceptId": "kids_hadith_narrator_compiler_roles",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your quiz card swaps Umar and al-Bukhari's roles in the intentions report. Which correction should you make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Label Umar narrator and al-Bukhari collection compiler"
+        },
+        {
+          "id": "b",
+          "text": "Label al-Bukhari the companion who heard the Prophet ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "Label Umar the English translator of the collection"
+        },
+        {
+          "id": "d",
+          "text": "Remove all names because roles do not matter"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Correct labels distinguish the companion reporting the Prophet's ﷺ words from the later compiler. They help a learner read references carefully.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        },
+        {
+          "type": "web",
+          "label": "Sunnah.com — About Sahih al-Bukhari",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_042",
+      "conceptId": "kids_hadith_read_reference",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A teacher gives you Sahih al-Bukhari 8 to check. What is the best first step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open page eight of any book"
+        },
+        {
+          "id": "b",
+          "text": "Open the named collection and find that reference"
+        },
+        {
+          "id": "c",
+          "text": "Search only for eight without a collection name"
+        },
+        {
+          "id": "d",
+          "text": "Assume every collection's eighth report has the same content"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Use the collection name with the reference number. If an edition uses different numbering, ask for help matching the report.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_043",
+      "conceptId": "kids_hadith_explanation_with_guidance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two short hadith translations seem to point in different directions. What should you do before deciding what they mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choose the version that asks the least of you"
+        },
+        {
+          "id": "b",
+          "text": "Declare one false solely because you feel confused"
+        },
+        {
+          "id": "c",
+          "text": "Ask a knowledgeable teacher to explain their context together"
+        },
+        {
+          "id": "d",
+          "text": "Invent a rule that neither report states"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Bring the actual references to a knowledgeable teacher. Confusion is a reason to seek explanation rather than rush to a ruling.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_044",
+      "conceptId": "kids_hadith_good_company_image",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "One friend encourages honesty; another pressures you to cheat. What applies the hadith about companions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copy the cheating to preserve every friendship"
+        },
+        {
+          "id": "b",
+          "text": "Judge both friends only by their clothes"
+        },
+        {
+          "id": "c",
+          "text": "Assume all their actions must be the same"
+        },
+        {
+          "id": "d",
+          "text": "Seek supportive company and refuse pressure to cheat"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The comparison teaches that company influences us. Seek encouragement toward good, and ask a trusted adult for help with harmful pressure.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_045",
+      "conceptId": "kids_hadith_building_support",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your class has an approved group task. What reflects the hadith's building comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Share tasks fairly and help teammates make progress"
+        },
+        {
+          "id": "b",
+          "text": "Hide useful information to look strongest"
+        },
+        {
+          "id": "c",
+          "text": "Leave every difficult part to one person"
+        },
+        {
+          "id": "d",
+          "text": "Treat a teammate's difficulty as entertainment"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Parts of a building strengthen one another. Fair cooperation in a suitable task is a simple way to apply mutual support.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "Sahih al-Bukhari 481",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_046",
+      "conceptId": "kids_hadith_one_body_compassion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate misses lessons because of a family difficulty. What applies the hadith about shared compassion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demand every private detail before showing care"
+        },
+        {
+          "id": "b",
+          "text": "Ask an adult about a thoughtful way to support them"
+        },
+        {
+          "id": "c",
+          "text": "Ignore them because your own family is fine"
+        },
+        {
+          "id": "d",
+          "text": "Tell them their difficulty must feel exactly like yours"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Shared compassion means noticing another person's hardship. With adult guidance, you can offer help while respecting their privacy and feelings.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "Sahih Muslim 2586a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_047",
+      "conceptId": "kids_hadith_cheerful_meeting",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have no gift for a friend arriving at an activity. What fits the hadith about small goodness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Avoid them because kindness requires money"
+        },
+        {
+          "id": "b",
+          "text": "Wait until someone important greets them first"
+        },
+        {
+          "id": "c",
+          "text": "Offer a warm greeting and make them feel welcome"
+        },
+        {
+          "id": "d",
+          "text": "Explain that greetings have no value without presents"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A cheerful meeting is a valued example of goodness. A kind welcome can matter even when you have nothing to give.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "Sahih Muslim 2626",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_048",
+      "conceptId": "kids_hadith_thank_people",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate explains a difficult homework instruction. What applies the hadith about gratitude?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thank only when the whole class is watching"
+        },
+        {
+          "id": "b",
+          "text": "Assume helping you was their permanent duty"
+        },
+        {
+          "id": "c",
+          "text": "Complain that they should have helped earlier"
+        },
+        {
+          "id": "d",
+          "text": "Thank Allah and also thank your classmate"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Appreciating a person's help fits gratitude to Allah. A sincere thank-you recognizes the effort they made.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1954",
+          "label": "Jami at-Tirmidhi 1954",
+          "url": "https://sunnah.com/tirmidhi:1954"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_049",
+      "conceptId": "kids_hadith_help_and_allahs_help",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate needs help carrying a few light books. What applies the hadith about helping others and Allah's help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Offer suitable help within your ability"
+        },
+        {
+          "id": "b",
+          "text": "Demand public praise before touching a book"
+        },
+        {
+          "id": "c",
+          "text": "Assume small help can never matter"
+        },
+        {
+          "id": "d",
+          "text": "Take a dangerous load to prove your sincerity"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith encourages helping others. Suitable help can be simple; children should respect their limits and ask an adult for larger needs.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "Sahih Muslim 2699a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_050",
+      "conceptId": "kids_hadith_choose_clear_over_doubt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are unsure whether a pen is yours, but your own labeled pen is available. What fits choosing a clear alternative?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take the uncertain pen because it looks newer"
+        },
+        {
+          "id": "b",
+          "text": "Use your labeled pen and ask about the other one"
+        },
+        {
+          "id": "c",
+          "text": "Hide both pens until nobody asks"
+        },
+        {
+          "id": "d",
+          "text": "Assume not knowing the owner makes it yours"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Using the pen known to be yours is a clear alternative. A simple question can clarify ownership without endless worry.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "2518",
+          "label": "Jami at-Tirmidhi 2518",
+          "url": "https://sunnah.com/tirmidhi:2518"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_051",
+      "conceptId": "kids_hadith_guide_to_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend wants to join an approved charity activity but cannot find the teacher. What applies guiding someone to good?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hide the location to keep the reward for yourself"
+        },
+        {
+          "id": "b",
+          "text": "Tell them help counts only if it is expensive"
+        },
+        {
+          "id": "c",
+          "text": "Show them where the supervising teacher is"
+        },
+        {
+          "id": "d",
+          "text": "Make up a different meeting place as a joke"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Pointing someone toward a suitable good activity can itself be valuable. You do not have to do every part on their behalf.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "Sahih Muslim 1893a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_052",
+      "conceptId": "kids_hadith_health_free_time",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You have a free afternoon and feel well. What applies the hadith about valuing health and time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stay awake all night to avoid any rest"
+        },
+        {
+          "id": "b",
+          "text": "Assume only paid work can make time valuable"
+        },
+        {
+          "id": "c",
+          "text": "Choose nothing thoughtfully because tomorrow is guaranteed"
+        },
+        {
+          "id": "d",
+          "text": "Plan a balanced mix of useful activity and suitable rest"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Valuing health and free time means using opportunities with care. A balanced, age-appropriate plan can include learning, kindness, worship, rest and play.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6412",
+          "label": "Sahih al-Bukhari 6412",
+          "url": "https://sunnah.com/bukhari:6412"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_053",
+      "conceptId": "kids_hadith_haya_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends ask you to join an unkind joke. Which response applies the good modesty praised in the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decline the wrongdoing without being unkind in return"
+        },
+        {
+          "id": "b",
+          "text": "Join because embarrassment makes every choice acceptable"
+        },
+        {
+          "id": "c",
+          "text": "Hide all future questions from your teacher"
+        },
+        {
+          "id": "d",
+          "text": "Insult the friends to prove you are better"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Good modesty can restrain us from wrong conduct. Refusing an unkind act does not require becoming unkind ourselves.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6117",
+          "label": "Sahih al-Bukhari 6117",
+          "url": "https://sunnah.com/bukhari:6117"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_054",
+      "conceptId": "kids_hadith_pride_truth_contempt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A younger child correctly points out your mistake. What fits the hadith's warning about arrogance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reject the answer only because the child is younger"
+        },
+        {
+          "id": "b",
+          "text": "Accept the correction without looking down on the child"
+        },
+        {
+          "id": "c",
+          "text": "Change the subject to whose shoes cost more"
+        },
+        {
+          "id": "d",
+          "text": "Insist your age makes every answer right"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The warning includes rejecting truth and despising people. A correct point deserves consideration regardless of the other person's age.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "Sahih Muslim 91a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_055",
+      "conceptId": "kids_hadith_belongings_not_prank",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You hide a friend's pencil case as a prank. What should you do according to the report about belongings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep it hidden until they offer a reward"
+        },
+        {
+          "id": "b",
+          "text": "Explain that joking removes the need for permission"
+        },
+        {
+          "id": "c",
+          "text": "Return it, apologize and stop taking things as jokes"
+        },
+        {
+          "id": "d",
+          "text": "Hide another item to make the prank funnier"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report warns against taking belongings even in jest. Returning the item and putting the harm right respects the owner's rights.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5003",
+          "label": "Sunan Abi Dawud 5003",
+          "url": "https://sunnah.com/abudawud:5003"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_056",
+      "conceptId": "kids_hadith_words_consequences",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are about to post a mocking comment that takes only seconds to write. What fits the hadith about careless words?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Post it because short comments cannot matter"
+        },
+        {
+          "id": "b",
+          "text": "Assume laughter makes the comment harmless"
+        },
+        {
+          "id": "c",
+          "text": "Add more insults so the message gets attention"
+        },
+        {
+          "id": "d",
+          "text": "Pause and consider its harm before deciding what to say"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A quick remark can still have serious consequences. Pausing helps us choose words more responsibly, including in online communication.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "Sahih al-Bukhari 6478",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_057",
+      "conceptId": "kids_hadith_food_blessing",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You can choose your portion at a family meal. What applies thoughtful care for food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take a sensible amount and ask for more if needed"
+        },
+        {
+          "id": "b",
+          "text": "Take the largest amount to prove gratitude"
+        },
+        {
+          "id": "c",
+          "text": "Throw away safe food because the portion looks small"
+        },
+        {
+          "id": "d",
+          "text": "Eat unsafe food even when an adult warns you"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report encourages care for food's blessing. Sensible portions can help avoid waste without forcing overeating or ignoring food safety.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2033d",
+          "label": "Sahih Muslim 2033d",
+          "url": "https://sunnah.com/muslim:2033d"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_058",
+      "conceptId": "kids_hadith_dua_for_absent",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A Muslim friend has an important appointment and is not with you. What applies the hadith about dua in absence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wait until they can praise you for praying"
+        },
+        {
+          "id": "b",
+          "text": "Ask Allah to grant them what is good"
+        },
+        {
+          "id": "c",
+          "text": "Demand a present before making dua"
+        },
+        {
+          "id": "d",
+          "text": "Announce that your dua guarantees a particular result"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "You can sincerely ask Allah for your friend's good while they are absent. The hadith encourages goodwill, not promises about a specific outcome.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2732a",
+          "label": "Sahih Muslim 2732a",
+          "url": "https://sunnah.com/muslim:2732a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_059",
+      "conceptId": "kids_hadith_private_words_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend privately shares an ordinary worry about a school presentation. What applies the hadith about entrusted speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Turn the worry into a group joke"
+        },
+        {
+          "id": "b",
+          "text": "Share it widely because it is interesting"
+        },
+        {
+          "id": "c",
+          "text": "Respect their privacy and ask before telling other classmates"
+        },
+        {
+          "id": "d",
+          "text": "Treat listening as permission to post it online"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Ordinary personal worries deserve care. If a confidence involves danger or harm, seek a trusted adult's help rather than keeping an unsafe secret.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1959",
+          "label": "Jami at-Tirmidhi 1959",
+          "url": "https://sunnah.com/tirmidhi:1959"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_060",
+      "conceptId": "kids_hadith_small_neighbor_gift",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A neighbor gives your family a small, suitable homemade gift. What applies the hadith about modest gifts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say a gift counts only above a certain price"
+        },
+        {
+          "id": "b",
+          "text": "Ask why they did not buy something larger"
+        },
+        {
+          "id": "c",
+          "text": "Make fun of it in front of other neighbors"
+        },
+        {
+          "id": "d",
+          "text": "Thank them without comparing it with expensive presents"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith discourages belittling a neighbor's gift. A gracious response recognizes kindness without turning the gift into a price contest.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6017",
+          "label": "Sahih al-Bukhari 6017",
+          "url": "https://sunnah.com/bukhari:6017"
+        }
+      ]
+    }
+  ]
+}

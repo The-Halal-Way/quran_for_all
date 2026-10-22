@@ -1,0 +1,2324 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "beliefs_foundations",
+  "title": "ঈমানের ভিত্তি",
+  "description": "ছোট্ট মুসলিম → মধ্যম স্তর। ইসলামের প্রথম পরিচয় আছে এমন শিশুদের জন্য ছোট প্রশ্ন। আল্লাহর অতুলনীয়তা ও নাম, একনিষ্ঠতা, তওবা, দোয়ায় ধৈর্য, ফেরেশতা, ওহি, আগের আসমানি কিতাব, পুনরুত্থান, বিচার, তাকদির ও জ্ঞান অর্জন নিয়ে লেখা। সহজ অর্থ, পরিচিত শেখার পরিস্থিতি ও দৈনন্দিন কাজ বেছে নেওয়ার উদাহরণ রয়েছে। বড় কেউ প্রশ্ন পড়ে শোনাতে বা অপরিচিত শব্দ বুঝিয়ে দিতে পারেন। সব প্রশ্ন শিশুদের মধ্যম স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "মধ্যম স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। সহজ অর্থ, পরিচিত ধারণাগুলোর সম্পর্ক ও সরল প্রয়োগের মাধ্যমে প্রথম পরিচয়ের ওপর শেখা এগিয়ে নেওয়া হয়েছে। বিশেষজ্ঞ পর্যায়ের আকিদার বিতর্ক বা কঠিন পরিভাষা জানা প্রয়োজন নেই। স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিস মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যার এই বাংলা রূপ শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; আয়াত বা হাদিসের হুবহু অনুবাদ নয়। দৈনন্দিন ও শ্রেণিকক্ষের উদাহরণে উল্লিখিত শিক্ষা বোঝানো হয়েছে। ইনজিল ও জাবুরের উল্লেখ আল্লাহর নাজিল করা কিতাব নিয়ে। তাকদিরের পাশাপাশি চেষ্টা রাখার শিক্ষা দেওয়া হয়েছে; দোয়ায় ধৈর্য মানে নিজের ঠিক করা সময়ে চাওয়া ফল পাওয়ার প্রতিশ্রুতি নয়। আমল লিপিবদ্ধ করা ও বিচার সম্পর্কে সাধারণ শিক্ষা ছোট শিশুদের ওপর বড়দের মতো শরিয়তের দায়িত্ব আরোপ করে না। কোনো প্রশ্ন শিশুকে অন্য কারও ঈমান বা মূল্য বিচার করতে বলে না। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_mid_beliefs_foundations_001",
+      "conceptId": "kids_belief_unlike_creation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ ও তাঁর সৃষ্টি সম্পর্কে কোন কথাটি কুরআনের শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সৃষ্টির কোনো কিছুই আল্লাহর মতো নয়"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ একজন মানুষের বড় রূপ"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ আর সূর্য একই"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ বিভিন্ন প্রাণীতে বদলে যান"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ তাঁর সৃষ্টির মতো নন। তাঁকে কোনো সৃষ্ট বস্তুর মতো কল্পনা না করে ওহির শিক্ষা থেকে তাঁর সম্পর্কে জানি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_002",
+      "conceptId": "kids_belief_beautiful_names",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহকে ডাকার সময় কুরআন কী ব্যবহার করতে শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর জন্য নিজের বানানো নাম"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর সুন্দর নামগুলো"
+        },
+        {
+          "id": "c",
+          "text": "প্রিয় খেলনার নামগুলো"
+        },
+        {
+          "id": "d",
+          "text": "শুধু জায়গার নামগুলো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহর সুন্দর নামগুলো তাঁর সম্পর্কে জানতে সাহায্য করে। কুরআন সেসব নাম দিয়ে তাঁকে ডাকতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "180",
+          "label": "কুরআন ৭:১৮০",
+          "url": "https://quran.com/7/180"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_003",
+      "conceptId": "kids_belief_no_sleep",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ ও ঘুম সম্পর্কে আয়াতুল কুরসি কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁকে প্রতি রাতে ঘুমাতেই হয়"
+        },
+        {
+          "id": "b",
+          "text": "মানুষকে সাহায্য করার পর তাঁর একটু ঘুম দরকার"
+        },
+        {
+          "id": "c",
+          "text": "তাঁকে তন্দ্রা বা ঘুম পায় না"
+        },
+        {
+          "id": "d",
+          "text": "সূর্য ডুবলেই তিনি ঘুমান"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহর ঘুম পায় না এবং ঘুমের প্রয়োজনও হয় না। সৃষ্টির যত্ন নেওয়া তাঁকে ক্লান্ত করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_004",
+      "conceptId": "kids_belief_self_sufficient",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ অমুখাপেক্ষী—এর অর্থ কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের কাছ থেকে তাঁর খাবার দরকার"
+        },
+        {
+          "id": "b",
+          "text": "মানুষের বানানো একটি ঘর তাঁর দরকার"
+        },
+        {
+          "id": "c",
+          "text": "তিনি আবহাওয়ার ওপর নির্ভর করেন"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর সৃষ্টির সাহায্যের প্রয়োজন হয় না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আমাদের কাছ থেকে আল্লাহর কিছুই প্রয়োজন নেই। আমরা তাঁর ওপর নির্ভর করি, কিন্তু তিনি সৃষ্টির ওপর নির্ভর করেন না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_005",
+      "conceptId": "kids_belief_sincere_devotion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "একনিষ্ঠ ইবাদত বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহকে সন্তুষ্ট করার জন্য তাঁর ইবাদত করা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মানুষকে মুগ্ধ করতে ইবাদত করা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু পুরস্কার জিততে ইবাদত করা"
+        },
+        {
+          "id": "d",
+          "text": "কেউ দেখলেই কেবল ইবাদত করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "একনিষ্ঠতা মানে আল্লাহর জন্য ইবাদত করা। অন্যের মনোযোগ পাওয়া এর উদ্দেশ্য হওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 98,
+          "ayahs": "5",
+          "label": "কুরআন ৯৮:৫",
+          "url": "https://quran.com/98/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_006",
+      "conceptId": "kids_belief_sincere_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "তওবা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নির্দয় কোনো কাজ নিয়ে বড়াই করা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যায়ের পর আন্তরিকভাবে আল্লাহর দিকে ফিরে আসা"
+        },
+        {
+          "id": "c",
+          "text": "মজা করে একই অন্যায় আবার করার পরিকল্পনা"
+        },
+        {
+          "id": "d",
+          "text": "অন্যায় কখনো সংশোধন করা যায় না এমন ভাব করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তওবা মানে আন্তরিকভাবে আল্লাহর দিকে ফিরে আসা। এর মধ্যে অন্যায়ের জন্য অনুতপ্ত হওয়া, তা থামানো ও ভালো হওয়ার সংকল্প রয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "কুরআন ৬৬:৮",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_007",
+      "conceptId": "kids_belief_patient_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দোয়া করার সময় নবী ﷺ কী এড়াতে শিখিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্মানের সঙ্গে আল্লাহকে ডাকা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর কাছে চাইতে থাকা"
+        },
+        {
+          "id": "c",
+          "text": "উত্তর পাওয়া নিয়ে অধৈর্য হওয়া"
+        },
+        {
+          "id": "d",
+          "text": "আশা নিয়ে আল্লাহর দিকে ফিরে যাওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ দোয়ার ক্ষেত্রে অধৈর্য হওয়া থেকে সাবধান করেছেন। যা চেয়েছি তা এখনো না পেলেই হাল ছেড়ে দেওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6340",
+          "label": "সহিহ বুখারি ৬৩৪০",
+          "url": "https://sunnah.com/bukhari:6340"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_008",
+      "conceptId": "kids_belief_angels_light",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ-এর শিক্ষা অনুযায়ী ফেরেশতাদের কী দিয়ে সৃষ্টি করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কাঠ"
+        },
+        {
+          "id": "b",
+          "text": "বরফ"
+        },
+        {
+          "id": "c",
+          "text": "ধাতু"
+        },
+        {
+          "id": "d",
+          "text": "নূর বা আলো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সহিহ হাদিসে শেখানো হয়েছে, ফেরেশতাদের নূর দিয়ে সৃষ্টি করা হয়েছে। আন্দাজ থেকে নয়, ওহির শিক্ষা থেকে এ কথা জানি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2996",
+          "label": "সহিহ মুসলিম ২৯৯৬",
+          "url": "https://sunnah.com/muslim:2996"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_009",
+      "conceptId": "kids_belief_recording_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা আল-ইনফিতারে কিছু ফেরেশতার কোন দায়িত্বের কথা বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের কাজ লিপিবদ্ধ করা"
+        },
+        {
+          "id": "b",
+          "text": "মানুষকে নিয়ে বানানো গল্প লেখা"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি খেলার বিজয়ী বেছে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে নিজের নাম ভুলিয়ে দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে মানুষের কাজ লিপিবদ্ধ করেন এমন সম্মানিত ফেরেশতাদের কথা আছে। তাঁদের দায়িত্ব বাস্তব, গল্পের বানানো বিষয় নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "কুরআন ৮২:১০-১২",
+          "url": "https://quran.com/82/10-12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_010",
+      "conceptId": "kids_belief_jibril_revelation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর অনুমতিতে কোন ফেরেশতা নবী মুহাম্মদ ﷺ-এর কাছে কুরআন নিয়ে এসেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শ্রেণির বেছে দেওয়া একজন শিক্ষক"
+        },
+        {
+          "id": "b",
+          "text": "জিবরিল, যাঁকে গ্যাব্রিয়েলও বলা হয়"
+        },
+        {
+          "id": "c",
+          "text": "এক অজানা রাজা"
+        },
+        {
+          "id": "d",
+          "text": "নিজের বার্তা লিখেছেন এমন এক পথিক"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "জিবরিল আল্লাহর অনুমতিতে ওহি নিয়ে এসেছেন। কুরআনের বার্তা আল্লাহর পক্ষ থেকে এসেছে, ফেরেশতার নিজের ভাবনা থেকে নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "কুরআন ২:৯৭",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_011",
+      "conceptId": "kids_belief_injil_isa",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন অনুযায়ী আল্লাহ মরিয়মের পুত্র ঈসাকে কোন আসমানি কিতাব দিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জাবুর"
+        },
+        {
+          "id": "b",
+          "text": "কুরআন"
+        },
+        {
+          "id": "c",
+          "text": "ইনজিল"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর সহপাঠীদের লেখা বই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন শেখায়, আল্লাহ ঈসাকে ইনজিল দিয়েছেন। এটি হিদায়াতপূর্ণ ওহি ছিল, ঈসার বানানো বই নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "কুরআন ৫:৪৬",
+          "url": "https://quran.com/5/46"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_012",
+      "conceptId": "kids_belief_zabur_dawud",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ কোন নবীকে জাবুর দিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নূহ"
+        },
+        {
+          "id": "b",
+          "text": "ইউসুফ"
+        },
+        {
+          "id": "c",
+          "text": "ইউনুস"
+        },
+        {
+          "id": "d",
+          "text": "দাউদ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে জাবুর পাওয়া নবী হিসেবে দাউদের নাম রয়েছে। এটি জানা আগের ওহি সম্পর্কে পরিচিত হতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "55",
+          "label": "কুরআন ১৭:৫৫",
+          "url": "https://quran.com/17/55"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_013",
+      "conceptId": "kids_belief_quran_arabic",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন নাজিলের মূল ভাষা কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরবি"
+        },
+        {
+          "id": "b",
+          "text": "বাংলা"
+        },
+        {
+          "id": "c",
+          "text": "ইংরেজি"
+        },
+        {
+          "id": "d",
+          "text": "তুর্কি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন আরবি ভাষায় নাজিল হয়েছে। অনুবাদ অন্য ভাষার পাঠকদের এর অর্থ বুঝতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_014",
+      "conceptId": "kids_belief_prophet_human",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ওহি পাওয়ার বিষয়ে কুরআন নবী মুহাম্মদ ﷺ-কে কীভাবে পরিচয় করায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের ধর্ম লিখেছেন এমন এক ফেরেশতা"
+        },
+        {
+          "id": "b",
+          "text": "একজন মানুষ, যাঁর কাছে ওহি এসেছে"
+        },
+        {
+          "id": "c",
+          "text": "মানুষ সৃষ্টি করেছেন এমন এক উপাস্য"
+        },
+        {
+          "id": "d",
+          "text": "আন্দাজ করে আল্লাহর বার্তা বলেছেন এমন এক ব্যক্তি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "মুহাম্মদ ﷺ ছিলেন ওহিপ্রাপ্ত মানব রাসুল। আল্লাহর বার্তা পাওয়ার কারণে তিনি উপাস্য হয়ে যাননি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "কুরআন ১৮:১১০",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_015",
+      "conceptId": "kids_belief_prophetic_example",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন মুমিনদের জন্য আল্লাহর রাসুল ﷺ-কে কী হিসেবে বর্ণনা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যাঁর কাজ থেকে কখনো কিছু শেখা যায় না"
+        },
+        {
+          "id": "b",
+          "text": "যাঁর নির্দেশনা শুধু রাজাদের জন্য"
+        },
+        {
+          "id": "c",
+          "text": "অনুসরণ করার এক উত্তম আদর্শ"
+        },
+        {
+          "id": "d",
+          "text": "ইসলাম শেখার সময় যাঁকে উপেক্ষা করা উচিত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ এক উত্তম আদর্শ। তাঁর নির্দেশনা শেখা ঈমান অনুযায়ী জীবন গড়তে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "কুরআন ৩৩:২১",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_016",
+      "conceptId": "kids_belief_unnamed_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ যত রাসুল পাঠিয়েছেন, কুরআনে কি সবার কাহিনি বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রত্যেক রাসুলের জীবন বর্ণিত হয়েছে"
+        },
+        {
+          "id": "b",
+          "text": "না, আল্লাহ মাত্র একজন রাসুল পাঠিয়েছেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, প্রত্যেক রাসুলের শহরের তালিকা আছে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারও কাহিনি বলা হয়েছে, কারও বলা হয়নি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ কিছু রাসুলের কাহিনি জানিয়েছেন, অন্যদের জানানো হয়নি। যাঁদের বর্ণনা নেই, তাঁদের সম্পর্কে তথ্য বানানো উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 40,
+          "ayahs": "78",
+          "label": "কুরআন ৪০:৭৮",
+          "url": "https://quran.com/40/78"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_017",
+      "conceptId": "kids_belief_resurrection_day",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইসলামি বিশ্বাসে পুনরুত্থান বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মৃত্যুর পর আবার জীবিত করে তোলা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতি বছর ভিন্ন প্রাণী হয়ে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কয়েক ঘণ্টা ঘুমানো"
+        },
+        {
+          "id": "d",
+          "text": "বিদ্যালয়ের পুরোনো একটি দিন মনে করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "পুনরুত্থান মানে মৃত্যুর পর জীবিত করে তোলা। কুরআন শেখায়, কিয়ামতের দিন মানুষকে আবার জীবিত করা হবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "15-16",
+          "label": "কুরআন ২৩:১৫-১৬",
+          "url": "https://quran.com/23/15-16"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_018",
+      "conceptId": "kids_belief_deeds_record_judgment",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন অনুযায়ী কিয়ামতের দিন কী উপস্থাপন করা হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু প্রিয় খাবারের তালিকা"
+        },
+        {
+          "id": "b",
+          "text": "কাজের লিখিত হিসাব বা আমলনামা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু জনপ্রিয় মানুষের নাম"
+        },
+        {
+          "id": "d",
+          "text": "এমন হিসাব যা আল্লাহ বুঝতে পারেন না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনে আমলনামা উপস্থাপনের কথা আছে। আল্লাহর বিচার ন্যায্য; তিনি কারও প্রতি অন্যায় করেন না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "কুরআন ১৮:৪৯",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_019",
+      "conceptId": "kids_belief_divine_decree",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "তাকদিরে বিশ্বাস বলতে কিসে বিশ্বাস বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভাগ্যবান সংখ্যার শক্তিতে"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ আগে থেকে কিছুই জানেন না—এ ধারণায়"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর নির্ধারণে"
+        },
+        {
+          "id": "d",
+          "text": "ঘটনা আল্লাহর নিয়ন্ত্রণের বাইরে—এ ধারণায়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তাকদির মানে আল্লাহর নির্ধারণ। নবী ﷺ এতে বিশ্বাসকে ঈমানের ভিত্তিগুলোর অন্তর্ভুক্ত করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_020",
+      "conceptId": "kids_belief_ask_for_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন আল্লাহর কাছে আমাদের কী বাড়িয়ে দিতে চাইতে শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বড়াই করার ইচ্ছা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যকে ঠাট্টা করার ক্ষমতা"
+        },
+        {
+          "id": "c",
+          "text": "পড়া উপেক্ষা করার অভ্যাস"
+        },
+        {
+          "id": "d",
+          "text": "জ্ঞান"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন বেশি জ্ঞানের জন্য দোয়া শেখায়। শেখার ক্ষেত্রেও আল্লাহর সাহায্য চাইতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "কুরআন ২০:১১৪",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_021",
+      "conceptId": "kids_belief_unlike_creation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহকে বিশাল একজন মানুষ হিসেবে বর্ণনা করা কেন এড়াব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ তাঁর সৃষ্ট কোনো কিছুর মতো নন"
+        },
+        {
+          "id": "b",
+          "text": "সব মানুষ একসময় উপাস্য হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ শুধু ছবির একটি চরিত্র"
+        },
+        {
+          "id": "d",
+          "text": "লম্বা মানুষ সব সময় বেশি উপাস্য"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "স্রষ্টা তাঁর সৃষ্টির বড় আকারের রূপ নন। কুরআন শেখায়, কোনো কিছুই তাঁর মতো নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_022",
+      "conceptId": "kids_belief_beautiful_names",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর সুন্দর নামগুলো শেখা কেন উপকারী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ সম্পর্কে যা খুশি বানিয়ে বলতে দেয়"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর সম্পর্কে জানতে ও দোয়া করতে সাহায্য করে"
+        },
+        {
+          "id": "c",
+          "text": "অন্য সব ধরনের শেখার বদলে এগুলোই যথেষ্ট"
+        },
+        {
+          "id": "d",
+          "text": "এগুলো শুধু বানান প্রতিযোগিতার বিষয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহর নাম শেখা শুধু শব্দ মুখস্থ করা নয়। নামগুলোর অর্থ তাঁকে জানতে ও তাঁর কাছে চাইতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "180",
+          "label": "কুরআন ৭:১৮০",
+          "url": "https://quran.com/7/180"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_023",
+      "conceptId": "kids_belief_no_sleep",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মানুষ ঘুমিয়ে থাকলে কি আল্লাহর সৃষ্টির যত্ন নেওয়া থেমে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সবাইকে সকাল পর্যন্ত অপেক্ষা করতে হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, রাতে সৃষ্টি আল্লাহর যত্ন নেয়"
+        },
+        {
+          "id": "c",
+          "text": "না, আল্লাহ ঘুমান না এবং ক্লান্ত হন না"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আরেক উপাস্য তাঁর দায়িত্ব নেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহ সব সময় তাঁর সৃষ্টিকে টিকিয়ে রাখেন। মানুষের মতো তাঁর বিশ্রাম বা তাঁর দায়িত্ব নিতে অন্য কারও প্রয়োজন নেই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_024",
+      "conceptId": "kids_belief_self_sufficient",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শক্তি বাড়ানোর জন্য কি আল্লাহর আমাদের ইবাদত দরকার?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি নামাজ তাঁকে আরও শক্তি দেয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, মানুষ না থাকলে তিনি থাকতে পারেন না"
+        },
+        {
+          "id": "c",
+          "text": "না, তবে এর বদলে তাঁর খাবার দরকার"
+        },
+        {
+          "id": "d",
+          "text": "না, আল্লাহ আমাদের ওপর নির্ভর করেন না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আমাদের ইবাদত আল্লাহর কোনো অভাব পূরণ করে না। তিনি অমুখাপেক্ষী; আমাদেরই তাঁর প্রয়োজন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_025",
+      "conceptId": "kids_belief_sincere_devotion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কেউ আমাদের ইবাদত খেয়াল না করলেও কি একনিষ্ঠভাবে ইবাদত করা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, আল্লাহকে সন্তুষ্ট করাই আসল"
+        },
+        {
+          "id": "b",
+          "text": "না, বন্ধুরা দেখলেই কেবল ইবাদতের মূল্য থাকে"
+        },
+        {
+          "id": "c",
+          "text": "না, মানুষের প্রশংসাই এর একমাত্র উদ্দেশ্য"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, তবে পরে অভিযোগ করতে হবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "একনিষ্ঠতা নির্ভর করে কেন আল্লাহর ইবাদত করছি তার ওপর। আন্তরিক ইবাদতের জন্য দর্শক দরকার নেই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 98,
+          "ayahs": "5",
+          "label": "কুরআন ৯৮:৫",
+          "url": "https://quran.com/98/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_026",
+      "conceptId": "kids_belief_sincere_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন কাজটি আন্তরিক তওবার সঙ্গে সবচেয়ে ভালো মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুঃখিত বলে মজা করে আবার একই অন্যায়ের পরিকল্পনা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যায়ের জন্য অনুতপ্ত হয়ে সত্যি তা থামানোর চেষ্টা"
+        },
+        {
+          "id": "c",
+          "text": "নিজের কথা না ভেবে সবাইকে দোষ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "আচরণ বদলানোর কোনো গুরুত্ব নেই বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তওবা শুধু মুখের কথা নয়, আল্লাহর দিকে আন্তরিক ফেরা। অন্যায় থেকে সরে এসে ভালো হওয়ার চেষ্টা করা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "কুরআন ৬৬:৮",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_027",
+      "conceptId": "kids_belief_patient_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "চাওয়া কোনো কিছু সঙ্গে সঙ্গে না পেলে দোয়া সম্পর্কে কী মনে রাখব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহকে আমাদের ঠিক করা সময়ই মানতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "চিরদিনের জন্য সব দোয়া বন্ধ করব"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহকে ডাকার সময় ধৈর্য ধরব"
+        },
+        {
+          "id": "d",
+          "text": "শুধু এক মিনিটে পূরণ হওয়া দোয়ারই মূল্য আছে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ দোয়ার ক্ষেত্রে ধৈর্য শিখিয়েছেন। দেরি হলেই দোয়া করা অর্থহীন বলে দেওয়া ঠিক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6340",
+          "label": "সহিহ বুখারি ৬৩৪০",
+          "url": "https://sunnah.com/bukhari:6340"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_028",
+      "conceptId": "kids_belief_angels_light",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ফেরেশতাদের নূর দিয়ে সৃষ্টি করা হয়েছে—এ কথা কীভাবে জানি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কার্টুন এঁকে এ কথা জানা যায়"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি উজ্জ্বল বাতিতে একজন ফেরেশতা থাকেন"
+        },
+        {
+          "id": "c",
+          "text": "অনুমান করার খেলা থেকে জানা যায়"
+        },
+        {
+          "id": "d",
+          "text": "নবী ﷺ সহিহ হাদিসে তা শিখিয়েছেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "এ জ্ঞান নবী ﷺ-এর সহিহ হাদিস থেকে আসে। ছবি বা আন্দাজ দিয়ে ফেরেশতা সম্পর্কে সত্য নির্ধারণ করা যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2996",
+          "label": "সহিহ মুসলিম ২৯৯৬",
+          "url": "https://sunnah.com/muslim:2996"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_029",
+      "conceptId": "kids_belief_recording_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আমল লিপিবদ্ধকারী ফেরেশতারা কি শুধু গল্পের কাল্পনিক চরিত্র?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, তাঁরা কুরআনে বর্ণিত বাস্তব ফেরেশতা"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, তাঁরা শুধু কার্টুনে থাকেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, মানুষ খেলার জন্য তাঁদের বানিয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "না, তাঁরা আসলে বিদ্যালয়ের শিক্ষক"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আমল লিপিবদ্ধকারী ফেরেশতাদের বিশ্বাসের ভিত্তি কুরআন। আমরা তাঁদের দেখতে পাচ্ছি কি না, তার ওপর তাঁদের অস্তিত্ব নির্ভর করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "কুরআন ৮২:১০-১২",
+          "url": "https://quran.com/82/10-12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_030",
+      "conceptId": "kids_belief_jibril_revelation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জিবরিল কি পৌঁছে দেওয়ার আগে কুরআনের বার্তা নিজে বানিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, বিনোদনের জন্য বানিয়েছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "না, তিনি আল্লাহর অনুমতিতে ওহি এনেছেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শ্রেণিকক্ষের গল্প নকল করেছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "না, এর বদলে এক রাজা বানিয়েছিলেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "জিবরিল আল্লাহর ওহি পৌঁছে দিয়েছেন। বার্তা পৌঁছে দেওয়ার কারণে তিনি এর রচয়িতা হয়ে যাননি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "কুরআন ২:৯৭",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_031",
+      "conceptId": "kids_belief_injil_isa",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনে বিশ্বাস করার অর্থ কি আল্লাহ ঈসাকে কিতাব দিয়েছেন—এ কথা অস্বীকার করা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, ঈসা আল্লাহর কোনো নির্দেশনা পাননি"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু মুহাম্মদ ﷺ-ই কখনো ওহি পেয়েছেন"
+        },
+        {
+          "id": "c",
+          "text": "না, কুরআন নিজেই সেই দানের কথা নিশ্চিত করে"
+        },
+        {
+          "id": "d",
+          "text": "না, তবে ইনজিল দাউদকে দেওয়া হয়েছিল"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন নিশ্চিত করে, আল্লাহ ঈসাকে ইনজিল দিয়েছেন। আগের ওহিতে বিশ্বাস ইসলামের ভিত্তি শেখার অংশ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "কুরআন ৫:৪৬",
+          "url": "https://quran.com/5/46"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_032",
+      "conceptId": "kids_belief_zabur_dawud",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন জোড়ায় নবী ও তাঁকে দেওয়া কিতাব সঠিকভাবে মিলেছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দাউদ ও কুরআন"
+        },
+        {
+          "id": "b",
+          "text": "ইউসুফ ও ইনজিল"
+        },
+        {
+          "id": "c",
+          "text": "নূহ ও জাবুর"
+        },
+        {
+          "id": "d",
+          "text": "দাউদ ও জাবুর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে স্পষ্টভাবে দাউদের সঙ্গে জাবুরের সম্পর্ক বলা হয়েছে। নামগুলো একসঙ্গে মনে রাখলে সঠিক সম্পর্কটি মনে থাকে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "55",
+          "label": "কুরআন ১৭:৫৫",
+          "url": "https://quran.com/17/55"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_033",
+      "conceptId": "kids_belief_quran_arabic",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বাংলা ব্যাখ্যা পড়লে কি কুরআনের মূল ভাষা বদলে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, কুরআন আরবি ভাষায় নাজিল হয়েছে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রত্যেক পাঠকের সঙ্গে মূল ভাষা বদলে যায়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, আরবি শুধু পরের একটি অনুবাদ"
+        },
+        {
+          "id": "d",
+          "text": "না, এটি মূলত ইংরেজিতে ছিল"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ব্যাখ্যা বা অনুবাদ অর্থ বুঝতে সাহায্য করতে পারে। কুরআন যে ভাষায় নাজিল হয়েছে তা বদলে দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_034",
+      "conceptId": "kids_belief_prophet_human",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর রাসুল হওয়ার কারণে কি মুহাম্মদ ﷺ উপাস্য হয়ে যান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রত্যেক রাসুল আলাদা উপাস্য"
+        },
+        {
+          "id": "b",
+          "text": "না, তিনি ছিলেন ওহিপ্রাপ্ত একজন মানুষ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, হিদায়াত পেলেই যে কেউ উপাস্য হয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ তিনি কখনো ওহি পাননি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবীরা আল্লাহর ওহি পান, কিন্তু তাঁরা উপাস্য নন। মুহাম্মদ ﷺ শিখিয়েছেন, আল্লাহ এক।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "কুরআন ১৮:১১০",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_035",
+      "conceptId": "kids_belief_prophetic_example",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ-এর আদর্শ অনুসরণ করার মধ্যে কী রয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর নাম শিখে সব নির্দেশনা উপেক্ষা করা"
+        },
+        {
+          "id": "b",
+          "text": "জনপ্রিয় কেউ যা বানায় তা অনুসরণ করা"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর নির্দেশনা শিখে তা মেনে চলার চেষ্টা"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর আদর্শ থেকে কিছু শেখার নেই ভাবা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আদর্শ আচরণের পথ দেখায়। নবী ﷺ সম্পর্কে শিখি যেন তাঁর নির্দেশনা আমাদের কাজ বেছে নিতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "কুরআন ৩৩:২১",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_036",
+      "conceptId": "kids_belief_unnamed_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো রাসুলের নাম না জানলেই কি প্রমাণ হয় আল্লাহ তাঁকে পাঠাননি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, আমরা ইতিমধ্যে সব রাসুলের নাম জানি"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু পাঠ্যবইয়ের নামগুলোই সত্য হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ ইচ্ছেমতো যেকোনো নাম বানাতে পারি"
+        },
+        {
+          "id": "d",
+          "text": "না, কিছু রাসুল সম্পর্কে আমাদের জানানো হয়নি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "রাসুলদের সম্পর্কে আমাদের জ্ঞান সম্পূর্ণ নয়। কুরআন বলে, নবী ﷺ-কে কারও কাহিনি জানানো হয়েছে, কারও জানানো হয়নি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 40,
+          "ayahs": "78",
+          "label": "কুরআন ৪০:৭৮",
+          "url": "https://quran.com/40/78"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_037",
+      "conceptId": "kids_belief_resurrection_day",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পুনরুত্থান কি আগামীকাল বিদ্যালয়ে যাওয়ার জন্য ঘুম থেকে ওঠার মতোই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, এর অর্থ মৃত্যুর পর জীবিত করে তোলা"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রত্যেক সকালই কিয়ামতের দিন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, এর মানে অ্যালার্মের সময় বদলানো"
+        },
+        {
+          "id": "d",
+          "text": "না, এর অর্থ শেখা সবকিছু ভুলে যাওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সাধারণ ঘুম থেকে জাগা আর পুনরুত্থান আলাদা। কুরআন কিয়ামতের দিন মৃত্যুর পর জীবিত করার কথা বলে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "15-16",
+          "label": "কুরআন ২৩:১৫-১৬",
+          "url": "https://quran.com/23/15-16"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_038",
+      "conceptId": "kids_belief_deeds_record_judgment",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আমলনামা আল্লাহর বিচার সম্পর্কে কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বিখ্যাত মানুষের কাজ গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "আমাদের কাজ গুরুত্বপূর্ণ, আল্লাহ কারও প্রতি অন্যায় করেন না"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ কী ঘটেছে তা আন্দাজ করে বিচার করেন"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ ভুলে গেলেই সব কাজ লুকাতে পারে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আমলনামা মানুষের করা কাজের হিসাব। কুরআন আরও স্পষ্ট করে, আল্লাহ কারও সঙ্গে অন্যায় আচরণ করেন না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "কুরআন ১৮:৪৯",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_039",
+      "conceptId": "kids_belief_divine_decree",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর নির্ধারণে বিশ্বাস মানে কি উপকারী কাজের চেষ্টা বন্ধ করা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শেখা ও অনুশীলন সব সময় অর্থহীন"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সব উপকারী সাহায্য ফিরিয়ে দেব"
+        },
+        {
+          "id": "c",
+          "text": "না, তবুও চেষ্টা করব এবং সাহায্য চাইব"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আল্লাহর নির্ধারণে বিশ্বাস ঈমানের অংশ নয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তাকদিরে বিশ্বাসের সঙ্গে চেষ্টা থাকে। নবী ﷺ উপকারী কাজের চেষ্টা করতে ও আল্লাহর সাহায্য চাইতে শিখিয়েছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_040",
+      "conceptId": "kids_belief_ask_for_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর কাছে বেশি জ্ঞান চাওয়ার সঙ্গে কোন মনোভাব মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইতিমধ্যে সব জানি এমন ভান করা"
+        },
+        {
+          "id": "b",
+          "text": "ব্যাখ্যা শুনতে অস্বীকার করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি প্রশ্নকে লজ্জার বিষয় মনে করা"
+        },
+        {
+          "id": "d",
+          "text": "আরও শিখতে চাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "জ্ঞান চাওয়া মানে আরও শেখার সুযোগ আছে স্বীকার করা। বোঝার আন্তরিক চেষ্টার পাশাপাশি আল্লাহর সাহায্য চাইতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "কুরআন ২০:১১৪",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_041",
+      "conceptId": "kids_belief_unlike_creation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ বলল, “আল্লাহ খুব বড় একজন মানুষের মতোই।” কোন উত্তর কুরআনের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ তাঁর সৃষ্টির মতো নন"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ মানুষের চেয়ে সামান্য লম্বা"
+        },
+        {
+          "id": "c",
+          "text": "আমরা যে মানুষ বেছে নিই আল্লাহ তার মতো"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ এমন একজন মানুষ যিনি শক্তিশালী হয়েছেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহকে বিশাল মানুষ হিসেবে বর্ণনা করা উচিত নয়। কুরআন শেখায়, কোনো কিছুই তাঁর মতো নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "কুরআন ৪২:১১",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_042",
+      "conceptId": "kids_belief_beautiful_names",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আমিনা আল্লাহর একটি সুন্দর নাম শিখল। এরপর ভালো কাজ কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর জন্য অন্য একটি নাম বানানো"
+        },
+        {
+          "id": "b",
+          "text": "অর্থ শিখে দোয়ায় সম্মানের সঙ্গে ব্যবহার করা"
+        },
+        {
+          "id": "c",
+          "text": "খেলনার ডাকনাম হিসেবে ব্যবহার করা"
+        },
+        {
+          "id": "d",
+          "text": "এর অর্থের কোনো গুরুত্ব নেই ভাবা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অর্থ শিখলে আমরা কী বলছি তা বুঝতে সুবিধা হয়। আল্লাহর সুন্দর নাম সম্মানের সঙ্গে ব্যবহার করা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "180",
+          "label": "কুরআন ৭:১৮০",
+          "url": "https://quran.com/7/180"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_043",
+      "conceptId": "kids_belief_no_sleep",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইউসুফ ভাবছে, পরিবার ঘুমালে আল্লাহরও কি বিশ্রাম দরকার? কোন উত্তর আয়াতুল কুরসির সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব মানুষ ঘুমালেই কেবল আল্লাহ ঘুমান"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহকে জাগাতে পরিবারের সাহায্য দরকার"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর ঘুম বা বিশ্রাম কোনোটিই প্রয়োজন নেই"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ প্রতি রাতে সৃষ্টির যত্ন বন্ধ করেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মানুষের ঘুম দরকার, আল্লাহর নয়। আসমান ও জমিনের যত্ন নেওয়া তাঁকে ক্লান্ত করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "কুরআন ২:২৫৫",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_044",
+      "conceptId": "kids_belief_self_sufficient",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক সহপাঠী বলল, “আল্লাহর জন্য আমাদের খাবার এনে দিতে হয়।” কী বুঝিয়ে বলবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর শুধু আমাদের প্রিয় খাবার দরকার"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর একটি শহরের চেয়েও বেশি খাবার দরকার"
+        },
+        {
+          "id": "c",
+          "text": "কেউ সাহায্য করলেই কেবল আল্লাহ খেতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ অমুখাপেক্ষী, আমাদের কাছ থেকে খাবার দরকার নেই"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ সৃষ্টির ওপর নির্ভর করেন না। মানুষ তাঁর রিজিকের মুখাপেক্ষী; তাঁর প্রয়োজন মেটাতে আমাদের দরকার হয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "কুরআন ৩৫:১৫",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_045",
+      "conceptId": "kids_belief_sincere_devotion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মরিয়ম দেখল, সে শুধু প্রশংসা পাওয়ার জন্য তিলাওয়াত করছে। আরও ভালো নিয়ত কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর ইবাদত ও সন্তুষ্টির জন্য তিলাওয়াত করা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু সহপাঠীদের হিংসা করাতে তিলাওয়াত করা"
+        },
+        {
+          "id": "c",
+          "text": "পুরস্কারের কথা দেওয়া হলেই কেবল তিলাওয়াত করা"
+        },
+        {
+          "id": "d",
+          "text": "অন্য কারও মূল্য নেই প্রমাণ করতে তিলাওয়াত করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আমরা নিয়ত ঠিক করে আল্লাহর দিকে মন দিতে পারি। আন্তরিক ইবাদতের উদ্দেশ্য মানুষের মনোযোগ জড়ো করা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 98,
+          "ayahs": "5",
+          "label": "কুরআন ৯৮:৫",
+          "url": "https://quran.com/98/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_046",
+      "conceptId": "kids_belief_sincere_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আলি ইচ্ছা করে নির্দয় আচরণ করে অনুতপ্ত। কোন পরিকল্পনায় আল্লাহর দিকে আন্তরিক ফেরা বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুঃখিত বলবে, কিন্তু মজা করে আরও নিষ্ঠুরতার পরিকল্পনা করবে"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর ক্ষমা চাইবে এবং আচরণটি থামানোর চেষ্টা করবে"
+        },
+        {
+          "id": "c",
+          "text": "বড়াই করে বলবে বদলানোর দরকার নেই"
+        },
+        {
+          "id": "d",
+          "text": "ভালো হওয়ার কথা ভাবতেই চাইবে না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আন্তরিক ফেরার মধ্যে অনুশোচনা ও অন্যায় থামানোর চেষ্টা থাকে। আচরণ ভালো করতে আলি বিশ্বস্ত বড় কারও সাহায্য নিতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "কুরআন ৬৬:৮",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_047",
+      "conceptId": "kids_belief_patient_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জয়নব দোয়া করেছে, কিন্তু যা চেয়েছে এখনো পায়নি। ভালো প্রতিক্রিয়া কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একবার চেয়েই দোয়া অর্থহীন ঠিক করে ফেলা"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহকে তার ঠিক করা সময় মানতে বলা"
+        },
+        {
+          "id": "c",
+          "text": "ধৈর্য ধরে আল্লাহর কাছে চাইতে থাকা"
+        },
+        {
+          "id": "d",
+          "text": "যে দোয়া করতে থাকে তাকে ঠাট্টা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ দোয়ার ক্ষেত্রে অধৈর্য হওয়া থেকে সাবধান করেছেন। আল্লাহর জন্য সময়সীমা না বেঁধে জয়নব আশা নিয়ে চাইতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6340",
+          "label": "সহিহ বুখারি ৬৩৪০",
+          "url": "https://sunnah.com/bukhari:6340"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_048",
+      "conceptId": "kids_belief_angels_light",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক ভিডিও বলছে, ফেরেশতারা বরফের তৈরি। পাঠে কোন সূত্র অনুসরণ করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভিডিওটি, কারণ এতে রঙিন দৃশ্য আছে"
+        },
+        {
+          "id": "b",
+          "text": "মন্তব্যের একটি অনুমান"
+        },
+        {
+          "id": "c",
+          "text": "যে উত্তর শুনে সবচেয়ে বেশি হাসি আসে"
+        },
+        {
+          "id": "d",
+          "text": "ফেরেশতাদের নূর দিয়ে সৃষ্টির কথা বলা সহিহ হাদিস"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নির্ভরযোগ্য ধর্মীয় শিক্ষা প্রামাণ্য দলিলের ওপর নির্ভর করে। ফেরেশতাদের সৃষ্টি সম্পর্কে হাদিস শেখায়, তাঁদের নূর দিয়ে সৃষ্টি করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2996",
+          "label": "সহিহ মুসলিম ২৯৯৬",
+          "url": "https://sunnah.com/muslim:2996"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_049",
+      "conceptId": "kids_belief_recording_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হাসান সম্মানিত ফেরেশতাদের আমল লিপিবদ্ধ করার কথা পড়ল। তার নোটে কোন বাক্য থাকবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআন শেখায়, ফেরেশতারা আমল লিপিবদ্ধ করেন"
+        },
+        {
+          "id": "b",
+          "text": "ফেরেশতারা শুধু অনুমান করার খেলার চরিত্র"
+        },
+        {
+          "id": "c",
+          "text": "কুরআন বলে, কোনো ফেরেশতার দায়িত্ব নেই"
+        },
+        {
+          "id": "d",
+          "text": "আমল লিপিবদ্ধকারী ফেরেশতারা ডানাওয়ালা সাধারণ মানুষ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সুরা আল-ইনফিতারে সম্মানিত আমল লিপিবদ্ধকারী ফেরেশতাদের বর্ণনা আছে। নিজে তথ্য না বানিয়ে ওহির শিক্ষা জানা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "কুরআন ৮২:১০-১২",
+          "url": "https://quran.com/82/10-12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_050",
+      "conceptId": "kids_belief_jibril_revelation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক পাঠে তিনটি কার্ড: আল্লাহ, জিবরিল ও মুহাম্মদ ﷺ। কোন বাক্য তাদের সম্পর্ক সঠিকভাবে জানায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুহাম্মদ ﷺ জিবরিলের জন্য বার্তা বানিয়েছেন"
+        },
+        {
+          "id": "b",
+          "text": "জিবরিল আল্লাহর ওহি মুহাম্মদ ﷺ-এর কাছে পৌঁছে দিয়েছেন"
+        },
+        {
+          "id": "c",
+          "text": "কিতাব পাঠানোর আগে জিবরিল আল্লাহকে সৃষ্টি করেছেন"
+        },
+        {
+          "id": "d",
+          "text": "এক রাজা আল্লাহকে শ্রেণিকক্ষের গল্প দিয়েছেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বার্তাটি ছিল আল্লাহর ওহি। জিবরিল আল্লাহর অনুমতিতে তা নবী ﷺ-এর কাছে নিয়ে এসেছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "কুরআন ২:৯৭",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_051",
+      "conceptId": "kids_belief_injil_isa",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইসলাম শিক্ষার পাঠে সারা ঈসার সঙ্গে একটি কিতাবের নাম মেলাচ্ছে। কোন কার্ড বেছে নেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জাবুর"
+        },
+        {
+          "id": "b",
+          "text": "কুরআন"
+        },
+        {
+          "id": "c",
+          "text": "ইনজিল"
+        },
+        {
+          "id": "d",
+          "text": "আধুনিক বিদ্যালয়ের অনুশীলন বই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন বলে, আল্লাহ ঈসাকে ইনজিল দিয়েছেন। প্রশ্নটি সেই নাজিল করা কিতাব নিয়ে, বর্তমানে একই ধরনের নাম থাকা প্রতিটি বই নিয়ে নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "কুরআন ৫:৪৬",
+          "url": "https://quran.com/5/46"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_052",
+      "conceptId": "kids_belief_zabur_dawud",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অনুশীলন পাতায় আছে, “আল্লাহ দাউদকে ____ দিয়েছেন।” কোন শব্দ বসবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুরআন"
+        },
+        {
+          "id": "b",
+          "text": "ইনজিল"
+        },
+        {
+          "id": "c",
+          "text": "অভিধান"
+        },
+        {
+          "id": "d",
+          "text": "জাবুর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সঠিক মিল হলো দাউদ ও জাবুর। কুরআনে এই সম্পর্ক বলা হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "55",
+          "label": "কুরআন ১৭:৫৫",
+          "url": "https://quran.com/17/55"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_053",
+      "conceptId": "kids_belief_quran_arabic",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আদম আরবি আয়াতের পাশে ইংরেজি অর্থ দেখল। কোন ব্যাখ্যা সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরবি অংশ কুরআন; ইংরেজি এর অর্থ বুঝতে সাহায্য করে"
+        },
+        {
+          "id": "b",
+          "text": "কুরআন প্রথমে ইংরেজিতে নাজিল হয়েছিল"
+        },
+        {
+          "id": "c",
+          "text": "ইংরেজি অংশ ওহির মূল ভাষা বদলে দেয়"
+        },
+        {
+          "id": "d",
+          "text": "অনুবাদক আরবি অংশ বানিয়েছেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন আরবি ভাষায় নাজিল হয়েছে। অনুবাদ অন্য ভাষার পাঠকের জন্য এর অর্থের ব্যাখ্যা দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_054",
+      "conceptId": "kids_belief_prophet_human",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুইজের কার্ডে আছে, “মুহাম্মদ ﷺ ছিলেন ওহিপ্রাপ্ত মানব রাসুল।” কথাটি কি সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, তিনি আলাদা উপাস্য ছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, এটি কুরআনের বর্ণনার সঙ্গে মেলে"
+        },
+        {
+          "id": "c",
+          "text": "না, তাঁর কাছে কোনো ওহি আসেনি"
+        },
+        {
+          "id": "d",
+          "text": "না, প্রত্যেক রাসুলকে ফেরেশতা হতেই হবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন মুহাম্মদ ﷺ-কে ওহিপ্রাপ্ত মানুষ হিসেবে বর্ণনা করে। তাঁকে আল্লাহর রাসুল হিসেবে সম্মান করি, উপাস্য হিসেবে নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "কুরআন ১৮:১১০",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_055",
+      "conceptId": "kids_belief_prophetic_example",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ফাতিমা শিখল নবী ﷺ কীভাবে ধৈর্য দেখিয়েছেন। কোন কাজে শিক্ষাটি তার জীবনে উপকারী হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু তথ্য জানে বলে গল্পটি দিয়ে বড়াই করা"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর আদর্শ অন্য কারও জন্য প্রযোজ্য নয় ভাবা"
+        },
+        {
+          "id": "c",
+          "text": "নিজের সিদ্ধান্তে সেই নির্দেশনা অনুসরণের চেষ্টা করা"
+        },
+        {
+          "id": "d",
+          "text": "মন খারাপ হলেই শিক্ষা উপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ এমন আদর্শ, যাঁর কাছ থেকে শেখা যায়। একটি পাঠ পরিচিত পরিস্থিতিতে ভালো আচরণ অনুশীলনে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "কুরআন ৩৩:২১",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_056",
+      "conceptId": "kids_belief_unnamed_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু বলল, তার ছোট গল্পের বইয়ে আল্লাহর পাঠানো সব রাসুলের কাহিনি আছে। সতর্ক উত্তর কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ছোট গল্পের বইয়ে অবশ্যই সব রাসুলের তথ্য আছে"
+        },
+        {
+          "id": "b",
+          "text": "ওই বইয়ের রাসুলরাই শুধু বাস্তবে ছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "বই সম্পূর্ণ করতে আরও গল্প বানানো উচিত"
+        },
+        {
+          "id": "d",
+          "text": "আমাদের প্রত্যেক রাসুলের কাহিনি জানানো হয়নি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ আমাদের সব রাসুলের কাহিনি জানাননি। ছোট একটি সংকলনকে সবার সম্পূর্ণ বিবরণ মনে করা যায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 40,
+          "ayahs": "78",
+          "label": "কুরআন ৪০:৭৮",
+          "url": "https://quran.com/40/78"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_057",
+      "conceptId": "kids_belief_resurrection_day",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শ্রেণিকক্ষের পোস্টারে পুনরুত্থানের অর্থ থাকবে। কোন বাক্য ব্যবহার করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কিয়ামতের দিন মৃত্যুর পর মানুষকে জীবিত করা হবে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতি শিক্ষাবর্ষে মানুষ নতুন প্রাণী হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "মানুষ শুধু দুপুরের ঘুম থেকে জাগে"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ ইচ্ছা করলে পরকালের মুখোমুখি না হতে পারে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন মৃত্যুর পর পুনরুত্থান শেখায়। এটি পরকালে বিশ্বাসের অংশ, প্রতিদিনের সাধারণ ঘুম থেকে জাগা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "15-16",
+          "label": "কুরআন ২৩:১৫-১৬",
+          "url": "https://quran.com/23/15-16"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_058",
+      "conceptId": "kids_belief_deeds_record_judgment",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক পাঠে প্রশ্ন করা হলো, আল্লাহর বিচার কি জনপ্রিয়তার ওপর নির্ভর করে? কুরআন অনুযায়ী উত্তর কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সবচেয়ে জনপ্রিয় মানুষ সব সময় বিচার এড়ায়"
+        },
+        {
+          "id": "b",
+          "text": "না, আল্লাহ ন্যায্য বিচার করেন, কাজও লিপিবদ্ধ থাকে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, শুধু অনেক বন্ধুওয়ালা মানুষের আমল থাকে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আল্লাহ মানুষের কাজ কখনো বিবেচনা করেন না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "জনপ্রিয়তা আল্লাহর বিচারের ভিত্তি নয়। কুরআনে আমলনামার বর্ণনা আছে এবং বলা হয়েছে, আল্লাহ কারও প্রতি অন্যায় করেন না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "কুরআন ১৮:৪৯",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_059",
+      "conceptId": "kids_belief_divine_decree",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খেলার ফল ইউসুফের আশামতো হয়নি। আল্লাহর নির্ধারণে বিশ্বাসের সঙ্গে কোন প্রতিক্রিয়া মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বলবে কোনো কিছুই আল্লাহর নিয়ন্ত্রণে নেই"
+        },
+        {
+          "id": "b",
+          "text": "সব শেখা বন্ধ করবে, কারণ চেষ্টা কখনো কাজে আসে না"
+        },
+        {
+          "id": "c",
+          "text": "ফল মেনে শিখবে এবং উপকারী চেষ্টা চালিয়ে যাবে"
+        },
+        {
+          "id": "d",
+          "text": "বলবে ভাগ্যবান সংখ্যা সব ফল নিয়ন্ত্রণ করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আল্লাহর নির্ধারণে বিশ্বাস মানে হাল ছেড়ে দেওয়া নয়। ইউসুফ আশামতো না পাওয়া মেনে নিয়ে, তা থেকে শিখে, আল্লাহর সাহায্যে চেষ্টা চালাতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_060",
+      "conceptId": "kids_belief_ask_for_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নতুন বিষয় শেখার আগে কোন দোয়ার অর্থ কুরআনের শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হে আমার রব, সব জানি বলে বড়াই করান"
+        },
+        {
+          "id": "b",
+          "text": "হে আমার রব, প্রশ্নকারীদের ঠাট্টা করতে সাহায্য করুন"
+        },
+        {
+          "id": "c",
+          "text": "হে আমার রব, সব পাঠ ফিরিয়ে দিতে শেখান"
+        },
+        {
+          "id": "d",
+          "text": "হে আমার রব, আমার জ্ঞান বাড়িয়ে দিন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন আল্লাহর কাছে বেশি জ্ঞান চাইতে শেখায়। শেখার কাজে অংশ নেওয়ার পাশাপাশি এই দোয়া করতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "কুরআন ২০:১১৪",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    }
+  ]
+}

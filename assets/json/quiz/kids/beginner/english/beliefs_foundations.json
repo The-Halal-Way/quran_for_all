@@ -1,0 +1,2317 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "beliefs_foundations",
+  "title": "Beliefs & Foundations",
+  "description": "Little Muslim → Beginner. Short questions introducing Allah, Islam, prophets, angels, the Quran and life after death, with simple meanings and familiar everyday examples. Written with children around ages 6–9 in mind; an adult may read questions aloud. All questions are Beginner level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Uses introductory belief knowledge, short wording and straightforward examples for the Kids audience. Age and level are editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Everyday scenarios illustrate the cited principles. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_beliefs_foundations_001",
+      "conceptId": "kids_belief_creator",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who created us and the world around us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah"
+        },
+        {
+          "id": "b",
+          "text": "The sun"
+        },
+        {
+          "id": "c",
+          "text": "The moon"
+        },
+        {
+          "id": "d",
+          "text": "The sea"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah is the Creator of everything, including people, animals and plants.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "62",
+          "label": "Quran 39:62",
+          "url": "https://quran.com/39/62"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_002",
+      "conceptId": "kids_belief_one_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How many gods do Muslims believe in?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two"
+        },
+        {
+          "id": "b",
+          "text": "One"
+        },
+        {
+          "id": "c",
+          "text": "Three"
+        },
+        {
+          "id": "d",
+          "text": "Four"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Muslims believe in one God: Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1",
+          "label": "Quran 112:1",
+          "url": "https://quran.com/112/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_003",
+      "conceptId": "kids_belief_worship_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To whom do Muslims offer their worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sun"
+        },
+        {
+          "id": "b",
+          "text": "A mountain"
+        },
+        {
+          "id": "c",
+          "text": "Allah alone"
+        },
+        {
+          "id": "d",
+          "text": "A statue"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "We worship Allah alone. The things He created are not gods.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "Quran 20:14",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_004",
+      "conceptId": "kids_belief_need_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who needs Allah's care?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only grown-ups"
+        },
+        {
+          "id": "b",
+          "text": "Only children"
+        },
+        {
+          "id": "c",
+          "text": "Only travelers"
+        },
+        {
+          "id": "d",
+          "text": "All of us"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Everyone needs Allah. Allah does not need anyone or anything.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_005",
+      "conceptId": "kids_belief_hears_sees",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He hears and sees everything"
+        },
+        {
+          "id": "b",
+          "text": "He hears only in a mosque"
+        },
+        {
+          "id": "c",
+          "text": "He sees only in daylight"
+        },
+        {
+          "id": "d",
+          "text": "He needs a camera to see"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah is All-Hearing and All-Seeing. His hearing and seeing are not limited like ours.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_006",
+      "conceptId": "kids_belief_hidden_thoughts",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who knows even the thoughts we have not shared?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every classmate"
+        },
+        {
+          "id": "b",
+          "text": "Allah"
+        },
+        {
+          "id": "c",
+          "text": "Every neighbor"
+        },
+        {
+          "id": "d",
+          "text": "Every shopkeeper"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah knows what is spoken and what is hidden.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "7",
+          "label": "Quran 20:7",
+          "url": "https://quran.com/20/7"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_007",
+      "conceptId": "kids_belief_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which word describes Allah in Surah Al-Fatihah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forgetful"
+        },
+        {
+          "id": "b",
+          "text": "Helpless"
+        },
+        {
+          "id": "c",
+          "text": "Merciful"
+        },
+        {
+          "id": "d",
+          "text": "Sleepy"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Fatihah teaches us that Allah is full of mercy.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "3",
+          "label": "Quran 1:3",
+          "url": "https://quran.com/1/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_008",
+      "conceptId": "kids_belief_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What do we ask Allah for in Al-Fatihah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A new toy every day"
+        },
+        {
+          "id": "b",
+          "text": "Being better than every friend"
+        },
+        {
+          "id": "c",
+          "text": "Never needing to learn"
+        },
+        {
+          "id": "d",
+          "text": "Guidance to the right path"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "We ask Allah to guide us to the right path.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "6",
+          "label": "Quran 1:6",
+          "url": "https://quran.com/1/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_009",
+      "conceptId": "kids_belief_provider",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who gives us rain that helps our food grow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah"
+        },
+        {
+          "id": "b",
+          "text": "Our school bags"
+        },
+        {
+          "id": "c",
+          "text": "Our shoes"
+        },
+        {
+          "id": "d",
+          "text": "Our pencils"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah provides rain and helps crops and fruit grow.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "10-11",
+          "label": "Quran 16:10-11",
+          "url": "https://quran.com/16/10-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_010",
+      "conceptId": "kids_belief_gratitude",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How should we respond to Allah's blessings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always complain"
+        },
+        {
+          "id": "b",
+          "text": "Be thankful"
+        },
+        {
+          "id": "c",
+          "text": "Pretend we need nothing"
+        },
+        {
+          "id": "d",
+          "text": "Forget every kindness"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran teaches us to remember Allah and be thankful to Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "152",
+          "label": "Quran 2:152",
+          "url": "https://quran.com/2/152"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_011",
+      "conceptId": "kids_belief_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What do we call asking Allah for help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A shopping list"
+        },
+        {
+          "id": "b",
+          "text": "A game score"
+        },
+        {
+          "id": "c",
+          "text": "Dua"
+        },
+        {
+          "id": "d",
+          "text": "A school timetable"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Dua means calling upon Allah. We can turn to Him with our needs.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_012",
+      "conceptId": "kids_belief_islam",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is the name of the religion Muslims follow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arabic"
+        },
+        {
+          "id": "b",
+          "text": "Makkah"
+        },
+        {
+          "id": "c",
+          "text": "Ramadan"
+        },
+        {
+          "id": "d",
+          "text": "Islam"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Islam is our religion. Arabic is a language, Makkah is a city, and Ramadan is a month.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "19",
+          "label": "Quran 3:19",
+          "url": "https://quran.com/3/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_013",
+      "conceptId": "kids_belief_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did Allah's messengers teach people to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worship Allah"
+        },
+        {
+          "id": "b",
+          "text": "Worship themselves"
+        },
+        {
+          "id": "c",
+          "text": "Forget Allah"
+        },
+        {
+          "id": "d",
+          "text": "Worship the sun"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah sent messengers to teach people to worship Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "Quran 16:36",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_014",
+      "conceptId": "kids_belief_last_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who is Allah's final prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Musa"
+        },
+        {
+          "id": "b",
+          "text": "Muhammad ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "Ibrahim"
+        },
+        {
+          "id": "d",
+          "text": "Nuh"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Muhammad ﷺ is Allah's final prophet. The other names are also prophets, who came before him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "Quran 33:40",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_015",
+      "conceptId": "kids_belief_quran",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which book is Allah's message that Muslims read?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A storybook"
+        },
+        {
+          "id": "b",
+          "text": "A recipe book"
+        },
+        {
+          "id": "c",
+          "text": "The Quran"
+        },
+        {
+          "id": "d",
+          "text": "A spelling workbook"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran comes from Allah and teaches us His message.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 10,
+          "ayahs": "37",
+          "label": "Quran 10:37",
+          "url": "https://quran.com/10/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_016",
+      "conceptId": "kids_belief_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Whom do the angels obey?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A team captain"
+        },
+        {
+          "id": "b",
+          "text": "A television presenter"
+        },
+        {
+          "id": "c",
+          "text": "A shopkeeper"
+        },
+        {
+          "id": "d",
+          "text": "Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Angels do what Allah commands them to do.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "50",
+          "label": "Quran 16:50",
+          "url": "https://quran.com/16/50"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_017",
+      "conceptId": "kids_belief_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which of Allah's messengers do Muslims believe in?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All of them"
+        },
+        {
+          "id": "b",
+          "text": "Only those from our town"
+        },
+        {
+          "id": "c",
+          "text": "Only those whose names we know"
+        },
+        {
+          "id": "d",
+          "text": "Only those our friends mention"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Muslims believe in all the messengers Allah sent.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_018",
+      "conceptId": "kids_belief_life_after_death",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who can bring people back to life after death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A toy robot"
+        },
+        {
+          "id": "b",
+          "text": "Allah"
+        },
+        {
+          "id": "c",
+          "text": "A storybook hero"
+        },
+        {
+          "id": "d",
+          "text": "A tall building"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah created us the first time and can bring us to life again.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 36,
+          "ayahs": "79",
+          "label": "Quran 36:79",
+          "url": "https://quran.com/36/79"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_019",
+      "conceptId": "kids_belief_allah_fair",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which statement about Allah is true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah forgets every small good deed"
+        },
+        {
+          "id": "b",
+          "text": "Allah only notices famous people"
+        },
+        {
+          "id": "c",
+          "text": "Allah never treats anyone unfairly"
+        },
+        {
+          "id": "d",
+          "text": "Allah judges by the price of our clothes"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah is never unfair, and even a small good deed matters to Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "Quran 4:40",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_020",
+      "conceptId": "kids_belief_trust_and_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When trying to do something useful, what should we do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refuse to make any effort"
+        },
+        {
+          "id": "b",
+          "text": "Wait for others to do everything"
+        },
+        {
+          "id": "c",
+          "text": "Give up before beginning"
+        },
+        {
+          "id": "d",
+          "text": "Try our best and ask Allah for help"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet taught us to seek what helps us and ask Allah for help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_021",
+      "conceptId": "kids_belief_creator",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does calling Allah our Creator mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He made us and all creation"
+        },
+        {
+          "id": "b",
+          "text": "He is just another person"
+        },
+        {
+          "id": "c",
+          "text": "He only made things we can hold"
+        },
+        {
+          "id": "d",
+          "text": "He made only our own town"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah created everything. His creation is much bigger than what we see nearby.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "62",
+          "label": "Quran 39:62",
+          "url": "https://quran.com/39/62"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_022",
+      "conceptId": "kids_belief_one_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Allah being One teach us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each town has its own god"
+        },
+        {
+          "id": "b",
+          "text": "There is no other god beside Him"
+        },
+        {
+          "id": "c",
+          "text": "Every star is a god"
+        },
+        {
+          "id": "d",
+          "text": "Every family needs a different god"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah is One. We do not believe in many gods.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1",
+          "label": "Quran 112:1",
+          "url": "https://quran.com/112/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_023",
+      "conceptId": "kids_belief_worship_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why do we not worship the sun?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is too far away"
+        },
+        {
+          "id": "b",
+          "text": "It is too bright to name"
+        },
+        {
+          "id": "c",
+          "text": "It is something Allah created"
+        },
+        {
+          "id": "d",
+          "text": "It disappears behind clouds sometimes"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The sun is part of creation. Our worship is for Allah, the Creator.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "Quran 20:14",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_024",
+      "conceptId": "kids_belief_need_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Do we need Allah only when something goes wrong?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only when we lose"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only when we feel hungry"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only before a test"
+        },
+        {
+          "id": "d",
+          "text": "No, we always need Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Our need for Allah continues in happy times and difficult times.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_025",
+      "conceptId": "kids_belief_hears_sees",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Allah need a lamp to see what happens?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, Allah sees without needing one"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only a bright lamp"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only a lamp in a mosque"
+        },
+        {
+          "id": "d",
+          "text": "Yes, only a lamp at home"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah is All-Seeing. His seeing does not depend on light or equipment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_026",
+      "conceptId": "kids_belief_hidden_thoughts",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Allah know only the things we say aloud?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only shouted words"
+        },
+        {
+          "id": "b",
+          "text": "No, He also knows what is hidden"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only words said at school"
+        },
+        {
+          "id": "d",
+          "text": "Yes, only words on a stage"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah's knowledge includes our hidden thoughts as well as our spoken words.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "7",
+          "label": "Quran 20:7",
+          "url": "https://quran.com/20/7"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_027",
+      "conceptId": "kids_belief_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Allah's mercy teach us when we make a mistake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "We must stop trying to improve"
+        },
+        {
+          "id": "b",
+          "text": "We should never ask for help"
+        },
+        {
+          "id": "c",
+          "text": "We can turn back and ask forgiveness"
+        },
+        {
+          "id": "d",
+          "text": "We should pretend nothing happened"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah teaches us not to lose hope in His mercy. We can return to Him and improve.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "Quran 39:53",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_028",
+      "conceptId": "kids_belief_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does asking Allah for guidance mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking never to have homework"
+        },
+        {
+          "id": "b",
+          "text": "Asking to win every argument"
+        },
+        {
+          "id": "c",
+          "text": "Asking never to listen to anyone"
+        },
+        {
+          "id": "d",
+          "text": "Asking Him to help us follow what is right"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Guidance helps us follow what is right, rather than simply get every wish.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "6",
+          "label": "Quran 1:6",
+          "url": "https://quran.com/1/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_029",
+      "conceptId": "kids_belief_provider",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How is rain a blessing from Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It gives water and helps plants grow"
+        },
+        {
+          "id": "b",
+          "text": "It means plants need no care"
+        },
+        {
+          "id": "c",
+          "text": "It turns every stone into food"
+        },
+        {
+          "id": "d",
+          "text": "It removes our need for water"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran points to rain and growing plants as signs of Allah's care and provision.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "10-11",
+          "label": "Quran 16:10-11",
+          "url": "https://quran.com/16/10-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_030",
+      "conceptId": "kids_belief_gratitude",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does being thankful matter only for big gifts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only expensive gifts count"
+        },
+        {
+          "id": "b",
+          "text": "No, small blessings matter too"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only birthday gifts count"
+        },
+        {
+          "id": "d",
+          "text": "Yes, only prizes at school count"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The instruction to thank Allah is not limited to large or expensive blessings.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "152",
+          "label": "Quran 2:152",
+          "url": "https://quran.com/2/152"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_031",
+      "conceptId": "kids_belief_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can a child call upon Allah in dua?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, only grown-ups can"
+        },
+        {
+          "id": "b",
+          "text": "No, only teachers can"
+        },
+        {
+          "id": "c",
+          "text": "Yes, children can make dua too"
+        },
+        {
+          "id": "d",
+          "text": "No, only travelers can"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "We can all turn to Allah in dua, including children.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_032",
+      "conceptId": "kids_belief_islam",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is Islam only for people from one country?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only people from one city"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only people from one island"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only people living near us"
+        },
+        {
+          "id": "d",
+          "text": "No, people from many countries can follow Islam"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah sent His Messenger to all people, not just to one country.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "158",
+          "label": "Quran 7:158",
+          "url": "https://quran.com/7/158"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_033",
+      "conceptId": "kids_belief_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why did Allah send messengers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To guide people to worship Him"
+        },
+        {
+          "id": "b",
+          "text": "To teach people to worship toys"
+        },
+        {
+          "id": "c",
+          "text": "To make every person a king"
+        },
+        {
+          "id": "d",
+          "text": "To tell people not to learn"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The messengers brought Allah's message and called people to worship Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "Quran 16:36",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_034",
+      "conceptId": "kids_belief_last_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does final prophet mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A new prophet comes every year"
+        },
+        {
+          "id": "b",
+          "text": "No new prophet comes after Muhammad ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "Every teacher becomes a prophet"
+        },
+        {
+          "id": "d",
+          "text": "Every ruler becomes a prophet"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Muhammad ﷺ is the last prophet. There will not be another prophet after him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "Quran 33:40",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_035",
+      "conceptId": "kids_belief_quran",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is the Quran different from a made-up storybook?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is only for decorating shelves"
+        },
+        {
+          "id": "b",
+          "text": "It is only a list of people's names"
+        },
+        {
+          "id": "c",
+          "text": "It is a message from Allah"
+        },
+        {
+          "id": "d",
+          "text": "It is a game made by a class"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran is from Allah. We learn it to understand His message.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 10,
+          "ayahs": "37",
+          "label": "Quran 10:37",
+          "url": "https://quran.com/10/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_036",
+      "conceptId": "kids_belief_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which statement about angels is right?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are gods we should worship"
+        },
+        {
+          "id": "b",
+          "text": "They choose people to worship instead of Allah"
+        },
+        {
+          "id": "c",
+          "text": "They teach us to worship the moon"
+        },
+        {
+          "id": "d",
+          "text": "They worship Allah and obey Him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Angels are servants of Allah, not gods. They worship and obey Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "49-50",
+          "label": "Quran 16:49-50",
+          "url": "https://quran.com/16/49-50"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_037",
+      "conceptId": "kids_belief_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Do Muslims reject earlier messengers because Muhammad ﷺ is the last prophet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, we believe in them too"
+        },
+        {
+          "id": "b",
+          "text": "Yes, we reject every earlier messenger"
+        },
+        {
+          "id": "c",
+          "text": "Yes, we believe in only our favorite one"
+        },
+        {
+          "id": "d",
+          "text": "Yes, we believe only if friends agree"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Believing in the final prophet does not mean rejecting the other messengers Allah sent.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_038",
+      "conceptId": "kids_belief_life_after_death",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does believing in life after death mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "People become characters in a game"
+        },
+        {
+          "id": "b",
+          "text": "Allah will bring people to life again"
+        },
+        {
+          "id": "c",
+          "text": "Everyone becomes a star in the sky"
+        },
+        {
+          "id": "d",
+          "text": "Buildings give people a new life"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah tells us that the One who first created people will bring them to life again.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 36,
+          "ayahs": "79",
+          "label": "Quran 36:79",
+          "url": "https://quran.com/36/79"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_039",
+      "conceptId": "kids_belief_allah_fair",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a small good deed matter to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, only very expensive deeds count"
+        },
+        {
+          "id": "b",
+          "text": "No, only famous people can do good"
+        },
+        {
+          "id": "c",
+          "text": "Yes, even a small good deed matters"
+        },
+        {
+          "id": "d",
+          "text": "No, only deeds seen by a crowd count"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah is never unfair and rewards good. A kind act does not need a large audience.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "Quran 4:40",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_040",
+      "conceptId": "kids_belief_trust_and_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does trusting Allah mean we should stop making an effort?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, useful effort never matters"
+        },
+        {
+          "id": "b",
+          "text": "Yes, we should avoid learning"
+        },
+        {
+          "id": "c",
+          "text": "Yes, someone else must do all our work"
+        },
+        {
+          "id": "d",
+          "text": "No, we ask for help and keep trying"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet's teaching joins seeking Allah's help with doing what is useful.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_041",
+      "conceptId": "kids_belief_creator",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Aminah sees birds, trees and clouds. What can she remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah created them all"
+        },
+        {
+          "id": "b",
+          "text": "The birds created the trees"
+        },
+        {
+          "id": "c",
+          "text": "The clouds made themselves"
+        },
+        {
+          "id": "d",
+          "text": "Only people are Allah's creation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The things we notice in nature can remind us that Allah is the Creator.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "62",
+          "label": "Quran 39:62",
+          "url": "https://quran.com/39/62"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_042",
+      "conceptId": "kids_belief_one_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Yusuf is learning Al-Ikhlas. Which sentence matches its teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sun is another god"
+        },
+        {
+          "id": "b",
+          "text": "Allah is One"
+        },
+        {
+          "id": "c",
+          "text": "Every star is a god"
+        },
+        {
+          "id": "d",
+          "text": "Each country has a separate god"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Ikhlas teaches us that Allah is One.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "1",
+          "label": "Quran 112:1",
+          "url": "https://quran.com/112/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_043",
+      "conceptId": "kids_belief_worship_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend asks, Do Muslims pray to the moon? What is the right answer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only when it is full"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only at night"
+        },
+        {
+          "id": "c",
+          "text": "No, we worship Allah alone"
+        },
+        {
+          "id": "d",
+          "text": "Yes, only during Ramadan"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The moon is part of Allah's creation. Our worship is for Allah alone.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "14",
+          "label": "Quran 20:14",
+          "url": "https://quran.com/20/14"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_044",
+      "conceptId": "kids_belief_need_allah",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Hasan learns a new skill. Does he now stop needing Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, learning one skill is enough"
+        },
+        {
+          "id": "b",
+          "text": "Yes, until his next birthday"
+        },
+        {
+          "id": "c",
+          "text": "Yes, whenever friends praise him"
+        },
+        {
+          "id": "d",
+          "text": "No, he still needs Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Learning and success are blessings. They do not remove our need for Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_045",
+      "conceptId": "kids_belief_hears_sees",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Maryam helps someone when no other person is watching. Who still sees her kindness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah"
+        },
+        {
+          "id": "b",
+          "text": "Only someone with a camera"
+        },
+        {
+          "id": "c",
+          "text": "Only a person in the same room"
+        },
+        {
+          "id": "d",
+          "text": "Only someone looking through a window"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah is All-Seeing, so a kind act is not hidden from Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_046",
+      "conceptId": "kids_belief_hidden_thoughts",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Ali quietly plans a kind surprise. What is true about Allah's knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah knows it only after a teacher hears"
+        },
+        {
+          "id": "b",
+          "text": "Allah knows his plan before he tells people"
+        },
+        {
+          "id": "c",
+          "text": "Allah knows it only when it is written"
+        },
+        {
+          "id": "d",
+          "text": "Allah knows it only after a photograph"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah knows what is hidden as well as what we tell other people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "7",
+          "label": "Quran 20:7",
+          "url": "https://quran.com/20/7"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_047",
+      "conceptId": "kids_belief_mercy",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Aminah made a mistake and wants to do better. What can she remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She should stop learning good habits"
+        },
+        {
+          "id": "b",
+          "text": "She must hide every mistake forever"
+        },
+        {
+          "id": "c",
+          "text": "She can ask Allah's forgiveness and try to improve"
+        },
+        {
+          "id": "d",
+          "text": "She should blame someone else"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah's mercy gives us hope to return to Him and do better.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53",
+          "label": "Quran 39:53",
+          "url": "https://quran.com/39/53"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_048",
+      "conceptId": "kids_belief_guidance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Yusuf wants help choosing what is right. Which dua fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make every friend agree with me"
+        },
+        {
+          "id": "b",
+          "text": "Let me win every argument"
+        },
+        {
+          "id": "c",
+          "text": "Let me avoid every lesson"
+        },
+        {
+          "id": "d",
+          "text": "O Allah, guide me"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Asking Allah for guidance means seeking His help to follow the right path.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "6",
+          "label": "Quran 1:6",
+          "url": "https://quran.com/1/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_049",
+      "conceptId": "kids_belief_provider",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Rain waters the family's vegetable garden. What can they remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah provides rain that helps food grow"
+        },
+        {
+          "id": "b",
+          "text": "Rain means the plants need no care"
+        },
+        {
+          "id": "c",
+          "text": "The watering can created the rain"
+        },
+        {
+          "id": "d",
+          "text": "Vegetables grow without any water"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran connects Allah's rain with the crops and fruit that help feed us.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "10-11",
+          "label": "Quran 16:10-11",
+          "url": "https://quran.com/16/10-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_050",
+      "conceptId": "kids_belief_gratitude",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After enjoying a meal, what can Zaynab say to praise Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I have nothing to be thankful for"
+        },
+        {
+          "id": "b",
+          "text": "Alhamdulillah"
+        },
+        {
+          "id": "c",
+          "text": "Only expensive food matters"
+        },
+        {
+          "id": "d",
+          "text": "I never need any blessings"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Alhamdulillah praises Allah. Food is one of the blessings for which we can be thankful.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "152",
+          "label": "Quran 2:152",
+          "url": "https://quran.com/2/152"
+        },
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "2",
+          "label": "Quran 1:2",
+          "url": "https://quran.com/1/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_051",
+      "conceptId": "kids_belief_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before a school activity, what is one way Adam can turn to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend only grown-ups can make dua"
+        },
+        {
+          "id": "b",
+          "text": "Wait until he is a teacher"
+        },
+        {
+          "id": "c",
+          "text": "Make dua for help"
+        },
+        {
+          "id": "d",
+          "text": "Think Allah hears only in a mosque"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Adam can call upon Allah. Dua is not limited to grown-ups or one building.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "Quran 2:186",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_052",
+      "conceptId": "kids_belief_islam",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Maryam is talking about her religion. Which name should she use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arabic"
+        },
+        {
+          "id": "b",
+          "text": "Makkah"
+        },
+        {
+          "id": "c",
+          "text": "Shawwal"
+        },
+        {
+          "id": "d",
+          "text": "Islam"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Islam is the name of her religion, rather than a language, city or month.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "19",
+          "label": "Quran 3:19",
+          "url": "https://quran.com/3/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_053",
+      "conceptId": "kids_belief_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A lesson says Allah sent messengers. What did they invite people to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worship Allah"
+        },
+        {
+          "id": "b",
+          "text": "Worship the messengers themselves"
+        },
+        {
+          "id": "c",
+          "text": "Make the sun into a god"
+        },
+        {
+          "id": "d",
+          "text": "Forget Allah's message"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah's messengers taught people to worship Allah, not the messengers themselves.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "36",
+          "label": "Quran 16:36",
+          "url": "https://quran.com/16/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_054",
+      "conceptId": "kids_belief_last_prophet",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Yusuf makes a card about our final prophet. Which name belongs on it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Musa"
+        },
+        {
+          "id": "b",
+          "text": "Muhammad ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "Ibrahim"
+        },
+        {
+          "id": "d",
+          "text": "Nuh"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Muhammad ﷺ is Allah's final prophet. Learning his name helps us know our Messenger.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "40",
+          "label": "Quran 33:40",
+          "url": "https://quran.com/33/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_055",
+      "conceptId": "kids_belief_quran",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Aminah starts Quran lessons. What is a good reason for learning it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only to show off to friends"
+        },
+        {
+          "id": "b",
+          "text": "Only to collect stickers"
+        },
+        {
+          "id": "c",
+          "text": "To learn Allah's message"
+        },
+        {
+          "id": "d",
+          "text": "To avoid understanding any of it"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "We learn the Quran because it is from Allah and teaches us His message.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 10,
+          "ayahs": "37",
+          "label": "Quran 10:37",
+          "url": "https://quran.com/10/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_056",
+      "conceptId": "kids_belief_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A class is learning about angels. Which sentence belongs in their notes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Angels are gods beside Allah"
+        },
+        {
+          "id": "b",
+          "text": "Angels tell us to worship toys"
+        },
+        {
+          "id": "c",
+          "text": "Angels need people to worship them"
+        },
+        {
+          "id": "d",
+          "text": "Angels worship Allah and obey Him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran describes angels submitting to Allah and doing what He commands.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "49-50",
+          "label": "Quran 16:49-50",
+          "url": "https://quran.com/16/49-50"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_057",
+      "conceptId": "kids_belief_all_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A class learns about messengers sent before Muhammad ﷺ. How should Muslims think of them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "We believe in all Allah's messengers"
+        },
+        {
+          "id": "b",
+          "text": "We reject them because they came earlier"
+        },
+        {
+          "id": "c",
+          "text": "We believe only in the most familiar name"
+        },
+        {
+          "id": "d",
+          "text": "We accept them only if classmates vote for them"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran teaches belief in all Allah's messengers, including those who came before the final prophet.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "285",
+          "label": "Quran 2:285",
+          "url": "https://quran.com/2/285"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_058",
+      "conceptId": "kids_belief_life_after_death",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A teacher asks who can bring people to life again. Which answer fits the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A toy with new batteries"
+        },
+        {
+          "id": "b",
+          "text": "Allah, who created them the first time"
+        },
+        {
+          "id": "c",
+          "text": "A picture in a storybook"
+        },
+        {
+          "id": "d",
+          "text": "The tallest tree in a garden"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah's power to create also reminds us of His power to bring people back to life.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 36,
+          "ayahs": "79",
+          "label": "Quran 36:79",
+          "url": "https://quran.com/36/79"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_059",
+      "conceptId": "kids_belief_allah_fair",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A child does a small kind deed that nobody praises. Does it still matter to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, it needs a large audience"
+        },
+        {
+          "id": "b",
+          "text": "No, it must cost a lot of money"
+        },
+        {
+          "id": "c",
+          "text": "Yes, a small good deed still matters"
+        },
+        {
+          "id": "d",
+          "text": "No, only a famous person's kindness counts"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah does not overlook good because it is small or because people did not praise it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "40",
+          "label": "Quran 4:40",
+          "url": "https://quran.com/4/40"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_beliefs_foundations_060",
+      "conceptId": "kids_belief_trust_and_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Aminah finds her reading practice difficult. What fits the Prophet's teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give up before trying again"
+        },
+        {
+          "id": "b",
+          "text": "Refuse every offer of useful help"
+        },
+        {
+          "id": "c",
+          "text": "Believe that making an effort never matters"
+        },
+        {
+          "id": "d",
+          "text": "Ask Allah for help and keep practicing"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Seeking Allah's help goes together with useful effort, including patient practice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    }
+  ]
+}

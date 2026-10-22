@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "beliefs_foundations",
+  "title": "বিশ্বাস ও ভিত্তি",
+  "description": "ছোট্ট মুসলিম → প্রো। পরিচিত ইসলামী বিশ্বাসকে সহজ ব্যাখ্যা ও দৈনন্দিন সিদ্ধান্তের সঙ্গে যুক্ত করতে প্রস্তুত শিশুদের জন্য ছোট প্রশ্ন। ঈমানের ছয় ভিত্তি, ইহসান, পাঁচ স্তম্ভ, ঈমান ও ভালো কাজ, নিয়ত, তাকওয়া, ব্যক্তিগত দায়িত্ব, আশা ও তওবা, ফেরেশতা, ইবলিস, আগের সহিফা, সবার জন্য নবীর বার্তা, গায়েবের জ্ঞান, ন্যায্য বিচার, জান্নাত, ছোট কাজ, অন্তর ও আমল, জীবনকে পরীক্ষা হিসেবে বোঝা, তাকদিরের সঙ্গে দায়িত্বশীল চেষ্টা এবং আল্লাহর ওপর ভরসার সঙ্গে সহযোগিতা নিয়ে লেখা। বড় কেউ প্রশ্ন পড়ে শোনাতে বা অপরিচিত শব্দ বুঝিয়ে দিতে পারেন। সব প্রশ্ন শিশুদের প্রো স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রো ছোট্ট মুসলিম বিভাগের সর্বোচ্চ নির্ধারিত স্তর, শিক্ষিত ব্যবহারকারী বিভাগের স্তর নয়। পরিচিত ধারণার সম্পর্ক বোঝা, সাধারণ ভুল ধারণা থেকে শিক্ষা আলাদা করা, সহজ তালিকা পূরণ এবং ছোট পরিস্থিতিতে বিশ্বাসের প্রয়োগে গুরুত্ব দেওয়া হয়েছে। তিন ধরনের প্রশ্নই শিশুদের প্রো স্তরের; প্রশ্নের ধরন কঠিনতার স্তর নয়। বিশেষজ্ঞ পর্যায়ের আকিদার বিতর্ক, বিস্তারিত ফিকহি বিধান, অপরিচিত ঐতিহাসিক তথ্য, আরবি ব্যাকরণ বিশ্লেষণ বা সূত্রের নম্বর মুখস্থ করা প্রয়োজন নেই। শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে স্তরের মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও সহিহ বুখারি এবং সহিহ মুসলিমের বর্ণনা মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যা শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; হুবহু অনুবাদ নয়। বর্তমান সময়ের পরিস্থিতিগুলো প্রয়োগ বোঝানোর উদাহরণ, উদ্ধৃত বর্ণনার ঘটনা নয়। ছয় ভিত্তি জিবরিলের হাদিসে ঈমানের উত্তর অনুসরণ করে; পাঁচ স্তম্ভ আলাদা ভিত্তির বর্ণনা অনুসরণ করে। এই তালিকাগুলো দিয়ে ঈমান ও আমল সম্পর্কহীন বলা বা কারও ধর্মীয় অবস্থান বিচার করা হয়নি। আল্লাহ ইবাদতকারীকে দেখেন—এ সচেতনতা দিয়ে ইহসান বোঝানো হয়েছে; শিশুদের আল্লাহর চেহারা কল্পনা করতে বলা হয়নি। নিয়তের উদাহরণ উদ্দেশ্যের পার্থক্য বোঝায়; অন্যের অন্তর পড়া বা ভালো নিয়তে ক্ষতি বৈধ করার অনুমতি দেয় না। সহপাঠীদের গোপন ঈমানের ক্রম নির্ধারণ, পোশাক বা সম্পদ বিচার কিংবা নির্দিষ্ট কারও চূড়ান্ত পরিণতি ঠিক করা ছাড়াই তাকওয়া, অন্তর, আমল ও জান্নাতের প্রতিশ্রুতি শেখানো হয়েছে। ব্যক্তিগত দায়িত্ব উত্তরাধিকারসূত্রে পাওয়া দোষ নয়; অন্যের অন্যায়ে নিজের অংশগ্রহণের ছাড়ও দেয় না। শিশুদের ওপর প্রাপ্তবয়স্কের সব শরয়ি দায়িত্ব দেওয়া হয়নি। রহমতে আশার সঙ্গে আন্তরিকভাবে ফেরা ও উন্নতি আছে; হতাশা বা ক্ষতি চালানোর অনুমতি নয়। বানানো গায়েবি তথ্য বা ভীতিকর গল্প ছাড়া ফেরেশতাদের উপাস্যত্ব থেকে আলাদা এবং ইবলিসকে জিন হিসেবে চিহ্নিত করা হয়েছে। আগের সহিফার পরিচয় উদ্ধৃত আয়াতে বলা নামেই সীমিত। সবার জন্য বার্তা ও ভাষায় সাবলীলতাকে আলাদা করা হয়েছে; কোনো দলকে অন্যের সঙ্গে খারাপ আচরণে আহ্বান করা হয়নি। গায়েবের স্বাধীন জ্ঞান আল্লাহর; দ্বিতীয় কুরআনি সূত্রটি তিনি মনোনীত রাসুলদের গায়েবের জ্ঞান জানাতে পারেন—এ পার্থক্য বজায় রাখে। এটি সাধারণ প্রমাণভিত্তিক পরিকল্পনা বা পূর্বাভাসের নিষেধ নয়। বিচারের ও ছোট কাজের আলোচনা বিভীষিকাময় শাস্তি, বারবার ভাবনা পরীক্ষা বা প্রতিটি দুর্ঘটনাকে ইচ্ছাকৃত অন্যায় বানানো ছাড়া করা হয়েছে। জীবনের পরীক্ষার আয়াত দিয়ে পড়াশোনার নম্বর, অসুস্থতা, কষ্ট বা সচ্ছলতাকে কারও ঈমান বা আল্লাহর প্রত্যাখ্যানের প্রমাণ বানানো হয়নি। তাকদির মেনে নেওয়ার সঙ্গে শেখা, দায়িত্ব ও উপযুক্ত সাহায্য চাওয়া সম্ভব; এটি নির্দোষকে দোষ দেওয়া বা প্রয়োজনীয় সহায়তা ফিরিয়ে দেওয়ার যুক্তি নয়। শিক্ষক ও অন্যের সঙ্গে সাধারণ সহযোগিতাকে ইবাদত থেকে আলাদা করা হয়েছে; উদ্দেশ্য যা-ই হোক সব সাহায্যের অনুরোধ বৈধ করা হয়নি। বিপজ্জনক জিনিস উপযুক্ত বড়রা সামলাবেন। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_pro_beliefs_foundations_001",
+      "conceptId": "kids_belief_six_foundations",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "জিবরিলের হাদিসে ঈমানের ছয় ভিত্তির সঙ্গে কোন তালিকাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ, ফেরেশতা, কিতাব, রাসুল, শেষ দিন ও তাকদির"
+        },
+        {
+          "id": "b",
+          "text": "নামাজ, রোজা, হজ, ব্যবসা, সফর ও ভাষা"
+        },
+        {
+          "id": "c",
+          "text": "ফেরেশতা, ঋতু, রং, খেলা, পোশাক ও খাবার"
+        },
+        {
+          "id": "d",
+          "text": "সম্পদ, খ্যাতি, শক্তি, সৌন্দর্য, বংশ ও জনপ্রিয়তা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনাটিতে ভালো-মন্দের তাকদিরসহ বিশ্বাসের ছয় ভিত্তি আছে। এগুলো স্কুলের বিষয় বা নিজের জিনিসপত্রের তালিকা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_002",
+      "conceptId": "kids_belief_ihsan_awareness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইবাদতের সময় ইহসান আমাদের কী মনে রাখতে শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের হাততালিই ইবাদতের উদ্দেশ্য"
+        },
+        {
+          "id": "b",
+          "text": "আমরা তাঁকে না দেখলেও আল্লাহ আমাদের দেখেন"
+        },
+        {
+          "id": "c",
+          "text": "শিক্ষক দেখলেই শুধু ইবাদত গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে দ্রুত ইবাদতই সবসময় সবচেয়ে আন্তরিক"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইহসান হলো আল্লাহ সম্পর্কে গভীর সচেতনতা নিয়ে ইবাদত করা। মানুষকে দেখানোর বদলে তিনি আমাদের দেখেন—এ কথা মনে রাখতে হাদিসটি শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "50",
+          "label": "সহিহ বুখারি ৫০",
+          "url": "https://sunnah.com/bukhari:50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_003",
+      "conceptId": "kids_belief_five_pillars_meaning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিসে শেখানো পাঁচ স্তম্ভের নাম কোন তালিকায় আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নামাজ, আঁকা, দৌড়ানো, ঘুম ও ব্যবসা"
+        },
+        {
+          "id": "b",
+          "text": "ফেরেশতা, বই, রাসুল, রং ও ঋতু"
+        },
+        {
+          "id": "c",
+          "text": "শাহাদাহ, নামাজ, জাকাত, রমজানের রোজা ও হজ"
+        },
+        {
+          "id": "d",
+          "text": "সম্পদ, পোশাক, খ্যাতি, পুরস্কার ও সফর"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "পাঁচ স্তম্ভ ইসলামের প্রধান ভিত্তি। নাম শিখলেই প্রতিটি শিশুর ওপর সঙ্গে সঙ্গে প্রাপ্তবয়স্কের সব দায়িত্ব চলে আসে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_004",
+      "conceptId": "kids_belief_faith_good_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ঈমানের শাখাগুলোর মধ্যে হাদিসে কোন কাজ আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধর্ম নিয়ে প্রতিটি তর্কে জেতা"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে দামি জিনিসপত্র থাকা"
+        },
+        {
+          "id": "c",
+          "text": "কাছের প্রতিটি মানুষের প্রশংসা পাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "পথ থেকে ক্ষতিকর কিছু সরানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনাটি ঈমানের সঙ্গে কথা, লজ্জাশীলতা ও উপকারী কাজের সম্পর্ক দেখায়। নিরাপদভাবে অন্যের যত্নে বিশ্বাসের শেখা প্রকাশ পেতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "35b",
+          "label": "সহিহ মুসলিম ৩৫b",
+          "url": "https://sunnah.com/muslim:35b"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_005",
+      "conceptId": "kids_belief_intentions_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নিয়ত সম্পর্কে হাদিস অনুযায়ী কোনো কাজ মূল্যায়নে কী গুরুত্বপূর্ণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যে উদ্দেশ্যে ব্যক্তি কাজটি করেন"
+        },
+        {
+          "id": "b",
+          "text": "শুধু কতজন সেটি দেখল"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সেটি কত দামি দেখায়"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সেটি জনপ্রিয় হলো কি না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি কাজের সঙ্গে নিয়তের সম্পর্ক দেখায়। বাইরে থেকে একই রকম দেখালেও দুটি কাজের উদ্দেশ্য আলাদা হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_006",
+      "conceptId": "kids_belief_taqwa_not_status",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর কাছে সম্মানের সঙ্গে কুরআন কিসের সম্পর্ক দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে ধনী পরিবারের হওয়া"
+        },
+        {
+          "id": "b",
+          "text": "তাকওয়া: আল্লাহ সম্পর্কে সচেতন থাকা ও তাঁর আনুগত্যের চেষ্টা করা"
+        },
+        {
+          "id": "c",
+          "text": "সবচেয়ে জনপ্রিয় ভাষায় কথা বলা"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে বেশি অনুসারী থাকা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি বংশ বা সামাজিক অবস্থানের বদলে তাকওয়াকে গুরুত্ব দেয়। সহপাঠীদের গোপন ঈমানের ক্রম নির্ধারণ করতে বলে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "কুরআন ৪৯:১৩",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_007",
+      "conceptId": "kids_belief_personal_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্যের পাপের বোঝা বহন করা সম্পর্কে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শিশুরা আপনাআপনি প্রতিটি আত্মীয়ের অন্যায় উত্তরাধিকার পায়"
+        },
+        {
+          "id": "b",
+          "text": "পারিবারিক নাম প্রতিটি কাজকে দোষযোগ্য করে"
+        },
+        {
+          "id": "c",
+          "text": "একজন অন্যজনের পাপের বোঝা বহন করে না"
+        },
+        {
+          "id": "d",
+          "text": "নির্দোষ ব্যক্তিকে অন্যের নৈতিক দোষ নিতেই হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি ব্যক্তিগত দায়িত্ব শেখায়। কারও আত্মীয় হলেই তার অন্যায়ের জন্য আমরা দোষী হই না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "কুরআন ৬:১৬৪",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_008",
+      "conceptId": "kids_belief_hope_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রহমত ও আল্লাহর দিকে ফিরে যাওয়া সম্পর্কে কুরআনের শিক্ষা কোন আচরণে একসঙ্গে আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেকোনো ভুলের পর সব আশা ছেড়ে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "রহমতকে মানুষকে কষ্ট দিতে থাকার অনুমতি হিসেবে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "নিজের সিদ্ধান্তে কখনো উন্নতি দরকার নেই এমন ভান করা"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর রহমতে আশা রাখা ও আন্তরিকভাবে ফিরে যাওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো আশা ও তওবা একসঙ্গে শেখায়। আল্লাহর রহমত হতাশা বা ইচ্ছাকৃত ক্ষতি চালানোর বদলে তাঁর দিকে ফিরতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "কুরআন ৩৯:৫৩-৫৪",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_009",
+      "conceptId": "kids_belief_angels_servants",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াতগুলোতে আল্লাহর সঙ্গে সম্পর্কের ক্ষেত্রে ফেরেশতাদের কীভাবে বর্ণনা করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্মানিত বান্দা, যারা তাঁর নির্দেশে কাজ করেন"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর ইবাদত পাওয়ার অধিকারে অংশীদার উপাস্য"
+        },
+        {
+          "id": "c",
+          "text": "যারা আল্লাহকে তাদের কথা মানায়"
+        },
+        {
+          "id": "d",
+          "text": "সন্তান, যারা আল্লাহর অভাব পূরণ করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ফেরেশতারা সম্মানিত বান্দা, আল্লাহর উপাস্যত্বের অংশীদার নন। তাঁদের বিশ্বাস করা ও তাঁদের ইবাদত করা আলাদা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "26-27",
+          "label": "কুরআন ২১:২৬-২৭",
+          "url": "https://quran.com/21/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_010",
+      "conceptId": "kids_belief_iblis_jinn",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন ইবলিসকে কোন দলের অন্তর্ভুক্ত বলে পরিচয় দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানব নবীরা"
+        },
+        {
+          "id": "b",
+          "text": "জিন"
+        },
+        {
+          "id": "c",
+          "text": "মক্কার মানুষ"
+        },
+        {
+          "id": "d",
+          "text": "আমল লেখার ফেরেশতারা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন স্পষ্ট বলে, ইবলিস জিনদের একজন ছিল। ভিন্ন পরিচয় বানানোর বদলে এই শিক্ষা মেনে গল্প বলা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "কুরআন ১৮:৫০",
+          "url": "https://quran.com/18/50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_011",
+      "conceptId": "kids_belief_earlier_scriptures",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা আল-আলার শেষে কোন দুই নবীর আগের সহিফার নাম আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইউসুফ ও ইউনুস"
+        },
+        {
+          "id": "b",
+          "text": "দাউদ ও সুলায়মান"
+        },
+        {
+          "id": "c",
+          "text": "ইব্রাহিম ও মুসা"
+        },
+        {
+          "id": "d",
+          "text": "জাকারিয়া ও ইয়াহইয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতগুলোতে ইব্রাহিম ও মুসার সহিফার কথা আছে। ওহি শুধু কুরআন আসার সময় থেকেই শুরু হয়নি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 87,
+          "ayahs": "18-19",
+          "label": "কুরআন ৮৭:১৮-১৯",
+          "url": "https://quran.com/87/18-19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_012",
+      "conceptId": "kids_belief_message_all_people",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই আয়াতে মুহাম্মদ ﷺ-কে কাদের কাছে আল্লাহর রাসুল বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু একটি ধনী পরিবারের কাছে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু আগে থেকেই আরবি বলা মানুষের কাছে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু একটি রাস্তার মানুষের কাছে"
+        },
+        {
+          "id": "d",
+          "text": "সব মানুষের কাছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি নবী ﷺ-এর বার্তা দিয়ে মানবজাতিকে সম্বোধন করে। ইসলাম শেখা নির্দিষ্ট ভাষা বা বংশের জন্য সংরক্ষিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "158",
+          "label": "কুরআন ৭:১৫৮",
+          "url": "https://quran.com/7/158"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_013",
+      "conceptId": "kids_belief_unseen_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কারও কাছে শেখার প্রয়োজন ছাড়াই স্বাধীনভাবে গায়েবের জ্ঞান কার আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একমাত্র আল্লাহর"
+        },
+        {
+          "id": "b",
+          "text": "আত্মবিশ্বাসের সঙ্গে অনুমান করে এমন প্রতিটি ব্যক্তির"
+        },
+        {
+          "id": "c",
+          "text": "অনলাইনে অনেক অনুসারী আছে এমন যেকোনো ব্যক্তির"
+        },
+        {
+          "id": "d",
+          "text": "ভাগ্যের ভবিষ্যদ্বাণী বিক্রি করে এমন ব্যক্তির"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহই স্বাধীনভাবে গায়েব জানেন। রাসুলরা জানেন তিনি যা প্রকাশ করেন; আত্মবিশ্বাসী অনুমান ওহি হয়ে যায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "কুরআন ২৭:৬৫",
+          "url": "https://quran.com/27/65"
+        },
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "কুরআন ৭২:২৬-২৭",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_014",
+      "conceptId": "kids_belief_judgment_scales",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কিয়ামতের দিনের পাল্লা সম্পর্কে কুরআন কী বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এটি সবচেয়ে ধনী পরিবারকে সুবিধা দেয়"
+        },
+        {
+          "id": "b",
+          "text": "এতে পূর্ণ ন্যায় হবে; কারও প্রতি অন্যায় হবে না"
+        },
+        {
+          "id": "c",
+          "text": "মানুষ গোপনে যা করে তা উপেক্ষা করে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু মানুষের জনপ্রিয়তা মাপে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি ন্যায়ের পাল্লা ও পূর্ণ ন্যায্যতা বর্ণনা করে। আল্লাহর বিচার জনতার মনোযোগ বা অনুমোদনের ওপর নির্ভর করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "47",
+          "label": "কুরআন ২১:৪৭",
+          "url": "https://quran.com/21/47"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_015",
+      "conceptId": "kids_belief_paradise_promise",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "জান্নাতের এই প্রতিশ্রুতিতে কোন দুটি বিষয় একসঙ্গে উল্লেখ আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্পদ ও খ্যাতি"
+        },
+        {
+          "id": "b",
+          "text": "উচ্চতা ও শক্তি"
+        },
+        {
+          "id": "c",
+          "text": "ঈমান ও সৎকাজ"
+        },
+        {
+          "id": "d",
+          "text": "বংশ ও দামি পোশাক"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি ঈমানদার ও সৎকাজ করা ব্যক্তিদের জান্নাতের প্রতিশ্রুতি দেয়। এটি আশা দেয়, নির্দিষ্ট কারও চূড়ান্ত পরিণতি ঠিক করার অধিকার নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "57",
+          "label": "কুরআন ৪:৫৭",
+          "url": "https://quran.com/4/57"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_016",
+      "conceptId": "kids_belief_small_deeds_count",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সুরা যিলযালের শেষ আয়াতগুলো ছোট কাজ সম্পর্কে কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু জনতা দেখে এমন কাজই গুরুত্বপূর্ণ হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "গোপন দয়া সবসময় ভুলে যাওয়া হয়"
+        },
+        {
+          "id": "c",
+          "text": "ছোট ক্ষতিকর কাজ আপনাআপনি ভালো হয়ে যায়"
+        },
+        {
+          "id": "d",
+          "text": "খুব ছোট ভালো ও মন্দ কাজও গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো অতি ছোট কাজকেও গুরুত্ব দেয়। এটি ভেবেচিন্তে সিদ্ধান্তে উৎসাহ দেয়, প্রতিটি ভাবনা বা অনিচ্ছাকৃত ভুল নিয়ে আতঙ্কে নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "কুরআন ৯৯:৭-৮",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_017",
+      "conceptId": "kids_belief_hearts_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "চেহারা ও সম্পদের বদলে হাদিসটি কিসে গুরুত্ব দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের অন্তর ও কাজ"
+        },
+        {
+          "id": "b",
+          "text": "মানুষের ফ্যাশনের জিনিসপত্র"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের পরিবারের জনপ্রিয়তা"
+        },
+        {
+          "id": "d",
+          "text": "মানুষের উচ্চতা ও চুলের সাজ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি অন্তর ও কাজকে গুরুত্ব দেয়। বাইরের চেহারা ও জিনিসপত্র দিয়ে কারও আন্তরিকতা জানা যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "সহিহ মুসলিম ২৫৬৪c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_018",
+      "conceptId": "kids_belief_life_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহর জীবন ও মৃত্যু সৃষ্টির কোন উদ্দেশ্য সুরা মুলকে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কার সবচেয়ে বেশি খেলনা আছে তা বেছে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "কারা কাজে উত্তম তা পরীক্ষা করা"
+        },
+        {
+          "id": "c",
+          "text": "খ্যাতিকে ভালো হওয়ার মাপকাঠি বানানো"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি সহজ জীবন সবচেয়ে ভালো ব্যক্তির, তা প্রমাণ করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি জীবনের সঙ্গে কাজের পরীক্ষার সম্পর্ক দেখায় এবং আল্লাহকে পরাক্রমশালী ও ক্ষমাশীল বলে। স্কুলের নম্বর কারও ঈমানের মাপকাঠি নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "কুরআন ৬৭:২",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_019",
+      "conceptId": "kids_belief_decree_responsible_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উপকারী চেষ্টার ফল হতাশাজনক হলে কোন প্রতিক্রিয়া হাদিসের নির্দেশনার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সিদ্ধান্ত নেওয়া, চেষ্টা সবসময় নিষিদ্ধ ছিল"
+        },
+        {
+          "id": "b",
+          "text": "ফলকে অন্যের ক্ষতির অনুমতি হিসেবে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর তাকদির মেনে দায়িত্বশীল চেষ্টা চালিয়ে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "ধরে নেওয়া, হতাশাজনক ফল আল্লাহর প্রত্যাখ্যানের প্রমাণ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটি উপকারী চেষ্টা, আল্লাহর সাহায্য চাওয়া ও তাঁর তাকদির মেনে নেওয়া একসঙ্গে শেখায়। বাধা আসা শিক্ষার্থীর মূল্যহীনতার প্রমাণ নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_020",
+      "conceptId": "kids_belief_cooperation_and_reliance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ভালো কাজে সহযোগিতার কুরআনি নির্দেশ সাধারণ মানবিক সাহায্য সম্পর্কে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানুষের যেকোনো সাহায্য চাওয়া সবসময় নিষিদ্ধ"
+        },
+        {
+          "id": "b",
+          "text": "শুধু একা কাজ করলেই সৎ হওয়া সম্ভব"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্যের প্রতিটি অনুরোধই ইবাদত"
+        },
+        {
+          "id": "d",
+          "text": "মানুষ ভালো কাজে পরস্পরকে সাহায্য করতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি ভালো কাজে সহযোগিতায় উৎসাহ দেয়। উপযুক্ত সাহায্যের জন্য শিক্ষককে বলা ও শিক্ষকের ইবাদত করা আলাদা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_021",
+      "conceptId": "kids_belief_six_foundations",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শুধু আল্লাহকে বিশ্বাস করলেই কি জিবরিলের হাদিসে ঈমান সম্পর্কে ছয় অংশের পুরো উত্তর সম্পূর্ণ হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, বর্ণনাটিতে আরও পাঁচটি ভিত্তি আছে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অন্য ভিত্তিগুলোর সঙ্গে ঈমানের সম্পর্ক নেই"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, ফেরেশতা ও রাসুল শুধু ঐচ্ছিক অনুমান"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ জিনিসপত্র আল্লাহর প্রতি বিশ্বাসের বিকল্প"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহর সঙ্গে ফেরেশতা, কিতাব, রাসুল, শেষ দিন ও তাকদিরের প্রতি বিশ্বাস বর্ণনাটি শেখায়। শুধু এক অংশ নয়, পুরো উত্তর শিখি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_022",
+      "conceptId": "kids_belief_ihsan_awareness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইবাদত অর্থপূর্ণ করতে ইহসানে কি মানুষের দর্শক থাকা জরুরি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, কেউ না দেখা ইবাদতের অর্থ নেই"
+        },
+        {
+          "id": "b",
+          "text": "না, দর্শক ছাড়াও আল্লাহ সম্পর্কে সচেতনতা গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, হাততালিই ভক্তির মাপকাঠি"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ ইবাদতে কখনো মনোযোগ বা যত্ন থাকা উচিত নয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইহসান আমাদের মনোযোগ আল্লাহর দিকে দেয়, যিনি আমাদের দেখেন। মানুষের উপস্থিতি আন্তরিক ইবাদতের উদ্দেশ্য তৈরি করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "50",
+          "label": "সহিহ বুখারি ৫০",
+          "url": "https://sunnah.com/bukhari:50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_023",
+      "conceptId": "kids_belief_five_pillars_meaning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পাঁচ স্তম্ভ মানে কি ইসলাম সত্যিই পাঁচটি পাথরের খুঁটির ভবন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, এটি সবার কেনা জরুরি পাঁচটি খুঁটির নাম"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু একটি ভবনের ভেতরের মানুষ মুসলিম হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "না, এটি ধর্মের প্রধান ভিত্তিগুলো বোঝায়"
+        },
+        {
+          "id": "d",
+          "text": "না, এটি কুইজ শেষ করার পাঁচটি পুরস্কার বোঝায়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসটি ভিত্তির মাধ্যমে ইসলামের প্রধান অংশগুলো বোঝায়। ঈমানকে নির্দিষ্ট ভবন থাকার ওপর নির্ভরশীল করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_024",
+      "conceptId": "kids_belief_faith_good_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ঈমানের শাখা সম্পর্কে হাদিসটি কি সব উপকারী কাজ থেকে ঈমানকে আলাদা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, বাস্তব যত্নের সঙ্গে ঈমানের কখনো সম্পর্ক নেই"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু চমৎকার বক্তৃতায় ঈমান প্রকাশ পেতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ প্রতিটি বিপজ্জনক কাজ একা করতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "না, এতে পথ থেকে ক্ষতিকর কিছু সরানোও আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনাটিতে ঈমানের শাখার মধ্যে বাস্তব ভালো কাজ আছে। বিশ্বাস শেখা কথার পাশাপাশি নিরাপদ ও বিবেচনাপূর্ণ আচরণও গড়তে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "35b",
+          "label": "সহিহ মুসলিম ৩৫b",
+          "url": "https://sunnah.com/muslim:35b"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_025",
+      "conceptId": "kids_belief_intentions_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দুজন একই রকম উপহার দিলে কি তাঁদের উদ্দেশ্যও অবশ্যই একই হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, একই রকম কাজের নিয়ত আলাদা হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, একই উপহার সবসময় একই অন্তরের প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, দামের ট্যাগ থেকে নিয়ত পড়তে পারি"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ প্রতিটি উপহারের খারাপ উদ্দেশ্য থাকতেই হবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি নিয়তকে গুরুত্ব দেয়। অন্যের গোপন উদ্দেশ্য জানার ভান না করে নিজের উদ্দেশ্য খেয়াল করতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_026",
+      "conceptId": "kids_belief_taqwa_not_status",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বিখ্যাত পারিবারিক নাম কি আপনাআপনি আল্লাহর কাছে বেশি সম্মান প্রমাণ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, বংশ সৎ আচরণের বিকল্প"
+        },
+        {
+          "id": "b",
+          "text": "না, আয়াতটি পারিবারিক অবস্থানের বদলে তাকওয়াকে গুরুত্ব দেয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, জনপ্রিয়তা প্রতিটি মানুষের গোপন ঈমান প্রকাশ করে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ প্রতিটি বিখ্যাত ব্যক্তির তাকওয়া থাকতেই পারে না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি সামাজিক অবস্থান নয়, তাকওয়ার কথা বলে। খ্যাতিকে ভালো হওয়ার প্রমাণ বানায় না, সব পরিচিত মানুষকে নিন্দার অধিকারও দেয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "কুরআন ৪৯:১৩",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_027",
+      "conceptId": "kids_belief_personal_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পরিবারের অন্য সদস্যের অন্যায় কি আপনাআপনি নির্দোষ কারও পাপ হয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সবাই প্রতিটি আত্মীয়ের পাপ উত্তরাধিকার পায়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, একই পদবি ব্যক্তিগত দোষ প্রমাণ করে"
+        },
+        {
+          "id": "c",
+          "text": "না, পরিবারের সদস্য হয়ে অন্যের নৈতিক দোষ উত্তরাধিকার পাওয়া যায় না"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ নিজের সিদ্ধান্তের জন্য কেউ দায়ী নয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি অন্যের পাপের বোঝা বহন করা প্রত্যাখ্যান করে। এতে নিজের অন্যায় বা উৎসাহ দেওয়া ক্ষতির দায় থেকে ছাড় পাওয়া যায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "কুরআন ৬:১৬৪",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_028",
+      "conceptId": "kids_belief_hope_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর ক্ষমায় আশা মানে কি পরোয়া ছাড়াই অন্যকে কষ্ট দেওয়া চালিয়ে যাওয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, রহমত প্রতিটি ক্ষতিকর সিদ্ধান্ত গ্রহণযোগ্য করে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, তওবা মানে অন্যায় আবার করার পরিকল্পনা"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ ক্ষমা চাওয়া সবসময় অর্থহীন"
+        },
+        {
+          "id": "d",
+          "text": "না, আশার সঙ্গে আন্তরিকভাবে ফিরে যাওয়া থাকে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আশার আহ্বানের পর আল্লাহর দিকে ফেরার আহ্বান আছে। রহমত ক্ষতিকে গুরুত্বহীন ভাবার বদলে পরিবর্তনে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "কুরআন ৩৯:৫৩-৫৪",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_029",
+      "conceptId": "kids_belief_angels_servants",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ফেরেশতাদের সম্মান করা মানে কি আল্লাহর পাশাপাশি তাঁদের উপাস্য ভাবা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, তাঁরা তাঁর সম্মানিত বান্দাই থাকেন"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রতিটি সম্মানিত সত্তা ইবাদত পাওয়ার যোগ্য"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, আল্লাহর আনুগত্য ফেরেশতাদের উপাস্য করে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ ইসলামী বিশ্বাসে ফেরেশতাদের স্থান নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলো আল্লাহর নির্দেশে কাজ করা সম্মানিত বান্দাদের বর্ণনা করে। সম্মান ও বিশ্বাস সৃষ্ট বান্দাকে উপাস্য বানায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "26-27",
+          "label": "কুরআন ২১:২৬-২৭",
+          "url": "https://quran.com/21/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_030",
+      "conceptId": "kids_belief_iblis_jinn",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কাল্পনিক গল্পে ইবলিসকে অবাধ্য হয়ে পতিত ফেরেশতা বললে ইসলামী পাঠ কোন বর্ণনা মানবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নাটকীয় শোনায় বলে গল্পের বর্ণনা"
+        },
+        {
+          "id": "b",
+          "text": "সে জিনদের ছিল—কুরআনের এই বক্তব্য"
+        },
+        {
+          "id": "c",
+          "text": "যে বর্ণনা সবচেয়ে বেশি বার বলা হয়"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি পাঠের জন্য বানানো নতুন পরিচয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন ইবলিসকে জিনদের একজন বলে। মজার গল্প সেই শিক্ষা বদলানোর সূত্র নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "কুরআন ১৮:৫০",
+          "url": "https://quran.com/18/50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_031",
+      "conceptId": "kids_belief_earlier_scriptures",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আগের সহিফার উল্লেখে কি কুরআন বোঝায়, মুহাম্মদ ﷺ-এর আগে আল্লাহ কোনো ওহি পাঠাননি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সব আগের নবী কোনো ওহি পাননি"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, আগের সহিফা শুধু স্কুলের খাতা"
+        },
+        {
+          "id": "c",
+          "text": "না, এতে ইব্রাহিম ও মুসার সঙ্গে সম্পর্কিত আগের ওহির কথা আছে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ প্রতিটি সাধারণ বই আল্লাহর ওহি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতগুলো ইব্রাহিম ও মুসার আগের সহিফার নাম বলে। ওহির প্রতি বিশ্বাসে কুরআনের আগে আল্লাহ যা পাঠিয়েছেন তাও আছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 87,
+          "ayahs": "18-19",
+          "label": "কুরআন ৮৭:১৮-১৯",
+          "url": "https://quran.com/87/18-19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_032",
+      "conceptId": "kids_belief_message_all_people",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইংরেজি বা বাংলা ব্যাখ্যা দরকার হলে কি কেউ নবী ﷺ-এর বার্তার সম্বোধিত মানুষের বাইরে চলে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু মাতৃভাষা আরবি এমন মানুষ সম্বোধিত"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অনুবাদ শেখায় বার্তাটি সম্পর্কহীন হয়"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ বার্তাটি শুধু ধনী পরিবারের"
+        },
+        {
+          "id": "d",
+          "text": "না, বার্তাটি সব মানুষের জন্য"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি মানবজাতির জন্য বার্তা বর্ণনা করে। উপযুক্ত ভাষার সহায়তায় অর্থ শিখলেও বার্তাটি কাদের সম্বোধন করে তা বদলায় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "158",
+          "label": "কুরআন ৭:১৫৮",
+          "url": "https://quran.com/7/158"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_033",
+      "conceptId": "kids_belief_unseen_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আত্মবিশ্বাসী ভবিষ্যদ্বাণী কি আপনাআপনি আল্লাহর রাসুলকে প্রকাশ করা জ্ঞানের সমান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, অনুমান ও ওহি আলাদা"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, আত্মবিশ্বাস অনুমানকে আল্লাহপ্রদত্ত জ্ঞান করে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, জনপ্রিয়তা প্রতিটি ভবিষ্যদ্বাণী নিশ্চিত করে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আল্লাহ রাসুলদের কিছুই প্রকাশ করতে পারেন না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ স্বাধীনভাবে গায়েব জানেন এবং ইচ্ছামতো রাসুলদের জানাতে পারেন। কারও আত্মবিশ্বাসী দাবি এমন জ্ঞানের প্রমাণ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "কুরআন ২৭:৬৫",
+          "url": "https://quran.com/27/65"
+        },
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "কুরআন ৭২:২৬-২৭",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_034",
+      "conceptId": "kids_belief_judgment_scales",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনে বর্ণিত ন্যায়ের পাল্লা কি কারও খ্যাতির ওপর নির্ভর করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, বিখ্যাত ব্যক্তিরা প্রতিটি কাজের ওজন ঠিক করেন"
+        },
+        {
+          "id": "b",
+          "text": "না, আল্লাহর বিচার ন্যায্য, জনপ্রিয়তানির্ভর নয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, অপরিচিত ব্যক্তির কাজ কখনো বিবেচিত হয় না"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আয়াতটি বলে ন্যায্যতা অসম্ভব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অতি ছোট মনে হওয়া বিষয়সহ পূর্ণ ন্যায়ের আশ্বাস আয়াতটি দেয়। লোকের মনোযোগ আল্লাহর ন্যায্যতার মাপকাঠি নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "47",
+          "label": "কুরআন ২১:৪৭",
+          "url": "https://quran.com/21/47"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_035",
+      "conceptId": "kids_belief_paradise_promise",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জান্নাতের এই প্রতিশ্রুতিতে মর্যাদাপূর্ণ পদবি কি ঈমান ও ভালো কাজের বিকল্প?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, আয়াতে শুধু পদবিই দরকার"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, পরিবারের খ্যাতিতে ব্যক্তিগত আচরণের গুরুত্ব থাকে না"
+        },
+        {
+          "id": "c",
+          "text": "না, আয়াতটিতে ঈমান ও সৎকাজের উল্লেখ আছে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আয়াতটি কোনো আশাই দেয় না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "প্রতিশ্রুতিটিতে ঈমান ও ভালো কাজ একসঙ্গে আছে। পারিবারিক নামের প্রতিযোগিতা না করে এটি আশাময় দিকনির্দেশনা দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "57",
+          "label": "কুরআন ৪:৫৭",
+          "url": "https://quran.com/4/57"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_036",
+      "conceptId": "kids_belief_small_deeds_count",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্য কেউ লক্ষ করেনি বলে কি ক্ষতিকর সিদ্ধান্ত গুরুত্ব হারায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, অলক্ষ্যে করা কাজের গুরুত্ব নেই"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু প্রকাশ্য ভুলই গুরুত্বপূর্ণ হতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ অলক্ষ্যে করা প্রতিটি কাজ আপনাআপনি ক্ষতিকর"
+        },
+        {
+          "id": "d",
+          "text": "না, আয়াতগুলো শেখায় ছোট কাজও গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো ছোট ভালো ও মন্দ কাজেও যত্ন নিতে উৎসাহ দেয়। মানুষ না দেখলে ইচ্ছাকৃত ক্ষতিকর সিদ্ধান্ত ক্ষতিহীন হয় না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "কুরআন ৯৯:৭-৮",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_037",
+      "conceptId": "kids_belief_hearts_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শুধু দামি পোশাক কি কারও অন্তর বেশি আন্তরিক প্রমাণ করতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, চেহারা আন্তরিকতা প্রকাশ করে না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, দামের ট্যাগ কারও ঈমান মাপে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, ফ্যাশনের পোশাক সৎকাজের নিশ্চয়তা দেয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সুন্দর পোশাকের কোনো ব্যক্তিই আন্তরিক হতে পারেন না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি চেহারা ও সম্পদের বদলে অন্তর ও কাজকে গুরুত্ব দেয়। পোশাক দেখে প্রশংসা বা সন্দেহ—কোনোটিতেই অন্তর জানা যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "সহিহ মুসলিম ২৫৬৪c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_038",
+      "conceptId": "kids_belief_life_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জীবনকে পরীক্ষা বলা মানে কি স্কুলের কুইজের নম্বর কারও ঈমান মাপে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি পূর্ণ নম্বর সেরা ঈমানের নিশ্চয়তা"
+        },
+        {
+          "id": "b",
+          "text": "না, পড়াশোনার নম্বর কারও ঈমান মাপে না"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কম নম্বর আল্লাহর প্রত্যাখ্যান প্রমাণ করে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ আয়াতে ভালো কাজের স্থান নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি কাজের পরীক্ষা সম্পর্কে, শ্রেণিতে ঈমানের ক্রম নির্ধারণ সম্পর্কে নয়। নম্বর দিয়ে শিশুর মূল্য বিচার না করে শেখা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "কুরআন ৬৭:২",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_039",
+      "conceptId": "kids_belief_decree_responsible_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর তাকদিরে বিশ্বাস মানে কি এড়ানো যেত এমন ভুল থেকে শিখতে অস্বীকার করা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, তাকদির ভবিষ্যতের সব চেষ্টা অর্থহীন করে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, প্রতিটি বাধার জন্য অন্যকে দোষ দিতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "না, ফল মেনে নেওয়ার সঙ্গে দায়িত্বশীল উন্নতিও সম্ভব"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ ফল মানলে আল্লাহর সাহায্য চাওয়া নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসটি উপকারী চেষ্টা ও আল্লাহর সাহায্য চাওয়ায় উৎসাহ দেয়। ঘটে যাওয়া মেনে নেওয়া পরেরবার ভালো পদক্ষেপের বাধা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_040",
+      "conceptId": "kids_belief_cooperation_and_reliance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পাঠ বোঝাতে শিক্ষককে বললেই কি তাঁর ইবাদত করা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, মানুষের কাছে প্রতিটি অনুরোধ ইবাদত"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শিখতে হলে মানুষের সহায়তা কখনো নেওয়া যাবে না"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ প্রতিটি সহযোগিতাই সবসময় ভালো"
+        },
+        {
+          "id": "d",
+          "text": "না, ভালো কাজে সাধারণ সাহায্য ও ইবাদত আলাদা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি অন্যায়ে সহযোগিতা প্রত্যাখ্যান করে ভালো কাজে সহযোগিতায় উৎসাহ দেয়। উপযুক্ত মানবিক সাহায্য আর কাউকে ইবাদত দেওয়া এক নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_041",
+      "conceptId": "kids_belief_six_foundations",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কর্মপত্রে আল্লাহ, ফেরেশতা, কিতাব, রাসুল ও শেষ দিনের তালিকা আছে। জিবরিলের উত্তরের কোন ভিত্তি বাদ পড়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো-মন্দের তাকদিরের প্রতি বিশ্বাস"
+        },
+        {
+          "id": "b",
+          "text": "বিশেষ ধরনের পোশাক থাকা"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি শিক্ষকের প্রশংসা পাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে বিখ্যাত পরিবারের হওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসের উত্তরে লেখা পাঁচ ভিত্তির সঙ্গে তাকদিরও আছে। জনপ্রিয়তার ক্রম নির্ধারণ না বানিয়ে পুরো তালিকাটি শেখো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "সহিহ মুসলিম ৮a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_042",
+      "conceptId": "kids_belief_ihsan_awareness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কেউ প্রশংসা করছে না, তবুও শান্তভাবে ইবাদত শিখছ। কোন ভাবনায় ইহসান প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাততালি ছাড়া ইবাদতের উদ্দেশ্য নেই"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ আমাকে দেখেন, তাই যত্ন নিয়ে ইবাদত করব"
+        },
+        {
+          "id": "c",
+          "text": "শুধু শিক্ষকই ইবাদতকে অর্থ দিতে পারেন"
+        },
+        {
+          "id": "d",
+          "text": "ক্যামেরা চললেই শুধু যত্ন নেওয়া উচিত"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইহসান যত্নশীল ইবাদতের সঙ্গে আল্লাহ সম্পর্কে সচেতনতা যুক্ত করে। নীরব অনুশীলন গুরুত্বপূর্ণ হতে প্রকাশ্য দর্শক লাগে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "50",
+          "label": "সহিহ বুখারি ৫০",
+          "url": "https://sunnah.com/bukhari:50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_043",
+      "conceptId": "kids_belief_five_pillars_meaning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শ্রেণির পোস্টারে চার স্তম্ভ আছে: শাহাদাহ, নামাজ, জাকাত ও রমজানের রোজা। কোন স্তম্ভে তালিকা পূর্ণ হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ট্রফি সংগ্রহ"
+        },
+        {
+          "id": "b",
+          "text": "কয়েকটি ভাষায় কথা বলা"
+        },
+        {
+          "id": "c",
+          "text": "হজ"
+        },
+        {
+          "id": "d",
+          "text": "বড় বাড়ি থাকা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসে বলা পাঁচ ভিত্তির মধ্যে হজ আছে। তালিকা শেখা আর শিশুকে সঙ্গে সঙ্গে সফরে যেতে বলা আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_044",
+      "conceptId": "kids_belief_faith_good_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক প্রাপ্তবয়স্ক নিরাপদে হাঁটার পথের বাধা সরালেন। কাজটির মূল্য বোঝাতে ঈমানের কোন শিক্ষা সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কুইজে মানুষ যা বলে শুধু তা নিয়েই ঈমান"
+        },
+        {
+          "id": "b",
+          "text": "পথচারীদের সাহায্যের সঙ্গে কখনো ঈমানের সম্পর্ক নেই"
+        },
+        {
+          "id": "c",
+          "text": "উপকারী কাজ ভিডিও করলেই শুধু গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "পথ থেকে ক্ষতি সরানো ঈমানের একটি শাখা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে ঈমানের শাখার মধ্যে ক্ষতি সরানো আছে। বিপজ্জনক জিনিস নিজেরা না ধরে শিশুরা বড় কাউকে জানাবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "35b",
+          "label": "সহিহ মুসলিম ৩৫b",
+          "url": "https://sunnah.com/muslim:35b"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_045",
+      "conceptId": "kids_belief_intentions_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দুই সহপাঠী জিনিস ভাগ করে। একজন সাহায্য করতে চায়; অন্যজন শুধু হাততালি চায়। কোন শিক্ষাটি প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দেখতে একই রকম কাজের নিয়ত আলাদা হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "একই জিনিস দেওয়া একই নিয়তের প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু জিনিসের দামই উদ্দেশ্য বোঝাতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে জোরের হাততালি সবচেয়ে আন্তরিক অন্তরের প্রমাণ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "পরিস্থিতিটি নিয়ত কেন গুরুত্বপূর্ণ তা বোঝায়। বাস্তবে অন্যের অন্তর পড়ার দাবি না করে নিজের উদ্দেশ্য খেয়াল করো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_046",
+      "conceptId": "kids_belief_taqwa_not_status",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক শিশু বলল, বিখ্যাত পদবিই তাকে আল্লাহর কাছে ভালো প্রমাণ করে। কুরআন অনুযায়ী কী মনে করাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পদবি সবসময় গোপন আন্তরিকতা মাপে"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতটি পারিবারিক মর্যাদার বদলে তাকওয়াকে মূল্য দেয়"
+        },
+        {
+          "id": "c",
+          "text": "খ্যাতি ভালো আচরণের সব প্রয়োজনের বিকল্প"
+        },
+        {
+          "id": "d",
+          "text": "শুধু অপরিচিত পরিবারের শিশুরা তাকওয়াবান হতে পারে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি বংশ নয়, তাকওয়ার সঙ্গে সম্মান যুক্ত করে। অন্যের ঈমানের ক্রম নির্ধারণ করতে না বলেই এটি বিনয় শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "কুরআন ৪৯:১৩",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_047",
+      "conceptId": "kids_belief_personal_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একই পরিবার বলে কাজিনের অন্যায়ের দোষ নির্দোষ শিশুকে দেওয়া হচ্ছে। কোন নীতি প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একই পারিবারিক নাম ব্যক্তিগত দোষ প্রমাণ করে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি কাজিন আপনাআপনি প্রতিটি কাজে অংশীদার"
+        },
+        {
+          "id": "c",
+          "text": "একজন অন্যের পাপের বোঝা বহন করে না"
+        },
+        {
+          "id": "d",
+          "text": "ভদ্র হতে নির্দোষ ব্যক্তিকে দোষ নিতেই হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি শেখায়, অন্যের পাপের বোঝা উত্তরাধিকার পাওয়া যায় না। শুধু আত্মীয়ের আচরণের জন্য শিশুকে লজ্জা দেওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "কুরআন ৬:১৬৪",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_048",
+      "conceptId": "kids_belief_hope_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খারাপ আচরণের পর সারা ভাবছে, আল্লাহর রহমত তাকে ছুঁবে না, তাই উন্নতির অর্থ নেই। কী মনে রাখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একটি ভুল চিরদিনের জন্য সব আশা শেষ করে"
+        },
+        {
+          "id": "b",
+          "text": "রহমত মানে আরও ক্ষতির পরিকল্পনা করা উচিত"
+        },
+        {
+          "id": "c",
+          "text": "শুধু মানুষের প্রশংসাই তওবার অনুমতি দিতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "হতাশ হয়ো না; আল্লাহর দিকে ফেরো ও উন্নতির চেষ্টা করো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো আল্লাহর রহমতে আশা ও আন্তরিকভাবে ফিরতে আহ্বান করে। সারা ক্ষমা চাইতে এবং মানুষের সঙ্গে ভালো আচরণ শিখতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "কুরআন ৩৯:৫৩-৫৪",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_049",
+      "conceptId": "kids_belief_angels_servants",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক পাঠে বলা হলো, ফেরেশতারা আল্লাহকে মানেন, তাই তাঁরাও উপাস্য। কোন সংশোধন সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর আনুগত্য তাঁর বান্দাদের উপাস্য করে না"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি অনুগত বান্দা উপাস্য হয়ে যান"
+        },
+        {
+          "id": "c",
+          "text": "ফেরেশতারা আল্লাহকে তাঁদের নির্দেশ মানান"
+        },
+        {
+          "id": "d",
+          "text": "কুরআন বলে ফেরেশতারা আল্লাহর পাশে ইবাদত পাওয়ার যোগ্য"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলো ফেরেশতাদের আল্লাহর নির্দেশে কাজ করা সম্মানিত বান্দা বলে। আনুগত্য তাঁদের আল্লাহর উপাস্যত্বের অংশীদার করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "26-27",
+          "label": "কুরআন ২১:২৬-২৭",
+          "url": "https://quran.com/21/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_050",
+      "conceptId": "kids_belief_iblis_jinn",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুইজ কার্ডে আছে, “ইবলিস জিনদের একজন ছিল।” শুধু কাল্পনিক সিনেমার সঙ্গে মেলাতে কি তা বদলাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, কাল্পনিক সিনেমা ইসলামী বিশ্বাস ঠিক করে"
+        },
+        {
+          "id": "b",
+          "text": "না, কার্ডটি কুরআনের বক্তব্যের সঙ্গে মেলে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সবচেয়ে নাটকীয় বর্ণনাই সত্য হতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সিনেমার প্রতিটি তথ্য ওহি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইবলিসের পরিচয়ে ইসলামী শিক্ষা কুরআন অনুসরণ করে। কাল্পনিক বিনোদন তার সম্পর্কে আমাদের বিশ্বাস ঠিক করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "কুরআন ১৮:৫০",
+          "url": "https://quran.com/18/50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_051",
+      "conceptId": "kids_belief_earlier_scriptures",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু ভাবে, কুরআনের আগে কোনো সহিফা ছিল না। সুরা আল-আলায় বলা কোন জোড়া এটি ঠিক করতে সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "স্কুলের দুটি আধুনিক পাঠ্যবই"
+        },
+        {
+          "id": "b",
+          "text": "এ বছর লেখা দুটি কবিতার বই"
+        },
+        {
+          "id": "c",
+          "text": "ইব্রাহিম ও মুসার সহিফা"
+        },
+        {
+          "id": "d",
+          "text": "ওহির সঙ্গে সম্পর্কহীন দুটি খাতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সুরা আল-আলায় ইব্রাহিম ও মুসার আগের সহিফার উল্লেখ আছে। বাড়তি তথ্য না বানিয়েই এটি কুরআনের আগের ওহি সম্পর্কে শেখায় সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 87,
+          "ayahs": "18-19",
+          "label": "কুরআন ৮৭:১৮-১৯",
+          "url": "https://quran.com/87/18-19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_052",
+      "conceptId": "kids_belief_message_all_people",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বাড়িতে বাংলা বলে লিনা ভাবছে, নবী ﷺ-এর বার্তা তার জন্য নয়। কোন উত্তর আয়াতের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু মাতৃভাষা আরবি এমন মানুষেরা সম্বোধিত"
+        },
+        {
+          "id": "b",
+          "text": "তার বাড়ির ভাষা ইসলাম শেখা অসম্ভব করে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু একটি জাতীয়তার মানুষ বার্তাটি পড়তে পারে"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর বার্তা ভিন্ন ভাষাভাষীসহ সব মানুষকে সম্বোধন করে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন মুহাম্মদ ﷺ-কে সব মানুষের রাসুল বলে। ভাষার সহায়তায় লিনা তাকে অন্তর্ভুক্ত করা বার্তা বুঝতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "158",
+          "label": "কুরআন ৭:১৫৮",
+          "url": "https://quran.com/7/158"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_053",
+      "conceptId": "kids_belief_unseen_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অনলাইন অ্যাকাউন্ট দাবি করে, এটি স্বাধীনভাবে প্রতিটি মানুষের ভবিষ্যৎ জানে। ইসলামী বিশ্বাস অনুযায়ী কী মনে করাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গায়েবের পূর্ণ স্বাধীন জ্ঞান আল্লাহরই"
+        },
+        {
+          "id": "b",
+          "text": "অনেক অনুসারী অ্যাকাউন্টকে সর্বজ্ঞ করে"
+        },
+        {
+          "id": "c",
+          "text": "টাকা নেওয়া তার দাবিগুলো ওহি প্রমাণ করে"
+        },
+        {
+          "id": "d",
+          "text": "আত্মবিশ্বাসী কথা ভবিষ্যতের প্রতিটি দাবি নিশ্চিত করে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "গায়েব জানার দাবি আত্মবিশ্বাস বা জনপ্রিয়তায় প্রমাণিত হয় না। এমন ভবিষ্যদ্বাণীর ওপর নির্ভর না করে বিশ্বস্ত বড় কাউকে জিজ্ঞেস করো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "কুরআন ২৭:৬৫",
+          "url": "https://quran.com/27/65"
+        },
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "কুরআন ৭২:২৬-২৭",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_054",
+      "conceptId": "kids_belief_judgment_scales",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সহপাঠী ভাবে, আল্লাহর বিচার জনপ্রিয়দের সুবিধা দেয়। পাল্লার আয়াতটি এর বদলে কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে বেশি দর্শক প্রতিটি বিচার ঠিক করে"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ ন্যায়ের পাল্লা স্থাপন করেন, কারও প্রতি অন্যায় করেন না"
+        },
+        {
+          "id": "c",
+          "text": "অপরিচিত মানুষের কাজ কখনো বিবেচিত হয় না"
+        },
+        {
+          "id": "d",
+          "text": "জনপ্রিয়তা ন্যায্যতার বিকল্প হতে পারে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অতি ছোট কাজেও পূর্ণ ন্যায়ের প্রতিশ্রুতি আয়াতটি দেয়। আল্লাহ জনপ্রিয়তা দিয়ে বিচার করেন না—এ আশ্বাস এতে আছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "47",
+          "label": "কুরআন ২১:৪৭",
+          "url": "https://quran.com/21/47"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_055",
+      "conceptId": "kids_belief_paradise_promise",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কর্মপত্রে জানতে চাওয়া হলো, আয়াতে জান্নাতের প্রতিশ্রুতিতে কী উল্লেখ আছে। কোন উত্তর বাছবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে বিখ্যাত পদবি থাকা"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে দামি জিনিসপত্র থাকা"
+        },
+        {
+          "id": "c",
+          "text": "ঈমান আনা ও সৎকাজ করা"
+        },
+        {
+          "id": "d",
+          "text": "শ্রেণির প্রতিটি প্রতিযোগিতায় জেতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতের প্রতিশ্রুতিতে ঈমান ও ভালো কাজ একসঙ্গে আছে। প্রশ্নটি শিক্ষা সম্পর্কে, নির্দিষ্ট শিশুর চূড়ান্ত পরিণতি বিচার সম্পর্কে নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "57",
+          "label": "কুরআন ৪:৫৭",
+          "url": "https://quran.com/4/57"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_056",
+      "conceptId": "kids_belief_small_deeds_count",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু বলল, কেউ দেখেনি বলে ছোট দয়ার কাজ মূল্যহীন। সুরা যিলযাল অনুযায়ী কোন উত্তর সঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ছবিসহ কাজ গণ্য হয়"
+        },
+        {
+          "id": "b",
+          "text": "অলক্ষ্যে করা দয়া সবসময় বৃথা"
+        },
+        {
+          "id": "c",
+          "text": "ছোট কাজের স্থান বিশ্বাসে নেই"
+        },
+        {
+          "id": "d",
+          "text": "অতি ছোট ভালো কাজও গুরুত্বপূর্ণ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতগুলো অতি ছোট কাজকেও গুরুত্ব দেয়। ছোট দয়া মূল্যবান হতে সবার সামনে প্রকাশ করা জরুরি নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "কুরআন ৯৯:৭-৮",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_057",
+      "conceptId": "kids_belief_hearts_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিশুরা পোশাকের দাম দিয়ে পরস্পরের ঈমানের ক্রম ঠিক করছে। হাদিস অনুযায়ী কী মনে করাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ দামের ট্যাগ নয়, অন্তর ও কাজকে গুরুত্ব দেন"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে দামি পোশাক সেরা অন্তরের প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি সাধারণ পোশাক পূর্ণ আন্তরিকতার প্রমাণ"
+        },
+        {
+          "id": "d",
+          "text": "চুলের সাজ থেকে কারও ঈমান পড়া যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি অন্তর ও কাজের দিকে মনোযোগ দেয়। পোশাক শিশুদের অন্য কারও ঈমান মাপার উপায় দেয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "সহিহ মুসলিম ২৫৬৪c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_058",
+      "conceptId": "kids_belief_life_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কম নম্বর পেয়ে শিক্ষার্থী বলল, “এতে প্রমাণ হয় আল্লাহর কাছে আমার মূল্য নেই।” কোন সংশোধন উপকারী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি কম নম্বর আল্লাহর প্রত্যাখ্যানের প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "স্কুলের নম্বর ঈমান মাপে না; শেখা ও ভালো কাজ চালিয়ে যাও"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সেরা শিক্ষার্থীরা কখনো ভালো কাজ করতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "কুইজের ফল কারও চূড়ান্ত পরিণতি প্রকাশ করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি জীবনের কাজের পরীক্ষা সম্পর্কে। পড়াশোনার ফলকে ঈমান বা মূল্যের সঙ্গে না মিশিয়ে শিক্ষার্থীর উন্নতিতে সাহায্য করো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "কুরআন ৬৭:২",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_059",
+      "conceptId": "kids_belief_decree_responsible_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি ধাপ বাদ দেওয়ায় ইউসুফের প্রকল্প ভুল হলো। তাকদির মানা ও দায়িত্ব নেওয়া কোনটিতে একসঙ্গে আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বলা, তাকদির মানে ভুল থেকে শেখা নিষিদ্ধ"
+        },
+        {
+          "id": "b",
+          "text": "জড়িত নয় এমন সহপাঠীকে দোষ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "ফল মেনে ধাপটি ঠিক করে আবার চেষ্টা করা"
+        },
+        {
+          "id": "d",
+          "text": "চিরদিনের জন্য প্রতিটি উপকারী চেষ্টা ছেড়ে দেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসটি উপকারী চেষ্টা ও আল্লাহর সাহায্য চাওয়ায় উৎসাহ দেয়। ফল মেনে নেওয়ার সঙ্গে দায়িত্ব নেওয়া ও পরিকল্পনা ভালো করাও সম্ভব।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "সহিহ মুসলিম ২৬৬৪",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_060",
+      "conceptId": "kids_belief_cooperation_and_reliance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দোয়া করে পাঠ বুঝতে শিক্ষকের সাহায্য চাইলে কাজ দুটি কীভাবে বোঝা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শিক্ষককে বললেই তাঁর ইবাদত করা হয়"
+        },
+        {
+          "id": "b",
+          "text": "দোয়া করলে অন্যের কাছে শেখা নিষিদ্ধ"
+        },
+        {
+          "id": "c",
+          "text": "মানুষের ওপর যেকোনো নির্ভরতাই তার ইবাদত"
+        },
+        {
+          "id": "d",
+          "text": "উপযুক্ত মানবিক সাহায্য আল্লাহর দিকে ফেরার সঙ্গে চলতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন ভালো কাজে সহযোগিতায় উৎসাহ দেয়। শিক্ষকের কাছে শেখা সাধারণ সহায়তা, আর ইবাদত আল্লাহরই উদ্দেশে থাকে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    }
+  ]
+}

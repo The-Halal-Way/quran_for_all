@@ -1,0 +1,2304 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "hadith_knowledge",
+  "title": "Hadith Knowledge",
+  "description": "Little Muslim → Mid. Short questions for children who know the first hadith basics. Covers transmission, careful reporting, good character, sincere care, preventing wrongdoing, supporting the sick, hospitality, privacy, forgiveness, familiar manners, balanced practice, clear teaching and learning through questions. Includes everyday home and classroom situations. An adult may read questions aloud or explain unfamiliar words. All questions are Mid level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Builds on first hadith basics through simple meanings, common misconceptions and straightforward applications. No narrator biographies, chain analysis, specialist grading debates or memorization of reference numbers is required. Level is editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked hadith reports and the hadith introduction checked during preparation. The Sunan Abi Dawud 4990 report is graded Hasan by Al-Albani on the linked source; most other reports are from Sahih al-Bukhari or Sahih Muslim. Sahih Muslim 5 is in the collection's Introduction. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Present-day scenarios illustrate applications; they are not events narrated in the cited reports. A child's duty is not equated with an adult's legal responsibility. General teachings about avoiding harm and caring for others are not permission to mistreat anyone of another faith. Reporting concerns to trusted adults is distinguished from spreading unverified claims. Forgiveness does not require tolerating ongoing harm; preventing bullying does not require a child to use physical force. Visitors, permission, gifts and learning routines are presented with suitable adult guidance. The right-side example concerns putting on shoes and does not generalize every action or judge disability. Breathing guidance concerns the vessel, not restricting normal breathing. Repetition in teaching is explained by its purpose of understanding, not as a requirement to repeat every sentence in ordinary speech. No question asks children to judge another person's faith or worth. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_mid_hadith_knowledge_001",
+      "conceptId": "kids_hadith_transmitted_reports",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How have hadith reports reached later generations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Through people transmitting them and scholars preserving them"
+        },
+        {
+          "id": "b",
+          "text": "Through choosing the most popular guesses"
+        },
+        {
+          "id": "c",
+          "text": "Through inventing a new message each year"
+        },
+        {
+          "id": "d",
+          "text": "Through treating every poem as the Prophet's ﷺ words"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Hadith reports were transmitted and carefully studied. Learning about that process helps us appreciate why reliable reporting matters.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_002",
+      "conceptId": "kids_hadith_not_repeat_everything",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith about repeating everything we hear warn against?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Checking whether a story is reliable"
+        },
+        {
+          "id": "b",
+          "text": "Passing on reports without proper care"
+        },
+        {
+          "id": "c",
+          "text": "Asking a teacher to clarify something"
+        },
+        {
+          "id": "d",
+          "text": "Admitting that we do not know"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Repeating everything we hear can spread falsehood. We should be careful about what we present as true.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "Sahih Muslim 5",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_003",
+      "conceptId": "kids_hadith_safe_words_hands",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which conduct does the hadith about a Muslim's tongue and hands praise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hurting people whenever we feel annoyed"
+        },
+        {
+          "id": "b",
+          "text": "Using insults to win attention"
+        },
+        {
+          "id": "c",
+          "text": "Keeping fellow Muslims safe from our harmful words and actions"
+        },
+        {
+          "id": "d",
+          "text": "Pushing others to prove our importance"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith connects good Muslim conduct with avoiding harm through words and hands. It calls us to take our behavior seriously.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "Sahih al-Bukhari 10",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_004",
+      "conceptId": "kids_hadith_help_stop_oppression",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did the Prophet ﷺ explain helping someone who is wronging others?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help them hurt more people"
+        },
+        {
+          "id": "b",
+          "text": "Hide every wrong they commit"
+        },
+        {
+          "id": "c",
+          "text": "Praise them for being powerful"
+        },
+        {
+          "id": "d",
+          "text": "Stop them from doing the wrong"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Stopping someone from oppressing others is a way of helping them. Supporting a person does not mean supporting their harmful behavior.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "Sahih al-Bukhari 2444",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_005",
+      "conceptId": "kids_hadith_good_character",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality did the Prophet ﷺ praise in the hadith about the best among people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Good manners and character"
+        },
+        {
+          "id": "b",
+          "text": "Owning the most expensive clothes"
+        },
+        {
+          "id": "c",
+          "text": "Always being the loudest speaker"
+        },
+        {
+          "id": "d",
+          "text": "Making others feel small"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith gives special value to good character. What we learn should influence how we speak and treat people.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3559",
+          "label": "Sahih al-Bukhari 3559",
+          "url": "https://sunnah.com/bukhari:3559"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_006",
+      "conceptId": "kids_hadith_sincere_care",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What attitude toward fellow Muslims fits the hadith about sincere care and advice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enjoying their embarrassment"
+        },
+        {
+          "id": "b",
+          "text": "Wanting what is truly good for them"
+        },
+        {
+          "id": "c",
+          "text": "Pretending to help while planning harm"
+        },
+        {
+          "id": "d",
+          "text": "Giving advice only to show off"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith teaches sincerity, including toward fellow Muslims. Helpful advice should come from care, not a wish to humiliate.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "55a",
+          "label": "Sahih Muslim 55a",
+          "url": "https://sunnah.com/muslim:55a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_007",
+      "conceptId": "kids_hadith_care_for_sick",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which act of care is explicitly encouraged in the hadith about people who are ill?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mocking someone for being unwell"
+        },
+        {
+          "id": "b",
+          "text": "Making illness into a reason for exclusion"
+        },
+        {
+          "id": "c",
+          "text": "Visiting the sick"
+        },
+        {
+          "id": "d",
+          "text": "Ignoring every person who needs care"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ encouraged visiting the sick. This teaching reminds us to care about people when they are unwell.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5649",
+          "label": "Sahih al-Bukhari 5649",
+          "url": "https://sunnah.com/bukhari:5649"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_008",
+      "conceptId": "kids_hadith_feeding_greetings",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair of actions did the Prophet ﷺ praise when asked about good Islamic conduct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boasting about wealth and refusing every greeting"
+        },
+        {
+          "id": "b",
+          "text": "Keeping all food and mocking newcomers"
+        },
+        {
+          "id": "c",
+          "text": "Speaking only to people who can give us gifts"
+        },
+        {
+          "id": "d",
+          "text": "Feeding others and offering greetings of peace"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report joins feeding others with giving salam. Kindness and a welcoming greeting are part of everyday Islamic conduct.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "Sahih al-Bukhari 12",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_009",
+      "conceptId": "kids_hadith_avoid_envy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which attitude does the hadith warn us to avoid toward fellow Muslims?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Envy and hostility"
+        },
+        {
+          "id": "b",
+          "text": "Wishing them well"
+        },
+        {
+          "id": "c",
+          "text": "Treating them with respect"
+        },
+        {
+          "id": "d",
+          "text": "Caring about their dignity"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith warns against envy and hostility. Another person's blessing should not become a reason to hate or mistreat them.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564a",
+          "label": "Sahih Muslim 2564a",
+          "url": "https://sunnah.com/muslim:2564a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_010",
+      "conceptId": "kids_hadith_considerate_guest",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith teach a guest to avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respecting the host's situation"
+        },
+        {
+          "id": "b",
+          "text": "Staying in a way that burdens the host"
+        },
+        {
+          "id": "c",
+          "text": "Being grateful for hospitality"
+        },
+        {
+          "id": "d",
+          "text": "Speaking politely during a visit"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith teaches generous hospitality and consideration from guests. Visiting should not become a burden on the host.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6135",
+          "label": "Sahih al-Bukhari 6135",
+          "url": "https://sunnah.com/bukhari:6135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_011",
+      "conceptId": "kids_hadith_permission_three",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith teach after asking permission to enter three times without receiving it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep demanding entry without stopping"
+        },
+        {
+          "id": "b",
+          "text": "Push the door open"
+        },
+        {
+          "id": "c",
+          "text": "Return rather than force entry"
+        },
+        {
+          "id": "d",
+          "text": "Assume silence means permission"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught returning when permission is not given after three requests. Respecting another person's home includes accepting that limit.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6245",
+          "label": "Sahih al-Bukhari 6245",
+          "url": "https://sunnah.com/bukhari:6245"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_012",
+      "conceptId": "kids_hadith_include_third_person",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When three people sit together, what private conversation does the hadith warn against?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All three joining a friendly conversation"
+        },
+        {
+          "id": "b",
+          "text": "One person asking a question everyone can hear"
+        },
+        {
+          "id": "c",
+          "text": "Listening respectfully when someone is speaking"
+        },
+        {
+          "id": "d",
+          "text": "Two speaking secretly while leaving the third excluded"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith considers the hurt caused by excluding the third person. Conversation should take other people's feelings into account.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "Sahih al-Bukhari 6290",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_013",
+      "conceptId": "kids_hadith_forgiveness_honor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith teach about forgiving another person?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah increases a person's honor through forgiveness"
+        },
+        {
+          "id": "b",
+          "text": "Forgiveness always makes a person worthless"
+        },
+        {
+          "id": "c",
+          "text": "Only revenge can bring honor"
+        },
+        {
+          "id": "d",
+          "text": "Forgiving means losing every right to safety"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith praises forgiveness as a source of honor from Allah. Forgiveness need not be confused with worthlessness or weakness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "Sahih Muslim 2588",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_014",
+      "conceptId": "kids_hadith_right_shoe_first",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When putting on shoes, which side did the Prophet ﷺ like to begin with?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The left"
+        },
+        {
+          "id": "b",
+          "text": "The right"
+        },
+        {
+          "id": "c",
+          "text": "Whichever shoe was more expensive"
+        },
+        {
+          "id": "d",
+          "text": "A different side for each new day"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah described the Prophet ﷺ liking to begin with the right when putting on shoes. This is a familiar example of everyday Sunnah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "168",
+          "label": "Sahih al-Bukhari 168",
+          "url": "https://sunnah.com/bukhari:168"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_015",
+      "conceptId": "kids_hadith_breathe_away_cup",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith teach about breathing while drinking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always breathe directly into the cup"
+        },
+        {
+          "id": "b",
+          "text": "Blow into another person's drink for fun"
+        },
+        {
+          "id": "c",
+          "text": "Do not breathe into the drinking vessel"
+        },
+        {
+          "id": "d",
+          "text": "Treat drinking manners as having no guidance"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith teaches not breathing into the vessel. We can move the cup away when we need to breathe.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5630",
+          "label": "Sahih al-Bukhari 5630",
+          "url": "https://sunnah.com/bukhari:5630"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_016",
+      "conceptId": "kids_hadith_avoid_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith about ease in religion warn against?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning at a sensible pace"
+        },
+        {
+          "id": "b",
+          "text": "Taking guidance when we need it"
+        },
+        {
+          "id": "c",
+          "text": "Trying to improve steadily"
+        },
+        {
+          "id": "d",
+          "text": "Overburdening ourselves until we cannot continue"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith teaches balance rather than making religion unnecessarily difficult. A manageable approach helps us continue learning and practicing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "Sahih al-Bukhari 39",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_017",
+      "conceptId": "kids_hadith_repeat_for_understanding",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Why did the Prophet ﷺ repeat a statement three times in the report narrated by Anas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "So listeners could understand it properly"
+        },
+        {
+          "id": "b",
+          "text": "So nobody could ask a question"
+        },
+        {
+          "id": "c",
+          "text": "So the message would become a different teaching"
+        },
+        {
+          "id": "d",
+          "text": "So only the fastest listeners could learn"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report connects repetition with understanding. Teaching should help people grasp the message rather than leave them confused.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "Sahih al-Bukhari 95",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_018",
+      "conceptId": "kids_hadith_learning_questions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did the Prophet ﷺ respond when a visitor wanted to ask him questions about religion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He said learning through questions was always forbidden"
+        },
+        {
+          "id": "b",
+          "text": "He allowed the visitor to ask"
+        },
+        {
+          "id": "c",
+          "text": "He refused every question about prayer"
+        },
+        {
+          "id": "d",
+          "text": "He demanded that the visitor already know every answer"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report shows a visitor asking questions and receiving answers. Asking to understand can be part of sincere learning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "63",
+          "label": "Sahih al-Bukhari 63",
+          "url": "https://sunnah.com/bukhari:63"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_019",
+      "conceptId": "kids_hadith_truthful_humor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith warn against when trying to make people laugh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Speaking truthfully and kindly"
+        },
+        {
+          "id": "b",
+          "text": "Enjoying a truthful funny memory"
+        },
+        {
+          "id": "c",
+          "text": "Telling lies for their amusement"
+        },
+        {
+          "id": "d",
+          "text": "Avoiding jokes that deceive people"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report warns against lying to entertain people. Getting a laugh does not make deliberate falsehood acceptable.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4990",
+          "label": "Sunan Abi Dawud 4990",
+          "url": "https://sunnah.com/abudawud:4990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_020",
+      "conceptId": "kids_hadith_planting_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What can count as charity when a Muslim plants a tree or sows seeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keeping every living creature away forever"
+        },
+        {
+          "id": "b",
+          "text": "Boasting that nobody else deserves food"
+        },
+        {
+          "id": "c",
+          "text": "Destroying the crop just for attention"
+        },
+        {
+          "id": "d",
+          "text": "A person, bird or animal eating from it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith counts others eating from a Muslim's planting as charity. Useful plants can benefit people and animals.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "Sahih al-Bukhari 2320",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_021",
+      "conceptId": "kids_hadith_transmitted_reports",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Are preserving hadith reports and inventing new sayings for the Prophet ﷺ the same thing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, preservation passes on reports rather than inventing them"
+        },
+        {
+          "id": "b",
+          "text": "Yes, both mean making up whatever sounds nice"
+        },
+        {
+          "id": "c",
+          "text": "Yes, a scholar must invent a new Prophet's saying yearly"
+        },
+        {
+          "id": "d",
+          "text": "No, because no hadith reports have ever been preserved"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Scholars preserve and study transmitted reports. That work is different from inventing a saying and attributing it to the Prophet ﷺ.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_022",
+      "conceptId": "kids_hadith_not_repeat_everything",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does hearing a story from many people automatically prove it true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every repeated story must be true"
+        },
+        {
+          "id": "b",
+          "text": "No, repetition is not the same as reliable evidence"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the most exciting version is always correct"
+        },
+        {
+          "id": "d",
+          "text": "No, because checking reports is never useful"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A story can spread widely without becoming true. The warning against repeating everything we hear encourages care before passing information on.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "Sahih Muslim 5",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_023",
+      "conceptId": "kids_hadith_safe_words_hands",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If we do not hit people but keep insulting them, have we followed the whole lesson about tongue and hands?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, insults never count as harm"
+        },
+        {
+          "id": "b",
+          "text": "Yes, words have no effect on anyone"
+        },
+        {
+          "id": "c",
+          "text": "No, harmful speech matters too"
+        },
+        {
+          "id": "d",
+          "text": "No, because the hadith encourages pushing instead"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The teaching includes speech as well as physical action. Avoiding one kind of harm does not make another kind acceptable.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "Sahih al-Bukhari 10",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_024",
+      "conceptId": "kids_hadith_help_stop_oppression",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does helping a friend mean joining them when they bully someone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, friendship makes every action right"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only the strongest child's feelings matter"
+        },
+        {
+          "id": "c",
+          "text": "No, because helping anyone is always forbidden"
+        },
+        {
+          "id": "d",
+          "text": "No, help them stop the wrongdoing"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Refusing to support bullying can help both the victim and the friend doing wrong. Seek a trusted adult's help when needed.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "Sahih al-Bukhari 2444",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_025",
+      "conceptId": "kids_hadith_good_character",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does knowing many religious facts replace the need for good manners?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, good character still matters"
+        },
+        {
+          "id": "b",
+          "text": "Yes, knowledge gives permission to insult"
+        },
+        {
+          "id": "c",
+          "text": "Yes, manners matter only for new learners"
+        },
+        {
+          "id": "d",
+          "text": "No, because learning facts is always wrong"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith praises good character. Knowledge should help us improve our behavior, not become an excuse for treating people badly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3559",
+          "label": "Sahih al-Bukhari 3559",
+          "url": "https://sunnah.com/bukhari:3559"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_026",
+      "conceptId": "kids_hadith_sincere_care",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which purpose best fits sincere advice to someone learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make the whole class laugh at them"
+        },
+        {
+          "id": "b",
+          "text": "Help them understand and improve"
+        },
+        {
+          "id": "c",
+          "text": "Prove that they have no value"
+        },
+        {
+          "id": "d",
+          "text": "Collect praise by exposing their mistakes"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Sincere advice seeks the other person's good. Showing off or humiliating a learner misses that purpose.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "55a",
+          "label": "Sahih Muslim 55a",
+          "url": "https://sunnah.com/muslim:55a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_027",
+      "conceptId": "kids_hadith_care_for_sick",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does caring for someone who is ill mean ignoring instructions meant to protect them and visitors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, concern means visiting however we want"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the person must accept visitors at every moment"
+        },
+        {
+          "id": "c",
+          "text": "No, care should respect suitable arrangements"
+        },
+        {
+          "id": "d",
+          "text": "No, because the sick never deserve companionship"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The teaching encourages care, not inconsiderate visiting. Let an adult arrange an appropriate way to support someone who is unwell.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5649",
+          "label": "Sahih al-Bukhari 5649",
+          "url": "https://sunnah.com/bukhari:5649"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_028",
+      "conceptId": "kids_hadith_feeding_greetings",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the hadith limit greetings of peace only to our closest friends?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only our best friend deserves a greeting"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only people who bring gifts may be greeted"
+        },
+        {
+          "id": "c",
+          "text": "No, because it forbids all greetings"
+        },
+        {
+          "id": "d",
+          "text": "No, it mentions people we know and do not know"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith encourages a welcoming salam beyond a narrow circle of friends. Children can follow it in appropriate settings with adult guidance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "Sahih al-Bukhari 12",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_029",
+      "conceptId": "kids_hadith_avoid_envy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can we work to improve without wishing another person would lose their blessing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, learning and wishing others well can go together"
+        },
+        {
+          "id": "b",
+          "text": "No, improvement always requires hating someone else's success"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if we secretly hope they fail"
+        },
+        {
+          "id": "d",
+          "text": "No, because envy is the only useful motivation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Avoiding envy does not mean giving up our own efforts. We can seek good for ourselves without resenting someone else's blessing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564a",
+          "label": "Sahih Muslim 2564a",
+          "url": "https://sunnah.com/muslim:2564a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_030",
+      "conceptId": "kids_hadith_considerate_guest",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does generous hospitality give guests permission to ignore the host's needs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the host's situation never matters"
+        },
+        {
+          "id": "b",
+          "text": "No, guests should be considerate too"
+        },
+        {
+          "id": "c",
+          "text": "Yes, guests may demand anything they imagine"
+        },
+        {
+          "id": "d",
+          "text": "No, because welcoming guests is always wrong"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Hospitality and consideration belong together. A guest should appreciate kindness without turning the visit into hardship for the host.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6135",
+          "label": "Sahih al-Bukhari 6135",
+          "url": "https://sunnah.com/bukhari:6135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_031",
+      "conceptId": "kids_hadith_permission_three",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If permission is not given, does asking three times allow us to enter anyway?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, three requests make any home ours"
+        },
+        {
+          "id": "b",
+          "text": "Yes, an unanswered request is always permission"
+        },
+        {
+          "id": "c",
+          "text": "No, the teaching is to return"
+        },
+        {
+          "id": "d",
+          "text": "No, but we should damage the door instead"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Asking is not the same as receiving permission. The hadith tells us to return rather than insist on entering.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6245",
+          "label": "Sahih al-Bukhari 6245",
+          "url": "https://sunnah.com/bukhari:6245"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_032",
+      "conceptId": "kids_hadith_include_third_person",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why can secret talk between two of three people be hurtful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It always makes the third person feel welcome"
+        },
+        {
+          "id": "b",
+          "text": "It proves the third person's feelings do not matter"
+        },
+        {
+          "id": "c",
+          "text": "It makes every private conversation harmless"
+        },
+        {
+          "id": "d",
+          "text": "It can leave the third person feeling excluded"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report explains the concern as causing sadness. This lesson encourages consideration, rather than a ban on every kind of privacy.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "Sahih al-Bukhari 6290",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_033",
+      "conceptId": "kids_hadith_forgiveness_honor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does forgiving an ordinary mistake mean a person has no dignity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the hadith connects forgiveness with increased honor"
+        },
+        {
+          "id": "b",
+          "text": "Yes, dignity belongs only to people who take revenge"
+        },
+        {
+          "id": "c",
+          "text": "Yes, forgiveness makes kindness meaningless"
+        },
+        {
+          "id": "d",
+          "text": "No, but it requires allowing harm to continue"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith praises forgiveness. It does not require remaining in an unsafe situation or refusing help when harm continues.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "Sahih Muslim 2588",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_034",
+      "conceptId": "kids_hadith_right_shoe_first",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the report about beginning with the right when putting on shoes illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only expensive shoes can be worn respectfully"
+        },
+        {
+          "id": "b",
+          "text": "Sunnah includes familiar everyday habits"
+        },
+        {
+          "id": "c",
+          "text": "Every ordinary habit is too small to learn about"
+        },
+        {
+          "id": "d",
+          "text": "People with different physical abilities deserve mockery"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report shows guidance in an ordinary routine. Learning it should encourage care, not ridicule toward someone with different needs or abilities.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "168",
+          "label": "Sahih al-Bukhari 168",
+          "url": "https://sunnah.com/bukhari:168"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_035",
+      "conceptId": "kids_hadith_breathe_away_cup",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does avoiding breathing into a cup mean we should avoid taking normal breaths?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, drinking requires stopping normal breathing"
+        },
+        {
+          "id": "b",
+          "text": "Yes, breathing is always bad manners"
+        },
+        {
+          "id": "c",
+          "text": "No, move the cup away to breathe"
+        },
+        {
+          "id": "d",
+          "text": "No, but we should breathe into someone else's cup"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The instruction concerns breathing into the vessel. Moving it away lets us breathe normally while observing the taught manner.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5630",
+          "label": "Sahih al-Bukhari 5630",
+          "url": "https://sunnah.com/bukhari:5630"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_036",
+      "conceptId": "kids_hadith_avoid_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does avoiding unnecessary religious hardship mean abandoning every good practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, learning and worship must both stop"
+        },
+        {
+          "id": "b",
+          "text": "Yes, any effort is automatically wrong"
+        },
+        {
+          "id": "c",
+          "text": "No, because only exhaustion proves sincerity"
+        },
+        {
+          "id": "d",
+          "text": "No, aim for a sound and manageable approach"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith encourages a balanced approach that can continue. Avoiding overburdening is different from rejecting learning and good practice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "Sahih al-Bukhari 39",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_037",
+      "conceptId": "kids_hadith_repeat_for_understanding",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What is the important purpose of repetition in this teaching report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Helping the listener understand"
+        },
+        {
+          "id": "b",
+          "text": "Making learning feel impossible"
+        },
+        {
+          "id": "c",
+          "text": "Replacing the original teaching with a new invention"
+        },
+        {
+          "id": "d",
+          "text": "Showing that slower learners deserve ridicule"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Repetition is used to make meaning clearer. Its purpose is understanding, not embarrassing someone who needs more time.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "Sahih al-Bukhari 95",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_038",
+      "conceptId": "kids_hadith_learning_questions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does asking a respectful question to understand a lesson prove that learning is unimportant to us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every question means rejecting the lesson"
+        },
+        {
+          "id": "b",
+          "text": "No, questions can show a wish to understand"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only people who know nothing ever ask"
+        },
+        {
+          "id": "d",
+          "text": "No, because answers should always be invented"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The visitor's questions helped clarify religious teachings. Asking sincerely can support learning rather than oppose it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "63",
+          "label": "Sahih al-Bukhari 63",
+          "url": "https://sunnah.com/bukhari:63"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_039",
+      "conceptId": "kids_hadith_truthful_humor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does getting a laugh make a deliberately false report true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, enough laughter makes every claim accurate"
+        },
+        {
+          "id": "b",
+          "text": "Yes, jokes remove every need for honesty"
+        },
+        {
+          "id": "c",
+          "text": "No, laughter does not change falsehood into truth"
+        },
+        {
+          "id": "d",
+          "text": "No, because kind truthful humor is always forbidden"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The warning concerns lying to make people laugh. Enjoyment is not a reason to present a deliberate falsehood as a fact.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4990",
+          "label": "Sunan Abi Dawud 4990",
+          "url": "https://sunnah.com/abudawud:4990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_040",
+      "conceptId": "kids_hadith_planting_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the planting hadith mention benefit only when a human eats from the crop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, birds and animals can never benefit"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only the planter may ever eat from it"
+        },
+        {
+          "id": "c",
+          "text": "No, because the hadith says planting has no value"
+        },
+        {
+          "id": "d",
+          "text": "No, birds and animals are mentioned too"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith mentions people, birds and animals eating from the planting. Its benefit can reach several kinds of living creatures.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "Sahih al-Bukhari 2320",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_041",
+      "conceptId": "kids_hadith_transmitted_reports",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your lesson says a hadith was transmitted by narrators and preserved in a collection. What does this describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How a report was passed on and recorded"
+        },
+        {
+          "id": "b",
+          "text": "How to invent a new saying for the Prophet ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "How to choose a report by counting likes"
+        },
+        {
+          "id": "d",
+          "text": "How to turn any poem into Quran"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Transmission and collection concern passing on and preserving reports. They do not give permission to invent words for the Prophet ﷺ.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Sunnah.com — About hadith",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_042",
+      "conceptId": "kids_hadith_not_repeat_everything",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A group chat shares an unchecked story about a classmate. Which response follows the warning about repeating everything we hear?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forward it before anyone else can"
+        },
+        {
+          "id": "b",
+          "text": "Do not forward it as fact; ask an adult to help check"
+        },
+        {
+          "id": "c",
+          "text": "Add details to make the story more exciting"
+        },
+        {
+          "id": "d",
+          "text": "Assume every message must be accurate"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Unverified repetition can spread falsehood and hurt someone. Pause rather than passing it on as a fact.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "5",
+          "label": "Sahih Muslim 5",
+          "url": "https://sunnah.com/muslim:5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_043",
+      "conceptId": "kids_hadith_safe_words_hands",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You feel annoyed during a game. Which choice follows the hadith about avoiding harm through tongue and hands?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insult a classmate because you did not hit them"
+        },
+        {
+          "id": "b",
+          "text": "Push someone because you stayed silent"
+        },
+        {
+          "id": "c",
+          "text": "Speak respectfully and keep your hands from hurting others"
+        },
+        {
+          "id": "d",
+          "text": "Use words and hands to frighten the other team"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The teaching includes both speech and physical conduct. Feeling annoyed does not give permission to harm other players.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "10",
+          "label": "Sahih al-Bukhari 10",
+          "url": "https://sunnah.com/bukhari:10"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_044",
+      "conceptId": "kids_hadith_help_stop_oppression",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend asks you to help bully a smaller child. What is real help for your friend?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Join in to prove loyalty"
+        },
+        {
+          "id": "b",
+          "text": "Hide the bullying from every adult"
+        },
+        {
+          "id": "c",
+          "text": "Encourage your friend to become crueler"
+        },
+        {
+          "id": "d",
+          "text": "Refuse and get a teacher's help to stop the bullying"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ explained helping a wrongdoer as stopping their wrongdoing. A teacher can help protect the child and address the bullying safely.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2444",
+          "label": "Sahih al-Bukhari 2444",
+          "url": "https://sunnah.com/bukhari:2444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_045",
+      "conceptId": "kids_hadith_good_character",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Hasan scores well in a quiz but mocks slower learners. Which reminder fits the hadith about good character?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge should go with respectful manners"
+        },
+        {
+          "id": "b",
+          "text": "High scores give permission to humiliate others"
+        },
+        {
+          "id": "c",
+          "text": "Only slower learners need to practice kindness"
+        },
+        {
+          "id": "d",
+          "text": "Quiz winners are allowed to ignore everyone's feelings"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith praises good character. Learning should help Hasan become considerate, not give him a reason to look down on others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3559",
+          "label": "Sahih al-Bukhari 3559",
+          "url": "https://sunnah.com/bukhari:3559"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_046",
+      "conceptId": "kids_hadith_sincere_care",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend misunderstands a lesson and asks for help. Which response shows sincere care?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use their mistake to embarrass them"
+        },
+        {
+          "id": "b",
+          "text": "Explain kindly and ask the teacher if unsure"
+        },
+        {
+          "id": "c",
+          "text": "Pretend to help while teaching something false"
+        },
+        {
+          "id": "d",
+          "text": "Insist that needing help makes them worthless"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Sincere care aims at another person's good. Be kind, and get suitable help rather than inventing an answer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "55a",
+          "label": "Sahih Muslim 55a",
+          "url": "https://sunnah.com/muslim:55a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_047",
+      "conceptId": "kids_hadith_care_for_sick",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A relative is unwell. What is an appropriate way for a child to practice care?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demand a visit even if the family says rest is needed"
+        },
+        {
+          "id": "b",
+          "text": "Make fun of the person's illness"
+        },
+        {
+          "id": "c",
+          "text": "Ask a parent about a suitable visit or message"
+        },
+        {
+          "id": "d",
+          "text": "Tell others the person deserves to be ignored"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith encourages caring for the sick. A parent can help choose a thoughtful way to show support.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5649",
+          "label": "Sahih al-Bukhari 5649",
+          "url": "https://sunnah.com/bukhari:5649"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_048",
+      "conceptId": "kids_hadith_feeding_greetings",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "At a family gathering, which pair of actions follows the report about food and salam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hide the food and refuse every greeting"
+        },
+        {
+          "id": "b",
+          "text": "Speak only to people who give presents"
+        },
+        {
+          "id": "c",
+          "text": "Mock guests who are new to you"
+        },
+        {
+          "id": "d",
+          "text": "Help serve permitted food and greet people respectfully"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report praises feeding others and giving salam. At a family gathering, a child can practice both with adult guidance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "12",
+          "label": "Sahih al-Bukhari 12",
+          "url": "https://sunnah.com/bukhari:12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_049",
+      "conceptId": "kids_hadith_avoid_envy",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your friend receives a learning award you hoped for. Which response avoids envy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Congratulate them and keep working on your own learning"
+        },
+        {
+          "id": "b",
+          "text": "Wish they would lose every good thing"
+        },
+        {
+          "id": "c",
+          "text": "Damage the award to make yourself feel better"
+        },
+        {
+          "id": "d",
+          "text": "Treat their success as a reason to hate them"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Another person's success need not become a reason for resentment. You can wish them well and still improve your own learning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564a",
+          "label": "Sahih Muslim 2564a",
+          "url": "https://sunnah.com/muslim:2564a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_050",
+      "conceptId": "kids_hadith_considerate_guest",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You visit a friend with your parent, and the host needs to rest. What shows consideration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insist that guests may stay as long as they want"
+        },
+        {
+          "id": "b",
+          "text": "Follow your parent's guidance and leave politely when appropriate"
+        },
+        {
+          "id": "c",
+          "text": "Demand that the host ignore their own needs"
+        },
+        {
+          "id": "d",
+          "text": "Mock the host for needing a break"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A considerate guest respects the host's situation. Follow the adults' arrangements without turning hospitality into a burden.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6135",
+          "label": "Sahih al-Bukhari 6135",
+          "url": "https://sunnah.com/bukhari:6135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_051",
+      "conceptId": "kids_hadith_permission_three",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With your parent, you have asked permission to enter three times without being invited. What should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Push the door open because you waited"
+        },
+        {
+          "id": "b",
+          "text": "Keep knocking to force an answer"
+        },
+        {
+          "id": "c",
+          "text": "Stay with your parent and leave respectfully"
+        },
+        {
+          "id": "d",
+          "text": "Enter through another opening without permission"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith teaches returning when permission is not given after three requests. Respect the family's privacy and follow your parent's guidance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6245",
+          "label": "Sahih al-Bukhari 6245",
+          "url": "https://sunnah.com/bukhari:6245"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_052",
+      "conceptId": "kids_hadith_include_third_person",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Three classmates sit together. Two begin whispering while deliberately leaving the third out. Which choice follows the hadith's lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep whispering to make the child feel unwanted"
+        },
+        {
+          "id": "b",
+          "text": "Laugh whenever the child asks to join"
+        },
+        {
+          "id": "c",
+          "text": "Tell the child their feelings never matter"
+        },
+        {
+          "id": "d",
+          "text": "Include the third child in the shared conversation"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith takes the excluded person's sadness seriously. A shared conversation can help everyone feel included.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6290",
+          "label": "Sahih al-Bukhari 6290",
+          "url": "https://sunnah.com/bukhari:6290"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_053",
+      "conceptId": "kids_hadith_forgiveness_honor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend makes an ordinary mistake and sincerely apologizes. What follows the hadith's praise of forgiveness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consider forgiving without trying to humiliate them"
+        },
+        {
+          "id": "b",
+          "text": "Insist that only revenge can protect your dignity"
+        },
+        {
+          "id": "c",
+          "text": "Use the mistake to shame them every day"
+        },
+        {
+          "id": "d",
+          "text": "Tell them forgiveness is always worthless"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Forgiveness can be honorable. You may explain your feelings and seek repair without making humiliation your goal.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2588",
+          "label": "Sahih Muslim 2588",
+          "url": "https://sunnah.com/muslim:2588"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_054",
+      "conceptId": "kids_hadith_right_shoe_first",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are able to put on your own shoes and want to follow the reported Sunnah. Which shoe do you begin with?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The left shoe"
+        },
+        {
+          "id": "b",
+          "text": "The right shoe"
+        },
+        {
+          "id": "c",
+          "text": "Whichever shoe is more expensive"
+        },
+        {
+          "id": "d",
+          "text": "A different shoe according to a daily guessing game"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Aishah's report mentions beginning with the right when putting on shoes. Follow the habit as you are able, without judging other people's circumstances.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "168",
+          "label": "Sahih al-Bukhari 168",
+          "url": "https://sunnah.com/bukhari:168"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_055",
+      "conceptId": "kids_hadith_breathe_away_cup",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "While drinking, you need to take a breath. What follows the hadith's teaching about the vessel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Breathe directly into the drink"
+        },
+        {
+          "id": "b",
+          "text": "Blow into your friend's cup instead"
+        },
+        {
+          "id": "c",
+          "text": "Move the cup away before breathing"
+        },
+        {
+          "id": "d",
+          "text": "Assume breathing into the cup is required"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The teaching is not to breathe into the drinking vessel. Moving the cup away lets you take a normal breath.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5630",
+          "label": "Sahih al-Bukhari 5630",
+          "url": "https://sunnah.com/bukhari:5630"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_056",
+      "conceptId": "kids_hadith_avoid_overburdening",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A child adds so many extra practices that they cannot keep up. Which plan reflects the hadith's guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep adding more only to appear impressive"
+        },
+        {
+          "id": "b",
+          "text": "Assume tiredness always proves a better faith"
+        },
+        {
+          "id": "c",
+          "text": "Give up every useful lesson forever"
+        },
+        {
+          "id": "d",
+          "text": "Ask a parent or teacher for a balanced, suitable routine"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith warns against overburdening. Children can learn and practice with adult guidance at a suitable, steady pace.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "39",
+          "label": "Sahih al-Bukhari 39",
+          "url": "https://sunnah.com/bukhari:39"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_057",
+      "conceptId": "kids_hadith_repeat_for_understanding",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A younger learner asks you to repeat a checked teaching. Which response reflects the purpose of the Prophet's ﷺ repetition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repeat it patiently so they can understand"
+        },
+        {
+          "id": "b",
+          "text": "Mock them for not catching it immediately"
+        },
+        {
+          "id": "c",
+          "text": "Change the teaching to make it exciting"
+        },
+        {
+          "id": "d",
+          "text": "Refuse because only fast learners deserve help"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report connects repetition with understanding. Repeat carefully and patiently instead of shaming someone who needs to hear it again.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "Sahih al-Bukhari 95",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_058",
+      "conceptId": "kids_hadith_learning_questions",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You do not understand a hadith explanation. What is a helpful next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend to understand and invent the meaning"
+        },
+        {
+          "id": "b",
+          "text": "Ask your teacher a respectful question"
+        },
+        {
+          "id": "c",
+          "text": "Mock anyone else who asks for clarification"
+        },
+        {
+          "id": "d",
+          "text": "Decide that sincere questions are always forbidden"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report shows questions being answered as part of learning. A respectful question can help you understand instead of guessing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "63",
+          "label": "Sahih al-Bukhari 63",
+          "url": "https://sunnah.com/bukhari:63"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_059",
+      "conceptId": "kids_hadith_truthful_humor",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend wants you to tell a false story as a real event to make everyone laugh. What should you choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tell it as fact because laughter makes lying right"
+        },
+        {
+          "id": "b",
+          "text": "Blame another child when the lie is discovered"
+        },
+        {
+          "id": "c",
+          "text": "Refuse to deceive and choose truthful, kind humor"
+        },
+        {
+          "id": "d",
+          "text": "Add a fake hadith to make it sound convincing"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The warning is against lying for amusement. Choose humor that does not depend on presenting false claims as true.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4990",
+          "label": "Sunan Abi Dawud 4990",
+          "url": "https://sunnah.com/abudawud:4990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_hadith_knowledge_060",
+      "conceptId": "kids_hadith_planting_charity",
+      "categoryId": "hadith_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With your teacher, you help grow a fruit plant from which people or birds may eat. Which teaching fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only cash can ever count as charity"
+        },
+        {
+          "id": "b",
+          "text": "Birds benefiting from plants can never matter"
+        },
+        {
+          "id": "c",
+          "text": "Planting is valuable only when everyone praises the planter"
+        },
+        {
+          "id": "d",
+          "text": "Useful planting can become a source of charity"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith describes charity through people or animals eating from a Muslim's planting. A supervised gardening activity can help you understand that benefit.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2320",
+          "label": "Sahih al-Bukhari 2320",
+          "url": "https://sunnah.com/bukhari:2320"
+        }
+      ]
+    }
+  ]
+}

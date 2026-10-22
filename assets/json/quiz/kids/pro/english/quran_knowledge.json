@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "quran_knowledge",
+  "title": "Quran Knowledge",
+  "description": "Little Muslim → Pro. Short questions connecting familiar Quran passages with their meanings and responsible learning. Covers surah-and-ayah references, arrangement and revelation order, reflection, listening, effort in recitation, Al-Asr, Al-Maun, Al-Kawthar, Al-Qadr, Ash-Sharh, Al-Falaq, Yunus, Musa, Ibrahim and Ismail, Sulayman, Maryam, the cave companions, Adam, Luqman and understanding the Arabic Quran. Includes short classroom and everyday applications. An adult may read questions aloud or explain unfamiliar words. All questions are Pro level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro is the highest editorial level within Little Muslim, not the Educated User level. It emphasizes connecting familiar facts and meanings, distinguishing related ideas, completing a simple summary and applying a passage to a short situation. All three question styles remain at Kids Pro level; styles are not difficulty levels. Reading a supplied reference is a navigation skill, not a demand to memorize reference numbers. No specialist interpretation debates, advanced tajwid terminology, obscure historical details or Arabic grammatical analysis is required. Level has not been calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and reports from Sahih al-Bukhari checked during preparation. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Present-day scenarios illustrate applications; they are not narrated events in the cited sources. The reference-number example follows the displayed surah-and-ayah reference and does not fix pagination across editions. The first-revelation comparison concerns the opening of Al-Alaq, not a claim that its entire surah arrived at once; Al-Fatihah's first position concerns the Quran's arrangement. Reflection and learning meanings are paired with reliable guidance rather than independent invention of interpretation. The report about the Prophet listening to Ibn Masud does not require children to produce a particular emotional reaction. Encouragement for difficult recitation does not recommend intentional mistakes, refusing assistance or withholding support for reading and speech needs. Al-Asr is summarized through its connected qualities rather than used to judge a particular child's salvation. Al-Maun's ending is taught as a warning about showing off and withholding simple aid, without judging hidden intentions or requiring unsafe lending or giving. Al-Kawthar is discussed through gift and worship; no slaughter instructions or adult duties are assigned to children. Its meaning is not restricted to excluding the established river interpretation. Al-Qadr's comparison concerns excellence, not physical duration, and no child is required to disrupt a suitable sleep routine. Ash-Sharh offers reassurance without a guarantee that a named problem will end at a specified time; persistent hardship is not treated as spiritual failure. Al-Falaq is not a reason for baseless accusations of envy. The duas and stories are limited to their cited content; no precise recitation count, automatic exam result, invented narrative detail or comparison of a school project with the Kaaba is asserted. Musa's dua is applied to asking for ease and understandable speech without judging disability or replacing preparation and appropriate support. Maryam's honor is recognized without resolving specialist debates or belittling other women or girls. The cave-companions question emphasizes Allah's superior knowledge and avoiding uninformed argument; it does not claim no human can know their number or settle detailed interpretation of the listed numbers. Adam's repentance is taught with hope, not inherited guilt or an adult burden assigned to children. Luqman's advice concerns consideration in ordinary conduct, not a ban on emergency calls, accessible communication or protecting oneself. Language learning and checked explanations are useful educational applications, while the revealed Arabic text remains distinguished from translation or explanation. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_pro_quran_knowledge_001",
+      "conceptId": "kids_quran_reference_numbers",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In a Quran reference written as 2:255, what do the two numbers identify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surah 2 and ayah 255"
+        },
+        {
+          "id": "b",
+          "text": "Page 2 and paragraph 255 in every printed copy"
+        },
+        {
+          "id": "c",
+          "text": "Two chapters to read for 255 minutes"
+        },
+        {
+          "id": "d",
+          "text": "The second word repeated 255 times"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A surah-and-ayah reference identifies a passage. It is not a universal page number or a measure of reading time.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_002",
+      "conceptId": "kids_quran_order_and_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which statement correctly distinguishes the Quran's opening surah from its first revealed passage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Al-Fatihah's position proves it was the first passage revealed"
+        },
+        {
+          "id": "b",
+          "text": "Al-Fatihah opens the Quran; revelation began with Al-Alaq's opening"
+        },
+        {
+          "id": "c",
+          "text": "The first revealed passage was the whole of An-Nas"
+        },
+        {
+          "id": "d",
+          "text": "Chapter order always matches the order of revelation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Fatihah comes first in the Quran's arrangement. The report of revelation's beginning identifies the opening of Al-Alaq, so these are different kinds of first.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "1-7",
+          "label": "Quran 1:1-7",
+          "url": "https://quran.com/1/1-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_003",
+      "conceptId": "kids_quran_reflect_with_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What purpose does this verse connect with the Quran's revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collecting sounds without ever seeking understanding"
+        },
+        {
+          "id": "b",
+          "text": "Replacing its message with any idea we prefer"
+        },
+        {
+          "id": "c",
+          "text": "Reflecting on its verses and taking lessons"
+        },
+        {
+          "id": "d",
+          "text": "Using its pages only to compare possessions"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse encourages thoughtful engagement with the Quran. Understanding its message can go alongside careful reading and learning from a knowledgeable teacher.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_004",
+      "conceptId": "kids_quran_prophet_listened",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ ask Abdullah ibn Masud to do in this report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stop everyone from ever listening to Quran"
+        },
+        {
+          "id": "b",
+          "text": "Replace Quran recitation with an invented story"
+        },
+        {
+          "id": "c",
+          "text": "Prove that only beginners benefit from listening"
+        },
+        {
+          "id": "d",
+          "text": "Recite Quran for him to listen to"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ listened to Ibn Masud's recitation. Being a reader or teacher does not make listening to Quran beneath us.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5050",
+          "label": "Sahih al-Bukhari 5050",
+          "url": "https://sunnah.com/bukhari:5050"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_005",
+      "conceptId": "kids_quran_effort_not_avoid_learning",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith promise a person who keeps reciting despite finding it difficult?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two rewards"
+        },
+        {
+          "id": "b",
+          "text": "No reward until every difficulty disappears"
+        },
+        {
+          "id": "c",
+          "text": "Permission to mock fluent readers"
+        },
+        {
+          "id": "d",
+          "text": "A reason to reject every helpful lesson"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report honors sincere effort through difficulty. It encourages a struggling learner without telling them to avoid improvement.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "Sahih al-Bukhari 4937",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_006",
+      "conceptId": "kids_quran_asr_four_qualities",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which four qualities are joined in the final verse of Al-Asr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wealth, fame, height and strength"
+        },
+        {
+          "id": "b",
+          "text": "Faith, good deeds, encouraging truth and encouraging patience"
+        },
+        {
+          "id": "c",
+          "text": "Speed, prizes, popularity and fashionable clothing"
+        },
+        {
+          "id": "d",
+          "text": "Good deeds, boasting, falsehood and impatience"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Asr brings faith and action together with mutual encouragement toward truth and patience. Its message goes beyond only one good habit.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "Quran 103:1-3",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_007",
+      "conceptId": "kids_quran_maun_sincerity_aid",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair of faults is criticized at the end of Al-Maun?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning sincerely and sharing appropriately"
+        },
+        {
+          "id": "b",
+          "text": "Listening carefully and practicing patiently"
+        },
+        {
+          "id": "c",
+          "text": "Showing off and withholding simple help"
+        },
+        {
+          "id": "d",
+          "text": "Thanking Allah and respecting other people"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "These verses criticize showing off and refusing even simple aid. Religious appearance should not replace sincerity and care for others.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "6-7",
+          "label": "Quran 107:6-7",
+          "url": "https://quran.com/al-maun/6-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_008",
+      "conceptId": "kids_quran_kawthar_worship_response",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "After mentioning abundant goodness, what does Al-Kawthar teach the Prophet ﷺ to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boast that he no longer needs Allah"
+        },
+        {
+          "id": "b",
+          "text": "Worship whoever praises him most"
+        },
+        {
+          "id": "c",
+          "text": "Treat blessings as a reason to stop worship"
+        },
+        {
+          "id": "d",
+          "text": "Pray and sacrifice to his Lord"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah connects a great gift with worship directed to Allah. Blessings invite a thankful response rather than self-importance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 108,
+          "ayahs": "1-2",
+          "label": "Quran 108:1-2",
+          "url": "https://quran.com/108/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_009",
+      "conceptId": "kids_quran_qadr_thousand_months",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What comparison does Al-Qadr make about Laylat al-Qadr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is better than a thousand months"
+        },
+        {
+          "id": "b",
+          "text": "It is exactly the same as one ordinary hour"
+        },
+        {
+          "id": "c",
+          "text": "It has less value than any ordinary evening"
+        },
+        {
+          "id": "d",
+          "text": "It is a thousand-month-long night"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse describes the night's great value. It compares its excellence with a thousand months, not its physical length.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "Quran 97:3",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_010",
+      "conceptId": "kids_quran_sharh_hardship_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What reassurance is repeated in these verses of Ash-Sharh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every difficult task is impossible"
+        },
+        {
+          "id": "b",
+          "text": "With hardship comes ease"
+        },
+        {
+          "id": "c",
+          "text": "Help should never be accepted"
+        },
+        {
+          "id": "d",
+          "text": "Feeling difficulty proves a person has no worth"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verses offer reassurance alongside hardship. They encourage hope without promising that every particular problem disappears at once.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "Quran 94:5-6",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_011",
+      "conceptId": "kids_quran_falaq_envy",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "From whose harmful envy do we seek protection at the end of Al-Falaq?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anyone who offers a sincere compliment"
+        },
+        {
+          "id": "b",
+          "text": "Every person who wishes us well"
+        },
+        {
+          "id": "c",
+          "text": "An envier when they envy"
+        },
+        {
+          "id": "d",
+          "text": "Every friend who helps us learn"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse seeks refuge from the evil of envy. It does not tell us to suspect every person who notices a blessing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "5",
+          "label": "Quran 113:5",
+          "url": "https://quran.com/113/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_012",
+      "conceptId": "kids_quran_yunus_humble_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which meaning belongs to Yunus's call in the darkness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yunus claims he never needs Allah's help"
+        },
+        {
+          "id": "b",
+          "text": "Yunus asks people to worship him"
+        },
+        {
+          "id": "c",
+          "text": "Yunus says pride is the way to seek mercy"
+        },
+        {
+          "id": "d",
+          "text": "Allah alone deserves worship; Yunus acknowledges his own wrong"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His call combines worship of Allah, glorifying Him and acknowledging wrongdoing. It teaches humility rather than blaming everyone else.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87",
+          "label": "Quran 21:87",
+          "url": "https://quran.com/21/87"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_013",
+      "conceptId": "kids_quran_musa_clear_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did Musa ask Allah to help people understand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "His speech"
+        },
+        {
+          "id": "b",
+          "text": "Only his clothing choices"
+        },
+        {
+          "id": "c",
+          "text": "Only the size of his belongings"
+        },
+        {
+          "id": "d",
+          "text": "A secret nobody was allowed to hear"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Musa asked for an uplifted heart, ease in his task and help with speech so people could understand him. The dua expresses reliance on Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "Quran 20:25-28",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_014",
+      "conceptId": "kids_quran_ibrahim_ismail_acceptance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did Ibrahim and Ismail ask Allah while raising the House's foundations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To make them independent of His care"
+        },
+        {
+          "id": "b",
+          "text": "To accept their work"
+        },
+        {
+          "id": "c",
+          "text": "To let public applause replace sincerity"
+        },
+        {
+          "id": "d",
+          "text": "To make people worship the builders"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse joins their work with a request for Allah's acceptance. Doing something good can go with humility and dua.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "Quran 2:127",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_015",
+      "conceptId": "kids_quran_sulayman_grateful_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In Sulayman's dua, what accompanies gratitude for Allah's blessings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boasting that blessings make every choice right"
+        },
+        {
+          "id": "b",
+          "text": "Ignoring all responsibilities"
+        },
+        {
+          "id": "c",
+          "text": "Doing good deeds that please Allah"
+        },
+        {
+          "id": "d",
+          "text": "Demanding admiration from every person nearby"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sulayman's dua joins gratitude with righteous action. Thankfulness can shape what we do, not only what we say.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "Quran 27:19",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_016",
+      "conceptId": "kids_quran_maryam_honored",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the angels tell Maryam in this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Her worth depended entirely on wealth"
+        },
+        {
+          "id": "b",
+          "text": "She should make people worship her"
+        },
+        {
+          "id": "c",
+          "text": "Allah never honors any woman"
+        },
+        {
+          "id": "d",
+          "text": "Allah had chosen and purified her"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse speaks of Maryam with honor. Learning her place in the Quran should encourage respect rather than dismissing women or girls.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "42",
+          "label": "Quran 3:42",
+          "url": "https://quran.com/3/42"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_017",
+      "conceptId": "kids_quran_kahf_sure_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Whose superior knowledge does the verse emphasize when people discuss the cave companions' number?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah's knowledge"
+        },
+        {
+          "id": "b",
+          "text": "Whoever makes the loudest guess"
+        },
+        {
+          "id": "c",
+          "text": "Whoever invents the most dramatic detail"
+        },
+        {
+          "id": "d",
+          "text": "Whoever attracts the biggest audience"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse says the Lord knows their number best and discourages arguing without knowledge. Humility matters when discussing Quran stories.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "Quran 18:22",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_018",
+      "conceptId": "kids_quran_adam_repentance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does this verse say Allah accepted from Adam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "His demand to need no guidance"
+        },
+        {
+          "id": "b",
+          "text": "His repentance"
+        },
+        {
+          "id": "c",
+          "text": "His claim that no change was necessary"
+        },
+        {
+          "id": "d",
+          "text": "His request to make others carry his wrongdoing"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse describes Allah accepting Adam's repentance and names Him Merciful. The story offers hope about sincerely returning to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "37",
+          "label": "Quran 2:37",
+          "url": "https://quran.com/2/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_019",
+      "conceptId": "kids_quran_luqman_voice",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What advice about ordinary speech is included in Luqman's counsel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always shout over other people"
+        },
+        {
+          "id": "b",
+          "text": "Use volume to prove superiority"
+        },
+        {
+          "id": "c",
+          "text": "Lower the voice rather than speak with needless loudness"
+        },
+        {
+          "id": "d",
+          "text": "Assume consideration never matters in conversation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse teaches moderation and lowering the voice. Applying it to ordinary conversation encourages consideration rather than a contest in loudness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "Quran 31:19",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_020",
+      "conceptId": "kids_quran_arabic_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What purpose is mentioned alongside the Quran being sent down in Arabic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That nobody should ever seek its meaning"
+        },
+        {
+          "id": "b",
+          "text": "That language skill alone proves a person's worth"
+        },
+        {
+          "id": "c",
+          "text": "That learning its message should be avoided"
+        },
+        {
+          "id": "d",
+          "text": "That people may understand"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse links the Arabic Quran with understanding. Reading skills and learning meaning can support each other in a child's study.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_021",
+      "conceptId": "kids_quran_reference_numbers",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does 2:255 mean Ayat al-Kursi must appear on page 255 in every Quran copy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, 255 identifies the ayah within surah 2"
+        },
+        {
+          "id": "b",
+          "text": "Yes, it fixes a page number in every edition"
+        },
+        {
+          "id": "c",
+          "text": "Yes, it counts the book's cover pages"
+        },
+        {
+          "id": "d",
+          "text": "No, because Quran references never identify verses"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The reference identifies a surah and ayah. Page layouts can differ, so chapter-and-verse numbers help locate the same passage.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_022",
+      "conceptId": "kids_quran_order_and_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does being first in the Quran's chapter list automatically mean Al-Fatihah was the first passage revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the first printed chapter proves revelation order"
+        },
+        {
+          "id": "b",
+          "text": "No, arrangement and revelation order are different questions"
+        },
+        {
+          "id": "c",
+          "text": "Yes, every chapter arrived in its present numerical order"
+        },
+        {
+          "id": "d",
+          "text": "No, because Al-Fatihah is not part of the Quran"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The opening surah in the arrangement and the opening passage of revelation are different facts. The first-revelation report points to Al-Alaq's opening.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "1-7",
+          "label": "Quran 1:1-7",
+          "url": "https://quran.com/1/1-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_023",
+      "conceptId": "kids_quran_reflect_with_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does reflecting on Quran mean we may invent any meaning that suits us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every preferred idea becomes the verse's meaning"
+        },
+        {
+          "id": "b",
+          "text": "Yes, reflection replaces the actual words entirely"
+        },
+        {
+          "id": "c",
+          "text": "No, seek understanding with reliable explanation"
+        },
+        {
+          "id": "d",
+          "text": "No, because the verse forbids thinking about its message"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse encourages reflection, not making up meanings. Learning carefully from a knowledgeable teacher helps us think about what the passage teaches.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_024",
+      "conceptId": "kids_quran_prophet_listened",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does knowing how to recite mean listening to someone else's Quran recitation is beneath us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only people who know nothing should listen"
+        },
+        {
+          "id": "b",
+          "text": "Yes, listening always prevents learning"
+        },
+        {
+          "id": "c",
+          "text": "No, because skilled reciters must never recite aloud"
+        },
+        {
+          "id": "d",
+          "text": "No, the Prophet ﷺ himself listened to another reciter"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report shows the Prophet ﷺ listening to Ibn Masud. Listening and reciting can both belong in Quran learning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5050",
+          "label": "Sahih al-Bukhari 5050",
+          "url": "https://sunnah.com/bukhari:5050"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_025",
+      "conceptId": "kids_quran_effort_not_avoid_learning",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the reward for struggling mean learners should deliberately preserve mistakes or refuse teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the hadith encourages effort rather than avoiding improvement"
+        },
+        {
+          "id": "b",
+          "text": "Yes, helpful correction removes every good thing"
+        },
+        {
+          "id": "c",
+          "text": "Yes, intentionally making mistakes is the learning goal"
+        },
+        {
+          "id": "d",
+          "text": "No, because struggling learners should never try again"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith supports someone who finds recitation hard. Its encouragement is not a reason to reject instruction or deliberately make learning harder.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "Sahih al-Bukhari 4937",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_026",
+      "conceptId": "kids_quran_asr_four_qualities",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Al-Asr mention only faith while leaving out action and encouragement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, helping one another is absent from its message"
+        },
+        {
+          "id": "b",
+          "text": "No, it joins faith, good deeds, truth and patience"
+        },
+        {
+          "id": "c",
+          "text": "Yes, conduct never matters in the surah"
+        },
+        {
+          "id": "d",
+          "text": "No, because it teaches replacing truth with popularity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Asr names connected qualities rather than a single isolated habit. It includes both good deeds and encouraging one another.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "Quran 103:1-3",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_027",
+      "conceptId": "kids_quran_maun_sincerity_aid",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Do the ending verses of Al-Maun praise showing off while refusing simple help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, attention from others excuses refusing every kindness"
+        },
+        {
+          "id": "b",
+          "text": "Yes, religious appearance makes sincerity unnecessary"
+        },
+        {
+          "id": "c",
+          "text": "No, they criticize those attitudes"
+        },
+        {
+          "id": "d",
+          "text": "No, because every ordinary act of help is forbidden"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The passage warns against outward display without sincere care. Simple, appropriate assistance should not be dismissed as unimportant.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "6-7",
+          "label": "Quran 107:6-7",
+          "url": "https://quran.com/al-maun/6-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_028",
+      "conceptId": "kids_quran_kawthar_worship_response",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Al-Kawthar present Allah's gifts as a reason to stop worshipping Him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, blessings remove every reason for gratitude"
+        },
+        {
+          "id": "b",
+          "text": "Yes, receiving good means we need no Lord"
+        },
+        {
+          "id": "c",
+          "text": "No, because blessings must never be acknowledged"
+        },
+        {
+          "id": "d",
+          "text": "No, it connects His gift with worship of Him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah moves from a gift to worship directed to Allah. Its connection encourages gratitude rather than independence from Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 108,
+          "ayahs": "1-2",
+          "label": "Quran 108:1-2",
+          "url": "https://quran.com/108/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_029",
+      "conceptId": "kids_quran_qadr_thousand_months",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does better than a thousand months mean Laylat al-Qadr physically lasts a thousand months?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the comparison concerns its excellence"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the night continues for thousands of ordinary days"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the Quran says no morning follows it"
+        },
+        {
+          "id": "d",
+          "text": "No, because the verse gives the night no special value"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse praises the night's value. It is not a statement that the night has a thousand months of clock time.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "Quran 97:3",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_030",
+      "conceptId": "kids_quran_sharh_hardship_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the reassurance about ease set a deadline for every difficult problem to disappear?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every problem must end before the next lesson"
+        },
+        {
+          "id": "b",
+          "text": "No, it offers hope without naming that deadline"
+        },
+        {
+          "id": "c",
+          "text": "Yes, continued difficulty proves someone has been rejected"
+        },
+        {
+          "id": "d",
+          "text": "No, because accepting help would cancel the reassurance"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verses reassure people about hardship and ease. They should not be turned into an invented timetable or a judgment against someone still struggling.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "Quran 94:5-6",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_031",
+      "conceptId": "kids_quran_falaq_envy",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Al-Falaq's warning about envy prove that every compliment hides harm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every kind comment proves dangerous envy"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every friend must wish us harm"
+        },
+        {
+          "id": "c",
+          "text": "No, we should not accuse people without grounds"
+        },
+        {
+          "id": "d",
+          "text": "No, because the verse tells us to admire harmful envy"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Seeking protection from envy is different from labeling every person an envier. A sincere compliment is not proof of harmful intent.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "5",
+          "label": "Quran 113:5",
+          "url": "https://quran.com/113/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_032",
+      "conceptId": "kids_quran_yunus_humble_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In Yunus's call, does he pretend that admitting his own wrong is unnecessary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, he blames everyone else instead"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the call praises refusing responsibility"
+        },
+        {
+          "id": "c",
+          "text": "No, because admitting a wrong means abandoning Allah"
+        },
+        {
+          "id": "d",
+          "text": "No, he humbly acknowledges his wrongdoing"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The dua includes acknowledgment of wrongdoing along with glorifying Allah. Humility and turning to Him belong together.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87",
+          "label": "Quran 21:87",
+          "url": "https://quran.com/21/87"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_033",
+      "conceptId": "kids_quran_musa_clear_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Was Musa's request about speech meant to prevent others from understanding him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, he asked that they understand his words"
+        },
+        {
+          "id": "b",
+          "text": "Yes, confusion was the purpose of the dua"
+        },
+        {
+          "id": "c",
+          "text": "Yes, clear communication is rejected in the passage"
+        },
+        {
+          "id": "d",
+          "text": "No, because the verses contain no request about speaking"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The passage connects help with speech to being understood. Seeking clarity is different from trying to impress or confuse an audience.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "Quran 20:25-28",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_034",
+      "conceptId": "kids_quran_ibrahim_ismail_acceptance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does asking Allah to accept good work mean that public applause is enough by itself?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, applause replaces every need for sincerity"
+        },
+        {
+          "id": "b",
+          "text": "No, the verse highlights seeking Allah's acceptance"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the builders asked to be worshipped"
+        },
+        {
+          "id": "d",
+          "text": "No, because doing good makes dua unnecessary"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ibrahim and Ismail worked and prayed for acceptance. The verse brings useful action and humble dua together rather than making attention the goal.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "Quran 2:127",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_035",
+      "conceptId": "kids_quran_sulayman_grateful_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Sulayman's dua limit gratitude to speaking while ignoring good actions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, conduct is absent from the dua"
+        },
+        {
+          "id": "b",
+          "text": "Yes, a blessing excuses every harmful choice"
+        },
+        {
+          "id": "c",
+          "text": "No, he also asks to do deeds pleasing to Allah"
+        },
+        {
+          "id": "d",
+          "text": "No, because the dua rejects thanking Allah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "His prayer links gratitude for blessings with good deeds. Thankfulness can guide behavior as well as words.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "Quran 27:19",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_036",
+      "conceptId": "kids_quran_maryam_honored",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does this verse portray Maryam as someone without honor before Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the verse says wealth alone decides her value"
+        },
+        {
+          "id": "b",
+          "text": "Yes, it dismisses every woman as unworthy"
+        },
+        {
+          "id": "c",
+          "text": "No, because it asks people to worship her"
+        },
+        {
+          "id": "d",
+          "text": "No, it describes Allah choosing and purifying her"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The angels' message honors Maryam. Respecting her does not mean offering her worship or dismissing others' dignity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "42",
+          "label": "Quran 3:42",
+          "url": "https://quran.com/3/42"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_037",
+      "conceptId": "kids_quran_kahf_sure_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the cave companions' story encourage arguing confidently without knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the verse discourages that kind of argument"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the loudest speaker decides every historical detail"
+        },
+        {
+          "id": "c",
+          "text": "Yes, guessing creates reliable knowledge"
+        },
+        {
+          "id": "d",
+          "text": "No, because every detail anyone imagines is already verified"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse emphasizes the Lord's superior knowledge and limits argument to what is known. It does not make invention a way to explain scripture.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "Quran 18:22",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_038",
+      "conceptId": "kids_quran_adam_repentance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the verse about Adam present sincere repentance as entirely hopeless?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the verse denies every possibility of mercy"
+        },
+        {
+          "id": "b",
+          "text": "No, it says Allah accepted his repentance"
+        },
+        {
+          "id": "c",
+          "text": "Yes, returning to Allah is described as pointless"
+        },
+        {
+          "id": "d",
+          "text": "No, because no one ever needs to improve"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah's acceptance of Adam's repentance is part of the verse's message. It encourages hope without making wrongdoing unimportant.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "37",
+          "label": "Quran 2:37",
+          "url": "https://quran.com/2/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_039",
+      "conceptId": "kids_quran_luqman_voice",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does advice to lower the voice in ordinary conversation forbid calling for help in danger?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, a child must never raise their voice for safety"
+        },
+        {
+          "id": "b",
+          "text": "Yes, being heard is always bad manners"
+        },
+        {
+          "id": "c",
+          "text": "No, this lesson should not silence an urgent call for help"
+        },
+        {
+          "id": "d",
+          "text": "No, because consideration never matters when speaking"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The advice encourages moderation in ordinary conduct. Children may call clearly for help when needed; safety is not a contest in quietness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "Quran 31:19",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_040",
+      "conceptId": "kids_quran_arabic_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the Quran's Arabic language mean learning its meaning is unnecessary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, meaning has no place in Quran learning"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every attempt to understand should stop"
+        },
+        {
+          "id": "c",
+          "text": "No, because every translation becomes the original Arabic text"
+        },
+        {
+          "id": "d",
+          "text": "No, the verse itself mentions understanding"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse connects revelation in Arabic with understanding. A reliable explanation can help a learner while remaining distinct from the Arabic Quran.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_041",
+      "conceptId": "kids_quran_reference_numbers",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher gives the reference 2:255. Which app selection correctly finds the passage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surah Al-Baqarah, ayah 255"
+        },
+        {
+          "id": "b",
+          "text": "Page 255 regardless of the edition"
+        },
+        {
+          "id": "c",
+          "text": "Surah 255, ayah 2"
+        },
+        {
+          "id": "d",
+          "text": "A reading timer set to 255 minutes"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The first number identifies the surah and the second the ayah. This helps locate a passage across different page layouts.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_042",
+      "conceptId": "kids_quran_order_and_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A poster calls Al-Fatihah the first revealed passage because it opens the Quran. What correction is needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The chapter list proves every revelation arrived in numerical order"
+        },
+        {
+          "id": "b",
+          "text": "The opening of Al-Alaq began revelation; Al-Fatihah opens the arrangement"
+        },
+        {
+          "id": "c",
+          "text": "Al-Fatihah should be removed from the Quran"
+        },
+        {
+          "id": "d",
+          "text": "The first revelation was the last page of every edition"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The poster confuses arrangement with revelation sequence. Both facts can be learned without treating them as the same claim.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        },
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "1-7",
+          "label": "Quran 1:1-7",
+          "url": "https://quran.com/1/1-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_043",
+      "conceptId": "kids_quran_reflect_with_guidance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After reciting a verse, you want to reflect on it responsibly. Which next step helps?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assign it any meaning that feels exciting"
+        },
+        {
+          "id": "b",
+          "text": "Ignore its words and invent a different message"
+        },
+        {
+          "id": "c",
+          "text": "Learn its meaning with a reliable explanation and teacher"
+        },
+        {
+          "id": "d",
+          "text": "Decide that asking about meaning is always wrong"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Reflection can begin with understanding what the passage says. A knowledgeable teacher helps connect its meaning with a suitable lesson.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "Quran 38:29",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_044",
+      "conceptId": "kids_quran_prophet_listened",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A skilled classmate says listening to another reciter is only for beginners. Which report helps correct this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Prophet ﷺ banned every skilled person from listening"
+        },
+        {
+          "id": "b",
+          "text": "Ibn Masud refused because listening had no value"
+        },
+        {
+          "id": "c",
+          "text": "The report says a reader must never hear another reader"
+        },
+        {
+          "id": "d",
+          "text": "The Prophet ﷺ asked Ibn Masud to recite to him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report shows a valued place for listening. Skill need not become pride that shuts us off from hearing Quran recited.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5050",
+          "label": "Sahih al-Bukhari 5050",
+          "url": "https://sunnah.com/bukhari:5050"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_045",
+      "conceptId": "kids_quran_effort_not_avoid_learning",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner thinks accepting help would spoil the reward for difficult recitation. What is a better understanding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Keep trying and accept helpful instruction"
+        },
+        {
+          "id": "b",
+          "text": "Keep every mistake on purpose"
+        },
+        {
+          "id": "c",
+          "text": "Reject every teacher to protect the reward"
+        },
+        {
+          "id": "d",
+          "text": "Make reading harder whenever it begins to improve"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith encourages a struggling learner's effort. Helpful teaching and improvement fit sincere learning rather than opposing it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4937",
+          "label": "Sahih al-Bukhari 4937",
+          "url": "https://sunnah.com/bukhari:4937"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_046",
+      "conceptId": "kids_quran_asr_four_qualities",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A poster about Al-Asr already lists faith, good deeds and encouraging truth. Which quality completes it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collecting the most praise"
+        },
+        {
+          "id": "b",
+          "text": "Encouraging patience"
+        },
+        {
+          "id": "c",
+          "text": "Always winning arguments"
+        },
+        {
+          "id": "d",
+          "text": "Hiding every mistake from a teacher"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The final verse includes mutual encouragement toward patience as well as truth. The poster should represent all four connected qualities.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "Quran 103:1-3",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_047",
+      "conceptId": "kids_quran_maun_sincerity_aid",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After studying Al-Maun, a child wants praise for worship but dismisses every simple kindness. Which reminder fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Showing off makes every unkind choice acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Only being noticed has any importance"
+        },
+        {
+          "id": "c",
+          "text": "Sincerity and suitable help matter alongside outward appearance"
+        },
+        {
+          "id": "d",
+          "text": "The passage praises refusing all harmless aid"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The ending warns against display and withholding simple aid. Practice suitable kindness with permission rather than treating appearance as enough.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "6-7",
+          "label": "Quran 107:6-7",
+          "url": "https://quran.com/al-maun/6-7"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_048",
+      "conceptId": "kids_quran_kawthar_worship_response",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your class discusses the connection between the gift and command in Al-Kawthar. Which summary fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Receiving a gift means Allah is no longer needed"
+        },
+        {
+          "id": "b",
+          "text": "Blessings should be used only to impress people"
+        },
+        {
+          "id": "c",
+          "text": "The command directs worship toward the public audience"
+        },
+        {
+          "id": "d",
+          "text": "Allah's gift is followed by worship directed to Him"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah links abundant goodness with prayer and sacrifice to the Lord. The classroom lesson concerns gratitude, not instructions for children to perform sacrifice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 108,
+          "ayahs": "1-2",
+          "label": "Quran 108:1-2",
+          "url": "https://quran.com/108/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_049",
+      "conceptId": "kids_quran_qadr_thousand_months",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate thinks Laylat al-Qadr lasts a thousand months. Which explanation corrects the misunderstanding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The verse compares its value, not its length"
+        },
+        {
+          "id": "b",
+          "text": "The night has no morning for many years"
+        },
+        {
+          "id": "c",
+          "text": "Every month becomes part of one physical night"
+        },
+        {
+          "id": "d",
+          "text": "The verse says it has no special excellence"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Better than a thousand months describes exceptional worth. It is not a clock or calendar measurement of the night's length.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "3",
+          "label": "Quran 97:3",
+          "url": "https://quran.com/97/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_050",
+      "conceptId": "kids_quran_sharh_hardship_ease",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A difficult lesson takes time despite practice. Which response fits Ash-Sharh without inventing a promise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say the verse guarantees success in the next minute"
+        },
+        {
+          "id": "b",
+          "text": "Keep hope and seek support without setting an invented deadline"
+        },
+        {
+          "id": "c",
+          "text": "Blame yourself as worthless because difficulty continues"
+        },
+        {
+          "id": "d",
+          "text": "Refuse help because ease must mean doing everything alone"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The reassurance can support hope during difficulty. A teacher can help you learn without claiming the verse guarantees an immediate result.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 94,
+          "ayahs": "5-6",
+          "label": "Quran 94:5-6",
+          "url": "https://quran.com/94/5-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_051",
+      "conceptId": "kids_quran_falaq_envy",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning Al-Falaq, a child accuses every friend who praises their work of harmful envy. What should a teacher clarify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every compliment proves a plan to harm"
+        },
+        {
+          "id": "b",
+          "text": "The surah requires mistrusting every friendly person"
+        },
+        {
+          "id": "c",
+          "text": "Seeking protection does not justify baseless accusations"
+        },
+        {
+          "id": "d",
+          "text": "Only unfriendly speech can ever be sincere"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse seeks protection from harmful envy. It should not become an excuse to accuse people without evidence or reject sincere goodwill.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "5",
+          "label": "Quran 113:5",
+          "url": "https://quran.com/113/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_052",
+      "conceptId": "kids_quran_yunus_humble_dua",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your class studies Yunus's dua after discussing responsibility for mistakes. Which lesson belongs in the notes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Claim that admitting a wrong prevents mercy"
+        },
+        {
+          "id": "b",
+          "text": "Treat pride as the purpose of dua"
+        },
+        {
+          "id": "c",
+          "text": "Say that blame always belongs to someone else"
+        },
+        {
+          "id": "d",
+          "text": "Turn to Allah humbly and acknowledge wrongdoing"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Yunus's call joins praise of Allah with admitting wrong. A child's reflection can encourage honesty and returning to Allah without inventing story details.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "87",
+          "label": "Quran 21:87",
+          "url": "https://quran.com/21/87"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_053",
+      "conceptId": "kids_quran_musa_clear_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before explaining a lesson to classmates, which request reflects the meaning of Musa's dua?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask Allah for ease and help speaking clearly"
+        },
+        {
+          "id": "b",
+          "text": "Ask to confuse everyone deliberately"
+        },
+        {
+          "id": "c",
+          "text": "Ask to make listeners feel worthless"
+        },
+        {
+          "id": "d",
+          "text": "Ask never to need preparation or help"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Musa asked for ease and speech people could understand. A classroom application can pair dua with preparation and suitable teacher support.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "25-28",
+          "label": "Quran 20:25-28",
+          "url": "https://quran.com/20/25-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_054",
+      "conceptId": "kids_quran_ibrahim_ismail_acceptance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After a supervised good project, you recall Ibrahim and Ismail's dua. Which request follows its meaning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make public applause replace every sincere purpose"
+        },
+        {
+          "id": "b",
+          "text": "Allah, accept this from us"
+        },
+        {
+          "id": "c",
+          "text": "Let this work prove we need no help from You"
+        },
+        {
+          "id": "d",
+          "text": "Make everyone worship the people who helped"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Their request for acceptance illustrates humility while doing good. This classroom application does not equate the project with building the Kaaba.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "127",
+          "label": "Quran 2:127",
+          "url": "https://quran.com/2/127"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_055",
+      "conceptId": "kids_quran_sulayman_grateful_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning Sulayman's dua, you want gratitude to shape your choices. Which plan fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boast that a blessing permits every harmful action"
+        },
+        {
+          "id": "b",
+          "text": "Say thanks while deliberately refusing all responsibility"
+        },
+        {
+          "id": "c",
+          "text": "Thank Allah and choose a good deed that pleases Him"
+        },
+        {
+          "id": "d",
+          "text": "Assume gratitude means seeking everyone's envy"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Sulayman's prayer connects thankfulness with righteous action. A suitable good deed can help put that lesson into practice.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "19",
+          "label": "Quran 27:19",
+          "url": "https://quran.com/27/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_056",
+      "conceptId": "kids_quran_maryam_honored",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A class poster claims the Quran never speaks of a woman with honor. Which passage challenges that claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A claim that wealth alone gave Maryam value"
+        },
+        {
+          "id": "b",
+          "text": "An instruction to disregard every woman's dignity"
+        },
+        {
+          "id": "c",
+          "text": "A claim that honoring Maryam means worshipping her"
+        },
+        {
+          "id": "d",
+          "text": "The angels' message that Allah chose and purified Maryam"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The passage explicitly honors Maryam. It corrects the poster without needing invented stories or comparisons that belittle other people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "42",
+          "label": "Quran 3:42",
+          "url": "https://quran.com/3/42"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_057",
+      "conceptId": "kids_quran_kahf_sure_knowledge",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends invent extra details about the cave companions and argue over their guesses. Which reminder follows the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah knows best; discuss only with sound knowledge"
+        },
+        {
+          "id": "b",
+          "text": "The most confident guess becomes revelation"
+        },
+        {
+          "id": "c",
+          "text": "Every entertaining addition must be accepted as Quran"
+        },
+        {
+          "id": "d",
+          "text": "Loud argument is the best evidence"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse discourages uninformed dispute and emphasizes Allah's superior knowledge. Enjoy learning the story without presenting unsupported additions as revealed facts.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "22",
+          "label": "Quran 18:22",
+          "url": "https://quran.com/18/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_058",
+      "conceptId": "kids_quran_adam_repentance",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A child thinks a mistake means there is no point returning to Allah. What does Adam's story help teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The story says mercy is impossible after a wrong"
+        },
+        {
+          "id": "b",
+          "text": "Allah accepts repentance; sincerely returning is not hopeless"
+        },
+        {
+          "id": "c",
+          "text": "One mistake removes every chance to improve"
+        },
+        {
+          "id": "d",
+          "text": "Repentance means deciding to repeat harm forever"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse describes Allah accepting Adam's repentance. It can encourage a child to seek forgiveness and improve without despair.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "37",
+          "label": "Quran 2:37",
+          "url": "https://quran.com/2/37"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_059",
+      "conceptId": "kids_quran_luqman_voice",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "During an ordinary discussion, classmates compete to shout over one another. Which reminder follows Luqman's advice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The loudest voice always proves the best idea"
+        },
+        {
+          "id": "b",
+          "text": "Anyone speaking softly has no value"
+        },
+        {
+          "id": "c",
+          "text": "Use a considerate voice rather than competing in loudness"
+        },
+        {
+          "id": "d",
+          "text": "Politeness requires never calling for help in danger"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Luqman's counsel encourages moderation and lowering the voice. Apply it considerately without judging disabilities or silencing someone who needs help.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "Quran 31:19",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_quran_knowledge_060",
+      "conceptId": "kids_quran_arabic_understanding",
+      "categoryId": "quran_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn Arabic recitation and use a checked Bangla explanation. How can the two activities fit together?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The explanation replaces the original Arabic wording"
+        },
+        {
+          "id": "b",
+          "text": "Learning meaning makes recitation entirely pointless"
+        },
+        {
+          "id": "c",
+          "text": "Understanding must always be kept separate from Quran study"
+        },
+        {
+          "id": "d",
+          "text": "One develops reading; the other helps you understand the message"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse links the Arabic Quran with understanding. Guided reading and reliable explanation can support one learning journey while remaining different kinds of text.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    }
+  ]
+}

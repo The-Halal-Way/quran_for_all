@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "everyday_worship",
+  "title": "দৈনন্দিন ইবাদত",
+  "description": "ছোট্ট মুসলিম → মধ্যম স্তর। ইবাদতের প্রথম পরিচয় আছে এমন শিশুদের জন্য ছোট প্রশ্ন। অজু, নিশ্চিত জানা ও সন্দেহ, পানি বুঝে ব্যবহার, ইকামত, ইমামকে অনুসরণ, নামাজে শান্তভাবে কাজ করা, ভুলে যাওয়া নামাজ, সামর্থ্য অনুযায়ী নামাজ, মসজিদের আদব, সাহরি, ভুলে খাওয়া, রোজার আচরণ, ঈদ, দোয়া, সম্মান রেখে সদকা ও হজের সামর্থ্য নিয়ে লেখা। বাড়ি ও শ্রেণিকক্ষের পরিচিত পরিস্থিতিও আছে। বড় কেউ প্রশ্ন পড়ে শোনাতে বা অপরিচিত শব্দ বুঝিয়ে দিতে পারেন। সব প্রশ্ন শিশুদের মধ্যম স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "মধ্যম স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। পরিচিত নাম ও অভ্যাসের ওপর সহজ অর্থ, পরিচিত ভুল ধারণা এবং সরল দৈনন্দিন প্রয়োগের মাধ্যমে শেখা এগিয়ে নেওয়া হয়েছে। বিস্তারিত ফিকহি মতভেদ, বিশেষজ্ঞ পর্যায়ের পরিমাপ, সফরের জটিল নিয়ম বা সূত্রের নম্বর মুখস্থ করা প্রয়োজন নেই। স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও সহিহ বুখারি এবং সহিহ মুসলিমের বর্ণনা মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যা শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; হুবহু অনুবাদ নয়। বর্তমান সময়ের পরিস্থিতিগুলো প্রয়োগ বোঝানোর উদাহরণ, উদ্ধৃত বর্ণনার ঘটনা নয়। এটি প্রাথমিক প্রশ্নভান্ডার; নামাজ, অজু, রোজা বা হজের পূর্ণ নির্দেশিকা নয়। শিশুর শেখাকে প্রাপ্তবয়স্কের শরয়ি দায়িত্বের সমান করা হয়নি। রোজার বিধানগত ফল সম্পর্কিত পরিস্থিতিতে স্পষ্টভাবে প্রাপ্তবয়স্কদের ব্যবহার করা হয়েছে; কোনো পরিস্থিতি শিশুকে অসুস্থ অবস্থায় বা উপযুক্ত সামর্থ্যের বাইরে রোজা রাখতে বলে না। নিশ্চিতভাবে বায়ু বের হওয়া ও শুধু সন্দেহকে আলাদা রাখা হয়েছে। শব্দ ও গন্ধকেই অজু ভাঙার একমাত্র সম্ভাব্য প্রমাণ বলা হয়নি; শিশুদের বারবার শরীর পরীক্ষা করতেও উৎসাহ দেওয়া হয়নি। পানি বুঝে ব্যবহার বর্ণিত পরিমিত পানির প্রয়োগ; প্রতিটি শিক্ষার্থীর ওপর নির্দিষ্ট পরিমাণ চাপানো নয়। ইকামতে বিতর্কিত বাক্যসংখ্যা মুখস্থ করতে হয় না। মসজিদে প্রবেশের নামাজের প্রশ্নগুলোতে ফরজের জামাত শুরু হয়ে গেছে এমন পরিস্থিতি নেই এবং নিষিদ্ধ সময় নিয়ে মতভেদ মীমাংসা করা হয়নি। বাস্তবে আমলের বিষয়ে জ্ঞানী শিক্ষকের নির্দেশনা নেওয়া উচিত। প্রতিবন্ধিতা বিচার বা চিকিৎসা নির্ধারণ ছাড়া শারীরিক সামর্থ্য অনুযায়ী নামাজ শেখানো হয়েছে। ভুলে যাওয়া নামাজকে পরিকল্পনা করে নামাজ অবহেলা করা থেকে আলাদা রাখা হয়েছে। ভুলে খাওয়ার বর্ণনা মনে পড়ার পরও ইচ্ছা করে খেয়ে যাওয়ার অনুমতি নয়। রোজার আচরণ শেখাতে গিয়ে শিশুকে বলা হয়নি যে মিথ্যার কারণে নির্দিষ্ট কারও রোজা শরয়ি বিচারে বাতিল হয়েছে। দুই ঈদের দিন চিহ্নিত করা হয়েছে; শুধু এ দুই দিনেই রোজার বিধিনিষেধ আছে বলা হয়নি। দোয়ার প্রশ্নে প্রতিটি নির্দিষ্ট চাওয়া সঙ্গে সঙ্গে বা ঠিক যেভাবে চাওয়া হয়েছে সেভাবেই পূরণ হতে হবে—এমন প্রতিশ্রুতি নেই। সদকার উদাহরণে মর্যাদা রক্ষা, উপযুক্ত বড়দের নির্দেশনা এবং সব প্রকাশ্য দান ভুল নয়—এ বিষয়গুলো রাখা হয়েছে। হজের প্রশ্নগুলো সামর্থ্যের শর্ত নিয়ে, সব শর্ত বা শিশুর সফরের দায়িত্ব নিয়ে নয়। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_mid_everyday_worship_001",
+      "conceptId": "kids_worship_wudu_arms",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অজুতে হাত ও বাহু কোন অংশ পর্যন্ত ধোয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কনুই"
+        },
+        {
+          "id": "b",
+          "text": "কাঁধ"
+        },
+        {
+          "id": "c",
+          "text": "হাঁটু"
+        },
+        {
+          "id": "d",
+          "text": "শুধু আঙুলের ডগা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনে কনুই পর্যন্ত হাত ও বাহু ধোয়ার কথা আছে। বিশ্বস্ত শিক্ষকের কাছে অজুর পুরো ধাপগুলো শেখো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_002",
+      "conceptId": "kids_worship_wudu_after_wind",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "বায়ু বের হলে একজনের অজুর কী হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অজু আরও শক্তিশালী হয়"
+        },
+        {
+          "id": "b",
+          "text": "অজু ভেঙে যায়; নামাজের আগে আবার অজু করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "নামাজের দিক বদলে যায়"
+        },
+        {
+          "id": "d",
+          "text": "যা-ই ঘটুক, পরদিন পর্যন্ত অজু থাকে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বায়ু বের হলে অজু ভাঙে। আবার অজু করলে নামাজের জন্য প্রস্তুত হওয়া যায়; শরীরের স্বাভাবিক কাজ নিয়ে লজ্জা দেওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "সহিহ বুখারি ১৩৫",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_003",
+      "conceptId": "kids_worship_wudu_certainty",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "বায়ু বের হয়েছে কি না শুধু সন্দেহ হলে হাদিসটি কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মনে কোনো ভাবনা এলেই আবার অজু করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি দুশ্চিন্তাকেই অজু ভাঙার প্রমাণ ভাবা"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সন্দেহকে নিশ্চিত ঘটনা ধরে না নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "শেখা অসম্ভব মনে হওয়া পর্যন্ত বারবার পরীক্ষা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বায়ু বের হয়েছে এমন ধারণা হলেই নামাজ ছেড়ে না দিতে হাদিসটি শেখায়। শুধু সন্দেহের কারণে নিশ্চিত অজু ভাঙে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "137",
+          "label": "সহিহ বুখারি ১৩৭",
+          "url": "https://sunnah.com/bukhari:137"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_004",
+      "conceptId": "kids_worship_careful_water",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ-এর অল্প পানিতে অজুর বর্ণনা কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অজুর জন্য পুরো সুইমিংপুলের পানি লাগে"
+        },
+        {
+          "id": "b",
+          "text": "বেশি পানি ফেললেই ইবাদত সবসময় ভালো হয়"
+        },
+        {
+          "id": "c",
+          "text": "ঠিকমতো ধোয়ার প্রয়োজন নেই"
+        },
+        {
+          "id": "d",
+          "text": "পরিমিত পানি দিয়েও অজু করা যায়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ পরিমিত পানি দিয়ে অজু করতেন। পানি বুঝে ব্যবহার করলেও ঠিকমতো ধোয়া নিশ্চিত করতে হবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "201",
+          "label": "সহিহ বুখারি ২০১",
+          "url": "https://sunnah.com/bukhari:201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_005",
+      "conceptId": "kids_worship_iqamah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "জামাতের নামাজ এখন শুরু হবে—কোন আহ্বান এটি জানায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইকামত"
+        },
+        {
+          "id": "b",
+          "text": "ইফতার"
+        },
+        {
+          "id": "c",
+          "text": "সাহরি"
+        },
+        {
+          "id": "d",
+          "text": "তাওয়াফ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ইকামত জামাতের নামাজ শুরুর সঙ্গে সম্পর্কিত। এটি নামাজের সময় জানানোর জন্য আগে দেওয়া আজান থেকে আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "সহিহ বুখারি ৬৩৬",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_006",
+      "conceptId": "kids_worship_follow_imam",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইমামের পেছনে নামাজের সময় রুকু-সিজদাসহ কাজগুলো কীভাবে করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইমামের আগে শেষ করতে প্রতিযোগিতা করা"
+        },
+        {
+          "id": "b",
+          "text": "ইমামের আগে না গিয়ে তাঁকে অনুসরণ করা"
+        },
+        {
+          "id": "c",
+          "text": "সম্পর্কহীন কোনো ক্রম বেছে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "ইমামের কাজগুলো পুরোপুরি উপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইমাম নামাজ পরিচালনা করেন এবং তাঁকে অনুসরণ করতে হয়। একসঙ্গে নামাজ পড়া আগে নড়ার প্রতিযোগিতা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "722",
+          "label": "সহিহ বুখারি ৭২২",
+          "url": "https://sunnah.com/bukhari:722"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_007",
+      "conceptId": "kids_worship_calm_movements",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "লোকটিকে রুকু ও সিজদা করার পদ্ধতি নবী ﷺ কীভাবে শিখিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যত দ্রুত সম্ভব"
+        },
+        {
+          "id": "b",
+          "text": "কোনো অবস্থাতেই না থেমে"
+        },
+        {
+          "id": "c",
+          "text": "শান্তভাবে, প্রতিটি অবস্থায় স্থির হয়ে"
+        },
+        {
+          "id": "d",
+          "text": "এটিকে প্রতিযোগিতা বানিয়ে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটিতে শান্তভাবে রুকু, দাঁড়ানো, বসা ও সিজদা শেখানো হয়েছে। তাড়াহুড়া না করে প্রতিটি কাজ যত্ন নিয়ে করা দরকার।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "793",
+          "label": "সহিহ বুখারি ৭৯৩",
+          "url": "https://sunnah.com/bukhari:793"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_008",
+      "conceptId": "kids_worship_forgotten_prayer",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সত্যিই ভুলে যাওয়া কোনো নামাজ মনে পড়লে একজনের কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চিরদিনের জন্য ছেড়ে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "তার বদলে খেলা করা"
+        },
+        {
+          "id": "c",
+          "text": "পরের বছরের একই তারিখ পর্যন্ত অপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "মনে পড়লে সেই নামাজ পড়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ভুলে যাওয়া নামাজ মনে পড়লে তা পড়তে নবী ﷺ শিখিয়েছেন। ভুলে যাওয়ার প্রতিকার আছে; হাল ছেড়ে দেওয়ার কারণ নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "সহিহ বুখারি ৫৯৭",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_009",
+      "conceptId": "kids_worship_pray_by_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কেউ দাঁড়িয়ে নামাজ পড়তে না পারলে হাদিসে কোন বিকল্প শেখানো হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বসে নামাজ পড়া"
+        },
+        {
+          "id": "b",
+          "text": "চিরদিনের জন্য সব নামাজ বন্ধ করা"
+        },
+        {
+          "id": "c",
+          "text": "অন্য কাউকে দিয়ে জোর করে সোজা অবস্থায় ধরে রাখানো"
+        },
+        {
+          "id": "d",
+          "text": "যারা বসে পড়ে তাদের নিয়ে হাসাহাসি করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দাঁড়ানো সম্ভব না হলে বসে নামাজ পড়ার নির্দেশ হাদিসে আছে। বসাও সম্ভব না হলে এক পাশে শুয়ে পড়ার নির্দেশ আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "সহিহ বুখারি ১১১৭",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_010",
+      "conceptId": "kids_worship_mosque_two_rakah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মসজিদে ঢোকা সম্পর্কে হাদিসে বসার আগে কত রাকাত নামাজ শেখানো হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাঁচ"
+        },
+        {
+          "id": "b",
+          "text": "দুই"
+        },
+        {
+          "id": "c",
+          "text": "সাত"
+        },
+        {
+          "id": "d",
+          "text": "দশ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটিতে মসজিদে বসার আগে দুই রাকাত নামাজের কথা আছে। কখন ও কীভাবে এটি পড়তে হয়, শিক্ষক বুঝিয়ে দিতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "444",
+          "label": "সহিহ বুখারি ৪৪৪",
+          "url": "https://sunnah.com/bukhari:444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_011",
+      "conceptId": "kids_worship_mosque_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মসজিদে ঢোকার বর্ণিত দোয়ায় আল্লাহর কাছে কী খুলে দিতে চাওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিখ্যাত হওয়ার গোপন পথ"
+        },
+        {
+          "id": "b",
+          "text": "অন্যকে কষ্ট দেওয়ার পথ"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর রহমতের দরজা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি তালাবদ্ধ আলমারি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মসজিদে ঢোকার দোয়ায় আল্লাহর রহমত চাওয়া হয়। অর্থ শিখলে পরিচিত কথাগুলোর সঙ্গে আন্তরিক ইবাদতের সম্পর্ক বুঝতে সাহায্য হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "713a",
+          "label": "সহিহ মুসলিম ৭১৩a",
+          "url": "https://sunnah.com/muslim:713a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_012",
+      "conceptId": "kids_worship_suhur_blessing",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ সাহরি খেতে কেন উৎসাহিত করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে দুপুরে রোজা শুরু করা যায়"
+        },
+        {
+          "id": "b",
+          "text": "এতে ঈদের দিন রোজা রাখা জরুরি হয়"
+        },
+        {
+          "id": "c",
+          "text": "এটি প্রতিদিনের সব নামাজের বদলি"
+        },
+        {
+          "id": "d",
+          "text": "এতে বরকত আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ সাহরিতে বরকতের কথা বলেছেন। রোজার প্রস্তুতিতে ভোরের আগের এই খাবারের গুরুত্ব আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_013",
+      "conceptId": "kids_worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রোজার কথা পুরোপুরি ভুলে খাওয়া বা পান করার পর কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মনে পড়লে খাওয়া-পান করা থামিয়ে রোজা পূর্ণ করা"
+        },
+        {
+          "id": "b",
+          "text": "ধরে নেওয়া, পুরো রোজাই নষ্ট হয়ে গেছে"
+        },
+        {
+          "id": "c",
+          "text": "ইচ্ছা করে সূর্যাস্ত পর্যন্ত খেতে থাকা"
+        },
+        {
+          "id": "d",
+          "text": "পুরো মাস রোজা রাখা বন্ধ করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ভুলে খাওয়া বা পান করা ব্যক্তিকে হাদিসটি রোজা পূর্ণ করতে বলে। মনে পড়ার পর ইচ্ছা করে খাওয়া আলাদা বিষয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "সহিহ বুখারি ১৯৩৩",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_014",
+      "conceptId": "kids_worship_fasting_truthfulness",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রোজাদারদের কোন আচরণ ছাড়তে হাদিসটি বিশেষভাবে সতর্ক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সত্য উত্তর দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "মিথ্যা কথা ও অন্যায় কাজ"
+        },
+        {
+          "id": "c",
+          "text": "উপকারী কাজ করা"
+        },
+        {
+          "id": "d",
+          "text": "সম্মানজনক আলাপ করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "রোজার সঙ্গে আচরণের যত্নও আছে। হাদিসটি শুধু খাওয়া-পান করা নয়, মিথ্যা কথা ও অন্যায় কাজ সম্পর্কেও কঠোর সতর্কতা দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "সহিহ বুখারি ১৯০৩",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_015",
+      "conceptId": "kids_worship_no_fasting_eid",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ কোন দুটি দিনে রোজা রাখতে নিষেধ করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতি সোম ও বৃহস্পতিবার"
+        },
+        {
+          "id": "b",
+          "text": "প্রতি শনি ও রবিবার"
+        },
+        {
+          "id": "c",
+          "text": "ঈদুল ফিতর ও ঈদুল আজহা"
+        },
+        {
+          "id": "d",
+          "text": "রমজানের প্রথম দুই দিন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটিতে দুই ঈদের দিনে রোজা রাখতে নিষেধ করা হয়েছে। ইবাদতের নির্দেশনা মানার মধ্যে কখন রোজা রাখা যাবে না, তা জানাও আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1990",
+          "label": "সহিহ বুখারি ১৯৯০",
+          "url": "https://sunnah.com/bukhari:1990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_016",
+      "conceptId": "kids_worship_allah_hears_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দোয়া সম্পর্কে কুরআনের শিক্ষায় আল্লাহ নিজেকে কীভাবে বর্ণনা করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিচু স্বরের অনুরোধ শুনতে অক্ষম"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বিখ্যাত মানুষদের বিষয়ে আগ্রহী"
+        },
+        {
+          "id": "c",
+          "text": "কেউ তাঁকে ডাকে, সে বিষয়েই অজ্ঞ"
+        },
+        {
+          "id": "d",
+          "text": "নিকটবর্তী এবং আহ্বানকারীর ডাকে সাড়া দেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ তাঁর বান্দাদের জানিয়েছেন, তিনি নিকটবর্তী এবং তারা ডাকলে সাড়া দেন। এটি আন্তরিকভাবে দোয়া করতে উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_017",
+      "conceptId": "kids_worship_dua_both_worlds",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রাব্বানা আতিনা দিয়ে শুরু হওয়া দোয়ায় কোন দুই জীবনে কল্যাণ চাওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুনিয়া ও আখিরাত"
+        },
+        {
+          "id": "b",
+          "text": "শুধু শ্রেণিকক্ষ ও খেলার মাঠ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু পাশের দুটি শহর"
+        },
+        {
+          "id": "d",
+          "text": "শুধু আজ ও আগামীকালের খাবার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনের এই দোয়ায় দুনিয়া ও আখিরাতের কল্যাণ চাওয়া হয়। পাশাপাশি জাহান্নামের আগুন থেকেও রক্ষা চাওয়া হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "কুরআন ২:২০১",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_018",
+      "conceptId": "kids_worship_charity_no_hurt",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সদকা দেওয়ার পর কোন আচরণ থেকে কুরআন সতর্ক করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাহায্য পাওয়া ব্যক্তিকে সম্মান করা"
+        },
+        {
+          "id": "b",
+          "text": "নিজের দানের কথা মনে করিয়ে কষ্ট দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "তার সঙ্গে সুন্দরভাবে কথা বলা"
+        },
+        {
+          "id": "d",
+          "text": "তার মর্যাদা রক্ষা করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দান কাউকে অপমান করার অনুমতি দেয় না। দানের খোঁটা ও কষ্টদায়ক আচরণ দিয়ে সদকা নষ্ট করা থেকে কুরআন সতর্ক করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_019",
+      "conceptId": "kids_worship_private_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অভাবী মানুষকে গোপনে দান করা সম্পর্কে কুরআন কী বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভিড় না থাকলে এর কোনো মূল্য নেই"
+        },
+        {
+          "id": "b",
+          "text": "এটি সবসময় নিষিদ্ধ"
+        },
+        {
+          "id": "c",
+          "text": "এটি দাতার জন্য আরও ভালো"
+        },
+        {
+          "id": "d",
+          "text": "মঞ্চে দাঁড়িয়ে এটি ঘোষণা করতেই হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি সদকার প্রশংসা করে, বিশেষ করে দরিদ্রকে গোপনে দানের। কাউকে সাহায্য করতে দর্শকের প্রয়োজন নেই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "271",
+          "label": "কুরআন ২:২৭১",
+          "url": "https://quran.com/2/271"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_020",
+      "conceptId": "kids_worship_hajj_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হজ ফরজ হওয়ার ক্ষেত্রে কুরআন কোন শর্ত উল্লেখ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে নতুন ফোন থাকা"
+        },
+        {
+          "id": "b",
+          "text": "পরিবারে সবচেয়ে লম্বা হওয়া"
+        },
+        {
+          "id": "c",
+          "text": "স্কুলের প্রতিযোগিতায় জেতা"
+        },
+        {
+          "id": "d",
+          "text": "সেখানে যাওয়ার সামর্থ্য থাকা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে হজের বাধ্যবাধকতার সঙ্গে আল্লাহর ঘরে পৌঁছানোর সামর্থ্যের কথা আছে। এটি প্রতিটি শিশুকে সফরে যাওয়ার দাবি নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "97",
+          "label": "কুরআন ৩:৯৭",
+          "url": "https://quran.com/3/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_021",
+      "conceptId": "kids_worship_wudu_arms",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "শুধু আঙুলের ডগা ধোয়া কি কনুই পর্যন্ত হাত ও বাহু ধোয়ার সমান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, শুধু আঙুলের ডগার চেয়ে বেশি অংশ ধুতে হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, আঙুলের ডগা ধুলেই পুরো ধোয়ার কাজ হয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, অজুর সঙ্গে কনুইয়ের সম্পর্ক নেই"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ বাহুতে কখনো পানি লাগানো যাবে না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "অজুতে ধোয়া ও মাসেহের নির্দিষ্ট ধাপ আছে। কনুই পর্যন্ত হাত ও বাহু ধোয়া মানে শুধু আঙুলের ডগা ভেজানো নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_022",
+      "conceptId": "kids_worship_wudu_after_wind",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বায়ু বের হয়েছে নিশ্চিত জানা আর হয়েছে কি না শুধু ভাবা কি আলাদা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, নিশ্চিতভাবে বায়ু বের হলেও অজুতে প্রভাব পড়ে না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, নিশ্চিতভাবে বায়ু বের হলে আবার অজু করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, নিশ্চিতভাবে বায়ু বের হলে আজান বদলে যায়"
+        },
+        {
+          "id": "d",
+          "text": "না, শরীরের প্রতিটি অনুভূতিতে নতুন নামাজের সময়সূচি লাগে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "শিক্ষাটি অজু ভাঙে এমন বাস্তব ঘটনা সম্পর্কে। ঘটনা ঘটেছে নিশ্চিত জানা আর অনিশ্চিত ভাবনা থাকা আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "সহিহ বুখারি ১৩৫",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_023",
+      "conceptId": "kids_worship_wudu_certainty",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "প্রতিটি অনিশ্চিত ভাবনার কারণে কি আবার অজু করতে হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, প্রতিটি দুশ্চিন্তার পর আবার করতে হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সীমা ছাড়া যত পরীক্ষা তত ভালো"
+        },
+        {
+          "id": "c",
+          "text": "না, শুধু সন্দেহে নিশ্চিত অজু ভাঙে না"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সত্যিই বায়ু বের হলেও অজু ভাঙে না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শুধু সন্দেহের কারণে নিশ্চিত অজু নষ্ট ধরা হয় না। বারবার দুশ্চিন্তায় শেখা কঠিন হলে বিশ্বস্ত বড় কাউকে বলো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "137",
+          "label": "সহিহ বুখারি ১৩৭",
+          "url": "https://sunnah.com/bukhari:137"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_024",
+      "conceptId": "kids_worship_careful_water",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পানি বুঝে ব্যবহার করা মানে কি প্রয়োজনীয় অঙ্গগুলো না ধোয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, কষ্ট বাঁচাতে ধোয়া বাদ দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, কল ছুঁলেই ধোয়ার কাজ হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ বেশি পানি ফেললেই অজু সবসময় ভালো হয়"
+        },
+        {
+          "id": "d",
+          "text": "না, অকারণে বেশি না নিয়ে ঠিকমতো ধোয়ার মতো পানি ব্যবহার করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "পানি বুঝে ব্যবহার ও ঠিকমতো ধোয়া একসঙ্গে দরকার। বর্ণনাটি প্রচুর পানি নষ্ট করাকে লক্ষ্য বানায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "201",
+          "label": "সহিহ বুখারি ২০১",
+          "url": "https://sunnah.com/bukhari:201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_025",
+      "conceptId": "kids_worship_iqamah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আজান ও ইকামত কি শুধু রোজা শেষ করার খাবারের নাম?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, এগুলো নামাজের সঙ্গে সম্পর্কিত আহ্বান"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, দুটির অর্থই সন্ধ্যার খাবার"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, দুটির অর্থই ভোরের আগে খাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "না, দুটিই দানের বাক্সের নাম"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আজান নামাজের সময় জানায়; ইকামত নামাজ শুরু হওয়ার কথা জানায়। কোনোটিই খাবারের নাম নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "সহিহ বুখারি ৬৩৬",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_026",
+      "conceptId": "kids_worship_follow_imam",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জামাতে নামাজ পড়া মানে কি ইমামের আগে রুকু করার চেষ্টা করা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, আগে নড়লে দৌড়ের পুরস্কার পাওয়া যায়"
+        },
+        {
+          "id": "b",
+          "text": "না, ইমামকে অনুসরণ করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সবার উচিত পরিচালনাকারীকে উপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ কেউ কখনো রুকু করতে পারে না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসটি ইমামকে অনুসরণ করতে শেখায়। পরিচালনাকারীর আগে এগিয়ে গেলে একসঙ্গে নামাজের সেই শিক্ষা মানা হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "722",
+          "label": "সহিহ বুখারি ৭২২",
+          "url": "https://sunnah.com/bukhari:722"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_027",
+      "conceptId": "kids_worship_calm_movements",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "তাড়াতাড়ি রুকু-সিজদা করা কি সেগুলোতে শান্তভাবে স্থির হওয়ার সমান?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু গতিই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, স্থির না হওয়াই সবসময় ভালো"
+        },
+        {
+          "id": "c",
+          "text": "না, শান্তভাবে স্থির হওয়ায় যথাযথ মনোযোগ দরকার"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ নামাজে কোনো নড়াচড়া নেই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ নামাজের অবস্থানগুলোতে স্থির হতে শিখিয়েছেন। দ্রুততা সেগুলো ঠিকমতো শেখার বিকল্প নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "793",
+          "label": "সহিহ বুখারি ৭৯৩",
+          "url": "https://sunnah.com/bukhari:793"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_028",
+      "conceptId": "kids_worship_forgotten_prayer",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সত্যিই ভুলে যাওয়া নামাজের শিক্ষা কি আগে থেকে নামাজ বাদ দেওয়ার পরিকল্পনা করতে বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, ইচ্ছা করে ভুলতে উৎসাহ দেয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, এতে নামাজের সময় গুরুত্বহীন হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "না, এটি বলে ভুলে যাওয়া নামাজ আর পড়াই যায় না"
+        },
+        {
+          "id": "d",
+          "text": "না, ভুলে যাওয়ার পর কী করতে হবে তা বোঝায়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনাটি ভুলে যাওয়ার প্রতিকার দেয়। ইচ্ছা করে নামাজের সময় উপেক্ষা করার নির্দেশ দেয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "সহিহ বুখারি ৫৯৭",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_029",
+      "conceptId": "kids_worship_pray_by_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বসে নামাজ পড়ার প্রয়োজন হলে কি কেউ কম সম্মান পাওয়ার যোগ্য হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, হাদিসটি ভিন্ন শারীরিক সামর্থ্য বিবেচনা করে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু দাঁড়িয়ে পড়া ব্যক্তিরাই দয়া পাওয়ার যোগ্য"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, বসা সবসময় অলসতার প্রমাণ"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সব সুস্থ মানুষকে শুয়ে পড়তেই হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নামাজের নির্দেশনায় অক্ষমতার বিষয় বিবেচনা করা হয়েছে। শেখানো সুবিধা ব্যবহার করার কারণে কাউকে নিয়ে হাসাহাসি করা উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "সহিহ বুখারি ১১১৭",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_030",
+      "conceptId": "kids_worship_mosque_two_rakah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মসজিদে ঢুকে দুই রাকাত নামাজ পড়া কি প্রতিদিনের পাঁচ ওয়াক্ত নামাজের বিকল্প?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, এটি পুরো দিনের ইবাদতের বিকল্প"
+        },
+        {
+          "id": "b",
+          "text": "না, এটি প্রতিদিনের নামাজের বিকল্প নয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, একবার মসজিদে গেলেই ভবিষ্যতের সব নামাজের কাজ হয়"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ মসজিদে নামাজ পড়া নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটি মসজিদে ঢোকার সঙ্গে সম্পর্কিত নামাজ শেখায়। এটি পাঁচ ওয়াক্ত নামাজ বাতিল করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "444",
+          "label": "সহিহ বুখারি ৪৪৪",
+          "url": "https://sunnah.com/bukhari:444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_031",
+      "conceptId": "kids_worship_mosque_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মসজিদে ঢোকার দোয়ায় কি ভবনটির কাছেই রহমত চাওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, দেয়ালগুলো দোয়ার উত্তর দেয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, কে রহমত পাবে তা কার্পেট ঠিক করে"
+        },
+        {
+          "id": "c",
+          "text": "না, অনুরোধটি আল্লাহর কাছে করা হয়"
+        },
+        {
+          "id": "d",
+          "text": "না, এটি মানুষকে দরজার চৌকাঠের ইবাদত করতে বলে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "দোয়াটি আল্লাহর উদ্দেশে করা। মসজিদে ঢোকা তাঁকে স্মরণ করা ও তাঁর রহমত চাওয়ার উপলক্ষ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "713a",
+          "label": "সহিহ মুসলিম ৭১৩a",
+          "url": "https://sunnah.com/muslim:713a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_032",
+      "conceptId": "kids_worship_suhur_blessing",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাহরির বরকত মানে কি সবচেয়ে দামি খাবারই সবসময় সেরা?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু দামি খাবারেই বরকত হতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, পরিবারের সাধারণ খাবার কখনো গণ্য হয় না"
+        },
+        {
+          "id": "c",
+          "text": "না, সাহরি সবচেয়ে বেশি খাওয়ার প্রতিযোগিতা"
+        },
+        {
+          "id": "d",
+          "text": "না, হাদিসে দামের কোনো শর্ত নেই"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "শিক্ষাটিতে দামি খাবারের শর্ত ছাড়াই সাহরির প্রশংসা আছে। পরিবারগুলোকে খাবারটিকে খরচের প্রতিযোগিতা বানাতে হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_033",
+      "conceptId": "kids_worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "পুরোপুরি ভুলে খাওয়া আর মনে পড়ার পরও খেয়ে যাওয়ার সিদ্ধান্ত কি একই পরিস্থিতি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, বর্ণনাটি বিশেষভাবে ভুলে যাওয়া সম্পর্কে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, দুটির অর্থই পুরো সময় ভুলে থাকা"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, মনে পড়লেও কিছু বদলায় না"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ ভুলে খেলে সব রোজাই সবসময় শেষ হয়ে যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি ভুলে যাওয়া ব্যক্তিকে আশ্বস্ত করে। রোজার কথা মনে পড়ার পরও ইচ্ছা করে খেয়ে যাওয়ার অনুমতি দেয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "সহিহ বুখারি ১৯৩৩",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_034",
+      "conceptId": "kids_worship_fasting_truthfulness",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খাবার থেকে বিরত থাকলে কি রোজাদারের মিথ্যা বলার অনুমতি হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, ক্ষুধা প্রতিটি মিথ্যাকে গ্রহণযোগ্য করে"
+        },
+        {
+          "id": "b",
+          "text": "না, সত্য আচরণ তখনো গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, রোজার সময় শুধু খাবারই গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সত্য বললে রোজা শেষ হয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসটি রোজার সঙ্গে মিথ্যা কথা ও অন্যায় কাজ ছাড়ার সম্পর্ক দেখায়। ক্ষুধা অসততার অজুহাত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "সহিহ বুখারি ১৯০৩",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_035",
+      "conceptId": "kids_worship_no_fasting_eid",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ঈদুল ফিতরে রোজা রাখা কি নবী ﷺ-এর নির্দেশনার চেয়ে বাড়তি ভালো কাজ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, এটি সবসময় ঈদের সেরা কাজ"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, ঈদে খাওয়া সবসময় ভুল"
+        },
+        {
+          "id": "c",
+          "text": "না, সেদিন রোজা রাখা নিষিদ্ধ"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ রমজানের প্রতিটি রোজাই নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ইবাদতে শেখানো সীমা মানতে হয়। ঈদে রোজার নিষেধ দেখায়, বেশি রোজা রাখাই সবসময় সঠিক সিদ্ধান্ত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1990",
+          "label": "সহিহ বুখারি ১৯৯০",
+          "url": "https://sunnah.com/bukhari:1990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_036",
+      "conceptId": "kids_worship_allah_hears_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাধারণ বা মানুষের কাছে অপরিচিত হলে কি আল্লাহকে ডাকা যায় না?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু তারকারাই দোয়া করতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অনেক দর্শক থাকা জরুরি"
+        },
+        {
+          "id": "c",
+          "text": "না, তবে শুধু প্রতিযোগিতায় বিজয়ীরাই চাইতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "না, তাঁর আহ্বান শুধু বিখ্যাতদের জন্য নয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহ তাঁর বান্দাদের তাঁকে ডাকতে বলেন। দোয়ার জন্য খ্যাতি ও অন্যের মনোযোগ শর্ত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_037",
+      "conceptId": "kids_worship_dua_both_worlds",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "রাব্বানা আতিনা কি শুধু দুনিয়ার জীবন নিয়ে ভাবতে শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, এতে আখিরাতের কল্যাণও চাওয়া হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, এতে আখিরাত বাদ দেওয়া হয়েছে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, এতে শুধু দামি জিনিস চাওয়া হয়"
+        },
+        {
+          "id": "d",
+          "text": "না, এতে দুনিয়ার সব কল্যাণ চাওয়া নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দোয়াটিতে দুনিয়া ও আখিরাত দুটিই আছে। শুধু এখনকার জিনিসপত্র চাওয়ার চেয়ে বড় আশা এটি শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "কুরআন ২:২০১",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_038",
+      "conceptId": "kids_worship_charity_no_hurt",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কাউকে সদকা দিলে কি তা নিয়ে বারবার তাকে বিব্রত করার অধিকার হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, দান করে অপমানের অধিকার কেনা যায়"
+        },
+        {
+          "id": "b",
+          "text": "না, সদকার পর কষ্টদায়ক খোঁটা দেওয়া উচিত নয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, তাকে প্রতিটি অপমান মেনে নিতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সুন্দর কথা সদকাকে মূল্যহীন করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতটি সদকার পর খোঁটা ও ক্ষতি থেকে সতর্ক করে। সাহায্য কারও ওপর নিয়ন্ত্রণ না হয়ে তার মর্যাদা রক্ষা করবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_039",
+      "conceptId": "kids_worship_private_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মূল্যবান হতে হলে কি প্রতিটি দান প্রকাশ্যে করতেই হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু হাততালি পাওয়া দানই গণ্য হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সবসময় ছবি থাকা জরুরি"
+        },
+        {
+          "id": "c",
+          "text": "না, দরিদ্রকে গোপনে দানের প্রশংসা করা হয়েছে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ সব প্রকাশ্য দানই নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আয়াতটি প্রকাশ্য দানকে ভালো এবং দরিদ্রকে গোপনে দানকে আরও ভালো বলে। প্রচার থাকা জরুরি করে না।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "271",
+          "label": "কুরআন ২:২৭১",
+          "url": "https://quran.com/2/271"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_040",
+      "conceptId": "kids_worship_hajj_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হজ সম্পর্কে কুরআনের শিক্ষা কি সেখানে যাওয়ার সামর্থ্যের বিষয় উপেক্ষা করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সামর্থ্য কখনো বিবেচিত হয় না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অবস্থা যা-ই হোক সবাইকে এখনই সফর করতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "না, কারণ হজ শুধু স্কুলের একটি কাজ"
+        },
+        {
+          "id": "d",
+          "text": "না, সামর্থ্য শিক্ষাটির অংশ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি আল্লাহর ঘরে পৌঁছানোর সামর্থ্যের কথা বলে। সফর বা টাকা নিয়ে কাউকে লজ্জা দিতে এই বিষয় ব্যবহার করা উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "97",
+          "label": "কুরআন ৩:৯৭",
+          "url": "https://quran.com/3/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_041",
+      "conceptId": "kids_worship_wudu_arms",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অজুর পাঠে হাত থেকে কনুই পর্যন্ত ধোয়া দেখানো হচ্ছে। শরীরের কোন অংশ শেখানো হচ্ছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাত ও বাহু"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মাথার ওপরের অংশ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু পায়ের আঙুল"
+        },
+        {
+          "id": "d",
+          "text": "কাঁধ ও পিঠ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "যে ধাপ শেখানো হচ্ছে তার সঙ্গে ধোয়ার অংশ মেলাও। মা–বাবা বা শিক্ষক ঠিকমতো শিখতে সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "6",
+          "label": "কুরআন ৫:৬",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_042",
+      "conceptId": "kids_worship_wudu_after_wind",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নামাজ শেখার আগে ইউসুফ জানে, অজুর পর তার বায়ু বের হয়েছে। তার কী করা শেখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কিছুই হয়নি এমন ভান করা"
+        },
+        {
+          "id": "b",
+          "text": "নামাজের আগে আবার অজু করা"
+        },
+        {
+          "id": "c",
+          "text": "তার বদলে কিবলা বদলানো"
+        },
+        {
+          "id": "d",
+          "text": "শুধু আবার আজান দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নিশ্চিতভাবে বায়ু বের হলে অজু ভাঙে। ইউসুফ শান্তভাবে আবার অজু করতে পারে; ধাপগুলোতে প্রয়োজনে সাহায্য চাইতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "135",
+          "label": "সহিহ বুখারি ১৩৫",
+          "url": "https://sunnah.com/bukhari:135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_043",
+      "conceptId": "kids_worship_wudu_certainty",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আমিনার অজু করার কথা মনে আছে; বায়ু বের হওয়া নিয়ে শুধু সন্দেহ হচ্ছে। কোন শিক্ষাটি প্রযোজ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি ভাবনাই আবার শুরু করার প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "তাকে না থেমে পরীক্ষা চালিয়ে যেতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সাময়িক সন্দেহ মানেই অজু ভেঙে যাওয়া নয়"
+        },
+        {
+          "id": "d",
+          "text": "তার পুরোপুরি নামাজ শেখা ছেড়ে দেওয়া উচিত"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসটি বায়ু বের হওয়ার ধারণা সম্পর্কে। আমিনার শুধু সন্দেহকেই অজু শেষ হওয়ার প্রমাণ ভাবার দরকার নেই।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "137",
+          "label": "সহিহ বুখারি ১৩৭",
+          "url": "https://sunnah.com/bukhari:137"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_044",
+      "conceptId": "kids_worship_careful_water",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তত্ত্বাবধানে অজু শেখার সময় কোন পদ্ধতিতে পানি বুঝে ব্যবহার করা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মজার জন্য কল চালু রেখে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "বাহু ধোয়া পুরোপুরি বাদ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "যত বেশি সম্ভব পানি ফেলা"
+        },
+        {
+          "id": "d",
+          "text": "পানির প্রবাহ নিয়ন্ত্রণে রেখে ঠিকমতো ধোয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণিত পরিমিত পানি ব্যবহার যত্নশীল হতে উৎসাহ দেয়। অপ্রয়োজনীয় অপচয় এড়িয়ে ঠিকমতো ধোয়া শিখতে শিক্ষকের সাহায্য চাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "201",
+          "label": "সহিহ বুখারি ২০১",
+          "url": "https://sunnah.com/bukhari:201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_045",
+      "conceptId": "kids_worship_iqamah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক বললেন, ইকামত দেওয়া হচ্ছে। এখন কী শুরু হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জামাতের নামাজ"
+        },
+        {
+          "id": "b",
+          "text": "ভোরের আগের খাবার"
+        },
+        {
+          "id": "c",
+          "text": "রমজানের রোজার সমাপ্তি"
+        },
+        {
+          "id": "d",
+          "text": "বীজ লাগানোর পাঠ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ইকামত জামাতের নামাজ শুরুর কথা জানায়। এটি চিনলে পরিচিত নামাজের রুটিনের ক্রম বুঝতে সাহায্য হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "636",
+          "label": "সহিহ বুখারি ৬৩৬",
+          "url": "https://sunnah.com/bukhari:636"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_046",
+      "conceptId": "kids_worship_follow_imam",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ইমামের পেছনে নামাজ শেখার সময় আগে সিজদায় যেতে চাইছ। কী মনে রাখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আগে শেষ করলেই নামাজে জেতা যায়"
+        },
+        {
+          "id": "b",
+          "text": "আগে যাওয়ার প্রতিযোগিতা না করে ইমামকে অনুসরণ করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রত্যেককে আলাদা ক্রমে কাজ করতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "ইমামের নড়াচড়ার সঙ্গে তোমার কোনো সম্পর্ক নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ইমামকে অনুসরণ করতে হয়। পরের অবস্থায় আগে পৌঁছানোর চেষ্টা না করে যত্ন নিয়ে নামাজের কাজগুলো শেখো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "722",
+          "label": "সহিহ বুখারি ৭২২",
+          "url": "https://sunnah.com/bukhari:722"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_047",
+      "conceptId": "kids_worship_calm_movements",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নামাজের পাঠে হাসান স্থির না হয়ে তাড়াতাড়ি রুকু করছে। শিক্ষক তাকে কী অনুশীলনে সাহায্য করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরও দ্রুত নড়াচড়া করা"
+        },
+        {
+          "id": "b",
+          "text": "রুকু পুরোপুরি বাদ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "শান্তভাবে রুকু করে সেই অবস্থায় স্থির হওয়া"
+        },
+        {
+          "id": "d",
+          "text": "নামাজকে সময় ধরে দৌড়ের প্রতিযোগিতা বানানো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ নামাজের অবস্থানগুলোতে শান্ত হতে শিখিয়েছেন। ধৈর্য নিয়ে শেখালে হাসান বিব্রত না হয়ে শিখতে পারবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "793",
+          "label": "সহিহ বুখারি ৭৯৩",
+          "url": "https://sunnah.com/bukhari:793"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_048",
+      "conceptId": "kids_worship_forgotten_prayer",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক প্রাপ্তবয়স্কের সত্যিই ভুলে যাওয়া নামাজ মনে পড়েছে। কোন কাজ হাদিসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বার্ষিক স্মরণবার্তার জন্য অপেক্ষা করা"
+        },
+        {
+          "id": "b",
+          "text": "এর কোনো প্রতিকার নেই ধরে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "বদলে একটি উপহার কেনা"
+        },
+        {
+          "id": "d",
+          "text": "মনে পড়লে সেই নামাজ পড়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ভুলে যাওয়া নামাজ মনে পড়লে পড়তে বর্ণনাটি শেখায়। কারও ঈমান বিচার না করেই শিশুরা এটি শিখতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "597",
+          "label": "সহিহ বুখারি ৫৯৭",
+          "url": "https://sunnah.com/bukhari:597"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_049",
+      "conceptId": "kids_worship_pray_by_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক আত্মীয় দাঁড়িয়ে নামাজ পড়তে পারেন না। কোন প্রতিক্রিয়া হাদিসের নির্দেশনার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বসে নামাজ পড়ার প্রয়োজনকে সম্মান করা"
+        },
+        {
+          "id": "b",
+          "text": "অসুস্থ হওয়ার কারণে তাঁকে অলস বলা"
+        },
+        {
+          "id": "c",
+          "text": "না পারলেও দাঁড়াতে জোর করা"
+        },
+        {
+          "id": "d",
+          "text": "বলা, নামাজে কোনো সহজ ব্যবস্থা নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি সামর্থ্য অনুযায়ী নামাজ শেখায়। ব্যক্তির অবস্থা সম্মান করো; বিস্তারিত বিষয়ে জ্ঞানী বড় কেউ পথ দেখাতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1117",
+          "label": "সহিহ বুখারি ১১১৭",
+          "url": "https://sunnah.com/bukhari:1117"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_050",
+      "conceptId": "kids_worship_mosque_two_rakah",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "উপযুক্ত সময়ে শিক্ষক মসজিদে বসার আগে শেখানো নামাজ দেখাচ্ছেন। কত রাকাত দেখানো হচ্ছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ছয়"
+        },
+        {
+          "id": "b",
+          "text": "দুই"
+        },
+        {
+          "id": "c",
+          "text": "আট"
+        },
+        {
+          "id": "d",
+          "text": "বারো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটিতে বসার আগে দুই রাকাতের কথা আছে। উপযুক্তভাবে এটি পড়া সম্পর্কে বিশ্বস্ত শিক্ষকের নির্দেশনা মানো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "444",
+          "label": "সহিহ বুখারি ৪৪৪",
+          "url": "https://sunnah.com/bukhari:444"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_051",
+      "conceptId": "kids_worship_mosque_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মা–বাবার সঙ্গে মসজিদে ঢুকে প্রবেশের দোয়া শিখছ। কোন অর্থ মনে রাখা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মেঝেকে দোয়ার উত্তর দিতে বলা"
+        },
+        {
+          "id": "b",
+          "text": "সবাই তোমার প্রশংসা করুক দাবি করা"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর কাছে তাঁর রহমতের দরজা খুলে দিতে চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "কাউকে হয়রানি করতে সাহায্য চাওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "প্রবেশের দোয়ায় আল্লাহর রহমত চাওয়া হয়। অর্থ শেখা শুধু শব্দ আওড়ানোর বদলে অভ্যাসটিকে বুঝে করতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "713a",
+          "label": "সহিহ মুসলিম ৭১৩a",
+          "url": "https://sunnah.com/muslim:713a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_052",
+      "conceptId": "kids_worship_suhur_blessing",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পরিবার সাধারণ সাহরির খাবার তৈরি করেছে। কোন কথাটি নবী ﷺ-এর শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু বিলাসী খাবারই সাহরি হিসেবে গণ্য হয়"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে বড় খাবার সবসময় বেশি ঈমানের প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "সাহরিকে পরিবারের খরচের প্রতিযোগিতা বানাতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "দামি ভোজ ছাড়াও সাহরিতে বরকত আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ সাহরির বরকতের জন্য উৎসাহ দিয়েছেন। পরিবারের সাধারণ খাবারকে সম্পদ দেখানোর আয়োজন বানানোর প্রয়োজন নেই।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1923",
+          "label": "সহিহ বুখারি ১৯২৩",
+          "url": "https://sunnah.com/bukhari:1923"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_053",
+      "conceptId": "kids_worship_fasting_forgetful",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক প্রাপ্তবয়স্ক রোজার কথা পুরোপুরি ভুলে পানি পান করে পরে মনে করলেন। হাদিস অনুযায়ী কী করবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পান করা থামিয়ে রোজা চালিয়ে যাবেন"
+        },
+        {
+          "id": "b",
+          "text": "ইচ্ছা করে পান করতেই থাকবেন"
+        },
+        {
+          "id": "c",
+          "text": "রমজানের প্রতিটি রোজা নষ্ট বলে ঘোষণা করবেন"
+        },
+        {
+          "id": "d",
+          "text": "বছরের জন্য রোজা ছেড়ে দেবেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ভুলে খাওয়া বা পান করা ব্যক্তিকে বর্ণনাটি রোজা পূর্ণ করতে বলে। মনে পড়লেই ভুলে খাওয়া বা পান করা থামাতে হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1933",
+          "label": "সহিহ বুখারি ১৯৩৩",
+          "url": "https://sunnah.com/bukhari:1933"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_054",
+      "conceptId": "kids_worship_fasting_truthfulness",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি পাঠে বলা হলো, রোজা শুধু খালি পেট থাকা। কোন গুরুত্বপূর্ণ শিক্ষা যোগ করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষুধা ধোঁকা দেওয়ার অনুমতি দেয়"
+        },
+        {
+          "id": "b",
+          "text": "মিথ্যা কথা ও অন্যায় কাজ এড়ানোও গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি সত্য কথা রোজা শেষ করে"
+        },
+        {
+          "id": "d",
+          "text": "রমজানে খারাপ আচরণ ভালো হয়ে যায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসটি রোজার সময় মিথ্যা কথা ও অন্যায় কাজ থেকে সতর্ক করে। রোজা শেখার মধ্যে খাওয়া-পান করার পাশাপাশি চরিত্রের যত্নও আছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1903",
+          "label": "সহিহ বুখারি ১৯০৩",
+          "url": "https://sunnah.com/bukhari:1903"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_055",
+      "conceptId": "kids_worship_no_fasting_eid",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু বাড়তি ভালো কাজের জন্য ঈদুল ফিতরে রোজা রাখার প্রস্তাব দিল। কোন শিক্ষা জানাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঈদে রোজা রাখা সবসময় জরুরি"
+        },
+        {
+          "id": "b",
+          "text": "ঈদে খেলে রমজান বাতিল হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "নবী ﷺ সেদিন রোজা রাখতে নিষেধ করেছেন"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি উৎসব রোজা রেখে কাটাতেই হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ঈদে রোজা না রাখা শেখানো সীমা মেনে চলা। সুন্দরভাবে বুঝিয়ে বলতে ও প্রয়োজনে শিক্ষকের সাহায্য চাইতে পারো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1990",
+          "label": "সহিহ বুখারি ১৯৯০",
+          "url": "https://sunnah.com/bukhari:1990"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_056",
+      "conceptId": "kids_worship_allah_hears_dua",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "লিনা ভাবে, দোয়া করার জন্য আল্লাহর আহ্বান শুধু বিখ্যাতদের জন্য। কুরআন অনুযায়ী কী মনে করাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি দোয়ায় জনতার অনুমোদন লাগবে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু ট্রফি আছে এমন ব্যক্তিরাই চাইতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "সাধারণ পরিবারগুলো দোয়া থেকে বাদ"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ নিকটবর্তী এবং তাঁকে ডাকা ব্যক্তির ডাকে সাড়া দেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আয়াতটি আল্লাহর বান্দাদের তাঁকে ডাকা সম্পর্কে আশ্বস্ত করে। দোয়া করতে লিনার খ্যাতি বা দর্শকের প্রয়োজন নেই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "186",
+          "label": "কুরআন ২:১৮৬",
+          "url": "https://quran.com/2/186"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_057",
+      "conceptId": "kids_worship_dua_both_worlds",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক রাব্বানা আতিনা বোঝাচ্ছেন। কোন সারকথা বেছে নেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুনিয়া ও আখিরাতের কল্যাণ এবং জাহান্নামের আগুন থেকে রক্ষা চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "শুধু সবচেয়ে বেশি খেলনা চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "আখিরাত ভুলে যেতে চাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সহপাঠীদের ক্ষতি করতে সাহায্য চাওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআনের এই দোয়ায় দুই জীবনের কল্যাণ ও জাহান্নামের আগুন থেকে রক্ষা একসঙ্গে চাওয়া হয়। এর অর্থ এখনকার চাওয়ার চেয়েও বড়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "201",
+          "label": "কুরআন ২:২০১",
+          "url": "https://quran.com/2/201"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_058",
+      "conceptId": "kids_worship_charity_no_hurt",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সাহায্য করার পর এক শিশু বারবার বলছে, “তোমাকে আমার প্রশংসা করতেই হবে।” শিক্ষক কোন শিক্ষা বোঝাবেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দান করলে সব অপমানের অনুমতি পাওয়া যায়"
+        },
+        {
+          "id": "b",
+          "text": "দান দিয়ে কাউকে বিব্রত বা নিয়ন্ত্রণ না করা"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্য পাওয়া ব্যক্তিকে প্রকাশ্যে অপমান মেনে নিতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "দানের পর দয়ার কোনো গুরুত্ব নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন সদকার পর কষ্টদায়ক খোঁটা থেকে সতর্ক করে। সাহায্য পাওয়া ব্যক্তিকে সম্মান রেখেই সাহায্য করা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_059",
+      "conceptId": "kids_worship_private_charity",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মা–বাবার অনুমতি নিয়ে সারা এক অভাবী পরিবারকে গোপনে দান করল। দান মূল্যবান হতে কি ছবি পোস্ট করতেই হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, ছবির কারণেই তা সদকা হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অনেক দর্শক থাকলেই শুধু দান মূল্যবান হয়"
+        },
+        {
+          "id": "c",
+          "text": "না, অভাবীদের গোপনে দানের প্রশংসা আছে"
+        },
+        {
+          "id": "d",
+          "text": "না, কারণ গোপনে সাহায্য করা নিষিদ্ধ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন দরিদ্রকে গোপনে দানের প্রশংসা করে। সারা লোকের মনোযোগ না চেয়েও মা–বাবার নির্দেশনায় সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "271",
+          "label": "কুরআন ২:২৭১",
+          "url": "https://quran.com/2/271"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_everyday_worship_060",
+      "conceptId": "kids_worship_hajj_ability",
+      "categoryId": "everyday_worship",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হজ শেখার সময় সামর্থ্য কেন গুরুত্বপূর্ণ, তা নিয়ে শ্রেণিতে আলোচনা হচ্ছে। কোন উত্তর কুরআনের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি শিশুকে এই সপ্তাহেই সফরে যেতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বিখ্যাত পরিবারগুলো যেতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "সফরের খরচ ও সামর্থ্যের কোনো গুরুত্বই নেই"
+        },
+        {
+          "id": "d",
+          "text": "বাধ্যবাধকতায় সেখানে যাওয়ার সামর্থ্যের কথা উল্লেখ আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হজের শিক্ষায় কুরআন সামর্থ্য বিবেচনা করে। কোন পরিবারের সফরের খরচ দেওয়ার ক্ষমতা আছে, তা নিয়ে এটি প্রতিযোগিতা নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 3,
+          "ayahs": "97",
+          "label": "কুরআন ৩:৯৭",
+          "url": "https://quran.com/3/97"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2324 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "character_conduct",
+  "title": "চরিত্র ও আচরণ",
+  "description": "ছোট্ট মুসলিম → প্রাথমিক স্তর। বাড়ি ও শ্রেণিকক্ষের পরিচিত উদাহরণে সম্মানের ভাষা, ন্যায্যতা, আমানত, ব্যক্তিগত পরিসর, কৃতজ্ঞতা, সহযোগিতা ও ভুল সংশোধন নিয়ে ছোট প্রশ্ন। শিশুরা দিকনির্দেশনা ও সাহায্যের জন্য বিশ্বস্ত বড় কারও কাছে যেতে পারে। প্রায় ৬–৯ বছরের শিশুদের কথা ভেবে লেখা; প্রয়োজনে বড় কেউ প্রশ্ন পড়ে শোনাতে পারেন। সব প্রশ্ন শিশুদের প্রাথমিক স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। শিশুদের জন্য ভালো চরিত্র ও আচরণের প্রাথমিক শিক্ষা, ছোট বাক্য ও সরল উদাহরণ ব্যবহার করা হয়েছে। বয়স ও স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত কুরআনের আয়াত ও হাদিস মিলিয়ে দেখা হয়েছে। বর্তমান সময়ের উদাহরণগুলো সাধারণ সামাজিক আচরণ বোঝায়। ক্ষতি থেকে বাঁচতে সাহায্য চাওয়াকে গিবত থেকে আলাদা করা হয়েছে। ক্ষমা করার অর্থ চলতে থাকা ক্ষতি মেনে নেওয়া হিসেবে দেখানো হয়নি। কোনো প্রশ্ন শিশুকে অন্য কারও ঈমান বা মূল্য বিচার করতে বলে না। প্রশ্ন ও ব্যাখ্যার এই বাংলা রূপ শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; আয়াত বা হাদিসের হুবহু অনুবাদ নয়। দৈনন্দিন উদাহরণে সূত্রের মূলনীতি বোঝানো হয়েছে। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_character_conduct_001",
+      "conceptId": "kids_character_respectful_names",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কষ্টদায়ক নামে ডাকা সম্পর্কে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপমান করে এমন নামে কাউকে ডাকবে না"
+        },
+        {
+          "id": "b",
+          "text": "বন্ধুরা হাসলে এমন নামে ডাকবে"
+        },
+        {
+          "id": "c",
+          "text": "প্রত্যেক নতুন সহপাঠীকে এমন নামে ডাকবে"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে ছোট শিশুটিকে বেছে নেবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন কাউকে ঠাট্টা করা বা অপমানজনক নামে ডাকতে নিষেধ করে। কাউকে ডাকার সময়ও সম্মান দেখাতে হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_002",
+      "conceptId": "kids_character_no_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন ধরনের কথা আমাদের এড়িয়ে চলা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো কথা বলে উৎসাহ দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "কারও অনুপস্থিতিতে তার সম্পর্কে কষ্টদায়ক কথা বলা"
+        },
+        {
+          "id": "c",
+          "text": "শিক্ষককে পড়া বুঝিয়ে দিতে বলা"
+        },
+        {
+          "id": "d",
+          "text": "মা–বাবাকে সাহায্যের প্রয়োজন জানানো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন গিবত থেকে সাবধান করে। অন্যের সম্পর্কে কথা বলার সময়ও তার সম্মান রক্ষা করা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_003",
+      "conceptId": "kids_character_return_trusts",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কেউ আমাদের জিম্মায় কোনো জিনিস রাখলে কী করব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জিনিসটি নিজের হয়ে গেছে এমন ভাব করব"
+        },
+        {
+          "id": "b",
+          "text": "লুকিয়ে রাখব যেন কেউ ব্যবহার করতে না পারে"
+        },
+        {
+          "id": "c",
+          "text": "যার জিনিস তাকে ফিরিয়ে দেব"
+        },
+        {
+          "id": "d",
+          "text": "অনুমতি ছাড়া অন্যকে দিয়ে দেব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন আমানত তার মালিককে ফিরিয়ে দিতে শেখায়। অন্যের জিনিস যত্নে রাখা আমাদের দায়িত্ব।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_004",
+      "conceptId": "kids_character_fairness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শুধু যাদের ভালো লাগে, তাদের সঙ্গেই কি ন্যায্য আচরণ করব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু বন্ধুরাই ন্যায্য আচরণ পাওয়ার যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, যে বেশি শক্তিশালী তার কথাই ন্যায্য"
+        },
+        {
+          "id": "c",
+          "text": "না, ন্যায্য আচরণের কোনো গুরুত্ব নেই"
+        },
+        {
+          "id": "d",
+          "text": "না, কাউকে অপছন্দ করলেও ন্যায্য আচরণ করতে হবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন কাউকে অপছন্দ করলেও ন্যায্য আচরণ করতে শেখায়। অপছন্দ করা অন্যায় আচরণের অজুহাত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_005",
+      "conceptId": "kids_character_help_good",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন কোন কাজে একে অন্যকে সাহায্য করতে বলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভালো ও সঠিক কাজে"
+        },
+        {
+          "id": "b",
+          "text": "একসঙ্গে কাউকে কষ্ট দেওয়ায়"
+        },
+        {
+          "id": "c",
+          "text": "ঠকানোর পরিকল্পনায়"
+        },
+        {
+          "id": "d",
+          "text": "মজা করে অন্যের জিনিস লুকানোয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন ভালো কাজে সহযোগিতা করতে শেখায়, অন্যায় কাজে নয়। আমাদের সাহায্য ভালো কাজকে এগিয়ে নেবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_006",
+      "conceptId": "kids_character_permission_entry",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্য পরিবারের ঘরে ঢোকার আগে কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না জিজ্ঞেস করেই ঢুকে পড়ব"
+        },
+        {
+          "id": "b",
+          "text": "অনুমতি চাইব এবং সালাম দেব"
+        },
+        {
+          "id": "c",
+          "text": "দরজা ঠেলে খুলে লুকিয়ে পড়ব"
+        },
+        {
+          "id": "d",
+          "text": "জোর করে বলব সব দরজা আমাদের"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন অন্যের ঘরে ঢোকার আগে অনুমতি চাইতে ও সালাম দিতে শেখায়। ঢোকার অনুমতি পাওয়া পর্যন্ত অপেক্ষা করি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27-28",
+          "label": "কুরআন ২৪:২৭-২৮",
+          "url": "https://quran.com/24/27-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_007",
+      "conceptId": "kids_character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন আচরণে বিনয় প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবাইকে ছোট করে দেখা"
+        },
+        {
+          "id": "b",
+          "text": "বড়াই করে বলা অন্য কারও দাম নেই"
+        },
+        {
+          "id": "c",
+          "text": "নিজেকে বড় না ভেবে অন্যকে সম্মান করা"
+        },
+        {
+          "id": "d",
+          "text": "নিজের গুরুত্ব দেখাতে সদয় হতে অস্বীকার করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বিনয় মানে অহংকার না করে মানুষকে সম্মান করা। কুরআন দম্ভ ও অহংকার থেকে সাবধান করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "কুরআন ৩১:১৮",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_008",
+      "conceptId": "kids_character_considerate_voice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সাধারণ কথাবার্তায় কেমন স্বর ভালো আচরণের পরিচয় দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মনোযোগ পেতে সবার কথার ওপর চিৎকার করা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের কথা থামাতে চেঁচানো"
+        },
+        {
+          "id": "c",
+          "text": "শুধু বিরক্ত করতে জোরে কথা বলা"
+        },
+        {
+          "id": "d",
+          "text": "পরিবেশ অনুযায়ী শান্ত স্বর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনে লুকমানের উপদেশে সংযতভাবে চলতে ও কণ্ঠস্বর নিচু রাখতে বলা হয়েছে। দৈনন্দিন কথায় অন্যের সুবিধা খেয়াল করি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "কুরআন ৩১:১৯",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_009",
+      "conceptId": "kids_character_avoid_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "খাবার ও পানীয় সম্পর্কে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপচয় না করে খাওয়া ও পান করা"
+        },
+        {
+          "id": "b",
+          "text": "অনেক আছে দেখাতে অপচয় করা"
+        },
+        {
+          "id": "c",
+          "text": "মজা করে ফেলে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিবার প্রয়োজনের চেয়ে অনেক বেশি নেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন খাওয়া ও পান করার অনুমতি দেয়, আবার অপচয় করতে নিষেধ করে। খাবার নিয়ে যত্নশীল হওয়া উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "কুরআন ৭:৩১",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_010",
+      "conceptId": "kids_character_return_greeting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কেউ আমাদের ভালোভাবে সালাম দিলে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপমান করে উত্তর দিতে"
+        },
+        {
+          "id": "b",
+          "text": "একই রকম বা আরও ভালোভাবে উত্তর দিতে"
+        },
+        {
+          "id": "c",
+          "text": "সব সময় না শোনার ভান করতে"
+        },
+        {
+          "id": "d",
+          "text": "উত্তর দেওয়ার আগে উপহার চাইতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন সালামের সমান বা আরও ভালো উত্তর দিতে শেখায়। সম্মানের সঙ্গে উত্তর দেওয়া ভালো আচরণ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "86",
+          "label": "কুরআন ৪:৮৬",
+          "url": "https://quran.com/4/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_011",
+      "conceptId": "kids_character_thank_people",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কেউ সদয় হয়ে সাহায্য করলে আমাদের কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার চেষ্টার কোনো মূল্য নেই এমন ভাব করা"
+        },
+        {
+          "id": "b",
+          "text": "কথা বলার আগেই আরও কিছু দাবি করা"
+        },
+        {
+          "id": "c",
+          "text": "তাকে ধন্যবাদ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সাহায্য করার জন্য তাকে ঠাট্টা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ মানুষকে ধন্যবাদ দেওয়ার গুরুত্ব শিখিয়েছেন। কৃতজ্ঞতা দিয়ে আমরা অন্যের উপকারের মূল্য স্বীকার করি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4811",
+          "label": "সুনান আবু দাউদ ৪৮১১",
+          "url": "https://sunnah.com/abudawud:4811"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_012",
+      "conceptId": "kids_character_make_peace",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুমিনদের মধ্যে মতবিরোধ হলে কুরআন কী করতে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি ঝগড়া চালিয়ে যেতে"
+        },
+        {
+          "id": "b",
+          "text": "দুই পক্ষের জন্য অপমানজনক কথা বানাতে"
+        },
+        {
+          "id": "c",
+          "text": "মতবিরোধকে মারামারিতে পরিণত করতে"
+        },
+        {
+          "id": "d",
+          "text": "মিলমিশ করাতে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন মুমিনদের মধ্যে মিলমিশ করতে উৎসাহ দেয়। ন্যায্য ও শান্ত উপায়ে মতবিরোধ মেটানোর চেষ্টা করতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "10",
+          "label": "কুরআন ৪৯:১০",
+          "url": "https://quran.com/49/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_013",
+      "conceptId": "kids_character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কেউ আমাদের সঙ্গে অন্যায় করলে কুরআন কোন গুণের প্রতি উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ক্ষমা"
+        },
+        {
+          "id": "b",
+          "text": "শেষহীন প্রতিশোধ"
+        },
+        {
+          "id": "c",
+          "text": "তাকে চিরকাল অপমান করা"
+        },
+        {
+          "id": "d",
+          "text": "তার পরিবারকেও কষ্ট দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন ক্ষমা করতে ও দোষ মার্জনা করতে উৎসাহ দেয়। সাধারণ ভুল ক্ষমা করলে প্রতিশোধের ইচ্ছা থেকে সরে আসতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "22",
+          "label": "কুরআন ২৪:২২",
+          "url": "https://quran.com/24/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_014",
+      "conceptId": "kids_character_no_cheating",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ভেজা খাদ্যশস্য লুকিয়ে রাখার ঘটনায় নবী ﷺ কোন কাজ থেকে সাবধান করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যা দেওয়া হচ্ছে তা সৎভাবে জানানো"
+        },
+        {
+          "id": "b",
+          "text": "মানুষকে ঠকানো"
+        },
+        {
+          "id": "c",
+          "text": "ক্রেতাকে কেনার জিনিস দেখতে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সত্যভাবে কোনো বিষয় বুঝিয়ে বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী ﷺ প্রতারণা থেকে সাবধান করেছেন। কাউকে ঠকানোর জন্য গুরুত্বপূর্ণ তথ্য লুকানো অন্যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_015",
+      "conceptId": "kids_character_respect_differences",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন অনুযায়ী মানুষকে বিভিন্ন জাতি ও গোত্রে ভাগ করা হয়েছে কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি অপরিচিত নাম নিয়ে ঠাট্টা করতে"
+        },
+        {
+          "id": "b",
+          "text": "ভিন্ন ভাষার মানুষকে মূল্যহীন ভাবতে"
+        },
+        {
+          "id": "c",
+          "text": "যেন তারা একে অন্যকে জানতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "ভিন্ন কাউকেই সম্মান না করতে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন মানুষকে একে অন্যের সঙ্গে পরিচিত হতে শেখায়। ভিন্ন পরিচয় কাউকে তুচ্ছ করার কারণ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "কুরআন ৪৯:১৩",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_016",
+      "conceptId": "kids_character_respect_needy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কেউ সাহায্য চাইলে তার সঙ্গে কীভাবে কথা বলা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কিছু চেয়েছে বলে অপমান করে"
+        },
+        {
+          "id": "b",
+          "text": "তার অসুবিধা নিয়ে হেসে"
+        },
+        {
+          "id": "c",
+          "text": "লজ্জা দিতে কষ্টদায়ক নামে ডেকে"
+        },
+        {
+          "id": "d",
+          "text": "সম্মানের সঙ্গে, রূঢ়ভাবে তাড়িয়ে না দিয়ে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন সাহায্যপ্রার্থীকে রূঢ়ভাবে তাড়িয়ে দিতে নিষেধ করে। সম্মানের সঙ্গে কথা বলি এবং প্রয়োজনে বড়দের সাহায্য নিই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "10",
+          "label": "কুরআন ৯৩:১০",
+          "url": "https://quran.com/93/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_017",
+      "conceptId": "kids_character_make_room",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোনো বসার আসরে জায়গা করে দিতে বলা হলে কুরআন কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যদের জন্য জায়গা করতে"
+        },
+        {
+          "id": "b",
+          "text": "সব খালি আসনে নিজের জিনিস ছড়াতে"
+        },
+        {
+          "id": "c",
+          "text": "মজা করে মানুষকে ঠেলে সরাতে"
+        },
+        {
+          "id": "d",
+          "text": "অন্য কারও সেখানে বসার অধিকার নেই ভাবতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন আসরে অন্যদের জন্য জায়গা করে দিতে শেখায়। অন্যের সুবিধা ভাবলে তারাও অংশ নিতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "11",
+          "label": "কুরআন ৫৮:১১",
+          "url": "https://quran.com/58/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_018",
+      "conceptId": "kids_character_give_without_hurting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দান করার পর কোন আচরণ এড়ানো উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার সম্মান বজায় রাখা"
+        },
+        {
+          "id": "b",
+          "text": "বারবার খোঁটা দিয়ে তাকে ছোট করা"
+        },
+        {
+          "id": "c",
+          "text": "লোক দেখানো ছাড়া দান করা"
+        },
+        {
+          "id": "d",
+          "text": "তার সঙ্গে সম্মানের ভাষায় কথা বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন খোঁটা ও কষ্ট দিয়ে দান নষ্ট করতে নিষেধ করে। দান কাউকে লজ্জা দেওয়ার উপায় হওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_019",
+      "conceptId": "kids_character_make_amends",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কারও সঙ্গে অন্যায় করলে কী করার চেষ্টা করব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার কষ্টের কোনো গুরুত্ব নেই ভাব করব"
+        },
+        {
+          "id": "b",
+          "text": "নিজের কাজের জন্য তাকেই দোষ দেব"
+        },
+        {
+          "id": "c",
+          "text": "তার কাছে ক্ষমা চাইব ও ভুল সংশোধন করব"
+        },
+        {
+          "id": "d",
+          "text": "মজা করে একই অন্যায় আবার করব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ অন্যের সঙ্গে অন্যায় করলে ক্ষমা চাইতে শিখিয়েছেন। অন্যায় থামাতে ও তা সংশোধন করতে চেষ্টা করা উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "সহিহ বুখারি ২৪৪৯",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_020",
+      "conceptId": "kids_character_kindness_other_faiths",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অন্য ধর্মের শান্তিপূর্ণ মানুষের সঙ্গে কেমন আচরণ করব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভিন্ন বলে নিষ্ঠুর আচরণ"
+        },
+        {
+          "id": "b",
+          "text": "শুধু তাদের জন্য অন্যায্য নিয়ম"
+        },
+        {
+          "id": "c",
+          "text": "সম্মানের বদলে অপমান"
+        },
+        {
+          "id": "d",
+          "text": "সদয় ও ন্যায্য আচরণ"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন যারা আমাদের সঙ্গে যুদ্ধ করছে না, তাদের সঙ্গে সদয় ও ন্যায্য আচরণের অনুমতি দেয়। ভিন্ন ধর্ম নিষ্ঠুরতার অজুহাত নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 60,
+          "ayahs": "8",
+          "label": "কুরআন ৬০:৮",
+          "url": "https://quran.com/60/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_021",
+      "conceptId": "kids_character_respectful_names",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো নামে ডাকলে সহপাঠী কষ্ট পায়। অন্যরা হাসলেই কি সেটি ভালো আচরণ হয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, হাসি অপমানকে ভালো আচরণ বানায় না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, হাসলেই সব নাম গ্রহণযোগ্য"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সহপাঠী চুপ থাকলেই হয়"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, জনপ্রিয় কোনো শিশু নামটি দিলেই হয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কাউকে অপমান করে মজা করলেও সে কষ্ট পেতে পারে। অন্যকে ছোট করে হাসানোর চেয়ে সম্মান দেওয়া বেশি জরুরি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_022",
+      "conceptId": "kids_character_no_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গিবত এড়ানো মানে কি বিশ্বস্ত বড়দের কাছেও বুলিং বা হয়রানির কথা লুকানো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, কষ্টদায়ক আচরণ সব সময় গোপন রাখতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "না, ক্ষতি থেকে বাঁচতে সাহায্য চাওয়া আলাদা"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কোনো শিশুই সমস্যার কথা জানাতে পারে না"
+        },
+        {
+          "id": "d",
+          "text": "না, এর মানে বানিয়ে গল্প বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ক্ষতি থেকে বাঁচতে ঘটনার কথা জানানো আর গিবত এক নয়। কেউ তোমাকে বা অন্য শিশুকে কষ্ট দিলে বিশ্বস্ত বড় কাউকে জানাও।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        },
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "148",
+          "label": "কুরআন ৪:১৪৮",
+          "url": "https://quran.com/4/148"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_023",
+      "conceptId": "kids_character_return_trusts",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কিছু ধার নিলে কি তা নিজের কাছে রেখে দেওয়ার অধিকার হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, ধার নেওয়া মানেই মালিক হওয়া"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, মালিকের চেয়ে আমাদের বেশি ভালো লাগলে"
+        },
+        {
+          "id": "c",
+          "text": "না, জিনিসটিতে মালিকের অধিকার থাকে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, মালিক এক দিন ভুলে থাকলে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ধার নেওয়া জিনিস তার মালিকেরই থাকে। যত্ন করে রাখি এবং কথা অনুযায়ী ফিরিয়ে দিই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_024",
+      "conceptId": "kids_character_fairness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খেলার সময় কোন কাজটি ন্যায্য আচরণ দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের দল হারলেই নিয়ম বদলানো"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বন্ধুদের বাড়তি সুযোগ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "অন্য দলের পয়েন্ট ধরা হয় না ভাব করা"
+        },
+        {
+          "id": "d",
+          "text": "ঠিক করা নিয়ম দুই দলের জন্যই মানা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ন্যায্য আচরণ মানে ঠিক করা নিয়ম সৎভাবে মানা। কোনো দলকে বেশি পছন্দ করলেও অন্য দলকে ঠকানো ঠিক নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_025",
+      "conceptId": "kids_character_help_good",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাহায্যকারী হওয়া মানে কি বন্ধুর প্রতিটি পরিকল্পনায় যোগ দেওয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, ভালো কাজে সাহায্য করব, অন্যায়ে নয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, কাউকে কষ্ট দেওয়ার পরিকল্পনাতেও"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, বন্ধুর কোনো ভাবনাই ভুল হতে পারে না"
+        },
+        {
+          "id": "d",
+          "text": "না, এর মানে সব ভালো কাজ ফিরিয়ে দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সহযোগিতা ভালো কাজের জন্য। কাউকে কষ্ট দেওয়ার পরিকল্পনায় না বলে আরও ভালো কিছু করার পরামর্শ দিতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_026",
+      "conceptId": "kids_character_permission_entry",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো বাড়ির দরজা খোলা থাকলেই কি ঢোকার অনুমতি আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, খোলা দরজা সবার"
+        },
+        {
+          "id": "b",
+          "text": "না, তবুও অনুমতি নিতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, না জিজ্ঞেস করেই ভেতরে লুকাতে পারি"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, দরজা খোলা থাকলে কখনো সালাম লাগে না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দরজা খোলা মানেই ঢোকার অনুমতি নয়। কুরআন অন্যের বাড়ির প্রতি সম্মান দেখাতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27-28",
+          "label": "কুরআন ২৪:২৭-২৮",
+          "url": "https://quran.com/24/27-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_027",
+      "conceptId": "kids_character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্যকে ছোট না করেও কি ভালোভাবে শিখতে পেরে খুশি হওয়া যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, ভালো করলেই অন্যদের কোনো মূল্য থাকে না"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, তবে ধীরে শেখে এমনদের অপমান করতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, আত্মবিশ্বাসের সঙ্গে সম্মানও রাখা যায়"
+        },
+        {
+          "id": "d",
+          "text": "না, আমরা কখনো শিখতে পারি না এমন ভান করতে হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বিনয় মানে নিজের উন্নতি অস্বীকার করা নয়। অহংকার এড়িয়ে অন্যকে সম্মান করেও খুশি হতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "কুরআন ৩১:১৮",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_028",
+      "conceptId": "kids_character_considerate_voice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাধারণ কথাবার্তায় কেন অন্যের কথার ওপর চিৎকার করা উচিত নয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেন অন্য কেউ কখনো কথা বলার সুযোগ না পায়"
+        },
+        {
+          "id": "b",
+          "text": "যেন শান্ত সহপাঠীদের ভয় দেখাতে পারি"
+        },
+        {
+          "id": "c",
+          "text": "যেন সব দরকারি আলোচনা বন্ধ করতে পারি"
+        },
+        {
+          "id": "d",
+          "text": "যেন অন্যরাও স্বস্তিতে বলতে ও শুনতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অন্যের সুবিধা ভেবে কথা বললে আলোচনা ভালো হয়। কুরআনের উপদেশ অকারণে জোরে কথা না বলে সংযত হতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "কুরআন ৩১:১৯",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_029",
+      "conceptId": "kids_character_avoid_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খাবারের অপচয় এড়াতে কি জোর করে অতিরিক্ত খেতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, পরিমাণমতো নেব এবং বেঁচে যাওয়া খাবারের যত্ন নেব"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শরীরের অস্বস্তির কোনো গুরুত্ব নেই"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সব সময় সবচেয়ে বড় ভাগ নিতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "না, এর মানে খাবার নষ্ট করাই ভালো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "পরিমাণমতো খাবার নিই। বেঁচে যাওয়া নিরাপদ খাবার কীভাবে রাখা যায়, বড়দের জিজ্ঞেস করি। অতিরিক্ত খাওয়া লক্ষ্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "কুরআন ৭:৩১",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_030",
+      "conceptId": "kids_character_return_greeting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সালামের উত্তর দেওয়ার শিক্ষা অনুযায়ী কোন আচরণ ভালো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি সালামকে তর্কে পরিণত করা"
+        },
+        {
+          "id": "b",
+          "text": "সালাম নিয়ে ঠাট্টা না করে সম্মানের সঙ্গে উত্তর দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "নিজেকে গুরুত্বপূর্ণ দেখাতে অন্যকে উপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "যে সালাম দেয় তার কণ্ঠ নিয়ে হাসা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সালামের উত্তর দেওয়ায় সম্মান প্রকাশ পায়। কুরআন পাওয়া সালামের সমান বা আরও ভালো উত্তর দিতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "86",
+          "label": "কুরআন ৪:৮৬",
+          "url": "https://quran.com/4/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_031",
+      "conceptId": "kids_character_thank_people",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর শুকরিয়া আদায় করলে কি সাহায্যকারী মানুষকে আর ধন্যবাদ দেব না?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, তাদের উপকার উপেক্ষা করতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, শুধু দামি উপহারের জন্য কৃতজ্ঞতা দরকার"
+        },
+        {
+          "id": "c",
+          "text": "না, মানুষকেও ধন্যবাদ দেওয়া উচিত"
+        },
+        {
+          "id": "d",
+          "text": "না, আগে আরও একটি উপহার দাবি করব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মানুষকে ধন্যবাদ দেওয়া নবী ﷺ-এর শিক্ষার অংশ। আল্লাহর শুকরিয়া আদায়ের অর্থ মানুষের উপকার উপেক্ষা করা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4811",
+          "label": "সুনান আবু দাউদ ৪৮১১",
+          "url": "https://sunnah.com/abudawud:4811"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_032",
+      "conceptId": "kids_character_make_peace",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ছোটখাটো মতবিরোধে কোন কাজ মিলমিশ করতে সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এক পক্ষের অপমানজনক কথা অন্য পক্ষকে বলা"
+        },
+        {
+          "id": "b",
+          "text": "ঝগড়ার নতুন কারণ বানানো"
+        },
+        {
+          "id": "c",
+          "text": "কেউ কষ্ট পেলেই আনন্দ করা"
+        },
+        {
+          "id": "d",
+          "text": "দুই পক্ষের কথা ন্যায্যভাবে শুনে শান্ত সমাধান খোঁজা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মিলমিশ মানে ন্যায্যভাবে মতবিরোধ মেটাতে সাহায্য করা। ঝগড়া বাড়ানো এর উদ্দেশ্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "10",
+          "label": "কুরআন ৪৯:১০",
+          "url": "https://quran.com/49/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_033",
+      "conceptId": "kids_character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ক্ষমা করার অর্থ কি কাউকে বারবার আমাদের কষ্ট দিতে দেওয়া?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, সাহায্য নিয়ে ক্ষতি থামাতে পারি"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, কষ্ট দেওয়া চিরকাল চলতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, বড়দের সাহায্য চাওয়া সব সময় ভুল"
+        },
+        {
+          "id": "d",
+          "text": "না, এর মানে নির্দোষ মানুষকে কষ্ট দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ক্ষমা করার জন্য চলতে থাকা ক্ষতি মেনে নিতে হয় না। সুরক্ষা বা সহায়তা দরকার হলে বিশ্বস্ত বড় কারও সাহায্য নাও।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "22",
+          "label": "কুরআন ২৪:২২",
+          "url": "https://quran.com/24/22"
+        },
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "41",
+          "label": "কুরআন ৪২:৪১",
+          "url": "https://quran.com/42/41"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_034",
+      "conceptId": "kids_character_no_cheating",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ঠকিয়ে জিতলে কি জয় পাওয়ার কারণে কাজটি সৎ হয়ে যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, বিজয়ীদের কখনো নিয়ম মানতে হয় না"
+        },
+        {
+          "id": "b",
+          "text": "না, জেতা প্রতারণাকে সৎ করে না"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, কেউ টের না পেলেই হয়"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, পুরস্কার পাওয়া সব চালাকিকে ঠিক করে দেয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ঠকিয়ে পাওয়া ফল তবুও অসৎ। নবী ﷺ-এর সতর্কবাণী আমাদের প্রতারণা এড়াতে শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_035",
+      "conceptId": "kids_character_respect_differences",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ভিন্ন ভাষায় কথা বললে কি কোনো শিশু কম সম্মান পাওয়ার যোগ্য?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু আমাদের ভাষাই সম্মান পাওয়ার যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, অপরিচিত নামের কোনো মূল্য নেই"
+        },
+        {
+          "id": "c",
+          "text": "না, ভাষার কারণে কাউকে ছোট করা ঠিক নয়"
+        },
+        {
+          "id": "d",
+          "text": "না, তবে তার উচ্চারণ নিয়ে ঠাট্টা সব সময় ভালো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ভিন্ন জাতির মানুষ একে অন্যের সম্পর্কে জানতে পারে। কোনো শিশুর ভাষা বা পরিচয় তাকে তুচ্ছ করার কারণ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "কুরআন ৪৯:১৩",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_036",
+      "conceptId": "kids_character_respect_needy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কেউ যা চায় তা দিতে না পারলেও কি সম্মানের সঙ্গে উত্তর দেওয়া যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না, অপমান করতেই হবে"
+        },
+        {
+          "id": "b",
+          "text": "না, তার অভাব নিয়ে হাসতেই হবে"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, তবে আগে তাকে লজ্জা দিতে হবে"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, ভদ্রভাবে কথা বলে উপযুক্ত সাহায্য খুঁজতে পারি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সম্মান করে কথা বলতে সব অনুরোধ পূরণের প্রতিশ্রুতি দিতে হয় না। সদয়ভাবে কথা বলি এবং উপযুক্ত সাহায্য সম্পর্কে বড়দের জিজ্ঞেস করি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "10",
+          "label": "কুরআন ৯৩:১০",
+          "url": "https://quran.com/93/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_037",
+      "conceptId": "kids_character_make_room",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বসার আসরে জায়গা করে দেওয়া কেন ভালো আচরণ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে অন্যরাও অংশ নিতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "এতে প্রমাণ হয় সব আসন শুধু আমাদের"
+        },
+        {
+          "id": "c",
+          "text": "এতে কাউকে ধাক্কা দেওয়ার কারণ পাওয়া যায়"
+        },
+        {
+          "id": "d",
+          "text": "এর মানে অন্য কারও বসার অধিকার নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জায়গা করে দিলে অন্যরা অংশ নিতে পারে। পুরো জায়গা দখল না করে নিজের জিনিস সরিয়ে রাখতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "11",
+          "label": "কুরআন ৫৮:১১",
+          "url": "https://quran.com/58/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_038",
+      "conceptId": "kids_character_give_without_hurting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কাউকে উপহার দিলে কি তা নিয়ে বারবার খোঁটা দেওয়া ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, উপহার দিলে তার অনুভূতি নিয়ন্ত্রণ করতে পারি"
+        },
+        {
+          "id": "b",
+          "text": "না, দেওয়া যেন তাকে কষ্ট দেওয়ার উপায় না হয়"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, উপকার করলে অপমানের অনুমতি পাওয়া যায়"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, উপহার পেলে সে সম্মানের অধিকার হারায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "উপহার কাউকে অপমান করার জন্য নয়। কুরআন দানের সঙ্গে কষ্টদায়ক খোঁটা দিতে নিষেধ করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_039",
+      "conceptId": "kids_character_make_amends",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দুঃখিত বললেই কি ইচ্ছা করে একই কষ্টদায়ক কাজ বারবার করা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, ক্ষমা চাইলেই বারবার কষ্ট দেওয়া ঠিক"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, মুখে বললেই আচরণ বদলানোর দরকার নেই"
+        },
+        {
+          "id": "c",
+          "text": "না, কাজটি থামিয়ে ভুল সংশোধনের চেষ্টা করব"
+        },
+        {
+          "id": "d",
+          "text": "না, এর মানে অন্যকে দোষ দেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ক্ষমা চাওয়ার সঙ্গে অন্যায়কে গুরুত্ব দিয়ে দেখা দরকার। কষ্টদায়ক কাজ থামাও এবং ভুল সংশোধনের চেষ্টা করো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "সহিহ বুখারি ২৪৪৯",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_040",
+      "conceptId": "kids_character_kindness_other_faiths",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কেউ ভিন্ন ধর্মের হলেই কি তার সঙ্গে অন্যায় আচরণ করা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, শুধু নিজের দলের সঙ্গে ন্যায্য আচরণ করতে হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, ভিন্ন হলেই অপমানের অনুমতি পাওয়া যায়"
+        },
+        {
+          "id": "c",
+          "text": "না, তবে নিষ্ঠুরতা বন্ধুত্ব করার ভালো উপায়"
+        },
+        {
+          "id": "d",
+          "text": "না, তবুও সদয় ও ন্যায্য আচরণ করব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ভিন্ন বিশ্বাস অন্যায় বা নিষ্ঠুরতার অজুহাত নয়। অন্য ধর্মের শান্তিপূর্ণ মানুষের সঙ্গে সদয় ও ন্যায্য আচরণ করা উচিত।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 60,
+          "ayahs": "8",
+          "label": "কুরআন ৬০:৮",
+          "url": "https://quran.com/60/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_041",
+      "conceptId": "kids_character_respectful_names",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক সহপাঠী বলল, একটি নামে ডাকলে সে কষ্ট পায়। তুমি কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সে নামে ডাকা বন্ধ করে সম্মানজনক নামে ডাকব"
+        },
+        {
+          "id": "b",
+          "text": "আরও জোরে সে নামে ডাকব"
+        },
+        {
+          "id": "c",
+          "text": "সবাইকে সে নাম ব্যবহার করতে শেখাব"
+        },
+        {
+          "id": "d",
+          "text": "বলব তার অনুভূতির কোনো গুরুত্ব নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সহপাঠীর অনুভূতিকে সম্মান করো এবং কষ্টদায়ক নামটি ব্যবহার বন্ধ করো। কুরআন অপমানজনক নামে ডাকা থেকে বিরত থাকতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "11",
+          "label": "কুরআন ৪৯:১১",
+          "url": "https://quran.com/49/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_042",
+      "conceptId": "kids_character_no_backbiting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কয়েকজন বন্ধু অনুপস্থিত সহপাঠীর নামে কষ্টদায়ক গিবত শুরু করল। ভালো কাজ কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরেকটি কষ্টদায়ক গল্প যোগ করব"
+        },
+        {
+          "id": "b",
+          "text": "যোগ না দিয়ে ভালো কোনো প্রসঙ্গে কথা বলতে বলব"
+        },
+        {
+          "id": "c",
+          "text": "আরও শিশুকে শুনতে ডাকব"
+        },
+        {
+          "id": "d",
+          "text": "গিবতের কথা লিখে পোস্টার বানাব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কারও অনুপস্থিতিতে তার সম্পর্কে কষ্টদায়ক কথা ছড়িও না। ভালো প্রসঙ্গ তোলা এমন কথা থামাতে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "কুরআন ৪৯:১২",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_043",
+      "conceptId": "kids_character_return_trusts",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লাসে এক বন্ধু তোমাকে রংপেনসিল ধার দিল। কাজ শেষে কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের করে রাখতে ব্যাগে লুকাব"
+        },
+        {
+          "id": "b",
+          "text": "না জিজ্ঞেস করেই অন্যকে দিয়ে দেব"
+        },
+        {
+          "id": "c",
+          "text": "যত্নে রেখে বন্ধুকে ফিরিয়ে দেব"
+        },
+        {
+          "id": "d",
+          "text": "ভেঙে ফেলব যেন অন্য কেউ ব্যবহার না করে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ধার নেওয়া রংপেনসিল আমানত। যত্নের সঙ্গে ব্যবহার করো এবং মালিককে ফিরিয়ে দাও।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "58",
+          "label": "কুরআন ৪:৫৮",
+          "url": "https://quran.com/4/58"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_044",
+      "conceptId": "kids_character_fairness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি খেলার পয়েন্ট গুনছ। যে দলকে অপছন্দ করো, তারা একটি পয়েন্ট পেল। ন্যায্য কাজ কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপছন্দ করি বলে পয়েন্ট মুছে দেব"
+        },
+        {
+          "id": "b",
+          "text": "তাদের পয়েন্ট পছন্দের দলকে দেব"
+        },
+        {
+          "id": "c",
+          "text": "পয়েন্ট না গুনতে খেলা বন্ধ করব"
+        },
+        {
+          "id": "d",
+          "text": "সৎভাবে পয়েন্টটি লিখে রাখব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মনের পছন্দ–অপছন্দ থাকলেও ন্যায্য আচরণ করো। খেলার নিয়ম অনুযায়ী পয়েন্টটি সৎভাবে গুনে রাখো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "8",
+          "label": "কুরআন ৫:৮",
+          "url": "https://quran.com/5/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_045",
+      "conceptId": "kids_character_help_good",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু নিষ্ঠুর মজা করতে অন্য শিশুর স্কুলব্যাগ লুকাতে সাহায্য চাইল। কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না বলব এবং ভালো কিছু করার প্রস্তাব দেব"
+        },
+        {
+          "id": "b",
+          "text": "সাহায্য করব, কারণ বন্ধুর সব কথায় রাজি হতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "ব্যাগটি আরও দূরে লুকাব"
+        },
+        {
+          "id": "d",
+          "text": "স্কুলব্যাগ আনার জন্য শিশুটিকেই দোষ দেব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আমরা ভালো কাজে সহযোগিতা করি, কাউকে কষ্ট দেওয়ায় নয়। নিষ্ঠুর আচরণ চলতে থাকলে বিশ্বস্ত বড় কারও সাহায্য নাও।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "কুরআন ৫:২",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_046",
+      "conceptId": "kids_character_permission_entry",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মা বা বাবার সঙ্গে বন্ধুর বাড়ি গেলে দরজায় কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কেউ উত্তর দেওয়ার আগেই দৌড়ে ঢুকব"
+        },
+        {
+          "id": "b",
+          "text": "সালাম দিয়ে অনুমতি চাইব, ঢুকতে বলা পর্যন্ত অপেক্ষা করব"
+        },
+        {
+          "id": "c",
+          "text": "ঘুরে দেখতে সব ঘর খুলব"
+        },
+        {
+          "id": "d",
+          "text": "জোর করব যেন সঙ্গে সঙ্গে ঢুকতে দেয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অনুমতি চাও এবং অপেক্ষা করো। অন্য পরিবারের বাড়িকে সম্মান করা কুরআনের শিক্ষা।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "27-28",
+          "label": "কুরআন ২৪:২৭-২৮",
+          "url": "https://quran.com/24/27-28"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_047",
+      "conceptId": "kids_character_humility",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি শেখার একটি কাজ দ্রুত শেষ করেছ। কোন আচরণে বিনয় প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য সবাইকে বলব তাদের কোনো মূল্য নেই"
+        },
+        {
+          "id": "b",
+          "text": "যারা এখনো শিখছে তাদের সঙ্গে কথা বলব না"
+        },
+        {
+          "id": "c",
+          "text": "ধীরে করা সহপাঠীদের ছোট না করে খুশি হব"
+        },
+        {
+          "id": "d",
+          "text": "বড়াই করে বলব শুধু আমিই সম্মান পাওয়ার যোগ্য"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নিজের উন্নতিতে খুশি হতে পারো, অন্যকে ছোট না করেও। বিনয় থাকলে সদয় আচরণ ও সম্মান বজায় থাকে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "18",
+          "label": "কুরআন ৩১:১৮",
+          "url": "https://quran.com/31/18"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_048",
+      "conceptId": "kids_character_considerate_voice",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শ্রেণিকক্ষে শান্ত আলোচনার সময় কীভাবে কথা বলবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চিৎকার করে সবার কণ্ঠ ঢেকে দেব"
+        },
+        {
+          "id": "b",
+          "text": "শুধু মনোযোগ পেতে চেঁচাব"
+        },
+        {
+          "id": "c",
+          "text": "সহপাঠীদের বিরক্ত করতে জোরে শব্দ করব"
+        },
+        {
+          "id": "d",
+          "text": "উপযুক্ত স্বরে বলব এবং অন্যদেরও বলতে দেব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "পরিবেশ অনুযায়ী স্বরে কথা বলা অন্যের সুবিধা ভাবার পরিচয়। অন্যদেরও কথা বলার ও শোনানোর সুযোগ দাও।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "19",
+          "label": "কুরআন ৩১:১৯",
+          "url": "https://quran.com/31/19"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_049",
+      "conceptId": "kids_character_avoid_waste",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি নিজের জন্য নাশতা নিচ্ছ। কোন কাজে অপচয় কমে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিমাণমতো নেব, দরকার হলে আরও চাইব"
+        },
+        {
+          "id": "b",
+          "text": "ফেলে দেওয়ার জন্য বিশাল স্তূপ নেব"
+        },
+        {
+          "id": "c",
+          "text": "মজা করে পানীয় ফেলে দেব"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধুকে মুগ্ধ করতে না খাওয়া খাবার ফেলে দেব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "পরিমাণমতো খাবার নেওয়া অপচয় এড়াতে সাহায্য করে। বেঁচে যাওয়া খাবার নিরাপদে রাখার বিষয়ে বড়দের জিজ্ঞেস করো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "31",
+          "label": "কুরআন ৭:৩১",
+          "url": "https://quran.com/7/31"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_050",
+      "conceptId": "kids_character_return_greeting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক সহপাঠী বলল, “আসসালামু আলাইকুম।” উপযুক্ত উত্তর কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চলে যাও, তোমার সালাম হাস্যকর"
+        },
+        {
+          "id": "b",
+          "text": "ওয়া আলাইকুমুস সালাম"
+        },
+        {
+          "id": "c",
+          "text": "উত্তর দেওয়ার আগে একটি খেলনা দাও"
+        },
+        {
+          "id": "d",
+          "text": "শুধু গুরুত্বপূর্ণ মানুষ আমাকে সালাম দিতে পারে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ওয়া আলাইকুমুস সালাম বলে শান্তির সালামের উত্তর দেওয়া হয়। সম্মান ও আন্তরিকতার সঙ্গে উত্তর দিতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "86",
+          "label": "কুরআন ৪:৮৬",
+          "url": "https://quran.com/4/86"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_051",
+      "conceptId": "kids_character_thank_people",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক বাড়তি সময় দিয়ে তোমাকে পড়া বুঝতে সাহায্য করলেন। কী বলতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আপনার চেষ্টার কোনো মূল্য নেই"
+        },
+        {
+          "id": "b",
+          "text": "আপনাকে আমাকে উপহারও দিতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "আমাকে সাহায্য করার জন্য ধন্যবাদ"
+        },
+        {
+          "id": "d",
+          "text": "আপনার সাহায্যের মূল্য কখনো দেব না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "শিক্ষককে ধন্যবাদ দিলে তাঁর উপকারের মূল্য স্বীকার করা হয়। মানুষের প্রতি কৃতজ্ঞতা দেখানো নবী ﷺ-এর শিক্ষা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4811",
+          "label": "সুনান আবু দাউদ ৪৮১১",
+          "url": "https://sunnah.com/abudawud:4811"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_052",
+      "conceptId": "kids_character_make_peace",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পরের পালা কার, তা নিয়ে দুই বন্ধু তর্ক করছে। কীভাবে সাহায্য করতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুজনকে অপমান করার কথা বানাব"
+        },
+        {
+          "id": "b",
+          "text": "একজনকে বলব অন্যজন তাকে ঘৃণা করে"
+        },
+        {
+          "id": "c",
+          "text": "তাদের মারামারি করতে উৎসাহ দেব"
+        },
+        {
+          "id": "d",
+          "text": "শান্তভাবে পালার ক্রম দেখতে সাহায্য করব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "রাগ না বাড়িয়ে ন্যায্য সমাধান খুঁজতে সাহায্য করো। পালা ঠিক করতে সাহায্য লাগলে শিক্ষককে জানাও।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "10",
+          "label": "কুরআন ৪৯:১০",
+          "url": "https://quran.com/49/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_053",
+      "conceptId": "kids_character_forgiveness",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু ভুল করে তোমার ব্লকের ঘর ভেঙে ক্ষমা চাইল। কোন আচরণে ক্ষমা করার ইচ্ছা বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিশোধ না নিয়ে তার ক্ষমা চাওয়া গ্রহণ করব"
+        },
+        {
+          "id": "b",
+          "text": "বদলা নিতে তার জিনিস নষ্ট করব"
+        },
+        {
+          "id": "c",
+          "text": "তার পুরো পরিবারকে অপমান করব"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিদিন তাকে লজ্জা দেওয়ার পরিকল্পনা করব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সাধারণ দুর্ঘটনায় ক্ষমা করা যায়। তবুও তোমার মন খারাপ হয়েছে জানাতে পারো এবং আবার বানাতে সাহায্য চাইতে পারো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 24,
+          "ayahs": "22",
+          "label": "কুরআন ২৪:২২",
+          "url": "https://quran.com/24/22"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_054",
+      "conceptId": "kids_character_no_cheating",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি শ্রেণিকক্ষের খেলায় জিততে চাও। সৎ কাজ কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কেউ না দেখলে নিজের ঘুঁটি সরাব"
+        },
+        {
+          "id": "b",
+          "text": "গোপনে স্কোর না বদলে নিয়ম মানব"
+        },
+        {
+          "id": "c",
+          "text": "অন্য দলের কার্ড লুকাব"
+        },
+        {
+          "id": "d",
+          "text": "উত্তর ভুল হলেও সঠিক বলেছি এমন ভান করব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সৎভাবে খেললে প্রতারণা এড়ানো হয়। জেতার চেয়ে সত্য ও ন্যায্য আচরণ বেশি জরুরি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_055",
+      "conceptId": "kids_character_respect_differences",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নতুন সহপাঠীর নাম অন্য ভাষার। কোন কাজে সম্মান দেখানো হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অপরিচিত বলে নাম নিয়ে ঠাট্টা করা"
+        },
+        {
+          "id": "b",
+          "text": "তার সম্পর্কে কিছু জানতে না চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "ভদ্রভাবে নামের উচ্চারণ জিজ্ঞেস করা"
+        },
+        {
+          "id": "d",
+          "text": "বলা যে শুধু নিজের মতো নামেরই মূল্য আছে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ভিন্ন পরিচয় একে অন্যকে জানার সুযোগ দেয়। ভদ্রভাবে নামের উচ্চারণ জানতে চাওয়া সম্মানের পরিচয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "কুরআন ৪৯:১৩",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_056",
+      "conceptId": "kids_character_respect_needy",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি মা বা বাবার সঙ্গে আছ, এমন সময় কেউ সাহায্য চাইল। কী করতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চেঁচিয়ে তাকে অপমান করব"
+        },
+        {
+          "id": "b",
+          "text": "তার অসুবিধা নিয়ে হাসব"
+        },
+        {
+          "id": "c",
+          "text": "আগে আমাদের বিনোদন দিতে বলব"
+        },
+        {
+          "id": "d",
+          "text": "মা বা বাবার কাছে থেকে সম্মানের সঙ্গে উত্তর দেব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সম্মানের সঙ্গে কথা বলো এবং সাহায্যের বিষয়ে মা–বাবার নির্দেশনা নাও। সাহায্যের প্রয়োজন হওয়া কাউকে অপমান করার কারণ নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "10",
+          "label": "কুরআন ৯৩:১০",
+          "url": "https://quran.com/93/10"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_057",
+      "conceptId": "kids_character_make_room",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক পড়ার বৃত্তে আরেকটি শিশুর জন্য জায়গা করতে বললেন। কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ব্যাগ সরিয়ে উপযুক্ত জায়গা করব"
+        },
+        {
+          "id": "b",
+          "text": "খালি জায়গাজুড়ে নিজের জিনিস ছড়াব"
+        },
+        {
+          "id": "c",
+          "text": "শিশুটিকে ঠেলে সরাব"
+        },
+        {
+          "id": "d",
+          "text": "বলব পুরো বৃত্তটাই আমার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জায়গা করে দিলে আরেকটি শিশু অংশ নিতে পারে। কাউকে ধাক্কা না দিয়ে শিক্ষকের নির্দেশনা অনুসরণ করো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 58,
+          "ayahs": "11",
+          "label": "কুরআন ৫৮:১১",
+          "url": "https://quran.com/58/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_058",
+      "conceptId": "kids_character_give_without_hurting",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অনুমতি নিয়ে দরকার আছে এমন এক শিশুকে বাড়তি খাতা দিলে। পরে কোন কাজটি এড়াবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্মানের সঙ্গে খাতাটি ব্যবহার করতে দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "বারবার দেওয়ার কথা বলে তাকে ছোট করা"
+        },
+        {
+          "id": "c",
+          "text": "সমান সহপাঠী হিসেবে আচরণ করা"
+        },
+        {
+          "id": "d",
+          "text": "সম্মানের ভাষায় কথা বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কাউকে অপমান না করে দাও। উপকারী উপহার যেন কষ্টদায়ক খোঁটা দেওয়ার কারণ না হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "264",
+          "label": "কুরআন ২:২৬৪",
+          "url": "https://quran.com/2/264"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_059",
+      "conceptId": "kids_character_make_amends",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি ইচ্ছা করে বন্ধুর পাতায় আঁকিবুঁকি করেছ, এখন অনুতপ্ত। ভালো পরবর্তী কাজ কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাতা লুকিয়ে অন্য শিশুকে দোষ দেব"
+        },
+        {
+          "id": "b",
+          "text": "আবার আঁকিবুঁকি করতে করতেই ক্ষমা দাবি করব"
+        },
+        {
+          "id": "c",
+          "text": "ক্ষমা চেয়ে কীভাবে ঠিক করতে পারি জিজ্ঞেস করব"
+        },
+        {
+          "id": "d",
+          "text": "বলব তার অনুভূতি হাস্যকর"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ক্ষমা চাও এবং ভুল সংশোধনের চেষ্টা করো। কীভাবে ঠিক করা যায় তা ঠিক করতে বড় কেউ সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2449",
+          "label": "সহিহ বুখারি ২৪৪৯",
+          "url": "https://sunnah.com/bukhari:2449"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_character_conduct_060",
+      "conceptId": "kids_character_kindness_other_faiths",
+      "categoryId": "character_conduct",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অন্য ধর্মের শান্তিপূর্ণ সহপাঠী তোমাদের দলীয় কাজে যোগ দিল। কীভাবে আচরণ করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার ধর্ম ভিন্ন বলে অপমান করব"
+        },
+        {
+          "id": "b",
+          "text": "হারানোর জন্য তার ওপর অন্যায্য নিয়ম দেব"
+        },
+        {
+          "id": "c",
+          "text": "শুধু ভিন্ন বলে সাধারণ সদয় আচরণও করব না"
+        },
+        {
+          "id": "d",
+          "text": "সদয়ভাবে দলে নেব এবং একই ন্যায্য নিয়ম মানব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "অন্য ধর্মের শান্তিপূর্ণ মানুষের সঙ্গেও সদয় ও ন্যায্য আচরণ করতে হয়। সহপাঠীর সঙ্গে সম্মান করে আচরণ করো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 60,
+          "ayahs": "8",
+          "label": "কুরআন ৬০:৮",
+          "url": "https://quran.com/60/8"
+        }
+      ]
+    }
+  ]
+}

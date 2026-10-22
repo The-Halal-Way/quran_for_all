@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "configVersion": "1.0.0",
+  "quizId": "kids_beginner_knowledge_assessment",
+  "supportedLanguages": [
+    "en",
+    "bn"
+  ],
+  "defaultLanguage": "en",
+  "assets": {
+    "basePath": "assets/json/quiz/kids/beginner",
+    "languageDirectories": {
+      "en": "english",
+      "bn": "bangla"
+    },
+    "questionBankPathTemplate": "{basePath}/{language}/{categoryId}.json",
+    "requiredBankSchemaVersion": 3
+  },
+  "categories": [
+    "beliefs_foundations",
+    "quran_knowledge",
+    "seerah",
+    "hadith_knowledge",
+    "everyday_worship",
+    "character_conduct"
+  ],
+  "assessment": {
+    "questionCount": 24,
+    "questionsPerCategory": {
+      "familiar_fact": 2,
+      "broader_basic": 1,
+      "everyday_application": 1
+    },
+    "questionType": "single_choice",
+    "optionsPerQuestion": 4,
+    "timeLimitSeconds": null,
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "preventDuplicateQuestionIds": true,
+    "preventDuplicateConceptIds": true,
+    "languageChangeDuringAttempt": "locked_after_start",
+    "quotaDimension": "questionStyle"
+  },
+  "selection": {
+    "historyScope": "across_languages_by_question_id",
+    "recentCompletedAttemptsToAvoid": 3,
+    "priorityOrder": [
+      "unseen",
+      "seen_outside_recent_attempts",
+      "seen_in_recent_attempts"
+    ],
+    "withinPriority": "least_recently_seen_then_random",
+    "unseenTieBreak": "random",
+    "fallbackPolicy": "relax_recency_only",
+    "onInsufficientEligibleQuestions": "block_start_with_localized_error",
+    "preserveCategoryAndQuestionStyleQuotas": true
+  },
+  "answers": {
+    "allowChangeBeforeSubmission": true,
+    "allowSkip": true,
+    "allowBackNavigation": true,
+    "unknownActionEnabled": true,
+    "unknownActionLocalizationKey": "quiz.answer.notSure",
+    "unknownIsAnswerOption": false,
+    "unansweredOnSubmission": "count_as_unanswered",
+    "confirmSubmissionWithUnanswered": true,
+    "showCorrectAnswersDuringAttempt": false
+  },
+  "scoring": {
+    "correctPoints": 1,
+    "incorrectPoints": 0,
+    "unknownPoints": 0,
+    "unansweredPoints": 0,
+    "negativeMarking": false,
+    "difficultyWeighting": false,
+    "percentageFormula": "100 * correctCount / totalQuestionCount",
+    "roundPercentageToDecimals": 1,
+    "categoryBreakdown": true,
+    "trackCounts": [
+      "correct",
+      "incorrect",
+      "unknown",
+      "unanswered"
+    ],
+    "resultInterpretation": "performance_on_sampled_questions_only",
+    "resultLocalizationKey": "quiz.results.sampledKnowledgeNotice",
+    "questionStyleBreakdown": true
+  },
+  "review": {
+    "availableAfterSubmission": true,
+    "showSelectedAnswer": true,
+    "showCorrectAnswer": true,
+    "showExplanation": true,
+    "showReferences": true,
+    "showUnknownAndUnanswered": true,
+    "allowReferenceLinks": true
+  },
+  "persistence": {
+    "storage": "local",
+    "autoSaveAfterEachAction": true,
+    "resumeIncompleteAttempt": true,
+    "maxIncompleteAttempts": 1,
+    "saveFields": [
+      "attemptId",
+      "quizId",
+      "configVersion",
+      "startedAtUtc",
+      "updatedAtUtc",
+      "completedAtUtc",
+      "language",
+      "status",
+      "questionSnapshots",
+      "questionOrder",
+      "optionOrderByQuestionId",
+      "responsesByQuestionId",
+      "currentQuestionIndex",
+      "result"
+    ],
+    "snapshotPolicy": "store_full_selected_question_content_and_grading_metadata",
+    "contentUpdateDuringAttempt": "resume_saved_snapshot",
+    "questionExposureRecordedOn": "question_first_displayed",
+    "saveCompletedAttemptHistory": true
+  },
+  "retake": {
+    "enabled": true,
+    "generateNewSelection": true,
+    "reuseCompletedAttempt": false,
+    "minimumIntervalSeconds": 0
+  },
+  "localization": {
+    "userFacingStringsSource": "app_localization",
+    "categoryTitleKeyTemplate": "quiz.categories.{categoryId}.title",
+    "missingTranslationPolicy": "block_start_with_localized_error",
+    "preserveIdsAcrossLanguages": true,
+    "questionStyleLabelKeys": {
+      "familiar_fact": "quiz.questionStyle.familiar_fact",
+      "broader_basic": "quiz.questionStyle.broader_basic",
+      "everyday_application": "quiz.questionStyle.everyday_application"
+    }
+  },
+  "contentReview": {
+    "statusFieldPath": "review.status",
+    "releasePolicy": "require_editorial_and_scholarly_review_before_production",
+    "currentBankStatus": "draft_for_scholarly_review",
+    "approvedStatuses": [
+      "editorial_and_scholarly_approved"
+    ]
+  },
+  "validation": {
+    "requireAllCategories": true,
+    "requireExactlyFourUniqueOptions": true,
+    "requireCorrectOptionIdInOptions": true,
+    "requireUniqueQuestionIdsAcrossBanks": true,
+    "requireNonEmptyConceptId": true,
+    "requireExplanations": true,
+    "requireReferences": true,
+    "requireLanguageMatchesSelectedLanguage": true,
+    "requireCategoryMatchesFile": true,
+    "requireBankQuestionCountMatchesActual": true,
+    "validateQuotasBeforeStarting": true,
+    "neverSilentlyDropInvalidQuestions": true,
+    "requireQuestionStyleCountsMatchActual": true,
+    "requireAudienceMatchesSelectedAudience": true,
+    "requireLevelMatchesSelectedLevel": true
+  },
+  "implementationNotes": [
+    "The Flutter application must implement these settings; this JSON does not execute selection, scoring or persistence.",
+    "Selection must satisfy all category and question-style quotas and concept uniqueness together; use a quota-aware search rather than a greedy choice that may dead-end.",
+    "Seen means actually displayed, including questions in abandoned attempts. Recent-attempt avoidance covers the last configured number of completed attempts.",
+    "Grade answers using correctOptionId, never displayed option index. Option order is stored as option IDs.",
+    "Responses use status answered, unknown or unanswered. Only answered responses contain a selectedOptionId.",
+    "Result labels and any thresholds added later are editorial choices, not validated measures of faith, piety or scholarly qualification.",
+    "Load only the language selected before starting. Language is immutable for in-progress and completed attempts. Save only that language in the selected question snapshots.",
+    "Question styles describe the kind of task, not its difficulty. Every question in this assessment must belong to the Kids audience and Beginner level. Select two familiar facts, one broader basic, and one everyday application per subject. An adult may read the questions aloud; results describe only performance on these sampled questions, not a child’s faith or worth."
+  ],
+  "languageNames": {
+    "en": "English",
+    "bn": "বাংলা"
+  },
+  "audienceId": "kids",
+  "levelId": "beginner"
+}

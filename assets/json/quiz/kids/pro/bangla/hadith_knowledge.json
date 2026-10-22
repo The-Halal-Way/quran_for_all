@@ -1,0 +1,2319 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "hadith_knowledge",
+  "title": "হাদিস পরিচিতি",
+  "description": "ছোট্ট মুসলিম → প্রো। ছোট প্রশ্নে হাদিস পড়ার সহজ দক্ষতা গড়া ও পরিচিত শিক্ষার সঙ্গে সুচিন্তিত আচরণের সম্পর্ক বোঝানো হয়েছে। বর্ণনাকারী ও সংকলকের ভূমিকা, সংকলনের সূত্র পড়া, জ্ঞানভিত্তিক ব্যাখ্যা চাওয়া, ভালো সঙ্গ, পারস্পরিক সহায়তা, সহমর্মিতা, ছোট ভালো কাজ, কৃতজ্ঞতা, অন্যকে সাহায্য ও আল্লাহর সাহায্য, স্পষ্ট বিকল্প বেছে নেওয়া, ভালো কাজের পথ দেখানো, সুস্থতা ও অবসরের মূল্য, হায়া, অহংকার, জিনিসপত্র, যত্ন নিয়ে কথা বলা, খাবারের বরকত, অন্যের জন্য দোয়া, গোপনীয়তা ও সাধারণ উপহার নিয়ে লেখা। বড় কেউ প্রশ্ন পড়ে শোনাতে বা অপরিচিত শব্দ বুঝিয়ে দিতে পারেন। সব প্রশ্ন শিশুদের প্রো স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রো ছোট্ট মুসলিম বিভাগের সর্বোচ্চ নির্ধারিত স্তর, শিক্ষিত ব্যবহারকারী বিভাগের স্তর নয়। শিক্ষার সঙ্গে তার উদ্দেশ্যের সম্পর্ক বোঝা, সহজ তুলনা বোঝা, সম্পর্কিত ধারণা আলাদা করা এবং ছোট পরিস্থিতিতে শিক্ষা কাজে লাগানোয় গুরুত্ব দেওয়া হয়েছে। তিন ধরনের প্রশ্নই শিশুদের প্রো স্তরের; প্রশ্নের ধরন কঠিনতার আলাদা স্তর নয়। দেওয়া সূত্রের পরিচয়গুলো পড়ার উদাহরণ, হাদিসের নম্বর বা বর্ণনাকারীর জীবনী মুখস্থ করার দাবি নয়। সনদের জটিল বিশ্লেষণ, স্বতন্ত্রভাবে হাদিসের মান নির্ধারণ, বিশেষজ্ঞ পর্যায়ের ফিকহি বিতর্ক বা অপরিচিত ঐতিহাসিক তারিখ প্রয়োজন নেই। শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে স্তরের মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সহিহ বুখারি, সহিহ মুসলিম, জামে তিরমিজি ও সুনান আবু দাউদের সংযুক্ত বর্ণনা এবং সুন্নাহ ডটকমের নিজস্ব সংকলন-পরিচিতি ও ব্যাখ্যার পৃষ্ঠা মিলিয়ে দেখা হয়েছে। সংযুক্ত পৃষ্ঠায় তিরমিজি ১৯৫৪ ও ২৫১৮ সহিহ (দারুসসালাম), তিরমিজি ১৯৫৯ হাসান (দারুসসালাম) এবং আবু দাউদ ৫০০৩ হাসান (আলবানি) হিসেবে চিহ্নিত; এগুলো সূত্রের মূল্যায়ন উল্লেখ, স্বতন্ত্রভাবে হাদিসের মান নির্ধারণ নয়। প্রশ্ন ও ব্যাখ্যা শিশুদের উপযোগী শিক্ষামূলক নিজস্ব ভাষায় লেখা, হুবহু অনুবাদ নয়। বর্তমান সময়ের পরিস্থিতিগুলো শিক্ষা প্রয়োগের উদাহরণ; বর্ণিত ঘটনা বা সম্পূর্ণ ফিকহি বিধান নয়। বর্ণনাকারীর উদাহরণে নবীজির কথা শুনেছেন বলে বর্ণনাকারী সাহাবি উমরকে পরবর্তী সংকলক থেকে আলাদা করা হয়েছে; বর্ণনাটির শুধু একজন বর্ণনাকারী আছেন দাবি করা হয়নি। সূত্র পড়ায় সংযুক্ত ওয়েবসাইটের প্রদর্শিত সংকলনের নম্বর ব্যবহার করা হয়েছে; সব সংস্করণের পৃষ্ঠা বা নম্বর এক ধরে নেওয়া হয়নি। অপরিচিত লাগলেই বর্ণনা প্রত্যাখ্যান করার অনুমতি হিসেবে জ্ঞানী শিক্ষক খোঁজাকে দেখানো হয়নি। সুগন্ধির তুলনা সঙ্গীর প্রভাব সম্পর্কে; কর্মীর পেশা, আয়, শারীরিক গন্ধ বা মানবিক মূল্য বিচার সম্পর্কে নয়। ভবন ও দেহের তুলনা পারস্পরিক সহায়তা ও যত্নে উৎসাহ দেয়; শিশুকে বড়দের বোঝা বহন, ব্যক্তিগত তথ্য জানা বা অনিরাপদ অবস্থায় ঢুকতে বাধ্য করে না। হাসিমুখের উদাহরণ সব সময় হাসা দাবি করে না; মুখ দেখে প্রতিবন্ধিতা, কষ্ট, ব্যক্তিত্ব বা অন্তরের ঈমান বিচার করে না। মানুষকে ধন্যবাদ আল্লাহর প্রতি কৃতজ্ঞতার সঙ্গে থাকে, তার বিকল্প বা ক্ষতিকর দাবির অজুহাত নয়। অন্যকে সাহায্যের সঙ্গে আল্লাহর সাহায্যের সম্পর্ক উপযুক্ত সহায়তায় উৎসাহ দেয়; শিশুকে বিপজ্জনক বোঝা নেওয়া, বড়দের সমস্যা সামলানো বা নিজের প্রয়োজন অবহেলা করতে বলে না। সংশয়ের প্রশ্নে স্পষ্ট বিকল্পসহ প্রকৃত অনিশ্চয়তা বোঝানো হয়েছে; অনিচ্ছাকৃত দুশ্চিন্তা, সাধারণ উদ্বেগ, কল্পিত নিষেধ বা বিষয় পরিষ্কার হওয়ার পর শেষহীন যাচাই নয়। ভালো কাজের পথ দেখানোর সওয়াবকে অন্যের সওয়াব কেটে নেওয়া বা বাস্তব সহায়তা না দেওয়ার কারণ হিসেবে দেখানো হয়নি। সুস্থতা ও অবসরের শিক্ষায় কৃতজ্ঞতা ও সুযোগের সুচিন্তিত ব্যবহারে উৎসাহ আছে; সাধারণ খেলা, উপযুক্ত বিশ্রাম, অসুস্থতা বা প্রতিবন্ধিতার নিন্দা নেই। সুস্থতাকে বেশি ঈমানের প্রমাণ ধরা হয়নি। হায়া অন্যায় থেকে শালীনভাবে বিরত থাকা হিসেবে শেখানো হয়েছে; ক্ষতি লুকানো, প্রয়োজনীয় প্রশ্ন এড়ানো বা লাজুক শিশুকে অন্যের চেয়ে ভালো বলার কারণ নয়। অহংকারের বর্ণনায় শুধু পরিপাটি পোশাক পছন্দ করা থেকে অবজ্ঞা ও সত্য প্রত্যাখ্যান আলাদা করা হয়েছে; কারও গোপন অন্তর বা চূড়ান্ত মুক্তি বিচার করা হয়নি। জিনিসপত্রের বর্ণনা মজাসহ অন্যায়ভাবে নিয়ে নেওয়া সম্পর্কে; প্রতিটি ভুল বা অনুমতি নিয়ে ধার করাকে চুরি বলা হয়নি। কথার সতর্কতায় যত্নে উৎসাহ আছে; নির্দিষ্ট শিশুর পরকালের অবস্থা ঘোষণা বা অসাবধানে বলা প্রতিটি কথাকে ভয়াবহ বিপর্যয় ভাবা নয়। খাবারের প্রশ্নে বর্ণনার বরকতের স্মরণ ব্যবহার করা হয়েছে; পরিমিত অংশ নেওয়া শিক্ষামূলক প্রয়োগ, উদ্ধৃতি বা অনিরাপদ খাবার খাওয়া, প্রয়োজনের বেশি খাওয়া বা অসুস্থতা উপেক্ষার নির্দেশ নয়। অনুপস্থিত মুসলিমের জন্য দোয়া ফেরেশতার প্রতিক্রিয়ার মাধ্যমে শেখানো হয়েছে; ভিত্তিহীন নিশ্চয়তা, প্রচারের দাবি বা অন্যদের প্রতি আন্তরিকতা নিষিদ্ধ বলা নেই। গোপনীয়তা বিশ্বাস করে বলা সাধারণ তথ্য সম্পর্কে; বিপদ, নির্যাতন বা ক্ষতির ঝুঁকি বিশ্বস্ত বড় কাউকে জানাতে হবে, গোপন রাখাকে সীমাহীন করা হয়নি। সাধারণ উপহারের প্রশ্নে কৃতজ্ঞতা আছে; অনিরাপদ উপহার গ্রহণ, দামি ফিরতি উপহার বা আন্তরিকতার ন্যূনতম দাম নির্ধারণের দাবি নেই। এটি আলেমের পর্যালোচনা ও শিশুর পাঠযোগ্যতা মূল্যায়নের খসড়া, স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_pro_hadith_knowledge_001",
+      "conceptId": "kids_hadith_narrator_compiler_roles",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এক পৃষ্ঠায় উমরকে বর্ণনাকারী ও বুখারিকে সংকলক বলা হয়েছে। এই বর্ণনায় কে নবী ﷺ-এর কথা শুনে বর্ণনা করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উমর"
+        },
+        {
+          "id": "b",
+          "text": "বুখারি"
+        },
+        {
+          "id": "c",
+          "text": "পৃষ্ঠার অনুবাদক"
+        },
+        {
+          "id": "d",
+          "text": "অ্যাপের ডিজাইনার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "উমর নবী ﷺ-এর কথা শোনার বর্ণনা দিয়েছেন। পরে বুখারি তাঁর সংকলনে বর্ণনাটি রেখেছেন; তাঁদের ভূমিকা আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        },
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ বুখারি পরিচিতি",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_002",
+      "conceptId": "kids_hadith_read_reference",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সহিহ বুখারি ৮ সূত্রে সংখ্যাটি কী খুঁজে পেতে সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বর্ণনাকারীর বয়স"
+        },
+        {
+          "id": "b",
+          "text": "নাম দেওয়া সংকলনের বর্ণনাটি"
+        },
+        {
+          "id": "c",
+          "text": "দৈনিক নামাজের সংখ্যা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি মুদ্রিত সংস্করণের একই পৃষ্ঠা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সংকলনের নাম ও সূত্রের নম্বর বর্ণনা খুঁজতে সাহায্য করে। হাদিসের সূত্র সব সংস্করণের জন্য একই পৃষ্ঠাসংখ্যা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_003",
+      "conceptId": "kids_hadith_explanation_with_guidance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোনো হাদিস বুঝতে বা কাজে লাগাতে কঠিন মনে হলে কার জ্ঞানভিত্তিক ব্যাখ্যা চাইবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যাঁর অনুসারী সবচেয়ে বেশি তাঁর"
+        },
+        {
+          "id": "b",
+          "text": "যিনি যাচাই ছাড়াই সবচেয়ে দ্রুত উত্তর দেন তাঁর"
+        },
+        {
+          "id": "c",
+          "text": "জ্ঞানী ও বিশ্বস্ত শিক্ষক বা আলেমের"
+        },
+        {
+          "id": "d",
+          "text": "শুধু নিজের প্রথম অনুমানের"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিস যত্ন নিয়ে বুঝতে হয়। জ্ঞানী শিক্ষক বা আলেম ঘটনার প্রেক্ষাপট ও শিক্ষাটি কীভাবে কাজে লাগাতে হবে তা বুঝিয়ে দিতে পারেন।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_004",
+      "conceptId": "kids_hadith_good_company_image",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সঙ্গীদের তুলনা করা হাদিসে ভালো সঙ্গীর উপকারী প্রভাব কোন উদাহরণে বোঝানো হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফাঁকা বাক্স বহনকারী ব্যক্তি"
+        },
+        {
+          "id": "b",
+          "text": "বাজারের দোকান গুনতে থাকা ব্যক্তি"
+        },
+        {
+          "id": "c",
+          "text": "রাস্তা মাপতে থাকা ব্যক্তি"
+        },
+        {
+          "id": "d",
+          "text": "মেশক সুগন্ধি বহনকারী ব্যক্তি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সুগন্ধির মনোরম গন্ধ ভালো সঙ্গের উপকার বোঝায়। তুলনাটি সঙ্গীরা আমাদের আচরণে কীভাবে প্রভাব ফেলতে পারে তা ভাবতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "সহিহ বুখারি ৫৫৩৪",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_005",
+      "conceptId": "kids_hadith_building_support",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুমিনরা একে অন্যকে শক্তি দেন—এটি বোঝাতে হাদিসে কোন উদাহরণ দেওয়া হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরস্পরকে ধরে রাখা ভবনের অংশগুলো"
+        },
+        {
+          "id": "b",
+          "text": "যোগাযোগহীন আলাদা দ্বীপগুলো"
+        },
+        {
+          "id": "c",
+          "text": "বিপরীত দিকে চলা মেঘগুলো"
+        },
+        {
+          "id": "d",
+          "text": "সবচেয়ে উজ্জ্বল হওয়ার প্রতিযোগিতায় থাকা মুদ্রাগুলো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ মুমিনদের সহায়তাকে এমন ভবনের সঙ্গে তুলনা করেছেন, যার অংশগুলো একে অন্যকে শক্ত রাখে। পারস্পরিক সাহায্যে সমাজ শক্ত হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "সহিহ বুখারি ৪৮১",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_006",
+      "conceptId": "kids_hadith_one_body_compassion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মুমিনদের পারস্পরিক ভালোবাসা ও সহমর্মিতাকে হাদিসে কিসের সঙ্গে তুলনা করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্পর্কহীন কিছু পাথর"
+        },
+        {
+          "id": "b",
+          "text": "এক অঙ্গে ব্যথা হলে সাড়া দেওয়া একটি দেহ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু একজন বিজয়ীর দৌড় প্রতিযোগিতা"
+        },
+        {
+          "id": "d",
+          "text": "শাখাহীন একটি গাছ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তুলনাটি অন্যের কষ্টে সাড়া দেওয়া বোঝায়। দেহের এক অংশে ব্যথা হলে যেমন পুরো দেহ সাড়া দেয়, মুমিনদেরও পরস্পরের কষ্টে যত্নশীল হওয়া উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "সহিহ মুসলিম ২৫৮৬a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_007",
+      "conceptId": "kids_hadith_cheerful_meeting",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন ছোট ভালো কাজকে তুচ্ছ না করতে হাদিসে বিশেষভাবে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গুরুত্বপূর্ণ কেউ আগে সালাম দেবে বলে অপেক্ষা করা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বিশেষ উপলক্ষের জন্য আন্তরিকতা জমিয়ে রাখা"
+        },
+        {
+          "id": "c",
+          "text": "সহমুসলিমের সঙ্গে হাসিমুখে দেখা করা"
+        },
+        {
+          "id": "d",
+          "text": "দামি উপহার দিয়ে বন্ধুত্ব মাপা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আন্তরিক মুখভঙ্গিও অর্থবহ ভালো আচরণ হতে পারে। ভালো কাজ শুধু দামি বা বড় আয়োজনের বিষয় নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "সহিহ মুসলিম ২৬২৬",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_008",
+      "conceptId": "kids_hadith_thank_people",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "যাঁরা আমাদের সাহায্য করেন, তাঁদের প্রতি কোন আচরণের সঙ্গে হাদিসে আল্লাহর প্রতি কৃতজ্ঞতাকে যুক্ত করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁদের কাছেই তাঁদের সাহায্যের কথা গোপন রাখা"
+        },
+        {
+          "id": "b",
+          "text": "তাঁদের কাছ থেকে আরও বেশি আশা করা"
+        },
+        {
+          "id": "c",
+          "text": "অন্য কারও সাহায্যের সঙ্গে তাঁদের সাহায্য তুলনা করা"
+        },
+        {
+          "id": "d",
+          "text": "তাঁদের ধন্যবাদ দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিসে আল্লাহর প্রতি কৃতজ্ঞতার সঙ্গে মানুষের প্রতি কৃতজ্ঞতাকে যুক্ত করা হয়েছে। কারও আন্তরিক সহায়তা স্বীকার করা কৃতজ্ঞ মনোভাবের অংশ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1954",
+          "label": "জামে তিরমিজি ১৯৫৪",
+          "url": "https://sunnah.com/tirmidhi:1954"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_009",
+      "conceptId": "kids_hadith_help_and_allahs_help",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হাদিস অনুযায়ী, বান্দা কী করতে থাকলে আল্লাহ তাকে সাহায্য করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সহমুসলিমকে সাহায্য করতে থাকলে"
+        },
+        {
+          "id": "b",
+          "text": "সবার মনোযোগ পাওয়ার প্রতিযোগিতা করতে থাকলে"
+        },
+        {
+          "id": "c",
+          "text": "সাহায্যের আগে প্রশংসার অপেক্ষা করতে থাকলে"
+        },
+        {
+          "id": "d",
+          "text": "নিজের বাড়ির বাইরের সব অসুবিধা উপেক্ষা করলে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনাটি সহমুসলিমকে সাহায্যের সঙ্গে আল্লাহর সাহায্যকে যুক্ত করে। মানুষের নজরে না এলেও যত্নশীল কাজ মূল্যবান।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "সহিহ মুসলিম ২৬৯৯a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_010",
+      "conceptId": "kids_hadith_choose_clear_over_doubt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোনো কাজে সত্যিই সংশয় থাকলে হাদিস কোন সিদ্ধান্তে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বন্ধুরা জোর করছে বলেই সেটি বেছে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সেটি ছেড়ে স্পষ্ট ও সঠিক বিকল্প বেছে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "অনিশ্চয়তাকেই সেরা হওয়ার প্রমাণ ভাবা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি সাধারণ কাজ নিয়ে সংশয় তৈরি করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "শিক্ষাটি সংশয়পূর্ণ বিষয় ছেড়ে স্পষ্ট বিষয় গ্রহণে উৎসাহ দেয়। সবকিছু নিয়ে নিজের মতো সংশয় বানাতে বলে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "2518",
+          "label": "জামে তিরমিজি ২৫১৮",
+          "url": "https://sunnah.com/tirmidhi:2518"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_011",
+      "conceptId": "kids_hadith_guide_to_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কাউকে ভালো কাজের পথ দেখানোর জন্য হাদিসে কী প্রতিদান বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু দর্শকদের প্রশংসা"
+        },
+        {
+          "id": "b",
+          "text": "কাজটি করা ব্যক্তির সওয়াব থেকে কেটে নেওয়া অংশ"
+        },
+        {
+          "id": "c",
+          "text": "কাজটি করা ব্যক্তির অনুরূপ সওয়াব"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি ধাপ নিজে না করলে কোনো সওয়াব নেই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কাউকে ভালো কাজের পথ দেখানোও মূল্যবান। হাদিসে ভালো কাজটি করা ব্যক্তির অনুরূপ সওয়াবের কথা বলা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "সহিহ মুসলিম ১৮৯৩a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_012",
+      "conceptId": "kids_hadith_health_free_time",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অনেক মানুষ কোন দুটি নিয়ামত ভালোভাবে কাজে লাগাতে পারে না বলে হাদিসে সতর্ক করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জনপ্রিয়তা ও দামি পোশাক"
+        },
+        {
+          "id": "b",
+          "text": "সফর ও বড় বাড়ি"
+        },
+        {
+          "id": "c",
+          "text": "শক্তি ও প্রতিটি প্রতিযোগিতায় জেতা"
+        },
+        {
+          "id": "d",
+          "text": "সুস্থতা ও অবসর সময়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ সুস্থতা ও অবসরকে এমন নিয়ামত বলেছেন, যার মূল্য অনেকেই ঠিকভাবে বোঝে না। এদের মূল্য বুঝে ভেবেচিন্তে সিদ্ধান্ত নেওয়া যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6412",
+          "label": "সহিহ বুখারি ৬৪১২",
+          "url": "https://sunnah.com/bukhari:6412"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_013",
+      "conceptId": "kids_hadith_haya_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হায়া বা ভালো লজ্জাবোধ কী আনে বলে হাদিসে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কল্যাণ"
+        },
+        {
+          "id": "b",
+          "text": "শান্ত স্বভাবের মানুষকে কষ্ট দেওয়ার অনুমতি"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি প্রশ্ন লুকানোর কারণ"
+        },
+        {
+          "id": "d",
+          "text": "সব শেখা এড়ানোর প্রয়োজন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হায়া এমন লজ্জাবোধ, যা অন্যায় থেকে বিরত থাকতে সাহায্য করে। হাদিসে একে কল্যাণের উৎস হিসেবে প্রশংসা করা হয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6117",
+          "label": "সহিহ বুখারি ৬১১৭",
+          "url": "https://sunnah.com/bukhari:6117"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_014",
+      "conceptId": "kids_hadith_pride_truth_contempt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এক ব্যক্তি সুন্দর পোশাক ও জুতা পছন্দ করার কথা জিজ্ঞেস করেন। নবী ﷺ কি শুধু এটিকেই অহংকার বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ; প্রতিটি পরিপাটি পোশাক অহংকারের প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "না; সৌন্দর্যকে অবজ্ঞা ও সত্য প্রত্যাখ্যান থেকে আলাদা করেছেন"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ; আরামদায়ক জুতা সব সময় অহংকারের চিহ্ন"
+        },
+        {
+          "id": "d",
+          "text": "না; অহংকার মানে শুধু জোরে কথা বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সতর্কতাটি সত্য প্রত্যাখ্যান ও মানুষকে তুচ্ছ করা সম্পর্কে। শুধু পরিপাটি পোশাক পছন্দ করা এখানে বলা অহংকার নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "সহিহ মুসলিম ৯১a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_015",
+      "conceptId": "kids_hadith_belongings_not_prank",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মজা করার দাবি করলেও হাদিস কোন কাজ নিষেধ করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বন্ধুদের সঙ্গে অনুমোদিত খেলায় অংশ নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "নিজের পেনসিল ধার দেওয়ার প্রস্তাব করা"
+        },
+        {
+          "id": "c",
+          "text": "অধিকার ছাড়া অন্যের জিনিস নিয়ে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বই ধার নেওয়ার আগে জিজ্ঞেস করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় মজা করে বা সত্যি সত্যি অন্যের সম্পদ নেওয়া সম্পর্কে সতর্ক করা হয়েছে। নেওয়া জিনিস ফেরত দিতে হবে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5003",
+          "label": "সুনান আবু দাউদ ৫০০৩",
+          "url": "https://sunnah.com/abudawud:5003"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_016",
+      "conceptId": "kids_hadith_words_consequences",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "গুরুত্ব না ভেবে বলে ফেলা কথা সম্পর্কে হাদিস কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দ্রুত বললে তার কোনো গুরুত্ব থাকে না"
+        },
+        {
+          "id": "b",
+          "text": "লিখে রাখলেই শুধু তার গুরুত্ব থাকে"
+        },
+        {
+          "id": "c",
+          "text": "অন্যরা হাসলেই তা ক্ষতিহীন হয়"
+        },
+        {
+          "id": "d",
+          "text": "পরকালের হিসাবে এর গুরুতর ফল হতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বর্ণনায় সওয়াবের ও ক্ষতিকর—দুই ধরনের কথার উল্লেখ আছে। বক্তা হালকা মনে করলেও কথা বলায় যত্ন দরকার।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "সহিহ বুখারি ৬৪৭৮",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_017",
+      "conceptId": "kids_hadith_food_blessing",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "অল্প খাবারের ক্ষেত্রেও যত্ন নিতে হাদিস কেন উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কোন অংশে বরকত আছে আমরা জানি না"
+        },
+        {
+          "id": "b",
+          "text": "শুধু সবচেয়ে বড় অংশেই বরকত থাকতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "প্রতি বেলায় দামি উপকরণ থাকতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "সব সময় প্রয়োজনের চেয়ে বেশি খেতে হবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "খাবারের কোন অংশে বরকত আছে তা আমরা জানি না—বর্ণনাটি এটি স্মরণ করায়। না ভেবে অবহেলা করার বদলে খাবারের যত্ন নেওয়া উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2033d",
+          "label": "সহিহ মুসলিম ২০৩৩d",
+          "url": "https://sunnah.com/muslim:2033d"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_018",
+      "conceptId": "kids_hadith_dua_for_absent",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এক মুসলিম অন্য মুসলিমের অনুপস্থিতিতে আন্তরিক দোয়া করলে ফেরেশতা দোয়াকারীর জন্য কী বলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু প্রকাশ্য দোয়াই কবুল হয়"
+        },
+        {
+          "id": "b",
+          "text": "সেও যেন একই কল্যাণ পায়"
+        },
+        {
+          "id": "c",
+          "text": "তার বন্ধু এখন তাকে উপহার দিতে বাধ্য"
+        },
+        {
+          "id": "d",
+          "text": "আন্তরিকতা শুধু আত্মীয়দের জন্য রাখতে হবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অনুপস্থিত মুসলিমের জন্য দোয়া করতে হাদিসে উৎসাহ দেওয়া হয়েছে। দোয়াকারীও যেন একই কল্যাণ পান, ফেরেশতা তা চান।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2732a",
+          "label": "সহিহ মুসলিম ২৭৩২a",
+          "url": "https://sunnah.com/muslim:2732a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_019",
+      "conceptId": "kids_hadith_private_words_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ব্যক্তিগত কথা সম্পর্কে হাদিসে, কথা বলার সময় আশপাশে তাকানো কিসের ইঙ্গিত হতে পারে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শ্রোতা কথাটি সবাইকে জানাতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "বক্তা প্রকাশ্য প্রতিযোগিতা চান"
+        },
+        {
+          "id": "c",
+          "text": "কথাটি শ্রোতার কাছে আমানত হিসেবে রাখা হচ্ছে"
+        },
+        {
+          "id": "d",
+          "text": "তথ্যটি নিয়ে ঠাট্টা করতেই হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটি বিশ্বাস করে বলা কথায় যত্ন শেখায়। ব্যক্তিগত রাখার ইঙ্গিতকে কথাটি ছড়ানোর অনুমতি ভাবা উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1959",
+          "label": "জামে তিরমিজি ১৯৫৯",
+          "url": "https://sunnah.com/tirmidhi:1959"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_020",
+      "conceptId": "kids_hadith_small_neighbor_gift",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "প্রতিবেশীর সাধারণ উপহারের প্রতি কোন মনোভাব থেকে হাদিসে বিরত থাকতে বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিবেশীর আন্তরিকতার মূল্য দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "দাতাকে আন্তরিক ধন্যবাদ দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "দাতার সঙ্গে সম্মানজনক আচরণ করা"
+        },
+        {
+          "id": "d",
+          "text": "ছোট বলে সেটিকে তুচ্ছ করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "প্রতিবেশীর খুব ছোট উপহারও তুচ্ছ না করতে হাদিসে বলা হয়েছে। দাম দিয়ে আন্তরিকতার পুরো মূল্য মাপা যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6017",
+          "label": "সহিহ বুখারি ৬০১৭",
+          "url": "https://sunnah.com/bukhari:6017"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_021",
+      "conceptId": "kids_hadith_narrator_compiler_roles",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নিয়তের হাদিসে উমর ও বুখারির ভূমিকা কোন বক্তব্যে সঠিকভাবে আলাদা করা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উমর বর্ণনা করেছেন; বুখারি সংকলন করেছেন"
+        },
+        {
+          "id": "b",
+          "text": "বুখারি সরাসরি নবী ﷺ-এর কাছে শুনেছেন"
+        },
+        {
+          "id": "c",
+          "text": "উমর বুখারির বই ইংরেজিতে অনুবাদ করেছেন"
+        },
+        {
+          "id": "d",
+          "text": "বর্ণনাকারী ও সংকলক সব সময় একই ব্যক্তি হবেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনাটিতে উমরকে নবী ﷺ-এর কথা শোনা সাহাবি হিসেবে চিহ্নিত করা হয়েছে। পরে বুখারি সংকলনটি তৈরি করেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        },
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ বুখারি পরিচিতি",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_022",
+      "conceptId": "kids_hadith_read_reference",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খোঁজার জন্য শুধু ৮-এর চেয়ে সহিহ বুখারি ৮ সূত্রটি কোন তথ্যের কারণে বেশি কাজে লাগে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সংখ্যা সব অনুবাদের শব্দ এক হওয়ার প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "সংখ্যার সঙ্গে সংকলনের নাম আছে"
+        },
+        {
+          "id": "c",
+          "text": "সংখ্যা বর্ণনার দৈর্ঘ্য বলে দেয়"
+        },
+        {
+          "id": "d",
+          "text": "সংখ্যা পাঠকের স্কোর চিহ্নিত করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সংখ্যা কাজে লাগাতে সংকলন ও নম্বর দেওয়ার পদ্ধতি জানা দরকার। সূত্র সংশ্লিষ্ট বর্ণনা খুঁজে যাচাই করতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_023",
+      "conceptId": "kids_hadith_explanation_with_guidance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "বিস্তারিত ধর্মীয় বিধান নির্ধারণে শুধু একটি হাদিসের অনুবাদ পড়া যথেষ্ট না-ও হতে পারে কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ছোট অনুবাদে সব প্রয়োজনীয় তথ্য সব সময় থাকে"
+        },
+        {
+          "id": "b",
+          "text": "পাঠকের পছন্দের উত্তরেই বিষয়ের মীমাংসা হয়"
+        },
+        {
+          "id": "c",
+          "text": "প্রেক্ষাপট ও সম্পর্কিত শিক্ষার জন্য আলেমের ব্যাখ্যা লাগতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "জনপ্রিয় হলে বর্ণনাটি বোঝার আর প্রয়োজন নেই"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "যত্নশীল ব্যাখ্যায় বিচ্ছিন্ন একটি বাক্যের চেয়েও বেশি বিষয় বিবেচনা করা হয়। বর্ণনা ও অন্য প্রাসঙ্গিক প্রমাণের সম্পর্ক আলেমরা বুঝিয়ে দেন।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_024",
+      "conceptId": "kids_hadith_good_company_image",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সঙ্গীদের সম্পর্কে সুগন্ধির তুলনাটির মূল শিক্ষা কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু পেশাই মানুষের চরিত্রের প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "শুধু উপহার দেওয়া বন্ধুরাই মূল্যবান"
+        },
+        {
+          "id": "c",
+          "text": "সুগন্ধ থাকলেই মানুষ সত্যবাদী হয়"
+        },
+        {
+          "id": "d",
+          "text": "সঙ্গ আমাদের ভালো বা খারাপ দিকে প্রভাবিত করতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তুলনাটি প্রভাব সম্পর্কে, পেশা বা গন্ধ দেখে মানুষ বিচার সম্পর্কে নয়। ভালো সঙ্গ ভালো আচরণে উৎসাহ দিতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "সহিহ বুখারি ৫৫৩৪",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_025",
+      "conceptId": "kids_hadith_building_support",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মজবুত ভবনের হাদিসের উদাহরণের সঙ্গে কোন ধারণাটি সবচেয়ে ভালো মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পারস্পরিক সহায়তায় মানুষ একে অন্যকে শক্তি দেয়"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে শক্তিশালী ব্যক্তির কখনো সাহায্য লাগে না"
+        },
+        {
+          "id": "c",
+          "text": "একজনের সাফল্যের জন্য অন্য সবাইকে হারতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "মানুষের নজরে এলেই শুধু সাহায্যের গুরুত্ব থাকে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ভবনের অংশগুলো একসঙ্গে কাজ করে। উদাহরণটি একা প্রতিযোগিতার বদলে সহযোগিতা ও সহায়তায় উৎসাহ দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "সহিহ বুখারি ৪৮১",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_026",
+      "conceptId": "kids_hadith_one_body_compassion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মুমিনদের একটি দেহের সঙ্গে তুলনা করার শিক্ষার সঙ্গে কোন প্রতিক্রিয়াটি সবচেয়ে ভালো মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সমস্যা শুধু নিজের বাড়িতে হলে গুরুত্ব পায়"
+        },
+        {
+          "id": "b",
+          "text": "অন্যের কষ্টেও আমাদের চিন্তা ও যত্ন থাকা উচিত"
+        },
+        {
+          "id": "c",
+          "text": "যত্ন মানে সবার কষ্ট এক রকম ধরে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সহমর্মিতার জন্য প্রতিটি ব্যক্তিগত তথ্য জানতে হবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "উদাহরণটি পারস্পরিক সহমর্মিতায় গুরুত্ব দেয়। কারও অনুভূতি পুরো জানি ধরে না নিয়েও তার কষ্টে যত্নশীল হওয়া যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "সহিহ মুসলিম ২৫৮৬a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_027",
+      "conceptId": "kids_hadith_cheerful_meeting",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাসিমুখের উদাহরণ থেকে কোন বড় শিক্ষা পাওয়া যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি মুহূর্তে হাসিখুশি দেখাতেই হবে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু দৃশ্যমান হাসিই ভালো আচরণ"
+        },
+        {
+          "id": "c",
+          "text": "ছোট আন্তরিক কাজকে কম মূল্য দেওয়া উচিত নয়"
+        },
+        {
+          "id": "d",
+          "text": "শান্ত স্বভাবের মানুষ শুভকামনা দেখাতে পারে না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আন্তরিক অভিবাদন ছোট ভালো কাজের উদাহরণ। এর শিক্ষা সব সময় হাসা বা মুখ দেখে কারও অনুভূতি বিচার করা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "সহিহ মুসলিম ২৬২৬",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_028",
+      "conceptId": "kids_hadith_thank_people",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মানুষকে ধন্যবাদ দেওয়ার হাদিসের সঙ্গে কোন বক্তব্যটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাহায্যকারীকে ধন্যবাদ আল্লাহর প্রতি কৃতজ্ঞতার বিকল্প"
+        },
+        {
+          "id": "b",
+          "text": "শুধু পারিশ্রমিক নেওয়া সাহায্যকারীর স্বীকৃতি প্রাপ্য"
+        },
+        {
+          "id": "c",
+          "text": "ছোট সাহায্যে কখনো ধন্যবাদ প্রাপ্য হয় না"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর প্রতি কৃতজ্ঞতার পাশাপাশি মানুষকেও ধন্যবাদ দিতে হয়"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল্লাহর প্রতি কৃতজ্ঞতা ও মানুষের আন্তরিকতার মূল্য দেওয়া একসঙ্গে থাকে। সাহায্য ছোট হলেও সাহায্যকারীর চেষ্টার স্বীকৃতি প্রাপ্য হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1954",
+          "label": "জামে তিরমিজি ১৯৫৪",
+          "url": "https://sunnah.com/tirmidhi:1954"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_029",
+      "conceptId": "kids_hadith_help_and_allahs_help",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্যকে আমাদের সাহায্যের সঙ্গে আল্লাহর সাহায্যকে যুক্ত করা হাদিস কী করতে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যের প্রয়োজনে উপযুক্ত সহায়তা দিতে"
+        },
+        {
+          "id": "b",
+          "text": "উপকার ফেরত পেলেই শুধু সাহায্য করতে"
+        },
+        {
+          "id": "c",
+          "text": "অন্যের উপকার হয় এমন সব কাজ এড়াতে"
+        },
+        {
+          "id": "d",
+          "text": "বড়দের প্রতিটি সমস্যা নিজেরাই সামলাতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "শিক্ষাটি কাজে নেমে সহায়তা করতে উৎসাহ দেয়। শিশু নিজের সামর্থ্য অনুযায়ী সাহায্য করতে পারে; আরও সহায়তা লাগলে বড় কাউকে ডাকতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "সহিহ মুসলিম ২৬৯৯a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_030",
+      "conceptId": "kids_hadith_choose_clear_over_doubt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সংশয়পূর্ণ বিষয় ছেড়ে স্পষ্ট বিকল্প বেছে নেওয়ার সঙ্গে কোন পদ্ধতিটি সবচেয়ে ভালো মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিষয় পরিষ্কার হওয়ার পরও সংশয় বানাতে থাকা"
+        },
+        {
+          "id": "b",
+          "text": "স্পষ্ট সঠিকটি বেছে নেওয়া ও প্রয়োজনে নির্দেশনা চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "উপকারী প্রশ্ন না করে চাপ মেনে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি অস্বস্তিকেই কোনো কাজ ভুলের প্রমাণ ভাবা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "শিক্ষাটি স্পষ্ট ও সঠিক সিদ্ধান্তকে সমর্থন করে। সাধারণ ঘাবড়ে যাওয়া বা বারবার দুশ্চিন্তা হওয়াই কোনো কাজ ভুল হওয়ার প্রমাণ নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "2518",
+          "label": "জামে তিরমিজি ২৫১৮",
+          "url": "https://sunnah.com/tirmidhi:2518"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_031",
+      "conceptId": "kids_hadith_guide_to_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ভালো কাজের পথ দেখানোর সওয়াব থেকে কী বোঝা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু প্রকাশ্যে প্রশংসা পাওয়া ব্যক্তিই সওয়াব পেতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "ক্ষতির দিকে নিলেও পরামর্শ মূল্যবান"
+        },
+        {
+          "id": "c",
+          "text": "নিজে করা ছাড়াও ভালো কাজ ঘটতে সাহায্য করা মূল্যবান"
+        },
+        {
+          "id": "d",
+          "text": "সাহায্য মানে অন্যের প্রতিটি কাজ নিজে করে দেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ভালো কাজের উপকারী পথ দেখিয়েও অবদান রাখা যায়। পথ দেখানো ও নিজে করা—দুটিই ভালো কাজ ঘটতে সাহায্যের আলাদা উপায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "সহিহ মুসলিম ১৮৯৩a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_032",
+      "conceptId": "kids_hadith_health_free_time",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সুস্থতা ও অবসর সময়ের হাদিসের সঙ্গে কোন বুঝটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিশ্রাম ও উপযুক্ত খেলা সব সময় সময় নষ্ট"
+        },
+        {
+          "id": "b",
+          "text": "অসুস্থতা কৃতজ্ঞ হতে না পারার প্রমাণ"
+        },
+        {
+          "id": "c",
+          "text": "অবসরের প্রতিটি মুহূর্তকে প্রতিযোগিতা বানাতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "পাওয়া সুযোগের মূল্য দিয়ে ভেবেচিন্তে কাজে লাগানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিস এই নিয়ামতগুলোর মূল্য দিতে উৎসাহ দেয়। অসুস্থ মানুষকে বিচার না করে সময়ের সুচিন্তিত ব্যবহারে উপযুক্ত বিশ্রাম, খেলা, শেখা ও ইবাদত থাকতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6412",
+          "label": "সহিহ বুখারি ৬৪১২",
+          "url": "https://sunnah.com/bukhari:6412"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_033",
+      "conceptId": "kids_hadith_haya_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "প্রশংসিত হায়া বোঝাতে কোন পার্থক্যটি সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যায় এড়ানো ও সাহায্য চাইতে ভয় পাওয়া আলাদা"
+        },
+        {
+          "id": "b",
+          "text": "ভালো লজ্জাবোধে শিক্ষকের কাছে প্রতিটি ভুল লুকাতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "ঘাবড়ে গেলেই মানুষ বেশি নেককার হয়"
+        },
+        {
+          "id": "d",
+          "text": "প্রশ্নে লজ্জা লাগলে শেখা ভুল হয়ে যায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "প্রশংসিত লজ্জাবোধ ভালো আচরণে সহায়তা করে। এটি প্রয়োজনীয় সাহায্য ফিরিয়ে দেওয়া বা আন্তরিকভাবে শেখা এড়ানোর কারণ হওয়া উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6117",
+          "label": "সহিহ বুখারি ৬১১৭",
+          "url": "https://sunnah.com/bukhari:6117"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_034",
+      "conceptId": "kids_hadith_pride_truth_contempt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অহংকারের হাদিসের ব্যাখ্যার সঙ্গে কোন পার্থক্যটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাধারণ পোশাক সব সময় বিনয়ী অন্তরের প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "পরিপাটি পোশাক ঠিক হতে পারে; সত্য প্রত্যাখ্যান সমস্যা"
+        },
+        {
+          "id": "c",
+          "text": "দামি জুতা প্রতিটি কাজকে ভুল করে দেয়"
+        },
+        {
+          "id": "d",
+          "text": "তর্কে জেতা মানুষের নৈতিক মূল্য প্রমাণ করে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "হাদিসে সুন্দরভাবে থাকা ও সত্য প্রত্যাখ্যান করে মানুষকে তুচ্ছ করা আলাদা করা হয়েছে। গোপন অন্তর বিচার না করে আচরণ বিবেচনা করা উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "সহিহ মুসলিম ৯১a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_035",
+      "conceptId": "kids_hadith_belongings_not_prank",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অন্যের সম্পদ নিয়ে সেটিকে মজা বলা কেন অজুহাত হতে পারে না?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মজা করলেই অনুমতি হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "শুধু দামি জিনিসের মালিক থাকে"
+        },
+        {
+          "id": "c",
+          "text": "মালিকের অধিকার তখনও গুরুত্বপূর্ণ"
+        },
+        {
+          "id": "d",
+          "text": "পরে ফেরত দিলেই নেওয়ার সব পদ্ধতি ঠিক হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনায় মজা ও সত্যিকারের নেওয়া দুটিই আছে। যে জিনিসটি নিয়েছে সে আনন্দ করতে চেয়েছে বলেই অন্যের অধিকার হারিয়ে যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5003",
+          "label": "সুনান আবু দাউদ ৫০০৩",
+          "url": "https://sunnah.com/abudawud:5003"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_036",
+      "conceptId": "kids_hadith_words_consequences",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "না ভেবে বলা কথার হাদিস থেকে কোন পার্থক্যটি বোঝা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ছোট মন্তব্যের কখনো স্থায়ী প্রভাব হয় না"
+        },
+        {
+          "id": "b",
+          "text": "বেশি শ্রোতা থাকলে ক্ষতিকর কথা গ্রহণযোগ্য হয়"
+        },
+        {
+          "id": "c",
+          "text": "বিখ্যাত ব্যক্তির বেলাতেই শুধু অসতর্ক কথার গুরুত্ব থাকে"
+        },
+        {
+          "id": "d",
+          "text": "বক্তা যতটা গুরুত্ব দেয়, কথার প্রভাব তার চেয়েও বেশি হতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "বক্তা কথাটিতে কম মনোযোগ দিলেও তার ফল গুরুতর হতে পারে। যত্ন নিয়ে কথা বলা শুধু বাক্য কত ছোট তা দেখার বিষয় নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "সহিহ বুখারি ৬৪৭৮",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_037",
+      "conceptId": "kids_hadith_food_blessing",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খাবারের বরকতের কথা স্মরণ করানো হাদিসের সঙ্গে কোন সিদ্ধান্তটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অল্প খাবারও ভেবেচিন্তে যত্ন পাওয়ার যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "শুধু দামি খাবারেই বরকত থাকতে পারে"
+        },
+        {
+          "id": "c",
+          "text": "অসুস্থতা বা বিপদ থাকলেও প্রতিটি অবশিষ্ট খাবার খেতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "বড় থালায় সব সময় বেশি বরকত থাকে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনাটি খাবারের প্রতি সম্মান শেখায়। এটি শিশুকে নিরাপত্তা, অসুস্থতা বা শরীরের সীমা উপেক্ষা করতে বলে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2033d",
+          "label": "সহিহ মুসলিম ২০৩৩d",
+          "url": "https://sunnah.com/muslim:2033d"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_038",
+      "conceptId": "kids_hadith_dua_for_absent",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কারও অনুপস্থিতিতে দোয়া করার হাদিস কী করতে উৎসাহ দেয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যজন শুনতে পেলেই শুধু তার জন্য দোয়া করতে"
+        },
+        {
+          "id": "b",
+          "text": "প্রশংসা না চেয়েও অন্যের কল্যাণ কামনা করতে"
+        },
+        {
+          "id": "c",
+          "text": "প্রতিটি ব্যক্তিগত দোয়ার প্রকাশ্য তালিকা করতে"
+        },
+        {
+          "id": "d",
+          "text": "যার জন্য দোয়া করা হয় তার কাছে প্রতিদান চাইতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অন্যজন না থাকলেও দোয়ায় আন্তরিক শুভকামনা প্রকাশ করা যায়। তার প্রশংসা পাওয়ার জন্যই শুধু ভালো আচরণ করতে হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2732a",
+          "label": "সহিহ মুসলিম ২৭৩২a",
+          "url": "https://sunnah.com/muslim:2732a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_039",
+      "conceptId": "kids_hadith_private_words_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গোপন কথোপকথনের হাদিসের বর্ণনার সঙ্গে কোন শিক্ষাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিচু স্বরে বলা সব কথা খবর হিসেবে ছড়াতে হবে"
+        },
+        {
+          "id": "b",
+          "text": "একজন শুনলেই ব্যক্তিগত তথ্য প্রকাশ্য হয়ে যায়"
+        },
+        {
+          "id": "c",
+          "text": "আমানত হিসেবে দেওয়া তথ্য যত্নে রাখা"
+        },
+        {
+          "id": "d",
+          "text": "বিশ্বাস রক্ষা করতে বড়দের কাছে বিপদ লুকাতে হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বর্ণনাটি ব্যক্তিগত কথায় বিশ্বাস রক্ষা শেখায়। এটি শিশুকে ক্ষতি লুকাতে বা বিশ্বস্ত বড়দের সাহায্য এড়াতে বলে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1959",
+          "label": "জামে তিরমিজি ১৯৫৯",
+          "url": "https://sunnah.com/tirmidhi:1959"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_040",
+      "conceptId": "kids_hadith_small_neighbor_gift",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "প্রতিবেশীর ছোট উপহারের হাদিসের সঙ্গে কোন পার্থক্যটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সমান দামের উপহারেই শুধু বন্ধুত্ব বোঝা যায়"
+        },
+        {
+          "id": "b",
+          "text": "ছোট উপহার মানে দাতা তোমাকে অপছন্দ করেন"
+        },
+        {
+          "id": "c",
+          "text": "কৃতজ্ঞতার উত্তরে দামি উপহার দিতেই হবে"
+        },
+        {
+          "id": "d",
+          "text": "উপহারের কম দাম তার আন্তরিকতা মুছে দেয় না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সাধারণ উপহারেও আন্তরিক ভাবনা থাকতে পারে। হাদিস তুচ্ছ করা থেকে বিরত রাখে, আন্তরিকতাকে দামের তুলনায় পরিণত করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6017",
+          "label": "সহিহ বুখারি ৬০১৭",
+          "url": "https://sunnah.com/bukhari:6017"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_041",
+      "conceptId": "kids_hadith_narrator_compiler_roles",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নিয়তের হাদিসের কুইজ কার্ডে উমর ও বুখারির ভূমিকা উল্টে গেছে। কোন সংশোধন করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উমরকে বর্ণনাকারী ও বুখারিকে সংকলনের সংকলক লিখবে"
+        },
+        {
+          "id": "b",
+          "text": "বুখারিকে নবী ﷺ-এর কথা শোনা সাহাবি লিখবে"
+        },
+        {
+          "id": "c",
+          "text": "উমরকে সংকলনের ইংরেজি অনুবাদক লিখবে"
+        },
+        {
+          "id": "d",
+          "text": "ভূমিকা গুরুত্বপূর্ণ নয় বলে সব নাম মুছে দেবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সঠিক পরিচয়ে নবী ﷺ-এর কথা বর্ণনাকারী সাহাবি ও পরবর্তী সংকলক আলাদা বোঝা যায়। এতে শিক্ষার্থী যত্ন নিয়ে সূত্র পড়তে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "সহিহ বুখারি ১",
+          "url": "https://sunnah.com/bukhari:1"
+        },
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — সহিহ বুখারি পরিচিতি",
+          "url": "https://sunnah.com/bukhari/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_042",
+      "conceptId": "kids_hadith_read_reference",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক সহিহ বুখারি ৮ মিলিয়ে দেখতে বললেন। প্রথমে কী করা সবচেয়ে ভালো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেকোনো বইয়ের আট নম্বর পৃষ্ঠা খোলা"
+        },
+        {
+          "id": "b",
+          "text": "নাম দেওয়া সংকলন খুলে সূত্রটি খোঁজা"
+        },
+        {
+          "id": "c",
+          "text": "সংকলনের নাম ছাড়া শুধু আট খোঁজা"
+        },
+        {
+          "id": "d",
+          "text": "সব সংকলনের অষ্টম বর্ণনা একই ধরে নেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সূত্রের নম্বরের সঙ্গে সংকলনের নাম ব্যবহার করো। কোনো সংস্করণে আলাদা নম্বর থাকলে বর্ণনা মেলাতে সাহায্য চাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "সহিহ বুখারি ৮",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_043",
+      "conceptId": "kids_hadith_explanation_with_guidance",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দুটি ছোট হাদিসের অনুবাদে আলাদা নির্দেশ মনে হচ্ছে। অর্থ ঠিক করার আগে কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যেটিতে কম করতে হয় সেটি বেছে নেবে"
+        },
+        {
+          "id": "b",
+          "text": "বুঝতে সমস্যা হচ্ছে বলেই একটি মিথ্যা বলবে"
+        },
+        {
+          "id": "c",
+          "text": "জ্ঞানী শিক্ষককে দুটির প্রেক্ষাপট একসঙ্গে বুঝিয়ে দিতে বলবে"
+        },
+        {
+          "id": "d",
+          "text": "কোনোটিতে নেই এমন নিয়ম বানাবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আসল সূত্রগুলো জ্ঞানী শিক্ষকের কাছে নিয়ে যাও। বিভ্রান্ত হলে ব্যাখ্যা চাইতে হয়, তাড়াহুড়ো করে বিধান ঠিক করতে নয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "সুন্নাহ ডটকম — হাদিস পরিচিতি",
+          "url": "https://sunnah.com/about"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_044",
+      "conceptId": "kids_hadith_good_company_image",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক বন্ধু সততায় উৎসাহ দেয়, আরেকজন অসততায় চাপ দেয়। সঙ্গের হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিটি বন্ধুত্ব রাখতে অসততা নকল করবে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু পোশাক দেখে দুই বন্ধুকে বিচার করবে"
+        },
+        {
+          "id": "c",
+          "text": "তাদের সব কাজ একই হতেই হবে ভাববে"
+        },
+        {
+          "id": "d",
+          "text": "সহায়ক সঙ্গ বেছে নিয়ে অসততার চাপ প্রত্যাখ্যান করবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তুলনাটি শেখায়, সঙ্গ আমাদের প্রভাবিত করে। ভালো কাজে উৎসাহ খোঁজো; ক্ষতিকর চাপ সামলাতে বিশ্বস্ত বড় কারও সাহায্য চাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "সহিহ বুখারি ৫৫৩৪",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_045",
+      "conceptId": "kids_hadith_building_support",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লাসে অনুমোদিত দলীয় কাজ আছে। ভবনের তুলনার হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ন্যায্যভাবে কাজ ভাগ করে সঙ্গীদের এগোতে সাহায্য করবে"
+        },
+        {
+          "id": "b",
+          "text": "নিজেকে সবচেয়ে শক্তিশালী দেখাতে উপকারী তথ্য লুকাবে"
+        },
+        {
+          "id": "c",
+          "text": "কঠিন সব কাজ একজনের ওপর ছাড়বে"
+        },
+        {
+          "id": "d",
+          "text": "দলের কারও অসুবিধাকে বিনোদন ভাববে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ভবনের অংশগুলো পরস্পরকে শক্ত রাখে। উপযুক্ত কাজে ন্যায্য সহযোগিতা পারস্পরিক সহায়তার সহজ প্রয়োগ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "481",
+          "label": "সহিহ বুখারি ৪৮১",
+          "url": "https://sunnah.com/bukhari:481"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_046",
+      "conceptId": "kids_hadith_one_body_compassion",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পারিবারিক সমস্যায় এক সহপাঠীর পড়া বাদ পড়ছে। পারস্পরিক সহমর্মিতার হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যত্নের আগে প্রতিটি ব্যক্তিগত তথ্য জানতে চাইবে"
+        },
+        {
+          "id": "b",
+          "text": "যত্ন নিয়ে সাহায্যের উপায় সম্পর্কে বড় কারও পরামর্শ চাইবে"
+        },
+        {
+          "id": "c",
+          "text": "নিজের পরিবার ভালো আছে বলে তাকে উপেক্ষা করবে"
+        },
+        {
+          "id": "d",
+          "text": "তার কষ্ট তোমার মতোই হতেই হবে বলবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "পারস্পরিক সহমর্মিতা মানে অন্যের কষ্ট খেয়াল করা। বড়দের নির্দেশনায় তার ব্যক্তিগত বিষয় ও অনুভূতিকে সম্মান রেখেও সাহায্য করা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2586a",
+          "label": "সহিহ মুসলিম ২৫৮৬a",
+          "url": "https://sunnah.com/muslim:2586a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_047",
+      "conceptId": "kids_hadith_cheerful_meeting",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অনুষ্ঠানে আসা বন্ধুকে দেওয়ার উপহার নেই। ছোট ভালো কাজের হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিকতায় টাকা লাগে বলে তাকে এড়াবে"
+        },
+        {
+          "id": "b",
+          "text": "গুরুত্বপূর্ণ কেউ আগে সালাম দেবে বলে অপেক্ষা করবে"
+        },
+        {
+          "id": "c",
+          "text": "আন্তরিক অভিবাদন জানিয়ে তাকে স্বাগত অনুভব করাবে"
+        },
+        {
+          "id": "d",
+          "text": "উপহার ছাড়া অভিবাদনের মূল্য নেই বলবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাসিমুখে দেখা করা মূল্যবান ভালো কাজের উদাহরণ। দেওয়ার মতো কিছু না থাকলেও আন্তরিক স্বাগত গুরুত্বপূর্ণ হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "সহিহ মুসলিম ২৬২৬",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_048",
+      "conceptId": "kids_hadith_thank_people",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সহপাঠী বাড়ির কাজের কঠিন নির্দেশনা বুঝিয়ে দিল। কৃতজ্ঞতার হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু পুরো ক্লাস দেখলে ধন্যবাদ দেবে"
+        },
+        {
+          "id": "b",
+          "text": "তোমাকে সাহায্য করা তার স্থায়ী দায়িত্ব ভাববে"
+        },
+        {
+          "id": "c",
+          "text": "আরও আগে সাহায্য করা উচিত ছিল বলে অভিযোগ করবে"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর প্রতি কৃতজ্ঞতা জানিয়ে সহপাঠীকেও ধন্যবাদ দেবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মানুষের সাহায্যের মূল্য দেওয়া আল্লাহর প্রতি কৃতজ্ঞতার সঙ্গে মেলে। আন্তরিক ধন্যবাদ তার চেষ্টাকে স্বীকৃতি দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1954",
+          "label": "জামে তিরমিজি ১৯৫৪",
+          "url": "https://sunnah.com/tirmidhi:1954"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_049",
+      "conceptId": "kids_hadith_help_and_allahs_help",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সহপাঠীর কয়েকটি হালকা বই নিতে সাহায্য দরকার। অন্যকে সাহায্য ও আল্লাহর সাহায্যের হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিজের সামর্থ্যে উপযুক্ত সাহায্য প্রস্তাব করবে"
+        },
+        {
+          "id": "b",
+          "text": "বই ধরার আগেই প্রকাশ্যে প্রশংসা চাইবে"
+        },
+        {
+          "id": "c",
+          "text": "ছোট সাহায্যের কখনো গুরুত্ব নেই ভাববে"
+        },
+        {
+          "id": "d",
+          "text": "আন্তরিকতা প্রমাণ করতে বিপজ্জনক বোঝা নেবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিস অন্যকে সাহায্যে উৎসাহ দেয়। উপযুক্ত সহায়তা সহজও হতে পারে; শিশুদের নিজের সীমা মানা ও বেশি সহায়তা লাগলে বড় কাউকে ডাকা উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2699a",
+          "label": "সহিহ মুসলিম ২৬৯৯a",
+          "url": "https://sunnah.com/muslim:2699a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_050",
+      "conceptId": "kids_hadith_choose_clear_over_doubt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "একটি কলম তোমার কি না নিশ্চিত নও, তবে নাম লেখা নিজের কলম আছে। স্পষ্ট বিকল্প বেছে নেওয়ার শিক্ষা অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নতুন দেখায় বলে অনিশ্চিত কলমটি নেবে"
+        },
+        {
+          "id": "b",
+          "text": "নিজের কলম ব্যবহার করে অন্যটির বিষয়ে জিজ্ঞেস করবে"
+        },
+        {
+          "id": "c",
+          "text": "কেউ না চাওয়া পর্যন্ত দুটো কলমই লুকাবে"
+        },
+        {
+          "id": "d",
+          "text": "মালিক না জানায় সেটিকে নিজের ভাববে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তোমার বলে জানা কলম ব্যবহার স্পষ্ট বিকল্প। শেষহীন দুশ্চিন্তা ছাড়া সহজ একটি প্রশ্নে মালিকানা পরিষ্কার হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "2518",
+          "label": "জামে তিরমিজি ২৫১৮",
+          "url": "https://sunnah.com/tirmidhi:2518"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_051",
+      "conceptId": "kids_hadith_guide_to_good",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু অনুমোদিত দানের কাজে যোগ দিতে চায়, কিন্তু শিক্ষককে খুঁজে পাচ্ছে না। ভালো কাজের পথ দেখানোর শিক্ষা অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব সওয়াব নিজের রাখতে জায়গা লুকাবে"
+        },
+        {
+          "id": "b",
+          "text": "দামি হলেই শুধু সাহায্য গণ্য হয় বলবে"
+        },
+        {
+          "id": "c",
+          "text": "দায়িত্বে থাকা শিক্ষক কোথায় আছেন দেখিয়ে দেবে"
+        },
+        {
+          "id": "d",
+          "text": "মজা করে অন্য জমায়েতের জায়গা বানিয়ে বলবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "উপযুক্ত ভালো কাজের পথ দেখানো নিজেই মূল্যবান হতে পারে। তার হয়ে প্রতিটি কাজ তোমাকেই করতে হবে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "1893a",
+          "label": "সহিহ মুসলিম ১৮৯৩a",
+          "url": "https://sunnah.com/muslim:1893a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_052",
+      "conceptId": "kids_hadith_health_free_time",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তোমার বিকেল ফাঁকা, শরীরও ভালো। সুস্থতা ও সময়ের মূল্য দেওয়ার হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বিশ্রাম একেবারে এড়াতে সারা রাত জাগবে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু পারিশ্রমিকের কাজেই সময় মূল্যবান হয় ভাববে"
+        },
+        {
+          "id": "c",
+          "text": "আগামীকাল নিশ্চিত বলে কিছুই ভেবেচিন্তে করবে না"
+        },
+        {
+          "id": "d",
+          "text": "উপকারী কাজ ও উপযুক্ত বিশ্রাম মিলিয়ে ভারসাম্যপূর্ণ পরিকল্পনা করবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সুস্থতা ও অবসরের মূল্য দেওয়া মানে সুযোগ যত্নে ব্যবহার করা। বয়স অনুযায়ী ভারসাম্যপূর্ণ পরিকল্পনায় শেখা, আন্তরিকতা, ইবাদত, বিশ্রাম ও খেলা থাকতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6412",
+          "label": "সহিহ বুখারি ৬৪১২",
+          "url": "https://sunnah.com/bukhari:6412"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_053",
+      "conceptId": "kids_hadith_haya_goodness",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধুরা কষ্টদায়ক ঠাট্টায় যোগ দিতে বলছে। হাদিসে প্রশংসিত ভালো লজ্জাবোধ অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাল্টা কষ্ট না দিয়ে অন্যায় কাজটি প্রত্যাখ্যান করবে"
+        },
+        {
+          "id": "b",
+          "text": "লজ্জা সব সিদ্ধান্তকে ঠিক করে বলে যোগ দেবে"
+        },
+        {
+          "id": "c",
+          "text": "ভবিষ্যতের সব প্রশ্ন শিক্ষকের কাছে লুকাবে"
+        },
+        {
+          "id": "d",
+          "text": "নিজেকে ভালো প্রমাণ করতে বন্ধুদের অপমান করবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ভালো লজ্জাবোধ অন্যায় আচরণ থেকে বিরত রাখতে পারে। কষ্টদায়ক কাজ প্রত্যাখ্যান করতে নিজেকেও কষ্টদায়ক আচরণ করতে হয় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6117",
+          "label": "সহিহ বুখারি ৬১১৭",
+          "url": "https://sunnah.com/bukhari:6117"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_054",
+      "conceptId": "kids_hadith_pride_truth_contempt",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ছোট একটি শিশু তোমার ভুল ঠিকভাবে ধরিয়ে দিল। অহংকারের সতর্কতার হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ছোট বলে উত্তর প্রত্যাখ্যান করবে"
+        },
+        {
+          "id": "b",
+          "text": "শিশুটিকে তুচ্ছ না করে সংশোধন মেনে নেবে"
+        },
+        {
+          "id": "c",
+          "text": "কার জুতা বেশি দামি সেই প্রসঙ্গ তুলবে"
+        },
+        {
+          "id": "d",
+          "text": "বয়সের কারণে নিজের প্রতিটি উত্তর সঠিক বলবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সতর্কতার মধ্যে সত্য প্রত্যাখ্যান ও মানুষকে তুচ্ছ করা আছে। অন্যজনের বয়স যেমনই হোক, সঠিক কথা বিবেচনার যোগ্য।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "সহিহ মুসলিম ৯১a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_055",
+      "conceptId": "kids_hadith_belongings_not_prank",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মজা করে বন্ধুর পেনসিল বক্স লুকিয়েছ। জিনিসপত্রের হাদিস অনুযায়ী কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পুরস্কার না দেওয়া পর্যন্ত লুকিয়ে রাখা"
+        },
+        {
+          "id": "b",
+          "text": "মজা করলে অনুমতি লাগে না বলা"
+        },
+        {
+          "id": "c",
+          "text": "ফেরত দিয়ে ক্ষমা চেয়ে মজার নামে জিনিস নেওয়া বন্ধ করা"
+        },
+        {
+          "id": "d",
+          "text": "মজা বাড়াতে আরও একটি জিনিস লুকানো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মজা করেও জিনিস নিয়ে নেওয়া সম্পর্কে বর্ণনায় সতর্ক করা হয়েছে। জিনিস ফেরত দিয়ে ক্ষতি ঠিক করা মালিকের অধিকারকে সম্মান করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "5003",
+          "label": "সুনান আবু দাউদ ৫০০৩",
+          "url": "https://sunnah.com/abudawud:5003"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_056",
+      "conceptId": "kids_hadith_words_consequences",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কয়েক সেকেন্ডে লেখা যায় এমন ঠাট্টাপূর্ণ অপমানজনক মন্তব্য পোস্ট করতে যাচ্ছ। অসতর্ক কথার হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ছোট মন্তব্যের গুরুত্ব নেই বলে পোস্ট করবে"
+        },
+        {
+          "id": "b",
+          "text": "মানুষ হাসলে মন্তব্য ক্ষতিহীন হয় ভাববে"
+        },
+        {
+          "id": "c",
+          "text": "মনোযোগ পেতে আরও অপমান যোগ করবে"
+        },
+        {
+          "id": "d",
+          "text": "থেমে ক্ষতির কথা ভেবে তারপর বলার সিদ্ধান্ত নেবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দ্রুত বলা কথারও গুরুতর ফল হতে পারে। একটু থামলে অনলাইনেও আরও দায়িত্ব নিয়ে কথা বেছে নেওয়া যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6478",
+          "label": "সহিহ বুখারি ৬৪৭৮",
+          "url": "https://sunnah.com/bukhari:6478"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_057",
+      "conceptId": "kids_hadith_food_blessing",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পরিবারের খাবারে নিজের অংশ বেছে নিতে পারো। খাবারের প্রতি ভেবেচিন্তে যত্নের প্রয়োগ কোনটি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিমিত নিয়ে প্রয়োজনে আরও চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "কৃতজ্ঞতা প্রমাণে সবচেয়ে বেশি নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "অংশ ছোট দেখায় বলে নিরাপদ খাবার ফেলে দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বড় কেউ নিষেধ করলেও অনিরাপদ খাবার খাওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "বর্ণনাটি খাবারের বরকতের যত্নে উৎসাহ দেয়। পরিমিত অংশ অতিরিক্ত খেতে বাধ্য না করে ও নিরাপত্তা উপেক্ষা না করেই অপচয় এড়াতে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2033d",
+          "label": "সহিহ মুসলিম ২০৩৩d",
+          "url": "https://sunnah.com/muslim:2033d"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_058",
+      "conceptId": "kids_hadith_dua_for_absent",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "এক মুসলিম বন্ধুর কারও সঙ্গে গুরুত্বপূর্ণ সাক্ষাৎ আছে, তবে সে তোমার সঙ্গে নেই। অনুপস্থিতিতে দোয়ার হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দোয়ার প্রশংসা করতে পারা পর্যন্ত অপেক্ষা করবে"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর কাছে তার কল্যাণ চাইবে"
+        },
+        {
+          "id": "c",
+          "text": "দোয়ার আগে উপহার দাবি করবে"
+        },
+        {
+          "id": "d",
+          "text": "তোমার দোয়া নির্দিষ্ট ফল নিশ্চিত করে ঘোষণা দেবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বন্ধু কাছে না থাকলেও আন্তরিকভাবে তার কল্যাণ আল্লাহর কাছে চাইতে পারো। হাদিস শুভকামনায় উৎসাহ দেয়, নির্দিষ্ট ফলের নিশ্চয়তায় নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2732a",
+          "label": "সহিহ মুসলিম ২৭৩২a",
+          "url": "https://sunnah.com/muslim:2732a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_059",
+      "conceptId": "kids_hadith_private_words_trust",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু স্কুলের উপস্থাপনা নিয়ে সাধারণ দুশ্চিন্তা ব্যক্তিগতভাবে বলেছে। আমানত হিসেবে বলা কথার হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুশ্চিন্তাটি নিয়ে দলীয় ঠাট্টা বানাবে"
+        },
+        {
+          "id": "b",
+          "text": "মজার বলে ব্যাপকভাবে ছড়াবে"
+        },
+        {
+          "id": "c",
+          "text": "গোপনীয়তা রক্ষা করে সহপাঠীদের বলার আগে অনুমতি চাইবে"
+        },
+        {
+          "id": "d",
+          "text": "শুনেছ বলেই অনলাইনে দেওয়ার অনুমতি আছে ভাববে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সাধারণ ব্যক্তিগত দুশ্চিন্তায় যত্ন দরকার। বিশ্বাস করে বলা কথায় বিপদ বা ক্ষতির বিষয় থাকলে অনিরাপদ গোপনীয়তার বদলে বিশ্বস্ত বড় কারও সাহায্য চাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Jami at-Tirmidhi",
+          "number": "1959",
+          "label": "জামে তিরমিজি ১৯৫৯",
+          "url": "https://sunnah.com/tirmidhi:1959"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_hadith_knowledge_060",
+      "conceptId": "kids_hadith_small_neighbor_gift",
+      "categoryId": "hadith_knowledge",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "প্রতিবেশী তোমাদের পরিবারকে ঘরে তৈরি ছোট ও উপযুক্ত উপহার দিলেন। সাধারণ উপহারের হাদিস অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নির্দিষ্ট দামের বেশি হলেই শুধু উপহার হয় বলবে"
+        },
+        {
+          "id": "b",
+          "text": "আরও বড় কিছু কেন কিনলেন না জিজ্ঞেস করবে"
+        },
+        {
+          "id": "c",
+          "text": "অন্য প্রতিবেশীদের সামনে তা নিয়ে ঠাট্টা করবে"
+        },
+        {
+          "id": "d",
+          "text": "দামি উপহারের সঙ্গে তুলনা না করে ধন্যবাদ দেবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হাদিস প্রতিবেশীর উপহার তুচ্ছ করা থেকে বিরত রাখে। সৌজন্যপূর্ণ প্রতিক্রিয়া দাম নিয়ে প্রতিযোগিতা না করে আন্তরিকতাকে স্বীকৃতি দেয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6017",
+          "label": "সহিহ বুখারি ৬০১৭",
+          "url": "https://sunnah.com/bukhari:6017"
+        }
+      ]
+    }
+  ]
+}

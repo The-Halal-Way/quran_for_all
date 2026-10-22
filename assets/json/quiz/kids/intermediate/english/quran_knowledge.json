@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "quran_knowledge",
+  "title": "Quran Knowledge",
+  "description": "Little Muslim → Mid. Short questions for children who know the first Quran basics. Covers preservation, revelation in stages, Hira, Laylat al-Qadr, meanings of familiar short surahs and simple Quran lessons about gratitude, kindness, careful speech, checking reports and good choices. Uses familiar home and classroom situations. An adult may read questions aloud or explain unfamiliar words. All questions are Mid level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Builds on first Quran basics through simple meanings, connections between familiar ideas and straightforward applications. No specialist tafsir debate, advanced recitation rules or memorization of reference numbers is required. Level is editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith text checked during preparation. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Contemporary home and classroom scenarios apply the cited principles; they are not events narrated in the cited verses. The distinction between Allah's preservation of the Quran and possible errors in a typed copy is an educational application. Revelation in stages concerns the Quran's delivery to the Prophet; Laylat al-Qadr questions do not specify a disputed calendar date. Seeking Allah's help does not rule out ordinary help from teachers or caregivers. Religious distinction in Al-Kafirun is not presented as permission to mistreat people of another faith. General teachings about life as a test do not assign adult legal accountability to young children. No question asks children to judge another person's faith or worth. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_mid_quran_knowledge_001",
+      "conceptId": "kids_quran_preservation",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What promise about the Quran is taught in Surah Al-Hijr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah will preserve it"
+        },
+        {
+          "id": "b",
+          "text": "Its message must change every year"
+        },
+        {
+          "id": "c",
+          "text": "People may replace it with their own ideas"
+        },
+        {
+          "id": "d",
+          "text": "It was never revealed by Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah promises to preserve the Quran. We treat its words as revelation, not as something to rewrite according to our preferences.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "9",
+          "label": "Quran 15:9",
+          "url": "https://quran.com/15/9"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_002",
+      "conceptId": "kids_quran_revealed_in_stages",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How was the Quran revealed to the Prophet ﷺ over time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As a single printed schoolbook"
+        },
+        {
+          "id": "b",
+          "text": "In stages"
+        },
+        {
+          "id": "c",
+          "text": "Only through messages from kings"
+        },
+        {
+          "id": "d",
+          "text": "As stories invented by different classmates"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran was revealed in stages. Its revelation to the Prophet ﷺ did not all happen at one moment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "106",
+          "label": "Quran 17:106",
+          "url": "https://quran.com/17/106"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_003",
+      "conceptId": "kids_quran_hira_beginning",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which cave did the Prophet ﷺ receive the first Quranic revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cave named by his classmates"
+        },
+        {
+          "id": "b",
+          "text": "A cave under a royal palace"
+        },
+        {
+          "id": "c",
+          "text": "The cave of Hira"
+        },
+        {
+          "id": "d",
+          "text": "An unnamed cave beside a school"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An authentic report describes the first Quranic revelation coming to the Prophet ﷺ in the cave of Hira.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_004",
+      "conceptId": "kids_quran_laylat_al_qadr",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which special night does Surah Al-Qadr connect with the Quran being sent down?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The night before every school test"
+        },
+        {
+          "id": "b",
+          "text": "Every child's birthday night"
+        },
+        {
+          "id": "c",
+          "text": "The first night of every week"
+        },
+        {
+          "id": "d",
+          "text": "Laylat al-Qadr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah Al-Qadr connects the Quran's being sent down with Laylat al-Qadr. This is a special night, not a date invented by a quiz.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "Quran 97:1",
+          "url": "https://quran.com/97/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_005",
+      "conceptId": "kids_quran_alaq_read_learn",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What command appears at the opening of Surah Al-Alaq?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Read in the name of your Lord"
+        },
+        {
+          "id": "b",
+          "text": "Stop learning forever"
+        },
+        {
+          "id": "c",
+          "text": "Boast that nobody can teach you"
+        },
+        {
+          "id": "d",
+          "text": "Hide every useful book"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The opening verses call for reading in the Lord's name. They also mention Allah teaching people what they did not know.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 96,
+          "ayahs": "1-5",
+          "label": "Quran 96:1-5",
+          "url": "https://quran.com/96/1-5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_006",
+      "conceptId": "kids_quran_fatihah_worship_help",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In Al-Fatihah, what do we affirm alongside worshipping Allah alone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "We worship the sun too"
+        },
+        {
+          "id": "b",
+          "text": "We ask Him for help"
+        },
+        {
+          "id": "c",
+          "text": "We have no need of His help"
+        },
+        {
+          "id": "d",
+          "text": "We choose a different god each day"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Fatihah joins worship of Allah alone with seeking His help. This verse teaches devotion and dependence on Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "5",
+          "label": "Quran 1:5",
+          "url": "https://quran.com/1/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_007",
+      "conceptId": "kids_quran_ikhlas_no_parent_child",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Surah Al-Ikhlas teach about Allah and birth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He was born like a human baby"
+        },
+        {
+          "id": "b",
+          "text": "He has children who become gods"
+        },
+        {
+          "id": "c",
+          "text": "He was not born and has no child"
+        },
+        {
+          "id": "d",
+          "text": "He needs parents to care for Him"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah does not have parents or children. Surah Al-Ikhlas teaches this clearly, distinguishing Him from His creation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "3",
+          "label": "Quran 112:3",
+          "url": "https://quran.com/112/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_008",
+      "conceptId": "kids_quran_nas_whispering",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "From what evil do we seek Allah's protection in Surah An-Nas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The kindness of a helpful teacher"
+        },
+        {
+          "id": "b",
+          "text": "The sound of every friendly greeting"
+        },
+        {
+          "id": "c",
+          "text": "The good advice of our parents"
+        },
+        {
+          "id": "d",
+          "text": "The evil of harmful whispering"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah An-Nas teaches seeking Allah's protection from evil whispering. It describes whisperers from among jinn and people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 114,
+          "ayahs": "1-6",
+          "label": "Quran 114:1-6",
+          "url": "https://quran.com/114/1-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_009",
+      "conceptId": "kids_quran_duha_orphan_care",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Surah Ad-Duha teach about treating an orphan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do not mistreat the child"
+        },
+        {
+          "id": "b",
+          "text": "Make the child feel unwanted"
+        },
+        {
+          "id": "c",
+          "text": "Treat the child as less important"
+        },
+        {
+          "id": "d",
+          "text": "Ignore the child's dignity"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Surah Ad-Duha forbids mistreating an orphan. A child's family situation is never a reason for cruel treatment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "Quran 93:9-11",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_010",
+      "conceptId": "kids_quran_maun_feed_needy",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which failure is criticized near the beginning of Surah Al-Maun?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Helping arrange a meal for someone hungry"
+        },
+        {
+          "id": "b",
+          "text": "Not encouraging food for people in need"
+        },
+        {
+          "id": "c",
+          "text": "Treating an orphan gently"
+        },
+        {
+          "id": "d",
+          "text": "Caring about another person's hunger"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Surah Al-Maun criticizes harsh treatment of orphans and failure to encourage feeding the poor. These verses call our attention to others' needs.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "1-3",
+          "label": "Quran 107:1-3",
+          "url": "https://quran.com/107/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_011",
+      "conceptId": "kids_quran_fil_army",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which army is mentioned in Surah Al-Fil?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An army of imaginary sea monsters"
+        },
+        {
+          "id": "b",
+          "text": "An army named after a classroom game"
+        },
+        {
+          "id": "c",
+          "text": "The Army of the Elephant"
+        },
+        {
+          "id": "d",
+          "text": "An army made of snowmen"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Surah Al-Fil describes how Allah frustrated the plan of the Army of the Elephant. Its strength did not guarantee success.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 105,
+          "ayahs": "1-5",
+          "label": "Quran 105:1-5",
+          "url": "https://quran.com/105/1-5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_012",
+      "conceptId": "kids_quran_quraysh_food_safety",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two blessings are mentioned near the end of Surah Quraysh?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The newest toys and the highest scores"
+        },
+        {
+          "id": "b",
+          "text": "Endless praise and an expensive house"
+        },
+        {
+          "id": "c",
+          "text": "Never needing food and never needing help"
+        },
+        {
+          "id": "d",
+          "text": "Food against hunger and safety against fear"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah Quraysh reminds its listeners of food and security from Allah. It calls them to worship the Lord who blessed them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 106,
+          "ayahs": "3-4",
+          "label": "Quran 106:3-4",
+          "url": "https://quran.com/106/3-4"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_013",
+      "conceptId": "kids_quran_kafirun_distinct_worship",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Surah Al-Kafirun make clear about the Prophet's ﷺ worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He would not worship what the others worshipped"
+        },
+        {
+          "id": "b",
+          "text": "He would change his religion for every visitor"
+        },
+        {
+          "id": "c",
+          "text": "He would worship every idol in turn"
+        },
+        {
+          "id": "d",
+          "text": "He had no faith of his own"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The surah clearly distinguishes the Prophet's ﷺ worship from the worship addressed in it. He did not agree to exchange his faith.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 109,
+          "ayahs": "1-6",
+          "label": "Quran 109:1-6",
+          "url": "https://quran.com/109/1-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_014",
+      "conceptId": "kids_quran_nasr_praise_forgiveness",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the ending of Surah An-Nasr teach the Prophet ﷺ to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boast that Allah's help was unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "Praise Allah and seek His forgiveness"
+        },
+        {
+          "id": "c",
+          "text": "Stop remembering Allah after success"
+        },
+        {
+          "id": "d",
+          "text": "Insult everyone who needs help"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Surah An-Nasr teaches praising Allah and asking His forgiveness. Success is a time for humility and remembrance, not arrogance.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 110,
+          "ayahs": "3",
+          "label": "Quran 110:3",
+          "url": "https://quran.com/110/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_015",
+      "conceptId": "kids_quran_takathur_distraction",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What danger does the opening of Surah At-Takathur warn about?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning useful things with others"
+        },
+        {
+          "id": "b",
+          "text": "Being content with a simple gift"
+        },
+        {
+          "id": "c",
+          "text": "Competition for more distracting us from what matters"
+        },
+        {
+          "id": "d",
+          "text": "Sharing something with a friend"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The surah warns about being consumed by competition for more. Possessions should not distract us from remembering Allah and living well.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 102,
+          "ayahs": "1-2",
+          "label": "Quran 102:1-2",
+          "url": "https://quran.com/102/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_016",
+      "conceptId": "kids_quran_humazah_hurtful_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which behavior does Surah Al-Humazah warn against?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Speaking respectfully about others"
+        },
+        {
+          "id": "b",
+          "text": "Encouraging a child who is learning"
+        },
+        {
+          "id": "c",
+          "text": "Giving someone sincere praise"
+        },
+        {
+          "id": "d",
+          "text": "Speaking badly of people and putting them down"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah Al-Humazah warns against hurtful attacks on people. It also criticizes greedy reliance on wealth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 104,
+          "ayahs": "1-3",
+          "label": "Quran 104:1-3",
+          "url": "https://quran.com/104/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_017",
+      "conceptId": "kids_quran_luqman_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "After mentioning Luqman's wisdom, what does the Quran teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Be grateful to Allah"
+        },
+        {
+          "id": "b",
+          "text": "Pretend every blessing came from ourselves alone"
+        },
+        {
+          "id": "c",
+          "text": "Never recognize a good gift"
+        },
+        {
+          "id": "d",
+          "text": "Use learning only to boast"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran connects Luqman's wisdom with gratitude to Allah. Being grateful benefits the grateful person; Allah needs nothing from us.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "12",
+          "label": "Quran 31:12",
+          "url": "https://quran.com/31/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_018",
+      "conceptId": "kids_quran_verify_reports",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about a report brought by an unreliable person?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spread it quickly without checking"
+        },
+        {
+          "id": "b",
+          "text": "Check it before acting in a way that harms others"
+        },
+        {
+          "id": "c",
+          "text": "Treat every rumor as proven truth"
+        },
+        {
+          "id": "d",
+          "text": "Punish someone just because a story sounds exciting"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse teaches verification to avoid harming people through ignorance. Acting on an unreliable report can lead to regret.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_019",
+      "conceptId": "kids_quran_mulk_good_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Surah Al-Mulk teach about the purpose of life and death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A contest to own the most toys"
+        },
+        {
+          "id": "b",
+          "text": "A race to become the loudest person"
+        },
+        {
+          "id": "c",
+          "text": "A test concerning who is best in deeds"
+        },
+        {
+          "id": "d",
+          "text": "A reason to ignore every good choice"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Surah Al-Mulk connects life and death with a test of deeds. It also describes Allah as Almighty and All-Forgiving.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_020",
+      "conceptId": "kids_quran_stories_lessons",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the ending of Surah Yusuf teach about Quran stories?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are invented only for amusement"
+        },
+        {
+          "id": "b",
+          "text": "They have no connection to guidance"
+        },
+        {
+          "id": "c",
+          "text": "They should be changed to make them exciting"
+        },
+        {
+          "id": "d",
+          "text": "They contain lessons for thoughtful people"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran's stories carry lessons and guidance. They are not invented entertainment to rewrite however we like.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "111",
+          "label": "Quran 12:111",
+          "url": "https://quran.com/12/111"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_021",
+      "conceptId": "kids_quran_preservation",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Allah's promise to preserve the Quran mean every phone app is free of typing mistakes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, an app can still contain copying mistakes"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every typed quotation must be perfect"
+        },
+        {
+          "id": "c",
+          "text": "Yes, an app can never miss a word"
+        },
+        {
+          "id": "d",
+          "text": "No, because the Quran has no protection from Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah's promise concerns preservation of the Quran. It does not mean every app or typed quotation is free of mistakes.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "9",
+          "label": "Quran 15:9",
+          "url": "https://quran.com/15/9"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_022",
+      "conceptId": "kids_quran_revealed_in_stages",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does revelation in stages mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The message came from different human authors"
+        },
+        {
+          "id": "b",
+          "text": "Passages were revealed at different times"
+        },
+        {
+          "id": "c",
+          "text": "Only the first passage was from Allah"
+        },
+        {
+          "id": "d",
+          "text": "The Prophet ﷺ invented the missing parts"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Revelation in stages describes how Allah sent the Quran to the Prophet ﷺ over time. It does not mean the message had different authors.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "106",
+          "label": "Quran 17:106",
+          "url": "https://quran.com/17/106"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_023",
+      "conceptId": "kids_quran_hira_beginning",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is Hira important when learning about Quran revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The whole Quran was printed there by a king"
+        },
+        {
+          "id": "b",
+          "text": "Every Quran chapter was written there by a traveler"
+        },
+        {
+          "id": "c",
+          "text": "The first Quranic revelation came to the Prophet ﷺ there"
+        },
+        {
+          "id": "d",
+          "text": "The companions invented revelation there after the Prophet ﷺ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Hira is connected with the beginning of Quranic revelation. We learn about that event from an authentic report.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_024",
+      "conceptId": "kids_quran_laylat_al_qadr",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is Laylat al-Qadr important when studying the Quran's revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Quran was invented during a school celebration"
+        },
+        {
+          "id": "b",
+          "text": "The Quran must be rewritten on that night yearly"
+        },
+        {
+          "id": "c",
+          "text": "The Quran may only be read on that night"
+        },
+        {
+          "id": "d",
+          "text": "The Quran was sent down on that night"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah Al-Qadr links that special night with the Quran's being sent down. It does not limit Quran reading to one night.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "Quran 97:1",
+          "url": "https://quran.com/97/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_025",
+      "conceptId": "kids_quran_alaq_read_learn",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What do the opening verses of Al-Alaq teach about learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah teaches people what they did not know"
+        },
+        {
+          "id": "b",
+          "text": "Learning is always a waste of time"
+        },
+        {
+          "id": "c",
+          "text": "People are born knowing every subject"
+        },
+        {
+          "id": "d",
+          "text": "A pen can give knowledge without Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The opening verses mention reading, the pen and Allah's teaching. Knowledge is a blessing, not a reason to deny our need for Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 96,
+          "ayahs": "1-5",
+          "label": "Quran 96:1-5",
+          "url": "https://quran.com/96/1-5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_026",
+      "conceptId": "kids_quran_fatihah_worship_help",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which pair of ideas belongs together in Al-Fatihah's fifth verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worshipping idols and forgetting Allah"
+        },
+        {
+          "id": "b",
+          "text": "Worshipping Allah alone and asking His help"
+        },
+        {
+          "id": "c",
+          "text": "Needing no guidance and knowing everything"
+        },
+        {
+          "id": "d",
+          "text": "Praising ourselves and rejecting all help"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "This verse joins worship of Allah alone with seeking His help. Both belong to the message we recite in Al-Fatihah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "5",
+          "label": "Quran 1:5",
+          "url": "https://quran.com/1/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_027",
+      "conceptId": "kids_quran_ikhlas_no_parent_child",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can we describe Allah's family as if He were a human with parents and children?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, His family is like a larger human family"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every powerful being must have parents"
+        },
+        {
+          "id": "c",
+          "text": "No, Allah has neither parents nor children"
+        },
+        {
+          "id": "d",
+          "text": "No, because He has only children but no parents"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Surah Al-Ikhlas rules out both parenthood and being born for Allah. We should not describe Him as part of a human family.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "3",
+          "label": "Quran 112:3",
+          "url": "https://quran.com/112/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_028",
+      "conceptId": "kids_quran_nas_whispering",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Surah An-Nas teach us to follow every suggestion that encourages wrongdoing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every harmful suggestion must be obeyed"
+        },
+        {
+          "id": "b",
+          "text": "Yes, whispering always makes a wrong choice right"
+        },
+        {
+          "id": "c",
+          "text": "No, it teaches that harmful suggestions can never occur"
+        },
+        {
+          "id": "d",
+          "text": "No, it teaches seeking protection from evil whispering"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah teaches turning to Allah for protection. An encouragement toward wrongdoing is not something we must follow.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 114,
+          "ayahs": "1-6",
+          "label": "Quran 114:1-6",
+          "url": "https://quran.com/114/1-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_029",
+      "conceptId": "kids_quran_duha_orphan_care",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Surah Ad-Duha allow mistreating an orphan because their family situation is different?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, it specifically forbids mistreating the orphan"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only children with wealthy parents deserve kindness"
+        },
+        {
+          "id": "c",
+          "text": "Yes, a different family situation removes dignity"
+        },
+        {
+          "id": "d",
+          "text": "No, but it says the child must earn basic respect"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The surah protects the orphan from mistreatment. Differences in family circumstances do not make a child less deserving of respect.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "Quran 93:9-11",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_030",
+      "conceptId": "kids_quran_maun_feed_needy",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Surah Al-Maun treat concern for hungry people as unimportant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, hunger is never anyone else's concern"
+        },
+        {
+          "id": "b",
+          "text": "No, it criticizes failing to encourage their feeding"
+        },
+        {
+          "id": "c",
+          "text": "Yes, people in need should always be ignored"
+        },
+        {
+          "id": "d",
+          "text": "No, but only wealthy people's hunger matters"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "These verses connect serious moral failure with neglecting people in need. Concern should lead toward suitable help, not indifference.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "1-3",
+          "label": "Quran 107:1-3",
+          "url": "https://quran.com/107/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_031",
+      "conceptId": "kids_quran_fil_army",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the army's failed plan in Surah Al-Fil teach about worldly strength?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A large army can never fail"
+        },
+        {
+          "id": "b",
+          "text": "Having elephants guarantees every plan succeeds"
+        },
+        {
+          "id": "c",
+          "text": "A powerful army is not beyond Allah's power"
+        },
+        {
+          "id": "d",
+          "text": "Allah cannot stop people who have weapons"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The army's plan failed despite its strength. The surah reminds us that worldly power is not greater than Allah's power.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 105,
+          "ayahs": "1-5",
+          "label": "Quran 105:1-5",
+          "url": "https://quran.com/105/1-5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_032",
+      "conceptId": "kids_quran_quraysh_food_safety",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What response to Allah's gifts does Surah Quraysh call for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forget the giver as soon as we feel comfortable"
+        },
+        {
+          "id": "b",
+          "text": "Claim that food and safety never matter"
+        },
+        {
+          "id": "c",
+          "text": "Boast that Allah owes us every comfort"
+        },
+        {
+          "id": "d",
+          "text": "Worship the Lord who provided food and safety"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah connects blessings with worship of Allah. Receiving food and safety should remind us of the One who provides them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 106,
+          "ayahs": "3-4",
+          "label": "Quran 106:3-4",
+          "url": "https://quran.com/106/3-4"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_033",
+      "conceptId": "kids_quran_kafirun_distinct_worship",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Surah Al-Kafirun teach changing our worship to match every other religion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, it makes the distinction in worship clear"
+        },
+        {
+          "id": "b",
+          "text": "Yes, our religion must change with every conversation"
+        },
+        {
+          "id": "c",
+          "text": "Yes, every idol becomes part of our worship"
+        },
+        {
+          "id": "d",
+          "text": "No, because it says Muslims have no religion"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The surah teaches a clear religious distinction. It does not ask Muslims to trade their worship for another faith's worship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 109,
+          "ayahs": "1-6",
+          "label": "Quran 109:1-6",
+          "url": "https://quran.com/109/1-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_034",
+      "conceptId": "kids_quran_nasr_praise_forgiveness",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does success remove our need to praise Allah and seek His forgiveness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, success makes remembrance unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "No, An-Nasr teaches both in the setting of victory"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only people who fail should remember Allah"
+        },
+        {
+          "id": "d",
+          "text": "No, but seeking forgiveness is replaced by boasting"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Surah An-Nasr joins victory with praise and seeking forgiveness. Achievement is not a reason to feel independent of Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 110,
+          "ayahs": "3",
+          "label": "Quran 110:3",
+          "url": "https://quran.com/110/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_035",
+      "conceptId": "kids_quran_takathur_distraction",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is owning a toy itself the problem warned about in At-Takathur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every toy is automatically forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Yes, enjoying any possession is always wrong"
+        },
+        {
+          "id": "c",
+          "text": "No, the warning concerns distracting rivalry for more"
+        },
+        {
+          "id": "d",
+          "text": "No, because greed can never distract anyone"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The warning is about being distracted by rivalry for more. It does not mean simply owning or enjoying a toy is wrong.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 102,
+          "ayahs": "1-2",
+          "label": "Quran 102:1-2",
+          "url": "https://quran.com/102/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_036",
+      "conceptId": "kids_quran_humazah_hurtful_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does making others laugh turn hurtful mockery into good conduct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, laughter makes every insult kind"
+        },
+        {
+          "id": "b",
+          "text": "Yes, popular people may mock anyone"
+        },
+        {
+          "id": "c",
+          "text": "No, but it becomes kind if repeated often"
+        },
+        {
+          "id": "d",
+          "text": "No, the warning against putting people down still matters"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Humiliating someone does not become kind because others laugh. The surah warns against speech that attacks people's dignity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 104,
+          "ayahs": "1-3",
+          "label": "Quran 104:1-3",
+          "url": "https://quran.com/104/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_037",
+      "conceptId": "kids_quran_luqman_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Who benefits when a person is grateful, according to the lesson about Luqman?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The grateful person"
+        },
+        {
+          "id": "b",
+          "text": "Allah, because He needs people to complete Him"
+        },
+        {
+          "id": "c",
+          "text": "Only people who give expensive gifts"
+        },
+        {
+          "id": "d",
+          "text": "Nobody, because gratitude is pointless"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse teaches that gratitude benefits the grateful person. Allah is Self-Sufficient, whether people thank Him or not.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "12",
+          "label": "Quran 31:12",
+          "url": "https://quran.com/31/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_038",
+      "conceptId": "kids_quran_verify_reports",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should we check an unreliable report before acting against someone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An exciting story is always true"
+        },
+        {
+          "id": "b",
+          "text": "We might harm someone because the report is wrong"
+        },
+        {
+          "id": "c",
+          "text": "Popularity is better evidence than facts"
+        },
+        {
+          "id": "d",
+          "text": "Checking means we must believe every rumor afterward"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Verification helps prevent harm and regret. A report should not become a reason to mistreat someone before the facts are checked.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_039",
+      "conceptId": "kids_quran_mulk_good_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which description best matches the test mentioned in Surah Al-Mulk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Who can boast the loudest about themselves"
+        },
+        {
+          "id": "b",
+          "text": "Who can avoid every helpful action"
+        },
+        {
+          "id": "c",
+          "text": "How well people act, rather than how many possessions they collect"
+        },
+        {
+          "id": "d",
+          "text": "Who can make others feel least important"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse speaks of being best in deeds. Possessions and boasting are not what it presents as the purpose of life.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_040",
+      "conceptId": "kids_quran_stories_lessons",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should we ask what a Quran story teaches us?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the names in the story ever matter"
+        },
+        {
+          "id": "b",
+          "text": "Every story is meant to teach a guessing trick"
+        },
+        {
+          "id": "c",
+          "text": "Understanding is forbidden when reading stories"
+        },
+        {
+          "id": "d",
+          "text": "Its lessons are part of its purpose"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran invites thoughtful learning from its stories. Understanding the lesson matters alongside remembering the events.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "111",
+          "label": "Quran 12:111",
+          "url": "https://quran.com/12/111"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_041",
+      "conceptId": "kids_quran_preservation",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A copied verse in an app looks different from your trusted Quran text. What is a sensible next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask your teacher to help check the copied text"
+        },
+        {
+          "id": "b",
+          "text": "Assume every app must be free of mistakes"
+        },
+        {
+          "id": "c",
+          "text": "Rewrite the Quran to match the app"
+        },
+        {
+          "id": "d",
+          "text": "Add more words according to your preference"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A copying error should be checked against a reliable Quran text. Allah's preservation of revelation does not make every digital copy error-free.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 15,
+          "ayahs": "9",
+          "label": "Quran 15:9",
+          "url": "https://quran.com/15/9"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_042",
+      "conceptId": "kids_quran_revealed_in_stages",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A worksheet says all Quran revelation to Muhammad ﷺ happened in one afternoon. What correction fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Quran was written by his classmates"
+        },
+        {
+          "id": "b",
+          "text": "The Quran was revealed to him in stages"
+        },
+        {
+          "id": "c",
+          "text": "Only kings received its later passages"
+        },
+        {
+          "id": "d",
+          "text": "The rest was invented whenever someone wanted a story"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran describes revelation in stages. Receiving passages over time is different from receiving the whole message in one afternoon.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "106",
+          "label": "Quran 17:106",
+          "url": "https://quran.com/17/106"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_043",
+      "conceptId": "kids_quran_hira_beginning",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Sara is labeling a picture of the cave of Hira. Which event should her note mention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A king printing the complete Quran"
+        },
+        {
+          "id": "b",
+          "text": "A school inventing its own religious book"
+        },
+        {
+          "id": "c",
+          "text": "The beginning of Quranic revelation to the Prophet ﷺ"
+        },
+        {
+          "id": "d",
+          "text": "The companions making up the first revelation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The authentic report connects Hira with the first Quranic revelation. Sara's note should describe that event accurately.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_044",
+      "conceptId": "kids_quran_laylat_al_qadr",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A class makes a card linking Laylat al-Qadr with revelation. Which sentence belongs on it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Quran was invented at a birthday party"
+        },
+        {
+          "id": "b",
+          "text": "No Quran verse mentions this night"
+        },
+        {
+          "id": "c",
+          "text": "Quran learning is forbidden on every other night"
+        },
+        {
+          "id": "d",
+          "text": "The Quran was sent down on Laylat al-Qadr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Surah Al-Qadr makes this connection. The card should reflect the Quran's teaching, without inventing a rule restricting when we may learn it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 97,
+          "ayahs": "1",
+          "label": "Quran 97:1",
+          "url": "https://quran.com/97/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_045",
+      "conceptId": "kids_quran_alaq_read_learn",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning Al-Alaq's opening verses, Adam notices how reading helps him learn. Which thought fits their lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning is a gift for which I can thank Allah"
+        },
+        {
+          "id": "b",
+          "text": "Knowing one word means I need no further learning"
+        },
+        {
+          "id": "c",
+          "text": "A pen deserves worship because it teaches me everything"
+        },
+        {
+          "id": "d",
+          "text": "Learning makes me better than everyone in every way"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses connect reading and learning with Allah's generosity. Our ability to learn can remind us to be grateful rather than boastful.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 96,
+          "ayahs": "1-5",
+          "label": "Quran 96:1-5",
+          "url": "https://quran.com/96/1-5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_046",
+      "conceptId": "kids_quran_fatihah_worship_help",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Aminah wants her dua to match Al-Fatihah's lesson about seeking help. Which request fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sun, I worship you and need your guidance"
+        },
+        {
+          "id": "b",
+          "text": "Allah, help me do what is good"
+        },
+        {
+          "id": "c",
+          "text": "My pencil, I pray to you for help"
+        },
+        {
+          "id": "d",
+          "text": "I need no help from Allah at all"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Al-Fatihah directs worship and seeking help to Allah. Aminah can turn to Him in a sincere request.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 1,
+          "ayahs": "5",
+          "label": "Quran 1:5",
+          "url": "https://quran.com/1/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_047",
+      "conceptId": "kids_quran_ikhlas_no_parent_child",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate asks whether Allah was born like people. Which answer follows Al-Ikhlas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, He was born in a palace"
+        },
+        {
+          "id": "b",
+          "text": "Yes, but only after creating the sun"
+        },
+        {
+          "id": "c",
+          "text": "No, Allah was not born"
+        },
+        {
+          "id": "d",
+          "text": "No, but He has children who become gods"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Surah Al-Ikhlas teaches that Allah was not born and has no offspring. He is not part of a human family.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 112,
+          "ayahs": "3",
+          "label": "Quran 112:3",
+          "url": "https://quran.com/112/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_048",
+      "conceptId": "kids_quran_nas_whispering",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend quietly urges Hasan to cheat. Which response fits An-Nas's lesson about evil whispering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cheat because a whispered suggestion must be right"
+        },
+        {
+          "id": "b",
+          "text": "Assume saying something quietly makes it kind"
+        },
+        {
+          "id": "c",
+          "text": "Follow the suggestion without thinking"
+        },
+        {
+          "id": "d",
+          "text": "Seek Allah's protection and refuse the dishonest suggestion"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah teaches seeking protection from evil whispering, including from people. Hasan can turn to Allah and choose not to cheat.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 114,
+          "ayahs": "1-6",
+          "label": "Quran 114:1-6",
+          "url": "https://quran.com/114/1-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_049",
+      "conceptId": "kids_quran_duha_orphan_care",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Some classmates mock an orphan's family situation. Which action follows Ad-Duha's teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refuse to join in and seek a teacher's help"
+        },
+        {
+          "id": "b",
+          "text": "Repeat the mockery more loudly"
+        },
+        {
+          "id": "c",
+          "text": "Tell the child they deserve cruel treatment"
+        },
+        {
+          "id": "d",
+          "text": "Use their family situation to exclude them"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The surah forbids mistreating an orphan. Respect the child and involve a trusted adult when classmates are causing harm.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 93,
+          "ayahs": "9-11",
+          "label": "Quran 93:9-11",
+          "url": "https://quran.com/93/9-11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_050",
+      "conceptId": "kids_quran_maun_feed_needy",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After studying Al-Maun, your class plans help for hungry families. Which choice fits the lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make posters mocking the families"
+        },
+        {
+          "id": "b",
+          "text": "Help a teacher organize a suitable food collection"
+        },
+        {
+          "id": "c",
+          "text": "Insist that hunger is never important"
+        },
+        {
+          "id": "d",
+          "text": "Hide all the donated food for yourself"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Encouraging suitable help for hungry people follows the lesson. A teacher can guide the collection and make sure the help is appropriate.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 107,
+          "ayahs": "1-3",
+          "label": "Quran 107:1-3",
+          "url": "https://quran.com/107/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_051",
+      "conceptId": "kids_quran_fil_army",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend says, \"The army in Al-Fil was too strong for its plan to fail.\" What should you explain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The surah says its plan could never fail"
+        },
+        {
+          "id": "b",
+          "text": "Elephants make every army stronger than Allah"
+        },
+        {
+          "id": "c",
+          "text": "Allah frustrated its plan despite its strength"
+        },
+        {
+          "id": "d",
+          "text": "The story teaches that Allah has no power over armies"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Surah Al-Fil describes the army's scheme being defeated. Its size and strength did not place it beyond Allah's power.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 105,
+          "ayahs": "1-5",
+          "label": "Quran 105:1-5",
+          "url": "https://quran.com/105/1-5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_052",
+      "conceptId": "kids_quran_quraysh_food_safety",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Maryam has a meal in a safe home after learning Surah Quraysh. Which thought fits its lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comfort means I no longer need Allah"
+        },
+        {
+          "id": "b",
+          "text": "People who have less are worth less"
+        },
+        {
+          "id": "c",
+          "text": "Every blessing belongs only to my family"
+        },
+        {
+          "id": "d",
+          "text": "Food and safety are blessings from Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah reminds us of food and security from Allah. Maryam can recognize those blessings with gratitude and worship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 106,
+          "ayahs": "3-4",
+          "label": "Quran 106:3-4",
+          "url": "https://quran.com/106/3-4"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_053",
+      "conceptId": "kids_quran_kafirun_distinct_worship",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Yusuf is explaining Al-Kafirun in class. Which summary fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Prophet ﷺ kept his worship distinct from idol worship"
+        },
+        {
+          "id": "b",
+          "text": "The Prophet ﷺ agreed to worship every idol"
+        },
+        {
+          "id": "c",
+          "text": "Muslims must change their religion to match each visitor"
+        },
+        {
+          "id": "d",
+          "text": "The chapter says Muslims have no faith of their own"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The surah clearly distinguishes the Prophet's ﷺ worship from that addressed in it. Yusuf should explain that distinction accurately.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 109,
+          "ayahs": "1-6",
+          "label": "Quran 109:1-6",
+          "url": "https://quran.com/109/1-6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_054",
+      "conceptId": "kids_quran_nasr_praise_forgiveness",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After doing well in a learning activity, what response reflects the humility taught in An-Nasr?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Declare that Allah's help never matters"
+        },
+        {
+          "id": "b",
+          "text": "Praise Allah instead of boasting, and seek His forgiveness"
+        },
+        {
+          "id": "c",
+          "text": "Mock everyone who found the activity difficult"
+        },
+        {
+          "id": "d",
+          "text": "Say that successful people no longer need Allah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The surah's instruction is given in the setting of victory. Its lesson encourages humble remembrance rather than pride after success.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 110,
+          "ayahs": "3",
+          "label": "Quran 110:3",
+          "url": "https://quran.com/110/3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_055",
+      "conceptId": "kids_quran_takathur_distraction",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Ali spends all his time comparing toys and neglects important responsibilities. What better choice fits At-Takathur's warning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Demand more toys just to defeat his friends"
+        },
+        {
+          "id": "b",
+          "text": "Stop caring about anything except owning more"
+        },
+        {
+          "id": "c",
+          "text": "Enjoy his things without letting rivalry take over"
+        },
+        {
+          "id": "d",
+          "text": "Decide that another child's belongings determine his worth"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Rivalry for more can become distracting. Ali can enjoy what he has while making time for worship, learning and care for others.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 102,
+          "ayahs": "1-2",
+          "label": "Quran 102:1-2",
+          "url": "https://quran.com/102/1-2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_056",
+      "conceptId": "kids_quran_humazah_hurtful_speech",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends invite Sara to make fun of a classmate's appearance. Which choice follows Al-Humazah's warning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invent a crueler joke"
+        },
+        {
+          "id": "b",
+          "text": "Spread the joke to another class"
+        },
+        {
+          "id": "c",
+          "text": "Decide that popular children may insult anyone"
+        },
+        {
+          "id": "d",
+          "text": "Do not join in putting the classmate down"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The surah warns against hurtful attacks on people. Sara can refuse to join the mockery and choose respectful speech.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 104,
+          "ayahs": "1-3",
+          "label": "Quran 104:1-3",
+          "url": "https://quran.com/104/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_057",
+      "conceptId": "kids_quran_luqman_gratitude",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning the verse about Luqman's gratitude, Zaynab notices a blessing in her day. What response fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recognize the blessing and thank Allah"
+        },
+        {
+          "id": "b",
+          "text": "Boast that she has never needed Allah"
+        },
+        {
+          "id": "c",
+          "text": "Treat every gift as something Allah owes her"
+        },
+        {
+          "id": "d",
+          "text": "Claim that gratitude never benefits anyone"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Gratitude benefits the grateful person. Zaynab can recognize Allah's gift without acting as though He depends on her thanks.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 31,
+          "ayahs": "12",
+          "label": "Quran 31:12",
+          "url": "https://quran.com/31/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_058",
+      "conceptId": "kids_quran_verify_reports",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An unverified story accuses a classmate of stealing. What is a careful choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Share it with everyone before checking"
+        },
+        {
+          "id": "b",
+          "text": "Ask a teacher to check without spreading the accusation"
+        },
+        {
+          "id": "c",
+          "text": "Punish the classmate yourself"
+        },
+        {
+          "id": "d",
+          "text": "Add invented details to make it exciting"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Unreliable accusations can cause real harm. A trusted teacher can help check what happened without spreading an unproven claim.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_059",
+      "conceptId": "kids_quran_mulk_good_deeds",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning that life involves a test of deeds, which daily goal fits the lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collect things only to feel superior"
+        },
+        {
+          "id": "b",
+          "text": "Win attention by humiliating others"
+        },
+        {
+          "id": "c",
+          "text": "Try to make good choices in how I act"
+        },
+        {
+          "id": "d",
+          "text": "Avoid every chance to do something useful"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse turns attention to good deeds. A child can practice good choices without treating possessions or popularity as a measure of worth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_quran_knowledge_060",
+      "conceptId": "kids_quran_stories_lessons",
+      "categoryId": "quran_knowledge",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your class finishes a Quran story. Which question best helps you learn from it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How can we add invented events and call them Quran?"
+        },
+        {
+          "id": "b",
+          "text": "Which character should we turn into a cruel joke?"
+        },
+        {
+          "id": "c",
+          "text": "How can we avoid thinking about its meaning?"
+        },
+        {
+          "id": "d",
+          "text": "What truthful lesson can guide our choices?"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran's stories invite reflection and learning. Discuss the real lesson while keeping the revealed account separate from invented additions.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "111",
+          "label": "Quran 12:111",
+          "url": "https://quran.com/12/111"
+        }
+      ]
+    }
+  ]
+}

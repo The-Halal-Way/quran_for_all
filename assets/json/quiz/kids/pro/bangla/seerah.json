@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "seerah",
+  "title": "নবীজির জীবন (সিরাত)",
+  "description": "ছোট্ট মুসলিম → প্রো। নবীজির জীবনের ঘটনার সঙ্গে মনোযোগ দিয়ে শেখানো, যোগাযোগ, ভিন্ন ধর্মের মানুষের যত্ন, মানবিক মর্যাদা, আনন্দময় পারিবারিক সঙ্গ, শিশুর পালা, সম্মান রেখে সংশোধন, মদিনার ভ্রাতৃত্ব, মীমাংসা, পাওনা শোধ, বাজারে সততা, আতিথেয়তা, সুবিবেচিত পরামর্শ, সাধারণ বাহন, ইবন আব্বাসকে উৎসাহ, নামাজে বাস্তব নির্দেশনা, সুফফার অধিবাসী, সাধারণ জীবন, স্থায়ী বন্ধুত্ব ও ভারসাম্যপূর্ণ দায়িত্বের সম্পর্ক নিয়ে ছোট প্রশ্ন। বড় কেউ প্রশ্ন পড়ে শোনাতে বা অপরিচিত নাম ও শব্দ বুঝিয়ে দিতে পারেন। সব প্রশ্ন শিশুদের প্রো স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রো ছোট্ট মুসলিম বিভাগের সর্বোচ্চ নির্ধারিত স্তর, শিক্ষিত ব্যবহারকারী বিভাগের স্তর নয়। বর্ণিত ঘটনার সঙ্গে তার উদ্দেশ্যের সম্পর্ক বোঝা, সমর্থিত সিদ্ধান্ত ও অতিরঞ্জিত ধারণা আলাদা করা এবং ছোট পরিস্থিতিতে শিক্ষা কাজে লাগাতে বলা হয়েছে। তিন ধরন প্রশ্নের রূপ, কঠিনতার আলাদা স্তর নয়। বিশেষজ্ঞ পর্যায়ের ঐতিহাসিক বিতর্ক, অপরিচিত তারিখ, ফিকহের খুঁটিনাটি বা হাদিসের সূত্রের নম্বর মুখস্থ করা প্রয়োজন নেই। শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে স্তরের মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সহিহ বুখারি, সহিহ মুসলিমের সংযুক্ত বর্ণনা এবং সুনান আবু দাউদের দৌড়ের বর্ণনা মিলিয়ে দেখা হয়েছে। আবু দাউদ ২৫৭৮-এর সংযুক্ত পৃষ্ঠায় আলবানির মতে বর্ণনাটি সহিহ বলা হয়েছে; এটি সূত্রের মূল্যায়ন উল্লেখ, স্বতন্ত্রভাবে হাদিসের মান নির্ধারণ নয়। প্রশ্ন ও ব্যাখ্যা শিক্ষামূলক নিজস্ব ভাষায় লেখা, হুবহু অনুবাদ নয়। বর্তমান সময়ের পরিস্থিতিগুলো শিক্ষা প্রয়োগের উদাহরণ; সেগুলো বর্ণিত ঘটনা বলে দাবি করা হয়নি। অসুস্থ ইহুদি ছেলেটিকে দেখার ঘটনা ধর্মের পার্থক্য পেরিয়ে যত্ন শেখাতে ব্যবহৃত হয়েছে; দয়াকে ধর্ম পরিবর্তনের শর্তাধীন দেখানো হয়নি। মরদেহ নিয়ে যাওয়ার ঘটনায় মানবিক মর্যাদা বোঝানো হয়েছে, শেষযাত্রার সময় দাঁড়ানোর বিস্তারিত ফিকহি বিধান মীমাংসা করা হয়নি। আয়িশার দৌড়ের বর্ণনায় শরীর নিয়ে মন্তব্য, বানানো বয়স বা সব বিনোদনের জন্য সাধারণ বিধান যোগ করা হয়নি। ছেলেটির পালার ঘটনা তার অনুমতিকে সম্মান করা বোঝায়; সাধারণ লাইনের উদাহরণ প্রয়োগ, পানীয় দেওয়ার সব নিয়মের বিবরণ নয়। আবু যরকে সংশোধন অন্যের মাকে নিয়ে বর্ণিত অপমান সম্পর্কে; প্রমাণহীন পরিচয়, উদ্ধৃতি বা বাড়তি গল্প দেওয়া হয়নি। ভ্রাতৃত্ব একজন মুহাজির ও একজন আনসারের মধ্যে প্রতিষ্ঠিত সহায়ক সম্পর্ক; জন্মসূত্রের আত্মীয়তা বা পরবর্তী উত্তরাধিকারবিধান সম্পর্কে দাবি নয়। কুবার ঘটনা শিশুদের মারামারির মধ্যে ঢুকতে শেখায় না। উটের ঋণ শোধের ঘটনা বাড়তি পরিশোধ বাধ্যতামূলক করে না, আর্থিক বিধান তৈরি করে না এবং চুক্তিতে নির্ধারিত সুদের অনুমতি দেয় না। খাবার বিক্রেতার ঘটনা ভেজা খাবারের অবস্থা জানানো সম্পর্কে; কোনো নির্দিষ্ট শিশুর ধর্মীয় অবস্থা ঘোষণা করে না। দর্জির দাওয়াতে সম্মানজনক মেলামেশা শেখানো হয়েছে; প্রতিটি দাওয়াত গ্রহণ বা অনুপযুক্ত খাবার খাওয়া বাধ্যতামূলক করা হয়নি। হুদাইবিয়ার প্রশ্নটি উম্মে সালামার নির্দিষ্ট পরামর্শ ও পরে নবীজির নিজে কাজ করে দেখানো সম্পর্কে; বানানো চুক্তির পরামর্শসভা বা শিশুদের প্রাপ্তবয়স্কদের ধর্মীয় কাজ করার নিয়ম নয়। গাধায় একসঙ্গে চড়ার ঘটনায় উসামার প্রমাণহীন বয়স দেওয়া হয়নি; এটি বাহনে চড়ার নিরাপত্তার নির্দেশনাও নয়। ইবন আব্বাসের জন্য দোয়া দ্বীন বোঝার বিষয়ে; দোয়া পড়াশোনার বিকল্প এমন নিশ্চয়তা নেই। নামাজে তাঁর দাঁড়ানোর অবস্থান বর্ণিত ঘটনা দিয়ে শেখানো হয়েছে; এটি পূর্ণাঙ্গ নামাজশিক্ষা বা শিশুদের রাতে জেগে থাকার নির্দেশ নয়। সুফফার ঘটনা সবাইকে মনে রেখে আতিথেয়তার জন্য ব্যবহৃত; অলৌকিক ঘটনার বানানো প্রাকৃতিক ব্যাখ্যা বা অল্প খাবার সব সময় যেকোনো দলকে খাওয়াবে এমন নিশ্চয়তা নেই। চাটাইয়ের ঘটনা সাধারণ জীবনযাপন সম্পর্কে; আরাম, প্রয়োজনীয় সহায়তা বা সাধারণ সম্পদ নিষিদ্ধ করে না। খাদিজার বান্ধবীদের যত্ন বর্ণিত উপহার ও স্মরণের মধ্যে সীমিত; বানানো বার্তা বা সাক্ষাৎ যোগ করা হয়নি। সালমানের পরামর্শ প্রাপ্য হকগুলোর ভারসাম্য হিসেবে শেখানো হয়েছে; স্কুলের রুটিন বড়দের সহায়তায় প্রয়োগ, বিস্তারিত রোজার বিধান নয়। এটি আলেমের পর্যালোচনা ও শিশুর পাঠযোগ্যতা মূল্যায়নের খসড়া, স্বতন্ত্র আলেমের অনুমোদন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_pro_seerah_001",
+      "conceptId": "kids_seerah_repeat_to_understand",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আনাসের বর্ণনা অনুযায়ী, মানুষকে বোঝাতে নবী ﷺ কথা কতবার পুনরাবৃত্তি করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনবার"
+        },
+        {
+          "id": "b",
+          "text": "দুইবার"
+        },
+        {
+          "id": "c",
+          "text": "চারবার"
+        },
+        {
+          "id": "d",
+          "text": "পাঁচবার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আনাস বলেছেন, শ্রোতারা যেন বুঝতে পারেন, সে জন্য নবী ﷺ কথা তিনবার বলতেন। মানুষকে শিখতে সাহায্য করা গুরুত্বপূর্ণ ছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "সহিহ বুখারি ৯৫",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_002",
+      "conceptId": "kids_seerah_letter_seal",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "চিঠি পাঠানোর প্রস্তুতির সময় নবী ﷺ কেন রুপার আংটি বানিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বার্তাবাহককে পারিশ্রমিক দেওয়ার জন্য"
+        },
+        {
+          "id": "b",
+          "text": "চিঠিতে সিল দেওয়ার জন্য"
+        },
+        {
+          "id": "c",
+          "text": "কাগজ মাপার জন্য"
+        },
+        {
+          "id": "d",
+          "text": "খাম সাজানোর জন্য"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তিনি জানলেন, প্রাপকেরা সিলযুক্ত চিঠি গ্রহণ করেন। আংটিটি তাঁর চিঠির সিল হিসেবে ব্যবহৃত হতো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5872",
+          "label": "সহিহ বুখারি ৫৮৭২",
+          "url": "https://sunnah.com/bukhari:5872"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_003",
+      "conceptId": "kids_seerah_visit_sick_boy",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "তাঁর সেবা করত এমন এক ইহুদি ছেলে অসুস্থ হলে নবী ﷺ কী করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাকে কাজের সময়সূচি পাঠিয়েছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "তার ফিরে আসার অপেক্ষা করেছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "ছেলেটিকে দেখতে গিয়েছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "তাকেই দেখা করতে আসতে বলেছিলেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ অসুস্থ ছেলেটির কাছে গিয়ে পাশে বসেছিলেন। এই বর্ণনায় ধর্মের পার্থক্য পেরিয়ে ব্যক্তিগত যত্নের পরিচয় পাওয়া যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "সহিহ বুখারি ১৩৫৬",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_004",
+      "conceptId": "kids_seerah_funeral_human_dignity",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "তাঁর সামনে দিয়ে এক ইহুদি ব্যক্তির মরদেহ নিয়ে যাওয়ার সময় নবী ﷺ কী করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য পথের কথা জিজ্ঞেস করেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "মরদেহ বহনকারীদের ফিরে আসতে বলেছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "তাদের থামিয়ে বক্তব্য দিয়েছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "উঠে দাঁড়িয়েছিলেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "মৃত ব্যক্তি ইহুদি জানানো হলে তিনি তার মানুষ হওয়ার বিষয়টি স্মরণ করিয়ে দেন। ঘটনাটি মানবজীবনের প্রতি সম্মান শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1312",
+          "label": "সহিহ বুখারি ১৩১২",
+          "url": "https://sunnah.com/bukhari:1312"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_005",
+      "conceptId": "kids_seerah_race_aishah",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সফরে নবী ﷺ-এর সঙ্গে কোন আনন্দের খেলায় অংশ নেওয়ার কথা আয়িশা বলেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দৌড় প্রতিযোগিতা"
+        },
+        {
+          "id": "b",
+          "text": "নৌকাবাইচ"
+        },
+        {
+          "id": "c",
+          "text": "পাহাড়ে ওঠা"
+        },
+        {
+          "id": "d",
+          "text": "বোর্ডের খেলা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়িশা নবী ﷺ-এর সঙ্গে দৌড় প্রতিযোগিতার কথা বলেছেন। একসঙ্গে আনন্দ করা তাঁর পারিবারিক জীবনের আন্তরিক একটি দিক।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "2578",
+          "label": "সুনান আবু দাউদ ২৫৭৮",
+          "url": "https://sunnah.com/abudawud:2578"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_006",
+      "conceptId": "kids_seerah_boy_turn_respected",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "বাঁ পাশের বয়োজ্যেষ্ঠদের আগে পানীয় দিতে নবী ﷺ ডান পাশের ছেলেটির কাছে কী চেয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বৈঠক শেষ করার অনুমতি"
+        },
+        {
+          "id": "b",
+          "text": "বয়োজ্যেষ্ঠদের আগে দেওয়ার অনুমতি"
+        },
+        {
+          "id": "c",
+          "text": "তাদের নাম জানে কি না"
+        },
+        {
+          "id": "d",
+          "text": "সে পাত্রটি ধুয়েছে কি না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "পানীয় দেওয়ার ক্রম বদলাতে তিনি ছেলেটির অনুমতি চেয়েছিলেন। ছেলেটি রাজি না হলে তিনি তাকেই পানীয় দেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5620",
+          "label": "সহিহ বুখারি ৫৬২০",
+          "url": "https://sunnah.com/bukhari:5620"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_007",
+      "conceptId": "kids_seerah_correct_family_insult",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই বর্ণনায় কোন কাজের জন্য নবী ﷺ আবু যরকে সংশোধন করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নামাজ সম্পর্কে প্রশ্ন করা"
+        },
+        {
+          "id": "b",
+          "text": "সাধারণ চাদর পরা"
+        },
+        {
+          "id": "c",
+          "text": "কারও মাকে নিয়ে তাকে অপমান করা"
+        },
+        {
+          "id": "d",
+          "text": "একজন কর্মীর সঙ্গে খাবার ভাগ করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ এই অপমানের প্রতিবাদ করেছিলেন। কারও মা বা পারিবারিক পরিচয়কে অপমানের লক্ষ্য করা উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "30",
+          "label": "সহিহ বুখারি ৩০",
+          "url": "https://sunnah.com/bukhari:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_008",
+      "conceptId": "kids_seerah_bond_brotherhood",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "মদিনায় আবদুর রহমান ইবন আউফ ও সাদ ইবন রাবির মধ্যে নবী ﷺ কী সম্পর্ক গড়ে দিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জন্মসূত্রে পারিবারিক সম্পর্ক"
+        },
+        {
+          "id": "b",
+          "text": "একসঙ্গে সফরের চুক্তি"
+        },
+        {
+          "id": "c",
+          "text": "ব্যবসায়ীদের মধ্যে প্রতিযোগিতা"
+        },
+        {
+          "id": "d",
+          "text": "মুমিনদের মধ্যে ভ্রাতৃত্ব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ তাঁদের মধ্যে ভ্রাতৃত্ব গড়ে দেন। এতে মদিনায় একজন মুহাজির ও একজন আনসারের মধ্যে সহায়তার সম্পর্ক তৈরি হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2048",
+          "label": "সহিহ বুখারি ২০৪৮",
+          "url": "https://sunnah.com/bukhari:2048"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_009",
+      "conceptId": "kids_seerah_reconcile_quba",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুবার লোকদের মধ্যে মারামারির খবর শুনে নবী ﷺ কী করতে রওনা হয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাদের মধ্যে মীমাংসা করতে"
+        },
+        {
+          "id": "b",
+          "text": "সবচেয়ে শক্তিশালী দল বেছে নিতে"
+        },
+        {
+          "id": "c",
+          "text": "কাছ থেকে মারামারি দেখতে"
+        },
+        {
+          "id": "d",
+          "text": "আরও লোক জড়ো হওয়ার অপেক্ষা করতে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তিনি মানুষগুলোর মধ্যে শান্তি ফিরিয়ে আনতে গিয়েছিলেন। বিরোধ বিপজ্জনক হলে শিশুদের বিশ্বস্ত বড় কারও সাহায্য নেওয়া উচিত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2693",
+          "label": "সহিহ বুখারি ২৬৯৩",
+          "url": "https://sunnah.com/bukhari:2693"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_010",
+      "conceptId": "kids_seerah_repay_well",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "উটের ঋণ শোধের জন্য শুধু বেশি বয়সের উট পাওয়া গেলে নবী ﷺ কী করতে বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কিছুই ফেরত না দিতে"
+        },
+        {
+          "id": "b",
+          "text": "বেশি বয়সের উটটি দিতে"
+        },
+        {
+          "id": "c",
+          "text": "দুটি উটই রেখে দিতে"
+        },
+        {
+          "id": "d",
+          "text": "মালিককে ঋণ ভুলে যেতে বলতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তিনি পাওয়া বেশি বয়সের উটটি দিতে বলেছিলেন। বর্ণনাটি সুন্দরভাবে পাওনা শোধ করার প্রশংসা করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2393",
+          "label": "সহিহ বুখারি ২৩৯৩",
+          "url": "https://sunnah.com/bukhari:2393"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_011",
+      "conceptId": "kids_seerah_market_honesty",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "বিক্রির খাবারের শুকনা উপরিভাগের নিচে নবী ﷺ কী পেয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্য ধরনের মুদ্রা"
+        },
+        {
+          "id": "b",
+          "text": "মাপার দড়ি"
+        },
+        {
+          "id": "c",
+          "text": "বৃষ্টিতে ভেজা খাবার"
+        },
+        {
+          "id": "d",
+          "text": "হাতে লেখা বাজারের তালিকা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তিনি ভেজা খাবার ক্রেতাদের চোখে পড়ার মতো রাখতে বলেছিলেন। এর অবস্থা লুকালে ক্রেতারা ভুল বুঝতে পারত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_012",
+      "conceptId": "kids_seerah_tailor_invitation",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আনাসের বর্ণনায়, নবী ﷺ কার খাবারের দাওয়াত গ্রহণ করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একজন শাসকের"
+        },
+        {
+          "id": "b",
+          "text": "একজন জাহাজ নির্মাতার"
+        },
+        {
+          "id": "c",
+          "text": "একজন কৃষকের"
+        },
+        {
+          "id": "d",
+          "text": "একজন দর্জির"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আনাস নবী ﷺ-এর সঙ্গে একজন দর্জির দাওয়াতে গিয়েছিলেন। আয়োজকের সাধারণ পেশা আন্তরিক মেলামেশার বাধা হয়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2092",
+          "label": "সহিহ বুখারি ২০৯২",
+          "url": "https://sunnah.com/bukhari:2092"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_013",
+      "conceptId": "kids_seerah_umm_salamah_advice",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হুদাইবিয়ায় সাহাবিরা আনুষ্ঠানিক কাজগুলো সম্পন্ন করতে দেরি করলে নবী ﷺ কার পরামর্শ মেনেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উম্মে সালামার"
+        },
+        {
+          "id": "b",
+          "text": "আসমার"
+        },
+        {
+          "id": "c",
+          "text": "ফাতিমার"
+        },
+        {
+          "id": "d",
+          "text": "হাফসার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "উম্মে সালামা তাঁকে আগে নিজে কাজগুলো করতে পরামর্শ দেন। তিনি তা করলে সাহাবিরা তাঁর অনুসরণ করেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_014",
+      "conceptId": "kids_seerah_usamah_shared_ride",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই বর্ণনায়, গাধার পিঠে নবী ﷺ-এর পেছনে কে বসেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবু হুরায়রা"
+        },
+        {
+          "id": "b",
+          "text": "উসামা ইবন যায়দ"
+        },
+        {
+          "id": "c",
+          "text": "আবদুর রহমান ইবন আউফ"
+        },
+        {
+          "id": "d",
+          "text": "সাদ ইবন রাবি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী ﷺ উসামাকে গাধার পিঠে তাঁর পেছনে বসিয়েছিলেন। এক সঙ্গীকে নিয়ে এটি ছিল সাধারণ একটি যাত্রা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2987",
+          "label": "সহিহ বুখারি ২৯৮৭",
+          "url": "https://sunnah.com/bukhari:2987"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_015",
+      "conceptId": "kids_seerah_ibn_abbas_dua",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "ইবন আব্বাস পানি এগিয়ে দেওয়ার পর নবী ﷺ তাঁর জন্য আল্লাহর কাছে কী চেয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বাণিজ্য কাফেলার নেতৃত্ব"
+        },
+        {
+          "id": "b",
+          "text": "আরও বড় বাড়ি"
+        },
+        {
+          "id": "c",
+          "text": "দ্বীনের সঠিক বুঝ"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি প্রতিযোগিতায় অংশ নেওয়ার সুযোগ"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ ইবন আব্বাসের দ্বীন বোঝার জন্য দোয়া করেছিলেন। অর্থবহ দোয়া দিয়ে তিনি এক তরুণ সাহাবিকে উৎসাহ দিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "143",
+          "label": "সহিহ বুখারি ১৪৩",
+          "url": "https://sunnah.com/bukhari:143"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_016",
+      "conceptId": "kids_seerah_ibn_abbas_prayer_guidance",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "রাতের নামাজে ইবন আব্বাস তাঁর বাঁ পাশে দাঁড়ালে নবী ﷺ তাঁকে কোথায় সরিয়ে দেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঘর থেকে অনেক দূরে"
+        },
+        {
+          "id": "b",
+          "text": "বন্ধ দরজার পেছনে"
+        },
+        {
+          "id": "c",
+          "text": "নিজের সামনে"
+        },
+        {
+          "id": "d",
+          "text": "নিজের ডান পাশে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ইবন আব্বাস নবী ﷺ-এর সঙ্গে নামাজে যোগ দেন। নবী ﷺ তাঁকে বাঁ পাশ থেকে ডান পাশে দাঁড় করান।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "699",
+          "label": "সহিহ বুখারি ৬৯৯",
+          "url": "https://sunnah.com/bukhari:699"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_017",
+      "conceptId": "kids_seerah_suffah_milk",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দুধ ভাগ করে পান করতে নবী ﷺ আবু হুরায়রাকে কাদের ডাকতে বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুফফার অধিবাসীদের"
+        },
+        {
+          "id": "b",
+          "text": "সফরে আসা একদল ব্যবসায়ীকে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু শহরের ধনী পরিবারগুলোকে"
+        },
+        {
+          "id": "d",
+          "text": "এক কাফেলার পাহারাদারদের"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সুফফার অধিবাসীদের সহায়তার প্রয়োজন ছিল। দুধ নিজের জন্য রেখে না দিয়ে নবী ﷺ তাঁদেরও ভাগ করে পান করতে ডাকেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6452",
+          "label": "সহিহ বুখারি ৬৪৫২",
+          "url": "https://sunnah.com/bukhari:6452"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_018",
+      "conceptId": "kids_seerah_simple_mat",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই ঘটনায় উমর দেখা করতে এসে নবী ﷺ-কে কিসের ওপর বিশ্রাম নিতে দেখেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রেশমের গদি"
+        },
+        {
+          "id": "b",
+          "text": "খেজুরপাতার চাটাই"
+        },
+        {
+          "id": "c",
+          "text": "মুদ্রাভরা বালিশ"
+        },
+        {
+          "id": "d",
+          "text": "সাজানো রাজসিংহাসন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "উমর নবী ﷺ-কে সাধারণ চাটাইয়ে বিশ্রাম নিতে দেখেছিলেন। তাঁর সাধারণ জীবনযাপন তাঁর সম্মান কমায়নি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4913",
+          "label": "সহিহ বুখারি ৪৯১৩",
+          "url": "https://sunnah.com/bukhari:4913"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_019",
+      "conceptId": "kids_seerah_khadijah_friends",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "খাদিজাকে স্মরণ করে নবী ﷺ কাদের কাছে গোশতের অংশ পাঠাতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু সফরে আসা শাসকদের"
+        },
+        {
+          "id": "b",
+          "text": "শুধু বাজারের ব্যবসায়ীদের"
+        },
+        {
+          "id": "c",
+          "text": "খাদিজার বান্ধবীদের"
+        },
+        {
+          "id": "d",
+          "text": "কাফেলার পাহারাদারদের"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তিনি খাদিজাকে স্মরণ করতেন এবং তাঁর বান্ধবীদের খাবার পাঠাতেন। খাদিজার সঙ্গে যুক্ত সম্পর্কগুলোর মাধ্যমেও তাঁর যত্ন প্রকাশ পেত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3818",
+          "label": "সহিহ বুখারি ৩৮১৮",
+          "url": "https://sunnah.com/bukhari:3818"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_020",
+      "conceptId": "kids_seerah_salman_balanced_rights",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "আল্লাহ, নিজের ও পরিবারের হক সম্পর্কে কার পরামর্শকে নবী ﷺ সঠিক বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবু হুরায়রার"
+        },
+        {
+          "id": "b",
+          "text": "উসামার"
+        },
+        {
+          "id": "c",
+          "text": "ইবন আব্বাসের"
+        },
+        {
+          "id": "d",
+          "text": "সালমানের"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সালমান আবু দারদাকে প্রত্যেকের প্রাপ্য হক দিতে স্মরণ করিয়ে দেন। নবী ﷺ এই ভারসাম্যপূর্ণ পরামর্শ সমর্থন করেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1968",
+          "label": "সহিহ বুখারি ১৯৬৮",
+          "url": "https://sunnah.com/bukhari:1968"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_021",
+      "conceptId": "kids_seerah_repeat_to_understand",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আনাসের বর্ণনায় নবী ﷺ-এর কথা পুনরাবৃত্তি করার মূল উদ্দেশ্য কী ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শ্রোতাদের কথাটি বুঝতে সাহায্য করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি কথোপকথন দীর্ঘ করা"
+        },
+        {
+          "id": "c",
+          "text": "মানুষ কত জোরে বলতে পারে তা যাচাই করা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি ব্যাখ্যার বদলে শুধু গুনতে থাকা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "গুরুত্বপূর্ণ কথা আবার বলা বুঝতে সাহায্য করতে পারে। এখানে উদ্দেশ্য ছিল শ্রোতাদের সহায়তা করা, শেখা অযথা কঠিন করা নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "সহিহ বুখারি ৯৫",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_022",
+      "conceptId": "kids_seerah_letter_seal",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "চিঠির সিল হিসেবে নবী ﷺ-এর আংটি ব্যবহার কোন সম্পর্কটি বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবাইকে খুশি করতে বার্তা বদলে ফেলা"
+        },
+        {
+          "id": "b",
+          "text": "প্রয়োজন জেনে সে অনুযায়ী প্রস্তুতি নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "অন্য জাতির সঙ্গে সব যোগাযোগ এড়ানো"
+        },
+        {
+          "id": "d",
+          "text": "চিঠির বদলে মূল্যবান উপহার পাঠানো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আংটি চিঠি গ্রহণের একটি ব্যবহারিক শর্ত পূরণ করেছিল। ঘটনাটি যোগাযোগের সঙ্গে ভেবেচিন্তে প্রস্তুতি নেওয়ার সম্পর্ক দেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5872",
+          "label": "সহিহ বুখারি ৫৮৭২",
+          "url": "https://sunnah.com/bukhari:5872"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_023",
+      "conceptId": "kids_seerah_visit_sick_boy",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "অসুস্থ ইহুদি ছেলেটিকে দেখতে যাওয়ার ঘটনার সঙ্গে কোন বক্তব্যটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি শুধু অসুস্থ আত্মীয়দের দেখতে যেতেন"
+        },
+        {
+          "id": "b",
+          "text": "ছেলেটি আবার কাজ করতে পারা পর্যন্ত অপেক্ষা করেছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "তিনি অন্য ধর্মের মানুষেরও খোঁজ নিয়েছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "যত্নের প্রয়োজন এমন কারও পাশে বসতেন না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ঘটনাটি নিজের ধর্মীয় সম্প্রদায়ের বাইরের অসুস্থ মানুষেরও যত্ন নেওয়া দেখায়। তিনি শুধু নির্দেশ দেননি, নিজে দেখতে গিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "সহিহ বুখারি ১৩৫৬",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_024",
+      "conceptId": "kids_seerah_funeral_human_dignity",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইহুদি ব্যক্তির মরদেহ সম্পর্কে নবী ﷺ-এর প্রতিক্রিয়া কোন ধারণাটি বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্মান শুধু নিজের সম্প্রদায়ের জন্য"
+        },
+        {
+          "id": "b",
+          "text": "ভিড়ের আকার মানুষের মূল্য ঠিক করে"
+        },
+        {
+          "id": "c",
+          "text": "সম্পদ দেখে মানুষের সঙ্গে আচরণ করতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "প্রত্যেক মানুষের মানবিক মর্যাদা স্বীকার করা উচিত"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তাঁর প্রতিক্রিয়ায় মৃত ব্যক্তির মানুষ হওয়ার মর্যাদা স্বীকৃতি পেয়েছে। সম্মানজনক আচরণের জন্য একই ধর্মের হওয়া জরুরি নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1312",
+          "label": "সহিহ বুখারি ১৩১২",
+          "url": "https://sunnah.com/bukhari:1312"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_025",
+      "conceptId": "kids_seerah_race_aishah",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ-এর সঙ্গে দৌড় প্রতিযোগিতার আয়িশার বর্ণনা আমাদের কী বুঝতে সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর পারিবারিক জীবনে আনন্দময় সঙ্গও ছিল"
+        },
+        {
+          "id": "b",
+          "text": "তিনি কখনো বিনোদনে অংশ নিতেন না"
+        },
+        {
+          "id": "c",
+          "text": "পারিবারিক জীবন শুধু নির্দেশ দেওয়ার বিষয় ছিল"
+        },
+        {
+          "id": "d",
+          "text": "তিনি প্রতিটি বন্ধুত্বপূর্ণ খেলায় জিততে চাইতেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দৌড়ের ঘটনাগুলো পরিবারে একসঙ্গে আনন্দ করার পরিচয় দেয়। ইবাদত ও দায়িত্বের পাশাপাশি উপযুক্ত আনন্দময় সময় কাটানোও অর্থবহ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "2578",
+          "label": "সুনান আবু দাউদ ২৫৭৮",
+          "url": "https://sunnah.com/abudawud:2578"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_026",
+      "conceptId": "kids_seerah_boy_turn_respected",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ছেলেটির পানীয় পাওয়ার পালার ঘটনায় কোন বিষয়টি বিশেষভাবে সুন্দর?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ছেলেটির ইচ্ছা বড়রাই ঠিক করেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "ছোট হলেও তার অনুমতিকে গুরুত্ব দেওয়া হয়েছিল"
+        },
+        {
+          "id": "c",
+          "text": "সবচেয়ে ছোটজনকে চুপ থাকতে হতো"
+        },
+        {
+          "id": "d",
+          "text": "যে দাবি করেছিল তাকেই পানীয় দেওয়া হয়েছিল"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ছেলেটিকে উপেক্ষা না করে নবী ﷺ তার অনুমতি চেয়েছিলেন। পানীয় পাওয়ার ক্রমে তার অবস্থানকে সম্মান করা হয়েছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5620",
+          "label": "সহিহ বুখারি ৫৬২০",
+          "url": "https://sunnah.com/bukhari:5620"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_027",
+      "conceptId": "kids_seerah_correct_family_insult",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আবু যরকে নবী ﷺ-এর সংশোধনের সঙ্গে কোন পার্থক্যটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মতভেদ হলে কারও মা-বাবাকে অপমান করা চলে"
+        },
+        {
+          "id": "b",
+          "text": "সম্মানিত ব্যক্তির কখনো সংশোধন লাগে না"
+        },
+        {
+          "id": "c",
+          "text": "আচরণ সংশোধন আর পরিবারকে অপমান করা আলাদা"
+        },
+        {
+          "id": "d",
+          "text": "রাগ হলে কষ্টদায়ক কথা গ্রহণযোগ্য হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ একজন সম্মানিত সাহাবির কষ্টদায়ক আচরণ সংশোধন করেছিলেন। কাউকে সম্মান করার অর্থ তাঁর প্রতিটি কাজ সংশোধনের ঊর্ধ্বে নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "30",
+          "label": "সহিহ বুখারি ৩০",
+          "url": "https://sunnah.com/bukhari:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_028",
+      "conceptId": "kids_seerah_bond_brotherhood",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আবদুর রহমান ও সাদের ভ্রাতৃত্ব কোন দুই দলকে কাছে আনতে সাহায্য করেছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "প্রতিদ্বন্দ্বী দুটি রাজপরিবার"
+        },
+        {
+          "id": "b",
+          "text": "শুধু একই পরিবারের সফরকারীরা"
+        },
+        {
+          "id": "c",
+          "text": "মদিনা ছাড়ার প্রস্তুতিতে থাকা দুটি দল"
+        },
+        {
+          "id": "d",
+          "text": "মক্কা থেকে আসা মুহাজির ও মদিনার আনসার"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আবদুর রহমান ছিলেন মুহাজির, সাদ মদিনার আনসার। তাঁদের ভ্রাতৃত্ব একই জন্মস্থানের বদলে পারস্পরিক যত্নের মাধ্যমে মানুষকে যুক্ত করেছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2048",
+          "label": "সহিহ বুখারি ২০৪৮",
+          "url": "https://sunnah.com/bukhari:2048"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_029",
+      "conceptId": "kids_seerah_reconcile_quba",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুবার বিরোধে নবী ﷺ-এর প্রতিক্রিয়ার সঙ্গে কোন বর্ণনাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শান্তি ফেরাতে উদ্যোগ নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "বিরোধকে বিনোদন হিসেবে দেখা"
+        },
+        {
+          "id": "c",
+          "text": "চিৎকারের প্রতিযোগিতায় পক্ষ বেছে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সবাইকে লজ্জা দিতে খবর ছড়ানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তিনি মীমাংসার উদ্যোগ নিয়েছিলেন। বিরোধ বাড়ানো বা দর্শক জড়ো করার চেয়ে শান্তি ফিরিয়ে আনা বেশি উপকারী ছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2693",
+          "label": "সহিহ বুখারি ২৬৯৩",
+          "url": "https://sunnah.com/bukhari:2693"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_030",
+      "conceptId": "kids_seerah_repay_well",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "উটের ঋণ শোধের ঘটনার সঙ্গে দৈনন্দিন দায়িত্বের কোন শিক্ষা যুক্ত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ঋণগ্রহীতা নিজেই শোধ অপ্রয়োজনীয় বলতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "পাওনা যত্নের সঙ্গে ফিরিয়ে দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "শুধু বড় ঋণের দিকে খেয়াল রাখতে হয়"
+        },
+        {
+          "id": "d",
+          "text": "ক্ষমা চাইলেই সম্পদ ফেরত দেওয়ার দায় শেষ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনাটি সুন্দরভাবে পাওনা শোধের প্রশংসা করে। দৈনন্দিন শিক্ষা হলো অন্যের সম্পদ ও অধিকারের ব্যাপারে দায়িত্বশীল থাকা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2393",
+          "label": "সহিহ বুখারি ২৩৯৩",
+          "url": "https://sunnah.com/bukhari:2393"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_031",
+      "conceptId": "kids_seerah_market_honesty",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ক্রেতারা দেখতে পান এমন জায়গায় ভেজা খাবার রাখতে নবী ﷺ কেন বলেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যাতে বিক্রেতাকে প্রশ্নের উত্তর দিতে না হয়"
+        },
+        {
+          "id": "b",
+          "text": "যাতে সব ক্রেতা সবচেয়ে বেশি দাম দেয়"
+        },
+        {
+          "id": "c",
+          "text": "যাতে ক্রেতারা এর প্রকৃত অবস্থা জানতে পারে"
+        },
+        {
+          "id": "d",
+          "text": "যাতে সত্যের চেয়ে চেহারা গুরুত্বপূর্ণ হয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ভেজা খাবার লুকিয়ে শুকনা উপরিভাগ দেখিয়ে ক্রেতাদের ভুল বোঝানো উচিত নয়। সততার মধ্যে প্রয়োজনীয় তথ্য স্পষ্ট করাও রয়েছে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_032",
+      "conceptId": "kids_seerah_tailor_invitation",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দর্জির দাওয়াত গ্রহণের সঙ্গে কোন শিক্ষাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু ধনী আয়োজক অতিথির মনোযোগ পাওয়ার যোগ্য"
+        },
+        {
+          "id": "b",
+          "text": "আন্তরিকতার জন্য আকর্ষণীয় বাড়ি দরকার"
+        },
+        {
+          "id": "c",
+          "text": "পেশা দিয়ে মানুষের মানবিক মূল্য ঠিক হয়"
+        },
+        {
+          "id": "d",
+          "text": "সাধারণ পেশার মানুষও সম্মানজনক সঙ্গ পাওয়ার যোগ্য"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ একজন কর্মজীবী মানুষের আতিথেয়তা গ্রহণ করেছিলেন। সাধারণ খাবার বা সাধারণ পেশার জন্য আয়োজককে ছোট করা উচিত নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2092",
+          "label": "সহিহ বুখারি ২০৯২",
+          "url": "https://sunnah.com/bukhari:2092"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_033",
+      "conceptId": "kids_seerah_umm_salamah_advice",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হুদাইবিয়ায় উম্মে সালামার পরামর্শ মানার মাধ্যমে কী প্রকাশ পেয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুবিবেচিত পরামর্শের মূল্য দেওয়া ও নিজে করে দেখানো"
+        },
+        {
+          "id": "b",
+          "text": "শুধু সবচেয়ে জোরে বলা ব্যক্তির পরামর্শ নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সমস্যা কঠিন হলেই পরামর্শ এড়িয়ে চলা"
+        },
+        {
+          "id": "d",
+          "text": "নির্দেশনা ছাড়াই সবার কাজের অপেক্ষা করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ উম্মে সালামার কথা শুনে কাজ করেছিলেন। তাঁর দৃষ্টান্ত সাহাবিদের এগিয়ে যেতে সাহায্য করেছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_034",
+      "conceptId": "kids_seerah_usamah_shared_ride",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "উসামাকে নিয়ে নবী ﷺ-এর গাধায় চড়ার ঘটনার সঙ্গে কোন সিদ্ধান্তটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সম্মানের জন্য সবচেয়ে দামি বাহন দরকার"
+        },
+        {
+          "id": "b",
+          "text": "সম্মানিত নেতাও সাধারণ বাহনে চলতে পারেন"
+        },
+        {
+          "id": "c",
+          "text": "একসঙ্গে বাহনে চড়লে সব সময় মর্যাদা কমে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বড় সফরেই সঙ্গের গুরুত্ব থাকে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বর্ণনায় সাধারণ বাহনে একসঙ্গে যাত্রার কথা আছে। আকর্ষণীয় বাহনের ওপর মানুষের মর্যাদা নির্ভর করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2987",
+          "label": "সহিহ বুখারি ২৯৮৭",
+          "url": "https://sunnah.com/bukhari:2987"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_035",
+      "conceptId": "kids_seerah_ibn_abbas_dua",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইবন আব্বাসের সাহায্যের পর নবী ﷺ আল্লাহর কাছে তাঁর কোন গুণ বিকাশের জন্য বিশেষভাবে চেয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খ্যাতি, মনোযোগ দিয়ে শেখা নয়"
+        },
+        {
+          "id": "b",
+          "text": "সম্পদ, উপকারী জ্ঞান নয়"
+        },
+        {
+          "id": "c",
+          "text": "সঠিক বুঝ, শুধু মানুষের স্বীকৃতি নয়"
+        },
+        {
+          "id": "d",
+          "text": "শক্তি, ভেবেচিন্তে প্রশ্ন করা নয়"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "দোয়াটি ছিল দ্বীন বোঝার জন্য। এতে শুধু প্রশংসা পাওয়া বা জ্ঞানী দেখানোর বদলে অর্থবহ শেখার গুরুত্ব প্রকাশ পায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "143",
+          "label": "সহিহ বুখারি ১৪৩",
+          "url": "https://sunnah.com/bukhari:143"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_036",
+      "conceptId": "kids_seerah_ibn_abbas_prayer_guidance",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নামাজের ঘটনাটি অনুশীলনের মাধ্যমে শেখার কোন দিক দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু নিখুঁত শিক্ষার্থী কোনো কাজে যোগ দিতে পারে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিটি ভুলে সবার সামনে বক্তৃতা দিতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "দূর থেকে দেখা শেখার একমাত্র উপায়"
+        },
+        {
+          "id": "d",
+          "text": "অংশ নেওয়ার সময়ও শিক্ষার্থী নির্দেশনা পেতে পারে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ইবন আব্বাস নামাজে যোগ দিয়ে দাঁড়ানোর জায়গা সম্পর্কে নির্দেশনা পেয়েছিলেন। অনুশীলনের সময় সংশোধনের মাধ্যমেও শেখা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "699",
+          "label": "সহিহ বুখারি ৬৯৯",
+          "url": "https://sunnah.com/bukhari:699"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_037",
+      "conceptId": "kids_seerah_suffah_milk",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সুফফার অধিবাসীদের ডাকা নবী ﷺ-এর আতিথেয়তার কোন দিক দেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সহায়তা দরকার এমন মানুষদের মনে রাখা"
+        },
+        {
+          "id": "b",
+          "text": "উঁচু মর্যাদার মানুষের জন্য উপহার জমিয়ে রাখা"
+        },
+        {
+          "id": "c",
+          "text": "অতিথিদের দামি উপহার আনার অপেক্ষা করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু কোনো পরিশ্রম না হলে ভাগ করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "সহায়তার অভাব ছিল এমন মানুষদেরও দাওয়াত দেওয়া হয়েছিল। বর্ণনাটি উপহার পাওয়ার সঙ্গে অন্যের প্রয়োজন মনে রাখার সম্পর্ক দেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6452",
+          "label": "সহিহ বুখারি ৬৪৫২",
+          "url": "https://sunnah.com/bukhari:6452"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_038",
+      "conceptId": "kids_seerah_simple_mat",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "উমরের বর্ণনায় নবী ﷺ-এর সাধারণ বিশ্রামের জায়গার সঙ্গে কোন শিক্ষাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরামদায়ক বিছানা সব সময় নিষিদ্ধ"
+        },
+        {
+          "id": "b",
+          "text": "বিলাসিতা দিয়ে সম্মান মাপা হয় না"
+        },
+        {
+          "id": "c",
+          "text": "দামি সম্পদ বেশি ঈমানের প্রমাণ"
+        },
+        {
+          "id": "d",
+          "text": "ভালো হতে হলে নিজেকে অস্বস্তিতে রাখতে হয়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "সাধারণ পরিবেশ তাঁর সম্মান কমায়নি। বর্ণনাটি শিশুদের জন্য অস্বস্তিতে থাকা আবশ্যক করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4913",
+          "label": "সহিহ বুখারি ৪৯১৩",
+          "url": "https://sunnah.com/bukhari:4913"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_039",
+      "conceptId": "kids_seerah_khadijah_friends",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "খাদিজার বান্ধবীদের নবী ﷺ-এর উপহার পাঠানোর পেছনে কোন সম্পর্কটি ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উপহার বিনিময় চললেই শুধু বন্ধুত্ব রাখা"
+        },
+        {
+          "id": "b",
+          "text": "জীবন বদলালে পুরোনো সম্পর্ক ভুলে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "প্রিয়জনের বন্ধুদের যত্নের মাধ্যমে তাঁকে স্মরণ করা"
+        },
+        {
+          "id": "d",
+          "text": "সম্পদ দেখে বন্ধু বেছে নেওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তাঁর এই আন্তরিকতায় খাদিজার সঙ্গে স্থায়ী ভালোবাসার সম্পর্কের সম্মান প্রকাশ পেয়েছে। প্রিয়জনকে স্মরণে তাঁর প্রিয় মানুষদের যত্নও থাকতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3818",
+          "label": "সহিহ বুখারি ৩৮১৮",
+          "url": "https://sunnah.com/bukhari:3818"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_040",
+      "conceptId": "kids_seerah_salman_balanced_rights",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সালমানের যে পরামর্শ নবী ﷺ সমর্থন করেছিলেন, তার সঙ্গে কোন বক্তব্যটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অতিরিক্ত ইবাদত করলে নিজের প্রয়োজন আর গুরুত্বপূর্ণ নয়"
+        },
+        {
+          "id": "b",
+          "text": "ভালো রুটিনের সঙ্গে পরিবারের যত্নের সম্পর্ক নেই"
+        },
+        {
+          "id": "c",
+          "text": "বিশ্রাম সব সময় সব দায়িত্বের বদলি হবে"
+        },
+        {
+          "id": "d",
+          "text": "ইবাদত, নিজের প্রয়োজন ও পরিবার—প্রত্যেকের প্রাপ্য আছে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সালমানের পরামর্শে এই হকগুলো একসঙ্গে গুরুত্ব পেয়েছে। অন্যগুলো অবহেলা না করে প্রত্যেকটিকে যথাযথ স্থান দেওয়া নবী ﷺ সমর্থন করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1968",
+          "label": "সহিহ বুখারি ১৯৬৮",
+          "url": "https://sunnah.com/bukhari:1968"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_041",
+      "conceptId": "kids_seerah_repeat_to_understand",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ছোট একটি শিশু তোমার ব্যাখ্যা বুঝতে পারছে না। নবী ﷺ-এর কথা পুনরাবৃত্তির উদ্দেশ্যের সঙ্গে কোন আচরণটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধৈর্য ধরে মূল কথা আবার বলে বুঝেছে কি না দেখা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিবার একই কথা আরও দ্রুত বলা"
+        },
+        {
+          "id": "c",
+          "text": "বুঝেছে কি না না দেখেই দ্রুত শেষ করা"
+        },
+        {
+          "id": "d",
+          "text": "আবার প্রশ্ন মানেই সে চেষ্টা করছে না ভাবা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ধৈর্য ধরে আবার বলা শিক্ষার্থীকে সাহায্য করতে পারে। প্রয়োজনে আরও সহজ শব্দ ব্যবহার বা বড় কারও সাহায্যও নেওয়া যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "95",
+          "label": "সহিহ বুখারি ৯৫",
+          "url": "https://sunnah.com/bukhari:95"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_042",
+      "conceptId": "kids_seerah_letter_seal",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লাসের প্রকল্প নির্দিষ্ট নিয়মে জমা দিতে হবে। চিঠি পাঠাতে নবী ﷺ-এর প্রস্তুতির সঙ্গে কোন কাজটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভাবনা ভালো বলে জমার নিয়ম উপেক্ষা করা"
+        },
+        {
+          "id": "b",
+          "text": "নিয়ম জেনে সে অনুযায়ী প্রকল্প তৈরি করা"
+        },
+        {
+          "id": "c",
+          "text": "প্রকল্পে অন্য কারও নাম নকল করা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সাজানো বর্ডারসহ ফাঁকা পৃষ্ঠা জমা দেওয়া"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "চিঠির সিল একটি ব্যবহারিক শর্ত পূরণ করেছিল। নির্দেশনা দেখে কাজ করা ভেবেচিন্তে প্রস্তুতির উপকারী প্রয়োগ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5872",
+          "label": "সহিহ বুখারি ৫৮৭২",
+          "url": "https://sunnah.com/bukhari:5872"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_043",
+      "conceptId": "kids_seerah_visit_sick_boy",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অন্য ধর্মের এক সহপাঠী অসুস্থ। ইহুদি ছেলেটির প্রতি নবী ﷺ-এর যত্নের সঙ্গে কোন আচরণটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধর্ম বদলানো পর্যন্ত সাহায্য না করা"
+        },
+        {
+          "id": "b",
+          "text": "অসুস্থ হলে বন্ধুত্ব অসম্ভব বলা"
+        },
+        {
+          "id": "c",
+          "text": "খোঁজ নেওয়ার উপযুক্ত উপায় সম্পর্কে মা-বাবার পরামর্শ নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "খোঁজ নেওয়ার সব বার্তা এড়িয়ে যাওয়া"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ধর্মের পার্থক্য পেরিয়েও যত্ন নেওয়া যায়। অসুস্থ কাউকে উপযুক্তভাবে যোগাযোগ বা সহায়তার উপায় বেছে নিতে মা-বাবা সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1356",
+          "label": "সহিহ বুখারি ১৩৫৬",
+          "url": "https://sunnah.com/bukhari:1356"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_044",
+      "conceptId": "kids_seerah_funeral_human_dignity",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ভিন্ন ধর্মের বলে কেউ মৃত ব্যক্তির শবযাত্রা নিয়ে ঠাট্টা করছে। নবী ﷺ-এর প্রতিক্রিয়ার শিক্ষা অনুযায়ী কী করা উচিত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মানিয়ে নিতে ঠাট্টায় যোগ দেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সম্পদ দেখে সম্মান ঠিক করা"
+        },
+        {
+          "id": "c",
+          "text": "তাদের শোককে প্রতিযোগিতা বানানো"
+        },
+        {
+          "id": "d",
+          "text": "শোকাহত মানুষদের সঙ্গে সম্মানজনক আচরণে উৎসাহ দেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ-এর প্রতিক্রিয়া একটি মানবজীবনের মর্যাদা স্বীকার করেছে। ঠাট্টা এড়িয়ে শোকাহতদের সম্মান করে এই শিক্ষা কাজে লাগানো যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1312",
+          "label": "সহিহ বুখারি ১৩১২",
+          "url": "https://sunnah.com/bukhari:1312"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_045",
+      "conceptId": "kids_seerah_race_aishah",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তোমাদের পরিবার নিরাপদ একটি খেলার আয়োজন করেছে। আয়িশার সঙ্গে নবী ﷺ-এর দৌড়ের ঘটনার সঙ্গে কোন মনোভাবটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিকতা ও হাসিখুশি মনে খেলাটি উপভোগ করা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিবার হারাকে ব্যক্তিগত অপমান ভাবা"
+        },
+        {
+          "id": "c",
+          "text": "পরিবারে আনন্দ হতে পারে না বলে না খেলা"
+        },
+        {
+          "id": "d",
+          "text": "জয় নিশ্চিত করতে গোপনে নিয়ম বদলানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "দৌড়ের ঘটনাগুলো আনন্দময় সঙ্গের উদাহরণ। নিরাপদ ও উপযুক্ত বিনোদন একসঙ্গে আন্তরিক সময় কাটানোর একটি উপায় হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "2578",
+          "label": "সুনান আবু দাউদ ২৫৭৮",
+          "url": "https://sunnah.com/abudawud:2578"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_046",
+      "conceptId": "kids_seerah_boy_turn_respected",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সবার মেনে নেওয়া লাইনে ছোট শিশুটির আগে যেতে চাও। ছেলেটির পালার প্রতি নবী ﷺ-এর সম্মান অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বয়সে বড় বলে তাকে সরিয়ে দেবে"
+        },
+        {
+          "id": "b",
+          "text": "ভদ্রভাবে অনুমতি চেয়ে তার উত্তরকে সম্মান করবে"
+        },
+        {
+          "id": "c",
+          "text": "সে কখনো লাইনে ছিল না এমন ভান করবে"
+        },
+        {
+          "id": "d",
+          "text": "অন্যদের বলবে তার পালার গুরুত্ব নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "পানীয়ের ঘটনায় শিশুর অবস্থানকে সম্মান করা হয়েছে। সাধারণ লাইনে শুধু বড় হওয়ার কারণে অন্যের পালা নেওয়া ঠিক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5620",
+          "label": "সহিহ বুখারি ৫৬২০",
+          "url": "https://sunnah.com/bukhari:5620"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_047",
+      "conceptId": "kids_seerah_correct_family_insult",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মতভেদের সময় বন্ধুর মাকে অপমান করেছ। আবু যরকে নবী ﷺ-এর সংশোধনের শিক্ষা অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "রাগের কারণে অপমান ঠিক ছিল বলবে"
+        },
+        {
+          "id": "b",
+          "text": "আরও নিচু স্বরে অপমানটি আবার বলবে"
+        },
+        {
+          "id": "c",
+          "text": "থেমে ক্ষমা চেয়ে পরিবারকে অপমান না করে আলোচনা করবে"
+        },
+        {
+          "id": "d",
+          "text": "অন্যদেরও তার আত্মীয়দের অপমান করতে বলবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সংশোধনটি পরিবারকে অপমান করা ভুল বলে চিহ্নিত করে। দায় নেওয়া মানে ক্ষতি বন্ধ করে পরিস্থিতি ঠিক করার আন্তরিক চেষ্টা করা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "30",
+          "label": "সহিহ বুখারি ৩০",
+          "url": "https://sunnah.com/bukhari:30"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_048",
+      "conceptId": "kids_seerah_bond_brotherhood",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অন্য শহর থেকে নতুন শিক্ষার্থী এসেছে। মদিনার ভ্রাতৃত্বের সহায়তার সঙ্গে কোন কাজটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব অসুবিধা একা সামলাবে বলে আশা করা"
+        },
+        {
+          "id": "b",
+          "text": "উপহার আনলেই শুধু সঙ্গে নেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কাছাকাছি জন্ম হলেই বন্ধুত্ব হয় বলা"
+        },
+        {
+          "id": "d",
+          "text": "ক্লাস খুঁজে পেতে সাহায্য করে তাকে সঙ্গে নেওয়া"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সেই ভ্রাতৃত্বে একজন মুহাজির ও স্থানীয় আনসার যুক্ত হয়েছিলেন। নতুন শিক্ষার্থীকে স্বাগত জানানো সহায়ক বন্ধুত্বের বর্তমান সময়ের সহজ প্রয়োগ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2048",
+          "label": "সহিহ বুখারি ২০৪৮",
+          "url": "https://sunnah.com/bukhari:2048"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_049",
+      "conceptId": "kids_seerah_reconcile_quba",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দুই সহপাঠী ঝগড়ার সময় জিনিস ছুড়তে শুরু করেছে। শিশু হিসেবে নিরাপদে শান্তির জন্য কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিরাপদে সরে বিশ্বস্ত বড় কাউকে ডাকবে"
+        },
+        {
+          "id": "b",
+          "text": "মাঝখানে গিয়ে তাদের হাত ধরবে"
+        },
+        {
+          "id": "c",
+          "text": "এক পক্ষকে উৎসাহ দিতে বন্ধু জড়ো করবে"
+        },
+        {
+          "id": "d",
+          "text": "মারামারির ভিডিও করে ছড়িয়ে দেবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ কুবায় শান্তি চেয়েছিলেন। বিপজ্জনক মারামারিতে ঢোকার বদলে বড়দের সাহায্য এনে শিশু শান্তির পক্ষে কাজ করতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2693",
+          "label": "সহিহ বুখারি ২৬৯৩",
+          "url": "https://sunnah.com/bukhari:2693"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_050",
+      "conceptId": "kids_seerah_repay_well",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধুর বই ধার নিয়েছ। উটের ঋণ শোধের ঘটনায় প্রশংসিত আচরণ অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বন্ধু কয়েকবার না চাওয়া পর্যন্ত রেখে দেবে"
+        },
+        {
+          "id": "b",
+          "text": "সময়মতো ফেরত দিয়ে কোনো ক্ষতি হলে দায় নেবে"
+        },
+        {
+          "id": "c",
+          "text": "অনুমতি ছাড়াই অন্য বই ফেরত দেবে"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধুত্বের কারণে বইটি নিজের ভাববে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "দায়িত্বশীলভাবে ধার নিলে মালিকের অধিকার রক্ষা হয়। যত্ন করে বই ফেরত দেওয়া দৈনন্দিন প্রয়োগ; অতিরিক্ত উপহার দেওয়া বাধ্যতামূলক নয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2393",
+          "label": "সহিহ বুখারি ২৩৯৩",
+          "url": "https://sunnah.com/bukhari:2393"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_051",
+      "conceptId": "kids_seerah_market_honesty",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "অন্যের সঙ্গে বদল করতে চাও এমন খেলনার ভেতরের অংশ ভাঙা। খাবার বিক্রেতাকে নবী ﷺ-এর সংশোধন অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "স্টিকার দিয়ে ক্ষতি লুকাবে"
+        },
+        {
+          "id": "b",
+          "text": "বদল শেষ হওয়ার পরেই ক্ষতির কথা বলবে"
+        },
+        {
+          "id": "c",
+          "text": "সম্মত হওয়ার আগে অন্যজনকে ক্ষতির কথা জানাবে"
+        },
+        {
+          "id": "d",
+          "text": "পরিষ্কার দেখায় বলে পুরোপুরি ঠিক আছে বলবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "বিক্রেতাকে খাবারের অবস্থা দৃশ্যমান করতে বলা হয়েছিল। একইভাবে সৎ বিনিময়ে জানা ত্রুটি সম্পর্কে জানানো দরকার।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "102",
+          "label": "সহিহ মুসলিম ১০২",
+          "url": "https://sunnah.com/muslim:102"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_052",
+      "conceptId": "kids_seerah_tailor_invitation",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পরিবারের অনুমতিতে বেড়াতে গিয়ে সাধারণ খাবার পেলে দর্জির আতিথেয়তা গ্রহণের ঘটনাটি থেকে কোন আচরণ শিখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ধনী বন্ধুর বাড়ির সঙ্গে তুলনা করে ছোট করা"
+        },
+        {
+          "id": "b",
+          "text": "অন্যদের বলা খাবার খুব সাধারণ ছিল"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সবচেয়ে ধনী অতিথিদের গুরুত্ব দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "আয়োজককে ধন্যবাদ দিয়ে সম্মানজনক আচরণ করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দর্জির আতিথেয়তা আন্তরিকভাবে গ্রহণ করা হয়েছিল। দামি খাবার বা আকর্ষণীয় বাড়ির ওপর আয়োজকের প্রতি সম্মান নির্ভর করে না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2092",
+          "label": "সহিহ বুখারি ২০৯২",
+          "url": "https://sunnah.com/bukhari:2092"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_053",
+      "conceptId": "kids_seerah_umm_salamah_advice",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দলের কাজ আটকে গেছে, একজন যুক্তিসংগত পরামর্শ দিল। উম্মে সালামার প্রতি নবী ﷺ-এর প্রতিক্রিয়া অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরামর্শটি ভেবে দেখে কাজে লাগাতে সাহায্য করবে"
+        },
+        {
+          "id": "b",
+          "text": "দলনেতা হওয়ার কারণে তা ফিরিয়ে দেবে"
+        },
+        {
+          "id": "c",
+          "text": "একই কথা আরও জোরে বলা কারও অপেক্ষা করবে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু নিজের প্রথমে ভাবা প্রস্তাব গ্রহণ করবে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "উপকারী পরামর্শ শোনা নেতৃত্বের সঙ্গে মানানসই। হুদাইবিয়ার ঘটনাটি নিজে কাজ করে অন্যদের এগিয়ে নেওয়ার উদাহরণও দেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_054",
+      "conceptId": "kids_seerah_usamah_shared_ride",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সাধারণ পারিবারিক বাহনে আসায় একটি শিশুকে খেপানো হচ্ছে। উসামার সঙ্গে নবী ﷺ-এর যাত্রা থেকে কোন শিক্ষা মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বাহন দেখেই শিশুটির মূল্য ঠিক করা"
+        },
+        {
+          "id": "b",
+          "text": "বাহন যেমনই হোক, শিশুটিকে সম্মান করা"
+        },
+        {
+          "id": "c",
+          "text": "অন্য শিশুদের খুশি করতে খেপানোয় যোগ দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বন্ধুত্বের জন্য দামি বাহন চাই বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী ﷺ সাধারণ গাধার পিঠে একজনকে সঙ্গে নিয়ে যাত্রা করেছিলেন। আকর্ষণীয় বাহন মানুষের মর্যাদা ঠিক করে—এমন ধারণা দূর করতে ঘটনাটি সাহায্য করে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2987",
+          "label": "সহিহ বুখারি ২৯৮৭",
+          "url": "https://sunnah.com/bukhari:2987"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_055",
+      "conceptId": "kids_seerah_ibn_abbas_dua",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ছোট একটি শিশুকে ইসলাম শিখতে উৎসাহ দিতে চাও। ইবন আব্বাসের জন্য নবী ﷺ-এর দোয়ার সঙ্গে কোন কাজটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যরা প্রশংসা করলেই শেখার দাম আছে বলা"
+        },
+        {
+          "id": "b",
+          "text": "এক দোয়াই সব পড়ার বিকল্প বলে নিশ্চয়তা দেওয়া"
+        },
+        {
+          "id": "c",
+          "text": "তার বুঝের জন্য আল্লাহর কাছে চেয়ে শেখায় সাহায্য করা"
+        },
+        {
+          "id": "d",
+          "text": "অন্য শিশুর সঙ্গে কঠোরভাবে তুলনা করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ ইবন আব্বাসের বুঝের জন্য আল্লাহর কাছে চেয়েছিলেন। দোয়া, ধৈর্য ও বাস্তব সহায়তা দিয়ে আমরাও শেখায় উৎসাহ দিতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "143",
+          "label": "সহিহ বুখারি ১৪৩",
+          "url": "https://sunnah.com/bukhari:143"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_056",
+      "conceptId": "kids_seerah_ibn_abbas_prayer_guidance",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বিশ্বস্ত শিক্ষকের সঙ্গে নামাজ অনুশীলনে ভুল হয়েছে। ইবন আব্বাসের শেখার অভিজ্ঞতা অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এক ভুলেই সব অগ্রগতি শেষ ভাববে"
+        },
+        {
+          "id": "b",
+          "text": "নিখুঁত দেখাতে প্রতিটি প্রশ্ন লুকাবে"
+        },
+        {
+          "id": "c",
+          "text": "সংশোধন মানেই তোমাকে চায় না ভাববে"
+        },
+        {
+          "id": "d",
+          "text": "স্পষ্ট নির্দেশনা গ্রহণ করে শেখা চালিয়ে যাবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ-এর সঙ্গে নামাজ পড়ার সময় ইবন আব্বাস নির্দেশনা পেয়েছিলেন। যত্নশীল শিক্ষকের সহায়তায় ভুলও শেখার অংশ হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "699",
+          "label": "সহিহ বুখারি ৬৯৯",
+          "url": "https://sunnah.com/bukhari:699"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_057",
+      "conceptId": "kids_seerah_suffah_milk",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বড় কেউ তোমাকে দলের নাশতা সাজাতে সাহায্য করছেন। সুফফার অধিবাসীদের ডাকতে নবী ﷺ-এর নির্দেশের সঙ্গে কোন কাজটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যারা বাদ পড়তে পারে, তাদেরও যুক্ত করতে সাহায্য করা"
+        },
+        {
+          "id": "b",
+          "text": "সবকিছু শুধু জনপ্রিয় শিশুদের জন্য রাখা"
+        },
+        {
+          "id": "c",
+          "text": "আগে সবাইকে তোমার জন্য উপহার আনতে বলা"
+        },
+        {
+          "id": "d",
+          "text": "দল চলে যাওয়া পর্যন্ত নাশতা লুকানো"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ সহায়তা দরকার এমন মানুষদের মনে রেখেছিলেন। বড়দের নির্দেশনায় উপযুক্তভাবে ভাগ করে নেওয়া সেই যত্নের সহজ প্রয়োগ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6452",
+          "label": "সহিহ বুখারি ৬৪৫২",
+          "url": "https://sunnah.com/bukhari:6452"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_058",
+      "conceptId": "kids_seerah_simple_mat",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু তার সাধারণ শোবার ঘর নিয়ে লজ্জা পাচ্ছে। নবী ﷺ-এর সাধারণ পরিবেশ থেকে কোন আশ্বাসটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সুন্দর ঘর সব সময় বেশি ঈমানের প্রমাণ"
+        },
+        {
+          "id": "b",
+          "text": "দামি আসবাব দিয়ে মানুষের মূল্য মাপা হয় না"
+        },
+        {
+          "id": "c",
+          "text": "সাধারণ আসবাবে মানুষ বন্ধুত্বের কম যোগ্য হয়"
+        },
+        {
+          "id": "d",
+          "text": "আরামদায়ক প্রতিটি জিনিস বাদ দিতেই হবে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বিলাসিতা দিয়ে নবী ﷺ-এর সম্মান মাপা হতো না। আরাম বা প্রয়োজনীয় সহায়তাকে ভুল না ভেবেও সাধারণ বাড়িকে সম্মান করা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4913",
+          "label": "সহিহ বুখারি ৪৯১৩",
+          "url": "https://sunnah.com/bukhari:4913"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_059",
+      "conceptId": "kids_seerah_khadijah_friends",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মা-বাবা পুরোনো এক পারিবারিক বন্ধুকে ভালোবাসায় স্মরণ করছেন। খাদিজার বান্ধবীদের প্রতি নবী ﷺ-এর যত্নের সঙ্গে কোন কাজটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পুরোনো বন্ধুত্বের আর গুরুত্ব নেই বলা"
+        },
+        {
+          "id": "b",
+          "text": "পরামর্শ ছাড়াই গোপনে অপরিচিতদের সঙ্গে যোগাযোগ করা"
+        },
+        {
+          "id": "c",
+          "text": "একসঙ্গে আন্তরিক বার্তা পাঠানোর বিষয়ে মা-বাবাকে জিজ্ঞেস করা"
+        },
+        {
+          "id": "d",
+          "text": "ফিরতি উপহার পেলেই আন্তরিকতা উপকারী ভাবা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "খাদিজার বান্ধবীদের যত্নের মাধ্যমে তিনি খাদিজাকে স্মরণ করতেন। পরিবারের নির্দেশনায় আমরাও আন্তরিক সম্পর্ক ধরে রাখতে সাহায্য করতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3818",
+          "label": "সহিহ বুখারি ৩৮১৮",
+          "url": "https://sunnah.com/bukhari:3818"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_seerah_060",
+      "conceptId": "kids_seerah_salman_balanced_rights",
+      "categoryId": "seerah",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বাড়তি ইবাদতের পরিকল্পনা করছ, ঘুম ও পরিবারের দায়িত্বও আছে। নবী ﷺ-এর সমর্থিত পরামর্শ অনুযায়ী কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নিষ্ঠা প্রমাণ করতে প্রতি রাতে ঘুম বাদ দেবে"
+        },
+        {
+          "id": "b",
+          "text": "পরিবারের দায়িত্ব সব সময় গুরুত্বহীন ভাববে"
+        },
+        {
+          "id": "c",
+          "text": "পরিকল্পনা এড়াতে সব ইবাদত ছেড়ে দেবে"
+        },
+        {
+          "id": "d",
+          "text": "ভারসাম্যপূর্ণ রুটিন করতে বড় কারও সাহায্য চাইবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সালমানের পরামর্শে প্রত্যেকের হক যথাযথভাবে দেওয়া হয়েছে। বড় কেউ শিশুর ইবাদত, উপযুক্ত বিশ্রাম ও পরিবারের দায়িত্ব মিলিয়ে নিতে সাহায্য করতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1968",
+          "label": "সহিহ বুখারি ১৯৬৮",
+          "url": "https://sunnah.com/bukhari:1968"
+        }
+      ]
+    }
+  ]
+}

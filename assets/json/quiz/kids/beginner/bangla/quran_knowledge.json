@@ -1,0 +1,2305 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "quran_knowledge",
+  "title": "কুরআন পরিচিতি",
+  "description": "ছোট্ট মুসলিম → প্রাথমিক স্তর। কুরআন নাজিল হওয়া, পরিচিত সূরা, আয়াত, তিলাওয়াতের অভ্যাস, শেখা ও দৈনন্দিন শিক্ষা নিয়ে ছোট প্রশ্ন। প্রায় ৬–৯ বছরের শিশুদের কথা ভেবে লেখা; প্রয়োজনে বড় কেউ প্রশ্ন পড়ে শোনাতে পারেন। সব প্রশ্ন শিশুদের প্রাথমিক স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। শিশুদের জন্য কুরআনের প্রাথমিক পরিচয়, ছোট বাক্য ও সরল উদাহরণ ব্যবহার করা হয়েছে। বয়স ও স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত আয়াত, হাদিস ও কুরআন-পরিচিতির সূত্র মিলিয়ে দেখা হয়েছে। প্রশ্ন ও ব্যাখ্যার এই বাংলা রূপ শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; আয়াত বা হাদিসের হুবহু অনুবাদ নয়। দৈনন্দিন উদাহরণে সূত্রের মূলনীতি বোঝানো হয়েছে। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_quran_knowledge_001",
+      "conceptId": "kids_quran_revealed_to_muhammad",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন নবীর কাছে কুরআন নাজিল হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নবী মুহাম্মদ ﷺ"
+        },
+        {
+          "id": "b",
+          "text": "নবী মুসা"
+        },
+        {
+          "id": "c",
+          "text": "নবী নূহ"
+        },
+        {
+          "id": "d",
+          "text": "নবী ইবরাহিম"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহ নবী মুহাম্মদ ﷺ-এর কাছে কুরআন নাজিল করেছেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "কুরআন ৪৭:২",
+          "url": "https://quran.com/47/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_002",
+      "conceptId": "kids_quran_arabic_language",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন কোন ভাষায় নাজিল হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইংরেজি"
+        },
+        {
+          "id": "b",
+          "text": "আরবি"
+        },
+        {
+          "id": "c",
+          "text": "বাংলা"
+        },
+        {
+          "id": "d",
+          "text": "তুর্কি"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন আরবি ভাষায় নাজিল হয়েছে। অনুবাদ আমাদের কুরআনের অর্থ বুঝতে সাহায্য করে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_003",
+      "conceptId": "kids_quran_jibril",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন ফেরেশতা নবী মুহাম্মদ ﷺ-এর কাছে কুরআন নিয়ে এসেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মিকাইল"
+        },
+        {
+          "id": "b",
+          "text": "ইসরাফিল"
+        },
+        {
+          "id": "c",
+          "text": "জিবরিল"
+        },
+        {
+          "id": "d",
+          "text": "মৃত্যুর ফেরেশতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জিবরিলকে ইংরেজিতে গ্যাব্রিয়েলও বলা হয়। তিনি আল্লাহর আদেশে ওহি নিয়ে এসেছিলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 26,
+          "ayahs": "192-194",
+          "label": "কুরআন ২৬:১৯২-১৯৪",
+          "url": "https://quran.com/26/192-194"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_004",
+      "conceptId": "kids_quran_surah_chapter",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের একটি অধ্যায়কে কী বলা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাত"
+        },
+        {
+          "id": "b",
+          "text": "দোয়া"
+        },
+        {
+          "id": "c",
+          "text": "রোজা"
+        },
+        {
+          "id": "d",
+          "text": "সূরা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনের একটি অধ্যায়কে সূরা বলা হয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরার তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_005",
+      "conceptId": "kids_quran_ayah_verse",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূরার প্রতিটি নম্বর দেওয়া অংশকে কী বলা হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াত"
+        },
+        {
+          "id": "b",
+          "text": "সূরা"
+        },
+        {
+          "id": "c",
+          "text": "পারা"
+        },
+        {
+          "id": "d",
+          "text": "রাকাত"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াত হলো সূরার একটি নির্দিষ্ট অংশ। সূরার আয়াতগুলোর নম্বর থাকে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরার তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_006",
+      "conceptId": "kids_quran_fatihah_first",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের সূরাগুলোর ক্রমে সবার আগে কোন সূরা আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফালাক"
+        },
+        {
+          "id": "b",
+          "text": "আল-ফাতিহা"
+        },
+        {
+          "id": "c",
+          "text": "আল-কাউসার"
+        },
+        {
+          "id": "d",
+          "text": "আন-নাস"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনের শুরুতে সূরা আল-ফাতিহা আছে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আল-ফাতিহা, ১ নম্বর সূরা",
+          "url": "https://quran.com/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_007",
+      "conceptId": "kids_quran_nas_last",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের সূরাগুলোর ক্রমে সবার শেষে কোন সূরা আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-ফাতিহা"
+        },
+        {
+          "id": "b",
+          "text": "আল-আসর"
+        },
+        {
+          "id": "c",
+          "text": "আন-নাস"
+        },
+        {
+          "id": "d",
+          "text": "আল-ফালাক"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আন-নাস কুরআনের ১১৪ নম্বর ও শেষ সূরা।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আন-নাস, ১১৪ নম্বর সূরা",
+          "url": "https://quran.com/114"
+        },
+        {
+          "type": "web",
+          "label": "কুরআনিক অ্যারাবিক করপাস — কুরআনের বিন্যাস ও আয়াতের নম্বর",
+          "url": "https://corpus.quran.com/documentation/versemarks.jsp"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_008",
+      "conceptId": "kids_quran_kawthar_three_ayahs",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূরা আল-কাউসারে কতটি আয়াত আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পাঁচটি"
+        },
+        {
+          "id": "b",
+          "text": "ছয়টি"
+        },
+        {
+          "id": "c",
+          "text": "সাতটি"
+        },
+        {
+          "id": "d",
+          "text": "তিনটি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সূরা আল-কাউসারে তিনটি আয়াত আছে। এটি একটি ছোট সূরা।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আল-কাউসার, তিন আয়াত",
+          "url": "https://quran.com/108"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_009",
+      "conceptId": "kids_quran_falaq_refuge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূরা আল-ফালাকে আমরা কার কাছে আশ্রয় চাই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর কাছে"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যের কাছে"
+        },
+        {
+          "id": "c",
+          "text": "চাঁদের কাছে"
+        },
+        {
+          "id": "d",
+          "text": "তারার কাছে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল-ফালাক আমাদের ভোরের রব আল্লাহর কাছে আশ্রয় চাইতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1",
+          "label": "কুরআন ১১৩:১",
+          "url": "https://quran.com/113/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_010",
+      "conceptId": "kids_quran_asr_truth_patience",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূরা আল-আসরে কোন দুটি ভালো গুণের শিক্ষা আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বড়াই করা ও তাড়াহুড়া করা"
+        },
+        {
+          "id": "b",
+          "text": "সত্য বলা ও ধৈর্য ধরা"
+        },
+        {
+          "id": "c",
+          "text": "মিথ্যা বলা ও বিরক্ত করা"
+        },
+        {
+          "id": "d",
+          "text": "রাগ করা ও লোভ করা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল-আসর ঈমান, ভালো কাজ এবং একে অন্যকে সত্য ও ধৈর্যের কথা মনে করিয়ে দিতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "কুরআন ১০৩:১-৩",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_011",
+      "conceptId": "kids_quran_listen_attentively",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শিক্ষক কুরআন তিলাওয়াত করলে আমরা কীভাবে শুনব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শিক্ষকের কথা ছাপিয়ে কথা বলব"
+        },
+        {
+          "id": "b",
+          "text": "হইচই করে খেলা শুরু করব"
+        },
+        {
+          "id": "c",
+          "text": "মন দিয়ে শুনব"
+        },
+        {
+          "id": "d",
+          "text": "পরের শব্দটি চিৎকার করে বলব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআন মন দিয়ে শুনতে শেখায়। তাই ক্লাসে আমরা চুপ থেকে মনোযোগ দিয়ে শুনি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "কুরআন ৭:২০৪",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_012",
+      "conceptId": "kids_quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন আমাদের কীভাবে তিলাওয়াত করতে শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যত দ্রুত সম্ভব"
+        },
+        {
+          "id": "b",
+          "text": "কঠিন শব্দ বাদ দিয়ে"
+        },
+        {
+          "id": "c",
+          "text": "শব্দগুলো এলোমেলো করে"
+        },
+        {
+          "id": "d",
+          "text": "ধীরে-সুস্থে ও স্পষ্টভাবে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন ধীরস্থিরভাবে তিলাওয়াত করতে শেখায়। তাড়াহুড়া না করে প্রতিটি শব্দ যত্ন নিয়ে পড়ি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "কুরআন ৭৩:৪",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_013",
+      "conceptId": "kids_quran_seek_refuge_before",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন তিলাওয়াতের আগে শয়তান থেকে বাঁচতে আমরা কার আশ্রয় চাই?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর আশ্রয়"
+        },
+        {
+          "id": "b",
+          "text": "বন্ধুর আশ্রয়"
+        },
+        {
+          "id": "c",
+          "text": "শিক্ষকের আশ্রয়"
+        },
+        {
+          "id": "d",
+          "text": "নিজের আশ্রয়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তিলাওয়াতের আগে আমরা শয়তান থেকে আল্লাহর আশ্রয় চাই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "কুরআন ১৬:৯৮",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_014",
+      "conceptId": "kids_quran_reflect_meanings",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন পড়ার পাশাপাশি আমরা কী বোঝার চেষ্টা করব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু মলাটের রং"
+        },
+        {
+          "id": "b",
+          "text": "এর অর্থ"
+        },
+        {
+          "id": "c",
+          "text": "শুধু পাতার আকার"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বইটির ওজন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল্লাহ কুরআন দিয়েছেন, যেন আমরা এর আয়াত নিয়ে ভাবি এবং শিক্ষা নিই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_015",
+      "conceptId": "kids_quran_review_memorization",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শেখা কুরআন মনে রাখতে কী সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আর কখনো না পড়া"
+        },
+        {
+          "id": "b",
+          "text": "শুধু পাতা গোনা"
+        },
+        {
+          "id": "c",
+          "text": "নিয়মিত ঝালিয়ে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সব অনুশীলন এড়িয়ে চলা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ কুরআনের সঙ্গে নিয়মিত থাকতে উৎসাহ দিয়েছেন। ঝালিয়ে নিলে শেখা পড়া মনে থাকে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5033",
+          "label": "সহিহ বুখারি ৫০৩৩",
+          "url": "https://sunnah.com/bukhari:5033"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_016",
+      "conceptId": "kids_quran_learn_and_teach",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআন নিয়ে কোন দুটি কাজের প্রশংসা নবী ﷺ একসঙ্গে করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "গোনা ও মাপা"
+        },
+        {
+          "id": "b",
+          "text": "প্রতিযোগিতা ও বড়াই করা"
+        },
+        {
+          "id": "c",
+          "text": "সাজানো ও স্তূপ করে রাখা"
+        },
+        {
+          "id": "d",
+          "text": "শেখা ও শেখানো"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "যারা কুরআন শেখে ও অন্যকে শেখায়, নবী ﷺ তাদের প্রশংসা করেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "সহিহ বুখারি ৫০২৭",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_017",
+      "conceptId": "kids_quran_effort_encouraged",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "একজনের কুরআন পড়তে কষ্ট হয়, তবু তিনি চেষ্টা করেন। হাদিসে তাঁর জন্য কী সুসংবাদ আছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দুটি পুরস্কার"
+        },
+        {
+          "id": "b",
+          "text": "কোনো পুরস্কারই নেই"
+        },
+        {
+          "id": "c",
+          "text": "শুধু দ্রুত পড়লে পুরস্কার"
+        },
+        {
+          "id": "d",
+          "text": "শুধু সুন্দর কণ্ঠ হলে পুরস্কার"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কষ্ট করে কুরআন পড়া ব্যক্তির জন্য নবী ﷺ দুটি পুরস্কারের সুসংবাদ দিয়েছেন। যত্ন নিয়ে শেখা চালিয়ে যাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "798a",
+          "label": "সহিহ মুসলিম ৭৯৮a",
+          "url": "https://sunnah.com/muslim:798a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_018",
+      "conceptId": "kids_quran_ramadan_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন মাসে কুরআন নাজিল হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুহাররম"
+        },
+        {
+          "id": "b",
+          "text": "রমজান"
+        },
+        {
+          "id": "c",
+          "text": "শাওয়াল"
+        },
+        {
+          "id": "d",
+          "text": "রজব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনেই বলা হয়েছে, রমজান মাসে কুরআন নাজিল হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_019",
+      "conceptId": "kids_quran_yusuf_story",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সূরা ইউসুফে কোন নবীর ঘটনা বলা হয়েছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নবী মুসা"
+        },
+        {
+          "id": "b",
+          "text": "নবী নূহ"
+        },
+        {
+          "id": "c",
+          "text": "নবী ইউসুফ"
+        },
+        {
+          "id": "d",
+          "text": "নবী ইউনুস"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা ইউসুফে নবী ইউসুফের ঘটনা বলা হয়েছে। ইংরেজিতে তাঁকে জোসেফও বলা হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "কুরআন ১২:৪",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_020",
+      "conceptId": "kids_quran_live_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন আচরণটি কুরআনের শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যের পালা কেড়ে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "বিপদে পড়া কাউকে দেখে হাসা"
+        },
+        {
+          "id": "c",
+          "text": "মজা করে অন্যকে কষ্ট দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সবার সঙ্গে ন্যায্য ও ভালো ব্যবহার করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন আমাদের ন্যায্য ও ভালো ব্যবহার করতে বলে। এর শিক্ষা আমাদের কাজে পথ দেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "90",
+          "label": "কুরআন ১৬:৯০",
+          "url": "https://quran.com/16/90"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_021",
+      "conceptId": "kids_quran_revealed_to_muhammad",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী মুহাম্মদ ﷺ-এর কাছে কুরআন নাজিল হয়েছে—এর মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি এটি আল্লাহর কাছ থেকে পেয়েছেন"
+        },
+        {
+          "id": "b",
+          "text": "তিনি নিজের ভাবনা থেকে লিখেছেন"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর বন্ধুরা এর কথাগুলো বানিয়েছেন"
+        },
+        {
+          "id": "d",
+          "text": "তিনি গল্পের বই থেকে নকল করেছেন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কুরআন আল্লাহর পাঠানো ওহি। নবী ﷺ নিজের থেকে এই বই বানাননি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "কুরআন ৪৭:২",
+          "url": "https://quran.com/47/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_022",
+      "conceptId": "kids_quran_arabic_language",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনের বাংলা বা ইংরেজি অনুবাদ আমাদের কী করতে সাহায্য করে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরবির বদলে নতুন ওহি আনতে"
+        },
+        {
+          "id": "b",
+          "text": "আরবি কুরআনের অর্থ বুঝতে"
+        },
+        {
+          "id": "c",
+          "text": "কুরআনের শিক্ষা বদলে দিতে"
+        },
+        {
+          "id": "d",
+          "text": "কুরআনে বাড়তি আয়াত বানিয়ে যোগ করতে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "অনুবাদ অন্য ভাষায় কুরআনের অর্থ বোঝায়। কুরআন যে ভাষায় নাজিল হয়েছে, তা আরবি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_023",
+      "conceptId": "kids_quran_jibril",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "জিবরিল নবী ﷺ-এর কাছে কুরআন নিয়ে এসেছিলেন। এই বার্তা কার কাছ থেকে এসেছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জিবরিলের নিজের ভাবনা থেকে"
+        },
+        {
+          "id": "b",
+          "text": "নবীর প্রতিবেশীদের কাছ থেকে"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহর কাছ থেকে"
+        },
+        {
+          "id": "d",
+          "text": "একদল কবির কাছ থেকে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জিবরিল আল্লাহর ওহি নিয়ে এসেছিলেন। তিনি কুরআনের রচয়িতা নন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 26,
+          "ayahs": "192-194",
+          "label": "কুরআন ২৬:১৯২-১৯৪",
+          "url": "https://quran.com/26/192-194"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_024",
+      "conceptId": "kids_quran_surah_chapter",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন শব্দটি দিয়ে কুরআনের অধ্যায় বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাত"
+        },
+        {
+          "id": "b",
+          "text": "সাওম"
+        },
+        {
+          "id": "c",
+          "text": "সাদাকাহ"
+        },
+        {
+          "id": "d",
+          "text": "সূরা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনের অধ্যায়গুলোকে সূরা বলা হয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরার তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_025",
+      "conceptId": "kids_quran_ayah_verse",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সূরার ভেতরে নম্বর দিয়ে আলাদা করা অংশগুলোর নাম কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়াত"
+        },
+        {
+          "id": "b",
+          "text": "রাকাত"
+        },
+        {
+          "id": "c",
+          "text": "রোজার দিন"
+        },
+        {
+          "id": "d",
+          "text": "নামাজের সময়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়াতগুলো মিলে একটি সূরা হয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরার তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_026",
+      "conceptId": "kids_quran_fatihah_first",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল-ফাতিহাকে শুরুর সূরা বলা হয়। কুরআনে এর জায়গা কোথায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একেবারে শেষে"
+        },
+        {
+          "id": "b",
+          "text": "একেবারে শুরুতে"
+        },
+        {
+          "id": "c",
+          "text": "আন-নাসের পরে"
+        },
+        {
+          "id": "d",
+          "text": "কুরআনের বাইরে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল-ফাতিহা দিয়ে কুরআন শুরু হয়। এখানে বইয়ের ক্রম বোঝানো হচ্ছে, নাজিল হওয়ার ক্রম নয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আল-ফাতিহা, ১ নম্বর সূরা",
+          "url": "https://quran.com/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_027",
+      "conceptId": "kids_quran_nas_last",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আন-নাসকে শেষ সূরা বললে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এটি নাজিল হওয়ার মাস"
+        },
+        {
+          "id": "b",
+          "text": "সবার আগে নাজিল হওয়া শব্দ"
+        },
+        {
+          "id": "c",
+          "text": "কুরআনের সূরাগুলোর ক্রমে এর জায়গা"
+        },
+        {
+          "id": "d",
+          "text": "শুধু এই সূরাই আমরা শিখতে পারি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "কুরআনের সূরাগুলোর ক্রমে আন-নাস সবার শেষে আছে। এর অর্থ এই নয় যে এটি সবার শেষে নাজিল হয়েছে।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আন-নাস, ১১৪ নম্বর সূরা",
+          "url": "https://quran.com/114"
+        },
+        {
+          "type": "web",
+          "label": "কুরআনিক অ্যারাবিক করপাস — কুরআনের বিন্যাস ও আয়াতের নম্বর",
+          "url": "https://corpus.quran.com/documentation/versemarks.jsp"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_028",
+      "conceptId": "kids_quran_kawthar_three_ayahs",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সূরা আল-কাউসার সম্পর্কে কোন কথাটি ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাত আয়াতের একটি সূরা"
+        },
+        {
+          "id": "b",
+          "text": "কুরআনের বাইরে থাকা একটি বই"
+        },
+        {
+          "id": "c",
+          "text": "পুরো কুরআনের আরেকটি নাম"
+        },
+        {
+          "id": "d",
+          "text": "তিন আয়াতের একটি ছোট সূরা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল-কাউসার কুরআনের তিন আয়াতের একটি সূরা। তাই এটি ছোট।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আল-কাউসার, তিন আয়াত",
+          "url": "https://quran.com/108"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_029",
+      "conceptId": "kids_quran_falaq_refuge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আল্লাহর আশ্রয় চাওয়ার মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর কাছে নিরাপত্তা চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহর কাছে নতুন নাম চাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "কত পাতা পড়েছি তা গোনা"
+        },
+        {
+          "id": "d",
+          "text": "কীভাবে আরও জোরে পড়ব তা ঠিক করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল্লাহর আশ্রয় চাওয়া মানে নিরাপত্তার জন্য তাঁর দিকে ফিরে যাওয়া।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1",
+          "label": "কুরআন ১১৩:১",
+          "url": "https://quran.com/113/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_030",
+      "conceptId": "kids_quran_asr_truth_patience",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন উপদেশটি সূরা আল-আসরের শিক্ষার সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চিৎকার করে সব তর্কে জেতো"
+        },
+        {
+          "id": "b",
+          "text": "সত্য ও ধৈর্যের পথে একে অন্যকে সাহায্য করো"
+        },
+        {
+          "id": "c",
+          "text": "ভালো কাজের কোনো দাম নেই ভাবো"
+        },
+        {
+          "id": "d",
+          "text": "বলো, শুধু দ্রুত শিখলেই ভালো কাজ করা যায়"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আল-আসর ঈমান ও ভালো কাজের পাশাপাশি একে অন্যকে সত্য ও ধৈর্যের কথা মনে করিয়ে দিতে শেখায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "কুরআন ১০৩:১-৩",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_031",
+      "conceptId": "kids_quran_listen_attentively",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ক্লাসে কুরআন তিলাওয়াতের সময় কথা বলা থেকে কেন বিরত থাকব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "না শুনেই ক্লাস শেষ করতে"
+        },
+        {
+          "id": "b",
+          "text": "শিক্ষককে আরও দ্রুত পড়াতে"
+        },
+        {
+          "id": "c",
+          "text": "যা পড়া হচ্ছে, তা মন দিয়ে শুনতে"
+        },
+        {
+          "id": "d",
+          "text": "অন্য শিশুদের শেখা বন্ধ করতে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মন দিয়ে শুনলে তিলাওয়াতের প্রতি যত্ন দেখানো হয় এবং আমরা পড়া অনুসরণ করতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "কুরআন ৭:২০৪",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_032",
+      "conceptId": "kids_quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন পাঠক ধীরস্থির তিলাওয়াতের শিক্ষা মেনে চলছে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যে যত্ন না নিয়ে দৌড়ের মতো পড়ে"
+        },
+        {
+          "id": "b",
+          "text": "যে সব কঠিন শব্দ বাদ দেয়"
+        },
+        {
+          "id": "c",
+          "text": "যে আগে শেষ করতে শব্দ বদলে ফেলে"
+        },
+        {
+          "id": "d",
+          "text": "যে প্রতিটি শব্দ যত্ন নিয়ে পড়ে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "ধীরস্থির তিলাওয়াতে প্রতিটি শব্দ যত্ন পায়। সবার আগে শেষ করাই লক্ষ্য নয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "কুরআন ৭৩:৪",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_033",
+      "conceptId": "kids_quran_seek_refuge_before",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "তিলাওয়াতের আগে কোন দোয়ায় শয়তান থেকে আশ্রয় চাওয়া হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহ, শয়তান থেকে আমাকে রক্ষা করুন"
+        },
+        {
+          "id": "b",
+          "text": "আল্লাহ, আপনার শুকরিয়া করতে সাহায্য করুন"
+        },
+        {
+          "id": "c",
+          "text": "আল্লাহ, আমার জ্ঞান বাড়িয়ে দিন"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহ, আমার ভুল ক্ষমা করুন"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তিলাওয়াতের আগে আল্লাহর কাছে শয়তান থেকে আশ্রয় চাওয়া হয়। অন্য দোয়াগুলোও ভালো দোয়া।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "কুরআন ১৬:৯৮",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_034",
+      "conceptId": "kids_quran_reflect_meanings",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআনের আয়াত নিয়ে ভাবলে আমরা কী শিখতে পারি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবচেয়ে উজ্জ্বল মলাট বেছে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "আয়াতের বার্তা ও শিক্ষা"
+        },
+        {
+          "id": "c",
+          "text": "কোন পাতার ওজন বেশি বোঝা"
+        },
+        {
+          "id": "d",
+          "text": "প্রতিটি পাঠকে দৌড় প্রতিযোগিতা বানানো"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আয়াতের শিক্ষা বুঝতে এবং মনে গেঁথে নিতে আমরা তা নিয়ে ভাবি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_035",
+      "conceptId": "kids_quran_review_memorization",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো সূরা মুখস্থ করার পর আবার পড়া দরকার কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মুখস্থ হলে আর কখনো ভোলা যায় না"
+        },
+        {
+          "id": "b",
+          "text": "আবার পড়লে কুরআনের শব্দ বদলে যায়"
+        },
+        {
+          "id": "c",
+          "text": "ঝালিয়ে না নিলে ভুলে যেতে পারি"
+        },
+        {
+          "id": "d",
+          "text": "শুধু নতুন পাঠই পড়ার যোগ্য"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ কুরআনের সঙ্গে নিয়মিত থাকতে উৎসাহ দিয়েছেন। মুখস্থ আয়াতও ঝালিয়ে নিতে হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5033",
+          "label": "সহিহ বুখারি ৫০৩৩",
+          "url": "https://sunnah.com/bukhari:5033"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_036",
+      "conceptId": "kids_quran_learn_and_teach",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোন কাজটি কুরআন শেখা ও শেখানোর হাদিসের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নতুন কিছু শিখতেই না চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "না মিলিয়ে দেখেই অন্যকে শব্দ শেখানো"
+        },
+        {
+          "id": "c",
+          "text": "অন্যদের কাছ থেকে সব পাঠ লুকিয়ে রাখা"
+        },
+        {
+          "id": "d",
+          "text": "ঠিকভাবে শিখে অন্যকে শিখতে সাহায্য করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন শেখা ও শেখানো—দুটিই মূল্যবান। অন্যকে ঠিকভাবে সাহায্য করতে আমরা যত্ন নিয়ে শিখি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "সহিহ বুখারি ৫০২৭",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_037",
+      "conceptId": "kids_quran_effort_encouraged",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কষ্ট করে তিলাওয়াত করার হাদিস থেকে নতুন শিক্ষার্থী কী শিখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কষ্ট হলেও আন্তরিক চেষ্টার মূল্য আছে"
+        },
+        {
+          "id": "b",
+          "text": "শুধু নিখুঁত কণ্ঠের মানুষই পড়বে"
+        },
+        {
+          "id": "c",
+          "text": "কষ্ট হলে আর কখনো চেষ্টা করা যাবে না"
+        },
+        {
+          "id": "d",
+          "text": "ঠিকভাবে শেখার চেয়ে দ্রুত পড়াই জরুরি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হাদিসটি পুরস্কারের সুসংবাদ দিয়ে কষ্ট করে পড়া ব্যক্তিকে উৎসাহ দেয়। আমরা চেষ্টা করি এবং উন্নতির জন্য সাহায্য নিই।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "798a",
+          "label": "সহিহ মুসলিম ৭৯৮a",
+          "url": "https://sunnah.com/muslim:798a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_038",
+      "conceptId": "kids_quran_ramadan_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "রমজান কুরআন নাজিলের মাস। আমরা কখন কুরআন শিখতে পারি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু রমজানে"
+        },
+        {
+          "id": "b",
+          "text": "সারা বছর"
+        },
+        {
+          "id": "c",
+          "text": "শুধু রমজানের প্রথম দিনে"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বড় হওয়ার পরে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনের সঙ্গে রমজানের বিশেষ সম্পর্ক আছে। তবে সারা বছরই কুরআন শেখা যায়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        },
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সারা বছরের পাঠ পরিকল্পনা",
+          "url": "https://quran.com/calendar"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_039",
+      "conceptId": "kids_quran_yusuf_story",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ইউসুফের ঘটনার শুরুতে তিনি কাকে নিজের স্বপ্নের কথা বলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "একজন রাজাকে"
+        },
+        {
+          "id": "b",
+          "text": "একজন পথিককে"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর বাবাকে"
+        },
+        {
+          "id": "d",
+          "text": "কারাগারের একজন পাহারাদারকে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা ইউসুফের শুরুর দিকে ইউসুফ তাঁর বাবাকে নিজের দেখা একটি স্বপ্নের কথা বলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "কুরআন ১২:৪",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_040",
+      "conceptId": "kids_quran_live_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কুরআন ভালো ব্যবহার শেখায় জানার পর আমরা কী করব?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু কুইজের সময় দয়া দেখাব"
+        },
+        {
+          "id": "b",
+          "text": "শিক্ষা পড়ব, কিন্তু নিষ্ঠুর আচরণ করব"
+        },
+        {
+          "id": "c",
+          "text": "শুধু পুরস্কার পেলে দয়া দেখাব"
+        },
+        {
+          "id": "d",
+          "text": "মানুষের সঙ্গে ভালো ব্যবহার করার চেষ্টা করব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনের শিক্ষা আমাদের আচরণে ফুটে ওঠা উচিত। প্রতিদিনের কাজেও দয়া দেখাতে হয়।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "90",
+          "label": "কুরআন ১৬:৯০",
+          "url": "https://quran.com/16/90"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_041",
+      "conceptId": "kids_quran_revealed_to_muhammad",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সারার খাতায় প্রশ্ন আছে, কার কাছে কুরআন নাজিল হয়েছে। সে কোন নামটি বেছে নেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নবী মুহাম্মদ ﷺ"
+        },
+        {
+          "id": "b",
+          "text": "নবী আদম"
+        },
+        {
+          "id": "c",
+          "text": "নবী মুসা"
+        },
+        {
+          "id": "d",
+          "text": "নবী ঈসা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী মুহাম্মদ ﷺ-এর কাছে কুরআন নাজিল হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 47,
+          "ayahs": "2",
+          "label": "কুরআন ৪৭:২",
+          "url": "https://quran.com/47/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_042",
+      "conceptId": "kids_quran_arabic_language",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আয়ান কুরআন যে ভাষায় নাজিল হয়েছে, সে ভাষায় পড়তে শিখতে চায়। কোন ক্লাসে যাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ইংরেজি বানানের ক্লাসে"
+        },
+        {
+          "id": "b",
+          "text": "আরবিতে কুরআন পড়া শেখার ক্লাসে"
+        },
+        {
+          "id": "c",
+          "text": "বাংলা হাতের লেখার ক্লাসে"
+        },
+        {
+          "id": "d",
+          "text": "তুর্কি কথোপকথনের ক্লাসে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন আরবি ভাষায় নাজিল হয়েছে। পড়া শেখার পাশাপাশি অনুবাদ আয়ানকে অর্থ বুঝতে সাহায্য করতে পারে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "কুরআন ১২:২",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_043",
+      "conceptId": "kids_quran_jibril",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুইজে প্রশ্ন এসেছে, কুরআনের ওহি কোন ফেরেশতা নিয়ে এসেছিলেন। মরিয়ম কোন নামটি বেছে নেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মিকাইল"
+        },
+        {
+          "id": "b",
+          "text": "ইসরাফিল"
+        },
+        {
+          "id": "c",
+          "text": "জিবরিল"
+        },
+        {
+          "id": "d",
+          "text": "মৃত্যুর ফেরেশতা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "জিবরিল নবী মুহাম্মদ ﷺ-এর কাছে আল্লাহর ওহি নিয়ে এসেছিলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 26,
+          "ayahs": "192-194",
+          "label": "কুরআন ২৬:১৯২-১৯৪",
+          "url": "https://quran.com/26/192-194"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_044",
+      "conceptId": "kids_quran_surah_chapter",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক বললেন, “কুরআনের একটি অধ্যায় খোলো।” তুমি কী খুঁজবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নামাজের সময়"
+        },
+        {
+          "id": "b",
+          "text": "দোয়ার তালিকা"
+        },
+        {
+          "id": "c",
+          "text": "রোজার তারিখ"
+        },
+        {
+          "id": "d",
+          "text": "একটি সূরা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআনের একটি অধ্যায় হলো একটি সূরা।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরার তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_045",
+      "conceptId": "kids_quran_ayah_verse",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক বললেন, “কুরআনের একটি আয়াত পড়ো।” তুমি কী পড়বে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূরার একটি নম্বর দেওয়া অংশ"
+        },
+        {
+          "id": "b",
+          "text": "পুরো কুরআন"
+        },
+        {
+          "id": "c",
+          "text": "সব সূরা"
+        },
+        {
+          "id": "d",
+          "text": "নামাজের সময়সূচি"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "একটি আয়াত হলো সূরার একটি নির্দিষ্ট অংশ।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরার তালিকা",
+          "url": "https://quran.com/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_046",
+      "conceptId": "kids_quran_fatihah_first",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুরআনের শুরুতে থাকা সূরা খুলতে চাও। কোন নামটিতে চাপ দেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন-নাস"
+        },
+        {
+          "id": "b",
+          "text": "আল-ফাতিহা"
+        },
+        {
+          "id": "c",
+          "text": "আল-ফালাক"
+        },
+        {
+          "id": "d",
+          "text": "আল-আসর"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনের প্রথম সূরা খুলতে আল-ফাতিহা বেছে নাও।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আল-ফাতিহা, ১ নম্বর সূরা",
+          "url": "https://quran.com/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_047",
+      "conceptId": "kids_quran_nas_last",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হানা কুরআনের সূরার তালিকার একেবারে শেষে গেল। সে কোন নামটি দেখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল-কাউসার"
+        },
+        {
+          "id": "b",
+          "text": "আল-আসর"
+        },
+        {
+          "id": "c",
+          "text": "আন-নাস"
+        },
+        {
+          "id": "d",
+          "text": "আল-ফাতিহা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আন-নাস কুরআনের সূরাগুলোর ক্রমে শেষ সূরা। এর নম্বর ১১৪।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আন-নাস, ১১৪ নম্বর সূরা",
+          "url": "https://quran.com/114"
+        },
+        {
+          "type": "web",
+          "label": "কুরআনিক অ্যারাবিক করপাস — কুরআনের বিন্যাস ও আয়াতের নম্বর",
+          "url": "https://corpus.quran.com/documentation/versemarks.jsp"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_048",
+      "conceptId": "kids_quran_kawthar_three_ayahs",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তোমরা তিন আয়াতের সূরা আল-কাউসার ঝালিয়ে নিচ্ছ। তৃতীয় আয়াত পড়া হলে কতটুকু শেষ হয়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শুধু অর্ধেক সূরা"
+        },
+        {
+          "id": "b",
+          "text": "শুধু প্রথম আয়াত"
+        },
+        {
+          "id": "c",
+          "text": "পুরো কুরআন"
+        },
+        {
+          "id": "d",
+          "text": "পুরো সূরা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আল-কাউসারে তিনটি আয়াত আছে। তিনটিই পড়লে এই সূরা পড়া শেষ হয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সূরা আল-কাউসার, তিন আয়াত",
+          "url": "https://quran.com/108"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_049",
+      "conceptId": "kids_quran_falaq_refuge",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মুসা সূরা আল-ফালাক শিখছে। এর শুরুর সঙ্গে কোন অর্থটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর কাছে আশ্রয় চাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "চাঁদের কাছে পথ দেখাতে বলা"
+        },
+        {
+          "id": "c",
+          "text": "কুরআনে কত পাতা আছে তা বলা"
+        },
+        {
+          "id": "d",
+          "text": "সপ্তাহের দিনগুলোর নাম বলা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আল-ফালাকের শুরুতে ভোরের রব আল্লাহর কাছে আশ্রয় চাওয়া হয়েছে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 113,
+          "ayahs": "1",
+          "label": "কুরআন ১১৩:১",
+          "url": "https://quran.com/113/1"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_050",
+      "conceptId": "kids_quran_asr_truth_patience",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আল-আসর শেখার পর সালমা বন্ধুকে ভালো কাজে উৎসাহ দিতে চায়। সে কী বলবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "চলো, জেতার জন্য সত্য লুকাই"
+        },
+        {
+          "id": "b",
+          "text": "চলো, সত্য বলি আর ধৈর্য ধরি"
+        },
+        {
+          "id": "c",
+          "text": "চলো, ধীরে চলা সবাইকে বিরক্ত করি"
+        },
+        {
+          "id": "d",
+          "text": "চলো, সব ভালো কাজ ছেড়ে দিই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "একে অন্যকে সত্য ও ধৈর্যের কথা মনে করিয়ে দেওয়া আল-আসরের একটি শিক্ষা কাজে লাগানো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 103,
+          "ayahs": "1-3",
+          "label": "কুরআন ১০৩:১-৩",
+          "url": "https://quran.com/103/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_051",
+      "conceptId": "kids_quran_listen_attentively",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লাসে শিক্ষক কুরআন তিলাওয়াত শুরু করলেন। তুমি কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বন্ধুর সঙ্গে কথা চালিয়ে যাব"
+        },
+        {
+          "id": "b",
+          "text": "জোরে ভিডিও চালাব"
+        },
+        {
+          "id": "c",
+          "text": "কথা থামিয়ে মন দিয়ে শুনব"
+        },
+        {
+          "id": "d",
+          "text": "তিলাওয়াতের চেয়ে বেশি শব্দ করব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "তিলাওয়াতের সময় মন দিয়ে শোনো। কথা বলার উপযুক্ত সময়ে কথা বলো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "204",
+          "label": "কুরআন ৭:২০৪",
+          "url": "https://quran.com/7/204"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_052",
+      "conceptId": "kids_quran_measured_recitation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "উমর তাড়াহুড়া করে তিলাওয়াত করতে গিয়ে শব্দ বাদ দিচ্ছে। এখন কী করলে ভালো হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আরও তাড়াহুড়া করে পড়বে"
+        },
+        {
+          "id": "b",
+          "text": "প্রতি আয়াতের বাকি অংশ বাদ দেবে"
+        },
+        {
+          "id": "c",
+          "text": "নিজে সহজ শব্দ বানিয়ে পড়বে"
+        },
+        {
+          "id": "d",
+          "text": "ধীরে যত্ন নিয়ে পড়বে"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কুরআন ধীরস্থিরভাবে তিলাওয়াত করতে শেখায়। ধীরে পড়লে উমর শব্দগুলোর প্রতি যত্ন দিতে পারবে।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 73,
+          "ayahs": "4",
+          "label": "কুরআন ৭৩:৪",
+          "url": "https://quran.com/73/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_053",
+      "conceptId": "kids_quran_seek_refuge_before",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "লিনা কুরআন পড়ার আগে আশ্রয় চাইতে চায়। সে আল্লাহর কাছে কী চাইবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "শয়তান থেকে নিরাপত্তা"
+        },
+        {
+          "id": "b",
+          "text": "সবার চেয়ে জোরে পড়ার কণ্ঠ"
+        },
+        {
+          "id": "c",
+          "text": "আগে পড়ার জন্য পুরস্কার"
+        },
+        {
+          "id": "d",
+          "text": "না শিখে পার পাওয়ার উপায়"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তিলাওয়াতের আগে আমরা শয়তান থেকে নিরাপত্তার জন্য আল্লাহর আশ্রয় চাই।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "98",
+          "label": "কুরআন ১৬:৯৮",
+          "url": "https://quran.com/16/98"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_054",
+      "conceptId": "kids_quran_reflect_meanings",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তুমি একটি আয়াত পড়তে পারো, কিন্তু অর্থ বোঝো না। এর বার্তা বুঝতে কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্দাজের অর্থ নিশ্চিত বলে অন্যকে শেখাব"
+        },
+        {
+          "id": "b",
+          "text": "শিক্ষককে অর্থ বুঝিয়ে দিতে বলব"
+        },
+        {
+          "id": "c",
+          "text": "ভাবব, আয়াতটির কোনো অর্থ নেই"
+        },
+        {
+          "id": "d",
+          "text": "শুধু পাতার নম্বর দেখব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআন আমাদের ভাবতে বলে। কোনো অর্থ না বুঝলে জানেন এমন কারও কাছে ব্যাখ্যা চাইতে পারো।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 38,
+          "ayahs": "29",
+          "label": "কুরআন ৩৮:২৯",
+          "url": "https://quran.com/38/29"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_055",
+      "conceptId": "kids_quran_review_memorization",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "গত সপ্তাহে একটি ছোট সূরা শিখেছ। আজ কী করলে উপকার হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আর কখনো না পড়ার প্রতিজ্ঞা করব"
+        },
+        {
+          "id": "b",
+          "text": "সব সময় শুধু সূরার নাম পড়ব"
+        },
+        {
+          "id": "c",
+          "text": "শিক্ষক বা মা-বাবার সঙ্গে ঝালিয়ে নেব"
+        },
+        {
+          "id": "d",
+          "text": "না মিলিয়ে আন্দাজে শব্দ পড়ব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নিয়মিত ঝালিয়ে নিলে মুখস্থ কুরআন মনে থাকে। শিক্ষক বা মা-বাবা পড়া মিলিয়ে দিতে পারেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5033",
+          "label": "সহিহ বুখারি ৫০৩৩",
+          "url": "https://sunnah.com/bukhari:5033"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_056",
+      "conceptId": "kids_quran_learn_and_teach",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তোমার ছোট বোন তোমার ভালো জানা একটি সূরা শিখতে চায়। কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বলব, কুরআন শেখা শুধু আমার জন্য"
+        },
+        {
+          "id": "b",
+          "text": "তাকে বানানো শব্দ শেখাব"
+        },
+        {
+          "id": "c",
+          "text": "সে নতুন বলে সাহায্য করব না"
+        },
+        {
+          "id": "d",
+          "text": "শিক্ষকের পরামর্শে তাকে অনুশীলনে সাহায্য করব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "কাউকে কুরআন শিখতে সাহায্য করা মূল্যবান। যত্ন নিয়ে শেখাও, আর নিশ্চিত না হলে শিক্ষককে জিজ্ঞেস করো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5027",
+          "label": "সহিহ বুখারি ৫০২৭",
+          "url": "https://sunnah.com/bukhari:5027"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_057",
+      "conceptId": "kids_quran_effort_encouraged",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জায়েদের তিলাওয়াত করতে কষ্ট হচ্ছে বলে মন খারাপ। হাদিসের শিক্ষা অনুযায়ী তাকে কী বলা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তোমার চেষ্টার মূল্য আছে, সাহায্য নিয়ে অনুশীলন করো"
+        },
+        {
+          "id": "b",
+          "text": "শুধু দ্রুত পড়তে পারলেই কুরআন শেখা উচিত"
+        },
+        {
+          "id": "c",
+          "text": "একটি শব্দ কঠিন হলে চিরদিনের জন্য ছেড়ে দাও"
+        },
+        {
+          "id": "d",
+          "text": "নিখুঁত না হওয়া পর্যন্ত চেষ্টার কোনো মূল্য নেই"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "কষ্ট করেও তিলাওয়াত করলে পুরস্কারের সুসংবাদ আছে। জায়েদ চেষ্টা চালিয়ে যেতে পারে এবং কোমলভাবে ভুল ধরিয়ে দিলে শিখতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "798a",
+          "label": "সহিহ মুসলিম ৭৯৮a",
+          "url": "https://sunnah.com/muslim:798a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_058",
+      "conceptId": "kids_quran_ramadan_revelation",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "রমজান শেষ হয়েছে। কুরআন শেখা নিয়ে এখন কী করলে ভালো হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরের রমজান পর্যন্ত সব পাঠ সরিয়ে রাখব"
+        },
+        {
+          "id": "b",
+          "text": "অল্প করে পড়া ও শেখার নিয়ম রাখব"
+        },
+        {
+          "id": "c",
+          "text": "বড় না হওয়া পর্যন্ত আর শিখব না"
+        },
+        {
+          "id": "d",
+          "text": "আবার রমজান এলেই শুধু পড়ব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "কুরআনের সঙ্গে রমজানের বিশেষ সম্পর্ক আছে। বছরের বাকি সময়েও আমরা পড়তে ও শিখতে পারি।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "185",
+          "label": "কুরআন ২:১৮৫",
+          "url": "https://quran.com/2/185"
+        },
+        {
+          "type": "web",
+          "label": "কুরআন ডটকম — সারা বছরের পাঠ পরিকল্পনা",
+          "url": "https://quran.com/calendar"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_059",
+      "conceptId": "kids_quran_yusuf_story",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক জিজ্ঞেস করলেন, কোন সূরায় ইউসুফের ঘটনা আছে। তুমি কোন সূরা খুলবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সূরা আল-ফালাক"
+        },
+        {
+          "id": "b",
+          "text": "সূরা আন-নাস"
+        },
+        {
+          "id": "c",
+          "text": "সূরা ইউসুফ"
+        },
+        {
+          "id": "d",
+          "text": "সূরা আল-ফাতিহা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সূরা ইউসুফে তাঁর ঘটনা বলা হয়েছে। শুরুর দিকে তিনি বাবাকে নিজের স্বপ্নের কথা বলেন।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "4",
+          "label": "কুরআন ১২:৪",
+          "url": "https://quran.com/12/4"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_quran_knowledge_060",
+      "conceptId": "kids_quran_live_kindness",
+      "categoryId": "quran_knowledge",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কুরআন থেকে দয়ার শিক্ষা শিখেছ। পরে এক সহপাঠীর বই পড়ে গেল। কোন কাজটি সেই শিক্ষা কাজে লাগানো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হেসে চলে যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "লাথি দিয়ে বইগুলো আরও দূরে সরানো"
+        },
+        {
+          "id": "c",
+          "text": "অনুমতি ছাড়া একটি বই নিয়ে নেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "বইগুলো তুলতে তাকে সাহায্য করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "সহপাঠীকে সাহায্য করা দৈনন্দিন জীবনে কুরআনের দয়ার শিক্ষা কাজে লাগানোর একটি উদাহরণ।",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 16,
+          "ayahs": "90",
+          "label": "কুরআন ১৬:৯০",
+          "url": "https://quran.com/16/90"
+        }
+      ]
+    }
+  ]
+}

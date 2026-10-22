@@ -1,0 +1,2310 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "character_conduct",
+  "title": "Character & Conduct",
+  "description": "Little Muslim → Mid. Short questions for children who know the first character basics. Covers commitments, practicing good advice, checking reports, admitting uncertainty, avoiding baseless suspicion, backbiting and false accusation, accepting correction, truthful reporting, honest measures, anger, gentleness, useful effort, different ages, neighbors, companionship, parents, fairness toward children, modest giving, friendly welcomes and ordinary confidence. Uses familiar classroom, play and family situations. An adult may read questions aloud or explain unfamiliar words. All questions are Mid level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Builds on first manners through familiar meanings, simple distinctions and straightforward daily applications. No specialist legal terms, detailed exception lists, narrator biographies or memorization of reference numbers is required. Level is editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith reports checked during preparation. The Sunan Abi Dawud 4943 report is graded Sahih by Al-Albani on the linked source; the other hadith reports are from Sahih al-Bukhari or Sahih Muslim. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Present-day situations illustrate applications; they are not events narrated in the cited reports. Commitments concern suitable, harmless actions, not promises to conceal harm or do wrong. Changing circumstances are addressed through honest communication rather than a claim that every inability to fulfill a promise is deliberate wrongdoing. The distinction between words and actions encourages improvement rather than labeling children hypocrites. Verification and honest uncertainty do not require a child to investigate danger personally or prove a concern before telling a trusted adult. The verse about an unreliable reporter is not used to label a particular classmate an evildoer. Avoiding suspicion is not an instruction to ignore warning signs. Backbiting and false accusation are distinguished without treating every truthful disclosure as forbidden; appropriate reporting for help is different from malicious gossip. The arrogance report is used to teach accepting truth, not to judge a child's faith, final destiny, clothing or disability. Justice examples use accurate reports to a teacher and simple classroom exchanges, not adult court duties. Anger is distinguished from harmful behavior; children are not required to suppress every feeling or accept mistreatment. Gentleness allows safe boundaries. Useful effort and seeking Allah's help are taught without judging health, physical strength or access to support. Respect for elders and parents is not unconditional obedience to harmful demands; younger children retain dignity and safety. Food sharing requires suitable adult arrangements. The companionship comparison concerns influence, not the worth of craftspeople or a person's smell, income or clothing. Fairness toward children is taught without deciding detailed gift-distribution rulings or asking children to judge their families. Small giving requires suitable permission and is not a demand to give away necessities. Friendly welcomes do not require a child to smile constantly or disregard distress. The confidence example follows Anas's report, but does not tell a child to hide abuse, threats or unsafe secrets from a trusted adult. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_mid_character_conduct_001",
+      "conceptId": "kids_character_keep_promises",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about the commitments we make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take them seriously and fulfill them"
+        },
+        {
+          "id": "b",
+          "text": "Forget them as soon as convenient"
+        },
+        {
+          "id": "c",
+          "text": "Make them only to impress people"
+        },
+        {
+          "id": "d",
+          "text": "Treat other people's trust as a game"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran teaches honoring commitments. In daily life, make suitable promises carefully and try to keep them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "Quran 17:34",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_002",
+      "conceptId": "kids_character_words_actions",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What mismatch does the Quran warn believers about?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning before giving advice"
+        },
+        {
+          "id": "b",
+          "text": "Saying good things we do not practice"
+        },
+        {
+          "id": "c",
+          "text": "Admitting that we need to improve"
+        },
+        {
+          "id": "d",
+          "text": "Trying to put a lesson into practice"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verses warn against saying what we do not do. Good advice should encourage us to improve our own actions too.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 61,
+          "ayahs": "2-3",
+          "label": "Quran 61:2-3",
+          "url": "https://quran.com/61/2-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_003",
+      "conceptId": "kids_character_check_reports",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Why does the Quran teach checking unreliable news?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To make rumors more exciting"
+        },
+        {
+          "id": "b",
+          "text": "To find a quicker way to blame someone"
+        },
+        {
+          "id": "c",
+          "text": "To avoid harming people through ignorance"
+        },
+        {
+          "id": "d",
+          "text": "To collect the largest audience"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse connects checking news with avoiding harm and regret. Care matters before acting on a damaging report.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_004",
+      "conceptId": "kids_character_admit_not_knowing",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which approach fits the Quran's warning about following what we do not know?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend every guess is a fact"
+        },
+        {
+          "id": "b",
+          "text": "Claim we saw what we did not see"
+        },
+        {
+          "id": "c",
+          "text": "Accuse whoever seems easiest to blame"
+        },
+        {
+          "id": "d",
+          "text": "Admit uncertainty instead of inventing certainty"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran warns against following what we lack knowledge of. Honest limits matter in what we claim to know.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_005",
+      "conceptId": "kids_character_avoid_suspicion",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which attitude does the Quran tell believers to be careful about?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unfounded suspicion about others"
+        },
+        {
+          "id": "b",
+          "text": "Checking facts fairly"
+        },
+        {
+          "id": "c",
+          "text": "Asking for help with a concern"
+        },
+        {
+          "id": "d",
+          "text": "Accepting a harmless explanation"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verse warns against many suspicions. We should not turn a guess about someone into an accusation without grounds.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_006",
+      "conceptId": "kids_character_truth_not_gossip_permission",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Does a hurtful comment about an absent person become acceptable gossip simply because it is true?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, truth makes every hurtful conversation kind"
+        },
+        {
+          "id": "b",
+          "text": "No, true faults can still be backbiting"
+        },
+        {
+          "id": "c",
+          "text": "Yes, gossip is wrong only if invented"
+        },
+        {
+          "id": "d",
+          "text": "No, because backbiting means giving a compliment"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith distinguishes backbiting from false accusation. A true fault is not automatic permission to spread hurtful talk.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "Sahih Muslim 2589",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_007",
+      "conceptId": "kids_character_accept_correction",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which behavior belongs to arrogance as explained in the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accepting a useful correction"
+        },
+        {
+          "id": "b",
+          "text": "Wearing clean clothes without belittling anyone"
+        },
+        {
+          "id": "c",
+          "text": "Rejecting truth and looking down on people"
+        },
+        {
+          "id": "d",
+          "text": "Asking for help to understand"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith explains arrogance through rejecting truth and contempt for people. Learning includes being willing to accept a correct answer.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "Sahih Muslim 91a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_008",
+      "conceptId": "kids_character_truth_against_self",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about fairness when the truth goes against ourselves?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Change the facts to protect our image"
+        },
+        {
+          "id": "b",
+          "text": "Tell the truth only when we win"
+        },
+        {
+          "id": "c",
+          "text": "Blame someone else automatically"
+        },
+        {
+          "id": "d",
+          "text": "Stand for justice even then"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse teaches justice even against ourselves or close relatives. Personal advantage should not decide whether we tell the truth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "135",
+          "label": "Quran 4:135",
+          "url": "https://quran.com/4/135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_009",
+      "conceptId": "kids_character_honest_measures",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What unfair dealing do the opening verses of Al-Mutaffifin condemn?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taking full measure but giving others less"
+        },
+        {
+          "id": "b",
+          "text": "Giving the amount that was agreed"
+        },
+        {
+          "id": "c",
+          "text": "Checking that a measure is accurate"
+        },
+        {
+          "id": "d",
+          "text": "Correcting an accidental short measure"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses condemn demanding full measure for ourselves while shortchanging others. Honest dealing respects both sides of an exchange.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 83,
+          "ayahs": "1-3",
+          "label": "Quran 83:1-3",
+          "url": "https://quran.com/83/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_010",
+      "conceptId": "kids_character_control_anger",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which kind of strength does the Prophet ﷺ praise in the hadith about anger?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always winning a wrestling match"
+        },
+        {
+          "id": "b",
+          "text": "Controlling ourselves when angry"
+        },
+        {
+          "id": "c",
+          "text": "Frightening smaller children"
+        },
+        {
+          "id": "d",
+          "text": "Breaking something whenever upset"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith praises control during anger. Feeling upset does not require us to hurt someone or damage their belongings.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_011",
+      "conceptId": "kids_character_gentle_correction",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality does the hadith describe as making things better?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cruelty"
+        },
+        {
+          "id": "b",
+          "text": "Deliberate humiliation"
+        },
+        {
+          "id": "c",
+          "text": "Gentleness"
+        },
+        {
+          "id": "d",
+          "text": "Needless harshness"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith praises gentleness. A calm, respectful approach can improve how we speak, teach and correct mistakes.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_012",
+      "conceptId": "kids_character_beneficial_effort",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair of actions fits the hadith's guidance about seeking benefit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give up immediately and mock effort"
+        },
+        {
+          "id": "b",
+          "text": "Ask for help but refuse every useful action"
+        },
+        {
+          "id": "c",
+          "text": "Work only to humiliate other learners"
+        },
+        {
+          "id": "d",
+          "text": "Make useful efforts and seek Allah's help"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report encourages seeking what benefits us and asking Allah for help. Effort and reliance on Allah belong together.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_013",
+      "conceptId": "kids_character_young_and_old",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which pair of attitudes does the hadith teach toward younger and older people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mercy toward the young and respect for elders"
+        },
+        {
+          "id": "b",
+          "text": "Cruelty toward the young and contempt for elders"
+        },
+        {
+          "id": "c",
+          "text": "Kindness only toward people our own age"
+        },
+        {
+          "id": "d",
+          "text": "Respect only for whoever owns expensive things"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report teaches care for younger people and recognition of elders' rights. Age differences should encourage consideration rather than cruelty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4943",
+          "label": "Sunan Abi Dawud 4943",
+          "url": "https://sunnah.com/abudawud:4943"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_014",
+      "conceptId": "kids_character_share_with_neighbors",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ encourage Abu Dharr to do when preparing broth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forget that neighbors exist"
+        },
+        {
+          "id": "b",
+          "text": "Remember his neighbors and share with them"
+        },
+        {
+          "id": "c",
+          "text": "Make sharing depend on a costly feast"
+        },
+        {
+          "id": "d",
+          "text": "Boast that nobody else deserves food"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report encourages considering neighbors when preparing food. Sharing can be thoughtful without becoming a display of wealth.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2625b",
+          "label": "Sahih Muslim 2625b",
+          "url": "https://sunnah.com/muslim:2625b"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_015",
+      "conceptId": "kids_character_choose_good_company",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What lesson does the comparison of good and harmful companions highlight?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A friend's clothes determine their worth"
+        },
+        {
+          "id": "b",
+          "text": "Only perfume sellers may have friends"
+        },
+        {
+          "id": "c",
+          "text": "The company we keep can influence us"
+        },
+        {
+          "id": "d",
+          "text": "Every person has the same effect on our habits"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith illustrates how companions can affect us. Seek friendships that encourage good conduct rather than pressure us toward harm.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_016",
+      "conceptId": "kids_character_respectful_parent_speech",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does the Quran teach us to speak to parents, especially in old age?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Harshly whenever their needs take time"
+        },
+        {
+          "id": "b",
+          "text": "With insults whenever we feel tired"
+        },
+        {
+          "id": "c",
+          "text": "As though their dignity does not matter"
+        },
+        {
+          "id": "d",
+          "text": "Respectfully, without scolding or contempt"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse teaches honoring parents and speaking respectfully. Patient words matter, especially when older parents need care.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "Quran 17:23",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_017",
+      "conceptId": "kids_character_fairness_to_children",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In the report about a father's gift, what did the Prophet ﷺ tell him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Be fair to his children"
+        },
+        {
+          "id": "b",
+          "text": "Give only to the child who boasts most"
+        },
+        {
+          "id": "c",
+          "text": "Ignore every child's need for fairness"
+        },
+        {
+          "id": "d",
+          "text": "Use gifts to make siblings hate each other"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report emphasizes fairness toward children. Family care should not turn into favoritism that treats one child as worthless.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2587",
+          "label": "Sahih al-Bukhari 2587",
+          "url": "https://sunnah.com/bukhari:2587"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_018",
+      "conceptId": "kids_character_value_small_giving",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the encouragement to give even half a date teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only expensive gifts have value"
+        },
+        {
+          "id": "b",
+          "text": "Even a small charitable gift can matter"
+        },
+        {
+          "id": "c",
+          "text": "People with little must never give"
+        },
+        {
+          "id": "d",
+          "text": "Giving must always impress a crowd"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The report encourages charity even in a small amount. We should not dismiss a suitable gift just because it is modest.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1417",
+          "label": "Sahih al-Bukhari 1417",
+          "url": "https://sunnah.com/bukhari:1417"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_019",
+      "conceptId": "kids_character_small_friendly_kindness",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which small good deed does the hadith give as an example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Making a newcomer feel unwanted"
+        },
+        {
+          "id": "b",
+          "text": "Laughing at someone who is upset"
+        },
+        {
+          "id": "c",
+          "text": "Meeting another person with a friendly face"
+        },
+        {
+          "id": "d",
+          "text": "Refusing every harmless greeting"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith teaches not dismissing small good deeds. A friendly welcome can be a simple way to show kindness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "Sahih Muslim 2626",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_020",
+      "conceptId": "kids_character_respect_confidences",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which quality does Anas's report about a private matter illustrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Broadcasting every private conversation"
+        },
+        {
+          "id": "b",
+          "text": "Inventing a secret to gain attention"
+        },
+        {
+          "id": "c",
+          "text": "Using private information to embarrass someone"
+        },
+        {
+          "id": "d",
+          "text": "Keeping something entrusted in confidence"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Anas described keeping a matter entrusted to him. Respect ordinary privacy, while always telling a trusted adult about harm or unsafe secrets.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6289",
+          "label": "Sahih al-Bukhari 6289",
+          "url": "https://sunnah.com/bukhari:6289"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_021",
+      "conceptId": "kids_character_keep_promises",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does keeping promises mean making commitments we never intend to keep?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, commitments should be sincere and taken seriously"
+        },
+        {
+          "id": "b",
+          "text": "Yes, sounding impressive is enough"
+        },
+        {
+          "id": "c",
+          "text": "Yes, another person's expectations never matter"
+        },
+        {
+          "id": "d",
+          "text": "No, because every harmless promise is forbidden"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Promises should not be tools for misleading people. Make realistic commitments and speak honestly if circumstances prevent you from fulfilling them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "Quran 17:34",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_022",
+      "conceptId": "kids_character_words_actions",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If we remind others to be kind, should we also work on our own behavior?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, advice removes our need to improve"
+        },
+        {
+          "id": "b",
+          "text": "Yes, try to practice the good we encourage"
+        },
+        {
+          "id": "c",
+          "text": "No, kindness applies only to other people"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only when someone is watching"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The warning about words and actions calls us to practice what we encourage. Needing improvement is a reason to learn, not pretend.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 61,
+          "ayahs": "2-3",
+          "label": "Quran 61:2-3",
+          "url": "https://quran.com/61/2-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_023",
+      "conceptId": "kids_character_check_reports",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a worrying report become proven just because a large group repeats it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, crowd size replaces evidence"
+        },
+        {
+          "id": "b",
+          "text": "Yes, repetition makes every accusation true"
+        },
+        {
+          "id": "c",
+          "text": "No, checking still matters"
+        },
+        {
+          "id": "d",
+          "text": "No, because checking is always useless"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran's warning concerns harm caused by acting without proper checking. Popularity alone does not establish whether a damaging claim is true.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_024",
+      "conceptId": "kids_character_admit_not_knowing",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is saying \"I do not know\" better than falsely claiming to have seen an event?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, a confident guess is always a fact"
+        },
+        {
+          "id": "b",
+          "text": "No, every question requires an invented answer"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if we then blame someone anyway"
+        },
+        {
+          "id": "d",
+          "text": "Yes, honest uncertainty avoids inventing evidence"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Honesty includes recognizing the limits of our knowledge. We should not present something as witnessed when we did not see it.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_025",
+      "conceptId": "kids_character_avoid_suspicion",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a missing item automatically prove that the nearest child took it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, suspicion alone is not proof"
+        },
+        {
+          "id": "b",
+          "text": "Yes, being nearby always proves guilt"
+        },
+        {
+          "id": "c",
+          "text": "Yes, guesses never need checking"
+        },
+        {
+          "id": "d",
+          "text": "No, because missing items must never be reported"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A guess about another person is not established fact. Search calmly and ask a trusted adult for help rather than accusing without grounds.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_026",
+      "conceptId": "kids_character_truth_not_gossip_permission",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If a fault we mention is not actually present, what does the hadith call that?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A helpful compliment"
+        },
+        {
+          "id": "b",
+          "text": "A false accusation rather than merely backbiting"
+        },
+        {
+          "id": "c",
+          "text": "Proof that the story is harmless"
+        },
+        {
+          "id": "d",
+          "text": "A required part of every friendship"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith distinguishes a true fault discussed hurtfully from an invented accusation. Neither distinction makes malicious talk a good activity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "Sahih Muslim 2589",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_027",
+      "conceptId": "kids_character_accept_correction",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does accepting a correct answer from a younger learner make us less valuable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, truth matters only from older children"
+        },
+        {
+          "id": "b",
+          "text": "Yes, being corrected always removes our dignity"
+        },
+        {
+          "id": "c",
+          "text": "No, accepting truth is better than rejecting it proudly"
+        },
+        {
+          "id": "d",
+          "text": "No, but we must insult the learner afterward"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Rejecting truth out of pride is part of the hadith's warning. We can learn from someone without treating age as a contest.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "Sahih Muslim 91a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_028",
+      "conceptId": "kids_character_truth_against_self",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does loyalty to a friend make it right to give a false account for them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, friendship changes falsehood into truth"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only strangers deserve accurate reports"
+        },
+        {
+          "id": "c",
+          "text": "No, because close friends never make mistakes"
+        },
+        {
+          "id": "d",
+          "text": "No, fairness still requires truthful reporting"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse teaches justice even when people close to us are involved. Loyalty is not permission to distort what happened.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "135",
+          "label": "Quran 4:135",
+          "url": "https://quran.com/4/135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_029",
+      "conceptId": "kids_character_honest_measures",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is it fair to demand ten items while secretly giving only eight in the same agreed exchange?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, both sides should receive the agreed amount"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only our share needs to be correct"
+        },
+        {
+          "id": "c",
+          "text": "Yes, clever counting makes every trick fair"
+        },
+        {
+          "id": "d",
+          "text": "No, because counting is always forbidden"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran condemns shortchanging others while demanding full measure for ourselves. The same concern for honesty applies to a simple exchange.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 83,
+          "ayahs": "1-3",
+          "label": "Quran 83:1-3",
+          "url": "https://quran.com/83/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_030",
+      "conceptId": "kids_character_control_anger",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does controlling anger mean we must never feel upset?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, any upset feeling makes us worthless"
+        },
+        {
+          "id": "b",
+          "text": "No, it concerns how we act when angry"
+        },
+        {
+          "id": "c",
+          "text": "Yes, we must pretend every hurt feels pleasant"
+        },
+        {
+          "id": "d",
+          "text": "No, because anger always permits hitting"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith praises self-control during anger, not pretending feelings do not exist. We can name our feelings without harming others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_031",
+      "conceptId": "kids_character_gentle_correction",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can we correct a mistake firmly while still being gentle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, correction always requires insults"
+        },
+        {
+          "id": "b",
+          "text": "No, gentleness means every wrong must continue"
+        },
+        {
+          "id": "c",
+          "text": "Yes, clear guidance can be respectful"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only if we embarrass the person first"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Gentleness is compatible with clear limits and useful correction. It does not require ignoring a harmful action or humiliating a learner.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_032",
+      "conceptId": "kids_character_beneficial_effort",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does asking Allah for help mean refusing all useful effort?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, useful practice is always pointless"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every effort shows a lack of trust"
+        },
+        {
+          "id": "c",
+          "text": "No, because asking Allah is never encouraged"
+        },
+        {
+          "id": "d",
+          "text": "No, seeking benefit and asking Allah go together"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith combines useful effort with seeking Allah's help. It does not make learning, practice or suitable assistance enemies of trust.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_033",
+      "conceptId": "kids_character_young_and_old",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does respecting older people mean younger children's feelings and safety do not matter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the hadith also teaches mercy toward the young"
+        },
+        {
+          "id": "b",
+          "text": "Yes, young children never deserve consideration"
+        },
+        {
+          "id": "c",
+          "text": "Yes, age gives permission for every harmful demand"
+        },
+        {
+          "id": "d",
+          "text": "No, because respect for elders is always wrong"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report joins care for the young with respect for elders. Neither group should be treated as without dignity or protection.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4943",
+          "label": "Sunan Abi Dawud 4943",
+          "url": "https://sunnah.com/abudawud:4943"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_034",
+      "conceptId": "kids_character_share_with_neighbors",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Must a family prepare a luxury feast before showing kindness with shared food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, simple food never expresses kindness"
+        },
+        {
+          "id": "b",
+          "text": "No, the report gives an ordinary cooking example"
+        },
+        {
+          "id": "c",
+          "text": "Yes, sharing is only for famous families"
+        },
+        {
+          "id": "d",
+          "text": "No, because every neighbor must receive nothing"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The broth example makes neighborly care familiar and practical. Families can share appropriately without making expense the measure of kindness.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2625b",
+          "label": "Sahih Muslim 2625b",
+          "url": "https://sunnah.com/muslim:2625b"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_035",
+      "conceptId": "kids_character_choose_good_company",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Should we judge a friendship only by how expensive the other child's belongings are?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, costly belongings guarantee good character"
+        },
+        {
+          "id": "b",
+          "text": "Yes, kindness has no place in choosing company"
+        },
+        {
+          "id": "c",
+          "text": "No, their influence on conduct matters more"
+        },
+        {
+          "id": "d",
+          "text": "No, because every friendship must be avoided"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The comparison concerns a companion's influence. Wealth and fashionable belongings do not guarantee that a friendship encourages good choices.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_036",
+      "conceptId": "kids_character_respectful_parent_speech",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does feeling tired give us permission to speak contemptuously to an elderly parent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, tiredness makes every insult kind"
+        },
+        {
+          "id": "b",
+          "text": "Yes, older people have no dignity"
+        },
+        {
+          "id": "c",
+          "text": "No, because a parent may never need help"
+        },
+        {
+          "id": "d",
+          "text": "No, respectful speech still matters"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse teaches respectful words rather than scolding. We can explain our limits politely and seek suitable help when needed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "Quran 17:23",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_037",
+      "conceptId": "kids_character_fairness_to_children",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does being the youngest mean a child's need for fair treatment can be ignored?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, children should be treated fairly"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only the oldest child deserves fairness"
+        },
+        {
+          "id": "c",
+          "text": "Yes, younger children have no feelings"
+        },
+        {
+          "id": "d",
+          "text": "No, because gifts always replace respectful behavior"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report emphasizes justice toward children. Being younger does not make someone less deserving of consideration within the family.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2587",
+          "label": "Sahih al-Bukhari 2587",
+          "url": "https://sunnah.com/bukhari:2587"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_038",
+      "conceptId": "kids_character_value_small_giving",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Should we dismiss a suitable charitable gift only because it is small?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only a costly gift matters"
+        },
+        {
+          "id": "b",
+          "text": "No, modest giving can still be valuable"
+        },
+        {
+          "id": "c",
+          "text": "Yes, every small gift is an insult"
+        },
+        {
+          "id": "d",
+          "text": "No, because children must give everything they own"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The encouragement to give even a small amount opposes belittling modest charity. Giving should remain suitable and follow necessary adult guidance.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1417",
+          "label": "Sahih al-Bukhari 1417",
+          "url": "https://sunnah.com/bukhari:1417"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_039",
+      "conceptId": "kids_character_small_friendly_kindness",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does every kind act require buying something?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, kindness always needs a purchase"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only costly greetings have value"
+        },
+        {
+          "id": "c",
+          "text": "No, a friendly welcome can be kind too"
+        },
+        {
+          "id": "d",
+          "text": "No, because welcoming people has no value"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith includes a friendly face among small good deeds. Kindness has forms beyond spending money.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "Sahih Muslim 2626",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_040",
+      "conceptId": "kids_character_respect_confidences",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does respecting a private confidence mean hiding harm from trusted adults?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every secret must be kept even if dangerous"
+        },
+        {
+          "id": "b",
+          "text": "Yes, asking for protection is always betrayal"
+        },
+        {
+          "id": "c",
+          "text": "No, because every private detail belongs online"
+        },
+        {
+          "id": "d",
+          "text": "No, unsafe secrets should be shared with a trusted adult"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Respect for ordinary confidence is different from concealing harm. A child should always seek help about unsafe situations or frightening demands for secrecy.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6289",
+          "label": "Sahih al-Bukhari 6289",
+          "url": "https://sunnah.com/bukhari:6289"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_041",
+      "conceptId": "kids_character_keep_promises",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You promised to bring a shared project tomorrow but become ill. What is a responsible next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask an adult to help explain and arrange a solution"
+        },
+        {
+          "id": "b",
+          "text": "Pretend you never made the promise"
+        },
+        {
+          "id": "c",
+          "text": "Blame the class without explanation"
+        },
+        {
+          "id": "d",
+          "text": "Make more promises you cannot keep"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Taking commitments seriously includes honest communication when circumstances change. Seek help rather than misleading people who are relying on you.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "34",
+          "label": "Quran 17:34",
+          "url": "https://quran.com/17/34"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_042",
+      "conceptId": "kids_character_words_actions",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You tell classmates to keep the reading corner tidy. What should you also do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leave your own books scattered deliberately"
+        },
+        {
+          "id": "b",
+          "text": "Put your own materials away"
+        },
+        {
+          "id": "c",
+          "text": "Say that the rule never applies to you"
+        },
+        {
+          "id": "d",
+          "text": "Mock anyone who notices your mess"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Let your actions support the good advice you give. The verse's warning encourages sincerity rather than empty instructions to others.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 61,
+          "ayahs": "2-3",
+          "label": "Quran 61:2-3",
+          "url": "https://quran.com/61/2-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_043",
+      "conceptId": "kids_character_check_reports",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An unchecked message says a classmate damaged school property. What is a careful response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forward it with an angry accusation"
+        },
+        {
+          "id": "b",
+          "text": "Add guessed details"
+        },
+        {
+          "id": "c",
+          "text": "Ask a teacher to check before spreading blame"
+        },
+        {
+          "id": "d",
+          "text": "Treat every forwarded message as proven"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse warns about harm from unchecked news. An adult can help establish facts without turning a rumor into public blame.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "6",
+          "label": "Quran 49:6",
+          "url": "https://quran.com/49/6"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_044",
+      "conceptId": "kids_character_admit_not_knowing",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A teacher asks who broke a ruler, but you did not see it happen. What should you say?",
+      "options": [
+        {
+          "id": "a",
+          "text": "I saw it, though I actually did not"
+        },
+        {
+          "id": "b",
+          "text": "It must be the child I dislike"
+        },
+        {
+          "id": "c",
+          "text": "My guess is proof enough"
+        },
+        {
+          "id": "d",
+          "text": "I did not see who did it"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Say what you actually know. Honest uncertainty helps avoid false claims and unfair blame.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "36",
+          "label": "Quran 17:36",
+          "url": "https://quran.com/17/36"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_045",
+      "conceptId": "kids_character_avoid_suspicion",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your pencil is missing and a new child sits nearby. What should you avoid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accusing the child merely because they are nearby"
+        },
+        {
+          "id": "b",
+          "text": "Checking your own pencil case"
+        },
+        {
+          "id": "c",
+          "text": "Asking the teacher for help"
+        },
+        {
+          "id": "d",
+          "text": "Looking calmly where you last used it"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The warning about suspicion discourages baseless accusations. A missing pencil does not make a nearby child guilty.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "12",
+          "label": "Quran 49:12",
+          "url": "https://quran.com/49/12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_046",
+      "conceptId": "kids_character_truth_not_gossip_permission",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Friends mock an absent child's real mistake and say, \"But it is true.\" What reminder fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every true mistake must be shared for amusement"
+        },
+        {
+          "id": "b",
+          "text": "Truth alone does not make hurtful gossip acceptable"
+        },
+        {
+          "id": "c",
+          "text": "A real fault gives unlimited permission to ridicule"
+        },
+        {
+          "id": "d",
+          "text": "Only invented insults can ever be wrong"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith explains that backbiting can concern a real fault. Reporting a problem to get appropriate adult help is different from mocking someone.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2589",
+          "label": "Sahih Muslim 2589",
+          "url": "https://sunnah.com/muslim:2589"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_047",
+      "conceptId": "kids_character_accept_correction",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A younger classmate correctly notices an error in your answer. What is a humble response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reject it only because they are younger"
+        },
+        {
+          "id": "b",
+          "text": "Insist your age changes the facts"
+        },
+        {
+          "id": "c",
+          "text": "Accept the correction and thank them"
+        },
+        {
+          "id": "d",
+          "text": "Insult them for helping"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The warning about arrogance includes rejecting truth. A useful correction is an opportunity to learn rather than a reason to belittle someone.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "91a",
+          "label": "Sahih Muslim 91a",
+          "url": "https://sunnah.com/muslim:91a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_048",
+      "conceptId": "kids_character_truth_against_self",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You saw your friend break a classroom rule. A teacher asks what happened. What is fair?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Change the story to protect your friend"
+        },
+        {
+          "id": "b",
+          "text": "Accuse an uninvolved child"
+        },
+        {
+          "id": "c",
+          "text": "Invent details to make your friend seem perfect"
+        },
+        {
+          "id": "d",
+          "text": "Describe honestly what you actually saw"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Justice includes truthful reporting when friends are involved. Speak accurately to the teacher instead of spreading the incident around.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "135",
+          "label": "Quran 4:135",
+          "url": "https://quran.com/4/135"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_049",
+      "conceptId": "kids_character_honest_measures",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "In a pretend shop, you agree to give ten counters but quietly hand over eight. What should you correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give the agreed ten rather than shortchanging the buyer"
+        },
+        {
+          "id": "b",
+          "text": "Demand extra counters for your trick"
+        },
+        {
+          "id": "c",
+          "text": "Claim eight and ten are always equal"
+        },
+        {
+          "id": "d",
+          "text": "Hide the missing amount to win"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "This classroom example applies the lesson of honest measure. Correct the amount instead of taking advantage of the other person.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 83,
+          "ayahs": "1-3",
+          "label": "Quran 83:1-3",
+          "url": "https://quran.com/83/1-3"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_050",
+      "conceptId": "kids_character_control_anger",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You lose a game and feel like throwing someone else's pieces. Which choice shows the praised strength?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Throw them to prove your strength"
+        },
+        {
+          "id": "b",
+          "text": "Pause and keep yourself from damaging them"
+        },
+        {
+          "id": "c",
+          "text": "Threaten the smallest player"
+        },
+        {
+          "id": "d",
+          "text": "Blame anger as permission for destruction"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith praises control when angry. You can step back and ask for help while keeping people and belongings safe.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6114",
+          "label": "Sahih al-Bukhari 6114",
+          "url": "https://sunnah.com/bukhari:6114"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_051",
+      "conceptId": "kids_character_gentle_correction",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A younger learner keeps mixing up two words. Which correction shows gentleness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Call them worthless"
+        },
+        {
+          "id": "b",
+          "text": "Make the class laugh at them"
+        },
+        {
+          "id": "c",
+          "text": "Explain patiently and let them try again"
+        },
+        {
+          "id": "d",
+          "text": "Say they never deserve help"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Gentleness can make correction more helpful. Patient explanation supports learning without turning a mistake into humiliation.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2594a",
+          "label": "Sahih Muslim 2594a",
+          "url": "https://sunnah.com/muslim:2594a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_052",
+      "conceptId": "kids_character_beneficial_effort",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You find a lesson difficult. Which plan combines useful effort with seeking Allah's help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Refuse all practice and demand instant success"
+        },
+        {
+          "id": "b",
+          "text": "Mock everyone who studies"
+        },
+        {
+          "id": "c",
+          "text": "Treat one mistake as a reason to stop forever"
+        },
+        {
+          "id": "d",
+          "text": "Ask Allah for help, practice and ask your teacher"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith encourages beneficial effort and seeking Allah's help. A manageable practice plan and teacher support are useful ways to keep learning.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_053",
+      "conceptId": "kids_character_young_and_old",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You join a family activity with a younger cousin and a grandparent. Which attitude fits the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Be caring toward the child and respectful toward the elder"
+        },
+        {
+          "id": "b",
+          "text": "Mock the cousin and insult the grandparent"
+        },
+        {
+          "id": "c",
+          "text": "Care only about people your own age"
+        },
+        {
+          "id": "d",
+          "text": "Assume age differences remove everyone's dignity"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report teaches mercy for younger people and respect for elders. In a family activity, both deserve considerate treatment.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sunan Abi Dawud",
+          "number": "4943",
+          "label": "Sunan Abi Dawud 4943",
+          "url": "https://sunnah.com/abudawud:4943"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_054",
+      "conceptId": "kids_character_share_with_neighbors",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your family prepares soup and wants to share with a neighbor. How can you help appropriately?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take hot food outside alone without permission"
+        },
+        {
+          "id": "b",
+          "text": "Ask a parent to arrange a suitable portion and delivery"
+        },
+        {
+          "id": "c",
+          "text": "Demand an expensive present in return"
+        },
+        {
+          "id": "d",
+          "text": "Mock the neighbor for accepting"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "This applies the report's lesson of remembering neighbors with food. Let an adult manage permission, safe handling and suitable delivery.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2625b",
+          "label": "Sahih Muslim 2625b",
+          "url": "https://sunnah.com/muslim:2625b"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_055",
+      "conceptId": "kids_character_choose_good_company",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "One playgroup encourages cheating; another helps you play honestly. Which choice follows the companionship lesson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choose whoever pressures you to cheat most"
+        },
+        {
+          "id": "b",
+          "text": "Decide only by whose shoes cost more"
+        },
+        {
+          "id": "c",
+          "text": "Choose company that encourages honest play"
+        },
+        {
+          "id": "d",
+          "text": "Assume every harmful dare must be obeyed"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Companions can influence choices. Seek good company while treating others respectfully and asking an adult for help with pressure.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5534",
+          "label": "Sahih al-Bukhari 5534",
+          "url": "https://sunnah.com/bukhari:5534"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_056",
+      "conceptId": "kids_character_respectful_parent_speech",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An elderly parent needs a question repeated. Which response follows the Quran's teaching about speech?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock them for needing to hear it again"
+        },
+        {
+          "id": "b",
+          "text": "Answer with a contemptuous insult"
+        },
+        {
+          "id": "c",
+          "text": "Pretend their dignity no longer matters"
+        },
+        {
+          "id": "d",
+          "text": "Repeat respectfully without scolding"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse teaches respectful speech to parents, especially in old age. A patient reply is a familiar way to practice that care.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "23",
+          "label": "Quran 17:23",
+          "url": "https://quran.com/17/23"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_057",
+      "conceptId": "kids_character_fairness_to_children",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A teacher reads the report about a father giving one child a gift. Which family value should you identify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fairness in how children are treated"
+        },
+        {
+          "id": "b",
+          "text": "Making siblings compete for basic dignity"
+        },
+        {
+          "id": "c",
+          "text": "Believing one child has no worth"
+        },
+        {
+          "id": "d",
+          "text": "Using gifts as permission for cruelty"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet ﷺ reminded the father to be just to his children. The lesson highlights fairness without asking children to judge their family.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2587",
+          "label": "Sahih al-Bukhari 2587",
+          "url": "https://sunnah.com/bukhari:2587"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_058",
+      "conceptId": "kids_character_value_small_giving",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "With permission, you can give a small amount to a trustworthy charity. Should you dismiss it only because it is modest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only a large gift deserves consideration"
+        },
+        {
+          "id": "b",
+          "text": "No, a suitable small gift can still matter"
+        },
+        {
+          "id": "c",
+          "text": "Yes, kindness depends entirely on being wealthy"
+        },
+        {
+          "id": "d",
+          "text": "No, you must give away every necessary belonging"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The hadith encourages even small charity. Follow your parent's guidance and do not compare your family's means with someone else's.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1417",
+          "label": "Sahih al-Bukhari 1417",
+          "url": "https://sunnah.com/bukhari:1417"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_059",
+      "conceptId": "kids_character_small_friendly_kindness",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A new child joins a supervised activity. Which small action can show a friendly welcome?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make them prove they can buy gifts"
+        },
+        {
+          "id": "b",
+          "text": "Turn away to make them feel unwanted"
+        },
+        {
+          "id": "c",
+          "text": "Greet them kindly and offer a place in the group"
+        },
+        {
+          "id": "d",
+          "text": "Mock their nervousness"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith values small good deeds, including a friendly expression. A kind welcome can help someone feel at ease.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2626",
+          "label": "Sahih Muslim 2626",
+          "url": "https://sunnah.com/muslim:2626"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_character_conduct_060",
+      "conceptId": "kids_character_respect_confidences",
+      "categoryId": "character_conduct",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend privately shares an ordinary, harmless worry. What respects their confidence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Post it publicly to gain attention"
+        },
+        {
+          "id": "b",
+          "text": "Use it to embarrass them"
+        },
+        {
+          "id": "c",
+          "text": "Promise to hide any future danger from every adult"
+        },
+        {
+          "id": "d",
+          "text": "Avoid spreading it for entertainment; seek help if safety is involved"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Keeping ordinary confidence shows trustworthiness. If a worry involves harm or safety, involve a trusted adult rather than keeping it secret.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6289",
+          "label": "Sahih al-Bukhari 6289",
+          "url": "https://sunnah.com/bukhari:6289"
+        }
+      ]
+    }
+  ]
+}

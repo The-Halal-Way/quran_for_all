@@ -1,0 +1,2298 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "bn",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "seerah",
+  "title": "নবীজির জীবন (সিরাত)",
+  "description": "ছোট্ট মুসলিম → প্রাথমিক স্তর। নবী মুহাম্মদ ﷺ-এর জীবনের পরিচিত ব্যক্তি ও স্থান, ওহির শুরু, হিজরত এবং প্রতিদিনের যত্নশীল আচরণ নিয়ে ছোট প্রশ্ন। প্রায় ৬–৯ বছরের শিশুদের কথা ভেবে লেখা; প্রয়োজনে বড় কেউ প্রশ্ন পড়ে শোনাতে পারেন। সব প্রশ্ন শিশুদের প্রাথমিক স্তরের।",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "প্রাথমিক স্তর সব ধরনের প্রশ্নে প্রয়োজনীয় জ্ঞান ও বোঝাপড়া বোঝায়। প্রশ্নের ধরন কঠিনতার স্তর নয়। শিশুদের জন্য নবী ﷺ-এর জীবনের প্রাথমিক পরিচয়, ছোট বাক্য ও সরল উদাহরণ ব্যবহার করা হয়েছে। বয়স ও স্তর বিষয়বস্তু বিচার করে নির্ধারিত; শিশুদের পড়ার সামর্থ্য বা বাস্তব উত্তরের তথ্য দিয়ে মান নির্ধারণ করা হয়নি। কুইজের ফল শেখার প্রয়োজন বোঝায়, শিশুর ঈমান বা মূল্য নয়।",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "ইংরেজি সংস্করণ প্রস্তুতির সময় সংযুক্ত হাদিস ও জীবনীসংক্রান্ত সূত্র মিলিয়ে দেখা হয়েছে। ইতিহাসের ব্যক্তি ও ঘটনা এবং বর্তমান দিনের উদাহরণ আলাদা রাখা হয়েছে। প্রশ্ন ও ব্যাখ্যার এই বাংলা রূপ শিশুদের উপযোগী শিক্ষামূলক ভাষায় লেখা; হাদিসের হুবহু অনুবাদ নয়। দৈনন্দিন উদাহরণে সূত্রের মূলনীতি বোঝানো হয়েছে। এটি স্বতন্ত্র আলেমের অনুমোদন বা শিশুদের নিয়ে সম্পন্ন মূল্যায়ন নয়।"
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "আমি নিশ্চিত নই—এটি পঞ্চম উত্তর না করে আলাদা UI বিকল্প হিসেবে রাখুন।"
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_seerah_001",
+      "conceptId": "kids_seerah_birth_makkah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী মুহাম্মদ ﷺ কোন শহরে জন্মগ্রহণ করেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মক্কা"
+        },
+        {
+          "id": "b",
+          "text": "মদিনা"
+        },
+        {
+          "id": "c",
+          "text": "জেরুজালেম"
+        },
+        {
+          "id": "d",
+          "text": "তায়েফ"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী মুহাম্মদ ﷺ মক্কা শহরে জন্মগ্রহণ করেছেন।",
+      "references": [
+        {
+          "type": "web",
+          "label": "ইসলামওয়েব — নবী মুহাম্মদ ﷺ-এর জন্ম",
+          "url": "https://www.islamweb.net/en/article/76848/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_002",
+      "conceptId": "kids_seerah_father_abdullah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ-এর বাবার নাম কী ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবু বকর"
+        },
+        {
+          "id": "b",
+          "text": "আবদুল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "উমর"
+        },
+        {
+          "id": "d",
+          "text": "আলী"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী ﷺ-এর বাবার নাম ছিল আবদুল্লাহ। মুহাম্মদ ইবনে আবদুল্লাহ মানে আবদুল্লাহর ছেলে মুহাম্মদ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_003",
+      "conceptId": "kids_seerah_mother_aminah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ-এর মায়ের নাম কী ছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাদিজা"
+        },
+        {
+          "id": "b",
+          "text": "আয়েশা"
+        },
+        {
+          "id": "c",
+          "text": "আমিনা"
+        },
+        {
+          "id": "d",
+          "text": "ফাতিমা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ-এর মা ছিলেন আমিনা। তাঁর বাবার নাম ছিল ওয়াহব।",
+      "references": [
+        {
+          "type": "web",
+          "label": "ইসলামওয়েব — নবী মুহাম্মদ ﷺ-এর মা আমিনা",
+          "url": "https://islamweb.com/en/fatwa/258025/the-lineage-of-aaminah-the-mother-of-the-prophet-sallallaahu-alayhi-wa-sallam"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_004",
+      "conceptId": "kids_seerah_khadijah_support",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কুরআনের প্রথম আয়াত নাজিল হওয়ার পর কোন স্ত্রী নবী ﷺ-কে সান্ত্বনা দিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আয়েশা"
+        },
+        {
+          "id": "b",
+          "text": "হাফসা"
+        },
+        {
+          "id": "c",
+          "text": "উম্মে সালামা"
+        },
+        {
+          "id": "d",
+          "text": "খাদিজা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "খাদিজা তাঁকে সান্ত্বনা দিয়েছিলেন। তিনি নবী ﷺ-এর ভালো চরিত্র ও মানুষের প্রতি যত্নের কথা বলেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "160a",
+          "label": "সহিহ মুসলিম ১৬০a",
+          "url": "https://sunnah.com/muslim:160a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_005",
+      "conceptId": "kids_seerah_hira",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোন গুহায় নবী ﷺ-এর কাছে কুরআনের প্রথম আয়াতগুলো নাজিল হয়েছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হেরা"
+        },
+        {
+          "id": "b",
+          "text": "সাওর"
+        },
+        {
+          "id": "c",
+          "text": "আসহাবে কাহফের গুহা"
+        },
+        {
+          "id": "d",
+          "text": "মদিনার একটি গুহা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হেরা গুহায় নবী ﷺ-এর কাছে কুরআনের প্রথম আয়াতগুলো নাজিল হয়েছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_006",
+      "conceptId": "kids_seerah_age_forty",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কত বছর বয়সে নবী ﷺ ওহি পাওয়া শুরু করেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দশ বছর"
+        },
+        {
+          "id": "b",
+          "text": "চল্লিশ বছর"
+        },
+        {
+          "id": "c",
+          "text": "বিশ বছর"
+        },
+        {
+          "id": "d",
+          "text": "ষাট বছর"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "চল্লিশ বছর বয়সে নবী ﷺ ওহি পাওয়া শুরু করেন। ওহি হলো আল্লাহর পাঠানো বার্তা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3902",
+          "label": "সহিহ বুখারি ৩৯০২",
+          "url": "https://sunnah.com/bukhari:3902"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_007",
+      "conceptId": "kids_seerah_hijrah_route",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হিজরতের সময় নবী ﷺ মক্কা থেকে কোন শহরে গিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তায়েফ"
+        },
+        {
+          "id": "b",
+          "text": "জেরুজালেম"
+        },
+        {
+          "id": "c",
+          "text": "মদিনা"
+        },
+        {
+          "id": "d",
+          "text": "দামেস্ক"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হিজরতে নবী ﷺ মক্কা থেকে মদিনায় চলে গিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_008",
+      "conceptId": "kids_seerah_abu_bakr_cave",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হিজরতের সময় গুহায় নবী ﷺ-এর সঙ্গে কোন সাহাবি ছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উমর"
+        },
+        {
+          "id": "b",
+          "text": "উসমান"
+        },
+        {
+          "id": "c",
+          "text": "আলী"
+        },
+        {
+          "id": "d",
+          "text": "আবু বকর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "আবু বকর হিজরতের সফরে নবী ﷺ-এর সঙ্গী ছিলেন। গুহাতেও তিনি তাঁর সঙ্গে ছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "সহিহ বুখারি ৩৬৫৩",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_009",
+      "conceptId": "kids_seerah_mosque_madinah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "হিজরতের পর নবী ﷺ কোন শহরে তাঁর মসজিদ প্রতিষ্ঠা করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মদিনা"
+        },
+        {
+          "id": "b",
+          "text": "মক্কা"
+        },
+        {
+          "id": "c",
+          "text": "তায়েফ"
+        },
+        {
+          "id": "d",
+          "text": "জেরুজালেম"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ-এর মসজিদ মদিনায়। সেখানে পৌঁছানোর পর তিনি এটি প্রতিষ্ঠা করেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "সহিহ বুখারি ৪২৮",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_010",
+      "conceptId": "kids_seerah_fatimah_daughter",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এঁদের মধ্যে কে নবী ﷺ-এর মেয়ে ছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাদিজা"
+        },
+        {
+          "id": "b",
+          "text": "ফাতিমা"
+        },
+        {
+          "id": "c",
+          "text": "আমিনা"
+        },
+        {
+          "id": "d",
+          "text": "আয়েশা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ফাতিমা ছিলেন নবী ﷺ-এর মেয়েদের একজন। তিনি তাঁকে ভালোবেসে স্বাগত জানিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3623",
+          "label": "সহিহ বুখারি ৩৬২৩",
+          "url": "https://sunnah.com/bukhari:3623"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_011",
+      "conceptId": "kids_seerah_affection_hasan",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "এই হাদিসে নবী ﷺ শিশু হাসানকে কীভাবে আদর করেছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাকে নিয়ে ঠাট্টা করেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "তার দিকে তাকাতেই চাননি"
+        },
+        {
+          "id": "c",
+          "text": "তাকে চুমু দিয়েছিলেন"
+        },
+        {
+          "id": "d",
+          "text": "দয়াকে দুর্বলতা বলেছিলেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ হাসানকে চুমু দিয়েছিলেন এবং দয়া দেখানোর গুরুত্ব শিখিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "সহিহ বুখারি ৫৯৯৭",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_012",
+      "conceptId": "kids_seerah_greet_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "একদল শিশুর পাশ দিয়ে যাওয়ার সময় নবী ﷺ কী করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বলতেন, সালাম শুধু বড়দের জন্য"
+        },
+        {
+          "id": "b",
+          "text": "তাদের কখনো কথা না বলতে বলতেন"
+        },
+        {
+          "id": "c",
+          "text": "এমন করতেন যেন শিশুরা সেখানে নেই"
+        },
+        {
+          "id": "d",
+          "text": "তাদের সালাম দিতেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ শিশুদের সালাম দিতেন। শিশুরাও তাঁর কাছে গুরুত্বপূর্ণ ছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6247",
+          "label": "সহিহ বুখারি ৬২৪৭",
+          "url": "https://sunnah.com/bukhari:6247"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_013",
+      "conceptId": "kids_seerah_help_family",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ ঘরে কী করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিবারের কাজে সাহায্য করতেন"
+        },
+        {
+          "id": "b",
+          "text": "ঘরের সব কাজ করতে অস্বীকার করতেন"
+        },
+        {
+          "id": "c",
+          "text": "বলতেন, সাহায্য করা তাঁর মানায় না"
+        },
+        {
+          "id": "d",
+          "text": "চাইতেন, সবাই শুধু তাঁর সেবা করুক"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আয়েশা বলেছেন, নবী ﷺ ঘরে পরিবারের কাজে সাহায্য করতেন। নামাজের সময় হলে নামাজে যেতেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "676",
+          "label": "সহিহ বুখারি ৬৭৬",
+          "url": "https://sunnah.com/bukhari:676"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_014",
+      "conceptId": "kids_seerah_gentle_with_anas",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ তাঁর সঙ্গে কেমন আচরণ করতেন বলে আনাস জানিয়েছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব সময় রূঢ় কথা ও অপমান"
+        },
+        {
+          "id": "b",
+          "text": "কোমল ও ধৈর্যশীল আচরণ"
+        },
+        {
+          "id": "c",
+          "text": "সব সময় তাঁর কাজ নিয়ে ঠাট্টা"
+        },
+        {
+          "id": "d",
+          "text": "অহংকার করে ভালোভাবে কথা না বলা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আনাস অনেক বছর নবী ﷺ-এর সেবা করেছেন। তিনি নবী ﷺ-এর কোমল আচরণের কথা মনে রেখেছেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "সহিহ বুখারি ৬০৩৮",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_015",
+      "conceptId": "kids_seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "কোনো খাবার খেতে ইচ্ছে না হলে নবী ﷺ কী করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাবারটির নিন্দা করতেন"
+        },
+        {
+          "id": "b",
+          "text": "যিনি রান্না করেছেন তাঁকে নিয়ে ঠাট্টা করতেন"
+        },
+        {
+          "id": "c",
+          "text": "দোষ না ধরে সেটি রেখে দিতেন"
+        },
+        {
+          "id": "d",
+          "text": "যারা খেত তাদের বোকা বলতেন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "পছন্দ হলে তিনি খাবার খেতেন। না চাইলে দোষ না ধরে সেটি রেখে দিতেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "সহিহ বুখারি ৫৪০৯",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_016",
+      "conceptId": "kids_seerah_generosity",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দান করার ক্ষেত্রে নবী ﷺ কেমন ছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সব সময় সাহায্য করতে অনিচ্ছুক"
+        },
+        {
+          "id": "b",
+          "text": "শুধু পুরস্কার পেলে দয়ালু"
+        },
+        {
+          "id": "c",
+          "text": "শুধু সবকিছু নিজের কাছে রাখতে আগ্রহী"
+        },
+        {
+          "id": "d",
+          "text": "খুব দানশীল"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "নবী ﷺ খুব দানশীল ছিলেন। রমজানে তাঁর দানশীলতা আরও বেড়ে যেত।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "সহিহ বুখারি ৬",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_017",
+      "conceptId": "kids_seerah_smile_jarir",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "নবী ﷺ তাঁকে কীভাবে স্বাগত জানাতেন বলে জারির মনে রেখেছেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাসিমুখে"
+        },
+        {
+          "id": "b",
+          "text": "অপমান করে"
+        },
+        {
+          "id": "c",
+          "text": "উপহার চেয়ে"
+        },
+        {
+          "id": "d",
+          "text": "বিদ্রূপের হাসি হেসে"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "জারির মনে রেখেছেন, নবী ﷺ তাঁকে হাসিমুখে স্বাগত জানাতেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6089",
+          "label": "সহিহ বুখারি ৬০৮৯",
+          "url": "https://sunnah.com/bukhari:6089"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_018",
+      "conceptId": "kids_seerah_considerate_prayer",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "শিশুর কান্না শুনে নবী ﷺ কেন নামাজ সংক্ষিপ্ত করতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "কারণ শিশুদের গুরুত্ব ছিল না"
+        },
+        {
+          "id": "b",
+          "text": "শিশুটির মায়ের কষ্ট যেন না হয়"
+        },
+        {
+          "id": "c",
+          "text": "অন্য মুসল্লিদের শাস্তি দিতে"
+        },
+        {
+          "id": "d",
+          "text": "কারণ দয়া গুরুত্বপূর্ণ ছিল না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তিনি মায়ের দুশ্চিন্তার কথা ভেবে নামাজ বেশি দীর্ঘ করতেন না। ছোট শিশু আছে এমন পরিবারের প্রতিও তাঁর যত্ন ছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "সহিহ বুখারি ৭০৭",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_019",
+      "conceptId": "kids_seerah_truthful_reputation",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "সাফা পাহাড়ে লোকেরা নবী ﷺ-এর সত্যবাদিতা সম্পর্কে কী বলেছিল?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তারা তাঁকে গল্প বানাতে দেখেছে"
+        },
+        {
+          "id": "b",
+          "text": "তারা শুধু তাঁর ঠাট্টা বিশ্বাস করত"
+        },
+        {
+          "id": "c",
+          "text": "তারা তাঁকে সত্য বলতে দেখেছে"
+        },
+        {
+          "id": "d",
+          "text": "তারা কখনো তাঁর কথা শোনেনি"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সাফায় নবী ﷺ কথা বলার সময় তাঁর বিরোধীরাও স্বীকার করেছিল যে তিনি সত্য বলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "সহিহ বুখারি ৪৭৭০",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_020",
+      "conceptId": "kids_seerah_easier_good_choice",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "দুটি পথের মধ্যে বেছে নেওয়ার সুযোগ হলে নবী ﷺ কোনটি নিতেন, যদি তাতে গুনাহ না থাকত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "যে পথে অন্যের ক্ষতি হতো"
+        },
+        {
+          "id": "b",
+          "text": "যে পথে অসততা থাকত"
+        },
+        {
+          "id": "c",
+          "text": "যে পথে বড়াই করা যেত"
+        },
+        {
+          "id": "d",
+          "text": "সহজ পথটি"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "গুনাহ না থাকলে নবী ﷺ সহজ পথ বেছে নিতেন। শুধু সহজ করার জন্য তিনি গুনাহের কাজ বেছে নিতেন না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "সহিহ বুখারি ৩৫৬০",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_021",
+      "conceptId": "kids_seerah_birth_makkah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মক্কাকে নবী ﷺ-এর জন্মস্থান বলার মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি সেখানে জন্মেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "হিজরতের পর প্রথম সেখানে গিয়েছিলেন"
+        },
+        {
+          "id": "c",
+          "text": "এটি তাঁর বাবার নাম ছিল"
+        },
+        {
+          "id": "d",
+          "text": "এটি তাঁর মসজিদের নাম ছিল"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "যেখানে কারও জন্ম হয়, সেটি তার জন্মস্থান। নবী ﷺ মক্কায় জন্মগ্রহণ করেছেন।",
+      "references": [
+        {
+          "type": "web",
+          "label": "ইসলামওয়েব — নবী মুহাম্মদ ﷺ-এর জন্ম",
+          "url": "https://www.islamweb.net/en/article/76848/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_022",
+      "conceptId": "kids_seerah_father_abdullah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "মুহাম্মদ ইবনে আবদুল্লাহ কথার মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবদুল্লাহর ভাই মুহাম্মদ"
+        },
+        {
+          "id": "b",
+          "text": "আবদুল্লাহর ছেলে মুহাম্মদ"
+        },
+        {
+          "id": "c",
+          "text": "আবদুল্লাহর শিক্ষক মুহাম্মদ"
+        },
+        {
+          "id": "d",
+          "text": "আবদুল্লাহর প্রতিবেশী মুহাম্মদ"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "এই নামে ইবনে মানে ছেলে। আবদুল্লাহ ছিলেন নবী ﷺ-এর বাবা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_023",
+      "conceptId": "kids_seerah_mother_aminah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ-এর পরিবারের ছকে আমিনাকে কোন পরিচয়ে রাখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর মেয়ে"
+        },
+        {
+          "id": "b",
+          "text": "তাঁর স্ত্রী"
+        },
+        {
+          "id": "c",
+          "text": "তাঁর মা"
+        },
+        {
+          "id": "d",
+          "text": "তাঁর বোন"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আমিনা ছিলেন তাঁর মা। পরিবারের নামগুলো মনে রাখলে নবী ﷺ-এর জীবন জানতে সুবিধা হয়।",
+      "references": [
+        {
+          "type": "web",
+          "label": "ইসলামওয়েব — নবী মুহাম্মদ ﷺ-এর মা আমিনা",
+          "url": "https://islamweb.com/en/fatwa/258025/the-lineage-of-aaminah-the-mother-of-the-prophet-sallallaahu-alayhi-wa-sallam"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_024",
+      "conceptId": "kids_seerah_khadijah_support",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "প্রথম ওহির পর খাদিজার আচরণ থেকে কী বোঝা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি নবী ﷺ-এর দুশ্চিন্তা নিয়ে হেসেছিলেন"
+        },
+        {
+          "id": "b",
+          "text": "তিনি শুনতেই চাননি"
+        },
+        {
+          "id": "c",
+          "text": "তিনি বলেছিলেন, ভালো চরিত্রের দাম নেই"
+        },
+        {
+          "id": "d",
+          "text": "তিনি যত্নভরা কথায় সাহস দিয়েছিলেন"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "খাদিজা মন দিয়ে শুনে সাহস দিয়েছিলেন। তিনি নবী ﷺ-এর সত্যবাদিতা, পরিবারের যত্ন ও অসহায়দের সাহায্য করার কথা মনে করিয়ে দিয়েছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "160a",
+          "label": "সহিহ মুসলিম ১৬০a",
+          "url": "https://sunnah.com/muslim:160a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_025",
+      "conceptId": "kids_seerah_hira",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হেরা গুহার সঙ্গে কোন ঘটনাটি জড়িত?",
+      "options": [
+        {
+          "id": "a",
+          "text": "নবী ﷺ-এর কাছে কুরআনের প্রথম আয়াত নাজিল হওয়া"
+        },
+        {
+          "id": "b",
+          "text": "সেখানে নবী ﷺ-এর মসজিদ তৈরি হওয়া"
+        },
+        {
+          "id": "c",
+          "text": "সেটি মদিনা শহর হয়ে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "সেখানে নবী ﷺ-এর জন্ম হওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হেরা গুহার সঙ্গে কুরআন নাজিলের শুরুর ঘটনা জড়িত। হিজরতের সময় তাঁরা যে গুহায় ছিলেন, সেটি আলাদা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_026",
+      "conceptId": "kids_seerah_age_forty",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ওহি পাওয়া শুরু করার সময় নবী ﷺ শিশু ছিলেন, নাকি প্রাপ্তবয়স্ক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাঁটতে শেখা একটি শিশু"
+        },
+        {
+          "id": "b",
+          "text": "চল্লিশ বছরের একজন প্রাপ্তবয়স্ক"
+        },
+        {
+          "id": "c",
+          "text": "সাত বছরের একটি শিশু"
+        },
+        {
+          "id": "d",
+          "text": "পনেরো বছরের একজন কিশোর"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ওহি পাওয়া শুরু করার সময় তাঁর বয়স ছিল চল্লিশ বছর। তখন তিনি প্রাপ্তবয়স্ক ছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3902",
+          "label": "সহিহ বুখারি ৩৯০২",
+          "url": "https://sunnah.com/bukhari:3902"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_027",
+      "conceptId": "kids_seerah_hijrah_route",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ-এর জীবনে মদিনায় হিজরত বলতে কী বোঝায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হজের জন্য মদিনা থেকে মক্কায় যাওয়া"
+        },
+        {
+          "id": "b",
+          "text": "মক্কা থেকে তায়েফে যাওয়া"
+        },
+        {
+          "id": "c",
+          "text": "মক্কা থেকে মদিনায় চলে যাওয়া"
+        },
+        {
+          "id": "d",
+          "text": "কাবা ঘর তৈরি করা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "মদিনায় হিজরত তাঁর জীবনের গুরুত্বপূর্ণ ঘটনা। তিনি মক্কা থেকে মদিনায় চলে যান।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_028",
+      "conceptId": "kids_seerah_abu_bakr_cave",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "গুহায় নবী ﷺ আবু বকরকে সাহস দিয়েছিলেন। তিনি কার সাহায্যের কথা মনে করিয়ে দিয়েছিলেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "জাদুর পাথরের সাহায্য"
+        },
+        {
+          "id": "b",
+          "text": "তারার সাহায্য"
+        },
+        {
+          "id": "c",
+          "text": "সৌভাগ্যের তাবিজের সাহায্য"
+        },
+        {
+          "id": "d",
+          "text": "আল্লাহর সাহায্য"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তিনি আবু বকরকে আল্লাহর সাহায্যের কথা মনে করিয়ে দিয়েছিলেন। এ ঘটনা বিপদে আল্লাহর ওপর ভরসা করতে শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "সহিহ বুখারি ৩৬৫৩",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_029",
+      "conceptId": "kids_seerah_mosque_madinah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ মদিনায় যে মসজিদ প্রতিষ্ঠা করেছিলেন, সেখানে কোন কাজটি করা হতো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আল্লাহর ইবাদত ও নামাজ"
+        },
+        {
+          "id": "b",
+          "text": "সূর্যের উপাসনা"
+        },
+        {
+          "id": "c",
+          "text": "দামি জিনিস দেখিয়ে বড়াই"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে নামাজ পড়তে বাধা দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মসজিদ ইবাদতের জন্য প্রতিষ্ঠা করা হয়েছিল। নবী ﷺ ও তাঁর সাহাবিরা সেখানে নামাজ পড়তেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "সহিহ বুখারি ৪২৮",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_030",
+      "conceptId": "kids_seerah_fatimah_daughter",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ফাতিমা ছিলেন নবী ﷺ-এর মেয়ে। তিনি ফাতিমার কী হতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ভাই"
+        },
+        {
+          "id": "b",
+          "text": "বাবা"
+        },
+        {
+          "id": "c",
+          "text": "ছেলে"
+        },
+        {
+          "id": "d",
+          "text": "ভাইয়ের ছেলে"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "বাবা ও মেয়ে একটি পরিবারের সদস্য। নবী ﷺ ছিলেন ফাতিমার বাবা।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3623",
+          "label": "সহিহ বুখারি ৩৬২৩",
+          "url": "https://sunnah.com/bukhari:3623"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_031",
+      "conceptId": "kids_seerah_affection_hasan",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "হাসানের প্রতি নবী ﷺ-এর আদর থেকে কী শিখি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দয়া মানুষকে দুর্বল করে"
+        },
+        {
+          "id": "b",
+          "text": "শিশুদের কখনো যত্ন করা উচিত নয়"
+        },
+        {
+          "id": "c",
+          "text": "শিশুদের ভালোবাসা ও যত্ন দেখানো ভালো"
+        },
+        {
+          "id": "d",
+          "text": "শুধু বড়রাই দয়া পাওয়ার যোগ্য"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাদিসটি শিশুর প্রতি মমতা ও দয়া শেখায়। ভালোবাসা দিয়ে যত্ন নেওয়া ভালো চরিত্রের অংশ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "সহিহ বুখারি ৫৯৯৭",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_032",
+      "conceptId": "kids_seerah_greet_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ শিশুদের সালাম দিতেন—এ থেকে কী শিখি?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সালাম শুধু ধনী বড়দের জন্য"
+        },
+        {
+          "id": "b",
+          "text": "সবার সামনে শিশুদের উপেক্ষা করতে হয়"
+        },
+        {
+          "id": "c",
+          "text": "বয়সে ছোট হলে মানুষের মূল্য থাকে না"
+        },
+        {
+          "id": "d",
+          "text": "শিশুরাও ভালোভাবে সালাম পাওয়ার যোগ্য"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "তিনি শিশুদেরও সালাম দিতেন। আমরাও অন্যদের আন্তরিকভাবে সালাম দিয়ে তাঁর অনুসরণ করতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6247",
+          "label": "সহিহ বুখারি ৬২৪৭",
+          "url": "https://sunnah.com/bukhari:6247"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_033",
+      "conceptId": "kids_seerah_help_family",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "ঘরে নবী ﷺ-এর সাহায্য করা থেকে কী বোঝা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিবারকে সাহায্য করা সম্মানের কাজ"
+        },
+        {
+          "id": "b",
+          "text": "ঘরের কাজে সাহায্য করলে সম্মান কমে"
+        },
+        {
+          "id": "c",
+          "text": "শুধু অতিথিরাই ভালো ব্যবহার পাবে"
+        },
+        {
+          "id": "d",
+          "text": "গুরুত্বপূর্ণ মানুষ সাহায্য করতে পারেন না"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "তিনি পরিবারের কাজে সাহায্য করতেন। ঘরের বাইরের মতো ঘরেও যত্নশীল আচরণ করা দরকার।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "676",
+          "label": "সহিহ বুখারি ৬৭৬",
+          "url": "https://sunnah.com/bukhari:676"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_034",
+      "conceptId": "kids_seerah_gentle_with_anas",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "আনাসের স্মৃতির সঙ্গে কোন শিক্ষাটি মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সাহায্যকারীর অনুভূতির কোনো দাম নেই"
+        },
+        {
+          "id": "b",
+          "text": "সাহায্যকারীর সঙ্গে ধৈর্য ও সম্মান দেখানো"
+        },
+        {
+          "id": "c",
+          "text": "অপমান করাই শেখানোর সেরা উপায়"
+        },
+        {
+          "id": "d",
+          "text": "সাহায্যকারীকে কখনো ধন্যবাদ দেওয়া যাবে না"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "আনাসের সঙ্গে নবী ﷺ-এর কোমল আচরণ আমাদের সাহায্যকারীদের সঙ্গে ধৈর্য দেখাতে শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "সহিহ বুখারি ৬০৩৮",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_035",
+      "conceptId": "kids_seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কোনো খাবার ভদ্রভাবে না খেতে চাইলে কি আগে তার নিন্দা করতে হবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, নিন্দা করলেই ভদ্রভাবে না বলা হয়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সবাইকে অভিযোগ শোনাতে হবে"
+        },
+        {
+          "id": "c",
+          "text": "না, নিন্দা না করেও না খাওয়া যায়"
+        },
+        {
+          "id": "d",
+          "text": "হ্যাঁ, যিনি রান্না করেছেন তাঁকে নিয়ে হাসতে হবে"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ খাবারের দোষ ধরতেন না। কাউকে কষ্ট দেওয়ার কথা না বলেও আমরা নিজের পছন্দ জানাতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "সহিহ বুখারি ৫৪০৯",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_036",
+      "conceptId": "kids_seerah_generosity",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "দানশীল হওয়ার মানে কী?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সবার জিনিস নিয়ে নেওয়া"
+        },
+        {
+          "id": "b",
+          "text": "নিজের সব জিনিস নিয়ে বড়াই করা"
+        },
+        {
+          "id": "c",
+          "text": "দরকারি জিনিস কাউকেই ব্যবহার করতে না দেওয়া"
+        },
+        {
+          "id": "d",
+          "text": "নিজের ইচ্ছায় অন্যকে দেওয়া ও সাহায্য করা"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "দানশীল হওয়া মানে নিজের ইচ্ছায় দেওয়া ও সাহায্য করা। নবী ﷺ এর চমৎকার উদাহরণ ছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "সহিহ বুখারি ৬",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_037",
+      "conceptId": "kids_seerah_smile_jarir",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "নবী ﷺ-এর হাসিমুখের যে স্মৃতি জারির বলেছেন, তা কী শেখায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আন্তরিকভাবে কাউকে স্বাগত জানানো"
+        },
+        {
+          "id": "b",
+          "text": "কাউকে নিয়ে ঠাট্টা করা"
+        },
+        {
+          "id": "c",
+          "text": "সবাইকে মনের দুঃখ লুকাতে বলা"
+        },
+        {
+          "id": "d",
+          "text": "মানুষকে কখনো সাহায্য চাইতে না দেওয়া"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ-এর হাসি ছিল আন্তরিক স্বাগত। এটি মানুষকে নিয়ে হাসতে বা নিজের সব অনুভূতি লুকাতে শেখায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6089",
+          "label": "সহিহ বুখারি ৬০৮৯",
+          "url": "https://sunnah.com/bukhari:6089"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_038",
+      "conceptId": "kids_seerah_considerate_prayer",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "কান্নারত শিশুর মায়ের কথা ভেবে নামাজ সংক্ষিপ্ত করা থেকে কী বোঝা যায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তিনি মায়েদের অনুভূতির দাম দিতেন না"
+        },
+        {
+          "id": "b",
+          "text": "তিনি অন্যের প্রয়োজন খেয়াল করতেন"
+        },
+        {
+          "id": "c",
+          "text": "তিনি শিশুদের ভয় দেখাতে চাইতেন"
+        },
+        {
+          "id": "d",
+          "text": "তিনি সব মা-বাবাকে অপছন্দ করতেন"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তিনি মায়ের দুশ্চিন্তার কথা ভেবেছিলেন। তাঁর উদাহরণ অন্যের প্রয়োজন খেয়াল করতে শেখায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "সহিহ বুখারি ৭০৭",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_039",
+      "conceptId": "kids_seerah_truthful_reputation",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সাফায় লোকদের উত্তরটি নবী ﷺ-এর জীবনের ঘটনা হিসেবে গুরুত্বপূর্ণ কেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এতে প্রমাণ হয় সততার দাম নেই"
+        },
+        {
+          "id": "b",
+          "text": "এর মানে শুধু বন্ধুরা তাঁকে বিশ্বাস করতে পারত"
+        },
+        {
+          "id": "c",
+          "text": "তারা তাঁর সততার কথা স্বীকার করেছিল"
+        },
+        {
+          "id": "d",
+          "text": "এতে বোঝা যায় মিথ্যা বলার প্রশংসা করা হতো"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "লোকদের উত্তর থেকে বোঝা যায়, তিনি সত্যবাদী হিসেবে পরিচিত ছিলেন। তাঁর উদাহরণ থেকে আমরা সততা শিখতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "সহিহ বুখারি ৪৭৭০",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_040",
+      "conceptId": "kids_seerah_easier_good_choice",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "সহজ বলে নবী ﷺ কি কোনো ভুল বা গুনাহের কাজ বেছে নিতেন?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হ্যাঁ, সহজ হলেই সব ভুল ঠিক হয়ে যায়"
+        },
+        {
+          "id": "b",
+          "text": "হ্যাঁ, সহজ হলে কোনো নিয়ম মানতে হয় না"
+        },
+        {
+          "id": "c",
+          "text": "হ্যাঁ, সুবিধার জন্য অন্যকে কষ্ট দেওয়া যেত"
+        },
+        {
+          "id": "d",
+          "text": "না, সহজ পথটিতে গুনাহ থাকা চলত না"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "গুনাহ না থাকলে তিনি সহজ পথ বেছে নিতেন। সহজ হলেই ভুল কাজ সঠিক হয়ে যায় না।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "সহিহ বুখারি ৩৫৬০",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_041",
+      "conceptId": "kids_seerah_birth_makkah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "সারা মানচিত্রে নবী ﷺ-এর জন্মস্থান চিহ্নিত করছে। কোন শহরটি বেছে নেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মক্কা"
+        },
+        {
+          "id": "b",
+          "text": "মদিনা"
+        },
+        {
+          "id": "c",
+          "text": "তায়েফ"
+        },
+        {
+          "id": "d",
+          "text": "জেরুজালেম"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "মক্কা সেই শহর, যেখানে নবী মুহাম্মদ ﷺ জন্মগ্রহণ করেছেন।",
+      "references": [
+        {
+          "type": "web",
+          "label": "ইসলামওয়েব — নবী মুহাম্মদ ﷺ-এর জন্ম",
+          "url": "https://www.islamweb.net/en/article/76848/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_042",
+      "conceptId": "kids_seerah_father_abdullah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "আয়ানের খাতায় নবী ﷺ-এর বাবার নাম লিখতে বলা হয়েছে। সে কোন নামটি লিখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আবু বকর"
+        },
+        {
+          "id": "b",
+          "text": "আবদুল্লাহ"
+        },
+        {
+          "id": "c",
+          "text": "উমর"
+        },
+        {
+          "id": "d",
+          "text": "উসমান"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "তাঁর বাবার নাম ছিল আবদুল্লাহ। তাই তাঁকে মুহাম্মদ ইবনে আবদুল্লাহ বলা হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "সহিহ বুখারি ২৭৩১",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_043",
+      "conceptId": "kids_seerah_mother_aminah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "মরিয়ম নবী ﷺ-এর সঙ্গে তাঁর মায়ের নাম মেলাচ্ছে। কোন নামটি বেছে নেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ফাতিমা"
+        },
+        {
+          "id": "b",
+          "text": "খাদিজা"
+        },
+        {
+          "id": "c",
+          "text": "আমিনা"
+        },
+        {
+          "id": "d",
+          "text": "হাফসা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "আমিনা ছিলেন নবী মুহাম্মদ ﷺ-এর মা।",
+      "references": [
+        {
+          "type": "web",
+          "label": "ইসলামওয়েব — নবী মুহাম্মদ ﷺ-এর মা আমিনা",
+          "url": "https://islamweb.com/en/fatwa/258025/the-lineage-of-aaminah-the-mother-of-the-prophet-sallallaahu-alayhi-wa-sallam"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_044",
+      "conceptId": "kids_seerah_khadijah_support",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "খাদিজা কীভাবে নবী ﷺ-কে সান্ত্বনা দিয়েছিলেন তা শিখেছ। চিন্তিত বন্ধুকে তুমি কীভাবে সাহায্য করতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তার দুশ্চিন্তা নিয়ে হাসব"
+        },
+        {
+          "id": "b",
+          "text": "সবাইকে তাকে বিরক্ত করতে বলব"
+        },
+        {
+          "id": "c",
+          "text": "তাকে কথা বলতেই দেব না"
+        },
+        {
+          "id": "d",
+          "text": "মন দিয়ে শুনে ভালোভাবে কথা বলব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "খাদিজার যত্নশীল আচরণ অন্যকে সাহস দিতে শেখায়। বন্ধুর কথা মন দিয়ে শুনলে তার উপকার হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "160a",
+          "label": "সহিহ মুসলিম ১৬০a",
+          "url": "https://sunnah.com/muslim:160a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_045",
+      "conceptId": "kids_seerah_hira",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিক্ষক কুরআন নাজিলের শুরুর সঙ্গে জড়িত গুহাটি বেছে নিতে বললেন। তুমি কোন নামটি নেবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হেরা"
+        },
+        {
+          "id": "b",
+          "text": "সাওর"
+        },
+        {
+          "id": "c",
+          "text": "আসহাবে কাহফের গুহা"
+        },
+        {
+          "id": "d",
+          "text": "মদিনার একটি গুহা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "হেরা বেছে নাও। সেখানেই নবী ﷺ-এর কাছে কুরআনের প্রথম আয়াতগুলো নাজিল হয়েছিল।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "সহিহ বুখারি ৩",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_046",
+      "conceptId": "kids_seerah_age_forty",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ওহি পাওয়া শুরুর ঘটনা নিয়ে একটি কার্ড বানাচ্ছ। সেখানে কোন বয়সটি লিখবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "দশ"
+        },
+        {
+          "id": "b",
+          "text": "চল্লিশ"
+        },
+        {
+          "id": "c",
+          "text": "বিশ"
+        },
+        {
+          "id": "d",
+          "text": "ষাট"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "নবী ﷺ-এর চল্লিশ বছর বয়সে ওহি পাওয়া শুরু হয়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3902",
+          "label": "সহিহ বুখারি ৩৯০২",
+          "url": "https://sunnah.com/bukhari:3902"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_047",
+      "conceptId": "kids_seerah_hijrah_route",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শেখার খেলায় নবী ﷺ-এর হিজরতের দুটি শহর মেলাতে হবে। কোন জোড়াটি ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মদিনা থেকে তায়েফ"
+        },
+        {
+          "id": "b",
+          "text": "জেরুজালেম থেকে মক্কা"
+        },
+        {
+          "id": "c",
+          "text": "মক্কা থেকে মদিনা"
+        },
+        {
+          "id": "d",
+          "text": "দামেস্ক থেকে মদিনা"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "এখানে যে হিজরতের পথ শেখা হচ্ছে, তা মক্কা থেকে মদিনার পথ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "সহিহ বুখারি ৩৯০৫",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_048",
+      "conceptId": "kids_seerah_abu_bakr_cave",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "ক্লাসে সাহাবিদের নামের সঙ্গে ঘটনা মেলাতে হবে। হিজরতের গুহার ঘটনায় নবী ﷺ-এর পাশে কার নাম থাকবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "উমর"
+        },
+        {
+          "id": "b",
+          "text": "উসমান"
+        },
+        {
+          "id": "c",
+          "text": "আলী"
+        },
+        {
+          "id": "d",
+          "text": "আবু বকর"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "হিজরতের সময় গুহায় আবু বকর নবী ﷺ-এর সঙ্গে ছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "সহিহ বুখারি ৩৬৫৩",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_049",
+      "conceptId": "kids_seerah_mosque_madinah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "লিনার শেখার কার্ডে লেখা, “নবী ﷺ-এর মসজিদ।” সে কোন শহরের সঙ্গে মেলাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "মদিনা"
+        },
+        {
+          "id": "b",
+          "text": "মক্কা"
+        },
+        {
+          "id": "c",
+          "text": "তায়েফ"
+        },
+        {
+          "id": "d",
+          "text": "জেরুজালেম"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "নবী ﷺ-এর মসজিদ মদিনায়। হিজরতের পর তিনি সেখানে এটি প্রতিষ্ঠা করেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "সহিহ বুখারি ৪২৮",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_050",
+      "conceptId": "kids_seerah_fatimah_daughter",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "পরিবারের ছকে নবী ﷺ-এর একজন মেয়ের নাম বসাতে হবে। কোন নামটি ঠিক?",
+      "options": [
+        {
+          "id": "a",
+          "text": "আমিনা"
+        },
+        {
+          "id": "b",
+          "text": "ফাতিমা"
+        },
+        {
+          "id": "c",
+          "text": "খাদিজা"
+        },
+        {
+          "id": "d",
+          "text": "উম্মে সালামা"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ফাতিমা ছিলেন নবী ﷺ-এর মেয়েদের একজন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3623",
+          "label": "সহিহ বুখারি ৩৬২৩",
+          "url": "https://sunnah.com/bukhari:3623"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_051",
+      "conceptId": "kids_seerah_affection_hasan",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "হাসানের সঙ্গে নবী ﷺ-এর মমতার আচরণ শিখেছ। ছোট শিশুর সঙ্গে কোন কাজটি সেই শিক্ষা মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ছোট বলে শিশুকে নিয়ে ঠাট্টা করা"
+        },
+        {
+          "id": "b",
+          "text": "বলা, শিশুদের যত্ন দরকার নেই"
+        },
+        {
+          "id": "c",
+          "text": "শিশুর সঙ্গে কোমল ও ভালো আচরণ করা"
+        },
+        {
+          "id": "d",
+          "text": "শিশুকে এমন মনে করানো যেন কেউ তাকে চায় না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "হাসানের প্রতি নবী ﷺ-এর আদর শিশুদের ভালোবাসা ও যত্ন শেখায়। কোমল আচরণে আমরা সেই শিক্ষা কাজে লাগাতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "সহিহ বুখারি ৫৯৯৭",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_052",
+      "conceptId": "kids_seerah_greet_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "জেনেছ, নবী ﷺ শিশুদের সালাম দিতেন। সহপাঠীদের পাশ দিয়ে যাওয়ার সময় কী করতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "এমন করব যেন তারা সেখানে নেই"
+        },
+        {
+          "id": "b",
+          "text": "বলব, সালাম পাওয়ার জন্য তারা খুব ছোট"
+        },
+        {
+          "id": "c",
+          "text": "সালামের আগে উপহার চাইব"
+        },
+        {
+          "id": "d",
+          "text": "তাদের সালাম দেব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "শিশুদের সালাম দেওয়ার ক্ষেত্রে নবী ﷺ-এর উদাহরণ অনুসরণ করতে আমরাও আন্তরিকভাবে সালাম দিতে পারি।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6247",
+          "label": "সহিহ বুখারি ৬২৪৭",
+          "url": "https://sunnah.com/bukhari:6247"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_053",
+      "conceptId": "kids_seerah_help_family",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিখেছ, নবী ﷺ ঘরে সাহায্য করতেন। কোন কাজটি তাঁর উদাহরণ মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "পরিবারকে জিনিস গুছিয়ে রাখতে সাহায্য করা"
+        },
+        {
+          "id": "b",
+          "text": "বলা, সাহায্য করা আমাকে মানায় না"
+        },
+        {
+          "id": "c",
+          "text": "অন্যকে পরিষ্কার করাতে ঘর নোংরা করা"
+        },
+        {
+          "id": "d",
+          "text": "ঘরের কাজ করা কাউকে নিয়ে ঠাট্টা করা"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "ঘরের উপযুক্ত কাজে সাহায্য করা পরিবারের সেবায় নবী ﷺ-এর উদাহরণ অনুসরণ করার একটি উপায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "676",
+          "label": "সহিহ বুখারি ৬৭৬",
+          "url": "https://sunnah.com/bukhari:676"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_054",
+      "conceptId": "kids_seerah_gentle_with_anas",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "বন্ধু সাহায্য করতে গিয়ে কয়েকটি পেনসিল ফেলে দিল। আনাসের প্রতি নবী ﷺ-এর কোমলতা মনে রেখে কী করবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "বন্ধুকে অপমান করব"
+        },
+        {
+          "id": "b",
+          "text": "ভালোভাবে কথা বলে তুলতে সাহায্য করব"
+        },
+        {
+          "id": "c",
+          "text": "সে লজ্জা না পাওয়া পর্যন্ত হাসব"
+        },
+        {
+          "id": "d",
+          "text": "তাকে কোনো কাজের নয় বলব"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "ধৈর্য ও সম্মান রেখে কথা বলা নবী ﷺ-এর কোমলতার শিক্ষা মেনে চলে। অপমান না করেও ভুল ঠিক করতে সাহায্য করা যায়।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "সহিহ বুখারি ৬০৩৮",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_055",
+      "conceptId": "kids_seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "তোমাকে এমন খাবার দেওয়া হলো, যা তোমার পছন্দ নয়। কোন আচরণটি নবী ﷺ-এর আদব মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "খাবারটিকে জঘন্য বলব"
+        },
+        {
+          "id": "b",
+          "text": "যিনি রান্না করেছেন তাঁকে নিয়ে ঠাট্টা করব"
+        },
+        {
+          "id": "c",
+          "text": "খাবারের নিন্দা না করে ভদ্রভাবে না বলব"
+        },
+        {
+          "id": "d",
+          "text": "যাদের পছন্দ হয় তাদের বোকা বলব"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "নবী ﷺ না চাওয়া খাবার দোষ না ধরে রেখে দিতেন। তুমিও ভদ্রভাবে নিজের পছন্দ জানাতে পারো।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "সহিহ বুখারি ৫৪০৯",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_056",
+      "conceptId": "kids_seerah_generosity",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নবী ﷺ-এর দানশীলতা শেখার পর কোন কাজটি করতে পারো?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অন্যের খেলনা নিয়ে দান করব"
+        },
+        {
+          "id": "b",
+          "text": "সাহায্য করার আগে পুরস্কার চাইব"
+        },
+        {
+          "id": "c",
+          "text": "সব অনুরোধ ফিরিয়ে দিয়ে বড়াই করব"
+        },
+        {
+          "id": "d",
+          "text": "দেওয়ার অনুমতি আছে এমন উপযুক্ত জিনিস ভাগ করে দেব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "যা দেওয়ার অনুমতি আছে, তা ভাগ করে দেওয়া দানশীলতা চর্চার একটি উপায়। নবী ﷺ খুব দানশীল ছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "সহিহ বুখারি ৬",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_057",
+      "conceptId": "kids_seerah_smile_jarir",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "নতুন সহপাঠী এসেছে। জারিরের প্রতি নবী ﷺ-এর আন্তরিক আচরণের মতো তাকে কীভাবে স্বাগত জানাবে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "হাসিমুখে আন্তরিক স্বাগত জানাব"
+        },
+        {
+          "id": "b",
+          "text": "তার নাম নিয়ে ঠাট্টা করব"
+        },
+        {
+          "id": "c",
+          "text": "নিজেকে গুরুত্বপূর্ণ দেখাতে তাকে উপেক্ষা করব"
+        },
+        {
+          "id": "d",
+          "text": "কথা বলার আগে উপহার চাইব"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "আন্তরিক স্বাগতে নতুন কেউ নিজেকে আপন মনে করতে পারে। জারির নবী ﷺ-এর আন্তরিক স্বাগত মনে রেখেছিলেন।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6089",
+          "label": "সহিহ বুখারি ৬০৮৯",
+          "url": "https://sunnah.com/bukhari:6089"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_058",
+      "conceptId": "kids_seerah_considerate_prayer",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "কান্নারত শিশুর ঘটনাটি শিখেছ। একজন মা বা বাবার ব্যাগ নিতে কষ্ট হচ্ছে। কোন আচরণে যত্ন প্রকাশ পায়?",
+      "options": [
+        {
+          "id": "a",
+          "text": "তাঁর কষ্ট দেখে হাসব"
+        },
+        {
+          "id": "b",
+          "text": "বড় কেউ পাশে থাকলে উপযুক্ত সাহায্যের প্রস্তাব দেব"
+        },
+        {
+          "id": "c",
+          "text": "মজা করে পথ আটকে রাখব"
+        },
+        {
+          "id": "d",
+          "text": "বলব, অন্যের প্রয়োজনের কোনো দাম নেই"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "চিন্তিত মায়ের প্রতি তাঁর যত্ন অন্যের কথা ভাবতে শেখায়। উপযুক্ত সাহায্য করতে চাওয়া অন্যের প্রয়োজন খেয়াল করার একটি উদাহরণ।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "সহিহ বুখারি ৭০৭",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_059",
+      "conceptId": "kids_seerah_truthful_reputation",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "শিখেছ, লোকেরা নবী ﷺ-এর সততার কথা জানত। ভুল করে একটি পেনসিল ভেঙে ফেলেছ। কোন কাজটি তাঁর উদাহরণ মেনে চলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "সেখানে ছিল না এমন কাউকে দোষ দেব"
+        },
+        {
+          "id": "b",
+          "text": "দায় এড়াতে গল্প বানাব"
+        },
+        {
+          "id": "c",
+          "text": "কী হয়েছে সত্য করে বলব"
+        },
+        {
+          "id": "d",
+          "text": "ভাব করব, পেনসিলটি কখনো ছিলই না"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "সত্য বলা তাঁর উদাহরণ মেনে চলে। কী হয়েছে সৎভাবে বলো এবং কীভাবে ঠিক করা যায়, তা জানতে চাও।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "সহিহ বুখারি ৪৭৭০",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_060",
+      "conceptId": "kids_seerah_easier_good_choice",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "দুটি সঠিক উপায়ে একটি কাজ ভালোভাবে করা যায়। একটি সহজ। কোন পথটি নবী ﷺ-এর উদাহরণের সঙ্গে মেলে?",
+      "options": [
+        {
+          "id": "a",
+          "text": "অসৎ শর্টকাট বেছে নেব"
+        },
+        {
+          "id": "b",
+          "text": "বড়াই করতে কাজটি কঠিন করব"
+        },
+        {
+          "id": "c",
+          "text": "সময় বাঁচাতে কাউকে কষ্ট দেব"
+        },
+        {
+          "id": "d",
+          "text": "অন্যায় না করে সহজ উপায়টি নেব"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "গুনাহ না থাকলে নবী ﷺ সহজ পথ বেছে নিতেন। সহজ ও সৎ উপায় বেছে নেওয়া ভালো হতে পারে।",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "সহিহ বুখারি ৩৫৬০",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    }
+  ]
+}

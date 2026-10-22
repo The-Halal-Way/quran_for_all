@@ -1,0 +1,2324 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "mid",
+  "categoryId": "beliefs_foundations",
+  "title": "Beliefs & Foundations",
+  "description": "Little Muslim → Mid. Short questions for children who know the first basics of Islam. Covers Allah’s uniqueness and names, sincerity, repentance, patience in dua, angels, revelation, earlier scriptures, resurrection, judgment, divine decree and seeking knowledge. Uses simple meanings, familiar learning situations and short everyday choices. An adult may read questions aloud or explain unfamiliar words. All questions are Mid level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Mid describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Builds on first basics through simple meanings, connections between familiar ideas and straightforward applications. No specialist theological debate or advanced terminology is required. Level is editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and hadith texts checked during preparation. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Everyday and classroom scenarios illustrate the cited teachings. References to the Injil and Zabur concern the scriptures Allah revealed. Divine decree is presented alongside effort; patience in dua is not a promise of a requested outcome on a chosen timetable. General teachings about recording deeds and judgment do not assign adult legal accountability to young children. No question asks a child to judge another person’s faith or worth. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_mid_beliefs_foundations_001",
+      "conceptId": "kids_belief_unlike_creation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which statement matches the Quran's teaching about Allah and His creation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nothing in creation is like Allah"
+        },
+        {
+          "id": "b",
+          "text": "Allah is a larger version of a person"
+        },
+        {
+          "id": "c",
+          "text": "Allah is the same as the sun"
+        },
+        {
+          "id": "d",
+          "text": "Allah changes into different animals"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah is unlike His creation. We learn about Him from revelation rather than imagining Him as a created thing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_002",
+      "conceptId": "kids_belief_beautiful_names",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach us to use when calling upon Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Names we invent for Him"
+        },
+        {
+          "id": "b",
+          "text": "His beautiful names"
+        },
+        {
+          "id": "c",
+          "text": "The names of our favorite toys"
+        },
+        {
+          "id": "d",
+          "text": "Only the names of places"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Allah's beautiful names help us learn about Him. The Quran teaches us to call upon Him by those names.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "180",
+          "label": "Quran 7:180",
+          "url": "https://quran.com/7/180"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_003",
+      "conceptId": "kids_belief_no_sleep",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does Ayat al-Kursi teach about Allah and sleep?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He must sleep every night"
+        },
+        {
+          "id": "b",
+          "text": "He needs a nap after helping people"
+        },
+        {
+          "id": "c",
+          "text": "Neither sleepiness nor sleep overtakes Him"
+        },
+        {
+          "id": "d",
+          "text": "He sleeps whenever the sun sets"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah does not become sleepy or need sleep. His care for creation does not tire Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_004",
+      "conceptId": "kids_belief_self_sufficient",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does it mean that Allah is Self-Sufficient?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He needs people to feed Him"
+        },
+        {
+          "id": "b",
+          "text": "He needs a house built by people"
+        },
+        {
+          "id": "c",
+          "text": "He depends on the weather"
+        },
+        {
+          "id": "d",
+          "text": "He does not need help from His creation"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah needs nothing from us. We depend on Him, while He does not depend on His creation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_005",
+      "conceptId": "kids_belief_sincere_devotion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does sincere worship mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Worshipping Allah to please Him"
+        },
+        {
+          "id": "b",
+          "text": "Worshipping only to impress people"
+        },
+        {
+          "id": "c",
+          "text": "Worshipping only to win a prize"
+        },
+        {
+          "id": "d",
+          "text": "Worshipping only when someone is watching"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Sincerity means directing our worship to Allah. Other people's attention should not be its purpose.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 98,
+          "ayahs": "5",
+          "label": "Quran 98:5",
+          "url": "https://quran.com/98/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_006",
+      "conceptId": "kids_belief_sincere_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What is tawbah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boasting about an unkind choice"
+        },
+        {
+          "id": "b",
+          "text": "Sincerely turning back to Allah after wrongdoing"
+        },
+        {
+          "id": "c",
+          "text": "Planning to repeat a wrong for fun"
+        },
+        {
+          "id": "d",
+          "text": "Pretending wrongdoing can never be corrected"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Tawbah means returning to Allah sincerely. It includes regretting wrongdoing, stopping it and intending to do better.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "Quran 66:8",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_007",
+      "conceptId": "kids_belief_patient_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ teach us to avoid when making dua?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calling upon Allah respectfully"
+        },
+        {
+          "id": "b",
+          "text": "Continuing to ask Allah"
+        },
+        {
+          "id": "c",
+          "text": "Impatience about the answer"
+        },
+        {
+          "id": "d",
+          "text": "Turning to Allah with hope"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ warned against impatience in dua. We should not give up because we have not received what we asked for yet.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6340",
+          "label": "Sahih al-Bukhari 6340",
+          "url": "https://sunnah.com/bukhari:6340"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_008",
+      "conceptId": "kids_belief_angels_light",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to the Prophet ﷺ, from what were angels created?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wood"
+        },
+        {
+          "id": "b",
+          "text": "Ice"
+        },
+        {
+          "id": "c",
+          "text": "Metal"
+        },
+        {
+          "id": "d",
+          "text": "Light"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "An authentic hadith teaches that angels were created from light. We learn this through revelation, not by guessing.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2996",
+          "label": "Sahih Muslim 2996",
+          "url": "https://sunnah.com/muslim:2996"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_009",
+      "conceptId": "kids_belief_recording_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What task does Surah Al-Infitar describe for some angels?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recording people's deeds"
+        },
+        {
+          "id": "b",
+          "text": "Writing made-up stories about people"
+        },
+        {
+          "id": "c",
+          "text": "Choosing winners in every game"
+        },
+        {
+          "id": "d",
+          "text": "Making people forget their names"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran describes honorable angels who record deeds. Their task is real, not a storybook invention.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "Quran 82:10-12",
+          "url": "https://quran.com/82/10-12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_010",
+      "conceptId": "kids_belief_jibril_revelation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which angel brought the Quran to Prophet Muhammad ﷺ by Allah's permission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A teacher named by the class"
+        },
+        {
+          "id": "b",
+          "text": "Jibril, also called Gabriel"
+        },
+        {
+          "id": "c",
+          "text": "An unknown king"
+        },
+        {
+          "id": "d",
+          "text": "A traveler who wrote his own message"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Jibril brought the revelation by Allah's permission. The Quran's message came from Allah, not from the angel's own ideas.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "Quran 2:97",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_011",
+      "conceptId": "kids_belief_injil_isa",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which revealed scripture does the Quran say Allah gave to Isa, son of Maryam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Zabur"
+        },
+        {
+          "id": "b",
+          "text": "The Quran"
+        },
+        {
+          "id": "c",
+          "text": "The Injil"
+        },
+        {
+          "id": "d",
+          "text": "A book written by his classmates"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran teaches that Allah gave Isa the Injil. It was revelation containing guidance, not a book Isa invented.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "Quran 5:46",
+          "url": "https://quran.com/5/46"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_012",
+      "conceptId": "kids_belief_zabur_dawud",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To which prophet did Allah give the Zabur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nuh"
+        },
+        {
+          "id": "b",
+          "text": "Yusuf"
+        },
+        {
+          "id": "c",
+          "text": "Yunus"
+        },
+        {
+          "id": "d",
+          "text": "Dawud"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran names Dawud as the prophet given the Zabur. Learning this helps us recognize earlier revelation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "55",
+          "label": "Quran 17:55",
+          "url": "https://quran.com/17/55"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_013",
+      "conceptId": "kids_belief_quran_arabic",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which language was the Quran revealed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arabic"
+        },
+        {
+          "id": "b",
+          "text": "Bangla"
+        },
+        {
+          "id": "c",
+          "text": "English"
+        },
+        {
+          "id": "d",
+          "text": "Turkish"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran was revealed in Arabic. Translations help readers understand its meanings in other languages.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_014",
+      "conceptId": "kids_belief_prophet_human",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How does the Quran describe Prophet Muhammad ﷺ in relation to revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An angel who wrote his own religion"
+        },
+        {
+          "id": "b",
+          "text": "A human being who received revelation"
+        },
+        {
+          "id": "c",
+          "text": "A god who created people"
+        },
+        {
+          "id": "d",
+          "text": "A person who guessed Allah's message"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Muhammad ﷺ was a human messenger who received revelation. Receiving Allah's message did not make him divine.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "Quran 18:110",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_015",
+      "conceptId": "kids_belief_prophetic_example",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran describe Allah's Messenger ﷺ as for believers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Someone whose actions never teach us anything"
+        },
+        {
+          "id": "b",
+          "text": "Someone whose guidance is only for kings"
+        },
+        {
+          "id": "c",
+          "text": "An excellent example to follow"
+        },
+        {
+          "id": "d",
+          "text": "Someone we should ignore when learning Islam"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ is an excellent example. Learning his guidance helps us understand how to live our faith.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "Quran 33:21",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_016",
+      "conceptId": "kids_belief_unnamed_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Does the Quran tell us the stories of every messenger Allah sent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every messenger's life is described"
+        },
+        {
+          "id": "b",
+          "text": "No, Allah sent only one messenger"
+        },
+        {
+          "id": "c",
+          "text": "Yes, it lists every messenger's hometown"
+        },
+        {
+          "id": "d",
+          "text": "No, some are told and others are not"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah tells us about some messengers and not others. We should not invent details about those not described.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 40,
+          "ayahs": "78",
+          "label": "Quran 40:78",
+          "url": "https://quran.com/40/78"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_017",
+      "conceptId": "kids_belief_resurrection_day",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does resurrection mean in Islamic belief?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Being raised to life again after death"
+        },
+        {
+          "id": "b",
+          "text": "Turning into a different animal each year"
+        },
+        {
+          "id": "c",
+          "text": "Sleeping for a few hours"
+        },
+        {
+          "id": "d",
+          "text": "Remembering an old school day"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Resurrection means being raised after death. The Quran teaches that people will be raised on the Day of Judgment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "15-16",
+          "label": "Quran 23:15-16",
+          "url": "https://quran.com/23/15-16"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_018",
+      "conceptId": "kids_belief_deeds_record_judgment",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran say will be presented on the Day of Judgment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only a list of favorite meals"
+        },
+        {
+          "id": "b",
+          "text": "The record of deeds"
+        },
+        {
+          "id": "c",
+          "text": "Only the names of popular people"
+        },
+        {
+          "id": "d",
+          "text": "A record that Allah cannot understand"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran describes the record of deeds being presented. Allah's judgment is fair and wrongs no one.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "Quran 18:49",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_019",
+      "conceptId": "kids_belief_divine_decree",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Belief in qadar means believing in what?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The power of lucky numbers"
+        },
+        {
+          "id": "b",
+          "text": "The idea that Allah knows nothing beforehand"
+        },
+        {
+          "id": "c",
+          "text": "Allah's divine decree"
+        },
+        {
+          "id": "d",
+          "text": "The idea that events are beyond Allah's control"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Qadar means Allah's divine decree. The Prophet ﷺ included belief in it among the foundations of faith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_020",
+      "conceptId": "kids_belief_ask_for_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach us to ask Allah to increase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Our desire to boast"
+        },
+        {
+          "id": "b",
+          "text": "Our ability to mock others"
+        },
+        {
+          "id": "c",
+          "text": "Our habit of ignoring lessons"
+        },
+        {
+          "id": "d",
+          "text": "Our knowledge"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches a prayer for more knowledge. Learning is something we can seek Allah's help with.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "Quran 20:114",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_021",
+      "conceptId": "kids_belief_unlike_creation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why should we avoid describing Allah as a giant human?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah is unlike anything He created"
+        },
+        {
+          "id": "b",
+          "text": "All humans eventually become gods"
+        },
+        {
+          "id": "c",
+          "text": "Allah is only a character in a picture"
+        },
+        {
+          "id": "d",
+          "text": "A taller person is always more divine"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Creator is not a larger version of His creatures. The Quran teaches that nothing is like Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_022",
+      "conceptId": "kids_belief_beautiful_names",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is learning Allah's beautiful names useful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They let us invent anything about Allah"
+        },
+        {
+          "id": "b",
+          "text": "They teach us about Allah and help us make dua"
+        },
+        {
+          "id": "c",
+          "text": "They replace every other kind of learning"
+        },
+        {
+          "id": "d",
+          "text": "They are only a spelling competition"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Learning Allah's names is more than memorizing sounds. Their meanings help us know Him and call upon Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "180",
+          "label": "Quran 7:180",
+          "url": "https://quran.com/7/180"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_023",
+      "conceptId": "kids_belief_no_sleep",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "When people are asleep, does Allah's care for creation stop?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, everyone must wait until morning"
+        },
+        {
+          "id": "b",
+          "text": "Yes, creation looks after Allah at night"
+        },
+        {
+          "id": "c",
+          "text": "No, Allah does not sleep or become tired"
+        },
+        {
+          "id": "d",
+          "text": "No, because another god takes His place"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Allah is always sustaining His creation. Unlike people, He does not need rest or someone to take over.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_024",
+      "conceptId": "kids_belief_self_sufficient",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does Allah need our worship to become stronger?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, each prayer gives Him more strength"
+        },
+        {
+          "id": "b",
+          "text": "Yes, without people He cannot exist"
+        },
+        {
+          "id": "c",
+          "text": "No, but He needs food instead"
+        },
+        {
+          "id": "d",
+          "text": "No, Allah does not depend on us"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Our worship does not supply Allah with something He lacks. He is Self-Sufficient, and we are the ones who need Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_025",
+      "conceptId": "kids_belief_sincere_devotion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If nobody notices our worship, can we still worship sincerely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, pleasing Allah is what matters"
+        },
+        {
+          "id": "b",
+          "text": "No, worship counts only when friends notice"
+        },
+        {
+          "id": "c",
+          "text": "No, praise from people is its only purpose"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only if we complain afterward"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Sincerity is about why we worship Allah. An audience is not required for sincere devotion.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 98,
+          "ayahs": "5",
+          "label": "Quran 98:5",
+          "url": "https://quran.com/98/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_026",
+      "conceptId": "kids_belief_sincere_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which choice best matches sincere tawbah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say sorry while planning the same wrong for fun"
+        },
+        {
+          "id": "b",
+          "text": "Regret the wrong and honestly try to stop it"
+        },
+        {
+          "id": "c",
+          "text": "Blame everyone else without reflecting"
+        },
+        {
+          "id": "d",
+          "text": "Claim that changing our behavior never matters"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Tawbah is a sincere return to Allah, not just words. We should turn away from wrongdoing and try to improve.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "Quran 66:8",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_027",
+      "conceptId": "kids_belief_patient_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If a request is not fulfilled immediately, what should we remember about dua?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah must follow our chosen timetable"
+        },
+        {
+          "id": "b",
+          "text": "We should stop every dua forever"
+        },
+        {
+          "id": "c",
+          "text": "We should remain patient when calling upon Allah"
+        },
+        {
+          "id": "d",
+          "text": "Only requests answered in one minute matter"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ taught patience in dua. A delay is not a reason to declare that making dua is useless.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6340",
+          "label": "Sahih al-Bukhari 6340",
+          "url": "https://sunnah.com/bukhari:6340"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_028",
+      "conceptId": "kids_belief_angels_light",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "How do we know that angels were created from light?",
+      "options": [
+        {
+          "id": "a",
+          "text": "We can learn it by drawing a cartoon"
+        },
+        {
+          "id": "b",
+          "text": "Every bright lamp contains an angel"
+        },
+        {
+          "id": "c",
+          "text": "We can discover it from a guessing game"
+        },
+        {
+          "id": "d",
+          "text": "The Prophet ﷺ taught it in an authentic hadith"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "This knowledge comes from an authentic report from the Prophet ﷺ. Pictures and guesses do not establish facts about angels.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2996",
+          "label": "Sahih Muslim 2996",
+          "url": "https://sunnah.com/muslim:2996"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_029",
+      "conceptId": "kids_belief_recording_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Are the angels who record deeds just imaginary story characters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, they are real angels described in the Quran"
+        },
+        {
+          "id": "b",
+          "text": "Yes, they exist only in cartoons"
+        },
+        {
+          "id": "c",
+          "text": "Yes, people invented them for games"
+        },
+        {
+          "id": "d",
+          "text": "No, they are actually schoolteachers"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Belief in recording angels comes from the Quran. Their existence does not depend on whether we can see them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "Quran 82:10-12",
+          "url": "https://quran.com/82/10-12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_030",
+      "conceptId": "kids_belief_jibril_revelation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Did Jibril invent the Quran's message before delivering it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, he made it up for entertainment"
+        },
+        {
+          "id": "b",
+          "text": "No, he brought revelation by Allah's permission"
+        },
+        {
+          "id": "c",
+          "text": "Yes, he copied a classroom story"
+        },
+        {
+          "id": "d",
+          "text": "No, a king invented it instead"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Jibril conveyed Allah's revelation. Delivering the message did not make him its author.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "Quran 2:97",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_031",
+      "conceptId": "kids_belief_injil_isa",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does believing in the Quran mean denying that Allah gave Isa a revealed scripture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, Isa received no guidance from Allah"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only Muhammad ﷺ ever received revelation"
+        },
+        {
+          "id": "c",
+          "text": "No, the Quran itself affirms that gift"
+        },
+        {
+          "id": "d",
+          "text": "No, but the Injil was given to Dawud"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran affirms that Allah gave Isa the Injil. Believing in earlier revelation is part of learning Islam's foundations.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "Quran 5:46",
+          "url": "https://quran.com/5/46"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_032",
+      "conceptId": "kids_belief_zabur_dawud",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which pair correctly matches a prophet with the scripture Allah gave him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dawud and the Quran"
+        },
+        {
+          "id": "b",
+          "text": "Yusuf and the Injil"
+        },
+        {
+          "id": "c",
+          "text": "Nuh and the Zabur"
+        },
+        {
+          "id": "d",
+          "text": "Dawud and the Zabur"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran specifically links Dawud with the Zabur. Keeping the names together helps us remember the correct relationship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "55",
+          "label": "Quran 17:55",
+          "url": "https://quran.com/17/55"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_033",
+      "conceptId": "kids_belief_quran_arabic",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does reading a Bangla explanation change the Quran's original language?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the Quran was revealed in Arabic"
+        },
+        {
+          "id": "b",
+          "text": "Yes, its original language changes with each reader"
+        },
+        {
+          "id": "c",
+          "text": "Yes, Arabic is only a later translation"
+        },
+        {
+          "id": "d",
+          "text": "No, it was originally in English"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An explanation or translation can help us understand. It does not change the language in which the Quran was revealed.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_034",
+      "conceptId": "kids_belief_prophet_human",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does being Allah's messenger make Muhammad ﷺ a god?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every messenger is a separate god"
+        },
+        {
+          "id": "b",
+          "text": "No, he was a human who received revelation"
+        },
+        {
+          "id": "c",
+          "text": "Yes, receiving guidance makes anyone divine"
+        },
+        {
+          "id": "d",
+          "text": "No, because he never received revelation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Prophets receive revelation from Allah, but they are not gods. Muhammad ﷺ taught that God is One.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "Quran 18:110",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_035",
+      "conceptId": "kids_belief_prophetic_example",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does following the Prophet's ﷺ example involve?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Learning his name but ignoring all his guidance"
+        },
+        {
+          "id": "b",
+          "text": "Following whatever a popular person invents"
+        },
+        {
+          "id": "c",
+          "text": "Learning his guidance and trying to act on it"
+        },
+        {
+          "id": "d",
+          "text": "Assuming his example has nothing to teach us"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An example guides behavior. We learn about the Prophet ﷺ so his guidance can shape our choices.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "Quran 33:21",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_036",
+      "conceptId": "kids_belief_unnamed_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If we have not learned a messenger's name, does that prove Allah never sent him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, we already know every messenger's name"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only names in our textbook can be real"
+        },
+        {
+          "id": "c",
+          "text": "No, because we may invent any name we like"
+        },
+        {
+          "id": "d",
+          "text": "No, some messengers are not described to us"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Our knowledge of messengers is not complete. The Quran says some were described to the Prophet ﷺ and some were not.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 40,
+          "ayahs": "78",
+          "label": "Quran 40:78",
+          "url": "https://quran.com/40/78"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_037",
+      "conceptId": "kids_belief_resurrection_day",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is resurrection the same as waking up for school tomorrow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, it means being raised after death"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every morning is the Day of Judgment"
+        },
+        {
+          "id": "c",
+          "text": "Yes, it means changing our alarm clock"
+        },
+        {
+          "id": "d",
+          "text": "No, it means forgetting everything we learned"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Waking from ordinary sleep is different from resurrection. The Quran speaks of being raised after death on the Day of Judgment.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "15-16",
+          "label": "Quran 23:15-16",
+          "url": "https://quran.com/23/15-16"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_038",
+      "conceptId": "kids_belief_deeds_record_judgment",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the record of deeds teach us about Allah's judgment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only famous people's actions matter"
+        },
+        {
+          "id": "b",
+          "text": "Our actions matter, and Allah wrongs no one"
+        },
+        {
+          "id": "c",
+          "text": "Allah judges by guessing what happened"
+        },
+        {
+          "id": "d",
+          "text": "People can hide every action by forgetting it"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The record concerns what people did. The Quran also makes clear that Allah does not treat anyone unjustly.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "Quran 18:49",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_039",
+      "conceptId": "kids_belief_divine_decree",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does belief in Allah's decree mean we should stop trying to do useful things?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, learning and practice are always pointless"
+        },
+        {
+          "id": "b",
+          "text": "Yes, we should refuse all useful help"
+        },
+        {
+          "id": "c",
+          "text": "No, we should still make an effort and seek help"
+        },
+        {
+          "id": "d",
+          "text": "No, because Allah's decree is not part of faith"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Belief in qadar goes with effort. The Prophet ﷺ taught seeking what benefits us and asking Allah for help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_040",
+      "conceptId": "kids_belief_ask_for_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What attitude fits asking Allah for more knowledge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretending we already know everything"
+        },
+        {
+          "id": "b",
+          "text": "Refusing to listen to explanations"
+        },
+        {
+          "id": "c",
+          "text": "Treating every question as shameful"
+        },
+        {
+          "id": "d",
+          "text": "Being willing to learn more"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Asking for knowledge recognizes that we can keep learning. We can turn to Allah while making an honest effort to understand.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "Quran 20:114",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_041",
+      "conceptId": "kids_belief_unlike_creation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone says, \"Allah is just like a very big person.\" Which response fits the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah is unlike His creation"
+        },
+        {
+          "id": "b",
+          "text": "Allah is only slightly taller than people"
+        },
+        {
+          "id": "c",
+          "text": "Allah looks like whichever person we choose"
+        },
+        {
+          "id": "d",
+          "text": "Allah is a person who became powerful"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "We should not describe Allah as a giant person. The Quran teaches that nothing is like Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 42,
+          "ayahs": "11",
+          "label": "Quran 42:11",
+          "url": "https://quran.com/42/11"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_042",
+      "conceptId": "kids_belief_beautiful_names",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Aminah learns one of Allah's beautiful names. What is a good next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Make up a different name for Allah"
+        },
+        {
+          "id": "b",
+          "text": "Learn its meaning and use it respectfully in dua"
+        },
+        {
+          "id": "c",
+          "text": "Treat it as a nickname for a toy"
+        },
+        {
+          "id": "d",
+          "text": "Decide that its meaning never matters"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Learning the meaning helps us understand what we are saying. Allah's beautiful names should be used with respect.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "180",
+          "label": "Quran 7:180",
+          "url": "https://quran.com/7/180"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_043",
+      "conceptId": "kids_belief_no_sleep",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Yusuf wonders whether Allah must rest while the family sleeps. Which answer fits Ayat al-Kursi?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah sleeps only when all people sleep"
+        },
+        {
+          "id": "b",
+          "text": "Allah needs the family to wake Him"
+        },
+        {
+          "id": "c",
+          "text": "Allah needs neither sleep nor rest"
+        },
+        {
+          "id": "d",
+          "text": "Allah stops caring for creation every night"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "People need sleep, but Allah does not. Caring for the heavens and earth does not tire Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "255",
+          "label": "Quran 2:255",
+          "url": "https://quran.com/2/255"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_044",
+      "conceptId": "kids_belief_self_sufficient",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate says, \"Allah needs us to bring Him food.\" What should you explain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah needs only our favorite food"
+        },
+        {
+          "id": "b",
+          "text": "Allah needs more food than a whole city"
+        },
+        {
+          "id": "c",
+          "text": "Allah can only eat when someone helps Him"
+        },
+        {
+          "id": "d",
+          "text": "Allah is Self-Sufficient and needs no food from us"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah does not depend on His creation. People need His provision; He does not need us to provide for Him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 35,
+          "ayahs": "15",
+          "label": "Quran 35:15",
+          "url": "https://quran.com/35/15"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_045",
+      "conceptId": "kids_belief_sincere_devotion",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Maryam notices she is reciting only to collect compliments. What is a better intention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recite to worship and please Allah"
+        },
+        {
+          "id": "b",
+          "text": "Recite only to make classmates jealous"
+        },
+        {
+          "id": "c",
+          "text": "Recite only when a prize is promised"
+        },
+        {
+          "id": "d",
+          "text": "Recite to prove nobody else matters"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "We can renew our intention and focus on Allah. Sincere worship is not about collecting attention from other people.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 98,
+          "ayahs": "5",
+          "label": "Quran 98:5",
+          "url": "https://quran.com/98/5"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_046",
+      "conceptId": "kids_belief_sincere_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Ali regrets deliberately being unkind. Which plan shows sincere turning back to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say sorry but plan more unkindness for fun"
+        },
+        {
+          "id": "b",
+          "text": "Ask Allah's forgiveness and work on stopping the behavior"
+        },
+        {
+          "id": "c",
+          "text": "Boast that changing is unnecessary"
+        },
+        {
+          "id": "d",
+          "text": "Refuse to think about doing better"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A sincere return includes regret and an effort to stop the wrong. Ali can ask a trusted adult for help improving his behavior.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 66,
+          "ayahs": "8",
+          "label": "Quran 66:8",
+          "url": "https://quran.com/66/8"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_047",
+      "conceptId": "kids_belief_patient_dua",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Zaynab made dua but has not received what she requested. What is a good response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decide dua is useless after one try"
+        },
+        {
+          "id": "b",
+          "text": "Demand that Allah follow her deadline"
+        },
+        {
+          "id": "c",
+          "text": "Keep turning to Allah patiently"
+        },
+        {
+          "id": "d",
+          "text": "Mock anyone who keeps making dua"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ warned against impatience in dua. Zaynab can keep asking with hope without setting a deadline for Allah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6340",
+          "label": "Sahih al-Bukhari 6340",
+          "url": "https://sunnah.com/bukhari:6340"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_048",
+      "conceptId": "kids_belief_angels_light",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A video claims angels are made of ice. Which source should a lesson follow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The video because it has colorful effects"
+        },
+        {
+          "id": "b",
+          "text": "A guess from the comments"
+        },
+        {
+          "id": "c",
+          "text": "Whichever answer gets the most laughs"
+        },
+        {
+          "id": "d",
+          "text": "The authentic hadith saying angels were created from light"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Reliable religious learning relies on authentic evidence. The hadith about angels' creation teaches that they were created from light.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2996",
+          "label": "Sahih Muslim 2996",
+          "url": "https://sunnah.com/muslim:2996"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_049",
+      "conceptId": "kids_belief_recording_angels",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Hasan reads about honorable angels recording deeds. Which sentence belongs in his notes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Quran teaches that angels record deeds"
+        },
+        {
+          "id": "b",
+          "text": "Angels are only characters in a guessing game"
+        },
+        {
+          "id": "c",
+          "text": "The Quran says no angels have tasks"
+        },
+        {
+          "id": "d",
+          "text": "Recording angels are ordinary people with wings"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Surah Al-Infitar describes honorable recording angels. We should learn what revelation teaches rather than inventing details.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 82,
+          "ayahs": "10-12",
+          "label": "Quran 82:10-12",
+          "url": "https://quran.com/82/10-12"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_050",
+      "conceptId": "kids_belief_jibril_revelation",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A lesson has three cards: Allah, Jibril and Muhammad ﷺ. Which sentence correctly connects them?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muhammad ﷺ invented a message for Jibril"
+        },
+        {
+          "id": "b",
+          "text": "Jibril conveyed Allah's revelation to Muhammad ﷺ"
+        },
+        {
+          "id": "c",
+          "text": "Jibril created Allah before sending a book"
+        },
+        {
+          "id": "d",
+          "text": "A king gave Allah a classroom story"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The message was Allah's revelation. Jibril brought it to the Prophet ﷺ by Allah's permission.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 2,
+          "ayahs": "97",
+          "label": "Quran 2:97",
+          "url": "https://quran.com/2/97"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_051",
+      "conceptId": "kids_belief_injil_isa",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Sara is matching Isa with a scripture in her Islamic studies lesson. Which card should she choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Zabur"
+        },
+        {
+          "id": "b",
+          "text": "The Quran"
+        },
+        {
+          "id": "c",
+          "text": "The Injil"
+        },
+        {
+          "id": "d",
+          "text": "A modern school workbook"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Quran states that Allah gave Isa the Injil. This question concerns that revealed gift, not every book currently bearing a similar name.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "46",
+          "label": "Quran 5:46",
+          "url": "https://quran.com/5/46"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_052",
+      "conceptId": "kids_belief_zabur_dawud",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A worksheet says, \"Allah gave Dawud the ____.\" Which word completes it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quran"
+        },
+        {
+          "id": "b",
+          "text": "Injil"
+        },
+        {
+          "id": "c",
+          "text": "Dictionary"
+        },
+        {
+          "id": "d",
+          "text": "Zabur"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The correct match is Dawud and the Zabur. This relationship is stated in the Quran.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 17,
+          "ayahs": "55",
+          "label": "Quran 17:55",
+          "url": "https://quran.com/17/55"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_053",
+      "conceptId": "kids_belief_quran_arabic",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Adam sees Arabic verses beside English meanings. Which explanation is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Arabic is the Quran; English helps explain its meanings"
+        },
+        {
+          "id": "b",
+          "text": "The Quran was first revealed in English"
+        },
+        {
+          "id": "c",
+          "text": "The English changes the original language of revelation"
+        },
+        {
+          "id": "d",
+          "text": "The Arabic was invented by the translator"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran was revealed in Arabic. A translation offers an explanation of its meanings for readers of another language.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 12,
+          "ayahs": "2",
+          "label": "Quran 12:2",
+          "url": "https://quran.com/12/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_054",
+      "conceptId": "kids_belief_prophet_human",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A quiz card says, \"Muhammad ﷺ was a human messenger who received revelation.\" Is it correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, he was a separate god"
+        },
+        {
+          "id": "b",
+          "text": "Yes, this matches the Quran's description"
+        },
+        {
+          "id": "c",
+          "text": "No, no revelation came to him"
+        },
+        {
+          "id": "d",
+          "text": "No, every messenger must be an angel"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran describes Muhammad ﷺ as a human receiving revelation. We honor him as Allah's messenger, not as a god.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "110",
+          "label": "Quran 18:110",
+          "url": "https://quran.com/18/110"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_055",
+      "conceptId": "kids_belief_prophetic_example",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Fatimah learns how the Prophet ﷺ showed patience. What makes the lesson useful in her life?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using the story only to boast about knowing facts"
+        },
+        {
+          "id": "b",
+          "text": "Deciding his example never applies to anyone else"
+        },
+        {
+          "id": "c",
+          "text": "Trying to follow that guidance in her own choices"
+        },
+        {
+          "id": "d",
+          "text": "Ignoring the lesson whenever she feels upset"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ is an example to learn from. A lesson can help us practice better conduct in familiar situations.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 33,
+          "ayahs": "21",
+          "label": "Quran 33:21",
+          "url": "https://quran.com/33/21"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_056",
+      "conceptId": "kids_belief_unnamed_messengers",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend says their short storybook includes every messenger Allah ever sent. What is a careful reply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A short storybook must know every messenger"
+        },
+        {
+          "id": "b",
+          "text": "Only messengers in that book ever existed"
+        },
+        {
+          "id": "c",
+          "text": "We should invent more stories to make it complete"
+        },
+        {
+          "id": "d",
+          "text": "We have not been told the stories of every messenger"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Allah has not told us the stories of every messenger. A short collection cannot be treated as a complete account of them all.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 40,
+          "ayahs": "78",
+          "label": "Quran 40:78",
+          "url": "https://quran.com/40/78"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_057",
+      "conceptId": "kids_belief_resurrection_day",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classroom poster defines resurrection. Which sentence should it use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "People will be raised after death on the Day of Judgment"
+        },
+        {
+          "id": "b",
+          "text": "People become new animals every school year"
+        },
+        {
+          "id": "c",
+          "text": "People only wake from an afternoon nap"
+        },
+        {
+          "id": "d",
+          "text": "People can choose never to face life after death"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Quran teaches resurrection after death. It is part of belief in the Hereafter, not an ordinary daily waking.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 23,
+          "ayahs": "15-16",
+          "label": "Quran 23:15-16",
+          "url": "https://quran.com/23/15-16"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_058",
+      "conceptId": "kids_belief_deeds_record_judgment",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A lesson asks whether Allah's judgment depends on popularity. Which answer fits the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the most popular person always avoids judgment"
+        },
+        {
+          "id": "b",
+          "text": "No, Allah judges fairly and the deeds are recorded"
+        },
+        {
+          "id": "c",
+          "text": "Yes, only people with many friends have deeds"
+        },
+        {
+          "id": "d",
+          "text": "No, because Allah never considers what people do"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Popularity is not the basis of Allah's judgment. The Quran describes the record of deeds and says Allah wrongs no one.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "49",
+          "label": "Quran 18:49",
+          "url": "https://quran.com/18/49"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_059",
+      "conceptId": "kids_belief_divine_decree",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A game did not go as Yusuf hoped. Which response fits belief in Allah's decree?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Claim that nothing is under Allah's control"
+        },
+        {
+          "id": "b",
+          "text": "Stop all learning because effort can never matter"
+        },
+        {
+          "id": "c",
+          "text": "Accept the result, learn and keep making useful effort"
+        },
+        {
+          "id": "d",
+          "text": "Say a lucky number controls every result"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Belief in Allah's decree does not require giving up. Yusuf can accept a disappointment, learn from it and keep trying with Allah's help.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        },
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_mid_beliefs_foundations_060",
+      "conceptId": "kids_belief_ask_for_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "mid",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Before learning a new topic, which dua meaning fits the Quran's teaching?",
+      "options": [
+        {
+          "id": "a",
+          "text": "My Lord, make me boast about knowing everything"
+        },
+        {
+          "id": "b",
+          "text": "My Lord, help me mock people who ask questions"
+        },
+        {
+          "id": "c",
+          "text": "My Lord, make me refuse every lesson"
+        },
+        {
+          "id": "d",
+          "text": "My Lord, increase me in knowledge"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran teaches us to ask Allah for more knowledge. We can make this dua while taking part in learning.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 20,
+          "ayahs": "114",
+          "label": "Quran 20:114",
+          "url": "https://quran.com/20/114"
+        }
+      ]
+    }
+  ]
+}

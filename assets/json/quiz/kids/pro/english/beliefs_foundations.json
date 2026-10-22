@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "pro",
+  "categoryId": "beliefs_foundations",
+  "title": "Beliefs & Foundations",
+  "description": "Little Muslim → Pro. Short questions for children ready to connect familiar Islamic beliefs with simple explanations and everyday choices. Covers the six foundations of iman, ihsan, five pillars, faith and good actions, intentions, taqwa, personal responsibility, hope and repentance, angels, Iblis, earlier scriptures, the universal prophetic message, knowledge of the unseen, just judgment, Paradise, small deeds, hearts and actions, life as a test, decree with responsible effort, and cooperation with reliance on Allah. An adult may read questions aloud or explain unfamiliar words. All questions are Pro level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Pro is the highest editorial level within Little Muslim, not the Educated User level. It emphasizes connecting familiar ideas, distinguishing a teaching from a common misconception, completing simple sets and applying beliefs to short situations. All three question styles remain at Kids Pro level; styles are not difficulty levels. No specialist theology debates, detailed legal rulings, obscure historical facts, Arabic grammatical analysis or memorization of reference numbers is required. Level has not been calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked Quran passages and reports from Sahih al-Bukhari and Sahih Muslim checked during preparation. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Present-day situations illustrate applications; they are not events narrated in the cited reports. The six foundations follow the answer about iman in the hadith of Jibril; the five pillars follow the separate foundations report. These learning sets are not used to claim that faith and action are unrelated, or to judge someone's religious status. Ihsan is explained through awareness that Allah sees the worshipper, without asking children to imagine Allah's appearance. Intention examples explain that purposes can differ without allowing children to read another person's heart or making a good intention justify harm. Taqwa, hearts, deeds and the promise of Paradise are taught without ranking classmates' hidden faith, judging clothing or wealth, or deciding a particular person's final destiny. Personal responsibility is not inherited guilt; it does not excuse one's own participation in another person's wrongdoing. Children are not assigned all adult legal responsibilities. Hope in mercy is paired with sincere return and improvement rather than despair or permission to persist in harm. Angels are distinguished from divinity, and Iblis is identified as a jinn without invented unseen details or frightening storytelling. Earlier scriptures are identified only as named in the cited verses. The universal message is distinguished from language fluency, and no group is invited to mistreat another. Independent knowledge of the unseen belongs to Allah; the second Quran reference preserves the distinction that He may disclose unseen knowledge to chosen messengers. This is not a prohibition on ordinary evidence-based planning or forecasting. Judgment and small deeds are discussed without graphic punishment, obsessive checking of thoughts, or equating every accident with deliberate wrongdoing. The verse about life's test is not used to treat academic scores, illness, hardship or prosperity as proof of someone's faith or Allah's rejection. Accepting decree is compatible with learning, taking responsibility and seeking suitable help; it does not justify blaming an innocent person or refusing needed support. Ordinary cooperation with teachers and other people is distinguished from worship, without making every request for help permissible regardless of its purpose. Dangerous objects should be handled by suitable adults. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_pro_beliefs_foundations_001",
+      "conceptId": "kids_belief_six_foundations",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which list matches the six foundations of iman in the hadith of Jibril?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah, angels, scriptures, messengers, the Last Day and divine decree"
+        },
+        {
+          "id": "b",
+          "text": "Prayer, fasting, Hajj, trade, travel and language"
+        },
+        {
+          "id": "c",
+          "text": "Angels, seasons, colors, games, clothing and food"
+        },
+        {
+          "id": "d",
+          "text": "Wealth, fame, strength, beauty, ancestry and popularity"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report names six foundations of belief, including Allah's decree concerning good and bad. These are not a list of school subjects or possessions.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_002",
+      "conceptId": "kids_belief_ihsan_awareness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does ihsan teach us to remember during worship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Other people's applause is the purpose of worship"
+        },
+        {
+          "id": "b",
+          "text": "Allah sees us, even though we do not see Him"
+        },
+        {
+          "id": "c",
+          "text": "Worship matters only when a teacher watches"
+        },
+        {
+          "id": "d",
+          "text": "The fastest worship is always the most sincere"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ihsan concerns worship with deep awareness of Allah. The hadith teaches remembering that He sees us, rather than performing for an audience.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "50",
+          "label": "Sahih al-Bukhari 50",
+          "url": "https://sunnah.com/bukhari:50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_003",
+      "conceptId": "kids_belief_five_pillars_meaning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which list names the five pillars taught in the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prayer, drawing, running, sleep and trade"
+        },
+        {
+          "id": "b",
+          "text": "Angels, books, messengers, colors and seasons"
+        },
+        {
+          "id": "c",
+          "text": "Shahadah, salah, zakat, Ramadan fasting and Hajj"
+        },
+        {
+          "id": "d",
+          "text": "Wealth, clothing, fame, prizes and travel"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The five pillars are central foundations of Islam. Learning their names does not mean every child immediately has all an adult's duties.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_004",
+      "conceptId": "kids_belief_faith_good_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith include among the branches of faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Winning every argument about religion"
+        },
+        {
+          "id": "b",
+          "text": "Having the most expensive belongings"
+        },
+        {
+          "id": "c",
+          "text": "Being praised by every person nearby"
+        },
+        {
+          "id": "d",
+          "text": "Removing something harmful from a path"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report connects faith with speech, modesty and useful action. Safe care for others can express what we learn about belief.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "35b",
+          "label": "Sahih Muslim 35b",
+          "url": "https://sunnah.com/muslim:35b"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_005",
+      "conceptId": "kids_belief_intentions_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "According to the hadith about intentions, what matters in evaluating a deed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The purpose for which a person does it"
+        },
+        {
+          "id": "b",
+          "text": "Only how many people notice it"
+        },
+        {
+          "id": "c",
+          "text": "Only how expensive it looks"
+        },
+        {
+          "id": "d",
+          "text": "Only whether it becomes popular"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith connects deeds with intentions. Two outwardly similar actions can be done for different purposes.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_006",
+      "conceptId": "kids_belief_taqwa_not_status",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran connect honor before Allah with?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Belonging to the richest family"
+        },
+        {
+          "id": "b",
+          "text": "Taqwa: being mindful of Allah and seeking to obey Him"
+        },
+        {
+          "id": "c",
+          "text": "Speaking the most popular language"
+        },
+        {
+          "id": "d",
+          "text": "Having the largest social following"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse gives importance to righteousness, not ancestry or status. It does not ask us to rank classmates' hidden faith.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "Quran 49:13",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_007",
+      "conceptId": "kids_belief_personal_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran teach about carrying someone else's burden of sin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Children automatically inherit every relative's wrongdoing"
+        },
+        {
+          "id": "b",
+          "text": "A family name makes every action blameworthy"
+        },
+        {
+          "id": "c",
+          "text": "One person does not carry another person's sin"
+        },
+        {
+          "id": "d",
+          "text": "An innocent person must take someone else's moral blame"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse teaches personal responsibility. Being related to someone does not make us guilty of their wrongdoing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_008",
+      "conceptId": "kids_belief_hope_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which response joins the Quran's teaching about mercy with returning to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Give up all hope after any mistake"
+        },
+        {
+          "id": "b",
+          "text": "Use mercy as permission to keep hurting people"
+        },
+        {
+          "id": "c",
+          "text": "Pretend our choices never need improvement"
+        },
+        {
+          "id": "d",
+          "text": "Keep hope in Allah's mercy and turn back sincerely"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verses bring hope and repentance together. Allah's mercy encourages returning to Him, rather than despair or deliberate persistence in harm.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "Quran 39:53-54",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_009",
+      "conceptId": "kids_belief_angels_servants",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How do these Quranic verses describe angels in relation to Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Honored servants who act at His command"
+        },
+        {
+          "id": "b",
+          "text": "Gods who share His right to worship"
+        },
+        {
+          "id": "c",
+          "text": "Beings who make Allah obey them"
+        },
+        {
+          "id": "d",
+          "text": "Children who supply what Allah lacks"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Angels are honored servants, not partners in Allah's divinity. Believing in them is different from worshipping them.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "26-27",
+          "label": "Quran 21:26-27",
+          "url": "https://quran.com/21/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_010",
+      "conceptId": "kids_belief_iblis_jinn",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which group does the Quran identify Iblis as belonging to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The human prophets"
+        },
+        {
+          "id": "b",
+          "text": "The jinn"
+        },
+        {
+          "id": "c",
+          "text": "The people of Makkah"
+        },
+        {
+          "id": "d",
+          "text": "The recording angels"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran explicitly says Iblis was one of the jinn. Stories should follow that teaching rather than inventing a different identity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "Quran 18:50",
+          "url": "https://quran.com/18/50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_011",
+      "conceptId": "kids_belief_earlier_scriptures",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which two prophets' earlier scriptures are named at the end of Al-Ala?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yusuf and Yunus"
+        },
+        {
+          "id": "b",
+          "text": "Dawud and Sulayman"
+        },
+        {
+          "id": "c",
+          "text": "Ibrahim and Musa"
+        },
+        {
+          "id": "d",
+          "text": "Zakariyya and Yahya"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "These verses mention the scriptures of Ibrahim and Musa. Revelation did not begin only with the Quran's arrival.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 87,
+          "ayahs": "18-19",
+          "label": "Quran 87:18-19",
+          "url": "https://quran.com/87/18-19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_012",
+      "conceptId": "kids_belief_message_all_people",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To whom does the Quran describe Muhammad ﷺ as Allah's Messenger in this verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only one wealthy family"
+        },
+        {
+          "id": "b",
+          "text": "Only people who already speak Arabic"
+        },
+        {
+          "id": "c",
+          "text": "Only the people of one street"
+        },
+        {
+          "id": "d",
+          "text": "All people"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse addresses humanity with the Prophet's ﷺ message. Learning Islam is not reserved for a particular language or ancestry.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "158",
+          "label": "Quran 7:158",
+          "url": "https://quran.com/7/158"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_013",
+      "conceptId": "kids_belief_unseen_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Who possesses knowledge of the unseen independently, without needing anyone to teach Him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah alone"
+        },
+        {
+          "id": "b",
+          "text": "Every person who guesses confidently"
+        },
+        {
+          "id": "c",
+          "text": "Anyone with many online followers"
+        },
+        {
+          "id": "d",
+          "text": "Anyone who sells a lucky prediction"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah alone independently knows the unseen. Messengers know what He chooses to reveal; confident guesses do not become revelation.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "Quran 27:65",
+          "url": "https://quran.com/27/65"
+        },
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "Quran 72:26-27",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_014",
+      "conceptId": "kids_belief_judgment_scales",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran say about the scales on the Day of Judgment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They favor the wealthiest family"
+        },
+        {
+          "id": "b",
+          "text": "They express perfect justice; no one will be wronged"
+        },
+        {
+          "id": "c",
+          "text": "They ignore whatever people do quietly"
+        },
+        {
+          "id": "d",
+          "text": "They measure only a person's popularity"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse describes just scales and complete fairness. Allah's judgment does not depend on a crowd's attention or approval.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "47",
+          "label": "Quran 21:47",
+          "url": "https://quran.com/21/47"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_015",
+      "conceptId": "kids_belief_paradise_promise",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In this Quranic promise of Paradise, which two qualities are mentioned together?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wealth and fame"
+        },
+        {
+          "id": "b",
+          "text": "Height and strength"
+        },
+        {
+          "id": "c",
+          "text": "Belief and righteous deeds"
+        },
+        {
+          "id": "d",
+          "text": "Ancestry and expensive clothing"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse promises Gardens to those who believe and do good. It gives hope without letting us decide a particular person's final destiny.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "57",
+          "label": "Quran 4:57",
+          "url": "https://quran.com/4/57"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_016",
+      "conceptId": "kids_belief_small_deeds_count",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What do the final verses of Az-Zalzalah teach about small deeds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only actions seen by a crowd can matter"
+        },
+        {
+          "id": "b",
+          "text": "Quiet kindness is always forgotten"
+        },
+        {
+          "id": "c",
+          "text": "Small harmful actions are automatically good"
+        },
+        {
+          "id": "d",
+          "text": "Even very small good and bad deeds matter"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verses take even tiny deeds seriously. This encourages thoughtful choices, not panic about every passing thought or accidental mistake.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "Quran 99:7-8",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_017",
+      "conceptId": "kids_belief_hearts_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the hadith emphasize rather than appearance and wealth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "People's hearts and deeds"
+        },
+        {
+          "id": "b",
+          "text": "People's fashionable belongings"
+        },
+        {
+          "id": "c",
+          "text": "People's family popularity"
+        },
+        {
+          "id": "d",
+          "text": "People's height and hairstyle"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith gives importance to hearts and actions. Outward appearance and possessions do not reveal a person's sincerity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_018",
+      "conceptId": "kids_belief_life_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What purpose does Al-Mulk mention in Allah creating life and death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choosing who owns the most toys"
+        },
+        {
+          "id": "b",
+          "text": "Testing which people are best in deeds"
+        },
+        {
+          "id": "c",
+          "text": "Making fame the measure of goodness"
+        },
+        {
+          "id": "d",
+          "text": "Proving every easy life belongs to the best person"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse connects life with a test of deeds and describes Allah as Mighty and Forgiving. School marks are not a measure of someone's faith.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_019",
+      "conceptId": "kids_belief_decree_responsible_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which response fits the hadith's guidance when a useful effort has a disappointing outcome?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decide that trying was always forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Use the result as permission to harm others"
+        },
+        {
+          "id": "c",
+          "text": "Accept Allah's decree and continue with responsible effort"
+        },
+        {
+          "id": "d",
+          "text": "Assume disappointment proves Allah has rejected us"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report joins useful effort, seeking Allah's help and accepting His decree. A setback is not proof that a learner is worthless.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_020",
+      "conceptId": "kids_belief_cooperation_and_reliance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What does the Quran's instruction to cooperate in goodness show about ordinary human help?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seeking any human help is always forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Only working alone can ever be righteous"
+        },
+        {
+          "id": "c",
+          "text": "Every request for help is an act of worship"
+        },
+        {
+          "id": "d",
+          "text": "People can help one another with good actions"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse encourages cooperation in good. Asking a teacher for suitable help is different from offering that teacher worship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "Quran 5:2",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_021",
+      "conceptId": "kids_belief_six_foundations",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does belief in Allah alone complete the entire six-part answer about iman in Jibril's hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the report also names five other foundations"
+        },
+        {
+          "id": "b",
+          "text": "Yes, the other foundations are unrelated to faith"
+        },
+        {
+          "id": "c",
+          "text": "Yes, angels and messengers are only optional guesses"
+        },
+        {
+          "id": "d",
+          "text": "No, because possessions replace belief in Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The report teaches belief in Allah together with angels, scriptures, messengers, the Last Day and decree. We learn the whole answer, not just one part.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_022",
+      "conceptId": "kids_belief_ihsan_awareness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does ihsan require an audience of people to make worship meaningful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, unseen worship has no meaning"
+        },
+        {
+          "id": "b",
+          "text": "No, awareness of Allah matters even without an audience"
+        },
+        {
+          "id": "c",
+          "text": "Yes, applause is the measure of devotion"
+        },
+        {
+          "id": "d",
+          "text": "No, because worship should never involve attention or care"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ihsan directs our attention to Allah, who sees us. Other people's presence is not what gives sincere worship its purpose.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "50",
+          "label": "Sahih al-Bukhari 50",
+          "url": "https://sunnah.com/bukhari:50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_023",
+      "conceptId": "kids_belief_five_pillars_meaning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the phrase five pillars mean Islam is literally a building with five stone posts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, it names five physical posts everyone must buy"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only people inside one building can be Muslims"
+        },
+        {
+          "id": "c",
+          "text": "No, it describes central foundations of the religion"
+        },
+        {
+          "id": "d",
+          "text": "No, it means five prizes for finishing a quiz"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith uses foundations to explain central parts of Islam. It does not make faith depend on owning a particular building.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_024",
+      "conceptId": "kids_belief_faith_good_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the hadith about branches of faith separate faith from every useful action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, practical care is always unrelated to faith"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only impressive speeches can express faith"
+        },
+        {
+          "id": "c",
+          "text": "No, because every dangerous act must be attempted alone"
+        },
+        {
+          "id": "d",
+          "text": "No, it includes removing harm from a path"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The report includes a practical good action among faith's branches. Learning belief can shape safe, considerate conduct as well as words.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "35b",
+          "label": "Sahih Muslim 35b",
+          "url": "https://sunnah.com/muslim:35b"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_025",
+      "conceptId": "kids_belief_intentions_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If two people give similar gifts, must their purposes automatically be identical?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, similar actions can have different intentions"
+        },
+        {
+          "id": "b",
+          "text": "Yes, matching gifts always prove matching hearts"
+        },
+        {
+          "id": "c",
+          "text": "Yes, we can read intentions from a price tag"
+        },
+        {
+          "id": "d",
+          "text": "No, because every gift must have a bad purpose"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith gives intentions importance. We can examine our own purpose without pretending to know another person's hidden motives.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_026",
+      "conceptId": "kids_belief_taqwa_not_status",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a famous family name automatically prove greater honor before Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, ancestry replaces righteous conduct"
+        },
+        {
+          "id": "b",
+          "text": "No, the verse emphasizes righteousness rather than family status"
+        },
+        {
+          "id": "c",
+          "text": "Yes, popularity reveals every person's hidden faith"
+        },
+        {
+          "id": "d",
+          "text": "No, because every famous person must lack righteousness"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse points to taqwa, not social rank. It neither makes fame proof of goodness nor lets us condemn everyone who is well known.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "Quran 49:13",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_027",
+      "conceptId": "kids_belief_personal_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does another family member's wrongdoing automatically become an innocent person's sin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, everyone inherits every relative's sin"
+        },
+        {
+          "id": "b",
+          "text": "Yes, sharing a surname proves personal guilt"
+        },
+        {
+          "id": "c",
+          "text": "No, moral blame is not inherited through family membership"
+        },
+        {
+          "id": "d",
+          "text": "No, because nobody is responsible for their own choices"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse rejects carrying another person's burden of sin. This does not excuse our own wrongdoing or responsibility for harm we encourage.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_028",
+      "conceptId": "kids_belief_hope_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does hope in Allah's forgiveness mean choosing to continue hurting others without concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, mercy makes every harmful choice acceptable"
+        },
+        {
+          "id": "b",
+          "text": "Yes, repentance means planning to repeat the wrong"
+        },
+        {
+          "id": "c",
+          "text": "No, because asking forgiveness is always pointless"
+        },
+        {
+          "id": "d",
+          "text": "No, hope belongs with sincerely turning back"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The invitation to hope is followed by an invitation to return to Allah. Mercy encourages change rather than treating harm as unimportant.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "Quran 39:53-54",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_029",
+      "conceptId": "kids_belief_angels_servants",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does honoring angels mean treating them as gods beside Allah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, they remain His honored servants"
+        },
+        {
+          "id": "b",
+          "text": "Yes, every honored being deserves worship"
+        },
+        {
+          "id": "c",
+          "text": "Yes, obedience to Allah makes angels divine"
+        },
+        {
+          "id": "d",
+          "text": "No, because angels have no place in Islamic belief"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses describe honored servants acting at Allah's command. Respect and belief do not turn a created servant into a god.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "26-27",
+          "label": "Quran 21:26-27",
+          "url": "https://quran.com/21/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_030",
+      "conceptId": "kids_belief_iblis_jinn",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "If a fictional story calls Iblis a fallen angel, which description should an Islamic lesson follow?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The story's version because it sounds dramatic"
+        },
+        {
+          "id": "b",
+          "text": "The Quran's statement that he was of the jinn"
+        },
+        {
+          "id": "c",
+          "text": "Whichever description is repeated most often"
+        },
+        {
+          "id": "d",
+          "text": "A new identity invented for each lesson"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Quran identifies Iblis as one of the jinn. An entertaining story is not a source for changing that teaching.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "Quran 18:50",
+          "url": "https://quran.com/18/50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_031",
+      "conceptId": "kids_belief_earlier_scriptures",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does the Quran's mention of earlier scriptures mean Allah sent no revelation before Muhammad ﷺ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, all earlier prophets lacked any revelation"
+        },
+        {
+          "id": "b",
+          "text": "Yes, earlier scriptures are only school notebooks"
+        },
+        {
+          "id": "c",
+          "text": "No, it refers to earlier revelation associated with Ibrahim and Musa"
+        },
+        {
+          "id": "d",
+          "text": "No, because every ordinary book is divine revelation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verses name earlier scriptures of Ibrahim and Musa. Belief in revelation includes what Allah sent before the Quran.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 87,
+          "ayahs": "18-19",
+          "label": "Quran 87:18-19",
+          "url": "https://quran.com/87/18-19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_032",
+      "conceptId": "kids_belief_message_all_people",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does needing an English or Bangla explanation put someone outside the people addressed by the Prophet's ﷺ message?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, only native Arabic speakers are addressed"
+        },
+        {
+          "id": "b",
+          "text": "Yes, learning a translation makes the message unrelated"
+        },
+        {
+          "id": "c",
+          "text": "No, because the message belongs only to wealthy families"
+        },
+        {
+          "id": "d",
+          "text": "No, the message is for all people"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse describes a message to humanity. People can learn its meaning with suitable language support without changing whom the message addresses.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "158",
+          "label": "Quran 7:158",
+          "url": "https://quran.com/7/158"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_033",
+      "conceptId": "kids_belief_unseen_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Is a confident prediction automatically equal to knowledge Allah reveals to a messenger?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, guessing is different from revelation"
+        },
+        {
+          "id": "b",
+          "text": "Yes, confidence turns guesses into divine knowledge"
+        },
+        {
+          "id": "c",
+          "text": "Yes, popularity makes every prediction certain"
+        },
+        {
+          "id": "d",
+          "text": "No, because Allah cannot reveal anything to messengers"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Allah independently knows the unseen and may disclose what He wills to messengers. A person's confident claim is not proof of such knowledge.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "Quran 27:65",
+          "url": "https://quran.com/27/65"
+        },
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "Quran 72:26-27",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_034",
+      "conceptId": "kids_belief_judgment_scales",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Do the just scales described in the Quran depend on someone's fame?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, famous people decide how every deed is weighed"
+        },
+        {
+          "id": "b",
+          "text": "No, Allah's judgment is just rather than popularity based"
+        },
+        {
+          "id": "c",
+          "text": "Yes, an unknown person's deeds can never be considered"
+        },
+        {
+          "id": "d",
+          "text": "No, because the verse says fairness is impossible"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse assures complete justice, including what seems very small. Public attention is not the measure of Allah's fairness.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "47",
+          "label": "Quran 21:47",
+          "url": "https://quran.com/21/47"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_035",
+      "conceptId": "kids_belief_paradise_promise",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a prestigious surname replace belief and good deeds in this promise of Paradise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, a surname is all the verse requires"
+        },
+        {
+          "id": "b",
+          "text": "Yes, family fame makes personal conduct irrelevant"
+        },
+        {
+          "id": "c",
+          "text": "No, the verse mentions belief and righteous deeds"
+        },
+        {
+          "id": "d",
+          "text": "No, because the verse offers no hope at all"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The promise joins belief with good deeds. It teaches hopeful direction rather than a competition over family names.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "57",
+          "label": "Quran 4:57",
+          "url": "https://quran.com/4/57"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_036",
+      "conceptId": "kids_belief_small_deeds_count",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does a harmful choice stop mattering merely because nobody else noticed it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, unnoticed actions have no significance"
+        },
+        {
+          "id": "b",
+          "text": "Yes, only public mistakes can ever matter"
+        },
+        {
+          "id": "c",
+          "text": "No, because every unnoticed action is automatically harmful"
+        },
+        {
+          "id": "d",
+          "text": "No, the verses teach that even small deeds matter"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verses encourage care about small good and bad actions. Being unseen by people does not make a deliberate harmful choice harmless.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "Quran 99:7-8",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_037",
+      "conceptId": "kids_belief_hearts_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Can expensive clothing alone prove that someone has a more sincere heart?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, appearance does not reveal sincerity"
+        },
+        {
+          "id": "b",
+          "text": "Yes, a price tag measures a person's faith"
+        },
+        {
+          "id": "c",
+          "text": "Yes, fashionable clothes guarantee righteous deeds"
+        },
+        {
+          "id": "d",
+          "text": "No, because everyone with nice clothes must be insincere"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith emphasizes hearts and deeds rather than appearance and wealth. Neither admiration nor suspicion about clothing reveals what is in a heart.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_038",
+      "conceptId": "kids_belief_life_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does describing life as a test mean a school quiz score measures someone's faith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every full mark guarantees the best faith"
+        },
+        {
+          "id": "b",
+          "text": "No, academic scores do not measure a person's faith"
+        },
+        {
+          "id": "c",
+          "text": "Yes, a low score proves rejection by Allah"
+        },
+        {
+          "id": "d",
+          "text": "No, because good actions have no place in the verse"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse concerns the test of deeds, not a classroom ranking of faith. We should learn without judging a child's worth from marks.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_039",
+      "conceptId": "kids_belief_decree_responsible_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does believing in Allah's decree mean refusing to learn from an avoidable mistake?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, decree makes all future effort pointless"
+        },
+        {
+          "id": "b",
+          "text": "Yes, we must blame others for every setback"
+        },
+        {
+          "id": "c",
+          "text": "No, responsible improvement can go with accepting the outcome"
+        },
+        {
+          "id": "d",
+          "text": "No, because accepting an outcome forbids asking Allah for help"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith encourages useful effort and seeking Allah's help. Accepting what happened does not prevent taking better steps next time.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_040",
+      "conceptId": "kids_belief_cooperation_and_reliance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does asking a teacher to explain a lesson automatically mean worshipping that teacher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, every request to a person is worship"
+        },
+        {
+          "id": "b",
+          "text": "Yes, learning requires never accepting human assistance"
+        },
+        {
+          "id": "c",
+          "text": "No, because every form of cooperation is always good"
+        },
+        {
+          "id": "d",
+          "text": "No, ordinary help with good is different from worship"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verse encourages cooperation in goodness while rejecting cooperation in wrongdoing. Suitable human help is not the same as offering someone worship.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "Quran 5:2",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_041",
+      "conceptId": "kids_belief_six_foundations",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A worksheet lists Allah, angels, scriptures, messengers and the Last Day. Which foundation from Jibril's answer is missing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Belief in divine decree, concerning good and bad"
+        },
+        {
+          "id": "b",
+          "text": "Owning a particular kind of clothing"
+        },
+        {
+          "id": "c",
+          "text": "Being praised by every teacher"
+        },
+        {
+          "id": "d",
+          "text": "Belonging to the most famous family"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith's answer includes divine decree as well as the five foundations already listed. Learn the complete set without treating it as a popularity ranking.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "8a",
+          "label": "Sahih Muslim 8a",
+          "url": "https://sunnah.com/muslim:8a"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_042",
+      "conceptId": "kids_belief_ihsan_awareness",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You practice worship quietly without anyone praising you. Which thought reflects ihsan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Without applause, worship has no purpose"
+        },
+        {
+          "id": "b",
+          "text": "Allah sees me, so I should worship with care"
+        },
+        {
+          "id": "c",
+          "text": "Only my teacher can give worship meaning"
+        },
+        {
+          "id": "d",
+          "text": "I should care only if a camera is recording"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Ihsan connects careful worship with awareness of Allah. Quiet practice does not need a public audience to matter.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "50",
+          "label": "Sahih al-Bukhari 50",
+          "url": "https://sunnah.com/bukhari:50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_043",
+      "conceptId": "kids_belief_five_pillars_meaning",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A class poster has four pillars: shahadah, salah, zakat and Ramadan fasting. Which pillar completes the list?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collecting trophies"
+        },
+        {
+          "id": "b",
+          "text": "Speaking several languages"
+        },
+        {
+          "id": "c",
+          "text": "Hajj"
+        },
+        {
+          "id": "d",
+          "text": "Owning a large house"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Hajj is included in the hadith's five foundations. Learning the list is different from requiring a child to travel immediately.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "8",
+          "label": "Sahih al-Bukhari 8",
+          "url": "https://sunnah.com/bukhari:8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_044",
+      "conceptId": "kids_belief_faith_good_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An adult safely removes something blocking a walkway. Which belief lesson helps explain the act's value?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faith concerns only what people say in a quiz"
+        },
+        {
+          "id": "b",
+          "text": "Helping walkers can never connect with faith"
+        },
+        {
+          "id": "c",
+          "text": "A useful action matters only if filmed"
+        },
+        {
+          "id": "d",
+          "text": "Removing harm from a path is a branch of faith"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The hadith includes removing harm among faith's branches. Children should ask an adult about dangerous objects rather than handling them alone.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "35b",
+          "label": "Sahih Muslim 35b",
+          "url": "https://sunnah.com/muslim:35b"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_045",
+      "conceptId": "kids_belief_intentions_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two classmates share supplies. One wants to help; another only wants applause. Which lesson applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Similar visible actions can have different intentions"
+        },
+        {
+          "id": "b",
+          "text": "Matching supplies prove their intentions are identical"
+        },
+        {
+          "id": "c",
+          "text": "Only the supplies' price can explain their purpose"
+        },
+        {
+          "id": "d",
+          "text": "The loudest applause proves the most sincere heart"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The scenario illustrates why intentions matter. In real life, examine your own purpose rather than claiming to read someone else's heart.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "1",
+          "label": "Sahih al-Bukhari 1",
+          "url": "https://sunnah.com/bukhari:1"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_046",
+      "conceptId": "kids_belief_taqwa_not_status",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A child says their famous surname automatically makes them better before Allah. Which reminder fits the Quran?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A surname always measures hidden sincerity"
+        },
+        {
+          "id": "b",
+          "text": "The verse values taqwa rather than family prestige"
+        },
+        {
+          "id": "c",
+          "text": "Fame replaces every need for good conduct"
+        },
+        {
+          "id": "d",
+          "text": "Only children from unknown families can be righteous"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse connects honor with righteousness, not ancestry. It teaches humility without asking children to rank other people's faith.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 49,
+          "ayahs": "13",
+          "label": "Quran 49:13",
+          "url": "https://quran.com/49/13"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_047",
+      "conceptId": "kids_belief_personal_responsibility",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Someone blames an innocent child for a cousin's wrongdoing only because they share a family. Which principle applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A shared family name proves personal guilt"
+        },
+        {
+          "id": "b",
+          "text": "Every cousin automatically shares every action"
+        },
+        {
+          "id": "c",
+          "text": "One person does not carry another person's sin"
+        },
+        {
+          "id": "d",
+          "text": "Innocent people must take blame to be polite"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse teaches that another person's burden of sin is not inherited. A child should not be shamed merely for a relative's conduct.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 6,
+          "ayahs": "164",
+          "label": "Quran 6:164",
+          "url": "https://quran.com/6/164"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_048",
+      "conceptId": "kids_belief_hope_repentance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After behaving unkindly, Sara thinks improving is pointless because Allah's mercy cannot reach her. What should she remember?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One mistake permanently ends every hope"
+        },
+        {
+          "id": "b",
+          "text": "Mercy means she should plan more harm"
+        },
+        {
+          "id": "c",
+          "text": "Only other people's compliments can permit repentance"
+        },
+        {
+          "id": "d",
+          "text": "Do not despair; turn back to Allah and seek improvement"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verses invite hope in Allah's mercy and sincere return. Sara can seek forgiveness and learn to treat people better.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 39,
+          "ayahs": "53-54",
+          "label": "Quran 39:53-54",
+          "url": "https://quran.com/39/53-54"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_049",
+      "conceptId": "kids_belief_angels_servants",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A lesson says angels obey Allah, so they must also be gods. Which correction is sound?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obeying Allah does not make His servants divine"
+        },
+        {
+          "id": "b",
+          "text": "Every obedient servant becomes a god"
+        },
+        {
+          "id": "c",
+          "text": "Angels make Allah follow their commands"
+        },
+        {
+          "id": "d",
+          "text": "The Quran says angels deserve worship beside Allah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The verses describe angels as honored servants acting at Allah's command. Their obedience does not make them partners in His divinity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "26-27",
+          "label": "Quran 21:26-27",
+          "url": "https://quran.com/21/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_050",
+      "conceptId": "kids_belief_iblis_jinn",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A quiz card says, \"Iblis was one of the jinn.\" Should the card be changed just to match a fantasy film?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, fantasy films decide Islamic belief"
+        },
+        {
+          "id": "b",
+          "text": "No, the card matches the Quran's statement"
+        },
+        {
+          "id": "c",
+          "text": "Yes, the most dramatic version must be true"
+        },
+        {
+          "id": "d",
+          "text": "No, because every film detail is revelation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Islamic teaching follows the Quran's identification of Iblis. Fictional entertainment does not determine what we believe about him.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 18,
+          "ayahs": "50",
+          "label": "Quran 18:50",
+          "url": "https://quran.com/18/50"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_051",
+      "conceptId": "kids_belief_earlier_scriptures",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend thinks there were no earlier scriptures before the Quran. Which pair named in Al-Ala helps correct this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Two modern school textbooks"
+        },
+        {
+          "id": "b",
+          "text": "Two poetry books written this year"
+        },
+        {
+          "id": "c",
+          "text": "The scriptures of Ibrahim and Musa"
+        },
+        {
+          "id": "d",
+          "text": "Two notebooks with no connection to revelation"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Al-Ala mentions earlier scriptures associated with Ibrahim and Musa. This supports learning about revelation before the Quran without inventing extra details.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 87,
+          "ayahs": "18-19",
+          "label": "Quran 87:18-19",
+          "url": "https://quran.com/87/18-19"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_052",
+      "conceptId": "kids_belief_message_all_people",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Lina worries the Prophet's ﷺ message is not for her because she speaks Bangla at home. Which reply fits the verse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only native Arabic speakers are addressed"
+        },
+        {
+          "id": "b",
+          "text": "Her home language makes learning Islam impossible"
+        },
+        {
+          "id": "c",
+          "text": "Only one nationality can study the message"
+        },
+        {
+          "id": "d",
+          "text": "His message addresses all people, including different language communities"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran describes Muhammad ﷺ as a messenger to all people. Language support can help Lina understand a message that includes her.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 7,
+          "ayahs": "158",
+          "label": "Quran 7:158",
+          "url": "https://quran.com/7/158"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_053",
+      "conceptId": "kids_belief_unseen_knowledge",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "An online account claims it independently knows every person's future. Which reminder fits Islamic belief?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complete independent knowledge of the unseen belongs to Allah"
+        },
+        {
+          "id": "b",
+          "text": "Many followers make the account all-knowing"
+        },
+        {
+          "id": "c",
+          "text": "Charging money proves its claims are revelation"
+        },
+        {
+          "id": "d",
+          "text": "Confident speech makes every future claim certain"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A claim to know the unseen is not proved by confidence or popularity. Ask a trusted adult instead of relying on such predictions.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 27,
+          "ayahs": "65",
+          "label": "Quran 27:65",
+          "url": "https://quran.com/27/65"
+        },
+        {
+          "type": "quran",
+          "surah": 72,
+          "ayahs": "26-27",
+          "label": "Quran 72:26-27",
+          "url": "https://quran.com/72/26-27"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_054",
+      "conceptId": "kids_belief_judgment_scales",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A classmate thinks Allah's judgment favors popular people. What does the verse about scales teach instead?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The biggest audience decides every judgment"
+        },
+        {
+          "id": "b",
+          "text": "Allah establishes just scales and wrongs no one"
+        },
+        {
+          "id": "c",
+          "text": "Unknown people's actions are never considered"
+        },
+        {
+          "id": "d",
+          "text": "Popularity can replace fairness"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse promises complete justice, even concerning very small deeds. It offers reassurance that Allah does not judge by popularity.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 21,
+          "ayahs": "47",
+          "label": "Quran 21:47",
+          "url": "https://quran.com/21/47"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_055",
+      "conceptId": "kids_belief_paradise_promise",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A worksheet asks what the verse's promise of Gardens mentions. Which answer should you select?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Having the most famous surname"
+        },
+        {
+          "id": "b",
+          "text": "Owning the most costly belongings"
+        },
+        {
+          "id": "c",
+          "text": "Believing and doing righteous deeds"
+        },
+        {
+          "id": "d",
+          "text": "Winning every classroom competition"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The verse joins belief and good deeds in its promise. The question concerns the teaching, not judging any particular child's final destiny.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 4,
+          "ayahs": "57",
+          "label": "Quran 4:57",
+          "url": "https://quran.com/4/57"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_056",
+      "conceptId": "kids_belief_small_deeds_count",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend says a small kindness is worthless because nobody noticed. Which response fits Az-Zalzalah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only actions with a photograph count"
+        },
+        {
+          "id": "b",
+          "text": "Unnoticed kindness is always wasted"
+        },
+        {
+          "id": "c",
+          "text": "Small actions have no place in belief"
+        },
+        {
+          "id": "d",
+          "text": "Even very small good deeds matter"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The verses give weight to even tiny deeds. A small kindness need not become public to be worth doing.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 99,
+          "ayahs": "7-8",
+          "label": "Quran 99:7-8",
+          "url": "https://quran.com/99/7-8"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_057",
+      "conceptId": "kids_belief_hearts_actions",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Children rank each other's faith by the price of their clothes. Which reminder follows the hadith?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allah gives importance to hearts and deeds, not price tags"
+        },
+        {
+          "id": "b",
+          "text": "The most expensive clothes prove the best heart"
+        },
+        {
+          "id": "c",
+          "text": "Every plain outfit proves perfect sincerity"
+        },
+        {
+          "id": "d",
+          "text": "A person's faith can be read from their hairstyle"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The hadith turns attention toward hearts and actions. Clothing does not give children a way to measure another person's faith.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2564c",
+          "label": "Sahih Muslim 2564c",
+          "url": "https://sunnah.com/muslim:2564c"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_058",
+      "conceptId": "kids_belief_life_test",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learner gets a low school mark and says, \"This proves I have no worth before Allah.\" Which correction is helpful?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every low mark proves rejection by Allah"
+        },
+        {
+          "id": "b",
+          "text": "School marks do not measure faith; keep learning and doing good"
+        },
+        {
+          "id": "c",
+          "text": "Only top students can ever do good deeds"
+        },
+        {
+          "id": "d",
+          "text": "A quiz result reveals someone's final destiny"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The verse concerns life's test of deeds. Support the learner's improvement without confusing academic performance with their faith or worth.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 67,
+          "ayahs": "2",
+          "label": "Quran 67:2",
+          "url": "https://quran.com/67/2"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_059",
+      "conceptId": "kids_belief_decree_responsible_effort",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Yusuf's project goes wrong because he skipped a step. What combines accepting Allah's decree with responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Say decree means learning from mistakes is forbidden"
+        },
+        {
+          "id": "b",
+          "text": "Blame a classmate who was not involved"
+        },
+        {
+          "id": "c",
+          "text": "Accept the outcome, correct the step and try again"
+        },
+        {
+          "id": "d",
+          "text": "Give up every useful effort permanently"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The hadith encourages beneficial effort and seeking Allah's help. Accepting an outcome can go with taking responsibility and improving a plan.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "2664",
+          "label": "Sahih Muslim 2664",
+          "url": "https://sunnah.com/muslim:2664"
+        }
+      ]
+    },
+    {
+      "id": "kids_pro_beliefs_foundations_060",
+      "conceptId": "kids_belief_cooperation_and_reliance",
+      "categoryId": "beliefs_foundations",
+      "levelId": "pro",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You make dua, then ask your teacher for help understanding a lesson. How should these actions be understood?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking a teacher automatically means worshipping them"
+        },
+        {
+          "id": "b",
+          "text": "Making dua forbids learning from other people"
+        },
+        {
+          "id": "c",
+          "text": "Every form of dependence on any person is divine worship"
+        },
+        {
+          "id": "d",
+          "text": "Suitable human help can go with turning to Allah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Quran encourages cooperation in good. Learning with a teacher is ordinary assistance, while worship remains directed to Allah.",
+      "references": [
+        {
+          "type": "quran",
+          "surah": 5,
+          "ayahs": "2",
+          "label": "Quran 5:2",
+          "url": "https://quran.com/5/2"
+        }
+      ]
+    }
+  ]
+}

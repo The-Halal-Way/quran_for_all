@@ -1,0 +1,2298 @@
+{
+  "schemaVersion": 3,
+  "bankVersion": "1.0.0",
+  "language": "en",
+  "audienceId": "kids",
+  "levelId": "beginner",
+  "categoryId": "seerah",
+  "title": "Seerah",
+  "description": "Little Muslim → Beginner. Short questions about the life of Prophet Muhammad ﷺ: familiar people and places, the beginning of revelation, the Hijrah, and his caring everyday example. Written with children around ages 6–9 in mind; an adult may read questions aloud. All questions are Beginner level within the Kids audience.",
+  "questionCount": 60,
+  "questionStyleCounts": {
+    "familiar_fact": 20,
+    "broader_basic": 20,
+    "everyday_application": 20
+  },
+  "levelMethod": "Beginner describes the knowledge and understanding needed across all question styles. Styles are not difficulty levels. Uses introductory knowledge of the Prophet’s ﷺ life, short wording and straightforward examples for the Kids audience. Age and level are editorial guidance, not calibrated with children's reading or response data. Quiz performance describes learning needs, not a child's faith or worth.",
+  "review": {
+    "status": "draft_for_scholarly_review",
+    "referenceCheck": "Linked hadith reports and biographical reference pages checked during preparation. Historical names and events are kept distinct from illustrative present-day scenarios. Questions and explanations are original child-friendly educational paraphrases, not verbatim translations. Everyday scenarios illustrate the cited principles. This is not independent scholarly approval or a completed review with children."
+  },
+  "selectionHints": {
+    "recommendedQuestionsPerAssessment": 4,
+    "mixQuestionStyles": true,
+    "uniqueConceptsWithinAttempt": true,
+    "shuffleOptions": true,
+    "unknownResponse": "Use I am not sure as a separate UI action, not a fifth option."
+  },
+  "questions": [
+    {
+      "id": "kids_beginner_seerah_001",
+      "conceptId": "kids_seerah_birth_makkah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which city was Prophet Muhammad ﷺ born?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Makkah"
+        },
+        {
+          "id": "b",
+          "text": "Madinah"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalem"
+        },
+        {
+          "id": "d",
+          "text": "Taif"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Prophet Muhammad ﷺ was born in Makkah.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Islamweb — The birth of Prophet Muhammad ﷺ",
+          "url": "https://www.islamweb.net/en/article/76848/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_002",
+      "conceptId": "kids_seerah_father_abdullah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What was the name of the Prophet's ﷺ father?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Bakr"
+        },
+        {
+          "id": "b",
+          "text": "Abdullah"
+        },
+        {
+          "id": "c",
+          "text": "Umar"
+        },
+        {
+          "id": "d",
+          "text": "Ali"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet's ﷺ father was Abdullah. Muhammad ibn Abdullah means Muhammad, son of Abdullah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_003",
+      "conceptId": "kids_seerah_mother_aminah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What was the name of the Prophet's ﷺ mother?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Khadijah"
+        },
+        {
+          "id": "b",
+          "text": "Aishah"
+        },
+        {
+          "id": "c",
+          "text": "Aminah"
+        },
+        {
+          "id": "d",
+          "text": "Fatimah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet's ﷺ mother was Aminah, the daughter of Wahb.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Islamweb — Aminah, the mother of Prophet Muhammad ﷺ",
+          "url": "https://islamweb.com/en/fatwa/258025/the-lineage-of-aaminah-the-mother-of-the-prophet-sallallaahu-alayhi-wa-sallam"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_004",
+      "conceptId": "kids_seerah_khadijah_support",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which wife comforted the Prophet ﷺ after his first Quran revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aishah"
+        },
+        {
+          "id": "b",
+          "text": "Hafsah"
+        },
+        {
+          "id": "c",
+          "text": "Umm Salamah"
+        },
+        {
+          "id": "d",
+          "text": "Khadijah"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Khadijah comforted him and spoke about his good character and care for others.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "160a",
+          "label": "Sahih Muslim 160a",
+          "url": "https://sunnah.com/muslim:160a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_005",
+      "conceptId": "kids_seerah_hira",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which cave did the Prophet ﷺ receive his first Quran verses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hira"
+        },
+        {
+          "id": "b",
+          "text": "Thawr"
+        },
+        {
+          "id": "c",
+          "text": "The cave of the Sleepers"
+        },
+        {
+          "id": "d",
+          "text": "A cave in Madinah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The first Quran verses came to the Prophet ﷺ in the cave of Hira.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_006",
+      "conceptId": "kids_seerah_age_forty",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How old was the Prophet ﷺ when he began receiving revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ten years old"
+        },
+        {
+          "id": "b",
+          "text": "Forty years old"
+        },
+        {
+          "id": "c",
+          "text": "Twenty years old"
+        },
+        {
+          "id": "d",
+          "text": "Sixty years old"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet ﷺ began receiving revelation at the age of forty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3902",
+          "label": "Sahih al-Bukhari 3902",
+          "url": "https://sunnah.com/bukhari:3902"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_007",
+      "conceptId": "kids_seerah_hijrah_route",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "To which city did the Prophet ﷺ migrate from Makkah in the Hijrah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taif"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalem"
+        },
+        {
+          "id": "c",
+          "text": "Madinah"
+        },
+        {
+          "id": "d",
+          "text": "Damascus"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Hijrah was the Prophet's ﷺ migration from Makkah to Madinah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_008",
+      "conceptId": "kids_seerah_abu_bakr_cave",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which companion was with the Prophet ﷺ in the cave during the Hijrah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umar"
+        },
+        {
+          "id": "b",
+          "text": "Uthman"
+        },
+        {
+          "id": "c",
+          "text": "Ali"
+        },
+        {
+          "id": "d",
+          "text": "Abu Bakr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Abu Bakr accompanied the Prophet ﷺ and was with him in the cave during the Hijrah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_009",
+      "conceptId": "kids_seerah_mosque_madinah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "In which city did the Prophet ﷺ establish his mosque after the Hijrah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Madinah"
+        },
+        {
+          "id": "b",
+          "text": "Makkah"
+        },
+        {
+          "id": "c",
+          "text": "Taif"
+        },
+        {
+          "id": "d",
+          "text": "Jerusalem"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet's ﷺ mosque is in Madinah. He established it after arriving there.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_010",
+      "conceptId": "kids_seerah_fatimah_daughter",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Which of these women was a daughter of the Prophet ﷺ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Khadijah"
+        },
+        {
+          "id": "b",
+          "text": "Fatimah"
+        },
+        {
+          "id": "c",
+          "text": "Aminah"
+        },
+        {
+          "id": "d",
+          "text": "Aishah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Fatimah was one of the Prophet's ﷺ daughters. He welcomed her with love.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3623",
+          "label": "Sahih al-Bukhari 3623",
+          "url": "https://sunnah.com/bukhari:3623"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_011",
+      "conceptId": "kids_seerah_affection_hasan",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did the Prophet ﷺ show affection to the child Hasan in this report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He mocked him"
+        },
+        {
+          "id": "b",
+          "text": "He refused to notice him"
+        },
+        {
+          "id": "c",
+          "text": "He gave him a kiss"
+        },
+        {
+          "id": "d",
+          "text": "He called kindness a weakness"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ kissed Hasan and taught the importance of showing mercy.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_012",
+      "conceptId": "kids_seerah_greet_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ do when passing a group of children?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Said greetings were only for adults"
+        },
+        {
+          "id": "b",
+          "text": "Ordered them never to speak"
+        },
+        {
+          "id": "c",
+          "text": "Pretended children were not there"
+        },
+        {
+          "id": "d",
+          "text": "Greeted them with salam"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ greeted children with salam. Children mattered to him too.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6247",
+          "label": "Sahih al-Bukhari 6247",
+          "url": "https://sunnah.com/bukhari:6247"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_013",
+      "conceptId": "kids_seerah_help_family",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ do at home?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Helped his family"
+        },
+        {
+          "id": "b",
+          "text": "Refused every household task"
+        },
+        {
+          "id": "c",
+          "text": "Said helping was beneath him"
+        },
+        {
+          "id": "d",
+          "text": "Expected everyone to serve him"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Aishah said the Prophet ﷺ helped his family at home and went to prayer when it was time.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "676",
+          "label": "Sahih al-Bukhari 676",
+          "url": "https://sunnah.com/bukhari:676"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_014",
+      "conceptId": "kids_seerah_gentle_with_anas",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did Anas describe the Prophet's ﷺ treatment of him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always harsh and insulting"
+        },
+        {
+          "id": "b",
+          "text": "Gentle and patient"
+        },
+        {
+          "id": "c",
+          "text": "Always mocking his work"
+        },
+        {
+          "id": "d",
+          "text": "Too proud to speak kindly"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Anas served the Prophet ﷺ for years and remembered his gentle treatment.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "Sahih al-Bukhari 6038",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_015",
+      "conceptId": "kids_seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did the Prophet ﷺ do if he did not want a food?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insulted the food"
+        },
+        {
+          "id": "b",
+          "text": "Mocked the person who made it"
+        },
+        {
+          "id": "c",
+          "text": "Left it without criticizing it"
+        },
+        {
+          "id": "d",
+          "text": "Called everyone foolish for eating it"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "He ate food he liked and left what he did not want without finding fault with it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "Sahih al-Bukhari 5409",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_016",
+      "conceptId": "kids_seerah_generosity",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How was the Prophet ﷺ described when it came to giving?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Always unwilling to help"
+        },
+        {
+          "id": "b",
+          "text": "Kind only when given a prize"
+        },
+        {
+          "id": "c",
+          "text": "Interested only in keeping everything"
+        },
+        {
+          "id": "d",
+          "text": "Very generous"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ was exceptionally generous, especially during Ramadan.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "Sahih al-Bukhari 6",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_017",
+      "conceptId": "kids_seerah_smile_jarir",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "How did Jarir remember the Prophet ﷺ receiving him?",
+      "options": [
+        {
+          "id": "a",
+          "text": "With a smile"
+        },
+        {
+          "id": "b",
+          "text": "With an insult"
+        },
+        {
+          "id": "c",
+          "text": "With a demand for gifts"
+        },
+        {
+          "id": "d",
+          "text": "With mocking laughter"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Jarir remembered the Prophet ﷺ welcoming him with a smile.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6089",
+          "label": "Sahih al-Bukhari 6089",
+          "url": "https://sunnah.com/bukhari:6089"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_018",
+      "conceptId": "kids_seerah_considerate_prayer",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "Why did the Prophet ﷺ shorten a prayer after hearing a baby cry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because babies did not matter"
+        },
+        {
+          "id": "b",
+          "text": "To avoid distressing the baby's mother"
+        },
+        {
+          "id": "c",
+          "text": "To punish the other worshippers"
+        },
+        {
+          "id": "d",
+          "text": "Because kindness was unimportant"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "He considered the mother's worry and kept the prayer shorter. His care included families with small children.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "Sahih al-Bukhari 707",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_019",
+      "conceptId": "kids_seerah_truthful_reputation",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "What did people at Safa say about the Prophet's ﷺ truthfulness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They knew him to invent stories"
+        },
+        {
+          "id": "b",
+          "text": "They trusted only his jokes"
+        },
+        {
+          "id": "c",
+          "text": "They knew him to tell the truth"
+        },
+        {
+          "id": "d",
+          "text": "They had never heard him speak"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Even people who opposed his message recognized his truthfulness when he addressed them at Safa.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_020",
+      "conceptId": "kids_seerah_easier_good_choice",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "familiar_fact",
+      "question": "When given two choices, which would the Prophet ﷺ choose if it involved no sin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The choice that harmed others"
+        },
+        {
+          "id": "b",
+          "text": "The choice involving dishonesty"
+        },
+        {
+          "id": "c",
+          "text": "The choice that made him boastful"
+        },
+        {
+          "id": "d",
+          "text": "The easier choice"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ chose ease when it did not involve sin. He did not choose a sinful action just to make things easier.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "Sahih al-Bukhari 3560",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_021",
+      "conceptId": "kids_seerah_birth_makkah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does calling Makkah the Prophet's ﷺ birthplace mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He was born there"
+        },
+        {
+          "id": "b",
+          "text": "He first moved there after the Hijrah"
+        },
+        {
+          "id": "c",
+          "text": "It was the name of his father"
+        },
+        {
+          "id": "d",
+          "text": "It was the name of his mosque"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A birthplace is where someone is born. The Prophet ﷺ was born in Makkah.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Islamweb — The birth of Prophet Muhammad ﷺ",
+          "url": "https://www.islamweb.net/en/article/76848/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_022",
+      "conceptId": "kids_seerah_father_abdullah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Muhammad ibn Abdullah mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muhammad, brother of Abdullah"
+        },
+        {
+          "id": "b",
+          "text": "Muhammad, son of Abdullah"
+        },
+        {
+          "id": "c",
+          "text": "Muhammad, teacher of Abdullah"
+        },
+        {
+          "id": "d",
+          "text": "Muhammad, neighbor of Abdullah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "In this name, ibn means son of. Abdullah was the Prophet's ﷺ father.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_023",
+      "conceptId": "kids_seerah_mother_aminah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Where does Aminah belong in a simple family chart of the Prophet ﷺ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "His daughter"
+        },
+        {
+          "id": "b",
+          "text": "His wife"
+        },
+        {
+          "id": "c",
+          "text": "His mother"
+        },
+        {
+          "id": "d",
+          "text": "His sister"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Aminah was his mother. Remembering family names helps us learn his life story.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Islamweb — Aminah, the mother of Prophet Muhammad ﷺ",
+          "url": "https://islamweb.com/en/fatwa/258025/the-lineage-of-aaminah-the-mother-of-the-prophet-sallallaahu-alayhi-wa-sallam"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_024",
+      "conceptId": "kids_seerah_khadijah_support",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Khadijah's response after the first revelation show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She laughed at his worry"
+        },
+        {
+          "id": "b",
+          "text": "She refused to listen"
+        },
+        {
+          "id": "c",
+          "text": "She told him good character did not matter"
+        },
+        {
+          "id": "d",
+          "text": "She reassured him with caring words"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Khadijah listened and reassured him, remembering his truthfulness, family care and help for people in need.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "160a",
+          "label": "Sahih Muslim 160a",
+          "url": "https://sunnah.com/muslim:160a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_025",
+      "conceptId": "kids_seerah_hira",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which event is connected with the cave of Hira?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The first Quran verses came to the Prophet ﷺ"
+        },
+        {
+          "id": "b",
+          "text": "The Prophet's ﷺ mosque was built there"
+        },
+        {
+          "id": "c",
+          "text": "It became the city of Madinah"
+        },
+        {
+          "id": "d",
+          "text": "It was the Prophet's ﷺ birthplace"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Hira is connected with the beginning of Quran revelation. It is different from the cave used during the Hijrah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_026",
+      "conceptId": "kids_seerah_age_forty",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Was the Prophet ﷺ a child or an adult when he began receiving revelation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A baby learning to walk"
+        },
+        {
+          "id": "b",
+          "text": "An adult, aged forty"
+        },
+        {
+          "id": "c",
+          "text": "A child aged seven"
+        },
+        {
+          "id": "d",
+          "text": "A teenager aged fifteen"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "He was forty years old, already an adult, when revelation began.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3902",
+          "label": "Sahih al-Bukhari 3902",
+          "url": "https://sunnah.com/bukhari:3902"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_027",
+      "conceptId": "kids_seerah_hijrah_route",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "In the Prophet's ﷺ life story, what does the Hijrah to Madinah describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A journey from Madinah to Makkah for Hajj"
+        },
+        {
+          "id": "b",
+          "text": "A trip from Makkah to Taif"
+        },
+        {
+          "id": "c",
+          "text": "A move from Makkah to Madinah"
+        },
+        {
+          "id": "d",
+          "text": "The building of the Kaaba"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Hijrah to Madinah was an important move in his life, from Makkah to Madinah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_028",
+      "conceptId": "kids_seerah_abu_bakr_cave",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "The Prophet ﷺ reassured Abu Bakr in the cave. Whose help did he remind him of?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help from a magic stone"
+        },
+        {
+          "id": "b",
+          "text": "Help from the stars"
+        },
+        {
+          "id": "c",
+          "text": "Help from a lucky charm"
+        },
+        {
+          "id": "d",
+          "text": "Allah's help"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "He reminded Abu Bakr of Allah's support. This teaches trust in Allah during difficulty.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_029",
+      "conceptId": "kids_seerah_mosque_madinah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which activity belonged in the mosque the Prophet ﷺ established in Madinah?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Praying to Allah"
+        },
+        {
+          "id": "b",
+          "text": "Worshipping the sun"
+        },
+        {
+          "id": "c",
+          "text": "Showing off expensive belongings"
+        },
+        {
+          "id": "d",
+          "text": "Stopping people from praying"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The mosque was established for worship. The Prophet ﷺ and his companions prayed there.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_030",
+      "conceptId": "kids_seerah_fatimah_daughter",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Fatimah was the Prophet's ﷺ daughter. What was he to her?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Her brother"
+        },
+        {
+          "id": "b",
+          "text": "Her father"
+        },
+        {
+          "id": "c",
+          "text": "Her son"
+        },
+        {
+          "id": "d",
+          "text": "Her nephew"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A father and daughter are part of a family. The Prophet ﷺ was Fatimah's father.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3623",
+          "label": "Sahih al-Bukhari 3623",
+          "url": "https://sunnah.com/bukhari:3623"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_031",
+      "conceptId": "kids_seerah_affection_hasan",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Prophet's ﷺ affection toward Hasan teach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kindness makes a person weak"
+        },
+        {
+          "id": "b",
+          "text": "Children should never receive care"
+        },
+        {
+          "id": "c",
+          "text": "Showing children loving care is good"
+        },
+        {
+          "id": "d",
+          "text": "Only grown-ups deserve mercy"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The report shows tenderness toward a child and teaches mercy. Loving care is part of good character.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_032",
+      "conceptId": "kids_seerah_greet_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What can we learn from the Prophet ﷺ greeting children?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salam is only for wealthy adults"
+        },
+        {
+          "id": "b",
+          "text": "Children must be ignored in public"
+        },
+        {
+          "id": "c",
+          "text": "Being younger removes a person's value"
+        },
+        {
+          "id": "d",
+          "text": "Children deserve a kind greeting too"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "His greeting included children. We can follow this example by greeting others kindly.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6247",
+          "label": "Sahih al-Bukhari 6247",
+          "url": "https://sunnah.com/bukhari:6247"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_033",
+      "conceptId": "kids_seerah_help_family",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the Prophet's ﷺ help at home show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Helping family is an honorable thing"
+        },
+        {
+          "id": "b",
+          "text": "Household help makes someone less important"
+        },
+        {
+          "id": "c",
+          "text": "Only guests deserve our kindness"
+        },
+        {
+          "id": "d",
+          "text": "Important people should refuse all help"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "He helped his family. Caring behavior belongs at home as well as outside it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "676",
+          "label": "Sahih al-Bukhari 676",
+          "url": "https://sunnah.com/bukhari:676"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_034",
+      "conceptId": "kids_seerah_gentle_with_anas",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Which lesson fits Anas's memory of the Prophet ﷺ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A helper's feelings never matter"
+        },
+        {
+          "id": "b",
+          "text": "Treat helpers with patience and respect"
+        },
+        {
+          "id": "c",
+          "text": "Insults are the best way to teach"
+        },
+        {
+          "id": "d",
+          "text": "People who help must never be thanked"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The Prophet's ﷺ gentleness toward Anas gives us an example of patience with people who help us.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "Sahih al-Bukhari 6038",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_035",
+      "conceptId": "kids_seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Does leaving a food politely mean we must insult it first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, insults make leaving it polite"
+        },
+        {
+          "id": "b",
+          "text": "Yes, everyone must hear our complaint"
+        },
+        {
+          "id": "c",
+          "text": "No, we can leave it without insulting it"
+        },
+        {
+          "id": "d",
+          "text": "Yes, we must mock its cook"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ did not find fault with food. We can express preferences without hurtful comments.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "Sahih al-Bukhari 5409",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_036",
+      "conceptId": "kids_seerah_generosity",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does being generous mean?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taking everyone's belongings"
+        },
+        {
+          "id": "b",
+          "text": "Boasting about everything we own"
+        },
+        {
+          "id": "c",
+          "text": "Keeping every useful thing from others"
+        },
+        {
+          "id": "d",
+          "text": "Willingly giving and helping others"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Generosity means being willing to give and help. The Prophet ﷺ was a great example of it.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "Sahih al-Bukhari 6",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_037",
+      "conceptId": "kids_seerah_smile_jarir",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does Jarir's memory of the Prophet's ﷺ smile show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A warm way of welcoming someone"
+        },
+        {
+          "id": "b",
+          "text": "A way to make fun of someone"
+        },
+        {
+          "id": "c",
+          "text": "A demand that everyone hide sadness"
+        },
+        {
+          "id": "d",
+          "text": "A rule that people must never ask for help"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet's ﷺ smile was a friendly welcome. It did not teach us to mock people or hide every feeling.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6089",
+          "label": "Sahih al-Bukhari 6089",
+          "url": "https://sunnah.com/bukhari:6089"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_038",
+      "conceptId": "kids_seerah_considerate_prayer",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "What does the shorter prayer for a crying baby's mother show?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He thought mothers' feelings did not matter"
+        },
+        {
+          "id": "b",
+          "text": "He noticed other people's needs"
+        },
+        {
+          "id": "c",
+          "text": "He wanted babies to be frightened"
+        },
+        {
+          "id": "d",
+          "text": "He disliked all parents"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "He showed consideration for the mother's distress. His example teaches us to notice others' needs.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "Sahih al-Bukhari 707",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_039",
+      "conceptId": "kids_seerah_truthful_reputation",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Why is the people's answer at Safa important to his life story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It proved honesty did not matter"
+        },
+        {
+          "id": "b",
+          "text": "It meant only friends could trust him"
+        },
+        {
+          "id": "c",
+          "text": "They recognized his honesty"
+        },
+        {
+          "id": "d",
+          "text": "It showed that lying was admired"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Their answer shows his reputation for speaking truth. We can learn honesty from his example.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_040",
+      "conceptId": "kids_seerah_easier_good_choice",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "broader_basic",
+      "question": "Did the Prophet ﷺ choose something wrong just because it was easier?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, ease made every wrong thing right"
+        },
+        {
+          "id": "b",
+          "text": "Yes, rules never mattered when something was easy"
+        },
+        {
+          "id": "c",
+          "text": "Yes, hurting others was allowed for convenience"
+        },
+        {
+          "id": "d",
+          "text": "No, the easier choice had to be free of sin"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "He chose the easier option when it was not sinful. Ease does not make a wrong action right.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "Sahih al-Bukhari 3560",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_041",
+      "conceptId": "kids_seerah_birth_makkah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Sara labels a map with the Prophet's ﷺ birthplace. Which city should she mark?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Makkah"
+        },
+        {
+          "id": "b",
+          "text": "Madinah"
+        },
+        {
+          "id": "c",
+          "text": "Taif"
+        },
+        {
+          "id": "d",
+          "text": "Jerusalem"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Makkah is the city where Prophet Muhammad ﷺ was born.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Islamweb — The birth of Prophet Muhammad ﷺ",
+          "url": "https://www.islamweb.net/en/article/76848/"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_042",
+      "conceptId": "kids_seerah_father_abdullah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Ayan's worksheet asks for the Prophet's ﷺ father's name. Which name should he write?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abu Bakr"
+        },
+        {
+          "id": "b",
+          "text": "Abdullah"
+        },
+        {
+          "id": "c",
+          "text": "Umar"
+        },
+        {
+          "id": "d",
+          "text": "Uthman"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "His father's name was Abdullah. This is why he is called Muhammad ibn Abdullah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "2731",
+          "label": "Sahih al-Bukhari 2731",
+          "url": "https://sunnah.com/bukhari:2731"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_043",
+      "conceptId": "kids_seerah_mother_aminah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Maryam is matching the Prophet ﷺ with his mother. Which name should she choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fatimah"
+        },
+        {
+          "id": "b",
+          "text": "Khadijah"
+        },
+        {
+          "id": "c",
+          "text": "Aminah"
+        },
+        {
+          "id": "d",
+          "text": "Hafsah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Aminah was the mother of Prophet Muhammad ﷺ.",
+      "references": [
+        {
+          "type": "web",
+          "label": "Islamweb — Aminah, the mother of Prophet Muhammad ﷺ",
+          "url": "https://islamweb.com/en/fatwa/258025/the-lineage-of-aaminah-the-mother-of-the-prophet-sallallaahu-alayhi-wa-sallam"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_044",
+      "conceptId": "kids_seerah_khadijah_support",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning how Khadijah comforted the Prophet ﷺ, how could you support a worried friend?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laugh at the worry"
+        },
+        {
+          "id": "b",
+          "text": "Tell everyone to tease them"
+        },
+        {
+          "id": "c",
+          "text": "Refuse to let them speak"
+        },
+        {
+          "id": "d",
+          "text": "Listen and speak kindly"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Khadijah's caring response gives us a lesson in reassurance. Listening kindly can help a worried friend.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih Muslim",
+          "number": "160a",
+          "label": "Sahih Muslim 160a",
+          "url": "https://sunnah.com/muslim:160a"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_045",
+      "conceptId": "kids_seerah_hira",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your teacher asks which cave belongs with the beginning of Quran revelation. Which label should you choose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hira"
+        },
+        {
+          "id": "b",
+          "text": "Thawr"
+        },
+        {
+          "id": "c",
+          "text": "The cave of the Sleepers"
+        },
+        {
+          "id": "d",
+          "text": "A cave in Madinah"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Choose Hira. The first Quran verses were revealed to the Prophet ﷺ there.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3",
+          "label": "Sahih al-Bukhari 3",
+          "url": "https://sunnah.com/bukhari:3"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_046",
+      "conceptId": "kids_seerah_age_forty",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are making a life-story card for the start of revelation. Which age belongs on it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ten"
+        },
+        {
+          "id": "b",
+          "text": "Forty"
+        },
+        {
+          "id": "c",
+          "text": "Twenty"
+        },
+        {
+          "id": "d",
+          "text": "Sixty"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Revelation began when the Prophet ﷺ was forty years old.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3902",
+          "label": "Sahih al-Bukhari 3902",
+          "url": "https://sunnah.com/bukhari:3902"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_047",
+      "conceptId": "kids_seerah_hijrah_route",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A learning game asks you to connect the two cities of the Prophet's ﷺ Hijrah. Which pair fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Madinah to Taif"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalem to Makkah"
+        },
+        {
+          "id": "c",
+          "text": "Makkah to Madinah"
+        },
+        {
+          "id": "d",
+          "text": "Damascus to Madinah"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Hijrah route being learned here goes from Makkah to Madinah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3905",
+          "label": "Sahih al-Bukhari 3905",
+          "url": "https://sunnah.com/bukhari:3905"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_048",
+      "conceptId": "kids_seerah_abu_bakr_cave",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Your class is matching companions with events. Who belongs beside the Prophet ﷺ in the Hijrah cave account?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Umar"
+        },
+        {
+          "id": "b",
+          "text": "Uthman"
+        },
+        {
+          "id": "c",
+          "text": "Ali"
+        },
+        {
+          "id": "d",
+          "text": "Abu Bakr"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Abu Bakr was with the Prophet ﷺ in the cave during the Hijrah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3653",
+          "label": "Sahih al-Bukhari 3653",
+          "url": "https://sunnah.com/bukhari:3653"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_049",
+      "conceptId": "kids_seerah_mosque_madinah",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Lina's lesson card says, \"The Prophet's ﷺ Mosque.\" Which city should she match it with?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Madinah"
+        },
+        {
+          "id": "b",
+          "text": "Makkah"
+        },
+        {
+          "id": "c",
+          "text": "Taif"
+        },
+        {
+          "id": "d",
+          "text": "Jerusalem"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "The Prophet's ﷺ Mosque is in Madinah, where he established it after the Hijrah.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "428",
+          "label": "Sahih al-Bukhari 428",
+          "url": "https://sunnah.com/bukhari:428"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_050",
+      "conceptId": "kids_seerah_fatimah_daughter",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A family-tree activity needs one daughter of the Prophet ﷺ. Which name fits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aminah"
+        },
+        {
+          "id": "b",
+          "text": "Fatimah"
+        },
+        {
+          "id": "c",
+          "text": "Khadijah"
+        },
+        {
+          "id": "d",
+          "text": "Umm Salamah"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Fatimah was one of the Prophet’s ﷺ daughters.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3623",
+          "label": "Sahih al-Bukhari 3623",
+          "url": "https://sunnah.com/bukhari:3623"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_051",
+      "conceptId": "kids_seerah_affection_hasan",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn how tenderly the Prophet ﷺ treated Hasan. Which action follows that lesson with a younger child?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mock the child for being small"
+        },
+        {
+          "id": "b",
+          "text": "Say children do not need care"
+        },
+        {
+          "id": "c",
+          "text": "Treat the child gently and kindly"
+        },
+        {
+          "id": "d",
+          "text": "Make the child feel unwanted"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet's ﷺ affection toward Hasan teaches loving care for children. Gentleness is a way to practice this lesson.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5997",
+          "label": "Sahih al-Bukhari 5997",
+          "url": "https://sunnah.com/bukhari:5997"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_052",
+      "conceptId": "kids_seerah_greet_children",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You pass some classmates after learning that the Prophet ﷺ greeted children. What can you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pretend they do not exist"
+        },
+        {
+          "id": "b",
+          "text": "Say they are too young for greetings"
+        },
+        {
+          "id": "c",
+          "text": "Demand a gift before greeting them"
+        },
+        {
+          "id": "d",
+          "text": "Greet them with salam"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A kind salam follows the Prophet's ﷺ example of greeting children.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6247",
+          "label": "Sahih al-Bukhari 6247",
+          "url": "https://sunnah.com/bukhari:6247"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_053",
+      "conceptId": "kids_seerah_help_family",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn that the Prophet ﷺ helped at home. Which action follows his example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Help your family put things away"
+        },
+        {
+          "id": "b",
+          "text": "Refuse because helping is beneath you"
+        },
+        {
+          "id": "c",
+          "text": "Make a mess for others to clear"
+        },
+        {
+          "id": "d",
+          "text": "Mock someone doing household work"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Helping with a suitable task at home follows his example of serving his family.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "676",
+          "label": "Sahih al-Bukhari 676",
+          "url": "https://sunnah.com/bukhari:676"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_054",
+      "conceptId": "kids_seerah_gentle_with_anas",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A friend helping you drops some pencils. Remembering the Prophet's ﷺ gentleness with Anas, what should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insult your friend"
+        },
+        {
+          "id": "b",
+          "text": "Speak kindly and help pick them up"
+        },
+        {
+          "id": "c",
+          "text": "Laugh until your friend feels ashamed"
+        },
+        {
+          "id": "d",
+          "text": "Call your friend useless"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Patient, respectful words follow the gentleness Anas remembered. We can help someone correct a mistake without insulting them.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6038",
+          "label": "Sahih al-Bukhari 6038",
+          "url": "https://sunnah.com/bukhari:6038"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_055",
+      "conceptId": "kids_seerah_food_manners",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You are offered food you do not like. Which response follows the Prophet's ﷺ manners?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Call the food disgusting"
+        },
+        {
+          "id": "b",
+          "text": "Make fun of the cook"
+        },
+        {
+          "id": "c",
+          "text": "Politely decline without insulting the food"
+        },
+        {
+          "id": "d",
+          "text": "Tell everyone they are foolish for liking it"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The Prophet ﷺ left unwanted food without criticizing it. You can be polite about your preferences too.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "5409",
+          "label": "Sahih al-Bukhari 5409",
+          "url": "https://sunnah.com/bukhari:5409"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_056",
+      "conceptId": "kids_seerah_generosity",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning about the Prophet's ﷺ generosity, which action can you practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Take someone else's toy to give away"
+        },
+        {
+          "id": "b",
+          "text": "Demand a prize before helping"
+        },
+        {
+          "id": "c",
+          "text": "Boast while refusing every request"
+        },
+        {
+          "id": "d",
+          "text": "Share something suitable that you have permission to give"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Sharing what you may give is one way to practice generosity. The Prophet ﷺ showed great generosity.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6",
+          "label": "Sahih al-Bukhari 6",
+          "url": "https://sunnah.com/bukhari:6"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_057",
+      "conceptId": "kids_seerah_smile_jarir",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "A new classmate arrives. Which welcome reflects the Prophet's ﷺ warm treatment of Jarir?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Offer a friendly smile and welcome"
+        },
+        {
+          "id": "b",
+          "text": "Make fun of the classmate's name"
+        },
+        {
+          "id": "c",
+          "text": "Ignore them to show you are important"
+        },
+        {
+          "id": "d",
+          "text": "Demand a present before speaking"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A friendly welcome can help someone feel included. Jarir remembered being received warmly by the Prophet ﷺ.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "6089",
+          "label": "Sahih al-Bukhari 6089",
+          "url": "https://sunnah.com/bukhari:6089"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_058",
+      "conceptId": "kids_seerah_considerate_prayer",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "After learning about the crying baby, you notice a parent needs help carrying a bag. Which response shows consideration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laugh at the parent's difficulty"
+        },
+        {
+          "id": "b",
+          "text": "Offer suitable help with an adult nearby"
+        },
+        {
+          "id": "c",
+          "text": "Block the way for fun"
+        },
+        {
+          "id": "d",
+          "text": "Say other people's needs never matter"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "His care for a worried mother teaches consideration. Offering suitable help is an everyday example of noticing someone's needs.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "707",
+          "label": "Sahih al-Bukhari 707",
+          "url": "https://sunnah.com/bukhari:707"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_059",
+      "conceptId": "kids_seerah_truthful_reputation",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "You learn that people recognized the Prophet's ﷺ honesty. You accidentally break a pencil. What follows his example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Blame someone who was not there"
+        },
+        {
+          "id": "b",
+          "text": "Invent a story to avoid responsibility"
+        },
+        {
+          "id": "c",
+          "text": "Tell the truth about what happened"
+        },
+        {
+          "id": "d",
+          "text": "Pretend the pencil never existed"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Speaking truthfully follows his example. Be honest about what happened and ask how to put things right.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "4770",
+          "label": "Sahih al-Bukhari 4770",
+          "url": "https://sunnah.com/bukhari:4770"
+        }
+      ]
+    },
+    {
+      "id": "kids_beginner_seerah_060",
+      "conceptId": "kids_seerah_easier_good_choice",
+      "categoryId": "seerah",
+      "levelId": "beginner",
+      "questionType": "single_choice",
+      "questionStyle": "everyday_application",
+      "question": "Two allowed ways finish a task well. One is simpler. Which choice fits the Prophet's ﷺ example?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Choose a dishonest shortcut instead"
+        },
+        {
+          "id": "b",
+          "text": "Make the task harder just to boast"
+        },
+        {
+          "id": "c",
+          "text": "Hurt someone to save time"
+        },
+        {
+          "id": "d",
+          "text": "Use the simpler way without doing wrong"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The Prophet ﷺ chose the easier option when it was not sinful. A simple, honest way can be a good choice.",
+      "references": [
+        {
+          "type": "hadith",
+          "collection": "Sahih al-Bukhari",
+          "number": "3560",
+          "label": "Sahih al-Bukhari 3560",
+          "url": "https://sunnah.com/bukhari:3560"
+        }
+      ]
+    }
+  ]
+}
