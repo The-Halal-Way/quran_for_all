@@ -5,6 +5,8 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../domain/entities/tasbeeh/tasbeeh_phrase.dart';
 import '../../../models/tasbeeh_phrase_draft.dart';
+import 'tasbeeh_built_in_choices.dart';
+import 'tasbeeh_phrase_localizer.dart';
 import 'tasbeeh_suggestion_card.dart';
 import 'tasbeeh_suggestions.dart';
 import 'tasbeeh_target_field.dart';
@@ -13,20 +15,31 @@ Future<TasbeehPhraseDraft?> showTasbeehPhraseEditor(
   BuildContext context, {
   TasbeehPhrase? phrase,
   int target = 33,
+  List<TasbeehPhrase> availableBuiltIns = const [],
 }) {
   if (phrase?.isBuiltIn ?? false) return Future.value(null);
   return showModalBottomSheet<TasbeehPhraseDraft>(
     context: context,
     isScrollControlled: true,
     showDragHandle: true,
-    builder: (_) => TasbeehPhraseEditorSheet(phrase: phrase, target: target),
+    builder: (_) => TasbeehPhraseEditorSheet(
+      phrase: phrase,
+      target: target,
+      availableBuiltIns: availableBuiltIns,
+    ),
   );
 }
 
 class TasbeehPhraseEditorSheet extends StatefulWidget {
-  const TasbeehPhraseEditorSheet({super.key, this.phrase, this.target = 33});
+  const TasbeehPhraseEditorSheet({
+    super.key,
+    this.phrase,
+    this.target = 33,
+    this.availableBuiltIns = const [],
+  });
   final TasbeehPhrase? phrase;
   final int target;
+  final List<TasbeehPhrase> availableBuiltIns;
 
   @override
   State<TasbeehPhraseEditorSheet> createState() =>
@@ -101,6 +114,22 @@ class _TasbeehPhraseEditorSheetState extends State<TasbeehPhraseEditorSheet> {
                 Text(l10n.tasbeehEditPreservesCount, style: text.bodySmall),
               ],
               if (widget.phrase == null) ...[
+                if (widget.availableBuiltIns.isNotEmpty) ...[
+                  const SizedBox(height: AppSpacing.lg),
+                  TasbeehBuiltInChoices(
+                    phrases: widget.availableBuiltIns,
+                    onSelected: (phrase) => Navigator.pop(
+                      context,
+                      TasbeehPhraseDraft(
+                        name: phrase.label(l10n),
+                        arabic: phrase.arabic,
+                        meaning: phrase.localizedMeaning(l10n),
+                        target: widget.target,
+                        builtInPhraseId: phrase.id,
+                      ),
+                    ),
+                  ),
+                ],
                 const SizedBox(height: AppSpacing.xl),
                 Text(
                   l10n.tasbeehSuggestedDhikr,

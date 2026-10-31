@@ -4,8 +4,13 @@ import '../../../../core/localization/l10n_extensions.dart';
 import 'tasbeeh_phrase_actions.dart';
 
 class TasbeehPhraseMenu extends StatelessWidget {
-  const TasbeehPhraseMenu({super.key, required this.onSelected});
+  const TasbeehPhraseMenu({
+    super.key,
+    required this.onSelected,
+    this.canEdit = true,
+  });
   final ValueChanged<TasbeehPhraseAction> onSelected;
+  final bool canEdit;
 
   @override
   Widget build(BuildContext context) => PopupMenuButton<TasbeehPhraseAction>(
@@ -15,10 +20,11 @@ class TasbeehPhraseMenu extends StatelessWidget {
     padding: EdgeInsets.zero,
     constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
     itemBuilder: (context) => [
-      PopupMenuItem(
-        value: TasbeehPhraseAction.edit,
-        child: Text(context.l10n.tasbeehEditDhikr),
-      ),
+      if (canEdit)
+        PopupMenuItem(
+          value: TasbeehPhraseAction.edit,
+          child: Text(context.l10n.tasbeehEditDhikr),
+        ),
       PopupMenuItem(
         value: TasbeehPhraseAction.delete,
         child: Text(

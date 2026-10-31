@@ -4,6 +4,7 @@ import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/core/theme/app_theme_colors.dart';
 import 'tasbeeh_undo_button.dart';
+import 'tasbeeh_reset_all_dialog.dart';
 
 class TasbeehControls extends StatelessWidget {
   const TasbeehControls({
@@ -52,7 +53,12 @@ class TasbeehControls extends StatelessWidget {
         ),
         const SizedBox(width: 4),
         IconButton.filledTonal(
-          onPressed: canResetAll ? onResetAll : null,
+          onPressed: canResetAll
+              ? () async {
+                  final confirmed = await confirmTasbeehResetAll(context);
+                  if (context.mounted && confirmed) onResetAll();
+                }
+              : null,
           tooltip: context.l10n.tasbeehResetAll,
           icon: const Icon(CupertinoIcons.trash, size: 18),
           style: IconButton.styleFrom(

@@ -25,6 +25,10 @@ class TasbeehViewModel extends ChangeNotifier {
     ),
   ];
   final List<TasbeehPhrase> _customPhrases = [];
+  final List<String> _builtInPhraseIds = [];
+  final List<String> _phraseOrder = [
+    for (final phrase in builtInTasbeehPhrases) phrase.id,
+  ];
   final Map<String, int> _counts = {
     for (final phrase in builtInTasbeehPhrases) phrase.id: 0,
   };
@@ -47,10 +51,30 @@ class TasbeehViewModel extends ChangeNotifier {
   bool get autoNextEnabled => _autoNext;
   bool get canUndo => _autoAdvanceUndoPhraseId != null || count > 0;
   String get selectedPhraseId => _selectedPhraseId;
-  List<TasbeehPhrase> get phrases => List.unmodifiable([
-    if (currentSession.isDefault) ...builtInTasbeehPhrases,
-    ..._customPhrases,
-  ]);
+  List<TasbeehPhrase> get phrases {
+    final available = {
+      for (final phrase in builtInTasbeehPhrases)
+        if (currentSession.isDefault || _builtInPhraseIds.contains(phrase.id))
+          phrase.id: phrase,
+      for (final phrase in _customPhrases) phrase.id: phrase,
+    };
+    final ordered = <TasbeehPhrase>[];
+    for (final id in _phraseOrder) {
+      final phrase = available.remove(id);
+      if (phrase != null) ordered.add(phrase);
+    }
+    return List.unmodifiable([...ordered, ...available.values]);
+  }
+
+  List<TasbeehPhrase> get availableBuiltInPhrases {
+    final currentIds = phrases.map((phrase) => phrase.id).toSet();
+    return List.unmodifiable(
+      builtInTasbeehPhrases.where((phrase) => !currentIds.contains(phrase.id)),
+    );
+  }
+
+  bool canDeletePhrase(TasbeehPhrase phrase) =>
+      !phrase.isBuiltIn || !currentSession.isDefault;
   TasbeehPhrase get selectedPhrase =>
       phrases.firstWhere((phrase) => phrase.id == _selectedPhraseId);
   Map<String, int> get counts => Map.unmodifiable(_counts);
@@ -97,6 +121,8 @@ class TasbeehViewModel extends ChangeNotifier {
                 targets: state.targets,
                 selectedPhrase: state.selectedPhrase,
                 customPhrases: state.customPhrases,
+                builtInPhraseIds: state.builtInPhraseIds,
+                phraseOrder: state.phraseOrder,
                 autoNext: state.autoNext,
               ),
             ),
@@ -182,6 +208,25 @@ class TasbeehViewModel extends ChangeNotifier {
   void setAutoNext(bool enabled) {
     if (_autoNext == enabled) return;
     _autoNext = enabled;
+    _commit();
+  }
+
+  /// Uses ReorderableListView's insertion index, before the old row is removed.
+  void reorderPhrases(int oldIndex, int newIndex) {
+    final ids = phrases.map((phrase) => phrase.id).toList();
+    if (oldIndex < 0 ||
+        oldIndex >= ids.length ||
+        newIndex < 0 ||
+        newIndex > ids.length) {
+      return;
+    }
+    if (newIndex > oldIndex) newIndex--;
+    if (oldIndex == newIndex) return;
+    ids.insert(newIndex, ids.removeAt(oldIndex));
+    _phraseOrder
+      ..clear()
+      ..addAll(ids);
+    _autoAdvanceUndoPhraseId = null;
     _commit();
   }
 
@@ -275,8 +320,25 @@ class TasbeehViewModel extends ChangeNotifier {
     );
     _counts[id] = 0;
     _targets[id] = target;
+    _phraseOrder.add(id);
     _autoAdvanceUndoPhraseId = null;
     _selectedPhraseId = id;
+    _commit();
+    return id;
+  }
+
+  String? addBuiltInPhrase(String id) {
+    if (currentSession.isDefault ||
+        _counts.containsKey(id) ||
+        !builtInTasbeehPhrases.any((phrase) => phrase.id == id)) {
+      return null;
+    }
+    _builtInPhraseIds.add(id);
+    _phraseOrder.add(id);
+    _counts[id] = 0;
+    _targets[id] = targets.first;
+    _selectedPhraseId = id;
+    _autoAdvanceUndoPhraseId = null;
     _commit();
     return id;
   }
@@ -308,8 +370,12 @@ class TasbeehViewModel extends ChangeNotifier {
 
   bool deletePhrase(String id) {
     final index = _customPhrases.indexWhere((phrase) => phrase.id == id);
-    if (index < 0) return false;
-    _customPhrases.removeAt(index);
+    if (index >= 0) {
+      _customPhrases.removeAt(index);
+    } else if (currentSession.isDefault || !_builtInPhraseIds.remove(id)) {
+      return false;
+    }
+    _phraseOrder.remove(id);
     _autoAdvanceUndoPhraseId = null;
     _counts.remove(id);
     _targets.remove(id);
@@ -331,6 +397,8 @@ class TasbeehViewModel extends ChangeNotifier {
       targets: defaultProgress.targets,
       selectedPhrase: defaultProgress.selectedPhrase,
       customPhrases: defaultProgress.customPhrases,
+      builtInPhraseIds: defaultProgress.builtInPhraseIds,
+      phraseOrder: defaultProgress.phraseOrder,
       autoNext: defaultProgress.autoNext,
       sessions: List.unmodifiable(_sessions),
       selectedSessionId: _selectedSessionId,
@@ -344,6 +412,9 @@ class TasbeehViewModel extends ChangeNotifier {
   void _restoreSession(TasbeehSession session) {
     final progress = session.progress;
     final seenIds = builtInTasbeehPhrases.map((phrase) => phrase.id).toSet();
+    _builtInPhraseIds
+      ..clear()
+      ..addAll(progress.builtInPhraseIds.where(seenIds.contains).toSet());
     _customPhrases
       ..clear()
       ..addAll(
@@ -355,9 +426,16 @@ class TasbeehViewModel extends ChangeNotifier {
               seenIds.add(phrase.id),
         ),
       );
+    _phraseOrder
+      ..clear()
+      ..addAll(progress.phraseOrder);
+    final entries = phrases;
+    _phraseOrder
+      ..clear()
+      ..addAll(entries.map((phrase) => phrase.id));
     _counts.clear();
     _targets.clear();
-    for (final phrase in phrases) {
+    for (final phrase in entries) {
       final savedCount = progress.counts[phrase.id] ?? 0;
       _counts[phrase.id] = savedCount < 0 ? 0 : savedCount;
       final savedTarget = progress.targets[phrase.id] ?? targets.first;
@@ -386,6 +464,8 @@ class TasbeehViewModel extends ChangeNotifier {
         targets: Map.unmodifiable(_targets),
         selectedPhrase: _selectedPhraseId.isEmpty ? null : _selectedPhraseId,
         customPhrases: List.unmodifiable(_customPhrases),
+        builtInPhraseIds: List.unmodifiable(_builtInPhraseIds),
+        phraseOrder: List.unmodifiable(_phraseOrder),
         autoNext: _autoNext,
       ),
     );

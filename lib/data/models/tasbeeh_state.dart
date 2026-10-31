@@ -6,6 +6,8 @@ class TasbeehSavedState extends TasbeehProgress {
     required super.targets,
     super.selectedPhrase,
     super.customPhrases,
+    super.builtInPhraseIds,
+    super.phraseOrder,
     super.autoNext,
     this.sessions = const [],
     this.selectedSessionId = TasbeehSession.defaultId,
@@ -17,7 +19,7 @@ class TasbeehSavedState extends TasbeehProgress {
   @override
   Map<String, dynamic> toMap() => {
     ...super.toMap(),
-    'version': 2,
+    'version': 3,
     'selectedSessionId': selectedSessionId,
     'sessions': sessions.map((session) => session.toMap()).toList(),
   };
@@ -30,6 +32,8 @@ class TasbeehSavedState extends TasbeehProgress {
       targets: legacy.targets,
       selectedPhrase: legacy.selectedPhrase,
       customPhrases: legacy.customPhrases,
+      builtInPhraseIds: legacy.builtInPhraseIds,
+      phraseOrder: legacy.phraseOrder,
       autoNext: legacy.autoNext,
       selectedSessionId: map['selectedSessionId'] is String
           ? map['selectedSessionId'] as String

@@ -31,6 +31,7 @@ class TasbeehBody extends StatelessWidget {
       return const Scaffold(body: Center(child: CupertinoActivityIndicator()));
     }
     final phrases = vm.phrases;
+    final sessionId = vm.selectedSessionId;
     final selectedPhraseIndex = phrases.indexWhere(
       (phrase) => phrase.id == vm.selectedPhraseId,
     );
@@ -92,9 +93,10 @@ class TasbeehBody extends StatelessWidget {
                                 selectedPhraseIndex < phrases.length - 1
                                 ? () => selectPhraseAt(selectedPhraseIndex + 1)
                                 : null,
-                            phraseMenu: vm.selectedPhrase.isBuiltIn
+                            phraseMenu: !vm.canDeletePhrase(vm.selectedPhrase)
                                 ? null
                                 : TasbeehPhraseMenu(
+                                    canEdit: !vm.selectedPhrase.isBuiltIn,
                                     onSelected: (action) =>
                                         TasbeehPhraseActions.handle(
                                           context,
@@ -142,7 +144,11 @@ class TasbeehBody extends StatelessWidget {
                             canResetAll: vm.totalCount > 0,
                             onUndo: vm.decrement,
                             onResetCount: vm.resetCount,
-                            onResetAll: vm.resetAll,
+                            onResetAll: () {
+                              if (vm.selectedSessionId == sessionId) {
+                                vm.resetAll();
+                              }
+                            },
                           ),
                         ],
                       ],

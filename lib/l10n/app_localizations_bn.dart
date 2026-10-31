@@ -2755,6 +2755,33 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tasbeehResetAll => 'সব রিসেট';
 
   @override
+  String get tasbeehResetAllTitle => 'সব গণনা রিসেট করবেন?';
+
+  @override
+  String get tasbeehResetAllConfirm => 'এই সেশনের প্রতিটি জিকিরের গণনা ও সম্পন্ন রাউন্ড রিসেট করবেন? এটি আর ফেরত আনা যাবে না।';
+
+  @override
+  String get tasbeehBuiltInAddHint => 'এই সেশনে যোগ করতে একটি জিকিরে স্পর্শ করুন। যোগ করার পর লক্ষ্য নির্ধারণ করতে পারবেন।';
+
+  @override
+  String get tasbeehReorder => 'সাজান';
+
+  @override
+  String get tasbeehDhikrOrder => 'জিকিরের ক্রম';
+
+  @override
+  String get tasbeehReorderHint => 'ক্রম বদলাতে হ্যান্ডেল ধরে টানুন অথবা তীর চিহ্ন ব্যবহার করুন।';
+
+  @override
+  String get tasbeehMoveUp => 'উপরে সরান';
+
+  @override
+  String get tasbeehMoveDown => 'নিচে সরান';
+
+  @override
+  String get tasbeehDragToReorder => 'ক্রম বদলাতে টানুন';
+
+  @override
   String get tasbeehAddDhikr => 'জিকির যোগ করুন';
 
   @override

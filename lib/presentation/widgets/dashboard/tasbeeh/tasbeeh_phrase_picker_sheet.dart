@@ -8,6 +8,7 @@ import '../../../viewmodels/dashboard/tasbeeh_viewmodel.dart';
 import 'tasbeeh_phrase_actions.dart';
 import 'tasbeeh_phrase_localizer.dart';
 import 'tasbeeh_phrase_menu.dart';
+import 'tasbeeh_phrase_order_sheet.dart';
 
 Future<void> showTasbeehPhrasePicker(
   BuildContext context,
@@ -59,6 +60,9 @@ class _TasbeehPhrasePickerSheet extends StatelessWidget {
               _PickerHeader(
                 selectedPhrase: model.hasPhrases ? model.selectedPhrase : null,
                 accent: colors.violet,
+                onReorder: model.phrases.length > 1
+                    ? () => showTasbeehPhraseOrder(context, model)
+                    : null,
               ),
               Expanded(
                 child: ListView.separated(
@@ -78,6 +82,7 @@ class _TasbeehPhrasePickerSheet extends StatelessWidget {
                       count: model.countFor(phrase.id),
                       target: model.targetFor(phrase.id),
                       selected: phrase.id == model.selectedPhraseId,
+                      canDelete: model.canDeletePhrase(phrase),
                       onSelected: () {
                         model.selectPhrase(phrase.id);
                         Navigator.of(context).pop();
@@ -104,10 +109,15 @@ class _TasbeehPhrasePickerSheet extends StatelessWidget {
 }
 
 class _PickerHeader extends StatelessWidget {
-  const _PickerHeader({required this.selectedPhrase, required this.accent});
+  const _PickerHeader({
+    required this.selectedPhrase,
+    required this.accent,
+    this.onReorder,
+  });
 
   final TasbeehPhrase? selectedPhrase;
   final Color accent;
+  final VoidCallback? onReorder;
 
   @override
   Widget build(BuildContext context) {
@@ -140,12 +150,25 @@ class _PickerHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSpacing.lg),
-          Text(
-            context.l10n.tasbeehPhraseOptions,
-            style: text.titleLarge.copyWith(
-              color: Colors.white,
-              fontWeight: AppTheme.weightExtraBold,
-            ),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  context.l10n.tasbeehPhraseOptions,
+                  style: text.titleLarge.copyWith(
+                    color: Colors.white,
+                    fontWeight: AppTheme.weightExtraBold,
+                  ),
+                ),
+              ),
+              if (onReorder != null)
+                TextButton.icon(
+                  onPressed: onReorder,
+                  style: TextButton.styleFrom(foregroundColor: Colors.white),
+                  icon: const Icon(Icons.swap_vert_rounded, size: 18),
+                  label: Text(context.l10n.tasbeehReorder),
+                ),
+            ],
           ),
           const SizedBox(height: AppSpacing.xs),
           Text(
@@ -170,6 +193,7 @@ class _PickerPhraseTile extends StatelessWidget {
     required this.count,
     required this.target,
     required this.selected,
+    required this.canDelete,
     required this.onSelected,
     required this.onAction,
   });
@@ -178,6 +202,7 @@ class _PickerPhraseTile extends StatelessWidget {
   final int count;
   final int target;
   final bool selected;
+  final bool canDelete;
   final VoidCallback onSelected;
   final ValueChanged<TasbeehPhraseAction> onAction;
 
@@ -229,7 +254,7 @@ class _PickerPhraseTile extends StatelessWidget {
                             ),
                           ),
                   ),
-                  if (phrase.isBuiltIn)
+                  if (!canDelete)
                     Icon(
                       selected
                           ? Icons.check_circle_rounded
@@ -239,7 +264,10 @@ class _PickerPhraseTile extends StatelessWidget {
                           : scheme.onSurfaceVariant,
                     )
                   else
-                    TasbeehPhraseMenu(onSelected: onAction),
+                    TasbeehPhraseMenu(
+                      canEdit: !phrase.isBuiltIn,
+                      onSelected: onAction,
+                    ),
                 ],
               ),
               const SizedBox(height: AppSpacing.xs),

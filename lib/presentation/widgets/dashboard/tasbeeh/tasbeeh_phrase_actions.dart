@@ -12,8 +12,15 @@ class TasbeehPhraseActions {
 
   static Future<void> add(BuildContext context, TasbeehViewModel model) async {
     final sessionId = model.selectedSessionId;
-    final draft = await showTasbeehPhraseEditor(context);
+    final draft = await showTasbeehPhraseEditor(
+      context,
+      availableBuiltIns: model.availableBuiltInPhrases,
+    );
     if (draft != null && model.selectedSessionId == sessionId) {
+      if (draft.builtInPhraseId case final id?) {
+        model.addBuiltInPhrase(id);
+        return;
+      }
       model.addPhrase(
         name: draft.name,
         arabic: draft.arabic,
@@ -29,9 +36,10 @@ class TasbeehPhraseActions {
     TasbeehPhrase phrase,
     TasbeehPhraseAction action,
   ) async {
-    if (phrase.isBuiltIn) return;
+    if (!model.canDeletePhrase(phrase)) return;
     final sessionId = model.selectedSessionId;
     if (action == TasbeehPhraseAction.edit) {
+      if (phrase.isBuiltIn) return;
       final draft = await showTasbeehPhraseEditor(
         context,
         phrase: phrase,

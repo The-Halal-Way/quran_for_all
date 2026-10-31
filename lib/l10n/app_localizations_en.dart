@@ -2755,6 +2755,33 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tasbeehResetAll => 'Reset all';
 
   @override
+  String get tasbeehResetAllTitle => 'Reset all counts?';
+
+  @override
+  String get tasbeehResetAllConfirm => 'Reset the counts and completed rounds for every dhikr in this session? This cannot be undone.';
+
+  @override
+  String get tasbeehBuiltInAddHint => 'Tap a dhikr to add it to this session. You can set its target after adding.';
+
+  @override
+  String get tasbeehReorder => 'Reorder';
+
+  @override
+  String get tasbeehDhikrOrder => 'Dhikr order';
+
+  @override
+  String get tasbeehReorderHint => 'Drag the handles or use the arrows to change the order.';
+
+  @override
+  String get tasbeehMoveUp => 'Move up';
+
+  @override
+  String get tasbeehMoveDown => 'Move down';
+
+  @override
+  String get tasbeehDragToReorder => 'Drag to reorder';
+
+  @override
   String get tasbeehAddDhikr => 'Add dhikr';
 
   @override

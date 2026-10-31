@@ -5411,6 +5411,60 @@ abstract class AppLocalizations {
   /// **'Reset all'**
   String get tasbeehResetAll;
 
+  /// No description provided for @tasbeehResetAllTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset all counts?'**
+  String get tasbeehResetAllTitle;
+
+  /// No description provided for @tasbeehResetAllConfirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset the counts and completed rounds for every dhikr in this session? This cannot be undone.'**
+  String get tasbeehResetAllConfirm;
+
+  /// No description provided for @tasbeehBuiltInAddHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap a dhikr to add it to this session. You can set its target after adding.'**
+  String get tasbeehBuiltInAddHint;
+
+  /// No description provided for @tasbeehReorder.
+  ///
+  /// In en, this message translates to:
+  /// **'Reorder'**
+  String get tasbeehReorder;
+
+  /// No description provided for @tasbeehDhikrOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr order'**
+  String get tasbeehDhikrOrder;
+
+  /// No description provided for @tasbeehReorderHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag the handles or use the arrows to change the order.'**
+  String get tasbeehReorderHint;
+
+  /// No description provided for @tasbeehMoveUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Move up'**
+  String get tasbeehMoveUp;
+
+  /// No description provided for @tasbeehMoveDown.
+  ///
+  /// In en, this message translates to:
+  /// **'Move down'**
+  String get tasbeehMoveDown;
+
+  /// No description provided for @tasbeehDragToReorder.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag to reorder'**
+  String get tasbeehDragToReorder;
+
   /// No description provided for @tasbeehAddDhikr.
   ///
   /// In en, this message translates to:

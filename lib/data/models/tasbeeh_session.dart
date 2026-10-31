@@ -7,6 +7,8 @@ class TasbeehProgress {
     required this.targets,
     this.selectedPhrase,
     this.customPhrases = const [],
+    this.builtInPhraseIds = const [],
+    this.phraseOrder = const [],
     this.autoNext = false,
   });
 
@@ -14,6 +16,8 @@ class TasbeehProgress {
   final Map<String, int> targets;
   final String? selectedPhrase;
   final List<TasbeehPhrase> customPhrases;
+  final List<String> builtInPhraseIds;
+  final List<String> phraseOrder;
   final bool autoNext;
 
   Map<String, dynamic> toMap() => {
@@ -21,6 +25,8 @@ class TasbeehProgress {
     'targets': targets,
     'selectedPhrase': selectedPhrase,
     'customPhrases': customPhrases.map((phrase) => phrase.toMap()).toList(),
+    'builtInPhraseIds': builtInPhraseIds,
+    'phraseOrder': phraseOrder,
     'autoNext': autoNext,
   };
 
@@ -31,8 +37,14 @@ class TasbeehProgress {
         ? map['selectedPhrase'] as String
         : null,
     customPhrases: _readCustomPhrases(map['customPhrases']),
+    builtInPhraseIds: _readIds(map['builtInPhraseIds']),
+    phraseOrder: _readIds(map['phraseOrder']),
     autoNext: map['autoNext'] == true,
   );
+
+  static List<String> _readIds(Object? value) => value is List
+      ? List.unmodifiable(value.whereType<String>().toSet())
+      : const [];
 
   static Map<String, int> _readIntMap(Object? value) {
     if (value is! Map<String, dynamic>) return const {};
