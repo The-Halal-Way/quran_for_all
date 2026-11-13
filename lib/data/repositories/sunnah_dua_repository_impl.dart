@@ -8,16 +8,17 @@ import '../datasources/local/sunnah_dua/sunnah_collection_content.dart';
 
 /// A catalog bound to one generated ARB locale; rebuilt when the locale changes.
 class SunnahDuaRepositoryImpl implements SunnahDuaRepository {
-  SunnahDuaRepositoryImpl(AppLocalizations strings)
-    : dailyPractices = List.unmodifiable([
-        ...sunnahMorningContent(strings),
-        ...sunnahDaytimeContent(strings),
-        ...sunnahEveningContent(strings),
-      ]),
-      collections = List.unmodifiable(sunnahCollectionContent(strings));
+  SunnahDuaRepositoryImpl(this._strings)
+    : collections = List.unmodifiable(sunnahCollectionContent(_strings));
+
+  final AppLocalizations _strings;
 
   @override
-  final List<SunnahDuaContent> dailyPractices;
+  late final List<SunnahDuaContent> dailyPractices = List.unmodifiable([
+    ...sunnahMorningContent(_strings),
+    ...sunnahDaytimeContent(_strings),
+    ...sunnahEveningContent(_strings),
+  ]);
 
   @override
   final List<SunnahDuaContent> collections;

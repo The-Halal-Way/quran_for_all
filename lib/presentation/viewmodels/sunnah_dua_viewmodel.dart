@@ -15,9 +15,6 @@ class SunnahDuaViewModel extends ChangeNotifier {
   int get totalPractices => _repository.dailyPractices.length;
   List<SunnahDuaContent> get practices =>
       _search(_repository.dailyPractices, _routineQuery);
-  List<SunnahDuaContent> get collections => _repository.collections
-      .where((item) => item.kind != SunnahDuaKind.quranAyah)
-      .toList(growable: false);
   List<SunnahDuaContent> get quranRecitations => _repository.collections
       .where((item) => item.kind == SunnahDuaKind.quranAyah)
       .toList(growable: false);

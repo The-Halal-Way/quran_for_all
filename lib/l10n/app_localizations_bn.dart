@@ -2075,6 +2075,104 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahDuaTitle => 'সুন্নাহ ও দু\'আ';
 
   @override
+  String get duaLibraryTitle => 'দোয়ার সংগ্রহ';
+
+  @override
+  String get duaLibrarySubtitle => 'জীবনের নানা মুহূর্তের দোয়া। বিভাগ বেছে নিন অথবা খুঁজুন।';
+
+  @override
+  String get duaMorning => 'সকাল';
+
+  @override
+  String get duaEvening => 'সন্ধ্যা';
+
+  @override
+  String get duaAll => 'সব দোয়া';
+
+  @override
+  String get duaCategories => 'বিভাগসমূহ';
+
+  @override
+  String duaEntryCount(String count) {
+    return '$countটি দোয়া';
+  }
+
+  @override
+  String duaCategoryCount(String count) {
+    return '$countটি বিভাগ';
+  }
+
+  @override
+  String duaRepeatCount(String count) {
+    return '$count বার';
+  }
+
+  @override
+  String get duaSearchHint => 'আরবি, শিরোনাম, অর্থ বা সূত্র দিয়ে খুঁজুন';
+
+  @override
+  String get duaSourceNotes => 'বর্ণনা ও সূত্রের নোট';
+
+  @override
+  String get duaLoading => 'দোয়ার সংগ্রহ খোলা হচ্ছে…';
+
+  @override
+  String get duaLoadFailed => 'দোয়ার সংগ্রহ খোলা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get duaNoResults => 'আপনার খোঁজের সঙ্গে কোনো দোয়া মেলেনি। অন্য শব্দ বা বিভাগ দিয়ে খুঁজুন।';
+
+  @override
+  String get duaReadFullVerses => 'সম্পূর্ণ আয়াত পড়ুন';
+
+  @override
+  String get duaOpenReference => 'সূত্র দেখুন';
+
+  @override
+  String get duaAlternativeWording => 'অন্য বর্ণিত শব্দরূপ';
+
+  @override
+  String get duaContextWording => 'প্রেক্ষাপট ও সূত্রের শব্দরূপ';
+
+  @override
+  String get duaAtLodging => 'কোনো স্থানে অবস্থানকালে';
+
+  @override
+  String get duaOutwardJourney => 'যাত্রা শুরুর সময়';
+
+  @override
+  String get duaReturnJourney => 'ফিরে আসার সময়';
+
+  @override
+  String get duaPronunciationHelp => 'উচ্চারণের নির্দেশিকা';
+
+  @override
+  String get duaListenReference => 'আয়াতের তিলাওয়াত শুনুন';
+
+  @override
+  String get duaRelated => 'সম্পর্কিত দোয়া';
+
+  @override
+  String get duaPrevious => 'আগের দোয়া';
+
+  @override
+  String get duaNext => 'পরের দোয়া';
+
+  @override
+  String get duaSwipeHint => 'অন্য দোয়া পড়তে ডানে বা বামে সোয়াইপ করুন';
+
+  @override
+  String duaReaderPosition(String position, String total) {
+    return '$totalটির মধ্যে দোয়া $position';
+  }
+
+  @override
+  String get duaReferenceEntry => 'বর্ণনা বা ঐতিহাসিক প্রেক্ষাপট বোঝার জন্য এই লেখাটি রাখা হয়েছে। এর শব্দরূপের সঙ্গে সূত্রের নোট ও মান সম্পর্কে পড়ুন।';
+
+  @override
+  String get duaPracticeEntry => 'সুন্নাহ আমলের স্মারক। নিচের আরবি লেখাটি রোজা সম্পর্কে হাদিসের বক্তব্য।';
+
+  @override
   String get sunnahDuaHeroEyebrow => 'দৈনন্দিন আমল';
 
   @override
@@ -4907,4 +5005,71 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get quizStylesNotice => 'প্রশ্নের ধরন কাজের প্রকৃতি বোঝায়, কঠিনতার মাত্রা নয়। সব প্রশ্নই আপনার নির্বাচিত স্তরের অন্তর্ভুক্ত।';
+
+  @override
+  String get sunnahLibraryTitle => 'সুন্নাহ লাইব্রেরি';
+
+  @override
+  String get sunnahLibrarySubtitle => 'বিভাগ অনুযায়ী ১৩৫টি সুন্নাহ, আদব ও ইবাদতের আমল দেখুন।';
+
+  @override
+  String get sunnahLibrarySearchHint => 'সুন্নাহ, আমল বা সূত্র খুঁজুন';
+
+  @override
+  String get sunnahCategories => 'সুন্নাহর বিভাগ';
+
+  @override
+  String sunnahPracticeCount(String count) {
+    return '$countটি আমল';
+  }
+
+  @override
+  String get sunnahLoading => 'সুন্নাহ লাইব্রেরি প্রস্তুত হচ্ছে…';
+
+  @override
+  String get sunnahLoadFailed => 'সুন্নাহর তথ্য লোড করা যায়নি।';
+
+  @override
+  String get sunnahNoResults => 'মিলে যায় এমন কোনো সুন্নাহ পাওয়া যায়নি।';
+
+  @override
+  String get sunnahPractice => 'আমলটি';
+
+  @override
+  String get sunnahHowToPractice => 'কীভাবে আমল করবেন';
+
+  @override
+  String get sunnahEvidence => 'হাদিসের প্রমাণ';
+
+  @override
+  String get sunnahRelatedDuas => 'সম্পর্কিত দোয়া';
+
+  @override
+  String get sunnahQuranReading => 'কুরআন তিলাওয়াত';
+
+  @override
+  String get sunnahImportantNote => 'গুরুত্বপূর্ণ নোট';
+
+  @override
+  String get sunnahPrevious => 'আগের সুন্নাহ';
+
+  @override
+  String get sunnahNext => 'পরের সুন্নাহ';
+
+  @override
+  String get sunnahSwipeHint => 'এই বিভাগের আমলগুলো দেখতে ডানে-বামে সোয়াইপ করুন';
+
+  @override
+  String sunnahReaderPosition(String position, String total) {
+    return '$totalটির মধ্যে আমল $position';
+  }
+
+  @override
+  String get sunnahOpenSource => 'পূর্ণ সূত্র খুলুন';
+
+  @override
+  String get sunnahOpenDua => 'সম্পর্কিত দোয়া পড়ুন';
+
+  @override
+  String get sunnahOccasion => 'সময় ও পুনরাবৃত্তি';
 }

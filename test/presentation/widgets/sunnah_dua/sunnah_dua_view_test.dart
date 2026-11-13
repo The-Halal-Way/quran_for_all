@@ -7,12 +7,12 @@ import 'package:quran_for_all/presentation/views/sunnah_dua/sunnah_dua_view.dart
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/duah/daily_duah/daily_duah_data.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_detail/sunnah_dua_detail_sheet.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_grid.dart';
-import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_more_section.dart';
+import 'package:quran_for_all/presentation/widgets/sunnah_dua/catalog/dua_library_entry_card.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_quran_section.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_shortcut_carousel.dart';
 
 void main() {
-  testWidgets('More shows every collection and opens its details', (
+  testWidgets('Dua library is available beside the existing routine content', (
     tester,
   ) async {
     await tester.binding.setSurfaceSize(const Size(390, 844));
@@ -20,21 +20,7 @@ void main() {
     await tester.pumpWidget(const _TestApp());
     await tester.pumpAndSettle();
 
-    final moreSection = tester.widget<SunnahDuaMoreSection>(
-      find.byType(SunnahDuaMoreSection),
-    );
-    expect(moreSection.items, hasLength(12));
-    expect(
-      moreSection.items.map((item) => item.id),
-      contains('seeking_forgiveness'),
-    );
-    final grid = tester.widget<AppIconGridSection>(
-      find.descendant(
-        of: find.byType(SunnahDuaMoreSection),
-        matching: find.byType(AppIconGridSection),
-      ),
-    );
-    expect(grid.items, hasLength(12));
+    expect(find.byType(DuaLibraryEntryCard), findsOneWidget);
     expect(find.byKey(const ValueKey('collections-search')), findsNothing);
     expect(find.text('See all'), findsNothing);
     expect(find.text('Show less'), findsNothing);
@@ -45,11 +31,6 @@ void main() {
       22,
     );
 
-    await tester.ensureVisible(find.text('Seeking forgiveness'));
-    await tester.tap(find.text('Seeking forgiveness'));
-    await tester.pumpAndSettle();
-    expect(find.byType(SunnahDuaDetailSheet), findsOneWidget);
-    expect(find.textContaining('2702a'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 
@@ -76,13 +57,7 @@ void main() {
           .length,
       3,
     );
-    expect(
-      tester
-          .widget<SunnahDuaMoreSection>(find.byType(SunnahDuaMoreSection))
-          .items
-          .length,
-      12,
-    );
+    expect(find.byType(DuaLibraryEntryCard), findsOneWidget);
     await tester.tap(find.byTooltip('Clear search'));
     await tester.pumpAndSettle();
     expect(find.byType(SunnahDuaGrid), findsNWidgets(3));
@@ -144,30 +119,12 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('More and routine details show Madd with the Arabic font', (
-    tester,
-  ) async {
+  testWidgets('routine details show Madd with the Arabic font', (tester) async {
     await tester.binding.setSurfaceSize(const Size(390, 844));
     addTearDown(() => tester.binding.setSurfaceSize(null));
     await tester.pumpWidget(const _TestApp());
     await tester.pumpAndSettle();
 
-    await tester.ensureVisible(find.text('In difficulty'));
-    await tester.tap(find.text('In difficulty'));
-    await tester.pumpAndSettle();
-    final moreArabic = tester.widget<SelectableText>(
-      find.byType(SelectableText),
-    );
-    expect(moreArabic.data, contains('لَآ إِلَهَ'));
-    expect(
-      moreArabic.style?.fontFamily,
-      AppTheme.quranArabic(
-        tester.element(find.byType(SunnahDuaDetailSheet)),
-      ).fontFamily,
-    );
-
-    Navigator.of(tester.element(find.byType(SunnahDuaDetailSheet))).pop();
-    await tester.pumpAndSettle();
     await tester.ensureVisible(find.text('Wake up'));
     await tester.tap(find.text('Wake up'));
     await tester.pumpAndSettle();

@@ -2075,6 +2075,104 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahDuaTitle => 'Sunnah & Du\'a';
 
   @override
+  String get duaLibraryTitle => 'Dua library';
+
+  @override
+  String get duaLibrarySubtitle => 'Words for every moment. Browse categories or search for a dua.';
+
+  @override
+  String get duaMorning => 'Morning';
+
+  @override
+  String get duaEvening => 'Evening';
+
+  @override
+  String get duaAll => 'All duas';
+
+  @override
+  String get duaCategories => 'Categories';
+
+  @override
+  String duaEntryCount(String count) {
+    return '$count duas';
+  }
+
+  @override
+  String duaCategoryCount(String count) {
+    return '$count categories';
+  }
+
+  @override
+  String duaRepeatCount(String count) {
+    return '$count times';
+  }
+
+  @override
+  String get duaSearchHint => 'Search Arabic, titles, meanings or sources';
+
+  @override
+  String get duaSourceNotes => 'Reports & source notes';
+
+  @override
+  String get duaLoading => 'Opening the dua library…';
+
+  @override
+  String get duaLoadFailed => 'The dua library could not be opened. Please try again.';
+
+  @override
+  String get duaNoResults => 'No duas match your search. Try another word or category.';
+
+  @override
+  String get duaReadFullVerses => 'Read the full verses';
+
+  @override
+  String get duaOpenReference => 'Open reference';
+
+  @override
+  String get duaAlternativeWording => 'Other reported wording';
+
+  @override
+  String get duaContextWording => 'Context & reference wording';
+
+  @override
+  String get duaAtLodging => 'At a stopping place';
+
+  @override
+  String get duaOutwardJourney => 'Setting out';
+
+  @override
+  String get duaReturnJourney => 'Returning home';
+
+  @override
+  String get duaPronunciationHelp => 'Pronunciation guide';
+
+  @override
+  String get duaListenReference => 'Listen to the verse';
+
+  @override
+  String get duaRelated => 'Related duas';
+
+  @override
+  String get duaPrevious => 'Previous dua';
+
+  @override
+  String get duaNext => 'Next dua';
+
+  @override
+  String get duaSwipeHint => 'Swipe left or right to read another dua';
+
+  @override
+  String duaReaderPosition(String position, String total) {
+    return 'Dua $position of $total';
+  }
+
+  @override
+  String get duaReferenceEntry => 'This entry is kept for its report or historical context. Read its source notes and grading alongside the wording.';
+
+  @override
+  String get duaPracticeEntry => 'Sunnah practice reminder. The Arabic below is a hadith statement about fasting.';
+
+  @override
   String get sunnahDuaHeroEyebrow => 'Daily practice';
 
   @override
@@ -4914,4 +5012,71 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get quizStylesNotice => 'Question styles describe the kind of task, not its difficulty. All questions belong to your selected level.';
+
+  @override
+  String get sunnahLibraryTitle => 'Sunnah library';
+
+  @override
+  String get sunnahLibrarySubtitle => 'Explore 135 practices, manners and acts of worship by category.';
+
+  @override
+  String get sunnahLibrarySearchHint => 'Search Sunnah, practice or source';
+
+  @override
+  String get sunnahCategories => 'Sunnah categories';
+
+  @override
+  String sunnahPracticeCount(String count) {
+    return '$count practices';
+  }
+
+  @override
+  String get sunnahLoading => 'Preparing the Sunnah library…';
+
+  @override
+  String get sunnahLoadFailed => 'The Sunnah catalog could not be loaded.';
+
+  @override
+  String get sunnahNoResults => 'No matching Sunnah practice was found.';
+
+  @override
+  String get sunnahPractice => 'The practice';
+
+  @override
+  String get sunnahHowToPractice => 'How to practice';
+
+  @override
+  String get sunnahEvidence => 'Hadith evidence';
+
+  @override
+  String get sunnahRelatedDuas => 'Related duas';
+
+  @override
+  String get sunnahQuranReading => 'Quran reading';
+
+  @override
+  String get sunnahImportantNote => 'Important note';
+
+  @override
+  String get sunnahPrevious => 'Previous Sunnah';
+
+  @override
+  String get sunnahNext => 'Next Sunnah';
+
+  @override
+  String get sunnahSwipeHint => 'Swipe to move through this category';
+
+  @override
+  String sunnahReaderPosition(String position, String total) {
+    return 'Practice $position of $total';
+  }
+
+  @override
+  String get sunnahOpenSource => 'Open full source';
+
+  @override
+  String get sunnahOpenDua => 'Read the related dua';
+
+  @override
+  String get sunnahOccasion => 'Occasion and repetition';
 }

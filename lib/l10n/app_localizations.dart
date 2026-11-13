@@ -4079,6 +4079,186 @@ abstract class AppLocalizations {
   /// **'Sunnah & Du\'a'**
   String get sunnahDuaTitle;
 
+  /// No description provided for @duaLibraryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dua library'**
+  String get duaLibraryTitle;
+
+  /// No description provided for @duaLibrarySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Words for every moment. Browse categories or search for a dua.'**
+  String get duaLibrarySubtitle;
+
+  /// No description provided for @duaMorning.
+  ///
+  /// In en, this message translates to:
+  /// **'Morning'**
+  String get duaMorning;
+
+  /// No description provided for @duaEvening.
+  ///
+  /// In en, this message translates to:
+  /// **'Evening'**
+  String get duaEvening;
+
+  /// No description provided for @duaAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All duas'**
+  String get duaAll;
+
+  /// No description provided for @duaCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Categories'**
+  String get duaCategories;
+
+  /// No description provided for @duaEntryCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} duas'**
+  String duaEntryCount(String count);
+
+  /// No description provided for @duaCategoryCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} categories'**
+  String duaCategoryCount(String count);
+
+  /// No description provided for @duaRepeatCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} times'**
+  String duaRepeatCount(String count);
+
+  /// No description provided for @duaSearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Arabic, titles, meanings or sources'**
+  String get duaSearchHint;
+
+  /// No description provided for @duaSourceNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports & source notes'**
+  String get duaSourceNotes;
+
+  /// No description provided for @duaLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Opening the dua library…'**
+  String get duaLoading;
+
+  /// No description provided for @duaLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The dua library could not be opened. Please try again.'**
+  String get duaLoadFailed;
+
+  /// No description provided for @duaNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No duas match your search. Try another word or category.'**
+  String get duaNoResults;
+
+  /// No description provided for @duaReadFullVerses.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the full verses'**
+  String get duaReadFullVerses;
+
+  /// No description provided for @duaOpenReference.
+  ///
+  /// In en, this message translates to:
+  /// **'Open reference'**
+  String get duaOpenReference;
+
+  /// No description provided for @duaAlternativeWording.
+  ///
+  /// In en, this message translates to:
+  /// **'Other reported wording'**
+  String get duaAlternativeWording;
+
+  /// No description provided for @duaContextWording.
+  ///
+  /// In en, this message translates to:
+  /// **'Context & reference wording'**
+  String get duaContextWording;
+
+  /// No description provided for @duaAtLodging.
+  ///
+  /// In en, this message translates to:
+  /// **'At a stopping place'**
+  String get duaAtLodging;
+
+  /// No description provided for @duaOutwardJourney.
+  ///
+  /// In en, this message translates to:
+  /// **'Setting out'**
+  String get duaOutwardJourney;
+
+  /// No description provided for @duaReturnJourney.
+  ///
+  /// In en, this message translates to:
+  /// **'Returning home'**
+  String get duaReturnJourney;
+
+  /// No description provided for @duaPronunciationHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation guide'**
+  String get duaPronunciationHelp;
+
+  /// No description provided for @duaListenReference.
+  ///
+  /// In en, this message translates to:
+  /// **'Listen to the verse'**
+  String get duaListenReference;
+
+  /// No description provided for @duaRelated.
+  ///
+  /// In en, this message translates to:
+  /// **'Related duas'**
+  String get duaRelated;
+
+  /// No description provided for @duaPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous dua'**
+  String get duaPrevious;
+
+  /// No description provided for @duaNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next dua'**
+  String get duaNext;
+
+  /// No description provided for @duaSwipeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe left or right to read another dua'**
+  String get duaSwipeHint;
+
+  /// No description provided for @duaReaderPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'Dua {position} of {total}'**
+  String duaReaderPosition(String position, String total);
+
+  /// No description provided for @duaReferenceEntry.
+  ///
+  /// In en, this message translates to:
+  /// **'This entry is kept for its report or historical context. Read its source notes and grading alongside the wording.'**
+  String get duaReferenceEntry;
+
+  /// No description provided for @duaPracticeEntry.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah practice reminder. The Arabic below is a hadith statement about fasting.'**
+  String get duaPracticeEntry;
+
   /// No description provided for @sunnahDuaHeroEyebrow.
   ///
   /// In en, this message translates to:
@@ -9592,6 +9772,132 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Question styles describe the kind of task, not its difficulty. All questions belong to your selected level.'**
   String get quizStylesNotice;
+
+  /// No description provided for @sunnahLibraryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah library'**
+  String get sunnahLibraryTitle;
+
+  /// No description provided for @sunnahLibrarySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore 135 practices, manners and acts of worship by category.'**
+  String get sunnahLibrarySubtitle;
+
+  /// No description provided for @sunnahLibrarySearchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Sunnah, practice or source'**
+  String get sunnahLibrarySearchHint;
+
+  /// No description provided for @sunnahCategories.
+  ///
+  /// In en, this message translates to:
+  /// **'Sunnah categories'**
+  String get sunnahCategories;
+
+  /// No description provided for @sunnahPracticeCount.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} practices'**
+  String sunnahPracticeCount(String count);
+
+  /// No description provided for @sunnahLoading.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing the Sunnah library…'**
+  String get sunnahLoading;
+
+  /// No description provided for @sunnahLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The Sunnah catalog could not be loaded.'**
+  String get sunnahLoadFailed;
+
+  /// No description provided for @sunnahNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching Sunnah practice was found.'**
+  String get sunnahNoResults;
+
+  /// No description provided for @sunnahPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'The practice'**
+  String get sunnahPractice;
+
+  /// No description provided for @sunnahHowToPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'How to practice'**
+  String get sunnahHowToPractice;
+
+  /// No description provided for @sunnahEvidence.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith evidence'**
+  String get sunnahEvidence;
+
+  /// No description provided for @sunnahRelatedDuas.
+  ///
+  /// In en, this message translates to:
+  /// **'Related duas'**
+  String get sunnahRelatedDuas;
+
+  /// No description provided for @sunnahQuranReading.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran reading'**
+  String get sunnahQuranReading;
+
+  /// No description provided for @sunnahImportantNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Important note'**
+  String get sunnahImportantNote;
+
+  /// No description provided for @sunnahPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous Sunnah'**
+  String get sunnahPrevious;
+
+  /// No description provided for @sunnahNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next Sunnah'**
+  String get sunnahNext;
+
+  /// No description provided for @sunnahSwipeHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Swipe to move through this category'**
+  String get sunnahSwipeHint;
+
+  /// No description provided for @sunnahReaderPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice {position} of {total}'**
+  String sunnahReaderPosition(String position, String total);
+
+  /// No description provided for @sunnahOpenSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Open full source'**
+  String get sunnahOpenSource;
+
+  /// No description provided for @sunnahOpenDua.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the related dua'**
+  String get sunnahOpenDua;
+
+  /// No description provided for @sunnahOccasion.
+  ///
+  /// In en, this message translates to:
+  /// **'Occasion and repetition'**
+  String get sunnahOccasion;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

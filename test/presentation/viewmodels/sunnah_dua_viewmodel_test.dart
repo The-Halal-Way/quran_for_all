@@ -5,12 +5,11 @@ import 'package:quran_for_all/domain/entities/sunnah_dua/sunnah_dua_content.dart
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/l10n/app_localizations_bn.dart';
 import 'package:quran_for_all/l10n/app_localizations_en.dart';
-import 'package:quran_for_all/presentation/models/sunnah_dua_shortcuts_presenter.dart';
 import 'package:quran_for_all/presentation/viewmodels/sunnah_dua_viewmodel.dart';
 
 void main() {
   test(
-    'daily catalog covers the day and keeps situational content in shortcuts',
+    'daily catalog covers the day and retains Quran recitation shortcuts',
     () {
       final catalog = SunnahDuaRepositoryImpl(AppLocalizationsEn());
       final daily = catalog.dailyPractices;
@@ -28,23 +27,11 @@ void main() {
       );
       expect(daily.map((item) => item.id), isNot(contains('difficulty')));
       final collectionIds = catalog.collections.map((item) => item.id);
-      expect(catalog.collections, hasLength(18));
-      expect(collectionIds.toSet(), hasLength(18));
+      expect(catalog.collections, hasLength(6));
+      expect(collectionIds.toSet(), hasLength(6));
       expect(
         collectionIds,
         containsAll([
-          'seeking_forgiveness',
-          'difficulty',
-          'morning_evening',
-          'gratitude',
-          'siyam_sunnahs',
-          'after_salah',
-          'salawat',
-          'when_angry',
-          'during_loss',
-          'after_fajr',
-          'ending_gathering',
-          'bedtime_dhikr',
           'ayatul_kursi',
           'last_two_ayah_al_baqarah',
           'last_three_ayah_al_hashr',
@@ -73,15 +60,10 @@ void main() {
       final total = model.totalPractices;
       model.searchRoutine('  DRINKING   WATER ');
       expect(model.practices.map((item) => item.id), ['drinking']);
-      expect(model.collections, hasLength(12));
       expect(model.quranRecitations, hasLength(6));
       expect(
         model.quranRecitations.every((item) => item.pronunciation.isNotEmpty),
         isTrue,
-      );
-      expect(
-        presentSunnahCollectionShortcuts(model.collections),
-        hasLength(12),
       );
       expect(model.practices.map((item) => item.id), ['drinking']);
       model.searchRoutine('does-not-exist');
@@ -114,14 +96,6 @@ void main() {
     expect(
       bangla.map((item) => item.id).toList(),
       english.map((item) => item.id).toList(),
-    );
-    expect(
-      bangla.singleWhere((item) => item.id == 'after_salah').title,
-      'সালাতের পর যিকর',
-    );
-    expect(
-      english.singleWhere((item) => item.id == 'difficulty').source,
-      'Sahih al-Bukhari 6346',
     );
     final ayatulKursi = english.singleWhere(
       (item) => item.id == 'ayatul_kursi',

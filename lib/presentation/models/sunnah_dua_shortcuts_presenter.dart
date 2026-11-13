@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/theme/my_colors.dart';
-import '../../domain/entities/sunnah_dua/sunnah_dua_content.dart';
 import '../../l10n/app_localizations.dart';
-import 'sunnah_dua_content_presenter.dart';
 import 'sunnah_dua_shortcut.dart';
 
 List<SunnahDuaShortcut> presentSunnahPrimaryShortcuts(AppLocalizations l10n) =>
@@ -33,20 +31,3 @@ List<SunnahDuaShortcut> presentSunnahPrimaryShortcuts(AppLocalizations l10n) =>
         destination: SunnahDuaDestination.names,
       ),
     ];
-
-List<SunnahDuaShortcut> presentSunnahCollectionShortcuts(
-  List<SunnahDuaContent> collections,
-) => collections.map(_collectionShortcut).toList(growable: false);
-
-SunnahDuaShortcut _collectionShortcut(SunnahDuaContent content) {
-  final detail = presentSunnahContent(content);
-  return SunnahDuaShortcut(
-    id: content.id,
-    title: content.title,
-    subtitle: content.subtitle,
-    icon: detail.icon,
-    accent: detail.accent,
-    destination: SunnahDuaDestination.detail,
-    detail: detail,
-  );
-}
