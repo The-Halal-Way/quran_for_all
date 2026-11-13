@@ -29,9 +29,7 @@ class PrayerWidgetRenderer(
                 R.id.widget_container,
                 HomeWidgetLaunchIntent.getActivity(context, MainActivity::class.java),
             )
-            setTextViewText(R.id.widget_title, labels.appTitle)
             setTextViewText(R.id.widget_date, formatter.date(now, labels.localeIdentifier))
-            setTextViewText(R.id.widget_schedule_label, labels.prayerTimes)
             setTextViewText(R.id.widget_sehri_label, labels.sehriEnd)
             setTextViewText(R.id.widget_iftar_label, labels.iftar)
             setTextViewText(R.id.prayer_fajr_label, labels.fajr)
@@ -44,7 +42,6 @@ class PrayerWidgetRenderer(
                 R.id.widget_hijri_date,
                 today?.hijriDateLabel?.takeIf(String::isNotBlank) ?: labels.hijriDatePlaceholder,
             )
-            setTextViewText(R.id.widget_location, snapshot?.locationLabel.orEmpty())
             setTextViewText(R.id.prayer_fajr_value, formatter.time(today?.fajrUtcMillis, labels.localeIdentifier))
             setTextViewText(R.id.prayer_sunrise_value, formatter.time(today?.sunriseUtcMillis, labels.localeIdentifier))
             setTextViewText(R.id.prayer_dhuhr_value, formatter.time(today?.dhuhrUtcMillis, labels.localeIdentifier))
@@ -55,18 +52,18 @@ class PrayerWidgetRenderer(
             setTextViewText(R.id.widget_iftar_value, formatter.time(today?.maghribUtcMillis, labels.localeIdentifier))
             setTextViewText(R.id.widget_status, labels.openToSync)
             setViewVisibility(R.id.widget_status, if (today == null && !compact) View.VISIBLE else View.GONE)
+            // compact layout still has widget_schedule_label and widget_location
             if (compact) {
+                setTextViewText(R.id.widget_schedule_label, labels.prayerTimes)
+                setTextViewText(R.id.widget_location,
+                    if (today == null) labels.tapToUpdate else snapshot?.locationLabel.orEmpty())
                 compactTypography(this)
-                if (today == null) {
-                    setTextViewText(R.id.widget_location, labels.tapToUpdate)
-                }
             }
         }
     }
 
     private fun compactTypography(views: RemoteViews) {
         val sizes = mapOf(
-            R.id.widget_title to 13f,
             R.id.widget_hijri_date to 15f,
             R.id.widget_date to 9f,
             R.id.widget_schedule_label to 9f,

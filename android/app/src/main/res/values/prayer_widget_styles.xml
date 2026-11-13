@@ -19,18 +19,18 @@
     <style name="PrayerWidget.Title" parent="PrayerWidget.Text">
         <item name="android:layout_width">match_parent</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">16.5sp</item>
         <item name="android:textStyle">bold</item>
     </style>
     <style name="PrayerWidget.Hijri" parent="PrayerWidget.Title">
         <item name="android:textSize">19sp</item>
         <item name="android:textColor">@color/prayer_widget_gold</item>
         <item name="android:textDirection">ltr</item>
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">3.5dp</item>
+        <item name="android:paddingBottom">3.5dp</item>
     </style>
     <style name="PrayerWidget.Value" parent="PrayerWidget.Text">
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/prayer_widget_gold</item>
         <item name="android:fontFeatureSettings">tnum</item>
@@ -48,7 +48,7 @@
         <item name="android:importantForAccessibility">no</item>
     </style>
     <style name="PrayerWidget.Section" parent="PrayerWidget.Text">
-        <item name="android:textSize">10sp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:letterSpacing">0.10</item>
         <item name="android:textColor">@color/prayer_widget_gold</item>
