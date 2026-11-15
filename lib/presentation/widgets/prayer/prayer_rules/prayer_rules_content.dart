@@ -10,7 +10,16 @@ import 'prayer_rules_reference_card.dart';
 import 'prayer_rules_section_card.dart';
 
 class PrayerRulesContent extends StatelessWidget {
-  const PrayerRulesContent({super.key});
+  const PrayerRulesContent({
+    super.key,
+    this.beforePrayerKey,
+    this.wuduBreaksKey,
+    this.prayerBreaksKey,
+  });
+
+  final Key? beforePrayerKey;
+  final Key? wuduBreaksKey;
+  final Key? prayerBreaksKey;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +31,7 @@ class PrayerRulesContent extends StatelessWidget {
         const PrayerRulesHero(),
         const SizedBox(height: AppSpacing.xl),
         PrayerRulesSectionCard(
+          key: beforePrayerKey,
           title: l10n.prayerRulesBeforePrayerTitle,
           accent: MyColors.tertiary,
           items: [
@@ -34,6 +44,7 @@ class PrayerRulesContent extends StatelessWidget {
         ),
         const SizedBox(height: AppSpacing.md),
         PrayerRulesSectionCard(
+          key: wuduBreaksKey,
           title: l10n.prayerRulesWuduBreaksTitle,
           accent: MyColors.secondary,
           items: [
@@ -46,6 +57,7 @@ class PrayerRulesContent extends StatelessWidget {
         ),
         const SizedBox(height: AppSpacing.md),
         PrayerRulesSectionCard(
+          key: prayerBreaksKey,
           title: l10n.prayerRulesPrayerBreaksTitle,
           accent: MyColors.primaryLight,
           items: [

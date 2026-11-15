@@ -13,8 +13,8 @@ import 'prayer_focus_hero.dart';
 import 'prayer_guidance_launcher.dart';
 import 'prayer_rakat_guide_card.dart';
 import 'prayer_reference_section.dart';
+import 'prayer_validity_section.dart';
 import 'prayer_section_heading.dart';
-import 'prayer_sehri_window_card.dart';
 import 'prayer_times_status.dart';
 import 'prayer_timeline_grid.dart';
 
@@ -27,8 +27,6 @@ class PrayerViewBody extends StatelessWidget {
     final l10n = context.l10n;
     final responsive = AppResponsive.of(context);
     final content = model.focusContent(l10n);
-    final sehriRange = model.prayerTimeRanges['Sehri'];
-    final sehriEnd = model.prayerTimes['Sehri'];
 
     return Scaffold(
       body: AppPremiumPageBackground(
@@ -63,16 +61,11 @@ class PrayerViewBody extends StatelessWidget {
                         const PrayerTimesStatus(),
                         PrayerFocusHero(
                           content: content,
-                          time: model.focusTime(l10n),
                           hasTimes: model.hasTimes,
+                          sehriEnd: model.prayerTimes['Sehri'],
+                          sehriRange: model.prayerTimeRanges['Sehri'],
+                          iftarTime: model.prayerTimes['Maghrib'],
                         ),
-                        if (sehriRange != null && sehriEnd != null) ...[
-                          const SizedBox(height: AppSpacing.md),
-                          PrayerSehriWindowCard(
-                            timeRange: sehriRange,
-                            lastTime: sehriEnd,
-                          ),
-                        ],
                         const SizedBox(height: AppSpacing.xxxl),
                         PrayerSectionHeading(
                           title: l10n.prayerViewTimelineTitle,
@@ -85,6 +78,8 @@ class PrayerViewBody extends StatelessWidget {
                           items: model.rakatPlans(l10n),
                           focusPrayer: model.focusPrayer,
                         ),
+                        const SizedBox(height: AppSpacing.xxxl),
+                        const PrayerValiditySection(),
                         const SizedBox(height: AppSpacing.xxxl),
                         const PrayerReferenceSection(),
                         const SizedBox(height: AppSpacing.xxxl),

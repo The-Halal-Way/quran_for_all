@@ -3678,6 +3678,21 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerRulesTitle => 'Prayer & Wudu Rules';
 
   @override
+  String get prayerValiditySectionTitle => 'Before & During Prayer';
+
+  @override
+  String get prayerValiditySectionSubtitle => 'Check what prayer requires and what can affect it.';
+
+  @override
+  String get prayerValidityBeforeSummary => 'Purity, clothing, time, qiblah and intention.';
+
+  @override
+  String get prayerValidityWuduSummary => 'Know when purification needs to be renewed.';
+
+  @override
+  String get prayerValidityPrayerSummary => 'Understand what can interrupt or invalidate salah.';
+
+  @override
   String get prayerRulesSubtitle => 'A practical checklist for entering prayer with clarity.';
 
   @override

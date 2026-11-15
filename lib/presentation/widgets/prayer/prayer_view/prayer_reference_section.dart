@@ -10,7 +10,6 @@ import '../../../views/prayer/eid_prayer/eid_prayer_view.dart';
 import '../../../views/prayer/how_to_pray/how_to_pray_view.dart';
 import '../../../views/prayer/janaza_prayer/janaza_prayer_view.dart';
 import '../../../views/prayer/nafal_prayers/nafal_prayers_view.dart';
-import '../../../views/prayer/prayer_rules/prayer_rules_view.dart';
 import '../../../views/prayer/salatul_tasbeeh/salatul_tasbeeh_view.dart';
 import '../../../views/prayer/tayammum/tayammum_view.dart';
 import '../../../views/prayer/wudu/wudu_view.dart';
@@ -28,7 +27,7 @@ class PrayerReferenceSection extends StatelessWidget {
 
     return AppIconGridSection(
       title: l10n.prayerReferenceTitle,
-      phoneColumns: 3,
+      phoneColumns: 4,
       labelMaxLines: 3,
       items: [
         AppIconGridItem(
@@ -87,13 +86,6 @@ class PrayerReferenceSection extends StatelessWidget {
           icon: Icons.water_drop_rounded,
           accent: MyColors.tertiary,
           onTap: () => open(const WuduView()),
-        ),
-        AppIconGridItem(
-          label: l10n.prayerReferenceRulesActionTitle,
-          description: l10n.prayerReferenceRulesActionSubtitle,
-          icon: Icons.rule_rounded,
-          accent: MyColors.primaryLight,
-          onTap: () => open(const PrayerRulesView()),
         ),
       ],
     );

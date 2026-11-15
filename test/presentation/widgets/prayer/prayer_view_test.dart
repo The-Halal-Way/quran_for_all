@@ -34,13 +34,17 @@ void main() {
           matching: find.byType(AppIconGridSection),
         ),
       );
-      expect(references.items, hasLength(6));
-      expect(references.phoneColumns, 3);
+      expect(references.items, hasLength(8));
+      expect(references.phoneColumns, 4);
       expect(references.items.first.label, 'Salah Movement Guide');
       expect(references.items[1].label, 'Forbidden Times');
       expect(
-        tester.widget<PrayerFocusHero>(find.byType(PrayerFocusHero)).time,
-        '4:25 PM - 6:15 PM',
+        tester.widget<PrayerFocusHero>(find.byType(PrayerFocusHero)).sehriEnd,
+        '4:20 AM',
+      );
+      expect(
+        tester.widget<PrayerFocusHero>(find.byType(PrayerFocusHero)).iftarTime,
+        '6:15 PM',
       );
 
       model.currentPrayer = 'Isha';
@@ -48,7 +52,8 @@ void main() {
       await tester.pumpAndSettle();
       final hero = tester.widget<PrayerFocusHero>(find.byType(PrayerFocusHero));
       expect(hero.content.title, 'Isha Closure');
-      expect(hero.time, '7:30 PM - 4:30 AM');
+      expect(hero.sehriRange, '12:00 AM - 4:20 AM');
+      expect(hero.iftarTime, '6:15 PM');
 
       await tester.drag(
         find.byType(SingleChildScrollView).first,
@@ -69,9 +74,10 @@ void main() {
     await tester.pumpAndSettle();
 
     final hero = find.byType(PrayerFocusHero);
-    expect(tester.getSize(hero).height, lessThan(250));
+    expect(tester.getSize(hero).height, lessThan(320));
     expect(find.text('Asr Guard'), findsOneWidget);
-    expect(find.text('4:25 PM - 6:15 PM'), findsWidgets);
+    expect(find.text('4:20 AM'), findsOneWidget);
+    expect(find.text('6:15 PM'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 

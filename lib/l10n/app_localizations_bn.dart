@@ -3678,6 +3678,21 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerRulesTitle => 'নামাজ ও অজুর নিয়ম';
 
   @override
+  String get prayerValiditySectionTitle => 'নামাজের আগে ও নামাজের মধ্যে';
+
+  @override
+  String get prayerValiditySectionSubtitle => 'নামাজের শর্ত এবং কোন কারণে তা প্রভাবিত হতে পারে, জেনে নিন।';
+
+  @override
+  String get prayerValidityBeforeSummary => 'পবিত্রতা, পোশাক, সময়, কিবলা ও নিয়ত।';
+
+  @override
+  String get prayerValidityWuduSummary => 'কখন আবার অজু করতে হবে, তা জানুন।';
+
+  @override
+  String get prayerValidityPrayerSummary => 'কোন কাজে নামাজ ব্যাহত বা নষ্ট হতে পারে, তা বুঝুন।';
+
+  @override
   String get prayerRulesSubtitle => 'নামাজে দাঁড়ানোর আগে পরিষ্কার ও শান্ত থাকার ব্যবহারিক তালিকা।';
 
   @override

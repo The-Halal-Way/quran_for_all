@@ -7,19 +7,24 @@ import '../../../../core/theme/my_colors.dart';
 import '../../../../data/models/prayer/prayer_detail_models.dart';
 import '../prayer_visuals.dart';
 import 'prayer_hero_artwork.dart';
+import 'prayer_fasting_times_strip.dart';
 import 'prayer_time_source_badge.dart';
 
 class PrayerFocusHero extends StatelessWidget {
   const PrayerFocusHero({
     super.key,
     required this.content,
-    required this.time,
     required this.hasTimes,
+    this.sehriEnd,
+    this.sehriRange,
+    this.iftarTime,
   });
 
   final PrayerFocusContent content;
-  final String time;
   final bool hasTimes;
+  final String? sehriEnd;
+  final String? sehriRange;
+  final String? iftarTime;
 
   @override
   Widget build(BuildContext context) {
@@ -114,38 +119,12 @@ class PrayerFocusHero extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppSpacing.xl,
-              vertical: AppSpacing.md,
+          if (hasTimes)
+            PrayerFastingTimesStrip(
+              sehriEnd: sehriEnd,
+              sehriRange: sehriRange,
+              iftarTime: iftarTime,
             ),
-            decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.06),
-              border: Border(
-                top: BorderSide(color: Colors.white.withValues(alpha: 0.12)),
-              ),
-            ),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.access_time_rounded,
-                  color: MyColors.tertiaryLight,
-                  size: 19,
-                ),
-                const SizedBox(width: AppSpacing.sm),
-                Expanded(
-                  child: Text(
-                    time,
-                    style: text.titleMedium.copyWith(
-                      color: Colors.white,
-                      fontWeight: AppTheme.weightBold,
-                      height: 1.25,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
         ],
       ),
     );

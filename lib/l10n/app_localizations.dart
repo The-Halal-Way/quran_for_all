@@ -7205,6 +7205,36 @@ abstract class AppLocalizations {
   /// **'Prayer & Wudu Rules'**
   String get prayerRulesTitle;
 
+  /// No description provided for @prayerValiditySectionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Before & During Prayer'**
+  String get prayerValiditySectionTitle;
+
+  /// No description provided for @prayerValiditySectionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Check what prayer requires and what can affect it.'**
+  String get prayerValiditySectionSubtitle;
+
+  /// No description provided for @prayerValidityBeforeSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Purity, clothing, time, qiblah and intention.'**
+  String get prayerValidityBeforeSummary;
+
+  /// No description provided for @prayerValidityWuduSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Know when purification needs to be renewed.'**
+  String get prayerValidityWuduSummary;
+
+  /// No description provided for @prayerValidityPrayerSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Understand what can interrupt or invalidate salah.'**
+  String get prayerValidityPrayerSummary;
+
   /// No description provided for @prayerRulesSubtitle.
   ///
   /// In en, this message translates to:
