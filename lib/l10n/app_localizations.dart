@@ -6125,6 +6125,18 @@ abstract class AppLocalizations {
   /// **'Current Prayer'**
   String get dashboardCurrentPrayer;
 
+  /// No description provided for @prayerTimeRemaining.
+  ///
+  /// In en, this message translates to:
+  /// **'Waqt ends in'**
+  String get prayerTimeRemaining;
+
+  /// No description provided for @prayerTimeEndsAt.
+  ///
+  /// In en, this message translates to:
+  /// **'Ends at {time}'**
+  String prayerTimeEndsAt(String time);
+
   /// No description provided for @dashboardNextPrayer.
   ///
   /// In en, this message translates to:

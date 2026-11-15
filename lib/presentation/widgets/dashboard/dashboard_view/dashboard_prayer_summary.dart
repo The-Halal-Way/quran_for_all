@@ -5,17 +5,20 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/app_theme_colors.dart';
 import '../../../../core/theme/my_colors.dart';
+import '../../prayer/prayer_time_countdown.dart';
 
 class DashboardPrayerSummary extends StatelessWidget {
   const DashboardPrayerSummary({
     super.key,
     required this.title,
     required this.time,
+    this.endsAtUtc,
     required this.icon,
     required this.expanded,
     required this.onToggle,
   });
   final String title, time;
+  final DateTime? endsAtUtc;
   final IconData icon;
   final bool expanded;
   final VoidCallback onToggle;
@@ -68,6 +71,13 @@ class DashboardPrayerSummary extends StatelessWidget {
                       ),
                     ],
                   ),
+                  if (endsAtUtc != null) ...[
+                    const SizedBox(height: AppSpacing.xs),
+                    PrayerTimeCountdown(
+                      endsAtUtc: endsAtUtc!,
+                      color: Colors.white,
+                    ),
+                  ],
                 ],
               ),
             ),

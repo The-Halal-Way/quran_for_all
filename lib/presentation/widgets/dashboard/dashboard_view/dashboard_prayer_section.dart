@@ -40,6 +40,9 @@ class DashboardPrayerSection extends StatelessWidget {
           ranges: vm.prayerTimeRanges ?? const {},
           forbiddenTimes: forbiddenTimes,
           current: vm.currentPrayer,
+          isPreviousNightIsha:
+              vm.currentPrayer == 'Isha' && vm.nextPrayer == 'Fajr',
+          currentEndsAtUtc: vm.currentPrayerEndsAtUtc,
           loading: vm.isLoading,
           errorTitle: vm.error.isEmpty ? null : title,
           errorMessage: vm.error.isEmpty ? null : message,

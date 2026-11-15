@@ -62,6 +62,9 @@ class PrayerViewBody extends StatelessWidget {
                         PrayerFocusHero(
                           content: content,
                           hasTimes: model.hasTimes,
+                          endsAtUtc: context
+                              .watch<DashboardPrayerTimesViewModel>()
+                              .currentPrayerEndsAtUtc,
                           sehriEnd: model.prayerTimes['Sehri'],
                           sehriRange: model.prayerTimeRanges['Sehri'],
                           iftarTime: model.prayerTimes['Maghrib'],

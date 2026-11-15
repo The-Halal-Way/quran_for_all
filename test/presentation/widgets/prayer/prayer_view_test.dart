@@ -9,6 +9,8 @@ import 'package:quran_for_all/presentation/views/prayer/prayer_view.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_guidance/prayer_guidance_sheet.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_rakat_guide/prayer_rakat_guide_sheet.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_focus_hero.dart';
+import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_fasting_times_strip.dart';
+import 'package:quran_for_all/presentation/widgets/prayer/prayer_time_countdown.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_guidance_launcher.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_rakat_guide_card.dart';
 import 'package:quran_for_all/presentation/widgets/prayer/prayer_view/prayer_reference_section.dart';
@@ -76,7 +78,26 @@ void main() {
     final hero = find.byType(PrayerFocusHero);
     expect(tester.getSize(hero).height, lessThan(320));
     expect(find.text('Asr Guard'), findsOneWidget);
-    expect(find.text('4:20 AM'), findsOneWidget);
+    expect(find.text('12:00 AM - 4:20 AM'), findsOneWidget);
+    expect(find.text('Sehri'), findsOneWidget);
+    expect(find.textContaining('Sehri ·'), findsNothing);
+    expect(tester.widget<Text>(find.text('12:00 AM - 4:20 AM')).maxLines, 1);
+    expect(find.byType(PrayerTimeCountdown), findsOneWidget);
+    final countdown = find.byType(PrayerTimeCountdown);
+    final subtitle = tester.widget<PrayerFocusHero>(hero).content.subtitle;
+    expect(tester.widget<PrayerTimeCountdown>(countdown).prominent, isTrue);
+    expect(
+      tester.getTopLeft(countdown).dx,
+      greaterThan(tester.getTopLeft(find.text('Asr Guard')).dx),
+    );
+    expect(
+      tester.getBottomLeft(countdown).dy,
+      lessThan(tester.getTopLeft(find.text(subtitle)).dy),
+    );
+    expect(
+      tester.getSize(find.byType(PrayerFastingTimesStrip)).height,
+      lessThan(65),
+    );
     expect(find.text('6:15 PM'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });

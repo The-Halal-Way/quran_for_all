@@ -52,6 +52,10 @@ class PrayerTestViewModel extends ChangeNotifier
   @override
   String currentPrayer = 'Asr';
   @override
+  DateTime? currentPrayerEndsAtUtc = DateTime.now().toUtc().add(
+    const Duration(hours: 1),
+  );
+  @override
   PrayerTimesErrorType errorType = PrayerTimesErrorType.none;
   @override
   String get error =>

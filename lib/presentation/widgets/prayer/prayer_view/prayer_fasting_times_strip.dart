@@ -29,7 +29,7 @@ class PrayerFastingTimesStrip extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(
         horizontal: AppSpacing.md,
-        vertical: AppSpacing.sm,
+        vertical: AppSpacing.xs,
       ),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: .07),
@@ -46,9 +46,8 @@ class PrayerFastingTimesStrip extends StatelessWidget {
               MediaQuery.textScalerOf(context).scale(16) <= 20;
           final sehri = _TimeMoment(
             icon: Icons.nightlight_round,
-            label: '${l10n.dashboardPrayerSehri} · ${l10n.prayerViewSehriLast}',
-            time: sehriEnd ?? '',
-            detail: sehriRange,
+            label: l10n.dashboardPrayerSehri,
+            time: sehriRange ?? sehriEnd ?? '',
           );
           final iftar = _TimeMoment(
             icon: Icons.wb_twilight_rounded,
@@ -63,7 +62,7 @@ class PrayerFastingTimesStrip extends StatelessWidget {
                 Expanded(child: sehri),
                 Container(
                   width: 1,
-                  height: 59,
+                  height: 34,
                   margin: const EdgeInsets.symmetric(horizontal: AppSpacing.md),
                   color: Colors.white.withValues(alpha: .18),
                 ),
@@ -98,12 +97,10 @@ class _TimeMoment extends StatelessWidget {
     required this.icon,
     required this.label,
     required this.time,
-    this.detail,
   });
 
   final IconData icon;
   final String label, time;
-  final String? detail;
 
   @override
   Widget build(BuildContext context) {
@@ -127,18 +124,19 @@ class _TimeMoment extends StatelessWidget {
                   fontWeight: AppTheme.weightBold,
                 ),
               ),
-              Text(
-                time,
-                style: text.titleMedium.copyWith(
-                  color: Colors.white,
-                  fontWeight: AppTheme.weightBold,
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: AlignmentDirectional.centerStart,
+                child: Text(
+                  time,
+                  maxLines: 1,
+                  softWrap: false,
+                  style: text.titleMedium.copyWith(
+                    color: Colors.white,
+                    fontWeight: AppTheme.weightBold,
+                  ),
                 ),
               ),
-              if (detail != null && detail!.isNotEmpty)
-                Text(
-                  detail!,
-                  style: text.labelSmall.copyWith(color: Colors.white70),
-                ),
             ],
           ),
         ),

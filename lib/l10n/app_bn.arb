@@ -1225,6 +1225,13 @@
   },
   "dashboardRetry": "আবার চেষ্টা করুন",
   "dashboardCurrentPrayer": "চলমান নামাজ",
+  "prayerTimeRemaining": "ওয়াক্ত শেষ হতে",
+  "prayerTimeEndsAt": "শেষ হবে {time}-এ",
+  "@prayerTimeEndsAt": {
+    "placeholders": {
+      "time": {"type": "String"}
+    }
+  },
   "dashboardNextPrayer": "পরবর্তী নামাজ",
   "dashboardNextShortLabel": "পরবর্তী",
   "dashboardNowShortLabel": "এখন",

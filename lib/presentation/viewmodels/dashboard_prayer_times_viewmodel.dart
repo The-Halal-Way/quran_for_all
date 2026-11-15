@@ -23,7 +23,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   }) : _loadPrayerTimesUseCase = loadPrayerTimesUseCase {
     WidgetsBinding.instance.addObserver(this);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      unawaited(loadPrayerTimes());
+      if (!_disposed) unawaited(loadPrayerTimes());
     });
   }
 
@@ -36,7 +36,14 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   bool _loading = false;
   String? _nextPrayer;
   String? _currentPrayer;
+  DateTime? _currentPrayerEndsAtUtc;
+  tz.Location? _scheduleLocation;
+  DateTime? _scheduleDate;
+  Map<String, tz.TZDateTime> _schedule = const {};
+  tz.TZDateTime? _tomorrowFajr;
+  Timer? _scheduleTimer;
   int _loadVersion = 0;
+  bool _disposed = false;
 
   Map<String, String>? get prayerTimes => _prayerTimes;
   Map<String, String>? get prayerTimeRanges => _prayerTimeRanges;
@@ -45,10 +52,11 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   bool get isLoading => _loading;
   String? get nextPrayer => _nextPrayer;
   String? get currentPrayer => _currentPrayer;
+  DateTime? get currentPrayerEndsAtUtc => _currentPrayerEndsAtUtc;
   bool get hasData => _prayerTimes != null && _prayerTimes!.isNotEmpty;
 
   Future<void> loadPrayerTimes({bool forceRefresh = false}) async {
-    if (_loading) {
+    if (_disposed || _loading) {
       return;
     }
     final version = ++_loadVersion;
@@ -105,6 +113,13 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
     _prayerTimeRanges = null;
     _nextPrayer = null;
     _currentPrayer = null;
+    _currentPrayerEndsAtUtc = null;
+    _schedule = const {};
+    _scheduleLocation = null;
+    _scheduleDate = null;
+    _tomorrowFajr = null;
+    _scheduleTimer?.cancel();
+    _scheduleTimer = null;
     _loading = false;
     _error = '';
     _errorType = PrayerTimesErrorType.none;
@@ -121,6 +136,9 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
 
   @override
   void dispose() {
+    _disposed = true;
+    ++_loadVersion;
+    _scheduleTimer?.cancel();
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
@@ -165,9 +183,16 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
     );
     final sehriStart = tz.TZDateTime(location, fajr.year, fajr.month, fajr.day);
     final tomorrowFajr = dashboardData.tomorrow == null
-        ? null
+        ? tz.TZDateTime(
+            location,
+            fajr.year,
+            fajr.month,
+            fajr.day + 1,
+            fajr.hour,
+            fajr.minute,
+            fajr.second,
+          )
         : tz.TZDateTime.from(dashboardData.tomorrow!.fajrUtc, location);
-    final nowInLocation = tz.TZDateTime.now(location);
     final todaySchedule = <String, tz.TZDateTime>{
       'Fajr': fajr,
       'Sunrise': sunrise,
@@ -176,25 +201,6 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
       'Maghrib': maghrib,
       'Isha': isha,
     };
-
-    String? nextPrayerKey;
-    for (final entry in todaySchedule.entries) {
-      if (entry.value.isAfter(nowInLocation)) {
-        nextPrayerKey = entry.key;
-        break;
-      }
-    }
-
-    // The running prayer is the last one whose window has started today.
-    // Before Fajr, last night's Isha window is still in effect.
-    String? currentPrayerKey;
-    for (final entry in todaySchedule.entries) {
-      if (entry.value.isAfter(nowInLocation)) {
-        break;
-      }
-      currentPrayerKey = entry.key;
-    }
-    currentPrayerKey ??= 'Isha';
 
     _prayerTimes = {
       'Sehri': format.format(imsak),
@@ -211,11 +217,52 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
       'Dhuhr': '${format.format(dhuhr)} - ${format.format(asr)}',
       'Asr': '${format.format(asr)} - ${format.format(maghrib)}',
       'Maghrib': '${format.format(maghrib)} - ${format.format(isha)}',
-      if (tomorrowFajr != null)
-        'Isha': '${format.format(isha)} - ${format.format(tomorrowFajr)}',
+      'Isha': '${format.format(isha)} - ${format.format(tomorrowFajr)}',
     };
-    _nextPrayer = nextPrayerKey;
-    _currentPrayer = currentPrayerKey;
+    _scheduleLocation = location;
+    _scheduleDate = DateTime(fajr.year, fajr.month, fajr.day);
+    _schedule = todaySchedule;
+    _tomorrowFajr = tomorrowFajr;
+    _syncCurrentPrayer(tz.TZDateTime.now(location));
+    _scheduleTimer ??= Timer.periodic(const Duration(seconds: 1), (_) {
+      final location = _scheduleLocation;
+      if (location == null) return;
+      final now = tz.TZDateTime.now(location);
+      final date = _scheduleDate;
+      if (date == null ||
+          now.year != date.year ||
+          now.month != date.month ||
+          now.day != date.day) {
+        unawaited(loadPrayerTimes());
+        return;
+      }
+      if (_syncCurrentPrayer(now)) notifyListeners();
+    });
+  }
+
+  bool _syncCurrentPrayer(tz.TZDateTime now) {
+    String current = 'Isha';
+    String? next;
+    tz.TZDateTime? end = _schedule['Fajr'];
+    for (final entry in _schedule.entries) {
+      if (entry.value.isAfter(now)) {
+        next = entry.key;
+        end = entry.value;
+        break;
+      }
+      current = entry.key;
+      next = null;
+      end = null;
+    }
+    end ??= _tomorrowFajr;
+    final changed =
+        _currentPrayer != current ||
+        _nextPrayer != next ||
+        _currentPrayerEndsAtUtc != end?.toUtc();
+    _currentPrayer = current;
+    _nextPrayer = next;
+    _currentPrayerEndsAtUtc = end?.toUtc();
+    return changed;
   }
 
   PrayerTimesErrorType _mapErrorType(PrayerRepositoryErrorType type) {

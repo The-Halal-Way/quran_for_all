@@ -1225,6 +1225,13 @@
   },
   "dashboardRetry": "Retry",
   "dashboardCurrentPrayer": "Current Prayer",
+  "prayerTimeRemaining": "Waqt ends in",
+  "prayerTimeEndsAt": "Ends at {time}",
+  "@prayerTimeEndsAt": {
+    "placeholders": {
+      "time": {"type": "String"}
+    }
+  },
   "dashboardNextPrayer": "Next Prayer",
   "dashboardNextShortLabel": "Next",
   "dashboardNowShortLabel": "Now",

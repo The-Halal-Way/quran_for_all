@@ -5,6 +5,7 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
 import '../../../../data/models/prayer/prayer_detail_models.dart';
+import '../prayer_time_countdown.dart';
 import '../prayer_visuals.dart';
 import 'prayer_hero_artwork.dart';
 import 'prayer_fasting_times_strip.dart';
@@ -15,6 +16,7 @@ class PrayerFocusHero extends StatelessWidget {
     super.key,
     required this.content,
     required this.hasTimes,
+    this.endsAtUtc,
     this.sehriEnd,
     this.sehriRange,
     this.iftarTime,
@@ -22,6 +24,7 @@ class PrayerFocusHero extends StatelessWidget {
 
   final PrayerFocusContent content;
   final bool hasTimes;
+  final DateTime? endsAtUtc;
   final String? sehriEnd;
   final String? sehriRange;
   final String? iftarTime;
@@ -41,7 +44,7 @@ class PrayerFocusHero extends StatelessWidget {
           ],
           stops: [0, 0.55, 1],
           begin: Alignment.bottomLeft,
-          end: Alignment.topRight,
+          end: Alignment.topRight, 
         ),
         border: Border.all(
           color: MyColors.primaryLight.withValues(alpha: 0.45),
@@ -116,6 +119,13 @@ class PrayerFocusHero extends StatelessWidget {
                     height: 1.35,
                   ),
                 ),
+                if (hasTimes && endsAtUtc != null) ...[
+                  const SizedBox(height: AppSpacing.sm),
+                  PrayerTimeCountdown(
+                    endsAtUtc: endsAtUtc!,
+                    color: MyColors.tertiaryLight,
+                  ),
+                ],
               ],
             ),
           ),

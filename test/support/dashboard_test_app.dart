@@ -191,6 +191,8 @@ class TestPrayerViewModel extends ChangeNotifier
   @override
   String get currentPrayer => 'Asr';
   @override
+  DateTime? currentPrayerEndsAtUtc;
+  @override
   bool get isLoading => false;
   @override
   String get error => '';

@@ -13,6 +13,7 @@ import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dash
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_prayer_card.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_prayer_row.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_tracker_preview.dart';
+import 'package:quran_for_all/presentation/widgets/prayer/prayer_time_countdown.dart';
 
 import '../../../support/dashboard_test_app.dart';
 
@@ -142,6 +143,63 @@ void main() {
     await tester.tap(find.byWidgetPredicate((widget) => widget is TextButton));
     expect(retries, 1);
     expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('Isha summary shows its end and a live countdown', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(320, 700));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    final end = DateTime.now().toUtc().add(const Duration(hours: 1));
+    await tester.pumpWidget(
+      DashboardTestApp(
+        state: state,
+        scale: 1.8,
+        home: Scaffold(
+          body: DashboardPrayerCard(
+            times: const {'Isha': '7:30 PM'},
+            ranges: const {'Isha': '7:30 PM - 4:30 AM'},
+            current: 'Isha',
+            currentEndsAtUtc: end,
+            loading: false,
+            onRetry: () {},
+          ),
+        ),
+      ),
+    );
+
+    expect(find.text('7:30 PM - 4:30 AM'), findsOneWidget);
+    expect(find.textContaining('Waqt ends in:'), findsOneWidget);
+    expect(
+      tester
+          .widget<PrayerTimeCountdown>(find.byType(PrayerTimeCountdown))
+          .endsAtUtc,
+      end,
+    );
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('before Fajr, Isha summary shows the current window end', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      DashboardTestApp(
+        state: state,
+        home: Scaffold(
+          body: DashboardPrayerCard(
+            times: const {'Fajr': '4:30 AM', 'Isha': '7:30 PM'},
+            ranges: const {'Isha': '7:30 PM - 4:30 AM'},
+            current: 'Isha',
+            isPreviousNightIsha: true,
+            loading: false,
+            onRetry: () {},
+          ),
+        ),
+      ),
+    );
+
+    expect(find.text('Ends at 4:30 AM'), findsOneWidget);
+    expect(find.text('7:30 PM - 4:30 AM'), findsNothing);
   });
 
   testWidgets('forbidden windows follow the daily prayer sequence', (

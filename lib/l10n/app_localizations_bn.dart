@@ -3126,6 +3126,14 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboardCurrentPrayer => 'চলমান নামাজ';
 
   @override
+  String get prayerTimeRemaining => 'ওয়াক্ত শেষ হতে';
+
+  @override
+  String prayerTimeEndsAt(String time) {
+    return 'শেষ হবে $time-এ';
+  }
+
+  @override
   String get dashboardNextPrayer => 'পরবর্তী নামাজ';
 
   @override

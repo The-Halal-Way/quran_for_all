@@ -15,6 +15,8 @@ class DashboardPrayerCard extends StatefulWidget {
     required this.times,
     required this.ranges,
     required this.current,
+    this.isPreviousNightIsha = false,
+    this.currentEndsAtUtc,
     required this.loading,
     required this.onRetry,
     this.forbiddenTimes = const [],
@@ -25,6 +27,8 @@ class DashboardPrayerCard extends StatefulWidget {
   final Map<String, String> times, ranges;
   final List<PrayerForbiddenTimeItem> forbiddenTimes;
   final String? current, errorTitle, errorMessage;
+  final DateTime? currentEndsAtUtc;
+  final bool isPreviousNightIsha;
   final bool loading;
   final VoidCallback onRetry;
   final VoidCallback? onForbiddenTimesTap;
@@ -67,7 +71,14 @@ class _DashboardPrayerCardState extends State<DashboardPrayerCard> {
                           context.l10n,
                           widget.current!,
                         ),
-                  time: widget.times[widget.current] ?? '--:--',
+                  time: widget.isPreviousNightIsha
+                      ? context.l10n.prayerTimeEndsAt(
+                          widget.times['Fajr'] ?? '--:--',
+                        )
+                      : widget.current == 'Isha'
+                      ? widget.ranges['Isha'] ?? widget.times['Isha'] ?? '--:--'
+                      : widget.times[widget.current] ?? '--:--',
+                  endsAtUtc: widget.currentEndsAtUtc,
                   icon: model.prayerIcon(widget.current ?? ''),
                   expanded: _expanded,
                   onToggle: () => setState(() => _expanded = !_expanded),

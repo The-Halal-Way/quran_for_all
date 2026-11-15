@@ -3126,6 +3126,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardCurrentPrayer => 'Current Prayer';
 
   @override
+  String get prayerTimeRemaining => 'Waqt ends in';
+
+  @override
+  String prayerTimeEndsAt(String time) {
+    return 'Ends at $time';
+  }
+
+  @override
   String get dashboardNextPrayer => 'Next Prayer';
 
   @override

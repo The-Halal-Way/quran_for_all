@@ -59,7 +59,7 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
     );
 
     if (cached != null && !forceRefresh) {
-      return cached;
+      return _withTomorrowIfMissing(cached);
     }
 
     try {
@@ -80,7 +80,7 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
         isFallbackProfile: resolved.isFallbackProfile,
       );
       if (refreshed != null) {
-        return refreshed;
+        return _withTomorrowIfMissing(refreshed);
       }
     } on PrayerTimesException {
       if (cached != null) {
@@ -97,6 +97,31 @@ class PrayerTimesRepositoryImpl implements PrayerTimesRepository {
       PrayerRepositoryErrorType.unavailable,
       'Prayer times are unavailable right now.',
     );
+  }
+
+  Future<PrayerDashboardData> _withTomorrowIfMissing(
+    PrayerDashboardData data,
+  ) async {
+    if (data.tomorrow != null) return data;
+
+    final location = PrayerTimeZoneHelper.locationFor(data.profile.timeZoneId);
+    final tomorrowKey = _dateKey(
+      _parseDateKey(
+        location,
+        data.today.localDateKey,
+      ).add(const Duration(days: 1)),
+    );
+    try {
+      final tomorrow = await _apiService.fetchDay(
+        profile: data.profile,
+        localDateKey: tomorrowKey,
+      );
+      await _localDataSource.upsertPrayerDay(tomorrow);
+      return data.copyWith(tomorrow: tomorrow);
+    } catch (_) {
+      // Today's schedule is still usable when tomorrow cannot be fetched.
+      return data;
+    }
   }
 
   @override
