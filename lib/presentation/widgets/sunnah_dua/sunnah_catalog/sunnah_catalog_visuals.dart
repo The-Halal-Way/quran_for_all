@@ -6,8 +6,20 @@ class SunnahCatalogVisuals {
   static IconData icon(String id) => switch (id) {
     'all' => Icons.auto_awesome_rounded,
     'waking_up' || 'morning_remembrance' => Icons.wb_sunny_rounded,
-    'washroom' || 'wudu_sunnahs' => Icons.water_drop_rounded,
-    'miswak' || 'personal_care' => Icons.health_and_safety_rounded,
+    'washroom' || 'wudu_sunnahs' || 'ghusl' => Icons.water_drop_rounded,
+    'tayammum' => Icons.back_hand_rounded,
+    'miswak' || 'personal_care' || 'fitrah' => Icons.health_and_safety_rounded,
+    'hair_and_beard' => Icons.content_cut_rounded,
+    'prayer_etiquette' => Icons.self_improvement_rounded,
+    'iqamah' => Icons.campaign_rounded,
+    'hajj_umrah' => Icons.account_balance_rounded,
+    'sacrifice' => Icons.volunteer_activism_rounded,
+    'dua_etiquette' => Icons.auto_awesome_rounded,
+    'gatherings' => Icons.groups_rounded,
+    'marriage' => Icons.favorite_rounded,
+    'newborn' => Icons.child_care_rounded,
+    'end_of_life' => Icons.spa_rounded,
+    'visiting_the_sick' => Icons.healing_rounded,
     'eating_sunnahs' || 'drinking' => Icons.restaurant_rounded,
     'evening_remembrance' ||
     'sleeping_sunnahs' ||

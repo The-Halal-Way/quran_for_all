@@ -59,6 +59,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/audio/reminders/
     - assets/audio/learn_quran/letters/
     - assets/fonts/
     - assets/icons/

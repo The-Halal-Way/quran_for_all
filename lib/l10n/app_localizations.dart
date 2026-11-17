@@ -9824,8 +9824,68 @@ abstract class AppLocalizations {
   /// No description provided for @sunnahLibrarySubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Explore 135 practices, manners and acts of worship by category.'**
+  /// **'Explore practices, manners and acts of worship by category.'**
   String get sunnahLibrarySubtitle;
+
+  /// No description provided for @sunnahLibrarySummary.
+  ///
+  /// In en, this message translates to:
+  /// **'{practices} practices · {categories} categories'**
+  String sunnahLibrarySummary(String practices, String categories);
+
+  /// No description provided for @sunnahGradeBy.
+  ///
+  /// In en, this message translates to:
+  /// **'{grade} · Graded by {scholar}'**
+  String sunnahGradeBy(String grade, String scholar);
+
+  /// No description provided for @sunnahOriginalCollection.
+  ///
+  /// In en, this message translates to:
+  /// **'Original collection: {source}'**
+  String sunnahOriginalCollection(String source);
+
+  /// No description provided for @sunnahQuranReferences.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran references'**
+  String get sunnahQuranReferences;
+
+  /// No description provided for @sunnahRelationAlternative.
+  ///
+  /// In en, this message translates to:
+  /// **'Another reported practice'**
+  String get sunnahRelationAlternative;
+
+  /// No description provided for @sunnahRelationCalendarException.
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar exception'**
+  String get sunnahRelationCalendarException;
+
+  /// No description provided for @sunnahRelationWording.
+  ///
+  /// In en, this message translates to:
+  /// **'Source for the wording'**
+  String get sunnahRelationWording;
+
+  /// No description provided for @sunnahRelationSupporting.
+  ///
+  /// In en, this message translates to:
+  /// **'Supporting reference'**
+  String get sunnahRelationSupporting;
+
+  /// No description provided for @sunnahRelationCongregation.
+  ///
+  /// In en, this message translates to:
+  /// **'Congregational context'**
+  String get sunnahRelationCongregation;
+
+  /// No description provided for @sunnahRelationPilgrim.
+  ///
+  /// In en, this message translates to:
+  /// **'Pilgrimage context'**
+  String get sunnahRelationPilgrim;
 
   /// No description provided for @sunnahLibrarySearchHint.
   ///
@@ -9940,6 +10000,192 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Occasion and repetition'**
   String get sunnahOccasion;
+
+  /// No description provided for @dhikrRemindersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr Reminders'**
+  String get dhikrRemindersTitle;
+
+  /// No description provided for @dhikrRemindersSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Make space for Durud and Istighfar throughout your day.'**
+  String get dhikrRemindersSubtitle;
+
+  /// No description provided for @dhikrDurudTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Durud'**
+  String get dhikrDurudTitle;
+
+  /// No description provided for @dhikrIstighfarTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Istighfar'**
+  String get dhikrIstighfarTitle;
+
+  /// No description provided for @dhikrDurudDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Send blessings upon Prophet Muhammad ﷺ.'**
+  String get dhikrDurudDescription;
+
+  /// No description provided for @dhikrIstighfarDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause and ask Allah for forgiveness.'**
+  String get dhikrIstighfarDescription;
+
+  /// No description provided for @dhikrDurudNotification.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a moment to send blessings upon Prophet Muhammad ﷺ.'**
+  String get dhikrDurudNotification;
+
+  /// No description provided for @dhikrIstighfarNotification.
+  ///
+  /// In en, this message translates to:
+  /// **'Take a moment to seek Allah’s forgiveness. Astaghfirullah.'**
+  String get dhikrIstighfarNotification;
+
+  /// No description provided for @dhikrIntervalTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder interval'**
+  String get dhikrIntervalTitle;
+
+  /// No description provided for @dhikrIntervalHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the gap between notifications. The first reminder arrives after this interval. Changing an active reminder restarts its interval.'**
+  String get dhikrIntervalHelp;
+
+  /// No description provided for @dhikrMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} min'**
+  String dhikrMinutes(String count);
+
+  /// No description provided for @dhikrEveryMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Every {count} minutes'**
+  String dhikrEveryMinutes(String count);
+
+  /// No description provided for @dhikrCustomMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom interval in minutes'**
+  String get dhikrCustomMinutes;
+
+  /// No description provided for @dhikrIntervalInvalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter 1–1440 minutes.'**
+  String get dhikrIntervalInvalid;
+
+  /// No description provided for @dhikrApply.
+  ///
+  /// In en, this message translates to:
+  /// **'Apply'**
+  String get dhikrApply;
+
+  /// No description provided for @dhikrSoundTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification sound'**
+  String get dhikrSoundTitle;
+
+  /// No description provided for @dhikrSoundHelp.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview a demo tone, then choose the sound for this reminder.'**
+  String get dhikrSoundHelp;
+
+  /// No description provided for @dhikrSoundGlass.
+  ///
+  /// In en, this message translates to:
+  /// **'Glass'**
+  String get dhikrSoundGlass;
+
+  /// No description provided for @dhikrSoundBell.
+  ///
+  /// In en, this message translates to:
+  /// **'Bell'**
+  String get dhikrSoundBell;
+
+  /// No description provided for @dhikrSoundChime.
+  ///
+  /// In en, this message translates to:
+  /// **'Chime'**
+  String get dhikrSoundChime;
+
+  /// No description provided for @dhikrPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview sound'**
+  String get dhikrPreview;
+
+  /// No description provided for @dhikrPreviewFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'This sound could not be played.'**
+  String get dhikrPreviewFailed;
+
+  /// No description provided for @dhikrTestNotification.
+  ///
+  /// In en, this message translates to:
+  /// **'Send test notification'**
+  String get dhikrTestNotification;
+
+  /// No description provided for @dhikrTestSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Test notification sent. Check your notifications.'**
+  String get dhikrTestSent;
+
+  /// No description provided for @dhikrTestFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The test notification could not be sent. Please try again.'**
+  String get dhikrTestFailed;
+
+  /// No description provided for @dhikrPermissionRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow notifications to receive reminders. If permission is blocked, enable it in notification settings.'**
+  String get dhikrPermissionRequired;
+
+  /// No description provided for @dhikrNotificationSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification settings'**
+  String get dhikrNotificationSettings;
+
+  /// No description provided for @dhikrLoadFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder settings could not be loaded. Please retry.'**
+  String get dhikrLoadFailed;
+
+  /// No description provided for @dhikrSaveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The reminder could not be updated. Please try again.'**
+  String get dhikrSaveFailed;
+
+  /// No description provided for @dhikrUnsupported.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr reminders are available on Android and iPhone.'**
+  String get dhikrUnsupported;
+
+  /// No description provided for @dhikrTimingNotice.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders continue while the app is closed. Battery-saving settings may delay delivery. Notification volume, silent mode and Do Not Disturb control whether sounds are heard.'**
+  String get dhikrTimingNotice;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -1,7 +1,9 @@
-import '../../../core/utils/dua_search.dart';
 import '../dua/dua_text.dart';
+import 'sunnah_entry.dart';
 
 export '../dua/dua_text.dart' show DuaText;
+export 'sunnah_entry.dart';
+export 'sunnah_references.dart';
 
 class SunnahCategory {
   SunnahCategory(DuaJson json)
@@ -29,78 +31,6 @@ class SunnahCategoryGroup {
   final List<String> categoryIds;
 }
 
-class SunnahHadith {
-  SunnahHadith(DuaJson json)
-    : collection = DuaText(json['collection']),
-      number = duaString(json['number']),
-      url = duaString(json['url']),
-      summary = DuaText(json['summary']),
-      relation = duaString(json['relation']),
-      grading = DuaText(duaMap(json['grading'])['label']),
-      gradedBy = DuaText(duaMap(json['grading'])['by']);
-
-  final DuaText collection, summary, grading, gradedBy;
-  final String number, url, relation;
-}
-
-class SunnahRecitationStep {
-  SunnahRecitationStep(DuaJson json)
-    : text = DuaText(json['text']),
-      repetitions = json['repetitions'] is int
-          ? json['repetitions'] as int
-          : null,
-      duaEntryId = duaString(json['duaEntryId']);
-
-  final DuaText text;
-  final int? repetitions;
-  final String duaEntryId;
-}
-
-class SunnahEntry {
-  SunnahEntry(DuaJson json)
-    : id = duaString(json['id']),
-      type = duaString(json['type']),
-      title = DuaText(json['title']),
-      practice = DuaText(json['practice']),
-      note = DuaText(json['note']),
-      occasion = DuaText(json['occasion']),
-      categoryIds = duaIds(json['categoryIds']),
-      relatedIds = duaIds(json['relatedEntryIds']),
-      duaEntryIds = duaIds(json['duaEntryIds']),
-      hadith = List.unmodifiable(
-        duaObjects(json['hadith']).map(SunnahHadith.new),
-      ),
-      repetitions = Map.unmodifiable(
-        duaMap(
-          json['repetitionsByOccasion'],
-        ).map((key, value) => MapEntry(key, value is int ? value : 0)),
-      ),
-      steps = List.unmodifiable(
-        duaObjects(json['steps']).map((item) => DuaText(item)),
-      ),
-      recitation = List.unmodifiable(
-        duaObjects(json['recitationSequence']).map(SunnahRecitationStep.new),
-      ),
-      quranReferences = List.unmodifiable(duaObjects(json['quranReferences'])),
-      quranReadingLinks = List.unmodifiable(
-        duaObjects(json['quranReadingLinks']),
-      ),
-      searchIndex = DuaSearch.index(json) {
-    if (id.isEmpty || type.isEmpty || title.isEmpty || practice.isEmpty) {
-      throw const FormatException('Sunnah entry is missing required content');
-    }
-  }
-
-  final String id, type, searchIndex;
-  final DuaText title, practice, note, occasion;
-  final List<String> categoryIds, relatedIds, duaEntryIds;
-  final List<SunnahHadith> hadith;
-  final Map<String, int> repetitions;
-  final List<DuaText> steps;
-  final List<SunnahRecitationStep> recitation;
-  final List<DuaJson> quranReferences, quranReadingLinks;
-}
-
 class SunnahCatalog {
   SunnahCatalog.fromJson(DuaJson json)
     : title = DuaText(duaMap(json['feature'])['title']),
@@ -126,10 +56,25 @@ class SunnahCatalog {
       throw const FormatException('Unsupported Sunnah catalog');
     }
     final categoryIds = categories.map((item) => item.id).toSet();
+    final integration = duaMap(json['integration']);
+    if (title.isEmpty ||
+        entries.isEmpty ||
+        (integration['entryCount'] != null &&
+            integration['entryCount'] != entries.length) ||
+        (integration['categoryCount'] != null &&
+            integration['categoryCount'] != categories.length)) {
+      throw const FormatException('Invalid Sunnah catalog totals');
+    }
     for (final category in categories) {
       if (category.entryIds.toSet().length != category.entryIds.length ||
           category.entryIds.any((id) => !entries.containsKey(id))) {
         throw const FormatException('Invalid Sunnah category membership');
+      }
+      if (category.id != allId &&
+          category.entryIds.any(
+            (id) => !entries[id]!.categoryIds.contains(category.id),
+          )) {
+        throw const FormatException('Inconsistent Sunnah category index');
       }
     }
     if (groups.any(
@@ -139,6 +84,34 @@ class SunnahCatalog {
           (entry) => entry.categoryIds.any((id) => !categoryIds.contains(id)),
         )) {
       throw const FormatException('Unknown Sunnah category');
+    }
+    final allIds = category(allId).entryIds.toSet();
+    if (allIds.length != entries.length || !allIds.containsAll(entries.keys)) {
+      throw const FormatException('All category must include every Sunnah');
+    }
+    if (featuredIds.any((id) => !categoryIds.contains(id)) ||
+        groups.map((group) => group.id).toSet().length != groups.length ||
+        groups.any(
+          (group) =>
+              group.id.isEmpty ||
+              group.title.isEmpty ||
+              group.categoryIds.toSet().length != group.categoryIds.length,
+        ) ||
+        !groups
+            .expand((group) => group.categoryIds)
+            .toSet()
+            .containsAll(categoryIds.difference({allId}))) {
+      throw const FormatException('Invalid Sunnah browse groups');
+    }
+    for (final entry in entries.values) {
+      if (!typeLabels.containsKey(entry.type) ||
+          entry.relatedIds.any((id) => !entries.containsKey(id)) ||
+          entry.categoryIds.toSet().length != entry.categoryIds.length ||
+          entry.categoryIds.any(
+            (id) => !category(id).entryIds.contains(entry.id),
+          )) {
+        throw const FormatException('Invalid Sunnah entry relationship');
+      }
     }
   }
 

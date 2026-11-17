@@ -1,8 +1,15 @@
 # Sunnah Dua
 
-The hub has two independent searches: collections and daily practices. The daily
-catalog follows morning, daytime and evening, with 22 practices from waking to
-sleeping. Situational duas and voluntary fasting live in the shortcut carousel.
+The hub opens two separate, searchable category libraries: Duas from
+`assets/json/dua_catalog.json` and Sunnah practices from
+`assets/json/sunnah_catalog.json`. Each library loads its JSON only when opened.
+The Sunnah library currently includes 247 practices across 51 categories, grouped
+by morning, daytime, evening, worship and other life situations. Details support
+swiping through the selected category in the JSON's order.
+
+See [sunnah_catalog.md](sunnah_catalog.md) and [dua_catalog.md](dua_catalog.md)
+for the catalog models, validation and reader behavior. The 22-item Dart routine
+catalog is retained for legacy callers and is not rendered by the hub.
 
 ## Adding a language
 
@@ -19,7 +26,10 @@ can be saved in settings. No Sunnah catalog mappings, language enum cases or
 widget changes are needed. The catalog uses generated getters, so missing keys
 use Flutter's template-language fallback.
 
-This applies to the Sunnah hub and its detail sheets. The existing Daily Du'a,
+For the JSON libraries, also translate each localized object in the corresponding
+catalog asset; changing ARB labels does not translate their reading content.
+
+This ARB flow applies to the remaining hub content and its detail sheets. The existing Daily Du'a,
 Powerful Du'a and 99 Names readers have separate legacy content-localization
 systems; adding an ARB file does not translate those datasets.
 
@@ -39,8 +49,8 @@ systems; adding an ARB file does not translate those datasets.
 
 The screen composes the localized repository and refreshes it when the app locale
 changes. Content IDs remain stable across languages; searches do not reorder the
-routine. Additional practices require a catalog entry and ARB fields, whereas
-additional translations only require an ARB file.
+routine. Additional library practices belong in the JSON catalog with matching
+category indexes and updated counts. The legacy Dart content still uses ARB fields.
 
 ## Content references
 

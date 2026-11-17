@@ -211,6 +211,16 @@ class _LibraryHeader extends StatelessWidget {
                 ),
                 const SizedBox(height: AppSpacing.xs),
                 Text(catalog.description.inLanguage(language)),
+                const SizedBox(height: AppSpacing.sm),
+                Text(
+                  context.l10n.sunnahLibrarySummary(
+                    duaNumber(context, catalog.entries.length),
+                    duaNumber(context, catalog.categories.length),
+                  ),
+                  style: AppTheme.text(
+                    context,
+                  ).labelMedium.copyWith(fontWeight: AppTheme.weightBold),
+                ),
               ],
             ),
           ),

@@ -66,6 +66,9 @@ import 'services/lesson_audio_sample_resolver.dart';
 import 'services/daily_hadith_notification_service.dart';
 import 'services/islamic_days/islamic_days_notification_service.dart';
 import 'services/notifications/app_notification_coordinator.dart';
+import 'services/dhikr_reminders/dhikr_reminder_service.dart';
+import 'presentation/viewmodels/dhikr_reminders/dhikr_reminders_viewmodel.dart';
+import 'presentation/widgets/dhikr_reminders/dhikr_reminders_router.dart';
 import 'services/permission_helper.dart';
 import 'services/pronunciation_service.dart';
 
@@ -145,6 +148,11 @@ class QuranForAllApp extends StatelessWidget {
         Provider<IslamicDaysRepository>(create: (_) => IslamicDaysRepository()),
         Provider<AppNotificationCoordinator>(
           create: (_) => AppNotificationCoordinator(),
+        ),
+        ChangeNotifierProvider<DhikrRemindersViewModel>(
+          create: (context) => DhikrRemindersViewModel(
+            DhikrReminderService(context.read<AppNotificationCoordinator>()),
+          ),
         ),
         Provider<IslamicDaysNotificationService>(
           create: (context) => IslamicDaysNotificationService(
@@ -322,17 +330,22 @@ class QuranForAllApp extends StatelessWidget {
                         navigatorKey: appNavigatorKey,
                         locale: settingsViewModel.settings.language.locale
                             .toLanguageTag(),
-                        child: Stack(
-                          children: [
-                            child ?? const SizedBox.shrink(),
-                            if (showBar)
-                              const Positioned(
-                                left: 0,
-                                right: 0,
-                                bottom: 0,
-                                child: GlobalAudioControlBar(),
-                              ),
-                          ],
+                        child: DhikrRemindersRouter(
+                          navigatorKey: appNavigatorKey,
+                          locale: settingsViewModel.settings.language.locale,
+                          settingsReady: !settingsViewModel.isLoading,
+                          child: Stack(
+                            children: [
+                              child ?? const SizedBox.shrink(),
+                              if (showBar)
+                                const Positioned(
+                                  left: 0,
+                                  right: 0,
+                                  bottom: 0,
+                                  child: GlobalAudioControlBar(),
+                                ),
+                            ],
+                          ),
                         ),
                       ),
                     );

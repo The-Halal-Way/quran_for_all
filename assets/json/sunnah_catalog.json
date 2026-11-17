@@ -71,7 +71,8 @@
         "adhan",
         "after_prayer",
         "morning_remembrance",
-        "duha"
+        "duha",
+        "ghusl"
       ]
     },
     {
@@ -88,7 +89,8 @@
         "good_speech",
         "sneezing_sunnah",
         "returning_home",
-        "family"
+        "family",
+        "gatherings"
       ]
     },
     {
@@ -118,7 +120,13 @@
         "fasting",
         "ramadan",
         "special_days",
-        "quran_learning"
+        "quran_learning",
+        "tayammum",
+        "prayer_etiquette",
+        "iqamah",
+        "sacrifice",
+        "hajj_umrah",
+        "dua_etiquette"
       ]
     },
     {
@@ -134,7 +142,13 @@
         "life_events",
         "travel",
         "weather",
-        "livelihood"
+        "livelihood",
+        "marriage",
+        "newborn",
+        "end_of_life",
+        "visiting_the_sick",
+        "fitrah",
+        "hair_and_beard"
       ]
     }
   ],
@@ -145,7 +159,7 @@
         "bn": "সব সুন্নাহ ও আদব",
         "en": "All Sunnah Practices"
       },
-      "entryCount": 135,
+      "entryCount": 247,
       "entryIds": [
         "wake_praise_allah",
         "wake_wash_hands",
@@ -281,7 +295,119 @@
         "trade_be_honest_and_clear",
         "trade_show_ease",
         "trade_repay_well",
-        "friday_read_al_kahf"
+        "friday_read_al_kahf",
+        "ghusl_follow_prophetic_sequence",
+        "purification_use_water_with_care",
+        "tayammum_wipe_face_and_hands",
+        "prayer_follow_imam_movements",
+        "prayer_pause_in_each_posture",
+        "prayer_follow_fatihah_with_amin",
+        "prayer_make_dua_in_sujud",
+        "prayer_glorify_allah_in_ruku",
+        "prayer_seek_refuge_before_salam",
+        "prayer_avoid_crossing_in_front",
+        "prayer_use_sutrah",
+        "iqamah_prioritize_congregation",
+        "iqamah_wait_until_imam_appears",
+        "mosque_value_the_walk_to_prayer",
+        "mosque_leave_after_prayer_with_due_care",
+        "friday_arrive_clean_and_do_not_split_people",
+        "suhur_take_it_near_fajr",
+        "iftar_say_the_reported_dua",
+        "iftar_feed_a_fasting_person",
+        "fast_guard_speech_and_actions",
+        "fast_continue_after_forgetful_eating",
+        "fast_observe_voluntary_fasts_in_shaban",
+        "ramadan_give_more_and_review_quran",
+        "ramadan_devote_last_ten_nights_with_family",
+        "eid_welcome_the_community_at_gathering",
+        "eid_prayer_before_sermon",
+        "eid_rejoice_with_family",
+        "eid_give_zakat_al_fitr_before_prayer",
+        "sacrifice_offer_after_eid_prayer",
+        "sacrifice_choose_a_suitable_animal",
+        "sacrifice_treat_animals_with_care",
+        "sacrifice_mention_allahs_name",
+        "sacrifice_share_the_meat",
+        "sacrifice_hair_and_nails_in_dhul_hijjah",
+        "eid_pray_without_adhan_or_iqamah",
+        "marriage_seek_free_consent",
+        "marriage_make_the_mahr_clear",
+        "marriage_hold_a_walimah_within_means",
+        "marriage_make_dua_before_intimacy",
+        "marriage_notice_good_in_your_spouse",
+        "newborn_choose_a_good_name",
+        "newborn_arrange_aqiqah_on_seventh_day",
+        "end_of_life_prompt_shahadah_gently",
+        "end_of_life_close_eyes_and_pray_after_death",
+        "end_of_life_say_istirja_at_loss",
+        "end_of_life_allow_tears_and_speak_well",
+        "end_of_life_prepare_food_for_mourners",
+        "end_of_life_arrange_dignified_washing_and_shrouding",
+        "end_of_life_pray_for_forgiveness_in_janazah",
+        "end_of_life_pray_for_steadfastness_after_burial",
+        "end_of_life_give_charity_on_behalf_of_deceased",
+        "sick_pray_to_allah_for_healing",
+        "sick_visit_across_communities",
+        "sick_ask_allah_for_protection_from_pain",
+        "newborn_learn_the_reported_aqiqah_arrangement",
+        "dua_begin_with_praise_and_salawat",
+        "dua_ask_with_resolve",
+        "dua_keep_asking_patiently",
+        "dua_make_it_for_others_in_their_absence",
+        "dua_use_the_last_third_of_the_night",
+        "dua_raise_hands_when_appropriate",
+        "gathering_make_room_without_displacing_others",
+        "gathering_include_the_third_person",
+        "gathering_stop_quarrelling_and_keep_jokes_truthful",
+        "gathering_apply_gentleness_in_conversation",
+        "community_introduce_yourself_at_the_door",
+        "community_honour_guests",
+        "community_keep_neighbours_safe",
+        "fitrah_maintain_underarm_and_pubic_grooming",
+        "hair_men_trim_moustache_and_leave_beard",
+        "hair_comb_starting_from_right",
+        "hair_keep_it_well_cared_for",
+        "hair_avoid_qaza_shaving_pattern",
+        "washroom_clean_with_water",
+        "washroom_do_not_urinate_in_standing_water",
+        "miswak_when_you_enter_home",
+        "wudu_wash_heels_completely",
+        "wake_remember_allah_then_make_wudu_and_pray",
+        "sleep_do_not_neglect_rest",
+        "eat_value_what_remains_of_your_food",
+        "eat_recover_dropped_food_when_clean",
+        "drink_pour_instead_of_drinking_from_a_shared_container",
+        "dress_avoid_walking_in_one_shoe",
+        "voluntary_prayer_pause_before_maghrib_if_time_allows",
+        "iqamah_learn_the_reported_forms",
+        "prayer_praise_allah_on_rising_from_bowing",
+        "travel_remember_allah_on_ascents_and_descents",
+        "travel_use_the_shortened_prayer_when_eligible",
+        "travel_return_when_your_work_is_done",
+        "travel_pray_two_rakahs_at_mosque_on_return",
+        "home_leave_seek_protection_from_wrongdoing",
+        "gathering_cover_mouth_when_yawning",
+        "ghusl_wet_the_roots_when_hair_is_braided",
+        "tayammum_use_when_water_is_unavailable",
+        "after_prayer_use_the_33_33_34_variant",
+        "fast_avoid_singling_out_friday",
+        "friday_pray_after_jumuah",
+        "marriage_accept_a_walimah_invitation",
+        "hajj_prepare_by_learning_the_rites",
+        "hajj_enter_ihram_at_the_applicable_miqat",
+        "hajj_recite_talbiyah",
+        "hajj_pray_after_tawaf",
+        "hajj_begin_sai_at_safa",
+        "hajj_make_farewell_tawaf_when_required",
+        "quran_review_what_you_have_memorized",
+        "quran_recite_al_baqarah_at_home",
+        "charity_give_discreetly",
+        "charity_support_widows_and_people_in_need",
+        "livelihood_value_work_and_earnings",
+        "weather_ask_rain_to_fall_around_you",
+        "livelihood_give_more_time_to_a_struggling_debtor",
+        "hajj_devote_time_to_dua_at_arafah"
       ]
     },
     {
@@ -290,12 +416,13 @@
         "bn": "ঘুম থেকে ওঠা",
         "en": "Waking Up"
       },
-      "entryCount": 4,
+      "entryCount": 5,
       "entryIds": [
         "wake_praise_allah",
         "wake_wash_hands",
         "wake_rinse_nose_during_wudu",
-        "miswak_on_waking_at_night"
+        "miswak_on_waking_at_night",
+        "wake_remember_allah_then_make_wudu_and_pray"
       ]
     },
     {
@@ -304,12 +431,14 @@
         "bn": "শৌচাগারের আদব",
         "en": "Washroom Etiquette"
       },
-      "entryCount": 4,
+      "entryCount": 6,
       "entryIds": [
         "toilet_dua_before_entry",
         "toilet_dua_after_exit",
         "toilet_clean_with_left",
-        "toilet_respect_privacy"
+        "toilet_respect_privacy",
+        "washroom_clean_with_water",
+        "washroom_do_not_urinate_in_standing_water"
       ]
     },
     {
@@ -318,10 +447,11 @@
         "bn": "মিসওয়াক",
         "en": "Miswak"
       },
-      "entryCount": 2,
+      "entryCount": 3,
       "entryIds": [
         "miswak_before_prayer",
-        "miswak_on_waking_at_night"
+        "miswak_on_waking_at_night",
+        "miswak_when_you_enter_home"
       ]
     },
     {
@@ -330,7 +460,7 @@
         "bn": "ওযুর সুন্নাহ",
         "en": "Wudu Practices"
       },
-      "entryCount": 8,
+      "entryCount": 10,
       "entryIds": [
         "wake_rinse_nose_during_wudu",
         "wudu_wash_hands_first",
@@ -339,7 +469,9 @@
         "wudu_washing_variations",
         "wudu_after_testimony",
         "two_rakahs_after_wudu",
-        "sleep_wudu_and_right_side"
+        "sleep_wudu_and_right_side",
+        "purification_use_water_with_care",
+        "wudu_wash_heels_completely"
       ]
     },
     {
@@ -348,12 +480,13 @@
         "bn": "পোশাক ও জুতা",
         "en": "Dressing & Shoes"
       },
-      "entryCount": 4,
+      "entryCount": 5,
       "entryIds": [
         "dress_right_side",
         "dress_shoes_right_first",
         "dress_thank_for_new_clothing",
-        "dress_white_clothes"
+        "dress_white_clothes",
+        "dress_avoid_walking_in_one_shoe"
       ]
     },
     {
@@ -362,11 +495,15 @@
         "bn": "আজান ও ইকামত",
         "en": "Adhan & Iqamah"
       },
-      "entryCount": 3,
+      "entryCount": 7,
       "entryIds": [
         "respond_to_adhan",
         "bless_prophet_after_adhan",
-        "dua_between_adhan_and_iqamah"
+        "dua_between_adhan_and_iqamah",
+        "iqamah_prioritize_congregation",
+        "iqamah_wait_until_imam_appears",
+        "voluntary_prayer_pause_before_maghrib_if_time_allows",
+        "iqamah_learn_the_reported_forms"
       ]
     },
     {
@@ -375,11 +512,13 @@
         "bn": "নামাজের পর",
         "en": "After Prayer"
       },
-      "entryCount": 3,
+      "entryCount": 5,
       "entryIds": [
         "after_salah_forgiveness_and_peace",
         "after_salah_tasbih",
-        "after_fajr_beneficial_knowledge"
+        "after_fajr_beneficial_knowledge",
+        "mosque_leave_after_prayer_with_due_care",
+        "after_prayer_use_the_33_33_34_variant"
       ]
     },
     {
@@ -418,9 +557,10 @@
         "bn": "ঘর থেকে বের হওয়া",
         "en": "Leaving Home"
       },
-      "entryCount": 1,
+      "entryCount": 2,
       "entryIds": [
-        "home_leave_with_tawakkul"
+        "home_leave_with_tawakkul",
+        "home_leave_seek_protection_from_wrongdoing"
       ]
     },
     {
@@ -429,14 +569,16 @@
         "bn": "খাওয়ার আদব",
         "en": "Eating Etiquette"
       },
-      "entryCount": 6,
+      "entryCount": 8,
       "entryIds": [
         "eat_begin_in_allahs_name",
         "eat_drink_right_hand",
         "eat_from_nearest_part",
         "eat_do_not_fault_food",
         "eat_drink_praise_after",
-        "eat_share_with_others"
+        "eat_share_with_others",
+        "eat_value_what_remains_of_your_food",
+        "eat_recover_dropped_food_when_clean"
       ]
     },
     {
@@ -445,13 +587,14 @@
         "bn": "পান করার আদব",
         "en": "Drinking Etiquette"
       },
-      "entryCount": 5,
+      "entryCount": 6,
       "entryIds": [
         "eat_drink_right_hand",
         "eat_drink_praise_after",
         "drink_pause_outside_vessel",
         "drink_sit_when_convenient",
-        "drink_pass_to_right"
+        "drink_pass_to_right",
+        "drink_pour_instead_of_drinking_from_a_shared_container"
       ]
     },
     {
@@ -460,14 +603,15 @@
         "bn": "সালাম ও অভিবাদন",
         "en": "Salam & Greetings"
       },
-      "entryCount": 6,
+      "entryCount": 7,
       "entryIds": [
         "home_return_greet_family",
         "spread_salam",
         "salam_reply",
         "salam_greet_children",
         "salam_gathering",
-        "community_ask_permission"
+        "community_ask_permission",
+        "community_introduce_yourself_at_the_door"
       ]
     },
     {
@@ -476,7 +620,7 @@
         "bn": "কথা বলার আদব",
         "en": "Good Speech"
       },
-      "entryCount": 9,
+      "entryCount": 13,
       "entryIds": [
         "eat_do_not_fault_food",
         "speech_good_or_silent",
@@ -486,7 +630,11 @@
         "speech_cheerful_face",
         "gathering_end_with_forgiveness",
         "manners_thank_with_dua",
-        "trade_be_honest_and_clear"
+        "trade_be_honest_and_clear",
+        "fast_guard_speech_and_actions",
+        "gathering_include_the_third_person",
+        "gathering_stop_quarrelling_and_keep_jokes_truthful",
+        "gathering_apply_gentleness_in_conversation"
       ]
     },
     {
@@ -507,10 +655,13 @@
         "bn": "ঘরে ফেরা",
         "en": "Returning Home"
       },
-      "entryCount": 2,
+      "entryCount": 5,
       "entryIds": [
         "home_return_remember_allah",
-        "home_return_greet_family"
+        "home_return_greet_family",
+        "miswak_when_you_enter_home",
+        "travel_return_when_your_work_is_done",
+        "travel_pray_two_rakahs_at_mosque_on_return"
       ]
     },
     {
@@ -519,7 +670,7 @@
         "bn": "পরিবার ও আত্মীয়তা",
         "en": "Family & Relatives"
       },
-      "entryCount": 13,
+      "entryCount": 23,
       "entryIds": [
         "night_keep_children_close_at_dusk",
         "home_return_greet_family",
@@ -533,7 +684,17 @@
         "family_keep_kinship",
         "family_bless_newlyweds",
         "family_pray_for_newborn",
-        "family_seek_protection_for_children"
+        "family_seek_protection_for_children",
+        "ramadan_devote_last_ten_nights_with_family",
+        "eid_rejoice_with_family",
+        "marriage_seek_free_consent",
+        "marriage_hold_a_walimah_within_means",
+        "marriage_notice_good_in_your_spouse",
+        "newborn_choose_a_good_name",
+        "gathering_apply_gentleness_in_conversation",
+        "community_honour_guests",
+        "sleep_do_not_neglect_rest",
+        "quran_recite_al_baqarah_at_home"
       ]
     },
     {
@@ -587,7 +748,7 @@
         "bn": "ঘুমের সুন্নাহ",
         "en": "Sleep Practices"
       },
-      "entryCount": 8,
+      "entryCount": 9,
       "entryIds": [
         "miswak_on_waking_at_night",
         "bedtime_three_surahs_and_wipe",
@@ -596,7 +757,8 @@
         "sleep_short_dua",
         "sleep_tasbih_33_33_34",
         "wake_during_night_dhikr",
-        "sleep_after_bad_dream"
+        "sleep_after_bad_dream",
+        "sleep_do_not_neglect_rest"
       ]
     },
     {
@@ -605,7 +767,7 @@
         "bn": "মসজিদ ও জামাত",
         "en": "Mosque & Congregation"
       },
-      "entryCount": 10,
+      "entryCount": 16,
       "entryIds": [
         "respond_to_adhan",
         "bless_prophet_after_adhan",
@@ -616,7 +778,13 @@
         "mosque_straighten_rows",
         "mosque_avoid_strong_odors",
         "friday_arrive_early",
-        "friday_listen_to_khutbah"
+        "friday_listen_to_khutbah",
+        "prayer_follow_imam_movements",
+        "prayer_avoid_crossing_in_front",
+        "prayer_use_sutrah",
+        "mosque_value_the_walk_to_prayer",
+        "mosque_leave_after_prayer_with_due_care",
+        "friday_arrive_clean_and_do_not_split_people"
       ]
     },
     {
@@ -625,7 +793,7 @@
         "bn": "সুন্নত ও নফল নামাজ",
         "en": "Sunnah & Voluntary Prayers"
       },
-      "entryCount": 9,
+      "entryCount": 12,
       "entryIds": [
         "two_rakahs_after_wudu",
         "duha_two_rakahs",
@@ -635,7 +803,10 @@
         "prayer_voluntary_at_home",
         "prayer_night_qiyam",
         "prayer_witr_at_night",
-        "worship_pray_istikharah"
+        "worship_pray_istikharah",
+        "voluntary_prayer_pause_before_maghrib_if_time_allows",
+        "travel_pray_two_rakahs_at_mosque_on_return",
+        "friday_pray_after_jumuah"
       ]
     },
     {
@@ -644,13 +815,17 @@
         "bn": "রাতের নামাজ",
         "en": "Night Prayer"
       },
-      "entryCount": 5,
+      "entryCount": 9,
       "entryIds": [
         "wake_during_night_dhikr",
         "prayer_night_qiyam",
         "prayer_witr_at_night",
         "ramadan_seek_laylatul_qadr",
-        "ramadan_pray_at_night"
+        "ramadan_pray_at_night",
+        "ramadan_devote_last_ten_nights_with_family",
+        "dua_use_the_last_third_of_the_night",
+        "wake_remember_allah_then_make_wudu_and_pray",
+        "sleep_do_not_neglect_rest"
       ]
     },
     {
@@ -659,14 +834,17 @@
         "bn": "জুমা ও শুক্রবার",
         "en": "Friday & Jumuʿah"
       },
-      "entryCount": 6,
+      "entryCount": 9,
       "entryIds": [
         "friday_bathe_for_jumuah",
         "friday_arrive_early",
         "friday_listen_to_khutbah",
         "friday_make_dua",
         "friday_send_blessings",
-        "friday_read_al_kahf"
+        "friday_read_al_kahf",
+        "friday_arrive_clean_and_do_not_split_people",
+        "fast_avoid_singling_out_friday",
+        "friday_pray_after_jumuah"
       ]
     },
     {
@@ -675,7 +853,7 @@
         "bn": "রোজার আমল",
         "en": "Fasting Practices"
       },
-      "entryCount": 7,
+      "entryCount": 14,
       "entryIds": [
         "fast_monday_and_thursday",
         "fast_three_days_monthly",
@@ -683,7 +861,14 @@
         "fast_break_at_sunset",
         "fast_arafah",
         "fast_ashura",
-        "fast_six_shawwal"
+        "fast_six_shawwal",
+        "suhur_take_it_near_fajr",
+        "iftar_say_the_reported_dua",
+        "iftar_feed_a_fasting_person",
+        "fast_guard_speech_and_actions",
+        "fast_continue_after_forgetful_eating",
+        "fast_observe_voluntary_fasts_in_shaban",
+        "fast_avoid_singling_out_friday"
       ]
     },
     {
@@ -692,13 +877,20 @@
         "bn": "রমজানের আমল",
         "en": "Ramadan Practices"
       },
-      "entryCount": 5,
+      "entryCount": 12,
       "entryIds": [
         "fast_take_suhur",
         "fast_break_at_sunset",
         "ramadan_seek_laylatul_qadr",
         "ramadan_itikaf",
-        "ramadan_pray_at_night"
+        "ramadan_pray_at_night",
+        "suhur_take_it_near_fajr",
+        "iftar_say_the_reported_dua",
+        "iftar_feed_a_fasting_person",
+        "fast_guard_speech_and_actions",
+        "ramadan_give_more_and_review_quran",
+        "ramadan_devote_last_ten_nights_with_family",
+        "eid_give_zakat_al_fitr_before_prayer"
       ]
     },
     {
@@ -707,14 +899,21 @@
         "bn": "ঈদ ও বিশেষ দিন",
         "en": "Eid & Special Days"
       },
-      "entryCount": 6,
+      "entryCount": 13,
       "entryIds": [
         "fast_arafah",
         "fast_ashura",
         "fast_six_shawwal",
         "eid_fitr_eat_before_prayer",
         "eid_use_different_route",
-        "dhul_hijjah_good_deeds"
+        "dhul_hijjah_good_deeds",
+        "fast_observe_voluntary_fasts_in_shaban",
+        "eid_welcome_the_community_at_gathering",
+        "eid_prayer_before_sermon",
+        "eid_rejoice_with_family",
+        "eid_give_zakat_al_fitr_before_prayer",
+        "sacrifice_offer_after_eid_prayer",
+        "eid_pray_without_adhan_or_iqamah"
       ]
     },
     {
@@ -723,14 +922,20 @@
         "bn": "ব্যক্তিগত পরিচ্ছন্নতা",
         "en": "Personal Care"
       },
-      "entryCount": 6,
+      "entryCount": 12,
       "entryIds": [
         "wake_wash_hands",
         "miswak_before_prayer",
         "sneeze_cover_mouth",
         "mosque_avoid_strong_odors",
         "friday_bathe_for_jumuah",
-        "personal_fitrah_grooming"
+        "personal_fitrah_grooming",
+        "fitrah_maintain_underarm_and_pubic_grooming",
+        "hair_men_trim_moustache_and_leave_beard",
+        "hair_comb_starting_from_right",
+        "hair_keep_it_well_cared_for",
+        "hair_avoid_qaza_shaving_pattern",
+        "gathering_cover_mouth_when_yawning"
       ]
     },
     {
@@ -739,7 +944,7 @@
         "bn": "প্রতিবেশী ও সমাজ",
         "en": "Neighbors & Community"
       },
-      "entryCount": 16,
+      "entryCount": 27,
       "entryIds": [
         "salam_gathering",
         "speech_cheerful_face",
@@ -756,7 +961,18 @@
         "gathering_end_with_forgiveness",
         "manners_thank_with_dua",
         "good_deeds_keep_them_steady",
-        "trade_show_ease"
+        "trade_show_ease",
+        "eid_welcome_the_community_at_gathering",
+        "end_of_life_prepare_food_for_mourners",
+        "sick_visit_across_communities",
+        "dua_make_it_for_others_in_their_absence",
+        "gathering_make_room_without_displacing_others",
+        "community_introduce_yourself_at_the_door",
+        "community_honour_guests",
+        "community_keep_neighbours_safe",
+        "washroom_do_not_urinate_in_standing_water",
+        "marriage_accept_a_walimah_invitation",
+        "charity_support_widows_and_people_in_need"
       ]
     },
     {
@@ -765,7 +981,7 @@
         "bn": "সদকা ও সেবা",
         "en": "Charity & Service"
       },
-      "entryCount": 7,
+      "entryCount": 16,
       "entryIds": [
         "eat_share_with_others",
         "neighbor_share_food",
@@ -773,7 +989,16 @@
         "charity_even_a_little",
         "charity_help_someone_in_need",
         "charity_care_for_animals",
-        "charity_plant_for_others"
+        "charity_plant_for_others",
+        "iftar_feed_a_fasting_person",
+        "ramadan_give_more_and_review_quran",
+        "eid_give_zakat_al_fitr_before_prayer",
+        "sacrifice_treat_animals_with_care",
+        "sacrifice_share_the_meat",
+        "end_of_life_give_charity_on_behalf_of_deceased",
+        "charity_give_discreetly",
+        "charity_support_widows_and_people_in_need",
+        "livelihood_give_more_time_to_a_struggling_debtor"
       ]
     },
     {
@@ -782,7 +1007,7 @@
         "bn": "জীবনের নানা উপলক্ষ",
         "en": "Life Events"
       },
-      "entryCount": 7,
+      "entryCount": 17,
       "entryIds": [
         "family_bless_newlyweds",
         "family_pray_for_newborn",
@@ -790,7 +1015,17 @@
         "life_console_grieving",
         "life_attend_funeral",
         "life_greet_at_graveyard",
-        "worship_pray_istikharah"
+        "worship_pray_istikharah",
+        "newborn_arrange_aqiqah_on_seventh_day",
+        "end_of_life_prompt_shahadah_gently",
+        "end_of_life_close_eyes_and_pray_after_death",
+        "end_of_life_say_istirja_at_loss",
+        "end_of_life_allow_tears_and_speak_well",
+        "end_of_life_prepare_food_for_mourners",
+        "end_of_life_pray_for_forgiveness_in_janazah",
+        "end_of_life_pray_for_steadfastness_after_burial",
+        "sick_pray_to_allah_for_healing",
+        "sick_visit_across_communities"
       ]
     },
     {
@@ -799,11 +1034,16 @@
         "bn": "সফর",
         "en": "Travel"
       },
-      "entryCount": 3,
+      "entryCount": 8,
       "entryIds": [
         "travel_start_and_return_dua",
         "travel_dua_at_stopping_place",
-        "travel_choose_group_lead"
+        "travel_choose_group_lead",
+        "travel_remember_allah_on_ascents_and_descents",
+        "travel_use_the_shortened_prayer_when_eligible",
+        "travel_return_when_your_work_is_done",
+        "travel_pray_two_rakahs_at_mosque_on_return",
+        "hajj_enter_ihram_at_the_applicable_miqat"
       ]
     },
     {
@@ -812,10 +1052,11 @@
         "bn": "বৃষ্টি ও আবহাওয়া",
         "en": "Rain & Weather"
       },
-      "entryCount": 2,
+      "entryCount": 3,
       "entryIds": [
         "weather_dua_for_beneficial_rain",
-        "weather_wind_ask_good"
+        "weather_wind_ask_good",
+        "weather_ask_rain_to_fall_around_you"
       ]
     },
     {
@@ -824,12 +1065,15 @@
         "bn": "কুরআন শেখা ও চর্চা",
         "en": "Learning & Living with the Quran"
       },
-      "entryCount": 4,
+      "entryCount": 7,
       "entryIds": [
         "quran_learn_and_teach",
         "quran_keep_reciting_when_difficult",
         "good_deeds_keep_them_steady",
-        "friday_read_al_kahf"
+        "friday_read_al_kahf",
+        "ramadan_give_more_and_review_quran",
+        "quran_review_what_you_have_memorized",
+        "quran_recite_al_baqarah_at_home"
       ]
     },
     {
@@ -838,11 +1082,234 @@
         "bn": "লেনদেন ও জীবিকা",
         "en": "Trade & Livelihood"
       },
-      "entryCount": 3,
+      "entryCount": 5,
       "entryIds": [
         "trade_be_honest_and_clear",
         "trade_show_ease",
-        "trade_repay_well"
+        "trade_repay_well",
+        "livelihood_value_work_and_earnings",
+        "livelihood_give_more_time_to_a_struggling_debtor"
+      ]
+    },
+    {
+      "id": "ghusl",
+      "title": {
+        "bn": "গোসলের আমল",
+        "en": "Ghusl Practices"
+      },
+      "entryCount": 3,
+      "entryIds": [
+        "ghusl_follow_prophetic_sequence",
+        "purification_use_water_with_care",
+        "ghusl_wet_the_roots_when_hair_is_braided"
+      ]
+    },
+    {
+      "id": "tayammum",
+      "title": {
+        "bn": "তায়াম্মুম",
+        "en": "Tayammum"
+      },
+      "entryCount": 2,
+      "entryIds": [
+        "tayammum_wipe_face_and_hands",
+        "tayammum_use_when_water_is_unavailable"
+      ]
+    },
+    {
+      "id": "prayer_etiquette",
+      "title": {
+        "bn": "নামাজের আমল ও আদব",
+        "en": "Prayer Practices & Etiquette"
+      },
+      "entryCount": 10,
+      "entryIds": [
+        "prayer_follow_imam_movements",
+        "prayer_pause_in_each_posture",
+        "prayer_follow_fatihah_with_amin",
+        "prayer_make_dua_in_sujud",
+        "prayer_glorify_allah_in_ruku",
+        "prayer_seek_refuge_before_salam",
+        "prayer_avoid_crossing_in_front",
+        "prayer_use_sutrah",
+        "prayer_praise_allah_on_rising_from_bowing",
+        "travel_use_the_shortened_prayer_when_eligible"
+      ]
+    },
+    {
+      "id": "iqamah",
+      "title": {
+        "bn": "ইকামত ও জামাত শুরু",
+        "en": "Iqamah & Starting Congregational Prayer"
+      },
+      "entryCount": 4,
+      "entryIds": [
+        "iqamah_prioritize_congregation",
+        "iqamah_wait_until_imam_appears",
+        "eid_pray_without_adhan_or_iqamah",
+        "iqamah_learn_the_reported_forms"
+      ]
+    },
+    {
+      "id": "sacrifice",
+      "title": {
+        "bn": "কুরবানি ও পশুর প্রতি দয়া",
+        "en": "Qurbani & Care for Animals"
+      },
+      "entryCount": 6,
+      "entryIds": [
+        "sacrifice_offer_after_eid_prayer",
+        "sacrifice_choose_a_suitable_animal",
+        "sacrifice_treat_animals_with_care",
+        "sacrifice_mention_allahs_name",
+        "sacrifice_share_the_meat",
+        "sacrifice_hair_and_nails_in_dhul_hijjah"
+      ]
+    },
+    {
+      "id": "hajj_umrah",
+      "title": {
+        "bn": "হজ ও উমরাহর আমল",
+        "en": "Hajj & Umrah Practices"
+      },
+      "entryCount": 7,
+      "entryIds": [
+        "hajj_prepare_by_learning_the_rites",
+        "hajj_enter_ihram_at_the_applicable_miqat",
+        "hajj_recite_talbiyah",
+        "hajj_pray_after_tawaf",
+        "hajj_begin_sai_at_safa",
+        "hajj_make_farewell_tawaf_when_required",
+        "hajj_devote_time_to_dua_at_arafah"
+      ]
+    },
+    {
+      "id": "dua_etiquette",
+      "title": {
+        "bn": "দোয়া ও মুনাজাতের আদব",
+        "en": "Dua & Supplication Etiquette"
+      },
+      "entryCount": 14,
+      "entryIds": [
+        "prayer_make_dua_in_sujud",
+        "prayer_seek_refuge_before_salam",
+        "end_of_life_say_istirja_at_loss",
+        "sick_pray_to_allah_for_healing",
+        "sick_ask_allah_for_protection_from_pain",
+        "dua_begin_with_praise_and_salawat",
+        "dua_ask_with_resolve",
+        "dua_keep_asking_patiently",
+        "dua_make_it_for_others_in_their_absence",
+        "dua_use_the_last_third_of_the_night",
+        "dua_raise_hands_when_appropriate",
+        "home_leave_seek_protection_from_wrongdoing",
+        "weather_ask_rain_to_fall_around_you",
+        "hajj_devote_time_to_dua_at_arafah"
+      ]
+    },
+    {
+      "id": "gatherings",
+      "title": {
+        "bn": "মজলিসের আদব",
+        "en": "Gathering Etiquette"
+      },
+      "entryCount": 5,
+      "entryIds": [
+        "gathering_make_room_without_displacing_others",
+        "gathering_include_the_third_person",
+        "gathering_stop_quarrelling_and_keep_jokes_truthful",
+        "gathering_apply_gentleness_in_conversation",
+        "gathering_cover_mouth_when_yawning"
+      ]
+    },
+    {
+      "id": "marriage",
+      "title": {
+        "bn": "বিবাহ ও দাম্পত্য",
+        "en": "Marriage & Married Life"
+      },
+      "entryCount": 6,
+      "entryIds": [
+        "marriage_seek_free_consent",
+        "marriage_make_the_mahr_clear",
+        "marriage_hold_a_walimah_within_means",
+        "marriage_make_dua_before_intimacy",
+        "marriage_notice_good_in_your_spouse",
+        "marriage_accept_a_walimah_invitation"
+      ]
+    },
+    {
+      "id": "newborn",
+      "title": {
+        "bn": "নবজাতকের জন্য আমল",
+        "en": "Newborn Practices"
+      },
+      "entryCount": 3,
+      "entryIds": [
+        "newborn_choose_a_good_name",
+        "newborn_arrange_aqiqah_on_seventh_day",
+        "newborn_learn_the_reported_aqiqah_arrangement"
+      ]
+    },
+    {
+      "id": "end_of_life",
+      "title": {
+        "bn": "মৃত্যুকাল, জানাজা ও দাফন",
+        "en": "End of Life, Funeral & Burial"
+      },
+      "entryCount": 9,
+      "entryIds": [
+        "end_of_life_prompt_shahadah_gently",
+        "end_of_life_close_eyes_and_pray_after_death",
+        "end_of_life_say_istirja_at_loss",
+        "end_of_life_allow_tears_and_speak_well",
+        "end_of_life_prepare_food_for_mourners",
+        "end_of_life_arrange_dignified_washing_and_shrouding",
+        "end_of_life_pray_for_forgiveness_in_janazah",
+        "end_of_life_pray_for_steadfastness_after_burial",
+        "end_of_life_give_charity_on_behalf_of_deceased"
+      ]
+    },
+    {
+      "id": "visiting_the_sick",
+      "title": {
+        "bn": "অসুস্থকে দেখা ও দোয়া",
+        "en": "Visiting the Sick & Making Dua"
+      },
+      "entryCount": 3,
+      "entryIds": [
+        "sick_pray_to_allah_for_healing",
+        "sick_visit_across_communities",
+        "sick_ask_allah_for_protection_from_pain"
+      ]
+    },
+    {
+      "id": "fitrah",
+      "title": {
+        "bn": "ফিতরাত ও পরিচ্ছন্নতা",
+        "en": "Fitrah & Personal Hygiene"
+      },
+      "entryCount": 4,
+      "entryIds": [
+        "sacrifice_hair_and_nails_in_dhul_hijjah",
+        "fitrah_maintain_underarm_and_pubic_grooming",
+        "hair_men_trim_moustache_and_leave_beard",
+        "miswak_when_you_enter_home"
+      ]
+    },
+    {
+      "id": "hair_and_beard",
+      "title": {
+        "bn": "চুল, গোঁফ ও দাড়ি",
+        "en": "Hair, Moustache & Beard"
+      },
+      "entryCount": 5,
+      "entryIds": [
+        "sacrifice_hair_and_nails_in_dhul_hijjah",
+        "hair_men_trim_moustache_and_leave_beard",
+        "hair_comb_starting_from_right",
+        "hair_keep_it_well_cared_for",
+        "hair_avoid_qaza_shaving_pattern"
       ]
     }
   ],
@@ -7266,11 +7733,4565 @@
           "url": "https://quran.com/18/1-110"
         }
       ]
+    },
+    {
+      "id": "ghusl_follow_prophetic_sequence",
+      "categoryIds": [
+        "ghusl"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "জানাবাতের গোসলে নবী ﷺ-এর পদ্ধতি অনুসরণ করুন",
+        "en": "Follow the Prophet’s sequence for ghusl after janabah"
+      },
+      "practice": {
+        "bn": "হাত ধুয়ে গোপনাঙ্গ পরিষ্কার করুন, ওযু করুন, চুলের গোড়ায় পানি পৌঁছান, মাথায় তিনবার পানি ঢালুন এবং পুরো শরীর ধুয়ে নিন। একটি বর্ণনায় পা শেষে ধোয়ার কথাও আছে।",
+        "en": "Wash your hands, clean the private area, perform wudu, wet the roots of the hair, pour water over the head three times, and wash the whole body. One reported way is to wash the feet at the end."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "248",
+          "url": "https://sunnah.com/bukhari:248",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আয়িশা (রা.) ওযু, চুলের গোড়ায় পানি পৌঁছানো, মাথায় তিনবার পানি ঢালা এবং পুরো শরীর ধোয়ার বিবরণ দেন।",
+            "en": "Aishah described wudu before the bath, wetting the hair roots, three pours over the head and washing the whole body."
+          },
+          "relation": "practice"
+        },
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "257",
+          "url": "https://sunnah.com/bukhari:257",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "মায়মুনা (রা.) গোসলের শুরুতে পরিষ্কার করা এবং শেষে পা ধোয়ার বিবরণ দেন।",
+            "en": "Maymunah reported how he cleaned himself, washed during ghusl and washed his feet at the end."
+          },
+          "relation": "practice"
+        }
+      ],
+      "quranReferences": [
+        {
+          "surah": 5,
+          "ayah": 6,
+          "relation": "practice",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "purification_use_water_with_care",
+      "categoryIds": [
+        "ghusl",
+        "wudu_sunnahs"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "ওযু ও গোসলে পানি পরিমিত ব্যবহার করুন",
+        "en": "Use water sparingly in wudu and ghusl"
+      },
+      "practice": {
+        "bn": "যা ধোয়া দরকার, তা ভালোভাবে ধুতে যতটুকু পানি লাগে ততটুকু ব্যবহার করুন। পানি প্রয়োজন না হলে কল বন্ধ রাখুন।",
+        "en": "Use enough water to wash what needs washing. Turn off the flow whenever you do not need it."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "201",
+          "url": "https://sunnah.com/bukhari:201",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আনাস (রা.) ওযু ও গোসলে নবী ﷺ-এর পরিমিত পানি ব্যবহারের কথা বলেছেন।",
+            "en": "Anas reported the modest amounts of water the Prophet ﷺ used for wudu and ghusl."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "tayammum_wipe_face_and_hands",
+      "categoryIds": [
+        "tayammum"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "নবী ﷺ যেভাবে তায়াম্মুম দেখিয়েছেন তা শিখুন",
+        "en": "Learn how the Prophet ﷺ demonstrated tayammum"
+      },
+      "practice": {
+        "bn": "তায়াম্মুম করার সুযোগ থাকলে দুই হাত দিয়ে পবিত্র মাটি হালকাভাবে স্পর্শ করে মুখ ও হাত মাসেহ করুন। কখন তায়াম্মুম করা যায় ও এর বিস্তারিত পদ্ধতি মাযহাব অনুযায়ী জেনে নিন।",
+        "en": "When tayammum is permitted, lightly touch clean earth with both hands and wipe the face and hands. Ask a qualified teacher about when it applies and the details followed in your school of law."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "338",
+          "url": "https://sunnah.com/bukhari:338",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ আম্মার (রা.)-কে হালকাভাবে মাটি স্পর্শ করে আলগা ধুলা ঝেড়ে মুখ ও হাত মাসেহ করে দেখান।",
+            "en": "The Prophet ﷺ showed Ammar how to touch the earth lightly, blow off loose dust and wipe the face and hands."
+          },
+          "relation": "practice"
+        }
+      ],
+      "quranReferences": [
+        {
+          "surah": 5,
+          "ayah": 6,
+          "relation": "practice",
+          "url": "https://quran.com/5/6"
+        }
+      ]
+    },
+    {
+      "id": "prayer_follow_imam_movements",
+      "categoryIds": [
+        "prayer_etiquette",
+        "mosque"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "জামাতে ইমামের অনুসরণ করুন",
+        "en": "Follow the imam in congregational prayer"
+      },
+      "practice": {
+        "bn": "জামাতে ইমাম কোনো অবস্থানে যাওয়া শুরু করার পর তাঁর অনুসরণ করুন। ইমামের পর রুকু ও সিজদায় যান।",
+        "en": "Make the transitions of congregational prayer after the imam begins them. Follow him into bowing and prostration."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "722",
+          "url": "https://sunnah.com/bukhari:722",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ শেখান, ইমামকে অনুসরণের জন্য নিযুক্ত করা হয়। তিনি নামাজের বিভিন্ন অবস্থানে ইমামের অনুসরণ করার নিয়ম বলেন।",
+            "en": "The Prophet ﷺ taught that the imam is appointed to be followed and described following him in the movements of prayer."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "prayer_pause_in_each_posture",
+      "categoryIds": [
+        "prayer_etiquette"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "নামাজের প্রতিটি অবস্থানে স্থির হোন",
+        "en": "Settle into each posture of prayer"
+      },
+      "practice": {
+        "bn": "রুকু ও সিজদায় স্থির হোন, রুকুর পর পুরোপুরি সোজা হয়ে দাঁড়ান এবং দুই সিজদার মাঝে স্থির হয়ে বসুন।",
+        "en": "Pause in bowing and prostration, stand upright after bowing, and sit steadily between the two prostrations."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "757",
+          "url": "https://sunnah.com/bukhari:757",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "একজন ব্যক্তি তাড়াহুড়ো করে নামাজ পড়লে নবী ﷺ তাঁকে প্রতিটি অবস্থানে স্থির হতে শেখান।",
+            "en": "The Prophet ﷺ taught a man who had rushed his prayer to settle in each posture."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "prayer_follow_fatihah_with_amin",
+      "categoryIds": [
+        "prayer_etiquette"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "সূরা ফাতিহার শেষে আমিন বলুন",
+        "en": "Say Amin at the end of al-Fatihah"
+      },
+      "practice": {
+        "bn": "ইমাম সূরা ফাতিহার শেষ আয়াত পড়লে আমিন বলুন। আস্তে বা জোরে বলার ক্ষেত্রে আপনার মাযহাবের পদ্ধতি অনুসরণ করুন।",
+        "en": "When the imam reaches the end of al-Fatihah, say Amin. Follow the manner of saying it taught in your school of law."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "782",
+          "url": "https://sunnah.com/bukhari:782",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "বর্ণনায় ইমাম ফাতিহার শেষ অংশ পড়লে মুসল্লিদের আমিন বলতে বলা হয়েছে।",
+            "en": "The report instructs worshippers to say Amin when the imam finishes the closing words of al-Fatihah."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "prayer_make_dua_in_sujud",
+      "categoryIds": [
+        "prayer_etiquette",
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "সিজদায় দোয়া করুন",
+        "en": "Make dua in prostration"
+      },
+      "practice": {
+        "bn": "সিজদায় দোয়া করুন। নামাজের জন্য শেখা দোয়াগুলো পড়তে পারেন।",
+        "en": "Make dua in sujud. Use the supplications you have learned for prayer."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "482",
+          "url": "https://sunnah.com/muslim:482",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ সিজদায় বেশি বেশি দোয়া করতে বলেছেন এবং একে আল্লাহর বিশেষ নৈকট্য লাভের সময় হিসেবে বর্ণনা করেছেন।",
+            "en": "The Prophet ﷺ encouraged plenty of supplication in prostration and described it as a time of special nearness to Allah."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "prayer_glorify_allah_in_ruku",
+      "categoryIds": [
+        "prayer_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "রুকুতে আল্লাহর মহিমা ঘোষণা করুন",
+        "en": "Glorify Allah in bowing"
+      },
+      "practice": {
+        "bn": "রুকুতে শেখানো তাসবিহ পড়ে আল্লাহর মহিমা ঘোষণা করুন। নামাজে কুরআন দাঁড়ানো অবস্থায় তিলাওয়াত করুন।",
+        "en": "Glorify your Lord in ruku, using the remembrance taught for bowing. Reserve Quran recitation in prayer for its standing portions."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "479a",
+          "url": "https://sunnah.com/muslim:479a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ রুকু ও সিজদায় কুরআন তিলাওয়াত করতে নিষেধ করেন এবং রুকুতে আল্লাহর মহিমা ঘোষণা করতে বলেন।",
+            "en": "The Prophet ﷺ forbade Quran recitation in bowing and prostration and instructed worshippers to glorify Allah in bowing."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "prayer_seek_refuge_before_salam",
+      "categoryIds": [
+        "prayer_etiquette",
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "সালাম ফেরানোর আগে চারটি বিষয় থেকে আশ্রয় চান",
+        "en": "Seek refuge from four trials before salam"
+      },
+      "practice": {
+        "bn": "শেষ তাশাহহুদের পর জাহান্নাম, কবরের শাস্তি, জীবন ও মৃত্যুর ফিতনা এবং দাজ্জালের ফিতনা থেকে আল্লাহর কাছে আশ্রয় চান।",
+        "en": "After the final tashahhud, ask Allah to protect you from Hell, the punishment of the grave, the trials of life and death, and the trial of the False Messiah."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "588a",
+          "url": "https://sunnah.com/muslim:588a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ তাশাহহুদের পর এই চারটি বিষয় থেকে আল্লাহর কাছে আশ্রয় চাইতে বলেন।",
+            "en": "The Prophet ﷺ instructed worshippers to seek refuge from these four things after tashahhud."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "prayer_avoid_crossing_in_front",
+      "categoryIds": [
+        "prayer_etiquette",
+        "mosque"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "নামাজরত ব্যক্তির ঠিক সামনে দিয়ে যাবেন না",
+        "en": "Avoid walking immediately in front of someone praying"
+      },
+      "practice": {
+        "bn": "কেউ নামাজ পড়লে তাঁর ঠিক সামনের জায়গা দিয়ে যাবেন না। অন্য পথে যান অথবা নামাজ শেষ হওয়া পর্যন্ত অপেক্ষা করুন।",
+        "en": "When someone is praying, keep clear of the space directly in front of them. Use another path or wait for them to finish."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "510",
+          "url": "https://sunnah.com/bukhari:510",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আবু জুহাইম (রা.) নামাজরত ব্যক্তির সামনে দিয়ে যাওয়ার ব্যাপারে কঠোর সতর্কবাণী বর্ণনা করেন।",
+            "en": "Abu Juhaym reported a serious warning about passing in front of a person who is praying."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "prayer_use_sutrah",
+      "categoryIds": [
+        "prayer_etiquette",
+        "mosque"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "একা বা ইমাম হয়ে পড়লে সামনে সুতরা রাখুন",
+        "en": "Pray toward a sutrah when praying alone or leading"
+      },
+      "practice": {
+        "bn": "নামাজের জন্য দেয়াল, খুঁটি বা অন্য উপযুক্ত আড়ালের কাছাকাছি জায়গা নিন, যাতে মানুষ তার ওপাশ দিয়ে চলতে পারে।",
+        "en": "Choose a spot near a wall, pillar or other suitable barrier so people can pass beyond it while you pray."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "494",
+          "url": "https://sunnah.com/bukhari:494",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "সফরে নবী ﷺ নামাজের ইমামতি করার সময় তাঁর সামনে আড়াল হিসেবে একটি ছোট বর্শা দাঁড় করানো হতো।",
+            "en": "When the Prophet ﷺ led prayer during a journey, a short spear was set upright in front of him as a barrier."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "iqamah_prioritize_congregation",
+      "categoryIds": [
+        "iqamah",
+        "adhan"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "ইকামত হলে ফরজ জামাতকে অগ্রাধিকার দিন",
+        "en": "Give priority to the obligatory prayer at iqamah"
+      },
+      "practice": {
+        "bn": "ফরজ নামাজের ইকামত হলে জামাতে যোগ দিন। আগে থেকে নফল নামাজে দাঁড়িয়ে থাকলে কী করবেন, তা মাযহাব অনুযায়ী জেনে নিন।",
+        "en": "When the iqamah is called for the obligatory prayer, join the congregation. Learn your school’s ruling for a voluntary prayer you have already started."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "710a",
+          "url": "https://sunnah.com/muslim:710a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ বলেছেন, ইকামত হয়ে গেলে তখন ফরজ নামাজই প্রাধান্য পাবে।",
+            "en": "The Prophet ﷺ stated that once the iqamah is called, priority belongs to the prescribed prayer."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "iqamah_wait_until_imam_appears",
+      "categoryIds": [
+        "iqamah",
+        "adhan"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "ইমাম আসার আগে ইকামত হলে অপেক্ষা করুন",
+        "en": "Wait for the imam when iqamah is called before he arrives"
+      },
+      "practice": {
+        "bn": "ইকামত হয়েছে, কিন্তু ইমাম এখনো আসেননি—এমন হলে তাঁকে দেখা পর্যন্ত নামাজে দাঁড়ানোর জন্য অপেক্ষা করুন।",
+        "en": "If the iqamah has been called and the imam is still out of sight, wait until the imam appears before standing for the prayer."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "637",
+          "url": "https://sunnah.com/bukhari:637",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ ইকামতের পর তাঁকে দেখা গেলে নামাজের জন্য দাঁড়াতে বলেন।",
+            "en": "The Prophet ﷺ told worshippers to rise for prayer once they could see him after the iqamah."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "mosque_value_the_walk_to_prayer",
+      "categoryIds": [
+        "mosque"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "মসজিদে হেঁটে যাওয়ার ফজিলত মনে রাখুন",
+        "en": "Remember the reward of walking to the mosque"
+      },
+      "practice": {
+        "bn": "সম্ভব হলে ওযু করে ফরজ নামাজের জন্য হেঁটে মসজিদে যান এবং এই পথচলার জন্য আল্লাহর কাছে সওয়াব আশা করুন।",
+        "en": "When you are able, make wudu and walk to the mosque for an obligatory prayer, seeking Allah’s reward for the journey."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "666",
+          "url": "https://sunnah.com/muslim:666",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ জানান, মসজিদে যাওয়ার পথে একটি কদমে গুনাহ মোচন হয় এবং অন্য কদমে মর্যাদা বাড়ে।",
+            "en": "The Prophet ﷺ described one step as erasing a sin and another as raising the worshipper’s rank."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "mosque_leave_after_prayer_with_due_care",
+      "categoryIds": [
+        "mosque",
+        "after_prayer"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "নামাজের পর অন্যদের বের হওয়ার সুযোগ দিন",
+        "en": "Give others room to leave after prayer"
+      },
+      "practice": {
+        "bn": "নামাজ শেষে সামনে থাকা লোকদের বের হতে সময় ও জায়গা দিন। দরজায় ভিড় করা এড়িয়ে চলুন।",
+        "en": "When the prayer ends, allow people ahead of you time and space to leave. Avoid crowding the exit."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "866",
+          "url": "https://sunnah.com/bukhari:866",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "উম্মে সালামা (রা.) জানান, সালামের পর নারীরা উঠে চলে যেতেন আর নবী ﷺ ও পুরুষেরা কিছুক্ষণ নিজ নিজ স্থানে থাকতেন।",
+            "en": "Umm Salamah reported that women rose after the closing salam while the Prophet ﷺ and the men stayed in place for a time."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "mosque_enter_and_leave_duas"
+      ]
+    },
+    {
+      "id": "friday_arrive_clean_and_do_not_split_people",
+      "categoryIds": [
+        "friday",
+        "mosque"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "জুমায় বসা লোকদের মাঝ দিয়ে ঠেলে যাবেন না",
+        "en": "Avoid pushing between seated people at Jumuʿah"
+      },
+      "practice": {
+        "bn": "জুমার প্রস্তুতি নিয়ে মসজিদে গিয়ে বসা দুই ব্যক্তির মাঝখানে জোর করে ঢুকবেন না। ইমাম খুতবা শুরু করলে মনোযোগ দিয়ে শুনুন।",
+        "en": "After preparing for Jumuʿah, take an available place without separating two seated people. Give the sermon your attention once the imam begins."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "883",
+          "url": "https://sunnah.com/bukhari:883",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ জুমার আদবের মধ্যে পরিচ্ছন্নতা, বসা দুই ব্যক্তিকে আলাদা না করা এবং নীরবে খুতবা শোনার কথা বলেন।",
+            "en": "The Prophet ﷺ included cleanliness, avoiding separation of two seated people and listening silently among the manners of Friday."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "friday_bathe_for_jumuah",
+        "friday_listen_to_khutbah"
+      ]
+    },
+    {
+      "id": "suhur_take_it_near_fajr",
+      "categoryIds": [
+        "fasting",
+        "ramadan"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "ফজরের কাছাকাছি সময়ে সাহরি করুন",
+        "en": "Have suhur near dawn"
+      },
+      "practice": {
+        "bn": "সুবিধা হলে রাতের শেষদিকে সাহরি করুন এবং সুবহে সাদিকের আগে শেষ করুন। বর্ণনায় একবারের ব্যবধান কুরআন তিলাওয়াতের সময় দিয়ে বোঝানো হয়েছে।",
+        "en": "If convenient, have suhur toward the end of the night and finish it before true dawn. The report describes the interval on one occasion in terms of Quran recitation time."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1921",
+          "url": "https://sunnah.com/bukhari:1921",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "যায়দ ইবন সাবিত (রা.) বলেন, একবার সাহরি ও ফজরের আযানের মাঝে প্রায় পঞ্চাশ আয়াত পড়ার মতো সময় ছিল।",
+            "en": "Zayd ibn Thabit described an interval long enough to recite about fifty verses between suhur and the call for prayer on one occasion."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "fast_take_suhur"
+      ]
+    },
+    {
+      "id": "iftar_say_the_reported_dua",
+      "categoryIds": [
+        "fasting",
+        "ramadan"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "ইফতারের পর বর্ণিত দোয়া পড়ুন",
+        "en": "Say the reported dua after breaking the fast"
+      },
+      "practice": {
+        "bn": "বলুন, ‘যাহাবায যামাউ ওয়াবতাল্লাতিল উরূকু ওয়া সাবাতাল আজরু ইন শা আল্লাহ।’ অর্থ, তৃষ্ণা চলে গেল, শিরা সিক্ত হলো এবং আল্লাহ চাইলে সওয়াব নিশ্চিত হলো।",
+        "en": "Say, “Dhahaba az-zamaʾu wabtallati al-ʿuruqu wa thabata al-ajru in shaʾ Allah.” This means the thirst is gone, the veins are moistened, and the reward is assured, Allah willing."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "2357",
+          "url": "https://sunnah.com/abudawud:2357",
+          "grading": {
+            "status": "hasan",
+            "label": {
+              "bn": "হাসান",
+              "en": "Hasan"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "ইবন উমর (রা.) ইফতারের সময় নবী ﷺ থেকে এই দোয়াটি বর্ণনা করেন।",
+            "en": "Ibn Umar reported this supplication from the Prophet ﷺ when he broke his fast."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "fast_break_at_sunset"
+      ]
+    },
+    {
+      "id": "iftar_feed_a_fasting_person",
+      "categoryIds": [
+        "fasting",
+        "ramadan",
+        "charity"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "রোজাদারকে ইফতার করান",
+        "en": "Offer iftar to someone who fasted"
+      },
+      "practice": {
+        "bn": "রোজা রেখেছেন এমন কাউকে ইফতার দিন অথবা তাঁর ইফতারের ব্যবস্থা করতে সাহায্য করুন।",
+        "en": "Share an iftar meal or help provide iftar to someone who has been fasting."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "জামি আত-তিরমিজি",
+            "en": "Jamiʿ at-Tirmidhi"
+          },
+          "number": "807",
+          "url": "https://sunnah.com/tirmidhi:807",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            },
+            "by": {
+              "bn": "দারুসসালাম",
+              "en": "Darussalam"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ বলেছেন, রোজাদারকে ইফতার করালে তাঁর সমান সওয়াব পাওয়া যায় এবং রোজাদারের সওয়াবও পূর্ণ থাকে।",
+            "en": "The Prophet ﷺ promised a reward like that of the fasting person to the one who provides iftar, with the fasting person retaining their full reward."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "fast_guard_speech_and_actions",
+      "categoryIds": [
+        "fasting",
+        "ramadan",
+        "good_speech"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "রোজায় কথা ও কাজ সংযত রাখুন",
+        "en": "Guard your speech and conduct while fasting"
+      },
+      "practice": {
+        "bn": "মিথ্যা কথা ও অন্যায় কাজ থেকে বিরত থাকুন। কেউ গালি দিলে বা ঝগড়া করতে চাইলে ঝগড়া না বাড়িয়ে বলুন, ‘আমি রোজা রেখেছি।’",
+        "en": "Keep away from false speech and wrongful conduct. If someone insults you or tries to start a quarrel, avoid escalating it and say, “I am fasting.”"
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1903",
+          "url": "https://sunnah.com/bukhari:1903",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ রোজা রেখে মিথ্যা কথা ও অন্যায় কাজ চালিয়ে যাওয়ার ব্যাপারে কঠোরভাবে সতর্ক করেন।",
+            "en": "The Prophet ﷺ strongly warned against keeping up false speech and wrongdoing while fasting."
+          },
+          "relation": "practice"
+        },
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1894",
+          "url": "https://sunnah.com/bukhari:1894",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ রোজাকে ঢাল বলেছেন এবং কেউ গালি দিলে বা ঝগড়া করতে চাইলে কীভাবে সাড়া দিতে হবে তা শিখিয়েছেন।",
+            "en": "The Prophet ﷺ described fasting as a shield and taught the fasting person how to respond to abuse or quarrelling."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "fast_continue_after_forgetful_eating",
+      "categoryIds": [
+        "fasting"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "ভুলে খেয়ে বা পান করে ফেললে রোজা চালিয়ে যান",
+        "en": "Continue fasting if you ate or drank forgetfully"
+      },
+      "practice": {
+        "bn": "রোজার কথা সত্যিই ভুলে গিয়ে খেয়ে বা পান করে ফেললে মনে পড়ামাত্র থেমে যান এবং রোজা পূর্ণ করুন।",
+        "en": "If you eat or drink because you genuinely forgot you were fasting, stop when you remember and continue the fast."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1933",
+          "url": "https://sunnah.com/bukhari:1933",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ ভুলে খেয়ে বা পান করলে রোজা পূর্ণ করতে বলেছেন।",
+            "en": "The Prophet ﷺ told a fasting person who ate or drank forgetfully to complete the fast."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "fast_observe_voluntary_fasts_in_shaban",
+      "categoryIds": [
+        "fasting",
+        "special_days"
+      ],
+      "type": "voluntary_worship",
+      "title": {
+        "bn": "শাবান মাসে নফল রোজা রাখুন",
+        "en": "Consider voluntary fasting in Shaʿban"
+      },
+      "practice": {
+        "bn": "সামর্থ্য হলে শাবানের কিছু দিন নফল রোজা রাখুন। নবী ﷺ এই মাসে বেশি নফল রোজা রাখতেন।",
+        "en": "Fast some days of Shaʿban if you can, following the Prophet’s example of increasing voluntary fasting in this month."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1969",
+          "url": "https://sunnah.com/bukhari:1969",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আয়িশা (রা.) জানান, রমজান ছাড়া অন্য মাসের তুলনায় শাবানে তিনি নবী ﷺ-কে বেশি রোজা রাখতে দেখতেন।",
+            "en": "Aishah reported seeing the Prophet ﷺ fast more often in Shaʿban than in other months outside Ramadan."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "ramadan_give_more_and_review_quran",
+      "categoryIds": [
+        "ramadan",
+        "charity",
+        "quran_learning"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "রমজানে দানশীলতা ও কুরআন চর্চা বাড়ান",
+        "en": "Increase generosity and Quran review in Ramadan"
+      },
+      "practice": {
+        "bn": "রমজানজুড়ে সামর্থ্য অনুযায়ী দান করুন এবং কুরআন তিলাওয়াত ও আগে শেখা অংশ ঝালাইয়ের জন্য সময় রাখুন।",
+        "en": "Share what you can throughout Ramadan and make time to recite and review the Quran."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "6",
+          "url": "https://sunnah.com/bukhari:6",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন আব্বাস (রা.) রমজানে নবী ﷺ-এর বিশেষ দানশীলতা ও কুরআন চর্চার জন্য জিবরিল (আ.)-এর সঙ্গে প্রতি রাতে সাক্ষাতের কথা বলেন।",
+            "en": "Ibn Abbas described the Prophet’s exceptional generosity in Ramadan and his nightly meetings with Jibril for the Quran."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "ramadan_devote_last_ten_nights_with_family",
+      "categoryIds": [
+        "ramadan",
+        "night_prayer",
+        "family"
+      ],
+      "type": "voluntary_worship",
+      "title": {
+        "bn": "রমজানের শেষ দশ রাতে পরিবারকে ইবাদতে উৎসাহ দিন",
+        "en": "Encourage your household to worship in the last ten nights"
+      },
+      "practice": {
+        "bn": "রমজানের শেষ দশ রাতে ইবাদতের জন্য বাড়তি সময় রাখুন। পরিবারের যাঁরা যোগ দিতে চান, তাঁদের উৎসাহ দিন ও সাহায্য করুন।",
+        "en": "Make extra time for worship in the last ten nights. Gently help family members who want to join you."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "2024",
+          "url": "https://sunnah.com/bukhari:2024",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আয়িশা (রা.) জানান, শেষ দশ রাতে নবী ﷺ ইবাদত বাড়াতেন এবং পরিবারের লোকদের জাগিয়ে দিতেন।",
+            "en": "Aishah reported that the Prophet ﷺ increased his worship and woke his family in the last ten nights."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "ramadan_seek_laylatul_qadr"
+      ]
+    },
+    {
+      "id": "eid_welcome_the_community_at_gathering",
+      "categoryIds": [
+        "special_days",
+        "community"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "ঈদের সমাবেশে সবার অংশ নেওয়ার সুযোগ রাখুন",
+        "en": "Make room for the whole community at the Eid gathering"
+      },
+      "practice": {
+        "bn": "ঈদের সমাবেশে নারী ও কিশোরীদের অংশ নেওয়ার সুযোগ দিন। বর্ণনায় ঋতুস্রাব চলছিল এমন নারীদেরও সমাবেশে এসে নামাজের স্থান থেকে আলাদা থাকার কথা আছে।",
+        "en": "Welcome women and girls to the Eid gathering. The report also describes women who were menstruating joining the occasion while remaining apart from the prayer area."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "974",
+          "url": "https://sunnah.com/bukhari:974",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "উম্মে আতিয়্যা (রা.) জানান, নবী ﷺ নারী ও কিশোরীদের ঈদে বের হতে বলেন এবং ঋতুস্রাব চলছিল এমন নারীদের নামাজের স্থান থেকে আলাদা থাকতে বলেন।",
+            "en": "Umm Atiyyah reported the Prophet’s instruction for women and girls to come out for Eid, with those menstruating keeping apart from the prayer place."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "eid_prayer_before_sermon",
+      "categoryIds": [
+        "special_days"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "ঈদের খুতবার আগে নামাজ পড়ুন",
+        "en": "Pray before the Eid sermon"
+      },
+      "practice": {
+        "bn": "ঈদের জামাতে আগে নামাজ আদায় করুন, তারপর খুতবা শুনুন।",
+        "en": "In the Eid congregation, offer the prayer first and then listen to the khutbah."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "963",
+          "url": "https://sunnah.com/bukhari:963",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন উমর (রা.) জানান, নবী ﷺ এবং বর্ণনায় উল্লিখিত খলিফারা খুতবার আগে ঈদের নামাজ পড়তেন।",
+            "en": "Ibn Umar reported that the Prophet ﷺ and the caliphs mentioned in the report performed Eid prayer before delivering the sermon."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "eid_rejoice_with_family",
+      "categoryIds": [
+        "special_days",
+        "family"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "ঈদে পরিবারের সঙ্গে আনন্দ করুন",
+        "en": "Make room for family joy on Eid"
+      },
+      "practice": {
+        "bn": "ঈদের দিনে পরিবারের সঙ্গে সুন্দরভাবে আনন্দ করার সুযোগ রাখুন।",
+        "en": "Give family members time to enjoy Eid together in a wholesome way."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "952",
+          "url": "https://sunnah.com/bukhari:952",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ঈদের দিন আয়িশা (রা.)-এর ঘরে দুই মেয়ে একটি ঐতিহাসিক ঘটনা নিয়ে গান গাইছিল। নবী ﷺ তা চলতে দেন এবং ঈদকে আনন্দের উৎসব হিসেবে উল্লেখ করেন।",
+            "en": "On Eid, the Prophet ﷺ allowed two girls to continue singing about a historical event in Aishah’s home and acknowledged Eid as a festival."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "eid_give_zakat_al_fitr_before_prayer",
+      "categoryIds": [
+        "special_days",
+        "ramadan",
+        "charity"
+      ],
+      "type": "rights_and_duties",
+      "title": {
+        "bn": "ঈদুল ফিতরের নামাজের আগে ফিতরা দিন",
+        "en": "Give zakat al-fitr before Eid al-Fitr prayer"
+      },
+      "practice": {
+        "bn": "আপনার ওপর ফিতরা প্রযোজ্য হলে ঈদের নামাজের আগে তা হকদারের কাছে পৌঁছানোর ব্যবস্থা করুন। পরিমাণ ও দেওয়ার পদ্ধতি বিশ্বস্ত স্থানীয় আলেমের কাছে জেনে নিন।",
+        "en": "If zakat al-fitr is due from you, arrange for it to reach eligible recipients before the Eid prayer. Follow trusted local guidance on amount and method."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1503",
+          "url": "https://sunnah.com/bukhari:1503",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন উমর (রা.) জানান, নবী ﷺ ফিতরা নির্ধারণ করেন এবং মানুষ ঈদের নামাজে বের হওয়ার আগে তা আদায় করতে বলেন।",
+            "en": "Ibn Umar reported that the Prophet ﷺ prescribed zakat al-fitr and instructed that it be paid before people went to the Eid prayer."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "sacrifice_offer_after_eid_prayer",
+      "categoryIds": [
+        "sacrifice",
+        "special_days"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "ঈদের নামাজের পর কুরবানি করুন",
+        "en": "Offer the Eid sacrifice after the prayer"
+      },
+      "practice": {
+        "bn": "ঈদুল আজহার নামাজের পর কুরবানির ব্যবস্থা করুন। ঈদের জামাত না হলে বা অন্য স্থানে আপনার কুরবানি হলে সময়ের বিধান জেনে নিন।",
+        "en": "Arrange the Eid al-Adha sacrifice after the Eid prayer. Follow local guidance for cases where the prayer is unavailable or your sacrifice is handled elsewhere."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "976",
+          "url": "https://sunnah.com/bukhari:976",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ ব্যাখ্যা করেন, ঈদুল আজহার দিনে আগে নামাজ, তারপর কুরবানি।",
+            "en": "The Prophet ﷺ explained that the order on Eid al-Adha is to offer the prayer and then the sacrifice."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "sacrifice_choose_a_suitable_animal",
+      "categoryIds": [
+        "sacrifice"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "কুরবানির উপযুক্ত পশু বেছে নিন",
+        "en": "Choose an animal fit for sacrifice"
+      },
+      "practice": {
+        "bn": "উপযুক্ত পশু বেছে নিন এবং দেখুন কুরবানির অযোগ্য করে এমন স্পষ্ট ত্রুটি আছে কি না। ব্যবস্থা করার আগে পশুর ধরন ও বয়সের বিধান জেনে নিন।",
+        "en": "Choose an eligible animal and check that it is free of obvious disqualifying defects. Learn the requirements for its species and age before making arrangements."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "2802",
+          "url": "https://sunnah.com/abudawud:2802",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "বারা (রা.) এক চোখে স্পষ্ট ত্রুটি, স্পষ্ট অসুস্থতা ও খোঁড়াভাব এবং অতিরিক্ত শীর্ণতা—এই চার ধরনের ত্রুটি এড়ানোর কথা জানান।",
+            "en": "Al-Bara reported four obvious defects to avoid, including evident eye defects, sickness, lameness and severe emaciation."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "sacrifice_treat_animals_with_care",
+      "categoryIds": [
+        "sacrifice",
+        "charity"
+      ],
+      "type": "rights_and_duties",
+      "title": {
+        "bn": "পশুর প্রতি দয়া করুন ও কষ্ট কমান",
+        "en": "Treat the animal with care and avoid distress"
+      },
+      "practice": {
+        "bn": "দক্ষ ব্যক্তির মাধ্যমে স্থানীয় আইন ও প্রাণিকল্যাণের নিয়ম মেনে কুরবানির ব্যবস্থা করুন। পশুর প্রতি কোমল আচরণ করুন ও অপ্রয়োজনীয় কষ্ট এড়ান।",
+        "en": "Have a competent person handle the sacrifice in accordance with local law and animal welfare requirements. Treat the animal gently and avoid needless distress."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1955a",
+          "url": "https://sunnah.com/muslim:1955a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ সব কাজে উত্তম আচরণ শেখান এবং কুরবানির পশুকে অপ্রয়োজনীয় কষ্ট না দিতে নির্দেশ দেন।",
+            "en": "The Prophet ﷺ taught excellence in all actions and directed that an animal being sacrificed be spared unnecessary suffering."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "sacrifice_mention_allahs_name",
+      "categoryIds": [
+        "sacrifice"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "কুরবানির সময় আল্লাহর নাম ও তাকবির বলুন",
+        "en": "Mention Allah’s name and say the takbir"
+      },
+      "practice": {
+        "bn": "আপনি নিজে কুরবানি করলে আল্লাহর নাম নিন এবং ‘আল্লাহু আকবার’ বলুন।",
+        "en": "If you are the person carrying out the sacrifice, mention Allah’s name and say Allahu Akbar."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5565",
+          "url": "https://sunnah.com/bukhari:5565",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আনাস (রা.) জানান, নবী ﷺ কুরবানির পশুর ওপর আল্লাহর নাম নিতেন ও তাকবির বলতেন।",
+            "en": "Anas reported that the Prophet ﷺ mentioned Allah’s name and said the takbir over the animals he sacrificed."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "sacrifice_share_the_meat",
+      "categoryIds": [
+        "sacrifice",
+        "charity"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "কুরবানির মাংস খান ও অন্যকে দিন",
+        "en": "Eat from the sacrifice and share with others"
+      },
+      "practice": {
+        "bn": "পরিবারের জন্য কিছু মাংস রাখুন এবং অভাবী মানুষসহ অন্যদের মধ্যে কিছু বিতরণ করুন।",
+        "en": "Keep some for your household and share some with others, including people in need."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5569",
+          "url": "https://sunnah.com/bukhari:5569",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ কুরবানির মাংস খাওয়া, অন্যকে খাওয়ানো ও সংরক্ষণের অনুমতি দেন এবং অভাবের সময়কার একটি সাময়িক সীমার কারণ ব্যাখ্যা করেন।",
+            "en": "The Prophet ﷺ permitted people to eat, share and store sacrificial meat and explained an earlier temporary limit in a time of hardship."
+          },
+          "relation": "practice"
+        }
+      ],
+      "quranReferences": [
+        {
+          "surah": 22,
+          "ayah": 36,
+          "relation": "practice",
+          "url": "https://quran.com/22/36"
+        }
+      ]
+    },
+    {
+      "id": "sacrifice_hair_and_nails_in_dhul_hijjah",
+      "categoryIds": [
+        "sacrifice",
+        "fitrah",
+        "hair_and_beard"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "কুরবানিদাতার চুল ও নখের আমলটি জানুন",
+        "en": "Know the hair and nail practice for the one offering the sacrifice"
+      },
+      "practice": {
+        "bn": "কুরবানি দেওয়ার ইচ্ছা থাকলে বর্ণনায় যিলহজের শুরু থেকে নিজের কুরবানি হওয়া পর্যন্ত চুল ও নখ না কাটার কথা আছে। এ আমলের বিধান নিয়ে মাযহাবগুলোর মধ্যে মতভেদ আছে।",
+        "en": "If you intend to offer the sacrifice, the report teaches leaving your hair and nails untrimmed from the start of Dhul Hijjah until your sacrifice has been offered. Schools differ on the legal classification of this practice."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1977d",
+          "url": "https://sunnah.com/muslim:1977d",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "উম্মে সালামা (রা.) কুরবানিদাতাকে কুরবানি হওয়া পর্যন্ত চুল ও নখ না কাটার নির্দেশটি বর্ণনা করেন।",
+            "en": "Umm Salamah transmitted the instruction about leaving the hair and nails of the person offering the sacrifice until it is done."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "eid_pray_without_adhan_or_iqamah",
+      "categoryIds": [
+        "special_days",
+        "iqamah"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "আযান ও ইকামত ছাড়াই ঈদের নামাজ শুরু করুন",
+        "en": "Begin Eid prayer without an adhan or iqamah"
+      },
+      "practice": {
+        "bn": "ঈদের নামাজের জন্য আযান বা ইকামত না দিয়ে সরাসরি নামাজ শুরু করুন।",
+        "en": "The Eid prayer begins directly, without calling an adhan or iqamah for it."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "886a",
+          "url": "https://sunnah.com/muslim:886a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "সাহাবিদের বর্ণনায় ঈদের নামাজের জন্য আযান বা ইকামত দেওয়া হতো না।",
+            "en": "The companions reported that there was no adhan or iqamah on the day of the Eid prayer."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "marriage_seek_free_consent",
+      "categoryIds": [
+        "marriage",
+        "family"
+      ],
+      "type": "rights_and_duties",
+      "title": {
+        "bn": "নিকাহের আগে কনের সম্মতি নিন",
+        "en": "Seek the bride’s consent before nikah"
+      },
+      "practice": {
+        "bn": "যাঁর বিয়ে হচ্ছে, এমন পরিবেশে সরাসরি তাঁর মতামত নিন যেখানে তিনি স্বাধীনভাবে না বলতে পারেন। তাঁর অসম্মতিকে গুরুত্ব দিন এবং রাজি হওয়ার আগে প্রশ্ন করার সুযোগ দিন।",
+        "en": "Ask the person getting married directly and in a setting where she can decline freely. Take a refusal seriously and leave room for her to ask questions before agreeing."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5136",
+          "url": "https://sunnah.com/bukhari:5136",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ নারীর সঙ্গে পরামর্শ করা বা তাঁর অনুমতি নেওয়ার বিধান দিয়েছেন এবং তা ছাড়া বিয়ে দিতে নিষেধ করেছেন।",
+            "en": "The Prophet ﷺ forbade giving a woman in marriage without consulting her or obtaining her permission, as applicable."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "marriage_make_the_mahr_clear",
+      "categoryIds": [
+        "marriage"
+      ],
+      "type": "rights_and_duties",
+      "title": {
+        "bn": "মোহর নির্ধারণ করুন এবং তা আদায় করুন",
+        "en": "Agree on and honour the mahr"
+      },
+      "practice": {
+        "bn": "মোহর নিয়ে পরিষ্কারভাবে আলোচনা করুন এবং কনের প্রাপ্য মোহর আদায় করুন।",
+        "en": "Discuss the mahr clearly and honour what is due to the bride."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5167",
+          "url": "https://sunnah.com/bukhari:5167",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আবদুর রহমান ইবন আওফ (রা.)-এর বিয়ের কথা শুনে নবী ﷺ তাঁকে জিজ্ঞেস করেন, তিনি কী মোহর দিয়েছেন।",
+            "en": "The Prophet ﷺ asked Abd al-Rahman ibn Awf what he had given as mahr after learning of his marriage."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "marriage_hold_a_walimah_within_means",
+      "categoryIds": [
+        "marriage",
+        "family"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "সামর্থ্য অনুযায়ী ওলিমার আয়োজন করুন",
+        "en": "Host a walimah within your means"
+      },
+      "practice": {
+        "bn": "বিয়ের আনন্দ ভাগ করতে ওলিমার খাবারের ব্যবস্থা করুন। আয়োজনটি সামর্থ্যের মধ্যে রাখুন।",
+        "en": "Share a meal to celebrate your marriage. Choose an arrangement you can afford."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5167",
+          "url": "https://sunnah.com/bukhari:5167",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ আবদুর রহমান ইবন আওফ (রা.)-কে বিয়ের ওলিমা করতে উৎসাহ দেন।",
+            "en": "The Prophet ﷺ encouraged Abd al-Rahman ibn Awf to give a wedding feast."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "marriage_make_dua_before_intimacy",
+      "categoryIds": [
+        "marriage"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "দাম্পত্য মিলনের আগে দোয়া পড়ুন",
+        "en": "Say the dua before marital intimacy"
+      },
+      "practice": {
+        "bn": "বলুন, ‘বিসমিল্লাহ। আল্লাহুম্মা জান্নিবনাশ শাইতানা ওয়া জান্নিবিশ শাইতানা মা রাযাকতানা।’ নিজেদের এবং আল্লাহ কোনো সন্তান দান করলে তাকে শয়তান থেকে দূরে রাখার জন্য দোয়া করুন।",
+        "en": "Say, “Bismillah. Allahumma jannibna ash-shaytana wa jannibi ash-shaytana ma razaqtana.” Ask Allah to keep Shaytan away from you both and from any child He grants you."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "6388",
+          "url": "https://sunnah.com/bukhari:6388",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ দাম্পত্য মিলনের আগে আল্লাহর নাম নিতে ও তাঁর কাছে সুরক্ষা চাইতে শিখিয়েছেন।",
+            "en": "The Prophet ﷺ taught spouses to mention Allah’s name and ask for protection before intimacy."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "marriage_notice_good_in_your_spouse",
+      "categoryIds": [
+        "marriage",
+        "family"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "জীবনসঙ্গীর ভালো গুণগুলো খেয়াল করুন",
+        "en": "Notice what you value in your spouse"
+      },
+      "practice": {
+        "bn": "জীবনসঙ্গীর কোনো স্বভাব অপছন্দ হলে তাঁর যেসব গুণ আপনার কাছে ভালো লাগে, সেগুলোও মনে করুন। মতের অমিল হলে যত্ন নিয়ে কথা বলুন।",
+        "en": "If a trait in your spouse frustrates you, remember the qualities you appreciate. Discuss disagreements with care."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1468b",
+          "url": "https://sunnah.com/muslim:1468b",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ একজন মুমিন স্বামীকে মনে করিয়ে দেন, স্ত্রীর একটি গুণ অপছন্দ হলেও অন্য একটি গুণ তাঁর পছন্দ হতে পারে।",
+            "en": "The Prophet ﷺ reminded a believing husband that, even if he dislikes one trait in his wife, he may be pleased with another."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "newborn_choose_a_good_name",
+      "categoryIds": [
+        "newborn",
+        "family"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "নবজাতকের ভালো নাম রাখুন",
+        "en": "Choose a good name for the newborn"
+      },
+      "practice": {
+        "bn": "অর্থ ভালো এমন নাম বেছে নিন। হাদিসে আবদুল্লাহ ও আবদুর রহমান নামের প্রশংসা আছে। নবী ﷺ একজন নবজাতকের নাম ইবরাহিমও রেখেছিলেন।",
+        "en": "Choose a name with a good meaning. Abdullah and Abd al-Rahman are examples praised in a hadith, and the Prophet ﷺ also named a newborn Ibrahim."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "2132",
+          "url": "https://sunnah.com/muslim:2132",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ আবদুল্লাহ ও আবদুর রহমানকে আল্লাহর বিশেষ প্রিয় নাম বলেছেন।",
+            "en": "The Prophet ﷺ described Abdullah and Abd al-Rahman as names especially beloved to Allah."
+          },
+          "relation": "practice"
+        },
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5467",
+          "url": "https://sunnah.com/bukhari:5467",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আবু মুসা (রা.) জানান, নবী ﷺ তাঁর নবজাতকের নাম ইবরাহিম রাখেন।",
+            "en": "Abu Musa reported that the Prophet ﷺ named his newborn Ibrahim."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "family_pray_for_newborn"
+      ]
+    },
+    {
+      "id": "newborn_arrange_aqiqah_on_seventh_day",
+      "categoryIds": [
+        "newborn",
+        "life_events"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "সামর্থ্য থাকলে সপ্তম দিনে আকিকা করুন",
+        "en": "Arrange aqiqah on the seventh day if able"
+      },
+      "practice": {
+        "bn": "সামর্থ্য হলে সপ্তম দিনে আকিকার পরিকল্পনা করুন। বর্ণনায় শিশুর নাম রাখা ও মাথার চুল কামানোর কথাও আছে। নিজের পরিস্থিতিতে বিস্তারিত বিধান আলেমের কাছে জেনে নিন।",
+        "en": "If you can, plan the aqiqah for the seventh day. The report also mentions naming the baby and shaving the head. Ask a qualified scholar about details for your circumstances."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "2838",
+          "url": "https://sunnah.com/abudawud:2838",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "সামুরা (রা.) সপ্তম দিনে আকিকা, নাম রাখা ও মাথার চুল কামানোর বর্ণনা দেন।",
+            "en": "Samurah reported a description of aqiqah, naming and shaving the head on the seventh day."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "end_of_life_prompt_shahadah_gently",
+      "categoryIds": [
+        "end_of_life",
+        "life_events"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "মৃত্যুপথযাত্রীকে কোমলভাবে কালিমা স্মরণ করিয়ে দিন",
+        "en": "Gently prompt the dying person to say the testimony of faith"
+      },
+      "practice": {
+        "bn": "কেউ মৃত্যুর কাছাকাছি থাকলে কোমলভাবে ‘লা ইলাহা ইল্লাল্লাহ’ স্মরণ করিয়ে দিন। শান্তভাবে বলুন এবং তাঁকে বিশ্রামের সুযোগ দিন।",
+        "en": "When a person is near death, gently remind them of La ilaha illa Allah. Speak calmly and leave room for them to rest."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "916a",
+          "url": "https://sunnah.com/muslim:916a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ মৃত্যুপথযাত্রীকে ‘আল্লাহ ছাড়া ইবাদতের যোগ্য কেউ নেই’—এ কথাটি স্মরণ করাতে বলেন।",
+            "en": "The Prophet ﷺ instructed people to prompt the dying with the declaration that none is worthy of worship except Allah."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "end_of_life_close_eyes_and_pray_after_death",
+      "categoryIds": [
+        "end_of_life",
+        "life_events"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "মৃতের চোখ বন্ধ করুন এবং তাঁর জন্য দোয়া করুন",
+        "en": "Close the eyes and pray for the deceased"
+      },
+      "practice": {
+        "bn": "মৃত্যু নিশ্চিত হওয়ার পর দায়িত্বে থাকা ব্যক্তি উপযুক্ত হলে কোমলভাবে মৃতের চোখ বন্ধ করতে পারেন। মৃতের ক্ষমা, মর্যাদা বৃদ্ধি ও তাঁর রেখে যাওয়া স্বজনদের কল্যাণের জন্য দোয়া করুন।",
+        "en": "Once death has been confirmed, those caring for the deceased may gently close the person’s eyes if appropriate. Ask Allah to forgive the deceased, raise their rank, and bless those they leave behind."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "920a",
+          "url": "https://sunnah.com/muslim:920a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আবু সালামা (রা.) মারা গেলে নবী ﷺ তাঁর চোখ বন্ধ করেন এবং তাঁর ক্ষমা, মর্যাদা বৃদ্ধি ও স্বজনদের কল্যাণের জন্য দোয়া করেন।",
+            "en": "When Abu Salamah died, the Prophet ﷺ closed his eyes and prayed for forgiveness, elevation and care for those he left behind."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "end_of_life_say_istirja_at_loss",
+      "categoryIds": [
+        "end_of_life",
+        "life_events",
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "বিপদে ইস্তিরজা পড়ুন ও সওয়াবের দোয়া করুন",
+        "en": "Say istirja and ask for reward when loss strikes"
+      },
+      "practice": {
+        "bn": "বলুন, ‘ইন্না লিল্লাহি ওয়া ইন্না ইলাইহি রাজিউন।’ বিপদে ধৈর্যের সওয়াব ও এর বদলে উত্তম কিছু চেয়ে আল্লাহর কাছে দোয়া করুন।",
+        "en": "Say, “Inna lillahi wa inna ilayhi rajiʿun.” Ask Allah to reward you for the affliction and grant you something better in its place."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "918a",
+          "url": "https://sunnah.com/muslim:918a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "উম্মে সালামা (রা.) জানান, বিপদে নবী ﷺ ইস্তিরজা পড়তে এবং আল্লাহর কাছে সওয়াব ও উত্তম প্রতিদান চাইতে শিখিয়েছেন।",
+            "en": "Umm Salamah narrated that the Prophet ﷺ taught istirja and asking Allah for reward and a better replacement when an affliction occurs."
+          },
+          "relation": "practice"
+        }
+      ],
+      "quranReferences": [
+        {
+          "surah": 2,
+          "ayah": 156,
+          "relation": "practice",
+          "url": "https://quran.com/2/156"
+        }
+      ]
+    },
+    {
+      "id": "end_of_life_allow_tears_and_speak_well",
+      "categoryIds": [
+        "end_of_life",
+        "life_events"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "শোকে চোখের পানি আসতে দিন এবং ভালো কথা বলুন",
+        "en": "Allow tears and speak gently in grief"
+      },
+      "practice": {
+        "bn": "নিজে কাঁদতে পারেন এবং অন্যকেও কাঁদার সুযোগ দিন। শোকাহত কাউকে সান্ত্বনা দেওয়ার সময় ধৈর্য ও কোমলতার সঙ্গে কথা বলুন।",
+        "en": "Give yourself and others room to cry. Speak with patience and kindness when comforting someone who is grieving."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1303",
+          "url": "https://sunnah.com/bukhari:1303",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ পুত্র ইবরাহিমের জন্য কেঁদেছেন ও মনের দুঃখের কথা বলেছেন। তিনি আল্লাহর সন্তুষ্টির উপযোগী কথাই বলেছিলেন।",
+            "en": "The Prophet ﷺ wept for his son Ibrahim and spoke of grief and tears as he expressed only words pleasing to Allah."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "life_console_grieving"
+      ]
+    },
+    {
+      "id": "end_of_life_prepare_food_for_mourners",
+      "categoryIds": [
+        "end_of_life",
+        "life_events",
+        "community"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "শোকাহত পরিবারের জন্য খাবার পাঠান",
+        "en": "Prepare food for the bereaved household"
+      },
+      "practice": {
+        "bn": "মৃত্যুতে ব্যস্ত ও শোকাহত পরিবারের জন্য খাবার রান্না করুন বা পাঠান, যাতে তাঁদের নিজেদের সামলানোর সময় থাকে।",
+        "en": "Offer to cook or send food to a household occupied by a death, giving them time and space to attend to their loss."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "3132",
+          "url": "https://sunnah.com/abudawud:3132",
+          "grading": {
+            "status": "hasan",
+            "label": {
+              "bn": "হাসান",
+              "en": "Hasan"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "জাফর (রা.)-এর মৃত্যুর পর পরিবার শোক ও নানা কাজে ব্যস্ত থাকায় নবী ﷺ তাঁদের জন্য খাবার তৈরি করতে বলেন।",
+            "en": "After Jaʿfar’s death, the Prophet ﷺ directed others to prepare food for his family because they were occupied by the loss."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "end_of_life_arrange_dignified_washing_and_shrouding",
+      "categoryIds": [
+        "end_of_life"
+      ],
+      "type": "rights_and_duties",
+      "title": {
+        "bn": "মৃতের গোসল ও কাফনের মর্যাদাপূর্ণ ব্যবস্থা করুন",
+        "en": "Arrange dignified washing and shrouding"
+      },
+      "practice": {
+        "bn": "অভিজ্ঞ ব্যক্তিদের মাধ্যমে মর্যাদা ও গোপনীয়তা রক্ষা করে মৃতের গোসল ও কাফনের ব্যবস্থা করুন। বর্ণিত পদ্ধতিতে প্রয়োজন অনুযায়ী বেজোড় সংখ্যায় ধোয়ার কথা আছে।",
+        "en": "Ask experienced people to wash and shroud the deceased with care and privacy. The reported method mentions washing an odd number of times as needed."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1253",
+          "url": "https://sunnah.com/bukhari:1253",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ-এর কন্যার মৃত্যুর পর তাঁর গোসলের নির্দেশনা এবং কাফনের জন্য নবী ﷺ-এর কাপড় দেওয়ার কথা উম্মে আতিয়্যা (রা.) জানান।",
+            "en": "Umm Atiyyah reported the Prophet’s washing instructions after his daughter died, and that he provided a garment for use in her shroud."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "end_of_life_pray_for_forgiveness_in_janazah",
+      "categoryIds": [
+        "end_of_life",
+        "life_events"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "জানাজার নামাজে ক্ষমা ও রহমতের দোয়া করুন",
+        "en": "Ask for forgiveness and mercy in janazah prayer"
+      },
+      "practice": {
+        "bn": "জানাজার নামাজে মৃতের ক্ষমা, তাঁর প্রতি রহমত এবং তাঁর কবর প্রশস্ত করে দেওয়ার জন্য আল্লাহর কাছে দোয়া করুন।",
+        "en": "In the funeral prayer, ask Allah to forgive the deceased, show them mercy, and make their resting place spacious."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "963a",
+          "url": "https://sunnah.com/muslim:963a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আওফ ইবন মালিক (রা.) নবী ﷺ-এর জানাজার দোয়া স্মরণ করেন। এতে ক্ষমা, রহমত ও কবর প্রশস্ত করার দোয়া ছিল।",
+            "en": "Awf ibn Malik remembered the Prophet’s janazah supplication, including asking for forgiveness, mercy and a spacious grave."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "life_attend_funeral"
+      ]
+    },
+    {
+      "id": "end_of_life_pray_for_steadfastness_after_burial",
+      "categoryIds": [
+        "end_of_life",
+        "life_events"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "দাফনের পর মৃতের দৃঢ়তার জন্য দোয়া করুন",
+        "en": "Ask Allah for the deceased’s steadfastness after burial"
+      },
+      "practice": {
+        "bn": "দাফনের পর মৃতের ক্ষমা এবং তাঁকে দৃঢ়তা দেওয়ার জন্য আল্লাহর কাছে দোয়া করুন।",
+        "en": "After burial, ask Allah to forgive the deceased and grant them steadfastness."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "3221",
+          "url": "https://sunnah.com/abudawud:3221",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "উসমান (রা.) জানান, দাফনের পর নবী ﷺ উপস্থিত লোকদের মৃতের ক্ষমা ও দৃঢ়তার জন্য দোয়া করতে বলেন।",
+            "en": "Uthman reported that after a burial the Prophet ﷺ asked those present to pray for the deceased’s forgiveness and steadfastness."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "end_of_life_give_charity_on_behalf_of_deceased",
+      "categoryIds": [
+        "end_of_life",
+        "charity"
+      ],
+      "type": "voluntary_worship",
+      "title": {
+        "bn": "মৃত প্রিয়জনের পক্ষ থেকে সদকা দিন",
+        "en": "Give charity on behalf of a deceased loved one"
+      },
+      "practice": {
+        "bn": "ইচ্ছা হলে মৃত প্রিয়জনের পক্ষ থেকে সদকা দিন এবং তা কবুল করতে আল্লাহর কাছে দোয়া করুন।",
+        "en": "If you wish, give charity on behalf of a deceased loved one and ask Allah to accept it."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1388",
+          "url": "https://sunnah.com/bukhari:1388",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ নিশ্চিত করেন, এক ব্যক্তি তাঁর মৃত মায়ের পক্ষ থেকে সদকা দিলে তাঁর মা তার সওয়াব পাবেন।",
+            "en": "The Prophet ﷺ affirmed that a man’s deceased mother would benefit from charity given on her behalf."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "sick_pray_to_allah_for_healing",
+      "categoryIds": [
+        "visiting_the_sick",
+        "life_events",
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "আল্লাহর কাছে রোগমুক্তির দোয়া করুন",
+        "en": "Ask Allah to grant healing"
+      },
+      "practice": {
+        "bn": "কেউ অসুস্থ হলে সকল মানুষের রব আল্লাহর কাছে তাঁর কষ্ট দূর করে পূর্ণ সুস্থতা দেওয়ার দোয়া করুন।",
+        "en": "When someone is ill, ask Allah, the Lord of all people, to remove the illness and grant complete healing."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5743",
+          "url": "https://sunnah.com/bukhari:5743",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আয়িশা (রা.) জানান, নবী ﷺ কষ্ট দূর করে এমন সুস্থতা দেওয়ার দোয়া করতেন যাতে রোগের কোনো চিহ্ন না থাকে।",
+            "en": "Aishah reported that the Prophet ﷺ asked Allah to remove an ailment and grant healing that leaves no illness."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "visit_sick_offer_comfort"
+      ]
+    },
+    {
+      "id": "sick_visit_across_communities",
+      "categoryIds": [
+        "visiting_the_sick",
+        "life_events",
+        "community"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "অন্য ধর্মের অসুস্থ মানুষকেও দেখতে যান",
+        "en": "Show care to sick people across communities"
+      },
+      "practice": {
+        "bn": "অন্য ধর্মের কোনো প্রতিবেশী, সহকর্মী বা পরিচিত ব্যক্তি অসুস্থ হলে, তাঁর সুবিধা থাকলে দেখতে যান।",
+        "en": "Check in on an ill neighbour, colleague or acquaintance of another faith when a visit would be welcome."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5657",
+          "url": "https://sunnah.com/bukhari:5657",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আনাস (রা.) জানান, এক ইহুদি কিশোর অসুস্থ হলে নবী ﷺ তাকে দেখতে যান।",
+            "en": "Anas reported that the Prophet ﷺ visited a Jewish boy who became ill."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "sick_ask_allah_for_protection_from_pain",
+      "categoryIds": [
+        "visiting_the_sick",
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "ব্যথা অনুভব করলে শেখানো দোয়া পড়ুন",
+        "en": "Say the supplication taught for pain"
+      },
+      "practice": {
+        "bn": "তিনবার ‘বিসমিল্লাহ’ বলুন। এরপর সাতবার বলুন, ‘আউযু বিল্লাহি ওয়া কুদরাতিহি মিন শাররি মা আজিদু ওয়া উহাযিরু।’ অর্থ, যে কষ্ট অনুভব করছি ও যার আশঙ্কা করছি, তার অনিষ্ট থেকে আল্লাহ ও তাঁর ক্ষমতার আশ্রয় চাই।",
+        "en": "Say Bismillah three times. Then say seven times, “Aʿudhu billahi wa qudratihi min sharri ma ajidu wa uhadhiru,” asking Allah for refuge by His power from the harm you feel and fear."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "2202",
+          "url": "https://sunnah.com/muslim:2202",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "উসমান ইবন আবিল আস (রা.) ব্যথার কথা জানালে নবী ﷺ তিনবার আল্লাহর নাম নিতে এবং সাতবার আশ্রয়ের দোয়া করতে শেখান।",
+            "en": "The Prophet ﷺ taught Uthman ibn Abi al-As to say Allah’s name three times and seek refuge seven times when he complained of pain."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "newborn_learn_the_reported_aqiqah_arrangement",
+      "categoryIds": [
+        "newborn"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "আকিকার বর্ণিত পদ্ধতি জেনে নিন",
+        "en": "Learn the reported aqiqah arrangement"
+      },
+      "practice": {
+        "bn": "একটি বর্ণনায় ছেলের জন্য দুটি এবং মেয়ের জন্য একটি ভেড়ার কথা আছে। সামর্থ্য সীমিত হলে আপনার জন্য কী সুযোগ আছে তা আলেমের কাছে জেনে নিন।",
+        "en": "A report mentions two sheep for a boy and one for a girl. If your means are limited, ask a scholar about the options available to you."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "জামি আত-তিরমিজি",
+            "en": "Jamiʿ at-Tirmidhi"
+          },
+          "number": "1513",
+          "url": "https://sunnah.com/tirmidhi:1513",
+          "grading": {
+            "status": "hasan",
+            "label": {
+              "bn": "হাসান",
+              "en": "Hasan"
+            },
+            "by": {
+              "bn": "দারুসসালাম",
+              "en": "Darussalam"
+            }
+          },
+          "summary": {
+            "bn": "আয়িশা (রা.) আকিকার পশুর সংখ্যা সম্পর্কে নবী ﷺ-এর নির্দেশনা বর্ণনা করেন।",
+            "en": "Aishah reported the Prophet’s guidance on the number of animals used for aqiqah."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "newborn_arrange_aqiqah_on_seventh_day"
+      ]
+    },
+    {
+      "id": "dua_begin_with_praise_and_salawat",
+      "categoryIds": [
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "দোয়ার শুরুতে আল্লাহর প্রশংসা ও দরুদ পড়ুন",
+        "en": "Begin dua with praise and blessings"
+      },
+      "practice": {
+        "bn": "আল্লাহর প্রশংসা করুন, নবী ﷺ-এর প্রতি দরুদ পড়ুন, তারপর নিজের প্রয়োজন আল্লাহর কাছে তুলে ধরুন।",
+        "en": "Praise Allah, send blessings upon the Prophet ﷺ, and then ask Allah for what you need."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "1481",
+          "url": "https://sunnah.com/abudawud:1481",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "নামাজে একজনের দোয়া শুনে নবী ﷺ তাঁকে শুরুতে আল্লাহর প্রশংসা ও নবীর প্রতি দরুদ পড়তে শিখিয়েছেন।",
+            "en": "After hearing a man supplicate in prayer, the Prophet ﷺ taught him to begin by praising Allah and sending blessings upon the Prophet ﷺ."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "dua_ask_with_resolve",
+      "categoryIds": [
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "আল্লাহর কাছে দৃঢ়ভাবে দোয়া করুন",
+        "en": "Ask Allah directly and with resolve"
+      },
+      "practice": {
+        "bn": "রহমত, ক্ষমা বা নিজের প্রয়োজনে সরাসরি আল্লাহর কাছে চান। যেমন বলুন, ‘হে আল্লাহ, আমাকে ক্ষমা করুন।’",
+        "en": "Ask directly for mercy, forgiveness or what you need. Say, for example, “O Allah, forgive me.”"
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "6339",
+          "url": "https://sunnah.com/bukhari:6339",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ দৃঢ়ভাবে চাইতে শিখিয়েছেন এবং ক্ষমা বা রহমত চাওয়ার সময় ‘আপনি চাইলে’ বলে শর্ত জুড়তে নিষেধ করেছেন।",
+            "en": "The Prophet ﷺ taught people to ask Allah firmly and cautioned against saying “if You wish” when asking for forgiveness or mercy."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "dua_keep_asking_patiently",
+      "categoryIds": [
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "ধৈর্য ধরে দোয়া করতে থাকুন",
+        "en": "Keep making dua patiently"
+      },
+      "practice": {
+        "bn": "দোয়ার ফল পেতে দেরি হচ্ছে মনে হলেও দোয়া করতে থাকুন। ধৈর্য ও আশা নিয়ে আল্লাহর কাছে চান।",
+        "en": "Continue making dua even when an answer seems delayed. Keep asking Allah with patience and hope."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "2735a",
+          "url": "https://sunnah.com/muslim:2735a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ অধৈর্য হয়ে ‘আমি দোয়া করেছি, কিন্তু কবুল হয়নি’ বলতে সতর্ক করেছেন।",
+            "en": "The Prophet ﷺ warned against becoming impatient and saying that one’s supplication had gone unanswered."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "dua_make_it_for_others_in_their_absence",
+      "categoryIds": [
+        "dua_etiquette",
+        "community"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "অন্যের অনুপস্থিতিতে তাঁর জন্য দোয়া করুন",
+        "en": "Make dua for another person in their absence"
+      },
+      "practice": {
+        "bn": "কোনো মুসলিম উপস্থিত না থাকলে তাঁর জন্য আল্লাহর কাছে কল্যাণ চান। যেমন ক্ষমা, হিদায়াত বা কষ্ট থেকে মুক্তির দোয়া করুন।",
+        "en": "Ask Allah to grant good to another Muslim when they are away, such as forgiveness, guidance or relief."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "2732a",
+          "url": "https://sunnah.com/muslim:2732a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ জানান, কোনো মুমিন অন্যের অনুপস্থিতিতে তাঁর জন্য দোয়া করলে একজন ফেরেশতা দোয়াকারীর জন্যও একই কল্যাণ চান।",
+            "en": "The Prophet ﷺ said that when a believer prays for another in their absence, an angel prays for the same good for the person asking."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "dua_use_the_last_third_of_the_night",
+      "categoryIds": [
+        "dua_etiquette",
+        "night_prayer"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "রাতের শেষ তৃতীয়াংশে দোয়া করুন",
+        "en": "Make dua in the last third of the night"
+      },
+      "practice": {
+        "bn": "রাতের শেষ তৃতীয়াংশে জেগে থাকলে কিছু সময় নিয়ে আল্লাহর কাছে ক্ষমা ও আপনার প্রয়োজনীয় কল্যাণ চান।",
+        "en": "If you are awake in the last third of the night, take time to ask Allah for forgiveness and whatever good you need."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1145",
+          "url": "https://sunnah.com/bukhari:1145",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ রাতের শেষ তৃতীয়াংশের কথা বিশেষভাবে বলেছেন, যখন আল্লাহকে ডাকা, তাঁর কাছে চাওয়া ও ক্ষমা প্রার্থনা করা যায়।",
+            "en": "The Prophet ﷺ singled out the last third of the night as a time for calling on Allah, asking of Him and seeking forgiveness."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "dua_raise_hands_when_appropriate",
+      "categoryIds": [
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "উপযুক্ত ক্ষেত্রে দোয়ার সময় হাত তুলুন",
+        "en": "Raise your hands for dua when appropriate"
+      },
+      "practice": {
+        "bn": "সাধারণ দোয়ায় আল্লাহর কাছে চাওয়ার সময় হাত তুলতে পারেন। নির্দিষ্ট ইবাদতের ক্ষেত্রে সে ইবাদতের বর্ণিত পদ্ধতি অনুসরণ করুন।",
+        "en": "In general supplication you may raise your hands as you ask Allah. Follow the reported practice for particular acts of worship."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "1488",
+          "url": "https://sunnah.com/abudawud:1488",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "সালমান (রা.) দোয়ার সময় হাত তোলা বান্দার প্রতি আল্লাহর দানশীলতা সম্পর্কে নবী ﷺ-এর শিক্ষা বর্ণনা করেন।",
+            "en": "Salman reported the Prophet’s teaching about Allah’s generosity toward the servant who raises their hands in supplication."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "gathering_make_room_without_displacing_others",
+      "categoryIds": [
+        "gatherings",
+        "community"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "কাউকে উঠিয়ে না দিয়ে জায়গা করে দিন",
+        "en": "Make room without taking someone else’s seat"
+      },
+      "practice": {
+        "bn": "যেখানে জায়গা আছে, সেখানে বসুন। কেউ এলে আগে থেকে বসা কাউকে উঠিয়ে না দিয়ে তাঁর জন্য জায়গা করে দিন।",
+        "en": "Sit where there is room. If someone joins, make space for them without asking a seated person to give up their place."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "6270",
+          "url": "https://sunnah.com/bukhari:6270",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ কারও আসন নিতে তাঁকে উঠিয়ে দিতে নিষেধ করেছেন এবং বসা লোকদের জায়গা করে দিতে বলেছেন।",
+            "en": "The Prophet ﷺ forbade making someone leave their seat to take it and told those seated to make room."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "salam_gathering"
+      ]
+    },
+    {
+      "id": "gathering_include_the_third_person",
+      "categoryIds": [
+        "gatherings",
+        "good_speech"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "তিনজন থাকলে একজনকে বাদ দিয়ে গোপনে কথা বলবেন না",
+        "en": "Avoid excluding a third person through a private conversation"
+      },
+      "practice": {
+        "bn": "তিনজন একসঙ্গে থাকলে একজনকে বাদ দিয়ে দুজন গোপনে কথা বলা এড়ান। তাঁকে কথায় যুক্ত করুন, অপেক্ষা করুন অথবা পরে কথা বলুন।",
+        "en": "If three of you are together, avoid a private exchange between two that leaves the third person excluded. Include them, wait, or speak another time."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "6290",
+          "url": "https://sunnah.com/bukhari:6290",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ তৃতীয় ব্যক্তিকে বাদ দিয়ে দুজন গোপনে কথা বলতে নিষেধ করেছেন, কারণ এতে তৃতীয় ব্যক্তি দুঃখ পেতে পারেন।",
+            "en": "The Prophet ﷺ discouraged two people from speaking privately to the exclusion of a third, because it could upset them."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "gathering_stop_quarrelling_and_keep_jokes_truthful",
+      "categoryIds": [
+        "gatherings",
+        "good_speech"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "ঝগড়া ছেড়ে দিন এবং কৌতুকেও সত্য বলুন",
+        "en": "Leave quarrels and keep jokes truthful"
+      },
+      "practice": {
+        "bn": "আপনি সঠিক মনে করলেও আলোচনা ঝগড়ায় পরিণত হলে সরে আসুন। হাসি-ঠাট্টায়ও মিথ্যা বলা এড়িয়ে চলুন।",
+        "en": "Step away from an argument that has become quarrelsome, even if you believe you are right. Keep humour free of lies."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "4800",
+          "url": "https://sunnah.com/abudawud:4800",
+          "grading": {
+            "status": "hasan",
+            "label": {
+              "bn": "হাসান",
+              "en": "Hasan"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ ঝগড়া ছেড়ে দেওয়া, হাসি-ঠাট্টাতেও মিথ্যা এড়ানো এবং উত্তম চরিত্র গড়ার প্রশংসা করেছেন।",
+            "en": "The Prophet ﷺ praised giving up quarrelling, avoiding lies even in jest and cultivating good character."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "gathering_apply_gentleness_in_conversation",
+      "categoryIds": [
+        "gatherings",
+        "good_speech",
+        "family"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "কোমলভাবে কথা বলুন ও জবাব দিন",
+        "en": "Speak and respond with gentleness"
+      },
+      "practice": {
+        "bn": "বিশেষ করে কথাবার্তায় উত্তেজনা থাকলে কোমল শব্দ বেছে নিন এবং সংযতভাবে জবাব দিন।",
+        "en": "Choose gentle words and a measured reply, especially when a conversation is tense."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "2593",
+          "url": "https://sunnah.com/muslim:2593",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ আয়িশা (রা.)-কে বলেন, আল্লাহ কোমলতা পছন্দ করেন এবং এর মাধ্যমে এমন কিছু দান করেন যা কঠোরতার মাধ্যমে দেন না।",
+            "en": "The Prophet ﷺ told Aishah that Allah loves gentleness and grants through it what He does not grant through harshness."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "community_introduce_yourself_at_the_door",
+      "categoryIds": [
+        "community",
+        "greetings"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "প্রবেশের অনুমতি চাইলে নিজের পরিচয় দিন",
+        "en": "Identify yourself when asking to enter"
+      },
+      "practice": {
+        "bn": "দরজায় কে এসেছে জানতে চাইলে নিজের নাম বা স্পষ্ট পরিচয় বলুন।",
+        "en": "If someone asks who is at the door, give your name or a clear introduction."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "6250",
+          "url": "https://sunnah.com/bukhari:6250",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "দরজায় পরিচয় জানতে চাইলে জাবির (রা.) শুধু ‘আমি’ বলেছিলেন। এই অস্পষ্ট উত্তরে নবী ﷺ অসন্তোষ প্রকাশ করেন।",
+            "en": "When Jabir answered a question at the door by saying only “I,” the Prophet ﷺ expressed displeasure with the vague reply."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "community_ask_permission"
+      ]
+    },
+    {
+      "id": "community_honour_guests",
+      "categoryIds": [
+        "community",
+        "family"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "অতিথিকে সম্মান করুন এবং স্বাগতিকের সময়ের মূল্য দিন",
+        "en": "Honour guests and respect your host’s time"
+      },
+      "practice": {
+        "bn": "নিজের সামর্থ্য অনুযায়ী অতিথিকে আপ্যায়ন করুন। অতিথি হিসেবে স্বাগতিকের সামর্থ্য ও সুবিধা খেয়াল করুন এবং অযথা দীর্ঘ সময় থাকবেন না।",
+        "en": "Welcome a guest generously according to your means. As a guest, pay attention to your host’s capacity and avoid overstaying."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "6019",
+          "url": "https://sunnah.com/bukhari:6019",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ অতিথি আপ্যায়নের শিক্ষা দেন এবং স্বাগতিককে কষ্টে ফেলার মতো দীর্ঘ সময় থাকতে অতিথিকে নিষেধ করেন।",
+            "en": "The Prophet ﷺ taught hospitality and cautioned a guest against staying long enough to put the host in difficulty."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "community_keep_neighbours_safe",
+      "categoryIds": [
+        "community"
+      ],
+      "type": "rights_and_duties",
+      "title": {
+        "bn": "প্রতিবেশীকে আপনার অনিষ্ট থেকে নিরাপদ রাখুন",
+        "en": "Keep neighbours safe from harm"
+      },
+      "practice": {
+        "bn": "কথা ও কাজ প্রতিবেশীদের কীভাবে প্রভাবিত করে তা খেয়াল করুন। শব্দদূষণ, হয়রানি ও যৌথ জায়গা ব্যবহারে তাঁদের সুবিধা বিবেচনায় রাখুন।",
+        "en": "Think about how your words and actions affect neighbours, including noise, harassment and use of shared spaces."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "6016",
+          "url": "https://sunnah.com/bukhari:6016",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "যার অনিষ্ট থেকে প্রতিবেশী নিরাপদ নয়, নবী ﷺ তার ব্যাপারে কঠোর সতর্কবাণী দিয়েছেন।",
+            "en": "The Prophet ﷺ gave a severe warning about the person whose neighbour is unsafe from their wrongdoing."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "fitrah_maintain_underarm_and_pubic_grooming",
+      "categoryIds": [
+        "fitrah",
+        "personal_care"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "বগল ও নাভির নিচের লোম নিয়মিত পরিষ্কার করুন",
+        "en": "Maintain underarm and pubic grooming"
+      },
+      "practice": {
+        "bn": "বগল ও নাভির নিচের লোম নিয়মিত পরিষ্কার করুন। হাদিসে উল্লেখিত পরিচর্যার কাজগুলো ফেলে রাখার সর্বোচ্চ সীমা হিসেবে চল্লিশ রাতের কথা এসেছে।",
+        "en": "Keep up regular grooming of underarm and pubic hair. The reported forty nights is an upper limit for neglecting the practices named in the hadith."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "258",
+          "url": "https://sunnah.com/muslim:258",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আনাস (রা.) গোঁফ ছোট করা, নখ কাটা এবং বগল ও নাভির নিচের লোম পরিষ্কার করা চল্লিশ রাতের বেশি ফেলে না রাখার কথা বলেন।",
+            "en": "Anas reported a forty-night limit for neglecting moustache trimming, nail clipping, and underarm and pubic grooming."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "personal_fitrah_grooming"
+      ]
+    },
+    {
+      "id": "hair_men_trim_moustache_and_leave_beard",
+      "categoryIds": [
+        "hair_and_beard",
+        "fitrah",
+        "personal_care"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "পুরুষের গোঁফ ছোট রাখা ও দাড়ি রাখার নির্দেশনা",
+        "en": "Men are instructed to trim the moustache and keep the beard"
+      },
+      "practice": {
+        "bn": "গোঁফ ছোট রাখুন ও দাড়ি রাখুন। দাড়ি ছাঁটার বিস্তারিত বিষয়ে নিজের মাযহাবের বিধান জেনে নিন।",
+        "en": "Keep the moustache trimmed and the beard. Learn your school’s guidance on the details of beard trimming."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5892",
+          "url": "https://sunnah.com/bukhari:5892",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন উমর (রা.) নবী ﷺ-এর দাড়ি রাখা ও গোঁফ ছোট করার নির্দেশনা বর্ণনা করেন।",
+            "en": "Ibn Umar reported the Prophet’s instruction to leave the beard and trim the moustache."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hair_comb_starting_from_right",
+      "categoryIds": [
+        "hair_and_beard",
+        "personal_care"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "ডান দিক থেকে চুল আঁচড়ানো শুরু করুন",
+        "en": "Begin combing from the right side"
+      },
+      "practice": {
+        "bn": "সুবিধা হলে চুল আঁচড়ানো ডান দিক থেকে শুরু করুন।",
+        "en": "When combing your hair, begin from the right side when practical."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5926",
+          "url": "https://sunnah.com/bukhari:5926",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আয়িশা (রা.) বলেন, নবী ﷺ চুল আঁচড়ানোসহ বিভিন্ন উপযুক্ত কাজে ডান দিক থেকে শুরু করতে পছন্দ করতেন।",
+            "en": "Aishah said that the Prophet ﷺ liked to begin on the right when combing and in other suitable acts."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hair_keep_it_well_cared_for",
+      "categoryIds": [
+        "hair_and_beard",
+        "personal_care"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "চুলের যত্ন নিন",
+        "en": "Take care of your hair"
+      },
+      "practice": {
+        "bn": "নিজের উপযোগী পদ্ধতিতে চুল পরিষ্কার রাখুন ও যত্ন নিন।",
+        "en": "Keep your hair clean and cared for in a way that suits you."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "4163",
+          "url": "https://sunnah.com/abudawud:4163",
+          "grading": {
+            "status": "hasan_sahih",
+            "label": {
+              "bn": "হাসান সহিহ",
+              "en": "Hasan sahih"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "আবু হুরায়রা (রা.) জানান, নবী ﷺ চুলের উপযুক্ত যত্ন নিতে বলেছেন।",
+            "en": "Abu Hurayrah reported that the Prophet ﷺ instructed people to take proper care of their hair."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hair_avoid_qaza_shaving_pattern",
+      "categoryIds": [
+        "hair_and_beard",
+        "personal_care"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "কাযা নামে পরিচিত ছোপ ছোপ করে মাথা কামানো এড়ান",
+        "en": "Avoid the shaved patches known as qazaʿ"
+      },
+      "practice": {
+        "bn": "মাথার কিছু অংশ কামিয়ে অন্য অংশে ছোপ ছোপ চুল রেখে দেওয়া এড়ান। বর্ণনায় নির্দিষ্ট ধরনের চুল কামানোর কথা বোঝানো হয়েছে। বিশেষ কোনো চুলের কাট সম্পর্কে আলেমের কাছে জানতে পারেন।",
+        "en": "Avoid shaving part of the head while leaving patches of hair. The source describes a particular shaving pattern. Ask a qualified scholar about specific haircuts."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5921",
+          "url": "https://sunnah.com/bukhari:5921",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন উমর (রা.) কাযা করার নিষেধাজ্ঞা বর্ণনা করেন।",
+            "en": "Ibn Umar reported the prohibition of qazaʿ."
+          },
+          "relation": "practice"
+        },
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5920",
+          "url": "https://sunnah.com/bukhari:5920",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নাফি ব্যাখ্যা করেন, এর অর্থ মাথার কিছু অংশ কামিয়ে অন্যত্র গুচ্ছ গুচ্ছ চুল রেখে দেওয়া।",
+            "en": "Nafi explained the term as shaving areas of the head while leaving tufts elsewhere."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "washroom_clean_with_water",
+      "categoryIds": [
+        "washroom"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "টয়লেট ব্যবহারের পর পানি দিয়ে পরিষ্কার করুন",
+        "en": "Use water to clean yourself after using the toilet"
+      },
+      "practice": {
+        "bn": "প্রস্রাব-পায়খানার পর পানি দিয়ে নিজেকে পরিষ্কার করুন। নবী ﷺ-এর এভাবে পরিষ্কার করার বর্ণনা আছে।",
+        "en": "Use water to clean yourself after relieving yourself, as the Prophet ﷺ is reported to have done."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "150",
+          "url": "https://sunnah.com/bukhari:150",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আনাস (রা.) জানান, প্রয়োজন সারার পর পানি দিয়ে পরিষ্কার করার জন্য নবী ﷺ-এর কাছে পানির পাত্র নেওয়া হতো।",
+            "en": "Anas brought water that the Prophet ﷺ used to clean himself after relieving himself."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "washroom_do_not_urinate_in_standing_water",
+      "categoryIds": [
+        "washroom",
+        "community"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "বদ্ধ পানিতে প্রস্রাব করবেন না",
+        "en": "Keep stagnant water free from urine"
+      },
+      "practice": {
+        "bn": "বদ্ধ পানিতে প্রস্রাব করবেন না, বিশেষ করে মানুষ যে পানি ধোয়ার কাজে ব্যবহার করতে পারে।",
+        "en": "Avoid urinating in standing water, especially where people may use it for washing."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "239",
+          "url": "https://sunnah.com/bukhari:239",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ স্থির পানিতে প্রস্রাব করে পরে সেই পানি দিয়ে ধোয়ার ব্যাপারে নিষেধ করেছেন।",
+            "en": "The Prophet ﷺ forbade urinating in stagnant water and then using it for washing."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "miswak_when_you_enter_home",
+      "categoryIds": [
+        "miswak",
+        "returning_home",
+        "fitrah"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "ঘরে ঢুকে মিসওয়াক করুন",
+        "en": "Use the miswak when you enter your home"
+      },
+      "practice": {
+        "bn": "বাড়িতে ঢুকে মুখ পরিষ্কার করার জন্য মিসওয়াক করুন। নবী ﷺ এমনটি করতেন।",
+        "en": "When you come home, use the miswak to clean your mouth, as the Prophet ﷺ used to do."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "253a",
+          "url": "https://sunnah.com/muslim:253a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আয়িশা (রা.) বলেন, ঘরে ঢুকে নবী ﷺ মিসওয়াক করতেন।",
+            "en": "Aishah said the Prophet ﷺ would use the miswak when he entered his home."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "wudu_wash_heels_completely",
+      "categoryIds": [
+        "wudu_sunnahs"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "ওযুতে গোড়ালিতে পানি পৌঁছান",
+        "en": "Make sure water reaches your heels during wudu"
+      },
+      "practice": {
+        "bn": "ওযুতে পা ধোয়ার সময় গোড়ালি এবং সহজে বাদ পড়ে যায় এমন অংশগুলোতেও পানি পৌঁছান।",
+        "en": "When washing your feet for wudu, make sure water reaches the heels and the parts that are easily missed."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "165",
+          "url": "https://sunnah.com/bukhari:165",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ ওযুতে গোড়ালি শুকনা রেখে দেওয়ার ব্যাপারে মুসল্লিদের সতর্ক করেছেন।",
+            "en": "The Prophet ﷺ warned worshippers about leaving their heels dry during wudu."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "wake_remember_allah_then_make_wudu_and_pray",
+      "categoryIds": [
+        "waking_up",
+        "night_prayer"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "রাতে জেগে আল্লাহকে স্মরণ করুন, ওযু ও নামাজ আদায় করুন",
+        "en": "Follow night waking with remembrance, wudu and prayer"
+      },
+      "practice": {
+        "bn": "নামাজের জন্য রাতে উঠলে আগে আল্লাহকে স্মরণ করুন, তারপর ওযু করে নামাজ পড়ুন।",
+        "en": "When you wake intending to pray, remember Allah, make wudu and then pray."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1142",
+          "url": "https://sunnah.com/bukhari:1142",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ জানান, আল্লাহর যিকির, ওযু ও নামাজ ঘুমের সময় দেওয়া তিনটি গিঁট খুলে দেয়।",
+            "en": "The Prophet ﷺ described how remembering Allah, performing wudu and praying undo three knots tied during sleep."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "wake_during_night_dhikr"
+      ]
+    },
+    {
+      "id": "sleep_do_not_neglect_rest",
+      "categoryIds": [
+        "sleeping_sunnahs",
+        "night_prayer",
+        "family"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "শরীরকে প্রাপ্য বিশ্রাম দিন",
+        "en": "Give your body its share of rest"
+      },
+      "practice": {
+        "bn": "রাতের ইবাদত ও পারিবারিক দায়িত্বের পাশাপাশি যথেষ্ট ঘুমের সময় রেখে রুটিন করুন।",
+        "en": "Make a routine that leaves enough time for sleep alongside night worship and family responsibilities."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5199",
+          "url": "https://sunnah.com/bukhari:5199",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ আবদুল্লাহ ইবন আমর (রা.)-কে রোজা ও নামাজের পাশাপাশি বিশ্রাম নিতে এবং শরীর ও স্ত্রীর হক আদায় করতে বলেন।",
+            "en": "The Prophet ﷺ advised Abdullah ibn Amr to balance fasting and prayer with rest and the rights of his body and spouse."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "eat_value_what_remains_of_your_food",
+      "categoryIds": [
+        "eating_sunnahs"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "সম্ভব হলে নিজের নেওয়া খাবারটুকু শেষ করুন",
+        "en": "Finish the food you took when you reasonably can"
+      },
+      "practice": {
+        "bn": "যতটুকু শেষ করতে পারবেন বলে মনে হয় ততটুকু নিন এবং থালায় থাকা খাবারটুকু শেষ করার চেষ্টা করুন। হাদিস মনে করিয়ে দেয়, খাবারের যেকোনো অংশে বরকত থাকতে পারে।",
+        "en": "Take what you expect to finish and try to eat the food left on your plate. The hadith reminds us that blessing may be in any part of the meal."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "2033a",
+          "url": "https://sunnah.com/muslim:2033a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "জাবির (রা.) জানান, খাবারের কোন অংশে বরকত আছে তা জানা যায় না বলে নবী ﷺ আঙুল বা পাত্রে থাকা খাবারটুকুরও কদর করতে বলেছেন।",
+            "en": "Jabir reported that the Prophet ﷺ encouraged making use of food remaining on one’s fingers or dish, since the location of the blessing is unknown."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "eat_recover_dropped_food_when_clean",
+      "categoryIds": [
+        "eating_sunnahs"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "খাবারের লোকমা পড়ে গেলে নিরাপদ হলে অপচয় করবেন না",
+        "en": "Avoid wasting a fallen bite when it is safe to eat"
+      },
+      "practice": {
+        "bn": "খাবারের লোকমা পরিষ্কার স্থানে পড়ে খাওয়ার উপযোগী থাকলে দৃশ্যমান ময়লা সরিয়ে তা নষ্ট না করার চেষ্টা করুন।",
+        "en": "If a bite drops onto a clean surface and remains safe to eat, remove any visible dirt and avoid wasting it."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "2034",
+          "url": "https://sunnah.com/muslim:2034",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ পড়ে যাওয়া লোকমার ময়লা সরিয়ে বাকি খাবারটুকু খেতে বলেন।",
+            "en": "The Prophet ﷺ instructed people to remove dirt from a dropped bite and eat the remaining food."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "drink_pour_instead_of_drinking_from_a_shared_container",
+      "categoryIds": [
+        "drinking"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "সবার পাত্র থেকে সরাসরি পান না করে কাপে ঢেলে নিন",
+        "en": "Pour a drink into a cup when using a shared container"
+      },
+      "practice": {
+        "bn": "সবার ব্যবহারের পাত্রের মুখে মুখ লাগিয়ে পান না করে নিজের কাপে ঢেলে পান করুন।",
+        "en": "Pour your drink into a cup instead of drinking directly from the mouth of a shared container."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5628",
+          "url": "https://sunnah.com/bukhari:5628",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ পানির মশকের মুখে মুখ লাগিয়ে সরাসরি পান করতে নিষেধ করেছেন।",
+            "en": "The Prophet ﷺ forbade drinking directly from the mouth of a waterskin."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "dress_avoid_walking_in_one_shoe",
+      "categoryIds": [
+        "dressing"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "দুই পায়েই জুতা পরুন অথবা দুটিই খুলুন",
+        "en": "Wear both shoes or remove both"
+      },
+      "practice": {
+        "bn": "হাঁটার সময় একটি জুতা খুলে গেলে নিরাপদে সেটি আবার পরুন অথবা অন্যটিও খুলে ফেলুন।",
+        "en": "If one shoe comes off while you are walking, put it back on or remove the other one too when it is safe to do so."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5856",
+          "url": "https://sunnah.com/bukhari:5856",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ দুই পায়ে জুতা পরতে বা দুটিই খুলতে বলেছেন এবং এক পায়ে জুতা পরে হাঁটতে নিষেধ করেছেন।",
+            "en": "The Prophet ﷺ instructed people to wear both shoes or remove both and avoid walking in only one shoe."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "voluntary_prayer_pause_before_maghrib_if_time_allows",
+      "categoryIds": [
+        "voluntary_prayer",
+        "adhan"
+      ],
+      "type": "voluntary_worship",
+      "title": {
+        "bn": "সময় থাকলে মাগরিবের ফরজের আগে দুই রাকাত নফল পড়ুন",
+        "en": "Consider two voluntary rakʿahs before Maghrib"
+      },
+      "practice": {
+        "bn": "মাগরিবের আযানের পর ইকামতের আগে যথেষ্ট সময় থাকলে দুই রাকাত নফল পড়তে পারেন।",
+        "en": "When there is enough time after the Maghrib adhan and before iqamah, you may pray two voluntary rakʿahs."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1183",
+          "url": "https://sunnah.com/bukhari:1183",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ ইচ্ছুক ব্যক্তিকে মাগরিবের ফরজের আগে নামাজ পড়তে উৎসাহ দেন।",
+            "en": "The Prophet ﷺ encouraged prayer before Maghrib for those who wished to do so."
+          },
+          "relation": "practice"
+        },
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "625",
+          "url": "https://sunnah.com/bukhari:625",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আনাস (রা.) জানান, সাহাবিরা মাগরিবের আযান ও জামাতের মাঝে দুই রাকাত পড়তেন।",
+            "en": "Anas reported that companions prayed two rakʿahs after the Maghrib adhan and before the congregational prayer."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "iqamah_learn_the_reported_forms",
+      "categoryIds": [
+        "iqamah",
+        "adhan"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "নিজ জামাতে অনুসৃত ইকামতের পদ্ধতি শিখুন",
+        "en": "Learn the form of iqamah followed in your congregation"
+      },
+      "practice": {
+        "bn": "আপনার জামাতে শেখানো ইকামতের শব্দগুলো অনুসরণ করুন। হাদিসে বাক্য পুনরাবৃত্তির ভিন্নতাসহ একাধিক পদ্ধতির বর্ণনা আছে।",
+        "en": "Follow the taught wording used by your congregation. Hadith collections report more than one form, including different patterns of repetition."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "605",
+          "url": "https://sunnah.com/bukhari:605",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আনাস (রা.) বিলাল (রা.)-এর ইকামতের পদ্ধতি এবং ‘কাদ কামাতিস সালাহ’-এর ব্যতিক্রম বর্ণনা করেন।",
+            "en": "Anas reported the form taught to Bilal, including an exception for “Qad qamati as-salah.”"
+          },
+          "relation": "practice"
+        },
+        {
+          "collection": {
+            "bn": "জামি আত-তিরমিজি",
+            "en": "Jamiʿ at-Tirmidhi"
+          },
+          "number": "192",
+          "url": "https://sunnah.com/tirmidhi:192",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            },
+            "by": {
+              "bn": "দারুসসালাম",
+              "en": "Darussalam"
+            }
+          },
+          "summary": {
+            "bn": "আবু মাহযুরা (রা.) নবী ﷺ থেকে শেখা আযান ও ইকামতের একটি পদ্ধতি বর্ণনা করেন।",
+            "en": "Abu Mahdhurah reported a form of the adhan and iqamah taught to him by the Prophet ﷺ."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "prayer_praise_allah_on_rising_from_bowing",
+      "categoryIds": [
+        "prayer_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "রুকু থেকে উঠে আল্লাহর প্রশংসা করুন",
+        "en": "Praise Allah on rising from bowing"
+      },
+      "practice": {
+        "bn": "রুকু থেকে ওঠার সময় নামাজে আপনার অবস্থান অনুযায়ী শেখানো প্রশংসার বাক্য পড়ুন। একটি বর্ণিত বাক্য হলো ‘রব্বানা লাকাল হামদ’, অর্থ ‘হে আমাদের রব, যাবতীয় প্রশংসা আপনারই’।",
+        "en": "On rising from ruku, say the prescribed words of praise for your role in the prayer. One reported wording of praise is Rabbana laka al-hamd, meaning, “Our Lord, to You belongs all praise.”"
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "789",
+          "url": "https://sunnah.com/bukhari:789",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আবু হুরায়রা (রা.) রুকু থেকে ওঠার সময় ও সোজা হয়ে দাঁড়িয়ে নবী ﷺ-এর বলা বাক্যগুলো বর্ণনা করেন।",
+            "en": "Abu Hurayrah described the words the Prophet ﷺ said while rising from bowing and after standing upright."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "travel_remember_allah_on_ascents_and_descents",
+      "categoryIds": [
+        "travel"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "সফরে উঁচুতে উঠতে ও নিচে নামতে আল্লাহকে স্মরণ করুন",
+        "en": "Remember Allah while ascending and descending on a journey"
+      },
+      "practice": {
+        "bn": "সফরে উঁচুতে ওঠার সময় ‘আল্লাহু আকবার’ এবং নিচে নামার সময় ‘সুবহানাল্লাহ’ বলুন।",
+        "en": "When ascending on a journey, say Allahu Akbar. When descending, say Subhanallah."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "2993",
+          "url": "https://sunnah.com/bukhari:2993",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "জাবির (রা.) জানান, সফরে ওপরে উঠলে তাঁরা তাকবির বলতেন এবং নিচে নামলে আল্লাহর মহিমা ঘোষণা করতেন।",
+            "en": "Jabir reported that on journeys they said the takbir while going up and glorified Allah while going down."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "travel_use_the_shortened_prayer_when_eligible",
+      "categoryIds": [
+        "travel",
+        "prayer_etiquette"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "সফরে কখন চার রাকাত ফরজ কসর করবেন জেনে নিন",
+        "en": "Learn when to shorten the four-rakʿah prayers on a journey"
+      },
+      "practice": {
+        "bn": "আপনার সফরে কখন কসর প্রযোজ্য তা জেনে নিন। কসরে যোহর, আসর ও এশার চার রাকাত ফরজ দুই রাকাত পড়া হয়। আপনার সফরের ক্ষেত্রে প্রযোজ্য বিস্তারিত বিধান জেনে নিন।",
+        "en": "Learn when your journey qualifies for qasr. In qasr the four-rakʿah obligatory prayers of Dhuhr, Asr and Isha are prayed as two rakʿahs. Ask about the details that apply to your journey."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "687a",
+          "url": "https://sunnah.com/muslim:687a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন আব্বাস (রা.) জানান, মুকিম অবস্থায় চার রাকাতের নামাজ সফরে দুই রাকাত নির্ধারিত হয়েছে।",
+            "en": "Ibn Abbas reported the prescription of two rakʿahs while travelling for prayers that are four rakʿahs when resident."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "travel_return_when_your_work_is_done",
+      "categoryIds": [
+        "travel",
+        "returning_home"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "সফরের কাজ শেষ হলে পরিবারের কাছে ফিরুন",
+        "en": "Return to your household when travel is finished"
+      },
+      "practice": {
+        "bn": "সফরের উদ্দেশ্য পূর্ণ হলে এবং নিরাপদে যাতায়াত সম্ভব হলে অপ্রয়োজনীয় দেরি না করে পরিবারের কাছে ফিরুন।",
+        "en": "When your reason for travel is complete and you can travel safely, make your way home without unnecessary delay."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1804",
+          "url": "https://sunnah.com/bukhari:1804",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ সফরের কষ্টের কথা উল্লেখ করেন এবং সফরের কাজ শেষ হলে পরিবারের কাছে ফিরে যেতে উৎসাহ দেন।",
+            "en": "The Prophet ﷺ mentioned the hardships of travel and encouraged returning to one’s family once the travel purpose was fulfilled."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "travel_pray_two_rakahs_at_mosque_on_return",
+      "categoryIds": [
+        "travel",
+        "returning_home",
+        "voluntary_prayer"
+      ],
+      "type": "voluntary_worship",
+      "title": {
+        "bn": "সফর থেকে ফিরে মসজিদে দুই রাকাত পড়তে পারেন",
+        "en": "Consider two rakʿahs in the mosque after returning from travel"
+      },
+      "practice": {
+        "bn": "সুযোগ হলে সফর থেকে ফিরে মসজিদে যান এবং বসার আগে দুই রাকাত নামাজ পড়ুন।",
+        "en": "If convenient when you return, visit the mosque and pray two rakʿahs before sitting."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "3088",
+          "url": "https://sunnah.com/bukhari:3088",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "কাব ইবন মালিক (রা.) জানান, নবী ﷺ সফর থেকে সকালের দিকে ফিরলে মসজিদে গিয়ে দুই রাকাত নামাজ দিয়ে শুরু করতেন।",
+            "en": "Kaʿb ibn Malik reported that when the Prophet ﷺ returned from travel in the forenoon, he began at the mosque with two rakʿahs."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "home_leave_seek_protection_from_wrongdoing",
+      "categoryIds": [
+        "leaving_home",
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "ঘর থেকে বের হলে অন্যায় করা ও অন্যায়ের শিকার হওয়া থেকে আশ্রয় চান",
+        "en": "Ask Allah for protection from wrongdoing when leaving home"
+      },
+      "practice": {
+        "bn": "বাড়ি থেকে বের হলে নিজে পথভ্রষ্ট হওয়া বা অন্যের কারণে পথভ্রষ্ট হওয়া, ভুল করা বা ভুলে পড়ানো, অন্যায় করা বা অন্যায়ের শিকার হওয়া এবং অজ্ঞতার আচরণ করা বা তার শিকার হওয়া থেকে আল্লাহর আশ্রয় চান।",
+        "en": "When leaving home, ask Allah to protect you from going astray or being led astray, slipping or being made to slip, wronging or being wronged, and acting ignorantly or being treated ignorantly."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সুনান আবু দাউদ",
+            "en": "Sunan Abi Dawud"
+          },
+          "number": "5094",
+          "url": "https://sunnah.com/abudawud:5094",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            },
+            "by": {
+              "bn": "আল-আলবানি",
+              "en": "Al-Albani"
+            }
+          },
+          "summary": {
+            "bn": "উম্মে সালামা (রা.) জানান, তাঁর ঘর থেকে বের হওয়ার সময় নবী ﷺ এসব অনিষ্ট থেকে আল্লাহর আশ্রয় চাইতেন।",
+            "en": "Umm Salamah reported that the Prophet ﷺ sought Allah’s protection from these harms when leaving her home."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "home_leave_with_tawakkul"
+      ]
+    },
+    {
+      "id": "gathering_cover_mouth_when_yawning",
+      "categoryIds": [
+        "gatherings",
+        "personal_care"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "হাই তোলার সময় মুখ ঢাকুন",
+        "en": "Cover your mouth when yawning"
+      },
+      "practice": {
+        "bn": "হাই উঠলে হাত দিয়ে মুখ ঢেকে নিন।",
+        "en": "If you yawn, cover your mouth with your hand."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "2995a",
+          "url": "https://sunnah.com/muslim:2995a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ হাই তোলার সময় হাত দিয়ে মুখ ঢাকতে শিখিয়েছেন।",
+            "en": "The Prophet ﷺ taught people to cover the mouth with the hand when yawning."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "ghusl_wet_the_roots_when_hair_is_braided",
+      "categoryIds": [
+        "ghusl"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "বেণি করা চুলে গোসলের বিধানটি জেনে নিন",
+        "en": "Learn the guidance on braided hair for ghusl"
+      },
+      "practice": {
+        "bn": "জানাবাতের গোসলে উম্মে সালামা (রা.)-কে নবী ﷺ বেণি বাঁধা রেখেই মাথায় পানি ঢালতে ও শরীর ধুতে অনুমতি দেন। পানি মাথার ত্বকে পৌঁছায় কি না খেয়াল করুন।",
+        "en": "For ghusl after janabah, the Prophet ﷺ permitted Umm Salamah to keep her braids tied while pouring water over her head and washing her body. Make sure water reaches the scalp."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "330a",
+          "url": "https://sunnah.com/muslim:330a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "উম্মে সালামা (রা.) জানাবাতের গোসলে বেণি খুলতে হবে কি না জানতে চান। নবী ﷺ জানান, মাথায় তিনবার পানি ঢেলে পানি দিয়ে গোসল করাই যথেষ্ট।",
+            "en": "Umm Salamah asked if she needed to undo the braids for ghusl after janabah. The Prophet ﷺ told her that pouring water over the head three times and washing with water was sufficient."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "tayammum_use_when_water_is_unavailable",
+      "categoryIds": [
+        "tayammum"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "পানি পাওয়া না গেলে তায়াম্মুমের বিধান অনুসরণ করুন",
+        "en": "Use tayammum when water cannot be found"
+      },
+      "practice": {
+        "bn": "পবিত্রতা অর্জন করতে হবে কিন্তু পানি পাওয়া যাচ্ছে না—এমন অবস্থায় তায়াম্মুম করার পদ্ধতি জেনে নিন। সূরা মায়িদায় এ ছাড় ও কী মাসেহ করতে হবে তা বলা হয়েছে।",
+        "en": "If you need ritual purification and cannot find water, learn how to use tayammum. Surah al-Ma’idah describes the concession and what to wipe."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "334",
+          "url": "https://sunnah.com/bukhari:334",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আয়িশা (রা.) জানান, সফরের একদল মানুষের কাছে পানি না থাকলে তায়াম্মুমের অনুমতি নাজিল হয় এবং তাঁরা তায়াম্মুম করেন।",
+            "en": "Aishah related that when a travelling party had no water, the revelation permitting tayammum came and the people performed it."
+          },
+          "relation": "practice"
+        }
+      ],
+      "quranReferences": [
+        {
+          "surah": 5,
+          "ayah": 6,
+          "relation": "practice",
+          "url": "https://quran.com/5/6"
+        }
+      ],
+      "relatedEntryIds": [
+        "tayammum_wipe_face_and_hands"
+      ]
+    },
+    {
+      "id": "after_prayer_use_the_33_33_34_variant",
+      "categoryIds": [
+        "after_prayer"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "ফরজ নামাজের পর ৩৩–৩৩–৩৪ যিকিরের পদ্ধতিটি শিখুন",
+        "en": "Learn the 33–33–34 remembrance after obligatory prayer"
+      },
+      "practice": {
+        "bn": "একটি বর্ণিত পদ্ধতি হলো ফরজ নামাজের পর ৩৩ বার ‘সুবহানাল্লাহ’, ৩৩ বার ‘আলহামদুলিল্লাহ’ ও ৩৪ বার ‘আল্লাহু আকবার’ বলা।",
+        "en": "One reported way is to say Subhanallah 33 times, Alhamdulillah 33 times, and Allahu Akbar 34 times after an obligatory prayer."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "596a",
+          "url": "https://sunnah.com/muslim:596a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "কাব ইবন উজরা (রা.) ফরজ নামাজের পর যিকিরের এই বাক্য ও সংখ্যা বর্ণনা করেন।",
+            "en": "Kaʿb ibn Ujrah reported this count and wording for remembrance after the obligatory prayer."
+          },
+          "relation": "practice"
+        }
+      ],
+      "relatedEntryIds": [
+        "after_salah_tasbih"
+      ]
+    },
+    {
+      "id": "fast_avoid_singling_out_friday",
+      "categoryIds": [
+        "fasting",
+        "friday"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "শুধু শুক্রবারকে নফল রোজার জন্য বেছে নেবেন না",
+        "en": "Avoid singling out Friday for a voluntary fast"
+      },
+      "practice": {
+        "bn": "বিশেষভাবে শুক্রবার নফল রোজার জন্য বেছে নিলে আগের দিন বা পরের দিনও রোজা রাখুন। নিয়মিত রোজার দিন ঘটনাক্রমে শুক্রবার পড়লে তা আলাদা বিষয়।",
+        "en": "When choosing a voluntary fast specifically for Friday, join it with a fast the day before or the day after. A Friday that coincides with an established fasting habit is a separate case."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1986",
+          "url": "https://sunnah.com/bukhari:1986",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "শুক্রবার জুওয়াইরিয়া (রা.) রোজায় থাকলে নবী ﷺ তাঁকে জিজ্ঞেস করেন, তিনি বৃহস্পতিবার রোজা রেখেছেন কি না বা শনিবার রাখবেন কি না।",
+            "en": "The Prophet ﷺ asked Juwayriyah, who was fasting on Friday, whether she had fasted on Thursday or intended to fast on Saturday."
+          },
+          "relation": "practice"
+        },
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1144b",
+          "url": "https://sunnah.com/muslim:1144b",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "আরেকটি বর্ণনায় নিয়মিত রোজার দিন শুক্রবার পড়লে ছাড় দেওয়া হয়েছে।",
+            "en": "Another report exempts a fast that happens to fall on Friday as part of one’s established fasting practice."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "friday_pray_after_jumuah",
+      "categoryIds": [
+        "friday",
+        "voluntary_prayer"
+      ],
+      "type": "voluntary_worship",
+      "title": {
+        "bn": "জুমার পর বর্ণিত নামাজগুলো শিখুন",
+        "en": "Learn the reported prayers after Jumuʿah"
+      },
+      "practice": {
+        "bn": "জুমার পর চার রাকাত পড়ার কথা আছে এবং নবী ﷺ-এর বাড়িতে দুই রাকাত পড়ার বর্ণনাও আছে। আপনার মাযহাবে শেখানো পদ্ধতি জেনে নিন।",
+        "en": "Reports mention four rakʿahs after Jumuʿah and the Prophet’s practice of two at home. Learn the pattern taught in your school of law."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "881a",
+          "url": "https://sunnah.com/muslim:881a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ জুমার পর নামাজ পড়তে চাইলে চার রাকাত পড়তে নির্দেশ দেন।",
+            "en": "The Prophet ﷺ instructed those who prayed after Jumuʿah to pray four rakʿahs."
+          },
+          "relation": "practice"
+        },
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "882a",
+          "url": "https://sunnah.com/muslim:882a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন উমর (রা.) বলেন, নবী ﷺ জুমার পর বাড়িতে দুই রাকাত পড়তেন।",
+            "en": "Ibn Umar said that the Prophet ﷺ prayed two rakʿahs at home after Jumuʿah."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "marriage_accept_a_walimah_invitation",
+      "categoryIds": [
+        "marriage",
+        "community"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "ওলিমার দাওয়াতে সাড়া দিন",
+        "en": "Respond to a wedding feast invitation"
+      },
+      "practice": {
+        "bn": "ওলিমার দাওয়াত পেলে সৌজন্যের সঙ্গে উত্তর দিন এবং সম্ভব হলে উপস্থিত হোন।",
+        "en": "When you receive a wedding feast invitation, respond courteously and attend if you can."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5173",
+          "url": "https://sunnah.com/bukhari:5173",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ ওলিমার দাওয়াত পেলে তা গ্রহণ করতে বলেছেন।",
+            "en": "The Prophet ﷺ instructed people who had been invited to a wedding banquet to accept the invitation."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hajj_prepare_by_learning_the_rites",
+      "categoryIds": [
+        "hajj_umrah"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "সফরের আগে হজের আমলগুলো শিখুন",
+        "en": "Learn the rites of Hajj before you travel"
+      },
+      "practice": {
+        "bn": "যে ধরনের হজ করবেন, সফরের আগে তার আমলগুলো শিখুন। নিজের পরিস্থিতি ও দলের জন্য প্রযোজ্য নির্দেশনা অনুসরণ করুন।",
+        "en": "Before setting out, learn the rites for the type of Hajj you plan to perform. Follow instructions appropriate to your situation and group."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1297",
+          "url": "https://sunnah.com/muslim:1297",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "জাবির (রা.) জানান, নবী ﷺ হাজিদের তাঁর কাছ থেকে হজের আমল শিখতে বলেছেন।",
+            "en": "Jabir reported that the Prophet ﷺ told pilgrims to learn their rites from him."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hajj_enter_ihram_at_the_applicable_miqat",
+      "categoryIds": [
+        "hajj_umrah",
+        "travel"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "আপনার পথের প্রযোজ্য মিকাত অতিক্রমের আগেই ইহরাম গ্রহণ করুন",
+        "en": "Enter ihram by the miqat that applies to your route"
+      },
+      "practice": {
+        "bn": "সফরের আগে আপনার পথের জন্য কোন মিকাত প্রযোজ্য তা জেনে নিন। হজ বা উমরাহর উদ্দেশ্যে গেলে প্রযোজ্য সীমা অতিক্রমের আগেই ইহরাম গ্রহণ করুন।",
+        "en": "Find out which miqat applies to your route before travelling. Pilgrims entering for Hajj or Umrah should enter ihram by their applicable boundary."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1524",
+          "url": "https://sunnah.com/bukhari:1524",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন আব্বাস (রা.) হজ বা উমরাহর উদ্দেশ্যে বিভিন্ন পথ দিয়ে আসা ব্যক্তিদের জন্য নবী ﷺ নির্ধারিত মিকাতগুলোর কথা বর্ণনা করেন।",
+            "en": "Ibn Abbas reported the boundaries the Prophet ﷺ specified for those travelling through them with the intention of Hajj or Umrah."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hajj_recite_talbiyah",
+      "categoryIds": [
+        "hajj_umrah"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "ইহরামে তালবিয়া পড়ুন",
+        "en": "Recite the talbiyah in ihram"
+      },
+      "practice": {
+        "bn": "বলুন, ‘লাব্বাইক আল্লাহুম্মা লাব্বাইক। লাব্বাইকা লা শারিকা লাকা লাব্বাইক। ইন্নাল হামদা ওয়ান-নিয়ামাতা লাকা ওয়াল-মুলক, লা শারিকা লাক।’ এর মাধ্যমে আল্লাহর ডাকে সাড়া দিন এবং তাঁর কোনো শরিক নেই বলে স্বীকার করুন।",
+        "en": "Say, “Labbayka Allahumma labbayk. Labbayka la sharika laka labbayk. Inna al-hamda wan-niʿmata laka wal-mulk, la sharika lak.” Respond to Allah’s call and affirm that He has no partner."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1549",
+          "url": "https://sunnah.com/bukhari:1549",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন উমর (রা.) নবী ﷺ-এর তালবিয়ার বাক্যগুলো বর্ণনা করেন।",
+            "en": "Ibn Umar transmitted the wording of the Prophet’s talbiyah."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hajj_pray_after_tawaf",
+      "categoryIds": [
+        "hajj_umrah"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "তাওয়াফের পর দুই রাকাত পড়ুন",
+        "en": "Offer two rakʿahs after tawaf"
+      },
+      "practice": {
+        "bn": "তাওয়াফ শেষে জায়গা পাওয়া যায় এমন স্থানে দুই রাকাত পড়ুন। অন্য হাজিদের চলার পথ খোলা রাখুন।",
+        "en": "After tawaf, pray two rakʿahs where there is space. Keep the path of other pilgrims clear."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1218a",
+          "url": "https://sunnah.com/muslim:1218a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "জাবির (রা.) জানান, নবী ﷺ তাওয়াফের পর মাকামে ইবরাহিমকে তাঁর ও কাবার মাঝখানে রেখে দুই রাকাত পড়েন।",
+            "en": "Jabir described the Prophet ﷺ making tawaf and then praying two rakʿahs with Maqam Ibrahim between him and the Kaʿbah."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hajj_begin_sai_at_safa",
+      "categoryIds": [
+        "hajj_umrah"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "সাফা থেকে সাঈ শুরু করুন",
+        "en": "Begin saʿi at Safa"
+      },
+      "practice": {
+        "bn": "সাফা থেকে সাঈ শুরু করে সাফা ও মারওয়ার মধ্যকার পথ অনুসরণ করুন। বর্ণনায় দুই স্থানে আল্লাহর যিকির ও দোয়া করার কথা আছে।",
+        "en": "Begin saʿi at Safa and follow the route between Safa and Marwah. The report describes remembering Allah and making dua at the two points."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1218a",
+          "url": "https://sunnah.com/muslim:1218a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "জাবির (রা.)-এর বর্ণনায় নবী ﷺ সাফা থেকে শুরু করেন এবং মারওয়াতেও যিকির ও দোয়া করেন।",
+            "en": "In Jabir’s account, the Prophet ﷺ began at Safa and repeated his remembrance and supplication at Marwah."
+          },
+          "relation": "practice"
+        }
+      ],
+      "quranReferences": [
+        {
+          "surah": 2,
+          "ayah": 158,
+          "relation": "practice",
+          "url": "https://quran.com/2/158"
+        }
+      ]
+    },
+    {
+      "id": "hajj_make_farewell_tawaf_when_required",
+      "categoryIds": [
+        "hajj_umrah"
+      ],
+      "type": "worship_practice",
+      "title": {
+        "bn": "প্রযোজ্য হলে বিদায়ী তাওয়াফ করুন",
+        "en": "Make the farewell tawaf when it applies to you"
+      },
+      "practice": {
+        "bn": "হজের পর মক্কা ছাড়ার সময় আপনার জন্য প্রযোজ্য হলে বিদায়ী তাওয়াফ করুন। বর্ণনায় ঋতুস্রাব চলছিল এমন নারীদের জন্য ছাড়ের কথা আছে।",
+        "en": "When leaving Makkah after Hajj, perform the farewell tawaf if required in your case. The report mentions an exemption for menstruating women."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1755",
+          "url": "https://sunnah.com/bukhari:1755",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "ইবন আব্বাস (রা.) জানান, বিদায়ের আগে সর্বশেষ আমল হিসেবে কাবায় যেতে বলা হয়েছিল এবং ঋতুস্রাব চলছিল এমন নারীদের ছাড় দেওয়া হয়েছিল।",
+            "en": "Ibn Abbas said pilgrims were instructed to make the House their last stop before departure, with an exemption for menstruating women."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "quran_review_what_you_have_memorized",
+      "categoryIds": [
+        "quran_learning"
+      ],
+      "type": "quran_recitation",
+      "title": {
+        "bn": "কুরআনের মুখস্থ অংশ নিয়মিত ঝালাই করুন",
+        "en": "Review what you have memorized from the Quran"
+      },
+      "practice": {
+        "bn": "মুখস্থ করা সূরা ও আয়াতগুলো নিয়মিত আবার পড়ুন। ধরে রাখতে পারবেন এমন একটি ঝালাইয়ের রুটিন করুন।",
+        "en": "Return regularly to the surahs and verses you have memorized. Keep a review schedule you can maintain."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5033",
+          "url": "https://sunnah.com/bukhari:5033",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ কুরআন বারবার পড়তে উৎসাহ দেন এবং মুখস্থ অংশ দ্রুত ভুলে যাওয়া বোঝাতে বাঁধা উটের উদাহরণ দেন।",
+            "en": "The Prophet ﷺ urged people to keep reviewing the Quran and used a tethered camel as an example of how quickly memorized material can slip away."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "quran_recite_al_baqarah_at_home",
+      "categoryIds": [
+        "quran_learning",
+        "family"
+      ],
+      "type": "quran_recitation",
+      "title": {
+        "bn": "ঘরে সূরা বাকারা তিলাওয়াত করুন",
+        "en": "Recite Surah al-Baqarah at home"
+      },
+      "practice": {
+        "bn": "ঘরে সূরা বাকারা তিলাওয়াতের জন্য সময় রাখুন।",
+        "en": "Make time to recite Surah al-Baqarah at home."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "780",
+          "url": "https://sunnah.com/muslim:780",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ বলেন, যে ঘরে সূরা বাকারা তিলাওয়াত করা হয়, শয়তান সে ঘর থেকে পালিয়ে যায়।",
+            "en": "The Prophet ﷺ described Shaytan fleeing a home where Surah al-Baqarah is recited."
+          },
+          "relation": "practice"
+        }
+      ],
+      "quranReadingLinks": [
+        {
+          "featureId": "quran",
+          "surah": 2,
+          "ayah": 1,
+          "endAyah": 286,
+          "url": "https://quran.com/2"
+        }
+      ]
+    },
+    {
+      "id": "charity_give_discreetly",
+      "categoryIds": [
+        "charity"
+      ],
+      "type": "voluntary_worship",
+      "title": {
+        "bn": "গোপনে সদকা করুন",
+        "en": "Give charity discreetly"
+      },
+      "practice": {
+        "bn": "ব্যক্তিগতভাবে দান করার সময় গ্রহীতার মর্যাদা রক্ষা করুন এবং সম্ভব হলে গোপনে দিন।",
+        "en": "When giving personally, preserve the recipient’s dignity and give discreetly when possible."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1423",
+          "url": "https://sunnah.com/bukhari:1423",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ এমন ব্যক্তির প্রশংসা করেন, যিনি এত গোপনে সদকা দেন যে তাঁর অন্য হাতও যেন তা জানতে পারে না।",
+            "en": "The Prophet ﷺ praised the person who gives charity so discreetly that even their other hand would not know what they gave."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "charity_support_widows_and_people_in_need",
+      "categoryIds": [
+        "charity",
+        "community"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "বিধবা ও অভাবী মানুষের পাশে দাঁড়ান",
+        "en": "Support widows and people in financial hardship"
+      },
+      "practice": {
+        "bn": "বিধবা ও অভাবী মানুষের সম্মতি ও প্রয়োজন অনুযায়ী কাজের মাধ্যমে বা অর্থ দিয়ে সাহায্য করুন।",
+        "en": "Offer practical or financial help to widows and people who are struggling, with their consent and according to what they need."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "5353",
+          "url": "https://sunnah.com/bukhari:5353",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ বিধবা ও অভাবীদের সহায়তায় কাজ করা ব্যক্তির জন্য বড় সওয়াবের কথা বলেছেন।",
+            "en": "The Prophet ﷺ spoke of great reward for the person who works to support widows and people in need."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "livelihood_value_work_and_earnings",
+      "categoryIds": [
+        "livelihood"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "নিজের পরিশ্রমের উপার্জনকে মূল্য দিন",
+        "en": "Value earnings from your own work"
+      },
+      "practice": {
+        "bn": "নিজের কাজের মাধ্যমে জীবিকা অর্জন করুন এবং সৎ উপার্জনের পরিশ্রমকে মূল্য দিন।",
+        "en": "Seek a livelihood through your work and value the effort it takes to earn honestly."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "2072",
+          "url": "https://sunnah.com/bukhari:2072",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ নিজের পরিশ্রমের উপার্জনের প্রশংসা করেন এবং দাউদ (আ.)-এর উদাহরণ দেন।",
+            "en": "The Prophet ﷺ praised earnings from one’s own work and mentioned Prophet Dawud as an example."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "weather_ask_rain_to_fall_around_you",
+      "categoryIds": [
+        "weather",
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "অতিরিক্ত বৃষ্টি অন্যদিকে সরিয়ে দেওয়ার দোয়া করুন",
+        "en": "Ask Allah to redirect excessive rain"
+      },
+      "practice": {
+        "bn": "বৃষ্টিতে ক্ষতি হলে আল্লাহর কাছে দোয়া করুন, ক্ষতি হচ্ছে এমন জায়গায় না হয়ে আশপাশে যেন বৃষ্টি হয়।",
+        "en": "When rain is causing harm, ask Allah to let it fall around you instead of where it is causing damage."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ আল-বুখারি",
+            "en": "Sahih al-Bukhari"
+          },
+          "number": "1013",
+          "url": "https://sunnah.com/bukhari:1013",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "অতিরিক্ত বৃষ্টিতে ক্ষতির কথা জানানো হলে নবী ﷺ তাঁদের আশপাশে বৃষ্টি দেওয়ার জন্য আল্লাহর কাছে দোয়া করেন।",
+            "en": "When people complained of damage from heavy rain, the Prophet ﷺ asked Allah to send the rain around them."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "livelihood_give_more_time_to_a_struggling_debtor",
+      "categoryIds": [
+        "livelihood",
+        "charity"
+      ],
+      "type": "etiquette",
+      "title": {
+        "bn": "অসচ্ছল ঋণগ্রহীতাকে সময় দিন বা ঋণ কমিয়ে দিন",
+        "en": "Give a struggling debtor more time or reduce the debt"
+      },
+      "practice": {
+        "bn": "কেউ সত্যিই অসচ্ছলতার কারণে সময়মতো আপনার ঋণ শোধ করতে না পারলে তাঁকে আরও সময় দিন বা সামর্থ্য অনুযায়ী ঋণের কিছু অংশ মাফ করুন।",
+        "en": "If someone owes you money and is genuinely unable to repay on time, consider granting more time or forgiving what you can."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1563a",
+          "url": "https://sunnah.com/muslim:1563a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "নবী ﷺ ঋণ শোধে অক্ষম ব্যক্তিকে সময় দিতে বা ঋণ মাফ করতে উৎসাহ দিয়েছেন।",
+            "en": "The Prophet ﷺ encouraged giving respite to someone unable to repay or remitting the debt."
+          },
+          "relation": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hajj_devote_time_to_dua_at_arafah",
+      "categoryIds": [
+        "hajj_umrah",
+        "dua_etiquette"
+      ],
+      "type": "remembrance",
+      "title": {
+        "bn": "আরাফায় ইবাদত ও দোয়ার জন্য সময় রাখুন",
+        "en": "Make time for worship and dua at Arafah"
+      },
+      "practice": {
+        "bn": "আরাফায় অবস্থানের সময় কিবলামুখী হয়ে আল্লাহকে স্মরণ ও দোয়া করার জন্য সময় রাখুন। ফেরার সময় দলের নির্ধারিত ব্যবস্থা অনুসরণ করুন।",
+        "en": "During the stay at Arafah, set aside time to face the qiblah, remember Allah and make dua. Follow your group’s arrangements for departure."
+      },
+      "hadith": [
+        {
+          "collection": {
+            "bn": "সহিহ মুসলিম",
+            "en": "Sahih Muslim"
+          },
+          "number": "1218a",
+          "url": "https://sunnah.com/muslim:1218a",
+          "grading": {
+            "status": "sahih",
+            "label": {
+              "bn": "সহিহ",
+              "en": "Sahih"
+            }
+          },
+          "summary": {
+            "bn": "জাবির (রা.) জানান, নবী ﷺ আরাফায় তাঁর অবস্থানের স্থানে কিবলামুখী হন এবং সূর্যাস্ত পর্যন্ত সেখানে থাকেন।",
+            "en": "Jabir reported that the Prophet ﷺ faced the qiblah at his place of stay in Arafah and remained there until sunset."
+          },
+          "relation": "practice"
+        }
+      ]
     }
   ],
   "integration": {
-    "entryCount": 135,
-    "categoryCount": 37,
+    "entryCount": 247,
+    "categoryCount": 51,
     "bookmarkKey": "entries[].id",
     "categoryOrderKey": "categories[].entryIds",
     "duaCatalogFeatureId": "dua",

@@ -23,7 +23,9 @@ class SunnahCatalogLoader {
   }
 
   Future<SunnahCatalog> _load() async {
-    final raw = await _bundle.loadString(assetPath);
+    // Retain the parsed catalog only. This avoids keeping a second full copy
+    // of the growing JSON and lets a retry read again after a failed parse.
+    final raw = await _bundle.loadString(assetPath, cache: false);
     return compute(_parseSunnahCatalog, raw, debugLabel: 'sunnah-catalog');
   }
 }

@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:quran_for_all/core/localization/l10n_extensions.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/views/daily_reminders/daily_hadith_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/daily_tracker/daily_tracker_full_view.dart';
 import 'package:quran_for_all/presentation/views/dashboard/dashboard_view.dart';
-import 'package:quran_for_all/presentation/views/prayer/eid_prayer/eid_prayer_view.dart';
+import 'package:quran_for_all/presentation/views/dashboard/dhikr_reminders/dhikr_reminders_view.dart';
+import 'package:quran_for_all/presentation/viewmodels/dhikr_reminders/dhikr_reminders_viewmodel.dart';
+import 'package:quran_for_all/services/dhikr_reminders/dhikr_reminder_service.dart';
+import 'package:quran_for_all/services/notifications/app_notification_coordinator.dart';
+import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_shortcut_catalog.dart';
 import 'package:quran_for_all/presentation/widgets/common/app_icon_grid_section.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_daily_reminder_button.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/dashboard_view/dashboard_forbidden_time_row.dart';
@@ -80,12 +87,30 @@ void main() {
   });
 
   testWidgets('duas and tools share one Explore grid', (tester) async {
+    SharedPreferences.setMockInitialValues({});
+    final reminders = DhikrRemindersViewModel(
+      DhikrReminderService(AppNotificationCoordinator()),
+    );
+    addTearDown(reminders.dispose);
     await tester.pumpWidget(
-      DashboardTestApp(state: state, home: const DashboardView()),
+      ChangeNotifierProvider<DhikrRemindersViewModel>.value(
+        value: reminders,
+        child: DashboardTestApp(
+          state: state,
+          home: Builder(
+            builder: (context) => Scaffold(
+              body: AppIconGridSection(
+                title: context.l10n.dashboardSectionExplore,
+                items: dashboardActions(context),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
     await tester.pumpAndSettle();
 
-    expect(find.byType(AppIconGridSection), findsNWidgets(2));
+    expect(find.byType(AppIconGridSection), findsOneWidget);
     final section = tester.widget<AppIconGridSection>(
       find.byWidgetPredicate(
         (widget) => widget is AppIconGridSection && widget.title == 'Explore',
@@ -95,17 +120,15 @@ void main() {
     expect(section.title, 'Explore');
     expect(
       section.items.map((item) => item.label),
-      contains('Eid Prayer Guide'),
+      contains('Dhikr Reminders'),
     );
     expect(
       section.items.map((item) => item.label),
       isNot(contains('Sunnah & Du\'a')),
     );
-    section.items
-        .firstWhere((item) => item.label == 'Eid Prayer Guide')
-        .onTap();
+    section.items.firstWhere((item) => item.label == 'Dhikr Reminders').onTap();
     await tester.pumpAndSettle();
-    expect(find.byType(EidPrayerView), findsOneWidget);
+    expect(find.byType(DhikrRemindersView), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
 

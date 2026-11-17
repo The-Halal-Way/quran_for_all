@@ -9,7 +9,7 @@ import '../../../views/dashboard/hijri_calendar/hijri_calendar_view.dart';
 import '../../../views/dashboard/tasbeeh/tasbeeh_view.dart';
 import '../../../views/dashboard/zakat_calculator/zakat_calculator_view.dart';
 import '../../../views/dashboard/ramadan/ramadan_view.dart';
-import '../../../views/prayer/eid_prayer/eid_prayer_view.dart';
+import '../../../views/dashboard/dhikr_reminders/dhikr_reminders_view.dart';
 import '../../../views/sunnah_dua/duah/daily_duah_view.dart';
 import '../../../views/sunnah_dua/duah/duah_ninty_nine_view.dart';
 import '../../common/app_icon_grid_section.dart';
@@ -41,11 +41,11 @@ List<AppIconGridItem> dashboardActions(BuildContext context) {
       onTap: () => pushDashboardPage(context, const DuahNintyNineView()),
     ),
     AppIconGridItem(
-      icon: CupertinoIcons.moon_stars,
-      label: context.l10n.prayerReferenceEidActionTitle,
-      description: context.l10n.prayerReferenceEidActionSubtitle,
+      icon: CupertinoIcons.bell_fill,
+      label: context.l10n.dhikrRemindersTitle,
+      description: context.l10n.dhikrRemindersSubtitle,
       accent: dark ? MyColors.tertiaryDark : light.coral,
-      onTap: () => pushDashboardPage(context, const EidPrayerView()),
+      onTap: () => pushDashboardPage(context, const DhikrRemindersView()),
     ),
     AppIconGridItem(
       icon: CupertinoIcons.calendar,

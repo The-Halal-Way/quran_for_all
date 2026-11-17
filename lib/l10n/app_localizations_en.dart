@@ -5040,7 +5040,43 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sunnahLibraryTitle => 'Sunnah library';
 
   @override
-  String get sunnahLibrarySubtitle => 'Explore 135 practices, manners and acts of worship by category.';
+  String get sunnahLibrarySubtitle => 'Explore practices, manners and acts of worship by category.';
+
+  @override
+  String sunnahLibrarySummary(String practices, String categories) {
+    return '$practices practices · $categories categories';
+  }
+
+  @override
+  String sunnahGradeBy(String grade, String scholar) {
+    return '$grade · Graded by $scholar';
+  }
+
+  @override
+  String sunnahOriginalCollection(String source) {
+    return 'Original collection: $source';
+  }
+
+  @override
+  String get sunnahQuranReferences => 'Quran references';
+
+  @override
+  String get sunnahRelationAlternative => 'Another reported practice';
+
+  @override
+  String get sunnahRelationCalendarException => 'Calendar exception';
+
+  @override
+  String get sunnahRelationWording => 'Source for the wording';
+
+  @override
+  String get sunnahRelationSupporting => 'Supporting reference';
+
+  @override
+  String get sunnahRelationCongregation => 'Congregational context';
+
+  @override
+  String get sunnahRelationPilgrim => 'Pilgrimage context';
 
   @override
   String get sunnahLibrarySearchHint => 'Search Sunnah, practice or source';
@@ -5102,4 +5138,101 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sunnahOccasion => 'Occasion and repetition';
+
+  @override
+  String get dhikrRemindersTitle => 'Dhikr Reminders';
+
+  @override
+  String get dhikrRemindersSubtitle => 'Make space for Durud and Istighfar throughout your day.';
+
+  @override
+  String get dhikrDurudTitle => 'Durud';
+
+  @override
+  String get dhikrIstighfarTitle => 'Istighfar';
+
+  @override
+  String get dhikrDurudDescription => 'Send blessings upon Prophet Muhammad ﷺ.';
+
+  @override
+  String get dhikrIstighfarDescription => 'Pause and ask Allah for forgiveness.';
+
+  @override
+  String get dhikrDurudNotification => 'Take a moment to send blessings upon Prophet Muhammad ﷺ.';
+
+  @override
+  String get dhikrIstighfarNotification => 'Take a moment to seek Allah’s forgiveness. Astaghfirullah.';
+
+  @override
+  String get dhikrIntervalTitle => 'Reminder interval';
+
+  @override
+  String get dhikrIntervalHelp => 'Choose the gap between notifications. The first reminder arrives after this interval. Changing an active reminder restarts its interval.';
+
+  @override
+  String dhikrMinutes(String count) {
+    return '$count min';
+  }
+
+  @override
+  String dhikrEveryMinutes(String count) {
+    return 'Every $count minutes';
+  }
+
+  @override
+  String get dhikrCustomMinutes => 'Custom interval in minutes';
+
+  @override
+  String get dhikrIntervalInvalid => 'Enter 1–1440 minutes.';
+
+  @override
+  String get dhikrApply => 'Apply';
+
+  @override
+  String get dhikrSoundTitle => 'Notification sound';
+
+  @override
+  String get dhikrSoundHelp => 'Preview a demo tone, then choose the sound for this reminder.';
+
+  @override
+  String get dhikrSoundGlass => 'Glass';
+
+  @override
+  String get dhikrSoundBell => 'Bell';
+
+  @override
+  String get dhikrSoundChime => 'Chime';
+
+  @override
+  String get dhikrPreview => 'Preview sound';
+
+  @override
+  String get dhikrPreviewFailed => 'This sound could not be played.';
+
+  @override
+  String get dhikrTestNotification => 'Send test notification';
+
+  @override
+  String get dhikrTestSent => 'Test notification sent. Check your notifications.';
+
+  @override
+  String get dhikrTestFailed => 'The test notification could not be sent. Please try again.';
+
+  @override
+  String get dhikrPermissionRequired => 'Allow notifications to receive reminders. If permission is blocked, enable it in notification settings.';
+
+  @override
+  String get dhikrNotificationSettings => 'Notification settings';
+
+  @override
+  String get dhikrLoadFailed => 'Reminder settings could not be loaded. Please retry.';
+
+  @override
+  String get dhikrSaveFailed => 'The reminder could not be updated. Please try again.';
+
+  @override
+  String get dhikrUnsupported => 'Dhikr reminders are available on Android and iPhone.';
+
+  @override
+  String get dhikrTimingNotice => 'Reminders continue while the app is closed. Battery-saving settings may delay delivery. Notification volume, silent mode and Do Not Disturb control whether sounds are heard.';
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+        D41000000000000000000001 /* reminder_glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = D41000000000000000000011 /* reminder_glass.wav */; };
+        D41000000000000000000002 /* reminder_bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = D41000000000000000000012 /* reminder_bell.wav */; };
+        D41000000000000000000003 /* reminder_chime.wav in Resources */ = {isa = PBXBuildFile; fileRef = D41000000000000000000013 /* reminder_chime.wav */; };
 		EA11B0000000000000000001 /* PrayerWidgetConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000001 /* PrayerWidgetConstants.swift */; };
 		EA11B0000000000000000002 /* PrayerWidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000002 /* PrayerWidgetSnapshot.swift */; };
 		EA11B0000000000000000003 /* PrayerWidgetDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11D0000000000000000003 /* PrayerWidgetDateFormatter.swift */; };
@@ -76,6 +79,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+        D41000000000000000000011 /* reminder_glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ReminderSounds/reminder_glass.wav; sourceTree = "<group>"; };
+        D41000000000000000000012 /* reminder_bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ReminderSounds/reminder_bell.wav; sourceTree = "<group>"; };
+        D41000000000000000000013 /* reminder_chime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ReminderSounds/reminder_chime.wav; sourceTree = "<group>"; };
 		EA11D0000000000000000001 /* PrayerWidgetConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetConstants.swift; sourceTree = "<group>"; };
 		EA11D0000000000000000002 /* PrayerWidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetSnapshot.swift; sourceTree = "<group>"; };
 		EA11D0000000000000000003 /* PrayerWidgetDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetDateFormatter.swift; sourceTree = "<group>"; };
@@ -207,6 +213,9 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+                D41000000000000000000011 /* reminder_glass.wav */,
+                D41000000000000000000012 /* reminder_bell.wav */,
+                D41000000000000000000013 /* reminder_chime.wav */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -380,6 +389,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+                D41000000000000000000001 /* reminder_glass.wav in Resources */,
+                D41000000000000000000002 /* reminder_bell.wav in Resources */,
+                D41000000000000000000003 /* reminder_chime.wav in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,

@@ -5033,7 +5033,43 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sunnahLibraryTitle => 'সুন্নাহ লাইব্রেরি';
 
   @override
-  String get sunnahLibrarySubtitle => 'বিভাগ অনুযায়ী ১৩৫টি সুন্নাহ, আদব ও ইবাদতের আমল দেখুন।';
+  String get sunnahLibrarySubtitle => 'বিভাগ অনুযায়ী সুন্নাহ, আদব ও ইবাদতের আমল দেখুন।';
+
+  @override
+  String sunnahLibrarySummary(String practices, String categories) {
+    return '$practicesটি আমল · $categoriesটি বিভাগ';
+  }
+
+  @override
+  String sunnahGradeBy(String grade, String scholar) {
+    return '$grade · মান নির্ধারণ করেছেন $scholar';
+  }
+
+  @override
+  String sunnahOriginalCollection(String source) {
+    return 'মূল সংকলন: $source';
+  }
+
+  @override
+  String get sunnahQuranReferences => 'কুরআনের সূত্র';
+
+  @override
+  String get sunnahRelationAlternative => 'অন্য একটি বর্ণিত আমল';
+
+  @override
+  String get sunnahRelationCalendarException => 'তারিখসংক্রান্ত ব্যতিক্রম';
+
+  @override
+  String get sunnahRelationWording => 'বাক্যটির সূত্র';
+
+  @override
+  String get sunnahRelationSupporting => 'সমর্থনকারী সূত্র';
+
+  @override
+  String get sunnahRelationCongregation => 'জামাতসংক্রান্ত প্রসঙ্গ';
+
+  @override
+  String get sunnahRelationPilgrim => 'হজসংক্রান্ত প্রসঙ্গ';
 
   @override
   String get sunnahLibrarySearchHint => 'সুন্নাহ, আমল বা সূত্র খুঁজুন';
@@ -5095,4 +5131,101 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get sunnahOccasion => 'সময় ও পুনরাবৃত্তি';
+
+  @override
+  String get dhikrRemindersTitle => 'জিকিরের স্মরণিকা';
+
+  @override
+  String get dhikrRemindersSubtitle => 'দিনের ব্যস্ততায় দরুদ ও ইস্তিগফারের জন্য একটু সময় রাখুন।';
+
+  @override
+  String get dhikrDurudTitle => 'দরুদ';
+
+  @override
+  String get dhikrIstighfarTitle => 'ইস্তিগফার';
+
+  @override
+  String get dhikrDurudDescription => 'নবী মুহাম্মদ ﷺ-এর প্রতি দরুদ পাঠ করুন।';
+
+  @override
+  String get dhikrIstighfarDescription => 'একটু থামুন এবং আল্লাহর কাছে ক্ষমা চান।';
+
+  @override
+  String get dhikrDurudNotification => 'একটু সময় নিয়ে নবী মুহাম্মদ ﷺ-এর প্রতি দরুদ পাঠ করুন।';
+
+  @override
+  String get dhikrIstighfarNotification => 'একটু সময় নিয়ে আল্লাহর কাছে ক্ষমা চান। আস্তাগফিরুল্লাহ।';
+
+  @override
+  String get dhikrIntervalTitle => 'স্মরণিকার ব্যবধান';
+
+  @override
+  String get dhikrIntervalHelp => 'দুটি নোটিফিকেশনের মাঝে কত সময় থাকবে, বেছে নিন। এই সময় পর প্রথম স্মরণিকা আসবে। চালু স্মরণিকা পরিবর্তন করলে সময়ের গণনা আবার শুরু হবে।';
+
+  @override
+  String dhikrMinutes(String count) {
+    return '$count মিনিট';
+  }
+
+  @override
+  String dhikrEveryMinutes(String count) {
+    return 'প্রতি $count মিনিটে';
+  }
+
+  @override
+  String get dhikrCustomMinutes => 'নিজের পছন্দের ব্যবধান (মিনিটে)';
+
+  @override
+  String get dhikrIntervalInvalid => '১–১৪৪০ মিনিটের মধ্যে লিখুন।';
+
+  @override
+  String get dhikrApply => 'প্রয়োগ করুন';
+
+  @override
+  String get dhikrSoundTitle => 'নোটিফিকেশনের শব্দ';
+
+  @override
+  String get dhikrSoundHelp => 'ডেমো শব্দ শুনে এই স্মরণিকার জন্য পছন্দের শব্দ বেছে নিন।';
+
+  @override
+  String get dhikrSoundGlass => 'কাচের ধ্বনি';
+
+  @override
+  String get dhikrSoundBell => 'ঘণ্টাধ্বনি';
+
+  @override
+  String get dhikrSoundChime => 'ঝংকার';
+
+  @override
+  String get dhikrPreview => 'শব্দ শুনুন';
+
+  @override
+  String get dhikrPreviewFailed => 'এই শব্দটি বাজানো যায়নি।';
+
+  @override
+  String get dhikrTestNotification => 'পরীক্ষার নোটিফিকেশন পাঠান';
+
+  @override
+  String get dhikrTestSent => 'পরীক্ষার নোটিফিকেশন পাঠানো হয়েছে। নোটিফিকেশন দেখুন।';
+
+  @override
+  String get dhikrTestFailed => 'পরীক্ষার নোটিফিকেশন পাঠানো যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get dhikrPermissionRequired => 'স্মরণিকা পেতে নোটিফিকেশনের অনুমতি দিন। অনুমতি বন্ধ থাকলে নোটিফিকেশন সেটিংস থেকে চালু করুন।';
+
+  @override
+  String get dhikrNotificationSettings => 'নোটিফিকেশন সেটিংস';
+
+  @override
+  String get dhikrLoadFailed => 'স্মরণিকার সেটিংস লোড করা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get dhikrSaveFailed => 'স্মরণিকা পরিবর্তন করা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get dhikrUnsupported => 'জিকিরের স্মরণিকা অ্যান্ড্রয়েড ও আইফোনে ব্যবহার করা যায়।';
+
+  @override
+  String get dhikrTimingNotice => 'অ্যাপ বন্ধ থাকলেও স্মরণিকা চলবে। ব্যাটারি সাশ্রয়ের সেটিংসে নোটিফিকেশন আসতে দেরি হতে পারে। শব্দ শোনা যাবে কি না, তা নোটিফিকেশনের ভলিউম, সাইলেন্ট মোড ও ডু নট ডিস্টার্বের ওপর নির্ভর করে।';
 }

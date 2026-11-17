@@ -4,12 +4,12 @@ import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/utils/app_responsive.dart';
-import '../../../../data/models/dua/dua_text.dart';
 import '../../../../data/models/sunnah/sunnah_catalog.dart';
 import '../../common/app_page_scrollbar.dart';
 import '../catalog/dua_catalog_visuals.dart';
 import '../catalog/dua_source_link.dart';
 import 'sunnah_catalog_visuals.dart';
+import 'sunnah_hadith_card.dart';
 
 class SunnahEntryContent extends StatelessWidget {
   const SunnahEntryContent({
@@ -64,7 +64,8 @@ class SunnahEntryContent extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(top: AppSpacing.xs),
                           child: Text(
-                            '${_occasion(count.key, language)} · ${duaNumber(context, count.value)}×',
+                            '${_occasion(count.key, language)}'
+                            '${count.value == null ? '' : ' · ${duaNumber(context, count.value!)}×'}',
                           ),
                         ),
                     ],
@@ -87,6 +88,9 @@ class SunnahEntryContent extends StatelessWidget {
                           text:
                               '${step.text.inLanguage(language)}'
                               '${step.repetitions == null ? '' : ' · ${duaNumber(context, step.repetitions!)}×'}',
+                          onOpenDua: step.duaEntryId.isEmpty
+                              ? null
+                              : () => onDuaSelected(step.duaEntryId),
                         ),
                     ],
                   ),
@@ -98,7 +102,7 @@ class SunnahEntryContent extends StatelessWidget {
                   accent: const Color(0xFFB97800),
                   child: Text(entry.note.inLanguage(language)),
                 ),
-              if (entry.duaEntryIds.isNotEmpty)
+              if (entry.linkedDuaIds.isNotEmpty)
                 _Section(
                   title: context.l10n.sunnahRelatedDuas,
                   icon: Icons.auto_stories_rounded,
@@ -106,7 +110,7 @@ class SunnahEntryContent extends StatelessWidget {
                     spacing: AppSpacing.sm,
                     runSpacing: AppSpacing.sm,
                     children: [
-                      for (final id in entry.duaEntryIds)
+                      for (final id in entry.linkedDuaIds)
                         ActionChip(
                           avatar: const Icon(Icons.menu_book_rounded, size: 17),
                           label: Text(context.l10n.sunnahOpenDua),
@@ -115,8 +119,7 @@ class SunnahEntryContent extends StatelessWidget {
                     ],
                   ),
                 ),
-              if (entry.quranReferences.isNotEmpty ||
-                  entry.quranReadingLinks.isNotEmpty)
+              if (entry.quranReadingLinks.isNotEmpty)
                 _Section(
                   title: context.l10n.sunnahQuranReading,
                   icon: Icons.menu_book_rounded,
@@ -124,14 +127,28 @@ class SunnahEntryContent extends StatelessWidget {
                     spacing: AppSpacing.sm,
                     runSpacing: AppSpacing.sm,
                     children: [
-                      for (final link in [
-                        ...entry.quranReadingLinks,
-                        ...entry.quranReferences,
-                      ])
-                        if (duaString(link['url']).isNotEmpty)
+                      for (final link in entry.quranReadingLinks)
+                        if (link.url.isNotEmpty)
                           DuaSourceLink(
                             label: _quranLabel(context, link),
-                            url: duaString(link['url']),
+                            url: link.url,
+                          ),
+                    ],
+                  ),
+                ),
+              if (entry.quranReferences.isNotEmpty)
+                _Section(
+                  title: context.l10n.sunnahQuranReferences,
+                  icon: Icons.menu_book_outlined,
+                  child: Wrap(
+                    spacing: AppSpacing.sm,
+                    runSpacing: AppSpacing.sm,
+                    children: [
+                      for (final link in entry.quranReferences)
+                        if (link.url.isNotEmpty)
+                          DuaSourceLink(
+                            label: _quranLabel(context, link),
+                            url: link.url,
                           ),
                     ],
                   ),
@@ -142,7 +159,7 @@ class SunnahEntryContent extends StatelessWidget {
                 child: Column(
                   children: [
                     for (final hadith in entry.hadith)
-                      _HadithCard(hadith: hadith, language: language),
+                      SunnahHadithCard(hadith: hadith),
                     Padding(
                       padding: const EdgeInsets.only(top: AppSpacing.sm),
                       child: Text(
@@ -194,11 +211,15 @@ class SunnahEntryContent extends StatelessWidget {
     return (language.startsWith('bn') ? bn : en)[value] ?? value;
   }
 
-  String _quranLabel(BuildContext context, DuaJson link) {
-    final surah = link['surah'];
-    final ayah = link['ayah'];
-    final end = link['endAyah'];
-    return end == null ? '$surah:$ayah' : '$surah:$ayah–$end';
+  String _quranLabel(BuildContext context, SunnahQuranReference link) {
+    final start =
+        '${duaNumber(context, link.surah)}:${duaNumber(context, link.ayah)}';
+    final range = link.endAyah == null
+        ? start
+        : '$start–${duaNumber(context, link.endAyah!)}';
+    return link.repetitions == null
+        ? range
+        : '$range · ${duaNumber(context, link.repetitions!)}×';
   }
 }
 
@@ -312,9 +333,10 @@ class _Section extends StatelessWidget {
 }
 
 class _Step extends StatelessWidget {
-  const _Step({required this.number, required this.text});
+  const _Step({required this.number, required this.text, this.onOpenDua});
   final int number;
   final String text;
+  final VoidCallback? onOpenDua;
 
   @override
   Widget build(BuildContext context) => Padding(
@@ -325,56 +347,13 @@ class _Step extends StatelessWidget {
         CircleAvatar(radius: 13, child: Text(duaNumber(context, number))),
         const SizedBox(width: AppSpacing.sm),
         Expanded(child: Text(text)),
+        if (onOpenDua != null)
+          IconButton(
+            onPressed: onOpenDua,
+            tooltip: context.l10n.sunnahOpenDua,
+            icon: const Icon(Icons.menu_book_outlined, size: 20),
+          ),
       ],
     ),
   );
-}
-
-class _HadithCard extends StatelessWidget {
-  const _HadithCard({required this.hadith, required this.language});
-  final SunnahHadith hadith;
-  final String language;
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final grade = hadith.grading.inLanguage(language);
-    return Container(
-      margin: const EdgeInsets.only(bottom: AppSpacing.sm),
-      padding: const EdgeInsets.all(AppSpacing.md),
-      decoration: BoxDecoration(
-        color: scheme.surface,
-        borderRadius: BorderRadius.circular(AppRadius.md),
-        border: Border.all(color: scheme.outlineVariant),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            '${hadith.collection.inLanguage(language)} ${hadith.number}',
-            style: AppTheme.text(
-              context,
-            ).labelLarge.copyWith(fontWeight: AppTheme.weightBold),
-          ),
-          if (grade.isNotEmpty) ...[
-            const SizedBox(height: AppSpacing.xs),
-            Text(
-              grade,
-              style: AppTheme.text(context).labelSmall.copyWith(
-                color: const Color(0xFF148D6F),
-                fontWeight: AppTheme.weightBold,
-              ),
-            ),
-          ],
-          const SizedBox(height: AppSpacing.sm),
-          Text(hadith.summary.inLanguage(language)),
-          if (hadith.url.isNotEmpty)
-            DuaSourceLink(
-              label: context.l10n.sunnahOpenSource,
-              url: hadith.url,
-            ),
-        ],
-      ),
-    );
-  }
 }
