@@ -9,7 +9,7 @@ struct PrayerWidgetScheduleView: View {
 
   var body: some View {
     VStack(spacing: compact ? 3 : 5) {
-      HStack {
+      if !compact { HStack {
         Text(labels.prayerTimes)
           .font(.system(size: compact ? 9 : 10, weight: .bold))
           .tracking(1)
@@ -20,6 +20,7 @@ struct PrayerWidgetScheduleView: View {
           .foregroundColor(.white)
           .lineLimit(1)
           .minimumScaleFactor(0.75)
+      }
       }
       if compact {
         compactSchedule

@@ -36,4 +36,13 @@ enum PrayerWidgetDateFormatter {
     formatter.dateFormat = pattern
     return formatter
   }
+
+  static func range(_ start: Int64?, end: Int64?, timeZone: TimeZone,
+                    localeIdentifier: String, compact: Bool) -> String {
+    guard let start else { return "—" }
+    let first = time(start, timeZone: timeZone, localeIdentifier: localeIdentifier)
+    guard let end else { return first }
+    return first + (compact ? "\n– " : " – ")
+      + time(end, timeZone: timeZone, localeIdentifier: localeIdentifier)
+  }
 }

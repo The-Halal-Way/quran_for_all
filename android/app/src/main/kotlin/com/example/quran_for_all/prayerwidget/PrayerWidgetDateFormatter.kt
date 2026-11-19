@@ -17,6 +17,14 @@ class PrayerWidgetDateFormatter(private val timeZone: TimeZone) {
         formatter("h:mm a", Locale.forLanguageTag(localeIdentifier.replace('_', '-'))).format(Date(it))
     } ?: "—"
 
+    fun range(start: Long?, end: Long?, localeIdentifier: String, compact: Boolean): String {
+        if (start == null) return "—"
+        val first = time(start, localeIdentifier)
+        if (end == null) return first
+        val separator = if (compact) "\n– " else " – "
+        return first + separator + time(end, localeIdentifier)
+    }
+
     private fun formatter(pattern: String, locale: Locale = Locale.getDefault()) =
         SimpleDateFormat(pattern, locale).apply {
             calendar = GregorianCalendar(timeZone, locale)

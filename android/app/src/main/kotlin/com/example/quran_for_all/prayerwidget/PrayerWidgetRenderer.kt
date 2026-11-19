@@ -7,6 +7,7 @@ import android.widget.RemoteViews
 import com.example.quran_for_all.MainActivity
 import com.example.quran_for_all.R
 import es.antonborri.home_widget.HomeWidgetLaunchIntent
+import es.antonborri.home_widget.HomeWidgetPlugin
 import java.util.TimeZone
 
 class PrayerWidgetRenderer(
@@ -20,6 +21,9 @@ class PrayerWidgetRenderer(
     // Never label an expired snapshot's first day as today's schedule.
     private val today = snapshot?.days?.firstOrNull { it.localDateKey == formatter.dateKey(now) }
     private val labels = snapshot?.labels ?: PrayerWidgetLabels.english
+    private val data = HomeWidgetPlugin.getData(context)
+    private val refreshing = data.getLong(PrayerWidgetRefreshAction.BUSY_KEY, 0L) > now
+    private val failed = data.getBoolean(PrayerWidgetRefreshAction.ERROR_KEY, false)
 
     fun render(compact: Boolean): RemoteViews {
         val layout = if (compact) R.layout.prayer_times_home_widget_compact
@@ -29,6 +33,11 @@ class PrayerWidgetRenderer(
                 R.id.widget_container,
                 HomeWidgetLaunchIntent.getActivity(context, MainActivity::class.java),
             )
+            setOnClickPendingIntent(R.id.widget_refresh, PrayerWidgetRefreshAction.pendingIntent(context))
+            setBoolean(R.id.widget_refresh, "setEnabled", !refreshing)
+            setContentDescription(R.id.widget_refresh, if (refreshing) labels.refreshing else labels.refresh)
+            setViewVisibility(R.id.widget_refresh_icon, if (refreshing) View.GONE else View.VISIBLE)
+            setViewVisibility(R.id.widget_refresh_progress, if (refreshing) View.VISIBLE else View.GONE)
             setTextViewText(R.id.widget_date, formatter.date(now, labels.localeIdentifier))
             setTextViewText(R.id.widget_sehri_label, labels.sehriEnd)
             setTextViewText(R.id.widget_iftar_label, labels.iftar)
@@ -42,16 +51,17 @@ class PrayerWidgetRenderer(
                 R.id.widget_hijri_date,
                 today?.hijriDateLabel?.takeIf(String::isNotBlank) ?: labels.hijriDatePlaceholder,
             )
-            setTextViewText(R.id.prayer_fajr_value, formatter.time(today?.fajrUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.prayer_fajr_value, formatter.range(today?.fajrUtcMillis, today?.sunriseUtcMillis, labels.localeIdentifier, compact))
             setTextViewText(R.id.prayer_sunrise_value, formatter.time(today?.sunriseUtcMillis, labels.localeIdentifier))
-            setTextViewText(R.id.prayer_dhuhr_value, formatter.time(today?.dhuhrUtcMillis, labels.localeIdentifier))
-            setTextViewText(R.id.prayer_asr_value, formatter.time(today?.asrUtcMillis, labels.localeIdentifier))
-            setTextViewText(R.id.prayer_maghrib_value, formatter.time(today?.maghribUtcMillis, labels.localeIdentifier))
-            setTextViewText(R.id.prayer_isha_value, formatter.time(today?.ishaUtcMillis, labels.localeIdentifier))
+            setTextViewText(R.id.prayer_dhuhr_value, formatter.range(today?.dhuhrUtcMillis, today?.asrUtcMillis, labels.localeIdentifier, compact))
+            setTextViewText(R.id.prayer_asr_value, formatter.range(today?.asrUtcMillis, today?.maghribUtcMillis, labels.localeIdentifier, compact))
+            setTextViewText(R.id.prayer_maghrib_value, formatter.range(today?.maghribUtcMillis, today?.ishaUtcMillis, labels.localeIdentifier, compact))
+            setTextViewText(R.id.prayer_isha_value, formatter.range(today?.ishaUtcMillis, today?.ishaEndUtcMillis, labels.localeIdentifier, compact))
             setTextViewText(R.id.widget_sehri_value, formatter.time(today?.sehriEndUtcMillis, labels.localeIdentifier))
             setTextViewText(R.id.widget_iftar_value, formatter.time(today?.maghribUtcMillis, labels.localeIdentifier))
-            setTextViewText(R.id.widget_status, labels.openToSync)
-            setViewVisibility(R.id.widget_status, if (today == null && !compact) View.VISIBLE else View.GONE)
+            setTextViewText(R.id.widget_status, if (failed) labels.refreshFailed else labels.openToSync)
+            setViewVisibility(R.id.widget_status, if ((today == null || failed) && !compact) View.VISIBLE else View.GONE)
+            setOnClickPendingIntent(R.id.widget_status, PrayerWidgetRefreshAction.pendingIntent(context))
             // compact layout still has widget_schedule_label and widget_location
             if (compact) {
                 setTextViewText(R.id.widget_schedule_label, labels.prayerTimes)

@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
+import '../../../domain/entities/prayer_times/prayer_solar_times.dart';
+import '../../models/prayer_forbidden_times.dart';
 
 class PrayerViewModel extends ChangeNotifier {
   static const List<PrayerKey> _order = [
@@ -15,6 +17,8 @@ class PrayerViewModel extends ChangeNotifier {
   Map<String, String> _prayerTimes = const <String, String>{};
   Map<String, String> _prayerTimeRanges = const <String, String>{};
   String? _currentPrayerKey;
+  PrayerSolarTimes? _solarTimes;
+  String? _timeZoneId;
 
   Map<String, String> get prayerTimes => _prayerTimes;
   Map<String, String> get prayerTimeRanges => _prayerTimeRanges;
@@ -36,6 +40,8 @@ class PrayerViewModel extends ChangeNotifier {
     required Map<String, String>? prayerTimeRanges,
     required String? currentPrayerKey,
     bool notify = true,
+    PrayerSolarTimes? solarTimes,
+    String? timeZoneId,
   }) {
     final nextTimes = Map<String, String>.unmodifiable(
       prayerTimes ?? const <String, String>{},
@@ -46,13 +52,17 @@ class PrayerViewModel extends ChangeNotifier {
 
     if (mapEquals(_prayerTimes, nextTimes) &&
         mapEquals(_prayerTimeRanges, nextTimeRanges) &&
-        _currentPrayerKey == currentPrayerKey) {
+        _currentPrayerKey == currentPrayerKey &&
+        _solarTimes == solarTimes &&
+        _timeZoneId == timeZoneId) {
       return;
     }
 
     _prayerTimes = nextTimes;
     _prayerTimeRanges = nextTimeRanges;
     _currentPrayerKey = currentPrayerKey;
+    _solarTimes = solarTimes;
+    _timeZoneId = timeZoneId;
 
     if (notify) {
       notifyListeners();
@@ -227,38 +237,24 @@ class PrayerViewModel extends ChangeNotifier {
     ];
   }
 
-  List<PrayerForbiddenTimeItem> forbiddenTimes(AppLocalizations l10n) {
-    return forbiddenTimesFor(l10n, _prayerTimes);
-  }
+  List<PrayerForbiddenTimeItem> forbiddenTimes(AppLocalizations l10n) =>
+      forbiddenTimesFor(
+        l10n,
+        _prayerTimes,
+        solarTimes: _solarTimes,
+        timeZoneId: _timeZoneId,
+      );
 
   static List<PrayerForbiddenTimeItem> forbiddenTimesFor(
     AppLocalizations l10n,
-    Map<String, String> prayerTimes,
-  ) {
-    return [
-      PrayerForbiddenTimeItem(
-        title: l10n.prayerForbiddenSunriseTitle,
-        timeLabel: _aroundTime(
-          l10n,
-          prayerTimes[PrayerKey.sunrise.scheduleKey],
-        ),
-        body: l10n.prayerForbiddenSunriseBody,
-      ),
-      PrayerForbiddenTimeItem(
-        title: l10n.prayerForbiddenZenithTitle,
-        timeLabel: _beforeTime(l10n, prayerTimes[PrayerKey.dhuhr.scheduleKey]),
-        body: l10n.prayerForbiddenZenithBody,
-      ),
-      PrayerForbiddenTimeItem(
-        title: l10n.prayerForbiddenSunsetTitle,
-        timeLabel: _beforeTime(
-          l10n,
-          prayerTimes[PrayerKey.maghrib.scheduleKey],
-        ),
-        body: l10n.prayerForbiddenSunsetBody,
-      ),
-    ];
-  }
+    Map<String, String> prayerTimes, {
+    PrayerSolarTimes? solarTimes,
+    String? timeZoneId,
+  }) => PrayerForbiddenTimes.items(
+    l10n,
+    solar: solarTimes,
+    timeZoneId: timeZoneId,
+  );
 
   List<PrayerNafalPrayerItem> nafalPrayers(AppLocalizations l10n) {
     return [
@@ -362,20 +358,6 @@ class PrayerViewModel extends ChangeNotifier {
     }
 
     return null;
-  }
-
-  static String _aroundTime(AppLocalizations l10n, String? time) {
-    if (time == null || time.isEmpty) {
-      return l10n.prayerForbiddenTimeFallback;
-    }
-    return l10n.prayerForbiddenAroundTime(time);
-  }
-
-  static String _beforeTime(AppLocalizations l10n, String? time) {
-    if (time == null || time.isEmpty) {
-      return l10n.prayerForbiddenTimeFallback;
-    }
-    return l10n.prayerForbiddenBeforeTime(time);
   }
 
   PrayerKey _fallbackPrayerForNow() {

@@ -1,0 +1,7 @@
+name: adhan_dart
+version: 2.0.1
+description: Local patch of adhan_dart with correct unavailable solar-angle handling.
+repository: https://github.com/prayer-timetable/adhan_dart
+publish_to: none
+environment:
+  sdk: '>=3.10.0 <4.0.0'

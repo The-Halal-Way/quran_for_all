@@ -32,7 +32,7 @@ dependencies:
   
   # prayer_time
   geolocator: ^14.0.2
-  adhan: ^2.0.0+1
+  adhan_dart: ^2.0.1
   hijri: ^3.0.1
   timezone: ^0.11.0
   flutter_timezone: ^4.1.1
@@ -46,6 +46,9 @@ dependencies:
 # Android's upstream plugin starts TTS during engine registration. This small
 # local patch keeps the same API and starts it on the first speech request.
 dependency_overrides:
+  # Correct unavailable solar angles; see packages/adhan_dart/README.md.
+  adhan_dart:
+    path: packages/adhan_dart
   flutter_tts:
     path: packages/flutter_tts
 

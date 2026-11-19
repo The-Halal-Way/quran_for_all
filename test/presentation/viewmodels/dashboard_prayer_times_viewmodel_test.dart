@@ -7,6 +7,27 @@ import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_vie
 import 'package:timezone/timezone.dart' as tz;
 
 void main() {
+  testWidgets(
+    'saved schedule displays first and launch location refreshes in the background',
+    (tester) async {
+      final repository = _Repository(
+        _dashboardData(6).copyWith(isFallbackProfile: true),
+      );
+      final model = DashboardPrayerTimesViewModel(
+        loadPrayerTimesUseCase: LoadPrayerTimesUseCase(repository),
+      );
+      try {
+        await tester.pump();
+        await model.loadPrayerTimes();
+        await tester.pump();
+        expect(model.hasData, isTrue);
+        expect(model.isLoading, isFalse);
+        expect(repository.resumeCount, 1);
+      } finally {
+        model.dispose();
+      }
+    },
+  );
   for (final tomorrowFajrHour in <int?>[null, 6]) {
     testWidgets(
       tomorrowFajrHour == null
@@ -84,6 +105,7 @@ class _Repository implements PrayerTimesRepository {
   _Repository(this.data);
 
   final PrayerDashboardData data;
+  int resumeCount = 0;
 
   @override
   Future<PrayerDashboardData?> loadCachedDashboardData() async => data;
@@ -94,7 +116,9 @@ class _Repository implements PrayerTimesRepository {
   }) async => data;
 
   @override
-  Future<void> handleAppResumed() async {}
+  Future<void> handleAppResumed() async {
+    resumeCount++;
+  }
 
   @override
   Future<void> warmUpcomingPrayerDays({

@@ -11,18 +11,19 @@ struct PrayerWidgetTimeRow: View {
       if compact {
         VStack(spacing: 1) {
           label.font(.system(size: 9, weight: .medium))
-          value.font(.system(size: 12, weight: .bold, design: .rounded).monospacedDigit())
+          value.font(.system(size: 10, weight: .bold, design: .rounded).monospacedDigit())
+            .lineLimit(2).multilineTextAlignment(.center)
         }
       } else {
         HStack {
           label.font(.system(size: 13, weight: .semibold))
           Spacer(minLength: 8)
-          value.font(.system(size: 16, weight: .bold, design: .rounded).monospacedDigit())
+          value.font(.system(size: 13, weight: .bold, design: .rounded).monospacedDigit())
         }
         .padding(.vertical, 3)
       }
     }
-    .lineLimit(1)
+    .lineLimit(compact ? 2 : 1)
     .minimumScaleFactor(0.7)
     .accessibilityElement(children: .combine)
   }
@@ -32,8 +33,9 @@ struct PrayerWidgetTimeRow: View {
   }
 
   private var value: some View {
-    Text(PrayerWidgetDateFormatter.time(
-      prayer.utcMillis, timeZone: timeZone, localeIdentifier: labels.localeIdentifier
+    Text(PrayerWidgetDateFormatter.range(
+      prayer.utcMillis, end: prayer.endUtcMillis, timeZone: timeZone,
+      localeIdentifier: labels.localeIdentifier, compact: compact
     ))
       .foregroundColor(PrayerWidgetPalette.gold)
   }

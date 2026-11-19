@@ -17,6 +17,8 @@ class PrayerTimesPreferencesStore {
 
   Future<String?> getActiveProfileSignature() async {
     final prefs = await SharedPreferences.getInstance();
+    await prefs
+        .reload(); // A widget callback can update this in another engine.
     return prefs.getString(_keyActiveProfileSignature);
   }
 
@@ -27,6 +29,7 @@ class PrayerTimesPreferencesStore {
 
   Future<PrayerCalculationConfig> getCalculationConfig() async {
     final prefs = await SharedPreferences.getInstance();
+    await prefs.reload();
     return PrayerCalculationConfig(
       method: PrayerCalculationMethod.fromName(prefs.getString(_keyMethod)),
       madhab: PrayerMadhab.fromName(prefs.getString(_keyMadhab)),
@@ -66,6 +69,7 @@ class PrayerTimesPreferencesStore {
 
   Future<void> writeWidgetSnapshot(PrayerWidgetSnapshot snapshot) async {
     final prefs = await SharedPreferences.getInstance();
+    await prefs.reload();
     final localized = snapshot.copyWith(
       labels: PrayerWidgetLabels.forLocale(prefs.getString('app_language')),
     );

@@ -47,11 +47,13 @@ void main() {
       for (final day in json['days'] as List) {
         (day as Map).remove('hijriDateLabel');
         day.remove('sehriEndUtcMillis');
+        day.remove('ishaEndUtcMillis');
       }
       final legacy = PrayerWidgetSnapshot.fromJsonString(jsonEncode(json));
 
       expect(legacy.days.single.hijriDateLabel, isNull);
       expect(legacy.days.single.sehriEndUtcMillis, isNull);
+      expect(legacy.days.single.ishaEndUtcMillis, isNull);
       expect(
         legacy.days.single.fajrUtcMillis,
         _snapshot().days.single.fajrUtcMillis,

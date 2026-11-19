@@ -231,6 +231,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsLegalLinkFailed => 'Could not open this link. Please try again.';
 
   @override
+  String get prayerWidgetRefresh => 'Refresh prayer times';
+
+  @override
+  String get prayerWidgetRefreshing => 'Refreshing prayer times';
+
+  @override
+  String get prayerWidgetRefreshFailed => 'Could not refresh. Tap to try again.';
+
+  @override
   String get prayerWidgetTitle => 'Muslim & Quran Pro';
 
   @override
@@ -3265,7 +3274,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerViewCurrentFocus => 'Current focus';
 
   @override
-  String get prayerViewLoadedFromLocation => 'Location time';
+  String get prayerViewLoadedFromLocation => 'Calculated offline';
 
   @override
   String get prayerViewTimeFallback => 'Guide mode';
@@ -3307,7 +3316,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerTimesNetworkErrorTitle => 'Could not prepare prayer times';
 
   @override
-  String get prayerTimesNetworkErrorBody => 'Check your connection and device location settings, then try again.';
+  String get prayerTimesNetworkErrorBody => 'Check your device location and date settings, then try again. Prayer times are calculated offline. At extreme latitudes, some solar events may be unavailable.';
 
   @override
   String get compassTitle => 'Qibla Compass';
@@ -3514,6 +3523,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get prayerViewSoon => 'Soon';
+
+  @override
+  String get prayerForbiddenWindowNote => 'Estimated precautionary windows: sunrise until 20 minutes later; 5 minutes before solar noon until 1 minute after; and the final 20 minutes before sunset. These are practical safety margins, not universally exact religious boundaries. Solar events use your location and are independent of prayer-time adjustments. Reference: Sahih Muslim 831.';
+
+  @override
+  String get prayerHighLatitudeEstimate => 'High-latitude estimate';
 
   @override
   String get prayerForbiddenTimesTitle => 'Forbidden Times';

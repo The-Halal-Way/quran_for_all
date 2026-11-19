@@ -6,9 +6,14 @@ import '../../../../core/theme/app_theme.dart';
 import '../../../../core/theme/my_colors.dart';
 
 class PrayerTimeSourceBadge extends StatelessWidget {
-  const PrayerTimeSourceBadge({super.key, required this.hasTimes});
+  const PrayerTimeSourceBadge({
+    super.key,
+    required this.hasTimes,
+    this.isEstimated = false,
+  });
 
   final bool hasTimes;
+  final bool isEstimated;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +38,9 @@ class PrayerTimeSourceBadge extends StatelessWidget {
           const SizedBox(width: AppSpacing.xs),
           Flexible(
             child: Text(
-              hasTimes
+              isEstimated
+                  ? context.l10n.prayerHighLatitudeEstimate
+                  : hasTimes
                   ? context.l10n.prayerViewLoadedFromLocation
                   : context.l10n.prayerViewTimeFallback,
               style: AppTheme.text(context).labelSmall.copyWith(

@@ -10,10 +10,10 @@ struct PrayerWidgetFastingView: View {
   var body: some View {
     HStack(spacing: 0) {
       time(label: labels.sehriEnd, value: sehriEnd)
-      Rectangle().fill(PrayerWidgetPalette.divider).frame(width: 1, height: compact ? 22 : 28)
+      Rectangle().fill(PrayerWidgetPalette.divider).frame(width: 1, height: compact ? 14 : 28)
       time(label: labels.iftar, value: iftar)
     }
-    .padding(.vertical, compact ? 4 : 8)
+    .padding(.vertical, compact ? 2 : 8)
     .background(
       RoundedRectangle(cornerRadius: 12, style: .continuous)
         .fill(PrayerWidgetPalette.gold.opacity(0.08))
@@ -25,7 +25,15 @@ struct PrayerWidgetFastingView: View {
   }
 
   private func time(label: String, value: Int64?) -> some View {
-    VStack(spacing: 2) {
+    Group {
+      if compact {
+        HStack(spacing: 4) {
+          Text(label).font(.system(size: 8, weight: .bold))
+          Text(PrayerWidgetDateFormatter.time(
+            value, timeZone: timeZone, localeIdentifier: labels.localeIdentifier
+          )).font(.system(size: 10, weight: .bold).monospacedDigit())
+        }
+      } else { VStack(spacing: 2) {
       Text(label)
         .font(.system(size: compact ? 8 : 10, weight: .bold))
         .tracking(0.5)
@@ -33,6 +41,8 @@ struct PrayerWidgetFastingView: View {
         value, timeZone: timeZone, localeIdentifier: labels.localeIdentifier
       ))
         .font(.system(size: compact ? 12 : 17, weight: .bold, design: .rounded).monospacedDigit())
+    }
+      }
     }
     .foregroundColor(PrayerWidgetPalette.gold)
     .lineLimit(1)

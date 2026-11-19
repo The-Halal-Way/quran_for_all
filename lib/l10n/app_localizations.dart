@@ -539,6 +539,24 @@ abstract class AppLocalizations {
   /// **'Could not open this link. Please try again.'**
   String get settingsLegalLinkFailed;
 
+  /// No description provided for @prayerWidgetRefresh.
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh prayer times'**
+  String get prayerWidgetRefresh;
+
+  /// No description provided for @prayerWidgetRefreshing.
+  ///
+  /// In en, this message translates to:
+  /// **'Refreshing prayer times'**
+  String get prayerWidgetRefreshing;
+
+  /// No description provided for @prayerWidgetRefreshFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not refresh. Tap to try again.'**
+  String get prayerWidgetRefreshFailed;
+
   /// No description provided for @prayerWidgetTitle.
   ///
   /// In en, this message translates to:
@@ -6290,7 +6308,7 @@ abstract class AppLocalizations {
   /// No description provided for @prayerViewLoadedFromLocation.
   ///
   /// In en, this message translates to:
-  /// **'Location time'**
+  /// **'Calculated offline'**
   String get prayerViewLoadedFromLocation;
 
   /// No description provided for @prayerViewTimeFallback.
@@ -6374,7 +6392,7 @@ abstract class AppLocalizations {
   /// No description provided for @prayerTimesNetworkErrorBody.
   ///
   /// In en, this message translates to:
-  /// **'Check your connection and device location settings, then try again.'**
+  /// **'Check your device location and date settings, then try again. Prayer times are calculated offline. At extreme latitudes, some solar events may be unavailable.'**
   String get prayerTimesNetworkErrorBody;
 
   /// No description provided for @compassTitle.
@@ -6772,6 +6790,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Soon'**
   String get prayerViewSoon;
+
+  /// No description provided for @prayerForbiddenWindowNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated precautionary windows: sunrise until 20 minutes later; 5 minutes before solar noon until 1 minute after; and the final 20 minutes before sunset. These are practical safety margins, not universally exact religious boundaries. Solar events use your location and are independent of prayer-time adjustments. Reference: Sahih Muslim 831.'**
+  String get prayerForbiddenWindowNote;
+
+  /// No description provided for @prayerHighLatitudeEstimate.
+  ///
+  /// In en, this message translates to:
+  /// **'High-latitude estimate'**
+  String get prayerHighLatitudeEstimate;
 
   /// No description provided for @prayerForbiddenTimesTitle.
   ///

@@ -59,6 +59,10 @@ struct PrayerWidgetLabels: Codable {
   let asr: String
   let maghrib: String
   let isha: String
+  let refresh: String?
+
+  var refreshLabel: String { refresh ?? (localeIdentifier.hasPrefix("bn")
+    ? "নামাজের সময় হালনাগাদ করুন" : "Refresh prayer times") }
 
   static let english = PrayerWidgetLabels(
     localeIdentifier: "en_US", appTitle: "Muslim & Quran Pro",
@@ -66,7 +70,7 @@ struct PrayerWidgetLabels: Codable {
     sehriEnd: "SEHRI END", iftar: "IFTAR",
     openToSync: "Open the app to update today's times", tapToUpdate: "Tap to update",
     fajr: "Fajr", sunrise: "Sunrise", dhuhr: "Dhuhr", asr: "Asr",
-    maghrib: "Maghrib", isha: "Isha"
+    maghrib: "Maghrib", isha: "Isha", refresh: "Refresh prayer times"
   )
 }
 
@@ -80,17 +84,18 @@ struct PrayerWidgetDaySnapshot: Decodable {
   let ishaUtcMillis: Int64
   let hijriDateLabel: String?
   let sehriEndUtcMillis: Int64?
+  let ishaEndUtcMillis: Int64?
 
   var sehriEnd: Int64 { sehriEndUtcMillis ?? fajrUtcMillis - 10 * 60_000 }
 
   func prayers(labels: PrayerWidgetLabels) -> [PrayerWidgetTime] {
     [
-      PrayerWidgetTime(label: labels.fajr, utcMillis: fajrUtcMillis),
+      PrayerWidgetTime(label: labels.fajr, utcMillis: fajrUtcMillis, endUtcMillis: sunriseUtcMillis),
       PrayerWidgetTime(label: labels.sunrise, utcMillis: sunriseUtcMillis),
-      PrayerWidgetTime(label: labels.dhuhr, utcMillis: dhuhrUtcMillis),
-      PrayerWidgetTime(label: labels.asr, utcMillis: asrUtcMillis),
-      PrayerWidgetTime(label: labels.maghrib, utcMillis: maghribUtcMillis),
-      PrayerWidgetTime(label: labels.isha, utcMillis: ishaUtcMillis),
+      PrayerWidgetTime(label: labels.dhuhr, utcMillis: dhuhrUtcMillis, endUtcMillis: asrUtcMillis),
+      PrayerWidgetTime(label: labels.asr, utcMillis: asrUtcMillis, endUtcMillis: maghribUtcMillis),
+      PrayerWidgetTime(label: labels.maghrib, utcMillis: maghribUtcMillis, endUtcMillis: ishaUtcMillis),
+      PrayerWidgetTime(label: labels.isha, utcMillis: ishaUtcMillis, endUtcMillis: ishaEndUtcMillis),
     ]
   }
 
@@ -108,7 +113,8 @@ struct PrayerWidgetDaySnapshot: Decodable {
       fajrUtcMillis: millis(4, 35), sunriseUtcMillis: millis(5, 52),
       dhuhrUtcMillis: millis(12, 6), asrUtcMillis: millis(16, 28),
       maghribUtcMillis: millis(18, 12), ishaUtcMillis: millis(19, 29),
-      hijriDateLabel: "12 Ramadan 1447 AH", sehriEndUtcMillis: millis(4, 25)
+      hijriDateLabel: "12 Ramadan 1447 AH", sehriEndUtcMillis: millis(4, 25),
+      ishaEndUtcMillis: millis(4, 36) + 86_400_000
     )
   }
 }
@@ -116,7 +122,14 @@ struct PrayerWidgetDaySnapshot: Decodable {
 struct PrayerWidgetTime: Identifiable {
   let label: String
   let utcMillis: Int64?
+  let endUtcMillis: Int64?
   var id: String { label }
+
+  init(label: String, utcMillis: Int64?, endUtcMillis: Int64? = nil) {
+    self.label = label
+    self.utcMillis = utcMillis
+    self.endUtcMillis = endUtcMillis
+  }
 
   static func empty(labels: PrayerWidgetLabels) -> [PrayerWidgetTime] {
     [labels.fajr, labels.sunrise, labels.dhuhr, labels.asr, labels.maghrib, labels.isha]

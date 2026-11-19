@@ -8,7 +8,7 @@ struct PrayerTimesHomeWidgetView: View {
   var body: some View {
     GeometryReader { geometry in
       let compact = family == .systemMedium || geometry.size.height < 270
-      VStack(spacing: compact ? 5 : 10) {
+      VStack(spacing: compact ? 4 : 10) {
         PrayerWidgetHeaderView(entry: entry, compact: compact)
         PrayerWidgetScheduleView(
           prayers: entry.displayDay?.prayers(labels: entry.snapshot?.labels ?? .english)
@@ -32,7 +32,7 @@ struct PrayerTimesHomeWidgetView: View {
             .foregroundColor(.white)
         }
       }
-      .padding(compact ? 10 : 16)
+      .padding(compact ? 8 : 16)
       .frame(maxWidth: .infinity, maxHeight: .infinity)
       .shadow(color: .black.opacity(0.4), radius: 1, x: 0, y: 1)
     }

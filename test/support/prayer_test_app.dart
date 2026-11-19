@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/domain/entities/prayer_times/prayer_solar_times.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/viewmodels/dashboard_prayer_times_viewmodel.dart';
@@ -44,6 +45,12 @@ class PrayerTestApp extends StatelessWidget {
 
 class PrayerTestViewModel extends ChangeNotifier
     implements DashboardPrayerTimesViewModel {
+  @override
+  PrayerSolarTimes? get solarTimes => null;
+  @override
+  String? get timeZoneId => 'Asia/Dhaka';
+  @override
+  bool get usesHighLatitudeFallback => false;
   int refreshes = 0;
   @override
   bool hasData = true;

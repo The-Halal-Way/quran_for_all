@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran_for_all/domain/entities/prayer_times/prayer_solar_times.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
 import 'package:quran_for_all/core/enums/task_category.dart';
@@ -175,6 +176,12 @@ class MemoryTrackerRepository implements DailyTrackerRepository {
 
 class TestPrayerViewModel extends ChangeNotifier
     implements DashboardPrayerTimesViewModel {
+  @override
+  PrayerSolarTimes? get solarTimes => null;
+  @override
+  String? get timeZoneId => 'Asia/Dhaka';
+  @override
+  bool get usesHighLatitudeFallback => false;
   int refreshes = 0;
   @override
   Map<String, String> get prayerTimes => const {

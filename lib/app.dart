@@ -12,7 +12,7 @@ import 'data/datasources/local/prayer_times_local_data_source.dart';
 import 'data/datasources/local/prayer_times_preferences_store.dart';
 import 'data/datasources/local/prophecies_pack_loader.dart';
 import 'data/datasources/remote/quran_api_service.dart';
-import 'data/datasources/remote/prayer_times_api_service.dart';
+import 'data/datasources/local/offline_prayer_calculator.dart';
 import 'data/repositories/audio_repository_impl.dart';
 import 'data/repositories/daily_tracker_repository_impl.dart';
 import 'data/repositories/daily_hadith_repository_impl.dart';
@@ -95,9 +95,8 @@ class QuranForAllApp extends StatelessWidget {
         Provider<QuranApiService>(
           create: (context) => QuranApiService(context.read<http.Client>()),
         ),
-        Provider<PrayerTimesApiService>(
-          create: (context) =>
-              PrayerTimesApiService(context.read<http.Client>()),
+        Provider<OfflinePrayerCalculator>(
+          create: (_) => const OfflinePrayerCalculator(),
         ),
         Provider<PermissionHelper>(create: (_) => const PermissionHelper()),
         Provider<PronunciationService>(
@@ -125,7 +124,7 @@ class QuranForAllApp extends StatelessWidget {
           create: (context) => PrayerTimesRepositoryImpl(
             localDataSource: context.read<PrayerTimesLocalDataSource>(),
             preferencesStore: context.read<PrayerTimesPreferencesStore>(),
-            apiService: context.read<PrayerTimesApiService>(),
+            calculator: context.read<OfflinePrayerCalculator>(),
           ),
         ),
         Provider<LoadPrayerTimesUseCase>(

@@ -62,6 +62,9 @@ class PrayerViewBody extends StatelessWidget {
                         PrayerFocusHero(
                           content: content,
                           hasTimes: model.hasTimes,
+                          isEstimated: context
+                              .watch<DashboardPrayerTimesViewModel>()
+                              .usesHighLatitudeFallback,
                           endsAtUtc: context
                               .watch<DashboardPrayerTimesViewModel>()
                               .currentPrayerEndsAtUtc,

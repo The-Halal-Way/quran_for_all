@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/widget_container" android:layout_width="match_parent"
     android:layout_height="match_parent" android:orientation="vertical"
-    android:background="@drawable/prayer_widget_background" android:padding="10dp">
-    <include layout="@layout/prayer_widget_header" />
+    android:background="@drawable/prayer_widget_background" android:padding="6dp">
+    <include layout="@layout/prayer_widget_header_compact" />
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:layout_marginTop="5dp" android:orientation="horizontal">
+        android:layout_marginTop="0dp" android:orientation="horizontal" android:visibility="gone">
         <TextView android:id="@+id/widget_schedule_label" style="@style/PrayerWidget.Section"
             android:layout_width="0dp" android:layout_weight="1" android:text="@string/prayer_widget_schedule" />
         <TextView android:id="@+id/widget_location" style="@style/PrayerWidget.Text"

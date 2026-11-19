@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:gravity="center_horizontal" android:orientation="vertical">
+    <TextView android:id="@+id/widget_hijri_date" style="@style/PrayerWidget.Hijri" android:textSize="14sp" android:paddingTop="1dp" android:paddingBottom="1dp"
+        android:background="@drawable/prayer_widget_highlight"
+        android:text="@string/prayer_widget_hijri_placeholder" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="22dp"
+        android:layout_marginTop="1dp">
+        <TextView android:id="@+id/widget_date" style="@style/PrayerWidget.Text"
+            android:layout_width="match_parent" android:layout_height="match_parent" android:textSize="9sp"
+            android:paddingStart="22dp" android:paddingEnd="22dp"
+            android:gravity="center" android:text="Sunday, September 27, 2026" />
+        <FrameLayout android:id="@+id/widget_refresh" android:layout_width="22dp"
+            android:layout_height="22dp" android:layout_alignParentEnd="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/prayer_widget_refresh">
+            <ImageView android:id="@+id/widget_refresh_icon" android:layout_width="17dp"
+                android:layout_height="17dp" android:layout_gravity="center"
+                android:src="@drawable/prayer_widget_refresh"
+                android:importantForAccessibility="no" />
+            <ProgressBar android:id="@+id/widget_refresh_progress" android:layout_width="16dp"
+                android:layout_height="16dp" android:layout_gravity="center"
+                android:indeterminate="true" android:indeterminateTint="@color/prayer_widget_gold"
+                android:visibility="gone" android:importantForAccessibility="no" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>
+

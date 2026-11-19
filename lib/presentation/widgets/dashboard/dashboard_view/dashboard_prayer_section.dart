@@ -24,6 +24,8 @@ class DashboardPrayerSection extends StatelessWidget {
     final forbiddenTimes = PrayerViewModel.forbiddenTimesFor(
       context.l10n,
       times,
+      solarTimes: vm.solarTimes,
+      timeZoneId: vm.timeZoneId,
     );
     return Column(
       children: [

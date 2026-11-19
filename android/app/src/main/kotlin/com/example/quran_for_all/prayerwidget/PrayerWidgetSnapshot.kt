@@ -39,6 +39,9 @@ data class PrayerWidgetLabels(
     val asr: String,
     val maghrib: String,
     val isha: String,
+    val refresh: String = "Refresh prayer times",
+    val refreshing: String = "Refreshing prayer times",
+    val refreshFailed: String = "Could not refresh. Tap to try again.",
 ) {
     companion object {
         val english = PrayerWidgetLabels(
@@ -73,6 +76,9 @@ data class PrayerWidgetLabels(
             asr = "আসর",
             maghrib = "মাগরিব",
             isha = "ইশা",
+            refresh = "নামাজের সময় হালনাগাদ করুন",
+            refreshing = "নামাজের সময় হালনাগাদ হচ্ছে",
+            refreshFailed = "হালনাগাদ করা যায়নি। আবার ট্যাপ করুন।",
         )
 
         fun fromJson(json: JSONObject?): PrayerWidgetLabels {
@@ -96,6 +102,9 @@ data class PrayerWidgetLabels(
                 asr = value("asr", fallback.asr),
                 maghrib = value("maghrib", fallback.maghrib),
                 isha = value("isha", fallback.isha),
+                refresh = value("refresh", fallback.refresh),
+                refreshing = value("refreshing", fallback.refreshing),
+                refreshFailed = value("refreshFailed", fallback.refreshFailed),
             )
         }
     }
@@ -111,6 +120,7 @@ data class PrayerWidgetDay(
     val maghribUtcMillis: Long,
     val ishaUtcMillis: Long,
     val sehriEndUtcMillis: Long,
+    val ishaEndUtcMillis: Long? = null,
 ) {
     companion object {
         fun fromJson(json: JSONObject): PrayerWidgetDay {
@@ -124,6 +134,7 @@ data class PrayerWidgetDay(
                 asrUtcMillis = json.getLong("asrUtcMillis"),
                 maghribUtcMillis = json.getLong("maghribUtcMillis"),
                 ishaUtcMillis = json.getLong("ishaUtcMillis"),
+                ishaEndUtcMillis = if (json.isNull("ishaEndUtcMillis")) null else json.getLong("ishaEndUtcMillis"),
                 // Older snapshots used the app's default ten-minute precaution.
                 sehriEndUtcMillis = if (json.isNull("sehriEndUtcMillis")) fajr - 10 * 60_000L
                     else json.getLong("sehriEndUtcMillis"),

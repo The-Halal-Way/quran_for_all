@@ -1,10 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/services.dart';
-import 'package:http/http.dart' as http;
-import 'package:http/testing.dart';
 import 'package:quran_for_all/data/datasources/local/prayer_times_local_data_source.dart';
 import 'package:quran_for_all/data/datasources/local/prayer_times_preferences_store.dart';
-import 'package:quran_for_all/data/datasources/remote/prayer_times_api_service.dart';
+import 'package:quran_for_all/data/datasources/local/offline_prayer_calculator.dart';
+import 'package:quran_for_all/core/prayer_times/offline_prayer_parameters.dart';
 import 'package:quran_for_all/data/repositories/prayer_times_repository_impl.dart';
 import 'package:quran_for_all/domain/entities/prayer_times/prayer_times_models.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -88,53 +87,21 @@ void main() {
     },
   );
 
-  test(
-    'daily and monthly requests send chosen method, school and tuning',
-    () async {
-      final requested = <Uri>[];
-      final client = MockClient((request) async {
-        requested.add(request.url);
-        return http.Response('{"status":"ERROR"}', 400);
-      });
-      final service = PrayerTimesApiService(client);
-      final now = DateTime.utc(2026, 1, 1);
-      final config = PrayerCalculationConfig.defaults().copyWith(
-        method: PrayerCalculationMethod.malaysia,
-        madhab: PrayerMadhab.hanafi,
-        adjustments: const PrayerAdjustments(fajr: 4, asr: -3),
-      );
-      final profile = PrayerProfile(
-        signature: 'test',
-        locationIdentity: 'gps:3.14,101.69',
-        latitude: 3.14,
-        longitude: 101.69,
-        latitudeBucket: 3.14,
-        longitudeBucket: 101.69,
-        timeZoneId: 'Asia/Kuala_Lumpur',
-        calculation: config,
-        displayLocationLabel: 'Kuala Lumpur',
-        createdAtUtc: now,
-        lastUsedAtUtc: now,
-      );
-
-      await expectLater(
-        service.fetchDay(profile: profile, localDateKey: '2026-01-01'),
-        throwsA(isA<PrayerTimesException>()),
-      );
-      await expectLater(
-        service.fetchMonth(profile: profile, year: 2026, month: 1),
-        throwsA(isA<PrayerTimesException>()),
-      );
-
-      expect(requested, hasLength(2));
-      for (final url in requested) {
-        expect(url.queryParameters['method'], '17');
-        expect(url.queryParameters['school'], '1');
-        expect(url.queryParameters['tune'], '0,4,0,0,-3,0,0,0,0');
-      }
-      client.close();
-    },
-  );
+  test('offline parameters preserve the selected school and tuning', () {
+    final config = PrayerCalculationConfig.defaults().copyWith(
+      method: PrayerCalculationMethod.malaysia,
+      madhab: PrayerMadhab.hanafi,
+      adjustments: const PrayerAdjustments(fajr: 4, asr: -3),
+    );
+    final parameters = OfflinePrayerParameters.forDate(
+      config,
+      DateTime(2026, 1, 1),
+    );
+    expect(parameters.fajrAngle, 20);
+    expect(parameters.ishaAngle, 18);
+    expect(parameters.madhab!.name, 'hanafi');
+    expect(parameters.adjustments.values, containsAll([4, -3]));
+  });
 
   test(
     'cached schedule is hidden when its calculation no longer matches',
@@ -155,15 +122,13 @@ void main() {
         createdAtUtc: now,
         lastUsedAtUtc: now,
       );
-      final client = MockClient((_) async => http.Response('{}', 500));
       final repository = PrayerTimesRepositoryImpl(
         localDataSource: _StoredProfileSource(profile),
         preferencesStore: _SelectedConfigStore(selectedConfig),
-        apiService: PrayerTimesApiService(client),
+        calculator: const OfflinePrayerCalculator(),
       );
 
       expect(await repository.loadCachedDashboardData(), isNull);
-      client.close();
     },
   );
 }

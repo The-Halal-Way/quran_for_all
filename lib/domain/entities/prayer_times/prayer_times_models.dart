@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import '../../../core/prayer_times/prayer_widget_labels.dart';
+import 'prayer_solar_times.dart';
 
 enum PrayerCalculationMethod {
   karachi(apiMethodId: 1),
@@ -323,6 +324,8 @@ class PrayerDay {
     required this.ishaUtc,
     required this.fetchedAtUtc,
     required this.sourceRevision,
+    this.solarTimes,
+    this.usesHighLatitudeFallback = false,
   });
 
   final String profileSignature;
@@ -336,6 +339,8 @@ class PrayerDay {
   final DateTime ishaUtc;
   final DateTime fetchedAtUtc;
   final String sourceRevision;
+  final PrayerSolarTimes? solarTimes;
+  final bool usesHighLatitudeFallback;
 
   Map<String, Object?> toMap() {
     return {
@@ -350,6 +355,10 @@ class PrayerDay {
       'isha_utc': ishaUtc.toIso8601String(),
       'fetched_at_utc': fetchedAtUtc.toIso8601String(),
       'source_revision': sourceRevision,
+      'solar_times_json': solarTimes == null
+          ? null
+          : jsonEncode(solarTimes!.toJson()),
+      'high_latitude_fallback': usesHighLatitudeFallback ? 1 : 0,
     };
   }
 
@@ -366,6 +375,14 @@ class PrayerDay {
       ishaUtc: DateTime.parse(map['isha_utc'] as String).toUtc(),
       fetchedAtUtc: DateTime.parse(map['fetched_at_utc'] as String).toUtc(),
       sourceRevision: map['source_revision'] as String,
+      solarTimes: map['solar_times_json'] == null
+          ? null
+          : PrayerSolarTimes.fromJson(
+              Map<String, Object?>.from(
+                jsonDecode(map['solar_times_json'] as String) as Map,
+              ),
+            ),
+      usesHighLatitudeFallback: map['high_latitude_fallback'] == 1,
     );
   }
 }
@@ -514,6 +531,7 @@ class PrayerWidgetDaySnapshot {
     required this.ishaUtcMillis,
     this.hijriDateLabel,
     this.sehriEndUtcMillis,
+    this.ishaEndUtcMillis,
   });
 
   final String localDateKey;
@@ -525,6 +543,7 @@ class PrayerWidgetDaySnapshot {
   final int ishaUtcMillis;
   final String? hijriDateLabel;
   final int? sehriEndUtcMillis;
+  final int? ishaEndUtcMillis;
 
   PrayerWidgetDaySnapshot withHijriDateLabel(String label) {
     return PrayerWidgetDaySnapshot(
@@ -537,6 +556,7 @@ class PrayerWidgetDaySnapshot {
       ishaUtcMillis: ishaUtcMillis,
       hijriDateLabel: label,
       sehriEndUtcMillis: sehriEndUtcMillis,
+      ishaEndUtcMillis: ishaEndUtcMillis,
     );
   }
 
@@ -551,6 +571,7 @@ class PrayerWidgetDaySnapshot {
       'ishaUtcMillis': ishaUtcMillis,
       'hijriDateLabel': hijriDateLabel,
       'sehriEndUtcMillis': sehriEndUtcMillis,
+      'ishaEndUtcMillis': ishaEndUtcMillis,
     };
   }
 
@@ -565,6 +586,7 @@ class PrayerWidgetDaySnapshot {
       ishaUtcMillis: (json['ishaUtcMillis'] as num).toInt(),
       hijriDateLabel: json['hijriDateLabel'] as String?,
       sehriEndUtcMillis: (json['sehriEndUtcMillis'] as num?)?.toInt(),
+      ishaEndUtcMillis: (json['ishaEndUtcMillis'] as num?)?.toInt(),
     );
   }
 }

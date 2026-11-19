@@ -6,6 +6,7 @@ import 'package:timezone/timezone.dart' as tz;
 
 import '../../core/prayer_times/prayer_time_zone_helper.dart';
 import '../../domain/entities/prayer_times/prayer_times_models.dart';
+import '../../domain/entities/prayer_times/prayer_solar_times.dart';
 import '../../domain/usecases/prayer_times/load_prayer_times_usecase.dart';
 
 enum PrayerTimesErrorType {
@@ -44,6 +45,9 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   Timer? _scheduleTimer;
   int _loadVersion = 0;
   bool _disposed = false;
+  PrayerSolarTimes? _solarTimes;
+  bool _usesHighLatitudeFallback = false;
+  bool _checkedLaunchLocation = false;
 
   Map<String, String>? get prayerTimes => _prayerTimes;
   Map<String, String>? get prayerTimeRanges => _prayerTimeRanges;
@@ -54,6 +58,9 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   String? get currentPrayer => _currentPrayer;
   DateTime? get currentPrayerEndsAtUtc => _currentPrayerEndsAtUtc;
   bool get hasData => _prayerTimes != null && _prayerTimes!.isNotEmpty;
+  PrayerSolarTimes? get solarTimes => _solarTimes;
+  bool get usesHighLatitudeFallback => _usesHighLatitudeFallback;
+  String? get timeZoneId => _scheduleLocation?.name;
 
   Future<void> loadPrayerTimes({bool forceRefresh = false}) async {
     if (_disposed || _loading) {
@@ -89,6 +96,13 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
       _errorType = PrayerTimesErrorType.none;
       _loading = false;
       notifyListeners();
+      unawaited(_warmWidgetSchedule(version));
+      // Paint saved times immediately, then check for travel on a fresh app
+      // launch too (the initial resume event precedes provider creation).
+      if (!_checkedLaunchLocation) {
+        _checkedLaunchLocation = true;
+        if (dashboardData.isFallbackProfile) unawaited(_refreshOnResume());
+      }
     } on PrayerTimesException catch (error) {
       if (version != _loadVersion) return;
       if (hasData) {
@@ -118,6 +132,8 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
     _scheduleLocation = null;
     _scheduleDate = null;
     _tomorrowFajr = null;
+    _solarTimes = null;
+    _usesHighLatitudeFallback = false;
     _scheduleTimer?.cancel();
     _scheduleTimer = null;
     _loading = false;
@@ -143,6 +159,16 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
     super.dispose();
   }
 
+  Future<void> _warmWidgetSchedule(int version) async {
+    if (_disposed || version != _loadVersion) return;
+    try {
+      await _loadPrayerTimesUseCase.warmUpcoming();
+    } catch (error) {
+      // Today's schedule remains usable if preparing later dates fails.
+      debugPrint('Could not prepare upcoming offline prayer times: $error');
+    }
+  }
+
   Future<void> _refreshOnResume() async {
     final version = _loadVersion;
     try {
@@ -155,12 +181,15 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
       _error = '';
       _errorType = PrayerTimesErrorType.none;
       notifyListeners();
+      unawaited(_warmWidgetSchedule(version));
     } catch (_) {
       // Keep the current local state if the resume sync cannot improve it.
     }
   }
 
   void _applyDashboardData(PrayerDashboardData dashboardData) {
+    _solarTimes = dashboardData.today.solarTimes;
+    _usesHighLatitudeFallback = dashboardData.today.usesHighLatitudeFallback;
     PrayerTimeZoneHelper.ensureInitialized();
     final location = PrayerTimeZoneHelper.locationFor(
       dashboardData.profile.timeZoneId,

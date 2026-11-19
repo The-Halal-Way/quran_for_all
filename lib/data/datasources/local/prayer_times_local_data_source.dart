@@ -4,7 +4,16 @@ import 'package:sqflite/sqflite.dart';
 import '../../../domain/entities/prayer_times/prayer_times_models.dart';
 
 class PrayerTimesLocalDataSource {
+  PrayerTimesLocalDataSource({bool singleInstance = true})
+    : _singleInstance = singleInstance;
+
+  final bool _singleInstance;
   Database? _database;
+
+  Future<void> close() async {
+    await _database?.close();
+    _database = null;
+  }
 
   Future<Database> get database async {
     return _database ??= await _openDatabase();
@@ -16,7 +25,18 @@ class PrayerTimesLocalDataSource {
 
     return openDatabase(
       fullPath,
-      version: 1,
+      singleInstance: _singleInstance,
+      version: 2,
+      onUpgrade: (db, oldVersion, newVersion) async {
+        if (oldVersion < 2) {
+          await db.execute(
+            'ALTER TABLE prayer_days ADD COLUMN solar_times_json TEXT',
+          );
+          await db.execute(
+            'ALTER TABLE prayer_days ADD COLUMN high_latitude_fallback INTEGER NOT NULL DEFAULT 0',
+          );
+        }
+      },
       onCreate: (db, version) async {
         await db.execute('''
           CREATE TABLE prayer_profiles (
@@ -54,6 +74,8 @@ class PrayerTimesLocalDataSource {
             isha_utc TEXT NOT NULL,
             fetched_at_utc TEXT NOT NULL,
             source_revision TEXT NOT NULL,
+            solar_times_json TEXT,
+            high_latitude_fallback INTEGER NOT NULL DEFAULT 0,
             PRIMARY KEY (profile_signature, local_date_key)
           )
         ''');

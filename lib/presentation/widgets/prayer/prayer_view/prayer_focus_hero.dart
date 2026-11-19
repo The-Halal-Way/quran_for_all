@@ -20,10 +20,12 @@ class PrayerFocusHero extends StatelessWidget {
     this.sehriEnd,
     this.sehriRange,
     this.iftarTime,
+    this.isEstimated = false,
   });
 
   final PrayerFocusContent content;
   final bool hasTimes;
+  final bool isEstimated;
   final DateTime? endsAtUtc;
   final String? sehriEnd;
   final String? sehriRange;
@@ -74,7 +76,10 @@ class PrayerFocusHero extends StatelessWidget {
                     final heading = Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        PrayerTimeSourceBadge(hasTimes: hasTimes),
+                        PrayerTimeSourceBadge(
+                          hasTimes: hasTimes,
+                          isEstimated: isEstimated,
+                        ),
                         const SizedBox(height: AppSpacing.sm),
                         Text(
                           context.l10n.prayerViewCurrentFocus,

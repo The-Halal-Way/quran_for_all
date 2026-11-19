@@ -65,7 +65,8 @@ class ForbiddenTimesHeader extends StatelessWidget {
               ),
               const SizedBox(height: AppSpacing.xs),
               Text(
-                context.l10n.prayerForbiddenAlertBody,
+                '${context.l10n.prayerForbiddenWindowNote}\n\n'
+                '${context.l10n.prayerForbiddenAlertBody}',
                 style: text.prayerCardBody.copyWith(
                   color: bodyColor,
                   height: 1.5,

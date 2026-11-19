@@ -13,6 +13,8 @@ analyzer:
   exclude:
     # Vendored upstream Dart sources; the local startup patch is Android-only.
     - packages/flutter_tts/**
+    # Vendored astronomical engine; regression-tested through the app adapter.
+    - packages/adhan_dart/**
 
 linter:
   # The lint rules applied to this project can be customized in the

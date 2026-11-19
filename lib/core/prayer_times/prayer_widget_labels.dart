@@ -20,6 +20,9 @@ class PrayerWidgetLabels {
     required this.asr,
     required this.maghrib,
     required this.isha,
+    this.refresh = 'Refresh prayer times',
+    this.refreshing = 'Refreshing prayer times',
+    this.refreshFailed = 'Could not refresh. Tap to try again.',
   });
 
   static const english = PrayerWidgetLabels(
@@ -53,6 +56,9 @@ class PrayerWidgetLabels {
   final String asr;
   final String maghrib;
   final String isha;
+  final String refresh;
+  final String refreshing;
+  final String refreshFailed;
 
   static PrayerWidgetLabels forLocale(String? locale) {
     final appLocale = locale?.toLowerCase().startsWith('bn') == true
@@ -74,6 +80,9 @@ class PrayerWidgetLabels {
       asr: l10n.prayerWidgetAsr,
       maghrib: l10n.prayerWidgetMaghrib,
       isha: l10n.prayerWidgetIsha,
+      refresh: l10n.prayerWidgetRefresh,
+      refreshing: l10n.prayerWidgetRefreshing,
+      refreshFailed: l10n.prayerWidgetRefreshFailed,
     );
   }
 
@@ -93,6 +102,9 @@ class PrayerWidgetLabels {
       'asr': asr,
       'maghrib': maghrib,
       'isha': isha,
+      'refresh': refresh,
+      'refreshing': refreshing,
+      'refreshFailed': refreshFailed,
     };
   }
 
@@ -125,6 +137,9 @@ class PrayerWidgetLabels {
       asr: value('asr', fallback.asr),
       maghrib: value('maghrib', fallback.maghrib),
       isha: value('isha', fallback.isha),
+      refresh: value('refresh', fallback.refresh),
+      refreshing: value('refreshing', fallback.refreshing),
+      refreshFailed: value('refreshFailed', fallback.refreshFailed),
     );
   }
 }

@@ -231,6 +231,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsLegalLinkFailed => 'লিংকটি খোলা যায়নি। আবার চেষ্টা করুন।';
 
   @override
+  String get prayerWidgetRefresh => 'নামাজের সময় হালনাগাদ করুন';
+
+  @override
+  String get prayerWidgetRefreshing => 'নামাজের সময় হালনাগাদ হচ্ছে';
+
+  @override
+  String get prayerWidgetRefreshFailed => 'হালনাগাদ করা যায়নি। আবার ট্যাপ করুন।';
+
+  @override
   String get prayerWidgetTitle => 'মুসলিম ও কুরআন প্রো';
 
   @override
@@ -3265,7 +3274,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerViewCurrentFocus => 'বর্তমান ফোকাস';
 
   @override
-  String get prayerViewLoadedFromLocation => 'লোকেশনভিত্তিক সময়';
+  String get prayerViewLoadedFromLocation => 'অফলাইনে হিসাবকৃত';
 
   @override
   String get prayerViewTimeFallback => 'গাইড মোড';
@@ -3307,7 +3316,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerTimesNetworkErrorTitle => 'নামাজের সময় প্রস্তুত করা যায়নি';
 
   @override
-  String get prayerTimesNetworkErrorBody => 'ইন্টারনেট সংযোগ ও ডিভাইস লোকেশন সেটিংস দেখে আবার চেষ্টা করুন।';
+  String get prayerTimesNetworkErrorBody => 'ডিভাইসের অবস্থান ও তারিখের সেটিংস দেখে আবার চেষ্টা করুন। নামাজের সময় অফলাইনে হিসাব করা হয়। অত্যন্ত উচ্চ অক্ষাংশে কিছু সৌর ঘটনা অনুপস্থিত থাকতে পারে।';
 
   @override
   String get compassTitle => 'কিবলা কম্পাস';
@@ -3514,6 +3523,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get prayerViewSoon => 'শিগগির';
+
+  @override
+  String get prayerForbiddenWindowNote => 'আনুমানিক সতর্কতামূলক সময়সীমা: সূর্যোদয় থেকে পরবর্তী ২০ মিনিট; সৌর মধ্যাহ্নের ৫ মিনিট আগে থেকে ১ মিনিট পর পর্যন্ত; এবং সূর্যাস্তের আগের শেষ ২০ মিনিট। এগুলো সতর্কতার জন্য নির্ধারিত ব্যবধান, সর্বজনীন নির্ভুল শরয়ি সীমা নয়। সৌর ঘটনাগুলো আপনার অবস্থান থেকে হিসাব করা হয়; নামাজের সময়ের ব্যক্তিগত সমন্বয়ে এগুলো বদলায় না। সূত্র: সহিহ মুসলিম ৮৩১।';
+
+  @override
+  String get prayerHighLatitudeEstimate => 'উচ্চ অক্ষাংশের আনুমানিক সময়';
 
   @override
   String get prayerForbiddenTimesTitle => 'নিষিদ্ধ সময়';
