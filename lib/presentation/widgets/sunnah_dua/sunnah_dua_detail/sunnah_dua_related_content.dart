@@ -27,8 +27,9 @@ class SunnahDuaRelatedContent extends StatelessWidget {
         const SizedBox(height: AppSpacing.sm),
         Align(
           alignment: Alignment.centerRight,
-          child: SelectableText(
+          child: Text(
             item.arabic,
+            key: const ValueKey('sunnah-detail-arabic'),
             textDirection: TextDirection.rtl,
             textAlign: TextAlign.right,
             style: text.duahCardArabic.copyWith(

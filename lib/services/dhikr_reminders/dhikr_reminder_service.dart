@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import '../../data/models/dhikr_reminders/dhikr_reminder.dart';
+import '../../data/models/dhikr_reminders/custom_dhikr_reminder.dart';
 import '../../l10n/app_localizations.dart';
 import '../notifications/app_notification_coordinator.dart';
 
@@ -25,7 +26,7 @@ class DhikrReminderService {
     await coordinator.plugin.cancel(id: kind.testNotificationId);
   }
 
-  /// Two native repeating requests survive app termination and are restored by
+  /// Native repeating requests survive app termination and are restored by
   /// the existing Android boot receiver. No Dart timer or background polling.
   Future<void> schedule(
     DhikrReminderKind kind,
@@ -38,6 +39,7 @@ class DhikrReminderService {
       throw ArgumentError.value(reminder.intervalMinutes, 'intervalMinutes');
     }
     await coordinator.initialize();
+    await _ensureSlot(kind.notificationId);
     await coordinator.plugin.periodicallyShowWithDuration(
       id: kind.notificationId,
       title: _title(kind, strings),
@@ -74,21 +76,94 @@ class DhikrReminderService {
     'minutes': reminder.intervalMinutes,
     'sound': reminder.sound.name,
     'locale': strings.localeName,
-    'version': 1,
+    'version': 2,
   });
+
+  Future<void> cancelCustom(CustomDhikrReminder reminder) async {
+    if (!supported) return;
+    await coordinator.initialize();
+    await coordinator.plugin.cancel(id: reminder.id);
+    await coordinator.plugin.cancel(id: reminder.testNotificationId);
+  }
+
+  Future<void> scheduleCustom(
+    CustomDhikrReminder reminder,
+    AppLocalizations strings,
+  ) async {
+    if (!supported) throw UnsupportedError('Custom reminder platform');
+    await coordinator.initialize();
+    await _ensureSlot(reminder.id);
+    await coordinator.plugin.periodicallyShowWithDuration(
+      id: reminder.id,
+      title: reminder.title,
+      body: reminder.subtitle,
+      repeatDurationInterval: Duration(
+        minutes: reminder.settings.intervalMinutes,
+      ),
+      notificationDetails: _details(
+        'custom',
+        reminder.settings.sound,
+        strings.dhikrCustomReminders,
+        strings,
+      ),
+      androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+      payload: customPayload(reminder),
+    );
+  }
+
+  Future<void> testCustom(
+    CustomDhikrReminder reminder,
+    AppLocalizations strings,
+  ) async {
+    await coordinator.initialize();
+    await coordinator.plugin.show(
+      id: reminder.testNotificationId,
+      title: reminder.title,
+      body: reminder.subtitle,
+      notificationDetails: _details(
+        'custom',
+        reminder.settings.sound,
+        strings.dhikrCustomReminders,
+        strings,
+      ),
+      payload: customPayload(reminder),
+    );
+  }
+
+  String customPayload(CustomDhikrReminder reminder) => jsonEncode({
+    'feature': 'dhikrReminders',
+    'kind': 'custom',
+    ...reminder.toJson(),
+    'version': 2,
+  });
+
+  Future<void> _ensureSlot(int id) async {
+    if (defaultTargetPlatform != TargetPlatform.iOS) return;
+    final pending = await coordinator.plugin.pendingNotificationRequests();
+    if (pending.length >= 64 && !pending.any((request) => request.id == id)) {
+      throw const DhikrReminderCapacityException();
+    }
+  }
 
   NotificationDetails details(
     DhikrReminderKind kind,
     DhikrReminderSound sound,
     AppLocalizations strings,
+  ) => _details(kind.name, sound, _title(kind, strings), strings);
+
+  NotificationDetails _details(
+    String group,
+    DhikrReminderSound sound,
+    String title,
+    AppLocalizations strings,
   ) {
     // Android keeps a channel's first sound. Separate stable channels make
     // sound changes effective without deleting the user's channel settings.
-    final channel = 'dhikr_${kind.name}_${sound.name}_v1';
+    final channel = 'dhikr_${group}_${sound.name}_v2';
     return NotificationDetails(
       android: AndroidNotificationDetails(
         channel,
-        '${_title(kind, strings)} · ${sound.name}',
+        '$title · ${sound.resource}',
         channelDescription: strings.dhikrRemindersSubtitle,
         icon: 'ic_dhikr_notification',
         importance: Importance.high,
@@ -101,7 +176,7 @@ class DhikrReminderService {
         sound: sound.filename,
         presentSound: true,
         presentAlert: true,
-        threadIdentifier: 'dhikr_${kind.name}',
+        threadIdentifier: 'dhikr_$group',
       ),
     );
   }
@@ -117,4 +192,8 @@ class DhikrReminderService {
         DhikrReminderKind.durud => strings.dhikrDurudNotification,
         DhikrReminderKind.istighfar => strings.dhikrIstighfarNotification,
       };
+}
+
+class DhikrReminderCapacityException implements Exception {
+  const DhikrReminderCapacityException();
 }

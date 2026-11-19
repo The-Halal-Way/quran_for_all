@@ -5,6 +5,7 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/dua/dua_catalog.dart';
 import 'dua_catalog_visuals.dart';
+import 'dua_occasion_label.dart';
 
 class DuaEntryHeading extends StatelessWidget {
   const DuaEntryHeading({
@@ -22,6 +23,14 @@ class DuaEntryHeading extends StatelessWidget {
     final language = context.l10n.localeName;
     final text = AppTheme.text(context);
     final scheme = Theme.of(context).colorScheme;
+    final when = !entry.practice.when.isEmpty
+        ? entry.practice.when.inLanguage(language)
+        : entry.hasOccasionSelector
+        ? ''
+        : entry.practice.occasions
+              .map((occasion) => duaOccasionLabel(context, entry, occasion))
+              .where((label) => label.isNotEmpty)
+              .join(' · ');
     return Padding(
       padding: const EdgeInsets.only(bottom: AppSpacing.lg),
       child: Column(
@@ -70,10 +79,10 @@ class DuaEntryHeading extends StatelessWidget {
               ),
             ),
           ],
-          if (!entry.practice.when.isEmpty) ...[
+          if (when.isNotEmpty) ...[
             const SizedBox(height: AppSpacing.sm),
             Text(
-              entry.practice.when.inLanguage(language),
+              when,
               style: text.bodyMedium.copyWith(color: scheme.onSurfaceVariant),
             ),
           ],

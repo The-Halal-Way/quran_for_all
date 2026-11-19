@@ -28,6 +28,12 @@ class DuaEntryCopyButton extends StatelessWidget {
     final copied = context.l10n.duahCopied;
     final content = [
       entry.titleFor(language, categoryId),
+      if (entry.benefits.isNotEmpty) context.l10n.sunnahDuaBenefitsLabel,
+      for (final benefit in entry.benefits) ...[
+        context.l10n.duaBenefitKind(benefit.kind),
+        benefit.text.inLanguage(language),
+        benefit.sourceUrl,
+      ],
       for (final part in entry.passagesFor(occasion)) ...[
         if (!part.label.isEmpty) part.label.inLanguage(language),
         if ((part.repetitions ??
@@ -43,9 +49,32 @@ class DuaEntryCopyButton extends StatelessWidget {
       entry.sourceText.inLanguage(language),
       entry.note.inLanguage(language),
       entry.sourceNote.inLanguage(language),
-      for (final report in entry.hadith)
-        '${report.collection.inLanguage(language)} ${report.number}'
-            '${report.grade.isEmpty ? '' : ' · ${report.grade.inLanguage(language)}'}\n${report.url}',
+      for (final report in entry.hadith) ...[
+        '${report.collection.inLanguage(language)} ${report.number}',
+        context.l10n.duaReportType(report.reportType),
+        if (!report.grade.isEmpty)
+          report.grading.by.isEmpty
+              ? report.grade.inLanguage(language)
+              : context.l10n.sunnahGradeBy(
+                  report.grade.inLanguage(language),
+                  report.grading.by.inLanguage(language),
+                ),
+        report.grading.attribution.inLanguage(language),
+        report.grading.url,
+        for (final opinion in report.grading.opinions) ...[
+          if (!opinion.label.isEmpty)
+            opinion.by.isEmpty
+                ? opinion.label.inLanguage(language)
+                : context.l10n.sunnahGradeBy(
+                    opinion.label.inLanguage(language),
+                    opinion.by.inLanguage(language),
+                  ),
+          opinion.attribution.inLanguage(language),
+          opinion.url,
+        ],
+        report.url,
+        if (report.wordingUrl != report.url) report.wordingUrl,
+      ],
       for (final reference in entry.quranReferences)
         duaString(reference['url']),
     ].where((text) => text.isNotEmpty).join('\n\n');

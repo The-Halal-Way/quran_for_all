@@ -1,24 +1,22 @@
-# Demo notification sounds
+# Reminder sounds
 
-Source: **Interface Sounds 1.0**, created/distributed by Kenney (www.kenney.nl).
+The eleven user-supplied notification recordings replace the three demo tones.
+All are mono, 16-bit PCM WAV. Durations range from 8.96 to 29.9 seconds, below
+the iOS custom notification sound limit of 30 seconds. The supplied audio is
+kept unchanged.
 
-- Original pack: https://kenney.nl/assets/interface-sounds
-- Author's mirror: https://opengameart.org/content/interface-sounds
-- Download: https://opengameart.org/sites/default/files/kenney_interfaceSounds.zip
-- License: Creative Commons Zero (CC0 1.0 Universal)
-- License URL: https://creativecommons.org/publicdomain/zero/1.0/
+`DhikrReminderSound` is the sound catalog. Both presets and custom reminders
+use this same catalog. The picker and notification preview share a player
+that stops on switching, closing or leaving the app.
 
-| App file | Original pack file |
-| --- | --- |
-| reminder_glass.wav | Audio/glass_001.ogg |
-| reminder_bell.wav | Audio/bong_001.ogg |
-| reminder_chime.wav | Audio/confirmation_001.ogg |
+Keep identical copies in:
 
-Converted to 16-bit PCM WAV at the original 44.1 kHz. Each is shorter than one second.
-These are demo alert tones, not recordings of Durud or Istighfar.
+- `assets/audio/reminders/` for in-app playback
+- `android/app/src/main/res/raw/` for native notifications
+- `ios/Runner/ReminderSounds/` for native notifications
 
-Identical copies live in Android `res/raw` and iOS Runner resources, because
-native notification delivery cannot play a Flutter asset directly when the
-app is terminated. Keep those copies in sync when replacing a sound.
-For Android, increment the channel suffix in `DhikrReminderService` when
-replacing an existing sound: a channel retains its original sound settings.
+Register new files in the iOS Runner Resources build phase and Android raw
+keep list. Native notifications cannot use Flutter asset paths directly.
+Increment the channel version in `DhikrReminderService` when replacing audio
+under an existing sound name, because Android retains channel sound settings.
+Legacy glass/bell/chime preferences migrate to Ar-Rahman/Ramadan/Rahman.

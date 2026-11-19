@@ -1,3 +1,7 @@
+import 'dhikr_reminder_sound.dart';
+
+export 'dhikr_reminder_sound.dart';
+
 enum DhikrReminderKind {
   durud(1500000001),
   istighfar(1500000002);
@@ -7,22 +11,11 @@ enum DhikrReminderKind {
   int get testNotificationId => notificationId + 100;
 }
 
-enum DhikrReminderSound {
-  glass('reminder_glass'),
-  bell('reminder_bell'),
-  chime('reminder_chime');
-
-  const DhikrReminderSound(this.resource);
-  final String resource;
-  String get filename => '$resource.wav';
-  String get assetPath => 'audio/reminders/$filename';
-}
-
 class DhikrReminder {
   const DhikrReminder({
     this.enabled = false,
     this.intervalMinutes = 60,
-    this.sound = DhikrReminderSound.glass,
+    this.sound = DhikrReminderSound.arRahman,
   });
 
   static const minIntervalMinutes = 1;
@@ -41,10 +34,7 @@ class DhikrReminder {
               minutes <= maxIntervalMinutes
           ? minutes
           : 60,
-      sound: DhikrReminderSound.values.firstWhere(
-        (sound) => sound.name == json['sound'],
-        orElse: () => DhikrReminderSound.glass,
-      ),
+      sound: DhikrReminderSound.parse(json['sound']),
     );
   }
 

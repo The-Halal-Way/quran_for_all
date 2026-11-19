@@ -106,7 +106,7 @@ class _DashboardDateContextSurface extends StatelessWidget {
               child: Column(
                 children: [
                   const DashboardCalendarHeader(),
-                  const SizedBox(height: AppSpacing.md),
+                  const SizedBox(height: AppSpacing.sm),
                   Divider(
                     height: 1,
                     color: colors.outlineVariant.withValues(alpha: .5),

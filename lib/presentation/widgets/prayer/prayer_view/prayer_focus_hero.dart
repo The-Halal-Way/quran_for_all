@@ -44,7 +44,7 @@ class PrayerFocusHero extends StatelessWidget {
           ],
           stops: [0, 0.55, 1],
           begin: Alignment.bottomLeft,
-          end: Alignment.topRight, 
+          end: Alignment.topRight,
         ),
         border: Border.all(
           color: MyColors.primaryLight.withValues(alpha: 0.45),
@@ -67,46 +67,71 @@ class PrayerFocusHero extends StatelessWidget {
               children: [
                 LayoutBuilder(
                   builder: (context, constraints) {
-                    final showArtwork =
+                    final showAside =
                         constraints.maxWidth >= 300 &&
                         MediaQuery.textScalerOf(context).scale(16) <= 20;
+                    final showCountdown = hasTimes && endsAtUtc != null;
+                    final heading = Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        PrayerTimeSourceBadge(hasTimes: hasTimes),
+                        const SizedBox(height: AppSpacing.sm),
+                        Text(
+                          context.l10n.prayerViewCurrentFocus,
+                          style: text.labelMedium.copyWith(
+                            color: MyColors.tertiaryLight,
+                            fontWeight: AppTheme.weightBold,
+                          ),
+                        ),
+                        const SizedBox(height: AppSpacing.xs),
+                        Text(
+                          content.title,
+                          style: text.titleLarge.copyWith(
+                            color: Colors.white,
+                            fontWeight: AppTheme.weightExtraBold,
+                            height: 1.2,
+                          ),
+                        ),
+                      ],
+                    );
+                    final countdown = showCountdown
+                        ? PrayerTimeCountdown(
+                            endsAtUtc: endsAtUtc!,
+                            color: MyColors.tertiaryLight,
+                            prominent: true,
+                          )
+                        : null;
+
+                    if (!showAside) {
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          heading,
+                          if (countdown != null) ...[
+                            const SizedBox(height: AppSpacing.sm),
+                            countdown,
+                          ],
+                        ],
+                      );
+                    }
+
                     return Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              PrayerTimeSourceBadge(hasTimes: hasTimes),
-                              const SizedBox(height: AppSpacing.sm),
-                              Text(
-                                context.l10n.prayerViewCurrentFocus,
-                                style: text.labelMedium.copyWith(
-                                  color: MyColors.tertiaryLight,
-                                  fontWeight: AppTheme.weightBold,
-                                ),
-                              ),
-                              const SizedBox(height: AppSpacing.xs),
-                              Text(
-                                content.title,
-                                style: text.titleLarge.copyWith(
-                                  color: Colors.white,
-                                  fontWeight: AppTheme.weightExtraBold,
-                                  height: 1.2,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        if (showArtwork) ...[
-                          const SizedBox(width: AppSpacing.sm),
+                        Expanded(child: heading),
+                        const SizedBox(width: AppSpacing.sm),
+                        if (countdown != null)
+                          SizedBox(
+                            width: constraints.maxWidth > 500 ? 162 : 142,
+                            child: countdown,
+                          )
+                        else
                           ExcludeSemantics(
                             child: PrayerHeroArtwork(
                               icon: PrayerVisuals.iconFor(content.prayer),
                               size: constraints.maxWidth > 500 ? 84 : 72,
                             ),
                           ),
-                        ],
                       ],
                     );
                   },
@@ -119,13 +144,6 @@ class PrayerFocusHero extends StatelessWidget {
                     height: 1.35,
                   ),
                 ),
-                if (hasTimes && endsAtUtc != null) ...[
-                  const SizedBox(height: AppSpacing.sm),
-                  PrayerTimeCountdown(
-                    endsAtUtc: endsAtUtc!,
-                    color: MyColors.tertiaryLight,
-                  ),
-                ],
               ],
             ),
           ),

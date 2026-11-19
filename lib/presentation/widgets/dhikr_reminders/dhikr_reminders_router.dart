@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import '../../../core/utils/app_page_route.dart';
 import '../../../data/models/dhikr_reminders/dhikr_reminder.dart';
+import '../../../data/models/dhikr_reminders/custom_dhikr_reminder.dart';
 import '../../../l10n/app_localizations.dart';
 import '../../../services/notifications/app_notification_coordinator.dart';
 import '../../viewmodels/dhikr_reminders/dhikr_reminders_viewmodel.dart';
@@ -44,12 +45,18 @@ class _DhikrRemindersRouterState extends State<DhikrRemindersRouter>
     final kind = DhikrReminderKind.values
         .where((kind) => kind.name == payload['kind'])
         .firstOrNull;
-    if (kind == null) return;
+    final id = payload['kind'] == 'custom' && payload['id'] is int
+        ? payload['id'] as int
+        : null;
+    if (kind == null && (id == null || !CustomDhikrReminder.isValidId(id))) {
+      return;
+    }
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       widget.navigatorKey.currentState?.push(
         AppPageRoute<void>(
-          builder: (_) => DhikrRemindersView(initialKind: kind),
+          builder: (_) =>
+              DhikrRemindersView(initialKind: kind, initialCustomId: id),
         ),
       );
     });

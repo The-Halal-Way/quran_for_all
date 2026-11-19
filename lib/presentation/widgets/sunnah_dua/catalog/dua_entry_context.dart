@@ -37,17 +37,14 @@ class DuaEntryContext extends StatelessWidget {
                       style: text.bodyMedium.copyWith(height: 1.6),
                     ),
                   ),
-                SelectableText(
-                  practice,
-                  style: text.bodyMedium.copyWith(height: 1.6),
-                ),
+                Text(practice, style: text.bodyMedium.copyWith(height: 1.6)),
               ],
             ),
           ),
         if (!entry.note.isEmpty)
           DuaDetailSection(
             title: context.l10n.sunnahDuaAuthenticityLabel,
-            child: SelectableText(
+            child: Text(
               entry.note.inLanguage(language),
               style: text.bodyMedium.copyWith(height: 1.6),
             ),

@@ -12,11 +12,13 @@ class PrayerTimeCountdown extends StatefulWidget {
     required this.endsAtUtc,
     required this.color,
     this.prominent = false,
+    this.compact = false,
   });
 
   final DateTime endsAtUtc;
   final Color color;
   final bool prominent;
+  final bool compact;
 
   @override
   State<PrayerTimeCountdown> createState() => _PrayerTimeCountdownState();
@@ -50,6 +52,54 @@ class _PrayerTimeCountdownState extends State<PrayerTimeCountdown> {
         '${hours.toString().padLeft(2, '0')}:'
         '${minutes.toString().padLeft(2, '0')}:'
         '${leftoverSeconds.toString().padLeft(2, '0')}';
+
+    if (widget.compact) {
+      final label = '${context.l10n.prayerTimeRemaining}: $value';
+      return Tooltip(
+        message: label,
+        child: Semantics(
+          label: label,
+          excludeSemantics: true,
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSpacing.sm,
+              vertical: AppSpacing.xs,
+            ),
+            decoration: BoxDecoration(
+              color: widget.color.withValues(alpha: .12),
+              borderRadius: BorderRadius.circular(AppRadius.full),
+              border: Border.all(color: widget.color.withValues(alpha: .25)),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.hourglass_bottom_rounded,
+                  size: 14,
+                  color: widget.color,
+                ),
+                const SizedBox(width: AppSpacing.xs),
+                Flexible(
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      value,
+                      textDirection: TextDirection.ltr,
+                      maxLines: 1,
+                      style: AppTheme.text(context).labelMedium.copyWith(
+                        color: widget.color,
+                        fontWeight: AppTheme.weightBold,
+                        fontFeatures: const [FontFeature.tabularFigures()],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
 
     if (widget.prominent) {
       return Container(

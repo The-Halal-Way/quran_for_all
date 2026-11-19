@@ -96,7 +96,7 @@ class DuaRecitationGuide extends StatelessWidget {
               ),
             ),
           for (final key in ['maddNote', 'shaddahNote', 'pauseNote']) ...[
-            SelectableText(
+            Text(
               DuaText(guide[key]).inLanguage(language),
               style: text.bodyMedium.copyWith(height: 1.6),
             ),

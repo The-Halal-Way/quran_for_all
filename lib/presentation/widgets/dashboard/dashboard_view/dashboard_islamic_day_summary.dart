@@ -46,9 +46,9 @@ class DashboardIslamicDaySummary extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.fromLTRB(
               AppSpacing.xs,
-              AppSpacing.md,
-              AppSpacing.xs,
               AppSpacing.sm,
+              AppSpacing.xs,
+              AppSpacing.xs,
             ),
             child: LayoutBuilder(
               builder: (context, constraints) {
@@ -66,7 +66,7 @@ class DashboardIslamicDaySummary extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       content,
-                      const SizedBox(height: AppSpacing.md),
+                      const SizedBox(height: AppSpacing.sm),
                       dates,
                     ],
                   );
@@ -185,7 +185,7 @@ class _SummaryDateRail extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(
         horizontal: AppSpacing.md,
-        vertical: AppSpacing.sm,
+        vertical: 6,
       ),
       decoration: BoxDecoration(
         color: scheme.surface.withValues(alpha: .42),

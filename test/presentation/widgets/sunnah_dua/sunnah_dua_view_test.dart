@@ -104,7 +104,9 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.byType(SunnahDuaDetailSheet), findsOneWidget);
-    final arabic = tester.widget<SelectableText>(find.byType(SelectableText));
+    final arabic = tester.widget<Text>(
+      find.byKey(const ValueKey('sunnah-detail-arabic')),
+    );
     expect(arabic.data, contains('لَآ'));
     expect(
       arabic.style?.fontFamily,
@@ -128,8 +130,8 @@ void main() {
     await tester.ensureVisible(find.text('Wake up'));
     await tester.tap(find.text('Wake up'));
     await tester.pumpAndSettle();
-    final routineArabic = tester.widget<SelectableText>(
-      find.byType(SelectableText),
+    final routineArabic = tester.widget<Text>(
+      find.byKey(const ValueKey('sunnah-detail-arabic')),
     );
     expect(routineArabic.data, contains('مَآ أَمَاتَنَا'));
     expect(tester.takeException(), isNull);

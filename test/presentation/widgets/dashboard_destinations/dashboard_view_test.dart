@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:quran_for_all/core/localization/l10n_extensions.dart';
+import 'package:quran_for_all/core/theme/app_theme.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/presentation/views/daily_reminders/daily_hadith_view.dart';
@@ -192,7 +194,24 @@ void main() {
     );
 
     expect(find.text('7:30 PM - 4:30 AM'), findsOneWidget);
-    expect(find.textContaining('Waqt ends in:'), findsOneWidget);
+    final countdown = find.byType(PrayerTimeCountdown);
+    expect(tester.widget<PrayerTimeCountdown>(countdown).compact, isTrue);
+    final currentLabel = find.text('Current Prayer');
+    expect(
+      tester.getCenter(countdown).dy,
+      closeTo(tester.getCenter(currentLabel).dy, 1),
+    );
+    expect(
+      tester.getTopLeft(countdown).dx,
+      greaterThan(tester.getTopLeft(currentLabel).dx),
+    );
+    expect(
+      tester.getBottomRight(countdown).dx,
+      closeTo(
+        tester.getBottomRight(find.byType(DashboardPrayerCard)).dx - 14,
+        1,
+      ),
+    );
     expect(
       tester
           .widget<PrayerTimeCountdown>(find.byType(PrayerTimeCountdown))
@@ -201,6 +220,97 @@ void main() {
     );
     expect(tester.takeException(), isNull);
   });
+
+  testWidgets(
+    'prayer summary stays compact and pins timer at regular and large text sizes',
+    (tester) async {
+      await tester.runAsync(() async {
+        await (FontLoader('Manrope')
+              ..addFont(rootBundle.load('assets/fonts/Manrope-Regular.ttf'))
+              ..addFont(rootBundle.load('assets/fonts/Manrope-SemiBold.ttf')))
+            .load();
+        await (FontLoader('Sora')
+              ..addFont(rootBundle.load('assets/fonts/Sora-SemiBold.ttf'))
+              ..addFont(rootBundle.load('assets/fonts/Sora-ExtraBold.ttf')))
+            .load();
+      });
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+      final end = DateTime.now().toUtc().add(
+        const Duration(hours: 19, minutes: 40),
+      );
+      for (final width in [320.0, 390.0]) {
+        await tester.binding.setSurfaceSize(Size(width, 800));
+        for (final locale in ['en', 'bn']) {
+          for (final brightness in Brightness.values) {
+            for (final scale in [1.0, 1.8]) {
+              await tester.pumpWidget(
+                DashboardTestApp(
+                  state: state,
+                  locale: locale,
+                  brightness: brightness,
+                  scale: scale,
+                  theme: brightness == Brightness.light
+                      ? AppTheme.lightTheme
+                      : AppTheme.darkTheme,
+                  home: Scaffold(
+                    body: SingleChildScrollView(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 13),
+                        child: Column(
+                          children: [
+                            DashboardPrayerCard(
+                              times: const {'Isha': '08:22 AM'},
+                              ranges: const {'Isha': '08:22 AM - 07:20 PM'},
+                              current: 'Isha',
+                              currentEndsAtUtc: end,
+                              loading: false,
+                              onRetry: () {},
+                            ),
+                            const SizedBox(height: 12),
+                            const DashboardTrackerPreview(),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              );
+              await tester.pumpAndSettle();
+              final card = find.byType(DashboardPrayerCard);
+              final countdown = find.byType(PrayerTimeCountdown);
+              expect(
+                tester.getBottomRight(countdown).dx,
+                closeTo(tester.getBottomRight(card).dx - 14, 1),
+                reason: '$width/$locale/$brightness/$scale',
+              );
+              if (width == 390 && scale == 1) {
+                expect(
+                  tester.getSize(card).height,
+                  inInclusiveRange(80, 90),
+                  reason:
+                      'The compact prayer card should retain visual weight.',
+                );
+                expect(
+                  (tester.getSize(find.byType(DashboardTrackerPreview)).height -
+                          tester.getSize(card).height)
+                      .abs(),
+                  lessThanOrEqualTo(16),
+                  reason: 'Prayer and tracker should have comparable presence.',
+                );
+              }
+              expect(find.text('08:22 AM - 07:20 PM'), findsOneWidget);
+              expect(tester.takeException(), isNull);
+              await tester.tap(find.byIcon(Icons.expand_more_rounded));
+              await tester.pumpAndSettle();
+              expect(find.byType(DashboardPrayerRow), findsOneWidget);
+              await tester.tap(find.byIcon(Icons.expand_less_rounded));
+              await tester.pumpAndSettle();
+            }
+          }
+        }
+      }
+    },
+  );
 
   testWidgets('before Fajr, Isha summary shows the current window end', (
     tester,

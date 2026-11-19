@@ -48,7 +48,7 @@ class _DashboardPrayerCardState extends State<DashboardPrayerCard> {
       color: colors.surface,
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(AppRadius.lg),
+        borderRadius: BorderRadius.circular(AppRadius.xl),
         side: BorderSide(color: colors.outline.withValues(alpha: 0.5)),
       ),
       child: widget.loading && widget.times.isEmpty

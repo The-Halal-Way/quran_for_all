@@ -1,30 +1,48 @@
-# Dhikr reminders
+# Dhikr and custom reminders
 
-Dashboard → Dhikr Reminders replaces only the dashboard Eid shortcut.
-The Eid prayer guide remains in the Prayer tab.
+Durud and Istighfar remain presets. The reminder page also supports creating,
+editing, enabling/disabling, testing and deleting personal reminders. Custom
+titles and optional subtitles are stored exactly as entered after trimming
+outer whitespace; changing the app language does not translate them.
 
-Durud and Istighfar are independent and disabled by default. Each supports
-1–1440 minute intervals, three bundled sounds, local previews, and an immediate
-test notification. Permission is requested when enabling or testing. A denied
-request leaves an off reminder off; the screen offers notification settings.
+The editor updates its notification preview on every title/subtitle change.
+It uses the selected sound's play/stop control. The appearance is illustrative;
+the native test notification shows the actual device presentation.
 
-Settings use `dhikr_reminders_v1` in SharedPreferences. Two native repeating
-requests use IDs 1500000001–1500000002, outside the Daily Hadith and Islamic
-Days ranges; tests use those IDs plus 100. Turning a reminder off cancels its
-scheduled and test notifications only. Notification taps reopen the settings
-page with the relevant dhikr first.
+## Persistence and delivery
 
-After the first app frame and settings load, only these small preferences are
-read. Enabled reminders reconcile against native pending requests. Matching
-requests are retained so reopening the app does not restart their countdown.
-Locale, interval, or sound changes replace affected requests. Missing requests
-are restored; denied permission cancels deliveries, and returning with
-permission restored re-enables configured reminders. No catalog JSON is read.
+- Presets retain the existing `dhikr_reminders_v1` preference key.
+- Custom records and the monotonically increasing ID counter use
+  `custom_dhikr_reminders_v1`. Deleted IDs are not reused.
+- Each custom reminder owns separate recurring and test notification IDs in
+  the 1500100000–1599999999 range, separate from the two presets and other
+  notification features.
+- Enabling requests notification permission. Disabled records can be saved
+  without permission. A failed save restores the previous native schedule.
+- Native repeating requests continue with the app closed. Reopening retains
+  their countdown when the payload is unchanged. Revoked permission cancels
+  pending delivery while retaining the saved enabled preference for recovery.
+- Android channels are version 2, shared by sound and reminder group. Old
+  demo sound preferences migrate to the new catalog. iOS capacity is checked
+  before adding another request to avoid displacing other scheduled alerts.
+- Notification taps route to the correct preset or highlight the matching
+  custom reminder. Deletion cancels both recurring and test notifications.
 
-Android uses inexact native repeating notifications without exact-alarm
-permission; battery-saving settings, silent mode, channel settings and Do Not
-Disturb still apply. The existing boot receiver restores Android requests.
-iOS uses repeating time-interval notifications and bundled short WAV sounds.
-Only Android and iOS are enabled by this feature.
+## Audio
 
-Sounds and original filenames/license: `assets/audio/reminders/README.md`.
+The eleven supplied PCM WAV files are shared by both reminder types. Identical
+copies are bundled for Flutter previews and native Android/iOS delivery.
+See `assets/audio/reminders/README.md` for replacement instructions. New native
+resources require a full app rebuild.
+
+`DhikrSoundPreview` lazily creates one audio player and serializes native
+commands. Switching, stopping, completion, app suspension and closing clean up
+playback. The editor and its sound picker share that player; there is no
+background timer or startup audio loading.
+
+## Validation
+
+Scoped tests cover migration, scheduling and permission changes, persistence
+rollback, ID allocation, iOS capacity, live preview and editing/deletion,
+sound selection and lifecycle, English/Bangla layouts with large text and the
+keyboard, WAV integrity and byte-identical native resources.

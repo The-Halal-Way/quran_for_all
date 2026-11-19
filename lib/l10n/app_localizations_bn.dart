@@ -2173,6 +2173,80 @@ class AppLocalizationsBn extends AppLocalizations {
   String get duaPracticeEntry => 'সুন্নাহ আমলের স্মারক। নিচের আরবি লেখাটি রোজা সম্পর্কে হাদিসের বক্তব্য।';
 
   @override
+  String duaBenefitKind(String kind) {
+    String _temp0 = intl.Intl.selectLogic(
+      kind,
+      {
+        'reported_virtue': 'বর্ণিত ফজিলত',
+        'reported_context': 'বর্ণিত প্রেক্ষাপট',
+        'reflection': 'অর্থের আলোকে ভাবনা',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String duaOccasionLabel(String occasion) {
+    String _temp0 = intl.Intl.selectLogic(
+      occasion,
+      {
+        'as_needed': 'প্রয়োজন অনুযায়ী',
+        'before_sleep': 'ঘুমানোর আগে',
+        'during_sujud': 'সিজদার সময়',
+        'during_ruku': 'রুকুর সময়',
+        'after_final_tashahhud_before_salam': 'শেষ তাশাহহুদের পরে, সালামের আগে',
+        'after_opening_takbir_before_recitation': 'প্রথম তাকবিরের পরে, কিরাআতের আগে',
+        'standing_after_ruku': 'রুকু থেকে উঠে দাঁড়িয়ে',
+        'sitting_between_two_prostrations': 'দুই সিজদার মাঝে বসে',
+        'qunut_in_witr': 'বিতরের কুনুতে',
+        'after_witr_salam': 'বিতরের সালামের পরে',
+        'opening_night_prayer': 'রাতের নামাজের শুরুতে',
+        'bidding_farewell': 'বিদায় জানানোর সময়',
+        'praying_for_another_person': 'অন্যের জন্য দোয়া করার সময়',
+        'praying_for_a_traveler': 'মুসাফিরের জন্য দোয়া করার সময়',
+        'dawn_while_traveling': 'সফরে ভোরের সময়',
+        'praying_for_someone_who_provides_food_or_drink': 'খাবার বা পানীয় প্রদানকারীর জন্য',
+        'after_eating_with_a_host': 'মেহমান হিসেবে খাবার খাওয়ার পরে',
+        'after_meal': 'খাবারের পরে',
+        'after_rain': 'বৃষ্টির পরে',
+        'asking_for_rain': 'বৃষ্টি চাওয়ার সময়',
+        'harmful_excessive_rain': 'ক্ষতিকর অতিবৃষ্টির সময়',
+        'funeral_prayer_for_a_deceased_muslim': 'মৃত মুসলিমের জানাজার নামাজে',
+        'funeral_prayer': 'জানাজার নামাজে',
+        'consoling_someone_bereaved': 'শোকাহত ব্যক্তিকে সান্ত্বনা দেওয়ার সময়',
+        'placing_deceased_in_grave': 'মৃত ব্যক্তিকে কবরে রাখার সময়',
+        'talbiyah_in_hajj_or_umrah': 'হজ বা উমরায় তালবিয়া',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get duaGradingReference => 'গ্রেডিংয়ের সূত্র';
+
+  @override
+  String get duaGradingOpinions => 'গ্রেডিং সম্পর্কে বর্ণিত মতামত';
+
+  @override
+  String get duaWordingReference => 'শব্দের সূত্র';
+
+  @override
+  String duaReportType(String type) {
+    String _temp0 = intl.Intl.selectLogic(
+      type,
+      {
+        'companion_report': 'সাহাবির বর্ণনা',
+        'companion_practice': 'সাহাবির আমল',
+        'scholarly_reference': 'আলেমের বক্তব্যের সূত্র',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get sunnahDuaHeroEyebrow => 'দৈনন্দিন আমল';
 
   @override
@@ -5136,7 +5210,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dhikrRemindersTitle => 'জিকিরের স্মরণিকা';
 
   @override
-  String get dhikrRemindersSubtitle => 'দিনের ব্যস্ততায় দরুদ ও ইস্তিগফারের জন্য একটু সময় রাখুন।';
+  String get dhikrRemindersSubtitle => 'দরুদ, ইস্তিগফার ও নিজের ভাষায় লেখা স্মরণিকার জন্য সময় রাখুন।';
 
   @override
   String get dhikrDurudTitle => 'দরুদ';
@@ -5185,7 +5259,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dhikrSoundTitle => 'নোটিফিকেশনের শব্দ';
 
   @override
-  String get dhikrSoundHelp => 'ডেমো শব্দ শুনে এই স্মরণিকার জন্য পছন্দের শব্দ বেছে নিন।';
+  String get dhikrSoundHelp => 'এই স্মরণিকার জন্য শব্দ বেছে নিন। প্রয়োগের আগে প্লে বোতাম চেপে শুনুন।';
 
   @override
   String get dhikrSoundGlass => 'কাচের ধ্বনি';
@@ -5228,4 +5302,97 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dhikrTimingNotice => 'অ্যাপ বন্ধ থাকলেও স্মরণিকা চলবে। ব্যাটারি সাশ্রয়ের সেটিংসে নোটিফিকেশন আসতে দেরি হতে পারে। শব্দ শোনা যাবে কি না, তা নোটিফিকেশনের ভলিউম, সাইলেন্ট মোড ও ডু নট ডিস্টার্বের ওপর নির্ভর করে।';
+
+  @override
+  String dhikrSoundName(String sound) {
+    String _temp0 = intl.Intl.selectLogic(
+      sound,
+      {
+        'arRahman': 'আর-রহমান',
+        'allahHu': 'আল্লাহ হু',
+        'allahumma': 'আল্লাহুম্মা',
+        'islamSpecial': 'ইসলাম স্পেশাল',
+        'islamic': 'ইসলামিক',
+        'islamicRingtone': 'ইসলামিক রিংটোন',
+        'muhammad': 'মুহাম্মদ',
+        'quran': 'কুরআন',
+        'rahman': 'রহমান',
+        'ramadan': 'রমাদান',
+        'weddingNasheed': 'ওয়েডিং নাশিদ',
+        'other': 'নোটিফিকেশনের শব্দ',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get dhikrStopPreview => 'শোনা বন্ধ করুন';
+
+  @override
+  String get dhikrCustomReminders => 'আপনার স্মরণিকা';
+
+  @override
+  String get dhikrAddCustom => 'স্মরণিকা যোগ করুন';
+
+  @override
+  String get dhikrNewCustom => 'নতুন স্মরণিকা';
+
+  @override
+  String get dhikrEditCustom => 'স্মরণিকা সম্পাদনা';
+
+  @override
+  String get dhikrCustomTitle => 'নোটিফিকেশনের শিরোনাম';
+
+  @override
+  String get dhikrCustomSubtitle => 'উপশিরোনাম (ঐচ্ছিক)';
+
+  @override
+  String get dhikrCustomTitleHint => 'আপনার স্মরণিকার শিরোনাম';
+
+  @override
+  String get dhikrCustomSubtitleHint => 'কোন বিষয়টি মনে করিয়ে দিতে চান?';
+
+  @override
+  String get dhikrCustomTitleRequired => 'স্মরণিকার একটি শিরোনাম লিখুন।';
+
+  @override
+  String get dhikrEnableReminder => 'স্মরণিকা চালু করুন';
+
+  @override
+  String get dhikrSaveReminder => 'স্মরণিকা সংরক্ষণ করুন';
+
+  @override
+  String get dhikrNotificationPreview => 'নোটিফিকেশনের প্রিভিউ';
+
+  @override
+  String get dhikrPreviewAppearance => 'ডিভাইস অনুযায়ী কিছুটা ভিন্ন দেখাতে পারে।';
+
+  @override
+  String get dhikrPreviewNow => 'এখন';
+
+  @override
+  String get dhikrPresetReminders => 'জিকিরের স্মরণিকা';
+
+  @override
+  String get dhikrCustomEmpty => 'নিজের ভাষা, শব্দ ও ব্যবধান দিয়ে একটি স্মরণিকা তৈরি করুন।';
+
+  @override
+  String get dhikrDeleteCustom => 'স্মরণিকা মুছে ফেলবেন?';
+
+  @override
+  String dhikrDeleteCustomBody(String title) {
+    return '“$title” মুছে এর নোটিফিকেশন বন্ধ করবেন?';
+  }
+
+  @override
+  String get dhikrDeleteAction => 'মুছুন';
+
+  @override
+  String get dhikrEditAction => 'সম্পাদনা';
+
+  @override
+  String get dhikrCancel => 'বাতিল';
+
+  @override
+  String get dhikrScheduleCapacity => 'অনেকগুলো নোটিফিকেশন চালু আছে। অন্য একটি স্মরণিকা বন্ধ করে আবার চেষ্টা করুন।';
 }

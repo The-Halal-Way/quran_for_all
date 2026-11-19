@@ -2173,6 +2173,80 @@ class AppLocalizationsEn extends AppLocalizations {
   String get duaPracticeEntry => 'Sunnah practice reminder. The Arabic below is a hadith statement about fasting.';
 
   @override
+  String duaBenefitKind(String kind) {
+    String _temp0 = intl.Intl.selectLogic(
+      kind,
+      {
+        'reported_virtue': 'Reported virtue',
+        'reported_context': 'Reported context',
+        'reflection': 'Reflection on the meaning',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String duaOccasionLabel(String occasion) {
+    String _temp0 = intl.Intl.selectLogic(
+      occasion,
+      {
+        'as_needed': 'As needed',
+        'before_sleep': 'Before sleeping',
+        'during_sujud': 'During prostration',
+        'during_ruku': 'During bowing',
+        'after_final_tashahhud_before_salam': 'After the final tashahhud, before salam',
+        'after_opening_takbir_before_recitation': 'After the opening takbir, before recitation',
+        'standing_after_ruku': 'Standing after bowing',
+        'sitting_between_two_prostrations': 'Sitting between two prostrations',
+        'qunut_in_witr': 'Qunut in Witr',
+        'after_witr_salam': 'After completing Witr',
+        'opening_night_prayer': 'Opening the night prayer',
+        'bidding_farewell': 'Bidding farewell',
+        'praying_for_another_person': 'Praying for another person',
+        'praying_for_a_traveler': 'Praying for a traveler',
+        'dawn_while_traveling': 'At dawn while traveling',
+        'praying_for_someone_who_provides_food_or_drink': 'For someone who provides food or drink',
+        'after_eating_with_a_host': 'After eating with a host',
+        'after_meal': 'After a meal',
+        'after_rain': 'After rain',
+        'asking_for_rain': 'Asking for rain',
+        'harmful_excessive_rain': 'During harmful, excessive rain',
+        'funeral_prayer_for_a_deceased_muslim': 'Funeral prayer for a deceased Muslim',
+        'funeral_prayer': 'During the funeral prayer',
+        'consoling_someone_bereaved': 'Consoling someone bereaved',
+        'placing_deceased_in_grave': 'Placing the deceased in the grave',
+        'talbiyah_in_hajj_or_umrah': 'Talbiyah during Hajj or Umrah',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get duaGradingReference => 'Grading reference';
+
+  @override
+  String get duaGradingOpinions => 'Reported grading opinions';
+
+  @override
+  String get duaWordingReference => 'Wording reference';
+
+  @override
+  String duaReportType(String type) {
+    String _temp0 = intl.Intl.selectLogic(
+      type,
+      {
+        'companion_report': 'Companion report',
+        'companion_practice': 'Companion practice',
+        'scholarly_reference': 'Scholarly reference',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get sunnahDuaHeroEyebrow => 'Daily practice';
 
   @override
@@ -5143,7 +5217,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dhikrRemindersTitle => 'Dhikr Reminders';
 
   @override
-  String get dhikrRemindersSubtitle => 'Make space for Durud and Istighfar throughout your day.';
+  String get dhikrRemindersSubtitle => 'Make space for Durud, Istighfar and reminders in your own words.';
 
   @override
   String get dhikrDurudTitle => 'Durud';
@@ -5192,7 +5266,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dhikrSoundTitle => 'Notification sound';
 
   @override
-  String get dhikrSoundHelp => 'Preview a demo tone, then choose the sound for this reminder.';
+  String get dhikrSoundHelp => 'Choose a sound. Tap play to listen before applying it.';
 
   @override
   String get dhikrSoundGlass => 'Glass';
@@ -5235,4 +5309,97 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dhikrTimingNotice => 'Reminders continue while the app is closed. Battery-saving settings may delay delivery. Notification volume, silent mode and Do Not Disturb control whether sounds are heard.';
+
+  @override
+  String dhikrSoundName(String sound) {
+    String _temp0 = intl.Intl.selectLogic(
+      sound,
+      {
+        'arRahman': 'Ar-Rahman',
+        'allahHu': 'Allah Hu',
+        'allahumma': 'Allahumma',
+        'islamSpecial': 'Islam Special',
+        'islamic': 'Islamic',
+        'islamicRingtone': 'Islamic Ringtone',
+        'muhammad': 'Muhammad',
+        'quran': 'Quran',
+        'rahman': 'Rahman',
+        'ramadan': 'Ramadan',
+        'weddingNasheed': 'Wedding Nasheed',
+        'other': 'Notification sound',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get dhikrStopPreview => 'Stop preview';
+
+  @override
+  String get dhikrCustomReminders => 'Your reminders';
+
+  @override
+  String get dhikrAddCustom => 'Add reminder';
+
+  @override
+  String get dhikrNewCustom => 'New reminder';
+
+  @override
+  String get dhikrEditCustom => 'Edit reminder';
+
+  @override
+  String get dhikrCustomTitle => 'Notification title';
+
+  @override
+  String get dhikrCustomSubtitle => 'Subtitle (optional)';
+
+  @override
+  String get dhikrCustomTitleHint => 'Your reminder title';
+
+  @override
+  String get dhikrCustomSubtitleHint => 'What would you like to be reminded of?';
+
+  @override
+  String get dhikrCustomTitleRequired => 'Enter a title for your reminder.';
+
+  @override
+  String get dhikrEnableReminder => 'Enable reminder';
+
+  @override
+  String get dhikrSaveReminder => 'Save reminder';
+
+  @override
+  String get dhikrNotificationPreview => 'Notification preview';
+
+  @override
+  String get dhikrPreviewAppearance => 'Appearance may vary by device.';
+
+  @override
+  String get dhikrPreviewNow => 'now';
+
+  @override
+  String get dhikrPresetReminders => 'Dhikr presets';
+
+  @override
+  String get dhikrCustomEmpty => 'Create a reminder with your own words, sound and interval.';
+
+  @override
+  String get dhikrDeleteCustom => 'Delete reminder?';
+
+  @override
+  String dhikrDeleteCustomBody(String title) {
+    return 'Delete “$title” and stop its notifications?';
+  }
+
+  @override
+  String get dhikrDeleteAction => 'Delete';
+
+  @override
+  String get dhikrEditAction => 'Edit';
+
+  @override
+  String get dhikrCancel => 'Cancel';
+
+  @override
+  String get dhikrScheduleCapacity => 'Too many active notifications. Turn off another reminder and try again.';
 }

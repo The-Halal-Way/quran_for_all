@@ -5,6 +5,7 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../data/models/dua/dua_catalog.dart';
 import 'dua_detail_section.dart';
+import 'dua_hadith_card.dart';
 import 'dua_reading_panel.dart';
 import 'dua_source_link.dart';
 
@@ -39,16 +40,13 @@ class DuaEntrySources extends StatelessWidget {
           if (!entry.sourceNote.isEmpty)
             Padding(
               padding: const EdgeInsets.only(bottom: AppSpacing.md),
-              child: SelectableText(
+              child: Text(
                 entry.sourceNote.inLanguage(language),
                 style: text.bodyMedium,
               ),
             ),
           if (!entry.sourceText.isEmpty)
-            SelectableText(
-              entry.sourceText.inLanguage(language),
-              style: text.bodyMedium,
-            ),
+            Text(entry.sourceText.inLanguage(language), style: text.bodyMedium),
           for (final reference in entry.quranReferences)
             Align(
               alignment: AlignmentDirectional.centerStart,
@@ -57,45 +55,7 @@ class DuaEntrySources extends StatelessWidget {
                 url: duaString(reference['url']),
               ),
             ),
-          for (final report in entry.hadith)
-            Container(
-              margin: const EdgeInsets.only(top: AppSpacing.sm),
-              padding: const EdgeInsets.all(AppSpacing.md),
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.surfaceContainerLow,
-                borderRadius: BorderRadius.circular(AppRadius.md),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    '${report.collection.inLanguage(language)} ${report.number}',
-                    style: text.labelLarge.copyWith(
-                      fontWeight: AppTheme.weightBold,
-                    ),
-                  ),
-                  if (!report.grade.isEmpty) ...[
-                    const SizedBox(height: AppSpacing.xs),
-                    Text(
-                      report.grade.inLanguage(language),
-                      style: text.labelMedium.copyWith(
-                        color: Theme.of(context).colorScheme.primary,
-                      ),
-                    ),
-                  ],
-                  const SizedBox(height: AppSpacing.sm),
-                  SelectableText(
-                    report.summary.inLanguage(language),
-                    style: text.bodyMedium.copyWith(height: 1.6),
-                  ),
-                  if (report.url.isNotEmpty)
-                    DuaSourceLink(
-                      label: context.l10n.duaOpenReference,
-                      url: report.url,
-                    ),
-                ],
-              ),
-            ),
+          for (final report in entry.hadith) DuaHadithCard(hadith: report),
         ],
       ),
     );

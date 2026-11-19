@@ -35,25 +35,44 @@ class DashboardPrayerSummary extends StatelessWidget {
     child: InkWell(
       onTap: onToggle,
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(14, 14, 4, 14),
-        child: Row(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Icon(icon, color: Colors.white, size: 26),
-            const SizedBox(width: AppSpacing.md),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
                     context.l10n.dashboardCurrentPrayer,
                     style: AppTheme.text(
                       context,
                     ).labelSmall.copyWith(color: Colors.white70),
                   ),
-                  const SizedBox(height: AppSpacing.xs),
-                  Wrap(
-                    spacing: 12,
-                    runSpacing: 4,
+                ),
+                if (endsAtUtc != null) ...[
+                  const SizedBox(width: AppSpacing.sm),
+                  Flexible(
+                    child: Align(
+                      alignment: AlignmentDirectional.centerEnd,
+                      child: PrayerTimeCountdown(
+                        endsAtUtc: endsAtUtc!,
+                        color: Colors.white,
+                        compact: true,
+                      ),
+                    ),
+                  ),
+                ],
+              ],
+            ),
+            const SizedBox(height: AppSpacing.xs),
+            Row(
+              children: [
+                Icon(icon, color: Colors.white, size: 26),
+                const SizedBox(width: AppSpacing.sm),
+                Expanded(
+                  child: Wrap(
+                    spacing: AppSpacing.sm,
+                    runSpacing: 2,
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Text(
@@ -65,33 +84,31 @@ class DashboardPrayerSummary extends StatelessWidget {
                       ),
                       Text(
                         time,
-                        style: AppTheme.text(
-                          context,
-                        ).titleMedium.copyWith(color: Colors.white),
+                        style: AppTheme.text(context).bodyMedium.copyWith(
+                          color: Colors.white,
+                          fontSize: AppTheme.scaledFontSize(context, 15),
+                          fontWeight: AppTheme.weightSemiBold,
+                        ),
                       ),
                     ],
                   ),
-                  if (endsAtUtc != null) ...[
-                    const SizedBox(height: AppSpacing.xs),
-                    PrayerTimeCountdown(
-                      endsAtUtc: endsAtUtc!,
+                ),
+                const SizedBox(width: AppSpacing.sm),
+                Tooltip(
+                  message: expanded
+                      ? MaterialLocalizations.of(context).expandedIconTapHint
+                      : MaterialLocalizations.of(context).collapsedIconTapHint,
+                  child: ExcludeSemantics(
+                    child: Icon(
+                      expanded
+                          ? Icons.expand_less_rounded
+                          : Icons.expand_more_rounded,
                       color: Colors.white,
+                      size: 22,
                     ),
-                  ],
-                ],
-              ),
-            ),
-            IconButton(
-              onPressed: onToggle,
-              tooltip: expanded
-                  ? MaterialLocalizations.of(context).expandedIconTapHint
-                  : MaterialLocalizations.of(context).collapsedIconTapHint,
-              icon: Icon(
-                expanded
-                    ? Icons.expand_less_rounded
-                    : Icons.expand_more_rounded,
-                color: Colors.white,
-              ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

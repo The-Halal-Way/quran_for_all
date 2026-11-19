@@ -1,5 +1,6 @@
 import '../../../core/utils/dua_search.dart';
 import 'dua_reading.dart';
+import 'dua_benefit.dart';
 import 'dua_text.dart';
 
 class DuaEntry {
@@ -13,6 +14,9 @@ class DuaEntry {
       note = DuaText(json['note']),
       sourceNote = DuaText(json['sourceNote']),
       sourceText = DuaText(json['sourceText']),
+      benefits = List.unmodifiable(
+        duaObjects(json['benefits']).map(DuaBenefit.new),
+      ),
       categoryIds = duaIds(json['categoryIds']),
       relatedIds = duaIds(json['relatedEntryIds']),
       categoryTitles = Map.unmodifiable(
@@ -45,6 +49,7 @@ class DuaEntry {
 
   final String id, type, arabic, searchIndex;
   final DuaText title, pronunciation, meaning, note, sourceNote, sourceText;
+  final List<DuaBenefit> benefits;
   final List<String> categoryIds, relatedIds;
   final Map<String, DuaText> categoryTitles;
   final DuaPractice practice;
@@ -54,6 +59,12 @@ class DuaEntry {
   final List<DuaJson> quranReferences;
   final DuaJson recitation, context;
   final bool isDefault;
+
+  bool get hasOccasionSelector =>
+      practice.occasions.length > 1 &&
+      (practice.countsByOccasion.isNotEmpty ||
+          practice.occasionLabels.isNotEmpty ||
+          segments.any((part) => part.occasionIds.isNotEmpty));
 
   String titleFor(String language, [String? categoryId]) =>
       (categoryTitles[categoryId] ?? title).inLanguage(language);

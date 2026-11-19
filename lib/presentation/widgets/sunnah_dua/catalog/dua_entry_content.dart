@@ -8,6 +8,7 @@ import '../../common/app_page_scrollbar.dart';
 import 'dua_detail_section.dart';
 import 'dua_entry_context.dart';
 import 'dua_entry_heading.dart';
+import 'dua_entry_benefits.dart';
 import 'dua_entry_sources.dart';
 import 'dua_occasion_selector.dart';
 import 'dua_reading_panel.dart';
@@ -34,9 +35,6 @@ class DuaEntryContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final responsive = AppResponsive.of(context);
-    final hasOccasions =
-        entry.practice.countsByOccasion.isNotEmpty ||
-        entry.segments.any((part) => part.occasionIds.isNotEmpty);
     return AppPageScrollbar(
       builder: (context, controller) => Align(
         alignment: Alignment.topCenter,
@@ -52,7 +50,8 @@ class DuaEntryContent extends StatelessWidget {
                 entry: entry,
                 categoryId: categoryId,
               ),
-              if (hasOccasions)
+              DuaEntryBenefits(entry: entry),
+              if (entry.hasOccasionSelector)
                 DuaOccasionSelector(
                   entry: entry,
                   selected: occasion,

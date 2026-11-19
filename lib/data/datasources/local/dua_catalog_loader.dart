@@ -11,6 +11,7 @@ class DuaCatalogLoader {
   DuaCatalogLoader({AssetBundle? bundle}) : _bundle = bundle ?? rootBundle;
   final AssetBundle _bundle;
   static Future<DuaCatalog>? _cached;
+  static const assetPath = 'assets/json/dua_catalog.json';
 
   Future<DuaCatalog> load() {
     if (!identical(_bundle, rootBundle)) return _load();
@@ -21,7 +22,7 @@ class DuaCatalogLoader {
   }
 
   Future<DuaCatalog> _load() async {
-    final raw = await _bundle.loadString('assets/json/dua_catalog.json');
+    final raw = await _bundle.loadString(assetPath, cache: false);
     return compute(_parse, raw, debugLabel: 'dua-catalog');
   }
 }

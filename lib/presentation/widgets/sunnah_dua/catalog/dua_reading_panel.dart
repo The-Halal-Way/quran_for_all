@@ -47,8 +47,9 @@ class DuaReadingPanel extends StatelessWidget {
                 ),
               ),
             ),
-          SelectableText(
+          Text(
             passage.arabic,
+            key: const ValueKey('dua-reading-arabic'),
             textDirection: TextDirection.rtl,
             textAlign: TextAlign.right,
             style: AppTheme.amiri(
@@ -68,8 +69,9 @@ class DuaReadingPanel extends StatelessWidget {
               ),
             ),
             const SizedBox(height: AppSpacing.sm),
-            SelectableText(
+            Text(
               passage.pronunciation.inLanguage(language),
+              key: const ValueKey('dua-reading-pronunciation'),
               style: text.duahCardBodyItalic.copyWith(height: 1.6),
             ),
           ],
@@ -83,8 +85,9 @@ class DuaReadingPanel extends StatelessWidget {
               ),
             ),
             const SizedBox(height: AppSpacing.sm),
-            SelectableText(
+            Text(
               passage.meaning.inLanguage(language),
+              key: const ValueKey('dua-reading-meaning'),
               style: text.duahCardBody.copyWith(height: 1.65),
             ),
           ],

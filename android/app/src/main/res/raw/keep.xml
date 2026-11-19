@@ -1,2 +1,2 @@
 <resources xmlns:tools="http://schemas.android.com/tools"
-    tools:keep="@raw/reminder_glass,@raw/reminder_bell,@raw/reminder_chime,@drawable/ic_dhikr_notification,@mipmap/ic_launcher" />
+    tools:keep="@raw/aarahman_notification,@raw/allah_hu_allah_hu_notification,@raw/allah_humma_notification,@raw/islam_special_notification,@raw/islamic_notification,@raw/islamic_ringtone_notification,@raw/muhammad_notification,@raw/quran_notification,@raw/rahman_notification,@raw/ramadan_sms_notification,@raw/wedding_nasheed_notification,@drawable/ic_dhikr_notification,@mipmap/ic_launcher" />

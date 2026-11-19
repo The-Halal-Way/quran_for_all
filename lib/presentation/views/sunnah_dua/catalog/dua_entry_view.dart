@@ -62,10 +62,7 @@ class _DuaEntryViewState extends State<DuaEntryView> {
   }
 
   String? _occasionFor(DuaEntry entry) =>
-      _occasions[entry.id] ??
-      (entry.practice.occasions.contains(_category.id)
-          ? _category.id
-          : entry.practice.occasions.firstOrNull);
+      _occasions[entry.id] ?? entry.practice.preferredOccasionFor(_category.id);
 
   void _goTo(int index) {
     if (index < 0 || index >= _entries.length || !_controller.hasClients) {

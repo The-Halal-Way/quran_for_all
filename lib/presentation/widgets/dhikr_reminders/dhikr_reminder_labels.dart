@@ -9,11 +9,7 @@ String dhikrReminderTitle(AppLocalizations l10n, DhikrReminderKind kind) =>
     };
 
 String dhikrSoundTitle(AppLocalizations l10n, DhikrReminderSound sound) =>
-    switch (sound) {
-      DhikrReminderSound.glass => l10n.dhikrSoundGlass,
-      DhikrReminderSound.bell => l10n.dhikrSoundBell,
-      DhikrReminderSound.chime => l10n.dhikrSoundChime,
-    };
+    l10n.dhikrSoundName(sound.name);
 
 String dhikrErrorText(AppLocalizations l10n, DhikrReminderError error) =>
     switch (error) {
@@ -22,4 +18,5 @@ String dhikrErrorText(AppLocalizations l10n, DhikrReminderError error) =>
       DhikrReminderError.permission => l10n.dhikrPermissionRequired,
       DhikrReminderError.unsupported => l10n.dhikrUnsupported,
       DhikrReminderError.test => l10n.dhikrTestFailed,
+      DhikrReminderError.capacity => l10n.dhikrScheduleCapacity,
     };

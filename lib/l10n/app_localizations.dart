@@ -4259,6 +4259,42 @@ abstract class AppLocalizations {
   /// **'Sunnah practice reminder. The Arabic below is a hadith statement about fasting.'**
   String get duaPracticeEntry;
 
+  /// No description provided for @duaBenefitKind.
+  ///
+  /// In en, this message translates to:
+  /// **'{kind, select, reported_virtue{Reported virtue} reported_context{Reported context} reflection{Reflection on the meaning} other{}}'**
+  String duaBenefitKind(String kind);
+
+  /// No description provided for @duaOccasionLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'{occasion, select, as_needed{As needed} before_sleep{Before sleeping} during_sujud{During prostration} during_ruku{During bowing} after_final_tashahhud_before_salam{After the final tashahhud, before salam} after_opening_takbir_before_recitation{After the opening takbir, before recitation} standing_after_ruku{Standing after bowing} sitting_between_two_prostrations{Sitting between two prostrations} qunut_in_witr{Qunut in Witr} after_witr_salam{After completing Witr} opening_night_prayer{Opening the night prayer} bidding_farewell{Bidding farewell} praying_for_another_person{Praying for another person} praying_for_a_traveler{Praying for a traveler} dawn_while_traveling{At dawn while traveling} praying_for_someone_who_provides_food_or_drink{For someone who provides food or drink} after_eating_with_a_host{After eating with a host} after_meal{After a meal} after_rain{After rain} asking_for_rain{Asking for rain} harmful_excessive_rain{During harmful, excessive rain} funeral_prayer_for_a_deceased_muslim{Funeral prayer for a deceased Muslim} funeral_prayer{During the funeral prayer} consoling_someone_bereaved{Consoling someone bereaved} placing_deceased_in_grave{Placing the deceased in the grave} talbiyah_in_hajj_or_umrah{Talbiyah during Hajj or Umrah} other{}}'**
+  String duaOccasionLabel(String occasion);
+
+  /// No description provided for @duaGradingReference.
+  ///
+  /// In en, this message translates to:
+  /// **'Grading reference'**
+  String get duaGradingReference;
+
+  /// No description provided for @duaGradingOpinions.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported grading opinions'**
+  String get duaGradingOpinions;
+
+  /// No description provided for @duaWordingReference.
+  ///
+  /// In en, this message translates to:
+  /// **'Wording reference'**
+  String get duaWordingReference;
+
+  /// No description provided for @duaReportType.
+  ///
+  /// In en, this message translates to:
+  /// **'{type, select, companion_report{Companion report} companion_practice{Companion practice} scholarly_reference{Scholarly reference} other{}}'**
+  String duaReportType(String type);
+
   /// No description provided for @sunnahDuaHeroEyebrow.
   ///
   /// In en, this message translates to:
@@ -10010,7 +10046,7 @@ abstract class AppLocalizations {
   /// No description provided for @dhikrRemindersSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Make space for Durud and Istighfar throughout your day.'**
+  /// **'Make space for Durud, Istighfar and reminders in your own words.'**
   String get dhikrRemindersSubtitle;
 
   /// No description provided for @dhikrDurudTitle.
@@ -10100,7 +10136,7 @@ abstract class AppLocalizations {
   /// No description provided for @dhikrSoundHelp.
   ///
   /// In en, this message translates to:
-  /// **'Preview a demo tone, then choose the sound for this reminder.'**
+  /// **'Choose a sound. Tap play to listen before applying it.'**
   String get dhikrSoundHelp;
 
   /// No description provided for @dhikrSoundGlass.
@@ -10186,6 +10222,150 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reminders continue while the app is closed. Battery-saving settings may delay delivery. Notification volume, silent mode and Do Not Disturb control whether sounds are heard.'**
   String get dhikrTimingNotice;
+
+  /// No description provided for @dhikrSoundName.
+  ///
+  /// In en, this message translates to:
+  /// **'{sound, select, arRahman{Ar-Rahman} allahHu{Allah Hu} allahumma{Allahumma} islamSpecial{Islam Special} islamic{Islamic} islamicRingtone{Islamic Ringtone} muhammad{Muhammad} quran{Quran} rahman{Rahman} ramadan{Ramadan} weddingNasheed{Wedding Nasheed} other{Notification sound}}'**
+  String dhikrSoundName(String sound);
+
+  /// No description provided for @dhikrStopPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop preview'**
+  String get dhikrStopPreview;
+
+  /// No description provided for @dhikrCustomReminders.
+  ///
+  /// In en, this message translates to:
+  /// **'Your reminders'**
+  String get dhikrCustomReminders;
+
+  /// No description provided for @dhikrAddCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'Add reminder'**
+  String get dhikrAddCustom;
+
+  /// No description provided for @dhikrNewCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'New reminder'**
+  String get dhikrNewCustom;
+
+  /// No description provided for @dhikrEditCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit reminder'**
+  String get dhikrEditCustom;
+
+  /// No description provided for @dhikrCustomTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification title'**
+  String get dhikrCustomTitle;
+
+  /// No description provided for @dhikrCustomSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Subtitle (optional)'**
+  String get dhikrCustomSubtitle;
+
+  /// No description provided for @dhikrCustomTitleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Your reminder title'**
+  String get dhikrCustomTitleHint;
+
+  /// No description provided for @dhikrCustomSubtitleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'What would you like to be reminded of?'**
+  String get dhikrCustomSubtitleHint;
+
+  /// No description provided for @dhikrCustomTitleRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a title for your reminder.'**
+  String get dhikrCustomTitleRequired;
+
+  /// No description provided for @dhikrEnableReminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable reminder'**
+  String get dhikrEnableReminder;
+
+  /// No description provided for @dhikrSaveReminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Save reminder'**
+  String get dhikrSaveReminder;
+
+  /// No description provided for @dhikrNotificationPreview.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification preview'**
+  String get dhikrNotificationPreview;
+
+  /// No description provided for @dhikrPreviewAppearance.
+  ///
+  /// In en, this message translates to:
+  /// **'Appearance may vary by device.'**
+  String get dhikrPreviewAppearance;
+
+  /// No description provided for @dhikrPreviewNow.
+  ///
+  /// In en, this message translates to:
+  /// **'now'**
+  String get dhikrPreviewNow;
+
+  /// No description provided for @dhikrPresetReminders.
+  ///
+  /// In en, this message translates to:
+  /// **'Dhikr presets'**
+  String get dhikrPresetReminders;
+
+  /// No description provided for @dhikrCustomEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'Create a reminder with your own words, sound and interval.'**
+  String get dhikrCustomEmpty;
+
+  /// No description provided for @dhikrDeleteCustom.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete reminder?'**
+  String get dhikrDeleteCustom;
+
+  /// No description provided for @dhikrDeleteCustomBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete “{title}” and stop its notifications?'**
+  String dhikrDeleteCustomBody(String title);
+
+  /// No description provided for @dhikrDeleteAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get dhikrDeleteAction;
+
+  /// No description provided for @dhikrEditAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get dhikrEditAction;
+
+  /// No description provided for @dhikrCancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get dhikrCancel;
+
+  /// No description provided for @dhikrScheduleCapacity.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many active notifications. Turn off another reminder and try again.'**
+  String get dhikrScheduleCapacity;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
