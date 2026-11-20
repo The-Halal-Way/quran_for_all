@@ -2010,5 +2010,128 @@
   "dhikrDeleteAction": "মুছুন",
   "dhikrEditAction": "সম্পাদনা",
   "dhikrCancel": "বাতিল",
-  "dhikrScheduleCapacity": "অনেকগুলো নোটিফিকেশন চালু আছে। অন্য একটি স্মরণিকা বন্ধ করে আবার চেষ্টা করুন।"
+  "dhikrScheduleCapacity": "অনেকগুলো নোটিফিকেশন চালু আছে। অন্য একটি স্মরণিকা বন্ধ করে আবার চেষ্টা করুন।",
+  "ruqyahTitle": "রুকইয়াহ ও সুরক্ষা",
+  "ruqyahSubtitle": "শিফা ও সুরক্ষার জন্য কুরআন ও সহিহ দোয়া।",
+  "ruqyahHeroTitle": "আশ্রয় চান। প্রশান্তি খুঁজুন।",
+  "ruqyahHeroBody": "নিজের রুকইয়াহ, দৈনন্দিন সুরক্ষা ও দলিল বোঝার ব্যবহারিক সহচর।",
+  "ruqyahGuided": "নির্দেশিত পাঠ",
+  "ruqyahLibrary": "কুরআন ও দোয়া",
+  "ruqyahLearn": "জানুন",
+  "ruqyahStart": "পড়া শুরু করুন",
+  "ruqyahContinue": "পড়া চালিয়ে যান",
+  "ruqyahResumeBody": "আপনার পাঠের অবস্থান ও গণনা এই ডিভাইসে সংরক্ষিত আছে।",
+  "ruqyahReported": "বর্ণিত আমল",
+  "ruqyahArrangement": "সাজানো পাঠক্রম",
+  "ruqyahArrangementNote": "এই পাঠক্রম পড়ার সুবিধার জন্য সাজানো। প্রতিটি পাঠের নিজস্ব উৎস ও প্রসঙ্গ রয়েছে।",
+  "ruqyahSearch": "সূরা, দোয়া বা অর্থ খুঁজুন",
+  "ruqyahAll": "সব",
+  "ruqyahIllness": "অসুস্থতা ও ব্যথা",
+  "ruqyahBedtime": "ঘুমানোর আগে",
+  "ruqyahChildren": "শিশুদের জন্য",
+  "ruqyahProtection": "সুরক্ষা",
+  "ruqyahBookmarks": "সংরক্ষিত",
+  "ruqyahNoResults": "কোনো পাঠ পাওয়া যায়নি। অন্যভাবে খুঁজুন বা ফিল্টার বদলান।",
+  "ruqyahLoadError": "পাঠগুলো খোলা যায়নি। আবার চেষ্টা করুন।",
+  "ruqyahRetry": "আবার চেষ্টা করুন",
+  "ruqyahSources": "উৎস ও প্রসঙ্গ",
+  "ruqyahSourceFailed": "উৎসের লিংক খোলা যায়নি।",
+  "ruqyahPronunciation": "উচ্চারণ",
+  "ruqyahMeaning": "অর্থ",
+  "ruqyahArabic": "আরবি",
+  "ruqyahInstructions": "যেভাবে পড়বেন",
+  "ruqyahReadingSettings": "পড়ার পছন্দ",
+  "ruqyahArabicSize": "আরবি লেখার আকার",
+  "ruqyahSaveReading": "পাঠটি সংরক্ষণ করুন",
+  "ruqyahUnsaveReading": "সংরক্ষণ সরান",
+  "ruqyahPrevious": "পূর্ববর্তী",
+  "ruqyahNext": "পরবর্তী",
+  "ruqyahReadContinue": "পড়েছি, পরবর্তী",
+  "ruqyahDoneContinue": "করেছি, পরবর্তী",
+  "ruqyahFinish": "পাঠ শেষ করুন",
+  "ruqyahCountTap": "পড়ার পর ট্যাপ করুন",
+  "ruqyahUndo": "একটি গণনা কমান",
+  "ruqyahCountDone": "নির্ধারিত গণনা সম্পূর্ণ",
+  "ruqyahSessionComplete": "পাঠ সম্পূর্ণ",
+  "ruqyahCompleteBody": "আপনি এই পাঠ শেষ করেছেন। আল্লাহ আপনাকে স্বস্তি ও সুস্থতা দান করুন।",
+  "ruqyahRestart": "আবার পড়ুন",
+  "ruqyahBackToLibrary": "রুকইয়াহ পাতায় ফিরুন",
+  "ruqyahSaveFailed": "অগ্রগতি সংরক্ষণ করা যায়নি। ডিভাইসের স্টোরেজ দেখুন।",
+  "ruqyahAudio": "এই পাঠের তিলাওয়াত শুনুন",
+  "ruqyahReciter": "মিশারি রশিদ আল-আফাসি · আল কুরআন ক্লাউড",
+  "ruqyahPlay": "প্লে করুন",
+  "ruqyahPause": "বিরতি",
+  "ruqyahRepeat": "অডিও পুনরাবৃত্তি",
+  "ruqyahDownload": "অডিও অফলাইনে রাখুন",
+  "ruqyahDownloaded": "অডিও অফলাইনে আছে",
+  "ruqyahAudioError": "অডিও লোড হয়নি। সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।",
+  "ruqyahAudioPending": "এই দোয়ার যাচাই করা রেকর্ডিং এখনো যুক্ত হয়নি।",
+  "ruqyahAudioNote": "অডিও শুনলে আপনার নিজের পাঠের গণনা বাড়বে না।",
+  "ruqyahCareNote": "চিকিৎসার পাশাপাশি তিলাওয়াত করুন। অসুস্থতায় উপযুক্ত চিকিৎসা নিন।",
+  "ruqyahPosition": "{current} / {total}",
+  "@ruqyahPosition": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "ruqyahCycle": "সম্পূর্ণ আমল {current} / {total}",
+  "@ruqyahCycle": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "ruqyahVerse": "আয়াত {current} / {total}",
+  "@ruqyahVerse": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "duaPurposeLabel": "যে জন্য এই দোয়া",
+  "duaMeaningReflection": "অর্থের আলোকে ভাবুন",
+  "duaBackgroundTitle": "পটভূমি ও প্রসঙ্গ",
+  "duaReportedVirtueLabel": "বর্ণিত ফজিলত",
+  "duaReadReflect": "পড়ুন ও অর্থ বুঝুন",
+  "duaLibraryWelcome": "প্রতিটি মুহূর্তের দোয়া",
+  "duaLibraryInsightsHint": "প্রতিটি দোয়া কেন পড়বেন, তার অর্থ ও পটভূমি জানুন।",
+  "ruqyahCareMethods": "আরোগ্য ও প্রশান্তি",
+  "ruqyahDailyMethods": "দৈনন্দিন সুরক্ষা",
+  "ruqyahUnderstand": "শুরু করার আগে বুঝে নিন",
+  "ruqyahReadMethod": "পদ্ধতি ও দলিল পড়ুন",
+  "ruqyahKnowledgeTitle": "রুকইয়াহকে বুঝুন",
+  "ruqyahKnowledgeBody": "ব্যবহারিক পদ্ধতি, তার দলিল এবং প্রচলিত প্রশ্নের বিবেচনাপূর্ণ উত্তর।",
+  "ruqyahSearchGuides": "পদ্ধতি, প্রশ্ন বা তথ্যসূত্র খুঁজুন",
+  "ruqyahReportedPractice": "বর্ণিত আমলের আলোকে",
+  "ruqyahQuranContext": "কুরআনের প্রেক্ষাপট",
+  "ruqyahScholarlyGuidance": "আলেমদের ব্যাখ্যা",
+  "ruqyahAppGuidance": "পাঠের নির্দেশনা",
+  "ruqyahRelatedMethods": "নির্দেশিত পদ্ধতিতে পড়ুন",
+  "ruqyahRelatedReadings": "সংশ্লিষ্ট আয়াত ও দোয়া পড়ুন",
+  "ruqyahAudience": "এই শব্দগুলো কার জন্য?",
+  "ruqyahBackground": "পটভূমি ও প্রেক্ষাপট",
+  "ruqyahMethod": "এই পাঠ কীভাবে ব্যবহার করবেন",
+  "ruqyahMethodBackground": "পদ্ধতি ও পটভূমি",
+  "ruqyahSourceQuran": "কুরআন",
+  "ruqyahSourceHadith": "হাদিস",
+  "ruqyahSourceMedical": "চিকিৎসাসংক্রান্ত নির্দেশনা",
+  "ruqyahSourceProvider": "অডিও সরবরাহকারী",
+  "ruqyahProgressUpdated": "এই পদ্ধতি হালনাগাদ হয়েছে। ধাপ ও গণনা সঠিক রাখতে নতুন করে পাঠ শুরু হয়েছে।",
+  "ruqyahDaily": "সকাল ও সন্ধ্যা",
+  "ruqyahDistress": "দুশ্চিন্তা ও কষ্ট",
+  "ruqyahTravel": "সফর ও যাত্রাবিরতি",
+  "ruqyahVisiting": "অসুস্থকে দেখতে গেলে"
 }

@@ -29,7 +29,15 @@ class _SunnahDuaSectionSearchState extends State<SunnahDuaSectionSearch> {
   @override
   void didUpdateWidget(covariant SunnahDuaSectionSearch oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (_controller.text != widget.query) _controller.text = widget.query;
+    // A fast native edit can reach the controller before its parent rebuild.
+    // Do not replace that newer text with an older onChanged echo.
+    if (_controller.text != widget.query &&
+        (widget.query.isEmpty || _controller.text == oldWidget.query)) {
+      _controller.value = TextEditingValue(
+        text: widget.query,
+        selection: TextSelection.collapsed(offset: widget.query.length),
+      );
+    }
   }
 
   @override

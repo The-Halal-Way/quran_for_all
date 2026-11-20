@@ -74,6 +74,7 @@ flutter:
     - assets/images/nurani_quran/
     - assets/images/books/
     - assets/json/
+    - assets/json/ruqyah/
     - assets/json/hadith_integrity/
     - assets/json/quiz/kids/beginner/
     - assets/json/quiz/kids/beginner/bangla/

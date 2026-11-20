@@ -8,7 +8,8 @@ import '../../common/app_page_scrollbar.dart';
 import 'dua_detail_section.dart';
 import 'dua_entry_context.dart';
 import 'dua_entry_heading.dart';
-import 'dua_entry_benefits.dart';
+import 'insights/dua_entry_introduction.dart';
+import 'insights/dua_entry_background.dart';
 import 'dua_entry_sources.dart';
 import 'dua_occasion_selector.dart';
 import 'dua_reading_panel.dart';
@@ -50,7 +51,7 @@ class DuaEntryContent extends StatelessWidget {
                 entry: entry,
                 categoryId: categoryId,
               ),
-              DuaEntryBenefits(entry: entry),
+              DuaEntryIntroduction(entry: entry),
               if (entry.hasOccasionSelector)
                 DuaOccasionSelector(
                   entry: entry,
@@ -80,6 +81,7 @@ class DuaEntryContent extends StatelessWidget {
                   url: duaString(entry.recitation['listenUrl']),
                 ),
               const SizedBox(height: AppSpacing.lg),
+              DuaEntryBackground(entry: entry),
               DuaEntryContext(entry: entry),
               DuaEntrySources(
                 entry: entry,

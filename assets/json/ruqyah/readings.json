@@ -1,0 +1,569 @@
+{
+  "version": 1,
+  "text_source": {
+    "label": "Al Quran Cloud / Quran Uthmani; existing app dua catalogue",
+    "url": "https://alquran.cloud/credits"
+  },
+  "audio": {
+    "reciter": "Mishary Rashid Alafasy",
+    "edition": "ar.alafasy",
+    "base_url": "https://cdn.islamic.network/quran/audio/128/ar.alafasy",
+    "source_url": "https://alquran.cloud/cdn",
+    "terms_url": "https://alquran.cloud/terms-and-conditions"
+  },
+  "readings": [
+    {
+      "id": "fatihah",
+      "arabic": "﻿بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ\nٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nمَٰلِكِ يَوْمِ ٱلدِّينِ\nإِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ\nٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ\nصِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 1:1–7",
+            "bn": "কুরআন ১:১–৭"
+          },
+          "url": "https://quran.com/1",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih Bukhari 5736",
+            "bn": "সহিহ বুখারি 5736"
+          },
+          "url": "https://sunnah.com/bukhari:5736",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "complete": true,
+      "canonical_dua_id": null
+    },
+    {
+      "id": "ikhlas",
+      "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ\nاللَّهُ الصَّمَدُ\nلَمْ يَلِدْ وَلَمْ يُولَدْ\nوَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 112",
+            "bn": "কুরআন ১১২"
+          },
+          "url": "https://quran.com/112",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih Bukhari 5017",
+            "bn": "সহিহ বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5082",
+            "bn": "সুনান আবু দাউদ 5082"
+          },
+          "url": "https://sunnah.com/abudawud:5082",
+          "kind": "hadith",
+          "grade": {
+            "en": "Hasan · Al-Albani",
+            "bn": "হাসান · আল-আলবানি"
+          }
+        }
+      ],
+      "verse_ids": [
+        6222,
+        6223,
+        6224,
+        6225
+      ],
+      "complete": true,
+      "canonical_dua_id": "q_surah_al_ikhlas"
+    },
+    {
+      "id": "falaq",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ\nمِنْ شَرِّ مَا خَلَقَ\nوَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ\nوَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ\nوَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 113",
+            "bn": "কুরআন ১১৩"
+          },
+          "url": "https://quran.com/113",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih Bukhari 5735",
+            "bn": "সহিহ বুখারি 5735"
+          },
+          "url": "https://sunnah.com/bukhari:5735",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Bukhari 5017",
+            "bn": "সহিহ বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5082",
+            "bn": "সুনান আবু দাউদ 5082"
+          },
+          "url": "https://sunnah.com/abudawud:5082",
+          "kind": "hadith",
+          "grade": {
+            "en": "Hasan · Al-Albani",
+            "bn": "হাসান · আল-আলবানি"
+          }
+        }
+      ],
+      "verse_ids": [
+        6226,
+        6227,
+        6228,
+        6229,
+        6230
+      ],
+      "complete": true,
+      "canonical_dua_id": "q_surah_al_falaq"
+    },
+    {
+      "id": "nas",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ\nمَلِكِ النَّاسِ\nإِلَهِ النَّاسِ\nمِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ\nالَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ\nمِنَ الْجِنَّةِ وَالنَّاسِ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 114",
+            "bn": "কুরআন ১১৪"
+          },
+          "url": "https://quran.com/114",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih Bukhari 5735",
+            "bn": "সহিহ বুখারি 5735"
+          },
+          "url": "https://sunnah.com/bukhari:5735",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Bukhari 5017",
+            "bn": "সহিহ বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5082",
+            "bn": "সুনান আবু দাউদ 5082"
+          },
+          "url": "https://sunnah.com/abudawud:5082",
+          "kind": "hadith",
+          "grade": {
+            "en": "Hasan · Al-Albani",
+            "bn": "হাসান · আল-আলবানি"
+          }
+        }
+      ],
+      "verse_ids": [
+        6231,
+        6232,
+        6233,
+        6234,
+        6235,
+        6236
+      ],
+      "complete": true,
+      "canonical_dua_id": "q_surah_an_nas"
+    },
+    {
+      "id": "kursi",
+      "arabic": "اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 2:255",
+            "bn": "কুরআন ২:২৫৫"
+          },
+          "url": "https://quran.com/2/255",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih Bukhari 2311",
+            "bn": "সহিহ বুখারি 2311"
+          },
+          "url": "https://sunnah.com/bukhari:2311",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [
+        262
+      ],
+      "complete": true,
+      "canonical_dua_id": "q_ayat_al_kursi"
+    },
+    {
+      "id": "healing",
+      "arabic": "اللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ، اشْفِهِ وَأَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ، شِفَاءً لَا يُغَادِرُ سَقَمًا",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Bukhari 5743",
+            "bn": "সহিহ বুখারি 5743"
+          },
+          "url": "https://sunnah.com/bukhari:5743",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true,
+      "canonical_dua_id": "healing_the_sick"
+    },
+    {
+      "id": "children",
+      "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Bukhari 3371",
+            "bn": "সহিহ বুখারি 3371"
+          },
+          "url": "https://sunnah.com/bukhari:3371",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true,
+      "canonical_dua_id": "protection_for_children"
+    },
+    {
+      "id": "baqarah_last",
+      "arabic": "ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ ۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍۢ مِّن رُّسُلِهِۦ ۚ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ\nلَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًۭا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 2:285–286",
+            "bn": "কুরআন ২:২৮৫–২৮৬"
+          },
+          "url": "https://quran.com/2/285",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih Bukhari 5009",
+            "bn": "সহিহ বুখারি 5009"
+          },
+          "url": "https://sunnah.com/bukhari:5009",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [
+        292,
+        293
+      ],
+      "complete": true,
+      "canonical_dua_id": null
+    },
+    {
+      "id": "bismillah",
+      "arabic": "بِاسْمِ اللَّهِ",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2202",
+            "bn": "সহিহ মুসলিম 2202"
+          },
+          "url": "https://sunnah.com/muslim:2202",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true,
+      "canonical_dua_id": "physical_pain"
+    },
+    {
+      "id": "pain_refuge",
+      "arabic": "أَعُوذُ بِاللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ وَأُحَاذِرُ",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2202",
+            "bn": "সহিহ মুসলিম 2202"
+          },
+          "url": "https://sunnah.com/muslim:2202",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true,
+      "canonical_dua_id": "physical_pain"
+    },
+    {
+      "id": "jibril",
+      "arabic": "بِاسْمِ اللَّهِ أَرْقِيكَ، مِنْ كُلِّ شَيْءٍ يُؤْذِيكَ، مِنْ شَرِّ كُلِّ نَفْسٍ أَوْ عَيْنِ حَاسِدٍ، اللَّهُ يَشْفِيكَ، بِاسْمِ اللَّهِ أَرْقِيكَ",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2186",
+            "bn": "সহিহ মুসলিম 2186"
+          },
+          "url": "https://sunnah.com/muslim:2186",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true,
+      "canonical_dua_id": null
+    },
+    {
+      "id": "perfect_words",
+      "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2708a",
+            "bn": "সহিহ মুসলিম 2708a"
+          },
+          "url": "https://sunnah.com/muslim:2708a",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2708b",
+            "bn": "সহিহ মুসলিম 2708b"
+          },
+          "url": "https://sunnah.com/muslim:2708b",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true,
+      "canonical_dua_id": "refuge_in_allahs_perfect_words"
+    },
+    {
+      "id": "daily_protection",
+      "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ، وَهُوَ السَّمِيعُ الْعَلِيمُ",
+      "sources": [
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5088",
+            "bn": "সুনান আবু দাউদ 5088"
+          },
+          "url": "https://sunnah.com/abudawud:5088",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih · Al-Albani",
+            "bn": "সহিহ · আল-আলবানি"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true,
+      "canonical_dua_id": "protection_from_calamity"
+    },
+    {
+      "id": "visiting_healing",
+      "arabic": "أَسْأَلُ اللَّهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ",
+      "sources": [
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 3106",
+            "bn": "সুনান আবু দাউদ 3106"
+          },
+          "url": "https://sunnah.com/abudawud:3106",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih · Al-Albani",
+            "bn": "সহিহ · আল-আলবানি"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true,
+      "canonical_dua_id": "healing_when_visiting"
+    },
+    {
+      "id": "refuge_shaytan",
+      "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 6115",
+            "bn": "সহিহ আল-বুখারি 6115"
+          },
+          "url": "https://sunnah.com/bukhari:6115",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2262",
+            "bn": "সহিহ মুসলিম 2262"
+          },
+          "url": "https://sunnah.com/muslim:2262",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2203a",
+            "bn": "সহিহ মুসলিম 2203a"
+          },
+          "url": "https://sunnah.com/muslim:2203a",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ],
+      "verse_ids": [],
+      "complete": true
+    },
+    {
+      "id": "ayyub",
+      "arabic": "۞ وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُۥٓ أَنِّى مَسَّنِىَ ٱلضُّرُّ وَأَنتَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 21:83",
+            "bn": "কুরআন 21:83"
+          },
+          "url": "https://quran.com/21/83",
+          "kind": "quran"
+        }
+      ],
+      "verse_ids": [
+        2566
+      ],
+      "complete": true
+    },
+    {
+      "id": "yunus",
+      "arabic": "وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبًۭا فَظَنَّ أَن لَّن نَّقْدِرَ عَلَيْهِ فَنَادَىٰ فِى ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 21:87",
+            "bn": "কুরআন 21:87"
+          },
+          "url": "https://quran.com/21/87",
+          "kind": "quran"
+        }
+      ],
+      "verse_ids": [
+        2570
+      ],
+      "complete": true
+    },
+    {
+      "id": "quran_refuge",
+      "arabic": "وَقُل رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ\nوَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 23:97",
+            "bn": "কুরআন 23:97"
+          },
+          "url": "https://quran.com/23/97",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 23:98",
+            "bn": "কুরআন 23:98"
+          },
+          "url": "https://quran.com/23/98",
+          "kind": "quran"
+        }
+      ],
+      "verse_ids": [
+        2770,
+        2771
+      ],
+      "complete": true
+    }
+  ],
+  "content_revision": 2
+}

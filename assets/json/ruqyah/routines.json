@@ -1,0 +1,571 @@
+{
+  "version": 1,
+  "routines": [
+    {
+      "id": "self",
+      "title": {
+        "en": "Self-ruqyah reading",
+        "bn": "নিজের জন্য রুকইয়াহ পাঠ"
+      },
+      "description": {
+        "en": "Al-Fatihah and protective surahs, with clear sources.",
+        "bn": "আল-ফাতিহা ও সুরক্ষার সূরা, উৎসসহ।"
+      },
+      "kind": "arrangement",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "fatihah",
+          "reading_id": "fatihah",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        },
+        {
+          "id": "falaq",
+          "reading_id": "falaq",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        },
+        {
+          "id": "nas",
+          "reading_id": "nas",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        }
+      ],
+      "guide_id": "practice",
+      "group": "care"
+    },
+    {
+      "id": "pain",
+      "title": {
+        "en": "When the body hurts",
+        "bn": "শরীরে ব্যথা হলে"
+      },
+      "description": {
+        "en": "Follow the two reported steps: three, then seven.",
+        "bn": "বর্ণিত দুটি ধাপ: প্রথমে তিনবার, তারপর সাতবার।"
+      },
+      "kind": "reported",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "begin",
+          "reading_id": "bismillah",
+          "count": 3,
+          "instruction": {
+            "en": "Place your hand where you feel pain and say this three times.",
+            "bn": "ব্যথার স্থানে হাত রেখে এটি তিনবার বলুন।"
+          },
+          "count_source": {
+            "label": {
+              "en": "Sahih Muslim 2202",
+              "bn": "সহিহ মুসলিম 2202"
+            },
+            "url": "https://sunnah.com/muslim:2202",
+            "kind": "hadith",
+            "grade": {
+              "en": "Sahih collection",
+              "bn": "সহিহ সংকলন"
+            }
+          }
+        },
+        {
+          "id": "refuge",
+          "reading_id": "pain_refuge",
+          "count": 7,
+          "instruction": {
+            "en": "Then say this supplication seven times.",
+            "bn": "এরপর এই দোয়া সাতবার বলুন।"
+          },
+          "count_source": {
+            "label": {
+              "en": "Sahih Muslim 2202",
+              "bn": "সহিহ মুসলিম 2202"
+            },
+            "url": "https://sunnah.com/muslim:2202",
+            "kind": "hadith",
+            "grade": {
+              "en": "Sahih collection",
+              "bn": "সহিহ সংকলন"
+            }
+          }
+        }
+      ],
+      "guide_id": "pain_method",
+      "group": "care"
+    },
+    {
+      "id": "bedtime",
+      "title": {
+        "en": "Bedtime protection",
+        "bn": "ঘুমানোর আগে সুরক্ষা"
+      },
+      "description": {
+        "en": "Three surahs, gentle blowing and wiping; three cycles.",
+        "bn": "তিন সূরা, হালকা ফুঁ ও শরীরে মোছা; তিনবার।"
+      },
+      "kind": "reported",
+      "cycles": 3,
+      "cycle_source": {
+        "label": {
+          "en": "Sahih Bukhari 5017",
+          "bn": "সহিহ বুখারি 5017"
+        },
+        "url": "https://sunnah.com/bukhari:5017",
+        "kind": "hadith",
+        "grade": {
+          "en": "Sahih collection",
+          "bn": "সহিহ সংকলন"
+        }
+      },
+      "steps": [
+        {
+          "id": "ikhlas",
+          "reading_id": "ikhlas",
+          "count": null,
+          "instruction": {
+            "en": "Cup your hands together. Recite the three surahs in this cycle.",
+            "bn": "দুই হাত একসঙ্গে করুন। এই ধাপে তিনটি সূরা পড়ুন।"
+          },
+          "count_source": null
+        },
+        {
+          "id": "falaq",
+          "reading_id": "falaq",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        },
+        {
+          "id": "nas",
+          "reading_id": "nas",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        },
+        {
+          "id": "wipe",
+          "reading_id": null,
+          "count": null,
+          "instruction": {
+            "en": "Blow gently over your cupped hands and wipe as much of your body as you can, beginning with your head, face and the front of your body. After this, begin the next complete cycle until you have done three.",
+            "bn": "একসঙ্গে করা দুই হাতে হালকা ফুঁ দিন। মাথা, মুখমণ্ডল ও শরীরের সামনের দিক থেকে শুরু করে যতটা সম্ভব হাত বুলিয়ে নিন। এরপর শুরু থেকে সম্পূর্ণ আমল আবার করুন, এভাবে তিনবার।"
+          },
+          "count_source": null
+        }
+      ],
+      "guide_id": "bedtime_method",
+      "group": "daily"
+    },
+    {
+      "id": "children",
+      "title": {
+        "en": "Protection for children",
+        "bn": "শিশুদের সুরক্ষা"
+      },
+      "description": {
+        "en": "A supplication reported for Al-Hasan and Al-Husayn.",
+        "bn": "হাসান ও হুসাইনের জন্য বর্ণিত দোয়া।"
+      },
+      "kind": "reported",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "children",
+          "reading_id": "children",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        }
+      ],
+      "guide_id": "children_method",
+      "group": "care"
+    },
+    {
+      "id": "night",
+      "title": {
+        "en": "More night recitations",
+        "bn": "রাতের আরও পাঠ"
+      },
+      "description": {
+        "en": "Ayat al-Kursi and the complete last two verses of Al-Baqarah.",
+        "bn": "আয়াতুল কুরসি ও আল-বাকারার সম্পূর্ণ শেষ দুই আয়াত।"
+      },
+      "kind": "arrangement",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "kursi",
+          "reading_id": "kursi",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        },
+        {
+          "id": "baqarah_last",
+          "reading_id": "baqarah_last",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        }
+      ],
+      "guide_id": "home",
+      "group": "daily"
+    },
+    {
+      "id": "patient",
+      "title": {
+        "en": "Praying for someone ill",
+        "bn": "অসুস্থ কারও জন্য দোয়া"
+      },
+      "description": {
+        "en": "Reported healing duas, including the sevenfold visiting supplication.",
+        "bn": "বর্ণিত শিফার দোয়া ও রোগী দেখতে গিয়ে সাতবারের দোয়া।"
+      },
+      "kind": "arrangement",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "welcome",
+          "reading_id": null,
+          "count": null,
+          "instruction": {
+            "en": "Ask whether the person is comfortable with your recitation. This collection brings together separate reports; its combined order is arranged by the app.",
+            "bn": "আপনার পাঠে রোগী স্বস্তি বোধ করছেন কি না জেনে নিন। এতে আলাদা বর্ণনার দোয়া একত্র করা হয়েছে; সম্মিলিত ক্রমটি অ্যাপের সাজানো।"
+          },
+          "count_source": null
+        },
+        {
+          "id": "jibril",
+          "reading_id": "jibril",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        },
+        {
+          "id": "healing",
+          "reading_id": "healing",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        },
+        {
+          "id": "visit",
+          "reading_id": "visiting_healing",
+          "count": 7,
+          "instruction": null,
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 3106",
+              "bn": "সুনান আবু দাউদ 3106"
+            },
+            "url": "https://sunnah.com/abudawud:3106",
+            "kind": "hadith",
+            "grade": {
+              "en": "Sahih · Al-Albani",
+              "bn": "সহিহ · আল-আলবানি"
+            }
+          }
+        }
+      ],
+      "guide_id": "patient_method",
+      "group": "care"
+    },
+    {
+      "id": "morning",
+      "title": {
+        "en": "Morning protection",
+        "bn": "সকালের সুরক্ষা"
+      },
+      "description": {
+        "en": "Three short surahs and the morning protection supplication.",
+        "bn": "ছোট তিন সূরা ও সকালের সুরক্ষার দোয়া।"
+      },
+      "kind": "arrangement",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "ikhlas",
+          "reading_id": "ikhlas",
+          "count": 3,
+          "instruction": {
+            "en": "Recite this surah three times in this morning/evening practice. The bedtime blowing/wiping cycle is a different method.",
+            "bn": "সকাল–সন্ধ্যার এই আমলে সূরাটি তিনবার পড়ুন। ঘুমানোর আগে ফুঁ ও শরীরে মোছার আমল ভিন্ন পদ্ধতি।"
+          },
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 5082",
+              "bn": "সুনান আবু দাউদ 5082"
+            },
+            "url": "https://sunnah.com/abudawud:5082",
+            "kind": "hadith",
+            "grade": {
+              "en": "Hasan · Al-Albani",
+              "bn": "হাসান · আল-আলবানি"
+            }
+          }
+        },
+        {
+          "id": "falaq",
+          "reading_id": "falaq",
+          "count": 3,
+          "instruction": {
+            "en": "Recite this surah three times in this morning/evening practice. The bedtime blowing/wiping cycle is a different method.",
+            "bn": "সকাল–সন্ধ্যার এই আমলে সূরাটি তিনবার পড়ুন। ঘুমানোর আগে ফুঁ ও শরীরে মোছার আমল ভিন্ন পদ্ধতি।"
+          },
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 5082",
+              "bn": "সুনান আবু দাউদ 5082"
+            },
+            "url": "https://sunnah.com/abudawud:5082",
+            "kind": "hadith",
+            "grade": {
+              "en": "Hasan · Al-Albani",
+              "bn": "হাসান · আল-আলবানি"
+            }
+          }
+        },
+        {
+          "id": "nas",
+          "reading_id": "nas",
+          "count": 3,
+          "instruction": {
+            "en": "Recite this surah three times in this morning/evening practice. The bedtime blowing/wiping cycle is a different method.",
+            "bn": "সকাল–সন্ধ্যার এই আমলে সূরাটি তিনবার পড়ুন। ঘুমানোর আগে ফুঁ ও শরীরে মোছার আমল ভিন্ন পদ্ধতি।"
+          },
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 5082",
+              "bn": "সুনান আবু দাউদ 5082"
+            },
+            "url": "https://sunnah.com/abudawud:5082",
+            "kind": "hadith",
+            "grade": {
+              "en": "Hasan · Al-Albani",
+              "bn": "হাসান · আল-আলবানি"
+            }
+          }
+        },
+        {
+          "id": "daily",
+          "reading_id": "daily_protection",
+          "count": 3,
+          "instruction": null,
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 5088",
+              "bn": "সুনান আবু দাউদ 5088"
+            },
+            "url": "https://sunnah.com/abudawud:5088",
+            "kind": "hadith",
+            "grade": {
+              "en": "Sahih · Al-Albani",
+              "bn": "সহিহ · আল-আলবানি"
+            }
+          }
+        }
+      ],
+      "guide_id": "daily_method",
+      "group": "daily"
+    },
+    {
+      "id": "evening",
+      "title": {
+        "en": "Evening protection",
+        "bn": "সন্ধ্যার সুরক্ষা"
+      },
+      "description": {
+        "en": "Evening remembrance with context-specific counts.",
+        "bn": "প্রসঙ্গ অনুযায়ী গণনাসহ সন্ধ্যার যিকির।"
+      },
+      "kind": "arrangement",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "ikhlas",
+          "reading_id": "ikhlas",
+          "count": 3,
+          "instruction": {
+            "en": "Recite this surah three times in this morning/evening practice. The bedtime blowing/wiping cycle is a different method.",
+            "bn": "সকাল–সন্ধ্যার এই আমলে সূরাটি তিনবার পড়ুন। ঘুমানোর আগে ফুঁ ও শরীরে মোছার আমল ভিন্ন পদ্ধতি।"
+          },
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 5082",
+              "bn": "সুনান আবু দাউদ 5082"
+            },
+            "url": "https://sunnah.com/abudawud:5082",
+            "kind": "hadith",
+            "grade": {
+              "en": "Hasan · Al-Albani",
+              "bn": "হাসান · আল-আলবানি"
+            }
+          }
+        },
+        {
+          "id": "falaq",
+          "reading_id": "falaq",
+          "count": 3,
+          "instruction": {
+            "en": "Recite this surah three times in this morning/evening practice. The bedtime blowing/wiping cycle is a different method.",
+            "bn": "সকাল–সন্ধ্যার এই আমলে সূরাটি তিনবার পড়ুন। ঘুমানোর আগে ফুঁ ও শরীরে মোছার আমল ভিন্ন পদ্ধতি।"
+          },
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 5082",
+              "bn": "সুনান আবু দাউদ 5082"
+            },
+            "url": "https://sunnah.com/abudawud:5082",
+            "kind": "hadith",
+            "grade": {
+              "en": "Hasan · Al-Albani",
+              "bn": "হাসান · আল-আলবানি"
+            }
+          }
+        },
+        {
+          "id": "nas",
+          "reading_id": "nas",
+          "count": 3,
+          "instruction": {
+            "en": "Recite this surah three times in this morning/evening practice. The bedtime blowing/wiping cycle is a different method.",
+            "bn": "সকাল–সন্ধ্যার এই আমলে সূরাটি তিনবার পড়ুন। ঘুমানোর আগে ফুঁ ও শরীরে মোছার আমল ভিন্ন পদ্ধতি।"
+          },
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 5082",
+              "bn": "সুনান আবু দাউদ 5082"
+            },
+            "url": "https://sunnah.com/abudawud:5082",
+            "kind": "hadith",
+            "grade": {
+              "en": "Hasan · Al-Albani",
+              "bn": "হাসান · আল-আলবানি"
+            }
+          }
+        },
+        {
+          "id": "daily",
+          "reading_id": "daily_protection",
+          "count": 3,
+          "instruction": null,
+          "count_source": {
+            "label": {
+              "en": "Sunan Abi Dawud 5088",
+              "bn": "সুনান আবু দাউদ 5088"
+            },
+            "url": "https://sunnah.com/abudawud:5088",
+            "kind": "hadith",
+            "grade": {
+              "en": "Sahih · Al-Albani",
+              "bn": "সহিহ · আল-আলবানি"
+            }
+          }
+        },
+        {
+          "id": "refuge",
+          "reading_id": "perfect_words",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        }
+      ],
+      "guide_id": "daily_method",
+      "group": "daily"
+    },
+    {
+      "id": "stopping",
+      "title": {
+        "en": "When stopping at a place",
+        "bn": "কোথাও অবস্থান নেওয়ার সময়"
+      },
+      "description": {
+        "en": "The refuge supplication in Khawlah bint Hakim’s report.",
+        "bn": "খাওলা বিনত হাকিমের বর্ণনায় আশ্রয়ের দোয়া।"
+      },
+      "kind": "reported",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "refuge",
+          "reading_id": "perfect_words",
+          "count": null,
+          "instruction": null,
+          "count_source": null
+        }
+      ],
+      "guide_id": "daily_method",
+      "group": "daily"
+    },
+    {
+      "id": "bad_dream",
+      "title": {
+        "en": "After a disturbing dream",
+        "bn": "দুঃস্বপ্ন দেখার পর"
+      },
+      "description": {
+        "en": "Seeking refuge and the reported change of sleeping side.",
+        "bn": "আশ্রয় প্রার্থনা ও বর্ণিতভাবে শোয়ার পাশ বদলানো।"
+      },
+      "kind": "reported",
+      "cycles": 1,
+      "cycle_source": null,
+      "steps": [
+        {
+          "id": "left",
+          "reading_id": null,
+          "count": null,
+          "instruction": {
+            "en": "Blow/spit lightly to your left three times, without harming or soiling anyone. The following refuge words are a familiar formula; Muslim 2262 gives the instruction to seek refuge, not this exact quoted formula.",
+            "bn": "অন্যের ক্ষতি বা নোংরা না করে বাম দিকে হালকা ফুঁ/থুতু তিনবার দিন। পরের আশ্রয়ের শব্দগুলো পরিচিত বাক্য; মুসলিম ২২৬২-এ আশ্রয় চাওয়ার নির্দেশ আছে, ঠিক এই বাক্য উদ্ধৃত নেই।"
+          },
+          "count_source": null
+        },
+        {
+          "id": "refuge",
+          "reading_id": "refuge_shaytan",
+          "count": 3,
+          "instruction": null,
+          "count_source": {
+            "label": {
+              "en": "Sahih Muslim 2262",
+              "bn": "সহিহ মুসলিম 2262"
+            },
+            "url": "https://sunnah.com/muslim:2262",
+            "kind": "hadith",
+            "grade": {
+              "en": "Sahih collection",
+              "bn": "সহিহ সংকলন"
+            }
+          }
+        },
+        {
+          "id": "turn",
+          "reading_id": null,
+          "count": null,
+          "instruction": {
+            "en": "Turn over to the other side from the one on which you were sleeping. A disturbing dream is not proof that someone has harmed you.",
+            "bn": "যে পাশে শুয়েছিলেন তা বদলে অন্য পাশে শুয়ে পড়ুন। দুঃস্বপ্ন কারও অনিষ্ট করার প্রমাণ নয়।"
+          },
+          "count_source": null
+        }
+      ],
+      "guide_id": "dreams",
+      "group": "daily"
+    }
+  ],
+  "content_revision": 2
+}

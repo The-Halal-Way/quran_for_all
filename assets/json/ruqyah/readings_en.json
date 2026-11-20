@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "language": "en",
+  "readings": {
+    "fatihah": {
+      "pronunciation": "Bismillāhir-Raḥmānir-Raḥīm. Al-ḥamdu lillāhi Rabbil-ʿālamīn. Ar-Raḥmānir-Raḥīm. Māliki yawmid-dīn. Iyyāka naʿbudu wa iyyāka nastaʿīn. Ihdinaṣ-ṣirāṭal-mustaqīm. Ṣirāṭal-ladhīna anʿamta ʿalayhim, ghayril-maghḍūbi ʿalayhim wa laḍ-ḍāllīn.",
+      "meaning": "In the name of Allah, the Most Merciful, the Especially Merciful. All praise belongs to Allah, Lord of all worlds, the Most Merciful, the Especially Merciful, Master of the Day of Judgment. You alone we worship, and You alone we ask for help. Guide us along the straight path: the path of those You have blessed, who have not incurred anger and have not gone astray.",
+      "context": "The Prophet ﷺ approved Al-Fatihah as ruqyah. This reading contains all seven verses. The cited report does not set a universal repetition count.",
+      "details": {
+        "audience": "For yourself or someone who welcomes your recitation.",
+        "background": "The companions’ report describes Al-Fatihah used for a sting; the Prophet ﷺ approved it. The whole surah, rather than only its closing supplication, is provided.",
+        "method": "Recite carefully and ask Allah for healing. The report cited here does not prescribe one repetition number for every illness or every reader."
+      }
+    },
+    "ikhlas": {
+      "pronunciation": "Qul huwallāhu aḥad. Allāhuṣ-ṣamad. Lam yalid wa lam yūlad. Wa lam yakun lahu kufuwan aḥad.",
+      "meaning": "Say: He is Allah, One. Allah is independent, while all depend on Him. He neither begets nor was begotten. No one is equal to Him.",
+      "context": "At bedtime, recite together with Al-Falaq and An-Nas as part of the three-cycle hands-and-body routine. The count belongs to the complete routine.",
+      "details": {
+        "audience": "For personal remembrance and protection.",
+        "background": "It declares Allah’s oneness and complete independence. Morning/evening recitation and the bedtime hands routine come from different reports.",
+        "method": "Morning/evening: read each of the three short surahs three times (Abu Dawud 5082). Bedtime: follow all three recitations with blowing/wiping in the separate three-cycle method (Bukhari 5017)."
+      }
+    },
+    "falaq": {
+      "pronunciation": "Qul aʿūdhu birabbil-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharrin-naffāthāti fil-ʿuqad. Wa min sharri ḥāsidin idhā ḥasad.",
+      "meaning": "Say: I seek the protection of the Lord of daybreak from the evil of His creation, from darkness as it falls, from those who blow upon knots, and from an envier’s evil when they envy.",
+      "context": "Recitation and blowing during illness are reported. At bedtime, read with Al-Ikhlas and An-Nas in the separately described three-cycle routine.",
+      "details": {
+        "audience": "For seeking protection from created harm, envy and other evils named in the surah.",
+        "background": "The surah names harms and asks the Lord of daybreak for refuge. This religious teaching does not identify a particular person as an envier or diagnose the cause of an illness.",
+        "method": "Its illness context is Bukhari 5735. Morning/evening counts and the bedtime cycle are separate practices; choose the matching guided method."
+      }
+    },
+    "nas": {
+      "pronunciation": "Qul aʿūdhu birabbin-nās. Malikin-nās. Ilāhin-nās. Min sharril-waswāsil-khannās. Alladhī yuwaswisu fī ṣudūrin-nās. Minal-jinnati wan-nās.",
+      "meaning": "Say: I seek protection with the Lord, King and God of humankind from the evil of the whisperer who withdraws, who whispers into human hearts, whether from jinn or humankind.",
+      "context": "Read for refuge in Allah. The bedtime routine and the report about illness have distinct instructions; bedtime counts are not automatically illness counts.",
+      "details": {
+        "audience": "For refuge in the Lord, King and God of humankind.",
+        "background": "The surah turns attention to Allah when facing whispering. Its wording names both jinn and people; the app does not turn ordinary distress into a finding of possession.",
+        "method": "Read the complete surah. Use the morning/evening or bedtime method for its corresponding count and actions; the illness report itself does not specify those bedtime counts."
+      }
+    },
+    "kursi": {
+      "pronunciation": "Allāhu lā ilāha illā huwal-Ḥayyul-Qayyūm. Lā taʾkhudhuhu sinatun wa lā nawm. Lahu mā fis-samāwāti wa mā fil-arḍ. Man dhalladhī yashfaʿu ʿindahu illā biʾidhnih. Yaʿlamu mā bayna aydīhim wa mā khalfahum. Wa lā yuḥīṭūna bishayʾin min ʿilmihi illā bimā shāʾ. Wasiʿa kursiyyuhus-samāwāti wal-arḍ. Wa lā yaʾūduhu ḥifẓuhumā wa huwal-ʿAliyyul-ʿAẓīm.",
+      "meaning": "Allah alone deserves worship. He is eternally living and sustains all things. Neither drowsiness nor sleep overtakes Him. Everything in the heavens and earth belongs to Him. None can intercede without His permission. He knows what lies before and behind them; they grasp His knowledge only as He wills. His Kursi encompasses the heavens and earth. Preserving them does not burden Him. He is the Most High, the Magnificent.",
+      "context": "Read the complete verse at bedtime. The cited narration describes protection until morning in that context.",
+      "details": {
+        "audience": "A complete Quran verse for the bedtime context shown here.",
+        "background": "The narrative concerns Abu Hurayra and is confirmed by the Prophet ﷺ. Its stated protection lasts until morning; that timing is part of the evidence.",
+        "method": "Read all of 2:255 when going to bed. This is distinct from the three-surah hands-and-body cycle."
+      }
+    },
+    "healing": {
+      "pronunciation": "Allāhumma rabban-nāsi, adh-hibil-baʾsa, ishfihi wa antash-shāfī. Lā shifāʾa illā shifāʾuka, shifāʾan lā yughādiru saqamā.",
+      "meaning": "O Allah, Lord of humankind, remove the suffering and heal him. You are the Healer. There is no healing except Yours. Grant a recovery that leaves no illness behind.",
+      "context": "A supplication said for an ill person. The wording “ishfihi” means “heal him”. The report describes wiping with the right hand while supplicating.",
+      "details": {
+        "audience": "Reported wording addressed to a male patient.",
+        "background": "“Ishfihi” means “heal him”. The healing supplication recognizes Allah as the Healer; the report describes passing the right hand over the ill person.",
+        "method": "Preserve the displayed reported wording when learning it. For grammatical changes for yourself, a woman or several people, seek language guidance; the app does not silently substitute a new hadith wording."
+      }
+    },
+    "children": {
+      "pronunciation": "Aʿūdhu bi-kalimātillāhit-tāmmati min kulli shayṭānin wa hāmmatin, wa min kulli ʿaynin lāmmah.",
+      "meaning": "I seek refuge through Allah’s perfect words from every devil, every harmful creature, and every evil eye that causes harm.",
+      "context": "The Prophet ﷺ sought protection for Al-Hasan and Al-Husayn with these words. This is the general refuge wording reported in the cited narration.",
+      "details": {
+        "audience": "General refuge wording reported for Al-Hasan and Al-Husayn.",
+        "background": "The wording seeks refuge in Allah’s perfect words from devils, harmful creatures and harmful eyes. Care for a child includes comfort and appropriate medical attention.",
+        "method": "Recite calmly. No force, frightening interrogation or painful handling is part of this guide. The cited report does not assign a fixed count."
+      }
+    },
+    "baqarah_last": {
+      "pronunciation": "Āmanar-rasūlu bimā unzila ilayhi mir-rabbihi wal-muʾminūn. Kullun āmana billāhi wa malāʾikatihi wa kutubihi wa rusulih. Lā nufarriqu bayna aḥadim-mir-rusulih. Wa qālū samiʿnā wa aṭaʿnā, ghufrānaka rabbanā wa ilaykal-maṣīr.\nLā yukallifullāhu nafsan illā wusʿahā. Lahā mā kasabat wa ʿalayhā maktasabat. Rabbanā lā tuʾākhidhnā in nasīnā aw akhṭaʾnā. Rabbanā wa lā taḥmil ʿalaynā iṣran kamā ḥamaltahu ʿalal-ladhīna min qablinā. Rabbanā wa lā tuḥammilnā mā lā ṭāqata lanā bih. Waʿfu ʿannā, waghfir lanā, warḥamnā. Anta mawlānā fanṣurnā ʿalal-qawmil-kāfirīn.",
+      "meaning": "The Messenger believes in what has been sent down to him from his Lord, and so do the believers. All believe in Allah, His angels, His books and His messengers, saying, “We make no distinction between His messengers.” They say, “We hear and obey. Grant us Your forgiveness, our Lord; to You is our return.”\nAllah does not burden a soul beyond its capacity. It receives the good it earns and bears the evil it earns. Our Lord, do not hold us accountable if we forget or make a mistake. Our Lord, do not lay a burden on us like that laid on those before us. Our Lord, do not burden us with what we cannot bear. Pardon us, forgive us and have mercy on us. You are our Protector, so help us against the disbelieving people.",
+      "context": "Both complete verses, 2:285–286. The Prophet ﷺ said they suffice for the one who recites them at night. This reading is separate from the three-surah bedtime cycle.",
+      "details": {
+        "audience": "Night recitation of two complete verses.",
+        "background": "The report says the last two verses suffice at night. The scope of that wording is preserved rather than expanded into a promise that no difficulty can occur.",
+        "method": "Read 2:285 and 2:286 in full. Supplication excerpts from 2:286 alone do not constitute the complete two-verse reading."
+      }
+    },
+    "bismillah": {
+      "pronunciation": "Bismillāh.",
+      "meaning": "In the name of Allah.",
+      "context": "Place your hand where you feel pain. Say Bismillah three times, then the refuge supplication seven times. Open the bodily-pain guided reading to follow both steps.",
+      "details": {
+        "audience": "For yourself, when you feel bodily pain.",
+        "background": "The instruction answered Uthman ibn Abi al-As’s complaint of pain. It combines hand placement and two different recitation counts.",
+        "method": "Place your hand on the painful area. Say Bismillah three times, then the refuge supplication seven times. A counter for one stage must not replace the other stage."
+      }
+    },
+    "pain_refuge": {
+      "pronunciation": "Aʿūdhu billāhi wa qudratihi min sharri mā ajidu wa uḥādhir.",
+      "meaning": "I seek refuge in Allah and His power from the harm I feel and the harm I fear.",
+      "context": "Place your hand where you feel pain. Say Bismillah three times, then the refuge supplication seven times. Open the bodily-pain guided reading to follow both steps.",
+      "details": {
+        "audience": "For yourself, when you feel bodily pain.",
+        "background": "The instruction answered Uthman ibn Abi al-As’s complaint of pain. It combines hand placement and two different recitation counts.",
+        "method": "Place your hand on the painful area. Say Bismillah three times, then the refuge supplication seven times. A counter for one stage must not replace the other stage."
+      }
+    },
+    "jibril": {
+      "pronunciation": "Bismillāhi arqīka, min kulli shayʾin yuʾdhīka, min sharri kulli nafsin aw ʿayni ḥāsidin, Allāhu yashfīka, bismillāhi arqīk.",
+      "meaning": "In Allah’s name I recite ruqyah for you, from everything that harms you, from the evil of every soul or envious eye. May Allah heal you. In Allah’s name I recite ruqyah for you.",
+      "context": "Jibril said this to the Prophet ﷺ during illness. “Arqika” addresses another person; the wording here preserves that reported form.",
+      "details": {
+        "audience": "Recitation for another person; “arqika” means “I recite ruqyah for you”.",
+        "background": "Jibril used these words for the Prophet ﷺ during illness. The statement asks Allah to heal and names harm, an envious eye and other evils without diagnosing any particular patient.",
+        "method": "Read as a supplication for the person addressed. Muslim 2186 does not specify a compulsory repetition count for this wording."
+      }
+    },
+    "perfect_words": {
+      "pronunciation": "Aʿūdhu bi-kalimātillāhit-tāmmāti min sharri mā khalaq.",
+      "meaning": "I seek refuge through Allah’s perfect words from the evil of what He created.",
+      "context": "A refuge supplication reported when stopping at a place and in the evening. These are two contexts for the same words; the cited Muslim reports do not assign a fixed repetition count.",
+      "details": {
+        "audience": "For your own refuge when stopping at a place or in the evening.",
+        "background": "Abu Hurayrah’s narration mentions saying these words in the evening.",
+        "method": "At a stopping place, read the complete supplication. In evening reading, its words are the same. The cited Muslim reports specify no counter; continue after reciting without treating a chosen personal number as prescribed."
+      }
+    },
+    "daily_protection": {
+      "pronunciation": "Bismillāhilladhī lā yaḍurru maʿa ismihi shayʾun fil-arḍi wa lā fis-samāʾi, wa huwas-samīʿul-ʿalīm.",
+      "meaning": "In the name of Allah, with whose name nothing on earth or in heaven can cause harm. He is the All-Hearing, the All-Knowing.",
+      "context": "Reported three times in the morning and three times in the evening, with protection from sudden affliction until the next evening or morning. Keep that timing and scope attached to the report.",
+      "details": {
+        "audience": "Your own morning and evening remembrance.",
+        "background": "Uthman’s report instructs three recitations in the morning and evening. Abu Dawud 5088 specifically describes protection from sudden affliction until the following evening or morning.",
+        "method": "Read three times in the morning and three times in the evening. Use the morning/evening guide for its counter. This is distinct from the three complete bedtime cycles."
+      }
+    },
+    "visiting_healing": {
+      "pronunciation": "Asʾalullāhal-ʿaẓīma rabbal-ʿarshil-ʿaẓīmi an yashfiyak.",
+      "meaning": "I ask Allah the Magnificent, Lord of the Mighty Throne, to heal you.",
+      "context": "Say seven times when visiting an ill person. The report qualifies its promise with the person’s appointed time not having arrived; that is not something we can know or use to judge a patient.",
+      "details": {
+        "audience": "Someone you are visiting who is ill; the wording addresses that person.",
+        "background": "Ibn Abbas reported saying this seven times when visiting the sick. The report qualifies its promise of recovery with the condition that the person’s appointed time has not come.",
+        "method": "Say the complete invocation seven times when visiting. Its wording asks Allah to heal you, addressed to the patient. The reported condition about the appointed time is retained in the context."
+      }
+    },
+    "refuge_shaytan": {
+      "pronunciation": "Aʿūdhu billāhi minash-shayṭānir-rajīm.",
+      "meaning": "I seek refuge in Allah from Shaytan, the rejected.",
+      "context": "This wording is reported in the context of anger. Muslim 2262 instructs seeking refuge after a disturbing dream, while 2203a addresses disruption during prayer; their accompanying actions are explained separately.",
+      "details": {
+        "audience": "Personal reading and reflection.",
+        "background": "This wording is reported in the context of anger. Muslim 2262 instructs seeking refuge after a disturbing dream, while 2203a addresses disruption during prayer; their accompanying actions are explained separately.",
+        "method": "Read with understanding. No fixed repetition count is assigned to this selection."
+      }
+    },
+    "ayyub": {
+      "pronunciation": "Wa Ayyūba idh nādā rabbahū annī massaniyaḍ-ḍurru wa anta arḥamur-rāḥimīn.",
+      "meaning": "And remember Ayyub, when he called upon his Lord: “Suffering has touched me, and You are the most merciful of those who show mercy.”",
+      "context": "The complete verse contains the narrative introduction and Ayyub’s supplication. It gives words for turning to Allah during suffering; it does not prescribe a ruqyah count or a recovery timetable.",
+      "details": {
+        "audience": "Personal reading and reflection.",
+        "background": "The complete verse contains the narrative introduction and Ayyub’s supplication. It gives words for turning to Allah during suffering; it does not prescribe a ruqyah count or a recovery timetable.",
+        "method": "Read with understanding. No fixed repetition count is assigned to this selection."
+      }
+    },
+    "yunus": {
+      "pronunciation": "Wa dhan-nūni idh dhahaba mughāḍiban fa ẓanna al lan naqdira ʿalayhi fa nādā fiẓ-ẓulumāti al lā ilāha illā anta subḥānaka innī kuntu minaẓ-ẓālimīn.",
+      "meaning": "And remember the man of the fish, when he departed in anger, thinking We would not constrain him. In the darkness he called: “There is no deity except You. Glory be to You! I have indeed been among the wrongdoers.”",
+      "context": "The full verse places the familiar supplication within Yunus’s story. Read it with humility and hope. Its inclusion here is a Quranic reading selection, not evidence for a fixed ruqyah sequence or count.",
+      "details": {
+        "audience": "Personal reading and reflection.",
+        "background": "The full verse places the familiar supplication within Yunus’s story. Read it with humility and hope. Its inclusion here is a Quranic reading selection, not evidence for a fixed ruqyah sequence or count.",
+        "method": "Read with understanding. No fixed repetition count is assigned to this selection."
+      }
+    },
+    "quran_refuge": {
+      "pronunciation": "Wa qul rabbi aʿūdhu bika min hamazātish-shayāṭīn. Wa aʿūdhu bika rabbi an yaḥḍurūn.",
+      "meaning": "And say: “My Lord, I seek refuge in You from the promptings of the devils. And I seek refuge in You, my Lord, from their coming near me.”",
+      "context": "Both complete verses, including “And say” at the start of 23:97. They teach refuge in Allah; these verses do not give a fixed repetition count.",
+      "details": {
+        "audience": "Personal reading and reflection.",
+        "background": "Both complete verses, including “And say” at the start of 23:97. They teach refuge in Allah; these verses do not give a fixed repetition count.",
+        "method": "Read with understanding. No fixed repetition count is assigned to this selection."
+      }
+    }
+  },
+  "content_revision": 2
+}

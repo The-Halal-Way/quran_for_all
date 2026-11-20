@@ -1,0 +1,2345 @@
+{
+  "version": 1,
+  "content_revision": 2,
+  "language": "en",
+  "guides": [
+    {
+      "id": "meaning",
+      "group": "foundations",
+      "title": "What ruqyah is, and where it begins",
+      "summary": "Healing, reliance on Allah and the conditions for permissible recitation.",
+      "basis": "scholarly_guidance",
+      "sections": [
+        {
+          "title": "Healing is sought from Allah",
+          "text": "Ruqyah uses recitation and supplication to seek Allah’s help. Quran 17:82 describes healing and mercy; 26:80 attributes healing to Allah. A recording, reader or object has no independent power.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 17:82",
+                "bn": "কুরআন 17:82"
+              },
+              "url": "https://quran.com/17/82",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 26:80",
+                "bn": "কুরআন 26:80"
+              },
+              "url": "https://quran.com/26/80",
+              "kind": "quran"
+            }
+          ]
+        },
+        {
+          "title": "The central boundary",
+          "text": "Muslim 2200 permits ruqyah free from shirk. Recognised scholarly guidance stresses intelligible, sound wording and belief that Allah grants healing. Secret invocations whose meaning cannot be explained do not provide that transparency.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2200",
+                "bn": "সহিহ মুসলিম 2200"
+              },
+              "url": "https://sunnah.com/muslim:2200",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Darul Iftaa Chicago: conditions of ruqyah",
+                "bn": "দারুল ইফতা শিকাগো: রুকইয়াহর শর্ত"
+              },
+              "url": "https://daruliftaa.us/fatwa/324/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Three labels in this library",
+          "text": "A reported practice follows a particular narration. A guided selection combines sourced readings for convenience. Scholarly guidance explains interpretation and practical questions. These labels describe the evidence, not a person’s spiritual rank.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "The themes behind the words",
+          "text": "Understanding the passages helps distinguish an appeal to Allah from treating sound or a number as an independent mechanism. The selected readings have different emphases; they are not interchangeable claims about one particular illness.",
+          "points": [
+            "Al-Fatihah brings praise, worship, reliance and a request for guidance together. Its use as ruqyah is also explicitly recognised in the companion’s encounter recorded in Bukhari 5736.",
+            "Al-Ikhlas affirms Allah’s oneness and self-sufficiency. Al-Falaq asks for refuge from created harms, darkness, harmful magic and envy; An-Nas asks refuge from whispering.",
+            "Ayat al-Kursi describes Allah’s life, knowledge, authority and preservation. Read its complete wording rather than reducing it to a protective symbol."
+          ],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 1",
+                "bn": "কুরআন 1"
+              },
+              "url": "https://quran.com/1",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 112",
+                "bn": "কুরআন 112"
+              },
+              "url": "https://quran.com/112",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 113",
+                "bn": "কুরআন 113"
+              },
+              "url": "https://quran.com/113",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 114",
+                "bn": "কুরআন 114"
+              },
+              "url": "https://quran.com/114",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 2/255",
+                "bn": "কুরআন 2/255"
+              },
+              "url": "https://quran.com/2/255",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5736",
+                "bn": "সহিহ আল-বুখারি 5736"
+              },
+              "url": "https://sunnah.com/bukhari:5736",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "fatihah"
+      ],
+      "routine_ids": [
+        "self"
+      ],
+      "body": "Healing, reliance on Allah and the conditions for permissible recitation.",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 17:82",
+            "bn": "কুরআন 17:82"
+          },
+          "url": "https://quran.com/17/82",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 26:80",
+            "bn": "কুরআন 26:80"
+          },
+          "url": "https://quran.com/26/80",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2200",
+            "bn": "সহিহ মুসলিম 2200"
+          },
+          "url": "https://sunnah.com/muslim:2200",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Darul Iftaa Chicago: conditions of ruqyah",
+            "bn": "দারুল ইফতা শিকাগো: রুকইয়াহর শর্ত"
+          },
+          "url": "https://daruliftaa.us/fatwa/324/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Quran 1",
+            "bn": "কুরআন 1"
+          },
+          "url": "https://quran.com/1",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 112",
+            "bn": "কুরআন 112"
+          },
+          "url": "https://quran.com/112",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 113",
+            "bn": "কুরআন 113"
+          },
+          "url": "https://quran.com/113",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 114",
+            "bn": "কুরআন 114"
+          },
+          "url": "https://quran.com/114",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 2/255",
+            "bn": "কুরআন 2/255"
+          },
+          "url": "https://quran.com/2/255",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5736",
+            "bn": "সহিহ আল-বুখারি 5736"
+          },
+          "url": "https://sunnah.com/bukhari:5736",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "group": "methods",
+      "title": "A complete approach to self-ruqyah",
+      "summary": "Prepare, understand the readings and follow each practice in its own context.",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "Begin with a clear intention",
+          "text": "Choose a comfortable place and ask Allah for help. Read the meaning before starting if useful. This guide adds no initiation, special clothing, purchased product or compulsory daily course.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 26:80",
+                "bn": "কুরআন 26:80"
+              },
+              "url": "https://quran.com/26/80",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Read the actual passages",
+          "text": "Al-Fatihah has an explicit ruqyah report. Al-Falaq and An-Nas occur in the illness practice. Read their complete displayed text carefully; the app’s convenient combined order is not itself a quoted Prophetic sequence.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5736",
+                "bn": "সহিহ আল-বুখারি 5736"
+              },
+              "url": "https://sunnah.com/bukhari:5736",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5735",
+                "bn": "সহিহ আল-বুখারি 5735"
+              },
+              "url": "https://sunnah.com/bukhari:5735",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Understand the physical actions",
+          "text": "The illness report describes gentle blowing and wiping. It does not make forceful spitting, pain or dramatic reactions part of the method. Use the distinct bedtime guide for its specified three-cycle routine.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5735",
+                "bn": "সহিহ আল-বুখারি 5735"
+              },
+              "url": "https://sunnah.com/bukhari:5735",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Continue normal care",
+          "text": "Pause when tired or uncomfortable, and continue appropriate treatment. Progress saved by the app means reading progress; it is not a medical result or proof of a hidden diagnosis.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Choose a method that matches the situation",
+          "text": "Use the purpose of each report to choose where to start. You do not need to complete every routine in this library in one sitting. This is a practical navigation suggestion, not an additional religious obligation.",
+          "points": [
+            "For a painful place in your own body, open the bodily-pain method: the two stages and hand-placement instruction belong together.",
+            "For the three-surah bedtime practice, open Bedtime rather than assuming the illness reading and bedtime cycle are identical.",
+            "When visiting someone ill, choose the visiting method and notice the wording addressed to another person.",
+            "For a general self-reading, the short guided selection brings together separately sourced passages. Read its explanation before treating its order as prescribed."
+          ],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5736",
+                "bn": "সহিহ আল-বুখারি 5736"
+              },
+              "url": "https://sunnah.com/bukhari:5736",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "fatihah",
+        "falaq",
+        "nas"
+      ],
+      "routine_ids": [
+        "self"
+      ],
+      "body": "Prepare, understand the readings and follow each practice in its own context.",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 26:80",
+            "bn": "কুরআন 26:80"
+          },
+          "url": "https://quran.com/26/80",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5736",
+            "bn": "সহিহ আল-বুখারি 5736"
+          },
+          "url": "https://sunnah.com/bukhari:5736",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5735",
+            "bn": "সহিহ আল-বুখারি 5735"
+          },
+          "url": "https://sunnah.com/bukhari:5735",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5017",
+            "bn": "সহিহ আল-বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2202",
+            "bn": "সহিহ মুসলিম 2202"
+          },
+          "url": "https://sunnah.com/muslim:2202",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pain_method",
+      "group": "methods",
+      "title": "Bodily pain: the three-then-seven method",
+      "summary": "Hand placement, separate counts and the meaning of seeking refuge.",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "The reported setting",
+          "text": "Uthman ibn Abi al-As described pain in his body. The Prophet ﷺ taught a hand placement and a two-part supplication. The instruction concerns the pain he reported; it does not identify its medical cause.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Follow the two stages",
+          "text": "Place your hand on the painful area. Say Bismillah three times. Then say the refuge supplication seven times. Complete one stage before moving to the next; each has its own counter.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Keep the scope clear",
+          "text": "The supplication names felt pain and feared harm. It does not promise a recovery deadline. Read with hope while obtaining care for severe, new or persistent pain.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Understand what you are asking",
+          "text": "The first stage begins in Allah’s name. The second seeks refuge in Allah and His power from the harm presently felt and the harm feared. It gives the sufferer words to speak directly; another person’s touch or an audio track is not a substitute specified by this report. The app preserves this narration’s wording rather than silently combining it with similar invocations.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "bismillah",
+        "pain_refuge"
+      ],
+      "routine_ids": [
+        "pain"
+      ],
+      "body": "Hand placement, separate counts and the meaning of seeking refuge.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2202",
+            "bn": "সহিহ মুসলিম 2202"
+          },
+          "url": "https://sunnah.com/muslim:2202",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "bedtime_method",
+      "group": "methods",
+      "title": "Bedtime: what completes one cycle?",
+      "summary": "Three surahs, gentle blowing, wiping and three complete cycles.",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "The complete practice",
+          "text": "Bring your hands together, recite Al-Ikhlas, Al-Falaq and An-Nas, gently blow over the hands and wipe the body. Begin with the head, face and front of the body, covering what you can.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Count whole cycles",
+          "text": "The report describes doing the whole practice three times. This reader therefore repeats all three surahs and the wiping step together. Repeating only the final surah is not how its cycle counter is arranged.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Other night readings are separate",
+          "text": "Ayat al-Kursi and Al-Baqarah’s final two verses have their own night reports. Read the complete passages. Their inclusion in the separate night selection does not make them steps of this three-surah cycle.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 2311",
+                "bn": "সহিহ আল-বুখারি 2311"
+              },
+              "url": "https://sunnah.com/bukhari:2311",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5009",
+                "bn": "সহিহ আল-বুখারি 5009"
+              },
+              "url": "https://sunnah.com/bukhari:5009",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "A practical reading checklist",
+          "text": "The physical action is part of the reported practice, while the on-screen navigation simply helps you follow it. Each completed cycle returns to the first surah; the app does not count a recording as your own recitation.",
+          "points": [
+            "Keep the hands together and use gentle blowing as described in the report, without forceful expulsion of saliva.",
+            "Read all three complete surahs. Their displayed order is Al-Ikhlas, Al-Falaq and An-Nas.",
+            "Wipe what you can of the body, beginning with the head, face and front. Then repeat the complete practice until three cycles are finished."
+          ],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "ikhlas",
+        "falaq",
+        "nas",
+        "kursi",
+        "baqarah_last"
+      ],
+      "routine_ids": [
+        "bedtime",
+        "night"
+      ],
+      "body": "Three surahs, gentle blowing, wiping and three complete cycles.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5017",
+            "bn": "সহিহ আল-বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 2311",
+            "bn": "সহিহ আল-বুখারি 2311"
+          },
+          "url": "https://sunnah.com/bukhari:2311",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5009",
+            "bn": "সহিহ আল-বুখারি 5009"
+          },
+          "url": "https://sunnah.com/bukhari:5009",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ]
+    },
+    {
+      "id": "daily_method",
+      "group": "methods",
+      "title": "Morning, evening and stopping at a place",
+      "summary": "Match each remembrance to its timing and its own source.",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "The three short surahs",
+          "text": "Abu Dawud 5082 teaches Al-Ikhlas, Al-Falaq and An-Nas three times in the morning and evening. It is graded Hasan by Al-Albani on the linked source. The bedtime blowing/wiping method is a separate report.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 5082",
+                "bn": "সুনান আবু দাউদ 5082"
+              },
+              "url": "https://sunnah.com/abudawud:5082",
+              "kind": "hadith",
+              "grade": {
+                "en": "Hasan · Al-Albani",
+                "bn": "হাসান · আল-আলবানি"
+              }
+            }
+          ]
+        },
+        {
+          "title": "The invocation against sudden affliction",
+          "text": "Abu Dawud 5088 specifies three recitations in the morning or evening and the following evening or morning as the report’s time span. It should not be expanded into immunity from every illness or life trial.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 5088",
+                "bn": "সুনান আবু দাউদ 5088"
+              },
+              "url": "https://sunnah.com/abudawud:5088",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih · Al-Albani",
+                "bn": "সহিহ · আল-আলবানি"
+              }
+            }
+          ]
+        },
+        {
+          "title": "The perfect-words supplication",
+          "text": "Muslim 2708a gives a stopping-place context; 2708b/2709a also records an evening context. The Muslim reports cited here give no numerical count, so this reader assigns none.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2708a",
+                "bn": "সহিহ মুসলিম 2708a"
+              },
+              "url": "https://sunnah.com/muslim:2708a",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih Muslim 2708b",
+                "bn": "সহিহ মুসলিম 2708b"
+              },
+              "url": "https://sunnah.com/muslim:2708b",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Keep the settings distinct",
+          "text": "Morning/evening remembrance and stopping at a place have different settings. The morning and evening lists combine separate reports for convenient reading; the combined list is not presented as one hadith. An unfamiliar location does not require you to wait for evening before using the stopping-place supplication. Follow each source’s setting rather than assigning one timetable to everything.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2708a",
+                "bn": "সহিহ মুসলিম 2708a"
+              },
+              "url": "https://sunnah.com/muslim:2708a",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "daily_protection",
+        "perfect_words"
+      ],
+      "routine_ids": [
+        "morning",
+        "evening",
+        "stopping"
+      ],
+      "body": "Match each remembrance to its timing and its own source.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5082",
+            "bn": "সুনান আবু দাউদ 5082"
+          },
+          "url": "https://sunnah.com/abudawud:5082",
+          "kind": "hadith",
+          "grade": {
+            "en": "Hasan · Al-Albani",
+            "bn": "হাসান · আল-আলবানি"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5088",
+            "bn": "সুনান আবু দাউদ 5088"
+          },
+          "url": "https://sunnah.com/abudawud:5088",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih · Al-Albani",
+            "bn": "সহিহ · আল-আলবানি"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2708a",
+            "bn": "সহিহ মুসলিম 2708a"
+          },
+          "url": "https://sunnah.com/muslim:2708a",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2708b",
+            "bn": "সহিহ মুসলিম 2708b"
+          },
+          "url": "https://sunnah.com/muslim:2708b",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ]
+    },
+    {
+      "id": "patient_method",
+      "group": "methods",
+      "title": "Reciting for someone who is ill",
+      "summary": "Reported wording, the sevenfold visiting dua and the person’s comfort.",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "Know whom the words address",
+          "text": "Bismillahi arqika addresses another person. The displayed “ishfihi” wording asks Allah to heal him. These forms are preserved as narrated; a grammatical change should be understood rather than mistaken for the exact source wording.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2186",
+                "bn": "সহিহ মুসলিম 2186"
+              },
+              "url": "https://sunnah.com/muslim:2186",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5743",
+                "bn": "সহিহ আল-বুখারি 5743"
+              },
+              "url": "https://sunnah.com/bukhari:5743",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "The sevenfold visiting supplication",
+          "text": "Abu Dawud 3106 teaches seven recitations and includes the condition that the person’s appointed time has not arrived. We cannot know that condition or use an outcome to blame the patient.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 3106",
+                "bn": "সুনান আবু দাউদ 3106"
+              },
+              "url": "https://sunnah.com/abudawud:3106",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih · Al-Albani",
+                "bn": "সহিহ · আল-আলবানি"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Care and boundaries",
+          "text": "Explain what you will recite and respect consent, privacy and religious boundaries. The app combines separate reports for convenience; it does not present its combined order as a single transmitted ritual.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Jordan Iftaa 672: treatment with Quran",
+                "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "A bedside visit is more than a counter",
+          "text": "Read in a way the person can comfortably receive. The app’s visiting method begins with a reminder to explain what you will say. Its sevenfold supplication is addressed to the patient, while other healing wordings have their own grammatical form and context. Finishing the steps records your reading; it does not reveal the person’s appointed time or predict the course of their illness.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2186",
+                "bn": "সহিহ মুসলিম 2186"
+              },
+              "url": "https://sunnah.com/muslim:2186",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5743",
+                "bn": "সহিহ আল-বুখারি 5743"
+              },
+              "url": "https://sunnah.com/bukhari:5743",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 3106",
+                "bn": "সুনান আবু দাউদ ৩১০৬"
+              },
+              "url": "https://sunnah.com/abudawud:3106",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih · Al-Albani",
+                "bn": "সহিহ · আল-আলবানি"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "healing",
+        "jibril",
+        "visiting_healing"
+      ],
+      "routine_ids": [
+        "patient"
+      ],
+      "body": "Reported wording, the sevenfold visiting dua and the person’s comfort.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2186",
+            "bn": "সহিহ মুসলিম 2186"
+          },
+          "url": "https://sunnah.com/muslim:2186",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5743",
+            "bn": "সহিহ আল-বুখারি 5743"
+          },
+          "url": "https://sunnah.com/bukhari:5743",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 3106",
+            "bn": "সুনান আবু দাউদ 3106"
+          },
+          "url": "https://sunnah.com/abudawud:3106",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih · Al-Albani",
+            "bn": "সহিহ · আল-আলবানি"
+          }
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Jordan Iftaa 672: treatment with Quran",
+            "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+          },
+          "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "children_method",
+      "group": "methods",
+      "title": "Protection for children, with gentleness",
+      "summary": "The reported refuge wording and practical care for a child.",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "The report and its wording",
+          "text": "Bukhari 3371 reports the Prophet ﷺ seeking protection for Al-Hasan and Al-Husayn and recalling Ibrahim’s protection for Ismail and Ishaq. The displayed version keeps the general refuge wording of that report.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 3371",
+                "bn": "সহিহ আল-বুখারি 3371"
+              },
+              "url": "https://sunnah.com/bukhari:3371",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Comfort is part of care",
+          "text": "Recite calmly and stop if the child is distressed. Do not frighten, restrain, hurt or interrogate a child to produce a reaction. A caregiver’s concern should also lead to appropriate assessment when a child is unwell.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Counts and ordinary precautions",
+          "text": "This cited report gives no fixed count. The supplication names harmful creatures and harmful eyes, while ordinary safety, hygiene and healthcare remain necessary parts of looking after a child.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 3371",
+                "bn": "সহিহ আল-বুখারি 3371"
+              },
+              "url": "https://sunnah.com/bukhari:3371",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "children"
+      ],
+      "routine_ids": [
+        "children"
+      ],
+      "body": "The reported refuge wording and practical care for a child.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 3371",
+            "bn": "সহিহ আল-বুখারি 3371"
+          },
+          "url": "https://sunnah.com/bukhari:3371",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "dreams",
+      "group": "understanding",
+      "title": "Disturbing dreams and whispering",
+      "summary": "Two reported situations, two methods, without diagnosing hidden causes.",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "After an unpleasant dream",
+          "text": "Muslim 2262 instructs light spitting to the left three times, seeking Allah’s refuge from Shaytan three times, and turning to the other sleeping side. The guided reading separates the actions so their counts remain clear.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2262",
+                "bn": "সহিহ মুসলিম 2262"
+              },
+              "url": "https://sunnah.com/muslim:2262",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Whispering during prayer",
+          "text": "Muslim 2203a addresses Uthman ibn Abi al-As’s disrupted prayer and recitation. Seeking refuge and the reported three light spits to the left belong to that account. Avoid soiling people or a place of prayer.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2203a",
+                "bn": "সহিহ মুসলিম 2203a"
+              },
+              "url": "https://sunnah.com/muslim:2203a",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "A response is not a diagnosis",
+          "text": "A dream, yawn or intrusive thought does not identify who harmed you or prove possession. Persistent distress deserves supportive help; this app offers recitation guidance and does not test a person for unseen causes.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "refuge_shaytan"
+      ],
+      "routine_ids": [
+        "bad_dream"
+      ],
+      "body": "Two reported situations, two methods, without diagnosing hidden causes.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2262",
+            "bn": "সহিহ মুসলিম 2262"
+          },
+          "url": "https://sunnah.com/muslim:2262",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2203a",
+            "bn": "সহিহ মুসলিম 2203a"
+          },
+          "url": "https://sunnah.com/muslim:2203a",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "counts",
+      "group": "foundations",
+      "title": "Evidence, repetition and reading order",
+      "summary": "How to read the counters and distinguish a method from an app arrangement.",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "One count does not fit every reading",
+          "text": "The evidence specifies three then seven for bodily pain, three complete cycles for bedtime, and three recitations for the morning/evening short surahs. Their contexts and units differ.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 5082",
+                "bn": "সুনান আবু দাউদ 5082"
+              },
+              "url": "https://sunnah.com/abudawud:5082",
+              "kind": "hadith",
+              "grade": {
+                "en": "Hasan · Al-Albani",
+                "bn": "হাসান · আল-আলবানি"
+              }
+            }
+          ]
+        },
+        {
+          "title": "What an unspecified count means",
+          "text": "Where the cited source gives no number, the app provides Read/Next rather than inventing a prescribed count. A personal habit or convenient order should be identified as such, not attributed to the Prophet ﷺ without evidence.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2200",
+                "bn": "সহিহ মুসলিম 2200"
+              },
+              "url": "https://sunnah.com/muslim:2200",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Reading progress has a limited meaning",
+          "text": "Counters record the actions you mark yourself. Listening does not tick them. Completion indicates that reading steps were marked, not that an illness has ended or that a person has reached a spiritual level.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "How to read a source in this library",
+          "text": "Open Sources & context and inspect the collection, reference and the practice it actually describes. A source that supports the Arabic wording does not automatically support every number, physical action or benefit attached to it elsewhere. The displayed Hasan/Sahih labels for Sunan reports name the scholar used by the linked edition; they are not a claim that no scholar ever discussed the grading. Quranic selections and scholarly interpretations are labelled separately.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2200",
+                "bn": "সহিহ মুসলিম 2200"
+              },
+              "url": "https://sunnah.com/muslim:2200",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "How to read the counters and distinguish a method from an app arrangement.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2202",
+            "bn": "সহিহ মুসলিম 2202"
+          },
+          "url": "https://sunnah.com/muslim:2202",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5017",
+            "bn": "সহিহ আল-বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5082",
+            "bn": "সুনান আবু দাউদ 5082"
+          },
+          "url": "https://sunnah.com/abudawud:5082",
+          "kind": "hadith",
+          "grade": {
+            "en": "Hasan · Al-Albani",
+            "bn": "হাসান · আল-আলবানি"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2200",
+            "bn": "সহিহ মুসলিম 2200"
+          },
+          "url": "https://sunnah.com/muslim:2200",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "group": "understanding",
+      "title": "Al-Baqarah, the home and selected verses",
+      "summary": "Full-surah reports, night passages and additional verse selections.",
+      "basis": "quran_context",
+      "sections": [
+        {
+          "title": "The full-surah report",
+          "text": "Muslim 780 describes Shaytan fleeing a home where Al-Baqarah is recited. That report concerns the surah; the app does not turn a short excerpt into the complete-surah reading.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 780",
+                "bn": "সহিহ মুসলিম 780"
+              },
+              "url": "https://sunnah.com/muslim:780",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Quran 2",
+                "bn": "কুরআন 2"
+              },
+              "url": "https://quran.com/2",
+              "kind": "quran"
+            }
+          ]
+        },
+        {
+          "title": "Two night practices",
+          "text": "Ayat al-Kursi and the final two verses have separate bedtime/night reports. They can be read from the complete passages here without downloading the whole Quran, but each source’s wording and timing remain its own.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 2311",
+                "bn": "সহিহ আল-বুখারি 2311"
+              },
+              "url": "https://sunnah.com/bukhari:2311",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5009",
+                "bn": "সহিহ আল-বুখারি 5009"
+              },
+              "url": "https://sunnah.com/bukhari:5009",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Verses about Musa and magic",
+          "text": "Quran 7:117–122, 10:81–82 and 20:69 recount Musa’s encounter with the magicians. Including such passages in a reading selection is different from proving one fixed Prophetic ruqyah list, count or compulsory order.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 7:117-122",
+                "bn": "কুরআন 7:117-122"
+              },
+              "url": "https://quran.com/7/117-122",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 10:81-82",
+                "bn": "কুরআন 10:81-82"
+              },
+              "url": "https://quran.com/10/81-82",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 20:69",
+                "bn": "কুরআন 20:69"
+              },
+              "url": "https://quran.com/20/69",
+              "kind": "quran"
+            }
+          ]
+        },
+        {
+          "title": "The supplications of Ayyub and Yunus",
+          "text": "The full verses are included so that familiar dua phrases remain connected to their setting. Ayyub acknowledges suffering and Allah’s mercy; the following verse describes Allah answering him. Yunus’s call combines Allah’s oneness, glorification and acknowledgement of wrongdoing; 21:88 describes rescue from distress. These accounts support hope and humility. Their inclusion here does not assign a new fixed ruqyah count.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 21/83-84",
+                "bn": "কুরআন 21/83-84"
+              },
+              "url": "https://quran.com/21/83-84",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 21/87-88",
+                "bn": "কুরআন 21/87-88"
+              },
+              "url": "https://quran.com/21/87-88",
+              "kind": "quran"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "kursi",
+        "baqarah_last"
+      ],
+      "routine_ids": [
+        "night"
+      ],
+      "body": "Full-surah reports, night passages and additional verse selections.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 780",
+            "bn": "সহিহ মুসলিম 780"
+          },
+          "url": "https://sunnah.com/muslim:780",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Quran 2",
+            "bn": "কুরআন 2"
+          },
+          "url": "https://quran.com/2",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 2311",
+            "bn": "সহিহ আল-বুখারি 2311"
+          },
+          "url": "https://sunnah.com/bukhari:2311",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5009",
+            "bn": "সহিহ আল-বুখারি 5009"
+          },
+          "url": "https://sunnah.com/bukhari:5009",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Quran 7:117-122",
+            "bn": "কুরআন 7:117-122"
+          },
+          "url": "https://quran.com/7/117-122",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 10:81-82",
+            "bn": "কুরআন 10:81-82"
+          },
+          "url": "https://quran.com/10/81-82",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 20:69",
+            "bn": "কুরআন 20:69"
+          },
+          "url": "https://quran.com/20/69",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 21/83-84",
+            "bn": "কুরআন 21/83-84"
+          },
+          "url": "https://quran.com/21/83-84",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 21/87-88",
+            "bn": "কুরআন 21/87-88"
+          },
+          "url": "https://quran.com/21/87-88",
+          "kind": "quran"
+        }
+      ]
+    },
+    {
+      "id": "unseen",
+      "group": "understanding",
+      "title": "Evil eye, sihr and careful conclusions",
+      "summary": "Respect the religious texts without turning symptoms into an app diagnosis.",
+      "basis": "quran_context",
+      "sections": [
+        {
+          "title": "What the texts affirm",
+          "text": "Muslim 2188 affirms the evil eye within Islamic teaching. Al-Falaq seeks refuge from envy and other harms. These texts are a basis for prayer and refuge, not permission to accuse a particular relative, neighbour or practitioner.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2188",
+                "bn": "সহিহ মুসলিম 2188"
+              },
+              "url": "https://sunnah.com/muslim:2188",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Quran 113",
+                "bn": "কুরআন 113"
+              },
+              "url": "https://quran.com/113",
+              "kind": "quran"
+            }
+          ]
+        },
+        {
+          "title": "What this app cannot establish",
+          "text": "No checklist of dreams, headaches, yawning, crying or reactions to an audio track can establish an unseen cause here. Personal experiences deserve care and a fair assessment rather than a certainty the app cannot justify.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Seek refuge without escalating fear",
+          "text": "Use the supported readings calmly, maintain ordinary relationships and seek qualified religious or clinical help when needed. A practitioner’s dramatic claim or a temporary reaction does not replace sound evidence.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "What to understand about sihr",
+          "text": "Quran 2:102 condemns learning harmful magic and states that harm is not independent of Allah’s permission. Al-Falaq includes seeking refuge from harmful magical practices and envy. The response presented here is to turn to Allah with supported words. These texts do not supply this app with a way to identify a perpetrator, decode a dream or determine why a particular marriage, illness or setback occurred.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 2/102",
+                "bn": "কুরআন 2/102"
+              },
+              "url": "https://quran.com/2/102",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 113",
+                "bn": "কুরআন 113"
+              },
+              "url": "https://quran.com/113",
+              "kind": "quran"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "falaq",
+        "nas",
+        "jibril"
+      ],
+      "routine_ids": [
+        "self"
+      ],
+      "body": "Respect the religious texts without turning symptoms into an app diagnosis.",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2188",
+            "bn": "সহিহ মুসলিম 2188"
+          },
+          "url": "https://sunnah.com/muslim:2188",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Quran 113",
+            "bn": "কুরআন 113"
+          },
+          "url": "https://quran.com/113",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Quran 2/102",
+            "bn": "কুরআন 2/102"
+          },
+          "url": "https://quran.com/2/102",
+          "kind": "quran"
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "group": "questions",
+      "title": "Water, oil and commercial ruqyah products",
+      "summary": "Distinguish scholarly permission from a required Prophetic recipe.",
+      "basis": "scholarly_guidance",
+      "sections": [
+        {
+          "title": "The scholarly discussion",
+          "text": "Jordan’s Iftaa Department permits recitation and blowing over water or oil in its guidance. That is presented here as scholarly guidance; it does not establish a single required ingredient, brand or universal treatment schedule.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Jordan Iftaa 672: treatment with Quran",
+                "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "A product is not a prerequisite",
+          "text": "The core self-reading methods are available without buying a ruqyah product. Mufti Wilayah discusses safeguards against commercial misuse of Quranic verses. Avoid guaranteed-cure marketing or claims that one seller controls access to healing.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 829: Quranic writing and commercial misuse",
+                "bn": "মুফতি উইলায়াহ ৮২৯: কুরআনের লেখা ও বাণিজ্যিক অপব্যবহার"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/5848-irsyad-hukum-siri-ke-829-ruqyah-menggunakan-air-rendaman-kertas-yang-mengandungi-ayat-suci-al-quran",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Health and consent still apply",
+          "text": "Use only what is safe and suitable for the person. This app gives no ink, chemical, burning or ingestion recipe. Do not compel someone to drink or use a substance; ask qualified help about religious details and medical suitability.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Jordan Iftaa 672: treatment with Quran",
+                "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "Distinguish scholarly permission from a required Prophetic recipe.",
+      "sources": [
+        {
+          "label": {
+            "en": "Jordan Iftaa 672: treatment with Quran",
+            "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+          },
+          "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 829: Quranic writing and commercial misuse",
+            "bn": "মুফতি উইলায়াহ ৮২৯: কুরআনের লেখা ও বাণিজ্যিক অপব্যবহার"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/5848-irsyad-hukum-siri-ke-829-ruqyah-menggunakan-air-rendaman-kertas-yang-mengandungi-ayat-suci-al-quran",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "purity",
+      "group": "questions",
+      "title": "Purity, menstruation and recitation",
+      "summary": "Separate dua and remembrance from rulings about tilawah and a physical Mushaf.",
+      "basis": "scholarly_guidance",
+      "sections": [
+        {
+          "title": "Different acts have different rulings",
+          "text": "Making dua, remembering Allah, reciting Quran and handling a physical Mushaf are distinct questions. Do not assume that one short rule answers every situation involving a ruqyah reader.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Jordan Iftaa 1064: recitation and remembrance",
+                "bn": "জর্ডান ইফতা ১০৬৪: তিলাওয়াত ও যিকির"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/1064/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Recognise scholarly differences",
+          "text": "Egypt’s Dar Al-Ifta records the majority restriction on Quran recitation during menstruation and the Maliki allowance. Jordan’s guidance distinguishes words used as dua or dhikr from recitation intended as tilawah. These are attributed positions, not one universal ruling issued by the app.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Egypt Dar Al-Ifta 7815",
+                "bn": "মিসর দারুল ইফতা ৭৮১৫"
+              },
+              "url": "https://dar-alifta.org/en/fatwa/details/7815/is-it-permissible-for-a-menstruating-woman-to-recite-the-quran-from-the-computer",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Jordan Iftaa 1064",
+                "bn": "জর্ডান ইফতা ১০৬৪"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/1064/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Get guidance for your circumstances",
+          "text": "Follow a qualified scholar familiar with your school and circumstances for questions about intention, major impurity and a physical Mushaf. The app keeps meanings and learning material accessible and does not infer your state of purity.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Darul Iftaa Chicago: conditions of ruqyah",
+                "bn": "দারুল ইফতা শিকাগো: রুকইয়াহর শর্ত"
+              },
+              "url": "https://daruliftaa.us/fatwa/324/",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "Separate dua and remembrance from rulings about tilawah and a physical Mushaf.",
+      "sources": [
+        {
+          "label": {
+            "en": "Jordan Iftaa 1064",
+            "bn": "জর্ডান ইফতা ১০৬৪"
+          },
+          "url": "https://www.aliftaa.jo/en-fatwas/1064/DefaultEn.aspx",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Egypt Dar Al-Ifta 7815",
+            "bn": "মিসর দারুল ইফতা ৭৮১৫"
+          },
+          "url": "https://dar-alifta.org/en/fatwa/details/7815/is-it-permissible-for-a-menstruating-woman-to-recite-the-quran-from-the-computer",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Darul Iftaa Chicago: conditions of ruqyah",
+            "bn": "দারুল ইফতা শিকাগো: রুকইয়াহর শর্ত"
+          },
+          "url": "https://daruliftaa.us/fatwa/324/",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "care",
+      "group": "questions",
+      "title": "If recovery takes time",
+      "summary": "Hope, patience and appropriate treatment without blaming the person who is ill.",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "Illness is not a spiritual score",
+          "text": "Quran 2:155–157 speaks of trials and patience. Bukhari 5641–5642 describes hardship and illness as occasions for expiation. A slow recovery does not give this app grounds to judge someone’s faith or worth.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 2:155-157",
+                "bn": "কুরআন 2:155-157"
+              },
+              "url": "https://quran.com/2/155-157",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5641",
+                "bn": "সহিহ আল-বুখারি 5641"
+              },
+              "url": "https://sunnah.com/bukhari:5641",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Care can happen alongside recitation",
+          "text": "Continue prescribed treatment and seek assessment for ongoing physical or psychological distress. Ruqyah can accompany care; a reading counter is not a test of diagnosis, treatment success or the need for medicine.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Act on immediate danger",
+          "text": "Severe breathing difficulty, unconsciousness, serious injury or another immediate danger calls for urgent local medical help. Pause the session and prioritise getting help; the app does not determine an emergency’s cause.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "NHS: recognising a life-threatening emergency",
+                "bn": "এনএইচএস: প্রাণঘাতী জরুরি অবস্থা চেনা"
+              },
+              "url": "https://www.londonambulance.nhs.uk/our-services/emergency-care/calling-999/",
+              "kind": "medical"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "ayyub",
+        "yunus"
+      ],
+      "routine_ids": [],
+      "body": "Hope, patience and appropriate treatment without blaming the person who is ill.",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 2:155-157",
+            "bn": "কুরআন 2:155-157"
+          },
+          "url": "https://quran.com/2/155-157",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5641",
+            "bn": "সহিহ আল-বুখারি 5641"
+          },
+          "url": "https://sunnah.com/bukhari:5641",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "NHS: recognising a life-threatening emergency",
+            "bn": "এনএইচএস: প্রাণঘাতী জরুরি অবস্থা চেনা"
+          },
+          "url": "https://www.londonambulance.nhs.uk/our-services/emergency-care/calling-999/",
+          "kind": "medical"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "group": "questions",
+      "title": "Choosing trustworthy help",
+      "summary": "Transparent recitation, clear boundaries and protection from exploitation.",
+      "basis": "scholarly_guidance",
+      "sections": [
+        {
+          "title": "Ask what will be read",
+          "text": "Choose someone who can explain the words and their sources and who respects religious boundaries. MUIS warns against dubious invocations, impure materials and inappropriate seclusion or touching in the name of spiritual healing.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Agree clear terms",
+          "text": "The Al-Fatihah report includes compensation, so a fee alone is not the test of authenticity. Seek transparent terms and avoid pressure, guaranteed outcomes or claims that your family must depend exclusively on one person.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5736",
+                "bn": "সহিহ আল-বুখারি 5736"
+              },
+              "url": "https://sunnah.com/bukhari:5736",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Keep control of your care",
+          "text": "You may stop a session, bring a trusted companion and seek another opinion. Force, injury, sexual contact, isolation from support or a demand to abandon needed medical care are not accepted practices in this app’s guidance.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "Transparent recitation, clear boundaries and protection from exploitation.",
+      "sources": [
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5736",
+            "bn": "সহিহ আল-বুখারি 5736"
+          },
+          "url": "https://sunnah.com/bukhari:5736",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "group": "foundations",
+      "title": "Listening, pronunciation and source notes",
+      "summary": "Use the audio as a learning aid and understand what each source label means.",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "Read with understanding",
+          "text": "Pronunciation in English or Bangla helps a learner but cannot represent every Arabic sound precisely. Listen, practise gently and learn from a competent teacher where possible. The Arabic text remains the wording reference.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Recordings and personal recitation",
+          "text": "Quran audio is Mishary Rashid Alafasy’s recitation from Al Quran Cloud. Play/download fetches only the selected passage. Listening does not mark your own recitation count or establish that every reported physical action was performed.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Al Quran Cloud CDN",
+                "bn": "আল কুরআন ক্লাউড সিডিএন"
+              },
+              "url": "https://alquran.cloud/cdn",
+              "kind": "provider"
+            }
+          ]
+        },
+        {
+          "title": "Credit, availability and reuse",
+          "text": "Meanings here are app-prepared renderings. Recitations remain the reciter’s copyright; provider terms permit personal/educational streaming and download, with commercial rights retained. Checked matching supplication recordings will be added when available; no synthetic voice replaces them.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Provider terms",
+                "bn": "সরবরাহকারীর শর্ত"
+              },
+              "url": "https://alquran.cloud/terms-and-conditions",
+              "kind": "provider"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "Use the audio as a learning aid and understand what each source label means.",
+      "sources": [
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Al Quran Cloud CDN",
+            "bn": "আল কুরআন ক্লাউড সিডিএন"
+          },
+          "url": "https://alquran.cloud/cdn",
+          "kind": "provider"
+        },
+        {
+          "label": {
+            "en": "Provider terms",
+            "bn": "সরবরাহকারীর শর্ত"
+          },
+          "url": "https://alquran.cloud/terms-and-conditions",
+          "kind": "provider"
+        }
+      ]
+    }
+  ]
+}

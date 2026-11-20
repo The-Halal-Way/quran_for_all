@@ -1,6 +1,7 @@
 import '../../../core/utils/dua_search.dart';
 import 'dua_reading.dart';
 import 'dua_benefit.dart';
+import 'dua_insights.dart';
 import 'dua_text.dart';
 
 class DuaEntry {
@@ -17,6 +18,7 @@ class DuaEntry {
       benefits = List.unmodifiable(
         duaObjects(json['benefits']).map(DuaBenefit.new),
       ),
+      insights = DuaInsights(json['insights']),
       categoryIds = duaIds(json['categoryIds']),
       relatedIds = duaIds(json['relatedEntryIds']),
       categoryTitles = Map.unmodifiable(
@@ -50,6 +52,7 @@ class DuaEntry {
   final String id, type, arabic, searchIndex;
   final DuaText title, pronunciation, meaning, note, sourceNote, sourceText;
   final List<DuaBenefit> benefits;
+  final DuaInsights insights;
   final List<String> categoryIds, relatedIds;
   final Map<String, DuaText> categoryTitles;
   final DuaPractice practice;

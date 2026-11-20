@@ -2064,5 +2064,128 @@
   "dhikrDeleteAction": "Delete",
   "dhikrEditAction": "Edit",
   "dhikrCancel": "Cancel",
-  "dhikrScheduleCapacity": "Too many active notifications. Turn off another reminder and try again."
+  "dhikrScheduleCapacity": "Too many active notifications. Turn off another reminder and try again.",
+  "ruqyahTitle": "Ruqyah & Protection",
+  "ruqyahSubtitle": "Quran and authentic duas for healing and protection.",
+  "ruqyahHeroTitle": "Seek refuge. Find reassurance.",
+  "ruqyahHeroBody": "A practical companion to self-ruqyah, daily protection and understanding the evidence.",
+  "ruqyahGuided": "Guided reading",
+  "ruqyahLibrary": "Quran & duas",
+  "ruqyahLearn": "Learn",
+  "ruqyahStart": "Start reading",
+  "ruqyahContinue": "Continue reading",
+  "ruqyahResumeBody": "Your place and recitation counts are saved on this device.",
+  "ruqyahReported": "Reported practice",
+  "ruqyahArrangement": "Guided selection",
+  "ruqyahArrangementNote": "This reading order is arranged for convenience. Each passage has its own source and context.",
+  "ruqyahSearch": "Search a passage, dua or meaning",
+  "ruqyahAll": "All",
+  "ruqyahIllness": "Illness & pain",
+  "ruqyahBedtime": "Bedtime",
+  "ruqyahChildren": "Children",
+  "ruqyahProtection": "Protection",
+  "ruqyahBookmarks": "Saved",
+  "ruqyahNoResults": "No readings match. Try another search or filter.",
+  "ruqyahLoadError": "The readings could not be opened. Please try again.",
+  "ruqyahRetry": "Try again",
+  "ruqyahSources": "Sources & context",
+  "ruqyahSourceFailed": "Could not open this source.",
+  "ruqyahPronunciation": "Pronunciation",
+  "ruqyahMeaning": "Meaning",
+  "ruqyahArabic": "Arabic",
+  "ruqyahInstructions": "How to read",
+  "ruqyahReadingSettings": "Reading preferences",
+  "ruqyahArabicSize": "Arabic text size",
+  "ruqyahSaveReading": "Save this reading",
+  "ruqyahUnsaveReading": "Remove saved reading",
+  "ruqyahPrevious": "Previous",
+  "ruqyahNext": "Next",
+  "ruqyahReadContinue": "Read & continue",
+  "ruqyahDoneContinue": "Done & continue",
+  "ruqyahFinish": "Finish reading",
+  "ruqyahCountTap": "Tap after reciting",
+  "ruqyahUndo": "Undo one count",
+  "ruqyahCountDone": "Repetitions complete",
+  "ruqyahSessionComplete": "Reading complete",
+  "ruqyahCompleteBody": "You have reached the end of this reading. May Allah grant you ease and well-being.",
+  "ruqyahRestart": "Read again",
+  "ruqyahBackToLibrary": "Back to Ruqyah",
+  "ruqyahSaveFailed": "Progress could not be saved. Check device storage.",
+  "ruqyahAudio": "Listen to this passage",
+  "ruqyahReciter": "Mishary Rashid Alafasy · Al Quran Cloud",
+  "ruqyahPlay": "Play",
+  "ruqyahPause": "Pause",
+  "ruqyahRepeat": "Repeat recording",
+  "ruqyahDownload": "Save audio offline",
+  "ruqyahDownloaded": "Audio available offline",
+  "ruqyahAudioError": "Audio could not be loaded. Check your connection and try again.",
+  "ruqyahAudioPending": "A checked recording for this supplication is not available yet.",
+  "ruqyahAudioNote": "Listening does not increase your recitation count.",
+  "ruqyahCareNote": "Recitation can accompany medical care. Seek appropriate help for illness.",
+  "ruqyahPosition": "{current} of {total}",
+  "@ruqyahPosition": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "ruqyahCycle": "Cycle {current} of {total}",
+  "@ruqyahCycle": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "ruqyahVerse": "Verse {current} of {total}",
+  "@ruqyahVerse": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "duaPurposeLabel": "A prayer for…",
+  "duaMeaningReflection": "Reflect on these words",
+  "duaBackgroundTitle": "Story & context",
+  "duaReportedVirtueLabel": "Reported virtue",
+  "duaReadReflect": "Read & reflect",
+  "duaLibraryWelcome": "Words for every moment",
+  "duaLibraryInsightsHint": "Discover the purpose, meaning and context behind each dua.",
+  "ruqyahCareMethods": "Care & comfort",
+  "ruqyahDailyMethods": "Daily protection",
+  "ruqyahUnderstand": "Understand before you begin",
+  "ruqyahReadMethod": "Read the method & evidence",
+  "ruqyahKnowledgeTitle": "Understanding Ruqyah",
+  "ruqyahKnowledgeBody": "Practical methods, their evidence, and thoughtful answers to common questions.",
+  "ruqyahSearchGuides": "Search methods, questions or sources",
+  "ruqyahReportedPractice": "From reported practice",
+  "ruqyahQuranContext": "Quranic context",
+  "ruqyahScholarlyGuidance": "Scholarly guidance",
+  "ruqyahAppGuidance": "Reading guidance",
+  "ruqyahRelatedMethods": "Try a guided method",
+  "ruqyahRelatedReadings": "Read the related passages",
+  "ruqyahAudience": "Who is this wording for?",
+  "ruqyahBackground": "Background & context",
+  "ruqyahMethod": "How to use this reading",
+  "ruqyahMethodBackground": "Method & background",
+  "ruqyahSourceQuran": "Quran",
+  "ruqyahSourceHadith": "Hadith",
+  "ruqyahSourceMedical": "Medical guidance",
+  "ruqyahSourceProvider": "Audio provider",
+  "ruqyahProgressUpdated": "This method has been updated. A fresh reading has started so the steps and counts stay accurate.",
+  "ruqyahDaily": "Morning & evening",
+  "ruqyahDistress": "Distress",
+  "ruqyahTravel": "Travel & stopping",
+  "ruqyahVisiting": "Visiting the ill"
 }

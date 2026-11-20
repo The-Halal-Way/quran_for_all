@@ -5417,4 +5417,289 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dhikrScheduleCapacity => 'Too many active notifications. Turn off another reminder and try again.';
+
+  @override
+  String get ruqyahTitle => 'Ruqyah & Protection';
+
+  @override
+  String get ruqyahSubtitle => 'Quran and authentic duas for healing and protection.';
+
+  @override
+  String get ruqyahHeroTitle => 'Seek refuge. Find reassurance.';
+
+  @override
+  String get ruqyahHeroBody => 'A practical companion to self-ruqyah, daily protection and understanding the evidence.';
+
+  @override
+  String get ruqyahGuided => 'Guided reading';
+
+  @override
+  String get ruqyahLibrary => 'Quran & duas';
+
+  @override
+  String get ruqyahLearn => 'Learn';
+
+  @override
+  String get ruqyahStart => 'Start reading';
+
+  @override
+  String get ruqyahContinue => 'Continue reading';
+
+  @override
+  String get ruqyahResumeBody => 'Your place and recitation counts are saved on this device.';
+
+  @override
+  String get ruqyahReported => 'Reported practice';
+
+  @override
+  String get ruqyahArrangement => 'Guided selection';
+
+  @override
+  String get ruqyahArrangementNote => 'This reading order is arranged for convenience. Each passage has its own source and context.';
+
+  @override
+  String get ruqyahSearch => 'Search a passage, dua or meaning';
+
+  @override
+  String get ruqyahAll => 'All';
+
+  @override
+  String get ruqyahIllness => 'Illness & pain';
+
+  @override
+  String get ruqyahBedtime => 'Bedtime';
+
+  @override
+  String get ruqyahChildren => 'Children';
+
+  @override
+  String get ruqyahProtection => 'Protection';
+
+  @override
+  String get ruqyahBookmarks => 'Saved';
+
+  @override
+  String get ruqyahNoResults => 'No readings match. Try another search or filter.';
+
+  @override
+  String get ruqyahLoadError => 'The readings could not be opened. Please try again.';
+
+  @override
+  String get ruqyahRetry => 'Try again';
+
+  @override
+  String get ruqyahSources => 'Sources & context';
+
+  @override
+  String get ruqyahSourceFailed => 'Could not open this source.';
+
+  @override
+  String get ruqyahPronunciation => 'Pronunciation';
+
+  @override
+  String get ruqyahMeaning => 'Meaning';
+
+  @override
+  String get ruqyahArabic => 'Arabic';
+
+  @override
+  String get ruqyahInstructions => 'How to read';
+
+  @override
+  String get ruqyahReadingSettings => 'Reading preferences';
+
+  @override
+  String get ruqyahArabicSize => 'Arabic text size';
+
+  @override
+  String get ruqyahSaveReading => 'Save this reading';
+
+  @override
+  String get ruqyahUnsaveReading => 'Remove saved reading';
+
+  @override
+  String get ruqyahPrevious => 'Previous';
+
+  @override
+  String get ruqyahNext => 'Next';
+
+  @override
+  String get ruqyahReadContinue => 'Read & continue';
+
+  @override
+  String get ruqyahDoneContinue => 'Done & continue';
+
+  @override
+  String get ruqyahFinish => 'Finish reading';
+
+  @override
+  String get ruqyahCountTap => 'Tap after reciting';
+
+  @override
+  String get ruqyahUndo => 'Undo one count';
+
+  @override
+  String get ruqyahCountDone => 'Repetitions complete';
+
+  @override
+  String get ruqyahSessionComplete => 'Reading complete';
+
+  @override
+  String get ruqyahCompleteBody => 'You have reached the end of this reading. May Allah grant you ease and well-being.';
+
+  @override
+  String get ruqyahRestart => 'Read again';
+
+  @override
+  String get ruqyahBackToLibrary => 'Back to Ruqyah';
+
+  @override
+  String get ruqyahSaveFailed => 'Progress could not be saved. Check device storage.';
+
+  @override
+  String get ruqyahAudio => 'Listen to this passage';
+
+  @override
+  String get ruqyahReciter => 'Mishary Rashid Alafasy · Al Quran Cloud';
+
+  @override
+  String get ruqyahPlay => 'Play';
+
+  @override
+  String get ruqyahPause => 'Pause';
+
+  @override
+  String get ruqyahRepeat => 'Repeat recording';
+
+  @override
+  String get ruqyahDownload => 'Save audio offline';
+
+  @override
+  String get ruqyahDownloaded => 'Audio available offline';
+
+  @override
+  String get ruqyahAudioError => 'Audio could not be loaded. Check your connection and try again.';
+
+  @override
+  String get ruqyahAudioPending => 'A checked recording for this supplication is not available yet.';
+
+  @override
+  String get ruqyahAudioNote => 'Listening does not increase your recitation count.';
+
+  @override
+  String get ruqyahCareNote => 'Recitation can accompany medical care. Seek appropriate help for illness.';
+
+  @override
+  String ruqyahPosition(String current, String total) {
+    return '$current of $total';
+  }
+
+  @override
+  String ruqyahCycle(String current, String total) {
+    return 'Cycle $current of $total';
+  }
+
+  @override
+  String ruqyahVerse(String current, String total) {
+    return 'Verse $current of $total';
+  }
+
+  @override
+  String get duaPurposeLabel => 'A prayer for…';
+
+  @override
+  String get duaMeaningReflection => 'Reflect on these words';
+
+  @override
+  String get duaBackgroundTitle => 'Story & context';
+
+  @override
+  String get duaReportedVirtueLabel => 'Reported virtue';
+
+  @override
+  String get duaReadReflect => 'Read & reflect';
+
+  @override
+  String get duaLibraryWelcome => 'Words for every moment';
+
+  @override
+  String get duaLibraryInsightsHint => 'Discover the purpose, meaning and context behind each dua.';
+
+  @override
+  String get ruqyahCareMethods => 'Care & comfort';
+
+  @override
+  String get ruqyahDailyMethods => 'Daily protection';
+
+  @override
+  String get ruqyahUnderstand => 'Understand before you begin';
+
+  @override
+  String get ruqyahReadMethod => 'Read the method & evidence';
+
+  @override
+  String get ruqyahKnowledgeTitle => 'Understanding Ruqyah';
+
+  @override
+  String get ruqyahKnowledgeBody => 'Practical methods, their evidence, and thoughtful answers to common questions.';
+
+  @override
+  String get ruqyahSearchGuides => 'Search methods, questions or sources';
+
+  @override
+  String get ruqyahReportedPractice => 'From reported practice';
+
+  @override
+  String get ruqyahQuranContext => 'Quranic context';
+
+  @override
+  String get ruqyahScholarlyGuidance => 'Scholarly guidance';
+
+  @override
+  String get ruqyahAppGuidance => 'Reading guidance';
+
+  @override
+  String get ruqyahRelatedMethods => 'Try a guided method';
+
+  @override
+  String get ruqyahRelatedReadings => 'Read the related passages';
+
+  @override
+  String get ruqyahAudience => 'Who is this wording for?';
+
+  @override
+  String get ruqyahBackground => 'Background & context';
+
+  @override
+  String get ruqyahMethod => 'How to use this reading';
+
+  @override
+  String get ruqyahMethodBackground => 'Method & background';
+
+  @override
+  String get ruqyahSourceQuran => 'Quran';
+
+  @override
+  String get ruqyahSourceHadith => 'Hadith';
+
+  @override
+  String get ruqyahSourceMedical => 'Medical guidance';
+
+  @override
+  String get ruqyahSourceProvider => 'Audio provider';
+
+  @override
+  String get ruqyahProgressUpdated => 'This method has been updated. A fresh reading has started so the steps and counts stay accurate.';
+
+  @override
+  String get ruqyahDaily => 'Morning & evening';
+
+  @override
+  String get ruqyahDistress => 'Distress';
+
+  @override
+  String get ruqyahTravel => 'Travel & stopping';
+
+  @override
+  String get ruqyahVisiting => 'Visiting the ill';
 }

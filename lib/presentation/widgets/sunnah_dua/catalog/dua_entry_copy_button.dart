@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../data/models/dua/dua_catalog.dart';
 import 'dua_catalog_visuals.dart';
+import 'insights/dua_insight_copy.dart';
 
 class DuaEntryCopyButton extends StatelessWidget {
   const DuaEntryCopyButton({
@@ -28,11 +29,15 @@ class DuaEntryCopyButton extends StatelessWidget {
     final copied = context.l10n.duahCopied;
     final content = [
       entry.titleFor(language, categoryId),
-      if (entry.benefits.isNotEmpty) context.l10n.sunnahDuaBenefitsLabel,
-      for (final benefit in entry.benefits) ...[
-        context.l10n.duaBenefitKind(benefit.kind),
-        benefit.text.inLanguage(language),
-        benefit.sourceUrl,
+      if (entry.insights.hasIntroduction)
+        ...duaInsightIntroCopy(entry, context.l10n)
+      else ...[
+        if (entry.benefits.isNotEmpty) context.l10n.sunnahDuaBenefitsLabel,
+        for (final benefit in entry.benefits) ...[
+          context.l10n.duaBenefitKind(benefit.kind),
+          benefit.text.inLanguage(language),
+          benefit.sourceUrl,
+        ],
       ],
       for (final part in entry.passagesFor(occasion)) ...[
         if (!part.label.isEmpty) part.label.inLanguage(language),
@@ -46,6 +51,7 @@ class DuaEntryCopyButton extends StatelessWidget {
         part.pronunciation.inLanguage(language),
         part.meaning.inLanguage(language),
       ],
+      ...duaInsightContextCopy(entry, context.l10n),
       entry.sourceText.inLanguage(language),
       entry.note.inLanguage(language),
       entry.sourceNote.inLanguage(language),

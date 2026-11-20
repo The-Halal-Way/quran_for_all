@@ -1,0 +1,593 @@
+{
+  "version": 1,
+  "readings": [
+    {
+      "id": "fatihah",
+      "title": {
+        "en": "Al-Fatihah",
+        "bn": "আল-ফাতিহা"
+      },
+      "categories": [
+        "illness"
+      ]
+    },
+    {
+      "id": "ikhlas",
+      "title": {
+        "bn": "সূরা আল-ইখলাস",
+        "en": "Surah Al-Ikhlas"
+      },
+      "categories": [
+        "bedtime",
+        "protection",
+        "daily"
+      ]
+    },
+    {
+      "id": "falaq",
+      "title": {
+        "bn": "সূরা আল-ফালাক",
+        "en": "Surah Al-Falaq"
+      },
+      "categories": [
+        "illness",
+        "bedtime",
+        "protection",
+        "daily"
+      ]
+    },
+    {
+      "id": "nas",
+      "title": {
+        "bn": "সূরা আন-নাস",
+        "en": "Surah An-Nas"
+      },
+      "categories": [
+        "illness",
+        "bedtime",
+        "protection",
+        "daily"
+      ]
+    },
+    {
+      "id": "kursi",
+      "title": {
+        "bn": "আয়াতুল কুরসি",
+        "en": "Ayat al-Kursi"
+      },
+      "categories": [
+        "bedtime",
+        "protection"
+      ]
+    },
+    {
+      "id": "healing",
+      "title": {
+        "bn": "রোগীর জন্য শিফার দোয়া",
+        "en": "Asking Allah to Heal the Sick"
+      },
+      "categories": [
+        "illness"
+      ]
+    },
+    {
+      "id": "children",
+      "title": {
+        "bn": "শিশুদের হেফাজতের দোয়া",
+        "en": "Dua for Children’s Protection"
+      },
+      "categories": [
+        "children",
+        "protection"
+      ]
+    },
+    {
+      "id": "baqarah_last",
+      "title": {
+        "en": "Last two verses of Al-Baqarah",
+        "bn": "আল-বাকারার শেষ দুই আয়াত"
+      },
+      "categories": [
+        "bedtime",
+        "protection"
+      ]
+    },
+    {
+      "id": "bismillah",
+      "title": {
+        "en": "Begin in Allah’s name",
+        "bn": "আল্লাহর নামে শুরু"
+      },
+      "categories": [
+        "illness"
+      ]
+    },
+    {
+      "id": "pain_refuge",
+      "title": {
+        "en": "Refuge during bodily pain",
+        "bn": "শরীরের ব্যথায় আশ্রয় প্রার্থনা"
+      },
+      "categories": [
+        "illness"
+      ]
+    },
+    {
+      "id": "jibril",
+      "title": {
+        "en": "Bismillahi arqik",
+        "bn": "বিসমিল্লাহি আরকিক"
+      },
+      "categories": [
+        "illness",
+        "protection"
+      ]
+    },
+    {
+      "id": "perfect_words",
+      "title": {
+        "bn": "সৃষ্টির অনিষ্ট থেকে আশ্রয়",
+        "en": "Seeking Refuge in Allah’s Perfect Words"
+      },
+      "categories": [
+        "protection",
+        "daily",
+        "travel"
+      ]
+    },
+    {
+      "id": "daily_protection",
+      "title": {
+        "bn": "মুসিবত থেকে হেফাজতের দোয়া",
+        "en": "Dua for Protection from Sudden Calamity"
+      },
+      "categories": [
+        "protection",
+        "daily"
+      ]
+    },
+    {
+      "id": "visiting_healing",
+      "title": {
+        "bn": "অসুস্থ ব্যক্তির সুস্থতার জন্য সাতবারের দোয়া",
+        "en": "A Dua for Recovery When Visiting the Sick"
+      },
+      "categories": [
+        "illness",
+        "visiting"
+      ]
+    },
+    {
+      "id": "refuge_shaytan",
+      "title": {
+        "en": "Seeking refuge from Shaytan",
+        "bn": "শয়তান থেকে আশ্রয় প্রার্থনা"
+      },
+      "categories": [
+        "protection",
+        "distress"
+      ]
+    },
+    {
+      "id": "ayyub",
+      "title": {
+        "en": "Ayyub calls upon his Lord · 21:83",
+        "bn": "আইয়ুবের রবকে ডাকা · ২১:৮৩"
+      },
+      "categories": [
+        "illness",
+        "distress"
+      ]
+    },
+    {
+      "id": "yunus",
+      "title": {
+        "en": "Yunus calls from darkness · 21:87",
+        "bn": "অন্ধকারে ইউনুসের ডাক · ২১:৮৭"
+      },
+      "categories": [
+        "distress"
+      ]
+    },
+    {
+      "id": "quran_refuge",
+      "title": {
+        "en": "Refuge from the devils · 23:97–98",
+        "bn": "শয়তানদের অনিষ্ট থেকে আশ্রয় · ২৩:৯৭–৯৮"
+      },
+      "categories": [
+        "protection",
+        "distress"
+      ]
+    }
+  ],
+  "routines": [
+    {
+      "id": "self",
+      "title": {
+        "en": "Self-ruqyah reading",
+        "bn": "নিজের জন্য রুকইয়াহ পাঠ"
+      },
+      "description": {
+        "en": "Al-Fatihah and protective surahs, with clear sources.",
+        "bn": "আল-ফাতিহা ও সুরক্ষার সূরা, উৎসসহ।"
+      },
+      "kind": "arrangement",
+      "guide_id": "practice",
+      "group": "care"
+    },
+    {
+      "id": "pain",
+      "title": {
+        "en": "When the body hurts",
+        "bn": "শরীরে ব্যথা হলে"
+      },
+      "description": {
+        "en": "Follow the two reported steps: three, then seven.",
+        "bn": "বর্ণিত দুটি ধাপ: প্রথমে তিনবার, তারপর সাতবার।"
+      },
+      "kind": "reported",
+      "guide_id": "pain_method",
+      "group": "care"
+    },
+    {
+      "id": "bedtime",
+      "title": {
+        "en": "Bedtime protection",
+        "bn": "ঘুমানোর আগে সুরক্ষা"
+      },
+      "description": {
+        "en": "Three surahs, gentle blowing and wiping; three cycles.",
+        "bn": "তিন সূরা, হালকা ফুঁ ও শরীরে মোছা; তিনবার।"
+      },
+      "kind": "reported",
+      "guide_id": "bedtime_method",
+      "group": "daily"
+    },
+    {
+      "id": "children",
+      "title": {
+        "en": "Protection for children",
+        "bn": "শিশুদের সুরক্ষা"
+      },
+      "description": {
+        "en": "A supplication reported for Al-Hasan and Al-Husayn.",
+        "bn": "হাসান ও হুসাইনের জন্য বর্ণিত দোয়া।"
+      },
+      "kind": "reported",
+      "guide_id": "children_method",
+      "group": "care"
+    },
+    {
+      "id": "night",
+      "title": {
+        "en": "More night recitations",
+        "bn": "রাতের আরও পাঠ"
+      },
+      "description": {
+        "en": "Ayat al-Kursi and the complete last two verses of Al-Baqarah.",
+        "bn": "আয়াতুল কুরসি ও আল-বাকারার সম্পূর্ণ শেষ দুই আয়াত।"
+      },
+      "kind": "arrangement",
+      "guide_id": "home",
+      "group": "daily"
+    },
+    {
+      "id": "patient",
+      "title": {
+        "en": "Praying for someone ill",
+        "bn": "অসুস্থ কারও জন্য দোয়া"
+      },
+      "description": {
+        "en": "Reported healing duas, including the sevenfold visiting supplication.",
+        "bn": "বর্ণিত শিফার দোয়া ও রোগী দেখতে গিয়ে সাতবারের দোয়া।"
+      },
+      "kind": "arrangement",
+      "guide_id": "patient_method",
+      "group": "care"
+    },
+    {
+      "id": "morning",
+      "title": {
+        "en": "Morning protection",
+        "bn": "সকালের সুরক্ষা"
+      },
+      "description": {
+        "en": "Three short surahs and the morning protection supplication.",
+        "bn": "ছোট তিন সূরা ও সকালের সুরক্ষার দোয়া।"
+      },
+      "kind": "arrangement",
+      "guide_id": "daily_method",
+      "group": "daily"
+    },
+    {
+      "id": "evening",
+      "title": {
+        "en": "Evening protection",
+        "bn": "সন্ধ্যার সুরক্ষা"
+      },
+      "description": {
+        "en": "Evening remembrance with context-specific counts.",
+        "bn": "প্রসঙ্গ অনুযায়ী গণনাসহ সন্ধ্যার যিকির।"
+      },
+      "kind": "arrangement",
+      "guide_id": "daily_method",
+      "group": "daily"
+    },
+    {
+      "id": "stopping",
+      "title": {
+        "en": "When stopping at a place",
+        "bn": "কোথাও অবস্থান নেওয়ার সময়"
+      },
+      "description": {
+        "en": "The refuge supplication in Khawlah bint Hakim’s report.",
+        "bn": "খাওলা বিনত হাকিমের বর্ণনায় আশ্রয়ের দোয়া।"
+      },
+      "kind": "reported",
+      "guide_id": "daily_method",
+      "group": "daily"
+    },
+    {
+      "id": "bad_dream",
+      "title": {
+        "en": "After a disturbing dream",
+        "bn": "দুঃস্বপ্ন দেখার পর"
+      },
+      "description": {
+        "en": "Seeking refuge and the reported change of sleeping side.",
+        "bn": "আশ্রয় প্রার্থনা ও বর্ণিতভাবে শোয়ার পাশ বদলানো।"
+      },
+      "kind": "reported",
+      "guide_id": "dreams",
+      "group": "daily"
+    }
+  ],
+  "content_revision": 2,
+  "guide_groups": [
+    {
+      "id": "foundations",
+      "title": {
+        "en": "Foundations & evidence",
+        "bn": "ভিত্তি ও প্রমাণ"
+      }
+    },
+    {
+      "id": "methods",
+      "title": {
+        "en": "Methods in practice",
+        "bn": "ব্যবহারিক পদ্ধতি"
+      }
+    },
+    {
+      "id": "understanding",
+      "title": {
+        "en": "Understand the context",
+        "bn": "প্রসঙ্গ বুঝুন"
+      }
+    },
+    {
+      "id": "questions",
+      "title": {
+        "en": "Questions & careful guidance",
+        "bn": "প্রশ্ন ও সতর্ক নির্দেশনা"
+      }
+    }
+  ],
+  "guides": [
+    {
+      "id": "meaning",
+      "group": "foundations",
+      "title": {
+        "en": "What ruqyah is, and where it begins",
+        "bn": "রুকইয়াহ কী এবং এর ভিত্তি"
+      },
+      "summary": {
+        "en": "Healing, reliance on Allah and the conditions for permissible recitation.",
+        "bn": "শিফা, আল্লাহর ওপর ভরসা ও বৈধ পাঠের শর্ত।"
+      },
+      "basis": "scholarly_guidance"
+    },
+    {
+      "id": "practice",
+      "group": "methods",
+      "title": {
+        "en": "A complete approach to self-ruqyah",
+        "bn": "নিজের রুকইয়াহর পূর্ণ পদ্ধতি"
+      },
+      "summary": {
+        "en": "Prepare, understand the readings and follow each practice in its own context.",
+        "bn": "প্রস্তুতি, পাঠের অর্থ বোঝা ও প্রসঙ্গ অনুযায়ী আমল।"
+      },
+      "basis": "app_guidance"
+    },
+    {
+      "id": "pain_method",
+      "group": "methods",
+      "title": {
+        "en": "Bodily pain: the three-then-seven method",
+        "bn": "শরীরের ব্যথা: প্রথমে তিন, তারপর সাত"
+      },
+      "summary": {
+        "en": "Hand placement, separate counts and the meaning of seeking refuge.",
+        "bn": "হাত রাখা, পৃথক গণনা ও আশ্রয় প্রার্থনার অর্থ।"
+      },
+      "basis": "prophetic_practice"
+    },
+    {
+      "id": "bedtime_method",
+      "group": "methods",
+      "title": {
+        "en": "Bedtime: what completes one cycle?",
+        "bn": "ঘুমানোর আগে: একবারের আমল কীভাবে সম্পূর্ণ?"
+      },
+      "summary": {
+        "en": "Three surahs, gentle blowing, wiping and three complete cycles.",
+        "bn": "তিন সূরা, হালকা ফুঁ, শরীরে মোছা ও সম্পূর্ণ আমল তিনবার।"
+      },
+      "basis": "prophetic_practice"
+    },
+    {
+      "id": "daily_method",
+      "group": "methods",
+      "title": {
+        "en": "Morning, evening and stopping at a place",
+        "bn": "সকাল, সন্ধ্যা ও কোথাও অবস্থান নেওয়া"
+      },
+      "summary": {
+        "en": "Match each remembrance to its timing and its own source.",
+        "bn": "প্রত্যেক যিকিরের সময় ও নিজস্ব উৎস মিলিয়ে পড়ুন।"
+      },
+      "basis": "prophetic_practice"
+    },
+    {
+      "id": "patient_method",
+      "group": "methods",
+      "title": {
+        "en": "Reciting for someone who is ill",
+        "bn": "অসুস্থ কারও জন্য পড়া"
+      },
+      "summary": {
+        "en": "Reported wording, the sevenfold visiting dua and the person’s comfort.",
+        "bn": "বর্ণিত শব্দ, রোগী দেখতে গিয়ে সাতবারের দোয়া ও রোগীর স্বস্তি।"
+      },
+      "basis": "prophetic_practice"
+    },
+    {
+      "id": "children_method",
+      "group": "methods",
+      "title": {
+        "en": "Protection for children, with gentleness",
+        "bn": "কোমলভাবে শিশুদের সুরক্ষা"
+      },
+      "summary": {
+        "en": "The reported refuge wording and practical care for a child.",
+        "bn": "বর্ণিত আশ্রয়ের শব্দ ও শিশুর ব্যবহারিক যত্ন।"
+      },
+      "basis": "prophetic_practice"
+    },
+    {
+      "id": "dreams",
+      "group": "understanding",
+      "title": {
+        "en": "Disturbing dreams and whispering",
+        "bn": "দুঃস্বপ্ন ও কুমন্ত্রণা"
+      },
+      "summary": {
+        "en": "Two reported situations, two methods, without diagnosing hidden causes.",
+        "bn": "দুটি বর্ণিত পরিস্থিতি ও পৃথক পদ্ধতি; গোপন কারণ নির্ণয় ছাড়া।"
+      },
+      "basis": "prophetic_practice"
+    },
+    {
+      "id": "counts",
+      "group": "foundations",
+      "title": {
+        "en": "Evidence, repetition and reading order",
+        "bn": "প্রমাণ, পুনরাবৃত্তি ও পাঠক্রম"
+      },
+      "summary": {
+        "en": "How to read the counters and distinguish a method from an app arrangement.",
+        "bn": "গণনা বোঝা ও বর্ণিত পদ্ধতি থেকে অ্যাপের সাজানো ক্রম পৃথক করা।"
+      },
+      "basis": "app_guidance"
+    },
+    {
+      "id": "home",
+      "group": "understanding",
+      "title": {
+        "en": "Al-Baqarah, the home and selected verses",
+        "bn": "আল-বাকারা, ঘর ও নির্বাচিত আয়াত"
+      },
+      "summary": {
+        "en": "Full-surah reports, night passages and additional verse selections.",
+        "bn": "সম্পূর্ণ সূরার বর্ণনা, রাতের পাঠ ও অতিরিক্ত আয়াত বাছাই।"
+      },
+      "basis": "quran_context"
+    },
+    {
+      "id": "unseen",
+      "group": "understanding",
+      "title": {
+        "en": "Evil eye, sihr and careful conclusions",
+        "bn": "বদনজর, জাদু ও সতর্ক সিদ্ধান্ত"
+      },
+      "summary": {
+        "en": "Respect the religious texts without turning symptoms into an app diagnosis.",
+        "bn": "ধর্মীয় বর্ণনা সম্মান করা এবং লক্ষণ থেকে অ্যাপে রোগ নির্ণয় এড়ানো।"
+      },
+      "basis": "quran_context"
+    },
+    {
+      "id": "water",
+      "group": "questions",
+      "title": {
+        "en": "Water, oil and commercial ruqyah products",
+        "bn": "পানি, তেল ও বাণিজ্যিক রুকইয়াহ পণ্য"
+      },
+      "summary": {
+        "en": "Distinguish scholarly permission from a required Prophetic recipe.",
+        "bn": "আলেমদের অনুমতি থেকে বাধ্যতামূলক বর্ণিত নিয়ম পৃথক করা।"
+      },
+      "basis": "scholarly_guidance"
+    },
+    {
+      "id": "purity",
+      "group": "questions",
+      "title": {
+        "en": "Purity, menstruation and recitation",
+        "bn": "পবিত্রতা, ঋতুস্রাব ও পাঠ"
+      },
+      "summary": {
+        "en": "Separate dua and remembrance from rulings about tilawah and a physical Mushaf.",
+        "bn": "দোয়া–যিকির থেকে তিলাওয়াত ও ছাপা মুসহাফের বিধান আলাদা করা।"
+      },
+      "basis": "scholarly_guidance"
+    },
+    {
+      "id": "care",
+      "group": "questions",
+      "title": {
+        "en": "If recovery takes time",
+        "bn": "সুস্থ হতে সময় লাগলে"
+      },
+      "summary": {
+        "en": "Hope, patience and appropriate treatment without blaming the person who is ill.",
+        "bn": "রোগীকে দোষ না দিয়ে আশা, ধৈর্য ও উপযুক্ত চিকিৎসা।"
+      },
+      "basis": "app_guidance"
+    },
+    {
+      "id": "help",
+      "group": "questions",
+      "title": {
+        "en": "Choosing trustworthy help",
+        "bn": "বিশ্বস্ত সহায়তা বেছে নেওয়া"
+      },
+      "summary": {
+        "en": "Transparent recitation, clear boundaries and protection from exploitation.",
+        "bn": "স্বচ্ছ পাঠ, পরিষ্কার সীমা ও শোষণ থেকে সুরক্ষা।"
+      },
+      "basis": "scholarly_guidance"
+    },
+    {
+      "id": "audio",
+      "group": "foundations",
+      "title": {
+        "en": "Listening, pronunciation and source notes",
+        "bn": "শোনা, উচ্চারণ ও উৎসের পরিচয়"
+      },
+      "summary": {
+        "en": "Use the audio as a learning aid and understand what each source label means.",
+        "bn": "শেখার সহায়ক হিসেবে অডিও ও উৎসের পরিচয় বোঝা।"
+      },
+      "basis": "app_guidance"
+    }
+  ],
+  "featured_guide_ids": [
+    "practice",
+    "counts",
+    "unseen",
+    "help"
+  ]
+}

@@ -1,0 +1,2345 @@
+{
+  "version": 1,
+  "content_revision": 2,
+  "language": "bn",
+  "guides": [
+    {
+      "id": "meaning",
+      "group": "foundations",
+      "title": "রুকইয়াহ কী এবং এর ভিত্তি",
+      "summary": "শিফা, আল্লাহর ওপর ভরসা ও বৈধ পাঠের শর্ত।",
+      "basis": "scholarly_guidance",
+      "sections": [
+        {
+          "title": "শিফা আল্লাহর কাছে চাওয়া হয়",
+          "text": "রুকইয়াহতে তিলাওয়াত ও দোয়ার মাধ্যমে আল্লাহর সাহায্য চাওয়া হয়। ১৭:৮২-এ শিফা ও রহমত এবং ২৬:৮০-এ আল্লাহর আরোগ্যদানের কথা আছে। পাঠক, রেকর্ডিং বা বস্তু স্বাধীন ক্ষমতার অধিকারী নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 17:82",
+                "bn": "কুরআন 17:82"
+              },
+              "url": "https://quran.com/17/82",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 26:80",
+                "bn": "কুরআন 26:80"
+              },
+              "url": "https://quran.com/26/80",
+              "kind": "quran"
+            }
+          ]
+        },
+        {
+          "title": "মূল সীমা",
+          "text": "মুসলিম ২২০০-এ শিরকমুক্ত রুকইয়াহর অনুমতি আছে। স্বীকৃত আলেমদের নির্দেশনায় অর্থবোধক শুদ্ধ শব্দ ও আল্লাহর আরোগ্যদানের ওপর বিশ্বাসের গুরুত্ব আছে। অর্থ ব্যাখ্যা করা যায় না এমন গোপন মন্ত্রে সেই স্বচ্ছতা থাকে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2200",
+                "bn": "সহিহ মুসলিম 2200"
+              },
+              "url": "https://sunnah.com/muslim:2200",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Darul Iftaa Chicago: conditions of ruqyah",
+                "bn": "দারুল ইফতা শিকাগো: রুকইয়াহর শর্ত"
+              },
+              "url": "https://daruliftaa.us/fatwa/324/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "এই সংগ্রহের তিন ধরনের পরিচয়",
+          "text": "বর্ণিত আমল নির্দিষ্ট বর্ণনার অনুসরণ করে। সাজানো পাঠক্রম পড়ার সুবিধায় উৎসসহ পাঠ একত্র করে। আলেমদের নির্দেশনা ব্যাখ্যা ও ব্যবহারিক প্রশ্ন নিয়ে আলোচনা করে। এগুলো প্রমাণের পরিচয়, মানুষের আধ্যাত্মিক মর্যাদার মান নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "শব্দগুলোর অন্তর্নিহিত বিষয়",
+          "text": "আয়াতের অর্থ বোঝা সাহায্য করে—আল্লাহর কাছে আবেদন করা আর কোনো শব্দ বা সংখ্যাকেই স্বতন্ত্র শক্তি মনে করা এক বিষয় নয়। নির্বাচিত পাঠগুলোর গুরুত্ব ভিন্ন; সবগুলোকে একই রোগের নির্দিষ্ট চিকিৎসার দাবি হিসেবে দেখা ঠিক নয়।",
+          "points": [
+            "আল-ফাতিহায় প্রশংসা, ইবাদত, নির্ভরতা ও হিদায়াত প্রার্থনা একত্র হয়েছে। বুখারি ৫৭৩৬-এ সাহাবির ঘটনায় রুকইয়াহ হিসেবে এর ব্যবহারও স্বীকৃত হয়েছে।",
+            "আল-ইখলাস আল্লাহর একত্ব ও অমুখাপেক্ষিতা ঘোষণা করে। আল-ফালাকে সৃষ্টি, অন্ধকার, ক্ষতিকর জাদু ও হিংসা থেকে এবং আন-নাসে কুমন্ত্রণা থেকে আশ্রয় চাওয়া হয়।",
+            "আয়াতুল কুরসিতে আল্লাহর জীবন, জ্ঞান, কর্তৃত্ব ও সংরক্ষণের কথা আছে। এটিকে শুধু সুরক্ষার প্রতীকে পরিণত না করে সম্পূর্ণ আয়াত পড়ুন।"
+          ],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 1",
+                "bn": "কুরআন 1"
+              },
+              "url": "https://quran.com/1",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 112",
+                "bn": "কুরআন 112"
+              },
+              "url": "https://quran.com/112",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 113",
+                "bn": "কুরআন 113"
+              },
+              "url": "https://quran.com/113",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 114",
+                "bn": "কুরআন 114"
+              },
+              "url": "https://quran.com/114",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 2/255",
+                "bn": "কুরআন 2/255"
+              },
+              "url": "https://quran.com/2/255",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5736",
+                "bn": "সহিহ আল-বুখারি 5736"
+              },
+              "url": "https://sunnah.com/bukhari:5736",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "fatihah"
+      ],
+      "routine_ids": [
+        "self"
+      ],
+      "body": "শিফা, আল্লাহর ওপর ভরসা ও বৈধ পাঠের শর্ত।",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 17:82",
+            "bn": "কুরআন 17:82"
+          },
+          "url": "https://quran.com/17/82",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 26:80",
+            "bn": "কুরআন 26:80"
+          },
+          "url": "https://quran.com/26/80",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2200",
+            "bn": "সহিহ মুসলিম 2200"
+          },
+          "url": "https://sunnah.com/muslim:2200",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Darul Iftaa Chicago: conditions of ruqyah",
+            "bn": "দারুল ইফতা শিকাগো: রুকইয়াহর শর্ত"
+          },
+          "url": "https://daruliftaa.us/fatwa/324/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Quran 1",
+            "bn": "কুরআন 1"
+          },
+          "url": "https://quran.com/1",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 112",
+            "bn": "কুরআন 112"
+          },
+          "url": "https://quran.com/112",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 113",
+            "bn": "কুরআন 113"
+          },
+          "url": "https://quran.com/113",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 114",
+            "bn": "কুরআন 114"
+          },
+          "url": "https://quran.com/114",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 2/255",
+            "bn": "কুরআন 2/255"
+          },
+          "url": "https://quran.com/2/255",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5736",
+            "bn": "সহিহ আল-বুখারি 5736"
+          },
+          "url": "https://sunnah.com/bukhari:5736",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "group": "methods",
+      "title": "নিজের রুকইয়াহর পূর্ণ পদ্ধতি",
+      "summary": "প্রস্তুতি, পাঠের অর্থ বোঝা ও প্রসঙ্গ অনুযায়ী আমল।",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "উদ্দেশ্য পরিষ্কার করুন",
+          "text": "স্বস্তিকর স্থানে আল্লাহর সাহায্য চান। উপকারী হলে আগে অর্থ পড়ুন। এই নির্দেশনায় দীক্ষা, বিশেষ পোশাক, কেনা পণ্য বা বাধ্যতামূলক দৈনিক কোর্স যোগ করা হয়নি।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 26:80",
+                "bn": "কুরআন 26:80"
+              },
+              "url": "https://quran.com/26/80",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "প্রকৃত পাঠ পড়ুন",
+          "text": "আল-ফাতিহার রুকইয়াহর স্পষ্ট বর্ণনা আছে। অসুস্থতার আমলে আল-ফালাক ও আন-নাস এসেছে। প্রদর্শিত পূর্ণ পাঠ মনোযোগ দিয়ে পড়ুন; অ্যাপের সুবিধাজনক সম্মিলিত ক্রম নিজে নবী ﷺ-এর উদ্ধৃত পাঠক্রম নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5736",
+                "bn": "সহিহ আল-বুখারি 5736"
+              },
+              "url": "https://sunnah.com/bukhari:5736",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5735",
+                "bn": "সহিহ আল-বুখারি 5735"
+              },
+              "url": "https://sunnah.com/bukhari:5735",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "শারীরিক কাজগুলো বুঝুন",
+          "text": "অসুস্থতার বর্ণনায় হালকা ফুঁ ও হাত বুলানোর কথা আছে। জোরে থুতু, ব্যথা দেওয়া বা নাটকীয় প্রতিক্রিয়া পদ্ধতির অংশ নয়। নির্দিষ্ট তিনবারের আমলের জন্য পৃথক ঘুমানোর নির্দেশনা দেখুন।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5735",
+                "bn": "সহিহ আল-বুখারি 5735"
+              },
+              "url": "https://sunnah.com/bukhari:5735",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "স্বাভাবিক যত্ন চালিয়ে যান",
+          "text": "ক্লান্তি বা অস্বস্তিতে বিরতি নিন এবং উপযুক্ত চিকিৎসা চালিয়ে যান। অ্যাপে সংরক্ষিত অগ্রগতি পাঠের অগ্রগতি; চিকিৎসার ফল বা গোপন কারণ নির্ণয়ের প্রমাণ নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "পরিস্থিতি অনুযায়ী পদ্ধতি বেছে নিন",
+          "text": "কোথা থেকে শুরু করবেন, তা বুঝতে প্রতিটি বর্ণনার উদ্দেশ্য দেখুন। একবারে এই লাইব্রেরির সব পদ্ধতি শেষ করার প্রয়োজন নেই। এটি ব্যবহারিকভাবে পাঠ বেছে নেওয়ার পরামর্শ, নতুন ধর্মীয় বাধ্যবাধকতা নয়।",
+          "points": [
+            "নিজের শরীরের কোনো স্থানে ব্যথা হলে দৈহিক ব্যথার পদ্ধতি খুলুন। দুটি ধাপ ও হাত রাখার নির্দেশ একই বর্ণনার অংশ।",
+            "ঘুমের সময় তিন সূরার আমল করতে ঘুমের পদ্ধতি খুলুন। অসুস্থতার পাঠ আর ঘুমের চক্রকে অভিন্ন ধরে নেবেন না।",
+            "অসুস্থ কাউকে দেখতে গেলে সংশ্লিষ্ট পদ্ধতি বেছে নিন এবং অন্য ব্যক্তিকে উদ্দেশ করে বলা শব্দগুলো লক্ষ্য করুন।",
+            "সাধারণভাবে নিজে পড়ার সংক্ষিপ্ত তালিকায় পৃথক দলিলের পাঠ একত্র হয়েছে। এর ক্রমকে নির্ধারিত আমল মনে করার আগে ব্যাখ্যা পড়ুন।"
+          ],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5736",
+                "bn": "সহিহ আল-বুখারি 5736"
+              },
+              "url": "https://sunnah.com/bukhari:5736",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "fatihah",
+        "falaq",
+        "nas"
+      ],
+      "routine_ids": [
+        "self"
+      ],
+      "body": "প্রস্তুতি, পাঠের অর্থ বোঝা ও প্রসঙ্গ অনুযায়ী আমল।",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 26:80",
+            "bn": "কুরআন 26:80"
+          },
+          "url": "https://quran.com/26/80",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5736",
+            "bn": "সহিহ আল-বুখারি 5736"
+          },
+          "url": "https://sunnah.com/bukhari:5736",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5735",
+            "bn": "সহিহ আল-বুখারি 5735"
+          },
+          "url": "https://sunnah.com/bukhari:5735",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5017",
+            "bn": "সহিহ আল-বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2202",
+            "bn": "সহিহ মুসলিম 2202"
+          },
+          "url": "https://sunnah.com/muslim:2202",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pain_method",
+      "group": "methods",
+      "title": "শরীরের ব্যথা: প্রথমে তিন, তারপর সাত",
+      "summary": "হাত রাখা, পৃথক গণনা ও আশ্রয় প্রার্থনার অর্থ।",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "বর্ণনার প্রসঙ্গ",
+          "text": "উসমান ইবন আবিল আস শরীরের ব্যথার কথা জানান। নবী ﷺ হাত রাখা ও দুই অংশের দোয়া শেখান। নির্দেশনা তাঁর জানানো ব্যথার প্রসঙ্গে; এটি রোগের চিকিৎসাগত কারণ নির্ণয় করে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "দুটি ধাপ অনুসরণ করুন",
+          "text": "ব্যথার স্থানে হাত রাখুন। বিসমিল্লাহ তিনবার বলুন। তারপর আশ্রয়ের দোয়া সাতবার বলুন। এক ধাপ শেষে অন্য ধাপে যান; প্রত্যেকটির আলাদা গণনা আছে।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "প্রসঙ্গ বজায় রাখুন",
+          "text": "দোয়ায় অনুভূত ব্যথা ও আশঙ্কার অনিষ্টের কথা আছে। আরোগ্যের সময়সীমা দেওয়া নেই। আশা নিয়ে পড়ুন; তীব্র, নতুন বা দীর্ঘস্থায়ী ব্যথার চিকিৎসাও নিন।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "কী চাইছেন, তা বুঝুন",
+          "text": "প্রথম ধাপ আল্লাহর নামে শুরু হয়। দ্বিতীয় ধাপে অনুভূত কষ্ট ও আশঙ্কিত অনিষ্ট থেকে আল্লাহ ও তাঁর ক্ষমতার আশ্রয় চাওয়া হয়। এতে ব্যথিত ব্যক্তি নিজে বলার শব্দ পান; অন্যের স্পর্শ বা অডিওকে এই বর্ণনায় বিকল্প হিসেবে নির্ধারণ করা হয়নি। কাছাকাছি অন্য দোয়ার শব্দ মিশিয়ে না দিয়ে অ্যাপে এই বর্ণনার শব্দ রাখা হয়েছে।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "bismillah",
+        "pain_refuge"
+      ],
+      "routine_ids": [
+        "pain"
+      ],
+      "body": "হাত রাখা, পৃথক গণনা ও আশ্রয় প্রার্থনার অর্থ।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2202",
+            "bn": "সহিহ মুসলিম 2202"
+          },
+          "url": "https://sunnah.com/muslim:2202",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "bedtime_method",
+      "group": "methods",
+      "title": "ঘুমানোর আগে: একবারের আমল কীভাবে সম্পূর্ণ?",
+      "summary": "তিন সূরা, হালকা ফুঁ, শরীরে মোছা ও সম্পূর্ণ আমল তিনবার।",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "সম্পূর্ণ আমল",
+          "text": "দুই হাত একসঙ্গে করে আল-ইখলাস, আল-ফালাক ও আন-নাস পড়ুন, হাতে হালকা ফুঁ দিয়ে শরীরে হাত বুলান। মাথা, মুখ ও শরীরের সামনের দিক থেকে শুরু করে যতটা সম্ভব মুছুন।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "সম্পূর্ণ আমল গণনা করুন",
+          "text": "বর্ণনায় সম্পূর্ণ আমল তিনবার করার কথা আছে। তাই পাঠকে তিন সূরা ও মোছার ধাপ একসঙ্গে পুনরাবৃত্তি হয়। শুধু শেষ সূরা পুনরায় পড়া এই গণনার একবারের আমল নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "রাতের অন্য পাঠ পৃথক",
+          "text": "আয়াতুল কুরসি ও আল-বাকারার শেষ দুই আয়াতের পৃথক রাতের বর্ণনা আছে। পূর্ণ পাঠ পড়ুন। আলাদা রাতের পাঠে অন্তর্ভুক্ত হওয়ায় এগুলো তিন সূরার আমলের ধাপ হয়ে যায় না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 2311",
+                "bn": "সহিহ আল-বুখারি 2311"
+              },
+              "url": "https://sunnah.com/bukhari:2311",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5009",
+                "bn": "সহিহ আল-বুখারি 5009"
+              },
+              "url": "https://sunnah.com/bukhari:5009",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "পড়ার ব্যবহারিক ধাপগুলো",
+          "text": "শারীরিক কাজটিও বর্ণিত আমলের অংশ; পর্দার ধাপগুলো শুধু অনুসরণ করতে সাহায্য করে। প্রতিটি চক্র শেষ হলে প্রথম সূরায় ফিরবেন। রেকর্ডিং শোনাকে অ্যাপ আপনার নিজের তিলাওয়াত হিসেবে গণনা করে না।",
+          "points": [
+            "দুই হাত একত্র করুন এবং বর্ণনা অনুযায়ী মৃদু ফুঁ দিন; জোরে থুতু ছিটাবেন না।",
+            "তিনটি সূরা সম্পূর্ণ পড়ুন। এখানে ক্রম হলো আল-ইখলাস, আল-ফালাক ও আন-নাস।",
+            "মাথা, মুখ ও শরীরের সামনের দিক থেকে শুরু করে যতটুকু পারেন হাত বুলান। এভাবে সম্পূর্ণ আমল তিন চক্র করুন।"
+          ],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "ikhlas",
+        "falaq",
+        "nas",
+        "kursi",
+        "baqarah_last"
+      ],
+      "routine_ids": [
+        "bedtime",
+        "night"
+      ],
+      "body": "তিন সূরা, হালকা ফুঁ, শরীরে মোছা ও সম্পূর্ণ আমল তিনবার।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5017",
+            "bn": "সহিহ আল-বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 2311",
+            "bn": "সহিহ আল-বুখারি 2311"
+          },
+          "url": "https://sunnah.com/bukhari:2311",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5009",
+            "bn": "সহিহ আল-বুখারি 5009"
+          },
+          "url": "https://sunnah.com/bukhari:5009",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ]
+    },
+    {
+      "id": "daily_method",
+      "group": "methods",
+      "title": "সকাল, সন্ধ্যা ও কোথাও অবস্থান নেওয়া",
+      "summary": "প্রত্যেক যিকিরের সময় ও নিজস্ব উৎস মিলিয়ে পড়ুন।",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "ছোট তিন সূরা",
+          "text": "আবু দাউদ ৫০৮২-এ সকাল–সন্ধ্যায় আল-ইখলাস, আল-ফালাক ও আন-নাস তিনবার আছে। সংযুক্ত সূত্রে আল-আলবানি একে হাসান বলেছেন। ঘুমানোর ফুঁ ও মোছার আমল পৃথক বর্ণনা।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 5082",
+                "bn": "সুনান আবু দাউদ 5082"
+              },
+              "url": "https://sunnah.com/abudawud:5082",
+              "kind": "hadith",
+              "grade": {
+                "en": "Hasan · Al-Albani",
+                "bn": "হাসান · আল-আলবানি"
+              }
+            }
+          ]
+        },
+        {
+          "title": "আকস্মিক বিপদ থেকে আশ্রয়ের দোয়া",
+          "text": "আবু দাউদ ৫০৮৮-এ সকাল বা সন্ধ্যায় তিনবার এবং পরবর্তী সন্ধ্যা বা সকাল পর্যন্ত সময়ের কথা আছে। এটিকে সব রোগ বা জীবনের সব পরীক্ষা থেকে অব্যাহতি বলা যাবে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 5088",
+                "bn": "সুনান আবু দাউদ 5088"
+              },
+              "url": "https://sunnah.com/abudawud:5088",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih · Al-Albani",
+                "bn": "সহিহ · আল-আলবানি"
+              }
+            }
+          ]
+        },
+        {
+          "title": "পরিপূর্ণ বাণীর মাধ্যমে আশ্রয়",
+          "text": "মুসলিম ২৭০৮ক-এ কোথাও অবস্থান নেওয়ার প্রসঙ্গ; ২৭০৮খ/২৭০৯ক-এ সন্ধ্যার প্রসঙ্গও আছে। এখানে ব্যবহৃত মুসলিমের বর্ণনায় সংখ্যা নেই, তাই পাঠকে নির্দিষ্ট সংখ্যা দেওয়া হয়নি।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2708a",
+                "bn": "সহিহ মুসলিম 2708a"
+              },
+              "url": "https://sunnah.com/muslim:2708a",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih Muslim 2708b",
+                "bn": "সহিহ মুসলিম 2708b"
+              },
+              "url": "https://sunnah.com/muslim:2708b",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "প্রতিটি আমলের সময় ও উপলক্ষ আলাদা রাখুন",
+          "text": "সকাল-সন্ধ্যার জিকির আর কোনো স্থানে অবস্থান করার আমলের উপলক্ষ ভিন্ন। সহজে পড়ার জন্য পৃথক বর্ণনা সকাল ও সন্ধ্যার তালিকায় একত্র হয়েছে; পুরো তালিকাটি একটি হাদিস হিসেবে উপস্থাপিত নয়। অবস্থানের দোয়া পড়তে নতুন কোনো স্থানে গিয়ে সন্ধ্যা পর্যন্ত অপেক্ষা করতে হয় না। সব আমলে একই সময়সূচি না বসিয়ে সংশ্লিষ্ট বর্ণনার উপলক্ষ অনুসরণ করুন।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2708a",
+                "bn": "সহিহ মুসলিম 2708a"
+              },
+              "url": "https://sunnah.com/muslim:2708a",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "daily_protection",
+        "perfect_words"
+      ],
+      "routine_ids": [
+        "morning",
+        "evening",
+        "stopping"
+      ],
+      "body": "প্রত্যেক যিকিরের সময় ও নিজস্ব উৎস মিলিয়ে পড়ুন।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5082",
+            "bn": "সুনান আবু দাউদ 5082"
+          },
+          "url": "https://sunnah.com/abudawud:5082",
+          "kind": "hadith",
+          "grade": {
+            "en": "Hasan · Al-Albani",
+            "bn": "হাসান · আল-আলবানি"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5088",
+            "bn": "সুনান আবু দাউদ 5088"
+          },
+          "url": "https://sunnah.com/abudawud:5088",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih · Al-Albani",
+            "bn": "সহিহ · আল-আলবানি"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2708a",
+            "bn": "সহিহ মুসলিম 2708a"
+          },
+          "url": "https://sunnah.com/muslim:2708a",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2708b",
+            "bn": "সহিহ মুসলিম 2708b"
+          },
+          "url": "https://sunnah.com/muslim:2708b",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        }
+      ]
+    },
+    {
+      "id": "patient_method",
+      "group": "methods",
+      "title": "অসুস্থ কারও জন্য পড়া",
+      "summary": "বর্ণিত শব্দ, রোগী দেখতে গিয়ে সাতবারের দোয়া ও রোগীর স্বস্তি।",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "কাকে সম্বোধন করা হচ্ছে জানুন",
+          "text": "বিসমিল্লাহি আরকিকা অন্য ব্যক্তিকে সম্বোধন করে। প্রদর্শিত “ইশফিহি” দিয়ে তার শিফা চাওয়া হয়। বর্ণিত রূপগুলো অক্ষুণ্ণ আছে; ব্যাকরণ বদলালে তা বুঝে বদলাতে হবে, হুবহু বর্ণনার শব্দ ভাবা যাবে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2186",
+                "bn": "সহিহ মুসলিম 2186"
+              },
+              "url": "https://sunnah.com/muslim:2186",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5743",
+                "bn": "সহিহ আল-বুখারি 5743"
+              },
+              "url": "https://sunnah.com/bukhari:5743",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "রোগী দেখতে গিয়ে সাতবারের দোয়া",
+          "text": "আবু দাউদ ৩১০৬-এ সাতবার পড়া এবং ব্যক্তির নির্ধারিত মৃত্যুর সময় না আসার শর্ত রয়েছে। সেই শর্ত আমাদের জানা নেই; ফল দেখে রোগীকে দোষ দেওয়ার অধিকারও নেই।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 3106",
+                "bn": "সুনান আবু দাউদ 3106"
+              },
+              "url": "https://sunnah.com/abudawud:3106",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih · Al-Albani",
+                "bn": "সহিহ · আল-আলবানি"
+              }
+            }
+          ]
+        },
+        {
+          "title": "যত্ন ও সীমা",
+          "text": "কী পড়বেন তা জানান এবং সম্মতি, গোপনীয়তা ও ধর্মীয় সীমা মানুন। অ্যাপ পড়ার সুবিধায় পৃথক বর্ণনা একত্র করে; সম্মিলিত ক্রমকে একক বর্ণিত আচার বলে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Jordan Iftaa 672: treatment with Quran",
+                "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "অসুস্থকে দেখতে যাওয়া কেবল গণনা নয়",
+          "text": "ব্যক্তি স্বস্তির সঙ্গে গ্রহণ করতে পারেন, এমনভাবে পড়ুন। এখানে দেখতে যাওয়ার পদ্ধতি শুরু হয় কী পড়বেন তা বুঝিয়ে বলার স্মরণ দিয়ে। সাতবারের দোয়াটি রোগীকে উদ্দেশ করে বলা; আরোগ্যের অন্য দোয়ার ব্যাকরণ ও প্রেক্ষাপট আলাদা। ধাপ শেষ হওয়া শুধু আপনার পাঠের তথ্য রাখে; রোগীর নির্ধারিত সময় প্রকাশ করে না বা অসুস্থতার পরিণতি জানায় না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2186",
+                "bn": "সহিহ মুসলিম 2186"
+              },
+              "url": "https://sunnah.com/muslim:2186",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5743",
+                "bn": "সহিহ আল-বুখারি 5743"
+              },
+              "url": "https://sunnah.com/bukhari:5743",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 3106",
+                "bn": "সুনান আবু দাউদ ৩১০৬"
+              },
+              "url": "https://sunnah.com/abudawud:3106",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih · Al-Albani",
+                "bn": "সহিহ · আল-আলবানি"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "healing",
+        "jibril",
+        "visiting_healing"
+      ],
+      "routine_ids": [
+        "patient"
+      ],
+      "body": "বর্ণিত শব্দ, রোগী দেখতে গিয়ে সাতবারের দোয়া ও রোগীর স্বস্তি।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2186",
+            "bn": "সহিহ মুসলিম 2186"
+          },
+          "url": "https://sunnah.com/muslim:2186",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5743",
+            "bn": "সহিহ আল-বুখারি 5743"
+          },
+          "url": "https://sunnah.com/bukhari:5743",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 3106",
+            "bn": "সুনান আবু দাউদ 3106"
+          },
+          "url": "https://sunnah.com/abudawud:3106",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih · Al-Albani",
+            "bn": "সহিহ · আল-আলবানি"
+          }
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Jordan Iftaa 672: treatment with Quran",
+            "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+          },
+          "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "children_method",
+      "group": "methods",
+      "title": "কোমলভাবে শিশুদের সুরক্ষা",
+      "summary": "বর্ণিত আশ্রয়ের শব্দ ও শিশুর ব্যবহারিক যত্ন।",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "বর্ণনা ও শব্দ",
+          "text": "বুখারি ৩৩৭১-এ নবী ﷺ-এর হাসান ও হুসাইনের জন্য আশ্রয় চাওয়া এবং ইবরাহিমের ইসমাইল ও ইসহাকের জন্য আশ্রয় চাওয়ার উল্লেখ আছে। এখানে বর্ণনার সাধারণ আশ্রয়ের শব্দ রাখা হয়েছে।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 3371",
+                "bn": "সহিহ আল-বুখারি 3371"
+              },
+              "url": "https://sunnah.com/bukhari:3371",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "যত্নে স্বস্তি গুরুত্বপূর্ণ",
+          "text": "শান্তভাবে পড়ুন; শিশু অস্বস্তিতে থাকলে থামুন। প্রতিক্রিয়া আনার জন্য শিশুকে ভয়, বাঁধা, আঘাত বা জেরা করবেন না। শিশু অসুস্থ হলে অভিভাবকের উদ্বেগের সঙ্গে উপযুক্ত চিকিৎসা মূল্যায়নও থাকা উচিত।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "গণনা ও স্বাভাবিক সতর্কতা",
+          "text": "উল্লিখিত বর্ণনায় নির্দিষ্ট সংখ্যা নেই। দোয়ায় ক্ষতিকর প্রাণী ও ক্ষতিকর নজরের কথা আছে; শিশুর যত্নে স্বাভাবিক নিরাপত্তা, পরিচ্ছন্নতা ও চিকিৎসাও প্রয়োজন।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 3371",
+                "bn": "সহিহ আল-বুখারি 3371"
+              },
+              "url": "https://sunnah.com/bukhari:3371",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "children"
+      ],
+      "routine_ids": [
+        "children"
+      ],
+      "body": "বর্ণিত আশ্রয়ের শব্দ ও শিশুর ব্যবহারিক যত্ন।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 3371",
+            "bn": "সহিহ আল-বুখারি 3371"
+          },
+          "url": "https://sunnah.com/bukhari:3371",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "dreams",
+      "group": "understanding",
+      "title": "দুঃস্বপ্ন ও কুমন্ত্রণা",
+      "summary": "দুটি বর্ণিত পরিস্থিতি ও পৃথক পদ্ধতি; গোপন কারণ নির্ণয় ছাড়া।",
+      "basis": "prophetic_practice",
+      "sections": [
+        {
+          "title": "অপছন্দের স্বপ্নের পর",
+          "text": "মুসলিম ২২৬২-এ বাম দিকে তিনবার হালকা থুতু, শয়তান থেকে আল্লাহর আশ্রয় তিনবার চাওয়া এবং শোয়ার পাশ বদলানোর নির্দেশ আছে। গণনা পরিষ্কার রাখতে নির্দেশিত পাঠে কাজগুলো আলাদা।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2262",
+                "bn": "সহিহ মুসলিম 2262"
+              },
+              "url": "https://sunnah.com/muslim:2262",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "নামাজের সময় কুমন্ত্রণা",
+          "text": "মুসলিম ২২০৩ক-এ উসমান ইবন আবিল আসের নামাজ ও পাঠে বিঘ্নের প্রসঙ্গ আছে। আশ্রয় চাওয়া ও বামে তিনবার হালকা থুতুর আমল সেই বর্ণনার। মানুষ বা নামাজের স্থান নোংরা করবেন না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2203a",
+                "bn": "সহিহ মুসলিম 2203a"
+              },
+              "url": "https://sunnah.com/muslim:2203a",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "করণীয় মানেই রোগ নির্ণয় নয়",
+          "text": "স্বপ্ন, হাই বা অনাকাঙ্ক্ষিত চিন্তা দিয়ে কে ক্ষতি করেছে জানা যায় না, জিনের প্রভাবও প্রমাণ হয় না। দীর্ঘস্থায়ী কষ্টে সহায়তা নিন; অ্যাপ পাঠের নির্দেশনা দেয়, অদৃশ্য কারণ পরীক্ষার যন্ত্র নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "refuge_shaytan"
+      ],
+      "routine_ids": [
+        "bad_dream"
+      ],
+      "body": "দুটি বর্ণিত পরিস্থিতি ও পৃথক পদ্ধতি; গোপন কারণ নির্ণয় ছাড়া।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2262",
+            "bn": "সহিহ মুসলিম 2262"
+          },
+          "url": "https://sunnah.com/muslim:2262",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2203a",
+            "bn": "সহিহ মুসলিম 2203a"
+          },
+          "url": "https://sunnah.com/muslim:2203a",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "counts",
+      "group": "foundations",
+      "title": "প্রমাণ, পুনরাবৃত্তি ও পাঠক্রম",
+      "summary": "গণনা বোঝা ও বর্ণিত পদ্ধতি থেকে অ্যাপের সাজানো ক্রম পৃথক করা।",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "সব পাঠে একই সংখ্যা নয়",
+          "text": "ব্যথায় তিনের পর সাত, ঘুমানোর আগে সম্পূর্ণ আমল তিনবার, আর সকাল–সন্ধ্যায় ছোট সূরাগুলো তিনবার বর্ণিত। প্রসঙ্গ ও গণনার একক আলাদা।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sunan Abi Dawud 5082",
+                "bn": "সুনান আবু দাউদ 5082"
+              },
+              "url": "https://sunnah.com/abudawud:5082",
+              "kind": "hadith",
+              "grade": {
+                "en": "Hasan · Al-Albani",
+                "bn": "হাসান · আল-আলবানি"
+              }
+            }
+          ]
+        },
+        {
+          "title": "সংখ্যা অনির্দিষ্ট থাকার অর্থ",
+          "text": "উৎসে সংখ্যা না থাকলে অ্যাপ নতুন সংখ্যা নির্ধারণ না করে পড়েছি/পরবর্তী বোতাম দেয়। ব্যক্তিগত অভ্যাস বা সুবিধাজনক ক্রমকে সেভাবেই চিহ্নিত করতে হয়; প্রমাণ ছাড়া নবী ﷺ-এর নামে বলা যায় না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2200",
+                "bn": "সহিহ মুসলিম 2200"
+              },
+              "url": "https://sunnah.com/muslim:2200",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "পাঠের অগ্রগতির অর্থ সীমিত",
+          "text": "আপনি নিজে চিহ্নিত করলে গণনা বাড়ে। অডিও শুনলে বাড়ে না। সম্পূর্ণ হওয়া মানে পাঠের ধাপগুলো চিহ্নিত হয়েছে; অসুস্থতা শেষ বা আধ্যাত্মিক স্তর অর্জনের ঘোষণা নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "এই লাইব্রেরিতে দলিল কীভাবে দেখবেন",
+          "text": "তথ্যসূত্র ও প্রেক্ষাপট খুলে সংকলন, নম্বর এবং সেখানে কোন আমল বর্ণিত হয়েছে দেখুন। কোনো দলিল আরবি শব্দের ভিত্তি হলেই অন্য কোথাও জুড়ে দেওয়া সব সংখ্যা, কাজ বা উপকারেরও ভিত্তি হয় না। সুনানের বর্ণনায় হাসান/সহিহের পাশে সংশ্লিষ্ট সংস্করণে ব্যবহৃত আলেমের নাম দেওয়া আছে; এর অর্থ এই নয় যে কোনো আলেম কখনো মান নিয়ে আলোচনা করেননি। কুরআনের নির্বাচিত পাঠ ও আলেমদের ব্যাখ্যা পৃথকভাবে চিহ্নিত।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2200",
+                "bn": "সহিহ মুসলিম 2200"
+              },
+              "url": "https://sunnah.com/muslim:2200",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih Muslim 2202",
+                "bn": "সহিহ মুসলিম 2202"
+              },
+              "url": "https://sunnah.com/muslim:2202",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5017",
+                "bn": "সহিহ আল-বুখারি 5017"
+              },
+              "url": "https://sunnah.com/bukhari:5017",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "গণনা বোঝা ও বর্ণিত পদ্ধতি থেকে অ্যাপের সাজানো ক্রম পৃথক করা।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2202",
+            "bn": "সহিহ মুসলিম 2202"
+          },
+          "url": "https://sunnah.com/muslim:2202",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5017",
+            "bn": "সহিহ আল-বুখারি 5017"
+          },
+          "url": "https://sunnah.com/bukhari:5017",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sunan Abi Dawud 5082",
+            "bn": "সুনান আবু দাউদ 5082"
+          },
+          "url": "https://sunnah.com/abudawud:5082",
+          "kind": "hadith",
+          "grade": {
+            "en": "Hasan · Al-Albani",
+            "bn": "হাসান · আল-আলবানি"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih Muslim 2200",
+            "bn": "সহিহ মুসলিম 2200"
+          },
+          "url": "https://sunnah.com/muslim:2200",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "group": "understanding",
+      "title": "আল-বাকারা, ঘর ও নির্বাচিত আয়াত",
+      "summary": "সম্পূর্ণ সূরার বর্ণনা, রাতের পাঠ ও অতিরিক্ত আয়াত বাছাই।",
+      "basis": "quran_context",
+      "sections": [
+        {
+          "title": "সম্পূর্ণ সূরার বর্ণনা",
+          "text": "মুসলিম ৭৮০-এ যে ঘরে আল-বাকারা পড়া হয় সেখান থেকে শয়তান সরে যাওয়ার কথা আছে। এটি সূরার বর্ণনা; ছোট অংশকে অ্যাপ সম্পূর্ণ সূরা পাঠ বলে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 780",
+                "bn": "সহিহ মুসলিম 780"
+              },
+              "url": "https://sunnah.com/muslim:780",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Quran 2",
+                "bn": "কুরআন 2"
+              },
+              "url": "https://quran.com/2",
+              "kind": "quran"
+            }
+          ]
+        },
+        {
+          "title": "রাতের দুটি পৃথক আমল",
+          "text": "আয়াতুল কুরসি ও শেষ দুই আয়াতের পৃথক ঘুমানোর/রাতের বর্ণনা আছে। সম্পূর্ণ কুরআন ডাউনলোড ছাড়াই এখানে পূর্ণ পাঠ পড়তে পারেন; প্রত্যেক বর্ণনার ভাষা ও সময় আলাদা।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 2311",
+                "bn": "সহিহ আল-বুখারি 2311"
+              },
+              "url": "https://sunnah.com/bukhari:2311",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5009",
+                "bn": "সহিহ আল-বুখারি 5009"
+              },
+              "url": "https://sunnah.com/bukhari:5009",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "মুসা ও জাদুর ঘটনার আয়াত",
+          "text": "৭:১১৭–১২২, ১০:৮১–৮২ ও ২০:৬৯-এ মুসা ও জাদুকরদের ঘটনা আছে। এগুলো পাঠের বাছাইয়ে রাখা আর নবী ﷺ-এর নির্দিষ্ট তালিকা, সংখ্যা বা বাধ্যতামূলক ক্রম প্রমাণ করা এক কথা নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 7:117-122",
+                "bn": "কুরআন 7:117-122"
+              },
+              "url": "https://quran.com/7/117-122",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 10:81-82",
+                "bn": "কুরআন 10:81-82"
+              },
+              "url": "https://quran.com/10/81-82",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 20:69",
+                "bn": "কুরআন 20:69"
+              },
+              "url": "https://quran.com/20/69",
+              "kind": "quran"
+            }
+          ]
+        },
+        {
+          "title": "আইয়ুব ও ইউনুসের প্রার্থনা",
+          "text": "পরিচিত দোয়ার অংশ যেন তার প্রেক্ষাপট থেকে বিচ্ছিন্ন না হয়, সে জন্য সম্পূর্ণ আয়াত দেওয়া হয়েছে। আইয়ুব নিজের কষ্ট ও আল্লাহর রহমতের কথা বলেন; পরের আয়াতে আল্লাহর সাড়া দেওয়ার বিবরণ আছে। ইউনুসের প্রার্থনায় আল্লাহর একত্ব, পবিত্রতা ঘোষণা ও নিজের ভুল স্বীকার একত্র হয়েছে; ২১:৮৮-এ কষ্ট থেকে উদ্ধারের কথা আছে। এসব ঘটনা আশা ও বিনয় শেখায়। এখানে রাখার কারণে নতুন নির্দিষ্ট রুকইয়াহ-সংখ্যা নির্ধারিত হয় না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 21/83-84",
+                "bn": "কুরআন 21/83-84"
+              },
+              "url": "https://quran.com/21/83-84",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 21/87-88",
+                "bn": "কুরআন 21/87-88"
+              },
+              "url": "https://quran.com/21/87-88",
+              "kind": "quran"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "kursi",
+        "baqarah_last"
+      ],
+      "routine_ids": [
+        "night"
+      ],
+      "body": "সম্পূর্ণ সূরার বর্ণনা, রাতের পাঠ ও অতিরিক্ত আয়াত বাছাই।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 780",
+            "bn": "সহিহ মুসলিম 780"
+          },
+          "url": "https://sunnah.com/muslim:780",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Quran 2",
+            "bn": "কুরআন 2"
+          },
+          "url": "https://quran.com/2",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 2311",
+            "bn": "সহিহ আল-বুখারি 2311"
+          },
+          "url": "https://sunnah.com/bukhari:2311",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5009",
+            "bn": "সহিহ আল-বুখারি 5009"
+          },
+          "url": "https://sunnah.com/bukhari:5009",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Quran 7:117-122",
+            "bn": "কুরআন 7:117-122"
+          },
+          "url": "https://quran.com/7/117-122",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 10:81-82",
+            "bn": "কুরআন 10:81-82"
+          },
+          "url": "https://quran.com/10/81-82",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 20:69",
+            "bn": "কুরআন 20:69"
+          },
+          "url": "https://quran.com/20/69",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 21/83-84",
+            "bn": "কুরআন 21/83-84"
+          },
+          "url": "https://quran.com/21/83-84",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Quran 21/87-88",
+            "bn": "কুরআন 21/87-88"
+          },
+          "url": "https://quran.com/21/87-88",
+          "kind": "quran"
+        }
+      ]
+    },
+    {
+      "id": "unseen",
+      "group": "understanding",
+      "title": "বদনজর, জাদু ও সতর্ক সিদ্ধান্ত",
+      "summary": "ধর্মীয় বর্ণনা সম্মান করা এবং লক্ষণ থেকে অ্যাপে রোগ নির্ণয় এড়ানো।",
+      "basis": "quran_context",
+      "sections": [
+        {
+          "title": "বর্ণনায় যা আছে",
+          "text": "মুসলিম ২১৮৮-এ ইসলামী শিক্ষায় বদনজর স্বীকার করা হয়েছে। আল-ফালাকে হিংসা ও অন্য অনিষ্ট থেকে আশ্রয় চাওয়া হয়। এগুলো প্রার্থনার ভিত্তি; নির্দিষ্ট আত্মীয়, প্রতিবেশী বা কাউকে অভিযুক্ত করার অনুমতি নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih Muslim 2188",
+                "bn": "সহিহ মুসলিম 2188"
+              },
+              "url": "https://sunnah.com/muslim:2188",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "Quran 113",
+                "bn": "কুরআন 113"
+              },
+              "url": "https://quran.com/113",
+              "kind": "quran"
+            }
+          ]
+        },
+        {
+          "title": "অ্যাপ যা প্রমাণ করতে পারে না",
+          "text": "স্বপ্ন, মাথাব্যথা, হাই, কান্না বা অডিওর প্রতিক্রিয়ার তালিকা দিয়ে এখানে অদৃশ্য কারণ প্রমাণ করা যায় না। অভিজ্ঞতাকে গুরুত্ব দিয়ে যত্ন ও ন্যায্য মূল্যায়ন দরকার, অ্যাপের অপ্রমাণিত নিশ্চয়তা নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "ভয় না বাড়িয়ে আশ্রয় চান",
+          "text": "শান্তভাবে প্রমাণসমর্থিত পাঠ পড়ুন, স্বাভাবিক সম্পর্ক বজায় রাখুন এবং প্রয়োজনে যোগ্য আলেম বা চিকিৎসকের সাহায্য নিন। কারও নাটকীয় দাবি বা সাময়িক প্রতিক্রিয়া গ্রহণযোগ্য প্রমাণের বিকল্প নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "সিহর সম্পর্কে কী বুঝবেন",
+          "text": "কুরআন ২:১০২ ক্ষতিকর জাদু শেখার নিন্দা করে এবং জানায়, ক্ষতি আল্লাহর অনুমতির বাইরে স্বতন্ত্রভাবে ঘটে না। আল-ফালাকে ক্ষতিকর জাদুর কাজ ও হিংসা থেকে আশ্রয় চাওয়া আছে। এখানে করণীয় হিসেবে দলিলসমর্থিত শব্দে আল্লাহর কাছে ফেরার পথ দেখানো হয়েছে। এসব আয়াত থেকে অ্যাপ কাউকে অপরাধী চিহ্নিত করা, স্বপ্নের সংকেত ভাঙা বা কোনো দাম্পত্য সমস্যা, অসুস্থতা ও বিপর্যয়ের নির্দিষ্ট কারণ জানার ক্ষমতা পায় না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 2/102",
+                "bn": "কুরআন 2/102"
+              },
+              "url": "https://quran.com/2/102",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Quran 113",
+                "bn": "কুরআন 113"
+              },
+              "url": "https://quran.com/113",
+              "kind": "quran"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "falaq",
+        "nas",
+        "jibril"
+      ],
+      "routine_ids": [
+        "self"
+      ],
+      "body": "ধর্মীয় বর্ণনা সম্মান করা এবং লক্ষণ থেকে অ্যাপে রোগ নির্ণয় এড়ানো।",
+      "sources": [
+        {
+          "label": {
+            "en": "Sahih Muslim 2188",
+            "bn": "সহিহ মুসলিম 2188"
+          },
+          "url": "https://sunnah.com/muslim:2188",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Quran 113",
+            "bn": "কুরআন 113"
+          },
+          "url": "https://quran.com/113",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Quran 2/102",
+            "bn": "কুরআন 2/102"
+          },
+          "url": "https://quran.com/2/102",
+          "kind": "quran"
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "group": "questions",
+      "title": "পানি, তেল ও বাণিজ্যিক রুকইয়াহ পণ্য",
+      "summary": "আলেমদের অনুমতি থেকে বাধ্যতামূলক বর্ণিত নিয়ম পৃথক করা।",
+      "basis": "scholarly_guidance",
+      "sections": [
+        {
+          "title": "আলেমদের আলোচনা",
+          "text": "জর্ডানের ইফতা বিভাগের নির্দেশনায় পানি বা তেলের ওপর পড়ে ফুঁ দেওয়ার অনুমতি আছে। এখানে এটি আলেমদের নির্দেশনা; একটিমাত্র উপকরণ, ব্র্যান্ড বা সবার জন্য চিকিৎসাসূচি নির্ধারণ করে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Jordan Iftaa 672: treatment with Quran",
+                "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "পণ্য কেনা পূর্বশর্ত নয়",
+          "text": "মূল নিজের পাঠের পদ্ধতি রুকইয়াহ পণ্য না কিনেই করা যায়। মুফতি উইলায়াহ কুরআনের বাণীর বাণিজ্যিক অপব্যবহার ঠেকানোর কথা আলোচনা করেছেন। নিশ্চিত আরোগ্যের বিজ্ঞাপন বা শিফা এক বিক্রেতার অধীনে—এমন দাবি এড়ান।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 829: Quranic writing and commercial misuse",
+                "bn": "মুফতি উইলায়াহ ৮২৯: কুরআনের লেখা ও বাণিজ্যিক অপব্যবহার"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/5848-irsyad-hukum-siri-ke-829-ruqyah-menggunakan-air-rendaman-kertas-yang-mengandungi-ayat-suci-al-quran",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "স্বাস্থ্য ও সম্মতি প্রযোজ্য",
+          "text": "ব্যক্তির জন্য নিরাপদ ও উপযুক্ত জিনিসই ব্যবহার করুন। অ্যাপ কালি, রাসায়নিক, পোড়ানো বা খাওয়ার মিশ্রণের নিয়ম দেয় না। কাউকে পান করতে বা কিছু ব্যবহার করতে বাধ্য করবেন না; ধর্মীয় খুঁটিনাটি ও চিকিৎসাগত উপযুক্ততায় যোগ্য সহায়তা নিন।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Jordan Iftaa 672: treatment with Quran",
+                "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "আলেমদের অনুমতি থেকে বাধ্যতামূলক বর্ণিত নিয়ম পৃথক করা।",
+      "sources": [
+        {
+          "label": {
+            "en": "Jordan Iftaa 672: treatment with Quran",
+            "bn": "জর্ডান ইফতা ৬৭২: কুরআনের মাধ্যমে চিকিৎসা"
+          },
+          "url": "https://www.aliftaa.jo/en-fatwas/672/DefaultEn.aspx",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 829: Quranic writing and commercial misuse",
+            "bn": "মুফতি উইলায়াহ ৮২৯: কুরআনের লেখা ও বাণিজ্যিক অপব্যবহার"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/5848-irsyad-hukum-siri-ke-829-ruqyah-menggunakan-air-rendaman-kertas-yang-mengandungi-ayat-suci-al-quran",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "purity",
+      "group": "questions",
+      "title": "পবিত্রতা, ঋতুস্রাব ও পাঠ",
+      "summary": "দোয়া–যিকির থেকে তিলাওয়াত ও ছাপা মুসহাফের বিধান আলাদা করা।",
+      "basis": "scholarly_guidance",
+      "sections": [
+        {
+          "title": "কাজ আলাদা হলে বিধানও আলাদা",
+          "text": "দোয়া করা, আল্লাহর যিকির, কুরআন তিলাওয়াত ও ছাপা মুসহাফ ধরা আলাদা প্রশ্ন। রুকইয়াহ পাঠকের সব পরিস্থিতিতে এক সংক্ষিপ্ত নিয়ম যথেষ্ট ধরে নেবেন না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Jordan Iftaa 1064: recitation and remembrance",
+                "bn": "জর্ডান ইফতা ১০৬৪: তিলাওয়াত ও যিকির"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/1064/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "আলেমদের মতভেদ জানুন",
+          "text": "মিসরের দারুল ইফতা ঋতুস্রাবে কুরআন পাঠে সংখ্যাগরিষ্ঠের নিষেধ ও মালিকি অনুমতির কথা উল্লেখ করে। জর্ডানের নির্দেশনা দোয়া–যিকিরের শব্দ থেকে তিলাওয়াতের উদ্দেশ্য পৃথক করে। এগুলো নির্দিষ্ট মত; অ্যাপের দেওয়া সর্বজনীন ফতোয়া নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Egypt Dar Al-Ifta 7815",
+                "bn": "মিসর দারুল ইফতা ৭৮১৫"
+              },
+              "url": "https://dar-alifta.org/en/fatwa/details/7815/is-it-permissible-for-a-menstruating-woman-to-recite-the-quran-from-the-computer",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Jordan Iftaa 1064",
+                "bn": "জর্ডান ইফতা ১০৬৪"
+              },
+              "url": "https://www.aliftaa.jo/en-fatwas/1064/DefaultEn.aspx",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "নিজের পরিস্থিতির নির্দেশনা নিন",
+          "text": "উদ্দেশ্য, বড় অপবিত্রতা ও মুসহাফের প্রশ্নে নিজের মাজহাব ও পরিস্থিতি বোঝেন এমন যোগ্য আলেমের নির্দেশনা নিন। অ্যাপ অর্থ ও শেখার উপকরণ খোলা রাখে; আপনার পবিত্রতার অবস্থা অনুমান করে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Darul Iftaa Chicago: conditions of ruqyah",
+                "bn": "দারুল ইফতা শিকাগো: রুকইয়াহর শর্ত"
+              },
+              "url": "https://daruliftaa.us/fatwa/324/",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "দোয়া–যিকির থেকে তিলাওয়াত ও ছাপা মুসহাফের বিধান আলাদা করা।",
+      "sources": [
+        {
+          "label": {
+            "en": "Jordan Iftaa 1064",
+            "bn": "জর্ডান ইফতা ১০৬৪"
+          },
+          "url": "https://www.aliftaa.jo/en-fatwas/1064/DefaultEn.aspx",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Egypt Dar Al-Ifta 7815",
+            "bn": "মিসর দারুল ইফতা ৭৮১৫"
+          },
+          "url": "https://dar-alifta.org/en/fatwa/details/7815/is-it-permissible-for-a-menstruating-woman-to-recite-the-quran-from-the-computer",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Darul Iftaa Chicago: conditions of ruqyah",
+            "bn": "দারুল ইফতা শিকাগো: রুকইয়াহর শর্ত"
+          },
+          "url": "https://daruliftaa.us/fatwa/324/",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "care",
+      "group": "questions",
+      "title": "সুস্থ হতে সময় লাগলে",
+      "summary": "রোগীকে দোষ না দিয়ে আশা, ধৈর্য ও উপযুক্ত চিকিৎসা।",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "অসুস্থতা আধ্যাত্মিক মানের স্কোর নয়",
+          "text": "কুরআন ২:১৫৫–১৫৭-এ পরীক্ষা ও ধৈর্যের কথা আছে। বুখারি ৫৬৪১–৫৬৪২-এ কষ্ট ও অসুস্থতায় পাপ মোচনের কথা এসেছে। ধীরে সুস্থ হওয়া দিয়ে অ্যাপ কারও ঈমান বা মর্যাদা বিচার করতে পারে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Quran 2:155-157",
+                "bn": "কুরআন 2:155-157"
+              },
+              "url": "https://quran.com/2/155-157",
+              "kind": "quran"
+            },
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5641",
+                "bn": "সহিহ আল-বুখারি 5641"
+              },
+              "url": "https://sunnah.com/bukhari:5641",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            }
+          ]
+        },
+        {
+          "title": "তিলাওয়াতের পাশাপাশি যত্ন চলে",
+          "text": "নির্ধারিত চিকিৎসা চালিয়ে যান এবং চলমান শারীরিক বা মানসিক কষ্টের মূল্যায়ন নিন। যত্নের সঙ্গে রুকইয়াহ করা যায়; পাঠের গণনা রোগ নির্ণয়, চিকিৎসার সাফল্য বা ওষুধের প্রয়োজনের পরীক্ষা নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "তাৎক্ষণিক বিপদে ব্যবস্থা নিন",
+          "text": "তীব্র শ্বাসকষ্ট, অচেতনতা, গুরুতর আঘাত বা তাৎক্ষণিক বিপদে জরুরি স্থানীয় চিকিৎসা নিন। পাঠে বিরতি দিয়ে সাহায্য পাওয়াকে অগ্রাধিকার দিন; অ্যাপ জরুরি অবস্থার কারণ নির্ধারণ করে না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "NHS: recognising a life-threatening emergency",
+                "bn": "এনএইচএস: প্রাণঘাতী জরুরি অবস্থা চেনা"
+              },
+              "url": "https://www.londonambulance.nhs.uk/our-services/emergency-care/calling-999/",
+              "kind": "medical"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [
+        "ayyub",
+        "yunus"
+      ],
+      "routine_ids": [],
+      "body": "রোগীকে দোষ না দিয়ে আশা, ধৈর্য ও উপযুক্ত চিকিৎসা।",
+      "sources": [
+        {
+          "label": {
+            "en": "Quran 2:155-157",
+            "bn": "কুরআন 2:155-157"
+          },
+          "url": "https://quran.com/2/155-157",
+          "kind": "quran"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5641",
+            "bn": "সহিহ আল-বুখারি 5641"
+          },
+          "url": "https://sunnah.com/bukhari:5641",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "NHS: recognising a life-threatening emergency",
+            "bn": "এনএইচএস: প্রাণঘাতী জরুরি অবস্থা চেনা"
+          },
+          "url": "https://www.londonambulance.nhs.uk/our-services/emergency-care/calling-999/",
+          "kind": "medical"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "group": "questions",
+      "title": "বিশ্বস্ত সহায়তা বেছে নেওয়া",
+      "summary": "স্বচ্ছ পাঠ, পরিষ্কার সীমা ও শোষণ থেকে সুরক্ষা।",
+      "basis": "scholarly_guidance",
+      "sections": [
+        {
+          "title": "কী পড়া হবে জিজ্ঞেস করুন",
+          "text": "যিনি শব্দ ও উৎস বোঝাতে পারেন এবং ধর্মীয় সীমা মানেন তাঁর সহায়তা নিন। মুইস আধ্যাত্মিক চিকিৎসার নামে সন্দেহজনক মন্ত্র, অপবিত্র উপকরণ ও অনুচিত নির্জনতা বা স্পর্শ সম্পর্কে সতর্ক করেছে।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "শর্ত পরিষ্কার রাখুন",
+          "text": "আল-ফাতিহার বর্ণনায় পারিশ্রমিক আছে; শুধু অর্থ নেওয়া সত্যতার মানদণ্ড নয়। পরিষ্কার শর্ত জানুন; চাপ, নিশ্চিত ফল বা পরিবারকে এক ব্যক্তির ওপর একচেটিয়া নির্ভর করানোর দাবি এড়ান।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Sahih al-Bukhari 5736",
+                "bn": "সহিহ আল-বুখারি 5736"
+              },
+              "url": "https://sunnah.com/bukhari:5736",
+              "kind": "hadith",
+              "grade": {
+                "en": "Sahih collection",
+                "bn": "সহিহ সংকলন"
+              }
+            },
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "নিজের যত্নের নিয়ন্ত্রণ রাখুন",
+          "text": "পাঠ থামাতে, বিশ্বস্ত সঙ্গী রাখতে ও অন্য মত নিতে পারেন। জোর, আঘাত, যৌন সংস্পর্শ, সহায়তা থেকে বিচ্ছিন্ন করা বা প্রয়োজনীয় চিকিৎসা বন্ধের দাবি অ্যাপের নির্দেশনায় গ্রহণযোগ্য আমল নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Mufti Wilayah 189: consulting Islamic healers",
+                "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+              },
+              "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+              "kind": "scholarly"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "স্বচ্ছ পাঠ, পরিষ্কার সীমা ও শোষণ থেকে সুরক্ষা।",
+      "sources": [
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Sahih al-Bukhari 5736",
+            "bn": "সহিহ আল-বুখারি 5736"
+          },
+          "url": "https://sunnah.com/bukhari:5736",
+          "kind": "hadith",
+          "grade": {
+            "en": "Sahih collection",
+            "bn": "সহিহ সংকলন"
+          }
+        },
+        {
+          "label": {
+            "en": "Mufti Wilayah 189: consulting Islamic healers",
+            "bn": "মুফতি উইলায়াহ ১৮৯: রুকইয়াহ চিকিৎসকের সহায়তা"
+          },
+          "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/907-irsyad-al-fatwa-series-189-the-ruling-of-consulting-with-islamic-healers-and-asking-protection-for-help-from-jinn",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "group": "foundations",
+      "title": "শোনা, উচ্চারণ ও উৎসের পরিচয়",
+      "summary": "শেখার সহায়ক হিসেবে অডিও ও উৎসের পরিচয় বোঝা।",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "অর্থ বুঝে পড়ুন",
+          "text": "ইংরেজি বা বাংলা উচ্চারণ শেখায় সাহায্য করে, তবে আরবির সব ধ্বনি হুবহু প্রকাশ করে না। শুনে ধীরে অনুশীলন করুন; সম্ভব হলে দক্ষ শিক্ষকের কাছে শিখুন। শব্দের মূল ভিত্তি আরবি পাঠ।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "MUIS: guidance on ruqyah",
+                "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+              },
+              "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "রেকর্ডিং ও নিজের পাঠ",
+          "text": "কুরআনের অডিও আল কুরআন ক্লাউড থেকে মিশারি রশিদ আল-আফাসির তিলাওয়াত। প্লে/ডাউনলোডে শুধু নির্বাচিত পাঠ আসে। শোনা নিজের পাঠের গণনা বা বর্ণিত শারীরিক কাজ সম্পাদনের প্রমাণ নয়।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Al Quran Cloud CDN",
+                "bn": "আল কুরআন ক্লাউড সিডিএন"
+              },
+              "url": "https://alquran.cloud/cdn",
+              "kind": "provider"
+            }
+          ]
+        },
+        {
+          "title": "স্বীকৃতি, প্রাপ্যতা ও ব্যবহার",
+          "text": "এখানকার অর্থ অ্যাপের জন্য প্রস্তুত ভাষান্তর। তিলাওয়াতের স্বত্ব কারির; সরবরাহকারীর শর্তে ব্যক্তিগত/শিক্ষামূলক স্ট্রিম ও ডাউনলোড অনুমোদিত, বাণিজ্যিক স্বত্ব বহাল। সঠিক দোয়ার যাচাই করা রেকর্ডিং পাওয়া গেলে যোগ হবে; কৃত্রিম কণ্ঠ দিয়ে বদলানো হয় না।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Provider terms",
+                "bn": "সরবরাহকারীর শর্ত"
+              },
+              "url": "https://alquran.cloud/terms-and-conditions",
+              "kind": "provider"
+            }
+          ]
+        }
+      ],
+      "reading_ids": [],
+      "routine_ids": [],
+      "body": "শেখার সহায়ক হিসেবে অডিও ও উৎসের পরিচয় বোঝা।",
+      "sources": [
+        {
+          "label": {
+            "en": "MUIS: guidance on ruqyah",
+            "bn": "মুইস: রুকইয়াহ নির্দেশনা"
+          },
+          "url": "https://www.muis.gov.sg/resources/khutbah-and-religious-advice/fatwa/fatwa-deviant-teachings--english/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Al Quran Cloud CDN",
+            "bn": "আল কুরআন ক্লাউড সিডিএন"
+          },
+          "url": "https://alquran.cloud/cdn",
+          "kind": "provider"
+        },
+        {
+          "label": {
+            "en": "Provider terms",
+            "bn": "সরবরাহকারীর শর্ত"
+          },
+          "url": "https://alquran.cloud/terms-and-conditions",
+          "kind": "provider"
+        }
+      ]
+    }
+  ]
+}

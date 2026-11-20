@@ -136,3 +136,30 @@ virtue is explicitly tied to the complete verses, not just the excerpts in
 the supplication card. Quran shortcut content and its existing benefits live
 in `data/datasources/local/sunnah_dua/sunnah_collection_content_en.dart` and
 `sunnah_collection_content_bn.dart`.
+
+## Purpose, reflection and background
+
+The supplied `entries[].insights` data is parsed by `DuaInsights`. It preserves
+localized `purpose`, `significance.text`, `background.text` and its references,
+`reportedVirtues`, `evidenceNote`, `virtueBasis` and the routine-recommendation
+flag. Significance remains an editorial reflection; it is never promoted into
+a hadith reward. Reported virtues require their references and the explicit
+`specific_reports` classification. Reference-only entries keep their separate
+placement and evidence notes. The catalogue asset itself is not rewritten by
+the presentation update.
+
+Library cards lead with purpose, retain a short Arabic preview and indicate
+when a reported virtue is available inside. The reader presents the full
+purpose and any reported virtue before the Arabic. For entries without a
+reported virtue, a clearly labelled reflection appears there instead. Further
+reflection and an expandable Story & context section follow the reading.
+Source links, grades, attributions and differing opinions remain available;
+conditional virtues are shown in full. Entries without insights continue to
+use the existing benefits presentation.
+
+The heading shows one category instead of a wall of category badges. English
+and Bangla labels, enlarged text and light/dark contrast are supported. Copying
+includes the full insight text and source links. Search already indexes the
+entire entry, so purpose, reflection and background are searchable without
+another load. The isolate parser, lazy list construction, full reading text,
+occasion choices and horizontal reader navigation remain in place.

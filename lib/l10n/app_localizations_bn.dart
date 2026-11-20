@@ -5410,4 +5410,289 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get dhikrScheduleCapacity => 'অনেকগুলো নোটিফিকেশন চালু আছে। অন্য একটি স্মরণিকা বন্ধ করে আবার চেষ্টা করুন।';
+
+  @override
+  String get ruqyahTitle => 'রুকইয়াহ ও সুরক্ষা';
+
+  @override
+  String get ruqyahSubtitle => 'শিফা ও সুরক্ষার জন্য কুরআন ও সহিহ দোয়া।';
+
+  @override
+  String get ruqyahHeroTitle => 'আশ্রয় চান। প্রশান্তি খুঁজুন।';
+
+  @override
+  String get ruqyahHeroBody => 'নিজের রুকইয়াহ, দৈনন্দিন সুরক্ষা ও দলিল বোঝার ব্যবহারিক সহচর।';
+
+  @override
+  String get ruqyahGuided => 'নির্দেশিত পাঠ';
+
+  @override
+  String get ruqyahLibrary => 'কুরআন ও দোয়া';
+
+  @override
+  String get ruqyahLearn => 'জানুন';
+
+  @override
+  String get ruqyahStart => 'পড়া শুরু করুন';
+
+  @override
+  String get ruqyahContinue => 'পড়া চালিয়ে যান';
+
+  @override
+  String get ruqyahResumeBody => 'আপনার পাঠের অবস্থান ও গণনা এই ডিভাইসে সংরক্ষিত আছে।';
+
+  @override
+  String get ruqyahReported => 'বর্ণিত আমল';
+
+  @override
+  String get ruqyahArrangement => 'সাজানো পাঠক্রম';
+
+  @override
+  String get ruqyahArrangementNote => 'এই পাঠক্রম পড়ার সুবিধার জন্য সাজানো। প্রতিটি পাঠের নিজস্ব উৎস ও প্রসঙ্গ রয়েছে।';
+
+  @override
+  String get ruqyahSearch => 'সূরা, দোয়া বা অর্থ খুঁজুন';
+
+  @override
+  String get ruqyahAll => 'সব';
+
+  @override
+  String get ruqyahIllness => 'অসুস্থতা ও ব্যথা';
+
+  @override
+  String get ruqyahBedtime => 'ঘুমানোর আগে';
+
+  @override
+  String get ruqyahChildren => 'শিশুদের জন্য';
+
+  @override
+  String get ruqyahProtection => 'সুরক্ষা';
+
+  @override
+  String get ruqyahBookmarks => 'সংরক্ষিত';
+
+  @override
+  String get ruqyahNoResults => 'কোনো পাঠ পাওয়া যায়নি। অন্যভাবে খুঁজুন বা ফিল্টার বদলান।';
+
+  @override
+  String get ruqyahLoadError => 'পাঠগুলো খোলা যায়নি। আবার চেষ্টা করুন।';
+
+  @override
+  String get ruqyahRetry => 'আবার চেষ্টা করুন';
+
+  @override
+  String get ruqyahSources => 'উৎস ও প্রসঙ্গ';
+
+  @override
+  String get ruqyahSourceFailed => 'উৎসের লিংক খোলা যায়নি।';
+
+  @override
+  String get ruqyahPronunciation => 'উচ্চারণ';
+
+  @override
+  String get ruqyahMeaning => 'অর্থ';
+
+  @override
+  String get ruqyahArabic => 'আরবি';
+
+  @override
+  String get ruqyahInstructions => 'যেভাবে পড়বেন';
+
+  @override
+  String get ruqyahReadingSettings => 'পড়ার পছন্দ';
+
+  @override
+  String get ruqyahArabicSize => 'আরবি লেখার আকার';
+
+  @override
+  String get ruqyahSaveReading => 'পাঠটি সংরক্ষণ করুন';
+
+  @override
+  String get ruqyahUnsaveReading => 'সংরক্ষণ সরান';
+
+  @override
+  String get ruqyahPrevious => 'পূর্ববর্তী';
+
+  @override
+  String get ruqyahNext => 'পরবর্তী';
+
+  @override
+  String get ruqyahReadContinue => 'পড়েছি, পরবর্তী';
+
+  @override
+  String get ruqyahDoneContinue => 'করেছি, পরবর্তী';
+
+  @override
+  String get ruqyahFinish => 'পাঠ শেষ করুন';
+
+  @override
+  String get ruqyahCountTap => 'পড়ার পর ট্যাপ করুন';
+
+  @override
+  String get ruqyahUndo => 'একটি গণনা কমান';
+
+  @override
+  String get ruqyahCountDone => 'নির্ধারিত গণনা সম্পূর্ণ';
+
+  @override
+  String get ruqyahSessionComplete => 'পাঠ সম্পূর্ণ';
+
+  @override
+  String get ruqyahCompleteBody => 'আপনি এই পাঠ শেষ করেছেন। আল্লাহ আপনাকে স্বস্তি ও সুস্থতা দান করুন।';
+
+  @override
+  String get ruqyahRestart => 'আবার পড়ুন';
+
+  @override
+  String get ruqyahBackToLibrary => 'রুকইয়াহ পাতায় ফিরুন';
+
+  @override
+  String get ruqyahSaveFailed => 'অগ্রগতি সংরক্ষণ করা যায়নি। ডিভাইসের স্টোরেজ দেখুন।';
+
+  @override
+  String get ruqyahAudio => 'এই পাঠের তিলাওয়াত শুনুন';
+
+  @override
+  String get ruqyahReciter => 'মিশারি রশিদ আল-আফাসি · আল কুরআন ক্লাউড';
+
+  @override
+  String get ruqyahPlay => 'প্লে করুন';
+
+  @override
+  String get ruqyahPause => 'বিরতি';
+
+  @override
+  String get ruqyahRepeat => 'অডিও পুনরাবৃত্তি';
+
+  @override
+  String get ruqyahDownload => 'অডিও অফলাইনে রাখুন';
+
+  @override
+  String get ruqyahDownloaded => 'অডিও অফলাইনে আছে';
+
+  @override
+  String get ruqyahAudioError => 'অডিও লোড হয়নি। সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।';
+
+  @override
+  String get ruqyahAudioPending => 'এই দোয়ার যাচাই করা রেকর্ডিং এখনো যুক্ত হয়নি।';
+
+  @override
+  String get ruqyahAudioNote => 'অডিও শুনলে আপনার নিজের পাঠের গণনা বাড়বে না।';
+
+  @override
+  String get ruqyahCareNote => 'চিকিৎসার পাশাপাশি তিলাওয়াত করুন। অসুস্থতায় উপযুক্ত চিকিৎসা নিন।';
+
+  @override
+  String ruqyahPosition(String current, String total) {
+    return '$current / $total';
+  }
+
+  @override
+  String ruqyahCycle(String current, String total) {
+    return 'সম্পূর্ণ আমল $current / $total';
+  }
+
+  @override
+  String ruqyahVerse(String current, String total) {
+    return 'আয়াত $current / $total';
+  }
+
+  @override
+  String get duaPurposeLabel => 'যে জন্য এই দোয়া';
+
+  @override
+  String get duaMeaningReflection => 'অর্থের আলোকে ভাবুন';
+
+  @override
+  String get duaBackgroundTitle => 'পটভূমি ও প্রসঙ্গ';
+
+  @override
+  String get duaReportedVirtueLabel => 'বর্ণিত ফজিলত';
+
+  @override
+  String get duaReadReflect => 'পড়ুন ও অর্থ বুঝুন';
+
+  @override
+  String get duaLibraryWelcome => 'প্রতিটি মুহূর্তের দোয়া';
+
+  @override
+  String get duaLibraryInsightsHint => 'প্রতিটি দোয়া কেন পড়বেন, তার অর্থ ও পটভূমি জানুন।';
+
+  @override
+  String get ruqyahCareMethods => 'আরোগ্য ও প্রশান্তি';
+
+  @override
+  String get ruqyahDailyMethods => 'দৈনন্দিন সুরক্ষা';
+
+  @override
+  String get ruqyahUnderstand => 'শুরু করার আগে বুঝে নিন';
+
+  @override
+  String get ruqyahReadMethod => 'পদ্ধতি ও দলিল পড়ুন';
+
+  @override
+  String get ruqyahKnowledgeTitle => 'রুকইয়াহকে বুঝুন';
+
+  @override
+  String get ruqyahKnowledgeBody => 'ব্যবহারিক পদ্ধতি, তার দলিল এবং প্রচলিত প্রশ্নের বিবেচনাপূর্ণ উত্তর।';
+
+  @override
+  String get ruqyahSearchGuides => 'পদ্ধতি, প্রশ্ন বা তথ্যসূত্র খুঁজুন';
+
+  @override
+  String get ruqyahReportedPractice => 'বর্ণিত আমলের আলোকে';
+
+  @override
+  String get ruqyahQuranContext => 'কুরআনের প্রেক্ষাপট';
+
+  @override
+  String get ruqyahScholarlyGuidance => 'আলেমদের ব্যাখ্যা';
+
+  @override
+  String get ruqyahAppGuidance => 'পাঠের নির্দেশনা';
+
+  @override
+  String get ruqyahRelatedMethods => 'নির্দেশিত পদ্ধতিতে পড়ুন';
+
+  @override
+  String get ruqyahRelatedReadings => 'সংশ্লিষ্ট আয়াত ও দোয়া পড়ুন';
+
+  @override
+  String get ruqyahAudience => 'এই শব্দগুলো কার জন্য?';
+
+  @override
+  String get ruqyahBackground => 'পটভূমি ও প্রেক্ষাপট';
+
+  @override
+  String get ruqyahMethod => 'এই পাঠ কীভাবে ব্যবহার করবেন';
+
+  @override
+  String get ruqyahMethodBackground => 'পদ্ধতি ও পটভূমি';
+
+  @override
+  String get ruqyahSourceQuran => 'কুরআন';
+
+  @override
+  String get ruqyahSourceHadith => 'হাদিস';
+
+  @override
+  String get ruqyahSourceMedical => 'চিকিৎসাসংক্রান্ত নির্দেশনা';
+
+  @override
+  String get ruqyahSourceProvider => 'অডিও সরবরাহকারী';
+
+  @override
+  String get ruqyahProgressUpdated => 'এই পদ্ধতি হালনাগাদ হয়েছে। ধাপ ও গণনা সঠিক রাখতে নতুন করে পাঠ শুরু হয়েছে।';
+
+  @override
+  String get ruqyahDaily => 'সকাল ও সন্ধ্যা';
+
+  @override
+  String get ruqyahDistress => 'দুশ্চিন্তা ও কষ্ট';
+
+  @override
+  String get ruqyahTravel => 'সফর ও যাত্রাবিরতি';
+
+  @override
+  String get ruqyahVisiting => 'অসুস্থকে দেখতে গেলে';
 }

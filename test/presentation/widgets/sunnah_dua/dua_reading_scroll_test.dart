@@ -11,7 +11,7 @@ import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/presentation/models/sunnah_dua_content_presenter.dart';
 import 'package:quran_for_all/presentation/viewmodels/settings_viewmodel.dart';
 import 'package:quran_for_all/presentation/views/sunnah_dua/catalog/dua_entry_view.dart';
-import 'package:quran_for_all/presentation/widgets/sunnah_dua/catalog/dua_entry_benefits.dart';
+import 'package:quran_for_all/presentation/widgets/sunnah_dua/catalog/insights/dua_entry_introduction.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/catalog/dua_entry_copy_button.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/catalog/dua_reading_panel.dart';
 import 'package:quran_for_all/presentation/widgets/sunnah_dua/sunnah_dua_detail/sunnah_dua_benefits_panel.dart';
@@ -84,7 +84,7 @@ void main() {
           find.byKey(const ValueKey('dua-reading-meaning')),
         );
         expect(
-          tester.getTopLeft(within(find.byType(DuaEntryBenefits))).dy,
+          tester.getTopLeft(within(find.byType(DuaEntryIntroduction))).dy,
           lessThan(tester.getTopLeft(arabic).dy),
         );
         for (final target in [arabic, pronunciation, meaning]) {

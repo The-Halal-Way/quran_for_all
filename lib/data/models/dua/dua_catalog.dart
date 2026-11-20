@@ -3,6 +3,7 @@ import 'dua_text.dart';
 
 export 'dua_entry.dart';
 export 'dua_benefit.dart';
+export 'dua_insights.dart';
 export 'dua_reading.dart';
 export 'dua_text.dart';
 

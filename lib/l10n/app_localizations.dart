@@ -10396,6 +10396,564 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Too many active notifications. Turn off another reminder and try again.'**
   String get dhikrScheduleCapacity;
+
+  /// No description provided for @ruqyahTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ruqyah & Protection'**
+  String get ruqyahTitle;
+
+  /// No description provided for @ruqyahSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran and authentic duas for healing and protection.'**
+  String get ruqyahSubtitle;
+
+  /// No description provided for @ruqyahHeroTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Seek refuge. Find reassurance.'**
+  String get ruqyahHeroTitle;
+
+  /// No description provided for @ruqyahHeroBody.
+  ///
+  /// In en, this message translates to:
+  /// **'A practical companion to self-ruqyah, daily protection and understanding the evidence.'**
+  String get ruqyahHeroBody;
+
+  /// No description provided for @ruqyahGuided.
+  ///
+  /// In en, this message translates to:
+  /// **'Guided reading'**
+  String get ruqyahGuided;
+
+  /// No description provided for @ruqyahLibrary.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran & duas'**
+  String get ruqyahLibrary;
+
+  /// No description provided for @ruqyahLearn.
+  ///
+  /// In en, this message translates to:
+  /// **'Learn'**
+  String get ruqyahLearn;
+
+  /// No description provided for @ruqyahStart.
+  ///
+  /// In en, this message translates to:
+  /// **'Start reading'**
+  String get ruqyahStart;
+
+  /// No description provided for @ruqyahContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue reading'**
+  String get ruqyahContinue;
+
+  /// No description provided for @ruqyahResumeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Your place and recitation counts are saved on this device.'**
+  String get ruqyahResumeBody;
+
+  /// No description provided for @ruqyahReported.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported practice'**
+  String get ruqyahReported;
+
+  /// No description provided for @ruqyahArrangement.
+  ///
+  /// In en, this message translates to:
+  /// **'Guided selection'**
+  String get ruqyahArrangement;
+
+  /// No description provided for @ruqyahArrangementNote.
+  ///
+  /// In en, this message translates to:
+  /// **'This reading order is arranged for convenience. Each passage has its own source and context.'**
+  String get ruqyahArrangementNote;
+
+  /// No description provided for @ruqyahSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Search a passage, dua or meaning'**
+  String get ruqyahSearch;
+
+  /// No description provided for @ruqyahAll.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get ruqyahAll;
+
+  /// No description provided for @ruqyahIllness.
+  ///
+  /// In en, this message translates to:
+  /// **'Illness & pain'**
+  String get ruqyahIllness;
+
+  /// No description provided for @ruqyahBedtime.
+  ///
+  /// In en, this message translates to:
+  /// **'Bedtime'**
+  String get ruqyahBedtime;
+
+  /// No description provided for @ruqyahChildren.
+  ///
+  /// In en, this message translates to:
+  /// **'Children'**
+  String get ruqyahChildren;
+
+  /// No description provided for @ruqyahProtection.
+  ///
+  /// In en, this message translates to:
+  /// **'Protection'**
+  String get ruqyahProtection;
+
+  /// No description provided for @ruqyahBookmarks.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved'**
+  String get ruqyahBookmarks;
+
+  /// No description provided for @ruqyahNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No readings match. Try another search or filter.'**
+  String get ruqyahNoResults;
+
+  /// No description provided for @ruqyahLoadError.
+  ///
+  /// In en, this message translates to:
+  /// **'The readings could not be opened. Please try again.'**
+  String get ruqyahLoadError;
+
+  /// No description provided for @ruqyahRetry.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get ruqyahRetry;
+
+  /// No description provided for @ruqyahSources.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources & context'**
+  String get ruqyahSources;
+
+  /// No description provided for @ruqyahSourceFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open this source.'**
+  String get ruqyahSourceFailed;
+
+  /// No description provided for @ruqyahPronunciation.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation'**
+  String get ruqyahPronunciation;
+
+  /// No description provided for @ruqyahMeaning.
+  ///
+  /// In en, this message translates to:
+  /// **'Meaning'**
+  String get ruqyahMeaning;
+
+  /// No description provided for @ruqyahArabic.
+  ///
+  /// In en, this message translates to:
+  /// **'Arabic'**
+  String get ruqyahArabic;
+
+  /// No description provided for @ruqyahInstructions.
+  ///
+  /// In en, this message translates to:
+  /// **'How to read'**
+  String get ruqyahInstructions;
+
+  /// No description provided for @ruqyahReadingSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading preferences'**
+  String get ruqyahReadingSettings;
+
+  /// No description provided for @ruqyahArabicSize.
+  ///
+  /// In en, this message translates to:
+  /// **'Arabic text size'**
+  String get ruqyahArabicSize;
+
+  /// No description provided for @ruqyahSaveReading.
+  ///
+  /// In en, this message translates to:
+  /// **'Save this reading'**
+  String get ruqyahSaveReading;
+
+  /// No description provided for @ruqyahUnsaveReading.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove saved reading'**
+  String get ruqyahUnsaveReading;
+
+  /// No description provided for @ruqyahPrevious.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous'**
+  String get ruqyahPrevious;
+
+  /// No description provided for @ruqyahNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get ruqyahNext;
+
+  /// No description provided for @ruqyahReadContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Read & continue'**
+  String get ruqyahReadContinue;
+
+  /// No description provided for @ruqyahDoneContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Done & continue'**
+  String get ruqyahDoneContinue;
+
+  /// No description provided for @ruqyahFinish.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish reading'**
+  String get ruqyahFinish;
+
+  /// No description provided for @ruqyahCountTap.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap after reciting'**
+  String get ruqyahCountTap;
+
+  /// No description provided for @ruqyahUndo.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo one count'**
+  String get ruqyahUndo;
+
+  /// No description provided for @ruqyahCountDone.
+  ///
+  /// In en, this message translates to:
+  /// **'Repetitions complete'**
+  String get ruqyahCountDone;
+
+  /// No description provided for @ruqyahSessionComplete.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading complete'**
+  String get ruqyahSessionComplete;
+
+  /// No description provided for @ruqyahCompleteBody.
+  ///
+  /// In en, this message translates to:
+  /// **'You have reached the end of this reading. May Allah grant you ease and well-being.'**
+  String get ruqyahCompleteBody;
+
+  /// No description provided for @ruqyahRestart.
+  ///
+  /// In en, this message translates to:
+  /// **'Read again'**
+  String get ruqyahRestart;
+
+  /// No description provided for @ruqyahBackToLibrary.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Ruqyah'**
+  String get ruqyahBackToLibrary;
+
+  /// No description provided for @ruqyahSaveFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Progress could not be saved. Check device storage.'**
+  String get ruqyahSaveFailed;
+
+  /// No description provided for @ruqyahAudio.
+  ///
+  /// In en, this message translates to:
+  /// **'Listen to this passage'**
+  String get ruqyahAudio;
+
+  /// No description provided for @ruqyahReciter.
+  ///
+  /// In en, this message translates to:
+  /// **'Mishary Rashid Alafasy · Al Quran Cloud'**
+  String get ruqyahReciter;
+
+  /// No description provided for @ruqyahPlay.
+  ///
+  /// In en, this message translates to:
+  /// **'Play'**
+  String get ruqyahPlay;
+
+  /// No description provided for @ruqyahPause.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause'**
+  String get ruqyahPause;
+
+  /// No description provided for @ruqyahRepeat.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeat recording'**
+  String get ruqyahRepeat;
+
+  /// No description provided for @ruqyahDownload.
+  ///
+  /// In en, this message translates to:
+  /// **'Save audio offline'**
+  String get ruqyahDownload;
+
+  /// No description provided for @ruqyahDownloaded.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio available offline'**
+  String get ruqyahDownloaded;
+
+  /// No description provided for @ruqyahAudioError.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio could not be loaded. Check your connection and try again.'**
+  String get ruqyahAudioError;
+
+  /// No description provided for @ruqyahAudioPending.
+  ///
+  /// In en, this message translates to:
+  /// **'A checked recording for this supplication is not available yet.'**
+  String get ruqyahAudioPending;
+
+  /// No description provided for @ruqyahAudioNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Listening does not increase your recitation count.'**
+  String get ruqyahAudioNote;
+
+  /// No description provided for @ruqyahCareNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Recitation can accompany medical care. Seek appropriate help for illness.'**
+  String get ruqyahCareNote;
+
+  /// No description provided for @ruqyahPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'{current} of {total}'**
+  String ruqyahPosition(String current, String total);
+
+  /// No description provided for @ruqyahCycle.
+  ///
+  /// In en, this message translates to:
+  /// **'Cycle {current} of {total}'**
+  String ruqyahCycle(String current, String total);
+
+  /// No description provided for @ruqyahVerse.
+  ///
+  /// In en, this message translates to:
+  /// **'Verse {current} of {total}'**
+  String ruqyahVerse(String current, String total);
+
+  /// No description provided for @duaPurposeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'A prayer for…'**
+  String get duaPurposeLabel;
+
+  /// No description provided for @duaMeaningReflection.
+  ///
+  /// In en, this message translates to:
+  /// **'Reflect on these words'**
+  String get duaMeaningReflection;
+
+  /// No description provided for @duaBackgroundTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Story & context'**
+  String get duaBackgroundTitle;
+
+  /// No description provided for @duaReportedVirtueLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported virtue'**
+  String get duaReportedVirtueLabel;
+
+  /// No description provided for @duaReadReflect.
+  ///
+  /// In en, this message translates to:
+  /// **'Read & reflect'**
+  String get duaReadReflect;
+
+  /// No description provided for @duaLibraryWelcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Words for every moment'**
+  String get duaLibraryWelcome;
+
+  /// No description provided for @duaLibraryInsightsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Discover the purpose, meaning and context behind each dua.'**
+  String get duaLibraryInsightsHint;
+
+  /// No description provided for @ruqyahCareMethods.
+  ///
+  /// In en, this message translates to:
+  /// **'Care & comfort'**
+  String get ruqyahCareMethods;
+
+  /// No description provided for @ruqyahDailyMethods.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily protection'**
+  String get ruqyahDailyMethods;
+
+  /// No description provided for @ruqyahUnderstand.
+  ///
+  /// In en, this message translates to:
+  /// **'Understand before you begin'**
+  String get ruqyahUnderstand;
+
+  /// No description provided for @ruqyahReadMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the method & evidence'**
+  String get ruqyahReadMethod;
+
+  /// No description provided for @ruqyahKnowledgeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Understanding Ruqyah'**
+  String get ruqyahKnowledgeTitle;
+
+  /// No description provided for @ruqyahKnowledgeBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Practical methods, their evidence, and thoughtful answers to common questions.'**
+  String get ruqyahKnowledgeBody;
+
+  /// No description provided for @ruqyahSearchGuides.
+  ///
+  /// In en, this message translates to:
+  /// **'Search methods, questions or sources'**
+  String get ruqyahSearchGuides;
+
+  /// No description provided for @ruqyahReportedPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'From reported practice'**
+  String get ruqyahReportedPractice;
+
+  /// No description provided for @ruqyahQuranContext.
+  ///
+  /// In en, this message translates to:
+  /// **'Quranic context'**
+  String get ruqyahQuranContext;
+
+  /// No description provided for @ruqyahScholarlyGuidance.
+  ///
+  /// In en, this message translates to:
+  /// **'Scholarly guidance'**
+  String get ruqyahScholarlyGuidance;
+
+  /// No description provided for @ruqyahAppGuidance.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading guidance'**
+  String get ruqyahAppGuidance;
+
+  /// No description provided for @ruqyahRelatedMethods.
+  ///
+  /// In en, this message translates to:
+  /// **'Try a guided method'**
+  String get ruqyahRelatedMethods;
+
+  /// No description provided for @ruqyahRelatedReadings.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the related passages'**
+  String get ruqyahRelatedReadings;
+
+  /// No description provided for @ruqyahAudience.
+  ///
+  /// In en, this message translates to:
+  /// **'Who is this wording for?'**
+  String get ruqyahAudience;
+
+  /// No description provided for @ruqyahBackground.
+  ///
+  /// In en, this message translates to:
+  /// **'Background & context'**
+  String get ruqyahBackground;
+
+  /// No description provided for @ruqyahMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'How to use this reading'**
+  String get ruqyahMethod;
+
+  /// No description provided for @ruqyahMethodBackground.
+  ///
+  /// In en, this message translates to:
+  /// **'Method & background'**
+  String get ruqyahMethodBackground;
+
+  /// No description provided for @ruqyahSourceQuran.
+  ///
+  /// In en, this message translates to:
+  /// **'Quran'**
+  String get ruqyahSourceQuran;
+
+  /// No description provided for @ruqyahSourceHadith.
+  ///
+  /// In en, this message translates to:
+  /// **'Hadith'**
+  String get ruqyahSourceHadith;
+
+  /// No description provided for @ruqyahSourceMedical.
+  ///
+  /// In en, this message translates to:
+  /// **'Medical guidance'**
+  String get ruqyahSourceMedical;
+
+  /// No description provided for @ruqyahSourceProvider.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio provider'**
+  String get ruqyahSourceProvider;
+
+  /// No description provided for @ruqyahProgressUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'This method has been updated. A fresh reading has started so the steps and counts stay accurate.'**
+  String get ruqyahProgressUpdated;
+
+  /// No description provided for @ruqyahDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'Morning & evening'**
+  String get ruqyahDaily;
+
+  /// No description provided for @ruqyahDistress.
+  ///
+  /// In en, this message translates to:
+  /// **'Distress'**
+  String get ruqyahDistress;
+
+  /// No description provided for @ruqyahTravel.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel & stopping'**
+  String get ruqyahTravel;
+
+  /// No description provided for @ruqyahVisiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Visiting the ill'**
+  String get ruqyahVisiting;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

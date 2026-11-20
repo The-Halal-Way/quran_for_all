@@ -30,7 +30,7 @@ class DuaLibraryHeader extends StatelessWidget {
             children: [
               Expanded(
                 child: Text(
-                  context.l10n.duaLibraryTitle,
+                  context.l10n.duaLibraryWelcome,
                   style: text.headlineMedium.copyWith(
                     color: Colors.white,
                     fontWeight: AppTheme.weightExtraBold,
@@ -51,6 +51,14 @@ class DuaLibraryHeader extends StatelessWidget {
             style: text.bodyMedium.copyWith(
               color: Colors.white.withValues(alpha: .85),
               height: 1.55,
+            ),
+          ),
+          const SizedBox(height: AppSpacing.md),
+          Text(
+            context.l10n.duaLibraryInsightsHint,
+            style: text.bodySmall.copyWith(
+              color: const Color(0xFFB9F0DF),
+              height: 1.5,
             ),
           ),
           const SizedBox(height: AppSpacing.md),

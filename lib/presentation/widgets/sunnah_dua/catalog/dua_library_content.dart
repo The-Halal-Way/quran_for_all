@@ -8,6 +8,7 @@ import '../../../../data/models/dua/dua_catalog.dart';
 import '../../../viewmodels/dua/dua_library_viewmodel.dart';
 import '../../common/app_page_scrollbar.dart';
 import 'dua_category_browser.dart';
+import 'dua_category_overview.dart';
 import 'dua_entry_tile.dart';
 import 'dua_library_filters.dart';
 import 'dua_library_header.dart';
@@ -61,18 +62,11 @@ class DuaLibraryContent extends StatelessWidget {
                         label: Text(context.l10n.duaCategories),
                       ),
                     ),
-                    Text(
-                      model.category.title.inLanguage(context.l10n.localeName),
-                      style: AppTheme.text(context).headlineMedium.copyWith(
-                        fontWeight: AppTheme.weightExtraBold,
-                      ),
-                    ),
-                    const SizedBox(height: AppSpacing.sm),
-                    Text(
-                      model.category.description.inLanguage(
-                        context.l10n.localeName,
-                      ),
-                      style: AppTheme.text(context).bodyMedium,
+                    DuaCategoryOverview(
+                      category: model.category,
+                      description: model.category.id == catalog.allId
+                          ? context.l10n.duaLibraryInsightsHint
+                          : null,
                     ),
                     const SizedBox(height: AppSpacing.md),
                     DuaLibraryFilters(model: model),

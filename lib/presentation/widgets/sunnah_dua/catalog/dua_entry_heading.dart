@@ -23,6 +23,9 @@ class DuaEntryHeading extends StatelessWidget {
     final language = context.l10n.localeName;
     final text = AppTheme.text(context);
     final scheme = Theme.of(context).colorScheme;
+    final primaryCategory = categoryId != null && categoryId != catalog.allId
+        ? categoryId
+        : entry.categoryIds.firstOrNull;
     final when = !entry.practice.when.isEmpty
         ? entry.practice.when.inLanguage(language)
         : entry.hasOccasionSelector
@@ -55,7 +58,7 @@ class DuaEntryHeading extends StatelessWidget {
             spacing: AppSpacing.sm,
             runSpacing: AppSpacing.xs,
             children: [
-              for (final id in entry.categoryIds)
+              if (primaryCategory case final id?)
                 Chip(
                   avatar: Icon(DuaCatalogVisuals.icon(id), size: 15),
                   label: Text(catalog.category(id).title.inLanguage(language)),

@@ -11,6 +11,7 @@ import '../../models/sunnah_dua_shortcuts_presenter.dart';
 import '../../viewmodels/sunnah_dua_viewmodel.dart';
 import '../../widgets/common/app_page_scrollbar.dart';
 import '../../widgets/common/app_premium_page_background.dart';
+import '../../widgets/dashboard/ruqyah/dashboard_ruqyah_section.dart';
 import '../../widgets/sunnah_dua/sunnah_dua_detail/sunnah_dua_detail_launcher.dart';
 import '../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_collections_section.dart';
 import '../../widgets/sunnah_dua/sunnah_dua_view/sunnah_dua_hero.dart';
@@ -99,6 +100,8 @@ class _SunnahDuaViewState extends State<SunnahDuaView> {
                           );
                         },
                       ),
+                      const SizedBox(height: AppSpacing.lg),
+                      const DashboardRuqyahSection(),
                       const SizedBox(height: AppSpacing.xxl),
                       SunnahDuaCollectionsSection(
                         items: presentSunnahPrimaryShortcuts(context.l10n),
