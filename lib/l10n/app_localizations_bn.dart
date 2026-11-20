@@ -5695,4 +5695,47 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get ruqyahVisiting => 'অসুস্থকে দেখতে গেলে';
+
+  @override
+  String get ruqyahLongCollections => 'দীর্ঘ কুরআন পাঠ';
+
+  @override
+  String get ruqyahLongCollectionsBody => 'একাধিক সূরার সম্পূর্ণ অংশ, ধারাবাহিকভাবে পড়ার জন্য একত্রে।';
+
+  @override
+  String get ruqyahExtendedPassages => 'বিস্তৃত পাঠের অংশ';
+
+  @override
+  String get ruqyahReadContinuously => 'ধারাবাহিকভাবে পড়ুন';
+
+  @override
+  String get ruqyahPageReading => 'অংশ অনুযায়ী পড়ুন';
+
+  @override
+  String get ruqyahCollectionBackground => 'এই নির্বাচন সম্পর্কে';
+
+  @override
+  String ruqyahCollectionCounts(String verses, String surahs) {
+    return '$surahs সূরার $verses আয়াত';
+  }
+
+  @override
+  String get ruqyahCollectionNote => 'নিজের গতিতে কুরআনের সম্পূর্ণ অংশ পড়ুন। এই পাঠক্রমে সংকলনের জন্য নির্বাচিত অংশ একত্র হয়েছে; নিচের উৎসগুলো নির্বাচনটি ব্যাখ্যা করে।';
+
+  @override
+  String get ruqyahCollectionContents => 'পাঠের সূচি';
+
+  @override
+  String ruqyahCollectionPosition(String current, String total) {
+    return 'অংশ $current / $total';
+  }
+
+  @override
+  String get ruqyahPronunciationMeaning => 'উচ্চারণ ও অর্থ';
+
+  @override
+  String get ruqyahMarkPassageRead => 'অংশটি পড়া হয়েছে চিহ্নিত করুন';
+
+  @override
+  String get ruqyahPassageRead => 'পড়া হয়েছে';
 }

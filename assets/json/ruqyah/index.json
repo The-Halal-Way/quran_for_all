@@ -9,7 +9,10 @@
       },
       "categories": [
         "illness"
-      ]
+      ],
+      "surah": 1,
+      "verse_start": 1,
+      "verse_end": 7
     },
     {
       "id": "ikhlas",
@@ -21,7 +24,10 @@
         "bedtime",
         "protection",
         "daily"
-      ]
+      ],
+      "surah": 112,
+      "verse_start": 1,
+      "verse_end": 4
     },
     {
       "id": "falaq",
@@ -34,7 +40,10 @@
         "bedtime",
         "protection",
         "daily"
-      ]
+      ],
+      "surah": 113,
+      "verse_start": 1,
+      "verse_end": 5
     },
     {
       "id": "nas",
@@ -47,7 +56,10 @@
         "bedtime",
         "protection",
         "daily"
-      ]
+      ],
+      "surah": 114,
+      "verse_start": 1,
+      "verse_end": 6
     },
     {
       "id": "kursi",
@@ -199,6 +211,291 @@
         "protection",
         "distress"
       ]
+    },
+    {
+      "id": "baqarah_opening",
+      "title": {
+        "en": "Al-Baqarah · opening verses · 2:1–5",
+        "bn": "আল-বাকারা · শুরুর আয়াত · ২:১–৫"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 2,
+      "verse_start": 1,
+      "verse_end": 5
+    },
+    {
+      "id": "baqarah_magic",
+      "title": {
+        "en": "Al-Baqarah · Sulayman, Harut and Marut · 2:102",
+        "bn": "আল-বাকারা · সুলায়মান, হারুত ও মারুত · ২:১০২"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 2,
+      "verse_start": 102,
+      "verse_end": 102
+    },
+    {
+      "id": "baqarah_oneness",
+      "title": {
+        "en": "Al-Baqarah · the One God · 2:163",
+        "bn": "আল-বাকারা · এক উপাস্য · ২:১৬৩"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 2,
+      "verse_start": 163,
+      "verse_end": 163
+    },
+    {
+      "id": "baqarah_kursi_light",
+      "title": {
+        "en": "Al-Baqarah · Ayat al-Kursi and the following verses · 2:255–257",
+        "bn": "আল-বাকারা · আয়াতুল কুরসি ও পরের আয়াত · ২:২৫৫–২৫৭"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 2,
+      "verse_start": 255,
+      "verse_end": 257
+    },
+    {
+      "id": "baqarah_closing",
+      "title": {
+        "en": "Al-Baqarah · the complete closing passage · 2:284–286",
+        "bn": "আল-বাকারা · সম্পূর্ণ শেষ অংশ · ২:২৮৪–২৮৬"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 2,
+      "verse_start": 284,
+      "verse_end": 286
+    },
+    {
+      "id": "imran_testimony",
+      "title": {
+        "en": "Ali Imran · the testimony of oneness · 3:18",
+        "bn": "আলি ইমরান · একত্বের সাক্ষ্য · ৩:১৮"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 3,
+      "verse_start": 18,
+      "verse_end": 18
+    },
+    {
+      "id": "imran_sovereignty",
+      "title": {
+        "en": "Ali Imran · sovereignty and provision · 3:26–27",
+        "bn": "আলি ইমরান · রাজত্ব ও রিজিক · ৩:২৬–২৭"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 3,
+      "verse_start": 26,
+      "verse_end": 27
+    },
+    {
+      "id": "araf_creation",
+      "title": {
+        "en": "Al-Araf · creation, humility and hope · 7:54–56",
+        "bn": "আল-আরাফ · সৃষ্টি, বিনয় ও আশা · ৭:৫৪–৫৬"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 7,
+      "verse_start": 54,
+      "verse_end": 56
+    },
+    {
+      "id": "araf_musa",
+      "title": {
+        "en": "Al-Araf · truth prevails before the magicians · 7:117–122",
+        "bn": "আল-আরাফ · জাদুকরদের সামনে সত্যের বিজয় · ৭:১১৭–১২২"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 7,
+      "verse_start": 117,
+      "verse_end": 122
+    },
+    {
+      "id": "yunus_musa",
+      "title": {
+        "en": "Yunus · Allah makes magic futile · 10:79–82",
+        "bn": "ইউনুস · আল্লাহ জাদু ব্যর্থ করে দেন · ১০:৭৯–৮২"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 10,
+      "verse_start": 79,
+      "verse_end": 82
+    },
+    {
+      "id": "isra_names",
+      "title": {
+        "en": "Al-Isra · Allah’s names and greatness · 17:110–111",
+        "bn": "আল-ইসরা · আল্লাহর নাম ও মহিমা · ১৭:১১০–১১১"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 17,
+      "verse_start": 110,
+      "verse_end": 111
+    },
+    {
+      "id": "taha_musa",
+      "title": {
+        "en": "Ta-Ha · fear, reassurance and the staff · 20:65–69",
+        "bn": "ত্বা-হা · ভয়, আশ্বাস ও লাঠি · ২০:৬৫–৬৯"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 20,
+      "verse_start": 65,
+      "verse_end": 69
+    },
+    {
+      "id": "muminun_return",
+      "title": {
+        "en": "Al-Muminun · return, oneness and mercy · 23:115–118",
+        "bn": "আল-মুমিনুন · প্রত্যাবর্তন, একত্ব ও রহমত · ২৩:১১৫–১১৮"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 23,
+      "verse_start": 115,
+      "verse_end": 118
+    },
+    {
+      "id": "shuara_musa",
+      "title": {
+        "en": "Ash-Shuara · Musa and the magicians · 26:43–48",
+        "bn": "আশ-শুআরা · মুসা ও জাদুকররা · ২৬:৪৩–৪৮"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 26,
+      "verse_start": 43,
+      "verse_end": 48
+    },
+    {
+      "id": "saffat_opening",
+      "title": {
+        "en": "As-Saffat · oneness and the guarded heaven · 37:1–11",
+        "bn": "আস-সাফফাত · একত্ব ও সুরক্ষিত আসমান · ৩৭:১–১১"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 37,
+      "verse_start": 1,
+      "verse_end": 11
+    },
+    {
+      "id": "rahman_limits",
+      "title": {
+        "en": "Ar-Rahman · limits and the coming judgement · 55:33–40",
+        "bn": "আর-রহমান · সীমা ও আসন্ন বিচার · ৫৫:৩৩–৪০"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 55,
+      "verse_start": 33,
+      "verse_end": 40
+    },
+    {
+      "id": "hashr_names",
+      "title": {
+        "en": "Al-Hashr · the Quran and Allah’s names · 59:21–24",
+        "bn": "আল-হাশর · কুরআন ও আল্লাহর নাম · ৫৯:২১–২৪"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 59,
+      "verse_start": 21,
+      "verse_end": 24
+    },
+    {
+      "id": "jinn_belief",
+      "title": {
+        "en": "Al-Jinn · hearing the Quran and believing · 72:1–4",
+        "bn": "আল-জিন · কুরআন শোনা ও ঈমান আনা · ৭২:১–৪"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 72,
+      "verse_start": 1,
+      "verse_end": 4
+    },
+    {
+      "id": "kafirun",
+      "title": {
+        "en": "Al-Kafirun · the complete surah · 109:1–6",
+        "bn": "আল-কাফিরুন · সম্পূর্ণ সূরা · ১০৯:১–৬"
+      },
+      "categories": [
+        "extended",
+        "quran_collection"
+      ],
+      "pack": "extended",
+      "surah": 109,
+      "verse_start": 1,
+      "verse_end": 6
     }
   ],
   "routines": [
@@ -341,9 +638,66 @@
       "kind": "reported",
       "guide_id": "dreams",
       "group": "daily"
+    },
+    {
+      "id": "extended_quran",
+      "title": {
+        "en": "Extended Quran ruqyah",
+        "bn": "বিস্তৃত কুরআনি রুকইয়াহ"
+      },
+      "description": {
+        "en": "A continuous multi-surah reading, including Manzil passages and Musa’s encounters with magic.",
+        "bn": "মানযিলের অংশ ও জাদুর মুখোমুখি মুসার ঘটনাসহ একাধিক সূরার ধারাবাহিক পাঠ।"
+      },
+      "kind": "arrangement",
+      "guide_id": "long_collections",
+      "group": "collections",
+      "collection": {
+        "verse_count": 101,
+        "surah_count": 17,
+        "passage_count": 23
+      }
+    },
+    {
+      "id": "manzil",
+      "title": {
+        "en": "Manzil · collected Quran passages",
+        "bn": "মানযিল · সংকলিত কুরআনের আয়াত"
+      },
+      "description": {
+        "en": "The complete 18-passage arrangement reviewed from the ArRahma Foundation’s published Manzil.",
+        "bn": "আর-রাহমা ফাউন্ডেশনের প্রকাশিত মানযিল অনুযায়ী সম্পূর্ণ ১৮টি অংশ।"
+      },
+      "kind": "arrangement",
+      "guide_id": "long_collections",
+      "group": "collections",
+      "collection": {
+        "verse_count": 79,
+        "surah_count": 14,
+        "passage_count": 18
+      }
+    },
+    {
+      "id": "musa_passages",
+      "title": {
+        "en": "Musa · truth over magic",
+        "bn": "মুসা · জাদুর ওপর সত্যের বিজয়"
+      },
+      "description": {
+        "en": "Read the full selected passages from Al-Baqarah, Al-Araf, Yunus, Ta-Ha and Ash-Shuara.",
+        "bn": "আল-বাকারা, আল-আরাফ, ইউনুস, ত্বা-হা ও আশ-শুআরার নির্বাচিত সম্পূর্ণ অংশ পড়ুন।"
+      },
+      "kind": "arrangement",
+      "guide_id": "long_collections",
+      "group": "collections",
+      "collection": {
+        "verse_count": 22,
+        "surah_count": 5,
+        "passage_count": 5
+      }
     }
   ],
-  "content_revision": 2,
+  "content_revision": 3,
   "guide_groups": [
     {
       "id": "foundations",
@@ -580,6 +934,19 @@
       "summary": {
         "en": "Use the audio as a learning aid and understand what each source label means.",
         "bn": "শেখার সহায়ক হিসেবে অডিও ও উৎসের পরিচয় বোঝা।"
+      },
+      "basis": "app_guidance"
+    },
+    {
+      "id": "long_collections",
+      "group": "understanding",
+      "title": {
+        "en": "Long ruqyah readings: collections and their sources",
+        "bn": "দীর্ঘ রুকইয়াহ পাঠ: সংকলন ও উৎস"
+      },
+      "summary": {
+        "en": "Why extended texts join many surahs, what these three collections contain, and how to read them.",
+        "bn": "দীর্ঘ পাঠে অনেক সূরা কেন একত্র হয়, তিন সংকলনে কী আছে এবং কীভাবে পড়বেন।"
       },
       "basis": "app_guidance"
     }

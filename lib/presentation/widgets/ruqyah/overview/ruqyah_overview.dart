@@ -8,6 +8,7 @@ import '../shared/ruqyah_style.dart';
 import '../guides/ruqyah_guide_card.dart';
 import 'ruqyah_hero.dart';
 import 'ruqyah_routine_card.dart';
+import '../collections/ruqyah_collections_section.dart';
 
 class RuqyahOverview extends StatelessWidget {
   const RuqyahOverview({
@@ -83,6 +84,14 @@ class RuqyahOverview extends StatelessWidget {
         ),
       ],
       const SizedBox(height: 24),
+      RuqyahCollectionsSection(
+        collections: model.index!.routines
+            .where((r) => r.collection != null)
+            .toList(),
+        onOpen: onOpen,
+        onGuide: onGuide,
+      ),
+      const SizedBox(height: 16),
       for (final group in ['care', 'daily']) ...[
         Text(
           group == 'care'

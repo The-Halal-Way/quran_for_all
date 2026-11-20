@@ -2133,5 +2133,38 @@
   "ruqyahDaily": "সকাল ও সন্ধ্যা",
   "ruqyahDistress": "দুশ্চিন্তা ও কষ্ট",
   "ruqyahTravel": "সফর ও যাত্রাবিরতি",
-  "ruqyahVisiting": "অসুস্থকে দেখতে গেলে"
+  "ruqyahVisiting": "অসুস্থকে দেখতে গেলে",
+  "ruqyahLongCollections": "দীর্ঘ কুরআন পাঠ",
+  "ruqyahLongCollectionsBody": "একাধিক সূরার সম্পূর্ণ অংশ, ধারাবাহিকভাবে পড়ার জন্য একত্রে।",
+  "ruqyahExtendedPassages": "বিস্তৃত পাঠের অংশ",
+  "ruqyahReadContinuously": "ধারাবাহিকভাবে পড়ুন",
+  "ruqyahPageReading": "অংশ অনুযায়ী পড়ুন",
+  "ruqyahCollectionBackground": "এই নির্বাচন সম্পর্কে",
+  "ruqyahCollectionCounts": "{surahs} সূরার {verses} আয়াত",
+  "ruqyahCollectionNote": "নিজের গতিতে কুরআনের সম্পূর্ণ অংশ পড়ুন। এই পাঠক্রমে সংকলনের জন্য নির্বাচিত অংশ একত্র হয়েছে; নিচের উৎসগুলো নির্বাচনটি ব্যাখ্যা করে।",
+  "ruqyahCollectionContents": "পাঠের সূচি",
+  "ruqyahCollectionPosition": "অংশ {current} / {total}",
+  "ruqyahPronunciationMeaning": "উচ্চারণ ও অর্থ",
+  "ruqyahMarkPassageRead": "অংশটি পড়া হয়েছে চিহ্নিত করুন",
+  "ruqyahPassageRead": "পড়া হয়েছে",
+  "@ruqyahCollectionCounts": {
+    "placeholders": {
+      "verses": {
+        "type": "String"
+      },
+      "surahs": {
+        "type": "String"
+      }
+    }
+  },
+  "@ruqyahCollectionPosition": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  }
 }

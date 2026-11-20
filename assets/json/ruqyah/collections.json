@@ -1,0 +1,326 @@
+{
+  "version": 1,
+  "content_revision": 3,
+  "routines": [
+    {
+      "id": "extended_quran",
+      "title": {
+        "en": "Extended Quran ruqyah",
+        "bn": "বিস্তৃত কুরআনি রুকইয়াহ"
+      },
+      "description": {
+        "en": "A continuous multi-surah reading, including Manzil passages and Musa’s encounters with magic.",
+        "bn": "মানযিলের অংশ ও জাদুর মুখোমুখি মুসার ঘটনাসহ একাধিক সূরার ধারাবাহিক পাঠ।"
+      },
+      "kind": "arrangement",
+      "guide_id": "long_collections",
+      "group": "collections",
+      "collection": {
+        "verse_count": 101,
+        "surah_count": 17,
+        "passage_count": 23
+      },
+      "cycles": 1,
+      "steps": [
+        {
+          "id": "fatihah",
+          "reading_id": "fatihah"
+        },
+        {
+          "id": "baqarah_opening",
+          "reading_id": "baqarah_opening"
+        },
+        {
+          "id": "baqarah_magic",
+          "reading_id": "baqarah_magic"
+        },
+        {
+          "id": "baqarah_oneness",
+          "reading_id": "baqarah_oneness"
+        },
+        {
+          "id": "baqarah_kursi_light",
+          "reading_id": "baqarah_kursi_light"
+        },
+        {
+          "id": "baqarah_closing",
+          "reading_id": "baqarah_closing"
+        },
+        {
+          "id": "imran_testimony",
+          "reading_id": "imran_testimony"
+        },
+        {
+          "id": "imran_sovereignty",
+          "reading_id": "imran_sovereignty"
+        },
+        {
+          "id": "araf_creation",
+          "reading_id": "araf_creation"
+        },
+        {
+          "id": "araf_musa",
+          "reading_id": "araf_musa"
+        },
+        {
+          "id": "yunus_musa",
+          "reading_id": "yunus_musa"
+        },
+        {
+          "id": "isra_names",
+          "reading_id": "isra_names"
+        },
+        {
+          "id": "taha_musa",
+          "reading_id": "taha_musa"
+        },
+        {
+          "id": "muminun_return",
+          "reading_id": "muminun_return"
+        },
+        {
+          "id": "shuara_musa",
+          "reading_id": "shuara_musa"
+        },
+        {
+          "id": "saffat_opening",
+          "reading_id": "saffat_opening"
+        },
+        {
+          "id": "rahman_limits",
+          "reading_id": "rahman_limits"
+        },
+        {
+          "id": "hashr_names",
+          "reading_id": "hashr_names"
+        },
+        {
+          "id": "jinn_belief",
+          "reading_id": "jinn_belief"
+        },
+        {
+          "id": "kafirun",
+          "reading_id": "kafirun"
+        },
+        {
+          "id": "ikhlas",
+          "reading_id": "ikhlas"
+        },
+        {
+          "id": "falaq",
+          "reading_id": "falaq"
+        },
+        {
+          "id": "nas",
+          "reading_id": "nas"
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "ArRahma Foundation · Manzil collection",
+            "bn": "আর-রাহমা ফাউন্ডেশন · মানযিল সংকলন"
+          },
+          "url": "https://masjidsulayman.arrahmafoundation.com/quran/manzil/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Ibn Baz · selected Quran readings for ruqyah",
+            "bn": "ইবন বায · রুকইয়াহর নির্বাচিত কুরআন পাঠ"
+          },
+          "url": "https://binbaz.org.sa/fatwas/18826",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Islam Q&A 175189 · Quran selections in ruqyah",
+            "bn": "ইসলাম কিউ অ্যান্ড এ ১৭৫১৮৯ · রুকইয়াহয় কুরআন নির্বাচন"
+          },
+          "url": "https://islamqa.info/en/answers/175189",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Islamweb 349963 · compiled ruqyah readings",
+            "bn": "ইসলামওয়েব ৩৪৯৯৬৩ · সংকলিত রুকইয়াহ পাঠ"
+          },
+          "url": "https://www.islamweb.org/en/fatwa/349963/Reciting-Ruqyah-verses-as-compiled-in-some-books",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "manzil",
+      "title": {
+        "en": "Manzil · collected Quran passages",
+        "bn": "মানযিল · সংকলিত কুরআনের আয়াত"
+      },
+      "description": {
+        "en": "The complete 18-passage arrangement reviewed from the ArRahma Foundation’s published Manzil.",
+        "bn": "আর-রাহমা ফাউন্ডেশনের প্রকাশিত মানযিল অনুযায়ী সম্পূর্ণ ১৮টি অংশ।"
+      },
+      "kind": "arrangement",
+      "guide_id": "long_collections",
+      "group": "collections",
+      "collection": {
+        "verse_count": 79,
+        "surah_count": 14,
+        "passage_count": 18
+      },
+      "cycles": 1,
+      "steps": [
+        {
+          "id": "fatihah",
+          "reading_id": "fatihah"
+        },
+        {
+          "id": "baqarah_opening",
+          "reading_id": "baqarah_opening"
+        },
+        {
+          "id": "baqarah_oneness",
+          "reading_id": "baqarah_oneness"
+        },
+        {
+          "id": "baqarah_kursi_light",
+          "reading_id": "baqarah_kursi_light"
+        },
+        {
+          "id": "baqarah_closing",
+          "reading_id": "baqarah_closing"
+        },
+        {
+          "id": "imran_testimony",
+          "reading_id": "imran_testimony"
+        },
+        {
+          "id": "imran_sovereignty",
+          "reading_id": "imran_sovereignty"
+        },
+        {
+          "id": "araf_creation",
+          "reading_id": "araf_creation"
+        },
+        {
+          "id": "isra_names",
+          "reading_id": "isra_names"
+        },
+        {
+          "id": "muminun_return",
+          "reading_id": "muminun_return"
+        },
+        {
+          "id": "saffat_opening",
+          "reading_id": "saffat_opening"
+        },
+        {
+          "id": "rahman_limits",
+          "reading_id": "rahman_limits"
+        },
+        {
+          "id": "hashr_names",
+          "reading_id": "hashr_names"
+        },
+        {
+          "id": "jinn_belief",
+          "reading_id": "jinn_belief"
+        },
+        {
+          "id": "kafirun",
+          "reading_id": "kafirun"
+        },
+        {
+          "id": "ikhlas",
+          "reading_id": "ikhlas"
+        },
+        {
+          "id": "falaq",
+          "reading_id": "falaq"
+        },
+        {
+          "id": "nas",
+          "reading_id": "nas"
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "ArRahma Foundation · Manzil collection",
+            "bn": "আর-রাহমা ফাউন্ডেশন · মানযিল সংকলন"
+          },
+          "url": "https://masjidsulayman.arrahmafoundation.com/quran/manzil/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Islamweb 349963 · compiled ruqyah readings",
+            "bn": "ইসলামওয়েব ৩৪৯৯৬৩ · সংকলিত রুকইয়াহ পাঠ"
+          },
+          "url": "https://www.islamweb.org/en/fatwa/349963/Reciting-Ruqyah-verses-as-compiled-in-some-books",
+          "kind": "scholarly"
+        }
+      ]
+    },
+    {
+      "id": "musa_passages",
+      "title": {
+        "en": "Musa · truth over magic",
+        "bn": "মুসা · জাদুর ওপর সত্যের বিজয়"
+      },
+      "description": {
+        "en": "Read the full selected passages from Al-Baqarah, Al-Araf, Yunus, Ta-Ha and Ash-Shuara.",
+        "bn": "আল-বাকারা, আল-আরাফ, ইউনুস, ত্বা-হা ও আশ-শুআরার নির্বাচিত সম্পূর্ণ অংশ পড়ুন।"
+      },
+      "kind": "arrangement",
+      "guide_id": "long_collections",
+      "group": "collections",
+      "collection": {
+        "verse_count": 22,
+        "surah_count": 5,
+        "passage_count": 5
+      },
+      "cycles": 1,
+      "steps": [
+        {
+          "id": "baqarah_magic",
+          "reading_id": "baqarah_magic"
+        },
+        {
+          "id": "araf_musa",
+          "reading_id": "araf_musa"
+        },
+        {
+          "id": "yunus_musa",
+          "reading_id": "yunus_musa"
+        },
+        {
+          "id": "taha_musa",
+          "reading_id": "taha_musa"
+        },
+        {
+          "id": "shuara_musa",
+          "reading_id": "shuara_musa"
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Ibn Baz · selected Quran readings for ruqyah",
+            "bn": "ইবন বায · রুকইয়াহর নির্বাচিত কুরআন পাঠ"
+          },
+          "url": "https://binbaz.org.sa/fatwas/18826",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Islam Q&A 175189 · Quran selections in ruqyah",
+            "bn": "ইসলাম কিউ অ্যান্ড এ ১৭৫১৮৯ · রুকইয়াহয় কুরআন নির্বাচন"
+          },
+          "url": "https://islamqa.info/en/answers/175189",
+          "kind": "scholarly"
+        }
+      ]
+    }
+  ]
+}

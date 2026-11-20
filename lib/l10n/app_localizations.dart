@@ -10954,6 +10954,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Visiting the ill'**
   String get ruqyahVisiting;
+
+  /// No description provided for @ruqyahLongCollections.
+  ///
+  /// In en, this message translates to:
+  /// **'Long Quran readings'**
+  String get ruqyahLongCollections;
+
+  /// No description provided for @ruqyahLongCollectionsBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete passages from many surahs, gathered for continuous reading.'**
+  String get ruqyahLongCollectionsBody;
+
+  /// No description provided for @ruqyahExtendedPassages.
+  ///
+  /// In en, this message translates to:
+  /// **'Extended passages'**
+  String get ruqyahExtendedPassages;
+
+  /// No description provided for @ruqyahReadContinuously.
+  ///
+  /// In en, this message translates to:
+  /// **'Read continuously'**
+  String get ruqyahReadContinuously;
+
+  /// No description provided for @ruqyahPageReading.
+  ///
+  /// In en, this message translates to:
+  /// **'Read by passage'**
+  String get ruqyahPageReading;
+
+  /// No description provided for @ruqyahCollectionBackground.
+  ///
+  /// In en, this message translates to:
+  /// **'About this selection'**
+  String get ruqyahCollectionBackground;
+
+  /// No description provided for @ruqyahCollectionCounts.
+  ///
+  /// In en, this message translates to:
+  /// **'{verses} ayahs · {surahs} surahs'**
+  String ruqyahCollectionCounts(String verses, String surahs);
+
+  /// No description provided for @ruqyahCollectionNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Read complete Quran passages at your own pace. This reading order gathers passages chosen for the collection; the sources below explain the selection.'**
+  String get ruqyahCollectionNote;
+
+  /// No description provided for @ruqyahCollectionContents.
+  ///
+  /// In en, this message translates to:
+  /// **'Passage index'**
+  String get ruqyahCollectionContents;
+
+  /// No description provided for @ruqyahCollectionPosition.
+  ///
+  /// In en, this message translates to:
+  /// **'Passage {current} of {total}'**
+  String ruqyahCollectionPosition(String current, String total);
+
+  /// No description provided for @ruqyahPronunciationMeaning.
+  ///
+  /// In en, this message translates to:
+  /// **'Pronunciation & meaning'**
+  String get ruqyahPronunciationMeaning;
+
+  /// No description provided for @ruqyahMarkPassageRead.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark passage as read'**
+  String get ruqyahMarkPassageRead;
+
+  /// No description provided for @ruqyahPassageRead.
+  ///
+  /// In en, this message translates to:
+  /// **'Marked as read'**
+  String get ruqyahPassageRead;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

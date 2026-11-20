@@ -55,10 +55,20 @@ class RuqyahReaderViewModel extends ChangeNotifier {
     failed = false;
     _notify();
     try {
-      final result = await repository.assets.loadReadings(language);
       final definition = routineId == null
           ? null
           : await repository.assets.loadRoutine(routineId!);
+      final metadata = await repository.assets.loadIndex();
+      final needsExtended =
+          definition?.summary.collection != null ||
+          metadata.readings.any(
+            (r) => r.pack == 'extended' && readingIds.contains(r.id),
+          );
+      final result = await repository.assets.loadReadings(
+        language,
+        includeExtended: needsExtended,
+      );
+      definition?.validateCollection(result);
       await repository.store.load();
       if (_disposed || ticket != _request) return;
       readings = result;
@@ -107,7 +117,7 @@ class RuqyahReaderViewModel extends ChangeNotifier {
   }
 
   void goTo(int value) {
-    if (value < 0 || value >= length) return;
+    if (value < 0 || value >= length || value == index) return;
     index = value;
     _save();
     _notify();
@@ -119,6 +129,18 @@ class RuqyahReaderViewModel extends ChangeNotifier {
     counts[index] = count + 1;
     if (count == target) completed.add(index);
     _save();
+    _notify();
+  }
+
+  void markRead(int value) {
+    if (value < 0 || value >= length || stepAt(value).count != null) return;
+    completed.add(value);
+    if (completed.length == length) {
+      finished = true;
+      _persist(() => repository.store.saveProgress(null));
+    } else {
+      _save();
+    }
     _notify();
   }
 

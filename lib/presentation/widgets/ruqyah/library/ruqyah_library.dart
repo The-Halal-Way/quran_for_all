@@ -17,6 +17,7 @@ class RuqyahLibrary extends StatelessWidget {
     final accent = RuqyahStyle.accent(context);
     final categories = {
       'all': context.l10n.ruqyahAll,
+      'extended': context.l10n.ruqyahExtendedPassages,
       'illness': context.l10n.ruqyahIllness,
       'bedtime': context.l10n.ruqyahBedtime,
       'children': context.l10n.ruqyahChildren,

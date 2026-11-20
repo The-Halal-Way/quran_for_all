@@ -2187,5 +2187,38 @@
   "ruqyahDaily": "Morning & evening",
   "ruqyahDistress": "Distress",
   "ruqyahTravel": "Travel & stopping",
-  "ruqyahVisiting": "Visiting the ill"
+  "ruqyahVisiting": "Visiting the ill",
+  "ruqyahLongCollections": "Long Quran readings",
+  "ruqyahLongCollectionsBody": "Complete passages from many surahs, gathered for continuous reading.",
+  "ruqyahExtendedPassages": "Extended passages",
+  "ruqyahReadContinuously": "Read continuously",
+  "ruqyahPageReading": "Read by passage",
+  "ruqyahCollectionBackground": "About this selection",
+  "ruqyahCollectionCounts": "{verses} ayahs · {surahs} surahs",
+  "ruqyahCollectionNote": "Read complete Quran passages at your own pace. This reading order gathers passages chosen for the collection; the sources below explain the selection.",
+  "ruqyahCollectionContents": "Passage index",
+  "ruqyahCollectionPosition": "Passage {current} of {total}",
+  "ruqyahPronunciationMeaning": "Pronunciation & meaning",
+  "ruqyahMarkPassageRead": "Mark passage as read",
+  "ruqyahPassageRead": "Marked as read",
+  "@ruqyahCollectionCounts": {
+    "placeholders": {
+      "verses": {
+        "type": "String"
+      },
+      "surahs": {
+        "type": "String"
+      }
+    }
+  },
+  "@ruqyahCollectionPosition": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  }
 }

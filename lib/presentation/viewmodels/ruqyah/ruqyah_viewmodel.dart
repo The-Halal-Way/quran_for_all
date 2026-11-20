@@ -48,7 +48,10 @@ class RuqyahViewModel extends ChangeNotifier {
     _notify();
     try {
       if (value == 1) {
-        final result = await repository.assets.loadReadings(code);
+        final result = await repository.assets.loadReadings(
+          code,
+          includeExtended: true,
+        );
         if (ticket == _request && !_disposed) readings = result;
       } else if (value == 2) {
         final result = await repository.assets.loadGuides(code);

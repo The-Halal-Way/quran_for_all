@@ -38,40 +38,53 @@ class RuqyahAssetLoader {
   Future<RuqyahIndex> loadIndex() async =>
       RuqyahIndex.fromJson(await _load('index.json'));
 
-  Future<Map<String, RuqyahReading>> loadReadings(String language) async {
+  Future<Map<String, RuqyahReading>> loadReadings(
+    String language, {
+    bool includeExtended = false,
+  }) async {
     final code = language == 'bn' ? 'bn' : 'en';
     final index = await loadIndex();
-    final raw = await _load('readings.json');
-    final localized = await _load('readings_$code.json');
-    if (localized['language'] != code) {
-      throw const FormatException('Wrong Ruqyah language pack.');
-    }
-    final translations = ruqyahObject(localized['readings']);
-    if (translations.length != index.readings.length) {
-      throw const FormatException('Incompatible Ruqyah translation pack.');
-    }
     final entries = <String, RuqyahReading>{};
-    for (final json in ruqyahObjects(raw['readings'])) {
-      final id = ruqyahString(json['id']);
-      final summary = index.readings.where((e) => e.id == id).firstOrNull;
-      if (summary == null || entries.containsKey(id)) {
-        throw const FormatException('Incompatible Ruqyah reading pack.');
+    for (final pack in ['core', if (includeExtended) 'extended']) {
+      final prefix = pack == 'core' ? 'readings' : 'long_readings';
+      final raw = await _load('$prefix.json');
+      final localized = await _load('${prefix}_$code.json');
+      if (localized['language'] != code) {
+        throw const FormatException('Wrong Ruqyah language pack.');
       }
-      entries[id] = RuqyahReading(
-        summary: summary,
-        json: json,
-        translation: ruqyahObject(translations[id]),
-      );
-    }
-    if (entries.length != index.readings.length) {
-      throw const FormatException('Missing Ruqyah readings.');
+      final translations = ruqyahObject(localized['readings']);
+      final summaries = index.readings.where((s) => s.pack == pack).toList();
+      if (translations.length != summaries.length) {
+        throw const FormatException('Incompatible Ruqyah translation pack.');
+      }
+      final loaded = <String>{};
+      for (final json in ruqyahObjects(raw['readings'])) {
+        final id = ruqyahString(json['id']);
+        final summary = summaries.where((e) => e.id == id).firstOrNull;
+        if (summary == null || entries.containsKey(id)) {
+          throw const FormatException('Incompatible Ruqyah reading pack.');
+        }
+        entries[id] = RuqyahReading(
+          summary: summary,
+          json: json,
+          translation: ruqyahObject(translations[id]),
+        );
+        loaded.add(id);
+      }
+      if (loaded.length != summaries.length) {
+        throw const FormatException('Missing Ruqyah readings.');
+      }
     }
     return Map.unmodifiable(entries);
   }
 
   Future<RuqyahRoutine> loadRoutine(String id) async {
     final index = await loadIndex();
-    final raw = await _load('routines.json');
+    final summary = index.routines.where((r) => r.id == id).firstOrNull;
+    if (summary == null) throw const FormatException('Missing Ruqyah routine.');
+    final raw = await _load(
+      summary.collection == null ? 'routines.json' : 'collections.json',
+    );
     final routine = ruqyahObjects(
       raw['routines'],
     ).where((e) => e['id'] == id).firstOrNull;
@@ -80,11 +93,15 @@ class RuqyahAssetLoader {
       routine,
       index.readings.map((e) => e.id).toSet(),
     );
-    final summary = index.routines.where((r) => r.id == id).firstOrNull;
-    if (summary == null ||
-        summary.guideId != result.summary.guideId ||
+    if (summary.guideId != result.summary.guideId ||
         summary.group != result.summary.group ||
-        summary.reported != result.summary.reported) {
+        summary.reported != result.summary.reported ||
+        summary.collection?.verseCount !=
+            result.summary.collection?.verseCount ||
+        summary.collection?.surahCount !=
+            result.summary.collection?.surahCount ||
+        summary.collection?.passageCount !=
+            result.summary.collection?.passageCount) {
       throw const FormatException('Incompatible Ruqyah routine metadata.');
     }
     return result;

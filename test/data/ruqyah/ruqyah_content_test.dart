@@ -31,9 +31,9 @@ void main() {
       await model.initialize();
       expect(model.failed, isFalse);
       expect(bundle.loaded, ['assets/json/ruqyah/index.json']);
-      expect(model.index!.readings, hasLength(18));
-      expect(model.index!.routines, hasLength(10));
-      expect(model.index!.guides, hasLength(16));
+      expect(model.index!.readings, hasLength(37));
+      expect(model.index!.routines, hasLength(13));
+      expect(model.index!.guides, hasLength(17));
     },
   );
 
@@ -93,7 +93,7 @@ void main() {
       model.filter(search: 'قل هو الله احد');
       expect(model.visibleReadings.map((e) => e.id), ['ikhlas']);
       model.filter(search: 'আয়াতুল কুরসি');
-      expect(model.visibleReadings.single.id, 'kursi');
+      expect(model.visibleReadings.map((e) => e.id), contains('kursi'));
     },
   );
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "content_revision": 2,
+  "content_revision": 3,
   "language": "en",
   "guides": [
     {
@@ -2339,6 +2339,153 @@
           "url": "https://alquran.cloud/terms-and-conditions",
           "kind": "provider"
         }
+      ]
+    },
+    {
+      "id": "long_collections",
+      "group": "understanding",
+      "title": "Long ruqyah readings: collections and their sources",
+      "summary": "Why extended texts join many surahs, what these three collections contain, and how to read them.",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "Why other ruqyah texts are long",
+          "text": "A short reported supplication and a long Quran compilation are different reading formats. Extended texts assemble complete verses or surahs about Allah’s oneness, refuge, mercy and the defeat of falsehood. A collection lets you continue from one passage to the next while keeping each verse connected to its surah. General Quran recitation can be used in ruqyah, while a compiler’s order is identified as a selection.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Islamweb 349963 · Quran compilations",
+                "bn": "ইসলামওয়েব ৩৪৯৯৬৩ · কুরআনের সংকলন"
+              },
+              "url": "https://www.islamweb.org/en/fatwa/349963/Reciting-Ruqyah-verses-as-compiled-in-some-books",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Islam Q&A 175189 · Quran selections",
+                "bn": "ইসলাম কিউ অ্যান্ড এ ১৭৫১৮৯ · কুরআনের নির্বাচন"
+              },
+              "url": "https://islamqa.info/en/answers/175189",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "The Manzil arrangement in this app",
+          "text": "This edition follows the 18 passages displayed in ArRahma Foundation’s published Manzil: Al-Fatihah; Al-Baqarah 1–5, 163, 255–257 and 284–286; Ali Imran 18 and 26–27; Al-Araf 54–56; Al-Isra 110–111; Al-Muminun 115–118; As-Saffat 1–11; Ar-Rahman 33–40; Al-Hashr 21–24; Al-Jinn 1–4; Al-Kafirun; Al-Ikhlas; Al-Falaq; and An-Nas. These ranges total 79 ayahs from 14 surahs. Printed collections may use other selections; the index here identifies this edition precisely.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "ArRahma Foundation · published Manzil",
+                "bn": "আর-রাহমা ফাউন্ডেশন · প্রকাশিত মানযিল"
+              },
+              "url": "https://masjidsulayman.arrahmafoundation.com/quran/manzil/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "The extended selection and Musa’s encounters",
+          "text": "The extended reading adds Al-Baqarah 2:102 and the selected Musa passages in 7:117–122, 10:79–82, 20:65–69 and 26:43–48. It totals 101 ayahs across 17 surahs in 23 passages. A separate five-passage selection gathers just those additions. Scholars discuss reciting verses about Musa’s encounters; the exact expanded ranges here retain narrative context. Pharaoh’s and the magicians’ speeches remain historical quotations within Quranic recitation. The displayed totals describe the content, and carry no special religious significance.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Ibn Baz · Quran passages in ruqyah",
+                "bn": "ইবন বায · রুকইয়াহয় কুরআনের অংশ"
+              },
+              "url": "https://binbaz.org.sa/fatwas/18826",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Islam Q&A 175189 · Quran selections",
+                "bn": "ইসলাম কিউ অ্যান্ড এ ১৭৫১৮৯ · কুরআনের নির্বাচন"
+              },
+              "url": "https://islamqa.info/en/answers/175189",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "Read at your own pace",
+          "text": "Continuous reading displays every complete Arabic passage with ayah numbers. Open pronunciation and meaning below any passage, or switch to reading by passage. Use the index to jump to a surah reference. Your current passage, marked readings and bookmarks are saved locally. English transliteration uses Al Quran Cloud’s en.transliteration edition; Bangla pronunciation and the meanings are app-prepared learning aids. Quran audio follows the matching global verse IDs and loads only when played or explicitly saved. This collection has no assigned repetition schedule; follow a specifically reported count only in its own reported practice.",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Islamweb 349963 · Quran compilations",
+                "bn": "ইসলামওয়েব ৩৪৯৯৬৩ · কুরআনের সংকলন"
+              },
+              "url": "https://www.islamweb.org/en/fatwa/349963/Reciting-Ruqyah-verses-as-compiled-in-some-books",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Al Quran Cloud · text, transliteration and verse identifiers",
+                "bn": "আল কুরআন ক্লাউড · পাঠ, উচ্চারণ ও আয়াতের পরিচয়"
+              },
+              "url": "https://alquran.cloud/api",
+              "kind": "provider"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Islamweb 349963 · Quran compilations",
+            "bn": "ইসলামওয়েব ৩৪৯৯৬৩ · কুরআনের সংকলন"
+          },
+          "url": "https://www.islamweb.org/en/fatwa/349963/Reciting-Ruqyah-verses-as-compiled-in-some-books",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Islam Q&A 175189 · Quran selections",
+            "bn": "ইসলাম কিউ অ্যান্ড এ ১৭৫১৮৯ · কুরআনের নির্বাচন"
+          },
+          "url": "https://islamqa.info/en/answers/175189",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "ArRahma Foundation · published Manzil",
+            "bn": "আর-রাহমা ফাউন্ডেশন · প্রকাশিত মানযিল"
+          },
+          "url": "https://masjidsulayman.arrahmafoundation.com/quran/manzil/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Ibn Baz · Quran passages in ruqyah",
+            "bn": "ইবন বায · রুকইয়াহয় কুরআনের অংশ"
+          },
+          "url": "https://binbaz.org.sa/fatwas/18826",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Al Quran Cloud · text, transliteration and verse identifiers",
+            "bn": "আল কুরআন ক্লাউড · পাঠ, উচ্চারণ ও আয়াতের পরিচয়"
+          },
+          "url": "https://alquran.cloud/api",
+          "kind": "provider"
+        }
+      ],
+      "reading_ids": [
+        "baqarah_magic",
+        "araf_musa",
+        "yunus_musa",
+        "taha_musa",
+        "shuara_musa"
+      ],
+      "routine_ids": [
+        "extended_quran",
+        "manzil",
+        "musa_passages"
       ]
     }
   ]

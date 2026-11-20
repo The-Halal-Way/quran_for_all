@@ -1,5 +1,6 @@
 import 'ruqyah_index.dart';
 import 'ruqyah_text.dart';
+import 'ruqyah_reading.dart';
 
 class RuqyahStep {
   RuqyahStep.fromJson(RuqyahJson json)
@@ -38,6 +39,9 @@ class RuqyahRoutine {
           : RuqyahSource.fromJson(ruqyahObject(json['cycle_source'])),
       steps = List.unmodifiable(
         ruqyahObjects(json['steps']).map(RuqyahStep.fromJson),
+      ),
+      sources = List.unmodifiable(
+        ruqyahObjects(json['sources'] ?? []).map(RuqyahSource.fromJson),
       ) {
     if (steps.isEmpty ||
         cycles < 1 ||
@@ -55,7 +59,30 @@ class RuqyahRoutine {
   final int cycles;
   final List<RuqyahStep> steps;
   final RuqyahSource? cycleSource;
+  final List<RuqyahSource> sources;
   int get length => cycles * steps.length;
   RuqyahStep stepAt(int index) => steps[index % steps.length];
   int cycleAt(int index) => index ~/ steps.length + 1;
+
+  void validateCollection(Map<String, RuqyahReading> readings) {
+    final totals = summary.collection;
+    if (totals == null) return;
+    final passages = steps.map((s) => readings[s.readingId]).toList();
+    final verses = passages.expand((r) => r?.verseIds ?? <int>[]).toList();
+    if (sources.isEmpty ||
+        cycles != 1 ||
+        passages.any(
+          (r) => r == null || r.verseIds.isEmpty || r.surahNumber == null,
+        ) ||
+        steps.any((s) => s.count != null) ||
+        steps.length != totals.passageCount ||
+        verses.length != totals.verseCount ||
+        verses.toSet().length != verses.length ||
+        passages.map((r) => r!.surahNumber).toSet().length !=
+            totals.surahCount) {
+      throw const FormatException(
+        'Incomplete or overlapping Ruqyah collection.',
+      );
+    }
+  }
 }

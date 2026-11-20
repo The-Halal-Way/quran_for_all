@@ -15,6 +15,7 @@ import '../../../widgets/ruqyah/reader/ruqyah_reader_controls.dart';
 import '../../../widgets/ruqyah/reader/ruqyah_reader_preferences.dart';
 import '../../../widgets/ruqyah/shared/ruqyah_loading_state.dart';
 import '../../../widgets/sunnah_dua/catalog/dua_language_button.dart';
+import '../../../widgets/ruqyah/collections/ruqyah_continuous_reader.dart';
 
 class RuqyahReaderView extends StatefulWidget {
   const RuqyahReaderView({
@@ -40,6 +41,10 @@ class _RuqyahReaderViewState extends State<RuqyahReaderView>
   late final RuqyahAudioController _audio;
   PageController? _pages;
   String? _language, _audioSelection;
+  bool? _continuousOverride;
+  bool get _continuous =>
+      _model.routine?.summary.collection != null &&
+      (_continuousOverride ?? true);
 
   @override
   void initState() {
@@ -115,7 +120,30 @@ class _RuqyahReaderViewState extends State<RuqyahReaderView>
             children: [
               if (!_model.loading &&
                   !_model.failed &&
+                  _model.routine?.summary.collection != null)
+                IconButton(
+                  tooltip: _continuous
+                      ? context.l10n.ruqyahPageReading
+                      : context.l10n.ruqyahReadContinuously,
+                  onPressed: () {
+                    final continuous = !_continuous;
+                    if (!continuous) {
+                      _pages?.dispose();
+                      _pages = PageController(initialPage: _model.index);
+                    }
+                    setState(() => _continuousOverride = continuous);
+                    _syncReader();
+                  },
+                  icon: Icon(
+                    _continuous
+                        ? Icons.view_carousel_outlined
+                        : Icons.view_stream_outlined,
+                  ),
+                ),
+              if (!_model.loading &&
+                  !_model.failed &&
                   !_model.finished &&
+                  !_continuous &&
                   _model.reading != null)
                 IconButton(
                   onPressed: _model.toggleBookmark,
@@ -194,34 +222,42 @@ class _RuqyahReaderViewState extends State<RuqyahReaderView>
                     ),
                   ),
                 Expanded(
-                  child: PageView.builder(
-                    controller: _pages,
-                    itemCount: _model.length,
-                    onPageChanged: _model.goTo,
-                    itemBuilder: (context, index) => SingleChildScrollView(
-                      key: PageStorageKey('ruqyah-step-$index'),
-                      padding: EdgeInsets.fromLTRB(
-                        AppResponsive.of(context).padding,
-                        20,
-                        AppResponsive.of(context).padding,
-                        24,
-                      ),
-                      child: Center(
-                        child: ConstrainedBox(
-                          constraints: const BoxConstraints(maxWidth: 760),
-                          child: RuqyahReadingContent(
-                            step: _model.stepAt(index),
-                            reading: _model.readingAt(index),
-                            preferences: _model.preferences,
-                            audio: index == _model.index ? _audio : null,
-                            routine: _model.routine,
-                          ),
+                  child: _continuous
+                      ? RuqyahContinuousReader(model: _model, audio: _audio)
+                      : PageView.builder(
+                          controller: _pages,
+                          itemCount: _model.length,
+                          onPageChanged: _model.goTo,
+                          itemBuilder: (context, index) =>
+                              SingleChildScrollView(
+                                key: PageStorageKey('ruqyah-step-$index'),
+                                padding: EdgeInsets.fromLTRB(
+                                  AppResponsive.of(context).padding,
+                                  20,
+                                  AppResponsive.of(context).padding,
+                                  24,
+                                ),
+                                child: Center(
+                                  child: ConstrainedBox(
+                                    constraints: const BoxConstraints(
+                                      maxWidth: 760,
+                                    ),
+                                    child: RuqyahReadingContent(
+                                      step: _model.stepAt(index),
+                                      reading: _model.readingAt(index),
+                                      preferences: _model.preferences,
+                                      audio: index == _model.index
+                                          ? _audio
+                                          : null,
+                                      routine: _model.routine,
+                                    ),
+                                  ),
+                                ),
+                              ),
                         ),
-                      ),
-                    ),
-                  ),
                 ),
-                RuqyahReaderControls(model: _model, onPage: _model.goTo),
+                if (!_continuous)
+                  RuqyahReaderControls(model: _model, onPage: _model.goTo),
               ],
             );
           },

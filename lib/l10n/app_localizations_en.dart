@@ -5702,4 +5702,47 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ruqyahVisiting => 'Visiting the ill';
+
+  @override
+  String get ruqyahLongCollections => 'Long Quran readings';
+
+  @override
+  String get ruqyahLongCollectionsBody => 'Complete passages from many surahs, gathered for continuous reading.';
+
+  @override
+  String get ruqyahExtendedPassages => 'Extended passages';
+
+  @override
+  String get ruqyahReadContinuously => 'Read continuously';
+
+  @override
+  String get ruqyahPageReading => 'Read by passage';
+
+  @override
+  String get ruqyahCollectionBackground => 'About this selection';
+
+  @override
+  String ruqyahCollectionCounts(String verses, String surahs) {
+    return '$verses ayahs · $surahs surahs';
+  }
+
+  @override
+  String get ruqyahCollectionNote => 'Read complete Quran passages at your own pace. This reading order gathers passages chosen for the collection; the sources below explain the selection.';
+
+  @override
+  String get ruqyahCollectionContents => 'Passage index';
+
+  @override
+  String ruqyahCollectionPosition(String current, String total) {
+    return 'Passage $current of $total';
+  }
+
+  @override
+  String get ruqyahPronunciationMeaning => 'Pronunciation & meaning';
+
+  @override
+  String get ruqyahMarkPassageRead => 'Mark passage as read';
+
+  @override
+  String get ruqyahPassageRead => 'Marked as read';
 }

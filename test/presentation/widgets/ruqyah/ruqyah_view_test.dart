@@ -15,6 +15,8 @@ import 'package:quran_for_all/presentation/views/dashboard/ruqyah/ruqyah_reader_
 import 'package:quran_for_all/presentation/views/dashboard/ruqyah/ruqyah_guide_view.dart';
 import 'package:quran_for_all/presentation/widgets/ruqyah/guides/ruqyah_guide_card.dart';
 import 'package:quran_for_all/presentation/widgets/ruqyah/guides/ruqyah_article_section.dart';
+import 'package:quran_for_all/presentation/widgets/ruqyah/collections/ruqyah_continuous_reader.dart';
+import 'package:quran_for_all/presentation/widgets/ruqyah/collections/ruqyah_long_passage.dart';
 import 'package:quran_for_all/presentation/widgets/dashboard/ruqyah/dashboard_ruqyah_section.dart';
 
 import '../../../support/ruqyah_test_support.dart';
@@ -166,6 +168,112 @@ void main() {
         await tester.tap(readingLink);
         await tester.pumpAndSettle();
         expect(find.byType(RuqyahReaderView), findsOneWidget);
+        expect(tester.takeException(), isNull);
+        expect(
+          bundle.loaded.any(
+            (p) => p.endsWith(language.code == 'en' ? '_bn.json' : '_en.json'),
+          ),
+          isFalse,
+        );
+        await tester.pumpWidget(const SizedBox());
+        await tester.pumpAndSettle();
+      },
+    );
+  }
+
+  for (final language in [AppLanguage.english, AppLanguage.bangla]) {
+    testWidgets(
+      'long collection scrolls, jumps, changes mode and resumes in ${language.code}',
+      (tester) async {
+        tester.view.physicalSize = const Size(320, 760);
+        tester.view.devicePixelRatio = 1;
+        addTearDown(tester.view.resetPhysicalSize);
+        addTearDown(tester.view.resetDevicePixelRatio);
+        await settings.setLanguage(language);
+        await tester.pumpWidget(
+          _App(
+            settings: settings,
+            scale: 1.4,
+            dark: language == AppLanguage.bangla,
+            child: RuqyahReaderView(
+              repository: repository,
+              routineId: 'extended_quran',
+            ),
+          ),
+        );
+        await tester.pumpAndSettle();
+        expect(find.byType(RuqyahContinuousReader), findsOneWidget);
+        expect(find.byType(PageView), findsNothing);
+        expect(find.byType(RuqyahLongPassage).evaluate().length, lessThan(6));
+        expect(tester.takeException(), isNull);
+        final l10n = lookupAppLocalizations(language.locale);
+        await tester.tap(find.byTooltip(l10n.ruqyahCollectionContents));
+        await tester.pumpAndSettle();
+        final index = await repository.assets.loadIndex();
+        final title = index.readings
+            .singleWhere((r) => r.id == 'taha_musa')
+            .title
+            .inLanguage(language.code);
+        final target = find.widgetWithText(ListTile, title);
+        await tester.scrollUntilVisible(
+          target,
+          400,
+          scrollable: find.byType(Scrollable).last,
+        );
+        await tester.ensureVisible(target);
+        await tester.pumpAndSettle();
+        await tester.tap(target);
+        await tester.pumpAndSettle();
+        final routine = await repository.assets.loadRoutine('extended_quran');
+        final targetIndex = routine.steps.indexWhere(
+          (s) => s.readingId == 'taha_musa',
+        );
+        expect(repository.store.progress!.index, targetIndex);
+        expect(tester.takeException(), isNull);
+        final passage = find.byWidgetPredicate(
+          (w) => w is RuqyahLongPassage && w.index == targetIndex,
+        );
+        final bookmark = find
+            .descendant(of: passage, matching: find.byType(IconButton))
+            .first;
+        await tester.ensureVisible(bookmark);
+        await tester.tap(bookmark);
+        await tester.pumpAndSettle();
+        expect(repository.store.bookmarks, contains('taha_musa'));
+        // Drags on Arabic move the shared outer viewport.
+        final scroll = find.descendant(
+          of: find.byType(RuqyahContinuousReader),
+          matching: find.byType(CustomScrollView),
+        );
+        await tester.drag(scroll, const Offset(0, -300));
+        await tester.pumpAndSettle();
+        expect(repository.store.progress!.index, targetIndex);
+        await tester.tap(find.byTooltip(l10n.ruqyahPageReading));
+        await tester.pumpAndSettle();
+        expect(find.byType(PageView), findsOneWidget);
+        expect(repository.store.progress!.index, targetIndex);
+        await tester.tap(find.byTooltip(l10n.ruqyahReadContinuously));
+        await tester.pumpAndSettle();
+        expect(find.byType(RuqyahContinuousReader), findsOneWidget);
+        expect(repository.store.progress!.index, targetIndex);
+        final saved = repository.store.progress!;
+        await tester.pumpWidget(const SizedBox());
+        await tester.pumpAndSettle();
+        await tester.pumpWidget(
+          _App(
+            settings: settings,
+            scale: 1.4,
+            child: RuqyahReaderView(
+              repository: repository,
+              routineId: 'extended_quran',
+              resume: saved,
+            ),
+          ),
+        );
+        await tester.pumpAndSettle();
+        expect(find.byType(RuqyahContinuousReader), findsOneWidget);
+        expect(repository.store.progress!.index, targetIndex);
+        expect(find.text(title), findsWidgets);
         expect(tester.takeException(), isNull);
         expect(
           bundle.loaded.any(

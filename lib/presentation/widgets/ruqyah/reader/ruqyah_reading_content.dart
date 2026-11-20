@@ -76,7 +76,7 @@ class RuqyahReadingContent extends StatelessWidget {
           const SizedBox(height: 18),
           RuqyahTextPanel(
             label: context.l10n.ruqyahArabic,
-            text: item.arabic,
+            text: item.numberedArabic,
             arabic: true,
             fontSize: preferences.fontSize,
           ),
@@ -128,6 +128,7 @@ class RuqyahReadingContent extends StatelessWidget {
                 sources:
                     [
                       ...?item?.sources,
+                      ...?routine?.sources,
                       if (step.countSource != null) step.countSource!,
                       if (routine?.cycleSource != null) routine!.cycleSource!,
                     ].fold(

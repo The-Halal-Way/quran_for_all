@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "content_revision": 2,
+  "content_revision": 3,
   "language": "bn",
   "guides": [
     {
@@ -2339,6 +2339,153 @@
           "url": "https://alquran.cloud/terms-and-conditions",
           "kind": "provider"
         }
+      ]
+    },
+    {
+      "id": "long_collections",
+      "group": "understanding",
+      "title": "দীর্ঘ রুকইয়াহ পাঠ: সংকলন ও উৎস",
+      "summary": "দীর্ঘ পাঠে অনেক সূরা কেন একত্র হয়, তিন সংকলনে কী আছে এবং কীভাবে পড়বেন।",
+      "basis": "app_guidance",
+      "sections": [
+        {
+          "title": "অন্য রুকইয়াহ পাঠ দীর্ঘ কেন",
+          "text": "সংক্ষিপ্ত বর্ণিত দোয়া ও দীর্ঘ কুরআনের সংকলন পাঠের দুটি ভিন্ন ধরন। বিস্তৃত পাঠে আল্লাহর একত্ব, আশ্রয়, রহমত ও মিথ্যার পরাজয়বিষয়ক সম্পূর্ণ আয়াত বা সূরা একত্র করা হয়। সংকলনে এক অংশ থেকে পরের অংশে পড়া এগিয়ে নিতে পারেন, আবার প্রতিটি আয়াতের সঙ্গে তার সূরার পরিচয়ও থাকে। সাধারণভাবে কুরআন তিলাওয়াত রুকইয়াহয় ব্যবহার করা যায়; সংকলকের সাজানো ক্রমকে নির্বাচন হিসেবে পরিচয় দেওয়া হয়েছে।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Islamweb 349963 · Quran compilations",
+                "bn": "ইসলামওয়েব ৩৪৯৯৬৩ · কুরআনের সংকলন"
+              },
+              "url": "https://www.islamweb.org/en/fatwa/349963/Reciting-Ruqyah-verses-as-compiled-in-some-books",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Islam Q&A 175189 · Quran selections",
+                "bn": "ইসলাম কিউ অ্যান্ড এ ১৭৫১৮৯ · কুরআনের নির্বাচন"
+              },
+              "url": "https://islamqa.info/en/answers/175189",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "অ্যাপের মানযিলের বিন্যাস",
+          "text": "এই সংস্করণে আর-রাহমা ফাউন্ডেশনের প্রকাশিত মানযিলের ১৮টি অংশ অনুসরণ করা হয়েছে: আল-ফাতিহা; আল-বাকারা ১–৫, ১৬৩, ২৫৫–২৫৭ ও ২৮৪–২৮৬; আলি ইমরান ১৮ ও ২৬–২৭; আল-আরাফ ৫৪–৫৬; আল-ইসরা ১১০–১১১; আল-মুমিনুন ১১৫–১১৮; আস-সাফফাত ১–১১; আর-রহমান ৩৩–৪০; আল-হাশর ২১–২৪; আল-জিন ১–৪; আল-কাফিরুন; আল-ইখলাস; আল-ফালাক এবং আন-নাস। মোট ১৪ সূরার ৭৯ আয়াত। অন্য মুদ্রিত সংকলনে নির্বাচন ভিন্ন হতে পারে; এখানকার সূচি এই সংস্করণকে নির্দিষ্টভাবে চিহ্নিত করে।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "ArRahma Foundation · published Manzil",
+                "bn": "আর-রাহমা ফাউন্ডেশন · প্রকাশিত মানযিল"
+              },
+              "url": "https://masjidsulayman.arrahmafoundation.com/quran/manzil/",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "বিস্তৃত নির্বাচন ও মুসার ঘটনাগুলো",
+          "text": "বিস্তৃত পাঠে আল-বাকারা ২:১০২ এবং মুসার ঘটনাসংক্রান্ত ৭:১১৭–১২২, ১০:৭৯–৮২, ২০:৬৫–৬৯ ও ২৬:৪৩–৪৮ যোগ করা হয়েছে। এতে ২৩টি অংশে ১৭ সূরার ১০১ আয়াত রয়েছে। পৃথক পাঁচটি অংশের তালিকায় শুধু এই সংযোজনগুলো একত্র আছে। আলেমরা মুসার ঘটনাবিষয়ক আয়াত পড়ার আলোচনা করেছেন; এখানকার বিস্তৃত অংশগুলো বর্ণনার প্রেক্ষাপট অক্ষুণ্ণ রাখে। ফিরআউন ও জাদুকরদের উক্তি কুরআনের বর্ণনায় ঐতিহাসিক কথোপকথন হিসেবেই থাকে। প্রদর্শিত সংখ্যা শুধু বিষয়বস্তুর পরিমাণ জানায়; তার আলাদা ধর্মীয় তাৎপর্য নেই।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Ibn Baz · Quran passages in ruqyah",
+                "bn": "ইবন বায · রুকইয়াহয় কুরআনের অংশ"
+              },
+              "url": "https://binbaz.org.sa/fatwas/18826",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Islam Q&A 175189 · Quran selections",
+                "bn": "ইসলাম কিউ অ্যান্ড এ ১৭৫১৮৯ · কুরআনের নির্বাচন"
+              },
+              "url": "https://islamqa.info/en/answers/175189",
+              "kind": "scholarly"
+            }
+          ]
+        },
+        {
+          "title": "নিজের গতিতে পড়ুন",
+          "text": "ধারাবাহিক পাঠে আয়াতের নম্বরসহ প্রতিটি সম্পূর্ণ আরবি অংশ দেখানো হয়। যেকোনো অংশের নিচে উচ্চারণ ও অর্থ খুলুন অথবা অংশ অনুযায়ী পড়ার মোডে যান। সূচি থেকে নির্দিষ্ট অংশে যেতে পারেন। বর্তমান অংশ, পড়েছেন বলে চিহ্নিত অংশ ও বুকমার্ক ডিভাইসে সংরক্ষিত থাকে। ইংরেজি উচ্চারণ আল কুরআন ক্লাউডের en.transliteration সংস্করণ থেকে নেওয়া; বাংলা উচ্চারণ ও অর্থ অ্যাপে প্রস্তুত শেখার সহায়িকা। কুরআনের অডিও সংশ্লিষ্ট আয়াতের পরিচয় অনুসরণ করে এবং চালালে বা আলাদাভাবে সংরক্ষণ করলেই লোড হয়। এই সংকলনের জন্য নির্দিষ্ট পুনরাবৃত্তির সময়সূচি দেওয়া নেই; বর্ণিত সংখ্যা সংশ্লিষ্ট বর্ণিত আমলের ক্ষেত্রেই অনুসরণ করুন।",
+          "points": [],
+          "sources": [
+            {
+              "label": {
+                "en": "Islamweb 349963 · Quran compilations",
+                "bn": "ইসলামওয়েব ৩৪৯৯৬৩ · কুরআনের সংকলন"
+              },
+              "url": "https://www.islamweb.org/en/fatwa/349963/Reciting-Ruqyah-verses-as-compiled-in-some-books",
+              "kind": "scholarly"
+            },
+            {
+              "label": {
+                "en": "Al Quran Cloud · text, transliteration and verse identifiers",
+                "bn": "আল কুরআন ক্লাউড · পাঠ, উচ্চারণ ও আয়াতের পরিচয়"
+              },
+              "url": "https://alquran.cloud/api",
+              "kind": "provider"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "en": "Islamweb 349963 · Quran compilations",
+            "bn": "ইসলামওয়েব ৩৪৯৯৬৩ · কুরআনের সংকলন"
+          },
+          "url": "https://www.islamweb.org/en/fatwa/349963/Reciting-Ruqyah-verses-as-compiled-in-some-books",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Islam Q&A 175189 · Quran selections",
+            "bn": "ইসলাম কিউ অ্যান্ড এ ১৭৫১৮৯ · কুরআনের নির্বাচন"
+          },
+          "url": "https://islamqa.info/en/answers/175189",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "ArRahma Foundation · published Manzil",
+            "bn": "আর-রাহমা ফাউন্ডেশন · প্রকাশিত মানযিল"
+          },
+          "url": "https://masjidsulayman.arrahmafoundation.com/quran/manzil/",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Ibn Baz · Quran passages in ruqyah",
+            "bn": "ইবন বায · রুকইয়াহয় কুরআনের অংশ"
+          },
+          "url": "https://binbaz.org.sa/fatwas/18826",
+          "kind": "scholarly"
+        },
+        {
+          "label": {
+            "en": "Al Quran Cloud · text, transliteration and verse identifiers",
+            "bn": "আল কুরআন ক্লাউড · পাঠ, উচ্চারণ ও আয়াতের পরিচয়"
+          },
+          "url": "https://alquran.cloud/api",
+          "kind": "provider"
+        }
+      ],
+      "reading_ids": [
+        "baqarah_magic",
+        "araf_musa",
+        "yunus_musa",
+        "taha_musa",
+        "shuara_musa"
+      ],
+      "routine_ids": [
+        "extended_quran",
+        "manzil",
+        "musa_passages"
       ]
     }
   ]
