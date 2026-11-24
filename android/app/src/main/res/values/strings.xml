@@ -15,4 +15,13 @@
     <string name="prayer_widget_maghrib">Maghrib</string>
     <string name="prayer_widget_isha">Isha</string>
     <string name="prayer_widget_refresh">Refresh prayer times</string>
+    <string name="prayer_times_elderly_home_widget_title">Prayer Times (Elders)</string>
+    <string name="prayer_times_elderly_home_widget_description">Large font prayer times and Hijri date for elders</string>
+    <string name="prayer_times_modern_home_widget_title">Prayer Times (Modern)</string>
+    <string name="prayer_times_modern_home_widget_description">Modern card with current prayer hero, celestial times, and prayer track</string>
+    <string name="prayer_times_modern_elderly_home_widget_title">Prayer Times (Modern Elders)</string>
+    <string name="prayer_times_modern_elderly_home_widget_description">Modern prayer card with extra-large typography for elders</string>
+    <string name="prayer_widget_current_prayer">CURRENT PRAYER</string>
+    <string name="prayer_widget_next_prayer">NEXT PRAYER</string>
+    <string name="prayer_widget_sunset">Sunset</string>
 </resources>

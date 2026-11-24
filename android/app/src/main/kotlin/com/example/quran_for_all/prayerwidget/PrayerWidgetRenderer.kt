@@ -25,9 +25,13 @@ class PrayerWidgetRenderer(
     private val refreshing = data.getLong(PrayerWidgetRefreshAction.BUSY_KEY, 0L) > now
     private val failed = data.getBoolean(PrayerWidgetRefreshAction.ERROR_KEY, false)
 
-    fun render(compact: Boolean): RemoteViews {
-        val layout = if (compact) R.layout.prayer_times_home_widget_compact
-            else R.layout.prayer_times_home_widget
+    fun render(compact: Boolean, elderly: Boolean = false): RemoteViews {
+        val layout = when {
+            elderly && compact -> R.layout.prayer_times_elderly_home_widget_compact
+            elderly -> R.layout.prayer_times_elderly_home_widget
+            compact -> R.layout.prayer_times_home_widget_compact
+            else -> R.layout.prayer_times_home_widget
+        }
         return RemoteViews(context.packageName, layout).apply {
             setOnClickPendingIntent(
                 R.id.widget_container,
@@ -67,25 +71,38 @@ class PrayerWidgetRenderer(
                 setTextViewText(R.id.widget_schedule_label, labels.prayerTimes)
                 setTextViewText(R.id.widget_location,
                     if (today == null) labels.tapToUpdate else snapshot?.locationLabel.orEmpty())
-                compactTypography(this)
+                compactTypography(this, elderly)
             }
         }
     }
 
-    private fun compactTypography(views: RemoteViews) {
-        val sizes = mapOf(
-            R.id.widget_hijri_date to 15f,
-            R.id.widget_date to 9f,
-            R.id.widget_schedule_label to 9f,
-            R.id.widget_location to 9f,
-            R.id.widget_sehri_label to 9f,
-            R.id.widget_iftar_label to 9f,
-            R.id.widget_sehri_value to 12f,
-            R.id.widget_iftar_value to 12f,
-        )
+    private fun compactTypography(views: RemoteViews, elderly: Boolean = false) {
+        val sizes = if (elderly) {
+            mapOf(
+                R.id.widget_hijri_date to 16f,
+                R.id.widget_date to 11f,
+                R.id.widget_schedule_label to 11f,
+                R.id.widget_location to 11f,
+                R.id.widget_sehri_label to 11f,
+                R.id.widget_iftar_label to 11f,
+                R.id.widget_sehri_value to 14f,
+                R.id.widget_iftar_value to 14f,
+            )
+        } else {
+            mapOf(
+                R.id.widget_hijri_date to 15f,
+                R.id.widget_date to 9f,
+                R.id.widget_schedule_label to 9f,
+                R.id.widget_location to 9f,
+                R.id.widget_sehri_label to 9f,
+                R.id.widget_iftar_label to 9f,
+                R.id.widget_sehri_value to 12f,
+                R.id.widget_iftar_value to 12f,
+            )
+        }
         sizes.forEach { (id, size) -> views.setTextViewTextSize(id, TypedValue.COMPLEX_UNIT_SP, size) }
-        views.setViewPadding(R.id.widget_hijri_date, 0, dp(2), 0, dp(2))
-        views.setViewPadding(R.id.widget_fasting, dp(6), dp(4), dp(6), dp(4))
+        views.setViewPadding(R.id.widget_hijri_date, 0, dp(if (elderly) 3 else 2), 0, dp(if (elderly) 3 else 2))
+        views.setViewPadding(R.id.widget_fasting, dp(6), dp(if (elderly) 5 else 4), dp(6), dp(if (elderly) 5 else 4))
     }
 
     private fun dp(value: Int): Int = (value * context.resources.displayMetrics.density).toInt()

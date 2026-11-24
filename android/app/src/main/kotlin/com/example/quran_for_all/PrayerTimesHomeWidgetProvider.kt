@@ -34,8 +34,12 @@ class PrayerTimesHomeWidgetProvider : HomeWidgetProvider() {
     }
 
     override fun onDisabled(context: Context) {
-        PrayerWidgetRefreshScheduler.cancel(context)
-        PrayerWidgetRefreshAction.cancel(context)
+        val manager = AppWidgetManager.getInstance(context)
+        val elderlyIds = manager.getAppWidgetIds(ComponentName(context, PrayerTimesElderlyHomeWidgetProvider::class.java))
+        if (elderlyIds.isEmpty()) {
+            PrayerWidgetRefreshScheduler.cancel(context)
+            PrayerWidgetRefreshAction.cancel(context)
+        }
         super.onDisabled(context)
     }
 
@@ -53,18 +57,37 @@ class PrayerTimesHomeWidgetProvider : HomeWidgetProvider() {
             val views = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 RemoteViews(
                     mapOf(
-                        SizeF(240f, 180f) to renderer.render(compact = true),
-                        SizeF(240f, 300f) to renderer.render(compact = false),
+                        SizeF(240f, 180f) to renderer.render(compact = true, elderly = false),
+                        SizeF(240f, 300f) to renderer.render(compact = false, elderly = false),
                     )
                 )
             } else {
                 val height = appWidgetManager.getAppWidgetOptions(widgetId)
                     .getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT, 300)
-                renderer.render(compact = height < 300)
+                renderer.render(compact = height < 300, elderly = false)
             }
             appWidgetManager.updateAppWidget(widgetId, views)
         }
-        if (appWidgetIds.isNotEmpty()) PrayerWidgetRefreshScheduler.schedule(context, snapshot?.timeZoneId)
+
+        val elderlyManager = AppWidgetManager.getInstance(context)
+        val elderlyIds = elderlyManager.getAppWidgetIds(ComponentName(context, PrayerTimesElderlyHomeWidgetProvider::class.java))
+        if (elderlyIds.isNotEmpty()) {
+            PrayerTimesElderlyHomeWidgetProvider.updateWidgets(context, elderlyManager, elderlyIds, snapshot)
+        }
+
+        val modernIds = elderlyManager.getAppWidgetIds(ComponentName(context, PrayerTimesModernHomeWidgetProvider::class.java))
+        if (modernIds.isNotEmpty()) {
+            PrayerTimesModernHomeWidgetProvider.updateWidgets(context, elderlyManager, modernIds, snapshot)
+        }
+
+        val modernElderlyIds = elderlyManager.getAppWidgetIds(ComponentName(context, PrayerTimesModernElderlyHomeWidgetProvider::class.java))
+        if (modernElderlyIds.isNotEmpty()) {
+            PrayerTimesModernElderlyHomeWidgetProvider.updateWidgets(context, elderlyManager, modernElderlyIds, snapshot)
+        }
+
+        if (appWidgetIds.isNotEmpty() || elderlyIds.isNotEmpty() || modernIds.isNotEmpty() || modernElderlyIds.isNotEmpty()) {
+            PrayerWidgetRefreshScheduler.schedule(context, snapshot?.timeZoneId)
+        }
     }
 
     override fun onAppWidgetOptionsChanged(

@@ -6,6 +6,12 @@ class PrayerHomeWidgetBridge {
   static const iOSAppGroupId = 'group.com.example.quranForAll';
   static const qualifiedAndroidProviderName =
       'com.example.quran_for_all.PrayerTimesHomeWidgetProvider';
+  static const qualifiedAndroidElderlyProviderName =
+      'com.example.quran_for_all.PrayerTimesElderlyHomeWidgetProvider';
+  static const qualifiedAndroidModernProviderName =
+      'com.example.quran_for_all.PrayerTimesModernHomeWidgetProvider';
+  static const qualifiedAndroidModernElderlyProviderName =
+      'com.example.quran_for_all.PrayerTimesModernElderlyHomeWidgetProvider';
   static const iOSWidgetName = 'PrayerTimesHomeWidget';
 
   static bool get _isSupportedPlatform {

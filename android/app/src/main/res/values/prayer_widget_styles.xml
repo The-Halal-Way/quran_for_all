@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="prayer_widget_gold">#F4DA94</color>
+    <color name="prayer_widget_gold_light">#FFF1C6</color>
     <color name="prayer_widget_white">#FFFFFF</color>
-    <color name="prayer_widget_divider">#66FFFFFF</color>
+    <color name="prayer_widget_divider">#40FFFFFF</color>
+    <color name="prayer_widget_emerald">#10B981</color>
+    <color name="prayer_widget_emerald_dark">#059669</color>
+    <color name="prayer_widget_emerald_light">#D1FAE5</color>
+    <color name="prayer_widget_text_secondary">#B3FFFFFF</color>
+    <color name="prayer_widget_text_tertiary">#80FFFFFF</color>
     <style name="PrayerWidget.Text" parent="">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -61,5 +67,33 @@
         <item name="android:textStyle">bold</item>
         <item name="android:letterSpacing">0.10</item>
         <item name="android:textColor">@color/prayer_widget_gold</item>
+    </style>
+
+    <!-- Elderly Widget Styles (Larger typography dedicated for elders) -->
+    <style name="PrayerWidgetElderly.Text" parent="PrayerWidget.Text">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="PrayerWidgetElderly.Title" parent="PrayerWidget.Title">
+        <item name="android:textSize">19sp</item>
+    </style>
+    <style name="PrayerWidgetElderly.Hijri" parent="PrayerWidget.Hijri">
+        <item name="android:textSize">23sp</item>
+        <item name="android:paddingTop">4.5dp</item>
+        <item name="android:paddingBottom">4.5dp</item>
+    </style>
+    <style name="PrayerWidgetElderly.Value" parent="PrayerWidget.Value">
+        <item name="android:textSize">17.5sp</item>
+    </style>
+    <style name="PrayerWidgetElderly.RangeValue" parent="PrayerWidget.RangeValue">
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_weight">3.0</item>
+        <item name="android:autoSizeMinTextSize">13sp</item>
+        <item name="android:autoSizeMaxTextSize">17sp</item>
+    </style>
+    <style name="PrayerWidgetElderly.RowLabel" parent="PrayerWidget.RowLabel">
+        <item name="android:textSize">16.5sp</item>
+    </style>
+    <style name="PrayerWidgetElderly.Section" parent="PrayerWidget.Section">
+        <item name="android:textSize">14sp</item>
     </style>
 </resources>

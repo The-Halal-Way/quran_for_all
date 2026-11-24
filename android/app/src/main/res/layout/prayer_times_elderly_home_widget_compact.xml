@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:background="@drawable/prayer_widget_background" android:padding="8dp">
+    <include layout="@layout/prayer_widget_elderly_header_compact" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" android:orientation="horizontal" android:visibility="gone">
+        <TextView android:id="@+id/widget_schedule_label" style="@style/PrayerWidgetElderly.Section"
+            android:layout_width="0dp" android:layout_weight="1" android:text="@string/prayer_widget_schedule" />
+        <TextView android:id="@+id/widget_location" style="@style/PrayerWidgetElderly.Text"
+            android:maxWidth="150dp" android:textSize="10sp" android:text="Dhaka" />
+    </LinearLayout>
+    <include layout="@layout/prayer_widget_elderly_schedule_compact" />
+    <include layout="@layout/prayer_widget_elderly_fasting" />
+    <TextView android:id="@+id/widget_status" style="@style/PrayerWidgetElderly.Text"
+        android:layout_width="match_parent" android:gravity="center" android:textSize="11sp"
+        android:layout_marginTop="4dp" android:visibility="gone"
+        android:text="@string/prayer_widget_open_to_sync" />
+</LinearLayout>
