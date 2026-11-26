@@ -93,6 +93,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsPrayerSchoolStandard => 'সাধারণ (শাফেয়ি, মালিকি, হাম্বলি)';
 
   @override
+  String get settingsPrayerSchoolShafiShort => 'শাফেয়ি';
+
+  @override
   String get settingsPrayerSchoolHanafi => 'হানাফি';
 
   @override

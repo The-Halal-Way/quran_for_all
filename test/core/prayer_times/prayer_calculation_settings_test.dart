@@ -53,9 +53,10 @@ void main() {
     () async {
       final store = PrayerTimesPreferencesStore();
       final original = await store.getCalculationConfig();
+      expect(original.madhab, PrayerMadhab.hanafi);
       final updated = original.copyWith(
         method: PrayerCalculationMethod.karachi,
-        madhab: PrayerMadhab.hanafi,
+        madhab: PrayerMadhab.shafi,
         adjustments: const PrayerAdjustments(
           imsak: -1,
           fajr: 2,
@@ -73,7 +74,7 @@ void main() {
       final saved = await store.getCalculationConfig();
 
       expect(saved.method, PrayerCalculationMethod.karachi);
-      expect(saved.madhab, PrayerMadhab.hanafi);
+      expect(saved.madhab, PrayerMadhab.shafi);
       expect(saved.adjustments.apiTuneString, '-1,2,3,-4,5,-6,7,8,-9');
       expect(saved.signatureSeed(), updated.signatureSeed());
       expect(saved.signatureSeed(), isNot(original.signatureSeed()));
@@ -108,7 +109,7 @@ void main() {
     () async {
       final now = DateTime.utc(2026, 1, 1);
       final oldConfig = PrayerCalculationConfig.defaults();
-      final selectedConfig = oldConfig.copyWith(madhab: PrayerMadhab.hanafi);
+      final selectedConfig = oldConfig.copyWith(madhab: PrayerMadhab.shafi);
       final profile = PrayerProfile(
         signature: 'old-profile',
         locationIdentity: 'gps:23.81,90.41',

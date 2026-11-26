@@ -70,9 +70,11 @@ void main() {
     await tester.tap(find.text('University of Islamic Sciences, Karachi').last);
     await tester.pumpAndSettle();
 
+    expect(find.text('Hanafi'), findsOneWidget);
+
     await tester.tap(find.byKey(const ValueKey('prayer-school')));
     await tester.pumpAndSettle();
-    await tester.tap(find.text('Hanafi').last);
+    await tester.tap(find.text('Standard (Shafi, Maliki, Hanbali)').last);
     await tester.pumpAndSettle();
 
     final fajr = find.byKey(const ValueKey('prayer-adjustment-fajr'));
@@ -93,9 +95,26 @@ void main() {
 
     final config = await store.getCalculationConfig();
     expect(config.method, PrayerCalculationMethod.karachi);
-    expect(config.madhab, PrayerMadhab.hanafi);
+    expect(config.madhab, PrayerMadhab.shafi);
     expect(config.adjustments.fajr, 7);
     expect(model.reloads, 1);
+
+    await tester.pump(const Duration(seconds: 5));
+    await tester.pumpAndSettle();
+
+    await tester.ensureVisible(find.byKey(const ValueKey('prayer-school')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('prayer-school')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Hanafi').last);
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(save);
+    await tester.tap(save);
+    await tester.pumpAndSettle();
+
+    final updatedConfig = await store.getCalculationConfig();
+    expect(updatedConfig.madhab, PrayerMadhab.hanafi);
+    expect(model.reloads, 2);
     expect(tester.takeException(), isNull);
   });
 

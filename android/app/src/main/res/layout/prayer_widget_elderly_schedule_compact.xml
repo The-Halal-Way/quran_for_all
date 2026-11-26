@@ -38,7 +38,7 @@
         <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
             android:layout_weight="1" android:gravity="center" android:orientation="vertical">
             <TextView android:id="@+id/prayer_asr_label" style="@style/PrayerWidgetElderly.Text" android:textSize="11sp"
-                android:text="@string/prayer_widget_asr" />
+                android:maxLines="2" android:gravity="center" android:text="@string/prayer_widget_asr" />
             <TextView android:id="@+id/prayer_asr_value" style="@style/PrayerWidgetElderly.Value"
                 android:textSize="12sp" android:maxLines="2" android:gravity="center" android:layout_marginTop="1dp" android:text="—" />
         </LinearLayout>

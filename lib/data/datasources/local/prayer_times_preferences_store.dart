@@ -70,8 +70,12 @@ class PrayerTimesPreferencesStore {
   Future<void> writeWidgetSnapshot(PrayerWidgetSnapshot snapshot) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.reload();
+    final madhab = PrayerMadhab.fromName(prefs.getString(_keyMadhab));
     final localized = snapshot.copyWith(
-      labels: PrayerWidgetLabels.forLocale(prefs.getString('app_language')),
+      labels: PrayerWidgetLabels.forLocale(
+        prefs.getString('app_language'),
+        madhab: madhab,
+      ),
     );
     final decorated = PrayerWidgetCalendar.decorate(
       localized,

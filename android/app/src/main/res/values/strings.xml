@@ -11,7 +11,7 @@
     <string name="prayer_widget_fajr">Fajr</string>
     <string name="prayer_widget_sunrise">Sunrise</string>
     <string name="prayer_widget_dhuhr">Dhuhr</string>
-    <string name="prayer_widget_asr">Asr</string>
+    <string name="prayer_widget_asr">Asr (Hanafi)</string>
     <string name="prayer_widget_maghrib">Maghrib</string>
     <string name="prayer_widget_isha">Isha</string>
     <string name="prayer_widget_refresh">Refresh prayer times</string>

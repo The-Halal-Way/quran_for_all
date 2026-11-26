@@ -93,6 +93,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsPrayerSchoolStandard => 'Standard (Shafi, Maliki, Hanbali)';
 
   @override
+  String get settingsPrayerSchoolShafiShort => 'Shafi';
+
+  @override
   String get settingsPrayerSchoolHanafi => 'Hanafi';
 
   @override
@@ -2477,7 +2480,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dashboardSectionExplore => 'Explore';
 
   @override
-  String get dashboardNeedTitle => 'The Art of Dua Acceptance';
+  String get dashboardNeedTitle => 'Dua Acceptance amaal';
 
   @override
   String get dashboardNeedSubtitle => 'Quran and Sunnah practices for times of need';

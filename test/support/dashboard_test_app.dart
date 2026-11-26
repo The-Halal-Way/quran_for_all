@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_for_all/domain/entities/prayer_times/prayer_solar_times.dart';
+import 'package:quran_for_all/domain/entities/prayer_times/prayer_times_models.dart';
 import 'package:provider/provider.dart';
 import 'package:quran_for_all/data/models/app_settings.dart';
 import 'package:quran_for_all/core/enums/task_category.dart';
@@ -182,6 +183,8 @@ class TestPrayerViewModel extends ChangeNotifier
   String? get timeZoneId => 'Asia/Dhaka';
   @override
   bool get usesHighLatitudeFallback => false;
+  @override
+  PrayerMadhab get madhab => PrayerMadhab.hanafi;
   int refreshes = 0;
   @override
   Map<String, String> get prayerTimes => const {

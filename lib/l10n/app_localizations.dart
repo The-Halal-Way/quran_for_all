@@ -263,6 +263,12 @@ abstract class AppLocalizations {
   /// **'Standard (Shafi, Maliki, Hanbali)'**
   String get settingsPrayerSchoolStandard;
 
+  /// No description provided for @settingsPrayerSchoolShafiShort.
+  ///
+  /// In en, this message translates to:
+  /// **'Shafi'**
+  String get settingsPrayerSchoolShafiShort;
+
   /// No description provided for @settingsPrayerSchoolHanafi.
   ///
   /// In en, this message translates to:
@@ -4754,7 +4760,7 @@ abstract class AppLocalizations {
   /// No description provided for @dashboardNeedTitle.
   ///
   /// In en, this message translates to:
-  /// **'The Art of Dua Acceptance'**
+  /// **'Dua Acceptance amaal'**
   String get dashboardNeedTitle;
 
   /// No description provided for @dashboardNeedSubtitle.

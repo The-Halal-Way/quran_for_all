@@ -273,7 +273,13 @@
             <TextView
                 android:id="@+id/prayer_asr_label"
                 style="@style/PrayerWidgetElderly.Text"
+                android:layout_width="match_parent"
+                android:gravity="center"
                 android:textSize="11.5sp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="6.5sp"
+                android:autoSizeMaxTextSize="11.5sp"
+                android:autoSizeStepGranularity="0.5sp"
                 android:textStyle="bold"
                 android:text="@string/prayer_widget_asr" />
             <TextView

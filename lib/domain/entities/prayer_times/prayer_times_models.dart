@@ -41,7 +41,7 @@ enum PrayerMadhab {
   static PrayerMadhab fromName(String? value) {
     return PrayerMadhab.values.firstWhere(
       (madhab) => madhab.name == value,
-      orElse: () => PrayerMadhab.shafi,
+      orElse: () => PrayerMadhab.hanafi,
     );
   }
 }
@@ -164,7 +164,7 @@ class PrayerCalculationConfig {
   factory PrayerCalculationConfig.defaults() {
     return const PrayerCalculationConfig(
       method: PrayerCalculationMethod.muslimWorldLeague,
-      madhab: PrayerMadhab.shafi,
+      madhab: PrayerMadhab.hanafi,
       adjustments: PrayerAdjustments(),
       latitudeAdjustmentMethod: PrayerLatitudeAdjustmentMethod.angleBased,
       midnightMode: PrayerMidnightMode.standard,

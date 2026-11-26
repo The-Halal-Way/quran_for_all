@@ -48,6 +48,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   PrayerSolarTimes? _solarTimes;
   bool _usesHighLatitudeFallback = false;
   bool _checkedLaunchLocation = false;
+  PrayerMadhab _madhab = PrayerMadhab.hanafi;
 
   Map<String, String>? get prayerTimes => _prayerTimes;
   Map<String, String>? get prayerTimeRanges => _prayerTimeRanges;
@@ -61,6 +62,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   PrayerSolarTimes? get solarTimes => _solarTimes;
   bool get usesHighLatitudeFallback => _usesHighLatitudeFallback;
   String? get timeZoneId => _scheduleLocation?.name;
+  PrayerMadhab get madhab => _madhab;
 
   Future<void> loadPrayerTimes({bool forceRefresh = false}) async {
     if (_disposed || _loading) {
@@ -190,6 +192,7 @@ class DashboardPrayerTimesViewModel extends ChangeNotifier
   void _applyDashboardData(PrayerDashboardData dashboardData) {
     _solarTimes = dashboardData.today.solarTimes;
     _usesHighLatitudeFallback = dashboardData.today.usesHighLatitudeFallback;
+    _madhab = dashboardData.profile.calculation.madhab;
     PrayerTimeZoneHelper.ensureInitialized();
     final location = PrayerTimeZoneHelper.locationFor(
       dashboardData.profile.timeZoneId,

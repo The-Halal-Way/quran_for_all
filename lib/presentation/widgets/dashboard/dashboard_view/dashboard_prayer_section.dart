@@ -40,6 +40,7 @@ class DashboardPrayerSection extends StatelessWidget {
         DashboardPrayerCard(
           times: times,
           ranges: vm.prayerTimeRanges ?? const {},
+          madhab: vm.madhab,
           forbiddenTimes: forbiddenTimes,
           current: vm.currentPrayer,
           isPreviousNightIsha:

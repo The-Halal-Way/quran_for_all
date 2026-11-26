@@ -44,6 +44,7 @@ void main() {
       zone: 'Asia/Karachi',
       config: PrayerCalculationConfig.defaults().copyWith(
         method: PrayerCalculationMethod.karachi,
+        madhab: PrayerMadhab.shafi,
       ),
     );
     final result = day(p, '2024-01-15');
@@ -91,7 +92,13 @@ void main() {
   });
 
   test('Hanafi changes Asr and user offsets do not move solar events', () {
-    final base = day(profile());
+    final base = day(
+      profile(
+        config: PrayerCalculationConfig.defaults().copyWith(
+          madhab: PrayerMadhab.shafi,
+        ),
+      ),
+    );
     final adjusted = day(
       profile(
         config: PrayerCalculationConfig.defaults().copyWith(

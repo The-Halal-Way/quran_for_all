@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 
+import '../../domain/entities/prayer_times/prayer_times_models.dart';
 import '../../l10n/app_localizations.dart';
 
 /// Text sent with the prayer snapshot so native home widgets can follow the
@@ -37,7 +38,7 @@ class PrayerWidgetLabels {
     fajr: 'Fajr',
     sunrise: 'Sunrise',
     dhuhr: 'Dhuhr',
-    asr: 'Asr',
+    asr: 'Asr (Hanafi)',
     maghrib: 'Maghrib',
     isha: 'Isha',
   );
@@ -60,11 +61,17 @@ class PrayerWidgetLabels {
   final String refreshing;
   final String refreshFailed;
 
-  static PrayerWidgetLabels forLocale(String? locale) {
+  static PrayerWidgetLabels forLocale(
+    String? locale, {
+    PrayerMadhab madhab = PrayerMadhab.hanafi,
+  }) {
     final appLocale = locale?.toLowerCase().startsWith('bn') == true
         ? const Locale('bn')
         : const Locale('en');
     final l10n = lookupAppLocalizations(appLocale);
+    final schoolLabel = madhab == PrayerMadhab.hanafi
+        ? l10n.settingsPrayerSchoolHanafi
+        : l10n.settingsPrayerSchoolShafiShort;
     return PrayerWidgetLabels(
       localeIdentifier: appLocale.languageCode == 'bn' ? 'bn_BD' : 'en_US',
       appTitle: l10n.prayerWidgetTitle,
@@ -77,7 +84,7 @@ class PrayerWidgetLabels {
       fajr: l10n.prayerWidgetFajr,
       sunrise: l10n.prayerWidgetSunrise,
       dhuhr: l10n.prayerWidgetDhuhr,
-      asr: l10n.prayerWidgetAsr,
+      asr: '${l10n.prayerWidgetAsr} ($schoolLabel)',
       maghrib: l10n.prayerWidgetMaghrib,
       isha: l10n.prayerWidgetIsha,
       refresh: l10n.prayerWidgetRefresh,

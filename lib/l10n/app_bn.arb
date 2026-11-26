@@ -28,6 +28,7 @@
   "settingsPrayerMethodLabel": "গণনা পদ্ধতি",
   "settingsPrayerSchoolLabel": "আসরের মাযহাব",
   "settingsPrayerSchoolStandard": "সাধারণ (শাফেয়ি, মালিকি, হাম্বলি)",
+  "settingsPrayerSchoolShafiShort": "শাফেয়ি",
   "settingsPrayerSchoolHanafi": "হানাফি",
   "settingsPrayerAdjustmentsTitle": "স্থানীয় সময় সমন্বয়",
   "settingsPrayerAdjustmentsDescription": "গণনাকৃত প্রতিটি সময়ে মিনিট যোগ বা বিয়োগ করুন (সর্বোচ্চ ৬০ মিনিট)। এই পরিবর্তন নামাজের উইজেটেও প্রযোজ্য হবে।",

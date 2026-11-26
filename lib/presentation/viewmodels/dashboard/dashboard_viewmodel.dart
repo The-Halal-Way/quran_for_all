@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:quran_for_all/domain/entities/prayer_times/prayer_times_models.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import 'package:quran_for_all/services/hijri_calendar_service.dart';
 
@@ -53,7 +54,11 @@ class DashboardViewModel {
     }
   }
 
-  String localizedPrayerName(AppLocalizations l10n, String prayer) {
+  String localizedPrayerName(
+    AppLocalizations l10n,
+    String prayer, {
+    PrayerMadhab? madhab,
+  }) {
     switch (prayer) {
       case 'Sehri':
         return l10n.dashboardPrayerSehri;
@@ -64,7 +69,13 @@ class DashboardViewModel {
       case 'Dhuhr':
         return l10n.dashboardPrayerDhuhr;
       case 'Asr':
-        return l10n.dashboardPrayerAsr;
+        if (madhab == null) {
+          return l10n.dashboardPrayerAsr;
+        }
+        final school = madhab == PrayerMadhab.hanafi
+            ? l10n.settingsPrayerSchoolHanafi
+            : l10n.settingsPrayerSchoolShafiShort;
+        return '${l10n.dashboardPrayerAsr} ($school)';
       case 'Maghrib':
         return l10n.dashboardPrayerMaghrib;
       case 'Isha':

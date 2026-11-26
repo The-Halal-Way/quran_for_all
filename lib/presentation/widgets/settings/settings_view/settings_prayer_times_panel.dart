@@ -35,7 +35,7 @@ class _SettingsPrayerTimesPanelState extends State<SettingsPrayerTimesPanel> {
 
   PrayerCalculationConfig? _config;
   PrayerCalculationMethod _method = PrayerCalculationMethod.muslimWorldLeague;
-  PrayerMadhab _madhab = PrayerMadhab.shafi;
+  PrayerMadhab _madhab = PrayerMadhab.hanafi;
   bool _saving = false;
   bool _expanded = false;
 
@@ -185,11 +185,10 @@ class _SettingsPrayerTimesPanelState extends State<SettingsPrayerTimesPanel> {
       );
       if (!mounted) return;
       setState(() => _config = updated);
-      unawaited(
-        context
-            .read<DashboardPrayerTimesViewModel>()
-            .reloadForCalculationChange(),
-      );
+      await context
+          .read<DashboardPrayerTimesViewModel>()
+          .reloadForCalculationChange();
+      if (!mounted) return;
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text(context.l10n.settingsPrayerSaved)));
@@ -259,16 +258,20 @@ class _SettingsPrayerTimesPanelState extends State<SettingsPrayerTimesPanel> {
                     ),
                     items: [
                       DropdownMenuItem(
+                        value: PrayerMadhab.hanafi,
+                        child: Text(
+                          context.l10n.settingsPrayerSchoolHanafi,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      DropdownMenuItem(
                         value: PrayerMadhab.shafi,
                         child: Text(
                           context.l10n.settingsPrayerSchoolStandard,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                         ),
-                      ),
-                      DropdownMenuItem(
-                        value: PrayerMadhab.hanafi,
-                        child: Text(context.l10n.settingsPrayerSchoolHanafi),
                       ),
                     ],
                     onChanged: _saving

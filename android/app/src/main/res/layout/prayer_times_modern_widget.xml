@@ -271,7 +271,13 @@
             <TextView
                 android:id="@+id/prayer_asr_label"
                 style="@style/PrayerWidget.Text"
+                android:layout_width="match_parent"
+                android:gravity="center"
                 android:textSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="6sp"
+                android:autoSizeMaxTextSize="10sp"
+                android:autoSizeStepGranularity="0.5sp"
                 android:text="@string/prayer_widget_asr" />
             <TextView
                 android:id="@+id/prayer_asr_value"

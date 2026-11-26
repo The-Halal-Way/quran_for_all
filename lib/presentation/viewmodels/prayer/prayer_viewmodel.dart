@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:quran_for_all/data/models/prayer/prayer_detail_models.dart';
 import 'package:quran_for_all/l10n/app_localizations.dart';
 import '../../../domain/entities/prayer_times/prayer_solar_times.dart';
+import '../../../domain/entities/prayer_times/prayer_times_models.dart';
 import '../../models/prayer_forbidden_times.dart';
 
 class PrayerViewModel extends ChangeNotifier {
@@ -19,6 +20,7 @@ class PrayerViewModel extends ChangeNotifier {
   String? _currentPrayerKey;
   PrayerSolarTimes? _solarTimes;
   String? _timeZoneId;
+  PrayerMadhab? _madhab;
 
   Map<String, String> get prayerTimes => _prayerTimes;
   Map<String, String> get prayerTimeRanges => _prayerTimeRanges;
@@ -42,6 +44,7 @@ class PrayerViewModel extends ChangeNotifier {
     bool notify = true,
     PrayerSolarTimes? solarTimes,
     String? timeZoneId,
+    PrayerMadhab? madhab,
   }) {
     final nextTimes = Map<String, String>.unmodifiable(
       prayerTimes ?? const <String, String>{},
@@ -54,7 +57,8 @@ class PrayerViewModel extends ChangeNotifier {
         mapEquals(_prayerTimeRanges, nextTimeRanges) &&
         _currentPrayerKey == currentPrayerKey &&
         _solarTimes == solarTimes &&
-        _timeZoneId == timeZoneId) {
+        _timeZoneId == timeZoneId &&
+        _madhab == madhab) {
       return;
     }
 
@@ -63,6 +67,7 @@ class PrayerViewModel extends ChangeNotifier {
     _currentPrayerKey = currentPrayerKey;
     _solarTimes = solarTimes;
     _timeZoneId = timeZoneId;
+    _madhab = madhab;
 
     if (notify) {
       notifyListeners();
@@ -88,7 +93,7 @@ class PrayerViewModel extends ChangeNotifier {
 
       return PrayerTimelineItem(
         prayer: prayer,
-        name: localizedPrayerName(l10n, prayer),
+        name: localizedPrayerName(l10n, prayer, includeSchool: true),
         time:
             _prayerTimeRanges[prayer.scheduleKey] ??
             _prayerTimes[prayer.scheduleKey] ??
@@ -325,7 +330,11 @@ class PrayerViewModel extends ChangeNotifier {
     ];
   }
 
-  String localizedPrayerName(AppLocalizations l10n, PrayerKey prayer) {
+  String localizedPrayerName(
+    AppLocalizations l10n,
+    PrayerKey prayer, {
+    bool includeSchool = false,
+  }) {
     switch (prayer) {
       case PrayerKey.fajr:
         return l10n.dashboardPrayerFajr;
@@ -334,7 +343,13 @@ class PrayerViewModel extends ChangeNotifier {
       case PrayerKey.dhuhr:
         return l10n.dashboardPrayerDhuhr;
       case PrayerKey.asr:
-        return l10n.dashboardPrayerAsr;
+        if (!includeSchool || _madhab == null) {
+          return l10n.dashboardPrayerAsr;
+        }
+        final school = _madhab == PrayerMadhab.hanafi
+            ? l10n.settingsPrayerSchoolHanafi
+            : l10n.settingsPrayerSchoolShafiShort;
+        return '${l10n.dashboardPrayerAsr} ($school)';
       case PrayerKey.maghrib:
         return l10n.dashboardPrayerMaghrib;
       case PrayerKey.isha:

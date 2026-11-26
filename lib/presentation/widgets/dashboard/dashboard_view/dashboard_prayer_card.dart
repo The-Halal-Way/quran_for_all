@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/localization/l10n_extensions.dart';
 import '../../../../core/theme/app_spacing.dart';
 import '../../../../data/models/prayer/prayer_detail_models.dart';
+import '../../../../domain/entities/prayer_times/prayer_times_models.dart';
 import '../../../viewmodels/dashboard/dashboard_viewmodel.dart';
 import 'dashboard_forbidden_time_row.dart';
 import 'dashboard_prayer_error_card.dart';
@@ -19,12 +20,14 @@ class DashboardPrayerCard extends StatefulWidget {
     this.currentEndsAtUtc,
     required this.loading,
     required this.onRetry,
+    this.madhab,
     this.forbiddenTimes = const [],
     this.onForbiddenTimesTap,
     this.errorTitle,
     this.errorMessage,
   });
   final Map<String, String> times, ranges;
+  final PrayerMadhab? madhab;
   final List<PrayerForbiddenTimeItem> forbiddenTimes;
   final String? current, errorTitle, errorMessage;
   final DateTime? currentEndsAtUtc;
@@ -70,6 +73,7 @@ class _DashboardPrayerCardState extends State<DashboardPrayerCard> {
                       : model.localizedPrayerName(
                           context.l10n,
                           widget.current!,
+                          madhab: widget.madhab,
                         ),
                   time: widget.isPreviousNightIsha
                       ? context.l10n.prayerTimeEndsAt(
@@ -132,7 +136,11 @@ class _DashboardPrayerCardState extends State<DashboardPrayerCard> {
     void addPrayer(String key, String value) {
       rows.add(
         DashboardPrayerRow(
-          name: model.localizedPrayerName(context.l10n, key),
+          name: model.localizedPrayerName(
+            context.l10n,
+            key,
+            madhab: widget.madhab,
+          ),
           time: widget.ranges[key] ?? value,
           icon: model.prayerIcon(key),
           isCurrent: key == widget.current,

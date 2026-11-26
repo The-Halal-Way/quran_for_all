@@ -163,7 +163,22 @@ void main() {
       expect(stored.labels.localeIdentifier, 'bn_BD');
       expect(stored.labels.prayerTimes, 'নামাজের সময়');
       expect(stored.labels.fajr, 'ফজর');
+      expect(stored.labels.asr, 'আসর (হানাফি)');
       expect(stored.days.single.hijriDateLabel, contains('হিজরি'));
+    },
+  );
+
+  test(
+    'snapshot storage exports Asr school label matching selected madhab',
+    () async {
+      await PrayerTimesPreferencesStore().writeWidgetSnapshot(_snapshot());
+      final hanafiStored = PrayerWidgetSnapshot.fromJsonString(savedSnapshot!);
+      expect(hanafiStored.labels.asr, 'Asr (Hanafi)');
+
+      SharedPreferences.setMockInitialValues({'prayer_times_madhab': 'shafi'});
+      await PrayerTimesPreferencesStore().writeWidgetSnapshot(_snapshot());
+      final shafiStored = PrayerWidgetSnapshot.fromJsonString(savedSnapshot!);
+      expect(shafiStored.labels.asr, 'Asr (Shafi)');
     },
   );
 

@@ -202,7 +202,7 @@ void main() {
       await repository.warmUpcomingPrayerDays();
       await preferences.saveCalculationConfig(
         initial.profile.calculation.copyWith(
-          madhab: PrayerMadhab.hanafi,
+          madhab: PrayerMadhab.shafi,
           adjustments: const PrayerAdjustments(fajr: 7),
         ),
       );
@@ -211,7 +211,7 @@ void main() {
       final next = await repository.loadDashboardData();
       await repository.warmUpcomingPrayerDays();
       expect(next.today.fajrUtc.difference(initial.today.fajrUtc).inMinutes, 7);
-      expect(next.today.asrUtc.isAfter(initial.today.asrUtc), isTrue);
+      expect(next.today.asrUtc.isBefore(initial.today.asrUtc), isTrue);
       final snapshot = PrayerWidgetSnapshot.fromJsonString(rawSnapshot!);
       expect(snapshot.profileSignature, next.profile.signature);
       expect(snapshot.days, hasLength(30));

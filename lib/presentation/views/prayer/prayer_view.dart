@@ -22,6 +22,7 @@ class PrayerView extends StatelessWidget {
           currentPrayerKey: times.currentPrayer,
           solarTimes: times.solarTimes,
           timeZoneId: times.timeZoneId,
+          madhab: times.madhab,
         ),
       child: const PrayerViewBody(),
     );
