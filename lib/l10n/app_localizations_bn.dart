@@ -282,6 +282,18 @@ class AppLocalizationsBn extends AppLocalizations {
   String get prayerWidgetIsha => 'ইশা';
 
   @override
+  String get prayerWidgetCurrentPrayer => 'বর্তমান ওয়াক্ত';
+
+  @override
+  String get prayerWidgetNextPrayer => 'পরবর্তী ওয়াক্ত';
+
+  @override
+  String get prayerWidgetWaqtEndsIn => 'ওয়াক্ত শেষ হতে বাকি';
+
+  @override
+  String get prayerWidgetStartsIn => 'শুরু হতে বাকি';
+
+  @override
   String get hijriAdjustmentTitle => 'চাঁদ দেখা অনুযায়ী সমন্বয়';
 
   @override

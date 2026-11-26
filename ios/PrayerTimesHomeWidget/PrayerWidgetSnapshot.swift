@@ -60,17 +60,31 @@ struct PrayerWidgetLabels: Codable {
   let maghrib: String
   let isha: String
   let refresh: String?
+  let currentPrayer: String?
+  let nextPrayer: String?
+  let waqtEndsIn: String?
+  let startsIn: String?
 
   var refreshLabel: String { refresh ?? (localeIdentifier.hasPrefix("bn")
     ? "নামাজের সময় হালনাগাদ করুন" : "Refresh prayer times") }
+  var currentPrayerLabel: String { currentPrayer ?? (localeIdentifier.hasPrefix("bn")
+    ? "বর্তমান ওয়াক্ত" : "CURRENT PRAYER") }
+  var nextPrayerLabel: String { nextPrayer ?? (localeIdentifier.hasPrefix("bn")
+    ? "পরবর্তী ওয়াক্ত" : "NEXT PRAYER") }
+  var waqtEndsInLabel: String { waqtEndsIn ?? (localeIdentifier.hasPrefix("bn")
+    ? "ওয়াক্ত শেষ হতে বাকি" : "WAQT ENDS IN") }
+  var startsInLabel: String { startsIn ?? (localeIdentifier.hasPrefix("bn")
+    ? "শুরু হতে বাকি" : "STARTS IN") }
 
   static let english = PrayerWidgetLabels(
     localeIdentifier: "en_US", appTitle: "Muslim & Quran Pro",
     hijriDatePlaceholder: "Hijri date", prayerTimes: "PRAYER TIMES",
     sehriEnd: "SEHRI END", iftar: "IFTAR",
     openToSync: "Open the app to update today's times", tapToUpdate: "Tap to update",
-    fajr: "Fajr", sunrise: "Sunrise", dhuhr: "Dhuhr", asr: "Asr",
-    maghrib: "Maghrib", isha: "Isha", refresh: "Refresh prayer times"
+    fajr: "Fajr", sunrise: "Sunrise", dhuhr: "Dhuhr", asr: "Asr (Hanafi)",
+    maghrib: "Maghrib", isha: "Isha", refresh: "Refresh prayer times",
+    currentPrayer: "CURRENT PRAYER", nextPrayer: "NEXT PRAYER",
+    waqtEndsIn: "WAQT ENDS IN", startsIn: "STARTS IN"
   )
 }
 

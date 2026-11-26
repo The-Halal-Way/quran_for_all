@@ -35,8 +35,14 @@ class PrayerTimesHomeWidgetProvider : HomeWidgetProvider() {
 
     override fun onDisabled(context: Context) {
         val manager = AppWidgetManager.getInstance(context)
-        val elderlyIds = manager.getAppWidgetIds(ComponentName(context, PrayerTimesElderlyHomeWidgetProvider::class.java))
-        if (elderlyIds.isEmpty()) {
+        val hasAnySibling = listOf(
+            PrayerTimesElderlyHomeWidgetProvider::class.java,
+            PrayerTimesModernHomeWidgetProvider::class.java,
+            PrayerTimesModernElderlyHomeWidgetProvider::class.java,
+            PrayerTimesFocusHomeWidgetProvider::class.java,
+            PrayerTimesFocusElderlyHomeWidgetProvider::class.java,
+        ).any { manager.getAppWidgetIds(ComponentName(context, it)).isNotEmpty() }
+        if (!hasAnySibling) {
             PrayerWidgetRefreshScheduler.cancel(context)
             PrayerWidgetRefreshAction.cancel(context)
         }
@@ -85,7 +91,17 @@ class PrayerTimesHomeWidgetProvider : HomeWidgetProvider() {
             PrayerTimesModernElderlyHomeWidgetProvider.updateWidgets(context, elderlyManager, modernElderlyIds, snapshot)
         }
 
-        if (appWidgetIds.isNotEmpty() || elderlyIds.isNotEmpty() || modernIds.isNotEmpty() || modernElderlyIds.isNotEmpty()) {
+        val focusIds = elderlyManager.getAppWidgetIds(ComponentName(context, PrayerTimesFocusHomeWidgetProvider::class.java))
+        if (focusIds.isNotEmpty()) {
+            PrayerTimesFocusHomeWidgetProvider.updateWidgets(context, elderlyManager, focusIds, snapshot)
+        }
+
+        val focusElderlyIds = elderlyManager.getAppWidgetIds(ComponentName(context, PrayerTimesFocusElderlyHomeWidgetProvider::class.java))
+        if (focusElderlyIds.isNotEmpty()) {
+            PrayerTimesFocusElderlyHomeWidgetProvider.updateWidgets(context, elderlyManager, focusElderlyIds, snapshot)
+        }
+
+        if (appWidgetIds.isNotEmpty() || elderlyIds.isNotEmpty() || modernIds.isNotEmpty() || modernElderlyIds.isNotEmpty() || focusIds.isNotEmpty() || focusElderlyIds.isNotEmpty()) {
             PrayerWidgetRefreshScheduler.schedule(context, snapshot?.timeZoneId)
         }
     }

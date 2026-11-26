@@ -24,4 +24,10 @@
     <string name="prayer_widget_current_prayer">CURRENT PRAYER</string>
     <string name="prayer_widget_next_prayer">NEXT PRAYER</string>
     <string name="prayer_widget_sunset">Sunset</string>
+    <string name="prayer_times_focus_home_widget_title">Prayer Times (Live Timer)</string>
+    <string name="prayer_times_focus_home_widget_description">Current waqt countdown timer with Hijri date, Sehri, Sunrise and Iftar</string>
+    <string name="prayer_times_focus_elderly_home_widget_title">Prayer Times (Live Timer Elders)</string>
+    <string name="prayer_times_focus_elderly_home_widget_description">Large font live waqt countdown timer with Hijri date, Sehri, Sunrise and Iftar for elders</string>
+    <string name="prayer_widget_waqt_ends_in">WAQT ENDS IN</string>
+    <string name="prayer_widget_starts_in">STARTS IN</string>
 </resources>

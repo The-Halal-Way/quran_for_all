@@ -282,6 +282,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get prayerWidgetIsha => 'Isha';
 
   @override
+  String get prayerWidgetCurrentPrayer => 'CURRENT PRAYER';
+
+  @override
+  String get prayerWidgetNextPrayer => 'NEXT PRAYER';
+
+  @override
+  String get prayerWidgetWaqtEndsIn => 'WAQT ENDS IN';
+
+  @override
+  String get prayerWidgetStartsIn => 'STARTS IN';
+
+  @override
   String get hijriAdjustmentTitle => 'Moon-sighting adjustment';
 
   @override

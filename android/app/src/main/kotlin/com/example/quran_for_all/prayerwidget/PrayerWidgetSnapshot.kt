@@ -44,6 +44,8 @@ data class PrayerWidgetLabels(
     val refreshFailed: String = "Could not refresh. Tap to try again.",
     val currentPrayer: String = "CURRENT PRAYER",
     val nextPrayer: String = "NEXT PRAYER",
+    val waqtEndsIn: String = "WAQT ENDS IN",
+    val startsIn: String = "STARTS IN",
 ) {
     companion object {
         val english = PrayerWidgetLabels(
@@ -63,6 +65,8 @@ data class PrayerWidgetLabels(
             isha = "Isha",
             currentPrayer = "CURRENT PRAYER",
             nextPrayer = "NEXT PRAYER",
+            waqtEndsIn = "WAQT ENDS IN",
+            startsIn = "STARTS IN",
         )
 
         private val bangla = english.copy(
@@ -85,6 +89,8 @@ data class PrayerWidgetLabels(
             refreshFailed = "হালনাগাদ করা যায়নি। আবার ট্যাপ করুন।",
             currentPrayer = "বর্তমান ওয়াক্ত",
             nextPrayer = "পরবর্তী ওয়াক্ত",
+            waqtEndsIn = "ওয়াক্ত শেষ হতে বাকি",
+            startsIn = "শুরু হতে বাকি",
         )
 
         fun fromJson(json: JSONObject?): PrayerWidgetLabels {
@@ -113,6 +119,8 @@ data class PrayerWidgetLabels(
                 refreshFailed = value("refreshFailed", fallback.refreshFailed),
                 currentPrayer = value("currentPrayer", fallback.currentPrayer),
                 nextPrayer = value("nextPrayer", fallback.nextPrayer),
+                waqtEndsIn = value("waqtEndsIn", fallback.waqtEndsIn),
+                startsIn = value("startsIn", fallback.startsIn),
             )
         }
     }

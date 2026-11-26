@@ -24,6 +24,10 @@ class PrayerWidgetLabels {
     this.refresh = 'Refresh prayer times',
     this.refreshing = 'Refreshing prayer times',
     this.refreshFailed = 'Could not refresh. Tap to try again.',
+    this.currentPrayer = 'CURRENT PRAYER',
+    this.nextPrayer = 'NEXT PRAYER',
+    this.waqtEndsIn = 'WAQT ENDS IN',
+    this.startsIn = 'STARTS IN',
   });
 
   static const english = PrayerWidgetLabels(
@@ -60,6 +64,10 @@ class PrayerWidgetLabels {
   final String refresh;
   final String refreshing;
   final String refreshFailed;
+  final String currentPrayer;
+  final String nextPrayer;
+  final String waqtEndsIn;
+  final String startsIn;
 
   static PrayerWidgetLabels forLocale(
     String? locale, {
@@ -90,6 +98,10 @@ class PrayerWidgetLabels {
       refresh: l10n.prayerWidgetRefresh,
       refreshing: l10n.prayerWidgetRefreshing,
       refreshFailed: l10n.prayerWidgetRefreshFailed,
+      currentPrayer: l10n.prayerWidgetCurrentPrayer,
+      nextPrayer: l10n.prayerWidgetNextPrayer,
+      waqtEndsIn: l10n.prayerWidgetWaqtEndsIn,
+      startsIn: l10n.prayerWidgetStartsIn,
     );
   }
 
@@ -112,6 +124,10 @@ class PrayerWidgetLabels {
       'refresh': refresh,
       'refreshing': refreshing,
       'refreshFailed': refreshFailed,
+      'currentPrayer': currentPrayer,
+      'nextPrayer': nextPrayer,
+      'waqtEndsIn': waqtEndsIn,
+      'startsIn': startsIn,
     };
   }
 
@@ -147,6 +163,10 @@ class PrayerWidgetLabels {
       refresh: value('refresh', fallback.refresh),
       refreshing: value('refreshing', fallback.refreshing),
       refreshFailed: value('refreshFailed', fallback.refreshFailed),
+      currentPrayer: value('currentPrayer', fallback.currentPrayer),
+      nextPrayer: value('nextPrayer', fallback.nextPrayer),
+      waqtEndsIn: value('waqtEndsIn', fallback.waqtEndsIn),
+      startsIn: value('startsIn', fallback.startsIn),
     );
   }
 }

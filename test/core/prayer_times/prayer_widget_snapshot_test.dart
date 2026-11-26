@@ -164,6 +164,8 @@ void main() {
       expect(stored.labels.prayerTimes, 'নামাজের সময়');
       expect(stored.labels.fajr, 'ফজর');
       expect(stored.labels.asr, 'আসর (হানাফি)');
+      expect(stored.labels.waqtEndsIn, 'ওয়াক্ত শেষ হতে বাকি');
+      expect(stored.labels.startsIn, 'শুরু হতে বাকি');
       expect(stored.days.single.hijriDateLabel, contains('হিজরি'));
     },
   );

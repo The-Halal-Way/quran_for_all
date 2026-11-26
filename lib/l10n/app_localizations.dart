@@ -641,6 +641,30 @@ abstract class AppLocalizations {
   /// **'Isha'**
   String get prayerWidgetIsha;
 
+  /// No description provided for @prayerWidgetCurrentPrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'CURRENT PRAYER'**
+  String get prayerWidgetCurrentPrayer;
+
+  /// No description provided for @prayerWidgetNextPrayer.
+  ///
+  /// In en, this message translates to:
+  /// **'NEXT PRAYER'**
+  String get prayerWidgetNextPrayer;
+
+  /// No description provided for @prayerWidgetWaqtEndsIn.
+  ///
+  /// In en, this message translates to:
+  /// **'WAQT ENDS IN'**
+  String get prayerWidgetWaqtEndsIn;
+
+  /// No description provided for @prayerWidgetStartsIn.
+  ///
+  /// In en, this message translates to:
+  /// **'STARTS IN'**
+  String get prayerWidgetStartsIn;
+
   /// No description provided for @hijriAdjustmentTitle.
   ///
   /// In en, this message translates to:

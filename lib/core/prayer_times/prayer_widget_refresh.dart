@@ -69,6 +69,14 @@ class PrayerWidgetRefresh {
             PrayerHomeWidgetBridge.qualifiedAndroidProviderName,
         iOSName: PrayerHomeWidgetBridge.iOSWidgetName,
       );
+      if (defaultTargetPlatform == TargetPlatform.iOS) {
+        await HomeWidget.updateWidget(
+          iOSName: PrayerHomeWidgetBridge.iOSFocusWidgetName,
+        );
+        await HomeWidget.updateWidget(
+          iOSName: PrayerHomeWidgetBridge.iOSFocusElderlyWidgetName,
+        );
+      }
     }
   }
 }

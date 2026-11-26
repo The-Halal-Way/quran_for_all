@@ -12,7 +12,13 @@ class PrayerHomeWidgetBridge {
       'com.example.quran_for_all.PrayerTimesModernHomeWidgetProvider';
   static const qualifiedAndroidModernElderlyProviderName =
       'com.example.quran_for_all.PrayerTimesModernElderlyHomeWidgetProvider';
+  static const qualifiedAndroidFocusProviderName =
+      'com.example.quran_for_all.PrayerTimesFocusHomeWidgetProvider';
+  static const qualifiedAndroidFocusElderlyProviderName =
+      'com.example.quran_for_all.PrayerTimesFocusElderlyHomeWidgetProvider';
   static const iOSWidgetName = 'PrayerTimesHomeWidget';
+  static const iOSFocusWidgetName = 'PrayerTimesFocusHomeWidget';
+  static const iOSFocusElderlyWidgetName = 'PrayerTimesFocusElderlyHomeWidget';
 
   static bool get _isSupportedPlatform {
     if (kIsWeb) {
@@ -39,6 +45,10 @@ class PrayerHomeWidgetBridge {
         qualifiedAndroidName: qualifiedAndroidProviderName,
         iOSName: iOSWidgetName,
       );
+      if (defaultTargetPlatform == TargetPlatform.iOS) {
+        await HomeWidget.updateWidget(iOSName: iOSFocusWidgetName);
+        await HomeWidget.updateWidget(iOSName: iOSFocusElderlyWidgetName);
+      }
     } catch (error) {
       debugPrint('Prayer widget snapshot sync failed: $error');
     }
